@@ -90,7 +90,10 @@ class FindDependencies(ast.NodeVisitor):
 
   def visit_Expr(self, node):
     scope = self.__scope(node)
-    if type(node.value.func) is ast.Attribute:
+    if type(node.value) is ast.Attribute and 'func' not in vars(node.value):
+        # obj.property alone don't mean anything to us
+        pass
+    elif type(node.value.func) is ast.Attribute:
       # method expressions
       leaves = self._collectLeaves (node.value.args)
       obj = node.value.func.value.id
@@ -150,7 +153,10 @@ class FindDependencies(ast.NodeVisitor):
       #print("leave ->", str(l))
       s = self.__variable(str(l), scope)
       #print("leave(s) ->", s)
+      
       for n in node.targets:
+        if 'id' not in vars(n):
+            break # TODO: Support targets not having id, e.g. 'bob in x['bob] Subscript objects print(node.targets)
         #print("target ->", n.id)
         if str(n.id) not in t_found:
           t = self.__variableAssign(str(n.id), scope)
