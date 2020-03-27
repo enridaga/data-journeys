@@ -50,6 +50,7 @@ def extractSourceCode(notebook):
     return src
 
 indir = "kernels/"
+srcdir = "sources/"
 outdir = "graphs/"
 files = [f for f in listdir(indir) if isfile(join(indir, f))]
 for f in files:
@@ -57,12 +58,18 @@ for f in files:
         print("Processing: {0}".format(f))
         jj = J.load(notebook)
         src = extractSourceCode(jj)
+        s = open(srcdir + f[:-5] + "py", "w")
+        #
+        comm = ['%matplotlib ']
+        for c in comm:
+            src = src.replace(c, "#" + c)
+        s.write(src)
         collector = DJ.FindDependencies()
         try:
             collector.collect(src)
             g = collector.getStringCollected()
             # Save
-            o = open(outdir + f[:-3] + "digraph", "w")
+            o = open(outdir + f[:-5] + "digraph", "w")
             o.write(g)
         except AttributeError as err:
             print("AttributeError: {0} [{1}]".format(err, f))

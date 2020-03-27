@@ -1,0 +1,12 @@
+digraph { 
+"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)" [label = "eq"]
+"melbourne_data(0)$0" -> "pd(0)" [label = "read_csv"]
+"melbourne_data(0)$0" -> "melbourne_file_path(0)$0" [label = "read_csv"]
+"print[0]" -> "melbourne_data(0)$0" [label = "print"]
+"melbourne_price_data(0)$0" -> "melbourne_data(0)$0" [label = "eq"]
+"print[0]" -> "melbourne_price_data(0)$0" [label = "print"]
+"columns_of_interest(0)$0" -> "[<_ast.Str object at 0x104eda550>, <_ast.Str object at 0x104eda150>](0)" [label = "eq"]
+"two_columns_of_data(0)$0" -> "melbourne_data(0)$0" [label = "eq"]
+"two_columns_of_data(0)$0" -> "columns_of_interest(0)$0" [label = "eq"]
+"two_columns_of_data(0)$1" -> "two_columns_of_data(0)$0" [label = "describe"]
+}

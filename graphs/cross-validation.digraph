@@ -1,0 +1,18 @@
+digraph { 
+"data(0)$0" -> "pd(0)" [label = "read_csv"]
+"data(0)$0" -> "../input/melb_data.csv(0)" [label = "read_csv"]
+"cols_to_use(0)$0" -> "[<_ast.Str object at 0x104f0aa10>, <_ast.Str object at 0x104f0a950>, <_ast.Str object at 0x104f0a650>, <_ast.Str object at 0x104f0ac50>, <_ast.Str object at 0x104f0a750>](0)" [label = "eq"]
+"X(0)$0" -> "data(0)$0" [label = "eq"]
+"X(0)$0" -> "cols_to_use(0)$0" [label = "eq"]
+"y(0)$0" -> "data(0)$0" [label = "eq"]
+"my_pipeline(0)$0" -> "Imputer(0)" [label = "make_pipeline"]
+"my_pipeline(0)$0" -> "RandomForestRegressor(0)" [label = "make_pipeline"]
+"scores(0)$0" -> "my_pipeline(0)$0" [label = "cross_val_score"]
+"scores(0)$0" -> "X(0)$0" [label = "cross_val_score"]
+"scores(0)$0" -> "y(0)$0" [label = "cross_val_score"]
+"scores(0)$0" -> "neg_mean_absolute_error(0)" [label = "cross_val_score"]
+"print[0]" -> "scores(0)$0" [label = "print"]
+"print[0]" -> "Mean Absolute Error %2f(0)" [label = "print"]
+"print[1]" -> "1(0)" [label = "print"]
+"print[2]" -> "scores(0)$0" [label = "print"]
+}
