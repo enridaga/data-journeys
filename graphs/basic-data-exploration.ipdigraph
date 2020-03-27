@@ -1,0 +1,6 @@
+digraph { 
+"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)" [label = "eq"]
+"melbourne_data(0)$0" -> "pd(0)" [label = "read_csv"]
+"melbourne_data(0)$0" -> "melbourne_file_path(0)$0" [label = "read_csv"]
+"melbourne_data(0)$1" -> "melbourne_data(0)$0" [label = "describe"]
+}
