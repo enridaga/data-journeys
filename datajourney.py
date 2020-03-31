@@ -184,11 +184,23 @@ class FindDependencies(ast.NodeVisitor):
       s = self.__variable(str(l), scope)
       #print("leave(s) ->", s)
       
+      # Supporting Tuple as target. All tuple members have a dependency with the right-hand stuff
+      targets=[]
       for n in node.targets:
+         if type(n) is ast.Tuple:
+             for u in n.elts:
+                 targets.append(u)
+         else:
+             targets.append(n)
+
+      for n in targets:
         # TODO: Support targets not having 'id'
         # Subscript, e.g. x[0][1] = "Bob"
         if type(n) is ast.Subscript:
           t_id = self._nameFromSubscript(n.value).id
+        elif type(n) is ast.Tuple:
+          print(vars(n))
+          t_id = n.id # BROKEN
         else:
           t_id = n.id
         if str(t_id) not in t_found:
