@@ -200,19 +200,22 @@ class FindDependencies(ast.NodeVisitor):
       for n in targets:
         # TODO: Support targets not having 'id'
         # Subscript, e.g. x[0][1] = "Bob"
+        cloned = False
         if type(n) is ast.Subscript:
           t_id = self._nameFromSubscript(n.value).id
+          cloned = True
         elif type(n) is ast.Attribute:
           # This should work for any .value structure
           t_id = self._nameFromSubscript(n.value).id 
+          cloned = True
         else:
-          t_id = n.id # How can a tuple be here?
+          t_id = n.id 
         if str(t_id) not in t_found:
-          if type(n) is ast.Subscript: # When Subscript, var depends on old one as well  
+          if cloned: # When Subscript, var depends on old one as well  
             o = self.__variable(str(t_id), scope)
           t = self.__variableAssign(str(t_id), scope)
           t_found.append(str(t_id))
-          if type(n) is ast.Subscript:
+          if cloned: # Generate the corresponding triple
             self.__collect(o, func, t)
         else:
           t = self.__variable(str(t_id), scope)
