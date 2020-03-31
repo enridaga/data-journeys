@@ -80,5 +80,7 @@ for f in files:
             print("SyntaxError: {0} [{1}]".format(err, f))
         except TypeError as err:
             print("TypeError: {0} [{1}]".format(err, f))
+        except Exception as err:
+            print("Exception: {0} [{1}]".format(err, f))
 
 

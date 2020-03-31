@@ -2,7 +2,7 @@ digraph {
 "train(0)$0" -> "pd(0)" [label = "read_csv"]
 "train(0)$0" -> "../input/train.csv(0)" [label = "read_csv"]
 "train_y(0)$0" -> "train(0)$0" [label = "eq"]
-"predictor_cols(0)$0" -> "[<_ast.Str object at 0x1035f9cd0>, <_ast.Str object at 0x1035f99d0>, <_ast.Str object at 0x1035f9c10>, <_ast.Str object at 0x1035f9050>](0)" [label = "eq"]
+"predictor_cols(0)$0" -> "[<_ast.Str object at 0x105b45fd0>, <_ast.Str object at 0x105b45a10>, <_ast.Str object at 0x105b45b50>, <_ast.Str object at 0x105b45ed0>](0)" [label = "eq"]
 "train_X(0)$0" -> "train(0)$0" [label = "eq"]
 "train_X(0)$0" -> "predictor_cols(0)$0" [label = "eq"]
 "my_model(0)$0" -> "my_model(0)" [label = "fit"]

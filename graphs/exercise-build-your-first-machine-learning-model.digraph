@@ -1,0 +1,15 @@
+digraph { 
+"iowa_file_path(0)$0" -> "../input/home-data-for-ml-course/train.csv(0)" [label = "eq"]
+"home_data(0)$0" -> "pd(0)" [label = "read_csv"]
+"home_data(0)$0" -> "iowa_file_path(0)$0" [label = "read_csv"]
+"binder(0)$0" -> "binder(0)" [label = "bind"]
+"binder(0)$0" -> "globals(0)" [label = "bind"]
+"print[0]" -> "Setup Complete(0)" [label = "print"]
+"step_1(0)$0" -> "step_1(0)" [label = "check"]
+"step_2(0)$0" -> "step_2(0)" [label = "check"]
+"iowa_model(0)$0" -> "_(0)" [label = "eq"]
+"step_3(0)$0" -> "step_3(0)" [label = "check"]
+"predictions(0)$0" -> "_(0)" [label = "eq"]
+"print[0]" -> "predictions(0)$0" [label = "print"]
+"step_4(0)$0" -> "step_4(0)" [label = "check"]
+}

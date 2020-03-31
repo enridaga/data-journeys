@@ -1,0 +1,15 @@
+digraph { 
+"reviews(0)$0" -> "pd(0)" [label = "read_csv"]
+"reviews(0)$0" -> "../input/wine-reviews/winemag-data-130k-v2.csv(0)" [label = "read_csv"]
+"reviews(0)$0" -> "0(0)" [label = "read_csv"]
+"pd(0)$0" -> "pd(0)" [label = "set_option"]
+"pd(0)$0" -> "max_rows(0)" [label = "set_option"]
+"pd(0)$0" -> "5(0)" [label = "set_option"]
+"reviews(0)$1" -> "reviews(0)$0" [label = "astype"]
+"reviews(0)$1" -> "float64(0)" [label = "astype"]
+"reviews(0)$2" -> "reviews(0)$1" [label = "fillna"]
+"reviews(0)$2" -> "Unknown(0)" [label = "fillna"]
+"reviews(0)$3" -> "reviews(0)$2" [label = "replace"]
+"reviews(0)$3" -> "@kerinokeefe(0)" [label = "replace"]
+"reviews(0)$3" -> "@kerino(0)" [label = "replace"]
+}

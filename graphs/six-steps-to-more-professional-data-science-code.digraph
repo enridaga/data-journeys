@@ -1,0 +1,11 @@
+digraph { 
+"values(1)" -> "find_most_common[0]" [label = "_argToVar"]
+"list_counts(1)$0" -> "collections(1)" [label = "Counter"]
+"list_counts(1)$0" -> "values(1)" [label = "Counter"]
+"top_two_values(1)$0" -> "list_counts(1)$0" [label = "most_common"]
+"top_two_values(1)$0" -> "2(1)" [label = "most_common"]
+"values_list(0)$0" -> "[<_ast.Num object at 0x10456f950>, <_ast.Num object at 0x10456fd10>, <_ast.Num object at 0x10456fd90>, <_ast.Num object at 0x10456ffd0>, <_ast.Num object at 0x10456f490>, <_ast.Num object at 0x10456f150>, <_ast.Num object at 0x10456f450>](0)" [label = "eq"]
+"find_most_common[0]" -> "values_list(0)$0" [label = "find_most_common"]
+"values_list(0)$1" -> "[<_ast.Num object at 0x10456f850>, <_ast.Num object at 0x10456ff90>, <_ast.Num object at 0x10456f790>, <_ast.Num object at 0x10456f410>, <_ast.Num object at 0x10456f3d0>, <_ast.Num object at 0x10456fad0>, <_ast.Num object at 0x10456fed0>, <_ast.Num object at 0x10456f890>, <_ast.Num object at 0x10456f690>](0)" [label = "eq"]
+"find_most_common[0]" -> "values_list(0)$1" [label = "find_most_common"]
+}

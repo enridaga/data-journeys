@@ -1,0 +1,16 @@
+digraph { 
+"submission(0)$0" -> "pd(0)" [label = "read_csv"]
+"submission(0)$0" -> "/kaggle/input/submit-dfdc/submit2.csv(0)" [label = "read_csv"]
+"submission(0)$0" -> "[<_ast.Str object at 0x104496250>, <_ast.Str object at 0x104496cd0>](0)" [label = "read_csv"]
+"submission_ori(0)$0" -> "pd(0)" [label = "read_csv"]
+"submission_ori(0)$0" -> "/kaggle/input/deepfake-detection-challenge/sample_submission.csv(0)" [label = "read_csv"]
+"submission(0)$1" -> "submission(0)$0" [label = "sort_values"]
+"submission(0)$1" -> "filename(0)" [label = "sort_values"]
+"submission_ori(0)$1" -> "submission_ori(0)$0" [label = "Sub"]
+"submission_ori(0)$1" -> "1(0)" [label = "Sub"]
+"submission_ori(0)$1" -> "submission(0)$1" [label = "Sub"]
+"submission_ori(0)$1" -> "label(0)" [label = "Sub"]
+"submission_ori(0)$1" -> "float(0)" [label = "Sub"]
+"submission_ori(0)$2" -> "submission_ori(0)$1" [label = "to_csv"]
+"submission_ori(0)$2" -> "submission.csv(0)" [label = "to_csv"]
+}
