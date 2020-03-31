@@ -96,7 +96,11 @@ class FindDependencies(ast.NodeVisitor):
     elif type(node.value.func) is ast.Attribute:
       # method expressions
       leaves = self._collectLeaves (node.value.args)
-      obj = node.value.func.value.id
+      # TODO Subscript
+      if type(node.value.func.value) is ast.Subscript:
+        obj = node.value.func.value.value.id
+      else:
+        obj = node.value.func.value.id
       # if leaves is empty then method has no argument
       #if len(leaves) == 0:
       # rewrite obj with modified version
