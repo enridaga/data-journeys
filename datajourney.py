@@ -73,9 +73,15 @@ class FindDependencies(ast.NodeVisitor):
   def _nameFromSubscript(self, sub):
     if type(sub) is ast.Subscript:
         return self._nameFromSubscript(sub.value)
+    elif type(sub) is ast.Name:
+        return sub
+    elif type(sub) is ast.Attribute:
+        return self._nameFromSubscript(sub.value)
+    elif 'value' in vars(sub):
+        return self._nameFromSubscript(sub.value)
     elif 'id' in vars(sub):
         return sub
-    raise Exception('Unsupported Subscript: ' + str(vars(sub)))
+    raise Exception('Unsupported Subscript ' + 'Type: ' + str(type(sub)) + str(vars(sub)))
 
 ### Visitor
 
@@ -103,12 +109,17 @@ class FindDependencies(ast.NodeVisitor):
     if type(node.value) is ast.Attribute and 'func' not in vars(node.value):
         # obj.property alone don't mean anything to us
         pass
+    elif 'func' not in vars(node.value):
+        # a var alone or obj[property] alone don't mean anything to us
+        pass
     elif type(node.value.func) is ast.Attribute:
       # method expressions
       leaves = self._collectLeaves (node.value.args)
-      # TODO Subscript
+      # Subscript
       if type(node.value.func.value) is ast.Subscript:
         obj = self._nameFromSubscript(node.value.func.value).id
+      elif type(node.value.func.value) is ast.Attribute:
+        obj = node.value.func.value.value.id
       else:
         obj = node.value.func.value.id
       # if leaves is empty then method has no argument
