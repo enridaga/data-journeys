@@ -127,9 +127,14 @@ class FindDependencies(ast.NodeVisitor):
     v = node.value
     leaves = self._collectLeaves(v)
     func = str(type(node.op).__name__)
+
+    target = node.target
+    if type(target) is ast.Subscript:
+      target = node.target.value
+
     # prev var name
-    o = self.__variable(str(node.target.id), scope)
-    t = self.__variableAssign(str(node.target.id), scope)
+    o = self.__variable(str(target.id), scope)
+    t = self.__variableAssign(str(target.id), scope)
     for l in leaves:
       s = self.__variable(str(l), scope)
       self.__collect(s, func, t)
