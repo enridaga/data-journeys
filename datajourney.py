@@ -83,6 +83,16 @@ class FindDependencies(ast.NodeVisitor):
         return sub
     raise Exception('Unsupported Subscript ' + 'Type: ' + str(type(sub)) + str(vars(sub)))
 
+  def _collectTargets(self, targets):
+      tt = []
+      for n in targets:
+         if type(n) is ast.Tuple:
+             tt = tt + self._collectTargets(n.elts)
+         else:
+             tt.append(n)
+      
+      return tt
+  
 ### Visitor
 
   def visit_Module(self, node):
@@ -185,24 +195,18 @@ class FindDependencies(ast.NodeVisitor):
       #print("leave(s) ->", s)
       
       # Supporting Tuple as target. All tuple members have a dependency with the right-hand stuff
-      targets=[]
-      for n in node.targets:
-         if type(n) is ast.Tuple:
-             for u in n.elts:
-                 targets.append(u)
-         else:
-             targets.append(n)
-
+      targets = self._collectTargets(node.targets)
+      
       for n in targets:
         # TODO: Support targets not having 'id'
         # Subscript, e.g. x[0][1] = "Bob"
         if type(n) is ast.Subscript:
           t_id = self._nameFromSubscript(n.value).id
-        elif type(n) is ast.Tuple:
-          print(vars(n))
-          t_id = n.id # BROKEN
+        elif type(n) is ast.Attribute:
+          # This should work for any .value structure
+          t_id = self._nameFromSubscript(n.value).id 
         else:
-          t_id = n.id
+          t_id = n.id # How can a tuple be here?
         if str(t_id) not in t_found:
           if type(n) is ast.Subscript: # When Subscript, var depends on old one as well  
             o = self.__variable(str(t_id), scope)

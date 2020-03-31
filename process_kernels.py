@@ -60,6 +60,9 @@ for f in files:
         print("Processing: {0}".format(f))
         jj = J.load(notebook)
         src = extractSourceCode(jj)
+        if src.strip() == "":
+            print("EMPTY: no source code in notebook {0}".format(f))
+            continue
         #
         comm = ["^%","\n%","^!","\n!"]
         for c in comm:
