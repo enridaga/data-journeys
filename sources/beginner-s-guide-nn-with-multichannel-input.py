@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 from tqdm import tqdm_notebook
 import re

@@ -51,7 +51,7 @@ def reduce_mem_usage(df):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-%%time
+### %time
 train_transaction = pd.read_csv('../input/ieee-fraud-detection/train_transaction.csv', index_col='TransactionID')
 test_transaction = pd.read_csv('../input/ieee-fraud-detection/test_transaction.csv', index_col='TransactionID')
 
@@ -129,7 +129,7 @@ for f in X_train.columns:
         lbl.fit(list(X_train[f].values) + list(X_test[f].values))
         X_train[f] = lbl.transform(list(X_train[f].values))
         X_test[f] = lbl.transform(list(X_test[f].values)) 
-%%time
+### %time
 # From kernel https://www.kaggle.com/gemartin/load-data-reduce-memory-usage
 # WARNING! THIS CAN DAMAGE THE DATA 
 
@@ -145,7 +145,7 @@ if debug:
     X_train = X_train.iloc[:split_pos,:]
 import gc
 gc.collect()
-%%time
+### %time
 
 from sklearn.model_selection import KFold
 from sklearn.metrics import roc_auc_score

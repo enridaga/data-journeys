@@ -6,7 +6,7 @@ import matplotlib
 import seaborn as sns
 import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook as tqdm
-#%matplotlib inline 
+### matplotlib inline 
 import cv2 as cv
 from os.path import join
 import argparse
@@ -232,7 +232,7 @@ def showdenseflow(SAMPLE_VIDEO_PATH):
     cap.release()    
 #showdenseflow(SAMPLE_REAL_VIDEO_PATH)
 #showdenseflow(SAMPLE_FAKE_VIDEO_PATH)
-!pip install ../input/mtcnn-package/mtcnn-0.1.0-py3-none-any.whl
+### pip install ../input/mtcnn-package/mtcnn-0.1.0-py3-none-any.whl
 import cv2
 from mtcnn.mtcnn import MTCNN
 detector = MTCNN()
@@ -352,9 +352,9 @@ train_df["Label"]=np_label_list
 train_df.head(20)
 sub = pd.read_csv("/kaggle/input/deepfake-detection-challenge/sample_submission.csv")
 sub.head()
-!mkdir ./out
+### mkdir ./out
 TEST_OUTPUT_PATH = './out'
-%%time
+### %time
 for fn in sub.filename[:100]:
     video_file = f'{DATA_FOLDER}{TEST_FOLDER}{fn}'
     count=0

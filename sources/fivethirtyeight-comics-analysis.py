@@ -1,7 +1,7 @@
 
-!pip install pywaffle
-!pip install joypy
-!pip install bubbly
+### pip install pywaffle
+### pip install joypy
+### pip install bubbly
 
 # for some basic operations
 import numpy as np 

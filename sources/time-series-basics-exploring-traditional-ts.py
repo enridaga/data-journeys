@@ -1,6 +1,6 @@
 
 # always start with checking out the files!
-!ls ../input/*
+### ls ../input/*
 # Basic packages
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)

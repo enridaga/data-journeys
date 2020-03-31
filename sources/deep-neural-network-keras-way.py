@@ -7,7 +7,7 @@ import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 from keras.models import Sequential
 from keras.layers import Dense , Dropout , Lambda, Flatten
@@ -89,7 +89,7 @@ history=model.fit_generator(generator=batches, steps_per_epoch=batches.n, epochs
 history_dict = history.history
 history_dict.keys()
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 loss_values = history_dict['loss']
 val_loss_values = history_dict['val_loss']
 epochs = range(1, len(loss_values) + 1)

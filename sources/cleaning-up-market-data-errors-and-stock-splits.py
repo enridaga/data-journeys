@@ -4,7 +4,7 @@ import pandas as pd
 pd.options.mode.chained_assignment = None
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import cufflinks as cf
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go

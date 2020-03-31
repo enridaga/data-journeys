@@ -3,7 +3,7 @@ import numpy as np # linear algebra
 
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.model_selection import train_test_split
 

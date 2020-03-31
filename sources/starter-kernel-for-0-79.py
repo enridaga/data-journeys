@@ -1,14 +1,14 @@
 
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 import torch
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 import seaborn as sns
-#%matplotlib inline  
+### matplotlib inline  
 from sklearn.model_selection import StratifiedKFold
 from joblib import load, dump
 from sklearn.metrics import cohen_kappa_score
@@ -519,8 +519,8 @@ class EfficientNet(nn.Module):
 #making model
 md_ef = EfficientNet.from_pretrained('efficientnet-b5', num_classes=1)
 #copying weighst to the local directory 
-!mkdir models
-!cp '../input/kaggle-public/abcdef.pth' 'models'
+### mkdir models
+### cp '../input/kaggle-public/abcdef.pth' 'models'
 def get_df():
     base_image_dir = os.path.join('..', 'input/aptos2019-blindness-detection/')
     train_dir = os.path.join(base_image_dir,'train_images/')

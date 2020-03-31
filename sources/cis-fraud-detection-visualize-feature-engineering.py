@@ -8,7 +8,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import seaborn as sns
 import lightgbm as lgb
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.metrics import roc_auc_score
 

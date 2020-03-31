@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
 
-#%matplotlib inline
+### matplotlib inline
 
 from plotly import tools
 import plotly.offline as py
@@ -34,7 +34,7 @@ def load_df(csv_path='../input/train.csv', nrows=None):
         df = df.drop(column, axis=1).merge(column_as_df, right_index=True, left_index=True)
     print(f"Loaded {os.path.basename(csv_path)}. Shape: {df.shape}")
     return df
-%%time
+### %time
 train_df = load_df()
 test_df = load_df("../input/test.csv")
 train_df.head()

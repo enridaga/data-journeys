@@ -317,7 +317,7 @@ MASK_RCNN_DIR = os.path.join(WORKING_DIR, 'Mask_RCNN-master')
     circumvent the commit error. Check out his kernel at 
     https://www.kaggle.com/srwalker101/mask-rcnn-model
 """
-!pip install git+https://github.com/rteuwens/Mask_RCNN
+### pip install git+https://github.com/rteuwens/Mask_RCNN
 from mrcnn.utils import Dataset
 from mrcnn.config import Config
 from mrcnn.model import MaskRCNN
@@ -424,7 +424,7 @@ train, validate = train_test_split(squashed, test_size=0.2, random_state=RANDOM_
 print(train['ClassId'].astype(str).value_counts(normalize=True))
 print('')
 print(validate['ClassId'].astype(str).value_counts(normalize=True))
-%%time
+### %time
 
 # instantiating training set
 dataset_train = SeverstalDataset(dataframe=train)
@@ -435,7 +435,7 @@ dataset_train.prepare()
 dataset_validate = SeverstalDataset(dataframe=validate)
 dataset_validate.load_dataset()
 dataset_validate.prepare()
-!curl -LO https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
+### curl -LO https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
 # configuration
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
@@ -455,7 +455,7 @@ model.load_weights('mask_rcnn_coco.h5',
                             'mrcnn_class_logits', 
                             'mrcnn_mask',
                             'mrcnn_bbox'])
-%%time 
+### %time 
 
 # ignore UserWarnongs
 import warnings

@@ -48,7 +48,7 @@ import pylab
 
 plt.rcParams['figure.figsize'] = 10, 10
 
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_json("../input/train.json")
 
 target_train=train['is_iceberg']

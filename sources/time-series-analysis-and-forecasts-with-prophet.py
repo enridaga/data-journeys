@@ -11,7 +11,7 @@ from pandas import datetime
 # data visualization
 import matplotlib.pyplot as plt
 import seaborn as sns # advanced vizs
-#%matplotlib inline
+### matplotlib inline
 
 # statistics
 from statsmodels.distributions.empirical_distribution import ECDF

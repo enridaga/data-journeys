@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as matplot
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 from plotly.offline import init_notebook_mode, iplot
 init_notebook_mode(connected=True)

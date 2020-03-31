@@ -9,7 +9,7 @@ import seaborn as sns
 
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv(os.path.join('../input', 'train.csv'))
 
 test = pd.read_csv(os.path.join('../input', 'test.csv'))

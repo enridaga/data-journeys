@@ -2869,7 +2869,7 @@ def chat_words_conversion(text):
 
 chat_words_conversion("one minute BRB")
 chat_words_conversion("imo this is awesome")
-!pip install pyspellchecker
+### pip install pyspellchecker
 from spellchecker import SpellChecker
 
 spell = SpellChecker()

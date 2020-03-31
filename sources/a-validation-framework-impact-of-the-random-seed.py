@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 warnings.filterwarnings("ignore", message="F-score is ill-defined and being set to 0.0 due to no predicted samples.")
-#%matplotlib inline
+### matplotlib inline
 train_df = pd.read_csv("../input/train.csv")
 test_df = pd.read_csv("../input/test.csv")
 print('Train data dimension: ', train_df.shape)

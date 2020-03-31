@@ -2,7 +2,7 @@
 from IPython.display import HTML
 HTML('<center><iframe width="700" height="400" src="https://www.youtube.com/embed/tlThdr3O5Qo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>')
 HTML('<center><iframe width="700" height="400" src="https://www.youtube.com/embed/x7De3tCb3_A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>')
-!pip install lyft_dataset_sdk
+### pip install lyft_dataset_sdk
 import os
 import gc
 import numpy as np

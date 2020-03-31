@@ -19,9 +19,9 @@ from scipy.stats.stats import pearsonr
 
 
 
-%config InlineBackend.figure_format = 'retina' #set 'png' here when working on notebook
+### config InlineBackend.figure_format = 'retina' #set 'png' here when working on notebook
 
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv("../input/train.csv")
 
 test = pd.read_csv("../input/test.csv")

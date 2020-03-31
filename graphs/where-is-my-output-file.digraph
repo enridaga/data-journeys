@@ -1,0 +1,16 @@
+digraph { 
+"print[0]" -> "check_output(0)" [label = "print"]
+"print[1]" -> "[<_ast.Str object at 0x107592d90>, <_ast.Str object at 0x107592c90>](0)" [label = "print"]
+"print[2]" -> "utf8(0)" [label = "print"]
+"test(0)$0" -> "pd(0)" [label = "read_csv"]
+"test(0)$0" -> "../input/test.csv(0)" [label = "read_csv"]
+"data_to_submit(0)$0" -> "pd(0)" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "PassengerId(0)" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "Survived(0)" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "test(0)$0" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "PassengerId(0)" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "test(0)$0" [label = "DataFrame"]
+"data_to_submit(0)$0" -> "Survived(0)" [label = "DataFrame"]
+"data_to_submit(0)$1" -> "data_to_submit(0)$0" [label = "to_csv"]
+"data_to_submit(0)$1" -> "csv_to_submit.csv(0)" [label = "to_csv"]
+}

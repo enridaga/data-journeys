@@ -1,6 +1,6 @@
 
-!pip install ../input/sacremoses/sacremoses-master 
-!pip install ../input/transformers/transformers-master 
+### pip install ../input/sacremoses/sacremoses-master 
+### pip install ../input/transformers/transformers-master 
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 from pathlib import Path 

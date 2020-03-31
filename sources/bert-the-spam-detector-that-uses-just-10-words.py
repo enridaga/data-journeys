@@ -1,5 +1,5 @@
 
-!pip install transformers
+### pip install transformers
 import re
 import string
 import torch

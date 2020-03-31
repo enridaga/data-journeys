@@ -453,7 +453,7 @@ train = reduce_mem_usage(train)
 print('-' * 80)
 print('test')
 test = reduce_mem_usage(test)
-!pip install edm
+### pip install edm
 df = train.sample(frac=0.003)
 sents = df["comment_text"].values
 labels = df["target"].values

@@ -9,7 +9,7 @@ import time
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 #make wider graphs
 sns.set(rc={'figure.figsize':(12,5)});
 plt.figure(figsize=(12,5));

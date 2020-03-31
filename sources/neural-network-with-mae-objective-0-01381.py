@@ -157,7 +157,7 @@ def preprocess(train):
 #     train = train.sort_values(by = ['X']).sort_values(by = ['Dis']).sort_values(by=['PlayId', 'Team', 'IsRusher']).reset_index(drop = True)
     train = train.sort_values(by = ['X']).sort_values(by = ['Dis']).sort_values(by=['PlayId', 'IsRusherTeam', 'IsRusher']).reset_index(drop = True)
     return train
-%%time
+### %time
 train = preprocess(train)
 ## DisplayName remove Outlier
 v = train["DisplayName"].value_counts()

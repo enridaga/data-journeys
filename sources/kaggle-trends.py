@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 import os
 import pandas as pd
 import datetime as dt
@@ -205,7 +205,7 @@ def date_to_first_day_of_week(day: date) -> date:
     return day - timedelta(days=day.weekday())
 
 start = dt.datetime.now()
-!cp ../input/metacover/MetaCoverV1.png .
+### cp ../input/metacover/MetaCoverV1.png .
 
 START_DATE = dt.date(2016, 1, 1)
 md = MetaData('../input/meta-kaggle')

@@ -1,6 +1,6 @@
 
 #Check the dataset sizes(in MB)
-!du -l ../input/*
+### du -l ../input/*
 #import required packages
 #basics
 import pandas as pd 
@@ -62,7 +62,7 @@ warnings.filterwarnings("ignore")
 lem = WordNetLemmatizer()
 tokenizer=TweetTokenizer()
 
-#%matplotlib inline
+### matplotlib inline
 #importing the dataset
 train=pd.read_csv("../input/jigsaw-toxic-comment-classification-challenge/train.csv")
 test=pd.read_csv("../input/jigsaw-toxic-comment-classification-challenge/test.csv")
@@ -197,7 +197,7 @@ print(train[train.obscene==1].iloc[1,1])
 print("identity_hate:")
 print(train[train.identity_hate==1].iloc[4,1])
 #print(train[train.identity_hate==1].iloc[4,1])
-!ls ../input/imagesforkernal/
+### ls ../input/imagesforkernal/
 stopword=set(STOPWORDS)
 #clean comments
 clean_mask=np.array(Image.open("../input/imagesforkernal/safe-zone.png"))

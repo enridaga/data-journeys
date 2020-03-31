@@ -4,7 +4,7 @@ STROKE_COUNT = 196
 TRAIN_SAMPLES = 750
 VALID_SAMPLES = 75
 TEST_SAMPLES = 50
-#%matplotlib inline
+### matplotlib inline
 import os
 import numpy as np
 import matplotlib.pyplot as plt

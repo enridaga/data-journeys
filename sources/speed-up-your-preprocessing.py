@@ -1,7 +1,7 @@
 
 import numpy as np
 import pandas as pd
-!ls ../input/
+### ls ../input/
 train_org = pd.read_csv("../input/train.csv")
 print("train shape:", train_org.shape)
 train_org.head()
@@ -27,13 +27,13 @@ def clean_text_fast(x, maxlen=None):
         if punct in x:  # add this line
             x = x.replace(punct, f' {punct} ')
     return x
-%%time
+### %time
 _ = train_org.question_text.apply(lambda x: clean_text_slow(x, maxlen=None))
-%%time
+### %time
 _ = train_org.question_text.apply(lambda x: clean_text_fast(x, maxlen=None))
-%%time
+### %time
 _ = train_org.question_text.apply(lambda x: clean_text_slow(x, maxlen=65))
-%%time
+### %time
 _ = train_org.question_text.apply(lambda x: clean_text_fast(x, maxlen=65))
 def load_glove_slow(word_index, max_words=200000, embed_size=300):
     EMBEDDING_FILE = '../input/embeddings/glove.840B.300d/glove.840B.300d.txt'
@@ -72,7 +72,7 @@ def load_glove_fast(word_index, max_words=200000, embed_size=300):
 from keras.preprocessing.text import Tokenizer
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(train_org.question_text.values)
-%%time
+### %time
 _ = load_glove_slow(tokenizer.word_index, len(tokenizer.word_index) + 1)
-%%time
+### %time
 _ = load_glove_fast(tokenizer.word_index, len(tokenizer.word_index) + 1)

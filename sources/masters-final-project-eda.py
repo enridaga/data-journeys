@@ -10,7 +10,7 @@ print('numpy:', np.__version__)
 print('scipy:', scipy.__version__)
 print('matplotlib:', matplotlib.__version__)
 print('ok')
-#%matplotlib inline
+### matplotlib inline
 
 import os
 import time

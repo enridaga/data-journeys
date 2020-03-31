@@ -16,7 +16,7 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.optimizers import Adam
 from tqdm import tqdm
-!ls ../input
+### ls ../input
 train = pd.read_csv('../input/rsna-intracranial-hemorrhage-detection/stage_1_train.csv')
 
 train.head(10)

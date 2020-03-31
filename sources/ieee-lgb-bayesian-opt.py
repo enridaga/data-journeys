@@ -22,9 +22,9 @@ from scipy import interp
 # Plots
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from matplotlib import rcParams
-%%time
+### %time
 train_transaction = pd.read_csv('../input/train_transaction.csv', index_col='TransactionID')
 test_transaction = pd.read_csv('../input/test_transaction.csv', index_col='TransactionID')
 train_identity = pd.read_csv('../input/train_identity.csv', index_col='TransactionID')

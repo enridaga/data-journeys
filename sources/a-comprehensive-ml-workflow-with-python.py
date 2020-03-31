@@ -37,7 +37,7 @@ pylab.rcParams['figure.figsize'] = 12,8
 warnings.filterwarnings('ignore')
 mpl.style.use('ggplot')
 sns.set_style('white')
-#%matplotlib inline
+### matplotlib inline
 # import train and test to play with it
 df_train = pd.read_csv('../input/train.csv')
 df_test = pd.read_csv('../input/test.csv')

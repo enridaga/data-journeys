@@ -1,5 +1,5 @@
 
-!pip install segmentation-models --quiet
+### pip install segmentation-models --quiet
 import os
 import json
 

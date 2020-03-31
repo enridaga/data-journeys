@@ -1,0 +1,12 @@
+digraph { 
+"f_lstm(0)$0" -> "../input/improved-lstm-baseline-glove-dropout/submission.csv(0)" [label = "eq"]
+"f_nbsvm(0)$0" -> "../input/nb-svm-strong-linear-baseline/submission.csv(0)" [label = "eq"]
+"p_lstm(0)$0" -> "pd(0)" [label = "read_csv"]
+"p_lstm(0)$0" -> "f_lstm(0)$0" [label = "read_csv"]
+"p_nbsvm(0)$0" -> "pd(0)" [label = "read_csv"]
+"p_nbsvm(0)$0" -> "f_nbsvm(0)$0" [label = "read_csv"]
+"label_cols(0)$0" -> "[<_ast.Str object at 0x107544b90>, <_ast.Str object at 0x107544e90>, <_ast.Str object at 0x107544050>, <_ast.Str object at 0x107544350>, <_ast.Str object at 0x107544190>, <_ast.Str object at 0x107544950>](0)" [label = "eq"]
+"p_res(0)$0" -> "p_lstm(0)$0" [label = "copy"]
+"p_res(0)$1" -> "p_res(0)$0" [label = "to_csv"]
+"p_res(0)$1" -> "submission.csv(0)" [label = "to_csv"]
+}

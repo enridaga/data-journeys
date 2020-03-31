@@ -47,8 +47,8 @@ from bokeh.io import push_notebook, show, output_notebook
 output_notebook()
 hv.extension('bokeh')
 
-%opts Overlay [width=800 height=600 toolbar='above' xaxis=None yaxis=None]
-%opts QuadMesh [tools=['hover'] colorbar=True] (alpha=0 hover_alpha=0.2)
+### opts Overlay [width=800 height=600 toolbar='above' xaxis=None yaxis=None]
+### opts QuadMesh [tools=['hover'] colorbar=True] (alpha=0 hover_alpha=0.2)
 
 T = 0.05
 PX = 1

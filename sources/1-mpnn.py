@@ -1,6 +1,6 @@
 
 # Internet needs to be on
-!pip install tensorflow-gpu==2.0a0
+### pip install tensorflow-gpu==2.0a0
 import tensorflow as tf
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)

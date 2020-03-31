@@ -19,7 +19,7 @@ print(os.listdir("../input/nvidiaapex/repository/NVIDIA-apex-39e153a"))
 
 # Any results you write to the current directory are saved as output.
 # Installing Nvidia Apex
-! pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ../input/nvidiaapex/repository/NVIDIA-apex-39e153a
+###  pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ../input/nvidiaapex/repository/NVIDIA-apex-39e153a
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -41,9 +41,9 @@ import torch.utils.data
 import torch.nn.functional as F
 from nltk.stem import PorterStemmer
 from sklearn.metrics import roc_auc_score
-%load_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### load_ext autoreload
+### autoreload 2
+### matplotlib inline
 from tqdm import tqdm, tqdm_notebook
 import os
 from IPython.core.interactiveshell import InteractiveShell
@@ -103,7 +103,7 @@ def convert_lines(example, max_seq_length,tokenizer):
     return np.array(all_tokens)
 BERT_MODEL_PATH = '../input/bert-pretrained-models/uncased_l-12_h-768_a-12/uncased_L-12_H-768_A-12/'
 
-%%time
+### %time
 tokenizer = BertTokenizer.from_pretrained(BERT_MODEL_PATH, cache_dir=None,do_lower_case=True)
 train_df = pd.read_csv(os.path.join(Data_dir,"train.csv")).sample(num_to_load+valid_size,random_state=SEED)
 print('loaded %d records' % len(train_df))

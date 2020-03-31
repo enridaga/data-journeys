@@ -7,7 +7,7 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 dataset= pd.read_csv("../input/train.csv")
-#%matplotlib inline
+### matplotlib inline
 import seaborn
 seaborn.set() 
 

@@ -61,7 +61,7 @@ import matplotlib.pyplot as plt
 # pip install seaborn 
 import seaborn as sns
 # Graphics in retina format are more sharp and legible
-%config InlineBackend.figure_format = 'retina'
+### config InlineBackend.figure_format = 'retina'
 sns.countplot(x='International plan', hue='Churn', data=df);
 pd.crosstab(df['Churn'], df['Customer service calls'], margins=True)
 sns.countplot(x='Customer service calls', hue='Churn', data=df);

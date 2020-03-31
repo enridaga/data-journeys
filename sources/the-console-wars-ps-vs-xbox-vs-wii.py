@@ -9,7 +9,7 @@ import seaborn as sns
 
 from matplotlib import pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 from brewer2mpl import qualitative
 video = pd.read_csv('../input/Video_Games_Sales_as_at_22_Dec_2016.csv')

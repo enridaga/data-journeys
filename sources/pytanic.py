@@ -1,5 +1,5 @@
 
-##%matplotlib inline
+#%matplotlib inline
 
 # for seaborn issue:
 import warnings

@@ -1,11 +1,11 @@
 
-!pip install -U vega_datasets notebook vega
+### pip install -U vega_datasets notebook vega
 import numpy as np
 import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -34,7 +34,7 @@ import altair as alt
 
 import networkx as nx
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 alt.renderers.enable('notebook')
 import os
@@ -750,7 +750,7 @@ folds = KFold(n_splits=n_fold, shuffle=True, random_state=11)
 from sklearn.ensemble import ExtraTreesRegressor, AdaBoostRegressor, RandomForestRegressor
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.neighbors import NearestNeighbors
-%%time
+### %time
 etr = ExtraTreesRegressor()
 
 parameter_grid = {'n_estimators': [100, 300],
@@ -764,7 +764,7 @@ print('Best parameters: {}'.format(grid_search.best_params_))
 etr = ExtraTreesRegressor(**grid_search.best_params_)
 result_dict_etr = train_model_regression(X=X_1JHN, X_test=X_test_1JHN, y=y_1JHN, params=params, model_type='sklearn', model=etr, eval_metric='mae', plot_feature_importance=False,
                                                           verbose=False, early_stopping_rounds=100, n_estimators=500, folds=folds)
-%%time
+### %time
 ada = AdaBoostRegressor()
 
 parameter_grid = {'n_estimators': [50, 200]}
@@ -776,7 +776,7 @@ print('Best parameters: {}'.format(grid_search.best_params_))
 ada = AdaBoostRegressor(**grid_search.best_params_)
 result_dict_ada = train_model_regression(X=X_1JHN, X_test=X_test_1JHN, y=y_1JHN, params=params, model_type='sklearn', model=ada, eval_metric='mae', plot_feature_importance=False,
                                                           verbose=False, early_stopping_rounds=100, n_estimators=500, folds=folds)
-%%time
+### %time
 rfr = RandomForestRegressor()
 
 parameter_grid = {'n_estimators': [100, 300],
@@ -793,7 +793,7 @@ result_dict_rfr = train_model_regression(X=X_1JHN, X_test=X_test_1JHN, y=y_1JHN,
 X_1JHN = train.loc[train['type'] == '1JHN', [col for col in good_columns if col not in bad_advers_columns['1JHN']]].fillna(0)
 y_1JHN = train.loc[train['type'] == '1JHN', 'scalar_coupling_constant']
 X_test_1JHN = test.loc[test['type'] == '1JHN', [col for col in good_columns if col not in bad_advers_columns['1JHN']]].fillna(0)
-%%time
+### %time
 ridge = linear_model.Ridge(normalize=True)
 
 parameter_grid = {'alpha': [0.01, 0.1, 1.0]}
@@ -805,7 +805,7 @@ print('Best parameters: {}'.format(grid_search.best_params_))
 ridge = linear_model.Ridge(**grid_search.best_params_, normalize=True)
 result_dict_ridge = train_model_regression(X=X_1JHN, X_test=X_test_1JHN, y=y_1JHN, params=params, folds=folds, model_type='sklearn', model=ridge, eval_metric='mae', plot_feature_importance=False,
                                                           verbose=10, early_stopping_rounds=100, n_estimators=500)
-%%time
+### %time
 lasso = linear_model.Lasso(normalize=True)
 
 parameter_grid = {'alpha': [0.01, 0.1, 1.0]}

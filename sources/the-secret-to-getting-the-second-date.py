@@ -1,6 +1,6 @@
 
 # importing packages
-#%matplotlib inline
+### matplotlib inline
 import pandas as pd
 pd.options.display.max_rows = 1000 #handy for showing truncated results
 import matplotlib.pyplot as plt

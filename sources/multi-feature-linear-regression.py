@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-#%matplotlib notebook
-!ls ../input/allgrades
+### matplotlib notebook
+### ls ../input/allgrades
 data = pd.read_excel('../input/allgrades/AllGrades.xlsx')
 data.head()
 set_class = list(set(data['Class']))

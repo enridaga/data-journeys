@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('bmh')
 plt.rcParams['figure.figsize'] = (10, 10)
 title_config = {'fontsize': 20, 'y': 1.05}

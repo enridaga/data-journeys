@@ -12,7 +12,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('seaborn')
 from scipy.stats import norm, skew
 #Load the Data

@@ -12,7 +12,7 @@ import squarify #TreeMap
 
 import plotly.graph_objs as go
 
-#%matplotlib inline
+### matplotlib inline
 
 #ignore warning 
 import warnings

@@ -5,7 +5,7 @@ import numpy as np
 import seaborn as sns
 sns.set()
 
-#%matplotlib inline
+### matplotlib inline
 import matplotlib
 import matplotlib.pyplot as plt
 
@@ -165,7 +165,7 @@ dt_prediction = dt.predict(X_test)
 score = metrics.accuracy_score(Y_test, dt_prediction)
 display_confusion_matrix(Y_test, dt_prediction, score=score)
 visualize_tree(dt, X_test.columns)
-! dot -Tpng dt.dot > dt.png
+###  dot -Tpng dt.dot > dt.png
 svm = SVC(gamma='auto', random_state=42)
 svm.fit(X_train, Y_train)
 svm_prediction = svm.predict(X_test)

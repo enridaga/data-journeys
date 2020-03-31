@@ -7,7 +7,7 @@ import matplotlib
 import seaborn as sns
 import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook
-#%matplotlib inline 
+### matplotlib inline 
 def read_data():
     print(f'Read data')
     train_df = pd.read_csv('../input/data-science-bowl-2019/train.csv')
@@ -115,7 +115,7 @@ sample_train_df = train_df.sample(100000)
 sample_train_df.head()
 sample_train_df.iloc[0].event_data
 sample_train_df.iloc[1].event_data
-%%time
+### %time
 extracted_event_data = pd.io.json.json_normalize(sample_train_df.event_data.apply(json.loads))
 print(f"Extracted data shape: {extracted_event_data.shape}")
 extracted_event_data.head(10)

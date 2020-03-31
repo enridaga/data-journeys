@@ -1,11 +1,11 @@
 
-!pip install '/kaggle/input/dlibpkg/dlib-19.19.0'
+### pip install '/kaggle/input/dlibpkg/dlib-19.19.0'
 
-!pip install '/kaggle/input/face-recognition/face_recognition_models-0.3.0/face_recognition_models-0.3.0'
+### pip install '/kaggle/input/face-recognition/face_recognition_models-0.3.0/face_recognition_models-0.3.0'
 
-!pip install '/kaggle/input/face-recognition/face_recognition-0.1.5-py2.py3-none-any.whl'
+### pip install '/kaggle/input/face-recognition/face_recognition-0.1.5-py2.py3-none-any.whl'
 
-!pip install '/kaggle/input/imageio-ffmpeg/imageio_ffmpeg-0.3.0-py3-none-manylinux2010_x86_64.whl'
+### pip install '/kaggle/input/imageio-ffmpeg/imageio_ffmpeg-0.3.0-py3-none-manylinux2010_x86_64.whl'
 
 import os
 import pandas as pd

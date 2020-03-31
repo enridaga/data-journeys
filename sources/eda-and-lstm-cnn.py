@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 from nltk.tokenize import TweetTokenizer
 import datetime
@@ -125,7 +125,7 @@ def build_model(lr=0.0, lr_d=0.0, units=0, spatial_dr=0.0, kernel_size1=3, kerne
                         verbose = 1, callbacks = [check_point, early_stop])
     model = load_model(file_path)
     return model
-%%time
+### %time
 model = build_model(lr = 1e-4, lr_d = 0, units = 64, spatial_dr = 0.5, kernel_size1=4, kernel_size2=3, dense_units=16, dr=0.1, conv_size=16, epochs=5)
 # pred = model.predict(X_test, batch_size = 1024, verbose = 1)
 # predictions = np.round(np.argmax(pred, axis=1)).astype(int)
@@ -205,7 +205,7 @@ def build_model2(lr=0.0, lr_d=0.0, units=0, spatial_dr=0.0, kernel_size1=3, kern
 #%%time
 #model2 = build_model2(lr = 1e-4, lr_d = 1e-7, units = 256, spatial_dr = 0.3, kernel_size1=4, kernel_size2=3, dense_units=32, dr=0.1, conv_size=32, epochs=5)
 #model3 = build_model2(lr = 1e-3, lr_d = 1e-7, units = 256, spatial_dr = 0.3, kernel_size1=4, kernel_size2=3, dense_units=32, dr=0.1, conv_size=16, epochs=5)
-%%time
+### %time
 model4 = build_model2(lr = 1e-4, lr_d = 1e-7, units = 64, spatial_dr = 0.3, kernel_size1=4, kernel_size2=3, dense_units=32, dr=0.1, conv_size=8, epochs=5)
 #model5 = build_model2(lr = 1e-4, lr_d = 1e-7, units = 256, spatial_dr = 0.1, kernel_size1=4, kernel_size2=3, dense_units=32, dr=0.1, conv_size=16, epochs=5)
 class Attention(Layer):
@@ -325,7 +325,7 @@ def build_model3(lr=0.0, lr_d=0.0, units=0, spatial_dr=0.0, dense_units=128, dr=
     #                    verbose = 1, callbacks = [check_point, early_stop])
     #model = load_model(file_path)
     return model
-%%time
+### %time
 file_path = "best_model.hdf5"
 check_point = ModelCheckpoint(file_path, monitor = "val_loss", verbose = 1,
                               save_best_only = True, mode = "min")
@@ -370,7 +370,7 @@ def build_model4(lr=0.0, lr_d=0.0, units=0, spatial_dr=0.0, kernel_size1=3, kern
                         verbose = 1, callbacks = [check_point, early_stop])
     model = load_model(file_path)
     return model
-%%time
+### %time
 model7 = build_model4(lr = 1e-4, lr_d = 1e-7, units = 64, spatial_dr = 0.3, kernel_size1=3, dense_units=32, dr=0.1, conv_size=8, epochs=5)
 #model8 = build_model4(lr = 1e-4, lr_d = 1e-7, units = 128, spatial_dr = 0.3, kernel_size1=4, dense_units=32, dr=0.1, conv_size=8, epochs=5)
 def build_model5(lr=0.0, lr_d=0.0, units=0, spatial_dr=0.0, kernel_size1=3, kernel_size2=2, dense_units=128, dr=0.1, conv_size=32, epochs=20):

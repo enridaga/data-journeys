@@ -15,7 +15,7 @@ from datetime import datetime
 # for visualization: matplotlib
 from matplotlib import pyplot as plt
 from IPython.core.pylabtools import figsize
-#%matplotlib inline
+### matplotlib inline
 # to display visuals in the notebook
 
 # for visualization: seaborn

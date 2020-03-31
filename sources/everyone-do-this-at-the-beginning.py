@@ -181,7 +181,7 @@ def reduce_mem_usage(df):
     
     return df
 
-%time
+### time
 train = reduce_mem_usage(train)
 cols = train.columns.tolist()
 import seaborn as sns

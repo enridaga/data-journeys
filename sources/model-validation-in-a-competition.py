@@ -56,7 +56,7 @@ def prepare_sparse_features(path_to_train, path_to_test, path_to_site_dict,
     train_times, test_times = train_df[times], test_df[times]
     
     return X_train, X_test, y_train, vectorizer, train_times, test_times
-%%time
+### %time
 X_train_sites, X_test_sites, y_train, vectorizer, train_times, test_times = prepare_sparse_features(
     path_to_train=os.path.join(PATH_TO_DATA, 'train_sessions.csv'),
     path_to_test=os.path.join(PATH_TO_DATA, 'test_sessions.csv'),
@@ -70,7 +70,7 @@ vectorizer.get_feature_names()[:10]
 vectorizer.get_feature_names()[10000:10010]
 time_split = TimeSeriesSplit(n_splits=10)
 logit = LogisticRegression(C=1, random_state=SEED, solver='liblinear')
-%%time
+### %time
 
 cv_scores1 = cross_val_score(logit, X_train_sites, y_train, cv=time_split, 
                             scoring='roc_auc', n_jobs=4) # hangs with n_jobs > 1, and locally this runs much faster
@@ -154,7 +154,7 @@ def add_time_features(times, X_sparse, add_hour=True):
         
     X = hstack(objects_to_hstack)
     return X, feature_names
-%%time
+### %time
 X_train_with_times1, new_feat_names = add_time_features(train_times, X_train_sites)
 X_test_with_times1, _ = add_time_features(test_times, X_test_sites)
 X_train_with_times1.shape, X_test_with_times1.shape
@@ -164,7 +164,7 @@ cv_scores2 = train_and_predict(model=logit, X_train=X_train_with_times1, y_train
                                new_feature_names=new_feat_names,
                                cv=time_split, submission_file_name='subm2.csv')
 cv_scores2 > cv_scores1
-%%time
+### %time
 X_train_with_times2, new_feat_names = add_time_features(train_times, X_train_sites, add_hour=False)
 X_test_with_times2, _ = add_time_features(test_times, X_test_sites, add_hour=False)
 
@@ -224,7 +224,7 @@ c_values = np.logspace(-2, 2, 20)
 
 logit_grid_searcher = GridSearchCV(estimator=logit, param_grid={'C': c_values},
                                   scoring='roc_auc', n_jobs=4, cv=time_split, verbose=1)
-%%time
+### %time
 logit_grid_searcher.fit(X_train_final, y_train); 
 logit_grid_searcher.best_score_, logit_grid_searcher.best_params_
 final_model = logit_grid_searcher.best_estimator_
@@ -246,4 +246,4 @@ subm_df
 subm_df['cv_lb_weighted'] =  0.6 * subm_df['LB'] + (1 - 0.6) * subm_df['CV_mean']
 subm_df
 # so we'll treat the last submission as the best one
-!cp subm7.csv submission.csv
+### cp subm7.csv submission.csv

@@ -266,7 +266,7 @@ def association_rules(order_item, min_support):
     # Return association rules sorted by lift in descending order
 
     return item_pairs.sort_values('lift', ascending=False)
-%%time
+### %time
 
 rules = association_rules(orders, 0.01)  
 # Replace item ID with item name and display association rules

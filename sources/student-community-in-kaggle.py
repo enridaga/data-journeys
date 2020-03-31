@@ -14,7 +14,7 @@ from IPython.display import Image
 
 
 sns.set_style('whitegrid')
-#%matplotlib inline
+### matplotlib inline
 
 
 # Input data files are available in the "../input/" directory.

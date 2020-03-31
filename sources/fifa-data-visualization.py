@@ -18,7 +18,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 # reading the data and also checking the computation time
 
-%time data = pd.read_csv('/kaggle/input/fifa19/data.csv')
+### time data = pd.read_csv('/kaggle/input/fifa19/data.csv')
 
 print(data.shape)
 # checking the first 5 rows and columns

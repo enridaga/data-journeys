@@ -1,5 +1,5 @@
 
-!pip install lap
+### pip install lap
 # Read the dataset description
 import gzip
 # Read or generate p2h, a dictionary of image name to image id (picture to hash)

@@ -139,7 +139,7 @@ for example in tf.python_io.tf_record_iterator(frame_lvl_record):
 print('The first video has %d frames' %len(feat_rgb[0]))
 from matplotlib import pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.manifold import TSNE
 

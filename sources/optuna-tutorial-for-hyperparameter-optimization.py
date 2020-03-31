@@ -6,7 +6,7 @@ HTML('<iframe width="800" height="400" src="https://www.youtube.com/embed/-UeC4M
 Some visualization methods used in this tutorial is supported in optuna from v0.18.0 released recently!
 However this kaggle kernel pre-installs version 0.16.0
 """
-!pip install optuna==0.18.1
+### pip install optuna==0.18.1
 import gc
 import os
 from pathlib import Path
@@ -83,8 +83,8 @@ def reduce_mem_usage(df, use_float16=False):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-!ls ../input
-%%time
+### ls ../input
+### %time
 root = Path('../input/ashrae-feather-format-for-fast-loading')
 
 train_df = pd.read_feather(root/'train.feather')
@@ -553,7 +553,7 @@ def pred(X_test, models, batch_size=1000000):
 
     y_test_pred_total /= len(models)
     return y_test_pred_total
-%%time
+### %time
 X_test = create_X(test_df, target_meter=0)
 gc.collect()
 
@@ -561,21 +561,21 @@ y_test0 = pred(X_test, models0)
 
 del X_test
 gc.collect()
-%%time
+### %time
 X_test = create_X(test_df, target_meter=1)
 gc.collect()
 y_test1 = pred(X_test, models1)
 
 del X_test
 gc.collect()
-%%time
+### %time
 X_test = create_X(test_df, target_meter=2)
 gc.collect()
 y_test2 = pred(X_test, models2)
 
 del X_test
 gc.collect()
-%%time
+### %time
 X_test = create_X(test_df, target_meter=3)
 gc.collect()
 y_test3 = pred(X_test, models3)

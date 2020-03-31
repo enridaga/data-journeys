@@ -11,8 +11,8 @@ import numpy as np
 import glob
 import sys
 import os
-#%matplotlib inline
-%precision 4
+### matplotlib inline
+### precision 4
 plt.style.use('ggplot')
 np.set_printoptions(suppress=True)
 # let see how to create a multi dimentional Array with Numpy

@@ -2,8 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set(style='white')
-#%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
+### matplotlib inline
+### config InlineBackend.figure_format = 'retina'
 from sklearn import decomposition
 from sklearn import datasets
 from mpl_toolkits.mplot3d import Axes3D
@@ -95,7 +95,7 @@ plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y,
             cmap=plt.cm.get_cmap('nipy_spectral', 10))
 plt.colorbar()
 plt.title('MNIST. PCA projection');
-%%time
+### %time
 
 from sklearn.manifold import TSNE
 tsne = TSNE(random_state=17)

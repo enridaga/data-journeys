@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns; sns.set()
 from matplotlib import pyplot as plt
-%config InlineBackend.figure_format = 'retina'
+### config InlineBackend.figure_format = 'retina'
 plt.figure(figsize=(6, 4))
 xx = np.linspace(0,1,50)
 plt.plot(xx, [2 * x * (1-x) for x in xx], label='gini')

@@ -1,6 +1,6 @@
 
-!pip install torch torchvision feather-format kornia pyarrow --upgrade   > /dev/null
-!pip install git+https://github.com/fastai/fastai_dev                    > /dev/null
+### pip install torch torchvision feather-format kornia pyarrow --upgrade   > /dev/null
+### pip install git+https://github.com/fastai/fastai_dev                    > /dev/null
 from fastai2.basics           import *
 from fastai2.vision.all       import *
 from fastai2.medical.imaging  import *
@@ -144,7 +144,7 @@ def process_batch(pxs, fnames, n_workers=4):
     gs = crop_resize(pxs, bbs, 256).cpu().squeeze()
     parallel(save_cropped_jpg, zip(fnames, gs), n_workers=n_workers, progress=False, dest=dest)
 # test and time a single batch. It's ~100x faster on a GPU!
-%time process_batch(*dl.one_batch(), n_workers=3)
+### time process_batch(*dl.one_batch(), n_workers=3)
 fn = dest.ls()[0]
 im = Image.open(fn)
 fn

@@ -23,7 +23,7 @@ pd.options.mode.chained_assignment = None
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-#%matplotlib inline
+### matplotlib inline
 dailyData = pd.read_csv("../input/train.csv")
 dailyData.shape
 dailyData.head(2)

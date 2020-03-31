@@ -85,8 +85,8 @@ def reduce_mem_usage(df, use_float16=False):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-!ls ../input/ashrae-ucf-spider-and-eda-full-test-labels
-%%time
+### ls ../input/ashrae-ucf-spider-and-eda-full-test-labels
+### %time
 root = Path('../input/ashrae-feather-format-for-fast-loading')
 
 train_df = pd.read_feather(root/'train.feather')
@@ -475,7 +475,7 @@ def pred(X_test, models, batch_size=1000000):
     y_test_pred_total /= len(models)
     return y_test_pred_total
 
-%%time
+### %time
 X_test = create_X(test_df, target_meter=0)
 gc.collect()
 
@@ -485,7 +485,7 @@ sns.distplot(y_test0)
 
 del X_test
 gc.collect()
-%%time
+### %time
 X_test = create_X(test_df, target_meter=1)
 gc.collect()
 
@@ -494,7 +494,7 @@ sns.distplot(y_test1)
 
 del X_test
 gc.collect()
-%%time
+### %time
 X_test = create_X(test_df, target_meter=2)
 gc.collect()
 

@@ -67,7 +67,7 @@ pred_noemb_test_y = model.predict([test_X], batch_size=1024, verbose=1)
 del model, inp, x
 import gc; gc.collect()
 time.sleep(10)
-!ls ../input/embeddings/
+### ls ../input/embeddings/
 EMBEDDING_FILE = '../input/embeddings/glove.840B.300d/glove.840B.300d.txt'
 def get_coefs(word,*arr): return word, np.asarray(arr, dtype='float32')
 embeddings_index = dict(get_coefs(*o.split(" ")) for o in open(EMBEDDING_FILE))

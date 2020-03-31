@@ -32,7 +32,7 @@ import random
 seed = 1234
 random.seed(seed)
 np.random.seed(seed)
-%%time
+### %time
 train = pd.read_csv('../input/data-science-bowl-2019/train.csv')
 train_labels = pd.read_csv('../input/data-science-bowl-2019/train_labels.csv')
 test = pd.read_csv('../input/data-science-bowl-2019/test.csv')
@@ -1038,7 +1038,7 @@ class OptimizedRounder(object):
         Return the optimized coefficients
         """
         return self.coef_['x']
-%%time
+### %time
 pr1 = regressor_model1.predict(reduce_train)
 
 optR = OptimizedRounder()

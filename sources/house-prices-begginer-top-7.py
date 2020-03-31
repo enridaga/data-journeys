@@ -14,7 +14,7 @@ import os
 print(os.listdir("../input"))
 
 pd.set_option('display.float_format', lambda x: '{:.3f}'.format(x)) #Limiting floats output to 3 decimal points
-#%matplotlib inline
+### matplotlib inline
 # Read files
 train = pd.read_csv('../input/train.csv')
 test = pd.read_csv('../input/test.csv')

@@ -21,7 +21,7 @@ import seaborn as sns
 
 sns.set_style('whitegrid')
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

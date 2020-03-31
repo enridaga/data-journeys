@@ -19,7 +19,7 @@ from tqdm import tqdm
 
 
 
-#%matplotlib inline
+### matplotlib inline
 INPUT_DIR = '../input'
 def plot_images_for_filenames(filenames, labels, rows=4):
 

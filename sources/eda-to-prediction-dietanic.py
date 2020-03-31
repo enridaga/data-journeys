@@ -13,7 +13,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-#%matplotlib inline
+### matplotlib inline
 data=pd.read_csv('../input/train.csv')
 data.head()
 data.isnull().sum() #checking for total null values

@@ -288,7 +288,7 @@ plt.show()
 sns.jointplot("Suicides100kPop", "SuicidesNo", data=data[data['Country']=='Russian Federation'], kind="kde",space=0,color='g')
 plt.show()
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 sns.FacetGrid(data,hue='Year',size=5).map(plt.scatter,'GdpPerCapitalMoney','Population').add_legend()
 plt.show()
 sns.FacetGrid(data, hue="Generation", size=6).map(sns.kdeplot, "Population").add_legend()

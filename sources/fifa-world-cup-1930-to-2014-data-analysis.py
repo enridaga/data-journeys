@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import  Image
-#%matplotlib inline
+### matplotlib inline
 
 plt.figure(figsize=(15,10))
 img = np.array(Image.open(r"../input/fifa-img-cup/2014_20th_fifa_world_cup-wallpaper-1366x768.jpg"))

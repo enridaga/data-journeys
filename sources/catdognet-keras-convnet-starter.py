@@ -13,7 +13,7 @@ from matplotlib import ticker
 
 import seaborn as sns
 
-#%matplotlib inline 
+### matplotlib inline 
 
 
 

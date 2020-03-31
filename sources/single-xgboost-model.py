@@ -16,7 +16,7 @@ from sklearn.decomposition import TruncatedSVD
 from joblib import Parallel, delayed
 from tqdm import tqdm, tqdm_notebook
 
-#%matplotlib inline
+### matplotlib inline
 
 np.random.seed(seed=1337)
 warnings.filterwarnings('ignore')

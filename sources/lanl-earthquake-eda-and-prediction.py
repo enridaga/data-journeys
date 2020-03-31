@@ -33,7 +33,7 @@ else:
     PATH="../input/"
 os.listdir(PATH)
 print("There are {} files in test folder".format(len(os.listdir(os.path.join(PATH, 'test' )))))
-%%time
+### %time
 train_df = pd.read_csv(os.path.join(PATH,'train.csv'), dtype={'acoustic_data': np.int16, 'time_to_failure': np.float32})
 print("Train: rows:{} cols:{}".format(train_df.shape[0], train_df.shape[1]))
 pd.options.display.precision = 15

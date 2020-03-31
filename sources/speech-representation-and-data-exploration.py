@@ -51,7 +51,7 @@ import pandas as pd
 
 
 
-#%matplotlib inline
+### matplotlib inline
 train_audio_path = '../input/train/audio/'
 
 filename = '/yes/0a7c2a8d_nohash_0.wav'

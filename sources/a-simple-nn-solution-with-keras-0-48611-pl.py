@@ -13,7 +13,7 @@ from sklearn.cross_validation import train_test_split
 
 import matplotlib.pyplot as plt
 
-#%matplotlib inline 
+### matplotlib inline 
 
 
 

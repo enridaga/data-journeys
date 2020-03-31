@@ -1,6 +1,6 @@
 
 # Import libraries and set desired options
-#%matplotlib inline
+### matplotlib inline
 from matplotlib import pyplot as plt
 import seaborn as sns
 
@@ -52,8 +52,8 @@ train_df[sites].fillna(0).to_csv('train_sessions_text.txt',
                                  sep=' ', index=None, header=None)
 test_df[sites].fillna(0).to_csv('test_sessions_text.txt', 
                                 sep=' ', index=None, header=None)
-!head -3 train_sessions_text.txt
-%%time
+### head -3 train_sessions_text.txt
+### %time
 cv = CountVectorizer(ngram_range=(1, 3), max_features=50000)
 with open('train_sessions_text.txt') as inp_train_file:
     X_train = cv.fit_transform(inp_train_file)
@@ -72,7 +72,7 @@ def get_auc_lr_valid(X, y, C=1.0, seed=17, ratio = 0.9):
     
     return score
 X_train.shape, y_train.shape
-%%time
+### %time
 # Calculate metric on the validation set
 print(get_auc_lr_valid(X_train, y_train))
 # Function for writing predictions to a file

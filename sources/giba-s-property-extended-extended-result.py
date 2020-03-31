@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 import os
 import gc
 import numpy as np

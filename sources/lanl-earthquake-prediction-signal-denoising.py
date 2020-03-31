@@ -5,7 +5,7 @@ import numpy as np
 from numpy.fft import *
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 import pywt 
 from statsmodels.robust import mad

@@ -26,8 +26,8 @@ from sklearn.model_selection import StratifiedKFold
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import NullFormatter
-#%matplotlib inline
-%%time 
+### matplotlib inline
+### %time 
 
 # How many samples to take from both train and test
 SAMPLE_SIZE = 4459

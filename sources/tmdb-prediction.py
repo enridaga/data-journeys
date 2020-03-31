@@ -13,7 +13,7 @@ import catboost as cat
 import matplotlib.pyplot as plt
 import seaborn as sns 
 from mpl_toolkits.mplot3d import Axes3D
-#%matplotlib inline
+### matplotlib inline
 
 import ast
 from tqdm import tqdm
@@ -35,7 +35,7 @@ print(os.listdir("../input"))
 random_seed = 2019
 def rmse(y, y_pred):
     return np.sqrt(mean_squared_error(y, y_pred))
-%%time
+### %time
 train = pd.read_csv('../input/tmdb-box-office-prediction/train.csv')
 test = pd.read_csv('../input/tmdb-box-office-prediction/test.csv')
 train.index = train['id']

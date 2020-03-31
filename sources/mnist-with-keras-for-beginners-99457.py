@@ -8,7 +8,7 @@ import itertools
 import seaborn as sns
 from subprocess import check_output
 print(check_output(["ls", "../input"]).decode("utf8"))
-#%matplotlib inline
+### matplotlib inline
 #loading the dataset.......(Train)
 train = pd.read_csv("../input/train.csv")
 print(train.shape)
@@ -23,7 +23,7 @@ test.head()
 x_train = (train.ix[:,1:].values).astype('float32') # all pixel values
 y_train = train.ix[:,0].values.astype('int32') # only labels i.e targets digits
 x_test = test.values.astype('float32')
-#%matplotlib inline
+### matplotlib inline
 # preview the images first
 plt.figure(figsize=(12,10))
 x, y = 10, 4

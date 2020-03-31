@@ -15,7 +15,7 @@ from scipy.misc import imread
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.decomposition import NMF, LatentDirichletAllocation
 from matplotlib import pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 # Loading in the training data with Pandas
 train = pd.read_csv("../input/train.csv")
 train.head()

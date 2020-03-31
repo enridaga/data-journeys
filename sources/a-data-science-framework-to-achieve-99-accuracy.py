@@ -128,9 +128,9 @@ from pandas.tools.plotting import scatter_matrix
 
 # Configure visualizations
 
-##%matplotlib inline = show plots in Jupyter Notebook browser
+#%matplotlib inline = show plots in Jupyter Notebook browser
 
-#%matplotlib inline
+### matplotlib inline
 
 mpl.style.use( 'ggplot' )
 

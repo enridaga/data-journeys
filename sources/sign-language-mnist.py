@@ -10,7 +10,7 @@ train_data.append(test_data)
 dataset = train_data
 dataset.head()
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 mapping_values = {
     0:"A", 1:"B", 2:"C", 3:"D", 4:"E", 5:"F",

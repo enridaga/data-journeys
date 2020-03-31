@@ -85,7 +85,7 @@ text
 img = requests.get('https://photos.renthop.com/2/8393298_6acaf11f030217d05f3a5604b9a2f70f.jpg')
 img = Image.open(BytesIO(img.content))
 pytesseract.image_to_string(img)
-!pip install -q reverse_geocoder
+### pip install -q reverse_geocoder
 import reverse_geocoder as revgc
 
 revgc.search([df.latitude[0], df.longitude[0]])
@@ -98,7 +98,7 @@ from scipy.spatial import distance
 euclidean(make_harmonic_features(23), make_harmonic_features(1)) 
 euclidean(make_harmonic_features(9), make_harmonic_features(11)) 
 euclidean(make_harmonic_features(9), make_harmonic_features(21))
-!pip install -q pyyaml ua-parser user-agents
+### pip install -q pyyaml ua-parser user-agents
 import user_agents
 
 ua = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36'

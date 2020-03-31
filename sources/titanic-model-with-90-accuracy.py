@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 train_df=pd.read_csv("../input/train.csv")
 test_df=pd.read_csv("../input/test.csv")
 train_df.head()

@@ -20,7 +20,7 @@ import statsmodels
 from sklearn.metrics import accuracy_score
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 print("done")
 def read_and_concat_dataset(training_path, test_path):
     train = pd.read_csv(training_path)

@@ -17,7 +17,7 @@ DATA_DIR = '/kaggle/input'
 
 # Directory to save logs and trained model
 ROOT_DIR = '/kaggle/working'
-!git clone https://www.github.com/matterport/Mask_RCNN.git
+### git clone https://www.github.com/matterport/Mask_RCNN.git
 os.chdir('Mask_RCNN')
 #!python setup.py -q install
 # Import Mask RCNN
@@ -29,8 +29,8 @@ from mrcnn import visualize
 from mrcnn.model import log
 train_dicom_dir = os.path.join(DATA_DIR, 'stage_2_train_images')
 test_dicom_dir = os.path.join(DATA_DIR, 'stage_2_test_images')
-!wget --quiet https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
-!ls -lh mask_rcnn_coco.h5
+### wget --quiet https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
+### ls -lh mask_rcnn_coco.h5
 
 COCO_WEIGHTS_PATH = "mask_rcnn_coco.h5"
 def get_dicom_fps(dicom_dir):
@@ -218,7 +218,7 @@ LEARNING_RATE = 0.006
 # Train Mask-RCNN Model 
 import warnings 
 warnings.filterwarnings("ignore")
-%%time
+### %time
 ## train heads with higher lr to speedup the learning
 model.train(dataset_train, dataset_val,
             learning_rate=LEARNING_RATE*2,
@@ -227,7 +227,7 @@ model.train(dataset_train, dataset_val,
             augmentation=None)  ## no need to augment yet
 
 history = model.keras_model.history.history
-%%time
+### %time
 model.train(dataset_train, dataset_val,
             learning_rate=LEARNING_RATE,
             epochs=6,
@@ -236,7 +236,7 @@ model.train(dataset_train, dataset_val,
 
 new_history = model.keras_model.history.history
 for k in new_history: history[k] = history[k] + new_history[k]
-%%time
+### %time
 model.train(dataset_train, dataset_val,
             learning_rate=LEARNING_RATE/5,
             epochs=16,
@@ -441,4 +441,4 @@ visualize()
 visualize()
 visualize()
 # remove files to allow committing (hit files limit otherwise)
-!rm -rf /kaggle/working/Mask_RCNN
+### rm -rf /kaggle/working/Mask_RCNN

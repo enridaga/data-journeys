@@ -105,12 +105,12 @@ dtypes = {
         'Wdft_RegionIdentifier':                                'float16',
         'HasDetections':                                        'int8'
         }
-%time train = pd.read_csv("../input/train.csv", dtype=dtypes)
-%time test = pd.read_csv("../input/test.csv", dtype=dtypes)
+### time train = pd.read_csv("../input/train.csv", dtype=dtypes)
+### time test = pd.read_csv("../input/test.csv", dtype=dtypes)
 print(train.shape, test.shape)
 train['HasDetections'].value_counts().plot.bar()
 plt.title('HasDetections(target)')
-%%time
+### %time
 # checking missing data
 total = train.isnull().sum().sort_values(ascending = False)
 percent = (train.isnull().sum()/train.isnull().count()*100).sort_values(ascending = False)

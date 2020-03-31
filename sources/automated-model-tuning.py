@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 plt.rcParams['font.size'] = 18
-#%matplotlib inline
+### matplotlib inline
 
 # Governing choices for search
 N_FOLDS = 5

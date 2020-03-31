@@ -52,7 +52,7 @@ test_df.head()
 # its clear that we are supposed to predict the price, given other variables.
 # Lets check the basic price histogram and see if what is the range of prices 
 
-#%matplotlib inline
+### matplotlib inline
 
 start = time.time()
 
@@ -94,7 +94,7 @@ end = time.time()
 print("Time taken by above cell is {}.".format((end-start)))
 # Lets check the basic price histogram and see if what is the range of prices 
 
-#%matplotlib inline
+### matplotlib inline
 
 start = time.time()
 

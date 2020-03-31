@@ -1,5 +1,5 @@
 
-!pip install ../input/pretrainedmodels/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ > /dev/null # no output
+### pip install ../input/pretrainedmodels/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ > /dev/null # no output
 package_path = '../input/unetmodelscript' # add unet script dataset
 import sys
 sys.path.append(package_path)
@@ -230,8 +230,8 @@ def compute_iou_batch(outputs, labels, classes=None):
     iou = np.nanmean(ious)
     return iou
 
-!mkdir -p /tmp/.cache/torch/checkpoints/
-!cp ../input/resnet18/resnet18.pth /tmp/.cache/torch/checkpoints/resnet18-5c106cde.pth
+### mkdir -p /tmp/.cache/torch/checkpoints/
+### cp ../input/resnet18/resnet18.pth /tmp/.cache/torch/checkpoints/resnet18-5c106cde.pth
 model = Unet("resnet18", encoder_weights="imagenet", classes=4, activation=None)
 # model # uncomment to take a deeper look
 class Trainer(object):

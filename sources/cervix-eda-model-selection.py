@@ -13,7 +13,7 @@ import cv2
 
 
 
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 

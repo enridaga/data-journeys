@@ -11,7 +11,7 @@ import gc
 from tqdm import tqdm
 
 sys.path.insert(0, '../input/pretrained-bert-including-scripts/master/bert-master')
-!cp -r '../input/kerasbert/keras_bert' '/kaggle/working'
+### cp -r '../input/kerasbert/keras_bert' '/kaggle/working'
 BERT_PRETRAINED_DIR = '../input/pretrained-bert-including-scripts/uncased_l-12_h-768_a-12/uncased_L-12_H-768_A-12'
 print('***** BERT pretrained directory: {} *****'.format(BERT_PRETRAINED_DIR))
 import tokenization  #Actually keras_bert contains tokenization part, here just for convenience
@@ -29,7 +29,7 @@ print('begin_build')
 config_file = os.path.join(BERT_PRETRAINED_DIR, 'bert_config.json')
 checkpoint_file = os.path.join(BERT_PRETRAINED_DIR, 'bert_model.ckpt')
 sys.path.insert(0, '../input/bert-and-bidaf/model_bidaf.h5')
-!ls -l ../input/bert-and-bidaf
+### ls -l ../input/bert-and-bidaf
 cont_len = 512
 ques_len = 126
 
@@ -403,7 +403,7 @@ def bidaf_pred(row):
 
     return best_short_tokens, best_long_tokens
         
-!ls
+### ls
 TEST_TOTAL = 346
 
 def get_joined_tokens(answer: dict) -> str:

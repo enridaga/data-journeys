@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler #Analysis
 from scipy import stats #Analysis 
 import warnings 
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 import plotly.offline as py
 py.init_notebook_mode(connected=True)
 import plotly.graph_objs as go

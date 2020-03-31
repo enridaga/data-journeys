@@ -11,7 +11,7 @@ from scipy import stats
 from scipy.stats import norm
 from sklearn.preprocessing import StandardScaler
 from matplotlib import rcParams
-#%matplotlib inline
+### matplotlib inline
 le = preprocessing.LabelEncoder()
 from numba import jit
 import itertools
@@ -40,8 +40,8 @@ warnings.filterwarnings('ignore')
 import gc
 gc.enable()
 
-!ls ../input/
-!ls ../input/robots-best-submission
+### ls ../input/
+### ls ../input/robots-best-submission
 print ("Ready !")
 data = pd.read_csv('../input/career-con-2019/X_train.csv')
 tr = pd.read_csv('../input/career-con-2019/X_train.csv')
@@ -125,7 +125,7 @@ f,ax = plt.subplots(figsize=(8, 8))
 sns.heatmap(tr.iloc[:,3:].corr(), annot=True, linewidths=.5, fmt= '.1f',ax=ax)
 f,ax = plt.subplots(figsize=(8, 8))
 sns.heatmap(test.iloc[:,3:].corr(), annot=True, linewidths=.5, fmt= '.1f',ax=ax)
-!ls ../input
+### ls ../input
 train_x = pd.read_csv('../input/career-con-2019/X_train.csv')
 train_y = pd.read_csv('../input/career-con-2019/y_train.csv')
 import math
@@ -392,7 +392,7 @@ def feat_eng(data):
         df[col + '_abs_avg'] = (df[col + '_abs_min'] + df[col + '_abs_max'])/2
     return df
     
-%%time
+### %time
 data = feat_eng(data)
 test = feat_eng(test)
 print ("New features: ",data.shape)

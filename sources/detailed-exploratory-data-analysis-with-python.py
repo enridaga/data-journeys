@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # Comment this if the data visualisations doesn't work on your side
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

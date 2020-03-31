@@ -3,13 +3,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 import sqlite3
 import os
 from bokeh.plotting import figure, show
 from bokeh.io import output_notebook
 output_notebook()
-#%matplotlib inline
+### matplotlib inline
 import plotly.offline as py
 py.init_notebook_mode(connected=True)
 import plotly.graph_objs as go

@@ -1,6 +1,6 @@
 
-!pip install ../input/sacremoses/sacremoses-master/ > /dev/null
-!pip install "../input/kerasswa/keras-swa-0.1.2"  > /dev/null
+### pip install ../input/sacremoses/sacremoses-master/ > /dev/null
+### pip install "../input/kerasswa/keras-swa-0.1.2"  > /dev/null
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import re
@@ -614,7 +614,7 @@ def compute_output_arrays(df, columns):
     return np.asarray(df[columns])
 tokenizer = transformers.BertTokenizer.from_pretrained("../input/pretrained-bert-models-for-pytorch/bert-base-uncased-vocab.txt")
 input_categories = list(train.columns[[1,2,5]]); input_categories
-%%time
+### %time
 outputs = compute_output_arrays(train, columns = targets)
 inputs = compute_input_arays(train, input_categories, tokenizer, max_sequence_length=512)
 test_inputs = compute_input_arays(test, input_categories, tokenizer, max_sequence_length=512)
@@ -979,9 +979,9 @@ final_train_df.shape, final_test_df.shape
 valid_sz = 1000
 valid_idx = range(len(final_train_df)-valid_sz, len(final_train_df))
 valid_idx
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 
 from fastai import *
 from fastai.text import *

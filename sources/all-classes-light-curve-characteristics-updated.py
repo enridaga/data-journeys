@@ -114,49 +114,49 @@ def plot_phase_curves(feats, models, use_median_freq=False, hide_undetected=True
                    f'mean skew: {skew:.4}', y=1.1)
         plt.show()
 warnings.simplefilter('ignore', UserWarning)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(92)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(88)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(42)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(90)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(65)
 plot_phase_curves(feats, models)
 train_series[train_series['object_id'].isin(
     train_metadata[train_metadata['target'] == 65]['object_id'])]['flux'].describe()
 train_series[train_series['object_id'].isin(
     train_metadata[train_metadata['target'] == 65]['object_id'])]['detected'].mean()
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(16)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(67)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(95)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(62)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(15)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(52)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(6)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(64)
 plot_phase_curves(feats, models)
-%%capture capt
+### %capture capt
 feats, models = get_class_feats(53)
 plot_phase_curves(feats, models)

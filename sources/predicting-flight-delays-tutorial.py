@@ -43,7 +43,7 @@ InteractiveShell.ast_node_interactivity = "last_expr"
 
 pd.options.display.max_columns = 50
 
-#%matplotlib inline
+### matplotlib inline
 
 warnings.filterwarnings("ignore")
 df = pd.read_csv('../input/flights.csv', low_memory=False)

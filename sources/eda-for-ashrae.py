@@ -9,7 +9,7 @@ import gc
 warnings.simplefilter('ignore')
 matplotlib.rcParams['figure.dpi'] = 100
 sns.set()
-#%matplotlib inline
+### matplotlib inline
 building = pd.read_csv('../input/ashrae-energy-prediction/building_metadata.csv')
 weather_train = pd.read_csv('../input/ashrae-energy-prediction/weather_train.csv')
 weather_test = pd.read_csv('../input/ashrae-energy-prediction/weather_test.csv')

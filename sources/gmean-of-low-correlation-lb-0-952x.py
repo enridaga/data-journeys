@@ -9,7 +9,7 @@ import glob
 from scipy.stats import describe
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 LABELS = ["isFraud"]
 all_files = glob.glob("../input/lgmodels/*.csv")
 scores = np.zeros(len(all_files))

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd 
 
 import os
-#%matplotlib inline
+### matplotlib inline
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

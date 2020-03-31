@@ -10,7 +10,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 plt.style.use('ggplot')
 color_pal = [x['color'] for x in plt.rcParams['axes.prop_cycle']]
 # Show how the files appear in the input folder
-!ls -GFlash --color ../input
+### ls -GFlash --color ../input
 train_df = pd.read_csv('../input/train.csv')
 test_df = pd.read_csv('../input/test.csv')
 train_df.head()
@@ -38,7 +38,7 @@ ss = pd.read_csv('../input/sample_submission.csv')
 ss.head()
 test_df.head()
 train_df.head(1)
-! cat ../input/structures/dsgdb9nsd_000001.xyz
+###  cat ../input/structures/dsgdb9nsd_000001.xyz
 structures = pd.read_csv('../input/structures.csv')
 structures.head()
 # 3D Plot!

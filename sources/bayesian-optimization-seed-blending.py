@@ -9,7 +9,7 @@ np.random.seed(1029)
 import os
 import copy
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -41,7 +41,7 @@ import altair as alt
 from category_encoders.ordinal import OrdinalEncoder
 import networkx as nx
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from typing import List
 
 import os

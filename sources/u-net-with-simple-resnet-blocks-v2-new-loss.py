@@ -10,7 +10,7 @@ plt.style.use('seaborn-white')
 import seaborn as sns
 sns.set_style("white")
 
-#%matplotlib inline
+### matplotlib inline
 
 # import cv2
 from sklearn.model_selection import train_test_split

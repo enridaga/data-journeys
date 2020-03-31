@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt;
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv('../input/train.csv')
 train.tail()
 sns.heatmap(train.isnull(),yticklabels=False,cbar=False,cmap='viridis')

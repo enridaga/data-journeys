@@ -6,16 +6,16 @@ from sklearn.metrics import mean_squared_error, mean_squared_log_error
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, MaxAbsScaler
 from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt
-#%matplotlib inline
-%%time
+### matplotlib inline
+### %time
 data = pd.read_csv('../input/santander-value-prediction-challenge/train.csv')
 target = np.log1p(data['target'])
 data.drop(['ID', 'target'], axis=1, inplace=True)
-%%time
+### %time
 leak = pd.read_csv('../input/breaking-lb-fresh-start-with-lag-selection/train_leak.csv')
 data['leak'] = leak['compiled_leak'].values
 data['log_leak'] = np.log1p(leak['compiled_leak'].values)
-%%time
+### %time
 def rmse(y_true, y_pred):
     return mean_squared_error(y_true, y_pred) ** .5
 
@@ -110,7 +110,7 @@ for i, f in enumerate(good_features):
     plt.hist(np.log1p(test[f].replace(0, np.nan).dropna().values), alpha=.5, label='test', 
              bins=hists[1], density=True, histtype='bar')
     plt.legend()
-%%time
+### %time
 tst_leak = pd.read_csv('../input/breaking-lb-fresh-start-with-lag-selection/test_leak.csv')
 test['leak'] = tst_leak['compiled_leak']
 test['log_leak'] = np.log1p(tst_leak['compiled_leak'])

@@ -1145,13 +1145,13 @@ def preprocess(text):
 def text_clean_wrapper(df):
     df["comment_text"] = df["comment_text"].apply(preprocess)
     return df
-%%time
+### %time
 train['comment_text'] = train['comment_text'].progress_apply(lambda x: correct_contraction(x, contraction_mapping))
 test['comment_text']  = test['comment_text'].progress_apply(lambda x: correct_contraction(x, contraction_mapping))
 gc.collect()
 test.head().values
 train.head().values
-%%time
+### %time
 import string
 train = df_parallelize_run(train, text_clean_wrapper)
 test  = df_parallelize_run(test, text_clean_wrapper)
@@ -1187,7 +1187,7 @@ def clean_text(x):
     #the last regex ia a temp fix mainly and shouldn't be there
     
     return x
-%%time
+### %time
 train['comment_text'] = train['comment_text'].progress_apply(lambda x: correct_spelling(x, mispell_dict))
 train["comment_text"] = train["comment_text"].progress_apply(lambda x: clean_text(x))
 train['comment_text'] = train['comment_text'].progress_apply(lambda x: clean_number(x)) #incase
@@ -1200,10 +1200,10 @@ del mis_connect_list, mis_connect_re, mis_spell_mapping
 gc.collect()
 train.head().values
 test.head().values
-%%time
+### %time
 train.to_csv('train_cleaned_140419.csv', index=None)
 test.to_csv('test_cleaned_140419.csv', index=None)
-%%time
+### %time
 glove = '../input/quoratextemb/embeddings/glove.840B.300d/glove.840B.300d.txt'
 paragram =  '../input/quoratextemb/embeddings/paragram_300_sl999/paragram_300_sl999.txt'
 wiki_news = '../input/quoratextemb/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec'
@@ -1217,7 +1217,7 @@ print("Extracting FastText embedding")
 embed_fasttext = load_embed(wiki_news)
 # print("Extracting GoogleNews embedding")
 # embed_google = load_embed(google_path)
-%%time
+### %time
 oov_glove, oov_paragram, oov_fasttext = vocab_check_coverage(train, test)
 print('Default Embedding glove oov rate:',    oov_glove['oov_rate'])
 print('Default Embedding paragram oov rate:', oov_paragram['oov_rate'])

@@ -1,12 +1,12 @@
 
-!pip install ../input/sacremoses/sacremoses-master/
-!pip install ../input/transformers/transformers-master/
+### pip install ../input/sacremoses/sacremoses-master/
+### pip install ../input/transformers/transformers-master/
 import pandas as pd
 import numpy as np
 import os
 import matplotlib.pyplot as plt
 DATA_DIR = '../input/google-quest-challenge'
-!ls ../input
+### ls ../input
 sub = pd.read_csv(f'{DATA_DIR}/sample_submission.csv')
 sub.head()
 target_columns = sub.columns.values[1:].tolist()
@@ -222,7 +222,7 @@ def test_model():
 
     y = model(x, seg_ids)
     print(y)
-!ls ../input
+### ls ../input
 def create_model(model_file):
     model = QuestModel()
     model.load_state_dict(torch.load(model_file))

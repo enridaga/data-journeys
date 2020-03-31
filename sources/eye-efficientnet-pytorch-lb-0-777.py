@@ -1,6 +1,6 @@
 
-!pip install torch==1.1.0
-! pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ../input/nvidiaapex/repository/NVIDIA-apex-39e153a
+### pip install torch==1.1.0
+###  pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ../input/nvidiaapex/repository/NVIDIA-apex-39e153a
 import cv2
 import matplotlib.pyplot as plt
 from os.path import isfile

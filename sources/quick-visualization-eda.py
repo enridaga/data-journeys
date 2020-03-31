@@ -5,10 +5,10 @@ import os
 print(os.listdir("../input"))
 import sys
 import matplotlib.pyplot as plt
-#%matplotlib inline
-!git clone https://github.com/recursionpharma/rxrx1-utils
+### matplotlib inline
+### git clone https://github.com/recursionpharma/rxrx1-utils
 print ('rxrx1-utils cloned!')
-!ls
+### ls
 sys.path.append('rxrx1-utils')
 import rxrx.io as rio
 t = rio.load_site('train', 'RPE-05', 3, 'D19', 2)
@@ -81,5 +81,5 @@ plt.ylabel('Probability')
 plt.show()
 
 # Prevent: Output path '/rxrx1-utils/.git/logs/refs/remotes/origin/HEAD' contains too many nested subdirectories (max 6)
-!rm -r  rxrx1-utils
-!ls
+### rm -r  rxrx1-utils
+### ls

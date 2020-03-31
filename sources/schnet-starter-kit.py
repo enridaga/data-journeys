@@ -1,6 +1,6 @@
 
-!pip uninstall -y tensorflow
-!pip install chainer-chemistry==0.5.0
+### pip uninstall -y tensorflow
+### pip install chainer-chemistry==0.5.0
 import random
 import numpy as np
 import pandas as pd

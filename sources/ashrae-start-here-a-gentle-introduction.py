@@ -14,7 +14,7 @@ import gc
 
 # matplotlib and seaborn for plotting
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 import seaborn as sns
 import matplotlib.patches as patches
@@ -33,7 +33,7 @@ import plotly.graph_objs as go
 
 import os,random, math, psutil, pickle    
 print(os.listdir("../input/ashrae-energy-prediction/"))
-%%time
+### %time
 root = '../input/ashrae-energy-prediction/'
 train_df = pd.read_csv(root + 'train.csv')
 train_df["timestamp"] = pd.to_datetime(train_df["timestamp"], format='%Y-%m-%d %H:%M:%S')

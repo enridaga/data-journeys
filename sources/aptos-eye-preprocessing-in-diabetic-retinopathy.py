@@ -56,7 +56,7 @@ train_x, valid_x, train_y, valid_y = train_test_split(x, y, test_size=0.15,
 print(train_x.shape, train_y.shape, valid_x.shape, valid_y.shape)
 train_y.hist()
 valid_y.hist()
-%%time
+### %time
 fig = plt.figure(figsize=(25, 16))
 # display 10 images from each class
 for class_id in sorted(train_y.unique()):
@@ -71,7 +71,7 @@ for class_id in sorted(train_y.unique()):
         ax.set_title('Label: %d-%d-%s' % (class_id, idx, row['id_code']) )
         
 
-%%time
+### %time
 fig = plt.figure(figsize=(25, 16))
 for class_id in sorted(train_y.unique()):
     for i, (idx, row) in enumerate(df_train.loc[df_train['diagnosis'] == class_id].sample(5, random_state=SEED).iterrows()):
@@ -98,7 +98,7 @@ figsize = (width / float(dpi))/SCALE, (height / float(dpi))/SCALE
 
 fig = plt.figure(figsize=figsize)
 plt.imshow(image, cmap='gray')
-%%time
+### %time
 fig = plt.figure(figsize=(25, 16))
 for class_id in sorted(train_y.unique()):
     for i, (idx, row) in enumerate(df_train.loc[df_train['diagnosis'] == class_id].sample(5, random_state=SEED).iterrows()):
@@ -207,7 +207,7 @@ def load_ben_color(path, sigmaX=10):
     image=cv2.addWeighted ( image,4, cv2.GaussianBlur( image , (0,0) , sigmaX) ,-4 ,128)
         
     return image
-%%time
+### %time
 
 NUM_SAMP=7
 fig = plt.figure(figsize=(25, 16))
@@ -240,7 +240,7 @@ def circle_crop(img, sigmaX=10):
     img = crop_image_from_gray(img)
     img=cv2.addWeighted ( img,4, cv2.GaussianBlur( img , (0,0) , sigmaX) ,-4 ,128)
     return img 
-%%time
+### %time
 ## try circle crop
 NUM_SAMP=7
 fig = plt.figure(figsize=(25, 16))
@@ -266,7 +266,7 @@ figsize = (width / float(dpi))/SCALE, (height / float(dpi))/SCALE
 
 fig = plt.figure(figsize=figsize)
 plt.imshow(image, cmap='gray')
-%%time
+### %time
 NUM_SAMP=10
 fig = plt.figure(figsize=(25, 16))
 for jj in range(5):
@@ -277,7 +277,7 @@ for jj in range(5):
         
         plt.imshow(image)
         ax.set_title('%d-%s' % (idx, row['id_code']) )
-%%time
+### %time
 '''Bonus : sigmaX=50'''
 NUM_SAMP=10
 fig = plt.figure(figsize=(25, 16))
@@ -312,8 +312,8 @@ figsize = (width / float(dpi))/SCALE, (height / float(dpi))/SCALE
 fig = plt.figure(figsize=figsize)
 plt.imshow(image)
 '''
-!ls ../input/diabetic-retinopathy-resized/
-!ls ../input/diabetic-retinopathy-resized/resized_train/resized_train | head
+### ls ../input/diabetic-retinopathy-resized/
+### ls ../input/diabetic-retinopathy-resized/resized_train/resized_train | head
 df_old = pd.read_csv('../input/diabetic-retinopathy-resized/trainLabels.csv')
 
 df_old.head()
@@ -361,7 +361,7 @@ figsize = (width / float(dpi))/SCALE, (height / float(dpi))/SCALE
 
 fig = plt.figure(figsize=figsize)
 plt.imshow(image, cmap='gray')
-!ls ../input/retinopathy-train-2015/rescaled_train_896/rescaled_train_896/ | head
+### ls ../input/retinopathy-train-2015/rescaled_train_896/rescaled_train_896/ | head
 dpi = 80 #inch
 
 path_jpg=f"../input/diabetic-retinopathy-resized/resized_train/resized_train/18017_left.jpeg" # too many vessels?

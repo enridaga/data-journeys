@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 from nltk.tokenize import TweetTokenizer
 import datetime
@@ -48,11 +48,11 @@ test_vectorized = vectorizer.transform(test['Phrase'])
 y = train['Sentiment']
 logreg = LogisticRegression()
 ovr = OneVsRestClassifier(logreg)
-%%time
+### %time
 ovr.fit(train_vectorized, y)
 scores = cross_val_score(ovr, train_vectorized, y, scoring='accuracy', n_jobs=-1, cv=3)
 print('Cross-validation mean accuracy {0:.2f}%, std {1:.2f}.'.format(np.mean(scores) * 100, np.std(scores) * 100))
-%%time
+### %time
 svc = LinearSVC(dual=False)
 scores = cross_val_score(svc, train_vectorized, y, scoring='accuracy', n_jobs=-1, cv=3)
 print('Cross-validation mean accuracy {0:.2f}%, std {1:.2f}.'.format(np.mean(scores) * 100, np.std(scores) * 100))

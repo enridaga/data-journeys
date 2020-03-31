@@ -4,13 +4,13 @@ from os import listdir
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 fontsize = 50
 
 # From https://www.google.com/get/noto/
-!wget -q --show-progress https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip
-!unzip -p NotoSansCJKjp-hinted.zip NotoSansCJKjp-Regular.otf > NotoSansCJKjp-Regular.otf
-!rm NotoSansCJKjp-hinted.zip
+### wget -q --show-progress https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip
+### unzip -p NotoSansCJKjp-hinted.zip NotoSansCJKjp-Regular.otf > NotoSansCJKjp-Regular.otf
+### rm NotoSansCJKjp-hinted.zip
 
 font = ImageFont.truetype('./NotoSansCJKjp-Regular.otf', fontsize, encoding='utf-8')
 df_train = pd.read_csv('../input/train.csv')

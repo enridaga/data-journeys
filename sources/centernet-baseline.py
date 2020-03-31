@@ -467,7 +467,7 @@ BATCH_SIZE = 4
 train_loader = DataLoader(dataset=train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=4)
 dev_loader = DataLoader(dataset=dev_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=0)
 test_loader = DataLoader(dataset=test_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=0)
-!pip install efficientnet-pytorch
+### pip install efficientnet-pytorch
 from efficientnet_pytorch import EfficientNet
 class double_conv(nn.Module):
     '''(conv => BN => ReLU) * 2'''
@@ -635,7 +635,7 @@ def evaluate_model(epoch, history=None):
         history.loc[epoch, 'dev_loss'] = loss.cpu().numpy()
     
     print('Dev loss: {:.4f}'.format(loss))
-%%time
+### %time
 import gc
 
 history = pd.DataFrame()

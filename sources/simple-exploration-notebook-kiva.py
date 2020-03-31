@@ -4,7 +4,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 py.init_notebook_mode(connected=True)

@@ -43,7 +43,7 @@ S[2,3] = S[3,2] = T[8]
 S[3,3] = T[9]
 norm = np.linalg.norm(np.dot(Z,T), ord=2)**2
 print(norm)
-#%matplotlib inline
+### matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd

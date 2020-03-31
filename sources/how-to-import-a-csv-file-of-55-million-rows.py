@@ -5,7 +5,7 @@ import os
 from tqdm import tqdm
 
 TRAIN_PATH = '../input/train.csv'
-%%time
+### %time
 # Assume we only know that the csv file is somehow large, but not the exact size
 # we want to know the exact number of rows
 
@@ -14,7 +14,7 @@ with open(TRAIN_PATH) as file:
     n_rows = len(file.readlines())
 
 print (f'Exact number of rows: {n_rows}')
-%%time
+### %time
 
 # Method 2 by @danlester, using wc unix command. Takes only 3 seconds!
 s = !wc -l {TRAIN_PATH}
@@ -23,7 +23,7 @@ s = !wc -l {TRAIN_PATH}
 n_rows = int(s[0].split(' ')[0])+1
 
 print (f'Exact number of rows: {n_rows}')
-%%time
+### %time
 
 # Same method but more 'pythonic'
 import subprocess
@@ -53,7 +53,7 @@ traintypes = {'fare_amount': 'float32',
 
 cols = list(traintypes.keys())
 chunksize = 5_000_000 # 5 million rows at one go. Or try 10 million
-%%time
+### %time
 df_list = [] # list to hold the batch dataframe
 
 for df_chunk in tqdm(pd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes, chunksize=chunksize)):
@@ -78,15 +78,15 @@ del df_list
 train_df.info()
 display(train_df.head())
 display(train_df.tail())
-%%time
+### %time
 # Save into feather format, about 1.5Gb. 
 train_df.to_feather('nyc_taxi_data_raw.feather')
-%%time
+### %time
 # load the same dataframe next time directly, without reading the csv file again!
 train_df_new = pd.read_feather('nyc_taxi_data_raw.feather')
 # print the dataframe info to verify we have indeed loaded the saved dataframe of 55 million rows
 train_df_new.info()
-%%time
+### %time
 
 # dask's read_csv takes no time at all!
 ddf = dd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes)
@@ -94,25 +94,25 @@ ddf = dd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes)
 ddf.info()
 # nothing to describe?
 ddf.describe()
-%%time
+### %time
 
 # dask is lazy. It only works when it is asked explicitly with compute()
 ddf.describe().compute()
-%%time
+### %time
 
 # Again, it only works when it is asked :)
 len(ddf)
 del ddf
-%%time
+### %time
 
 # using panda read_csv to read the entire file in one shot
 df = pd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes)
-%%time
+### %time
 df['pickup_datetime'] = df['pickup_datetime'].str.slice(0, 16)
 df['pickup_datetime'] = pd.to_datetime(df['pickup_datetime'], utc=True, format='%Y-%m-%d %H:%M')
 df.info()
 del df
-%%time
+### %time
 
 # using dask read_csv followed by compute() to create a panda dataframe
 ddf_pd = dd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes).compute()
@@ -121,9 +121,9 @@ ddf_pd = dd.read_csv(TRAIN_PATH, usecols=cols, dtype=traintypes).compute()
 # Source: https://pandas-docs.github.io/pandas-docs-travis/advanced.html#int64index-and-rangeindex
 # Furthermore, without conversion, the resulting dataframe takes up more memory usage (1.9GB)
 ddf_pd.index = pd.RangeIndex(start=0, stop=len(ddf_pd)) 
-%%time
+### %time
 ddf_pd['pickup_datetime'] = ddf_pd['pickup_datetime'].str.slice(0, 16)
 ddf_pd['pickup_datetime'] = pd.to_datetime(ddf_pd['pickup_datetime'], utc=True, format='%Y-%m-%d %H:%M')
-%%time
+### %time
 ddf_pd.info()
 del ddf_pd

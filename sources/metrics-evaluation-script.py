@@ -111,7 +111,7 @@ def check_match(idx):
     
     return result_flg, scores
 validation_prediction = '../input/autonomous-driving-validation-data/prediction_for_validation_data.csv'
-!head -2 $validation_prediction
+### head -2 $validation_prediction
 valid_df = pd.read_csv(validation_prediction)
 expanded_valid_df = expand_df(valid_df, ['pitch','yaw','roll','x','y','z','Score'])
 valid_df = valid_df.fillna('')

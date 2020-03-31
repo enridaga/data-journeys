@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 import os
@@ -123,7 +123,7 @@ for i in range(n**2):
 plt.tight_layout()
 fig.savefig('gs.png', dpi=300)
 plt.show();
-%%timeit
+### %timeit
 x, y = next(train_datagen)
 callbacks = [
     ReduceLROnPlateau(monitor='val_top_3_accuracy', factor=0.75, patience=3, min_delta=0.001,

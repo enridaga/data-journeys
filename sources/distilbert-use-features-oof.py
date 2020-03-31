@@ -1,5 +1,5 @@
 
-!pip install ../input/sacremoses/sacremoses-master/ > /dev/null
+### pip install ../input/sacremoses/sacremoses-master/ > /dev/null
 
 import os
 import sys

@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 # Load Data
 train = pd.read_csv('../input/titanic/train.csv')

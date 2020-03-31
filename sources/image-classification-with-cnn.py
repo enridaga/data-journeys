@@ -12,7 +12,7 @@ import numpy as np #for numerical computations
 import pandas as pd #for dataframe operations
 
 from matplotlib import pyplot as plt #for viewing images and plots
-#%matplotlib inline 
+### matplotlib inline 
 #So that Matplotlib plots don't open in separate windows outside the notebook
 
 import urllib #For fetching data from Web URLs

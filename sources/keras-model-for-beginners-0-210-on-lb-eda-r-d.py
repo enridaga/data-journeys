@@ -44,7 +44,7 @@ import pylab
 
 plt.rcParams['figure.figsize'] = 10, 10
 
-#%matplotlib inline
+### matplotlib inline
 #Load the data.
 
 train = pd.read_json("../input/train.json")

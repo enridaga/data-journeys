@@ -16,7 +16,7 @@ from sklearn.model_selection import KFold,GroupKFold
 from sklearn.metrics import roc_auc_score
 warnings.simplefilter('ignore')
 sns.set()
-#%matplotlib inline
+### matplotlib inline
 def reduce_mem_usage(df, verbose=True):
     numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     start_mem = df.memory_usage().sum() / 1024**2    
@@ -44,7 +44,7 @@ def reduce_mem_usage(df, verbose=True):
     end_mem = df.memory_usage().sum() / 1024**2
     if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
-%%time
+### %time
 warnings.simplefilter('ignore')
 files = ['../input/ieee-fraud-detection/test_identity.csv', 
          '../input/ieee-fraud-detection/test_transaction.csv',

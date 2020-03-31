@@ -18,7 +18,7 @@ import plotly.tools as tls
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import matplotlib
-#%matplotlib inline
+### matplotlib inline
 
 from skimage.io import imread, imshow
 

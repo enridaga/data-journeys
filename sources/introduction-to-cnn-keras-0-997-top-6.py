@@ -9,7 +9,7 @@ import matplotlib.image as mpimg
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

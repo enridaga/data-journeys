@@ -142,7 +142,7 @@ trn, sub = target_encode(trn_df["ps_car_11_cat"],
 trn.head(10)
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

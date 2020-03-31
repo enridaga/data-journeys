@@ -7,7 +7,7 @@ from matplotlib import rcParams
 from scipy import stats
 
 #To plot figs on jupyter
-#%matplotlib inline
+### matplotlib inline
 # figure size in inches
 rcParams['figure.figsize'] = 14,6
 df_loan = pd.read_csv("../input/loan.csv",low_memory=False)

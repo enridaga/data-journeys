@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 
 
-#%matplotlib inline
+### matplotlib inline
 # Read the full data set stored as HDF5 file
 
 full_df = pd.read_hdf('../input/train.h5')

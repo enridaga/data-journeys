@@ -1,11 +1,11 @@
 
-!pip install -U vega_datasets notebook vega
+### pip install -U vega_datasets notebook vega
 import numpy as np
 import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -32,7 +32,7 @@ import altair as alt
 
 import networkx as nx
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 alt.renderers.enable('notebook')
 import os

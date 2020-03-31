@@ -33,7 +33,7 @@ def convert2camera(worldCoord):
     x,y,z = worldCoord[0],worldCoord[1],worldCoord[2]
     return x * fx / z + cx, y * fy / z + cy
 # Plot inline
-#%matplotlib inline
+### matplotlib inline
 
 x = []
 y = []

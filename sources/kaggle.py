@@ -14,7 +14,7 @@ from scipy.stats import  norm
 from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings('ignore')
-#%matplotlib inline  
+### matplotlib inline  
 # 为了在jupyter notebook里作图，需要用到这个命令
 data_train = pd.read_csv("../input/train.csv")
 data_train

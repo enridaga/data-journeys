@@ -15,7 +15,7 @@ print(os.listdir("../input"))
 
 import matplotlib.pylab as plt
 plt.style.use('fivethirtyeight')
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 sns.set(style="ticks")
 sns.set(rc={'figure.figsize':(15,10)})

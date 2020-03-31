@@ -1,7 +1,7 @@
 
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 from fastai import *
 from fastai.vision import *
 bs = 64

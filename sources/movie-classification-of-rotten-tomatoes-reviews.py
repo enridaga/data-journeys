@@ -7,7 +7,7 @@ import seaborn as sns
 sns.set()
 
 import os
-#%matplotlib inline
+### matplotlib inline
 print(os.listdir('../input'))
 # Loading in dataset
 df = pd.read_csv('../input/rotten-tomatoes/reviews.tsv', sep='\t', encoding = 'ISO-8859-1')

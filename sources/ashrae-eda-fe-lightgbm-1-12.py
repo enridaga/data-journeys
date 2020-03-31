@@ -13,7 +13,7 @@ from tqdm import tqdm
 from sklearn.preprocessing import LabelEncoder
 sns.set(rc={'figure.figsize':(11,8)})
 sns.set(style="whitegrid")
-%%time
+### %time
 metadata_df = pd.read_csv('/kaggle/input/ashrae-energy-prediction/building_metadata.csv')
 train_df = pd.read_csv('/kaggle/input/ashrae-energy-prediction/train.csv', parse_dates=['timestamp'])
 test_df = pd.read_csv('/kaggle/input/ashrae-energy-prediction/test.csv', parse_dates=['timestamp'])
@@ -104,7 +104,7 @@ weather_train_df.head()
 metadata_df.head()
 test_df.head()
 train_df.head()
-%%time
+### %time
 full_train_df = train_df.merge(metadata_df, on='building_id', how='left')
 full_train_df = full_train_df.merge(weather_train_df, on=['site_id', 'timestamp'], how='left')
 full_train_df = full_train_df.loc[~(full_train_df['air_temperature'].isnull() & full_train_df['cloud_coverage'].isnull() & full_train_df['dew_temperature'].isnull() & full_train_df['precip_depth_1_hr'].isnull() & full_train_df['sea_level_pressure'].isnull() & full_train_df['wind_direction'].isnull() & full_train_df['wind_speed'].isnull() & full_train_df['offset'].isnull())]
@@ -113,7 +113,7 @@ full_train_df.shape
 del train_df
 del weather_train_df
 gc.collect()
-%%time
+### %time
 full_test_df = test_df.merge(metadata_df, on='building_id', how='left')
 full_test_df = full_test_df.merge(weather_test_df, on=['site_id', 'timestamp'], how='left')
 full_test_df.shape
@@ -150,7 +150,7 @@ def mean_without_overflow_fast(col):
     col /= len(col)
     return col.mean() * len(col)
 missing_values = (100-full_train_df.count() / len(full_train_df) * 100).sort_values(ascending=False)
-%%time
+### %time
 missing_features = full_train_df.loc[:, missing_values > 0.0]
 missing_features = missing_features.apply(mean_without_overflow_fast)
 for key in full_train_df.loc[:, missing_values > 0.0].keys():

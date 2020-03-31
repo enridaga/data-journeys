@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 # Import statements required for Plotly 
 import plotly.offline as py

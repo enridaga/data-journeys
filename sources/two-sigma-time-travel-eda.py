@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 p = sns.color_palette()
 with pd.HDFStore("../input/train.h5", "r") as train:

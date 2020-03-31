@@ -20,7 +20,7 @@ import scipy
 import tensorflow as tf
 from tqdm import tqdm
 
-#%matplotlib inline
+### matplotlib inline
 np.random.seed(2019)
 tf.set_random_seed(2019)
 train_df = pd.read_csv('../input/aptos2019-blindness-detection/train.csv')

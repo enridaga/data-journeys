@@ -10,8 +10,8 @@ import cv2
 plt.style.use('ggplot')
 from IPython.display import Video
 from IPython.display import HTML
-!ls -GFlash ../input/deepfake-detection-challenge
-!du -sh ../input/deepfake-detection-challenge/
+### ls -GFlash ../input/deepfake-detection-challenge
+### du -sh ../input/deepfake-detection-challenge/
 train_sample_metadata = pd.read_json('../input/deepfake-detection-challenge/train_sample_videos/metadata.json').T
 train_sample_metadata.head()
 train_sample_metadata.groupby('label')['label'].count().plot(figsize=(15, 5), kind='bar', title='Distribution of Labels in the Training Set')
@@ -33,7 +33,7 @@ ax.xaxis.set_visible(False)
 ax.yaxis.set_visible(False)
 ax.title.set_text(f"FRAME 0: {video_file.split('/')[-1]}")
 plt.grid(False)
-!pip install face_recognition
+### pip install face_recognition
 import face_recognition
 face_locations = face_recognition.face_locations(image)
 

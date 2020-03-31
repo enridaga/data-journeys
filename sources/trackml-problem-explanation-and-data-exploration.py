@@ -11,7 +11,7 @@ from trackml.score import score_event
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 event_prefix = 'event000001000'
 hits, cells, particles, truth = load_event(os.path.join('../input/train_1', event_prefix))
 

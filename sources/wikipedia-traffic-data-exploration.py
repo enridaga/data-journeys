@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import re
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv('../input/train_1.csv').fillna(0)
 train.head()
 # Commented out for now to stop errors with some of the statsmodels methods

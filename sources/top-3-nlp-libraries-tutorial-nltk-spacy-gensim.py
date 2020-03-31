@@ -23,7 +23,7 @@ print('Python: {}'.format(sys.version))
 sns.set(style='white', context='notebook', palette='deep')
 warnings.filterwarnings('ignore')
 sns.set_style('white')
-#%matplotlib inline
+### matplotlib inline
 print(os.listdir("../input/"))
 gendered_pronoun_df = pd.read_csv('../input/test_stage_1.tsv', delimiter='\t')
 submission = pd.read_csv('../input/sample_submission_stage_1.csv')

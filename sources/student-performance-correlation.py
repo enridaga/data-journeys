@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 df=pd.read_csv('../input/students-performance-in-exams/StudentsPerformance.csv')
 df.head()
 plt.figure(dpi=150)

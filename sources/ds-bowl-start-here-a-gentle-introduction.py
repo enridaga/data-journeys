@@ -37,11 +37,11 @@ from tqdm import tqdm_notebook
 
 from IPython.display import HTML
 
-#%matplotlib inline
+### matplotlib inline
 plt.rc('figure', figsize=(15.0, 8.0))
 import os
 print(os.listdir("../input/data-science-bowl-2019/"))
-%%time
+### %time
 root = '../input/data-science-bowl-2019/'
 
 # Only load those columns in order to save space
@@ -156,13 +156,13 @@ def group_and_reduce(df):
     ).agg([np.sum, np.mean, np.std])
 
     return group2.join(group3).join(group4)
-%%time
+### %time
 train_small = group_and_reduce(train)
 test_small = group_and_reduce(test)
 
 print(train_small.shape)
 train_small.head()
-%%time
+### %time
 from sklearn.model_selection import KFold
 small_labels = train_labels[['installation_id', 'accuracy_group']].set_index('installation_id')
 train_joined = train_small.join(small_labels).dropna()
@@ -190,11 +190,11 @@ for train, test in kf.split(X):
 
     model = lgb.train(params, train_set, num_boost_round=5000, early_stopping_rounds=50, valid_sets=[train_set, val_set], verbose_eval=50)
     y_pred += model.predict(test_small)
-%%time
+### %time
 y_pred = y_pred.argmax(axis=1)
 test_small['accuracy_group'] = y_pred
 test_small[['accuracy_group']].to_csv('submission.csv')
-%%time
+### %time
 val_pred = model.predict(x_val).argmax(axis=1)
 print(classification_report(y_val, val_pred))
 

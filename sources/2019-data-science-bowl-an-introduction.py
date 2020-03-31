@@ -9,7 +9,7 @@ pd.set_option('max_columns', 100)
 warnings.filterwarnings("ignore")
 sns.set_style("whitegrid")
 my_pal = sns.color_palette(n_colors=10)
-!ls -GFlash ../input/data-science-bowl-2019/
+### ls -GFlash ../input/data-science-bowl-2019/
 # Read in the data CSV files
 train = pd.read_csv('../input/data-science-bowl-2019/train.csv')
 train_labels = pd.read_csv('../input/data-science-bowl-2019/train_labels.csv')

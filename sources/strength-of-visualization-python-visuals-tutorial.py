@@ -98,7 +98,7 @@ print("Number of Nulls - {}.".format(train_data.isnull().sum().sum()))
 end = time.time()
 
 print("Time taken by above cell is {}.".format(end-start))
-#%matplotlib inline
+### matplotlib inline
 
 start = time.time()
 
@@ -1087,7 +1087,7 @@ p = ggplot(aes(x='date'),data=weather) + geom_line(aes(y='minimum temperature', 
 p + geom_point(aes(y='minimum temperature', colour = "blue")) #+ stat_smooth(colour='yellow', span=0.2)
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 weather['precipitation'].unique()
 
@@ -2021,7 +2021,7 @@ df_cluster4.head()
 end = time.time()
 
 print("time taken by thie script by now is {}.".format(end-start))
-#%matplotlib inline
+### matplotlib inline
 
 def bar_plot(x_var, y_var):
 

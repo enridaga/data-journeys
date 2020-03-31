@@ -6,7 +6,7 @@ import numpy as np
 # Data Visualisation
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 # Path of the file to read.
 file_path = '../input/train.csv'
 

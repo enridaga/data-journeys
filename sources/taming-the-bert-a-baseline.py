@@ -17,21 +17,21 @@ import time
 
 # Any results you write to the current directory are saved as output.
 #downloading weights and cofiguration file for the model
-!wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+### wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
 with zipfile.ZipFile("uncased_L-12_H-768_A-12.zip","r") as zip_ref:
     zip_ref.extractall()
-!ls 'uncased_L-12_H-768_A-12'
-!wget https://raw.githubusercontent.com/google-research/bert/master/modeling.py 
-!wget https://raw.githubusercontent.com/google-research/bert/master/extract_features.py 
-!wget https://raw.githubusercontent.com/google-research/bert/master/tokenization.py
+### ls 'uncased_L-12_H-768_A-12'
+### wget https://raw.githubusercontent.com/google-research/bert/master/modeling.py 
+### wget https://raw.githubusercontent.com/google-research/bert/master/extract_features.py 
+### wget https://raw.githubusercontent.com/google-research/bert/master/tokenization.py
 import modeling
 import extract_features
 import tokenization
 import tensorflow as tf
-!wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-development.tsv
-!wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-validation.tsv
-!wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-test.tsv
-!ls
+### wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-development.tsv
+### wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-validation.tsv
+### wget https://raw.githubusercontent.com/google-research-datasets/gap-coreference/master/gap-test.tsv
+### ls
 def compute_offset_no_spaces(text, offset):
 	count = 0
 	for pos in range(offset):

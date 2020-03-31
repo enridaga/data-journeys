@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, roc_curve, precision_recall_curve, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 input_dir = os.path.join(os.pardir, 'input')
 print('Input files:\n{}'.format(os.listdir(input_dir)))
 print('Loading data sets...')

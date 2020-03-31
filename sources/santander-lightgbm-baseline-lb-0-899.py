@@ -9,14 +9,14 @@ from sklearn.preprocessing import StandardScaler #Analysis
 from scipy import stats #Analysis 
 import warnings 
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 import gc
 
 import os
 import string
 color = sns.color_palette()
 
-#%matplotlib inline
+### matplotlib inline
 
 from plotly import tools
 import plotly.offline as py
@@ -187,7 +187,7 @@ param = {
     }
 features = [c for c in train_df.columns if c not in ['ID_code', 'target']]
 target = train_df['target']
-%%time
+### %time
 from sklearn.metrics import roc_auc_score, roc_curve
 skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=2019)
 oof = np.zeros(len(train_df))

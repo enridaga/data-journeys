@@ -18,11 +18,11 @@ from collections import OrderedDict
 import matplotlib.pyplot as plt
 
 import dataset_det as d_loader
-!pip install ipdb
+### pip install ipdb
 import vis
 import torch.utils.data as torch_d
 from torch.nn import functional as F
-!pip install torchsummary
+### pip install torchsummary
 from torchsummary import summary
 def intersect(box_a, box_b):
     """ We resize both tensors to [A,B,2] without new malloc:

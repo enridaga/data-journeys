@@ -1,6 +1,6 @@
 
-!pip install bubbly
-!pip install pandas-profiling
+### pip install bubbly
+### pip install pandas-profiling
 # for basic operations
 import numpy as np
 import pandas as pd

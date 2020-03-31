@@ -7,7 +7,7 @@ import seaborn as sns
 sns.set()
 import warnings
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 #plt.style.use('ggplot')
 #ggplot is R based visualisation package that provides better graphics with higher level of abstraction
 #Loading the dataset

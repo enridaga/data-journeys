@@ -6,7 +6,7 @@ import scipy.special
 def factorial(n):
     return int(scipy.special.gamma(n+1))
 for k in range(8, 21): print(k, factorial(k))
-%%sh
+### %sh
 cat >dp.cc <<'EOF'
 // Exact dynamic programming TSP solver (also known as Held-Karp algorithm)
 // for optimizing small rolling-window segments of the tour.
@@ -420,8 +420,8 @@ int main(int argc, char** argv) {
   tour.ToCSV();
 }
 EOF
-!g++ --std=c++17 -Wall -g -Ofast -mtune=native -march=native -fopenmp -DNDEBUG -o dp dp.cc
-%%bash
+### g++ --std=c++17 -Wall -g -Ofast -mtune=native -march=native -fopenmp -DNDEBUG -o dp dp.cc
+### %bash
 # K=12: 1515579.33 real 1m33s
 # K=13: 1515578.73 real 3m31s
 # K=14: 1515577.89 real 7m51s

@@ -20,7 +20,7 @@ from tqdm import tqdm_notebook
 
 
 
-#%matplotlib inline
+### matplotlib inline
 ads = pd.read_csv('../input/ads.csv', index_col=['Time'], parse_dates=['Time'])
 currency = pd.read_csv('../input/currency.csv', index_col=['Time'], parse_dates=['Time'])
 plt.figure(figsize=(15, 7))
@@ -306,7 +306,7 @@ def timeseriesCVscore(params, series, loss_function=mean_squared_error, slen=24)
         errors.append(error)
         
     return np.mean(np.array(errors))
-%%time
+### %time
 data = ads.Ads[:-20] # leave some data for testing
 
 # initializing model parameters alpha, beta and gamma
@@ -368,7 +368,7 @@ plt.plot(model.PredictedDeviation)
 plt.grid(True)
 plt.axis('tight')
 plt.title("Brutlag's predicted deviation");
-%%time
+### %time
 data = currency.GEMS_GEMS_SPENT[:-50] 
 slen = 30 # 30-day seasonality
 
@@ -487,7 +487,7 @@ def optimizeSARIMA(parameters_list, d, D, s):
     result_table = result_table.sort_values(by='aic', ascending=True).reset_index(drop=True)
     
     return result_table
-%%time
+### %time
 result_table = optimizeSARIMA(parameters_list, d, D, s)
 result_table.head()
 # set the parameters that give the lowest AIC

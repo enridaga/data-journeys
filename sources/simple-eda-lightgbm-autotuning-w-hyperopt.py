@@ -389,7 +389,7 @@ def create_features(df):
     df = reduce_mem_usage(df)
     
     return df
-%%time
+### %time
 df_train = create_features(df_train)
 df_test = create_features(df_test)
 good_columns = [

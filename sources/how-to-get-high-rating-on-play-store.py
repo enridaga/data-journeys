@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore')
 from pylab import rcParams
 # figure size in inches
 
-#%matplotlib inline
+### matplotlib inline
 ## Read file
 
 data = pd.read_csv("../input/googleplaystore.csv")

@@ -81,7 +81,7 @@ def reduce_mem_usage(df, verbose=True):
     end_mem = df.memory_usage().sum() / 1024**2
     if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
-%%time
+### %time
 # load csv
 def load_data():
     train_df = pd.read_csv('../input/elo-blending/train_feature.csv')
@@ -105,7 +105,7 @@ print(gc.collect())
 # train_df,test_df = load_data()
 boosting = ["goss","dart"]
 boosting[0],boosting[1]
-%%time
+### %time
 
 boosting = ["goss","dart"]
 # LightGBM GBDT with KFold or Stratified KFold
@@ -188,7 +188,7 @@ def kfold_lightgbm(train_df, test_df, num_folds, stratified = False, boosting = 
     submission.to_csv(boosting+".csv", index=False)
     display(submission.head())
     return (submission)
-%%time
+### %time
 train_df,test_df = load_data()
 print(gc.collect())
 submission = kfold_lightgbm(train_df, test_df, num_folds=7, stratified=False, boosting=boosting[0])

@@ -28,9 +28,9 @@ pd.options.display.max_columns = 999
 
 py.init_notebook_mode(connected=True)
 
-%load_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### load_ext autoreload
+### autoreload 2
+### matplotlib inline
 #!pip list
 # !pwd
 # !ls

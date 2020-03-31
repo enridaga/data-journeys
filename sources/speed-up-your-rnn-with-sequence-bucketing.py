@@ -1,8 +1,8 @@
 
 # Put these at the top of every notebook, to get automatic reloading and inline plotting
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 
 import fastai
 from fastai.train import Learner

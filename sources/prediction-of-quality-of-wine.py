@@ -19,7 +19,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 
-#%matplotlib inline
+### matplotlib inline
 #Loading dataset
 
 wine = pd.read_csv('../input/winequality-red.csv')

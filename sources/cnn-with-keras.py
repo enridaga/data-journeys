@@ -173,7 +173,7 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 accuracy = history.history['acc']
 

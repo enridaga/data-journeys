@@ -18,7 +18,7 @@ import catboost
 from sklearn.model_selection import KFold, StratifiedKFold
 from sklearn.metrics import roc_auc_score
 import matplotlib.gridspec as gridspec
-#%matplotlib inline
+### matplotlib inline
 
 # Standard plotly imports
 import plotly.plotly as py
@@ -146,7 +146,7 @@ print('# File sizes')
 for f in os.listdir('../input'):
     if 'zip' not in f:
         print(f.ljust(30) + str(round(os.path.getsize('../input/' + f) / 1000000, 2)) + 'MB')
-%%time
+### %time
 train_transaction = pd.read_csv('../input/train_transaction.csv', index_col='TransactionID')
 test_transaction = pd.read_csv('../input/test_transaction.csv', index_col='TransactionID')
 train_identity = pd.read_csv('../input/train_identity.csv', index_col='TransactionID')
@@ -538,7 +538,7 @@ ax[1].set_title('R_emaildomain isFraud = 1', fontsize=14)
 sns.countplot(y="R_emaildomain", ax=ax[2], data=train_transaction.loc[train_transaction['isFraud'] == 0])
 ax[2].set_title('R_emaildomain isFraud = 0', fontsize=14)
 plt.show()
-%%time
+### %time
 train = train_transaction.merge(train_identity, how='left', left_index=True, right_index=True)
 y_train = train['isFraud'].astype("uint8").copy()
 print("Tain: ",train.shape)
@@ -548,7 +548,7 @@ test = test_transaction.merge(test_identity, how='left', left_index=True, right_
 print("Test: ",test.shape)
 del test_transaction, test_identity
 print ("Merged!")
-%%time
+### %time
 X_train = train.drop('isFraud', axis=1)
 X_test = test.copy()
 
@@ -627,7 +627,7 @@ def reduce_mem_usage1(props):
     print("Memory usage is: ",mem_usg," MB")
     print("This is ",100*mem_usg/start_mem_usg,"% of the initial size")
     return props, NAlist
-%%time
+### %time
 # From kernel https://www.kaggle.com/gemartin/load-data-reduce-memory-usage
 # WARNING! THIS CAN DAMAGE THE DATA 
 def reduce_mem_usage2(df):
@@ -670,7 +670,7 @@ def reduce_mem_usage2(df):
 # %%time
 # props_train, NAlist_train = reduce_mem_usage1(X_train)
 # props_test, NAlist_test = reduce_mem_usage1(X_test)
-%%time
+### %time
 X_train = reduce_mem_usage2(X_train)
 X_test = reduce_mem_usage2(X_test)
 X_train.head(3)
@@ -728,7 +728,7 @@ xgb.XGBClassifier(
         missing = -1,
         tree_method='gpu_hist'
 )
-%%time
+### %time
 NFOLDS = 5
 kf = StratifiedKFold(n_splits=NFOLDS, shuffle=True, random_state=123)
 

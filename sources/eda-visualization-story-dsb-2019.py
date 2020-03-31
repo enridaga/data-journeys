@@ -18,7 +18,7 @@ import plotly.express as px
 import plotly.offline as py
 import plotly.figure_factory as ff
 py.init_notebook_mode(connected=True)
-#%matplotlib inline 
+### matplotlib inline 
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches

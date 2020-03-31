@@ -17,7 +17,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 # Any results you write to the current directory are saved as output.
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.svm import SVC

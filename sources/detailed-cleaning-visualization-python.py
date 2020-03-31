@@ -7,7 +7,7 @@ import seaborn as sns
 
 import matplotlib.pyplot as plt
 
-%pylab inline
+### pylab inline
 
 pylab.rcParams['figure.figsize'] = (10, 6)
 limit_rows   = 7000000

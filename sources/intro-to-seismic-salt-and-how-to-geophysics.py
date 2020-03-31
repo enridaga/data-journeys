@@ -7,7 +7,7 @@ import warnings
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 import cv2
 

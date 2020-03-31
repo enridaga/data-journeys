@@ -23,7 +23,7 @@ import scipy.ndimage as ndi            # to determine shape centrality
 
 # matplotlib setup
 
-#%matplotlib inline
+### matplotlib inline
 
 from pylab import rcParams
 

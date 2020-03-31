@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR

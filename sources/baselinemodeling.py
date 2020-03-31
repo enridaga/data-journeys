@@ -13,7 +13,7 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 from PIL import Image
 
-#%matplotlib inline
+### matplotlib inline
 
 pd.options.display.max_rows = 128
 pd.options.display.max_columns = 128

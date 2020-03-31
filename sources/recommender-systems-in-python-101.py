@@ -406,7 +406,7 @@ hybrid_detailed_results_df.head(10)
 global_metrics_df = pd.DataFrame([cb_global_metrics, pop_global_metrics, cf_global_metrics, hybrid_global_metrics]) \
                         .set_index('modelName')
 global_metrics_df
-#%matplotlib inline
+### matplotlib inline
 ax = global_metrics_df.transpose().plot(kind='bar', figsize=(15,8))
 for p in ax.patches:
     ax.annotate("%.3f" % p.get_height(), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')

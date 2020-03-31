@@ -29,7 +29,7 @@ data.describe(include='O') #categorical
 data = data.drop(['URL', 'ID'], axis=1)
 msno.matrix(data)
 print(data.columns)
-%%time
+### %time
 fig, ax = plt.subplots(1, 2, figsize=(16,32))
 wordcloud = WordCloud(background_color='white',width=800, height=800).generate(' '.join(data['Name']))
 wordcloud_sub = WordCloud(background_color='white',width=800, height=800).generate(' '.join(data['Subtitle'].dropna().astype(str)) )
@@ -40,7 +40,7 @@ ax[1].imshow(wordcloud_sub)
 ax[1].axis('off')
 ax[1].set_title('Wordcloud(Subtitle)')
 plt.show()
-%%time
+### %time
 import matplotlib.pyplot as plt
 import requests
 from PIL import Image
@@ -180,7 +180,7 @@ squarify.plot(sizes = y.values, label = y.index)
 plt.title('Top 30 Main Word', fontsize = 30)
 plt.axis('off')
 plt.show()
-!pip install pywaffle
+### pip install pywaffle
 from pywaffle import Waffle
 # type 2 : Auto-Size
 fig = plt.figure(

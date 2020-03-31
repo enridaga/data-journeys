@@ -1,5 +1,5 @@
 
-!pip install -U git+https://github.com/lyft/nuscenes-devkit moviepy >> /dev/tmp
+### pip install -U git+https://github.com/lyft/nuscenes-devkit moviepy >> /dev/tmp
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -21,13 +21,13 @@ from lyft_dataset_sdk.utils.data_classes import LidarPointCloud
 from moviepy.editor import ImageSequenceClip
 from tqdm import tqdm_notebook as tqdm
 
-#%matplotlib inline
+### matplotlib inline
 # gotta do this for LyftDataset SDK, it expects folders to be named as `images`, `maps`, `lidar`
 
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_images images
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_maps maps
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_lidar lidar
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_data data
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_images images
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_maps maps
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_lidar lidar
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_data data
 lyftdata = LyftDataset(data_path='.', json_path='data/', verbose=True)
 lyftdata.category[0]
 cat_token = lyftdata.category[0]['token']
@@ -237,7 +237,7 @@ def draw_3d_plot(idx, lidar_token):
     plt.savefig(filename)
     plt.close(fig)
     return filename
-!mkdir tmp # a temporary folder to contain plot jpegs
+### mkdir tmp # a temporary folder to contain plot jpegs
 # let's take a quick look at the 3d Plot
 first_sample_token = my_scene['first_sample_token']
 sample = lyftdata.get('sample', first_sample_token)
@@ -261,7 +261,7 @@ InteractiveShell.ast_node_interactivity = "all"
 from IPython import display
 with open('pcl_data.gif','rb') as f:
     display.Image(data=f.read(), format='png')
-!rm -r tmp/*
+### rm -r tmp/*
 # The rendering command below is commented out because it tends to crash in notebooks,
 # lyftdata.render_scene(my_scene['token'])
 HTML('<iframe width="700" height="500" src="https://www.youtube.com/embed/Vs8H8Fs-zTs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')

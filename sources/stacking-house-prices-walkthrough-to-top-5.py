@@ -23,7 +23,7 @@ import numpy as np
 from IPython.display import display
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 sns.set(style='white', context='notebook', palette='deep')
 print('Data Manipulation, Mathematical Computation and Visualisation packages imported!')
 

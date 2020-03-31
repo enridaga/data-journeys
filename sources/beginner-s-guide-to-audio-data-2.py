@@ -16,7 +16,7 @@ import seaborn as sns
 from tqdm import tqdm_notebook
 from sklearn.model_selection import StratifiedKFold
 
-#%matplotlib inline
+### matplotlib inline
 matplotlib.style.use('ggplot')
 warnings.filterwarnings("ignore", category=FutureWarning) 
 os.listdir('../input/')
@@ -403,7 +403,7 @@ def prepare_data(df, config, data_dir):
         X[i,] = data
     return X
 test.index = test.fname
-%time
+### time
 X_train = prepare_data(train, config, '../input/train_curated/')
 X_test = prepare_data(test, config, '../input/test/')
 y_train = to_categorical(train.label_idx.astype('str'), num_classes=config.n_classes)

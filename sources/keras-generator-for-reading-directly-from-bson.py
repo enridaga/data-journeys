@@ -13,7 +13,7 @@ import struct
 
 
 
-#%matplotlib inline
+### matplotlib inline
 
 import matplotlib.pyplot as plt
 
@@ -177,7 +177,7 @@ def read_bson(bson_path, num_records, with_categories):
     df.sort_index(inplace=True)
 
     return df
-%time train_offsets_df = read_bson(train_bson_path, num_records=num_train_products, with_categories=True)
+### time train_offsets_df = read_bson(train_bson_path, num_records=num_train_products, with_categories=True)
 train_offsets_df.head()
 train_offsets_df.to_csv("train_offsets.csv")
 # How many products?
@@ -466,14 +466,14 @@ next(train_gen)  # warm-up
 
 
 
-%time bx, by = next(train_gen)
+### time bx, by = next(train_gen)
 plt.imshow(bx[-1].astype(np.uint8))
 cat_idx = np.argmax(by[-1])
 
 cat_id = idx2cat[cat_idx]
 
 categories_df.loc[cat_id]
-%time bx, by = next(val_gen)
+### time bx, by = next(val_gen)
 plt.imshow(bx[-1].astype(np.uint8))
 cat_idx = np.argmax(by[-1])
 

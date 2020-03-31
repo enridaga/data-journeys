@@ -1,7 +1,7 @@
 
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 from fastai import *
 from fastai.vision import *
 import pandas as pd
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # Making pretrained weights work without needing to find the default filename
 if not os.path.exists('/tmp/.cache/torch/checkpoints/'):
         os.makedirs('/tmp/.cache/torch/checkpoints/')
-!cp '../input/resnet50/resnet50.pth' '/tmp/.cache/torch/checkpoints/resnet50-19c8e357.pth'
+### cp '../input/resnet50/resnet50.pth' '/tmp/.cache/torch/checkpoints/resnet50-19c8e357.pth'
 import os
 os.listdir('../input')
 print('Make sure cudnn is enabled:', torch.backends.cudnn.enabled)

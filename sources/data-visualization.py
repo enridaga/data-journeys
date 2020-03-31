@@ -15,10 +15,10 @@ from subprocess import check_output
 print(check_output(["ls", "../input"]).decode("utf8"))
 
 # Any results you write to the current directory are saved as output.
-!ls ../input/train/ | wc -l
-!ls ../input/train_masks/ | wc -l
-!ls ../input/test/ | wc -l
-!ls ../input/train/ | grep c_01.jpg
+### ls ../input/train/ | wc -l
+### ls ../input/train_masks/ | wc -l
+### ls ../input/test/ | wc -l
+### ls ../input/train/ | grep c_01.jpg
 import os 
 from glob import glob
 

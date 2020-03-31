@@ -1,7 +1,7 @@
 
 #Render Matplotlib Plots Inline
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

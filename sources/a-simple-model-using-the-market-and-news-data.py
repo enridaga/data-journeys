@@ -20,7 +20,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from itertools import chain
 
-#%matplotlib inline
+### matplotlib inline
 news_cols_agg = {
     'urgency': ['min', 'count'],
     'takeSequence': ['max'],
@@ -134,7 +134,7 @@ def get_x(market_train_df, news_train_df, le=None):
         x[bogus_col] = x[bogus_col].astype(float)
     
     return x, (le_assetCode, le_assetName)
-%%time
+### %time
 
 # This will take some time...
 X, y, le = get_xy(market_train_df, news_train_df)

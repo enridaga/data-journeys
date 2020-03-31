@@ -43,7 +43,7 @@ titanic.isnull().sum()
 #how about test set??
 
 titanic_test.isnull().sum()
-#%matplotlib inline
+### matplotlib inline
 
 import matplotlib.pyplot as plt
 
@@ -779,7 +779,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 
 from sklearn.cross_validation import KFold
 
-#%matplotlib inline
+### matplotlib inline
 
 import matplotlib.pyplot as plt
 

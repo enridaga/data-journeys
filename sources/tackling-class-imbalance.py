@@ -14,7 +14,7 @@ from sklearn.decomposition import PCA, TruncatedSVD
 import time
 import matplotlib.patches as mpatches
 from sklearn.metrics import confusion_matrix
-%%time 
+### %time 
 train_transactions=pd.read_csv('../input/train_transaction.csv')
 train_identity=pd.read_csv('../input/train_identity.csv')
 print('Train data set is loaded !')
@@ -38,7 +38,7 @@ print("Data set merged ")
 
 
 
-%%time
+### %time
 # From kernel https://www.kaggle.com/gemartin/load-data-reduce-memory-usage
 # WARNING! THIS CAN DAMAGE THE DATA 
 def reduce_mem_usage2(df):
@@ -82,7 +82,7 @@ def reduce_mem_usage2(df):
 
 
 
-%%time
+### %time
 train = reduce_mem_usage2(train)
 
 

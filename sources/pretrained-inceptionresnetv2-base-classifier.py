@@ -199,7 +199,7 @@ model = load_model(
     '/kaggle/working/InceptionResNetV2.model', 
     custom_objects={'f1': f1})
 submit = pd.read_csv('../input/sample_submission.csv')
-%%time
+### %time
 predicted = []
 for name in tqdm(submit['Id']):
     path = os.path.join('../input/test/', name)

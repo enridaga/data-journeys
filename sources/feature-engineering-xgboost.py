@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 from xgboost import XGBRegressor
 from xgboost import plot_importance

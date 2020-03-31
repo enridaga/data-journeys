@@ -24,7 +24,7 @@ from numpy.random import seed
 seed(10)
 from tensorflow import set_random_seed
 set_random_seed(10)
-#%matplotlib inline
+### matplotlib inline
 test_imgs_folder = '../input/understanding_cloud_organization/test_images/'
 train_imgs_folder = '../input/understanding_cloud_organization/train_images/'
 num_cores = multiprocessing.cpu_count()

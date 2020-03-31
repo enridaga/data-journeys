@@ -8,7 +8,7 @@ import seaborn as sns
 
 ##Enabling matplotlib in jupyter notebook
 
-#%matplotlib inline
+### matplotlib inline
 ##Step 1: Loading and examining the Iris dataset file into a Pandas DataFrame for analysis.
 #Creating a DataFrame with variable name 'iris'.
 

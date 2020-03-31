@@ -7,7 +7,7 @@ print(os.listdir("../input"))
 import cv2
 import json
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 plt.rcParams["font.size"] = 15
 import seaborn as sns
 from collections import Counter

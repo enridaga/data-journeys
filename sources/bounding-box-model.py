@@ -354,4 +354,4 @@ import os
 os.remove('cropping-1.h5')
 os.remove('cropping-2.h5')
 os.remove('cropping-3.h5')
-!ls *.pickle *.model
+### ls *.pickle *.model

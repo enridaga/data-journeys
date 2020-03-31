@@ -15,7 +15,7 @@ with warnings.catch_warnings():
 
     import matplotlib.pyplot as plt
 
-    #%matplotlib inline
+    %matplotlib inline
 
     import matplotlib.cm as cm
 

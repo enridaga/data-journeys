@@ -132,10 +132,10 @@ def reset_rf_samples():
     forest._generate_sample_indices = (lambda rs, n_samples:
         forest.check_random_state(rs).randint(0, n_samples, n_samples))
 # For autoreloading modules
-%load_ext autoreload
-%autoreload 2
+### load_ext autoreload
+### autoreload 2
 # For notebook plotting
-#%matplotlib inline
+### matplotlib inline
 
 # Standard libraries
 import os

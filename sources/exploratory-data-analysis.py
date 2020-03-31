@@ -1,7 +1,7 @@
 
 import glob, pylab, pandas as pd
 import pydicom, numpy as np
-!ls ../input
+### ls ../input
 df = pd.read_csv('../input/stage_1_train_labels.csv')
 print(df.iloc[0])
 print(df.iloc[4])

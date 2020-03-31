@@ -59,7 +59,7 @@ for molecule_id in tqdm_notebook(range(structures.molecule_name.nunique())):
 def ultra_fast_dist_matrices(xyz, ssx):
     for molecule_id in range(structures.molecule_name.nunique()):
         get_fast_dist_matrix(xyz, ssx, molecule_id)
-%time ultra_fast_dist_matrices(xyz, ssx)
+### time ultra_fast_dist_matrices(xyz, ssx)
 def sofast_dist(xyz, ssx, molecule_id):
     start_molecule, end_molecule = ssx[molecule_id], ssx[molecule_id+1]
     locs = xyz[start_molecule:end_molecule]     
@@ -69,7 +69,7 @@ def sofast_dist(xyz, ssx, molecule_id):
 def sofast_dist_matrices(xyz, ssx):
     for molecule_id in range(structures.molecule_name.nunique()):
         sofast_dist(xyz, ssx, molecule_id)
-%time sofast_dist_matrices(xyz, ssx)
+### time sofast_dist_matrices(xyz, ssx)
 from numba import jit
 from math import sqrt
 
@@ -95,7 +95,7 @@ molecule = ss.index[molecule_id]
 print(molecule)
 numba_dist_matrix(xyz, ssx, molecule_id)
 sofast_dist(xyz, ssx, molecule_id)
-%time numba_dist_matrices(xyz, ssx)
+### time numba_dist_matrices(xyz, ssx)
 from scipy.spatial.distance import pdist, squareform
 
 def scipy_dist_matrix(xyz, ssx, molecule_id):
@@ -108,7 +108,7 @@ scipy_dist_matrix(xyz, ssx, molecule_id)
 def scipy_dist_matrices(xyz, ssx):
     for molecule_id in range(structures.molecule_name.nunique()):
         scipy_dist_matrix(xyz, ssx, molecule_id)
-%time scipy_dist_matrices(xyz, ssx)
+### time scipy_dist_matrices(xyz, ssx)
 epsilon = 1e-5
 
 def get_dist_matrix_assert(df_structures_idx, molecule):

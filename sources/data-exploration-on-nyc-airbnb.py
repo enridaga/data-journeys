@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 #using pandas library and 'read_csv' function to read BlackFriday csv file as file already formated for us from Kaggle
 airbnb=pd.read_csv('../input/AB_NYC_2019.csv')

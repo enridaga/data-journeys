@@ -7,7 +7,7 @@ import gc
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
@@ -53,7 +53,7 @@ test_df.drop(colsToRemove, axis=1, inplace=True)
 
 print("Removed `{}` Constant Columns\n".format(len(colsToRemove)))
 print(colsToRemove)
-%%time
+### %time
 def duplicate_columns(frame):
     groups = frame.columns.to_series().groupby(frame.dtypes).groups
     dups = []
@@ -91,7 +91,7 @@ def drop_sparse(train, test):
             train.drop(f, axis=1, inplace=True)
             test.drop(f, axis=1, inplace=True)
     return train, test
-%%time
+### %time
 train_df, test_df = drop_sparse(train_df, test_df)
 gc.collect()
 print("Train set size: {}".format(train_df.shape))

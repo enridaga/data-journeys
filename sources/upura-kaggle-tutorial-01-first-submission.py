@@ -1,7 +1,7 @@
 
 import numpy as np
 import pandas as pd
-!ls ../input/titanic
+### ls ../input/titanic
 train = pd.read_csv("../input/titanic/train.csv")
 test = pd.read_csv("../input/titanic/test.csv")
 gender_submission = pd.read_csv("../input/titanic/gender_submission.csv")

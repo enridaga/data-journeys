@@ -6,7 +6,7 @@ import lightgbm as lgb
 from sklearn.model_selection import StratifiedKFold, KFold
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import log_loss
-%%time
+### %time
 df_train = pd.read_csv('../input/predicting-outliers-to-improve-your-score/train_clean.csv')
 df_test = pd.read_csv('../input/predicting-outliers-to-improve-your-score/test_clean.csv')
 df_train = df_train[df_train['outliers'] == 0]
@@ -27,7 +27,7 @@ param = {'objective':'regression',
          "metric": 'rmse',
          "verbosity": -1,
          "random_state": 2333}
-%%time
+### %time
 folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=2333)
 oof = np.zeros(len(df_train))
 predictions = np.zeros(len(df_test))
@@ -53,7 +53,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(df_train,df_train['outlie
 print("CV score: {:<8.5f}".format(mean_squared_error(oof, target)**0.5))
 model_without_outliers = pd.DataFrame({"card_id":df_test["card_id"].values})
 model_without_outliers["target"] = predictions
-%%time
+### %time
 df_train = pd.read_csv('../input/predicting-outliers-to-improve-your-score/train_clean.csv')
 df_test = pd.read_csv('../input/predicting-outliers-to-improve-your-score/test_clean.csv')
 target = df_train['outliers']
@@ -75,7 +75,7 @@ param = {'num_leaves': 31,
          "lambda_l1": 0.1,
          "verbosity": -1,
          "random_state": 2333}
-%%time
+### %time
 folds = KFold(n_splits=5, shuffle=True, random_state=15)
 oof = np.zeros(len(df_train))
 predictions = np.zeros(len(df_test))
@@ -114,7 +114,7 @@ outlier_id = pd.DataFrame(df_outlier_prob.sort_values(by='target',ascending = Fa
 best_submission = pd.read_csv('../input/predicting-outliers-to-improve-your-score/3.695.csv')
 most_likely_liers = best_submission.merge(outlier_id,how='right')
 most_likely_liers.head()
-%%time
+### %time
 for card_id in most_likely_liers['card_id']:
     model_without_outliers.loc[model_without_outliers['card_id']==card_id,'target']\
     = most_likely_liers.loc[most_likely_liers['card_id']==card_id,'target'].values

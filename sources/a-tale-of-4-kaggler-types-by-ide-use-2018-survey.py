@@ -7,7 +7,7 @@ from matplotlib_venn import venn3, venn2
 warnings.filterwarnings("ignore")
 import matplotlib.pylab as plt
 plt.style.use('fivethirtyeight')
-#%matplotlib inline
+### matplotlib inline
 
 # Read Multiple Choice Responses
 mc = pd.read_csv('../input/multipleChoiceResponses.csv')

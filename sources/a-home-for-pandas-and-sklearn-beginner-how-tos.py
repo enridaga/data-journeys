@@ -66,7 +66,7 @@ from sklearn import metrics
 
 
 
-#%matplotlib inline
+### matplotlib inline
 train_df = pd.read_csv('../input/train.csv')
 
 df_test = pd.read_csv('../input/test.csv')

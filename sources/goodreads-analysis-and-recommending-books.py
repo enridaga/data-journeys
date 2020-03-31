@@ -1,7 +1,7 @@
 
-!pip install isbnlib
-!pip install newspaper3k
-!pip install goodreads_api_client
+### pip install isbnlib
+### pip install newspaper3k
+### pip install goodreads_api_client
 
 import numpy as np 
 import pandas as pd

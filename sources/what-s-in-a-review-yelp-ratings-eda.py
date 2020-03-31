@@ -1,7 +1,7 @@
 
 #peak at the folder
 
-!ls -al ../input/
+### ls -al ../input/
 #basics
 
 import numpy as np
@@ -70,7 +70,7 @@ pyo.init_notebook_mode()
 
 
 
-#%matplotlib inline
+### matplotlib inline
 #importing everything
 
 business=pd.read_csv("../input/yelp_business.csv")

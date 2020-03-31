@@ -39,7 +39,7 @@ from sklearn.metrics import confusion_matrix
 import cv2
 from keras import backend as K
 color = sns.color_palette()
-#%matplotlib inline
+### matplotlib inline
 
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory

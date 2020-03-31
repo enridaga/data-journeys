@@ -27,7 +27,7 @@ train['item_condition_id'] = train['item_condition_id'].astype(str)
 
 train['item_description'] = train['item_description'].fillna('None')
 train.head()
-%%time
+### %time
 
 
 
@@ -92,7 +92,7 @@ vectorizer = FeatureUnion([
 X_train = vectorizer.fit_transform(train.values)
 
 X_train
-%%time
+### %time
 
 
 

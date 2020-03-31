@@ -13,7 +13,7 @@ import keras
 import h5py
 
 init_notebook_mode(connected=True)
-#%matplotlib inline
+### matplotlib inline
 with h5py.File('../input/full_dataset_vectors.h5', 'r') as dataset:
     x_train = dataset["X_train"][:]
     x_test = dataset["X_test"][:]

@@ -34,8 +34,8 @@ with zipfile.ZipFile('../input/avito-demand-prediction/train_jpg.zip', 'r') as t
         if file.endswith('.jpg'):
             train_zip.extract(file, path=file.split('/')[3])
 
-!mv *.jpg/data/competition_files/train_jpg/* ~/avito_images
-!rm -rf *.jpg
+### mv *.jpg/data/competition_files/train_jpg/* ~/avito_images
+### rm -rf *.jpg
 import os
 
 import numpy as np
@@ -51,7 +51,7 @@ from PIL import Image
 sns.set_style("whitegrid")
 sns.set_context("notebook", font_scale=1.5, rc={"lines.linewidth": 2.5})
 
-#%matplotlib inline
+### matplotlib inline
 resnet_model = resnet50.ResNet50(weights='imagenet')
 inception_model = inception_v3.InceptionV3(weights='imagenet')
 xception_model = xception.Xception(weights='imagenet')

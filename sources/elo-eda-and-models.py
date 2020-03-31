@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import seaborn as sns 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('ggplot')
 import lightgbm as lgb
 import xgboost as xgb
@@ -31,7 +31,7 @@ pd.set_option('max_columns', 500)
 
 # import workalendar
 # from workalendar.america import Brazil
-%%time
+### %time
 train = pd.read_csv('../input/train.csv', parse_dates=['first_active_month'])
 test = pd.read_csv('../input/test.csv', parse_dates=['first_active_month'])
 submission = pd.read_csv('../input/sample_submission.csv')
@@ -211,7 +211,7 @@ def aggregate_per_month(history):
     return final_group
 
 final_group = aggregate_per_month(historical_transactions) 
-%%time
+### %time
 del d1, d2, autorized_card_rate
 gc.collect()
 historical_transactions = reduce_mem_usage(historical_transactions)
@@ -307,7 +307,7 @@ def aggregate_historical_transactions(trans, prefix):
     agg_trans = pd.merge(df, agg_trans, on='card_id', how='left')
 
     return agg_trans
-%%time
+### %time
 gc.collect()
 new_transactions = reduce_mem_usage(new_merchant_transactions)
 history = aggregate_historical_transactions(new_merchant_transactions, prefix='new')

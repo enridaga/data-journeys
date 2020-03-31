@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 from plotly import tools

@@ -3,7 +3,7 @@ import sys, os, re, csv, codecs, numpy as np, pandas as pd
 
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 from keras.preprocessing.text import Tokenizer
 

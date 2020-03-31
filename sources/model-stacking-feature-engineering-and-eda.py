@@ -16,7 +16,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
-#%matplotlib inline
+### matplotlib inline
 sns.set(style="darkgrid")
 pd.set_option('display.float_format', lambda x: '%.2f' % x)
 warnings.filterwarnings("ignore")

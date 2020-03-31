@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 meta_data = pd.read_csv('../input/training_set_metadata.csv')
 test_meta_data = pd.read_csv('../input/test_set_metadata.csv')
 targets = np.hstack([np.unique(meta_data['target']), [99]])

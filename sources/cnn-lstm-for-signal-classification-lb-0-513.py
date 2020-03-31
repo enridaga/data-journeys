@@ -9,16 +9,16 @@ from numba import jit
 from IPython.display import display, clear_output
 from tqdm import tqdm
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 import sys
 sns.set_style("whitegrid")
 import pyarrow.parquet as pq
 import pandas as pd
 import numpy as np
-%%time 
+### %time 
 train_set = pq.read_pandas('../input/train.parquet').to_pandas()
-%%time
+### %time
 meta_train = pd.read_csv('../input/metadata_train.csv')
 @jit('float32(float32[:,:], int32)')
 def feature_extractor(x, n_part=1000):
@@ -85,7 +85,7 @@ model.save_weights('model1.hdf5')
 #Both numpy and scipy has utilities for FFT which is an endlessly useful algorithm
 from numpy.fft import *
 from scipy import fftpack
-%%time 
+### %time 
 train_set = pq.read_pandas('../input/train.parquet').to_pandas()
 #FFT to filter out HF components and get main signal profile
 def low_pass(s, threshold=1e4):
@@ -140,7 +140,7 @@ plt.plot(hf_signal_1)
 #plt.plot(hf_signal_2)
 #plt.plot(hf_signal_3)
 signal = train_set.iloc[:,p1]
-%%time
+### %time
 x = signal
 X = fftpack.fft(x,n=400)
 freqs = fftpack.fftfreq(n=400,d=2e-2/x.size) 
@@ -150,7 +150,7 @@ ax.set_title('Full Spectrum with Scipy')
 ax.set_xlabel('Frequency in Hertz [Hz]')
 ax.set_ylabel('Frequency Domain (Spectrum) Magnitude')
 ax.stem(freqs[1:], np.abs(X)[1:])
-%%time
+### %time
 x = high_pass(train_set.iloc[:,p1])
 X = fftpack.fft(x,n=400)
 freqs = fftpack.fftfreq(n=400,d=2e-2/x.size) 
@@ -160,7 +160,7 @@ ax.set_title('High Frequency Spectrum')
 ax.set_xlabel('Frequency in Hertz [Hz]')
 ax.set_ylabel('Frequency Domain (Spectrum) Magnitude')
 ax.stem(freqs[1:], np.abs(X)[1:])
-%%time
+### %time
 x = low_pass(signal)
 X = fftpack.fft(x,n=400)
 freqs = fftpack.fftfreq(n=400,d=2e-2/x.size) 

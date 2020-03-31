@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import json
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 # Check the revision log
 with open('/kaggle/input/arthropod-taxonomy-orders-object-detection-testset/ArTaxOr_TestSet/revision history.txt', 'r') as f:
@@ -71,7 +71,7 @@ for p in graph.patches:
 labels.to_pickle('./testset_labels.pkl')
 df.to_pickle('./testset_filelist.pkl')
 anno.to_pickle('./testset_objects.pkl')
-!ls -al *.pkl
+### ls -al *.pkl
 import hashlib
 from io import BytesIO
 from PIL import Image, ImageFont, ImageDraw
@@ -161,4 +161,4 @@ with tf.io.TFRecordWriter('ArTaxOr_TestSet.tfrecord') as writer:
         imagedf=anno[anno.file == df.path[i]]
         tfr=create_tf_example(imagedf)
         writer.write(tfr.SerializeToString())
-!ls -al *.tfrecord
+### ls -al *.tfrecord

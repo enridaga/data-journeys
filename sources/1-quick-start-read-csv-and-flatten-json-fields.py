@@ -21,11 +21,11 @@ def load_df(csv_path='../input/train.csv', nrows=None):
     return df
 
 print(os.listdir("../input"))
-%%time
+### %time
 df_small = load_df(nrows=20000)
-%%time
+### %time
 df_train = load_df()
 df_test = load_df("../input/test.csv")
-%%time
+### %time
 df_train.to_csv("train-flattened.csv", index=False)
 df_test.to_csv("test-flattened.csv", index=False)

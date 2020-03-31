@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -94,7 +94,7 @@ scaler = StandardScaler()
 scaler.fit(X)
 X_train_scaled = pd.DataFrame(scaler.transform(X), columns=X.columns)
 X_test_scaled = pd.DataFrame(scaler.transform(X_test), columns=X_test.columns)
-%%time
+### %time
 n = 10
 neigh = NearestNeighbors(n, n_jobs=-1)
 neigh.fit(X_train_scaled)
@@ -286,7 +286,7 @@ artgor_utils.render(alt.Chart(scores_df).mark_line().encode(
 ).properties(
     title='Top N features by RFE vs CV'
 ).interactive())
-%%time
+### %time
 rfr = RandomForestRegressor()
 
 # parameter_grid = {'n_estimators': [50, 60],
@@ -301,12 +301,12 @@ rfr = RandomForestRegressor()
 rfr = RandomForestRegressor(n_estimators=50, max_depth=5)
 result_dict_rfr = artgor_utils.train_model_regression(X, X_test, y, params=params, folds=folds, model_type='sklearn', model=rfr)
 # print(scores_rfr)
-%%time
+### %time
 linreg = linear_model.LinearRegression(normalize=False, copy_X=True, n_jobs=-1)
 
 result_dict_linreg = artgor_utils.train_model_regression(X, X_test, y, params=None, folds=folds, model_type='sklearn', model=linreg)
 # print(scores_linreg)
-%%time
+### %time
 ridge = linear_model.Ridge(normalize=True)
 
 parameter_grid = {'alpha': [0.1, 1.0, 10.0]}
@@ -318,7 +318,7 @@ print('Best parameters: {}'.format(grid_search.best_params_))
 ridge = linear_model.Ridge(**grid_search.best_params_, normalize=True)
 result_dict_ridge = artgor_utils.train_model_regression(X, X_test, y, params=params, folds=folds, model_type='sklearn', model=ridge)
 # print(scores_ridge)
-%%time
+### %time
 knn = neighbors.KNeighborsRegressor()
 
 parameter_grid = {'n_neighbors': [50, 100]}
@@ -329,7 +329,7 @@ print('Best score: {}'.format(grid_search.best_score_))
 print('Best parameters: {}'.format(grid_search.best_params_))
 knn = neighbors.KNeighborsRegressor(**grid_search.best_params_)
 result_dict_knn = artgor_utils.train_model_regression(X, X_test, y, params=params, folds=folds, model_type='sklearn', model=knn)
-%%time
+### %time
 lasso = linear_model.Lasso(normalize=True)
 
 parameter_grid = {'alpha': [0.1, 1.0, 10.0]}
@@ -340,7 +340,7 @@ print('Best score: {}'.format(grid_search.best_score_))
 print('Best parameters: {}'.format(grid_search.best_params_))
 lasso = linear_model.Lasso(**grid_search.best_params_, normalize=True)
 result_dict_lasso = artgor_utils.train_model_regression(X, X_test, y, params=params, folds=folds, model_type='sklearn', model=lasso)
-%%time
+### %time
 etr = ExtraTreesRegressor()
 
 # parameter_grid = {'n_estimators': [500, 1000],
@@ -354,7 +354,7 @@ etr = ExtraTreesRegressor()
 # etr = ExtraTreesRegressor(**grid_search.best_params_)
 etr = ExtraTreesRegressor(n_estimators=1000, max_depth=10)
 result_dict_etr = artgor_utils.train_model_regression(X, X_test, y, params=params, folds=folds, model_type='sklearn', model=etr)
-%%time
+### %time
 adr = AdaBoostRegressor()
 
 parameter_grid = {'n_estimators': [10, 50],

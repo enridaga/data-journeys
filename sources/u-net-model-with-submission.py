@@ -168,7 +168,7 @@ ax3.imshow(mark_boundaries(batch_rgb,
                            batch_seg.astype(int)))
 ax3.set_title('Outlined Ships')
 fig.savefig('overview.png')
-%%time
+### %time
 valid_x, valid_y = next(make_image_gen(valid_df, VALID_IMG_COUNT))
 print(valid_x.shape, valid_y.shape)
 from keras.preprocessing.image import ImageDataGenerator

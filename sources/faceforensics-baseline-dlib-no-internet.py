@@ -4,18 +4,18 @@ import pandas as pd
 import matplotlib.pylab as plt
 import cv2
 XCEPTION_MODEL = '../input/deepfakemodelspackages/xception-b5690688.pth'
-%%time
+### %time
 # Install packages
-!pip install ../input/deepfakemodelspackages/Pillow-6.2.1-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/munch-2.5.0-py2.py3-none-any.whl -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/numpy-1.17.4-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/six-1.13.0-py2.py3-none-any.whl -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/Pillow-6.2.1-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/munch-2.5.0-py2.py3-none-any.whl -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/numpy-1.17.4-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/six-1.13.0-py2.py3-none-any.whl -f ./ --no-index
 #!pip install ../input/deepfakemodelspackages/torch-1.3.1-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/torchvision-0.4.2-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
-!pip install ../input/deepfakemodelspackages/tqdm-4.40.2-py2.py3-none-any.whl -f ./ --no-index
-%%time
-!pip install ../input/deepfakemodelspackages/dlib-19.19.0/dlib-19.19.0/ -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/torchvision-0.4.2-cp36-cp36m-manylinux1_x86_64.whl -f ./ --no-index
+### pip install ../input/deepfakemodelspackages/tqdm-4.40.2-py2.py3-none-any.whl -f ./ --no-index
+### %time
+### pip install ../input/deepfakemodelspackages/dlib-19.19.0/dlib-19.19.0/ -f ./ --no-index
 ## xception.py
 """
 Ported to pytorch thanks to [tstandley](https://github.com/tstandley/Xception-PyTorch)
@@ -626,10 +626,10 @@ def test_full_image_network(video_path, model, output_path,
     return
 # Read metadata
 metadata = pd.read_json('../input/deepfake-detection-challenge/train_sample_videos/metadata.json').T
-!mkdir network
-%%writefile network/__init__.py
+### mkdir network
+### %writefile network/__init__.py
 # init
-%%writefile network/xception.py
+### %writefile network/xception.py
 """
 Ported to pytorch thanks to [tstandley](https://github.com/tstandley/Xception-PyTorch)
 @author: tstandley
@@ -853,7 +853,7 @@ def xception(num_classes=1000, pretrained='imagenet'):
     model.last_linear = model.fc
     del model.fc
     return model
-%%writefile network/models.py
+### %writefile network/models.py
 """
 Author: Andreas Rössler
 """

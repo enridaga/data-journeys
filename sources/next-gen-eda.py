@@ -1,5 +1,5 @@
 
-%%HTML
+### %HTML
 <style type="text/css">
      
 
@@ -163,7 +163,7 @@ table.rules tr.best
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import matplotlib.patches as patches
 import seaborn as sns  #I will mainly be using seaborn and bokeh
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -205,7 +205,7 @@ import colorcet as cc
 plt.style.use('seaborn') 
 color_pal = [x['color'] for x in plt.rcParams['axes.prop_cycle']]
 ##%config InlineBackend.figure_format = 'retina'   < - keep in case 
-%config InlineBackend.figure_format = 'svg' 
+### config InlineBackend.figure_format = 'svg' 
 #USE THIS in some form:
 # th_props = [('font-size', '13px'), ('background-color', 'white'), ('color', '#666666')]
 # td_props = [('font-size', '15px'), ('background-color', 'white')]

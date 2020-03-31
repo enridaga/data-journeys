@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline 
+### matplotlib inline 
 IS_LOCAL = False
 
 import os

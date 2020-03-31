@@ -7,7 +7,7 @@ import numpy as np
 
 
 
-#%matplotlib inline
+### matplotlib inline
 data = pd.read_csv("../input/creditcard.csv")
 
 data.head()

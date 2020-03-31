@@ -1,6 +1,6 @@
 
-! ls ../input/severstalmodels
-! python ../input/mlcomp/mlcomp/mlcomp/setup.py
+###  ls ../input/severstalmodels
+###  python ../input/mlcomp/mlcomp/mlcomp/setup.py
 import warnings
 warnings.filterwarnings('ignore')
 import os
@@ -111,7 +111,7 @@ df['Image'] = df['ImageId_ClassId'].map(lambda x: x.split('_')[0])
 df['Class'] = df['ImageId_ClassId'].map(lambda x: x.split('_')[1])
 df['empty'] = df['EncodedPixels'].map(lambda x: not x)
 df[df['empty'] == False]['Class'].value_counts()
-#%matplotlib inline
+### matplotlib inline
 
 df = pd.read_csv('submission.csv')[:40]
 df['Image'] = df['ImageId_ClassId'].map(lambda x: x.split('_')[0])

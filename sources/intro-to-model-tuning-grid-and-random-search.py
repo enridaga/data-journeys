@@ -104,7 +104,7 @@ print('Subsample ratio: ', subsample)
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 # Learning rate histogram
 plt.hist(param_grid['learning_rate'], bins = 20, color = 'r', edgecolor = 'k');

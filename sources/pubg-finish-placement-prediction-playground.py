@@ -54,7 +54,7 @@ def reduce_mem_usage(df):
     print('Memory usage of dataframe is {:.2f} MB --> {:.2f} MB (Decreased by {:.1f}%)'.format(
         start_mem, end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
-%%time
+### %time
 train = pd.read_csv('../input/train_V2.csv')
 train = reduce_mem_usage(train)
 test = pd.read_csv('../input/test_V2.csv')

@@ -18,7 +18,7 @@ import tensorflow as tf
 import numpy as np
 
 init_notebook_mode(connected=True)
-#%matplotlib inline 
+### matplotlib inline 
 ## read the dataset 
 
 path = '../input/imaterialist-challenge-fashion-2018/train.json'

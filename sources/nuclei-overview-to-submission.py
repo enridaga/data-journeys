@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 dsb_data_dir = os.path.join('..', 'input')
 
@@ -44,7 +44,7 @@ img_df['TrainingSplit'] = img_df['path'].map(img_group)
 img_df['Stage'] = img_df['path'].map(img_stage)
 
 img_df.sample(2)
-%%time
+### %time
 
 train_df = img_df.query('TrainingSplit=="train"')
 
@@ -177,7 +177,7 @@ simple_cnn.fit_generator(simple_gen(),
                          steps_per_epoch=train_img_df.shape[0],
 
                         epochs = 3)
-%%time
+### %time
 
 test_df = img_df.query('TrainingSplit=="test"')
 
@@ -202,7 +202,7 @@ test_img_df['images'] = test_img_df['images'].map(read_and_stack).map(lambda x: 
 print(test_img_df.shape[0], 'images to process')
 
 test_img_df.sample(1)
-%%time
+### %time
 
 test_img_df['masks'] = test_img_df['images'].map(lambda x: simple_cnn.predict(np.expand_dims(x, 0))[0, :, :, 0])
 n_img = 3

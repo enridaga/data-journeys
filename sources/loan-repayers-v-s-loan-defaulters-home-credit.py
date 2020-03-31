@@ -5,7 +5,7 @@ YouTubeVideo('QOO14BQITz4', width=700, height=400)
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import  Image
-#%matplotlib inline
+### matplotlib inline
 import pandas as pd
 import seaborn as sns
 import itertools

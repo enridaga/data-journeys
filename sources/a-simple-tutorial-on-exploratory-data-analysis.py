@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 import scipy.stats as st
 from sklearn import ensemble, tree, linear_model

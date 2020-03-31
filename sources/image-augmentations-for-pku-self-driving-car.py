@@ -8,7 +8,7 @@ from PIL import Image, ImageEnhance
 from matplotlib import pyplot as plt
 from glob import glob
 
-#%matplotlib inline
+### matplotlib inline
 nrows, ncols = 4, 8
 
 fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(20, 20))

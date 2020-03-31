@@ -17,7 +17,7 @@ import seaborn as sns
 
 
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

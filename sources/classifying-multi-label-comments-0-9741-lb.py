@@ -5,7 +5,7 @@ import pandas as pd
 
 from matplotlib import pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 import seaborn as sns
 

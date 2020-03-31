@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 import datetime as dt
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = [16, 10]
@@ -17,16 +17,16 @@ from tqdm import tqdm
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 start = dt.datetime.now()
-!ls ../input/keras-pretrained-models/
+### ls ../input/keras-pretrained-models/
 cache_dir = os.path.expanduser(os.path.join('~', '.keras'))
 if not os.path.exists(cache_dir):
     os.makedirs(cache_dir)
 models_dir = os.path.join(cache_dir, 'models')
 if not os.path.exists(models_dir):
     os.makedirs(models_dir)
-!cp ../input/keras-pretrained-models/xception* ~/.keras/models/
-!ls ~/.keras/models
-!ls ../input/plant-seedlings-classification
+### cp ../input/keras-pretrained-models/xception* ~/.keras/models/
+### ls ~/.keras/models
+### ls ../input/plant-seedlings-classification
 CATEGORIES = ['Black-grass', 'Charlock', 'Cleavers', 'Common Chickweed', 'Common wheat', 'Fat Hen', 'Loose Silky-bent',
               'Maize', 'Scentless Mayweed', 'Shepherds Purse', 'Small-flowered Cranesbill', 'Sugar beet']
 NUM_CATEGORIES = len(CATEGORIES)

@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
-#%matplotlib inline
+### matplotlib inline
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -51,7 +51,7 @@ def reduce_mem_usage(df):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-%%time
+### %time
 
 folder_path = '../input/'
 print('Loading data...')
@@ -210,7 +210,7 @@ for c in ['P_emaildomain', 'R_emaildomain']:
     
     train[c + '_suffix'] = train[c + '_suffix'].map(lambda x: x if str(x) not in us_emails else 'us')
     test[c + '_suffix'] = test[c + '_suffix'].map(lambda x: x if str(x) not in us_emails else 'us')
-%%time
+### %time
 
 for col in train.columns:
     if train[col].dtype == 'object':
@@ -218,7 +218,7 @@ for col in train.columns:
         le.fit(list(train[col].astype(str).values) + list(test[col].astype(str).values))
         train[col] = le.transform(list(train[col].astype(str).values))
         test[col] = le.transform(list(test[col].astype(str).values))
-%%time
+### %time
 train = reduce_mem_usage(train)
 test = reduce_mem_usage(test)
 X = train.sort_values('TransactionDT').drop(['isFraud', 'TransactionDT'], axis=1)
@@ -246,7 +246,7 @@ params = {'num_leaves': 491,
           'reg_lambda': 0.6485237330340494,
           'random_state': 47,
          }
-%%time
+### %time
 
 NFOLDS = 5
 folds = KFold(n_splits=NFOLDS)

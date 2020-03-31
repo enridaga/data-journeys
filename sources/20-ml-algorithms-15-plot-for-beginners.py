@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 sns.set_style('white')
 np.random.seed(1337)
 #show plot inline
-#%matplotlib inline
+### matplotlib inline
 print(os.listdir("../input/"))
 # import Dataset to play with it
 dataset = pd.read_csv('../input/Iris.csv')

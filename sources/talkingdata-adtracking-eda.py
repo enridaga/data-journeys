@@ -6,7 +6,7 @@ import os
 import gc
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 pal = sns.color_palette()
 

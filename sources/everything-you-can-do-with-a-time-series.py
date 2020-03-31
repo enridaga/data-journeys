@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight') 
 # Above is a special style template for matplotlib, highly useful for visualizing time series data
-#%matplotlib inline
+### matplotlib inline
 from pylab import rcParams
 from plotly import tools
 import plotly.plotly as py

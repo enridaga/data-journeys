@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 
 import numpy as np
 
@@ -33,7 +33,7 @@ from keras.applications.vgg16 import preprocess_input, decode_predictions
 
 from sklearn.linear_model import LogisticRegression
 start = dt.datetime.now()
-!ls ../input/keras-pretrained-models/
+### ls ../input/keras-pretrained-models/
 cache_dir = expanduser(join('~', '.keras'))
 
 if not exists(cache_dir):
@@ -45,13 +45,13 @@ models_dir = join(cache_dir, 'models')
 if not exists(models_dir):
 
     makedirs(models_dir)
-!cp ../input/keras-pretrained-models/*notop* ~/.keras/models/
+### cp ../input/keras-pretrained-models/*notop* ~/.keras/models/
 
-!cp ../input/keras-pretrained-models/imagenet_class_index.json ~/.keras/models/
+### cp ../input/keras-pretrained-models/imagenet_class_index.json ~/.keras/models/
 
-!cp ../input/keras-pretrained-models/resnet50* ~/.keras/models/
-!ls ~/.keras/models
-!ls ../input/dog-breed-identification
+### cp ../input/keras-pretrained-models/resnet50* ~/.keras/models/
+### ls ~/.keras/models
+### ls ../input/dog-breed-identification
 INPUT_SIZE = 224
 
 NUM_CLASSES = 16

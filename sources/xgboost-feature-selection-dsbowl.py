@@ -20,7 +20,7 @@ import shap
 
 os.listdir('../input/data-science-bowl-2019')
 
-%%time
+### %time
 keep_cols = ['event_id', 'game_session', 'installation_id', 'event_count',
              'event_code','title' ,'game_time', 'type', 'world','timestamp']
 train=pd.read_csv('../input/data-science-bowl-2019/train.csv',usecols=keep_cols)

@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -25,7 +25,7 @@ from catboost import CatBoostRegressor
 import seaborn as sns
 import warnings
 warnings.filterwarnings("ignore")
-%%time
+### %time
 train = pd.read_csv('../input/train.csv', dtype={'acoustic_data': np.int16, 'time_to_failure': np.float32})
 train.head()
 train.shape

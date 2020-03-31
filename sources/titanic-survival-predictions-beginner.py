@@ -6,7 +6,7 @@ import pandas as pd
 #visualization libraries
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 #ignore warnings
 import warnings

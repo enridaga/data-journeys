@@ -11,7 +11,7 @@ import seaborn as sns
 sns.set()
 
 # Graphics in retina format are more sharp and legible
-%config InlineBackend.figure_format = 'retina' 
+### config InlineBackend.figure_format = 'retina' 
 
 # Increase the default plot size and set the color scheme
 plt.rcParams['figure.figsize'] = 8, 5
@@ -34,10 +34,10 @@ df[[x for x in df.columns if 'Sales' in x] +
 df[[x for x in df.columns if 'Sales' in x] + 
    ['Year_of_Release']].groupby('Year_of_Release').sum().plot(kind='bar', rot=45);
 # `pairplot()` may become very slow with the SVG format
-%config InlineBackend.figure_format = 'png' 
+### config InlineBackend.figure_format = 'png' 
 sns.pairplot(df[['Global_Sales', 'Critic_Score', 'Critic_Count', 
                  'User_Score', 'User_Count']]);
-%config InlineBackend.figure_format = 'retina'
+### config InlineBackend.figure_format = 'retina'
 sns.distplot(df['Critic_Score']);
 sns.jointplot(x='Critic_Score', y='User_Score', 
               data=df, kind='scatter');

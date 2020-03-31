@@ -56,7 +56,7 @@ market_train_df1, news_train_df1 = market_train_df.copy(), news_train_df.copy()
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.style.use("fivethirtyeight")
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 import numpy as np
 import plotly.figure_factory as ff
@@ -671,7 +671,7 @@ print(f'Total: {total:.2f}s')
 # sub  = pd.read_csv("submission.csv")
 # sub.head()
 # import matplotlib.pyplot as plt
-# #%matplotlib inline
+# %matplotlib inline
 # from xgboost import plot_importance
 # plt.figure(num=None, figsize=(15, 10), dpi=80, facecolor='w', edgecolor='k')
 # plt.bar(range(len(xgb_up.feature_importances_)), xgb_up.feature_importances_)

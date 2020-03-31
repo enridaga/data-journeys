@@ -13,7 +13,7 @@ from matplotlib import rcParams
 import re
 
 # This function makes the plot directly on browser
-#%matplotlib inline
+### matplotlib inline
 
 # Seting a universal figure size 
 rcParams['figure.figsize'] = 10,8

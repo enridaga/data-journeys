@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.utils import shuffle
 
-#%matplotlib inline
+### matplotlib inline
 import warnings
 warnings.filterwarnings('ignore')
 

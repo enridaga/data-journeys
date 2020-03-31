@@ -55,7 +55,7 @@ import seaborn as sns
 
 # Configure visualisations
 
-#%matplotlib inline
+### matplotlib inline
 
 mpl.style.use( 'ggplot' )
 

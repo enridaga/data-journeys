@@ -1,6 +1,6 @@
 
-!pip install shapely -U
-!pip install lyft-dataset-sdk
+### pip install shapely -U
+### pip install lyft-dataset-sdk
 # Our code will generate data, visualization and model checkpoints, they will be persisted to disk in this folder
 ARTIFACTS_FOLDER = "./artifacts"
 from datetime import datetime
@@ -14,7 +14,7 @@ import os
 os.environ["OMP_NUM_THREADS"] = "1"
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 import pandas as pd
 import cv2
@@ -29,9 +29,9 @@ from scipy.spatial.transform import Rotation as R
 from lyft_dataset_sdk.lyftdataset import LyftDataset
 from lyft_dataset_sdk.utils.data_classes import LidarPointCloud, Box, Quaternion
 from lyft_dataset_sdk.utils.geometry_utils import view_points, transform_matrix
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_images images
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_maps maps
-!ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_lidar lidar
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_images images
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_maps maps
+### ln -s /kaggle/input/3d-object-detection-for-autonomous-vehicles/train_lidar lidar
 level5data = LyftDataset(data_path='.', json_path='/kaggle/input/3d-object-detection-for-autonomous-vehicles/train_data', verbose=True)
 os.makedirs(ARTIFACTS_FOLDER, exist_ok=True)
 classes = ["car", "motorcycle", "bus", "bicycle", "truck", "pedestrian", "other_vehicle", "animal", "emergency_vehicle"]

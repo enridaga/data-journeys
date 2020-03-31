@@ -11,7 +11,7 @@ import matplotlib as matplot
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 #Read the analytics csv file and store our dataset into a dataframe called "df"
 
 df = pd.DataFrame.from_csv('../input/HR_comma_sep.csv', index_col=None)
@@ -381,7 +381,7 @@ import matplotlib as matplot
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 
 #Read the analytics csv file and store our dataset into a dataframe called "df"
 

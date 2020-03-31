@@ -9,8 +9,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #print(os.listdir("../input"))
-!ls -GFlash  ../input
-%%time
+### ls -GFlash  ../input
+### %time
 # import Dataset to play with it
 train_identity= pd.read_csv("../input/train_identity.csv", index_col='TransactionID')
 train_transaction= pd.read_csv("../input/train_transaction.csv", index_col='TransactionID')

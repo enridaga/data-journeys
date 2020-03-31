@@ -9,7 +9,7 @@ from sklearn import preprocessing, model_selection, metrics
 import lightgbm as lgb
 
 color = sns.color_palette()
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 py.init_notebook_mode(connected=True)

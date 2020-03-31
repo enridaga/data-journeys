@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -30,7 +30,7 @@ from scipy.signal import hann
 from scipy.signal import convolve
 from scipy import stats
 from sklearn.kernel_ridge import KernelRidge
-%%time
+### %time
 train = pd.read_csv('../input/train.csv', dtype={'acoustic_data': np.int16, 'time_to_failure': np.float32})
 train_acoustic_data_small = train['acoustic_data'].values[::50]
 train_time_to_failure_small = train['time_to_failure'].values[::50]

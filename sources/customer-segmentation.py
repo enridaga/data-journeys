@@ -27,7 +27,7 @@ warnings.filterwarnings("ignore")
 plt.rcParams["patch.force_edgecolor"] = True
 plt.style.use('fivethirtyeight')
 mpl.rc('patch', edgecolor = 'dimgray', linewidth=1)
-#%matplotlib inline
+### matplotlib inline
 #__________________
 # read the datafile
 df_initial = pd.read_csv('../input/data.csv',encoding="ISO-8859-1",

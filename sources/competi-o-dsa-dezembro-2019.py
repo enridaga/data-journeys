@@ -10,7 +10,7 @@ import seaborn as sns
 sns.set()
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 import time
 import datetime
@@ -113,7 +113,7 @@ def run_model(modelo, X_tr, y_tr, useTrainCV=True, cv_folds=5, early_stopping_ro
     feature_imp[:25].plot(kind='bar', title='Feature Importances')
     plt.ylabel('Feature Importance Score')
     plt.tight_layout()
-%%time
+### %time
 
 # Criando o primeiro modelo XGB
 modeloXGB = XGBClassifier(learning_rate = 0.1,

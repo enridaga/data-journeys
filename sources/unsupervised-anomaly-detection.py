@@ -1,6 +1,6 @@
 
 # libraries
-##%matplotlib notebook
+#%matplotlib notebook
 
 import pandas as pd
 import numpy as np

@@ -11,7 +11,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import cv2
 import os
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 DATA_FILE = [os.path.join(dirname, filename) for dirname, _, filenames in os.walk('/kaggle/input') for filename in filenames]
 _defocus = [image_path for image_path in DATA_FILE if "dataset/defocused_blurred/" in image_path][:5]
 _motionblur= [image_path for image_path in DATA_FILE if "dataset/motion_blurred/" in image_path][:5]

@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
-#%matplotlib inline
+### matplotlib inline
 #bring in the six packs
 df_train = pd.read_csv('../input/train.csv')
 #check the decoration

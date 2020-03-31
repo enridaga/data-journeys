@@ -57,7 +57,7 @@ def reduce_mem_usage(df):
     print('Memory usage of dataframe is {:.2f} MB --> {:.2f} MB (Decreased by {:.1f}%)'.format(
         start_mem, end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
-%%time
+### %time
 train_id = pd.read_csv('../input/train_identity.csv')
 train_trn = pd.read_csv('../input/train_transaction.csv')
 test_id = pd.read_csv('../input/test_identity.csv')
@@ -493,7 +493,7 @@ X_train = all_data[all_data['isFraud'].notnull()]
 X_test = all_data[all_data['isFraud'].isnull()].drop('isFraud', axis=1)
 Y_train = X_train.pop('isFraud')
 del all_data
-%%time
+### %time
 
 import lightgbm as lgb
 

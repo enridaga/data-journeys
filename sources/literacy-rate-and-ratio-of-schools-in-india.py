@@ -18,7 +18,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import warnings
 warnings.filterwarnings('ignore')
 from sklearn.preprocessing import LabelEncoder

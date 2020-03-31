@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn import preprocessing
 import xgboost as xgb
 print("XGBoost version:", xgb.__version__)
-%%time
+### %time
 train_transaction = pd.read_csv('../input/train_transaction.csv', index_col='TransactionID')
 test_transaction = pd.read_csv('../input/test_transaction.csv', index_col='TransactionID')
 
@@ -50,6 +50,6 @@ clf = xgb.XGBClassifier(
     random_state=2019,
     tree_method='gpu_hist'  # THE MAGICAL PARAMETER
 )
-%time clf.fit(X_train, y_train)
+### time clf.fit(X_train, y_train)
 sample_submission['isFraud'] = clf.predict_proba(X_test)[:,1]
 sample_submission.to_csv('simple_xgboost.csv')

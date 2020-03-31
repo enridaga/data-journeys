@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Draw inline
-#%matplotlib inline
+### matplotlib inline
 
 # Set figure aesthetics
 sns.set_style("white", {'ytick.major.size': 10.0})

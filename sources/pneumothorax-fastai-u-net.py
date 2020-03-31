@@ -10,7 +10,7 @@ SZ = 256
 path = Path(f'../input/pneumotorax{SZ}/data{SZ}/data{SZ}')
 # copy pretrained weights for resnet34 to the folder fastai will search by default
 Path('/tmp/.cache/torch/checkpoints/').mkdir(exist_ok=True, parents=True)
-!cp '../input/resnet34/resnet34.pth' '/tmp/.cache/torch/checkpoints/resnet34-333f7ec4.pth'
+### cp '../input/resnet34/resnet34.pth' '/tmp/.cache/torch/checkpoints/resnet34-333f7ec4.pth'
 # Setting div=True in open_mask
 class SegmentationLabelList(SegmentationLabelList):
     def open(self, fn): return open_mask(fn, div=True)

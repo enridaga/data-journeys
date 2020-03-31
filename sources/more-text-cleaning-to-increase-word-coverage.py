@@ -9,7 +9,7 @@ from gensim.models import KeyedVectors
 import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm
 tqdm.pandas()
 import pickle
@@ -29,7 +29,7 @@ def df_parallelize_run(df, func):
     pool.join()
     return df
 
-%%time
+### %time
 train_df = pd.read_csv("../input/train.csv", encoding='utf8')
 test_df = pd.read_csv("../input/test.csv", encoding='utf8')
 all_test_texts = ''.join(test_df.question_text.values.tolist())
@@ -61,7 +61,7 @@ def load_embed(file):
         embeddings_index = dict(get_coefs(*o.split(" ")) for o in open(file, encoding='latin'))
         
     return embeddings_index
-%%time
+### %time
 glove = '../input/embeddings/glove.840B.300d/glove.840B.300d.txt'
 paragram =  '../input/embeddings/paragram_300_sl999/paragram_300_sl999.txt'
 wiki_news = '../input/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec'
@@ -133,7 +133,7 @@ def vocab_check_coverage(train_df, test_df):
     
     return oov_glove, oov_paragram, oov_fasttext, oov_google
 
-%%time
+### %time
 oov_glove, oov_paragram, oov_fasttext, oov_google = vocab_check_coverage(train_df, test_df)
 print('glove oov rate:', oov_glove['oov_rate'])
 print('paragram oov rate:', oov_paragram['oov_rate'])
@@ -1277,10 +1277,10 @@ def preprocess(text):
 def text_clean_wrapper(df):
     df["question_text"] = df["question_text"].apply(preprocess)
     return df
-%%time
+### %time
 train_df = df_parallelize_run(train_df, text_clean_wrapper)
 test_df = df_parallelize_run(test_df, text_clean_wrapper)
-%%time
+### %time
 oov_glove, oov_paragram, oov_fasttext, oov_google = vocab_check_coverage(train_df, test_df)
 # get current vocabulary, and found the words that has '-'
 cur_vocabulary = set()
@@ -1313,7 +1313,7 @@ def spacing_dash_point(text):
     if '.' in text:
         text = text.replace('.', ' . ')
     return text
-%%time
+### %time
 train_df["question_text"] = train_df["question_text"].apply(spacing_dash_point)
 test_df["question_text"] = test_df["question_text"].apply(spacing_dash_point)
 def fix_dash_point_spacing_bug(text):
@@ -1325,10 +1325,10 @@ def fix_dash_point_spacing_bug(text):
 def fix_dash_point_spacing_bug_wrapper(df):
     df["question_text"] = df["question_text"].apply(fix_dash_point_spacing_bug)
     return df
-%%time
+### %time
 train_df = df_parallelize_run(train_df, fix_dash_point_spacing_bug_wrapper)
 test_df = df_parallelize_run(test_df, fix_dash_point_spacing_bug_wrapper)
-%%time
+### %time
 oov_glove, oov_paragram, oov_fasttext, oov_google = vocab_check_coverage(train_df, test_df)
 print('glove oov rate:', oov_glove['oov_rate'])
 print('paragram oov rate:', oov_paragram['oov_rate'])

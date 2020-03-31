@@ -170,7 +170,7 @@ del df_site0_labels
 gc.collect()
 df_site0[['building_id', 'meter', 'timestamp', 'meter_reading_original', 'meter_reading_scraped']].sample(10)
 df_building_metadata_external
-%%time
+### %time
 
 df_site0[['building_id', 'meter', 'timestamp', 'meter_reading_original', 'meter_reading_scraped']].to_csv('site0.csv.gz', index=False)
 df_site0[['building_id', 'meter', 'timestamp', 'meter_reading_original', 'meter_reading_scraped']].to_pickle('site0.pkl')

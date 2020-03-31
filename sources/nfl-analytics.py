@@ -17,7 +17,7 @@ import os
 import gc
 import psutil
 
-#%matplotlib inline
+### matplotlib inline
 print(os.listdir("../input/nfl-playing-surface-analytics/"))
 #InjuryRecord = pd.read_csv("../input/nfl-playing-surface-analytics/InjuryRecord.csv")
 #PlayList = pd.read_csv("../input/nfl-playing-surface-analytics/PlayList.csv")

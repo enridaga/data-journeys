@@ -11,7 +11,7 @@ from subprocess import check_output
 
 
 
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 

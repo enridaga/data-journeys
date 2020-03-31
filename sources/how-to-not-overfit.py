@@ -5,7 +5,7 @@ import pandas as pd
 pd.set_option('max_columns', None)
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 import datetime
 import lightgbm as lgb

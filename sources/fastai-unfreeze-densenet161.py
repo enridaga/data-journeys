@@ -59,7 +59,7 @@ def create_subdirs(path:Path, num_dirs):
         Path(path/str(i)).mkdir(parents=True,exist_ok=True)
 create_subdirs(train_path1, labels1.nunique())
 create_subdirs(valid_path1, labels1.nunique())
-!mkdir ../input1/test
+### mkdir ../input1/test
 save_imgs(train_path1, X_train1, y_train1)
 save_imgs(valid_path1, X_test1, y_test1)
 save_imgs(test_path1, np.array(test_df.drop(['id'], axis=1)), [])

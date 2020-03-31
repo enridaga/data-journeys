@@ -1,9 +1,9 @@
 
 # copy the weights and configurations for the pre-trained models
-!mkdir ~/.keras
-!mkdir ~/.keras/models
-!cp ../input/keras-pretrained-models/*notop* ~/.keras/models/
-!cp ../input/keras-pretrained-models/imagenet_class_index.json ~/.keras/models/
+### mkdir ~/.keras
+### mkdir ~/.keras/models
+### cp ../input/keras-pretrained-models/*notop* ~/.keras/models/
+### cp ../input/keras-pretrained-models/imagenet_class_index.json ~/.keras/models/
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # showing and rendering figures
@@ -12,7 +12,7 @@ from skimage.io import imread
 import os
 from glob import glob
 # not needed in Kaggle, but required in Jupyter
-#%matplotlib inline 
+### matplotlib inline 
 base_image_dir = os.path.join('..', 'input', 'diabetic-retinopathy-detection')
 retina_df = pd.read_csv(os.path.join(base_image_dir, 'trainLabels.csv'))
 retina_df['PatientId'] = retina_df['image'].map(lambda x: x.split('_')[0])
@@ -263,7 +263,7 @@ early = EarlyStopping(monitor="val_loss",
                       mode="min", 
                       patience=6) # probably needs to be more patient, but kaggle time is limited
 callbacks_list = [checkpoint, early, reduceLROnPlat]
-!rm -rf ~/.keras # clean up before starting training
+### rm -rf ~/.keras # clean up before starting training
 retina_model.fit_generator(train_gen, 
                            steps_per_epoch = train_df.shape[0]//batch_size,
                            validation_data = valid_gen, 

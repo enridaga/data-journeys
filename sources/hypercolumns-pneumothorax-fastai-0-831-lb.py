@@ -1,7 +1,7 @@
 
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 
 import sys
 sys.path.insert(0, '../input/siim-acr-pneumothorax-segmentation')
@@ -38,7 +38,7 @@ elif sz == 128:
 
 # copy pretrained weights for resnet34 to the folder fastai will search by default
 Path('/tmp/.cache/torch/checkpoints/').mkdir(exist_ok=True, parents=True)
-!cp '../input/resnet34/resnet34.pth' '/tmp/.cache/torch/checkpoints/resnet34-333f7ec4.pth'
+### cp '../input/resnet34/resnet34.pth' '/tmp/.cache/torch/checkpoints/resnet34-333f7ec4.pth'
 
 def seed_everything(seed):
     random.seed(seed)

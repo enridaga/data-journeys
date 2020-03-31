@@ -336,7 +336,7 @@ FAMILY_SIZE = data.n_people.values
 DESIRED     = data.values[:, :-1] - 1
 PCOSTM = GetPreferenceCostMatrix(data) # Preference cost matrix
 ACOSTM = GetAccountingCostMatrix()     # Accounting cost matrix
-%%time
+### %time
 prediction = solveSanta()
 pc, occ = pcost(prediction)
 ac, _ = acost(occ)

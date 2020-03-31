@@ -76,7 +76,7 @@ def nlp_preprocessing(data):
         filtered_tokens = [token.lemma_.lower() for token in doc if token_filter(token)]
         processed_tokens.append(filtered_tokens)
     return processed_tokens
-%%time
+### %time
 # Transform datetime datatypes
 questions['questions_date_added'] = pd.to_datetime(questions['questions_date_added'], infer_datetime_format=True)
 answers['answers_date_added'] = pd.to_datetime(answers['answers_date_added'], infer_datetime_format=True)
@@ -757,7 +757,7 @@ def get_text_topics(text, top=20):
     plt.ylabel('')
     plt.title('Topics Probabilities')
     plt.show()
-%%time
+### %time
 lda_tokens = questions['nlp_tokens']
 # Gensim Dictionary
 lda_dic = gensim.corpora.Dictionary(lda_tokens)
@@ -1030,7 +1030,7 @@ def recommend_tags_other_professionals(professional_id, threshold=0.01, top=5):
             result.append([row['sim'], tag])
     result = pd.DataFrame(result, columns=['sim', 'tags_tag_name']).groupby('tags_tag_name').sum()['sim'].sort_values(ascending=False).head(top)
     return result
-%%time
+### %time
 professional_id = '8027a8d620a7429f90598adf80db5a88'
 print('Professional:', professional_id)
 print('\nActual Tags:')
@@ -1042,7 +1042,7 @@ print(', '.join(recommend_tags_questions(professional_id).index))
 print('\nRecommendation by other users with similar tags:')
 print(', '.join(recommend_tags_other_professionals(professional_id).index))
 print()
-%%time
+### %time
 professional_id = '2a7db4f2150c493f9d81cb4c2e032a12'
 print('Professional:', professional_id)
 print('\nActual Tags:')
@@ -1054,7 +1054,7 @@ print(', '.join(recommend_tags_questions(professional_id).index))
 print('\nRecommendation by other users with similar tags:')
 print(', '.join(recommend_tags_other_professionals(professional_id).index))
 print()
-%%time
+### %time
 new_questions = questions[(questions['questions_date_added'] > '2019-01-01') & (questions['questions_answers_count'] == 0)]
 questions_corpus = questions[questions['questions_date_added'] > '2018-01-01']
 print('count:',new_questions.shape[0])
@@ -1069,7 +1069,7 @@ plt.xlabel('Amount of recommendations')
 plt.ylabel('Frequency')
 plt.title('Recommended similar questions')
 plt.show()
-%%time
+### %time
 weights=[1, 1, 1, 1, 1, 0]
 new_questions = questions[(questions['questions_date_added'] > '2019-01-01') & (questions['questions_answers_count'] == 0)]
 questions_corpus = questions[questions['questions_date_added'] > '2018-01-01']
@@ -1089,7 +1089,7 @@ plt.ylabel('Frequency')
 plt.title('Recommended new questions for professionals')
 plt.show()
 professionals[professionals['professionals_id'] == '36ff3b3666df400f956f8335cf53e09e'].T
-%%time
+### %time
 weights=[3, 1, 1, 3]
 professionals_email = emails[(emails['emails_date_sent'] > '2019-01-01') 
                               & (emails['emails_frequency_level'] == 'email_notification_weekly')]['emails_recipient_id'].unique()
@@ -1109,7 +1109,7 @@ plt.ylabel('Frequency')
 plt.title('Recommended questions for professionals')
 plt.show()
 questions[questions['questions_id']=='8a0b92f702e444509f5bc9a95695663f'].T
-%%time
+### %time
 professionals_email = emails[(emails['emails_date_sent'] > '2019-01-01') 
                               & (emails['emails_frequency_level'] == 'email_notification_weekly')]['emails_recipient_id'].unique()
 print('count:',professionals_email.shape[0])
@@ -1126,7 +1126,7 @@ plt.xlabel('Amount of recommendations')
 plt.ylabel('Frequency')
 plt.title('Recommended tags by professionals industry')
 plt.show()
-%%time
+### %time
 professionals_email = emails[(emails['emails_date_sent'] > '2019-01-01') 
                               & (emails['emails_frequency_level'] == 'email_notification_weekly')]['emails_recipient_id'].unique()
 print('count:',professionals_email.shape[0])

@@ -16,7 +16,7 @@ import seaborn as sns
 # import image manipulation
 from PIL import Image
 import imageio
-! pip install --upgrade imgaug
+###  pip install --upgrade imgaug
 # import data augmentation
 import imgaug as ia
 from imgaug import augmenters as iaa

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import plotly.offline as py
 py.init_notebook_mode(connected=True)
 import plotly.graph_objs as go

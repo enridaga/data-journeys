@@ -129,7 +129,7 @@ model.cuda()
 for param in model.parameters():
     param.requires_grad = False
 sample = pd.read_csv('../input/aptos2019-blindness-detection/sample_submission.csv')
-%%time
+### %time
 test_pred = np.zeros((len(sample), 1))
 model.eval()
 

@@ -1,10 +1,10 @@
 
 #Download ctrNet-tool 
 #You can find the code in https://github.com/guoday/ctrNet-tool
-!git clone https://github.com/guoday/ctrNet-tool.git
-!cp -r ctrNet-tool/* ./
-!rm -r ctrNet-tool data .git
-!ls -all
+### git clone https://github.com/guoday/ctrNet-tool.git
+### cp -r ctrNet-tool/* ./
+### rm -r ctrNet-tool data .git
+### ls -all
 import ctrNet
 import pandas as pd
 import numpy as np

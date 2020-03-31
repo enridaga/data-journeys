@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 plt.style.use('seaborn-darkgrid')
 palette = plt.get_cmap('Set1')

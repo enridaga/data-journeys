@@ -11,7 +11,7 @@ import os
 
 import glob
 
-#%matplotlib inline
+### matplotlib inline
 
 p = sns.color_palette()
 

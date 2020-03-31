@@ -7,7 +7,7 @@ import pandas as pd
 
 # data visualization
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 from matplotlib import pyplot as plt
 from matplotlib import style
 

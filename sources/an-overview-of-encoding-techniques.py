@@ -23,7 +23,7 @@ plt.gca().set_xticks([0,1])
 plt.title('distribution of target variable')
 plt.show()
 from sklearn.preprocessing import LabelEncoder
-%%time
+### %time
 
 train=pd.DataFrame()
 label=LabelEncoder()
@@ -50,7 +50,7 @@ logistic(train,y)
 
 
 from sklearn.preprocessing import OneHotEncoder
-%%time 
+### %time 
 
 one=OneHotEncoder()
 
@@ -62,7 +62,7 @@ print('train data set has got {} rows and {} columns'.format(train.shape[0],trai
 
 logistic(train,y)
 from sklearn.feature_extraction import FeatureHasher
-%%time
+### %time
 
 X_train_hash=X.copy()
 for c in X.columns:
@@ -74,7 +74,7 @@ print('train data set has got {} rows and {} columns'.format(train.shape[0],trai
 
 
 logistic(train,y)
-%%time
+### %time
 
 X_train_stat=X.copy()
 for c in X_train_stat.columns:
@@ -92,7 +92,7 @@ X_train_stat.head(3)
 print('train data set has got {} rows and {} columns'.format(X_train_stat.shape[0],X_train_stat.shape[1]))
         
 logistic(X_train_stat,y)
-%%time
+### %time
 
 X_train_cyclic=X.copy()
 columns=['day','month']
@@ -110,7 +110,7 @@ train=one.transform(X_train_cyclic)
 print('train data set has got {} rows and {} columns'.format(train.shape[0],train.shape[1]))
 
 logistic(train,y)
-%%time
+### %time
 
 X_target=df_train.copy()
 X_target['day']=X_target['day'].astype('object')
@@ -127,7 +127,7 @@ X_target.head(4)
 logistic(X_target.drop('target',axis=1),y)
 X['target']=y
 cols=X.drop(['target','id'],axis=1).columns
-%%time
+### %time
 
 X_fold=X.copy()
 X_fold[['ord_0','day','month']]=X_fold[['ord_0','day','month']].astype('object')

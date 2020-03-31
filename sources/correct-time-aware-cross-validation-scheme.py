@@ -31,8 +31,8 @@ train_df[sites].fillna(0).astype('int').to_csv('train_sessions_text.txt',
 test_df[sites].fillna(0).astype('int').to_csv('test_sessions_text.txt', 
                                               sep=' ', 
                        index=None, header=None)
-!head -5 train_sessions_text.txt
-%%time
+### head -5 train_sessions_text.txt
+### %time
 cv = CountVectorizer(ngram_range=(1, 3), max_features=50000)
 with open('train_sessions_text.txt') as inp_train_file:
     X_train = cv.fit_transform(inp_train_file)
@@ -43,7 +43,7 @@ y_train = train_df['target'].astype('int').values
 time_split = TimeSeriesSplit(n_splits=10)
 [(el[0].shape, el[1].shape) for el in time_split.split(X_train)]
 logit = LogisticRegression(C=1, random_state=17, solver='liblinear')
-%%time
+### %time
 
 cv_scores = cross_val_score(logit, X_train, y_train, cv=time_split, 
                             scoring='roc_auc', n_jobs=1) # hangs with n_jobs > 1, and locally this runs much faster
@@ -61,11 +61,11 @@ def add_time_features(df, X_sparse):
                 day.values.reshape(-1, 1), evening.values.reshape(-1, 1), 
                 night.values.reshape(-1, 1)])
     return X
-%%time
+### %time
 X_train_new = add_time_features(train_df.fillna(0), X_train)
 X_test_new = add_time_features(test_df.fillna(0), X_test)
 X_train_new.shape, X_test_new.shape
-%%time
+### %time
 cv_scores = cross_val_score(logit, X_train_new, y_train, cv=time_split, 
                             scoring='roc_auc', n_jobs=1) # hangs with n_jobs > 1, and locally this runs much faster
 cv_scores, cv_scores.mean()
@@ -76,7 +76,7 @@ c_values = np.logspace(-2, 2, 10)
 
 logit_grid_searcher = GridSearchCV(estimator=logit, param_grid={'C': c_values},
                                   scoring='roc_auc', n_jobs=1, cv=time_split, verbose=1)
-%%time
+### %time
 logit_grid_searcher.fit(X_train_new, y_train) # WTF? Locally, it's 3min 30s
 logit_grid_searcher.best_score_, logit_grid_searcher.best_params_
 logit_test_pred3 = logit_grid_searcher.predict_proba(X_test_new)[:, 1]

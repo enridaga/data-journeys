@@ -52,6 +52,6 @@ size = 1000000
 a = np.random.randint(0, 4, size)
 p = np.random.randint(0, 4, size)
 a.size, p.size
-%timeit quadKappa(a,p)
-%timeit cohen_kappa_score(a, p, weights="quadratic")
-%timeit qwk3(a,p)
+### timeit quadKappa(a,p)
+### timeit cohen_kappa_score(a, p, weights="quadratic")
+### timeit qwk3(a,p)

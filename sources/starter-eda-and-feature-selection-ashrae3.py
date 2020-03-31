@@ -33,7 +33,7 @@ path = '../input/ashrae-energy-prediction'
 for dirname, _, filenames in os.walk(path):
     for filename in filenames:
         print(os.path.join(dirname, filename))
-%%time
+### %time
 # unimportant features (see importance below)
 unimportant_cols = ['wind_direction', 'wind_speed', 'sea_level_pressure']
 target = 'meter_reading'
@@ -163,7 +163,7 @@ ASHRAE3Preprocessor.fit(train)
 train = ASHRAE3Preprocessor.transform(train)
 train.sample(7)
 train.dtypes
-%%time
+### %time
 fig, ax = plt.subplots(figsize=(16,8))
 # use a ranked correlation to catch nonlinearities
 corr = train[[col for col in train.columns if col != 'year']].sample(100100).corr(method='spearman')

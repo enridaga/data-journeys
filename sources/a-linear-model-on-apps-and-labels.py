@@ -3,7 +3,7 @@ import pandas as pd
 
 import numpy as np
 
-#%matplotlib inline
+### matplotlib inline
 
 import seaborn as sns
 

@@ -13,7 +13,7 @@ print('pandas: {}'.format(pd.__version__))
 print('numpy: {}'.format(np.__version__))
 print('Python: {}'.format(sys.version))
 warnings.filterwarnings('ignore')
-%precision 2
+### precision 2
 print(os.listdir("../input/"))
 hp_train=pd.read_csv('../input/train.csv')
 import this

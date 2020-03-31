@@ -5,7 +5,7 @@ import pandas as pd
 
 # Visualisation libraries
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 sns.set()
 from plotly.offline import init_notebook_mode, iplot 
@@ -17,7 +17,7 @@ import folium
 from folium import plugins
 
 # Graphics in retina format 
-%config InlineBackend.figure_format = 'retina' 
+### config InlineBackend.figure_format = 'retina' 
 
 # Increase the default plot size and set the color scheme
 plt.rcParams['figure.figsize'] = 8, 5

@@ -1,6 +1,6 @@
 
-!pip install albumentations > /dev/null
-!git clone https://github.com/qubvel/efficientnet.git
+### pip install albumentations > /dev/null
+### git clone https://github.com/qubvel/efficientnet.git
 import numpy as np
 import pandas as pd
 import gc
@@ -74,13 +74,13 @@ os.environ['PYTHONHASHSEED'] = str(seed)
 np.random.seed(seed)
 tf.set_random_seed(seed)
     
-#%matplotlib inline
-!mkdir masks
-!unzip -q ../input/data-repack-and-image-statistics/masks.zip -d masks 
-!mkdir train
-!unzip -q ../input/data-repack-and-image-statistics/train.zip -d train 
-!mkdir test
-!unzip -q ../input/data-repack-and-image-statistics/test.zip -d test 
+### matplotlib inline
+### mkdir masks
+### unzip -q ../input/data-repack-and-image-statistics/masks.zip -d masks 
+### mkdir train
+### unzip -q ../input/data-repack-and-image-statistics/train.zip -d train 
+### mkdir test
+### unzip -q ../input/data-repack-and-image-statistics/test.zip -d test 
 all_mask_fn = glob.glob('./masks/*')
 mask_df = pd.DataFrame()
 mask_df['file_names'] = all_mask_fn
@@ -103,25 +103,25 @@ print('No. of val files:', len(val_fn))
 
 masks_train_fn = [fn.replace('./train','./masks') for fn in train_fn]    
 masks_val_fn = [fn.replace('./train','./masks') for fn in val_fn]
-!mkdir ./keras_im_train
+### mkdir ./keras_im_train
 train_dir = './keras_im_train'
 for full_fn in train_fn:
     fn = full_fn.split('/')[-1]
     shutil.move(full_fn,os.path.join(train_dir,fn))
     
-!mkdir ./keras_mask_train
+### mkdir ./keras_mask_train
 train_dir = './keras_mask_train'
 for full_fn in masks_train_fn:
     fn = full_fn.split('/')[-1]
     shutil.move(full_fn,os.path.join(train_dir,fn))
     
-!mkdir ./keras_im_val
+### mkdir ./keras_im_val
 train_dir = './keras_im_val'
 for full_fn in val_fn:
     fn = full_fn.split('/')[-1]
     shutil.move(full_fn,os.path.join(train_dir,fn))
     
-!mkdir ./keras_mask_val
+### mkdir ./keras_mask_val
 train_dir = './keras_mask_val'
 for full_fn in masks_val_fn:
     fn = full_fn.split('/')[-1]
@@ -680,7 +680,7 @@ sub_df.loc[sub_df.EncodedPixels=='', 'EncodedPixels'] = '-1'
 sub_df.head()
 sub_df.to_csv('orig_submission.csv', index=False)
 sub_df.tail(10)
-!rm -r */
+### rm -r */
 sub_df = pd.read_csv('orig_submission.csv')
 leak_prob = pd.read_csv('../input/leak-probabilities-siim/leak_probabilities.csv')
 sub_df = sub_df.merge(leak_prob,on='ImageId')

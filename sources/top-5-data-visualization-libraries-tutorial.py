@@ -44,7 +44,7 @@ pylab.rcParams['figure.figsize'] = 12,8
 warnings.filterwarnings('ignore')
 mpl.style.use('ggplot')
 sns.set_style('white')
-#%matplotlib inline
+### matplotlib inline
 # import kernels and users to play with it (MJ Bahmani)
 #command--> 1
 users = pd.read_csv("../input/Users.csv")
@@ -619,7 +619,7 @@ H = nx.read_edgelist(path="grid.edgelist", delimiter=":")
 nx.draw(H)
 plt.show()
 from ipywidgets import interact
-#%matplotlib inline
+### matplotlib inline
 import matplotlib.pyplot as plt
 import networkx as nx
 # wrap a few graph generation functions so they have the same signature

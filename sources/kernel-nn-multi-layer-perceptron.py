@@ -6,7 +6,7 @@ import seaborn as sns
 sns.set()
 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 from tqdm import tqdm_notebook as tqdm
 import re
@@ -225,7 +225,7 @@ def get_nn(x_tr,y_tr,x_val,y_val,shape):
     logloss = log_loss(y_valid, y_pred, eps=1e-15)
 
     return model, logloss
-%%time
+### %time
 
 # Bloco para executar a rede neural a cada passada do KFold
 # Vamos realizar 2 loops com 5 kfolds e apurar a média

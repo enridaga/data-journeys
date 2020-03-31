@@ -14,7 +14,7 @@ from sklearn.metrics import classification_report, accuracy_score, log_loss
 from sklearn.metrics import roc_auc_score, roc_curve, confusion_matrix
 from scipy.sparse import csr_matrix
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 PATH_TO_ALL_DATA = '../input/spooky-vw-tutorial/'
 data_demo = pd.read_csv(os.path.join(PATH_TO_ALL_DATA, 'weights_heights.csv'))
@@ -167,9 +167,9 @@ len(train_labels), len(valid_labels)
 # with open('movie_reviews_test.vw', 'w') as vw_test_data:
 #     for text in text_test:
 #         vw_test_data.write(to_vw_format(str(text)))
-!head -2 $PATH_TO_ALL_DATA/movie_reviews_train.vw
-!head -2 $PATH_TO_ALL_DATA/movie_reviews_valid.vw
-!head -2 $PATH_TO_ALL_DATA/movie_reviews_test.vw
+### head -2 $PATH_TO_ALL_DATA/movie_reviews_train.vw
+### head -2 $PATH_TO_ALL_DATA/movie_reviews_valid.vw
+### head -2 $PATH_TO_ALL_DATA/movie_reviews_test.vw
 # !vw -d $PATH_TO_ALL_DATA/movie_reviews_train.vw --loss_function hinge \
 # -f $PATH_TO_ALL_DATA/movie_reviews_model.vw --quiet
 # !vw -i $PATH_TO_ALL_DATA/movie_reviews_model.vw -t \
@@ -209,7 +209,7 @@ print("Accuracy: {}".format(round(accuracy_score(y_test,
 print("AUC: {}".format(round(roc_auc_score(y_test, test_prediction2), 3)))
 # change the path to data
 # PATH_TO_STACKOVERFLOW_DATA = '/Users/y.kashnitsky/Documents/stackoverflow'
-!head -3 $PATH_TO_ALL_DATA/stackoverflow_sample.vw
+### head -3 $PATH_TO_ALL_DATA/stackoverflow_sample.vw
 # !du -hs $PATH_TO_STACKOVERFLOW_DATA/stackoverflow_*.vw
 # 4,7G stackoverflow_10mln.vw
 # 1,6G stackoverflow_test.vw
@@ -256,13 +256,13 @@ def to_vw_only_text(out_vw, df, is_train=True):
 
             out.write(s)    
 # to_vw_only_text("train_part_only_text.vw", train_texts_part)
-!head -2 $PATH_TO_ALL_DATA/train_part_only_text.vw
+### head -2 $PATH_TO_ALL_DATA/train_part_only_text.vw
 # to_vw_only_text("valid_only_text.vw", valid_texts)
-!head -2 $PATH_TO_ALL_DATA/valid_only_text.vw
+### head -2 $PATH_TO_ALL_DATA/valid_only_text.vw
 # to_vw_only_text("train_only_text.vw", train_texts)
-!head -2 $PATH_TO_ALL_DATA/train_only_text.vw
+### head -2 $PATH_TO_ALL_DATA/train_only_text.vw
 # to_vw_only_text("test_only_text.vw", test_texts, is_train=False)
-!head -2 $PATH_TO_ALL_DATA/test_only_text.vw
+### head -2 $PATH_TO_ALL_DATA/test_only_text.vw
 # !vw --oaa 3 train_part_only_text.vw -f model_only_text_part.vw -b 28 --random_seed 17 \
 # --loss_function logistic --ngram 2 --passes 10 -k -c
 # %%time
@@ -327,7 +327,7 @@ def to_vw_text_and_some_features(out_vw, df, is_train=True):
             out.write(s)   
  
 # to_vw_text_and_some_features("train_part_text_feat.vw", train_texts_part)
-!head -2 $PATH_TO_ALL_DATA/train_part_text_feat.vw
+### head -2 $PATH_TO_ALL_DATA/train_part_text_feat.vw
 # to_vw_text_and_some_features("valid_text_feat.vw", valid_texts)
 # to_vw_text_and_some_features("train_text_feat.vw", train_texts)
 # to_vw_text_and_some_features("test_text_feat.vw", test_texts, is_train=False)

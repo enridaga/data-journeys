@@ -29,7 +29,7 @@ pd.options.mode.chained_assignment = None
 
 warnings.filterwarnings("ignore")
 
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv('../input/train_2016_v2.csv', parse_dates=["transactiondate"])
 properties = pd.read_csv('../input/properties_2016.csv')
 print ("Shape Of Train: ",train.shape)

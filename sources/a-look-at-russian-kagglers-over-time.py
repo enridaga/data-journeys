@@ -1,5 +1,5 @@
 
-!pip install -U vega_datasets notebook vega
+### pip install -U vega_datasets notebook vega
 # importing libraries
 import numpy as np 
 import pandas as pd 
@@ -7,7 +7,7 @@ import os
 import math
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 from plotly import tools
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot

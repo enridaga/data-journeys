@@ -4,7 +4,7 @@ import pandas as pd # collection of functions for data processing and analysis m
 import numpy as np  # foundational package for scientific computing
 import re           # Regular expression operations
 import matplotlib.pyplot as plt # Collection of functions for scientific and publication-ready visualization
-#%matplotlib inline
+### matplotlib inline
 import plotly.offline as py     # Open source library for composing, editing, and sharing interactive data visualization 
 from matplotlib import pyplot
 py.init_notebook_mode(connected=True)

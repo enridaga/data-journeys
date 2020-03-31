@@ -6,7 +6,7 @@ import matplotlib
 import seaborn as sns
 import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook
-#%matplotlib inline 
+### matplotlib inline 
 import cv2 as cv
 DATA_FOLDER = '../input/deepfake-detection-challenge'
 TRAIN_SAMPLE_FOLDER = 'train_sample_videos'

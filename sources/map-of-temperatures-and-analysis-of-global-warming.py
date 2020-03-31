@@ -5,7 +5,7 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 
-#%matplotlib inline
+### matplotlib inline
 
 import plotly.offline as py
 

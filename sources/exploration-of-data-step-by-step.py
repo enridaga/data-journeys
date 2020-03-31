@@ -6,7 +6,7 @@ import os
 import json
 import seaborn as sns 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('ggplot')
 import lightgbm as lgb
 import xgboost as xgb
@@ -602,7 +602,7 @@ for col1 in cat_cols:
             more_cols.append(col1 + '_' + col2)
             
 cat_cols = cat_cols + more_cols
-%%time
+### %time
 indexer = {}
 for col in cat_cols:
     # print(col)

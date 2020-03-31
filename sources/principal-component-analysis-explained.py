@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
-#%matplotlib inline
+### matplotlib inline
 df = pd.read_csv('../input/HR_comma_sep.csv')
 columns_names=df.columns.tolist()
 

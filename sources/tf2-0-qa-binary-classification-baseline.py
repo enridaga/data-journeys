@@ -25,7 +25,7 @@ from scipy import spatial
 import lightgbm as lgb
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
-%%time
+### %time
 dtypes = {
     'CorrectString': str,
     'CorrectString_short': str,

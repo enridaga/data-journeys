@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 sns.set()
-#%matplotlib inline
+### matplotlib inline
 from matplotlib import pyplot as plt
 
 telecom_data = pd.read_csv('../input/telecom_churn.csv')

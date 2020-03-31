@@ -18,13 +18,13 @@ from sklearn import tree
 import graphviz
 warnings.simplefilter('ignore')
 sns.set()
-#%matplotlib inline
+### matplotlib inline
 files = ['../input/test_identity.csv', 
          '../input/test_transaction.csv',
          '../input/train_identity.csv',
          '../input/train_transaction.csv',
          '../input/sample_submission.csv']
-%%time
+### %time
 def load_data(file):
     return pd.read_csv(file)
 

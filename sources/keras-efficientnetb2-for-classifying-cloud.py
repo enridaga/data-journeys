@@ -24,8 +24,8 @@ from numpy.random import seed
 seed(10)
 from tensorflow import set_random_seed
 set_random_seed(10)
-#%matplotlib inline
-!pip install keras-rectified-adam
+### matplotlib inline
+### pip install keras-rectified-adam
 test_imgs_folder = '../input/understanding_cloud_organization/test_images/'
 train_imgs_folder = '../input/understanding_cloud_organization/train_images/'
 num_cores = multiprocessing.cpu_count()
@@ -195,7 +195,7 @@ def dice_loss(y_true, y_pred):
 
 def bce_dice_loss(y_true, y_pred):
     return binary_crossentropy(y_true, y_pred) + dice_loss(y_true, y_pred)
-!pip install -U git+https://github.com/qubvel/efficientnet
+### pip install -U git+https://github.com/qubvel/efficientnet
 import efficientnet.keras as efn 
 def get_model():
     K.clear_session()

@@ -15,7 +15,7 @@ color = sns.color_palette()
 
 
 
-#%matplotlib inline
+### matplotlib inline
 
 
 

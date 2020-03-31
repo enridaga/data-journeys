@@ -11,7 +11,7 @@ import seaborn as sns
 
 import squarify
 
-#%matplotlib inline
+### matplotlib inline
 
 import missingno as msno
 

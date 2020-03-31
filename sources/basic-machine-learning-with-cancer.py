@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt # this is used for the plot the graph
 
 import seaborn as sns # used for plot interactive graph. I like it most for plot
 
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.linear_model import LogisticRegression # to apply the Logistic regression
 

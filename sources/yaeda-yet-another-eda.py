@@ -7,7 +7,7 @@ import operator
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import describe
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error

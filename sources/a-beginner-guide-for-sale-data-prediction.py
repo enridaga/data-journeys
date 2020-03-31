@@ -17,7 +17,7 @@ from keras.layers import Dense, Activation
 from keras.layers import LSTM
 from keras.optimizers import RMSprop
 
-#%matplotlib inline
+### matplotlib inline
 
 train = pd.read_csv('../input/sales_train.csv')
 test = pd.read_csv('../input/test.csv')

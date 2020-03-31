@@ -15,7 +15,7 @@ import seaborn as sns
 sns.set()
 
 # Graphics in retina format are more sharp and legible
-%config InlineBackend.figure_format = 'retina'
+### config InlineBackend.figure_format = 'retina'
 df = pd.read_csv('../input/telecom_churn.csv')
 df.head()
 features = ['Total day minutes', 'Total intl calls']
@@ -49,9 +49,9 @@ sns.jointplot(x='Total day minutes', y='Total night minutes',
 sns.jointplot('Total day minutes', 'Total night minutes', data=df,
               kind="kde", color="g");
 # `pairplot()` may become very slow with the SVG or retina format
-%config InlineBackend.figure_format = 'png'
+### config InlineBackend.figure_format = 'png'
 sns.pairplot(df[numerical]);
-%config InlineBackend.figure_format = 'retina'
+### config InlineBackend.figure_format = 'retina'
 sns.lmplot('Total day minutes', 'Total night minutes', data=df, hue='Churn', fit_reg=False);
 # Sometimes you can analyze an ordinal variable just as numerical one
 numerical.append('Customer service calls')

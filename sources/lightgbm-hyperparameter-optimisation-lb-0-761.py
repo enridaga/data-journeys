@@ -9,7 +9,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline 
+### matplotlib inline 
 plt.xkcd()
 
 # Input data files are available in the "../input/" directory.

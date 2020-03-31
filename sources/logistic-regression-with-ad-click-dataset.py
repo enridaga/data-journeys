@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 ad_data = pd.read_csv('../input/advertising/advertising.csv')
 ad_data.head()
 ad_data.columns # displays column names

@@ -24,19 +24,19 @@ ROOT_DIR = Path('/kaggle/working')
 # and the image size is set to 512, which is the same as the size of submission masks
 NUM_CATS = 46
 IMAGE_SIZE = 512
-!git clone https://www.github.com/matterport/Mask_RCNN.git
+### git clone https://www.github.com/matterport/Mask_RCNN.git
 os.chdir('Mask_RCNN')
 
-!rm -rf .git # to prevent an error when the kernel is committed
-!rm -rf images assets # to prevent displaying images at the bottom of a kernel
+### rm -rf .git # to prevent an error when the kernel is committed
+### rm -rf images assets # to prevent displaying images at the bottom of a kernel
 sys.path.append(ROOT_DIR/'Mask_RCNN')
 from mrcnn.config import Config
 from mrcnn import utils
 import mrcnn.model as modellib
 from mrcnn import visualize
 from mrcnn.model import log
-!wget --quiet https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
-!ls -lh mask_rcnn_coco.h5
+### wget --quiet https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
+### ls -lh mask_rcnn_coco.h5
 
 COCO_WEIGHTS_PATH = 'mask_rcnn_coco.h5'
 class FashionConfig(Config):
@@ -193,7 +193,7 @@ model.load_weights(COCO_WEIGHTS_PATH, by_name=True, exclude=[
 augmentation = iaa.Sequential([
     iaa.Fliplr(0.5) # only horizontal flip here
 ])
-%%time
+### %time
 model.train(train_dataset, valid_dataset,
             learning_rate=LR*2, # train heads with higher lr to speedup learning
             epochs=EPOCHS[0],
@@ -201,7 +201,7 @@ model.train(train_dataset, valid_dataset,
             augmentation=None)
 
 history = model.keras_model.history.history
-%%time
+### %time
 model.train(train_dataset, valid_dataset,
             learning_rate=LR,
             epochs=EPOCHS[1],
@@ -210,7 +210,7 @@ model.train(train_dataset, valid_dataset,
 
 new_history = model.keras_model.history.history
 for k in new_history: history[k] = history[k] + new_history[k]
-%%time
+### %time
 model.train(train_dataset, valid_dataset,
             learning_rate=LR/5,
             epochs=EPOCHS[2],
@@ -282,7 +282,7 @@ def refine_masks(masks, rois):
             y2, x2 = np.max(mask_pos, axis=1)
             rois[m, :] = [y1, x1, y2, x2]
     return masks, rois
-%%time
+### %time
 sub_list = []
 missing_count = 0
 for i, row in tqdm(sample_df.iterrows(), total=len(sample_df)):

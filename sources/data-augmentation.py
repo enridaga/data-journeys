@@ -16,7 +16,7 @@ my_new_model.add(Dense(num_classes, activation='softmax'))
 my_new_model.layers[0].trainable = False
 
 my_new_model.compile(optimizer='sgd', loss='categorical_crossentropy', metrics=['accuracy'])
-!ls ../input/urban-and-rural-photos/rural_and_urban_photos
+### ls ../input/urban-and-rural-photos/rural_and_urban_photos
 from tensorflow.python.keras.applications.resnet50 import preprocess_input
 from tensorflow.python.keras.preprocessing.image import ImageDataGenerator
 

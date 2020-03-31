@@ -5,7 +5,7 @@ import pandas as pd
 pd.set_option('max_columns', None)
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 
 import datetime
 import lightgbm as lgb
@@ -276,7 +276,7 @@ _ = calculate_metrics(model, X_train, y_train, X_valid, y_valid)
 # sub = pd.read_csv('../input/sample_submission.csv')
 # sub['target'] = prediction_lgb_stats
 # sub.to_csv('lgb_stats.csv', index=False)
-%%time
+### %time
 X = train.drop(['ID_code', 'target'], axis=1)
 X_test = test.drop(['ID_code'], axis=1)
 neigh = NearestNeighbors(3, n_jobs=-1)

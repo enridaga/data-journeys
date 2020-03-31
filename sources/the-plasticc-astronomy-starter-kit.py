@@ -12,8 +12,8 @@ from astropy.table import Table
 import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
-#%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
+### matplotlib inline
+### config InlineBackend.figure_format = 'retina'
 
 def displayimage(image):
     img = np.array(Image.open(image))
@@ -24,7 +24,7 @@ displayimage('../input/plasticc-astronomy-starter-kit-media/LSST_night.jpg')
 
 displayimage('../input/plasticc-astronomy-starter-kit-media/LSST_FoV.jpg')
 displayimage('../input/plasticc-astronomy-starter-kit-media/HST_field_of_view.jpg')
-%%HTML
+### %HTML
 <div align="middle">
 <video width="60%" controls>
       <source src="https://storage.googleapis.com/kaggle-datasets/52432/98042/SN98bu_LC.mp4?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1538266058&Signature=SgHGTPeH4qfe%2BvxF08OY0mBaQX5GxbSOUe2X2ibg%2FxWhGnJNaQ7JT57lFaAOpjN9HAEC%2Fy1o4OCzD3AdR%2F%2FLRXeSfY6BMZdsXclppAzS2Uf%2BXyhIYFXUhGe%2F1gc5Gch5myz%2FOre1h%2F5Fgh7AhK6dKAVMHhLYREWTWEyV8MJkhXtsy3a%2B%2BjwerdcdOiGtuQe3JzjHudBsw%2FjOCtLxYsA4SMNtI6F6750cgqAvC7OgNX6vt4tCpCQW6LxyZSn64sFD0ulZJF9IWWX9tqyMdVgcdb2CEYRke91kpXivdGAvjQrZDr1OkJXSYq6QcXY3JMGrx9egN0iMe3pIJ35Z8DPEsg%3D%3D" type="video/mp4">
@@ -63,7 +63,7 @@ import scipy.stats as spstat
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 
-#%matplotlib inline
+### matplotlib inline
 class LightCurve(object):
     '''Light curve object for PLAsTiCC formatted data'''
     

@@ -77,7 +77,7 @@ def reduce_mem_usage(df, use_float16=False):
     print('Decreased by {:.1f}%'.format(100 * (start_mem - end_mem) / start_mem))
     
     return df
-%%time
+### %time
 root = Path('../input/ashrae-feather-format-for-fast-loading')
 
 train_df = pd.read_feather(root/'train.feather')
@@ -95,7 +95,7 @@ leak_df = leak_df[leak_df.building_id!=245]
 leak_df.meter.value_counts()
 print (leak_df.duplicated().sum())
 print (len(leak_df) / len(train_df))
-! ls ../input
+###  ls ../input
 del train_df
 gc.collect()
 sample_submission1 = pd.read_csv('../input/ashrae-kfold-lightgbm-without-leak-1-08/submission.csv', index_col=0)

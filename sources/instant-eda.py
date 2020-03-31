@@ -21,7 +21,7 @@ from sklearn.svm import SVC
 from sklearn.feature_selection import VarianceThreshold
 
 from scipy.stats import describe
-#%matplotlib inline
+### matplotlib inline
 
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import mean_squared_error
@@ -87,10 +87,10 @@ def normal(train, test):
     test = traintest[len_train:].reset_index(drop=True)
 
     return train, test
-%%time
+### %time
 train, test = normal(train, test)
 
-%%time
+### %time
 featues_to_use = [c for c in train.columns if c not in ['id', 'target']]
 target = train['target']
 #train = train[featues_to_use]
@@ -98,7 +98,7 @@ target = train['target']
 #classifier = LogisticRegression(C=1, solver='sag')
 #cv_score = np.mean(cross_val_score(classifier, train, target, cv=3, scoring='roc_auc'))
 #print(cv_score)
-%%time
+### %time
 folds = KFold(n_splits=10, shuffle=True, random_state=137)
 oof = np.zeros(train.shape[0])
 pred = 0
@@ -115,7 +115,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train.values, target.valu
     print(roc_auc_score(y_val, val_pred))
     
 print(roc_auc_score(target.values, oof))
-%%time
+### %time
 
 NFOLDS = 25
 NVALUES = 512
@@ -225,7 +225,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train.values, target.valu
     oof_lgb[val_idx] = val_pred
     pred_lgb += classifier.predict(test[featues_to_use], num_iteration=classifier.best_iteration)/10
     print(roc_auc_score(y_val, val_pred))'''
-%%time
+### %time
 submission = pd.read_csv('../input/sample_submission.csv')
 
 

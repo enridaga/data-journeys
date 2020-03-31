@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 import scikitplot as skplt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.ticker import NullFormatter
-#%matplotlib inline
+### matplotlib inline
 # How many rows to include in this kernel (to make iteration speedier)
 SAMPLES = 1000
 

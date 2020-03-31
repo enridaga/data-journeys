@@ -29,7 +29,7 @@ warnings.filterwarnings('ignore')
 mpl.style.use('ggplot')
 sns.set_style('white')
 np.random.seed(1337)
-#%matplotlib inline
+### matplotlib inline
 print(os.listdir("../input"))
 train = pd.read_csv('../input/train.csv')
 test = pd.read_csv('../input/test.csv')

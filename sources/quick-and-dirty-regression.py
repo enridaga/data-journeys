@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import copy
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -36,7 +36,7 @@ import altair as alt
 from category_encoders.ordinal import OrdinalEncoder
 import networkx as nx
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from typing import List
 
 import os
@@ -1022,7 +1022,7 @@ class OptimizedRounder(object):
         Return the optimized coefficients
         """
         return self.coef_['x']
-%%time
+### %time
 pr1 = regressor_model1.predict(reduce_train)
 
 optR = OptimizedRounder()

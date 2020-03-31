@@ -24,8 +24,8 @@ import gc
 # for get better result chage fold_n to 5
 fold_n=5
 folds = StratifiedKFold(n_splits=fold_n, shuffle=True, random_state=10)
-#%matplotlib inline
-%precision 4
+### matplotlib inline
+### precision 4
 warnings.filterwarnings('ignore')
 plt.style.use('ggplot')
 np.set_printoptions(suppress=True)
@@ -260,7 +260,7 @@ params = {'objective' : "binary",
                'min_data_in_leaf' : 80,
                'min_sum_hessian_in_leaf' : 10.0,
                'verbosity' : 1}
-%%time
+### %time
 y_pred_lgb = np.zeros(len(X_test))
 num_round = 1000000
 for fold_n, (train_index, valid_index) in enumerate(folds.split(X,y)):

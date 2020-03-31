@@ -31,8 +31,8 @@ import time
 import glob
 import sys
 import os
-#%matplotlib inline
-%precision 4
+### matplotlib inline
+### precision 4
 warnings.filterwarnings('ignore')
 plt.style.use('ggplot')
 np.set_printoptions(suppress=True)
@@ -41,7 +41,7 @@ print('pandas: {}'.format(pd.__version__))
 print('numpy: {}'.format(np.__version__))
 print('Python: {}'.format(sys.version))
 print(os.listdir("../input/"))
-%%time
+### %time
 train = pd.read_csv('../input/train.csv' , dtype={'acoustic_data': np.int16, 'time_to_failure': np.float32})
 print("Train has: rows:{} cols:{}".format(train.shape[0], train.shape[1]))
 submission = pd.read_csv('../input/sample_submission.csv', index_col='seg_id')
@@ -73,7 +73,7 @@ y_train = pd.DataFrame(index=range(segments), dtype=np.float64,
                        columns=['time_to_failure'])
 y_train.head()
 X_train.head()
-%%time
+### %time
 for segment in tqdm(range(segments)):
     seg = train.iloc[segment*rows:segment*rows+rows]
     x = seg['acoustic_data'].values
@@ -107,7 +107,7 @@ def check_missing_data(df):
 check_missing_data(X_train)
 X_test = pd.DataFrame(columns=X_train.columns, dtype=np.float64, index=submission.index)
 X_test.head()
-%%time
+### %time
 for seg_id in  tqdm(X_test.index):
     seg = pd.read_csv('../input/test/' + seg_id + '.csv')
     
@@ -196,7 +196,7 @@ params = {'objective' : "regression",
                'min_data_in_leaf' : 10,
                'min_sum_hessian_in_leaf' : 10.0,
                'verbosity' : -1}
-%%time
+### %time
 y_pred_lgb = np.zeros(len(X_test_scaled))
 for fold_n, (train_index, valid_index) in tqdm(enumerate(folds.split(X))):
     print('Fold', fold_n, 'started at', time.ctime())

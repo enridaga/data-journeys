@@ -63,7 +63,7 @@ f = 2 # the frequency of the signal
 x = np.arange(fs) # the points on the x axis for plotting
 y = [ np.sin(2*np.pi*f * (i/fs)) for i in x]
 
-% matplotlib inline
+###  matplotlib inline
 plt.figure(figsize=(15,4))
 plt.stem(x,y, 'r', );
 plt.plot(x,y);

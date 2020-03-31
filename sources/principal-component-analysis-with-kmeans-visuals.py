@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt # Python defacto plotting library
 
 import seaborn as sns # More snazzy plotting library
 
-#%matplotlib inline 
+### matplotlib inline 
 movie = pd.read_csv('../input/movie_metadata.csv') # reads the csv and creates the dataframe called movie
 
 movie.head()

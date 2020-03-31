@@ -48,7 +48,7 @@ plt.show()
 dist = multiple_choice[['Q1', 'Q2', 'Q3']]
 dist = dist.rename(columns={"Q1": "Age", "Q2": "Gender", "Q3":"Country"})
 dist.drop(0, axis=0, inplace=True)
-!pip install pywaffle
+### pip install pywaffle
 from pywaffle import Waffle
 
 gender = dist['Gender'].value_counts()

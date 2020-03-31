@@ -17,7 +17,7 @@ print('pandas: {}'.format(pd.__version__))
 print('numpy: {}'.format(np.__version__))
 print('Python: {}'.format(sys.version))
 warnings.filterwarnings('ignore')
-%precision 2
+### precision 2
     hp_train=pd.read_csv('../input/melb_data.csv')
 import numpy as np
 mylist = [1, 2, 3]
@@ -154,22 +154,22 @@ print(total)
 s = pd.Series(np.random.randint(0,1000,10000))
 s.head()
 len(s)
-%%timeit -n 100
+### %timeit -n 100
 summary = 0
 for item in s:
     summary+=item
-%%timeit -n 100
+### %timeit -n 100
 summary = np.sum(s)
 s+=2 #adds two to each item in s using broadcasting
 s.head()
 for label, value in s.iteritems():
     s.set_value(label, value+2)
 s.head()
-%%timeit -n 10
+### %timeit -n 10
 s = pd.Series(np.random.randint(0,1000,100))
 for label, value in s.iteritems():
     s.loc[label]= value+2
-%%timeit -n 10
+### %timeit -n 10
 s = pd.Series(np.random.randint(0,1000,100))
 s+=2
 

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Set a few plotting defaults
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('fivethirtyeight')
 plt.rcParams['font.size'] = 18
 plt.rcParams['patch.edgecolor'] = 'k'
@@ -962,7 +962,7 @@ def model_gbm(features, labels, test_features, test_ids,
     
     # return the submission and feature importances along with validation scores
     return submission, feature_importances, valid_scores
-%%capture --no-display
+### %capture --no-display
 predictions, gbm_fi = model_gbm(train_set, train_labels, test_set, test_ids, return_preds=True)
 predictions.head()
 plt.rcParams['font.size'] = 18
@@ -991,13 +991,13 @@ plt.title('Confidence by Target');
 plt.figure(figsize = (10, 6))
 sns.violinplot(x = 'Target', y = 'confidence', data = predictions);
 plt.title('Confidence by Target');
-%%capture
+### %capture
 submission, gbm_fi, valid_scores = model_gbm(train_set, train_labels, 
                                              test_set, test_ids, return_preds=False)
 
 submission.to_csv('gbm_baseline.csv')
 _ = plot_feature_importances(gbm_fi, threshold=0.95)
-%%capture --no-display
+### %capture --no-display
 submission, gbm_fi_selected, valid_scores_selected = model_gbm(train_selected, train_labels, 
                                                                test_selected, test_ids)
 model_results = model_results.append(pd.DataFrame({'model': ["GBM", "GBM_SEL"], 
@@ -1011,11 +1011,11 @@ model_results['cv_mean'].plot.bar(color = 'orange', figsize = (8, 6),
 plt.title('Model F1 Score Results');
 plt.ylabel('Mean F1 Score (with error bar)');
 model_results.reset_index(inplace = True)
-%%capture
+### %capture
 submission, gbm_fi, valid_scores = model_gbm(train_set, train_labels, test_set, test_ids, 
                                              nfolds=10, return_preds=False)
 submission.to_csv('gbm_10fold.csv', index = False)
-%%capture
+### %capture
 submission, gbm_fi_selected, valid_scores_selected = model_gbm(train_selected, train_labels, test_selected, test_ids,
                                                                nfolds=10)
 submission.to_csv('gmb_10fold_selected.csv', index = False)
@@ -1174,7 +1174,7 @@ ITERATION = 0
 headers = ['loss', 'hyperparameters', 'iteration', 'runtime', 'score', 'std']
 writer.writerow(headers)
 of_connection.close()
-%%capture --no-display
+### %capture --no-display
 display("Running Optimization for {} Trials.".format(MAX_EVALS))
 
 # Run optimization
@@ -1193,7 +1193,7 @@ plt.title("Optimization Scores");
 plt.xticks(list(range(1, results['iteration'].max() + 1, 3)));
 best_hyp = ast.literal_eval(results.loc[0, 'hyperparameters'])
 best_hyp
-%%capture
+### %capture
 submission, gbm_fi, valid_scores = model_gbm(train_selected, train_labels, 
                                              test_selected, test_ids, 
                                              nfolds = 10, return_preds=False)
@@ -1202,7 +1202,7 @@ model_results = model_results.append(pd.DataFrame({'model': ["GBM_OPT_10Fold_SEL
                                                    'cv_mean': [valid_scores.mean()],
                                                    'cv_std':  [valid_scores.std()]}),
                                     sort = True).sort_values('cv_mean', ascending = False)
-%%capture
+### %capture
 submission, gbm_fi, valid_scores = model_gbm(train_set, train_labels, 
                                              test_set, test_ids, 
                                              nfolds = 10, return_preds=False)
@@ -1377,7 +1377,7 @@ for method, name in zip([umap, pca, ica, tsne],
     plt.title(f'{name.capitalize()}', size = 22)
     fig.colorbar(p, aspect = 4, ticks = [1, 2, 3, 4])
 train_df, test_df = train_df.align(test_df, axis = 1, join = 'inner')
-%%capture
+### %capture
 
 submission, gbm_fi, valid_scores = model_gbm(train_df, train_labels, 
                                              test_df, test_ids, nfolds = 10,
@@ -1405,7 +1405,7 @@ from sklearn.tree import export_graphviz
 export_graphviz(estimator_limited, out_file='tree_limited.dot', feature_names = train_selected.columns,
                 class_names = ['extreme', 'moderate' , 'vulnerable', 'non-vulnerable'],
                 rounded = True, proportion = False, precision = 2, filled = True)
-!dot -Tpng tree_limited.dot -o tree_limited.png
+### dot -Tpng tree_limited.dot -o tree_limited.png
 # Display in jupyter notebook
 from IPython.display import Image
 Image(filename = 'tree_limited.png')
@@ -1418,5 +1418,5 @@ export_graphviz(estimator_nonlimited, out_file='tree_nonlimited.dot', feature_na
                 class_names = ['extreme', 'moderate' , 'vulnerable', 'non-vulnerable'],
                 rounded = True, proportion = False, precision = 2)
 
-!dot -Tpng tree_nonlimited.dot -o tree_nonlimited.png -Gdpi=600
+### dot -Tpng tree_nonlimited.dot -o tree_nonlimited.png -Gdpi=600
 Image(filename = 'tree_nonlimited.png')

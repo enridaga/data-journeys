@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
 
-#%matplotlib inline
+### matplotlib inline
 
 from plotly import tools
 import plotly.offline as py
@@ -20,7 +20,7 @@ import lightgbm as lgb
 
 pd.options.mode.chained_assignment = None
 pd.options.display.max_columns = 999
-!ls ../input/
+### ls ../input/
 train_df = pd.read_csv("../input/train.csv", parse_dates=["first_active_month"])
 test_df = pd.read_csv("../input/test.csv", parse_dates=["first_active_month"])
 print("Number of rows and columns in train set : ",train_df.shape)

@@ -184,7 +184,7 @@ def optimizer_a3(fam, p1=1_000_000_000, p2=4000):
         if f1 % 1000 == 0:
             print('...', f1, cost_function(fam))
     return fam
-%%time
+### %time
 best_fam = fam.copy()
 for j in range(4):
     fam = optimizer_a3(fam,100,10)

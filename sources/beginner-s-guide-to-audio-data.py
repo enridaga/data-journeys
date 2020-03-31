@@ -15,7 +15,7 @@ import seaborn as sns
 from tqdm import tqdm_notebook
 from sklearn.cross_validation import StratifiedKFold
 
-#%matplotlib inline
+### matplotlib inline
 matplotlib.style.use('ggplot')
 train = pd.read_csv("../input/freesound-audio-tagging/train.csv")
 test = pd.read_csv("../input/freesound-audio-tagging/sample_submission.csv")

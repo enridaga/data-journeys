@@ -19,7 +19,7 @@ HTML('''
   });
 </script>
 <form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>''')
-#%matplotlib inline
+### matplotlib inline
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt

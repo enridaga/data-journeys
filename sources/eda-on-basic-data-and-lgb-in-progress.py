@@ -6,7 +6,7 @@ import bq_helper
 from pandas.io.json import json_normalize
 import seaborn as sns 
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 plt.style.use('ggplot')
 import lightgbm as lgb
 
@@ -27,9 +27,9 @@ def load_df(csv_path='../input/train.csv', JSON_COLUMNS = ['device', 'geoNetwork
         df = df.drop(column, axis=1).merge(column_as_df, right_index=True, left_index=True)
 
     return df
-%%time
+### %time
 train = load_df("../input/train.csv")
-%%time
+### %time
 test = load_df("../input/test.csv")
 # some data processing
 train['trafficSource.adwordsClickInfo.isVideoAd'].fillna(True, inplace=True)

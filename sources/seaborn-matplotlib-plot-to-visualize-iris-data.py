@@ -47,7 +47,7 @@ fig=sns.jointplot(x='SepalLengthCm',y='SepalWidthCm',kind='hex',data=iris)
 sns.jointplot("SepalLengthCm", "SepalWidthCm", data=iris, kind="kde",space=0,color='g')
 g = (sns.jointplot("SepalLengthCm", "SepalWidthCm",data=iris, color="k").plot_joint(sns.kdeplot, zorder=0, n_levels=6))
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 sns.FacetGrid(iris,hue='Species',size=5)\
 .map(plt.scatter,'SepalLengthCm','SepalWidthCm')\
 .add_legend()
@@ -215,4 +215,4 @@ from sklearn.preprocessing import StandardScaler
 standard = StandardScaler()
 cleanDataSet = pd.DataFrame(standard.fit_transform(dataset))
 cleanDataSet.head()
-!pip install minisom
+### pip install minisom

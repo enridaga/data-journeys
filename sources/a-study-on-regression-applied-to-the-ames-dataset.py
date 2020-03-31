@@ -27,7 +27,7 @@ import seaborn as sns
 
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
-#%matplotlib inline
+### matplotlib inline
 
 #njobs = 4
 # Get data

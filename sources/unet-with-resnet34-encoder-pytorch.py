@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 from albumentations import (HorizontalFlip, ShiftScaleRotate, Normalize, Resize, Compose, GaussNoise)
 from albumentations.torch import ToTensor
 warnings.filterwarnings("ignore")
-!pip install git+https://github.com/qubvel/segmentation_models.pytorch > /dev/null 2>&1 # Install segmentations_models.pytorch, with no bash output.
+### pip install git+https://github.com/qubvel/segmentation_models.pytorch > /dev/null 2>&1 # Install segmentations_models.pytorch, with no bash output.
 import segmentation_models_pytorch as smp
 def run_length_decode(rle, height=1024, width=1024, fill_value=1):
     component = np.zeros((height, width), np.float32)

@@ -26,7 +26,7 @@ agg1.shape
 agg1.head()
 products  =  pd.read_csv("../input/producto_tabla.csv")
 products.head()
-#%matplotlib inline
+### matplotlib inline
 def get_top(agg, cols, sort_by, n = 20):
     df = (agg.loc[:, cols]
                          .groupby(level=1)

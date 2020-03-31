@@ -161,7 +161,7 @@ for i,batch in enumerate(train_batches):
         plt.imshow(img)
     plt.subplots_adjust(wspace=0.05)
     plt.show()
-! pip install segmentation-models
+###  pip install segmentation-models
 from keras import backend as K
 # https://www.kaggle.com/xhlulu/severstal-simple-keras-u-net-boilerplate
 

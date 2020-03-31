@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 color = sns.color_palette()
 
-#%matplotlib inline
+### matplotlib inline
 
 from plotly import tools
 import plotly.offline as py
@@ -23,8 +23,8 @@ import lightgbm as lgb
 
 pd.options.mode.chained_assignment = None
 pd.options.display.max_columns = 999
-!ls ../input/
-!ls ../input/embeddings/
+### ls ../input/
+### ls ../input/embeddings/
 train_df = pd.read_csv("../input/train.csv")
 test_df = pd.read_csv("../input/test.csv")
 print("Train shape : ", train_df.shape)

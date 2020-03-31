@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import copy
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from tqdm import tqdm_notebook
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import NuSVR, SVR
@@ -35,7 +35,7 @@ import altair as alt
 from category_encoders.ordinal import OrdinalEncoder
 import networkx as nx
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from typing import List
 
 import os
@@ -828,7 +828,7 @@ class FeatureGenerator(object):
             for r1 in r:
                 feature_list.append(r1)
         return pd.DataFrame(feature_list)
-%%time
+### %time
 fg = FeatureGenerator(n_jobs=2, df=train)
 data = fg.generate()
 data = data.fillna(0)
@@ -929,7 +929,7 @@ test.loc[(test['attempt'] == 1) & (test['event_data'].str.contains('"correct":fa
 
 test['title'] = title_oe.transform(test['title'].values)
 test['world'] = world_oe.transform(test['world'].values)
-%%time
+### %time
 fg = FeatureGenerator(n_jobs=2, df=test, dataset='test')
 test_data = fg.generate()
 test_data.columns = [str(col) for col in test_data.columns]

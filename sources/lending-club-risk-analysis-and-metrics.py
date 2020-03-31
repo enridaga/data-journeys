@@ -24,7 +24,7 @@ from collections import Counter
 import time
 
 
-% matplotlib inline
+###  matplotlib inline
 
 df = pd.read_csv('../input/loan.csv', low_memory=False)
 

@@ -181,8 +181,8 @@ class Discriminator(nn.Module):
         out = torch.sigmoid(logits)
     
         return out.view(-1, 1)
-!mkdir results
-!ls
+### mkdir results
+### ls
 EPOCH = 0 # play with me
 LR = 0.001
 criterion = nn.BCELoss()
@@ -617,7 +617,7 @@ def calculate_kid_given_paths(paths, model_name, model_path, feature_path=None):
         print('done with FID, starting distance calculation')
         distance = cosine_distance(features1, features2)        
         return fid_value, distance
-!ls ../output_images
+### ls ../output_images
 user_images_unzipped_path = '../output_images'
 images_path = [user_images_unzipped_path,'../all-dogs/all-dogs/']
 

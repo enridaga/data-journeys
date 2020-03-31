@@ -1,7 +1,7 @@
 
-!pip install fastai==0.7.0 --no-deps
-!pip install torch==0.4.1 torchvision==0.2.1
-!pip install imgaug
+### pip install fastai==0.7.0 --no-deps
+### pip install torch==0.4.1 torchvision==0.2.1
+### pip install imgaug
 from fastai.conv_learner import *
 from fastai.dataset import *
 

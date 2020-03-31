@@ -11,7 +11,7 @@ from sklearn.cross_validation import StratifiedKFold
 from numpy.random import normal
 from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import warnings
 warnings.filterwarnings("ignore")
 import os

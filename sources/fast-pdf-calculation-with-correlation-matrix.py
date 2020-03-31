@@ -14,7 +14,7 @@ print(os.listdir("../input"))
 import seaborn as sns
 import time
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 # Any results you write to the current directory are saved as output.
 def logloss(y,yp):
     yp = np.clip(yp,1e-5,1-1e-5)
@@ -95,19 +95,19 @@ def print_corr(corr_mat,col,bar=0.97):
     cols_ = ['var_%s'%(i.split('_')[-1]) for i in cols]
     print(cols)
     return cols
-%%time
+### %time
 path = '../input/'
 tr = pd.read_csv('%s/train.csv'%path)
 te = pd.read_csv('%s/test.csv'%path)
-%%time
+### %time
 tr,te = reverse(tr,te)
 tr,te = scale(tr,te)
-%%time
+### %time
 prob = get_pdf(tr,'var_0')
 plt.plot(prob)
-%%time
+### %time
 pdfs = get_pdfs(tr)
-%%time
+### %time
 df_pdf = pd.DataFrame(pdfs.T,columns=['var_prob_%d'%i for i in range(200)])
 corr_mat = df_pdf.corr(method='pearson')
 corr_mat.head()

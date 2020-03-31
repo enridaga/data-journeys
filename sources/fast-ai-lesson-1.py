@@ -1,8 +1,8 @@
 
 # Put these at the top of every notebook, to get automatic reloading and inline plotting
-%reload_ext autoreload
-%autoreload 2
-#%matplotlib inline
+### reload_ext autoreload
+### autoreload 2
+### matplotlib inline
 # This file contains all the main external libs we'll use
 from fastai.imports import *
 from fastai.transforms import *

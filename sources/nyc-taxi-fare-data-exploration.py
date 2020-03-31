@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-% matplotlib inline
+###  matplotlib inline
 plt.style.use('seaborn-whitegrid')
 # read data in pandas dataframe
 df_train =  pd.read_csv('../input/train.csv', nrows = 2_000_000, parse_dates=["pickup_datetime"])

@@ -33,7 +33,7 @@ warnings.filterwarnings('ignore')
 warnings.simplefilter(action='ignore', category=FutureWarning)
 sns.set_style('white')
 pd.set_option('display.max_columns', 500)
-#%matplotlib inline
+### matplotlib inline
 import os
 print(os.listdir("../input"))
 

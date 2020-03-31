@@ -50,7 +50,7 @@ def json_read(df):
     # Printing the shape of dataframes that was imported     
     print(f"Loaded {os.path.basename(data_frame)}. Shape: {df.shape}")
     return df # returning the df after importing and transforming
-%%time 
+### %time 
 # %%time is used to calculate the timing of code chunk execution #
 
 # We will import the data using the name and extension that will be concatenated with dir_path

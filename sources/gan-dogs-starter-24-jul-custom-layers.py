@@ -134,7 +134,7 @@ class DataGenerator(Dataset):
     def __len__(self):
         return len(self.samples)
 
-%%time
+### %time
 database = '../input/all-dogs/all-dogs/'
 
 transform = transforms.Compose([transforms.RandomHorizontalFlip(p=0.3),

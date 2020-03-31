@@ -8,7 +8,7 @@ warnings.simplefilter("ignore")
 plt.style.use('ggplot')
 color_pal = [x['color'] for x in plt.rcParams['axes.prop_cycle']]
 # List all the files in the input directory
-!ls -GFlash --color ../input
+### ls -GFlash --color ../input
 # Transaction CSVs
 train_transaction = pd.read_csv('../input/train_transaction.csv')
 test_transaction = pd.read_csv('../input/test_transaction.csv')

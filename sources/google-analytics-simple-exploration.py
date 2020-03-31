@@ -12,7 +12,7 @@ import numpy as np
 init_notebook_mode(connected=True)
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import scipy.stats as st
 import missingno as msno
 df_train = pd.read_csv("../input/train.csv",sep=',')

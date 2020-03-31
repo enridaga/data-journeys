@@ -12,7 +12,7 @@ from os.path import isfile, isdir, join, exists, abspath
 from keras.preprocessing import image
 from keras.applications.resnet import ResNet152, preprocess_input
 from sklearn.model_selection import train_test_split
-! pip install git+https://github.com/crazyfrogspb/RedditScore.git > /dev/null
+###  pip install git+https://github.com/crazyfrogspb/RedditScore.git > /dev/null
 def _globalMaxPool1D(tensor):
     _,_,_,size = tensor.shape
     return [tensor[:,:,:,i].max() for i in range(size)]
@@ -113,7 +113,7 @@ def GenerateVisualFeatures(data_path, offset=0, limit=None, model=None):
                 continue
                 
         _dump(meta_path, json.dumps({"img_meta": meta_arr}))
-%%time
+### %time
 articles = ReadArticles('/kaggle/input/extended-wikipedia-multimodal-dataset/data/', offset=0, limit=None)
 dataset_name = 'data_w2vv'
 dataset_path = join('./', dataset_name)
@@ -229,7 +229,7 @@ def camel_case_split(str):
     return ' '.join([''.join(word) for word in words])
 
 process_title = lambda x: split_hashtag_words(remove_auxiliary_words(camel_case_split(x)))
-%%time
+### %time
 # onyshchak: originally ID also contained file extention e.g. *.jpg. but not in image_sets_path
 get_description = lambda z: z['description'] if z['description'] else process_title(z['title'])
 
@@ -242,13 +242,13 @@ for v in subsets.values():
     to_file(text_data, join(v["text_data_path"], v['name'] + ".caption.txt"))
 for k,v in subsets.items():
     del v['data']
-! apt install --assume-yes python-pip > /dev/null
-! python2 -m pip install --user numpy scipy matplotlib ipython jupyter pandas nose > /dev/null
+###  apt install --assume-yes python-pip > /dev/null
+###  python2 -m pip install --user numpy scipy matplotlib ipython jupyter pandas nose > /dev/null
 IS_FILE_LIST = 0
 FEATURE_DIMENTION = 2048
 feature_data_path = subsets['train']["feature_data_path"]
 bin_features_path = join(feature_data_path, "pyresnet152-pool5os/")
 
-! python2 /kaggle/input/w2vv-scripts/simpleknn/txt2bin.py $FEATURE_DIMENTION $raw_features_file_path $IS_FILE_LIST $bin_features_path --overwrite 1
-! mv $dataset_name/* ./
-! rmdir $dataset_name
+###  python2 /kaggle/input/w2vv-scripts/simpleknn/txt2bin.py $FEATURE_DIMENTION $raw_features_file_path $IS_FILE_LIST $bin_features_path --overwrite 1
+###  mv $dataset_name/* ./
+###  rmdir $dataset_name

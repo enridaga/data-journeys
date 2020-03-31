@@ -20,7 +20,7 @@ import warnings
 import nltk
 warnings.filterwarnings('ignore')
 
-#%matplotlib inline
+### matplotlib inline
 import os
 print(os.listdir("../input"))
 

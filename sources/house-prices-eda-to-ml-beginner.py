@@ -5,7 +5,7 @@ pd.set_option('max_columns', 105)
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
-#%matplotlib inline
+### matplotlib inline
 sns.set()
 
 import warnings

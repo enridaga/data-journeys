@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 sns.set_style("whitegrid")
-#%matplotlib inline
+### matplotlib inline
 
 import warnings
 warnings.filterwarnings("ignore")

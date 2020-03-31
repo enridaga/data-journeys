@@ -9,7 +9,7 @@ Seaborn and matplotlib visualization.'''
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style("whitegrid")
-#%matplotlib inline
+### matplotlib inline
 
 '''Special Visualization'''
 from wordcloud import WordCloud 

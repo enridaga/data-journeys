@@ -28,7 +28,7 @@ test.drop('id', axis=1, inplace=True)
 
 print(train.shape)
 print(test.shape)
-%%time
+### %time
 # One Hot Encoding
 traintest = pd.concat([train, test])
 dummies = pd.get_dummies(traintest, columns=traintest.columns, drop_first=True, sparse=True)
@@ -37,7 +37,7 @@ test_ohe = dummies.iloc[train.shape[0]:, :]
 
 print(train_ohe.shape)
 print(test_ohe.shape)
-%%time
+### %time
 # to sparse Matrix
 train_ohe = train_ohe.sparse.to_coo().tocsr()
 test_ohe = test_ohe.sparse.to_coo().tocsr()
@@ -61,7 +61,7 @@ from sklearn.linear_model import LogisticRegressionCV
 skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=17)
 c_values = np.logspace(-2, 3, 500)
 logit_searcher = LogisticRegressionCV(Cs=c_values, cv=skf,verbose=1,n_jobs=-1)
-%%time
+### %time
 # fit on full data
 logit_searcher.fit(train_ohe, target)
 #from sklearn.metrics import roc_auc_score

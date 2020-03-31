@@ -546,7 +546,7 @@ best_params = space_eval(hyper_space, best_vals)
 best_params
 
 all_preds ={0:[],1:[],2:[],3:[],4:[],5:[]}
-%%time
+### %time
 import lightgbm as lgb
 
 for i in range(len(all_preds)):

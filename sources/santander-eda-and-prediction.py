@@ -20,7 +20,7 @@ if(IS_LOCAL):
 else:
     PATH="../input/"
 os.listdir(PATH)
-%%time
+### %time
 train_df = pd.read_csv(PATH+"train.csv")
 test_df = pd.read_csv(PATH+"test.csv")
 train_df.shape, test_df.shape
@@ -36,13 +36,13 @@ def missing_data(data):
         types.append(dtype)
     tt['Types'] = types
     return(np.transpose(tt))
-%%time
+### %time
 missing_data(train_df)
-%%time
+### %time
 missing_data(test_df)
-%%time
+### %time
 train_df.describe()
-%time
+### time
 test_df.describe()
 def plot_feature_scatter(df1, df2, features):
     i = 0
@@ -226,13 +226,13 @@ sns.distplot(t0[features].kurtosis(axis=0),color="red", kde=True,bins=120, label
 sns.distplot(t1[features].kurtosis(axis=0),color="blue", kde=True,bins=120, label='target = 1')
 plt.legend(); plt.show()
 
-%%time
+### %time
 correlations = train_df[features].corr().abs().unstack().sort_values(kind="quicksort").reset_index()
 correlations = correlations[correlations['level_0'] != correlations['level_1']]
 correlations.head(10)
 correlations.tail(10)
 correlations.head(10)
-%%time
+### %time
 features = train_df.columns.values[2:202]
 unique_max_train = []
 unique_max_test = []
@@ -245,7 +245,7 @@ np.transpose((pd.DataFrame(unique_max_train, columns=['Feature', 'Max duplicates
             sort_values(by = 'Max duplicates', ascending=False).head(15))
 np.transpose((pd.DataFrame(unique_max_test, columns=['Feature', 'Max duplicates', 'Value'])).\
             sort_values(by = 'Max duplicates', ascending=False).head(15))
-%%time
+### %time
 idx = features = train_df.columns.values[2:202]
 for df in [test_df, train_df]:
     df['sum'] = df[idx].sum(axis=1)  

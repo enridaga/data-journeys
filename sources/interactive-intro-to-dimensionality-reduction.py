@@ -10,7 +10,7 @@ import seaborn as sns
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import matplotlib
-#%matplotlib inline
+### matplotlib inline
 
 # Import the 3 dimensionality reduction methods
 from sklearn.manifold import TSNE

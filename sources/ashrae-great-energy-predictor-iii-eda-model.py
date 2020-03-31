@@ -18,7 +18,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 from time import time
 import datetime
@@ -300,13 +300,13 @@ for df in [weather_train,weather_test]:
     df['sea_level_pressure'] = df['sea_level_pressure'].astype('float32')
     df['wind_direction'] = df['wind_direction'].astype('float32')
     df['wind_speed'] = df['wind_speed'].astype('float16')
-%%time
+### %time
 train = pd.merge(train,metadata,on='building_id',how='left')
 test  = pd.merge(test,metadata,on='building_id',how='left')
 print ("Training Data Shape {}".format(train.shape))
 print ("Testing Data Shape {}".format(test.shape))
 gc.collect()
-%%time
+### %time
 train = pd.merge(train,weather_train,on=['site_id','timestamp'],how='left')
 test  = pd.merge(test,weather_test,on=['site_id','timestamp'],how='left')
 print ("Training Data Shape {}".format(train.shape))
@@ -328,7 +328,7 @@ print (len(idx_to_drop))
 train.drop(idx_to_drop,axis='rows',inplace=True)
 # Converting the dependent variable to logarithmic scale
 train['meter_reading'] = np.log1p(train['meter_reading'])
-%%time
+### %time
 mean_meter_reading_per_building = train.groupby('building_id')['meter_reading'].mean()
 train['mean_meter_reading_per_building'] = train['building_id'].map(mean_meter_reading_per_building)
 median_meter_reading_per_building = train.groupby('building_id')['meter_reading'].median()
@@ -375,7 +375,7 @@ test['std_meter_reading_per_meter'] = test['meter'].map(std_meter_reading_per_me
 test['mean_meter_reading_per_month'] = test['Month'].map(mean_meter_reading_per_month)
 test['median_meter_reading_per_month'] = test['Month'].map(median_meter_reading_per_month)
 test['std_meter_reading_per_month'] = test['Month'].map(std_meter_reading_per_month)
-%%time
+### %time
 for df in [train, test]:
     df['mean_meter_reading_per_building'] = df['mean_meter_reading_per_building'].astype("float16")
     df['median_meter_reading_per_building'] = df['mean_meter_reading_per_building'].astype("float16")
@@ -397,14 +397,14 @@ gc.collect()
 train.drop(['timestamp','year_built'],axis=1,inplace=True)
 test.drop(['timestamp','year_built'],axis=1,inplace=True)
 print (train.shape, test.shape)
-%%time
+### %time
 le = LabelEncoder()
 
 train['meter']= le.fit_transform(train['meter']).astype("uint8")
 test['meter']= le.fit_transform(test['meter']).astype("uint8")
 train['primary_use']= le.fit_transform(train['primary_use']).astype("uint8")
 test['primary_use']= le.fit_transform(test['primary_use']).astype("uint8")
-%%time
+### %time
 # Let's check the correlation between the variables and eliminate the one's that have high correlation
 # Threshold for removing correlated variables
 threshold = 0.9
@@ -470,7 +470,7 @@ for model in models:
     predictions.append(np.expm1(model.predict(test.loc[i:i+stepsize-1,:], num_iteration=model.best_iteration)))
   results += (1 / len(models)) * np.concatenate(predictions, axis=0)
   del(model)
-%%time
+### %time
 Submission['meter_reading'] = results
 Submission['meter_reading'].clip(lower=0,upper=None,inplace=True)
 Submission.to_csv("Normal.csv",index=None)

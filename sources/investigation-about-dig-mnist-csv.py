@@ -1,5 +1,5 @@
 
-#%matplotlib inline
+### matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -119,7 +119,7 @@ def create_training_datasets(cfg: dict,
     train_dataset, valid_dataset = torch.utils.data.random_split(overall_dataset,
                                                                  [train_size, valid_size])
     return train_dataset, valid_dataset
-%%time
+### %time
 # Training Datasets
 train_dataset, valid_dataset = create_training_datasets(cfg,
                                                         KannadaMNISTTransform(cfg))
@@ -244,7 +244,7 @@ def learn(network: torch.nn.Module,
         print(print_str % args)
 
     return result
-%%time
+### %time
 result = learn(network,
                train_dataset,
                valid_dataset,
@@ -276,7 +276,7 @@ def invest(inv_dataset: KannadaMNISTDataset,
         inv_pred_labels = np.concatenate([inv_pred_labels,
                                           pred_labels.cpu().numpy()])
     return inv_true_labels, inv_pred_labels
-%%time
+### %time
 inv_true_labels, inv_pred_labels = invest(inv_dataset, network, cfg)
 target_str = ["Image No.%d" % num for num in range(10)]
 report_str = classification_report(inv_true_labels,
@@ -370,5 +370,5 @@ def test(network: torch.nn.Module,
     result = pd.DataFrame({"id" : ids,
                            "label" : labels})
     result.to_csv("submission.csv", index=False)
-%%time
+### %time
 test(network, cfg)

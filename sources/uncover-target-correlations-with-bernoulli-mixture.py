@@ -5,7 +5,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import seaborn as sns
 sns.set()
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 from PIL import Image
 from scipy.misc import imread
 

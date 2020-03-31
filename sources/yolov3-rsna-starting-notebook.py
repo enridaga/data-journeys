@@ -15,14 +15,14 @@ from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 random_stat = 123
 np.random.seed(random_stat)
-!git clone https://github.com/pjreddie/darknet.git
+### git clone https://github.com/pjreddie/darknet.git
 
 # Build gpu version darknet
-!cd darknet && sed '1 s/^.*$/GPU=1/; 2 s/^.*$/CUDNN=1/' -i Makefile
+### cd darknet && sed '1 s/^.*$/GPU=1/; 2 s/^.*$/CUDNN=1/' -i Makefile
 
 # -j <The # of cpu cores to use>. Chang 999 to fit your environment. Actually i used '-j 50'.
-!cd darknet && make -j 999 -s
-!cp darknet/darknet darknet_gpu
+### cd darknet && make -j 999 -s
+### cp darknet/darknet darknet_gpu
 DATA_DIR = "../input"
 
 train_dcm_dir = os.path.join(DATA_DIR, "stage_1_train_images")
@@ -41,7 +41,7 @@ for directory in [img_dir, label_dir, metadata_dir, cfg_dir, backup_dir]:
     if os.path.isdir(directory):
         continue
     os.mkdir(directory)
-!ls -shtl
+### ls -shtl
 annots = pd.read_csv(os.path.join(DATA_DIR, "stage_1_train_labels.csv"))
 annots.head()
 def save_img_from_dcm(dcm_dir, img_dir, patient_id):
@@ -99,7 +99,7 @@ def save_yolov3_data_from_rsna(dcm_dir, img_dir, label_dir, annots):
         save_label_from_dcm(label_dir, patient_id, row)
         save_img_from_dcm(dcm_dir, img_dir, patient_id)
 save_yolov3_data_from_rsna(train_dcm_dir, img_dir, label_dir, annots)
-!du -sh images labels
+### du -sh images labels
 ex_patient_id = annots[annots.Target == 1].patientId.values[0]
 ex_img_path = os.path.join(img_dir, "{}.jpg".format(ex_patient_id))
 ex_label_path = os.path.join(label_dir, "{}.txt".format(ex_patient_id))
@@ -159,14 +159,14 @@ backup = {}
                os.path.join(cfg_dir, 'rsna.names'),
                backup_dir)
     f.write(contents)
-!cat cfg/rsna.data
+### cat cfg/rsna.data
 # Label list of bounding box.
-!echo "pneumonia" > cfg/rsna.names
-!wget -q https://pjreddie.com/media/files/darknet53.conv.74
-!wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=18ptTK4Vbeokqpux8Onr0OmwUP9ipmcYO" -O cfg/rsna_yolov3.cfg_train
+### echo "pneumonia" > cfg/rsna.names
+### wget -q https://pjreddie.com/media/files/darknet53.conv.74
+### wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=18ptTK4Vbeokqpux8Onr0OmwUP9ipmcYO" -O cfg/rsna_yolov3.cfg_train
 # !./darknet_gpu detector train cfg/rsna.data cfg/rsna_yolov3.cfg_train darknet53.conv.74 -i 0 | tee train_log.txt
 # !./darknet_gpu detector train cfg/rsna.data cfg/rsna_yolov3.cfg_train backup/rsna_yolov3_1000.weights -gpus 0,1,2,3 | tee train_log.txt
-!wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=1OhnlV3s7r6xsEme6DKkNYjcYjsl-C_Av" -O train_log.txt
+### wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=1OhnlV3s7r6xsEme6DKkNYjcYjsl-C_Av" -O train_log.txt
 iters = []
 losses = []
 total_losses = []
@@ -193,13 +193,13 @@ plt.ylim([0, 4.05])
 ex_patient_id = annots[annots.Target == 1].patientId.values[2]
 shutil.copy(ex_img_path, "test.jpg")
 print(ex_patient_id)
-!wget --load-cookies /tmp/cookies.txt -q "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FDzMN-kGVYCvBeDKwemAazldSVkAEFyd' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FDzMN-kGVYCvBeDKwemAazldSVkAEFyd" -O backup/rsna_yolov3_15300.weights && rm -rf /tmp/cookies.txt
-!ls -alsth backup
-!wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=10Yk6ZMAKGz5LeBbikciALy82aK3lX-57" -O cfg/rsna_yolov3.cfg_test
-!cd darknet && ./darknet detector test ../cfg/rsna.data ../cfg/rsna_yolov3.cfg_test ../backup/rsna_yolov3_15300.weights ../test.jpg -thresh 0.005
+### wget --load-cookies /tmp/cookies.txt -q "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FDzMN-kGVYCvBeDKwemAazldSVkAEFyd' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1FDzMN-kGVYCvBeDKwemAazldSVkAEFyd" -O backup/rsna_yolov3_15300.weights && rm -rf /tmp/cookies.txt
+### ls -alsth backup
+### wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=10Yk6ZMAKGz5LeBbikciALy82aK3lX-57" -O cfg/rsna_yolov3.cfg_test
+### cd darknet && ./darknet detector test ../cfg/rsna.data ../cfg/rsna_yolov3.cfg_test ../backup/rsna_yolov3_15300.weights ../test.jpg -thresh 0.005
 # ![](predictions.jpg)
 plt.imshow(cv2.imread("./darknet/predictions.jpg"))
-!wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=1-KTV7K9G1bl3SmnLnzmpkDyNt6tDmH7j" -O darknet.py
+### wget --no-check-certificate -q "https://docs.google.com/uc?export=download&id=1-KTV7K9G1bl3SmnLnzmpkDyNt6tDmH7j" -O darknet.py
 from darknet import *
 threshold = 0.2
 submit_file_path = "submission.csv"
@@ -235,8 +235,8 @@ with open(test_img_list_path, "r") as test_img_list_f:
 
 pd.DataFrame(submit_dict).to_csv(submit_file_path, index=False)
 # !ls -lsht
-!rm -rf darknet images labels metadata backup cfg
-!rm -rf train_log.txt darknet53.conv.74 darknet.py darknet_gpu
-!rm -rf test.jpg
-!rm -rf __pycache__ .ipynb_checkpoints
-!ls -alsht
+### rm -rf darknet images labels metadata backup cfg
+### rm -rf train_log.txt darknet53.conv.74 darknet.py darknet_gpu
+### rm -rf test.jpg
+### rm -rf __pycache__ .ipynb_checkpoints
+### ls -alsht

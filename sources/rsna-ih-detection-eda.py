@@ -9,7 +9,7 @@ HTML('<iframe width="800" height="500" src="https://www.youtube.com/embed/Kb_wzb
 import numpy as np 
 import pandas as pd
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 import seaborn as sns
 sns.set()
 

@@ -13,7 +13,7 @@ from mpl_toolkits.mplot3d import Axes3D
 sns.set_style("whitegrid")
 my_pal = sns.color_palette(n_colors=10)
 # Look at the data folder
-!ls -GFlash --color ../input/pku-autonomous-driving/
+### ls -GFlash --color ../input/pku-autonomous-driving/
 train = pd.read_csv('../input/pku-autonomous-driving/train.csv')
 train.head()
 print('Example Prediction String....')
@@ -87,7 +87,7 @@ plt.show()
 ss = pd.read_csv('../input/pku-autonomous-driving/sample_submission.csv')
 ss.head()
 # Lets look at the first few images on disk
-!ls -GFlash ../input/pku-autonomous-driving/train_images | head
+### ls -GFlash ../input/pku-autonomous-driving/train_images | head
 plt.rcParams["axes.grid"] = False
 
 train_ids = train['ImageId'].values
@@ -116,12 +116,12 @@ for i in range(4):
     ax=axes[i][2].imshow(img)
     ax=axes[i][2].imshow(img_mask, cmap=plt.cm.viridis, interpolation='none', alpha=0.4)
 plt.show()
-!cat ../input/pku-autonomous-driving/camera/camera_intrinsic.txt
-!ls -GFlash ../input/pku-autonomous-driving/car_models/ | head
+### cat ../input/pku-autonomous-driving/camera/camera_intrinsic.txt
+### ls -GFlash ../input/pku-autonomous-driving/car_models/ | head
 # model = '../input/pku-autonomous-driving/car_models/aodi-Q7-SUV.pkl'
 # with open(model, "rb") as file:
 #     pickle.load(file, encoding="latin1")
-!ls -GFlash ../input/pku-autonomous-driving/car_models_json/ | head
+### ls -GFlash ../input/pku-autonomous-driving/car_models_json/ | head
 with open('../input/pku-autonomous-driving/car_models_json/mazida-6-2015.json') as json_file:
     car_model_data = json.load(json_file)
 for keys in enumerate(car_model_data):

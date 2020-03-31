@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 warnings.filterwarnings(action="ignore",category=DeprecationWarning)
 warnings.filterwarnings(action="ignore",category=FutureWarning)
 import os
-%cd /kaggle/input/champs-scalar-coupling
+### cd /kaggle/input/champs-scalar-coupling
 print(os.listdir("."))
 
 # Any results you write to the current directory are saved as output.

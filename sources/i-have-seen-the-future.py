@@ -16,7 +16,7 @@ from sklearn.model_selection import GroupKFold
 # I don't like SettingWithCopyWarnings ...
 warnings.simplefilter('error', SettingWithCopyWarning)
 gc.enable()
-#%matplotlib inline
+### matplotlib inline
 train = pd.read_csv('../input/create-extracted-json-fields-dataset/extracted_fields_train.gz', 
                     dtype={'date': str, 'fullVisitorId': str, 'sessionId':str}, nrows=None)
 test = pd.read_csv('../input/create-extracted-json-fields-dataset/extracted_fields_test.gz', 
@@ -156,7 +156,7 @@ train['predictions'] = np.expm1(oof_reg_preds)
 test['predictions'] = sub_reg_preds
 # Aggregate data at User level
 trn_data = train[train_features + ['fullVisitorId']].groupby('fullVisitorId').mean()
-%%time
+### %time
 # Create a list of predictions for each Visitor
 trn_pred_list = train[['fullVisitorId', 'predictions']].groupby('fullVisitorId')\
     .apply(lambda df: list(df.predictions))\
@@ -175,7 +175,7 @@ full_data = pd.concat([trn_data, trn_all_predictions], axis=1)
 del trn_data, trn_all_predictions
 gc.collect()
 full_data.shape
-%%time
+### %time
 sub_pred_list = test[['fullVisitorId', 'predictions']].groupby('fullVisitorId')\
     .apply(lambda df: list(df.predictions))\
     .apply(lambda x: {'pred_'+str(i): pred for i, pred in enumerate(x)})

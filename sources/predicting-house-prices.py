@@ -12,7 +12,7 @@ import seaborn as sns
 from mpl_toolkits.mplot3d import Axes3D
 import folium
 from folium.plugins import HeatMap
-#%matplotlib inline
+### matplotlib inline
 import warnings
 warnings.filterwarnings('ignore')
 

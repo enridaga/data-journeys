@@ -19,7 +19,7 @@ specs.head()
 train_labels = pd.read_csv(home/"train_labels.csv"); len(train_labels)
 train_labels.head(5)
 pd.read_csv(home/"sample_submission.csv").head()
-%%time
+### %time
 types = {"event_code": np.int16, "event_count": np.int16, "game_time": np.int32}
 raw_train = pd.read_csv(home/"train.csv", dtype=types)
 raw_train["timestamp"] = pd.to_datetime(raw_train["timestamp"]); len(raw_train)

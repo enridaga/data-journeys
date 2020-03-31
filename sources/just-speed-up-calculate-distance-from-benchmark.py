@@ -35,7 +35,7 @@ train = map_atom_info(train, 1)
 
 test = map_atom_info(test, 0)
 test = map_atom_info(test, 1)
-%%time
+### %time
 # Engineer a single feature: distance vector between atoms
 #  (there's ways to speed this up!)
 
@@ -46,7 +46,7 @@ def dist(row):
 
 train['dist'] = train.apply(lambda x: dist(x), axis=1)
 test['dist'] = test.apply(lambda x: dist(x), axis=1)
-%%time
+### %time
 # This block is SPPED UP
 
 train_p_0 = train[['x_0', 'y_0', 'z_0']].values

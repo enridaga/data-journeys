@@ -1,6 +1,6 @@
 
-!pip install torch torchvision feather-format kornia pyarrow --upgrade   > /dev/null
-!pip install git+https://github.com/fastai/fastai_dev             > /dev/null
+### pip install torch torchvision feather-format kornia pyarrow --upgrade   > /dev/null
+### pip install git+https://github.com/fastai/fastai_dev             > /dev/null
 
 from fastai2.basics           import *
 from fastai2.medical.imaging  import *

@@ -273,13 +273,13 @@ def threshold_search(y_true, y_proba):
     search_result = {'threshold': best_threshold, 'matthews_correlation': best_score}
     return search_result
 best_threshold = threshold_search(y_val, preds_val)['threshold']
-%%time
+### %time
 # Now load the test data
 # This first part is the meta data, not the main data, the measurements
 meta_test = pd.read_csv('../input/metadata_test.csv')
 meta_test = meta_test.set_index(['signal_id'])
 meta_test.head()
-%%time
+### %time
 # First we daclarete a series of parameters to initiate the loading of the main data
 # it is too large, it is impossible to load in one time, so we are doing it in dividing in 10 parts
 first_sig = meta_test.index[0]

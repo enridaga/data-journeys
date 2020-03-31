@@ -41,8 +41,8 @@ folds = StratifiedKFold(n_splits=fold_n, shuffle=True, random_state=10)
 warnings.filterwarnings('ignore')
 sns.set(color_codes=True)
 plt.style.available
-#%matplotlib inline
-%precision 2
+### matplotlib inline
+### precision 2
 import os
 print([filename for filename in os.listdir('../input') if '.csv' in filename])
 # import Dataset to play with it

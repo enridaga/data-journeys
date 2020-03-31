@@ -1,5 +1,5 @@
 
-%%time
+### %time
 
 import pandas as pd
 import numpy as np
@@ -10,7 +10,7 @@ test = pd.read_csv('../input/cat-in-the-dat/test.csv')
 
 print(train.shape)
 print(test.shape)
-%%time
+### %time
 
 # Subset
 target = train['target']
@@ -21,7 +21,7 @@ test.drop('id', axis=1, inplace=True)
 
 print(train.shape)
 print(test.shape)
-%%time
+### %time
 
 # One Hot Encode
 traintest = pd.concat([train, test])
@@ -31,7 +31,7 @@ test_ohe = dummies.iloc[train.shape[0]:, :]
 
 print(train_ohe.shape)
 print(test_ohe.shape)
-%%time
+### %time
 
 # To be honest, I am a bit confused what is going on with the new sparse dataframe interface in Pandas v0.25
 
@@ -42,7 +42,7 @@ print(test_ohe.shape)
 
 train_ohe = train_ohe.sparse.to_coo().tocsr()
 test_ohe = test_ohe.sparse.to_coo().tocsr()
-%%time
+### %time
 
 from sklearn.model_selection import KFold
 from sklearn.metrics import roc_auc_score as auc
@@ -92,7 +92,7 @@ def runLR(train_X, train_y, test_X, test_y, test_X2, params):
 
 lr_params = {'solver': 'lbfgs', 'C': 0.1}
 results = run_cv_model(train_ohe, test_ohe, target, runLR, lr_params, auc, 'lr')
-%%time
+### %time
 
 # We now have a model with a CV score of 0.8032. Nice! Let's submit that
 

@@ -1,5 +1,5 @@
 
-!pip install the1owl
+### pip install the1owl
 import pandas as pd
 import numpy as np
 from ml import simple #the1owl

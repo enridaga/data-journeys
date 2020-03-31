@@ -13,7 +13,7 @@ from matplotlib import style
 import seaborn as sns
 #configure
 # sets matplotlib to inline and displays graphs below the corressponding cell.
-#%matplotlib inline  
+### matplotlib inline  
 style.use('fivethirtyeight')
 sns.set(style='whitegrid',color_codes=True)
 

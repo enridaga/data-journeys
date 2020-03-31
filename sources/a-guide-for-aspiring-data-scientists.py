@@ -5,7 +5,7 @@ import os
 from plotly import tools
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+### matplotlib inline
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly as py
 import plotly.graph_objs as go

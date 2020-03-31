@@ -34,10 +34,10 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 
 
-#%matplotlib inline
+### matplotlib inline
 print(pd.__version__)
 print(np.__version__)
-%time
+### time
 df = pd.read_csv("../input/AB_NYC_2019.csv")
 df
 import pandas as pd
@@ -49,7 +49,7 @@ df.describe()
 df.head()
 df.tail()
 import matplotlib.pyplot as plt
-#%matplotlib inline
+### matplotlib inline
 
 df.hist(bins=50, figsize=(20,10))
 df["room_type"].value_counts()

@@ -1,6 +1,6 @@
 
 # What this is doing? please refer to my above linked kernel
-!pip install ../input/pretrainedmodels/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ > /dev/null
+### pip install ../input/pretrainedmodels/pretrainedmodels-0.7.4/pretrainedmodels-0.7.4/ > /dev/null
 package_path = '../input/unetmodelscript'
 import sys
 sys.path.append(package_path)
@@ -64,7 +64,7 @@ def post_process(probability, threshold, min_size):
             predictions[p] = 1
             num += 1
     return predictions, num
-!ls ../input/unetstartermodelfile/
+### ls ../input/unetstartermodelfile/
 sample_submission_path = '../input/severstal-steel-defect-detection/sample_submission.csv'
 test_data_folder = "../input/severstal-steel-defect-detection/test_images"
 # initialize test dataloader

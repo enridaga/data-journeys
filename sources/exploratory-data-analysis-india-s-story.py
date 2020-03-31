@@ -5,7 +5,7 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import pylab
 import seaborn as sns
 plt.style.use('fivethirtyeight')
-#%matplotlib inline
+### matplotlib inline
 pylab.rcParams['figure.figsize'] = (10.0, 8.0)
 loans_df = pd.read_csv("../input/kiva_loans.csv", parse_dates=['disbursed_time', 'funded_time', 'posted_time'])
 loans_df.shape
