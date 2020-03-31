@@ -49,6 +49,8 @@ def extractSourceCode(notebook):
                     src = src + "\n" + line
     return src
 
+import re
+
 indir = "kernels/"
 srcdir = "sources/"
 outdir = "graphs/"
@@ -58,11 +60,12 @@ for f in files:
         print("Processing: {0}".format(f))
         jj = J.load(notebook)
         src = extractSourceCode(jj)
-        s = open(srcdir + f[:-5] + "py", "w")
         #
-        comm = ['%matplotlib ']
+        comm = ["^%","\n%","^!","\n!"]
         for c in comm:
-            src = src.replace(c, "#" + c)
+            src = re.sub(c, "\n### ", src)
+
+        s = open(srcdir + f[:-5] + "py", "w")
         s.write(src)
         collector = DJ.FindDependencies()
         try:
@@ -77,10 +80,5 @@ for f in files:
             print("SyntaxError: {0} [{1}]".format(err, f))
         except TypeError as err:
             print("SyntaxError: {0} [{1}]".format(err, f))
-
-
-
-
-
 
 
