@@ -45,7 +45,7 @@ class FindDependencies(ast.NodeVisitor):
 
   def __variable(self, symbol, scope):
     scope_index = self._scopes.index(scope)
-    symbol = symbol + "(" + str(scope_index) + ")"
+    symbol = str(symbol) + "(" + str(scope_index) + ")"
     if not hasattr(self, '_vars'):
       self._vars = {}
     if symbol in self._vars.keys():
