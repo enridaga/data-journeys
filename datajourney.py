@@ -114,7 +114,7 @@ class FindDependencies(ast.NodeVisitor):
       c = 0
       for l in leaves:
         s = self.__variable(str(l), scope)
-        self.__collect(s, func, func+'['+str(c)+']')
+        self.__collect(s, func, str(func) +'['+str(c)+']')
         c += 1
     self.generic_visit(node)
   
@@ -155,14 +155,21 @@ class FindDependencies(ast.NodeVisitor):
       #print("leave(s) ->", s)
       
       for n in node.targets:
-        if 'id' not in vars(n):
-            break # TODO: Support targets not having id, e.g. 'bob in x['bob] Subscript objects print(node.targets)
-        #print("target ->", n.id)
-        if str(n.id) not in t_found:
-          t = self.__variableAssign(str(n.id), scope)
-          t_found.append(str(n.id))
+        # TODO: Support targets not having 'id'
+        # Subscript, e.g. x[0][1] = "Bob"
+        if type(n) is ast.Subscript:
+          t_id = n.value.id
         else:
-          t = self.__variable(str(n.id), scope)
+          t_id = n.id
+        if str(t_id) not in t_found:
+          if type(n) is ast.Subscript: # When Subscript, var depends on old one as well  
+            o = self.__variable(str(t_id), scope)
+          t = self.__variableAssign(str(t_id), scope)
+          t_found.append(str(t_id))
+          if type(n) is ast.Subscript:
+            self.__collect(o, func, t)
+        else:
+          t = self.__variable(str(t_id), scope)
         #print("target(s) ->", t)
         self.__collect(s, func, t)
     self.generic_visit(node)

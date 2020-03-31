@@ -24,6 +24,10 @@ digraph {
 "dictionary(1)$0" -> "translated_text(1)$0" [label = "dict"]
 "categories(0)$0" -> "pd(0)" [label = "read_csv"]
 "categories(0)$0" -> "/kaggle/input/competitive-data-science-predict-future-sales/item_categories.csv(0)" [label = "read_csv"]
-"categories(0)$1" -> "categories(0)$0" [label = "sample"]
-"categories(0)$1" -> "10(0)" [label = "sample"]
+"categories(0)$1" -> "categories(0)$0" [label = "translate"]
+"categories(0)$1" -> "categories(0)$0" [label = "translate"]
+"categories(0)$1" -> "item_category_name(0)" [label = "translate"]
+"categories(0)$1" -> "YANDEX_API_KEY(0)$0" [label = "translate"]
+"categories(0)$2" -> "categories(0)$1" [label = "sample"]
+"categories(0)$2" -> "10(0)" [label = "sample"]
 }
