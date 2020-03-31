@@ -68,7 +68,17 @@ class FindDependencies(ast.NodeVisitor):
         #print("Scope of" + str(node) + " is " + str(s))
         return s
     raise Exception("Scope not found!")
-  
+
+
+  def _nameFromSubscript(self, sub):
+    if type(sub) is ast.Subscript:
+        return self._nameFromSubscript(sub.value)
+    elif 'id' in vars(sub):
+        return sub
+    raise Exception('Unsupported Subscript: ' + str(vars(sub)))
+
+### Visitor
+
   def visit_Module(self, node):
     self.__scopeOpen(node)
     self.generic_visit(node)
@@ -98,7 +108,7 @@ class FindDependencies(ast.NodeVisitor):
       leaves = self._collectLeaves (node.value.args)
       # TODO Subscript
       if type(node.value.func.value) is ast.Subscript:
-        obj = node.value.func.value.value.id
+        obj = self._nameFromSubscript(node.value.func.value).id
       else:
         obj = node.value.func.value.id
       # if leaves is empty then method has no argument
@@ -130,7 +140,7 @@ class FindDependencies(ast.NodeVisitor):
 
     target = node.target
     if type(target) is ast.Subscript:
-      target = node.target.value
+      target = self._nameFromSubscript(node.target)
 
     # prev var name
     o = self.__variable(str(target.id), scope)
@@ -167,7 +177,7 @@ class FindDependencies(ast.NodeVisitor):
         # TODO: Support targets not having 'id'
         # Subscript, e.g. x[0][1] = "Bob"
         if type(n) is ast.Subscript:
-          t_id = n.value.id
+          t_id = self._nameFromSubscript(n.value).id
         else:
           t_id = n.id
         if str(t_id) not in t_found:
