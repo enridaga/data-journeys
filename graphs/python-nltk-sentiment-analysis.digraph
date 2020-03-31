@@ -2,7 +2,7 @@ digraph {
 "data(0)$0" -> "pd(0)" [label = "read_csv"]
 "data(0)$0" -> "../input/Sentiment.csv(0)" [label = "read_csv"]
 "data(0)$1" -> "data(0)$0" [label = "eq"]
-"data(0)$1" -> "[<_ast.Str object at 0x1046497d0>, <_ast.Str object at 0x104649390>](0)" [label = "eq"]
+"data(0)$1" -> "[<_ast.Str object at 0x1031fa110>, <_ast.Str object at 0x1031fad10>](0)" [label = "eq"]
 "train(0)$0" -> "data(0)$1" [label = "train_test_split"]
 "test(0)$0" -> "data(0)$1" [label = "train_test_split"]
 "train(0)$0" -> "0.1(0)" [label = "train_test_split"]
