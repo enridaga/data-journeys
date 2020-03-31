@@ -1,6 +1,6 @@
 digraph { 
 "print[0]" -> "check_output(0)" [label = "print"]
-"print[1]" -> "[<_ast.Str object at 0x1040553d0>, <_ast.Str object at 0x104055e50>](0)" [label = "print"]
+"print[1]" -> "[<_ast.Str object at 0x10d8fbc50>, <_ast.Str object at 0x10d8fb850>](0)" [label = "print"]
 "print[2]" -> "utf8(0)" [label = "print"]
 "sub_path(0)$0" -> "../input/statoil-iceberg-submissions(0)" [label = "eq"]
 "all_files(0)$0" -> "os(0)" [label = "listdir"]
@@ -22,6 +22,7 @@ digraph {
 "cols(0)$0" -> "range(0)" [label = "list"]
 "cols(0)$0" -> "len(0)" [label = "list"]
 "cols(0)$0" -> "concat_sub(0)$0" [label = "list"]
+"concat_sub(0)$1" -> "concat_sub(0)$0" [label = "eq"]
 "concat_sub(0)$1" -> "cols(0)$0" [label = "eq"]
 "concat_sub(0)$2" -> "concat_sub(0)$1" [label = "reset_index"]
 "concat_sub(0)$3" -> "concat_sub(0)$2" [label = "head"]

@@ -1,5 +1,5 @@
 digraph { 
-"dataset(0)$0" -> "[<_ast.Num object at 0x103259c10>, <_ast.Num object at 0x103259990>, <_ast.Num object at 0x1032599d0>, <_ast.Num object at 0x103259d50>, <_ast.Num object at 0x103259e50>, <_ast.Num object at 0x103259d10>, <_ast.Num object at 0x103259ad0>, <_ast.Num object at 0x103259e10>, <_ast.Num object at 0x103259ed0>, <_ast.Num object at 0x103259f90>, <_ast.Num object at 0x103259fd0>, <_ast.Num object at 0x103259c50>, <_ast.Num object at 0x103259610>, <_ast.Num object at 0x103259d90>, <_ast.Num object at 0x103259f50>, <_ast.Num object at 0x1032592d0>, <_ast.Num object at 0x103259410>, <_ast.Num object at 0x103259450>, <_ast.Num object at 0x103259390>, <_ast.Num object at 0x103259dd0>, <_ast.Num object at 0x103259f10>, <_ast.Num object at 0x103259cd0>, <_ast.Num object at 0x103259750>, <_ast.Num object at 0x103259950>, <_ast.Num object at 0x1032596d0>, <_ast.Num object at 0x1032598d0>, <_ast.Num object at 0x103259910>, <_ast.Num object at 0x103259a50>, <_ast.Num object at 0x103259650>, <_ast.Num object at 0x103259790>, <_ast.Num object at 0x103259550>, <_ast.Num object at 0x103259590>, <_ast.Num object at 0x1032590d0>, <_ast.Num object at 0x10325c090>](0)" [label = "eq"]
+"dataset(0)$0" -> "[<_ast.Num object at 0x10d345050>, <_ast.Num object at 0x10d345290>, <_ast.Num object at 0x10d345350>, <_ast.Num object at 0x10d345310>, <_ast.Num object at 0x10d345390>, <_ast.Num object at 0x10d345410>, <_ast.Num object at 0x10d345550>, <_ast.Num object at 0x10d345250>, <_ast.Num object at 0x10d345590>, <_ast.Num object at 0x10d345210>, <_ast.Num object at 0x10d345490>, <_ast.Num object at 0x10d345690>, <_ast.Num object at 0x10d345110>, <_ast.Num object at 0x10d345790>, <_ast.Num object at 0x10d345450>, <_ast.Num object at 0x10d345710>, <_ast.Num object at 0x10d345910>, <_ast.Num object at 0x10d3459d0>, <_ast.Num object at 0x10d345a10>, <_ast.Num object at 0x10d345750>, <_ast.Num object at 0x10d3456d0>, <_ast.Num object at 0x10d3455d0>, <_ast.Num object at 0x10d345b10>, <_ast.Num object at 0x10d345d50>, <_ast.Num object at 0x10d345d90>, <_ast.Num object at 0x10d345ad0>, <_ast.Num object at 0x10d345dd0>, <_ast.Num object at 0x10d345b50>, <_ast.Num object at 0x10d345bd0>, <_ast.Num object at 0x10d345c10>, <_ast.Num object at 0x10d345f90>, <_ast.Num object at 0x10d345e50>, <_ast.Num object at 0x10d345fd0>, <_ast.Num object at 0x10d345f50>](0)" [label = "eq"]
 "outlier(0)$0" -> "[](0)" [label = "eq"]
 "data(1)" -> "detect_outlier[0]" [label = "_argToVar"]
 "threshold(1)$0" -> "3(1)" [label = "eq"]
@@ -39,6 +39,7 @@ digraph {
 "columns(0)$0" -> "boston(0)" [label = "eq"]
 "boston_df(0)$0" -> "pd(0)" [label = "DataFrame"]
 "boston_df(0)$0" -> "boston(0)" [label = "DataFrame"]
+"boston_df(0)$1" -> "boston_df(0)$0" [label = "eq"]
 "boston_df(0)$1" -> "columns(0)$0" [label = "eq"]
 "boston_df(0)$2" -> "boston_df(0)$1" [label = "head"]
 "boston_df(0)$2" -> "2(0)" [label = "head"]

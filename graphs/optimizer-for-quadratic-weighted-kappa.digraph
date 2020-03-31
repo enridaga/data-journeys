@@ -1,5 +1,6 @@
 digraph { 
 "self(1)" -> "__init__[0]" [label = "_argToVar"]
+"self(1)$0" -> "self(1)" [label = "eq"]
 "self(1)$0" -> "0(1)" [label = "eq"]
 "self(2)" -> "_kappa_loss[0]" [label = "_argToVar"]
 "coef(2)" -> "_kappa_loss[1]" [label = "_argToVar"]
@@ -31,7 +32,8 @@ digraph {
 "loss_partial(3)$0" -> "self(3)" [label = "partial"]
 "loss_partial(3)$0" -> "X(3)" [label = "partial"]
 "loss_partial(3)$0" -> "y(3)" [label = "partial"]
-"initial_coef(3)$0" -> "[<_ast.Num object at 0x10326bed0>, <_ast.Num object at 0x10326b2d0>, <_ast.Num object at 0x10326b310>, <_ast.Num object at 0x10326b410>](3)" [label = "eq"]
+"initial_coef(3)$0" -> "[<_ast.Num object at 0x10d35c7d0>, <_ast.Num object at 0x10d35ca10>, <_ast.Num object at 0x10d35c350>, <_ast.Num object at 0x10d35ce10>](3)" [label = "eq"]
+"self(3)$0" -> "self(3)" [label = "minimize"]
 "self(3)$0" -> "sp(3)" [label = "minimize"]
 "self(3)$0" -> "loss_partial(3)$0" [label = "minimize"]
 "self(3)$0" -> "initial_coef(3)$0" [label = "minimize"]

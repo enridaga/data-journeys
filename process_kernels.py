@@ -3,39 +3,7 @@ import datajourney as DJ
 import json as J
 from os import listdir
 from os.path import isfile, join
-
-simple_src = """
-x = 1
-y = "2"
-r = x + y
-g = prepare(r)
-visualize(g, x, y)
-
-#a = 10
-
-def visualize(a, b ,c):
-  print(a, b, c)
-
-bag = []
-for q in g:
- bag.append(q)
-
-bag = bag.clone()
-
-#df_over_100mb = df[df['max_filesize'] >= 100000000]
-#df.rename(columns = {'Unnamed: 0':'nb_id'}, inplace = True)
-#print(df_over_100kb['max_filesize'].sum() / 1000000000)
-
-bag.autoUpdate()
-
-while x < 10:
-  x += 1
-  y -= 1
-  c *= 2
-
-obj.doIt(bag)
-
-"""
+from graphviz import Source
 
 def extractSourceCode(notebook):
     src=""
@@ -54,6 +22,7 @@ import re
 indir = "kernels/"
 srcdir = "sources/"
 outdir = "graphs/"
+imgdir = "images/"
 files = [f for f in listdir(indir) if isfile(join(indir, f))]
 for f in files:
     with open(indir + f) as notebook:
@@ -77,6 +46,9 @@ for f in files:
             # Save
             o = open(outdir + f[:-5] + "digraph", "w")
             o.write(g)
+            # src = Source(g)
+            # src.format = "png"
+            # src.render(imgdir + f[:-5])
         except AttributeError as err:
             print("AttributeError: {0} [{1}]".format(err, f))
         except SyntaxError as err:
