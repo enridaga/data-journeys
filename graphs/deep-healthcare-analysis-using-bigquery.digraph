@@ -1,11 +1,59 @@
 digraph { 
+"bq_helper" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"BigQueryHelper" -> "bq_helper" [label = "import"]
+"BigQueryHelper(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"BigQueryHelper(0)" -> "BigQueryHelper" [label = "assign"]
+"bq_helper" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"bq_helper(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"bq_helper(0)" -> "bq_helper" [label = "assign"]
+"plotly.offline" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"init_notebook_mode" -> "plotly.offline" [label = "import"]
+"init_notebook_mode(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"init_notebook_mode(0)" -> "init_notebook_mode" [label = "assign"]
+"iplot" -> "plotly.offline" [label = "import"]
+"iplot(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"iplot(0)" -> "iplot" [label = "assign"]
+"wordcloud" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"WordCloud" -> "wordcloud" [label = "import"]
+"WordCloud(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"WordCloud(0)" -> "WordCloud" [label = "assign"]
+"plotly.graph_objs" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"go(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"go(0)" -> "plotly.graph_objs" [label = "assign"]
+"matplotlib.pyplot" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"plt(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"plt(0)" -> "matplotlib.pyplot" [label = "assign"]
+"plotly.plotly" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"py(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"py(0)" -> "plotly.plotly" [label = "assign"]
+"plotly" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"tools" -> "plotly" [label = "import"]
+"tools(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"tools(0)" -> "tools" [label = "assign"]
+"warnings" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"warnings(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"warnings(0)" -> "warnings" [label = "assign"]
 "warnings(0)$0" -> "warnings(0)" [label = "filterwarnings"]
+"ignore(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "warnings(0)$0" -> "ignore(0)" [label = "filterwarnings"]
+"pandas" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"pd(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"pd(0)" -> "pandas" [label = "assign"]
 "medicare(0)$0" -> "bq_helper(0)" [label = "BigQueryHelper"]
+"bigquery-public-data(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "medicare(0)$0" -> "bigquery-public-data(0)" [label = "BigQueryHelper"]
+"cms_medicare(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "medicare(0)$0" -> "cms_medicare(0)" [label = "BigQueryHelper"]
 "bq_assistant(0)$0" -> "bigquery-public-data(0)" [label = "BigQueryHelper"]
 "bq_assistant(0)$0" -> "cms_medicare(0)" [label = "BigQueryHelper"]
+"SELECT
+state, COUNT(state) as total_facilities
+FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+  GROUP BY 
+  state
+ORDER BY
+  total_facilities DESC;(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$0" -> "SELECT
 state, COUNT(state) as total_facilities
 FROM
@@ -13,12 +61,14 @@ FROM
   GROUP BY 
   state
 ORDER BY
-  total_facilities DESC;(0)" [label = "eq"]
+  total_facilities DESC;(0)" [label = "assign"]
 "response1(0)$0" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$0" -> "query1(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$1" -> "response1(0)$0" [label = "head"]
+"10(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "response1(0)$1" -> "10(0)" [label = "head"]
-"scl(0)$0" -> "[<_ast.List object at 0x10a19bbd0>, <_ast.List object at 0x10a19b950>, <_ast.List object at 0x10a19bb90>, <_ast.List object at 0x10a179c50>, <_ast.List object at 0x10a179e10>, <_ast.List object at 0x10a179ed0>](0)" [label = "eq"]
+"[<_ast.List object at 0x105b29090>, <_ast.List object at 0x105b290d0>, <_ast.List object at 0x105b29710>, <_ast.List object at 0x105b29490>, <_ast.List object at 0x105b299d0>, <_ast.List object at 0x105b29410>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"scl(0)$0" -> "[<_ast.List object at 0x105b29090>, <_ast.List object at 0x105b290d0>, <_ast.List object at 0x105b29710>, <_ast.List object at 0x105b29490>, <_ast.List object at 0x105b299d0>, <_ast.List object at 0x105b29410>](0)" [label = "assign"]
 "query1(0)$1" -> "SELECT
 state, COUNT(state) as total_facilities
 FROM
@@ -26,22 +76,38 @@ FROM
   GROUP BY 
   state
 ORDER BY
-  total_facilities DESC;(0)" [label = "eq"]
+  total_facilities DESC;(0)" [label = "assign"]
 "response1(0)$2" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$2" -> "query1(0)$1" [label = "query_to_pandas_safe"]
 "response1(0)$3" -> "response1(0)$2" [label = "head"]
 "response1(0)$3" -> "10(0)" [label = "head"]
-"data(0)$0" -> "[<_ast.Call object at 0x10a1795d0>](0)" [label = "eq"]
+"[<_ast.Call object at 0x105b23dd0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$0" -> "[<_ast.Call object at 0x105b23dd0>](0)" [label = "assign"]
+"Nursing Facilities in Different States(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$0" -> "Nursing Facilities in Different States(0)" [label = "dict"]
+"dict(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$0" -> "dict(0)" [label = "dict"]
+"usa(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$0" -> "usa(0)" [label = "dict"]
 "layout(0)$0" -> "dict(0)" [label = "dict"]
+"albers usa(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$0" -> "albers usa(0)" [label = "dict"]
+"rgb(255, 255, 255)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$0" -> "rgb(255, 255, 255)(0)" [label = "dict"]
 "fig(0)$0" -> "data(0)$0" [label = "dict"]
 "fig(0)$0" -> "layout(0)$0" [label = "dict"]
 "iplot[0]" -> "fig(0)$0" [label = "iplot"]
+"d3-cloropleth-map(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "d3-cloropleth-map(0)" [label = "iplot"]
+"SELECT
+  state, AVG(average_hcc_score) as avg_hcc_score, Max(average_hcc_score) as max_hcc_score, Min(average_hcc_score) as min_hcc_score, COUNT(average_hcc_score) as total_facilities
+FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+  GROUP BY 
+  state
+ORDER BY
+  avg_hcc_score DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query2(0)$0" -> "SELECT
   state, AVG(average_hcc_score) as avg_hcc_score, Max(average_hcc_score) as max_hcc_score, Min(average_hcc_score) as min_hcc_score, COUNT(average_hcc_score) as total_facilities
 FROM
@@ -50,7 +116,7 @@ FROM
   state
 ORDER BY
   avg_hcc_score DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response2(0)$0" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response2(0)$0" -> "query2(0)$0" [label = "query_to_pandas_safe"]
 "response2(0)$1" -> "response2(0)$0" [label = "head"]
@@ -58,28 +124,40 @@ ORDER BY
 "trace1(0)$0" -> "go(0)" [label = "Bar"]
 "trace1(0)$0" -> "response2(0)$1" [label = "Bar"]
 "trace1(0)$0" -> "response2(0)$1" [label = "Bar"]
+"Max HCC Score(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$0" -> "Max HCC Score(0)" [label = "Bar"]
 "trace1(0)$0" -> "dict(0)" [label = "Bar"]
+"rgb(158,202,225)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$0" -> "rgb(158,202,225)(0)" [label = "Bar"]
 "trace2(0)$0" -> "go(0)" [label = "Bar"]
 "trace2(0)$0" -> "response2(0)$1" [label = "Bar"]
 "trace2(0)$0" -> "response2(0)$1" [label = "Bar"]
+"Min HCC Score(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace2(0)$0" -> "Min HCC Score(0)" [label = "Bar"]
 "trace2(0)$0" -> "dict(0)" [label = "Bar"]
+"rgb(58,22,25)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace2(0)$0" -> "rgb(58,22,25)(0)" [label = "Bar"]
-"data(0)$1" -> "[<_ast.Name object at 0x10a119090>, <_ast.Name object at 0x10a119f10>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105b4aed0>, <_ast.Name object at 0x105b4a050>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$1" -> "[<_ast.Name object at 0x105b4aed0>, <_ast.Name object at 0x105b4a050>](0)" [label = "assign"]
 "layout(0)$1" -> "go(0)" [label = "Layout"]
+"group(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$1" -> "group(0)" [label = "Layout"]
+"Minimum and Maximum HCC scores for different States(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$1" -> "Minimum and Maximum HCC scores for different States(0)" [label = "Layout"]
 "layout(0)$1" -> "dict(0)" [label = "Layout"]
+"h(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$1" -> "h(0)" [label = "Layout"]
 "fig(0)$1" -> "go(0)" [label = "Figure"]
 "fig(0)$1" -> "data(0)$1" [label = "Figure"]
 "fig(0)$1" -> "layout(0)$1" [label = "Figure"]
 "iplot[0]" -> "fig(0)$1" [label = "iplot"]
+"grouped-bar(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "grouped-bar(0)" [label = "iplot"]
-"scl(0)$1" -> "[<_ast.List object at 0x10a23c3d0>, <_ast.List object at 0x10a23c190>, <_ast.List object at 0x10a23c610>, <_ast.List object at 0x10a23c390>, <_ast.List object at 0x10a23c910>, <_ast.List object at 0x10a23c850>](0)" [label = "eq"]
-"data(0)$2" -> "[<_ast.Call object at 0x10a23c790>](0)" [label = "eq"]
+"[<_ast.List object at 0x105b2c0d0>, <_ast.List object at 0x105b2c3d0>, <_ast.List object at 0x105b2c790>, <_ast.List object at 0x105b2c810>, <_ast.List object at 0x105b2c1d0>, <_ast.List object at 0x105b2c6d0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"scl(0)$1" -> "[<_ast.List object at 0x105b2c0d0>, <_ast.List object at 0x105b2c3d0>, <_ast.List object at 0x105b2c790>, <_ast.List object at 0x105b2c810>, <_ast.List object at 0x105b2c1d0>, <_ast.List object at 0x105b2c6d0>](0)" [label = "assign"]
+"[<_ast.Call object at 0x106713890>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$2" -> "[<_ast.Call object at 0x106713890>](0)" [label = "assign"]
+"Average HCC Scores for different states(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$2" -> "Average HCC Scores for different states(0)" [label = "dict"]
 "layout(0)$2" -> "dict(0)" [label = "dict"]
 "layout(0)$2" -> "usa(0)" [label = "dict"]
@@ -90,19 +168,26 @@ ORDER BY
 "fig(0)$2" -> "layout(0)$2" [label = "dict"]
 "iplot[0]" -> "fig(0)$2" [label = "iplot"]
 "iplot[1]" -> "d3-cloropleth-map(0)" [label = "iplot"]
+"SELECT facility_name, city, state, average_hcc_score
+FROM `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+ORDER BY average_hcc_score DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query3(0)$0" -> "SELECT facility_name, city, state, average_hcc_score
 FROM `bigquery-public-data.cms_medicare.nursing_facilities_2014`
 ORDER BY average_hcc_score DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response3(0)$0" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response3(0)$0" -> "query3(0)$0" [label = "query_to_pandas_safe"]
 "response3(0)$1" -> "response3(0)$0" [label = "head"]
+"5(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "response3(0)$1" -> "5(0)" [label = "head"]
 "response3(0)$2" -> "response3(0)$1" [label = "tail"]
 "response3(0)$2" -> "5(0)" [label = "tail"]
 "tempdf(0)$0" -> "response3(0)$2" [label = "head"]
 "tempdf(0)$0" -> "10(0)" [label = "head"]
+"reversed(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "y(0)$0" -> "reversed(0)" [label = "list"]
+"list(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "y(0)$0" -> "list(0)" [label = "list"]
 "y(0)$0" -> "tempdf(0)$0" [label = "list"]
 "x(0)$0" -> "reversed(0)" [label = "list"]
@@ -113,18 +198,33 @@ ORDER BY average_hcc_score DESC;
 "trace1(0)$1" -> "y(0)$0" [label = "Bar"]
 "trace1(0)$1" -> "h(0)" [label = "Bar"]
 "trace1(0)$1" -> "dict(0)" [label = "Bar"]
+"#f79284(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$1" -> "#f79284(0)" [label = "Bar"]
+"400(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$3" -> "400(0)" [label = "dict"]
+"700(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$3" -> "700(0)" [label = "dict"]
 "layout(0)$3" -> "dict(0)" [label = "dict"]
 "layout(0)$3" -> "400(0)" [label = "dict"]
+"Nursing Facilities having Maximum Average HCC Scores(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$3" -> "Nursing Facilities having Maximum Average HCC Scores(0)" [label = "dict"]
-"data(0)$3" -> "[<_ast.Name object at 0x10b03cd10>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105b44710>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$3" -> "[<_ast.Name object at 0x105b44710>](0)" [label = "assign"]
 "fig(0)$3" -> "go(0)" [label = "Figure"]
 "fig(0)$3" -> "data(0)$3" [label = "Figure"]
 "fig(0)$3" -> "layout(0)$3" [label = "Figure"]
 "iplot[0]" -> "fig(0)$3" [label = "iplot"]
+"stacked-bar(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "stacked-bar(0)" [label = "iplot"]
+"SELECT
+  state, Sum(male_beneficiaries) as male_ben, Sum(female_beneficiaries) as female_ben
+FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+  GROUP BY 
+      state
+  ORDER BY
+      male_ben DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$2" -> "SELECT
   state, Sum(male_beneficiaries) as male_ben, Sum(female_beneficiaries) as female_ben
 FROM
@@ -133,26 +233,32 @@ FROM
       state
   ORDER BY
       male_ben DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response1(0)$4" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$4" -> "query1(0)$2" [label = "query_to_pandas_safe"]
 "trace1(0)$2" -> "go(0)" [label = "Bar"]
 "trace1(0)$2" -> "response1(0)$4" [label = "Bar"]
 "trace1(0)$2" -> "response1(0)$4" [label = "Bar"]
 "trace1(0)$2" -> "dict(0)" [label = "Bar"]
+"#e584f7(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$2" -> "#e584f7(0)" [label = "Bar"]
+"Total Male beneficiaries(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$2" -> "Total Male beneficiaries(0)" [label = "Bar"]
 "trace2(0)$1" -> "go(0)" [label = "Bar"]
 "trace2(0)$1" -> "response1(0)$4" [label = "Bar"]
 "trace2(0)$1" -> "response1(0)$4" [label = "Bar"]
 "trace2(0)$1" -> "dict(0)" [label = "Bar"]
+"#a0f784(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace2(0)$1" -> "#a0f784(0)" [label = "Bar"]
+"Total Female beneficiaries(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace2(0)$1" -> "Total Female beneficiaries(0)" [label = "Bar"]
-"data(0)$4" -> "[<_ast.Name object at 0x10a3b71d0>, <_ast.Name object at 0x10a3b7190>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105b1da10>, <_ast.Name object at 0x105b1db90>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$4" -> "[<_ast.Name object at 0x105b1da10>, <_ast.Name object at 0x105b1db90>](0)" [label = "assign"]
 "layout(0)$4" -> "go(0)" [label = "Layout"]
 "layout(0)$4" -> "group(0)" [label = "Layout"]
 "layout(0)$4" -> "dict(0)" [label = "Layout"]
 "layout(0)$4" -> "h(0)" [label = "Layout"]
+"Male and Female Beneficiaries in 2014 in different states(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$4" -> "Male and Female Beneficiaries in 2014 in different states(0)" [label = "Layout"]
 "fig(0)$4" -> "go(0)" [label = "Figure"]
 "fig(0)$4" -> "data(0)$4" [label = "Figure"]
@@ -161,51 +267,76 @@ FROM
 "iplot[1]" -> "grouped-bar(0)" [label = "iplot"]
 "response1(0)$5" -> "response1(0)$4" [label = "Sub"]
 "response1(0)$5" -> "response1(0)$4" [label = "Sub"]
+"female_ben(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "response1(0)$5" -> "female_ben(0)" [label = "Sub"]
 "response1(0)$5" -> "response1(0)$5" [label = "Sub"]
+"male_ben(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "response1(0)$5" -> "male_ben(0)" [label = "Sub"]
 "trace1(0)$3" -> "go(0)" [label = "Bar"]
 "trace1(0)$3" -> "response1(0)$5" [label = "Bar"]
 "trace1(0)$3" -> "response1(0)$5" [label = "Bar"]
 "trace1(0)$3" -> "dict(0)" [label = "Bar"]
+"#aabfe0(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$3" -> "#aabfe0(0)" [label = "Bar"]
 "trace1(0)$3" -> "Total Male beneficiaries(0)" [label = "Bar"]
-"data(0)$5" -> "[<_ast.Name object at 0x10a17f450>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105b25990>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$5" -> "[<_ast.Name object at 0x105b25990>](0)" [label = "assign"]
 "layout(0)$5" -> "go(0)" [label = "Layout"]
 "layout(0)$5" -> "group(0)" [label = "Layout"]
 "layout(0)$5" -> "dict(0)" [label = "Layout"]
 "layout(0)$5" -> "h(0)" [label = "Layout"]
+"Difference in Male and Female Beneficiaries in Different State(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$5" -> "Difference in Male and Female Beneficiaries in Different State(0)" [label = "Layout"]
 "fig(0)$5" -> "go(0)" [label = "Figure"]
 "fig(0)$5" -> "data(0)$5" [label = "Figure"]
 "fig(0)$5" -> "layout(0)$5" [label = "Figure"]
 "iplot[0]" -> "fig(0)$5" [label = "iplot"]
 "iplot[1]" -> "grouped-bar(0)" [label = "iplot"]
+"SELECT provider_id, avg(average_total_payments) as average_outpatient_payments
+FROM `bigquery-public-data.cms_medicare.outpatient_charges_2014` group by provider_id;(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query3_a(0)$0" -> "SELECT provider_id, avg(average_total_payments) as average_outpatient_payments
-FROM `bigquery-public-data.cms_medicare.outpatient_charges_2014` group by provider_id;(0)" [label = "eq"]
+FROM `bigquery-public-data.cms_medicare.outpatient_charges_2014` group by provider_id;(0)" [label = "assign"]
 "outp(0)$0" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "outp(0)$0" -> "query3_a(0)$0" [label = "query_to_pandas_safe"]
+"SELECT provider_id, avg(average_total_payments) as average_inpatient_payments
+FROM `bigquery-public-data.cms_medicare.inpatient_charges_2014` group by provider_id;(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query3_b(0)$0" -> "SELECT provider_id, avg(average_total_payments) as average_inpatient_payments
-FROM `bigquery-public-data.cms_medicare.inpatient_charges_2014` group by provider_id;(0)" [label = "eq"]
+FROM `bigquery-public-data.cms_medicare.inpatient_charges_2014` group by provider_id;(0)" [label = "assign"]
 "inp(0)$0" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "inp(0)$0" -> "query3_b(0)$0" [label = "query_to_pandas_safe"]
 "merged(0)$0" -> "outp(0)$0" [label = "merge"]
 "merged(0)$0" -> "inp(0)$0" [label = "merge"]
+"provider_id(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "merged(0)$0" -> "provider_id(0)" [label = "merge"]
+"inner(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "merged(0)$0" -> "inner(0)" [label = "merge"]
 "merged(0)$1" -> "merged(0)$0" [label = "Sub"]
 "merged(0)$1" -> "merged(0)$0" [label = "Sub"]
+"average_inpatient_payments(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "merged(0)$1" -> "average_inpatient_payments(0)" [label = "Sub"]
 "merged(0)$1" -> "merged(0)$1" [label = "Sub"]
+"average_outpatient_payments(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "merged(0)$1" -> "average_outpatient_payments(0)" [label = "Sub"]
 "tracex(0)$0" -> "go(0)" [label = "Histogram"]
 "tracex(0)$0" -> "merged(0)$1" [label = "Histogram"]
+"difference(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "tracex(0)$0" -> "difference(0)" [label = "Histogram"]
 "fig(0)$6" -> "go(0)" [label = "Figure"]
-"fig(0)$6" -> "[<_ast.Name object at 0x10b01f7d0>](0)" [label = "Figure"]
+"[<_ast.Name object at 0x105b46bd0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"fig(0)$6" -> "[<_ast.Name object at 0x105b46bd0>](0)" [label = "Figure"]
 "fig(0)$7" -> "fig(0)$6" [label = "update"]
 "iplot[0]" -> "fig(0)$7" [label = "iplot"]
+"simple-subplot(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "simple-subplot(0)" [label = "iplot"]
+"SELECT
+  state, AVG(average_length_of_stays_days) as average_length_of_stays_days, AVG(total_stays) as total_stays
+FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+  GROUP BY 
+  state
+ORDER BY
+  average_length_of_stays_days DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query2(0)$1" -> "SELECT
   state, AVG(average_length_of_stays_days) as average_length_of_stays_days, AVG(total_stays) as total_stays
 FROM
@@ -214,7 +345,7 @@ FROM
   state
 ORDER BY
   average_length_of_stays_days DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response2(0)$2" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response2(0)$2" -> "query2(0)$1" [label = "query_to_pandas_safe"]
 "response2(0)$3" -> "response2(0)$2" [label = "head"]
@@ -222,65 +353,97 @@ ORDER BY
 "trace0(0)$0" -> "go(0)" [label = "Scatter"]
 "trace0(0)$0" -> "response2(0)$3" [label = "Scatter"]
 "trace0(0)$0" -> "response2(0)$3" [label = "Scatter"]
+"markers(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "markers(0)" [label = "Scatter"]
+"Average Length of Stay in a State(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "Average Length of Stay in a State(0)" [label = "Scatter"]
 "trace0(0)$0" -> "dict(0)" [label = "Scatter"]
+"rgba(156, 165, 196, 0.95)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "rgba(156, 165, 196, 0.95)(0)" [label = "Scatter"]
 "trace0(0)$0" -> "dict(0)" [label = "Scatter"]
+"rgba(156, 165, 196, 1.0)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "rgba(156, 165, 196, 1.0)(0)" [label = "Scatter"]
+"1(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "1(0)" [label = "Scatter"]
+"circle(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "circle(0)" [label = "Scatter"]
+"16(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace0(0)$0" -> "16(0)" [label = "Scatter"]
 "trace1(0)$4" -> "go(0)" [label = "Scatter"]
 "trace1(0)$4" -> "response2(0)$3" [label = "Scatter"]
 "trace1(0)$4" -> "response2(0)$3" [label = "Scatter"]
 "trace1(0)$4" -> "markers(0)" [label = "Scatter"]
+"Average of Total Stays in a State (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$4" -> "Average of Total Stays in a State (0)" [label = "Scatter"]
 "trace1(0)$4" -> "dict(0)" [label = "Scatter"]
+"#00d8d8(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$4" -> "#00d8d8(0)" [label = "Scatter"]
 "trace1(0)$4" -> "dict(0)" [label = "Scatter"]
+"rgba(217, 217, 217, 1.0)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$4" -> "rgba(217, 217, 217, 1.0)(0)" [label = "Scatter"]
 "trace1(0)$4" -> "1(0)" [label = "Scatter"]
 "trace1(0)$4" -> "circle(0)" [label = "Scatter"]
 "trace1(0)$4" -> "16(0)" [label = "Scatter"]
-"data(0)$6" -> "[<_ast.Name object at 0x10a202890>, <_ast.Name object at 0x10a202250>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105f348d0>, <_ast.Name object at 0x105f34d90>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$6" -> "[<_ast.Name object at 0x105f348d0>, <_ast.Name object at 0x105f34d90>](0)" [label = "assign"]
 "layout(0)$6" -> "go(0)" [label = "Layout"]
+"Average Total Stays of each State and Average Length of Stays for each state (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "Average Total Stays of each State and Average Length of Stays for each state (0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
+"rgb(102, 102, 102)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "rgb(102, 102, 102)(0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
+"rgb(204, 204, 204)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "rgb(204, 204, 204)(0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
 "layout(0)$6" -> "rgb(102, 102, 102)(0)" [label = "Layout"]
 "layout(0)$6" -> "10(0)" [label = "Layout"]
+"outside(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "outside(0)" [label = "Layout"]
 "layout(0)$6" -> "rgb(102, 102, 102)(0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
+"140(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "140(0)" [label = "Layout"]
+"40(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "40(0)" [label = "Layout"]
+"50(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "50(0)" [label = "Layout"]
+"80(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "80(0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
 "layout(0)$6" -> "dict(0)" [label = "Layout"]
 "layout(0)$6" -> "10(0)" [label = "Layout"]
+"middle(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "middle(0)" [label = "Layout"]
+"right(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "right(0)" [label = "Layout"]
+"600(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "600(0)" [label = "Layout"]
+"rgb(254, 247, 234)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "rgb(254, 247, 234)(0)" [label = "Layout"]
 "layout(0)$6" -> "rgb(254, 247, 234)(0)" [label = "Layout"]
+"closest(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$6" -> "closest(0)" [label = "Layout"]
 "fig(0)$8" -> "go(0)" [label = "Figure"]
 "fig(0)$8" -> "data(0)$6" [label = "Figure"]
 "fig(0)$8" -> "layout(0)$6" [label = "Figure"]
 "iplot[0]" -> "fig(0)$8" [label = "iplot"]
+"lowest-oecd-votes-cast(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "lowest-oecd-votes-cast(0)" [label = "iplot"]
+"SELECT
+  facility_name, city, state, average_length_of_stays_days
+FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`
+ORDER BY
+  average_length_of_stays_days DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$3" -> "SELECT
   facility_name, city, state, average_length_of_stays_days
 FROM
   `bigquery-public-data.cms_medicare.nursing_facilities_2014`
 ORDER BY
   average_length_of_stays_days DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response1(0)$6" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$6" -> "query1(0)$3" [label = "query_to_pandas_safe"]
 "tempdf(0)$1" -> "response1(0)$6" [label = "head"]
@@ -296,18 +459,33 @@ ORDER BY
 "trace1(0)$5" -> "y(0)$1" [label = "Bar"]
 "trace1(0)$5" -> "h(0)" [label = "Bar"]
 "trace1(0)$5" -> "dict(0)" [label = "Bar"]
+"#f7e484(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$5" -> "#f7e484(0)" [label = "Bar"]
 "layout(0)$7" -> "400(0)" [label = "dict"]
 "layout(0)$7" -> "700(0)" [label = "dict"]
+"Nursing Facilities having Maximum Average Length of Stay Days(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$7" -> "Nursing Facilities having Maximum Average Length of Stay Days(0)" [label = "dict"]
 "layout(0)$7" -> "dict(0)" [label = "dict"]
 "layout(0)$7" -> "400(0)" [label = "dict"]
-"data(0)$7" -> "[<_ast.Name object at 0x10b010810>](0)" [label = "eq"]
+"[<_ast.Name object at 0x1067318d0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$7" -> "[<_ast.Name object at 0x1067318d0>](0)" [label = "assign"]
 "fig(0)$9" -> "go(0)" [label = "Figure"]
 "fig(0)$9" -> "data(0)$7" [label = "Figure"]
 "fig(0)$9" -> "layout(0)$7" [label = "Figure"]
 "iplot[0]" -> "fig(0)$9" [label = "iplot"]
 "iplot[1]" -> "stacked-bar(0)" [label = "iplot"]
+"SELECT
+  nppes_provider_state AS state,
+  ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
+  ROUND(SUM(total_day_supply) / 1e6) AS total_day_supply_millions,
+  ROUND(SUM(total_drug_cost) / 1e6) AS total_drug_cost_millions
+FROM
+  `bigquery-public-data.cms_medicare.part_d_prescriber_2014`
+GROUP BY
+  state
+ORDER BY
+  total_claim_count_millions DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$4" -> "SELECT
   nppes_provider_state AS state,
   ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
@@ -319,7 +497,7 @@ GROUP BY
   state
 ORDER BY
   total_claim_count_millions DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response1(0)$7" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$7" -> "query1(0)$4" [label = "query_to_pandas_safe"]
 "response1(0)$8" -> "response1(0)$7" [label = "head"]
@@ -332,37 +510,61 @@ ORDER BY
 "trace1(0)$6" -> "dict(0)" [label = "Scatter"]
 "trace1(0)$6" -> "list(0)" [label = "Scatter"]
 "trace1(0)$6" -> "reversed(0)" [label = "Scatter"]
+"i(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "i(0)" [label = "Scatter"]
+"11(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "11(0)" [label = "Scatter"]
 "trace1(0)$6" -> "i(0)" [label = "Scatter"]
+"range(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "range(0)" [label = "Scatter"]
+"200(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "200(0)" [label = "Scatter"]
+"251(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "251(0)" [label = "Scatter"]
 "trace1(0)$6" -> "response1(0)$8" [label = "Scatter"]
 "trace1(0)$6" -> "dict(0)" [label = "Scatter"]
+"2(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$6" -> "2(0)" [label = "Scatter"]
-"data(0)$8" -> "[<_ast.Name object at 0x10a3c8fd0>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105ac3c10>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$8" -> "[<_ast.Name object at 0x105ac3c10>](0)" [label = "assign"]
 "layout(0)$8" -> "go(0)" [label = "Layout"]
+"Total claim count VS Total Drug Cost VS Total Day Supply for every state(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$8" -> "Total claim count VS Total Drug Cost VS Total Day Supply for every state(0)" [label = "Layout"]
 "layout(0)$8" -> "dict(0)" [label = "Layout"]
+"Total Day Supply(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$8" -> "Total Day Supply(0)" [label = "Layout"]
 "layout(0)$8" -> "rgb(255, 255, 255)(0)" [label = "Layout"]
 "layout(0)$8" -> "1(0)" [label = "Layout"]
 "layout(0)$8" -> "5(0)" [label = "Layout"]
 "layout(0)$8" -> "2(0)" [label = "Layout"]
 "layout(0)$8" -> "dict(0)" [label = "Layout"]
+"Total Drug Cost(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$8" -> "Total Drug Cost(0)" [label = "Layout"]
 "layout(0)$8" -> "rgb(255, 255, 255)(0)" [label = "Layout"]
 "layout(0)$8" -> "1(0)" [label = "Layout"]
 "layout(0)$8" -> "5(0)" [label = "Layout"]
 "layout(0)$8" -> "2(0)" [label = "Layout"]
+"rgb(243, 243, 243)(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$8" -> "rgb(243, 243, 243)(0)" [label = "Layout"]
 "layout(0)$8" -> "rgb(243, 243, 243)(0)" [label = "Layout"]
 "fig(0)$10" -> "go(0)" [label = "Figure"]
 "fig(0)$10" -> "data(0)$8" [label = "Figure"]
 "fig(0)$10" -> "layout(0)$8" [label = "Figure"]
 "iplot[0]" -> "fig(0)$10" [label = "iplot"]
+"scatter-colorscale(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "iplot[1]" -> "scatter-colorscale(0)" [label = "iplot"]
+"SELECT
+  generic_name AS drug_name,
+  ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
+  ROUND(SUM(total_day_supply) / 1e6) AS total_day_supply_millions,
+  ROUND(SUM(total_drug_cost) / 1e6) AS total_drug_cost_millions
+FROM
+  `bigquery-public-data.cms_medicare.part_d_prescriber_2014`
+GROUP BY
+  drug_name
+ORDER BY
+  total_claim_count_millions DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$5" -> "SELECT
   generic_name AS drug_name,
   ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
@@ -374,7 +576,7 @@ GROUP BY
   drug_name
 ORDER BY
   total_claim_count_millions DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response1(0)$9" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$9" -> "query1(0)$5" [label = "query_to_pandas_safe"]
 "tempdf(0)$2" -> "response1(0)$9" [label = "head"]
@@ -382,6 +584,7 @@ ORDER BY
 "trace1(0)$7" -> "go(0)" [label = "Bar"]
 "trace1(0)$7" -> "tempdf(0)$2" [label = "Bar"]
 "trace1(0)$7" -> "tempdf(0)$2" [label = "Bar"]
+"Total Claims(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$7" -> "Total Claims(0)" [label = "Bar"]
 "trace2(0)$2" -> "go(0)" [label = "Bar"]
 "trace2(0)$2" -> "tempdf(0)$2" [label = "Bar"]
@@ -391,7 +594,8 @@ ORDER BY
 "trace3(0)$0" -> "tempdf(0)$2" [label = "Bar"]
 "trace3(0)$0" -> "tempdf(0)$2" [label = "Bar"]
 "trace3(0)$0" -> "Total Drug Cost(0)" [label = "Bar"]
-"data(0)$9" -> "[<_ast.Name object at 0x10a267f10>, <_ast.Name object at 0x10a267d50>, <_ast.Name object at 0x10a267ed0>](0)" [label = "eq"]
+"[<_ast.Name object at 0x106523d10>, <_ast.Name object at 0x106523e10>, <_ast.Name object at 0x106523d90>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$9" -> "[<_ast.Name object at 0x106523d10>, <_ast.Name object at 0x106523e10>, <_ast.Name object at 0x106523d90>](0)" [label = "assign"]
 "layout(0)$9" -> "go(0)" [label = "Layout"]
 "layout(0)$9" -> "group(0)" [label = "Layout"]
 "layout(0)$9" -> "dict(0)" [label = "Layout"]
@@ -401,6 +605,18 @@ ORDER BY
 "fig(0)$11" -> "layout(0)$9" [label = "Figure"]
 "iplot[0]" -> "fig(0)$11" [label = "iplot"]
 "iplot[1]" -> "grouped-bar(0)" [label = "iplot"]
+"SELECT
+  specialty_description AS specialty_description,
+  ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
+  ROUND(SUM(total_day_supply) / 1e6) AS total_day_supply_millions,
+  ROUND(SUM(total_drug_cost) / 1e6) AS total_drug_cost_millions
+FROM
+  `bigquery-public-data.cms_medicare.part_d_prescriber_2014`
+GROUP BY
+  specialty_description
+ORDER BY
+  total_claim_count_millions DESC;
+        (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$6" -> "SELECT
   specialty_description AS specialty_description,
   ROUND(SUM(total_claim_count) / 1e6) AS total_claim_count_millions,
@@ -412,31 +628,38 @@ GROUP BY
   specialty_description
 ORDER BY
   total_claim_count_millions DESC;
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "response1(0)$10" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$10" -> "query1(0)$6" [label = "query_to_pandas_safe"]
 "tempdf(0)$3" -> "response1(0)$10" [label = "head"]
 "tempdf(0)$3" -> "40(0)" [label = "head"]
 "tempdf(0)$4" -> "tempdf(0)$3" [label = "apply"]
 "tempdf(0)$4" -> "tempdf(0)$3" [label = "apply"]
+"specialty_description(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "tempdf(0)$4" -> "specialty_description(0)" [label = "apply"]
 "tempdf(0)$4" -> "x(0)$1" [label = "apply"]
+" (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "tempdf(0)$4" -> " (0)" [label = "apply"]
+"_(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "tempdf(0)$4" -> "_(0)" [label = "apply"]
 "txt(0)$0" -> " (0)" [label = "join"]
 "txt(0)$0" -> "tempdf(0)$4" [label = "join"]
 "wordcloud(0)$0" -> "WordCloud(0)" [label = "generate"]
+"white(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "wordcloud(0)$0" -> "white(0)" [label = "generate"]
 "wordcloud(0)$0" -> "50(0)" [label = "generate"]
 "wordcloud(0)$0" -> "600(0)" [label = "generate"]
+"300(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "wordcloud(0)$0" -> "300(0)" [label = "generate"]
 "wordcloud(0)$0" -> "txt(0)$0" [label = "generate"]
 "plt(0)$0" -> "plt(0)" [label = "figure"]
 "plt(0)$1" -> "plt(0)$0" [label = "imshow"]
 "plt(0)$1" -> "wordcloud(0)$0" [label = "imshow"]
 "plt(0)$2" -> "plt(0)$1" [label = "title"]
+"Top Speciality Services(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "plt(0)$2" -> "Top Speciality Services(0)" [label = "title"]
 "plt(0)$3" -> "plt(0)$2" [label = "axis"]
+"off(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "plt(0)$3" -> "off(0)" [label = "axis"]
 "plt(0)$4" -> "plt(0)$3" [label = "show"]
 "trace1(0)$8" -> "go(0)" [label = "Bar"]
@@ -451,8 +674,10 @@ ORDER BY
 "trace3(0)$1" -> "tempdf(0)$4" [label = "Bar"]
 "trace3(0)$1" -> "tempdf(0)$4" [label = "Bar"]
 "trace3(0)$1" -> "Total Drug Cost(0)" [label = "Bar"]
-"data(0)$10" -> "[<_ast.Name object at 0x10a0e0f10>, <_ast.Name object at 0x10a0e0d10>, <_ast.Name object at 0x10a0e0b10>](0)" [label = "eq"]
+"[<_ast.Name object at 0x105df5750>, <_ast.Name object at 0x105df57d0>, <_ast.Name object at 0x105df5f10>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$10" -> "[<_ast.Name object at 0x105df5750>, <_ast.Name object at 0x105df57d0>, <_ast.Name object at 0x105df5f10>](0)" [label = "assign"]
 "layout(0)$10" -> "go(0)" [label = "Layout"]
+"stack(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$10" -> "stack(0)" [label = "Layout"]
 "layout(0)$10" -> "dict(0)" [label = "Layout"]
 "layout(0)$10" -> "200(0)" [label = "Layout"]
@@ -461,6 +686,24 @@ ORDER BY
 "fig(0)$12" -> "layout(0)$10" [label = "Figure"]
 "iplot[0]" -> "fig(0)$12" [label = "iplot"]
 "iplot[1]" -> "grouped-bar(0)" [label = "iplot"]
+"select A.state, B.drug_name, A.MaxClaimCount from (select state, MAX(total_claim_count_millions) as MaxClaimCount from (
+SELECT
+  nppes_provider_state AS state, generic_name AS drug_name, SUM(total_claim_count) AS total_claim_count_millions
+FROM
+  `bigquery-public-data.cms_medicare.part_d_prescriber_2014`
+GROUP BY state, drug_name
+ORDER BY
+  total_claim_count_millions DESC) group by state) A INNER JOIN (SELECT
+  nppes_provider_state AS state,
+  generic_name AS drug_name,
+  SUM(total_claim_count) AS total_claim_count_millions
+FROM
+  `bigquery-public-data.cms_medicare.part_d_prescriber_2014`
+GROUP BY
+  state, drug_name
+ORDER BY
+  total_claim_count_millions DESC) B ON A.MaxClaimCount = B.total_claim_count_millions;
+(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$7" -> "select A.state, B.drug_name, A.MaxClaimCount from (select state, MAX(total_claim_count_millions) as MaxClaimCount from (
 SELECT
   nppes_provider_state AS state, generic_name AS drug_name, SUM(total_claim_count) AS total_claim_count_millions
@@ -478,64 +721,90 @@ GROUP BY
   state, drug_name
 ORDER BY
   total_claim_count_millions DESC) B ON A.MaxClaimCount = B.total_claim_count_millions;
-(0)" [label = "eq"]
+(0)" [label = "assign"]
 "response1(0)$11" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$11" -> "query1(0)$7" [label = "query_to_pandas_safe"]
-"rows(0)$0" -> "[](0)" [label = "eq"]
+"[](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"rows(0)$0" -> "[](0)" [label = "assign"]
+"index(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "index(0)" -> "response1(0)$11" [label = "Iter"]
+"row(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "row(0)" -> "response1(0)$11" [label = "Iter"]
-"stat(0)$0" -> "row(0)" [label = "eq"]
-"stat(0)$0" -> "state(0)" [label = "eq"]
-"visited(0)$0" -> "visited(0)" [label = "eq"]
-"visited(0)$0" -> "1(0)" [label = "eq"]
+"stat(0)$0" -> "row(0)" [label = "assign"]
+"state(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"stat(0)$0" -> "state(0)" [label = "assign"]
+"visited(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"visited(0)$0" -> "visited(0)" [label = "assign"]
+"visited(0)$0" -> "1(0)" [label = "assign"]
 "rows(0)$1" -> "rows(0)$0" [label = "append"]
 "rows(0)$1" -> "row(0)" [label = "append"]
 "newDF(0)$0" -> "pd(0)" [label = "reset_index"]
 "newDF(0)$0" -> "rows(0)$1" [label = "reset_index"]
 "newDF(0)$1" -> "newDF(0)$0" [label = "head"]
+"21(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "newDF(0)$1" -> "21(0)" [label = "head"]
 "a(0)$0" -> "newDF(0)$1" [label = "value_counts"]
+"drug_name(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "a(0)$0" -> "drug_name(0)" [label = "value_counts"]
-"labels(0)$0" -> "a(0)$0" [label = "eq"]
-"values(0)$0" -> "a(0)$0" [label = "eq"]
-"colors(0)$0" -> "[<_ast.Str object at 0x10b0199d0>, <_ast.Str object at 0x10b019410>, <_ast.Str object at 0x10b019b10>, <_ast.Str object at 0x10b019f10>, <_ast.Str object at 0x10b0196d0>](0)" [label = "eq"]
+"labels(0)$0" -> "a(0)$0" [label = "assign"]
+"values(0)$0" -> "a(0)$0" [label = "assign"]
+"[<_ast.Str object at 0x105ab19d0>, <_ast.Str object at 0x105ab1f50>, <_ast.Str object at 0x105ab1210>, <_ast.Str object at 0x105ab1e50>, <_ast.Str object at 0x105ab1dd0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"colors(0)$0" -> "[<_ast.Str object at 0x105ab19d0>, <_ast.Str object at 0x105ab1f50>, <_ast.Str object at 0x105ab1210>, <_ast.Str object at 0x105ab1e50>, <_ast.Str object at 0x105ab1dd0>](0)" [label = "assign"]
 "trace(0)$0" -> "go(0)" [label = "Pie"]
 "trace(0)$0" -> "labels(0)$0" [label = "Pie"]
 "trace(0)$0" -> "values(0)$0" [label = "Pie"]
+"label+percent(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace(0)$0" -> "label+percent(0)" [label = "Pie"]
+"value(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace(0)$0" -> "value(0)" [label = "Pie"]
+"Top Drugs Used(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace(0)$0" -> "Top Drugs Used(0)" [label = "Pie"]
 "trace(0)$0" -> "dict(0)" [label = "Pie"]
 "trace(0)$0" -> "colors(0)$0" [label = "Pie"]
+"Top Drugs in Each State(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$11" -> "Top Drugs in Each State(0)" [label = "dict"]
 "layout(0)$11" -> "dict(0)" [label = "dict"]
+"Drug Name(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$11" -> "Drug Name(0)" [label = "dict"]
 "layout(0)$11" -> "5(0)" [label = "dict"]
+"800(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$11" -> "800(0)" [label = "dict"]
-"fig(0)$13" -> "[<_ast.Name object at 0x10a3ea710>](0)" [label = "dict"]
+"[<_ast.Name object at 0x105acc850>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"fig(0)$13" -> "[<_ast.Name object at 0x105acc850>](0)" [label = "dict"]
 "fig(0)$13" -> "layout(0)$11" [label = "dict"]
 "iplot[0]" -> "fig(0)$13" [label = "iplot"]
+"SELECT provider_type, COUNT(provider_type) as count FROM
+  `bigquery-public-data.cms_medicare.referring_durable_medical_equip_2014`
+  GROUP BY provider_type ORDER BY count DESC;(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$8" -> "SELECT provider_type, COUNT(provider_type) as count FROM
   `bigquery-public-data.cms_medicare.referring_durable_medical_equip_2014`
-  GROUP BY provider_type ORDER BY count DESC;(0)" [label = "eq"]
+  GROUP BY provider_type ORDER BY count DESC;(0)" [label = "assign"]
 "response1(0)$12" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$12" -> "query1(0)$8" [label = "query_to_pandas_safe"]
 "trace1(0)$9" -> "go(0)" [label = "Bar"]
 "trace1(0)$9" -> "list(0)" [label = "Bar"]
 "trace1(0)$9" -> "response1(0)$12" [label = "Bar"]
+"30(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "30(0)" [label = "Bar"]
+"provider_type(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "provider_type(0)" [label = "Bar"]
 "trace1(0)$9" -> "list(0)" [label = "Bar"]
 "trace1(0)$9" -> "response1(0)$12" [label = "Bar"]
 "trace1(0)$9" -> "30(0)" [label = "Bar"]
+"count(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "count(0)" [label = "Bar"]
+"Popular Provider Types (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "Popular Provider Types (0)" [label = "Bar"]
 "trace1(0)$9" -> "dict(0)" [label = "Bar"]
+"#ff23de(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "#ff23de(0)" [label = "Bar"]
+"0.5(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "trace1(0)$9" -> "0.5(0)" [label = "Bar"]
-"data(0)$11" -> "[<_ast.Name object at 0x10a2476d0>](0)" [label = "eq"]
+"[<_ast.Name object at 0x10674ead0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"data(0)$11" -> "[<_ast.Name object at 0x10674ead0>](0)" [label = "assign"]
 "layout(0)$12" -> "go(0)" [label = "Layout"]
 "layout(0)$12" -> "group(0)" [label = "Layout"]
+"Most Common Provider Types in US(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "layout(0)$12" -> "Most Common Provider Types in US(0)" [label = "Layout"]
 "layout(0)$12" -> "dict(0)" [label = "Layout"]
 "layout(0)$12" -> "h(0)" [label = "Layout"]
@@ -543,6 +812,28 @@ ORDER BY
 "fig(0)$14" -> "data(0)$11" [label = "Figure"]
 "fig(0)$14" -> "layout(0)$12" [label = "Figure"]
 "iplot[0]" -> "fig(0)$14" [label = "iplot"]
+"SELECT provider_id, facility_name, city, state, total_stays, distinct_beneficiaries_per_provider,
+       average_length_of_stays_days, total_snf_charge_amount,
+       total_snf_medicare_allowed_amount,
+       total_snf_medicare_payment_amount,
+       total_snf_medicare_standard_payment_amount, average_age,
+       male_beneficiaries, female_beneficiaries, nondual_beneficiaries,
+       dual_beneficiaries, white_beneficiaries, black_beneficiaries, average_hcc_score,
+       percent_of_beneficiaries_with_atrial_fibrillation,
+       percent_of_beneficiaries_with_asthma,
+       percent_of_beneficiaries_with_cancer,
+       percent_of_beneficiaries_with_chf,
+       percent_of_beneficiaries_with_chronic_kidney_disease,
+       percent_of_beneficiaries_with_copd,
+       percent_of_beneficiaries_with_depression,
+       percent_of_beneficiaries_with_diabetes,
+       percent_of_beneficiaries_with_hyperlipidemia,
+       percent_of_beneficiaries_with_ihd,
+       percent_of_beneficiaries_with_osteoporosis,
+       percent_of_beneficiaries_with_ra_oa,
+       percent_of_beneficiaries_with_schizophrenia,
+       percent_of_beneficiaries_with_stroke FROM
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`;(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "query1(0)$9" -> "SELECT provider_id, facility_name, city, state, total_stays, distinct_beneficiaries_per_provider,
        average_length_of_stays_days, total_snf_charge_amount,
        total_snf_medicare_allowed_amount,
@@ -564,61 +855,79 @@ ORDER BY
        percent_of_beneficiaries_with_ra_oa,
        percent_of_beneficiaries_with_schizophrenia,
        percent_of_beneficiaries_with_stroke FROM
-  `bigquery-public-data.cms_medicare.nursing_facilities_2014`;(0)" [label = "eq"]
+  `bigquery-public-data.cms_medicare.nursing_facilities_2014`;(0)" [label = "assign"]
 "response1(0)$13" -> "medicare(0)$0" [label = "query_to_pandas_safe"]
 "response1(0)$13" -> "query1(0)$9" [label = "query_to_pandas_safe"]
-"X(0)$0" -> "response1(0)$13" [label = "eq"]
-"X(0)$1" -> "X(0)$0" [label = "eq"]
-"X(0)$1" -> "X(0)$0" [label = "eq"]
+"X(0)$0" -> "response1(0)$13" [label = "assign"]
+"X(0)$1" -> "X(0)$0" [label = "assign"]
+"X(0)$1" -> "X(0)$0" [label = "assign"]
 "X(0)$2" -> "X(0)$1" [label = "drop"]
-"X(0)$2" -> "[<_ast.Str object at 0x10b03b910>, <_ast.Str object at 0x10b03b510>, <_ast.Str object at 0x10b03b8d0>, <_ast.Str object at 0x10b03b690>](0)" [label = "drop"]
+"[<_ast.Str object at 0x1067435d0>, <_ast.Str object at 0x106743750>, <_ast.Str object at 0x106743050>, <_ast.Str object at 0x106743ed0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"X(0)$2" -> "[<_ast.Str object at 0x1067435d0>, <_ast.Str object at 0x106743750>, <_ast.Str object at 0x106743050>, <_ast.Str object at 0x106743ed0>](0)" [label = "drop"]
 "X(0)$2" -> "1(0)" [label = "drop"]
 "X(0)$3" -> "X(0)$2" [label = "dropna"]
+"sklearn.cluster" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"KMeans" -> "sklearn.cluster" [label = "import"]
+"KMeans(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"KMeans(0)" -> "KMeans" [label = "assign"]
+"numpy" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "import"]
+"np(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"np(0)" -> "numpy" [label = "assign"]
+"4(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "kmeans(0)$0" -> "4(0)" [label = "KMeans"]
+"k-means++(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "kmeans(0)$0" -> "k-means++(0)" [label = "KMeans"]
 "kmeans(0)$0" -> "300(0)" [label = "KMeans"]
 "kmeans(0)$0" -> "10(0)" [label = "KMeans"]
+"0(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "kmeans(0)$0" -> "0(0)" [label = "KMeans"]
 "X(0)$4" -> "X(0)$3" [label = "fit_predict"]
 "X(0)$4" -> "kmeans(0)$0" [label = "fit_predict"]
 "X(0)$4" -> "X(0)$4" [label = "fit_predict"]
+"Group A Cluster Elements: (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[0]" -> "Group A Cluster Elements: (0)" [label = "print"]
 "cluster_elements(0)$0" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$0" -> "X(0)$4" [label = "list"]
+"cluster(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "cluster_elements(0)$0" -> "cluster(0)" [label = "list"]
 "cluster_elements(0)$0" -> "0(0)" [label = "list"]
 "cluster_elements(0)$0" -> "5(0)" [label = "list"]
-"temp(0)$0" -> "response1(0)$13" [label = "eq"]
-"temp(0)$0" -> "response1(0)$13" [label = "eq"]
-"temp(0)$0" -> "provider_id(0)" [label = "eq"]
-"temp(0)$0" -> "cluster_elements(0)$0" [label = "eq"]
-"j(0)$0" -> "1(0)" [label = "eq"]
+"temp(0)$0" -> "response1(0)$13" [label = "assign"]
+"temp(0)$0" -> "response1(0)$13" [label = "assign"]
+"temp(0)$0" -> "provider_id(0)" [label = "assign"]
+"temp(0)$0" -> "cluster_elements(0)$0" [label = "assign"]
+"j(0)$0" -> "1(0)" [label = "assign"]
 "i(0)" -> "temp(0)$0" [label = "Iter"]
 "row(0)" -> "temp(0)$0" [label = "Iter"]
-"i(0)" -> "[<_ast.Str object at 0x10a3cd350>, <_ast.Str object at 0x10a3cdf10>, <_ast.Str object at 0x10a3cdb90>](0)" [label = "Iter"]
-"row(0)" -> "[<_ast.Str object at 0x10a3cd350>, <_ast.Str object at 0x10a3cdf10>, <_ast.Str object at 0x10a3cdb90>](0)" [label = "Iter"]
+"[<_ast.Str object at 0x106747c10>, <_ast.Str object at 0x106747f50>, <_ast.Str object at 0x106747d10>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"i(0)" -> "[<_ast.Str object at 0x106747c10>, <_ast.Str object at 0x106747f50>, <_ast.Str object at 0x106747d10>](0)" [label = "Iter"]
+"row(0)" -> "[<_ast.Str object at 0x106747c10>, <_ast.Str object at 0x106747f50>, <_ast.Str object at 0x106747d10>](0)" [label = "Iter"]
 "print[0]" -> "j(0)$0" [label = "print"]
+"	 (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[1]" -> "	 (0)" [label = "print"]
+", (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[2]" -> ", (0)" [label = "print"]
 "print[3]" -> "list(0)" [label = "print"]
 "print[4]" -> "row(0)" [label = "print"]
 "j(0)$1" -> "1(0)" [label = "Add"]
 "j(0)$1" -> "j(0)$0" [label = "Add"]
+"Group B Cluster Elements: (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[0]" -> "Group B Cluster Elements: (0)" [label = "print"]
 "cluster_elements(0)$1" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$1" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$1" -> "cluster(0)" [label = "list"]
 "cluster_elements(0)$1" -> "1(0)" [label = "list"]
 "cluster_elements(0)$1" -> "5(0)" [label = "list"]
-"temp(0)$1" -> "response1(0)$13" [label = "eq"]
-"temp(0)$1" -> "response1(0)$13" [label = "eq"]
-"temp(0)$1" -> "provider_id(0)" [label = "eq"]
-"temp(0)$1" -> "cluster_elements(0)$1" [label = "eq"]
-"j(0)$2" -> "1(0)" [label = "eq"]
+"temp(0)$1" -> "response1(0)$13" [label = "assign"]
+"temp(0)$1" -> "response1(0)$13" [label = "assign"]
+"temp(0)$1" -> "provider_id(0)" [label = "assign"]
+"temp(0)$1" -> "cluster_elements(0)$1" [label = "assign"]
+"j(0)$2" -> "1(0)" [label = "assign"]
 "i(0)" -> "temp(0)$1" [label = "Iter"]
 "row(0)" -> "temp(0)$1" [label = "Iter"]
-"i(0)" -> "[<_ast.Str object at 0x10a4593d0>, <_ast.Str object at 0x10a459650>, <_ast.Str object at 0x10a459d10>](0)" [label = "Iter"]
-"row(0)" -> "[<_ast.Str object at 0x10a4593d0>, <_ast.Str object at 0x10a459650>, <_ast.Str object at 0x10a459d10>](0)" [label = "Iter"]
+"[<_ast.Str object at 0x106534750>, <_ast.Str object at 0x106534210>, <_ast.Str object at 0x106534410>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"i(0)" -> "[<_ast.Str object at 0x106534750>, <_ast.Str object at 0x106534210>, <_ast.Str object at 0x106534410>](0)" [label = "Iter"]
+"row(0)" -> "[<_ast.Str object at 0x106534750>, <_ast.Str object at 0x106534210>, <_ast.Str object at 0x106534410>](0)" [label = "Iter"]
 "print[0]" -> "j(0)$2" [label = "print"]
 "print[1]" -> "	 (0)" [label = "print"]
 "print[2]" -> ", (0)" [label = "print"]
@@ -626,21 +935,23 @@ ORDER BY
 "print[4]" -> "row(0)" [label = "print"]
 "j(0)$3" -> "1(0)" [label = "Add"]
 "j(0)$3" -> "j(0)$2" [label = "Add"]
+"Group C Cluster Elements: (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[0]" -> "Group C Cluster Elements: (0)" [label = "print"]
 "cluster_elements(0)$2" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$2" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$2" -> "cluster(0)" [label = "list"]
 "cluster_elements(0)$2" -> "2(0)" [label = "list"]
 "cluster_elements(0)$2" -> "5(0)" [label = "list"]
-"temp(0)$2" -> "response1(0)$13" [label = "eq"]
-"temp(0)$2" -> "response1(0)$13" [label = "eq"]
-"temp(0)$2" -> "provider_id(0)" [label = "eq"]
-"temp(0)$2" -> "cluster_elements(0)$2" [label = "eq"]
-"j(0)$4" -> "1(0)" [label = "eq"]
+"temp(0)$2" -> "response1(0)$13" [label = "assign"]
+"temp(0)$2" -> "response1(0)$13" [label = "assign"]
+"temp(0)$2" -> "provider_id(0)" [label = "assign"]
+"temp(0)$2" -> "cluster_elements(0)$2" [label = "assign"]
+"j(0)$4" -> "1(0)" [label = "assign"]
 "i(0)" -> "temp(0)$2" [label = "Iter"]
 "row(0)" -> "temp(0)$2" [label = "Iter"]
-"i(0)" -> "[<_ast.Str object at 0x10a10f990>, <_ast.Str object at 0x10a10f6d0>, <_ast.Str object at 0x10a10ff50>](0)" [label = "Iter"]
-"row(0)" -> "[<_ast.Str object at 0x10a10f990>, <_ast.Str object at 0x10a10f6d0>, <_ast.Str object at 0x10a10ff50>](0)" [label = "Iter"]
+"[<_ast.Str object at 0x10671f650>, <_ast.Str object at 0x10671f690>, <_ast.Str object at 0x10671f6d0>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"i(0)" -> "[<_ast.Str object at 0x10671f650>, <_ast.Str object at 0x10671f690>, <_ast.Str object at 0x10671f6d0>](0)" [label = "Iter"]
+"row(0)" -> "[<_ast.Str object at 0x10671f650>, <_ast.Str object at 0x10671f690>, <_ast.Str object at 0x10671f6d0>](0)" [label = "Iter"]
 "print[0]" -> "j(0)$4" [label = "print"]
 "print[1]" -> "	 (0)" [label = "print"]
 "print[2]" -> ", (0)" [label = "print"]
@@ -648,21 +959,24 @@ ORDER BY
 "print[4]" -> "row(0)" [label = "print"]
 "j(0)$5" -> "1(0)" [label = "Add"]
 "j(0)$5" -> "j(0)$4" [label = "Add"]
+"Group D Cluster Elements: (0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "print[0]" -> "Group D Cluster Elements: (0)" [label = "print"]
 "cluster_elements(0)$3" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$3" -> "X(0)$4" [label = "list"]
 "cluster_elements(0)$3" -> "cluster(0)" [label = "list"]
+"3(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "cluster_elements(0)$3" -> "3(0)" [label = "list"]
 "cluster_elements(0)$3" -> "5(0)" [label = "list"]
-"temp(0)$3" -> "response1(0)$13" [label = "eq"]
-"temp(0)$3" -> "response1(0)$13" [label = "eq"]
-"temp(0)$3" -> "provider_id(0)" [label = "eq"]
-"temp(0)$3" -> "cluster_elements(0)$3" [label = "eq"]
-"j(0)$6" -> "1(0)" [label = "eq"]
+"temp(0)$3" -> "response1(0)$13" [label = "assign"]
+"temp(0)$3" -> "response1(0)$13" [label = "assign"]
+"temp(0)$3" -> "provider_id(0)" [label = "assign"]
+"temp(0)$3" -> "cluster_elements(0)$3" [label = "assign"]
+"j(0)$6" -> "1(0)" [label = "assign"]
 "i(0)" -> "temp(0)$3" [label = "Iter"]
 "row(0)" -> "temp(0)$3" [label = "Iter"]
-"i(0)" -> "[<_ast.Str object at 0x10a11be90>, <_ast.Str object at 0x10a11ba90>, <_ast.Str object at 0x10a11be50>](0)" [label = "Iter"]
-"row(0)" -> "[<_ast.Str object at 0x10a11be90>, <_ast.Str object at 0x10a11ba90>, <_ast.Str object at 0x10a11be50>](0)" [label = "Iter"]
+"[<_ast.Str object at 0x105b201d0>, <_ast.Str object at 0x105b20450>, <_ast.Str object at 0x105b20650>](0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"i(0)" -> "[<_ast.Str object at 0x105b201d0>, <_ast.Str object at 0x105b20450>, <_ast.Str object at 0x105b20650>](0)" [label = "Iter"]
+"row(0)" -> "[<_ast.Str object at 0x105b201d0>, <_ast.Str object at 0x105b20450>, <_ast.Str object at 0x105b20650>](0)" [label = "Iter"]
 "print[0]" -> "j(0)$6" [label = "print"]
 "print[1]" -> "	 (0)" [label = "print"]
 "print[2]" -> ", (0)" [label = "print"]
@@ -696,21 +1010,29 @@ ORDER BY
 "mean_score4(1)$0" -> "3(1)" [label = "mean"]
 "mean_score4(1)$0" -> "col(1)" [label = "mean"]
 "trace1(1)$0" -> "go(1)" [label = "Bar"]
-"trace1(1)$0" -> "[<_ast.Str object at 0x10a250790>, <_ast.Str object at 0x10a2507d0>, <_ast.Str object at 0x10a250810>, <_ast.Str object at 0x10a250850>](1)" [label = "Bar"]
-"trace1(1)$0" -> "[<_ast.Name object at 0x10a250910>, <_ast.Name object at 0x10a250950>, <_ast.Name object at 0x10a250990>, <_ast.Name object at 0x10a2509d0>](1)" [label = "Bar"]
+"trace1(1)$0" -> "[<_ast.Str object at 0x105b158d0>, <_ast.Str object at 0x105b15910>, <_ast.Str object at 0x105b15950>, <_ast.Str object at 0x105b15990>](1)" [label = "Bar"]
+"trace1(1)$0" -> "[<_ast.Name object at 0x105b15a50>, <_ast.Name object at 0x105b15a90>, <_ast.Name object at 0x105b15ad0>, <_ast.Name object at 0x105b15b10>](1)" [label = "Bar"]
 "trace1(1)$0" -> "h(1)" [label = "Bar"]
 "trace1(1)$0" -> "dict(1)" [label = "Bar"]
-"trace1(1)$0" -> "[<_ast.Str object at 0x10a250bd0>, <_ast.Str object at 0x10a250c10>, <_ast.Str object at 0x10a250c50>, <_ast.Str object at 0x10a250c90>](1)" [label = "Bar"]
+"trace1(1)$0" -> "[<_ast.Str object at 0x105b15d10>, <_ast.Str object at 0x105b15d50>, <_ast.Str object at 0x105b15d90>, <_ast.Str object at 0x105b15dd0>](1)" [label = "Bar"]
+"average_hcc_score(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "f1(0)$0" -> "average_hcc_score(0)" [label = "plot_cluster_variables"]
+"total_snf_charge_amount(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "f2(0)$0" -> "total_snf_charge_amount(0)" [label = "plot_cluster_variables"]
+"distinct_beneficiaries_per_provider(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "f3(0)$0" -> "distinct_beneficiaries_per_provider(0)" [label = "plot_cluster_variables"]
+"total_snf_medicare_payment_amount(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "f4(0)$0" -> "total_snf_medicare_payment_amount(0)" [label = "plot_cluster_variables"]
 "fig(0)$15" -> "tools(0)" [label = "make_subplots"]
 "fig(0)$15" -> "2(0)" [label = "make_subplots"]
 "fig(0)$15" -> "2(0)" [label = "make_subplots"]
+"HCC_Risk_Score mean of Groups(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "fig(0)$15" -> "HCC_Risk_Score mean of Groups(0)" [label = "make_subplots"]
+"Total_SNF_Charge mean of Groups(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "fig(0)$15" -> "Total_SNF_Charge mean of Groups(0)" [label = "make_subplots"]
+"Distinct_Beneficiaries mean of Groups(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "fig(0)$15" -> "Distinct_Beneficiaries mean of Groups(0)" [label = "make_subplots"]
+"Total_SNF_medicare_payment mean of Groups(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
 "fig(0)$15" -> "Total_SNF_medicare_payment mean of Groups(0)" [label = "make_subplots"]
 "fig(0)$16" -> "fig(0)$15" [label = "append_trace"]
 "fig(0)$16" -> "f1(0)$0" [label = "append_trace"]
@@ -732,31 +1054,31 @@ ORDER BY
 "iplot[0]" -> "fig(0)$20" [label = "iplot"]
 "iplot[1]" -> "simple-subplot(0)" [label = "iplot"]
 "col(2)" -> "generate_hist_plots[0]" [label = "_argToVar"]
-"c1(2)$0" -> "X(2)" [label = "eq"]
-"c1(2)$0" -> "X(2)" [label = "eq"]
-"c1(2)$0" -> "cluster(2)" [label = "eq"]
-"c1(2)$0" -> "0(2)" [label = "eq"]
+"c1(2)$0" -> "X(2)" [label = "assign"]
+"c1(2)$0" -> "X(2)" [label = "assign"]
+"c1(2)$0" -> "cluster(2)" [label = "assign"]
+"c1(2)$0" -> "0(2)" [label = "assign"]
 "trace1(2)$0" -> "go(2)" [label = "Histogram"]
 "trace1(2)$0" -> "c1(2)$0" [label = "Histogram"]
 "trace1(2)$0" -> "col(2)" [label = "Histogram"]
-"c2(2)$0" -> "X(2)" [label = "eq"]
-"c2(2)$0" -> "X(2)" [label = "eq"]
-"c2(2)$0" -> "cluster(2)" [label = "eq"]
-"c2(2)$0" -> "1(2)" [label = "eq"]
+"c2(2)$0" -> "X(2)" [label = "assign"]
+"c2(2)$0" -> "X(2)" [label = "assign"]
+"c2(2)$0" -> "cluster(2)" [label = "assign"]
+"c2(2)$0" -> "1(2)" [label = "assign"]
 "trace2(2)$0" -> "go(2)" [label = "Histogram"]
 "trace2(2)$0" -> "c2(2)$0" [label = "Histogram"]
 "trace2(2)$0" -> "col(2)" [label = "Histogram"]
-"c3(2)$0" -> "X(2)" [label = "eq"]
-"c3(2)$0" -> "X(2)" [label = "eq"]
-"c3(2)$0" -> "cluster(2)" [label = "eq"]
-"c3(2)$0" -> "2(2)" [label = "eq"]
+"c3(2)$0" -> "X(2)" [label = "assign"]
+"c3(2)$0" -> "X(2)" [label = "assign"]
+"c3(2)$0" -> "cluster(2)" [label = "assign"]
+"c3(2)$0" -> "2(2)" [label = "assign"]
 "trace3(2)$0" -> "go(2)" [label = "Histogram"]
 "trace3(2)$0" -> "c3(2)$0" [label = "Histogram"]
 "trace3(2)$0" -> "col(2)" [label = "Histogram"]
-"c4(2)$0" -> "X(2)" [label = "eq"]
-"c4(2)$0" -> "X(2)" [label = "eq"]
-"c4(2)$0" -> "cluster(2)" [label = "eq"]
-"c4(2)$0" -> "3(2)" [label = "eq"]
+"c4(2)$0" -> "X(2)" [label = "assign"]
+"c4(2)$0" -> "X(2)" [label = "assign"]
+"c4(2)$0" -> "cluster(2)" [label = "assign"]
+"c4(2)$0" -> "3(2)" [label = "assign"]
 "trace4(2)$0" -> "go(2)" [label = "Histogram"]
 "trace4(2)$0" -> "c4(2)$0" [label = "Histogram"]
 "trace4(2)$0" -> "col(2)" [label = "Histogram"]
@@ -794,12 +1116,15 @@ ORDER BY
 "fig(2)$5" -> "fig(2)$4" [label = "update"]
 "iplot[0]" -> "fig(2)$5" [label = "iplot"]
 "iplot[1]" -> "simple-subplot(2)" [label = "iplot"]
-"col(0)$0" -> "white_beneficiaries(0)" [label = "eq"]
+"white_beneficiaries(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"col(0)$0" -> "white_beneficiaries(0)" [label = "assign"]
 "generate_hist_plots[0]" -> "col(0)$0" [label = "generate_hist_plots"]
-"col(0)$1" -> "black_beneficiaries(0)" [label = "eq"]
+"black_beneficiaries(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"col(0)$1" -> "black_beneficiaries(0)" [label = "assign"]
 "generate_hist_plots[0]" -> "col(0)$1" [label = "generate_hist_plots"]
-"col(0)$2" -> "distinct_beneficiaries_per_provider(0)" [label = "eq"]
+"col(0)$2" -> "distinct_beneficiaries_per_provider(0)" [label = "assign"]
 "generate_hist_plots[0]" -> "col(0)$2" [label = "generate_hist_plots"]
-"col(0)$3" -> "total_stays(0)" [label = "eq"]
+"total_stays(0)" -> "deep-healthcare-analysis-using-bigquery.ipynb" [label = "appears"]
+"col(0)$3" -> "total_stays(0)" [label = "assign"]
 "generate_hist_plots[0]" -> "col(0)$3" [label = "generate_hist_plots"]
 }

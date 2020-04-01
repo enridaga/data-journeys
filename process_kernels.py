@@ -39,7 +39,7 @@ for f in files:
 
         s = open(srcdir + f[:-5] + "py", "w")
         s.write(src)
-        collector = DJ.FindDependencies()
+        collector = DJ.FindDependencies(f)
         try:
             collector.collect(src)
             g = collector.getStringCollected()

@@ -1,15 +1,33 @@
 digraph { 
+"google.cloud" -> "group-by-having-count.ipynb" [label = "import"]
+"bigquery" -> "google.cloud" [label = "import"]
+"bigquery(0)" -> "group-by-having-count.ipynb" [label = "appears"]
+"bigquery(0)" -> "bigquery" [label = "assign"]
 "client(0)$0" -> "bigquery(0)" [label = "Client"]
 "dataset_ref(0)$0" -> "client(0)$0" [label = "dataset"]
+"hacker_news(0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "dataset_ref(0)$0" -> "hacker_news(0)" [label = "dataset"]
+"bigquery-public-data(0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "dataset_ref(0)$0" -> "bigquery-public-data(0)" [label = "dataset"]
 "dataset(0)$0" -> "client(0)$0" [label = "get_dataset"]
 "dataset(0)$0" -> "dataset_ref(0)$0" [label = "get_dataset"]
 "table_ref(0)$0" -> "dataset_ref(0)$0" [label = "table"]
+"comments(0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "table_ref(0)$0" -> "comments(0)" [label = "table"]
 "table(0)$0" -> "client(0)$0" [label = "get_table"]
 "table(0)$0" -> "table_ref(0)$0" [label = "get_table"]
 "client(0)$1" -> "client(0)$0" [label = "to_dataframe"]
+"
+
+                SELECT parent, COUNT(id)
+
+                FROM `bigquery-public-data.hacker_news.comments`
+
+                GROUP BY parent
+
+                HAVING COUNT(id) > 10
+
+                (0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "query_popular(0)$0" -> "
 
                 SELECT parent, COUNT(id)
@@ -20,8 +38,9 @@ digraph {
 
                 HAVING COUNT(id) > 10
 
-                (0)" [label = "eq"]
+                (0)" [label = "assign"]
 "safe_config(0)$0" -> "bigquery(0)" [label = "QueryJobConfig"]
+"10(0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "safe_config(0)$0" -> "10(0)" [label = "QueryJobConfig"]
 "safe_config(0)$0" -> "10(0)" [label = "QueryJobConfig"]
 "query_job(0)$0" -> "client(0)$1" [label = "query"]
@@ -29,6 +48,17 @@ digraph {
 "query_job(0)$0" -> "safe_config(0)$0" [label = "query"]
 "popular_comments(0)$0" -> "query_job(0)$0" [label = "to_dataframe"]
 "popular_comments(0)$1" -> "popular_comments(0)$0" [label = "head"]
+"
+
+                 SELECT parent, COUNT(1) AS NumPosts
+
+                 FROM `bigquery-public-data.hacker_news.comments`
+
+                 GROUP BY parent
+
+                 HAVING COUNT(1) > 10
+
+                 (0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "query_improved(0)$0" -> "
 
                  SELECT parent, COUNT(1) AS NumPosts
@@ -39,7 +69,7 @@ digraph {
 
                  HAVING COUNT(1) > 10
 
-                 (0)" [label = "eq"]
+                 (0)" [label = "assign"]
 "safe_config(0)$1" -> "bigquery(0)" [label = "QueryJobConfig"]
 "safe_config(0)$1" -> "10(0)" [label = "QueryJobConfig"]
 "safe_config(0)$1" -> "10(0)" [label = "QueryJobConfig"]
@@ -48,6 +78,15 @@ digraph {
 "query_job(0)$1" -> "safe_config(0)$1" [label = "query"]
 "improved_df(0)$0" -> "query_job(0)$1" [label = "to_dataframe"]
 "improved_df(0)$1" -> "improved_df(0)$0" [label = "head"]
+"
+
+             SELECT parent, COUNT(id)
+
+             FROM `bigquery-public-data.hacker_news.comments`
+
+             GROUP BY parent
+
+             (0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "query_good(0)$0" -> "
 
              SELECT parent, COUNT(id)
@@ -56,7 +95,16 @@ digraph {
 
              GROUP BY parent
 
-             (0)" [label = "eq"]
+             (0)" [label = "assign"]
+"
+
+            SELECT author, parent, COUNT(id)
+
+            FROM `bigquery-public-data.hacker_news.comments`
+
+            GROUP BY parent
+
+            (0)" -> "group-by-having-count.ipynb" [label = "appears"]
 "query_bad(0)$0" -> "
 
             SELECT author, parent, COUNT(id)
@@ -65,5 +113,5 @@ digraph {
 
             GROUP BY parent
 
-            (0)" [label = "eq"]
+            (0)" [label = "assign"]
 }

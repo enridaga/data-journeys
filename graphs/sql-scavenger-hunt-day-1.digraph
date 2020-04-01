@@ -1,14 +1,24 @@
 digraph { 
+"bq_helper" -> "sql-scavenger-hunt-day-1.ipynb" [label = "import"]
+"bq_helper(0)" -> "sql-scavenger-hunt-day-1.ipynb" [label = "appears"]
+"bq_helper(0)" -> "bq_helper" [label = "assign"]
 "open_aq(0)$0" -> "bq_helper(0)" [label = "BigQueryHelper"]
+"bigquery-public-data(0)" -> "sql-scavenger-hunt-day-1.ipynb" [label = "appears"]
 "open_aq(0)$0" -> "bigquery-public-data(0)" [label = "BigQueryHelper"]
+"openaq(0)" -> "sql-scavenger-hunt-day-1.ipynb" [label = "appears"]
 "open_aq(0)$0" -> "openaq(0)" [label = "BigQueryHelper"]
 "open_aq(0)$1" -> "open_aq(0)$0" [label = "list_tables"]
 "open_aq(0)$2" -> "open_aq(0)$1" [label = "head"]
+"global_air_quality(0)" -> "sql-scavenger-hunt-day-1.ipynb" [label = "appears"]
 "open_aq(0)$2" -> "global_air_quality(0)" [label = "head"]
+"SELECT city
+            FROM `bigquery-public-data.openaq.global_air_quality`
+            WHERE country = 'US'
+        (0)" -> "sql-scavenger-hunt-day-1.ipynb" [label = "appears"]
 "query(0)$0" -> "SELECT city
             FROM `bigquery-public-data.openaq.global_air_quality`
             WHERE country = 'US'
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "us_cities(0)$0" -> "open_aq(0)$2" [label = "query_to_pandas_safe"]
 "us_cities(0)$0" -> "query(0)$0" [label = "query_to_pandas_safe"]
 "us_cities(0)$1" -> "us_cities(0)$0" [label = "head"]

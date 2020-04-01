@@ -1,11 +1,16 @@
 digraph { 
+"collections" -> "six-steps-to-more-professional-data-science-code.ipynb" [label = "import"]
+"collections(0)" -> "six-steps-to-more-professional-data-science-code.ipynb" [label = "appears"]
+"collections(0)" -> "collections" [label = "assign"]
 "values(1)" -> "find_most_common[0]" [label = "_argToVar"]
 "list_counts(1)$0" -> "collections(1)" [label = "Counter"]
 "list_counts(1)$0" -> "values(1)" [label = "Counter"]
 "top_two_values(1)$0" -> "list_counts(1)$0" [label = "most_common"]
 "top_two_values(1)$0" -> "2(1)" [label = "most_common"]
-"values_list(0)$0" -> "[<_ast.Num object at 0x10adfdad0>, <_ast.Num object at 0x10adfd3d0>, <_ast.Num object at 0x10adfd2d0>, <_ast.Num object at 0x10adfd1d0>, <_ast.Num object at 0x10adfd550>, <_ast.Num object at 0x10adfddd0>, <_ast.Num object at 0x10adfd8d0>](0)" [label = "eq"]
+"[<_ast.Num object at 0x1066e21d0>, <_ast.Num object at 0x1066e2e10>, <_ast.Num object at 0x1066e2c50>, <_ast.Num object at 0x1066e2e90>, <_ast.Num object at 0x1066e2a50>, <_ast.Num object at 0x1066e2790>, <_ast.Num object at 0x1066e2bd0>](0)" -> "six-steps-to-more-professional-data-science-code.ipynb" [label = "appears"]
+"values_list(0)$0" -> "[<_ast.Num object at 0x1066e21d0>, <_ast.Num object at 0x1066e2e10>, <_ast.Num object at 0x1066e2c50>, <_ast.Num object at 0x1066e2e90>, <_ast.Num object at 0x1066e2a50>, <_ast.Num object at 0x1066e2790>, <_ast.Num object at 0x1066e2bd0>](0)" [label = "assign"]
 "find_most_common[0]" -> "values_list(0)$0" [label = "find_most_common"]
-"values_list(0)$1" -> "[<_ast.Num object at 0x10adfd7d0>, <_ast.Num object at 0x10adfd090>, <_ast.Num object at 0x10adfd890>, <_ast.Num object at 0x10adfd150>, <_ast.Num object at 0x10adfde10>, <_ast.Num object at 0x10adfd5d0>, <_ast.Num object at 0x10adfd810>, <_ast.Num object at 0x10adfdc10>, <_ast.Num object at 0x10adfd390>](0)" [label = "eq"]
+"[<_ast.Num object at 0x105bce090>, <_ast.Num object at 0x105bce350>, <_ast.Num object at 0x105bce250>, <_ast.Num object at 0x105bce4d0>, <_ast.Num object at 0x105bcec10>, <_ast.Num object at 0x105bced10>, <_ast.Num object at 0x105bced90>, <_ast.Num object at 0x105bce5d0>, <_ast.Num object at 0x105bceed0>](0)" -> "six-steps-to-more-professional-data-science-code.ipynb" [label = "appears"]
+"values_list(0)$1" -> "[<_ast.Num object at 0x105bce090>, <_ast.Num object at 0x105bce350>, <_ast.Num object at 0x105bce250>, <_ast.Num object at 0x105bce4d0>, <_ast.Num object at 0x105bcec10>, <_ast.Num object at 0x105bced10>, <_ast.Num object at 0x105bced90>, <_ast.Num object at 0x105bce5d0>, <_ast.Num object at 0x105bceed0>](0)" [label = "assign"]
 "find_most_common[0]" -> "values_list(0)$1" [label = "find_most_common"]
 }

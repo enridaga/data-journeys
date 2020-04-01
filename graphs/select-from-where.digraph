@@ -1,19 +1,36 @@
 digraph { 
+"google.cloud" -> "select-from-where.ipynb" [label = "import"]
+"bigquery" -> "google.cloud" [label = "import"]
+"bigquery(0)" -> "select-from-where.ipynb" [label = "appears"]
+"bigquery(0)" -> "bigquery" [label = "assign"]
 "client(0)$0" -> "bigquery(0)" [label = "Client"]
 "dataset_ref(0)$0" -> "client(0)$0" [label = "dataset"]
+"openaq(0)" -> "select-from-where.ipynb" [label = "appears"]
 "dataset_ref(0)$0" -> "openaq(0)" [label = "dataset"]
+"bigquery-public-data(0)" -> "select-from-where.ipynb" [label = "appears"]
 "dataset_ref(0)$0" -> "bigquery-public-data(0)" [label = "dataset"]
 "dataset(0)$0" -> "client(0)$0" [label = "get_dataset"]
 "dataset(0)$0" -> "dataset_ref(0)$0" [label = "get_dataset"]
 "tables(0)$0" -> "client(0)$0" [label = "list"]
 "tables(0)$0" -> "dataset(0)$0" [label = "list"]
+"table(0)" -> "select-from-where.ipynb" [label = "appears"]
 "table(0)" -> "tables(0)$0" [label = "Iter"]
 "print[0]" -> "table(0)" [label = "print"]
 "table_ref(0)$0" -> "dataset_ref(0)$0" [label = "table"]
+"global_air_quality(0)" -> "select-from-where.ipynb" [label = "appears"]
 "table_ref(0)$0" -> "global_air_quality(0)" [label = "table"]
 "table(0)$0" -> "client(0)$0" [label = "get_table"]
 "table(0)$0" -> "table_ref(0)$0" [label = "get_table"]
 "client(0)$1" -> "client(0)$0" [label = "to_dataframe"]
+"
+
+        SELECT city
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = 'US'
+
+        (0)" -> "select-from-where.ipynb" [label = "appears"]
 "query(0)$0" -> "
 
         SELECT city
@@ -22,12 +39,21 @@ digraph {
 
         WHERE country = 'US'
 
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "client(0)$2" -> "bigquery(0)" [label = "Client"]
 "query_job(0)$0" -> "client(0)$2" [label = "query"]
 "query_job(0)$0" -> "query(0)$0" [label = "query"]
 "us_cities(0)$0" -> "query_job(0)$0" [label = "to_dataframe"]
 "us_cities(0)$1" -> "us_cities(0)$0" [label = "head"]
+"
+
+        SELECT city, country
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = 'US'
+
+        (0)" -> "select-from-where.ipynb" [label = "appears"]
 "query(0)$1" -> "
 
         SELECT city, country
@@ -36,7 +62,16 @@ digraph {
 
         WHERE country = 'US'
 
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
+"
+
+        SELECT *
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = 'US'
+
+        (0)" -> "select-from-where.ipynb" [label = "appears"]
 "query(0)$2" -> "
 
         SELECT *
@@ -45,7 +80,16 @@ digraph {
 
         WHERE country = 'US'
 
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
+"
+
+        SELECT score, title
+
+        FROM `bigquery-public-data.hacker_news.full`
+
+        WHERE type = "job" 
+
+        (0)" -> "select-from-where.ipynb" [label = "appears"]
 "query(0)$3" -> "
 
         SELECT score, title
@@ -54,13 +98,15 @@ digraph {
 
         WHERE type = "job" 
 
-        (0)" [label = "eq"]
+        (0)" [label = "assign"]
 "dry_run_config(0)$0" -> "bigquery(0)" [label = "QueryJobConfig"]
 "dry_run_query_job(0)$0" -> "client(0)$2" [label = "query"]
 "dry_run_query_job(0)$0" -> "query(0)$3" [label = "query"]
 "dry_run_query_job(0)$0" -> "dry_run_config(0)$0" [label = "query"]
+"This query will process {} bytes.(0)" -> "select-from-where.ipynb" [label = "appears"]
 "print[0]" -> "This query will process {} bytes.(0)" [label = "print"]
 "print[1]" -> "dry_run_query_job(0)$0" [label = "print"]
+"1000(0)" -> "select-from-where.ipynb" [label = "appears"]
 "ONE_MB(0)$0" -> "1000(0)" [label = "Mult"]
 "ONE_MB(0)$0" -> "1000(0)" [label = "Mult"]
 "safe_config(0)$0" -> "bigquery(0)" [label = "QueryJobConfig"]
