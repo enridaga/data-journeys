@@ -22,7 +22,7 @@ import re
 indir = "kernels/"
 srcdir = "sources/"
 outdir = "graphs/"
-imgdir = "images/"
+
 files = [f for f in listdir(indir) if isfile(join(indir, f))]
 for f in files:
     with open(indir + f) as notebook:

@@ -187,7 +187,7 @@ class FindDependencies(ast.NodeVisitor):
     scope = self.__scope(node)
     v = node.value
     leaves = self._collectLeaves(v)
-    func = "eq"
+    func = "assign"
     if type(v) is ast.BinOp:
       func = str(type(v.op).__name__)
     if type(v) is ast.Call:
@@ -271,3 +271,12 @@ class FindDependencies(ast.NodeVisitor):
   def collect(self, source):
     tree = ast.parse(source)
     self.visit(tree)
+  
+  def getGraph(self, notebook):
+    tmp_str = "digraph { \n"
+    for t in self._bag:
+      tmp_str = tmp_str + "\"" + notebook + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
+      tmp_str = tmp_str + "\"" + notebook + "\""+ " -> " + "\"" + t[2] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
+      tmp_str = tmp_str + "\"" + t[2] + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"" + t[1] + "\"]"  + "\n"
+    tmp_str = tmp_str + "}"
+    return tmp_str
