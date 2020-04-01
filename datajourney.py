@@ -2,8 +2,14 @@
 import ast
 #import showast
 
+# 
+#
+
 class FindDependencies(ast.NodeVisitor):
 
+  def __init__(self, notebook):
+    self._notebook = notebook
+  
   def _collectLeaves(self, v):
     bag = []
     # TODO: Expand supported types?
@@ -50,6 +56,13 @@ class FindDependencies(ast.NodeVisitor):
       self._vars = {}
     if symbol in self._vars.keys():
       return self._vars[symbol][-1]
+    # This symbol was never found before, let's map it to the notebook if in the outer scope
+    if scope_index == 0:
+      if not hasattr(self, '_appeared'):
+        self._appeared = []
+      if symbol not in self._appeared:
+        self.__collect(self._notebook, "appears", symbol)
+        self._appeared.append(symbol)
     return symbol
 
   def __collect(self, source, func, target):
@@ -96,7 +109,29 @@ class FindDependencies(ast.NodeVisitor):
       return tt
   
 ### Visitor
-
+  def visit_Import(self, node): # node.names
+    scope = self.__scope(node)
+    func = "import"
+    #print(vars(node), node.names)
+    for alias in node.names:
+      s = str(alias.name) # the module is a constant as it needs to be the same in all notebooks
+      self.__collect(self._notebook, func, s)
+      o = self.__variable(str(alias.asname or alias.name), scope) # the variable, instead, needs to be different for each notebook
+      self.__collect(s, "assign", o)
+    self.generic_visit(node)
+  
+  def visit_ImportFrom(self, node): # (identifier? module, alias* names, int? level)
+    scope = self.__scope(node)
+    func = "import"
+    m = str(node.module) # the module is a constant as it needs to be the same in all notebooks
+    self.__collect(self._notebook, func, m)
+    for alias in node.names:
+      s = str(alias.name)  # the module is a constant as it needs to be the same in all notebooks
+      self.__collect(m, func, s)
+      o = self.__variable(str(alias.asname or alias.name), scope)
+      self.__collect(s, "assign", o)
+    self.generic_visit(node)
+  
   def visit_Module(self, node):
     self.__scopeOpen(node)
     self.generic_visit(node)
@@ -272,11 +307,11 @@ class FindDependencies(ast.NodeVisitor):
     tree = ast.parse(source)
     self.visit(tree)
   
-  def getGraph(self, notebook):
-    tmp_str = "digraph { \n"
-    for t in self._bag:
-      tmp_str = tmp_str + "\"" + notebook + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
-      tmp_str = tmp_str + "\"" + notebook + "\""+ " -> " + "\"" + t[2] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
-      tmp_str = tmp_str + "\"" + t[2] + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"" + t[1] + "\"]"  + "\n"
-    tmp_str = tmp_str + "}"
-    return tmp_str
+  # def getGraph(self):
+  #   tmp_str = "digraph { \n"
+  #   for t in self._bag:
+  #     tmp_str = tmp_str + "\"" + self._notebook + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
+  #     tmp_str = tmp_str + "\"" + self._notebook + "\""+ " -> " + "\"" + t[2] + "\"" +  " [label = \"_includesNode\"]"  + "\n"
+  #     tmp_str = tmp_str + "\"" + t[2] + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"" + t[1] + "\"]"  + "\n"
+  #   tmp_str = tmp_str + "}"
+  #   return tmp_str
