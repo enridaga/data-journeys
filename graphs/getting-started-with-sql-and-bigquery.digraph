@@ -1,0 +1,18 @@
+digraph { 
+"client(0)$0" -> "bigquery(0)" [label = "Client"]
+"dataset_ref(0)$0" -> "client(0)$0" [label = "dataset"]
+"dataset_ref(0)$0" -> "hacker_news(0)" [label = "dataset"]
+"dataset_ref(0)$0" -> "bigquery-public-data(0)" [label = "dataset"]
+"dataset(0)$0" -> "client(0)$0" [label = "get_dataset"]
+"dataset(0)$0" -> "dataset_ref(0)$0" [label = "get_dataset"]
+"tables(0)$0" -> "client(0)$0" [label = "list"]
+"tables(0)$0" -> "dataset(0)$0" [label = "list"]
+"table(0)" -> "tables(0)$0" [label = "Iter"]
+"print[0]" -> "table(0)" [label = "print"]
+"table_ref(0)$0" -> "dataset_ref(0)$0" [label = "table"]
+"table_ref(0)$0" -> "full(0)" [label = "table"]
+"table(0)$0" -> "client(0)$0" [label = "get_table"]
+"table(0)$0" -> "table_ref(0)$0" [label = "get_table"]
+"client(0)$1" -> "client(0)$0" [label = "to_dataframe"]
+"client(0)$2" -> "client(0)$1" [label = "to_dataframe"]
+}

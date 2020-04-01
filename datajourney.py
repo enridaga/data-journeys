@@ -77,6 +77,8 @@ class FindDependencies(ast.NodeVisitor):
         return sub
     elif type(sub) is ast.Attribute:
         return self._nameFromSubscript(sub.value)
+    elif type(sub) is ast.Call:
+        return self._nameFromSubscript(sub.func)
     elif 'value' in vars(sub):
         return self._nameFromSubscript(sub.value)
     elif 'id' in vars(sub):
@@ -98,10 +100,17 @@ class FindDependencies(ast.NodeVisitor):
   def visit_Module(self, node):
     self.__scopeOpen(node)
     self.generic_visit(node)
-
+  
+  def visit_ClassDef(self, node):
+    self.__scopeOpen(node)
+    self.generic_visit(node)
+      
   def collected(self):
     return self._bag;
   
+  def visit_AsyncFunctionDef(self, node):
+    self.visit_FunctionDef(node)
+    
   def visit_FunctionDef(self, node):
     scope = self.__scope(node)
     self.__scopeOpen(node)
@@ -130,6 +139,8 @@ class FindDependencies(ast.NodeVisitor):
         obj = self._nameFromSubscript(node.value.func.value).id
       elif type(node.value.func.value) is ast.Attribute:
         obj = node.value.func.value.value.id
+      elif type(node.value.func.value) is ast.Call:
+        obj = self._nameFromSubscript(node.value.func.value).id
       else:
         obj = node.value.func.value.id
       # if leaves is empty then method has no argument
