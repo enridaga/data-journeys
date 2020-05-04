@@ -1,9 +1,13 @@
 # FindDependencies
 import ast
 #import showast
-
+import networkx
 # 
 #
+from rdflib import URIRef, BNode, Literal, Namespace, Graph
+from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
+                           PROF, PROV, RDF, RDFS, SDO, SH, SKOS, SOSA, SSN, TIME, \
+                           VOID, XMLNS, XSD
 
 class FindDependencies(ast.NodeVisitor):
 
@@ -306,7 +310,43 @@ class FindDependencies(ast.NodeVisitor):
   def collect(self, source):
     tree = ast.parse(source)
     self.visit(tree)
-  
+
+
+def toRDF(name, digraph):
+    n = name
+    g = digraph
+    DJ = Namespace("http://purl.org/dj/")
+    K = Namespace("http://purl.org/dj/kaggle/")
+    L = Namespace("http://purl.org/dj/python/lib/")
+    notebook = URIRef(str(K) + n)
+    Loc = Namespace(str(K) + str(n) + "#")
+    #print(notebook)
+    rdfg = Graph()
+    rdfg.bind("rdf", RDF)
+    rdfg.bind("dj", DJ)
+    rdfg.bind("rdfs", RDFS)
+    rdfg.bind("k", K)
+    rdfg.add(( notebook, RDF.type, URIRef(str(K) + "Notebook")))
+    for edge in g.edges.data('label'):
+        pl = edge[2]
+        sl = edge[0]
+        ol = edge[1]
+        # If predicate Imports, use LIB namespace on Subject
+        if pl == "import":
+            subj = URIRef(str(L) +str(hash(sl)))
+        else:
+            subj = URIRef(str(Loc) + str(hash(sl)))
+        # If object is notebook, use Notebook entity instead
+        if ol == n:
+            obj = notebook
+        else:
+            obj = URIRef(str(Loc) + str(hash(ol)))
+        pred = URIRef(str(DJ) + pl)
+        rdfg.add((subj, RDFS.label, Literal(sl)))
+        rdfg.add((obj, RDFS.label, Literal(ol)))
+        rdfg.add((subj, pred, obj))
+    return rdfg
+
   # def getGraph(self):
   #   tmp_str = "digraph { \n"
   #   for t in self._bag:
