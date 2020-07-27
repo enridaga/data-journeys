@@ -119,7 +119,7 @@ class FindDependencies(ast.NodeVisitor):
     #print(vars(node), node.names)
     for alias in node.names:
       s = str(alias.name) # the module is a constant as it needs to be the same in all notebooks
-      self.__collect(self._notebook, func, s)
+      self.__collect(self._notebook, func, s) 
       o = self.__variable(str(alias.asname or alias.name), scope) # the variable, instead, needs to be different for each notebook
       self.__collect(s, "assign", o)
     self.generic_visit(node)
@@ -128,7 +128,7 @@ class FindDependencies(ast.NodeVisitor):
     scope = self.__scope(node)
     func = "import"
     m = str(node.module) # the module is a constant as it needs to be the same in all notebooks
-    self.__collect(self._notebook, func, m)
+    self.__collect(self._notebook, func, m) # 
     for alias in node.names:
       s = str(alias.name)  # the module is a constant as it needs to be the same in all notebooks
       self.__collect(m, func, s)
