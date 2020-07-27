@@ -43,41 +43,5 @@ g = ag.read_dot(outdir + f[:-2] + "digraph")
 ######
 n = f[:-3]
 
-# def toRDF(name, digraph):
-#     n = name
-#     g = digraph
-#     DJ = Namespace("http://purl.org/dj/")
-#     K = Namespace("http://purl.org/dj/kaggle/")
-#     L = Namespace("http://purl.org/dj/python/lib/")
-#     notebook = URIRef(str(K) + n)
-#     Loc = Namespace(str(K) + str(n) + "#")
-#     #print(notebook)
-#     rdfg = Graph()
-#     rdfg.bind("rdf", RDF)
-#     rdfg.bind("dj", DJ)
-#     rdfg.bind("rdfs", RDFS)
-#     rdfg.bind("k", K)
-#     rdfg.add((getattr(K, notebook), RDF.type, getattr(K, "Notebook")))
-#     for edge in g.edges.data('label'):
-#         pl = edge[2]
-#         sl = edge[0]
-#         ol = edge[1]
-#         # If predicate Imports, use LIB namespace on Subject
-#         if pl == "import":
-#             subj = URIRef(str(L) +str(hash(sl)))
-#         else:
-#             subj = URIRef(str(Loc) + str(hash(sl)))
-#         # If object is notebook, use Notebook entity instead
-#         if ol == n:
-#             obj = notebook
-#         else:
-#             obj = URIRef(str(Loc) + str(hash(ol)))
-#         pred = URIRef(str(DJ) + pl)
-#         rdfg.add((subj, RDFS.label, Literal(sl)))
-#         rdfg.add((obj, RDFS.label, Literal(ol)))
-#         rdfg.add((subj, pred, obj))
-#     return rdfg
-    
-
 rdfg = DJ.toRDF(n, g)
 print(rdfg.serialize(format="turtle").decode("utf-8"))

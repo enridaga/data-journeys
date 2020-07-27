@@ -332,7 +332,8 @@ def toRDF(name, digraph):
         sl = edge[0]
         ol = edge[1]
         # If predicate Imports, use LIB namespace on Subject
-        if pl == "import":
+        # If the name does not have a '(' and it is not the notebook, use the lib namespace
+        if sl != n and not any(specialchar in sl for specialchar in "[()]"):
             subj = URIRef(str(L) +str(hash(sl)))
         else:
             subj = URIRef(str(Loc) + str(hash(sl)))
@@ -340,7 +341,11 @@ def toRDF(name, digraph):
         if ol == n:
             obj = notebook
         else:
-            obj = URIRef(str(Loc) + str(hash(ol)))
+            # If the name does not have a '(' and it is not the notebook, use the lib namespace
+            if ol != n and not any(specialchar in ol for specialchar in "[()]"):
+                obj = URIRef(str(L) +str(hash(ol)))
+            else:
+                obj = URIRef(str(Loc) + str(hash(ol)))
         pred = URIRef(str(DJ) + pl)
         rdfg.add((subj, RDFS.label, Literal(sl)))
         rdfg.add((obj, RDFS.label, Literal(ol)))
