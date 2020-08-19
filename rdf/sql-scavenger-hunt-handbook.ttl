@@ -1,0 +1,51 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:sql-scavenger-hunt-handbook a k:Notebook .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-6575991836186581418> rdfs:label "job_post_scores(0)$2" ;
+    dj:to_csv <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-7713144013022101797> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1799657837627647565> rdfs:label "hacker_news(0)$3" ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#9137919701953777005> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-3221374714578289241> rdfs:label "hacker_news(0)$6" ;
+    dj:query_to_pandas_safe <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1811768710192303672>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#7829319054618201881> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-7713144013022101797> rdfs:label "job_post_scores(0)$1" ;
+    dj:mean <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#4078707038892513378> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#3518272016554430278> rdfs:label "hacker_news(0)$0" ;
+    dj:BigQueryHelper <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#4993724957581839190> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#4078707038892513378> rdfs:label "job_post_scores(0)$0" ;
+    dj:query_to_pandas_safe <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1811768710192303672>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-3221374714578289241> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#4993724957581839190> rdfs:label "bq_helper(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6121850251700915481> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8788188619073785587> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#6145264955843714499> rdfs:label "hacker_news(0)$1" ;
+    dj:list_tables <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#3518272016554430278> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#6318798064326337929> rdfs:label "hacker_news(0)$4" ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1799657837627647565> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#7829319054618201881> rdfs:label "hacker_news(0)$5" ;
+    dj:estimate_query_size <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1811768710192303672>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#6318798064326337929> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#9137919701953777005> rdfs:label "hacker_news(0)$2" ;
+    dj:table_schema <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#6145264955843714499> .
+
+<http://purl.org/dj/python/lib/-8788188619073785587> rdfs:label "bq_helper" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-6121850251700915481> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#-1811768710192303672> rdfs:label "query(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6121850251700915481> .
+
+<http://purl.org/dj/python/lib/-6121850251700915481> rdfs:label "sql-scavenger-hunt-handbook.ipynb" .
+

@@ -1,0 +1,30 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:data-types-and-missing-values a k:Notebook .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#-827696004674856824> rdfs:label "reviews(0)$3" ;
+    dj:replace <http://purl.org/dj/kaggle/data-types-and-missing-values#296920171753921317> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#7510433075510631343> rdfs:label "pd(0)$0" ;
+    dj:set_option <http://purl.org/dj/kaggle/data-types-and-missing-values#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#-6587517932056236013> rdfs:label "reviews(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/data-types-and-missing-values#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#296920171753921317> rdfs:label "reviews(0)$2" ;
+    dj:fillna <http://purl.org/dj/kaggle/data-types-and-missing-values#7272967602052404259> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#7272967602052404259> rdfs:label "reviews(0)$1" ;
+    dj:astype <http://purl.org/dj/kaggle/data-types-and-missing-values#-6587517932056236013> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4936549835197815229> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-4936549835197815229> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/python/lib/-4936549835197815229> rdfs:label "data-types-and-missing-values.ipynb" .
+

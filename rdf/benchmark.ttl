@@ -1,0 +1,117 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:benchmark a k:Notebook .
+
+<http://purl.org/dj/kaggle/benchmark#-6319554824657017213> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+
+<http://purl.org/dj/kaggle/benchmark#-8026020919251239248> rdfs:label "sub(0)$4" ;
+    dj:to_csv <http://purl.org/dj/kaggle/benchmark#5106102944100570500> .
+
+<http://purl.org/dj/kaggle/benchmark#-8807122790361605066> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/benchmark#5797157234248283330> .
+
+<http://purl.org/dj/kaggle/benchmark#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/benchmark#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/benchmark#625947327614169120> rdfs:label "x(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/benchmark#-6021772251175629433> .
+
+<http://purl.org/dj/kaggle/benchmark#7520352845887405938> rdfs:label "_(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/benchmark#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/benchmark#9012744981868382944> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/benchmark#899299686243005591> .
+
+<http://purl.org/dj/kaggle/benchmark#-3200433402712198277> rdfs:label "accuracy_to_cls(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/kaggle/benchmark#-6021772251175629433> rdfs:label "accuracy_to_cls[0]" .
+
+<http://purl.org/dj/kaggle/benchmark#-6511620420329656943> rdfs:label "sample_submission(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/benchmark#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/benchmark#-7096507181852560412> rdfs:label "di(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/kaggle/benchmark#-7515772742411469227> rdfs:label "test(0)$1" ;
+    dj:drop_duplicates <http://purl.org/dj/kaggle/benchmark#-8283643172970343430>,
+        <http://purl.org/dj/kaggle/benchmark#3022939565003443949> .
+
+<http://purl.org/dj/kaggle/benchmark#-8714593475853281360> rdfs:label "test_benchmark(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/benchmark#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/benchmark#1022279215181697475> rdfs:label "test_benchmark(0)$1" ;
+    dj:contains <http://purl.org/dj/kaggle/benchmark#-8714593475853281360> .
+
+<http://purl.org/dj/kaggle/benchmark#1230941004232273224> rdfs:label "filenames(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/benchmark#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/benchmark#3022939565003443949> rdfs:label "[<_ast.Constant object at 0x1095ff5b0>, <_ast.Constant object at 0x1095ffcd0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/kaggle/benchmark#3045914102304489065> rdfs:label "sub(0)$0" ;
+    dj:merge <http://purl.org/dj/kaggle/benchmark#-6511620420329656943>,
+        <http://purl.org/dj/kaggle/benchmark#4981068276467618319> .
+
+<http://purl.org/dj/kaggle/benchmark#3099844946316795141> rdfs:label "test(0)$2" ;
+    dj:reset_index <http://purl.org/dj/kaggle/benchmark#-7515772742411469227> .
+
+<http://purl.org/dj/kaggle/benchmark#3367429738472939237> rdfs:label "sub(0)$1" ;
+    dj:merge <http://purl.org/dj/kaggle/benchmark#3045914102304489065>,
+        <http://purl.org/dj/kaggle/benchmark#5996714836879485023> .
+
+<http://purl.org/dj/kaggle/benchmark#4024216506445952965> rdfs:label "x(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/kaggle/benchmark#4981068276467618319> rdfs:label "accuracy(0)$0" ;
+    dj:reset_index <http://purl.org/dj/kaggle/benchmark#1022279215181697475> .
+
+<http://purl.org/dj/kaggle/benchmark#5797157234248283330> rdfs:label "filename(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/benchmark#1230941004232273224> .
+
+<http://purl.org/dj/kaggle/benchmark#5996714836879485023> rdfs:label "test(0)$3" ;
+    dj:map <http://purl.org/dj/kaggle/benchmark#-7096507181852560412>,
+        <http://purl.org/dj/kaggle/benchmark#3099844946316795141> .
+
+<http://purl.org/dj/kaggle/benchmark#8094635802715062670> rdfs:label "sub(0)$2" ;
+    dj:map <http://purl.org/dj/kaggle/benchmark#-3200433402712198277>,
+        <http://purl.org/dj/kaggle/benchmark#3367429738472939237>,
+        <http://purl.org/dj/kaggle/benchmark#4024216506445952965> .
+
+<http://purl.org/dj/kaggle/benchmark#899299686243005591> rdfs:label "dirname(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/benchmark#8337766070908963825> .
+
+<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3573045270270830855> .
+
+<http://purl.org/dj/kaggle/benchmark#-8283643172970343430> rdfs:label "test(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/benchmark#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/benchmark#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/benchmark#5106102944100570500> rdfs:label "sub(0)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/benchmark#5106102944100570500>,
+        <http://purl.org/dj/kaggle/benchmark#8094635802715062670> .
+
+<http://purl.org/dj/kaggle/benchmark#8337766070908963825> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3573045270270830855> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+
+<http://purl.org/dj/python/lib/3573045270270830855> rdfs:label "benchmark.ipynb" .
+

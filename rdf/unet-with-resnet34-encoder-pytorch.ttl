@@ -1,0 +1,1826 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:unet-with-resnet34-encoder-pytorch a k:Notebook .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-103420049898540892> rdfs:label "size(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8396300021609362818> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1743738559850585113> rdfs:label "print[3]" ;
+    dj:print <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#73649515022260734> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1795815417537144588> rdfs:label "loss(12)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2158558292222305342>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3524720481120032507>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8945487602509923918> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1962483069093624327> rdfs:label "self(11)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#322788374344456053>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5085414920036653919> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2027018557206431339> rdfs:label "mean(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4525935521155511735> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2147475892442350939> rdfs:label "labels(24)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6032839743552461490> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2232761601139228342> rdfs:label "num_predict(0)$0" ;
+    dj:post_process <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5851158469143334968>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3156424017184631626>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4326263029249910755> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2440978848150472119> rdfs:label "Compose(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-7578985721217502745> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2716593991298403543> rdfs:label "HorizontalFlip(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5697593527069368976> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2960879002177087604> rdfs:label "num_pos(17)$0" ;
+    dj:len <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1191359263335027867> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3149894747512343377> rdfs:label "phase(19)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3200404161318483506> rdfs:label "num_neg(17)$0" ;
+    dj:len <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4228940280699484875> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3257946129350780547> rdfs:label "start(22)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2052441563229729072> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3670661931090432664> rdfs:label "ignore_index(23)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6127624089501879257> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3734761525718419711> rdfs:label "sampler(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7763458023415780753> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-404184802868481025> rdfs:label "dice_pos(21)$0" ;
+    dj:nanmean <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4170568892093733223>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3293320393261302892> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4119495364371193283> rdfs:label "ToTensor(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2484284002821382181> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4242786901487499099> rdfs:label "time(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-424432765026875925> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4323542376670046906> rdfs:label "cudnn(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8220888567561070610> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4438366968371316903> rdfs:label "i(2)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3039392370849469639>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3361368110207010376>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9074558797476216965> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4721629422556571394> rdfs:label "dice(17)$0" ;
+    dj:cat <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4718382923502558472>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7482163600190515166> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4902539554333847454> rdfs:label "rle(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2192057644139694298> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5041787437527600366> rdfs:label "F(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-543004541706245040> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5050754287514023959> rdfs:label "dice_neg(17)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7817990297609676391>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4228940280699484875> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5102827854317144427> rdfs:label "rle(2)$2" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4306039574381226507>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5827003315487216572> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5152341889847791466> rdfs:label "warnings(0)$0" ;
+    dj:filterwarnings <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6385695650799690465> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5578218120470131287> rdfs:label "image(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6853038147350513038> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5876946611816456948> rdfs:label "self(19)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8157082558282307695>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1668107350756795308> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5933322192176343441> rdfs:label "self(4)$8" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6837905723442005647>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8207869920135888367> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-59387926332463337> rdfs:label "dice_neg(21)$0" ;
+    dj:nanmean <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4170568892093733223>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3293320393261302892> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6130763715919055822> rdfs:label "Normalize(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8482319700439686917> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6177701314797528063> rdfs:label "StratifiedKFold(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/366468418733553410> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6304558065343963102> rdfs:label "itr(28)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7291349317201858367>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9213048717104891407> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6319554824657017213> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6446866731802983787> rdfs:label "component(1)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2923634718785754990>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4052286760879945997>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5127673114186557593> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6756395860548977242> rdfs:label "torch(29)$0" ;
+    dj:save <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4301176796971516677>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7497604928479208531> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6768122341066395994> rdfs:label "probability(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7361789131507432507> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6817683975387973888> rdfs:label "ShiftScaleRotate(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7100759371591370084> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6999723427695629931> rdfs:label "iou(21)$0" ;
+    dj:nanmean <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4170568892093733223>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3293320393261302892> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7023285316072268217> rdfs:label "std(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4406917662675642> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7186987635577160894> rdfs:label "dataloader(8)$0" ;
+    dj:DataLoader <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1079959045526379871>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5394459344868486382>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7140651788939693549> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7424533458180348985> rdfs:label "dices(21)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8761709067578694370> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-791593757319029764> rdfs:label "images(33)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-51026385396583772>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9135682850963035224> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8052580311491821949> rdfs:label "start(1)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1794958354916257877> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8233091131777408498> rdfs:label "i(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2890935773134993497>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5268605331702232028>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5418994426795635065> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8385032784120849152> rdfs:label "DataLoader(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/4336864240852612861> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8427886351330342373> rdfs:label "pdb(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2413914709042738894> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8493516265750847824> rdfs:label "mean(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7043034482350144522> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8527811153607073869> rdfs:label "input(9)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7503559569555899521> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8547144859027943066> rdfs:label "self(34)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9049024603392523757> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8607385339454278976> rdfs:label "preds(16)$0" ;
+    dj:astype <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2685283682978458782>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#995901315664449231> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8667350567570438273> rdfs:label "ReduceLROnPlateau(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2102177901394598612> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8724037358987785622> rdfs:label "predictions(35)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6036011659820972739> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8807122790361605066> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4893039944929957622>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7190271349726650348> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1783163732961259864>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3936558359097404287> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8899566812279910045> rdfs:label "GaussNoise(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/4064037331929537295> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9006077553723049178> rdfs:label "self(28)$6" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6665993771396828401>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5460134273256028298> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1136556959862324009> rdfs:label "plt(0)$2" ;
+    dj:show <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3889481949934759638> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1289887396852665292> rdfs:label "std(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-146182328885545062> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1364977641637786668> rdfs:label "super(14)$0" ;
+    dj:__init__ <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-604609796383637993> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1517959609059134686> rdfs:label "torch(28)$0" ;
+    dj:empty_cache <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2743926948603143869> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2111926017022343540> rdfs:label "dice(21)$0" ;
+    dj:nanmean <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4170568892093733223>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3293320393261302892> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2232002181967709686> rdfs:label "nn(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1045136508834317799> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2274722601941058431> rdfs:label "iou(24)$0" ;
+    dj:nanmean <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6471729351420426148>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2530783662316092405> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2312549139230948935> rdfs:label "self(14)$1" ;
+    dj:FocalLoss <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#606279111726109385>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9174943335165277316> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2646530045114043478> rdfs:label "batch_size(28)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#146469114358577677>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2844000028573086433> rdfs:label "intersection(9)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6285512510400751000>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5630183121244778255> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2956566268096773144> rdfs:label "super(11)$0" ;
+    dj:__init__ <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#872969665539529865> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3342550262899879858> rdfs:label "self(20)$3" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6513103288993410062>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6793821513284465726> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3410881825844575538> rdfs:label "self(32)$4" ;
+    dj:Compose <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-143693017228679533>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4101579360949926430> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#396283607075813111> rdfs:label "loss(15)$0" ;
+    dj:Sub <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-365525485878957264>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8486729959438124064>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1278318508011828793>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4362384607980360499>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6627934390895331778> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4143311755358126068> rdfs:label "self(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9049024603392523757> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4706244399694257570> rdfs:label "plt(30)$7" ;
+    dj:show <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6727683178172173384> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5262153971519155250> rdfs:label "optim(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/4518656349892732626> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5304526533320550082> rdfs:label "min_size(35)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#162437696339162369> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5322293464413196083> rdfs:label "df_without_mask_sampled(8)$0" ;
+    dj:sample <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5655706236186107296>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8324893632132210889>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8291073958355105110> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5600133438087134385> rdfs:label "dice_pos(17)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1191359263335027867>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2562644769165453118> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5655775470386776045> rdfs:label "Dataset(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/4268661490586411281> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5907218171391085069> rdfs:label "tta(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7274748729682472267> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5962976533191626244> rdfs:label "self(29)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8751813720317973374>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1032713327346701368> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5970315536802084864> rdfs:label "loss(27)$0" ;
+    dj:criterion <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4265343788648900588>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#40404534019188791>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7150860792197137044> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6326145575453930614> rdfs:label "p(35)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2445134293259120925>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7808438086726828381> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#63615775186909612> rdfs:label "epoch(19)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3120007876919091299> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6579470887076109483> rdfs:label "df(0)$3" ;
+    dj:head <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2950704502778331794> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6875397279888940613> rdfs:label "Resize(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/5817357274552714385> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7266148040986746701> rdfs:label "only_present(23)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4051472050878037385> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7581748932977373739> rdfs:label "epoch(22)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4463582916346815733> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7859678536459003345> rdfs:label "list_trfms(7)$0" ;
+    dj:Compose <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8093856784945262760> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#796923034221308772> rdfs:label "_(20)$0" ;
+    dj:metric <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#829650769125531177> rdfs:label "reduction(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8785263103913401191> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#830909863982330305> rdfs:label "ious(23)$2" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2398173630085046711>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7141594941112887340>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8571402253293734709> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8337766070908963825> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8467037405901210785> rdfs:label "phase(22)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8600654765674580291> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8647118758925422086> rdfs:label "torch(26)$0" ;
+    dj:set_default_tensor_type <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6441008500474697267> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8745316825745160692> rdfs:label "print[4]" ;
+    dj:print <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4919596335279714662> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8998461848487391984> rdfs:label "mask(5)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6853038147350513038> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9012744981868382944> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1856954563942767041>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9218635658061046336> rdfs:label "phase(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4104416082758944489> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1048796423199849063> rdfs:label "losses(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7561040155657341492> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1079959045526379871> rdfs:label "num_workers(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6236821114803520947> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1110271612578658144> rdfs:label "self(4)$5" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1086430894314083236>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8489423370771846206> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1144605461213381342> rdfs:label "num_workers(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1206479238560693520> rdfs:label "predict[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1210800293864983696> rdfs:label "start[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1217814911950462051> rdfs:label "iou_scores(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7561040155657341492> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1256704287435254724> rdfs:label "self(19)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1326647715224424494> rdfs:label "self(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1399300687291404931> rdfs:label "str(2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-143693017228679533> rdfs:label "self(32)$3" ;
+    dj:len <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-161908102607794129> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1471416143927923315> rdfs:label "epoch_log[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-161908102607794129> rdfs:label "self(32)$2" ;
+    dj:list <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8328803710841569083>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#566869056181004164> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1778536388446641200> rdfs:label "iterate[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1866457113723858693> rdfs:label "probability(17)$0" ;
+    dj:view <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1879779995212809625>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2185978163155512392> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1942170578919855793> rdfs:label "epoch_log[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1968970427143646143> rdfs:label "target(9)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7080814080108898273> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1981442694784622990> rdfs:label "self(4)$6" ;
+    dj:get_transforms <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1086430894314083236>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1110271612578658144>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3442008064970150615>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-661139897184260243>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7243311240166995149> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2016942898165606112> rdfs:label "start(2)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4365615946451543663>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5236732208269697773> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2158558292222305342> rdfs:label "max_val(12)$0" ;
+    dj:clamp <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3524720481120032507> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2263125909509844373> rdfs:label "running_loss(28)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-229286674516406453> rdfs:label "alpha(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2375894350097820174> rdfs:label "update[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2398173630085046711> rdfs:label "ious(23)$1" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8346945224690886949>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#529031737204667398> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2422169927195248593> rdfs:label "post_process[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2471313003533370570> rdfs:label "ious(24)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3406663090739195611> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2556289322182602964> rdfs:label "df(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2670046357481331905> rdfs:label "range(29)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733653878607211014> rdfs:label "loss(28)$1" ;
+    dj:Div <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4160478285184528902>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1855238845694502365> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2743926948603143869> rdfs:label "torch(28)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2892400469056012906> rdfs:label "self(4)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-661139897184260243>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8136644948501397473> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2923634718785754990> rdfs:label "component(1)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7211101387944131931>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7579833306776730850> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3039392370849469639> rdfs:label "len(2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3062927918311687374> rdfs:label "image_path(5)$0" ;
+    dj:join <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-441559275097600040>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1703667594614569968>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5116280705821351216> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3095457774315358150> rdfs:label "annotations(5)$0" ;
+    dj:tolist <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9037709417305115057> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3139934241001196999> rdfs:label "df(8)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3275867230888173169>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5648769804836383391>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8301277377240255187> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3197333696740805253> rdfs:label "running_loss(28)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2263125909509844373>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8437362174274588429> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3222882128827382362> rdfs:label "provider[5]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3290657757620949822> rdfs:label "provider[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3324196294778235247> rdfs:label "self(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2556289322182602964>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3835058955751734142> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3358808046931716330> rdfs:label "[](23)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3492039275133784191> rdfs:label "range(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3502842715948698688> rdfs:label "mask(5)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7047259045975124765>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1310399474049730721>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4997138810625936181> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3528687250456284937> rdfs:label "plot[0]" ;
+    dj:plot <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1048796423199849063>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1217814911950462051>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3697056318813970688> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3562429591411108864> rdfs:label "threshold(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6162789413120965373> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3572944863281005692> rdfs:label "images(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2680141770134211075> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-365525485878957264> rdfs:label "input(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#846599424065541181> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3696284425214764508> rdfs:label "label(24)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3048071474744813136>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7193471730902698217>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7258720856317791636> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3697056318813970688> rdfs:label "dice_scores(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7561040155657341492> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3754839489396775604> rdfs:label "self(19)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1256704287435254724>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8157082558282307695> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3835058955751734142> rdfs:label "self(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3981899838562765907> rdfs:label "start(1)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4051472050878037385> rdfs:label "compute_ious[4]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4104416082758944489> rdfs:label "get_transforms[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4160478285184528902> rdfs:label "loss(28)$0" ;
+    dj:forward <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4288538713972021798>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1855238845694502365>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3430218200190540764> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4301176796971516677> rdfs:label "torch(29)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-43029706403969826> rdfs:label "component(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7372360110457913045> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4306039574381226507> rdfs:label "[<_ast.BinOp object at 0x1095316a0>, <_ast.Subscript object at 0x109531700>](2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4402604505733015493> rdfs:label "dice(20)$0" ;
+    dj:metric <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4545407233716255306> rdfs:label "get_metrics[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4570723959293959645> rdfs:label "cv2(33)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4581702511310660550> rdfs:label "train_rle_path(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4718382923502558472> rdfs:label "[<_ast.Name object at 0x10957fd90>, <_ast.Name object at 0x10957fdc0>](17)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4747284112165242466> rdfs:label "list_transforms(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2965998288863276155> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4774329088056634319> rdfs:label "[<_ast.Call object at 0x109520190>, <_ast.Call object at 0x1095209a0>, <_ast.Call object at 0x109520a00>](7)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4866245646626603880> rdfs:label "encoded_pixels(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6913225631687224541> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4893039944929957622> rdfs:label "dice_neg(22)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3360428051947914340> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4902031652846706460> rdfs:label "mean(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4919596335279714662> rdfs:label "iou(22)$0" ;
+    dj:get_metrics <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2924158264312531930> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4961401227485620221> rdfs:label "outputs(28)$1" ;
+    dj:cpu <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8331201546310344364> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5095432578366092243> rdfs:label "[<_ast.Call object at 0x109598e20>](7)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5097415994209563938> rdfs:label "s(1)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-51026385396583772> rdfs:label "image(33)$0" ;
+    dj:imread <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4570723959293959645>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8245959609395140266> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5120120141824387064> rdfs:label "sample_submission_path(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5281935491795893826> rdfs:label "encoded_pixels(0)$1" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4866245646626603880> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5312683904357925741> rdfs:label "length(1)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1138903594044025766> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5333276153347151034> rdfs:label "self(26)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5348597193885667812> rdfs:label "classes(24)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8456532634620459128> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5364861948450463316> rdfs:label "masks(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2680141770134211075> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5394459344868486382> rdfs:label "image_dataset(8)$0" ;
+    dj:SIIMDataset <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8784345941203695645>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2169443563792285898>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3143654115517333272>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3275867230888173169>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4925088645098345049>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7075907028134839483>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8322105298591536699> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5541282963495537429> rdfs:label "data_folder(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5605345295197146673> rdfs:label "data_folder(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3735754052768192516> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5648438986668557252> rdfs:label "std(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5655706236186107296> rdfs:label "df_with_mask(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5654835673542879598> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5680558996856540559> rdfs:label "update[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5693351951306509695> rdfs:label "torch(20)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5871634091533583479> rdfs:label "self(26)$5" ;
+    dj:ReduceLROnPlateau <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2873680087852199591> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5902001098262269081> rdfs:label "self(26)$0" ;
+    dj:FloorDiv <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5333276153347151034> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5941831769802989007> rdfs:label "plt(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6830389471192082081> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6018016198000062552> rdfs:label "probability(35)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8676154993864975970> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6032839743552461490> rdfs:label "compute_iou_batch[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-604609796383637993> rdfs:label "super(14)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6093441483113787524> rdfs:label "compute_ious[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6127624089501879257> rdfs:label "compute_ious[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-614959616345812974> rdfs:label "start(1)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3981899838562765907>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5731478676349389426> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6210610750966066958> rdfs:label "component(1)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4052286760879945997>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5127673114186557593>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3345794709143531966> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6237531117032997349> rdfs:label "compute_ious[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6285512510400751000> rdfs:label "tflat(9)$0" ;
+    dj:view <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1968970427143646143> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6342038372255094264> rdfs:label "predict(0)$0" ;
+    dj:post_process <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5851158469143334968>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3156424017184631626>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4326263029249910755> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6385695650799690465> rdfs:label "warnings(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8958124274134990401> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6546399445291820410> rdfs:label "model(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7561040155657341492> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6665993771396828401> rdfs:label "self(28)$5" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8495765035315266632>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4376207190699888813> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6727683178172173384> rdfs:label "plt(30)$6" ;
+    dj:legend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8340272879525067374> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6793821513284465726> rdfs:label "iou(20)$0" ;
+    dj:compute_iou_batch <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6082038401825449082>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7570808107133118383> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6801461473409866795> rdfs:label "r(2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6828948958512127965> rdfs:label "provider[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6837905723442005647> rdfs:label "fnames(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3120007876919091299> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6871939080998681880> rdfs:label "idx(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4237450019069664338> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6999153619631833032> rdfs:label "state(0)$0" ;
+    dj:load <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#114071565497819544>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1458247792878384662> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7043034482350144522> rdfs:label "get_transforms[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7047259045975124765> rdfs:label "rle(5)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3095457774315358150> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7093672496637492279> rdfs:label "F(12)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7138721875334571418> rdfs:label "image(5)$0" ;
+    dj:imread <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3062927918311687374>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2935617505168125398> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7143427361426315969> rdfs:label "total_batches(28)$0" ;
+    dj:len <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9213048717104891407> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7211101387944131931> rdfs:label "fill_value(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7235064624563908648> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7338652896479398031> rdfs:label "iter(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7361789131507432507> rdfs:label "preds(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7731806406802547010> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7372360110457913045> rdfs:label "run_length_encode[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7411272065833950989> rdfs:label "model(0)$3" ;
+    dj:load_state_dict <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6999153619631833032>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4693754845657513245> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7416278929988302607> rdfs:label "random(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6140086610842459051> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7503559569555899521> rdfs:label "dice_loss[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7579833306776730850> rdfs:label "component(1)$1" ;
+    dj:reshape <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6210610750966066958> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7748626665745303415> rdfs:label "targets(27)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4325737493543833422> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7780736253819350166> rdfs:label "update[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7817990297609676391> rdfs:label "dice_neg(17)$0" ;
+    dj:float <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5935103985874591838> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7849715369997508505> rdfs:label "provider(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8093856784945262760> rdfs:label "list_transforms(7)$2" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4774329088056634319>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6574718070228216581> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8142189850374886641> rdfs:label "plt(30)$1" ;
+    dj:plot <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1520959210482632504>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2046008471105409889>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3820015317038576216>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7337787303636967995> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8183705191732111752> rdfs:label "invprobs(12)$0" ;
+    dj:logsigmoid <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7093672496637492279>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3524720481120032507>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8945487602509923918> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8186031728865880047> rdfs:label "train_rle_path(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8207869920135888367> rdfs:label "self(4)$7" ;
+    dj:groupby <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1981442694784622990> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8245959609395140266> rdfs:label "path(33)$0" ;
+    dj:join <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8737007325357558048>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9135682850963035224>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8868663153183428072> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-829913166844742768> rdfs:label "size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8324893632132210889> rdfs:label "len(8)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8328803710841569083> rdfs:label "self(32)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4289485876003022755>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8518155089898108304> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8331201546310344364> rdfs:label "outputs(28)$0" ;
+    dj:forward <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4288538713972021798>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1855238845694502365>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3430218200190540764> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8340272879525067374> rdfs:label "plt(30)$5" ;
+    dj:ylabel <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8740528106919459944>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5928963722813870916> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8396300021609362818> rdfs:label "get_transforms[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8437362174274588429> rdfs:label "loss(28)$2" ;
+    dj:backward <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733653878607211014> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8456532634620459128> rdfs:label "compute_iou_batch[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8486729959438124064> rdfs:label "target(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4325737493543833422> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8495765035315266632> rdfs:label "dice(28)$0" ;
+    dj:epoch_log <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#100791809365972939>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3936558359097404287>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6080112098131457020>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7190271349726650348>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8600654765674580291> rdfs:label "epoch_log[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8702779985069116763> rdfs:label "predict[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8716765258419846926> rdfs:label "plt(30)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8737007325357558048> rdfs:label "os(33)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8740528106919459944> rdfs:label "plt(30)$4" ;
+    dj:xlabel <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2151373718065062655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-874667216088334790> rdfs:label "[<_ast.Name object at 0x10958eac0>, <_ast.Name object at 0x10958ec40>](8)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8751813720317973374> rdfs:label "self(29)$1" ;
+    dj:step <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1032713327346701368>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1457530252937466205> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8761709067578694370> rdfs:label "[<_ast.Name object at 0x1095a29a0>, <_ast.Name object at 0x1095a29d0>, <_ast.Name object at 0x1095a2a00>](21)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8784345941203695645> rdfs:label "fnames(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3139934241001196999> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8785263103913401191> rdfs:label "metric[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8813680915338569812> rdfs:label "smp(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4317050918720915488> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-951786596036490526> rdfs:label "label(23)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6093441483113787524> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-980111874801723918> rdfs:label "[<_ast.Constant object at 0x109540970>, <_ast.Constant object at 0x109540040>](5)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1004818950612814203> rdfs:label "metric[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1097514245008640484> rdfs:label "dice_neg(20)$0" ;
+    dj:metric <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#114071565497819544> rdfs:label "storage(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1278318508011828793> rdfs:label "torch(15)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1310399474049730721> rdfs:label "mask(5)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-980111874801723918>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2218260927054800373> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1346908179846419670> rdfs:label "outputs(24)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7866115578748625110> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1520959210482632504> rdfs:label "plt(30)$0" ;
+    dj:figure <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8716765258419846926> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#153803499243961669> rdfs:label "rle(2)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3188318436219367507> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1552560063258347935> rdfs:label "torch(9)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1592408376317206667> rdfs:label "df(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1183256361239844178>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4953376331781661823> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1602918479180012336> rdfs:label "time(28)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1617246672932509962> rdfs:label "provider[8]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#162437696339162369> rdfs:label "post_process[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1668107350756795308> rdfs:label "self(19)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8157082558282307695>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2143586923401926193> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1703667594614569968> rdfs:label "os(5)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1783163732961259864> rdfs:label "epoch_loss(22)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1471416143927923315> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1791653870049202767> rdfs:label "plt(30)$2" ;
+    dj:plot <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8142189850374886641>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2046008471105409889>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3820015317038576216>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7337787303636967995> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1794958354916257877> rdfs:label "end(1)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5312683904357925741>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-614959616345812974> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1841826713220958589> rdfs:label "idx(33)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4237450019069664338> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1844223581392398292> rdfs:label "device(0)$0" ;
+    dj:device <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1458247792878384662> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1856954563942767041> rdfs:label "dice(22)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3360428051947914340> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1964574085842534296> rdfs:label "end(2)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4365615946451543663>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5236732208269697773> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2052441563229729072> rdfs:label "epoch_log[4]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2143586923401926193> rdfs:label "self(19)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3754839489396775604>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8157082558282307695> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2151373718065062655> rdfs:label "plt(30)$3" ;
+    dj:title <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1791653870049202767>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5928963722813870916> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2185978163155512392> rdfs:label "probability(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1004818950612814203> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2192057644139694298> rdfs:label "run_length_decode[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2218260927054800373> rdfs:label "np(5)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2234646237029708158> rdfs:label "self(4)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2892400469056012906>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7243311240166995149> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2445134293259120925> rdfs:label "c(35)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4552868379489579052>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5320857132292233036> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2530783662316092405> rdfs:label "ious(24)$1" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2471313003533370570>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3696284425214764508>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5348597193885667812>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6471729351420426148>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5164661492370046545>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6597250951683848068> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2562644769165453118> rdfs:label "dice_pos(17)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6053003920738382873>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6205988555221599912> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2634932669191041238> rdfs:label "__init__[7]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2658927772767463900> rdfs:label "metric[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2685283682978458782> rdfs:label "threshold(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1206479238560693520> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2756763764805146440> rdfs:label "TestDataset(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2935617505168125398> rdfs:label "cv2(5)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2950704502778331794> rdfs:label "df(0)$2" ;
+    dj:to_csv <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1592408376317206667> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2965998288863276155> rdfs:label "[](7)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#298041477205137829> rdfs:label "compute_ious[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3011341614838843040> rdfs:label "X(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8702779985069116763> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3140221548816080294> rdfs:label "self(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3143654115517333272> rdfs:label "mean(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7790406263137674409> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3160186753758608079> rdfs:label "[<_ast.Constant object at 0x10959df10>, <_ast.Constant object at 0x10959df40>](26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3188318436219367507> rdfs:label "[](2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3206465825313063465> rdfs:label "run_length_decode[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#322788374344456053> rdfs:label "gamma(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3361368110207010376> rdfs:label "length(2)$0" ;
+    dj:Sub <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2016942898165606112>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1964574085842534296> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3406663090739195611> rdfs:label "[](24)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3495538268968178876> rdfs:label "model(0)$0" ;
+    dj:Unet <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8813680915338569812> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3555022898583532379> rdfs:label "model(26)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3569471325298514673> rdfs:label "run_length_decode[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3687843332986113087> rdfs:label "classes(23)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#298041477205137829> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3815238881565871556> rdfs:label "loss(12)$1" ;
+    dj:Mult <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8183705191732111752>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3815238881565871556>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6337536251038436319> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3835654167712974468> rdfs:label "self(26)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5902001098262269081>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3160186753758608079> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3859599409795108786> rdfs:label "truth(17)$0" ;
+    dj:view <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6654475305626513874>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1879779995212809625> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3866716420561069415> rdfs:label "iterate[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3889481949934759638> rdfs:label "plt(0)$1" ;
+    dj:imshow <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4474163511269955481>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5364861948450463316>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8565354601180621135> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4036745831855589527> rdfs:label "meter(28)$0" ;
+    dj:Meter <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3936558359097404287>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#40404534019188791> rdfs:label "outputs(27)$0" ;
+    dj:net <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4265343788648900588>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4528458223679419795> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4074860725220452801> rdfs:label "images(27)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#846599424065541181> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4101579360949926430> rdfs:label "[<_ast.Call object at 0x10972ac10>, <_ast.Call object at 0x1097130a0>, <_ast.Call object at 0x109713160>](32)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4289485876003022755> rdfs:label "self(32)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3140221548816080294>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7120458754633156299> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4362384607980360499> rdfs:label "self(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733966236967325162> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4376207190699888813> rdfs:label "self(28)$4" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2451458260710256839>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#100791809365972939> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4406917662675642> rdfs:label "get_transforms[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4453574753155937331> rdfs:label "provider[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4463582916346815733> rdfs:label "epoch_log[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4527563466928869006> rdfs:label "provider[7]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4528458223679419795> rdfs:label "images(27)$0" ;
+    dj:to <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4265343788648900588>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4074860725220452801> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4552868379489579052> rdfs:label "num_component(35)$0" ;
+    dj:connectedComponents <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6036011659820972739>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1095632836337207083>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2892894723810864217> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4693754845657513245> rdfs:label "model(0)$2" ;
+    dj:eval <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6546399445291820410> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4865527889333347493> rdfs:label "batch_size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4866665045443043832> rdfs:label "self(26)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3555022898583532379>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#594954090288153762> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4881996991232092926> rdfs:label "[<_ast.Subscript object at 0x109531490>, <_ast.Subscript object at 0x109531400>](2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4888521867647053879> rdfs:label "dataloader(0)$0" ;
+    dj:provider <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4581702511310660550>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8705443114433090071> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4925088645098345049> rdfs:label "size(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3222882128827382362> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4953376331781661823> rdfs:label "encoded_pixels(0)$2" ;
+    dj:append <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5281935491795893826>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8107954965966232023> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4997138810625936181> rdfs:label "run_length_decode(5)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5085414920036653919> rdfs:label "self(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5164661492370046545> rdfs:label "pred(24)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3048071474744813136>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7193471730902698217>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7258720856317791636> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5196280010619104514> rdfs:label "provider[4]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5246620876509074389> rdfs:label "df_path(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3290657757620949822> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#529031737204667398> rdfs:label "ious(23)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3358808046931716330> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5320857132292233036> rdfs:label "range(35)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5441590924705982575> rdfs:label "mask(5)$2" ;
+    dj:astype <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3502842715948698688> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5460134273256028298> rdfs:label "iou(28)$0" ;
+    dj:epoch_log <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#100791809365972939>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3936558359097404287>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6080112098131457020>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7190271349726650348>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5630183121244778255> rdfs:label "iflat(9)$0" ;
+    dj:view <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#357092522385490903> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5648769804836383391> rdfs:label "val_df(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1722950678796215587>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6429337134988000962>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7023317376667809841> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#566869056181004164> rdfs:label "df(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3120007876919091299> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5700399637088635517> rdfs:label "state(29)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7141442823987879279>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1457530252937466205> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5731478676349389426> rdfs:label "index(1)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1138903594044025766> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#578956080780456960> rdfs:label "dice_pos(20)$0" ;
+    dj:metric <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5827003315487216572> rdfs:label "rle(2)$1" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#153803499243961669>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4881996991232092926> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5935103985874591838> rdfs:label "p_sum(17)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6053003920738382873> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5935369502715342178> rdfs:label "test_data_folder(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5944576958027798858> rdfs:label "optim(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#594954090288153762> rdfs:label "self(26)$2" ;
+    dj:device <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3835654167712974468>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6441008500474697267> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#606279111726109385> rdfs:label "self(14)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1326647715224424494>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-229286674516406453> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6082038401825449082> rdfs:label "[<_ast.Constant object at 0x1095a22e0>](20)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6154477370158168948> rdfs:label "int(1)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6162789413120965373> rdfs:label "metric[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6236821114803520947> rdfs:label "provider[9]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6337536251038436319> rdfs:label "self(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733966236967325162> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6354128719435550904> rdfs:label "rle(2)$3" ;
+    dj:join <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1399300687291404931>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6801461473409866795>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6354128719435550904> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6574718070228216581> rdfs:label "list_transforms(7)$1" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4747284112165242466>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5095432578366092243> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6577385099361863271> rdfs:label "total_folds(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6958308146166670362> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6592193723551683325> rdfs:label "iterate[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6597250951683848068> rdfs:label "compute_ious(24)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6627934390895331778> rdfs:label "dice_loss(15)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6913225631687224541> rdfs:label "[](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6958308146166670362> rdfs:label "provider[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7074250929745962218> rdfs:label "self(28)$2" ;
+    dj:step <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1855238845694502365> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7075907028134839483> rdfs:label "data_folder(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6828948958512127965> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7080814080108898273> rdfs:label "dice_loss[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7120458754633156299> rdfs:label "root(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7140651788939693549> rdfs:label "batch_size(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1617246672932509962> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7141594941112887340> rdfs:label "union(23)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8346945224690886949>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-919876380759891931>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#624451258016883178> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7150860792197137044> rdfs:label "masks(27)$0" ;
+    dj:to <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4265343788648900588>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7748626665745303415> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7157534246004560087> rdfs:label "plot[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7167074940373795521> rdfs:label "self(20)$0" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4402604505733015493>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7235064624563908648> rdfs:label "run_length_decode[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#73649515022260734> rdfs:label "dice_pos(22)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3360428051947914340> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7497604928479208531> rdfs:label "state(29)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1032713327346701368>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5700399637088635517> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7570808107133118383> rdfs:label "preds(20)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6513103288993410062> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7604675644573060619> rdfs:label "self(26)$10" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3338653626613437420>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6382733043211711548>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2112169073731557759>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7604675644573060619> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7731806406802547010> rdfs:label "preds(0)$0" ;
+    dj:sigmoid <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2680141770134211075>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7411272065833950989>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1458247792878384662>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1844223581392398292> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7784509969446774936> rdfs:label "threshold(35)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2422169927195248593> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7790406263137674409> rdfs:label "provider[6]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7808438086726828381> rdfs:label "component(35)$0" ;
+    dj:connectedComponents <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6036011659820972739>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1095632836337207083>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2892894723810864217> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7866115578748625110> rdfs:label "compute_iou_batch[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8107954965966232023> rdfs:label "r(0)$0" ;
+    dj:run_length_encode <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6342038372255094264> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8136644948501397473> rdfs:label "self(4)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3324196294778235247>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5605345295197146673> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8165364705347859304> rdfs:label "model_trainer(0)$0" ;
+    dj:Trainer <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3495538268968178876> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8291073958355105110> rdfs:label "df_without_mask(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5654835673542879598> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8301277377240255187> rdfs:label "train_df(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1722950678796215587>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6429337134988000962>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7023317376667809841> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8322105298591536699> rdfs:label "std(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4527563466928869006> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8397162877963387604> rdfs:label "cv2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6341660035445835007> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8433850601738503152> rdfs:label "np(16)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8489423370771846206> rdfs:label "self(4)$4" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3442008064970150615>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2234646237029708158> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8518155089898108304> rdfs:label "size(32)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3735754052768192516> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8565354601180621135> rdfs:label "plt(0)$0" ;
+    dj:imshow <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3572944863281005692>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4474163511269955481>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5941831769802989007> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8571402253293734709> rdfs:label "intersection(23)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8346945224690886949>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-919876380759891931>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#624451258016883178> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8636207948169929891> rdfs:label "pred(23)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6237531117032997349> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8664746637395089128> rdfs:label "self(20)$1" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#578956080780456960>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7167074940373795521> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8676154993864975970> rdfs:label "post_process[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8705443114433090071> rdfs:label "data_folder(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#872969665539529865> rdfs:label "super(11)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8868663153183428072> rdfs:label "fname(33)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9135682850963035224>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1841826713220958589> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8983918724517985324> rdfs:label "outputs(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2375894350097820174> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9037709417305115057> rdfs:label "df(5)$0" ;
+    dj:get_group <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-441559275097600040>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5116280705821351216> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9074558797476216965> rdfs:label "range(2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9174943335165277316> rdfs:label "gamma(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3120007876919091299> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#995901315664449231> rdfs:label "X_p(16)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3011341614838843040>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8433850601738503152> .
+
+<http://purl.org/dj/python/lib/-424432765026875925> rdfs:label "time" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/-4317050918720915488> rdfs:label "segmentation_models_pytorch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/-543004541706245040> rdfs:label "functional" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1045136508834317799> .
+
+<http://purl.org/dj/python/lib/-5697593527069368976> rdfs:label "HorizontalFlip" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/-6230947327802492927> rdfs:label "torch.optim.lr_scheduler" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/-7578985721217502745> rdfs:label "Compose" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/-8220888567561070610> rdfs:label "torch.backends.cudnn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/-8698506282436180653> rdfs:label "tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5618173636701315614> .
+
+<http://purl.org/dj/python/lib/2102177901394598612> rdfs:label "ReduceLROnPlateau" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-6230947327802492927> .
+
+<http://purl.org/dj/python/lib/2205816862987299750> rdfs:label "matplotlib" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/2413914709042738894> rdfs:label "pdb" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/2484284002821382181> rdfs:label "ToTensor" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7375652871990310157> .
+
+<http://purl.org/dj/python/lib/366468418733553410> rdfs:label "StratifiedKFold" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/4064037331929537295> rdfs:label "GaussNoise" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/4268661490586411281> rdfs:label "Dataset" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8316298044209914869> .
+
+<http://purl.org/dj/python/lib/4336864240852612861> rdfs:label "DataLoader" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8316298044209914869> .
+
+<http://purl.org/dj/python/lib/4518656349892732626> rdfs:label "torch.optim" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/5618173636701315614> rdfs:label "tqdm" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/5817357274552714385> rdfs:label "Resize" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/6140086610842459051> rdfs:label "random" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/6271272503754370965> rdfs:label "torch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/6341660035445835007> rdfs:label "cv2" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/6830389471192082081> rdfs:label "pyplot" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2205816862987299750> .
+
+<http://purl.org/dj/python/lib/7100759371591370084> rdfs:label "ShiftScaleRotate" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/7375652871990310157> rdfs:label "albumentations.torch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/7763458023415780753> rdfs:label "sampler" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8316298044209914869> .
+
+<http://purl.org/dj/python/lib/8482319700439686917> rdfs:label "Normalize" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5386424661060886117> .
+
+<http://purl.org/dj/python/lib/8958124274134990401> rdfs:label "warnings" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1086430894314083236> rdfs:label "phase(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2634932669191041238> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1138903594044025766> rdfs:label "rle(1)$1" ;
+    dj:reshape <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4152989150264038719> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1183256361239844178> rdfs:label "df(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5120120141824387064>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1191359263335027867> rdfs:label "pos_index(17)$0" ;
+    dj:nonzero <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8091645899272580364>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7482163600190515166> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-146182328885545062> rdfs:label "__init__[5]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2066749142460188728> rdfs:label "list(8)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2451458260710256839> rdfs:label "self(28)$3" ;
+    dj:zero_grad <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7074250929745962218> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2890935773134993497> rdfs:label "enumerate(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2924158264312531930> rdfs:label "meter(22)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1942170578919855793> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3048071474744813136> rdfs:label "preds(24)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6471729351420426148>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1346908179846419670> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3338653626613437420> rdfs:label "self(26)$9" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3338653626613437420>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6382733043211711548>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2112169073731557759>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2475080031465240223> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3362141115078468910> rdfs:label "fold(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4453574753155937331> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3442008064970150615> rdfs:label "std(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7274748729682472267> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3735754052768192516> rdfs:label "__init__[3]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4052286760879945997> rdfs:label "height(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3206465825313063465> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4237450019069664338> rdfs:label "__getitem__[1]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4365615946451543663> rdfs:label "component(2)$0" ;
+    dj:flatten <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-43029706403969826> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-441559275097600040> rdfs:label "image_id(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6871939080998681880>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5116280705821351216> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4474163511269955481> rdfs:label "idx(0)$0" ;
+    dj:choice <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3492039275133784191>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7416278929988302607> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5127673114186557593> rdfs:label "width(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3569471325298514673> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5236732208269697773> rdfs:label "np(2)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5268605331702232028> rdfs:label "testset(0)$0" ;
+    dj:DataLoader <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1144605461213381342>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1183256361239844178>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4902031652846706460>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5648438986668557252>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-829913166844742768>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2756763764805146440>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4865527889333347493>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5935369502715342178> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5418994426795635065> rdfs:label "tqdm(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8698506282436180653> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5654835673542879598> rdfs:label "df(8)$0" ;
+    dj:drop_duplicates <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2169443563792285898> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5851158469143334968> rdfs:label "min_size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-603853624439296142> rdfs:label "self(26)$7" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5541282963495537429>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-603853624439296142>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6382733043211711548>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7849715369997508505>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8186031728865880047>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3905217865927440383> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6513103288993410062> rdfs:label "self(20)$2" ;
+    dj:extend <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1097514245008640484>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8664746637395089128> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-661139897184260243> rdfs:label "size(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4525935521155511735> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6654475305626513874> rdfs:label "truth(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2658927772767463900> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7193471730902698217> rdfs:label "zip(24)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7291349317201858367> rdfs:label "enumerate(28)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8091645899272580364> rdfs:label "t_sum(17)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6205988555221599912> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-919876380759891931> rdfs:label "pred_c(23)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3840680258691293638>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8636207948169929891> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#146469114358577677> rdfs:label "self(28)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3866716420561069415> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1879779995212809625> rdfs:label "batch_size(17)$0" ;
+    dj:len <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6654475305626513874> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2029209800281150894> rdfs:label "self(29)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1210800293864983696> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2042658128384199429> rdfs:label "__getitem__[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2046008471105409889> rdfs:label "scores(30)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3528687250456284937> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2169443563792285898> rdfs:label "df_all(8)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5246620876509074389>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8905308206124178022> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2475080031465240223> rdfs:label "self(26)$8" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-603853624439296142>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6382733043211711548>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2112169073731557759>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2475080031465240223> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2873680087852199591> rdfs:label "self(26)$4" ;
+    dj:Adam <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2873680087852199591>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4866665045443043832>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5944576958027798858> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2892894723810864217> rdfs:label "mask(35)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6018016198000062552>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1095632836337207083>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7784509969446774936> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3275867230888173169> rdfs:label "phase(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5196280010619104514> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3323411488616443869> rdfs:label "kfold(8)$0" ;
+    dj:StratifiedKFold <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6577385099361863271> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3345794709143531966> rdfs:label "np(1)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3430218200190540764> rdfs:label "images(28)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7519897236773084497> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#357092522385490903> rdfs:label "input(9)$0" ;
+    dj:sigmoid <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1552560063258347935>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#357092522385490903> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3820015317038576216> rdfs:label "range(30)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3840680258691293638> rdfs:label "c(23)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3687843332986113087> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3905217865927440383> rdfs:label "self(26)$6" ;
+    dj:to <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5871634091533583479>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3905217865927440383> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4152989150264038719> rdfs:label "rle(1)$0" ;
+    dj:array <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5097415994209563938>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3345794709143531966>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4152989150264038719>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6154477370158168948> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4228940280699484875> rdfs:label "neg_index(17)$0" ;
+    dj:nonzero <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8091645899272580364>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7482163600190515166> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4326263029249910755> rdfs:label "best_threshold(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4525935521155511735> rdfs:label "__init__[4]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4563359312939590800> rdfs:label "self(28)$0" ;
+    dj:train <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#146469114358577677>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5928963722813870916> rdfs:label "name(30)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7157534246004560087> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6053003920738382873> rdfs:label "p(17)$0" ;
+    dj:float <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1866457113723858693>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3562429591411108864> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6080112098131457020> rdfs:label "meter(28)$1" ;
+    dj:update <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4288538713972021798>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4961401227485620221>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4036745831855589527> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6205988555221599912> rdfs:label "t(17)$0" ;
+    dj:float <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3859599409795108786> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#624451258016883178> rdfs:label "label_c(23)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-951786596036490526>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3840680258691293638> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6429337134988000962> rdfs:label "train_idx(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1722950678796215587>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2066749142460188728>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3362141115078468910>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3323411488616443869> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6441008500474697267> rdfs:label "torch(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6853038147350513038> rdfs:label "augmented(5)$0" ;
+    dj:transforms <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7138721875334571418>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5116280705821351216>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5441590924705982575> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7023317376667809841> rdfs:label "val_idx(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1722950678796215587>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2066749142460188728>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3362141115078468910>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3323411488616443869> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7243311240166995149> rdfs:label "mean(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-146182328885545062> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7274748729682472267> rdfs:label "__init__[6]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7337787303636967995> rdfs:label "len(30)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7519897236773084497> rdfs:label "batch(28)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7291349317201858367>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9213048717104891407> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8905308206124178022> rdfs:label "pd(8)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8945487602509923918> rdfs:label "target(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4325737493543833422> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#9049024603392523757> rdfs:label "__len__[0]" .
+
+<http://purl.org/dj/python/lib/1045136508834317799> rdfs:label "torch.nn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2680141770134211075> rdfs:label "batch(0)$0" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2890935773134993497>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5268605331702232028>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5418994426795635065> ;
+    dj:next <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7338652896479398031>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4888521867647053879> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733966236967325162> rdfs:label "forward[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3360428051947914340> rdfs:label "dices(22)$0" ;
+    dj:get_metrics <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2924158264312531930> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4288538713972021798> rdfs:label "targets(28)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7519897236773084497> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4325737493543833422> rdfs:label "forward[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6036011659820972739> rdfs:label "np(35)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7141442823987879279> rdfs:label "epoch(29)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2670046357481331905>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2029209800281150894> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8346945224690886949> rdfs:label "np(23)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9135682850963035224> rdfs:label "self(33)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2042658128384199429> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-9213048717104891407> rdfs:label "dataloader(28)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4563359312939590800>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#100791809365972939> rdfs:label "epoch_loss(28)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2451458260710256839>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3197333696740805253>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7143427361426315969> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1032713327346701368> rdfs:label "val_loss(29)$0" ;
+    dj:iterate <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7141442823987879279>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1457530252937466205> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1095632836337207083> rdfs:label "cv2(35)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1457530252937466205> rdfs:label "self(29)$0" ;
+    dj:iterate <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7141442823987879279>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2029209800281150894> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1458247792878384662> rdfs:label "torch(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/4301010604788199447> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6271272503754370965> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2112169073731557759> rdfs:label "[](26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3156424017184631626> rdfs:label "probability(0)$0" ;
+    dj:resize <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3156424017184631626>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8397162877963387604> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3524720481120032507> rdfs:label "input(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#846599424065541181> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7190271349726650348> rdfs:label "start(28)$0" ;
+    dj:strftime <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1602918479180012336> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7258720856317791636> rdfs:label "labels(24)$0" ;
+    dj:array <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6471729351420426148>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7258720856317791636> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7482163600190515166> rdfs:label "torch(17)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#846599424065541181> rdfs:label "forward[1]" .
+
+<http://purl.org/dj/python/lib/8316298044209914869> rdfs:label "torch.utils.data" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1722950678796215587> rdfs:label "df(8)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-874667216088334790>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8905308206124178022> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-3120007876919091299> rdfs:label "__init__[2]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4170568892093733223> rdfs:label "self(21)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4545407233716255306> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-4265343788648900588> rdfs:label "self(27)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2733966236967325162> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6382733043211711548> rdfs:label "phase(26)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-6471729351420426148> rdfs:label "np(24)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-8157082558282307695> rdfs:label "[](19)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1855238845694502365> rdfs:label "self(28)$1" ;
+    dj:zero_grad <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#4563359312939590800> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3293320393261302892> rdfs:label "np(21)" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#3936558359097404287> rdfs:label "epoch(28)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#6592193723551683325> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#5116280705821351216> rdfs:label "self(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#2042658128384199429> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#7561040155657341492> rdfs:label "model_trainer(0)$1" ;
+    dj:start <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8165364705347859304> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-2728067820525816514> rdfs:label "probs(20)$0" ;
+    dj:sigmoid <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5693351951306509695>,
+        <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8983918724517985324> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1526604842787676444> rdfs:label "self(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-7780736253819350166> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#1706971484364154393> rdfs:label "targets(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-5680558996856540559> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8290706870456346962> rdfs:label "__init__[0]" .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8506165428475755655> rdfs:label "__init__[1]" .
+
+<http://purl.org/dj/python/lib/-5386424661060886117> rdfs:label "albumentations" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4301010604788199447> .
+
+<http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#8803875724146587857> rdfs:label "phase(28)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/unet-with-resnet34-encoder-pytorch#-1778536388446641200> .
+
+<http://purl.org/dj/python/lib/4301010604788199447> rdfs:label "unet-with-resnet34-encoder-pytorch.ipynb" .
+

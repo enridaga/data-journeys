@@ -1,0 +1,120 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:model-validation a k:Notebook .
+
+<http://purl.org/dj/kaggle/model-validation#-2222745811713936761> rdfs:label "DecisionTreeRegressor(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7747039010377376043> .
+
+<http://purl.org/dj/kaggle/model-validation#-315773930960501611> rdfs:label "train_test_split(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-9077073871764153597> .
+
+<http://purl.org/dj/kaggle/model-validation#-8807122790361605066> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/model-validation#-9164086789521265944> .
+
+<http://purl.org/dj/kaggle/model-validation#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/model-validation#-679913964004750945> .
+
+<http://purl.org/dj/kaggle/model-validation#-9165872993690632875> rdfs:label "mean_absolute_error[0]" ;
+    dj:mean_absolute_error <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/model-validation#4028518681272163188> rdfs:label "mean_absolute_error[1]" ;
+    dj:mean_absolute_error <http://purl.org/dj/kaggle/model-validation#8051699941885662778> .
+
+<http://purl.org/dj/kaggle/model-validation#9012744981868382944> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/model-validation#8301377136670604491> .
+
+<http://purl.org/dj/kaggle/model-validation#-246533155109135599> rdfs:label "[<_ast.Constant object at 0x109540e20>, <_ast.Constant object at 0x1095406a0>, <_ast.Constant object at 0x109540280>, <_ast.Constant object at 0x109540730>, <_ast.Constant object at 0x109540fa0>, <_ast.Constant object at 0x109540190>, <_ast.Constant object at 0x109540820>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/kaggle/model-validation#-2577900508722005456> rdfs:label "val_X(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/model-validation#-2608341134611573445> rdfs:label "melbourne_model(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/kaggle/model-validation#-679913964004750945> rdfs:label "mean_absolute_error(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2207092164801179887> .
+
+<http://purl.org/dj/kaggle/model-validation#-7895783562669309782> rdfs:label "melbourne_data(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/model-validation#1949833381586467096>,
+        <http://purl.org/dj/kaggle/model-validation#2284753954544374466> .
+
+<http://purl.org/dj/kaggle/model-validation#-8000874470528041234> rdfs:label "melbourne_features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#-246533155109135599> .
+
+<http://purl.org/dj/kaggle/model-validation#-9164086789521265944> rdfs:label "val_predictions(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/model-validation#-2577900508722005456>,
+        <http://purl.org/dj/kaggle/model-validation#4895113399364706822> .
+
+<http://purl.org/dj/kaggle/model-validation#1426694235867897771> rdfs:label "train_X(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/model-validation#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/model-validation#2284753954544374466> rdfs:label "melbourne_file_path(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/kaggle/model-validation#3436159745170857136> rdfs:label "train_y(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/model-validation#4895113399364706822> rdfs:label "melbourne_model(0)$1" ;
+    dj:fit <http://purl.org/dj/kaggle/model-validation#1426694235867897771>,
+        <http://purl.org/dj/kaggle/model-validation#3436159745170857136>,
+        <http://purl.org/dj/kaggle/model-validation#7807569969125494274> .
+
+<http://purl.org/dj/kaggle/model-validation#8051699941885662778> rdfs:label "predicted_home_prices(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#7807569969125494274> .
+
+<http://purl.org/dj/kaggle/model-validation#8301377136670604491> rdfs:label "val_y(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/python/lib/-8602851141318863503> rdfs:label "sklearn.tree" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/python/lib/-9077073871764153597> rdfs:label "train_test_split" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/2207092164801179887> rdfs:label "mean_absolute_error" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/python/lib/7747039010377376043> rdfs:label "DecisionTreeRegressor" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-8602851141318863503> .
+
+<http://purl.org/dj/python/lib/8211509272460624157> rdfs:label "sklearn.metrics" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7591090829103305577> .
+
+<http://purl.org/dj/kaggle/model-validation#1118932881223265305> rdfs:label "filtered_melbourne_data(0)$0" ;
+    dj:dropna <http://purl.org/dj/kaggle/model-validation#-7895783562669309782> .
+
+<http://purl.org/dj/kaggle/model-validation#7807569969125494274> rdfs:label "melbourne_model(0)$0" ;
+    dj:fit <http://purl.org/dj/kaggle/model-validation#-2608341134611573445>,
+        <http://purl.org/dj/kaggle/model-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/model-validation#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/model-validation#159497459885331428> rdfs:label "X(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#-8000874470528041234>,
+        <http://purl.org/dj/kaggle/model-validation#1118932881223265305> .
+
+<http://purl.org/dj/kaggle/model-validation#4005452395737380376> rdfs:label "y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#1118932881223265305> .
+
+<http://purl.org/dj/python/lib/7591090829103305577> rdfs:label "model-validation.ipynb" .
+

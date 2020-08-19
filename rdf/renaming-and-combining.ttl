@@ -1,0 +1,61 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:renaming-and-combining a k:Notebook .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-16263505536976263> rdfs:label "left(0)$1" ;
+    dj:join <http://purl.org/dj/kaggle/renaming-and-combining#-3260044733705560545>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#4868385877382080726> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-7317050176342562260> rdfs:label "pd(0)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/renaming-and-combining#2284422639834441215>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#7510433075510631343> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-827696004674856824> rdfs:label "reviews(0)$3" ;
+    dj:rename_axis <http://purl.org/dj/kaggle/renaming-and-combining#296920171753921317> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-3054777423755374532> rdfs:label "[<_ast.Constant object at 0x10958dc70>, <_ast.Constant object at 0x10958deb0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6954890912284351927> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-3260044733705560545> rdfs:label "left(0)$0" ;
+    dj:set_index <http://purl.org/dj/kaggle/renaming-and-combining#-3054777423755374532>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#-5359655435588560003> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-5359655435588560003> rdfs:label "canadian_youtube(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#7510433075510631343> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#-6587517932056236013> rdfs:label "reviews(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#7510433075510631343> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6954890912284351927> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#2284422639834441215> rdfs:label "[<_ast.Name object at 0x10958dd60>, <_ast.Name object at 0x10958d9a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6954890912284351927> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#296920171753921317> rdfs:label "reviews(0)$2" ;
+    dj:rename <http://purl.org/dj/kaggle/renaming-and-combining#7272967602052404259> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#4868385877382080726> rdfs:label "right(0)$0" ;
+    dj:set_index <http://purl.org/dj/kaggle/renaming-and-combining#7657418287687652804>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#7689438287613008897> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#7272967602052404259> rdfs:label "reviews(0)$1" ;
+    dj:rename <http://purl.org/dj/kaggle/renaming-and-combining#-6587517932056236013> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#7657418287687652804> rdfs:label "[<_ast.Constant object at 0x10958db20>, <_ast.Constant object at 0x10958d850>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-6954890912284351927> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#7689438287613008897> rdfs:label "british_youtube(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#7510433075510631343> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-6954890912284351927> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#7510433075510631343> rdfs:label "pd(0)$0" ;
+    dj:set_option <http://purl.org/dj/kaggle/renaming-and-combining#1949833381586467096> .
+
+<http://purl.org/dj/python/lib/-6954890912284351927> rdfs:label "renaming-and-combining.ipynb" .
+

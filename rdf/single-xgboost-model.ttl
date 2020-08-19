@@ -1,0 +1,2320 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:single-xgboost-model a k:Notebook .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1063416399830214950> rdfs:label "preprocess_input(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-7144859542554084384> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1205418033408211794> rdfs:label "svd_col(0)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#8705412687033762994> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1256704287435254724> rdfs:label "self(19)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-7778206380620300154> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1361957142180766257> rdfs:label "min_rating(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#9115982356491708042> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2112782755436853925> rdfs:label "y(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-5951304525693180874> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2389889140635765410> rdfs:label "test_feats(0)$3" ;
+    dj:rename <http://purl.org/dj/kaggle/single-xgboost-model#1573512056642974959> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2492748119618620343> rdfs:label "json_file(5)$0" ;
+    dj:load <http://purl.org/dj/kaggle/single-xgboost-model#-1212178084672618526>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3809528739897406834> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2677682635007338874> rdfs:label "file_top_score(7)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/single-xgboost-model#-2661755062589779891>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2875903229977837513> rdfs:label "df_sentiment(8)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4389127456638870176> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-304245239547547109> rdfs:label "test_df_sentiment(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-8002110305164653693>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8093694030204524577> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3293915873904288000> rdfs:label "file_top_desc(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2661755062589779891>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3324196294778235247> rdfs:label "self(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3835058955751734142>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6730063719924667678> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3381368493123670499> rdfs:label "b(11)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-3807852111088670983>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7403315971929483392>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2569766564563446592> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3440418013022528208> rdfs:label "all_ids(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6536495358059038009>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3244121050885548747> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3746168903740731370> rdfs:label "labels_state(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3837319283791133766> rdfs:label "train_df_metadata(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-2435185139331142124>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1427836558897079804> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4267776932390000767> rdfs:label "df_metadata(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1749748547610668403>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2205006296087646234>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4581703249300433593>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6641322054901332420>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6946970278557473>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2665367164794316164>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4760697879680162927> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4427771463782954453> rdfs:label "sns(21)$0" ;
+    dj:distplot <http://purl.org/dj/kaggle/single-xgboost-model#4068798566160984459>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8651176404887570435> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4452309008941630076> rdfs:label "new_im(1)$0" ;
+    dj:copyMakeBorder <http://purl.org/dj/kaggle/single-xgboost-model#-2279694630009069103>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5901746081792300744>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6420136803272085998>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7495605869124816859>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8075249514677513582>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4965286143851657139>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7739858230787180963> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-507582526023968965> rdfs:label "train_dfs_sentiment(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8103285229209103150>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7080073282572323251> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5126159497479886224> rdfs:label "test_breed_second(0)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#-7632035574537255772> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5129491986279906655> rdfs:label "os(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> ;
+    dj:listdir <http://purl.org/dj/kaggle/single-xgboost-model#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5152341889847791466> rdfs:label "warnings(0)$0" ;
+    dj:filterwarnings <http://purl.org/dj/kaggle/single-xgboost-model#-6385695650799690465> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5233184680345733435> rdfs:label "r(12)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-7976926260102370605> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5367395162261547342> rdfs:label "text_features(0)$1" ;
+    dj:append <http://purl.org/dj/kaggle/single-xgboost-model#-1824391231695789666>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3100714896875989912> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5486273420071633540> rdfs:label "test_df_metadata(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-7590164097832996166>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8147576666820810485> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5612900113627487924> rdfs:label "train_cols(0)$1" ;
+    dj:remove <http://purl.org/dj/kaggle/single-xgboost-model#1017993662781084555> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-570971839667461177> rdfs:label "Model(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/3360240113261537324> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5762437885229836168> rdfs:label "labels_color(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5941831769802989007> rdfs:label "plt(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8350141215242356670> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6018000789657376323> rdfs:label "filename(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1787423984092026878> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6149017979311683867> rdfs:label "sk_cmatrix(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/9217563732920815074> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6177701314797528063> rdfs:label "StratifiedKFold(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/366468418733553410> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6243265373358331845> rdfs:label "file_sentences_sentiment(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2029964905474286286>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3117689525582709568> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6384192240647229801> rdfs:label "denominator(13)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/single-xgboost-model#-628170904556374706>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-630405326931406506>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-967484126544169309>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8252302460433189362> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6511620420329656943> rdfs:label "sample_submission(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-662045738988946152> rdfs:label "dfs(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#8990287506690386763> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6733273127849960608> rdfs:label "rater_b(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4268496019616886523> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6838794062956912966> rdfs:label "X_temp(0)$5" ;
+    dj:map <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7171743877070470941> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-686605316753976036> rdfs:label "file_crop_importance(7)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4526059921935745062> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6944527032356745851> rdfs:label "self(17)$0" ;
+    dj:minimize <http://purl.org/dj/kaggle/single-xgboost-model#-1737311846106863036>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4708761003792614559>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#432049918771603293>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8281423865238551015> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7197182693533138446> rdfs:label "train_df_ids(0)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4228467402583151100> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7271712186399799930> rdfs:label "sns(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/4787841763061159102> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7401931581884617394> rdfs:label "test_df_ids(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2576626513571959575>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7451331496133639325> rdfs:label "gc(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-697925615955475139> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7684130911410212157> rdfs:label "train_breed_main(0)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#3007975329056698021> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7803689735866537506> rdfs:label "new_image(2)$1" ;
+    dj:preprocess_input <http://purl.org/dj/kaggle/single-xgboost-model#-2347479834394745311> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8604681788630108041> rdfs:label "sp(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6293661223374069878> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8607385339454278976> rdfs:label "preds(16)$0" ;
+    dj:cut <http://purl.org/dj/kaggle/single-xgboost-model#-235229288929735904>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2853540081121083379>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1947013127020462214>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2809741520345676658>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3011341614838843040>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4205218216019143065>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7562539719388132608>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8433850601738503152> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/single-xgboost-model#-2274352243931558043>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4058584611949266440>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5109913021273818102>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5705311786546443624>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6188955520054448956>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8537515236664744275>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-9001936181993778888>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2750303343553039621>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2954228718357036998>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6475037069944089663>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8248774273783458669>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8415561173357897427> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8891564821740658200> rdfs:label "submission(0)$2" ;
+    dj:head <http://purl.org/dj/kaggle/single-xgboost-model#-1075195877423998189> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-9075530839274261780> rdfs:label "img_size(10)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3030241545920688790>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5607771713623192968> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-9171856837789078319> rdfs:label "rater_a(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6302412764994761004> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-998853344144856129> rdfs:label "sqrt(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/5285871788490503339> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1023090914551823816> rdfs:label "train_feats(0)$3" ;
+    dj:rename <http://purl.org/dj/kaggle/single-xgboost-model#4715650439993413856> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1036689719949816157> rdfs:label "tqdm_notebook(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8698506282436180653> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1125641941139506245> rdfs:label "dfs_metadata(8)$1" ;
+    dj:append <http://purl.org/dj/kaggle/single-xgboost-model#-2422718662539784426>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5558351796477284654> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1231434331252604888> rdfs:label "mean_squared_error(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4151662891168771961> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1522410579431046973> rdfs:label "TruncatedSVD(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6670527046479875958> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1553876363247707284> rdfs:label "a(11)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-3807852111088670983>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7403315971929483392>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2569766564563446592> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1773714737582575098> rdfs:label "test_dfs_metadata(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7420345178489923795>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7080073282572323251> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1940184891923154141> rdfs:label "test_breed_main(0)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#-1191733945978036511> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2029944429209302051> rdfs:label "train_breed_second(0)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#-1853505080902212674> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2325873910301728550> rdfs:label "svd_col(0)$3" ;
+    dj:fit_transform <http://purl.org/dj/kaggle/single-xgboost-model#1282904409243476287>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3017601122483801736> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2329655241921387001> rdfs:label "train_dfs_metadata(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8103285229209103150>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7080073282572323251> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2375579867900716654> rdfs:label "file_sentences_sentiment_df(6)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#-1580163607263228118>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#461473915367098744>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7630790684272720540> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2443348222887912155> rdfs:label "hist_ratings(12)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7907967722039103170>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8995118506261308051>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1841362084650866806> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2559037862880902875> rdfs:label "Image(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-526264220127912012> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2953751726379805915> rdfs:label "st(9)$0" ;
+    dj:stat <http://purl.org/dj/kaggle/single-xgboost-model#-6564389913398006547>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8365057993850145687> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3300431350585016063> rdfs:label "oof_train(20)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#1178505742482295098>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3494078289777535396> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3323535067320429378> rdfs:label "DenseNet121(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5295413450790480468> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3370122681333088852> rdfs:label "file_keys(7)$0" ;
+    dj:list <http://purl.org/dj/kaggle/single-xgboost-model#-3714833876087031314> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3396326150347791792> rdfs:label "numerator(13)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/single-xgboost-model#-2125626900291861014>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2932191254964755082>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5561990347909767190>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-628170904556374706>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-967484126544169309>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7885645265377506838> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#346607540337311832> rdfs:label "conf_mat(11)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3806712630498309313>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2244623137760148090>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5586154199796160347>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9019746624214076852> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3495538268968178876> rdfs:label "model(0)$0" ;
+    dj:run_xgb <http://purl.org/dj/kaggle/single-xgboost-model#-2488089231742011649>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7613504294981764514>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8904545837240596743> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3944334015458655236> rdfs:label "partial(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/3944076029946751981> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4054683970949726109> rdfs:label "min_rating(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#6985630138531043973> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4061106753881139624> rdfs:label "test_dfs_sentiment(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7420345178489923795>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7080073282572323251> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4362384607980360499> rdfs:label "self(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4383642186126364969> rdfs:label "df_sentiment(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1580163607263228118>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3997222746525990678> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4534799814758246040> rdfs:label "self(18)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-8702779985069116763> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4874529887149988895> rdfs:label "agg_train_imgs(0)$2" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#6759487295437512353> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4937574206971714666> rdfs:label "pprint(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-1372167279200062969> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#503124712828433384> rdfs:label "xgb(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/5028376949900654626> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5116280705821351216> rdfs:label "self(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#5268350289657059162> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5164133276145268068> rdfs:label "df_sentiment(6)$3" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#9187952289676213783> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5219892943282098002> rdfs:label "self(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-4892851943342136585> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5295389402534314809> rdfs:label "df_metadata(7)$2" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#-6684792202682829615> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5310145894538663565> rdfs:label "file_entities(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2029964905474286286>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3117689525582709568> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5389094032621794007> rdfs:label "max_rating(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-4627677855189136645> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5756767412054570064> rdfs:label "Counter[0]" ;
+    dj:Counter <http://purl.org/dj/kaggle/single-xgboost-model#-2855009730565925099>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5331894877563304629> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5978141203402404400> rdfs:label "TfidfVectorizer(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7103270324465174834> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6227982200383379526> rdfs:label "svd_col(0)$0" ;
+    dj:fit_transform <http://purl.org/dj/kaggle/single-xgboost-model#-732427308670883741>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7232000459430400066> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6309236120620490487> rdfs:label "max_rating(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1700417110152527670> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6459087015892335415> rdfs:label "train_df_sentiment(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-4088073074146155463>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8123985683774603923> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7046475474535483533> rdfs:label "d_valid(20)$0" ;
+    dj:DMatrix <http://purl.org/dj/kaggle/single-xgboost-model#-8412615106869171214>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7917877386119709517> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7168312108440019351> rdfs:label "Input(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/3529913797783560878> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7397562282488572776> rdfs:label "cohen_kappa_score(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6448029752928913875> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7410601791608829130> rdfs:label "preds(18)$0" ;
+    dj:cut <http://purl.org/dj/kaggle/single-xgboost-model#-1163736802215572640>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4913037182540090214>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-837956542883195109>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1190534287463158373>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2344869705141035935>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3932073497440400794>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5674825107646984331>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6355279926944512683> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7602831810692925774> rdfs:label "agg_test_imgs(0)$2" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#8752952700944485416> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8071856429008277459> rdfs:label "x(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6721477934089709381> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8128736642602207632> rdfs:label "oof_test(20)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8453865468041221296>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6978355683175067109> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8299214499276916547> rdfs:label "test_cols(0)$0" ;
+    dj:tolist <http://purl.org/dj/kaggle/single-xgboost-model#7313725336498237048> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8397162877963387604> rdfs:label "cv2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6341660035445835007> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8555287490253497177> rdfs:label "json(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6484321904034678780> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8970130351976911537> rdfs:label "df_sentiment(8)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8226191734644495115>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8531221012323703836> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9012744981868382944> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/single-xgboost-model#-1830720237367293121>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2334378253999794756>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2855009730565925099>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3184592725273030213>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4015276456390636762>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4088073074146155463>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4402452751669605283>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5331894877563304629>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6439665673718381184>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8002110305164653693>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1427836558897079804>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2825128630800874501>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3383940584027364288>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3789933690016727334>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4233142003378461971>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6362792916117339480>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6445839764789936022>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8147576666820810485>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8415561173357897427> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1075195877423998189> rdfs:label "submission(0)$1" ;
+    dj:to_csv <http://purl.org/dj/kaggle/single-xgboost-model#7228032687919214063> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1093150462827499934> rdfs:label "metadata_filenames(8)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-1194462233087385517>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8531221012323703836>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5845455596837547674> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1163736802215572640> rdfs:label "[<_ast.Constant object at 0x10955aee0>, <_ast.Constant object at 0x10955af10>, <_ast.Constant object at 0x10955af40>, <_ast.Constant object at 0x10955af70>, <_ast.Constant object at 0x10955afa0>](18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1166929653534898539> rdfs:label "[<_ast.Constant object at 0x1095a63a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1191733945978036511> rdfs:label "test_breed_main(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#5383166528322024834> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1194462233087385517> rdfs:label "glob(8)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1206479238560693520> rdfs:label "predict[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1212178084672618526> rdfs:label "json(5)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1350135958771645403> rdfs:label "[<_ast.Constant object at 0x109978520>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1355533003186638561> rdfs:label "train_metadata_desc(0)$1" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-7064816385577972096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1437636707438406181> rdfs:label "start(0)$1" ;
+    dj:Mult <http://purl.org/dj/kaggle/single-xgboost-model#4434299459561328271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1458210888554689289> rdfs:label "[<_ast.Constant object at 0x1099a1b50>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1636928961762074914> rdfs:label "train_imgs_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5700040620235495330> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1662002224019347268> rdfs:label "num_rounds(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-168196044444551180> rdfs:label "train_proc(0)$1" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-4862105006538825419>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7924264312622027247> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1737311846106863036> rdfs:label "initial_coef(17)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6630211538221688396> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1749748547610668403> rdfs:label "file_crop_conf(7)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4526059921935745062> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1782168355470559157> rdfs:label "X_temp(0)$9" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-3676481947654157951>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2668575656458288721> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1824391231695789666> rdfs:label "svd_col(0)$5" ;
+    dj:add_prefix <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2721429654779220891> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1853505080902212674> rdfs:label "train_breed_second(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#6926392313631830675> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1969309067876161915> rdfs:label "test_sentiment_desc(0)$2" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-8160501991581194397>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1988166440340134974> rdfs:label "test_df_metadata(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#-4402452751669605283>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2117737056957028836> rdfs:label "[<_ast.Constant object at 0x109a38250>, <_ast.Constant object at 0x109a38280>, <_ast.Constant object at 0x109a382b0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2125626900291861014> rdfs:label "numerator(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2147625392405935316> rdfs:label "min_rating(11)$0" ;
+    dj:min <http://purl.org/dj/kaggle/single-xgboost-model#-7403315971929483392>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2569766564563446592> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2205006296087646234> rdfs:label "file_color_pixelfrac(7)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3942532667527974567> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2216353860451623977> rdfs:label "[<_ast.Constant object at 0x1099988b0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2279694630009069103> rdfs:label "top(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1842381893038408840> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2308574984465308862> rdfs:label "d_train(20)$0" ;
+    dj:DMatrix <http://purl.org/dj/kaggle/single-xgboost-model#-5053502241404547615>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8901916858934292139> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2347479834394745311> rdfs:label "new_image(2)$0" ;
+    dj:resize_to_square <http://purl.org/dj/kaggle/single-xgboost-model#-5757653898585908293> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-235229288929735904> rdfs:label "coef(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-9087870278465934646> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2376412146087436945> rdfs:label "pd(7)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2407916084791978745> rdfs:label "[<_ast.Constant object at 0x109978670>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2422718662539784426> rdfs:label "dfs_metadata(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4389127456638870176> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2540419258836152835> rdfs:label "[<_ast.Constant object at 0x109995670>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2576626513571959575> rdfs:label "[<_ast.Constant object at 0x109a61a60>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2584453838584331641> rdfs:label "train_feats(0)$0" ;
+    dj:from_dict <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#767705904540067719> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2698076115361815765> rdfs:label "run_xgb[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2738468457719782394> rdfs:label "train_df_sentiment(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4233142003378461971> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2811194632273074584> rdfs:label "[<_ast.Constant object at 0x1099a8b80>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2853540081121083379> rdfs:label "[<_ast.UnaryOp object at 0x109542d00>](16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2909134801791421112> rdfs:label "[<_ast.Name object at 0x109a39640>, <_ast.Name object at 0x109a39670>, <_ast.Name object at 0x109a396a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3030241545920688790> rdfs:label "Image(10)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3084900981794796586> rdfs:label "train_metadata_gr(0)$4" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-603631502369158369> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3115531853297516769> rdfs:label "train_df_imgs(0)$3" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-1744178828906396646>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8778286104345633885> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3394778799715792703> rdfs:label "n_batches(0)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2214697824064460123>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3422836051237144774> rdfs:label "[<_ast.Constant object at 0x1099a75e0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3431680138250185423> rdfs:label "cv2(2)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3591542002874435511> rdfs:label "test_metadata_gr(0)$2" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#-2811194632273074584>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4683143407407600941>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6573014075425335457> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3627254719721512564> rdfs:label "[<_ast.Name object at 0x109588730>, <_ast.Name object at 0x109588760>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3672662021157696210> rdfs:label "test_metadata_desc(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#3383940584027364288>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9147067111600708823> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3676481947654157951> rdfs:label "agg_imgs(0)$0" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7850751338149849975> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3798722998851725921> rdfs:label "X_temp(0)$3" ;
+    dj:map <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1398946705545128814>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3806712630498309313> rdfs:label "j(11)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3807650674144409624> rdfs:label "img_features(0)$0" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4090393374176081926> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3809528739897406834> rdfs:label "f(5)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3835058955751734142> rdfs:label "self(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#8290706870456346962> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3851891890988593123> rdfs:label "im(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-747156594416209320> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-385535498858146757> rdfs:label "f(8)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-1093150462827499934> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3947793097028504458> rdfs:label "test_df_imgs(0)$4" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-3763894260369093269>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6037499491382356379> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3997222746525990678> rdfs:label "file_sentiment(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#3117689525582709568> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4015276456390636762> rdfs:label "test_proc(0)$5" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-2909134801791421112>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4031024573479595680> rdfs:label "new_columns(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-873354939084308348>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4365120109542547535>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#905214180806439713> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4058584611949266440> rdfs:label "pets_with_sentiments(0)$1" ;
+    dj:len <http://purl.org/dj/kaggle/single-xgboost-model#-8002110305164653693>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8415561173357897427> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4080247298756389037> rdfs:label "sentiment_filename(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8531221012323703836>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5845455596837547674> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4092257817635639830> rdfs:label "test_df_imgs(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#-2334378253999794756>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-415241519692474456> rdfs:label "max(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4247335336303708592> rdfs:label "[<_ast.Name object at 0x109995400>, <_ast.Name object at 0x109995430>, <_ast.Name object at 0x109995460>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4268496019616886523> rdfs:label "y_pred(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1277980807523309179> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4273303340085585737> rdfs:label "[<_ast.Constant object at 0x109587ca0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-441069707275530261> rdfs:label "batch_images(0)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4683012141573279254>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6090309104578227413> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4518727858112927060> rdfs:label "dfs_metadata(8)$2" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-4518727858112927060>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8905308206124178022> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4581703249300433593> rdfs:label "file_top_score(7)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4627677855189136645> rdfs:label "histogram[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4683143407407600941> rdfs:label "test_metadata_gr(0)$1" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-6772862276362802718>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6234272720225106706> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4708761003792614559> rdfs:label "loss_partial(17)$0" ;
+    dj:partial <http://purl.org/dj/kaggle/single-xgboost-model#2993091912518088913>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8281423865238551015>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#928523676097927823> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-475532988262326170> rdfs:label "train_sentiment_desc(0)$2" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6263021684910328508> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4853050140027890166> rdfs:label "load_image[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4862105006538825419> rdfs:label "train_proc(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4892851943342136585> rdfs:label "_kappa_loss[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-490397452841450778> rdfs:label "[<_ast.Constant object at 0x109a38310>, <_ast.Constant object at 0x109a38340>, <_ast.Constant object at 0x109a38370>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4913037182540090214> rdfs:label "coef(18)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1898525952992537815> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4957713861074093191> rdfs:label "parse_metadata_file[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4959724885197249170> rdfs:label "[<_ast.Constant object at 0x109531eb0>](7)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4993936303217926297> rdfs:label "test_metadata_desc(0)$2" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#2621678213921305656>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5001126256641567931> rdfs:label "tfv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5047741010793963870> rdfs:label "verbose_eval(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5052811155695503687> rdfs:label "test_df_sentiment(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2825128630800874501> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5053502241404547615> rdfs:label "X_tr(20)$1" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-56503919755762540>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8506056838546941851> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5109913021273818102> rdfs:label "pets_with_metadatas(0)$0" ;
+    dj:len <http://purl.org/dj/kaggle/single-xgboost-model#-3184592725273030213>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1427836558897079804>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5143276657038341931> rdfs:label "agg_test_imgs(0)$0" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#780793774018576329>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#905214180806439713> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-522016640590759506> rdfs:label "train_sentiment_desc(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#-5705311786546443624>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#151203305071830325> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5246091916827333810> rdfs:label "train_df_imgs(0)$6" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9160983196260181335> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5282971668858339582> rdfs:label "[<_ast.Constant object at 0x109a39d00>, <_ast.Constant object at 0x109a39d30>, <_ast.Constant object at 0x109a39d60>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5418994426795635065> rdfs:label "tqdm(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/5618173636701315614> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5474005103588749452> rdfs:label "pow(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5487234441171542172> rdfs:label "[<_ast.Constant object at 0x1095b59a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5491964756620848099> rdfs:label "train_pet_ids(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#6403231298904821570> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-56503919755762540> rdfs:label "[<_ast.Constant object at 0x109548cd0>](20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5685751205685352355> rdfs:label "train_sentiment_gr(0)$1" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-6772862276362802718>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7876281075227506936>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5688778791659960134> rdfs:label "train_df_metadata(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3789933690016727334> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5757653898585908293> rdfs:label "image(2)$0" ;
+    dj:imread <http://purl.org/dj/kaggle/single-xgboost-model#-3431680138250185423>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7477732458494207226>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7562978815407724022> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5901670028290428678> rdfs:label "text_columns(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5282971668858339582> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5951304525693180874> rdfs:label "_kappa_loss[3]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6007832222545593173> rdfs:label "features_df(0)$0" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-3627254719721512564>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6048454750396853181> rdfs:label "[<_ast.Constant object at 0x109a39e20>, <_ast.Constant object at 0x109a39e50>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6188955520054448956> rdfs:label "pets_with_metadatas(0)$1" ;
+    dj:len <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8147576666820810485>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8415561173357897427> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6238932356456519490> rdfs:label "rescuer_count(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8992274750297697537>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-9029042305181577512> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6245420222243026840> rdfs:label "test_breed_second(0)$0" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-8472168250052182213>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1856204818614603310>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6445839764789936022> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-628930841337450368> rdfs:label "test_df_imgs(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-6812632835284605634>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1686491111543538511> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6302412764994761004> rdfs:label "y(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#7483433543851787470> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-630405326931406506> rdfs:label "expected_count(13)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/single-xgboost-model#-2932191254964755082>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-967484126544169309>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3866772694077674207>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6061101119443362760>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7885645265377506838> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6319554824657017213> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6385695650799690465> rdfs:label "warnings(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8958124274134990401> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6420136803272085998> rdfs:label "right(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#4844770125079661071> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6536495358059038009> rdfs:label "[<_ast.Constant object at 0x109588280>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6564389913398006547> rdfs:label "filename(9)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-7013793863879949373> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6584545924877251847> rdfs:label "valid_idx(20)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-8821239239579370360>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6630211538221688396> rdfs:label "[<_ast.Constant object at 0x10955a610>, <_ast.Constant object at 0x10955a640>, <_ast.Constant object at 0x10955a670>, <_ast.Constant object at 0x10955a6a0>](17)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6641322054901332420> rdfs:label "self(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-4957713861074093191> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6671668834234651019> rdfs:label "K(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/9171732452833360555> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6721477934089709381> rdfs:label "backbone(0)$0" ;
+    dj:DenseNet121 <http://purl.org/dj/kaggle/single-xgboost-model#-5501746315678330181> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6730063719924667678> rdfs:label "debug(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#8506165428475755655> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6763188599679077241> rdfs:label "[<_ast.Constant object at 0x109a61ca0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6859253610327858466> rdfs:label "[<_ast.Constant object at 0x109a5e4c0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6926630762172731987> rdfs:label "[<_ast.Constant object at 0x1099a13d0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6946970278557473> rdfs:label "file_top_desc(7)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4959724885197249170> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7013793863879949373> rdfs:label "getSize[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7064816385577972096> rdfs:label "train_metadata_desc(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#622078031862157731>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6362792916117339480> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7157906480679536113> rdfs:label "X_temp(0)$7" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-7245830761878128825>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7216875283749739796> rdfs:label "df_sentiment(6)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-1580163607263228118>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8777829420704422837> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7245830761878128825> rdfs:label "X_temp(0)$6" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1102336061983091337>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7269174009719014470> rdfs:label "train_df_imgs(0)$4" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-3115531853297516769>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3763894260369093269> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7273956112280368547> rdfs:label "max_rating(12)$0" ;
+    dj:max <http://purl.org/dj/kaggle/single-xgboost-model#-7976926260102370605> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7294459258408774605> rdfs:label "[<_ast.Constant object at 0x10958e070>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-732427308670883741> rdfs:label "svd_(0)$0" ;
+    dj:TruncatedSVD <http://purl.org/dj/kaggle/single-xgboost-model#2740988905310764521> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7348190200700303893> rdfs:label "[<_ast.Constant object at 0x1095a6160>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7360883260498775535> rdfs:label "test_metadata_gr(0)$4" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#8758929871378663115> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-747156594416209320> rdfs:label "resize_to_square[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7477732458494207226> rdfs:label "path(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-4853050140027890166> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7495605869124816859> rdfs:label "left(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#4844770125079661071> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7500058233574937368> rdfs:label "run_xgb[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7613508488267169057> rdfs:label "start(0)$0" ;
+    dj:Mult <http://purl.org/dj/kaggle/single-xgboost-model#4434299459561328271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7632035574537255772> rdfs:label "test_breed_second(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6245420222243026840> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7665368995110902580> rdfs:label "X_temp(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/single-xgboost-model#159497459885331428> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7778206380620300154> rdfs:label "coefficients[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7791087079521232300> rdfs:label "test_pet_ids(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#6634385986100199424> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7859096684034234482> rdfs:label "fit[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7898213192183746626> rdfs:label "test_sentiment_desc(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#-6926630762172731987>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-9001936181993778888> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7907967722039103170> rdfs:label "range(12)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7912457448175314119> rdfs:label "extract_additional_features[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7924264312622027247> rdfs:label "train_sentiment_gr(0)$4" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#5461485698706738552> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8075249514677513582> rdfs:label "color(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8431523142382019164> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8160501991581194397> rdfs:label "test_sentiment_desc(0)$1" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-7898213192183746626> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8225336939190830290> rdfs:label "end(0)$0" ;
+    dj:Mult <http://purl.org/dj/kaggle/single-xgboost-model#4434299459561328271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8226191734644495115> rdfs:label "df_sentiment(8)$0" ;
+    dj:parse_sentiment_file <http://purl.org/dj/kaggle/single-xgboost-model#2525749759136779593>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3844954316413659092> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8227769215054792816> rdfs:label "[<_ast.Constant object at 0x109a371f0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8365057993850145687> rdfs:label "os(9)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-837956542883195109> rdfs:label "list(18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8431523142382019164> rdfs:label "[<_ast.Constant object at 0x1095b6550>, <_ast.Constant object at 0x1095b6e20>, <_ast.Constant object at 0x1095b6e50>](1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8453865468041221296> rdfs:label "oof_test(20)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/single-xgboost-model#-140200416812555271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8796233839804658660>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3585833813364392870> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8537515236664744275> rdfs:label "qwk(0)$0" ;
+    dj:quadratic_weighted_kappa <http://purl.org/dj/kaggle/single-xgboost-model#-6433754518679069182>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#189359382706866795> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8702779985069116763> rdfs:label "predict[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8744412301629253941> rdfs:label "params(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#7897658177902601599> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8751897539510222037> rdfs:label "test_proc(0)$3" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-4993936303217926297>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3732771682934131827> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8777829420704422837> rdfs:label "[<_ast.Name object at 0x10952bf10>, <_ast.Name object at 0x10952bf40>](6)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8821614724317562134> rdfs:label "histogram[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8869847367418503246> rdfs:label "[<_ast.Constant object at 0x109a74160>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8992274750297697537> rdfs:label "[<_ast.Constant object at 0x109a37370>, <_ast.Constant object at 0x109a373a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8995118506261308051> rdfs:label "num_ratings(12)$0" ;
+    dj:int <http://purl.org/dj/kaggle/single-xgboost-model#-7273956112280368547>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9187658077937294928> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-9029042305181577512> rdfs:label "rescuer_count(0)$0" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-8227769215054792816>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#159497459885331428> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-9087870278465934646> rdfs:label "_kappa_loss[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1017993662781084555> rdfs:label "train_cols(0)$0" ;
+    dj:tolist <http://purl.org/dj/kaggle/single-xgboost-model#-6433754518679069182> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1057683215151494152> rdfs:label "train_proc(0)$2" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-168196044444551180>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3084900981794796586> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1102336061983091337> rdfs:label "[<_ast.Name object at 0x109a61190>, <_ast.Name object at 0x109a611c0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#117401279175308005> rdfs:label "[<_ast.Constant object at 0x10957b7c0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1178505742482295098> rdfs:label "oof_train(20)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/single-xgboost-model#-140200416812555271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1190534287463158373> rdfs:label "X(18)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-1206479238560693520> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1230612607881103387> rdfs:label "confusion_matrix[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1254556994297562873> rdfs:label "batch_preds(0)$1" ;
+    dj:predict <http://purl.org/dj/kaggle/single-xgboost-model#1635480839315657909>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5891145692892740049> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1277980807523309179> rdfs:label "quadratic_weighted_kappa[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1282904409243476287> rdfs:label "tfidf_col(0)$0" ;
+    dj:fit_transform <http://purl.org/dj/kaggle/single-xgboost-model#-5001126256641567931>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#131171949025000588> rdfs:label "ratio(1)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/single-xgboost-model#-4223299032989672319>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3011882979003345377>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#535702814296237071>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7345293784281630846> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1322359989656361992> rdfs:label "agg_train_imgs(0)$0" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#4422227296646126070>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#905214180806439713> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1352838458786902349> rdfs:label "categorical_columns(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6048454750396853181> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#137020321870060052> rdfs:label "test_proc(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1473384885417194869> rdfs:label "early_stop(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#151203305071830325> rdfs:label "[<_ast.Constant object at 0x1099ab820>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1573512056642974959> rdfs:label "test_feats(0)$2" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-7090496307453142674> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1608607787123970342> rdfs:label "x(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#1608607787123970342>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4786396229287403316> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1635480839315657909> rdfs:label "batch_images(0)$3" ;
+    dj:load_image <http://purl.org/dj/kaggle/single-xgboost-model#-6777760085445654866>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5824878779305038177> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1686491111543538511> rdfs:label "test_imgs_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-6812632835284605634>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1689408948130100002> rdfs:label "test_sentiment_gr(0)$4" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-7227853101060161406> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1700417110152527670> rdfs:label "confusion_matrix[3]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1743997927747434829> rdfs:label "parse_sentiment_file[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1787423984092026878> rdfs:label "open_json_file[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1817024676420184208> rdfs:label "[<_ast.Constant object at 0x1099abf40>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1822381180079336547> rdfs:label "train_proc(0)$3" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#1057683215151494152>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8924152678838257859> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1841362084650866806> rdfs:label "x(12)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1856204818614603310> rdfs:label "[<_ast.Constant object at 0x109995eb0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#189359382706866795> rdfs:label "valid_pred(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/single-xgboost-model#-5816327975666901905>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8458764789041312603>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3023338179692676714> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1898525952992537815> rdfs:label "predict[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1947013127020462214> rdfs:label "pd(16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2244623137760148090> rdfs:label "i(11)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2344869705141035935> rdfs:label "np(18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2360996105183658034> rdfs:label "train_sentiment_gr(0)$2" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#-3422836051237144774>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5685751205685352355>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#280077698360077977> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2437426678339359104> rdfs:label "[<_ast.Constant object at 0x109a39f10>, <_ast.Constant object at 0x109a39f40>, <_ast.Constant object at 0x109a39f70>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2525749759136779593> rdfs:label "sentiment_file(8)$0" ;
+    dj:open_json_file <http://purl.org/dj/kaggle/single-xgboost-model#-4080247298756389037>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3844954316413659092> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2540478342508301468> rdfs:label "test_sentiment_gr(0)$2" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#280077698360077977>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6873259686668641306>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7019178414340532608> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2549261734421425462> rdfs:label "len(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2621678213921305656> rdfs:label "test_metadata_desc(0)$1" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-3672662021157696210> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2623494404895773289> rdfs:label "optR(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2665367164794316164> rdfs:label "file_crop_importance(7)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2668575656458288721> rdfs:label "X_temp(0)$8" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-3807650674144409624>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7157906480679536113> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2677195000089470724> rdfs:label "parse_metadata_file[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2685471210575658132> rdfs:label "test_feats(0)$0" ;
+    dj:from_dict <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8737484453345675076> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2750303343553039621> rdfs:label "Counter(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4805151033710712436> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2809741520345676658> rdfs:label "[<_ast.Attribute object at 0x109542f10>](16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2954228718357036998> rdfs:label "train_proc(0)$5" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-4247335336303708592>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2974939622716319564> rdfs:label "[<_ast.Constant object at 0x10999fe80>, <_ast.Constant object at 0x10999feb0>, <_ast.Constant object at 0x10999fee0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2993091912518088913> rdfs:label "X(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#7554054398221248086> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3007975329056698021> rdfs:label "train_breed_main(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#336177883515596341> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3011341614838843040> rdfs:label "X(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#4113046336062965885> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3011882979003345377> rdfs:label "float(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3017601122483801736> rdfs:label "svd_(0)$1" ;
+    dj:TruncatedSVD <http://purl.org/dj/kaggle/single-xgboost-model#2740988905310764521> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3100714896875989912> rdfs:label "text_features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#6913225631687224541> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3244121050885548747> rdfs:label "[<_ast.Name object at 0x1095b1fd0>, <_ast.Name object at 0x109588040>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3286398688374644345> rdfs:label "features(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#336177883515596341> rdfs:label "train_breed_main(0)$0" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-1350135958771645403>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2274352243931558043>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8472168250052182213> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3434628152171590228> rdfs:label "test_df_imgs(0)$6" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5979392437690567015> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3494078289777535396> rdfs:label "valid_pred(20)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/single-xgboost-model#-8412615106869171214>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5859330792278709368> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3732771682934131827> rdfs:label "test_proc(0)$2" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-7360883260498775535>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8076466552734408623> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3866772694077674207> rdfs:label "hist_rater_a(13)$0" ;
+    dj:histogram <http://purl.org/dj/kaggle/single-xgboost-model#-1682681546746781098>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4532462953518113602> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3915648354782896157> rdfs:label "min(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3932073497440400794> rdfs:label "[<_ast.UnaryOp object at 0x10955abe0>](18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4068798566160984459> rdfs:label "pred(21)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#6262541590798630396> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4090393374176081926> rdfs:label "[<_ast.Name object at 0x1095b2070>, <_ast.Name object at 0x1095b20a0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4113046336062965885> rdfs:label "_kappa_loss[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4143311755358126068> rdfs:label "self(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#5786472656314960443> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4205218216019143065> rdfs:label "list(16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4228467402583151100> rdfs:label "[<_ast.Constant object at 0x109a618e0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#432049918771603293> rdfs:label "sp(17)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4422227296646126070> rdfs:label "train_df_imgs(0)$7" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-5246091916827333810>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6837043161645775171> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4565721884489826306> rdfs:label "train_metadata_gr(0)$1" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-6772862276362802718>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3803632828030846521> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4715650439993413856> rdfs:label "train_feats(0)$2" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#7310913995608113035> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4727291511346764537> rdfs:label "[<_ast.Constant object at 0x10999ffa0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4760697879680162927> rdfs:label "file_color_score(7)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3942532667527974567> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4775948805870046634> rdfs:label "max_rating(11)$0" ;
+    dj:max <http://purl.org/dj/kaggle/single-xgboost-model#-7403315971929483392>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2569766564563446592> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4786396229287403316> rdfs:label "GlobalAveragePooling2D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-3972999722150017299> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#497887640640550895> rdfs:label "[<_ast.Constant object at 0x109587e80>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5118471171123904844> rdfs:label "extract_additional_features[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5186223193064644436> rdfs:label "[<_ast.Constant object at 0x10957b460>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5268350289657059162> rdfs:label "open_json_file[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5383166528322024834> rdfs:label "test_breed_main(0)$0" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-2540419258836152835>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8472168250052182213>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6445839764789936022> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5410960017251931018> rdfs:label "to_drop_columns(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#2437426678339359104> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5436645265747750824> rdfs:label "train_metadata_gr(0)$2" ;
+    dj:agg <http://purl.org/dj/kaggle/single-xgboost-model#-6573014075425335457>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4565721884489826306>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8841931107597198859> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5558351796477284654> rdfs:label "df_metadata(8)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8531221012323703836>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8134959159419831230> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5586154199796160347> rdfs:label "num_ratings(11)$0" ;
+    dj:int <http://purl.org/dj/kaggle/single-xgboost-model#-2147625392405935316>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4775948805870046634> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5607771713623192968> rdfs:label "filename(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#7566234736359565529> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5623118027902276723> rdfs:label "load_image[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5674825107646984331> rdfs:label "pd(18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5786472656314960443> rdfs:label "parse_sentiment_file[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5824878779305038177> rdfs:label "batch_images(0)$2" ;
+    dj:zeros <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4683012141573279254>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5687634402642749803>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5979392437690567015> rdfs:label "test_df_imgs(0)$5" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-3947793097028504458>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5988836053669968117> rdfs:label "x(0)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4219519929608337532>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6671668834234651019>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5988836053669968117> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6037499491382356379> rdfs:label "test_df_imgs(0)$3" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-1744178828906396646>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-628930841337450368> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6061101119443362760> rdfs:label "hist_rater_b(13)$0" ;
+    dj:histogram <http://purl.org/dj/kaggle/single-xgboost-model#-1682681546746781098>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4532462953518113602> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6069163549006341130> rdfs:label "[<_ast.Constant object at 0x109a64490>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6094571183712176998> rdfs:label "metadata_file(8)$0" ;
+    dj:open_json_file <http://purl.org/dj/kaggle/single-xgboost-model#-385535498858146757>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3844954316413659092> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6154477370158168948> rdfs:label "int(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#622078031862157731> rdfs:label "[<_ast.Constant object at 0x109998190>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#625947327614169120> rdfs:label "x(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6262541590798630396> rdfs:label "plot_pred[0]" ;
+    dj:plot_pred <http://purl.org/dj/kaggle/single-xgboost-model#3023338179692676714>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3030789944557804832> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6263021684910328508> rdfs:label "train_sentiment_desc(0)$1" ;
+    dj:reset_index <http://purl.org/dj/kaggle/single-xgboost-model#-522016640590759506> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6311124104731463764> rdfs:label "n_batches(0)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/single-xgboost-model#-1094472225209773312>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6355279926944512683> rdfs:label "[<_ast.Attribute object at 0x10955adc0>](18)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6403231298904821570> rdfs:label "train_pet_ids(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6413082106610340870> rdfs:label "fit[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6475037069944089663> rdfs:label "train_df_ids(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4273303340085585737>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6634385986100199424> rdfs:label "test_pet_ids(0)$0" ;
+    dj:unique <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6759487295437512353> rdfs:label "agg_train_imgs(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4031024573479595680>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1322359989656361992> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6837043161645775171> rdfs:label "[<_ast.Constant object at 0x109a5e040>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6873259686668641306> rdfs:label "test_sentiment_gr(0)$1" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-6772862276362802718>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9073112185353220621> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6913225631687224541> rdfs:label "[](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6926392313631830675> rdfs:label "train_breed_second(0)$0" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-2274352243931558043>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2407916084791978745>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8472168250052182213> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6969009953105874206> rdfs:label "[<_ast.Constant object at 0x1095481c0>](20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6978355683175067109> rdfs:label "test_pred(20)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/single-xgboost-model#3585833813364392870>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5859330792278709368> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6985630138531043973> rdfs:label "histogram[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7019178414340532608> rdfs:label "[<_ast.Constant object at 0x109989250>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#70456132164015613> rdfs:label "[<_ast.Constant object at 0x1099a8490>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7171743877070470941> rdfs:label "X_temp(0)$4" ;
+    dj:map <http://purl.org/dj/kaggle/single-xgboost-model#-3798722998851725921>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7228032687919214063> rdfs:label "submission(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#-5331894877563304629>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7232000459430400066> rdfs:label "features(0)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3492039275133784191>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6007832222545593173>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7257210944237297520> rdfs:label "train_df_imgs(0)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#-6439665673718381184>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7345293784281630846> rdfs:label "max(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7346801039299628385> rdfs:label "X_test(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7394892909439557771>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7483433543851787470> rdfs:label "quadratic_weighted_kappa[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7554054398221248086> rdfs:label "fit[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7562539719388132608> rdfs:label "[<_ast.Constant object at 0x109542ee0>, <_ast.Constant object at 0x109542e50>, <_ast.Constant object at 0x109542e80>, <_ast.Constant object at 0x109542df0>, <_ast.Constant object at 0x10955a040>](16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7562978815407724022> rdfs:label "pet_id(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#5623118027902276723> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7566234736359565529> rdfs:label "getDimensions[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7630790684272720540> rdfs:label "[<_ast.Constant object at 0x10952bbb0>](6)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7739858230787180963> rdfs:label "bottom(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1842381893038408840> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7781011919409443904> rdfs:label "out(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4219519929608337532>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#780793774018576329> rdfs:label "test_df_imgs(0)$7" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-6859253610327858466>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3434628152171590228> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7831883535704835533> rdfs:label "new_columns(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-873354939084308348>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4365120109542547535>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#905214180806439713> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7850751338149849975> rdfs:label "[<_ast.Name object at 0x109a72490>, <_ast.Name object at 0x109a724c0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7897658177902601599> rdfs:label "run_xgb[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7917877386119709517> rdfs:label "y_val(20)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#7822715171978466415> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7993938481745585421> rdfs:label "batch_preds(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/single-xgboost-model#5891145692892740049>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8541844790953878967> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8021726046043959148> rdfs:label "[<_ast.Constant object at 0x109a38190>, <_ast.Constant object at 0x109a381c0>, <_ast.Constant object at 0x109a381f0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8023851870769540569> rdfs:label "train_idx(20)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-8821239239579370360>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8032551751324913357> rdfs:label "X_temp(0)$1" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-6238932356456519490>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7665368995110902580> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8076466552734408623> rdfs:label "test_proc(0)$1" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#137020321870060052>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1689408948130100002> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8134959159419831230> rdfs:label "df_metadata(8)$0" ;
+    dj:parse_metadata_file <http://purl.org/dj/kaggle/single-xgboost-model#3844954316413659092>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6094571183712176998> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8171384631681414123> rdfs:label "[<_ast.Tuple object at 0x1095576a0>, <_ast.Tuple object at 0x109557730>](20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8232761507634186212> rdfs:label "end(0)$1" ;
+    dj:Mult <http://purl.org/dj/kaggle/single-xgboost-model#4434299459561328271>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8248774273783458669> rdfs:label "pets_with_sentiments(0)$0" ;
+    dj:len <http://purl.org/dj/kaggle/single-xgboost-model#-1830720237367293121>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-4088073074146155463>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8252302460433189362> rdfs:label "denominator(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8337766070908963825> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8433850601738503152> rdfs:label "np(16)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8506165428475755655> rdfs:label "__init__[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#850984755648511878> rdfs:label "text_features(0)$2" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#850984755648511878> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8541844790953878967> rdfs:label "batch_images(0)$1" ;
+    dj:load_image <http://purl.org/dj/kaggle/single-xgboost-model#-441069707275530261>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6777760085445654866> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8598060084178649879> rdfs:label "[<_ast.Name object at 0x109a39a00>, <_ast.Name object at 0x109a39a30>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8651176404887570435> rdfs:label "sns(21)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8737484453345675076> rdfs:label "features(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1254556994297562873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#767705904540067719> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8752952700944485416> rdfs:label "agg_test_imgs(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5143276657038341931>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7831883535704835533> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8769542568156806931> rdfs:label "confusion_matrix[1]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8778286104345633885> rdfs:label "train_df_imgs(0)$2" ;
+    dj:assign <http://purl.org/dj/kaggle/single-xgboost-model#-1636928961762074914>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5700040620235495330> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8841931107597198859> rdfs:label "[<_ast.Constant object at 0x109998f10>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8901916858934292139> rdfs:label "y_tr(20)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8506056838546941851> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8905308206124178022> rdfs:label "pd(8)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8924152678838257859> rdfs:label "train_metadata_desc(0)$2" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-1355533003186638561>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8990287506690386763> rdfs:label "[<_ast.Name object at 0x1095180a0>, <_ast.Name object at 0x1095180d0>](8)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8998565183745188827> rdfs:label "watchlist(20)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#8171384631681414123> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9019746624214076852> rdfs:label "range(11)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9115982356491708042> rdfs:label "confusion_matrix[2]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9147067111600708823> rdfs:label "[<_ast.Constant object at 0x1099a7d00>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9160983196260181335> rdfs:label "train_df_imgs(0)$5" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-7269174009719014470>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9187658077937294928> rdfs:label "min_rating(12)$0" ;
+    dj:min <http://purl.org/dj/kaggle/single-xgboost-model#-7976926260102370605> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9187952289676213783> rdfs:label "df_sentiment(6)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7216875283749739796>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5509657907111085931> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#928523676097927823> rdfs:label "y(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-7859096684034234482> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#997080898013589399> rdfs:label "AveragePooling1D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1409501948236909700> .
+
+<http://purl.org/dj/python/lib/-1140690108269520368> rdfs:label "Lambda" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
+
+<http://purl.org/dj/python/lib/-1372167279200062969> rdfs:label "pprint" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-1645149646957126584> rdfs:label "sklearn.decomposition" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-3972999722150017299> rdfs:label "GlobalAveragePooling2D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
+
+<http://purl.org/dj/python/lib/-4151662891168771961> rdfs:label "mean_squared_error" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/python/lib/-4805151033710712436> rdfs:label "Counter" ;
+    dj:importedBy <http://purl.org/dj/python/lib/300604073456211672> .
+
+<http://purl.org/dj/python/lib/-526264220127912012> rdfs:label "Image" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7175371065724849412> .
+
+<http://purl.org/dj/python/lib/-5295413450790480468> rdfs:label "DenseNet121" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-3363681024628525843> .
+
+<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-5620703920754274939> rdfs:label "math" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-6031955534560137489> rdfs:label "Parallel" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2313602155166861731> .
+
+<http://purl.org/dj/python/lib/-6293661223374069878> rdfs:label "scipy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-6311026134480773587> rdfs:label "glob" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-6448029752928913875> rdfs:label "cohen_kappa_score" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/python/lib/-6670527046479875958> rdfs:label "TruncatedSVD" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-1645149646957126584> .
+
+<http://purl.org/dj/python/lib/-697925615955475139> rdfs:label "gc" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-7144859542554084384> rdfs:label "preprocess_input" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-3363681024628525843> .
+
+<http://purl.org/dj/python/lib/-8350141215242356670> rdfs:label "matplotlib.pyplot" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/-8698506282436180653> rdfs:label "tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5618173636701315614> .
+
+<http://purl.org/dj/python/lib/1409501948236909700> rdfs:label "AveragePooling1D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
+
+<http://purl.org/dj/python/lib/2191816111388920925> rdfs:label "functools" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/300604073456211672> rdfs:label "collections" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/3360240113261537324> rdfs:label "Model" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8802101635703853781> .
+
+<http://purl.org/dj/python/lib/3529913797783560878> rdfs:label "Input" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
+
+<http://purl.org/dj/python/lib/366468418733553410> rdfs:label "StratifiedKFold" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/3944076029946751981> rdfs:label "partial" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2191816111388920925> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/4787841763061159102> rdfs:label "seaborn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/4889016123898953453> rdfs:label "sklearn.feature_extraction.text" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/5028376949900654626> rdfs:label "xgboost" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/5285871788490503339> rdfs:label "sqrt" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-5620703920754274939> .
+
+<http://purl.org/dj/python/lib/6341660035445835007> rdfs:label "cv2" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/6484321904034678780> rdfs:label "json" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/7103270324465174834> rdfs:label "TfidfVectorizer" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4889016123898953453> .
+
+<http://purl.org/dj/python/lib/7175371065724849412> rdfs:label "PIL" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/8126783067182174011> rdfs:label "delayed" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2313602155166861731> .
+
+<http://purl.org/dj/python/lib/8802101635703853781> rdfs:label "keras.models" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/8958124274134990401> rdfs:label "warnings" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/9171732452833360555> rdfs:label "keras.backend" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/9217563732920815074> rdfs:label "confusion_matrix" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1037583103416431181> rdfs:label "delayed(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8126783067182174011> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1094472225209773312> rdfs:label "pet_ids(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-140200416812555271> rdfs:label "np(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1744178828906396646> rdfs:label "getSize(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1830720237367293121> rdfs:label "train_df_ids(0)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7348190200700303893> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1842381893038408840> rdfs:label "delta_h(1)$0" ;
+    dj:Sub <http://purl.org/dj/kaggle/single-xgboost-model#-4223299032989672319>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#926592260827348066> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2029964905474286286> rdfs:label "x(6)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2334378253999794756> rdfs:label "test_image_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2435185139331142124> rdfs:label "train_df_metadata(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5688778791659960134>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7294459258408774605> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2661755062589779891> rdfs:label "file_annots(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3714833876087031314> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2855009730565925099> rdfs:label "train_predictions(0)$0" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-8458764789041312603>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3023338179692676714>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5848254731291995684> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2890935773134993497> rdfs:label "enumerate(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3184592725273030213> rdfs:label "train_df_ids(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#497887640640550895> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3629182916152043586> rdfs:label "X_text(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5901670028290428678>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1398946705545128814> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3763894260369093269> rdfs:label "getDimensions(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3807852111088670983> rdfs:label "zip(11)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4219519929608337532> rdfs:label "Lambda(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-1140690108269520368> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4389127456638870176> rdfs:label "[](8)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4402452751669605283> rdfs:label "test_metadata_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4683012141573279254> rdfs:label "img_size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5501746315678330181> rdfs:label "inp(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5561990347909767190> rdfs:label "conf_mat(13)$0" ;
+    dj:confusion_matrix <http://purl.org/dj/kaggle/single-xgboost-model#-1682681546746781098>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4532462953518113602> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5816327975666901905> rdfs:label "coefficients(0)$0" ;
+    dj:coefficients <http://purl.org/dj/kaggle/single-xgboost-model#-8458764789041312603> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5901746081792300744> rdfs:label "im(1)$0" ;
+    dj:resize <http://purl.org/dj/kaggle/single-xgboost-model#-5901746081792300744>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4965286143851657139>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#926592260827348066> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-603631502369158369> rdfs:label "train_metadata_gr(0)$3" ;
+    dj:Index <http://purl.org/dj/kaggle/single-xgboost-model#-1488712483682929171>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-603631502369158369>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5436645265747750824> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-628170904556374706> rdfs:label "d(13)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/single-xgboost-model#-2932191254964755082>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5474005103588749452>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4166979454074404073>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7885645265377506838> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6439665673718381184> rdfs:label "train_image_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6573014075425335457> rdfs:label "aggregates(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#2974939622716319564> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6684792202682829615> rdfs:label "df_metadata(7)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2376412146087436945>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-6684792202682829615> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6777760085445654866> rdfs:label "pet_id(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-2890935773134993497>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5687634402642749803>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6090309104578227413> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6812632835284605634> rdfs:label "test_df_imgs(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-4092257817635639830>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6069163549006341130> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7090496307453142674> rdfs:label "test_feats(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3492039275133784191>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7090496307453142674>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2685471210575658132> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7227853101060161406> rdfs:label "test_sentiment_gr(0)$3" ;
+    dj:Index <http://purl.org/dj/kaggle/single-xgboost-model#-1488712483682929171>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7227853101060161406>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2540478342508301468> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7394892909439557771> rdfs:label "X_temp(0)$10" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-1782168355470559157>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5410960017251931018> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7420345178489923795> rdfs:label "dfs_test(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1037583103416431181>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7791087079521232300>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7888372891509286351>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3451473108267603431> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7585641044569072512> rdfs:label "np(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7590164097832996166> rdfs:label "test_df_metadata(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1988166440340134974>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#117401279175308005> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7876281075227506936> rdfs:label "train_sentiment_gr(0)$0" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-5705311786546443624>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1817024676420184208> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7888372891509286351> rdfs:label "extract_additional_features(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8103285229209103150> rdfs:label "dfs_train(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1037583103416431181>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5491964756620848099>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7888372891509286351>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3451473108267603431> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8123985683774603923> rdfs:label "train_df_sentiment(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1166929653534898539>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2738468457719782394> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8412615106869171214> rdfs:label "X_val(20)$1" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#6969009953105874206>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7822715171978466415> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8506056838546941851> rdfs:label "X_tr(20)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8023851870769540569> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-873354939084308348> rdfs:label "agg(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8796233839804658660> rdfs:label "n_splits(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8821239239579370360> rdfs:label "kf(20)$0" ;
+    dj:StratifiedKFold <http://purl.org/dj/kaggle/single-xgboost-model#-8796233839804658660> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#159497459885331428> rdfs:label "X(0)$0" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8598060084178649879> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2214697824064460123> rdfs:label "pet_ids(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2721429654779220891> rdfs:label "svd_col(0)$4" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2721429654779220891> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2740988905310764521> rdfs:label "n_components(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#280077698360077977> rdfs:label "sent_agg(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#4727291511346764537> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2825128630800874501> rdfs:label "test_sentiment_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3030789944557804832> rdfs:label "oof_test(0)$0" ;
+    dj:run_xgb <http://purl.org/dj/kaggle/single-xgboost-model#-2488089231742011649>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7613504294981764514>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8904545837240596743> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3451473108267603431> rdfs:label "Parallel(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6031955534560137489> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3585833813364392870> rdfs:label "X_test(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-7500058233574937368> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3789933690016727334> rdfs:label "train_metadata_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3803632828030846521> rdfs:label "train_metadata_gr(0)$0" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-2216353860451623977>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6362792916117339480> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#381320881624973823> rdfs:label "int(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3942532667527974567> rdfs:label "file_colors(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3714833876087031314> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4233142003378461971> rdfs:label "train_sentiment_files(0)$0" ;
+    dj:sorted <http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4365120109542547535> rdfs:label "k(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4526059921935745062> rdfs:label "file_crops(7)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3714833876087031314> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#461473915367098744> rdfs:label "file_sentences_sentiment(6)$1" ;
+    dj:from_dict <http://purl.org/dj/kaggle/single-xgboost-model#-1580163607263228118>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#461473915367098744> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4625435796578480596> rdfs:label "range(13)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4844770125079661071> rdfs:label "delta_w(1)$0" ;
+    dj:Sub <http://purl.org/dj/kaggle/single-xgboost-model#-4223299032989672319>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#926592260827348066> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4965286143851657139> rdfs:label "cv2(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#535702814296237071> rdfs:label "old_size(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-3851891890988593123> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5461485698706738552> rdfs:label "train_sentiment_gr(0)$3" ;
+    dj:Index <http://purl.org/dj/kaggle/single-xgboost-model#-1488712483682929171>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2360996105183658034>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5461485698706738552> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5509657907111085931> rdfs:label "file_entities(6)$1" ;
+    dj:join <http://purl.org/dj/kaggle/single-xgboost-model#4143311755358126068>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5509657907111085931> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5700040620235495330> rdfs:label "train_df_imgs(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6763188599679077241>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7257210944237297520> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5845455596837547674> rdfs:label "mode(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#5118471171123904844> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5848254731291995684> rdfs:label "coefficients_(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/single-xgboost-model#-5816327975666901905> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5859330792278709368> rdfs:label "model(20)$0" ;
+    dj:train <http://purl.org/dj/kaggle/single-xgboost-model#-1662002224019347268>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-2308574984465308862>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5047741010793963870>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8744412301629253941>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1473384885417194869>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8998565183745188827> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#5891145692892740049> rdfs:label "m(0)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/single-xgboost-model#-5501746315678330181>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7781011919409443904> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6234272720225106706> rdfs:label "test_metadata_gr(0)$0" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#3383940584027364288>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#70456132164015613> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7310913995608113035> rdfs:label "train_feats(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2584453838584331641>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3492039275133784191>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7310913995608113035> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7313725336498237048> rdfs:label "X_test(0)$1" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-8869847367418503246>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7346801039299628385> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#767705904540067719> rdfs:label "features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3286398688374644345>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7993938481745585421> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7822715171978466415> rdfs:label "X_val(20)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-6584545924877251847>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8093694030204524577> rdfs:label "test_df_sentiment(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-5052811155695503687>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5487234441171542172> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8281423865238551015> rdfs:label "self(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#6413082106610340870> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8290706870456346962> rdfs:label "__init__[0]" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8705412687033762994> rdfs:label "svd_col(0)$1" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8705412687033762994> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8758929871378663115> rdfs:label "test_metadata_gr(0)$3" ;
+    dj:Index <http://purl.org/dj/kaggle/single-xgboost-model#-1488712483682929171>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3591542002874435511>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8758929871378663115> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#9073112185353220621> rdfs:label "test_sentiment_gr(0)$0" ;
+    dj:drop <http://purl.org/dj/kaggle/single-xgboost-model#-1458210888554689289>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-9001936181993778888> .
+
+<http://purl.org/dj/python/lib/-3363681024628525843> rdfs:label "keras.applications.densenet" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/2313602155166861731> rdfs:label "joblib" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1682681546746781098> rdfs:label "min_rating(13)$0" ;
+    dj:min <http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3915648354782896157> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2274352243931558043> rdfs:label "train_proc(0)$4" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-475532988262326170>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1822381180079336547> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2488089231742011649> rdfs:label "X_train_non_null(0)$0" ;
+    dj:fillna <http://purl.org/dj/kaggle/single-xgboost-model#-6433754518679069182> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-2932191254964755082> rdfs:label "j(13)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#4166979454074404073>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4625435796578480596> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4088073074146155463> rdfs:label "train_sentiment_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-8123985683774603923>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4223299032989672319> rdfs:label "img_size(1)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5331894877563304629> rdfs:label "test_predictions(0)$0" ;
+    dj:astype <http://purl.org/dj/kaggle/single-xgboost-model#-8458764789041312603>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3030789944557804832>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5848254731291995684> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5687634402642749803> rdfs:label "batch_pets(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1437636707438406181>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2214697824064460123>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8232761507634186212> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7976926260102370605> rdfs:label "ratings(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-8821614724317562134> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8002110305164653693> rdfs:label "test_sentiment_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8093694030204524577> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-967484126544169309> rdfs:label "num_scored_items(13)$0" ;
+    dj:float <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2549261734421425462> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1398946705545128814> rdfs:label "X_temp(0)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1398946705545128814>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8032551751324913357> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1427836558897079804> rdfs:label "train_metadata_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-2435185139331142124>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3117689525582709568> rdfs:label "file(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1743997927747434829> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4166979454074404073> rdfs:label "num_ratings(13)$0" ;
+    dj:len <http://purl.org/dj/kaggle/single-xgboost-model#-5561990347909767190> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4532462953518113602> rdfs:label "max_rating(13)$0" ;
+    dj:max <http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-415241519692474456>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6090309104578227413> rdfs:label "batch_pets(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-1094472225209773312>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7613508488267169057>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8225336939190830290> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6445839764789936022> rdfs:label "test_proc(0)$4" ;
+    dj:merge <http://purl.org/dj/kaggle/single-xgboost-model#-1969309067876161915>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8751897539510222037> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7613504294981764514> rdfs:label "X_test_non_null(0)$0" ;
+    dj:fillna <http://purl.org/dj/kaggle/single-xgboost-model#7313725336498237048> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7885645265377506838> rdfs:label "i(13)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#4166979454074404073>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4625435796578480596> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8147576666820810485> rdfs:label "test_metadata_pets(0)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/single-xgboost-model#-7590164097832996166>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8904545837240596743> rdfs:label "xgb_params(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#926592260827348066> rdfs:label "new_size(1)$0" ;
+    dj:tuple <http://purl.org/dj/kaggle/single-xgboost-model#131171949025000588>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#535702814296237071>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6154477370158168948>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#625947327614169120> .
+
+<http://purl.org/dj/python/lib/5618173636701315614> rdfs:label "tqdm" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841>,
+        <http://purl.org/dj/python/lib/5618173636701315614> .
+
+<http://purl.org/dj/python/lib/8211509272460624157> rdfs:label "sklearn.metrics" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1488712483682929171> rdfs:label "c(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-1580163607263228118> rdfs:label "pd(6)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3492039275133784191> rdfs:label "range(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3714833876087031314> rdfs:label "file(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#2677195000089470724> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5705311786546443624> rdfs:label "train_dfs_sentiment(0)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-5705311786546443624>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6433754518679069182> rdfs:label "X_train(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-7394892909439557771>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-6772862276362802718> rdfs:label "float(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7403315971929483392> rdfs:label "rater_b(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#8769542568156806931> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8458764789041312603> rdfs:label "optR(0)$0" ;
+    dj:fit <http://purl.org/dj/kaggle/single-xgboost-model#-6433754518679069182>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2623494404895773289>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3023338179692676714> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8472168250052182213> rdfs:label "labels_breed(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8531221012323703836> rdfs:label "pet_id(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-7912457448175314119> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-9001936181993778888> rdfs:label "test_dfs_sentiment(0)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#-9001936181993778888>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2569766564563446592> rdfs:label "rater_a(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#1230612607881103387> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3023338179692676714> rdfs:label "oof_train(0)$0" ;
+    dj:run_xgb <http://purl.org/dj/kaggle/single-xgboost-model#-2488089231742011649>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#7613504294981764514>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8904545837240596743> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3383940584027364288> rdfs:label "test_dfs_metadata(0)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3383940584027364288> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3844954316413659092> rdfs:label "pet_parser(8)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4434299459561328271> rdfs:label "b(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-3394778799715792703>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3492039275133784191>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5418994426795635065>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6311124104731463764> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#6362792916117339480> rdfs:label "train_dfs_metadata(0)$1" ;
+    dj:concat <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6362792916117339480> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#7080073282572323251> rdfs:label "isinstance(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#8415561173357897427> rdfs:label "test_df_ids(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#5186223193064644436> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#905214180806439713> rdfs:label "aggs(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#-2117737056957028836>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-490397452841450778>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#8021726046043959148> .
+
+<http://purl.org/dj/python/lib/-4758532922161517508> rdfs:label "keras.layers" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890> rdfs:label "rater_b(13)$1" ;
+    dj:array <http://purl.org/dj/kaggle/single-xgboost-model#-3971096314941121890>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7585641044569072512>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#381320881624973823> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2419436403824624326> rdfs:label "X_train(20)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/single-xgboost-model#-2698076115361815765> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073> rdfs:label "X_text(0)$1" ;
+    dj:fillna <http://purl.org/dj/kaggle/single-xgboost-model#-3629182916152043586>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4099819251374985154> rdfs:label "xgb(20)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5099145789235999464> rdfs:label "glob(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6311026134480773587> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365> rdfs:label "rater_a(13)$1" ;
+    dj:array <http://purl.org/dj/kaggle/single-xgboost-model#-7585641044569072512>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7672392261179995365>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#381320881624973823> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8283643172970343430> rdfs:label "test(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3597021977556128813> rdfs:label "x(7)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4069429828678183640> rdfs:label "split_char(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#4865527889333347493> rdfs:label "batch_size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-5761569958912486794> rdfs:label "train(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3450403511725207733> rdfs:label "np(7)" .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-4179331940517340246> rdfs:label "len(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#392498208699534873> rdfs:label "np(0)$0" ;
+    dj:seed <http://purl.org/dj/kaggle/single-xgboost-model#-6319554824657017213> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#-8233091131777408498> rdfs:label "i(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/single-xgboost-model#-2890935773134993497>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-3629182916152043586>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-5687634402642749803>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#-7876281075227506936>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#1352838458786902349>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#2643291909834489073>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#3803632828030846521>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6090309104578227413>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#6234272720225106706>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#9073112185353220621> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991> rdfs:label "x(0)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/single-xgboost-model#3044379705795588991>,
+        <http://purl.org/dj/kaggle/single-xgboost-model#997080898013589399> .
+
+<http://purl.org/dj/kaggle/single-xgboost-model#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-7373308693405564841> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/python/lib/-7373308693405564841> rdfs:label "single-xgboost-model.ipynb" .
+

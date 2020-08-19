@@ -1,0 +1,34 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:sql-scavenger-hunt-day-1 a k:Notebook .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-7398745983235760018> rdfs:label "us_cities(0)$1" ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#4156343028302712882> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-1811768710192303672> rdfs:label "query(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/1695933967043218555> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-2681887596363285970> rdfs:label "open_aq(0)$2" ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-6123696174965303851> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-6123696174965303851> rdfs:label "open_aq(0)$1" ;
+    dj:list_tables <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-6522628839309331932> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-6522628839309331932> rdfs:label "open_aq(0)$0" ;
+    dj:BigQueryHelper <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#4993724957581839190> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#4156343028302712882> rdfs:label "us_cities(0)$0" ;
+    dj:query_to_pandas_safe <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-1811768710192303672>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#-2681887596363285970> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#4993724957581839190> rdfs:label "bq_helper(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/1695933967043218555> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8788188619073785587> .
+
+<http://purl.org/dj/python/lib/-8788188619073785587> rdfs:label "bq_helper" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1695933967043218555> .
+
+<http://purl.org/dj/python/lib/1695933967043218555> rdfs:label "sql-scavenger-hunt-day-1.ipynb" .
+

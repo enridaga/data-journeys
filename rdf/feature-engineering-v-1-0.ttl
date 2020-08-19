@@ -1,0 +1,996 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:feature-engineering-v-1-0 a k:Notebook .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1310791346980151339> rdfs:label "list_of_user_activities(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1398158898355875576> rdfs:label "reduce_test(4)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8148159142306767755>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7232488211411887245> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1734598095660963838> rdfs:label "all_assessments(3)$2" ;
+    dj:append <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4645769777276448322>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2852967121307975636> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1961350650962872269> rdfs:label "KFold(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8490656800980744973> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2574258021271528908> rdfs:label "categoricals(0)$0" ;
+    dj:get_train_and_test <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3060625424962285685> rdfs:label "reduce_train(4)$0" ;
+    dj:DataFrame <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8148159142306767755>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3173909498347698239> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3291481996682881830> rdfs:label "train_labels(2)$0" ;
+    dj:map <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5921257188529179095>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8743577309888962118> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3965498846592391044> rdfs:label "i(4)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#265638968206451589>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5571940445903504230>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7929050584771623888> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4242786901487499099> rdfs:label "time(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-424432765026875925> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4642125237854058551> rdfs:label "gc(5)$0" ;
+    dj:collect <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3922848437329516847> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5015251818674272870> rdfs:label "i(3)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#966965797316228480> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5164091565760247077> rdfs:label "accumulated_accuracy_group(3)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2223374768736329332>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3474655844980151488> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5418994426795635065> rdfs:label "tqdm(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8698506282436180653> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5904320936479051586> rdfs:label "y_pred(6)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1060884346295159918>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2400861080828979466>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2734306154354223274>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5267687051631190338> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5934321094872249748> rdfs:label "df(8)$4" ;
+    dj:transform <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1776585997475358672>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6118687866109773841> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6177701314797528063> rdfs:label "StratifiedKFold(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/366468418733553410> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6319554824657017213> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6642811042139880139> rdfs:label "ins_id(4)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3652872199042355135>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#265638968206451589>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5571940445903504230>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7929050584771623888> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6787687546354238432> rdfs:label "win_code(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6926335469792338036> rdfs:label "list_of_event_code(2)$0" ;
+    dj:list <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7332481726225914879>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3294155478812646222>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5939257372408595989> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-708068641713783508> rdfs:label "last_activitiy(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5709873440181400374> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7127668439183092330> rdfs:label "val_set(5)$1" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3138403140547811548>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5870496322577525544>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#9005934685544428864> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7333892318178078353> rdfs:label "list_of_event_code(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7451331496133639325> rdfs:label "gc(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-697925615955475139> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7801049828405155968> rdfs:label "stats(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5266143033353374892> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8252614446829191866> rdfs:label "categoricals(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#133323727168978245> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8776107569490505140> rdfs:label "activities_labels(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8807122790361605066> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5797157234248283330> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1101321139607288276>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1873810323276049813>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2399713709403231918>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2701184104844226888>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2796248645326195287>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-314517621734615036>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4899659598678577734>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2645717076379931015>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3882600821951093485>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5315603829736649431>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6326024280283147506>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#67347199023872615>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6928593866977666428>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7982260107265825840>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8008145299232673789>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1136353813624572951> rdfs:label "event_code_count(3)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7646068761112669968>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1649651338029220967>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#838147143815513480> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2491128722190492434> rdfs:label "features(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5658365406240489202> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2560020116357335407> rdfs:label "time_first_activity(3)$0" ;
+    dj:float <http://purl.org/dj/kaggle/feature-engineering-v-1-0#966965797316228480> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2750303343553039621> rdfs:label "Counter(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4805151033710712436> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3069428429281085175> rdfs:label "activities_labels(2)$0" ;
+    dj:dict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3039392370849469639>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4531091076068603049>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5236732208269697773>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2635347653187987842> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3523096881071955689> rdfs:label "accumulated_uncorrect_attempts(3)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3857847671015359333>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2486873259608681516> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#372718285402155868> rdfs:label "val_set(5)$0" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7088394295018429120>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3138403140547811548>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#850810680945803407> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4059444873833640778> rdfs:label "win_code(2)$0" ;
+    dj:dict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3039392370849469639>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5236732208269697773>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8743577309888962118>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2635347653187987842> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4155480318943400235> rdfs:label "durations(3)$1" ;
+    dj:append <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6221771050920142468>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#451213190193301713> rdfs:label "reduce_test(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8702779985069116763> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4599571756344901727> rdfs:label "accumulated_accuracy(3)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3466484508611525971>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6346207940999376740> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4621372919521167064> rdfs:label "reduce_test(0)$0" ;
+    dj:get_train_and_test <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5511205202555694479> rdfs:label "test_set(3)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5157877455285635958> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#641619849453034971> rdfs:label "reduce_test(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3211373079162925574> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6432708892756748129> rdfs:label "lgb(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-2713052644096207207> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6489478704802277596> rdfs:label "accumulated_correct_attempts(3)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4190601320155278068>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7575993452485943692> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7397562282488572776> rdfs:label "cohen_kappa_score(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6448029752928913875> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7510433075510631343> rdfs:label "pd(0)$0" ;
+    dj:set_option <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7520352845887405938> rdfs:label "_(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7860208958676140546> rdfs:label "reduce_test(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6828855742125079044> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8106839494812855771> rdfs:label "accumulated_actions(3)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2872979103875005108>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6123409092135281237>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#818332029561307831> rdfs:label "val_set(6)$0" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6360887093359494735>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6643654052395709168>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3840841491812351265>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4121838682779358217> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8555287490253497177> rdfs:label "json(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6484321904034678780> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#9012744981868382944> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1873810323276049813>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2701184104844226888>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4899659598678577734>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3882600821951093485>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5315603829736649431>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#899299686243005591> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1037670654590984504> rdfs:label "run_lgb[2]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1101321139607288276> rdfs:label "fold(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7407438850715267378>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5261539169284742934> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1206479238560693520> rdfs:label "predict[1]" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6811665666948535853> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-140967370330963519> rdfs:label "params(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1580163607263228118> rdfs:label "pd(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1589127785846011200> rdfs:label "sample_submission(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1206479238560693520> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1722950678796215587> rdfs:label "df(8)$1" ;
+    dj:transform <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5654835673542879598>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2407778124649728415> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2297976068925268981> rdfs:label "x(8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2399713709403231918> rdfs:label "loss_score(6)$0" ;
+    dj:cohen_kappa_score <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2458968937952108796>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7121387988252360549>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2433974886117281713> rdfs:label "oof_pred(5)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2218260927054800373>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7535347168474143328>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2481092220217676388> rdfs:label "features(3)$4" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4190601320155278068>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8160462431668949515> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2502293721210029793> rdfs:label "oof_pred(5)$2" ;
+    dj:zeros <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2218260927054800373>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7535347168474143328>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2618322812748015477> rdfs:label "features(3)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6664320716057452026>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2635306860575913123> rdfs:label "new_features(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3583526184069363948> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2796248645326195287> rdfs:label "score(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5881295244692886494> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2872979103875005108> rdfs:label "len(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3120254843808163358> rdfs:label "all_assessments(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2062846862373969100> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3139934241001196999> rdfs:label "df(8)$2" ;
+    dj:transform <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1722950678796215587>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4300724468111626686> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3211373079162925574> rdfs:label "preprocess[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3466484508611525971> rdfs:label "accuracy(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3857847671015359333>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7575993452485943692> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3473151977400281933> rdfs:label "[<_ast.Name object at 0x109768e20>, <_ast.Name object at 0x109768e50>](6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4027243002052895387> rdfs:label "accuracy_groups(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4161436774050500311> rdfs:label "get_data[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4187630240514021507> rdfs:label "y_pred(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1898525952992537815> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4368608903701444475> rdfs:label "train(2)$0" ;
+    dj:map <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7332481726225914879>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8743577309888962118> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4879256373569405767> rdfs:label "train(2)$1" ;
+    dj:map <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4368608903701444475>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#351417959027244312> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4945894169854963034> rdfs:label "[<_ast.Constant object at 0x109766eb0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5157877455285635958> rdfs:label "get_data[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5234255525219177403> rdfs:label "train_set(5)$0" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8691097364205011810>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3138403140547811548>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4086183382344199659> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5257639722707563129> rdfs:label "get_train_and_test[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5311336895317868678> rdfs:label "[](5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5504177594903260104> rdfs:label "np(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5526639945687946606> rdfs:label "list_of_worlds(2)$0" ;
+    dj:list <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7332481726225914879>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3294155478812646222>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5939257372408595989> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5654835673542879598> rdfs:label "df(8)$0" ;
+    dj:transform <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4945894169854963034>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7834663201626806102> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5658365406240489202> rdfs:label "reduce_train(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5083001512151263997> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5855495461708047038> rdfs:label "session_title(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5881295244692886494> rdfs:label "loss_score(5)$0" ;
+    dj:cohen_kappa_score <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2117641091772199577>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2218260927054800373>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5921257188529179095> rdfs:label "train_labels(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4946392795845216323> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6072944060486769172> rdfs:label "run_feature_selection[2]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6157972857647549979> rdfs:label "y_train(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1838852129273409636>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6281746554675613277>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6803876117343112051> rdfs:label "test(2)$0" ;
+    dj:map <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8743577309888962118>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3294155478812646222> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6868380785260042101> rdfs:label "train_set(6)$0" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6157972857647549979>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6643654052395709168>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2094989522157402395>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3840841491812351265> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-705873967373126989> rdfs:label "run_lgb[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7104447032187477704> rdfs:label "list_of_event_code(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7150375046498266447> rdfs:label "features(3)$7" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2995331147577794715>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#481478290292025896>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6346207940999376740> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7254288873905344640> rdfs:label "model(5)$0" ;
+    dj:train <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5234255525219177403>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6997473637920355769>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#9183387194496029799> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7669692073857152161> rdfs:label "run_feature_selection[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7834663201626806102> rdfs:label "df(8)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#574550255526039368> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8140451821869633287> rdfs:label "features(8)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2297976068925268981>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8140451821869633287>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2750022186290549715> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8185512393086175666> rdfs:label "test(2)$2" ;
+    dj:to_datetime <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8185512393086175666>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4594170001374168125>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5121926543315113906> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8691097364205011810> rdfs:label "y_train(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8702779985069116763> rdfs:label "predict[0]" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-9015004292509670212> rdfs:label "test_data(4)$0" ;
+    dj:get_data <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8086286022797753496> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1052133384094783271> rdfs:label "[<_ast.Constant object at 0x1097578e0>, <_ast.Constant object at 0x109757910>, <_ast.Constant object at 0x109757940>, <_ast.Constant object at 0x109757970>, <_ast.Constant object at 0x1097579a0>, <_ast.Constant object at 0x1097579d0>, <_ast.Constant object at 0x109757a00>, <_ast.Constant object at 0x109757a30>, <_ast.Constant object at 0x109757a60>, <_ast.Constant object at 0x109757a90>, <_ast.Constant object at 0x109757ac0>, <_ast.Constant object at 0x109757af0>, <_ast.Constant object at 0x109757b20>, <_ast.Constant object at 0x109757b50>, <_ast.Constant object at 0x109757b80>, <_ast.Constant object at 0x109757bb0>, <_ast.Constant object at 0x109757be0>, <_ast.Constant object at 0x109757c10>, <_ast.Constant object at 0x109757c40>, <_ast.Constant object at 0x109757c70>, <_ast.Constant object at 0x109757ca0>, <_ast.Constant object at 0x109757cd0>, <_ast.Constant object at 0x109757d00>, <_ast.Constant object at 0x109757d30>, <_ast.Constant object at 0x109757d60>, <_ast.Constant object at 0x109757d90>, <_ast.Constant object at 0x109757dc0>, <_ast.Constant object at 0x109757df0>, <_ast.Constant object at 0x109757e20>, <_ast.Constant object at 0x109757e50>, <_ast.Constant object at 0x109757e80>, <_ast.Constant object at 0x109757eb0>, <_ast.Constant object at 0x109757ee0>, <_ast.Constant object at 0x109757f10>, <_ast.Constant object at 0x109757f40>, <_ast.Constant object at 0x109757f70>, <_ast.Constant object at 0x109757fa0>, <_ast.Constant object at 0x109757fd0>, <_ast.Constant object at 0x1097730d0>, <_ast.Constant object at 0x109773040>, <_ast.Constant object at 0x109773070>, <_ast.Constant object at 0x1097730a0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1060884346295159918> rdfs:label "y_pred(6)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2458968937952108796>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#362373136625954112>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5267687051631190338> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1230941004232273224> rdfs:label "filenames(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#133323727168978245> rdfs:label "[<_ast.Constant object at 0x109520670>](4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1396999119495256065> rdfs:label "encode_title[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1507818519780262338> rdfs:label "features(3)$5" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2481092220217676388>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2486873259608681516> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1517231206402074366> rdfs:label "get_train_and_test[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1649651338029220967> rdfs:label "key(3)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7646068761112669968> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1776585997475358672> rdfs:label "df(8)$3" ;
+    dj:sum <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3139934241001196999>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1052133384094783271> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1898525952992537815> rdfs:label "predict[2]" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#9031580710948970947> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1915376860565076304> rdfs:label "sample_submission(7)$0" ;
+    dj:argmax <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1589127785846011200>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4187630240514021507> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2094989522157402395> rdfs:label "x_train(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1838852129273409636>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6281746554675613277>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2734306154354223274> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2117641091772199577> rdfs:label "oof_pred(5)$1" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2433974886117281713>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7088394295018429120>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7254288873905344640> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2407778124649728415> rdfs:label "[<_ast.Constant object at 0x109757250>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#249633858129714961> rdfs:label "oof_pred(5)$3" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2502293721210029793>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5202134941775872091>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#9005934685544428864> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2645717076379931015> rdfs:label "sample_submission(7)$1" ;
+    dj:to_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1915376860565076304> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2750022186290549715> rdfs:label "[<_ast.Constant object at 0x109773eb0>, <_ast.Constant object at 0x109773df0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2769358141744364697> rdfs:label "train(2)$2" ;
+    dj:to_datetime <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4879256373569405767>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2769358141744364697>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4594170001374168125> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2852967121307975636> rdfs:label "all_assessments(3)$1" ;
+    dj:append <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3120254843808163358>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4645769777276448322> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2995331147577794715> rdfs:label "features(3)$6" ;
+    dj:mean <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5504177594903260104>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6221771050920142468>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1507818519780262338> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3116627060065178329> rdfs:label "encode_title[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3173909498347698239> rdfs:label "compiled_train(4)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3210853972507082809>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5922463050138898292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8086286022797753496> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3210853972507082809> rdfs:label "compiled_train(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6806456444003208699> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#336543557064739091> rdfs:label "features(3)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8012486340373984287> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3463882167872400370> rdfs:label "x_train(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1249958298003282400>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3583526184069363948> rdfs:label "run_feature_selection[3]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3922848437329516847> rdfs:label "gc(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4077417160487759122> rdfs:label "compiled_test(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6806456444003208699> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4086183382344199659> rdfs:label "x_train(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6125709795399944223>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4121838682779358217> rdfs:label "y_val(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1838852129273409636>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6281746554675613277>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4300724468111626686> rdfs:label "[<_ast.Constant object at 0x1097575b0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4394641312378031748> rdfs:label "train_set(5)$1" ;
+    dj:Dataset <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3138403140547811548>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3463882167872400370>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4806942407757509090> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4488414840475590218> rdfs:label "oof_pred(6)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2458968937952108796>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#362373136625954112> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4561476187688668505> rdfs:label "reduce_train(0)$1" ;
+    dj:preprocess <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5263412665848557363> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4806942407757509090> rdfs:label "y_train(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4946392795845216323> rdfs:label "encode_title[2]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5083001512151263997> rdfs:label "preprocess[0]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5121926543315113906> rdfs:label "test(2)$1" ;
+    dj:map <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6803876117343112051>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#351417959027244312> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5202134941775872091> rdfs:label "model(5)$1" ;
+    dj:train <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4394641312378031748>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6997473637920355769>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7757596121134556933> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5709873440181400374> rdfs:label "session_type(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#574550255526039368> rdfs:label "[<_ast.Name object at 0x109766bb0>, <_ast.Name object at 0x109766be0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5797157234248283330> rdfs:label "filename(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1230941004232273224> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5870496322577525544> rdfs:label "y_val(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5922463050138898292> rdfs:label "get_data(4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6118687866109773841> rdfs:label "[<_ast.Constant object at 0x1097732b0>](8)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6144023241070787960> rdfs:label "eve(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6664320716057452026> rdfs:label "features(3)$1" ;
+    dj:update <http://purl.org/dj/kaggle/feature-engineering-v-1-0#336543557064739091>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#838147143815513480> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#67347199023872615> rdfs:label "score(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6326024280283147506> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6811665666948535853> rdfs:label "sample_submission(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6828855742125079044> rdfs:label "run_feature_selection[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6928593866977666428> rdfs:label "fold(5)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4322915795687171299>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6803307985440550672>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7219227964351359151> rdfs:label "run_lgb[1]" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7232488211411887245> rdfs:label "compiled_test(4)$1" ;
+    dj:append <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-9015004292509670212>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4077417160487759122> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#767705904540067719> rdfs:label "features(0)$0" ;
+    dj:preprocess <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5263412665848557363> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7757596121134556933> rdfs:label "[<_ast.Name object at 0x109740af0>, <_ast.Name object at 0x109740b20>](5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7982260107265825840> rdfs:label "result(6)$0" ;
+    dj:Series <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1580163607263228118>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2458968937952108796>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7121387988252360549> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8008145299232673789> rdfs:label "usefull_new_features(5)$1" ;
+    dj:append <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-314517621734615036>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4389887062260206977> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8012486340373984287> rdfs:label "user_activities_count(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8160462431668949515> rdfs:label "features(3)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2618322812748015477>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#850810680945803407> rdfs:label "y_val(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8585683645086009743> rdfs:label "features(3)$8" ;
+    dj:update <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4027243002052895387>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7150375046498266447> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8987814658354763359> rdfs:label "[<_ast.Name object at 0x10951c2b0>](5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#899299686243005591> rdfs:label "dirname(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8337766070908963825> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#9031580710948970947> rdfs:label "y_pred(0)$0" ;
+    dj:run_lgb <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4561476187688668505>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#767705904540067719> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#9163515007490763289> rdfs:label "win_code(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#9183387194496029799> rdfs:label "[<_ast.Name object at 0x10952b730>, <_ast.Name object at 0x10952b760>](5)" .
+
+<http://purl.org/dj/python/lib/-2713052644096207207> rdfs:label "lightgbm" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/-4805151033710712436> rdfs:label "Counter" ;
+    dj:importedBy <http://purl.org/dj/python/lib/300604073456211672> .
+
+<http://purl.org/dj/python/lib/-5266143033353374892> rdfs:label "stats" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-6293661223374069878> .
+
+<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/-6293661223374069878> rdfs:label "scipy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/-6448029752928913875> rdfs:label "cohen_kappa_score" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/python/lib/-697925615955475139> rdfs:label "gc" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/-8698506282436180653> rdfs:label "tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5618173636701315614> .
+
+<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/300604073456211672> rdfs:label "collections" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/366468418733553410> rdfs:label "StratifiedKFold" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/5618173636701315614> rdfs:label "tqdm" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/6484321904034678780> rdfs:label "json" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/8211509272460624157> rdfs:label "sklearn.metrics" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/8490656800980744973> rdfs:label "KFold" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1873810323276049813> rdfs:label "train_labels(1)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2062846862373969100> rdfs:label "[](3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2701184104844226888> rdfs:label "specs(1)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-314517621734615036> rdfs:label "i(5)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2635306860575913123> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3652872199042355135> rdfs:label "test(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5257639722707563129> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3857847671015359333> rdfs:label "false_attempts(3)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6082564843988723899> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4531091076068603049> rdfs:label "list_of_user_activities(2)$0" ;
+    dj:list <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7332481726225914879>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3294155478812646222>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5939257372408595989> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4645769777276448322> rdfs:label "features(3)$10" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6123409092135281237>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3474655844980151488> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4899659598678577734> rdfs:label "sample_submission(1)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6123409092135281237> rdfs:label "accumulated_actions(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6221771050920142468> rdfs:label "durations(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2062846862373969100> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6360887093359494735> rdfs:label "x_val(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1838852129273409636>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6281746554675613277>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2734306154354223274> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7088394295018429120> rdfs:label "x_val(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6125709795399944223>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7121387988252360549> rdfs:label "oof_pred(6)$1" ;
+    dj:predict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6360887093359494735>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2400861080828979466>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4488414840475590218> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7646068761112669968> rdfs:label "n_of_event_codes(3)$0" ;
+    dj:Counter <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8148159142306767755> rdfs:label "pd(4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1249958298003282400> rdfs:label "evaluating_features(5)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4389887062260206977>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6125709795399944223>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8987814658354763359> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2223374768736329332> rdfs:label "accumulated_accuracy_group(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2400861080828979466> rdfs:label "model(6)$0" ;
+    dj:train <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-140967370330963519>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3473151977400281933>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6643654052395709168>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6868380785260042101> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2486873259608681516> rdfs:label "accumulated_uncorrect_attempts(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3474655844980151488> rdfs:label "features(3)$9" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2223374768736329332>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#481478290292025896>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#8585683645086009743> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#351417959027244312> rdfs:label "activities_world(2)$0" ;
+    dj:dict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3039392370849469639>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5236732208269697773>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5526639945687946606>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2635347653187987842> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#362373136625954112> rdfs:label "len(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3840841491812351265> rdfs:label "categoricals(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3882600821951093485> rdfs:label "train(1)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4190601320155278068> rdfs:label "accumulated_correct_attempts(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4389887062260206977> rdfs:label "usefull_new_features(5)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5311336895317868678> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4594170001374168125> rdfs:label "pd(2)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#481478290292025896> rdfs:label "counter(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5267687051631190338> rdfs:label "reduce_test(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7219227964351359151> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5315603829736649431> rdfs:label "test(1)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6082564843988723899> rdfs:label "all_attempts(3)$0" ;
+    dj:query <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5855495461708047038>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#9163515007490763289> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6326024280283147506> rdfs:label "loss_score(5)$1" ;
+    dj:cohen_kappa_score <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2218260927054800373>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#249633858129714961>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6346207940999376740> rdfs:label "accumulated_accuracy(3)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6806456444003208699> rdfs:label "[](4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6997473637920355769> rdfs:label "params(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7535347168474143328> rdfs:label "len(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7575993452485943692> rdfs:label "true_attempts(3)$0" ;
+    dj:sum <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6082564843988723899> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8086286022797753496> rdfs:label "user_sample(4)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3652872199042355135>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#265638968206451589>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5571940445903504230>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#7929050584771623888> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#838147143815513480> rdfs:label "event_code_count(3)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7104447032187477704>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6144023241070787960> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#9005934685544428864> rdfs:label "x_val(5)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1249958298003282400>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/python/lib/-424432765026875925> rdfs:label "time" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-424432765026875925>,
+        <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5761569958912486794> rdfs:label "train(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6643654052395709168> rdfs:label "lgb(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7407438850715267378> rdfs:label "kf(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#265638968206451589> rdfs:label "train(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1517231206402074366> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2734306154354223274> rdfs:label "usefull_features(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1037670654590984504> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#4322915795687171299> rdfs:label "enumerate(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5261539169284742934> rdfs:label "enumerate(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5263412665848557363> rdfs:label "reduce_train(0)$0" ;
+    dj:get_train_and_test <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5761569958912486794>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5571940445903504230> rdfs:label "enumerate(4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#5939257372408595989> rdfs:label "set(2)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6125709795399944223> rdfs:label "usefull_features(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6072944060486769172> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6803307985440550672> rdfs:label "kf(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7929050584771623888> rdfs:label "tqdm(4)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#966965797316228480> rdfs:label "user_sample(3)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4161436774050500311> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-1838852129273409636> rdfs:label "val_ind(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7407438850715267378>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5261539169284742934> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2458968937952108796> rdfs:label "np(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3039392370849469639> rdfs:label "len(2)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5236732208269697773> rdfs:label "np(2)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6281746554675613277> rdfs:label "tr_ind(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7407438850715267378>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5261539169284742934> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7332481726225914879> rdfs:label "train(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1396999119495256065> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8743577309888962118> rdfs:label "activities_map(2)$0" ;
+    dj:dict <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-3039392370849469639>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4531091076068603049>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-5236732208269697773>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#2635347653187987842> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2218260927054800373> rdfs:label "np(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2635347653187987842> rdfs:label "zip(2)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3138403140547811548> rdfs:label "categoricals(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3294155478812646222> rdfs:label "test(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3116627060065178329> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#8337766070908963825> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514> rdfs:label "reduce_test(0)$1" ;
+    dj:preprocess <http://purl.org/dj/kaggle/feature-engineering-v-1-0#3685026491034863514>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#5263412665848557363> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#7271760993935026693> rdfs:label "pd(1)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-2052461493891863275> rdfs:label "lgb(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4907801543979376271> rdfs:label "target(6)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887> rdfs:label "train_labels(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292> rdfs:label "train(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/6111008168106534600> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#2075648518899695617> rdfs:label "tr_ind(5)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4322915795687171299>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6803307985440550672>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#6214434701708647552> rdfs:label "val_ind(5)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#4322915795687171299>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#6803307985440550672>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#807482966904948451> rdfs:label "session(3)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/feature-engineering-v-1-0#966965797316228480> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1578282530485971970> rdfs:label "target(5)" .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#1881972241038336271> rdfs:label "reduce_train(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-705873967373126989> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> rdfs:label "test(0)$0" ;
+    dj:encode_title <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-4952194495114582887>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-6727804067983811292>,
+        <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-8283643172970343430> .
+
+<http://purl.org/dj/kaggle/feature-engineering-v-1-0#832547994595535689> rdfs:label "reduce_train(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/feature-engineering-v-1-0#-7669692073857152161> .
+
+<http://purl.org/dj/python/lib/6111008168106534600> rdfs:label "feature-engineering-v-1-0.ipynb" .
+

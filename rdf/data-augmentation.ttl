@@ -1,0 +1,125 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:data-augmentation a k:Notebook .
+
+<http://purl.org/dj/kaggle/data-augmentation#-4628823209292321575> rdfs:label "YouTubeVideo(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-1477362863552536691> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-608780736415389925> rdfs:label "my_new_model(0)$3" ;
+    dj:fit_generator <http://purl.org/dj/kaggle/data-augmentation#4562102821703630929>,
+        <http://purl.org/dj/kaggle/data-augmentation#4687562127346558293> .
+
+<http://purl.org/dj/kaggle/data-augmentation#1745042822730432703> rdfs:label "Flatten(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6553018427353167263> .
+
+<http://purl.org/dj/kaggle/data-augmentation#3526689466945415795> rdfs:label "Sequential(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-682178794103254041> .
+
+<http://purl.org/dj/kaggle/data-augmentation#4786396229287403316> rdfs:label "GlobalAveragePooling2D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-3972999722150017299> .
+
+<http://purl.org/dj/kaggle/data-augmentation#7625455421119778008> rdfs:label "ImageDataGenerator(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/3715924497348341657> .
+
+<http://purl.org/dj/kaggle/data-augmentation#8952446941338824501> rdfs:label "validation_generator(0)$0" ;
+    dj:flow_from_directory <http://purl.org/dj/kaggle/data-augmentation#-4377133265800584535>,
+        <http://purl.org/dj/kaggle/data-augmentation#2233576807679839686> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-4208140911155888058> rdfs:label "ResNet50(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8982770895645282650> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-6109063166372694037> rdfs:label "data_generator_with_aug(0)$0" ;
+    dj:ImageDataGenerator <http://purl.org/dj/kaggle/data-augmentation#-1063416399830214950> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-6332675436064738007> rdfs:label "my_new_model(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-7239463292074845979> rdfs:label "num_classes(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-9186033912307718939> rdfs:label "Dense(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/476811729665102703> .
+
+<http://purl.org/dj/kaggle/data-augmentation#1256599809355827246> rdfs:label "my_new_model(0)$1" ;
+    dj:add <http://purl.org/dj/kaggle/data-augmentation#-7239463292074845979>,
+        <http://purl.org/dj/kaggle/data-augmentation#-9186033912307718939>,
+        <http://purl.org/dj/kaggle/data-augmentation#5435036308721555741> .
+
+<http://purl.org/dj/kaggle/data-augmentation#2233576807679839686> rdfs:label "data_generator_no_aug(0)$0" ;
+    dj:ImageDataGenerator <http://purl.org/dj/kaggle/data-augmentation#-1063416399830214950> .
+
+<http://purl.org/dj/kaggle/data-augmentation#4562102821703630929> rdfs:label "train_generator(0)$0" ;
+    dj:flow_from_directory <http://purl.org/dj/kaggle/data-augmentation#-4377133265800584535>,
+        <http://purl.org/dj/kaggle/data-augmentation#-6109063166372694037> .
+
+<http://purl.org/dj/kaggle/data-augmentation#4687562127346558293> rdfs:label "my_new_model(0)$2" ;
+    dj:compile <http://purl.org/dj/kaggle/data-augmentation#1256599809355827246> .
+
+<http://purl.org/dj/kaggle/data-augmentation#5435036308721555741> rdfs:label "my_new_model(0)$0" ;
+    dj:add <http://purl.org/dj/kaggle/data-augmentation#-4208140911155888058>,
+        <http://purl.org/dj/kaggle/data-augmentation#-6332675436064738007>,
+        <http://purl.org/dj/kaggle/data-augmentation#775698231366881451> .
+
+<http://purl.org/dj/kaggle/data-augmentation#775698231366881451> rdfs:label "resnet_weights_path(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/-1477362863552536691> rdfs:label "YouTubeVideo" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5657114529603324274> .
+
+<http://purl.org/dj/python/lib/-3972999722150017299> rdfs:label "GlobalAveragePooling2D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3662096313924523816> .
+
+<http://purl.org/dj/python/lib/-6553018427353167263> rdfs:label "Flatten" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3662096313924523816> .
+
+<http://purl.org/dj/python/lib/-682178794103254041> rdfs:label "Sequential" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3826585063172431450> .
+
+<http://purl.org/dj/python/lib/-7144859542554084384> rdfs:label "preprocess_input" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3394213009348639767> .
+
+<http://purl.org/dj/python/lib/2298647102731317519> rdfs:label "tensorflow.python.keras.applications" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/3394213009348639767> rdfs:label "tensorflow.python.keras.applications.resnet50" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/3715924497348341657> rdfs:label "ImageDataGenerator" ;
+    dj:importedBy <http://purl.org/dj/python/lib/6490593755632181338> .
+
+<http://purl.org/dj/python/lib/3826585063172431450> rdfs:label "tensorflow.python.keras.models" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/476811729665102703> rdfs:label "Dense" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3662096313924523816> .
+
+<http://purl.org/dj/python/lib/5657114529603324274> rdfs:label "IPython.display" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/6490593755632181338> rdfs:label "tensorflow.python.keras.preprocessing.image" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/8982770895645282650> rdfs:label "ResNet50" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2298647102731317519> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-1063416399830214950> rdfs:label "preprocess_input(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-7144859542554084384> .
+
+<http://purl.org/dj/kaggle/data-augmentation#-4377133265800584535> rdfs:label "image_size(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/3662096313924523816> rdfs:label "tensorflow.python.keras.layers" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8416836274082433440> .
+
+<http://purl.org/dj/python/lib/8416836274082433440> rdfs:label "data-augmentation.ipynb" .
+

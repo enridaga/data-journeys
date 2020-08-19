@@ -1,0 +1,178 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:pipelines a k:Notebook .
+
+<http://purl.org/dj/kaggle/pipelines#-1898778673358189935> rdfs:label "Pipeline(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1760692578120937312> .
+
+<http://purl.org/dj/kaggle/pipelines#-2604488840766154360> rdfs:label "RandomForestRegressor(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7191264877910117573> .
+
+<http://purl.org/dj/kaggle/pipelines#-315773930960501611> rdfs:label "train_test_split(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-9077073871764153597> .
+
+<http://purl.org/dj/kaggle/pipelines#-679913964004750945> rdfs:label "mean_absolute_error(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2207092164801179887> .
+
+<http://purl.org/dj/kaggle/pipelines#-7227080027007706645> rdfs:label "SimpleImputer(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8441905727704884921> .
+
+<http://purl.org/dj/kaggle/pipelines#-8414776799536625697> rdfs:label "OneHotEncoder(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-3978743496690620748> .
+
+<http://purl.org/dj/kaggle/pipelines#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/pipelines#-8479963273339117496> .
+
+<http://purl.org/dj/kaggle/pipelines#5273047439906411757> rdfs:label "ColumnTransformer(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-1143432525082051098> .
+
+<http://purl.org/dj/kaggle/pipelines#5857972696830978566> rdfs:label "categorical_transformer(0)$0" ;
+    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#7020488602291222239> .
+
+<http://purl.org/dj/kaggle/pipelines#880468642730610524> rdfs:label "preprocessor(0)$0" ;
+    dj:ColumnTransformer <http://purl.org/dj/kaggle/pipelines#-1844437867641964558> .
+
+<http://purl.org/dj/kaggle/pipelines#-1652582571089624075> rdfs:label "[<_ast.Constant object at 0x1095402b0>, <_ast.Constant object at 0x1095407f0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#-1844437867641964558> rdfs:label "[<_ast.Tuple object at 0x10959d7c0>, <_ast.Tuple object at 0x10959d100>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#-4279081575370657511> rdfs:label "X_valid(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/pipelines#-9137461179449944722>,
+        <http://purl.org/dj/kaggle/pipelines#1716014413818440886> .
+
+<http://purl.org/dj/kaggle/pipelines#-6176043083348565855> rdfs:label "numerical_cols(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/pipelines#-1652582571089624075>,
+        <http://purl.org/dj/kaggle/pipelines#-3026790793993179957>,
+        <http://purl.org/dj/kaggle/pipelines#-5312664510498189916> .
+
+<http://purl.org/dj/kaggle/pipelines#-6242167593932462540> rdfs:label "my_pipeline(0)$1" ;
+    dj:fit <http://purl.org/dj/kaggle/pipelines#299874802487339902>,
+        <http://purl.org/dj/kaggle/pipelines#4364573966375241136>,
+        <http://purl.org/dj/kaggle/pipelines#9206636271240416354> .
+
+<http://purl.org/dj/kaggle/pipelines#-6433754518679069182> rdfs:label "X_train(0)$0" ;
+    dj:copy <http://purl.org/dj/kaggle/pipelines#-5312664510498189916>,
+        <http://purl.org/dj/kaggle/pipelines#1716014413818440886> .
+
+<http://purl.org/dj/kaggle/pipelines#-8479963273339117496> rdfs:label "score(0)$0" ;
+    dj:mean_absolute_error <http://purl.org/dj/kaggle/pipelines#246876520646769095>,
+        <http://purl.org/dj/kaggle/pipelines#7731806406802547010> .
+
+<http://purl.org/dj/kaggle/pipelines#-9137461179449944722> rdfs:label "X_valid_full(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/pipelines#159497459885331428>,
+        <http://purl.org/dj/kaggle/pipelines#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/pipelines#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/pipelines#246876520646769095> rdfs:label "y_valid(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/pipelines#159497459885331428>,
+        <http://purl.org/dj/kaggle/pipelines#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/pipelines#299874802487339902> rdfs:label "y_train(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/pipelines#159497459885331428>,
+        <http://purl.org/dj/kaggle/pipelines#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/pipelines#330891400227217081> rdfs:label "categorical_cols(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/pipelines#-3026790793993179957>,
+        <http://purl.org/dj/kaggle/pipelines#-5312664510498189916> .
+
+<http://purl.org/dj/kaggle/pipelines#3866630605045324992> rdfs:label "[<_ast.Tuple object at 0x109c0d220>, <_ast.Tuple object at 0x109c0d0d0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#4364573966375241136> rdfs:label "my_pipeline(0)$0" ;
+    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#3866630605045324992> .
+
+<http://purl.org/dj/kaggle/pipelines#7020488602291222239> rdfs:label "[<_ast.Tuple object at 0x10959de80>, <_ast.Tuple object at 0x10959d460>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#7731806406802547010> rdfs:label "preds(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/pipelines#-4279081575370657511>,
+        <http://purl.org/dj/kaggle/pipelines#-6242167593932462540> .
+
+<http://purl.org/dj/kaggle/pipelines#9206636271240416354> rdfs:label "X_train(0)$1" ;
+    dj:head <http://purl.org/dj/kaggle/pipelines#-6433754518679069182> .
+
+<http://purl.org/dj/kaggle/pipelines#934271515869505112> rdfs:label "[<_ast.Constant object at 0x109540490>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/-1143432525082051098> rdfs:label "ColumnTransformer" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1823581947028850915> .
+
+<http://purl.org/dj/python/lib/-3978743496690620748> rdfs:label "OneHotEncoder" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-551140347679575925> .
+
+<http://purl.org/dj/python/lib/-551140347679575925> rdfs:label "sklearn.preprocessing" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/-9077073871764153597> rdfs:label "train_test_split" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/1760692578120937312> rdfs:label "Pipeline" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2772012967163527788> .
+
+<http://purl.org/dj/python/lib/1823581947028850915> rdfs:label "sklearn.compose" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/1971035824501899329> rdfs:label "sklearn.impute" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/2207092164801179887> rdfs:label "mean_absolute_error" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8211509272460624157> .
+
+<http://purl.org/dj/python/lib/2772012967163527788> rdfs:label "sklearn.pipeline" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/3851854903529712893> rdfs:label "sklearn.ensemble" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/7191264877910117573> rdfs:label "RandomForestRegressor" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3851854903529712893> .
+
+<http://purl.org/dj/python/lib/8211509272460624157> rdfs:label "sklearn.metrics" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/python/lib/8441905727704884921> rdfs:label "SimpleImputer" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1971035824501899329> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#-3026790793993179957> rdfs:label "cname(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/-2645760394687709846> .
+
+<http://purl.org/dj/kaggle/pipelines#1716014413818440886> rdfs:label "my_cols(0)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/pipelines#-6176043083348565855>,
+        <http://purl.org/dj/kaggle/pipelines#330891400227217081> .
+
+<http://purl.org/dj/kaggle/pipelines#5423062785190305426> rdfs:label "data(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/pipelines#1949833381586467096> .
+
+<http://purl.org/dj/kaggle/pipelines#-5312664510498189916> rdfs:label "X_train_full(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/pipelines#159497459885331428>,
+        <http://purl.org/dj/kaggle/pipelines#4005452395737380376> .
+
+<http://purl.org/dj/kaggle/pipelines#159497459885331428> rdfs:label "X(0)$0" ;
+    dj:drop <http://purl.org/dj/kaggle/pipelines#5423062785190305426>,
+        <http://purl.org/dj/kaggle/pipelines#934271515869505112> .
+
+<http://purl.org/dj/kaggle/pipelines#4005452395737380376> rdfs:label "y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/pipelines#5423062785190305426> .
+
+<http://purl.org/dj/python/lib/-2645760394687709846> rdfs:label "pipelines.ipynb" .
+

@@ -1,0 +1,83 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+k:cross-validation a k:Notebook .
+
+<http://purl.org/dj/kaggle/cross-validation#-8862678899395375469> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/cross-validation#-5353630428711004492> .
+
+<http://purl.org/dj/kaggle/cross-validation#1839564154813390981> rdfs:label "cross_val_score(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8911768992191965624> .
+
+<http://purl.org/dj/kaggle/cross-validation#7707956360019949495> rdfs:label "make_pipeline(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-1515206690684636771> .
+
+<http://purl.org/dj/kaggle/cross-validation#-2604488840766154360> rdfs:label "RandomForestRegressor(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7191264877910117573> .
+
+<http://purl.org/dj/kaggle/cross-validation#-5353630428711004492> rdfs:label "scores(0)$0" ;
+    dj:cross_val_score <http://purl.org/dj/kaggle/cross-validation#159497459885331428>,
+        <http://purl.org/dj/kaggle/cross-validation#4005452395737380376>,
+        <http://purl.org/dj/kaggle/cross-validation#4364573966375241136> .
+
+<http://purl.org/dj/kaggle/cross-validation#-5878930555915940472> rdfs:label "cols_to_use(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/cross-validation#5599923773918831962> .
+
+<http://purl.org/dj/kaggle/cross-validation#159497459885331428> rdfs:label "X(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/cross-validation#-5878930555915940472>,
+        <http://purl.org/dj/kaggle/cross-validation#5423062785190305426> .
+
+<http://purl.org/dj/kaggle/cross-validation#1949833381586467096> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+
+<http://purl.org/dj/kaggle/cross-validation#350522952351969194> rdfs:label "Imputer(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4985357910754332664> .
+
+<http://purl.org/dj/kaggle/cross-validation#4005452395737380376> rdfs:label "y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/cross-validation#5423062785190305426> .
+
+<http://purl.org/dj/kaggle/cross-validation#4364573966375241136> rdfs:label "my_pipeline(0)$0" ;
+    dj:make_pipeline <http://purl.org/dj/kaggle/cross-validation#-2604488840766154360>,
+        <http://purl.org/dj/kaggle/cross-validation#350522952351969194> .
+
+<http://purl.org/dj/kaggle/cross-validation#5599923773918831962> rdfs:label "[<_ast.Constant object at 0x1083e4640>, <_ast.Constant object at 0x1083e45e0>, <_ast.Constant object at 0x1094e2880>, <_ast.Constant object at 0x1094e27f0>, <_ast.Constant object at 0x10867e490>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/python/lib/-1515206690684636771> rdfs:label "make_pipeline" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2772012967163527788> .
+
+<http://purl.org/dj/python/lib/-4985357910754332664> rdfs:label "Imputer" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-551140347679575925> .
+
+<http://purl.org/dj/python/lib/-551140347679575925> rdfs:label "sklearn.preprocessing" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/python/lib/-8911768992191965624> rdfs:label "cross_val_score" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
+
+<http://purl.org/dj/python/lib/2772012967163527788> rdfs:label "sklearn.pipeline" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/python/lib/3851854903529712893> rdfs:label "sklearn.ensemble" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/python/lib/7191264877910117573> rdfs:label "RandomForestRegressor" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3851854903529712893> .
+
+<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/5781441765943806590> .
+
+<http://purl.org/dj/kaggle/cross-validation#5423062785190305426> rdfs:label "data(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/cross-validation#1949833381586467096> .
+
+<http://purl.org/dj/python/lib/5781441765943806590> rdfs:label "cross-validation.ipynb" .
+
