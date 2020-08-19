@@ -1,0 +1,8 @@
+digraph { 
+"pandas" -> "simple-notebook" [label = "importedBy"]
+"pd(0)" -> "simple-notebook" [label = "appearsIn"]
+"pd(0)" -> "pandas" [label = "assignedFrom"]
+"var3(0)$0" -> "pd(0)" [label = "start"]
+"output(0)$0" -> "var3(0)$0" [label = "assignedFrom"]
+"print[0]" -> "output(0)$0" [label = "print"]
+}

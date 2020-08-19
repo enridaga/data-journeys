@@ -1,0 +1,23 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/simple-notebook#-8524247128405682818> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-notebook#-2846434743430924692> .
+
+<http://purl.org/dj/kaggle/simple-notebook#-135686107301404705> rdfs:label "var3(0)$0" ;
+    dj:start <http://purl.org/dj/kaggle/simple-notebook#5063491273276520289> .
+
+<http://purl.org/dj/kaggle/simple-notebook#-2846434743430924692> rdfs:label "output(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-notebook#-135686107301404705> .
+
+<http://purl.org/dj/kaggle/simple-notebook#5063491273276520289> rdfs:label "pd(0)" ;
+    dj:appearsIn k:simple-notebook ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6084625367154981728> .
+
+<http://purl.org/dj/python/lib/6084625367154981728> rdfs:label "pandas" ;
+    dj:importedBy k:simple-notebook .
+
+k:simple-notebook a k:Notebook ;
+    rdfs:label "simple-notebook" .
+
