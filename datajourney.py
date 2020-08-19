@@ -65,7 +65,7 @@ class FindDependencies(ast.NodeVisitor):
       if not hasattr(self, '_appeared'):
         self._appeared = []
       if symbol not in self._appeared:
-        self.__collect(self._notebook, "appears", symbol)
+        self.__collect(self._notebook, "appearsIn", symbol)
         self._appeared.append(symbol)
     return symbol
 
@@ -115,25 +115,25 @@ class FindDependencies(ast.NodeVisitor):
 ### Visitor
   def visit_Import(self, node): # node.names
     scope = self.__scope(node)
-    func = "import"
+    func = "importedBy"
     #print(vars(node), node.names)
     for alias in node.names:
       s = str(alias.name) # the module is a constant as it needs to be the same in all notebooks
       self.__collect(self._notebook, func, s) 
       o = self.__variable(str(alias.asname or alias.name), scope) # the variable, instead, needs to be different for each notebook
-      self.__collect(s, "assign", o)
+      self.__collect(s, "assignedFrom", o)
     self.generic_visit(node)
   
   def visit_ImportFrom(self, node): # (identifier? module, alias* names, int? level)
     scope = self.__scope(node)
-    func = "import"
+    func = "importedBy"
     m = str(node.module) # the module is a constant as it needs to be the same in all notebooks
     self.__collect(self._notebook, func, m) # 
     for alias in node.names:
       s = str(alias.name)  # the module is a constant as it needs to be the same in all notebooks
       self.__collect(m, func, s)
       o = self.__variable(str(alias.asname or alias.name), scope)
-      self.__collect(s, "assign", o)
+      self.__collect(s, "assignedFrom", o)
     self.generic_visit(node)
   
   def visit_Module(self, node):
@@ -226,7 +226,7 @@ class FindDependencies(ast.NodeVisitor):
     scope = self.__scope(node)
     v = node.value
     leaves = self._collectLeaves(v)
-    func = "assign"
+    func = "assignedFrom"
     if type(v) is ast.BinOp:
       func = str(type(v.op).__name__)
     if type(v) is ast.Call:
@@ -281,7 +281,7 @@ class FindDependencies(ast.NodeVisitor):
       s = self.__variable(s, scope)
       for t in tgt:
         t = self.__variable(t, scope)
-        self.__collect(s, "Iter", t)
+        self.__collect(s, "iteratorOf", t)
     self.generic_visit(node)
 
   def visit_While(self, node):
