@@ -1,257 +1,73 @@
 digraph { 
-"numpy" -> "data-analysis-using-sql.ipynb" [label = "import"]
-"np(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"np(0)" -> "numpy" [label = "assign"]
-"pandas" -> "data-analysis-using-sql.ipynb" [label = "import"]
-"pd(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"pd(0)" -> "pandas" [label = "assign"]
-"sqlite3" -> "data-analysis-using-sql.ipynb" [label = "import"]
-"sqlite3(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"sqlite3(0)" -> "sqlite3" [label = "assign"]
-"matplotlib.pyplot" -> "data-analysis-using-sql.ipynb" [label = "import"]
-"plt(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"plt(0)" -> "matplotlib.pyplot" [label = "assign"]
-"../input/(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"path(0)$0" -> "../input/(0)" [label = "assign"]
-"database(0)$0" -> "path(0)$0" [label = "Add"]
-"database.sqlite(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"database(0)$0" -> "database.sqlite(0)" [label = "Add"]
+"numpy" -> "data-analysis-using-sql.ipynb" [label = "importedBy"]
+"np(0)" -> "data-analysis-using-sql.ipynb" [label = "appearsIn"]
+"np(0)" -> "numpy" [label = "assignedFrom"]
+"pandas" -> "data-analysis-using-sql.ipynb" [label = "importedBy"]
+"pd(0)" -> "data-analysis-using-sql.ipynb" [label = "appearsIn"]
+"pd(0)" -> "pandas" [label = "assignedFrom"]
+"sqlite3" -> "data-analysis-using-sql.ipynb" [label = "importedBy"]
+"sqlite3(0)" -> "data-analysis-using-sql.ipynb" [label = "appearsIn"]
+"sqlite3(0)" -> "sqlite3" [label = "assignedFrom"]
+"matplotlib.pyplot" -> "data-analysis-using-sql.ipynb" [label = "importedBy"]
+"plt(0)" -> "data-analysis-using-sql.ipynb" [label = "appearsIn"]
+"plt(0)" -> "matplotlib.pyplot" [label = "assignedFrom"]
+"path(0)" -> "data-analysis-using-sql.ipynb" [label = "appearsIn"]
+"database(0)$0" -> "path(0)" [label = "Add"]
 "conn(0)$0" -> "sqlite3(0)" [label = "connect"]
 "conn(0)$0" -> "database(0)$0" [label = "connect"]
 "tables(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT *
-                        FROM sqlite_master
-                        WHERE type='table';(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"tables(0)$0" -> "SELECT *
-                        FROM sqlite_master
-                        WHERE type='table';(0)" [label = "read_sql"]
 "tables(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "countries(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT *
-                        FROM Country;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"countries(0)$0" -> "SELECT *
-                        FROM Country;(0)" [label = "read_sql"]
 "countries(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "leagues(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT *
-                        FROM League
-                        JOIN Country ON Country.id = League.country_id;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"leagues(0)$0" -> "SELECT *
-                        FROM League
-                        JOIN Country ON Country.id = League.country_id;(0)" [label = "read_sql"]
 "leagues(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "teams(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT *
-                        FROM Team
-                        ORDER BY team_long_name
-                        LIMIT 10;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"teams(0)$0" -> "SELECT *
-                        FROM Team
-                        ORDER BY team_long_name
-                        LIMIT 10;(0)" [label = "read_sql"]
 "teams(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "detailed_matches(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT Match.id, 
-                                        Country.name AS country_name, 
-                                        League.name AS league_name, 
-                                        season, 
-                                        stage, 
-                                        date,
-                                        HT.team_long_name AS  home_team,
-                                        AT.team_long_name AS away_team,
-                                        home_team_goal, 
-                                        away_team_goal                                        
-                                FROM Match
-                                JOIN Country on Country.id = Match.country_id
-                                JOIN League on League.id = Match.league_id
-                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
-                                LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
-                                WHERE country_name = 'Spain'
-                                ORDER by date
-                                LIMIT 10;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"detailed_matches(0)$0" -> "SELECT Match.id, 
-                                        Country.name AS country_name, 
-                                        League.name AS league_name, 
-                                        season, 
-                                        stage, 
-                                        date,
-                                        HT.team_long_name AS  home_team,
-                                        AT.team_long_name AS away_team,
-                                        home_team_goal, 
-                                        away_team_goal                                        
-                                FROM Match
-                                JOIN Country on Country.id = Match.country_id
-                                JOIN League on League.id = Match.league_id
-                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
-                                LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
-                                WHERE country_name = 'Spain'
-                                ORDER by date
-                                LIMIT 10;(0)" [label = "read_sql"]
 "detailed_matches(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "leages_by_season(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT Country.name AS country_name, 
-                                        League.name AS league_name, 
-                                        season,
-                                        count(distinct stage) AS number_of_stages,
-                                        count(distinct HT.team_long_name) AS number_of_teams,
-                                        avg(home_team_goal) AS avg_home_team_scors, 
-                                        avg(away_team_goal) AS avg_away_team_goals, 
-                                        avg(home_team_goal-away_team_goal) AS avg_goal_dif, 
-                                        avg(home_team_goal+away_team_goal) AS avg_goals, 
-                                        sum(home_team_goal+away_team_goal) AS total_goals                                       
-                                FROM Match
-                                JOIN Country on Country.id = Match.country_id
-                                JOIN League on League.id = Match.league_id
-                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
-                                LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
-                                WHERE country_name in ('Spain', 'Germany', 'France', 'Italy', 'England')
-                                GROUP BY Country.name, League.name, season
-                                HAVING count(distinct stage) > 10
-                                ORDER BY Country.name, League.name, season DESC
-                                ;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"leages_by_season(0)$0" -> "SELECT Country.name AS country_name, 
-                                        League.name AS league_name, 
-                                        season,
-                                        count(distinct stage) AS number_of_stages,
-                                        count(distinct HT.team_long_name) AS number_of_teams,
-                                        avg(home_team_goal) AS avg_home_team_scors, 
-                                        avg(away_team_goal) AS avg_away_team_goals, 
-                                        avg(home_team_goal-away_team_goal) AS avg_goal_dif, 
-                                        avg(home_team_goal+away_team_goal) AS avg_goals, 
-                                        sum(home_team_goal+away_team_goal) AS total_goals                                       
-                                FROM Match
-                                JOIN Country on Country.id = Match.country_id
-                                JOIN League on League.id = Match.league_id
-                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
-                                LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
-                                WHERE country_name in ('Spain', 'Germany', 'France', 'Italy', 'England')
-                                GROUP BY Country.name, League.name, season
-                                HAVING count(distinct stage) > 10
-                                ORDER BY Country.name, League.name, season DESC
-                                ;(0)" [label = "read_sql"]
 "leages_by_season(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "df(0)$0" -> "pd(0)" [label = "DataFrame"]
 "df(0)$0" -> "np(0)" [label = "DataFrame"]
 "df(0)$0" -> "leages_by_season(0)$0" [label = "DataFrame"]
-"season(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$0" -> "season(0)" [label = "DataFrame"]
 "df(0)$0" -> "leages_by_season(0)$0" [label = "DataFrame"]
-"country_name(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$0" -> "country_name(0)" [label = "DataFrame"]
 "df(0)$1" -> "df(0)$0" [label = "list"]
 "df(0)$1" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$1" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$1" -> "country_name(0)" [label = "list"]
-"Germany(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$1" -> "Germany(0)" [label = "list"]
-"avg_goals(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$1" -> "avg_goals(0)" [label = "list"]
 "df(0)$2" -> "df(0)$1" [label = "list"]
 "df(0)$2" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$2" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$2" -> "country_name(0)" [label = "list"]
-"Spain(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$2" -> "Spain(0)" [label = "list"]
-"df(0)$2" -> "avg_goals(0)" [label = "list"]
 "df(0)$3" -> "df(0)$2" [label = "list"]
 "df(0)$3" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$3" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$3" -> "country_name(0)" [label = "list"]
-"France(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$3" -> "France(0)" [label = "list"]
-"df(0)$3" -> "avg_goals(0)" [label = "list"]
 "df(0)$4" -> "df(0)$3" [label = "list"]
 "df(0)$4" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$4" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$4" -> "country_name(0)" [label = "list"]
-"Italy(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$4" -> "Italy(0)" [label = "list"]
-"df(0)$4" -> "avg_goals(0)" [label = "list"]
 "df(0)$5" -> "df(0)$4" [label = "list"]
 "df(0)$5" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$5" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$5" -> "country_name(0)" [label = "list"]
-"England(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$5" -> "England(0)" [label = "list"]
-"df(0)$5" -> "avg_goals(0)" [label = "list"]
 "df(0)$6" -> "df(0)$5" [label = "plot"]
 "df(0)$7" -> "pd(0)" [label = "DataFrame"]
 "df(0)$7" -> "np(0)" [label = "DataFrame"]
 "df(0)$7" -> "leages_by_season(0)$0" [label = "DataFrame"]
-"df(0)$7" -> "season(0)" [label = "DataFrame"]
 "df(0)$7" -> "leages_by_season(0)$0" [label = "DataFrame"]
-"df(0)$7" -> "country_name(0)" [label = "DataFrame"]
 "df(0)$8" -> "df(0)$7" [label = "list"]
 "df(0)$8" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$8" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$8" -> "country_name(0)" [label = "list"]
-"df(0)$8" -> "Germany(0)" [label = "list"]
-"avg_goal_dif(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"df(0)$8" -> "avg_goal_dif(0)" [label = "list"]
 "df(0)$9" -> "df(0)$8" [label = "list"]
 "df(0)$9" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$9" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$9" -> "country_name(0)" [label = "list"]
-"df(0)$9" -> "Spain(0)" [label = "list"]
-"df(0)$9" -> "avg_goal_dif(0)" [label = "list"]
 "df(0)$10" -> "df(0)$9" [label = "list"]
 "df(0)$10" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$10" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$10" -> "country_name(0)" [label = "list"]
-"df(0)$10" -> "France(0)" [label = "list"]
-"df(0)$10" -> "avg_goal_dif(0)" [label = "list"]
 "df(0)$11" -> "df(0)$10" [label = "list"]
 "df(0)$11" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$11" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$11" -> "country_name(0)" [label = "list"]
-"df(0)$11" -> "Italy(0)" [label = "list"]
-"df(0)$11" -> "avg_goal_dif(0)" [label = "list"]
 "df(0)$12" -> "df(0)$11" [label = "list"]
 "df(0)$12" -> "leages_by_season(0)$0" [label = "list"]
 "df(0)$12" -> "leages_by_season(0)$0" [label = "list"]
-"df(0)$12" -> "country_name(0)" [label = "list"]
-"df(0)$12" -> "England(0)" [label = "list"]
-"df(0)$12" -> "avg_goal_dif(0)" [label = "list"]
 "df(0)$13" -> "df(0)$12" [label = "plot"]
 "players_height(0)$0" -> "pd(0)" [label = "read_sql"]
-"SELECT CASE
-                                        WHEN ROUND(height)<165 then 165
-                                        WHEN ROUND(height)>195 then 195
-                                        ELSE ROUND(height)
-                                        END AS calc_height, 
-                                        COUNT(height) AS distribution, 
-                                        (avg(PA_Grouped.avg_overall_rating)) AS avg_overall_rating,
-                                        (avg(PA_Grouped.avg_potential)) AS avg_potential,
-                                        AVG(weight) AS avg_weight 
-                            FROM PLAYER
-                            LEFT JOIN (SELECT Player_Attributes.player_api_id, 
-                                        avg(Player_Attributes.overall_rating) AS avg_overall_rating,
-                                        avg(Player_Attributes.potential) AS avg_potential  
-                                        FROM Player_Attributes
-                                        GROUP BY Player_Attributes.player_api_id) 
-                                        AS PA_Grouped ON PLAYER.player_api_id = PA_Grouped.player_api_id
-                            GROUP BY calc_height
-                            ORDER BY calc_height
-                                ;(0)" -> "data-analysis-using-sql.ipynb" [label = "appears"]
-"players_height(0)$0" -> "SELECT CASE
-                                        WHEN ROUND(height)<165 then 165
-                                        WHEN ROUND(height)>195 then 195
-                                        ELSE ROUND(height)
-                                        END AS calc_height, 
-                                        COUNT(height) AS distribution, 
-                                        (avg(PA_Grouped.avg_overall_rating)) AS avg_overall_rating,
-                                        (avg(PA_Grouped.avg_potential)) AS avg_potential,
-                                        AVG(weight) AS avg_weight 
-                            FROM PLAYER
-                            LEFT JOIN (SELECT Player_Attributes.player_api_id, 
-                                        avg(Player_Attributes.overall_rating) AS avg_overall_rating,
-                                        avg(Player_Attributes.potential) AS avg_potential  
-                                        FROM Player_Attributes
-                                        GROUP BY Player_Attributes.player_api_id) 
-                                        AS PA_Grouped ON PLAYER.player_api_id = PA_Grouped.player_api_id
-                            GROUP BY calc_height
-                            ORDER BY calc_height
-                                ;(0)" [label = "read_sql"]
 "players_height(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "players_height(0)$1" -> "players_height(0)$0" [label = "plot"]
 }

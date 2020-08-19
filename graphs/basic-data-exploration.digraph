@@ -1,10 +1,9 @@
 digraph { 
-"pandas" -> "basic-data-exploration.ipynb" [label = "import"]
-"pd(0)" -> "basic-data-exploration.ipynb" [label = "appears"]
-"pd(0)" -> "pandas" [label = "assign"]
-"../input/melbourne-housing-snapshot/melb_data.csv(0)" -> "basic-data-exploration.ipynb" [label = "appears"]
-"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)" [label = "assign"]
+"pandas" -> "basic-data-exploration.ipynb" [label = "importedBy"]
+"pd(0)" -> "basic-data-exploration.ipynb" [label = "appearsIn"]
+"pd(0)" -> "pandas" [label = "assignedFrom"]
 "melbourne_data(0)$0" -> "pd(0)" [label = "read_csv"]
-"melbourne_data(0)$0" -> "melbourne_file_path(0)$0" [label = "read_csv"]
+"melbourne_file_path(0)" -> "basic-data-exploration.ipynb" [label = "appearsIn"]
+"melbourne_data(0)$0" -> "melbourne_file_path(0)" [label = "read_csv"]
 "melbourne_data(0)$1" -> "melbourne_data(0)$0" [label = "describe"]
 }

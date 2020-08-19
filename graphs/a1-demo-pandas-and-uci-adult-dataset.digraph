@@ -1,9 +1,7 @@
 digraph { 
-"pandas" -> "a1-demo-pandas-and-uci-adult-dataset.ipynb" [label = "import"]
-"pd(0)" -> "a1-demo-pandas-and-uci-adult-dataset.ipynb" [label = "appears"]
-"pd(0)" -> "pandas" [label = "assign"]
+"pandas" -> "a1-demo-pandas-and-uci-adult-dataset.ipynb" [label = "importedBy"]
+"pd(0)" -> "a1-demo-pandas-and-uci-adult-dataset.ipynb" [label = "appearsIn"]
+"pd(0)" -> "pandas" [label = "assignedFrom"]
 "data(0)$0" -> "pd(0)" [label = "read_csv"]
-"../input/adult.data.csv(0)" -> "a1-demo-pandas-and-uci-adult-dataset.ipynb" [label = "appears"]
-"data(0)$0" -> "../input/adult.data.csv(0)" [label = "read_csv"]
 "data(0)$1" -> "data(0)$0" [label = "head"]
 }
