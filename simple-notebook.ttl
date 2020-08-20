@@ -2,20 +2,34 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://purl.org/dj/kaggle/simple-notebook#-8524247128405682818> rdfs:label "print[0]" ;
-    dj:print <http://purl.org/dj/kaggle/simple-notebook#-2846434743430924692> .
+<http://purl.org/dj/kaggle/simple-notebook#7819847954770926537> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-notebook#-6451751778729334183> .
 
-<http://purl.org/dj/kaggle/simple-notebook#-135686107301404705> rdfs:label "var3(0)$0" ;
-    dj:start <http://purl.org/dj/kaggle/simple-notebook#5063491273276520289> .
-
-<http://purl.org/dj/kaggle/simple-notebook#-2846434743430924692> rdfs:label "output(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-notebook#-135686107301404705> .
-
-<http://purl.org/dj/kaggle/simple-notebook#5063491273276520289> rdfs:label "pd(0)" ;
+<http://purl.org/dj/kaggle/simple-notebook#-1448048479192116972> rdfs:label "pd(0)" ;
     dj:appearsIn k:simple-notebook ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/6084625367154981728> .
+    dj:assignedFrom <http://purl.org/dj/python/lib/4897275608854377891> .
 
-<http://purl.org/dj/python/lib/6084625367154981728> rdfs:label "pandas" ;
+<http://purl.org/dj/kaggle/simple-notebook#-4794348276469609572> rdfs:label "data(0)$0" ;
+    dj:readfile <http://purl.org/dj/kaggle/simple-notebook#-758217953680863329> .
+
+<http://purl.org/dj/kaggle/simple-notebook#-6451751778729334183> rdfs:label "output(0)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/simple-notebook#-4794348276469609572>,
+        <http://purl.org/dj/kaggle/simple-notebook#1981716205756585840>,
+        <http://purl.org/dj/kaggle/simple-notebook#2575785605462507155> .
+
+<http://purl.org/dj/kaggle/simple-notebook#-758217953680863329> rdfs:label "filename.csv(0)" ;
+    dj:appearsIn k:simple-notebook .
+
+<http://purl.org/dj/kaggle/simple-notebook#-8340221358685235105> rdfs:label "2(0)" ;
+    dj:appearsIn k:simple-notebook .
+
+<http://purl.org/dj/kaggle/simple-notebook#1981716205756585840> rdfs:label "var3(0)$0" ;
+    dj:start <http://purl.org/dj/kaggle/simple-notebook#-1448048479192116972> .
+
+<http://purl.org/dj/kaggle/simple-notebook#2575785605462507155> rdfs:label "var2(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-notebook#-8340221358685235105> .
+
+<http://purl.org/dj/python/lib/4897275608854377891> rdfs:label "pandas" ;
     dj:importedBy k:simple-notebook .
 
 k:simple-notebook a k:Notebook ;

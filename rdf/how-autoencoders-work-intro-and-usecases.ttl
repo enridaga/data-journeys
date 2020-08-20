@@ -4,1031 +4,1437 @@
 
 k:how-autoencoders-work-intro-and-usecases a k:Notebook .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-111381093989513683> rdfs:label "decoded_layer1(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3087833227594443801> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1290394337389402371> rdfs:label "decoded_layer3(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5394592773000050363> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1588010247466454058> rdfs:label "trace2(0)$1" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1624479708458338541> rdfs:label "f(0)$5" ;
-    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8711524842138666461> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1743738559850585113> rdfs:label "print[3]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4336263977283945498> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1927524219029038750> rdfs:label "noise(0)$0" ;
-    dj:SaltAndPepper <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6651719499757416423> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1934057318486035119> rdfs:label "f(0)$9" ;
-    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7322556235731065938> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-198689080399123601> rdfs:label "ax(0)$9" ;
-    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7361789131507432507>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4010922828807379333> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2143247246706031693> rdfs:label "ax(0)$3" ;
-    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7064495411082564764>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7731806406802547010> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2217384087189647577> rdfs:label "target_seq(4)$1" ;
-    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-367322062488482949>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5755832453781593623> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2383844348193301769> rdfs:label "ax(0)$1" ;
-    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1857036260607767207>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1367898300953243191> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2470480597664813782> rdfs:label "trace2(0)$2" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2728840724900849227> rdfs:label "h(4)$0" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1260241736131009075>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2235743492954187895>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7113291690217427424> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2973391592114806211> rdfs:label "_(2)$0" ;
-    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6049249688052502748>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-315773930960501611> rdfs:label "train_test_split(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-9077073871764153597> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3954838181718487189> rdfs:label "trace3(0)$0" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3617274774312894170> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-424484988716843108> rdfs:label "iplot[0]" ;
-    dj:iplot <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2044753090427417758>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9206865850266136867>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6103604215915809463> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4386778415403705820> rdfs:label "t(4)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3065127363069088368>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2793219439321666126> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4526253851549835699> rdfs:label "state_c(2)$0" ;
-    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1907012654663180515> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5454512434322446079> rdfs:label "autoencoder(0)$3" ;
-    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9065573804765730537>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#257544166736797598>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#936570232889512663> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-563628397266886355> rdfs:label "trace1(0)$2" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6233721860451320857> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-570971839667461177> rdfs:label "Model(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/3360240113261537324> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5750811964362777146> rdfs:label "encoder_model(2)$0" ;
-    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6049249688052502748>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1907012654663180515> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6446663493329535970> rdfs:label "X2(1)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3759670900001554574>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6428461944829806821>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7957068171837660021>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#924659500957248601> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6482106155341261877> rdfs:label "ax(0)$5" ;
-    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4573180420344220580>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5545958871503032998>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6970829166524907177> rdfs:label "to_categorical(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/298166032407828804> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7028301368846185793> rdfs:label "LSTM(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8498875790012118601> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7308852078473774456> rdfs:label "trace1(0)$0" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6233721860451320857> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7350686749396937200> rdfs:label "model(2)$0" ;
-    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4645261230500022138>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-766009481293249439> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7561276212987929664> rdfs:label "EarlyStopping(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-1694638187702946157> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7695076912571776672> rdfs:label "output(4)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6548971974597912760>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2266134897327982922> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8150508825719185811> rdfs:label "encoded_layer1(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-480203791387381869> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8807122790361605066> rdfs:label "print[2]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8117938998856182689>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#936570232889512663> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8862678899395375469> rdfs:label "print[0]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6566165645069273364>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8117938998856182689> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8998818054967826155> rdfs:label "seed_seq(1)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5412230367206620925>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2027597824571893216> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9004346118225260686> rdfs:label "f(0)$7" ;
-    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5261647925863665275> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9121147406277996031> rdfs:label "decoded_layer2(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7670395115496596597> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9138768996353751793> rdfs:label "current_state(4)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1370586685308873327> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1258971741951849364> rdfs:label "trace2(0)$0" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1433092476838138396> rdfs:label "state_h(2)$0" ;
-    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1907012654663180515> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1810182880392006378> rdfs:label "trace4(0)$0" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1084359257286365398>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2289047881840056609> rdfs:label "f(0)$3" ;
-    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#498771292420221934> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2436987689992605279> rdfs:label "history(0)$0" ;
-    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2384981241279901543>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2474955997405482058>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4573180420344220580>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5420204693574367320>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3373968868900122319>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#66688348670869943> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2521045806931287121> rdfs:label "y(1)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2152310213621299375>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-814470752449314048>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7957068171837660021>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#924659500957248601> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2559037862880902875> rdfs:label "Image(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-526264220127912012> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2834081149518892960> rdfs:label "ax(0)$7" ;
-    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4701147993213888200>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5420204693574367320>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2899788742835651421> rdfs:label "encoded_layer2(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1300463268310687938>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2915644846567004967> rdfs:label "decoder_dense(2)$0" ;
-    dj:Dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1588604770278545378> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3436159745170857136> rdfs:label "train_y(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5761569958912486794> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3792573901718949759> rdfs:label "c(4)$0" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1260241736131009075>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2235743492954187895>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7113291690217427424> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4234113131252299161> rdfs:label "state_h(2)$1" ;
-    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8030913836907525564>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4365120109542547535> rdfs:label "k(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3492039275133784191> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#458189673172467864> rdfs:label "argmax(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/7447134530719673053> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1474129072576714513> rdfs:label "print[7]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4092557066764137201> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-180490701247971090> rdfs:label "c(4)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3096094634667930720>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5106652899887303914>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#654580510368798462> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2465323381126300968> rdfs:label "encoded_layer2(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1158363288629282045>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#574314656520040308>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2498638559806911977> rdfs:label "state_h(2)$0" ;
+    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6748646304472819545> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2866274062479769801> rdfs:label "encoder_outputs(2)$0" ;
+    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6748646304472819545> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2973685016109225412> rdfs:label "output(4)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3706126256787272559>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-653792346523352051>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7576073083760517718> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3045624566628728407> rdfs:label "f(0)$10" ;
+    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4154926552464028198>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3364190474735649727> rdfs:label "target_seq(4)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3706126256787272559> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3615616306702567992> rdfs:label "decoder_state_input_h(2)$0" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3551266753241384756> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3670990404432033878> rdfs:label "state_h(2)$1" ;
+    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7472269974176335320>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3688702903594679834> rdfs:label "decoded_layer1(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7291615738357912463>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9173119188148436144> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3736162285877999289> rdfs:label "init_notebook_mode[0]" ;
+    dj:init_notebook_mode <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5964263518524119237> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3790947846115020619> rdfs:label "train_test_split(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8040706438028832723> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3799534563149105267> rdfs:label "print[4]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4092557066764137201> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3837824941838338864> rdfs:label "ax(0)$7" ;
+    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7574052537364204016>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5006456614496307191>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3929559536985550390> rdfs:label "trace1(0)$2" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5108362478050150300>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2313843633548711189>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3983360558940870557> rdfs:label "encoded_seq(3)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5006947672282281946> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4772764718676664203> rdfs:label "ax(0)$5" ;
+    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5318858612726703446>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6633553153245393139>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4947708228822618806> rdfs:label "encoder(2)$0" ;
+    dj:LSTM <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7187535692917960569>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3551266753241384756> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5165840536980522771> rdfs:label "plt(0)$7" ;
+    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6665643206347227522> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5496118799445236299> rdfs:label "Input(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1055864642508938120> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5646969856836601156> rdfs:label "early_stopping(0)$1" ;
+    dj:EarlyStopping <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8788690182154999498>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9184936132702381664>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5944751961717893329> rdfs:label "current_state(4)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1648004108432820331> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6261325546338683938> rdfs:label "noise(0)$0" ;
+    dj:SaltAndPepper <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5653375122601032916>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5943392011337844512> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6541953950284263441> rdfs:label "decoder_lstm(2)$0" ;
+    dj:LSTM <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7187535692917960569>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3551266753241384756> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6550077071184954886> rdfs:label "history(0)$0" ;
+    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6633553153245393139>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6881758859161415133>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8036173521672280134>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3220013244943892309>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5006456614496307191>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6681465307327810464>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#810036469704893174> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6703257315060443667> rdfs:label "decoded_layer2(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1158363288629282045>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7482133423623662075> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6992951807083433790> rdfs:label "trace3(0)$0" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#754638527495395042>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7131307631119181462> rdfs:label "print[8]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1110490746642744620> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7405302465641047549> rdfs:label "X2(0)$0" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8002494978163707465> rdfs:label "encoder_model(2)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3115818651406531384>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6748646304472819545> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8120272001027675902> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7963316497390563947>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1392970834714881344> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8134737872038445717> rdfs:label "X2(1)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5411989340627321114>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6029742009463903149>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2114904612032191934>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5877412159600380081> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8354797188452365530> rdfs:label "trace1(0)$0" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3831648375455515781>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5108362478050150300>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2313843633548711189>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8698200512566177683> rdfs:label "early_stopping(0)$0" ;
+    dj:EarlyStopping <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8788690182154999498>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9184936132702381664>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9178917040245429499> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8913529472126447247>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6146217977045201797>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8563020120844811952> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9211743160698493750> rdfs:label "f(0)$4" ;
+    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7405651434495859498> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1163775816706913476> rdfs:label "ax(0)$1" ;
+    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-80483467858027168>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7191778599744581630> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1690361081284594423> rdfs:label "f(0)$6" ;
+    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8489125661954746300>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1693353861856685928> rdfs:label "train_y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7537643208824224058>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9201811565323782660> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1928561166028551575> rdfs:label "encoded_layer1(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7852120884365719867>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2987682627814858775>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2048007249057279452> rdfs:label "trace2(0)$1" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#235897332850296088> rdfs:label "state_c(2)$1" ;
+    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7472269974176335320>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2367966460761358994> rdfs:label "target_seq(4)$1" ;
+    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8375334182153549117>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8472053008502398967>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8937330278514421612> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2393794394282845977> rdfs:label "_(2)$0" ;
+    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3115818651406531384>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2738093338059707005> rdfs:label "t(4)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1248632086877293363>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#310643589317020035> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2896366625261276232> rdfs:label "X1(1)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5411989340627321114>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6029742009463903149>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1916340805053055750>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#346449241283210036> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2906067988580957341> rdfs:label "array_equal(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6248650788897880383> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3224240597367702465> rdfs:label "decoded_layer3(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2747983069661668760>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2987682627814858775>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3354072496279303552> rdfs:label "state_c(2)$0" ;
+    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6748646304472819545> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#358073086140072827> rdfs:label "y(1)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5004238059886385655>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5411989340627321114>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6029742009463903149>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7398958641351052224> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3652084311578569081> rdfs:label "trace2(0)$0" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4755165753019176989>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3926236879630983332> rdfs:label "model(2)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7475716672078869636>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1803693850124557171> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#399876199769591050> rdfs:label "f(0)$8" ;
+    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6008779909601827368>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4129942569280954792> rdfs:label "seed_seq(1)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6458433452109830733>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3822052612067978621>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4250170475005203178> rdfs:label "LSTM(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/3903102458562038465> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4379194731591764263> rdfs:label "print[3]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-122025595106920882>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#452420142691057547> rdfs:label "autoencoder(0)$3" ;
+    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-122025595106920882>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2265799819045236296>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6323363070453821427> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4547265263637647610> rdfs:label "trace2(0)$2" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4768593503300436517> rdfs:label "val_y(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8070683641458907013>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5552575229149632803> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4905936174373768221> rdfs:label "argmax(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8897102569724769749> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#510917724200786298> rdfs:label "f(0)$2" ;
+    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#37966580746474847> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#544419260012647133> rdfs:label "randint(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/5544660216486781202> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5761170355182716203> rdfs:label "trace4(0)$0" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7221832032429789140>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4148864832194799069>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4699216540724248435>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4784948987488394469>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6146107460561008869> rdfs:label "iplot[0]" ;
+    dj:iplot <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1145319353534158743>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5579803370580661243>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6299980348254928894> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6268150227427753803> rdfs:label "EarlyStopping(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-3981631932314060308> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6318760055266235269> rdfs:label "init_notebook_mode(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6398895165926816587> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6685013577529454182> rdfs:label "h(4)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3096094634667930720>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5106652899887303914>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#654580510368798462> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7256750614407269179> rdfs:label "trace3(0)$1" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-370600032349496928>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7304008707964096103> rdfs:label "ax(0)$9" ;
+    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6349990432351701430>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9098589063988441949> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7437897377870882539> rdfs:label "print[6]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7878258314573611449> rdfs:label "decoder_dense(2)$0" ;
+    dj:Dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7340778816023707502>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7619828077108500525> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7894585190777011915> rdfs:label "print[5]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-494142986262561617> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8084369439328742768> rdfs:label "trace4(0)$1" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6849213447593620769>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7221832032429789140>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4699216540724248435>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4784948987488394469>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8260841011951747439> rdfs:label "iplot(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6727070851180600338> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8604814358879381727> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4536083790979511478>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4092557066764137201> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8706117591669734014> rdfs:label "decoder_outputs(2)$3" ;
+    dj:decoder_dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8193942382138950242> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8807418080618319529> rdfs:label "Image(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/8475546432809931984> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8911260997112794648> rdfs:label "to_categorical(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6853091852727259855> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8946107855846790304> rdfs:label "trace1(0)$1" ;
+    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5108362478050150300>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2313843633548711189>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9011109949754755659> rdfs:label "decoder_model(2)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-30798697000699078>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6871977356741185262>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7472269974176335320>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4304136690022429618> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9061743973266644576> rdfs:label "k(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7982066392014253928> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#961678097177221596> rdfs:label "ax(0)$3" ;
+    dj:imshow <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7049945871916156369>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8073145858135808161> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#965565685712990360> rdfs:label "decoder_state_input_c(2)$0" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3551266753241384756> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1099396861242920977> rdfs:label "model_2(0)$1" ;
+    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8865053525541057337> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1145319353534158743> rdfs:label "figure(0)$0" ;
+    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7348855063098975626>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3548113670638254389>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-119416270328374376> rdfs:label "encoded_layer3(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-137880622082628431>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7291615738357912463> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1204238549410131775> rdfs:label "decode_layer3(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4460757991683577270>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1391676565929854549>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1249164157327403822> rdfs:label "data(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7019843152851723660> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-140789524854165353> rdfs:label "train_x(0)$6" ;
+    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2008516600093970976>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7915194327673588266> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1699612100857385690> rdfs:label "n_out(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3361756018773518252> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1718208891780525757> rdfs:label "layout(0)$2" ;
+    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2740400487228120118>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3129565850053641608>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4835937249358510843>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6854376782826275691>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8087457326699776643>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9120734848473445756>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1065091928162958557>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1237587683220963939>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3525113107841693000>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1935314043404218352> rdfs:label "define_models[0]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2008516600093970976> rdfs:label "train_x(0)$5" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1396069967936338946>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2062598675991727581> rdfs:label "n_in(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6616420047703603431> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2265799819045236296> rdfs:label "[<_ast.Name object at 0x104fe2eb0>, <_ast.Name object at 0x104fe2e80>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2380874848666893532> rdfs:label "sequence(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1148716634874073073> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2421002205383801048> rdfs:label "n_samples(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6821294847168557832> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-255210692332176776> rdfs:label "plt(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2552654623480541734> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2580693961603820996> rdfs:label "encode_layer3(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5739244585776863262>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#303608023821866499>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2740400487228120118> rdfs:label "Latent Distance View Space(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2873408655452543286> rdfs:label "latent_view(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2580693961603820996>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4917086002444591442> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-30798697000699078> rdfs:label "decoder_states(2)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8114299663193913544> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3129565850053641608> rdfs:label "u1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3410230763071060007> rdfs:label "model(0)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5204215770302074214>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6607965667372856211> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-370600032349496928> rdfs:label "random_y3(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4204908388215092980>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7982066392014253928>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3831648375455515781> rdfs:label "Actual Data(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3832452199096634259> rdfs:label "_(1)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2421002205383801048>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8981700356024418800> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4154926552464028198> rdfs:label "f(0)$9" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6665643206347227522>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-452237173995151966> rdfs:label "data(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9144671194016650511> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4536083790979511478> rdfs:label "inputs(0)$0" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5788733049654471308>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4545106138565991982> rdfs:label "[<_ast.Name object at 0x104fb75e0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4617786495719563514> rdfs:label "0.0(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4683414877765353053> rdfs:label "6(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4846695209112735126> rdfs:label "plt(0)$1" ;
+    dj:stem <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6724912812654447791>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7520901244164223130>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8774914043744204910>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#932120797660921710> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-494142986262561617> rdfs:label "y(0)$1" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5004238059886385655> rdfs:label "[<_ast.Name object at 0x104fda670>](1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5006947672282281946> rdfs:label "reverse_onehot[0]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5084319369441488337> rdfs:label "dataset_preparation[2]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-518254453648135230> rdfs:label "autoencoder(0)$0" ;
+    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5318858612726703446> rdfs:label "ax(0)$4" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6054830259497612014> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5579803370580661243> rdfs:label "figure(0)$2" ;
+    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1718208891780525757>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-452237173995151966>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5653375122601032916> rdfs:label "0.1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5739244585776863262> rdfs:label "encode_layer2(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3505927973498954062>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6665761350235485469> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6008779909601827368> rdfs:label "f(0)$7" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3869391478853542458>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6061206354755488148> rdfs:label "f(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6084145207739108527> rdfs:label "autoencoder(0)$1" ;
+    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-518254453648135230> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6141276254180583820> rdfs:label "[<_ast.Name object at 0x104fdff70>, <_ast.Name object at 0x104fdffa0>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6165350285666356525> rdfs:label "X1(1)$2" ;
+    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6165350285666356525>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6355116016227335366>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6228266556287937621> rdfs:label "val_x(0)$2" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1396069967936338946>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6458433452109830733> rdfs:label "target_seq(1)$0" ;
+    dj:list <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5716520129071781520>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8285540066840257334> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-653792346523352051> rdfs:label "0(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6635493870985863815> rdfs:label "[<_ast.Call object at 0x105082100>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-668810909234518045> rdfs:label "decoder_model(0)$0" ;
+    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6724912812654447791> rdfs:label "r(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6849213447593620769> rdfs:label "random_y4(0)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6854376782826275691> rdfs:label "1.5(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6871977356741185262> rdfs:label "[<_ast.Name object at 0x104fe2430>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7019843152851723660> rdfs:label "[<_ast.Name object at 0x104f99a60>, <_ast.Name object at 0x104f99a90>, <_ast.Name object at 0x104f99ac0>, <_ast.Name object at 0x104f99af0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7049945871916156369> rdfs:label "preds(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-80483467858027168>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#184807114008495019> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7058682871416586810> rdfs:label "51(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7348855063098975626> rdfs:label "layout(0)$0" ;
+    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4835937249358510843>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5507577874333506348>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6635493870985863815>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9120734848473445756>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1065091928162958557>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5120093751165975756>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6236597307577190375>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7398958641351052224> rdfs:label "y(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7784426931613500520> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7453748598309503312> rdfs:label "[<_ast.Call object at 0x104f9f3d0>, <_ast.Call object at 0x104f96850>, <_ast.Call object at 0x104f96df0>, <_ast.Call object at 0x104f99430>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7475716672078869636> rdfs:label "decoder_outputs(2)$1" ;
+    dj:decoder_dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7949910309739593005> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7574052537364204016> rdfs:label "ax(0)$6" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3869391478853542458>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7576073083760517718> rdfs:label "output(4)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4919644424825325502> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7601875902221345411> rdfs:label "decode_layer1(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2873408655452543286>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#303608023821866499>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7750547154349813787> rdfs:label "decoder_model(0)$1" ;
+    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-668810909234518045> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7915146208862971734> rdfs:label "layout(0)$1" ;
+    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4835937249358510843>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5507577874333506348>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7453748598309503312>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8087457326699776643>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9120734848473445756>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1065091928162958557>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5120093751165975756>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6236597307577190375>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7949910309739593005> rdfs:label "decoder_outputs(2)$0" ;
+    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3115818651406531384>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7963316497390563947> rdfs:label "seeds(0)$0" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5788733049654471308>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8036173521672280134> rdfs:label "[<_ast.Name object at 0x104fc9a60>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8080631896285070327> rdfs:label "encoder(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6421315302907507639> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8114299663193913544> rdfs:label "[<_ast.Name object at 0x104fe2130>, <_ast.Name object at 0x104fe2160>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8375334182153549117> rdfs:label "target_seq(4)$0" ;
+    dj:array <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4617786495719563514>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8472053008502398967>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1248632086877293363>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3342569379579830551>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5268150712786343536> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8489125661954746300> rdfs:label "f(0)$5" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6054830259497612014> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8774914043744204910> rdfs:label "plt(0)$0" ;
+    dj:figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-255210692332176776> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8865053525541057337> rdfs:label "model_2(0)$0" ;
+    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7852120884365719867>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8887517580246638596> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8887517580246638596> rdfs:label "output_layer(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#933734595919754716> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8913529472126447247> rdfs:label "Here is first categorically encoded input sequence looks like: (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9144671194016650511> rdfs:label "[<_ast.Name object at 0x104fae4c0>, <_ast.Name object at 0x104fae4f0>, <_ast.Name object at 0x104fae520>, <_ast.Name object at 0x104fae550>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1110490746642744620> rdfs:label "target(0)$0" ;
+    dj:predict_sequence <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7750547154349813787>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1392970834714881344>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4137362660385673215> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1148716634874073073> rdfs:label "predict_sequence[2]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1184830026717686402> rdfs:label "train_x(0)$2" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8070683641458907013>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5552575229149632803> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1237587683220963939> rdfs:label "u2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1391676565929854549> rdfs:label "decode_layer2(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3505927973498954062>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7601875902221345411>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1648004108432820331> rdfs:label "[<_ast.Name object at 0x104fefe80>, <_ast.Name object at 0x104fe7040>](4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1803693850124557171> rdfs:label "[<_ast.Name object at 0x104fd08b0>, <_ast.Name object at 0x104fd08e0>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#184807114008495019> rdfs:label "model(0)$3" ;
+    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5034715318951519149>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6147516128489850214> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1878973522063577034> rdfs:label "inp_seq(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2062598675991727581>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3832452199096634259>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5411989340627321114>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8981700356024418800>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4591913538381234249>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1916340805053055750> rdfs:label "X1(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7784426931613500520> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2114904612032191934> rdfs:label "X2(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7784426931613500520> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2508437884141937075> rdfs:label "encoder_model(0)$0" ;
+    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#271528441605192146> rdfs:label "model(0)$1" ;
+    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3410230763071060007> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#310643589317020035> rdfs:label "out_size(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3242430430182651379> rdfs:label "n_input(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1935314043404218352> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3342569379579830551> rdfs:label "np(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3361756018773518252> rdfs:label "dataset_preparation[1]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#346449241283210036> rdfs:label "[<_ast.Name object at 0x104fda1f0>](1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3525113107841693000> rdfs:label "[<_ast.Call object at 0x104fb5490>, <_ast.Call object at 0x104fb5fa0>, <_ast.Call object at 0x104f98a60>, <_ast.Call object at 0x104f98e50>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3548113670638254389> rdfs:label "[<_ast.Name object at 0x104ff4070>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3753976983811581698> rdfs:label "val_x(0)$3" ;
+    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6228266556287937621>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7915194327673588266> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#37966580746474847> rdfs:label "f(0)$1" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5484182618929453341> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3822052612067978621> rdfs:label "[<_ast.Constant object at 0x104ff9fa0>](1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4137362660385673215> rdfs:label "encoder_model(0)$1" ;
+    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2508437884141937075> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4148864832194799069> rdfs:label "random_y4(0)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4304136690022429618> rdfs:label "[<_ast.Name object at 0x104fe2520>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4536551479808344296> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-5407211679178871565> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4591913538381234249> rdfs:label "randint(1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4755165753019176989> rdfs:label "Model(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-6437791417560216816> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4917086002444591442> rdfs:label "sigmoid(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4919644424825325502> rdfs:label "[](4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5034715318951519149> rdfs:label "model(0)$2" ;
+    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#271528441605192146> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5040486152549550613> rdfs:label "y(1)$2" ;
+    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5040486152549550613>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6355116016227335366>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5204215770302074214> rdfs:label "output_layer(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1204238549410131775>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2762230694520603539>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5268150712786343536> rdfs:label "_(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5440508379184820501> rdfs:label "predict_sequence[1]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#55375918515178231> rdfs:label "val_x(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8070683641458907013>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5552575229149632803> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5665934262070388426> rdfs:label "train_x(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1872363689925320806>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7537643208824224058> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5716520129071781520> rdfs:label "target(1)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1699612100857385690>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1878973522063577034> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5877412159600380081> rdfs:label "[<_ast.Name object at 0x104fda430>](1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5964263518524119237> rdfs:label "True(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6146217977045201797> rdfs:label "Shapes: (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6147516128489850214> rdfs:label "train_x(0)$3" ;
+    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1184830026717686402>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2762230694520603539> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6200565131165527645> rdfs:label "50(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6299980348254928894> rdfs:label "figure(0)$1" ;
+    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1249164157327403822>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7915146208862971734>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6323363070453821427> rdfs:label "autoencoder(0)$2" ;
+    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6084145207739108527> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6349990432351701430> rdfs:label "ax(0)$8" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6665643206347227522>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6421315302907507639> rdfs:label "predict_sequence[0]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6616420047703603431> rdfs:label "dataset_preparation[0]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6665761350235485469> rdfs:label "encode_layer1(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4460757991683577270>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6607965667372856211> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6745717092913877023> rdfs:label "100000(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6821294847168557832> rdfs:label "dataset_preparation[3]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6961668851468302950> rdfs:label "[<_ast.Name object at 0x104fd0df0>, <_ast.Name object at 0x104fd0e20>](2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7191778599744581630> rdfs:label "ax(0)$0" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5484182618929453341> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7405651434495859498> rdfs:label "f(0)$3" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-640934319345875208>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#754638527495395042> rdfs:label "random_y3(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4204908388215092980>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7982066392014253928>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7619828077108500525> rdfs:label "softmax(2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8073145858135808161> rdfs:label "ax(0)$2" ;
+    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-640934319345875208>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#810036469704893174> rdfs:label "2048(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8193942382138950242> rdfs:label "decoder_outputs(2)$2" ;
+    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7472269974176335320>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8278240665373139207> rdfs:label "define_models[1]" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8285540066840257334> rdfs:label "reversed(1)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8370277937514571537> rdfs:label "X2(1)$2" ;
+    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6355116016227335366>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8370277937514571537> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8563020120844811952> rdfs:label """
+Input Sequence=%s SeedSequence=%s, PredictedSequence=%s(0)""" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8937330278514421612> rdfs:label "1(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8973010000989461539> rdfs:label "../input/fashion-mnist_train.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9098589063988441949> rdfs:label "preds(0)$1" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6881758859161415133>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3220013244943892309> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9173119188148436144> rdfs:label "latent_view(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-119416270328374376>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4404566838574597908>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9201811565323782660> rdfs:label "label(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-107105177259404494> rdfs:label "MaxPool2D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/-2272463801059586828> rdfs:label "keras.models" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-3981631932314060308> rdfs:label "EarlyStopping" ;
+    dj:importedBy <http://purl.org/dj/python/lib/145515982356500014> .
+
+<http://purl.org/dj/python/lib/-4406639788843489565> rdfs:label "augmenters" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-848933787423689573> .
+
+<http://purl.org/dj/python/lib/-4716157296943204455> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-521330901931627215> rdfs:label "Conv2D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/-5407211679178871565> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-6398895165926816587> rdfs:label "init_notebook_mode" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8089538361305322895> .
+
+<http://purl.org/dj/python/lib/-6437791417560216816> rdfs:label "Model" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-2272463801059586828> .
+
+<http://purl.org/dj/python/lib/-8040706438028832723> rdfs:label "train_test_split" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-4716157296943204455> .
+
+<http://purl.org/dj/python/lib/-8362116626503036551> rdfs:label "random" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-848933787423689573> rdfs:label "imgaug" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-8820680905946839720> rdfs:label "plotly.graph_objs" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/-8897102569724769749> rdfs:label "argmax" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-8150107969603476879> .
+
+<http://purl.org/dj/python/lib/1055864642508938120> rdfs:label "Input" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/145515982356500014> rdfs:label "keras.callbacks" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/3903102458562038465> rdfs:label "LSTM" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/4413450143614024408> rdfs:label "PIL" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/5544660216486781202> rdfs:label "randint" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-8362116626503036551> .
+
+<http://purl.org/dj/python/lib/6248650788897880383> rdfs:label "array_equal" ;
+    dj:importedBy <http://purl.org/dj/python/lib/-8150107969603476879> .
+
+<http://purl.org/dj/python/lib/6727070851180600338> rdfs:label "iplot" ;
+    dj:importedBy <http://purl.org/dj/python/lib/8089538361305322895> .
+
+<http://purl.org/dj/python/lib/6853091852727259855> rdfs:label "to_categorical" ;
+    dj:importedBy <http://purl.org/dj/python/lib/7034906381186287795> .
+
+<http://purl.org/dj/python/lib/6991452181450128606> rdfs:label "Dense" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/7034906381186287795> rdfs:label "keras.utils" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/python/lib/7834846089578824007> rdfs:label "UpSampling2D" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2747840776727080102> .
+
+<http://purl.org/dj/python/lib/8475546432809931984> rdfs:label "Image" ;
+    dj:importedBy <http://purl.org/dj/python/lib/4413450143614024408> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1158363288629282045> rdfs:label "32(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-122025595106920882> rdfs:label "outputs(0)$0" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5788733049654471308>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-137880622082628431> rdfs:label "encoded_layer2(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-137880622082628431>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4404566838574597908>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1396069967936338946> rdfs:label "train_x(0)$4" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1872363689925320806>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7537643208824224058> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1872363689925320806> rdfs:label "list(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3505927973498954062> rdfs:label "1000(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3706126256787272559> rdfs:label "pred(4)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3096094634667930720>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5106652899887303914>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#654580510368798462> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4460757991683577270> rdfs:label "1500(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5507577874333506348> rdfs:label "2D Data Repersentation Space(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6881758859161415133> rdfs:label "model_2(0)$2" ;
+    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1099396861242920977> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7187535692917960569> rdfs:label "True(2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7221832032429789140> rdfs:label "300(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7340778816023707502> rdfs:label "n_output(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8278240665373139207> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7499980086746804959> rdfs:label "None(2)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7520901244164223130> rdfs:label "y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6061206354755488148>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6660040664201542085>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#932120797660921710> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7852120884365719867> rdfs:label "input_layer(0)$1" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7915194327673588266> rdfs:label "255.0(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-80483467858027168> rdfs:label "val_x(0)$1" ;
+    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2762230694520603539>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#55375918515178231> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8087457326699776643> rdfs:label "False(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8472053008502398967> rdfs:label "features(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8788690182154999498> rdfs:label "val_loss(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8981700356024418800> rdfs:label "range(1)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4794870709214345565> rdfs:label "encoded_seq(3)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3678829953992394861> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9184936132702381664> rdfs:label "auto(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4969891075423710521> rdfs:label "iplot(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/2504948890534408366> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1248632086877293363> rdfs:label "range(4)" .
+
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1392970834714881344> rdfs:label "X1(0)$0" ;
+    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5608774453400606478> rdfs:label "X1(1)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7957068171837660021>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8015481432846638550>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#866187301101703918>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#924659500957248601> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5693782592052929098> rdfs:label "plt(0)$7" ;
-    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4336310260433795380> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2747983069661668760> rdfs:label "decoded_layer2(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1660622442319424590>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2747983069661668760> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6548442943939041181> rdfs:label "encoder_outputs(2)$0" ;
-    dj:encoder <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1907012654663180515> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6608396142105514780> rdfs:label "decoder_outputs(2)$3" ;
-    dj:decoder_dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-285930571879646208> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7168312108440019351> rdfs:label "Input(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/3529913797783560878> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7236556561210309661> rdfs:label "trace3(0)$1" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1991826432688020136>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7302125125917457114> rdfs:label "trace1(0)$1" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6233721860451320857> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7311706327164689192> rdfs:label "print[5]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1159144645376715580> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7363706196156194347> rdfs:label "array_equal(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/8485922812592481252> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7502080212969393175> rdfs:label "randint(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-3352234816736903712> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7588593689717237647> rdfs:label "decoder_model(2)$0" ;
-    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5239627212186094748>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8030913836907525564>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1983230256597541145>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4719541188050857313> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7692719340655236032> rdfs:label "state_c(2)$1" ;
-    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8030913836907525564>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7829855897856608447> rdfs:label "X2(0)$0" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2987682627814858775> rdfs:label "64(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7879678557526462827> rdfs:label "f(0)$1" ;
-    dj:set_size_inches <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8063955908031129196> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#303608023821866499> rdfs:label "500(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8301377136670604491> rdfs:label "val_y(0)$0" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1608047008488349523>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8481663195458155407> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3220013244943892309> rdfs:label "val_x_n(0)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3298748700032571672>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3651049792126947275>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6681465307327810464> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8643587270540059185> rdfs:label "init_notebook_mode(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/7616929224342208210> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3651049792126947275> rdfs:label "seq_object(0)$0" ;
+    dj:Sequential <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4545106138565991982>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5943392011337844512> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8745316825745160692> rdfs:label "print[4]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8117938998856182689> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4699216540724248435> rdfs:label "4(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8751110677130570911> rdfs:label "target_seq(4)$2" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2266134897327982922> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4784948987488394469> rdfs:label "24(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8880411335245867586> rdfs:label "trace4(0)$1" ;
-    dj:Scatter <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1232928143199667909>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5006456614496307191> rdfs:label "train_x_n(0)$0" ;
+    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3298748700032571672>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6633553153245393139>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3651049792126947275> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9012744981868382944> rdfs:label "print[1]" ;
-    dj:print <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4056865256897560881>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2788284352221159907> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5120093751165975756> rdfs:label "x1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1084359257286365398> rdfs:label "random_y4(0)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#574314656520040308> rdfs:label "encoded_layer1(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4404566838574597908>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#574314656520040308>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1232928143199667909> rdfs:label "random_y4(0)$1" ;
-    dj:Add <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5943392011337844512> rdfs:label "augmenters(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-4406639788843489565> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1257731161497491104> rdfs:label "dataset_preparation[2]" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6236597307577190375> rdfs:label "x2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1281184902103336897> rdfs:label "train_x(0)$5" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6261529346970391007> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6607965667372856211> rdfs:label "input_layer(0)$0" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2762230694520603539> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1370586685308873327> rdfs:label "[<_ast.Name object at 0x109615070>, <_ast.Name object at 0x1096150a0>](4)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6660040664201542085> rdfs:label "fs(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4204908388215092980> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1499505224240013359> rdfs:label "layout(0)$2" ;
-    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8710445600335251538>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8456860563302425007> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6681465307327810464> rdfs:label "val_x(0)$4" ;
+    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3753976983811581698>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1626356019773145469> rdfs:label "target(1)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1874281695991184335>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2113785621281742735> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7291615738357912463> rdfs:label "16(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1801267477600802552> rdfs:label "decoder_model(0)$0" ;
-    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7482133423623662075> rdfs:label "decoded_layer1(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1660622442319424590>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7482133423623662075> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1874281695991184335> rdfs:label "inp_seq(1)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3010791077035422685>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4408816763542385121>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4826037212841305533>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7309462872554654230>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#924659500957248601> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#933734595919754716> rdfs:label "decoded_layer3(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1660622442319424590>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#933734595919754716> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1987829272510624462> rdfs:label "encode_layer3(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2802899667691478784>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/python/lib/2552654623480541734> rdfs:label "matplotlib.pyplot" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1991826432688020136> rdfs:label "random_y3(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3492039275133784191>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498> .
+<http://purl.org/dj/python/lib/8089538361305322895> rdfs:label "plotly.offline" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2044753090427417758> rdfs:label "figure(0)$0" ;
-    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5613205646871404041>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7761485230823754080>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1660622442319424590> rdfs:label "UpSampling2D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/7834846089578824007> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2095165888108916151> rdfs:label "output_layer(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4396577415001689134>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2754652312174087634> rdfs:label "N(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6200565131165527645> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2152310213621299375> rdfs:label "y(1)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2684965956933693579> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3096094634667930720> rdfs:label "current_state(4)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2380874848666893532>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8080631896285070327> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2474955997405482058> rdfs:label "[<_ast.Name object at 0x109632760>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3115818651406531384> rdfs:label "encoder_states(2)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6141276254180583820> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2802899667691478784> rdfs:label "encode_layer2(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8388931901525074300> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3298748700032571672> rdfs:label "255(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-285930571879646208> rdfs:label "decoder_outputs(2)$2" ;
-    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8030913836907525564>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3869391478853542458> rdfs:label "plt(0)$5" ;
+    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6054830259497612014> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2883544829573301161> rdfs:label "X2(1)$2" ;
-    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2883544829573301161>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3345794709143531966> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4204908388215092980> rdfs:label "100(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2960104427001826475> rdfs:label "autoencoder(0)$0" ;
-    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4835937249358510843> rdfs:label "12(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3010791077035422685> rdfs:label "randint(1)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5106652899887303914> rdfs:label "[<_ast.Name object at 0x104fefc10>](4)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3065127363069088368> rdfs:label "out_size(4)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5108362478050150300> rdfs:label "markers(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3595579002071932915> rdfs:label "decode_layer1(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3918498264808497172>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6029742009463903149> rdfs:label "to_categorical(1)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-376261237174491664> rdfs:label "decode_layer2(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3595579002071932915>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-640934319345875208> rdfs:label "plt(0)$3" ;
+    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5484182618929453341> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3918498264808497172> rdfs:label "latent_view(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1987829272510624462>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6633553153245393139> rdfs:label "train_x(0)$7" ;
+    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-140789524854165353>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3965863081808447988> rdfs:label "[<_ast.Name object at 0x109608e50>, <_ast.Name object at 0x109608e80>](2)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6665643206347227522> rdfs:label "plt(0)$6" ;
+    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3869391478853542458> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4087940807387903389> rdfs:label "f(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7537643208824224058> rdfs:label "train(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4536551479808344296>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8973010000989461539> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4194622276335101717> rdfs:label "define_models[0]" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9120734848473445756> rdfs:label "dict(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4336263977283945498> rdfs:label "y(0)$1" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1065091928162958557> rdfs:label "400(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4396577415001689134> rdfs:label "decode_layer3(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-376261237174491664>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2313843633548711189> rdfs:label "random_y1(0)$0" ;
+    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2754652312174087634>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4408816763542385121> rdfs:label "n_in(1)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6094092875310577692> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4092557066764137201> rdfs:label "reverse_onehot(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4533303255171894572> rdfs:label "[<_ast.Name object at 0x10961c190>, <_ast.Name object at 0x10961c1c0>](2)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4404566838574597908> rdfs:label "MaxPool2D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-107105177259404494> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4645261230500022138> rdfs:label "decoder_outputs(2)$1" ;
-    dj:decoder_dense <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6706664139448824746> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5484182618929453341> rdfs:label "plt(0)$2" ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2552654623480541734> ;
+    dj:plot <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4846695209112735126>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7520901244164223130>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#932120797660921710> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4701034553607621888> rdfs:label "model_2(0)$0" ;
-    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-480203791387381869>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4391531764935772910> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5788733049654471308> rdfs:label "samples(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6745717092913877023> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4701147993213888200> rdfs:label "ax(0)$6" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#688751936331262831> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6054830259497612014> rdfs:label "plt(0)$4" ;
+    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-640934319345875208> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4826037212841305533> rdfs:label "_(1)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-569433827422218138>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7309462872554654230> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6355116016227335366> rdfs:label "np(1)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5026415292730348083> rdfs:label "encoder_model(0)$1" ;
-    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7460541595775562336> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#654580510368798462> rdfs:label "decoder(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5440508379184820501> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5124391532438210086> rdfs:label "dataset_preparation[1]" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7784426931613500520> rdfs:label "[](1)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5219505239594488031> rdfs:label "layout(0)$1" ;
-    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8456860563302425007>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9198811874963598065> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#932120797660921710> rdfs:label "x(0)$0" ;
+    dj:arange <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6660040664201542085> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5239627212186094748> rdfs:label "[<_ast.Name object at 0x10961c400>](2)" .
+<http://purl.org/dj/python/lib/-8150107969603476879> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5412230367206620925> rdfs:label "[<_ast.Constant object at 0x10962bfd0>](1)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5411989340627321114> rdfs:label "n_unique(1)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5084319369441488337> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5545958871503032998> rdfs:label "ax(0)$4" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2063311132832815765> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7472269974176335320> rdfs:label "decoder_states_inputs(2)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6961668851468302950> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5613205646871404041> rdfs:label "[<_ast.Name object at 0x109629040>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7982066392014253928> rdfs:label "range(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-569433827422218138> rdfs:label "n_samples(1)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#707543637432574010> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8070683641458907013> rdfs:label "train_x(0)$1" ;
+    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3298748700032571672>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5665934262070388426> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5941831769802989007> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8350141215242356670> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2762230694520603539> rdfs:label "784(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6094092875310577692> rdfs:label "dataset_preparation[0]" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3551266753241384756> rdfs:label "128(2)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6178087558749459060> rdfs:label "[<_ast.Name object at 0x109624f40>, <_ast.Name object at 0x109624f70>](2)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5552575229149632803> rdfs:label "train_y(0)$1" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8070683641458907013>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5552575229149632803> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6368420638333751442> rdfs:label "[<_ast.Name object at 0x109535460>, <_ast.Name object at 0x109535490>, <_ast.Name object at 0x1095354f0>, <_ast.Name object at 0x1095354c0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6748646304472819545> rdfs:label "encoder_inputs(2)$0" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7499980086746804959>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3242430430182651379> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6399396006220243877> rdfs:label "encoded_layer3(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6619388292617736743> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2687535748801476889> rdfs:label "random_y2(0)$0" ;
+    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2754652312174087634>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6540814726974361035> rdfs:label "reversed(1)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8150107969603476879> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6546399445291820410> rdfs:label "model(0)$1" ;
-    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3495538268968178876> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8496073383743650240> rdfs:label "40(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6548971974597912760> rdfs:label "output(4)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6806456444003208699> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8573395552360281702> rdfs:label "80(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6566165645069273364> rdfs:label "inputs(0)$0" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5233381563372098957>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6773961547790567758> rdfs:label "1(1)" .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6582990846697836807> rdfs:label "val_x(0)$2" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6261529346970391007> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8122841719627028044> rdfs:label "decoder_inputs(2)$0" ;
+    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7340778816023707502>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7499980086746804959> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7307387500741263704> rdfs:label "define_models[1]" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8235360928370301898> rdfs:label "out_size(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7361789131507432507> rdfs:label "preds(0)$1" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2384981241279901543>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#66688348670869943> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3635456609283466511> rdfs:label "inp_size(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4683414877765353053> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7411272065833950989> rdfs:label "model(0)$3" ;
-    dj:fit <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4693754845657513245>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6647953264163975642> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4412135627988489853> rdfs:label "0.2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-766009481293249439> rdfs:label "[<_ast.Name object at 0x109608910>, <_ast.Name object at 0x109608940>](2)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8295145673345103324> rdfs:label "0(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7761485230823754080> rdfs:label "layout(0)$0" ;
-    dj:Layout <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7612165491971159718>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8456860563302425007> .
+<http://purl.org/dj/python/lib/2747840776727080102> rdfs:label "keras.layers" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8063955908031129196> rdfs:label "f(0)$0" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1136556959862324009> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3078078251387930449> rdfs:label "Conv2D(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-521330901931627215> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-814470752449314048> rdfs:label "[<_ast.Name object at 0x10962a730>](1)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3469366840013955379> rdfs:label "lines(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8494399675559609238> rdfs:label "n_input(2)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4194622276335101717> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-872163909167748777> rdfs:label "i(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7982066392014253928> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8710445600335251538> rdfs:label "[<_ast.Call object at 0x1095164f0>, <_ast.Call object at 0x109516fa0>, <_ast.Call object at 0x109529ac0>, <_ast.Call object at 0x109529eb0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2872790907947867718> rdfs:label "Dense(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/6991452181450128606> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8887827142066583274> rdfs:label "y(1)$2" ;
-    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8887827142066583274>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3345794709143531966> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3688165250088061777> rdfs:label "3(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9065573804765730537> rdfs:label "autoencoder(0)$2" ;
-    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#847152985398928851> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6098529201291585899> rdfs:label "28(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9206865850266136867> rdfs:label "figure(0)$2" ;
-    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1499505224240013359>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1388964368185320128> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728> rdfs:label "10(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1159144645376715580> rdfs:label "target(0)$0" ;
-    dj:predict_sequence <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4056865256897560881>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5026415292730348083>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1408747725629564110> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#578247822193325543> rdfs:label "same(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1235555166740462159> rdfs:label "encoder(4)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#705627883064171133> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8238486517903774212> rdfs:label "features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7058682871416586810> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1367898300953243191> rdfs:label "ax(0)$0" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1136556959862324009> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3717702562843038993> rdfs:label "random_x(0)$0" ;
+    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2754652312174087634>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5259124111614366728>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5428582076275421255>,
+        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1369760350044726963> rdfs:label "np(4)" .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5478405115876190577> rdfs:label "relu(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1388964368185320128> rdfs:label "data(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5559576674438915257> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5126741702254810644> rdfs:label "5(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1408747725629564110> rdfs:label "decoder_model(0)$1" ;
-    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1801267477600802552> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7811950810711111665> rdfs:label "2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1784896930848035769> rdfs:label "val_x(0)$3" ;
-    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6582990846697836807> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#90834203373814031> rdfs:label "go(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/-8820680905946839720> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1949833381586467096> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7240386157118805712> rdfs:label "1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3067280305786977101> .
 
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1983230256597541145> rdfs:label "[<_ast.Name object at 0x10961c4f0>](2)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2027597824571893216> rdfs:label "target_seq(1)$0" ;
-    dj:list <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1626356019773145469>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6540814726974361035> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2113785621281742735> rdfs:label "n_out(1)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5124391532438210086> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#257544166736797598> rdfs:label "[<_ast.Name object at 0x10961ce80>, <_ast.Name object at 0x10961ceb0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2788284352221159907> rdfs:label "seeds(0)$0" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5233381563372098957>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3040107520859575204> rdfs:label "sequence(4)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3439424359500416950> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3087833227594443801> rdfs:label "latent_view(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5540118739501830187>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6399396006220243877> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3439424359500416950> rdfs:label "predict_sequence[2]" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3495538268968178876> rdfs:label "model(0)$0" ;
-    dj:Model <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2095165888108916151>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-480203791387381869> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3617274774312894170> rdfs:label "random_y3(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3492039275133784191>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3678829953992394861> rdfs:label "reverse_onehot[0]" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3759670900001554574> rdfs:label "[<_ast.Name object at 0x10962a4c0>](1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3889481949934759638> rdfs:label "plt(0)$1" ;
-    dj:stem <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4005452395737380376>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8071856429008277459>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8565354601180621135> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4010922828807379333> rdfs:label "ax(0)$8" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4336310260433795380> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4120456940975131059> rdfs:label "X1(1)$2" ;
-    dj:squeeze <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3345794709143531966>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4120456940975131059> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4191099526973140581> rdfs:label "train_x(0)$2" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1608047008488349523>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8481663195458155407> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4391531764935772910> rdfs:label "output_layer(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9083150503343685797> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4693754845657513245> rdfs:label "model(0)$2" ;
-    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6546399445291820410> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4719541188050857313> rdfs:label "decoder_states(2)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4533303255171894572> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#498771292420221934> rdfs:label "f(0)$2" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8125230974986252490> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5261647925863665275> rdfs:label "f(0)$6" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#688751936331262831> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5423062785190305426> rdfs:label "data(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6368420638333751442> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5559576674438915257> rdfs:label "[<_ast.Name object at 0x109520520>, <_ast.Name object at 0x109520550>, <_ast.Name object at 0x109520580>, <_ast.Name object at 0x1095205b0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5636584886968424596> rdfs:label "_(4)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5755832453781593623> rdfs:label "target_seq(4)$0" ;
-    dj:array <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-367322062488482949>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1369760350044726963>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2793219439321666126>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5636584886968424596> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5928983787607621952> rdfs:label "val_x(0)$0" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1608047008488349523>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8481663195458155407> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6103604215915809463> rdfs:label "figure(0)$1" ;
-    dj:Figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5219505239594488031>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5423062785190305426> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6428461944829806821> rdfs:label "X2(1)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2684965956933693579> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6647953264163975642> rdfs:label "train_x(0)$3" ;
-    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4191099526973140581> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6706664139448824746> rdfs:label "decoder_outputs(2)$0" ;
-    dj:decoder_lstm <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6049249688052502748>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6709471281347908358> rdfs:label "model_2(0)$1" ;
-    dj:compile <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4701034553607621888> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6806456444003208699> rdfs:label "[](4)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6974853346710834708> rdfs:label "predict_sequence[1]" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#705627883064171133> rdfs:label "predict_sequence[0]" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7064495411082564764> rdfs:label "ax(0)$2" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8125230974986252490> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#707543637432574010> rdfs:label "dataset_preparation[3]" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7322556235731065938> rdfs:label "f(0)$8" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4336310260433795380> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7460541595775562336> rdfs:label "encoder_model(0)$0" ;
-    dj:define_models <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7482552853491327073> rdfs:label "train_x(0)$6" ;
-    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1281184902103336897> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7612165491971159718> rdfs:label "[<_ast.Call object at 0x10958dac0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7731806406802547010> rdfs:label "preds(0)$0" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1857036260607767207>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7411272065833950989> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8015481432846638550> rdfs:label "X1(1)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2684965956933693579> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8388931901525074300> rdfs:label "encode_layer1(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-480203791387381869>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#847152985398928851> rdfs:label "autoencoder(0)$1" ;
-    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2960104427001826475> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8565354601180621135> rdfs:label "plt(0)$0" ;
-    dj:figure <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5941831769802989007> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#866187301101703918> rdfs:label "[<_ast.Name object at 0x10962a280>](1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8711524842138666461> rdfs:label "f(0)$4" ;
-    dj:subplots <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2063311132832815765> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9029752997592081691> rdfs:label "[<_ast.Name object at 0x109519670>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9198811874963598065> rdfs:label "[<_ast.Call object at 0x10952e6d0>, <_ast.Call object at 0x109540cd0>, <_ast.Call object at 0x1095407f0>, <_ast.Call object at 0x109535670>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9218418214441151341> rdfs:label "train_x(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2901385022846514832> .
-
-<http://purl.org/dj/python/lib/-1067640095909233326> rdfs:label "UpSampling2D" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/-1158236559812850266> rdfs:label "plotly.graph_objs" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/-1631988991984718472> rdfs:label "Conv2D" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/-1694638187702946157> rdfs:label "EarlyStopping" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7856846273999727027> .
-
-<http://purl.org/dj/python/lib/-3352234816736903712> rdfs:label "randint" ;
-    dj:importedBy <http://purl.org/dj/python/lib/6140086610842459051> .
-
-<http://purl.org/dj/python/lib/-526264220127912012> rdfs:label "Image" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7175371065724849412> .
-
-<http://purl.org/dj/python/lib/-8107269416965817692> rdfs:label "augmenters" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7545127413736733355> .
-
-<http://purl.org/dj/python/lib/-8487755032870069768> rdfs:label "keras.utils" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/-8498875790012118601> rdfs:label "LSTM" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/-9077073871764153597> rdfs:label "train_test_split" ;
-    dj:importedBy <http://purl.org/dj/python/lib/4664049343717443020> .
-
-<http://purl.org/dj/python/lib/-952689084214053870> rdfs:label "MaxPool2D" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/2504948890534408366> rdfs:label "iplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7434482763935129314> .
-
-<http://purl.org/dj/python/lib/298166032407828804> rdfs:label "to_categorical" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-8487755032870069768> .
-
-<http://purl.org/dj/python/lib/3360240113261537324> rdfs:label "Model" ;
-    dj:importedBy <http://purl.org/dj/python/lib/8802101635703853781> .
-
-<http://purl.org/dj/python/lib/3529913797783560878> rdfs:label "Input" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/4664049343717443020> rdfs:label "sklearn.model_selection" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/476811729665102703> rdfs:label "Dense" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4758532922161517508> .
-
-<http://purl.org/dj/python/lib/6140086610842459051> rdfs:label "random" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/7175371065724849412> rdfs:label "PIL" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/7447134530719673053> rdfs:label "argmax" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-5299447753950658894> .
-
-<http://purl.org/dj/python/lib/7545127413736733355> rdfs:label "imgaug" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/7616929224342208210> rdfs:label "init_notebook_mode" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7434482763935129314> .
-
-<http://purl.org/dj/python/lib/7856846273999727027> rdfs:label "keras.callbacks" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/8485922812592481252> rdfs:label "array_equal" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-5299447753950658894> .
-
-<http://purl.org/dj/python/lib/8802101635703853781> rdfs:label "keras.models" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1300463268310687938> rdfs:label "encoded_layer1(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1300463268310687938>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5540118739501830187> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1588604770278545378> rdfs:label "n_output(2)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7307387500741263704> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1857036260607767207> rdfs:label "val_x(0)$1" ;
-    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#5928983787607621952> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2384981241279901543> rdfs:label "model_2(0)$2" ;
-    dj:summary <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6709471281347908358> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-367322062488482949> rdfs:label "features(4)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4056865256897560881> rdfs:label "X1(0)$0" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5394592773000050363> rdfs:label "decoded_layer2(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5394592773000050363>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#605308426381938994> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5420204693574367320> rdfs:label "train_x_n(0)$0" ;
-    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4573180420344220580>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7450482936613494680> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6619388292617736743> rdfs:label "encoded_layer2(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5540118739501830187>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6619388292617736743> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7309462872554654230> rdfs:label "range(1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7450482936613494680> rdfs:label "seq_object(0)$0" ;
-    dj:Sequential <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6651719499757416423>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9029752997592081691> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2266134897327982922> rdfs:label "pred(4)$0" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1260241736131009075>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2235743492954187895>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7113291690217427424> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2793219439321666126> rdfs:label "range(4)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2901385022846514832> rdfs:label "list(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3373968868900122319> rdfs:label "val_x(0)$4" ;
-    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1784896930848035769> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4005452395737380376> rdfs:label "y(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4087940807387903389>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8071856429008277459>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8623731055666221620> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6261529346970391007> rdfs:label "train_x(0)$4" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2901385022846514832> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6651719499757416423> rdfs:label "augmenters(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8107269416965817692> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#66688348670869943> rdfs:label "val_x_n(0)$0" ;
-    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7450482936613494680>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3373968868900122319> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7670395115496596597> rdfs:label "decoded_layer1(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#605308426381938994>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7670395115496596597> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8623731055666221620> rdfs:label "fs(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9083150503343685797> rdfs:label "decoded_layer3(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#605308426381938994>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9083150503343685797> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#936570232889512663> rdfs:label "outputs(0)$0" ;
-    dj:dataset_preparation <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5233381563372098957>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> .
-
-<http://purl.org/dj/python/lib/-8350141215242356670> rdfs:label "matplotlib.pyplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/7434482763935129314> rdfs:label "plotly.offline" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1260241736131009075> rdfs:label "[<_ast.Name object at 0x109617c40>](4)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2235743492954187895> rdfs:label "decoder(4)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6974853346710834708> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-2684965956933693579> rdfs:label "[](1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-4573180420344220580> rdfs:label "train_x(0)$7" ;
-    dj:reshape <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7482552853491327073> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5233381563372098957> rdfs:label "samples(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5540118739501830187> rdfs:label "MaxPool2D(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-952689084214053870> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-5761569958912486794> rdfs:label "train(0)$0" ;
-    dj:read_csv <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1949833381586467096> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6049249688052502748> rdfs:label "encoder_states(2)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6178087558749459060> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-7113291690217427424> rdfs:label "current_state(4)$0" ;
-    dj:predict <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1235555166740462159>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3040107520859575204> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8125230974986252490> rdfs:label "plt(0)$3" ;
-    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1136556959862324009> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1136556959862324009> rdfs:label "plt(0)$2" ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8350141215242356670> ;
-    dj:plot <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3889481949934759638>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4005452395737380376>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8071856429008277459> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2063311132832815765> rdfs:label "plt(0)$4" ;
-    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8125230974986252490> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3345794709143531966> rdfs:label "np(1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#4336310260433795380> rdfs:label "plt(0)$6" ;
-    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#688751936331262831> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#605308426381938994> rdfs:label "UpSampling2D(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-1067640095909233326> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6233721860451320857> rdfs:label "random_y1(0)$0" ;
-    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6747880908578968384> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6747880908578968384> rdfs:label "N(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#688751936331262831> rdfs:label "plt(0)$5" ;
-    dj:show <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#2063311132832815765> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7957068171837660021> rdfs:label "to_categorical(1)" .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8071856429008277459> rdfs:label "x(0)$0" ;
-    dj:arange <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8623731055666221620> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8117938998856182689> rdfs:label "reverse_onehot(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8456860563302425007> rdfs:label "dict(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1608047008488349523> rdfs:label "train_x(0)$1" ;
-    dj:Div <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#9218418214441151341> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3492039275133784191> rdfs:label "range(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-480203791387381869> rdfs:label "input_layer(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8030913836907525564> rdfs:label "decoder_states_inputs(2)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3965863081808447988> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#1907012654663180515> rdfs:label "encoder_inputs(2)$0" ;
-    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8494399675559609238> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8481663195458155407> rdfs:label "train_y(0)$1" ;
-    dj:train_test_split <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1608047008488349523>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#8481663195458155407> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#924659500957248601> rdfs:label "n_unique(1)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1257731161497491104> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6670523922409569518> rdfs:label "random_y2(0)$0" ;
-    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6747880908578968384> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#7654008073551469669> rdfs:label "decoder_inputs(2)$0" ;
-    dj:Input <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-1588604770278545378> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#279669832847612122> rdfs:label "inp_size(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#284980878932694686> rdfs:label "out_size(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/python/lib/-4758532922161517508> rdfs:label "keras.layers" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3772315759819466152> rdfs:label "Conv2D(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-1631988991984718472> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8233091131777408498> rdfs:label "i(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-3492039275133784191> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-9186033912307718939> rdfs:label "Dense(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/476811729665102703> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#3286398688374644345> rdfs:label "features(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8875419588753940880> rdfs:label "random_x(0)$0" ;
-    dj:linspace <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#6747880908578968384> .
-
-<http://purl.org/dj/kaggle/how-autoencoders-work-intro-and-usecases#-8747522719138241620> rdfs:label "go(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1912530865949903258> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-1158236559812850266> .
-
-<http://purl.org/dj/python/lib/1912530865949903258> rdfs:label "how-autoencoders-work-intro-and-usecases.ipynb" .
+<http://purl.org/dj/python/lib/3067280305786977101> rdfs:label "how-autoencoders-work-intro-and-usecases.ipynb" .
 

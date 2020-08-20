@@ -3,6 +3,12 @@ digraph {
 "pd(0)" -> "simple-notebook" [label = "appearsIn"]
 "pd(0)" -> "pandas" [label = "assignedFrom"]
 "var3(0)$0" -> "pd(0)" [label = "start"]
-"output(0)$0" -> "var3(0)$0" [label = "assignedFrom"]
+"2(0)" -> "simple-notebook" [label = "appearsIn"]
+"var2(0)$0" -> "2(0)" [label = "assignedFrom"]
+"filename.csv(0)" -> "simple-notebook" [label = "appearsIn"]
+"data(0)$0" -> "filename.csv(0)" [label = "readfile"]
+"output(0)$0" -> "var3(0)$0" [label = "Add"]
+"output(0)$0" -> "var2(0)$0" [label = "Add"]
+"output(0)$0" -> "data(0)$0" [label = "Add"]
 "print[0]" -> "output(0)$0" [label = "print"]
 }

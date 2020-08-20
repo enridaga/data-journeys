@@ -42,24 +42,254 @@ digraph {
 "warnings(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "warnings(0)" -> "warnings" [label = "assignedFrom"]
 "warnings(0)$0" -> "warnings(0)" [label = "filterwarnings"]
+"ignore(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"warnings(0)$0" -> "ignore(0)" [label = "filterwarnings"]
 "conn(0)$0" -> "sqlite3(0)" [label = "connect"]
+"../input/database.sqlite(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"conn(0)$0" -> "../input/database.sqlite(0)" [label = "connect"]
 "c(0)$0" -> "conn(0)$0" [label = "cursor"]
 "row(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "row(0)" -> "c(0)$0" [label = "iteratorOf"]
+"
+                        SELECT   * 
+                        FROM     Country 
+                        LIMIT    2
+                        
+                     (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"row(0)" -> "
+                        SELECT   * 
+                        FROM     Country 
+                        LIMIT    2
+                        
+                     (0)" [label = "iteratorOf"]
 "print[0]" -> "row(0)" [label = "print"]
 "Country(0)$0" -> "pd(0)" [label = "read_sql"]
+"
+                       
+                        SELECT  * 
+                        FROM    Country
+                        
+                       (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"Country(0)$0" -> "
+                       
+                        SELECT  * 
+                        FROM    Country
+                        
+                       (0)" [label = "read_sql"]
 "Country(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "Country(0)$1" -> "Country(0)$0" [label = "head"]
+"5(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"Country(0)$1" -> "5(0)" [label = "head"]
 "pd(0)$0" -> "pd(0)" [label = "read_sql"]
+"
+                SELECT   * 
+                FROM     Country 
+                LIMIT    5 
+                
+            (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$0" -> "
+                SELECT   * 
+                FROM     Country 
+                LIMIT    5 
+                
+            (0)" [label = "read_sql"]
 "pd(0)$1" -> "pd(0)$0" [label = "read_sql"]
+" 
+            SELECT   * 
+            FROM     Country 
+            WHERE    CountryCode = 'AFG'
+            
+        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$1" -> " 
+            SELECT   * 
+            FROM     Country 
+            WHERE    CountryCode = 'AFG'
+            
+        (0)" [label = "read_sql"]
 "pd(0)$2" -> "pd(0)$1" [label = "read_sql"]
+" 
+            SELECT      Region
+                        ,COUNT(*) AS [Count]
+            FROM        Country 
+            GROUP BY    Region
+            ORDER BY    2 DESC
+            
+        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$2" -> " 
+            SELECT      Region
+                        ,COUNT(*) AS [Count]
+            FROM        Country 
+            GROUP BY    Region
+            ORDER BY    2 DESC
+            
+        (0)" [label = "read_sql"]
 "pd(0)$3" -> "pd(0)$2" [label = "read_sql"]
+" 
+           
+            SELECT      A.CountryCode
+                        ,B.LatestPopulationCensus
+                        ,B.SourceOfMostRecentIncomeAndExpenditureData
+                        ,B.ShortName
+            FROM       ( 
+                            -- First subquery (i.e the Left table)
+                            
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                        ) AS A
+            LEFT JOIN   (
+                            -- Second subquery (i.e the right table )
+                            
+                            SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                            FROM        Country AS A
+                            WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+                            
+                          ) AS B
+            ON          A.CountryCode = B.CountryCode    
+            
+        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$3" -> " 
+           
+            SELECT      A.CountryCode
+                        ,B.LatestPopulationCensus
+                        ,B.SourceOfMostRecentIncomeAndExpenditureData
+                        ,B.ShortName
+            FROM       ( 
+                            -- First subquery (i.e the Left table)
+                            
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                        ) AS A
+            LEFT JOIN   (
+                            -- Second subquery (i.e the right table )
+                            
+                            SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                            FROM        Country AS A
+                            WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+                            
+                          ) AS B
+            ON          A.CountryCode = B.CountryCode    
+            
+        (0)" [label = "read_sql"]
 "pd(0)$4" -> "pd(0)$3" [label = "read_sql"]
+" 
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                       
+                           UNION
+                           
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country AS A
+                           WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+            
+        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$4" -> " 
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                       
+                           UNION
+                           
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country AS A
+                           WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+            
+        (0)" [label = "read_sql"]
 "pd(0)$5" -> "pd(0)$4" [label = "read_sql"]
+" 
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                       
+                           INTERSECT
+                           
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country AS A
+                           WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+            
+        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"pd(0)$5" -> " 
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country
+                           WHERE       CountryCode IN ('AFG','ALB', 'ASM', 'BEL')
+                       
+                           INTERSECT
+                           
+                           SELECT      CountryCode
+                                        ,LatestPopulationCensus
+                                        ,SourceOfMostRecentIncomeAndExpenditureData
+                                        ,ShortName
+                           FROM        Country AS A
+                           WHERE       CountryCode IN ('AFG','ARM', 'URY', 'BEL')
+            
+        (0)" [label = "read_sql"]
 "Indicators(0)$0" -> "pd(0)$5" [label = "read_sql"]
+" SELECT   * 
+                             FROM     Indicators 
+                             WHERE    IndicatorCode IN 
+                                      (  'AG.LND.PRCP.MM, AG.LND.FRST.K2'
+                                       , 'EG.ELC.ACCS.ZS', 'EG.ELC.FOSL.ZS'
+                                       , 'EN.POP.DNST', 'SG.VAW.REAS.ZS'
+                                       , 'SM.POP.NETM', 'SP.POP.65UP.TO.ZS'
+                                       , 'FI.RES.TOTL.DT.ZS', 'GC.DOD.TOTL.GD.ZS'
+                                       , 'MS.MIL.XPND.GD.ZS','SI.POV.GINI'
+                                       , 'IP.JRN.ARTC.SC', 'SE.ADT.1524.LT.ZS'
+                                      )  
+                        (0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"Indicators(0)$0" -> " SELECT   * 
+                             FROM     Indicators 
+                             WHERE    IndicatorCode IN 
+                                      (  'AG.LND.PRCP.MM, AG.LND.FRST.K2'
+                                       , 'EG.ELC.ACCS.ZS', 'EG.ELC.FOSL.ZS'
+                                       , 'EN.POP.DNST', 'SG.VAW.REAS.ZS'
+                                       , 'SM.POP.NETM', 'SP.POP.65UP.TO.ZS'
+                                       , 'FI.RES.TOTL.DT.ZS', 'GC.DOD.TOTL.GD.ZS'
+                                       , 'MS.MIL.XPND.GD.ZS','SI.POV.GINI'
+                                       , 'IP.JRN.ARTC.SC', 'SE.ADT.1524.LT.ZS'
+                                      )  
+                        (0)" [label = "read_sql"]
 "Indicators(0)$0" -> "conn(0)$0" [label = "read_sql"]
 "gini(0)$0" -> "Indicators(0)$0" [label = "assignedFrom"]
 "gini(0)$0" -> "Indicators(0)$0" [label = "assignedFrom"]
+"IndicatorCode(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"gini(0)$0" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"SI.POV.GINI(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"gini(0)$0" -> "SI.POV.GINI(0)" [label = "assignedFrom"]
 "gini(0)$1" -> "gini(0)$0" [label = "unique"]
 "f(0)$0" -> "plt(0)" [label = "subplots"]
 "ax1(0)$0" -> "plt(0)" [label = "subplots"]
@@ -71,92 +301,297 @@ digraph {
 "ax7(0)$0" -> "plt(0)" [label = "subplots"]
 "ax8(0)$0" -> "plt(0)" [label = "subplots"]
 "ax9(0)$0" -> "plt(0)" [label = "subplots"]
+"3(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"f(0)$0" -> "3(0)" [label = "subplots"]
+"ax1(0)$0" -> "3(0)" [label = "subplots"]
+"ax2(0)$0" -> "3(0)" [label = "subplots"]
+"ax3(0)$0" -> "3(0)" [label = "subplots"]
+"ax4(0)$0" -> "3(0)" [label = "subplots"]
+"ax5(0)$0" -> "3(0)" [label = "subplots"]
+"ax6(0)$0" -> "3(0)" [label = "subplots"]
+"ax7(0)$0" -> "3(0)" [label = "subplots"]
+"ax8(0)$0" -> "3(0)" [label = "subplots"]
+"ax9(0)$0" -> "3(0)" [label = "subplots"]
+"f(0)$0" -> "3(0)" [label = "subplots"]
+"ax1(0)$0" -> "3(0)" [label = "subplots"]
+"ax2(0)$0" -> "3(0)" [label = "subplots"]
+"ax3(0)$0" -> "3(0)" [label = "subplots"]
+"ax4(0)$0" -> "3(0)" [label = "subplots"]
+"ax5(0)$0" -> "3(0)" [label = "subplots"]
+"ax6(0)$0" -> "3(0)" [label = "subplots"]
+"ax7(0)$0" -> "3(0)" [label = "subplots"]
+"ax8(0)$0" -> "3(0)" [label = "subplots"]
+"ax9(0)$0" -> "3(0)" [label = "subplots"]
+"12(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"f(0)$0" -> "12(0)" [label = "subplots"]
+"ax1(0)$0" -> "12(0)" [label = "subplots"]
+"ax2(0)$0" -> "12(0)" [label = "subplots"]
+"ax3(0)$0" -> "12(0)" [label = "subplots"]
+"ax4(0)$0" -> "12(0)" [label = "subplots"]
+"ax5(0)$0" -> "12(0)" [label = "subplots"]
+"ax6(0)$0" -> "12(0)" [label = "subplots"]
+"ax7(0)$0" -> "12(0)" [label = "subplots"]
+"ax8(0)$0" -> "12(0)" [label = "subplots"]
+"ax9(0)$0" -> "12(0)" [label = "subplots"]
+"10(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"f(0)$0" -> "10(0)" [label = "subplots"]
+"ax1(0)$0" -> "10(0)" [label = "subplots"]
+"ax2(0)$0" -> "10(0)" [label = "subplots"]
+"ax3(0)$0" -> "10(0)" [label = "subplots"]
+"ax4(0)$0" -> "10(0)" [label = "subplots"]
+"ax5(0)$0" -> "10(0)" [label = "subplots"]
+"ax6(0)$0" -> "10(0)" [label = "subplots"]
+"ax7(0)$0" -> "10(0)" [label = "subplots"]
+"ax8(0)$0" -> "10(0)" [label = "subplots"]
+"ax9(0)$0" -> "10(0)" [label = "subplots"]
 "points(0)$0" -> "ax1(0)$0" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
+"CountryCode(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "CountryCode(0)" [label = "scatter"]
+"CHN(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "CHN(0)" [label = "scatter"]
+"Year(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "Year(0)" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
+"points(0)$0" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$0" -> "CHN(0)" [label = "scatter"]
+"Value(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "Value(0)" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
 "points(0)$0" -> "gini(0)$1" [label = "scatter"]
+"points(0)$0" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$0" -> "CHN(0)" [label = "scatter"]
+"points(0)$0" -> "Value(0)" [label = "scatter"]
+"100(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "100(0)" [label = "scatter"]
+"viridis(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$0" -> "viridis(0)" [label = "scatter"]
 "sns(0)$0" -> "sns(0)" [label = "regplot"]
+"sns(0)$0" -> "Year(0)" [label = "regplot"]
+"sns(0)$0" -> "Value(0)" [label = "regplot"]
 "ax1(0)$1" -> "ax1(0)$0" [label = "set_title"]
+"GINI Index of China(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax1(0)$1" -> "GINI Index of China(0)" [label = "set_title"]
 "points(0)$1" -> "ax2(0)$0" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
+"points(0)$1" -> "CountryCode(0)" [label = "scatter"]
+"ARG(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$1" -> "ARG(0)" [label = "scatter"]
+"points(0)$1" -> "Year(0)" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
+"points(0)$1" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$1" -> "ARG(0)" [label = "scatter"]
+"points(0)$1" -> "Value(0)" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
 "points(0)$1" -> "gini(0)$1" [label = "scatter"]
+"points(0)$1" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$1" -> "ARG(0)" [label = "scatter"]
+"points(0)$1" -> "Value(0)" [label = "scatter"]
+"85(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$1" -> "85(0)" [label = "scatter"]
+"points(0)$1" -> "viridis(0)" [label = "scatter"]
 "sns(0)$1" -> "sns(0)$0" [label = "regplot"]
+"sns(0)$1" -> "Year(0)" [label = "regplot"]
+"sns(0)$1" -> "Value(0)" [label = "regplot"]
 "ax2(0)$1" -> "ax2(0)$0" [label = "set_title"]
+"GINI Index of Argentina(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax2(0)$1" -> "GINI Index of Argentina(0)" [label = "set_title"]
 "points(0)$2" -> "ax3(0)$0" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
+"points(0)$2" -> "CountryCode(0)" [label = "scatter"]
+"UGA(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$2" -> "UGA(0)" [label = "scatter"]
+"points(0)$2" -> "Year(0)" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
+"points(0)$2" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$2" -> "UGA(0)" [label = "scatter"]
+"points(0)$2" -> "Value(0)" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
 "points(0)$2" -> "gini(0)$1" [label = "scatter"]
+"points(0)$2" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$2" -> "UGA(0)" [label = "scatter"]
+"points(0)$2" -> "Value(0)" [label = "scatter"]
+"points(0)$2" -> "100(0)" [label = "scatter"]
+"afmhot(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$2" -> "afmhot(0)" [label = "scatter"]
 "sns(0)$2" -> "sns(0)$1" [label = "regplot"]
+"sns(0)$2" -> "Year(0)" [label = "regplot"]
+"sns(0)$2" -> "Value(0)" [label = "regplot"]
 "ax3(0)$1" -> "ax3(0)$0" [label = "set_title"]
+"GINI Index of Uganda(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax3(0)$1" -> "GINI Index of Uganda(0)" [label = "set_title"]
 "points(0)$3" -> "ax4(0)$0" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
+"points(0)$3" -> "CountryCode(0)" [label = "scatter"]
+"USA(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$3" -> "USA(0)" [label = "scatter"]
+"points(0)$3" -> "Year(0)" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
+"points(0)$3" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$3" -> "USA(0)" [label = "scatter"]
+"points(0)$3" -> "Value(0)" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
 "points(0)$3" -> "gini(0)$1" [label = "scatter"]
+"points(0)$3" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$3" -> "USA(0)" [label = "scatter"]
+"points(0)$3" -> "Value(0)" [label = "scatter"]
+"points(0)$3" -> "100(0)" [label = "scatter"]
+"Purples_r(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$3" -> "Purples_r(0)" [label = "scatter"]
 "sns(0)$3" -> "sns(0)$2" [label = "regplot"]
+"sns(0)$3" -> "Year(0)" [label = "regplot"]
+"sns(0)$3" -> "Value(0)" [label = "regplot"]
 "ax4(0)$1" -> "ax4(0)$0" [label = "set_title"]
+"GINI Index of USA(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax4(0)$1" -> "GINI Index of USA(0)" [label = "set_title"]
 "points(0)$4" -> "ax5(0)$0" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
+"points(0)$4" -> "CountryCode(0)" [label = "scatter"]
+"COL(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$4" -> "COL(0)" [label = "scatter"]
+"points(0)$4" -> "Year(0)" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
+"points(0)$4" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$4" -> "COL(0)" [label = "scatter"]
+"points(0)$4" -> "Value(0)" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
 "points(0)$4" -> "gini(0)$1" [label = "scatter"]
+"points(0)$4" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$4" -> "COL(0)" [label = "scatter"]
+"points(0)$4" -> "Value(0)" [label = "scatter"]
+"points(0)$4" -> "100(0)" [label = "scatter"]
+"YlOrBr(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$4" -> "YlOrBr(0)" [label = "scatter"]
 "sns(0)$4" -> "sns(0)$3" [label = "regplot"]
+"sns(0)$4" -> "Year(0)" [label = "regplot"]
+"sns(0)$4" -> "Value(0)" [label = "regplot"]
 "ax5(0)$1" -> "ax5(0)$0" [label = "set_title"]
+"GINI Index of Colombia(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax5(0)$1" -> "GINI Index of Colombia(0)" [label = "set_title"]
 "points(0)$5" -> "ax6(0)$0" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
+"points(0)$5" -> "CountryCode(0)" [label = "scatter"]
+"RWA(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$5" -> "RWA(0)" [label = "scatter"]
+"points(0)$5" -> "Year(0)" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
+"points(0)$5" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$5" -> "RWA(0)" [label = "scatter"]
+"points(0)$5" -> "Value(0)" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
 "points(0)$5" -> "gini(0)$1" [label = "scatter"]
+"points(0)$5" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$5" -> "RWA(0)" [label = "scatter"]
+"points(0)$5" -> "Value(0)" [label = "scatter"]
+"points(0)$5" -> "100(0)" [label = "scatter"]
+"Blues(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$5" -> "Blues(0)" [label = "scatter"]
 "sns(0)$5" -> "sns(0)$4" [label = "regplot"]
+"sns(0)$5" -> "Year(0)" [label = "regplot"]
+"sns(0)$5" -> "Value(0)" [label = "regplot"]
 "ax6(0)$1" -> "ax6(0)$0" [label = "set_title"]
+"GINI Index of Rwanda(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax6(0)$1" -> "GINI Index of Rwanda(0)" [label = "set_title"]
 "points(0)$6" -> "ax7(0)$0" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
+"points(0)$6" -> "CountryCode(0)" [label = "scatter"]
+"RUS(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$6" -> "RUS(0)" [label = "scatter"]
+"points(0)$6" -> "Year(0)" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
+"points(0)$6" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$6" -> "RUS(0)" [label = "scatter"]
+"points(0)$6" -> "Value(0)" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
 "points(0)$6" -> "gini(0)$1" [label = "scatter"]
+"points(0)$6" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$6" -> "RUS(0)" [label = "scatter"]
+"points(0)$6" -> "Value(0)" [label = "scatter"]
+"points(0)$6" -> "100(0)" [label = "scatter"]
+"points(0)$6" -> "Blues(0)" [label = "scatter"]
 "sns(0)$6" -> "sns(0)$5" [label = "regplot"]
+"sns(0)$6" -> "Year(0)" [label = "regplot"]
+"sns(0)$6" -> "Value(0)" [label = "regplot"]
 "ax7(0)$1" -> "ax7(0)$0" [label = "set_title"]
+"GINI Index of Russia(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax7(0)$1" -> "GINI Index of Russia(0)" [label = "set_title"]
 "points(0)$7" -> "ax8(0)$0" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
+"points(0)$7" -> "CountryCode(0)" [label = "scatter"]
+"ECU(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$7" -> "ECU(0)" [label = "scatter"]
+"points(0)$7" -> "Year(0)" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
+"points(0)$7" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$7" -> "ECU(0)" [label = "scatter"]
+"points(0)$7" -> "Value(0)" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
 "points(0)$7" -> "gini(0)$1" [label = "scatter"]
+"points(0)$7" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$7" -> "ECU(0)" [label = "scatter"]
+"points(0)$7" -> "Value(0)" [label = "scatter"]
+"points(0)$7" -> "100(0)" [label = "scatter"]
+"winter(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$7" -> "winter(0)" [label = "scatter"]
 "sns(0)$7" -> "sns(0)$6" [label = "regplot"]
+"sns(0)$7" -> "Year(0)" [label = "regplot"]
+"sns(0)$7" -> "Value(0)" [label = "regplot"]
 "ax8(0)$1" -> "ax8(0)$0" [label = "set_title"]
+"GINI Index of Ecuador(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax8(0)$1" -> "GINI Index of Ecuador(0)" [label = "set_title"]
 "points(0)$8" -> "ax9(0)$0" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
+"points(0)$8" -> "CountryCode(0)" [label = "scatter"]
+"CAF(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$8" -> "CAF(0)" [label = "scatter"]
+"points(0)$8" -> "Year(0)" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
+"points(0)$8" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$8" -> "CAF(0)" [label = "scatter"]
+"points(0)$8" -> "Value(0)" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
 "points(0)$8" -> "gini(0)$1" [label = "scatter"]
+"points(0)$8" -> "CountryCode(0)" [label = "scatter"]
+"points(0)$8" -> "CAF(0)" [label = "scatter"]
+"points(0)$8" -> "Value(0)" [label = "scatter"]
+"points(0)$8" -> "100(0)" [label = "scatter"]
+"magma(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"points(0)$8" -> "magma(0)" [label = "scatter"]
 "sns(0)$8" -> "sns(0)$7" [label = "regplot"]
+"sns(0)$8" -> "Year(0)" [label = "regplot"]
+"sns(0)$8" -> "Value(0)" [label = "regplot"]
 "ax9(0)$1" -> "ax9(0)$0" [label = "set_title"]
+"GINI Index of Central African Republic(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"ax9(0)$1" -> "GINI Index of Central African Republic(0)" [label = "set_title"]
 "sns(0)$9" -> "sns(0)$8" [label = "set_style"]
 "plt(0)$0" -> "plt(0)" [label = "tight_layout"]
 "data(0)$0" -> "Indicators(0)$0" [label = "assignedFrom"]
 "data(0)$0" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$0" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"SE.ADT.1524.LT.ZS(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"data(0)$0" -> "SE.ADT.1524.LT.ZS(0)" [label = "assignedFrom"]
 "data(0)$0" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$0" -> "Year(0)" [label = "assignedFrom"]
+"1990(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"data(0)$0" -> "1990(0)" [label = "assignedFrom"]
 "list(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "x(0)$0" -> "list(0)" [label = "assignedFrom"]
 "y(0)$0" -> "list(0)" [label = "assignedFrom"]
@@ -174,25 +609,55 @@ digraph {
 "y(0)$0" -> "zip(0)" [label = "assignedFrom"]
 "x(0)$0" -> "data(0)$0" [label = "assignedFrom"]
 "y(0)$0" -> "data(0)$0" [label = "assignedFrom"]
+"x(0)$0" -> "Value(0)" [label = "assignedFrom"]
+"y(0)$0" -> "Value(0)" [label = "assignedFrom"]
 "x(0)$0" -> "data(0)$0" [label = "assignedFrom"]
 "y(0)$0" -> "data(0)$0" [label = "assignedFrom"]
+"CountryName(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"x(0)$0" -> "CountryName(0)" [label = "assignedFrom"]
+"y(0)$0" -> "CountryName(0)" [label = "assignedFrom"]
+"False(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"x(0)$0" -> "False(0)" [label = "assignedFrom"]
+"y(0)$0" -> "False(0)" [label = "assignedFrom"]
 "trace2(0)$0" -> "go(0)" [label = "Bar"]
 "trace2(0)$0" -> "x(0)$0" [label = "Bar"]
 "trace2(0)$0" -> "y(0)$0" [label = "Bar"]
 "dict(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "trace2(0)$0" -> "dict(0)" [label = "Bar"]
 "trace2(0)$0" -> "x(0)$0" [label = "Bar"]
+"Portland(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"trace2(0)$0" -> "Portland(0)" [label = "Bar"]
+"True(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"trace2(0)$0" -> "True(0)" [label = "Bar"]
+"Percentage of Youth Literacy Rate(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"trace2(0)$0" -> "Percentage of Youth Literacy Rate(0)" [label = "Bar"]
+"h(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"trace2(0)$0" -> "h(0)" [label = "Bar"]
+"Barplot of Youth Literacy Rate in 1990(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"layout(0)$0" -> "Barplot of Youth Literacy Rate in 1990(0)" [label = "dict"]
+"680(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"layout(0)$0" -> "680(0)" [label = "dict"]
+"1500(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"layout(0)$0" -> "1500(0)" [label = "dict"]
 "layout(0)$0" -> "dict(0)" [label = "dict"]
+"layout(0)$0" -> "False(0)" [label = "dict"]
+"layout(0)$0" -> "False(0)" [label = "dict"]
+"layout(0)$0" -> "True(0)" [label = "dict"]
 "fig1(0)$0" -> "go(0)" [label = "Figure"]
-"[<_ast.Name object at 0x1095258b0>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"fig1(0)$0" -> "[<_ast.Name object at 0x1095258b0>](0)" [label = "Figure"]
+"[<_ast.Name object at 0x104f97820>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"fig1(0)$0" -> "[<_ast.Name object at 0x104f97820>](0)" [label = "Figure"]
 "fig1(0)$1" -> "fig1(0)$0" [label = "update"]
 "fig1(0)$1" -> "layout(0)$0" [label = "update"]
 "py(0)$1" -> "py(0)$0" [label = "iplot"]
 "py(0)$1" -> "fig1(0)$1" [label = "iplot"]
 "data(0)$1" -> "Indicators(0)$0" [label = "assignedFrom"]
 "data(0)$1" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$1" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"data(0)$1" -> "SE.ADT.1524.LT.ZS(0)" [label = "assignedFrom"]
 "data(0)$1" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$1" -> "Year(0)" [label = "assignedFrom"]
+"2010(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"data(0)$1" -> "2010(0)" [label = "assignedFrom"]
 "x(0)$1" -> "list(0)" [label = "assignedFrom"]
 "y(0)$1" -> "list(0)" [label = "assignedFrom"]
 "x(0)$1" -> "x(0)$1" [label = "assignedFrom"]
@@ -207,32 +672,54 @@ digraph {
 "y(0)$1" -> "zip(0)" [label = "assignedFrom"]
 "x(0)$1" -> "data(0)$1" [label = "assignedFrom"]
 "y(0)$1" -> "data(0)$1" [label = "assignedFrom"]
+"x(0)$1" -> "Value(0)" [label = "assignedFrom"]
+"y(0)$1" -> "Value(0)" [label = "assignedFrom"]
 "x(0)$1" -> "data(0)$1" [label = "assignedFrom"]
 "y(0)$1" -> "data(0)$1" [label = "assignedFrom"]
+"x(0)$1" -> "CountryName(0)" [label = "assignedFrom"]
+"y(0)$1" -> "CountryName(0)" [label = "assignedFrom"]
+"x(0)$1" -> "False(0)" [label = "assignedFrom"]
+"y(0)$1" -> "False(0)" [label = "assignedFrom"]
 "trace2(0)$1" -> "go(0)" [label = "Bar"]
 "trace2(0)$1" -> "x(0)$1" [label = "Bar"]
 "trace2(0)$1" -> "y(0)$1" [label = "Bar"]
 "trace2(0)$1" -> "dict(0)" [label = "Bar"]
 "trace2(0)$1" -> "x(0)$1" [label = "Bar"]
+"trace2(0)$1" -> "Portland(0)" [label = "Bar"]
+"trace2(0)$1" -> "True(0)" [label = "Bar"]
+"trace2(0)$1" -> "Percentage of Youth Literacy Rate(0)" [label = "Bar"]
+"trace2(0)$1" -> "h(0)" [label = "Bar"]
+"Barplot of Youth Literacy Rate in 2010(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"layout(0)$1" -> "Barplot of Youth Literacy Rate in 2010(0)" [label = "dict"]
+"layout(0)$1" -> "680(0)" [label = "dict"]
+"layout(0)$1" -> "1500(0)" [label = "dict"]
 "layout(0)$1" -> "dict(0)" [label = "dict"]
+"layout(0)$1" -> "False(0)" [label = "dict"]
+"layout(0)$1" -> "False(0)" [label = "dict"]
+"layout(0)$1" -> "True(0)" [label = "dict"]
 "fig1(0)$2" -> "go(0)" [label = "Figure"]
-"[<_ast.Name object at 0x109536370>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"fig1(0)$2" -> "[<_ast.Name object at 0x109536370>](0)" [label = "Figure"]
+"[<_ast.Name object at 0x104fa8310>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"fig1(0)$2" -> "[<_ast.Name object at 0x104fa8310>](0)" [label = "Figure"]
 "fig1(0)$3" -> "fig1(0)$2" [label = "update"]
 "fig1(0)$3" -> "layout(0)$1" [label = "update"]
 "py(0)$2" -> "py(0)$1" [label = "iplot"]
 "py(0)$2" -> "fig1(0)$3" [label = "iplot"]
 "data(0)$2" -> "Indicators(0)$0" [label = "assignedFrom"]
 "data(0)$2" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$2" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"EG.ELC.ACCS.ZS(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"data(0)$2" -> "EG.ELC.ACCS.ZS(0)" [label = "assignedFrom"]
 "str(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "data(0)$3" -> "data(0)$2" [label = "assignedFrom"]
 "data(0)$3" -> "str(0)" [label = "assignedFrom"]
 "data(0)$3" -> "x(0)$1" [label = "assignedFrom"]
 "data(0)$3" -> "x(0)$1" [label = "assignedFrom"]
 "data(0)$3" -> "data(0)$3" [label = "assignedFrom"]
+"data(0)$3" -> "Year(0)" [label = "assignedFrom"]
 "years(0)$0" -> "data(0)$3" [label = "list"]
-"[<_ast.Constant object at 0x109536fa0>, <_ast.Constant object at 0x109536fd0>, <_ast.Constant object at 0x109526040>, <_ast.Constant object at 0x109526070>, <_ast.Constant object at 0x1095260a0>, <_ast.Constant object at 0x1095260d0>, <_ast.Constant object at 0x109526100>, <_ast.Constant object at 0x109526130>, <_ast.Constant object at 0x109526160>, <_ast.Constant object at 0x109526190>, <_ast.Constant object at 0x1095261c0>, <_ast.Constant object at 0x1095261f0>, <_ast.Constant object at 0x109526220>, <_ast.Constant object at 0x109526250>, <_ast.Constant object at 0x109526280>, <_ast.Constant object at 0x1095262b0>, <_ast.Constant object at 0x1095262e0>, <_ast.Constant object at 0x109526310>, <_ast.Constant object at 0x109526340>, <_ast.Constant object at 0x109526370>, <_ast.Constant object at 0x1095263a0>, <_ast.Constant object at 0x1095263d0>, <_ast.Constant object at 0x109526400>, <_ast.Constant object at 0x109526430>, <_ast.Constant object at 0x109526460>, <_ast.Constant object at 0x109526490>, <_ast.Constant object at 0x1095264c0>, <_ast.Constant object at 0x1095264f0>, <_ast.Constant object at 0x109526520>, <_ast.Constant object at 0x109526550>, <_ast.Constant object at 0x109526580>, <_ast.Constant object at 0x1095265b0>, <_ast.Constant object at 0x1095265e0>, <_ast.Constant object at 0x109526610>, <_ast.Constant object at 0x109526640>, <_ast.Constant object at 0x109526670>, <_ast.Constant object at 0x1095266a0>, <_ast.Constant object at 0x1095266d0>, <_ast.Constant object at 0x109526700>, <_ast.Constant object at 0x109526730>, <_ast.Constant object at 0x109526760>, <_ast.Constant object at 0x109526790>, <_ast.Constant object at 0x1095267c0>, <_ast.Constant object at 0x1095267f0>, <_ast.Constant object at 0x109526820>, <_ast.Constant object at 0x109526850>, <_ast.Constant object at 0x109526880>, <_ast.Constant object at 0x1095268b0>, <_ast.Constant object at 0x1095268e0>, <_ast.Constant object at 0x109526910>, <_ast.Constant object at 0x109526940>, <_ast.Constant object at 0x109526970>, <_ast.Constant object at 0x1095269a0>, <_ast.Constant object at 0x1095269d0>, <_ast.Constant object at 0x109526a00>, <_ast.Constant object at 0x109526a30>, <_ast.Constant object at 0x109526a60>, <_ast.Constant object at 0x109526a90>, <_ast.Constant object at 0x109526ac0>, <_ast.Constant object at 0x109526af0>, <_ast.Constant object at 0x109526b20>, <_ast.Constant object at 0x109526b50>, <_ast.Constant object at 0x109526b80>, <_ast.Constant object at 0x109526bb0>, <_ast.Constant object at 0x109526be0>, <_ast.Constant object at 0x109526c10>, <_ast.Constant object at 0x109526c40>, <_ast.Constant object at 0x109526c70>, <_ast.Constant object at 0x109526ca0>, <_ast.Constant object at 0x109526cd0>, <_ast.Constant object at 0x109526d00>, <_ast.Constant object at 0x109526d30>, <_ast.Constant object at 0x109526d60>, <_ast.Constant object at 0x109526d90>, <_ast.Constant object at 0x109526dc0>, <_ast.Constant object at 0x109526df0>, <_ast.Constant object at 0x109526e20>, <_ast.Constant object at 0x109526e50>, <_ast.Constant object at 0x109526e80>, <_ast.Constant object at 0x109526eb0>, <_ast.Constant object at 0x109526ee0>, <_ast.Constant object at 0x109526f10>, <_ast.Constant object at 0x109526f40>, <_ast.Constant object at 0x109526f70>, <_ast.Constant object at 0x109526fa0>, <_ast.Constant object at 0x109526fd0>, <_ast.Constant object at 0x109516040>, <_ast.Constant object at 0x109516070>, <_ast.Constant object at 0x1095160a0>, <_ast.Constant object at 0x1095160d0>, <_ast.Constant object at 0x109516100>, <_ast.Constant object at 0x109516130>, <_ast.Constant object at 0x109516190>, <_ast.Constant object at 0x109516160>, <_ast.Constant object at 0x1095161c0>, <_ast.Constant object at 0x1095161f0>, <_ast.Constant object at 0x109516220>, <_ast.Constant object at 0x109516250>, <_ast.Constant object at 0x109516280>, <_ast.Constant object at 0x1095162b0>, <_ast.Constant object at 0x1095162e0>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"country(0)$0" -> "[<_ast.Constant object at 0x109536fa0>, <_ast.Constant object at 0x109536fd0>, <_ast.Constant object at 0x109526040>, <_ast.Constant object at 0x109526070>, <_ast.Constant object at 0x1095260a0>, <_ast.Constant object at 0x1095260d0>, <_ast.Constant object at 0x109526100>, <_ast.Constant object at 0x109526130>, <_ast.Constant object at 0x109526160>, <_ast.Constant object at 0x109526190>, <_ast.Constant object at 0x1095261c0>, <_ast.Constant object at 0x1095261f0>, <_ast.Constant object at 0x109526220>, <_ast.Constant object at 0x109526250>, <_ast.Constant object at 0x109526280>, <_ast.Constant object at 0x1095262b0>, <_ast.Constant object at 0x1095262e0>, <_ast.Constant object at 0x109526310>, <_ast.Constant object at 0x109526340>, <_ast.Constant object at 0x109526370>, <_ast.Constant object at 0x1095263a0>, <_ast.Constant object at 0x1095263d0>, <_ast.Constant object at 0x109526400>, <_ast.Constant object at 0x109526430>, <_ast.Constant object at 0x109526460>, <_ast.Constant object at 0x109526490>, <_ast.Constant object at 0x1095264c0>, <_ast.Constant object at 0x1095264f0>, <_ast.Constant object at 0x109526520>, <_ast.Constant object at 0x109526550>, <_ast.Constant object at 0x109526580>, <_ast.Constant object at 0x1095265b0>, <_ast.Constant object at 0x1095265e0>, <_ast.Constant object at 0x109526610>, <_ast.Constant object at 0x109526640>, <_ast.Constant object at 0x109526670>, <_ast.Constant object at 0x1095266a0>, <_ast.Constant object at 0x1095266d0>, <_ast.Constant object at 0x109526700>, <_ast.Constant object at 0x109526730>, <_ast.Constant object at 0x109526760>, <_ast.Constant object at 0x109526790>, <_ast.Constant object at 0x1095267c0>, <_ast.Constant object at 0x1095267f0>, <_ast.Constant object at 0x109526820>, <_ast.Constant object at 0x109526850>, <_ast.Constant object at 0x109526880>, <_ast.Constant object at 0x1095268b0>, <_ast.Constant object at 0x1095268e0>, <_ast.Constant object at 0x109526910>, <_ast.Constant object at 0x109526940>, <_ast.Constant object at 0x109526970>, <_ast.Constant object at 0x1095269a0>, <_ast.Constant object at 0x1095269d0>, <_ast.Constant object at 0x109526a00>, <_ast.Constant object at 0x109526a30>, <_ast.Constant object at 0x109526a60>, <_ast.Constant object at 0x109526a90>, <_ast.Constant object at 0x109526ac0>, <_ast.Constant object at 0x109526af0>, <_ast.Constant object at 0x109526b20>, <_ast.Constant object at 0x109526b50>, <_ast.Constant object at 0x109526b80>, <_ast.Constant object at 0x109526bb0>, <_ast.Constant object at 0x109526be0>, <_ast.Constant object at 0x109526c10>, <_ast.Constant object at 0x109526c40>, <_ast.Constant object at 0x109526c70>, <_ast.Constant object at 0x109526ca0>, <_ast.Constant object at 0x109526cd0>, <_ast.Constant object at 0x109526d00>, <_ast.Constant object at 0x109526d30>, <_ast.Constant object at 0x109526d60>, <_ast.Constant object at 0x109526d90>, <_ast.Constant object at 0x109526dc0>, <_ast.Constant object at 0x109526df0>, <_ast.Constant object at 0x109526e20>, <_ast.Constant object at 0x109526e50>, <_ast.Constant object at 0x109526e80>, <_ast.Constant object at 0x109526eb0>, <_ast.Constant object at 0x109526ee0>, <_ast.Constant object at 0x109526f10>, <_ast.Constant object at 0x109526f40>, <_ast.Constant object at 0x109526f70>, <_ast.Constant object at 0x109526fa0>, <_ast.Constant object at 0x109526fd0>, <_ast.Constant object at 0x109516040>, <_ast.Constant object at 0x109516070>, <_ast.Constant object at 0x1095160a0>, <_ast.Constant object at 0x1095160d0>, <_ast.Constant object at 0x109516100>, <_ast.Constant object at 0x109516130>, <_ast.Constant object at 0x109516190>, <_ast.Constant object at 0x109516160>, <_ast.Constant object at 0x1095161c0>, <_ast.Constant object at 0x1095161f0>, <_ast.Constant object at 0x109516220>, <_ast.Constant object at 0x109516250>, <_ast.Constant object at 0x109516280>, <_ast.Constant object at 0x1095162b0>, <_ast.Constant object at 0x1095162e0>](0)" [label = "assignedFrom"]
+"years(0)$0" -> "Year(0)" [label = "list"]
+"[<_ast.Constant object at 0x104fa8f40>, <_ast.Constant object at 0x104fa8f70>, <_ast.Constant object at 0x104fa8fa0>, <_ast.Constant object at 0x104fa8fd0>, <_ast.Constant object at 0x105020040>, <_ast.Constant object at 0x105020070>, <_ast.Constant object at 0x1050200a0>, <_ast.Constant object at 0x1050200d0>, <_ast.Constant object at 0x105020100>, <_ast.Constant object at 0x105020130>, <_ast.Constant object at 0x105020160>, <_ast.Constant object at 0x105020190>, <_ast.Constant object at 0x1050201c0>, <_ast.Constant object at 0x1050201f0>, <_ast.Constant object at 0x105020220>, <_ast.Constant object at 0x105020250>, <_ast.Constant object at 0x105020280>, <_ast.Constant object at 0x1050202b0>, <_ast.Constant object at 0x1050202e0>, <_ast.Constant object at 0x105020310>, <_ast.Constant object at 0x105020340>, <_ast.Constant object at 0x105020370>, <_ast.Constant object at 0x1050203a0>, <_ast.Constant object at 0x1050203d0>, <_ast.Constant object at 0x105020400>, <_ast.Constant object at 0x105020430>, <_ast.Constant object at 0x105020460>, <_ast.Constant object at 0x105020490>, <_ast.Constant object at 0x1050204c0>, <_ast.Constant object at 0x1050204f0>, <_ast.Constant object at 0x105020520>, <_ast.Constant object at 0x105020550>, <_ast.Constant object at 0x105020580>, <_ast.Constant object at 0x1050205b0>, <_ast.Constant object at 0x1050205e0>, <_ast.Constant object at 0x105020610>, <_ast.Constant object at 0x105020640>, <_ast.Constant object at 0x105020670>, <_ast.Constant object at 0x1050206a0>, <_ast.Constant object at 0x1050206d0>, <_ast.Constant object at 0x105020700>, <_ast.Constant object at 0x105020730>, <_ast.Constant object at 0x105020760>, <_ast.Constant object at 0x105020790>, <_ast.Constant object at 0x1050207c0>, <_ast.Constant object at 0x1050207f0>, <_ast.Constant object at 0x105020820>, <_ast.Constant object at 0x105020850>, <_ast.Constant object at 0x105020880>, <_ast.Constant object at 0x1050208b0>, <_ast.Constant object at 0x1050208e0>, <_ast.Constant object at 0x105020910>, <_ast.Constant object at 0x105020940>, <_ast.Constant object at 0x105020970>, <_ast.Constant object at 0x1050209a0>, <_ast.Constant object at 0x1050209d0>, <_ast.Constant object at 0x105020a00>, <_ast.Constant object at 0x105020a30>, <_ast.Constant object at 0x105020a60>, <_ast.Constant object at 0x105020a90>, <_ast.Constant object at 0x105020ac0>, <_ast.Constant object at 0x105020af0>, <_ast.Constant object at 0x105020b20>, <_ast.Constant object at 0x105020b50>, <_ast.Constant object at 0x105020b80>, <_ast.Constant object at 0x105020bb0>, <_ast.Constant object at 0x105020be0>, <_ast.Constant object at 0x105020c10>, <_ast.Constant object at 0x105020c40>, <_ast.Constant object at 0x105020c70>, <_ast.Constant object at 0x105020ca0>, <_ast.Constant object at 0x105020cd0>, <_ast.Constant object at 0x105020d00>, <_ast.Constant object at 0x105020d30>, <_ast.Constant object at 0x105020d60>, <_ast.Constant object at 0x105020d90>, <_ast.Constant object at 0x105020dc0>, <_ast.Constant object at 0x105020df0>, <_ast.Constant object at 0x105020e20>, <_ast.Constant object at 0x105020e50>, <_ast.Constant object at 0x105020e80>, <_ast.Constant object at 0x105020eb0>, <_ast.Constant object at 0x105020ee0>, <_ast.Constant object at 0x105020f10>, <_ast.Constant object at 0x105020f40>, <_ast.Constant object at 0x105020f70>, <_ast.Constant object at 0x105020fa0>, <_ast.Constant object at 0x105020fd0>, <_ast.Constant object at 0x105032040>, <_ast.Constant object at 0x105032070>, <_ast.Constant object at 0x1050320a0>, <_ast.Constant object at 0x1050320d0>, <_ast.Constant object at 0x105032130>, <_ast.Constant object at 0x105032100>, <_ast.Constant object at 0x105032160>, <_ast.Constant object at 0x105032190>, <_ast.Constant object at 0x1050321c0>, <_ast.Constant object at 0x1050321f0>, <_ast.Constant object at 0x105032220>, <_ast.Constant object at 0x105032250>, <_ast.Constant object at 0x105032280>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"country(0)$0" -> "[<_ast.Constant object at 0x104fa8f40>, <_ast.Constant object at 0x104fa8f70>, <_ast.Constant object at 0x104fa8fa0>, <_ast.Constant object at 0x104fa8fd0>, <_ast.Constant object at 0x105020040>, <_ast.Constant object at 0x105020070>, <_ast.Constant object at 0x1050200a0>, <_ast.Constant object at 0x1050200d0>, <_ast.Constant object at 0x105020100>, <_ast.Constant object at 0x105020130>, <_ast.Constant object at 0x105020160>, <_ast.Constant object at 0x105020190>, <_ast.Constant object at 0x1050201c0>, <_ast.Constant object at 0x1050201f0>, <_ast.Constant object at 0x105020220>, <_ast.Constant object at 0x105020250>, <_ast.Constant object at 0x105020280>, <_ast.Constant object at 0x1050202b0>, <_ast.Constant object at 0x1050202e0>, <_ast.Constant object at 0x105020310>, <_ast.Constant object at 0x105020340>, <_ast.Constant object at 0x105020370>, <_ast.Constant object at 0x1050203a0>, <_ast.Constant object at 0x1050203d0>, <_ast.Constant object at 0x105020400>, <_ast.Constant object at 0x105020430>, <_ast.Constant object at 0x105020460>, <_ast.Constant object at 0x105020490>, <_ast.Constant object at 0x1050204c0>, <_ast.Constant object at 0x1050204f0>, <_ast.Constant object at 0x105020520>, <_ast.Constant object at 0x105020550>, <_ast.Constant object at 0x105020580>, <_ast.Constant object at 0x1050205b0>, <_ast.Constant object at 0x1050205e0>, <_ast.Constant object at 0x105020610>, <_ast.Constant object at 0x105020640>, <_ast.Constant object at 0x105020670>, <_ast.Constant object at 0x1050206a0>, <_ast.Constant object at 0x1050206d0>, <_ast.Constant object at 0x105020700>, <_ast.Constant object at 0x105020730>, <_ast.Constant object at 0x105020760>, <_ast.Constant object at 0x105020790>, <_ast.Constant object at 0x1050207c0>, <_ast.Constant object at 0x1050207f0>, <_ast.Constant object at 0x105020820>, <_ast.Constant object at 0x105020850>, <_ast.Constant object at 0x105020880>, <_ast.Constant object at 0x1050208b0>, <_ast.Constant object at 0x1050208e0>, <_ast.Constant object at 0x105020910>, <_ast.Constant object at 0x105020940>, <_ast.Constant object at 0x105020970>, <_ast.Constant object at 0x1050209a0>, <_ast.Constant object at 0x1050209d0>, <_ast.Constant object at 0x105020a00>, <_ast.Constant object at 0x105020a30>, <_ast.Constant object at 0x105020a60>, <_ast.Constant object at 0x105020a90>, <_ast.Constant object at 0x105020ac0>, <_ast.Constant object at 0x105020af0>, <_ast.Constant object at 0x105020b20>, <_ast.Constant object at 0x105020b50>, <_ast.Constant object at 0x105020b80>, <_ast.Constant object at 0x105020bb0>, <_ast.Constant object at 0x105020be0>, <_ast.Constant object at 0x105020c10>, <_ast.Constant object at 0x105020c40>, <_ast.Constant object at 0x105020c70>, <_ast.Constant object at 0x105020ca0>, <_ast.Constant object at 0x105020cd0>, <_ast.Constant object at 0x105020d00>, <_ast.Constant object at 0x105020d30>, <_ast.Constant object at 0x105020d60>, <_ast.Constant object at 0x105020d90>, <_ast.Constant object at 0x105020dc0>, <_ast.Constant object at 0x105020df0>, <_ast.Constant object at 0x105020e20>, <_ast.Constant object at 0x105020e50>, <_ast.Constant object at 0x105020e80>, <_ast.Constant object at 0x105020eb0>, <_ast.Constant object at 0x105020ee0>, <_ast.Constant object at 0x105020f10>, <_ast.Constant object at 0x105020f40>, <_ast.Constant object at 0x105020f70>, <_ast.Constant object at 0x105020fa0>, <_ast.Constant object at 0x105020fd0>, <_ast.Constant object at 0x105032040>, <_ast.Constant object at 0x105032070>, <_ast.Constant object at 0x1050320a0>, <_ast.Constant object at 0x1050320d0>, <_ast.Constant object at 0x105032130>, <_ast.Constant object at 0x105032100>, <_ast.Constant object at 0x105032160>, <_ast.Constant object at 0x105032190>, <_ast.Constant object at 0x1050321c0>, <_ast.Constant object at 0x1050321f0>, <_ast.Constant object at 0x105032220>, <_ast.Constant object at 0x105032250>, <_ast.Constant object at 0x105032280>](0)" [label = "assignedFrom"]
 "math" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "importedBy"]
 "pi" -> "math" [label = "importedBy"]
 "pi(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
@@ -260,8 +747,8 @@ digraph {
 "HoverTool(0)" -> "HoverTool" [label = "assignedFrom"]
 "LinearColorMapper" -> "bokeh.models" [label = "importedBy"]
 "LinearColorMapper(0)" -> "LinearColorMapper" [label = "assignedFrom"]
-"[<_ast.Constant object at 0x1095167f0>, <_ast.Constant object at 0x109516820>, <_ast.Constant object at 0x109516850>, <_ast.Constant object at 0x109516880>, <_ast.Constant object at 0x1095168b0>, <_ast.Constant object at 0x1095168e0>, <_ast.Constant object at 0x109516910>, <_ast.Constant object at 0x109516940>, <_ast.Constant object at 0x109516970>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"colors(0)$0" -> "[<_ast.Constant object at 0x1095167f0>, <_ast.Constant object at 0x109516820>, <_ast.Constant object at 0x109516850>, <_ast.Constant object at 0x109516880>, <_ast.Constant object at 0x1095168b0>, <_ast.Constant object at 0x1095168e0>, <_ast.Constant object at 0x109516910>, <_ast.Constant object at 0x109516940>, <_ast.Constant object at 0x109516970>](0)" [label = "assignedFrom"]
+"[<_ast.Constant object at 0x105032790>, <_ast.Constant object at 0x1050327c0>, <_ast.Constant object at 0x1050327f0>, <_ast.Constant object at 0x105032820>, <_ast.Constant object at 0x105032850>, <_ast.Constant object at 0x105032880>, <_ast.Constant object at 0x1050328b0>, <_ast.Constant object at 0x1050328e0>, <_ast.Constant object at 0x105032910>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"colors(0)$0" -> "[<_ast.Constant object at 0x105032790>, <_ast.Constant object at 0x1050327c0>, <_ast.Constant object at 0x1050327f0>, <_ast.Constant object at 0x105032820>, <_ast.Constant object at 0x105032850>, <_ast.Constant object at 0x105032880>, <_ast.Constant object at 0x1050328b0>, <_ast.Constant object at 0x1050328e0>, <_ast.Constant object at 0x105032910>](0)" [label = "assignedFrom"]
 "mapper(0)$0" -> "colors(0)$0" [label = "LinearColorMapper"]
 "[](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "countr(0)$0" -> "[](0)" [label = "assignedFrom"]
@@ -277,42 +764,73 @@ digraph {
 "year(0)$1" -> "y(0)$1" [label = "append"]
 "monthly_rate(0)$0" -> "data(0)$3" [label = "assignedFrom"]
 "monthly_rate(0)$0" -> "data(0)$3" [label = "assignedFrom"]
+"monthly_rate(0)$0" -> "CountryName(0)" [label = "assignedFrom"]
 "monthly_rate(0)$0" -> "m(0)" [label = "assignedFrom"]
 "monthly_rate(0)$0" -> "data(0)$3" [label = "assignedFrom"]
+"monthly_rate(0)$0" -> "Year(0)" [label = "assignedFrom"]
 "monthly_rate(0)$0" -> "y(0)$1" [label = "assignedFrom"]
+"monthly_rate(0)$0" -> "Value(0)" [label = "assignedFrom"]
 "rate(0)$1" -> "rate(0)$0" [label = "append"]
 "rate(0)$1" -> "monthly_rate(0)$0" [label = "append"]
 "source(0)$0" -> "dict(0)" [label = "ColumnDataSource"]
 "source(0)$0" -> "countr(0)$1" [label = "ColumnDataSource"]
 "source(0)$0" -> "year(0)$1" [label = "ColumnDataSource"]
 "source(0)$0" -> "rate(0)$1" [label = "ColumnDataSource"]
+"hover,save,pan,box_zoom,wheel_zoom(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"TOOLS(0)$0" -> "hover,save,pan,box_zoom,wheel_zoom(0)" [label = "assignedFrom"]
+"Access to Electricity(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$0" -> "Access to Electricity(0)" [label = "figure"]
 "p(0)$0" -> "years(0)$0" [label = "figure"]
 "p(0)$0" -> "list(0)" [label = "figure"]
 "reversed(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
 "p(0)$0" -> "reversed(0)" [label = "figure"]
 "p(0)$0" -> "country(0)$0" [label = "figure"]
-"TOOLS(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"p(0)$0" -> "TOOLS(0)" [label = "figure"]
-"p(0)$1" -> "p(0)$0" [label = "Div"]
-"p(0)$1" -> "pi(0)" [label = "Div"]
-"p(0)$2" -> "p(0)$1" [label = "rect"]
-"[<_ast.Tuple object at 0x10997bd00>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"above(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$0" -> "above(0)" [label = "figure"]
+"900(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$0" -> "900(0)" [label = "figure"]
+"p(0)$0" -> "900(0)" [label = "figure"]
+"p(0)$0" -> "TOOLS(0)$0" [label = "figure"]
+"None(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$1" -> "p(0)$0" [label = "assignedFrom"]
+"p(0)$1" -> "None(0)" [label = "assignedFrom"]
+"p(0)$2" -> "p(0)$1" [label = "assignedFrom"]
+"p(0)$2" -> "None(0)" [label = "assignedFrom"]
 "p(0)$3" -> "p(0)$2" [label = "assignedFrom"]
-"p(0)$3" -> "[<_ast.Tuple object at 0x10997bd00>](0)" [label = "assignedFrom"]
-"show[0]" -> "p(0)$3" [label = "show"]
+"p(0)$3" -> "None(0)" [label = "assignedFrom"]
+"5pt(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$4" -> "p(0)$3" [label = "assignedFrom"]
+"p(0)$4" -> "5pt(0)" [label = "assignedFrom"]
+"0(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$5" -> "p(0)$4" [label = "assignedFrom"]
+"p(0)$5" -> "0(0)" [label = "assignedFrom"]
+"p(0)$6" -> "p(0)$5" [label = "Div"]
+"p(0)$6" -> "pi(0)" [label = "Div"]
+"p(0)$6" -> "3(0)" [label = "Div"]
+"p(0)$7" -> "p(0)$6" [label = "rect"]
+"[<_ast.Tuple object at 0x105007ca0>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$8" -> "p(0)$7" [label = "assignedFrom"]
+"p(0)$8" -> "[<_ast.Tuple object at 0x105007ca0>](0)" [label = "assignedFrom"]
+"show[0]" -> "p(0)$8" [label = "show"]
 "data(0)$4" -> "Indicators(0)$0" [label = "assignedFrom"]
 "data(0)$4" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$4" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"SG.VAW.REAS.ZS(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"data(0)$4" -> "SG.VAW.REAS.ZS(0)" [label = "assignedFrom"]
 "data(0)$5" -> "Indicators(0)$0" [label = "assignedFrom"]
 "data(0)$5" -> "Indicators(0)$0" [label = "assignedFrom"]
+"data(0)$5" -> "IndicatorCode(0)" [label = "assignedFrom"]
+"data(0)$5" -> "SE.ADT.1524.LT.ZS(0)" [label = "assignedFrom"]
 "data(0)$6" -> "data(0)$5" [label = "assignedFrom"]
 "data(0)$6" -> "str(0)" [label = "assignedFrom"]
 "data(0)$6" -> "x(0)$1" [label = "assignedFrom"]
 "data(0)$6" -> "x(0)$1" [label = "assignedFrom"]
 "data(0)$6" -> "data(0)$6" [label = "assignedFrom"]
-"[<_ast.Constant object at 0x1099a9850>, <_ast.Constant object at 0x1099a9880>, <_ast.Constant object at 0x1099a98b0>, <_ast.Constant object at 0x1099a95b0>, <_ast.Constant object at 0x1099a93a0>, <_ast.Constant object at 0x1099a98e0>, <_ast.Constant object at 0x1099a9910>, <_ast.Constant object at 0x1099a9940>, <_ast.Constant object at 0x1099a9970>, <_ast.Constant object at 0x1099a99a0>, <_ast.Constant object at 0x1099a99d0>, <_ast.Constant object at 0x1099a9a00>, <_ast.Constant object at 0x1099a9a60>, <_ast.Constant object at 0x1099a93d0>, <_ast.Constant object at 0x1099a9a90>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"years(0)$1" -> "[<_ast.Constant object at 0x1099a9850>, <_ast.Constant object at 0x1099a9880>, <_ast.Constant object at 0x1099a98b0>, <_ast.Constant object at 0x1099a95b0>, <_ast.Constant object at 0x1099a93a0>, <_ast.Constant object at 0x1099a98e0>, <_ast.Constant object at 0x1099a9910>, <_ast.Constant object at 0x1099a9940>, <_ast.Constant object at 0x1099a9970>, <_ast.Constant object at 0x1099a99a0>, <_ast.Constant object at 0x1099a99d0>, <_ast.Constant object at 0x1099a9a00>, <_ast.Constant object at 0x1099a9a60>, <_ast.Constant object at 0x1099a93d0>, <_ast.Constant object at 0x1099a9a90>](0)" [label = "assignedFrom"]
-"[<_ast.Constant object at 0x1099a9be0>, <_ast.Constant object at 0x1099a9c10>, <_ast.Constant object at 0x1099a9c40>, <_ast.Constant object at 0x1099a9c70>, <_ast.Constant object at 0x1099a9ca0>, <_ast.Constant object at 0x1099a9cd0>, <_ast.Constant object at 0x1099a9d00>, <_ast.Constant object at 0x1099a9d30>, <_ast.Constant object at 0x1099a9d60>, <_ast.Constant object at 0x1099a9d90>, <_ast.Constant object at 0x1099a9dc0>, <_ast.Constant object at 0x1099a9df0>, <_ast.Constant object at 0x1099a9e20>, <_ast.Constant object at 0x1099a9ac0>, <_ast.Constant object at 0x1099a9e80>, <_ast.Constant object at 0x1099a9b80>, <_ast.Constant object at 0x1099a9eb0>, <_ast.Constant object at 0x1099a9f10>, <_ast.Constant object at 0x1099a9bb0>, <_ast.Constant object at 0x1099a9f40>, <_ast.Constant object at 0x1099a9fd0>, <_ast.Constant object at 0x1099a9fa0>, <_ast.Constant object at 0x1099a9f70>, <_ast.Constant object at 0x1099a9ee0>, <_ast.Constant object at 0x1099a9b20>, <_ast.Constant object at 0x1099a9a30>, <_ast.Constant object at 0x1099a9e50>, <_ast.Constant object at 0x1099940a0>, <_ast.Constant object at 0x109994100>, <_ast.Constant object at 0x1099940d0>, <_ast.Constant object at 0x109994130>, <_ast.Constant object at 0x109994160>, <_ast.Constant object at 0x109994070>, <_ast.Constant object at 0x109994190>, <_ast.Constant object at 0x109994040>, <_ast.Constant object at 0x109994220>, <_ast.Constant object at 0x109994250>, <_ast.Constant object at 0x109994280>, <_ast.Constant object at 0x1099941f0>, <_ast.Constant object at 0x1099942b0>, <_ast.Constant object at 0x1099942e0>, <_ast.Constant object at 0x109994370>, <_ast.Constant object at 0x109994310>, <_ast.Constant object at 0x109994340>, <_ast.Constant object at 0x1099941c0>, <_ast.Constant object at 0x1099943d0>, <_ast.Constant object at 0x109994430>, <_ast.Constant object at 0x109994580>, <_ast.Constant object at 0x109994550>, <_ast.Constant object at 0x109994460>, <_ast.Constant object at 0x109994490>, <_ast.Constant object at 0x109994520>, <_ast.Constant object at 0x1099944c0>, <_ast.Constant object at 0x1099944f0>, <_ast.Constant object at 0x109994400>, <_ast.Constant object at 0x1099943a0>, <_ast.Constant object at 0x109994610>, <_ast.Constant object at 0x109994670>, <_ast.Constant object at 0x1099946a0>, <_ast.Constant object at 0x109994640>, <_ast.Constant object at 0x1099945e0>, <_ast.Constant object at 0x1099946d0>, <_ast.Constant object at 0x109994730>, <_ast.Constant object at 0x109994760>, <_ast.Constant object at 0x1099947c0>, <_ast.Constant object at 0x109994790>, <_ast.Constant object at 0x109994700>, <_ast.Constant object at 0x1099949a0>, <_ast.Constant object at 0x109994940>, <_ast.Constant object at 0x1099949d0>, <_ast.Constant object at 0x109994970>, <_ast.Constant object at 0x109994820>, <_ast.Constant object at 0x1099948e0>, <_ast.Constant object at 0x109994880>, <_ast.Constant object at 0x109994850>, <_ast.Constant object at 0x109994b80>, <_ast.Constant object at 0x109994a30>, <_ast.Constant object at 0x109994ac0>, <_ast.Constant object at 0x109994b20>, <_ast.Constant object at 0x1099947f0>, <_ast.Constant object at 0x109994a90>, <_ast.Constant object at 0x109994a60>, <_ast.Constant object at 0x109994bb0>, <_ast.Constant object at 0x109994dc0>, <_ast.Constant object at 0x109994d00>, <_ast.Constant object at 0x109994e20>, <_ast.Constant object at 0x109994e50>, <_ast.Constant object at 0x109994e80>, <_ast.Constant object at 0x1099948b0>, <_ast.Constant object at 0x109994eb0>, <_ast.Constant object at 0x109994f40>, <_ast.Constant object at 0x109994ee0>, <_ast.Constant object at 0x109994f10>, <_ast.Constant object at 0x109994df0>, <_ast.Constant object at 0x109994d90>, <_ast.Constant object at 0x109994d60>, <_ast.Constant object at 0x109994c70>, <_ast.Constant object at 0x109994af0>, <_ast.Constant object at 0x109994cd0>, <_ast.Constant object at 0x109994d30>, <_ast.Constant object at 0x109994ca0>, <_ast.Constant object at 0x109994a00>, <_ast.Constant object at 0x109994be0>, <_ast.Constant object at 0x109994c40>, <_ast.Constant object at 0x1099945b0>, <_ast.Constant object at 0x109994f70>, <_ast.Constant object at 0x109994fa0>, <_ast.Constant object at 0x109994c10>, <_ast.Constant object at 0x109994b50>, <_ast.Constant object at 0x109994fd0>, <_ast.Constant object at 0x109994910>, <_ast.Constant object at 0x109981040>, <_ast.Constant object at 0x109981070>, <_ast.Constant object at 0x1099810a0>, <_ast.Constant object at 0x1099810d0>, <_ast.Constant object at 0x109981100>, <_ast.Constant object at 0x109981130>, <_ast.Constant object at 0x109981160>, <_ast.Constant object at 0x109981190>, <_ast.Constant object at 0x1099811c0>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"country(0)$1" -> "[<_ast.Constant object at 0x1099a9be0>, <_ast.Constant object at 0x1099a9c10>, <_ast.Constant object at 0x1099a9c40>, <_ast.Constant object at 0x1099a9c70>, <_ast.Constant object at 0x1099a9ca0>, <_ast.Constant object at 0x1099a9cd0>, <_ast.Constant object at 0x1099a9d00>, <_ast.Constant object at 0x1099a9d30>, <_ast.Constant object at 0x1099a9d60>, <_ast.Constant object at 0x1099a9d90>, <_ast.Constant object at 0x1099a9dc0>, <_ast.Constant object at 0x1099a9df0>, <_ast.Constant object at 0x1099a9e20>, <_ast.Constant object at 0x1099a9ac0>, <_ast.Constant object at 0x1099a9e80>, <_ast.Constant object at 0x1099a9b80>, <_ast.Constant object at 0x1099a9eb0>, <_ast.Constant object at 0x1099a9f10>, <_ast.Constant object at 0x1099a9bb0>, <_ast.Constant object at 0x1099a9f40>, <_ast.Constant object at 0x1099a9fd0>, <_ast.Constant object at 0x1099a9fa0>, <_ast.Constant object at 0x1099a9f70>, <_ast.Constant object at 0x1099a9ee0>, <_ast.Constant object at 0x1099a9b20>, <_ast.Constant object at 0x1099a9a30>, <_ast.Constant object at 0x1099a9e50>, <_ast.Constant object at 0x1099940a0>, <_ast.Constant object at 0x109994100>, <_ast.Constant object at 0x1099940d0>, <_ast.Constant object at 0x109994130>, <_ast.Constant object at 0x109994160>, <_ast.Constant object at 0x109994070>, <_ast.Constant object at 0x109994190>, <_ast.Constant object at 0x109994040>, <_ast.Constant object at 0x109994220>, <_ast.Constant object at 0x109994250>, <_ast.Constant object at 0x109994280>, <_ast.Constant object at 0x1099941f0>, <_ast.Constant object at 0x1099942b0>, <_ast.Constant object at 0x1099942e0>, <_ast.Constant object at 0x109994370>, <_ast.Constant object at 0x109994310>, <_ast.Constant object at 0x109994340>, <_ast.Constant object at 0x1099941c0>, <_ast.Constant object at 0x1099943d0>, <_ast.Constant object at 0x109994430>, <_ast.Constant object at 0x109994580>, <_ast.Constant object at 0x109994550>, <_ast.Constant object at 0x109994460>, <_ast.Constant object at 0x109994490>, <_ast.Constant object at 0x109994520>, <_ast.Constant object at 0x1099944c0>, <_ast.Constant object at 0x1099944f0>, <_ast.Constant object at 0x109994400>, <_ast.Constant object at 0x1099943a0>, <_ast.Constant object at 0x109994610>, <_ast.Constant object at 0x109994670>, <_ast.Constant object at 0x1099946a0>, <_ast.Constant object at 0x109994640>, <_ast.Constant object at 0x1099945e0>, <_ast.Constant object at 0x1099946d0>, <_ast.Constant object at 0x109994730>, <_ast.Constant object at 0x109994760>, <_ast.Constant object at 0x1099947c0>, <_ast.Constant object at 0x109994790>, <_ast.Constant object at 0x109994700>, <_ast.Constant object at 0x1099949a0>, <_ast.Constant object at 0x109994940>, <_ast.Constant object at 0x1099949d0>, <_ast.Constant object at 0x109994970>, <_ast.Constant object at 0x109994820>, <_ast.Constant object at 0x1099948e0>, <_ast.Constant object at 0x109994880>, <_ast.Constant object at 0x109994850>, <_ast.Constant object at 0x109994b80>, <_ast.Constant object at 0x109994a30>, <_ast.Constant object at 0x109994ac0>, <_ast.Constant object at 0x109994b20>, <_ast.Constant object at 0x1099947f0>, <_ast.Constant object at 0x109994a90>, <_ast.Constant object at 0x109994a60>, <_ast.Constant object at 0x109994bb0>, <_ast.Constant object at 0x109994dc0>, <_ast.Constant object at 0x109994d00>, <_ast.Constant object at 0x109994e20>, <_ast.Constant object at 0x109994e50>, <_ast.Constant object at 0x109994e80>, <_ast.Constant object at 0x1099948b0>, <_ast.Constant object at 0x109994eb0>, <_ast.Constant object at 0x109994f40>, <_ast.Constant object at 0x109994ee0>, <_ast.Constant object at 0x109994f10>, <_ast.Constant object at 0x109994df0>, <_ast.Constant object at 0x109994d90>, <_ast.Constant object at 0x109994d60>, <_ast.Constant object at 0x109994c70>, <_ast.Constant object at 0x109994af0>, <_ast.Constant object at 0x109994cd0>, <_ast.Constant object at 0x109994d30>, <_ast.Constant object at 0x109994ca0>, <_ast.Constant object at 0x109994a00>, <_ast.Constant object at 0x109994be0>, <_ast.Constant object at 0x109994c40>, <_ast.Constant object at 0x1099945b0>, <_ast.Constant object at 0x109994f70>, <_ast.Constant object at 0x109994fa0>, <_ast.Constant object at 0x109994c10>, <_ast.Constant object at 0x109994b50>, <_ast.Constant object at 0x109994fd0>, <_ast.Constant object at 0x109994910>, <_ast.Constant object at 0x109981040>, <_ast.Constant object at 0x109981070>, <_ast.Constant object at 0x1099810a0>, <_ast.Constant object at 0x1099810d0>, <_ast.Constant object at 0x109981100>, <_ast.Constant object at 0x109981130>, <_ast.Constant object at 0x109981160>, <_ast.Constant object at 0x109981190>, <_ast.Constant object at 0x1099811c0>](0)" [label = "assignedFrom"]
+"data(0)$6" -> "Year(0)" [label = "assignedFrom"]
+"[<_ast.Constant object at 0x105025760>, <_ast.Constant object at 0x105025790>, <_ast.Constant object at 0x1050257c0>, <_ast.Constant object at 0x1050257f0>, <_ast.Constant object at 0x105025820>, <_ast.Constant object at 0x105025880>, <_ast.Constant object at 0x105025850>, <_ast.Constant object at 0x1050258b0>, <_ast.Constant object at 0x1050258e0>, <_ast.Constant object at 0x105025910>, <_ast.Constant object at 0x105025940>, <_ast.Constant object at 0x105025970>, <_ast.Constant object at 0x1050259a0>, <_ast.Constant object at 0x1050259d0>, <_ast.Constant object at 0x105025370>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"years(0)$1" -> "[<_ast.Constant object at 0x105025760>, <_ast.Constant object at 0x105025790>, <_ast.Constant object at 0x1050257c0>, <_ast.Constant object at 0x1050257f0>, <_ast.Constant object at 0x105025820>, <_ast.Constant object at 0x105025880>, <_ast.Constant object at 0x105025850>, <_ast.Constant object at 0x1050258b0>, <_ast.Constant object at 0x1050258e0>, <_ast.Constant object at 0x105025910>, <_ast.Constant object at 0x105025940>, <_ast.Constant object at 0x105025970>, <_ast.Constant object at 0x1050259a0>, <_ast.Constant object at 0x1050259d0>, <_ast.Constant object at 0x105025370>](0)" [label = "assignedFrom"]
+"[<_ast.Constant object at 0x105025ac0>, <_ast.Constant object at 0x105025af0>, <_ast.Constant object at 0x105025b20>, <_ast.Constant object at 0x105025b80>, <_ast.Constant object at 0x105025b50>, <_ast.Constant object at 0x105025bb0>, <_ast.Constant object at 0x105025be0>, <_ast.Constant object at 0x105025c10>, <_ast.Constant object at 0x105025c40>, <_ast.Constant object at 0x105025ca0>, <_ast.Constant object at 0x105025cd0>, <_ast.Constant object at 0x105025d00>, <_ast.Constant object at 0x105025d60>, <_ast.Constant object at 0x105025d30>, <_ast.Constant object at 0x105025d90>, <_ast.Constant object at 0x105025dc0>, <_ast.Constant object at 0x105025df0>, <_ast.Constant object at 0x105025e20>, <_ast.Constant object at 0x105025e50>, <_ast.Constant object at 0x105025e80>, <_ast.Constant object at 0x105025ee0>, <_ast.Constant object at 0x105025f40>, <_ast.Constant object at 0x105025f70>, <_ast.Constant object at 0x105025fa0>, <_ast.Constant object at 0x105025c70>, <_ast.Constant object at 0x105025fd0>, <_ast.Constant object at 0x105025f10>, <_ast.Constant object at 0x105025eb0>, <_ast.Constant object at 0x105025a00>, <_ast.Constant object at 0x105031040>, <_ast.Constant object at 0x105031070>, <_ast.Constant object at 0x1050310a0>, <_ast.Constant object at 0x1050310d0>, <_ast.Constant object at 0x105031100>, <_ast.Constant object at 0x105031130>, <_ast.Constant object at 0x105031160>, <_ast.Constant object at 0x105031190>, <_ast.Constant object at 0x1050311c0>, <_ast.Constant object at 0x1050311f0>, <_ast.Constant object at 0x105031220>, <_ast.Constant object at 0x105031250>, <_ast.Constant object at 0x105031280>, <_ast.Constant object at 0x1050312b0>, <_ast.Constant object at 0x1050312e0>, <_ast.Constant object at 0x105031310>, <_ast.Constant object at 0x105031340>, <_ast.Constant object at 0x105031370>, <_ast.Constant object at 0x1050313a0>, <_ast.Constant object at 0x1050313d0>, <_ast.Constant object at 0x105031400>, <_ast.Constant object at 0x105031430>, <_ast.Constant object at 0x105031460>, <_ast.Constant object at 0x105031490>, <_ast.Constant object at 0x1050314c0>, <_ast.Constant object at 0x1050314f0>, <_ast.Constant object at 0x105031520>, <_ast.Constant object at 0x105031550>, <_ast.Constant object at 0x105031580>, <_ast.Constant object at 0x1050315b0>, <_ast.Constant object at 0x1050315e0>, <_ast.Constant object at 0x105031610>, <_ast.Constant object at 0x105031640>, <_ast.Constant object at 0x105031670>, <_ast.Constant object at 0x1050316a0>, <_ast.Constant object at 0x1050316d0>, <_ast.Constant object at 0x105031700>, <_ast.Constant object at 0x105031730>, <_ast.Constant object at 0x105031760>, <_ast.Constant object at 0x105031790>, <_ast.Constant object at 0x1050317c0>, <_ast.Constant object at 0x1050317f0>, <_ast.Constant object at 0x105031820>, <_ast.Constant object at 0x105031850>, <_ast.Constant object at 0x105031880>, <_ast.Constant object at 0x1050318b0>, <_ast.Constant object at 0x1050318e0>, <_ast.Constant object at 0x105031910>, <_ast.Constant object at 0x105031940>, <_ast.Constant object at 0x105031970>, <_ast.Constant object at 0x1050319a0>, <_ast.Constant object at 0x1050319d0>, <_ast.Constant object at 0x105031a00>, <_ast.Constant object at 0x105031a30>, <_ast.Constant object at 0x105031a60>, <_ast.Constant object at 0x105031a90>, <_ast.Constant object at 0x105031ac0>, <_ast.Constant object at 0x105031af0>, <_ast.Constant object at 0x105031b20>, <_ast.Constant object at 0x105031b50>, <_ast.Constant object at 0x105031b80>, <_ast.Constant object at 0x105031bb0>, <_ast.Constant object at 0x105031be0>, <_ast.Constant object at 0x105031c10>, <_ast.Constant object at 0x105031c40>, <_ast.Constant object at 0x105031c70>, <_ast.Constant object at 0x105031ca0>, <_ast.Constant object at 0x105031cd0>, <_ast.Constant object at 0x105031d00>, <_ast.Constant object at 0x105031d30>, <_ast.Constant object at 0x105031d60>, <_ast.Constant object at 0x105031d90>, <_ast.Constant object at 0x105031dc0>, <_ast.Constant object at 0x105031df0>, <_ast.Constant object at 0x105031e20>, <_ast.Constant object at 0x105031e50>, <_ast.Constant object at 0x105031e80>, <_ast.Constant object at 0x105031eb0>, <_ast.Constant object at 0x105031ee0>, <_ast.Constant object at 0x105031f10>, <_ast.Constant object at 0x105031f40>, <_ast.Constant object at 0x105031f70>, <_ast.Constant object at 0x105031fa0>, <_ast.Constant object at 0x105031fd0>, <_ast.Constant object at 0x10502d040>, <_ast.Constant object at 0x10502d070>, <_ast.Constant object at 0x10502d0a0>, <_ast.Constant object at 0x10502d0d0>, <_ast.Constant object at 0x10502d100>, <_ast.Constant object at 0x10502d130>, <_ast.Constant object at 0x10502d160>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"country(0)$1" -> "[<_ast.Constant object at 0x105025ac0>, <_ast.Constant object at 0x105025af0>, <_ast.Constant object at 0x105025b20>, <_ast.Constant object at 0x105025b80>, <_ast.Constant object at 0x105025b50>, <_ast.Constant object at 0x105025bb0>, <_ast.Constant object at 0x105025be0>, <_ast.Constant object at 0x105025c10>, <_ast.Constant object at 0x105025c40>, <_ast.Constant object at 0x105025ca0>, <_ast.Constant object at 0x105025cd0>, <_ast.Constant object at 0x105025d00>, <_ast.Constant object at 0x105025d60>, <_ast.Constant object at 0x105025d30>, <_ast.Constant object at 0x105025d90>, <_ast.Constant object at 0x105025dc0>, <_ast.Constant object at 0x105025df0>, <_ast.Constant object at 0x105025e20>, <_ast.Constant object at 0x105025e50>, <_ast.Constant object at 0x105025e80>, <_ast.Constant object at 0x105025ee0>, <_ast.Constant object at 0x105025f40>, <_ast.Constant object at 0x105025f70>, <_ast.Constant object at 0x105025fa0>, <_ast.Constant object at 0x105025c70>, <_ast.Constant object at 0x105025fd0>, <_ast.Constant object at 0x105025f10>, <_ast.Constant object at 0x105025eb0>, <_ast.Constant object at 0x105025a00>, <_ast.Constant object at 0x105031040>, <_ast.Constant object at 0x105031070>, <_ast.Constant object at 0x1050310a0>, <_ast.Constant object at 0x1050310d0>, <_ast.Constant object at 0x105031100>, <_ast.Constant object at 0x105031130>, <_ast.Constant object at 0x105031160>, <_ast.Constant object at 0x105031190>, <_ast.Constant object at 0x1050311c0>, <_ast.Constant object at 0x1050311f0>, <_ast.Constant object at 0x105031220>, <_ast.Constant object at 0x105031250>, <_ast.Constant object at 0x105031280>, <_ast.Constant object at 0x1050312b0>, <_ast.Constant object at 0x1050312e0>, <_ast.Constant object at 0x105031310>, <_ast.Constant object at 0x105031340>, <_ast.Constant object at 0x105031370>, <_ast.Constant object at 0x1050313a0>, <_ast.Constant object at 0x1050313d0>, <_ast.Constant object at 0x105031400>, <_ast.Constant object at 0x105031430>, <_ast.Constant object at 0x105031460>, <_ast.Constant object at 0x105031490>, <_ast.Constant object at 0x1050314c0>, <_ast.Constant object at 0x1050314f0>, <_ast.Constant object at 0x105031520>, <_ast.Constant object at 0x105031550>, <_ast.Constant object at 0x105031580>, <_ast.Constant object at 0x1050315b0>, <_ast.Constant object at 0x1050315e0>, <_ast.Constant object at 0x105031610>, <_ast.Constant object at 0x105031640>, <_ast.Constant object at 0x105031670>, <_ast.Constant object at 0x1050316a0>, <_ast.Constant object at 0x1050316d0>, <_ast.Constant object at 0x105031700>, <_ast.Constant object at 0x105031730>, <_ast.Constant object at 0x105031760>, <_ast.Constant object at 0x105031790>, <_ast.Constant object at 0x1050317c0>, <_ast.Constant object at 0x1050317f0>, <_ast.Constant object at 0x105031820>, <_ast.Constant object at 0x105031850>, <_ast.Constant object at 0x105031880>, <_ast.Constant object at 0x1050318b0>, <_ast.Constant object at 0x1050318e0>, <_ast.Constant object at 0x105031910>, <_ast.Constant object at 0x105031940>, <_ast.Constant object at 0x105031970>, <_ast.Constant object at 0x1050319a0>, <_ast.Constant object at 0x1050319d0>, <_ast.Constant object at 0x105031a00>, <_ast.Constant object at 0x105031a30>, <_ast.Constant object at 0x105031a60>, <_ast.Constant object at 0x105031a90>, <_ast.Constant object at 0x105031ac0>, <_ast.Constant object at 0x105031af0>, <_ast.Constant object at 0x105031b20>, <_ast.Constant object at 0x105031b50>, <_ast.Constant object at 0x105031b80>, <_ast.Constant object at 0x105031bb0>, <_ast.Constant object at 0x105031be0>, <_ast.Constant object at 0x105031c10>, <_ast.Constant object at 0x105031c40>, <_ast.Constant object at 0x105031c70>, <_ast.Constant object at 0x105031ca0>, <_ast.Constant object at 0x105031cd0>, <_ast.Constant object at 0x105031d00>, <_ast.Constant object at 0x105031d30>, <_ast.Constant object at 0x105031d60>, <_ast.Constant object at 0x105031d90>, <_ast.Constant object at 0x105031dc0>, <_ast.Constant object at 0x105031df0>, <_ast.Constant object at 0x105031e20>, <_ast.Constant object at 0x105031e50>, <_ast.Constant object at 0x105031e80>, <_ast.Constant object at 0x105031eb0>, <_ast.Constant object at 0x105031ee0>, <_ast.Constant object at 0x105031f10>, <_ast.Constant object at 0x105031f40>, <_ast.Constant object at 0x105031f70>, <_ast.Constant object at 0x105031fa0>, <_ast.Constant object at 0x105031fd0>, <_ast.Constant object at 0x10502d040>, <_ast.Constant object at 0x10502d070>, <_ast.Constant object at 0x10502d0a0>, <_ast.Constant object at 0x10502d0d0>, <_ast.Constant object at 0x10502d100>, <_ast.Constant object at 0x10502d130>, <_ast.Constant object at 0x10502d160>](0)" [label = "assignedFrom"]
 "math" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "importedBy"]
 "pi" -> "math" [label = "importedBy"]
 "pi(0)" -> "pi" [label = "assignedFrom"]
@@ -336,8 +854,8 @@ digraph {
 "HoverTool(0)" -> "HoverTool" [label = "assignedFrom"]
 "LinearColorMapper" -> "bokeh.models" [label = "importedBy"]
 "LinearColorMapper(0)" -> "LinearColorMapper" [label = "assignedFrom"]
-"[<_ast.Constant object at 0x109981700>, <_ast.Constant object at 0x109981730>, <_ast.Constant object at 0x109981760>, <_ast.Constant object at 0x109981790>, <_ast.Constant object at 0x1099817c0>, <_ast.Constant object at 0x109981820>, <_ast.Constant object at 0x1099817f0>, <_ast.Constant object at 0x109981850>, <_ast.Constant object at 0x109981880>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"colors(0)$1" -> "[<_ast.Constant object at 0x109981700>, <_ast.Constant object at 0x109981730>, <_ast.Constant object at 0x109981760>, <_ast.Constant object at 0x109981790>, <_ast.Constant object at 0x1099817c0>, <_ast.Constant object at 0x109981820>, <_ast.Constant object at 0x1099817f0>, <_ast.Constant object at 0x109981850>, <_ast.Constant object at 0x109981880>](0)" [label = "assignedFrom"]
+"[<_ast.Constant object at 0x10502d6a0>, <_ast.Constant object at 0x10502d700>, <_ast.Constant object at 0x10502d730>, <_ast.Constant object at 0x10502d760>, <_ast.Constant object at 0x10502d790>, <_ast.Constant object at 0x10502d7c0>, <_ast.Constant object at 0x10502d7f0>, <_ast.Constant object at 0x10502d820>, <_ast.Constant object at 0x10502d850>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"colors(0)$1" -> "[<_ast.Constant object at 0x10502d6a0>, <_ast.Constant object at 0x10502d700>, <_ast.Constant object at 0x10502d730>, <_ast.Constant object at 0x10502d760>, <_ast.Constant object at 0x10502d790>, <_ast.Constant object at 0x10502d7c0>, <_ast.Constant object at 0x10502d7f0>, <_ast.Constant object at 0x10502d820>, <_ast.Constant object at 0x10502d850>](0)" [label = "assignedFrom"]
 "mapper(0)$1" -> "colors(0)$1" [label = "LinearColorMapper"]
 "countr(0)$2" -> "[](0)" [label = "assignedFrom"]
 "year(0)$2" -> "[](0)" [label = "assignedFrom"]
@@ -351,25 +869,45 @@ digraph {
 "year(0)$3" -> "y(0)$1" [label = "append"]
 "monthly_rate(0)$1" -> "data(0)$6" [label = "assignedFrom"]
 "monthly_rate(0)$1" -> "data(0)$6" [label = "assignedFrom"]
+"monthly_rate(0)$1" -> "CountryName(0)" [label = "assignedFrom"]
 "monthly_rate(0)$1" -> "m(0)" [label = "assignedFrom"]
 "monthly_rate(0)$1" -> "data(0)$6" [label = "assignedFrom"]
+"monthly_rate(0)$1" -> "Year(0)" [label = "assignedFrom"]
 "monthly_rate(0)$1" -> "y(0)$1" [label = "assignedFrom"]
+"monthly_rate(0)$1" -> "Value(0)" [label = "assignedFrom"]
 "rate(0)$3" -> "rate(0)$2" [label = "append"]
 "rate(0)$3" -> "monthly_rate(0)$1" [label = "append"]
 "source(0)$1" -> "dict(0)" [label = "ColumnDataSource"]
 "source(0)$1" -> "countr(0)$3" [label = "ColumnDataSource"]
 "source(0)$1" -> "year(0)$3" [label = "ColumnDataSource"]
 "source(0)$1" -> "rate(0)$3" [label = "ColumnDataSource"]
-"p(0)$4" -> "years(0)$1" [label = "figure"]
-"p(0)$4" -> "list(0)" [label = "figure"]
-"p(0)$4" -> "reversed(0)" [label = "figure"]
-"p(0)$4" -> "country(0)$1" [label = "figure"]
-"p(0)$4" -> "TOOLS(0)" [label = "figure"]
-"p(0)$5" -> "p(0)$4" [label = "Div"]
-"p(0)$5" -> "pi(0)" [label = "Div"]
-"p(0)$6" -> "p(0)$5" [label = "rect"]
-"[<_ast.Tuple object at 0x10998dc40>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
-"p(0)$7" -> "p(0)$6" [label = "assignedFrom"]
-"p(0)$7" -> "[<_ast.Tuple object at 0x10998dc40>](0)" [label = "assignedFrom"]
-"show[0]" -> "p(0)$7" [label = "show"]
+"TOOLS(0)$1" -> "hover,save,pan,box_zoom,wheel_zoom(0)" [label = "assignedFrom"]
+"Women who believe Husbands are justified in beating wifes(0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$9" -> "Women who believe Husbands are justified in beating wifes(0)" [label = "figure"]
+"p(0)$9" -> "years(0)$1" [label = "figure"]
+"p(0)$9" -> "list(0)" [label = "figure"]
+"p(0)$9" -> "reversed(0)" [label = "figure"]
+"p(0)$9" -> "country(0)$1" [label = "figure"]
+"p(0)$9" -> "above(0)" [label = "figure"]
+"p(0)$9" -> "900(0)" [label = "figure"]
+"p(0)$9" -> "900(0)" [label = "figure"]
+"p(0)$9" -> "TOOLS(0)$1" [label = "figure"]
+"p(0)$10" -> "p(0)$9" [label = "assignedFrom"]
+"p(0)$10" -> "None(0)" [label = "assignedFrom"]
+"p(0)$11" -> "p(0)$10" [label = "assignedFrom"]
+"p(0)$11" -> "None(0)" [label = "assignedFrom"]
+"p(0)$12" -> "p(0)$11" [label = "assignedFrom"]
+"p(0)$12" -> "None(0)" [label = "assignedFrom"]
+"p(0)$13" -> "p(0)$12" [label = "assignedFrom"]
+"p(0)$13" -> "5pt(0)" [label = "assignedFrom"]
+"p(0)$14" -> "p(0)$13" [label = "assignedFrom"]
+"p(0)$14" -> "0(0)" [label = "assignedFrom"]
+"p(0)$15" -> "p(0)$14" [label = "Div"]
+"p(0)$15" -> "pi(0)" [label = "Div"]
+"p(0)$15" -> "3(0)" [label = "Div"]
+"p(0)$16" -> "p(0)$15" [label = "rect"]
+"[<_ast.Tuple object at 0x10501fc40>](0)" -> "sql-and-python-primer-bokeh-plotly.ipynb" [label = "appearsIn"]
+"p(0)$17" -> "p(0)$16" [label = "assignedFrom"]
+"p(0)$17" -> "[<_ast.Tuple object at 0x10501fc40>](0)" [label = "assignedFrom"]
+"show[0]" -> "p(0)$17" [label = "show"]
 }
