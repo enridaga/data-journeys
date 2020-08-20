@@ -1,0 +1,101 @@
+CONSTRUCT { ?x a :Input } WHERE { ?s dj:appearsIn [] . ?s dj:assignedFrom ?x }
+CONSTRUCT { ?x a :Parameter } WHERE { ?s dj:appearsIn [] . FILTER NOT EXISTS { ?s dj:assignedFrom/dj:importedBy [] }}
+CONSTRUCT { ?x a :Support } WHERE { ?s dj:assignedFrom/dj:importedBy [] }
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/assignedFrom> [] } 
+CONSTRUCT { <http://purl.org/dj/assignedFrom> rdfs:subPropertyOf :derivedFrom } WHERE { [] <http://purl.org/dj/assignedFrom> [] } 
+CONSTRUCT { ?o a [not a :Output] } WHERE { [] <http://purl.org/dj/assignedFrom> ?o } 
+CONSTRUCT { ?s a :Constant } WHERE { ?s <http://purl.org/dj/appearsIn> [] } 
+CONSTRUCT { <http://purl.org/dj/appearsIn> rdfs:subPropertyOf :inJourney } WHERE { [] <http://purl.org/dj/appearsIn> [] } 
+CONSTRUCT { ?o a :Journey } WHERE { [] <http://purl.org/dj/appearsIn> ?o } 
+CONSTRUCT { ?s a :Support } WHERE { ?s <http://purl.org/dj/importedBy> [] } 
+CONSTRUCT { <http://purl.org/dj/importedBy> rdfs:subPropertyOf :copiedFrom } WHERE { [] <http://purl.org/dj/importedBy> [] } 
+CONSTRUCT { ?o a :Journey } WHERE { [] <http://purl.org/dj/importedBy> ?o } 
+CONSTRUCT { [] a :Reuse ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/importedBy> ?o . ?s a :Support .?o a :Journey .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/iteratorOf> [] } 
+CONSTRUCT { <http://purl.org/dj/iteratorOf> rdfs:subPropertyOf :filteredFrom } WHERE { [] <http://purl.org/dj/iteratorOf> [] } 
+CONSTRUCT { ?o a :Temporary } WHERE { [] <http://purl.org/dj/iteratorOf> ?o } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/_argToVar> [] } 
+CONSTRUCT { <http://purl.org/dj/_argToVar> rdfs:subPropertyOf :copiedFrom } WHERE { [] <http://purl.org/dj/_argToVar> [] } 
+CONSTRUCT { ?o a :Temporary } WHERE { [] <http://purl.org/dj/_argToVar> ?o } 
+CONSTRUCT { ?s a :Output } WHERE { ?s <http://purl.org/dj/print> [] } 
+CONSTRUCT { <http://purl.org/dj/print> rdfs:subPropertyOf :movedFrom } WHERE { [] <http://purl.org/dj/print> [] } 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/print> ?o . ?s a :Output .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/append> [] } 
+CONSTRUCT { <http://purl.org/dj/append> rdfs:subPropertyOf :augmentedFrom } WHERE { [] <http://purl.org/dj/append> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/append> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/Add> [] } 
+CONSTRUCT { <http://purl.org/dj/Add> rdfs:subPropertyOf :augmentedFrom } WHERE { [] <http://purl.org/dj/Add> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/Add> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/fit> [] } 
+CONSTRUCT { <http://purl.org/dj/fit> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/fit> [] } 
+CONSTRUCT { [] a :Analysis ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/fit> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/apply> [] } 
+CONSTRUCT { <http://purl.org/dj/apply> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/apply> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/Div> [] } 
+CONSTRUCT { <http://purl.org/dj/Div> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/Div> [] } 
+CONSTRUCT { ?s a :Output } WHERE { ?s <http://purl.org/dj/plot> [] } 
+CONSTRUCT { <http://purl.org/dj/plot> rdfs:subPropertyOf :visualisedFrom } WHERE { [] <http://purl.org/dj/plot> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/astype> [] } 
+CONSTRUCT { <http://purl.org/dj/astype> rdfs:subPropertyOf :optimizedFrom } WHERE { [] <http://purl.org/dj/astype> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/DataFrame> [] } 
+CONSTRUCT { <http://purl.org/dj/DataFrame> rdfs:subPropertyOf :preparedFrom } WHERE { [] <http://purl.org/dj/DataFrame> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/DataFrame> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/read_csv> [] } 
+CONSTRUCT { <http://purl.org/dj/read_csv> rdfs:subPropertyOf :copiedFrom } WHERE { [] <http://purl.org/dj/read_csv> [] } 
+CONSTRUCT { ?o a :Input } WHERE { [] <http://purl.org/dj/read_csv> ?o } 
+CONSTRUCT { [] a :Movement ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/read_csv> ?o . ?s a :Temporary .?o a :Input .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/predict> [] } 
+CONSTRUCT { <http://purl.org/dj/predict> rdfs:subPropertyOf :analysedFrom } WHERE { [] <http://purl.org/dj/predict> [] } 
+CONSTRUCT { [] a :Analysis ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/predict> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/mean> [] } 
+CONSTRUCT { <http://purl.org/dj/mean> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/mean> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/subplots> [] } 
+CONSTRUCT { <http://purl.org/dj/subplots> rdfs:subPropertyOf :visualisedFrom } WHERE { [] <http://purl.org/dj/subplots> [] } 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/subplots> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/train_test_split> [] } 
+CONSTRUCT { <http://purl.org/dj/train_test_split> rdfs:subPropertyOf :splitFrom } WHERE { [] <http://purl.org/dj/train_test_split> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/train_test_split> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Output } WHERE { ?s <http://purl.org/dj/imshow> [] } 
+CONSTRUCT { <http://purl.org/dj/imshow> rdfs:subPropertyOf :visualisedFrom } WHERE { [] <http://purl.org/dj/imshow> [] } 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/imshow> ?o . ?s a :Output .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/title> [] } 
+CONSTRUCT { <http://purl.org/dj/title> rdfs:subPropertyOf :cleanedFrom } WHERE { [] <http://purl.org/dj/title> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/title> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Output } WHERE { ?s <http://purl.org/dj/show> [] } 
+CONSTRUCT { <http://purl.org/dj/show> rdfs:subPropertyOf :visualisedFrom } WHERE { [] <http://purl.org/dj/show> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/head> [] } 
+CONSTRUCT { <http://purl.org/dj/head> rdfs:subPropertyOf :splitFrom } WHERE { [] <http://purl.org/dj/head> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/head> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/zeros> [] } 
+CONSTRUCT { <http://purl.org/dj/zeros> rdfs:subPropertyOf :preparedFrom } WHERE { [] <http://purl.org/dj/zeros> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/zeros> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/drop> [] } 
+CONSTRUCT { <http://purl.org/dj/drop> rdfs:subPropertyOf :filteredFrom } WHERE { [] <http://purl.org/dj/drop> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/drop> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/add> [] } 
+CONSTRUCT { <http://purl.org/dj/add> rdfs:subPropertyOf :augmentedFrom } WHERE { [] <http://purl.org/dj/add> [] } 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/tanh> [] } 
+CONSTRUCT { <http://purl.org/dj/tanh> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/tanh> [] } 
+CONSTRUCT { [] a :Analysis ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/tanh> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/merge> [] } 
+CONSTRUCT { <http://purl.org/dj/merge> rdfs:subPropertyOf :combinedFrom } WHERE { [] <http://purl.org/dj/merge> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/merge> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/Sub> [] } 
+CONSTRUCT { <http://purl.org/dj/Sub> rdfs:subPropertyOf :splitFrom } WHERE { [] <http://purl.org/dj/Sub> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/Sub> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/figure> [] } 
+CONSTRUCT { <http://purl.org/dj/figure> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/figure> [] } 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/figure> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/Figure> [] } 
+CONSTRUCT { <http://purl.org/dj/Figure> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/Figure> [] } 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/Figure> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/map> [] } 
+CONSTRUCT { <http://purl.org/dj/map> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/map> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/map> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/transform> [] } 
+CONSTRUCT { <http://purl.org/dj/transform> rdfs:subPropertyOf :optimizedFrom } WHERE { [] <http://purl.org/dj/transform> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/transform> ?o . ?s a :Temporary .} 
+CONSTRUCT { ?s a :Temporary } WHERE { ?s <http://purl.org/dj/Mult> [] } 
+CONSTRUCT { <http://purl.org/dj/Mult> rdfs:subPropertyOf :computedFrom } WHERE { [] <http://purl.org/dj/Mult> [] } 
+CONSTRUCT { [] a :Preparation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/Mult> ?o . ?s a :Temporary .} 
+CONSTRUCT { [] a :Visualisation ; rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o } WHERE { ?s  ?s <http://purl.org/dj/distplot> ?o . } 
