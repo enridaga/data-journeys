@@ -351,7 +351,7 @@ def toRDF(name, digraph):
                 obj = URIRef(str(L) + str(zlib.adler32(str(ol).encode())))
             else:
                 obj = URIRef(str(Loc) + str(zlib.adler32(str(ol).encode())))
-        pred = URIRef(str(DJ) + pl)
+        pred = URIRef(str(DJ) + str(pl))
         rdfg.add((subj, RDFS.label, Literal(sl)))
         rdfg.add((obj, RDFS.label, Literal(ol)))
         rdfg.add((subj, pred, obj))
