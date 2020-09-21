@@ -2,6 +2,7 @@
 import ast
 #import showast
 import networkx
+import sys
 # 
 #
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
@@ -23,6 +24,8 @@ class FindDependencies(ast.NodeVisitor):
       bag.append(v.s)
     elif type(v) is ast.Name:
       bag.append(v.id)
+    elif type(v) is ast.Constant:
+      bag.append(str(v.value))
     elif type(v) is ast.List:
       bag.append(str(v.elts))
     elif type(v) is list:
@@ -35,7 +38,7 @@ class FindDependencies(ast.NodeVisitor):
           # print(l)
           bag = bag + self._collectLeaves(l[1])
       except:
-        print("Skipping " + str(v) + " type: " + str(type(v)))
+        sys.stderr.write("Skipping " + str(v) + " type: " + str(type(v)) + "\n")
     return bag
 
   def __variableAssign(self, symbol, scope):
@@ -236,13 +239,14 @@ class FindDependencies(ast.NodeVisitor):
       if type(v.func) is ast.Attribute:
         #print('attribute: ', v.func.value.id, v.func.attr)
         func = v.func.attr
-    #if type(v) is ast.List:
-    #  print("Example of list", v.elts)
+    # if type(v) is ast.List:
+    #  sys.stderr.write("Example of list", v.elts)
+    # sys.stderr.write(" --- ", v ,leaves, func , "---")
     t_found = []
     for l in leaves:
-      #print("leave ->", str(l))
+      # print("leave ->", str(l))
       s = self.__variable(str(l), scope)
-      #print("leave(s) ->", s)
+      # print("leave(s) ->", s)
       
       # Supporting Tuple as target. All tuple members have a dependency with the right-hand stuff
       targets = self._collectTargets(node.targets)
@@ -269,7 +273,7 @@ class FindDependencies(ast.NodeVisitor):
             self.__collect(o, func, t)
         else:
           t = self.__variable(str(t_id), scope)
-        #print("target(s) ->", t)
+        # sys.stderr.write("target(s) ->", t)
         self.__collect(s, func, t)
     self.generic_visit(node)
 
@@ -287,7 +291,7 @@ class FindDependencies(ast.NodeVisitor):
   def visit_While(self, node):
     scope = self.__scope(node)
     #self.__collect(str(node.iter),str(node.body)) 
-    # print(node)
+    # sys.stderr.write(node)
     #src = self._collectLeaves(node.iter)
     # tgt = self._collectLeaves(node.target)
     # for s in src:
