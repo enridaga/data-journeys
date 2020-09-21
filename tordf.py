@@ -28,6 +28,8 @@ f="practical-model-evaluation-day-1.py" # AttributeError: 'FindDependencies' obj
 f="how-to-attack-a-machine-learning-model.py" # AttributeError: 'Attribute' object has no attribute 'id'
 f="very-simple-pytorch-training-0-59.py" # CLASS support - still to finish
 f="0-cpe-getting-familier-with-problem-and-dataset.py"
+f="new-ucf-starter-kernel.py"
+f="a-quick-simple-eda.py"
 #f="keras-u-net-starter-lb-0-277.py" # TODO AttributeError: 'Call' object has no attribute 'id'
 # src = open(indir + f, "r").read()
 # # print(src)
