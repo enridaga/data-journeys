@@ -4,6 +4,7 @@ import ast
 import networkx
 import sys
 # 
+import zlib
 #
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
 from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
@@ -338,19 +339,19 @@ def toRDF(name, digraph):
         # If predicate Imports, use LIB namespace on Subject
         # If the name does not have a '(' and it is not the notebook, use the lib namespace
         if sl != n and not any(specialchar in sl for specialchar in "[()]"):
-            subj = URIRef(str(L) +str(hash(sl)))
+            subj = URIRef(str(L) + str(zlib.adler32(str(sl).encode())))
         else:
-            subj = URIRef(str(Loc) + str(hash(sl)))
+            subj = URIRef(str(Loc) + str(zlib.adler32(str(sl).encode())))
         # If object is notebook, use Notebook entity instead
         if ol == n:
             obj = notebook
         else:
             # If the name does not have a '(' and it is not the notebook, use the lib namespace
             if ol != n and not any(specialchar in ol for specialchar in "[()]"):
-                obj = URIRef(str(L) +str(hash(ol)))
+                obj = URIRef(str(L) + str(zlib.adler32(str(ol).encode())))
             else:
-                obj = URIRef(str(Loc) + str(hash(ol)))
-        pred = URIRef(str(DJ) + pl)
+                obj = URIRef(str(Loc) + str(zlib.adler32(str(ol).encode())))
+        pred = URIRef(str(DJ) + str(pl))
         rdfg.add((subj, RDFS.label, Literal(sl)))
         rdfg.add((obj, RDFS.label, Literal(ol)))
         rdfg.add((subj, pred, obj))
