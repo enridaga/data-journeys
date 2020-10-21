@@ -1,14 +1,14 @@
-digraph { 
-"pandas" -> "creating-your-own-notebooks.ipynb" [label = "importedBy"]
-"pd(0)" -> "creating-your-own-notebooks.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"pd(0)$0" -> "pd(0)" [label = "register_matplotlib_converters"]
-"matplotlib.pyplot" -> "creating-your-own-notebooks.ipynb" [label = "importedBy"]
-"plt(0)" -> "creating-your-own-notebooks.ipynb" [label = "appearsIn"]
-"plt(0)" -> "matplotlib.pyplot" [label = "assignedFrom"]
-"seaborn" -> "creating-your-own-notebooks.ipynb" [label = "importedBy"]
-"sns(0)" -> "creating-your-own-notebooks.ipynb" [label = "appearsIn"]
-"sns(0)" -> "seaborn" [label = "assignedFrom"]
-"Setup Complete(0)" -> "creating-your-own-notebooks.ipynb" [label = "appearsIn"]
-"print[0]" -> "Setup Complete(0)" [label = "print"]
+strict digraph "" {
+	pandas -> "creating-your-own-notebooks.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "creating-your-own-notebooks.ipynb"	[label=appearsIn];
+	"pd(0)$0" -> "pd(0)"	[label=register_matplotlib_converters];
+	"matplotlib.pyplot" -> "creating-your-own-notebooks.ipynb"	[label=importedBy];
+	"plt(0)" -> "creating-your-own-notebooks.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	seaborn -> "creating-your-own-notebooks.ipynb"	[label=importedBy];
+	"sns(0)" -> "creating-your-own-notebooks.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"Setup Complete(0)" -> "creating-your-own-notebooks.ipynb"	[label=appearsIn];
+	"print[0]" -> "Setup Complete(0)"	[label=print];
 }

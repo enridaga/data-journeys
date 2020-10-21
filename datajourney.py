@@ -2,6 +2,7 @@
 import ast
 #import showast
 import networkx
+import networkx.drawing, networkx.drawing.nx_agraph as ag
 import sys
 # 
 import zlib
@@ -13,8 +14,9 @@ from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OW
 
 class FindDependencies(ast.NodeVisitor):
 
-  def __init__(self, notebook):
+  def __init__(self, notebook, verbose=False):
     self._notebook = notebook
+    self._verbose = verbose
   
   def _collectLeaves(self, v):
     bag = []
@@ -39,7 +41,8 @@ class FindDependencies(ast.NodeVisitor):
           # print(l)
           bag = bag + self._collectLeaves(l[1])
       except:
-        sys.stderr.write("Skipping " + str(v) + " type: " + str(type(v)) + "\n")
+        if self._verbose:
+            sys.stderr.write("Skipping " + str(v) + " type: " + str(type(v)) + "\n")
     return bag
 
   def __variableAssign(self, symbol, scope):
@@ -305,13 +308,30 @@ class FindDependencies(ast.NodeVisitor):
     for t in self._bag:
       print(t[2] + " -> " + t[1] + " -> " + t[0])
 
-  def getStringCollected(self):
+  def getStringCollected_Old(self):
     tmp_str = "digraph { \n"
     for t in self._bag:
       tmp_str = tmp_str + "\"" + t[2] + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"" + t[1] + "\"]"  + "\n"
     tmp_str = tmp_str + "}"
     return tmp_str
-  
+
+  def _prepareDiGraphName(self, s):
+    return s.replace("%","\%")
+
+  def getDiGraph(self):
+    gd = networkx.DiGraph()
+    for t in self._bag:
+        gd.add_edge(self._prepareDiGraphName(t[2]),self._prepareDiGraphName(t[0]),label=self._prepareDiGraphName(t[1]))
+    return gd
+
+  def getStringCollected(self):
+    dg = self.getDiGraph()
+    tag = ag.to_agraph(dg)
+    return tag.string()
+    #     tag.layout(prog='dot')
+    #     stri = tag.draw(format='dot')
+    #     return stri.decode("utf-8") 
+
   def collect(self, source):
     tree = ast.parse(source)
     self.visit(tree)
@@ -357,7 +377,8 @@ def toRDF(name, digraph):
         rdfg.add((subj, pred, obj))
     return rdfg
 
-  # def getGraph(self):
+  
+   # def getGraph(self):
   #   tmp_str = "digraph { \n"
   #   for t in self._bag:
   #     tmp_str = tmp_str + "\"" + self._notebook + "\""+ " -> " + "\"" + t[0] + "\"" +  " [label = \"_includesNode\"]"  + "\n"

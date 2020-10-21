@@ -1,229 +1,201 @@
-digraph { 
-"numpy" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "importedBy"]
-"np(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"np(0)" -> "numpy" [label = "assignedFrom"]
-"pandas" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "importedBy"]
-"pd(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"IPython.core.display" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "importedBy"]
-"HTML" -> "IPython.core.display" [label = "importedBy"]
-"HTML(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"HTML(0)" -> "HTML" [label = "assignedFrom"]
-"warnings" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "importedBy"]
-"warnings(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"warnings(0)" -> "warnings" [label = "assignedFrom"]
-"warnings(0)$0" -> "warnings(0)" [label = "filterwarnings"]
-"ignore(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"warnings(0)$0" -> "ignore(0)" [label = "filterwarnings"]
-"../input/(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"data_path(0)$0" -> "../input/(0)" [label = "assignedFrom"]
-"competitions_df(0)$0" -> "pd(0)" [label = "read_csv"]
-"competitions_df(0)$0" -> "data_path(0)$0" [label = "read_csv"]
-"Competitions.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$0" -> "Competitions.csv(0)" [label = "read_csv"]
-"[<_ast.Constant object at 0x1050100a0>, <_ast.Constant object at 0x105010220>, <_ast.Constant object at 0x1050105b0>](0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"comps_to_use(0)$0" -> "[<_ast.Constant object at 0x1050100a0>, <_ast.Constant object at 0x105010220>, <_ast.Constant object at 0x1050105b0>](0)" [label = "assignedFrom"]
-"competitions_df(0)$1" -> "competitions_df(0)$0" [label = "assignedFrom"]
-"competitions_df(0)$1" -> "competitions_df(0)$1" [label = "assignedFrom"]
-"HostSegmentTitle(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$1" -> "HostSegmentTitle(0)" [label = "assignedFrom"]
-"competitions_df(0)$1" -> "comps_to_use(0)$0" [label = "assignedFrom"]
-"competitions_df(0)$2" -> "competitions_df(0)$1" [label = "to_datetime"]
-"competitions_df(0)$2" -> "pd(0)" [label = "to_datetime"]
-"competitions_df(0)$2" -> "competitions_df(0)$2" [label = "to_datetime"]
-"EnabledDate(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$2" -> "EnabledDate(0)" [label = "to_datetime"]
-"%m/%d/%Y %H:%M:%S(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$2" -> "%m/%d/%Y %H:%M:%S(0)" [label = "to_datetime"]
-"competitions_df(0)$3" -> "competitions_df(0)$2" [label = "reset_index"]
-"competitions_df(0)$3" -> "EnabledDate(0)" [label = "reset_index"]
-"False(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$3" -> "False(0)" [label = "reset_index"]
-"True(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"competitions_df(0)$3" -> "True(0)" [label = "reset_index"]
-"competitions_df(0)$4" -> "competitions_df(0)$3" [label = "head"]
-"forum_topics_df(0)$0" -> "pd(0)" [label = "read_csv"]
-"forum_topics_df(0)$0" -> "data_path(0)$0" [label = "read_csv"]
-"ForumTopics.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"forum_topics_df(0)$0" -> "ForumTopics.csv(0)" [label = "read_csv"]
-"comp_tags_df(0)$0" -> "pd(0)" [label = "read_csv"]
-"comp_tags_df(0)$0" -> "data_path(0)$0" [label = "read_csv"]
-"CompetitionTags.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"comp_tags_df(0)$0" -> "CompetitionTags.csv(0)" [label = "read_csv"]
-"tags_df(0)$0" -> "pd(0)" [label = "read_csv"]
-"tags_df(0)$0" -> "data_path(0)$0" [label = "read_csv"]
-"Tags.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"tags_df(0)$0" -> "Tags.csv(0)" [label = "read_csv"]
-"[<_ast.Constant object at 0x1050826d0>, <_ast.Constant object at 0x105082a90>](0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"tags_df(0)$0" -> "[<_ast.Constant object at 0x1050826d0>, <_ast.Constant object at 0x105082a90>](0)" [label = "read_csv"]
-"comp_id(1)" -> "get_comp_tags[0]" [label = "_argToVar"]
-"temp_df(1)$0" -> "comp_tags_df(1)" [label = "assignedFrom"]
-"temp_df(1)$0" -> "comp_tags_df(1)" [label = "assignedFrom"]
-"temp_df(1)$0" -> "CompetitionId(1)" [label = "assignedFrom"]
-"temp_df(1)$0" -> "comp_id(1)" [label = "assignedFrom"]
-"temp_df(1)$1" -> "pd(1)" [label = "merge"]
-"temp_df(1)$1" -> "temp_df(1)$1" [label = "merge"]
-"temp_df(1)$1" -> "tags_df(1)" [label = "merge"]
-"temp_df(1)$1" -> "TagId(1)" [label = "merge"]
-"temp_df(1)$1" -> "Id(1)" [label = "merge"]
-"tags_str(1)$0" -> "Tags : (1)" [label = "assignedFrom"]
-"ind(1)" -> "temp_df(1)$1" [label = "iteratorOf"]
-"row(1)" -> "temp_df(1)$1" [label = "iteratorOf"]
-"tags_str(1)$1" -> "row(1)" [label = "Add"]
-"tags_str(1)$1" -> "tags_str(1)$0" [label = "Add"]
-"tags_str(1)$1" -> "Name(1)" [label = "Add"]
-"tags_str(1)$1" -> "tags_str(1)$0" [label = "Add"]
-"tags_str(1)$1" -> ", (1)" [label = "Add"]
-"tags_str(1)$1" -> "tags_str(1)$0" [label = "Add"]
-"topic(2)" -> "check_solution[0]" [label = "_argToVar"]
-"is_solution(2)$0" -> "False(2)" [label = "assignedFrom"]
-"to_exclude(2)$0" -> "[<_ast.Constant object at 0x105002400>, <_ast.Constant object at 0x1050023d0>, <_ast.Constant object at 0x1050022b0>, <_ast.Constant object at 0x105002310>, <_ast.Constant object at 0x105002370>, <_ast.Constant object at 0x105002340>](2)" [label = "assignedFrom"]
-"is_solution(2)$1" -> "True(2)" [label = "assignedFrom"]
-"exc(2)" -> "to_exclude(2)$0" [label = "iteratorOf"]
-"is_solution(2)$2" -> "False(2)" [label = "assignedFrom"]
-"to_include(2)$0" -> "[<_ast.Constant object at 0x105002490>, <_ast.Constant object at 0x1050025b0>](2)" [label = "assignedFrom"]
-"inc(2)" -> "to_include(2)$0" [label = "iteratorOf"]
-"is_solution(2)$3" -> "True(2)" [label = "assignedFrom"]
-"forum_id(3)" -> "get_discussion_results[0]" [label = "_argToVar"]
-"n(3)" -> "get_discussion_results[1]" [label = "_argToVar"]
-"results_df(3)$0" -> "forum_topics_df(3)" [label = "assignedFrom"]
-"results_df(3)$0" -> "forum_topics_df(3)" [label = "assignedFrom"]
-"results_df(3)$0" -> "ForumId(3)" [label = "assignedFrom"]
-"results_df(3)$0" -> "forum_id(3)" [label = "assignedFrom"]
-"results_df(3)$1" -> "results_df(3)$0" [label = "apply"]
-"results_df(3)$1" -> "results_df(3)$0" [label = "apply"]
-"results_df(3)$1" -> "Title(3)" [label = "apply"]
-"results_df(3)$1" -> "check_solution(3)" [label = "apply"]
-"results_df(3)$1" -> "str(3)" [label = "apply"]
-"results_df(3)$1" -> "x(3)" [label = "apply"]
-"results_df(3)$2" -> "results_df(3)$1" [label = "assignedFrom"]
-"results_df(3)$2" -> "results_df(3)$2" [label = "assignedFrom"]
-"results_df(3)$2" -> "is_solution(3)" [label = "assignedFrom"]
-"results_df(3)$2" -> "1(3)" [label = "assignedFrom"]
-"results_df(3)$3" -> "results_df(3)$2" [label = "reset_index"]
-"results_df(3)$3" -> "[<_ast.Constant object at 0x104fd10a0>, <_ast.Constant object at 0x104fd12b0>](3)" [label = "reset_index"]
-"results_df(3)$3" -> "False(3)" [label = "reset_index"]
-"results_df(3)$3" -> "n(3)" [label = "reset_index"]
-"results_df(3)$3" -> "True(3)" [label = "reset_index"]
-"forum_id(4)" -> "render_html_for_comp[0]" [label = "_argToVar"]
-"comp_id(4)" -> "render_html_for_comp[1]" [label = "_argToVar"]
-"comp_name(4)" -> "render_html_for_comp[2]" [label = "_argToVar"]
-"comp_slug(4)" -> "render_html_for_comp[3]" [label = "_argToVar"]
-"comp_subtitle(4)" -> "render_html_for_comp[4]" [label = "_argToVar"]
-"n(4)" -> "render_html_for_comp[5]" [label = "_argToVar"]
-"results_df(4)$0" -> "forum_id(4)" [label = "get_discussion_results"]
-"results_df(4)$0" -> "n(4)" [label = "get_discussion_results"]
-"comp_tags(4)$0" -> "comp_id(4)" [label = "get_comp_tags"]
-"comp_url(4)$0" -> "https://www.kaggle.com/c/(4)" [label = "Add"]
-"comp_url(4)$0" -> "str(4)" [label = "Add"]
-"comp_url(4)$0" -> "comp_slug(4)" [label = "Add"]
-"hs(4)$0" -> "<style>
+digraph "" {
+	numpy -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	pandas -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=importedBy];
+	"pd(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"IPython.core.display" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=importedBy];
+	HTML -> "IPython.core.display"	[label=importedBy];
+	"HTML(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"HTML(0)" -> HTML	[label=assignedFrom];
+	warnings -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=importedBy];
+	"warnings(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"warnings(0)" -> warnings	[label=assignedFrom];
+	"warnings(0)$0" -> "warnings(0)"	[label=filterwarnings];
+	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
+	"ignore(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"../input/(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"data_path(0)$0" -> "../input/(0)"	[label=assignedFrom];
+	"competitions_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"competitions_df(0)$0" -> "data_path(0)$0"	[label=read_csv];
+	"competitions_df(0)$0" -> "Competitions.csv(0)"	[label=read_csv];
+	"Competitions.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f9898e0>, <_ast.Constant object at 0x12f989eb0>](0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comps_to_use(0)$0" -> "[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f9898e0>, <_ast.Constant object at 0x12f989eb0>](0)"	[label=assignedFrom];
+	"competitions_df(0)$1" -> "competitions_df(0)$0"	[label=assignedFrom];
+	"competitions_df(0)$1" -> "comps_to_use(0)$0"	[label=assignedFrom];
+	"competitions_df(0)$1" -> "competitions_df(0)$1"	[label=assignedFrom];
+	"competitions_df(0)$1" -> "HostSegmentTitle(0)"	[label=assignedFrom];
+	"HostSegmentTitle(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"competitions_df(0)$2" -> "pd(0)"	[label=to_datetime];
+	"competitions_df(0)$2" -> "competitions_df(0)$1"	[label=to_datetime];
+	"competitions_df(0)$2" -> "competitions_df(0)$2"	[label=to_datetime];
+	"competitions_df(0)$2" -> "EnabledDate(0)"	[label=to_datetime];
+	"competitions_df(0)$2" -> "\%m/\%d/\%Y \%H:\%M:\%S(0)"	[label=to_datetime];
+	"EnabledDate(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"\%m/\%d/\%Y \%H:\%M:\%S(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"competitions_df(0)$3" -> "competitions_df(0)$2"	[label=reset_index];
+	"competitions_df(0)$3" -> "EnabledDate(0)"	[label=reset_index];
+	"competitions_df(0)$3" -> "False(0)"	[label=reset_index];
+	"competitions_df(0)$3" -> "True(0)"	[label=reset_index];
+	"False(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"True(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"competitions_df(0)$4" -> "competitions_df(0)$3"	[label=head];
+	"forum_topics_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"forum_topics_df(0)$0" -> "data_path(0)$0"	[label=read_csv];
+	"forum_topics_df(0)$0" -> "ForumTopics.csv(0)"	[label=read_csv];
+	"ForumTopics.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comp_tags_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"comp_tags_df(0)$0" -> "data_path(0)$0"	[label=read_csv];
+	"comp_tags_df(0)$0" -> "CompetitionTags.csv(0)"	[label=read_csv];
+	"CompetitionTags.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"tags_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"tags_df(0)$0" -> "data_path(0)$0"	[label=read_csv];
+	"tags_df(0)$0" -> "Tags.csv(0)"	[label=read_csv];
+	"tags_df(0)$0" -> "[<_ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f951970>](0)"	[label=read_csv];
+	"Tags.csv(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f951970>](0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comp_id(1)" -> "get_comp_tags[0]"	[label=_argToVar];
+	"temp_df(1)$0" -> "comp_id(1)"	[label=assignedFrom];
+	"temp_df(1)$0" -> "comp_tags_df(1)"	[label=assignedFrom];
+	"temp_df(1)$0" -> "CompetitionId(1)"	[label=assignedFrom];
+	"temp_df(1)$1" -> "temp_df(1)$1"	[label=merge];
+	"temp_df(1)$1" -> "pd(1)"	[label=merge];
+	"temp_df(1)$1" -> "tags_df(1)"	[label=merge];
+	"temp_df(1)$1" -> "TagId(1)"	[label=merge];
+	"temp_df(1)$1" -> "Id(1)"	[label=merge];
+	"tags_str(1)$0" -> "Tags : (1)"	[label=assignedFrom];
+	"ind(1)" -> "temp_df(1)$1"	[label=iteratorOf];
+	"row(1)" -> "temp_df(1)$1"	[label=iteratorOf];
+	"tags_str(1)$1" -> "tags_str(1)$0"	[label=Add];
+	"tags_str(1)$1" -> "row(1)"	[label=Add];
+	"tags_str(1)$1" -> "Name(1)"	[label=Add];
+	"tags_str(1)$1" -> ", (1)"	[label=Add];
+	"topic(2)" -> "check_solution[0]"	[label=_argToVar];
+	"is_solution(2)$0" -> "False(2)"	[label=assignedFrom];
+	"to_exclude(2)$0" -> "[<_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f9576a0>, <_ast.Constant object at 0x12f9572e0>, <_ast.Constant \
+object at 0x12f957b50>, <_ast.Constant object at 0x12f9575b0>, <_ast.Constant object at 0x12f957160>](2)"	[label=assignedFrom];
+	"is_solution(2)$1" -> "True(2)"	[label=assignedFrom];
+	"exc(2)" -> "to_exclude(2)$0"	[label=iteratorOf];
+	"is_solution(2)$2" -> "False(2)"	[label=assignedFrom];
+	"to_include(2)$0" -> "[<_ast.Constant object at 0x12f957610>, <_ast.Constant object at 0x12f9579d0>](2)"	[label=assignedFrom];
+	"inc(2)" -> "to_include(2)$0"	[label=iteratorOf];
+	"is_solution(2)$3" -> "True(2)"	[label=assignedFrom];
+	"forum_id(3)" -> "get_discussion_results[0]"	[label=_argToVar];
+	"n(3)" -> "get_discussion_results[1]"	[label=_argToVar];
+	"results_df(3)$0" -> "forum_id(3)"	[label=assignedFrom];
+	"results_df(3)$0" -> "forum_topics_df(3)"	[label=assignedFrom];
+	"results_df(3)$0" -> "ForumId(3)"	[label=assignedFrom];
+	"results_df(3)$1" -> "results_df(3)$0"	[label=apply];
+	"results_df(3)$1" -> "Title(3)"	[label=apply];
+	"results_df(3)$1" -> "check_solution(3)"	[label=apply];
+	"results_df(3)$1" -> "str(3)"	[label=apply];
+	"results_df(3)$1" -> "x(3)"	[label=apply];
+	"results_df(3)$2" -> "results_df(3)$1"	[label=assignedFrom];
+	"results_df(3)$2" -> "results_df(3)$2"	[label=assignedFrom];
+	"results_df(3)$2" -> "is_solution(3)"	[label=assignedFrom];
+	"results_df(3)$2" -> "1(3)"	[label=assignedFrom];
+	"results_df(3)$3" -> "n(3)"	[label=reset_index];
+	"results_df(3)$3" -> "results_df(3)$2"	[label=reset_index];
+	"results_df(3)$3" -> "[<_ast.Constant object at 0x12f8850a0>, <_ast.Constant object at 0x12f885070>](3)"	[label=reset_index];
+	"results_df(3)$3" -> "False(3)"	[label=reset_index];
+	"results_df(3)$3" -> "True(3)"	[label=reset_index];
+	"forum_id(4)" -> "render_html_for_comp[0]"	[label=_argToVar];
+	"render_html_for_comp[0]" -> "comp_row(0)"	[label=render_html_for_comp];
+	"comp_row(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comp_row(0)" -> "competitions_df(0)$4"	[label=iteratorOf];
+	"comp_id(4)" -> "render_html_for_comp[1]"	[label=_argToVar];
+	"render_html_for_comp[1]" -> "ForumId(0)"	[label=render_html_for_comp];
+	"ForumId(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comp_name(4)" -> "render_html_for_comp[2]"	[label=_argToVar];
+	"render_html_for_comp[2]" -> "comp_row(0)"	[label=render_html_for_comp];
+	"comp_slug(4)" -> "render_html_for_comp[3]"	[label=_argToVar];
+	"render_html_for_comp[3]" -> "Id(0)"	[label=render_html_for_comp];
+	"Id(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"comp_subtitle(4)" -> "render_html_for_comp[4]"	[label=_argToVar];
+	"render_html_for_comp[4]" -> "comp_row(0)"	[label=render_html_for_comp];
+	"n(4)" -> "render_html_for_comp[5]"	[label=_argToVar];
+	"render_html_for_comp[5]" -> "Title(0)"	[label=render_html_for_comp];
+	"Title(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"results_df(4)$0" -> "forum_id(4)"	[label=get_discussion_results];
+	"results_df(4)$0" -> "n(4)"	[label=get_discussion_results];
+	"comp_tags(4)$0" -> "comp_id(4)"	[label=get_comp_tags];
+	"comp_url(4)$0" -> "comp_slug(4)"	[label=Add];
+	"comp_url(4)$0" -> "https://www.kaggle.com/c/(4)"	[label=Add];
+	"comp_url(4)$0" -> "str(4)"	[label=Add];
+	"hs(4)$0" -> "comp_name(4)"	[label=Add];
+	"hs(4)$0" -> "comp_subtitle(4)"	[label=Add];
+	"hs(4)$0" -> "comp_url(4)$0"	[label=Add];
+	"hs(4)$0" -> "<style>
                 .rendered_html tr {font-size: 12px; text-align: left;}
                 th {
-                text-align: left;
+                text-align: \
+left;
                 }
             </style>
-            <h3><font color="#1768ea"><a href=(4)" [label = "Add"]
-"hs(4)$0" -> "comp_url(4)$0" [label = "Add"]
-"hs(4)$0" -> ">(4)" [label = "Add"]
-"hs(4)$0" -> "comp_name(4)" [label = "Add"]
-"hs(4)$0" -> "</font></h3>
-            <p>(4)" [label = "Add"]
-"hs(4)$0" -> "comp_subtitle(4)" [label = "Add"]
-"hs(4)$0" -> "</p>
-            (4)" [label = "Add"]
-"hs(4)$1" -> "
-            <p>(4)" [label = "Add"]
-"hs(4)$1" -> "hs(4)$0" [label = "Add"]
-"hs(4)$1" -> "comp_tags(4)$0" [label = "Add"]
-"hs(4)$1" -> "hs(4)$0" [label = "Add"]
-"hs(4)$1" -> "</p>
-            (4)" [label = "Add"]
-"hs(4)$1" -> "hs(4)$0" [label = "Add"]
-"hs(4)$2" -> "
+            <h3><font color=\"#1768ea\"><a href=(4)"	[label=Add];
+	"hs(4)$0" -> ">(4)"	[label=Add];
+	"hs(4)$0" -> "</font></h3>
+            <p>(4)"	[label=Add];
+	"hs(4)$0" -> "</p>
+            (4)"	[label=Add];
+	"hs(4)$1" -> "comp_tags(4)$0"	[label=Add];
+	"hs(4)$1" -> "hs(4)$0"	[label=Add];
+	"hs(4)$1" -> "</p>
+            (4)"	[label=Add];
+	"hs(4)$1" -> "
+            <p>(4)"	[label=Add];
+	"hs(4)$2" -> "hs(4)$1"	[label=Add];
+	"hs(4)$2" -> "
             <table>
             <tr>
                 <th><b>S.No</b></th>
                 <th><b>Discussion Title</b></th>
-                <th><b>Number of upvotes</b></th>
+                <\
+th><b>Number of upvotes</b></th>
                 <th><b>Total Replies</b></th>
-            </tr>(4)" [label = "Add"]
-"hs(4)$2" -> "hs(4)$1" [label = "Add"]
-"i(4)" -> "results_df(4)$0" [label = "iteratorOf"]
-"row(4)" -> "results_df(4)$0" [label = "iteratorOf"]
-"url(4)$0" -> "https://www.kaggle.com/c/(4)" [label = "Add"]
-"url(4)$0" -> "str(4)" [label = "Add"]
-"url(4)$0" -> "comp_slug(4)" [label = "Add"]
-"url(4)$0" -> "/discussion/(4)" [label = "Add"]
-"url(4)$0" -> "str(4)" [label = "Add"]
-"url(4)$0" -> "row(4)" [label = "Add"]
-"url(4)$0" -> "Id(4)" [label = "Add"]
-"hs(4)$3" -> "<tr>
-                    <td>(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "str(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "i(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "1(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "</td>
-                    <td><a href=(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "url(4)$0" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> " target="_blank"><b>(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "str(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "row(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "Title(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "</b></a></td>
-                    <td>(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "str(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "row(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "Score(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "</td>
-                    <td>(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "str(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "row(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "TotalReplies(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$3" -> "</td>
-                    </tr>(4)" [label = "Add"]
-"hs(4)$3" -> "hs(4)$2" [label = "Add"]
-"hs(4)$4" -> "</table>(4)" [label = "Add"]
-"hs(4)$4" -> "hs(4)$3" [label = "Add"]
-"display[0]" -> "HTML(4)" [label = "display"]
-"display[1]" -> "hs(4)$4" [label = "display"]
-"ind(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"ind(0)" -> "competitions_df(0)$4" [label = "iteratorOf"]
-"comp_row(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"comp_row(0)" -> "competitions_df(0)$4" [label = "iteratorOf"]
-"render_html_for_comp[0]" -> "comp_row(0)" [label = "render_html_for_comp"]
-"ForumId(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[1]" -> "ForumId(0)" [label = "render_html_for_comp"]
-"render_html_for_comp[2]" -> "comp_row(0)" [label = "render_html_for_comp"]
-"Id(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[3]" -> "Id(0)" [label = "render_html_for_comp"]
-"render_html_for_comp[4]" -> "comp_row(0)" [label = "render_html_for_comp"]
-"Title(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[5]" -> "Title(0)" [label = "render_html_for_comp"]
-"render_html_for_comp[6]" -> "comp_row(0)" [label = "render_html_for_comp"]
-"Slug(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[7]" -> "Slug(0)" [label = "render_html_for_comp"]
-"render_html_for_comp[8]" -> "comp_row(0)" [label = "render_html_for_comp"]
-"Subtitle(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[9]" -> "Subtitle(0)" [label = "render_html_for_comp"]
-"12(0)" -> "winning-solutions-of-kaggle-competitions.ipynb" [label = "appearsIn"]
-"render_html_for_comp[10]" -> "12(0)" [label = "render_html_for_comp"]
+            </tr>(4)"	[label=Add];
+	"i(4)" -> "results_df(4)$0"	[label=iteratorOf];
+	"row(4)" -> "results_df(4)$0"	[label=iteratorOf];
+	"url(4)$0" -> "comp_slug(4)"	[label=Add];
+	"url(4)$0" -> "https://www.kaggle.com/c/(4)"	[label=Add];
+	"url(4)$0" -> "str(4)"	[label=Add];
+	"url(4)$0" -> "row(4)"	[label=Add];
+	"url(4)$0" -> "/discussion/(4)"	[label=Add];
+	"url(4)$0" -> "Id(4)"	[label=Add];
+	"hs(4)$3" -> "str(4)"	[label=Add];
+	"hs(4)$3" -> "hs(4)$2"	[label=Add];
+	"hs(4)$3" -> "i(4)"	[label=Add];
+	"hs(4)$3" -> "row(4)"	[label=Add];
+	"hs(4)$3" -> "url(4)$0"	[label=Add];
+	"hs(4)$3" -> "<tr>
+                    <td>(4)"	[label=Add];
+	"hs(4)$3" -> "1(4)"	[label=Add];
+	"hs(4)$3" -> "</td>
+                    <td><a href=(4)"	[label=Add];
+	"hs(4)$3" -> " target=\"_blank\"><b>(4)"	[label=Add];
+	"hs(4)$3" -> "Title(4)"	[label=Add];
+	"hs(4)$3" -> "</b></a></td>
+                    <td>(4)"	[label=Add];
+	"hs(4)$3" -> "Score(4)"	[label=Add];
+	"hs(4)$3" -> "</td>
+                    <td>(4)"	[label=Add];
+	"hs(4)$3" -> "TotalReplies(4)"	[label=Add];
+	"hs(4)$3" -> "</td>
+                    </tr>(4)"	[label=Add];
+	"hs(4)$4" -> "hs(4)$3"	[label=Add];
+	"hs(4)$4" -> "</table>(4)"	[label=Add];
+	"display[0]" -> "HTML(4)"	[label=display];
+	"display[1]" -> "hs(4)$4"	[label=display];
+	"ind(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"ind(0)" -> "competitions_df(0)$4"	[label=iteratorOf];
+	"render_html_for_comp[6]" -> "comp_row(0)"	[label=render_html_for_comp];
+	"Slug(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"render_html_for_comp[7]" -> "Slug(0)"	[label=render_html_for_comp];
+	"render_html_for_comp[8]" -> "comp_row(0)"	[label=render_html_for_comp];
+	"Subtitle(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"render_html_for_comp[9]" -> "Subtitle(0)"	[label=render_html_for_comp];
+	"12(0)" -> "winning-solutions-of-kaggle-competitions.ipynb"	[label=appearsIn];
+	"render_html_for_comp[10]" -> "12(0)"	[label=render_html_for_comp];
 }

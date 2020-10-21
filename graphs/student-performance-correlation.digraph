@@ -1,24 +1,24 @@
-digraph { 
-"pandas" -> "student-performance-correlation.ipynb" [label = "importedBy"]
-"pd(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"numpy" -> "student-performance-correlation.ipynb" [label = "importedBy"]
-"np(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"np(0)" -> "numpy" [label = "assignedFrom"]
-"matplotlib.pyplot" -> "student-performance-correlation.ipynb" [label = "importedBy"]
-"plt(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"plt(0)" -> "matplotlib.pyplot" [label = "assignedFrom"]
-"seaborn" -> "student-performance-correlation.ipynb" [label = "importedBy"]
-"sns(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"sns(0)" -> "seaborn" [label = "assignedFrom"]
-"df(0)$0" -> "pd(0)" [label = "read_csv"]
-"../input/students-performance-in-exams/StudentsPerformance.csv(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"df(0)$0" -> "../input/students-performance-in-exams/StudentsPerformance.csv(0)" [label = "read_csv"]
-"df(0)$1" -> "df(0)$0" [label = "head"]
-"plt(0)$0" -> "plt(0)" [label = "figure"]
-"plt(0)$1" -> "plt(0)$0" [label = "title"]
-"Correlation Heatmap for Student Performance(0)" -> "student-performance-correlation.ipynb" [label = "appearsIn"]
-"plt(0)$1" -> "Correlation Heatmap for Student Performance(0)" [label = "title"]
-"sns(0)$0" -> "sns(0)" [label = "heatmap"]
-"sns(0)$0" -> "df(0)$1" [label = "heatmap"]
+strict digraph "" {
+	pandas -> "student-performance-correlation.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	numpy -> "student-performance-correlation.ipynb"	[label=importedBy];
+	"np(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"matplotlib.pyplot" -> "student-performance-correlation.ipynb"	[label=importedBy];
+	"plt(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	seaborn -> "student-performance-correlation.ipynb"	[label=importedBy];
+	"sns(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"df(0)$0" -> "pd(0)"	[label=read_csv];
+	"df(0)$0" -> "../input/students-performance-in-exams/StudentsPerformance.csv(0)"	[label=read_csv];
+	"../input/students-performance-in-exams/StudentsPerformance.csv(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	"df(0)$1" -> "df(0)$0"	[label=head];
+	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"plt(0)$1" -> "plt(0)$0"	[label=title];
+	"plt(0)$1" -> "Correlation Heatmap for Student Performance(0)"	[label=title];
+	"Correlation Heatmap for Student Performance(0)" -> "student-performance-correlation.ipynb"	[label=appearsIn];
+	"sns(0)$0" -> "sns(0)"	[label=heatmap];
+	"sns(0)$0" -> "df(0)$1"	[label=heatmap];
 }

@@ -4,817 +4,1018 @@
 
 k:how-to-preprocessing-for-glove-part1-eda a k:Notebook .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1187236231763984707> rdfs:label "sorted_x(13)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-137504734932624266>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#696811149846717069>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7172415406492312416> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1002505674> rdfs:label "isolate_dict(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#124453319>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1905264753>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#25493666>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1028326905> rdfs:label "fastprogress(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165478946>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#831063461> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117178757> rdfs:label "x(15)$1" ;
+    dj:translate <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117113220>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#907478444> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1177880187> rdfs:label "unknown_words(6)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1177814650>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#179896900> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1344996930> rdfs:label "DENSE_HIDDEN_UNITS(0)$0" ;
+    dj:Mult <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30736566>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#605225992> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#137363895> rdfs:label "np(3)$0" ;
+    dj:seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#82968931> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#139002299> rdfs:label "os(3)$0" ;
+    dj:str <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#84083047> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1516242800> rdfs:label "embedding_matrix(6)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1363085042>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1516177263>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#179896900> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1571489465> rdfs:label "CRAWL_EMBEDDING_PATH(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3135314206> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#164758044> rdfs:label "data(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/67109275> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#172753460> rdfs:label "path(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1145046778> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#179634754> rdfs:label "word(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#523043992> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#179962439> rdfs:label "text(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/73859526> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#197657130> rdfs:label "oov(0)$0" ;
+    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320013025> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#197722667> rdfs:label "oov(0)$1" ;
+    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320078562> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#197788204> rdfs:label "oov(0)$2" ;
+    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320144099> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#197853741> rdfs:label "oov(0)$3" ;
+    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320209636> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1987905797> rdfs:label "TreebankWordTokenizer(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1542457476> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#221053555> rdfs:label "word(14)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#509608972> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2215315858> rdfs:label "force_console_behavior(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1742145809> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#233636514> rdfs:label "torch(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/109642273> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249561878> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1737297617>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#331350795>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#817958302> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249692951> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#110690678>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#121635265>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#155255285> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249824024> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#106037611>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#110690678>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249955097> rdfs:label "print[3]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109773172>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1259013787>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#155255285> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1743738559850585113> rdfs:label "print[3]" ;
-    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4812469546454983908>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#250086170> rdfs:label "print[4]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#173998641>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#250217243> rdfs:label "print[5]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#190054934> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#250348316> rdfs:label "print[6]" ;
+    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#47251701> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3057760343992334374> rdfs:label "random(3)$0" ;
-    dj:seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7947481992476568340> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#258605708> rdfs:label "tqdm(0)$0" ;
+    dj:pandas <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176292408> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3060802103484572573> rdfs:label "sequence(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/3632848428666550565> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#262144665> rdfs:label "test(0)$3" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#262079128>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#529269846>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#28115116> rdfs:label "*(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2818091> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#289276578> rdfs:label "data(11)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165413389>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1832323175>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#204079694>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#388694834>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#68878636> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3623774962640971090> rdfs:label "data(11)$0" ;
-    dj:apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4475577960325751434>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6764474775631423736>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3790923673338908063>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8672520616341945095>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#951744858314370087> .
-
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-387449165935914912> rdfs:label "force_console_behavior(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-580089941456032809> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#290259715> rdfs:label "random(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/147194498> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4759570963300759981> rdfs:label "i(6)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3295909430884712057> .
-
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4903680488927825528> rdfs:label "x(17)$1" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3180921219095627197> .
-
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4910767918985996348> rdfs:label "enable_checkpoint_ensemble(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4320362725444295809> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#302252831> rdfs:label "pprint(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/153682590> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5041787437527600366> rdfs:label "F(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-543004541706245040> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3122924363> rdfs:label "enable_checkpoint_ensemble(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724436349> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5061562613846732235> rdfs:label "word(14)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8454214791934744525> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#313197262> rdfs:label "text(12)$0" ;
+    dj:replace <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#222233210>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40173781>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#66388261> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5386387589295850077> rdfs:label "x(16)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2080376456043977238> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#330760955> rdfs:label "torch(3)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165872165>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#330695418> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5487953781587503698> rdfs:label "test_preds(10)$3" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6198408149904717497> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#336266059> rdfs:label "Learner(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/179045066> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#35455176> rdfs:label "F(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/390136884> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#365691642> rdfs:label "MAX_LEN(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#65863958> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#374145815> rdfs:label "vocab(14)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#374080278>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#46006504> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5598078109626731292> rdfs:label "torch(3)$1" ;
-    dj:manual_seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4558167090388464927>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#393872206> rdfs:label "fastai(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#286130938>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#608896162>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#828376459> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5638449745090922652> rdfs:label "x(16)$1" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6199456327901300486> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#399967066> rdfs:label "random(3)$0" ;
+    dj:seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#290652934> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5955035242883313330> rdfs:label "TreebankWordTokenizer(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-6904147573933658349> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#443155419> rdfs:label "sequence(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/257622874> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6070447980840956908> rdfs:label "text(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/4630515469502395124> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#446694382> rdfs:label "operator(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/257426285> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6319554824657017213> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45416689> rdfs:label "i(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#620299451> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6670731006191456315> rdfs:label "x(15)$1" ;
-    dj:translate <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-887224052226453187>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2304929283253763185> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#465503212> rdfs:label "DataBunch(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/276628331> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6946211270774655008> rdfs:label "os(3)$0" ;
-    dj:str <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8073044271616792836> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#469959603> rdfs:label "emb_arr(5)$0" ;
+    dj:load <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#288555775>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#44499181> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7243640412350789151> rdfs:label "emb_arr(5)$0" ;
-    dj:load <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3809528739897406834>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7463825333643597973> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#49479937> rdfs:label "x(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#376505301> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7416278929988302607> rdfs:label "random(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/6140086610842459051> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#588645353> rdfs:label "NUM_MODELS(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30212276> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7451331496133639325> rdfs:label "gc(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-697925615955475139> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#665388146> rdfs:label "sorted_x(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#239469150>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#356451143>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45875431>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#516817954> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7980921239357555055> rdfs:label "isolate_dict(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6083437723468518796>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8653647279463178914> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#668992746> rdfs:label "DatasetType(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/430179433> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7984572607599630749> rdfs:label "fastprogress(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-7757280558654699538> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#69534001> rdfs:label "x(16)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1730480331> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8289997323682692971> rdfs:label "x(9)$4" ;
-    dj:squeeze <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7522429421959111250> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#69665074> rdfs:label "x(17)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#542704829> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8807122790361605066> rdfs:label "print[2]" ;
-    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4242786901487499099>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-806404610062185811>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2549261734421425462> .
-
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8862678899395375469> rdfs:label "print[0]" ;
-    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4179331940517340246>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-735625473129129134>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2549261734421425462> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#76874060> rdfs:label "gc(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/20119755> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9128399659779115832> rdfs:label "remove_dict(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6688807095993013299>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8653647279463178914> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#82051422> rdfs:label "nn(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/21758173> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1332654251584745490> rdfs:label "np(3)$0" ;
-    dj:seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5504177594903260104> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#82248033> rdfs:label "it(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#139657782> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1458247792878384662> rdfs:label "torch(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/6271272503754370965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#82575712> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2097200830987714153> rdfs:label "x(9)$1" ;
-    dj:permute <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-252241049201271549> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#83689828> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2130709879549939015> rdfs:label "*(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/9038907434087725530> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881657158> rdfs:label "test_preds(10)$2" ;
+    dj:average <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109445521>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1376716509>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1999308937>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45154531> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2232002181967709686> rdfs:label "nn(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/4675526104902965112> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881722695> rdfs:label "test_preds(10)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1376716509>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45482212> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2770246783628366597> rdfs:label "DatasetType(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-4812336786909989605> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#888997223> rdfs:label "remove_dict(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#124453319>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1729103859>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3111165326638162996> rdfs:label "DENSE_HIDDEN_UNITS(0)$0" ;
-    dj:Mult <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#440235238641489230> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91619672> rdfs:label "x(9)$1" ;
+    dj:permute <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30867643>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31129788>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31391933>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31654078>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91554135> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3285678274342672685> rdfs:label "path(5)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6752501806087327210> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91816283> rdfs:label "x(9)$4" ;
+    dj:squeeze <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31391933>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91750746> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3597021977556128813> rdfs:label "x(7)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2436199496899499850> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1008207430> rdfs:label "SpatialDropout(9)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3750645061130841827> rdfs:label "it(2)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#666679405127993392> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1010566896> rdfs:label "\"\"“”’(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3793800744204863799> rdfs:label "oov(0)$1" ;
-    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4281861417581025102>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#101122399> rdfs:label "X(10)$0" ;
+    dj:cuda <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#413467532>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45154531> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#411209651325969484> rdfs:label "test_preds(10)$2" ;
-    dj:average <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6198408149904717497>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8616201460956783325>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2046583010049549815> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1024067218> rdfs:label "check_coverage[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4330171520466490720> rdfs:label "Learner(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-2447601669157513874> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1024198291> rdfs:label "check_coverage[1]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#457384780182802055> rdfs:label "fastai(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5145781988649015260>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6245871207932812119>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8928799249008556735> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1037436597> rdfs:label "bad_preprocess[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4937574206971714666> rdfs:label "pprint(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-1372167279200062969> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#106037611> rdfs:label "a(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1390937919>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220922482>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#61604119> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5448767562916677540> rdfs:label "oov(0)$2" ;
-    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6132060985485944902> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#108724625> rdfs:label "x_(17)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5996714836879485023> rdfs:label "test(0)$3" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7172109093693874764>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3099844946316795141>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109314449> rdfs:label "lr(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724043130> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6324435017876189913> rdfs:label "unknown_words(6)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#317852859275391285>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8028379038408664182> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109707635> rdfs:label "i(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45547750> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6493441170249663873> rdfs:label "DataBunch(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/4018045094657682673> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109773172> rdfs:label "i(13)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109707635>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220922482>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6528057829017520780> rdfs:label "x(17)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5748925669363849091> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#110625141> rdfs:label "k(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45547750> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6703451952436838588> rdfs:label "white_list(0)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2424935213892685672>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1967195574690781043> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#111214965> rdfs:label "n(10)$0" ;
+    dj:len <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271712965> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6871795280153375781> rdfs:label "embedding_matrix(6)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1293078804283782774>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3003686508163108574>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#317852859275391285> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1130432062> rdfs:label "latin_similar(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1663365992> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7312102197907939192> rdfs:label "operator(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-5614001091965910748> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1145046778> rdfs:label "load_embeddings[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7463785210185744712> rdfs:label "oov(0)$3" ;
-    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#902723511708023606> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117113220> rdfs:label "x(15)$0" ;
+    dj:translate <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#69402928>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#800458057> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8337766070908963825> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117375365> rdfs:label "x(16)$0" ;
+    dj:tokenize <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117375365>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#613155988> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8456463426720091027> rdfs:label "word(4)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3985979859908395604> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117440902> rdfs:label "x(16)$1" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117440902>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40698073> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8549374625322534318> rdfs:label "text(12)$0" ;
-    dj:replace <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#308829150290504408>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4634724427696801779> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117637510> rdfs:label "x(17)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#108724625>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117637510>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43122913>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#46399723> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8767350914771196216> rdfs:label "data(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/2102877355800725472> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117703047> rdfs:label "x(17)$1" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#117703047>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40829146> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#9012744981868382944> rdfs:label "print[1]" ;
-    dj:print <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4492060382029992255>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-735625473129129134>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1177814650> rdfs:label "unknown_words(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#72155456> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#9087802789202642153> rdfs:label "oov(0)$0" ;
-    dj:check_coverage <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2704171902359552595>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1181615918> rdfs:label "seed_everything[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#936413539357012164> rdfs:label "tqdm(0)$0" ;
-    dj:pandas <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5418994426795635065> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#122421703> rdfs:label "len(6)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1097474827661104508> rdfs:label "train_model[3]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1259013787> rdfs:label " word vectors in (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1168110458625692072> rdfs:label "verbose(14)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6182284305480410497> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#126222799> rdfs:label "nop(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1293078804283782774> rdfs:label "embedding_matrix(6)$0" ;
-    dj:zeros <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2458968937952108796>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3295909430884712057>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#362373136625954112> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1363085042> rdfs:label "embedding_index(6)$0" ;
+    dj:load_embeddings <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#172884533> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-137504734932624266> rdfs:label "operator(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1376650972> rdfs:label "all_test_preds(10)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#95748459> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1519353345123004211> rdfs:label "torch(3)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1390937919> rdfs:label "embeddings_index(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1024198291> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1983920347542991276> rdfs:label "train_model[4]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#139657782> rdfs:label "nop[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2080376456043977238> rdfs:label "handle_contractions[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1434064577> rdfs:label "../input/pickled-glove840b300d-for-10sec-loading/glove.840B.300d.pkl(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2424935213892685672> rdfs:label "latin_similar(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1516177263> rdfs:label "embedding_matrix(6)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#122421703>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30736569>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#620299451>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#66388251>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#83362150> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2436199496899499850> rdfs:label "sigmoid[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#154862066> rdfs:label "len(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2458968937952108796> rdfs:label "np(6)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1578632893> rdfs:label "GLOVE_EMBEDDING_PATH(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1434064577> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2482927710348383223> rdfs:label "[](6)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1592395886> rdfs:label "handle_punctuation[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-252241049201271549> rdfs:label "x(9)$0" ;
-    dj:unsqueeze <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6899505703906162536> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#163185162> rdfs:label "oov(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2588108141806647054> rdfs:label "GLOVE_EMBEDDING_PATH(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165413389> rdfs:label "str(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2697120905077996433> rdfs:label "train(0)$3" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7172109093693874764>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#446515794550626577> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165478946> rdfs:label "True(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2704171902359552595> rdfs:label "vocab(0)$0" ;
-    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#165872165> rdfs:label "True(3)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2733966236967325162> rdfs:label "forward[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1663365992> rdfs:label "’'‘ÆÐƎƏƐƔĲŊŒẞÞǷȜæðǝəɛɣĳŋœĸſßþƿȝĄƁÇĐƊĘĦĮƘŁØƠŞȘŢȚŦŲƯY̨Ƴąɓçđɗęħįƙłøơşșţțŧųưy̨ƴÁÀÂÄǍĂĀÃÅǺĄÆǼǢƁĆĊĈČÇĎḌĐƊÐÉÈĖÊËĚĔĒĘẸƎƏƐĠĜǦĞĢƔáàâäǎăāãåǻąæǽǣɓćċĉčçďḍđɗðéèėêëěĕēęẹǝəɛġĝǧğģɣĤḤĦIÍÌİÎÏǏĬĪĨĮỊĲĴĶƘĹĻŁĽĿʼNŃN̈ŇÑŅŊÓÒÔÖǑŎŌÕŐỌØǾƠŒĥḥħıíìiîïǐĭīĩįịĳĵķƙĸĺļłľŀŉńn̈ňñņŋóòôöǒŏōõőọøǿơœŔŘŖŚŜŠŞȘṢẞŤŢṬŦÞÚÙÛÜǓŬŪŨŰŮŲỤƯẂẀŴẄǷÝỲŶŸȲỸƳŹŻŽẒŕřŗſśŝšşșṣßťţṭŧþúùûüǔŭūũűůųụưẃẁŵẅƿýỳŷÿȳỹƴźżžẓ(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2987501169580744563> rdfs:label "x(15)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1488661122192777199> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1704134812> rdfs:label "clean_special_chars[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3003686508163108574> rdfs:label "embedding_index(6)$0" ;
-    dj:load_embeddings <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3742212031576281500> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1704265885> rdfs:label "clean_special_chars[1]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3626976319076762845> rdfs:label "test_preds(10)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5543649811023618429>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1893627374758635439> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#172884533> rdfs:label "path(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#822871534> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3742212031576281500> rdfs:label "path(6)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7629133131628324171> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1729103859> rdfs:label "symbols_to_delete(0)$0" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1150486107>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1279395523>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3809528739897406834> rdfs:label "f(5)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1730480331> rdfs:label "handle_contractions[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3900286585303977376> rdfs:label "jigsaw_chars(0)$0" ;
-    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#173081141> rdfs:label "self(9)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#379323358> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3985979859908395604> rdfs:label "get_coefs[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1737297617> rdfs:label "Found embeddings for  {:.2\\%} of all text(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4252902916540259412> rdfs:label "train(0)$4" ;
-    dj:head <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2697120905077996433> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176292408> rdfs:label "tqdm(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/644482423> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4281861417581025102> rdfs:label "vocab(0)$1" ;
-    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8362851147583083621> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1832323175> rdfs:label "clean_special_chars(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-433288402379096852> rdfs:label "TrainingPhase(10)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1863657612> rdfs:label "∞θ÷α•à−β∅³π‘₹´°£€\\×™√²—–&(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-439462221136732196> rdfs:label "bad_preprocess[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#190054934> rdfs:label "tic(0)$0" ;
+    dj:time <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#173998641> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4475577960325751434> rdfs:label "x(11)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1905264753> rdfs:label "symbols_to_isolate(0)$0" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1150486107>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1279395523>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4492060382029992255> rdfs:label "a(13)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#450100924827424508>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5191549197782494013>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#878623191000121607> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1999308937> rdfs:label "checkpoint_weights(10)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271844032>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271909570>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45809893>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#499319810> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4558167090388464927> rdfs:label "torch(3)$0" ;
-    dj:manual_seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1519353345123004211>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#204079694> rdfs:label "data(11)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1037436597> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4792363017493599397> rdfs:label "self(9)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2733966236967325162> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#217711212> rdfs:label "tqdm(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4812469546454983908> rdfs:label "tic(0)$0" ;
-    dj:time <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4242786901487499099> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#217842285> rdfs:label "tqdm(14)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5132430857847221365> rdfs:label "clean_special_chars[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#222233210> rdfs:label "text(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1704134812> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5306111264150380487> rdfs:label "epoch(10)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9179276105898786782>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5768090488314777606> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#234029733> rdfs:label "torch(3)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5356347564187672231> rdfs:label "n(10)$0" ;
-    dj:len <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5868707572903104777> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#239469150> rdfs:label "oov(13)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#163185162>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220922482>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5418994426795635065> rdfs:label "tqdm(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8698506282436180653> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#239534778> rdfs:label "super(9)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5481816641106974946> rdfs:label "lr(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1097474827661104508> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249692830> rdfs:label "False(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5504177594903260104> rdfs:label "np(3)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#258671245> rdfs:label "tqdm(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#126222799> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5543649811023618429> rdfs:label "test_preds(10)$0" ;
-    dj:zeros <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6063230757595456390>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8616201460956783325>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#502074224882769183>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7612153000716270538> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#261948054> rdfs:label "test(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2720274984>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#80085334> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5603603023342648373> rdfs:label "[](10)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#262013591> rdfs:label "test(0)$1" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1578960903>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#261948054>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5911569385797766033> rdfs:label "tqdm(14)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#262079128> rdfs:label "test(0)$2" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1717045348>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#262013591>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6063230757595456390> rdfs:label "len(10)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271909570> rdfs:label "epoch(10)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271844032>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#499319810> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6083437723468518796> rdfs:label "symbols_to_isolate(0)$0" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3761725174701417543>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4731434026824718872> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2720274984> rdfs:label "../input/jigsaw-unintended-bias-in-toxicity-classification/test.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6764474775631423736> rdfs:label "data(11)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-439462221136732196> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#27328681> rdfs:label "'(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6931379242575929168> rdfs:label "tqdm(0)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6425723928117996566> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273679042> rdfs:label "vocab(14)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7279018289669234923> rdfs:label "super(9)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#281608915> rdfs:label "torch(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7515772742411469227> rdfs:label "test(0)$1" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-666167821098861868>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8283643172970343430>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2836859345> rdfs:label "/-'?!.,#$\\%'()*+-/:;<=>@[\\]^_`{|}~`(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7522429421959111250> rdfs:label "x(9)$3" ;
-    dj:permute <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2228227204107476010> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#284754655> rdfs:label "punct(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1704265885> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7629133131628324171> rdfs:label "build_matrix[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#286130938> rdfs:label "fastai(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144835193> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-800717833569204299> rdfs:label "build_matrix[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#288555775> rdfs:label "pickle(5)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-806404610062185811> rdfs:label "i(13)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7885645265377506838>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#878623191000121607> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#290652934> rdfs:label "random(3)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8073044271616792836> rdfs:label "os(3)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#29950131> rdfs:label "1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8197107476701723787> rdfs:label "SpatialDropout(9)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30212276> rdfs:label "2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8283643172970343430> rdfs:label "test(0)$0" ;
-    dj:read_csv <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1949833381586467096> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#302711577> rdfs:label "string(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/155320984> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8454214791934744525> rdfs:label "sentence(14)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1168110458625692072>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5911569385797766033>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3212365163180183165> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30736566> rdfs:label "4(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8484533642178027309> rdfs:label "build_vocab[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30736569> rdfs:label "1(6)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8693643176919476552> rdfs:label "i(10)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7124101799616858448>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1364195300116503234> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3135314206> rdfs:label "../input/pickled-crawl300d2m-for-kernel-competitions/crawl-300d-2M.pkl(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-887224052226453187> rdfs:label "isolate_dict(15)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3174636166> rdfs:label "../input/jigsaw-unintended-bias-in-toxicity-classification/train.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9053290971382318542> rdfs:label "x_(17)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320013025> rdfs:label "vocab(0)$0" ;
+    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327811828>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9186878060554429851> rdfs:label "train_model[5]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320078562> rdfs:label "vocab(0)$1" ;
+    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327877365>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1488661122192777199> rdfs:label "handle_punctuation[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320144099> rdfs:label "vocab(0)$2" ;
+    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#205193837>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327942902>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1518605961299414828> rdfs:label "oov(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#320209636> rdfs:label "vocab(0)$3" ;
+    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#205193837>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#328073976>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#178332210686286863> rdfs:label "check_coverage[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#328008439> rdfs:label "train(0)$3" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327942902>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#529269846>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1893627374758635439> rdfs:label "y_pred(10)$0" ;
-    dj:sigmoid <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3953827666808529550>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5657262183392353258> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#328073976> rdfs:label "train(0)$4" ;
+    dj:head <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#328008439> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1967195574690781043> rdfs:label "string(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-5363056734544989372> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#330629881> rdfs:label "torch(3)$0" ;
+    dj:manual_seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#234029733> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2046583010049549815> rdfs:label "checkpoint_weights(10)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5306111264150380487>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9179276105898786782>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5768090488314777606> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#330695418> rdfs:label "torch(3)$1" ;
+    dj:manual_seed <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#330629881> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2171217604767088072> rdfs:label "train_model[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#331350795> rdfs:label "loaded (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2304929283253763185> rdfs:label "x(15)$0" ;
-    dj:translate <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2987501169580744563>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8039996795839385543> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#356451143> rdfs:label "sorted(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2311921755368123642> rdfs:label "glove_chars(0)$0" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4179331940517340246>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6931379242575929168>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#368968462> rdfs:label "sched(10)$0" ;
+    dj:GeneralScheduler <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271712965>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#461243275> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2585304604719662818> rdfs:label "tokenizer(16)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#372507417> rdfs:label "learn(10)$0" ;
+    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271712965>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#368968462> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2723829034411205194> rdfs:label "sched(10)$0" ;
-    dj:GeneralScheduler <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5868707572903104777>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3640918245138542690> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#372572954> rdfs:label "learn(10)$1" ;
+    dj:fit <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#372507417>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45482212> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#308829150290504408> rdfs:label "text(12)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7129905991894419364> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#374080278> rdfs:label "vocab(14)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273679042>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#46006504> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3099844946316795141> rdfs:label "test(0)$2" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7515772742411469227>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4150788632768040520> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#376505301> rdfs:label "sigmoid[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3212365163180183165> rdfs:label "sentences(14)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8484533642178027309> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#379323358> rdfs:label "forward[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3407250318006671496> rdfs:label "train_model[2]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#379454431> rdfs:label "forward[1]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#345018946619627372> rdfs:label "seed_everything[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#388694834> rdfs:label "punct(11)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1010566896>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1863657612>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2836859345> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#362373136625954112> rdfs:label "len(6)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40173781> rdfs:label " (12)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3640918245138542690> rdfs:label "phases(10)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-433288402379096852>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5356347564187672231>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5481816641106974946>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8693643176919476552>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9179276105898786782>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5768090488314777606> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40698073> rdfs:label " (16)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3790923673338908063> rdfs:label "punct(11)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#40829146> rdfs:label " (17)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#386509469105345092> rdfs:label "k(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#413467532> rdfs:label "x_batch(10)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#600835193>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#989726109> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3953827666808529550> rdfs:label "X(10)$0" ;
-    dj:cuda <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7299033058152890849> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#429458349> rdfs:label "verbose(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#712115556> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4180755803928974856> rdfs:label "tqdm(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43122913> rdfs:label "'(17)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4320362725444295809> rdfs:label "train_model[6]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#44499181> rdfs:label "f(5)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#440235238641489230> rdfs:label "LSTM_UNITS(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45809893> rdfs:label "2(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#450100924827424508> rdfs:label "embeddings_index(13)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#178332210686286863> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45875431> rdfs:label "1(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4634724427696801779> rdfs:label "p(12)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7427004015924833518> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#461243275> rdfs:label "phases(10)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109314449>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#111214965>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271844032>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#499319810>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#63832348>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#87359815>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#982648288> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4892788281998857343> rdfs:label "all_test_preds(10)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5603603023342648373> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#46399723> rdfs:label "1(17)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5128111844033840066> rdfs:label "batch_size(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1983920347542991276> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#464192394> rdfs:label "y_pred(10)$0" ;
+    dj:sigmoid <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#101122399>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#372572954> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5145781988649015260> rdfs:label "progress_bar(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#47251701> rdfs:label "s(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5191549197782494013> rdfs:label "a(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#49742083> rdfs:label "x(9)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#379454431> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5490499428459246370> rdfs:label "torch(10)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#509608972> rdfs:label "sentence(14)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#217842285>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#429458349>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#603260031> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5657262183392353258> rdfs:label "learn(10)$1" ;
-    dj:fit <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7544654482290108141> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#516817954> rdfs:label "operator(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5748925669363849091> rdfs:label "fix_quote[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#523043992> rdfs:label "get_coefs[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6132060985485944902> rdfs:label "vocab(0)$2" ;
-    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#446515794550626577> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#542704829> rdfs:label "fix_quote[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6182284305480410497> rdfs:label "build_vocab[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#603260031> rdfs:label "sentences(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#711984483> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6245871207932812119> rdfs:label "master_bar(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#605225992> rdfs:label "LSTM_UNITS(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#67567901> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6425723928117996566> rdfs:label "nop(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#608896162> rdfs:label "master_bar(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#666679405127993392> rdfs:label "nop[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#613155988> rdfs:label "tokenizer(16)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6688807095993013299> rdfs:label "symbols_to_delete(0)$0" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3761725174701417543>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4731434026824718872> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#61604119> rdfs:label "a(13)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6752501806087327210> rdfs:label "load_embeddings[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#63832348> rdfs:label "i(10)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#600835193>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#989726109> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#6899505703906162536> rdfs:label "x(9)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#846599424065541181> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#65863958> rdfs:label "220(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#696811149846717069> rdfs:label "oov(13)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1518605961299414828>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#878623191000121607> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#66388251> rdfs:label "300(6)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7129905991894419364> rdfs:label "clean_special_chars[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#66388261> rdfs:label "p(12)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#284754655> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7172415406492312416> rdfs:label "sorted(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#67567901> rdfs:label "128(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7299033058152890849> rdfs:label "x_batch(10)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7124101799616858448>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1364195300116503234> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#678888655> rdfs:label "batch_size(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724174203> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7427004015924833518> rdfs:label "punct(12)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5132430857847221365> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#68878636> rdfs:label "x(11)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7463825333643597973> rdfs:label "pickle(5)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#69402928> rdfs:label "x(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1592395886> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7544654482290108141> rdfs:label "learn(10)$0" ;
-    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5868707572903104777>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2723829034411205194> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#711984483> rdfs:label "build_vocab[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7612153000716270538> rdfs:label "output_dim(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3407250318006671496> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#712115556> rdfs:label "build_vocab[1]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7885645265377506838> rdfs:label "i(13)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#721290493> rdfs:label "output_dim(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723912057> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#7947481992476568340> rdfs:label "random(3)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#72155456> rdfs:label "[](6)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8028379038408664182> rdfs:label "unknown_words(6)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2482927710348383223> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723649911> rdfs:label "train_model[0]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8039996795839385543> rdfs:label "remove_dict(15)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723780984> rdfs:label "train_model[1]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8215374135085884961> rdfs:label "train_model[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723912057> rdfs:label "train_model[2]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#846599424065541181> rdfs:label "forward[1]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724043130> rdfs:label "train_model[3]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8672520616341945095> rdfs:label "str(11)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724174203> rdfs:label "train_model[4]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8711053531866250564> rdfs:label "check_coverage[0]" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724305276> rdfs:label "train_model[5]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8928799249008556735> rdfs:label "fastai(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-6012277565226845068> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724436349> rdfs:label "train_model[6]" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#902723511708023606> rdfs:label "vocab(0)$3" ;
-    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4252902916540259412>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#787875090> rdfs:label "white_list(0)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1130432062>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#25493666>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#302711577> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#951744858314370087> rdfs:label "clean_special_chars(11)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#800458057> rdfs:label "remove_dict(15)" .
 
-<http://purl.org/dj/python/lib/-2447601669157513874> rdfs:label "Learner" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7205162114495242467> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#817958302> rdfs:label "Found embeddings for {:.2\\%} of vocab(13)" .
 
-<http://purl.org/dj/python/lib/-3485625464147336564> rdfs:label "torch.utils" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#822740461> rdfs:label "build_matrix[0]" .
 
-<http://purl.org/dj/python/lib/-424432765026875925> rdfs:label "time" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#822871534> rdfs:label "build_matrix[1]" .
 
-<http://purl.org/dj/python/lib/-4812336786909989605> rdfs:label "DatasetType" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-5305200872036448717> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#828376459> rdfs:label "progress_bar(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#82968931> rdfs:label "np(3)" .
 
-<http://purl.org/dj/python/lib/-5305200872036448717> rdfs:label "fastai.basic_data" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#831063461> rdfs:label "fastprogress(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/555484452> .
 
-<http://purl.org/dj/python/lib/-5363056734544989372> rdfs:label "string" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#83362150> rdfs:label "np(6)" .
 
-<http://purl.org/dj/python/lib/-543004541706245040> rdfs:label "functional" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1045136508834317799> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#84083047> rdfs:label "os(3)" .
 
-<http://purl.org/dj/python/lib/-5614001091965910748> rdfs:label "operator" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#87359815> rdfs:label "0.6(10)" .
 
-<http://purl.org/dj/python/lib/-580089941456032809> rdfs:label "force_console_behavior" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-7757280558654699538> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881526084> rdfs:label "test_preds(10)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109445521>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#154862066>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220004979>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#721290493> .
 
-<http://purl.org/dj/python/lib/-6012277565226845068> rdfs:label "fastai" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881591621> rdfs:label "test_preds(10)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#464192394>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881526084> .
 
-<http://purl.org/dj/python/lib/-6904147573933658349> rdfs:label "TreebankWordTokenizer" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-7637241566868427402> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881722723> rdfs:label "glove_chars(0)$0" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#121635265>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#258671245>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#29950131>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> .
 
-<http://purl.org/dj/python/lib/-697925615955475139> rdfs:label "gc" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#907478444> rdfs:label "isolate_dict(15)" .
 
-<http://purl.org/dj/python/lib/-7637241566868427402> rdfs:label "nltk.tokenize.treebank" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91554135> rdfs:label "x(9)$0" ;
+    dj:unsqueeze <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31391933>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#49742083> .
 
-<http://purl.org/dj/python/lib/-8149355470439618923> rdfs:label "fastai.callbacks" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91750746> rdfs:label "x(9)$3" ;
+    dj:permute <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30867643>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31129788>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31391933>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31654078>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91685209> .
 
-<http://purl.org/dj/python/lib/-8698506282436180653> rdfs:label "tqdm_notebook" ;
-    dj:importedBy <http://purl.org/dj/python/lib/5189053364705099764> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#95748459> rdfs:label "[](10)" .
 
-<http://purl.org/dj/python/lib/1045136508834317799> rdfs:label "torch.nn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#982648288> rdfs:label "TrainingPhase(10)" .
 
-<http://purl.org/dj/python/lib/2102877355800725472> rdfs:label "data" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-3485625464147336564> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#997000651> rdfs:label "jigsaw_chars(0)$0" ;
+    dj:build_vocab <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327811828>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/1001129634> rdfs:label "fastai.basic_data" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/3632848428666550565> rdfs:label "sequence" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4218994927357629477> .
+<http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/4018045094657682673> rdfs:label "DataBunch" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7205162114495242467> .
+<http://purl.org/dj/python/lib/1280706490> rdfs:label "tqdm._tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/4630515469502395124> rdfs:label "text" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4218994927357629477> .
+<http://purl.org/dj/python/lib/144835193> rdfs:label "fastai" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/4675526104902965112> rdfs:label "nn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/6271272503754370965> .
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/5189053364705099764> rdfs:label "tqdm._tqdm_notebook" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/147194498> rdfs:label "random" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/6140086610842459051> rdfs:label "random" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/1542457476> rdfs:label "TreebankWordTokenizer" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1701382347> .
 
-<http://purl.org/dj/python/lib/9038907434087725530> rdfs:label "*" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-8149355470439618923> .
+<http://purl.org/dj/python/lib/155320984> rdfs:label "string" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/1701382347> rdfs:label "nltk.tokenize.treebank" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4179331940517340246> rdfs:label "len(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/1742145809> rdfs:label "force_console_behavior" ;
+    dj:importedBy <http://purl.org/dj/python/lib/555484452> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4242786901487499099> rdfs:label "time(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-424432765026875925> .
+<http://purl.org/dj/python/lib/179045066> rdfs:label "Learner" ;
+    dj:importedBy <http://purl.org/dj/python/lib/519767237> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5163431399126863130> rdfs:label "white_list(0)$1" .
+<http://purl.org/dj/python/lib/20119755> rdfs:label "gc" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6198408149904717497> rdfs:label "all_test_preds(10)$1" ;
-    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3626976319076762845>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4892788281998857343> .
+<http://purl.org/dj/python/lib/21758173> rdfs:label "nn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/109642273> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6199456327901300486> rdfs:label "x(16)$0" ;
-    dj:tokenize <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-6199456327901300486>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2585304604719662818> .
+<http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-666167821098861868> rdfs:label "handle_punctuation(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/247464747> rdfs:label "torch.nn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7124101799616858448> rdfs:label "enumerate(10)" .
+<http://purl.org/dj/python/lib/257426285> rdfs:label "operator" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7172109093693874764> rdfs:label "fix_quote(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/257622874> rdfs:label "sequence" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1289095113> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-735625473129129134> rdfs:label "k(13)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#386509469105345092>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#878623191000121607> .
+<http://purl.org/dj/python/lib/276628331> rdfs:label "DataBunch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/519767237> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8616201460956783325> rdfs:label "np(10)" .
+<http://purl.org/dj/python/lib/2818091> rdfs:label "*" ;
+    dj:importedBy <http://purl.org/dj/python/lib/889652807> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1364195300116503234> rdfs:label "test_loader(10)$0" ;
-    dj:DataLoader <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#502074224882769183>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5128111844033840066>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5490499428459246370> .
+<http://purl.org/dj/python/lib/390136884> rdfs:label "functional" ;
+    dj:importedBy <http://purl.org/dj/python/lib/247464747> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1949833381586467096> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+<http://purl.org/dj/python/lib/430179433> rdfs:label "DatasetType" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1001129634> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2228227204107476010> rdfs:label "x(9)$2" ;
-    dj:forward <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-4792363017493599397>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-7279018289669234923>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8197107476701723787>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2228227204107476010> .
+<http://purl.org/dj/python/lib/453117056> rdfs:label "torch.utils" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2549261734421425462> rdfs:label "len(13)" .
+<http://purl.org/dj/python/lib/644482423> rdfs:label "tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1280706490> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#317852859275391285> rdfs:label "word(6)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3295909430884712057> .
+<http://purl.org/dj/python/lib/67109275> rdfs:label "data" ;
+    dj:importedBy <http://purl.org/dj/python/lib/453117056> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3180921219095627197> rdfs:label "x(17)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9053290971382318542>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3180921219095627197> .
+<http://purl.org/dj/python/lib/72221104> rdfs:label "time" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3761725174701417543> rdfs:label "glove_symbols(0)$0" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5163431399126863130>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2311921755368123642> .
+<http://purl.org/dj/python/lib/73859526> rdfs:label "text" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1289095113> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4150788632768040520> rdfs:label "handle_contractions(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/python/lib/889652807> rdfs:label "fastai.callbacks" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#446515794550626577> rdfs:label "train(0)$2" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4150788632768040520>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8362851147583083621> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#109445521> rdfs:label "np(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4731434026824718872> rdfs:label "jigsaw_symbols(0)$0" ;
-    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-3900286585303977376>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5163431399126863130> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#110690678> rdfs:label "k(13)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#110625141>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220922482>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#502074224882769183> rdfs:label "test(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8215374135085884961> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1150486107> rdfs:label "glove_symbols(0)$0" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#787940627>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881722723> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8362851147583083621> rdfs:label "train(0)$1" ;
-    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-666167821098861868>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#121635265> rdfs:label "len(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8653647279463178914> rdfs:label "ord(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#124453319> rdfs:label "ord(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/-1372167279200062969> rdfs:label "pprint" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-1372167279200062969>,
-        <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1279395523> rdfs:label "jigsaw_symbols(0)$0" ;
+    dj:join <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#787940627>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#997000651> .
 
-<http://purl.org/dj/python/lib/-4218994927357629477> rdfs:label "keras.preprocessing" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1376716509> rdfs:label "all_test_preds(10)$1" ;
+    dj:append <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1376650972>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#881591621> .
 
-<http://purl.org/dj/python/lib/-7757280558654699538> rdfs:label "fastprogress" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#155255285> rdfs:label "len(13)" .
 
-<http://purl.org/dj/python/lib/6271272503754370965> rdfs:label "torch" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1578960903> rdfs:label "handle_punctuation(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/python/lib/7205162114495242467> rdfs:label "fastai.train" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1717045348> rdfs:label "handle_contractions(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5761569958912486794> rdfs:label "train(0)$0" ;
-    dj:read_csv <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1949833381586467096> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#173998641> rdfs:label "time(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/72221104> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-5868707572903104777> rdfs:label "learn(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2171217604767088072> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#179896900> rdfs:label "word(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#620299451> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9179276105898786782> rdfs:label "range(10)" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#205193837> rdfs:label "False(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3295909430884712057> rdfs:label "word_index(6)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-800717833569204299> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220004979> rdfs:label "test(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723780984> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#5768090488314777606> rdfs:label "n_epochs(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-9186878060554429851> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#25493666> rdfs:label " (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#878623191000121607> rdfs:label "word(13)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4180755803928974856>,
-        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#30867643> rdfs:label "0(9)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-52692756275880053> rdfs:label "seed(3)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#345018946619627372> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31129788> rdfs:label "1(9)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#2901385022846514832> rdfs:label "list(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31654078> rdfs:label "3(9)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#633584531695019054> rdfs:label "vocab(13)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#8711053531866250564> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327877365> rdfs:label "train(0)$1" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1578960903>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327811828>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-8951401309517498917> rdfs:label "glove_embeddings(0)$0" ;
-    dj:load_embeddings <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-2588108141806647054> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327942902> rdfs:label "train(0)$2" ;
+    dj:progress_apply <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1717045348>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327877365>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#-1488712483682929171> rdfs:label "c(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45154531> rdfs:label "0(10)" .
 
-<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#4024216506445952965> rdfs:label "x(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1988206316307112178> .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45482212> rdfs:label "1(10)" .
 
-<http://purl.org/dj/python/lib/1988206316307112178> rdfs:label "how-to-preprocessing-for-glove-part1-eda.ipynb" .
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#45547750> rdfs:label "0(13)" .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#46006504> rdfs:label "1(14)" .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#529269846> rdfs:label "fix_quote(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#600835193> rdfs:label "enumerate(10)" .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#787940627> rdfs:label "white_list(0)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#27328681>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#787875090> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#80085334> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91685209> rdfs:label "x(9)$2" ;
+    dj:forward <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1008207430>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#173081141>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#239534778>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#91685209> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#989726109> rdfs:label "test_loader(10)$0" ;
+    dj:DataLoader <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220004979>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#249692830>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#281608915>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#678888655> .
+
+<http://purl.org/dj/python/lib/109642273> rdfs:label "torch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/python/lib/1289095113> rdfs:label "keras.preprocessing" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/python/lib/153682590> rdfs:label "pprint" ;
+    dj:importedBy <http://purl.org/dj/python/lib/153682590>,
+        <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/python/lib/519767237> rdfs:label "fastai.train" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/python/lib/555484452> rdfs:label "fastprogress" ;
+    dj:importedBy <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271712965> rdfs:label "learn(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#723649911> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#271844032> rdfs:label "range(10)" .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#327811828> rdfs:label "train(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#3174636166>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#80085334> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#499319810> rdfs:label "n_epochs(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#724305276> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#620299451> rdfs:label "word_index(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#822740461> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#220922482> rdfs:label "word(13)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#217711212>,
+        <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#31391933> rdfs:label "2(9)" .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#169476646> rdfs:label "seed(3)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1181615918> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#17039490> rdfs:label "(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#176226878> rdfs:label "list(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#273547969> rdfs:label "vocab(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1024067218> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1527777124> rdfs:label "glove_embeddings(0)$0" ;
+    dj:load_embeddings <http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#1578632893> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#43057381> rdfs:label "c(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#48562426> rdfs:label "x(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/kaggle/how-to-preprocessing-for-glove-part1-eda#821364121> rdfs:label "comment_text(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/2723615114> .
+
+<http://purl.org/dj/python/lib/2723615114> rdfs:label "how-to-preprocessing-for-glove-part1-eda.ipynb" .
 

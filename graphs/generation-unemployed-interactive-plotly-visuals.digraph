@@ -1,291 +1,355 @@
-digraph { 
-"numpy" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"np(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"np(0)" -> "numpy" [label = "assignedFrom"]
-"pandas" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"pd(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"matplotlib.pyplot" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"plt(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"plt(0)" -> "matplotlib.pyplot" [label = "assignedFrom"]
-"plotly.offline" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"py(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"py(0)" -> "plotly.offline" [label = "assignedFrom"]
-"py(0)$0" -> "py(0)" [label = "init_notebook_mode"]
-"plotly.graph_objs" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"go(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"go(0)" -> "plotly.graph_objs" [label = "assignedFrom"]
-"plotly.tools" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"tls(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"tls(0)" -> "plotly.tools" [label = "assignedFrom"]
-"seaborn" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"sns(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"sns(0)" -> "seaborn" [label = "assignedFrom"]
-"warnings" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "importedBy"]
-"warnings(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"warnings(0)" -> "warnings" [label = "assignedFrom"]
-"warnings(0)$0" -> "warnings(0)" [label = "filterwarnings"]
-"ignore(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"warnings(0)$0" -> "ignore(0)" [label = "filterwarnings"]
-"country(0)$0" -> "pd(0)" [label = "read_csv"]
-"../input/API_ILO_country_YU.csv(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"country(0)$0" -> "../input/API_ILO_country_YU.csv(0)" [label = "read_csv"]
-"country(0)$1" -> "country(0)$0" [label = "head"]
-"print[0]" -> "country(0)$1" [label = "print"]
-"display[0]" -> "country(0)$1" [label = "display"]
-"Country Name(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"display[1]" -> "Country Name(0)" [label = "display"]
-"[<_ast.Constant object at 0x105010490>, <_ast.Constant object at 0x1050102b0>, <_ast.Constant object at 0x1050104c0>, <_ast.Constant object at 0x105010d30>, <_ast.Constant object at 0x105010a00>, <_ast.Constant object at 0x105010cd0>, <_ast.Constant object at 0x1050109a0>, <_ast.Constant object at 0x105010340>, <_ast.Constant object at 0x105010ee0>, <_ast.Constant object at 0x105010700>, <_ast.Constant object at 0x105010160>, <_ast.Constant object at 0x1050106d0>, <_ast.Constant object at 0x105010880>, <_ast.Constant object at 0x105010fd0>, <_ast.Constant object at 0x105010520>, <_ast.Constant object at 0x1050102e0>, <_ast.Constant object at 0x105010a30>, <_ast.Constant object at 0x105010ca0>, <_ast.Constant object at 0x105010b80>, <_ast.Constant object at 0x1050109d0>, <_ast.Constant object at 0x1050104f0>, <_ast.Constant object at 0x105010e20>, <_ast.Constant object at 0x105010040>, <_ast.Constant object at 0x1050105e0>, <_ast.Constant object at 0x105010280>, <_ast.Constant object at 0x1050101c0>, <_ast.Constant object at 0x105082e50>, <_ast.Constant object at 0x105082190>, <_ast.Constant object at 0x105082760>, <_ast.Constant object at 0x105082dc0>, <_ast.Constant object at 0x105082a90>, <_ast.Constant object at 0x105082730>, <_ast.Constant object at 0x1050820d0>, <_ast.Constant object at 0x105082580>, <_ast.Constant object at 0x105082970>, <_ast.Constant object at 0x1050823a0>, <_ast.Constant object at 0x105082820>, <_ast.Constant object at 0x105082e80>, <_ast.Constant object at 0x105082160>, <_ast.Constant object at 0x105082b50>, <_ast.Constant object at 0x105082550>, <_ast.Constant object at 0x1050824c0>, <_ast.Constant object at 0x105082a30>, <_ast.Constant object at 0x105082b20>, <_ast.Constant object at 0x105082fa0>, <_ast.Constant object at 0x105082c70>, <_ast.Constant object at 0x1050827f0>, <_ast.Constant object at 0x1050825e0>, <_ast.Constant object at 0x105082640>, <_ast.Constant object at 0x105082bb0>, <_ast.Constant object at 0x105082ee0>, <_ast.Constant object at 0x1050823d0>, <_ast.Constant object at 0x1050826a0>, <_ast.Constant object at 0x105082af0>, <_ast.Constant object at 0x105082c40>, <_ast.Constant object at 0x105082eb0>, <_ast.Constant object at 0x105082070>, <_ast.Constant object at 0x105082ca0>, <_ast.Constant object at 0x1050826d0>, <_ast.Constant object at 0x1050822e0>, <_ast.Constant object at 0x105082d00>, <_ast.Constant object at 0x105082100>, <_ast.Constant object at 0x105082f10>, <_ast.Constant object at 0x105082670>, <_ast.Constant object at 0x105082460>, <_ast.Constant object at 0x105082790>, <_ast.Constant object at 0x1050824f0>, <_ast.Constant object at 0x1050820a0>, <_ast.Constant object at 0x105082d60>, <_ast.Constant object at 0x105082850>, <_ast.Constant object at 0x105082040>, <_ast.Constant object at 0x1050829d0>, <_ast.Constant object at 0x105082220>, <_ast.Constant object at 0x1050821c0>, <_ast.Constant object at 0x1050828e0>, <_ast.Constant object at 0x105082370>, <_ast.Constant object at 0x105082880>, <_ast.Constant object at 0x1050827c0>, <_ast.Constant object at 0x105082520>, <_ast.Constant object at 0x105082df0>, <_ast.Constant object at 0x105082cd0>, <_ast.Constant object at 0x105082340>, <_ast.Constant object at 0x105082490>, <_ast.Constant object at 0x1050828b0>, <_ast.Constant object at 0x105082be0>, <_ast.Constant object at 0x105082c10>, <_ast.Constant object at 0x105082400>, <_ast.Constant object at 0x105082b80>, <_ast.Constant object at 0x105082fd0>, <_ast.Constant object at 0x105082910>, <_ast.Constant object at 0x105082d90>, <_ast.Constant object at 0x105082430>, <_ast.Constant object at 0x105082e20>, <_ast.Constant object at 0x105082f40>, <_ast.Constant object at 0x105082610>, <_ast.Constant object at 0x1050821f0>, <_ast.Constant object at 0x105082f70>, <_ast.Constant object at 0x105082a00>, <_ast.Constant object at 0x1050825b0>, <_ast.Constant object at 0x1050822b0>, <_ast.Constant object at 0x105082250>, <_ast.Constant object at 0x105082a60>, <_ast.Constant object at 0x105082ac0>, <_ast.Constant object at 0x105082700>, <_ast.Constant object at 0x105082130>, <_ast.Constant object at 0x105082280>, <_ast.Constant object at 0x105082940>, <_ast.Constant object at 0x1050829a0>, <_ast.Constant object at 0x105082310>, <_ast.Constant object at 0x104f9fee0>, <_ast.Constant object at 0x104f9fb80>, <_ast.Constant object at 0x104f9f520>, <_ast.Constant object at 0x104f9faf0>, <_ast.Constant object at 0x104f9f7f0>, <_ast.Constant object at 0x104f9f130>, <_ast.Constant object at 0x104f9f610>, <_ast.Constant object at 0x104f9f4c0>, <_ast.Constant object at 0x104f9f6d0>, <_ast.Constant object at 0x104f9fa60>, <_ast.Constant object at 0x104f9f850>, <_ast.Constant object at 0x104f9f100>, <_ast.Constant object at 0x104f9f8b0>, <_ast.Constant object at 0x104f9f460>, <_ast.Constant object at 0x104f9fe50>, <_ast.Constant object at 0x104f9fd90>, <_ast.Constant object at 0x104f9f3a0>, <_ast.Constant object at 0x104f9fb50>, <_ast.Constant object at 0x104f9fe80>, <_ast.Constant object at 0x104f9f1c0>, <_ast.Constant object at 0x104f9f160>, <_ast.Constant object at 0x104f9feb0>, <_ast.Constant object at 0x104f9f580>, <_ast.Constant object at 0x104f9f670>, <_ast.Constant object at 0x104f9ff10>, <_ast.Constant object at 0x104f9f940>, <_ast.Constant object at 0x104f9fc10>, <_ast.Constant object at 0x104f9f880>, <_ast.Constant object at 0x104f9f2e0>, <_ast.Constant object at 0x104f9fca0>, <_ast.Constant object at 0x104f9f280>, <_ast.Constant object at 0x104f9fc40>, <_ast.Constant object at 0x104f9fb20>, <_ast.Constant object at 0x104f9f1f0>, <_ast.Constant object at 0x104f9f5e0>, <_ast.Constant object at 0x104f9f910>, <_ast.Constant object at 0x104f9ff70>, <_ast.Constant object at 0x104f9f8e0>, <_ast.Constant object at 0x104f9f430>, <_ast.Constant object at 0x104f9fa90>, <_ast.Constant object at 0x104f9f040>, <_ast.Constant object at 0x104f9fd00>, <_ast.Constant object at 0x104f9f250>, <_ast.Constant object at 0x104f9fc70>, <_ast.Constant object at 0x104f9fd30>, <_ast.Constant object at 0x104f9f9a0>, <_ast.Constant object at 0x104f9f490>, <_ast.Constant object at 0x104f9f310>, <_ast.Constant object at 0x104f9f9d0>, <_ast.Constant object at 0x104f9f790>, <_ast.Constant object at 0x104f9ffa0>, <_ast.Constant object at 0x104f9fa00>, <_ast.Constant object at 0x104f9f070>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"country_list(0)$0" -> "[<_ast.Constant object at 0x105010490>, <_ast.Constant object at 0x1050102b0>, <_ast.Constant object at 0x1050104c0>, <_ast.Constant object at 0x105010d30>, <_ast.Constant object at 0x105010a00>, <_ast.Constant object at 0x105010cd0>, <_ast.Constant object at 0x1050109a0>, <_ast.Constant object at 0x105010340>, <_ast.Constant object at 0x105010ee0>, <_ast.Constant object at 0x105010700>, <_ast.Constant object at 0x105010160>, <_ast.Constant object at 0x1050106d0>, <_ast.Constant object at 0x105010880>, <_ast.Constant object at 0x105010fd0>, <_ast.Constant object at 0x105010520>, <_ast.Constant object at 0x1050102e0>, <_ast.Constant object at 0x105010a30>, <_ast.Constant object at 0x105010ca0>, <_ast.Constant object at 0x105010b80>, <_ast.Constant object at 0x1050109d0>, <_ast.Constant object at 0x1050104f0>, <_ast.Constant object at 0x105010e20>, <_ast.Constant object at 0x105010040>, <_ast.Constant object at 0x1050105e0>, <_ast.Constant object at 0x105010280>, <_ast.Constant object at 0x1050101c0>, <_ast.Constant object at 0x105082e50>, <_ast.Constant object at 0x105082190>, <_ast.Constant object at 0x105082760>, <_ast.Constant object at 0x105082dc0>, <_ast.Constant object at 0x105082a90>, <_ast.Constant object at 0x105082730>, <_ast.Constant object at 0x1050820d0>, <_ast.Constant object at 0x105082580>, <_ast.Constant object at 0x105082970>, <_ast.Constant object at 0x1050823a0>, <_ast.Constant object at 0x105082820>, <_ast.Constant object at 0x105082e80>, <_ast.Constant object at 0x105082160>, <_ast.Constant object at 0x105082b50>, <_ast.Constant object at 0x105082550>, <_ast.Constant object at 0x1050824c0>, <_ast.Constant object at 0x105082a30>, <_ast.Constant object at 0x105082b20>, <_ast.Constant object at 0x105082fa0>, <_ast.Constant object at 0x105082c70>, <_ast.Constant object at 0x1050827f0>, <_ast.Constant object at 0x1050825e0>, <_ast.Constant object at 0x105082640>, <_ast.Constant object at 0x105082bb0>, <_ast.Constant object at 0x105082ee0>, <_ast.Constant object at 0x1050823d0>, <_ast.Constant object at 0x1050826a0>, <_ast.Constant object at 0x105082af0>, <_ast.Constant object at 0x105082c40>, <_ast.Constant object at 0x105082eb0>, <_ast.Constant object at 0x105082070>, <_ast.Constant object at 0x105082ca0>, <_ast.Constant object at 0x1050826d0>, <_ast.Constant object at 0x1050822e0>, <_ast.Constant object at 0x105082d00>, <_ast.Constant object at 0x105082100>, <_ast.Constant object at 0x105082f10>, <_ast.Constant object at 0x105082670>, <_ast.Constant object at 0x105082460>, <_ast.Constant object at 0x105082790>, <_ast.Constant object at 0x1050824f0>, <_ast.Constant object at 0x1050820a0>, <_ast.Constant object at 0x105082d60>, <_ast.Constant object at 0x105082850>, <_ast.Constant object at 0x105082040>, <_ast.Constant object at 0x1050829d0>, <_ast.Constant object at 0x105082220>, <_ast.Constant object at 0x1050821c0>, <_ast.Constant object at 0x1050828e0>, <_ast.Constant object at 0x105082370>, <_ast.Constant object at 0x105082880>, <_ast.Constant object at 0x1050827c0>, <_ast.Constant object at 0x105082520>, <_ast.Constant object at 0x105082df0>, <_ast.Constant object at 0x105082cd0>, <_ast.Constant object at 0x105082340>, <_ast.Constant object at 0x105082490>, <_ast.Constant object at 0x1050828b0>, <_ast.Constant object at 0x105082be0>, <_ast.Constant object at 0x105082c10>, <_ast.Constant object at 0x105082400>, <_ast.Constant object at 0x105082b80>, <_ast.Constant object at 0x105082fd0>, <_ast.Constant object at 0x105082910>, <_ast.Constant object at 0x105082d90>, <_ast.Constant object at 0x105082430>, <_ast.Constant object at 0x105082e20>, <_ast.Constant object at 0x105082f40>, <_ast.Constant object at 0x105082610>, <_ast.Constant object at 0x1050821f0>, <_ast.Constant object at 0x105082f70>, <_ast.Constant object at 0x105082a00>, <_ast.Constant object at 0x1050825b0>, <_ast.Constant object at 0x1050822b0>, <_ast.Constant object at 0x105082250>, <_ast.Constant object at 0x105082a60>, <_ast.Constant object at 0x105082ac0>, <_ast.Constant object at 0x105082700>, <_ast.Constant object at 0x105082130>, <_ast.Constant object at 0x105082280>, <_ast.Constant object at 0x105082940>, <_ast.Constant object at 0x1050829a0>, <_ast.Constant object at 0x105082310>, <_ast.Constant object at 0x104f9fee0>, <_ast.Constant object at 0x104f9fb80>, <_ast.Constant object at 0x104f9f520>, <_ast.Constant object at 0x104f9faf0>, <_ast.Constant object at 0x104f9f7f0>, <_ast.Constant object at 0x104f9f130>, <_ast.Constant object at 0x104f9f610>, <_ast.Constant object at 0x104f9f4c0>, <_ast.Constant object at 0x104f9f6d0>, <_ast.Constant object at 0x104f9fa60>, <_ast.Constant object at 0x104f9f850>, <_ast.Constant object at 0x104f9f100>, <_ast.Constant object at 0x104f9f8b0>, <_ast.Constant object at 0x104f9f460>, <_ast.Constant object at 0x104f9fe50>, <_ast.Constant object at 0x104f9fd90>, <_ast.Constant object at 0x104f9f3a0>, <_ast.Constant object at 0x104f9fb50>, <_ast.Constant object at 0x104f9fe80>, <_ast.Constant object at 0x104f9f1c0>, <_ast.Constant object at 0x104f9f160>, <_ast.Constant object at 0x104f9feb0>, <_ast.Constant object at 0x104f9f580>, <_ast.Constant object at 0x104f9f670>, <_ast.Constant object at 0x104f9ff10>, <_ast.Constant object at 0x104f9f940>, <_ast.Constant object at 0x104f9fc10>, <_ast.Constant object at 0x104f9f880>, <_ast.Constant object at 0x104f9f2e0>, <_ast.Constant object at 0x104f9fca0>, <_ast.Constant object at 0x104f9f280>, <_ast.Constant object at 0x104f9fc40>, <_ast.Constant object at 0x104f9fb20>, <_ast.Constant object at 0x104f9f1f0>, <_ast.Constant object at 0x104f9f5e0>, <_ast.Constant object at 0x104f9f910>, <_ast.Constant object at 0x104f9ff70>, <_ast.Constant object at 0x104f9f8e0>, <_ast.Constant object at 0x104f9f430>, <_ast.Constant object at 0x104f9fa90>, <_ast.Constant object at 0x104f9f040>, <_ast.Constant object at 0x104f9fd00>, <_ast.Constant object at 0x104f9f250>, <_ast.Constant object at 0x104f9fc70>, <_ast.Constant object at 0x104f9fd30>, <_ast.Constant object at 0x104f9f9a0>, <_ast.Constant object at 0x104f9f490>, <_ast.Constant object at 0x104f9f310>, <_ast.Constant object at 0x104f9f9d0>, <_ast.Constant object at 0x104f9f790>, <_ast.Constant object at 0x104f9ffa0>, <_ast.Constant object at 0x104f9fa00>, <_ast.Constant object at 0x104f9f070>](0)" [label = "assignedFrom"]
-"country_clean(0)$0" -> "country(0)$1" [label = "assignedFrom"]
-"country_clean(0)$0" -> "country(0)$1" [label = "assignedFrom"]
-"country_clean(0)$0" -> "Country Name(0)" [label = "assignedFrom"]
-"country_clean(0)$0" -> "country_list(0)$0" [label = "assignedFrom"]
-"[<_ast.List object at 0x104f9f220>, <_ast.List object at 0x104f9f550>, <_ast.List object at 0x104f9f3d0>, <_ast.List object at 0x104f9f370>, <_ast.List object at 0x104f9f760>, <_ast.List object at 0x104fa8fd0>, <_ast.List object at 0x104fa80d0>, <_ast.List object at 0x104fa8100>, <_ast.List object at 0x104fa8130>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"metricscale1(0)$0" -> "[<_ast.List object at 0x104f9f220>, <_ast.List object at 0x104f9f550>, <_ast.List object at 0x104f9f3d0>, <_ast.List object at 0x104f9f370>, <_ast.List object at 0x104f9f760>, <_ast.List object at 0x104fa8fd0>, <_ast.List object at 0x104fa80d0>, <_ast.List object at 0x104fa8100>, <_ast.List object at 0x104fa8130>](0)" [label = "assignedFrom"]
-"[<_ast.Call object at 0x104fa8f10>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"data(0)$0" -> "[<_ast.Call object at 0x104fa8f10>](0)" [label = "assignedFrom"]
-"World Map of Global Youth Unemployment in the Year 2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "World Map of Global Youth Unemployment in the Year 2010(0)" [label = "dict"]
-"dict(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "dict(0)" [label = "dict"]
-"True(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "True(0)" [label = "dict"]
-"layout(0)$0" -> "True(0)" [label = "dict"]
-"rgb(28,107,160)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "rgb(28,107,160)(0)" [label = "dict"]
-"layout(0)$0" -> "dict(0)" [label = "dict"]
-"orthographic(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "orthographic(0)" [label = "dict"]
-"layout(0)$0" -> "dict(0)" [label = "dict"]
-"60(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "60(0)" [label = "dict"]
-"10(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "10(0)" [label = "dict"]
-"layout(0)$0" -> "dict(0)" [label = "dict"]
-"False(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "False(0)" [label = "dict"]
-"rgb(102, 102, 102)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$0" -> "rgb(102, 102, 102)(0)" [label = "dict"]
-"layout(0)$0" -> "dict(0)" [label = "dict"]
-"layout(0)$0" -> "False(0)" [label = "dict"]
-"layout(0)$0" -> "rgb(102, 102, 102)(0)" [label = "dict"]
-"fig(0)$0" -> "data(0)$0" [label = "dict"]
-"fig(0)$0" -> "layout(0)$0" [label = "dict"]
-"py(0)$1" -> "py(0)$0" [label = "iplot"]
-"py(0)$1" -> "fig(0)$0" [label = "iplot"]
-"[<_ast.List object at 0x105126220>, <_ast.List object at 0x105126370>, <_ast.List object at 0x105126340>, <_ast.List object at 0x105126580>, <_ast.List object at 0x1051265b0>, <_ast.List object at 0x1051261f0>, <_ast.List object at 0x1051267f0>, <_ast.List object at 0x1051266a0>, <_ast.List object at 0x1051268b0>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"metricscale2(0)$0" -> "[<_ast.List object at 0x105126220>, <_ast.List object at 0x105126370>, <_ast.List object at 0x105126340>, <_ast.List object at 0x105126580>, <_ast.List object at 0x1051265b0>, <_ast.List object at 0x1051261f0>, <_ast.List object at 0x1051267f0>, <_ast.List object at 0x1051266a0>, <_ast.List object at 0x1051268b0>](0)" [label = "assignedFrom"]
-"[<_ast.Call object at 0x1051269a0>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"data(0)$1" -> "[<_ast.Call object at 0x1051269a0>](0)" [label = "assignedFrom"]
-"World Map of Global Youth Unemployment in the Year 2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$1" -> "World Map of Global Youth Unemployment in the Year 2014(0)" [label = "dict"]
-"layout(0)$1" -> "dict(0)" [label = "dict"]
-"layout(0)$1" -> "True(0)" [label = "dict"]
-"layout(0)$1" -> "True(0)" [label = "dict"]
-"layout(0)$1" -> "rgb(28,107,160)(0)" [label = "dict"]
-"layout(0)$1" -> "dict(0)" [label = "dict"]
-"layout(0)$1" -> "orthographic(0)" [label = "dict"]
-"layout(0)$1" -> "dict(0)" [label = "dict"]
-"layout(0)$1" -> "60(0)" [label = "dict"]
-"layout(0)$1" -> "10(0)" [label = "dict"]
-"layout(0)$1" -> "dict(0)" [label = "dict"]
-"layout(0)$1" -> "False(0)" [label = "dict"]
-"rgb(202, 202, 202)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$1" -> "rgb(202, 202, 202)(0)" [label = "dict"]
-"0.05(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$1" -> "0.05(0)" [label = "dict"]
-"layout(0)$1" -> "dict(0)" [label = "dict"]
-"layout(0)$1" -> "False(0)" [label = "dict"]
-"layout(0)$1" -> "rgb(102, 102, 102)(0)" [label = "dict"]
-"fig(0)$1" -> "data(0)$1" [label = "dict"]
-"fig(0)$1" -> "layout(0)$1" [label = "dict"]
-"py(0)$2" -> "py(0)$1" [label = "iplot"]
-"py(0)$2" -> "fig(0)$1" [label = "iplot"]
-"trace(0)$0" -> "go(0)" [label = "Scatter"]
-"trace(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"trace(0)$0" -> "2010(0)" [label = "Scatter"]
-"markers(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"trace(0)$0" -> "markers(0)" [label = "Scatter"]
-"trace(0)$0" -> "dict(0)" [label = "Scatter"]
-"trace(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace(0)$0" -> "2010(0)" [label = "Scatter"]
-"trace(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace(0)$0" -> "2010(0)" [label = "Scatter"]
-"Portland(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"trace(0)$0" -> "Portland(0)" [label = "Scatter"]
-"trace(0)$0" -> "True(0)" [label = "Scatter"]
-"trace(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace(0)$0" -> "Country Name(0)" [label = "Scatter"]
-"[<_ast.Name object at 0x1050a1e80>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"data(0)$2" -> "[<_ast.Name object at 0x1050a1e80>](0)" [label = "assignedFrom"]
-"layout(0)$2" -> "go(0)" [label = "Layout"]
-"layout(0)$2" -> "True(0)" [label = "Layout"]
-"Scatter plot of unemployment rates in 2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$2" -> "Scatter plot of unemployment rates in 2010(0)" [label = "Layout"]
-"closest(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$2" -> "closest(0)" [label = "Layout"]
-"layout(0)$2" -> "dict(0)" [label = "Layout"]
-"Unemployment Rate(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$2" -> "Unemployment Rate(0)" [label = "Layout"]
-"5(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$2" -> "5(0)" [label = "Layout"]
-"2(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$2" -> "2(0)" [label = "Layout"]
-"layout(0)$2" -> "False(0)" [label = "Layout"]
-"fig(0)$2" -> "go(0)" [label = "Figure"]
-"fig(0)$2" -> "data(0)$2" [label = "Figure"]
-"fig(0)$2" -> "layout(0)$2" [label = "Figure"]
-"py(0)$3" -> "py(0)$2" [label = "iplot"]
-"py(0)$3" -> "fig(0)$2" [label = "iplot"]
-"trace1(0)$0" -> "go(0)" [label = "Scatter"]
-"trace1(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"trace1(0)$0" -> "2014(0)" [label = "Scatter"]
-"trace1(0)$0" -> "markers(0)" [label = "Scatter"]
-"trace1(0)$0" -> "dict(0)" [label = "Scatter"]
-"trace1(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace1(0)$0" -> "2014(0)" [label = "Scatter"]
-"trace1(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace1(0)$0" -> "2014(0)" [label = "Scatter"]
-"trace1(0)$0" -> "Portland(0)" [label = "Scatter"]
-"trace1(0)$0" -> "True(0)" [label = "Scatter"]
-"trace1(0)$0" -> "country_clean(0)$0" [label = "Scatter"]
-"trace1(0)$0" -> "Country Name(0)" [label = "Scatter"]
-"[<_ast.Name object at 0x1050a5280>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"data(0)$3" -> "[<_ast.Name object at 0x1050a5280>](0)" [label = "assignedFrom"]
-"layout(0)$3" -> "go(0)" [label = "Layout"]
-"Scatter plot of unemployment rates in 2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"layout(0)$3" -> "Scatter plot of unemployment rates in 2014(0)" [label = "Layout"]
-"layout(0)$3" -> "closest(0)" [label = "Layout"]
-"layout(0)$3" -> "dict(0)" [label = "Layout"]
-"layout(0)$3" -> "5(0)" [label = "Layout"]
-"layout(0)$3" -> "False(0)" [label = "Layout"]
-"layout(0)$3" -> "2(0)" [label = "Layout"]
-"layout(0)$3" -> "dict(0)" [label = "Layout"]
-"layout(0)$3" -> "Unemployment Rate(0)" [label = "Layout"]
-"layout(0)$3" -> "5(0)" [label = "Layout"]
-"layout(0)$3" -> "2(0)" [label = "Layout"]
-"layout(0)$3" -> "False(0)" [label = "Layout"]
-"fig(0)$3" -> "go(0)" [label = "Figure"]
-"fig(0)$3" -> "data(0)$3" [label = "Figure"]
-"fig(0)$3" -> "layout(0)$3" [label = "Figure"]
-"py(0)$4" -> "py(0)$3" [label = "iplot"]
-"py(0)$4" -> "fig(0)$3" [label = "iplot"]
-"diff(0)$0" -> "country_clean(0)$0" [label = "Sub"]
-"diff(0)$0" -> "2014(0)" [label = "Sub"]
-"diff(0)$0" -> "country_clean(0)$0" [label = "Sub"]
-"diff(0)$0" -> "2010(0)" [label = "Sub"]
-"list(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"x(0)$0" -> "list(0)" [label = "assignedFrom"]
-"y(0)$0" -> "list(0)" [label = "assignedFrom"]
-"x(0)$0" -> "x(0)$0" [label = "assignedFrom"]
-"y(0)$0" -> "x(0)$0" [label = "assignedFrom"]
-"x(0)$0" -> "x(0)$0" [label = "assignedFrom"]
-"y(0)$0" -> "x(0)$0" [label = "assignedFrom"]
-"zip(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"x(0)$0" -> "zip(0)" [label = "assignedFrom"]
-"y(0)$0" -> "zip(0)" [label = "assignedFrom"]
-"sorted(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"x(0)$0" -> "sorted(0)" [label = "assignedFrom"]
-"y(0)$0" -> "sorted(0)" [label = "assignedFrom"]
-"x(0)$0" -> "zip(0)" [label = "assignedFrom"]
-"y(0)$0" -> "zip(0)" [label = "assignedFrom"]
-"x(0)$0" -> "diff(0)$0" [label = "assignedFrom"]
-"y(0)$0" -> "diff(0)$0" [label = "assignedFrom"]
-"x(0)$0" -> "country_clean(0)$0" [label = "assignedFrom"]
-"y(0)$0" -> "country_clean(0)$0" [label = "assignedFrom"]
-"x(0)$0" -> "Country Name(0)" [label = "assignedFrom"]
-"y(0)$0" -> "Country Name(0)" [label = "assignedFrom"]
-"x(0)$0" -> "True(0)" [label = "assignedFrom"]
-"y(0)$0" -> "True(0)" [label = "assignedFrom"]
-"Y(0)$0" -> "np(0)" [label = "concatenate"]
-"[<_ast.Subscript object at 0x1050b8880>, <_ast.Subscript object at 0x1050b8730>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"Y(0)$0" -> "[<_ast.Subscript object at 0x1050b8880>, <_ast.Subscript object at 0x1050b8730>](0)" [label = "concatenate"]
-"X(0)$0" -> "np(0)" [label = "concatenate"]
-"[<_ast.Subscript object at 0x1050b83d0>, <_ast.Subscript object at 0x1050b8340>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"X(0)$0" -> "[<_ast.Subscript object at 0x1050b83d0>, <_ast.Subscript object at 0x1050b8340>](0)" [label = "concatenate"]
-"c(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"keys(0)$0" -> "c(0)" [label = "assignedFrom"]
-"keys(0)$0" -> "c(0)" [label = "assignedFrom"]
-"keys(0)$0" -> "country_clean(0)$0" [label = "assignedFrom"]
-"keys(0)$0" -> "c(0)" [label = "assignedFrom"]
-"20(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"keys(0)$0" -> "20(0)" [label = "assignedFrom"]
-"country_resize(0)$0" -> "pd(0)" [label = "melt"]
-"country_resize(0)$0" -> "country_clean(0)$0" [label = "melt"]
-"country_resize(0)$0" -> "Country Name(0)" [label = "melt"]
-"country_resize(0)$0" -> "keys(0)$0" [label = "melt"]
-"key(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"country_resize(0)$0" -> "key(0)" [label = "melt"]
-"country_resize(0)$1" -> "country_resize(0)$0" [label = "assignedFrom"]
-"country_resize(0)$1" -> "country_resize(0)$0" [label = "assignedFrom"]
-"variable(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"country_resize(0)$1" -> "variable(0)" [label = "assignedFrom"]
-"mask(0)$0" -> "country_resize(0)$1" [label = "isin"]
-"mask(0)$0" -> "Country Name(0)" [label = "isin"]
-"mask(0)$0" -> "Y(0)$0" [label = "isin"]
-"country_final(0)$0" -> "country_resize(0)$1" [label = "assignedFrom"]
-"country_final(0)$0" -> "mask(0)$0" [label = "assignedFrom"]
-"plt(0)$0" -> "plt(0)" [label = "figure"]
-"country_pivot(0)$0" -> "country_final(0)$0" [label = "pivot"]
-"country_pivot(0)$0" -> "Country Name(0)" [label = "pivot"]
-"Year(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"country_pivot(0)$0" -> "Year(0)" [label = "pivot"]
-"country_pivot(0)$0" -> "key(0)" [label = "pivot"]
-"country_pivot(0)$1" -> "country_pivot(0)$0" [label = "sort_values"]
-"country_pivot(0)$1" -> "2014(0)" [label = "sort_values"]
-"country_pivot(0)$1" -> "False(0)" [label = "sort_values"]
-"ax(0)$0" -> "sns(0)" [label = "heatmap"]
-"ax(0)$0" -> "country_pivot(0)$1" [label = "heatmap"]
-"coolwarm(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"ax(0)$0" -> "coolwarm(0)" [label = "heatmap"]
-"ax(0)$0" -> "False(0)" [label = "heatmap"]
-"0(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"ax(0)$0" -> "0(0)" [label = "heatmap"]
-"white(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"ax(0)$0" -> "white(0)" [label = "heatmap"]
-"plt(0)$1" -> "plt(0)$0" [label = "title"]
-"Movement in Unemployment rate ( Warmer: Higher rate, Cooler: Lower rate )(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"plt(0)$1" -> "Movement in Unemployment rate ( Warmer: Higher rate, Cooler: Lower rate )(0)" [label = "title"]
-"sns(0)$0" -> "sns(0)" [label = "set"]
-"f(0)$0" -> "plt(0)$1" [label = "subplots"]
-"ax(0)$1" -> "plt(0)$1" [label = "subplots"]
-"f(0)$0" -> "20(0)" [label = "subplots"]
-"ax(0)$1" -> "20(0)" [label = "subplots"]
-"25(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"f(0)$0" -> "25(0)" [label = "subplots"]
-"ax(0)$1" -> "25(0)" [label = "subplots"]
-"colors_cw(0)$0" -> "sns(0)$0" [label = "color_palette"]
-"colors_cw(0)$0" -> "coolwarm(0)" [label = "color_palette"]
-"len(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"colors_cw(0)$0" -> "len(0)" [label = "color_palette"]
-"colors_cw(0)$0" -> "X(0)$0" [label = "color_palette"]
-"sns(0)$1" -> "sns(0)$0" [label = "barplot"]
-"sns(0)$1" -> "X(0)$0" [label = "barplot"]
-"sns(0)$1" -> "Y(0)$0" [label = "barplot"]
-"Text(0)$0" -> "ax(0)$1" [label = "set"]
-"Decrease in Youth Unemployment Rates(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"Text(0)$0" -> "Decrease in Youth Unemployment Rates(0)" [label = "set"]
-"Net Increase in Youth Unemployment Rates(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"Text(0)$0" -> "Net Increase in Youth Unemployment Rates(0)" [label = "set"]
-"sns(0)$2" -> "sns(0)$1" [label = "set"]
-"f(0)$1" -> "plt(0)$1" [label = "subplots"]
-"ax(0)$2" -> "plt(0)$1" [label = "subplots"]
-"f(0)$1" -> "20(0)" [label = "subplots"]
-"ax(0)$2" -> "20(0)" [label = "subplots"]
-"68(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb" [label = "appearsIn"]
-"f(0)$1" -> "68(0)" [label = "subplots"]
-"ax(0)$2" -> "68(0)" [label = "subplots"]
-"colors_cw(0)$1" -> "sns(0)$2" [label = "color_palette"]
-"colors_cw(0)$1" -> "coolwarm(0)" [label = "color_palette"]
-"colors_cw(0)$1" -> "len(0)" [label = "color_palette"]
-"colors_cw(0)$1" -> "x(0)$0" [label = "color_palette"]
-"sns(0)$3" -> "sns(0)$2" [label = "barplot"]
-"sns(0)$3" -> "x(0)$0" [label = "barplot"]
-"sns(0)$3" -> "y(0)$0" [label = "barplot"]
-"Text(0)$1" -> "ax(0)$2" [label = "set"]
-"Text(0)$1" -> "Decrease in Youth Unemployment Rates(0)" [label = "set"]
-"Text(0)$1" -> "Net Increase in Youth Unemployment Rates(0)" [label = "set"]
+digraph "" {
+	numpy -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	pandas -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"pd(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"matplotlib.pyplot" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"plt(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"plotly.offline" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"py(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"py(0)" -> "plotly.offline"	[label=assignedFrom];
+	"py(0)$0" -> "py(0)"	[label=init_notebook_mode];
+	"plotly.graph_objs" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"go(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"go(0)" -> "plotly.graph_objs"	[label=assignedFrom];
+	"plotly.tools" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"tls(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"tls(0)" -> "plotly.tools"	[label=assignedFrom];
+	seaborn -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"sns(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	warnings -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=importedBy];
+	"warnings(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"warnings(0)" -> warnings	[label=assignedFrom];
+	"warnings(0)$0" -> "warnings(0)"	[label=filterwarnings];
+	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
+	"ignore(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country(0)$0" -> "pd(0)"	[label=read_csv];
+	"country(0)$0" -> "../input/API_ILO_country_YU.csv(0)"	[label=read_csv];
+	"../input/API_ILO_country_YU.csv(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country(0)$1" -> "country(0)$0"	[label=head];
+	"print[0]" -> "country(0)$1"	[label=print];
+	"display[0]" -> "country(0)$1"	[label=display];
+	"Country Name(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"display[1]" -> "Country Name(0)"	[label=display];
+	"[<_ast.Constant object at 0x12f957430>, <_ast.Constant object at 0x12f957190>, <_ast.Constant object at 0x12f957ca0>, <_ast.Constant \
+object at 0x12f957fa0>, <_ast.Constant object at 0x12f957a30>, <_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957790>, <_\
+ast.Constant object at 0x12f957910>, <_ast.Constant object at 0x12f957040>, <_ast.Constant object at 0x12f957e20>, <_ast.Constant \
+object at 0x12f957100>, <_ast.Constant object at 0x12f957310>, <_ast.Constant object at 0x12f957b20>, <_ast.Constant object at 0x12f957ac0>, <_\
+ast.Constant object at 0x12f957d60>, <_ast.Constant object at 0x12f957c40>, <_ast.Constant object at 0x12f957b50>, <_ast.Constant \
+object at 0x12f957e50>, <_ast.Constant object at 0x12f957c70>, <_ast.Constant object at 0x12f957dc0>, <_ast.Constant object at 0x12f957760>, <_\
+ast.Constant object at 0x12f957df0>, <_ast.Constant object at 0x12f957940>, <_ast.Constant object at 0x12f9571c0>, <_ast.Constant \
+object at 0x12f957a60>, <_ast.Constant object at 0x12f957970>, <_ast.Constant object at 0x12f957820>, <_ast.Constant object at 0x12f957700>, <_\
+ast.Constant object at 0x12f957550>, <_ast.Constant object at 0x12f9578b0>, <_ast.Constant object at 0x12f9577c0>, <_ast.Constant \
+object at 0x12f957370>, <_ast.Constant object at 0x12f957cd0>, <_ast.Constant object at 0x12f957ee0>, <_ast.Constant object at 0x12f9573a0>, <_\
+ast.Constant object at 0x12f9578e0>, <_ast.Constant object at 0x12f957c10>, <_ast.Constant object at 0x12f957fd0>, <_ast.Constant \
+object at 0x12f957d30>, <_ast.Constant object at 0x12f957520>, <_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4fc70>, <_\
+ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant \
+object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant object at 0x12fc4fbe0>, <_\
+ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f370>, <_ast.Constant \
+object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant object at 0x12fc4f940>, <_\
+ast.Constant object at 0x12fc4f070>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4fcd0>, <_ast.Constant \
+object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f910>, <_\
+ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4f5e0>, <_ast.Constant \
+object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant object at 0x12fc4f160>, <_\
+ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fb50>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant \
+object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4ffd0>, <_\
+ast.Constant object at 0x12fc4f970>, <_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant \
+object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4fca0>, <_ast.Constant object at 0x12fc4f820>, <_\
+ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f430>, <_ast.Constant \
+object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f250>, <_\
+ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant \
+object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f5b0>, <_\
+ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant \
+object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fe80>, <_\
+ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4f0d0>, <_ast.Constant object at 0x12fc4f9d0>, <_ast.Constant \
+object at 0x12fc4fdc0>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant object at 0x12fc4ff10>, <_ast.Constant object at 0x12fc4f310>, <_\
+ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant \
+object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f790>, <_\
+ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant \
+object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fade5b0>, <_ast.Constant object at 0x12fade6d0>, <_\
+ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant \
+object at 0x12fade760>, <_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fadec70>, <_ast.Constant object at 0x12fadea60>, <_\
+ast.Constant object at 0x12fade4c0>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant \
+object at 0x12fade700>, <_ast.Constant object at 0x12fade310>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fadee80>, <_\
+ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12faded60>, <_ast.Constant object at 0x12fade2b0>, <_ast.Constant \
+object at 0x12fadeee0>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fade0a0>, <_\
+ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
+object at 0x12faded30>, <_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fade880>, <_ast.Constant object at 0x12fade9a0>, <_\
+ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade9d0>, <_ast.Constant \
+object at 0x12fade670>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fade220>, <_\
+ast.Constant object at 0x12fade0d0>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country_list(0)$0" -> "[<_ast.Constant object at 0x12f957430>, <_ast.Constant object at 0x12f957190>, <_ast.Constant object at 0x12f957ca0>, <_ast.Constant \
+object at 0x12f957fa0>, <_ast.Constant object at 0x12f957a30>, <_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957790>, <_\
+ast.Constant object at 0x12f957910>, <_ast.Constant object at 0x12f957040>, <_ast.Constant object at 0x12f957e20>, <_ast.Constant \
+object at 0x12f957100>, <_ast.Constant object at 0x12f957310>, <_ast.Constant object at 0x12f957b20>, <_ast.Constant object at 0x12f957ac0>, <_\
+ast.Constant object at 0x12f957d60>, <_ast.Constant object at 0x12f957c40>, <_ast.Constant object at 0x12f957b50>, <_ast.Constant \
+object at 0x12f957e50>, <_ast.Constant object at 0x12f957c70>, <_ast.Constant object at 0x12f957dc0>, <_ast.Constant object at 0x12f957760>, <_\
+ast.Constant object at 0x12f957df0>, <_ast.Constant object at 0x12f957940>, <_ast.Constant object at 0x12f9571c0>, <_ast.Constant \
+object at 0x12f957a60>, <_ast.Constant object at 0x12f957970>, <_ast.Constant object at 0x12f957820>, <_ast.Constant object at 0x12f957700>, <_\
+ast.Constant object at 0x12f957550>, <_ast.Constant object at 0x12f9578b0>, <_ast.Constant object at 0x12f9577c0>, <_ast.Constant \
+object at 0x12f957370>, <_ast.Constant object at 0x12f957cd0>, <_ast.Constant object at 0x12f957ee0>, <_ast.Constant object at 0x12f9573a0>, <_\
+ast.Constant object at 0x12f9578e0>, <_ast.Constant object at 0x12f957c10>, <_ast.Constant object at 0x12f957fd0>, <_ast.Constant \
+object at 0x12f957d30>, <_ast.Constant object at 0x12f957520>, <_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4fc70>, <_\
+ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant \
+object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant object at 0x12fc4fbe0>, <_\
+ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f370>, <_ast.Constant \
+object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant object at 0x12fc4f940>, <_\
+ast.Constant object at 0x12fc4f070>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4fcd0>, <_ast.Constant \
+object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f910>, <_\
+ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4f5e0>, <_ast.Constant \
+object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant object at 0x12fc4f160>, <_\
+ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fb50>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant \
+object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4ffd0>, <_\
+ast.Constant object at 0x12fc4f970>, <_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant \
+object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4fca0>, <_ast.Constant object at 0x12fc4f820>, <_\
+ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f430>, <_ast.Constant \
+object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f250>, <_\
+ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant \
+object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f5b0>, <_\
+ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant \
+object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fe80>, <_\
+ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4f0d0>, <_ast.Constant object at 0x12fc4f9d0>, <_ast.Constant \
+object at 0x12fc4fdc0>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant object at 0x12fc4ff10>, <_ast.Constant object at 0x12fc4f310>, <_\
+ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant \
+object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f790>, <_\
+ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant \
+object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fade5b0>, <_ast.Constant object at 0x12fade6d0>, <_\
+ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant \
+object at 0x12fade760>, <_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fadec70>, <_ast.Constant object at 0x12fadea60>, <_\
+ast.Constant object at 0x12fade4c0>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant \
+object at 0x12fade700>, <_ast.Constant object at 0x12fade310>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fadee80>, <_\
+ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12faded60>, <_ast.Constant object at 0x12fade2b0>, <_ast.Constant \
+object at 0x12fadeee0>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fade0a0>, <_\
+ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
+object at 0x12faded30>, <_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fade880>, <_ast.Constant object at 0x12fade9a0>, <_\
+ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade9d0>, <_ast.Constant \
+object at 0x12fade670>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fade220>, <_\
+ast.Constant object at 0x12fade0d0>](0)"	[label=assignedFrom];
+	"country_clean(0)$0" -> "country(0)$1"	[label=assignedFrom];
+	"country_clean(0)$0" -> "Country Name(0)"	[label=assignedFrom];
+	"country_clean(0)$0" -> "country_list(0)$0"	[label=assignedFrom];
+	"[<_ast.List object at 0x12fade3d0>, <_ast.List object at 0x12fade8b0>, <_ast.List object at 0x12fade580>, <_ast.List object at 0x12fade970>, <_\
+ast.List object at 0x12fadeac0>, <_ast.List object at 0x12fade7f0>, <_ast.List object at 0x12fade520>, <_ast.List object at 0x12fadec40>, <_\
+ast.List object at 0x12fadea00>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"metricscale1(0)$0" -> "[<_ast.List object at 0x12fade3d0>, <_ast.List object at 0x12fade8b0>, <_ast.List object at 0x12fade580>, <_ast.List object at 0x12fade970>, <_\
+ast.List object at 0x12fadeac0>, <_ast.List object at 0x12fade7f0>, <_ast.List object at 0x12fade520>, <_ast.List object at 0x12fadec40>, <_\
+ast.List object at 0x12fadea00>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x130532910>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Call object at 0x130532910>](0)"	[label=assignedFrom];
+	"World Map of Global Youth Unemployment in the Year 2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"layout(0)$0" -> "World Map of Global Youth Unemployment in the Year 2010(0)"	[label=dict];
+	"layout(0)$0" -> "dict(0)"	[label=dict];
+	"layout(0)$0" -> "True(0)"	[label=dict];
+	"layout(0)$0" -> "rgb(28,107,160)(0)"	[label=dict];
+	"layout(0)$0" -> "orthographic(0)"	[label=dict];
+	"layout(0)$0" -> "60(0)"	[label=dict];
+	"layout(0)$0" -> "10(0)"	[label=dict];
+	"layout(0)$0" -> "False(0)"	[label=dict];
+	"layout(0)$0" -> "rgb(102, 102, 102)(0)"	[label=dict];
+	"dict(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"True(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"rgb(28,107,160)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"orthographic(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"60(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"10(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"False(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"rgb(102, 102, 102)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"fig(0)$0" -> "data(0)$0"	[label=dict];
+	"fig(0)$0" -> "layout(0)$0"	[label=dict];
+	"py(0)$1" -> "py(0)$0"	[label=iplot];
+	"py(0)$1" -> "fig(0)$0"	[label=iplot];
+	"[<_ast.List object at 0x12fab1940>, <_ast.List object at 0x12fab1a00>, <_ast.List object at 0x12fab15e0>, <_ast.List object at 0x130522610>, <_\
+ast.List object at 0x130522eb0>, <_ast.List object at 0x1305224f0>, <_ast.List object at 0x1305228b0>, <_ast.List object at 0x130522e50>, <_\
+ast.List object at 0x130522580>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"metricscale2(0)$0" -> "[<_ast.List object at 0x12fab1940>, <_ast.List object at 0x12fab1a00>, <_ast.List object at 0x12fab15e0>, <_ast.List object at 0x130522610>, <_\
+ast.List object at 0x130522eb0>, <_ast.List object at 0x1305224f0>, <_ast.List object at 0x1305228b0>, <_ast.List object at 0x130522e50>, <_\
+ast.List object at 0x130522580>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x130522df0>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Call object at 0x130522df0>](0)"	[label=assignedFrom];
+	"World Map of Global Youth Unemployment in the Year 2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"layout(0)$1" -> "dict(0)"	[label=dict];
+	"layout(0)$1" -> "True(0)"	[label=dict];
+	"layout(0)$1" -> "rgb(28,107,160)(0)"	[label=dict];
+	"layout(0)$1" -> "orthographic(0)"	[label=dict];
+	"layout(0)$1" -> "60(0)"	[label=dict];
+	"layout(0)$1" -> "10(0)"	[label=dict];
+	"layout(0)$1" -> "False(0)"	[label=dict];
+	"layout(0)$1" -> "rgb(102, 102, 102)(0)"	[label=dict];
+	"layout(0)$1" -> "World Map of Global Youth Unemployment in the Year 2014(0)"	[label=dict];
+	"layout(0)$1" -> "rgb(202, 202, 202)(0)"	[label=dict];
+	"layout(0)$1" -> "0.05(0)"	[label=dict];
+	"rgb(202, 202, 202)(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"0.05(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"fig(0)$1" -> "data(0)$1"	[label=dict];
+	"fig(0)$1" -> "layout(0)$1"	[label=dict];
+	"py(0)$2" -> "py(0)$1"	[label=iplot];
+	"py(0)$2" -> "fig(0)$1"	[label=iplot];
+	"trace(0)$0" -> "go(0)"	[label=Scatter];
+	"trace(0)$0" -> "Country Name(0)"	[label=Scatter];
+	"trace(0)$0" -> "country_clean(0)$0"	[label=Scatter];
+	"trace(0)$0" -> "dict(0)"	[label=Scatter];
+	"trace(0)$0" -> "True(0)"	[label=Scatter];
+	"trace(0)$0" -> "2010(0)"	[label=Scatter];
+	"trace(0)$0" -> "markers(0)"	[label=Scatter];
+	"trace(0)$0" -> "Portland(0)"	[label=Scatter];
+	"2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"markers(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"Portland(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x12f8ab070>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x12f8ab070>](0)"	[label=assignedFrom];
+	"layout(0)$2" -> "go(0)"	[label=Layout];
+	"layout(0)$2" -> "dict(0)"	[label=Layout];
+	"layout(0)$2" -> "True(0)"	[label=Layout];
+	"layout(0)$2" -> "False(0)"	[label=Layout];
+	"layout(0)$2" -> "Scatter plot of unemployment rates in 2010(0)"	[label=Layout];
+	"layout(0)$2" -> "closest(0)"	[label=Layout];
+	"layout(0)$2" -> "Unemployment Rate(0)"	[label=Layout];
+	"layout(0)$2" -> "5(0)"	[label=Layout];
+	"layout(0)$2" -> "2(0)"	[label=Layout];
+	"Scatter plot of unemployment rates in 2010(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"closest(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"Unemployment Rate(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"5(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"2(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"fig(0)$2" -> "go(0)"	[label=Figure];
+	"fig(0)$2" -> "data(0)$2"	[label=Figure];
+	"fig(0)$2" -> "layout(0)$2"	[label=Figure];
+	"py(0)$3" -> "py(0)$2"	[label=iplot];
+	"py(0)$3" -> "fig(0)$2"	[label=iplot];
+	"trace1(0)$0" -> "go(0)"	[label=Scatter];
+	"trace1(0)$0" -> "Country Name(0)"	[label=Scatter];
+	"trace1(0)$0" -> "country_clean(0)$0"	[label=Scatter];
+	"trace1(0)$0" -> "dict(0)"	[label=Scatter];
+	"trace1(0)$0" -> "True(0)"	[label=Scatter];
+	"trace1(0)$0" -> "markers(0)"	[label=Scatter];
+	"trace1(0)$0" -> "Portland(0)"	[label=Scatter];
+	"trace1(0)$0" -> "2014(0)"	[label=Scatter];
+	"2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x12f951940>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x12f951940>](0)"	[label=assignedFrom];
+	"layout(0)$3" -> "go(0)"	[label=Layout];
+	"layout(0)$3" -> "dict(0)"	[label=Layout];
+	"layout(0)$3" -> "False(0)"	[label=Layout];
+	"layout(0)$3" -> "closest(0)"	[label=Layout];
+	"layout(0)$3" -> "Unemployment Rate(0)"	[label=Layout];
+	"layout(0)$3" -> "5(0)"	[label=Layout];
+	"layout(0)$3" -> "2(0)"	[label=Layout];
+	"layout(0)$3" -> "Scatter plot of unemployment rates in 2014(0)"	[label=Layout];
+	"Scatter plot of unemployment rates in 2014(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"fig(0)$3" -> "go(0)"	[label=Figure];
+	"fig(0)$3" -> "data(0)$3"	[label=Figure];
+	"fig(0)$3" -> "layout(0)$3"	[label=Figure];
+	"py(0)$4" -> "py(0)$3"	[label=iplot];
+	"py(0)$4" -> "fig(0)$3"	[label=iplot];
+	"diff(0)$0" -> "country_clean(0)$0"	[label=Sub];
+	"diff(0)$0" -> "2010(0)"	[label=Sub];
+	"diff(0)$0" -> "2014(0)"	[label=Sub];
+	"list(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "Country Name(0)"	[label=assignedFrom];
+	"x(0)$0" -> "country_clean(0)$0"	[label=assignedFrom];
+	"x(0)$0" -> "True(0)"	[label=assignedFrom];
+	"x(0)$0" -> "diff(0)$0"	[label=assignedFrom];
+	"x(0)$0" -> "list(0)"	[label=assignedFrom];
+	"x(0)$0" -> "x(0)$0"	[label=assignedFrom];
+	"x(0)$0" -> "zip(0)"	[label=assignedFrom];
+	"x(0)$0" -> "sorted(0)"	[label=assignedFrom];
+	"zip(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"sorted(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"y(0)$0" -> "Country Name(0)"	[label=assignedFrom];
+	"y(0)$0" -> "country_clean(0)$0"	[label=assignedFrom];
+	"y(0)$0" -> "True(0)"	[label=assignedFrom];
+	"y(0)$0" -> "diff(0)$0"	[label=assignedFrom];
+	"y(0)$0" -> "list(0)"	[label=assignedFrom];
+	"y(0)$0" -> "x(0)$0"	[label=assignedFrom];
+	"y(0)$0" -> "zip(0)"	[label=assignedFrom];
+	"y(0)$0" -> "sorted(0)"	[label=assignedFrom];
+	"Y(0)$0" -> "np(0)"	[label=concatenate];
+	"Y(0)$0" -> "[<_ast.Subscript object at 0x12f9a4700>, <_ast.Subscript object at 0x12f9a4820>](0)"	[label=concatenate];
+	"[<_ast.Subscript object at 0x12f9a4700>, <_ast.Subscript object at 0x12f9a4820>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "np(0)"	[label=concatenate];
+	"X(0)$0" -> "[<_ast.Subscript object at 0x12f9a4ac0>, <_ast.Subscript object at 0x12f9a4be0>](0)"	[label=concatenate];
+	"[<_ast.Subscript object at 0x12f9a4ac0>, <_ast.Subscript object at 0x12f9a4be0>](0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"c(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"keys(0)$0" -> "country_clean(0)$0"	[label=assignedFrom];
+	"keys(0)$0" -> "c(0)"	[label=assignedFrom];
+	"keys(0)$0" -> "20(0)"	[label=assignedFrom];
+	"20(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country_resize(0)$0" -> "pd(0)"	[label=melt];
+	"country_resize(0)$0" -> "Country Name(0)"	[label=melt];
+	"country_resize(0)$0" -> "country_clean(0)$0"	[label=melt];
+	"country_resize(0)$0" -> "keys(0)$0"	[label=melt];
+	"country_resize(0)$0" -> "key(0)"	[label=melt];
+	"key(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country_resize(0)$1" -> "country_resize(0)$0"	[label=assignedFrom];
+	"country_resize(0)$1" -> "variable(0)"	[label=assignedFrom];
+	"variable(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"mask(0)$0" -> "Country Name(0)"	[label=isin];
+	"mask(0)$0" -> "Y(0)$0"	[label=isin];
+	"mask(0)$0" -> "country_resize(0)$1"	[label=isin];
+	"country_final(0)$0" -> "country_resize(0)$1"	[label=assignedFrom];
+	"country_final(0)$0" -> "mask(0)$0"	[label=assignedFrom];
+	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"country_pivot(0)$0" -> "Country Name(0)"	[label=pivot];
+	"country_pivot(0)$0" -> "key(0)"	[label=pivot];
+	"country_pivot(0)$0" -> "country_final(0)$0"	[label=pivot];
+	"country_pivot(0)$0" -> "Year(0)"	[label=pivot];
+	"Year(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"country_pivot(0)$1" -> "False(0)"	[label=sort_values];
+	"country_pivot(0)$1" -> "2014(0)"	[label=sort_values];
+	"country_pivot(0)$1" -> "country_pivot(0)$0"	[label=sort_values];
+	"ax(0)$0" -> "sns(0)"	[label=heatmap];
+	"ax(0)$0" -> "False(0)"	[label=heatmap];
+	"ax(0)$0" -> "country_pivot(0)$1"	[label=heatmap];
+	"ax(0)$0" -> "coolwarm(0)"	[label=heatmap];
+	"ax(0)$0" -> "0(0)"	[label=heatmap];
+	"ax(0)$0" -> "white(0)"	[label=heatmap];
+	"coolwarm(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"0(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"white(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"plt(0)$1" -> "plt(0)$0"	[label=title];
+	"plt(0)$1" -> "Movement in Unemployment rate ( Warmer: Higher rate, Cooler: Lower rate )(0)"	[label=title];
+	"Movement in Unemployment rate ( Warmer: Higher rate, Cooler: Lower rate )(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"sns(0)$0" -> "sns(0)"	[label=set];
+	"f(0)$0" -> "20(0)"	[label=subplots];
+	"f(0)$0" -> "plt(0)$1"	[label=subplots];
+	"f(0)$0" -> "25(0)"	[label=subplots];
+	"25(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"ax(0)$1" -> "20(0)"	[label=subplots];
+	"ax(0)$1" -> "plt(0)$1"	[label=subplots];
+	"ax(0)$1" -> "25(0)"	[label=subplots];
+	"colors_cw(0)$0" -> "X(0)$0"	[label=color_palette];
+	"colors_cw(0)$0" -> "coolwarm(0)"	[label=color_palette];
+	"colors_cw(0)$0" -> "sns(0)$0"	[label=color_palette];
+	"colors_cw(0)$0" -> "len(0)"	[label=color_palette];
+	"len(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"sns(0)$1" -> "Y(0)$0"	[label=barplot];
+	"sns(0)$1" -> "X(0)$0"	[label=barplot];
+	"sns(0)$1" -> "sns(0)$0"	[label=barplot];
+	"Text(0)$0" -> "ax(0)$1"	[label=set];
+	"Text(0)$0" -> "Decrease in Youth Unemployment Rates(0)"	[label=set];
+	"Text(0)$0" -> "Net Increase in Youth Unemployment Rates(0)"	[label=set];
+	"Decrease in Youth Unemployment Rates(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"Net Increase in Youth Unemployment Rates(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"sns(0)$2" -> "sns(0)$1"	[label=set];
+	"f(0)$1" -> "20(0)"	[label=subplots];
+	"f(0)$1" -> "plt(0)$1"	[label=subplots];
+	"f(0)$1" -> "68(0)"	[label=subplots];
+	"68(0)" -> "generation-unemployed-interactive-plotly-visuals.ipynb"	[label=appearsIn];
+	"ax(0)$2" -> "20(0)"	[label=subplots];
+	"ax(0)$2" -> "plt(0)$1"	[label=subplots];
+	"ax(0)$2" -> "68(0)"	[label=subplots];
+	"colors_cw(0)$1" -> "x(0)$0"	[label=color_palette];
+	"colors_cw(0)$1" -> "coolwarm(0)"	[label=color_palette];
+	"colors_cw(0)$1" -> "len(0)"	[label=color_palette];
+	"colors_cw(0)$1" -> "sns(0)$2"	[label=color_palette];
+	"sns(0)$3" -> "x(0)$0"	[label=barplot];
+	"sns(0)$3" -> "y(0)$0"	[label=barplot];
+	"sns(0)$3" -> "sns(0)$2"	[label=barplot];
+	"Text(0)$1" -> "Decrease in Youth Unemployment Rates(0)"	[label=set];
+	"Text(0)$1" -> "Net Increase in Youth Unemployment Rates(0)"	[label=set];
+	"Text(0)$1" -> "ax(0)$2"	[label=set];
 }

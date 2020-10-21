@@ -10,11 +10,6 @@ k:select-from-where a k:Notebook .
 <http://purl.org/dj/kaggle/select-from-where#1411778341> rdfs:label "job_post_scores(0)$1" ;
     dj:mean <http://purl.org/dj/kaggle/select-from-where#1411712804> .
 
-<http://purl.org/dj/kaggle/select-from-where#189333942> rdfs:label """ 
-
-        (0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1806960890> .
-
 <http://purl.org/dj/kaggle/select-from-where#249561878> rdfs:label "print[0]" ;
     dj:print <http://purl.org/dj/kaggle/select-from-where#223085194>,
         <http://purl.org/dj/kaggle/select-from-where#4211215604> .
@@ -54,6 +49,17 @@ k:select-from-where a k:Notebook .
 
 <http://purl.org/dj/kaggle/select-from-where#1411712804> rdfs:label "job_post_scores(0)$0" ;
     dj:to_dataframe <http://purl.org/dj/kaggle/select-from-where#1258882726> .
+
+<http://purl.org/dj/kaggle/select-from-where#1491083581> rdfs:label """
+
+        SELECT score, title
+
+        FROM `bigquery-public-data.hacker_news.full`
+
+        WHERE type = "job" 
+
+        (0)""" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/1806960890> .
 
 <http://purl.org/dj/kaggle/select-from-where#1558128176> rdfs:label """
 
@@ -151,14 +157,6 @@ k:select-from-where a k:Notebook .
 <http://purl.org/dj/python/lib/251003753> rdfs:label "bigquery" ;
     dj:importedBy <http://purl.org/dj/python/lib/520815811> .
 
-<http://purl.org/dj/python/lib/4183170569> rdfs:label """
-
-        SELECT score, title
-
-        FROM `bigquery-public-data.hacker_news.full`
-
-        WHERE type = """ .
-
 <http://purl.org/dj/python/lib/520815811> rdfs:label "google.cloud" ;
     dj:importedBy <http://purl.org/dj/python/lib/1806960890> .
 
@@ -171,7 +169,7 @@ k:select-from-where a k:Notebook .
         <http://purl.org/dj/kaggle/select-from-where#395445077> .
 
 <http://purl.org/dj/kaggle/select-from-where#338363151> rdfs:label "query(0)$3" ;
-    dj:None <http://purl.org/dj/python/lib/4183170569> .
+    dj:assignedFrom <http://purl.org/dj/kaggle/select-from-where#1491083581> .
 
 <http://purl.org/dj/kaggle/select-from-where#395576151> rdfs:label "client(0)$2" ;
     dj:Client <http://purl.org/dj/kaggle/select-from-where#439485418> .

@@ -1,72 +1,69 @@
-digraph { 
-"numpy" -> "patterns-of-missing-data.ipynb" [label = "importedBy"]
-"np(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"np(0)" -> "numpy" [label = "assignedFrom"]
-"pandas" -> "patterns-of-missing-data.ipynb" [label = "importedBy"]
-"pd(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"missingno" -> "patterns-of-missing-data.ipynb" [label = "importedBy"]
-"msno(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)" -> "missingno" [label = "assignedFrom"]
-"train(0)$0" -> "pd(0)" [label = "read_csv"]
-"../input/application_train.csv(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"train(0)$0" -> "../input/application_train.csv(0)" [label = "read_csv"]
-"msno(0)$0" -> "msno(0)" [label = "matrix"]
-"msno(0)$0" -> "train(0)$0" [label = "matrix"]
-"500(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)$0" -> "500(0)" [label = "matrix"]
-"msno(0)$1" -> "msno(0)$0" [label = "matrix"]
-"msno(0)$1" -> "train(0)$0" [label = "matrix"]
-"0(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)$1" -> "0(0)" [label = "matrix"]
-"100(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)$1" -> "100(0)" [label = "matrix"]
-"40(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)$1" -> "40(0)" [label = "matrix"]
-"94(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"msno(0)$1" -> "94(0)" [label = "matrix"]
-"msno(0)$2" -> "msno(0)$1" [label = "dendrogram"]
-"msno(0)$2" -> "train(0)$0" [label = "dendrogram"]
-"1(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"train(0)$1" -> "train(0)$0" [label = "assignedFrom"]
-"train(0)$1" -> "1(0)" [label = "assignedFrom"]
-"train(0)$2" -> "train(0)$1" [label = "assignedFrom"]
-"train(0)$2" -> "0(0)" [label = "assignedFrom"]
-"mean_c(0)$0" -> "np(0)" [label = "mean"]
-"mean_c(0)$0" -> "train(0)$2" [label = "mean"]
-"mean_c(0)$0" -> "train(0)$2" [label = "mean"]
-"incomplete(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"mean_c(0)$0" -> "incomplete(0)" [label = "mean"]
-"mean_c(0)$0" -> "0(0)" [label = "mean"]
-"TARGET(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"mean_c(0)$0" -> "TARGET(0)" [label = "mean"]
-"mean_i(0)$0" -> "np(0)" [label = "mean"]
-"mean_i(0)$0" -> "train(0)$2" [label = "mean"]
-"mean_i(0)$0" -> "train(0)$2" [label = "mean"]
-"mean_i(0)$0" -> "incomplete(0)" [label = "mean"]
-"mean_i(0)$0" -> "1(0)" [label = "mean"]
-"mean_i(0)$0" -> "TARGET(0)" [label = "mean"]
-"default ratio for more complete: {:.1%} 
-default ratio for less complete: {:.1%}(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"print[0]" -> "default ratio for more complete: {:.1%} 
-default ratio for less complete: {:.1%}(0)" [label = "print"]
-"print[1]" -> "mean_c(0)$0" [label = "print"]
-"print[2]" -> "mean_i(0)$0" [label = "print"]
-"scipy.stats" -> "patterns-of-missing-data.ipynb" [label = "importedBy"]
-"chi2_contingency" -> "scipy.stats" [label = "importedBy"]
-"chi2_contingency(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"chi2_contingency(0)" -> "chi2_contingency" [label = "assignedFrom"]
-"props(0)$0" -> "pd(0)" [label = "crosstab"]
-"props(0)$0" -> "train(0)$2" [label = "crosstab"]
-"props(0)$0" -> "train(0)$2" [label = "crosstab"]
-"c(0)$0" -> "props(0)$0" [label = "chi2_contingency"]
-"log-likelihood(0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"c(0)$0" -> "log-likelihood(0)" [label = "chi2_contingency"]
-"print[0]" -> "props(0)$0" [label = "print"]
-"
- p-value= (0)" -> "patterns-of-missing-data.ipynb" [label = "appearsIn"]
-"print[1]" -> "
- p-value= (0)" [label = "print"]
-"print[2]" -> "c(0)$0" [label = "print"]
-"print[3]" -> "1(0)" [label = "print"]
+strict digraph "" {
+	numpy -> "patterns-of-missing-data.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	pandas -> "patterns-of-missing-data.ipynb"	[label=importedBy];
+	"pd(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	missingno -> "patterns-of-missing-data.ipynb"	[label=importedBy];
+	"msno(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"msno(0)" -> missingno	[label=assignedFrom];
+	"train(0)$0" -> "pd(0)"	[label=read_csv];
+	"train(0)$0" -> "../input/application_train.csv(0)"	[label=read_csv];
+	"../input/application_train.csv(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"msno(0)$0" -> "msno(0)"	[label=matrix];
+	"msno(0)$0" -> "train(0)$0"	[label=matrix];
+	"msno(0)$0" -> "500(0)"	[label=matrix];
+	"500(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"msno(0)$1" -> "train(0)$0"	[label=matrix];
+	"msno(0)$1" -> "msno(0)$0"	[label=matrix];
+	"msno(0)$1" -> "0(0)"	[label=matrix];
+	"msno(0)$1" -> "100(0)"	[label=matrix];
+	"msno(0)$1" -> "40(0)"	[label=matrix];
+	"msno(0)$1" -> "94(0)"	[label=matrix];
+	"0(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"100(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"40(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"94(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"msno(0)$2" -> "train(0)$0"	[label=dendrogram];
+	"msno(0)$2" -> "msno(0)$1"	[label=dendrogram];
+	"1(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"train(0)$1" -> "train(0)$0"	[label=assignedFrom];
+	"train(0)$1" -> "1(0)"	[label=assignedFrom];
+	"train(0)$2" -> "0(0)"	[label=assignedFrom];
+	"train(0)$2" -> "train(0)$1"	[label=assignedFrom];
+	"mean_c(0)$0" -> "np(0)"	[label=mean];
+	"mean_c(0)$0" -> "0(0)"	[label=mean];
+	"mean_c(0)$0" -> "train(0)$2"	[label=mean];
+	"mean_c(0)$0" -> "incomplete(0)"	[label=mean];
+	"mean_c(0)$0" -> "TARGET(0)"	[label=mean];
+	"incomplete(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"TARGET(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"mean_i(0)$0" -> "np(0)"	[label=mean];
+	"mean_i(0)$0" -> "1(0)"	[label=mean];
+	"mean_i(0)$0" -> "train(0)$2"	[label=mean];
+	"mean_i(0)$0" -> "incomplete(0)"	[label=mean];
+	"mean_i(0)$0" -> "TARGET(0)"	[label=mean];
+	"default ratio for more complete: {:.1\%} 
+default ratio for less complete: {:.1\%}(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"print[0]" -> "default ratio for more complete: {:.1\%} 
+default ratio for less complete: {:.1\%}(0)"	[label=print];
+	"print[0]" -> "props(0)$0"	[label=print];
+	"props(0)$0" -> "pd(0)"	[label=crosstab];
+	"props(0)$0" -> "train(0)$2"	[label=crosstab];
+	"print[1]" -> "mean_c(0)$0"	[label=print];
+	"print[1]" -> "
+ p-value= (0)"	[label=print];
+	"
+ p-value= (0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"print[2]" -> "mean_i(0)$0"	[label=print];
+	"print[2]" -> "c(0)$0"	[label=print];
+	"c(0)$0" -> "props(0)$0"	[label=chi2_contingency];
+	"c(0)$0" -> "log-likelihood(0)"	[label=chi2_contingency];
+	"scipy.stats" -> "patterns-of-missing-data.ipynb"	[label=importedBy];
+	chi2_contingency -> "scipy.stats"	[label=importedBy];
+	"chi2_contingency(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"chi2_contingency(0)" -> chi2_contingency	[label=assignedFrom];
+	"log-likelihood(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
+	"print[3]" -> "1(0)"	[label=print];
 }

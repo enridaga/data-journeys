@@ -1,99 +1,114 @@
-digraph { 
-"numpy" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"np(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"np(0)" -> "numpy" [label = "assignedFrom"]
-"pandas" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"pd(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"matplotlib.pyplot" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"plt(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"plt(0)" -> "matplotlib.pyplot" [label = "assignedFrom"]
-"[<_ast.Constant object at 0x103ce4820>, <_ast.Constant object at 0x10501c310>, <_ast.Constant object at 0x10501c0a0>, <_ast.Constant object at 0x10501c700>, <_ast.Constant object at 0x10501c1c0>, <_ast.Constant object at 0x10501c100>, <_ast.Constant object at 0x10501c040>, <_ast.Constant object at 0x10501c4f0>, <_ast.Constant object at 0x10501c610>, <_ast.Constant object at 0x10501c4c0>, <_ast.Constant object at 0x10501c6a0>, <_ast.Constant object at 0x10501c160>, <_ast.Constant object at 0x10501c7c0>, <_ast.Constant object at 0x10501c250>, <_ast.Constant object at 0x10501c130>, <_ast.Constant object at 0x10501c370>, <_ast.Constant object at 0x10501c3d0>, <_ast.Constant object at 0x10501cd90>, <_ast.Constant object at 0x10501cac0>, <_ast.Constant object at 0x10501c0d0>, <_ast.Constant object at 0x10501c2e0>, <_ast.Constant object at 0x10501cfd0>, <_ast.Constant object at 0x10501c670>, <_ast.Constant object at 0x10501cdf0>, <_ast.Constant object at 0x10501c6d0>, <_ast.Constant object at 0x10501cbb0>, <_ast.Constant object at 0x10501c280>, <_ast.Constant object at 0x10501c790>, <_ast.Constant object at 0x10501c550>, <_ast.Constant object at 0x10501c490>, <_ast.Constant object at 0x10501caf0>, <_ast.Constant object at 0x10501c8b0>, <_ast.Constant object at 0x10501cbe0>, <_ast.Constant object at 0x10501c820>](0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"dataset(0)$0" -> "[<_ast.Constant object at 0x103ce4820>, <_ast.Constant object at 0x10501c310>, <_ast.Constant object at 0x10501c0a0>, <_ast.Constant object at 0x10501c700>, <_ast.Constant object at 0x10501c1c0>, <_ast.Constant object at 0x10501c100>, <_ast.Constant object at 0x10501c040>, <_ast.Constant object at 0x10501c4f0>, <_ast.Constant object at 0x10501c610>, <_ast.Constant object at 0x10501c4c0>, <_ast.Constant object at 0x10501c6a0>, <_ast.Constant object at 0x10501c160>, <_ast.Constant object at 0x10501c7c0>, <_ast.Constant object at 0x10501c250>, <_ast.Constant object at 0x10501c130>, <_ast.Constant object at 0x10501c370>, <_ast.Constant object at 0x10501c3d0>, <_ast.Constant object at 0x10501cd90>, <_ast.Constant object at 0x10501cac0>, <_ast.Constant object at 0x10501c0d0>, <_ast.Constant object at 0x10501c2e0>, <_ast.Constant object at 0x10501cfd0>, <_ast.Constant object at 0x10501c670>, <_ast.Constant object at 0x10501cdf0>, <_ast.Constant object at 0x10501c6d0>, <_ast.Constant object at 0x10501cbb0>, <_ast.Constant object at 0x10501c280>, <_ast.Constant object at 0x10501c790>, <_ast.Constant object at 0x10501c550>, <_ast.Constant object at 0x10501c490>, <_ast.Constant object at 0x10501caf0>, <_ast.Constant object at 0x10501c8b0>, <_ast.Constant object at 0x10501cbe0>, <_ast.Constant object at 0x10501c820>](0)" [label = "assignedFrom"]
-"[](0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"outlier(0)$0" -> "[](0)" [label = "assignedFrom"]
-"data(1)" -> "detect_outlier[0]" [label = "_argToVar"]
-"threshold(1)$0" -> "3(1)" [label = "assignedFrom"]
-"mean(1)$0" -> "np(1)" [label = "mean"]
-"mean(1)$0" -> "data(1)" [label = "mean"]
-"std(1)$0" -> "np(1)" [label = "std"]
-"std(1)$0" -> "data(1)" [label = "std"]
-"i(1)" -> "data(1)" [label = "iteratorOf"]
-"z_score(1)$0" -> "i(1)" [label = "Div"]
-"z_score(1)$0" -> "mean(1)$0" [label = "Div"]
-"z_score(1)$0" -> "std(1)$0" [label = "Div"]
-"outlier(1)$0" -> "outlier(1)" [label = "append"]
-"outlier(1)$0" -> "i(1)" [label = "append"]
-"outlier_data(0)$0" -> "dataset(0)$0" [label = "detect_outlier"]
-"dataset(0)$1" -> "dataset(0)$0" [label = "sorted"]
-"dataset(0)$2" -> "pd(0)" [label = "DataFrame"]
-"dataset(0)$2" -> "dataset(0)$2" [label = "DataFrame"]
-"quantile1(0)$0" -> "dataset(0)$2" [label = "quantile"]
-"0.25(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"quantile1(0)$0" -> "0.25(0)" [label = "quantile"]
-"quantile3(0)$0" -> "dataset(0)$2" [label = "quantile"]
-"0.75(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"quantile3(0)$0" -> "0.75(0)" [label = "quantile"]
-"print[0]" -> "quantile1(0)$0" [label = "print"]
-"print[1]" -> "quantile3(0)$0" [label = "print"]
-"iqrValue(0)$0" -> "quantile3(0)$0" [label = "Sub"]
-"iqrValue(0)$0" -> "quantile1(0)$0" [label = "Sub"]
-"print[0]" -> "iqrValue(0)$0" [label = "print"]
-"lower_bound_val(0)$0" -> "quantile1(0)$0" [label = "Sub"]
-"1.5(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"lower_bound_val(0)$0" -> "1.5(0)" [label = "Sub"]
-"lower_bound_val(0)$0" -> "iqrValue(0)$0" [label = "Sub"]
-"upper_bound_val(0)$0" -> "quantile3(0)$0" [label = "Add"]
-"upper_bound_val(0)$0" -> "1.5(0)" [label = "Add"]
-"upper_bound_val(0)$0" -> "iqrValue(0)$0" [label = "Add"]
-"print[0]" -> "lower_bound_val(0)$0" [label = "print"]
-"print[1]" -> "upper_bound_val(0)$0" [label = "print"]
-"pandas" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"pd(0)" -> "pandas" [label = "assignedFrom"]
-"sklearn.datasets" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"load_boston" -> "sklearn.datasets" [label = "importedBy"]
-"load_boston(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"load_boston(0)" -> "load_boston" [label = "assignedFrom"]
-"boston(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"x(0)$0" -> "boston(0)" [label = "assignedFrom"]
-"y(0)$0" -> "boston(0)" [label = "assignedFrom"]
-"columns(0)$0" -> "boston(0)" [label = "assignedFrom"]
-"boston_df(0)$0" -> "pd(0)" [label = "DataFrame"]
-"boston_df(0)$0" -> "boston(0)" [label = "DataFrame"]
-"boston_df(0)$1" -> "boston_df(0)$0" [label = "assignedFrom"]
-"boston_df(0)$1" -> "columns(0)$0" [label = "assignedFrom"]
-"boston_df(0)$2" -> "boston_df(0)$1" [label = "head"]
-"2(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"boston_df(0)$2" -> "2(0)" [label = "head"]
-"seaborn" -> "outlier-tutorial.ipynb" [label = "importedBy"]
-"sns(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"sns(0)" -> "seaborn" [label = "assignedFrom"]
-"sns(0)$0" -> "sns(0)" [label = "boxplot"]
-"sns(0)$0" -> "dataset(0)$2" [label = "boxplot"]
-"sns(0)$1" -> "sns(0)$0" [label = "boxplot"]
-"sns(0)$1" -> "boston_df(0)$2" [label = "boxplot"]
-"DIS(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"sns(0)$1" -> "DIS(0)" [label = "boxplot"]
-"fig(0)$0" -> "plt(0)" [label = "subplots"]
-"ax(0)$0" -> "plt(0)" [label = "subplots"]
-"16(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"fig(0)$0" -> "16(0)" [label = "subplots"]
-"ax(0)$0" -> "16(0)" [label = "subplots"]
-"8(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"fig(0)$0" -> "8(0)" [label = "subplots"]
-"ax(0)$0" -> "8(0)" [label = "subplots"]
-"ax(0)$1" -> "ax(0)$0" [label = "scatter"]
-"ax(0)$1" -> "boston_df(0)$2" [label = "scatter"]
-"INDUS(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"ax(0)$1" -> "INDUS(0)" [label = "scatter"]
-"ax(0)$1" -> "boston_df(0)$2" [label = "scatter"]
-"TAX(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"ax(0)$1" -> "TAX(0)" [label = "scatter"]
-"ax(0)$2" -> "ax(0)$1" [label = "set_xlabel"]
-"Proportion of non-retail business acres per town(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"ax(0)$2" -> "Proportion of non-retail business acres per town(0)" [label = "set_xlabel"]
-"ax(0)$3" -> "ax(0)$2" [label = "set_ylabel"]
-"Full-value property-tax rate per $10,000(0)" -> "outlier-tutorial.ipynb" [label = "appearsIn"]
-"ax(0)$3" -> "Full-value property-tax rate per $10,000(0)" [label = "set_ylabel"]
-"plt(0)$0" -> "plt(0)" [label = "show"]
+digraph "" {
+	numpy -> "outlier-tutorial.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	pandas -> "outlier-tutorial.ipynb"	[label=importedBy];
+	"pd(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"matplotlib.pyplot" -> "outlier-tutorial.ipynb"	[label=importedBy];
+	"plt(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x12f8ab430>, <_ast.Constant object at 0x12f8ab3d0>, <_ast.Constant object at 0x12f8ab100>, <_ast.Constant \
+object at 0x12f8ab310>, <_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab1f0>, <_ast.Constant object at 0x12f8ab130>, <_\
+ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab880>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
+object at 0x12f8ab190>, <_ast.Constant object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab2b0>, <_ast.Constant object at 0x12f8ab250>, <_\
+ast.Constant object at 0x12f8ab3a0>, <_ast.Constant object at 0x12f8ab370>, <_ast.Constant object at 0x12f8ab070>, <_ast.Constant \
+object at 0x12f8ab790>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant object at 0x12f85e880>, <_ast.Constant object at 0x12f85eb50>, <_\
+ast.Constant object at 0x12f85e7c0>, <_ast.Constant object at 0x12f85e760>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
+object at 0x12f85e8b0>, <_ast.Constant object at 0x12f85efd0>, <_ast.Constant object at 0x12f85ed30>, <_ast.Constant object at 0x12f85ea90>, <_\
+ast.Constant object at 0x12f85edf0>, <_ast.Constant object at 0x12f85e6a0>, <_ast.Constant object at 0x12f85e5b0>, <_ast.Constant \
+object at 0x12f85e7f0>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant object at 0x12f85ea60>](0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"dataset(0)$0" -> "[<_ast.Constant object at 0x12f8ab430>, <_ast.Constant object at 0x12f8ab3d0>, <_ast.Constant object at 0x12f8ab100>, <_ast.Constant \
+object at 0x12f8ab310>, <_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab1f0>, <_ast.Constant object at 0x12f8ab130>, <_\
+ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab880>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
+object at 0x12f8ab190>, <_ast.Constant object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab2b0>, <_ast.Constant object at 0x12f8ab250>, <_\
+ast.Constant object at 0x12f8ab3a0>, <_ast.Constant object at 0x12f8ab370>, <_ast.Constant object at 0x12f8ab070>, <_ast.Constant \
+object at 0x12f8ab790>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant object at 0x12f85e880>, <_ast.Constant object at 0x12f85eb50>, <_\
+ast.Constant object at 0x12f85e7c0>, <_ast.Constant object at 0x12f85e760>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
+object at 0x12f85e8b0>, <_ast.Constant object at 0x12f85efd0>, <_ast.Constant object at 0x12f85ed30>, <_ast.Constant object at 0x12f85ea90>, <_\
+ast.Constant object at 0x12f85edf0>, <_ast.Constant object at 0x12f85e6a0>, <_ast.Constant object at 0x12f85e5b0>, <_ast.Constant \
+object at 0x12f85e7f0>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant object at 0x12f85ea60>](0)"	[label=assignedFrom];
+	"[](0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"outlier(0)$0" -> "[](0)"	[label=assignedFrom];
+	"data(1)" -> "detect_outlier[0]"	[label=_argToVar];
+	"threshold(1)$0" -> "3(1)"	[label=assignedFrom];
+	"mean(1)$0" -> "data(1)"	[label=mean];
+	"mean(1)$0" -> "np(1)"	[label=mean];
+	"std(1)$0" -> "data(1)"	[label=std];
+	"std(1)$0" -> "np(1)"	[label=std];
+	"i(1)" -> "data(1)"	[label=iteratorOf];
+	"z_score(1)$0" -> "mean(1)$0"	[label=Div];
+	"z_score(1)$0" -> "std(1)$0"	[label=Div];
+	"z_score(1)$0" -> "i(1)"	[label=Div];
+	"outlier(1)$0" -> "i(1)"	[label=append];
+	"outlier(1)$0" -> "outlier(1)"	[label=append];
+	"outlier_data(0)$0" -> "dataset(0)$0"	[label=detect_outlier];
+	"dataset(0)$1" -> "dataset(0)$0"	[label=sorted];
+	"dataset(0)$2" -> "pd(0)"	[label=DataFrame];
+	"dataset(0)$2" -> "dataset(0)$2"	[label=DataFrame];
+	"quantile1(0)$0" -> "dataset(0)$2"	[label=quantile];
+	"quantile1(0)$0" -> "0.25(0)"	[label=quantile];
+	"0.25(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"quantile3(0)$0" -> "dataset(0)$2"	[label=quantile];
+	"quantile3(0)$0" -> "0.75(0)"	[label=quantile];
+	"0.75(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"print[0]" -> "quantile1(0)$0"	[label=print];
+	"print[0]" -> "iqrValue(0)$0"	[label=print];
+	"print[0]" -> "lower_bound_val(0)$0"	[label=print];
+	"iqrValue(0)$0" -> "quantile1(0)$0"	[label=Sub];
+	"iqrValue(0)$0" -> "quantile3(0)$0"	[label=Sub];
+	"lower_bound_val(0)$0" -> "quantile1(0)$0"	[label=Sub];
+	"lower_bound_val(0)$0" -> "iqrValue(0)$0"	[label=Sub];
+	"lower_bound_val(0)$0" -> "1.5(0)"	[label=Sub];
+	"print[1]" -> "quantile3(0)$0"	[label=print];
+	"print[1]" -> "upper_bound_val(0)$0"	[label=print];
+	"upper_bound_val(0)$0" -> "quantile3(0)$0"	[label=Add];
+	"upper_bound_val(0)$0" -> "iqrValue(0)$0"	[label=Add];
+	"upper_bound_val(0)$0" -> "1.5(0)"	[label=Add];
+	"1.5(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"sklearn.datasets" -> "outlier-tutorial.ipynb"	[label=importedBy];
+	load_boston -> "sklearn.datasets"	[label=importedBy];
+	"load_boston(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"load_boston(0)" -> load_boston	[label=assignedFrom];
+	"boston(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "boston(0)"	[label=assignedFrom];
+	"y(0)$0" -> "boston(0)"	[label=assignedFrom];
+	"columns(0)$0" -> "boston(0)"	[label=assignedFrom];
+	"boston_df(0)$0" -> "pd(0)"	[label=DataFrame];
+	"boston_df(0)$0" -> "boston(0)"	[label=DataFrame];
+	"boston_df(0)$1" -> "columns(0)$0"	[label=assignedFrom];
+	"boston_df(0)$1" -> "boston_df(0)$0"	[label=assignedFrom];
+	"boston_df(0)$2" -> "boston_df(0)$1"	[label=head];
+	"boston_df(0)$2" -> "2(0)"	[label=head];
+	"2(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	seaborn -> "outlier-tutorial.ipynb"	[label=importedBy];
+	"sns(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"sns(0)$0" -> "dataset(0)$2"	[label=boxplot];
+	"sns(0)$0" -> "sns(0)"	[label=boxplot];
+	"sns(0)$1" -> "boston_df(0)$2"	[label=boxplot];
+	"sns(0)$1" -> "sns(0)$0"	[label=boxplot];
+	"sns(0)$1" -> "DIS(0)"	[label=boxplot];
+	"DIS(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"fig(0)$0" -> "plt(0)"	[label=subplots];
+	"fig(0)$0" -> "16(0)"	[label=subplots];
+	"fig(0)$0" -> "8(0)"	[label=subplots];
+	"16(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"8(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"ax(0)$0" -> "plt(0)"	[label=subplots];
+	"ax(0)$0" -> "16(0)"	[label=subplots];
+	"ax(0)$0" -> "8(0)"	[label=subplots];
+	"ax(0)$1" -> "boston_df(0)$2"	[label=scatter];
+	"ax(0)$1" -> "ax(0)$0"	[label=scatter];
+	"ax(0)$1" -> "INDUS(0)"	[label=scatter];
+	"ax(0)$1" -> "TAX(0)"	[label=scatter];
+	"INDUS(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"TAX(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"ax(0)$2" -> "ax(0)$1"	[label=set_xlabel];
+	"ax(0)$2" -> "Proportion of non-retail business acres per town(0)"	[label=set_xlabel];
+	"Proportion of non-retail business acres per town(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"ax(0)$3" -> "ax(0)$2"	[label=set_ylabel];
+	"ax(0)$3" -> "Full-value property-tax rate per $10,000(0)"	[label=set_ylabel];
+	"Full-value property-tax rate per $10,000(0)" -> "outlier-tutorial.ipynb"	[label=appearsIn];
+	"plt(0)$0" -> "plt(0)"	[label=show];
 }

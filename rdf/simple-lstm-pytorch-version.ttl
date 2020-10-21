@@ -4,808 +4,1005 @@
 
 k:simple-lstm-pytorch-version a k:Notebook .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1075195877423998189> rdfs:label "submission(0)$1" ;
-    dj:to_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7228032687919214063> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1003685339> rdfs:label "max_features(0)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1003619802>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#121635265>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1009518051> rdfs:label "crawl_matrix(0)$0" ;
+    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1571489465>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1014564327> rdfs:label "glove_matrix(0)$0" ;
+    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1578632893>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#105120105> rdfs:label "_(13)$0" ;
+    dj:lstm1 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#944440689> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#105185642> rdfs:label "_(13)$1" ;
+    dj:lstm2 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526517186> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#105251179> rdfs:label "_(13)$2" ;
+    dj:max <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526975939> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115868032> rdfs:label "x(10)$1" ;
+    dj:permute <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115802495>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45154531>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45482212>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45809893>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#46137574> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#116064643> rdfs:label "x(10)$4" ;
+    dj:squeeze <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115999106>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45809893> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1177880187> rdfs:label "unknown_words(6)$1" ;
+    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1177814650>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179896900> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1181746991> rdfs:label "seed_everything[1]" ;
+    dj:seed_everything <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#514196535> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#128254368> rdfs:label "gc(0)$0" ;
+    dj:collect <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#76874060> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1344996930> rdfs:label "DENSE_HIDDEN_UNITS(0)$0" ;
+    dj:Mult <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736566>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#605225992> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#137363895> rdfs:label "np(3)$0" ;
+    dj:seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82968931> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#139002299> rdfs:label "os(3)$0" ;
+    dj:str <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#84083047> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1516242800> rdfs:label "embedding_matrix(6)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1363085042>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1516177263>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179896900> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#172753460> rdfs:label "path(5)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1145046778> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#173998641> rdfs:label "time(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/72221104> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#176292408> rdfs:label "tqdm(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/644482423> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179634754> rdfs:label "word(4)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#523043992> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#241697378> rdfs:label "out(13)$0" ;
+    dj:cat <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1955403363>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249561878> rdfs:label "print[0]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2503543123>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#250413715>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2507016535>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#923930009> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249692951> rdfs:label "print[1]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#121635265>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226099865>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#514196535> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249824024> rdfs:label "print[2]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2090600684>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2093811952>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30998715> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249955097> rdfs:label "print[3]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#432538585> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#250086170> rdfs:label "print[4]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#576455741> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#250217243> rdfs:label "print[5]" ;
+    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#993658314> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1443037688335639566> rdfs:label "data(14)$0" ;
-    dj:apply <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1695731268550078092>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-9060648994835794964>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-959179473081294717>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1385879572714502571>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3505676499368678245> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#258605708> rdfs:label "tqdm(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#126222799> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#290063013> rdfs:label "data(14)$0" ;
+    dj:apply <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165806608>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1832716394>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#204472913>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#389481269>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#69271855> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1460663329192672356> rdfs:label "test_preds(8)$2" ;
-    dj:average <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5766321007536253487>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6308730786568966327>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1207859609521442827> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#290259715> rdfs:label "random(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/147194498> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1743738559850585113> rdfs:label "print[3]" ;
-    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1579955281934517097> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2933918498> rdfs:label "enable_checkpoint_ensemble(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724698495> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1775295043271955938> rdfs:label "x(10)$4" ;
-    dj:squeeze <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1252412330259949393> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300417724> rdfs:label "self(12)$9" ;
+    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1241712161>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1304364811>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300352187> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2265774745710871695> rdfs:label "x(10)$1" ;
-    dj:permute <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5157178967067486272> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#313983697> rdfs:label "text(15)$0" ;
+    dj:replace <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#222626429>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#40567000>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66781480> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3057760343992334374> rdfs:label "random(3)$0" ;
-    dj:seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7947481992476568340> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#330760955> rdfs:label "torch(3)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165872165>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#330695418> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3866617024827199256> rdfs:label "super(12)$0" ;
-    dj:__init__ <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1372676375061494830> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#35455176> rdfs:label "F(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/390136884> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4242786901487499099> rdfs:label "time(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-424432765026875925> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#367461246> rdfs:label "loss_fn(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724043130> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4463945238478947798> rdfs:label "crawl_matrix(0)$0" ;
-    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6542323505737872379> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#392430392> rdfs:label "super(12)$0" ;
+    dj:__init__ <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#287572708> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4494036619134574952> rdfs:label "loss_fn(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1097474827661104508> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#399967066> rdfs:label "random(3)$0" ;
+    dj:seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#290652934> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4518250711187747691> rdfs:label "self(12)$7" ;
-    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1256916069314450208>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1820224387106415680>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#57626230855769889> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45416689> rdfs:label "i(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#620299451> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4759570963300759981> rdfs:label "i(6)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3295909430884712057> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45678835> rdfs:label "i(8)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526255184>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#896140660> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5041787437527600366> rdfs:label "F(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-543004541706245040> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#478544809> rdfs:label "result(13)$0" ;
+    dj:linear_out <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#447284086> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5269009943302080318> rdfs:label "out(13)$0" ;
-    dj:cat <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#915206777571006196> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#491586508> rdfs:label "y_train(0)$0" ;
+    dj:where <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#293012233>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29687986>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#327811828>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#65077525>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82575712> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5418994426795635065> rdfs:label "tqdm(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-8698506282436180653> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#49479937> rdfs:label "x(7)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#376505301> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5598078109626731292> rdfs:label "torch(3)$1" ;
-    dj:manual_seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4558167090388464927>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#671483038> rdfs:label "scheduler(8)$1" ;
+    dj:step <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#671417501> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5599562540745620364> rdfs:label "optimizer(8)$2" ;
-    dj:step <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-767531855921653906> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697435331> rdfs:label "optimizer(8)$2" ;
+    dj:step <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697369794> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6212417940495628307> rdfs:label "test_preds(8)$3" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6308730786568966327> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793904413> rdfs:label "test_preds(8)$2" ;
+    dj:average <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1262225076>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1856702560>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736570>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83624296> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6946211270774655008> rdfs:label "os(3)$0" ;
-    dj:str <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8073044271616792836> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793969950> rdfs:label "test_preds(8)$3" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1262225076>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30998715> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7416278929988302607> rdfs:label "random(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/6140086610842459051> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#800392483> rdfs:label "submission(0)$1" ;
+    dj:to_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1048512072>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#800326946> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7519428431689550707> rdfs:label "gc(0)$0" ;
-    dj:collect <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7451331496133639325> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82248033> rdfs:label "it(2)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#139657782> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8080116445986041176> rdfs:label "h_embedding(13)$0" ;
-    dj:embedding <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3180214944100615180> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83689828> rdfs:label "os(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8081931202492181953> rdfs:label "result(13)$0" ;
-    dj:linear_out <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7653378291931152453> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#886572374> rdfs:label "aux_result(13)$0" ;
+    dj:linear_aux_out <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#447284086> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8807122790361605066> rdfs:label "print[2]" ;
-    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5282611277299459748> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#944375152> rdfs:label "h_embedding(13)$0" ;
+    dj:embedding <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#69140782> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8862678899395375469> rdfs:label "print[0]" ;
-    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4179331940517340246>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-795257861094303608>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8743559244050748743> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1003619802> rdfs:label "max_features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#159253010> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1332654251584745490> rdfs:label "np(3)$0" ;
-    dj:seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5504177594903260104> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1010960115> rdfs:label "\"\"“”’(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1414154481620345052> rdfs:label "_(13)$1" ;
-    dj:lstm2 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7725823382527609419> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1012336091> rdfs:label "test_dataset(0)$0" ;
+    dj:TensorDataset <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1027999212>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#164758044> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2740351735493459436> rdfs:label "text(15)$0" ;
-    dj:replace <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8469837120247114176>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5256234290893445816> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1027999212> rdfs:label "x_test_torch(0)$0" ;
+    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#233636514>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410977135> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299874802487339902> rdfs:label "y_train(0)$0" ;
-    dj:where <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6319554824657017213> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1048512072> rdfs:label "submission.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3111165326638162996> rdfs:label "DENSE_HIDDEN_UNITS(0)$0" ;
-    dj:Mult <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#440235238641489230> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1115489902> rdfs:label "SpatialDropout(10)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3285678274342672685> rdfs:label "path(5)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6752501806087327210> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1127482937> rdfs:label "train_dataset(0)$0" ;
+    dj:TensorDataset <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1144915530>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1146095179>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#164758044> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3597021977556128813> rdfs:label "x(7)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2436199496899499850> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1144915530> rdfs:label "x_train_torch(0)$0" ;
+    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#233636514>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490931149> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3750645061130841827> rdfs:label "it(2)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#666679405127993392> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1145046778> rdfs:label "load_embeddings[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4610823508132757551> rdfs:label "i(8)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6729803945970559332>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8927837184563680134> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115802495> rdfs:label "x(10)$0" ;
+    dj:unsqueeze <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45809893>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#68747563> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5123586886322187298> rdfs:label "_(13)$2" ;
-    dj:max <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7203587718156445821> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115999106> rdfs:label "x(10)$3" ;
+    dj:permute <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115933569>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45154531>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45482212>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45809893>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#46137574> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5254271306273193969> rdfs:label "scheduler(8)$1" ;
-    dj:step <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#591061916075142065> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1177814650> rdfs:label "unknown_words(6)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#72155456> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5532267138411941593> rdfs:label "_(13)$0" ;
-    dj:lstm1 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1315558956238900698>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1181615918> rdfs:label "seed_everything[0]" ;
+    dj:seed_everything <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#89784652> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5544581840571183768> rdfs:label "glove_matrix(0)$0" ;
-    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2588108141806647054> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#122421703> rdfs:label "len(6)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5925087419604766595> rdfs:label "max_features(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4179331940517340246>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2872196418121805253> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1260062379> rdfs:label "all_test_preds(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#71369018> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6324435017876189913> rdfs:label "unknown_words(6)$1" ;
-    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#317852859275391285>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8028379038408664182> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1260127916> rdfs:label "all_test_preds(0)$1" ;
+    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1260062379>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#791676179> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6437798340633481080> rdfs:label "enable_checkpoint_ensemble(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8763883301534967366> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1262159539> rdfs:label "all_test_preds(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#72417602> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6871795280153375781> rdfs:label "embedding_matrix(6)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1293078804283782774>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3003686508163108574>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#317852859275391285> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#126222799> rdfs:label "nop(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8337766070908963825> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/2344872354225005453> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1304364811> rdfs:label "num_aux_targets(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431424539> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8456463426720091027> rdfs:label "word(4)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3985979859908395604> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1316816511> rdfs:label "h_conc_linear1(13)$0" ;
+    dj:relu <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#445580148>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#52756732> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8717506486686470217> rdfs:label "aux_result(13)$0" ;
-    dj:linear_aux_out <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7653378291931152453> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1317275264> rdfs:label "h_conc_linear2(13)$0" ;
+    dj:relu <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#445580148>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#52756732> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#9012744981868382944> rdfs:label "print[1]" ;
-    dj:print <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-845048106547880052>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3805610023275514401>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#960440540922230378> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1363085042> rdfs:label "embedding_index(6)$0" ;
+    dj:load_embeddings <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#172884533> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#936413539357012164> rdfs:label "tqdm(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6425723928117996566> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#139657782> rdfs:label "nop[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1097474827661104508> rdfs:label "train_model[3]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1514604393> rdfs:label "embedding_matrix(0)$0" ;
+    dj:concatenate <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1601050208>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82575712> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1226442528599543123> rdfs:label "start_time(8)$0" ;
-    dj:time <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7699188530589331372> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1516177263> rdfs:label "embedding_matrix(6)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#122421703>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736569>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#620299451>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66388251>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83362150> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1243076299797301554> rdfs:label "all_test_preds(0)$1" ;
-    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1347507284813115112>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5595701210989920321> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#159253010> rdfs:label "None(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-125527891257004262> rdfs:label "[<_ast.Subscript object at 0x109a68d90>, <_ast.Name object at 0x109a68fa0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1601050208> rdfs:label "[<_ast.Name object at 0x12f88a070>, <_ast.Name object at 0x12f88a1f0>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1256916069314450208> rdfs:label "num_aux_targets(12)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3120007876919091299> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165806608> rdfs:label "str(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1293078804283782774> rdfs:label "embedding_matrix(6)$0" ;
-    dj:zeros <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2458968937952108796>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3295909430884712057>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#362373136625954112> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165872165> rdfs:label "True(3)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1372676375061494830> rdfs:label "super(12)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#166527530> rdfs:label "True(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1415628093660469813> rdfs:label "self(12)$4" ;
-    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1820224387106415680>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1522669096352272812> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#167641635> rdfs:label "mean(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1519353345123004211> rdfs:label "torch(3)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1704134812> rdfs:label "clean_special_chars[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1565990014337670511> rdfs:label "x_test_torch(0)$0" ;
-    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1458247792878384662>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6875399833427460896> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1704265885> rdfs:label "clean_special_chars[1]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1579955281934517097> rdfs:label "elapsed_time(8)$0" ;
-    dj:Sub <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1226442528599543123>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7699188530589331372> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#172884533> rdfs:label "path(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#822871534> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1695731268550078092> rdfs:label "data(14)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5083001512151263997> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#176226878> rdfs:label "list(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-173397165151811323> rdfs:label "model(8)$1" ;
-    dj:eval <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8360457464008175899> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#177340992> rdfs:label "tqdm(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1983920347542991276> rdfs:label "train_model[4]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179962439> rdfs:label "text(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/73859526> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2436199496899499850> rdfs:label "sigmoid[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1832716394> rdfs:label "clean_special_chars(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2458968937952108796> rdfs:label "np(6)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1856702560> rdfs:label "checkpoint_weights(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226099865>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226165399>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#31260860>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#432538585> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2482927710348383223> rdfs:label "[](6)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1864050831> rdfs:label "∞θ÷α•à−β∅³π‘₹´°£€\\×™√²—–&(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2606717121510369137> rdfs:label "test_dataset(0)$0" ;
-    dj:TensorDataset <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1565990014337670511>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8767350914771196216> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1955403363> rdfs:label "[<_ast.Name object at 0x12f8a3820>, <_ast.Name object at 0x12f8a3850>](13)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-268464986763067433> rdfs:label "h_conc_linear2(13)$0" ;
-    dj:relu <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5767488983218581390>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6550439634169315026>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#204472913> rdfs:label "data(14)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#640812335> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-274840721669767224> rdfs:label "self(12)$1" ;
-    dj:Parameter <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6912748967667137619>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5566961127195520754>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6763330513082886046> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2090600684> rdfs:label "unknown_words_crawl(0)$0" ;
+    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1571489465>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3003686508163108574> rdfs:label "embedding_index(6)$0" ;
-    dj:load_embeddings <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3742212031576281500> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2093811952> rdfs:label "unknown_words_glove(0)$0" ;
+    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1578632893>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3085891514726186457> rdfs:label "train_model[7]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2097680105> rdfs:label "../input/glove840b300dtxt/glove.840B.300d.txt(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3097383258964880579> rdfs:label "output_dim(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1983920347542991276> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212140637> rdfs:label "self(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379323358> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3120007876919091299> rdfs:label "__init__[2]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212402783> rdfs:label "self(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431162393> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3237029669472761208> rdfs:label "y_batch(8)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8071223050712994960> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#222626429> rdfs:label "text(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1704134812> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3492039275133784191> rdfs:label "range(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#225116815> rdfs:label "range(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3734802837711984090> rdfs:label "x_train_torch(0)$0" ;
-    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1113541263646569046>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1458247792878384662> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226820763> rdfs:label "param(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3742212031576281500> rdfs:label "path(6)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7629133131628324171> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#229710036> rdfs:label "[<_ast.Subscript object at 0x12f88ac40>, <_ast.Name object at 0x12f88ad90>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3924806803201047538> rdfs:label "y_aux_train(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5761569958912486794>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3335221151649830042> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#232915624> rdfs:label "train(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723780984> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3985979859908395604> rdfs:label "get_coefs[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234029733> rdfs:label "torch(3)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-399256809305476481> rdfs:label "y_pred(8)$1" ;
-    dj:sigmoid <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-173397165151811323>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8083337653775677016> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249954976> rdfs:label "False(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4389127456638870176> rdfs:label "[](8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2503543123> rdfs:label "n unknown words (crawl): (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4475528947776197746> rdfs:label "avg_pool(13)$0" ;
-    dj:mean <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7203587718156445821> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#250413715> rdfs:label "Model (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4558167090388464927> rdfs:label "torch(3)$0" ;
-    dj:manual_seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1519353345123004211>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2507016535> rdfs:label "n unknown words (glove): (0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5132430857847221365> rdfs:label "clean_special_chars[1]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#264176287> rdfs:label "loss(8)$0" ;
+    dj:loss_fn <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#405406561>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#476709816> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5157178967067486272> rdfs:label "x(10)$0" ;
-    dj:unsqueeze <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3103229749327197766> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#264241824> rdfs:label "loss(8)$1" ;
+    dj:backward <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#264176287> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5267737775006492919> rdfs:label "SpatialDropout(10)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2720274984> rdfs:label "../input/jigsaw-unintended-bias-in-toxicity-classification/test.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5504177594903260104> rdfs:label "np(3)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#281871061> rdfs:label "torch(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5954182537504531374> rdfs:label "avg_loss(8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2837252564> rdfs:label "/-'?!.,#$\\%'()*+-/:;<=>@[\\]^_`{|}~`(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6053982528909063647> rdfs:label "self(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2733966236967325162> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#285147874> rdfs:label "punct(15)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1704265885> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6070447980840956908> rdfs:label "text(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/4630515469502395124> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#287310562> rdfs:label "super(10)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6477343145747100877> rdfs:label "loss(8)$0" ;
-    dj:loss_fn <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3237029669472761208>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2078195811095106863> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#287572708> rdfs:label "super(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6546399445291820410> rdfs:label "model(0)$1" ;
-    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3495538268968178876> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#290652934> rdfs:label "random(3)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6912748967667137619> rdfs:label "torch(12)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#291701518> rdfs:label "params(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7451331496133639325> rdfs:label "gc(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-697925615955475139> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#293012233> rdfs:label "target(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7629133131628324171> rdfs:label "build_matrix[1]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299827891> rdfs:label "self(12)$0" ;
+    dj:Embedding <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212402783>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#845612320>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#907150777> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-767531855921653906> rdfs:label "optimizer(8)$1" ;
-    dj:zero_grad <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6533082011999329517> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299893428> rdfs:label "self(12)$1" ;
+    dj:Parameter <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1391986504>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#281871061>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299827891> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-800717833569204299> rdfs:label "build_matrix[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299958965> rdfs:label "self(12)$2" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#249954976>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299893428> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8073044271616792836> rdfs:label "os(3)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300024502> rdfs:label "self(12)$3" ;
+    dj:SpatialDropout <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#299958965>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#86638918> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8371865464506110024> rdfs:label "all_test_preds(8)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4389127456638870176> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300090039> rdfs:label "self(12)$4" ;
+    dj:LSTM <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#205324885>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300024502>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#539296743>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#845612320> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-845048106547880052> rdfs:label "unknown_words_glove(0)$0" ;
-    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2588108141806647054> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300155576> rdfs:label "self(12)$5" ;
+    dj:LSTM <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#205324885>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300090039>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#46072039>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#539296743> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8469837120247114176> rdfs:label "text(15)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7129905991894419364> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300221113> rdfs:label "self(12)$6" ;
+    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1241712161>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300155576> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8532596344815245064> rdfs:label "train(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8215374135085884961> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300286650> rdfs:label "self(12)$7" ;
+    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1241712161>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300221113> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8642369983308907175> rdfs:label "x_train(0)$1" ;
-    dj:texts_to_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8642369983308907175> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300352187> rdfs:label "self(12)$8" ;
+    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1241712161>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#300286650>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45744358> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8763883301534967366> rdfs:label "train_model[8]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30212276> rdfs:label "2(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-9060648994835794964> rdfs:label "punct(14)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736566> rdfs:label "4(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-9186878060554429851> rdfs:label "train_model[5]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736569> rdfs:label "1(6)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-959179473081294717> rdfs:label "str(14)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30736570> rdfs:label "0(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1079026064975460053> rdfs:label "super(10)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#31260860> rdfs:label "2(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1105458428608683269> rdfs:label "[<_ast.Name object at 0x109a682e0>, <_ast.Name object at 0x109a68340>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3174636166> rdfs:label "../input/jigsaw-unintended-bias-in-toxicity-classification/train.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1207859609521442827> rdfs:label "checkpoint_weights(8)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3681606790561075581>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-795257861094303608>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#960440540922230378> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#320406247> rdfs:label "model(0)$0" ;
+    dj:NeuralNet <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1514604393>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#900007289> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1252412330259949393> rdfs:label "x(10)$3" ;
-    dj:permute <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4029775372316303927> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#320471784> rdfs:label "model(0)$1" ;
+    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#320406247> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1347507284813115112> rdfs:label "test_preds(0)$0" ;
-    dj:train_model <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2584547875791293323>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2606717121510369137>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6546399445291820410>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2232002181967709686>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8797015044693647379> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#322503407> rdfs:label "model(8)$0" ;
+    dj:train <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#227213979> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1357033958726909927> rdfs:label "h_conc_linear1(13)$0" ;
-    dj:relu <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5767488983218581390>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6550439634169315026>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#322568944> rdfs:label "model(8)$1" ;
+    dj:eval <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#322503407> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1371353425953961251> rdfs:label "param_lrs(8)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1838888515631469223>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3635868574941637601>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5812590246194009242> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#330629881> rdfs:label "torch(3)$0" ;
+    dj:manual_seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234029733> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1385879572714502571> rdfs:label "x(14)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#330695418> rdfs:label "torch(3)$1" ;
+    dj:manual_seed <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#330629881> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1522669096352272812> rdfs:label "self(12)$3" ;
-    dj:LSTM <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4128917702971242434>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#544484625879637257> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3534688409> rdfs:label "../input/fasttext-crawl-300d-2m/crawl-300d-2M.vec(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1702639519437066792> rdfs:label "tokenizer(0)$0" ;
-    dj:Tokenizer <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6070447980840956908> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#376505301> rdfs:label "sigmoid[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1777804263041838848> rdfs:label "test_preds(8)$1" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-399256809305476481>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4805094623706378649> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3876604904> rdfs:label "[<_ast.Constant object at 0x12f894af0>, <_ast.Constant object at 0x12f894a90>, <_ast.Constant object at 0x12f894550>, <_ast.Constant object at 0x12f894bb0>, <_ast.Constant object at 0x12f894df0>, <_ast.Constant object at 0x12f894e20>](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1793598828144043792> rdfs:label "punct(15)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5132430857847221365> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#389481269> rdfs:label "punct(14)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1010960115>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1864050831>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2837252564> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1838888515631469223> rdfs:label "param(8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#405406561> rdfs:label "y_pred(8)$0" ;
+    dj:model <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#475923383> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2078195811095106863> rdfs:label "y_pred(8)$0" ;
-    dj:model <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8083337653775677016> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#405472098> rdfs:label "y_pred(8)$1" ;
+    dj:sigmoid <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#322568944>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#475923383> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2171217604767088072> rdfs:label "train_model[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#40567000> rdfs:label " (15)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2232002181967709686> rdfs:label "nn(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/4675526104902965112> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410846061> rdfs:label "x_test(0)$0" ;
+    dj:preprocess <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#261948054>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#821364121> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2872196418121805253> rdfs:label "max_features(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410911598> rdfs:label "x_test(0)$1" ;
+    dj:texts_to_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410911598>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2901385022846514832> rdfs:label "list(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431162393> rdfs:label "__init__[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3103229749327197766> rdfs:label "x(10)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#846599424065541181> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431293466> rdfs:label "__init__[1]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3180214944100615180> rdfs:label "x(13)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#846599424065541181> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431424539> rdfs:label "__init__[2]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3298892236035175559> rdfs:label "max_pool(13)$0" ;
-    dj:max <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7203587718156445821> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#46072039> rdfs:label "2(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3335221151649830042> rdfs:label "[<_ast.Constant object at 0x109a76c10>, <_ast.Constant object at 0x109a76c40>, <_ast.Constant object at 0x109a76c70>, <_ast.Constant object at 0x109a76ca0>, <_ast.Constant object at 0x109a76cd0>, <_ast.Constant object at 0x109a76d00>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#476709816> rdfs:label "y_batch(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165806628>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30998715> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3407250318006671496> rdfs:label "train_model[2]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490800075> rdfs:label "x_train(0)$0" ;
+    dj:preprocess <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#327811828>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#821364121> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#345018946619627372> rdfs:label "seed_everything[0]" ;
-    dj:seed_everything <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8743559244050748743> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490865612> rdfs:label "x_train(0)$1" ;
+    dj:texts_to_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490865612>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3495538268968178876> rdfs:label "model(0)$0" ;
-    dj:NeuralNet <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3924806803201047538>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6821121761169711580> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#523043992> rdfs:label "get_coefs[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3505676499368678245> rdfs:label "clean_special_chars(14)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#576390204> rdfs:label "avg_loss(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#64815384> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#362373136625954112> rdfs:label "len(6)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#576455741> rdfs:label "avg_loss(8)$1" ;
+    dj:Add <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1005127122>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#122683849>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#264241824>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#576390204> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3805610023275514401> rdfs:label "unknown_words_crawl(0)$0" ;
-    dj:build_matrix <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6542323505737872379> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#588645353> rdfs:label "NUM_MODELS(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30212276> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4087655287849631916> rdfs:label "tqdm(8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#605225992> rdfs:label "LSTM_UNITS(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#67567901> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4320362725444295809> rdfs:label "train_model[6]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#614663347> rdfs:label "prediction(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#440235238641489230> rdfs:label "LSTM_UNITS(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#638059732> rdfs:label "output_dim(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724174203> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4805094623706378649> rdfs:label "test_preds(8)$0" ;
-    dj:zeros <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3097383258964880579>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5766321007536253487>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8324893632132210889>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2105654482224795597> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#640812335> rdfs:label "preprocess[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5083001512151263997> rdfs:label "preprocess[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#647627873> rdfs:label "avg_pool(13)$0" ;
+    dj:mean <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526975939> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5256234290893445816> rdfs:label "p(15)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1793598828144043792> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#64815384> rdfs:label "0.0(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5282611277299459748> rdfs:label "avg_loss(8)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5954182537504531374>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8324893632132210889>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3516952477055270885>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#919723882482149464> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#65077525> rdfs:label "0.5(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#544484625879637257> rdfs:label "self(12)$2" ;
-    dj:LSTM <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-274840721669767224>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4128917702971242434>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7861099266659780592> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#654115945> rdfs:label "max_pool(13)$0" ;
+    dj:max <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526975939> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5595701210989920321> rdfs:label "all_test_preds(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6913225631687224541> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#65863958> rdfs:label "220(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#57626230855769889> rdfs:label "self(12)$6" ;
-    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1820224387106415680>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#808710655242700841> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66388251> rdfs:label "300(6)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#591061916075142065> rdfs:label "scheduler(8)$0" ;
-    dj:LambdaLR <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-795257861094303608>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6533082011999329517>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7054721396216588658> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66388254> rdfs:label "0.6(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#623509404676331827> rdfs:label "max_features(12)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66781480> rdfs:label "p(15)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#285147874> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6337536251038436319> rdfs:label "self(12)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8290706870456346962> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#671220895> rdfs:label "param_lrs(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226820763>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#227213979>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#291701518>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83493224> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6425723928117996566> rdfs:label "nop(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#671417501> rdfs:label "scheduler(8)$0" ;
+    dj:LambdaLR <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226099865>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234685098>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#66388254>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697304257> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#666679405127993392> rdfs:label "nop[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#67567901> rdfs:label "128(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6752501806087327210> rdfs:label "load_embeddings[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#68747563> rdfs:label "x(10)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379454431> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6763330513082886046> rdfs:label "self(12)$0" ;
-    dj:Embedding <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#623509404676331827>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6337536251038436319>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7861099266659780592> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689636529> rdfs:label "tokenizer(0)$0" ;
+    dj:Tokenizer <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179962439> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6821121761169711580> rdfs:label "embedding_matrix(0)$0" ;
-    dj:concatenate <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1105458428608683269> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#69140782> rdfs:label "x(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379454431> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6823985142884894949> rdfs:label "NUM_MODELS(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#69271855> rdfs:label "x(14)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6894745689663205598> rdfs:label "x_train(0)$0" ;
-    dj:preprocess <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5761569958912486794> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697369794> rdfs:label "optimizer(8)$1" ;
+    dj:zero_grad <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697304257> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6913225631687224541> rdfs:label "[](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#71369018> rdfs:label "[](0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7129905991894419364> rdfs:label "clean_special_chars[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#72155456> rdfs:label "[](6)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7228032687919214063> rdfs:label "submission(0)$0" ;
-    dj:from_dict <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1243076299797301554>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8283643172970343430>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1949833381586467096> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723649911> rdfs:label "train_model[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#726017254359200158> rdfs:label "x_test(0)$0" ;
-    dj:preprocess <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8283643172970343430> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723780984> rdfs:label "train_model[1]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7947481992476568340> rdfs:label "random(3)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723912057> rdfs:label "train_model[2]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8028379038408664182> rdfs:label "unknown_words(6)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2482927710348383223> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724043130> rdfs:label "train_model[3]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#808710655242700841> rdfs:label "self(12)$5" ;
-    dj:Linear <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1415628093660469813>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1820224387106415680>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724174203> rdfs:label "train_model[4]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8215374135085884961> rdfs:label "train_model[1]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#72417602> rdfs:label "[](8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8290706870456346962> rdfs:label "__init__[0]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724305276> rdfs:label "train_model[5]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8360457464008175899> rdfs:label "model(8)$0" ;
-    dj:train <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3635868574941637601> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724436349> rdfs:label "train_model[6]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8506165428475755655> rdfs:label "__init__[1]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724567422> rdfs:label "train_model[7]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8774547551862773457> rdfs:label "x_test(0)$1" ;
-    dj:texts_to_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8774547551862773457> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724698495> rdfs:label "train_model[8]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8797015044693647379> rdfs:label "train_dataset(0)$0" ;
-    dj:TensorDataset <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2584547875791293323>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3734802837711984090>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8767350914771196216> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#76874060> rdfs:label "gc(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/20119755> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#915206777571006196> rdfs:label "[<_ast.Name object at 0x109a66ac0>, <_ast.Name object at 0x109a66b20>](13)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#77791567> rdfs:label "id(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#919723882482149464> rdfs:label "loss(8)$1" ;
-    dj:backward <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6477343145747100877> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#791676179> rdfs:label "test_preds(0)$0" ;
+    dj:train_model <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1012336091>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1127482937>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1146095179>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#167641635>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#320471784>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82051422> .
 
-<http://purl.org/dj/python/lib/-3485625464147336564> rdfs:label "torch.utils" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793773339> rdfs:label "test_preds(8)$0" ;
+    dj:zeros <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#122683849>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179372618>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#638059732>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83624296> .
 
-<http://purl.org/dj/python/lib/-424432765026875925> rdfs:label "time" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793838876> rdfs:label "test_preds(8)$1" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#405472098>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793773339> .
 
-<http://purl.org/dj/python/lib/-5299447753950658894> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#795542810> rdfs:label "start_time(8)$0" ;
+    dj:time <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#175047225> .
 
-<http://purl.org/dj/python/lib/-543004541706245040> rdfs:label "functional" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1045136508834317799> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#800326946> rdfs:label "submission(0)$0" ;
+    dj:from_dict <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1260127916>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#261948054>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29687986>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#614663347>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#77791567>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#80085334>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82575712> .
 
-<http://purl.org/dj/python/lib/-697925615955475139> rdfs:label "gc" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82051422> rdfs:label "nn(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/21758173> .
 
-<http://purl.org/dj/python/lib/-8698506282436180653> rdfs:label "tqdm_notebook" ;
-    dj:importedBy <http://purl.org/dj/python/lib/5189053364705099764> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#822740461> rdfs:label "build_matrix[0]" .
 
-<http://purl.org/dj/python/lib/1045136508834317799> rdfs:label "torch.nn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#822871534> rdfs:label "build_matrix[1]" .
 
-<http://purl.org/dj/python/lib/2102877355800725472> rdfs:label "data" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-3485625464147336564> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82968931> rdfs:label "np(3)" .
 
-<http://purl.org/dj/python/lib/2344872354225005453> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83362150> rdfs:label "np(6)" .
 
-<http://purl.org/dj/python/lib/3632848428666550565> rdfs:label "sequence" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4218994927357629477> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#84083047> rdfs:label "os(3)" .
 
-<http://purl.org/dj/python/lib/4630515469502395124> rdfs:label "text" ;
-    dj:importedBy <http://purl.org/dj/python/lib/-4218994927357629477> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#86638918> rdfs:label "0.3(12)" .
 
-<http://purl.org/dj/python/lib/4675526104902965112> rdfs:label "nn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/6271272503754370965> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#89784652> rdfs:label "1234(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/python/lib/5189053364705099764> rdfs:label "tqdm._tqdm_notebook" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#900007289> rdfs:label "y_aux_train(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#327811828>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3876604904> .
 
-<http://purl.org/dj/python/lib/6140086610842459051> rdfs:label "random" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#907150777> rdfs:label "max_features(12)" .
 
-<http://purl.org/dj/python/lib/919105913489784783> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#923930009> rdfs:label "Epoch {}/{} 	 loss={:.4f} 	 time={:.2f}s(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1113541263646569046> rdfs:label "x_train(0)$2" ;
-    dj:pad_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1113541263646569046>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3060802103484572573>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-758160643457556956> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#993658314> rdfs:label "elapsed_time(8)$0" ;
+    dj:Sub <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#175047225>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#795542810> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2584547875791293323> rdfs:label "y_train_torch(0)$0" ;
-    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-125527891257004262>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6319554824657017213>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1458247792878384662> .
+<http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2588108141806647054> rdfs:label "GLOVE_EMBEDDING_PATH(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/python/lib/1280706490> rdfs:label "tqdm._tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2733966236967325162> rdfs:label "forward[0]" .
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3060802103484572573> rdfs:label "sequence(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/3632848428666550565> .
+<http://purl.org/dj/python/lib/147194498> rdfs:label "random" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3681606790561075581> rdfs:label "range(8)" .
+<http://purl.org/dj/python/lib/20119755> rdfs:label "gc" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4128917702971242434> rdfs:label "LSTM_UNITS(12)" .
+<http://purl.org/dj/python/lib/21758173> rdfs:label "nn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/109642273> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4179331940517340246> rdfs:label "len(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5766321007536253487> rdfs:label "np(8)" .
+<http://purl.org/dj/python/lib/247464747> rdfs:label "torch.nn" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6308730786568966327> rdfs:label "all_test_preds(8)$1" ;
-    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8371865464506110024>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1777804263041838848> .
+<http://purl.org/dj/python/lib/257622874> rdfs:label "sequence" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1289095113> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6550439634169315026> rdfs:label "F(13)" .
+<http://purl.org/dj/python/lib/390136884> rdfs:label "functional" ;
+    dj:importedBy <http://purl.org/dj/python/lib/247464747> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6729803945970559332> rdfs:label "enumerate(8)" .
+<http://purl.org/dj/python/lib/453117056> rdfs:label "torch.utils" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-758160643457556956> rdfs:label "MAX_LEN(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/python/lib/644482423> rdfs:label "tqdm_notebook" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1280706490> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-7699188530589331372> rdfs:label "time(8)" .
+<http://purl.org/dj/python/lib/67109275> rdfs:label "data" ;
+    dj:importedBy <http://purl.org/dj/python/lib/453117056> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8071223050712994960> rdfs:label "data(8)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3516952477055270885>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4087655287849631916> .
+<http://purl.org/dj/python/lib/72221104> rdfs:label "time" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8283643172970343430> rdfs:label "test(0)$0" ;
-    dj:read_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1949833381586467096> .
+<http://purl.org/dj/python/lib/73859526> rdfs:label "text" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1289095113> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8324893632132210889> rdfs:label "len(8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1005127122> rdfs:label "train_loader(8)$0" ;
+    dj:DataLoader <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#166527530>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#232915624>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234685098>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#598672550> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8743559244050748743> rdfs:label "model_idx(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3492039275133784191>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6823985142884894949> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1146095179> rdfs:label "y_train_torch(0)$0" ;
+    dj:cuda <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#229710036>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#233636514>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82575712> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2105654482224795597> rdfs:label "test(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3407250318006671496> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115933569> rdfs:label "x(10)$2" ;
+    dj:forward <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1115489902>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#115933569>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212140637>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#287310562> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#317852859275391285> rdfs:label "word(6)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3295909430884712057> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#121635265> rdfs:label "len(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3516952477055270885> rdfs:label "train_loader(8)$0" ;
-    dj:DataLoader <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8532596344815245064>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7054721396216588658>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7140651788939693549> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#122683849> rdfs:label "len(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3635868574941637601> rdfs:label "model(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2171217604767088072> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1262225076> rdfs:label "all_test_preds(8)$1" ;
+    dj:append <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1262159539>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#793838876> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4029775372316303927> rdfs:label "x(10)$2" ;
-    dj:forward <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5267737775006492919>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6053982528909063647>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1079026064975460053>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4029775372316303927> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1391986504> rdfs:label "embedding_matrix(12)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#431293466> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5566961127195520754> rdfs:label "embedding_matrix(12)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8506165428475755655> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1571489465> rdfs:label "CRAWL_EMBEDDING_PATH(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3534688409> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5812590246194009242> rdfs:label "lr(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-9186878060554429851> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1578632893> rdfs:label "GLOVE_EMBEDDING_PATH(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2097680105> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6533082011999329517> rdfs:label "optimizer(8)$0" ;
-    dj:Adam <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1371353425953961251>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5812590246194009242>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7054721396216588658> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#164758044> rdfs:label "data(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/67109275> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6542323505737872379> rdfs:label "CRAWL_EMBEDDING_PATH(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165806628> rdfs:label "data(8)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1005127122>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#177340992>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#206242421> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6875399833427460896> rdfs:label "x_test(0)$2" ;
-    dj:pad_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3060802103484572573>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-758160643457556956>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6875399833427460896> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#175047225> rdfs:label "time(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7140651788939693549> rdfs:label "batch_size(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#4320362725444295809> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179372618> rdfs:label "test(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723912057> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7653378291931152453> rdfs:label "hidden(13)$0" ;
-    dj:Add <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-268464986763067433>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5767488983218581390>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1357033958726909927> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179896900> rdfs:label "word(6)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#620299451> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7725823382527609419> rdfs:label "h_lstm1(13)$0" ;
-    dj:lstm1 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1315558956238900698>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#205324885> rdfs:label "True(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7861099266659780592> rdfs:label "embed_size(12)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#5566961127195520754> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#206242421> rdfs:label "False(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8083337653775677016> rdfs:label "x_batch(8)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8071223050712994960> ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6729803945970559332>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8927837184563680134> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226165399> rdfs:label "range(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#846599424065541181> rdfs:label "forward[1]" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#227213979> rdfs:label "model(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#723649911> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8767350914771196216> rdfs:label "data(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/2102877355800725472> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#261948054> rdfs:label "test(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2720274984>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#80085334> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#8927837184563680134> rdfs:label "test_loader(8)$0" ;
-    dj:DataLoader <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2105654482224795597>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7054721396216588658>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7140651788939693549> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29687986> rdfs:label "0(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
 
-<http://purl.org/dj/python/lib/-4218994927357629477> rdfs:label "keras.preprocessing" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#365691642> rdfs:label "MAX_LEN(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#65863958> .
 
-<http://purl.org/dj/python/lib/6271272503754370965> rdfs:label "torch" ;
-    dj:importedBy <http://purl.org/dj/python/lib/7024424119895715459> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379323358> rdfs:label "forward[0]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1315558956238900698> rdfs:label "h_embedding(13)$1" ;
-    dj:embedding_dropout <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1315558956238900698>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379454431> rdfs:label "forward[1]" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5761569958912486794> rdfs:label "train(0)$0" ;
-    dj:read_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1949833381586467096> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410977135> rdfs:label "x_test(0)$2" ;
+    dj:pad_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#365691642>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410977135>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#443155419> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-5767488983218581390> rdfs:label "h_conc(13)$0" ;
-    dj:cat <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-4475528947776197746>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3298892236035175559>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#443155419> rdfs:label "sequence(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/257622874> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-795257861094303608> rdfs:label "epoch(8)" ;
-    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3681606790561075581>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#960440540922230378> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#447284086> rdfs:label "hidden(13)$0" ;
+    dj:Add <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1316816511>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1317275264>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#445580148> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1458247792878384662> rdfs:label "torch(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/6271272503754370965> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45154531> rdfs:label "0(10)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1949833381586467096> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/919105913489784783> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45482212> rdfs:label "1(10)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3295909430884712057> rdfs:label "word_index(6)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-800717833569204299> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45744358> rdfs:label "1(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7203587718156445821> rdfs:label "h_lstm2(13)$0" ;
-    dj:lstm2 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7725823382527609419> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#46137574> rdfs:label "3(10)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#960440540922230378> rdfs:label "n_epochs(8)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-3085891514726186457> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#475923383> rdfs:label "x_batch(8)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#165806628>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30998715> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526255184>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#896140660> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1820224387106415680> rdfs:label "DENSE_HIDDEN_UNITS(12)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490931149> rdfs:label "x_train(0)$2" ;
+    dj:pad_sequences <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#365691642>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#443155419>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490931149> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-6319554824657017213> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/7024424119895715459> ;
-    dj:assignedFrom <http://purl.org/dj/python/lib/-5299447753950658894> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#514196535> rdfs:label "model_idx(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#225116815>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#588645353> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7054721396216588658> rdfs:label "torch(8)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526255184> rdfs:label "enumerate(8)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-52692756275880053> rdfs:label "seed(3)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#345018946619627372> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526517186> rdfs:label "h_lstm1(13)$0" ;
+    dj:lstm1 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#944440689> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#7120858221635198711> rdfs:label "torch(13)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#52756732> rdfs:label "F(13)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1807047809502644054> rdfs:label "tokenizer(0)$1" ;
-    dj:fit_on_texts <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1702639519437066792>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#2901385022846514832>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#6894745689663205598>,
-        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#726017254359200158> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#539296743> rdfs:label "LSTM_UNITS(12)" .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-1838719675333937040> rdfs:label "nn(12)" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#598672550> rdfs:label "batch_size(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724436349> .
 
-<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-8510307552286545706> rdfs:label "self(13)" ;
-    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#-2733966236967325162> .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#697304257> rdfs:label "optimizer(8)$0" ;
+    dj:Adam <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234685098>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#671220895>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83493224> .
 
-<http://purl.org/dj/python/lib/7024424119895715459> rdfs:label "simple-lstm-pytorch-version.ipynb" .
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#821364121> rdfs:label "comment_text(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83493224> rdfs:label "lr(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724305276> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#83624296> rdfs:label "np(8)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#845612320> rdfs:label "embed_size(12)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1391986504>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45744358> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#896140660> rdfs:label "test_loader(8)$0" ;
+    dj:DataLoader <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#179372618>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#206242421>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234685098>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#598672550> .
+
+<http://purl.org/dj/python/lib/109642273> rdfs:label "torch" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
+
+<http://purl.org/dj/python/lib/1289095113> rdfs:label "keras.preprocessing" ;
+    dj:importedBy <http://purl.org/dj/python/lib/3764063537> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226099865> rdfs:label "epoch(8)" ;
+    dj:iteratorOf <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#226165399>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#432538585> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#233636514> rdfs:label "torch(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/109642273> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#327811828> rdfs:label "train(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#3174636166>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#80085334> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#432538585> rdfs:label "n_epochs(8)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#724567422> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#445580148> rdfs:label "h_conc(13)$0" ;
+    dj:cat <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#647627873>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#654115945> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526975939> rdfs:label "h_lstm2(13)$0" ;
+    dj:lstm2 <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#526517186> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#620299451> rdfs:label "word_index(6)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#822740461> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#80085334> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#944440689> rdfs:label "h_embedding(13)$1" ;
+    dj:embedding_dropout <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#944440689> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1241712161> rdfs:label "DENSE_HIDDEN_UNITS(12)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#234685098> rdfs:label "torch(8)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#30998715> rdfs:label "1(8)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45809893> rdfs:label "2(10)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#82575712> rdfs:label "np(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#169476646> rdfs:label "seed(3)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#1181615918> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#282002134> rdfs:label "torch(13)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#29950131> rdfs:label "1(0)" ;
+    dj:appearsIn <http://purl.org/dj/python/lib/3764063537> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#45875431> rdfs:label "1(13)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689702066> rdfs:label "tokenizer(0)$1" ;
+    dj:fit_on_texts <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#176226878>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#410846061>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#490800075>,
+        <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#689636529> .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#109052305> rdfs:label "nn(12)" .
+
+<http://purl.org/dj/kaggle/simple-lstm-pytorch-version#212533856> rdfs:label "self(13)" ;
+    dj:_argToVar <http://purl.org/dj/kaggle/simple-lstm-pytorch-version#379323358> .
+
+<http://purl.org/dj/python/lib/3764063537> rdfs:label "simple-lstm-pytorch-version.ipynb" .
 
