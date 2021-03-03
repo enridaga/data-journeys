@@ -363,7 +363,7 @@ def toRDF(name, digraph):
         else:
             subj = URIRef(str(Loc) + str(zlib.adler32(str(sl).encode())))
         # If object is notebook, use Notebook entity instead
-        if ol == n:
+        if ol[:-6] == n:
             obj = notebook
         else:
             # If the name does not have a '(' and it is not the notebook, use the lib namespace
