@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:data-types-and-missing-values a k:Notebook .
-
 <http://purl.org/dj/kaggle/data-types-and-missing-values#132776362> rdfs:label "pd(0)$0" ;
     dj:set_option <http://purl.org/dj/kaggle/data-types-and-missing-values#30998711>,
         <http://purl.org/dj/kaggle/data-types-and-missing-values#445383666>,
@@ -15,25 +13,25 @@ k:data-types-and-missing-values a k:Notebook .
         <http://purl.org/dj/kaggle/data-types-and-missing-values#769918282> .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#29687986> rdfs:label "0(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#3018526890> rdfs:label "../input/wine-reviews/winemag-data-130k-v2.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#30998711> rdfs:label "5(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#327680770> rdfs:label "float64(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#334234442> rdfs:label "@kerino(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#356123506> rdfs:label "Unknown(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#445383666> rdfs:label "max_rows(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#496894939> rdfs:label "reviews(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/data-types-and-missing-values#29687986>,
@@ -49,14 +47,15 @@ k:data-types-and-missing-values a k:Notebook .
         <http://purl.org/dj/kaggle/data-types-and-missing-values#496960476> .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#769918282> rdfs:label "@kerinokeefe(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> .
+    dj:appearsIn k:data-types-and-missing-values .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/4053142929> .
+    dj:importedBy k:data-types-and-missing-values .
 
 <http://purl.org/dj/kaggle/data-types-and-missing-values#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/4053142929> ;
+    dj:appearsIn k:data-types-and-missing-values ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
-<http://purl.org/dj/python/lib/4053142929> rdfs:label "data-types-and-missing-values.ipynb" .
+k:data-types-and-missing-values a k:Notebook ;
+    rdfs:label "data-types-and-missing-values.ipynb" .
 

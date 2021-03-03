@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:depression-on-twitter a k:Notebook .
-
 <http://purl.org/dj/kaggle/depression-on-twitter#243532402> rdfs:label "data(0)$2" ;
     dj:head <http://purl.org/dj/kaggle/depression-on-twitter#243466865>,
         <http://purl.org/dj/kaggle/depression-on-twitter#45809891> .
@@ -18,12 +16,12 @@ k:depression-on-twitter a k:Notebook .
     dj:print <http://purl.org/dj/kaggle/depression-on-twitter#427361219> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#42008801> rdfs:label "_(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:iteratorOf <http://purl.org/dj/kaggle/depression-on-twitter#820184443>,
         <http://purl.org/dj/kaggle/depression-on-twitter#83689828> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#243401328> rdfs:label "data(0)$0" ;
@@ -35,47 +33,48 @@ k:depression-on-twitter a k:Notebook .
     dj:head <http://purl.org/dj/kaggle/depression-on-twitter#243401328> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#2453018879> rdfs:label "/kaggle/input/sentiment140/training.1600000.processed.noemoticon.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> .
+    dj:appearsIn k:depression-on-twitter .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#325321464> rdfs:label "latin-1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> .
+    dj:appearsIn k:depression-on-twitter .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#355533666> rdfs:label "dirname(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:iteratorOf <http://purl.org/dj/kaggle/depression-on-twitter#820184443>,
         <http://purl.org/dj/kaggle/depression-on-twitter#83689828> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#427361219> rdfs:label "filename(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:iteratorOf <http://purl.org/dj/kaggle/depression-on-twitter#512164918> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#45809891> rdfs:label "10(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> .
+    dj:appearsIn k:depression-on-twitter .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#512164918> rdfs:label "filenames(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:iteratorOf <http://purl.org/dj/kaggle/depression-on-twitter#820184443>,
         <http://purl.org/dj/kaggle/depression-on-twitter#83689828> .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2555775703> .
+    dj:importedBy k:depression-on-twitter .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2555775703> .
+    dj:importedBy k:depression-on-twitter .
 
 <http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2555775703> .
+    dj:importedBy k:depression-on-twitter .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#820184443> rdfs:label "/kaggle/input(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> .
+    dj:appearsIn k:depression-on-twitter .
 
 <http://purl.org/dj/kaggle/depression-on-twitter#83689828> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2555775703> ;
+    dj:appearsIn k:depression-on-twitter ;
     dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
-<http://purl.org/dj/python/lib/2555775703> rdfs:label "depression-on-twitter.ipynb" .
+k:depression-on-twitter a k:Notebook ;
+    rdfs:label "depression-on-twitter.ipynb" .
 

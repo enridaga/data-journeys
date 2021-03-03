@@ -2,10 +2,8 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:your-first-machine-learning-model a k:Notebook .
-
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#1967917308> rdfs:label "DecisionTreeRegressor(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> ;
+    dj:appearsIn k:your-first-machine-learning-model ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1524238459> .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#249561878> rdfs:label "print[0]" ;
@@ -30,7 +28,7 @@ k:your-first-machine-learning-model a k:Notebook .
         <http://purl.org/dj/kaggle/your-first-machine-learning-model#89588047> .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#1580271551> rdfs:label "The predictions are(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#1867778141> rdfs:label "melbourne_features(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/your-first-machine-learning-model#2598452695> .
@@ -39,19 +37,19 @@ k:your-first-machine-learning-model a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/your-first-machine-learning-model#58004286> .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#2598452695> rdfs:label "[<_ast.Constant object at 0x1305321c0>, <_ast.Constant object at 0x1305323d0>, <_ast.Constant object at 0x130532e50>, <_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x1305326d0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#29687986> rdfs:label "0(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#3415544220> rdfs:label "Making predictions for the following 5 houses:(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> .
+    dj:appearsIn k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#76611886> rdfs:label "X(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/your-first-machine-learning-model#1257244313>,
@@ -61,20 +59,20 @@ k:your-first-machine-learning-model a k:Notebook .
     dj:describe <http://purl.org/dj/kaggle/your-first-machine-learning-model#76611886> .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/830738226> ;
+    dj:appearsIn k:your-first-machine-learning-model ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#89588047> rdfs:label "y(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/your-first-machine-learning-model#1257244313> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/830738226> .
+    dj:importedBy k:your-first-machine-learning-model .
 
 <http://purl.org/dj/python/lib/1524238459> rdfs:label "DecisionTreeRegressor" ;
     dj:importedBy <http://purl.org/dj/python/lib/532874447> .
 
 <http://purl.org/dj/python/lib/532874447> rdfs:label "sklearn.tree" ;
-    dj:importedBy <http://purl.org/dj/python/lib/830738226> .
+    dj:importedBy k:your-first-machine-learning-model .
 
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#1257244313> rdfs:label "melbourne_data(0)$1" ;
     dj:dropna <http://purl.org/dj/kaggle/your-first-machine-learning-model#1257178776>,
@@ -83,5 +81,6 @@ k:your-first-machine-learning-model a k:Notebook .
 <http://purl.org/dj/kaggle/your-first-machine-learning-model#76742960> rdfs:label "X(0)$2" ;
     dj:head <http://purl.org/dj/kaggle/your-first-machine-learning-model#76677423> .
 
-<http://purl.org/dj/python/lib/830738226> rdfs:label "your-first-machine-learning-model.ipynb" .
+k:your-first-machine-learning-model a k:Notebook ;
+    rdfs:label "your-first-machine-learning-model.ipynb" .
 

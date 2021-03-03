@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:summary-functions-and-maps a k:Notebook .
-
 <http://purl.org/dj/kaggle/summary-functions-and-maps#1890650213> rdfs:label "review_points_mean(0)$1" ;
     dj:mean <http://purl.org/dj/kaggle/summary-functions-and-maps#497419235> .
 
@@ -12,7 +10,7 @@ k:summary-functions-and-maps a k:Notebook .
         <http://purl.org/dj/kaggle/summary-functions-and-maps#1612318737> .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> ;
+    dj:appearsIn k:summary-functions-and-maps ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#129761755> rdfs:label "row(1)" ;
@@ -29,22 +27,22 @@ k:summary-functions-and-maps a k:Notebook .
     dj:mean <http://purl.org/dj/kaggle/summary-functions-and-maps#497222624> .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#29687986> rdfs:label "0(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#3018526890> rdfs:label "../input/wine-reviews/winemag-data-130k-v2.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#30998711> rdfs:label "5(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#445383666> rdfs:label "max_rows(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#46465266> rdfs:label "p(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#496894939> rdfs:label "reviews(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/summary-functions-and-maps#132776362>,
@@ -77,22 +75,23 @@ k:summary-functions-and-maps a k:Notebook .
         <http://purl.org/dj/kaggle/summary-functions-and-maps#497353698> .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> ;
+    dj:appearsIn k:summary-functions-and-maps ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#924452342> rdfs:label "remean_points(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3555200163> .
+    dj:appearsIn k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#937887325> rdfs:label "remean_points[0]" .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3555200163> .
+    dj:importedBy k:summary-functions-and-maps .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3555200163> .
+    dj:importedBy k:summary-functions-and-maps .
 
 <http://purl.org/dj/kaggle/summary-functions-and-maps#497222624> rdfs:label "reviews(0)$5" ;
     dj:value_counts <http://purl.org/dj/kaggle/summary-functions-and-maps#497157087> .
 
-<http://purl.org/dj/python/lib/3555200163> rdfs:label "summary-functions-and-maps.ipynb" .
+k:summary-functions-and-maps a k:Notebook ;
+    rdfs:label "summary-functions-and-maps.ipynb" .
 

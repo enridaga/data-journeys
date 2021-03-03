@@ -2,21 +2,20 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:finding-your-files-in-kaggle-kernels a k:Notebook .
-
 <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965> rdfs:label "my_data(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404>,
         <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334> .
 
 <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404> rdfs:label "../input/train.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1524305961> .
+    dj:appearsIn k:finding-your-files-in-kaggle-kernels .
 
 <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1524305961> ;
+    dj:appearsIn k:finding-your-files-in-kaggle-kernels ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1524305961> .
+    dj:importedBy k:finding-your-files-in-kaggle-kernels .
 
-<http://purl.org/dj/python/lib/1524305961> rdfs:label "finding-your-files-in-kaggle-kernels.ipynb" .
+k:finding-your-files-in-kaggle-kernels a k:Notebook ;
+    rdfs:label "finding-your-files-in-kaggle-kernels.ipynb" .
 

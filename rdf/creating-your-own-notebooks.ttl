@@ -2,14 +2,12 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:creating-your-own-notebooks a k:Notebook .
-
 <http://purl.org/dj/kaggle/creating-your-own-notebooks#127074770> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3731229980> ;
+    dj:appearsIn k:creating-your-own-notebooks ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
 
 <http://purl.org/dj/kaggle/creating-your-own-notebooks#128647638> rdfs:label "sns(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3731229980> ;
+    dj:appearsIn k:creating-your-own-notebooks ;
     dj:assignedFrom <http://purl.org/dj/python/lib/194380523> .
 
 <http://purl.org/dj/kaggle/creating-your-own-notebooks#132776362> rdfs:label "pd(0)$0" ;
@@ -19,20 +17,21 @@ k:creating-your-own-notebooks a k:Notebook .
     dj:print <http://purl.org/dj/kaggle/creating-your-own-notebooks#956106220> .
 
 <http://purl.org/dj/kaggle/creating-your-own-notebooks#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3731229980> ;
+    dj:appearsIn k:creating-your-own-notebooks ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/creating-your-own-notebooks#956106220> rdfs:label "Setup Complete(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3731229980> .
+    dj:appearsIn k:creating-your-own-notebooks .
 
 <http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3731229980> .
+    dj:importedBy k:creating-your-own-notebooks .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3731229980> .
+    dj:importedBy k:creating-your-own-notebooks .
 
 <http://purl.org/dj/python/lib/194380523> rdfs:label "seaborn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3731229980> .
+    dj:importedBy k:creating-your-own-notebooks .
 
-<http://purl.org/dj/python/lib/3731229980> rdfs:label "creating-your-own-notebooks.ipynb" .
+k:creating-your-own-notebooks a k:Notebook ;
+    rdfs:label "creating-your-own-notebooks.ipynb" .
 

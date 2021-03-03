@@ -2,22 +2,20 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:mesonet-result a k:Notebook .
-
 <http://purl.org/dj/kaggle/mesonet-result#1296893645> rdfs:label "submission_ori(0)$2" ;
     dj:to_csv <http://purl.org/dj/kaggle/mesonet-result#1048512072>,
         <http://purl.org/dj/kaggle/mesonet-result#1296828108> .
 
 <http://purl.org/dj/kaggle/mesonet-result#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> ;
+    dj:appearsIn k:mesonet-result ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/mesonet-result#83689828> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> ;
+    dj:appearsIn k:mesonet-result ;
     dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
 <http://purl.org/dj/kaggle/mesonet-result#1048512072> rdfs:label "submission.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#1296762571> rdfs:label "submission_ori(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/mesonet-result#1725503857>,
@@ -31,22 +29,22 @@ k:mesonet-result a k:Notebook .
         <http://purl.org/dj/kaggle/mesonet-result#800392483> .
 
 <http://purl.org/dj/kaggle/mesonet-result#1725503857> rdfs:label "/kaggle/input/deepfake-detection-challenge/sample_submission.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#1776949833> rdfs:label "[<_ast.Constant object at 0x12f8aba60>, <_ast.Constant object at 0x12f8ab190>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#218432130> rdfs:label "label(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#226230936> rdfs:label "float(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#427361219> rdfs:label "filename(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#800326946> rdfs:label "submission(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/mesonet-result#1776949833>,
@@ -58,20 +56,21 @@ k:mesonet-result a k:Notebook .
         <http://purl.org/dj/kaggle/mesonet-result#800326946> .
 
 <http://purl.org/dj/kaggle/mesonet-result#848498283> rdfs:label "/kaggle/input/submit-dfdc/submit2.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> .
+    dj:appearsIn k:mesonet-result .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1431832600> .
+    dj:importedBy k:mesonet-result .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1431832600> .
+    dj:importedBy k:mesonet-result .
 
 <http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1431832600> .
+    dj:importedBy k:mesonet-result .
 
 <http://purl.org/dj/kaggle/mesonet-result#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1431832600> ;
+    dj:appearsIn k:mesonet-result ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
-<http://purl.org/dj/python/lib/1431832600> rdfs:label "mesonet-result.ipynb" .
+k:mesonet-result a k:Notebook ;
+    rdfs:label "mesonet-result.ipynb" .
 

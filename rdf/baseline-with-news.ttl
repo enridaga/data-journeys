@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:baseline-with-news a k:Notebook .
-
 <http://purl.org/dj/kaggle/baseline-with-news#1028916719> rdfs:label "news_unstack(3)$1" ;
     dj:drop <http://purl.org/dj/kaggle/baseline-with-news#1028851182>,
         <http://purl.org/dj/kaggle/baseline-with-news#1441733027> .
@@ -18,7 +16,7 @@ k:baseline-with-news a k:Notebook .
     dj:collect <http://purl.org/dj/kaggle/baseline-with-news#130089383> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1322649418> rdfs:label "train_test_split(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/964298441> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#133759407> rdfs:label "ax(0)$0" ;
@@ -56,7 +54,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#77463890> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#439747556> rdfs:label "log_loss(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/252445539> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#44892397> rdfs:label "i(2)" ;
@@ -69,7 +67,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#80216407> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#520225851> rdfs:label "timedelta(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/315818938> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#563807257> rdfs:label "index_df(2)$0" ;
@@ -105,11 +103,11 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#789579026> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#801768808> rdfs:label "XGBClassifier(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/538182887> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#873858473> rdfs:label "LGBMClassifier(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/597493032> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1000932816> rdfs:label "repeat_index(2)$0" ;
@@ -172,7 +170,7 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#121897411> rdfs:label "len(2)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#127074770> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#128057760> rdfs:label "df(0)$0" ;
@@ -195,14 +193,14 @@ k:baseline-with-news a k:Notebook .
     dj:collect <http://purl.org/dj/kaggle/baseline-with-news#128319905> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#128647638> rdfs:label "sns(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/194380523> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#130089383> rdfs:label "gc(7)$0" ;
     dj:collect <http://purl.org/dj/kaggle/baseline-with-news#77791571> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1302857516> rdfs:label "colsample_bytree(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#132776362> rdfs:label "pd(0)$0" ;
     dj:set_option <http://purl.org/dj/kaggle/baseline-with-news#47120615>,
@@ -242,7 +240,7 @@ k:baseline-with-news a k:Notebook .
     dj:sort_values <http://purl.org/dj/kaggle/baseline-with-news#1389954825> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1415710589> rdfs:label "min_child_samples(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1421089173> rdfs:label "[<_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f951760>](4)" .
 
@@ -254,7 +252,7 @@ k:baseline-with-news a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#958269031> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#170394157> rdfs:label "left(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#170787376> rdfs:label "left(3)" .
 
@@ -283,19 +281,19 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#81002845> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#1999454279> rdfs:label "[<_ast.Constant object at 0x12ff2f4f0>, <_ast.Constant object at 0x12ff2f340>, <_ast.Constant object at 0x12ff2f520>, <_ast.Constant object at 0x12ff2f550>, <_ast.Constant object at 0x12ff2f2e0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2081305490> rdfs:label "[<_ast.Constant object at 0x12ff2f820>, <_ast.Constant object at 0x12ff2f970>, <_ast.Constant object at 0x12ff2f9a0>, <_ast.Constant object at 0x12ff2f790>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2120882912> rdfs:label "[<_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade970>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2125938801> rdfs:label "[<_ast.Constant object at 0x12ff2f670>, <_ast.Constant object at 0x12ff2f0a0>, <_ast.Constant object at 0x12ff2f4c0>, <_ast.Constant object at 0x12ff2f640>, <_ast.Constant object at 0x12ff2f1c0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2238056843> rdfs:label "Best evaluation logloss(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#227082906> rdfs:label "model(7)" ;
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#1352796095> .
@@ -314,7 +312,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#599262359> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2783261667> rdfs:label "[<_ast.Constant object at 0x12ff2fa60>, <_ast.Constant object at 0x12ff2fac0>, <_ast.Constant object at 0x12ff2f850>, <_ast.Constant object at 0x12ff2f940>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#291439372> rdfs:label "params(6)" ;
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#1053230772> .
@@ -327,7 +325,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#622789822> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#30081204> rdfs:label "1(1)" .
 
@@ -344,7 +342,7 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#31129787> rdfs:label "2(7)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#31260856> rdfs:label "6(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#317129446> rdfs:label "codes(2)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/baseline-with-news#71631164> .
@@ -378,13 +376,13 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#392102731> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#357827438> rdfs:label "feature(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#3685302574> rdfs:label "[<_ast.Constant object at 0x12ff2fdc0>, <_ast.Constant object at 0x12ff2fdf0>, <_ast.Constant object at 0x12ff2fd00>, <_ast.Constant object at 0x12ff2fd30>, <_ast.Constant object at 0x12ff2fb20>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#3698213262> rdfs:label "[<_ast.Constant object at 0x12ff2fca0>, <_ast.Constant object at 0x12ff2fb80>, <_ast.Constant object at 0x12ff2fbb0>, <_ast.Constant object at 0x12ff2faf0>, <_ast.Constant object at 0x12ff2fcd0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#392037194> rdfs:label "obs_df(7)$0" ;
     dj:merge <http://purl.org/dj/kaggle/baseline-with-news#1004406219>,
@@ -399,7 +397,7 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#40239312> rdfs:label ", (2)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#4103293991> rdfs:label "[<_ast.Constant object at 0x12f8c3880>, <_ast.Constant object at 0x12f8c32e0>, <_ast.Constant object at 0x12f8c30a0>, <_ast.Constant object at 0x12f8c3670>, <_ast.Constant object at 0x12f8c3e50>, <_ast.Constant object at 0x12f8c36d0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#4108136886> rdfs:label "[<_ast.Constant object at 0x1305327c0>, <_ast.Constant object at 0x1305323d0>, <_ast.Constant object at 0x130532370>, <_ast.Constant object at 0x130532ee0>](7)" .
 
@@ -415,7 +413,7 @@ k:baseline-with-news a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#1744701641> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#431293391> rdfs:label "datetime(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/248120142> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#43581673> rdfs:label "c(4)" .
@@ -425,30 +423,30 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#44105963> rdfs:label "e(4)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#44630251> rdfs:label "i(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:iteratorOf <http://purl.org/dj/kaggle/baseline-with-news#225116815>,
         <http://purl.org/dj/kaggle/baseline-with-news#64815379> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#45154541> rdfs:label "k(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#453772280> rdfs:label "universe(5)" ;
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#958662250> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#45809891> rdfs:label "10(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#46334181> rdfs:label "12(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#47120615> rdfs:label "50(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#48038136> rdfs:label "v(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#48431339> rdfs:label "90(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#484377544> rdfs:label "indexes(2)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/baseline-with-news#71631164> .
@@ -464,10 +462,10 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#507118628> rdfs:label "assetCode(7)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#507577381> rdfs:label "reg_alpha(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#531235918> rdfs:label "subsample(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#563282967> rdfs:label "index_df(0)$0" ;
     dj:unstack_asset_codes <http://purl.org/dj/kaggle/baseline-with-news#789447955> .
@@ -486,7 +484,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#571409441> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#592053376> rdfs:label "reg_lambda(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#597034129> rdfs:label "assetCodes(1)" .
 
@@ -497,7 +495,7 @@ k:baseline-with-news a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#640419122> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#615056561> rdfs:label "num_leaves(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#617678008> rdfs:label "news_index(2)" .
 
@@ -524,7 +522,7 @@ k:baseline-with-news a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#1052968626> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#712967464> rdfs:label "max_columns(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#763954412> rdfs:label "param_grid(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/baseline-with-news#1302857516>,
@@ -550,7 +548,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#916325853> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#76874060> rdfs:label "gc(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/20119755> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#77136206> rdfs:label "gc(2)" .
@@ -583,7 +581,7 @@ k:baseline-with-news a k:Notebook .
     dj:copy <http://purl.org/dj/kaggle/baseline-with-news#622920895> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#80347480> rdfs:label "pd(2)" .
@@ -595,14 +593,14 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#81002845> rdfs:label "pd(7)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#821560730> rdfs:label "n_estimators(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#843711914> rdfs:label "twosigmanews(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> ;
+    dj:appearsIn k:baseline-with-news ;
     dj:assignedFrom <http://purl.org/dj/python/lib/567149865> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#881395047> rdfs:label "best_params(0)$0" ;
@@ -618,7 +616,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#64028945> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#89784653> rdfs:label "2009(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#90505555> rdfs:label "x(5)$0" ;
     dj:Mult <http://purl.org/dj/kaggle/baseline-with-news#453772280>,
@@ -634,7 +632,7 @@ k:baseline-with-news a k:Notebook .
     dj:iteratorOf <http://purl.org/dj/kaggle/baseline-with-news#254608014> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#916325853> rdfs:label "learning_rate(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#958269031> rdfs:label "custom_metric[0]" .
 
@@ -650,31 +648,31 @@ k:baseline-with-news a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/baseline-with-news#958795053> .
 
 <http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/1261832120> rdfs:label "kaggle.competitions" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/194380523> rdfs:label "seaborn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/20119755> rdfs:label "gc" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/201720583> rdfs:label "xgboost" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/250544975> rdfs:label "lightgbm" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/252445539> rdfs:label "log_loss" ;
     dj:importedBy <http://purl.org/dj/python/lib/816055830> .
@@ -692,7 +690,7 @@ k:baseline-with-news a k:Notebook .
     dj:importedBy <http://purl.org/dj/python/lib/250544975> .
 
 <http://purl.org/dj/python/lib/816055830> rdfs:label "sklearn.metrics" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559> .
+    dj:importedBy k:baseline-with-news .
 
 <http://purl.org/dj/python/lib/964298441> rdfs:label "train_test_split" ;
     dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
@@ -722,18 +720,18 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#80609626> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#161415685> rdfs:label "int8(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#165478946> rdfs:label "True(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#165937697> rdfs:label "gain(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#171311668> rdfs:label "left(7)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#173998641> rdfs:label "time(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#183763468> rdfs:label "clf(0)$1" ;
     dj:fit <http://purl.org/dj/kaggle/baseline-with-news#128254371>,
@@ -741,10 +739,10 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#764085493> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#205193837> rdfs:label "False(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#225116815> rdfs:label "range(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#2435516945> rdfs:label "predictions_template_df(7)" ;
     dj:iteratorOf <http://purl.org/dj/kaggle/baseline-with-news#254608014> .
@@ -754,7 +752,7 @@ k:baseline-with-news a k:Notebook .
 <http://purl.org/dj/kaggle/baseline-with-news#30867642> rdfs:label "1(7)" .
 
 <http://purl.org/dj/kaggle/baseline-with-news#326173437> rdfs:label "float32(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#334824196> rdfs:label "start(0)$0" ;
     dj:date <http://purl.org/dj/kaggle/baseline-with-news#29687986>,
@@ -780,10 +778,10 @@ k:baseline-with-news a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/baseline-with-news#1764952270> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#64028945> rdfs:label "0.1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#64815379> rdfs:label "100(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#71631164> rdfs:label "[](2)" .
 
@@ -814,7 +812,7 @@ k:baseline-with-news a k:Notebook .
     dj:get_prediction_days <http://purl.org/dj/kaggle/baseline-with-news#124846546> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#29687986> rdfs:label "0(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
 <http://purl.org/dj/kaggle/baseline-with-news#789579026> rdfs:label "news_train(1)$1" ;
     dj:factorize <http://purl.org/dj/kaggle/baseline-with-news#120979905>,
@@ -823,7 +821,7 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#80216407> .
 
 <http://purl.org/dj/python/lib/248120142> rdfs:label "datetime" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1968179559>,
+    dj:importedBy k:baseline-with-news,
         <http://purl.org/dj/python/lib/248120142> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#392102731> rdfs:label "obs_df(7)$1" ;
@@ -840,7 +838,8 @@ k:baseline-with-news a k:Notebook .
         <http://purl.org/dj/kaggle/baseline-with-news#326173437> .
 
 <http://purl.org/dj/kaggle/baseline-with-news#30474421> rdfs:label "3(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1968179559> .
+    dj:appearsIn k:baseline-with-news .
 
-<http://purl.org/dj/python/lib/1968179559> rdfs:label "baseline-with-news.ipynb" .
+k:baseline-with-news a k:Notebook ;
+    rdfs:label "baseline-with-news.ipynb" .
 

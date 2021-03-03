@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:pre-processing-train-and-test-images a k:Notebook .
-
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#121504193> rdfs:label "img(2)" ;
     dj:_argToVar <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#708642158> .
 
@@ -23,7 +21,7 @@ k:pre-processing-train-and-test-images a k:Notebook .
         <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#165741030> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#169083430> rdfs:label "glob(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> ;
+    dj:appearsIn k:pre-processing-train-and-test-images ;
     dj:assignedFrom <http://purl.org/dj/python/lib/69468581> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#184287756> rdfs:label "fig(0)$0" ;
@@ -91,11 +89,11 @@ k:pre-processing-train-and-test-images a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#188613144> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> ;
+    dj:appearsIn k:pre-processing-train-and-test-images ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#83689828> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> ;
+    dj:appearsIn k:pre-processing-train-and-test-images ;
     dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#857277765> rdfs:label "check_shape(1)$0" ;
@@ -325,22 +323,22 @@ k:pre-processing-train-and-test-images a k:Notebook .
         <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#90374482> .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1590497341> .
+    dj:importedBy k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/python/lib/156828329> rdfs:label "pyplot" ;
     dj:importedBy <http://purl.org/dj/python/lib/392168505> .
 
 <http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1590497341> .
+    dj:importedBy k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/python/lib/38404364> rdfs:label "cv2" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1590497341> .
+    dj:importedBy k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/python/lib/392168505> rdfs:label "matplotlib" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1590497341> .
+    dj:importedBy k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/python/lib/69468581> rdfs:label "glob" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1590497341> .
+    dj:importedBy k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#108200335> rdfs:label "cv2(2)" .
 
@@ -418,16 +416,16 @@ k:pre-processing-train-and-test-images a k:Notebook .
     dj:crop_image_from_gray <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#188482070> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#504630428> rdfs:label "../input/train_images/0a1076183736.png(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#579931395> rdfs:label "../input/train_images/0e3572b5884a.png(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#593825032> rdfs:label "../input/train_images/698d6e422a80.png(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#677645658> rdfs:label "../input/train_images/1df0a4c23c95.png(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#82968931> rdfs:label "np(3)" .
 
@@ -450,24 +448,25 @@ k:pre-processing-train-and-test-images a k:Notebook .
     dj:_argToVar <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#1889929508> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#127074770> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> ;
+    dj:appearsIn k:pre-processing-train-and-test-images ;
     dj:assignedFrom <http://purl.org/dj/python/lib/156828329> .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#30736566> rdfs:label "4(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#46137572> rdfs:label "20(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#121045437> rdfs:label "off(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> .
+    dj:appearsIn k:pre-processing-train-and-test-images .
 
 <http://purl.org/dj/kaggle/pre-processing-train-and-test-images#107938189> rdfs:label "cv2(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1590497341> ;
+    dj:appearsIn k:pre-processing-train-and-test-images ;
     dj:assignedFrom <http://purl.org/dj/python/lib/38404364> .
 
-<http://purl.org/dj/python/lib/1590497341> rdfs:label "pre-processing-train-and-test-images.ipynb" .
+k:pre-processing-train-and-test-images a k:Notebook ;
+    rdfs:label "pre-processing-train-and-test-images.ipynb" .
 

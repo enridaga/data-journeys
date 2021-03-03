@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:where-is-my-output-file a k:Notebook .
-
 <http://purl.org/dj/kaggle/where-is-my-output-file#1250231974> rdfs:label "data_to_submit(0)$1" ;
     dj:to_csv <http://purl.org/dj/kaggle/where-is-my-output-file#1250166437>,
         <http://purl.org/dj/kaggle/where-is-my-output-file#1437534077> .
@@ -18,11 +16,11 @@ k:where-is-my-output-file a k:Notebook .
     dj:print <http://purl.org/dj/kaggle/where-is-my-output-file#164692489> .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> ;
+    dj:appearsIn k:where-is-my-output-file ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#1183844006> rdfs:label "../input/test.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#1250166437> rdfs:label "data_to_submit(0)$0" ;
     dj:DataFrame <http://purl.org/dj/kaggle/where-is-my-output-file#262079128>,
@@ -31,13 +29,13 @@ k:where-is-my-output-file a k:Notebook .
         <http://purl.org/dj/kaggle/where-is-my-output-file#80085334> .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#1437534077> rdfs:label "csv_to_submit.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#164692489> rdfs:label "utf8(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#1683888733> rdfs:label "[<_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85eee0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#261948054> rdfs:label "test(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/where-is-my-output-file#1183844006>,
@@ -52,36 +50,37 @@ k:where-is-my-output-file a k:Notebook .
         <http://purl.org/dj/kaggle/where-is-my-output-file#29950131> .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#29687986> rdfs:label "0(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#29950131> rdfs:label "1(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#437060570> rdfs:label "Survived(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#673514711> rdfs:label "PassengerId(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> .
+    dj:appearsIn k:where-is-my-output-file .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#806684048> rdfs:label "check_output(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> ;
+    dj:appearsIn k:where-is-my-output-file ;
     dj:assignedFrom <http://purl.org/dj/python/lib/535233807> .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2805467955> .
+    dj:importedBy k:where-is-my-output-file .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2805467955> .
+    dj:importedBy k:where-is-my-output-file .
 
 <http://purl.org/dj/python/lib/397411402> rdfs:label "subprocess" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2805467955> .
+    dj:importedBy k:where-is-my-output-file .
 
 <http://purl.org/dj/python/lib/535233807> rdfs:label "check_output" ;
     dj:importedBy <http://purl.org/dj/python/lib/397411402> .
 
 <http://purl.org/dj/kaggle/where-is-my-output-file#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2805467955> ;
+    dj:appearsIn k:where-is-my-output-file ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
-<http://purl.org/dj/python/lib/2805467955> rdfs:label "where-is-my-output-file.ipynb" .
+k:where-is-my-output-file a k:Notebook ;
+    rdfs:label "where-is-my-output-file.ipynb" .
 

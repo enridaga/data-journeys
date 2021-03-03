@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:line-charts a k:Notebook .
-
 <http://purl.org/dj/kaggle/line-charts#189661861> rdfs:label "list[0]" ;
     dj:list <http://purl.org/dj/kaggle/line-charts#1024329183> .
 
@@ -30,11 +28,11 @@ k:line-charts a k:Notebook .
     dj:tail <http://purl.org/dj/kaggle/line-charts#1024263646> .
 
 <http://purl.org/dj/kaggle/line-charts#127074770> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> ;
+    dj:appearsIn k:line-charts ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
 
 <http://purl.org/dj/kaggle/line-charts#128647638> rdfs:label "sns(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> ;
+    dj:appearsIn k:line-charts ;
     dj:assignedFrom <http://purl.org/dj/python/lib/194380523> .
 
 <http://purl.org/dj/kaggle/line-charts#132776362> rdfs:label "pd(0)$0" ;
@@ -44,10 +42,10 @@ k:line-charts a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/line-charts#1616513012> .
 
 <http://purl.org/dj/kaggle/line-charts#1616513012> rdfs:label "../input/spotify.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> .
+    dj:appearsIn k:line-charts .
 
 <http://purl.org/dj/kaggle/line-charts#165478946> rdfs:label "True(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> .
+    dj:appearsIn k:line-charts .
 
 <http://purl.org/dj/kaggle/line-charts#196018726> rdfs:label "plt(0)$0" ;
     dj:figure <http://purl.org/dj/kaggle/line-charts#127074770> .
@@ -73,26 +71,27 @@ k:line-charts a k:Notebook .
     dj:lineplot <http://purl.org/dj/kaggle/line-charts#198181419> .
 
 <http://purl.org/dj/kaggle/line-charts#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> ;
+    dj:appearsIn k:line-charts ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/line-charts#956106220> rdfs:label "Setup Complete(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> .
+    dj:appearsIn k:line-charts .
 
 <http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/994379435> .
+    dj:importedBy k:line-charts .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/994379435> .
+    dj:importedBy k:line-charts .
 
 <http://purl.org/dj/python/lib/194380523> rdfs:label "seaborn" ;
-    dj:importedBy <http://purl.org/dj/python/lib/994379435> .
+    dj:importedBy k:line-charts .
 
 <http://purl.org/dj/kaggle/line-charts#151126528> rdfs:label "Date(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> .
+    dj:appearsIn k:line-charts .
 
 <http://purl.org/dj/kaggle/line-charts#4094759136> rdfs:label "Daily Global Streams of Popular Songs in 2017-2018(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/994379435> .
+    dj:appearsIn k:line-charts .
 
-<http://purl.org/dj/python/lib/994379435> rdfs:label "line-charts.ipynb" .
+k:line-charts a k:Notebook ;
+    rdfs:label "line-charts.ipynb" .
 

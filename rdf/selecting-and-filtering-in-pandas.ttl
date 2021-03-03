@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:selecting-and-filtering-in-pandas a k:Notebook .
-
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#2054752446> rdfs:label "two_columns_of_data(0)$1" ;
     dj:describe <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#2054686909> .
 
@@ -12,7 +10,7 @@ k:selecting-and-filtering-in-pandas a k:Notebook .
         <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#2193033482> .
 
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#1535056397> rdfs:label "[<_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x12f989ee0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/769920776> .
+    dj:appearsIn k:selecting-and-filtering-in-pandas .
 
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#2019035306> rdfs:label "melbourne_file_path(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#58004286> .
@@ -28,18 +26,19 @@ k:selecting-and-filtering-in-pandas a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#1257178776> .
 
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/769920776> .
+    dj:appearsIn k:selecting-and-filtering-in-pandas .
 
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/769920776> ;
+    dj:appearsIn k:selecting-and-filtering-in-pandas ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/769920776> .
+    dj:importedBy k:selecting-and-filtering-in-pandas .
 
 <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#1257178776> rdfs:label "melbourne_data(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#2019035306>,
         <http://purl.org/dj/kaggle/selecting-and-filtering-in-pandas#80085334> .
 
-<http://purl.org/dj/python/lib/769920776> rdfs:label "selecting-and-filtering-in-pandas.ipynb" .
+k:selecting-and-filtering-in-pandas a k:Notebook ;
+    rdfs:label "selecting-and-filtering-in-pandas.ipynb" .
 

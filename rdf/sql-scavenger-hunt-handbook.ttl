@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:sql-scavenger-hunt-handbook a k:Notebook .
-
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1411843878> rdfs:label "job_post_scores(0)$2" ;
     dj:to_csv <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1411778341>,
         <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1727268938> .
@@ -16,19 +14,19 @@ k:sql-scavenger-hunt-handbook a k:Notebook .
     dj:mean <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1411712804> .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1727268938> rdfs:label "job_post_scores.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3679980779> .
+    dj:appearsIn k:sql-scavenger-hunt-handbook .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1825900637> rdfs:label "bigquery-public-data(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3679980779> .
+    dj:appearsIn k:sql-scavenger-hunt-handbook .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#509281332> rdfs:label "bq_helper(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3679980779> ;
+    dj:appearsIn k:sql-scavenger-hunt-handbook ;
     dj:assignedFrom <http://purl.org/dj/python/lib/306250675> .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#759176595> rdfs:label """SELECT score
             FROM `bigquery-public-data.hacker_news.full`
             WHERE type = "job" (0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3679980779> .
+    dj:appearsIn k:sql-scavenger-hunt-handbook .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#870647137> rdfs:label "hacker_news(0)$1" ;
     dj:list_tables <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#870581600> .
@@ -54,7 +52,7 @@ k:sql-scavenger-hunt-handbook a k:Notebook .
         <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#870909285> .
 
 <http://purl.org/dj/python/lib/306250675> rdfs:label "bq_helper" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3679980779> .
+    dj:importedBy k:sql-scavenger-hunt-handbook .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#870581600> rdfs:label "hacker_news(0)$0" ;
     dj:BigQueryHelper <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#1825900637>,
@@ -62,10 +60,11 @@ k:sql-scavenger-hunt-handbook a k:Notebook .
         <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#870581600> .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#173802037> rdfs:label "full(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3679980779> .
+    dj:appearsIn k:sql-scavenger-hunt-handbook .
 
 <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#338166540> rdfs:label "query(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/sql-scavenger-hunt-handbook#759176595> .
 
-<http://purl.org/dj/python/lib/3679980779> rdfs:label "sql-scavenger-hunt-handbook.ipynb" .
+k:sql-scavenger-hunt-handbook a k:Notebook ;
+    rdfs:label "sql-scavenger-hunt-handbook.ipynb" .
 

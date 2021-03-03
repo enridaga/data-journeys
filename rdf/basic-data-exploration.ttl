@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:basic-data-exploration a k:Notebook .
-
 <http://purl.org/dj/kaggle/basic-data-exploration#1257244313> rdfs:label "melbourne_data(0)$1" ;
     dj:describe <http://purl.org/dj/kaggle/basic-data-exploration#1257178776> .
 
@@ -15,14 +13,15 @@ k:basic-data-exploration a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/basic-data-exploration#58004286> .
 
 <http://purl.org/dj/kaggle/basic-data-exploration#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2623212284> .
+    dj:appearsIn k:basic-data-exploration .
 
 <http://purl.org/dj/kaggle/basic-data-exploration#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2623212284> ;
+    dj:appearsIn k:basic-data-exploration ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2623212284> .
+    dj:importedBy k:basic-data-exploration .
 
-<http://purl.org/dj/python/lib/2623212284> rdfs:label "basic-data-exploration.ipynb" .
+k:basic-data-exploration a k:Notebook ;
+    rdfs:label "basic-data-exploration.ipynb" .
 

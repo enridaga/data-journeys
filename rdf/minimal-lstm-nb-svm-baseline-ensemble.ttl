@@ -2,27 +2,25 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:minimal-lstm-nb-svm-baseline-ensemble a k:Notebook .
-
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#323158769> rdfs:label "p_res(0)$2" ;
     dj:to_csv <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1048512072>,
         <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#323093232> .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> ;
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1048512072> rdfs:label "submission.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> .
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1092045453> rdfs:label "[<_ast.Constant object at 0x106750a60>, <_ast.Constant object at 0x106750a90>, <_ast.Constant object at 0x106750a30>, <_ast.Constant object at 0x106750af0>, <_ast.Constant object at 0x1066e37c0>, <_ast.Constant object at 0x1066e3850>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> .
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1214452886> rdfs:label "../input/nb-svm-strong-linear-baseline/submission.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> .
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#30212276> rdfs:label "2(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> .
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#323027695> rdfs:label "p_res(0)$0" ;
     dj:copy <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#405406565> .
@@ -38,7 +36,7 @@ k:minimal-lstm-nb-svm-baseline-ensemble a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#4111407016> .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#4111407016> rdfs:label "../input/improved-lstm-baseline-glove-dropout/submission.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> .
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#478282689> rdfs:label "f_nbsvm(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1214452886> .
@@ -51,18 +49,19 @@ k:minimal-lstm-nb-svm-baseline-ensemble a k:Notebook .
     dj:assignedFrom <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#1092045453> .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1795494029> .
+    dj:importedBy k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1795494029> .
+    dj:importedBy k:minimal-lstm-nb-svm-baseline-ensemble .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#405406565> rdfs:label "p_lstm(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#398197595>,
         <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#80085334> .
 
 <http://purl.org/dj/kaggle/minimal-lstm-nb-svm-baseline-ensemble#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1795494029> ;
+    dj:appearsIn k:minimal-lstm-nb-svm-baseline-ensemble ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
-<http://purl.org/dj/python/lib/1795494029> rdfs:label "minimal-lstm-nb-svm-baseline-ensemble.ipynb" .
+k:minimal-lstm-nb-svm-baseline-ensemble a k:Notebook ;
+    rdfs:label "minimal-lstm-nb-svm-baseline-ensemble.ipynb" .
 

@@ -3,11 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://purl.org/dj/kaggle/xgboost#1322649418> rdfs:label "train_test_split(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> ;
+    dj:appearsIn k:xgboost ;
     dj:assignedFrom <http://purl.org/dj/python/lib/964298441> .
-
-<http://purl.org/dj/kaggle/xgboost#201720583> rdfs:label "xgboost" ;
-    dj:importedBy <http://purl.org/dj/python/lib/632948055> .
 
 <http://purl.org/dj/kaggle/xgboost#249561878> rdfs:label "print[0]" ;
     dj:print <http://purl.org/dj/kaggle/xgboost#1776224230> .
@@ -45,27 +42,27 @@
         <http://purl.org/dj/kaggle/xgboost#577569843> .
 
 <http://purl.org/dj/kaggle/xgboost#714933535> rdfs:label "XGBRegressor(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> ;
+    dj:appearsIn k:xgboost ;
     dj:assignedFrom <http://purl.org/dj/python/lib/465699998> .
 
-k:xgboost a k:Notebook ;
-    rdfs:label "xgboost" .
-
 <http://purl.org/dj/kaggle/xgboost#130351579> rdfs:label "str(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#1722550378> rdfs:label "mean_absolute_error(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> ;
+    dj:appearsIn k:xgboost ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1307576297> .
 
 <http://purl.org/dj/kaggle/xgboost#1776224230> rdfs:label "Mean Absolute Error: (0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
+
+<http://purl.org/dj/kaggle/xgboost#201720583> rdfs:label "xgboost" ;
+    dj:importedBy k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#30736566> rdfs:label "4(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#440271832> rdfs:label "my_model(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#458752925> rdfs:label "X_valid(0)$0" ;
     dj:train_test_split <http://purl.org/dj/kaggle/xgboost#76611886>,
@@ -96,13 +93,13 @@ k:xgboost a k:Notebook ;
         <http://purl.org/dj/kaggle/xgboost#87032133> .
 
 <http://purl.org/dj/kaggle/xgboost#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#795492240> rdfs:label "[<_ast.Constant object at 0x12f9899a0>, <_ast.Constant object at 0x12f989df0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f989fa0>](0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> ;
+    dj:appearsIn k:xgboost ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/xgboost#893584757> rdfs:label "cols_to_use(0)$0" ;
@@ -116,16 +113,16 @@ k:xgboost a k:Notebook ;
     dj:importedBy <http://purl.org/dj/python/lib/816055830> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/632948055> .
-
-<http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
-    dj:importedBy <http://purl.org/dj/python/lib/632948055> .
-
-<http://purl.org/dj/python/lib/465699998> rdfs:label "XGBRegressor" ;
     dj:importedBy k:xgboost .
 
+<http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy k:xgboost .
+
+<http://purl.org/dj/python/lib/465699998> rdfs:label "XGBRegressor" ;
+    dj:importedBy <http://purl.org/dj/kaggle/xgboost#201720583> .
+
 <http://purl.org/dj/python/lib/816055830> rdfs:label "sklearn.metrics" ;
-    dj:importedBy <http://purl.org/dj/python/lib/632948055> .
+    dj:importedBy k:xgboost .
 
 <http://purl.org/dj/python/lib/964298441> rdfs:label "train_test_split" ;
     dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
@@ -135,13 +132,13 @@ k:xgboost a k:Notebook ;
         <http://purl.org/dj/kaggle/xgboost#80085334> .
 
 <http://purl.org/dj/kaggle/xgboost#66388247> rdfs:label "500(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#86966595> rdfs:label "1000(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#87032133> rdfs:label "0.05(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/632948055> .
+    dj:appearsIn k:xgboost .
 
 <http://purl.org/dj/kaggle/xgboost#76611886> rdfs:label "X(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/xgboost#243401328>,
@@ -158,5 +155,6 @@ k:xgboost a k:Notebook ;
     dj:train_test_split <http://purl.org/dj/kaggle/xgboost#76611886>,
         <http://purl.org/dj/kaggle/xgboost#89588047> .
 
-<http://purl.org/dj/python/lib/632948055> rdfs:label "xgboost.ipynb" .
+k:xgboost a k:Notebook ;
+    rdfs:label "xgboost.ipynb" .
 

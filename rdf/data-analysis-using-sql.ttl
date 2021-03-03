@@ -2,10 +2,8 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:data-analysis-using-sql a k:Notebook .
-
 <http://purl.org/dj/kaggle/data-analysis-using-sql#127074770> rdfs:label "plt(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> ;
+    dj:appearsIn k:data-analysis-using-sql ;
     dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#1271727791> rdfs:label "players_height(0)$1" ;
@@ -43,7 +41,7 @@ k:data-analysis-using-sql a k:Notebook .
         <http://purl.org/dj/kaggle/data-analysis-using-sql#80085334> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#1109395063> rdfs:label "database.sqlite(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254> rdfs:label "players_height(0)$0" ;
     dj:read_sql <http://purl.org/dj/kaggle/data-analysis-using-sql#2470193738>,
@@ -133,7 +131,7 @@ k:data-analysis-using-sql a k:Notebook .
                                 HAVING count(distinct stage) > 10
                                 ORDER BY Country.name, League.name, season DESC
                                 ;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#1533800850> rdfs:label """SELECT Match.id, 
                                         Country.name AS country_name, 
@@ -153,7 +151,7 @@ k:data-analysis-using-sql a k:Notebook .
                                 WHERE country_name = 'Spain'
                                 ORDER by date
                                 LIMIT 10;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#158597585> rdfs:label "df(0)$10" ;
     dj:list <http://purl.org/dj/kaggle/data-analysis-using-sql#128647593>,
@@ -195,7 +193,7 @@ k:data-analysis-using-sql a k:Notebook .
                             GROUP BY calc_height
                             ORDER BY calc_height
                                 ;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#253231747> rdfs:label "path(0)$0" ;
     dj:assignedFrom <http://purl.org/dj/kaggle/data-analysis-using-sql#385090412> .
@@ -203,80 +201,80 @@ k:data-analysis-using-sql a k:Notebook .
 <http://purl.org/dj/kaggle/data-analysis-using-sql#2934119632> rdfs:label """SELECT *
                         FROM League
                         JOIN Country ON Country.id = League.country_id;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#356385607> rdfs:label "sqlite3(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> ;
+    dj:appearsIn k:data-analysis-using-sql ;
     dj:assignedFrom <http://purl.org/dj/python/lib/199951046> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#3770812953> rdfs:label """SELECT *
                         FROM Country;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#3841070492> rdfs:label """SELECT *
                         FROM sqlite_master
                         WHERE type='table';(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#385090412> rdfs:label "../input/(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#4285012173> rdfs:label """SELECT *
                         FROM Team
                         ORDER BY team_long_name
                         LIMIT 10;(0)""" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#552272907> rdfs:label "database(0)$0" ;
     dj:Add <http://purl.org/dj/kaggle/data-analysis-using-sql#1109395063>,
         <http://purl.org/dj/kaggle/data-analysis-using-sql#253231747> .
 
 <http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2825390924> .
+    dj:importedBy k:data-analysis-using-sql .
 
 <http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2825390924> .
+    dj:importedBy k:data-analysis-using-sql .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2825390924> .
+    dj:importedBy k:data-analysis-using-sql .
 
 <http://purl.org/dj/python/lib/199951046> rdfs:label "sqlite3" ;
-    dj:importedBy <http://purl.org/dj/python/lib/2825390924> .
+    dj:importedBy k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#213647997> rdfs:label "Spain(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#214106757> rdfs:label "Italy(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#265159377> rdfs:label "France(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#293143307> rdfs:label "season(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#331547451> rdfs:label "England(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#339280725> rdfs:label "Germany(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#82575712> rdfs:label "np(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> ;
+    dj:appearsIn k:data-analysis-using-sql ;
     dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#511116341> rdfs:label "avg_goals(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#788792660> rdfs:label "avg_goal_dif(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#252510852> rdfs:label "conn(0)$0" ;
     dj:connect <http://purl.org/dj/kaggle/data-analysis-using-sql#356385607>,
         <http://purl.org/dj/kaggle/data-analysis-using-sql#552272907> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> ;
+    dj:appearsIn k:data-analysis-using-sql ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065> rdfs:label "leages_by_season(0)$0" ;
@@ -285,7 +283,8 @@ k:data-analysis-using-sql a k:Notebook .
         <http://purl.org/dj/kaggle/data-analysis-using-sql#80085334> .
 
 <http://purl.org/dj/kaggle/data-analysis-using-sql#833488278> rdfs:label "country_name(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/2825390924> .
+    dj:appearsIn k:data-analysis-using-sql .
 
-<http://purl.org/dj/python/lib/2825390924> rdfs:label "data-analysis-using-sql.ipynb" .
+k:data-analysis-using-sql a k:Notebook ;
+    rdfs:label "data-analysis-using-sql.ipynb" .
 

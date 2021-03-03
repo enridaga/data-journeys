@@ -2,8 +2,6 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:nfl-big-data-bowl-official-starter-notebook a k:Notebook .
-
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#190644904> rdfs:label "next[0]" ;
     dj:next <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#681313449> .
 
@@ -37,10 +35,10 @@ k:nfl-big-data-bowl-official-starter-notebook a k:Notebook .
         <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#80085334> .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#1052116556> rdfs:label "/kaggle/working(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> .
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#145949180> rdfs:label ".csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> .
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#192021024> rdfs:label "env(0)$1" ;
     dj:predict <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#191955487>,
@@ -51,34 +49,34 @@ k:nfl-big-data-bowl-official-starter-notebook a k:Notebook .
         <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#2193688849> .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#205193837> rdfs:label "False(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> .
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#2998538409> rdfs:label "/kaggle/input/nfl-big-data-bowl-2020/train.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> .
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#369623940> rdfs:label "nflrush(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> ;
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook ;
     dj:assignedFrom <http://purl.org/dj/python/lib/201196291> .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> ;
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#83689828> rdfs:label "os(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> ;
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook ;
     dj:assignedFrom <http://purl.org/dj/python/lib/22216931> .
 
 <http://purl.org/dj/python/lib/1261832120> rdfs:label "kaggle.competitions" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3400602306> .
+    dj:importedBy k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3400602306> .
+    dj:importedBy k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/python/lib/201196291> rdfs:label "nflrush" ;
     dj:importedBy <http://purl.org/dj/python/lib/1261832120> .
 
 <http://purl.org/dj/python/lib/22216931> rdfs:label "os" ;
-    dj:importedBy <http://purl.org/dj/python/lib/3400602306> .
+    dj:importedBy k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#191955487> rdfs:label "env(0)$0" ;
     dj:make_env <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#369623940> .
@@ -87,10 +85,11 @@ k:nfl-big-data-bowl-official-starter-notebook a k:Notebook .
     dj:iteratorOf <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#681313449> .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#427361219> rdfs:label "filename(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/3400602306> .
+    dj:appearsIn k:nfl-big-data-bowl-official-starter-notebook .
 
 <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#681313449> rdfs:label "iter_test(0)$0" ;
     dj:iter_test <http://purl.org/dj/kaggle/nfl-big-data-bowl-official-starter-notebook#191955487> .
 
-<http://purl.org/dj/python/lib/3400602306> rdfs:label "nfl-big-data-bowl-official-starter-notebook.ipynb" .
+k:nfl-big-data-bowl-official-starter-notebook a k:Notebook ;
+    rdfs:label "nfl-big-data-bowl-official-starter-notebook.ipynb" .
 

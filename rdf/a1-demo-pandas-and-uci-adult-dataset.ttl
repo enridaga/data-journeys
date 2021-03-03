@@ -2,24 +2,23 @@
 @prefix k: <http://purl.org/dj/kaggle/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-k:a1-demo-pandas-and-uci-adult-dataset a k:Notebook .
-
 <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243466865> rdfs:label "data(0)$1" ;
     dj:head <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243401328> .
 
 <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#2016086216> rdfs:label "../input/adult.data.csv(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1110052737> .
+    dj:appearsIn k:a1-demo-pandas-and-uci-adult-dataset .
 
 <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243401328> rdfs:label "data(0)$0" ;
     dj:read_csv <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#2016086216>,
         <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#80085334> .
 
 <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#80085334> rdfs:label "pd(0)" ;
-    dj:appearsIn <http://purl.org/dj/python/lib/1110052737> ;
+    dj:appearsIn k:a1-demo-pandas-and-uci-adult-dataset ;
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
-    dj:importedBy <http://purl.org/dj/python/lib/1110052737> .
+    dj:importedBy k:a1-demo-pandas-and-uci-adult-dataset .
 
-<http://purl.org/dj/python/lib/1110052737> rdfs:label "a1-demo-pandas-and-uci-adult-dataset.ipynb" .
+k:a1-demo-pandas-and-uci-adult-dataset a k:Notebook ;
+    rdfs:label "a1-demo-pandas-and-uci-adult-dataset.ipynb" .
 
