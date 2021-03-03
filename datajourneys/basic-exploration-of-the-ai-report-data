@@ -1,0 +1,46 @@
+strict digraph "" {
+	numpy -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	pandas -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=importedBy];
+	"pd(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	os -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=importedBy];
+	"os(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	"dirname(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"dirname(0)" -> "os(0)"	[label=iteratorOf];
+	"dirname(0)" -> "/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy(0)"	[label=iteratorOf];
+	"/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"_(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"_(0)" -> "os(0)"	[label=iteratorOf];
+	"_(0)" -> "/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy(0)"	[label=iteratorOf];
+	"filenames(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"filenames(0)" -> "os(0)"	[label=iteratorOf];
+	"filenames(0)" -> "/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy(0)"	[label=iteratorOf];
+	"filename(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
+	"print[0]" -> "os(0)"	[label=print];
+	"print[1]" -> "dirname(0)"	[label=print];
+	"print[2]" -> "filename(0)"	[label=print];
+	"pd(0)$0" -> "pd(0)"	[label=set_option];
+	"pd(0)$0" -> "max_rows(0)"	[label=set_option];
+	"pd(0)$0" -> "120(0)"	[label=set_option];
+	"max_rows(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"120(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"df(0)$0" -> "pd(0)$0"	[label=read_excel];
+	"df(0)$0" -> "/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/5. Education/Udacity/Copy of Copy of Data to Share with Stanford, \
+SG.xlsx(0)"	[label=read_excel];
+	"df(0)$0" -> "[<_ast.Constant object at 0x12f8ab160>](0)"	[label=read_excel];
+	"/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/5. Education/Udacity/Copy of Copy of Data to Share with Stanford, \
+SG.xlsx(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x12f8ab160>](0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"df(0)$1" -> "df(0)$0"	[label=value_counts];
+	"df_jobs(0)$0" -> "pd(0)$0"	[label=read_excel];
+	"df_jobs(0)$0" -> "/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy/4.1. Jobs/Burning Glass/AI Postings USA monthly \
+data.xlsx(0)"	[label=read_excel];
+	"/kaggle/input/the-2019-ai-index-report/AI INDEX 2019 PUBLIC DATA/4. The Economy/4.1. Jobs/Burning Glass/AI Postings USA monthly \
+data.xlsx(0)" -> "basic-exploration-of-the-ai-report-data.ipynb"	[label=appearsIn];
+	"df_jobs(0)$1" -> "df_jobs(0)$0"	[label=sum];
+	"df_jobs(0)$2" -> "df_jobs(0)$1"	[label=plot];
+}

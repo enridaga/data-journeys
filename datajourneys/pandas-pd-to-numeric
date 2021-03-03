@@ -1,0 +1,44 @@
+digraph "" {
+	numpy -> "pandas-pd-to-numeric.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	pandas -> "pandas-pd-to-numeric.ipynb"	[label=importedBy];
+	"pd(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	os -> "pandas-pd-to-numeric.ipynb"	[label=importedBy];
+	"os(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	"dirname(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"dirname(0)" -> "os(0)"	[label=iteratorOf];
+	"dirname(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"/kaggle/input(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"_(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"_(0)" -> "os(0)"	[label=iteratorOf];
+	"_(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"filenames(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"filenames(0)" -> "os(0)"	[label=iteratorOf];
+	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"filename(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
+	"print[0]" -> "os(0)"	[label=print];
+	"print[1]" -> "dirname(0)"	[label=print];
+	"print[2]" -> "filename(0)"	[label=print];
+	"s(0)$0" -> "pd(0)"	[label=Series];
+	"s(0)$0" -> "[<_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab790>, <_ast.UnaryOp object at 0x12f8ab0a0>](0)"	[label=Series];
+	"s(0)$0" -> "example(0)"	[label=Series];
+	"[<_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab790>, <_ast.UnaryOp object at 0x12f8ab0a0>](0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"example(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"pd(0)$0" -> "pd(0)"	[label=to_numeric];
+	"pd(0)$0" -> "s(0)$0"	[label=to_numeric];
+	"pd(0)$1" -> "s(0)$0"	[label=to_numeric];
+	"pd(0)$1" -> "pd(0)$0"	[label=to_numeric];
+	"s(0)$1" -> "pd(0)$1"	[label=Series];
+	"s(0)$1" -> "[<_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f670>, <_ast.UnaryOp \
+object at 0x12fc4fe20>](0)"	[label=Series];
+	"[<_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f670>, <_ast.UnaryOp \
+object at 0x12fc4fe20>](0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+	"s(0)$2" -> "pd(0)$1"	[label=to_numeric];
+	"s(0)$2" -> "s(0)$2"	[label=to_numeric];
+	"s(0)$2" -> "coerce(0)"	[label=to_numeric];
+	"coerce(0)" -> "pandas-pd-to-numeric.ipynb"	[label=appearsIn];
+}

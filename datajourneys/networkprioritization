@@ -1,0 +1,61 @@
+strict digraph "" {
+	"RESPONSE_TIME(1)$0" -> "1(1)"	[label=assignedFrom];
+	"self(3)" -> "prioritize_network[0]"	[label=_argToVar];
+	"response_times(3)" -> "prioritize_network[1]"	[label=_argToVar];
+	"cost(3)" -> "prioritize_network[2]"	[label=_argToVar];
+	"priority(3)" -> "prioritize_network[3]"	[label=_argToVar];
+	"first_priority(3)$0" -> "response_times(3)"	[label=enumerate];
+	"second_priority(3)$0" -> "cost(3)"	[label=enumerate];
+	"first_priority(3)$1" -> "cost(3)"	[label=enumerate];
+	"second_priority(3)$1" -> "response_times(3)"	[label=enumerate];
+	"sorted_list(3)$0" -> "first_priority(3)$1"	[label=sorted];
+	"sorted_list(3)$0" -> "x(3)"	[label=sorted];
+	"sorted_list(3)$0" -> "1(3)"	[label=sorted];
+	"print[0]" -> "response_times(3)"	[label=print];
+	"print[0]" -> "sorted list: (3)"	[label=print];
+	"print[0]" -> "Se valida si hay un valor de red repetido(3)"	[label=print];
+	"print[0]" -> "Almacena los duplicados(3)"	[label=print];
+	"print[0]" -> "duplicated(3)$0"	[label=print];
+	"print[0]" -> "Obtiene los valores de los indices repetidos segun la 'segunda' prioridad(3)"	[label=print];
+	"print[0]" -> "sub_list(3)$0"	[label=print];
+	"print[0]" -> "Obtiene los indices ordenados usando la segunda prioridad como apoyo(3)"	[label=print];
+	"print[0]" -> "sort_sub_list(3)$0"	[label=print];
+	"print[0]" -> "Agrega las repetidas en el orden correspondiente(3)"	[label=print];
+	"print[0]" -> "Estado actual del proceso de priorización (3)"	[label=print];
+	"duplicated(3)$0" -> "sorted_list(3)$0"	[label=assignedFrom];
+	"duplicated(3)$0" -> "1(3)"	[label=assignedFrom];
+	"duplicated(3)$0" -> "network(3)"	[label=assignedFrom];
+	"duplicated(3)$0" -> "first_network_tuple(3)"	[label=assignedFrom];
+	"duplicated(3)$0" -> "0(3)"	[label=assignedFrom];
+	"sub_list(3)$0" -> "second_priority(3)$1"	[label=assignedFrom];
+	"sub_list(3)$0" -> "duplicated(3)$0"	[label=assignedFrom];
+	"sub_list(3)$0" -> "0(3)"	[label=assignedFrom];
+	"sub_list(3)$0" -> "second_network_tuple(3)"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "x(3)"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "1(3)"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "sub_list(3)$0"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "0(3)"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "second_network_tuple(3)"	[label=assignedFrom];
+	"sort_sub_list(3)$0" -> "sorted(3)"	[label=assignedFrom];
+	"print[1]" -> "sorted_list(3)$0"	[label=print];
+	"print[1]" -> "network(3)"	[label=print];
+	"print[1]" -> "keys(3)$0"	[label=print];
+	"network(3)" -> "sorted_list(3)$0"	[label=iteratorOf];
+	"keys(3)$0" -> "sort_sub_list(3)$0"	[label=Add];
+	"keys(3)$0" -> "keys(3)"	[label=Add];
+	"key(3)" -> "sorted_list(3)$0"	[label=iteratorOf];
+	"keys(3)$1" -> "keys(3)$0"	[label=append];
+	"keys(3)$1" -> "key(3)"	[label=append];
+	"network(0)" -> "networkprioritization.ipynb"	[label=appearsIn];
+	"network(0)$0" -> "network(0)"	[label=prioritize_network];
+	"network(0)$0" -> "[<_ast.Constant object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
+object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f160>](0)"	[label=prioritize_network];
+	"network(0)$0" -> "[<_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant \
+object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4f070>](0)"	[label=prioritize_network];
+	"network(0)$0" -> "Criteria(0)"	[label=prioritize_network];
+	"[<_ast.Constant object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
+object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f160>](0)" -> "networkprioritization.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant \
+object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4f070>](0)" -> "networkprioritization.ipynb"	[label=appearsIn];
+	"Criteria(0)" -> "networkprioritization.ipynb"	[label=appearsIn];
+}

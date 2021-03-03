@@ -1,0 +1,24 @@
+strict digraph "" {
+	collections -> "six-steps-to-more-professional-data-science-code.ipynb"	[label=importedBy];
+	"collections(0)" -> collections	[label=assignedFrom];
+	"collections(0)" -> "six-steps-to-more-professional-data-science-code.ipynb"	[label=appearsIn];
+	"values(1)" -> "find_most_common[0]"	[label=_argToVar];
+	"find_most_common[0]" -> "values_list(0)$0"	[label=find_most_common];
+	"find_most_common[0]" -> "values_list(0)$1"	[label=find_most_common];
+	"values_list(0)$0" -> "[<_ast.Constant object at 0x12f88a430>, <_ast.Constant object at 0x12f88a370>, <_ast.Constant object at 0x12f88a040>, <_ast.Constant \
+object at 0x12f88adf0>, <_ast.Constant object at 0x12f88ab20>, <_ast.Constant object at 0x12f88a910>, <_ast.Constant object at 0x12f88a250>](\
+0)"	[label=assignedFrom];
+	"values_list(0)$1" -> "[<_ast.Constant object at 0x12f88aac0>, <_ast.Constant object at 0x12f88a2e0>, <_ast.Constant object at 0x12f88a8b0>, <_ast.Constant \
+object at 0x12f88aca0>, <_ast.Constant object at 0x12f88ad60>, <_ast.Constant object at 0x12f88ae20>, <_ast.Constant object at 0x12f88a790>, <_\
+ast.Constant object at 0x12f88a100>, <_ast.Constant object at 0x12f88a550>](0)"	[label=assignedFrom];
+	"list_counts(1)$0" -> "values(1)"	[label=Counter];
+	"list_counts(1)$0" -> "collections(1)"	[label=Counter];
+	"top_two_values(1)$0" -> "list_counts(1)$0"	[label=most_common];
+	"top_two_values(1)$0" -> "2(1)"	[label=most_common];
+	"[<_ast.Constant object at 0x12f88a430>, <_ast.Constant object at 0x12f88a370>, <_ast.Constant object at 0x12f88a040>, <_ast.Constant \
+object at 0x12f88adf0>, <_ast.Constant object at 0x12f88ab20>, <_ast.Constant object at 0x12f88a910>, <_ast.Constant object at 0x12f88a250>](\
+0)" -> "six-steps-to-more-professional-data-science-code.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x12f88aac0>, <_ast.Constant object at 0x12f88a2e0>, <_ast.Constant object at 0x12f88a8b0>, <_ast.Constant \
+object at 0x12f88aca0>, <_ast.Constant object at 0x12f88ad60>, <_ast.Constant object at 0x12f88ae20>, <_ast.Constant object at 0x12f88a790>, <_\
+ast.Constant object at 0x12f88a100>, <_ast.Constant object at 0x12f88a550>](0)" -> "six-steps-to-more-professional-data-science-code.ipynb"	[label=appearsIn];
+}

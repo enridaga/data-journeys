@@ -1,0 +1,73 @@
+strict digraph "" {
+	"sklearn.metrics" -> "underfitting-and-overfitting.ipynb"	[label=importedBy];
+	mean_absolute_error -> "sklearn.metrics"	[label=importedBy];
+	"mean_absolute_error(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"mean_absolute_error(0)" -> mean_absolute_error	[label=assignedFrom];
+	"sklearn.tree" -> "underfitting-and-overfitting.ipynb"	[label=importedBy];
+	DecisionTreeRegressor -> "sklearn.tree"	[label=importedBy];
+	"DecisionTreeRegressor(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"DecisionTreeRegressor(0)" -> DecisionTreeRegressor	[label=assignedFrom];
+	"max_leaf_nodes(1)" -> "get_mae[0]"	[label=_argToVar];
+	"train_X(1)" -> "get_mae[1]"	[label=_argToVar];
+	"val_X(1)" -> "get_mae[2]"	[label=_argToVar];
+	"train_y(1)" -> "get_mae[3]"	[label=_argToVar];
+	"val_y(1)" -> "get_mae[4]"	[label=_argToVar];
+	"model(1)$0" -> "max_leaf_nodes(1)"	[label=DecisionTreeRegressor];
+	"model(1)$0" -> "0(1)"	[label=DecisionTreeRegressor];
+	"model(1)$1" -> "train_X(1)"	[label=fit];
+	"model(1)$1" -> "train_y(1)"	[label=fit];
+	"model(1)$1" -> "model(1)$0"	[label=fit];
+	"preds_val(1)$0" -> "val_X(1)"	[label=predict];
+	"preds_val(1)$0" -> "model(1)$1"	[label=predict];
+	"mae(1)$0" -> "val_y(1)"	[label=mean_absolute_error];
+	"mae(1)$0" -> "preds_val(1)$0"	[label=mean_absolute_error];
+	pandas -> "underfitting-and-overfitting.ipynb"	[label=importedBy];
+	"pd(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"../input/melbourne-housing-snapshot/melb_data.csv(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)"	[label=assignedFrom];
+	"melbourne_data(0)$0" -> "pd(0)"	[label=read_csv];
+	"melbourne_data(0)$0" -> "melbourne_file_path(0)$0"	[label=read_csv];
+	"filtered_melbourne_data(0)$0" -> "melbourne_data(0)$0"	[label=dropna];
+	"filtered_melbourne_data(0)$0" -> "0(0)"	[label=dropna];
+	"0(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"y(0)$0" -> "filtered_melbourne_data(0)$0"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x12f85ebe0>, <_ast.Constant object at 0x12f85e9d0>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant \
+object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab0a0>](\
+0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"melbourne_features(0)$0" -> "[<_ast.Constant object at 0x12f85ebe0>, <_ast.Constant object at 0x12f85e9d0>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant \
+object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab0a0>](\
+0)"	[label=assignedFrom];
+	"X(0)$0" -> "filtered_melbourne_data(0)$0"	[label=assignedFrom];
+	"X(0)$0" -> "melbourne_features(0)$0"	[label=assignedFrom];
+	"sklearn.model_selection" -> "underfitting-and-overfitting.ipynb"	[label=importedBy];
+	train_test_split -> "sklearn.model_selection"	[label=importedBy];
+	"train_test_split(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
+	"train_X(0)$0" -> "0(0)"	[label=train_test_split];
+	"train_X(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"train_X(0)$0" -> "X(0)$0"	[label=train_test_split];
+	"val_X(0)$0" -> "0(0)"	[label=train_test_split];
+	"val_X(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"val_X(0)$0" -> "X(0)$0"	[label=train_test_split];
+	"train_y(0)$0" -> "0(0)"	[label=train_test_split];
+	"train_y(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"train_y(0)$0" -> "X(0)$0"	[label=train_test_split];
+	"val_y(0)$0" -> "0(0)"	[label=train_test_split];
+	"val_y(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"val_y(0)$0" -> "X(0)$0"	[label=train_test_split];
+	"[<_ast.Constant object at 0x12fc3f0d0>, <_ast.Constant object at 0x12fc3f070>, <_ast.Constant object at 0x12fc3f040>, <_ast.Constant \
+object at 0x12fc3f4f0>](0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"max_leaf_nodes(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"max_leaf_nodes(0)" -> "[<_ast.Constant object at 0x12fc3f0d0>, <_ast.Constant object at 0x12fc3f070>, <_ast.Constant object at 0x12fc3f040>, <_ast.Constant \
+object at 0x12fc3f4f0>](0)"	[label=iteratorOf];
+	"my_mae(0)$0" -> "train_X(0)$0"	[label=get_mae];
+	"my_mae(0)$0" -> "val_X(0)$0"	[label=get_mae];
+	"my_mae(0)$0" -> "train_y(0)$0"	[label=get_mae];
+	"my_mae(0)$0" -> "val_y(0)$0"	[label=get_mae];
+	"my_mae(0)$0" -> "max_leaf_nodes(0)"	[label=get_mae];
+	"Max leaf nodes: \%d  		 Mean Absolute Error:  \%d(0)" -> "underfitting-and-overfitting.ipynb"	[label=appearsIn];
+	"print[0]" -> "Max leaf nodes: \%d  		 Mean Absolute Error:  \%d(0)"	[label=print];
+	"print[1]" -> "max_leaf_nodes(0)"	[label=print];
+	"print[2]" -> "my_mae(0)$0"	[label=print];
+}

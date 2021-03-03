@@ -1,0 +1,108 @@
+strict digraph "" {
+	node [label="\N"];
+	"http://purl.org/dj/kaggle/select-from-where#864093514"	[label="864093514 (safe_config(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#302187174"	[label="302187174 (ONE_MB(0)$0: Preparation)"];
+	"http://purl.org/dj/kaggle/select-from-where#864093514" -> "http://purl.org/dj/kaggle/select-from-where#302187174"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#86966595"	[label="86966595 (1000(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#302187174" -> "http://purl.org/dj/kaggle/select-from-where#86966595"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where"	[label="select-from-where"];
+	"http://purl.org/dj/kaggle/select-from-where#86966595" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#316146398"	[label="316146398 (table(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#1561135094"	[label="1561135094 (global_air_quality(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#316146398" -> "http://purl.org/dj/kaggle/select-from-where#1561135094"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#292619014"	[label="292619014 (openaq(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#316146398" -> "http://purl.org/dj/kaggle/select-from-where#292619014"	[label=previous];
+	"http://purl.org/dj/python/lib/520815811"	[label="520815811 (google.cloud: Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#316146398" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#439485418"	[label="439485418 (bigquery(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#316146398" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1825900637"	[label="1825900637 (bigquery-public-data(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#316146398" -> "http://purl.org/dj/kaggle/select-from-where#1825900637"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1561135094" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#292619014" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/python/lib/520815811" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#439485418" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1825900637" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#205201729"	[label="205201729 (
+
+        SELECT *
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = 'US'
+
+        (\
+0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#205201729" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#249561878"	[label="249561878 (print[0]: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#4211215604"	[label="4211215604 (This query will process {} bytes.(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#249561878" -> "http://purl.org/dj/kaggle/select-from-where#4211215604"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#4211215604" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#677774494"	[label="677774494 (us_cities(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#677774494" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#677774494" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#3192791760"	[label="3192791760 (
+
+        SELECT city
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = 'US'
+
+        (\
+0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#677774494" -> "http://purl.org/dj/kaggle/select-from-where#3192791760"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#3192791760" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1739917320"	[label="1739917320 (dry_run_query_job(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#1739917320" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1739917320" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1491083581"	[label="1491083581 (
+
+        SELECT score, title
+
+        FROM `bigquery-public-data.hacker_news.full`
+
+        WHERE type = \"job\" 
+
+        (\
+0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#1739917320" -> "http://purl.org/dj/kaggle/select-from-where#1491083581"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#165478946"	[label="165478946 (True(0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#1739917320" -> "http://purl.org/dj/kaggle/select-from-where#165478946"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1491083581" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#165478946" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1258817189"	[label="1258817189 (safe_query_job(0)$1: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#1258817189" -> "http://purl.org/dj/kaggle/select-from-where#864093514"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1258817189" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1258817189" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1258817189" -> "http://purl.org/dj/kaggle/select-from-where#1491083581"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#395510609"	[label="395510609 (tables(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#395510609" -> "http://purl.org/dj/kaggle/select-from-where#292619014"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#395510609" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#395510609" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#395510609" -> "http://purl.org/dj/kaggle/select-from-where#1825900637"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#299434656"	[label="299434656 (ONE_GB(0)$0: Preparation)"];
+	"http://purl.org/dj/kaggle/select-from-where#299434656" -> "http://purl.org/dj/kaggle/select-from-where#86966595"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1411712804"	[label="1411712804 (job_post_scores(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#1411712804" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1411712804" -> "http://purl.org/dj/kaggle/select-from-where#439485418"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1411712804" -> "http://purl.org/dj/kaggle/select-from-where#1491083581"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#864159051"	[label="864159051 (safe_config(0)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#1411712804" -> "http://purl.org/dj/kaggle/select-from-where#864159051"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#864159051" -> "http://purl.org/dj/kaggle/select-from-where#299434656"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#677840031"	[label="677840031 (us_cities(0)$1: Preparation)"];
+	"http://purl.org/dj/kaggle/select-from-where#677840031" -> "http://purl.org/dj/kaggle/select-from-where#677774494"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#223085194"	[label="223085194 (table(0): Visualisation)"];
+	"http://purl.org/dj/kaggle/select-from-where#223085194" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+	"http://purl.org/dj/kaggle/select-from-where#1558128176"	[label="1558128176 (
+
+        SELECT city, country
+
+        FROM `bigquery-public-data.openaq.global_air_quality`
+
+        WHERE country = '\
+US'
+
+        (0): Reuse)"];
+	"http://purl.org/dj/kaggle/select-from-where#1558128176" -> "http://purl.org/dj/kaggle/select-from-where"	[label=previous];
+}

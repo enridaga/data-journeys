@@ -1,0 +1,38 @@
+strict digraph "" {
+	"IPython.display" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=importedBy];
+	HTML -> "IPython.display"	[label=importedBy];
+	"HTML(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"HTML(0)" -> HTML	[label=assignedFrom];
+	pandas -> "download-a-csv-file-from-a-kernel.ipynb"	[label=importedBy];
+	"pd(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	numpy -> "download-a-csv-file-from-a-kernel.ipynb"	[label=importedBy];
+	"np(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	base64 -> "download-a-csv-file-from-a-kernel.ipynb"	[label=importedBy];
+	"base64(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"base64(0)" -> base64	[label=assignedFrom];
+	"df(1)" -> "create_download_link[0]"	[label=_argToVar];
+	"create_download_link[0]" -> "df(0)$0"	[label=create_download_link];
+	"df(0)$0" -> "pd(0)"	[label=DataFrame];
+	"df(0)$0" -> "np(0)"	[label=DataFrame];
+	"df(0)$0" -> "50(0)"	[label=DataFrame];
+	"df(0)$0" -> "4(0)"	[label=DataFrame];
+	"df(0)$0" -> "list(0)"	[label=DataFrame];
+	"df(0)$0" -> "ABCD(0)"	[label=DataFrame];
+	"title(1)" -> "create_download_link[1]"	[label=_argToVar];
+	"filename(1)" -> "create_download_link[2]"	[label=_argToVar];
+	"csv(1)$0" -> "df(1)"	[label=to_csv];
+	"b64(1)$0" -> "csv(1)$0"	[label=b64encode];
+	"b64(1)$0" -> "base64(1)"	[label=b64encode];
+	"payload(1)$0" -> "b64(1)$0"	[label=decode];
+	"html(1)$0" -> "<a download=\"{filename}\" href=\"data:text/csv;base64,{payload}\" target=\"_blank\">{title}</a>(1)"	[label=assignedFrom];
+	"html(1)$1" -> "title(1)"	[label=format];
+	"html(1)$1" -> "filename(1)"	[label=format];
+	"html(1)$1" -> "payload(1)$0"	[label=format];
+	"html(1)$1" -> "html(1)$0"	[label=format];
+	"50(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"4(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"list(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"ABCD(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+}

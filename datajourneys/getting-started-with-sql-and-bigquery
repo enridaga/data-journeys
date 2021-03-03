@@ -1,0 +1,26 @@
+strict digraph "" {
+	"google.cloud" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=importedBy];
+	bigquery -> "google.cloud"	[label=importedBy];
+	"bigquery(0)" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=appearsIn];
+	"bigquery(0)" -> bigquery	[label=assignedFrom];
+	"client(0)$0" -> "bigquery(0)"	[label=Client];
+	"dataset_ref(0)$0" -> "client(0)$0"	[label=dataset];
+	"dataset_ref(0)$0" -> "hacker_news(0)"	[label=dataset];
+	"dataset_ref(0)$0" -> "bigquery-public-data(0)"	[label=dataset];
+	"hacker_news(0)" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=appearsIn];
+	"bigquery-public-data(0)" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=appearsIn];
+	"dataset(0)$0" -> "client(0)$0"	[label=get_dataset];
+	"dataset(0)$0" -> "dataset_ref(0)$0"	[label=get_dataset];
+	"tables(0)$0" -> "client(0)$0"	[label=list];
+	"tables(0)$0" -> "dataset(0)$0"	[label=list];
+	"table(0)" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=appearsIn];
+	"table(0)" -> "tables(0)$0"	[label=iteratorOf];
+	"print[0]" -> "table(0)"	[label=print];
+	"table_ref(0)$0" -> "dataset_ref(0)$0"	[label=table];
+	"table_ref(0)$0" -> "full(0)"	[label=table];
+	"full(0)" -> "getting-started-with-sql-and-bigquery.ipynb"	[label=appearsIn];
+	"table(0)$0" -> "client(0)$0"	[label=get_table];
+	"table(0)$0" -> "table_ref(0)$0"	[label=get_table];
+	"client(0)$1" -> "client(0)$0"	[label=to_dataframe];
+	"client(0)$2" -> "client(0)$1"	[label=to_dataframe];
+}

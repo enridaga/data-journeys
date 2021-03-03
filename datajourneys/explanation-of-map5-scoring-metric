@@ -1,0 +1,33 @@
+strict digraph "" {
+	numpy -> "explanation-of-map5-scoring-metric.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	pandas -> "explanation-of-map5-scoring-metric.ipynb"	[label=importedBy];
+	"pd(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"label(1)" -> "map_per_image[0]"	[label=_argToVar];
+	"predictions(1)" -> "map_per_image[1]"	[label=_argToVar];
+	"labels(2)" -> "map_per_set[0]"	[label=_argToVar];
+	"map_per_set[0]" -> "labels(0)$0"	[label=map_per_set];
+	"labels(0)$0" -> "train_df(0)$1"	[label=assignedFrom];
+	"labels(0)$0" -> "Id(0)"	[label=assignedFrom];
+	"predictions(2)" -> "map_per_set[1]"	[label=_argToVar];
+	"map_per_set[1]" -> "predictions(0)$0"	[label=map_per_set];
+	"predictions(0)$0" -> "labels(0)$0"	[label=assignedFrom];
+	"predictions(0)$0" -> "sample_pred(0)$0"	[label=assignedFrom];
+	"predictions(0)$0" -> "i(0)"	[label=assignedFrom];
+	"predictions(0)$0" -> "range(0)"	[label=assignedFrom];
+	"predictions(0)$0" -> "len(0)"	[label=assignedFrom];
+	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
+	"Id(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x130532b80>, <_ast.Constant object at 0x130532460>, <_ast.Constant object at 0x1305321f0>, <_ast.Constant \
+object at 0x130532f10>, <_ast.Constant object at 0x130532700>](0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"sample_pred(0)$0" -> "[<_ast.Constant object at 0x130532b80>, <_ast.Constant object at 0x130532460>, <_ast.Constant object at 0x1305321f0>, <_ast.Constant \
+object at 0x130532f10>, <_ast.Constant object at 0x130532700>](0)"	[label=assignedFrom];
+	"i(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"range(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+	"len(0)" -> "explanation-of-map5-scoring-metric.ipynb"	[label=appearsIn];
+}

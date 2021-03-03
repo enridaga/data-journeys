@@ -1,0 +1,26 @@
+strict digraph "" {
+	pandas -> "data-types-and-missing-values.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"reviews(0)$0" -> "pd(0)"	[label=read_csv];
+	"reviews(0)$0" -> "../input/wine-reviews/winemag-data-130k-v2.csv(0)"	[label=read_csv];
+	"reviews(0)$0" -> "0(0)"	[label=read_csv];
+	"../input/wine-reviews/winemag-data-130k-v2.csv(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"0(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"pd(0)$0" -> "pd(0)"	[label=set_option];
+	"pd(0)$0" -> "max_rows(0)"	[label=set_option];
+	"pd(0)$0" -> "5(0)"	[label=set_option];
+	"max_rows(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"5(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"reviews(0)$1" -> "reviews(0)$0"	[label=astype];
+	"reviews(0)$1" -> "float64(0)"	[label=astype];
+	"float64(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"reviews(0)$2" -> "reviews(0)$1"	[label=fillna];
+	"reviews(0)$2" -> "Unknown(0)"	[label=fillna];
+	"Unknown(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"reviews(0)$3" -> "reviews(0)$2"	[label=replace];
+	"reviews(0)$3" -> "@kerinokeefe(0)"	[label=replace];
+	"reviews(0)$3" -> "@kerino(0)"	[label=replace];
+	"@kerinokeefe(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+	"@kerino(0)" -> "data-types-and-missing-values.ipynb"	[label=appearsIn];
+}

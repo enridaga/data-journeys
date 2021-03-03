@@ -1,0 +1,25 @@
+strict digraph "" {
+	pandas -> "hello-seaborn.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"pd(0)$0" -> "pd(0)"	[label=register_matplotlib_converters];
+	"matplotlib.pyplot" -> "hello-seaborn.ipynb"	[label=importedBy];
+	"plt(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	seaborn -> "hello-seaborn.ipynb"	[label=importedBy];
+	"sns(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"Setup Complete(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"print[0]" -> "Setup Complete(0)"	[label=print];
+	"../input/fifa.csv(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"fifa_filepath(0)$0" -> "../input/fifa.csv(0)"	[label=assignedFrom];
+	"fifa_data(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"fifa_data(0)$0" -> "fifa_filepath(0)$0"	[label=read_csv];
+	"fifa_data(0)$0" -> "Date(0)"	[label=read_csv];
+	"fifa_data(0)$0" -> "True(0)"	[label=read_csv];
+	"Date(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"True(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
+	"fifa_data(0)$1" -> "fifa_data(0)$0"	[label=head];
+	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"sns(0)$0" -> "sns(0)"	[label=lineplot];
+}

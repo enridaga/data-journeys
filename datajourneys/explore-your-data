@@ -1,0 +1,10 @@
+strict digraph "" {
+	pandas -> "explore-your-data.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "explore-your-data.ipynb"	[label=appearsIn];
+	"../input/melbourne-housing-snapshot/melb_data.csv(0)" -> "explore-your-data.ipynb"	[label=appearsIn];
+	"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)"	[label=assignedFrom];
+	"melbourne_data(0)$0" -> "pd(0)"	[label=read_csv];
+	"melbourne_data(0)$0" -> "melbourne_file_path(0)$0"	[label=read_csv];
+	"melbourne_data(0)$1" -> "melbourne_data(0)$0"	[label=describe];
+}
