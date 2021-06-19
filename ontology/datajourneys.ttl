@@ -52,6 +52,8 @@
 
 ###  http://purl.org/datajourneys/derivedFrom
 :derivedFrom rdf:type owl:ObjectProperty ;
+             rdfs:domain :Datanode ;
+             rdfs:range :Datanode ;
              rdfs:seeAlso <http://www.w3.org/ns/prov#wasDerivedFrom> .
 
 
@@ -80,10 +82,25 @@
              rdfs:seeAlso <http://purl.org/net/wf-motifs#Group> .
 
 
+###  http://purl.org/datajourneys/inActivity
+:inActivity rdf:type owl:ObjectProperty ;
+            owl:inverseOf :includesDatanode ;
+            rdfs:domain :Datanode ;
+            rdfs:range :Activity .
+
+
 ###  http://purl.org/datajourneys/inJourney
 :inJourney rdf:type owl:ObjectProperty ;
-           rdfs:domain :Datanode ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Activity
+                                       :Datanode
+                                     )
+                       ] ;
            rdfs:range :Journey .
+
+
+###  http://purl.org/datajourneys/includesDatanode
+:includesDatanode rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/datajourneys/movedFrom
