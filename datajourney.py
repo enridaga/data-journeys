@@ -202,11 +202,12 @@ class FindDependencies(ast.NodeVisitor):
     else:
       # function expressions
       leaves = self._collectLeaves(node.value)
+      print(node,leaves)
       func = leaves.pop(0)
       c = 0
       for l in leaves:
         s = self.__variable(str(l), scope)
-        self.__collect(s, func, str(func) +'['+str(c)+']')
+        self.__collect(s, func, str(func) +'['+str(node.lineno)+'/'+str(node.col_offset)+']')
         c += 1
     self.generic_visit(node)
   
