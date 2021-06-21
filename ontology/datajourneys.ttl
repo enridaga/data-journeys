@@ -9,6 +9,14 @@
 <http://purl.org/datajourneys/> rdf:type owl:Ontology .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/datajourneys/hasActivity
+:hasActivity rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -119,6 +127,12 @@
 :preparedFrom rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :derivedFrom ;
               rdfs:seeAlso <http://purl.org/net/wf-motifs#DataPreparation> .
+
+
+###  http://purl.org/datajourneys/previous
+:previous rdf:type owl:ObjectProperty ;
+          rdfs:domain :Activity ;
+          rdfs:range :Activity .
 
 
 ###  http://purl.org/datajourneys/refactoredFrom

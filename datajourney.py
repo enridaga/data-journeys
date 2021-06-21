@@ -13,7 +13,7 @@ from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OW
                            VOID, XMLNS, XSD
 
 class FindDependencies(ast.NodeVisitor):
-
+  # notebook must be the notebook file name WITH extension
   def __init__(self, notebook, verbose=False):
     self._notebook = notebook
     self._verbose = verbose
@@ -336,7 +336,7 @@ class FindDependencies(ast.NodeVisitor):
     tree = ast.parse(source)
     self.visit(tree)
 
-
+# name needs to be the notebook filename but WITHOUT extension
 def toRDF(name, digraph):
     n = name
     g = digraph
