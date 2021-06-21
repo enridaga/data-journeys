@@ -202,7 +202,7 @@ class FindDependencies(ast.NodeVisitor):
     else:
       # function expressions
       leaves = self._collectLeaves(node.value)
-      print(node,leaves)
+      #print(node,leaves)
       func = leaves.pop(0)
       c = 0
       for l in leaves:
