@@ -8,32 +8,17 @@ strict digraph "" {
 	os -> "quick-visualization-eda.ipynb"	[label=importedBy];
 	"os(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "rxrx1-utils cloned!(0)"	[label=print];
-	"print[0]" -> "md(0)$2"	[label=print];
-	"print[0]" -> ">> (0)"	[label=print];
-	"print[0]" -> "col(0)"	[label=print];
-	"rxrx1-utils cloned!(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"md(0)$2" -> "md(0)$1"	[label=head];
-	"md(0)$2" -> "10(0)"	[label=head];
-	">> (0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"col(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"col(0)" -> "[<_ast.Constant object at 0x12f957c40>, <_ast.Constant object at 0x12f957bb0>, <_ast.Constant object at 0x12f957df0>, <_ast.Constant \
-object at 0x12f957dc0>, <_ast.Constant object at 0x12f957460>, <_ast.Constant object at 0x12f9578e0>](0)"	[label=iteratorOf];
+	"print[5/0]" -> "os(0)"	[label=print];
+	"print[5/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"print[1]" -> "col(0)"	[label=print];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"i(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"i(0)" -> "md(0)$2"	[label=iteratorOf];
-	"i(0)" -> "axes(0)$0"	[label=iteratorOf];
-	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
 	sys -> "quick-visualization-eda.ipynb"	[label=importedBy];
 	"sys(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"sys(0)" -> sys	[label=assignedFrom];
 	"matplotlib.pyplot" -> "quick-visualization-eda.ipynb"	[label=importedBy];
 	"plt(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"rxrx1-utils cloned!(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"print[10/0]" -> "rxrx1-utils cloned!(0)"	[label=print];
 	"sys(0)$0" -> "sys(0)"	[label=append];
 	"sys(0)$0" -> "rxrx1-utils(0)"	[label=append];
 	"rxrx1-utils(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
@@ -64,6 +49,12 @@ object at 0x12f957dc0>, <_ast.Constant object at 0x12f957460>, <_ast.Constant ob
 	"axes(0)$0" -> "24(0)"	[label=subplots];
 	"axes(0)$0" -> "16(0)"	[label=subplots];
 	"enumerate(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"i(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"i(0)" -> "axes(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"i(0)" -> "md(0)$2"	[label=iteratorOf];
+	"md(0)$2" -> "md(0)$1"	[label=head];
+	"md(0)$2" -> "10(0)"	[label=head];
 	"ax(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"ax(0)" -> "axes(0)$0"	[label=iteratorOf];
 	"ax(0)" -> "enumerate(0)"	[label=iteratorOf];
@@ -76,8 +67,8 @@ object at 0x12f957dc0>, <_ast.Constant object at 0x12f957460>, <_ast.Constant ob
 	"ax(0)$1" -> "1(0)"	[label=set_title];
 	"channel {}(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"1(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"_(0)$0" -> "i(0)"	[label=imshow];
 	"_(0)$0" -> "t(0)$0"	[label=imshow];
+	"_(0)$0" -> "i(0)"	[label=imshow];
 	"_(0)$0" -> "ax(0)$1"	[label=imshow];
 	"_(0)$0" -> "gray(0)"	[label=imshow];
 	"gray(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
@@ -108,12 +99,20 @@ object at 0x12f957dc0>, <_ast.Constant object at 0x12f957460>, <_ast.Constant ob
 	"sns(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
 	"10(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	">> (0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"print[40/4]" -> "i(0)"	[label=print];
+	"print[40/4]" -> "md(0)$2"	[label=print];
+	"print[40/4]" -> ">> (0)"	[label=print];
+	"print[40/4]" -> "	(0)"	[label=print];
 	"	(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "	(0)"	[label=print];
-	"print[3]" -> "md(0)$2"	[label=print];
-	"print[4]" -> "i(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f957c40>, <_ast.Constant object at 0x12f957bb0>, <_ast.Constant object at 0x12f957df0>, <_ast.Constant \
-object at 0x12f957dc0>, <_ast.Constant object at 0x12f957460>, <_ast.Constant object at 0x12f9578e0>](0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc610>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc250>, <_\
+ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cc820>](0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"col(0)" -> "quick-visualization-eda.ipynb"	[label=appearsIn];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c04cc610>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc250>, <_\
+ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cc820>](0)"	[label=iteratorOf];
+	"print[42/4]" -> "col(0)"	[label=print];
+	"print[43/4]" -> "md(0)$2"	[label=print];
+	"print[43/4]" -> "col(0)"	[label=print];
 	"sns(0)$0" -> "sns(0)"	[label=countplot];
 	"plt(0)$4" -> "plt(0)$3"	[label=show];
 	"missing_values_count(0)$0" -> "md(0)$2"	[label=sum];

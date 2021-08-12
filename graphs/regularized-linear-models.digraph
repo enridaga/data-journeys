@@ -112,14 +112,14 @@ digraph "" {
 	"rmse(1)$0" -> "y(1)"	[label=sqrt];
 	"rmse(1)$0" -> "neg_mean_squared_error(1)"	[label=sqrt];
 	"rmse(1)$0" -> "5(1)"	[label=sqrt];
-	"[<_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85eb20>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e970>, <_ast.Constant object at 0x12f85eb50>, <_ast.Constant object at 0x12f85eeb0>, <_ast.Constant object at 0x12f85e760>, <_\
-ast.Constant object at 0x12f85e940>, <_ast.Constant object at 0x12f85ec40>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant \
-object at 0x12f85ef10>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"alphas(0)$0" -> "[<_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85eb20>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e970>, <_ast.Constant object at 0x12f85eb50>, <_ast.Constant object at 0x12f85eeb0>, <_ast.Constant object at 0x12f85e760>, <_\
-ast.Constant object at 0x12f85e940>, <_ast.Constant object at 0x12f85ec40>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant \
-object at 0x12f85ef10>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant object at 0x7fd500832790>, <_\
+ast.Constant object at 0x7fd500832a00>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant \
+object at 0x7fd500832520>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd500832be0>, <_ast.Constant object \
+at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd5008322e0>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
+	"alphas(0)$0" -> "[<_ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant object at 0x7fd500832790>, <_\
+ast.Constant object at 0x7fd500832a00>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant \
+object at 0x7fd500832520>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd500832be0>, <_ast.Constant object \
+at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd5008322e0>](0)"	[label=assignedFrom];
 	"rmse_cv(0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
 	"cv_ridge(0)$0" -> "Ridge(0)"	[label=assignedFrom];
 	"cv_ridge(0)$0" -> "alphas(0)$0"	[label=assignedFrom];
@@ -139,33 +139,29 @@ object at 0x12f85ef10>](0)"	[label=assignedFrom];
 	"model_lasso(0)$0" -> "X_train(0)$0"	[label=fit];
 	"model_lasso(0)$0" -> "y(0)$0"	[label=fit];
 	"model_lasso(0)$0" -> "LassoCV(0)"	[label=fit];
-	"model_lasso(0)$0" -> "[<_ast.Constant object at 0x12f8f5a30>, <_ast.Constant object at 0x12f8f5a00>, <_ast.Constant object at 0x12f8f5130>, <_ast.Constant \
-object at 0x12f8f5fa0>](0)"	[label=fit];
-	"[<_ast.Constant object at 0x12f8f5a30>, <_ast.Constant object at 0x12f8f5a00>, <_ast.Constant object at 0x12f8f5130>, <_ast.Constant \
-object at 0x12f8f5fa0>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
+	"model_lasso(0)$0" -> "[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008320a0>, <_\
+ast.Constant object at 0x7fd5008329d0>](0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008320a0>, <_\
+ast.Constant object at 0x7fd5008329d0>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
 	"rmse_cv(0)$0" -> "rmse_cv(0)"	[label=mean];
 	"coef(0)$0" -> "pd(0)"	[label=Series];
 	"coef(0)$0" -> "X_train(0)$0"	[label=Series];
 	"coef(0)$0" -> "model_lasso(0)$0"	[label=Series];
 	"Lasso picked (0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"print[0]" -> "Lasso picked (0)"	[label=print];
+	"print[97/0]" -> "0(0)"	[label=print];
+	"print[97/0]" -> "coef(0)$0"	[label=print];
+	"print[97/0]" -> "Lasso picked (0)"	[label=print];
+	"print[97/0]" -> "str(0)"	[label=print];
+	"print[97/0]" -> "sum(0)"	[label=print];
+	"print[97/0]" -> " variables and eliminated the other (0)"	[label=print];
+	"print[97/0]" -> " variables(0)"	[label=print];
 	"str(0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"print[1]" -> "str(0)"	[label=print];
 	"sum(0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"print[2]" -> "sum(0)"	[label=print];
-	"print[3]" -> "coef(0)$0"	[label=print];
-	"print[4]" -> "0(0)"	[label=print];
 	" variables and eliminated the other (0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"print[5]" -> " variables and eliminated the other (0)"	[label=print];
-	"print[6]" -> "str(0)"	[label=print];
-	"print[7]" -> "sum(0)"	[label=print];
-	"print[8]" -> "coef(0)$0"	[label=print];
-	"print[9]" -> "0(0)"	[label=print];
 	" variables(0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
-	"print[10]" -> " variables(0)"	[label=print];
 	"imp_coef(0)$0" -> "pd(0)"	[label=concat];
-	"imp_coef(0)$0" -> "[<_ast.Call object at 0x12f88a730>, <_ast.Call object at 0x12f88a9a0>](0)"	[label=concat];
-	"[<_ast.Call object at 0x12f88a730>, <_ast.Call object at 0x12f88a9a0>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
+	"imp_coef(0)$0" -> "[<_ast.Call object at 0x7fd4c04ccee0>, <_ast.Call object at 0x7fd4c04cc2b0>](0)"	[label=concat];
+	"[<_ast.Call object at 0x7fd4c04ccee0>, <_ast.Call object at 0x7fd4c04cc2b0>](0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
 	"8.0(0)" -> "regularized-linear-models.ipynb"	[label=appearsIn];
 	"matplotlib(0)$1" -> "matplotlib(0)$0"	[label=assignedFrom];
 	"matplotlib(0)$1" -> "8.0(0)"	[label=assignedFrom];

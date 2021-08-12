@@ -54,8 +54,8 @@ strict digraph "" {
 	"loss(1)$0" -> "2(1)"	[label=Mult];
 	"total_loss(1)$0" -> "loss(1)$0"	[label=sum];
 	"X(0)$0" -> "data(0)$3"	[label=assignedFrom];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12f85e640>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f85e640>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd500832460>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500832460>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"one(0)$0" -> "np(0)"	[label=ones];
 	"one(0)$0" -> "X(0)$0"	[label=ones];
 	"one(0)$0" -> "0(0)"	[label=ones];
@@ -75,51 +75,14 @@ strict digraph "" {
 	"w(0)$0" -> "A(0)$0"	[label=dot];
 	"w(0)$0" -> "b(0)$0"	[label=dot];
 	"w = (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"print[0]" -> "w = (0)"	[label=print];
-	"print[0]" -> "Total loss : {}(0)"	[label=print];
-	"print[0]" -> "Training MSE: (0)"	[label=print];
-	"print[0]" -> "Testing MSE: (0)"	[label=print];
-	"print[0]" -> "Training Loss BinhNA: (0)"	[label=print];
-	"Total loss : {}(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"Training MSE: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"Testing MSE: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"Training Loss BinhNA: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"print[1]" -> "w(0)$0"	[label=print];
-	"print[1]" -> "2(0)"	[label=print];
-	"print[1]" -> "total_loss(0)$0"	[label=print];
-	"print[1]" -> "w(0)$1"	[label=print];
-	"print[1]" -> "total_loss(0)$1"	[label=print];
-	"print[1]" -> "w(0)$2"	[label=print];
-	"print[1]" -> "total_loss(0)$2"	[label=print];
-	"print[1]" -> "total_loss(0)$3"	[label=print];
-	"print[1]" -> "mean_squared_error(0)"	[label=print];
-	"2(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"total_loss(0)$0" -> "data(0)$3"	[label=loss_function];
-	"total_loss(0)$0" -> "Final Exam(0)"	[label=loss_function];
-	"total_loss(0)$0" -> "predict(0)$1"	[label=loss_function];
-	"w(0)$1" -> "np(0)"	[label=dot];
-	"w(0)$1" -> "A(0)$1"	[label=dot];
-	"w(0)$1" -> "b(0)$1"	[label=dot];
-	"total_loss(0)$1" -> "data(0)$3"	[label=loss_function];
-	"total_loss(0)$1" -> "Final Exam(0)"	[label=loss_function];
-	"total_loss(0)$1" -> "predict(0)$3"	[label=loss_function];
-	"w(0)$2" -> "np(0)"	[label=dot];
-	"w(0)$2" -> "A(0)$2"	[label=dot];
-	"w(0)$2" -> "b(0)$2"	[label=dot];
-	"total_loss(0)$2" -> "data(0)$3"	[label=loss_function];
-	"total_loss(0)$2" -> "Final Exam(0)"	[label=loss_function];
-	"total_loss(0)$2" -> "predict(0)$4"	[label=loss_function];
-	"total_loss(0)$3" -> "data(0)$3"	[label=loss_function];
-	"total_loss(0)$3" -> "Final Exam(0)"	[label=loss_function];
-	"total_loss(0)$3" -> "0(0)"	[label=loss_function];
-	"total_loss(0)$3" -> "predict(0)$5"	[label=loss_function];
-	"mean_squared_error(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"mean_squared_error(0)" -> mean_squared_error	[label=assignedFrom];
+	"print[34/0]" -> "w(0)$0"	[label=print];
+	"print[34/0]" -> "w = (0)"	[label=print];
 	"x0(0)$0" -> "np(0)"	[label=linspace];
 	"x0(0)$0" -> "0(0)"	[label=linspace];
-	"x0(0)$0" -> "2(0)"	[label=linspace];
 	"x0(0)$0" -> "10(0)"	[label=linspace];
+	"x0(0)$0" -> "2(0)"	[label=linspace];
 	"10(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"2(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"y0(0)$0" -> "0(0)"	[label=Add];
 	"y0(0)$0" -> "1(0)"	[label=Add];
 	"y0(0)$0" -> "w(0)$0"	[label=Add];
@@ -144,9 +107,15 @@ strict digraph "" {
 	"predict(0)$0" -> "w(0)$0"	[label=Add];
 	"predict(0)$0" -> "Test3(0)"	[label=Add];
 	"predict(0)$1" -> "predict(0)$0"	[label=head];
+	"total_loss(0)$0" -> "data(0)$3"	[label=loss_function];
+	"total_loss(0)$0" -> "Final Exam(0)"	[label=loss_function];
+	"total_loss(0)$0" -> "predict(0)$1"	[label=loss_function];
+	"Total loss : {}(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"print[47/0]" -> "total_loss(0)$0"	[label=print];
+	"print[47/0]" -> "Total loss : {}(0)"	[label=print];
 	"X(0)$1" -> "data(0)$3"	[label=assignedFrom];
-	"X(0)$1" -> "[<_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade400>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade400>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"X(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ffcd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ffcd0>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"one(0)$1" -> "np(0)"	[label=ones];
 	"one(0)$1" -> "0(0)"	[label=ones];
 	"one(0)$1" -> "1(0)"	[label=ones];
@@ -161,6 +130,11 @@ strict digraph "" {
 	"b(0)$1" -> "data(0)$3"	[label=dot];
 	"b(0)$1" -> "Final Exam(0)"	[label=dot];
 	"b(0)$1" -> "Xbar(0)$1"	[label=dot];
+	"w(0)$1" -> "np(0)"	[label=dot];
+	"w(0)$1" -> "A(0)$1"	[label=dot];
+	"w(0)$1" -> "b(0)$1"	[label=dot];
+	"print[54/0]" -> "w = (0)"	[label=print];
+	"print[54/0]" -> "w(0)$1"	[label=print];
 	"fig(0)$1" -> "plt(0)$5"	[label=figure];
 	"ax(0)$2" -> "111(0)"	[label=add_subplot];
 	"ax(0)$2" -> "3d(0)"	[label=add_subplot];
@@ -172,19 +146,19 @@ strict digraph "" {
 	"ax(0)$3" -> "ax(0)$2"	[label=scatter];
 	"x_0(0)$0" -> "np(0)"	[label=linspace];
 	"x_0(0)$0" -> "0(0)"	[label=linspace];
-	"x_0(0)$0" -> "2(0)"	[label=linspace];
 	"x_0(0)$0" -> "10(0)"	[label=linspace];
+	"x_0(0)$0" -> "2(0)"	[label=linspace];
 	"y_0(0)$0" -> "np(0)"	[label=linspace];
 	"y_0(0)$0" -> "0(0)"	[label=linspace];
-	"y_0(0)$0" -> "2(0)"	[label=linspace];
 	"y_0(0)$0" -> "10(0)"	[label=linspace];
+	"y_0(0)$0" -> "2(0)"	[label=linspace];
 	"Z(0)$0" -> "data(0)$3"	[label=Add];
 	"Z(0)$0" -> "Test2(0)"	[label=Add];
 	"Z(0)$0" -> "0(0)"	[label=Add];
 	"Z(0)$0" -> "1(0)"	[label=Add];
 	"Z(0)$0" -> "2(0)"	[label=Add];
-	"Z(0)$0" -> "w(0)$1"	[label=Add];
 	"Z(0)$0" -> "Test3(0)"	[label=Add];
+	"Z(0)$0" -> "w(0)$1"	[label=Add];
 	"ax(0)$4" -> "Test2(0)"	[label=plot_trisurf];
 	"ax(0)$4" -> "Test3(0)"	[label=plot_trisurf];
 	"ax(0)$4" -> "X(0)$1"	[label=plot_trisurf];
@@ -197,16 +171,21 @@ strict digraph "" {
 	"predict(0)$2" -> "0(0)"	[label=Add];
 	"predict(0)$2" -> "1(0)"	[label=Add];
 	"predict(0)$2" -> "2(0)"	[label=Add];
-	"predict(0)$2" -> "w(0)$1"	[label=Add];
 	"predict(0)$2" -> "Test3(0)"	[label=Add];
+	"predict(0)$2" -> "w(0)$1"	[label=Add];
 	"predict(0)$3" -> "predict(0)$2"	[label=head];
+	"total_loss(0)$1" -> "data(0)$3"	[label=loss_function];
+	"total_loss(0)$1" -> "Final Exam(0)"	[label=loss_function];
+	"total_loss(0)$1" -> "predict(0)$3"	[label=loss_function];
+	"print[68/0]" -> "Total loss : {}(0)"	[label=print];
+	"print[68/0]" -> "total_loss(0)$1"	[label=print];
 	"X(0)$2" -> "data(0)$3"	[label=assignedFrom];
-	"X(0)$2" -> "[<_ast.Constant object at 0x12f89c430>, <_ast.Constant object at 0x12f89c3d0>, <_ast.Constant object at 0x12f89c5b0>, <_ast.Constant \
-object at 0x12f89ca30>, <_ast.Constant object at 0x12f89c220>, <_ast.Constant object at 0x12f89c100>, <_ast.Constant object at 0x12f89c1c0>, <_\
-ast.Constant object at 0x12f89c880>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89c430>, <_ast.Constant object at 0x12f89c3d0>, <_ast.Constant object at 0x12f89c5b0>, <_ast.Constant \
-object at 0x12f89ca30>, <_ast.Constant object at 0x12f89c220>, <_ast.Constant object at 0x12f89c100>, <_ast.Constant object at 0x12f89c1c0>, <_\
-ast.Constant object at 0x12f89c880>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"X(0)$2" -> "[<_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object at 0x7fd5009992e0>, <_\
+ast.Constant object at 0x7fd500999880>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant \
+object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999be0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object at 0x7fd5009992e0>, <_\
+ast.Constant object at 0x7fd500999880>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant \
+object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999be0>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"one(0)$2" -> "np(0)"	[label=ones];
 	"one(0)$2" -> "0(0)"	[label=ones];
 	"one(0)$2" -> "1(0)"	[label=ones];
@@ -220,10 +199,20 @@ ast.Constant object at 0x12f89c880>](0)" -> "multi-feature-linear-regression.ipy
 	"b(0)$2" -> "np(0)"	[label=dot];
 	"b(0)$2" -> "y(0)$0"	[label=dot];
 	"b(0)$2" -> "Xbar(0)$2"	[label=dot];
+	"w(0)$2" -> "np(0)"	[label=dot];
+	"w(0)$2" -> "A(0)$2"	[label=dot];
+	"w(0)$2" -> "b(0)$2"	[label=dot];
+	"print[75/0]" -> "w = (0)"	[label=print];
+	"print[75/0]" -> "w(0)$2"	[label=print];
 	"predict(0)$4" -> "0(0)"	[label=Add];
 	"predict(0)$4" -> "1(0)"	[label=Add];
-	"predict(0)$4" -> "w(0)$2"	[label=Add];
 	"predict(0)$4" -> "X(0)$2"	[label=Add];
+	"predict(0)$4" -> "w(0)$2"	[label=Add];
+	"total_loss(0)$2" -> "data(0)$3"	[label=loss_function];
+	"total_loss(0)$2" -> "Final Exam(0)"	[label=loss_function];
+	"total_loss(0)$2" -> "predict(0)$4"	[label=loss_function];
+	"print[78/0]" -> "Total loss : {}(0)"	[label=print];
+	"print[78/0]" -> "total_loss(0)$2"	[label=print];
 	keras -> "multi-feature-linear-regression.ipynb"	[label=importedBy];
 	"keras(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"keras(0)" -> keras	[label=assignedFrom];
@@ -231,18 +220,18 @@ ast.Constant object at 0x12f89c880>](0)" -> "multi-feature-linear-regression.ipy
 	"tf(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"tf(0)" -> tensorflow	[label=assignedFrom];
 	"model(0)$0" -> "keras(0)"	[label=Sequential];
-	"model(0)$0" -> "[<_ast.Call object at 0x12f957df0>, <_ast.Call object at 0x12f9572b0>](0)"	[label=Sequential];
-	"[<_ast.Call object at 0x12f957df0>, <_ast.Call object at 0x12f9572b0>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"model(0)$0" -> "[<_ast.Call object at 0x7fd4902ab940>, <_ast.Call object at 0x7fd4902ab3d0>](0)"	[label=Sequential];
+	"[<_ast.Call object at 0x7fd4902ab940>, <_ast.Call object at 0x7fd4902ab3d0>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"y_true(2)" -> "K_loss_function[0]"	[label=_argToVar];
 	"y_predict(2)" -> "K_loss_function[1]"	[label=_argToVar];
 	"model(0)$1" -> "model(0)$0"	[label=compile];
 	"X(0)$3" -> "data(0)$3"	[label=assignedFrom];
-	"X(0)$3" -> "[<_ast.Constant object at 0x12f8d34c0>, <_ast.Constant object at 0x12f8d34f0>, <_ast.Constant object at 0x12f8d3520>, <_ast.Constant \
-object at 0x12f8d3550>, <_ast.Constant object at 0x12f8d3580>, <_ast.Constant object at 0x12f8d35b0>, <_ast.Constant object at 0x12f8d35e0>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d34c0>, <_ast.Constant object at 0x12f8d34f0>, <_ast.Constant object at 0x12f8d3520>, <_ast.Constant \
-object at 0x12f8d3550>, <_ast.Constant object at 0x12f8d3580>, <_ast.Constant object at 0x12f8d35b0>, <_ast.Constant object at 0x12f8d35e0>](\
-0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"X(0)$3" -> "[<_ast.Constant object at 0x7fd4c04ad1c0>, <_ast.Constant object at 0x7fd4c04ad1f0>, <_ast.Constant object at 0x7fd4c04ad220>, <_\
+ast.Constant object at 0x7fd4c04ad250>, <_ast.Constant object at 0x7fd4c04ad280>, <_ast.Constant object at 0x7fd4c04ad2b0>, <_ast.Constant \
+object at 0x7fd4c04ad2e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ad1c0>, <_ast.Constant object at 0x7fd4c04ad1f0>, <_ast.Constant object at 0x7fd4c04ad220>, <_\
+ast.Constant object at 0x7fd4c04ad250>, <_ast.Constant object at 0x7fd4c04ad280>, <_ast.Constant object at 0x7fd4c04ad2b0>, <_ast.Constant \
+object at 0x7fd4c04ad2e0>](0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"Y(0)$0" -> "data(0)$3"	[label=assignedFrom];
 	"Y(0)$0" -> "Final Exam(0)"	[label=assignedFrom];
 	"model(0)$2" -> "model(0)$1"	[label=fit];
@@ -250,6 +239,12 @@ object at 0x12f8d3550>, <_ast.Constant object at 0x12f8d3580>, <_ast.Constant ob
 	"model(0)$2" -> "Y(0)$0"	[label=fit];
 	"predict(0)$5" -> "X(0)$3"	[label=predict];
 	"predict(0)$5" -> "model(0)$2"	[label=predict];
+	"total_loss(0)$3" -> "data(0)$3"	[label=loss_function];
+	"total_loss(0)$3" -> "Final Exam(0)"	[label=loss_function];
+	"total_loss(0)$3" -> "0(0)"	[label=loss_function];
+	"total_loss(0)$3" -> "predict(0)$5"	[label=loss_function];
+	"print[97/0]" -> "Total loss : {}(0)"	[label=print];
+	"print[97/0]" -> "total_loss(0)$3"	[label=print];
 	seaborn -> "multi-feature-linear-regression.ipynb"	[label=importedBy];
 	"sns(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
@@ -263,6 +258,8 @@ object at 0x12f8d3550>, <_ast.Constant object at 0x12f8d3580>, <_ast.Constant ob
 	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
 	"sklearn.metrics" -> "multi-feature-linear-regression.ipynb"	[label=importedBy];
 	mean_squared_error -> "sklearn.metrics"	[label=importedBy];
+	"mean_squared_error(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"mean_squared_error(0)" -> mean_squared_error	[label=assignedFrom];
 	"allgrades(0)$0" -> "pd(0)"	[label=read_excel];
 	"allgrades(0)$0" -> "../input/allgrades/AllGrades.xlsx(0)"	[label=read_excel];
 	"allgrades(0)$1" -> "allgrades(0)$0"	[label=head];
@@ -325,17 +322,26 @@ object at 0x12f8d3550>, <_ast.Constant object at 0x12f8d3580>, <_ast.Constant ob
 	"my_model(0)$0" -> "my_model(0)"	[label=fit];
 	"y_train_pred(0)$0" -> "X_train(0)$0"	[label=predict];
 	"y_train_pred(0)$0" -> "my_model(0)$0"	[label=predict];
-	"print[2]" -> "y_train(0)$0"	[label=print];
-	"print[2]" -> "y_test(0)$0"	[label=print];
-	"print[2]" -> "loss_function(0)"	[label=print];
-	"loss_function(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"print[3]" -> "y_train(0)$0"	[label=print];
-	"print[3]" -> "y_train_pred(0)$0"	[label=print];
-	"print[3]" -> "y_test_pred(0)$0"	[label=print];
+	"Training MSE: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"print[148/0]" -> "mean_squared_error(0)"	[label=print];
+	"print[148/0]" -> "y_train(0)$0"	[label=print];
+	"print[148/0]" -> "y_train_pred(0)$0"	[label=print];
+	"print[148/0]" -> "Training MSE: (0)"	[label=print];
 	"y_test_pred(0)$0" -> "X_test(0)$0"	[label=predict];
 	"y_test_pred(0)$0" -> "my_model(0)$0"	[label=predict];
-	"print[4]" -> "y_train_pred(0)$0"	[label=print];
+	"Testing MSE: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"print[151/0]" -> "mean_squared_error(0)"	[label=print];
+	"print[151/0]" -> "y_test(0)$0"	[label=print];
+	"print[151/0]" -> "y_test_pred(0)$0"	[label=print];
+	"print[151/0]" -> "Testing MSE: (0)"	[label=print];
+	"Training Loss BinhNA: (0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
+	"print[153/0]" -> "2(0)"	[label=print];
+	"print[153/0]" -> "allgrades(0)$6"	[label=print];
+	"print[153/0]" -> "y_train(0)$0"	[label=print];
+	"print[153/0]" -> "y_train_pred(0)$0"	[label=print];
+	"print[153/0]" -> "Training Loss BinhNA: (0)"	[label=print];
+	"print[153/0]" -> "loss_function(0)"	[label=print];
+	"print[153/0]" -> "len(0)"	[label=print];
+	"loss_function(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
 	"len(0)" -> "multi-feature-linear-regression.ipynb"	[label=appearsIn];
-	"print[5]" -> "len(0)"	[label=print];
-	"print[6]" -> "allgrades(0)$6"	[label=print];
 }

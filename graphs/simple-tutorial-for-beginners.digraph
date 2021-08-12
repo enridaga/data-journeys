@@ -34,11 +34,11 @@ digraph "" {
 	"dead_class(0)$0" -> "0(0)"	[label=value_counts];
 	"0(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"df_class(0)$0" -> "pd(0)"	[label=DataFrame];
-	"df_class(0)$0" -> "[<_ast.Name object at 0x12fa5b100>, <_ast.Name object at 0x12fa5b130>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12fa5b100>, <_ast.Name object at 0x12fa5b130>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa5b3a0>, <_ast.Constant object at 0x12fa5bd30>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"df_class(0)$0" -> "[<_ast.Name object at 0x7fd4c04e8910>, <_ast.Name object at 0x7fd4c04e85b0>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4c04e8910>, <_ast.Name object at 0x7fd4c04e85b0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8790>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"df_class(0)$1" -> "df_class(0)$0"	[label=assignedFrom];
-	"df_class(0)$1" -> "[<_ast.Constant object at 0x12fa5b3a0>, <_ast.Constant object at 0x12fa5bd30>](0)"	[label=assignedFrom];
+	"df_class(0)$1" -> "[<_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8790>](0)"	[label=assignedFrom];
 	"df_class(0)$2" -> "df_class(0)$1"	[label=plot];
 	"Class1_survived(0)$0" -> "0(0)"	[label=Mult];
 	"Class1_survived(0)$0" -> "df_class(0)$2"	[label=Mult];
@@ -54,91 +54,74 @@ digraph "" {
 	"Class3_survived(0)$0" -> "2(0)"	[label=Mult];
 	"2(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"Percentage of Class 1 that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"print[0]" -> "Percentage of Class 1 that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of Class 2 that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of Class 3 that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of female that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of male that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of Embark S that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of Embark C that survived:(0)"	[label=print];
-	"print[0]" -> "Percentage of Embark Q that survived:(0)"	[label=print];
-	"print[0]" -> "Number of null values in Embarked:(0)"	[label=print];
-	"print[0]" -> "Number of null values in Age:(0)"	[label=print];
-	"print[0]" -> "Logistic Regression:
- Accuracy:(0)"	[label=print];
-	"print[0]" -> "K-NN:
- Accuracy:(0)"	[label=print];
-	"print[0]" -> "SVM:
- Accuracy:(0)"	[label=print];
-	"print[0]" -> "Naive Bayes:
- Accuracy:(0)"	[label=print];
-	"print[0]" -> "Random Forest:
- Accuracy:(0)"	[label=print];
-	"Percentage of Class 2 that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of Class 3 that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of female that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of male that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of Embark S that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of Embark C that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Percentage of Embark Q that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Number of null values in Embarked:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Number of null values in Age:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Logistic Regression:
- Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"K-NN:
- Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"SVM:
- Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Naive Bayes:
- Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Random Forest:
- Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[24/0]" -> "Class1_survived(0)$0"	[label=print];
+	"print[24/0]" -> "Percentage of Class 1 that survived:(0)"	[label=print];
+	"print[24/0]" -> "round(0)"	[label=print];
+	"print[24/0]" -> "\%(0)"	[label=print];
 	"round(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"print[1]" -> "round(0)"	[label=print];
-	"print[1]" -> "sum(0)"	[label=print];
-	"print[1]" -> "accuracies(0)$0"	[label=print];
-	"print[1]" -> "accuracies(0)$1"	[label=print];
-	"print[1]" -> "accuracies(0)$2"	[label=print];
-	"print[1]" -> "accuracies(0)$3"	[label=print];
-	"print[1]" -> "accuracies(0)$4"	[label=print];
-	"sum(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"accuracies(0)$0" -> "y(0)$0"	[label=cross_val_score];
-	"accuracies(0)$0" -> "X(0)$15"	[label=cross_val_score];
-	"accuracies(0)$0" -> "classifier(0)$0"	[label=cross_val_score];
-	"accuracies(0)$0" -> "10(0)"	[label=cross_val_score];
-	"accuracies(0)$1" -> "y(0)$0"	[label=cross_val_score];
-	"accuracies(0)$1" -> "X(0)$15"	[label=cross_val_score];
-	"accuracies(0)$1" -> "10(0)"	[label=cross_val_score];
-	"accuracies(0)$1" -> "classifier(0)$1"	[label=cross_val_score];
-	"accuracies(0)$2" -> "y(0)$0"	[label=cross_val_score];
-	"accuracies(0)$2" -> "X(0)$15"	[label=cross_val_score];
-	"accuracies(0)$2" -> "10(0)"	[label=cross_val_score];
-	"accuracies(0)$2" -> "classifier(0)$2"	[label=cross_val_score];
-	"accuracies(0)$3" -> "y(0)$0"	[label=cross_val_score];
-	"accuracies(0)$3" -> "X(0)$15"	[label=cross_val_score];
-	"accuracies(0)$3" -> "10(0)"	[label=cross_val_score];
-	"accuracies(0)$3" -> "classifier(0)$2"	[label=cross_val_score];
-	"accuracies(0)$4" -> "y(0)$0"	[label=cross_val_score];
-	"accuracies(0)$4" -> "X(0)$15"	[label=cross_val_score];
-	"accuracies(0)$4" -> "10(0)"	[label=cross_val_score];
-	"accuracies(0)$4" -> "classifier(0)$3"	[label=cross_val_score];
-	"print[2]" -> "Class1_survived(0)$0"	[label=print];
-	"print[2]" -> "Class2_survived(0)$0"	[label=print];
-	"print[2]" -> "Class3_survived(0)$0"	[label=print];
-	"print[2]" -> "female_survived(0)$0"	[label=print];
-	"print[2]" -> "male_survived(0)$0"	[label=print];
-	"print[2]" -> "Embark_S(0)$0"	[label=print];
-	"print[2]" -> "Embark_C(0)$0"	[label=print];
-	"print[2]" -> "Embark_Q(0)$0"	[label=print];
-	"print[2]" -> "X(0)$3"	[label=print];
-	"print[2]" -> "X(0)$8"	[label=print];
-	"print[2]" -> "+/-(0)"	[label=print];
+	"\%(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"Percentage of Class 2 that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[25/0]" -> "Class2_survived(0)$0"	[label=print];
+	"print[25/0]" -> "round(0)"	[label=print];
+	"print[25/0]" -> "\%(0)"	[label=print];
+	"print[25/0]" -> "Percentage of Class 2 that survived:(0)"	[label=print];
+	"Percentage of Class 3 that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "Class3_survived(0)$0"	[label=print];
+	"print[26/0]" -> "round(0)"	[label=print];
+	"print[26/0]" -> "\%(0)"	[label=print];
+	"print[26/0]" -> "Percentage of Class 3 that survived:(0)"	[label=print];
+	"IPython.display" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
+	display -> "IPython.display"	[label=importedBy];
+	"display(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"display(0)" -> display	[label=assignedFrom];
+	"display[30/0]" -> "df_class(0)$2"	[label=display];
+	"Survived(0)$0" -> "dataset(0)$0"	[label=value_counts];
+	"Survived(0)$0" -> "1(0)"	[label=value_counts];
+	"Survived(0)$0" -> "Sex(0)"	[label=value_counts];
+	"Sex(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"Died(0)$0" -> "dataset(0)$0"	[label=value_counts];
+	"Died(0)$0" -> "0(0)"	[label=value_counts];
+	"Died(0)$0" -> "Sex(0)"	[label=value_counts];
+	"df_sex(0)$0" -> "pd(0)"	[label=DataFrame];
+	"df_sex(0)$0" -> "[<_ast.Name object at 0x7fd4c04cc6a0>, <_ast.Name object at 0x7fd4c04cca90>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4c04cc6a0>, <_ast.Name object at 0x7fd4c04cca90>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccf10>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"df_sex(0)$1" -> "df_sex(0)$0"	[label=assignedFrom];
+	"df_sex(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccf10>](0)"	[label=assignedFrom];
+	"df_sex(0)$2" -> "df_sex(0)$1"	[label=plot];
 	"female_survived(0)$0" -> "0(0)"	[label=Mult];
 	"female_survived(0)$0" -> "100(0)"	[label=Mult];
 	"female_survived(0)$0" -> "df_sex(0)$2"	[label=Mult];
 	"male_survived(0)$0" -> "0(0)"	[label=Mult];
 	"male_survived(0)$0" -> "100(0)"	[label=Mult];
 	"male_survived(0)$0" -> "df_sex(0)$2"	[label=Mult];
+	"Percentage of female that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[42/0]" -> "round(0)"	[label=print];
+	"print[42/0]" -> "\%(0)"	[label=print];
+	"print[42/0]" -> "female_survived(0)$0"	[label=print];
+	"print[42/0]" -> "Percentage of female that survived:(0)"	[label=print];
+	"Percentage of male that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[43/0]" -> "round(0)"	[label=print];
+	"print[43/0]" -> "\%(0)"	[label=print];
+	"print[43/0]" -> "male_survived(0)$0"	[label=print];
+	"print[43/0]" -> "Percentage of male that survived:(0)"	[label=print];
+	"display[47/0]" -> "df_sex(0)$2"	[label=display];
+	"survived_embark(0)$0" -> "dataset(0)$0"	[label=value_counts];
+	"survived_embark(0)$0" -> "1(0)"	[label=value_counts];
+	"survived_embark(0)$0" -> "Survived(0)$0"	[label=value_counts];
+	"survived_embark(0)$0" -> "Embarked(0)"	[label=value_counts];
+	"Embarked(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"dead_embark(0)$0" -> "dataset(0)$0"	[label=value_counts];
+	"dead_embark(0)$0" -> "0(0)"	[label=value_counts];
+	"dead_embark(0)$0" -> "Survived(0)$0"	[label=value_counts];
+	"dead_embark(0)$0" -> "Embarked(0)"	[label=value_counts];
+	"df_embark(0)$0" -> "pd(0)"	[label=DataFrame];
+	"df_embark(0)$0" -> "[<_ast.Name object at 0x7fd4c04ff280>, <_ast.Name object at 0x7fd4c04ff3a0>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4c04ff280>, <_ast.Name object at 0x7fd4c04ff3a0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008345b0>, <_ast.Constant object at 0x7fd500834ac0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"df_embark(0)$1" -> "df_embark(0)$0"	[label=assignedFrom];
+	"df_embark(0)$1" -> "[<_ast.Constant object at 0x7fd5008345b0>, <_ast.Constant object at 0x7fd500834ac0>](0)"	[label=assignedFrom];
+	"df_embark(0)$2" -> "df_embark(0)$1"	[label=plot];
 	"Embark_S(0)$0" -> "0(0)"	[label=Mult];
 	"Embark_S(0)$0" -> "100(0)"	[label=Mult];
 	"Embark_S(0)$0" -> "df_embark(0)$2"	[label=Mult];
@@ -150,66 +133,33 @@ digraph "" {
 	"Embark_Q(0)$0" -> "100(0)"	[label=Mult];
 	"Embark_Q(0)$0" -> "2(0)"	[label=Mult];
 	"Embark_Q(0)$0" -> "df_embark(0)$2"	[label=Mult];
-	"X(0)$3" -> "X(0)$3"	[label=fit_transform];
-	"X(0)$3" -> "X(0)$2"	[label=fit_transform];
-	"X(0)$3" -> "labelEncoder_X(0)"	[label=fit_transform];
-	"X(0)$8" -> "X(0)$7"	[label=head];
-	"+/-(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"\%(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"print[3]" -> "accuracies(0)$0"	[label=print];
-	"print[3]" -> "accuracies(0)$1"	[label=print];
-	"print[3]" -> "accuracies(0)$2"	[label=print];
-	"print[3]" -> "accuracies(0)$3"	[label=print];
-	"print[3]" -> "accuracies(0)$4"	[label=print];
-	"print[3]" -> "\%(0)"	[label=print];
-	"IPython.display" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
-	display -> "IPython.display"	[label=importedBy];
-	"display(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"display(0)" -> display	[label=assignedFrom];
-	"display[0]" -> "df_class(0)$2"	[label=display];
-	"display[0]" -> "df_sex(0)$2"	[label=display];
-	"display[0]" -> "df_embark(0)$2"	[label=display];
-	"df_sex(0)$2" -> "df_sex(0)$1"	[label=plot];
-	"df_embark(0)$2" -> "df_embark(0)$1"	[label=plot];
-	"Survived(0)$0" -> "dataset(0)$0"	[label=value_counts];
-	"Survived(0)$0" -> "1(0)"	[label=value_counts];
-	"Survived(0)$0" -> "Sex(0)"	[label=value_counts];
-	"Sex(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"Died(0)$0" -> "dataset(0)$0"	[label=value_counts];
-	"Died(0)$0" -> "0(0)"	[label=value_counts];
-	"Died(0)$0" -> "Sex(0)"	[label=value_counts];
-	"df_sex(0)$0" -> "pd(0)"	[label=DataFrame];
-	"df_sex(0)$0" -> "[<_ast.Name object at 0x12fc4f760>, <_ast.Name object at 0x12fc4fa30>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12fc4f760>, <_ast.Name object at 0x12fc4fa30>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fca0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"df_sex(0)$1" -> "df_sex(0)$0"	[label=assignedFrom];
-	"df_sex(0)$1" -> "[<_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fca0>](0)"	[label=assignedFrom];
-	"survived_embark(0)$0" -> "dataset(0)$0"	[label=value_counts];
-	"survived_embark(0)$0" -> "1(0)"	[label=value_counts];
-	"survived_embark(0)$0" -> "Survived(0)$0"	[label=value_counts];
-	"survived_embark(0)$0" -> "Embarked(0)"	[label=value_counts];
-	"Embarked(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"dead_embark(0)$0" -> "dataset(0)$0"	[label=value_counts];
-	"dead_embark(0)$0" -> "0(0)"	[label=value_counts];
-	"dead_embark(0)$0" -> "Survived(0)$0"	[label=value_counts];
-	"dead_embark(0)$0" -> "Embarked(0)"	[label=value_counts];
-	"df_embark(0)$0" -> "pd(0)"	[label=DataFrame];
-	"df_embark(0)$0" -> "[<_ast.Name object at 0x12fa66d30>, <_ast.Name object at 0x12fa66700>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12fa66d30>, <_ast.Name object at 0x12fa66700>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f52e0>, <_ast.Constant object at 0x12f8f5130>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"df_embark(0)$1" -> "df_embark(0)$0"	[label=assignedFrom];
-	"df_embark(0)$1" -> "[<_ast.Constant object at 0x12f8f52e0>, <_ast.Constant object at 0x12f8f5130>](0)"	[label=assignedFrom];
+	"Percentage of Embark S that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "round(0)"	[label=print];
+	"print[59/0]" -> "\%(0)"	[label=print];
+	"print[59/0]" -> "Embark_S(0)$0"	[label=print];
+	"print[59/0]" -> "Percentage of Embark S that survived:(0)"	[label=print];
+	"Percentage of Embark C that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[60/0]" -> "round(0)"	[label=print];
+	"print[60/0]" -> "\%(0)"	[label=print];
+	"print[60/0]" -> "Embark_C(0)$0"	[label=print];
+	"print[60/0]" -> "Percentage of Embark C that survived:(0)"	[label=print];
+	"Percentage of Embark Q that survived:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[61/0]" -> "round(0)"	[label=print];
+	"print[61/0]" -> "\%(0)"	[label=print];
+	"print[61/0]" -> "Embark_Q(0)$0"	[label=print];
+	"print[61/0]" -> "Percentage of Embark Q that survived:(0)"	[label=print];
+	"display[64/0]" -> "df_embark(0)$2"	[label=display];
 	"X(0)$0" -> "dataset(0)$0"	[label=drop];
 	"X(0)$0" -> "1(0)"	[label=drop];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade130>, <_ast.Constant object at 0x12fadeb20>, <_ast.Constant \
-object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fade3a0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade130>, <_ast.Constant object at 0x12fadeb20>, <_ast.Constant \
-object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fade3a0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab580>, <_\
+ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant object at 0x7fd4902abbb0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab580>, <_\
+ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant object at 0x7fd4902abbb0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "X(0)$0"	[label=assignedFrom];
 	"X(0)$1" -> "1(0)"	[label=drop];
 	"X(0)$1" -> "X(0)$0"	[label=drop];
-	"X(0)$1" -> "[<_ast.Constant object at 0x12fade220>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fade220>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$1" -> "[<_ast.Constant object at 0x7fd4902ab880>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4902ab880>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"X(0)$2" -> "X(0)$1"	[label=head];
 	"X(0)$2" -> "20(0)"	[label=head];
 	"20(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
@@ -218,6 +168,14 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"LabelEncoder(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"LabelEncoder(0)" -> LabelEncoder	[label=assignedFrom];
 	"labelEncoder_X(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$3" -> "X(0)$2"	[label=fit_transform];
+	"X(0)$3" -> "labelEncoder_X(0)"	[label=fit_transform];
+	"X(0)$3" -> "X(0)$3"	[label=fit_transform];
+	"Number of null values in Embarked:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[81/0]" -> "X(0)$3"	[label=print];
+	"print[81/0]" -> "Number of null values in Embarked:(0)"	[label=print];
+	"print[81/0]" -> "sum(0)"	[label=print];
+	"sum(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"row_index(0)$0" -> "X(0)$3"	[label=isnull];
 	"S(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"X(0)$4" -> "X(0)$3"	[label=assignedFrom];
@@ -227,16 +185,21 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"Embarked(0)$0" -> "Embarked(0)$0"	[label=get_dummies];
 	"X(0)$5" -> "1(0)"	[label=drop];
 	"X(0)$5" -> "X(0)$4"	[label=drop];
-	"X(0)$5" -> "[<_ast.Constant object at 0x12f8a91c0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8a91c0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$5" -> "[<_ast.Constant object at 0x7fd5007f08b0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd5007f08b0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"X(0)$6" -> "pd(0)"	[label=concat];
 	"X(0)$6" -> "1(0)"	[label=concat];
-	"X(0)$6" -> "[<_ast.Name object at 0x12f8a9280>, <_ast.Name object at 0x12f8a9040>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8a9280>, <_ast.Name object at 0x12f8a9040>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$6" -> "[<_ast.Name object at 0x7fd5007f0910>, <_ast.Name object at 0x7fd5007f0640>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd5007f0910>, <_ast.Name object at 0x7fd5007f0640>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"X(0)$7" -> "1(0)"	[label=drop];
 	"X(0)$7" -> "X(0)$6"	[label=drop];
-	"X(0)$7" -> "[<_ast.Constant object at 0x12f8a95e0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8a95e0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$7" -> "[<_ast.Constant object at 0x7fd4c05c45b0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c05c45b0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$8" -> "X(0)$7"	[label=head];
+	"Number of null values in Age:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[96/0]" -> "sum(0)"	[label=print];
+	"print[96/0]" -> "X(0)$8"	[label=print];
+	"print[96/0]" -> "Number of null values in Age:(0)"	[label=print];
 	"got(0)$0" -> "dataset(0)$0"	[label=assignedFrom];
 	"got(0)$0" -> "1(0)"	[label=assignedFrom];
 	"got(0)$0" -> ",(0)"	[label=assignedFrom];
@@ -283,8 +246,8 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"X(0)$11" -> "j(0)"	[label=assignedFrom];
 	"X(0)$12" -> "1(0)"	[label=drop];
 	"X(0)$12" -> "X(0)$11"	[label=drop];
-	"X(0)$12" -> "[<_ast.Constant object at 0x12f9a4cd0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f9a4cd0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"X(0)$12" -> "[<_ast.Constant object at 0x7fd50162f8e0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50162f8e0>](0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"X(0)$13" -> "0(0)"	[label=assignedFrom];
 	"X(0)$13" -> "X(0)$12"	[label=assignedFrom];
 	"X(0)$14" -> "1(0)"	[label=assignedFrom];
@@ -301,11 +264,22 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	cross_val_score -> "sklearn.model_selection"	[label=importedBy];
 	"cross_val_score(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"cross_val_score(0)" -> cross_val_score	[label=assignedFrom];
+	"accuracies(0)$0" -> "y(0)$0"	[label=cross_val_score];
+	"accuracies(0)$0" -> "X(0)$15"	[label=cross_val_score];
+	"accuracies(0)$0" -> "classifier(0)$0"	[label=cross_val_score];
+	"accuracies(0)$0" -> "10(0)"	[label=cross_val_score];
 	"10(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"Logistic Regression:
+ Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[145/0]" -> "accuracies(0)$0"	[label=print];
+	"print[145/0]" -> "Logistic Regression:
+ Accuracy:(0)"	[label=print];
+	"print[145/0]" -> "+/-(0)"	[label=print];
+	"print[145/0]" -> "
+(0)"	[label=print];
+	"+/-(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"
 (0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
-	"print[4]" -> "
-(0)"	[label=print];
 	"sklearn.neighbors" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
 	KNeighborsClassifier -> "sklearn.neighbors"	[label=importedBy];
 	"KNeighborsClassifier(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
@@ -315,6 +289,18 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"classifier(0)$1" -> "9(0)"	[label=KNeighborsClassifier];
 	"classifier(0)$1" -> "minkowski(0)"	[label=KNeighborsClassifier];
 	"minkowski(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"accuracies(0)$1" -> "y(0)$0"	[label=cross_val_score];
+	"accuracies(0)$1" -> "X(0)$15"	[label=cross_val_score];
+	"accuracies(0)$1" -> "10(0)"	[label=cross_val_score];
+	"accuracies(0)$1" -> "classifier(0)$1"	[label=cross_val_score];
+	"K-NN:
+ Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[159/0]" -> "+/-(0)"	[label=print];
+	"print[159/0]" -> "
+(0)"	[label=print];
+	"print[159/0]" -> "accuracies(0)$1"	[label=print];
+	"print[159/0]" -> "K-NN:
+ Accuracy:(0)"	[label=print];
 	"sklearn.svm" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
 	SVC -> "sklearn.svm"	[label=importedBy];
 	"SVC(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
@@ -322,10 +308,34 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"rbf(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"classifier(0)$2" -> "0(0)"	[label=SVC];
 	"classifier(0)$2" -> "rbf(0)"	[label=SVC];
+	"accuracies(0)$2" -> "y(0)$0"	[label=cross_val_score];
+	"accuracies(0)$2" -> "X(0)$15"	[label=cross_val_score];
+	"accuracies(0)$2" -> "10(0)"	[label=cross_val_score];
+	"accuracies(0)$2" -> "classifier(0)$2"	[label=cross_val_score];
+	"SVM:
+ Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[171/0]" -> "+/-(0)"	[label=print];
+	"print[171/0]" -> "
+(0)"	[label=print];
+	"print[171/0]" -> "accuracies(0)$2"	[label=print];
+	"print[171/0]" -> "SVM:
+ Accuracy:(0)"	[label=print];
 	"sklearn.naive_bayes" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
 	GaussianNB -> "sklearn.naive_bayes"	[label=importedBy];
 	"GaussianNB(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
 	"GaussianNB(0)" -> GaussianNB	[label=assignedFrom];
+	"accuracies(0)$3" -> "y(0)$0"	[label=cross_val_score];
+	"accuracies(0)$3" -> "X(0)$15"	[label=cross_val_score];
+	"accuracies(0)$3" -> "10(0)"	[label=cross_val_score];
+	"accuracies(0)$3" -> "classifier(0)$2"	[label=cross_val_score];
+	"Naive Bayes:
+ Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[183/0]" -> "+/-(0)"	[label=print];
+	"print[183/0]" -> "
+(0)"	[label=print];
+	"print[183/0]" -> "accuracies(0)$3"	[label=print];
+	"print[183/0]" -> "Naive Bayes:
+ Accuracy:(0)"	[label=print];
 	"sklearn.ensemble" -> "simple-tutorial-for-beginners.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
@@ -334,4 +344,14 @@ object at 0x12fadeb80>, <_ast.Constant object at 0x12fade100>, <_ast.Constant ob
 	"classifier(0)$3" -> "100(0)"	[label=RandomForestClassifier];
 	"classifier(0)$3" -> "entropy(0)"	[label=RandomForestClassifier];
 	"entropy(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"accuracies(0)$4" -> "y(0)$0"	[label=cross_val_score];
+	"accuracies(0)$4" -> "X(0)$15"	[label=cross_val_score];
+	"accuracies(0)$4" -> "10(0)"	[label=cross_val_score];
+	"accuracies(0)$4" -> "classifier(0)$3"	[label=cross_val_score];
+	"Random Forest:
+ Accuracy:(0)" -> "simple-tutorial-for-beginners.ipynb"	[label=appearsIn];
+	"print[196/0]" -> "+/-(0)"	[label=print];
+	"print[196/0]" -> "accuracies(0)$4"	[label=print];
+	"print[196/0]" -> "Random Forest:
+ Accuracy:(0)"	[label=print];
 }

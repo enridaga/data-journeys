@@ -19,13 +19,7 @@ strict digraph "" {
 	"link(0)$0" -> "https://www.holidify.com/explore/(0)"	[label=assignedFrom];
 	"P_link(0)$0" -> "requests(0)"	[label=get];
 	"P_link(0)$0" -> "link(0)$0"	[label=get];
-	"print[0]" -> "P_link(0)$0"	[label=print];
-	"print[0]" -> "len(0)"	[label=print];
-	"print[0]" -> "Places(0)$1"	[label=print];
-	"len(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
-	"Places(0)$1" -> "Places(0)$0"	[label=append];
-	"Places(0)$1" -> "Data(0)$1"	[label=append];
-	"Places(0)$1" -> "True(0)"	[label=append];
+	"print[13/0]" -> "P_link(0)$0"	[label=print];
 	"P_html(0)$0" -> "P_link(0)$0"	[label=assignedFrom];
 	"P_soup(0)$0" -> "P_html(0)$0"	[label=BeautifulSoup];
 	"P_soup(0)$0" -> "html.parser(0)"	[label=BeautifulSoup];
@@ -37,14 +31,16 @@ strict digraph "" {
 	"div(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
 	"class(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
 	"col-12 col-md-6 pr-md-3 result(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
-	"print[1]" -> "containers(0)$0"	[label=print];
+	"len(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
+	"print[18/0]" -> "containers(0)$0"	[label=print];
+	"print[18/0]" -> "len(0)"	[label=print];
 	"container(0)$0" -> "containers(0)$0"	[label=iteratorOf];
 	"container(0)$0" -> "0(0)"	[label=assignedFrom];
 	"0(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951160>, <_ast.Constant object at 0x12f951760>, <_ast.Constant object at 0x12f9518b0>, <_ast.Constant \
-object at 0x12f9517c0>, <_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f951c40>](0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
-	"column(0)$0" -> "[<_ast.Constant object at 0x12f951160>, <_ast.Constant object at 0x12f951760>, <_ast.Constant object at 0x12f9518b0>, <_ast.Constant \
-object at 0x12f9517c0>, <_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f951c40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b9d0>, <_ast.Constant object at 0x7fd50085bd60>, <_\
+ast.Constant object at 0x7fd50085b1c0>, <_ast.Constant object at 0x7fd50085b880>, <_ast.Constant object at 0x7fd50085ba30>](0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
+	"column(0)$0" -> "[<_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b9d0>, <_ast.Constant object at 0x7fd50085bd60>, <_\
+ast.Constant object at 0x7fd50085b1c0>, <_ast.Constant object at 0x7fd50085b880>, <_ast.Constant object at 0x7fd50085ba30>](0)"	[label=assignedFrom];
 	"Places(0)$0" -> "pd(0)"	[label=DataFrame];
 	"Places(0)$0" -> "column(0)$0"	[label=DataFrame];
 	"p_name(0)$0" -> "class(0)"	[label=findAll];
@@ -140,11 +136,15 @@ object at 0x12f9517c0>, <_ast.Constant object at 0x12f951730>, <_ast.Constant ob
 	"p_attraction(0)$1" -> "12(0)"	[label=strip];
 	"12(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
 	"Data(0)$0" -> "pd(0)"	[label=DataFrame];
-	"Data(0)$0" -> "[<_ast.List object at 0x12fadee50>](0)"	[label=DataFrame];
-	"[<_ast.List object at 0x12fadee50>](0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
+	"Data(0)$0" -> "[<_ast.List object at 0x7fd500852f40>](0)"	[label=DataFrame];
+	"[<_ast.List object at 0x7fd500852f40>](0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
 	"Data(0)$1" -> "column(0)$0"	[label=assignedFrom];
 	"Data(0)$1" -> "Data(0)$0"	[label=assignedFrom];
+	"Places(0)$1" -> "Places(0)$0"	[label=append];
+	"Places(0)$1" -> "Data(0)$1"	[label=append];
+	"Places(0)$1" -> "True(0)"	[label=append];
 	"True(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "Places(0)$1"	[label=print];
 	"Places(0)$2" -> "Places(0)$1"	[label=to_csv];
 	"Places(0)$2" -> "Places.csv(0)"	[label=to_csv];
 	"Places.csv(0)" -> "web-scraping-by-python-and-beautifulsoup.ipynb"	[label=appearsIn];

@@ -199,18 +199,9 @@ digraph "" {
 	os -> "cnn-in-keras-on-folds.ipynb"	[label=importedBy];
 	"os(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Fold(18)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"CV mean score: {0:.4f}, std: {1:.4f}.(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
+	"print[35/0]" -> "os(0)"	[label=print];
+	"print[35/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "fold_n(18)"	[label=print];
-	"fold_n(18)" -> "X(18)"	[label=iteratorOf];
-	"fold_n(18)" -> "y(18)"	[label=iteratorOf];
-	"fold_n(18)" -> "enumerate(18)"	[label=iteratorOf];
-	"fold_n(18)" -> "folds(18)"	[label=iteratorOf];
 	"train(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"train(0)$0" -> "../input/jigsaw-public-files/train.csv(0)"	[label=read_csv];
 	"../input/jigsaw-public-files/train.csv(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
@@ -270,9 +261,9 @@ digraph "" {
 	"embedding_matrix(2)$1" -> "embedding_matrix(2)$0"	[label=assignedFrom];
 	"embedding_matrix(2)$1" -> "embedding_vector(2)$0"	[label=assignedFrom];
 	"embedding_matrix(0)$0" -> "np(0)"	[label=concatenate];
-	"embedding_matrix(0)$0" -> "[<_ast.Call object at 0x12faded30>, <_ast.Call object at 0x12fadee80>](0)"	[label=concatenate];
+	"embedding_matrix(0)$0" -> "[<_ast.Call object at 0x7fd5007f0a60>, <_ast.Call object at 0x7fd50080dc40>](0)"	[label=concatenate];
 	"embedding_matrix(0)$0" -> "1(0)"	[label=concatenate];
-	"[<_ast.Call object at 0x12faded30>, <_ast.Call object at 0x12fadee80>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd5007f0a60>, <_ast.Call object at 0x7fd50080dc40>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"1(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "np(0)"	[label=Mult];
 	"y(0)$0" -> "train(0)$1"	[label=Mult];
@@ -284,16 +275,16 @@ digraph "" {
 	"target(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"0.5(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"False(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade700>, <_ast.Constant object at 0x12fade100>, <_ast.Constant \
-object at 0x12fade5b0>, <_ast.Constant object at 0x12fade400>, <_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fade550>, <_\
-ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
-	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade700>, <_ast.Constant object at 0x12fade100>, <_ast.Constant \
-object at 0x12fade5b0>, <_ast.Constant object at 0x12fade400>, <_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fade550>, <_\
-ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50080deb0>, <_ast.Constant object at 0x7fd50080da30>, <_ast.Constant object at 0x7fd50080d730>, <_\
+ast.Constant object at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object at 0x7fd50080d310>, <_ast.Constant \
+object at 0x7fd50080ddf0>, <_ast.Constant object at 0x7fd50080d370>, <_ast.Constant object at 0x7fd50080dac0>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
+	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x7fd50080deb0>, <_ast.Constant object at 0x7fd50080da30>, <_ast.Constant object at 0x7fd50080d730>, <_\
+ast.Constant object at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object at 0x7fd50080d310>, <_ast.Constant \
+object at 0x7fd50080ddf0>, <_ast.Constant object at 0x7fd50080d370>, <_ast.Constant object at 0x7fd50080dac0>](0)"	[label=assignedFrom];
 	"col(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"col(0)" -> "identity_columns(0)$0"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fade460>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12fade460>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd50080d220>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd50080d220>](0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
 	"train(0)$2" -> "np(0)"	[label=where];
 	"train(0)$2" -> "train(0)$1"	[label=where];
 	"train(0)$2" -> "True(0)"	[label=where];
@@ -389,7 +380,7 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"POWER(10)" -> "get_final_metric[2]"	[label=_argToVar];
 	"OVERALL_MODEL_WEIGHT(10)" -> "get_final_metric[3]"	[label=_argToVar];
 	"bias_score(10)$0" -> "np(10)"	[label=average];
-	"bias_score(10)$0" -> "[<_ast.Call object at 0x12f9a3580>, <_ast.Call object at 0x12f9a3700>, <_ast.Call object at 0x12f9a3880>](10)"	[label=average];
+	"bias_score(10)$0" -> "[<_ast.Call object at 0x7fd4c04ad280>, <_ast.Call object at 0x7fd4c04ad400>, <_ast.Call object at 0x7fd4c04ad580>](10)"	[label=average];
 	"self(12)" -> "__init__[0]"	[label=_argToVar];
 	"step_dim(12)" -> "__init__[1]"	[label=_argToVar];
 	"W_regularizer(12)" -> "__init__[2]"	[label=_argToVar];
@@ -509,7 +500,7 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"x(17)$0" -> "inp(17)$0"	[label=assignedFrom];
 	"x(17)$0" -> "Embedding(17)"	[label=assignedFrom];
 	"x(17)$0" -> "2(17)"	[label=assignedFrom];
-	"x(17)$0" -> "[<_ast.Name object at 0x12f914820>](17)"	[label=assignedFrom];
+	"x(17)$0" -> "[<_ast.Name object at 0x7fd500827580>](17)"	[label=assignedFrom];
 	"x(17)$0" -> "False(17)"	[label=assignedFrom];
 	"x1(17)$0" -> "spatial_dr(17)"	[label=assignedFrom];
 	"x1(17)$0" -> "x(17)$0"	[label=assignedFrom];
@@ -539,7 +530,7 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"x(17)$4" -> "x(17)$4"	[label=assignedFrom];
 	"x(17)$5" -> "x(17)$5"	[label=assignedFrom];
 	"x(17)$5" -> "Flatten(17)"	[label=assignedFrom];
-	"x(17)$6" -> "[<_ast.Name object at 0x12f8ff730>, <_ast.Name object at 0x12f8ff760>](17)"	[label=concatenate];
+	"x(17)$6" -> "[<_ast.Name object at 0x7fd500811400>, <_ast.Name object at 0x7fd500811700>](17)"	[label=concatenate];
 	"x(17)$7" -> "dense_units(17)"	[label=assignedFrom];
 	"x(17)$7" -> "dr(17)"	[label=assignedFrom];
 	"x(17)$7" -> "relu(17)"	[label=assignedFrom];
@@ -575,6 +566,10 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"test_tokenized(18)$0" -> "comment_text(18)"	[label=texts_to_sequences];
 	"X_test(18)$0" -> "max_len(18)"	[label=pad_sequences];
 	"X_test(18)$0" -> "test_tokenized(18)$0"	[label=pad_sequences];
+	"fold_n(18)" -> "X(18)"	[label=iteratorOf];
+	"fold_n(18)" -> "y(18)"	[label=iteratorOf];
+	"fold_n(18)" -> "enumerate(18)"	[label=iteratorOf];
+	"fold_n(18)" -> "folds(18)"	[label=iteratorOf];
 	"train_index(18)" -> "X(18)"	[label=iteratorOf];
 	"train_index(18)" -> "y(18)"	[label=iteratorOf];
 	"train_index(18)" -> "enumerate(18)"	[label=iteratorOf];
@@ -583,15 +578,10 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"valid_index(18)" -> "y(18)"	[label=iteratorOf];
 	"valid_index(18)" -> "enumerate(18)"	[label=iteratorOf];
 	"valid_index(18)" -> "folds(18)"	[label=iteratorOf];
-	"print[2]" -> "started at(18)"	[label=print];
-	"print[2]" -> "scores(0)$0"	[label=print];
-	"scores(0)$0" -> "test(0)$1"	[label=train_model];
-	"scores(0)$0" -> "tk(0)$1"	[label=train_model];
-	"scores(0)$0" -> "target(0)"	[label=train_model];
-	"scores(0)$0" -> "train(0)$2"	[label=train_model];
-	"scores(0)$0" -> "max_len(0)$0"	[label=train_model];
-	"print[3]" -> "np(0)"	[label=print];
-	"print[3]" -> "time(18)"	[label=print];
+	"print[244/8]" -> "fold_n(18)"	[label=print];
+	"print[244/8]" -> "Fold(18)"	[label=print];
+	"print[244/8]" -> "started at(18)"	[label=print];
+	"print[244/8]" -> "time(18)"	[label=print];
 	"X_train(18)$0" -> "X(18)"	[label=assignedFrom];
 	"X_train(18)$0" -> "train_index(18)"	[label=assignedFrom];
 	"X_train(18)$0" -> "valid_index(18)"	[label=assignedFrom];
@@ -615,8 +605,8 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"X_train(18)$1" -> "train_tokenized(18)$0"	[label=pad_sequences];
 	"X_valid(18)$1" -> "max_len(18)"	[label=pad_sequences];
 	"X_valid(18)$1" -> "valid_tokenized(18)$0"	[label=pad_sequences];
-	"model(18)$0" -> "fold_n(18)"	[label=build_model];
 	"model(18)$0" -> "max_len(18)"	[label=build_model];
+	"model(18)$0" -> "fold_n(18)"	[label=build_model];
 	"model(18)$0" -> "y_train(18)$0"	[label=build_model];
 	"model(18)$0" -> "y_valid(18)$0"	[label=build_model];
 	"model(18)$0" -> "X_train(18)$1"	[label=build_model];
@@ -666,7 +656,15 @@ ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade070>](0)"	
 	"prediction(0)$0" -> "target(0)"	[label=train_model];
 	"prediction(0)$0" -> "train(0)$2"	[label=train_model];
 	"prediction(0)$0" -> "max_len(0)$0"	[label=train_model];
-	"print[4]" -> "scores(0)$0"	[label=print];
+	"scores(0)$0" -> "test(0)$1"	[label=train_model];
+	"scores(0)$0" -> "tk(0)$1"	[label=train_model];
+	"scores(0)$0" -> "target(0)"	[label=train_model];
+	"scores(0)$0" -> "train(0)$2"	[label=train_model];
+	"scores(0)$0" -> "max_len(0)$0"	[label=train_model];
+	"CV mean score: {0:.4f}, std: {1:.4f}.(0)" -> "cnn-in-keras-on-folds.ipynb"	[label=appearsIn];
+	"print[274/0]" -> "np(0)"	[label=print];
+	"print[274/0]" -> "scores(0)$0"	[label=print];
+	"print[274/0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"plt(0)$0" -> "plt(0)"	[label=hist];
 	"plt(0)$0" -> "prediction(0)$0"	[label=hist];
 	"plt(0)$1" -> "oof(0)$0"	[label=hist];

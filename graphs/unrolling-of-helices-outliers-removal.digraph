@@ -3,29 +3,20 @@ digraph "" {
 	"np(0)" -> numpy	[label=assignedFrom];
 	"np(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"x(0)$0" -> "np(0)"	[label=array];
-	"x(0)$0" -> "[<_ast.Tuple object at 0x12f8ab1f0>, <_ast.Tuple object at 0x12f8ab790>, <_ast.Tuple object at 0x12f8ab130>, <_ast.Tuple object \
-at 0x12f8ab250>, <_ast.Tuple object at 0x12f841d90>, <_ast.Tuple object at 0x12f989fd0>, <_ast.Tuple object at 0x12f989dc0>, <_ast.Tuple \
-object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object at 0x12f989c70>](0)"	[label=array];
-	"[<_ast.Tuple object at 0x12f8ab1f0>, <_ast.Tuple object at 0x12f8ab790>, <_ast.Tuple object at 0x12f8ab130>, <_ast.Tuple object \
-at 0x12f8ab250>, <_ast.Tuple object at 0x12f841d90>, <_ast.Tuple object at 0x12f989fd0>, <_ast.Tuple object at 0x12f989dc0>, <_ast.Tuple \
-object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object at 0x12f989c70>](0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "[<_ast.Tuple object at 0x7fd4c048eb50>, <_ast.Tuple object at 0x7fd4c048eaf0>, <_ast.Tuple object at 0x7fd4c048ed30>, <_ast.Tuple \
+object at 0x7fd4c048ed00>, <_ast.Tuple object at 0x7fd4c048edc0>, <_ast.Tuple object at 0x7fd4c048e5b0>, <_ast.Tuple object at 0x7fd4c048ee80>, <_\
+ast.Tuple object at 0x7fd4c048eac0>, <_ast.Tuple object at 0x7fd4c048eb20>, <_ast.Tuple object at 0x7fd500178df0>](0)"	[label=array];
+	"[<_ast.Tuple object at 0x7fd4c048eb50>, <_ast.Tuple object at 0x7fd4c048eaf0>, <_ast.Tuple object at 0x7fd4c048ed30>, <_ast.Tuple \
+object at 0x7fd4c048ed00>, <_ast.Tuple object at 0x7fd4c048edc0>, <_ast.Tuple object at 0x7fd4c048e5b0>, <_ast.Tuple object at 0x7fd4c048ee80>, <_\
+ast.Tuple object at 0x7fd4c048eac0>, <_ast.Tuple object at 0x7fd4c048eb20>, <_ast.Tuple object at 0x7fd500178df0>](0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"xm(0)$0" -> "np(0)"	[label=mean];
 	"xm(0)$0" -> "x(0)$0"	[label=mean];
 	"xm(0)$0" -> "0(0)"	[label=mean];
 	"0(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
-	"print[0]" -> "xm(0)$0"	[label=print];
-	"print[0]" -> "x(0)$1"	[label=print];
-	"print[0]" -> "norm(0)$0"	[label=print];
-	"print[0]" -> "Your score: (0)"	[label=print];
-	"print[0]" -> "Event ID: (0)"	[label=print];
+	"print[7/0]" -> "xm(0)$0"	[label=print];
 	"x(0)$1" -> "x(0)$0"	[label=Sub];
 	"x(0)$1" -> "xm(0)$0"	[label=Sub];
-	"norm(0)$0" -> "np(0)"	[label=Pow];
-	"norm(0)$0" -> "2(0)"	[label=Pow];
-	"norm(0)$0" -> "Z(0)$10"	[label=Pow];
-	"norm(0)$0" -> "T(0)$1"	[label=Pow];
-	"Your score: (0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
-	"Event ID: (0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"print[9/0]" -> "x(0)$1"	[label=print];
 	"v(0)$0" -> "np(0)"	[label=svd];
 	"v(0)$0" -> "x(0)$1"	[label=svd];
 	"v(0)$0" -> "True(0)"	[label=svd];
@@ -148,6 +139,11 @@ object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object a
 	"S(0)$10" -> "S(0)$9"	[label=assignedFrom];
 	"S(0)$10" -> "9(0)"	[label=assignedFrom];
 	"9(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"norm(0)$0" -> "np(0)"	[label=Pow];
+	"norm(0)$0" -> "2(0)"	[label=Pow];
+	"norm(0)$0" -> "Z(0)$10"	[label=Pow];
+	"norm(0)$0" -> "T(0)$1"	[label=Pow];
+	"print[45/0]" -> "norm(0)$0"	[label=print];
 	"matplotlib.pyplot" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=importedBy];
 	"plt(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
@@ -177,15 +173,15 @@ object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object a
 	"hits(0)$0" -> "path_to_train(0)$0"	[label=load_event];
 	"hits(0)$0" -> "event_prefix(0)$0"	[label=load_event];
 	"hits(0)$0" -> "path_to_test(0)$0"	[label=iteratorOf];
-	"hits(0)$0" -> "[<_ast.Constant object at 0x12f882d60>, <_ast.Constant object at 0x12f882d90>](0)"	[label=iteratorOf];
+	"hits(0)$0" -> "[<_ast.Constant object at 0x7fd4d0983a60>, <_ast.Constant object at 0x7fd4d0983a90>](0)"	[label=iteratorOf];
 	"path_to_test(0)$0" -> "../input/test(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f882d60>, <_ast.Constant object at 0x12f882d90>](0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0983a60>, <_ast.Constant object at 0x7fd4d0983a90>](0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"cells(0)$0" -> "os(0)"	[label=load_event];
 	"cells(0)$0" -> "load_dataset(0)"	[label=iteratorOf];
 	"cells(0)$0" -> "path_to_train(0)$0"	[label=load_event];
 	"cells(0)$0" -> "event_prefix(0)$0"	[label=load_event];
 	"cells(0)$0" -> "path_to_test(0)$0"	[label=iteratorOf];
-	"cells(0)$0" -> "[<_ast.Constant object at 0x12f882d60>, <_ast.Constant object at 0x12f882d90>](0)"	[label=iteratorOf];
+	"cells(0)$0" -> "[<_ast.Constant object at 0x7fd4d0983a60>, <_ast.Constant object at 0x7fd4d0983a90>](0)"	[label=iteratorOf];
 	"particles(0)$0" -> "os(0)"	[label=load_event];
 	"particles(0)$0" -> "path_to_train(0)$0"	[label=load_event];
 	"particles(0)$0" -> "event_prefix(0)$0"	[label=load_event];
@@ -345,7 +341,7 @@ object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object a
 	"hits(5)$2" -> "r(5)$1"	[label=Div];
 	"X(5)$0" -> "hits(5)$2"	[label=fit_transform];
 	"X(5)$0" -> "ss(5)"	[label=fit_transform];
-	"X(5)$0" -> "[<_ast.Constant object at 0x12f914100>, <_ast.Constant object at 0x12f914130>, <_ast.Constant object at 0x12f914160>](5)"	[label=fit_transform];
+	"X(5)$0" -> "[<_ast.Constant object at 0x7fd4c04dbdf0>, <_ast.Constant object at 0x7fd4c04dbe20>, <_ast.Constant object at 0x7fd4c04dbe80>](5)"	[label=fit_transform];
 	"i(5)" -> "self(5)"	[label=iteratorOf];
 	"i(5)" -> "enumerate(5)"	[label=iteratorOf];
 	"rz_scale(5)" -> "self(5)"	[label=iteratorOf];
@@ -446,13 +442,13 @@ object at 0x12f989e20>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple object a
 	"dfh(6)$15" -> "dfh(6)$15"	[label=cos];
 	"dfs(6)$0" -> "dfh(6)$15"	[label=fit_transform];
 	"dfs(6)$0" -> "ss(6)"	[label=fit_transform];
-	"dfs(6)$0" -> "[<_ast.Constant object at 0x12f91de80>, <_ast.Constant object at 0x12f91deb0>, <_ast.Constant object at 0x12f91dee0>, <_ast.Constant \
-object at 0x12f91de20>, <_ast.Constant object at 0x12f91df10>, <_ast.Constant object at 0x12f91df70>, <_ast.Constant object at 0x12f91dfa0>, <_\
-ast.Constant object at 0x12f91df40>](6)"	[label=fit_transform];
+	"dfs(6)$0" -> "[<_ast.Constant object at 0x7fd4c04cbb20>, <_ast.Constant object at 0x7fd4c04cbb50>, <_ast.Constant object at 0x7fd4c04cbb80>, <_\
+ast.Constant object at 0x7fd4c04cbbb0>, <_ast.Constant object at 0x7fd4c04cbbe0>, <_ast.Constant object at 0x7fd4c04cbc10>, <_ast.Constant \
+object at 0x7fd4c04cbc40>, <_ast.Constant object at 0x7fd4c04cbc70>](6)"	[label=fit_transform];
 	"cx(6)$0" -> "np(6)"	[label=array];
-	"cx(6)$0" -> "[<_ast.Name object at 0x12f91b160>, <_ast.Name object at 0x12f91b190>, <_ast.Name object at 0x12f91b1c0>, <_ast.Name object at 0x12f91b1f0>, <_\
-ast.Name object at 0x12f91b220>, <_ast.Name object at 0x12f91b250>, <_ast.Name object at 0x12f91b280>, <_ast.Name object at 0x12f91b2b0>](\
-6)"	[label=array];
+	"cx(6)$0" -> "[<_ast.Name object at 0x7fd4c04cbdf0>, <_ast.Name object at 0x7fd4c04cbe20>, <_ast.Name object at 0x7fd4c04cbe50>, <_ast.Name object \
+at 0x7fd4c04cbe80>, <_ast.Name object at 0x7fd4c04cbeb0>, <_ast.Name object at 0x7fd4c04cbee0>, <_ast.Name object at 0x7fd4c04cbf10>, <_\
+ast.Name object at 0x7fd4c04cbf40>](6)"	[label=array];
 	"dfs(6)$1" -> "np(6)"	[label=multiply];
 	"dfs(6)$1" -> "cx(6)$0"	[label=multiply];
 	"dfs(6)$1" -> "dfs(6)$1"	[label=multiply];
@@ -520,28 +516,29 @@ ast.Name object at 0x12f91b220>, <_ast.Name object at 0x12f91b250>, <_ast.Name o
 	"sub_data(8)$0" -> "hits(8)"	[label=column_stack];
 	"sub_data(8)$0" -> "labels(8)"	[label=column_stack];
 	"sub_data(8)$0" -> "np(8)"	[label=column_stack];
-	"sub_data(8)$0" -> "[<_ast.Name object at 0x12f882070>](8)"	[label=column_stack];
+	"sub_data(8)$0" -> "[<_ast.Name object at 0x7fd4d0978d60>](8)"	[label=column_stack];
 	"sub_data(8)$0" -> "len(8)"	[label=column_stack];
 	"submission(8)$0" -> "sub_data(8)$0"	[label=astype];
 	"submission(8)$0" -> "pd(8)"	[label=astype];
-	"submission(8)$0" -> "[<_ast.Constant object at 0x12f882460>, <_ast.Constant object at 0x12f882490>, <_ast.Constant object at 0x12f8824c0>](8)"	[label=astype];
+	"submission(8)$0" -> "[<_ast.Constant object at 0x7fd4d0983160>, <_ast.Constant object at 0x7fd4d0983190>, <_ast.Constant object at 0x7fd4d09831c0>](8)"	[label=astype];
 	"submission(8)$0" -> "int(8)"	[label=astype];
 	"submission(0)$0" -> "0(0)"	[label=create_one_event_submission];
 	"submission(0)$0" -> "hits(0)$0"	[label=create_one_event_submission];
 	"submission(0)$0" -> "labels(0)$0"	[label=create_one_event_submission];
 	"score(0)$0" -> "truth(0)$0"	[label=score_event];
 	"score(0)$0" -> "submission(0)$0"	[label=score_event];
-	"print[1]" -> "score(0)$0"	[label=print];
-	"print[1]" -> "event_id(0)"	[label=print];
-	"event_id(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
-	"event_id(0)" -> "load_dataset(0)"	[label=iteratorOf];
-	"event_id(0)" -> "path_to_test(0)$0"	[label=iteratorOf];
-	"event_id(0)" -> "[<_ast.Constant object at 0x12f882d60>, <_ast.Constant object at 0x12f882d90>](0)"	[label=iteratorOf];
+	"Your score: (0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"print[182/0]" -> "score(0)$0"	[label=print];
+	"print[182/0]" -> "Your score: (0)"	[label=print];
 	"../input/test(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"[](0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"test_dataset_submissions(0)$0" -> "[](0)"	[label=assignedFrom];
 	"False(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
 	"create_submission(0)$0" -> "False(0)"	[label=assignedFrom];
+	"event_id(0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"event_id(0)" -> "load_dataset(0)"	[label=iteratorOf];
+	"event_id(0)" -> "path_to_test(0)$0"	[label=iteratorOf];
+	"event_id(0)" -> "[<_ast.Constant object at 0x7fd4d0983a60>, <_ast.Constant object at 0x7fd4d0983a90>](0)"	[label=iteratorOf];
 	"labels(0)$1" -> "hits(0)$0"	[label=predict];
 	"labels(0)$1" -> "model(0)"	[label=predict];
 	"one_submission(0)$0" -> "hits(0)$0"	[label=create_one_event_submission];
@@ -549,6 +546,9 @@ ast.Name object at 0x12f91b220>, <_ast.Name object at 0x12f91b250>, <_ast.Name o
 	"one_submission(0)$0" -> "labels(0)$1"	[label=create_one_event_submission];
 	"test_dataset_submissions(0)$1" -> "test_dataset_submissions(0)$0"	[label=append];
 	"test_dataset_submissions(0)$1" -> "one_submission(0)$0"	[label=append];
+	"Event ID: (0)" -> "unrolling-of-helices-outliers-removal.ipynb"	[label=appearsIn];
+	"print[198/8]" -> "event_id(0)"	[label=print];
+	"print[198/8]" -> "Event ID: (0)"	[label=print];
 	"submission(0)$1" -> "0(0)"	[label=concat];
 	"submission(0)$1" -> "pd(0)"	[label=concat];
 	"submission(0)$1" -> "test_dataset_submissions(0)$1"	[label=concat];

@@ -11,55 +11,9 @@ digraph "" {
 	seaborn -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=importedBy];
 	"sns(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "dataset contains {} rows and {} columns(0)"	[label=print];
-	"print[0]" -> "data(3)$1"	[label=print];
-	"print[0]" -> "model(0)$6"	[label=print];
-	"print[0]" -> "X_train(0)$0"	[label=print];
-	"print[0]" -> "X_test(0)$0"	[label=print];
-	"print[0]" -> "score: \%.2f(0)"	[label=print];
-	"print[0]" -> "acc: \%.2f(0)"	[label=print];
-	"dataset contains {} rows and {} columns(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"data(3)$1" -> "data(3)$0"	[label=assignedFrom];
-	"data(3)$1" -> "[<_ast.Constant object at 0x12f895bb0>, <_ast.Constant object at 0x12f895be0>](3)"	[label=assignedFrom];
-	"model(0)$6" -> "model(0)$5"	[label=compile];
-	"X_train(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"X_train(0)$0" -> "Y(0)$0"	[label=train_test_split];
-	"X_train(0)$0" -> "0.33(0)"	[label=train_test_split];
-	"X_train(0)$0" -> "42(0)"	[label=train_test_split];
-	"X_test(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"X_test(0)$0" -> "Y(0)$0"	[label=train_test_split];
-	"X_test(0)$0" -> "0.33(0)"	[label=train_test_split];
-	"X_test(0)$0" -> "42(0)"	[label=train_test_split];
-	"score: \%.2f(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"acc: \%.2f(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"print[8/0]" -> "os(0)"	[label=print];
+	"print[8/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "df(0)$0"	[label=print];
-	"print[1]" -> "Y_train(0)$0"	[label=print];
-	"print[1]" -> "Y_test(0)$0"	[label=print];
-	"print[1]" -> "score(0)$2"	[label=print];
-	"print[1]" -> "acc(0)$0"	[label=print];
-	"df(0)$0" -> "pd(0)"	[label=read_csv];
-	"df(0)$0" -> "../input/zomato.csv(0)"	[label=read_csv];
-	"Y_train(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"Y_train(0)$0" -> "Y(0)$0"	[label=train_test_split];
-	"Y_train(0)$0" -> "0.33(0)"	[label=train_test_split];
-	"Y_train(0)$0" -> "42(0)"	[label=train_test_split];
-	"Y_test(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"Y_test(0)$0" -> "Y(0)$0"	[label=train_test_split];
-	"Y_test(0)$0" -> "0.33(0)"	[label=train_test_split];
-	"Y_test(0)$0" -> "42(0)"	[label=train_test_split];
-	"score(0)$2" -> "2(0)"	[label=evaluate];
-	"score(0)$2" -> "batch_size(0)$0"	[label=evaluate];
-	"score(0)$2" -> "model(0)$7"	[label=evaluate];
-	"score(0)$2" -> "X_test(0)$1"	[label=evaluate];
-	"score(0)$2" -> "Y_test(0)$1"	[label=evaluate];
-	"acc(0)$0" -> "2(0)"	[label=evaluate];
-	"acc(0)$0" -> "batch_size(0)$0"	[label=evaluate];
-	"acc(0)$0" -> "model(0)$7"	[label=evaluate];
-	"acc(0)$0" -> "X_test(0)$1"	[label=evaluate];
-	"acc(0)$0" -> "Y_test(0)$1"	[label=evaluate];
 	"matplotlib.pyplot" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=importedBy];
 	"plt(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
@@ -76,7 +30,7 @@ digraph "" {
 	"init_notebook_mode(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"init_notebook_mode(0)" -> init_notebook_mode	[label=assignedFrom];
 	"False(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "False(0)"	[label=init_notebook_mode];
+	"init_notebook_mode[14/0]" -> "False(0)"	[label=init_notebook_mode];
 	wordcloud -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=importedBy];
 	WordCloud -> wordcloud	[label=importedBy];
 	"WordCloud(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
@@ -164,12 +118,16 @@ digraph "" {
 	"word2vec(0)" -> word2vec	[label=assignedFrom];
 	"nltk(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"nltk(0)" -> nltk	[label=assignedFrom];
+	"df(0)$0" -> "pd(0)"	[label=read_csv];
+	"df(0)$0" -> "../input/zomato.csv(0)"	[label=read_csv];
 	"../input/zomato.csv(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"dataset contains {} rows and {} columns(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"print[38/0]" -> "df(0)$0"	[label=print];
+	"print[38/0]" -> "dataset contains {} rows and {} columns(0)"	[label=print];
+	"print[38/0]" -> "0(0)"	[label=print];
+	"print[38/0]" -> "1(0)"	[label=print];
 	"0(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[3]" -> "df(0)$0"	[label=print];
 	"1(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"print[4]" -> "1(0)"	[label=print];
 	"df(0)$1" -> "df(0)$0"	[label=info];
 	"df(0)$2" -> "df(0)$1"	[label=head];
 	"plt(0)$1" -> "plt(0)$0"	[label=figure];
@@ -189,7 +147,7 @@ digraph "" {
 	"df(0)$3" -> "str(0)"	[label=apply];
 	"df(0)$3" -> "dish_liked(0)"	[label=apply];
 	"df(0)$3" -> "type(0)"	[label=apply];
-	"df(0)$3" -> "[<_ast.Constant object at 0x12faf2fd0>](0)"	[label=apply];
+	"df(0)$3" -> "[<_ast.Constant object at 0x7fd50082bcd0>](0)"	[label=apply];
 	"zip(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"reviews_list(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"sns(0)$0" -> "sns(0)"	[label=barplot];
@@ -202,8 +160,8 @@ digraph "" {
 	"x(0)$0" -> "df(0)$2"	[label=value_counts];
 	"x(0)$0" -> "online_order(0)"	[label=value_counts];
 	"online_order(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ebe0>, <_ast.Constant object at 0x12f85e7f0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12f85ebe0>, <_ast.Constant object at 0x12f85e7f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902abe50>, <_ast.Constant object at 0x7fd4902ab070>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4902abe50>, <_ast.Constant object at 0x7fd4902ab070>](0)"	[label=assignedFrom];
 	"trace(0)$0" -> "go(0)"	[label=Pie];
 	"trace(0)$0" -> "x(0)$0"	[label=Pie];
 	"trace(0)$0" -> "colors(0)$0"	[label=Pie];
@@ -222,8 +180,8 @@ digraph "" {
 	"500(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "layout(0)$0"	[label=Figure];
-	"fig(0)$0" -> "[<_ast.Name object at 0x12fade670>](0)"	[label=Figure];
-	"[<_ast.Name object at 0x12fade670>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"fig(0)$0" -> "[<_ast.Name object at 0x7fd4902abdc0>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd4902abdc0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"py(0)$0" -> "py(0)"	[label=iplot];
 	"py(0)$0" -> "fig(0)$0"	[label=iplot];
 	"x(0)$1" -> "word_tokenize(0)"	[label=iteratorOf];
@@ -236,8 +194,8 @@ digraph "" {
 	"review(0)" -> "review(0)"	[label=iteratorOf];
 	"review(0)" -> "rating_df(0)$4"	[label=iteratorOf];
 	"review(0)" -> "10000(0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12fade160>, <_ast.Constant object at 0x12fade5b0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"colors(0)$1" -> "[<_ast.Constant object at 0x12fade160>, <_ast.Constant object at 0x12fade5b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50080d4c0>, <_ast.Constant object at 0x7fd50080dd60>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"colors(0)$1" -> "[<_ast.Constant object at 0x7fd50080d4c0>, <_ast.Constant object at 0x7fd50080dd60>](0)"	[label=assignedFrom];
 	"trace(0)$1" -> "go(0)"	[label=Pie];
 	"trace(0)$1" -> "value(0)"	[label=Pie];
 	"trace(0)$1" -> "dict(0)"	[label=Pie];
@@ -251,8 +209,8 @@ digraph "" {
 	"Table booking(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"fig(0)$1" -> "go(0)"	[label=Figure];
 	"fig(0)$1" -> "layout(0)$1"	[label=Figure];
-	"fig(0)$1" -> "[<_ast.Name object at 0x12fade730>](0)"	[label=Figure];
-	"[<_ast.Name object at 0x12fade730>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"fig(0)$1" -> "[<_ast.Name object at 0x7fd50080d2b0>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd50080d2b0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"py(0)$1" -> "py(0)$0"	[label=iplot];
 	"py(0)$1" -> "fig(0)$1"	[label=iplot];
 	"plt(0)$4" -> "plt(0)$3"	[label=figure];
@@ -273,8 +231,8 @@ digraph "" {
 	"sns(0)$1" -> "sns(0)$0"	[label=distplot];
 	"sns(0)$1" -> "rating(0)$0"	[label=distplot];
 	"cost_dist(0)$0" -> "df(0)$2"	[label=dropna];
-	"cost_dist(0)$0" -> "[<_ast.Constant object at 0x12faf5a30>, <_ast.Constant object at 0x12faf5fa0>, <_ast.Constant object at 0x12faf5bb0>](0)"	[label=dropna];
-	"[<_ast.Constant object at 0x12faf5a30>, <_ast.Constant object at 0x12faf5fa0>, <_ast.Constant object at 0x12faf5bb0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"cost_dist(0)$0" -> "[<_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085bdf0>](0)"	[label=dropna];
+	"[<_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085bdf0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"cost_dist(0)$1" -> "0(0)"	[label=apply];
 	"cost_dist(0)$1" -> "x(0)$1"	[label=apply];
 	"cost_dist(0)$1" -> "rate(0)"	[label=apply];
@@ -332,8 +290,8 @@ digraph "" {
 	"layout(0)$2" -> "800(0)"	[label=Layout];
 	"Box Plots of votes(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"800(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f951760>, <_ast.Name object at 0x12f951730>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Name object at 0x12f951760>, <_ast.Name object at 0x12f951730>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500852bb0>, <_ast.Name object at 0x7fd500852520>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd500852bb0>, <_ast.Name object at 0x7fd500852520>](0)"	[label=assignedFrom];
 	"fig(0)$2" -> "go(0)"	[label=Figure];
 	"fig(0)$2" -> "layout(0)$2"	[label=Figure];
 	"fig(0)$2" -> "data(0)$0"	[label=Figure];
@@ -358,8 +316,8 @@ digraph "" {
 	"trace0(0)$1" -> "approx_cost(for two people)(0)"	[label=Box];
 	"trace0(0)$1" -> "accepting online orders(0)"	[label=Box];
 	"trace0(0)$1" -> "rgb(214, 12, 140)(0)"	[label=Box];
-	"[<_ast.Name object at 0x12fc4f340>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x12fc4f340>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ffa60>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd4c04ffa60>](0)"	[label=assignedFrom];
 	"layout(0)$3" -> "go(0)"	[label=Layout];
 	"layout(0)$3" -> "dict(0)"	[label=Layout];
 	"layout(0)$3" -> "500(0)"	[label=Layout];
@@ -374,10 +332,10 @@ digraph "" {
 	"py(0)$3" -> "py(0)$2"	[label=iplot];
 	"py(0)$3" -> "fig(0)$3"	[label=iplot];
 	"cost_dist(0)$3" -> "df(0)$2"	[label=dropna];
-	"cost_dist(0)$3" -> "[<_ast.Constant object at 0x12f88c160>, <_ast.Constant object at 0x12f88c1f0>, <_ast.Constant object at 0x12f88c6d0>, <_ast.Constant \
-object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)"	[label=dropna];
-	"[<_ast.Constant object at 0x12f88c160>, <_ast.Constant object at 0x12f88c1f0>, <_ast.Constant object at 0x12f88c6d0>, <_ast.Constant \
-object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"cost_dist(0)$3" -> "[<_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff460>, <_\
+ast.Constant object at 0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ff220>](0)"	[label=dropna];
+	"[<_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff460>, <_\
+ast.Constant object at 0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ff220>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"cost_dist(0)$4" -> "0(0)"	[label=apply];
 	"cost_dist(0)$4" -> "x(0)$1"	[label=apply];
 	"cost_dist(0)$4" -> "rate(0)"	[label=apply];
@@ -393,11 +351,7 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"cost_dist(0)$5" -> "(0)"	[label=apply];
 	"cost_dist(0)$5" -> "cost_dist(0)$4"	[label=apply];
 	"location(1)" -> "return_budget[0]"	[label=_argToVar];
-	"return_budget[0]" -> "BTM(0)"	[label=return_budget];
-	"BTM(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rest(1)" -> "return_budget[1]"	[label=_argToVar];
-	"return_budget[1]" -> "Quick Bites(0)"	[label=return_budget];
-	"Quick Bites(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"budget(1)$0" -> "location(1)"	[label=assignedFrom];
 	"budget(1)$0" -> "rest(1)"	[label=assignedFrom];
 	"budget(1)$0" -> "cost_dist(1)"	[label=assignedFrom];
@@ -406,6 +360,10 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"budget(1)$0" -> "rate(1)"	[label=assignedFrom];
 	"budget(1)$0" -> "4(1)"	[label=assignedFrom];
 	"budget(1)$0" -> "rest_type(1)"	[label=assignedFrom];
+	"BTM(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"return_budget[126/0]" -> "BTM(0)"	[label=return_budget];
+	"return_budget[126/0]" -> "Quick Bites(0)"	[label=return_budget];
+	"Quick Bites(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"plt(0)$12" -> "plt(0)$11"	[label=figure];
 	"Rest_locations(0)$0" -> "df(0)$2"	[label=assignedFrom];
 	"Rest_locations(0)$0" -> "20(0)"	[label=assignedFrom];
@@ -423,18 +381,18 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"sns(0)$5" -> "Rest_locations(0)$0"	[label=barplot];
 	"df_1(0)$0" -> "df(0)$2"	[label=agg];
 	"df_1(0)$0" -> "count(0)"	[label=agg];
-	"df_1(0)$0" -> "[<_ast.Constant object at 0x12f89b0d0>, <_ast.Constant object at 0x12f89b100>](0)"	[label=agg];
-	"[<_ast.Constant object at 0x12f89b0d0>, <_ast.Constant object at 0x12f89b100>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"df_1(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d8e50>, <_ast.Constant object at 0x7fd4c04d8eb0>](0)"	[label=agg];
+	"[<_ast.Constant object at 0x7fd4c04d8e50>, <_ast.Constant object at 0x7fd4c04d8eb0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"data(0)$2" -> "False(0)"	[label=rename];
 	"data(0)$2" -> "x(0)$1"	[label=rename];
 	"data(0)$2" -> "3(0)"	[label=rename];
 	"data(0)$2" -> "count(0)"	[label=rename];
 	"data(0)$2" -> "df_1(0)$0"	[label=rename];
-	"data(0)$2" -> "[<_ast.Constant object at 0x12f89b430>](0)"	[label=rename];
-	"data(0)$2" -> "[<_ast.Constant object at 0x12f89b520>](0)"	[label=rename];
+	"data(0)$2" -> "[<_ast.Constant object at 0x7fd4c04a8160>](0)"	[label=rename];
+	"data(0)$2" -> "[<_ast.Constant object at 0x7fd4c04a8250>](0)"	[label=rename];
 	"data(0)$2" -> "url(0)"	[label=rename];
-	"[<_ast.Constant object at 0x12f89b430>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b520>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8160>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8250>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"url(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"data(0)$3" -> "data(0)$2"	[label=head];
 	"data(0)$3" -> "10(0)"	[label=head];
@@ -472,9 +430,9 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"Rest_locations(0)$1" -> "pd(0)"	[label=DataFrame];
 	"Rest_locations(0)$1" -> "df(0)$2"	[label=DataFrame];
 	"Rest_locations(0)$1" -> "location(0)$0"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f896730>, <_ast.Constant object at 0x12f896760>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f1460>, <_ast.Constant object at 0x7fd4c04f1490>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"Rest_locations(0)$2" -> "Rest_locations(0)$1"	[label=assignedFrom];
-	"Rest_locations(0)$2" -> "[<_ast.Constant object at 0x12f896730>, <_ast.Constant object at 0x12f896760>](0)"	[label=assignedFrom];
+	"Rest_locations(0)$2" -> "[<_ast.Constant object at 0x7fd4c04f1460>, <_ast.Constant object at 0x7fd4c04f1490>](0)"	[label=assignedFrom];
 	"Rest_locations(0)$3" -> "Name(0)"	[label=dropna];
 	"Rest_locations(0)$3" -> "locations(0)$5"	[label=dropna];
 	"Rest_locations(0)$3" -> "Rest_locations(0)$2"	[label=dropna];
@@ -519,10 +477,13 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"data(3)$0" -> "name(3)"	[label=DataFrame];
 	"data(3)$0" -> "pd(3)"	[label=DataFrame];
 	"data(3)$0" -> "df(3)"	[label=DataFrame];
-	"data(3)$0" -> "[<_ast.Constant object at 0x12f895970>](3)"	[label=DataFrame];
+	"data(3)$0" -> "[<_ast.Constant object at 0x7fd4c04c7700>](3)"	[label=DataFrame];
 	"data(3)$0" -> "False(3)"	[label=DataFrame];
 	"data(3)$0" -> "url(3)"	[label=DataFrame];
 	"data(3)$0" -> "count(3)"	[label=DataFrame];
+	"data(3)$1" -> "data(3)$0"	[label=assignedFrom];
+	"data(3)$1" -> "[<_ast.Constant object at 0x7fd4c04c7970>, <_ast.Constant object at 0x7fd4c04c79a0>](3)"	[label=assignedFrom];
+	"print[174/4]" -> "data(3)$1"	[label=print];
 	"data(3)$2" -> "data(3)$1"	[label=dropna];
 	"data(3)$2" -> "locations(3)"	[label=dropna];
 	"data(3)$2" -> "Name(3)"	[label=dropna];
@@ -545,7 +506,7 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"data_chain(4)$0" -> "df(4)"	[label=DataFrame];
 	"data_chain(4)$0" -> "location(4)"	[label=DataFrame];
 	"data_chain(4)$1" -> "data_chain(4)$0"	[label=assignedFrom];
-	"data_chain(4)$1" -> "[<_ast.Constant object at 0x12f894a90>, <_ast.Constant object at 0x12f894ac0>](4)"	[label=assignedFrom];
+	"data_chain(4)$1" -> "[<_ast.Constant object at 0x7fd4c04ea7c0>, <_ast.Constant object at 0x7fd4c04ea7f0>](4)"	[label=assignedFrom];
 	"data_chain(4)$2" -> "data_chain(4)$1"	[label=dropna];
 	"data_chain(4)$2" -> "locations(4)"	[label=dropna];
 	"data_chain(4)$2" -> "Name(4)"	[label=dropna];
@@ -554,18 +515,18 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"data_chain(4)$3" -> "geo_loc(4)"	[label=zip];
 	"df_1(0)$1" -> "df(0)$2"	[label=agg];
 	"df_1(0)$1" -> "count(0)"	[label=agg];
-	"df_1(0)$1" -> "[<_ast.Constant object at 0x12f89d550>, <_ast.Constant object at 0x12f89d580>](0)"	[label=agg];
-	"[<_ast.Constant object at 0x12f89d550>, <_ast.Constant object at 0x12f89d580>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"df_1(0)$1" -> "[<_ast.Constant object at 0x7fd4c04db220>, <_ast.Constant object at 0x7fd4c04db250>](0)"	[label=agg];
+	"[<_ast.Constant object at 0x7fd4c04db220>, <_ast.Constant object at 0x7fd4c04db250>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"datas(0)$0" -> "False(0)"	[label=rename];
 	"datas(0)$0" -> "x(0)$1"	[label=rename];
 	"datas(0)$0" -> "3(0)"	[label=rename];
 	"datas(0)$0" -> "count(0)"	[label=rename];
 	"datas(0)$0" -> "url(0)"	[label=rename];
 	"datas(0)$0" -> "df_1(0)$1"	[label=rename];
-	"datas(0)$0" -> "[<_ast.Constant object at 0x12f89d880>](0)"	[label=rename];
-	"datas(0)$0" -> "[<_ast.Constant object at 0x12f89d970>](0)"	[label=rename];
-	"[<_ast.Constant object at 0x12f89d880>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d970>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"datas(0)$0" -> "[<_ast.Constant object at 0x7fd4c04db580>](0)"	[label=rename];
+	"datas(0)$0" -> "[<_ast.Constant object at 0x7fd4c04db670>](0)"	[label=rename];
+	"[<_ast.Constant object at 0x7fd4c04db580>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04db670>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"pk.eyJ1Ijoic2hhaHVsZXMiLCJhIjoiY2p4ZTE5NGloMDc2YjNyczBhcDBnZnA5aCJ9.psBECQ2nub0o25PgHcU88w(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"mapbox_access_token(0)$0" -> "pk.eyJ1Ijoic2hhaHVsZXMiLCJhIjoiY2p4ZTE5NGloMDc2YjNyczBhcDBnZnA5aCJ9.psBECQ2nub0o25PgHcU88w(0)"	[label=assignedFrom];
 	"casual(0)$0" -> "rest_type(0)"	[label=assignedFrom];
@@ -674,17 +635,12 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"py(0)$6" -> "fig(0)$6"	[label=iplot];
 	"dish_liked(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"type(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faf2fd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082bcd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rest(0)$1" -> "df(0)$3"	[label=assignedFrom];
 	"rest(0)$1" -> "rest_type(0)"	[label=assignedFrom];
 	"rest(0)$1" -> "9(0)"	[label=assignedFrom];
 	"9(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rest(6)" -> "produce_wordcloud[0]"	[label=_argToVar];
-	"produce_wordcloud[0]" -> "rest(0)$1"	[label=produce_wordcloud];
-	"produce_wordcloud[0]" -> "rest(0)$2"	[label=produce_wordcloud];
-	"rest(0)$2" -> "name(0)"	[label=assignedFrom];
-	"rest(0)$2" -> "df(0)$3"	[label=assignedFrom];
-	"rest(0)$2" -> "9(0)"	[label=assignedFrom];
 	"plt(6)$0" -> "plt(6)"	[label=figure];
 	"i(6)" -> "rest(6)"	[label=iteratorOf];
 	"i(6)" -> "enumerate(6)"	[label=iteratorOf];
@@ -714,6 +670,7 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"plt(6)$3" -> "plt(6)$2"	[label=title];
 	"plt(6)$4" -> "plt(6)$3"	[label=axis];
 	"plt(6)$4" -> "off(6)"	[label=axis];
+	"produce_wordcloud[321/0]" -> "rest(0)$1"	[label=produce_wordcloud];
 	"all_ratings(0)$0" -> "[](0)"	[label=assignedFrom];
 	"ratings(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"ratings(0)" -> "tqdm(0)"	[label=iteratorOf];
@@ -734,12 +691,12 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"RATED(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"score(0)$1" -> "score(0)$0"	[label=float];
 	"all_ratings(0)$1" -> "all_ratings(0)$0"	[label=append];
-	"all_ratings(0)$1" -> "[<_ast.Name object at 0x12fb0d2e0>, <_ast.Name object at 0x12fb0d310>, <_ast.Name object at 0x12fb0d340>](0)"	[label=append];
-	"[<_ast.Name object at 0x12fb0d2e0>, <_ast.Name object at 0x12fb0d310>, <_ast.Name object at 0x12fb0d340>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"all_ratings(0)$1" -> "[<_ast.Name object at 0x7fd500831e50>, <_ast.Name object at 0x7fd500831df0>, <_ast.Name object at 0x7fd500837040>](0)"	[label=append];
+	"[<_ast.Name object at 0x7fd500831e50>, <_ast.Name object at 0x7fd500831df0>, <_ast.Name object at 0x7fd500837040>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rating_df(0)$0" -> "pd(0)"	[label=DataFrame];
 	"rating_df(0)$0" -> "all_ratings(0)$1"	[label=DataFrame];
-	"rating_df(0)$0" -> "[<_ast.Constant object at 0x12fb0d550>, <_ast.Constant object at 0x12fb0d580>, <_ast.Constant object at 0x12fb0d5b0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fb0d550>, <_ast.Constant object at 0x12fb0d580>, <_ast.Constant object at 0x12fb0d5b0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"rating_df(0)$0" -> "[<_ast.Constant object at 0x7fd500837250>, <_ast.Constant object at 0x7fd500837280>, <_ast.Constant object at 0x7fd5008372b0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd500837250>, <_ast.Constant object at 0x7fd500837280>, <_ast.Constant object at 0x7fd5008372b0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rating_df(0)$1" -> "re(0)"	[label=apply];
 	"rating_df(0)$1" -> "x(0)$1"	[label=apply];
 	"rating_df(0)$1" -> "review(0)"	[label=apply];
@@ -759,6 +716,9 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"rating_df(0)$2" -> "Ratings.csv(0)"	[label=to_csv];
 	"Ratings.csv(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"rating_df(0)$3" -> "rating_df(0)$2"	[label=head];
+	"rest(0)$2" -> "name(0)"	[label=assignedFrom];
+	"rest(0)$2" -> "df(0)$3"	[label=assignedFrom];
+	"rest(0)$2" -> "9(0)"	[label=assignedFrom];
 	"rest(7)" -> "produce_wordcloud[0]"	[label=_argToVar];
 	"plt(7)$0" -> "plt(7)"	[label=figure];
 	"i(7)" -> "rest(7)"	[label=iteratorOf];
@@ -788,6 +748,7 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"plt(7)$3" -> "plt(7)$2"	[label=title];
 	"plt(7)$4" -> "plt(7)$3"	[label=axis];
 	"plt(7)$4" -> "off(7)"	[label=axis];
+	"produce_wordcloud[353/0]" -> "rest(0)$2"	[label=produce_wordcloud];
 	"plt(0)$16" -> "plt(0)$15"	[label=figure];
 	"rating(0)$1" -> "rating_df(0)$3"	[label=value_counts];
 	"rating(0)$1" -> "rating(0)$1"	[label=value_counts];
@@ -870,16 +831,16 @@ object at 0x12f88c520>, <_ast.Constant object at 0x12f88cf40>](0)" -> "zomato-co
 	"weight(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"weight(0)" -> "topic(0)"	[label=iteratorOf];
 	"out(0)$1" -> "out(0)$0"	[label=append];
-	"out(0)$1" -> "[<_ast.Name object at 0x12fb10b20>, <_ast.Name object at 0x12fb10b50>, <_ast.Name object at 0x12fb10b80>, <_ast.Subscript object \
-at 0x12fb10bb0>](0)"	[label=append];
-	"[<_ast.Name object at 0x12fb10b20>, <_ast.Name object at 0x12fb10b50>, <_ast.Name object at 0x12fb10b80>, <_ast.Subscript object \
-at 0x12fb10bb0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"out(0)$1" -> "[<_ast.Name object at 0x7fd5008288b0>, <_ast.Name object at 0x7fd5008288e0>, <_ast.Name object at 0x7fd500828940>, <_ast.Subscript \
+object at 0x7fd500828910>](0)"	[label=append];
+	"[<_ast.Name object at 0x7fd5008288b0>, <_ast.Name object at 0x7fd5008288e0>, <_ast.Name object at 0x7fd500828940>, <_ast.Subscript \
+object at 0x7fd500828910>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"dataframe(0)$0" -> "pd(0)"	[label=DataFrame];
 	"dataframe(0)$0" -> "out(0)$1"	[label=DataFrame];
-	"dataframe(0)$0" -> "[<_ast.Constant object at 0x12fb10e80>, <_ast.Constant object at 0x12fb10eb0>, <_ast.Constant object at 0x12fb10ee0>, <_ast.Constant \
-object at 0x12fb10f10>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fb10e80>, <_ast.Constant object at 0x12fb10eb0>, <_ast.Constant object at 0x12fb10ee0>, <_ast.Constant \
-object at 0x12fb10f10>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"dataframe(0)$0" -> "[<_ast.Constant object at 0x7fd500828c40>, <_ast.Constant object at 0x7fd500828c70>, <_ast.Constant object at 0x7fd5008282b0>, <_\
+ast.Constant object at 0x7fd500828cd0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd500828c40>, <_ast.Constant object at 0x7fd500828c70>, <_ast.Constant object at 0x7fd5008282b0>, <_\
+ast.Constant object at 0x7fd500828cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"fig(0)$7" -> "2(0)"	[label=subplots];
 	"fig(0)$7" -> "True(0)"	[label=subplots];
 	"fig(0)$7" -> "plt(0)$18"	[label=subplots];
@@ -952,16 +913,16 @@ object at 0x12fb10f10>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"counter(0)$1" -> "corpus(0)$1"	[label=Counter];
 	"out(0)$2" -> "[](0)"	[label=assignedFrom];
 	"out(0)$3" -> "out(0)$2"	[label=append];
-	"out(0)$3" -> "[<_ast.Name object at 0x12f9447f0>, <_ast.Name object at 0x12f944820>, <_ast.Name object at 0x12f944850>, <_ast.Subscript object \
-at 0x12f944880>](0)"	[label=append];
-	"[<_ast.Name object at 0x12f9447f0>, <_ast.Name object at 0x12f944820>, <_ast.Name object at 0x12f944850>, <_ast.Subscript object \
-at 0x12f944880>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"out(0)$3" -> "[<_ast.Name object at 0x7fd50085f4f0>, <_ast.Name object at 0x7fd50085f520>, <_ast.Name object at 0x7fd50085f550>, <_ast.Subscript \
+object at 0x7fd50085f580>](0)"	[label=append];
+	"[<_ast.Name object at 0x7fd50085f4f0>, <_ast.Name object at 0x7fd50085f520>, <_ast.Name object at 0x7fd50085f550>, <_ast.Subscript \
+object at 0x7fd50085f580>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"dataframe(0)$1" -> "pd(0)"	[label=DataFrame];
 	"dataframe(0)$1" -> "out(0)$3"	[label=DataFrame];
-	"dataframe(0)$1" -> "[<_ast.Constant object at 0x12f944c40>, <_ast.Constant object at 0x12f944c70>, <_ast.Constant object at 0x12f944ca0>, <_ast.Constant \
-object at 0x12f944cd0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f944c40>, <_ast.Constant object at 0x12f944c70>, <_ast.Constant object at 0x12f944ca0>, <_ast.Constant \
-object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"dataframe(0)$1" -> "[<_ast.Constant object at 0x7fd50085f850>, <_ast.Constant object at 0x7fd50085f880>, <_ast.Constant object at 0x7fd50085f8b0>, <_\
+ast.Constant object at 0x7fd50085f8e0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd50085f850>, <_ast.Constant object at 0x7fd50085f880>, <_ast.Constant object at 0x7fd50085f8b0>, <_\
+ast.Constant object at 0x7fd50085f8e0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"fig(0)$10" -> "2(0)"	[label=subplots];
 	"fig(0)$10" -> "True(0)"	[label=subplots];
 	"fig(0)$10" -> "8(0)"	[label=subplots];
@@ -1011,21 +972,6 @@ object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"200(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"4(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"model(8)" -> "tsne_plot[0]"	[label=_argToVar];
-	"tsne_plot[0]" -> "model(0)$0"	[label=tsne_plot];
-	"tsne_plot[0]" -> "model(0)$1"	[label=tsne_plot];
-	"tsne_plot[0]" -> "model(0)$2"	[label=tsne_plot];
-	"model(0)$1" -> "word2vec(0)"	[label=Word2Vec];
-	"model(0)$1" -> "20(0)"	[label=Word2Vec];
-	"model(0)$1" -> "10(0)"	[label=Word2Vec];
-	"model(0)$1" -> "100(0)"	[label=Word2Vec];
-	"model(0)$1" -> "4(0)"	[label=Word2Vec];
-	"model(0)$1" -> "corpus(0)$4"	[label=Word2Vec];
-	"model(0)$2" -> "word2vec(0)"	[label=Word2Vec];
-	"model(0)$2" -> "20(0)"	[label=Word2Vec];
-	"model(0)$2" -> "10(0)"	[label=Word2Vec];
-	"model(0)$2" -> "100(0)"	[label=Word2Vec];
-	"model(0)$2" -> "4(0)"	[label=Word2Vec];
-	"model(0)$2" -> "corpus(0)$5"	[label=Word2Vec];
 	"labels(8)$0" -> "[](8)"	[label=assignedFrom];
 	"tokens(8)$0" -> "[](8)"	[label=assignedFrom];
 	"word(8)" -> "model(8)"	[label=iteratorOf];
@@ -1062,6 +1008,7 @@ object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"plt(8)$2" -> "i(8)"	[label=annotate];
 	"plt(8)$2" -> "plt(8)$1"	[label=annotate];
 	"plt(8)$3" -> "plt(8)$2"	[label=show];
+	"tsne_plot[482/0]" -> "model(0)$0"	[label=tsne_plot];
 	"postive(0)$0" -> "review(0)"	[label=assignedFrom];
 	"postive(0)$0" -> "3(0)"	[label=assignedFrom];
 	"postive(0)$0" -> "rating_df(0)$4"	[label=assignedFrom];
@@ -1087,7 +1034,21 @@ object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"corpus(9)$1" -> "corpus(9)$0"	[label=append];
 	"corpus(9)$1" -> "adj(9)$1"	[label=append];
 	"corpus(0)$4" -> "postive(0)$0"	[label=return_corpus];
+	"model(0)$1" -> "word2vec(0)"	[label=Word2Vec];
+	"model(0)$1" -> "20(0)"	[label=Word2Vec];
+	"model(0)$1" -> "10(0)"	[label=Word2Vec];
+	"model(0)$1" -> "100(0)"	[label=Word2Vec];
+	"model(0)$1" -> "4(0)"	[label=Word2Vec];
+	"model(0)$1" -> "corpus(0)$4"	[label=Word2Vec];
+	"tsne_plot[498/0]" -> "model(0)$1"	[label=tsne_plot];
 	"corpus(0)$5" -> "negative(0)$0"	[label=return_corpus];
+	"model(0)$2" -> "word2vec(0)"	[label=Word2Vec];
+	"model(0)$2" -> "20(0)"	[label=Word2Vec];
+	"model(0)$2" -> "10(0)"	[label=Word2Vec];
+	"model(0)$2" -> "100(0)"	[label=Word2Vec];
+	"model(0)$2" -> "4(0)"	[label=Word2Vec];
+	"model(0)$2" -> "corpus(0)$5"	[label=Word2Vec];
+	"tsne_plot[501/0]" -> "model(0)$2"	[label=tsne_plot];
 	"rating_df(0)$5" -> "0(0)"	[label=apply];
 	"rating_df(0)$5" -> "1(0)"	[label=apply];
 	"rating_df(0)$5" -> "int(0)"	[label=apply];
@@ -1124,12 +1085,34 @@ object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"model(0)$5" -> "model(0)$4"	[label=add];
 	"model(0)$5" -> "softmax(0)"	[label=add];
 	"softmax(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"model(0)$6" -> "model(0)$5"	[label=compile];
+	"print[519/0]" -> "model(0)$6"	[label=print];
 	"Y(0)$0" -> "pd(0)"	[label=assignedFrom];
 	"Y(0)$0" -> "int(0)"	[label=assignedFrom];
 	"Y(0)$0" -> "sent(0)"	[label=assignedFrom];
 	"Y(0)$0" -> "rating_df(0)$5"	[label=assignedFrom];
+	"X_train(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"X_train(0)$0" -> "Y(0)$0"	[label=train_test_split];
+	"X_train(0)$0" -> "0.33(0)"	[label=train_test_split];
+	"X_train(0)$0" -> "42(0)"	[label=train_test_split];
 	"0.33(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"42(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"X_test(0)$0" -> "Y(0)$0"	[label=train_test_split];
+	"X_test(0)$0" -> "0.33(0)"	[label=train_test_split];
+	"X_test(0)$0" -> "42(0)"	[label=train_test_split];
+	"Y_train(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"Y_train(0)$0" -> "Y(0)$0"	[label=train_test_split];
+	"Y_train(0)$0" -> "0.33(0)"	[label=train_test_split];
+	"Y_train(0)$0" -> "42(0)"	[label=train_test_split];
+	"Y_test(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"Y_test(0)$0" -> "Y(0)$0"	[label=train_test_split];
+	"Y_test(0)$0" -> "0.33(0)"	[label=train_test_split];
+	"Y_test(0)$0" -> "42(0)"	[label=train_test_split];
+	"print[522/0]" -> "X_train(0)$0"	[label=print];
+	"print[522/0]" -> "Y_train(0)$0"	[label=print];
+	"print[523/0]" -> "X_test(0)$0"	[label=print];
+	"print[523/0]" -> "Y_test(0)$0"	[label=print];
 	"3200(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
 	"batch_size(0)$0" -> "3200(0)"	[label=assignedFrom];
 	"model(0)$7" -> "model(0)$6"	[label=fit];
@@ -1145,4 +1128,20 @@ object at 0x12f944cd0>](0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label
 	"X_test(0)$1" -> "validation_size(0)$0"	[label=assignedFrom];
 	"Y_test(0)$1" -> "Y_test(0)$0"	[label=assignedFrom];
 	"Y_test(0)$1" -> "validation_size(0)$0"	[label=assignedFrom];
+	"score(0)$2" -> "2(0)"	[label=evaluate];
+	"score(0)$2" -> "batch_size(0)$0"	[label=evaluate];
+	"score(0)$2" -> "model(0)$7"	[label=evaluate];
+	"score(0)$2" -> "X_test(0)$1"	[label=evaluate];
+	"score(0)$2" -> "Y_test(0)$1"	[label=evaluate];
+	"acc(0)$0" -> "2(0)"	[label=evaluate];
+	"acc(0)$0" -> "batch_size(0)$0"	[label=evaluate];
+	"acc(0)$0" -> "model(0)$7"	[label=evaluate];
+	"acc(0)$0" -> "X_test(0)$1"	[label=evaluate];
+	"acc(0)$0" -> "Y_test(0)$1"	[label=evaluate];
+	"score: \%.2f(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"print[536/0]" -> "score(0)$2"	[label=print];
+	"print[536/0]" -> "score: \%.2f(0)"	[label=print];
+	"acc: \%.2f(0)" -> "zomato-complete-eda-and-lstm-model.ipynb"	[label=appearsIn];
+	"print[537/0]" -> "acc(0)$0"	[label=print];
+	"print[537/0]" -> "acc: \%.2f(0)"	[label=print];
 }

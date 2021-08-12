@@ -209,17 +209,8 @@ digraph "" {
 	"int32(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"Loading Train and Test Data.
 (0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"print[0]" -> "Loading Train and Test Data.
+	"print[103/0]" -> "Loading Train and Test Data.
 (0)"	[label=print];
-	"print[0]" -> "Number:(0)"	[label=print];
-	"print[0]" -> "Fold(0)"	[label=print];
-	"print[0]" -> "Training Done! Inference...(0)"	[label=print];
-	"print[0]" -> "submission(0)$1"	[label=print];
-	"Number:(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"Fold(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"Training Done! Inference...(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"submission(0)$1" -> "preds(0)$1"	[label=assignedFrom];
-	"submission(0)$1" -> "submission(0)$0"	[label=assignedFrom];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "dtypes(0)$0"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
@@ -236,9 +227,9 @@ digraph "" {
 	"../input/test.csv(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"test(0)$1" -> "uint32(0)"	[label=astype];
 	"test(0)$1" -> "test(0)$0"	[label=astype];
-	"[<_ast.Constant object at 0x12f951190>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832d60>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"test(0)$2" -> "test(0)$1"	[label=Mult];
-	"test(0)$2" -> "[<_ast.Constant object at 0x12f951190>](0)"	[label=Mult];
+	"test(0)$2" -> "[<_ast.Constant object at 0x7fd500832d60>](0)"	[label=Mult];
 	"test(0)$2" -> "test(0)$2"	[label=Mult];
 	"test(0)$2" -> "len(0)"	[label=Mult];
 	"len(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
@@ -255,8 +246,8 @@ digraph "" {
 	"bins(1)$1" -> "int(1)"	[label=append];
 	"bins(1)$1" -> "len(1)"	[label=append];
 	"bins(1)$1" -> "1(1)"	[label=append];
-	"[<_ast.Constant object at 0x12f9518e0>, <_ast.Constant object at 0x12f951550>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"float_features(0)$0" -> "[<_ast.Constant object at 0x12f9518e0>, <_ast.Constant object at 0x12f951550>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50080d910>, <_ast.Constant object at 0x7fd50080d970>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"float_features(0)$0" -> "[<_ast.Constant object at 0x7fd50080d910>, <_ast.Constant object at 0x7fd50080d970>](0)"	[label=assignedFrom];
 	"f(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"f(0)" -> "float_features(0)$0"	[label=iteratorOf];
 	"train(0)$2" -> "train(0)$1"	[label=fillna];
@@ -294,7 +285,7 @@ digraph "" {
 	"hparam(0)$0" -> "1(0)"	[label=HParams];
 	"hparam(0)$0" -> "nffm(0)"	[label=HParams];
 	"hparam(0)$0" -> "0.9(0)"	[label=HParams];
-	"hparam(0)$0" -> "[<_ast.Constant object at 0x12faf53a0>, <_ast.Constant object at 0x12faf53d0>](0)"	[label=HParams];
+	"hparam(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d87f0>, <_ast.Constant object at 0x7fd4c04d8130>](0)"	[label=HParams];
 	"hparam(0)$0" -> "8(0)"	[label=HParams];
 	"hparam(0)$0" -> "int(0)"	[label=HParams];
 	"hparam(0)$0" -> "200000.0(0)"	[label=HParams];
@@ -308,7 +299,7 @@ digraph "" {
 	"hparam(0)$0" -> "5(0)"	[label=HParams];
 	"nffm(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"0.9(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faf53a0>, <_ast.Constant object at 0x12faf53d0>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04d87f0>, <_ast.Constant object at 0x7fd4c04d8130>](0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"8(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"int(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
 	"200000.0(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
@@ -345,12 +336,15 @@ digraph "" {
 	"index(0)$1" -> "tmp(0)$1"	[label=Sub];
 	"index(0)$1" -> "set(0)"	[label=Sub];
 	"set(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
-	"print[1]" -> "HasDetections(0)"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"print[2]" -> "tmp(0)$1"	[label=print];
+	"Number:(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"print[152/4]" -> "len(0)"	[label=print];
+	"print[152/4]" -> "tmp(0)$1"	[label=print];
+	"print[152/4]" -> "Number:(0)"	[label=print];
 	"K_fold(0)$1" -> "K_fold(0)$0"	[label=append];
 	"K_fold(0)$1" -> "tmp(0)$1"	[label=append];
+	"Fold(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"print[157/4]" -> "i(0)"	[label=print];
+	"print[157/4]" -> "Fold(0)"	[label=print];
 	"dev_index(0)$0" -> "i(0)"	[label=assignedFrom];
 	"dev_index(0)$0" -> "K_fold(0)$1"	[label=assignedFrom];
 	"dev_index(0)$1" -> "random(0)$0"	[label=sample];
@@ -368,6 +362,8 @@ digraph "" {
 	"model(0)$0" -> "ctrNet(0)"	[label=build_model];
 	"model(0)$0" -> "hparam(0)$0"	[label=build_model];
 	"model(0)$1" -> "model(0)$0"	[label=train];
+	"Training Done! Inference...(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"print[167/4]" -> "Training Done! Inference...(0)"	[label=print];
 	"preds(0)$0" -> "HasDetections(0)"	[label=Div];
 	"preds(0)$0" -> "test(0)$4"	[label=Div];
 	"preds(0)$0" -> "features(0)$0"	[label=Div];
@@ -382,6 +378,10 @@ digraph "" {
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];
+	"submission(0)$1" -> "preds(0)$1"	[label=assignedFrom];
+	"submission(0)$1" -> "submission(0)$0"	[label=assignedFrom];
+	"print[174/0]" -> "HasDetections(0)"	[label=print];
+	"print[174/0]" -> "submission(0)$1"	[label=print];
 	"submission(0)$2" -> "submission(0)$1"	[label=to_csv];
 	"submission(0)$2" -> "nffm_submission.csv(0)"	[label=to_csv];
 	"nffm_submission.csv(0)" -> "nffm-baseline-0-690-on-lb.ipynb"	[label=appearsIn];

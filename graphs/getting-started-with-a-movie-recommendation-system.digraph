@@ -11,11 +11,11 @@ strict digraph "" {
 	"df2(0)$0" -> "pd(0)"	[label=read_csv];
 	"df2(0)$0" -> "../input/tmdb-movie-metadata/tmdb_5000_movies.csv(0)"	[label=read_csv];
 	"../input/tmdb-movie-metadata/tmdb_5000_movies.csv(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f989dc0>, <_ast.Constant object at 0x12f9899d0>, <_ast.Constant object at 0x12f989970>, <_ast.Constant \
-object at 0x12f9899a0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048ed30>, <_\
+ast.Constant object at 0x7fd4c048ebe0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"df1(0)$1" -> "df1(0)$0"	[label=assignedFrom];
-	"df1(0)$1" -> "[<_ast.Constant object at 0x12f989dc0>, <_ast.Constant object at 0x12f9899d0>, <_ast.Constant object at 0x12f989970>, <_ast.Constant \
-object at 0x12f9899a0>](0)"	[label=assignedFrom];
+	"df1(0)$1" -> "[<_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048ed30>, <_\
+ast.Constant object at 0x7fd4c048ebe0>](0)"	[label=assignedFrom];
 	"df2(0)$1" -> "df2(0)$0"	[label=merge];
 	"df2(0)$1" -> "df1(0)$1"	[label=merge];
 	"df2(0)$1" -> "id(0)"	[label=merge];
@@ -101,15 +101,7 @@ object at 0x12f9899a0>](0)"	[label=assignedFrom];
 	"indices(0)$0" -> "title(0)"	[label=drop_duplicates];
 	"indices(0)$0" -> "df2(0)$4"	[label=drop_duplicates];
 	"title(2)" -> "get_recommendations[0]"	[label=_argToVar];
-	"get_recommendations[0]" -> "The Dark Knight Rises(0)"	[label=get_recommendations];
-	"get_recommendations[0]" -> "The Avengers(0)"	[label=get_recommendations];
-	"get_recommendations[0]" -> "The Godfather(0)"	[label=get_recommendations];
-	"The Dark Knight Rises(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"The Avengers(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"The Godfather(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"cosine_sim(2)" -> "get_recommendations[1]"	[label=_argToVar];
-	"get_recommendations[1]" -> "cosine_sim2(0)$0"	[label=get_recommendations];
-	"cosine_sim2(0)$0" -> "count_matrix(0)$0"	[label=cosine_similarity];
 	"idx(2)$0" -> "title(2)"	[label=assignedFrom];
 	"idx(2)$0" -> "indices(2)"	[label=assignedFrom];
 	"sim_scores(2)$0" -> "cosine_sim(2)"	[label=list];
@@ -125,21 +117,25 @@ object at 0x12f9899a0>](0)"	[label=assignedFrom];
 	"movie_indices(2)$0" -> "sim_scores(2)$2"	[label=assignedFrom];
 	"movie_indices(2)$0" -> "i(2)"	[label=assignedFrom];
 	"movie_indices(2)$0" -> "0(2)"	[label=assignedFrom];
+	"The Dark Knight Rises(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"get_recommendations[79/0]" -> "The Dark Knight Rises(0)"	[label=get_recommendations];
+	"The Avengers(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"get_recommendations[80/0]" -> "The Avengers(0)"	[label=get_recommendations];
 	ast -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=importedBy];
 	literal_eval -> ast	[label=importedBy];
 	"literal_eval(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"literal_eval(0)" -> literal_eval	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x130532dc0>, <_ast.Constant \
-object at 0x130532bb0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"features(0)$0" -> "[<_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x130532dc0>, <_ast.Constant \
-object at 0x130532bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abd00>, <_\
+ast.Constant object at 0x7fd4902ab100>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"features(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abd00>, <_\
+ast.Constant object at 0x7fd4902ab100>](0)"	[label=assignedFrom];
 	"feature(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"feature(0)" -> "features(0)$0"	[label=iteratorOf];
 	"feature(0)" -> "features(0)$1"	[label=iteratorOf];
 	"feature(0)" -> "features(0)$2"	[label=iteratorOf];
-	"features(0)$1" -> "[<_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f3d0>](0)"	[label=assignedFrom];
-	"features(0)$2" -> "[<_ast.Constant object at 0x12f8c9d60>, <_ast.Constant object at 0x12f8c9d30>, <_ast.Constant object at 0x12f8c9f10>, <_ast.Constant \
-object at 0x12f8c9c40>](0)"	[label=assignedFrom];
+	"features(0)$1" -> "[<_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at 0x7fd500999fd0>](0)"	[label=assignedFrom];
+	"features(0)$2" -> "[<_ast.Constant object at 0x7fd49012f760>, <_ast.Constant object at 0x7fd49012fb80>, <_ast.Constant object at 0x7fd49012fac0>, <_\
+ast.Constant object at 0x7fd49012fcd0>](0)"	[label=assignedFrom];
 	"df2(0)$5" -> "df2(0)$4"	[label=apply];
 	"df2(0)$5" -> "literal_eval(0)"	[label=apply];
 	"df2(0)$5" -> "feature(0)"	[label=apply];
@@ -156,7 +152,7 @@ object at 0x12f8c9c40>](0)"	[label=assignedFrom];
 	"df2(0)$6" -> "get_director(0)"	[label=apply];
 	"crew(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"get_director(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f3d0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at 0x7fd500999fd0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"df2(0)$7" -> "feature(0)"	[label=apply];
 	"df2(0)$7" -> "df2(0)$6"	[label=apply];
 	"df2(0)$7" -> "get_list(0)"	[label=apply];
@@ -165,8 +161,8 @@ object at 0x12f8c9c40>](0)"	[label=assignedFrom];
 	"df2(0)$8" -> "3(0)"	[label=head];
 	"3(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"x(5)" -> "clean_data[0]"	[label=_argToVar];
-	"[<_ast.Constant object at 0x12f8c9d60>, <_ast.Constant object at 0x12f8c9d30>, <_ast.Constant object at 0x12f8c9f10>, <_ast.Constant \
-object at 0x12f8c9c40>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49012f760>, <_ast.Constant object at 0x7fd49012fb80>, <_ast.Constant object at 0x7fd49012fac0>, <_\
+ast.Constant object at 0x7fd49012fcd0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"df2(0)$9" -> "feature(0)"	[label=apply];
 	"df2(0)$9" -> "df2(0)$8"	[label=apply];
 	"df2(0)$9" -> "clean_data(0)"	[label=apply];
@@ -187,10 +183,16 @@ object at 0x12f8c9c40>](0)" -> "getting-started-with-a-movie-recommendation-syst
 	cosine_similarity -> "sklearn.metrics.pairwise"	[label=importedBy];
 	"cosine_similarity(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"cosine_similarity(0)" -> cosine_similarity	[label=assignedFrom];
+	"cosine_sim2(0)$0" -> "count_matrix(0)$0"	[label=cosine_similarity];
 	"df2(0)$11" -> "df2(0)$10"	[label=reset_index];
 	"indices(0)$1" -> "pd(0)"	[label=Series];
 	"indices(0)$1" -> "title(0)"	[label=Series];
 	"indices(0)$1" -> "df2(0)$11"	[label=Series];
+	"get_recommendations[142/0]" -> "The Dark Knight Rises(0)"	[label=get_recommendations];
+	"get_recommendations[142/0]" -> "cosine_sim2(0)$0"	[label=get_recommendations];
+	"The Godfather(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"get_recommendations[143/0]" -> "cosine_sim2(0)$0"	[label=get_recommendations];
+	"get_recommendations[143/0]" -> "The Godfather(0)"	[label=get_recommendations];
 	surprise -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=importedBy];
 	Reader -> surprise	[label=importedBy];
 	"Reader(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
@@ -210,16 +212,16 @@ object at 0x12f8c9c40>](0)" -> "getting-started-with-a-movie-recommendation-syst
 	"ratings(0)$1" -> "ratings(0)$0"	[label=head];
 	"data(0)$0" -> "Dataset(0)"	[label=load_from_df];
 	"data(0)$0" -> "ratings(0)$1"	[label=load_from_df];
-	"data(0)$0" -> "[<_ast.Constant object at 0x12f8c8f70>, <_ast.Constant object at 0x12f8c8ac0>, <_ast.Constant object at 0x12f8c8400>](0)"	[label=load_from_df];
+	"data(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c2f40>, <_ast.Constant object at 0x7fd4c04c2ac0>, <_ast.Constant object at 0x7fd4c04c29d0>](0)"	[label=load_from_df];
 	"data(0)$0" -> "reader(0)"	[label=load_from_df];
-	"[<_ast.Constant object at 0x12f8c8f70>, <_ast.Constant object at 0x12f8c8ac0>, <_ast.Constant object at 0x12f8c8400>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04c2f40>, <_ast.Constant object at 0x7fd4c04c2ac0>, <_ast.Constant object at 0x7fd4c04c29d0>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"reader(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=split];
 	"svd(0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"evaluate[0]" -> "svd(0)"	[label=evaluate];
-	"evaluate[1]" -> "data(0)$1"	[label=evaluate];
-	"[<_ast.Constant object at 0x12f8c8c10>, <_ast.Constant object at 0x12f8c8e50>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
-	"evaluate[2]" -> "[<_ast.Constant object at 0x12f8c8c10>, <_ast.Constant object at 0x12f8c8e50>](0)"	[label=evaluate];
+	"evaluate[151/0]" -> "data(0)$1"	[label=evaluate];
+	"evaluate[151/0]" -> "svd(0)"	[label=evaluate];
+	"evaluate[151/0]" -> "[<_ast.Constant object at 0x7fd4c04c2c70>, <_ast.Constant object at 0x7fd4c04c2730>](0)"	[label=evaluate];
+	"[<_ast.Constant object at 0x7fd4c04c2c70>, <_ast.Constant object at 0x7fd4c04c2730>](0)" -> "getting-started-with-a-movie-recommendation-system.ipynb"	[label=appearsIn];
 	"trainset(0)$0" -> "data(0)$1"	[label=build_full_trainset];
 	"svd(0)$0" -> "svd(0)"	[label=fit];
 	"svd(0)$0" -> "trainset(0)$0"	[label=fit];

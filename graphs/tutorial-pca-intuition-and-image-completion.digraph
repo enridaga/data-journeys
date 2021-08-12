@@ -25,33 +25,9 @@ strict digraph "" {
 	os -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=importedBy];
 	"os(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "X_train(0)$0"	[label=print];
-	"print[0]" -> "X_test(0)$0"	[label=print];
-	"print[0]" -> "y_train(0)$0"	[label=print];
-	"print[0]" -> "y_test(0)$0"	[label=print];
-	"print[0]" -> "Training time is (0)"	[label=print];
-	"print[0]" -> "Prediction time is (0)"	[label=print];
-	"X_train(0)$0" -> "1(0)"	[label=assignedFrom];
-	"X_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"X_train(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
-	"X_train(0)$0" -> "2(0)"	[label=assignedFrom];
-	"X_test(0)$0" -> "1(0)"	[label=assignedFrom];
-	"X_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
-	"X_test(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
-	"X_test(0)$0" -> "2(0)"	[label=assignedFrom];
-	"y_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"y_train(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
-	"y_train(0)$0" -> "2(0)"	[label=assignedFrom];
-	"y_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
-	"y_test(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
-	"y_test(0)$0" -> "2(0)"	[label=assignedFrom];
-	"Training time is (0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
-	"Prediction time is (0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
+	"print[16/0]" -> "os(0)"	[label=print];
+	"print[16/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "str(0)"	[label=print];
-	"str(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	warnings -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=importedBy];
 	"warnings(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -66,12 +42,14 @@ strict digraph "" {
 	"../input/Sign-language-digits-dataset/Y.npy(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"64(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"img_size(0)$0" -> "64(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f58b0>, <_ast.Constant object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f56a0>, <_ast.Constant \
-object at 0x12f8f5d00>, <_ast.Constant object at 0x12f8f5040>, <_ast.Constant object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5dc0>, <_\
-ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f59d0>, <_ast.Constant object at 0x12f8f5160>](0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
-	"image_index_list(0)$0" -> "[<_ast.Constant object at 0x12f8f58b0>, <_ast.Constant object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f56a0>, <_ast.Constant \
-object at 0x12f8f5d00>, <_ast.Constant object at 0x12f8f5040>, <_ast.Constant object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5dc0>, <_\
-ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f59d0>, <_ast.Constant object at 0x12f8f5160>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0910>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant \
+object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object \
+at 0x7fd5007f0ca0>](0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
+	"image_index_list(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0910>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant \
+object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object \
+at 0x7fd5007f0ca0>](0)"	[label=assignedFrom];
 	"range(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"each(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"each(0)" -> "range(0)"	[label=iteratorOf];
@@ -87,9 +65,10 @@ ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f59d0>, <_as
 	"plt(0)$2" -> "off(0)"	[label=axis];
 	"off(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"Sign (0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
-	"title(0)$0" -> "str(0)"	[label=Add];
 	"title(0)$0" -> "each(0)"	[label=Add];
 	"title(0)$0" -> "Sign (0)"	[label=Add];
+	"title(0)$0" -> "str(0)"	[label=Add];
+	"str(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=title];
 	"plt(0)$3" -> "title(0)$0"	[label=title];
 	"plt(0)$4" -> "plt(0)$3"	[label=show];
@@ -103,23 +82,48 @@ ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f59d0>, <_as
 	"test(0)$0" -> "X(0)$0"	[label=assignedFrom];
 	"n_pixels(0)$0" -> "X(0)$0"	[label=assignedFrom];
 	"n_pixels(0)$0" -> "1(0)"	[label=assignedFrom];
+	"X_train(0)$0" -> "1(0)"	[label=assignedFrom];
+	"X_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"X_train(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
+	"X_train(0)$0" -> "2(0)"	[label=assignedFrom];
 	"2(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "1(0)"	[label=assignedFrom];
+	"X_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
+	"X_test(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
+	"X_test(0)$0" -> "2(0)"	[label=assignedFrom];
+	"y_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"y_train(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
+	"y_train(0)$0" -> "2(0)"	[label=assignedFrom];
+	"y_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
+	"y_test(0)$0" -> "n_pixels(0)$0"	[label=assignedFrom];
+	"y_test(0)$0" -> "2(0)"	[label=assignedFrom];
+	"print[46/0]" -> "X_train(0)$0"	[label=print];
+	"print[47/0]" -> "y_train(0)$0"	[label=print];
+	"print[48/0]" -> "X_test(0)$0"	[label=print];
+	"print[49/0]" -> "y_test(0)$0"	[label=print];
 	"start(0)$0" -> "time(0)"	[label=time];
 	"estimator(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
 	"estimator(0)$0" -> "X_train(0)$0"	[label=fit];
 	"estimator(0)$0" -> "y_train(0)$0"	[label=fit];
 	"estimator(0)$0" -> "estimator(0)"	[label=fit];
 	"end(0)$0" -> "time(0)"	[label=time];
-	"print[2]" -> "end(0)$0"	[label=print];
-	"print[2]" -> "end(0)$1"	[label=print];
-	"end(0)$1" -> "time(0)"	[label=time];
-	"print[3]" -> "start(0)$0"	[label=print];
-	"print[3]" -> "start(0)$1"	[label=print];
-	"start(0)$1" -> "time(0)"	[label=time];
+	"Training time is (0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
+	"print[55/0]" -> "str(0)"	[label=print];
+	"print[55/0]" -> "start(0)$0"	[label=print];
+	"print[55/0]" -> "end(0)$0"	[label=print];
+	"print[55/0]" -> "Training time is (0)"	[label=print];
+	"print[55/0]" -> " second.(0)"	[label=print];
 	" second.(0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
-	"print[4]" -> " second.(0)"	[label=print];
+	"start(0)$1" -> "time(0)"	[label=time];
 	"y_test_predict(0)$0" -> "X_test(0)$0"	[label=predict];
 	"y_test_predict(0)$0" -> "estimator(0)$0"	[label=predict];
+	"end(0)$1" -> "time(0)"	[label=time];
+	"Prediction time is (0)" -> "tutorial-pca-intuition-and-image-completion.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "str(0)"	[label=print];
+	"print[59/0]" -> " second.(0)"	[label=print];
+	"print[59/0]" -> "start(0)$1"	[label=print];
+	"print[59/0]" -> "end(0)$1"	[label=print];
+	"print[59/0]" -> "Prediction time is (0)"	[label=print];
 	"image_shape(0)$0" -> "64(0)"	[label=assignedFrom];
 	"n_faces(0)$0" -> "10(0)"	[label=assignedFrom];
 	"n_cols(0)$0" -> "1(0)"	[label=assignedFrom];

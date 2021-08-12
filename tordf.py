@@ -1,12 +1,12 @@
-#!/usr/local/bin/python3.7
+
 # TO RDF
 import datajourney as DJ
 import base64
 import json as J
 from os import listdir
 from os.path import isfile, join
-from graphviz import Source
-import pygraphviz
+# from graphviz import Source
+# import pygraphviz
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
 from rdflib.namespace import CSVW, DC, DCAT, DCTERMS, DOAP, FOAF, ODRL2, ORG, OWL, \
                            PROF, PROV, RDF, RDFS, SDO, SH, SKOS, SOSA, SSN, TIME, \
@@ -30,6 +30,7 @@ f="very-simple-pytorch-training-0-59.py" # CLASS support - still to finish
 f="0-cpe-getting-familier-with-problem-and-dataset.py"
 f="new-ucf-starter-kernel.py"
 f="a-quick-simple-eda.py"
+f='1-quick-start-read-csv-and-flatten-json-fields.py'
 #f="keras-u-net-starter-lb-0-277.py" # TODO AttributeError: 'Call' object has no attribute 'id'
 # src = open(indir + f, "r").read()
 # # print(src)

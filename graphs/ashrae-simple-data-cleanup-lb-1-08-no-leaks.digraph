@@ -34,7 +34,7 @@ digraph "" {
 	"is_bad(1)$2" -> "ids(1)$0"	[label=BitAnd];
 	"is_bad(1)$2" -> "is_bad(1)$1"	[label=BitAnd];
 	"is_bad(1)$2" -> "set(1)"	[label=BitAnd];
-	"is_bad(1)$2" -> "[<_ast.Name object at 0x12f8f5dc0>, <_ast.Name object at 0x1066e3850>](1)"	[label=BitAnd];
+	"is_bad(1)$2" -> "[<_ast.Name object at 0x7fd5007f0b50>, <_ast.Name object at 0x7fd5007f02e0>](1)"	[label=BitAnd];
 	"result(1)$0" -> "is_zero(1)$0"	[label=copy];
 	"result(1)$1" -> "is_bad(1)$2"	[label=update];
 	"result(1)$1" -> "result(1)$0"	[label=update];
@@ -43,7 +43,7 @@ digraph "" {
 	"Xy(2)$0" -> "X(2)"	[label=assign];
 	"Xy(2)$0" -> "y(2)"	[label=assign];
 	"is_bad_zero(2)$0" -> "Xy(2)$0"	[label=apply];
-	"is_bad_zero(2)$0" -> "[<_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f8b0>](2)"	[label=apply];
+	"is_bad_zero(2)$0" -> "[<_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cc7f0>](2)"	[label=apply];
 	"is_bad_zero(2)$0" -> "make_is_bad_zero(2)"	[label=apply];
 	"X(3)" -> "find_bad_sitezero[0]"	[label=_argToVar];
 	"X(4)" -> "find_bad_building1099[0]"	[label=_argToVar];
@@ -113,28 +113,28 @@ digraph "" {
 	"df(8)$0" -> "pd(8)"	[label=read_csv];
 	"df(8)$0" -> "input_file(8)"	[label=read_csv];
 	"df(8)$0" -> "train.csv(8)"	[label=read_csv];
-	"df(8)$0" -> "[<_ast.Constant object at 0x12fc33b50>](8)"	[label=read_csv];
+	"df(8)$0" -> "[<_ast.Constant object at 0x7fd4902abd30>](8)"	[label=read_csv];
 	"df(8)$1" -> "df(8)$0"	[label=FloorDiv];
 	"df(8)$1" -> "pd(8)"	[label=FloorDiv];
 	"df(8)$1" -> "2016-01-01(8)"	[label=FloorDiv];
 	"df(8)$1" -> "3600(8)"	[label=FloorDiv];
-	"[<_ast.UnaryOp object at 0x12fade7f0>, <_ast.Constant object at 0x12fade8e0>, <_ast.UnaryOp object at 0x12fade370>, <_ast.UnaryOp \
-object at 0x12fade3a0>, <_ast.UnaryOp object at 0x12fade5b0>, <_ast.Constant object at 0x12fade1f0>, <_ast.UnaryOp object at 0x12fade790>, <_\
-ast.UnaryOp object at 0x12fade670>, <_ast.UnaryOp object at 0x12fade2e0>, <_ast.UnaryOp object at 0x12fade8b0>, <_ast.UnaryOp object \
-at 0x12fade9d0>, <_ast.UnaryOp object at 0x12fade640>, <_ast.Constant object at 0x12fade520>, <_ast.UnaryOp object at 0x12fade4f0>, <_\
-ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)" -> "ashrae-simple-data-cleanup-lb-1-08-no-leaks.ipynb"	[label=appearsIn];
-	"site_GMT_offsets(0)$0" -> "[<_ast.UnaryOp object at 0x12fade7f0>, <_ast.Constant object at 0x12fade8e0>, <_ast.UnaryOp object at 0x12fade370>, <_ast.UnaryOp \
-object at 0x12fade3a0>, <_ast.UnaryOp object at 0x12fade5b0>, <_ast.Constant object at 0x12fade1f0>, <_ast.UnaryOp object at 0x12fade790>, <_\
-ast.UnaryOp object at 0x12fade670>, <_ast.UnaryOp object at 0x12fade2e0>, <_ast.UnaryOp object at 0x12fade8b0>, <_ast.UnaryOp object \
-at 0x12fade9d0>, <_ast.UnaryOp object at 0x12fade640>, <_ast.Constant object at 0x12fade520>, <_ast.UnaryOp object at 0x12fade4f0>, <_\
-ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)"	[label=assignedFrom];
+	"[<_ast.UnaryOp object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab910>, <_ast.UnaryOp object at 0x7fd4902ab340>, <_ast.UnaryOp \
+object at 0x7fd4902ab5e0>, <_ast.UnaryOp object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab160>, <_ast.UnaryOp object \
+at 0x7fd4902abb20>, <_ast.UnaryOp object at 0x7fd4902ab1c0>, <_ast.UnaryOp object at 0x7fd50080dac0>, <_ast.UnaryOp object at 0x7fd50080d520>, <_\
+ast.UnaryOp object at 0x7fd50080d370>, <_ast.UnaryOp object at 0x7fd50080de20>, <_ast.Constant object at 0x7fd50080d610>, <_ast.UnaryOp \
+object at 0x7fd50080dd30>, <_ast.UnaryOp object at 0x7fd50080d970>, <_ast.UnaryOp object at 0x7fd50080d0d0>](0)" -> "ashrae-simple-data-cleanup-lb-1-08-no-leaks.ipynb"	[label=appearsIn];
+	"site_GMT_offsets(0)$0" -> "[<_ast.UnaryOp object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab910>, <_ast.UnaryOp object at 0x7fd4902ab340>, <_ast.UnaryOp \
+object at 0x7fd4902ab5e0>, <_ast.UnaryOp object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab160>, <_ast.UnaryOp object \
+at 0x7fd4902abb20>, <_ast.UnaryOp object at 0x7fd4902ab1c0>, <_ast.UnaryOp object at 0x7fd50080dac0>, <_ast.UnaryOp object at 0x7fd50080d520>, <_\
+ast.UnaryOp object at 0x7fd50080d370>, <_ast.UnaryOp object at 0x7fd50080de20>, <_ast.Constant object at 0x7fd50080d610>, <_ast.UnaryOp \
+object at 0x7fd50080dd30>, <_ast.UnaryOp object at 0x7fd50080d970>, <_ast.UnaryOp object at 0x7fd50080d0d0>](0)"	[label=assignedFrom];
 	"fix_timestamps(10)" -> "read_weather_train[0]"	[label=_argToVar];
 	"interpolate_na(10)" -> "read_weather_train[1]"	[label=_argToVar];
 	"add_na_indicators(10)" -> "read_weather_train[2]"	[label=_argToVar];
 	"df(10)$0" -> "pd(10)"	[label=read_csv];
 	"df(10)$0" -> "input_file(10)"	[label=read_csv];
 	"df(10)$0" -> "weather_train.csv(10)"	[label=read_csv];
-	"df(10)$0" -> "[<_ast.Constant object at 0x12fadebe0>](10)"	[label=read_csv];
+	"df(10)$0" -> "[<_ast.Constant object at 0x7fd50080da30>](10)"	[label=read_csv];
 	"df(10)$1" -> "df(10)$0"	[label=FloorDiv];
 	"df(10)$1" -> "pd(10)"	[label=FloorDiv];
 	"df(10)$1" -> "2016-01-01(10)"	[label=FloorDiv];
@@ -184,7 +184,7 @@ ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)"	[l
 	"Xy(11)$0" -> "read_building_metadata(11)"	[label=compress_dataframe];
 	"Xy(11)$0" -> "building_id(11)"	[label=compress_dataframe];
 	"Xy(11)$0" -> "read_weather_train(11)"	[label=compress_dataframe];
-	"Xy(11)$0" -> "[<_ast.Constant object at 0x12fd9d760>, <_ast.Constant object at 0x12fd9d9d0>](11)"	[label=compress_dataframe];
+	"Xy(11)$0" -> "[<_ast.Constant object at 0x7fd500999b80>, <_ast.Constant object at 0x7fd500999d00>](11)"	[label=compress_dataframe];
 	"Xy(11)$0" -> "1(11)"	[label=compress_dataframe];
 	"X(12)" -> "_add_time_features[0]"	[label=_argToVar];
 	"self(14)" -> "__init__[0]"	[label=_argToVar];
@@ -203,7 +203,7 @@ ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)"	[l
 	"X1(15)$0" -> "self(15)"	[label=drop];
 	"X1(15)$0" -> "X(15)"	[label=drop];
 	"X1(15)$0" -> "val(15)"	[label=drop];
-	"X1(15)$0" -> "[<_ast.Attribute object at 0x12fdd0b50>](15)"	[label=drop];
+	"X1(15)$0" -> "[<_ast.Attribute object at 0x7fd4c098fd30>](15)"	[label=drop];
 	"self(15)$0" -> "self(15)"	[label=fit];
 	"self(15)$0" -> "y(15)"	[label=fit];
 	"self(15)$0" -> "X1(15)$0"	[label=fit];
@@ -219,7 +219,7 @@ ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)"	[l
 	"col_index(15)$0" -> "self(15)$0"	[label=index];
 	"col_index(15)$0" -> "list(15)"	[label=index];
 	"self(15)$1" -> "self(15)$0"	[label=assignedFrom];
-	"self(15)$1" -> "[<_ast.Starred object at 0x12fdd36a0>, <_ast.Constant object at 0x12fdd37f0>, <_ast.Starred object at 0x12fdd3820>](15)"	[label=assignedFrom];
+	"self(15)$1" -> "[<_ast.Starred object at 0x7fd4c095c370>, <_ast.Constant object at 0x7fd4c095c490>, <_ast.Starred object at 0x7fd4c095c4c0>](15)"	[label=assignedFrom];
 	"self(16)" -> "predict[0]"	[label=_argToVar];
 	"X(16)" -> "predict[1]"	[label=_argToVar];
 	"result(16)$0" -> "X(16)"	[label=zeros];
@@ -235,17 +235,19 @@ ast.UnaryOp object at 0x12fadeeb0>, <_ast.UnaryOp object at 0x12fade7c0>](0)"	[l
 	"predictions(16)$0" -> "X(16)"	[label=predict];
 	"predictions(16)$0" -> "val(16)"	[label=predict];
 	"predictions(16)$0" -> "ix(16)$0"	[label=predict];
-	"predictions(16)$0" -> "[<_ast.Attribute object at 0x12fd97490>](16)"	[label=predict];
+	"predictions(16)$0" -> "[<_ast.Attribute object at 0x7fd4c095b0d0>](16)"	[label=predict];
 	"result(16)$1" -> "result(16)$0"	[label=assignedFrom];
 	"result(16)$1" -> "predictions(16)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fd97760>, <_ast.Constant object at 0x12fd97790>, <_ast.Constant object at 0x12fd977c0>, <_ast.Constant \
-object at 0x12fd977f0>, <_ast.Constant object at 0x12fd97820>, <_ast.Constant object at 0x12fd97850>, <_ast.Constant object at 0x12fd97880>, <_\
-ast.Constant object at 0x12fd978b0>, <_ast.Constant object at 0x12fd978e0>, <_ast.Constant object at 0x12fd97910>, <_ast.Constant \
-object at 0x12fd97940>, <_ast.Constant object at 0x12fd97970>, <_ast.Constant object at 0x12fd979a0>](0)" -> "ashrae-simple-data-cleanup-lb-1-08-no-leaks.ipynb"	[label=appearsIn];
-	"categorical_columns(0)$0" -> "[<_ast.Constant object at 0x12fd97760>, <_ast.Constant object at 0x12fd97790>, <_ast.Constant object at 0x12fd977c0>, <_ast.Constant \
-object at 0x12fd977f0>, <_ast.Constant object at 0x12fd97820>, <_ast.Constant object at 0x12fd97850>, <_ast.Constant object at 0x12fd97880>, <_\
-ast.Constant object at 0x12fd978b0>, <_ast.Constant object at 0x12fd978e0>, <_ast.Constant object at 0x12fd97910>, <_ast.Constant \
-object at 0x12fd97940>, <_ast.Constant object at 0x12fd97970>, <_ast.Constant object at 0x12fd979a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c095b280>, <_ast.Constant object at 0x7fd4c095b4f0>, <_ast.Constant object at 0x7fd4c095b520>, <_\
+ast.Constant object at 0x7fd4c095b490>, <_ast.Constant object at 0x7fd4c095b4c0>, <_ast.Constant object at 0x7fd4c095b400>, <_ast.Constant \
+object at 0x7fd4c095b580>, <_ast.Constant object at 0x7fd4c095b5e0>, <_ast.Constant object at 0x7fd4c095b640>, <_ast.Constant object \
+at 0x7fd4c095b6a0>, <_ast.Constant object at 0x7fd4c095b700>, <_ast.Constant object at 0x7fd4c095b790>, <_ast.Constant object at \
+0x7fd4c095b7c0>](0)" -> "ashrae-simple-data-cleanup-lb-1-08-no-leaks.ipynb"	[label=appearsIn];
+	"categorical_columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c095b280>, <_ast.Constant object at 0x7fd4c095b4f0>, <_ast.Constant object at 0x7fd4c095b520>, <_\
+ast.Constant object at 0x7fd4c095b490>, <_ast.Constant object at 0x7fd4c095b4c0>, <_ast.Constant object at 0x7fd4c095b400>, <_ast.Constant \
+object at 0x7fd4c095b580>, <_ast.Constant object at 0x7fd4c095b5e0>, <_ast.Constant object at 0x7fd4c095b640>, <_ast.Constant object \
+at 0x7fd4c095b6a0>, <_ast.Constant object at 0x7fd4c095b700>, <_ast.Constant object at 0x7fd4c095b790>, <_ast.Constant object at \
+0x7fd4c095b7c0>](0)"	[label=assignedFrom];
 	"self(18)" -> "__init__[0]"	[label=_argToVar];
 	"categorical_feature(18)" -> "__init__[1]"	[label=_argToVar];
 	"self(18)$0" -> "self(18)"	[label=LGBMRegressor];
@@ -281,7 +283,7 @@ object at 0x12fd97940>, <_ast.Constant object at 0x12fd97970>, <_ast.Constant ob
 	"df(23)$0" -> "pd(23)"	[label=read_csv];
 	"df(23)$0" -> "input_file(23)"	[label=read_csv];
 	"df(23)$0" -> "test.csv(23)"	[label=read_csv];
-	"df(23)$0" -> "[<_ast.Constant object at 0x12f893730>](23)"	[label=read_csv];
+	"df(23)$0" -> "[<_ast.Constant object at 0x7fd4c09793d0>](23)"	[label=read_csv];
 	"df(23)$1" -> "df(23)$0"	[label=FloorDiv];
 	"df(23)$1" -> "pd(23)"	[label=FloorDiv];
 	"df(23)$1" -> "2016-01-01(23)"	[label=FloorDiv];
@@ -292,7 +294,7 @@ object at 0x12fd97940>, <_ast.Constant object at 0x12fd97970>, <_ast.Constant ob
 	"df(24)$0" -> "pd(24)"	[label=read_csv];
 	"df(24)$0" -> "input_file(24)"	[label=read_csv];
 	"df(24)$0" -> "weather_test.csv(24)"	[label=read_csv];
-	"df(24)$0" -> "[<_ast.Constant object at 0x12f893f70>](24)"	[label=read_csv];
+	"df(24)$0" -> "[<_ast.Constant object at 0x7fd4c0979c10>](24)"	[label=read_csv];
 	"df(24)$1" -> "df(24)$0"	[label=FloorDiv];
 	"df(24)$1" -> "pd(24)"	[label=FloorDiv];
 	"df(24)$1" -> "2016-01-01(24)"	[label=FloorDiv];
@@ -343,7 +345,7 @@ object at 0x12fd97940>, <_ast.Constant object at 0x12fd97970>, <_ast.Constant ob
 	"X(25)$0" -> "read_building_metadata(25)"	[label=compress_dataframe];
 	"X(25)$0" -> "building_id(25)"	[label=compress_dataframe];
 	"X(25)$0" -> "read_weather_test(25)"	[label=compress_dataframe];
-	"X(25)$0" -> "[<_ast.Constant object at 0x12f88cc40>, <_ast.Constant object at 0x12f88cca0>](25)"	[label=compress_dataframe];
+	"X(25)$0" -> "[<_ast.Constant object at 0x7fd50082d970>, <_ast.Constant object at 0x7fd50082d9a0>](25)"	[label=compress_dataframe];
 	"X(25)$0" -> "1(25)"	[label=compress_dataframe];
 	"X(0)" -> "ashrae-simple-data-cleanup-lb-1-08-no-leaks.ipynb"	[label=appearsIn];
 	"bad_rows(0)$0" -> "X(0)"	[label=find_bad_rows];

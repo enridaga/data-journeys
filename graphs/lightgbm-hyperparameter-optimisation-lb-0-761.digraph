@@ -20,53 +20,14 @@ digraph "" {
 	"os(0)" -> os	[label=assignedFrom];
 	"../input/(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"PATH(0)$0" -> "../input/(0)"	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Memory usage of dataframe is {:.2f} MB(1)"	[label=print];
-	"print[0]" -> "Memory usage after optimization is: {:.2f} MB(1)"	[label=print];
-	"print[0]" -> "Decreased by {:.1f}\%(1)"	[label=print];
-	"print[0]" -> "Memory usage of train increases from {:.2f} to {:.2f} MB(4)"	[label=print];
-	"print[0]" -> "Memory usage of test increases from {:.2f} to {:.2f} MB(4)"	[label=print];
-	"print[0]" -> "categorical_feats(5)$0"	[label=print];
-	"print[0]" -> "---------------------(5)"	[label=print];
-	"print[0]" -> "Memory usage of train increases from {:.2f} to {:.2f} MB(5)"	[label=print];
-	"print[0]" -> "Memory usage of test increases from {:.2f} to {:.2f} MB(5)"	[label=print];
-	"print[0]" -> "Best score reached: {} with params: {} (0)"	[label=print];
-	"print[0]" -> "Valid+-Std     Train  :   Parameters(0)"	[label=print];
-	"print[0]" -> "{1:.3f}+-{3:.3f}     {2:.3f}   :  {0}(0)"	[label=print];
-	"categorical_feats(5)$0" -> "train(5)"	[label=assignedFrom];
-	"categorical_feats(5)$0" -> "f(5)"	[label=assignedFrom];
-	"categorical_feats(5)$0" -> "object(5)"	[label=assignedFrom];
-	"categorical_feats(5)$0" -> "category(5)"	[label=assignedFrom];
-	"Best score reached: {} with params: {} (0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"Valid+-Std     Train  :   Parameters(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"{1:.3f}+-{3:.3f}     {2:.3f}   :  {0}(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[1]" -> "PATH(0)$0"	[label=print];
-	"print[1]" -> "start_mem(1)$0"	[label=print];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "100(1)"	[label=print];
-	"print[1]" -> "train(4)"	[label=print];
-	"print[1]" -> "test(4)"	[label=print];
-	"print[1]" -> "mem_orig_train(5)$0"	[label=print];
-	"print[1]" -> "mem_orig_test(5)$0"	[label=print];
-	"print[1]" -> "gs_sample_weight(0)$1"	[label=print];
+	"print[20/0]" -> "os(0)"	[label=print];
+	"print[20/0]" -> "PATH(0)$0"	[label=print];
+	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
-	"end_mem(1)$0" -> "1024(1)"	[label=Div];
-	"end_mem(1)$0" -> "2(1)"	[label=Div];
-	"end_mem(1)$0" -> "df(1)$7"	[label=Div];
-	"train(4)" -> "cat_to_dummy[0]"	[label=_argToVar];
-	"test(4)" -> "cat_to_dummy[1]"	[label=_argToVar];
-	"mem_orig_train(5)$0" -> "1024(5)"	[label=Div];
-	"mem_orig_train(5)$0" -> "2(5)"	[label=Div];
-	"mem_orig_train(5)$0" -> "train(5)"	[label=Div];
-	"mem_orig_test(5)$0" -> "1024(5)"	[label=Div];
-	"mem_orig_test(5)$0" -> "2(5)"	[label=Div];
-	"mem_orig_test(5)$0" -> "test(5)"	[label=Div];
-	"gs_sample_weight(0)$1" -> "X_train(0)$0"	[label=fit];
-	"gs_sample_weight(0)$1" -> "y_train(0)$0"	[label=fit];
-	"gs_sample_weight(0)$1" -> "gs_sample_weight(0)$0"	[label=fit];
-	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
+	"print[28/4]" -> "start_mem(1)$0"	[label=print];
+	"print[28/4]" -> "Memory usage of dataframe is {:.2f} MB(1)"	[label=print];
 	"col(1)" -> "df(1)"	[label=iteratorOf];
 	"col_type(1)$0" -> "df(1)"	[label=assignedFrom];
 	"col_type(1)$0" -> "col(1)"	[label=assignedFrom];
@@ -98,41 +59,15 @@ digraph "" {
 	"df(1)$7" -> "col(1)"	[label=astype];
 	"df(1)$7" -> "df(1)$6"	[label=astype];
 	"df(1)$7" -> "category(1)"	[label=astype];
-	"print[2]" -> "start_mem(1)$0"	[label=print];
-	"print[2]" -> "gs_sample_weight(0)$1"	[label=print];
-	"print[2]" -> "1024(4)"	[label=print];
-	"print[2]" -> "train(5)$0"	[label=print];
-	"print[2]" -> "test(5)$0"	[label=print];
-	"print[2]" -> "params(0)"	[label=print];
-	"train(5)$0" -> "train(5)$0"	[label=factorize];
-	"train(5)$0" -> "train(5)"	[label=factorize];
-	"train(5)$0" -> "f_(5)"	[label=factorize];
-	"train(5)$0" -> "pd(5)"	[label=factorize];
-	"test(5)$0" -> "test(5)$0"	[label=get_indexer];
-	"test(5)$0" -> "test(5)"	[label=get_indexer];
-	"test(5)$0" -> "f_(5)"	[label=get_indexer];
-	"test(5)$0" -> "indexer(5)$0"	[label=get_indexer];
-	"params(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[3]" -> "end_mem(1)$0"	[label=print];
-	"print[3]" -> "2(4)"	[label=print];
-	"print[3]" -> "1024(5)"	[label=print];
-	"print[3]" -> "i(0)"	[label=print];
-	"i(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"i(0)" -> "np(0)"	[label=iteratorOf];
-	"i(0)" -> "gs_sample_weight(0)$1"	[label=iteratorOf];
-	"i(0)" -> "mean_test_score(0)"	[label=iteratorOf];
-	"i(0)" -> "5(0)"	[label=iteratorOf];
-	"print[4]" -> "start_mem(1)$0"	[label=print];
-	"print[4]" -> "gs_sample_weight(0)$1"	[label=print];
-	"print[4]" -> "train_d(4)$1"	[label=print];
-	"print[4]" -> "test_d(4)$1"	[label=print];
-	"print[4]" -> "2(5)"	[label=print];
-	"train_d(4)$1" -> "train_d(4)$0"	[label=drop];
-	"train_d(4)$1" -> "i(4)"	[label=drop];
-	"train_d(4)$1" -> "1(4)"	[label=drop];
-	"test_d(4)$1" -> "test_d(4)$0"	[label=drop];
-	"test_d(4)$1" -> "i(4)"	[label=drop];
-	"test_d(4)$1" -> "1(4)"	[label=drop];
+	"end_mem(1)$0" -> "1024(1)"	[label=Div];
+	"end_mem(1)$0" -> "2(1)"	[label=Div];
+	"end_mem(1)$0" -> "df(1)$7"	[label=Div];
+	"print[56/4]" -> "end_mem(1)$0"	[label=print];
+	"print[56/4]" -> "Memory usage after optimization is: {:.2f} MB(1)"	[label=print];
+	"print[57/4]" -> "start_mem(1)$0"	[label=print];
+	"print[57/4]" -> "end_mem(1)$0"	[label=print];
+	"print[57/4]" -> "Decreased by {:.1f}\%(1)"	[label=print];
+	"print[57/4]" -> "100(1)"	[label=print];
 	"file(2)" -> "import_data[0]"	[label=_argToVar];
 	"df(2)$0" -> "file(2)"	[label=read_csv];
 	"df(2)$0" -> "pd(2)"	[label=read_csv];
@@ -237,6 +172,8 @@ digraph "" {
 	"df(3)$12" -> "AMT_ANNUITY(3)"	[label=Div];
 	"application_train(0)$5" -> "application_train(0)$4"	[label=feat_ext_source];
 	"application_test(0)$1" -> "application_test(0)$0"	[label=feat_ext_source];
+	"train(4)" -> "cat_to_dummy[0]"	[label=_argToVar];
+	"test(4)" -> "cat_to_dummy[1]"	[label=_argToVar];
 	"train_d(4)$0" -> "train(4)"	[label=get_dummies];
 	"train_d(4)$0" -> "pd(4)"	[label=get_dummies];
 	"train_d(4)$0" -> "False(4)"	[label=get_dummies];
@@ -244,31 +181,72 @@ digraph "" {
 	"test_d(4)$0" -> "pd(4)"	[label=get_dummies];
 	"test_d(4)$0" -> "False(4)"	[label=get_dummies];
 	"i(4)" -> "train_d(4)$0"	[label=iteratorOf];
+	"train_d(4)$1" -> "train_d(4)$0"	[label=drop];
+	"train_d(4)$1" -> "i(4)"	[label=drop];
+	"train_d(4)$1" -> "1(4)"	[label=drop];
 	"j(4)" -> "test_d(4)$0"	[label=iteratorOf];
-	"print[5]" -> "1024(4)"	[label=print];
-	"print[5]" -> "mean_test_score(0)"	[label=print];
-	"mean_test_score(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[6]" -> "2(4)"	[label=print];
-	"print[6]" -> "i(0)"	[label=print];
+	"test_d(4)$1" -> "test_d(4)$0"	[label=drop];
+	"test_d(4)$1" -> "i(4)"	[label=drop];
+	"test_d(4)$1" -> "1(4)"	[label=drop];
+	"print[110/4]" -> "train(4)"	[label=print];
+	"print[110/4]" -> "train_d(4)$1"	[label=print];
+	"print[110/4]" -> "Memory usage of train increases from {:.2f} to {:.2f} MB(4)"	[label=print];
+	"print[110/4]" -> "1024(4)"	[label=print];
+	"print[110/4]" -> "2(4)"	[label=print];
+	"print[112/4]" -> "test(4)"	[label=print];
+	"print[112/4]" -> "test_d(4)$1"	[label=print];
+	"print[112/4]" -> "1024(4)"	[label=print];
+	"print[112/4]" -> "2(4)"	[label=print];
+	"print[112/4]" -> "Memory usage of test increases from {:.2f} to {:.2f} MB(4)"	[label=print];
 	"application_train_ohe(0)$0" -> "application_train(0)$5"	[label=cat_to_dummy];
 	"application_train_ohe(0)$0" -> "application_test(0)$1"	[label=cat_to_dummy];
 	"application_test_ohe(0)$0" -> "application_train(0)$5"	[label=cat_to_dummy];
 	"application_test_ohe(0)$0" -> "application_test(0)$1"	[label=cat_to_dummy];
 	"train(5)" -> "cat_to_int[0]"	[label=_argToVar];
 	"test(5)" -> "cat_to_int[1]"	[label=_argToVar];
+	"mem_orig_train(5)$0" -> "train(5)"	[label=Div];
+	"mem_orig_train(5)$0" -> "1024(5)"	[label=Div];
+	"mem_orig_train(5)$0" -> "2(5)"	[label=Div];
+	"mem_orig_test(5)$0" -> "test(5)"	[label=Div];
+	"mem_orig_test(5)$0" -> "1024(5)"	[label=Div];
+	"mem_orig_test(5)$0" -> "2(5)"	[label=Div];
+	"categorical_feats(5)$0" -> "train(5)"	[label=assignedFrom];
+	"categorical_feats(5)$0" -> "f(5)"	[label=assignedFrom];
+	"categorical_feats(5)$0" -> "object(5)"	[label=assignedFrom];
+	"categorical_feats(5)$0" -> "category(5)"	[label=assignedFrom];
+	"print[122/4]" -> "---------------------(5)"	[label=print];
+	"print[123/4]" -> "categorical_feats(5)$0"	[label=print];
 	"f_(5)" -> "categorical_feats(5)$0"	[label=iteratorOf];
-	"indexer(5)$0" -> "train(5)$0"	[label=factorize];
+	"train(5)$0" -> "train(5)"	[label=factorize];
+	"train(5)$0" -> "f_(5)"	[label=factorize];
+	"train(5)$0" -> "train(5)$0"	[label=factorize];
+	"train(5)$0" -> "pd(5)"	[label=factorize];
 	"indexer(5)$0" -> "f_(5)"	[label=factorize];
+	"indexer(5)$0" -> "train(5)$0"	[label=factorize];
 	"indexer(5)$0" -> "pd(5)"	[label=factorize];
+	"test(5)$0" -> "test(5)"	[label=get_indexer];
+	"test(5)$0" -> "f_(5)"	[label=get_indexer];
+	"test(5)$0" -> "indexer(5)$0"	[label=get_indexer];
+	"test(5)$0" -> "test(5)$0"	[label=get_indexer];
+	"print[127/4]" -> "mem_orig_train(5)$0"	[label=print];
+	"print[127/4]" -> "1024(5)"	[label=print];
+	"print[127/4]" -> "2(5)"	[label=print];
+	"print[127/4]" -> "train(5)$0"	[label=print];
+	"print[127/4]" -> "Memory usage of train increases from {:.2f} to {:.2f} MB(5)"	[label=print];
+	"print[129/4]" -> "1024(5)"	[label=print];
+	"print[129/4]" -> "2(5)"	[label=print];
+	"print[129/4]" -> "mem_orig_test(5)$0"	[label=print];
+	"print[129/4]" -> "test(5)$0"	[label=print];
+	"print[129/4]" -> "Memory usage of test increases from {:.2f} to {:.2f} MB(5)"	[label=print];
 	"X_rus(0)$0" -> "application_train_ohe(0)$0"	[label=assignedFrom];
-	"X_rus(0)$0" -> "[<_ast.Constant object at 0x12fc45d30>, <_ast.Constant object at 0x12fc45d60>](0)"	[label=assignedFrom];
+	"X_rus(0)$0" -> "[<_ast.Constant object at 0x7fd4902b5a30>, <_ast.Constant object at 0x7fd4902b5a60>](0)"	[label=assignedFrom];
 	"X_rus(0)$0" -> "1(0)"	[label=assignedFrom];
 	"X_rus(0)$0" -> "TARGET(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc45d30>, <_ast.Constant object at 0x12fc45d60>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902b5a30>, <_ast.Constant object at 0x7fd4902b5a60>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"1(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"TARGET(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"y_rus(0)$0" -> "application_train_ohe(0)$0"	[label=assignedFrom];
-	"y_rus(0)$0" -> "[<_ast.Constant object at 0x12fc45d30>, <_ast.Constant object at 0x12fc45d60>](0)"	[label=assignedFrom];
+	"y_rus(0)$0" -> "[<_ast.Constant object at 0x7fd4902b5a30>, <_ast.Constant object at 0x7fd4902b5a60>](0)"	[label=assignedFrom];
 	"y_rus(0)$0" -> "1(0)"	[label=assignedFrom];
 	"y_rus(0)$0" -> "TARGET(0)"	[label=assignedFrom];
 	"sklearn.model_selection" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=importedBy];
@@ -323,8 +301,8 @@ digraph "" {
 	"fit_params(0)$0" -> "categorical_feature(0)"	[label=assignedFrom];
 	"fit_params(0)$0" -> "30(0)"	[label=assignedFrom];
 	"fit_params(0)$0" -> "auc(0)"	[label=assignedFrom];
-	"fit_params(0)$0" -> "[<_ast.Tuple object at 0x12fc40400>](0)"	[label=assignedFrom];
-	"fit_params(0)$0" -> "[<_ast.Constant object at 0x12fc404c0>](0)"	[label=assignedFrom];
+	"fit_params(0)$0" -> "[<_ast.Tuple object at 0x7fd49029b100>](0)"	[label=assignedFrom];
+	"fit_params(0)$0" -> "[<_ast.Constant object at 0x7fd49029b1c0>](0)"	[label=assignedFrom];
 	"fit_params(0)$0" -> "100(0)"	[label=assignedFrom];
 	"fit_params(0)$0" -> "auto(0)"	[label=assignedFrom];
 	"eval_metric(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
@@ -334,8 +312,8 @@ digraph "" {
 	"categorical_feature(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"30(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"auc(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fc40400>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc404c0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd49029b100>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49029b1c0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"100(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"auto(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"scipy.stats" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=importedBy];
@@ -360,18 +338,18 @@ digraph "" {
 	"param_test(0)$0" -> "6(0)"	[label=assignedFrom];
 	"param_test(0)$0" -> "50(0)"	[label=assignedFrom];
 	"param_test(0)$0" -> "500(0)"	[label=assignedFrom];
-	"param_test(0)$0" -> "[<_ast.Constant object at 0x12fc40a00>, <_ast.Constant object at 0x12fc40a30>, <_ast.Constant object at 0x12fc40a60>, <_ast.Constant \
-object at 0x12fc40a90>, <_ast.Constant object at 0x12fc40ac0>, <_ast.Constant object at 0x12fc40af0>, <_ast.Constant object at 0x12fc40b20>, <_\
-ast.Constant object at 0x12fc40b50>, <_ast.Constant object at 0x12fc40b80>](0)"	[label=assignedFrom];
+	"param_test(0)$0" -> "[<_ast.Constant object at 0x7fd49029b760>, <_ast.Constant object at 0x7fd49029b790>, <_ast.Constant object at 0x7fd49029b7c0>, <_\
+ast.Constant object at 0x7fd49029b7f0>, <_ast.Constant object at 0x7fd49029b820>, <_ast.Constant object at 0x7fd49029b850>, <_ast.Constant \
+object at 0x7fd49029b880>, <_ast.Constant object at 0x7fd49029b8b0>, <_ast.Constant object at 0x7fd49029b8e0>](0)"	[label=assignedFrom];
 	"param_test(0)$0" -> "0.8(0)"	[label=assignedFrom];
 	"param_test(0)$0" -> "0.4(0)"	[label=assignedFrom];
 	"param_test(0)$0" -> "0.6(0)"	[label=assignedFrom];
-	"param_test(0)$0" -> "[<_ast.Constant object at 0x12fc40ee0>, <_ast.Constant object at 0x12fc40f10>, <_ast.Constant object at 0x12fc40f40>, <_ast.Constant \
-object at 0x12fc40f70>, <_ast.Constant object at 0x12fc40fa0>, <_ast.Constant object at 0x12fc40fd0>, <_ast.Constant object at 0x12fc420d0>, <_\
-ast.Constant object at 0x12fc42040>, <_ast.Constant object at 0x12fc42070>](0)"	[label=assignedFrom];
-	"param_test(0)$0" -> "[<_ast.Constant object at 0x12fc42100>, <_ast.Constant object at 0x12fc421f0>, <_ast.Constant object at 0x12fc42130>, <_ast.Constant \
-object at 0x12fc42190>, <_ast.Constant object at 0x12fc421c0>, <_ast.Constant object at 0x12fc42160>, <_ast.Constant object at 0x12fc42220>, <_\
-ast.Constant object at 0x12fc42280>](0)"	[label=assignedFrom];
+	"param_test(0)$0" -> "[<_ast.Constant object at 0x7fd49029bc40>, <_ast.Constant object at 0x7fd49029bc70>, <_ast.Constant object at 0x7fd49029bca0>, <_\
+ast.Constant object at 0x7fd49029bcd0>, <_ast.Constant object at 0x7fd49029bd00>, <_ast.Constant object at 0x7fd49029b700>, <_ast.Constant \
+object at 0x7fd49029bd30>, <_ast.Constant object at 0x7fd49029bd60>, <_ast.Constant object at 0x7fd49029bd90>](0)"	[label=assignedFrom];
+	"param_test(0)$0" -> "[<_ast.Constant object at 0x7fd49029bdf0>, <_ast.Constant object at 0x7fd49029be20>, <_ast.Constant object at 0x7fd49029be50>, <_\
+ast.Constant object at 0x7fd49029be80>, <_ast.Constant object at 0x7fd49029beb0>, <_ast.Constant object at 0x7fd49029bee0>, <_ast.Constant \
+object at 0x7fd49029bf10>, <_ast.Constant object at 0x7fd49029bf40>](0)"	[label=assignedFrom];
 	"min_child_samples(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"min_child_weight(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"subsample(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
@@ -381,18 +359,18 @@ ast.Constant object at 0x12fc42280>](0)"	[label=assignedFrom];
 	"6(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"50(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"500(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc40a00>, <_ast.Constant object at 0x12fc40a30>, <_ast.Constant object at 0x12fc40a60>, <_ast.Constant \
-object at 0x12fc40a90>, <_ast.Constant object at 0x12fc40ac0>, <_ast.Constant object at 0x12fc40af0>, <_ast.Constant object at 0x12fc40b20>, <_\
-ast.Constant object at 0x12fc40b50>, <_ast.Constant object at 0x12fc40b80>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49029b760>, <_ast.Constant object at 0x7fd49029b790>, <_ast.Constant object at 0x7fd49029b7c0>, <_\
+ast.Constant object at 0x7fd49029b7f0>, <_ast.Constant object at 0x7fd49029b820>, <_ast.Constant object at 0x7fd49029b850>, <_ast.Constant \
+object at 0x7fd49029b880>, <_ast.Constant object at 0x7fd49029b8b0>, <_ast.Constant object at 0x7fd49029b8e0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"0.8(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"0.4(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"0.6(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc40ee0>, <_ast.Constant object at 0x12fc40f10>, <_ast.Constant object at 0x12fc40f40>, <_ast.Constant \
-object at 0x12fc40f70>, <_ast.Constant object at 0x12fc40fa0>, <_ast.Constant object at 0x12fc40fd0>, <_ast.Constant object at 0x12fc420d0>, <_\
-ast.Constant object at 0x12fc42040>, <_ast.Constant object at 0x12fc42070>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc42100>, <_ast.Constant object at 0x12fc421f0>, <_ast.Constant object at 0x12fc42130>, <_ast.Constant \
-object at 0x12fc42190>, <_ast.Constant object at 0x12fc421c0>, <_ast.Constant object at 0x12fc42160>, <_ast.Constant object at 0x12fc42220>, <_\
-ast.Constant object at 0x12fc42280>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49029bc40>, <_ast.Constant object at 0x7fd49029bc70>, <_ast.Constant object at 0x7fd49029bca0>, <_\
+ast.Constant object at 0x7fd49029bcd0>, <_ast.Constant object at 0x7fd49029bd00>, <_ast.Constant object at 0x7fd49029b700>, <_ast.Constant \
+object at 0x7fd49029bd30>, <_ast.Constant object at 0x7fd49029bd60>, <_ast.Constant object at 0x7fd49029bd90>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49029bdf0>, <_ast.Constant object at 0x7fd49029be20>, <_ast.Constant object at 0x7fd49029be50>, <_\
+ast.Constant object at 0x7fd49029be80>, <_ast.Constant object at 0x7fd49029beb0>, <_ast.Constant object at 0x7fd49029bee0>, <_ast.Constant \
+object at 0x7fd49029bf10>, <_ast.Constant object at 0x7fd49029bf40>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"n_HP_points_to_test(0)$0" -> "100(0)"	[label=assignedFrom];
 	RandomizedSearchCV -> "sklearn.model_selection"	[label=importedBy];
 	"RandomizedSearchCV(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
@@ -449,19 +427,36 @@ ast.Constant object at 0x12fc42280>](0)" -> "lightgbm-hyperparameter-optimisatio
 	"gs_sample_weight(0)$0" -> "5(0)"	[label=GridSearchCV];
 	"gs_sample_weight(0)$0" -> "clf_sw(0)$1"	[label=GridSearchCV];
 	"gs_sample_weight(0)$0" -> "scale_pos_weight(0)"	[label=GridSearchCV];
-	"gs_sample_weight(0)$0" -> "[<_ast.Constant object at 0x12fc3e820>, <_ast.Constant object at 0x12fc3e7f0>, <_ast.Constant object at 0x12fc3e880>, <_ast.Constant \
-object at 0x12fc3e8e0>](0)"	[label=GridSearchCV];
+	"gs_sample_weight(0)$0" -> "[<_ast.Constant object at 0x7fd4902bf5b0>, <_ast.Constant object at 0x7fd4902bf550>, <_ast.Constant object at 0x7fd4902bf580>, <_\
+ast.Constant object at 0x7fd4902bf4c0>](0)"	[label=GridSearchCV];
 	"scale_pos_weight(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc3e820>, <_ast.Constant object at 0x12fc3e7f0>, <_ast.Constant object at 0x12fc3e880>, <_ast.Constant \
-object at 0x12fc3e8e0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[7]" -> "gs_sample_weight(0)$1"	[label=print];
+	"[<_ast.Constant object at 0x7fd4902bf5b0>, <_ast.Constant object at 0x7fd4902bf550>, <_ast.Constant object at 0x7fd4902bf580>, <_\
+ast.Constant object at 0x7fd4902bf4c0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"gs_sample_weight(0)$1" -> "X_train(0)$0"	[label=fit];
+	"gs_sample_weight(0)$1" -> "y_train(0)$0"	[label=fit];
+	"gs_sample_weight(0)$1" -> "gs_sample_weight(0)$0"	[label=fit];
+	"Best score reached: {} with params: {} (0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"print[207/0]" -> "gs_sample_weight(0)$1"	[label=print];
+	"print[207/0]" -> "Best score reached: {} with params: {} (0)"	[label=print];
+	"Valid+-Std     Train  :   Parameters(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"print[214/0]" -> "Valid+-Std     Train  :   Parameters(0)"	[label=print];
+	"i(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"i(0)" -> "np(0)"	[label=iteratorOf];
+	"i(0)" -> "5(0)"	[label=iteratorOf];
+	"i(0)" -> "gs_sample_weight(0)$1"	[label=iteratorOf];
+	"i(0)" -> "mean_test_score(0)"	[label=iteratorOf];
+	"mean_test_score(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"{1:.3f}+-{3:.3f}     {2:.3f}   :  {0}(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"print[216/4]" -> "gs_sample_weight(0)$1"	[label=print];
+	"print[216/4]" -> "i(0)"	[label=print];
+	"print[216/4]" -> "mean_test_score(0)"	[label=print];
+	"print[216/4]" -> "{1:.3f}+-{3:.3f}     {2:.3f}   :  {0}(0)"	[label=print];
+	"print[216/4]" -> "params(0)"	[label=print];
+	"print[216/4]" -> "mean_train_score(0)"	[label=print];
+	"print[216/4]" -> "std_test_score(0)"	[label=print];
+	"params(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"mean_train_score(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[8]" -> "mean_train_score(0)"	[label=print];
-	"print[9]" -> "i(0)"	[label=print];
-	"print[10]" -> "gs_sample_weight(0)$1"	[label=print];
 	"std_test_score(0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
-	"print[11]" -> "std_test_score(0)"	[label=print];
-	"print[12]" -> "i(0)"	[label=print];
 	"clf_final(0)$0" -> "lgb(0)"	[label=LGBMClassifier];
 	"clf_final(0)$0" -> "clf(0)$0"	[label=LGBMClassifier];
 	"clf_final(0)$1" -> "clf_final(0)$0"	[label=set_params];
@@ -472,14 +467,14 @@ object at 0x12fc3e8e0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ip
 	"feat_imp(0)$0" -> "application_train_ohe(0)$0"	[label=Series];
 	"feat_imp(0)$0" -> "1(0)"	[label=Series];
 	"feat_imp(0)$0" -> "clf_final(0)$2"	[label=Series];
-	"feat_imp(0)$0" -> "[<_ast.Constant object at 0x12f8a65b0>, <_ast.Constant object at 0x12f8a65e0>](0)"	[label=Series];
-	"[<_ast.Constant object at 0x12f8a65b0>, <_ast.Constant object at 0x12f8a65e0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"feat_imp(0)$0" -> "[<_ast.Constant object at 0x7fd4902bd2b0>, <_ast.Constant object at 0x7fd4902bd2e0>](0)"	[label=Series];
+	"[<_ast.Constant object at 0x7fd4902bd2b0>, <_ast.Constant object at 0x7fd4902bd2e0>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"feat_imp(0)$1" -> "feat_imp(0)$0"	[label=plot];
 	"probabilities(0)$0" -> "application_test_ohe(0)$0"	[label=predict_proba];
 	"probabilities(0)$0" -> "1(0)"	[label=predict_proba];
 	"probabilities(0)$0" -> "clf_final(0)$2"	[label=predict_proba];
-	"probabilities(0)$0" -> "[<_ast.Constant object at 0x12f8a6b50>](0)"	[label=predict_proba];
-	"[<_ast.Constant object at 0x12f8a6b50>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
+	"probabilities(0)$0" -> "[<_ast.Constant object at 0x7fd4902bd850>](0)"	[label=predict_proba];
+	"[<_ast.Constant object at 0x7fd4902bd850>](0)" -> "lightgbm-hyperparameter-optimisation-lb-0-761.ipynb"	[label=appearsIn];
 	"submission(0)$0" -> "pd(0)"	[label=DataFrame];
 	"submission(0)$0" -> "application_test_ohe(0)$0"	[label=DataFrame];
 	"submission(0)$0" -> "1(0)"	[label=DataFrame];

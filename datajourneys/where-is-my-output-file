@@ -9,11 +9,11 @@ strict digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "where-is-my-output-file.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85eee0>](0)" -> "where-is-my-output-file.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85eee0>](0)"	[label=print];
+	"print[13/0]" -> "check_output(0)"	[label=print];
+	"print[13/0]" -> "[<_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048e880>](0)"	[label=print];
+	"print[13/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048e880>](0)" -> "where-is-my-output-file.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "where-is-my-output-file.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"test(0)$0" -> "pd(0)"	[label=read_csv];
 	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "where-is-my-output-file.ipynb"	[label=appearsIn];

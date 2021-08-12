@@ -32,14 +32,14 @@ digraph "" {
 	"random(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"random(0)" -> random	[label=assignedFrom];
 	"seed(1)" -> "set_seed[0]"	[label=_argToVar];
-	"set_seed[0]" -> "2019(0)"	[label=set_seed];
-	"2019(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"random(1)$0" -> "seed(1)"	[label=seed];
 	"random(1)$0" -> "random(1)"	[label=seed];
 	"os(1)$0" -> "seed(1)"	[label=str];
 	"os(1)$0" -> "os(1)"	[label=str];
 	"np(1)$0" -> "seed(1)"	[label=seed];
 	"np(1)$0" -> "np(1)"	[label=seed];
+	"2019(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"set_seed[16/0]" -> "2019(0)"	[label=set_seed];
 	"42(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"SEED(0)$0" -> "42(0)"	[label=assignedFrom];
 	psutil -> "public-version-text-cleaning-vocab-65.ipynb"	[label=importedBy];
@@ -59,39 +59,8 @@ digraph "" {
 	"num_partitions(0)$0" -> "8(0)"	[label=assignedFrom];
 	"num_cores(0)$0" -> "psutil(0)"	[label=cpu_count];
 	"number of cores:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"print[0]" -> "number of cores:(0)"	[label=print];
-	"print[0]" -> "Found embeddings for {:.2\%} of vocab(6)"	[label=print];
-	"print[0]" -> "Found embeddings for  {:.2\%} of all text(6)"	[label=print];
-	"print[0]" -> "Glove : (7)"	[label=print];
-	"print[0]" -> "Paragram : (7)"	[label=print];
-	"print[0]" -> "FastText : (7)"	[label=print];
-	"print[0]" -> "Extracting GloVe embedding(0)"	[label=print];
-	"print[0]" -> "Extracting Paragram embedding(0)"	[label=print];
-	"print[0]" -> "Extracting FastText embedding(0)"	[label=print];
-	"print[0]" -> "Default Embedding glove oov rate:(0)"	[label=print];
-	"print[0]" -> "Default Embedding paragram oov rate:(0)"	[label=print];
-	"print[0]" -> "Default Embedding fasttext oov rate:(0)"	[label=print];
-	"Extracting GloVe embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"Extracting Paragram embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"Extracting FastText embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"Default Embedding glove oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"Default Embedding paragram oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"Default Embedding fasttext oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"print[1]" -> "num_cores(0)$0"	[label=print];
-	"print[1]" -> "nb_known_words(6)$4"	[label=print];
-	"print[1]" -> "len(6)"	[label=print];
-	"print[1]" -> "oov_glove(0)$0"	[label=print];
-	"print[1]" -> "oov_paragram(0)$0"	[label=print];
-	"print[1]" -> "oov_fasttext(0)$0"	[label=print];
-	"nb_known_words(6)$4" -> "vocab(6)"	[label=Add];
-	"nb_known_words(6)$4" -> "word(6)"	[label=Add];
-	"nb_known_words(6)$4" -> "nb_known_words(6)$3"	[label=Add];
-	"oov_glove(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
-	"oov_glove(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
-	"oov_paragram(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
-	"oov_paragram(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
+	"print[25/0]" -> "num_cores(0)$0"	[label=print];
+	"print[25/0]" -> "number of cores:(0)"	[label=print];
 	"df(2)" -> "df_parallelize_run[0]"	[label=_argToVar];
 	"func(2)" -> "df_parallelize_run[1]"	[label=_argToVar];
 	"df_split(2)$0" -> "df(2)"	[label=array_split];
@@ -164,19 +133,22 @@ digraph "" {
 	"known_words(6)$3" -> "embeddings_index(6)"	[label=assignedFrom];
 	"known_words(6)$3" -> "word(6)"	[label=assignedFrom];
 	"known_words(6)$3" -> "known_words(6)$2"	[label=assignedFrom];
+	"nb_known_words(6)$4" -> "vocab(6)"	[label=Add];
+	"nb_known_words(6)$4" -> "word(6)"	[label=Add];
+	"nb_known_words(6)$4" -> "nb_known_words(6)$3"	[label=Add];
 	"unknown_words(6)$0" -> "vocab(6)"	[label=assignedFrom];
 	"unknown_words(6)$0" -> "word(6)"	[label=assignedFrom];
 	"unknown_words(6)$0" -> "unknown_words(6)"	[label=assignedFrom];
 	"nb_unknown_words(6)$1" -> "vocab(6)"	[label=Add];
 	"nb_unknown_words(6)$1" -> "nb_unknown_words(6)$0"	[label=Add];
 	"nb_unknown_words(6)$1" -> "word(6)"	[label=Add];
-	"print[2]" -> "nb_known_words(6)$4"	[label=print];
-	"print[2]" -> "known_words(6)$3"	[label=print];
-	"print[2]" -> "oov_rate(0)"	[label=print];
-	"oov_rate(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"print[3]" -> "len(6)"	[label=print];
-	"print[3]" -> "nb_unknown_words(6)$1"	[label=print];
-	"print[4]" -> "vocab(6)"	[label=print];
+	"print[89/4]" -> "vocab(6)"	[label=print];
+	"print[89/4]" -> "known_words(6)$3"	[label=print];
+	"print[89/4]" -> "Found embeddings for {:.2\%} of vocab(6)"	[label=print];
+	"print[89/4]" -> "len(6)"	[label=print];
+	"print[90/4]" -> "nb_known_words(6)$4"	[label=print];
+	"print[90/4]" -> "nb_unknown_words(6)$1"	[label=print];
+	"print[90/4]" -> "Found embeddings for  {:.2\%} of all text(6)"	[label=print];
 	"unknown_words(6)$1" -> "unknown_words(6)$1"	[label=assignedFrom];
 	"unknown_words(6)$1" -> "sorted(6)"	[label=assignedFrom];
 	"unknown_words(6)$1" -> "operator(6)"	[label=assignedFrom];
@@ -184,10 +156,11 @@ digraph "" {
 	"train(7)" -> "vocab_check_coverage[0]"	[label=_argToVar];
 	"test(7)" -> "vocab_check_coverage[1]"	[label=_argToVar];
 	"df(7)$0" -> "pd(7)"	[label=reset_index];
-	"df(7)$0" -> "[<_ast.Name object at 0x130532880>, <_ast.Name object at 0x1305329a0>](7)"	[label=reset_index];
+	"df(7)$0" -> "[<_ast.Name object at 0x7fd4902ab220>, <_ast.Name object at 0x7fd4902ab190>](7)"	[label=reset_index];
 	"df(7)$0" -> "True(7)"	[label=reset_index];
 	"vocab(7)$0" -> "df(7)$0"	[label=build_vocab];
 	"vocab(7)$0" -> "comment_text(7)"	[label=build_vocab];
+	"print[99/4]" -> "Glove : (7)"	[label=print];
 	"oov_glove(7)$0" -> "vocab(7)$0"	[label=check_coverage];
 	"oov_glove(7)$0" -> "embed_glove(7)"	[label=check_coverage];
 	"oov_glove(7)$1" -> "vocab(7)$0"	[label=assignedFrom];
@@ -195,6 +168,7 @@ digraph "" {
 	"oov_glove(7)$1" -> "oov_rate(7)"	[label=assignedFrom];
 	"oov_glove(7)$1" -> "oov_words(7)"	[label=assignedFrom];
 	"oov_glove(7)$1" -> "len(7)"	[label=assignedFrom];
+	"print[102/4]" -> "Paragram : (7)"	[label=print];
 	"oov_paragram(7)$0" -> "vocab(7)$0"	[label=check_coverage];
 	"oov_paragram(7)$0" -> "embed_paragram(7)"	[label=check_coverage];
 	"oov_paragram(7)$1" -> "vocab(7)$0"	[label=assignedFrom];
@@ -202,6 +176,7 @@ digraph "" {
 	"oov_paragram(7)$1" -> "oov_words(7)"	[label=assignedFrom];
 	"oov_paragram(7)$1" -> "len(7)"	[label=assignedFrom];
 	"oov_paragram(7)$1" -> "oov_paragram(7)$1"	[label=assignedFrom];
+	"print[105/4]" -> "FastText : (7)"	[label=print];
 	"oov_fasttext(7)$0" -> "vocab(7)$0"	[label=check_coverage];
 	"oov_fasttext(7)$0" -> "embed_fasttext(7)"	[label=check_coverage];
 	"oov_fasttext(7)$1" -> "vocab(7)$0"	[label=assignedFrom];
@@ -211,14 +186,14 @@ digraph "" {
 	"oov_fasttext(7)$1" -> "oov_fasttext(7)$1"	[label=assignedFrom];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "../input/jigsaw-unintended-bias-in-toxicity-classification/train.csv(0)"	[label=read_csv];
-	"train(0)$0" -> "[<_ast.Constant object at 0x12fadec10>](0)"	[label=read_csv];
+	"train(0)$0" -> "[<_ast.Constant object at 0x7fd50080dfd0>](0)"	[label=read_csv];
 	"../input/jigsaw-unintended-bias-in-toxicity-classification/train.csv(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadec10>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080dfd0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"test(0)$0" -> "pd(0)"	[label=read_csv];
 	"test(0)$0" -> "../input/jigsaw-unintended-bias-in-toxicity-classification/test.csv(0)"	[label=read_csv];
-	"test(0)$0" -> "[<_ast.Constant object at 0x12fade880>](0)"	[label=read_csv];
+	"test(0)$0" -> "[<_ast.Constant object at 0x7fd50080d2e0>](0)"	[label=read_csv];
 	"../input/jigsaw-unintended-bias-in-toxicity-classification/test.csv(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade880>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d2e0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"Trump's(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"contraction_mapping(0)$0" -> "Trump's(0)"	[label=assignedFrom];
 	"contraction_mapping(0)$0" -> "'cause(0)"	[label=assignedFrom];
@@ -1689,14 +1664,14 @@ digraph "" {
 	" (0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	" ... (0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa121f0>, <_ast.Constant object at 0x12fa12250>, <_ast.Constant object at 0x12fa12280>, <_ast.Constant \
-object at 0x12fa122b0>, <_ast.Constant object at 0x12fa122e0>, <_ast.Constant object at 0x12fa12310>, <_ast.Constant object at 0x12fa12340>, <_\
-ast.Constant object at 0x12fa12370>, <_ast.Constant object at 0x12fa123a0>, <_ast.Constant object at 0x12fa123d0>, <_ast.Constant \
-object at 0x12fa12400>, <_ast.Constant object at 0x12fa12430>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"spaces(0)$0" -> "[<_ast.Constant object at 0x12fa121f0>, <_ast.Constant object at 0x12fa12250>, <_ast.Constant object at 0x12fa12280>, <_ast.Constant \
-object at 0x12fa122b0>, <_ast.Constant object at 0x12fa122e0>, <_ast.Constant object at 0x12fa12310>, <_ast.Constant object at 0x12fa12340>, <_\
-ast.Constant object at 0x12fa12370>, <_ast.Constant object at 0x12fa123a0>, <_ast.Constant object at 0x12fa123d0>, <_ast.Constant \
-object at 0x12fa12400>, <_ast.Constant object at 0x12fa12430>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082ceb0>, <_ast.Constant object at 0x7fd50082cee0>, <_ast.Constant object at 0x7fd50082cf10>, <_\
+ast.Constant object at 0x7fd50082cf40>, <_ast.Constant object at 0x7fd50082cf70>, <_ast.Constant object at 0x7fd50082cfa0>, <_ast.Constant \
+object at 0x7fd50082cfd0>, <_ast.Constant object at 0x7fd50082c400>, <_ast.Constant object at 0x7fd50081a040>, <_ast.Constant object \
+at 0x7fd50081a070>, <_ast.Constant object at 0x7fd50081a0a0>, <_ast.Constant object at 0x7fd50081a0d0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"spaces(0)$0" -> "[<_ast.Constant object at 0x7fd50082ceb0>, <_ast.Constant object at 0x7fd50082cee0>, <_ast.Constant object at 0x7fd50082cf10>, <_\
+ast.Constant object at 0x7fd50082cf40>, <_ast.Constant object at 0x7fd50082cf70>, <_ast.Constant object at 0x7fd50082cfa0>, <_ast.Constant \
+object at 0x7fd50082cfd0>, <_ast.Constant object at 0x7fd50082c400>, <_ast.Constant object at 0x7fd50081a040>, <_ast.Constant object \
+at 0x7fd50081a070>, <_ast.Constant object at 0x7fd50081a0a0>, <_ast.Constant object at 0x7fd50081a0d0>](0)"	[label=assignedFrom];
 	" s.p (0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"rare_words_mapping(0)$0" -> "Trumpcare(0)"	[label=assignedFrom];
 	"rare_words_mapping(0)$0" -> "Trumpsters(0)"	[label=assignedFrom];
@@ -1998,86 +1973,92 @@ object at 0x12fa12400>, <_ast.Constant object at 0x12fa12430>](0)"	[label=assign
 	"bitc(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"bit(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"bull(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa09880>, <_ast.Constant object at 0x12fa098b0>, <_ast.Constant object at 0x12fa098e0>, <_ast.Constant \
-object at 0x12fa09910>, <_ast.Constant object at 0x12fa09940>, <_ast.Constant object at 0x12fa09970>, <_ast.Constant object at 0x12fa099a0>, <_\
-ast.Constant object at 0x12fa099d0>, <_ast.Constant object at 0x12fa09a00>, <_ast.Constant object at 0x12fa09a30>, <_ast.Constant \
-object at 0x12fa09a60>, <_ast.Constant object at 0x12fa09a90>, <_ast.Constant object at 0x12fa09ac0>, <_ast.Constant object at 0x12fa09af0>, <_\
-ast.Constant object at 0x12fa09b20>, <_ast.Constant object at 0x12fa09b50>, <_ast.Constant object at 0x12fa09b80>, <_ast.Constant \
-object at 0x12fa09bb0>, <_ast.Constant object at 0x12fa09be0>, <_ast.Constant object at 0x12fa09c10>, <_ast.Constant object at 0x12fa09c40>, <_\
-ast.Constant object at 0x12fa09c70>, <_ast.Constant object at 0x12fa09ca0>, <_ast.Constant object at 0x12fa09cd0>, <_ast.Constant \
-object at 0x12fa09d00>, <_ast.Constant object at 0x12fa09d30>, <_ast.Constant object at 0x12fa09d60>, <_ast.Constant object at 0x12fa09d90>, <_\
-ast.Constant object at 0x12fa09dc0>, <_ast.Constant object at 0x12fa09df0>, <_ast.Constant object at 0x12fa09e20>, <_ast.Constant \
-object at 0x12fa09e50>, <_ast.Constant object at 0x12fa09e80>, <_ast.Constant object at 0x12fa09eb0>, <_ast.Constant object at 0x12fa09f10>, <_\
-ast.Constant object at 0x12fa09f40>, <_ast.Constant object at 0x12fa09f70>, <_ast.Constant object at 0x12fa09fa0>, <_ast.Constant \
-object at 0x12fa09fd0>, <_ast.Constant object at 0x12fa09ee0>, <_ast.Constant object at 0x12fa89040>, <_ast.Constant object at 0x12fa89070>, <_\
-ast.Constant object at 0x12fa890a0>, <_ast.Constant object at 0x12fa890d0>, <_ast.Constant object at 0x12fa89100>, <_ast.Constant \
-object at 0x12fa89160>, <_ast.Constant object at 0x12fa891c0>, <_ast.Constant object at 0x12fa891f0>, <_ast.Constant object at 0x12fa89220>, <_\
-ast.Constant object at 0x12fa89250>, <_ast.Constant object at 0x12fa89280>, <_ast.Constant object at 0x12fa892b0>, <_ast.Constant \
-object at 0x12fa892e0>, <_ast.Constant object at 0x12fa89340>, <_ast.Constant object at 0x12fa89370>, <_ast.Constant object at 0x12fa893a0>, <_\
-ast.Constant object at 0x12fa893d0>, <_ast.Constant object at 0x12fa89400>, <_ast.Constant object at 0x12fa89430>, <_ast.Constant \
-object at 0x12fa89460>, <_ast.Constant object at 0x12fa89490>, <_ast.Constant object at 0x12fa894c0>, <_ast.Constant object at 0x12fa89190>, <_\
-ast.Constant object at 0x12fa894f0>, <_ast.Constant object at 0x12fa89520>, <_ast.Constant object at 0x12fa89550>, <_ast.Constant \
-object at 0x12fa89580>, <_ast.Constant object at 0x12fa895b0>, <_ast.Constant object at 0x12fa895e0>, <_ast.Constant object at 0x12fa89310>, <_\
-ast.Constant object at 0x12fa89610>, <_ast.Constant object at 0x12fa89640>, <_ast.Constant object at 0x12fa89670>, <_ast.Constant \
-object at 0x12fa896a0>, <_ast.Constant object at 0x12fa896d0>, <_ast.Constant object at 0x12fa89700>, <_ast.Constant object at 0x12fa89760>, <_\
-ast.Constant object at 0x12fa89790>, <_ast.Constant object at 0x12fa897c0>, <_ast.Constant object at 0x12fa897f0>, <_ast.Constant \
-object at 0x12fa89820>, <_ast.Constant object at 0x12fa89850>, <_ast.Constant object at 0x12fa89880>, <_ast.Constant object at 0x12fa898e0>, <_\
-ast.Constant object at 0x12fa89910>, <_ast.Constant object at 0x12fa89940>, <_ast.Constant object at 0x12fa89970>, <_ast.Constant \
-object at 0x12fa899a0>, <_ast.Constant object at 0x12fa899d0>, <_ast.Constant object at 0x12fa89a00>, <_ast.Constant object at 0x12fa89a30>, <_\
-ast.Constant object at 0x12fa89a60>, <_ast.Constant object at 0x12fa89a90>, <_ast.Constant object at 0x12fa89730>, <_ast.Constant \
-object at 0x12fa89ac0>, <_ast.Constant object at 0x12fa89af0>, <_ast.Constant object at 0x12fa89b20>, <_ast.Constant object at 0x12fa89b50>, <_\
-ast.Constant object at 0x12fa89b80>, <_ast.Constant object at 0x12fa898b0>, <_ast.Constant object at 0x12fa89bb0>, <_ast.Constant \
-object at 0x12fa89be0>, <_ast.Constant object at 0x12fa89c10>, <_ast.Constant object at 0x12fa89c40>, <_ast.Constant object at 0x12fa89c70>, <_\
-ast.Constant object at 0x12fa89ca0>, <_ast.Constant object at 0x12fa89cd0>, <_ast.Constant object at 0x12fa89d00>, <_ast.Constant \
-object at 0x12fa89d30>, <_ast.Constant object at 0x12fa89130>, <_ast.Constant object at 0x12fa89d90>, <_ast.Constant object at 0x12fa89df0>, <_\
-ast.Constant object at 0x12fa89e20>, <_ast.Constant object at 0x12fa89e80>, <_ast.Constant object at 0x12fa89eb0>, <_ast.Constant \
-object at 0x12fa89ee0>, <_ast.Constant object at 0x12fa89f10>, <_ast.Constant object at 0x12fa89f40>, <_ast.Constant object at 0x12fa89f70>, <_\
-ast.Constant object at 0x12fa89fa0>, <_ast.Constant object at 0x12fa89fd0>, <_ast.Constant object at 0x12fa89e50>, <_ast.Constant \
-object at 0x12fa89dc0>, <_ast.Constant object at 0x12fa89d60>, <_ast.Constant object at 0x12fa72040>, <_ast.Constant object at 0x12fa72070>, <_\
-ast.Constant object at 0x12fa720a0>, <_ast.Constant object at 0x12fa720d0>, <_ast.Constant object at 0x12fa72100>, <_ast.Constant \
-object at 0x12fa72130>, <_ast.Constant object at 0x12fa72160>, <_ast.Constant object at 0x12fa72190>, <_ast.Constant object at 0x12fa721c0>, <_\
-ast.Constant object at 0x12fa721f0>, <_ast.Constant object at 0x12fa72220>, <_ast.Constant object at 0x12fa72250>, <_ast.Constant \
-object at 0x12fa72280>, <_ast.Constant object at 0x12fa722b0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"extra_punct(0)$0" -> "[<_ast.Constant object at 0x12fa09880>, <_ast.Constant object at 0x12fa098b0>, <_ast.Constant object at 0x12fa098e0>, <_ast.Constant \
-object at 0x12fa09910>, <_ast.Constant object at 0x12fa09940>, <_ast.Constant object at 0x12fa09970>, <_ast.Constant object at 0x12fa099a0>, <_\
-ast.Constant object at 0x12fa099d0>, <_ast.Constant object at 0x12fa09a00>, <_ast.Constant object at 0x12fa09a30>, <_ast.Constant \
-object at 0x12fa09a60>, <_ast.Constant object at 0x12fa09a90>, <_ast.Constant object at 0x12fa09ac0>, <_ast.Constant object at 0x12fa09af0>, <_\
-ast.Constant object at 0x12fa09b20>, <_ast.Constant object at 0x12fa09b50>, <_ast.Constant object at 0x12fa09b80>, <_ast.Constant \
-object at 0x12fa09bb0>, <_ast.Constant object at 0x12fa09be0>, <_ast.Constant object at 0x12fa09c10>, <_ast.Constant object at 0x12fa09c40>, <_\
-ast.Constant object at 0x12fa09c70>, <_ast.Constant object at 0x12fa09ca0>, <_ast.Constant object at 0x12fa09cd0>, <_ast.Constant \
-object at 0x12fa09d00>, <_ast.Constant object at 0x12fa09d30>, <_ast.Constant object at 0x12fa09d60>, <_ast.Constant object at 0x12fa09d90>, <_\
-ast.Constant object at 0x12fa09dc0>, <_ast.Constant object at 0x12fa09df0>, <_ast.Constant object at 0x12fa09e20>, <_ast.Constant \
-object at 0x12fa09e50>, <_ast.Constant object at 0x12fa09e80>, <_ast.Constant object at 0x12fa09eb0>, <_ast.Constant object at 0x12fa09f10>, <_\
-ast.Constant object at 0x12fa09f40>, <_ast.Constant object at 0x12fa09f70>, <_ast.Constant object at 0x12fa09fa0>, <_ast.Constant \
-object at 0x12fa09fd0>, <_ast.Constant object at 0x12fa09ee0>, <_ast.Constant object at 0x12fa89040>, <_ast.Constant object at 0x12fa89070>, <_\
-ast.Constant object at 0x12fa890a0>, <_ast.Constant object at 0x12fa890d0>, <_ast.Constant object at 0x12fa89100>, <_ast.Constant \
-object at 0x12fa89160>, <_ast.Constant object at 0x12fa891c0>, <_ast.Constant object at 0x12fa891f0>, <_ast.Constant object at 0x12fa89220>, <_\
-ast.Constant object at 0x12fa89250>, <_ast.Constant object at 0x12fa89280>, <_ast.Constant object at 0x12fa892b0>, <_ast.Constant \
-object at 0x12fa892e0>, <_ast.Constant object at 0x12fa89340>, <_ast.Constant object at 0x12fa89370>, <_ast.Constant object at 0x12fa893a0>, <_\
-ast.Constant object at 0x12fa893d0>, <_ast.Constant object at 0x12fa89400>, <_ast.Constant object at 0x12fa89430>, <_ast.Constant \
-object at 0x12fa89460>, <_ast.Constant object at 0x12fa89490>, <_ast.Constant object at 0x12fa894c0>, <_ast.Constant object at 0x12fa89190>, <_\
-ast.Constant object at 0x12fa894f0>, <_ast.Constant object at 0x12fa89520>, <_ast.Constant object at 0x12fa89550>, <_ast.Constant \
-object at 0x12fa89580>, <_ast.Constant object at 0x12fa895b0>, <_ast.Constant object at 0x12fa895e0>, <_ast.Constant object at 0x12fa89310>, <_\
-ast.Constant object at 0x12fa89610>, <_ast.Constant object at 0x12fa89640>, <_ast.Constant object at 0x12fa89670>, <_ast.Constant \
-object at 0x12fa896a0>, <_ast.Constant object at 0x12fa896d0>, <_ast.Constant object at 0x12fa89700>, <_ast.Constant object at 0x12fa89760>, <_\
-ast.Constant object at 0x12fa89790>, <_ast.Constant object at 0x12fa897c0>, <_ast.Constant object at 0x12fa897f0>, <_ast.Constant \
-object at 0x12fa89820>, <_ast.Constant object at 0x12fa89850>, <_ast.Constant object at 0x12fa89880>, <_ast.Constant object at 0x12fa898e0>, <_\
-ast.Constant object at 0x12fa89910>, <_ast.Constant object at 0x12fa89940>, <_ast.Constant object at 0x12fa89970>, <_ast.Constant \
-object at 0x12fa899a0>, <_ast.Constant object at 0x12fa899d0>, <_ast.Constant object at 0x12fa89a00>, <_ast.Constant object at 0x12fa89a30>, <_\
-ast.Constant object at 0x12fa89a60>, <_ast.Constant object at 0x12fa89a90>, <_ast.Constant object at 0x12fa89730>, <_ast.Constant \
-object at 0x12fa89ac0>, <_ast.Constant object at 0x12fa89af0>, <_ast.Constant object at 0x12fa89b20>, <_ast.Constant object at 0x12fa89b50>, <_\
-ast.Constant object at 0x12fa89b80>, <_ast.Constant object at 0x12fa898b0>, <_ast.Constant object at 0x12fa89bb0>, <_ast.Constant \
-object at 0x12fa89be0>, <_ast.Constant object at 0x12fa89c10>, <_ast.Constant object at 0x12fa89c40>, <_ast.Constant object at 0x12fa89c70>, <_\
-ast.Constant object at 0x12fa89ca0>, <_ast.Constant object at 0x12fa89cd0>, <_ast.Constant object at 0x12fa89d00>, <_ast.Constant \
-object at 0x12fa89d30>, <_ast.Constant object at 0x12fa89130>, <_ast.Constant object at 0x12fa89d90>, <_ast.Constant object at 0x12fa89df0>, <_\
-ast.Constant object at 0x12fa89e20>, <_ast.Constant object at 0x12fa89e80>, <_ast.Constant object at 0x12fa89eb0>, <_ast.Constant \
-object at 0x12fa89ee0>, <_ast.Constant object at 0x12fa89f10>, <_ast.Constant object at 0x12fa89f40>, <_ast.Constant object at 0x12fa89f70>, <_\
-ast.Constant object at 0x12fa89fa0>, <_ast.Constant object at 0x12fa89fd0>, <_ast.Constant object at 0x12fa89e50>, <_ast.Constant \
-object at 0x12fa89dc0>, <_ast.Constant object at 0x12fa89d60>, <_ast.Constant object at 0x12fa72040>, <_ast.Constant object at 0x12fa72070>, <_\
-ast.Constant object at 0x12fa720a0>, <_ast.Constant object at 0x12fa720d0>, <_ast.Constant object at 0x12fa72100>, <_ast.Constant \
-object at 0x12fa72130>, <_ast.Constant object at 0x12fa72160>, <_ast.Constant object at 0x12fa72190>, <_ast.Constant object at 0x12fa721c0>, <_\
-ast.Constant object at 0x12fa721f0>, <_ast.Constant object at 0x12fa72220>, <_ast.Constant object at 0x12fa72250>, <_ast.Constant \
-object at 0x12fa72280>, <_ast.Constant object at 0x12fa722b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05b15b0>, <_ast.Constant object at 0x7fd4c05b15e0>, <_ast.Constant object at 0x7fd4c05b1640>, <_\
+ast.Constant object at 0x7fd4c05b1610>, <_ast.Constant object at 0x7fd4c05b1670>, <_ast.Constant object at 0x7fd4c05b16a0>, <_ast.Constant \
+object at 0x7fd4c05b16d0>, <_ast.Constant object at 0x7fd4c05b1700>, <_ast.Constant object at 0x7fd4c05b1730>, <_ast.Constant object \
+at 0x7fd4c05b1760>, <_ast.Constant object at 0x7fd4c05b1790>, <_ast.Constant object at 0x7fd4c05b17c0>, <_ast.Constant object at \
+0x7fd4c05b17f0>, <_ast.Constant object at 0x7fd4c05b1820>, <_ast.Constant object at 0x7fd4c05b1850>, <_ast.Constant object at 0x7fd4c05b1880>, <_\
+ast.Constant object at 0x7fd4c05b18b0>, <_ast.Constant object at 0x7fd4c05b18e0>, <_ast.Constant object at 0x7fd4c05b1910>, <_ast.Constant \
+object at 0x7fd4c05b1940>, <_ast.Constant object at 0x7fd4c05b1580>, <_ast.Constant object at 0x7fd4c05b1970>, <_ast.Constant object \
+at 0x7fd4c05b19d0>, <_ast.Constant object at 0x7fd4c05b19a0>, <_ast.Constant object at 0x7fd4c05b1a00>, <_ast.Constant object at \
+0x7fd4c05b1a30>, <_ast.Constant object at 0x7fd4c05b1a60>, <_ast.Constant object at 0x7fd4c05b1a90>, <_ast.Constant object at 0x7fd4c05b1ac0>, <_\
+ast.Constant object at 0x7fd4c05b1af0>, <_ast.Constant object at 0x7fd4c05b1b20>, <_ast.Constant object at 0x7fd4c05b1b50>, <_ast.Constant \
+object at 0x7fd4c05b1b80>, <_ast.Constant object at 0x7fd4c05b1bb0>, <_ast.Constant object at 0x7fd4c05b1be0>, <_ast.Constant object \
+at 0x7fd4c05b1c10>, <_ast.Constant object at 0x7fd4c05b1c40>, <_ast.Constant object at 0x7fd4c05b1c70>, <_ast.Constant object at \
+0x7fd4c05b1ca0>, <_ast.Constant object at 0x7fd4c05b1cd0>, <_ast.Constant object at 0x7fd4c05b1d00>, <_ast.Constant object at 0x7fd4c05b1d30>, <_\
+ast.Constant object at 0x7fd4c05b1d60>, <_ast.Constant object at 0x7fd4c05b1d90>, <_ast.Constant object at 0x7fd4c05b1dc0>, <_ast.Constant \
+object at 0x7fd4c05b1df0>, <_ast.Constant object at 0x7fd4c05b1e20>, <_ast.Constant object at 0x7fd4c05b1e50>, <_ast.Constant object \
+at 0x7fd4c05b1e80>, <_ast.Constant object at 0x7fd4c05b1eb0>, <_ast.Constant object at 0x7fd4c05b1ee0>, <_ast.Constant object at \
+0x7fd4c05b1f10>, <_ast.Constant object at 0x7fd4c05b1f40>, <_ast.Constant object at 0x7fd4c05b1f70>, <_ast.Constant object at 0x7fd4c05b1fa0>, <_\
+ast.Constant object at 0x7fd4c05b1fd0>, <_ast.Constant object at 0x7fd4c05bd040>, <_ast.Constant object at 0x7fd4c05bd070>, <_ast.Constant \
+object at 0x7fd4c05bd0a0>, <_ast.Constant object at 0x7fd4c05bd0d0>, <_ast.Constant object at 0x7fd4c05bd100>, <_ast.Constant object \
+at 0x7fd4c05bd130>, <_ast.Constant object at 0x7fd4c05bd160>, <_ast.Constant object at 0x7fd4c05bd190>, <_ast.Constant object at \
+0x7fd4c05bd1c0>, <_ast.Constant object at 0x7fd4c05bd1f0>, <_ast.Constant object at 0x7fd4c05bd220>, <_ast.Constant object at 0x7fd4c05bd250>, <_\
+ast.Constant object at 0x7fd4c05bd280>, <_ast.Constant object at 0x7fd4c05bd2b0>, <_ast.Constant object at 0x7fd4c05bd2e0>, <_ast.Constant \
+object at 0x7fd4c05bd310>, <_ast.Constant object at 0x7fd4c05bd340>, <_ast.Constant object at 0x7fd4c05bd370>, <_ast.Constant object \
+at 0x7fd4c05bd3a0>, <_ast.Constant object at 0x7fd4c05bd3d0>, <_ast.Constant object at 0x7fd4c05bd400>, <_ast.Constant object at \
+0x7fd4c05bd460>, <_ast.Constant object at 0x7fd4c05bd490>, <_ast.Constant object at 0x7fd4c05bd4c0>, <_ast.Constant object at 0x7fd4c05bd4f0>, <_\
+ast.Constant object at 0x7fd4c05bd520>, <_ast.Constant object at 0x7fd4c05bd550>, <_ast.Constant object at 0x7fd4c05bd580>, <_ast.Constant \
+object at 0x7fd4c05bd5b0>, <_ast.Constant object at 0x7fd4c05bd5e0>, <_ast.Constant object at 0x7fd4c05bd610>, <_ast.Constant object \
+at 0x7fd4c05bd640>, <_ast.Constant object at 0x7fd4c05bd670>, <_ast.Constant object at 0x7fd4c05bd6a0>, <_ast.Constant object at \
+0x7fd4c05bd6d0>, <_ast.Constant object at 0x7fd4c05bd700>, <_ast.Constant object at 0x7fd4c05bd730>, <_ast.Constant object at 0x7fd4c05bd760>, <_\
+ast.Constant object at 0x7fd4c05bd790>, <_ast.Constant object at 0x7fd4c05bd7c0>, <_ast.Constant object at 0x7fd4c05bd7f0>, <_ast.Constant \
+object at 0x7fd4c05bd820>, <_ast.Constant object at 0x7fd4c05bd850>, <_ast.Constant object at 0x7fd4c05bd880>, <_ast.Constant object \
+at 0x7fd4c05bd8b0>, <_ast.Constant object at 0x7fd4c05bd8e0>, <_ast.Constant object at 0x7fd4c05bd910>, <_ast.Constant object at \
+0x7fd4c05bd940>, <_ast.Constant object at 0x7fd4c05bd970>, <_ast.Constant object at 0x7fd4c05bd9a0>, <_ast.Constant object at 0x7fd4c05bd9d0>, <_\
+ast.Constant object at 0x7fd4c05bda00>, <_ast.Constant object at 0x7fd4c05bda30>, <_ast.Constant object at 0x7fd4c05bd430>, <_ast.Constant \
+object at 0x7fd4c05bda60>, <_ast.Constant object at 0x7fd4c05bda90>, <_ast.Constant object at 0x7fd4c05bdac0>, <_ast.Constant object \
+at 0x7fd4c05bdaf0>, <_ast.Constant object at 0x7fd4c05bdb20>, <_ast.Constant object at 0x7fd4c05bdb50>, <_ast.Constant object at \
+0x7fd4c05bdb80>, <_ast.Constant object at 0x7fd4c05bdbb0>, <_ast.Constant object at 0x7fd4c05bdbe0>, <_ast.Constant object at 0x7fd4c05bdc10>, <_\
+ast.Constant object at 0x7fd4c05bdc40>, <_ast.Constant object at 0x7fd4c05bdc70>, <_ast.Constant object at 0x7fd4c05bdca0>, <_ast.Constant \
+object at 0x7fd4c05bdcd0>, <_ast.Constant object at 0x7fd4c05bdd00>, <_ast.Constant object at 0x7fd4c05bdd30>, <_ast.Constant object \
+at 0x7fd4c05bdd60>, <_ast.Constant object at 0x7fd4c05bdd90>, <_ast.Constant object at 0x7fd4c05bddc0>, <_ast.Constant object at \
+0x7fd4c05bddf0>, <_ast.Constant object at 0x7fd4c05bde20>, <_ast.Constant object at 0x7fd4c05bde50>, <_ast.Constant object at 0x7fd4c05bde80>, <_\
+ast.Constant object at 0x7fd4c05bdeb0>, <_ast.Constant object at 0x7fd4c05bdee0>, <_ast.Constant object at 0x7fd4c05bdf10>, <_ast.Constant \
+object at 0x7fd4c05bdf40>, <_ast.Constant object at 0x7fd4c05bdf70>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"extra_punct(0)$0" -> "[<_ast.Constant object at 0x7fd4c05b15b0>, <_ast.Constant object at 0x7fd4c05b15e0>, <_ast.Constant object at 0x7fd4c05b1640>, <_\
+ast.Constant object at 0x7fd4c05b1610>, <_ast.Constant object at 0x7fd4c05b1670>, <_ast.Constant object at 0x7fd4c05b16a0>, <_ast.Constant \
+object at 0x7fd4c05b16d0>, <_ast.Constant object at 0x7fd4c05b1700>, <_ast.Constant object at 0x7fd4c05b1730>, <_ast.Constant object \
+at 0x7fd4c05b1760>, <_ast.Constant object at 0x7fd4c05b1790>, <_ast.Constant object at 0x7fd4c05b17c0>, <_ast.Constant object at \
+0x7fd4c05b17f0>, <_ast.Constant object at 0x7fd4c05b1820>, <_ast.Constant object at 0x7fd4c05b1850>, <_ast.Constant object at 0x7fd4c05b1880>, <_\
+ast.Constant object at 0x7fd4c05b18b0>, <_ast.Constant object at 0x7fd4c05b18e0>, <_ast.Constant object at 0x7fd4c05b1910>, <_ast.Constant \
+object at 0x7fd4c05b1940>, <_ast.Constant object at 0x7fd4c05b1580>, <_ast.Constant object at 0x7fd4c05b1970>, <_ast.Constant object \
+at 0x7fd4c05b19d0>, <_ast.Constant object at 0x7fd4c05b19a0>, <_ast.Constant object at 0x7fd4c05b1a00>, <_ast.Constant object at \
+0x7fd4c05b1a30>, <_ast.Constant object at 0x7fd4c05b1a60>, <_ast.Constant object at 0x7fd4c05b1a90>, <_ast.Constant object at 0x7fd4c05b1ac0>, <_\
+ast.Constant object at 0x7fd4c05b1af0>, <_ast.Constant object at 0x7fd4c05b1b20>, <_ast.Constant object at 0x7fd4c05b1b50>, <_ast.Constant \
+object at 0x7fd4c05b1b80>, <_ast.Constant object at 0x7fd4c05b1bb0>, <_ast.Constant object at 0x7fd4c05b1be0>, <_ast.Constant object \
+at 0x7fd4c05b1c10>, <_ast.Constant object at 0x7fd4c05b1c40>, <_ast.Constant object at 0x7fd4c05b1c70>, <_ast.Constant object at \
+0x7fd4c05b1ca0>, <_ast.Constant object at 0x7fd4c05b1cd0>, <_ast.Constant object at 0x7fd4c05b1d00>, <_ast.Constant object at 0x7fd4c05b1d30>, <_\
+ast.Constant object at 0x7fd4c05b1d60>, <_ast.Constant object at 0x7fd4c05b1d90>, <_ast.Constant object at 0x7fd4c05b1dc0>, <_ast.Constant \
+object at 0x7fd4c05b1df0>, <_ast.Constant object at 0x7fd4c05b1e20>, <_ast.Constant object at 0x7fd4c05b1e50>, <_ast.Constant object \
+at 0x7fd4c05b1e80>, <_ast.Constant object at 0x7fd4c05b1eb0>, <_ast.Constant object at 0x7fd4c05b1ee0>, <_ast.Constant object at \
+0x7fd4c05b1f10>, <_ast.Constant object at 0x7fd4c05b1f40>, <_ast.Constant object at 0x7fd4c05b1f70>, <_ast.Constant object at 0x7fd4c05b1fa0>, <_\
+ast.Constant object at 0x7fd4c05b1fd0>, <_ast.Constant object at 0x7fd4c05bd040>, <_ast.Constant object at 0x7fd4c05bd070>, <_ast.Constant \
+object at 0x7fd4c05bd0a0>, <_ast.Constant object at 0x7fd4c05bd0d0>, <_ast.Constant object at 0x7fd4c05bd100>, <_ast.Constant object \
+at 0x7fd4c05bd130>, <_ast.Constant object at 0x7fd4c05bd160>, <_ast.Constant object at 0x7fd4c05bd190>, <_ast.Constant object at \
+0x7fd4c05bd1c0>, <_ast.Constant object at 0x7fd4c05bd1f0>, <_ast.Constant object at 0x7fd4c05bd220>, <_ast.Constant object at 0x7fd4c05bd250>, <_\
+ast.Constant object at 0x7fd4c05bd280>, <_ast.Constant object at 0x7fd4c05bd2b0>, <_ast.Constant object at 0x7fd4c05bd2e0>, <_ast.Constant \
+object at 0x7fd4c05bd310>, <_ast.Constant object at 0x7fd4c05bd340>, <_ast.Constant object at 0x7fd4c05bd370>, <_ast.Constant object \
+at 0x7fd4c05bd3a0>, <_ast.Constant object at 0x7fd4c05bd3d0>, <_ast.Constant object at 0x7fd4c05bd400>, <_ast.Constant object at \
+0x7fd4c05bd460>, <_ast.Constant object at 0x7fd4c05bd490>, <_ast.Constant object at 0x7fd4c05bd4c0>, <_ast.Constant object at 0x7fd4c05bd4f0>, <_\
+ast.Constant object at 0x7fd4c05bd520>, <_ast.Constant object at 0x7fd4c05bd550>, <_ast.Constant object at 0x7fd4c05bd580>, <_ast.Constant \
+object at 0x7fd4c05bd5b0>, <_ast.Constant object at 0x7fd4c05bd5e0>, <_ast.Constant object at 0x7fd4c05bd610>, <_ast.Constant object \
+at 0x7fd4c05bd640>, <_ast.Constant object at 0x7fd4c05bd670>, <_ast.Constant object at 0x7fd4c05bd6a0>, <_ast.Constant object at \
+0x7fd4c05bd6d0>, <_ast.Constant object at 0x7fd4c05bd700>, <_ast.Constant object at 0x7fd4c05bd730>, <_ast.Constant object at 0x7fd4c05bd760>, <_\
+ast.Constant object at 0x7fd4c05bd790>, <_ast.Constant object at 0x7fd4c05bd7c0>, <_ast.Constant object at 0x7fd4c05bd7f0>, <_ast.Constant \
+object at 0x7fd4c05bd820>, <_ast.Constant object at 0x7fd4c05bd850>, <_ast.Constant object at 0x7fd4c05bd880>, <_ast.Constant object \
+at 0x7fd4c05bd8b0>, <_ast.Constant object at 0x7fd4c05bd8e0>, <_ast.Constant object at 0x7fd4c05bd910>, <_ast.Constant object at \
+0x7fd4c05bd940>, <_ast.Constant object at 0x7fd4c05bd970>, <_ast.Constant object at 0x7fd4c05bd9a0>, <_ast.Constant object at 0x7fd4c05bd9d0>, <_\
+ast.Constant object at 0x7fd4c05bda00>, <_ast.Constant object at 0x7fd4c05bda30>, <_ast.Constant object at 0x7fd4c05bd430>, <_ast.Constant \
+object at 0x7fd4c05bda60>, <_ast.Constant object at 0x7fd4c05bda90>, <_ast.Constant object at 0x7fd4c05bdac0>, <_ast.Constant object \
+at 0x7fd4c05bdaf0>, <_ast.Constant object at 0x7fd4c05bdb20>, <_ast.Constant object at 0x7fd4c05bdb50>, <_ast.Constant object at \
+0x7fd4c05bdb80>, <_ast.Constant object at 0x7fd4c05bdbb0>, <_ast.Constant object at 0x7fd4c05bdbe0>, <_ast.Constant object at 0x7fd4c05bdc10>, <_\
+ast.Constant object at 0x7fd4c05bdc40>, <_ast.Constant object at 0x7fd4c05bdc70>, <_ast.Constant object at 0x7fd4c05bdca0>, <_ast.Constant \
+object at 0x7fd4c05bdcd0>, <_ast.Constant object at 0x7fd4c05bdd00>, <_ast.Constant object at 0x7fd4c05bdd30>, <_ast.Constant object \
+at 0x7fd4c05bdd60>, <_ast.Constant object at 0x7fd4c05bdd90>, <_ast.Constant object at 0x7fd4c05bddc0>, <_ast.Constant object at \
+0x7fd4c05bddf0>, <_ast.Constant object at 0x7fd4c05bde20>, <_ast.Constant object at 0x7fd4c05bde50>, <_ast.Constant object at 0x7fd4c05bde80>, <_\
+ast.Constant object at 0x7fd4c05bdeb0>, <_ast.Constant object at 0x7fd4c05bdee0>, <_ast.Constant object at 0x7fd4c05bdf10>, <_ast.Constant \
+object at 0x7fd4c05bdf40>, <_ast.Constant object at 0x7fd4c05bdf70>](0)"	[label=assignedFrom];
 	"nationalpost(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"bad_case_words(0)$0" -> "because(0)"	[label=assignedFrom];
 	"bad_case_words(0)$0" -> "government(0)"	[label=assignedFrom];
@@ -10392,10 +10373,10 @@ object at 0x12fa72280>, <_ast.Constant object at 0x12fa722b0>](0)"	[label=assign
 	"text(15)$0" -> "text(15)"	[label=replace];
 	"text(15)$0" -> "bad_word(15)"	[label=replace];
 	"text(15)$0" -> "bad_case_words(15)"	[label=replace];
-	"[<_ast.Constant object at 0x12fca33d0>, <_ast.Constant object at 0x12fca3400>, <_ast.Constant object at 0x12fca3430>, <_ast.Constant \
-object at 0x12fca3460>, <_ast.Constant object at 0x12fca3490>, <_ast.Constant object at 0x12fca34c0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
-	"mis_connect_list(0)$0" -> "[<_ast.Constant object at 0x12fca33d0>, <_ast.Constant object at 0x12fca3400>, <_ast.Constant object at 0x12fca3430>, <_ast.Constant \
-object at 0x12fca3460>, <_ast.Constant object at 0x12fca3490>, <_ast.Constant object at 0x12fca34c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c06200d0>, <_ast.Constant object at 0x7fd4c0620100>, <_ast.Constant object at 0x7fd4c0620130>, <_\
+ast.Constant object at 0x7fd4c0620160>, <_ast.Constant object at 0x7fd4c0620190>, <_ast.Constant object at 0x7fd4c06201c0>](0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"mis_connect_list(0)$0" -> "[<_ast.Constant object at 0x7fd4c06200d0>, <_ast.Constant object at 0x7fd4c0620100>, <_ast.Constant object at 0x7fd4c0620130>, <_\
+ast.Constant object at 0x7fd4c0620160>, <_ast.Constant object at 0x7fd4c0620190>, <_ast.Constant object at 0x7fd4c06201c0>](0)"	[label=assignedFrom];
 	"mis_connect_re(0)$0" -> "re(0)"	[label=compile];
 	"mis_connect_re(0)$0" -> "mis_connect_list(0)$0"	[label=compile];
 	"mis_connect_re(0)$0" -> "(\%s)(0)"	[label=compile];
@@ -10702,7 +10683,32 @@ have|the|be|that|not|was|he|just|they|who)(how)(22)"	[label=sub];
 	"wiki_news(0)$0" -> "../input/quoratextemb/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec(0)"	[label=assignedFrom];
 	"../input/quoratextemb/embeddings/GoogleNews-vectors-negative300/GoogleNews-vectors-negative300.bin(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
 	"google_path(0)$0" -> "../input/quoratextemb/embeddings/GoogleNews-vectors-negative300/GoogleNews-vectors-negative300.bin(0)"	[label=assignedFrom];
+	"Extracting GloVe embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1212/0]" -> "Extracting GloVe embedding(0)"	[label=print];
 	"embed_glove(0)$0" -> "glove(0)$0"	[label=load_embed];
+	"Extracting Paragram embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1214/0]" -> "Extracting Paragram embedding(0)"	[label=print];
 	"embed_paragram(0)$0" -> "paragram(0)$0"	[label=load_embed];
+	"Extracting FastText embedding(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1216/0]" -> "Extracting FastText embedding(0)"	[label=print];
 	"embed_fasttext(0)$0" -> "wiki_news(0)$0"	[label=load_embed];
+	"oov_glove(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
+	"oov_glove(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
+	"oov_paragram(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
+	"oov_paragram(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$0" -> "train(0)$6"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$0" -> "test(0)$6"	[label=vocab_check_coverage];
+	"Default Embedding glove oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1222/0]" -> "oov_glove(0)$0"	[label=print];
+	"print[1222/0]" -> "Default Embedding glove oov rate:(0)"	[label=print];
+	"print[1222/0]" -> "oov_rate(0)"	[label=print];
+	"oov_rate(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"Default Embedding paragram oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1223/0]" -> "oov_paragram(0)$0"	[label=print];
+	"print[1223/0]" -> "oov_rate(0)"	[label=print];
+	"print[1223/0]" -> "Default Embedding paragram oov rate:(0)"	[label=print];
+	"Default Embedding fasttext oov rate:(0)" -> "public-version-text-cleaning-vocab-65.ipynb"	[label=appearsIn];
+	"print[1224/0]" -> "oov_fasttext(0)$0"	[label=print];
+	"print[1224/0]" -> "oov_rate(0)"	[label=print];
+	"print[1224/0]" -> "Default Embedding fasttext oov rate:(0)"	[label=print];
 }

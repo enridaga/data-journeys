@@ -17,7 +17,7 @@ digraph "" {
 	"df(0)$0" -> "../input/StudentsPerformance.csv(0)"	[label=read_csv];
 	"../input/StudentsPerformance.csv(0)" -> "student-performance-in-exams.ipynb"	[label=appearsIn];
 	"df(0)$1" -> "df(0)$0"	[label=head];
-	"print[0]" -> "df(0)$1"	[label=print];
+	"print[9/0]" -> "df(0)$1"	[label=print];
 	"df(0)$2" -> "df(0)$1"	[label=describe];
 	"df(0)$3" -> "df(0)$2"	[label=sum];
 	"p(0)$0" -> "sns(0)"	[label=countplot];

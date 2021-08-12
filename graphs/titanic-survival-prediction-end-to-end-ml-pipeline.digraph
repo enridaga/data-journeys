@@ -33,8 +33,8 @@ digraph "" {
 	"col(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"col(0)" -> "null_columns(0)$0"	[label=iteratorOf];
 	"col(0)" -> "cat_vars(0)$0"	[label=iteratorOf];
-	"cat_vars(0)$0" -> "[<_ast.Constant object at 0x12f8fffa0>, <_ast.Constant object at 0x12f8fffd0>, <_ast.Constant object at 0x12f922040>, <_ast.Constant \
-object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant object at 0x12f9220d0>](0)"	[label=assignedFrom];
+	"cat_vars(0)$0" -> "[<_ast.Constant object at 0x7fd500998ca0>, <_ast.Constant object at 0x7fd500998cd0>, <_ast.Constant object at 0x7fd500998d00>, <_\
+ast.Constant object at 0x7fd500998d30>, <_ast.Constant object at 0x7fd500998d60>, <_ast.Constant object at 0x7fd500998d90>](0)"	[label=assignedFrom];
 	"labels(0)$1" -> "labels(0)$0"	[label=append];
 	"labels(0)$1" -> "col(0)"	[label=append];
 	"values(0)$1" -> "titanic(0)$4"	[label=append];
@@ -117,10 +117,10 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"g(0)$4" -> "True(0)"	[label=FacetGrid];
 	"g(0)$4" -> "Set1(0)"	[label=FacetGrid];
 	"g(0)$4" -> "dict(0)"	[label=FacetGrid];
-	"g(0)$4" -> "[<_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f370>](0)"	[label=FacetGrid];
+	"g(0)$4" -> "[<_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab9a0>](0)"	[label=FacetGrid];
 	"Set1(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"dict(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f370>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab9a0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"g(0)$5" -> "g(0)$4"	[label=add_legend];
 	"plt(0)$0" -> "plt(0)"	[label=subplots_adjust];
 	"g(0)$6" -> "g(0)$5"	[label=suptitle];
@@ -255,10 +255,10 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"g(0)$12" -> "titanic(0)$13"	[label=FacetGrid];
 	"g(0)$12" -> "False(0)"	[label=FacetGrid];
 	"g(0)$12" -> "width_ratios(0)"	[label=FacetGrid];
-	"g(0)$12" -> "[<_ast.Constant object at 0x12f9a66d0>, <_ast.Constant object at 0x12f9a6700>, <_ast.Constant object at 0x12f9a6730>](0)"	[label=FacetGrid];
+	"g(0)$12" -> "[<_ast.Constant object at 0x7fd4c04aa3d0>, <_ast.Constant object at 0x7fd4c04aa400>, <_ast.Constant object at 0x7fd4c04aa430>](0)"	[label=FacetGrid];
 	"False(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"width_ratios(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a66d0>, <_ast.Constant object at 0x12f9a6700>, <_ast.Constant object at 0x12f9a6730>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04aa3d0>, <_ast.Constant object at 0x7fd4c04aa400>, <_ast.Constant object at 0x7fd4c04aa430>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"g(0)$13" -> "Age(0)"	[label=map];
 	"g(0)$13" -> "sns(0)$5"	[label=map];
 	"g(0)$13" -> "Deck(0)"	[label=map];
@@ -281,67 +281,9 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"titanic_test(0)$6" -> "SibSp(0)"	[label=Add];
 	"titanic_test(0)$6" -> "Parch(0)"	[label=Add];
 	"titanic_test(0)$6" -> "titanic_test(0)$6"	[label=Add];
-	"print[0]" -> "pd(0)$0"	[label=print];
-	"print[0]" -> "titanic(0)$16"	[label=print];
-	"print[0]" -> "titanic(0)$19"	[label=print];
-	"print[0]" -> "titanic(0)$21"	[label=print];
-	"print[0]" -> "scores(0)$0"	[label=print];
-	"print[0]" -> "scores(0)$1"	[label=print];
-	"print[0]" -> "scores(0)$2"	[label=print];
-	"print[0]" -> "scores(0)$4"	[label=print];
-	"print[0]" -> "scores(0)$5"	[label=print];
-	"titanic(0)$19" -> "titanic(0)$18"	[label=assignedFrom];
-	"titanic(0)$19" -> "large(0)"	[label=assignedFrom];
-	"titanic(0)$21" -> "pd(0)$0"	[label=cut];
-	"titanic(0)$21" -> "titanic(0)$21"	[label=cut];
-	"titanic(0)$21" -> "titanic(0)$20"	[label=cut];
-	"titanic(0)$21" -> "bins(0)$0"	[label=cut];
-	"titanic(0)$21" -> "group_names(0)$0"	[label=cut];
-	"titanic(0)$21" -> "NameLength(0)"	[label=cut];
-	"scores(0)$0" -> "Survived(0)"	[label=cross_val_score];
-	"scores(0)$0" -> "titanic(0)$45"	[label=cross_val_score];
-	"scores(0)$0" -> "predictors(0)$1"	[label=cross_val_score];
-	"scores(0)$0" -> "lr(0)$0"	[label=cross_val_score];
-	"scores(0)$0" -> "cv(0)$0"	[label=cross_val_score];
-	"scores(0)$0" -> "f1(0)"	[label=cross_val_score];
-	"scores(0)$1" -> "Survived(0)"	[label=cross_val_score];
-	"scores(0)$1" -> "titanic(0)$45"	[label=cross_val_score];
-	"scores(0)$1" -> "f1(0)"	[label=cross_val_score];
-	"scores(0)$1" -> "predictors(0)$2"	[label=cross_val_score];
-	"scores(0)$1" -> "rf(0)$0"	[label=cross_val_score];
-	"scores(0)$1" -> "kf(0)$1"	[label=cross_val_score];
-	"scores(0)$2" -> "Survived(0)"	[label=cross_val_score];
-	"scores(0)$2" -> "titanic(0)$45"	[label=cross_val_score];
-	"scores(0)$2" -> "f1(0)"	[label=cross_val_score];
-	"scores(0)$2" -> "predictors(0)$3"	[label=cross_val_score];
-	"scores(0)$2" -> "rf(0)$2"	[label=cross_val_score];
-	"scores(0)$2" -> "kf(0)$2"	[label=cross_val_score];
-	"scores(0)$4" -> "Survived(0)"	[label=cross_val_score];
-	"scores(0)$4" -> "titanic(0)$45"	[label=cross_val_score];
-	"scores(0)$4" -> "f1(0)"	[label=cross_val_score];
-	"scores(0)$4" -> "predictors(0)$5"	[label=cross_val_score];
-	"scores(0)$4" -> "lr(0)$1"	[label=cross_val_score];
-	"scores(0)$4" -> "cv(0)$2"	[label=cross_val_score];
-	"scores(0)$5" -> "Survived(0)"	[label=cross_val_score];
-	"scores(0)$5" -> "titanic(0)$45"	[label=cross_val_score];
-	"scores(0)$5" -> "f1(0)"	[label=cross_val_score];
-	"scores(0)$5" -> "predictors(0)$6"	[label=cross_val_score];
-	"scores(0)$5" -> "adb(0)$0"	[label=cross_val_score];
-	"scores(0)$5" -> "cv(0)$3"	[label=cross_val_score];
+	"print[235/0]" -> "titanic(0)$16"	[label=print];
+	"print[235/0]" -> "FamilySize(0)"	[label=print];
 	"FamilySize(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"print[1]" -> "FamilySize(0)"	[label=print];
-	"print[1]" -> "FsizeD(0)"	[label=print];
-	"print[1]" -> "NlengthD(0)"	[label=print];
-	"print[1]" -> "titles(0)$0"	[label=print];
-	"print[1]" -> "titles(0)$1"	[label=print];
-	"FsizeD(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"NlengthD(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"titles(0)$0" -> "titanic(0)$21"	[label=apply];
-	"titles(0)$0" -> "Name(0)"	[label=apply];
-	"titles(0)$0" -> "get_title(0)"	[label=apply];
-	"titles(0)$1" -> "Name(0)"	[label=apply];
-	"titles(0)$1" -> "titanic_test(0)$11"	[label=apply];
-	"titles(0)$1" -> "get_title(0)"	[label=apply];
 	"singleton(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic(0)$17" -> "titanic(0)$16"	[label=assignedFrom];
 	"titanic(0)$17" -> "singleton(0)"	[label=assignedFrom];
@@ -349,12 +291,19 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"titanic(0)$18" -> "titanic(0)$17"	[label=assignedFrom];
 	"titanic(0)$18" -> "small(0)"	[label=assignedFrom];
 	"large(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"titanic(0)$19" -> "titanic(0)$18"	[label=assignedFrom];
+	"titanic(0)$19" -> "large(0)"	[label=assignedFrom];
 	"titanic_test(0)$7" -> "titanic_test(0)$6"	[label=assignedFrom];
 	"titanic_test(0)$7" -> "singleton(0)"	[label=assignedFrom];
 	"titanic_test(0)$8" -> "small(0)"	[label=assignedFrom];
 	"titanic_test(0)$8" -> "titanic_test(0)$7"	[label=assignedFrom];
 	"titanic_test(0)$9" -> "large(0)"	[label=assignedFrom];
 	"titanic_test(0)$9" -> "titanic_test(0)$8"	[label=assignedFrom];
+	"print[252/0]" -> "titanic(0)$19"	[label=print];
+	"print[252/0]" -> "FsizeD(0)"	[label=print];
+	"FsizeD(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"print[254/0]" -> "titanic(0)$19"	[label=print];
+	"print[254/0]" -> "FsizeD(0)"	[label=print];
 	"sns(0)$6" -> "sns(0)$5"	[label=factorplot];
 	"titanic(0)$20" -> "len(0)"	[label=apply];
 	"titanic(0)$20" -> "titanic(0)$19"	[label=apply];
@@ -366,14 +315,20 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"titanic_test(0)$10" -> "titanic_test(0)$9"	[label=apply];
 	"titanic_test(0)$10" -> "Name(0)"	[label=apply];
 	"titanic_test(0)$10" -> "x(0)"	[label=apply];
-	"[<_ast.Constant object at 0x12f927c40>, <_ast.Constant object at 0x12f927c70>, <_ast.Constant object at 0x12f927ca0>, <_ast.Constant \
-object at 0x12f927cd0>, <_ast.Constant object at 0x12f927d00>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"bins(0)$0" -> "[<_ast.Constant object at 0x12f927c40>, <_ast.Constant object at 0x12f927c70>, <_ast.Constant object at 0x12f927ca0>, <_ast.Constant \
-object at 0x12f927cd0>, <_ast.Constant object at 0x12f927d00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f927dc0>, <_ast.Constant object at 0x12f927df0>, <_ast.Constant object at 0x12f927e20>, <_ast.Constant \
-object at 0x12f927e50>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"group_names(0)$0" -> "[<_ast.Constant object at 0x12f927dc0>, <_ast.Constant object at 0x12f927df0>, <_ast.Constant object at 0x12f927e20>, <_ast.Constant \
-object at 0x12f927e50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081d970>, <_ast.Constant object at 0x7fd50081d9a0>, <_ast.Constant object at 0x7fd50081d3a0>, <_\
+ast.Constant object at 0x7fd50081d9d0>, <_ast.Constant object at 0x7fd50081da00>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"bins(0)$0" -> "[<_ast.Constant object at 0x7fd50081d970>, <_ast.Constant object at 0x7fd50081d9a0>, <_ast.Constant object at 0x7fd50081d3a0>, <_\
+ast.Constant object at 0x7fd50081d9d0>, <_ast.Constant object at 0x7fd50081da00>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081dac0>, <_ast.Constant object at 0x7fd50081daf0>, <_ast.Constant object at 0x7fd50081db20>, <_\
+ast.Constant object at 0x7fd50081db50>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"group_names(0)$0" -> "[<_ast.Constant object at 0x7fd50081dac0>, <_ast.Constant object at 0x7fd50081daf0>, <_ast.Constant object at 0x7fd50081db20>, <_\
+ast.Constant object at 0x7fd50081db50>](0)"	[label=assignedFrom];
+	"titanic(0)$21" -> "pd(0)$0"	[label=cut];
+	"titanic(0)$21" -> "titanic(0)$20"	[label=cut];
+	"titanic(0)$21" -> "bins(0)$0"	[label=cut];
+	"titanic(0)$21" -> "group_names(0)$0"	[label=cut];
+	"titanic(0)$21" -> "titanic(0)$21"	[label=cut];
+	"titanic(0)$21" -> "NameLength(0)"	[label=cut];
 	"NameLength(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic_test(0)$11" -> "pd(0)$0"	[label=cut];
 	"titanic_test(0)$11" -> "titanic_test(0)$10"	[label=cut];
@@ -382,6 +337,9 @@ object at 0x12f927e50>](0)"	[label=assignedFrom];
 	"titanic_test(0)$11" -> "NameLength(0)"	[label=cut];
 	"titanic_test(0)$11" -> "titanic_test(0)$11"	[label=cut];
 	"sns(0)$7" -> "sns(0)$6"	[label=factorplot];
+	"print[282/0]" -> "titanic(0)$21"	[label=print];
+	"print[282/0]" -> "NlengthD(0)"	[label=print];
+	"NlengthD(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	re -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=importedBy];
 	"re(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"re(0)" -> re	[label=assignedFrom];
@@ -389,17 +347,22 @@ object at 0x12f927e50>](0)"	[label=assignedFrom];
 	"title_search(2)$0" -> "name(2)"	[label=search];
 	"title_search(2)$0" -> "re(2)"	[label=search];
 	"title_search(2)$0" -> " ([A-Za-z]+)\.(2)"	[label=search];
+	"titles(0)$0" -> "Name(0)"	[label=apply];
+	"titles(0)$0" -> "titanic(0)$21"	[label=apply];
+	"titles(0)$0" -> "get_title(0)"	[label=apply];
 	"get_title(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"print[309/0]" -> "pd(0)$0"	[label=print];
+	"print[309/0]" -> "titles(0)$0"	[label=print];
 	"titanic(0)$22" -> "titanic(0)$21"	[label=assignedFrom];
 	"titanic(0)$22" -> "titles(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f962490>, <_ast.Constant object at 0x12f9624c0>, <_ast.Constant object at 0x12f9624f0>, <_ast.Constant \
-object at 0x12f962520>, <_ast.Constant object at 0x12f962550>, <_ast.Constant object at 0x12f9625e0>, <_ast.Constant object at 0x12f9625b0>, <_\
-ast.Constant object at 0x12f962610>, <_ast.Constant object at 0x12f962640>, <_ast.Constant object at 0x12f962670>, <_ast.Constant \
-object at 0x12f9626a0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"rare_title(0)$0" -> "[<_ast.Constant object at 0x12f962490>, <_ast.Constant object at 0x12f9624c0>, <_ast.Constant object at 0x12f9624f0>, <_ast.Constant \
-object at 0x12f962520>, <_ast.Constant object at 0x12f962550>, <_ast.Constant object at 0x12f9625e0>, <_ast.Constant object at 0x12f9625b0>, <_\
-ast.Constant object at 0x12f962610>, <_ast.Constant object at 0x12f962640>, <_ast.Constant object at 0x12f962670>, <_ast.Constant \
-object at 0x12f9626a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009a8130>, <_ast.Constant object at 0x7fd5009a8160>, <_ast.Constant object at 0x7fd5009a8190>, <_\
+ast.Constant object at 0x7fd5009a81c0>, <_ast.Constant object at 0x7fd5009a81f0>, <_ast.Constant object at 0x7fd5009a8220>, <_ast.Constant \
+object at 0x7fd5009a8250>, <_ast.Constant object at 0x7fd5009a8280>, <_ast.Constant object at 0x7fd5009a82b0>, <_ast.Constant object \
+at 0x7fd5009a82e0>, <_ast.Constant object at 0x7fd5009a8310>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"rare_title(0)$0" -> "[<_ast.Constant object at 0x7fd5009a8130>, <_ast.Constant object at 0x7fd5009a8160>, <_ast.Constant object at 0x7fd5009a8190>, <_\
+ast.Constant object at 0x7fd5009a81c0>, <_ast.Constant object at 0x7fd5009a81f0>, <_ast.Constant object at 0x7fd5009a8220>, <_ast.Constant \
+object at 0x7fd5009a8250>, <_ast.Constant object at 0x7fd5009a8280>, <_ast.Constant object at 0x7fd5009a82b0>, <_ast.Constant object \
+at 0x7fd5009a82e0>, <_ast.Constant object at 0x7fd5009a8310>](0)"	[label=assignedFrom];
 	"Miss(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic(0)$23" -> "titanic(0)$22"	[label=assignedFrom];
 	"titanic(0)$23" -> "Miss(0)"	[label=assignedFrom];
@@ -432,16 +395,21 @@ object at 0x12f9626a0>](0)"	[label=assignedFrom];
 	"titanic(0)$36" -> "Rare Title(0)"	[label=assignedFrom];
 	"titanic(0)$36" -> "titanic(0)$35"	[label=assignedFrom];
 	"titanic(0)$37" -> "titanic(0)$36"	[label=value_counts];
-	"titanic_test(0)$12" -> "titles(0)$1"	[label=assignedFrom];
+	"titles(0)$1" -> "Name(0)"	[label=apply];
+	"titles(0)$1" -> "titanic_test(0)$11"	[label=apply];
+	"titles(0)$1" -> "get_title(0)"	[label=apply];
+	"print[381/0]" -> "pd(0)$0"	[label=print];
+	"print[381/0]" -> "titles(0)$1"	[label=print];
 	"titanic_test(0)$12" -> "titanic_test(0)$11"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f91c880>, <_ast.Constant object at 0x12f91c820>, <_ast.Constant object at 0x12f91c850>, <_ast.Constant \
-object at 0x12f91c8b0>, <_ast.Constant object at 0x12f91c940>, <_ast.Constant object at 0x12f91c8e0>, <_ast.Constant object at 0x12f91c910>, <_\
-ast.Constant object at 0x12f91cb50>, <_ast.Constant object at 0x12f91c610>, <_ast.Constant object at 0x12f91c9a0>, <_ast.Constant \
-object at 0x12f91caf0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"rare_title(0)$1" -> "[<_ast.Constant object at 0x12f91c880>, <_ast.Constant object at 0x12f91c820>, <_ast.Constant object at 0x12f91c850>, <_ast.Constant \
-object at 0x12f91c8b0>, <_ast.Constant object at 0x12f91c940>, <_ast.Constant object at 0x12f91c8e0>, <_ast.Constant object at 0x12f91c910>, <_\
-ast.Constant object at 0x12f91cb50>, <_ast.Constant object at 0x12f91c610>, <_ast.Constant object at 0x12f91c9a0>, <_ast.Constant \
-object at 0x12f91caf0>](0)"	[label=assignedFrom];
+	"titanic_test(0)$12" -> "titles(0)$1"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009ba4f0>, <_ast.Constant object at 0x7fd5009ba520>, <_ast.Constant object at 0x7fd5009ba550>, <_\
+ast.Constant object at 0x7fd5009ba580>, <_ast.Constant object at 0x7fd5009ba5b0>, <_ast.Constant object at 0x7fd5009ba5e0>, <_ast.Constant \
+object at 0x7fd5009ba610>, <_ast.Constant object at 0x7fd5009ba640>, <_ast.Constant object at 0x7fd5009ba670>, <_ast.Constant object \
+at 0x7fd5009ba6a0>, <_ast.Constant object at 0x7fd5009ba6d0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"rare_title(0)$1" -> "[<_ast.Constant object at 0x7fd5009ba4f0>, <_ast.Constant object at 0x7fd5009ba520>, <_ast.Constant object at 0x7fd5009ba550>, <_\
+ast.Constant object at 0x7fd5009ba580>, <_ast.Constant object at 0x7fd5009ba5b0>, <_ast.Constant object at 0x7fd5009ba5e0>, <_ast.Constant \
+object at 0x7fd5009ba610>, <_ast.Constant object at 0x7fd5009ba640>, <_ast.Constant object at 0x7fd5009ba670>, <_ast.Constant object \
+at 0x7fd5009ba6a0>, <_ast.Constant object at 0x7fd5009ba6d0>](0)"	[label=assignedFrom];
 	"titanic_test(0)$13" -> "Miss(0)"	[label=assignedFrom];
 	"titanic_test(0)$13" -> "titanic_test(0)$12"	[label=assignedFrom];
 	"titanic_test(0)$14" -> "Miss(0)"	[label=assignedFrom];
@@ -502,8 +470,8 @@ object at 0x12f91caf0>](0)"	[label=assignedFrom];
 	OneHotEncoder -> "sklearn.preprocessing"	[label=importedBy];
 	"OneHotEncoder(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"OneHotEncoder(0)" -> OneHotEncoder	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8fffa0>, <_ast.Constant object at 0x12f8fffd0>, <_ast.Constant object at 0x12f922040>, <_ast.Constant \
-object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant object at 0x12f9220d0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500998ca0>, <_ast.Constant object at 0x7fd500998cd0>, <_ast.Constant object at 0x7fd500998d00>, <_\
+ast.Constant object at 0x7fd500998d30>, <_ast.Constant object at 0x7fd500998d60>, <_ast.Constant object at 0x7fd500998d90>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"labelEnc(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic(0)$42" -> "col(0)"	[label=fit_transform];
 	"titanic(0)$42" -> "titanic(0)$41"	[label=fit_transform];
@@ -532,10 +500,11 @@ object at 0x12f922070>, <_ast.Constant object at 0x12f9220a0>, <_ast.Constant ob
 	"RandomForestRegressor(0)" -> RandomForestRegressor	[label=assignedFrom];
 	"df(3)" -> "fill_missing_age[0]"	[label=_argToVar];
 	"age_df(3)$0" -> "df(3)"	[label=assignedFrom];
-	"age_df(3)$0" -> "[<_ast.Constant object at 0x12f9213a0>, <_ast.Constant object at 0x12f9213d0>, <_ast.Constant object at 0x12f921400>, <_ast.Constant \
-object at 0x12f921430>, <_ast.Constant object at 0x12f921460>, <_ast.Constant object at 0x12f921490>, <_ast.Constant object at 0x12f9214c0>, <_\
-ast.Constant object at 0x12f9214f0>, <_ast.Constant object at 0x12f921520>, <_ast.Constant object at 0x12f921550>, <_ast.Constant \
-object at 0x12f9215b0>, <_ast.Constant object at 0x12f9215e0>, <_ast.Constant object at 0x12f921670>](3)"	[label=assignedFrom];
+	"age_df(3)$0" -> "[<_ast.Constant object at 0x7fd5009bf0d0>, <_ast.Constant object at 0x7fd5009bf130>, <_ast.Constant object at 0x7fd5009bf160>, <_\
+ast.Constant object at 0x7fd5009bf190>, <_ast.Constant object at 0x7fd5009bf1c0>, <_ast.Constant object at 0x7fd5009bf1f0>, <_ast.Constant \
+object at 0x7fd5009bf220>, <_ast.Constant object at 0x7fd5009bf250>, <_ast.Constant object at 0x7fd5009bf280>, <_ast.Constant object \
+at 0x7fd5009bf2b0>, <_ast.Constant object at 0x7fd5009bf2e0>, <_ast.Constant object at 0x7fd5009bf310>, <_ast.Constant object at \
+0x7fd5009bf340>](3)"	[label=assignedFrom];
 	"train(3)$0" -> "df(3)"	[label=assignedFrom];
 	"train(3)$0" -> "age_df(3)$0"	[label=assignedFrom];
 	"test(3)$0" -> "df(3)"	[label=assignedFrom];
@@ -576,22 +545,22 @@ object at 0x12f9215b0>, <_ast.Constant object at 0x12f9215e0>, <_ast.Constant ob
 	"preprocessing(0)" -> preprocessing	[label=assignedFrom];
 	"std_scale(0)$0" -> "titanic(0)$44"	[label=fit];
 	"std_scale(0)$0" -> "preprocessing(0)"	[label=fit];
-	"std_scale(0)$0" -> "[<_ast.Constant object at 0x12f8a0880>, <_ast.Constant object at 0x12f8a08b0>](0)"	[label=fit];
-	"[<_ast.Constant object at 0x12f8a0880>, <_ast.Constant object at 0x12f8a08b0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"std_scale(0)$0" -> "[<_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085b5b0>](0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085b5b0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic(0)$45" -> "titanic(0)$44"	[label=transform];
 	"titanic(0)$45" -> "std_scale(0)$0"	[label=transform];
 	"titanic(0)$45" -> "titanic(0)$45"	[label=transform];
-	"titanic(0)$45" -> "[<_ast.Constant object at 0x12f8a0bb0>, <_ast.Constant object at 0x12f8a0be0>](0)"	[label=transform];
-	"[<_ast.Constant object at 0x12f8a0bb0>, <_ast.Constant object at 0x12f8a0be0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"titanic(0)$45" -> "[<_ast.Constant object at 0x7fd50085b8b0>, <_ast.Constant object at 0x7fd50085b8e0>](0)"	[label=transform];
+	"[<_ast.Constant object at 0x7fd50085b8b0>, <_ast.Constant object at 0x7fd50085b8e0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"std_scale(0)$1" -> "titanic_test(0)$32"	[label=fit];
 	"std_scale(0)$1" -> "preprocessing(0)"	[label=fit];
-	"std_scale(0)$1" -> "[<_ast.Constant object at 0x12f8a0e50>, <_ast.Constant object at 0x12f8a0e80>](0)"	[label=fit];
-	"[<_ast.Constant object at 0x12f8a0e50>, <_ast.Constant object at 0x12f8a0e80>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"std_scale(0)$1" -> "[<_ast.Constant object at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085bb80>](0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085bb80>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"titanic_test(0)$33" -> "titanic_test(0)$32"	[label=transform];
 	"titanic_test(0)$33" -> "std_scale(0)$1"	[label=transform];
 	"titanic_test(0)$33" -> "titanic_test(0)$33"	[label=transform];
-	"titanic_test(0)$33" -> "[<_ast.Constant object at 0x12f8821c0>, <_ast.Constant object at 0x12f8821f0>](0)"	[label=transform];
-	"[<_ast.Constant object at 0x12f8821c0>, <_ast.Constant object at 0x12f8821f0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"titanic_test(0)$33" -> "[<_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085bee0>](0)"	[label=transform];
+	"[<_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085bee0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"sklearn.linear_model" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=importedBy];
 	LinearRegression -> "sklearn.linear_model"	[label=importedBy];
 	"LinearRegression(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
@@ -600,14 +569,14 @@ object at 0x12f9215b0>, <_ast.Constant object at 0x12f9215e0>, <_ast.Constant ob
 	KFold -> "sklearn.cross_validation"	[label=importedBy];
 	"KFold(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"KFold(0)" -> KFold	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8825b0>, <_ast.Constant object at 0x12f8825e0>, <_ast.Constant object at 0x12f882610>, <_ast.Constant \
-object at 0x12f882640>, <_ast.Constant object at 0x12f882670>, <_ast.Constant object at 0x12f8826a0>, <_ast.Constant object at 0x12f8826d0>, <_\
-ast.Constant object at 0x12f882700>, <_ast.Constant object at 0x12f882730>, <_ast.Constant object at 0x12f882760>, <_ast.Constant \
-object at 0x12f882790>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$0" -> "[<_ast.Constant object at 0x12f8825b0>, <_ast.Constant object at 0x12f8825e0>, <_ast.Constant object at 0x12f882610>, <_ast.Constant \
-object at 0x12f882640>, <_ast.Constant object at 0x12f882670>, <_ast.Constant object at 0x12f8826a0>, <_ast.Constant object at 0x12f8826d0>, <_\
-ast.Constant object at 0x12f882700>, <_ast.Constant object at 0x12f882730>, <_ast.Constant object at 0x12f882760>, <_ast.Constant \
-object at 0x12f882790>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008602b0>, <_ast.Constant object at 0x7fd5008602e0>, <_ast.Constant object at 0x7fd500860310>, <_\
+ast.Constant object at 0x7fd500860340>, <_ast.Constant object at 0x7fd500860370>, <_ast.Constant object at 0x7fd5008603a0>, <_ast.Constant \
+object at 0x7fd5008603d0>, <_ast.Constant object at 0x7fd500860400>, <_ast.Constant object at 0x7fd500860430>, <_ast.Constant object \
+at 0x7fd500860460>, <_ast.Constant object at 0x7fd500860490>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$0" -> "[<_ast.Constant object at 0x7fd5008602b0>, <_ast.Constant object at 0x7fd5008602e0>, <_ast.Constant object at 0x7fd500860310>, <_\
+ast.Constant object at 0x7fd500860340>, <_ast.Constant object at 0x7fd500860370>, <_ast.Constant object at 0x7fd5008603a0>, <_ast.Constant \
+object at 0x7fd5008603d0>, <_ast.Constant object at 0x7fd500860400>, <_ast.Constant object at 0x7fd500860430>, <_ast.Constant object \
+at 0x7fd500860460>, <_ast.Constant object at 0x7fd500860490>](0)"	[label=assignedFrom];
 	"target(0)$0" -> "Survived(0)"	[label=assignedFrom];
 	"kf(0)$0" -> "1(0)"	[label=KFold];
 	"kf(0)$0" -> "0(0)"	[label=KFold];
@@ -661,12 +630,14 @@ object at 0x12f882790>](0)"	[label=assignedFrom];
 	ShuffleSplit -> "sklearn.model_selection"	[label=importedBy];
 	"ShuffleSplit(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"ShuffleSplit(0)" -> ShuffleSplit	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f87e580>, <_ast.Constant object at 0x12f87e5b0>, <_ast.Constant object at 0x12f87e5e0>, <_ast.Constant \
-object at 0x12f87e610>, <_ast.Constant object at 0x12f87e640>, <_ast.Constant object at 0x12f87e670>, <_ast.Constant object at 0x12f87e6a0>, <_\
-ast.Constant object at 0x12f87e700>, <_ast.Constant object at 0x12f87e730>, <_ast.Constant object at 0x12f87e760>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$1" -> "[<_ast.Constant object at 0x12f87e580>, <_ast.Constant object at 0x12f87e5b0>, <_ast.Constant object at 0x12f87e5e0>, <_ast.Constant \
-object at 0x12f87e610>, <_ast.Constant object at 0x12f87e640>, <_ast.Constant object at 0x12f87e670>, <_ast.Constant object at 0x12f87e6a0>, <_\
-ast.Constant object at 0x12f87e700>, <_ast.Constant object at 0x12f87e730>, <_ast.Constant object at 0x12f87e760>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085d280>, <_ast.Constant object at 0x7fd50085d2b0>, <_ast.Constant object at 0x7fd50085d2e0>, <_\
+ast.Constant object at 0x7fd50085d310>, <_ast.Constant object at 0x7fd50085d340>, <_ast.Constant object at 0x7fd50085d370>, <_ast.Constant \
+object at 0x7fd50085d3a0>, <_ast.Constant object at 0x7fd50085d3d0>, <_ast.Constant object at 0x7fd50085d400>, <_ast.Constant object \
+at 0x7fd50085d430>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$1" -> "[<_ast.Constant object at 0x7fd50085d280>, <_ast.Constant object at 0x7fd50085d2b0>, <_ast.Constant object at 0x7fd50085d2e0>, <_\
+ast.Constant object at 0x7fd50085d310>, <_ast.Constant object at 0x7fd50085d340>, <_ast.Constant object at 0x7fd50085d370>, <_ast.Constant \
+object at 0x7fd50085d3a0>, <_ast.Constant object at 0x7fd50085d3d0>, <_ast.Constant object at 0x7fd50085d400>, <_ast.Constant object \
+at 0x7fd50085d430>](0)"	[label=assignedFrom];
 	"lr(0)$0" -> "1(0)"	[label=LogisticRegression];
 	"10(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"cv(0)$0" -> "10(0)"	[label=ShuffleSplit];
@@ -674,19 +645,26 @@ ast.Constant object at 0x12f87e700>, <_ast.Constant object at 0x12f87e730>, <_as
 	"cv(0)$0" -> "50(0)"	[label=ShuffleSplit];
 	"0.3(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"50(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"scores(0)$0" -> "Survived(0)"	[label=cross_val_score];
+	"scores(0)$0" -> "titanic(0)$45"	[label=cross_val_score];
+	"scores(0)$0" -> "predictors(0)$1"	[label=cross_val_score];
+	"scores(0)$0" -> "lr(0)$0"	[label=cross_val_score];
+	"scores(0)$0" -> "cv(0)$0"	[label=cross_val_score];
+	"scores(0)$0" -> "f1(0)"	[label=cross_val_score];
 	"f1(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"print[676/0]" -> "scores(0)$0"	[label=print];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"RandomForestClassifier(0)" -> RandomForestClassifier	[label=assignedFrom];
 	cross_val_predict -> "sklearn.model_selection"	[label=importedBy];
 	"cross_val_predict(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"cross_val_predict(0)" -> cross_val_predict	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f87c430>, <_ast.Constant object at 0x12f87c460>, <_ast.Constant object at 0x12f87c490>, <_ast.Constant \
-object at 0x12f87c4c0>, <_ast.Constant object at 0x12f87c4f0>, <_ast.Constant object at 0x12f87c520>, <_ast.Constant object at 0x12f87c550>, <_\
-ast.Constant object at 0x12f87c580>, <_ast.Constant object at 0x12f87c5b0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$2" -> "[<_ast.Constant object at 0x12f87c430>, <_ast.Constant object at 0x12f87c460>, <_ast.Constant object at 0x12f87c490>, <_ast.Constant \
-object at 0x12f87c4c0>, <_ast.Constant object at 0x12f87c4f0>, <_ast.Constant object at 0x12f87c520>, <_ast.Constant object at 0x12f87c550>, <_\
-ast.Constant object at 0x12f87c580>, <_ast.Constant object at 0x12f87c5b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500850130>, <_ast.Constant object at 0x7fd500850190>, <_ast.Constant object at 0x7fd5008501c0>, <_\
+ast.Constant object at 0x7fd5008501f0>, <_ast.Constant object at 0x7fd500850220>, <_ast.Constant object at 0x7fd500850250>, <_ast.Constant \
+object at 0x7fd500850280>, <_ast.Constant object at 0x7fd5008502b0>, <_ast.Constant object at 0x7fd5008502e0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$2" -> "[<_ast.Constant object at 0x7fd500850130>, <_ast.Constant object at 0x7fd500850190>, <_ast.Constant object at 0x7fd5008501c0>, <_\
+ast.Constant object at 0x7fd5008501f0>, <_ast.Constant object at 0x7fd500850220>, <_ast.Constant object at 0x7fd500850250>, <_ast.Constant \
+object at 0x7fd500850280>, <_ast.Constant object at 0x7fd5008502b0>, <_ast.Constant object at 0x7fd5008502e0>](0)"	[label=assignedFrom];
 	"rf(0)$0" -> "1(0)"	[label=RandomForestClassifier];
 	"rf(0)$0" -> "2(0)"	[label=RandomForestClassifier];
 	"rf(0)$0" -> "10(0)"	[label=RandomForestClassifier];
@@ -705,12 +683,21 @@ ast.Constant object at 0x12f87c580>, <_ast.Constant object at 0x12f87c5b0>](0)"	
 	"predictions(0)$5" -> "kf(0)$1"	[label=cross_val_predict];
 	"predictions(0)$6" -> "pd(0)$0"	[label=Series];
 	"predictions(0)$6" -> "predictions(0)$6"	[label=Series];
-	"[<_ast.Constant object at 0x12f8a29d0>, <_ast.Constant object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>, <_ast.Constant \
-object at 0x12f8a2a60>, <_ast.Constant object at 0x12f8a2a90>, <_ast.Constant object at 0x12f8a2ac0>, <_ast.Constant object at 0x12f8a2af0>, <_\
-ast.Constant object at 0x12f8a2b20>, <_ast.Constant object at 0x12f8a2b50>, <_ast.Constant object at 0x12f8a2bb0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$3" -> "[<_ast.Constant object at 0x12f8a29d0>, <_ast.Constant object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>, <_ast.Constant \
-object at 0x12f8a2a60>, <_ast.Constant object at 0x12f8a2a90>, <_ast.Constant object at 0x12f8a2ac0>, <_ast.Constant object at 0x12f8a2af0>, <_\
-ast.Constant object at 0x12f8a2b20>, <_ast.Constant object at 0x12f8a2b50>, <_ast.Constant object at 0x12f8a2bb0>](0)"	[label=assignedFrom];
+	"scores(0)$1" -> "Survived(0)"	[label=cross_val_score];
+	"scores(0)$1" -> "titanic(0)$45"	[label=cross_val_score];
+	"scores(0)$1" -> "f1(0)"	[label=cross_val_score];
+	"scores(0)$1" -> "predictors(0)$2"	[label=cross_val_score];
+	"scores(0)$1" -> "rf(0)$0"	[label=cross_val_score];
+	"scores(0)$1" -> "kf(0)$1"	[label=cross_val_score];
+	"print[723/0]" -> "scores(0)$1"	[label=print];
+	"[<_ast.Constant object at 0x7fd500852610>, <_ast.Constant object at 0x7fd500852640>, <_ast.Constant object at 0x7fd500852670>, <_\
+ast.Constant object at 0x7fd5008526a0>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852700>, <_ast.Constant \
+object at 0x7fd500852730>, <_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant object \
+at 0x7fd5008527c0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$3" -> "[<_ast.Constant object at 0x7fd500852610>, <_ast.Constant object at 0x7fd500852640>, <_ast.Constant object at 0x7fd500852670>, <_\
+ast.Constant object at 0x7fd5008526a0>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852700>, <_ast.Constant \
+object at 0x7fd500852730>, <_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant object \
+at 0x7fd5008527c0>](0)"	[label=assignedFrom];
 	"rf(0)$1" -> "6(0)"	[label=RandomForestClassifier];
 	"rf(0)$1" -> "1(0)"	[label=RandomForestClassifier];
 	"rf(0)$1" -> "4(0)"	[label=RandomForestClassifier];
@@ -733,6 +720,13 @@ ast.Constant object at 0x12f8a2b20>, <_ast.Constant object at 0x12f8a2b50>, <_as
 	"predictions(0)$7" -> "kf(0)$2"	[label=cross_val_predict];
 	"predictions(0)$8" -> "pd(0)$0"	[label=Series];
 	"predictions(0)$8" -> "predictions(0)$8"	[label=Series];
+	"scores(0)$2" -> "Survived(0)"	[label=cross_val_score];
+	"scores(0)$2" -> "titanic(0)$45"	[label=cross_val_score];
+	"scores(0)$2" -> "f1(0)"	[label=cross_val_score];
+	"scores(0)$2" -> "predictors(0)$3"	[label=cross_val_score];
+	"scores(0)$2" -> "rf(0)$2"	[label=cross_val_score];
+	"scores(0)$2" -> "kf(0)$2"	[label=cross_val_score];
+	"print[742/0]" -> "scores(0)$2"	[label=print];
 	"importances(0)$0" -> "rf(0)$2"	[label=assignedFrom];
 	"std(0)$0" -> "np(0)"	[label=std];
 	"std(0)$0" -> "0(0)"	[label=std];
@@ -770,8 +764,8 @@ ast.Constant object at 0x12f8a2b20>, <_ast.Constant object at 0x12f8a2b50>, <_as
 	"plt(0)$14" -> "range(0)"	[label=xticks];
 	"plt(0)$15" -> "matplotlib.pyplot"	[label=assignedFrom];
 	"plt(0)$15" -> "plt(0)$14"	[label=xlim];
-	"plt(0)$15" -> "[<_ast.UnaryOp object at 0x12f8a5370>, <_ast.Call object at 0x12f8a53a0>](0)"	[label=xlim];
-	"[<_ast.UnaryOp object at 0x12f8a5370>, <_ast.Call object at 0x12f8a53a0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"plt(0)$15" -> "[<_ast.UnaryOp object at 0x7fd50084c040>, <_ast.Call object at 0x7fd50084c0a0>](0)"	[label=xlim];
+	"[<_ast.UnaryOp object at 0x7fd50084c040>, <_ast.Call object at 0x7fd50084c0a0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	GradientBoostingClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"GradientBoostingClassifier(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"GradientBoostingClassifier(0)" -> GradientBoostingClassifier	[label=assignedFrom];
@@ -782,12 +776,12 @@ ast.Constant object at 0x12f8a2b20>, <_ast.Constant object at 0x12f8a2b50>, <_as
 	f_classif -> "sklearn.feature_selection"	[label=importedBy];
 	"f_classif(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"f_classif(0)" -> f_classif	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a58e0>, <_ast.Constant object at 0x12f8a5940>, <_ast.Constant object at 0x12f8a5970>, <_ast.Constant \
-object at 0x12f8a59a0>, <_ast.Constant object at 0x12f8a59d0>, <_ast.Constant object at 0x12f8a5a00>, <_ast.Constant object at 0x12f8a5a30>, <_\
-ast.Constant object at 0x12f8a5a60>, <_ast.Constant object at 0x12f8a5400>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$4" -> "[<_ast.Constant object at 0x12f8a58e0>, <_ast.Constant object at 0x12f8a5940>, <_ast.Constant object at 0x12f8a5970>, <_ast.Constant \
-object at 0x12f8a59a0>, <_ast.Constant object at 0x12f8a59d0>, <_ast.Constant object at 0x12f8a5a00>, <_ast.Constant object at 0x12f8a5a30>, <_\
-ast.Constant object at 0x12f8a5a60>, <_ast.Constant object at 0x12f8a5400>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50084c5b0>, <_ast.Constant object at 0x7fd50084c5e0>, <_ast.Constant object at 0x7fd50084c610>, <_\
+ast.Constant object at 0x7fd50084c640>, <_ast.Constant object at 0x7fd50084c670>, <_ast.Constant object at 0x7fd50084c6a0>, <_ast.Constant \
+object at 0x7fd50084c6d0>, <_ast.Constant object at 0x7fd50084c700>, <_ast.Constant object at 0x7fd50084c760>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$4" -> "[<_ast.Constant object at 0x7fd50084c5b0>, <_ast.Constant object at 0x7fd50084c5e0>, <_ast.Constant object at 0x7fd50084c610>, <_\
+ast.Constant object at 0x7fd50084c640>, <_ast.Constant object at 0x7fd50084c670>, <_ast.Constant object at 0x7fd50084c6a0>, <_ast.Constant \
+object at 0x7fd50084c6d0>, <_ast.Constant object at 0x7fd50084c700>, <_ast.Constant object at 0x7fd50084c760>](0)"	[label=assignedFrom];
 	"selector(0)$0" -> "5(0)"	[label=SelectKBest];
 	"selector(0)$0" -> "f_classif(0)"	[label=SelectKBest];
 	"selector(0)$1" -> "Survived(0)"	[label=fit];
@@ -816,27 +810,36 @@ ast.Constant object at 0x12f8a5a60>, <_ast.Constant object at 0x12f8a5400>](0)"	
 	"plt(0)$19" -> "sorted_important_features(0)$3"	[label=xticks];
 	"plt(0)$19" -> "plt(0)$18"	[label=xticks];
 	"plt(0)$20" -> "plt(0)$19"	[label=xlim];
-	"plt(0)$20" -> "[<_ast.UnaryOp object at 0x12f8d80a0>, <_ast.Call object at 0x12f8d8160>](0)"	[label=xlim];
-	"[<_ast.UnaryOp object at 0x12f8d80a0>, <_ast.Call object at 0x12f8d8160>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d8460>, <_ast.Constant object at 0x12f8d8490>, <_ast.Constant object at 0x12f8d84c0>, <_ast.Constant \
-object at 0x12f8d84f0>, <_ast.Constant object at 0x12f8d8520>, <_ast.Constant object at 0x12f8d8550>, <_ast.Constant object at 0x12f8d8580>, <_\
-ast.Constant object at 0x12f8d85b0>, <_ast.Constant object at 0x12f8d85e0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$5" -> "[<_ast.Constant object at 0x12f8d8460>, <_ast.Constant object at 0x12f8d8490>, <_ast.Constant object at 0x12f8d84c0>, <_ast.Constant \
-object at 0x12f8d84f0>, <_ast.Constant object at 0x12f8d8520>, <_ast.Constant object at 0x12f8d8550>, <_ast.Constant object at 0x12f8d8580>, <_\
-ast.Constant object at 0x12f8d85b0>, <_ast.Constant object at 0x12f8d85e0>](0)"	[label=assignedFrom];
+	"plt(0)$20" -> "[<_ast.UnaryOp object at 0x7fd500854dc0>, <_ast.Call object at 0x7fd500854e20>](0)"	[label=xlim];
+	"[<_ast.UnaryOp object at 0x7fd500854dc0>, <_ast.Call object at 0x7fd500854e20>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500853100>, <_ast.Constant object at 0x7fd500853130>, <_ast.Constant object at 0x7fd500853160>, <_\
+ast.Constant object at 0x7fd500853190>, <_ast.Constant object at 0x7fd5008531c0>, <_ast.Constant object at 0x7fd5008531f0>, <_ast.Constant \
+object at 0x7fd500853220>, <_ast.Constant object at 0x7fd500853250>, <_ast.Constant object at 0x7fd500853280>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$5" -> "[<_ast.Constant object at 0x7fd500853100>, <_ast.Constant object at 0x7fd500853130>, <_ast.Constant object at 0x7fd500853160>, <_\
+ast.Constant object at 0x7fd500853190>, <_ast.Constant object at 0x7fd5008531c0>, <_ast.Constant object at 0x7fd5008531f0>, <_ast.Constant \
+object at 0x7fd500853220>, <_ast.Constant object at 0x7fd500853250>, <_ast.Constant object at 0x7fd500853280>](0)"	[label=assignedFrom];
 	"lr(0)$1" -> "1(0)"	[label=LogisticRegression];
 	"cv(0)$2" -> "10(0)"	[label=ShuffleSplit];
 	"cv(0)$2" -> "0.3(0)"	[label=ShuffleSplit];
 	"cv(0)$2" -> "50(0)"	[label=ShuffleSplit];
+	"scores(0)$4" -> "Survived(0)"	[label=cross_val_score];
+	"scores(0)$4" -> "titanic(0)$45"	[label=cross_val_score];
+	"scores(0)$4" -> "f1(0)"	[label=cross_val_score];
+	"scores(0)$4" -> "predictors(0)$5"	[label=cross_val_score];
+	"scores(0)$4" -> "lr(0)$1"	[label=cross_val_score];
+	"scores(0)$4" -> "cv(0)$2"	[label=cross_val_score];
+	"print[853/0]" -> "scores(0)$4"	[label=print];
 	AdaBoostClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"AdaBoostClassifier(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"AdaBoostClassifier(0)" -> AdaBoostClassifier	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d8fd0>, <_ast.Constant object at 0x12f8d1040>, <_ast.Constant object at 0x12f8d1070>, <_ast.Constant \
-object at 0x12f8d10a0>, <_ast.Constant object at 0x12f8d10d0>, <_ast.Constant object at 0x12f8d1100>, <_ast.Constant object at 0x12f8d1130>, <_\
-ast.Constant object at 0x12f8d1160>, <_ast.Constant object at 0x12f8d1190>, <_ast.Constant object at 0x12f8d11c0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictors(0)$6" -> "[<_ast.Constant object at 0x12f8d8fd0>, <_ast.Constant object at 0x12f8d1040>, <_ast.Constant object at 0x12f8d1070>, <_ast.Constant \
-object at 0x12f8d10a0>, <_ast.Constant object at 0x12f8d10d0>, <_ast.Constant object at 0x12f8d1100>, <_ast.Constant object at 0x12f8d1130>, <_\
-ast.Constant object at 0x12f8d1160>, <_ast.Constant object at 0x12f8d1190>, <_ast.Constant object at 0x12f8d11c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500853cd0>, <_ast.Constant object at 0x7fd500853d00>, <_ast.Constant object at 0x7fd500853d60>, <_\
+ast.Constant object at 0x7fd500853d90>, <_ast.Constant object at 0x7fd500853dc0>, <_ast.Constant object at 0x7fd500853df0>, <_ast.Constant \
+object at 0x7fd500853e20>, <_ast.Constant object at 0x7fd500853e50>, <_ast.Constant object at 0x7fd500853e80>, <_ast.Constant object \
+at 0x7fd500853ee0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictors(0)$6" -> "[<_ast.Constant object at 0x7fd500853cd0>, <_ast.Constant object at 0x7fd500853d00>, <_ast.Constant object at 0x7fd500853d60>, <_\
+ast.Constant object at 0x7fd500853d90>, <_ast.Constant object at 0x7fd500853dc0>, <_ast.Constant object at 0x7fd500853df0>, <_ast.Constant \
+object at 0x7fd500853e20>, <_ast.Constant object at 0x7fd500853e50>, <_ast.Constant object at 0x7fd500853e80>, <_ast.Constant object \
+at 0x7fd500853ee0>](0)"	[label=assignedFrom];
 	"adb(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"adb(0)$0" -> "Survived(0)"	[label=fit];
 	"adb(0)$0" -> "titanic(0)$45"	[label=fit];
@@ -845,19 +848,26 @@ ast.Constant object at 0x12f8d1160>, <_ast.Constant object at 0x12f8d1190>, <_as
 	"cv(0)$3" -> "10(0)"	[label=ShuffleSplit];
 	"cv(0)$3" -> "0.3(0)"	[label=ShuffleSplit];
 	"cv(0)$3" -> "50(0)"	[label=ShuffleSplit];
-	"[<_ast.Constant object at 0x12f8d1df0>, <_ast.Constant object at 0x12f8d1e20>, <_ast.Constant object at 0x12f8d1e50>, <_ast.Constant \
-object at 0x12f8d1e80>, <_ast.Constant object at 0x12f8d1eb0>, <_ast.Constant object at 0x12f8d1ee0>, <_ast.Constant object at 0x12f8d1f10>, <_\
-ast.Constant object at 0x12f8d1f40>, <_ast.Constant object at 0x12f8d1fa0>, <_ast.Constant object at 0x12f8d1f70>, <_ast.Constant \
-object at 0x12f8d1fd0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"predictions(0)$9" -> "[<_ast.Constant object at 0x12f8d1df0>, <_ast.Constant object at 0x12f8d1e20>, <_ast.Constant object at 0x12f8d1e50>, <_ast.Constant \
-object at 0x12f8d1e80>, <_ast.Constant object at 0x12f8d1eb0>, <_ast.Constant object at 0x12f8d1ee0>, <_ast.Constant object at 0x12f8d1f10>, <_\
-ast.Constant object at 0x12f8d1f40>, <_ast.Constant object at 0x12f8d1fa0>, <_ast.Constant object at 0x12f8d1f70>, <_ast.Constant \
-object at 0x12f8d1fd0>](0)"	[label=assignedFrom];
+	"scores(0)$5" -> "Survived(0)"	[label=cross_val_score];
+	"scores(0)$5" -> "titanic(0)$45"	[label=cross_val_score];
+	"scores(0)$5" -> "f1(0)"	[label=cross_val_score];
+	"scores(0)$5" -> "predictors(0)$6"	[label=cross_val_score];
+	"scores(0)$5" -> "adb(0)$0"	[label=cross_val_score];
+	"scores(0)$5" -> "cv(0)$3"	[label=cross_val_score];
+	"print[868/0]" -> "scores(0)$5"	[label=print];
+	"[<_ast.Constant object at 0x7fd500867ac0>, <_ast.Constant object at 0x7fd500867af0>, <_ast.Constant object at 0x7fd500867b20>, <_\
+ast.Constant object at 0x7fd500867b50>, <_ast.Constant object at 0x7fd500867b80>, <_ast.Constant object at 0x7fd500867bb0>, <_ast.Constant \
+object at 0x7fd500867be0>, <_ast.Constant object at 0x7fd500867c10>, <_ast.Constant object at 0x7fd500867c40>, <_ast.Constant object \
+at 0x7fd500867c70>, <_ast.Constant object at 0x7fd500867ca0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"predictions(0)$9" -> "[<_ast.Constant object at 0x7fd500867ac0>, <_ast.Constant object at 0x7fd500867af0>, <_ast.Constant object at 0x7fd500867b20>, <_\
+ast.Constant object at 0x7fd500867b50>, <_ast.Constant object at 0x7fd500867b80>, <_ast.Constant object at 0x7fd500867bb0>, <_ast.Constant \
+object at 0x7fd500867be0>, <_ast.Constant object at 0x7fd500867c10>, <_ast.Constant object at 0x7fd500867c40>, <_ast.Constant object \
+at 0x7fd500867c70>, <_ast.Constant object at 0x7fd500867ca0>](0)"	[label=assignedFrom];
 	VotingClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"VotingClassifier(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"VotingClassifier(0)" -> VotingClassifier	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12f8e1280>, <_ast.Tuple object at 0x12f8e1310>, <_ast.Tuple object at 0x12f8e13a0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
-	"eclf1(0)$0" -> "[<_ast.Tuple object at 0x12f8e1280>, <_ast.Tuple object at 0x12f8e1310>, <_ast.Tuple object at 0x12f8e13a0>](0)"	[label=VotingClassifier];
+	"[<_ast.Tuple object at 0x7fd500867eb0>, <_ast.Tuple object at 0x7fd500867f40>, <_ast.Tuple object at 0x7fd500867fd0>](0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
+	"eclf1(0)$0" -> "[<_ast.Tuple object at 0x7fd500867eb0>, <_ast.Tuple object at 0x7fd500867f40>, <_ast.Tuple object at 0x7fd500867fd0>](0)"	[label=VotingClassifier];
 	"eclf1(0)$0" -> "soft(0)"	[label=VotingClassifier];
 	"soft(0)" -> "titanic-survival-prediction-end-to-end-ml-pipeline.ipynb"	[label=appearsIn];
 	"eclf1(0)$1" -> "Survived(0)"	[label=fit];

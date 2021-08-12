@@ -5,9 +5,9 @@ digraph "" {
 	"matplotlib.pyplot" -> "seedlings-pretrained-keras-models.ipynb"	[label=importedBy];
 	"plt(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9899d0>, <_ast.Constant object at 0x12f9899a0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048e760>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=assignedFrom];
-	"plt(0)$0" -> "[<_ast.Constant object at 0x12f9899d0>, <_ast.Constant object at 0x12f9899a0>](0)"	[label=assignedFrom];
+	"plt(0)$0" -> "[<_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048e760>](0)"	[label=assignedFrom];
 	"16(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"plt(0)$1" -> "plt(0)$0"	[label=assignedFrom];
 	"plt(0)$1" -> "16(0)"	[label=assignedFrom];
@@ -71,14 +71,14 @@ digraph "" {
 	"models(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"os(0)$1" -> "os(0)$0"	[label=makedirs];
 	"os(0)$1" -> "models_dir(0)$0"	[label=makedirs];
-	"[<_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant object at 0x12fadeee0>, <_ast.Constant \
-object at 0x12fade040>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fadedc0>, <_\
-ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant \
-object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"CATEGORIES(0)$0" -> "[<_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant object at 0x12fadeee0>, <_ast.Constant \
-object at 0x12fade040>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fadedc0>, <_\
-ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant \
-object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999880>, <_\
+ast.Constant object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant \
+object at 0x7fd500999550>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object \
+at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999700>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"CATEGORIES(0)$0" -> "[<_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999880>, <_\
+ast.Constant object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant \
+object at 0x7fd500999550>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object \
+at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999700>](0)"	[label=assignedFrom];
 	"NUM_CATEGORIES(0)$0" -> "CATEGORIES(0)$0"	[label=len];
 	"200(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"SAMPLE_PER_CATEGORY(0)$0" -> "200(0)"	[label=assignedFrom];
@@ -107,78 +107,12 @@ object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assign
 	"category(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"enumerate(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"{} {} images(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"print[0]" -> "{} {} images(0)"	[label=print];
-	"print[0]" -> "Train Images shape: {} size: {:,}(0)"	[label=print];
-	"print[0]" -> "Xtr(0)$0"	[label=print];
-	"print[0]" -> "Xception train bottleneck features shape: {} size: {:,}(0)"	[label=print];
-	"print[0]" -> "Xception valid bottleneck features shape: {} size: {:,}(0)"	[label=print];
-	"print[0]" -> "Validation Xception Accuracy {}(0)"	[label=print];
-	"print[0]" -> "test Images shape: {} size: {:,}(0)"	[label=print];
-	"print[0]" -> "Xception test bottleneck features shape: {} size: {:,}(0)"	[label=print];
-	"print[0]" -> "Total time {} s.(0)"	[label=print];
-	"print[0]" -> "We almost used the one hour time limit.(0)"	[label=print];
-	"Train Images shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"Xtr(0)$0" -> "x_train(0)$1"	[label=assignedFrom];
-	"Xtr(0)$0" -> "train_idx(0)$0"	[label=assignedFrom];
-	"Xception train bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"Xception valid bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"Validation Xception Accuracy {}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"test Images shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"Xception test bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"Total time {} s.(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"We almost used the one hour time limit.(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"print[1]" -> "accuracy_score(0)"	[label=print];
-	"print[1]" -> "category(0)"	[label=print];
-	"print[1]" -> "x_train(0)$1"	[label=print];
-	"print[1]" -> "Xv(0)$0"	[label=print];
-	"print[1]" -> "train_x_bf(0)$0"	[label=print];
-	"print[1]" -> "valid_x_bf(0)$0"	[label=print];
-	"print[1]" -> "x_test(0)$1"	[label=print];
-	"print[1]" -> "test_x_bf(0)$0"	[label=print];
-	"print[1]" -> "end(0)$0"	[label=print];
-	"x_train(0)$1" -> "x_train(0)$0"	[label=assignedFrom];
-	"x_train(0)$1" -> "x(0)$0"	[label=assignedFrom];
-	"Xv(0)$0" -> "x_train(0)$1"	[label=assignedFrom];
-	"Xv(0)$0" -> "valid_idx(0)$0"	[label=assignedFrom];
-	"train_x_bf(0)$0" -> "Xtr(0)$0"	[label=predict];
-	"train_x_bf(0)$0" -> "1(0)"	[label=predict];
-	"train_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
-	"train_x_bf(0)$0" -> "32(0)"	[label=predict];
-	"valid_x_bf(0)$0" -> "Xv(0)$0"	[label=predict];
-	"valid_x_bf(0)$0" -> "1(0)"	[label=predict];
-	"valid_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
-	"valid_x_bf(0)$0" -> "32(0)"	[label=predict];
-	"x_test(0)$1" -> "x_test(0)$0"	[label=assignedFrom];
-	"x_test(0)$1" -> "x(0)$1"	[label=assignedFrom];
-	"test_x_bf(0)$0" -> "x_test(0)$1"	[label=predict];
-	"test_x_bf(0)$0" -> "1(0)"	[label=predict];
-	"test_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
-	"test_x_bf(0)$0" -> "32(0)"	[label=predict];
-	"end(0)$0" -> "dt(0)"	[label=now];
+	"print[41/4]" -> "os(0)$1"	[label=print];
+	"print[41/4]" -> "train_dir(0)$0"	[label=print];
+	"print[41/4]" -> "category(0)"	[label=print];
+	"print[41/4]" -> "{} {} images(0)"	[label=print];
+	"print[41/4]" -> "len(0)"	[label=print];
 	"len(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"print[2]" -> "start(0)$0"	[label=print];
-	"print[2]" -> "x_train(0)$1"	[label=print];
-	"print[2]" -> "train_x_bf(0)$0"	[label=print];
-	"print[2]" -> "valid_x_bf(0)$0"	[label=print];
-	"print[2]" -> "x_test(0)$1"	[label=print];
-	"print[2]" -> "test_x_bf(0)$0"	[label=print];
-	"print[2]" -> "len(0)"	[label=print];
-	"print[2]" -> "ytr(0)$0"	[label=print];
-	"print[2]" -> "yv(0)$0"	[label=print];
-	"ytr(0)$0" -> "category_id(0)"	[label=assignedFrom];
-	"ytr(0)$0" -> "train(0)$7"	[label=assignedFrom];
-	"ytr(0)$0" -> "train_idx(0)$0"	[label=assignedFrom];
-	"yv(0)$0" -> "category_id(0)"	[label=assignedFrom];
-	"yv(0)$0" -> "train(0)$7"	[label=assignedFrom];
-	"yv(0)$0" -> "valid_idx(0)$0"	[label=assignedFrom];
-	"print[3]" -> "os(0)$1"	[label=print];
-	"print[3]" -> "yv(0)$0"	[label=print];
-	"print[3]" -> "valid_preds(0)$0"	[label=print];
-	"valid_preds(0)$0" -> "valid_x_bf(0)$0"	[label=predict];
-	"valid_preds(0)$0" -> "logreg(0)$1"	[label=predict];
-	"print[4]" -> "os(0)$1"	[label=print];
-	"print[5]" -> "train_dir(0)$0"	[label=print];
-	"print[6]" -> "category(0)"	[label=print];
 	"[](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "[](0)"	[label=assignedFrom];
 	"category_id(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
@@ -196,12 +130,12 @@ object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assign
 	"train(0)$7" -> "2(0)"	[label=head];
 	"train(0)$7" -> "train(0)$6"	[label=head];
 	"train(0)$1" -> "train(0)$0"	[label=append];
-	"train(0)$1" -> "[<_ast.Call object at 0x12f951700>, <_ast.Name object at 0x12f951fa0>, <_ast.Name object at 0x12f951be0>](0)"	[label=append];
-	"[<_ast.Call object at 0x12f951700>, <_ast.Name object at 0x12f951fa0>, <_ast.Name object at 0x12f951be0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"train(0)$1" -> "[<_ast.Call object at 0x7fd5007f09d0>, <_ast.Name object at 0x7fd5007f0c40>, <_ast.Name object at 0x7fd5007f0610>](0)"	[label=append];
+	"[<_ast.Call object at 0x7fd5007f09d0>, <_ast.Name object at 0x7fd5007f0c40>, <_ast.Name object at 0x7fd5007f0610>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"train(0)$2" -> "pd(0)"	[label=DataFrame];
 	"train(0)$2" -> "train(0)$2"	[label=DataFrame];
-	"train(0)$2" -> "[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951070>, <_ast.Constant object at 0x12f9517f0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951070>, <_ast.Constant object at 0x12f9517f0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"train(0)$2" -> "[<_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0460>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0460>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"train(0)$3" -> "2(0)"	[label=head];
 	"train(0)$3" -> "train(0)$2"	[label=head];
 	"train(0)$4" -> "pd(0)"	[label=concat];
@@ -220,12 +154,12 @@ object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assign
 	"train(0)$6" -> "train(0)$6"	[label=arange];
 	"test(0)$0" -> "[](0)"	[label=assignedFrom];
 	"test(0)$1" -> "test(0)$0"	[label=append];
-	"test(0)$1" -> "[<_ast.Call object at 0x12f957a00>, <_ast.Name object at 0x12f9574f0>](0)"	[label=append];
-	"[<_ast.Call object at 0x12f957a00>, <_ast.Name object at 0x12f9574f0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"test(0)$1" -> "[<_ast.Call object at 0x7fd4c04cc940>, <_ast.Name object at 0x7fd4c04cc2e0>](0)"	[label=append];
+	"[<_ast.Call object at 0x7fd4c04cc940>, <_ast.Name object at 0x7fd4c04cc2e0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"test(0)$2" -> "pd(0)"	[label=DataFrame];
 	"test(0)$2" -> "test(0)$2"	[label=DataFrame];
-	"test(0)$2" -> "[<_ast.Constant object at 0x12f957700>, <_ast.Constant object at 0x12f957c40>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f957700>, <_ast.Constant object at 0x12f957c40>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"test(0)$2" -> "[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc7c0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc7c0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"test(0)$3" -> "2(0)"	[label=head];
 	"test(0)$3" -> "test(0)$2"	[label=head];
 	"filepath(1)" -> "read_img[0]"	[label=_argToVar];
@@ -296,6 +230,12 @@ object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assign
 	"0.8(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"valid_idx(0)$0" -> "rnd(0)$0"	[label=assignedFrom];
 	"valid_idx(0)$0" -> "0.8(0)"	[label=assignedFrom];
+	"ytr(0)$0" -> "category_id(0)"	[label=assignedFrom];
+	"ytr(0)$0" -> "train(0)$7"	[label=assignedFrom];
+	"ytr(0)$0" -> "train_idx(0)$0"	[label=assignedFrom];
+	"yv(0)$0" -> "category_id(0)"	[label=assignedFrom];
+	"yv(0)$0" -> "train(0)$7"	[label=assignedFrom];
+	"yv(0)$0" -> "valid_idx(0)$0"	[label=assignedFrom];
 	"299(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"INPUT_SIZE(0)$0" -> "299(0)"	[label=assignedFrom];
 	"avg(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
@@ -314,33 +254,67 @@ object at 0x12fade6a0>, <_ast.Constant object at 0x12fadebe0>](0)"	[label=assign
 	"x(0)$0" -> "0(0)"	[label=preprocess_input];
 	"x(0)$0" -> "np(0)$0"	[label=preprocess_input];
 	"x(0)$0" -> "img(0)$1"	[label=preprocess_input];
+	"x_train(0)$1" -> "x_train(0)$0"	[label=assignedFrom];
+	"x_train(0)$1" -> "x(0)$0"	[label=assignedFrom];
+	"Train Images shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[91/0]" -> "x_train(0)$1"	[label=print];
+	"print[91/0]" -> "Train Images shape: {} size: {:,}(0)"	[label=print];
+	"Xtr(0)$0" -> "train_idx(0)$0"	[label=assignedFrom];
+	"Xtr(0)$0" -> "x_train(0)$1"	[label=assignedFrom];
+	"Xv(0)$0" -> "valid_idx(0)$0"	[label=assignedFrom];
+	"Xv(0)$0" -> "x_train(0)$1"	[label=assignedFrom];
+	"print[94/0]" -> "ytr(0)$0"	[label=print];
+	"print[94/0]" -> "yv(0)$0"	[label=print];
+	"print[94/0]" -> "Xtr(0)$0"	[label=print];
+	"print[94/0]" -> "Xv(0)$0"	[label=print];
 	"xception_bottleneck(0)$0" -> "xception(0)"	[label=Xception];
 	"xception_bottleneck(0)$0" -> "POOLING(0)$0"	[label=Xception];
 	"xception_bottleneck(0)$0" -> "imagenet(0)"	[label=Xception];
 	"xception_bottleneck(0)$0" -> "False(0)"	[label=Xception];
 	"imagenet(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"False(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"train_x_bf(0)$0" -> "1(0)"	[label=predict];
+	"train_x_bf(0)$0" -> "Xtr(0)$0"	[label=predict];
+	"train_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
+	"train_x_bf(0)$0" -> "32(0)"	[label=predict];
 	"32(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"valid_x_bf(0)$0" -> "1(0)"	[label=predict];
+	"valid_x_bf(0)$0" -> "Xv(0)$0"	[label=predict];
+	"valid_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
+	"valid_x_bf(0)$0" -> "32(0)"	[label=predict];
+	"Xception train bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[98/0]" -> "train_x_bf(0)$0"	[label=print];
+	"print[98/0]" -> "Xception train bottleneck features shape: {} size: {:,}(0)"	[label=print];
+	"Xception valid bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[99/0]" -> "valid_x_bf(0)$0"	[label=print];
+	"print[99/0]" -> "Xception valid bottleneck features shape: {} size: {:,}(0)"	[label=print];
 	"multinomial(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
 	"logreg(0)$0" -> "SEED(0)$0"	[label=LogisticRegression];
 	"logreg(0)$0" -> "multinomial(0)"	[label=LogisticRegression];
 	"logreg(0)$0" -> "lbfgs(0)"	[label=LogisticRegression];
 	"lbfgs(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"logreg(0)$1" -> "train_x_bf(0)$0"	[label=fit];
 	"logreg(0)$1" -> "ytr(0)$0"	[label=fit];
+	"logreg(0)$1" -> "train_x_bf(0)$0"	[label=fit];
 	"logreg(0)$1" -> "logreg(0)$0"	[label=fit];
 	"valid_probs(0)$0" -> "valid_x_bf(0)$0"	[label=predict_proba];
 	"valid_probs(0)$0" -> "logreg(0)$1"	[label=predict_proba];
+	"valid_preds(0)$0" -> "valid_x_bf(0)$0"	[label=predict];
+	"valid_preds(0)$0" -> "logreg(0)$1"	[label=predict];
+	"Validation Xception Accuracy {}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[104/0]" -> "accuracy_score(0)"	[label=print];
+	"print[104/0]" -> "yv(0)$0"	[label=print];
+	"print[104/0]" -> "valid_preds(0)$0"	[label=print];
+	"print[104/0]" -> "Validation Xception Accuracy {}(0)"	[label=print];
 	"cnf_matrix(0)$0" -> "yv(0)$0"	[label=confusion_matrix];
 	"cnf_matrix(0)$0" -> "valid_preds(0)$0"	[label=confusion_matrix];
-	"[<_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x130530dc0>, <_ast.Constant object at 0x130530070>, <_ast.Constant \
-object at 0x1305306d0>, <_ast.Constant object at 0x130530a30>, <_ast.Constant object at 0x130530760>, <_ast.Constant object at 0x130530c70>, <_\
-ast.Constant object at 0x130530670>, <_ast.Constant object at 0x130530730>, <_ast.Constant object at 0x130530f70>, <_ast.Constant \
-object at 0x130530f10>, <_ast.Constant object at 0x1305307c0>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
-	"abbreviation(0)$0" -> "[<_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x130530dc0>, <_ast.Constant object at 0x130530070>, <_ast.Constant \
-object at 0x1305306d0>, <_ast.Constant object at 0x130530a30>, <_ast.Constant object at 0x130530760>, <_ast.Constant object at 0x130530c70>, <_\
-ast.Constant object at 0x130530670>, <_ast.Constant object at 0x130530730>, <_ast.Constant object at 0x130530f70>, <_ast.Constant \
-object at 0x130530f10>, <_ast.Constant object at 0x1305307c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009c1ee0>, <_ast.Constant object at 0x7fd5009c1f70>, <_ast.Constant object at 0x7fd5009c1850>, <_\
+ast.Constant object at 0x7fd5009c1eb0>, <_ast.Constant object at 0x7fd5009c1bb0>, <_ast.Constant object at 0x7fd5009c1fa0>, <_ast.Constant \
+object at 0x7fd5009c1fd0>, <_ast.Constant object at 0x7fd5009c1f10>, <_ast.Constant object at 0x7fd5009c1f40>, <_ast.Constant object \
+at 0x7fd5009c1d00>, <_ast.Constant object at 0x7fd5009c1d90>, <_ast.Constant object at 0x7fd5009c1e50>](0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"abbreviation(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1ee0>, <_ast.Constant object at 0x7fd5009c1f70>, <_ast.Constant object at 0x7fd5009c1850>, <_\
+ast.Constant object at 0x7fd5009c1eb0>, <_ast.Constant object at 0x7fd5009c1bb0>, <_ast.Constant object at 0x7fd5009c1fa0>, <_ast.Constant \
+object at 0x7fd5009c1fd0>, <_ast.Constant object at 0x7fd5009c1f10>, <_ast.Constant object at 0x7fd5009c1f40>, <_ast.Constant object \
+at 0x7fd5009c1d00>, <_ast.Constant object at 0x7fd5009c1d90>, <_ast.Constant object at 0x7fd5009c1e50>](0)"	[label=assignedFrom];
 	"pd(0)$0" -> "pd(0)"	[label=DataFrame];
 	"pd(0)$0" -> "CATEGORIES(0)$0"	[label=DataFrame];
 	"pd(0)$0" -> "abbreviation(0)$0"	[label=DataFrame];
@@ -385,8 +359,20 @@ object at 0x130530f10>, <_ast.Constant object at 0x1305307c0>](0)"	[label=assign
 	"x(0)$1" -> "0(0)"	[label=preprocess_input];
 	"x(0)$1" -> "np(0)$0"	[label=preprocess_input];
 	"x(0)$1" -> "img(0)$2"	[label=preprocess_input];
-	"test_preds(0)$0" -> "test_x_bf(0)$0"	[label=predict];
+	"x_test(0)$1" -> "x_test(0)$0"	[label=assignedFrom];
+	"x_test(0)$1" -> "x(0)$1"	[label=assignedFrom];
+	"test Images shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[122/0]" -> "x_test(0)$1"	[label=print];
+	"print[122/0]" -> "test Images shape: {} size: {:,}(0)"	[label=print];
+	"test_x_bf(0)$0" -> "1(0)"	[label=predict];
+	"test_x_bf(0)$0" -> "xception_bottleneck(0)$0"	[label=predict];
+	"test_x_bf(0)$0" -> "32(0)"	[label=predict];
+	"test_x_bf(0)$0" -> "x_test(0)$1"	[label=predict];
+	"Xception test bottleneck features shape: {} size: {:,}(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[124/0]" -> "test_x_bf(0)$0"	[label=print];
+	"print[124/0]" -> "Xception test bottleneck features shape: {} size: {:,}(0)"	[label=print];
 	"test_preds(0)$0" -> "logreg(0)$1"	[label=predict];
+	"test_preds(0)$0" -> "test_x_bf(0)$0"	[label=predict];
 	"test(0)$4" -> "test(0)$3"	[label=assignedFrom];
 	"test(0)$4" -> "test_preds(0)$0"	[label=assignedFrom];
 	"test(0)$5" -> "CATEGORIES(0)$0"	[label=assignedFrom];
@@ -396,4 +382,11 @@ object at 0x130530f10>, <_ast.Constant object at 0x1305307c0>](0)"	[label=assign
 	"test(0)$6" -> "test(0)$5"	[label=to_csv];
 	"test(0)$6" -> "submission.csv(0)"	[label=to_csv];
 	"submission.csv(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"end(0)$0" -> "dt(0)"	[label=now];
+	"Total time {} s.(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[130/0]" -> "start(0)$0"	[label=print];
+	"print[130/0]" -> "end(0)$0"	[label=print];
+	"print[130/0]" -> "Total time {} s.(0)"	[label=print];
+	"We almost used the one hour time limit.(0)" -> "seedlings-pretrained-keras-models.ipynb"	[label=appearsIn];
+	"print[131/0]" -> "We almost used the one hour time limit.(0)"	[label=print];
 }

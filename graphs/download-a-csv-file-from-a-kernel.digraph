@@ -13,13 +13,6 @@ strict digraph "" {
 	"base64(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
 	"base64(0)" -> base64	[label=assignedFrom];
 	"df(1)" -> "create_download_link[0]"	[label=_argToVar];
-	"create_download_link[0]" -> "df(0)$0"	[label=create_download_link];
-	"df(0)$0" -> "pd(0)"	[label=DataFrame];
-	"df(0)$0" -> "np(0)"	[label=DataFrame];
-	"df(0)$0" -> "50(0)"	[label=DataFrame];
-	"df(0)$0" -> "4(0)"	[label=DataFrame];
-	"df(0)$0" -> "list(0)"	[label=DataFrame];
-	"df(0)$0" -> "ABCD(0)"	[label=DataFrame];
 	"title(1)" -> "create_download_link[1]"	[label=_argToVar];
 	"filename(1)" -> "create_download_link[2]"	[label=_argToVar];
 	"csv(1)$0" -> "df(1)"	[label=to_csv];
@@ -31,8 +24,15 @@ strict digraph "" {
 	"html(1)$1" -> "filename(1)"	[label=format];
 	"html(1)$1" -> "payload(1)$0"	[label=format];
 	"html(1)$1" -> "html(1)$0"	[label=format];
+	"df(0)$0" -> "pd(0)"	[label=DataFrame];
+	"df(0)$0" -> "np(0)"	[label=DataFrame];
+	"df(0)$0" -> "50(0)"	[label=DataFrame];
+	"df(0)$0" -> "4(0)"	[label=DataFrame];
+	"df(0)$0" -> "list(0)"	[label=DataFrame];
+	"df(0)$0" -> "ABCD(0)"	[label=DataFrame];
 	"50(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
 	"4(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
 	"list(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
 	"ABCD(0)" -> "download-a-csv-file-from-a-kernel.ipynb"	[label=appearsIn];
+	"create_download_link[22/0]" -> "df(0)$0"	[label=create_download_link];
 }

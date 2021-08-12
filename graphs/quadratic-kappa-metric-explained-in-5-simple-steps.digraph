@@ -10,23 +10,27 @@ digraph "" {
 	"confusion_matrix(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"confusion_matrix(0)" -> confusion_matrix	[label=assignedFrom];
 	"actuals(0)$0" -> "np(0)"	[label=array];
-	"actuals(0)$0" -> "[<_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant object at 0x12f8ab190>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
-object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab310>, <_ast.Constant object at 0x12f8ab2b0>, <_ast.Constant object at 0x12f8ab790>, <_\
-ast.Constant object at 0x12f8ab100>, <_ast.Constant object at 0x12f8ab220>, <_ast.Constant object at 0x12f8ab160>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant object at 0x12f8ab190>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
-object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab310>, <_ast.Constant object at 0x12f8ab2b0>, <_ast.Constant object at 0x12f8ab790>, <_\
-ast.Constant object at 0x12f8ab100>, <_ast.Constant object at 0x12f8ab220>, <_ast.Constant object at 0x12f8ab160>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"actuals(0)$0" -> "[<_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object at 0x7fd4c048eb20>, <_\
+ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048eca0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ecd0>, <_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object \
+at 0x7fd4c048e880>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object at 0x7fd4c048eb20>, <_\
+ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048eca0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ecd0>, <_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object \
+at 0x7fd4c048e880>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"preds(0)$0" -> "np(0)"	[label=array];
-	"preds(0)$0" -> "[<_ast.Constant object at 0x12f8ab070>, <_ast.Constant object at 0x12f8ab880>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant \
-object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f0a0>, <_\
-ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fb80>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12f8ab070>, <_ast.Constant object at 0x12f8ab880>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant \
-object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f0a0>, <_\
-ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fb80>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"preds(0)$0" -> "[<_ast.Constant object at 0x7fd4c048e5b0>, <_ast.Constant object at 0x7fd4c048e760>, <_ast.Constant object at 0x7fd4c048ee20>, <_\
+ast.Constant object at 0x7fd4c048ed60>, <_ast.Constant object at 0x7fd4c048ec40>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant \
+object at 0x7fd4c048e490>, <_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048e7f0>, <_ast.Constant object \
+at 0x7fd4c048ebb0>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd4c048e5b0>, <_ast.Constant object at 0x7fd4c048e760>, <_ast.Constant object at 0x7fd4c048ee20>, <_\
+ast.Constant object at 0x7fd4c048ed60>, <_ast.Constant object at 0x7fd4c048ec40>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant \
+object at 0x7fd4c048e490>, <_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048e7f0>, <_ast.Constant object \
+at 0x7fd4c048ebb0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"O(0)$0" -> "actuals(0)$0"	[label=confusion_matrix];
 	"O(0)$0" -> "preds(0)$0"	[label=confusion_matrix];
-	"confusion_matrix[0]" -> "actuals(0)$0"	[label=confusion_matrix];
-	"confusion_matrix[1]" -> "preds(0)$0"	[label=confusion_matrix];
+	"confusion_matrix[11/0]" -> "actuals(0)$0"	[label=confusion_matrix];
+	"confusion_matrix[11/0]" -> "preds(0)$0"	[label=confusion_matrix];
 	"w(0)$0" -> "np(0)"	[label=zeros];
 	"w(0)$0" -> "5(0)"	[label=zeros];
 	"5(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
@@ -51,8 +55,8 @@ ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_as
 	"16(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"N(0)$0" -> "5(0)"	[label=assignedFrom];
 	"act_hist(0)$0" -> "np(0)"	[label=zeros];
-	"act_hist(0)$0" -> "[<_ast.Name object at 0x12f8f55b0>](0)"	[label=zeros];
-	"[<_ast.Name object at 0x12f8f55b0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"act_hist(0)$0" -> "[<_ast.Name object at 0x7fd5007f09a0>](0)"	[label=zeros];
+	"[<_ast.Name object at 0x7fd5007f09a0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"item(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"item(0)" -> "actuals(0)$0"	[label=iteratorOf];
 	"item(0)" -> "preds(0)$0"	[label=iteratorOf];
@@ -60,16 +64,16 @@ ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_as
 	"act_hist(0)$1" -> "act_hist(0)$0"	[label=Add];
 	"act_hist(0)$1" -> "1(0)"	[label=Add];
 	"pred_hist(0)$0" -> "np(0)"	[label=zeros];
-	"pred_hist(0)$0" -> "[<_ast.Name object at 0x12f8f5be0>](0)"	[label=zeros];
-	"[<_ast.Name object at 0x12f8f5be0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"pred_hist(0)$0" -> "[<_ast.Name object at 0x7fd4c04ff5e0>](0)"	[label=zeros];
+	"[<_ast.Name object at 0x7fd4c04ff5e0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
 	"pred_hist(0)$1" -> "1(0)"	[label=Add];
 	"pred_hist(0)$1" -> "pred_hist(0)$0"	[label=Add];
 	"Actuals value counts:(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
-	"print[0]" -> "Actuals value counts:(0)"	[label=print];
-	"print[1]" -> "act_hist(0)$1"	[label=print];
+	"print[25/0]" -> "act_hist(0)$1"	[label=print];
+	"print[25/0]" -> "pred_hist(0)$1"	[label=print];
+	"print[25/0]" -> "Actuals value counts:(0)"	[label=print];
+	"print[25/0]" -> ", Prediction value counts:(0)"	[label=print];
 	", Prediction value counts:(0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
-	"print[2]" -> ", Prediction value counts:(0)"	[label=print];
-	"print[3]" -> "pred_hist(0)$1"	[label=print];
 	"E(0)$0" -> "np(0)"	[label=outer];
 	"E(0)$0" -> "act_hist(0)$1"	[label=outer];
 	"E(0)$0" -> "pred_hist(0)$1"	[label=outer];
@@ -135,9 +139,7 @@ ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_as
 	"hist_ratings(2)$1" -> "1(2)"	[label=Add];
 	"hist_ratings(2)$1" -> "hist_ratings(2)$0"	[label=Add];
 	"y(3)" -> "quadratic_weighted_kappa[0]"	[label=_argToVar];
-	"quadratic_weighted_kappa[0]" -> "actuals(0)$0"	[label=quadratic_weighted_kappa];
 	"y_pred(3)" -> "quadratic_weighted_kappa[1]"	[label=_argToVar];
-	"quadratic_weighted_kappa[1]" -> "preds(0)$0"	[label=quadratic_weighted_kappa];
 	"rater_a(3)$0" -> "y(3)"	[label=assignedFrom];
 	"rater_b(3)$0" -> "y_pred(3)"	[label=assignedFrom];
 	"min_rating(3)$0" -> "None(3)"	[label=assignedFrom];
@@ -194,20 +196,10 @@ ast.Constant object at 0x12fc4feb0>, <_ast.Constant object at 0x12fc4f670>, <_as
 	"denominator(3)$1" -> "denominator(3)$0"	[label=Add];
 	"denominator(3)$1" -> "expected_count(3)$0"	[label=Add];
 	"denominator(3)$1" -> "d(3)$0"	[label=Add];
+	"quadratic_weighted_kappa[122/0]" -> "actuals(0)$0"	[label=quadratic_weighted_kappa];
+	"quadratic_weighted_kappa[122/0]" -> "preds(0)$0"	[label=quadratic_weighted_kappa];
 	"actuals(4)" -> "quadratic_kappa[0]"	[label=_argToVar];
-	"quadratic_kappa[0]" -> "actuals(0)$0"	[label=quadratic_kappa];
-	"quadratic_kappa[0]" -> "actuals(0)$1"	[label=quadratic_kappa];
-	"actuals(0)$1" -> "np(0)"	[label=array];
-	"actuals(0)$1" -> "[<_ast.Constant object at 0x13052b6d0>, <_ast.Constant object at 0x13052bbe0>, <_ast.Constant object at 0x13052bdc0>, <_ast.Constant \
-object at 0x13052bbb0>, <_ast.Constant object at 0x13052bca0>, <_ast.Constant object at 0x13052bfd0>, <_ast.Constant object at 0x13052b850>, <_\
-ast.Constant object at 0x13052be80>, <_ast.Constant object at 0x13052bc10>, <_ast.Constant object at 0x13052beb0>](0)"	[label=array];
 	"preds(4)" -> "quadratic_kappa[1]"	[label=_argToVar];
-	"quadratic_kappa[1]" -> "preds(0)$0"	[label=quadratic_kappa];
-	"quadratic_kappa[1]" -> "preds(0)$1"	[label=quadratic_kappa];
-	"preds(0)$1" -> "np(0)"	[label=array];
-	"preds(0)$1" -> "[<_ast.Constant object at 0x13052b8e0>, <_ast.Constant object at 0x13052bd90>, <_ast.Constant object at 0x13052be20>, <_ast.Constant \
-object at 0x13052bcd0>, <_ast.Constant object at 0x13052b760>, <_ast.Constant object at 0x13052ba00>, <_ast.Constant object at 0x13052b790>, <_\
-ast.Constant object at 0x13052b940>, <_ast.Constant object at 0x13052b970>, <_ast.Constant object at 0x13052be50>](0)"	[label=array];
 	"N(4)" -> "quadratic_kappa[2]"	[label=_argToVar];
 	"w(4)$0" -> "N(4)"	[label=zeros];
 	"w(4)$0" -> "np(4)"	[label=zeros];
@@ -228,13 +220,13 @@ ast.Constant object at 0x13052b940>, <_ast.Constant object at 0x13052b970>, <_as
 	"j(4)" -> "len(4)"	[label=iteratorOf];
 	"j(4)" -> "w(4)$1"	[label=iteratorOf];
 	"act_hist(4)$0" -> "np(4)"	[label=zeros];
-	"act_hist(4)$0" -> "[<_ast.Name object at 0x12f90fe80>](4)"	[label=zeros];
+	"act_hist(4)$0" -> "[<_ast.Name object at 0x7fd5009c1910>](4)"	[label=zeros];
 	"item(4)" -> "actuals(4)"	[label=iteratorOf];
 	"item(4)" -> "preds(4)"	[label=iteratorOf];
 	"act_hist(4)$1" -> "1(4)"	[label=Add];
 	"act_hist(4)$1" -> "act_hist(4)$0"	[label=Add];
 	"pred_hist(4)$0" -> "np(4)"	[label=zeros];
-	"pred_hist(4)$0" -> "[<_ast.Name object at 0x12f90a040>](4)"	[label=zeros];
+	"pred_hist(4)$0" -> "[<_ast.Name object at 0x7fd5009c1eb0>](4)"	[label=zeros];
 	"pred_hist(4)$1" -> "1(4)"	[label=Add];
 	"pred_hist(4)$1" -> "pred_hist(4)$0"	[label=Add];
 	"E(4)$0" -> "np(4)"	[label=outer];
@@ -256,10 +248,26 @@ ast.Constant object at 0x13052b940>, <_ast.Constant object at 0x13052b970>, <_as
 	"den(4)$1" -> "j(4)"	[label=Add];
 	"den(4)$1" -> "E(4)$1"	[label=Add];
 	"den(4)$1" -> "den(4)$0"	[label=Add];
-	"[<_ast.Constant object at 0x13052b6d0>, <_ast.Constant object at 0x13052bbe0>, <_ast.Constant object at 0x13052bdc0>, <_ast.Constant \
-object at 0x13052bbb0>, <_ast.Constant object at 0x13052bca0>, <_ast.Constant object at 0x13052bfd0>, <_ast.Constant object at 0x13052b850>, <_\
-ast.Constant object at 0x13052be80>, <_ast.Constant object at 0x13052bc10>, <_ast.Constant object at 0x13052beb0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x13052b8e0>, <_ast.Constant object at 0x13052bd90>, <_ast.Constant object at 0x13052be20>, <_ast.Constant \
-object at 0x13052bcd0>, <_ast.Constant object at 0x13052b760>, <_ast.Constant object at 0x13052ba00>, <_ast.Constant object at 0x13052b790>, <_\
-ast.Constant object at 0x13052b940>, <_ast.Constant object at 0x13052b970>, <_ast.Constant object at 0x13052be50>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"quadratic_kappa[154/0]" -> "actuals(0)$0"	[label=quadratic_kappa];
+	"quadratic_kappa[154/0]" -> "preds(0)$0"	[label=quadratic_kappa];
+	"actuals(0)$1" -> "np(0)"	[label=array];
+	"actuals(0)$1" -> "[<_ast.Constant object at 0x7fd50085b730>, <_ast.Constant object at 0x7fd50085bac0>, <_ast.Constant object at 0x7fd50085baf0>, <_\
+ast.Constant object at 0x7fd50085bb20>, <_ast.Constant object at 0x7fd50085ba60>, <_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant \
+object at 0x7fd50085bd00>, <_ast.Constant object at 0x7fd50085b850>, <_ast.Constant object at 0x7fd50085b520>, <_ast.Constant object \
+at 0x7fd50085b5b0>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd50085b730>, <_ast.Constant object at 0x7fd50085bac0>, <_ast.Constant object at 0x7fd50085baf0>, <_\
+ast.Constant object at 0x7fd50085bb20>, <_ast.Constant object at 0x7fd50085ba60>, <_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant \
+object at 0x7fd50085bd00>, <_ast.Constant object at 0x7fd50085b850>, <_ast.Constant object at 0x7fd50085b520>, <_ast.Constant object \
+at 0x7fd50085b5b0>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"preds(0)$1" -> "np(0)"	[label=array];
+	"preds(0)$1" -> "[<_ast.Constant object at 0x7fd50085b790>, <_ast.Constant object at 0x7fd50085bb80>, <_ast.Constant object at 0x7fd50085bdf0>, <_\
+ast.Constant object at 0x7fd50085b9a0>, <_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant \
+object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object at 0x7fd50085bbb0>, <_ast.Constant object \
+at 0x7fd50085b250>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd50085b790>, <_ast.Constant object at 0x7fd50085bb80>, <_ast.Constant object at 0x7fd50085bdf0>, <_\
+ast.Constant object at 0x7fd50085b9a0>, <_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant \
+object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object at 0x7fd50085bbb0>, <_ast.Constant object \
+at 0x7fd50085b250>](0)" -> "quadratic-kappa-metric-explained-in-5-simple-steps.ipynb"	[label=appearsIn];
+	"quadratic_kappa[157/0]" -> "actuals(0)$1"	[label=quadratic_kappa];
+	"quadratic_kappa[157/0]" -> "preds(0)$1"	[label=quadratic_kappa];
 }

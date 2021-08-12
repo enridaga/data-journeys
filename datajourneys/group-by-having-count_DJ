@@ -1,74 +1,10 @@
 strict digraph "" {
 	node [label="\N"];
-	"http://purl.org/dj/kaggle/group-by-having-count#693372172"	[label="693372172 (hacker_news(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count"	[label="group-by-having-count"];
-	"http://purl.org/dj/kaggle/group-by-having-count#693372172" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191"	[label="1578764191 (popular_comments(0)$1: Preparation)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="439485418 (bigquery(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label="890384083 (
-
-                SELECT parent, COUNT(id)
-
-                FROM `bigquery-public-data.hacker_news.comments`
-
-                \
-GROUP BY parent
-
-                HAVING COUNT(id) > 10
-
-                (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label=previous];
-	"http://purl.org/dj/python/lib/520815811"	[label="520815811 (google.cloud: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label="45809891 (10(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#439485418" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#890384083" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/python/lib/520815811" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#45809891" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526"	[label="893191526 (improved_df(0)$1: Preparation)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/python/lib/520815811"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label="1678062168 (
-
-                 SELECT parent, COUNT(1) AS NumPosts
-
-                 FROM `bigquery-public-data.hacker_news.comments`
-
-                 \
-GROUP BY parent
-
-                 HAVING COUNT(1) > 10
-
-                 (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#1678062168" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#1825900637"	[label="1825900637 (bigquery-public-data(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1825900637" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#1086466107"	[label="1086466107 (
-
-            SELECT author, parent, COUNT(id)
-
-            FROM `bigquery-public-data.hacker_news.comments`
-
-            \
-GROUP BY parent
-
-            (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1086466107" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#440861672"	[label="440861672 (comments(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#440861672" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
-	"http://purl.org/dj/kaggle/group-by-having-count#550381020"	[label="550381020 (
-
-             SELECT parent, COUNT(id)
-
-             FROM `bigquery-public-data.hacker_news.comments`
-
-             \
-GROUP BY parent
-
-             (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#550381020" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-8046405096444283875"	[label="-8046405096444283875 (Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count"	[label="group-by-having-count (group-by-having-count.ipynb)"];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-8046405096444283875" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previous];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-4789771019093840324"	[label="-4789771019093840324 (Preparation)"];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-4789771019093840324" -> "http://purl.org/dj/kaggle/group-by-having-count/activity/-8046405096444283875"	[label=previous];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-6031032197130807593"	[label="-6031032197130807593 (Preparation)"];
+	"http://purl.org/dj/kaggle/group-by-having-count/activity/-6031032197130807593" -> "http://purl.org/dj/kaggle/group-by-having-count/activity/-8046405096444283875"	[label=previous];
 }

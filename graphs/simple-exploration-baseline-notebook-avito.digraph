@@ -56,37 +56,27 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "Train file rows and columns are : (0)"	[label=print];
-	"print[0]" -> "Test file rows and columns are : (0)"	[label=print];
-	"print[0]" -> "dev_X(0)$0"	[label=print];
-	"Train file rows and columns are : (0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"Test file rows and columns are : (0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"dev_X(0)$0" -> "train_X(0)$0"	[label=assignedFrom];
-	"dev_X(0)$0" -> "200000(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130532610>, <_ast.Constant object at 0x1305322e0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x130532610>, <_ast.Constant object at 0x1305322e0>](0)"	[label=print];
-	"print[1]" -> "train_df(0)$0"	[label=print];
-	"print[1]" -> "test_df(0)$0"	[label=print];
-	"print[1]" -> "val_X(0)$0"	[label=print];
+	"print[22/0]" -> "check_output(0)"	[label=print];
+	"print[22/0]" -> "[<_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object at 0x7fd50080df70>](0)"	[label=print];
+	"print[22/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object at 0x7fd50080df70>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"utf8(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"train_df(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
-	"train_df(0)$0" -> "[<_ast.Constant object at 0x1305320d0>](0)"	[label=read_csv];
+	"train_df(0)$0" -> "[<_ast.Constant object at 0x7fd50080d820>](0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d820>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"test_df(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"test_df(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"test_df(0)$0" -> "[<_ast.Constant object at 0x130532b20>](0)"	[label=read_csv];
-	"val_X(0)$0" -> "train_X(0)$0"	[label=assignedFrom];
-	"val_X(0)$0" -> "200000(0)"	[label=assignedFrom];
-	"utf8(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
-	"print[2]" -> "test_X(0)$0"	[label=print];
-	"test_X(0)$0" -> "1(0)"	[label=drop];
-	"test_X(0)$0" -> "test_df(0)$7"	[label=drop];
-	"test_X(0)$0" -> "cols_to_drop(0)$0"	[label=drop];
-	"../input/train.csv(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305320d0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"test_df(0)$0" -> "[<_ast.Constant object at 0x7fd50080d1f0>](0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532b20>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d1f0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"Train file rows and columns are : (0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"print[25/0]" -> "train_df(0)$0"	[label=print];
+	"print[25/0]" -> "Train file rows and columns are : (0)"	[label=print];
+	"Test file rows and columns are : (0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "test_df(0)$0"	[label=print];
+	"print[26/0]" -> "Test file rows and columns are : (0)"	[label=print];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"sns(0)$0" -> "sns(0)"	[label=distplot];
@@ -231,8 +221,8 @@ oblast
 	"layout(0)$0" -> "900(0)"	[label=Layout];
 	"Region distribution(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"900(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fab1dc0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Name object at 0x12fab1dc0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50085b880>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd50085b880>](0)"	[label=assignedFrom];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "layout(0)$0"	[label=Figure];
 	"fig(0)$0" -> "data(0)$0"	[label=Figure];
@@ -270,8 +260,8 @@ oblast
 	"True(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"City distribution of Ads(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"layout(0)$1" -> "City distribution of Ads(0)"	[label=dict];
-	"[<_ast.Name object at 0x12f957eb0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x12f957eb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04cc940>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd4c04cc940>](0)"	[label=assignedFrom];
 	"fig(0)$1" -> "go(0)"	[label=Figure];
 	"fig(0)$1" -> "layout(0)$1"	[label=Figure];
 	"fig(0)$1" -> "data(0)$1"	[label=Figure];
@@ -330,8 +320,8 @@ Hobbies & leisure
 	"layout(0)$2" -> "900(0)"	[label=Layout];
 	"layout(0)$2" -> "Parent Category distribution(0)"	[label=Layout];
 	"Parent Category distribution(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f85eeb0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x12f85eeb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ff8e0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd4c04ff8e0>](0)"	[label=assignedFrom];
 	"fig(0)$2" -> "go(0)"	[label=Figure];
 	"fig(0)$2" -> "layout(0)$2"	[label=Figure];
 	"fig(0)$2" -> "data(0)$2"	[label=Figure];
@@ -504,8 +494,8 @@ and fishing
 	"Category Name of Ads - Count(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"layout(0)$3" -> "900(0)"	[label=dict];
 	"layout(0)$3" -> "Category Name of Ads - Count(0)"	[label=dict];
-	"[<_ast.Name object at 0x12fc3b8b0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Name object at 0x12fc3b8b0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd490293460>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x7fd490293460>](0)"	[label=assignedFrom];
 	"fig(0)$3" -> "go(0)"	[label=Figure];
 	"fig(0)$3" -> "layout(0)$3"	[label=Figure];
 	"fig(0)$3" -> "data(0)$3"	[label=Figure];
@@ -527,8 +517,8 @@ and fishing
 	"layout(0)$4" -> "600(0)"	[label=Layout];
 	"User Type distribution(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"600(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fc42b50>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$4" -> "[<_ast.Name object at 0x12fc42b50>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04addc0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$4" -> "[<_ast.Name object at 0x7fd4c04addc0>](0)"	[label=assignedFrom];
 	"fig(0)$4" -> "go(0)"	[label=Figure];
 	"fig(0)$4" -> "layout(0)$4"	[label=Figure];
 	"fig(0)$4" -> "data(0)$4"	[label=Figure];
@@ -566,8 +556,8 @@ and fishing
 	"layout(0)$5" -> "go(0)"	[label=Layout];
 	"layout(0)$5" -> "Activation Dates in Train(0)"	[label=Layout];
 	"Activation Dates in Train(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9a6970>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$5" -> "[<_ast.Name object at 0x12f9a6970>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ac490>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Name object at 0x7fd4c04ac490>](0)"	[label=assignedFrom];
 	"fig(0)$5" -> "go(0)"	[label=Figure];
 	"fig(0)$5" -> "layout(0)$5"	[label=Figure];
 	"fig(0)$5" -> "data(0)$5"	[label=Figure];
@@ -583,8 +573,8 @@ and fishing
 	"layout(0)$6" -> "go(0)"	[label=Layout];
 	"layout(0)$6" -> "Activation Dates in Test(0)"	[label=Layout];
 	"Activation Dates in Test(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f88b520>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$6" -> "[<_ast.Name object at 0x12f88b520>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50081a0d0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Name object at 0x7fd50081a0d0>](0)"	[label=assignedFrom];
 	"fig(0)$6" -> "go(0)"	[label=Figure];
 	"fig(0)$6" -> "layout(0)$6"	[label=Figure];
 	"fig(0)$6" -> "data(0)$6"	[label=Figure];
@@ -595,19 +585,21 @@ and fishing
 	"venn2(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"venn2(0)" -> venn2	[label=assignedFrom];
 	"plt(0)$26" -> "plt(0)$25"	[label=figure];
-	"[<_ast.Call object at 0x12f88bc70>, <_ast.Call object at 0x12f88bd90>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"venn2[0]" -> "[<_ast.Call object at 0x12f88bc70>, <_ast.Call object at 0x12f88bd90>](0)"	[label=venn2];
-	"venn2[0]" -> "[<_ast.Call object at 0x12f8a2580>, <_ast.Call object at 0x12f8a26a0>](0)"	[label=venn2];
-	"[<_ast.Call object at 0x12f8a2580>, <_ast.Call object at 0x12f8a26a0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd50081ac70>, <_ast.Call object at 0x7fd50081a370>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"venn2[285/0]" -> "[<_ast.Call object at 0x7fd50081ac70>, <_ast.Call object at 0x7fd50081a370>](0)"	[label=venn2];
+	"venn2[285/0]" -> "Train set(0)"	[label=venn2];
+	"venn2[285/0]" -> "Test set(0)"	[label=venn2];
 	"Train set(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"venn2[1]" -> "Train set(0)"	[label=venn2];
 	"Test set(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"venn2[2]" -> "Test set(0)"	[label=venn2];
 	"plt(0)$27" -> "plt(0)$26"	[label=title];
 	"plt(0)$27" -> "Number of users in train and test(0)"	[label=title];
 	"Number of users in train and test(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"plt(0)$28" -> "plt(0)$27"	[label=show];
 	"plt(0)$29" -> "plt(0)$28"	[label=figure];
+	"[<_ast.Call object at 0x7fd4c04e4370>, <_ast.Call object at 0x7fd4c04e4490>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"venn2[291/0]" -> "Train set(0)"	[label=venn2];
+	"venn2[291/0]" -> "Test set(0)"	[label=venn2];
+	"venn2[291/0]" -> "[<_ast.Call object at 0x7fd4c04e4370>, <_ast.Call object at 0x7fd4c04e4490>](0)"	[label=venn2];
 	"plt(0)$30" -> "plt(0)$29"	[label=title];
 	"plt(0)$30" -> "Number of titles in train and test(0)"	[label=title];
 	"Number of titles in train and test(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
@@ -635,8 +627,8 @@ and fishing
 	"layout(0)$7" -> "go(0)"	[label=Layout];
 	"layout(0)$7" -> "Number of words in title column(0)"	[label=Layout];
 	"Number of words in title column(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f885bb0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$7" -> "[<_ast.Name object at 0x12f885bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04a89a0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$7" -> "[<_ast.Name object at 0x7fd4c04a89a0>](0)"	[label=assignedFrom];
 	"fig(0)$7" -> "go(0)"	[label=Figure];
 	"fig(0)$7" -> "layout(0)$7"	[label=Figure];
 	"fig(0)$7" -> "data(0)$7"	[label=Figure];
@@ -685,12 +677,12 @@ and fishing
 	"test_svd(0)$1" -> "i(0)"	[label=assignedFrom];
 	"train_df(0)$8" -> "pd(0)$1"	[label=concat];
 	"train_df(0)$8" -> "1(0)"	[label=concat];
-	"train_df(0)$8" -> "[<_ast.Name object at 0x12f88a940>, <_ast.Name object at 0x12f88a970>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f88a940>, <_ast.Name object at 0x12f88a970>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"train_df(0)$8" -> "[<_ast.Name object at 0x7fd50081c790>, <_ast.Name object at 0x7fd50081c7c0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50081c790>, <_ast.Name object at 0x7fd50081c7c0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"test_df(0)$2" -> "pd(0)$1"	[label=concat];
 	"test_df(0)$2" -> "1(0)"	[label=concat];
-	"test_df(0)$2" -> "[<_ast.Name object at 0x12f88ab50>, <_ast.Name object at 0x12f88ab80>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f88ab50>, <_ast.Name object at 0x12f88ab80>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"test_df(0)$2" -> "[<_ast.Name object at 0x7fd50081c9a0>, <_ast.Name object at 0x7fd50081c9d0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50081c9a0>, <_ast.Name object at 0x7fd50081c9d0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"plt(0)$32" -> "plt(0)$31"	[label=figure];
 	"sns(0)$4" -> "sns(0)$3"	[label=jointplot];
 	"plt(0)$33" -> "plt(0)$32"	[label=ylabel];
@@ -751,8 +743,8 @@ and fishing
 	"layout(0)$8" -> "go(0)"	[label=Layout];
 	"layout(0)$8" -> "Number of words in Description column(0)"	[label=Layout];
 	"Number of words in Description column(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f886970>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"data(0)$8" -> "[<_ast.Name object at 0x12f886970>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50082d730>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"data(0)$8" -> "[<_ast.Name object at 0x7fd50082d730>](0)"	[label=assignedFrom];
 	"fig(0)$8" -> "go(0)"	[label=Figure];
 	"fig(0)$8" -> "layout(0)$8"	[label=Figure];
 	"fig(0)$8" -> "data(0)$8"	[label=Figure];
@@ -799,12 +791,12 @@ and fishing
 	"test_svd(0)$3" -> "svd_desc_(0)"	[label=assignedFrom];
 	"train_df(0)$11" -> "pd(0)$1"	[label=concat];
 	"train_df(0)$11" -> "1(0)"	[label=concat];
-	"train_df(0)$11" -> "[<_ast.Name object at 0x12fc1d760>, <_ast.Name object at 0x12fc1d790>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fc1d760>, <_ast.Name object at 0x12fc1d790>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"train_df(0)$11" -> "[<_ast.Name object at 0x7fd5008195b0>, <_ast.Name object at 0x7fd5008195e0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd5008195b0>, <_ast.Name object at 0x7fd5008195e0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"test_df(0)$5" -> "pd(0)$1"	[label=concat];
 	"test_df(0)$5" -> "1(0)"	[label=concat];
-	"test_df(0)$5" -> "[<_ast.Name object at 0x12fc1d970>, <_ast.Name object at 0x12fc1d9a0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fc1d970>, <_ast.Name object at 0x12fc1d9a0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"test_df(0)$5" -> "[<_ast.Name object at 0x7fd500819790>, <_ast.Name object at 0x7fd5008197c0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500819790>, <_ast.Name object at 0x7fd5008197c0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"plt(0)$47" -> "plt(0)$46"	[label=figure];
 	"sns(0)$7" -> "sns(0)$6"	[label=jointplot];
 	"plt(0)$48" -> "Deal Probability(0)"	[label=ylabel];
@@ -845,12 +837,12 @@ and fishing
 	"train_df(0)$12" -> "train_df(0)$11"	[label=assignedFrom];
 	"test_df(0)$6" -> "activation_date(0)"	[label=assignedFrom];
 	"test_df(0)$6" -> "test_df(0)$5"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc38a30>, <_ast.Constant object at 0x12fc38a60>, <_ast.Constant object at 0x12fc38a90>, <_ast.Constant \
-object at 0x12fc38ac0>, <_ast.Constant object at 0x12fc38af0>, <_ast.Constant object at 0x12fc38b20>, <_ast.Constant object at 0x12fc38b50>, <_\
-ast.Constant object at 0x12fc38b80>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"cat_vars(0)$0" -> "[<_ast.Constant object at 0x12fc38a30>, <_ast.Constant object at 0x12fc38a60>, <_ast.Constant object at 0x12fc38a90>, <_ast.Constant \
-object at 0x12fc38ac0>, <_ast.Constant object at 0x12fc38af0>, <_ast.Constant object at 0x12fc38b20>, <_ast.Constant object at 0x12fc38b50>, <_\
-ast.Constant object at 0x12fc38b80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009ab880>, <_ast.Constant object at 0x7fd5009ab8b0>, <_ast.Constant object at 0x7fd5009ab8e0>, <_\
+ast.Constant object at 0x7fd5009ab910>, <_ast.Constant object at 0x7fd5009ab940>, <_ast.Constant object at 0x7fd5009ab970>, <_ast.Constant \
+object at 0x7fd5009ab9a0>, <_ast.Constant object at 0x7fd5009ab6d0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"cat_vars(0)$0" -> "[<_ast.Constant object at 0x7fd5009ab880>, <_ast.Constant object at 0x7fd5009ab8b0>, <_ast.Constant object at 0x7fd5009ab8e0>, <_\
+ast.Constant object at 0x7fd5009ab910>, <_ast.Constant object at 0x7fd5009ab940>, <_ast.Constant object at 0x7fd5009ab970>, <_ast.Constant \
+object at 0x7fd5009ab9a0>, <_ast.Constant object at 0x7fd5009ab6d0>](0)"	[label=assignedFrom];
 	"col(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
 	"col(0)" -> "cat_vars(0)$0"	[label=iteratorOf];
 	"lbl(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
@@ -873,17 +865,20 @@ ast.Constant object at 0x12fc38b80>](0)"	[label=assignedFrom];
 	"test_df(0)$7" -> "lbl(0)$1"	[label=transform];
 	"test_df(0)$7" -> "list(0)"	[label=transform];
 	"test_df(0)$7" -> "test_df(0)$7"	[label=transform];
-	"[<_ast.Constant object at 0x12fc48af0>, <_ast.Constant object at 0x12fc48b20>, <_ast.Constant object at 0x12fc48b50>, <_ast.Constant \
-object at 0x12fc48b80>, <_ast.Constant object at 0x12fc48bb0>, <_ast.Constant object at 0x12fc48be0>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
-	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x12fc48af0>, <_ast.Constant object at 0x12fc48b20>, <_ast.Constant object at 0x12fc48b50>, <_ast.Constant \
-object at 0x12fc48b80>, <_ast.Constant object at 0x12fc48bb0>, <_ast.Constant object at 0x12fc48be0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009c2910>, <_ast.Constant object at 0x7fd5009c2940>, <_ast.Constant object at 0x7fd5009c2970>, <_\
+ast.Constant object at 0x7fd5009c29a0>, <_ast.Constant object at 0x7fd5009c29d0>, <_ast.Constant object at 0x7fd5009c2a00>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x7fd5009c2910>, <_ast.Constant object at 0x7fd5009c2940>, <_ast.Constant object at 0x7fd5009c2970>, <_\
+ast.Constant object at 0x7fd5009c29a0>, <_ast.Constant object at 0x7fd5009c29d0>, <_ast.Constant object at 0x7fd5009c2a00>](0)"	[label=assignedFrom];
 	"train_X(0)$0" -> "1(0)"	[label=drop];
 	"train_X(0)$0" -> "train_df(0)$13"	[label=drop];
 	"train_X(0)$0" -> "cols_to_drop(0)$0"	[label=drop];
-	"train_X(0)$0" -> "[<_ast.Constant object at 0x12fc48dc0>, <_ast.Constant object at 0x12fc48df0>, <_ast.Constant object at 0x12fc48e20>, <_ast.Constant \
-object at 0x12fc48e50>, <_ast.Constant object at 0x12fc48e80>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc48dc0>, <_ast.Constant object at 0x12fc48df0>, <_ast.Constant object at 0x12fc48e20>, <_ast.Constant \
-object at 0x12fc48e50>, <_ast.Constant object at 0x12fc48e80>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"train_X(0)$0" -> "[<_ast.Constant object at 0x7fd5009c2be0>, <_ast.Constant object at 0x7fd5009c2c10>, <_ast.Constant object at 0x7fd5009c2c40>, <_\
+ast.Constant object at 0x7fd5009c2ca0>, <_ast.Constant object at 0x7fd5009c2c70>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd5009c2be0>, <_ast.Constant object at 0x7fd5009c2c10>, <_ast.Constant object at 0x7fd5009c2c40>, <_\
+ast.Constant object at 0x7fd5009c2ca0>, <_ast.Constant object at 0x7fd5009c2c70>](0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"test_X(0)$0" -> "1(0)"	[label=drop];
+	"test_X(0)$0" -> "test_df(0)$7"	[label=drop];
+	"test_X(0)$0" -> "cols_to_drop(0)$0"	[label=drop];
 	"train_X(1)" -> "run_lgb[0]"	[label=_argToVar];
 	"train_y(1)" -> "run_lgb[1]"	[label=_argToVar];
 	"val_X(1)" -> "run_lgb[2]"	[label=_argToVar];
@@ -916,30 +911,37 @@ object at 0x12fc48e50>, <_ast.Constant object at 0x12fc48e80>](0)" -> "simple-ex
 	"model(1)$0" -> "lgtrain(1)$0"	[label=train];
 	"model(1)$0" -> "lgb(1)"	[label=train];
 	"model(1)$0" -> "1000(1)"	[label=train];
-	"model(1)$0" -> "[<_ast.Name object at 0x12fc31cd0>](1)"	[label=train];
+	"model(1)$0" -> "[<_ast.Name object at 0x7fd5009c6b80>](1)"	[label=train];
 	"model(1)$0" -> "100(1)"	[label=train];
 	"model(1)$0" -> "20(1)"	[label=train];
 	"model(1)$0" -> "evals_result(1)"	[label=train];
 	"pred_test_y(1)$0" -> "test_X(1)"	[label=predict];
 	"pred_test_y(1)$0" -> "model(1)$0"	[label=predict];
+	"dev_X(0)$0" -> "train_X(0)$0"	[label=assignedFrom];
+	"dev_X(0)$0" -> "200000(0)"	[label=assignedFrom];
 	"200000(0)" -> "simple-exploration-baseline-notebook-avito.ipynb"	[label=appearsIn];
+	"val_X(0)$0" -> "train_X(0)$0"	[label=assignedFrom];
+	"val_X(0)$0" -> "200000(0)"	[label=assignedFrom];
 	"dev_y(0)$0" -> "train_y(0)$0"	[label=assignedFrom];
 	"dev_y(0)$0" -> "200000(0)"	[label=assignedFrom];
 	"val_y(0)$0" -> "train_y(0)$0"	[label=assignedFrom];
 	"val_y(0)$0" -> "200000(0)"	[label=assignedFrom];
+	"print[466/0]" -> "test_X(0)$0"	[label=print];
+	"print[466/0]" -> "dev_X(0)$0"	[label=print];
+	"print[466/0]" -> "val_X(0)$0"	[label=print];
+	"pred_test(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"pred_test(0)$0" -> "dev_X(0)$0"	[label=run_lgb];
 	"pred_test(0)$0" -> "val_X(0)$0"	[label=run_lgb];
-	"pred_test(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"pred_test(0)$0" -> "dev_y(0)$0"	[label=run_lgb];
 	"pred_test(0)$0" -> "val_y(0)$0"	[label=run_lgb];
+	"model(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"model(0)$0" -> "dev_X(0)$0"	[label=run_lgb];
 	"model(0)$0" -> "val_X(0)$0"	[label=run_lgb];
-	"model(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"model(0)$0" -> "dev_y(0)$0"	[label=run_lgb];
 	"model(0)$0" -> "val_y(0)$0"	[label=run_lgb];
+	"evals_result(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"evals_result(0)$0" -> "dev_X(0)$0"	[label=run_lgb];
 	"evals_result(0)$0" -> "val_X(0)$0"	[label=run_lgb];
-	"evals_result(0)$0" -> "test_X(0)$0"	[label=run_lgb];
 	"evals_result(0)$0" -> "dev_y(0)$0"	[label=run_lgb];
 	"evals_result(0)$0" -> "val_y(0)$0"	[label=run_lgb];
 	"pred_test(0)$1" -> "1(0)"	[label=assignedFrom];

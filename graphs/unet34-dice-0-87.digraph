@@ -32,16 +32,16 @@ digraph "" {
 	"SEGMENTATION(0)$0" -> "../input/airbus-ship-detection/train_ship_segmentations.csv(0)"	[label=assignedFrom];
 	"../input/fine-tuning-resnet34-on-ship-detection/models/Resnet34_lable_256_1.h5(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"PRETRAINED(0)$0" -> "../input/fine-tuning-resnet34-on-ship-detection/models/Resnet34_lable_256_1.h5(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab310>, <_ast.Constant \
-object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab1f0>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant object at 0x12f8ab880>, <_\
-ast.Constant object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab280>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
-object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab190>, <_ast.Constant object at 0x12f8ab250>, <_ast.Constant object at 0x12f8ab2b0>, <_\
-ast.Constant object at 0x12f8ab370>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
-	"exclude_list(0)$0" -> "[<_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab310>, <_ast.Constant \
-object at 0x12f8ab8b0>, <_ast.Constant object at 0x12f8ab1f0>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant object at 0x12f8ab880>, <_\
-ast.Constant object at 0x12f8ab130>, <_ast.Constant object at 0x12f8ab280>, <_ast.Constant object at 0x12f8aba60>, <_ast.Constant \
-object at 0x12f8ab040>, <_ast.Constant object at 0x12f8ab190>, <_ast.Constant object at 0x12f8ab250>, <_ast.Constant object at 0x12f8ab2b0>, <_\
-ast.Constant object at 0x12f8ab370>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999550>, <_\
+ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant \
+object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object \
+at 0x7fd500999670>, <_ast.Constant object at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at \
+0x7fd500999f10>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999d00>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
+	"exclude_list(0)$0" -> "[<_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999550>, <_\
+ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant \
+object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object \
+at 0x7fd500999670>, <_ast.Constant object at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at \
+0x7fd500999f10>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999d00>](0)"	[label=assignedFrom];
 	"2(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"nw(0)$0" -> "2(0)"	[label=assignedFrom];
 	"resnet34(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
@@ -86,7 +86,7 @@ ast.Constant object at 0x12f8ab370>](0)"	[label=assignedFrom];
 	"masks(2)$0" -> "img_id(2)"	[label=assignedFrom];
 	"masks(2)$0" -> "df(2)"	[label=assignedFrom];
 	"masks(2)$0" -> "EncodedPixels(2)"	[label=assignedFrom];
-	"masks(2)$1" -> "[<_ast.Name object at 0x12f89afa0>](2)"	[label=assignedFrom];
+	"masks(2)$1" -> "[<_ast.Name object at 0x7fd500832f40>](2)"	[label=assignedFrom];
 	"mask(2)" -> "masks(2)$1"	[label=iteratorOf];
 	"s(2)$0" -> "mask(2)"	[label=split];
 	"i(2)" -> "s(2)$0"	[label=iteratorOf];
@@ -160,7 +160,7 @@ ast.Constant object at 0x12f8ab370>](0)"	[label=assignedFrom];
 	"x(11)$0" -> "c(11)$1"	[label=lighting];
 	"sz(12)" -> "get_data[0]"	[label=_argToVar];
 	"bs(12)" -> "get_data[1]"	[label=_argToVar];
-	"aug_tfms(12)$0" -> "[<_ast.Call object at 0x130532a60>, <_ast.Call object at 0x130532520>, <_ast.Call object at 0x130532c70>](12)"	[label=assignedFrom];
+	"aug_tfms(12)$0" -> "[<_ast.Call object at 0x7fd5007f05b0>, <_ast.Call object at 0x7fd5007f0940>, <_ast.Call object at 0x7fd5007f04c0>](12)"	[label=assignedFrom];
 	"tfms(12)$0" -> "sz(12)"	[label=tfms_from_model];
 	"tfms(12)$0" -> "aug_tfms(12)$0"	[label=tfms_from_model];
 	"tfms(12)$0" -> "arch(12)"	[label=tfms_from_model];
@@ -230,7 +230,7 @@ ast.Constant object at 0x12f8ab370>](0)"	[label=assignedFrom];
 	"x_p(17)$0" -> "self(17)"	[label=x_conv];
 	"x_p(17)$0" -> "x_p(17)$0"	[label=x_conv];
 	"cat_p(17)$0" -> "torch(17)"	[label=cat];
-	"cat_p(17)$0" -> "[<_ast.Name object at 0x12f8a1f10>, <_ast.Name object at 0x12f8a1c40>](17)"	[label=cat];
+	"cat_p(17)$0" -> "[<_ast.Name object at 0x7fd4c04f7700>, <_ast.Name object at 0x7fd4c04f7760>](17)"	[label=cat];
 	"cat_p(17)$0" -> "1(17)"	[label=cat];
 	"features(18)$0" -> "None(18)"	[label=assignedFrom];
 	"self(19)" -> "__init__[0]"	[label=_argToVar];
@@ -255,8 +255,8 @@ ast.Constant object at 0x12f8ab370>](0)"	[label=assignedFrom];
 	"self(23)$1" -> "self(23)$0"	[label=assignedFrom];
 	"self(23)$1" -> "SaveFeatures(23)"	[label=assignedFrom];
 	"self(23)$1" -> "i(23)"	[label=assignedFrom];
-	"self(23)$1" -> "[<_ast.Constant object at 0x12f8f6ee0>, <_ast.Constant object at 0x12f8f6e80>, <_ast.Constant object at 0x12f8f6df0>, <_ast.Constant \
-object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
+	"self(23)$1" -> "[<_ast.Constant object at 0x7fd4902b2d90>, <_ast.Constant object at 0x7fd4902b2940>, <_ast.Constant object at 0x7fd4902b2dc0>, <_\
+ast.Constant object at 0x7fd4902b2b50>](23)"	[label=assignedFrom];
 	"self(23)$2" -> "self(23)$1"	[label=UnetBlock];
 	"self(23)$2" -> "512(23)"	[label=UnetBlock];
 	"self(23)$2" -> "256(23)"	[label=UnetBlock];
@@ -307,7 +307,7 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"lgs(28)$0" -> "self(28)"	[label=list];
 	"lgs(28)$0" -> "split_by_idxs(28)"	[label=list];
 	"lgs(28)$0" -> "children(28)"	[label=list];
-	"lgs(28)$0" -> "[<_ast.Name object at 0x12f919d90>](28)"	[label=list];
+	"lgs(28)$0" -> "[<_ast.Name object at 0x7fd4c04c7af0>](28)"	[label=list];
 	"input(29)" -> "dice_loss[0]"	[label=_argToVar];
 	"target(29)" -> "dice_loss[1]"	[label=_argToVar];
 	"input(29)$0" -> "input(29)$0"	[label=sigmoid];
@@ -389,9 +389,9 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"learn(0)$2" -> "10.0(0)"	[label=MixedLoss];
 	"learn(0)$2" -> "2.0(0)"	[label=MixedLoss];
 	"2.0(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f902e20>, <_ast.Name object at 0x12f902eb0>, <_ast.Name object at 0x12f902ee0>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd4c04e5b20>, <_ast.Name object at 0x7fd4c04e5bb0>, <_ast.Name object at 0x7fd4c04e5be0>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"learn(0)$3" -> "learn(0)$2"	[label=assignedFrom];
-	"learn(0)$3" -> "[<_ast.Call object at 0x12f902e20>, <_ast.Name object at 0x12f902eb0>, <_ast.Name object at 0x12f902ee0>](0)"	[label=assignedFrom];
+	"learn(0)$3" -> "[<_ast.Call object at 0x7fd4c04e5b20>, <_ast.Name object at 0x7fd4c04e5bb0>, <_ast.Name object at 0x7fd4c04e5be0>](0)"	[label=assignedFrom];
 	"1e-07(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"wd(0)$0" -> "1e-07(0)"	[label=assignedFrom];
 	"0.01(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
@@ -406,8 +406,8 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"learn(0)$6" -> "Unet34_256_0(0)"	[label=save];
 	"Unet34_256_0(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"lrs(0)$0" -> "np(0)"	[label=array];
-	"lrs(0)$0" -> "[<_ast.BinOp object at 0x12f8ec700>, <_ast.BinOp object at 0x12f8ec790>, <_ast.Name object at 0x12f8ec820>](0)"	[label=array];
-	"[<_ast.BinOp object at 0x12f8ec700>, <_ast.BinOp object at 0x12f8ec790>, <_ast.Name object at 0x12f8ec820>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
+	"lrs(0)$0" -> "[<_ast.BinOp object at 0x7fd4c04c4400>, <_ast.BinOp object at 0x7fd4c04c4490>, <_ast.Name object at 0x7fd4c04c4520>](0)"	[label=array];
+	"[<_ast.BinOp object at 0x7fd4c04c4400>, <_ast.BinOp object at 0x7fd4c04c4490>, <_ast.Name object at 0x7fd4c04c4520>](0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"learn(0)$7" -> "learn(0)$6"	[label=unfreeze];
 	"learn(0)$8" -> "learn(0)$7"	[label=bn_freeze];
 	"learn(0)$8" -> "True(0)"	[label=bn_freeze];
@@ -425,19 +425,8 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"learn(0)$12" -> "Unet34_256_1(0)"	[label=save];
 	"Unet34_256_1(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"x(38)" -> "Show_images[0]"	[label=_argToVar];
-	"Show_images[0]" -> "np(0)"	[label=Show_images];
 	"yp(38)" -> "Show_images[1]"	[label=_argToVar];
-	"Show_images[1]" -> "md(0)$0"	[label=Show_images];
-	"Show_images[1]" -> "md(0)$1"	[label=Show_images];
-	"md(0)$1" -> "sz(0)$1"	[label=get_data];
-	"md(0)$1" -> "bs(0)$1"	[label=get_data];
 	"yt(38)" -> "Show_images[2]"	[label=_argToVar];
-	"Show_images[2]" -> "x(0)$0"	[label=Show_images];
-	"Show_images[2]" -> "x(0)$1"	[label=Show_images];
-	"x(0)$0" -> "md(0)$0"	[label=next];
-	"x(0)$0" -> "iter(0)"	[label=next];
-	"x(0)$1" -> "md(0)$1"	[label=next];
-	"x(0)$1" -> "iter(0)"	[label=next];
 	"columns(38)$0" -> "3(38)"	[label=assignedFrom];
 	"rows(38)$0" -> "bs(38)"	[label=min];
 	"rows(38)$0" -> "8(38)"	[label=min];
@@ -482,30 +471,29 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"plt(38)$6" -> "plt(38)$5"	[label=show];
 	"learn(0)$13" -> "learn(0)$12"	[label=eval];
 	"iter(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "md(0)$0"	[label=next];
+	"x(0)$0" -> "iter(0)"	[label=next];
 	"y(0)$0" -> "md(0)$0"	[label=next];
 	"y(0)$0" -> "iter(0)"	[label=next];
 	"F(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
-	"yp(0)$0" -> "x(0)$0"	[label=to_np];
 	"yp(0)$0" -> "learn(0)$13"	[label=to_np];
+	"yp(0)$0" -> "x(0)$0"	[label=to_np];
 	"yp(0)$0" -> "F(0)"	[label=to_np];
 	"yp(0)$0" -> "V(0)"	[label=to_np];
 	"V(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
-	"Show_images[3]" -> "yp(0)$0"	[label=Show_images];
-	"Show_images[3]" -> "yp(0)$1"	[label=Show_images];
-	"yp(0)$1" -> "x(0)$1"	[label=to_np];
-	"yp(0)$1" -> "F(0)"	[label=to_np];
-	"yp(0)$1" -> "V(0)"	[label=to_np];
-	"yp(0)$1" -> "learn(0)$19"	[label=to_np];
-	"Show_images[4]" -> "y(0)$0"	[label=Show_images];
-	"Show_images[4]" -> "y(0)$1"	[label=Show_images];
-	"y(0)$1" -> "md(0)$1"	[label=next];
-	"y(0)$1" -> "iter(0)"	[label=next];
+	"Show_images[240/0]" -> "np(0)"	[label=Show_images];
+	"Show_images[240/0]" -> "md(0)$0"	[label=Show_images];
+	"Show_images[240/0]" -> "x(0)$0"	[label=Show_images];
+	"Show_images[240/0]" -> "y(0)$0"	[label=Show_images];
+	"Show_images[240/0]" -> "yp(0)$0"	[label=Show_images];
 	"384(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"sz(0)$1" -> "384(0)"	[label=assignedFrom];
 	"32(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"bs(0)$1" -> "32(0)"	[label=assignedFrom];
-	"learn(0)$14" -> "md(0)$1"	[label=set_data];
+	"md(0)$1" -> "sz(0)$1"	[label=get_data];
+	"md(0)$1" -> "bs(0)$1"	[label=get_data];
 	"learn(0)$14" -> "learn(0)$13"	[label=set_data];
+	"learn(0)$14" -> "md(0)$1"	[label=set_data];
 	"learn(0)$15" -> "learn(0)$14"	[label=unfreeze];
 	"learn(0)$16" -> "True(0)"	[label=bn_freeze];
 	"learn(0)$16" -> "learn(0)$15"	[label=bn_freeze];
@@ -518,6 +506,19 @@ object at 0x12f8f6eb0>](23)"	[label=assignedFrom];
 	"learn(0)$18" -> "Unet34_384_1(0)"	[label=save];
 	"Unet34_384_1(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"learn(0)$19" -> "learn(0)$18"	[label=eval];
+	"x(0)$1" -> "iter(0)"	[label=next];
+	"x(0)$1" -> "md(0)$1"	[label=next];
+	"y(0)$1" -> "iter(0)"	[label=next];
+	"y(0)$1" -> "md(0)$1"	[label=next];
+	"yp(0)$1" -> "F(0)"	[label=to_np];
+	"yp(0)$1" -> "V(0)"	[label=to_np];
+	"yp(0)$1" -> "learn(0)$19"	[label=to_np];
+	"yp(0)$1" -> "x(0)$1"	[label=to_np];
+	"Show_images[253/0]" -> "np(0)"	[label=Show_images];
+	"Show_images[253/0]" -> "md(0)$1"	[label=Show_images];
+	"Show_images[253/0]" -> "x(0)$1"	[label=Show_images];
+	"Show_images[253/0]" -> "y(0)$1"	[label=Show_images];
+	"Show_images[253/0]" -> "yp(0)$1"	[label=Show_images];
 	"768(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];
 	"sz(0)$2" -> "768(0)"	[label=assignedFrom];
 	"6(0)" -> "unet34-dice-0-87.ipynb"	[label=appearsIn];

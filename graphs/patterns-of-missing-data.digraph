@@ -46,24 +46,24 @@ strict digraph "" {
 	"mean_i(0)$0" -> "TARGET(0)"	[label=mean];
 	"default ratio for more complete: {:.1\%} 
 default ratio for less complete: {:.1\%}(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
-	"print[0]" -> "default ratio for more complete: {:.1\%} 
+	"print[15/0]" -> "mean_c(0)$0"	[label=print];
+	"print[15/0]" -> "mean_i(0)$0"	[label=print];
+	"print[15/0]" -> "default ratio for more complete: {:.1\%} 
 default ratio for less complete: {:.1\%}(0)"	[label=print];
-	"print[0]" -> "props(0)$0"	[label=print];
-	"props(0)$0" -> "pd(0)"	[label=crosstab];
-	"props(0)$0" -> "train(0)$2"	[label=crosstab];
-	"print[1]" -> "mean_c(0)$0"	[label=print];
-	"print[1]" -> "
- p-value= (0)"	[label=print];
-	"
- p-value= (0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
-	"print[2]" -> "mean_i(0)$0"	[label=print];
-	"print[2]" -> "c(0)$0"	[label=print];
-	"c(0)$0" -> "props(0)$0"	[label=chi2_contingency];
-	"c(0)$0" -> "log-likelihood(0)"	[label=chi2_contingency];
 	"scipy.stats" -> "patterns-of-missing-data.ipynb"	[label=importedBy];
 	chi2_contingency -> "scipy.stats"	[label=importedBy];
 	"chi2_contingency(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
 	"chi2_contingency(0)" -> chi2_contingency	[label=assignedFrom];
+	"props(0)$0" -> "pd(0)"	[label=crosstab];
+	"props(0)$0" -> "train(0)$2"	[label=crosstab];
+	"c(0)$0" -> "props(0)$0"	[label=chi2_contingency];
+	"c(0)$0" -> "log-likelihood(0)"	[label=chi2_contingency];
 	"log-likelihood(0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
-	"print[3]" -> "1(0)"	[label=print];
+	"print[20/0]" -> "1(0)"	[label=print];
+	"print[20/0]" -> "props(0)$0"	[label=print];
+	"print[20/0]" -> "c(0)$0"	[label=print];
+	"print[20/0]" -> "
+ p-value= (0)"	[label=print];
+	"
+ p-value= (0)" -> "patterns-of-missing-data.ipynb"	[label=appearsIn];
 }

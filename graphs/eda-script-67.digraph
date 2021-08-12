@@ -8,46 +8,9 @@ digraph "" {
 	os -> "eda-script-67.ipynb"	[label=importedBy];
 	"os(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Done!(0)"	[label=print];
-	"print[0]" -> "assetCodes(2)$0"	[label=print];
-	"print[0]" -> "total \%s df(2)"	[label=print];
-	"print[0]" -> "market_train_df(0)$3"	[label=print];
-	"print[0]" -> "market_train_df(0)$5"	[label=print];
-	"print[0]" -> "i(0)"	[label=print];
-	"print[0]" -> "idx(0)$0"	[label=print];
-	"print[0]" -> "up_train(0)$0"	[label=print];
-	"print[0]" -> "max(0)"	[label=print];
-	"print[0]" -> "score_test(0)$0"	[label=print];
-	"Done!(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"assetCodes(2)$0" -> "df(2)"	[label=unique];
-	"assetCodes(2)$0" -> "assetCode(2)"	[label=unique];
-	"market_train_df(0)$3" -> "pd(0)"	[label=merge];
-	"market_train_df(0)$3" -> "market_train_df(0)$3"	[label=merge];
-	"market_train_df(0)$3" -> "new_df(0)$0"	[label=merge];
-	"market_train_df(0)$3" -> "left(0)"	[label=merge];
-	"market_train_df(0)$3" -> "[<_ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4f3d0>](0)"	[label=merge];
-	"market_train_df(0)$5" -> "market_train_df(0)$4"	[label=data_prep];
-	"i(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"i(0)" -> "te(0)$0"	[label=iteratorOf];
-	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"idx(0)$0" -> "tt(0)$0"	[label=assignedFrom];
-	"up_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
-	"up_train(0)$0" -> "up(0)$1"	[label=assignedFrom];
-	"max(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"score_test(0)$0" -> "mean(0)$0"	[label=Div];
-	"score_test(0)$0" -> "std(0)$0"	[label=Div];
+	"print[13/0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "len(2)"	[label=print];
-	"print[1]" -> "tt(0)$0"	[label=print];
-	"print[1]" -> "confidence_test(0)$2"	[label=print];
-	"tt(0)$0" -> "0(0)"	[label=assignedFrom];
-	"tt(0)$0" -> "te(0)$0"	[label=iteratorOf];
-	"tt(0)$0" -> "enumerate(0)"	[label=iteratorOf];
-	"confidence_test(0)$2" -> "1(0)"	[label=Sub];
-	"confidence_test(0)$2" -> "2(0)"	[label=Sub];
-	"confidence_test(0)$2" -> "confidence_test(0)$1"	[label=Sub];
 	lightgbm -> "eda-script-67.ipynb"	[label=importedBy];
 	"lgb(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"lgb(0)" -> lightgbm	[label=assignedFrom];
@@ -84,6 +47,8 @@ digraph "" {
 	"time(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"time(0)" -> time	[label=assignedFrom];
 	"env(0)$0" -> "twosigmanews(0)"	[label=make_env];
+	"Done!(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"print[30/0]" -> "Done!(0)"	[label=print];
 	"market_train_df(0)$0" -> "env(0)$0"	[label=get_training_data];
 	"news_train_df(0)$0" -> "env(0)$0"	[label=get_training_data];
 	"market_train_df(0)$1" -> "time(0)"	[label=assignedFrom];
@@ -123,22 +88,26 @@ digraph "" {
 	"df_code(1)$2" -> "df_code(1)$1"	[label=assignedFrom];
 	"df(2)" -> "generate_lag_features[0]"	[label=_argToVar];
 	"n_lag(2)" -> "generate_lag_features[1]"	[label=_argToVar];
-	"features(2)$0" -> "[<_ast.Constant object at 0x12f951d30>, <_ast.Constant object at 0x12f951310>, <_ast.Constant object at 0x12f951280>, <_ast.Constant \
-object at 0x12f951c70>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951a60>, <_ast.Constant object at 0x12f9519d0>, <_\
-ast.Constant object at 0x12f951490>, <_ast.Constant object at 0x12f951b50>, <_ast.Constant object at 0x12f951d00>, <_ast.Constant \
-object at 0x12f9510d0>, <_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f951160>, <_ast.Constant object at 0x12f9515e0>, <_\
-ast.Constant object at 0x12f951fd0>, <_ast.Constant object at 0x12f951940>](2)"	[label=assignedFrom];
+	"features(2)$0" -> "[<_ast.Constant object at 0x7fd50080da60>, <_ast.Constant object at 0x7fd50080d6d0>, <_ast.Constant object at 0x7fd50080da30>, <_\
+ast.Constant object at 0x7fd50080df70>, <_ast.Constant object at 0x7fd50080d790>, <_ast.Constant object at 0x7fd50080d100>, <_ast.Constant \
+object at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d580>, <_ast.Constant object at 0x7fd50080dac0>, <_ast.Constant object \
+at 0x7fd50080d0a0>, <_ast.Constant object at 0x7fd50080db20>, <_ast.Constant object at 0x7fd50080d4c0>, <_ast.Constant object at \
+0x7fd50080d940>, <_ast.Constant object at 0x7fd50080d2e0>, <_ast.Constant object at 0x7fd50080deb0>, <_ast.Constant object at 0x7fd50080dca0>](\
+2)"	[label=assignedFrom];
+	"assetCodes(2)$0" -> "df(2)"	[label=unique];
+	"assetCodes(2)$0" -> "assetCode(2)"	[label=unique];
+	"print[62/4]" -> "assetCodes(2)$0"	[label=print];
 	"all_df(2)$0" -> "[](2)"	[label=assignedFrom];
 	"df_codes(2)$0" -> "df(2)"	[label=groupby];
 	"df_codes(2)$0" -> "assetCode(2)"	[label=groupby];
 	"df_codes(2)$1" -> "df_codes(2)$1"	[label=assignedFrom];
 	"df_codes(2)$1" -> "df_code(2)"	[label=assignedFrom];
 	"df_codes(2)$1" -> "1(2)"	[label=assignedFrom];
-	"df_codes(2)$1" -> "[<_ast.Constant object at 0x12faf56a0>, <_ast.Constant object at 0x12faf59a0>](2)"	[label=assignedFrom];
+	"df_codes(2)$1" -> "[<_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at 0x7fd50080db50>](2)"	[label=assignedFrom];
 	"df_codes(2)$1" -> "return_features(2)"	[label=assignedFrom];
-	"print[2]" -> "df_codes(2)$1"	[label=print];
-	"print[2]" -> "min(0)"	[label=print];
-	"min(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"print[66/4]" -> "df_codes(2)$1"	[label=print];
+	"print[66/4]" -> "total \%s df(2)"	[label=print];
+	"print[66/4]" -> "len(2)"	[label=print];
 	"pool(2)$0" -> "4(2)"	[label=Pool];
 	"all_df(2)$1" -> "df_codes(2)$1"	[label=map];
 	"all_df(2)$1" -> "pool(2)$0"	[label=map];
@@ -148,16 +117,22 @@ ast.Constant object at 0x12f951fd0>, <_ast.Constant object at 0x12f951940>](2)"	
 	"new_df(2)$1" -> "return_features(2)"	[label=drop];
 	"new_df(2)$1" -> "new_df(2)$0"	[label=drop];
 	"pool(2)$1" -> "pool(2)$0"	[label=close];
-	"[<_ast.Constant object at 0x12faf5f70>, <_ast.Constant object at 0x12faf5b50>, <_ast.Constant object at 0x12faf5850>, <_ast.Constant \
-object at 0x12faf51c0>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"return_features(0)$0" -> "[<_ast.Constant object at 0x12faf5f70>, <_ast.Constant object at 0x12faf5b50>, <_ast.Constant object at 0x12faf5850>, <_ast.Constant \
-object at 0x12faf51c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12faf52e0>, <_ast.Constant object at 0x12faf5be0>, <_ast.Constant object at 0x12faf5b20>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"n_lag(0)$0" -> "[<_ast.Constant object at 0x12faf52e0>, <_ast.Constant object at 0x12faf5be0>, <_ast.Constant object at 0x12faf5b20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d8be0>, <_ast.Constant object at 0x7fd4c04d83a0>, <_ast.Constant object at 0x7fd4c04d8280>, <_\
+ast.Constant object at 0x7fd4c04d8190>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"return_features(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d8be0>, <_ast.Constant object at 0x7fd4c04d83a0>, <_ast.Constant object at 0x7fd4c04d8280>, <_\
+ast.Constant object at 0x7fd4c04d8190>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d8100>, <_ast.Constant object at 0x7fd4c04d83d0>, <_ast.Constant object at 0x7fd4c04d8f70>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"n_lag(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d8100>, <_ast.Constant object at 0x7fd4c04d83d0>, <_ast.Constant object at 0x7fd4c04d8f70>](0)"	[label=assignedFrom];
 	"new_df(0)$0" -> "market_train_df(0)$2"	[label=generate_lag_features];
 	"new_df(0)$0" -> "n_lag(0)$0"	[label=generate_lag_features];
+	"market_train_df(0)$3" -> "pd(0)"	[label=merge];
+	"market_train_df(0)$3" -> "new_df(0)$0"	[label=merge];
+	"market_train_df(0)$3" -> "market_train_df(0)$3"	[label=merge];
+	"market_train_df(0)$3" -> "left(0)"	[label=merge];
+	"market_train_df(0)$3" -> "[<_ast.Constant object at 0x7fd4c04d8130>, <_ast.Constant object at 0x7fd4c04d8a90>](0)"	[label=merge];
 	"left(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4f3d0>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04d8130>, <_ast.Constant object at 0x7fd4c04d8a90>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"print[83/0]" -> "market_train_df(0)$3"	[label=print];
 	"data(3)" -> "mis_impute[0]"	[label=_argToVar];
 	"i(3)" -> "data(3)"	[label=iteratorOf];
 	"data(3)$0" -> "data(3)"	[label=fillna];
@@ -178,6 +153,8 @@ object at 0x12faf51c0>](0)"	[label=assignedFrom];
 	"market_train(4)$0" -> "assetCode(4)"	[label=map];
 	"market_train(4)$1" -> "market_train(4)$0"	[label=dropna];
 	"market_train(4)$1" -> "0(4)"	[label=dropna];
+	"market_train_df(0)$5" -> "market_train_df(0)$4"	[label=data_prep];
+	"print[107/0]" -> "market_train_df(0)$5"	[label=print];
 	"sklearn.preprocessing" -> "eda-script-67.ipynb"	[label=importedBy];
 	LabelEncoder -> "sklearn.preprocessing"	[label=importedBy];
 	"LabelEncoder(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
@@ -189,21 +166,23 @@ object at 0x12faf51c0>](0)"	[label=assignedFrom];
 	"0(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"universe(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"universe(0)$0" -> "universe(0)$0"	[label=assignedFrom];
-	"d(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"d(0)$0" -> "time(0)"	[label=assignedFrom];
+	"d(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"c(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"fcol(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"fcol(0)$0" -> "c(0)"	[label=assignedFrom];
-	"fcol(0)$0" -> "[<_ast.Constant object at 0x12f8f5cd0>, <_ast.Constant object at 0x12f8f5ac0>, <_ast.Constant object at 0x12f8f5520>, <_ast.Constant \
-object at 0x12f8f5910>, <_ast.Constant object at 0x12f8f5d30>, <_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5430>, <_\
-ast.Constant object at 0x12f8f5dc0>, <_ast.Constant object at 0x12f8f5f10>, <_ast.Constant object at 0x12f8f54f0>, <_ast.Constant \
-object at 0x12f8f5340>, <_ast.Constant object at 0x12f8f50a0>, <_ast.Constant object at 0x12f8f53d0>, <_ast.Constant object at 0x12f8f58b0>, <_\
-ast.Constant object at 0x12f8f53a0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f5e20>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f5cd0>, <_ast.Constant object at 0x12f8f5ac0>, <_ast.Constant object at 0x12f8f5520>, <_ast.Constant \
-object at 0x12f8f5910>, <_ast.Constant object at 0x12f8f5d30>, <_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5430>, <_\
-ast.Constant object at 0x12f8f5dc0>, <_ast.Constant object at 0x12f8f5f10>, <_ast.Constant object at 0x12f8f54f0>, <_ast.Constant \
-object at 0x12f8f5340>, <_ast.Constant object at 0x12f8f50a0>, <_ast.Constant object at 0x12f8f53d0>, <_ast.Constant object at 0x12f8f58b0>, <_\
-ast.Constant object at 0x12f8f53a0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f5e20>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"fcol(0)$0" -> "[<_ast.Constant object at 0x7fd500836fa0>, <_ast.Constant object at 0x7fd500836250>, <_ast.Constant object at 0x7fd500836280>, <_\
+ast.Constant object at 0x7fd500836a60>, <_ast.Constant object at 0x7fd500836340>, <_ast.Constant object at 0x7fd500836640>, <_ast.Constant \
+object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object \
+at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at \
+0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab190>, <_\
+ast.Constant object at 0x7fd4902ab670>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500836fa0>, <_ast.Constant object at 0x7fd500836250>, <_ast.Constant object at 0x7fd500836280>, <_\
+ast.Constant object at 0x7fd500836a60>, <_ast.Constant object at 0x7fd500836340>, <_ast.Constant object at 0x7fd500836640>, <_ast.Constant \
+object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object \
+at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at \
+0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab190>, <_\
+ast.Constant object at 0x7fd4902ab670>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"X(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"X(0)$0" -> "fcol(0)$0"	[label=assignedFrom];
 	"up(0)$1" -> "up(0)$0"	[label=assignedFrom];
@@ -220,48 +199,61 @@ ast.Constant object at 0x12f8f53a0>, <_ast.Constant object at 0x12f8f5400>, <_as
 	"X(0)$1" -> "maxs(0)$0"	[label=Sub];
 	"X(0)$1" -> "rng(0)$0"	[label=Sub];
 	"X(0)$1" -> "X(0)$1"	[label=Sub];
-	"te(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"te(0)$0" -> "date(0)"	[label=assignedFrom];
 	"te(0)$0" -> "time(0)"	[label=assignedFrom];
 	"te(0)$0" -> "1(0)"	[label=assignedFrom];
+	"te(0)$0" -> "market_train_df(0)$5"	[label=assignedFrom];
 	"te(0)$0" -> "2015(0)"	[label=assignedFrom];
 	"2015(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"tt(0)$0" -> "0(0)"	[label=assignedFrom];
+	"tt(0)$0" -> "te(0)$0"	[label=iteratorOf];
+	"tt(0)$0" -> "enumerate(0)"	[label=iteratorOf];
 	"enumerate(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"X_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"i(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"i(0)" -> "te(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"idx(0)$0" -> "tt(0)$0"	[label=assignedFrom];
+	"print[148/8]" -> "tt(0)$0"	[label=print];
+	"print[148/8]" -> "i(0)"	[label=print];
+	"print[150/0]" -> "idx(0)$0"	[label=print];
 	"X_train(0)$0" -> "X(0)$1"	[label=assignedFrom];
-	"X_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"X_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"X_test(0)$0" -> "X(0)$1"	[label=assignedFrom];
-	"up_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"X_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"up_train(0)$0" -> "up(0)$1"	[label=assignedFrom];
+	"up_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"up_test(0)$0" -> "up(0)$1"	[label=assignedFrom];
-	"r_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"up_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"r_train(0)$0" -> "r(0)$0"	[label=assignedFrom];
-	"r_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"r_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"r_test(0)$0" -> "r(0)$0"	[label=assignedFrom];
-	"u_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"r_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"u_train(0)$0" -> "universe(0)$0"	[label=assignedFrom];
-	"u_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"u_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"u_test(0)$0" -> "universe(0)$0"	[label=assignedFrom];
-	"d_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"u_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"d_train(0)$0" -> "d(0)$0"	[label=assignedFrom];
-	"d_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
+	"d_train(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"d_test(0)$0" -> "d(0)$0"	[label=assignedFrom];
-	"train_data(0)$0" -> "up_train(0)$0"	[label=Dataset];
+	"d_test(0)$0" -> "idx(0)$0"	[label=assignedFrom];
 	"train_data(0)$0" -> "lgb(0)"	[label=Dataset];
 	"train_data(0)$0" -> "X_train(0)$0"	[label=Dataset];
+	"train_data(0)$0" -> "up_train(0)$0"	[label=Dataset];
 	"train_data(0)$0" -> "int(0)"	[label=Dataset];
 	"int(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"test_data(0)$0" -> "lgb(0)"	[label=Dataset];
 	"test_data(0)$0" -> "X_test(0)$0"	[label=Dataset];
 	"test_data(0)$0" -> "up_test(0)$0"	[label=Dataset];
 	"test_data(0)$0" -> "int(0)"	[label=Dataset];
-	"[<_ast.Constant object at 0x12f957850>, <_ast.Constant object at 0x12f9575e0>, <_ast.Constant object at 0x12f957520>, <_ast.Constant \
-object at 0x12f957340>, <_ast.Constant object at 0x12f9572e0>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"x_1(0)$0" -> "[<_ast.Constant object at 0x12f957850>, <_ast.Constant object at 0x12f9575e0>, <_ast.Constant object at 0x12f957520>, <_ast.Constant \
-object at 0x12f957340>, <_ast.Constant object at 0x12f9572e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957b20>, <_ast.Constant object at 0x12f957820>, <_ast.Constant \
-object at 0x12f9575b0>, <_ast.Constant object at 0x12f957040>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
-	"x_2(0)$0" -> "[<_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957b20>, <_ast.Constant object at 0x12f957820>, <_ast.Constant \
-object at 0x12f9575b0>, <_ast.Constant object at 0x12f957040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0520>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"x_1(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0520>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0280>, <_\
+ast.Constant object at 0x7fd5007f06a0>, <_ast.Constant object at 0x7fd5007f0ac0>](0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"x_2(0)$0" -> "[<_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0280>, <_\
+ast.Constant object at 0x7fd5007f06a0>, <_ast.Constant object at 0x7fd5007f0ac0>](0)"	[label=assignedFrom];
+	"print[166/0]" -> "up_train(0)$0"	[label=print];
 	"p(5)" -> "exp_loss[0]"	[label=_argToVar];
 	"y(5)" -> "exp_loss[1]"	[label=_argToVar];
 	"y(5)$0" -> "y(5)"	[label=get_label];
@@ -346,11 +338,18 @@ object at 0x12f9575b0>, <_ast.Constant object at 0x12f957040>](0)"	[label=assign
 	"confidence_test(0)$0" -> "gbm_2(0)$0"	[label=Div];
 	"confidence_test(0)$1" -> "confidence_test(0)$0"	[label=Div];
 	"confidence_test(0)$1" -> "confidence_test(0)$1"	[label=Div];
-	"print[3]" -> "confidence_test(0)$2"	[label=print];
+	"confidence_test(0)$2" -> "1(0)"	[label=Sub];
+	"confidence_test(0)$2" -> "2(0)"	[label=Sub];
+	"confidence_test(0)$2" -> "confidence_test(0)$1"	[label=Sub];
+	"max(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
+	"print[223/0]" -> "confidence_test(0)$2"	[label=print];
+	"print[223/0]" -> "max(0)"	[label=print];
+	"print[223/0]" -> "min(0)"	[label=print];
+	"min(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"r_test(0)$1" -> "1(0)"	[label=clip];
 	"r_test(0)$1" -> "r_test(0)$0"	[label=clip];
-	"x_t_i(0)$0" -> "confidence_test(0)$2"	[label=Mult];
 	"x_t_i(0)$0" -> "u_test(0)$0"	[label=Mult];
+	"x_t_i(0)$0" -> "confidence_test(0)$2"	[label=Mult];
 	"x_t_i(0)$0" -> "r_test(0)$1"	[label=Mult];
 	"day(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"data(0)$0" -> "d_test(0)$0"	[label=assignedFrom];
@@ -364,6 +363,9 @@ object at 0x12f9575b0>, <_ast.Constant object at 0x12f957040>](0)"	[label=assign
 	"mean(0)$0" -> "x_t(0)$0"	[label=mean];
 	"std(0)$0" -> "np(0)"	[label=std];
 	"std(0)$0" -> "x_t(0)$0"	[label=std];
+	"score_test(0)$0" -> "mean(0)$0"	[label=Div];
+	"score_test(0)$0" -> "std(0)$0"	[label=Div];
+	"print[234/0]" -> "score_test(0)$0"	[label=print];
 	gc -> "eda-script-67.ipynb"	[label=importedBy];
 	"gc(0)" -> "eda-script-67.ipynb"	[label=appearsIn];
 	"gc(0)" -> gc	[label=assignedFrom];

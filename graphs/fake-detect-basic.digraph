@@ -87,18 +87,11 @@ digraph "" {
 	"ignore(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"../input/deepfake-detection-challenge/(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"PATH(0)$0" -> "../input/deepfake-detection-challenge/(0)"	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "vi(0)"	[label=print];
-	"vi(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
-	"vi(0)" -> "os(0)"	[label=iteratorOf];
-	"vi(0)" -> "/kaggle/input/deepfake-detection-challenge/test_videos(0)"	[label=iteratorOf];
-	"print[1]" -> "PATH(0)$0"	[label=print];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> ": (0)"	[label=print];
+	"print[31/0]" -> "os(0)"	[label=print];
+	"print[31/0]" -> "PATH(0)$0"	[label=print];
 	"dirname(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"dirname(0)" -> "os(0)"	[label=iteratorOf];
 	"dirname(0)" -> "/kaggle/input/meso-pretrain(0)"	[label=iteratorOf];
-	": (0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"/kaggle/input/meso-pretrain(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"_(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"_(0)" -> "os(0)"	[label=iteratorOf];
@@ -108,9 +101,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input/meso-pretrain(0)"	[label=iteratorOf];
 	"filename(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[2]" -> "filename(0)"	[label=print];
-	"print[2]" -> "str(0)"	[label=print];
-	"str(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
+	"print[34/8]" -> "os(0)"	[label=print];
+	"print[34/8]" -> "dirname(0)"	[label=print];
+	"print[34/8]" -> "filename(0)"	[label=print];
 	"IPython.display" -> "fake-detect-basic.ipynb"	[label=importedBy];
 	HTML -> "IPython.display"	[label=importedBy];
 	"HTML(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
@@ -134,12 +127,12 @@ digraph "" {
       <source src=\"\%s\" type=\"video/mp4\">
 </video>
 (0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
-	"HTML[0]" -> "
+	"HTML[39/0]" -> "data_url(0)$0"	[label=HTML];
+	"HTML[39/0]" -> "
 <video width=600 controls>
       <source src=\"\%s\" type=\"video/mp4\">
 </video>
 (0)"	[label=HTML];
-	"HTML[1]" -> "data_url(0)$0"	[label=HTML];
 	"self(2)" -> "__init__[0]"	[label=_argToVar];
 	"path(2)" -> "__init__[1]"	[label=_argToVar];
 	"self(2)$0" -> "self(2)"	[label=assignedFrom];
@@ -260,6 +253,9 @@ digraph "" {
 	"save_interval(0)$0" -> "100(0)"	[label=assignedFrom];
 	"0.1(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"margin(0)$0" -> "0.1(0)"	[label=assignedFrom];
+	"vi(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
+	"vi(0)" -> "os(0)"	[label=iteratorOf];
+	"vi(0)" -> "/kaggle/input/deepfake-detection-challenge/test_videos(0)"	[label=iteratorOf];
 	"/kaggle/input/deepfake-detection-challenge/test_videos(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"video(0)$0" -> "os(0)"	[label=Video];
 	"video(0)$0" -> "vi(0)"	[label=Video];
@@ -315,8 +311,8 @@ digraph "" {
 	"255.0(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"re_img(0)$0" -> "np(0)"	[label=predict];
 	"re_img(0)$0" -> "classifier(0)$0"	[label=predict];
-	"re_img(0)$0" -> "[<_ast.Name object at 0x12fabb640>](0)"	[label=predict];
-	"[<_ast.Name object at 0x12fabb640>](0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
+	"re_img(0)$0" -> "[<_ast.Name object at 0x7fd4c04a84f0>](0)"	[label=predict];
+	"[<_ast.Name object at 0x7fd4c04a84f0>](0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"re_imgs(0)$1" -> "re_imgs(0)$0"	[label=append];
 	"re_imgs(0)$1" -> "0(0)"	[label=append];
 	"re_imgs(0)$1" -> "re_img(0)$0"	[label=append];
@@ -325,8 +321,13 @@ digraph "" {
 	"submit(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"submit(0)$0" -> "re_video(0)$0"	[label=assignedFrom];
 	"submit(0)$0" -> "submit(0)"	[label=assignedFrom];
-	"print[3]" -> "1(0)"	[label=print];
-	"print[4]" -> "re_video(0)$0"	[label=print];
+	"print[150/4]" -> "vi(0)"	[label=print];
+	"print[150/4]" -> "1(0)"	[label=print];
+	"print[150/4]" -> "re_video(0)$0"	[label=print];
+	"print[150/4]" -> ": (0)"	[label=print];
+	"print[150/4]" -> "str(0)"	[label=print];
+	": (0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
+	"str(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"key(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"key(0)" -> "submit(0)$0"	[label=iteratorOf];
 	"f(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
@@ -345,9 +346,9 @@ digraph "" {
 (0)"	[label=write];
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "submit2.csv(0)"	[label=read_csv];
-	"submission(0)$0" -> "[<_ast.Constant object at 0x12faad2b0>, <_ast.Constant object at 0x12faad310>](0)"	[label=read_csv];
+	"submission(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c7760>, <_ast.Constant object at 0x7fd4c04c7790>](0)"	[label=read_csv];
 	"submit2.csv(0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faad2b0>, <_ast.Constant object at 0x12faad310>](0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04c7760>, <_ast.Constant object at 0x7fd4c04c7790>](0)" -> "fake-detect-basic.ipynb"	[label=appearsIn];
 	"submission(0)$1" -> "filename(0)"	[label=sort_values];
 	"submission(0)$1" -> "submission(0)$0"	[label=sort_values];
 	"submission(0)$2" -> "submission(0)$1"	[label=to_csv];

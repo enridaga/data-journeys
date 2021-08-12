@@ -9,11 +9,11 @@ strict digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "spell-checker-using-word2vec.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f9899d0>](0)" -> "spell-checker-using-word2vec.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f9899d0>](0)"	[label=print];
+	"print[24/0]" -> "check_output(0)"	[label=print];
+	"print[24/0]" -> "[<_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048eb50>](0)"	[label=print];
+	"print[24/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048eb50>](0)" -> "spell-checker-using-word2vec.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "spell-checker-using-word2vec.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	gensim -> "spell-checker-using-word2vec.ipynb"	[label=importedBy];
 	"gensim(0)" -> "spell-checker-using-word2vec.ipynb"	[label=appearsIn];
 	"gensim(0)" -> gensim	[label=assignedFrom];

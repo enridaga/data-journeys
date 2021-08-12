@@ -13,10 +13,10 @@ strict digraph "" {
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "submitting-from-a-kernel.ipynb"	[label=appearsIn];
 	"train_y(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8ab220>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant object at 0x12f8ab130>, <_ast.Constant \
-object at 0x12f8ab190>](0)" -> "submitting-from-a-kernel.ipynb"	[label=appearsIn];
-	"predictor_cols(0)$0" -> "[<_ast.Constant object at 0x12f8ab220>, <_ast.Constant object at 0x12f8ab790>, <_ast.Constant object at 0x12f8ab130>, <_ast.Constant \
-object at 0x12f8ab190>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cce50>, <_ast.Constant object at 0x7fd4c04cc310>, <_ast.Constant object at 0x7fd4c04ccd60>, <_\
+ast.Constant object at 0x7fd4c04cc280>](0)" -> "submitting-from-a-kernel.ipynb"	[label=appearsIn];
+	"predictor_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cce50>, <_ast.Constant object at 0x7fd4c04cc310>, <_ast.Constant object at 0x7fd4c04ccd60>, <_\
+ast.Constant object at 0x7fd4c04cc280>](0)"	[label=assignedFrom];
 	"train_X(0)$0" -> "train(0)$0"	[label=assignedFrom];
 	"train_X(0)$0" -> "predictor_cols(0)$0"	[label=assignedFrom];
 	"my_model(0)" -> "submitting-from-a-kernel.ipynb"	[label=appearsIn];
@@ -30,7 +30,7 @@ object at 0x12f8ab190>](0)"	[label=assignedFrom];
 	"test_X(0)$0" -> "test(0)$0"	[label=assignedFrom];
 	"predicted_prices(0)$0" -> "my_model(0)$0"	[label=predict];
 	"predicted_prices(0)$0" -> "test_X(0)$0"	[label=predict];
-	"print[0]" -> "predicted_prices(0)$0"	[label=print];
+	"print[25/0]" -> "predicted_prices(0)$0"	[label=print];
 	"my_submission(0)$0" -> "pd(0)"	[label=DataFrame];
 	"my_submission(0)$0" -> "test(0)$0"	[label=DataFrame];
 	"my_submission(0)$0" -> "predicted_prices(0)$0"	[label=DataFrame];

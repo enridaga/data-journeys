@@ -1,15 +1,14 @@
 strict digraph "" {
 	node [label="\N"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965"	[label="478806965 (my_data(0)$0: Movement)"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404"	[label="1310918404 (../input/train.csv(0): Reuse)"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334"	[label="80085334 (pd(0): Reuse)"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334"	[label=previousActivity];
 	"http://purl.org/dj/python/lib/144966264"	[label="144966264 (pandas: Reuse)"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965" -> "http://purl.org/dj/python/lib/144966264"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label="finding-your-files-in-kaggle-kernels"];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label=appearsIn];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label=previousActivity];
-	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label=previousActivity];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label="finding-your-files-in-kaggle-kernels (finding-your-files-in-kaggle-kernels.ipynb)"];
+	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404"	[label="1310918404 (../input/train.csv(0): Reuse)"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334"	[label="80085334 (pd(0): Reuse)"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965"	[label="478806965 (my_data(0)$0: Movement)"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404"	[label="read_csv ()"];
+	"http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965" -> "http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334"	[label="read_csv ()"];
 }

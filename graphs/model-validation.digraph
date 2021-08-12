@@ -10,12 +10,12 @@ strict digraph "" {
 	"filtered_melbourne_data(0)$0" -> "0(0)"	[label=dropna];
 	"0(0)" -> "model-validation.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "filtered_melbourne_data(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989970>, <_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x106750af0>, <_ast.Constant \
-object at 0x106750a60>, <_ast.Constant object at 0x106750a90>, <_ast.Constant object at 0x106750a30>, <_ast.Constant object at 0x12f8ab040>](\
-0)" -> "model-validation.ipynb"	[label=appearsIn];
-	"melbourne_features(0)$0" -> "[<_ast.Constant object at 0x12f989970>, <_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x106750af0>, <_ast.Constant \
-object at 0x106750a60>, <_ast.Constant object at 0x106750a90>, <_ast.Constant object at 0x106750a30>, <_ast.Constant object at 0x12f8ab040>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048ee50>, <_\
+ast.Constant object at 0x7fd4c048ef40>, <_ast.Constant object at 0x7fd4c048ebb0>, <_ast.Constant object at 0x7fd4c048e940>, <_ast.Constant \
+object at 0x7fd4c048ed00>](0)" -> "model-validation.ipynb"	[label=appearsIn];
+	"melbourne_features(0)$0" -> "[<_ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048ee50>, <_\
+ast.Constant object at 0x7fd4c048ef40>, <_ast.Constant object at 0x7fd4c048ebb0>, <_ast.Constant object at 0x7fd4c048e940>, <_ast.Constant \
+object at 0x7fd4c048ed00>](0)"	[label=assignedFrom];
 	"X(0)$0" -> "filtered_melbourne_data(0)$0"	[label=assignedFrom];
 	"X(0)$0" -> "melbourne_features(0)$0"	[label=assignedFrom];
 	"sklearn.tree" -> "model-validation.ipynb"	[label=importedBy];
@@ -32,8 +32,8 @@ object at 0x106750a60>, <_ast.Constant object at 0x106750a90>, <_ast.Constant ob
 	"mean_absolute_error(0)" -> mean_absolute_error	[label=assignedFrom];
 	"predicted_home_prices(0)$0" -> "X(0)$0"	[label=predict];
 	"predicted_home_prices(0)$0" -> "melbourne_model(0)$0"	[label=predict];
-	"mean_absolute_error[0]" -> "y(0)$0"	[label=mean_absolute_error];
-	"mean_absolute_error[1]" -> "predicted_home_prices(0)$0"	[label=mean_absolute_error];
+	"mean_absolute_error[45/0]" -> "y(0)$0"	[label=mean_absolute_error];
+	"mean_absolute_error[45/0]" -> "predicted_home_prices(0)$0"	[label=mean_absolute_error];
 	"sklearn.model_selection" -> "model-validation.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "model-validation.ipynb"	[label=appearsIn];
@@ -55,7 +55,7 @@ object at 0x106750a60>, <_ast.Constant object at 0x106750a90>, <_ast.Constant ob
 	"melbourne_model(0)$1" -> "train_y(0)$0"	[label=fit];
 	"val_predictions(0)$0" -> "val_X(0)$0"	[label=predict];
 	"val_predictions(0)$0" -> "melbourne_model(0)$1"	[label=predict];
-	"print[0]" -> "mean_absolute_error(0)"	[label=print];
-	"print[1]" -> "val_y(0)$0"	[label=print];
-	"print[2]" -> "val_predictions(0)$0"	[label=print];
+	"print[74/0]" -> "mean_absolute_error(0)"	[label=print];
+	"print[74/0]" -> "val_y(0)$0"	[label=print];
+	"print[74/0]" -> "val_predictions(0)$0"	[label=print];
 }

@@ -40,11 +40,11 @@ digraph "" {
 	"classes(2)$0" -> "le(2)$0"	[label=list];
 	"test_ids(2)$0" -> "test(2)"	[label=assignedFrom];
 	"train(2)$0" -> "train(2)"	[label=drop];
-	"train(2)$0" -> "[<_ast.Constant object at 0x12f88abe0>, <_ast.Constant object at 0x12f88a820>](2)"	[label=drop];
+	"train(2)$0" -> "[<_ast.Constant object at 0x7fd4c04cc280>, <_ast.Constant object at 0x7fd4c04cc760>](2)"	[label=drop];
 	"train(2)$0" -> "1(2)"	[label=drop];
 	"test(2)$0" -> "test(2)"	[label=drop];
 	"test(2)$0" -> "1(2)"	[label=drop];
-	"test(2)$0" -> "[<_ast.Constant object at 0x12f88a910>](2)"	[label=drop];
+	"test(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ccb20>](2)"	[label=drop];
 	"train(0)$1" -> "train(0)$0"	[label=encode];
 	"train(0)$1" -> "test(0)$1"	[label=encode];
 	"test(0)$1" -> "train(0)$0"	[label=encode];
@@ -127,14 +127,14 @@ digraph "" {
 	QuadraticDiscriminantAnalysis -> "sklearn.discriminant_analysis"	[label=importedBy];
 	"QuadraticDiscriminantAnalysis(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
 	"QuadraticDiscriminantAnalysis(0)" -> QuadraticDiscriminantAnalysis	[label=assignedFrom];
-	"[<_ast.Call object at 0x12fade7f0>, <_ast.Call object at 0x12fade670>, <_ast.Call object at 0x12f8f51f0>, <_ast.Call object at 0x12f8f5cd0>, <_\
-ast.Call object at 0x12f8f5250>, <_ast.Call object at 0x12f8f5dc0>, <_ast.Call object at 0x12f8f5af0>, <_ast.Call object at 0x12f8f5e50>, <_\
-ast.Call object at 0x12f8f5580>, <_ast.Call object at 0x12f8f54c0>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"classifiers(0)$0" -> "[<_ast.Call object at 0x12fade7f0>, <_ast.Call object at 0x12fade670>, <_ast.Call object at 0x12f8f51f0>, <_ast.Call object at 0x12f8f5cd0>, <_\
-ast.Call object at 0x12f8f5250>, <_ast.Call object at 0x12f8f5dc0>, <_ast.Call object at 0x12f8f5af0>, <_ast.Call object at 0x12f8f5e50>, <_\
-ast.Call object at 0x12f8f5580>, <_ast.Call object at 0x12f8f54c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f5760>, <_ast.Constant object at 0x12f8f5310>, <_ast.Constant object at 0x12f8f5f10>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"log_cols(0)$0" -> "[<_ast.Constant object at 0x12f8f5760>, <_ast.Constant object at 0x12f8f5310>, <_ast.Constant object at 0x12f8f5f10>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd5008362e0>, <_ast.Call object at 0x7fd5008360d0>, <_ast.Call object at 0x7fd500836af0>, <_ast.Call object \
+at 0x7fd5008367c0>, <_ast.Call object at 0x7fd500836670>, <_ast.Call object at 0x7fd500836b80>, <_ast.Call object at 0x7fd500836460>, <_\
+ast.Call object at 0x7fd500836370>, <_ast.Call object at 0x7fd500836280>, <_ast.Call object at 0x7fd500836190>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"classifiers(0)$0" -> "[<_ast.Call object at 0x7fd5008362e0>, <_ast.Call object at 0x7fd5008360d0>, <_ast.Call object at 0x7fd500836af0>, <_ast.Call object \
+at 0x7fd5008367c0>, <_ast.Call object at 0x7fd500836670>, <_ast.Call object at 0x7fd500836b80>, <_ast.Call object at 0x7fd500836460>, <_\
+ast.Call object at 0x7fd500836370>, <_ast.Call object at 0x7fd500836280>, <_ast.Call object at 0x7fd500836190>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500836760>, <_ast.Constant object at 0x7fd500836fd0>, <_ast.Constant object at 0x7fd5008369a0>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"log_cols(0)$0" -> "[<_ast.Constant object at 0x7fd500836760>, <_ast.Constant object at 0x7fd500836fd0>, <_ast.Constant object at 0x7fd5008369a0>](0)"	[label=assignedFrom];
 	"log(0)$0" -> "pd(0)"	[label=DataFrame];
 	"log(0)$0" -> "log_cols(0)$0"	[label=DataFrame];
 	"clf(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
@@ -144,32 +144,34 @@ ast.Call object at 0x12f8f5580>, <_ast.Call object at 0x12f8f54c0>](0)"	[label=a
 	"clf(0)$0" -> "clf(0)"	[label=fit];
 	"name(0)$0" -> "clf(0)$0"	[label=assignedFrom];
 	"=(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"print[0]" -> "name(0)$0"	[label=print];
-	"print[0]" -> "=(0)"	[label=print];
-	"print[0]" -> "****Results****(0)"	[label=print];
-	"print[0]" -> "Accuracy: {:.4\%}(0)"	[label=print];
-	"print[0]" -> "Log Loss: {}(0)"	[label=print];
-	"****Results****(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"Accuracy: {:.4\%}(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"Log Loss: {}(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"print[125/4]" -> "=(0)"	[label=print];
+	"print[125/4]" -> "30(0)"	[label=print];
 	"30(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
-	"print[1]" -> "30(0)"	[label=print];
-	"print[1]" -> "acc(0)$0"	[label=print];
-	"print[1]" -> "ll(0)$0"	[label=print];
-	"acc(0)$0" -> "y_test(0)$0"	[label=accuracy_score];
-	"acc(0)$0" -> "train_predictions(0)$0"	[label=accuracy_score];
-	"ll(0)$0" -> "y_test(0)$0"	[label=log_loss];
-	"ll(0)$0" -> "train_predictions(0)$1"	[label=log_loss];
+	"print[127/4]" -> "name(0)$0"	[label=print];
+	"****Results****(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"print[131/4]" -> "****Results****(0)"	[label=print];
 	"train_predictions(0)$0" -> "X_test(0)$0"	[label=predict];
 	"train_predictions(0)$0" -> "clf(0)$0"	[label=predict];
+	"acc(0)$0" -> "y_test(0)$0"	[label=accuracy_score];
+	"acc(0)$0" -> "train_predictions(0)$0"	[label=accuracy_score];
+	"Accuracy: {:.4\%}(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"print[137/4]" -> "acc(0)$0"	[label=print];
+	"print[137/4]" -> "Accuracy: {:.4\%}(0)"	[label=print];
 	"train_predictions(0)$1" -> "X_test(0)$0"	[label=predict_proba];
 	"train_predictions(0)$1" -> "clf(0)$0"	[label=predict_proba];
+	"ll(0)$0" -> "y_test(0)$0"	[label=log_loss];
+	"ll(0)$0" -> "train_predictions(0)$1"	[label=log_loss];
+	"Log Loss: {}(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"print[145/4]" -> "ll(0)$0"	[label=print];
+	"print[145/4]" -> "Log Loss: {}(0)"	[label=print];
 	"log_entry(0)$0" -> "pd(0)"	[label=DataFrame];
 	"log_entry(0)$0" -> "log_cols(0)$0"	[label=DataFrame];
-	"log_entry(0)$0" -> "[<_ast.List object at 0x12f85e790>](0)"	[label=DataFrame];
-	"[<_ast.List object at 0x12f85e790>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
+	"log_entry(0)$0" -> "[<_ast.List object at 0x7fd500999700>](0)"	[label=DataFrame];
+	"[<_ast.List object at 0x7fd500999700>](0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];
 	"log(0)$1" -> "log(0)$0"	[label=append];
 	"log(0)$1" -> "log_entry(0)$0"	[label=append];
+	"print[155/0]" -> "=(0)"	[label=print];
+	"print[155/0]" -> "30(0)"	[label=print];
 	"sns(0)$0" -> "sns(0)"	[label=set_color_codes];
 	"sns(0)$0" -> "muted(0)"	[label=set_color_codes];
 	"muted(0)" -> "10-classifier-showdown-in-scikit-learn.ipynb"	[label=appearsIn];

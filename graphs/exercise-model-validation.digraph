@@ -11,12 +11,12 @@ strict digraph "" {
 	"home_data(0)$0" -> "pd(0)"	[label=read_csv];
 	"home_data(0)$0" -> "iowa_file_path(0)$0"	[label=read_csv];
 	"y(0)$0" -> "home_data(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989f10>, <_ast.Constant object at 0x12f989eb0>, <_ast.Constant object at 0x12f989970>, <_ast.Constant \
-object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant object at 0x12f989f70>, <_ast.Constant object at 0x12f989a00>](\
-0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
-	"feature_columns(0)$0" -> "[<_ast.Constant object at 0x12f989f10>, <_ast.Constant object at 0x12f989eb0>, <_ast.Constant object at 0x12f989970>, <_ast.Constant \
-object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant object at 0x12f989f70>, <_ast.Constant object at 0x12f989a00>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048eee0>, <_ast.Constant object at 0x7fd4c048e7f0>, <_ast.Constant object at 0x7fd4c048ef70>, <_\
+ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048eb50>, <_ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant \
+object at 0x7fd4c048ee50>](0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
+	"feature_columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c048eee0>, <_ast.Constant object at 0x7fd4c048e7f0>, <_ast.Constant object at 0x7fd4c048ef70>, <_\
+ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048eb50>, <_ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant \
+object at 0x7fd4c048ee50>](0)"	[label=assignedFrom];
 	"X(0)$0" -> "home_data(0)$0"	[label=assignedFrom];
 	"X(0)$0" -> "feature_columns(0)$0"	[label=assignedFrom];
 	"iowa_model(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
@@ -24,24 +24,12 @@ object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant ob
 	"iowa_model(0)$0" -> "X(0)$0"	[label=fit];
 	"iowa_model(0)$0" -> "iowa_model(0)"	[label=fit];
 	"First in-sample predictions:(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
-	"print[0]" -> "First in-sample predictions:(0)"	[label=print];
-	"print[0]" -> "Actual target values for those homes:(0)"	[label=print];
-	"print[0]" -> "Setup Complete(0)"	[label=print];
-	"print[0]" -> "val_y(0)$0"	[label=print];
-	"print[0]" -> "val_predictions(0)$0"	[label=print];
-	"print[0]" -> "val_mae(0)$0"	[label=print];
+	"print[19/0]" -> "X(0)$0"	[label=print];
+	"print[19/0]" -> "iowa_model(0)$0"	[label=print];
+	"print[19/0]" -> "First in-sample predictions:(0)"	[label=print];
 	"Actual target values for those homes:(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
-	"Setup Complete(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
-	"val_y(0)$0" -> "y(0)$0"	[label=train_test_split];
-	"val_y(0)$0" -> "X(0)$0"	[label=train_test_split];
-	"val_y(0)$0" -> "1(0)"	[label=train_test_split];
-	"val_predictions(0)$0" -> "val_X(0)$0"	[label=predict];
-	"val_predictions(0)$0" -> "iowa_model(0)$2"	[label=predict];
-	"val_mae(0)$0" -> "val_y(0)$0"	[label=mean_absolute_error];
-	"val_mae(0)$0" -> "val_predictions(0)$0"	[label=mean_absolute_error];
-	"print[1]" -> "y(0)$0"	[label=print];
-	"print[1]" -> "iowa_model(0)$0"	[label=print];
-	"print[2]" -> "X(0)$0"	[label=print];
+	"print[20/0]" -> "y(0)$0"	[label=print];
+	"print[20/0]" -> "Actual target values for those homes:(0)"	[label=print];
 	"learntools.core" -> "exercise-model-validation.ipynb"	[label=importedBy];
 	binder -> "learntools.core"	[label=importedBy];
 	"binder(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
@@ -53,6 +41,8 @@ object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant ob
 	"*" -> "learntools.machine_learning.ex4"	[label=importedBy];
 	"*(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"*(0)" -> "*"	[label=assignedFrom];
+	"Setup Complete(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "Setup Complete(0)"	[label=print];
 	"sklearn.model_selection" -> "exercise-model-validation.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
@@ -67,6 +57,9 @@ object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant ob
 	"train_y(0)$0" -> "y(0)$0"	[label=train_test_split];
 	"train_y(0)$0" -> "X(0)$0"	[label=train_test_split];
 	"train_y(0)$0" -> "1(0)"	[label=train_test_split];
+	"val_y(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"val_y(0)$0" -> "X(0)$0"	[label=train_test_split];
+	"val_y(0)$0" -> "1(0)"	[label=train_test_split];
 	"step_1(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"step_1(0)$0" -> "step_1(0)"	[label=check];
 	"iowa_model(0)$1" -> "1(0)"	[label=DecisionTreeRegressor];
@@ -75,12 +68,19 @@ object at 0x12f989ee0>, <_ast.Constant object at 0x12f9899a0>, <_ast.Constant ob
 	"iowa_model(0)$2" -> "iowa_model(0)$1"	[label=fit];
 	"step_2(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"step_2(0)$0" -> "step_2(0)"	[label=check];
+	"val_predictions(0)$0" -> "val_X(0)$0"	[label=predict];
+	"val_predictions(0)$0" -> "iowa_model(0)$2"	[label=predict];
 	"step_3(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"step_3(0)$0" -> "step_3(0)"	[label=check];
+	"print[57/0]" -> "val_predictions(0)$0"	[label=print];
+	"print[59/0]" -> "val_y(0)$0"	[label=print];
 	"sklearn.metrics" -> "exercise-model-validation.ipynb"	[label=importedBy];
 	mean_absolute_error -> "sklearn.metrics"	[label=importedBy];
 	"mean_absolute_error(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"mean_absolute_error(0)" -> mean_absolute_error	[label=assignedFrom];
+	"val_mae(0)$0" -> "val_y(0)$0"	[label=mean_absolute_error];
+	"val_mae(0)$0" -> "val_predictions(0)$0"	[label=mean_absolute_error];
+	"print[64/0]" -> "val_mae(0)$0"	[label=print];
 	"step_4(0)" -> "exercise-model-validation.ipynb"	[label=appearsIn];
 	"step_4(0)$0" -> "step_4(0)"	[label=check];
 }

@@ -33,12 +33,12 @@ digraph "" {
 	"_BATCH_NORM_EPSILON(0)$0" -> "1e-05(0)"	[label=assignedFrom];
 	"0.1(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"_LEAKY_RELU(0)$0" -> "0.1(0)"	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12f989ee0>, <_ast.Tuple object at 0x12f9899d0>, <_ast.Tuple object at 0x12f989a00>, <_ast.Tuple object \
-at 0x12f989f70>, <_ast.Tuple object at 0x12f989fd0>, <_ast.Tuple object at 0x12f989e80>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple \
-object at 0x12fa2b700>, <_ast.Tuple object at 0x12fa2b310>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
-	"_ANCHORS(0)$0" -> "[<_ast.Tuple object at 0x12f989ee0>, <_ast.Tuple object at 0x12f9899d0>, <_ast.Tuple object at 0x12f989a00>, <_ast.Tuple object \
-at 0x12f989f70>, <_ast.Tuple object at 0x12f989fd0>, <_ast.Tuple object at 0x12f989e80>, <_ast.Tuple object at 0x12f989e50>, <_ast.Tuple \
-object at 0x12fa2b700>, <_ast.Tuple object at 0x12fa2b310>](0)"	[label=assignedFrom];
+	"[<_ast.Tuple object at 0x7fd4c04cc130>, <_ast.Tuple object at 0x7fd4c04cc100>, <_ast.Tuple object at 0x7fd4c04cc070>, <_ast.Tuple \
+object at 0x7fd4c04ccca0>, <_ast.Tuple object at 0x7fd4c04cc610>, <_ast.Tuple object at 0x7fd4c04cc0a0>, <_ast.Tuple object at 0x7fd4c04ccb20>, <_\
+ast.Tuple object at 0x7fd4c04ccdf0>, <_ast.Tuple object at 0x7fd4c04cc1f0>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"_ANCHORS(0)$0" -> "[<_ast.Tuple object at 0x7fd4c04cc130>, <_ast.Tuple object at 0x7fd4c04cc100>, <_ast.Tuple object at 0x7fd4c04cc070>, <_ast.Tuple \
+object at 0x7fd4c04ccca0>, <_ast.Tuple object at 0x7fd4c04cc610>, <_ast.Tuple object at 0x7fd4c04cc0a0>, <_ast.Tuple object at 0x7fd4c04ccb20>, <_\
+ast.Tuple object at 0x7fd4c04ccdf0>, <_ast.Tuple object at 0x7fd4c04cc1f0>](0)"	[label=assignedFrom];
 	"416(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"_MODEL_SIZE(0)$0" -> "416(0)"	[label=assignedFrom];
 	"inputs(1)" -> "batch_norm[0]"	[label=_argToVar];
@@ -55,12 +55,12 @@ object at 0x12fa2b700>, <_ast.Tuple object at 0x12fa2b310>](0)"	[label=assignedF
 	"pad_end(2)$0" -> "pad_beg(2)$0"	[label=Sub];
 	"padded_inputs(2)$0" -> "inputs(2)"	[label=pad];
 	"padded_inputs(2)$0" -> "tf(2)"	[label=pad];
-	"padded_inputs(2)$0" -> "[<_ast.List object at 0x12fadee80>, <_ast.List object at 0x12fade3d0>, <_ast.List object at 0x12fade5b0>, <_ast.List object at 0x12fade4f0>](\
-2)"	[label=pad];
+	"padded_inputs(2)$0" -> "[<_ast.List object at 0x7fd500999b50>, <_ast.List object at 0x7fd500999f10>, <_ast.List object at 0x7fd500999490>, <_ast.List object \
+at 0x7fd500999e50>](2)"	[label=pad];
 	"padded_inputs(2)$1" -> "inputs(2)"	[label=pad];
 	"padded_inputs(2)$1" -> "tf(2)"	[label=pad];
-	"padded_inputs(2)$1" -> "[<_ast.List object at 0x12fade5e0>, <_ast.List object at 0x12fadedf0>, <_ast.List object at 0x12fade9d0>, <_ast.List object at 0x12fade070>](\
-2)"	[label=pad];
+	"padded_inputs(2)$1" -> "[<_ast.List object at 0x7fd500999880>, <_ast.List object at 0x7fd500999130>, <_ast.List object at 0x7fd500999400>, <_ast.List object \
+at 0x7fd500999e20>](2)"	[label=pad];
 	"inputs(3)" -> "conv2d_fixed_padding[0]"	[label=_argToVar];
 	"filters(3)" -> "conv2d_fixed_padding[1]"	[label=_argToVar];
 	"kernel_size(3)" -> "conv2d_fixed_padding[2]"	[label=_argToVar];
@@ -286,11 +286,11 @@ object at 0x12fa2b700>, <_ast.Tuple object at 0x12fa2b310>](0)"	[label=assignedF
 	"grid_shape(7)$0" -> "3(7)"	[label=assignedFrom];
 	"inputs(7)$1" -> "tf(7)"	[label=transpose];
 	"inputs(7)$1" -> "inputs(7)$1"	[label=transpose];
-	"inputs(7)$1" -> "[<_ast.Constant object at 0x12fc45820>, <_ast.Constant object at 0x12fc45850>, <_ast.Constant object at 0x12fc45880>, <_ast.Constant \
-object at 0x12fc458b0>](7)"	[label=transpose];
+	"inputs(7)$1" -> "[<_ast.Constant object at 0x7fd4902b4490>, <_ast.Constant object at 0x7fd4902b44c0>, <_ast.Constant object at 0x7fd4902b44f0>, <_\
+ast.Constant object at 0x7fd4902b4520>](7)"	[label=transpose];
 	"inputs(7)$2" -> "tf(7)"	[label=reshape];
 	"inputs(7)$2" -> "inputs(7)$2"	[label=reshape];
-	"inputs(7)$2" -> "[<_ast.UnaryOp object at 0x12fc45a30>, <_ast.BinOp object at 0x12fc45a90>, <_ast.BinOp object at 0x12fc45d30>](7)"	[label=reshape];
+	"inputs(7)$2" -> "[<_ast.UnaryOp object at 0x7fd4902b46a0>, <_ast.BinOp object at 0x7fd4902b4700>, <_ast.BinOp object at 0x7fd4902b4970>](7)"	[label=reshape];
 	"strides(7)$0" -> "img_size(7)"	[label=assignedFrom];
 	"strides(7)$0" -> "1(7)"	[label=assignedFrom];
 	"strides(7)$0" -> "grid_shape(7)$0"	[label=assignedFrom];
@@ -298,23 +298,23 @@ object at 0x12fc458b0>](7)"	[label=transpose];
 	"box_centers(7)$0" -> "tf(7)"	[label=split];
 	"box_centers(7)$0" -> "1(7)"	[label=split];
 	"box_centers(7)$0" -> "inputs(7)$2"	[label=split];
-	"box_centers(7)$0" -> "[<_ast.Constant object at 0x12fc41460>, <_ast.Constant object at 0x12fc41160>, <_ast.Constant object at 0x12fc41490>, <_ast.Name \
-object at 0x12fc414c0>](7)"	[label=split];
+	"box_centers(7)$0" -> "[<_ast.Constant object at 0x7fd4902b9130>, <_ast.Constant object at 0x7fd4902b9160>, <_ast.Constant object at 0x7fd4902b9190>, <_\
+ast.Name object at 0x7fd4902b91c0>](7)"	[label=split];
 	"box_shapes(7)$0" -> "tf(7)"	[label=split];
 	"box_shapes(7)$0" -> "1(7)"	[label=split];
 	"box_shapes(7)$0" -> "inputs(7)$2"	[label=split];
-	"box_shapes(7)$0" -> "[<_ast.Constant object at 0x12fc41460>, <_ast.Constant object at 0x12fc41160>, <_ast.Constant object at 0x12fc41490>, <_ast.Name \
-object at 0x12fc414c0>](7)"	[label=split];
+	"box_shapes(7)$0" -> "[<_ast.Constant object at 0x7fd4902b9130>, <_ast.Constant object at 0x7fd4902b9160>, <_ast.Constant object at 0x7fd4902b9190>, <_\
+ast.Name object at 0x7fd4902b91c0>](7)"	[label=split];
 	"confidence(7)$0" -> "tf(7)"	[label=split];
 	"confidence(7)$0" -> "1(7)"	[label=split];
 	"confidence(7)$0" -> "inputs(7)$2"	[label=split];
-	"confidence(7)$0" -> "[<_ast.Constant object at 0x12fc41460>, <_ast.Constant object at 0x12fc41160>, <_ast.Constant object at 0x12fc41490>, <_ast.Name \
-object at 0x12fc414c0>](7)"	[label=split];
+	"confidence(7)$0" -> "[<_ast.Constant object at 0x7fd4902b9130>, <_ast.Constant object at 0x7fd4902b9160>, <_ast.Constant object at 0x7fd4902b9190>, <_\
+ast.Name object at 0x7fd4902b91c0>](7)"	[label=split];
 	"classes(7)$0" -> "tf(7)"	[label=split];
 	"classes(7)$0" -> "1(7)"	[label=split];
 	"classes(7)$0" -> "inputs(7)$2"	[label=split];
-	"classes(7)$0" -> "[<_ast.Constant object at 0x12fc41460>, <_ast.Constant object at 0x12fc41160>, <_ast.Constant object at 0x12fc41490>, <_ast.Name \
-object at 0x12fc414c0>](7)"	[label=split];
+	"classes(7)$0" -> "[<_ast.Constant object at 0x7fd4902b9130>, <_ast.Constant object at 0x7fd4902b9160>, <_ast.Constant object at 0x7fd4902b9190>, <_\
+ast.Name object at 0x7fd4902b91c0>](7)"	[label=split];
 	"x(7)$0" -> "tf(7)"	[label=range];
 	"x(7)$0" -> "grid_shape(7)$0"	[label=range];
 	"x(7)$0" -> "0(7)"	[label=range];
@@ -335,13 +335,13 @@ object at 0x12fc414c0>](7)"	[label=split];
 	"y_offset(7)$1" -> "y_offset(7)$1"	[label=reshape];
 	"x_y_offset(7)$0" -> "tf(7)"	[label=concat];
 	"x_y_offset(7)$0" -> "1(7)"	[label=concat];
-	"x_y_offset(7)$0" -> "[<_ast.Name object at 0x12fc3e190>, <_ast.Name object at 0x12fc3e1c0>](7)"	[label=concat];
+	"x_y_offset(7)$0" -> "[<_ast.Name object at 0x7fd4902b9eb0>, <_ast.Name object at 0x7fd4902b9ee0>](7)"	[label=concat];
 	"x_y_offset(7)$1" -> "tf(7)"	[label=tile];
 	"x_y_offset(7)$1" -> "x_y_offset(7)$1"	[label=tile];
-	"x_y_offset(7)$1" -> "[<_ast.Constant object at 0x12fc3e400>, <_ast.Name object at 0x12fc3e430>](7)"	[label=tile];
+	"x_y_offset(7)$1" -> "[<_ast.Constant object at 0x7fd4902b0100>, <_ast.Name object at 0x7fd4902b0130>](7)"	[label=tile];
 	"x_y_offset(7)$2" -> "tf(7)"	[label=reshape];
 	"x_y_offset(7)$2" -> "x_y_offset(7)$2"	[label=reshape];
-	"x_y_offset(7)$2" -> "[<_ast.Constant object at 0x12fc3e5e0>, <_ast.UnaryOp object at 0x12fc3e610>, <_ast.Constant object at 0x12fc3e670>](7)"	[label=reshape];
+	"x_y_offset(7)$2" -> "[<_ast.Constant object at 0x7fd4902b02b0>, <_ast.UnaryOp object at 0x7fd4902b02e0>, <_ast.Constant object at 0x7fd4902b0340>](7)"	[label=reshape];
 	"box_centers(7)$1" -> "tf(7)"	[label=sigmoid];
 	"box_centers(7)$1" -> "box_centers(7)$1"	[label=sigmoid];
 	"box_centers(7)$2" -> "strides(7)$0"	[label=Mult];
@@ -349,7 +349,7 @@ object at 0x12fc414c0>](7)"	[label=split];
 	"box_centers(7)$2" -> "box_centers(7)$1"	[label=Mult];
 	"anchors(7)$0" -> "tf(7)"	[label=tile];
 	"anchors(7)$0" -> "anchors(7)$0"	[label=tile];
-	"anchors(7)$0" -> "[<_ast.BinOp object at 0x12fc3ea90>, <_ast.Constant object at 0x12fc3ecd0>](7)"	[label=tile];
+	"anchors(7)$0" -> "[<_ast.BinOp object at 0x7fd4902b0760>, <_ast.Constant object at 0x7fd4902b0970>](7)"	[label=tile];
 	"box_shapes(7)$1" -> "tf(7)"	[label=Mult];
 	"box_shapes(7)$1" -> "anchors(7)$0"	[label=Mult];
 	"box_shapes(7)$1" -> "box_shapes(7)$1"	[label=Mult];
@@ -359,15 +359,15 @@ object at 0x12fc414c0>](7)"	[label=split];
 	"classes(7)$1" -> "classes(7)$1"	[label=sigmoid];
 	"inputs(7)$3" -> "tf(7)"	[label=concat];
 	"inputs(7)$3" -> "1(7)"	[label=concat];
-	"inputs(7)$3" -> "[<_ast.Name object at 0x12fc40310>, <_ast.Name object at 0x12fc40340>, <_ast.Name object at 0x12fc40370>, <_ast.Name object at 0x12fc403a0>](\
-7)"	[label=concat];
+	"inputs(7)$3" -> "[<_ast.Name object at 0x7fd4902b0f70>, <_ast.Name object at 0x7fd4902b0fa0>, <_ast.Name object at 0x7fd4902b0fd0>, <_ast.Name object \
+at 0x7fd4902ae070>](7)"	[label=concat];
 	"inputs(8)" -> "upsample[0]"	[label=_argToVar];
 	"out_shape(8)" -> "upsample[1]"	[label=_argToVar];
 	"data_format(8)" -> "upsample[2]"	[label=_argToVar];
 	"inputs(8)$0" -> "inputs(8)$0"	[label=transpose];
 	"inputs(8)$0" -> "tf(8)"	[label=transpose];
-	"inputs(8)$0" -> "[<_ast.Constant object at 0x12fc408e0>, <_ast.Constant object at 0x12fc40910>, <_ast.Constant object at 0x12fc40940>, <_ast.Constant \
-object at 0x12fc40970>](8)"	[label=transpose];
+	"inputs(8)$0" -> "[<_ast.Constant object at 0x7fd4902ae5b0>, <_ast.Constant object at 0x7fd4902ae2b0>, <_ast.Constant object at 0x7fd4902ae5e0>, <_\
+ast.Constant object at 0x7fd4902ae610>](8)"	[label=transpose];
 	"new_height(8)$0" -> "out_shape(8)"	[label=assignedFrom];
 	"new_height(8)$0" -> "3(8)"	[label=assignedFrom];
 	"new_width(8)$0" -> "out_shape(8)"	[label=assignedFrom];
@@ -382,38 +382,38 @@ object at 0x12fc40970>](8)"	[label=transpose];
 	"inputs(8)$1" -> "inputs(8)$1"	[label=resize_nearest_neighbor];
 	"inputs(8)$2" -> "tf(8)"	[label=transpose];
 	"inputs(8)$2" -> "inputs(8)$2"	[label=transpose];
-	"inputs(8)$2" -> "[<_ast.Constant object at 0x12fc3a2e0>, <_ast.Constant object at 0x12fc3a310>, <_ast.Constant object at 0x12fc3a340>, <_ast.Constant \
-object at 0x12fc3a370>](8)"	[label=transpose];
+	"inputs(8)$2" -> "[<_ast.Constant object at 0x7fd4902aefd0>, <_ast.Constant object at 0x7fd4902aed90>, <_ast.Constant object at 0x7fd4902aed30>, <_\
+ast.Constant object at 0x7fd4902ad040>](8)"	[label=transpose];
 	"inputs(9)" -> "build_boxes[0]"	[label=_argToVar];
 	"center_x(9)$0" -> "inputs(9)"	[label=split];
 	"center_x(9)$0" -> "tf(9)"	[label=split];
-	"center_x(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"center_x(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"center_x(9)$0" -> "1(9)"	[label=split];
 	"center_y(9)$0" -> "inputs(9)"	[label=split];
 	"center_y(9)$0" -> "tf(9)"	[label=split];
-	"center_y(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"center_y(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"center_y(9)$0" -> "1(9)"	[label=split];
 	"width(9)$0" -> "inputs(9)"	[label=split];
 	"width(9)$0" -> "tf(9)"	[label=split];
-	"width(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"width(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"width(9)$0" -> "1(9)"	[label=split];
 	"height(9)$0" -> "inputs(9)"	[label=split];
 	"height(9)$0" -> "tf(9)"	[label=split];
-	"height(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"height(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"height(9)$0" -> "1(9)"	[label=split];
 	"confidence(9)$0" -> "inputs(9)"	[label=split];
 	"confidence(9)$0" -> "tf(9)"	[label=split];
-	"confidence(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"confidence(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"confidence(9)$0" -> "1(9)"	[label=split];
 	"classes(9)$0" -> "inputs(9)"	[label=split];
 	"classes(9)$0" -> "tf(9)"	[label=split];
-	"classes(9)$0" -> "[<_ast.Constant object at 0x12fc3a850>, <_ast.Constant object at 0x12fc3a880>, <_ast.Constant object at 0x12fc3a8e0>, <_ast.Constant \
-object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp object at 0x12fc3a970>](9)"	[label=split];
+	"classes(9)$0" -> "[<_ast.Constant object at 0x7fd4902ad550>, <_ast.Constant object at 0x7fd4902ad580>, <_ast.Constant object at 0x7fd4902ad5b0>, <_\
+ast.Constant object at 0x7fd4902ad5e0>, <_ast.Constant object at 0x7fd4902ad610>, <_ast.UnaryOp object at 0x7fd4902ad640>](9)"	[label=split];
 	"classes(9)$0" -> "1(9)"	[label=split];
 	"top_left_x(9)$0" -> "center_x(9)$0"	[label=Sub];
 	"top_left_x(9)$0" -> "width(9)$0"	[label=Sub];
@@ -429,8 +429,8 @@ object at 0x12fc3a910>, <_ast.Constant object at 0x12fc3a940>, <_ast.UnaryOp obj
 	"bottom_right_y(9)$0" -> "2(9)"	[label=Add];
 	"boxes(9)$0" -> "tf(9)"	[label=concat];
 	"boxes(9)$0" -> "1(9)"	[label=concat];
-	"boxes(9)$0" -> "[<_ast.Name object at 0x12f8990d0>, <_ast.Name object at 0x12f899100>, <_ast.Name object at 0x12f899130>, <_ast.Name object at 0x12f899160>, <_\
-ast.Name object at 0x12f899190>, <_ast.Name object at 0x12f8991c0>](9)"	[label=concat];
+	"boxes(9)$0" -> "[<_ast.Name object at 0x7fd4902ade80>, <_ast.Name object at 0x7fd4902adeb0>, <_ast.Name object at 0x7fd4902adee0>, <_ast.Name object \
+at 0x7fd4902adf10>, <_ast.Name object at 0x7fd4902adf40>, <_ast.Name object at 0x7fd4902adf70>](9)"	[label=concat];
 	"inputs(10)" -> "non_max_suppression[0]"	[label=_argToVar];
 	"n_classes(10)" -> "non_max_suppression[1]"	[label=_argToVar];
 	"max_output_size(10)" -> "non_max_suppression[2]"	[label=_argToVar];
@@ -453,7 +453,7 @@ ast.Name object at 0x12f899190>, <_ast.Name object at 0x12f8991c0>](9)"	[label=c
 	"classes(10)$1" -> "classes(10)$1"	[label=expand_dims];
 	"boxes(10)$1" -> "tf(10)"	[label=concat];
 	"boxes(10)$1" -> "1(10)"	[label=concat];
-	"boxes(10)$1" -> "[<_ast.Subscript object at 0x12f896220>, <_ast.Name object at 0x12f8963d0>](10)"	[label=concat];
+	"boxes(10)$1" -> "[<_ast.Subscript object at 0x7fd4902bbee0>, <_ast.Name object at 0x7fd4902c00d0>](10)"	[label=concat];
 	"cls(10)" -> "n_classes(10)"	[label=iteratorOf];
 	"cls(10)" -> "range(10)"	[label=iteratorOf];
 	"mask(10)$0" -> "tf(10)"	[label=equal];
@@ -467,18 +467,18 @@ ast.Name object at 0x12f899190>, <_ast.Name object at 0x12f8991c0>](9)"	[label=c
 	"boxes_coords(10)$0" -> "tf(10)"	[label=split];
 	"boxes_coords(10)$0" -> "1(10)"	[label=split];
 	"boxes_coords(10)$0" -> "class_boxes(10)$0"	[label=split];
-	"boxes_coords(10)$0" -> "[<_ast.Constant object at 0x12f896eb0>, <_ast.Constant object at 0x12f896be0>, <_ast.UnaryOp object at 0x12f896ee0>](10)"	[label=split];
+	"boxes_coords(10)$0" -> "[<_ast.Constant object at 0x7fd4902c0bb0>, <_ast.Constant object at 0x7fd4902c0c10>, <_ast.UnaryOp object at 0x7fd4902c0c70>](10)"	[label=split];
 	"boxes_conf_scores(10)$0" -> "tf(10)"	[label=split];
 	"boxes_conf_scores(10)$0" -> "1(10)"	[label=split];
 	"boxes_conf_scores(10)$0" -> "class_boxes(10)$0"	[label=split];
-	"boxes_conf_scores(10)$0" -> "[<_ast.Constant object at 0x12f896eb0>, <_ast.Constant object at 0x12f896be0>, <_ast.UnaryOp object at 0x12f896ee0>](10)"	[label=split];
+	"boxes_conf_scores(10)$0" -> "[<_ast.Constant object at 0x7fd4902c0bb0>, <_ast.Constant object at 0x7fd4902c0c10>, <_ast.UnaryOp object at 0x7fd4902c0c70>](10)"	[label=split];
 	"_(10)$0" -> "tf(10)"	[label=split];
 	"_(10)$0" -> "1(10)"	[label=split];
 	"_(10)$0" -> "class_boxes(10)$0"	[label=split];
-	"_(10)$0" -> "[<_ast.Constant object at 0x12f896eb0>, <_ast.Constant object at 0x12f896be0>, <_ast.UnaryOp object at 0x12f896ee0>](10)"	[label=split];
+	"_(10)$0" -> "[<_ast.Constant object at 0x7fd4902c0bb0>, <_ast.Constant object at 0x7fd4902c0c10>, <_ast.UnaryOp object at 0x7fd4902c0c70>](10)"	[label=split];
 	"boxes_conf_scores(10)$1" -> "tf(10)"	[label=reshape];
 	"boxes_conf_scores(10)$1" -> "boxes_conf_scores(10)$1"	[label=reshape];
-	"boxes_conf_scores(10)$1" -> "[<_ast.UnaryOp object at 0x12f87a190>](10)"	[label=reshape];
+	"boxes_conf_scores(10)$1" -> "[<_ast.UnaryOp object at 0x7fd4902c0f10>](10)"	[label=reshape];
 	"indices(10)$0" -> "max_output_size(10)"	[label=non_max_suppression];
 	"indices(10)$0" -> "iou_threshold(10)"	[label=non_max_suppression];
 	"indices(10)$0" -> "tf(10)"	[label=non_max_suppression];
@@ -518,8 +518,8 @@ ast.Name object at 0x12f899190>, <_ast.Name object at 0x12f8991c0>](9)"	[label=c
 	"training(13)" -> "__call__[2]"	[label=_argToVar];
 	"inputs(13)$0" -> "inputs(13)$0"	[label=transpose];
 	"inputs(13)$0" -> "tf(13)"	[label=transpose];
-	"inputs(13)$0" -> "[<_ast.Constant object at 0x12f89d9a0>, <_ast.Constant object at 0x12f89d9d0>, <_ast.Constant object at 0x12f89da00>, <_ast.Constant \
-object at 0x12f89da30>](13)"	[label=transpose];
+	"inputs(13)$0" -> "[<_ast.Constant object at 0x7fd4902b56a0>, <_ast.Constant object at 0x7fd4902b52e0>, <_ast.Constant object at 0x7fd4902b56d0>, <_\
+ast.Constant object at 0x7fd4902b5700>](13)"	[label=transpose];
 	"inputs(13)$1" -> "inputs(13)$0"	[label=Div];
 	"inputs(13)$1" -> "255(13)"	[label=Div];
 	"route1(13)$0" -> "self(13)"	[label=darknet53];
@@ -564,7 +564,7 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"axis(13)$0" -> "3(13)"	[label=assignedFrom];
 	"inputs(13)$8" -> "tf(13)"	[label=concat];
 	"inputs(13)$8" -> "axis(13)$0"	[label=concat];
-	"inputs(13)$8" -> "[<_ast.Name object at 0x12f880370>, <_ast.Name object at 0x12f8803a0>](13)"	[label=concat];
+	"inputs(13)$8" -> "[<_ast.Name object at 0x7fd500833070>, <_ast.Name object at 0x7fd5008330a0>](13)"	[label=concat];
 	"route(13)$1" -> "self(13)"	[label=yolo_convolution_block];
 	"route(13)$1" -> "training(13)"	[label=yolo_convolution_block];
 	"route(13)$1" -> "256(13)"	[label=yolo_convolution_block];
@@ -594,7 +594,7 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"inputs(13)$13" -> "upsample_size(13)$1"	[label=upsample];
 	"inputs(13)$14" -> "tf(13)"	[label=concat];
 	"inputs(13)$14" -> "axis(13)$0"	[label=concat];
-	"inputs(13)$14" -> "[<_ast.Name object at 0x12f8a4820>, <_ast.Name object at 0x12f8a4850>](13)"	[label=concat];
+	"inputs(13)$14" -> "[<_ast.Name object at 0x7fd50081f520>, <_ast.Name object at 0x7fd50081f550>](13)"	[label=concat];
 	"route(13)$2" -> "self(13)"	[label=yolo_convolution_block];
 	"route(13)$2" -> "training(13)"	[label=yolo_convolution_block];
 	"route(13)$2" -> "128(13)"	[label=yolo_convolution_block];
@@ -610,7 +610,7 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"detect3(13)$0" -> "0(13)"	[label=yolo_layer];
 	"inputs(13)$16" -> "tf(13)"	[label=concat];
 	"inputs(13)$16" -> "1(13)"	[label=concat];
-	"inputs(13)$16" -> "[<_ast.Name object at 0x12f89f400>, <_ast.Name object at 0x12f89f460>, <_ast.Name object at 0x12f89f4c0>](13)"	[label=concat];
+	"inputs(13)$16" -> "[<_ast.Name object at 0x7fd50081ff10>, <_ast.Name object at 0x7fd50081ff40>, <_ast.Name object at 0x7fd50081ff70>](13)"	[label=concat];
 	"inputs(13)$17" -> "inputs(13)$16"	[label=build_boxes];
 	"boxes_dicts(13)$0" -> "self(13)"	[label=non_max_suppression];
 	"boxes_dicts(13)$0" -> "inputs(13)$17"	[label=non_max_suppression];
@@ -634,19 +634,9 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"file_name(15)" -> "load_class_names[0]"	[label=_argToVar];
 	"class_names(15)$0" -> "f(15)"	[label=splitlines];
 	"img_names(16)" -> "draw_boxes[0]"	[label=_argToVar];
-	"draw_boxes[0]" -> "img_names(0)$0"	[label=draw_boxes];
-	"img_names(0)$0" -> "[<_ast.Constant object at 0x12f8b0370>, <_ast.Constant object at 0x12f8b03a0>](0)"	[label=assignedFrom];
 	"boxes_dicts(16)" -> "draw_boxes[1]"	[label=_argToVar];
-	"draw_boxes[1]" -> "detection_result(0)$0"	[label=draw_boxes];
-	"detection_result(0)$0" -> "batch(0)$0"	[label=run];
-	"detection_result(0)$0" -> "inputs(0)$0"	[label=run];
-	"detection_result(0)$0" -> "detections(0)$0"	[label=run];
-	"detection_result(0)$0" -> "sess(0)$0"	[label=run];
 	"class_names(16)" -> "draw_boxes[2]"	[label=_argToVar];
-	"draw_boxes[2]" -> "class_names(0)$0"	[label=draw_boxes];
-	"class_names(0)$0" -> "../input/coco.names(0)"	[label=load_class_names];
 	"model_size(16)" -> "draw_boxes[3]"	[label=_argToVar];
-	"draw_boxes[3]" -> "_MODEL_SIZE(0)$0"	[label=draw_boxes];
 	"colors(16)$0" -> "np(16)"	[label=astype];
 	"colors(16)$0" -> "color_palette(16)"	[label=astype];
 	"colors(16)$0" -> "hls(16)"	[label=astype];
@@ -734,16 +724,15 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"text_size(16)$0" -> "draw(16)$1"	[label=textsize];
 	"text_size(16)$0" -> "text(16)$0"	[label=textsize];
 	"draw(16)$2" -> "draw(16)$1"	[label=rectangle];
-	"draw(16)$2" -> "[<_ast.Name object at 0x12f8de3d0>, <_ast.BinOp object at 0x12f8de400>, <_ast.BinOp object at 0x12f8de520>, <_ast.Name object at \
-0x12f8de6a0>](16)"	[label=rectangle];
+	"draw(16)$2" -> "[<_ast.Name object at 0x7fd50082c040>, <_ast.BinOp object at 0x7fd50082c070>, <_ast.BinOp object at 0x7fd50082c1c0>, <_ast.Name \
+object at 0x7fd50082c310>](16)"	[label=rectangle];
 	"draw(16)$3" -> "1(16)"	[label=text];
 	"draw(16)$3" -> "x0(16)$0"	[label=text];
 	"draw(16)$3" -> "y0(16)$0"	[label=text];
 	"draw(16)$3" -> "text(16)$0"	[label=text];
 	"draw(16)$3" -> "text_size(16)$0"	[label=text];
 	"draw(16)$3" -> "draw(16)$2"	[label=text];
-	"display[0]" -> "Image(0)"	[label=display];
-	"display[0]" -> "img(16)$0"	[label=display];
+	"display[485/8]" -> "img(16)$0"	[label=display];
 	"variables(17)" -> "load_weights[0]"	[label=_argToVar];
 	"file_name(17)" -> "load_weights[1]"	[label=_argToVar];
 	"np(17)$0" -> "np(17)"	[label=fromfile];
@@ -756,7 +745,7 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"i(17)" -> "52(17)"	[label=iteratorOf];
 	"i(17)" -> "ranges(17)$0"	[label=iteratorOf];
 	"i(17)" -> "j(17)"	[label=iteratorOf];
-	"ranges(17)$0" -> "[<_ast.Call object at 0x12f8a7250>, <_ast.Call object at 0x12f8a7310>, <_ast.Call object at 0x12f8a73d0>](17)"	[label=assignedFrom];
+	"ranges(17)$0" -> "[<_ast.Call object at 0x7fd4c05d2f70>, <_ast.Call object at 0x7fd4c05d24f0>, <_ast.Call object at 0x7fd4c05d10d0>](17)"	[label=assignedFrom];
 	"j(17)" -> "range(17)"	[label=iteratorOf];
 	"j(17)" -> "3(17)"	[label=iteratorOf];
 	"conv_var(17)$0" -> "variables(17)"	[label=assignedFrom];
@@ -778,12 +767,12 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"variance(17)$0" -> "i(17)"	[label=assignedFrom];
 	"variance(17)$0" -> "5(17)"	[label=assignedFrom];
 	"variance(17)$0" -> "1(17)"	[label=assignedFrom];
-	"batch_norm_vars(17)$0" -> "[<_ast.Name object at 0x12f8e2be0>, <_ast.Name object at 0x12f8e2c10>, <_ast.Name object at 0x12f8e2c40>, <_ast.Name object at 0x12f8e2c70>](\
-17)"	[label=assignedFrom];
+	"batch_norm_vars(17)$0" -> "[<_ast.Name object at 0x7fd50082f8e0>, <_ast.Name object at 0x7fd50082f910>, <_ast.Name object at 0x7fd50082f940>, <_ast.Name object \
+at 0x7fd50082f970>](17)"	[label=assignedFrom];
 	"var(17)" -> "batch_norm_vars(17)$0"	[label=iteratorOf];
 	"var(17)" -> "batch_norm_vars(17)$1"	[label=iteratorOf];
-	"batch_norm_vars(17)$1" -> "[<_ast.Name object at 0x12f8a7fa0>, <_ast.Name object at 0x12f8a7cd0>, <_ast.Name object at 0x12f8a7fd0>, <_ast.Name object at 0x12f8a79d0>](\
-17)"	[label=assignedFrom];
+	"batch_norm_vars(17)$1" -> "[<_ast.Name object at 0x7fd4c05d1c70>, <_ast.Name object at 0x7fd4c05d19a0>, <_ast.Name object at 0x7fd4c05d1ca0>, <_ast.Name object \
+at 0x7fd4c05d1cd0>](17)"	[label=assignedFrom];
 	"shape(17)$0" -> "var(17)"	[label=as_list];
 	"num_params(17)$0" -> "np(17)$0"	[label=prod];
 	"num_params(17)$0" -> "shape(17)$0"	[label=prod];
@@ -820,7 +809,7 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"assign_ops(17)$2" -> "assign_ops(17)$1"	[label=append];
 	"assign_ops(17)$2" -> "tf(17)"	[label=append];
 	"assign_ops(17)$2" -> "var_weights(17)$2"	[label=append];
-	"unnormalized(17)$0" -> "[<_ast.Constant object at 0x12f8a7520>, <_ast.Constant object at 0x12f8a7550>, <_ast.Constant object at 0x12f8a7580>](17)"	[label=assignedFrom];
+	"unnormalized(17)$0" -> "[<_ast.Constant object at 0x7fd4c05d1220>, <_ast.Constant object at 0x7fd4c05d1250>, <_ast.Constant object at 0x7fd4c05d1280>](17)"	[label=assignedFrom];
 	"current(17)$0" -> "i(17)"	[label=Add];
 	"current(17)$0" -> "52(17)"	[label=Add];
 	"current(17)$0" -> "j(17)"	[label=Add];
@@ -929,16 +918,17 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"assign_ops(17)$6" -> "assign_ops(17)$5"	[label=append];
 	"assign_ops(17)$6" -> "conv_var(17)$2"	[label=append];
 	"assign_ops(17)$6" -> "var_weights(17)$8"	[label=append];
-	"[<_ast.Constant object at 0x12f8b0370>, <_ast.Constant object at 0x12f8b03a0>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05c4040>, <_ast.Constant object at 0x7fd4c05c4070>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"img_names(0)$0" -> "[<_ast.Constant object at 0x7fd4c05c4040>, <_ast.Constant object at 0x7fd4c05c4070>](0)"	[label=assignedFrom];
 	"img(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"img(0)" -> "img_names(0)$0"	[label=iteratorOf];
-	"display[1]" -> "img(0)"	[label=display];
-	"display[1]" -> "f(0)"	[label=display];
-	"f(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"display[571/22]" -> "Image(0)"	[label=display];
+	"display[571/22]" -> "img(0)"	[label=display];
 	"batch_size(0)$0" -> "img_names(0)$0"	[label=len];
 	"batch(0)$0" -> "_MODEL_SIZE(0)$0"	[label=load_images];
 	"batch(0)$0" -> "img_names(0)$0"	[label=load_images];
 	"../input/coco.names(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"class_names(0)$0" -> "../input/coco.names(0)"	[label=load_class_names];
 	"n_classes(0)$0" -> "class_names(0)$0"	[label=len];
 	"10(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"max_output_size(0)$0" -> "10(0)"	[label=assignedFrom];
@@ -951,10 +941,10 @@ object at 0x12f89da30>](13)"	[label=transpose];
 	"model(0)$0" -> "iou_threshold(0)$0"	[label=Yolo_v3];
 	"model(0)$0" -> "confidence_threshold(0)$0"	[label=Yolo_v3];
 	"inputs(0)$0" -> "tf(0)"	[label=placeholder];
-	"inputs(0)$0" -> "[<_ast.Name object at 0x12f8ae130>, <_ast.Constant object at 0x12f8ae160>, <_ast.Constant object at 0x12f8ae190>, <_ast.Constant \
-object at 0x12f8ae1c0>](0)"	[label=placeholder];
-	"[<_ast.Name object at 0x12f8ae130>, <_ast.Constant object at 0x12f8ae160>, <_ast.Constant object at 0x12f8ae190>, <_ast.Constant \
-object at 0x12f8ae1c0>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
+	"inputs(0)$0" -> "[<_ast.Name object at 0x7fd4c05c4df0>, <_ast.Constant object at 0x7fd4c05c4e20>, <_ast.Constant object at 0x7fd4c05c4e50>, <_ast.Constant \
+object at 0x7fd4c05c4e80>](0)"	[label=placeholder];
+	"[<_ast.Name object at 0x7fd4c05c4df0>, <_ast.Constant object at 0x7fd4c05c4e20>, <_ast.Constant object at 0x7fd4c05c4e50>, <_ast.Constant \
+object at 0x7fd4c05c4e80>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"detections(0)$0" -> "inputs(0)$0"	[label=model];
 	"detections(0)$0" -> "False(0)"	[label=model];
 	"False(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
@@ -967,6 +957,17 @@ object at 0x12f8ae1c0>](0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[l
 	"sess(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"sess(0)$0" -> "assign_ops(0)$0"	[label=run];
 	"sess(0)$0" -> "sess(0)"	[label=run];
+	"detection_result(0)$0" -> "batch(0)$0"	[label=run];
+	"detection_result(0)$0" -> "inputs(0)$0"	[label=run];
+	"detection_result(0)$0" -> "detections(0)$0"	[label=run];
+	"detection_result(0)$0" -> "sess(0)$0"	[label=run];
+	"draw_boxes[596/0]" -> "_MODEL_SIZE(0)$0"	[label=draw_boxes];
+	"draw_boxes[596/0]" -> "img_names(0)$0"	[label=draw_boxes];
+	"draw_boxes[596/0]" -> "class_names(0)$0"	[label=draw_boxes];
+	"draw_boxes[596/0]" -> "detection_result(0)$0"	[label=draw_boxes];
+	"display[599/4]" -> "Image(0)"	[label=display];
+	"display[599/4]" -> "f(0)"	[label=display];
+	"display[599/4]" -> "png(0)"	[label=display];
+	"f(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
 	"png(0)" -> "yolo-v3-object-detection-in-tensorflow.ipynb"	[label=appearsIn];
-	"display[2]" -> "png(0)"	[label=display];
 }

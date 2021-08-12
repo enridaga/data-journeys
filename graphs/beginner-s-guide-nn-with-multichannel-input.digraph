@@ -94,11 +94,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f8f5e20>, <_ast.Constant object at 0x12f8f50a0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f8f5e20>, <_ast.Constant object at 0x12f8f50a0>](0)"	[label=print];
+	"print[30/0]" -> "check_output(0)"	[label=print];
+	"print[30/0]" -> "[<_ast.Constant object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0a00>](0)"	[label=print];
+	"print[30/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0a00>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"train(0)$0" -> "False(0)"	[label=read_csv];
@@ -124,26 +124,26 @@ digraph "" {
 	"test(0)$1" -> "0(0)"	[label=assignedFrom];
 	"df(0)$0" -> "pd(0)"	[label=concat];
 	"df(0)$0" -> "0(0)"	[label=concat];
-	"df(0)$0" -> "[<_ast.Name object at 0x130532eb0>, <_ast.Name object at 0x1305325b0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x130532eb0>, <_ast.Name object at 0x1305325b0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"df(0)$0" -> "[<_ast.Name object at 0x7fd4c04f1c40>, <_ast.Name object at 0x7fd4c04f1460>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04f1c40>, <_ast.Name object at 0x7fd4c04f1460>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"sum_res(0)$0" -> "pd(0)"	[label=pivot_table];
 	"sum_res(0)$0" -> "res(0)$0"	[label=pivot_table];
 	"sum_res(0)$0" -> "sum(0)"	[label=pivot_table];
-	"sum_res(0)$0" -> "[<_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532670>](0)"	[label=pivot_table];
+	"sum_res(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f1220>, <_ast.Constant object at 0x7fd4c04f1c70>](0)"	[label=pivot_table];
 	"sum(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532670>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f1220>, <_ast.Constant object at 0x7fd4c04f1c70>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"mean_res(0)$0" -> "pd(0)"	[label=pivot_table];
 	"mean_res(0)$0" -> "res(0)$0"	[label=pivot_table];
 	"mean_res(0)$0" -> "mean(0)"	[label=pivot_table];
-	"mean_res(0)$0" -> "[<_ast.Constant object at 0x130532640>, <_ast.Constant object at 0x130532760>](0)"	[label=pivot_table];
+	"mean_res(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f1a90>, <_ast.Constant object at 0x7fd4c04f1ac0>](0)"	[label=pivot_table];
 	"mean(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532640>, <_ast.Constant object at 0x130532760>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f1a90>, <_ast.Constant object at 0x7fd4c04f1ac0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"median_res(0)$0" -> "pd(0)"	[label=pivot_table];
 	"median_res(0)$0" -> "res(0)$0"	[label=pivot_table];
 	"median_res(0)$0" -> "median(0)"	[label=pivot_table];
-	"median_res(0)$0" -> "[<_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4ffd0>](0)"	[label=pivot_table];
+	"median_res(0)$0" -> "[<_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999ee0>](0)"	[label=pivot_table];
 	"median(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4ffd0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999ee0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"df(0)$1" -> "pd(0)"	[label=merge];
 	"df(0)$1" -> "sum_res(0)$0"	[label=merge];
 	"df(0)$1" -> "df(0)$1"	[label=merge];
@@ -165,22 +165,22 @@ digraph "" {
 	"df(0)$3" -> "_median(0)"	[label=merge];
 	"_mean(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"_median(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
-object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4f730>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"cat_feature(0)$0" -> "[<_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
-object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4f730>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant object at 0x7fd5009996a0>, <_\
+ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999460>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"cat_feature(0)$0" -> "[<_ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant object at 0x7fd5009996a0>, <_\
+ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999460>](0)"	[label=assignedFrom];
 	"project_is_approved(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"target(0)$0" -> "project_is_approved(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989eb0>, <_ast.Constant object at 0x12f989e50>, <_ast.Constant object at 0x12f989f10>, <_ast.Constant \
-object at 0x12f989a00>, <_ast.Constant object at 0x12f989f70>, <_ast.Constant object at 0x12f989ee0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"text_feature(0)$0" -> "[<_ast.Constant object at 0x12f989eb0>, <_ast.Constant object at 0x12f989e50>, <_ast.Constant object at 0x12f989f10>, <_ast.Constant \
-object at 0x12f989a00>, <_ast.Constant object at 0x12f989f70>, <_ast.Constant object at 0x12f989ee0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x12f989df0>, <_ast.Constant object at 0x12f989af0>, <_ast.Constant \
-object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f989fd0>, <_ast.Constant object at 0x12f989c70>](\
-0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"real_feature(0)$0" -> "[<_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x12f989df0>, <_ast.Constant object at 0x12f989af0>, <_ast.Constant \
-object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f989fd0>, <_ast.Constant object at 0x12f989c70>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999d90>, <_\
+ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff070>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"text_feature(0)$0" -> "[<_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999d90>, <_\
+ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff070>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff040>, <_\
+ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant \
+object at 0x7fd4c04fff70>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"real_feature(0)$0" -> "[<_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff040>, <_\
+ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant \
+object at 0x7fd4c04fff70>](0)"	[label=assignedFrom];
 	"i(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"i(0)" -> "cat_feature(0)$0"	[label=iteratorOf];
 	"df(0)$4" -> "pd(0)"	[label=assignedFrom];
@@ -323,8 +323,8 @@ object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant ob
 	"2(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"flat3(0)$0" -> "Flatten(0)"	[label=assignedFrom];
 	"flat3(0)$0" -> "pool3(0)$0"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12fade910>, <_ast.Name object at 0x12fade5e0>, <_ast.Name object at 0x12fade640>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"merged(0)$0" -> "[<_ast.Name object at 0x12fade910>, <_ast.Name object at 0x12fade5e0>, <_ast.Name object at 0x12fade640>](0)"	[label=concatenate];
+	"[<_ast.Name object at 0x7fd4c04ac790>, <_ast.Name object at 0x7fd4c04ac7c0>, <_ast.Name object at 0x7fd4c04ac7f0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"merged(0)$0" -> "[<_ast.Name object at 0x7fd4c04ac790>, <_ast.Name object at 0x7fd4c04ac7c0>, <_ast.Name object at 0x7fd4c04ac7f0>](0)"	[label=concatenate];
 	"dense1(0)$0" -> "Dense(0)"	[label=assignedFrom];
 	"dense1(0)$0" -> "relu(0)"	[label=assignedFrom];
 	"dense1(0)$0" -> "merged(0)$0"	[label=assignedFrom];
@@ -340,9 +340,9 @@ object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant ob
 	"outputs(0)$0" -> "dense2(0)$0"	[label=assignedFrom];
 	"outputs(0)$0" -> "sigmoid(0)"	[label=assignedFrom];
 	"sigmoid(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9a3250>, <_ast.Name object at 0x12f9a3280>, <_ast.Name object at 0x12f9a32b0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04acf10>, <_ast.Name object at 0x7fd4c04acf40>, <_ast.Name object at 0x7fd4c04acf70>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "outputs(0)$0"	[label=Model];
-	"model(0)$0" -> "[<_ast.Name object at 0x12f9a3250>, <_ast.Name object at 0x12f9a3280>, <_ast.Name object at 0x12f9a32b0>](0)"	[label=Model];
+	"model(0)$0" -> "[<_ast.Name object at 0x7fd4c04acf10>, <_ast.Name object at 0x7fd4c04acf40>, <_ast.Name object at 0x7fd4c04acf70>](0)"	[label=Model];
 	"model(0)$1" -> "model(0)$0"	[label=summary];
 	"y_true(3)" -> "auc[0]"	[label=_argToVar];
 	"y_pred(3)" -> "auc[1]"	[label=_argToVar];
@@ -366,7 +366,7 @@ object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant ob
 	"pfas(3)$0" -> "binary_PFA(3)"	[label=stack];
 	"pfas(3)$1" -> "tf(3)"	[label=concat];
 	"pfas(3)$1" -> "0(3)"	[label=concat];
-	"pfas(3)$1" -> "[<_ast.Call object at 0x12f9a3f10>, <_ast.Name object at 0x12f89f040>](3)"	[label=concat];
+	"pfas(3)$1" -> "[<_ast.Call object at 0x7fd4c04a8c10>, <_ast.Name object at 0x7fd4c04a8d00>](3)"	[label=concat];
 	"binSizes(3)$0" -> "1(3)"	[label=assignedFrom];
 	"binSizes(3)$0" -> "pfas(3)$1"	[label=assignedFrom];
 	"s(3)$0" -> "ptas(3)$0"	[label=Mult];
@@ -401,13 +401,13 @@ object at 0x12f989970>, <_ast.Constant object at 0x12f989f40>, <_ast.Constant ob
 	"batch_size(0)$0" -> "1000(0)"	[label=assignedFrom];
 	"model(0)$3" -> "y(0)$0"	[label=fit];
 	"model(0)$3" -> "model(0)$2"	[label=fit];
-	"model(0)$3" -> "[<_ast.Name object at 0x12f87aa90>, <_ast.Name object at 0x12f87aac0>, <_ast.Name object at 0x12f87aaf0>](0)"	[label=fit];
-	"[<_ast.Name object at 0x12f87aa90>, <_ast.Name object at 0x12f87aac0>, <_ast.Name object at 0x12f87aaf0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"model(0)$3" -> "[<_ast.Name object at 0x7fd500810790>, <_ast.Name object at 0x7fd5008107c0>, <_ast.Name object at 0x7fd5008107f0>](0)"	[label=fit];
+	"[<_ast.Name object at 0x7fd500810790>, <_ast.Name object at 0x7fd5008107c0>, <_ast.Name object at 0x7fd5008107f0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"submit(0)$0" -> "1(0)"	[label=predict];
 	"submit(0)$0" -> "batch_size(0)$0"	[label=predict];
 	"submit(0)$0" -> "model(0)$3"	[label=predict];
-	"submit(0)$0" -> "[<_ast.Name object at 0x12f87ae50>, <_ast.Name object at 0x12f87ae80>, <_ast.Name object at 0x12f87aeb0>](0)"	[label=predict];
-	"[<_ast.Name object at 0x12f87ae50>, <_ast.Name object at 0x12f87ae80>, <_ast.Name object at 0x12f87aeb0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
+	"submit(0)$0" -> "[<_ast.Name object at 0x7fd500810b50>, <_ast.Name object at 0x7fd500810b80>, <_ast.Name object at 0x7fd500810bb0>](0)"	[label=predict];
+	"[<_ast.Name object at 0x7fd500810b50>, <_ast.Name object at 0x7fd500810b80>, <_ast.Name object at 0x7fd500810bb0>](0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "beginner-s-guide-nn-with-multichannel-input.ipynb"	[label=appearsIn];

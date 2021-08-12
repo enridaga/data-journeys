@@ -34,22 +34,9 @@ digraph "" {
 	ImageFilter -> PIL	[label=importedBy];
 	"ImageFilter(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"ImageFilter(0)" -> ImageFilter	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "lr:(0)"	[label=print];
-	"print[0]" -> "Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)"	[label=print];
-	"lr:(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
-	"Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"print[14/0]" -> "os(0)"	[label=print];
+	"print[14/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "scheduler(0)$0"	[label=print];
-	"print[1]" -> "epoch(0)"	[label=print];
-	"scheduler(0)$0" -> "torch(0)"	[label=StepLR];
-	"scheduler(0)$0" -> "0.1(0)"	[label=StepLR];
-	"scheduler(0)$0" -> "optimizer(0)$0"	[label=StepLR];
-	"scheduler(0)$0" -> "5(0)"	[label=StepLR];
-	"epoch(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
-	"epoch(0)" -> "n_epochs(0)$0"	[label=iteratorOf];
-	"epoch(0)" -> "range(0)"	[label=iteratorOf];
 	"sklearn.model_selection" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
@@ -126,8 +113,6 @@ digraph "" {
 	"EfficientNet(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"EfficientNet(0)" -> EfficientNet	[label=assignedFrom];
 	"seed(1)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "1234(0)"	[label=seed_everything];
-	"1234(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"random(1)$0" -> "seed(1)"	[label=seed];
 	"random(1)$0" -> "random(1)"	[label=seed];
 	"os(1)$0" -> "seed(1)"	[label=str];
@@ -142,6 +127,8 @@ digraph "" {
 	"torch(1)$2" -> "True(1)"	[label=assignedFrom];
 	"1(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"num_classes(0)$0" -> "1(0)"	[label=assignedFrom];
+	"1234(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"seed_everything[44/0]" -> "1234(0)"	[label=seed_everything];
 	"0.001(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"lr(0)$0" -> "0.001(0)"	[label=assignedFrom];
 	"256(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
@@ -167,9 +154,6 @@ digraph "" {
 	"p(2)" -> "expand_path[0]"	[label=_argToVar];
 	"p(2)$0" -> "p(2)"	[label=str];
 	"imgs(3)" -> "p_show[0]"	[label=_argToVar];
-	"p_show[0]" -> "imgs(0)$1"	[label=p_show];
-	"imgs(0)$1" -> "imgs(0)$0"	[label=append];
-	"imgs(0)$1" -> "p(0)"	[label=append];
 	"label_name(3)" -> "p_show[1]"	[label=_argToVar];
 	"per_row(3)" -> "p_show[2]"	[label=_argToVar];
 	"n(3)$0" -> "imgs(3)"	[label=len];
@@ -213,6 +197,9 @@ digraph "" {
 	"imgs(0)$0" -> "[](0)"	[label=assignedFrom];
 	"p(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"p(0)" -> "train_df(0)$2"	[label=iteratorOf];
+	"imgs(0)$1" -> "imgs(0)$0"	[label=append];
+	"imgs(0)$1" -> "p(0)"	[label=append];
+	"p_show[79/0]" -> "imgs(0)$1"	[label=p_show];
 	"img(4)" -> "crop_image1[0]"	[label=_argToVar];
 	"tol(4)" -> "crop_image1[1]"	[label=_argToVar];
 	"mask(4)$0" -> "img(4)"	[label=assignedFrom];
@@ -248,7 +235,7 @@ digraph "" {
 	"img3(5)$0" -> "2(5)"	[label=assignedFrom];
 	"img(5)$0" -> "np(5)"	[label=stack];
 	"img(5)$0" -> "1(5)"	[label=stack];
-	"img(5)$0" -> "[<_ast.Name object at 0x12f8a5040>, <_ast.Name object at 0x12f8a5760>, <_ast.Name object at 0x12f8a5940>](5)"	[label=stack];
+	"img(5)$0" -> "[<_ast.Name object at 0x7fd4c04ccd30>, <_ast.Name object at 0x7fd4c04cce20>, <_ast.Name object at 0x7fd4c04cce80>](5)"	[label=stack];
 	"self(7)" -> "__init__[0]"	[label=_argToVar];
 	"dataframe(7)" -> "__init__[1]"	[label=_argToVar];
 	"transform(7)" -> "__init__[2]"	[label=_argToVar];
@@ -286,10 +273,10 @@ digraph "" {
 	"image(9)$6" -> "self(9)"	[label=transform];
 	"image(9)$6" -> "image(9)$6"	[label=transform];
 	"train_transform(0)$0" -> "transforms(0)"	[label=Compose];
-	"train_transform(0)$0" -> "[<_ast.Call object at 0x12fea0220>, <_ast.Call object at 0x12fea04c0>, <_ast.Call object at 0x12fea0400>, <_ast.Call object at 0x12fea0370>](\
-0)"	[label=Compose];
-	"[<_ast.Call object at 0x12fea0220>, <_ast.Call object at 0x12fea04c0>, <_ast.Call object at 0x12fea0400>, <_ast.Call object at 0x12fea0370>](\
-0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"train_transform(0)$0" -> "[<_ast.Call object at 0x7fd4c04af6a0>, <_ast.Call object at 0x7fd4c04af700>, <_ast.Call object at 0x7fd4c04af250>, <_ast.Call object \
+at 0x7fd4c04ffa60>](0)"	[label=Compose];
+	"[<_ast.Call object at 0x7fd4c04af6a0>, <_ast.Call object at 0x7fd4c04af700>, <_ast.Call object at 0x7fd4c04af250>, <_ast.Call object \
+at 0x7fd4c04ffa60>](0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"trainset(0)$0" -> "train_df(0)$2"	[label=MyDataset];
 	"trainset(0)$0" -> "train_transform(0)$0"	[label=MyDataset];
 	"train_loader(0)$0" -> "torch(0)"	[label=DataLoader];
@@ -327,6 +314,10 @@ digraph "" {
 	"optimizer(0)$0" -> "1e-05(0)"	[label=Adam];
 	"1e-05(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"criterion(0)$0" -> "nn(0)"	[label=MSELoss];
+	"scheduler(0)$0" -> "torch(0)"	[label=StepLR];
+	"scheduler(0)$0" -> "0.1(0)"	[label=StepLR];
+	"scheduler(0)$0" -> "optimizer(0)$0"	[label=StepLR];
+	"scheduler(0)$0" -> "5(0)"	[label=StepLR];
 	"5(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"model(0)$4" -> "amp(0)"	[label=initialize];
 	"model(0)$4" -> "model(0)$4"	[label=initialize];
@@ -388,17 +379,26 @@ digraph "" {
 	"10(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
 	"n_epochs(0)$0" -> "10(0)"	[label=assignedFrom];
 	"range(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
+	"epoch(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"epoch(0)" -> "n_epochs(0)$0"	[label=iteratorOf];
+	"epoch(0)" -> "range(0)"	[label=iteratorOf];
+	"lr:(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"print[187/4]" -> "scheduler(0)$0"	[label=print];
+	"print[187/4]" -> "0(0)"	[label=print];
+	"print[187/4]" -> "lr:(0)"	[label=print];
 	"start_time(0)$0" -> "time(0)"	[label=time];
 	"avg_loss(0)$0" -> "epoch(0)"	[label=train_model];
 	"elapsed_time(0)$0" -> "time(0)"	[label=Sub];
 	"elapsed_time(0)$0" -> "start_time(0)$0"	[label=Sub];
-	"print[3]" -> "n_epochs(0)$0"	[label=print];
-	"print[4]" -> "avg_loss(0)$0"	[label=print];
+	"Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
+	"print[192/4]" -> "1(0)"	[label=print];
+	"print[192/4]" -> "n_epochs(0)$0"	[label=print];
+	"print[192/4]" -> "epoch(0)"	[label=print];
+	"print[192/4]" -> "avg_loss(0)$0"	[label=print];
+	"print[192/4]" -> "elapsed_time(0)$0"	[label=print];
+	"print[192/4]" -> "Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)"	[label=print];
+	"print[192/4]" -> "avg_val_loss(0)"	[label=print];
 	"avg_val_loss(0)" -> "eye-efficientnet-pytorch-lb-0-777.ipynb"	[label=appearsIn];
-	"print[5]" -> "avg_val_loss(0)"	[label=print];
-	"print[6]" -> "elapsed_time(0)$0"	[label=print];
 	"best_avg_loss(0)$1" -> "avg_val_loss(0)"	[label=assignedFrom];
 	"torch(0)$0" -> "torch(0)"	[label=save];
 	"torch(0)$0" -> "model(0)$4"	[label=save];

@@ -217,25 +217,9 @@ digraph "" {
 	os -> "eda-and-lstm-cnn.ipynb"	[label=importedBy];
 	"os(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Available embeddings:(0)"	[label=print];
-	"print[0]" -> "Average word length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average word length of questions in test is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Max word length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Max word length of questions in test is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average character length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average character length of questions in test is {0:.0f}.(0)"	[label=print];
-	"Available embeddings:(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Average word length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Average word length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Max word length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Max word length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Average character length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"Average character length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[40/0]" -> "os(0)"	[label=print];
+	"print[40/0]" -> "../input/embeddings/glove.840B.300d/(0)"	[label=print];
 	"../input/embeddings/glove.840B.300d/(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "os(0)"	[label=print];
-	"print[1]" -> "../input/embeddings/glove.840B.300d/(0)"	[label=print];
 	"train(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
@@ -245,18 +229,58 @@ digraph "" {
 	"sub(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"sub(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"Available embeddings:(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[45/0]" -> "os(0)"	[label=print];
+	"print[45/0]" -> "Available embeddings:(0)"	[label=print];
+	"print[45/0]" -> "../input/embeddings/(0)"	[label=print];
 	"../input/embeddings/(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"print[2]" -> "test(0)$0"	[label=print];
-	"print[2]" -> "../input/embeddings/(0)"	[label=print];
-	"print[2]" -> "train(0)$2"	[label=print];
-	"train(0)$2" -> "train(0)$1"	[label=head];
 	"train(0)$1" -> "train(0)$0"	[label=value_counts];
+	"train(0)$2" -> "train(0)$1"	[label=head];
+	"Average word length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[48/0]" -> "np(0)"	[label=print];
+	"print[48/0]" -> "train(0)$2"	[label=print];
+	"print[48/0]" -> "Average word length of questions in train is {0:.0f}.(0)"	[label=print];
+	"print[48/0]" -> "question_text(0)"	[label=print];
+	"print[48/0]" -> "len(0)"	[label=print];
+	"print[48/0]" -> "x(0)"	[label=print];
 	"question_text(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"print[3]" -> "question_text(0)"	[label=print];
 	"len(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"print[4]" -> "len(0)"	[label=print];
 	"x(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"print[5]" -> "x(0)"	[label=print];
+	"Average word length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[49/0]" -> "np(0)"	[label=print];
+	"print[49/0]" -> "test(0)$0"	[label=print];
+	"print[49/0]" -> "question_text(0)"	[label=print];
+	"print[49/0]" -> "len(0)"	[label=print];
+	"print[49/0]" -> "x(0)"	[label=print];
+	"print[49/0]" -> "Average word length of questions in test is {0:.0f}.(0)"	[label=print];
+	"Max word length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[50/0]" -> "np(0)"	[label=print];
+	"print[50/0]" -> "train(0)$2"	[label=print];
+	"print[50/0]" -> "question_text(0)"	[label=print];
+	"print[50/0]" -> "len(0)"	[label=print];
+	"print[50/0]" -> "x(0)"	[label=print];
+	"print[50/0]" -> "Max word length of questions in train is {0:.0f}.(0)"	[label=print];
+	"Max word length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[51/0]" -> "np(0)"	[label=print];
+	"print[51/0]" -> "test(0)$0"	[label=print];
+	"print[51/0]" -> "question_text(0)"	[label=print];
+	"print[51/0]" -> "len(0)"	[label=print];
+	"print[51/0]" -> "x(0)"	[label=print];
+	"print[51/0]" -> "Max word length of questions in test is {0:.0f}.(0)"	[label=print];
+	"Average character length of questions in train is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[52/0]" -> "np(0)"	[label=print];
+	"print[52/0]" -> "train(0)$2"	[label=print];
+	"print[52/0]" -> "question_text(0)"	[label=print];
+	"print[52/0]" -> "len(0)"	[label=print];
+	"print[52/0]" -> "x(0)"	[label=print];
+	"print[52/0]" -> "Average character length of questions in train is {0:.0f}.(0)"	[label=print];
+	"Average character length of questions in test is {0:.0f}.(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"print[53/0]" -> "np(0)"	[label=print];
+	"print[53/0]" -> "test(0)$0"	[label=print];
+	"print[53/0]" -> "question_text(0)"	[label=print];
+	"print[53/0]" -> "len(0)"	[label=print];
+	"print[53/0]" -> "x(0)"	[label=print];
+	"print[53/0]" -> "Average character length of questions in test is {0:.0f}.(0)"	[label=print];
 	"90000(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
 	"max_features(0)$0" -> "90000(0)"	[label=assignedFrom];
 	"True(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
@@ -366,7 +390,7 @@ digraph "" {
 	"x(2)$0" -> "Embedding(2)"	[label=assignedFrom];
 	"x(2)$0" -> "max_features(2)"	[label=assignedFrom];
 	"x(2)$0" -> "embed_size(2)"	[label=assignedFrom];
-	"x(2)$0" -> "[<_ast.Name object at 0x12fc4f520>](2)"	[label=assignedFrom];
+	"x(2)$0" -> "[<_ast.Name object at 0x7fd4c04ff700>](2)"	[label=assignedFrom];
 	"x(2)$0" -> "False(2)"	[label=assignedFrom];
 	"x1(2)$0" -> "spatial_dr(2)"	[label=assignedFrom];
 	"x1(2)$0" -> "x(2)$0"	[label=assignedFrom];
@@ -421,9 +445,9 @@ digraph "" {
 	"avg_pool2_lstm(2)$0" -> "x_conv4(2)$0"	[label=assignedFrom];
 	"max_pool2_lstm(2)$0" -> "GlobalMaxPooling1D(2)"	[label=assignedFrom];
 	"max_pool2_lstm(2)$0" -> "x_conv4(2)$0"	[label=assignedFrom];
-	"x(2)$1" -> "[<_ast.Name object at 0x12f8b76d0>, <_ast.Name object at 0x12f8b76a0>, <_ast.Name object at 0x12f8b7070>, <_ast.Name object at 0x12f8b7670>, <_\
-ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name object at 0x12f8b71f0>, <_ast.Name object at 0x12f8b7250>](\
-2)"	[label=concatenate];
+	"x(2)$1" -> "[<_ast.Name object at 0x7fd4d059ef10>, <_ast.Name object at 0x7fd4d059ee80>, <_ast.Name object at 0x7fd4d059e460>, <_ast.Name object \
+at 0x7fd4d057da90>, <_ast.Name object at 0x7fd4d057d190>, <_ast.Name object at 0x7fd4d057d250>, <_ast.Name object at 0x7fd4d057d2b0>, <_\
+ast.Name object at 0x7fd4d057d280>](2)"	[label=concatenate];
 	"x(2)$2" -> "x(2)$2"	[label=assignedFrom];
 	"x(2)$2" -> "BatchNormalization(2)"	[label=assignedFrom];
 	"x(2)$3" -> "dense_units(2)"	[label=assignedFrom];
@@ -457,7 +481,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(2)$0" -> "y_ohe(2)"	[label=fit];
 	"history(2)$0" -> "512(2)"	[label=fit];
 	"history(2)$0" -> "0.1(2)"	[label=fit];
-	"history(2)$0" -> "[<_ast.Name object at 0x12f890a30>, <_ast.Name object at 0x12f890a60>](2)"	[label=fit];
+	"history(2)$0" -> "[<_ast.Name object at 0x7fd4d05a4850>, <_ast.Name object at 0x7fd4d05a4490>](2)"	[label=fit];
 	"model(2)$3" -> "file_path(2)$0"	[label=load_model];
 	"0.0001(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "0.0001(0)"	[label=build_model];
@@ -502,7 +526,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"x(3)$0" -> "Embedding(3)"	[label=assignedFrom];
 	"x(3)$0" -> "max_features(3)"	[label=assignedFrom];
 	"x(3)$0" -> "embed_size(3)"	[label=assignedFrom];
-	"x(3)$0" -> "[<_ast.Name object at 0x12f880160>](3)"	[label=assignedFrom];
+	"x(3)$0" -> "[<_ast.Name object at 0x7fd4c04ade20>](3)"	[label=assignedFrom];
 	"x(3)$0" -> "False(3)"	[label=assignedFrom];
 	"x1(3)$0" -> "spatial_dr(3)"	[label=assignedFrom];
 	"x1(3)$0" -> "x(3)$0"	[label=assignedFrom];
@@ -532,8 +556,8 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"avg_pool2_gru(3)$0" -> "x_conv2(3)$0"	[label=assignedFrom];
 	"max_pool2_gru(3)$0" -> "GlobalMaxPooling1D(3)"	[label=assignedFrom];
 	"max_pool2_gru(3)$0" -> "x_conv2(3)$0"	[label=assignedFrom];
-	"x(3)$1" -> "[<_ast.Name object at 0x12f8a1190>, <_ast.Name object at 0x12f8a11c0>, <_ast.Name object at 0x12f8a11f0>, <_ast.Name object at 0x12f8a1220>](\
-3)"	[label=concatenate];
+	"x(3)$1" -> "[<_ast.Name object at 0x7fd4c04aae50>, <_ast.Name object at 0x7fd4c04aae80>, <_ast.Name object at 0x7fd4c04aaeb0>, <_ast.Name object \
+at 0x7fd4c04aaee0>](3)"	[label=concatenate];
 	"x(3)$2" -> "x(3)$2"	[label=assignedFrom];
 	"x(3)$2" -> "BatchNormalization(3)"	[label=assignedFrom];
 	"x(3)$3" -> "dense_units(3)"	[label=assignedFrom];
@@ -567,7 +591,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(3)$0" -> "y_ohe(3)"	[label=fit];
 	"history(3)$0" -> "512(3)"	[label=fit];
 	"history(3)$0" -> "0.1(3)"	[label=fit];
-	"history(3)$0" -> "[<_ast.Name object at 0x12f8a67f0>, <_ast.Name object at 0x12f8a6820>](3)"	[label=fit];
+	"history(3)$0" -> "[<_ast.Name object at 0x7fd4d05a04f0>, <_ast.Name object at 0x7fd4d05a0520>](3)"	[label=fit];
 	"model(3)$3" -> "file_path(3)$0"	[label=load_model];
 	"lr(4)" -> "build_model2[0]"	[label=_argToVar];
 	"lr_d(4)" -> "build_model2[1]"	[label=_argToVar];
@@ -594,7 +618,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"x(4)$0" -> "Embedding(4)"	[label=assignedFrom];
 	"x(4)$0" -> "max_features(4)"	[label=assignedFrom];
 	"x(4)$0" -> "embed_size(4)"	[label=assignedFrom];
-	"x(4)$0" -> "[<_ast.Name object at 0x12f8a2820>](4)"	[label=assignedFrom];
+	"x(4)$0" -> "[<_ast.Name object at 0x7fd4d0574520>](4)"	[label=assignedFrom];
 	"x(4)$0" -> "False(4)"	[label=assignedFrom];
 	"x1(4)$0" -> "spatial_dr(4)"	[label=assignedFrom];
 	"x1(4)$0" -> "x(4)$0"	[label=assignedFrom];
@@ -630,8 +654,8 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"avg_pool2_gru(4)$0" -> "x_conv2(4)$0"	[label=assignedFrom];
 	"max_pool2_gru(4)$0" -> "GlobalMaxPooling1D(4)"	[label=assignedFrom];
 	"max_pool2_gru(4)$0" -> "x_conv2(4)$0"	[label=assignedFrom];
-	"x(4)$1" -> "[<_ast.Name object at 0x12f89baf0>, <_ast.Name object at 0x12f89bb20>, <_ast.Name object at 0x12f89bb50>, <_ast.Name object at 0x12f89bbb0>](\
-4)"	[label=concatenate];
+	"x(4)$1" -> "[<_ast.Name object at 0x7fd4d05987f0>, <_ast.Name object at 0x7fd4d0598820>, <_ast.Name object at 0x7fd4d0598850>, <_ast.Name object \
+at 0x7fd4d0598880>](4)"	[label=concatenate];
 	"x(4)$2" -> "x(4)$2"	[label=assignedFrom];
 	"x(4)$2" -> "BatchNormalization(4)"	[label=assignedFrom];
 	"x(4)$3" -> "dense_units(4)"	[label=assignedFrom];
@@ -665,7 +689,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(4)$0" -> "y_ohe(4)"	[label=fit];
 	"history(4)$0" -> "512(4)"	[label=fit];
 	"history(4)$0" -> "0.1(4)"	[label=fit];
-	"history(4)$0" -> "[<_ast.Name object at 0x12f89c190>, <_ast.Name object at 0x12f89c1c0>](4)"	[label=fit];
+	"history(4)$0" -> "[<_ast.Name object at 0x7fd4d0573ee0>, <_ast.Name object at 0x7fd4d0573c10>](4)"	[label=fit];
 	"model(4)$3" -> "file_path(4)$0"	[label=load_model];
 	"model4(0)$0" -> "0.0001(0)"	[label=build_model2];
 	"model4(0)$0" -> "64(0)"	[label=build_model2];
@@ -779,7 +803,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"x(11)$0" -> "max_features(11)"	[label=assignedFrom];
 	"x(11)$0" -> "1(11)"	[label=assignedFrom];
 	"x(11)$0" -> "embed_size(11)"	[label=assignedFrom];
-	"x(11)$0" -> "[<_ast.Name object at 0x12f8c0700>](11)"	[label=assignedFrom];
+	"x(11)$0" -> "[<_ast.Name object at 0x7fd5008369d0>](11)"	[label=assignedFrom];
 	"x(11)$0" -> "False(11)"	[label=assignedFrom];
 	"x1(11)$0" -> "spatial_dr(11)"	[label=assignedFrom];
 	"x1(11)$0" -> "x(11)$0"	[label=assignedFrom];
@@ -843,10 +867,10 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(0)$0" -> "model6(0)$0"	[label=fit];
 	"history(0)$0" -> "512(0)"	[label=fit];
 	"history(0)$0" -> "10(0)"	[label=fit];
-	"history(0)$0" -> "[<_ast.Name object at 0x12f8c6340>, <_ast.Name object at 0x12f8c6370>](0)"	[label=fit];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd500830040>, <_ast.Name object at 0x7fd500830070>](0)"	[label=fit];
 	"512(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
 	"10(0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8c6340>, <_ast.Name object at 0x12f8c6370>](0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500830040>, <_ast.Name object at 0x7fd500830070>](0)" -> "eda-and-lstm-cnn.ipynb"	[label=appearsIn];
 	"lr(12)" -> "build_model4[0]"	[label=_argToVar];
 	"lr_d(12)" -> "build_model4[1]"	[label=_argToVar];
 	"units(12)" -> "build_model4[2]"	[label=_argToVar];
@@ -872,7 +896,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"x(12)$0" -> "Embedding(12)"	[label=assignedFrom];
 	"x(12)$0" -> "max_features(12)"	[label=assignedFrom];
 	"x(12)$0" -> "embed_size(12)"	[label=assignedFrom];
-	"x(12)$0" -> "[<_ast.Name object at 0x12f8d01f0>](12)"	[label=assignedFrom];
+	"x(12)$0" -> "[<_ast.Name object at 0x7fd500830ee0>](12)"	[label=assignedFrom];
 	"x(12)$0" -> "False(12)"	[label=assignedFrom];
 	"x1(12)$0" -> "spatial_dr(12)"	[label=assignedFrom];
 	"x1(12)$0" -> "x(12)$0"	[label=assignedFrom];
@@ -892,7 +916,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"avg_pool1_gru(12)$0" -> "GlobalAveragePooling1D(12)"	[label=assignedFrom];
 	"max_pool1_gru(12)$0" -> "x_conv1(12)$0"	[label=assignedFrom];
 	"max_pool1_gru(12)$0" -> "GlobalMaxPooling1D(12)"	[label=assignedFrom];
-	"x(12)$1" -> "[<_ast.Name object at 0x12f8d0ca0>, <_ast.Name object at 0x12f8d0cd0>](12)"	[label=concatenate];
+	"x(12)$1" -> "[<_ast.Name object at 0x7fd500817a00>, <_ast.Name object at 0x7fd500817a30>](12)"	[label=concatenate];
 	"x(12)$2" -> "x(12)$2"	[label=assignedFrom];
 	"x(12)$2" -> "BatchNormalization(12)"	[label=assignedFrom];
 	"x(12)$3" -> "dense_units(12)"	[label=assignedFrom];
@@ -918,7 +942,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(12)$0" -> "y_ohe(12)"	[label=fit];
 	"history(12)$0" -> "512(12)"	[label=fit];
 	"history(12)$0" -> "0.1(12)"	[label=fit];
-	"history(12)$0" -> "[<_ast.Name object at 0x12f8ccf40>, <_ast.Name object at 0x12f8ccf70>](12)"	[label=fit];
+	"history(12)$0" -> "[<_ast.Name object at 0x7fd500822c40>, <_ast.Name object at 0x7fd500822c70>](12)"	[label=fit];
 	"model(12)$3" -> "file_path(12)$0"	[label=load_model];
 	"model7(0)$0" -> "0.0001(0)"	[label=build_model4];
 	"model7(0)$0" -> "64(0)"	[label=build_model4];
@@ -958,7 +982,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"x(13)$0" -> "Embedding(13)"	[label=assignedFrom];
 	"x(13)$0" -> "max_features(13)"	[label=assignedFrom];
 	"x(13)$0" -> "embed_size(13)"	[label=assignedFrom];
-	"x(13)$0" -> "[<_ast.Name object at 0x12f8b3880>](13)"	[label=assignedFrom];
+	"x(13)$0" -> "[<_ast.Name object at 0x7fd50081f580>](13)"	[label=assignedFrom];
 	"x(13)$0" -> "False(13)"	[label=assignedFrom];
 	"x1(13)$0" -> "spatial_dr(13)"	[label=assignedFrom];
 	"x1(13)$0" -> "x(13)$0"	[label=assignedFrom];
@@ -993,7 +1017,7 @@ ast.Name object at 0x12f8b70a0>, <_ast.Name object at 0x12f8b70d0>, <_ast.Name o
 	"history(13)$0" -> "X_train(13)"	[label=fit];
 	"history(13)$0" -> "y_ohe(13)"	[label=fit];
 	"history(13)$0" -> "512(13)"	[label=fit];
-	"history(13)$0" -> "[<_ast.Name object at 0x12f8e5f70>, <_ast.Name object at 0x12f8e5fa0>, <_ast.Name object at 0x12f8e5fd0>](13)"	[label=fit];
+	"history(13)$0" -> "[<_ast.Name object at 0x7fd50081cca0>, <_ast.Name object at 0x7fd50081c9a0>, <_ast.Name object at 0x7fd50081ccd0>](13)"	[label=fit];
 	"model(13)$3" -> "file_path(13)$0"	[label=load_model];
 	"pred1(0)$0" -> "X_test(0)$0"	[label=predict];
 	"pred1(0)$0" -> "1(0)"	[label=predict];

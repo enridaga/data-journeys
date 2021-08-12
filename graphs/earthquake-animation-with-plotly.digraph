@@ -22,7 +22,7 @@ digraph "" {
 	"py(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"py(0)" -> plotly	[label=assignedFrom];
 	"True(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "True(0)"	[label=init_notebook_mode];
+	"init_notebook_mode[12/0]" -> "True(0)"	[label=init_notebook_mode];
 	"plotly.graph_objs" -> "earthquake-animation-with-plotly.ipynb"	[label=importedBy];
 	"go(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"go(0)" -> "plotly.graph_objs"	[label=assignedFrom];
@@ -35,15 +35,15 @@ digraph "" {
 	os -> "earthquake-animation-with-plotly.ipynb"	[label=importedBy];
 	"os(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
+	"print[19/0]" -> "os(0)"	[label=print];
+	"print[19/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
 	"data(0)$0" -> "pd(0)"	[label=read_csv];
 	"data(0)$0" -> "../input/database.csv(0)"	[label=read_csv];
 	"../input/database.csv(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=drop];
-	"data(0)$1" -> "[<_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12faded30>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12faded30>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ccfa0>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cc670>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04ccfa0>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cc670>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"int(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"data(0)$2" -> "data(0)$1"	[label=assignedFrom];
 	"data(0)$2" -> "int(0)"	[label=assignedFrom];
@@ -59,12 +59,12 @@ digraph "" {
 	"data(0)$3" -> "data(0)$2"	[label=head];
 	"data(0)$4" -> "data(0)$3"	[label=unique];
 	"dataset(0)$0" -> "data(0)$4"	[label=assignedFrom];
-	"dataset(0)$0" -> "[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f989f10>, <_ast.Constant object at 0x12f989e80>, <_ast.Constant \
-object at 0x12f989eb0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant object at 0x12f989fa0>, <_ast.Constant object at 0x12f989c10>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989f40>, <_ast.Constant object at 0x12f989f10>, <_ast.Constant object at 0x12f989e80>, <_ast.Constant \
-object at 0x12f989eb0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant object at 0x12f989fa0>, <_ast.Constant object at 0x12f989c10>](\
-0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"dataset(0)$0" -> "[<_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048ea90>, <_\
+ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object at 0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant \
+object at 0x7fd4c048ef40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048ea90>, <_\
+ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object at 0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant \
+object at 0x7fd4c048ef40>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"dataset(0)$1" -> "dataset(0)$0"	[label=head];
 	"str(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"years(0)$0" -> "each(0)"	[label=assignedFrom];
@@ -72,10 +72,10 @@ object at 0x12f989eb0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant ob
 	"years(0)$0" -> "str(0)"	[label=assignedFrom];
 	"years(0)$0" -> "list(0)"	[label=assignedFrom];
 	"list(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5d60>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant \
-object at 0x12f8f5af0>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"types(0)$0" -> "[<_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5d60>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant \
-object at 0x12f8f5af0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object at 0x7fd5009999a0>, <_\
+ast.Constant object at 0x7fd500999b80>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"types(0)$0" -> "[<_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object at 0x7fd5009999a0>, <_\
+ast.Constant object at 0x7fd500999b80>](0)"	[label=assignedFrom];
 	"Earthquake(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"custom_colors(0)$0" -> "Earthquake(0)"	[label=assignedFrom];
 	"custom_colors(0)$0" -> "Nuclear Explosion(0)"	[label=assignedFrom];
@@ -123,19 +123,19 @@ object at 0x12f8f5af0>](0)"	[label=assignedFrom];
 	"figure(0)$3" -> "plotlycommand(0)"	[label=assignedFrom];
 	"figure(0)$3" -> "values(0)"	[label=assignedFrom];
 	"figure(0)$3" -> "visible(0)"	[label=assignedFrom];
-	"figure(0)$3" -> "[<_ast.Constant object at 0x12f85e850>, <_ast.Dict object at 0x12f85edc0>](0)"	[label=assignedFrom];
+	"figure(0)$3" -> "[<_ast.Constant object at 0x7fd4902ab460>, <_ast.Dict object at 0x7fd4902abb20>](0)"	[label=assignedFrom];
 	"figure(0)$3" -> "1965(0)"	[label=assignedFrom];
 	"figure(0)$3" -> "animate(0)"	[label=assignedFrom];
 	"initialValue(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"plotlycommand(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"values(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"visible(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e850>, <_ast.Dict object at 0x12f85edc0>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab460>, <_ast.Dict object at 0x7fd4902abb20>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"1965(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"animate(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"[<_ast.Dict object at 0x12f85eca0>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"[<_ast.Dict object at 0x7fd4902abe80>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"figure(0)$4" -> "figure(0)$3"	[label=assignedFrom];
-	"figure(0)$4" -> "[<_ast.Dict object at 0x12f85eca0>](0)"	[label=assignedFrom];
+	"figure(0)$4" -> "[<_ast.Dict object at 0x7fd4902abe80>](0)"	[label=assignedFrom];
 	"active(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"sliders_dict(0)$0" -> "True(0)"	[label=assignedFrom];
 	"sliders_dict(0)$0" -> "0(0)"	[label=assignedFrom];
@@ -267,18 +267,18 @@ object at 0x12f8f5af0>](0)"	[label=assignedFrom];
 	"slider_step(0)$0" -> "year(0)$0"	[label=assignedFrom];
 	"slider_step(0)$0" -> "label(0)"	[label=assignedFrom];
 	"slider_step(0)$0" -> "method(0)"	[label=assignedFrom];
-	"slider_step(0)$0" -> "[<_ast.List object at 0x12fc3d3a0>, <_ast.Dict object at 0x12fc3d610>](0)"	[label=assignedFrom];
+	"slider_step(0)$0" -> "[<_ast.List object at 0x7fd50080d040>, <_ast.Dict object at 0x7fd50080d0a0>](0)"	[label=assignedFrom];
 	"label(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"method(0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
-	"[<_ast.List object at 0x12fc3d3a0>, <_ast.Dict object at 0x12fc3d610>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd50080d040>, <_ast.Dict object at 0x7fd50080d0a0>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"sliders_dict(0)$1" -> "sliders_dict(0)$0"	[label=append];
 	"sliders_dict(0)$1" -> "slider_step(0)$0"	[label=append];
 	"figure(0)$7" -> "True(0)"	[label=assignedFrom];
 	"figure(0)$7" -> "figure(0)$6"	[label=assignedFrom];
 	"figure(0)$8" -> "Earthquake(0)"	[label=assignedFrom];
 	"figure(0)$8" -> "figure(0)$7"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12fc3df40>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50080dc40>](0)" -> "earthquake-animation-with-plotly.ipynb"	[label=appearsIn];
 	"figure(0)$9" -> "figure(0)$8"	[label=assignedFrom];
-	"figure(0)$9" -> "[<_ast.Name object at 0x12fc3df40>](0)"	[label=assignedFrom];
-	"iplot[0]" -> "figure(0)$9"	[label=iplot];
+	"figure(0)$9" -> "[<_ast.Name object at 0x7fd50080dc40>](0)"	[label=assignedFrom];
+	"iplot[176/0]" -> "figure(0)$9"	[label=iplot];
 }

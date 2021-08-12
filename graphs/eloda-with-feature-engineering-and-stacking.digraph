@@ -58,8 +58,8 @@ digraph "" {
 	"xgb(0)" -> xgboost	[label=assignedFrom];
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x12f8f5430>, <_ast.Constant object at 0x12f8f54f0>, <_ast.Constant object at 0x12f8f5460>, <_ast.Constant \
-object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d30>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f0e50>, <_\
+ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0190>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -94,93 +94,38 @@ object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant ob
 	"end_mem(1)$0" -> "1024(1)"	[label=Div];
 	"end_mem(1)$0" -> "2(1)"	[label=Div];
 	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "{} observations and {} features in train set.(0)"	[label=print];
-	"print[0]" -> "{} observations and {} features in test set.(0)"	[label=print];
-	"print[0]" -> "train(0)$12"	[label=print];
-	"print[0]" -> "test(0)$8"	[label=print];
-	"print[0]" -> "fold n°{}(0)"	[label=print];
-	"print[0]" -> "-(0)"	[label=print];
-	"print[0]" -> "Fold {}(0)"	[label=print];
-	"print[0]" -> "CV score: {:<8.5f}(0)"	[label=print];
-	"print[0]" -> "xgb (0)"	[label=print];
+	"print[48/16]" -> "start_mem(1)$0"	[label=print];
+	"print[48/16]" -> "end_mem(1)$0"	[label=print];
+	"print[48/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[48/16]" -> "100(1)"	[label=print];
+	os -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=importedBy];
 	"os(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"{} observations and {} features in train set.(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"{} observations and {} features in test set.(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"train(0)$12" -> "pd(0)"	[label=merge];
-	"train(0)$12" -> "train(0)$12"	[label=merge];
-	"train(0)$12" -> "auth_mean(0)$2"	[label=merge];
-	"train(0)$12" -> "card_id(0)"	[label=merge];
-	"train(0)$12" -> "left(0)"	[label=merge];
-	"test(0)$8" -> "pd(0)"	[label=merge];
-	"test(0)$8" -> "test(0)$8"	[label=merge];
-	"test(0)$8" -> "auth_mean(0)$2"	[label=merge];
-	"test(0)$8" -> "card_id(0)"	[label=merge];
-	"test(0)$8" -> "left(0)"	[label=merge];
-	"fold n°{}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"-(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"Fold {}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"CV score: {:<8.5f}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"xgb (0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"print[1]" -> "mean_squared_error(0)"	[label=print];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "train(0)$0"	[label=print];
-	"print[1]" -> "test(0)$0"	[label=print];
-	"print[1]" -> "fold_(0)"	[label=print];
-	"print[1]" -> "str(0)"	[label=print];
+	"print[51/0]" -> "os(0)"	[label=print];
+	"print[51/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
-	"train(0)$0" -> "[<_ast.Constant object at 0x12fade250>](0)"	[label=read_csv];
+	"train(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccfd0>](0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccfd0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"test(0)$0" -> "pd(0)"	[label=read_csv];
 	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"test(0)$0" -> "[<_ast.Constant object at 0x12fade8b0>](0)"	[label=read_csv];
-	"fold_(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"fold_(0)" -> "train(0)$13"	[label=iteratorOf];
-	"fold_(0)" -> "folds(0)$0"	[label=iteratorOf];
-	"fold_(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"fold_(0)" -> "outliers(0)"	[label=iteratorOf];
-	"fold_(0)" -> "folds(0)$1"	[label=iteratorOf];
-	"fold_(0)" -> "train(0)$21"	[label=iteratorOf];
-	"fold_(0)" -> "folds(0)$2"	[label=iteratorOf];
-	"fold_(0)" -> "folds(0)$3"	[label=iteratorOf];
-	"fold_(0)" -> "train_stack(0)$0"	[label=iteratorOf];
-	"fold_(0)" -> "folds(0)$4"	[label=iteratorOf];
-	"str(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"print[2]" -> "fold_(0)"	[label=print];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "oof_lgb_3(0)$1"	[label=print];
+	"test(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc1f0>](0)"	[label=read_csv];
+	"../input/test.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc1f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"{} observations and {} features in train set.(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[56/0]" -> "train(0)$0"	[label=print];
+	"print[56/0]" -> "{} observations and {} features in train set.(0)"	[label=print];
+	"print[56/0]" -> "0(0)"	[label=print];
+	"print[56/0]" -> "1(0)"	[label=print];
 	"0(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"1(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"oof_lgb_3(0)$1" -> "train(0)$21"	[label=predict];
-	"oof_lgb_3(0)$1" -> "val_idx(0)"	[label=predict];
-	"oof_lgb_3(0)$1" -> "train_columns(0)$0"	[label=predict];
-	"oof_lgb_3(0)$1" -> "oof_lgb_3(0)$0"	[label=predict];
-	"oof_lgb_3(0)$1" -> "clf(0)$3"	[label=predict];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[3]" -> "-(0)"	[label=print];
-	"print[3]" -> "train(0)$0"	[label=print];
-	"print[3]" -> "test(0)$0"	[label=print];
-	"print[3]" -> "target(0)$2"	[label=print];
-	"target(0)$2" -> "target(0)$2"	[label=assignedFrom];
-	"target(0)$2" -> "train(0)$21"	[label=assignedFrom];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[4]" -> "1(0)"	[label=print];
-	"print[4]" -> "0.5(0)"	[label=print];
-	"print[4]" -> "50(0)"	[label=print];
-	"0.5(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"50(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
-	os -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=importedBy];
-	"../input/train.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade250>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"../input/test.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade8b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"{} observations and {} features in test set.(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[57/0]" -> "test(0)$0"	[label=print];
+	"print[57/0]" -> "0(0)"	[label=print];
+	"print[57/0]" -> "1(0)"	[label=print];
+	"print[57/0]" -> "{} observations and {} features in test set.(0)"	[label=print];
 	"train(0)$1" -> "train(0)$0"	[label=head];
 	"test(0)$1" -> "test(0)$0"	[label=head];
 	"train(0)$2" -> "train(0)$1"	[label=describe];
@@ -241,7 +186,7 @@ object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant ob
 	"YouTubeVideo(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"YouTubeVideo(0)" -> YouTubeVideo	[label=assignedFrom];
 	"UJkxFhFRFDA(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"YouTubeVideo[0]" -> "UJkxFhFRFDA(0)"	[label=YouTubeVideo];
+	"YouTubeVideo[90/0]" -> "UJkxFhFRFDA(0)"	[label=YouTubeVideo];
 	"train(0)$3" -> "pd(0)"	[label=to_datetime];
 	"train(0)$3" -> "train(0)$2"	[label=to_datetime];
 	"train(0)$3" -> "train(0)$3"	[label=to_datetime];
@@ -276,16 +221,16 @@ object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant ob
 	"train(0)$7" -> "train(0)$6"	[label=head];
 	"new_transactions(0)$0" -> "pd(0)"	[label=read_csv];
 	"new_transactions(0)$0" -> "../input/new_merchant_transactions.csv(0)"	[label=read_csv];
-	"new_transactions(0)$0" -> "[<_ast.Constant object at 0x12fed1520>](0)"	[label=read_csv];
+	"new_transactions(0)$0" -> "[<_ast.Constant object at 0x7fd4c05bc250>](0)"	[label=read_csv];
 	"../input/new_merchant_transactions.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fed1520>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bc250>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"historical_transactions(0)$0" -> "pd(0)"	[label=read_csv];
 	"historical_transactions(0)$0" -> "../input/historical_transactions.csv(0)"	[label=read_csv];
-	"historical_transactions(0)$0" -> "[<_ast.Constant object at 0x12fed1700>](0)"	[label=read_csv];
+	"historical_transactions(0)$0" -> "[<_ast.Constant object at 0x7fd4c05bc460>](0)"	[label=read_csv];
 	"../input/historical_transactions.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fed1700>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bc460>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"df(2)" -> "binarize[0]"	[label=_argToVar];
-	"col(2)" -> "[<_ast.Constant object at 0x12fed1850>, <_ast.Constant object at 0x12fed1880>](2)"	[label=iteratorOf];
+	"col(2)" -> "[<_ast.Constant object at 0x7fd4c05bc580>, <_ast.Constant object at 0x7fd4c05bc5b0>](2)"	[label=iteratorOf];
 	"df(2)$0" -> "df(2)"	[label=map];
 	"df(2)$0" -> "col(2)"	[label=map];
 	"df(2)$0" -> "Y(2)"	[label=map];
@@ -296,44 +241,44 @@ object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant ob
 	"new_transactions(0)$1" -> "new_transactions(0)$0"	[label=binarize];
 	"historical_transactions(0)$2" -> "pd(0)"	[label=get_dummies];
 	"historical_transactions(0)$2" -> "historical_transactions(0)$2"	[label=get_dummies];
-	"historical_transactions(0)$2" -> "[<_ast.Constant object at 0x12feb9070>, <_ast.Constant object at 0x12feb90a0>](0)"	[label=get_dummies];
-	"[<_ast.Constant object at 0x12feb9070>, <_ast.Constant object at 0x12feb90a0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"historical_transactions(0)$2" -> "[<_ast.Constant object at 0x7fd4c05bcd90>, <_ast.Constant object at 0x7fd4c05bcdc0>](0)"	[label=get_dummies];
+	"[<_ast.Constant object at 0x7fd4c05bcd90>, <_ast.Constant object at 0x7fd4c05bcdc0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"new_transactions(0)$2" -> "pd(0)"	[label=get_dummies];
 	"new_transactions(0)$2" -> "new_transactions(0)$2"	[label=get_dummies];
-	"new_transactions(0)$2" -> "[<_ast.Constant object at 0x12feb9280>, <_ast.Constant object at 0x12feb92b0>](0)"	[label=get_dummies];
-	"[<_ast.Constant object at 0x12feb9280>, <_ast.Constant object at 0x12feb92b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"new_transactions(0)$2" -> "[<_ast.Constant object at 0x7fd4c05bcfd0>, <_ast.Constant object at 0x7fd4c05bce50>](0)"	[label=get_dummies];
+	"[<_ast.Constant object at 0x7fd4c05bcfd0>, <_ast.Constant object at 0x7fd4c05bce50>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"historical_transactions(0)$3" -> "historical_transactions(0)$2"	[label=reduce_mem_usage];
 	"new_transactions(0)$3" -> "new_transactions(0)$2"	[label=reduce_mem_usage];
 	"authorized_flag(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"agg_fun(0)$0" -> "authorized_flag(0)"	[label=assignedFrom];
-	"agg_fun(0)$0" -> "[<_ast.Constant object at 0x12feb95b0>, <_ast.Constant object at 0x12feb95e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12feb95b0>, <_ast.Constant object at 0x12feb95e0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"agg_fun(0)$0" -> "[<_ast.Constant object at 0x7fd4c05b82e0>, <_ast.Constant object at 0x7fd4c05b8310>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05b82e0>, <_ast.Constant object at 0x7fd4c05b8310>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"auth_mean(0)$0" -> "historical_transactions(0)$3"	[label=agg];
 	"auth_mean(0)$0" -> "agg_fun(0)$0"	[label=agg];
-	"auth_mean(0)$0" -> "[<_ast.Constant object at 0x12feb9790>](0)"	[label=agg];
-	"[<_ast.Constant object at 0x12feb9790>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"auth_mean(0)$0" -> "[<_ast.Constant object at 0x7fd4c05b8490>](0)"	[label=agg];
+	"[<_ast.Constant object at 0x7fd4c05b8490>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"_(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"auth_mean(0)$1" -> "auth_mean(0)$0"	[label=assignedFrom];
 	"auth_mean(0)$1" -> "_(0)"	[label=assignedFrom];
 	"auth_mean(0)$1" -> "auth_mean(0)$1"	[label=assignedFrom];
 	"auth_mean(0)$1" -> "col(0)"	[label=assignedFrom];
 	"col(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"col(0)" -> "[<_ast.Constant object at 0x12f899bb0>, <_ast.Constant object at 0x12f899d90>, <_ast.Constant object at 0x12f899c10>, <_ast.Constant \
-object at 0x12f899c70>, <_ast.Constant object at 0x12f899ca0>, <_ast.Constant object at 0x12f899cd0>, <_ast.Constant object at 0x12f899d00>, <_\
-ast.Constant object at 0x12f899250>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f88afa0>, <_ast.Constant object at 0x12f88afd0>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f8cadf0>, <_ast.Constant object at 0x12f8cae20>, <_ast.Constant object at 0x12f8cae80>, <_ast.Constant \
-object at 0x12f8caeb0>, <_ast.Constant object at 0x12f8caee0>, <_ast.Constant object at 0x12f8caf10>, <_ast.Constant object at 0x12f8caf40>, <_\
-ast.Constant object at 0x12f8caf70>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f8d10d0>, <_ast.Constant object at 0x12f8d1100>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f899bb0>, <_ast.Constant object at 0x12f899d90>, <_ast.Constant object at 0x12f899c10>, <_ast.Constant \
-object at 0x12f899c70>, <_ast.Constant object at 0x12f899ca0>, <_ast.Constant object at 0x12f899cd0>, <_ast.Constant object at 0x12f899d00>, <_\
-ast.Constant object at 0x12f899250>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88afa0>, <_ast.Constant object at 0x12f88afd0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8cadf0>, <_ast.Constant object at 0x12f8cae20>, <_ast.Constant object at 0x12f8cae80>, <_ast.Constant \
-object at 0x12f8caeb0>, <_ast.Constant object at 0x12f8caee0>, <_ast.Constant object at 0x12f8caf10>, <_ast.Constant object at 0x12f8caf40>, <_\
-ast.Constant object at 0x12f8caf70>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d10d0>, <_ast.Constant object at 0x12f8d1100>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500860820>, <_ast.Constant object at 0x7fd500860850>, <_ast.Constant object at 0x7fd500860880>, <_\
+ast.Constant object at 0x7fd5008608e0>, <_ast.Constant object at 0x7fd500860580>, <_ast.Constant object at 0x7fd500860910>, <_ast.Constant \
+object at 0x7fd500860940>, <_ast.Constant object at 0x7fd500860970>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd50086ecd0>, <_ast.Constant object at 0x7fd50086ed00>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500840ac0>, <_ast.Constant object at 0x7fd500840af0>, <_ast.Constant object at 0x7fd500840b20>, <_\
+ast.Constant object at 0x7fd500840b50>, <_ast.Constant object at 0x7fd500840b80>, <_ast.Constant object at 0x7fd500840bb0>, <_ast.Constant \
+object at 0x7fd500840be0>, <_ast.Constant object at 0x7fd500840c10>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500854d90>, <_ast.Constant object at 0x7fd500854dc0>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd500860820>, <_ast.Constant object at 0x7fd500860850>, <_ast.Constant object at 0x7fd500860880>, <_\
+ast.Constant object at 0x7fd5008608e0>, <_ast.Constant object at 0x7fd500860580>, <_ast.Constant object at 0x7fd500860910>, <_ast.Constant \
+object at 0x7fd500860940>, <_ast.Constant object at 0x7fd500860970>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086ecd0>, <_ast.Constant object at 0x7fd50086ed00>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500840ac0>, <_ast.Constant object at 0x7fd500840af0>, <_ast.Constant object at 0x7fd500840b20>, <_\
+ast.Constant object at 0x7fd500840b50>, <_ast.Constant object at 0x7fd500840b80>, <_ast.Constant object at 0x7fd500840bb0>, <_ast.Constant \
+object at 0x7fd500840be0>, <_ast.Constant object at 0x7fd500840c10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500854d90>, <_ast.Constant object at 0x7fd500854dc0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"auth_mean(0)$2" -> "auth_mean(0)$1"	[label=reset_index];
 	"authorized_transactions(0)$0" -> "1(0)"	[label=assignedFrom];
 	"authorized_transactions(0)$0" -> "historical_transactions(0)$3"	[label=assignedFrom];
@@ -375,31 +320,32 @@ ast.Constant object at 0x12f8caf70>](0)" -> "eloda-with-feature-engineering-and-
 	"agg_func(3)$0" -> "installments(3)"	[label=assignedFrom];
 	"agg_func(3)$0" -> "purchase_month(3)"	[label=assignedFrom];
 	"agg_func(3)$0" -> "month_lag(3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec92b0>, <_ast.Constant object at 0x12fec92e0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9340>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec93a0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9400>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9460>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec94c0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9520>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9580>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec95e0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9640>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec96a0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9700>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9760>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec97c0>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9850>, <_ast.Constant object at 0x12fec9880>, <_ast.Constant object at 0x12fec98b0>, <_ast.Constant \
-object at 0x12fec98e0>, <_ast.Constant object at 0x12fec9910>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec99a0>, <_ast.Constant object at 0x12fec99d0>, <_ast.Constant object at 0x12fec9a00>, <_ast.Constant \
-object at 0x12fec9a30>, <_ast.Constant object at 0x12fec9a60>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9ac0>, <_ast.Constant object at 0x12fec9af0>, <_ast.Constant object at 0x12fec9b20>, <_ast.Constant \
-object at 0x12fec9b50>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Attribute object at 0x12fec9bb0>, <_ast.Constant object at 0x12fec9c10>, <_ast.Constant object at 0x12fec9c40>](3)"	[label=assignedFrom];
-	"agg_func(3)$0" -> "[<_ast.Constant object at 0x12fec9ca0>, <_ast.Constant object at 0x12fec9cd0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05b4fd0>, <_ast.Constant object at 0x7fd4c05b4ee0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2040>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a20a0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2100>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2160>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a21c0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2220>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2280>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a22e0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2340>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a23a0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2400>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2460>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a24c0>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2550>, <_ast.Constant object at 0x7fd4c05a2580>, <_ast.Constant object at 0x7fd4c05a25b0>, <_\
+ast.Constant object at 0x7fd4c05a25e0>, <_ast.Constant object at 0x7fd4c05a2610>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a26a0>, <_ast.Constant object at 0x7fd4c05a26d0>, <_ast.Constant object at 0x7fd4c05a2700>, <_\
+ast.Constant object at 0x7fd4c05a2730>, <_ast.Constant object at 0x7fd4c05a2760>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a27c0>, <_ast.Constant object at 0x7fd4c05a27f0>, <_ast.Constant object at 0x7fd4c05a2820>, <_\
+ast.Constant object at 0x7fd4c05a2850>](3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Attribute object at 0x7fd4c05a28b0>, <_ast.Constant object at 0x7fd4c05a2910>, <_ast.Constant object at 0x7fd4c05a2940>](\
+3)"	[label=assignedFrom];
+	"agg_func(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a29a0>, <_ast.Constant object at 0x7fd4c05a29d0>](3)"	[label=assignedFrom];
 	"agg_history(3)$0" -> "history(3)$0"	[label=agg];
 	"agg_history(3)$0" -> "agg_func(3)$0"	[label=agg];
-	"agg_history(3)$0" -> "[<_ast.Constant object at 0x12fec9e80>](3)"	[label=agg];
+	"agg_history(3)$0" -> "[<_ast.Constant object at 0x7fd4c05a2b80>](3)"	[label=agg];
 	"agg_history(3)$1" -> "agg_history(3)$0"	[label=assignedFrom];
 	"agg_history(3)$1" -> "agg_history(3)$1"	[label=assignedFrom];
 	"agg_history(3)$1" -> "_(3)"	[label=assignedFrom];
@@ -438,13 +384,13 @@ object at 0x12fec9b50>](3)"	[label=assignedFrom];
 	"new_(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"history(4)" -> "aggregate_per_month[0]"	[label=_argToVar];
 	"grouped(4)$0" -> "history(4)"	[label=groupby];
-	"grouped(4)$0" -> "[<_ast.Constant object at 0x12fea1b50>, <_ast.Constant object at 0x12fea1b80>](4)"	[label=groupby];
+	"grouped(4)$0" -> "[<_ast.Constant object at 0x7fd500821850>, <_ast.Constant object at 0x7fd500821880>](4)"	[label=groupby];
 	"agg_func(4)$0" -> "purchase_amount(4)"	[label=assignedFrom];
 	"agg_func(4)$0" -> "installments(4)"	[label=assignedFrom];
-	"agg_func(4)$0" -> "[<_ast.Constant object at 0x12fea1d00>, <_ast.Constant object at 0x12fea1d30>, <_ast.Constant object at 0x12fea1d60>, <_ast.Constant \
-object at 0x12fea1d90>, <_ast.Constant object at 0x12fea1dc0>, <_ast.Constant object at 0x12fea1df0>](4)"	[label=assignedFrom];
-	"agg_func(4)$0" -> "[<_ast.Constant object at 0x12fea1e80>, <_ast.Constant object at 0x12fea1eb0>, <_ast.Constant object at 0x12fea1ee0>, <_ast.Constant \
-object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant object at 0x12fea1f70>](4)"	[label=assignedFrom];
+	"agg_func(4)$0" -> "[<_ast.Constant object at 0x7fd500821a00>, <_ast.Constant object at 0x7fd500821a30>, <_ast.Constant object at 0x7fd500821a60>, <_\
+ast.Constant object at 0x7fd500821a90>, <_ast.Constant object at 0x7fd500821ac0>, <_ast.Constant object at 0x7fd500821af0>](4)"	[label=assignedFrom];
+	"agg_func(4)$0" -> "[<_ast.Constant object at 0x7fd500821b80>, <_ast.Constant object at 0x7fd500821bb0>, <_ast.Constant object at 0x7fd500821be0>, <_\
+ast.Constant object at 0x7fd500821c10>, <_ast.Constant object at 0x7fd500821c40>, <_ast.Constant object at 0x7fd500821c70>](4)"	[label=assignedFrom];
 	"intermediate_group(4)$0" -> "grouped(4)$0"	[label=agg];
 	"intermediate_group(4)$0" -> "agg_func(4)$0"	[label=agg];
 	"intermediate_group(4)$1" -> "intermediate_group(4)$0"	[label=assignedFrom];
@@ -454,7 +400,7 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"intermediate_group(4)$2" -> "intermediate_group(4)$1"	[label=reset_index];
 	"final_group(4)$0" -> "intermediate_group(4)$2"	[label=agg];
 	"final_group(4)$0" -> "card_id(4)"	[label=agg];
-	"final_group(4)$0" -> "[<_ast.Constant object at 0x12fed4730>, <_ast.Constant object at 0x12fed4760>](4)"	[label=agg];
+	"final_group(4)$0" -> "[<_ast.Constant object at 0x7fd500813430>, <_ast.Constant object at 0x7fd500813460>](4)"	[label=agg];
 	"final_group(4)$1" -> "_(4)"	[label=assignedFrom];
 	"final_group(4)$1" -> "col(4)"	[label=assignedFrom];
 	"final_group(4)$1" -> "final_group(4)$0"	[label=assignedFrom];
@@ -502,16 +448,28 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"test(0)$7" -> "final_group(0)$0"	[label=merge];
 	"test(0)$7" -> "left(0)"	[label=merge];
 	"test(0)$7" -> "test(0)$7"	[label=merge];
+	"train(0)$12" -> "pd(0)"	[label=merge];
+	"train(0)$12" -> "auth_mean(0)$2"	[label=merge];
+	"train(0)$12" -> "card_id(0)"	[label=merge];
+	"train(0)$12" -> "left(0)"	[label=merge];
+	"train(0)$12" -> "train(0)$12"	[label=merge];
+	"test(0)$8" -> "pd(0)"	[label=merge];
+	"test(0)$8" -> "auth_mean(0)$2"	[label=merge];
+	"test(0)$8" -> "card_id(0)"	[label=merge];
+	"test(0)$8" -> "left(0)"	[label=merge];
+	"test(0)$8" -> "test(0)$8"	[label=merge];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
 	"gc(0)$1" -> "gc(0)$0"	[label=collect];
-	"features(0)$0" -> "train(0)$12"	[label=assignedFrom];
 	"features(0)$0" -> "c(0)"	[label=assignedFrom];
-	"features(0)$0" -> "[<_ast.Constant object at 0x12fed2dc0>, <_ast.Constant object at 0x12fed2df0>, <_ast.Constant object at 0x12fed2e50>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fed2dc0>, <_ast.Constant object at 0x12fed2df0>, <_ast.Constant object at 0x12fed2e50>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"features(0)$0" -> "train(0)$12"	[label=assignedFrom];
+	"features(0)$0" -> "[<_ast.Constant object at 0x7fd50082da60>, <_ast.Constant object at 0x7fd50082da90>, <_ast.Constant object at 0x7fd50082daf0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082da60>, <_ast.Constant object at 0x7fd50082da90>, <_ast.Constant object at 0x7fd50082daf0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"categorical_feats(0)$0" -> "c(0)"	[label=assignedFrom];
 	"categorical_feats(0)$0" -> "features(0)$0"	[label=assignedFrom];
 	"categorical_feats(0)$0" -> "feature_(0)"	[label=assignedFrom];
 	"feature_(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[218/0]" -> "train(0)$12"	[label=print];
+	"print[219/0]" -> "test(0)$8"	[label=print];
 	"train(0)$13" -> "train(0)$12"	[label=to_csv];
 	"train(0)$13" -> "train_1.csv(0)"	[label=to_csv];
 	"train_1.csv(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
@@ -539,6 +497,17 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"True(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"15(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"enumerate(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"fold_(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"fold_(0)" -> "train(0)$13"	[label=iteratorOf];
+	"fold_(0)" -> "folds(0)$0"	[label=iteratorOf];
+	"fold_(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"fold_(0)" -> "outliers(0)"	[label=iteratorOf];
+	"fold_(0)" -> "folds(0)$1"	[label=iteratorOf];
+	"fold_(0)" -> "train(0)$21"	[label=iteratorOf];
+	"fold_(0)" -> "folds(0)$2"	[label=iteratorOf];
+	"fold_(0)" -> "folds(0)$3"	[label=iteratorOf];
+	"fold_(0)" -> "train_stack(0)$0"	[label=iteratorOf];
+	"fold_(0)" -> "folds(0)$4"	[label=iteratorOf];
 	"outliers(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"folds(0)$1" -> "5(0)"	[label=StratifiedKFold];
 	"folds(0)$1" -> "True(0)"	[label=StratifiedKFold];
@@ -553,7 +522,7 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"folds(0)$3" -> "True(0)"	[label=StratifiedKFold];
 	"folds(0)$3" -> "15(0)"	[label=StratifiedKFold];
 	"train_stack(0)$0" -> "np(0)$10"	[label=transpose];
-	"train_stack(0)$0" -> "[<_ast.Name object at 0x12faff3d0>, <_ast.Name object at 0x12faff400>, <_ast.Name object at 0x12faff430>](0)"	[label=transpose];
+	"train_stack(0)$0" -> "[<_ast.Name object at 0x7fd4c09ba0d0>, <_ast.Name object at 0x7fd4c09ba100>, <_ast.Name object at 0x7fd4c09ba130>](0)"	[label=transpose];
 	"folds(0)$4" -> "5(0)"	[label=StratifiedKFold];
 	"folds(0)$4" -> "True(0)"	[label=StratifiedKFold];
 	"folds(0)$4" -> "15(0)"	[label=StratifiedKFold];
@@ -579,6 +548,10 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"val_idx(0)" -> "folds(0)$3"	[label=iteratorOf];
 	"val_idx(0)" -> "train_stack(0)$0"	[label=iteratorOf];
 	"val_idx(0)" -> "folds(0)$4"	[label=iteratorOf];
+	"fold n°{}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[234/4]" -> "1(0)"	[label=print];
+	"print[234/4]" -> "fold_(0)"	[label=print];
+	"print[234/4]" -> "fold n°{}(0)"	[label=print];
 	"trn_data(0)$0" -> "features(0)$0"	[label=assignedFrom];
 	"trn_data(0)$0" -> "train(0)$13"	[label=assignedFrom];
 	"trn_data(0)$0" -> "target(0)$1"	[label=assignedFrom];
@@ -676,6 +649,12 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"predictions_lgb(0)$0" -> "test(0)$9"	[label=zeros];
 	"predictions_lgb(0)$0" -> "np(0)$2"	[label=zeros];
 	"predictions_lgb(0)$0" -> "len(0)"	[label=zeros];
+	"-(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[276/4]" -> "-(0)"	[label=print];
+	"Fold {}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[277/4]" -> "1(0)"	[label=print];
+	"print[277/4]" -> "fold_(0)"	[label=print];
+	"print[277/4]" -> "Fold {}(0)"	[label=print];
 	"trn_data(0)$3" -> "lgb(0)"	[label=Dataset];
 	"trn_data(0)$3" -> "features(0)$0"	[label=Dataset];
 	"trn_data(0)$3" -> "train(0)$13"	[label=Dataset];
@@ -693,9 +672,9 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"clf(0)$2" -> "param(0)$0"	[label=train];
 	"clf(0)$2" -> "trn_data(0)$3"	[label=train];
 	"clf(0)$2" -> "num_round(0)$0"	[label=train];
-	"clf(0)$2" -> "[<_ast.Name object at 0x12f8860a0>, <_ast.Name object at 0x12f886040>](0)"	[label=train];
+	"clf(0)$2" -> "[<_ast.Name object at 0x7fd500829d60>, <_ast.Name object at 0x7fd500829f10>](0)"	[label=train];
 	"clf(0)$2" -> "200(0)"	[label=train];
-	"[<_ast.Name object at 0x12f8860a0>, <_ast.Name object at 0x12f886040>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500829d60>, <_ast.Name object at 0x7fd500829f10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"200(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"oof_lgb(0)$1" -> "features(0)$0"	[label=predict];
 	"oof_lgb(0)$1" -> "train(0)$13"	[label=predict];
@@ -724,9 +703,9 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"hist_trans(0)$0" -> "../input/historical_transactions.csv(0)"	[label=read_csv];
 	"new_merchant_trans(0)$0" -> "pd(0)"	[label=read_csv];
 	"new_merchant_trans(0)$0" -> "../input/new_merchant_transactions.csv(0)"	[label=read_csv];
-	"[<_ast.Name object at 0x12f896d00>, <_ast.Name object at 0x12f896d90>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50080f9a0>, <_ast.Name object at 0x7fd50080f9d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"df(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12f896d00>, <_ast.Name object at 0x12f896d90>](0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd50080f9a0>, <_ast.Name object at 0x7fd50080f9d0>](0)"	[label=iteratorOf];
 	"df(0)$0" -> "df(0)"	[label=fillna];
 	"df(0)$0" -> "1.0(0)"	[label=fillna];
 	"1.0(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
@@ -735,9 +714,9 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"A(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"df(0)$2" -> "df(0)$1"	[label=fillna];
 	"df(0)$2" -> "M_ID_00a6ca8a8a(0)"	[label=fillna];
-	"df(0)$2" -> "[<_ast.Name object at 0x12f8a6ac0>, <_ast.Name object at 0x12f8a6af0>](0)"	[label=iteratorOf];
+	"df(0)$2" -> "[<_ast.Name object at 0x7fd5008287f0>, <_ast.Name object at 0x7fd500828820>](0)"	[label=iteratorOf];
 	"M_ID_00a6ca8a8a(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8a6ac0>, <_ast.Name object at 0x12f8a6af0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5008287f0>, <_ast.Name object at 0x7fd500828820>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"name(5)" -> "get_new_columns[0]"	[label=_argToVar];
 	"aggs(5)" -> "get_new_columns[1]"	[label=_argToVar];
 	"df(0)$3" -> "pd(0)"	[label=to_datetime];
@@ -781,56 +760,56 @@ object at 0x12fea1f10>, <_ast.Constant object at 0x12fea1f40>, <_ast.Constant ob
 	"df(0)$13" -> "df(0)$12"	[label=Add];
 	"df(0)$13" -> "df(0)$13"	[label=Add];
 	"df(0)$13" -> "month_lag(0)"	[label=Add];
-	"df(0)$13" -> "[<_ast.Name object at 0x12f8c98e0>, <_ast.Name object at 0x12f8c9910>](0)"	[label=iteratorOf];
+	"df(0)$13" -> "[<_ast.Name object at 0x7fd50084c6a0>, <_ast.Name object at 0x7fd50084c6d0>](0)"	[label=iteratorOf];
 	"month_lag(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8c98e0>, <_ast.Name object at 0x12f8c9910>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f899e80>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50084c6a0>, <_ast.Name object at 0x7fd50084c6d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500860af0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"aggs(0)$0" -> "[<_ast.Constant object at 0x12f899e80>](0)"	[label=assignedFrom];
+	"aggs(0)$0" -> "[<_ast.Constant object at 0x7fd500860af0>](0)"	[label=assignedFrom];
 	"aggs(0)$0" -> "aggs(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f899970>, <_ast.Constant object at 0x12f899430>, <_ast.Constant object at 0x12f899e20>, <_ast.Constant \
-object at 0x12f88a040>, <_ast.Constant object at 0x12f88a070>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500860cd0>, <_ast.Constant object at 0x7fd500860d00>, <_ast.Constant object at 0x7fd500860d30>, <_\
+ast.Constant object at 0x7fd500860d60>, <_ast.Constant object at 0x7fd500860d90>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$1" -> "aggs(0)$0"	[label=assignedFrom];
-	"aggs(0)$1" -> "[<_ast.Constant object at 0x12f899970>, <_ast.Constant object at 0x12f899430>, <_ast.Constant object at 0x12f899e20>, <_ast.Constant \
-object at 0x12f88a040>, <_ast.Constant object at 0x12f88a070>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a220>, <_ast.Constant object at 0x12f88a250>, <_ast.Constant object at 0x12f88a280>, <_ast.Constant \
-object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a2e0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$1" -> "[<_ast.Constant object at 0x7fd500860cd0>, <_ast.Constant object at 0x7fd500860d00>, <_ast.Constant object at 0x7fd500860d30>, <_\
+ast.Constant object at 0x7fd500860d60>, <_ast.Constant object at 0x7fd500860d90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500860f40>, <_ast.Constant object at 0x7fd500860c70>, <_ast.Constant object at 0x7fd500860f70>, <_\
+ast.Constant object at 0x7fd500860fa0>, <_ast.Constant object at 0x7fd500860fd0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$2" -> "aggs(0)$1"	[label=assignedFrom];
-	"aggs(0)$2" -> "[<_ast.Constant object at 0x12f88a220>, <_ast.Constant object at 0x12f88a250>, <_ast.Constant object at 0x12f88a280>, <_ast.Constant \
-object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a2e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a490>, <_ast.Constant object at 0x12f88a4c0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$2" -> "[<_ast.Constant object at 0x7fd500860f40>, <_ast.Constant object at 0x7fd500860c70>, <_ast.Constant object at 0x7fd500860f70>, <_\
+ast.Constant object at 0x7fd500860fa0>, <_ast.Constant object at 0x7fd500860fd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086e160>, <_ast.Constant object at 0x7fd50086e190>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$3" -> "aggs(0)$2"	[label=assignedFrom];
-	"aggs(0)$3" -> "[<_ast.Constant object at 0x12f88a490>, <_ast.Constant object at 0x12f88a4c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a640>, <_ast.Constant object at 0x12f88a6a0>, <_ast.Constant object at 0x12f88a670>, <_ast.Constant \
-object at 0x12f88a6d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$3" -> "[<_ast.Constant object at 0x7fd50086e160>, <_ast.Constant object at 0x7fd50086e190>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086e340>, <_ast.Constant object at 0x7fd50086e370>, <_ast.Constant object at 0x7fd50086e3a0>, <_\
+ast.Constant object at 0x7fd50086e3d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$4" -> "aggs(0)$3"	[label=assignedFrom];
-	"aggs(0)$4" -> "[<_ast.Constant object at 0x12f88a640>, <_ast.Constant object at 0x12f88a6a0>, <_ast.Constant object at 0x12f88a670>, <_ast.Constant \
-object at 0x12f88a6d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a850>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$4" -> "[<_ast.Constant object at 0x7fd50086e340>, <_ast.Constant object at 0x7fd50086e370>, <_ast.Constant object at 0x7fd50086e3a0>, <_\
+ast.Constant object at 0x7fd50086e3d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086e220>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$5" -> "aggs(0)$4"	[label=assignedFrom];
-	"aggs(0)$5" -> "[<_ast.Constant object at 0x12f88a850>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a310>, <_ast.Constant object at 0x12f88aa00>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$5" -> "[<_ast.Constant object at 0x7fd50086e220>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086e6a0>, <_ast.Constant object at 0x7fd50086e6d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$6" -> "aggs(0)$5"	[label=assignedFrom];
-	"aggs(0)$6" -> "[<_ast.Constant object at 0x12f88a310>, <_ast.Constant object at 0x12f88aa00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88abb0>, <_ast.Constant object at 0x12f88abe0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$6" -> "[<_ast.Constant object at 0x7fd50086e6a0>, <_ast.Constant object at 0x7fd50086e6d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086e880>, <_ast.Constant object at 0x7fd50086e8b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$7" -> "aggs(0)$6"	[label=assignedFrom];
-	"aggs(0)$7" -> "[<_ast.Constant object at 0x12f88abb0>, <_ast.Constant object at 0x12f88abe0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88aa30>, <_ast.Constant object at 0x12f88ad60>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$7" -> "[<_ast.Constant object at 0x7fd50086e880>, <_ast.Constant object at 0x7fd50086e8b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086ea30>, <_ast.Constant object at 0x7fd50086ea60>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$8" -> "aggs(0)$7"	[label=assignedFrom];
-	"aggs(0)$8" -> "[<_ast.Constant object at 0x12f88aa30>, <_ast.Constant object at 0x12f88ad60>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88aee0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$8" -> "[<_ast.Constant object at 0x7fd50086ea30>, <_ast.Constant object at 0x7fd50086ea60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086ec10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$9" -> "aggs(0)$8"	[label=assignedFrom];
-	"aggs(0)$9" -> "[<_ast.Constant object at 0x12f88aee0>](0)"	[label=assignedFrom];
+	"aggs(0)$9" -> "[<_ast.Constant object at 0x7fd50086ec10>](0)"	[label=assignedFrom];
 	"hist_trans(0)$1" -> "hist_trans(0)$0"	[label=transform];
-	"hist_trans(0)$1" -> "[<_ast.Name object at 0x12f8d8310>](0)"	[label=transform];
+	"hist_trans(0)$1" -> "[<_ast.Name object at 0x7fd50086eb50>](0)"	[label=transform];
 	"hist_trans(0)$1" -> "purchase_amount(0)"	[label=transform];
 	"hist_trans(0)$1" -> "mean(0)"	[label=transform];
-	"[<_ast.Name object at 0x12f8d8310>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50086eb50>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"purchase_amount(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"mean(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d8280>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008412b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$10" -> "aggs(0)$9"	[label=assignedFrom];
-	"aggs(0)$10" -> "[<_ast.Constant object at 0x12f8d8280>](0)"	[label=assignedFrom];
+	"aggs(0)$10" -> "[<_ast.Constant object at 0x7fd5008412b0>](0)"	[label=assignedFrom];
 	"hist(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"new_columns(0)$0" -> "aggs(0)$10"	[label=get_new_columns];
 	"new_columns(0)$0" -> "hist(0)"	[label=get_new_columns];
@@ -866,47 +845,47 @@ object at 0x12f88a6d0>](0)"	[label=assignedFrom];
 	"test(0)$11" -> "hist_trans_group(0)$5"	[label=merge];
 	"gc(0)$4" -> "gc(0)$3"	[label=collect];
 	"gc(0)$5" -> "gc(0)$4"	[label=collect];
-	"[<_ast.Constant object at 0x12f8e40d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500840d90>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$11" -> "aggs(0)$10"	[label=assignedFrom];
-	"aggs(0)$11" -> "[<_ast.Constant object at 0x12f8e40d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4280>, <_ast.Constant object at 0x12f8e42b0>, <_ast.Constant object at 0x12f8e42e0>, <_ast.Constant \
-object at 0x12f8e4310>, <_ast.Constant object at 0x12f8e4340>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$11" -> "[<_ast.Constant object at 0x7fd500840d90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500840f40>, <_ast.Constant object at 0x7fd500840f70>, <_ast.Constant object at 0x7fd500840fa0>, <_\
+ast.Constant object at 0x7fd500840fd0>, <_ast.Constant object at 0x7fd500854040>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$12" -> "aggs(0)$11"	[label=assignedFrom];
-	"aggs(0)$12" -> "[<_ast.Constant object at 0x12f8e4280>, <_ast.Constant object at 0x12f8e42b0>, <_ast.Constant object at 0x12f8e42e0>, <_ast.Constant \
-object at 0x12f8e4310>, <_ast.Constant object at 0x12f8e4340>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e44f0>, <_ast.Constant object at 0x12f8e4520>, <_ast.Constant object at 0x12f8e4550>, <_ast.Constant \
-object at 0x12f8e4580>, <_ast.Constant object at 0x12f8e45b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$12" -> "[<_ast.Constant object at 0x7fd500840f40>, <_ast.Constant object at 0x7fd500840f70>, <_ast.Constant object at 0x7fd500840fa0>, <_\
+ast.Constant object at 0x7fd500840fd0>, <_ast.Constant object at 0x7fd500854040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008541f0>, <_ast.Constant object at 0x7fd500854220>, <_ast.Constant object at 0x7fd500854250>, <_\
+ast.Constant object at 0x7fd500854280>, <_ast.Constant object at 0x7fd5008542b0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$13" -> "aggs(0)$12"	[label=assignedFrom];
-	"aggs(0)$13" -> "[<_ast.Constant object at 0x12f8e44f0>, <_ast.Constant object at 0x12f8e4520>, <_ast.Constant object at 0x12f8e4550>, <_ast.Constant \
-object at 0x12f8e4580>, <_ast.Constant object at 0x12f8e45b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4730>, <_ast.Constant object at 0x12f8e4760>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$13" -> "[<_ast.Constant object at 0x7fd5008541f0>, <_ast.Constant object at 0x7fd500854220>, <_ast.Constant object at 0x7fd500854250>, <_\
+ast.Constant object at 0x7fd500854280>, <_ast.Constant object at 0x7fd5008542b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854430>, <_ast.Constant object at 0x7fd500854460>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$14" -> "aggs(0)$13"	[label=assignedFrom];
-	"aggs(0)$14" -> "[<_ast.Constant object at 0x12f8e4730>, <_ast.Constant object at 0x12f8e4760>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e48e0>, <_ast.Constant object at 0x12f8e4910>, <_ast.Constant object at 0x12f8e4940>, <_ast.Constant \
-object at 0x12f8e4970>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$14" -> "[<_ast.Constant object at 0x7fd500854430>, <_ast.Constant object at 0x7fd500854460>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008545e0>, <_ast.Constant object at 0x7fd500854610>, <_ast.Constant object at 0x7fd500854640>, <_\
+ast.Constant object at 0x7fd500854670>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$15" -> "aggs(0)$14"	[label=assignedFrom];
-	"aggs(0)$15" -> "[<_ast.Constant object at 0x12f8e48e0>, <_ast.Constant object at 0x12f8e4910>, <_ast.Constant object at 0x12f8e4940>, <_ast.Constant \
-object at 0x12f8e4970>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4af0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$15" -> "[<_ast.Constant object at 0x7fd5008545e0>, <_ast.Constant object at 0x7fd500854610>, <_ast.Constant object at 0x7fd500854640>, <_\
+ast.Constant object at 0x7fd500854670>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008547f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$16" -> "aggs(0)$15"	[label=assignedFrom];
-	"aggs(0)$16" -> "[<_ast.Constant object at 0x12f8e4af0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4c70>, <_ast.Constant object at 0x12f8e4ca0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$16" -> "[<_ast.Constant object at 0x7fd5008547f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854970>, <_ast.Constant object at 0x7fd5008549a0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$17" -> "aggs(0)$16"	[label=assignedFrom];
-	"aggs(0)$17" -> "[<_ast.Constant object at 0x12f8e4c70>, <_ast.Constant object at 0x12f8e4ca0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4e20>, <_ast.Constant object at 0x12f8e4e50>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$17" -> "[<_ast.Constant object at 0x7fd500854970>, <_ast.Constant object at 0x7fd5008549a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854b20>, <_ast.Constant object at 0x7fd500854b50>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$18" -> "aggs(0)$17"	[label=assignedFrom];
-	"aggs(0)$18" -> "[<_ast.Constant object at 0x12f8e4e20>, <_ast.Constant object at 0x12f8e4e50>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e4fd0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"aggs(0)$18" -> "[<_ast.Constant object at 0x7fd500854b20>, <_ast.Constant object at 0x7fd500854b50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854cd0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$19" -> "aggs(0)$18"	[label=assignedFrom];
-	"aggs(0)$19" -> "[<_ast.Constant object at 0x12f8e4fd0>](0)"	[label=assignedFrom];
+	"aggs(0)$19" -> "[<_ast.Constant object at 0x7fd500854cd0>](0)"	[label=assignedFrom];
 	"new_merchant_trans(0)$1" -> "new_merchant_trans(0)$0"	[label=transform];
 	"new_merchant_trans(0)$1" -> "purchase_amount(0)"	[label=transform];
 	"new_merchant_trans(0)$1" -> "mean(0)"	[label=transform];
-	"new_merchant_trans(0)$1" -> "[<_ast.Name object at 0x12f8d1460>](0)"	[label=transform];
-	"[<_ast.Name object at 0x12f8d1460>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d16d0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"new_merchant_trans(0)$1" -> "[<_ast.Name object at 0x7fd500849100>](0)"	[label=transform];
+	"[<_ast.Name object at 0x7fd500849100>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008493a0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"aggs(0)$20" -> "aggs(0)$19"	[label=assignedFrom];
-	"aggs(0)$20" -> "[<_ast.Constant object at 0x12f8d16d0>](0)"	[label=assignedFrom];
+	"aggs(0)$20" -> "[<_ast.Constant object at 0x7fd5008493a0>](0)"	[label=assignedFrom];
 	"new_hist(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"new_columns(0)$1" -> "aggs(0)$20"	[label=get_new_columns];
 	"new_columns(0)$1" -> "new_hist(0)"	[label=get_new_columns];
@@ -973,13 +952,13 @@ object at 0x12f8e4970>](0)"	[label=assignedFrom];
 	"df(0)$20" -> "new_hist_purchase_date_min(0)"	[label=assignedFrom];
 	"df(0)$20" -> "df(0)$19"	[label=assignedFrom];
 	"df(0)$20" -> "df(0)$20"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d4e80>, <_ast.Constant object at 0x12f8d4eb0>, <_ast.Constant object at 0x12f8d4ee0>, <_ast.Constant \
-object at 0x12f8d4f10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085db80>, <_ast.Constant object at 0x7fd50085dbb0>, <_ast.Constant object at 0x7fd50085dbe0>, <_\
+ast.Constant object at 0x7fd50085dc10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"f(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"f(0)" -> "[<_ast.Constant object at 0x12f8d4e80>, <_ast.Constant object at 0x12f8d4eb0>, <_ast.Constant object at 0x12f8d4ee0>, <_ast.Constant \
-object at 0x12f8d4f10>](0)"	[label=iteratorOf];
-	"f(0)" -> "[<_ast.Constant object at 0x12f8c69d0>, <_ast.Constant object at 0x12f8c6a00>, <_ast.Constant object at 0x12f8c6a30>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f8c69d0>, <_ast.Constant object at 0x12f8c6a00>, <_ast.Constant object at 0x12f8c6a30>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"f(0)" -> "[<_ast.Constant object at 0x7fd50085db80>, <_ast.Constant object at 0x7fd50085dbb0>, <_ast.Constant object at 0x7fd50085dbe0>, <_\
+ast.Constant object at 0x7fd50085dc10>](0)"	[label=iteratorOf];
+	"f(0)" -> "[<_ast.Constant object at 0x7fd50083d6a0>, <_ast.Constant object at 0x7fd50083d6d0>, <_ast.Constant object at 0x7fd50083d730>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd50083d6a0>, <_ast.Constant object at 0x7fd50083d6d0>, <_ast.Constant object at 0x7fd50083d730>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"df(0)$21" -> "np(0)$5"	[label=Mult];
 	"df(0)$21" -> "df(0)$20"	[label=Mult];
 	"df(0)$21" -> "f(0)"	[label=Mult];
@@ -997,17 +976,19 @@ object at 0x12f8d4f10>](0)"	[label=iteratorOf];
 	"hist_purchase_amount_sum(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"order_label(0)$0" -> "outliers(0)"	[label=mean];
 	"order_label(0)$0" -> "train(0)$20"	[label=mean];
-	"order_label(0)$0" -> "[<_ast.Name object at 0x12f8c6c10>](0)"	[label=mean];
-	"[<_ast.Name object at 0x12f8c6c10>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"order_label(0)$0" -> "[<_ast.Name object at 0x7fd50083d940>](0)"	[label=mean];
+	"[<_ast.Name object at 0x7fd50083d940>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"test(0)$13" -> "test(0)$12"	[label=map];
 	"test(0)$13" -> "f(0)"	[label=map];
 	"test(0)$13" -> "order_label(0)$0"	[label=map];
 	"train_columns(0)$0" -> "c(0)"	[label=assignedFrom];
 	"train_columns(0)$0" -> "train(0)$21"	[label=assignedFrom];
-	"train_columns(0)$0" -> "[<_ast.Constant object at 0x12f8dc460>, <_ast.Constant object at 0x12f8dc490>, <_ast.Constant object at 0x12f8dc4c0>, <_ast.Constant \
-object at 0x12f8dc4f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8dc460>, <_ast.Constant object at 0x12f8dc490>, <_ast.Constant object at 0x12f8dc4c0>, <_ast.Constant \
-object at 0x12f8dc4f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"train_columns(0)$0" -> "[<_ast.Constant object at 0x7fd50086c160>, <_ast.Constant object at 0x7fd50086c190>, <_ast.Constant object at 0x7fd50086c1c0>, <_\
+ast.Constant object at 0x7fd50086c1f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086c160>, <_ast.Constant object at 0x7fd50086c190>, <_ast.Constant object at 0x7fd50086c1c0>, <_\
+ast.Constant object at 0x7fd50086c1f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"target(0)$2" -> "train(0)$21"	[label=assignedFrom];
+	"target(0)$2" -> "target(0)$2"	[label=assignedFrom];
 	"param(0)$1" -> "1(0)"	[label=assignedFrom];
 	"param(0)$1" -> "num_leaves(0)"	[label=assignedFrom];
 	"param(0)$1" -> "min_data_in_leaf(0)"	[label=assignedFrom];
@@ -1051,16 +1032,18 @@ object at 0x12f8dc4f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipyn
 	"predictions_lgb_3(0)$0" -> "np(0)$5"	[label=zeros];
 	"predictions_lgb_3(0)$0" -> "test(0)$13"	[label=zeros];
 	"start(0)$0" -> "time(0)"	[label=time];
+	"print[620/4]" -> "fold_(0)"	[label=print];
+	"print[620/4]" -> "fold n°{}(0)"	[label=print];
 	"trn_data(0)$4" -> "lgb(0)"	[label=Dataset];
-	"trn_data(0)$4" -> "target(0)$2"	[label=Dataset];
 	"trn_data(0)$4" -> "train(0)$21"	[label=Dataset];
 	"trn_data(0)$4" -> "trn_idx(0)"	[label=Dataset];
 	"trn_data(0)$4" -> "train_columns(0)$0"	[label=Dataset];
+	"trn_data(0)$4" -> "target(0)$2"	[label=Dataset];
 	"val_data(0)$4" -> "lgb(0)"	[label=Dataset];
-	"val_data(0)$4" -> "target(0)$2"	[label=Dataset];
 	"val_data(0)$4" -> "train(0)$21"	[label=Dataset];
 	"val_data(0)$4" -> "val_idx(0)"	[label=Dataset];
 	"val_data(0)$4" -> "train_columns(0)$0"	[label=Dataset];
+	"val_data(0)$4" -> "target(0)$2"	[label=Dataset];
 	"num_round(0)$1" -> "10000(0)"	[label=assignedFrom];
 	"clf(0)$3" -> "lgb(0)"	[label=train];
 	"clf(0)$3" -> "100(0)"	[label=train];
@@ -1068,17 +1051,29 @@ object at 0x12f8dc4f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipyn
 	"clf(0)$3" -> "param(0)$1"	[label=train];
 	"clf(0)$3" -> "trn_data(0)$4"	[label=train];
 	"clf(0)$3" -> "num_round(0)$1"	[label=train];
-	"clf(0)$3" -> "[<_ast.Name object at 0x12f8c75b0>, <_ast.Name object at 0x12f8c75e0>](0)"	[label=train];
-	"[<_ast.Name object at 0x12f8c75b0>, <_ast.Name object at 0x12f8c75e0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"clf(0)$3" -> "[<_ast.Name object at 0x7fd4c09a22b0>, <_ast.Name object at 0x7fd4c09a22e0>](0)"	[label=train];
+	"[<_ast.Name object at 0x7fd4c09a22b0>, <_ast.Name object at 0x7fd4c09a22e0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"oof_lgb_3(0)$1" -> "train(0)$21"	[label=predict];
+	"oof_lgb_3(0)$1" -> "val_idx(0)"	[label=predict];
+	"oof_lgb_3(0)$1" -> "train_columns(0)$0"	[label=predict];
+	"oof_lgb_3(0)$1" -> "oof_lgb_3(0)$0"	[label=predict];
+	"oof_lgb_3(0)$1" -> "clf(0)$3"	[label=predict];
 	"predictions_lgb_3(0)$1" -> "folds(0)$2"	[label=Add];
 	"predictions_lgb_3(0)$1" -> "test(0)$13"	[label=Add];
 	"predictions_lgb_3(0)$1" -> "train_columns(0)$0"	[label=Add];
 	"predictions_lgb_3(0)$1" -> "predictions_lgb_3(0)$0"	[label=Add];
 	"predictions_lgb_3(0)$1" -> "clf(0)$3"	[label=Add];
-	"np(0)$6" -> "oof_lgb_3(0)$1"	[label=save];
 	"np(0)$6" -> "np(0)$5"	[label=save];
+	"np(0)$6" -> "oof_lgb_3(0)$1"	[label=save];
 	"np(0)$7" -> "predictions_lgb_3(0)$1"	[label=save];
 	"np(0)$7" -> "np(0)$6"	[label=save];
+	"CV score: {:<8.5f}(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[632/0]" -> "mean_squared_error(0)"	[label=print];
+	"print[632/0]" -> "target(0)$2"	[label=print];
+	"print[632/0]" -> "oof_lgb_3(0)$1"	[label=print];
+	"print[632/0]" -> "CV score: {:<8.5f}(0)"	[label=print];
+	"print[632/0]" -> "0.5(0)"	[label=print];
+	"0.5(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"eta(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"xgb_params(0)$0" -> "True(0)"	[label=assignedFrom];
 	"xgb_params(0)$0" -> "objective(0)"	[label=assignedFrom];
@@ -1106,40 +1101,52 @@ object at 0x12f8dc4f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipyn
 	"predictions_xgb_3(0)$0" -> "len(0)"	[label=zeros];
 	"predictions_xgb_3(0)$0" -> "test(0)$13"	[label=zeros];
 	"predictions_xgb_3(0)$0" -> "np(0)$7"	[label=zeros];
+	"print[642/4]" -> "-(0)"	[label=print];
+	"print[643/4]" -> "1(0)"	[label=print];
+	"print[643/4]" -> "fold_(0)"	[label=print];
+	"print[643/4]" -> "Fold {}(0)"	[label=print];
 	"trn_data(0)$5" -> "xgb(0)"	[label=DMatrix];
-	"trn_data(0)$5" -> "target(0)$2"	[label=DMatrix];
 	"trn_data(0)$5" -> "train(0)$21"	[label=DMatrix];
 	"trn_data(0)$5" -> "trn_idx(0)"	[label=DMatrix];
 	"trn_data(0)$5" -> "train_columns(0)$0"	[label=DMatrix];
+	"trn_data(0)$5" -> "target(0)$2"	[label=DMatrix];
 	"val_data(0)$5" -> "xgb(0)"	[label=DMatrix];
-	"val_data(0)$5" -> "target(0)$2"	[label=DMatrix];
 	"val_data(0)$5" -> "train(0)$21"	[label=DMatrix];
 	"val_data(0)$5" -> "val_idx(0)"	[label=DMatrix];
 	"val_data(0)$5" -> "train_columns(0)$0"	[label=DMatrix];
-	"[<_ast.Tuple object at 0x12fb05d30>, <_ast.Tuple object at 0x12fb05dc0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
-	"watchlist(0)$0" -> "[<_ast.Tuple object at 0x12fb05d30>, <_ast.Tuple object at 0x12fb05dc0>](0)"	[label=assignedFrom];
+	"val_data(0)$5" -> "target(0)$2"	[label=DMatrix];
+	"[<_ast.Tuple object at 0x7fd4c09a3a60>, <_ast.Tuple object at 0x7fd4c09a3af0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"watchlist(0)$0" -> "[<_ast.Tuple object at 0x7fd4c09a3a60>, <_ast.Tuple object at 0x7fd4c09a3af0>](0)"	[label=assignedFrom];
+	"xgb (0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"print[647/4]" -> "fold_(0)"	[label=print];
+	"print[647/4]" -> "-(0)"	[label=print];
+	"print[647/4]" -> "xgb (0)"	[label=print];
+	"print[647/4]" -> "str(0)"	[label=print];
+	"print[647/4]" -> "50(0)"	[label=print];
+	"str(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"50(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"num_round(0)$2" -> "10000(0)"	[label=assignedFrom];
 	"xgb_model(0)$0" -> "xgb(0)"	[label=train];
-	"xgb_model(0)$0" -> "50(0)"	[label=train];
 	"xgb_model(0)$0" -> "xgb_params(0)$0"	[label=train];
 	"xgb_model(0)$0" -> "trn_data(0)$5"	[label=train];
 	"xgb_model(0)$0" -> "watchlist(0)$0"	[label=train];
+	"xgb_model(0)$0" -> "50(0)"	[label=train];
 	"xgb_model(0)$0" -> "num_round(0)$2"	[label=train];
 	"xgb_model(0)$0" -> "1000(0)"	[label=train];
 	"1000(0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"oof_xgb_3(0)$1" -> "xgb(0)"	[label=predict];
-	"oof_xgb_3(0)$1" -> "50(0)"	[label=predict];
 	"oof_xgb_3(0)$1" -> "train(0)$21"	[label=predict];
 	"oof_xgb_3(0)$1" -> "val_idx(0)"	[label=predict];
 	"oof_xgb_3(0)$1" -> "train_columns(0)$0"	[label=predict];
 	"oof_xgb_3(0)$1" -> "oof_xgb_3(0)$0"	[label=predict];
+	"oof_xgb_3(0)$1" -> "50(0)"	[label=predict];
 	"oof_xgb_3(0)$1" -> "xgb_model(0)$0"	[label=predict];
 	"predictions_xgb_3(0)$1" -> "xgb(0)"	[label=Add];
-	"predictions_xgb_3(0)$1" -> "50(0)"	[label=Add];
 	"predictions_xgb_3(0)$1" -> "folds(0)$3"	[label=Add];
 	"predictions_xgb_3(0)$1" -> "test(0)$13"	[label=Add];
 	"predictions_xgb_3(0)$1" -> "train_columns(0)$0"	[label=Add];
 	"predictions_xgb_3(0)$1" -> "predictions_xgb_3(0)$0"	[label=Add];
+	"predictions_xgb_3(0)$1" -> "50(0)"	[label=Add];
 	"predictions_xgb_3(0)$1" -> "xgb_model(0)$0"	[label=Add];
 	"np(0)$8" -> "np(0)$7"	[label=save];
 	"np(0)$8" -> "oof_xgb_3(0)$1"	[label=save];
@@ -1149,28 +1156,30 @@ object at 0x12f8dc4f0>](0)" -> "eloda-with-feature-engineering-and-stacking.ipyn
 	"np(0)$10" -> "target(0)$2"	[label=sqrt];
 	"np(0)$10" -> "oof_xgb_3(0)$1"	[label=sqrt];
 	"np(0)$10" -> "np(0)$9"	[label=sqrt];
-	"[<_ast.Name object at 0x12faff3d0>, <_ast.Name object at 0x12faff400>, <_ast.Name object at 0x12faff430>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c09ba0d0>, <_ast.Name object at 0x7fd4c09ba100>, <_ast.Name object at 0x7fd4c09ba130>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"test_stack(0)$0" -> "np(0)$10"	[label=transpose];
-	"test_stack(0)$0" -> "[<_ast.Name object at 0x12faff5e0>, <_ast.Name object at 0x12faff610>, <_ast.Name object at 0x12faff640>](0)"	[label=transpose];
-	"[<_ast.Name object at 0x12faff5e0>, <_ast.Name object at 0x12faff610>, <_ast.Name object at 0x12faff640>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
+	"test_stack(0)$0" -> "[<_ast.Name object at 0x7fd4c09ba2e0>, <_ast.Name object at 0x7fd4c09ba310>, <_ast.Name object at 0x7fd4c09ba340>](0)"	[label=transpose];
+	"[<_ast.Name object at 0x7fd4c09ba2e0>, <_ast.Name object at 0x7fd4c09ba310>, <_ast.Name object at 0x7fd4c09ba340>](0)" -> "eloda-with-feature-engineering-and-stacking.ipynb"	[label=appearsIn];
 	"oof(0)$0" -> "0(0)"	[label=zeros];
 	"oof(0)$0" -> "train_stack(0)$0"	[label=zeros];
 	"oof(0)$0" -> "np(0)$10"	[label=zeros];
 	"predictions(0)$0" -> "0(0)"	[label=zeros];
 	"predictions(0)$0" -> "np(0)$10"	[label=zeros];
 	"predictions(0)$0" -> "test_stack(0)$0"	[label=zeros];
-	"trn_data(0)$6" -> "target(0)$2"	[label=assignedFrom];
+	"print[665/4]" -> "fold_(0)"	[label=print];
+	"print[665/4]" -> "fold n°{}(0)"	[label=print];
 	"trn_data(0)$6" -> "train_stack(0)$0"	[label=assignedFrom];
 	"trn_data(0)$6" -> "trn_idx(0)"	[label=assignedFrom];
-	"trn_y(0)$1" -> "target(0)$2"	[label=assignedFrom];
+	"trn_data(0)$6" -> "target(0)$2"	[label=assignedFrom];
 	"trn_y(0)$1" -> "train_stack(0)$0"	[label=assignedFrom];
 	"trn_y(0)$1" -> "trn_idx(0)"	[label=assignedFrom];
-	"val_data(0)$6" -> "target(0)$2"	[label=assignedFrom];
+	"trn_y(0)$1" -> "target(0)$2"	[label=assignedFrom];
 	"val_data(0)$6" -> "train_stack(0)$0"	[label=assignedFrom];
 	"val_data(0)$6" -> "val_idx(0)"	[label=assignedFrom];
-	"val_y(0)$1" -> "target(0)$2"	[label=assignedFrom];
+	"val_data(0)$6" -> "target(0)$2"	[label=assignedFrom];
 	"val_y(0)$1" -> "train_stack(0)$0"	[label=assignedFrom];
 	"val_y(0)$1" -> "val_idx(0)"	[label=assignedFrom];
+	"val_y(0)$1" -> "target(0)$2"	[label=assignedFrom];
 	"clf(0)$4" -> "1(0)"	[label=Ridge];
 	"clf(0)$5" -> "trn_data(0)$6"	[label=fit];
 	"clf(0)$5" -> "trn_y(0)$1"	[label=fit];

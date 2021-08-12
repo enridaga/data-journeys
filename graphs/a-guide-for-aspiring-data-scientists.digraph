@@ -46,27 +46,15 @@ digraph "" {
 	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
 	"ignore(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"True(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "True(0)"	[label=init_notebook_mode];
+	"init_notebook_mode[15/0]" -> "True(0)"	[label=init_notebook_mode];
 	"pd(0)$0" -> "pd(0)"	[label=set_option];
 	"pd(0)$0" -> "display.max_columns(0)"	[label=set_option];
 	"pd(0)$0" -> "None(0)"	[label=set_option];
 	"display.max_columns(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"None(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "i(0)"	[label=print];
-	"i(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"i(0)" -> "question(0)$0"	[label=iteratorOf];
-	"i(0)" -> "range(0)"	[label=iteratorOf];
-	"i(0)" -> "1(0)"	[label=iteratorOf];
-	"i(0)" -> "12(0)"	[label=iteratorOf];
-	"i(0)" -> "8(0)"	[label=iteratorOf];
-	"i(0)" -> "7(0)"	[label=iteratorOf];
-	"i(0)" -> "6(0)"	[label=iteratorOf];
+	"print[17/0]" -> "os(0)"	[label=print];
+	"print[17/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "question(0)$0"	[label=print];
-	"question(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"question(0)$0" -> "/kaggle/input/kaggle-survey-2019/questions_only.csv(0)"	[label=read_csv];
 	"pd(0)$1" -> "pd(0)$0"	[label=set_option];
 	"pd(0)$1" -> "display.max_columns(0)"	[label=set_option];
 	"pd(0)$1" -> "None(0)"	[label=set_option];
@@ -78,26 +66,37 @@ digraph "" {
 	"mcq(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"mcq(0)$0" -> "/kaggle/input/kaggle-survey-2019/multiple_choice_responses.csv(0)"	[label=read_csv];
 	"/kaggle/input/kaggle-survey-2019/multiple_choice_responses.csv(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"question(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"question(0)$0" -> "/kaggle/input/kaggle-survey-2019/questions_only.csv(0)"	[label=read_csv];
 	"/kaggle/input/kaggle-survey-2019/questions_only.csv(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"text_response(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"text_response(0)$0" -> "/kaggle/input/kaggle-survey-2019/other_text_responses.csv(0)"	[label=read_csv];
 	"/kaggle/input/kaggle-survey-2019/other_text_responses.csv(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"col(0)$0" -> "question(0)$0"	[label=assignedFrom];
 	"range(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"i(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"i(0)" -> "question(0)$0"	[label=iteratorOf];
+	"i(0)" -> "range(0)"	[label=iteratorOf];
+	"i(0)" -> "1(0)"	[label=iteratorOf];
+	"i(0)" -> "12(0)"	[label=iteratorOf];
+	"i(0)" -> "8(0)"	[label=iteratorOf];
+	"i(0)" -> "7(0)"	[label=iteratorOf];
+	"i(0)" -> "6(0)"	[label=iteratorOf];
 	"1(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"12(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"8(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"7(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"6(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"print[2]" -> "col(0)$0"	[label=print];
-	"print[3]" -> "i(0)"	[label=print];
+	"print[27/4]" -> "question(0)$0"	[label=print];
+	"print[27/4]" -> "col(0)$0"	[label=print];
+	"print[27/4]" -> "i(0)"	[label=print];
 	"c(0)$0" -> "pd(0)$1"	[label=value_counts];
 	"c(0)$0" -> "mcq(0)$0"	[label=value_counts];
 	"d(0)$0" -> "pd(0)$1"	[label=DataFrame];
 	"d(0)$0" -> "c(0)$0"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fadec10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0ee0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"d(0)$1" -> "d(0)$0"	[label=assignedFrom];
-	"d(0)$1" -> "[<_ast.Constant object at 0x12fadec10>](0)"	[label=assignedFrom];
+	"d(0)$1" -> "[<_ast.Constant object at 0x7fd5007f0ee0>](0)"	[label=assignedFrom];
 	"d(0)$2" -> "True(0)"	[label=sort_values];
 	"d(0)$2" -> "d(0)$1"	[label=sort_values];
 	"d(0)$2" -> "9(0)"	[label=sort_values];
@@ -110,8 +109,8 @@ digraph "" {
 	"d(0)$3" -> "d(0)$3"	[label=to_numeric];
 	"d(0)$3" -> "coerce(0)"	[label=to_numeric];
 	"coerce(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12fade550>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Call object at 0x12fade550>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd5007f0fd0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Call object at 0x7fd5007f0fd0>](0)"	[label=assignedFrom];
 	"layout(0)$0" -> "go(0)"	[label=Layout];
 	"layout(0)$0" -> "True(0)"	[label=Layout];
 	"layout(0)$0" -> "500(0)"	[label=Layout];
@@ -122,7 +121,7 @@ digraph "" {
 	"layout(0)$0" -> "5(0)"	[label=Layout];
 	"layout(0)$0" -> "False(0)"	[label=Layout];
 	"layout(0)$0" -> "2(0)"	[label=Layout];
-	"layout(0)$0" -> "[<_ast.Constant object at 0x12f8f55e0>, <_ast.Constant object at 0x12f8f5370>](0)"	[label=Layout];
+	"layout(0)$0" -> "[<_ast.Constant object at 0x7fd50085b700>, <_ast.Constant object at 0x7fd50085bbb0>](0)"	[label=Layout];
 	"layout(0)$0" -> "10(0)"	[label=Layout];
 	"500(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Job role wise contribution in the survey(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
@@ -132,7 +131,7 @@ digraph "" {
 	"5(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"False(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"2(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f55e0>, <_ast.Constant object at 0x12f8f5370>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b700>, <_ast.Constant object at 0x7fd50085bbb0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"10(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "data(0)$0"	[label=Figure];
@@ -156,22 +155,22 @@ digraph "" {
 	"gender(0)$0" -> "df(0)$0"	[label=value_counts];
 	"gender(0)$0" -> "Q2(0)"	[label=value_counts];
 	"Q2(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant \
-object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fbe0>, <_\
-ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant \
-object at 0x12fc4f700>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"age(0)$0" -> "[<_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant \
-object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fbe0>, <_\
-ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant \
-object at 0x12fc4f700>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant \
-object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4fa60>, <_\
-ast.Constant object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4f160>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"value(0)$0" -> "[<_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant \
-object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4fa60>, <_\
-ast.Constant object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4f160>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc2e0>, <_\
+ast.Constant object at 0x7fd4c04cc2b0>, <_ast.Constant object at 0x7fd4c04cc700>, <_ast.Constant object at 0x7fd4c04cc8e0>, <_ast.Constant \
+object at 0x7fd4c04cc0d0>, <_ast.Constant object at 0x7fd4c04ccfa0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant object \
+at 0x7fd4c04cc760>, <_ast.Constant object at 0x7fd4c04cc4f0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"age(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc2e0>, <_\
+ast.Constant object at 0x7fd4c04cc2b0>, <_ast.Constant object at 0x7fd4c04cc700>, <_ast.Constant object at 0x7fd4c04cc8e0>, <_ast.Constant \
+object at 0x7fd4c04cc0d0>, <_ast.Constant object at 0x7fd4c04ccfa0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant object \
+at 0x7fd4c04cc760>, <_ast.Constant object at 0x7fd4c04cc4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc820>, <_ast.Constant object at 0x7fd4c04cc100>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_\
+ast.Constant object at 0x7fd4c04ccac0>, <_ast.Constant object at 0x7fd4c04ccb20>, <_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant \
+object at 0x7fd4c04ccee0>, <_ast.Constant object at 0x7fd4c04cccd0>, <_ast.Constant object at 0x7fd4c04cc0a0>, <_ast.Constant object \
+at 0x7fd4c04cc490>, <_ast.Constant object at 0x7fd4c04ccbb0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"value(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc820>, <_ast.Constant object at 0x7fd4c04cc100>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_\
+ast.Constant object at 0x7fd4c04ccac0>, <_ast.Constant object at 0x7fd4c04ccb20>, <_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant \
+object at 0x7fd4c04ccee0>, <_ast.Constant object at 0x7fd4c04cccd0>, <_ast.Constant object at 0x7fd4c04cc0a0>, <_ast.Constant object \
+at 0x7fd4c04cc490>, <_ast.Constant object at 0x7fd4c04ccbb0>](0)"	[label=assignedFrom];
 	"trace0(0)$0" -> "go(0)"	[label=Bar];
 	"trace0(0)$0" -> "dict(0)"	[label=Bar];
 	"trace0(0)$0" -> "(0)"	[label=Bar];
@@ -188,12 +187,12 @@ object at 0x12fc4f160>](0)"	[label=assignedFrom];
 	"trace1(0)$0" -> "#2c2f33(0)"	[label=Scatter];
 	" (0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"#2c2f33(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ebb0>, <_ast.Constant object at 0x12f85e670>, <_ast.Constant object at 0x12f85ea00>, <_ast.Constant \
-object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85e7f0>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12f85ebb0>, <_ast.Constant object at 0x12f85e670>, <_ast.Constant object at 0x12f85ea00>, <_ast.Constant \
-object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85e7f0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff9d0>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff340>, <_\
+ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant \
+object at 0x7fd4c04fff70>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff9d0>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff340>, <_\
+ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant \
+object at 0x7fd4c04fff70>](0)"	[label=assignedFrom];
 	"counts(0)$0" -> "True(0)"	[label=value_counts];
 	"counts(0)$0" -> "df(0)$0"	[label=value_counts];
 	"counts(0)$0" -> "Q4(0)"	[label=value_counts];
@@ -207,11 +206,11 @@ object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant ob
 	"trace2(0)$0" -> "values(0)$0"	[label=Pie];
 	"fig(0)$4" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$4" -> "2(0)"	[label=make_subplots];
-	"fig(0)$4" -> "[<_ast.List object at 0x12f9514c0>, <_ast.List object at 0x12f9519a0>](0)"	[label=make_subplots];
+	"fig(0)$4" -> "[<_ast.List object at 0x7fd4c04ff670>, <_ast.List object at 0x7fd4c04ffa00>](0)"	[label=make_subplots];
 	"fig(0)$4" -> "Gender(0)"	[label=make_subplots];
 	"fig(0)$4" -> "Highest Education(0)"	[label=make_subplots];
 	"fig(0)$4" -> "Age(0)"	[label=make_subplots];
-	"[<_ast.List object at 0x12f9514c0>, <_ast.List object at 0x12f9519a0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd4c04ff670>, <_ast.List object at 0x7fd4c04ffa00>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Gender(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Highest Education(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Age(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
@@ -293,10 +292,10 @@ object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant ob
 	"fig(0)$9" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$9" -> "1(0)"	[label=make_subplots];
 	"fig(0)$9" -> "2(0)"	[label=make_subplots];
-	"fig(0)$9" -> "[<_ast.List object at 0x12f891b20>, <_ast.List object at 0x12f891ee0>](0)"	[label=make_subplots];
+	"fig(0)$9" -> "[<_ast.List object at 0x7fd5009a85b0>, <_ast.List object at 0x7fd5009a80a0>](0)"	[label=make_subplots];
 	"fig(0)$9" -> "MOOC(Massive Open Online Courses)(0)"	[label=make_subplots];
 	"fig(0)$9" -> "Media Source(0)"	[label=make_subplots];
-	"[<_ast.List object at 0x12f891b20>, <_ast.List object at 0x12f891ee0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd5009a85b0>, <_ast.List object at 0x7fd5009a80a0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"MOOC(Massive Open Online Courses)(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Media Source(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"fig(0)$10" -> "1(0)"	[label=append_trace];
@@ -329,12 +328,12 @@ object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant ob
 	"x(0)$1" -> "text(0)$2"	[label=append];
 	"y(0)$1" -> "y(0)$0"	[label=append];
 	"y(0)$1" -> "value(0)$3"	[label=append];
-	"[<_ast.Constant object at 0x12f88e970>, <_ast.Constant object at 0x12f88e940>, <_ast.Constant object at 0x12f88e910>, <_ast.Constant \
-object at 0x12f88e8b0>, <_ast.Constant object at 0x12f88e880>, <_ast.Constant object at 0x12f88e850>, <_ast.Constant object at 0x12f88ea30>, <_\
-ast.Constant object at 0x12f88ec40>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"x_new(0)$0" -> "[<_ast.Constant object at 0x12f88e970>, <_ast.Constant object at 0x12f88e940>, <_ast.Constant object at 0x12f88e910>, <_ast.Constant \
-object at 0x12f88e8b0>, <_ast.Constant object at 0x12f88e880>, <_ast.Constant object at 0x12f88e850>, <_ast.Constant object at 0x12f88ea30>, <_\
-ast.Constant object at 0x12f88ec40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a85e0>, <_ast.Constant object at 0x7fd4c04a8610>, <_ast.Constant object at 0x7fd4c04a8640>, <_\
+ast.Constant object at 0x7fd4c04a8670>, <_ast.Constant object at 0x7fd4c04a86a0>, <_ast.Constant object at 0x7fd4c04a86d0>, <_ast.Constant \
+object at 0x7fd4c04a8700>, <_ast.Constant object at 0x7fd4c04a8730>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"x_new(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a85e0>, <_ast.Constant object at 0x7fd4c04a8610>, <_ast.Constant object at 0x7fd4c04a8640>, <_\
+ast.Constant object at 0x7fd4c04a8670>, <_ast.Constant object at 0x7fd4c04a86a0>, <_ast.Constant object at 0x7fd4c04a86d0>, <_ast.Constant \
+object at 0x7fd4c04a8700>, <_ast.Constant object at 0x7fd4c04a8730>](0)"	[label=assignedFrom];
 	"x_new(0)$1" -> "numpy(0)"	[label=array];
 	"x_new(0)$1" -> "x_new(0)$1"	[label=array];
 	"y(0)$2" -> "numpy(0)"	[label=array];
@@ -353,8 +352,8 @@ ast.Constant object at 0x12f88ec40>](0)"	[label=assignedFrom];
 	"trace0(0)$2" -> "0.6(0)"	[label=Bar];
 	"#420666(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"0.6(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9a46d0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x12f9a46d0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04a73d0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd4c04a73d0>](0)"	[label=assignedFrom];
 	"layout(0)$1" -> "go(0)"	[label=Layout];
 	"layout(0)$1" -> "Activities that make up most of their time at work(0)"	[label=Layout];
 	"Activities that make up most of their time at work(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
@@ -364,14 +363,14 @@ ast.Constant object at 0x12f88ec40>](0)"	[label=assignedFrom];
 	"fig(0)$14" -> "fig(0)$13"	[label=update_layout];
 	"py(0)$3" -> "py(0)$2"	[label=iplot];
 	"py(0)$3" -> "fig(0)$14"	[label=iplot];
-	"[<_ast.Constant object at 0x12f8a11f0>, <_ast.Constant object at 0x12f8a1220>, <_ast.Constant object at 0x12f8a1250>, <_ast.Constant \
-object at 0x12f8a1280>, <_ast.Constant object at 0x12f8a12b0>, <_ast.Constant object at 0x12f8a12e0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"years(0)$0" -> "[<_ast.Constant object at 0x12f8a11f0>, <_ast.Constant object at 0x12f8a1220>, <_ast.Constant object at 0x12f8a1250>, <_ast.Constant \
-object at 0x12f8a1280>, <_ast.Constant object at 0x12f8a12b0>, <_ast.Constant object at 0x12f8a12e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a13d0>, <_ast.Constant object at 0x12f8a1400>, <_ast.Constant object at 0x12f8a1430>, <_ast.Constant \
-object at 0x12f8a1460>, <_ast.Constant object at 0x12f8a1490>, <_ast.Constant object at 0x12f8a14c0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"values(0)$1" -> "[<_ast.Constant object at 0x12f8a13d0>, <_ast.Constant object at 0x12f8a1400>, <_ast.Constant object at 0x12f8a1430>, <_ast.Constant \
-object at 0x12f8a1460>, <_ast.Constant object at 0x12f8a1490>, <_ast.Constant object at 0x12f8a14c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a7eb0>, <_ast.Constant object at 0x7fd4c04a7ee0>, <_ast.Constant object at 0x7fd4c04a7f10>, <_\
+ast.Constant object at 0x7fd4c04a7f40>, <_ast.Constant object at 0x7fd4c04a7f70>, <_ast.Constant object at 0x7fd4c04a7fa0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"years(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a7eb0>, <_ast.Constant object at 0x7fd4c04a7ee0>, <_ast.Constant object at 0x7fd4c04a7f10>, <_\
+ast.Constant object at 0x7fd4c04a7f40>, <_ast.Constant object at 0x7fd4c04a7f70>, <_ast.Constant object at 0x7fd4c04a7fa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant object at 0x7fd4c04ac100>, <_ast.Constant object at 0x7fd4c04ac130>, <_\
+ast.Constant object at 0x7fd4c04ac160>, <_ast.Constant object at 0x7fd4c04ac190>, <_ast.Constant object at 0x7fd4c04ac1c0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"values(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant object at 0x7fd4c04ac100>, <_ast.Constant object at 0x7fd4c04ac130>, <_\
+ast.Constant object at 0x7fd4c04ac160>, <_ast.Constant object at 0x7fd4c04ac190>, <_ast.Constant object at 0x7fd4c04ac1c0>](0)"	[label=assignedFrom];
 	"tool(0)$0" -> "df(0)$0"	[label=assignedFrom];
 	"tool(0)$0" -> "Q14(0)"	[label=assignedFrom];
 	"Q14(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
@@ -403,10 +402,10 @@ object at 0x12f8a1460>, <_ast.Constant object at 0x12f8a1490>, <_ast.Constant ob
 	"trace0(0)$3" -> "values(0)$1"	[label=Bar];
 	"trace0(0)$3" -> "#008080(0)"	[label=Bar];
 	"#008080(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a2970>, <_ast.Constant object at 0x12f8a29a0>, <_ast.Constant object at 0x12f8a29d0>, <_ast.Constant \
-object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"tool(0)$1" -> "[<_ast.Constant object at 0x12f8a2970>, <_ast.Constant object at 0x12f8a29a0>, <_ast.Constant object at 0x12f8a29d0>, <_ast.Constant \
-object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04af670>, <_ast.Constant object at 0x7fd4c04af6a0>, <_ast.Constant object at 0x7fd4c04af6d0>, <_\
+ast.Constant object at 0x7fd4c04af700>, <_ast.Constant object at 0x7fd4c04af730>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"tool(0)$1" -> "[<_ast.Constant object at 0x7fd4c04af670>, <_ast.Constant object at 0x7fd4c04af6a0>, <_ast.Constant object at 0x7fd4c04af6d0>, <_\
+ast.Constant object at 0x7fd4c04af700>, <_ast.Constant object at 0x7fd4c04af730>](0)"	[label=assignedFrom];
 	"trace1(0)$2" -> "go(0)"	[label=Bar];
 	"trace1(0)$2" -> "dict(0)"	[label=Bar];
 	"trace1(0)$2" -> "False(0)"	[label=Bar];
@@ -425,11 +424,11 @@ object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>](0)"	[label=assign
 	"#004c4c(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"fig(0)$15" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$15" -> "2(0)"	[label=make_subplots];
-	"fig(0)$15" -> "[<_ast.List object at 0x12f87a5e0>, <_ast.List object at 0x12f87a730>](0)"	[label=make_subplots];
+	"fig(0)$15" -> "[<_ast.List object at 0x7fd50081d2e0>, <_ast.List object at 0x7fd50081d430>](0)"	[label=make_subplots];
 	"fig(0)$15" -> "Years spent writing code to Analyze data(0)"	[label=make_subplots];
 	"fig(0)$15" -> "Tools used to analyze (0)"	[label=make_subplots];
 	"fig(0)$15" -> "Vis library(0)"	[label=make_subplots];
-	"[<_ast.List object at 0x12f87a5e0>, <_ast.List object at 0x12f87a730>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd50081d2e0>, <_ast.List object at 0x7fd50081d430>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Years spent writing code to Analyze data(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Tools used to analyze (0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Vis library(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
@@ -448,21 +447,21 @@ object at 0x12f8a2a00>, <_ast.Constant object at 0x12f8a2a30>](0)"	[label=assign
 	"py(0)$4" -> "py(0)$3"	[label=iplot];
 	"py(0)$4" -> "fig(0)$19"	[label=iplot];
 	"ml_exp(0)$0" -> "pd(0)$1"	[label=concat];
-	"ml_exp(0)$0" -> "[<_ast.Call object at 0x12f8a37c0>, <_ast.Call object at 0x12f8a3a90>, <_ast.Call object at 0x12f8a3cd0>, <_ast.Call object at 0x12f8a3f70>, <_\
-ast.Call object at 0x12f8951c0>, <_ast.Call object at 0x12f895430>, <_ast.Call object at 0x12f8956a0>, <_ast.Call object at 0x12f895910>, <_\
-ast.Call object at 0x12f895b80>, <_ast.Call object at 0x12f895df0>, <_ast.Call object at 0x12f8860a0>, <_ast.Call object at 0x12f886310>](\
-0)"	[label=concat];
-	"[<_ast.Call object at 0x12f8a37c0>, <_ast.Call object at 0x12f8a3a90>, <_ast.Call object at 0x12f8a3cd0>, <_ast.Call object at 0x12f8a3f70>, <_\
-ast.Call object at 0x12f8951c0>, <_ast.Call object at 0x12f895430>, <_ast.Call object at 0x12f8956a0>, <_ast.Call object at 0x12f895910>, <_\
-ast.Call object at 0x12f895b80>, <_ast.Call object at 0x12f895df0>, <_ast.Call object at 0x12f8860a0>, <_ast.Call object at 0x12f886310>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"ml_exp(0)$0" -> "[<_ast.Call object at 0x7fd500835580>, <_ast.Call object at 0x7fd500835610>, <_ast.Call object at 0x7fd500835a60>, <_ast.Call object \
+at 0x7fd500835ca0>, <_ast.Call object at 0x7fd500835dc0>, <_ast.Call object at 0x7fd50081c130>, <_ast.Call object at 0x7fd50081c3a0>, <_\
+ast.Call object at 0x7fd50081c610>, <_ast.Call object at 0x7fd50081c880>, <_ast.Call object at 0x7fd50081caf0>, <_ast.Call object \
+at 0x7fd50081cd60>, <_ast.Call object at 0x7fd50081cfd0>](0)"	[label=concat];
+	"[<_ast.Call object at 0x7fd500835580>, <_ast.Call object at 0x7fd500835610>, <_ast.Call object at 0x7fd500835a60>, <_ast.Call object \
+at 0x7fd500835ca0>, <_ast.Call object at 0x7fd500835dc0>, <_ast.Call object at 0x7fd50081c130>, <_ast.Call object at 0x7fd50081c3a0>, <_\
+ast.Call object at 0x7fd50081c610>, <_ast.Call object at 0x7fd50081c880>, <_ast.Call object at 0x7fd50081caf0>, <_ast.Call object \
+at 0x7fd50081cd60>, <_ast.Call object at 0x7fd50081cfd0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"ml_exp(0)$1" -> "ml_exp(0)$0"	[label=assignedFrom];
-	"ml_exp(0)$1" -> "[<_ast.Constant object at 0x12f8866a0>, <_ast.Constant object at 0x12f8866d0>, <_ast.Constant object at 0x12f886700>, <_ast.Constant \
-object at 0x12f886730>, <_ast.Constant object at 0x12f886760>, <_ast.Constant object at 0x12f886790>, <_ast.Constant object at 0x12f8867c0>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8866a0>, <_ast.Constant object at 0x12f8866d0>, <_ast.Constant object at 0x12f886700>, <_ast.Constant \
-object at 0x12f886730>, <_ast.Constant object at 0x12f886760>, <_ast.Constant object at 0x12f886790>, <_ast.Constant object at 0x12f8867c0>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"ml_exp(0)$1" -> "[<_ast.Constant object at 0x7fd50082a3d0>, <_ast.Constant object at 0x7fd50082a400>, <_ast.Constant object at 0x7fd50082a430>, <_\
+ast.Constant object at 0x7fd50082a460>, <_ast.Constant object at 0x7fd50082a490>, <_ast.Constant object at 0x7fd50082a4c0>, <_ast.Constant \
+object at 0x7fd50082a4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082a3d0>, <_ast.Constant object at 0x7fd50082a400>, <_ast.Constant object at 0x7fd50082a430>, <_\
+ast.Constant object at 0x7fd50082a460>, <_ast.Constant object at 0x7fd50082a490>, <_ast.Constant object at 0x7fd50082a4c0>, <_ast.Constant \
+object at 0x7fd50082a4f0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"ml_exp(0)$2" -> "0(0)"	[label=fillna];
 	"ml_exp(0)$2" -> "ml_exp(0)$1"	[label=fillna];
 	"trace1(0)$3" -> "go(0)"	[label=Bar];
@@ -514,10 +513,12 @@ object at 0x12f886730>, <_ast.Constant object at 0x12f886760>, <_ast.Constant ob
 	"trace7(0)$0" -> "#b35a00(0)"	[label=Bar];
 	"10-15 years(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"#b35a00(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f88fdc0>, <_ast.Name object at 0x12f88fdf0>, <_ast.Name object at 0x12f88fe20>, <_ast.Name object at 0x12f88fe50>, <_\
-ast.Name object at 0x12f88fe80>, <_ast.Name object at 0x12f88feb0>, <_ast.Name object at 0x12f88fee0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x12f88fdc0>, <_ast.Name object at 0x12f88fdf0>, <_ast.Name object at 0x12f88fe20>, <_ast.Name object at 0x12f88fe50>, <_\
-ast.Name object at 0x12f88fe80>, <_ast.Name object at 0x12f88feb0>, <_ast.Name object at 0x12f88fee0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500818ac0>, <_ast.Name object at 0x7fd500818af0>, <_ast.Name object at 0x7fd500818b50>, <_ast.Name object \
+at 0x7fd500818b80>, <_ast.Name object at 0x7fd500818bb0>, <_ast.Name object at 0x7fd500818be0>, <_ast.Name object at 0x7fd500818c10>](\
+0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd500818ac0>, <_ast.Name object at 0x7fd500818af0>, <_ast.Name object at 0x7fd500818b50>, <_ast.Name object \
+at 0x7fd500818b80>, <_ast.Name object at 0x7fd500818bb0>, <_ast.Name object at 0x7fd500818be0>, <_ast.Name object at 0x7fd500818c10>](\
+0)"	[label=assignedFrom];
 	"layout(0)$2" -> "go(0)"	[label=Layout];
 	"layout(0)$2" -> "(0)"	[label=Layout];
 	"layout(0)$2" -> "group(0)"	[label=Layout];
@@ -536,21 +537,21 @@ ast.Name object at 0x12f88fe80>, <_ast.Name object at 0x12f88feb0>, <_ast.Name o
 	"py(0)$5" -> "py(0)$4"	[label=iplot];
 	"py(0)$5" -> "fig(0)$20"	[label=iplot];
 	"ml_exp(0)$3" -> "pd(0)$1"	[label=concat];
-	"ml_exp(0)$3" -> "[<_ast.Call object at 0x12f894910>, <_ast.Call object at 0x12f894b50>, <_ast.Call object at 0x12f894df0>, <_ast.Call object at 0x130bba070>, <_\
-ast.Call object at 0x130bba310>, <_ast.Call object at 0x130bba550>, <_ast.Call object at 0x130bba820>, <_ast.Call object at 0x130bba790>, <_\
-ast.Call object at 0x130bbacd0>, <_ast.Call object at 0x130bbaf40>, <_ast.Call object at 0x130bb41c0>, <_ast.Call object at 0x130bb4430>](\
-0)"	[label=concat];
-	"[<_ast.Call object at 0x12f894910>, <_ast.Call object at 0x12f894b50>, <_ast.Call object at 0x12f894df0>, <_ast.Call object at 0x130bba070>, <_\
-ast.Call object at 0x130bba310>, <_ast.Call object at 0x130bba550>, <_ast.Call object at 0x130bba820>, <_ast.Call object at 0x130bba790>, <_\
-ast.Call object at 0x130bbacd0>, <_ast.Call object at 0x130bbaf40>, <_ast.Call object at 0x130bb41c0>, <_ast.Call object at 0x130bb4430>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"ml_exp(0)$3" -> "[<_ast.Call object at 0x7fd5008115e0>, <_ast.Call object at 0x7fd500811880>, <_ast.Call object at 0x7fd500811ac0>, <_ast.Call object \
+at 0x7fd500811d30>, <_ast.Call object at 0x7fd500811fd0>, <_ast.Call object at 0x7fd50082d250>, <_ast.Call object at 0x7fd50082d520>, <_\
+ast.Call object at 0x7fd50082d490>, <_ast.Call object at 0x7fd50082d9d0>, <_ast.Call object at 0x7fd50082dc40>, <_ast.Call object \
+at 0x7fd50082de80>, <_ast.Call object at 0x7fd50082c130>](0)"	[label=concat];
+	"[<_ast.Call object at 0x7fd5008115e0>, <_ast.Call object at 0x7fd500811880>, <_ast.Call object at 0x7fd500811ac0>, <_ast.Call object \
+at 0x7fd500811d30>, <_ast.Call object at 0x7fd500811fd0>, <_ast.Call object at 0x7fd50082d250>, <_ast.Call object at 0x7fd50082d520>, <_\
+ast.Call object at 0x7fd50082d490>, <_ast.Call object at 0x7fd50082d9d0>, <_ast.Call object at 0x7fd50082dc40>, <_ast.Call object \
+at 0x7fd50082de80>, <_ast.Call object at 0x7fd50082c130>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"ml_exp(0)$4" -> "ml_exp(0)$3"	[label=assignedFrom];
-	"ml_exp(0)$4" -> "[<_ast.Constant object at 0x130bb4820>, <_ast.Constant object at 0x130bb4850>, <_ast.Constant object at 0x130bb4880>, <_ast.Constant \
-object at 0x130bb48b0>, <_ast.Constant object at 0x130bb48e0>, <_ast.Constant object at 0x130bb4910>, <_ast.Constant object at 0x130bb4940>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bb4820>, <_ast.Constant object at 0x130bb4850>, <_ast.Constant object at 0x130bb4880>, <_ast.Constant \
-object at 0x130bb48b0>, <_ast.Constant object at 0x130bb48e0>, <_ast.Constant object at 0x130bb4910>, <_ast.Constant object at 0x130bb4940>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"ml_exp(0)$4" -> "[<_ast.Constant object at 0x7fd50082c4c0>, <_ast.Constant object at 0x7fd50082c4f0>, <_ast.Constant object at 0x7fd50082c520>, <_\
+ast.Constant object at 0x7fd50082c550>, <_ast.Constant object at 0x7fd50082c580>, <_ast.Constant object at 0x7fd50082c5b0>, <_ast.Constant \
+object at 0x7fd50082c5e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082c4c0>, <_ast.Constant object at 0x7fd50082c4f0>, <_ast.Constant object at 0x7fd50082c520>, <_\
+ast.Constant object at 0x7fd50082c550>, <_ast.Constant object at 0x7fd50082c580>, <_ast.Constant object at 0x7fd50082c5b0>, <_ast.Constant \
+object at 0x7fd50082c5e0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"ml_exp(0)$5" -> "0(0)"	[label=fillna];
 	"ml_exp(0)$5" -> "ml_exp(0)$4"	[label=fillna];
 	"trace1(0)$4" -> "go(0)"	[label=Bar];
@@ -588,10 +589,12 @@ object at 0x130bb48b0>, <_ast.Constant object at 0x130bb48e0>, <_ast.Constant ob
 	"trace7(0)$1" -> "10-15 years(0)"	[label=Bar];
 	"trace7(0)$1" -> "#b35a00(0)"	[label=Bar];
 	"trace7(0)$1" -> "ml_exp(0)$5"	[label=Bar];
-	"[<_ast.Name object at 0x130ba1f10>, <_ast.Name object at 0x130ba1f40>, <_ast.Name object at 0x130ba1f70>, <_ast.Name object at 0x130ba1fa0>, <_\
-ast.Name object at 0x130ba1fd0>, <_ast.Name object at 0x130ba1cd0>, <_ast.Name object at 0x130bca040>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Name object at 0x130ba1f10>, <_ast.Name object at 0x130ba1f40>, <_ast.Name object at 0x130ba1f70>, <_ast.Name object at 0x130ba1fa0>, <_\
-ast.Name object at 0x130ba1fd0>, <_ast.Name object at 0x130ba1cd0>, <_ast.Name object at 0x130bca040>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500841c10>, <_ast.Name object at 0x7fd500841c40>, <_ast.Name object at 0x7fd500841c70>, <_ast.Name object \
+at 0x7fd500841ca0>, <_ast.Name object at 0x7fd500841cd0>, <_ast.Name object at 0x7fd5008419d0>, <_ast.Name object at 0x7fd500841d00>](\
+0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x7fd500841c10>, <_ast.Name object at 0x7fd500841c40>, <_ast.Name object at 0x7fd500841c70>, <_ast.Name object \
+at 0x7fd500841ca0>, <_ast.Name object at 0x7fd500841cd0>, <_ast.Name object at 0x7fd5008419d0>, <_ast.Name object at 0x7fd500841d00>](\
+0)"	[label=assignedFrom];
 	"layout(0)$3" -> "go(0)"	[label=Layout];
 	"layout(0)$3" -> "(0)"	[label=Layout];
 	"layout(0)$3" -> "group(0)"	[label=Layout];
@@ -680,12 +683,12 @@ ast.Name object at 0x130ba1fd0>, <_ast.Name object at 0x130ba1cd0>, <_ast.Name o
 	"cv_name(0)$1" -> "text(0)$4"	[label=append];
 	"cv_count(0)$1" -> "cv_count(0)$0"	[label=append];
 	"cv_count(0)$1" -> "value(0)$5"	[label=append];
-	"[<_ast.Constant object at 0x130bafb80>, <_ast.Constant object at 0x130bafbb0>, <_ast.Constant object at 0x130bafbe0>, <_ast.Constant \
-object at 0x130bafc10>, <_ast.Constant object at 0x130bafc40>, <_ast.Constant object at 0x130bafc70>, <_ast.Constant object at 0x130bafca0>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"cv_new(0)$0" -> "[<_ast.Constant object at 0x130bafb80>, <_ast.Constant object at 0x130bafbb0>, <_ast.Constant object at 0x130bafbe0>, <_ast.Constant \
-object at 0x130bafc10>, <_ast.Constant object at 0x130bafc40>, <_ast.Constant object at 0x130bafc70>, <_ast.Constant object at 0x130bafca0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500853880>, <_ast.Constant object at 0x7fd5008538b0>, <_ast.Constant object at 0x7fd5008538e0>, <_\
+ast.Constant object at 0x7fd500853910>, <_ast.Constant object at 0x7fd500853940>, <_ast.Constant object at 0x7fd500853970>, <_ast.Constant \
+object at 0x7fd5008539a0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"cv_new(0)$0" -> "[<_ast.Constant object at 0x7fd500853880>, <_ast.Constant object at 0x7fd5008538b0>, <_ast.Constant object at 0x7fd5008538e0>, <_\
+ast.Constant object at 0x7fd500853910>, <_ast.Constant object at 0x7fd500853940>, <_ast.Constant object at 0x7fd500853970>, <_ast.Constant \
+object at 0x7fd5008539a0>](0)"	[label=assignedFrom];
 	"cv_new(0)$1" -> "numpy(0)"	[label=array];
 	"cv_new(0)$1" -> "cv_new(0)$1"	[label=array];
 	"cv_count(0)$2" -> "numpy(0)"	[label=array];
@@ -734,10 +737,10 @@ object at 0x130bafc10>, <_ast.Constant object at 0x130bafc40>, <_ast.Constant ob
 	"fig(0)$22" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$22" -> "1(0)"	[label=make_subplots];
 	"fig(0)$22" -> "2(0)"	[label=make_subplots];
-	"fig(0)$22" -> "[<_ast.List object at 0x12f93eeb0>, <_ast.List object at 0x12f93ef10>](0)"	[label=make_subplots];
+	"fig(0)$22" -> "[<_ast.List object at 0x7fd50086bbb0>, <_ast.List object at 0x7fd50086bc10>](0)"	[label=make_subplots];
 	"fig(0)$22" -> "Computer Vision Methods(Image data)(0)"	[label=make_subplots];
 	"fig(0)$22" -> "NLP Methods(text data)(0)"	[label=make_subplots];
-	"[<_ast.List object at 0x12f93eeb0>, <_ast.List object at 0x12f93ef10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd50086bbb0>, <_ast.List object at 0x7fd50086bc10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Computer Vision Methods(Image data)(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"NLP Methods(text data)(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"fig(0)$23" -> "1(0)"	[label=append_trace];
@@ -757,12 +760,12 @@ object at 0x130bafc10>, <_ast.Constant object at 0x130bafc40>, <_ast.Constant ob
 	"Q6(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Q23(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"org_exp(0)$1" -> "org_exp(0)$0"	[label=assignedFrom];
-	"org_exp(0)$1" -> "[<_ast.Constant object at 0x12f948e20>, <_ast.Constant object at 0x12f965040>, <_ast.Constant object at 0x12f965070>, <_ast.Constant \
-object at 0x12f9650a0>, <_ast.Constant object at 0x12f9650d0>, <_ast.Constant object at 0x12f965100>, <_ast.Constant object at 0x12f965130>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f948e20>, <_ast.Constant object at 0x12f965040>, <_ast.Constant object at 0x12f965070>, <_ast.Constant \
-object at 0x12f9650a0>, <_ast.Constant object at 0x12f9650d0>, <_ast.Constant object at 0x12f965100>, <_ast.Constant object at 0x12f965130>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"org_exp(0)$1" -> "[<_ast.Constant object at 0x7fd500868d00>, <_ast.Constant object at 0x7fd500868d30>, <_ast.Constant object at 0x7fd500868d60>, <_\
+ast.Constant object at 0x7fd500868d90>, <_ast.Constant object at 0x7fd500868dc0>, <_ast.Constant object at 0x7fd500868af0>, <_ast.Constant \
+object at 0x7fd500868df0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500868d00>, <_ast.Constant object at 0x7fd500868d30>, <_ast.Constant object at 0x7fd500868d60>, <_\
+ast.Constant object at 0x7fd500868d90>, <_ast.Constant object at 0x7fd500868dc0>, <_ast.Constant object at 0x7fd500868af0>, <_ast.Constant \
+object at 0x7fd500868df0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"trace1(0)$6" -> "go(0)"	[label=Bar];
 	"trace1(0)$6" -> "dict(0)"	[label=Bar];
 	"trace1(0)$6" -> "0(0)"	[label=Bar];
@@ -798,10 +801,10 @@ object at 0x12f9650a0>, <_ast.Constant object at 0x12f9650d0>, <_ast.Constant ob
 	"trace5(0)$2" -> "org_exp(0)$1"	[label=Bar];
 	"trace5(0)$2" -> "> 10,000 employees(0)"	[label=Bar];
 	"> 10,000 employees(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9402b0>, <_ast.Name object at 0x12f9402e0>, <_ast.Name object at 0x12f940310>, <_ast.Name object at 0x12f940340>, <_\
-ast.Name object at 0x12f940370>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$4" -> "[<_ast.Name object at 0x12f9402b0>, <_ast.Name object at 0x12f9402e0>, <_ast.Name object at 0x12f940310>, <_ast.Name object at 0x12f940340>, <_\
-ast.Name object at 0x12f940370>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500856f70>, <_ast.Name object at 0x7fd500856fa0>, <_ast.Name object at 0x7fd500856fd0>, <_ast.Name object \
+at 0x7fd50084e040>, <_ast.Name object at 0x7fd50084e070>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$4" -> "[<_ast.Name object at 0x7fd500856f70>, <_ast.Name object at 0x7fd500856fa0>, <_ast.Name object at 0x7fd500856fd0>, <_ast.Name object \
+at 0x7fd50084e040>, <_ast.Name object at 0x7fd50084e070>](0)"	[label=assignedFrom];
 	"layout(0)$4" -> "go(0)"	[label=Layout];
 	"layout(0)$4" -> "group(0)"	[label=Layout];
 	"layout(0)$4" -> "600(0)"	[label=Layout];
@@ -823,12 +826,12 @@ ast.Name object at 0x12f940370>](0)"	[label=assignedFrom];
 	"comp_dw(0)$0" -> "Q7(0)"	[label=crosstab];
 	"Q7(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"comp_dw(0)$1" -> "comp_dw(0)$0"	[label=assignedFrom];
-	"comp_dw(0)$1" -> "[<_ast.Constant object at 0x12f93a040>, <_ast.Constant object at 0x12f93a070>, <_ast.Constant object at 0x12f93a0a0>, <_ast.Constant \
-object at 0x12f93a0d0>, <_ast.Constant object at 0x12f93a100>, <_ast.Constant object at 0x12f93a130>, <_ast.Constant object at 0x12f93a160>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f93a040>, <_ast.Constant object at 0x12f93a070>, <_ast.Constant object at 0x12f93a0a0>, <_ast.Constant \
-object at 0x12f93a0d0>, <_ast.Constant object at 0x12f93a100>, <_ast.Constant object at 0x12f93a130>, <_ast.Constant object at 0x12f93a160>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"comp_dw(0)$1" -> "[<_ast.Constant object at 0x7fd50084ed00>, <_ast.Constant object at 0x7fd50084ed30>, <_ast.Constant object at 0x7fd50084ed60>, <_\
+ast.Constant object at 0x7fd50084ed90>, <_ast.Constant object at 0x7fd50084edc0>, <_ast.Constant object at 0x7fd50084edf0>, <_ast.Constant \
+object at 0x7fd50084ee20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50084ed00>, <_ast.Constant object at 0x7fd50084ed30>, <_ast.Constant object at 0x7fd50084ed60>, <_\
+ast.Constant object at 0x7fd50084ed90>, <_ast.Constant object at 0x7fd50084edc0>, <_ast.Constant object at 0x7fd50084edf0>, <_ast.Constant \
+object at 0x7fd50084ee20>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"trace1(0)$7" -> "go(0)"	[label=Bar];
 	"trace1(0)$7" -> "dict(0)"	[label=Bar];
 	"trace1(0)$7" -> "0(0)"	[label=Bar];
@@ -863,10 +866,10 @@ object at 0x12f93a0d0>, <_ast.Constant object at 0x12f93a100>, <_ast.Constant ob
 	"trace5(0)$3" -> "comp_dw(0)$1"	[label=Bar];
 	"trace5(0)$3" -> "#be9b7b(0)"	[label=Bar];
 	"#be9b7b(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f92c2e0>, <_ast.Name object at 0x12f92c310>, <_ast.Name object at 0x12f92c340>, <_ast.Name object at 0x12f92c3a0>, <_\
-ast.Name object at 0x12f92c370>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$5" -> "[<_ast.Name object at 0x12f92c2e0>, <_ast.Name object at 0x12f92c310>, <_ast.Name object at 0x12f92c340>, <_ast.Name object at 0x12f92c3a0>, <_\
-ast.Name object at 0x12f92c370>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50084cfd0>, <_ast.Name object at 0x7fd50084cd30>, <_ast.Name object at 0x7fd4d098d040>, <_ast.Name object \
+at 0x7fd4d098d070>, <_ast.Name object at 0x7fd4d098d0a0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Name object at 0x7fd50084cfd0>, <_ast.Name object at 0x7fd50084cd30>, <_ast.Name object at 0x7fd4d098d040>, <_ast.Name object \
+at 0x7fd4d098d070>, <_ast.Name object at 0x7fd4d098d0a0>](0)"	[label=assignedFrom];
 	"layout(0)$5" -> "go(0)"	[label=Layout];
 	"layout(0)$5" -> "(0)"	[label=Layout];
 	"layout(0)$5" -> "600(0)"	[label=Layout];
@@ -885,14 +888,14 @@ ast.Name object at 0x12f92c370>](0)"	[label=assignedFrom];
 	"py(0)$9" -> "py(0)$8"	[label=iplot];
 	"py(0)$9" -> "fig(0)$27"	[label=iplot];
 	"org_exp(0)$2" -> "pd(0)$1"	[label=concat];
-	"org_exp(0)$2" -> "[<_ast.Call object at 0x12f92cdf0>, <_ast.Call object at 0x12f92b070>, <_ast.Call object at 0x12f92b2e0>, <_ast.Call object at 0x12f92b5e0>, <_\
-ast.Call object at 0x12f92b7f0>, <_ast.Call object at 0x12f92baf0>, <_ast.Call object at 0x12f92bd30>, <_ast.Call object at 0x12f92bfa0>, <_\
-ast.Call object at 0x12f8c5220>, <_ast.Call object at 0x12f8c5490>, <_ast.Call object at 0x12f8c56d0>, <_ast.Call object at 0x12f8c59d0>, <_\
-ast.Call object at 0x12f8c5c10>](0)"	[label=concat];
-	"[<_ast.Call object at 0x12f92cdf0>, <_ast.Call object at 0x12f92b070>, <_ast.Call object at 0x12f92b2e0>, <_ast.Call object at 0x12f92b5e0>, <_\
-ast.Call object at 0x12f92b7f0>, <_ast.Call object at 0x12f92baf0>, <_ast.Call object at 0x12f92bd30>, <_ast.Call object at 0x12f92bfa0>, <_\
-ast.Call object at 0x12f8c5220>, <_ast.Call object at 0x12f8c5490>, <_ast.Call object at 0x12f8c56d0>, <_ast.Call object at 0x12f8c59d0>, <_\
-ast.Call object at 0x12f8c5c10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"org_exp(0)$2" -> "[<_ast.Call object at 0x7fd4d098db50>, <_ast.Call object at 0x7fd4d098da60>, <_ast.Call object at 0x7fd4d098dfd0>, <_ast.Call object \
+at 0x7fd4d0975250>, <_ast.Call object at 0x7fd4d09754c0>, <_ast.Call object at 0x7fd4d0975790>, <_ast.Call object at 0x7fd4d09759d0>, <_\
+ast.Call object at 0x7fd4d0975c40>, <_ast.Call object at 0x7fd4d0975eb0>, <_ast.Call object at 0x7fd4d0996130>, <_ast.Call object \
+at 0x7fd4d0996400>, <_ast.Call object at 0x7fd4d09966a0>, <_ast.Call object at 0x7fd4d09968e0>](0)"	[label=concat];
+	"[<_ast.Call object at 0x7fd4d098db50>, <_ast.Call object at 0x7fd4d098da60>, <_ast.Call object at 0x7fd4d098dfd0>, <_ast.Call object \
+at 0x7fd4d0975250>, <_ast.Call object at 0x7fd4d09754c0>, <_ast.Call object at 0x7fd4d0975790>, <_ast.Call object at 0x7fd4d09759d0>, <_\
+ast.Call object at 0x7fd4d0975c40>, <_ast.Call object at 0x7fd4d0975eb0>, <_ast.Call object at 0x7fd4d0996130>, <_ast.Call object \
+at 0x7fd4d0996400>, <_ast.Call object at 0x7fd4d09966a0>, <_ast.Call object at 0x7fd4d09968e0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"trace1(0)$8" -> "go(0)"	[label=Bar];
 	"trace1(0)$8" -> "dict(0)"	[label=Bar];
 	"trace1(0)$8" -> "#66545e(0)"	[label=Bar];
@@ -918,10 +921,10 @@ ast.Call object at 0x12f8c5c10>](0)" -> "a-guide-for-aspiring-data-scientists.ip
 	"trace5(0)$4" -> "#00a3e0(0)"	[label=Bar];
 	"trace5(0)$4" -> "> 10,000 employees(0)"	[label=Bar];
 	"trace5(0)$4" -> "org_exp(0)$2"	[label=Bar];
-	"[<_ast.Name object at 0x12f8b48b0>, <_ast.Name object at 0x12f8b48e0>, <_ast.Name object at 0x12f8b4910>, <_ast.Name object at 0x12f8b4970>, <_\
-ast.Name object at 0x12f8b4940>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$6" -> "[<_ast.Name object at 0x12f8b48b0>, <_ast.Name object at 0x12f8b48e0>, <_ast.Name object at 0x12f8b4910>, <_ast.Name object at 0x12f8b4970>, <_\
-ast.Name object at 0x12f8b4940>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4d098f580>, <_ast.Name object at 0x7fd4d098f5b0>, <_ast.Name object at 0x7fd4d098f5e0>, <_ast.Name object \
+at 0x7fd4d098f610>, <_ast.Name object at 0x7fd4d098f640>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Name object at 0x7fd4d098f580>, <_ast.Name object at 0x7fd4d098f5b0>, <_ast.Name object at 0x7fd4d098f5e0>, <_ast.Name object \
+at 0x7fd4d098f610>, <_ast.Name object at 0x7fd4d098f640>](0)"	[label=assignedFrom];
 	"layout(0)$6" -> "go(0)"	[label=Layout];
 	"layout(0)$6" -> "(0)"	[label=Layout];
 	"layout(0)$6" -> "group(0)"	[label=Layout];
@@ -947,22 +950,22 @@ ast.Name object at 0x12f8b4940>](0)"	[label=assignedFrom];
 	"edu_comp(0)$0" -> "Q10(0)"	[label=crosstab];
 	"Q10(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"edu_comp(0)$1" -> "edu_comp(0)$0"	[label=assignedFrom];
-	"edu_comp(0)$1" -> "[<_ast.Constant object at 0x12f8e3a60>, <_ast.Constant object at 0x12f8e3a90>, <_ast.Constant object at 0x12f8e3ac0>, <_ast.Constant \
-object at 0x12f8e3af0>, <_ast.Constant object at 0x12f8e3b20>, <_ast.Constant object at 0x12f8e3b50>, <_ast.Constant object at 0x12f8e3b80>, <_\
-ast.Constant object at 0x12f8e3880>, <_ast.Constant object at 0x12f8e3bb0>, <_ast.Constant object at 0x12f8e3be0>, <_ast.Constant \
-object at 0x12f8e3c10>, <_ast.Constant object at 0x12f8e3c40>, <_ast.Constant object at 0x12f8e3c70>, <_ast.Constant object at 0x12f8e3ca0>, <_\
-ast.Constant object at 0x12f8e3cd0>, <_ast.Constant object at 0x12f8e3d00>, <_ast.Constant object at 0x12f8e3d30>, <_ast.Constant \
-object at 0x12f8e3d60>, <_ast.Constant object at 0x12f8e3d90>, <_ast.Constant object at 0x12f8e3dc0>, <_ast.Constant object at 0x12f8e3df0>, <_\
-ast.Constant object at 0x12f8e3e50>, <_ast.Constant object at 0x12f8e3eb0>, <_ast.Constant object at 0x12f8e3ee0>, <_ast.Constant \
-object at 0x12f8e3f10>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e3a60>, <_ast.Constant object at 0x12f8e3a90>, <_ast.Constant object at 0x12f8e3ac0>, <_ast.Constant \
-object at 0x12f8e3af0>, <_ast.Constant object at 0x12f8e3b20>, <_ast.Constant object at 0x12f8e3b50>, <_ast.Constant object at 0x12f8e3b80>, <_\
-ast.Constant object at 0x12f8e3880>, <_ast.Constant object at 0x12f8e3bb0>, <_ast.Constant object at 0x12f8e3be0>, <_ast.Constant \
-object at 0x12f8e3c10>, <_ast.Constant object at 0x12f8e3c40>, <_ast.Constant object at 0x12f8e3c70>, <_ast.Constant object at 0x12f8e3ca0>, <_\
-ast.Constant object at 0x12f8e3cd0>, <_ast.Constant object at 0x12f8e3d00>, <_ast.Constant object at 0x12f8e3d30>, <_ast.Constant \
-object at 0x12f8e3d60>, <_ast.Constant object at 0x12f8e3d90>, <_ast.Constant object at 0x12f8e3dc0>, <_ast.Constant object at 0x12f8e3df0>, <_\
-ast.Constant object at 0x12f8e3e50>, <_ast.Constant object at 0x12f8e3eb0>, <_ast.Constant object at 0x12f8e3ee0>, <_ast.Constant \
-object at 0x12f8e3f10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"edu_comp(0)$1" -> "[<_ast.Constant object at 0x7fd4d097f760>, <_ast.Constant object at 0x7fd4d097f790>, <_ast.Constant object at 0x7fd4d097f7c0>, <_\
+ast.Constant object at 0x7fd4d097f7f0>, <_ast.Constant object at 0x7fd4d097f820>, <_ast.Constant object at 0x7fd4d097f850>, <_ast.Constant \
+object at 0x7fd4d097f880>, <_ast.Constant object at 0x7fd4d097f8b0>, <_ast.Constant object at 0x7fd4d097f8e0>, <_ast.Constant object \
+at 0x7fd4d097f910>, <_ast.Constant object at 0x7fd4d097f610>, <_ast.Constant object at 0x7fd4d097f970>, <_ast.Constant object at \
+0x7fd4d097f9d0>, <_ast.Constant object at 0x7fd4d097fa00>, <_ast.Constant object at 0x7fd4d097fa30>, <_ast.Constant object at 0x7fd4d097fa60>, <_\
+ast.Constant object at 0x7fd4d097fa90>, <_ast.Constant object at 0x7fd4d097fac0>, <_ast.Constant object at 0x7fd4d097faf0>, <_ast.Constant \
+object at 0x7fd4d097fb20>, <_ast.Constant object at 0x7fd4d097fb50>, <_ast.Constant object at 0x7fd4d097fb80>, <_ast.Constant object \
+at 0x7fd4d097fbe0>, <_ast.Constant object at 0x7fd4d097fbb0>, <_ast.Constant object at 0x7fd4d097fc10>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d097f760>, <_ast.Constant object at 0x7fd4d097f790>, <_ast.Constant object at 0x7fd4d097f7c0>, <_\
+ast.Constant object at 0x7fd4d097f7f0>, <_ast.Constant object at 0x7fd4d097f820>, <_ast.Constant object at 0x7fd4d097f850>, <_ast.Constant \
+object at 0x7fd4d097f880>, <_ast.Constant object at 0x7fd4d097f8b0>, <_ast.Constant object at 0x7fd4d097f8e0>, <_ast.Constant object \
+at 0x7fd4d097f910>, <_ast.Constant object at 0x7fd4d097f610>, <_ast.Constant object at 0x7fd4d097f970>, <_ast.Constant object at \
+0x7fd4d097f9d0>, <_ast.Constant object at 0x7fd4d097fa00>, <_ast.Constant object at 0x7fd4d097fa30>, <_ast.Constant object at 0x7fd4d097fa60>, <_\
+ast.Constant object at 0x7fd4d097fa90>, <_ast.Constant object at 0x7fd4d097fac0>, <_ast.Constant object at 0x7fd4d097faf0>, <_ast.Constant \
+object at 0x7fd4d097fb20>, <_ast.Constant object at 0x7fd4d097fb50>, <_ast.Constant object at 0x7fd4d097fb80>, <_ast.Constant object \
+at 0x7fd4d097fbe0>, <_ast.Constant object at 0x7fd4d097fbb0>, <_ast.Constant object at 0x7fd4d097fc10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"trace1(0)$9" -> "go(0)"	[label=Bar];
 	"trace1(0)$9" -> "dict(0)"	[label=Bar];
 	"trace1(0)$9" -> "0(0)"	[label=Bar];
@@ -977,8 +980,8 @@ object at 0x12f8e3f10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[lab
 	"trace2(0)$7" -> "edu_comp(0)$1"	[label=Bar];
 	"trace2(0)$7" -> "#808080(0)"	[label=Bar];
 	"#808080(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8e2d30>, <_ast.Name object at 0x12f8e2d60>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$7" -> "[<_ast.Name object at 0x12f8e2d30>, <_ast.Name object at 0x12f8e2d60>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4d098b970>, <_ast.Name object at 0x7fd4d098b9a0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$7" -> "[<_ast.Name object at 0x7fd4d098b970>, <_ast.Name object at 0x7fd4d098b9a0>](0)"	[label=assignedFrom];
 	"layout(0)$7" -> "go(0)"	[label=Layout];
 	"layout(0)$7" -> "group(0)"	[label=Layout];
 	"layout(0)$7" -> "600(0)"	[label=Layout];
@@ -999,22 +1002,22 @@ object at 0x12f8e3f10>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[lab
 	"comp_exp(0)$0" -> "Q23(0)"	[label=crosstab];
 	"comp_exp(0)$0" -> "Q10(0)"	[label=crosstab];
 	"comp_exp(0)$1" -> "comp_exp(0)$0"	[label=assignedFrom];
-	"comp_exp(0)$1" -> "[<_ast.Constant object at 0x12f8d8970>, <_ast.Constant object at 0x12f8d89a0>, <_ast.Constant object at 0x12f8d89d0>, <_ast.Constant \
-object at 0x12f8d8a00>, <_ast.Constant object at 0x12f8d8a30>, <_ast.Constant object at 0x12f8d8a60>, <_ast.Constant object at 0x12f8d8a90>, <_\
-ast.Constant object at 0x12f8d8ac0>, <_ast.Constant object at 0x12f8d8af0>, <_ast.Constant object at 0x12f8d8b20>, <_ast.Constant \
-object at 0x12f8d8b50>, <_ast.Constant object at 0x12f8d8b80>, <_ast.Constant object at 0x12f8d8bb0>, <_ast.Constant object at 0x12f8d8be0>, <_\
-ast.Constant object at 0x12f8d8c10>, <_ast.Constant object at 0x12f8d8c40>, <_ast.Constant object at 0x12f8d8c70>, <_ast.Constant \
-object at 0x12f8d8ca0>, <_ast.Constant object at 0x12f8d8cd0>, <_ast.Constant object at 0x12f8d8d00>, <_ast.Constant object at 0x12f8d8d30>, <_\
-ast.Constant object at 0x12f8d8d60>, <_ast.Constant object at 0x12f8d8d90>, <_ast.Constant object at 0x12f8d8dc0>, <_ast.Constant \
-object at 0x12f8d8df0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d8970>, <_ast.Constant object at 0x12f8d89a0>, <_ast.Constant object at 0x12f8d89d0>, <_ast.Constant \
-object at 0x12f8d8a00>, <_ast.Constant object at 0x12f8d8a30>, <_ast.Constant object at 0x12f8d8a60>, <_ast.Constant object at 0x12f8d8a90>, <_\
-ast.Constant object at 0x12f8d8ac0>, <_ast.Constant object at 0x12f8d8af0>, <_ast.Constant object at 0x12f8d8b20>, <_ast.Constant \
-object at 0x12f8d8b50>, <_ast.Constant object at 0x12f8d8b80>, <_ast.Constant object at 0x12f8d8bb0>, <_ast.Constant object at 0x12f8d8be0>, <_\
-ast.Constant object at 0x12f8d8c10>, <_ast.Constant object at 0x12f8d8c40>, <_ast.Constant object at 0x12f8d8c70>, <_ast.Constant \
-object at 0x12f8d8ca0>, <_ast.Constant object at 0x12f8d8cd0>, <_ast.Constant object at 0x12f8d8d00>, <_ast.Constant object at 0x12f8d8d30>, <_\
-ast.Constant object at 0x12f8d8d60>, <_ast.Constant object at 0x12f8d8d90>, <_ast.Constant object at 0x12f8d8dc0>, <_ast.Constant \
-object at 0x12f8d8df0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"comp_exp(0)$1" -> "[<_ast.Constant object at 0x7fd4d09a36d0>, <_ast.Constant object at 0x7fd4d09a3700>, <_ast.Constant object at 0x7fd4d09a3730>, <_\
+ast.Constant object at 0x7fd4d09a3760>, <_ast.Constant object at 0x7fd4d09a3790>, <_ast.Constant object at 0x7fd4d09a37c0>, <_ast.Constant \
+object at 0x7fd4d09a37f0>, <_ast.Constant object at 0x7fd4d09a3820>, <_ast.Constant object at 0x7fd4d09a3850>, <_ast.Constant object \
+at 0x7fd4d09a3880>, <_ast.Constant object at 0x7fd4d09a38b0>, <_ast.Constant object at 0x7fd4d09a38e0>, <_ast.Constant object at \
+0x7fd4d09a35e0>, <_ast.Constant object at 0x7fd4d09a35b0>, <_ast.Constant object at 0x7fd4d09a3910>, <_ast.Constant object at 0x7fd4d09a3940>, <_\
+ast.Constant object at 0x7fd4d09a3970>, <_ast.Constant object at 0x7fd4d09a39a0>, <_ast.Constant object at 0x7fd4d09a39d0>, <_ast.Constant \
+object at 0x7fd4d09a3a00>, <_ast.Constant object at 0x7fd4d09a3a30>, <_ast.Constant object at 0x7fd4d09a3a60>, <_ast.Constant object \
+at 0x7fd4d09a3a90>, <_ast.Constant object at 0x7fd4d09a3ac0>, <_ast.Constant object at 0x7fd4d09a3af0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d09a36d0>, <_ast.Constant object at 0x7fd4d09a3700>, <_ast.Constant object at 0x7fd4d09a3730>, <_\
+ast.Constant object at 0x7fd4d09a3760>, <_ast.Constant object at 0x7fd4d09a3790>, <_ast.Constant object at 0x7fd4d09a37c0>, <_ast.Constant \
+object at 0x7fd4d09a37f0>, <_ast.Constant object at 0x7fd4d09a3820>, <_ast.Constant object at 0x7fd4d09a3850>, <_ast.Constant object \
+at 0x7fd4d09a3880>, <_ast.Constant object at 0x7fd4d09a38b0>, <_ast.Constant object at 0x7fd4d09a38e0>, <_ast.Constant object at \
+0x7fd4d09a35e0>, <_ast.Constant object at 0x7fd4d09a35b0>, <_ast.Constant object at 0x7fd4d09a3910>, <_ast.Constant object at 0x7fd4d09a3940>, <_\
+ast.Constant object at 0x7fd4d09a3970>, <_ast.Constant object at 0x7fd4d09a39a0>, <_ast.Constant object at 0x7fd4d09a39d0>, <_ast.Constant \
+object at 0x7fd4d09a3a00>, <_ast.Constant object at 0x7fd4d09a3a30>, <_ast.Constant object at 0x7fd4d09a3a60>, <_ast.Constant object \
+at 0x7fd4d09a3a90>, <_ast.Constant object at 0x7fd4d09a3ac0>, <_ast.Constant object at 0x7fd4d09a3af0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"trace0(0)$5" -> "go(0)"	[label=Scatter];
 	"trace0(0)$5" -> "dict(0)"	[label=Scatter];
 	"trace0(0)$5" -> "0(0)"	[label=Scatter];
@@ -1080,12 +1083,12 @@ object at 0x12f8d8df0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[lab
 	"trace7(0)$2" -> "#000000(0)"	[label=Scatter];
 	"20+ years(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"#000000(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d9940>, <_ast.Name object at 0x12f8d99a0>, <_ast.Name object at 0x12f8d99d0>, <_ast.Name object at 0x12f8d9a30>, <_\
-ast.Name object at 0x12f8d9a00>, <_ast.Name object at 0x12f8d9a60>, <_ast.Name object at 0x12f8d9a90>, <_ast.Name object at 0x12f8d9ac0>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$8" -> "[<_ast.Name object at 0x12f8d9940>, <_ast.Name object at 0x12f8d99a0>, <_ast.Name object at 0x12f8d99d0>, <_ast.Name object at 0x12f8d9a30>, <_\
-ast.Name object at 0x12f8d9a00>, <_ast.Name object at 0x12f8d9a60>, <_ast.Name object at 0x12f8d9a90>, <_ast.Name object at 0x12f8d9ac0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05a35e0>, <_ast.Name object at 0x7fd4c05a3610>, <_ast.Name object at 0x7fd4c05a3640>, <_ast.Name object \
+at 0x7fd4c05a3670>, <_ast.Name object at 0x7fd4c05a36a0>, <_ast.Name object at 0x7fd4c05a36d0>, <_ast.Name object at 0x7fd4c05a3700>, <_\
+ast.Name object at 0x7fd4c05a3730>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$8" -> "[<_ast.Name object at 0x7fd4c05a35e0>, <_ast.Name object at 0x7fd4c05a3610>, <_ast.Name object at 0x7fd4c05a3640>, <_ast.Name object \
+at 0x7fd4c05a3670>, <_ast.Name object at 0x7fd4c05a36a0>, <_ast.Name object at 0x7fd4c05a36d0>, <_ast.Name object at 0x7fd4c05a3700>, <_\
+ast.Name object at 0x7fd4c05a3730>](0)"	[label=assignedFrom];
 	"Salary based on years of experience(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"layout(0)$8" -> "go(0)"	[label=dict];
 	"layout(0)$8" -> "dict(0)"	[label=dict];
@@ -1128,11 +1131,11 @@ ast.Name object at 0x12f8d9a00>, <_ast.Name object at 0x12f8d9a60>, <_ast.Name o
 	"df_sub(0)$0" -> "Q8(0)"	[label=crosstab];
 	"salary_range(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Q8(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8bd5e0>, <_ast.Constant object at 0x12f8bd610>, <_ast.Constant object at 0x12f8bd640>, <_ast.Constant \
-object at 0x12f8bd670>, <_ast.Constant object at 0x12f8bd6a0>, <_ast.Constant object at 0x12f8bd6d0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bc3a0>, <_ast.Constant object at 0x7fd4c05bc340>, <_ast.Constant object at 0x7fd4c05bc3d0>, <_\
+ast.Constant object at 0x7fd4c05bc400>, <_ast.Constant object at 0x7fd4c05bc430>, <_ast.Constant object at 0x7fd4c05bc460>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"df_sub(0)$1" -> "df_sub(0)$0"	[label=assignedFrom];
-	"df_sub(0)$1" -> "[<_ast.Constant object at 0x12f8bd5e0>, <_ast.Constant object at 0x12f8bd610>, <_ast.Constant object at 0x12f8bd640>, <_ast.Constant \
-object at 0x12f8bd670>, <_ast.Constant object at 0x12f8bd6a0>, <_ast.Constant object at 0x12f8bd6d0>](0)"	[label=assignedFrom];
+	"df_sub(0)$1" -> "[<_ast.Constant object at 0x7fd4c05bc3a0>, <_ast.Constant object at 0x7fd4c05bc340>, <_ast.Constant object at 0x7fd4c05bc3d0>, <_\
+ast.Constant object at 0x7fd4c05bc400>, <_ast.Constant object at 0x7fd4c05bc430>, <_ast.Constant object at 0x7fd4c05bc460>](0)"	[label=assignedFrom];
 	"trace1(0)$11" -> "go(0)"	[label=Bar];
 	"trace1(0)$11" -> "dict(0)"	[label=Bar];
 	"trace1(0)$11" -> "0(0)"	[label=Bar];
@@ -1154,8 +1157,8 @@ object at 0x12f8bd670>, <_ast.Constant object at 0x12f8bd6a0>, <_ast.Constant ob
 	"trace3(0)$6" -> "df_sub(0)$1"	[label=Bar];
 	"trace3(0)$6" -> "#cc2a36(0)"	[label=Bar];
 	"#cc2a36(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130550b50>, <_ast.Name object at 0x130550b80>, <_ast.Name object at 0x130550880>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
-	"data(0)$9" -> "[<_ast.Name object at 0x130550b50>, <_ast.Name object at 0x130550b80>, <_ast.Name object at 0x130550880>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05c7820>, <_ast.Name object at 0x7fd4c05c7850>, <_ast.Name object at 0x7fd4c05c78b0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"data(0)$9" -> "[<_ast.Name object at 0x7fd4c05c7820>, <_ast.Name object at 0x7fd4c05c7850>, <_ast.Name object at 0x7fd4c05c78b0>](0)"	[label=assignedFrom];
 	"layout(0)$9" -> "go(0)"	[label=Layout];
 	"layout(0)$9" -> "group(0)"	[label=Layout];
 	"layout(0)$9" -> "600(0)"	[label=Layout];
@@ -1180,12 +1183,12 @@ object at 0x12f8bd670>, <_ast.Constant object at 0x12f8bd6a0>, <_ast.Constant ob
 	"ml_sal_exp(0)$0" -> "salary_range(0)"	[label=crosstab];
 	"ml_sal_exp(0)$0" -> "df_ml(0)$0"	[label=crosstab];
 	"ml_sal_exp(0)$1" -> "ml_sal_exp(0)$0"	[label=assignedFrom];
-	"ml_sal_exp(0)$1" -> "[<_ast.Constant object at 0x13054f190>, <_ast.Constant object at 0x13054fb50>, <_ast.Constant object at 0x13054fbb0>, <_ast.Constant \
-object at 0x13054fbe0>, <_ast.Constant object at 0x13054fc10>, <_ast.Constant object at 0x13054fc40>, <_ast.Constant object at 0x13054fca0>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x13054f190>, <_ast.Constant object at 0x13054fb50>, <_ast.Constant object at 0x13054fbb0>, <_ast.Constant \
-object at 0x13054fbe0>, <_ast.Constant object at 0x13054fc10>, <_ast.Constant object at 0x13054fc40>, <_ast.Constant object at 0x13054fca0>](\
-0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"ml_sal_exp(0)$1" -> "[<_ast.Constant object at 0x7fd4c05a57f0>, <_ast.Constant object at 0x7fd4c05a5820>, <_ast.Constant object at 0x7fd4c05a5850>, <_\
+ast.Constant object at 0x7fd4c05a5880>, <_ast.Constant object at 0x7fd4c05a58b0>, <_ast.Constant object at 0x7fd4c05a58e0>, <_ast.Constant \
+object at 0x7fd4c05a5910>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05a57f0>, <_ast.Constant object at 0x7fd4c05a5820>, <_ast.Constant object at 0x7fd4c05a5850>, <_\
+ast.Constant object at 0x7fd4c05a5880>, <_ast.Constant object at 0x7fd4c05a58b0>, <_ast.Constant object at 0x7fd4c05a58e0>, <_ast.Constant \
+object at 0x7fd4c05a5910>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"sal_field(0)$0" -> "pd(0)$1"	[label=crosstab];
 	"sal_field(0)$0" -> "DS_field(0)"	[label=crosstab];
 	"sal_field(0)$0" -> "df(0)$4"	[label=crosstab];
@@ -1232,10 +1235,10 @@ object at 0x13054fbe0>, <_ast.Constant object at 0x13054fc10>, <_ast.Constant ob
 	"fig(0)$32" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$32" -> "1(0)"	[label=make_subplots];
 	"fig(0)$32" -> "2(0)"	[label=make_subplots];
-	"fig(0)$32" -> "[<_ast.List object at 0x13054cb80>, <_ast.List object at 0x13054cbe0>](0)"	[label=make_subplots];
+	"fig(0)$32" -> "[<_ast.List object at 0x7fd4c0598880>, <_ast.List object at 0x7fd4c05988e0>](0)"	[label=make_subplots];
 	"fig(0)$32" -> "Salary Range vs DS Field(0)"	[label=make_subplots];
 	"fig(0)$32" -> "Expereince vs Salary for people in ML(0)"	[label=make_subplots];
-	"[<_ast.List object at 0x13054cb80>, <_ast.List object at 0x13054cbe0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd4c0598880>, <_ast.List object at 0x7fd4c05988e0>](0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Salary Range vs DS Field(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"Expereince vs Salary for people in ML(0)" -> "a-guide-for-aspiring-data-scientists.ipynb"	[label=appearsIn];
 	"fig(0)$33" -> "1(0)"	[label=append_trace];

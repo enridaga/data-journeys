@@ -15,9 +15,7 @@ strict digraph "" {
 	"tables(0)$0" -> "dataset(0)$0"	[label=list];
 	"table(0)" -> "select-from-where.ipynb"	[label=appearsIn];
 	"table(0)" -> "tables(0)$0"	[label=iteratorOf];
-	"print[0]" -> "table(0)"	[label=print];
-	"print[0]" -> "This query will process {} bytes.(0)"	[label=print];
-	"This query will process {} bytes.(0)" -> "select-from-where.ipynb"	[label=appearsIn];
+	"print[36/4]" -> "table(0)"	[label=print];
 	"table_ref(0)$0" -> "dataset_ref(0)$0"	[label=table];
 	"table_ref(0)$0" -> "global_air_quality(0)"	[label=table];
 	"global_air_quality(0)" -> "select-from-where.ipynb"	[label=appearsIn];
@@ -109,7 +107,9 @@ strict digraph "" {
 	"dry_run_query_job(0)$0" -> "client(0)$2"	[label=query];
 	"dry_run_query_job(0)$0" -> "query(0)$3"	[label=query];
 	"dry_run_query_job(0)$0" -> "dry_run_config(0)$0"	[label=query];
-	"print[1]" -> "dry_run_query_job(0)$0"	[label=print];
+	"This query will process {} bytes.(0)" -> "select-from-where.ipynb"	[label=appearsIn];
+	"print[121/0]" -> "dry_run_query_job(0)$0"	[label=print];
+	"print[121/0]" -> "This query will process {} bytes.(0)"	[label=print];
 	"1000(0)" -> "select-from-where.ipynb"	[label=appearsIn];
 	"ONE_MB(0)$0" -> "1000(0)"	[label=Mult];
 	"safe_config(0)$0" -> "bigquery(0)"	[label=QueryJobConfig];

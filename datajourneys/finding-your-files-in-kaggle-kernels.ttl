@@ -1,0 +1,38 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#478806965> rdfs:label "my_data(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/6263761313632676548> ;
+    dj:read_csv <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404>,
+        <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334> .
+
+<http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#1310918404> rdfs:label "../input/train.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/-954527968623700364> ;
+    dj:appearsIn k:finding-your-files-in-kaggle-kernels .
+
+<http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/-954527968623700364> ;
+    dj:appearsIn k:finding-your-files-in-kaggle-kernels ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/6263761313632676548> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/-954527968623700364> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/-954527968623700364> ;
+    dj:importedBy k:finding-your-files-in-kaggle-kernels .
+
+k:finding-your-files-in-kaggle-kernels a k:Notebook ;
+    rdfs:label "finding-your-files-in-kaggle-kernels.ipynb" .
+
+<http://purl.org/dj/kaggle/finding-your-files-in-kaggle-kernels/activity/-954527968623700364> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:finding-your-files-in-kaggle-kernels .
+

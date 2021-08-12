@@ -3,19 +3,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "columns_names(0)$0"	[label=print];
-	"print[0]" -> "Columns names:(0)"	[label=print];
-	"print[0]" -> "column_names(0)$0"	[label=print];
-	"print[0]" -> "Column Names:(0)"	[label=print];
-	"columns_names(0)$0" -> "df(0)$0"	[label=tolist];
-	"Columns names:(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
-	"column_names(0)$0" -> "df(0)$6"	[label=tolist];
-	"Column Names:(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ab1c0>, <_ast.Constant object at 0x12f8ab280>](0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f8ab1c0>, <_ast.Constant object at 0x12f8ab280>](0)"	[label=print];
+	"print[16/0]" -> "check_output(0)"	[label=print];
+	"print[16/0]" -> "[<_ast.Constant object at 0x7fd500872580>, <_ast.Constant object at 0x7fd5008726d0>](0)"	[label=print];
+	"print[16/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500872580>, <_ast.Constant object at 0x7fd5008726d0>](0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	numpy -> "principal-component-analysis-explained.ipynb"	[label=importedBy];
 	"np(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
 	"np(0)" -> numpy	[label=assignedFrom];
@@ -34,6 +26,10 @@ digraph "" {
 	"df(0)$0" -> "pd(0)"	[label=read_csv];
 	"df(0)$0" -> "../input/HR_comma_sep.csv(0)"	[label=read_csv];
 	"../input/HR_comma_sep.csv(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
+	"columns_names(0)$0" -> "df(0)$0"	[label=tolist];
+	"Columns names:(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
+	"print[35/0]" -> "Columns names:(0)"	[label=print];
+	"print[37/0]" -> "columns_names(0)$0"	[label=print];
 	"df(0)$1" -> "pd(0)"	[label=read_csv];
 	"df(0)$1" -> "../input/HR_comma_sep.csv(0)"	[label=read_csv];
 	"df(0)$2" -> "df(0)$1"	[label=corr];
@@ -121,6 +117,10 @@ digraph "" {
 	"df(0)$6" -> "df(0)$5"	[label=head];
 	"df(0)$6" -> "5(0)"	[label=head];
 	"5(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
+	"column_names(0)$0" -> "df(0)$6"	[label=tolist];
+	"Column Names:(0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
+	"print[109/0]" -> "Column Names:(0)"	[label=print];
+	"print[111/0]" -> "column_names(0)$0"	[label=print];
 	"df(0)$7" -> "df(0)$6"	[label=info];
 	"df(0)$8" -> "df(0)$7"	[label=head];
 	"mid(0)$0" -> "df(0)$8"	[label=assignedFrom];
@@ -142,10 +142,10 @@ digraph "" {
 	"df(0)$13" -> "df(0)$12"	[label=head];
 	"df_drop(0)$0" -> "1(0)"	[label=drop];
 	"df_drop(0)$0" -> "df(0)$13"	[label=drop];
-	"df_drop(0)$0" -> "[<_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12faded00>, <_ast.Constant \
-object at 0x12fadeb20>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12faded00>, <_ast.Constant \
-object at 0x12fadeb20>](0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
+	"df_drop(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04cc5e0>, <_ast.Constant object at 0x7fd4c04cc0d0>, <_\
+ast.Constant object at 0x7fd4c04cccd0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04cc5e0>, <_ast.Constant object at 0x7fd4c04cc0d0>, <_\
+ast.Constant object at 0x7fd4c04cccd0>](0)" -> "principal-component-analysis-explained.ipynb"	[label=appearsIn];
 	"df_drop(0)$1" -> "df_drop(0)$0"	[label=head];
 	"X(0)$1" -> "0(0)"	[label=assignedFrom];
 	"X(0)$1" -> "5(0)"	[label=assignedFrom];

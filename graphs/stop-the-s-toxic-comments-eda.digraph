@@ -153,210 +153,65 @@ digraph "" {
 	"sum(0)$0" -> "nrow_train(0)$0"	[label=Add];
 	"sum(0)$0" -> "nrow_test(0)$0"	[label=Add];
 	"       : train : test(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"print[0]" -> "       : train : test(0)"	[label=print];
-	"print[0]" -> "rows   :(0)"	[label=print];
-	"print[0]" -> "perc   :(0)"	[label=print];
-	"print[0]" -> "Total comments = (0)"	[label=print];
-	"print[0]" -> "Total clean comments = (0)"	[label=print];
-	"print[0]" -> "Total tags =(0)"	[label=print];
-	"print[0]" -> "Check for missing values in Train dataset(0)"	[label=print];
-	"print[0]" -> "null_check(0)$0"	[label=print];
-	"print[0]" -> "Check for missing values in Test dataset(0)"	[label=print];
-	"print[0]" -> "null_check(0)$1"	[label=print];
-	"print[0]" -> "filling NA with \"unknown\"(0)"	[label=print];
-	"print[0]" -> "train(0)$4"	[label=print];
-	"print[0]" -> "confusion_matrix(0)$1"	[label=print];
-	"print[0]" -> "Confusion matrix between toxic and severe toxic:(0)"	[label=print];
-	"print[0]" -> "The correlation between Toxic and Severe toxic using Cramer's stat=(0)"	[label=print];
-	"print[0]" -> "toxic:(0)"	[label=print];
-	"print[0]" -> "severe_toxic:(0)"	[label=print];
-	"print[0]" -> "Threat:(0)"	[label=print];
-	"print[0]" -> "Obscene:(0)"	[label=print];
-	"print[0]" -> "identity_hate:(0)"	[label=print];
-	"print[0]" -> "spammers(0)$0"	[label=print];
-	"print[0]" -> "Clean Spam example:(0)"	[label=print];
-	"print[0]" -> "Toxic Spam example:(0)"	[label=print];
-	"print[0]" -> "There are(0)"	[label=print];
-	"print[0]" -> "total time till Leaky feats(0)"	[label=print];
-	"print[0]" -> "total time till Cleaning(0)"	[label=print];
-	"print[0]" -> "total time in unigrams(0)"	[label=print];
-	"print[0]" -> "total time till unigrams(0)"	[label=print];
-	"print[0]" -> "total time till bigrams(0)"	[label=print];
-	"print[0]" -> "total time till charngrams(0)"	[label=print];
-	"print[0]" -> "Using only Indirect features(0)"	[label=print];
-	"print[0]" -> "Class:= (0)"	[label=print];
-	"print[0]" -> "Trainloss=log loss:(0)"	[label=print];
-	"print[0]" -> "Validloss=log loss:(0)"	[label=print];
-	"print[0]" -> "mean column-wise log loss:Train dataset(0)"	[label=print];
-	"print[0]" -> "mean column-wise log loss:Validation dataset(0)"	[label=print];
-	"print[0]" -> "total time till Indirect feat model(0)"	[label=print];
-	"print[0]" -> "Using all features except leaky ones(0)"	[label=print];
-	"print[0]" -> "total time till Sparse mat creation(0)"	[label=print];
-	"print[0]" -> "total time till NB base model creation(0)"	[label=print];
+	"print[74/0]" -> "       : train : test(0)"	[label=print];
 	"rows   :(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[75/0]" -> "nrow_train(0)$0"	[label=print];
+	"print[75/0]" -> "nrow_test(0)$0"	[label=print];
+	"print[75/0]" -> "rows   :(0)"	[label=print];
+	"print[75/0]" -> ":(0)"	[label=print];
+	":(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"perc   :(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Total comments = (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Total clean comments = (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Total tags =(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Check for missing values in Train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"null_check(0)$0" -> "train(0)$3"	[label=sum];
-	"Check for missing values in Test dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"null_check(0)$1" -> "test(0)$0"	[label=sum];
-	"filling NA with \"unknown\"(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"train(0)$4" -> "train(0)$3"	[label=fillna];
-	"train(0)$4" -> "unknown(0)"	[label=fillna];
-	"confusion_matrix(0)$1" -> "pd(0)"	[label=crosstab];
-	"confusion_matrix(0)$1" -> "temp_df(0)$0"	[label=crosstab];
-	"confusion_matrix(0)$1" -> "col1(0)$0"	[label=crosstab];
-	"confusion_matrix(0)$1" -> "col2(0)$0"	[label=crosstab];
-	"Confusion matrix between toxic and severe toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"The correlation between Toxic and Severe toxic using Cramer's stat=(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"severe_toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Threat:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Obscene:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"identity_hate:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"spammers(0)$0" -> "train_feats(0)$4"	[label=assignedFrom];
-	"spammers(0)$0" -> "word_unique_percent(0)"	[label=assignedFrom];
-	"spammers(0)$0" -> "30(0)"	[label=assignedFrom];
-	"Clean Spam example:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Toxic Spam example:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"There are(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till Leaky feats(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till Cleaning(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time in unigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till unigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till bigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till charngrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Using only Indirect features(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Class:= (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Trainloss=log loss:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Validloss=log loss:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"mean column-wise log loss:Train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"mean column-wise log loss:Validation dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till Indirect feat model(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"Using all features except leaky ones(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till Sparse mat creation(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"total time till NB base model creation(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "nrow_train(0)$0"	[label=print];
-	"print[1]" -> "train(0)$4"	[label=print];
-	"print[1]" -> "spammers(0)$0"	[label=print];
-	"print[1]" -> "round(0)"	[label=print];
-	"print[1]" -> "x(0)$0"	[label=print];
-	"print[1]" -> "train(0)$3"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "new_corr(0)$0"	[label=print];
-	"print[1]" -> "end_time(0)$0"	[label=print];
-	"print[1]" -> "end_time(0)$1"	[label=print];
-	"print[1]" -> "end_unigrams(0)$0"	[label=print];
-	"print[1]" -> "end_time(0)$2"	[label=print];
-	"print[1]" -> "end_time(0)$3"	[label=print];
-	"print[1]" -> "j(0)"	[label=print];
-	"print[1]" -> "train_loss_class(0)$0"	[label=print];
-	"print[1]" -> "valid_loss_class(0)$0"	[label=print];
-	"print[1]" -> "end_time(0)$4"	[label=print];
-	"print[1]" -> "end_time(0)$5"	[label=print];
-	"print[1]" -> "train_loss_class(0)$1"	[label=print];
-	"print[1]" -> "valid_loss_class(0)$1"	[label=print];
-	"print[1]" -> "end_time(0)$6"	[label=print];
+	"print[76/0]" -> "nrow_train(0)$0"	[label=print];
+	"print[76/0]" -> "nrow_test(0)$0"	[label=print];
+	"print[76/0]" -> "sum(0)$0"	[label=print];
+	"print[76/0]" -> "perc   :(0)"	[label=print];
+	"print[76/0]" -> "round(0)"	[label=print];
+	"print[76/0]" -> "100(0)"	[label=print];
+	"print[76/0]" -> "   :(0)"	[label=print];
 	"round(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"100(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"   :(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"x(0)$0" -> "train(0)$1"	[label=sum];
 	"x(0)$0" -> "2(0)"	[label=sum];
-	"train(0)$3" -> "train(0)$2"	[label=sum];
-	"len(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"new_corr(0)$0" -> "confusion_matrix(0)$1"	[label=cramers_corrected_stat];
-	"end_time(0)$0" -> "time(0)"	[label=time];
-	"end_time(0)$1" -> "time(0)"	[label=time];
-	"end_unigrams(0)$0" -> "time(0)"	[label=time];
-	"end_time(0)$2" -> "time(0)"	[label=time];
-	"end_time(0)$3" -> "time(0)"	[label=time];
-	"j(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"j(0)" -> "TARGET_COLS(0)$0"	[label=iteratorOf];
-	"j(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"train_loss_class(0)$0" -> "j(0)"	[label=log_loss];
-	"train_loss_class(0)$0" -> "y_train(0)$0"	[label=log_loss];
-	"train_loss_class(0)$0" -> "i(0)"	[label=log_loss];
-	"train_loss_class(0)$0" -> "preds_train(0)$1"	[label=log_loss];
-	"valid_loss_class(0)$0" -> "j(0)"	[label=log_loss];
-	"valid_loss_class(0)$0" -> "y_valid(0)$0"	[label=log_loss];
-	"valid_loss_class(0)$0" -> "i(0)"	[label=log_loss];
-	"valid_loss_class(0)$0" -> "preds_valid(0)$1"	[label=log_loss];
-	"end_time(0)$4" -> "time(0)"	[label=time];
-	"end_time(0)$5" -> "time(0)"	[label=time];
-	"train_loss_class(0)$1" -> "j(0)"	[label=log_loss];
-	"train_loss_class(0)$1" -> "i(0)"	[label=log_loss];
-	"train_loss_class(0)$1" -> "y_train(0)$1"	[label=log_loss];
-	"train_loss_class(0)$1" -> "preds_train(0)$3"	[label=log_loss];
-	"valid_loss_class(0)$1" -> "j(0)"	[label=log_loss];
-	"valid_loss_class(0)$1" -> "i(0)"	[label=log_loss];
-	"valid_loss_class(0)$1" -> "y_valid(0)$1"	[label=log_loss];
-	"valid_loss_class(0)$1" -> "preds_valid(0)$3"	[label=log_loss];
-	"end_time(0)$6" -> "time(0)"	[label=time];
-	":(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "start_time(0)$0"	[label=print];
-	"print[2]" -> "nrow_train(0)$0"	[label=print];
-	"print[2]" -> "train(0)$3"	[label=print];
-	"print[2]" -> ":(0)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "clean(0)"	[label=print];
-	"print[2]" -> "blocked_ip_list_train(0)$0"	[label=print];
-	"print[2]" -> "blocked_ip_list_test(0)$0"	[label=print];
-	"print[2]" -> "start_unigrams(0)$0"	[label=print];
-	"print[2]" -> "train_loss(0)$1"	[label=print];
-	"print[2]" -> "valid_loss(0)$1"	[label=print];
-	"print[2]" -> "train_loss(0)$3"	[label=print];
-	"print[2]" -> "valid_loss(0)$3"	[label=print];
-	"1(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"clean(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"blocked_ip_list_train(0)$0" -> "set(0)"	[label=list];
-	"blocked_ip_list_train(0)$0" -> "blocked_ips(0)$0"	[label=list];
-	"blocked_ip_list_train(0)$0" -> "train_ip_list(0)$1"	[label=list];
-	"blocked_ip_list_test(0)$0" -> "set(0)"	[label=list];
-	"blocked_ip_list_test(0)$0" -> "blocked_ips(0)$0"	[label=list];
-	"blocked_ip_list_test(0)$0" -> "test_ip_list(0)$1"	[label=list];
-	"start_unigrams(0)$0" -> "time(0)"	[label=time];
-	"train_loss(0)$1" -> "train_loss_class(0)$0"	[label=append];
-	"train_loss(0)$1" -> "train_loss(0)$0"	[label=append];
-	"valid_loss(0)$1" -> "valid_loss_class(0)$0"	[label=append];
-	"valid_loss(0)$1" -> "valid_loss(0)$0"	[label=append];
-	"train_loss(0)$3" -> "train_loss_class(0)$1"	[label=append];
-	"train_loss(0)$3" -> "train_loss(0)$2"	[label=append];
-	"valid_loss(0)$3" -> "valid_loss_class(0)$1"	[label=append];
-	"valid_loss(0)$3" -> "valid_loss(0)$2"	[label=append];
-	"print[3]" -> "nrow_test(0)$0"	[label=print];
-	"print[3]" -> "1(0)"	[label=print];
-	"print[3]" -> "100(0)"	[label=print];
-	"print[3]" -> "2(0)"	[label=print];
-	"print[3]" -> "3(0)"	[label=print];
-	"print[3]" -> "4(0)"	[label=print];
-	"print[3]" -> "blocked IPs in train dataset(0)"	[label=print];
-	"print[3]" -> "blocked IPs in test dataset(0)"	[label=print];
-	"100(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"2(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"3(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"4(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"blocked IPs in train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"blocked IPs in test dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"print[4]" -> "sum(0)$0"	[label=print];
-	"print[4]" -> "1(0)"	[label=print];
-	"   :(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"print[5]" -> "   :(0)"	[label=print];
-	"print[6]" -> "round(0)"	[label=print];
-	"print[7]" -> "nrow_test(0)$0"	[label=print];
-	"print[8]" -> "100(0)"	[label=print];
-	"print[9]" -> "sum(0)$0"	[label=print];
 	"rowsums(0)$0" -> "train(0)$1"	[label=sum];
-	"rowsums(0)$0" -> "1(0)"	[label=sum];
 	"rowsums(0)$0" -> "2(0)"	[label=sum];
+	"rowsums(0)$0" -> "1(0)"	[label=sum];
+	"1(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"train(0)$2" -> "train(0)$1"	[label=assignedFrom];
 	"train(0)$2" -> "0(0)"	[label=assignedFrom];
 	"train(0)$2" -> "rowsums(0)$0"	[label=assignedFrom];
+	"train(0)$3" -> "train(0)$2"	[label=sum];
+	"Total comments = (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[83/0]" -> "train(0)$3"	[label=print];
+	"print[83/0]" -> "Total comments = (0)"	[label=print];
+	"print[83/0]" -> "len(0)"	[label=print];
+	"len(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"Total clean comments = (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[84/0]" -> "train(0)$3"	[label=print];
+	"print[84/0]" -> "Total clean comments = (0)"	[label=print];
+	"print[84/0]" -> "clean(0)"	[label=print];
+	"clean(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"Total tags =(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[85/0]" -> "x(0)$0"	[label=print];
+	"print[85/0]" -> "Total tags =(0)"	[label=print];
+	"Check for missing values in Train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[86/0]" -> "Check for missing values in Train dataset(0)"	[label=print];
+	"null_check(0)$0" -> "train(0)$3"	[label=sum];
+	"print[88/0]" -> "null_check(0)$0"	[label=print];
+	"Check for missing values in Test dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[89/0]" -> "Check for missing values in Test dataset(0)"	[label=print];
+	"null_check(0)$1" -> "test(0)$0"	[label=sum];
+	"print[91/0]" -> "null_check(0)$1"	[label=print];
+	"filling NA with \"unknown\"(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[92/0]" -> "filling NA with \"unknown\"(0)"	[label=print];
+	"train(0)$4" -> "train(0)$3"	[label=fillna];
+	"train(0)$4" -> "unknown(0)"	[label=fillna];
 	"unknown(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"test(0)$1" -> "test(0)$0"	[label=fillna];
 	"test(0)$1" -> "unknown(0)"	[label=fillna];
-	"x(0)$1" -> "train(0)$4"	[label=sum];
 	"x(0)$1" -> "2(0)"	[label=sum];
+	"x(0)$1" -> "train(0)$4"	[label=sum];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"ax(0)$0" -> "sns(0)$0"	[label=barplot];
 	"ax(0)$0" -> "x(0)$1"	[label=barplot];
@@ -426,9 +281,9 @@ digraph "" {
 	"ax(0)$3" -> "ax(0)$2"	[label=text];
 	"ax(0)$3" -> "height(0)$1"	[label=text];
 	"plt(0)$9" -> "plt(0)$8"	[label=show];
-	"temp_df(0)$0" -> "train(0)$4"	[label=assignedFrom];
-	"temp_df(0)$0" -> "1(0)"	[label=assignedFrom];
 	"temp_df(0)$0" -> "2(0)"	[label=assignedFrom];
+	"temp_df(0)$0" -> "1(0)"	[label=assignedFrom];
+	"temp_df(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"corr(0)$0" -> "temp_df(0)$0"	[label=corr];
 	"plt(0)$10" -> "plt(0)$9"	[label=figure];
 	"sns(0)$1" -> "sns(0)$0"	[label=heatmap];
@@ -486,6 +341,42 @@ digraph "" {
 	"col1(0)$0" -> "toxic(0)"	[label=assignedFrom];
 	"severe_toxic(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"col2(0)$0" -> "severe_toxic(0)"	[label=assignedFrom];
+	"confusion_matrix(0)$1" -> "pd(0)"	[label=crosstab];
+	"confusion_matrix(0)$1" -> "temp_df(0)$0"	[label=crosstab];
+	"confusion_matrix(0)$1" -> "col1(0)$0"	[label=crosstab];
+	"confusion_matrix(0)$1" -> "col2(0)$0"	[label=crosstab];
+	"Confusion matrix between toxic and severe toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[181/0]" -> "Confusion matrix between toxic and severe toxic:(0)"	[label=print];
+	"print[182/0]" -> "confusion_matrix(0)$1"	[label=print];
+	"new_corr(0)$0" -> "confusion_matrix(0)$1"	[label=cramers_corrected_stat];
+	"The correlation between Toxic and Severe toxic using Cramer's stat=(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[184/0]" -> "new_corr(0)$0"	[label=print];
+	"print[184/0]" -> "The correlation between Toxic and Severe toxic using Cramer's stat=(0)"	[label=print];
+	"toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[185/0]" -> "toxic:(0)"	[label=print];
+	"print[186/0]" -> "1(0)"	[label=print];
+	"print[186/0]" -> "train(0)$4"	[label=print];
+	"print[186/0]" -> "3(0)"	[label=print];
+	"3(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"severe_toxic:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[188/0]" -> "severe_toxic:(0)"	[label=print];
+	"print[189/0]" -> "1(0)"	[label=print];
+	"print[189/0]" -> "train(0)$4"	[label=print];
+	"print[189/0]" -> "4(0)"	[label=print];
+	"4(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"Threat:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[191/0]" -> "Threat:(0)"	[label=print];
+	"print[192/0]" -> "1(0)"	[label=print];
+	"print[192/0]" -> "train(0)$4"	[label=print];
+	"Obscene:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[194/0]" -> "Obscene:(0)"	[label=print];
+	"print[195/0]" -> "1(0)"	[label=print];
+	"print[195/0]" -> "train(0)$4"	[label=print];
+	"identity_hate:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[197/0]" -> "identity_hate:(0)"	[label=print];
+	"print[198/0]" -> "1(0)"	[label=print];
+	"print[198/0]" -> "train(0)$4"	[label=print];
+	"print[198/0]" -> "4(0)"	[label=print];
 	"stopword(0)$0" -> "STOPWORDS(0)"	[label=set];
 	"clean_mask(0)$0" -> "np(0)"	[label=array];
 	"clean_mask(0)$0" -> "Image(0)"	[label=array];
@@ -527,8 +418,8 @@ digraph "" {
 	"../input/imagesforkernal/toxic-sign.png(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"toxic_mask(0)$1" -> "1(0)"	[label=assignedFrom];
 	"toxic_mask(0)$1" -> "toxic_mask(0)$0"	[label=assignedFrom];
-	"subset(0)$1" -> "train(0)$4"	[label=assignedFrom];
 	"subset(0)$1" -> "1(0)"	[label=assignedFrom];
+	"subset(0)$1" -> "train(0)$4"	[label=assignedFrom];
 	"text(0)$1" -> "subset(0)$1"	[label=assignedFrom];
 	"wc(0)$2" -> "stopword(0)$0"	[label=WordCloud];
 	"wc(0)$2" -> "black(0)"	[label=WordCloud];
@@ -562,8 +453,8 @@ digraph "" {
 	"../input/imagesforkernal/bomb.png(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"severe_toxic_mask(0)$1" -> "1(0)"	[label=assignedFrom];
 	"severe_toxic_mask(0)$1" -> "severe_toxic_mask(0)$0"	[label=assignedFrom];
-	"subset(0)$2" -> "train(0)$4"	[label=assignedFrom];
 	"subset(0)$2" -> "1(0)"	[label=assignedFrom];
+	"subset(0)$2" -> "train(0)$4"	[label=assignedFrom];
 	"text(0)$2" -> "subset(0)$2"	[label=assignedFrom];
 	"wc(0)$4" -> "stopword(0)$0"	[label=WordCloud];
 	"wc(0)$4" -> "black(0)"	[label=WordCloud];
@@ -591,8 +482,8 @@ digraph "" {
 	"../input/imagesforkernal/anger.png(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"threat_mask(0)$1" -> "1(0)"	[label=assignedFrom];
 	"threat_mask(0)$1" -> "threat_mask(0)$0"	[label=assignedFrom];
-	"subset(0)$3" -> "train(0)$4"	[label=assignedFrom];
 	"subset(0)$3" -> "1(0)"	[label=assignedFrom];
+	"subset(0)$3" -> "train(0)$4"	[label=assignedFrom];
 	"text(0)$3" -> "subset(0)$3"	[label=assignedFrom];
 	"wc(0)$6" -> "stopword(0)$0"	[label=WordCloud];
 	"wc(0)$6" -> "black(0)"	[label=WordCloud];
@@ -621,8 +512,8 @@ digraph "" {
 	"../input/imagesforkernal/swords.png(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"insult_mask(0)$1" -> "1(0)"	[label=assignedFrom];
 	"insult_mask(0)$1" -> "insult_mask(0)$0"	[label=assignedFrom];
-	"subset(0)$4" -> "train(0)$4"	[label=assignedFrom];
 	"subset(0)$4" -> "1(0)"	[label=assignedFrom];
+	"subset(0)$4" -> "train(0)$4"	[label=assignedFrom];
 	"text(0)$4" -> "subset(0)$4"	[label=assignedFrom];
 	"wc(0)$8" -> "stopword(0)$0"	[label=WordCloud];
 	"wc(0)$8" -> "black(0)"	[label=WordCloud];
@@ -643,13 +534,13 @@ digraph "" {
 	"Paired_r(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$33" -> "plt(0)$32"	[label=show];
 	"merge(0)$0" -> "pd(0)"	[label=concat];
-	"merge(0)$0" -> "[<_ast.Subscript object at 0x12f89a880>, <_ast.Subscript object at 0x12f89aa90>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f89a880>, <_ast.Subscript object at 0x12f89aa90>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"merge(0)$0" -> "[<_ast.Subscript object at 0x7fd500827550>, <_ast.Subscript object at 0x7fd500827760>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500827550>, <_ast.Subscript object at 0x7fd500827760>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"df(0)$0" -> "True(0)"	[label=reset_index];
 	"df(0)$0" -> "merge(0)$0"	[label=reset_index];
 	"df(0)$1" -> "re(0)"	[label=apply];
-	"df(0)$1" -> "len(0)"	[label=apply];
 	"df(0)$1" -> "1(0)"	[label=apply];
+	"df(0)$1" -> "len(0)"	[label=apply];
 	"df(0)$1" -> "x(0)$2"	[label=apply];
 	"df(0)$1" -> "df(0)$0"	[label=apply];
 	"df(0)$1" -> "comment_text(0)"	[label=apply];
@@ -726,18 +617,18 @@ digraph "" {
 	"df(0)$11" -> "count_punctuations(0)"	[label=Div];
 	"count_punctuations(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"train_feats(0)$0" -> "0(0)"	[label=assignedFrom];
-	"train_feats(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"train_feats(0)$0" -> "len(0)"	[label=assignedFrom];
+	"train_feats(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"train_feats(0)$0" -> "df(0)$11"	[label=assignedFrom];
-	"test_feats(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"test_feats(0)$0" -> "len(0)"	[label=assignedFrom];
+	"test_feats(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"test_feats(0)$0" -> "df(0)$11"	[label=assignedFrom];
-	"train_tags(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"train_tags(0)$0" -> "2(0)"	[label=assignedFrom];
+	"train_tags(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"train_feats(0)$1" -> "pd(0)"	[label=concat];
 	"train_feats(0)$1" -> "1(0)"	[label=concat];
-	"train_feats(0)$1" -> "[<_ast.Name object at 0x12f92ddc0>, <_ast.Name object at 0x12f92ddf0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f92ddc0>, <_ast.Name object at 0x12f92ddf0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"train_feats(0)$1" -> "[<_ast.Name object at 0x7fd4c04faac0>, <_ast.Name object at 0x7fd4c04faaf0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04faac0>, <_ast.Name object at 0x7fd4c04faaf0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"train_feats(0)$2" -> "10(0)"	[label=assignedFrom];
 	"train_feats(0)$2" -> "train_feats(0)$1"	[label=assignedFrom];
 	"plt(0)$34" -> "plt(0)$33"	[label=figure];
@@ -778,8 +669,11 @@ digraph "" {
 	"temp_df(0)$1" -> "pd(0)"	[label=melt];
 	"temp_df(0)$1" -> "clean(0)"	[label=melt];
 	"temp_df(0)$1" -> "train_feats(0)$4"	[label=melt];
-	"temp_df(0)$1" -> "[<_ast.Constant object at 0x12f9482e0>, <_ast.Constant object at 0x12f948310>](0)"	[label=melt];
-	"[<_ast.Constant object at 0x12f9482e0>, <_ast.Constant object at 0x12f948310>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$1" -> "[<_ast.Constant object at 0x7fd4c04c1fa0>, <_ast.Constant object at 0x7fd4c04c1fd0>](0)"	[label=melt];
+	"[<_ast.Constant object at 0x7fd4c04c1fa0>, <_ast.Constant object at 0x7fd4c04c1fd0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"spammers(0)$0" -> "train_feats(0)$4"	[label=assignedFrom];
+	"spammers(0)$0" -> "word_unique_percent(0)"	[label=assignedFrom];
+	"spammers(0)$0" -> "30(0)"	[label=assignedFrom];
 	"word_unique_percent(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"30(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$45" -> "plt(0)$44"	[label=figure];
@@ -802,8 +696,8 @@ digraph "" {
 	"plt(0)$50" -> "Count(0)"	[label=ylabel];
 	"Count(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$51" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$51" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$51" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$51" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$51" -> "plt(0)$50"	[label=subplot2grid];
 	"plt(0)$52" -> "plt(0)$51"	[label=title];
 	"plt(0)$52" -> "Percentage of unique words of total words in comment(0)"	[label=title];
@@ -832,8 +726,8 @@ digraph "" {
 	"x(0)$3" -> "7(0)"	[label=sum];
 	"7(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$56" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$56" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$56" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$56" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$56" -> "plt(0)$55"	[label=subplot2grid];
 	"plt(0)$57" -> "plt(0)$56"	[label=title];
 	"plt(0)$57" -> "Count of comments with low(<30\%) unique words(0)"	[label=title];
@@ -856,6 +750,15 @@ digraph "" {
 	"plt(0)$59" -> "# of comments(0)"	[label=ylabel];
 	"# of comments(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$60" -> "plt(0)$59"	[label=show];
+	"Clean Spam example:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[358/0]" -> "Clean Spam example:(0)"	[label=print];
+	"print[359/0]" -> "1(0)"	[label=print];
+	"print[359/0]" -> "spammers(0)$0"	[label=print];
+	"Toxic Spam example:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[360/0]" -> "Toxic Spam example:(0)"	[label=print];
+	"print[361/0]" -> "2(0)"	[label=print];
+	"print[361/0]" -> "1(0)"	[label=print];
+	"print[361/0]" -> "spammers(0)$0"	[label=print];
 	"df(0)$12" -> "re(0)"	[label=apply];
 	"df(0)$12" -> "comment_text(0)"	[label=apply];
 	"df(0)$12" -> "str(0)"	[label=apply];
@@ -914,12 +817,12 @@ digraph "" {
 	"count_feats_user(0)$0" -> "username(0)"	[label=fit_transform];
 	"count_feats_user(0)$0" -> "cv(0)"	[label=fit_transform];
 	"leaky_feats(0)$0" -> "df(0)$19"	[label=assignedFrom];
-	"leaky_feats(0)$0" -> "[<_ast.Constant object at 0x12f8a9460>, <_ast.Constant object at 0x12f8a9490>, <_ast.Constant object at 0x12f8a94c0>, <_ast.Constant \
-object at 0x12f8a94f0>, <_ast.Constant object at 0x12f8a9520>, <_ast.Constant object at 0x12f8a9550>, <_ast.Constant object at 0x12f8a9580>, <_\
-ast.Constant object at 0x12f8a95b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a9460>, <_ast.Constant object at 0x12f8a9490>, <_ast.Constant object at 0x12f8a94c0>, <_ast.Constant \
-object at 0x12f8a94f0>, <_ast.Constant object at 0x12f8a9520>, <_ast.Constant object at 0x12f8a9550>, <_ast.Constant object at 0x12f8a9580>, <_\
-ast.Constant object at 0x12f8a95b0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"leaky_feats(0)$0" -> "[<_ast.Constant object at 0x7fd50086c160>, <_ast.Constant object at 0x7fd50086c190>, <_ast.Constant object at 0x7fd50086c1c0>, <_\
+ast.Constant object at 0x7fd50086c1f0>, <_ast.Constant object at 0x7fd50086c220>, <_ast.Constant object at 0x7fd50086c250>, <_ast.Constant \
+object at 0x7fd50086c280>, <_ast.Constant object at 0x7fd50086c2b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086c160>, <_ast.Constant object at 0x7fd50086c190>, <_ast.Constant object at 0x7fd50086c1c0>, <_\
+ast.Constant object at 0x7fd50086c1f0>, <_ast.Constant object at 0x7fd50086c220>, <_ast.Constant object at 0x7fd50086c250>, <_ast.Constant \
+object at 0x7fd50086c280>, <_ast.Constant object at 0x7fd50086c2b0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"leaky_feats_train(0)$0" -> "0(0)"	[label=assignedFrom];
 	"leaky_feats_train(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"leaky_feats_train(0)$0" -> "leaky_feats(0)$0"	[label=assignedFrom];
@@ -988,202 +891,216 @@ ast.Constant object at 0x12f8a95b0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb
 	"Common usernames(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"venn(0)$2" -> "venn(0)$1"	[label=venn2];
 	"plt(0)$66" -> "plt(0)$65"	[label=show];
-	"[<_ast.Constant object at 0x12f8d4550>, <_ast.Constant object at 0x12f8d4580>, <_ast.Constant object at 0x12f8d45b0>, <_ast.Constant \
-object at 0x12f8d45e0>, <_ast.Constant object at 0x12f8d4610>, <_ast.Constant object at 0x12f8d4640>, <_ast.Constant object at 0x12f8d4670>, <_\
-ast.Constant object at 0x12f8d46a0>, <_ast.Constant object at 0x12f8d46d0>, <_ast.Constant object at 0x12f8d4700>, <_ast.Constant \
-object at 0x12f8d4730>, <_ast.Constant object at 0x12f8d4790>, <_ast.Constant object at 0x12f8d47c0>, <_ast.Constant object at 0x12f8d47f0>, <_\
-ast.Constant object at 0x12f8d4820>, <_ast.Constant object at 0x12f8d4850>, <_ast.Constant object at 0x12f8d4880>, <_ast.Constant \
-object at 0x12f8d48b0>, <_ast.Constant object at 0x12f8d48e0>, <_ast.Constant object at 0x12f8d4910>, <_ast.Constant object at 0x12f8d4940>, <_\
-ast.Constant object at 0x12f8d4970>, <_ast.Constant object at 0x12f8d49a0>, <_ast.Constant object at 0x12f8d49d0>, <_ast.Constant \
-object at 0x12f8d4a00>, <_ast.Constant object at 0x12f8d4a30>, <_ast.Constant object at 0x12f8d4a60>, <_ast.Constant object at 0x12f8d4ac0>, <_\
-ast.Constant object at 0x12f8d4a90>, <_ast.Constant object at 0x12f8d4af0>, <_ast.Constant object at 0x12f8d4b20>, <_ast.Constant \
-object at 0x12f8d4b50>, <_ast.Constant object at 0x12f8d4b80>, <_ast.Constant object at 0x12f8d4bb0>, <_ast.Constant object at 0x12f8d4be0>, <_\
-ast.Constant object at 0x12f8d4c10>, <_ast.Constant object at 0x12f8d4c40>, <_ast.Constant object at 0x12f8d4c70>, <_ast.Constant \
-object at 0x12f8d4ca0>, <_ast.Constant object at 0x12f8d4cd0>, <_ast.Constant object at 0x12f8d4d00>, <_ast.Constant object at 0x12f8d4d30>, <_\
-ast.Constant object at 0x12f8d4d60>, <_ast.Constant object at 0x12f8d4d90>, <_ast.Constant object at 0x12f8d4dc0>, <_ast.Constant \
-object at 0x12f8d4760>, <_ast.Constant object at 0x12f8d4e20>, <_ast.Constant object at 0x12f8d4e80>, <_ast.Constant object at 0x12f8d4eb0>, <_\
-ast.Constant object at 0x12f8d4ee0>, <_ast.Constant object at 0x12f8d4f10>, <_ast.Constant object at 0x12f8d4f40>, <_ast.Constant \
-object at 0x12f8d4f70>, <_ast.Constant object at 0x12f8d4fa0>, <_ast.Constant object at 0x12f8d4fd0>, <_ast.Constant object at 0x12f8d4e50>, <_\
-ast.Constant object at 0x12f8d4df0>, <_ast.Constant object at 0x12f8bd040>, <_ast.Constant object at 0x12f8bd070>, <_ast.Constant \
-object at 0x12f8bd0a0>, <_ast.Constant object at 0x12f8bd0d0>, <_ast.Constant object at 0x12f8bd100>, <_ast.Constant object at 0x12f8bd130>, <_\
-ast.Constant object at 0x12f8bd160>, <_ast.Constant object at 0x12f8bd190>, <_ast.Constant object at 0x12f8bd1c0>, <_ast.Constant \
-object at 0x12f8bd1f0>, <_ast.Constant object at 0x12f8bd220>, <_ast.Constant object at 0x12f8bd250>, <_ast.Constant object at 0x12f8bd280>, <_\
-ast.Constant object at 0x12f8bd2b0>, <_ast.Constant object at 0x12f8bd2e0>, <_ast.Constant object at 0x12f8bd310>, <_ast.Constant \
-object at 0x12f8bd340>, <_ast.Constant object at 0x12f8bd370>, <_ast.Constant object at 0x12f8bd3a0>, <_ast.Constant object at 0x12f8bd3d0>, <_\
-ast.Constant object at 0x12f8bd400>, <_ast.Constant object at 0x12f8bd430>, <_ast.Constant object at 0x12f8bd460>, <_ast.Constant \
-object at 0x12f8bd490>, <_ast.Constant object at 0x12f8bd4c0>, <_ast.Constant object at 0x12f8bd4f0>, <_ast.Constant object at 0x12f8bd520>, <_\
-ast.Constant object at 0x12f8bd550>, <_ast.Constant object at 0x12f8bd580>, <_ast.Constant object at 0x12f8bd5b0>, <_ast.Constant \
-object at 0x12f8bd5e0>, <_ast.Constant object at 0x12f8bd610>, <_ast.Constant object at 0x12f8bd640>, <_ast.Constant object at 0x12f8bd670>, <_\
-ast.Constant object at 0x12f8bd6a0>, <_ast.Constant object at 0x12f8bd6d0>, <_ast.Constant object at 0x12f8bd700>, <_ast.Constant \
-object at 0x12f8bd730>, <_ast.Constant object at 0x12f8bd760>, <_ast.Constant object at 0x12f8bd790>, <_ast.Constant object at 0x12f8bd7c0>, <_\
-ast.Constant object at 0x12f8bd7f0>, <_ast.Constant object at 0x12f8bd820>, <_ast.Constant object at 0x12f8bd850>, <_ast.Constant \
-object at 0x12f8bd880>, <_ast.Constant object at 0x12f8bd8b0>, <_ast.Constant object at 0x12f8bd8e0>, <_ast.Constant object at 0x12f8bd910>, <_\
-ast.Constant object at 0x12f8bd940>, <_ast.Constant object at 0x12f8bd970>, <_ast.Constant object at 0x12f8bd9a0>, <_ast.Constant \
-object at 0x12f8bd9d0>, <_ast.Constant object at 0x12f8bda00>, <_ast.Constant object at 0x12f8bda30>, <_ast.Constant object at 0x12f8bda60>, <_\
-ast.Constant object at 0x12f8bda90>, <_ast.Constant object at 0x12f8bdac0>, <_ast.Constant object at 0x12f8bdaf0>, <_ast.Constant \
-object at 0x12f8bdb20>, <_ast.Constant object at 0x12f8bdb50>, <_ast.Constant object at 0x12f8bdb80>, <_ast.Constant object at 0x12f8bdbb0>, <_\
-ast.Constant object at 0x12f8bdbe0>, <_ast.Constant object at 0x12f8bdc10>, <_ast.Constant object at 0x12f8bdc40>, <_ast.Constant \
-object at 0x12f8bdc70>, <_ast.Constant object at 0x12f8bdca0>, <_ast.Constant object at 0x12f8bdcd0>, <_ast.Constant object at 0x12f8bdd00>, <_\
-ast.Constant object at 0x12f8bdd30>, <_ast.Constant object at 0x12f8bdd60>, <_ast.Constant object at 0x12f8bdd90>, <_ast.Constant \
-object at 0x12f8bddc0>, <_ast.Constant object at 0x12f8bddf0>, <_ast.Constant object at 0x12f8bde20>, <_ast.Constant object at 0x12f8bde50>, <_\
-ast.Constant object at 0x12f8bde80>, <_ast.Constant object at 0x12f8bdeb0>, <_ast.Constant object at 0x12f8bdee0>, <_ast.Constant \
-object at 0x12f8bdf10>, <_ast.Constant object at 0x12f8bdf40>, <_ast.Constant object at 0x12f8bdf70>, <_ast.Constant object at 0x12f8bdfa0>, <_\
-ast.Constant object at 0x12f8bdfd0>, <_ast.Constant object at 0x12f8e5070>, <_ast.Constant object at 0x12f8e50a0>, <_ast.Constant \
-object at 0x12f8e50d0>, <_ast.Constant object at 0x12f8e5100>, <_ast.Constant object at 0x12f8e5130>, <_ast.Constant object at 0x12f8e5160>, <_\
-ast.Constant object at 0x12f8e5190>, <_ast.Constant object at 0x12f8e51c0>, <_ast.Constant object at 0x12f8e51f0>, <_ast.Constant \
-object at 0x12f8e5220>, <_ast.Constant object at 0x12f8e5250>, <_ast.Constant object at 0x12f8e5280>, <_ast.Constant object at 0x12f8e52b0>, <_\
-ast.Constant object at 0x12f8e52e0>, <_ast.Constant object at 0x12f8e5310>, <_ast.Constant object at 0x12f8e5340>, <_ast.Constant \
-object at 0x12f8e5040>, <_ast.Constant object at 0x12f8e5370>, <_ast.Constant object at 0x12f8e53a0>, <_ast.Constant object at 0x12f8e53d0>, <_\
-ast.Constant object at 0x12f8e5400>, <_ast.Constant object at 0x12f8e5430>, <_ast.Constant object at 0x12f8e5460>, <_ast.Constant \
-object at 0x12f8e5490>, <_ast.Constant object at 0x12f8e54c0>, <_ast.Constant object at 0x12f8e54f0>, <_ast.Constant object at 0x12f8e5520>, <_\
-ast.Constant object at 0x12f8e5580>, <_ast.Constant object at 0x12f8e55b0>, <_ast.Constant object at 0x12f8e55e0>, <_ast.Constant \
-object at 0x12f8e5610>, <_ast.Constant object at 0x12f8e5550>, <_ast.Constant object at 0x12f8e5640>, <_ast.Constant object at 0x12f8e5670>, <_\
-ast.Constant object at 0x12f8e56a0>, <_ast.Constant object at 0x12f8e5700>, <_ast.Constant object at 0x12f8e5790>, <_ast.Constant \
-object at 0x12f8e57c0>, <_ast.Constant object at 0x12f8e57f0>, <_ast.Constant object at 0x12f8e5820>, <_ast.Constant object at 0x12f8e5850>, <_\
-ast.Constant object at 0x12f8e5880>, <_ast.Constant object at 0x12f8e58b0>, <_ast.Constant object at 0x12f8e58e0>, <_ast.Constant \
-object at 0x12f8e5910>, <_ast.Constant object at 0x12f8e5940>, <_ast.Constant object at 0x12f8e5970>, <_ast.Constant object at 0x12f8e59a0>, <_\
-ast.Constant object at 0x12f8e59d0>, <_ast.Constant object at 0x12f8e5a00>, <_ast.Constant object at 0x12f8e5a30>, <_ast.Constant \
-object at 0x12f8e5760>, <_ast.Constant object at 0x12f8e5a60>, <_ast.Constant object at 0x12f8e5a90>, <_ast.Constant object at 0x12f8e5ac0>, <_\
-ast.Constant object at 0x12f8e5af0>, <_ast.Constant object at 0x12f8e5b20>, <_ast.Constant object at 0x12f8e5b50>, <_ast.Constant \
-object at 0x12f8e5b80>, <_ast.Constant object at 0x12f8e5bb0>, <_ast.Constant object at 0x12f8e5be0>, <_ast.Constant object at 0x12f8e5c10>, <_\
-ast.Constant object at 0x12f8e5c40>, <_ast.Constant object at 0x12f8e5c70>, <_ast.Constant object at 0x12f8e5ca0>, <_ast.Constant \
-object at 0x12f8e5cd0>, <_ast.Constant object at 0x12f8e5730>, <_ast.Constant object at 0x12f8e5d00>, <_ast.Constant object at 0x12f8e5d30>, <_\
-ast.Constant object at 0x12f8e5d60>, <_ast.Constant object at 0x12f8e5d90>, <_ast.Constant object at 0x12f8e5dc0>, <_ast.Constant \
-object at 0x12f8e5df0>, <_ast.Constant object at 0x12f8e5e20>, <_ast.Constant object at 0x12f8e5e50>, <_ast.Constant object at 0x12f8e5e80>, <_\
-ast.Constant object at 0x12f8e5eb0>, <_ast.Constant object at 0x12f8e5ee0>, <_ast.Constant object at 0x12f8e5f10>, <_ast.Constant \
-object at 0x12f8e5f40>, <_ast.Constant object at 0x12f8e5fa0>, <_ast.Constant object at 0x12f8e56d0>, <_ast.Constant object at 0x12f8e5fd0>, <_\
-ast.Constant object at 0x12f8e5f70>, <_ast.Constant object at 0x12f8e3040>, <_ast.Constant object at 0x12f8e3070>, <_ast.Constant \
-object at 0x12f8e30a0>, <_ast.Constant object at 0x12f8e30d0>, <_ast.Constant object at 0x12f8e3100>, <_ast.Constant object at 0x12f8e3130>, <_\
-ast.Constant object at 0x12f8e3160>, <_ast.Constant object at 0x12f8e31c0>, <_ast.Constant object at 0x12f8e3220>, <_ast.Constant \
-object at 0x12f8e3250>, <_ast.Constant object at 0x12f8e3280>, <_ast.Constant object at 0x12f8e32b0>, <_ast.Constant object at 0x12f8e32e0>, <_\
-ast.Constant object at 0x12f8e3310>, <_ast.Constant object at 0x12f8e3340>, <_ast.Constant object at 0x12f8e33a0>, <_ast.Constant \
-object at 0x12f8e33d0>, <_ast.Constant object at 0x12f8e3400>, <_ast.Constant object at 0x12f8e3460>, <_ast.Constant object at 0x12f8e3430>, <_\
-ast.Constant object at 0x12f8e3490>, <_ast.Constant object at 0x12f8e34c0>, <_ast.Constant object at 0x12f8e34f0>, <_ast.Constant \
-object at 0x12f8e31f0>, <_ast.Constant object at 0x12f8e3520>, <_ast.Constant object at 0x12f8e3580>, <_ast.Constant object at 0x12f8e35b0>, <_\
-ast.Constant object at 0x12f8e35e0>, <_ast.Constant object at 0x12f8e3610>, <_ast.Constant object at 0x12f8e3640>, <_ast.Constant \
-object at 0x12f8e3670>, <_ast.Constant object at 0x12f8e36a0>, <_ast.Constant object at 0x12f8e36d0>, <_ast.Constant object at 0x12f8e3700>, <_\
-ast.Constant object at 0x12f8e3730>, <_ast.Constant object at 0x12f8e3760>, <_ast.Constant object at 0x12f8e3370>, <_ast.Constant \
-object at 0x12f8e3790>, <_ast.Constant object at 0x12f8e37c0>, <_ast.Constant object at 0x12f8e3820>, <_ast.Constant object at 0x12f8e37f0>, <_\
-ast.Constant object at 0x12f8e3850>, <_ast.Constant object at 0x12f8e3880>, <_ast.Constant object at 0x12f8e38b0>, <_ast.Constant \
-object at 0x12f8e38e0>, <_ast.Constant object at 0x12f8e3910>, <_ast.Constant object at 0x12f8e3940>, <_ast.Constant object at 0x12f8e39a0>, <_\
-ast.Constant object at 0x12f8e39d0>, <_ast.Constant object at 0x12f8e3a00>, <_ast.Constant object at 0x12f8e3a30>, <_ast.Constant \
-object at 0x12f8e3190>, <_ast.Constant object at 0x12f8e3a60>, <_ast.Constant object at 0x12f8e3a90>, <_ast.Constant object at 0x12f8e3ac0>, <_\
-ast.Constant object at 0x12f8e3af0>, <_ast.Constant object at 0x12f8e3b20>, <_ast.Constant object at 0x12f8e3b80>, <_ast.Constant \
-object at 0x12f8e3bb0>, <_ast.Constant object at 0x12f8e3c10>, <_ast.Constant object at 0x12f8e3c40>, <_ast.Constant object at 0x12f8e3c70>, <_\
-ast.Constant object at 0x12f8e3ca0>, <_ast.Constant object at 0x12f8e3cd0>, <_ast.Constant object at 0x12f8e3be0>, <_ast.Constant \
-object at 0x12f8e3d00>, <_ast.Constant object at 0x12f8e3d60>, <_ast.Constant object at 0x12f8e3d90>, <_ast.Constant object at 0x12f8e3dc0>, <_\
-ast.Constant object at 0x12f8e3970>, <_ast.Constant object at 0x12f8e3df0>, <_ast.Constant object at 0x12f8e3e20>, <_ast.Constant \
-object at 0x12f8e3e50>, <_ast.Constant object at 0x12f8e3550>, <_ast.Constant object at 0x12f8e3e80>, <_ast.Constant object at 0x12f8e3eb0>, <_\
-ast.Constant object at 0x12f8e3b50>, <_ast.Constant object at 0x12f8e3f10>, <_ast.Constant object at 0x12f8e3f40>, <_ast.Constant \
-object at 0x12f8e3f70>, <_ast.Constant object at 0x12f8e3fa0>, <_ast.Constant object at 0x12f8e3ee0>, <_ast.Constant object at 0x12f8e3fd0>, <_\
-ast.Constant object at 0x12f8e3d30>, <_ast.Constant object at 0x130b9d040>, <_ast.Constant object at 0x130b9d070>, <_ast.Constant \
-object at 0x130b9d0a0>, <_ast.Constant object at 0x130b9d0d0>, <_ast.Constant object at 0x130b9d100>, <_ast.Constant object at 0x130b9d130>, <_\
-ast.Constant object at 0x130b9d160>, <_ast.Constant object at 0x130b9d190>, <_ast.Constant object at 0x130b9d1c0>, <_ast.Constant \
-object at 0x130b9d1f0>, <_ast.Constant object at 0x130b9d220>, <_ast.Constant object at 0x130b9d250>, <_ast.Constant object at 0x130b9d280>, <_\
-ast.Constant object at 0x130b9d2b0>, <_ast.Constant object at 0x130b9d2e0>, <_ast.Constant object at 0x130b9d310>, <_ast.Constant \
-object at 0x130b9d340>, <_ast.Constant object at 0x130b9d3a0>, <_ast.Constant object at 0x130b9d3d0>, <_ast.Constant object at 0x130b9d400>, <_\
-ast.Constant object at 0x130b9d430>, <_ast.Constant object at 0x130b9d460>, <_ast.Constant object at 0x130b9d490>, <_ast.Constant \
-object at 0x130b9d4c0>, <_ast.Constant object at 0x130b9d4f0>, <_ast.Constant object at 0x130b9d520>, <_ast.Constant object at 0x130b9d550>, <_\
-ast.Constant object at 0x130b9d5b0>, <_ast.Constant object at 0x130b9d640>, <_ast.Constant object at 0x130b9d670>, <_ast.Constant \
-object at 0x130b9d6a0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"blocked_ips(0)$0" -> "[<_ast.Constant object at 0x12f8d4550>, <_ast.Constant object at 0x12f8d4580>, <_ast.Constant object at 0x12f8d45b0>, <_ast.Constant \
-object at 0x12f8d45e0>, <_ast.Constant object at 0x12f8d4610>, <_ast.Constant object at 0x12f8d4640>, <_ast.Constant object at 0x12f8d4670>, <_\
-ast.Constant object at 0x12f8d46a0>, <_ast.Constant object at 0x12f8d46d0>, <_ast.Constant object at 0x12f8d4700>, <_ast.Constant \
-object at 0x12f8d4730>, <_ast.Constant object at 0x12f8d4790>, <_ast.Constant object at 0x12f8d47c0>, <_ast.Constant object at 0x12f8d47f0>, <_\
-ast.Constant object at 0x12f8d4820>, <_ast.Constant object at 0x12f8d4850>, <_ast.Constant object at 0x12f8d4880>, <_ast.Constant \
-object at 0x12f8d48b0>, <_ast.Constant object at 0x12f8d48e0>, <_ast.Constant object at 0x12f8d4910>, <_ast.Constant object at 0x12f8d4940>, <_\
-ast.Constant object at 0x12f8d4970>, <_ast.Constant object at 0x12f8d49a0>, <_ast.Constant object at 0x12f8d49d0>, <_ast.Constant \
-object at 0x12f8d4a00>, <_ast.Constant object at 0x12f8d4a30>, <_ast.Constant object at 0x12f8d4a60>, <_ast.Constant object at 0x12f8d4ac0>, <_\
-ast.Constant object at 0x12f8d4a90>, <_ast.Constant object at 0x12f8d4af0>, <_ast.Constant object at 0x12f8d4b20>, <_ast.Constant \
-object at 0x12f8d4b50>, <_ast.Constant object at 0x12f8d4b80>, <_ast.Constant object at 0x12f8d4bb0>, <_ast.Constant object at 0x12f8d4be0>, <_\
-ast.Constant object at 0x12f8d4c10>, <_ast.Constant object at 0x12f8d4c40>, <_ast.Constant object at 0x12f8d4c70>, <_ast.Constant \
-object at 0x12f8d4ca0>, <_ast.Constant object at 0x12f8d4cd0>, <_ast.Constant object at 0x12f8d4d00>, <_ast.Constant object at 0x12f8d4d30>, <_\
-ast.Constant object at 0x12f8d4d60>, <_ast.Constant object at 0x12f8d4d90>, <_ast.Constant object at 0x12f8d4dc0>, <_ast.Constant \
-object at 0x12f8d4760>, <_ast.Constant object at 0x12f8d4e20>, <_ast.Constant object at 0x12f8d4e80>, <_ast.Constant object at 0x12f8d4eb0>, <_\
-ast.Constant object at 0x12f8d4ee0>, <_ast.Constant object at 0x12f8d4f10>, <_ast.Constant object at 0x12f8d4f40>, <_ast.Constant \
-object at 0x12f8d4f70>, <_ast.Constant object at 0x12f8d4fa0>, <_ast.Constant object at 0x12f8d4fd0>, <_ast.Constant object at 0x12f8d4e50>, <_\
-ast.Constant object at 0x12f8d4df0>, <_ast.Constant object at 0x12f8bd040>, <_ast.Constant object at 0x12f8bd070>, <_ast.Constant \
-object at 0x12f8bd0a0>, <_ast.Constant object at 0x12f8bd0d0>, <_ast.Constant object at 0x12f8bd100>, <_ast.Constant object at 0x12f8bd130>, <_\
-ast.Constant object at 0x12f8bd160>, <_ast.Constant object at 0x12f8bd190>, <_ast.Constant object at 0x12f8bd1c0>, <_ast.Constant \
-object at 0x12f8bd1f0>, <_ast.Constant object at 0x12f8bd220>, <_ast.Constant object at 0x12f8bd250>, <_ast.Constant object at 0x12f8bd280>, <_\
-ast.Constant object at 0x12f8bd2b0>, <_ast.Constant object at 0x12f8bd2e0>, <_ast.Constant object at 0x12f8bd310>, <_ast.Constant \
-object at 0x12f8bd340>, <_ast.Constant object at 0x12f8bd370>, <_ast.Constant object at 0x12f8bd3a0>, <_ast.Constant object at 0x12f8bd3d0>, <_\
-ast.Constant object at 0x12f8bd400>, <_ast.Constant object at 0x12f8bd430>, <_ast.Constant object at 0x12f8bd460>, <_ast.Constant \
-object at 0x12f8bd490>, <_ast.Constant object at 0x12f8bd4c0>, <_ast.Constant object at 0x12f8bd4f0>, <_ast.Constant object at 0x12f8bd520>, <_\
-ast.Constant object at 0x12f8bd550>, <_ast.Constant object at 0x12f8bd580>, <_ast.Constant object at 0x12f8bd5b0>, <_ast.Constant \
-object at 0x12f8bd5e0>, <_ast.Constant object at 0x12f8bd610>, <_ast.Constant object at 0x12f8bd640>, <_ast.Constant object at 0x12f8bd670>, <_\
-ast.Constant object at 0x12f8bd6a0>, <_ast.Constant object at 0x12f8bd6d0>, <_ast.Constant object at 0x12f8bd700>, <_ast.Constant \
-object at 0x12f8bd730>, <_ast.Constant object at 0x12f8bd760>, <_ast.Constant object at 0x12f8bd790>, <_ast.Constant object at 0x12f8bd7c0>, <_\
-ast.Constant object at 0x12f8bd7f0>, <_ast.Constant object at 0x12f8bd820>, <_ast.Constant object at 0x12f8bd850>, <_ast.Constant \
-object at 0x12f8bd880>, <_ast.Constant object at 0x12f8bd8b0>, <_ast.Constant object at 0x12f8bd8e0>, <_ast.Constant object at 0x12f8bd910>, <_\
-ast.Constant object at 0x12f8bd940>, <_ast.Constant object at 0x12f8bd970>, <_ast.Constant object at 0x12f8bd9a0>, <_ast.Constant \
-object at 0x12f8bd9d0>, <_ast.Constant object at 0x12f8bda00>, <_ast.Constant object at 0x12f8bda30>, <_ast.Constant object at 0x12f8bda60>, <_\
-ast.Constant object at 0x12f8bda90>, <_ast.Constant object at 0x12f8bdac0>, <_ast.Constant object at 0x12f8bdaf0>, <_ast.Constant \
-object at 0x12f8bdb20>, <_ast.Constant object at 0x12f8bdb50>, <_ast.Constant object at 0x12f8bdb80>, <_ast.Constant object at 0x12f8bdbb0>, <_\
-ast.Constant object at 0x12f8bdbe0>, <_ast.Constant object at 0x12f8bdc10>, <_ast.Constant object at 0x12f8bdc40>, <_ast.Constant \
-object at 0x12f8bdc70>, <_ast.Constant object at 0x12f8bdca0>, <_ast.Constant object at 0x12f8bdcd0>, <_ast.Constant object at 0x12f8bdd00>, <_\
-ast.Constant object at 0x12f8bdd30>, <_ast.Constant object at 0x12f8bdd60>, <_ast.Constant object at 0x12f8bdd90>, <_ast.Constant \
-object at 0x12f8bddc0>, <_ast.Constant object at 0x12f8bddf0>, <_ast.Constant object at 0x12f8bde20>, <_ast.Constant object at 0x12f8bde50>, <_\
-ast.Constant object at 0x12f8bde80>, <_ast.Constant object at 0x12f8bdeb0>, <_ast.Constant object at 0x12f8bdee0>, <_ast.Constant \
-object at 0x12f8bdf10>, <_ast.Constant object at 0x12f8bdf40>, <_ast.Constant object at 0x12f8bdf70>, <_ast.Constant object at 0x12f8bdfa0>, <_\
-ast.Constant object at 0x12f8bdfd0>, <_ast.Constant object at 0x12f8e5070>, <_ast.Constant object at 0x12f8e50a0>, <_ast.Constant \
-object at 0x12f8e50d0>, <_ast.Constant object at 0x12f8e5100>, <_ast.Constant object at 0x12f8e5130>, <_ast.Constant object at 0x12f8e5160>, <_\
-ast.Constant object at 0x12f8e5190>, <_ast.Constant object at 0x12f8e51c0>, <_ast.Constant object at 0x12f8e51f0>, <_ast.Constant \
-object at 0x12f8e5220>, <_ast.Constant object at 0x12f8e5250>, <_ast.Constant object at 0x12f8e5280>, <_ast.Constant object at 0x12f8e52b0>, <_\
-ast.Constant object at 0x12f8e52e0>, <_ast.Constant object at 0x12f8e5310>, <_ast.Constant object at 0x12f8e5340>, <_ast.Constant \
-object at 0x12f8e5040>, <_ast.Constant object at 0x12f8e5370>, <_ast.Constant object at 0x12f8e53a0>, <_ast.Constant object at 0x12f8e53d0>, <_\
-ast.Constant object at 0x12f8e5400>, <_ast.Constant object at 0x12f8e5430>, <_ast.Constant object at 0x12f8e5460>, <_ast.Constant \
-object at 0x12f8e5490>, <_ast.Constant object at 0x12f8e54c0>, <_ast.Constant object at 0x12f8e54f0>, <_ast.Constant object at 0x12f8e5520>, <_\
-ast.Constant object at 0x12f8e5580>, <_ast.Constant object at 0x12f8e55b0>, <_ast.Constant object at 0x12f8e55e0>, <_ast.Constant \
-object at 0x12f8e5610>, <_ast.Constant object at 0x12f8e5550>, <_ast.Constant object at 0x12f8e5640>, <_ast.Constant object at 0x12f8e5670>, <_\
-ast.Constant object at 0x12f8e56a0>, <_ast.Constant object at 0x12f8e5700>, <_ast.Constant object at 0x12f8e5790>, <_ast.Constant \
-object at 0x12f8e57c0>, <_ast.Constant object at 0x12f8e57f0>, <_ast.Constant object at 0x12f8e5820>, <_ast.Constant object at 0x12f8e5850>, <_\
-ast.Constant object at 0x12f8e5880>, <_ast.Constant object at 0x12f8e58b0>, <_ast.Constant object at 0x12f8e58e0>, <_ast.Constant \
-object at 0x12f8e5910>, <_ast.Constant object at 0x12f8e5940>, <_ast.Constant object at 0x12f8e5970>, <_ast.Constant object at 0x12f8e59a0>, <_\
-ast.Constant object at 0x12f8e59d0>, <_ast.Constant object at 0x12f8e5a00>, <_ast.Constant object at 0x12f8e5a30>, <_ast.Constant \
-object at 0x12f8e5760>, <_ast.Constant object at 0x12f8e5a60>, <_ast.Constant object at 0x12f8e5a90>, <_ast.Constant object at 0x12f8e5ac0>, <_\
-ast.Constant object at 0x12f8e5af0>, <_ast.Constant object at 0x12f8e5b20>, <_ast.Constant object at 0x12f8e5b50>, <_ast.Constant \
-object at 0x12f8e5b80>, <_ast.Constant object at 0x12f8e5bb0>, <_ast.Constant object at 0x12f8e5be0>, <_ast.Constant object at 0x12f8e5c10>, <_\
-ast.Constant object at 0x12f8e5c40>, <_ast.Constant object at 0x12f8e5c70>, <_ast.Constant object at 0x12f8e5ca0>, <_ast.Constant \
-object at 0x12f8e5cd0>, <_ast.Constant object at 0x12f8e5730>, <_ast.Constant object at 0x12f8e5d00>, <_ast.Constant object at 0x12f8e5d30>, <_\
-ast.Constant object at 0x12f8e5d60>, <_ast.Constant object at 0x12f8e5d90>, <_ast.Constant object at 0x12f8e5dc0>, <_ast.Constant \
-object at 0x12f8e5df0>, <_ast.Constant object at 0x12f8e5e20>, <_ast.Constant object at 0x12f8e5e50>, <_ast.Constant object at 0x12f8e5e80>, <_\
-ast.Constant object at 0x12f8e5eb0>, <_ast.Constant object at 0x12f8e5ee0>, <_ast.Constant object at 0x12f8e5f10>, <_ast.Constant \
-object at 0x12f8e5f40>, <_ast.Constant object at 0x12f8e5fa0>, <_ast.Constant object at 0x12f8e56d0>, <_ast.Constant object at 0x12f8e5fd0>, <_\
-ast.Constant object at 0x12f8e5f70>, <_ast.Constant object at 0x12f8e3040>, <_ast.Constant object at 0x12f8e3070>, <_ast.Constant \
-object at 0x12f8e30a0>, <_ast.Constant object at 0x12f8e30d0>, <_ast.Constant object at 0x12f8e3100>, <_ast.Constant object at 0x12f8e3130>, <_\
-ast.Constant object at 0x12f8e3160>, <_ast.Constant object at 0x12f8e31c0>, <_ast.Constant object at 0x12f8e3220>, <_ast.Constant \
-object at 0x12f8e3250>, <_ast.Constant object at 0x12f8e3280>, <_ast.Constant object at 0x12f8e32b0>, <_ast.Constant object at 0x12f8e32e0>, <_\
-ast.Constant object at 0x12f8e3310>, <_ast.Constant object at 0x12f8e3340>, <_ast.Constant object at 0x12f8e33a0>, <_ast.Constant \
-object at 0x12f8e33d0>, <_ast.Constant object at 0x12f8e3400>, <_ast.Constant object at 0x12f8e3460>, <_ast.Constant object at 0x12f8e3430>, <_\
-ast.Constant object at 0x12f8e3490>, <_ast.Constant object at 0x12f8e34c0>, <_ast.Constant object at 0x12f8e34f0>, <_ast.Constant \
-object at 0x12f8e31f0>, <_ast.Constant object at 0x12f8e3520>, <_ast.Constant object at 0x12f8e3580>, <_ast.Constant object at 0x12f8e35b0>, <_\
-ast.Constant object at 0x12f8e35e0>, <_ast.Constant object at 0x12f8e3610>, <_ast.Constant object at 0x12f8e3640>, <_ast.Constant \
-object at 0x12f8e3670>, <_ast.Constant object at 0x12f8e36a0>, <_ast.Constant object at 0x12f8e36d0>, <_ast.Constant object at 0x12f8e3700>, <_\
-ast.Constant object at 0x12f8e3730>, <_ast.Constant object at 0x12f8e3760>, <_ast.Constant object at 0x12f8e3370>, <_ast.Constant \
-object at 0x12f8e3790>, <_ast.Constant object at 0x12f8e37c0>, <_ast.Constant object at 0x12f8e3820>, <_ast.Constant object at 0x12f8e37f0>, <_\
-ast.Constant object at 0x12f8e3850>, <_ast.Constant object at 0x12f8e3880>, <_ast.Constant object at 0x12f8e38b0>, <_ast.Constant \
-object at 0x12f8e38e0>, <_ast.Constant object at 0x12f8e3910>, <_ast.Constant object at 0x12f8e3940>, <_ast.Constant object at 0x12f8e39a0>, <_\
-ast.Constant object at 0x12f8e39d0>, <_ast.Constant object at 0x12f8e3a00>, <_ast.Constant object at 0x12f8e3a30>, <_ast.Constant \
-object at 0x12f8e3190>, <_ast.Constant object at 0x12f8e3a60>, <_ast.Constant object at 0x12f8e3a90>, <_ast.Constant object at 0x12f8e3ac0>, <_\
-ast.Constant object at 0x12f8e3af0>, <_ast.Constant object at 0x12f8e3b20>, <_ast.Constant object at 0x12f8e3b80>, <_ast.Constant \
-object at 0x12f8e3bb0>, <_ast.Constant object at 0x12f8e3c10>, <_ast.Constant object at 0x12f8e3c40>, <_ast.Constant object at 0x12f8e3c70>, <_\
-ast.Constant object at 0x12f8e3ca0>, <_ast.Constant object at 0x12f8e3cd0>, <_ast.Constant object at 0x12f8e3be0>, <_ast.Constant \
-object at 0x12f8e3d00>, <_ast.Constant object at 0x12f8e3d60>, <_ast.Constant object at 0x12f8e3d90>, <_ast.Constant object at 0x12f8e3dc0>, <_\
-ast.Constant object at 0x12f8e3970>, <_ast.Constant object at 0x12f8e3df0>, <_ast.Constant object at 0x12f8e3e20>, <_ast.Constant \
-object at 0x12f8e3e50>, <_ast.Constant object at 0x12f8e3550>, <_ast.Constant object at 0x12f8e3e80>, <_ast.Constant object at 0x12f8e3eb0>, <_\
-ast.Constant object at 0x12f8e3b50>, <_ast.Constant object at 0x12f8e3f10>, <_ast.Constant object at 0x12f8e3f40>, <_ast.Constant \
-object at 0x12f8e3f70>, <_ast.Constant object at 0x12f8e3fa0>, <_ast.Constant object at 0x12f8e3ee0>, <_ast.Constant object at 0x12f8e3fd0>, <_\
-ast.Constant object at 0x12f8e3d30>, <_ast.Constant object at 0x130b9d040>, <_ast.Constant object at 0x130b9d070>, <_ast.Constant \
-object at 0x130b9d0a0>, <_ast.Constant object at 0x130b9d0d0>, <_ast.Constant object at 0x130b9d100>, <_ast.Constant object at 0x130b9d130>, <_\
-ast.Constant object at 0x130b9d160>, <_ast.Constant object at 0x130b9d190>, <_ast.Constant object at 0x130b9d1c0>, <_ast.Constant \
-object at 0x130b9d1f0>, <_ast.Constant object at 0x130b9d220>, <_ast.Constant object at 0x130b9d250>, <_ast.Constant object at 0x130b9d280>, <_\
-ast.Constant object at 0x130b9d2b0>, <_ast.Constant object at 0x130b9d2e0>, <_ast.Constant object at 0x130b9d310>, <_ast.Constant \
-object at 0x130b9d340>, <_ast.Constant object at 0x130b9d3a0>, <_ast.Constant object at 0x130b9d3d0>, <_ast.Constant object at 0x130b9d400>, <_\
-ast.Constant object at 0x130b9d430>, <_ast.Constant object at 0x130b9d460>, <_ast.Constant object at 0x130b9d490>, <_ast.Constant \
-object at 0x130b9d4c0>, <_ast.Constant object at 0x130b9d4f0>, <_ast.Constant object at 0x130b9d520>, <_ast.Constant object at 0x130b9d550>, <_\
-ast.Constant object at 0x130b9d5b0>, <_ast.Constant object at 0x130b9d640>, <_ast.Constant object at 0x130b9d670>, <_ast.Constant \
-object at 0x130b9d6a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500840250>, <_ast.Constant object at 0x7fd500840280>, <_ast.Constant object at 0x7fd5008402b0>, <_\
+ast.Constant object at 0x7fd5008402e0>, <_ast.Constant object at 0x7fd500840310>, <_ast.Constant object at 0x7fd500840340>, <_ast.Constant \
+object at 0x7fd500840370>, <_ast.Constant object at 0x7fd5008403a0>, <_ast.Constant object at 0x7fd5008403d0>, <_ast.Constant object \
+at 0x7fd500840400>, <_ast.Constant object at 0x7fd500840430>, <_ast.Constant object at 0x7fd500840460>, <_ast.Constant object at \
+0x7fd500840490>, <_ast.Constant object at 0x7fd5008404f0>, <_ast.Constant object at 0x7fd500840520>, <_ast.Constant object at 0x7fd500840550>, <_\
+ast.Constant object at 0x7fd500840580>, <_ast.Constant object at 0x7fd5008405b0>, <_ast.Constant object at 0x7fd5008405e0>, <_ast.Constant \
+object at 0x7fd500840610>, <_ast.Constant object at 0x7fd500840640>, <_ast.Constant object at 0x7fd500840670>, <_ast.Constant object \
+at 0x7fd5008406a0>, <_ast.Constant object at 0x7fd5008406d0>, <_ast.Constant object at 0x7fd500840700>, <_ast.Constant object at \
+0x7fd500840730>, <_ast.Constant object at 0x7fd500840760>, <_ast.Constant object at 0x7fd500840790>, <_ast.Constant object at 0x7fd5008407c0>, <_\
+ast.Constant object at 0x7fd500840820>, <_ast.Constant object at 0x7fd5008407f0>, <_ast.Constant object at 0x7fd500840850>, <_ast.Constant \
+object at 0x7fd500840880>, <_ast.Constant object at 0x7fd5008408b0>, <_ast.Constant object at 0x7fd5008408e0>, <_ast.Constant object \
+at 0x7fd500840910>, <_ast.Constant object at 0x7fd500840970>, <_ast.Constant object at 0x7fd5008409a0>, <_ast.Constant object at \
+0x7fd5008409d0>, <_ast.Constant object at 0x7fd500840a00>, <_ast.Constant object at 0x7fd500840a30>, <_ast.Constant object at 0x7fd500840a60>, <_\
+ast.Constant object at 0x7fd500840a90>, <_ast.Constant object at 0x7fd500840ac0>, <_ast.Constant object at 0x7fd500840af0>, <_ast.Constant \
+object at 0x7fd500840b20>, <_ast.Constant object at 0x7fd500840b50>, <_ast.Constant object at 0x7fd5008404c0>, <_ast.Constant object \
+at 0x7fd500840bb0>, <_ast.Constant object at 0x7fd500840be0>, <_ast.Constant object at 0x7fd500840c10>, <_ast.Constant object at \
+0x7fd500840c40>, <_ast.Constant object at 0x7fd500840c70>, <_ast.Constant object at 0x7fd500840cd0>, <_ast.Constant object at 0x7fd500840ca0>, <_\
+ast.Constant object at 0x7fd500840d00>, <_ast.Constant object at 0x7fd500840d30>, <_ast.Constant object at 0x7fd500840d60>, <_ast.Constant \
+object at 0x7fd500840d90>, <_ast.Constant object at 0x7fd500840dc0>, <_ast.Constant object at 0x7fd500840df0>, <_ast.Constant object \
+at 0x7fd500840e20>, <_ast.Constant object at 0x7fd500840e50>, <_ast.Constant object at 0x7fd500840e80>, <_ast.Constant object at \
+0x7fd500840ee0>, <_ast.Constant object at 0x7fd500840eb0>, <_ast.Constant object at 0x7fd500840f10>, <_ast.Constant object at 0x7fd500840f40>, <_\
+ast.Constant object at 0x7fd500840f70>, <_ast.Constant object at 0x7fd500840fa0>, <_ast.Constant object at 0x7fd500840fd0>, <_ast.Constant \
+object at 0x7fd500840940>, <_ast.Constant object at 0x7fd500840b80>, <_ast.Constant object at 0x7fd500861040>, <_ast.Constant object \
+at 0x7fd500861070>, <_ast.Constant object at 0x7fd5008610a0>, <_ast.Constant object at 0x7fd5008610d0>, <_ast.Constant object at \
+0x7fd500861100>, <_ast.Constant object at 0x7fd500861130>, <_ast.Constant object at 0x7fd500861160>, <_ast.Constant object at 0x7fd500861190>, <_\
+ast.Constant object at 0x7fd5008611c0>, <_ast.Constant object at 0x7fd5008611f0>, <_ast.Constant object at 0x7fd500861220>, <_ast.Constant \
+object at 0x7fd500861250>, <_ast.Constant object at 0x7fd500861280>, <_ast.Constant object at 0x7fd5008612b0>, <_ast.Constant object \
+at 0x7fd5008612e0>, <_ast.Constant object at 0x7fd500861310>, <_ast.Constant object at 0x7fd500861340>, <_ast.Constant object at \
+0x7fd500861370>, <_ast.Constant object at 0x7fd5008613a0>, <_ast.Constant object at 0x7fd5008613d0>, <_ast.Constant object at 0x7fd500861400>, <_\
+ast.Constant object at 0x7fd500861430>, <_ast.Constant object at 0x7fd500861460>, <_ast.Constant object at 0x7fd500861490>, <_ast.Constant \
+object at 0x7fd5008614c0>, <_ast.Constant object at 0x7fd5008614f0>, <_ast.Constant object at 0x7fd500861520>, <_ast.Constant object \
+at 0x7fd500861550>, <_ast.Constant object at 0x7fd500861580>, <_ast.Constant object at 0x7fd5008615b0>, <_ast.Constant object at \
+0x7fd5008615e0>, <_ast.Constant object at 0x7fd500861610>, <_ast.Constant object at 0x7fd500861640>, <_ast.Constant object at 0x7fd500861670>, <_\
+ast.Constant object at 0x7fd5008616a0>, <_ast.Constant object at 0x7fd5008616d0>, <_ast.Constant object at 0x7fd500861700>, <_ast.Constant \
+object at 0x7fd500861730>, <_ast.Constant object at 0x7fd500861760>, <_ast.Constant object at 0x7fd500861790>, <_ast.Constant object \
+at 0x7fd5008617c0>, <_ast.Constant object at 0x7fd5008617f0>, <_ast.Constant object at 0x7fd500861820>, <_ast.Constant object at \
+0x7fd500861850>, <_ast.Constant object at 0x7fd500861880>, <_ast.Constant object at 0x7fd5008618b0>, <_ast.Constant object at 0x7fd5008618e0>, <_\
+ast.Constant object at 0x7fd500861910>, <_ast.Constant object at 0x7fd500861940>, <_ast.Constant object at 0x7fd500861970>, <_ast.Constant \
+object at 0x7fd5008619a0>, <_ast.Constant object at 0x7fd5008619d0>, <_ast.Constant object at 0x7fd500861a00>, <_ast.Constant object \
+at 0x7fd500861a30>, <_ast.Constant object at 0x7fd500861a60>, <_ast.Constant object at 0x7fd500861a90>, <_ast.Constant object at \
+0x7fd500861ac0>, <_ast.Constant object at 0x7fd500861af0>, <_ast.Constant object at 0x7fd500861b20>, <_ast.Constant object at 0x7fd500861b50>, <_\
+ast.Constant object at 0x7fd500861b80>, <_ast.Constant object at 0x7fd500861bb0>, <_ast.Constant object at 0x7fd500861be0>, <_ast.Constant \
+object at 0x7fd500861c10>, <_ast.Constant object at 0x7fd500861c40>, <_ast.Constant object at 0x7fd500861c70>, <_ast.Constant object \
+at 0x7fd500861ca0>, <_ast.Constant object at 0x7fd500861cd0>, <_ast.Constant object at 0x7fd500861d00>, <_ast.Constant object at \
+0x7fd500861d30>, <_ast.Constant object at 0x7fd500861d60>, <_ast.Constant object at 0x7fd500861d90>, <_ast.Constant object at 0x7fd500861dc0>, <_\
+ast.Constant object at 0x7fd500861df0>, <_ast.Constant object at 0x7fd500861e20>, <_ast.Constant object at 0x7fd500861e50>, <_ast.Constant \
+object at 0x7fd500861e80>, <_ast.Constant object at 0x7fd500861eb0>, <_ast.Constant object at 0x7fd500861ee0>, <_ast.Constant object \
+at 0x7fd500861f10>, <_ast.Constant object at 0x7fd500861f40>, <_ast.Constant object at 0x7fd500861f70>, <_ast.Constant object at \
+0x7fd500861fa0>, <_ast.Constant object at 0x7fd500861fd0>, <_ast.Constant object at 0x7fd4c05ce040>, <_ast.Constant object at 0x7fd4c05ce070>, <_\
+ast.Constant object at 0x7fd4c05ce0a0>, <_ast.Constant object at 0x7fd4c05ce0d0>, <_ast.Constant object at 0x7fd4c05ce100>, <_ast.Constant \
+object at 0x7fd4c05ce130>, <_ast.Constant object at 0x7fd4c05ce160>, <_ast.Constant object at 0x7fd4c05ce190>, <_ast.Constant object \
+at 0x7fd4c05ce1c0>, <_ast.Constant object at 0x7fd4c05ce1f0>, <_ast.Constant object at 0x7fd4c05ce220>, <_ast.Constant object at \
+0x7fd4c05ce250>, <_ast.Constant object at 0x7fd4c05ce2b0>, <_ast.Constant object at 0x7fd4c05ce280>, <_ast.Constant object at 0x7fd4c05ce2e0>, <_\
+ast.Constant object at 0x7fd4c05ce310>, <_ast.Constant object at 0x7fd4c05ce340>, <_ast.Constant object at 0x7fd4c05ce370>, <_ast.Constant \
+object at 0x7fd4c05ce3a0>, <_ast.Constant object at 0x7fd4c05ce400>, <_ast.Constant object at 0x7fd4c05ce430>, <_ast.Constant object \
+at 0x7fd4c05ce460>, <_ast.Constant object at 0x7fd4c05ce490>, <_ast.Constant object at 0x7fd4c05ce4c0>, <_ast.Constant object at \
+0x7fd4c05ce4f0>, <_ast.Constant object at 0x7fd4c05ce520>, <_ast.Constant object at 0x7fd4c05ce550>, <_ast.Constant object at 0x7fd4c05ce5b0>, <_\
+ast.Constant object at 0x7fd4c05ce3d0>, <_ast.Constant object at 0x7fd4c05ce580>, <_ast.Constant object at 0x7fd4c05ce5e0>, <_ast.Constant \
+object at 0x7fd4c05ce610>, <_ast.Constant object at 0x7fd4c05ce640>, <_ast.Constant object at 0x7fd4c05ce670>, <_ast.Constant object \
+at 0x7fd4c05ce6a0>, <_ast.Constant object at 0x7fd4c05ce6d0>, <_ast.Constant object at 0x7fd4c05ce700>, <_ast.Constant object at \
+0x7fd4c05ce730>, <_ast.Constant object at 0x7fd4c05ce760>, <_ast.Constant object at 0x7fd4c05ce7c0>, <_ast.Constant object at 0x7fd4c05ce7f0>, <_\
+ast.Constant object at 0x7fd4c05ce820>, <_ast.Constant object at 0x7fd4c05ce850>, <_ast.Constant object at 0x7fd4c05ce880>, <_ast.Constant \
+object at 0x7fd4c05ce8b0>, <_ast.Constant object at 0x7fd4c05ce8e0>, <_ast.Constant object at 0x7fd4c05ce910>, <_ast.Constant object \
+at 0x7fd4c05ce940>, <_ast.Constant object at 0x7fd4c05ce970>, <_ast.Constant object at 0x7fd4c05ce9a0>, <_ast.Constant object at \
+0x7fd4c05ce9d0>, <_ast.Constant object at 0x7fd4c05cea00>, <_ast.Constant object at 0x7fd4c05cea30>, <_ast.Constant object at 0x7fd4c05cea60>, <_\
+ast.Constant object at 0x7fd4c05cea90>, <_ast.Constant object at 0x7fd4c05ce790>, <_ast.Constant object at 0x7fd4c05ceac0>, <_ast.Constant \
+object at 0x7fd4c05ceaf0>, <_ast.Constant object at 0x7fd4c05ceb20>, <_ast.Constant object at 0x7fd4c05ceb50>, <_ast.Constant object \
+at 0x7fd4c05ceb80>, <_ast.Constant object at 0x7fd4c05cebb0>, <_ast.Constant object at 0x7fd4c05cebe0>, <_ast.Constant object at \
+0x7fd4c05cec10>, <_ast.Constant object at 0x7fd4c05cec40>, <_ast.Constant object at 0x7fd4c05cec70>, <_ast.Constant object at 0x7fd4c05ceca0>, <_\
+ast.Constant object at 0x7fd4c05cecd0>, <_ast.Constant object at 0x7fd4c05ced00>, <_ast.Constant object at 0x7fd4c05ced30>, <_ast.Constant \
+object at 0x7fd4c05ced60>, <_ast.Constant object at 0x7fd4c05cedc0>, <_ast.Constant object at 0x7fd4c05cedf0>, <_ast.Constant object \
+at 0x7fd4c05cee20>, <_ast.Constant object at 0x7fd4c05cee50>, <_ast.Constant object at 0x7fd4c05cee80>, <_ast.Constant object at \
+0x7fd4c05ceeb0>, <_ast.Constant object at 0x7fd4c05ceee0>, <_ast.Constant object at 0x7fd4c05cef10>, <_ast.Constant object at 0x7fd4c05cef40>, <_\
+ast.Constant object at 0x7fd4c05cef70>, <_ast.Constant object at 0x7fd4c05cefa0>, <_ast.Constant object at 0x7fd4c05cefd0>, <_ast.Constant \
+object at 0x7fd4c05ced90>, <_ast.Constant object at 0x7fd4c059cc10>, <_ast.Constant object at 0x7fd4c059c7c0>, <_ast.Constant object \
+at 0x7fd4c059c850>, <_ast.Constant object at 0x7fd4c059cdc0>, <_ast.Constant object at 0x7fd4c059cd00>, <_ast.Constant object at \
+0x7fd4c059c3a0>, <_ast.Constant object at 0x7fd4c059c7f0>, <_ast.Constant object at 0x7fd4c059c4f0>, <_ast.Constant object at 0x7fd4c059c8e0>, <_\
+ast.Constant object at 0x7fd4c059c2b0>, <_ast.Constant object at 0x7fd4c059c040>, <_ast.Constant object at 0x7fd4c059cbb0>, <_ast.Constant \
+object at 0x7fd4c059c0d0>, <_ast.Constant object at 0x7fd4c059cb80>, <_ast.Constant object at 0x7fd4c059c790>, <_ast.Constant object \
+at 0x7fd4c059cf70>, <_ast.Constant object at 0x7fd4c059c520>, <_ast.Constant object at 0x7fd4c059c310>, <_ast.Constant object at \
+0x7fd4c059cdf0>, <_ast.Constant object at 0x7fd4c059c3d0>, <_ast.Constant object at 0x7fd4c059c490>, <_ast.Constant object at 0x7fd4c059c6d0>, <_\
+ast.Constant object at 0x7fd4c059c670>, <_ast.Constant object at 0x7fd4c059c880>, <_ast.Constant object at 0x7fd4c059c9a0>, <_ast.Constant \
+object at 0x7fd4c059c0a0>, <_ast.Constant object at 0x7fd4c059cb50>, <_ast.Constant object at 0x7fd4c059c1f0>, <_ast.Constant object \
+at 0x7fd4c059c100>, <_ast.Constant object at 0x7fd4c059cb20>, <_ast.Constant object at 0x7fd4c059c580>, <_ast.Constant object at \
+0x7fd4c059c910>, <_ast.Constant object at 0x7fd4c059cca0>, <_ast.Constant object at 0x7fd4c059ca90>, <_ast.Constant object at 0x7fd4c059c400>, <_\
+ast.Constant object at 0x7fd4c059cc40>, <_ast.Constant object at 0x7fd4c059cf10>, <_ast.Constant object at 0x7fd4c059ca30>, <_ast.Constant \
+object at 0x7fd4c059cee0>, <_ast.Constant object at 0x7fd4c059c460>, <_ast.Constant object at 0x7fd4c059c550>, <_ast.Constant object \
+at 0x7fd4c059c9d0>, <_ast.Constant object at 0x7fd4c059cf40>, <_ast.Constant object at 0x7fd4c059ce50>, <_ast.Constant object at \
+0x7fd4c059c6a0>, <_ast.Constant object at 0x7fd4c059c070>, <_ast.Constant object at 0x7fd4c059c340>, <_ast.Constant object at 0x7fd4c059c430>, <_\
+ast.Constant object at 0x7fd4c059c640>, <_ast.Constant object at 0x7fd4c059cd30>, <_ast.Constant object at 0x7fd4c059c610>, <_ast.Constant \
+object at 0x7fd4c059ca60>, <_ast.Constant object at 0x7fd4c059ccd0>, <_ast.Constant object at 0x7fd4c059c730>, <_ast.Constant object \
+at 0x7fd4c059cfa0>, <_ast.Constant object at 0x7fd4c059cd60>, <_ast.Constant object at 0x7fd4c059c250>, <_ast.Constant object at \
+0x7fd4c059c5b0>, <_ast.Constant object at 0x7fd4c059cd90>, <_ast.Constant object at 0x7fd4c059cbe0>, <_ast.Constant object at 0x7fd4c059c5e0>, <_\
+ast.Constant object at 0x7fd4c059c1c0>, <_ast.Constant object at 0x7fd4c059caf0>, <_ast.Constant object at 0x7fd4c059c130>, <_ast.Constant \
+object at 0x7fd4c059cfd0>, <_ast.Constant object at 0x7fd4c059c760>, <_ast.Constant object at 0x7fd4c059c970>, <_ast.Constant object \
+at 0x7fd4c059ca00>, <_ast.Constant object at 0x7fd4c059cc70>, <_ast.Constant object at 0x7fd4c059ce20>, <_ast.Constant object at \
+0x7fd4c059c160>, <_ast.Constant object at 0x7fd4c059c280>, <_ast.Constant object at 0x7fd4c059c2e0>, <_ast.Constant object at 0x7fd4c059cac0>, <_\
+ast.Constant object at 0x7fd4c059c4c0>, <_ast.Constant object at 0x7fd4c059c8b0>, <_ast.Constant object at 0x7fd4c059ce80>, <_ast.Constant \
+object at 0x7fd4c059c940>, <_ast.Constant object at 0x7fd4c059c190>, <_ast.Constant object at 0x7fd4c059c700>, <_ast.Constant object \
+at 0x7fd4c059c220>, <_ast.Constant object at 0x7fd4c059c820>, <_ast.Constant object at 0x7fd4c059ceb0>, <_ast.Constant object at \
+0x7fd4c059c370>, <_ast.Constant object at 0x7fd4c05b6070>, <_ast.Constant object at 0x7fd4c05b60a0>, <_ast.Constant object at 0x7fd4c05b60d0>, <_\
+ast.Constant object at 0x7fd4c05b6100>, <_ast.Constant object at 0x7fd4c05b6130>, <_ast.Constant object at 0x7fd4c05b6160>, <_ast.Constant \
+object at 0x7fd4c05b6190>, <_ast.Constant object at 0x7fd4c05b61c0>, <_ast.Constant object at 0x7fd4c05b61f0>, <_ast.Constant object \
+at 0x7fd4c05b6220>, <_ast.Constant object at 0x7fd4c05b6250>, <_ast.Constant object at 0x7fd4c05b6280>, <_ast.Constant object at \
+0x7fd4c05b62b0>, <_ast.Constant object at 0x7fd4c05b62e0>, <_ast.Constant object at 0x7fd4c05b6340>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"blocked_ips(0)$0" -> "[<_ast.Constant object at 0x7fd500840250>, <_ast.Constant object at 0x7fd500840280>, <_ast.Constant object at 0x7fd5008402b0>, <_\
+ast.Constant object at 0x7fd5008402e0>, <_ast.Constant object at 0x7fd500840310>, <_ast.Constant object at 0x7fd500840340>, <_ast.Constant \
+object at 0x7fd500840370>, <_ast.Constant object at 0x7fd5008403a0>, <_ast.Constant object at 0x7fd5008403d0>, <_ast.Constant object \
+at 0x7fd500840400>, <_ast.Constant object at 0x7fd500840430>, <_ast.Constant object at 0x7fd500840460>, <_ast.Constant object at \
+0x7fd500840490>, <_ast.Constant object at 0x7fd5008404f0>, <_ast.Constant object at 0x7fd500840520>, <_ast.Constant object at 0x7fd500840550>, <_\
+ast.Constant object at 0x7fd500840580>, <_ast.Constant object at 0x7fd5008405b0>, <_ast.Constant object at 0x7fd5008405e0>, <_ast.Constant \
+object at 0x7fd500840610>, <_ast.Constant object at 0x7fd500840640>, <_ast.Constant object at 0x7fd500840670>, <_ast.Constant object \
+at 0x7fd5008406a0>, <_ast.Constant object at 0x7fd5008406d0>, <_ast.Constant object at 0x7fd500840700>, <_ast.Constant object at \
+0x7fd500840730>, <_ast.Constant object at 0x7fd500840760>, <_ast.Constant object at 0x7fd500840790>, <_ast.Constant object at 0x7fd5008407c0>, <_\
+ast.Constant object at 0x7fd500840820>, <_ast.Constant object at 0x7fd5008407f0>, <_ast.Constant object at 0x7fd500840850>, <_ast.Constant \
+object at 0x7fd500840880>, <_ast.Constant object at 0x7fd5008408b0>, <_ast.Constant object at 0x7fd5008408e0>, <_ast.Constant object \
+at 0x7fd500840910>, <_ast.Constant object at 0x7fd500840970>, <_ast.Constant object at 0x7fd5008409a0>, <_ast.Constant object at \
+0x7fd5008409d0>, <_ast.Constant object at 0x7fd500840a00>, <_ast.Constant object at 0x7fd500840a30>, <_ast.Constant object at 0x7fd500840a60>, <_\
+ast.Constant object at 0x7fd500840a90>, <_ast.Constant object at 0x7fd500840ac0>, <_ast.Constant object at 0x7fd500840af0>, <_ast.Constant \
+object at 0x7fd500840b20>, <_ast.Constant object at 0x7fd500840b50>, <_ast.Constant object at 0x7fd5008404c0>, <_ast.Constant object \
+at 0x7fd500840bb0>, <_ast.Constant object at 0x7fd500840be0>, <_ast.Constant object at 0x7fd500840c10>, <_ast.Constant object at \
+0x7fd500840c40>, <_ast.Constant object at 0x7fd500840c70>, <_ast.Constant object at 0x7fd500840cd0>, <_ast.Constant object at 0x7fd500840ca0>, <_\
+ast.Constant object at 0x7fd500840d00>, <_ast.Constant object at 0x7fd500840d30>, <_ast.Constant object at 0x7fd500840d60>, <_ast.Constant \
+object at 0x7fd500840d90>, <_ast.Constant object at 0x7fd500840dc0>, <_ast.Constant object at 0x7fd500840df0>, <_ast.Constant object \
+at 0x7fd500840e20>, <_ast.Constant object at 0x7fd500840e50>, <_ast.Constant object at 0x7fd500840e80>, <_ast.Constant object at \
+0x7fd500840ee0>, <_ast.Constant object at 0x7fd500840eb0>, <_ast.Constant object at 0x7fd500840f10>, <_ast.Constant object at 0x7fd500840f40>, <_\
+ast.Constant object at 0x7fd500840f70>, <_ast.Constant object at 0x7fd500840fa0>, <_ast.Constant object at 0x7fd500840fd0>, <_ast.Constant \
+object at 0x7fd500840940>, <_ast.Constant object at 0x7fd500840b80>, <_ast.Constant object at 0x7fd500861040>, <_ast.Constant object \
+at 0x7fd500861070>, <_ast.Constant object at 0x7fd5008610a0>, <_ast.Constant object at 0x7fd5008610d0>, <_ast.Constant object at \
+0x7fd500861100>, <_ast.Constant object at 0x7fd500861130>, <_ast.Constant object at 0x7fd500861160>, <_ast.Constant object at 0x7fd500861190>, <_\
+ast.Constant object at 0x7fd5008611c0>, <_ast.Constant object at 0x7fd5008611f0>, <_ast.Constant object at 0x7fd500861220>, <_ast.Constant \
+object at 0x7fd500861250>, <_ast.Constant object at 0x7fd500861280>, <_ast.Constant object at 0x7fd5008612b0>, <_ast.Constant object \
+at 0x7fd5008612e0>, <_ast.Constant object at 0x7fd500861310>, <_ast.Constant object at 0x7fd500861340>, <_ast.Constant object at \
+0x7fd500861370>, <_ast.Constant object at 0x7fd5008613a0>, <_ast.Constant object at 0x7fd5008613d0>, <_ast.Constant object at 0x7fd500861400>, <_\
+ast.Constant object at 0x7fd500861430>, <_ast.Constant object at 0x7fd500861460>, <_ast.Constant object at 0x7fd500861490>, <_ast.Constant \
+object at 0x7fd5008614c0>, <_ast.Constant object at 0x7fd5008614f0>, <_ast.Constant object at 0x7fd500861520>, <_ast.Constant object \
+at 0x7fd500861550>, <_ast.Constant object at 0x7fd500861580>, <_ast.Constant object at 0x7fd5008615b0>, <_ast.Constant object at \
+0x7fd5008615e0>, <_ast.Constant object at 0x7fd500861610>, <_ast.Constant object at 0x7fd500861640>, <_ast.Constant object at 0x7fd500861670>, <_\
+ast.Constant object at 0x7fd5008616a0>, <_ast.Constant object at 0x7fd5008616d0>, <_ast.Constant object at 0x7fd500861700>, <_ast.Constant \
+object at 0x7fd500861730>, <_ast.Constant object at 0x7fd500861760>, <_ast.Constant object at 0x7fd500861790>, <_ast.Constant object \
+at 0x7fd5008617c0>, <_ast.Constant object at 0x7fd5008617f0>, <_ast.Constant object at 0x7fd500861820>, <_ast.Constant object at \
+0x7fd500861850>, <_ast.Constant object at 0x7fd500861880>, <_ast.Constant object at 0x7fd5008618b0>, <_ast.Constant object at 0x7fd5008618e0>, <_\
+ast.Constant object at 0x7fd500861910>, <_ast.Constant object at 0x7fd500861940>, <_ast.Constant object at 0x7fd500861970>, <_ast.Constant \
+object at 0x7fd5008619a0>, <_ast.Constant object at 0x7fd5008619d0>, <_ast.Constant object at 0x7fd500861a00>, <_ast.Constant object \
+at 0x7fd500861a30>, <_ast.Constant object at 0x7fd500861a60>, <_ast.Constant object at 0x7fd500861a90>, <_ast.Constant object at \
+0x7fd500861ac0>, <_ast.Constant object at 0x7fd500861af0>, <_ast.Constant object at 0x7fd500861b20>, <_ast.Constant object at 0x7fd500861b50>, <_\
+ast.Constant object at 0x7fd500861b80>, <_ast.Constant object at 0x7fd500861bb0>, <_ast.Constant object at 0x7fd500861be0>, <_ast.Constant \
+object at 0x7fd500861c10>, <_ast.Constant object at 0x7fd500861c40>, <_ast.Constant object at 0x7fd500861c70>, <_ast.Constant object \
+at 0x7fd500861ca0>, <_ast.Constant object at 0x7fd500861cd0>, <_ast.Constant object at 0x7fd500861d00>, <_ast.Constant object at \
+0x7fd500861d30>, <_ast.Constant object at 0x7fd500861d60>, <_ast.Constant object at 0x7fd500861d90>, <_ast.Constant object at 0x7fd500861dc0>, <_\
+ast.Constant object at 0x7fd500861df0>, <_ast.Constant object at 0x7fd500861e20>, <_ast.Constant object at 0x7fd500861e50>, <_ast.Constant \
+object at 0x7fd500861e80>, <_ast.Constant object at 0x7fd500861eb0>, <_ast.Constant object at 0x7fd500861ee0>, <_ast.Constant object \
+at 0x7fd500861f10>, <_ast.Constant object at 0x7fd500861f40>, <_ast.Constant object at 0x7fd500861f70>, <_ast.Constant object at \
+0x7fd500861fa0>, <_ast.Constant object at 0x7fd500861fd0>, <_ast.Constant object at 0x7fd4c05ce040>, <_ast.Constant object at 0x7fd4c05ce070>, <_\
+ast.Constant object at 0x7fd4c05ce0a0>, <_ast.Constant object at 0x7fd4c05ce0d0>, <_ast.Constant object at 0x7fd4c05ce100>, <_ast.Constant \
+object at 0x7fd4c05ce130>, <_ast.Constant object at 0x7fd4c05ce160>, <_ast.Constant object at 0x7fd4c05ce190>, <_ast.Constant object \
+at 0x7fd4c05ce1c0>, <_ast.Constant object at 0x7fd4c05ce1f0>, <_ast.Constant object at 0x7fd4c05ce220>, <_ast.Constant object at \
+0x7fd4c05ce250>, <_ast.Constant object at 0x7fd4c05ce2b0>, <_ast.Constant object at 0x7fd4c05ce280>, <_ast.Constant object at 0x7fd4c05ce2e0>, <_\
+ast.Constant object at 0x7fd4c05ce310>, <_ast.Constant object at 0x7fd4c05ce340>, <_ast.Constant object at 0x7fd4c05ce370>, <_ast.Constant \
+object at 0x7fd4c05ce3a0>, <_ast.Constant object at 0x7fd4c05ce400>, <_ast.Constant object at 0x7fd4c05ce430>, <_ast.Constant object \
+at 0x7fd4c05ce460>, <_ast.Constant object at 0x7fd4c05ce490>, <_ast.Constant object at 0x7fd4c05ce4c0>, <_ast.Constant object at \
+0x7fd4c05ce4f0>, <_ast.Constant object at 0x7fd4c05ce520>, <_ast.Constant object at 0x7fd4c05ce550>, <_ast.Constant object at 0x7fd4c05ce5b0>, <_\
+ast.Constant object at 0x7fd4c05ce3d0>, <_ast.Constant object at 0x7fd4c05ce580>, <_ast.Constant object at 0x7fd4c05ce5e0>, <_ast.Constant \
+object at 0x7fd4c05ce610>, <_ast.Constant object at 0x7fd4c05ce640>, <_ast.Constant object at 0x7fd4c05ce670>, <_ast.Constant object \
+at 0x7fd4c05ce6a0>, <_ast.Constant object at 0x7fd4c05ce6d0>, <_ast.Constant object at 0x7fd4c05ce700>, <_ast.Constant object at \
+0x7fd4c05ce730>, <_ast.Constant object at 0x7fd4c05ce760>, <_ast.Constant object at 0x7fd4c05ce7c0>, <_ast.Constant object at 0x7fd4c05ce7f0>, <_\
+ast.Constant object at 0x7fd4c05ce820>, <_ast.Constant object at 0x7fd4c05ce850>, <_ast.Constant object at 0x7fd4c05ce880>, <_ast.Constant \
+object at 0x7fd4c05ce8b0>, <_ast.Constant object at 0x7fd4c05ce8e0>, <_ast.Constant object at 0x7fd4c05ce910>, <_ast.Constant object \
+at 0x7fd4c05ce940>, <_ast.Constant object at 0x7fd4c05ce970>, <_ast.Constant object at 0x7fd4c05ce9a0>, <_ast.Constant object at \
+0x7fd4c05ce9d0>, <_ast.Constant object at 0x7fd4c05cea00>, <_ast.Constant object at 0x7fd4c05cea30>, <_ast.Constant object at 0x7fd4c05cea60>, <_\
+ast.Constant object at 0x7fd4c05cea90>, <_ast.Constant object at 0x7fd4c05ce790>, <_ast.Constant object at 0x7fd4c05ceac0>, <_ast.Constant \
+object at 0x7fd4c05ceaf0>, <_ast.Constant object at 0x7fd4c05ceb20>, <_ast.Constant object at 0x7fd4c05ceb50>, <_ast.Constant object \
+at 0x7fd4c05ceb80>, <_ast.Constant object at 0x7fd4c05cebb0>, <_ast.Constant object at 0x7fd4c05cebe0>, <_ast.Constant object at \
+0x7fd4c05cec10>, <_ast.Constant object at 0x7fd4c05cec40>, <_ast.Constant object at 0x7fd4c05cec70>, <_ast.Constant object at 0x7fd4c05ceca0>, <_\
+ast.Constant object at 0x7fd4c05cecd0>, <_ast.Constant object at 0x7fd4c05ced00>, <_ast.Constant object at 0x7fd4c05ced30>, <_ast.Constant \
+object at 0x7fd4c05ced60>, <_ast.Constant object at 0x7fd4c05cedc0>, <_ast.Constant object at 0x7fd4c05cedf0>, <_ast.Constant object \
+at 0x7fd4c05cee20>, <_ast.Constant object at 0x7fd4c05cee50>, <_ast.Constant object at 0x7fd4c05cee80>, <_ast.Constant object at \
+0x7fd4c05ceeb0>, <_ast.Constant object at 0x7fd4c05ceee0>, <_ast.Constant object at 0x7fd4c05cef10>, <_ast.Constant object at 0x7fd4c05cef40>, <_\
+ast.Constant object at 0x7fd4c05cef70>, <_ast.Constant object at 0x7fd4c05cefa0>, <_ast.Constant object at 0x7fd4c05cefd0>, <_ast.Constant \
+object at 0x7fd4c05ced90>, <_ast.Constant object at 0x7fd4c059cc10>, <_ast.Constant object at 0x7fd4c059c7c0>, <_ast.Constant object \
+at 0x7fd4c059c850>, <_ast.Constant object at 0x7fd4c059cdc0>, <_ast.Constant object at 0x7fd4c059cd00>, <_ast.Constant object at \
+0x7fd4c059c3a0>, <_ast.Constant object at 0x7fd4c059c7f0>, <_ast.Constant object at 0x7fd4c059c4f0>, <_ast.Constant object at 0x7fd4c059c8e0>, <_\
+ast.Constant object at 0x7fd4c059c2b0>, <_ast.Constant object at 0x7fd4c059c040>, <_ast.Constant object at 0x7fd4c059cbb0>, <_ast.Constant \
+object at 0x7fd4c059c0d0>, <_ast.Constant object at 0x7fd4c059cb80>, <_ast.Constant object at 0x7fd4c059c790>, <_ast.Constant object \
+at 0x7fd4c059cf70>, <_ast.Constant object at 0x7fd4c059c520>, <_ast.Constant object at 0x7fd4c059c310>, <_ast.Constant object at \
+0x7fd4c059cdf0>, <_ast.Constant object at 0x7fd4c059c3d0>, <_ast.Constant object at 0x7fd4c059c490>, <_ast.Constant object at 0x7fd4c059c6d0>, <_\
+ast.Constant object at 0x7fd4c059c670>, <_ast.Constant object at 0x7fd4c059c880>, <_ast.Constant object at 0x7fd4c059c9a0>, <_ast.Constant \
+object at 0x7fd4c059c0a0>, <_ast.Constant object at 0x7fd4c059cb50>, <_ast.Constant object at 0x7fd4c059c1f0>, <_ast.Constant object \
+at 0x7fd4c059c100>, <_ast.Constant object at 0x7fd4c059cb20>, <_ast.Constant object at 0x7fd4c059c580>, <_ast.Constant object at \
+0x7fd4c059c910>, <_ast.Constant object at 0x7fd4c059cca0>, <_ast.Constant object at 0x7fd4c059ca90>, <_ast.Constant object at 0x7fd4c059c400>, <_\
+ast.Constant object at 0x7fd4c059cc40>, <_ast.Constant object at 0x7fd4c059cf10>, <_ast.Constant object at 0x7fd4c059ca30>, <_ast.Constant \
+object at 0x7fd4c059cee0>, <_ast.Constant object at 0x7fd4c059c460>, <_ast.Constant object at 0x7fd4c059c550>, <_ast.Constant object \
+at 0x7fd4c059c9d0>, <_ast.Constant object at 0x7fd4c059cf40>, <_ast.Constant object at 0x7fd4c059ce50>, <_ast.Constant object at \
+0x7fd4c059c6a0>, <_ast.Constant object at 0x7fd4c059c070>, <_ast.Constant object at 0x7fd4c059c340>, <_ast.Constant object at 0x7fd4c059c430>, <_\
+ast.Constant object at 0x7fd4c059c640>, <_ast.Constant object at 0x7fd4c059cd30>, <_ast.Constant object at 0x7fd4c059c610>, <_ast.Constant \
+object at 0x7fd4c059ca60>, <_ast.Constant object at 0x7fd4c059ccd0>, <_ast.Constant object at 0x7fd4c059c730>, <_ast.Constant object \
+at 0x7fd4c059cfa0>, <_ast.Constant object at 0x7fd4c059cd60>, <_ast.Constant object at 0x7fd4c059c250>, <_ast.Constant object at \
+0x7fd4c059c5b0>, <_ast.Constant object at 0x7fd4c059cd90>, <_ast.Constant object at 0x7fd4c059cbe0>, <_ast.Constant object at 0x7fd4c059c5e0>, <_\
+ast.Constant object at 0x7fd4c059c1c0>, <_ast.Constant object at 0x7fd4c059caf0>, <_ast.Constant object at 0x7fd4c059c130>, <_ast.Constant \
+object at 0x7fd4c059cfd0>, <_ast.Constant object at 0x7fd4c059c760>, <_ast.Constant object at 0x7fd4c059c970>, <_ast.Constant object \
+at 0x7fd4c059ca00>, <_ast.Constant object at 0x7fd4c059cc70>, <_ast.Constant object at 0x7fd4c059ce20>, <_ast.Constant object at \
+0x7fd4c059c160>, <_ast.Constant object at 0x7fd4c059c280>, <_ast.Constant object at 0x7fd4c059c2e0>, <_ast.Constant object at 0x7fd4c059cac0>, <_\
+ast.Constant object at 0x7fd4c059c4c0>, <_ast.Constant object at 0x7fd4c059c8b0>, <_ast.Constant object at 0x7fd4c059ce80>, <_ast.Constant \
+object at 0x7fd4c059c940>, <_ast.Constant object at 0x7fd4c059c190>, <_ast.Constant object at 0x7fd4c059c700>, <_ast.Constant object \
+at 0x7fd4c059c220>, <_ast.Constant object at 0x7fd4c059c820>, <_ast.Constant object at 0x7fd4c059ceb0>, <_ast.Constant object at \
+0x7fd4c059c370>, <_ast.Constant object at 0x7fd4c05b6070>, <_ast.Constant object at 0x7fd4c05b60a0>, <_ast.Constant object at 0x7fd4c05b60d0>, <_\
+ast.Constant object at 0x7fd4c05b6100>, <_ast.Constant object at 0x7fd4c05b6130>, <_ast.Constant object at 0x7fd4c05b6160>, <_ast.Constant \
+object at 0x7fd4c05b6190>, <_ast.Constant object at 0x7fd4c05b61c0>, <_ast.Constant object at 0x7fd4c05b61f0>, <_ast.Constant object \
+at 0x7fd4c05b6220>, <_ast.Constant object at 0x7fd4c05b6250>, <_ast.Constant object at 0x7fd4c05b6280>, <_ast.Constant object at \
+0x7fd4c05b62b0>, <_ast.Constant object at 0x7fd4c05b62e0>, <_ast.Constant object at 0x7fd4c05b6340>](0)"	[label=assignedFrom];
 	"train_ip_list(0)$1" -> "set(0)"	[label=list];
 	"train_ip_list(0)$1" -> "train_ips(0)$0"	[label=list];
 	"train_ip_list(0)$1" -> "a(0)"	[label=list];
@@ -1192,6 +1109,28 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"test_ip_list(0)$1" -> "test_ips(0)$0"	[label=list];
 	"test_ip_list(0)$1" -> "a(0)"	[label=list];
 	"test_ip_list(0)$1" -> "b(0)"	[label=list];
+	"blocked_ip_list_train(0)$0" -> "set(0)"	[label=list];
+	"blocked_ip_list_train(0)$0" -> "blocked_ips(0)$0"	[label=list];
+	"blocked_ip_list_train(0)$0" -> "train_ip_list(0)$1"	[label=list];
+	"blocked_ip_list_test(0)$0" -> "set(0)"	[label=list];
+	"blocked_ip_list_test(0)$0" -> "blocked_ips(0)$0"	[label=list];
+	"blocked_ip_list_test(0)$0" -> "test_ip_list(0)$1"	[label=list];
+	"There are(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[790/0]" -> "len(0)"	[label=print];
+	"print[790/0]" -> "blocked_ip_list_train(0)$0"	[label=print];
+	"print[790/0]" -> "There are(0)"	[label=print];
+	"print[790/0]" -> "blocked IPs in train dataset(0)"	[label=print];
+	"blocked IPs in train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[791/0]" -> "len(0)"	[label=print];
+	"print[791/0]" -> "blocked_ip_list_test(0)$0"	[label=print];
+	"print[791/0]" -> "There are(0)"	[label=print];
+	"print[791/0]" -> "blocked IPs in test dataset(0)"	[label=print];
+	"blocked IPs in test dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"end_time(0)$0" -> "time(0)"	[label=time];
+	"total time till Leaky feats(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[793/0]" -> "start_time(0)$0"	[label=print];
+	"print[793/0]" -> "end_time(0)$0"	[label=print];
+	"print[793/0]" -> "total time till Leaky feats(0)"	[label=print];
 	"corpus(0)$0" -> "merge(0)$0"	[label=assignedFrom];
 	"aren't(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"APPO(0)$0" -> "aren't(0)"	[label=assignedFrom];
@@ -1424,7 +1363,6 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	" will(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"trying(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"comment(3)" -> "clean[0]"	[label=_argToVar];
-	"clean[0]" -> "corpus(0)$0"	[label=clean];
 	"comment(3)$0" -> "comment(3)"	[label=lower];
 	"comment(3)$1" -> "comment(3)$1"	[label=sub];
 	"comment(3)$1" -> "re(3)"	[label=sub];
@@ -1452,11 +1390,18 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"words(3)$3" -> "eng_stopwords(3)"	[label=assignedFrom];
 	"clean_sent(3)$0" -> "words(3)$3"	[label=join];
 	"clean_sent(3)$0" -> " (3)"	[label=join];
+	"clean[886/0]" -> "corpus(0)$0"	[label=clean];
+	"clean[886/0]" -> "12235(0)"	[label=clean];
 	"12235(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"clean[1]" -> "12235(0)"	[label=clean];
 	"clean_corpus(0)$0" -> "clean(0)"	[label=apply];
 	"clean_corpus(0)$0" -> "x(0)$3"	[label=apply];
 	"clean_corpus(0)$0" -> "corpus(0)$0"	[label=apply];
+	"end_time(0)$1" -> "time(0)"	[label=time];
+	"total time till Cleaning(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[890/0]" -> "start_time(0)$0"	[label=print];
+	"print[890/0]" -> "end_time(0)$1"	[label=print];
+	"print[890/0]" -> "total time till Cleaning(0)"	[label=print];
+	"start_unigrams(0)$0" -> "time(0)"	[label=time];
 	"tfv(0)$0" -> "english(0)"	[label=TfidfVectorizer];
 	"tfv(0)$0" -> "1(0)"	[label=TfidfVectorizer];
 	"tfv(0)$0" -> "200(0)"	[label=TfidfVectorizer];
@@ -1492,7 +1437,7 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"df(4)$0" -> "top_feats(4)$0"	[label=DataFrame];
 	"df(4)$0" -> "pd(4)"	[label=DataFrame];
 	"df(4)$1" -> "df(4)$0"	[label=assignedFrom];
-	"df(4)$1" -> "[<_ast.Constant object at 0x130bba1f0>, <_ast.Constant object at 0x130bba220>](4)"	[label=assignedFrom];
+	"df(4)$1" -> "[<_ast.Constant object at 0x7fd4c05cdf40>, <_ast.Constant object at 0x7fd4c05cdf70>](4)"	[label=assignedFrom];
 	"Xtr(5)" -> "top_feats_in_doc[0]"	[label=_argToVar];
 	"features(5)" -> "top_feats_in_doc[1]"	[label=_argToVar];
 	"row_id(5)" -> "top_feats_in_doc[2]"	[label=_argToVar];
@@ -1533,6 +1478,15 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"dfs(7)$1" -> "feats_df(7)$1"	[label=append];
 	"tfidf_top_n_per_lass(0)$0" -> "features(0)$0"	[label=top_feats_by_class];
 	"tfidf_top_n_per_lass(0)$0" -> "train_unigrams(0)$0"	[label=top_feats_by_class];
+	"end_unigrams(0)$0" -> "time(0)"	[label=time];
+	"total time in unigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[965/0]" -> "start_unigrams(0)$0"	[label=print];
+	"print[965/0]" -> "end_unigrams(0)$0"	[label=print];
+	"print[965/0]" -> "total time in unigrams(0)"	[label=print];
+	"total time till unigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[966/0]" -> "start_time(0)$0"	[label=print];
+	"print[966/0]" -> "end_unigrams(0)$0"	[label=print];
+	"print[966/0]" -> "total time till unigrams(0)"	[label=print];
 	"plt(0)$67" -> "plt(0)$66"	[label=figure];
 	"plt(0)$68" -> "plt(0)$67"	[label=suptitle];
 	"plt(0)$68" -> "TF_IDF Top words per class(unigrams)(0)"	[label=suptitle];
@@ -1559,8 +1513,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$72" -> "TF-IDF score(0)"	[label=ylabel];
 	"TF-IDF score(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$73" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$73" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$73" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$73" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$73" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$73" -> "plt(0)$72"	[label=subplot2grid];
 	"sns(0)$6" -> "0(0)"	[label=barplot];
@@ -1576,8 +1530,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$76" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$76" -> "plt(0)$75"	[label=ylabel];
 	"plt(0)$77" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$77" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$77" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$77" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$77" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$77" -> "plt(0)$76"	[label=subplot2grid];
 	"sns(0)$7" -> "0(0)"	[label=barplot];
@@ -1592,8 +1546,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$79" -> "plt(0)$78"	[label=xlabel];
 	"plt(0)$80" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$80" -> "plt(0)$79"	[label=ylabel];
-	"plt(0)$81" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$81" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$81" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$81" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$81" -> "plt(0)$80"	[label=subplot2grid];
 	"sns(0)$8" -> "0(0)"	[label=barplot];
@@ -1624,8 +1578,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$87" -> "plt(0)$86"	[label=xlabel];
 	"plt(0)$88" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$88" -> "plt(0)$87"	[label=ylabel];
-	"plt(0)$89" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$89" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$89" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$89" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$89" -> "plt(0)$88"	[label=subplot2grid];
 	"sns(0)$10" -> "0(0)"	[label=barplot];
@@ -1662,8 +1616,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$97" -> "plt(0)$96"	[label=show];
 	"150(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"tfv(0)$2" -> "english(0)"	[label=TfidfVectorizer];
-	"tfv(0)$2" -> "1(0)"	[label=TfidfVectorizer];
 	"tfv(0)$2" -> "2(0)"	[label=TfidfVectorizer];
+	"tfv(0)$2" -> "1(0)"	[label=TfidfVectorizer];
 	"tfv(0)$2" -> "unicode(0)"	[label=TfidfVectorizer];
 	"tfv(0)$2" -> "word(0)"	[label=TfidfVectorizer];
 	"tfv(0)$2" -> "150(0)"	[label=TfidfVectorizer];
@@ -1705,8 +1659,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$103" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$103" -> "plt(0)$102"	[label=ylabel];
 	"plt(0)$104" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$104" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$104" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$104" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$104" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$104" -> "plt(0)$103"	[label=subplot2grid];
 	"sns(0)$13" -> "0(0)"	[label=barplot];
@@ -1721,8 +1675,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$107" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$107" -> "plt(0)$106"	[label=ylabel];
 	"plt(0)$108" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$108" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$108" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$108" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$108" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$108" -> "plt(0)$107"	[label=subplot2grid];
 	"sns(0)$14" -> "0(0)"	[label=barplot];
@@ -1736,13 +1690,13 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$110" -> "plt(0)$109"	[label=xlabel];
 	"plt(0)$111" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$111" -> "plt(0)$110"	[label=ylabel];
-	"plt(0)$112" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$112" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$112" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$112" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$112" -> "plt(0)$111"	[label=subplot2grid];
 	"sns(0)$15" -> "0(0)"	[label=barplot];
-	"sns(0)$15" -> "3(0)"	[label=barplot];
 	"sns(0)$15" -> "5(0)"	[label=barplot];
+	"sns(0)$15" -> "3(0)"	[label=barplot];
 	"sns(0)$15" -> "tfidf_top_n_per_lass(0)$1"	[label=barplot];
 	"sns(0)$15" -> "sns(0)$14"	[label=barplot];
 	"plt(0)$113" -> "class : Threat(0)"	[label=title];
@@ -1756,8 +1710,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$116" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$116" -> "plt(0)$115"	[label=subplot2grid];
 	"sns(0)$16" -> "0(0)"	[label=barplot];
-	"sns(0)$16" -> "4(0)"	[label=barplot];
 	"sns(0)$16" -> "5(0)"	[label=barplot];
+	"sns(0)$16" -> "4(0)"	[label=barplot];
 	"sns(0)$16" -> "tfidf_top_n_per_lass(0)$1"	[label=barplot];
 	"sns(0)$16" -> "sns(0)$15"	[label=barplot];
 	"plt(0)$117" -> "class : Insult(0)"	[label=title];
@@ -1766,8 +1720,8 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$118" -> "plt(0)$117"	[label=xlabel];
 	"plt(0)$119" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$119" -> "plt(0)$118"	[label=ylabel];
-	"plt(0)$120" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$120" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$120" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$120" -> "4(0)"	[label=subplot2grid];
 	"plt(0)$120" -> "plt(0)$119"	[label=subplot2grid];
 	"sns(0)$17" -> "0(0)"	[label=barplot];
@@ -1797,9 +1751,14 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"plt(0)$127" -> "TF-IDF score(0)"	[label=ylabel];
 	"plt(0)$127" -> "plt(0)$126"	[label=ylabel];
 	"plt(0)$128" -> "plt(0)$127"	[label=show];
+	"end_time(0)$2" -> "time(0)"	[label=time];
+	"total time till bigrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1085/0]" -> "start_time(0)$0"	[label=print];
+	"print[1085/0]" -> "end_time(0)$2"	[label=print];
+	"print[1085/0]" -> "total time till bigrams(0)"	[label=print];
 	"tfv(0)$4" -> "english(0)"	[label=TfidfVectorizer];
-	"tfv(0)$4" -> "1(0)"	[label=TfidfVectorizer];
 	"tfv(0)$4" -> "100(0)"	[label=TfidfVectorizer];
+	"tfv(0)$4" -> "1(0)"	[label=TfidfVectorizer];
 	"tfv(0)$4" -> "4(0)"	[label=TfidfVectorizer];
 	"tfv(0)$4" -> "unicode(0)"	[label=TfidfVectorizer];
 	"tfv(0)$4" -> "30000(0)"	[label=TfidfVectorizer];
@@ -1817,6 +1776,11 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"test_charngrams(0)$0" -> "train(0)$4"	[label=transform];
 	"test_charngrams(0)$0" -> "clean_corpus(0)$0"	[label=transform];
 	"test_charngrams(0)$0" -> "tfv(0)$5"	[label=transform];
+	"end_time(0)$3" -> "time(0)"	[label=time];
+	"total time till charngrams(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1096/0]" -> "start_time(0)$0"	[label=print];
+	"print[1096/0]" -> "end_time(0)$3"	[label=print];
+	"print[1096/0]" -> "total time till charngrams(0)"	[label=print];
 	"self(9)" -> "__init__[0]"	[label=_argToVar];
 	"C(9)" -> "__init__[1]"	[label=_argToVar];
 	"dual(9)" -> "__init__[2]"	[label=_argToVar];
@@ -1829,12 +1793,12 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"self(9)$2" -> "self(9)$1"	[label=assignedFrom];
 	"self(10)" -> "predict[0]"	[label=_argToVar];
 	"x(10)" -> "predict[1]"	[label=_argToVar];
-	"check_is_fitted[0]" -> "self(10)"	[label=check_is_fitted];
-	"check_is_fitted[0]" -> "self(11)"	[label=check_is_fitted];
+	"check_is_fitted[1108/8]" -> "self(10)"	[label=check_is_fitted];
+	"check_is_fitted[1108/8]" -> "[<_ast.Constant object at 0x7fd5009a8970>, <_ast.Constant object at 0x7fd5009a89a0>](10)"	[label=check_is_fitted];
 	"self(11)" -> "predict_proba[0]"	[label=_argToVar];
-	"check_is_fitted[1]" -> "[<_ast.Constant object at 0x12f905c70>, <_ast.Constant object at 0x12f905ca0>](10)"	[label=check_is_fitted];
-	"check_is_fitted[1]" -> "[<_ast.Constant object at 0x12f912100>, <_ast.Constant object at 0x12f912130>](11)"	[label=check_is_fitted];
 	"x(11)" -> "predict_proba[1]"	[label=_argToVar];
+	"check_is_fitted[1113/8]" -> "self(11)"	[label=check_is_fitted];
+	"check_is_fitted[1113/8]" -> "[<_ast.Constant object at 0x7fd5009a8dc0>, <_ast.Constant object at 0x7fd5009a8df0>](11)"	[label=check_is_fitted];
 	"self(12)" -> "fit[0]"	[label=_argToVar];
 	"x(12)" -> "fit[1]"	[label=_argToVar];
 	"y(12)" -> "fit[2]"	[label=_argToVar];
@@ -1867,22 +1831,24 @@ object at 0x130b9d6a0>](0)"	[label=assignedFrom];
 	"self(12)$1" -> "x_nb(12)$0"	[label=fit];
 	"self(12)$1" -> "self(12)$1"	[label=fit];
 	"self(12)$1" -> "LogisticRegression(12)"	[label=fit];
-	"[<_ast.Constant object at 0x12f8ec760>, <_ast.Constant object at 0x12f8ec790>, <_ast.Constant object at 0x12f8ec7c0>, <_ast.Constant \
-object at 0x12f8ec7f0>, <_ast.Constant object at 0x12f8ec820>, <_ast.Constant object at 0x12f8ec850>, <_ast.Constant object at 0x12f8ec880>, <_\
-ast.Constant object at 0x12f8ec8b0>, <_ast.Constant object at 0x12f8ec8e0>, <_ast.Constant object at 0x12f8ec910>, <_ast.Constant \
-object at 0x12f8ec940>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"SELECTED_COLS(0)$0" -> "[<_ast.Constant object at 0x12f8ec760>, <_ast.Constant object at 0x12f8ec790>, <_ast.Constant object at 0x12f8ec7c0>, <_ast.Constant \
-object at 0x12f8ec7f0>, <_ast.Constant object at 0x12f8ec820>, <_ast.Constant object at 0x12f8ec850>, <_ast.Constant object at 0x12f8ec880>, <_\
-ast.Constant object at 0x12f8ec8b0>, <_ast.Constant object at 0x12f8ec8e0>, <_ast.Constant object at 0x12f8ec910>, <_ast.Constant \
-object at 0x12f8ec940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009d2460>, <_ast.Constant object at 0x7fd5009d2490>, <_ast.Constant object at 0x7fd5009d24c0>, <_\
+ast.Constant object at 0x7fd5009d24f0>, <_ast.Constant object at 0x7fd5009d2520>, <_ast.Constant object at 0x7fd5009d2550>, <_ast.Constant \
+object at 0x7fd5009d2580>, <_ast.Constant object at 0x7fd5009d25b0>, <_ast.Constant object at 0x7fd5009d25e0>, <_ast.Constant object \
+at 0x7fd5009d2610>, <_ast.Constant object at 0x7fd5009d2670>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"SELECTED_COLS(0)$0" -> "[<_ast.Constant object at 0x7fd5009d2460>, <_ast.Constant object at 0x7fd5009d2490>, <_ast.Constant object at 0x7fd5009d24c0>, <_\
+ast.Constant object at 0x7fd5009d24f0>, <_ast.Constant object at 0x7fd5009d2520>, <_ast.Constant object at 0x7fd5009d2550>, <_ast.Constant \
+object at 0x7fd5009d2580>, <_ast.Constant object at 0x7fd5009d25b0>, <_ast.Constant object at 0x7fd5009d25e0>, <_ast.Constant object \
+at 0x7fd5009d2610>, <_ast.Constant object at 0x7fd5009d2670>](0)"	[label=assignedFrom];
 	"target_x(0)$0" -> "train_feats(0)$4"	[label=assignedFrom];
 	"target_x(0)$0" -> "SELECTED_COLS(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8ecbb0>, <_ast.Constant object at 0x12f8ecbe0>, <_ast.Constant object at 0x12f8ecc10>, <_ast.Constant \
-object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant object at 0x12f8ecca0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
-	"TARGET_COLS(0)$0" -> "[<_ast.Constant object at 0x12f8ecbb0>, <_ast.Constant object at 0x12f8ecbe0>, <_ast.Constant object at 0x12f8ecc10>, <_ast.Constant \
-object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant object at 0x12f8ecca0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009d2910>, <_ast.Constant object at 0x7fd5009d2940>, <_ast.Constant object at 0x7fd5009d2970>, <_\
+ast.Constant object at 0x7fd5009d29a0>, <_ast.Constant object at 0x7fd5009d29d0>, <_ast.Constant object at 0x7fd5009d26a0>](0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"TARGET_COLS(0)$0" -> "[<_ast.Constant object at 0x7fd5009d2910>, <_ast.Constant object at 0x7fd5009d2940>, <_ast.Constant object at 0x7fd5009d2970>, <_\
+ast.Constant object at 0x7fd5009d29a0>, <_ast.Constant object at 0x7fd5009d29d0>, <_ast.Constant object at 0x7fd5009d26a0>](0)"	[label=assignedFrom];
 	"target_y(0)$0" -> "train_tags(0)$0"	[label=assignedFrom];
 	"target_y(0)$0" -> "TARGET_COLS(0)$0"	[label=assignedFrom];
+	"Using only Indirect features(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1147/0]" -> "Using only Indirect features(0)"	[label=print];
 	"model(0)$0" -> "3(0)"	[label=LogisticRegression];
 	"X_train(0)$0" -> "target_x(0)$0"	[label=train_test_split];
 	"X_train(0)$0" -> "target_y(0)$0"	[label=train_test_split];
@@ -1919,10 +1885,16 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"i(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"i(0)" -> "TARGET_COLS(0)$0"	[label=iteratorOf];
 	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"model(0)$1" -> "j(0)"	[label=fit];
+	"j(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"j(0)" -> "TARGET_COLS(0)$0"	[label=iteratorOf];
+	"j(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"Class:= (0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1156/4]" -> "j(0)"	[label=print];
+	"print[1156/4]" -> "Class:= (0)"	[label=print];
 	"model(0)$1" -> "model(0)$0"	[label=fit];
 	"model(0)$1" -> "X_train(0)$0"	[label=fit];
 	"model(0)$1" -> "y_train(0)$0"	[label=fit];
+	"model(0)$1" -> "j(0)"	[label=fit];
 	"preds_valid(0)$1" -> "1(0)"	[label=assignedFrom];
 	"preds_valid(0)$1" -> "X_valid(0)$0"	[label=assignedFrom];
 	"preds_valid(0)$1" -> "preds_valid(0)$0"	[label=assignedFrom];
@@ -1931,8 +1903,39 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"preds_train(0)$1" -> "X_train(0)$0"	[label=assignedFrom];
 	"preds_train(0)$1" -> "preds_train(0)$0"	[label=assignedFrom];
 	"preds_train(0)$1" -> "model(0)$1"	[label=assignedFrom];
+	"train_loss_class(0)$0" -> "y_train(0)$0"	[label=log_loss];
+	"train_loss_class(0)$0" -> "i(0)"	[label=log_loss];
+	"train_loss_class(0)$0" -> "j(0)"	[label=log_loss];
+	"train_loss_class(0)$0" -> "preds_train(0)$1"	[label=log_loss];
+	"valid_loss_class(0)$0" -> "y_valid(0)$0"	[label=log_loss];
+	"valid_loss_class(0)$0" -> "i(0)"	[label=log_loss];
+	"valid_loss_class(0)$0" -> "j(0)"	[label=log_loss];
+	"valid_loss_class(0)$0" -> "preds_valid(0)$1"	[label=log_loss];
+	"Trainloss=log loss:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1162/4]" -> "train_loss_class(0)$0"	[label=print];
+	"print[1162/4]" -> "Trainloss=log loss:(0)"	[label=print];
+	"Validloss=log loss:(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1163/4]" -> "valid_loss_class(0)$0"	[label=print];
+	"print[1163/4]" -> "Validloss=log loss:(0)"	[label=print];
 	"importance(0)$1" -> "importance(0)$0"	[label=append];
 	"importance(0)$1" -> "model(0)$1"	[label=append];
+	"train_loss(0)$1" -> "train_loss(0)$0"	[label=append];
+	"train_loss(0)$1" -> "train_loss_class(0)$0"	[label=append];
+	"valid_loss(0)$1" -> "valid_loss(0)$0"	[label=append];
+	"valid_loss(0)$1" -> "valid_loss_class(0)$0"	[label=append];
+	"mean column-wise log loss:Train dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1167/0]" -> "np(0)"	[label=print];
+	"print[1167/0]" -> "train_loss(0)$1"	[label=print];
+	"print[1167/0]" -> "mean column-wise log loss:Train dataset(0)"	[label=print];
+	"mean column-wise log loss:Validation dataset(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1168/0]" -> "np(0)"	[label=print];
+	"print[1168/0]" -> "valid_loss(0)$1"	[label=print];
+	"print[1168/0]" -> "mean column-wise log loss:Validation dataset(0)"	[label=print];
+	"end_time(0)$4" -> "time(0)"	[label=time];
+	"total time till Indirect feat model(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1171/0]" -> "start_time(0)$0"	[label=print];
+	"print[1171/0]" -> "end_time(0)$4"	[label=print];
+	"print[1171/0]" -> "total time till Indirect feat model(0)"	[label=print];
 	"plt(0)$129" -> "plt(0)$128"	[label=figure];
 	"plt(0)$130" -> "plt(0)$129"	[label=suptitle];
 	"plt(0)$130" -> "Feature importance for indirect features(0)"	[label=suptitle];
@@ -1961,8 +1964,8 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"plt(0)$136" -> "Importance(0)"	[label=ylabel];
 	"Importance(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"plt(0)$137" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$137" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$137" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$137" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$137" -> "3(0)"	[label=subplot2grid];
 	"plt(0)$137" -> "plt(0)$136"	[label=subplot2grid];
 	"sns(0)$20" -> "0(0)"	[label=barplot];
@@ -1981,8 +1984,8 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"plt(0)$141" -> "Importance(0)"	[label=ylabel];
 	"plt(0)$141" -> "plt(0)$140"	[label=ylabel];
 	"plt(0)$142" -> "0(0)"	[label=subplot2grid];
-	"plt(0)$142" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$142" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$142" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$142" -> "3(0)"	[label=subplot2grid];
 	"plt(0)$142" -> "plt(0)$141"	[label=subplot2grid];
 	"sns(0)$21" -> "0(0)"	[label=barplot];
@@ -2000,8 +2003,8 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"plt(0)$145" -> "plt(0)$144"	[label=xlabel];
 	"plt(0)$146" -> "Importance(0)"	[label=ylabel];
 	"plt(0)$146" -> "plt(0)$145"	[label=ylabel];
-	"plt(0)$147" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$147" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$147" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$147" -> "3(0)"	[label=subplot2grid];
 	"plt(0)$147" -> "plt(0)$146"	[label=subplot2grid];
 	"sns(0)$22" -> "0(0)"	[label=barplot];
@@ -2038,8 +2041,8 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"plt(0)$155" -> "plt(0)$154"	[label=xlabel];
 	"plt(0)$156" -> "Importance(0)"	[label=ylabel];
 	"plt(0)$156" -> "plt(0)$155"	[label=ylabel];
-	"plt(0)$157" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$157" -> "2(0)"	[label=subplot2grid];
+	"plt(0)$157" -> "1(0)"	[label=subplot2grid];
 	"plt(0)$157" -> "3(0)"	[label=subplot2grid];
 	"plt(0)$157" -> "plt(0)$156"	[label=subplot2grid];
 	"sns(0)$24" -> "0(0)"	[label=barplot];
@@ -2065,12 +2068,19 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	hstack -> "scipy.sparse"	[label=importedBy];
 	"hstack(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
 	"hstack(0)" -> hstack	[label=assignedFrom];
+	"Using all features except leaky ones(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1242/0]" -> "Using all features except leaky ones(0)"	[label=print];
 	"target_x(0)$1" -> "train_feats(0)$4"	[label=tocsr];
 	"target_x(0)$1" -> "train_unigrams(0)$0"	[label=tocsr];
 	"target_x(0)$1" -> "train_bigrams(0)$0"	[label=tocsr];
 	"target_x(0)$1" -> "train_charngrams(0)$0"	[label=tocsr];
 	"target_x(0)$1" -> "SELECTED_COLS(0)$0"	[label=tocsr];
 	"target_x(0)$1" -> "hstack(0)"	[label=tocsr];
+	"end_time(0)$5" -> "time(0)"	[label=time];
+	"total time till Sparse mat creation(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1247/0]" -> "start_time(0)$0"	[label=print];
+	"print[1247/0]" -> "end_time(0)$5"	[label=print];
+	"print[1247/0]" -> "total time till Sparse mat creation(0)"	[label=print];
 	"model(0)$2" -> "1(0)"	[label=NbSvmClassifier];
 	"model(0)$2" -> "4(0)"	[label=NbSvmClassifier];
 	"model(0)$2" -> "True(0)"	[label=NbSvmClassifier];
@@ -2102,6 +2112,8 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"preds_valid(0)$2" -> "len(0)"	[label=zeros];
 	"preds_valid(0)$2" -> "X_valid(0)$1"	[label=zeros];
 	"preds_valid(0)$2" -> "y_valid(0)$1"	[label=zeros];
+	"print[1255/4]" -> "j(0)"	[label=print];
+	"print[1255/4]" -> "Class:= (0)"	[label=print];
 	"model(0)$3" -> "j(0)"	[label=fit];
 	"model(0)$3" -> "model(0)$2"	[label=fit];
 	"model(0)$3" -> "X_train(0)$1"	[label=fit];
@@ -2114,4 +2126,31 @@ object at 0x12f8ecc40>, <_ast.Constant object at 0x12f8ecc70>, <_ast.Constant ob
 	"preds_train(0)$3" -> "X_train(0)$1"	[label=assignedFrom];
 	"preds_train(0)$3" -> "preds_train(0)$2"	[label=assignedFrom];
 	"preds_train(0)$3" -> "model(0)$3"	[label=assignedFrom];
+	"train_loss_class(0)$1" -> "i(0)"	[label=log_loss];
+	"train_loss_class(0)$1" -> "j(0)"	[label=log_loss];
+	"train_loss_class(0)$1" -> "y_train(0)$1"	[label=log_loss];
+	"train_loss_class(0)$1" -> "preds_train(0)$3"	[label=log_loss];
+	"valid_loss_class(0)$1" -> "i(0)"	[label=log_loss];
+	"valid_loss_class(0)$1" -> "j(0)"	[label=log_loss];
+	"valid_loss_class(0)$1" -> "y_valid(0)$1"	[label=log_loss];
+	"valid_loss_class(0)$1" -> "preds_valid(0)$3"	[label=log_loss];
+	"print[1261/4]" -> "Trainloss=log loss:(0)"	[label=print];
+	"print[1261/4]" -> "train_loss_class(0)$1"	[label=print];
+	"print[1262/4]" -> "Validloss=log loss:(0)"	[label=print];
+	"print[1262/4]" -> "valid_loss_class(0)$1"	[label=print];
+	"train_loss(0)$3" -> "train_loss(0)$2"	[label=append];
+	"train_loss(0)$3" -> "train_loss_class(0)$1"	[label=append];
+	"valid_loss(0)$3" -> "valid_loss(0)$2"	[label=append];
+	"valid_loss(0)$3" -> "valid_loss_class(0)$1"	[label=append];
+	"print[1265/0]" -> "np(0)"	[label=print];
+	"print[1265/0]" -> "mean column-wise log loss:Train dataset(0)"	[label=print];
+	"print[1265/0]" -> "train_loss(0)$3"	[label=print];
+	"print[1266/0]" -> "np(0)"	[label=print];
+	"print[1266/0]" -> "mean column-wise log loss:Validation dataset(0)"	[label=print];
+	"print[1266/0]" -> "valid_loss(0)$3"	[label=print];
+	"end_time(0)$6" -> "time(0)"	[label=time];
+	"total time till NB base model creation(0)" -> "stop-the-s-toxic-comments-eda.ipynb"	[label=appearsIn];
+	"print[1270/0]" -> "start_time(0)$0"	[label=print];
+	"print[1270/0]" -> "end_time(0)$6"	[label=print];
+	"print[1270/0]" -> "total time till NB base model creation(0)"	[label=print];
 }

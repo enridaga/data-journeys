@@ -127,18 +127,8 @@ strict digraph "" {
 	"x_val(0)$2" -> "255.0(0)"	[label=Div];
 	"y_train(0)$1" -> "y_train(0)$0"	[label=to_categorical];
 	"y_val(0)$1" -> "y_val(0)$0"	[label=to_categorical];
-	"print[0]" -> "y_train(0)$1"	[label=print];
-	"print[0]" -> "Final loss: {0:.4f}, final accuracy: {1:.4f}(0)"	[label=print];
-	"print[0]" -> "cm(0)$0"	[label=print];
-	"Final loss: {0:.4f}, final accuracy: {1:.4f}(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
-	"cm(0)$0" -> "y_pred(0)$0"	[label=confusion_matrix];
-	"cm(0)$0" -> "y_true(0)$0"	[label=confusion_matrix];
-	"print[1]" -> "0(0)"	[label=print];
-	"print[1]" -> "final_loss(0)$0"	[label=print];
-	"final_loss(0)$0" -> "0(0)"	[label=evaluate];
-	"final_loss(0)$0" -> "x_val(0)$2"	[label=evaluate];
-	"final_loss(0)$0" -> "y_val(0)$1"	[label=evaluate];
-	"final_loss(0)$0" -> "model(0)$18"	[label=evaluate];
+	"print[53/0]" -> "0(0)"	[label=print];
+	"print[53/0]" -> "y_train(0)$1"	[label=print];
 	"model(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "Conv2D(0)"	[label=add];
 	"model(0)$0" -> "1(0)"	[label=add];
@@ -232,16 +222,23 @@ strict digraph "" {
 	"hist(0)$0" -> "500(0)"	[label=fit_generator];
 	"hist(0)$0" -> "20(0)"	[label=fit_generator];
 	"hist(0)$0" -> "400(0)"	[label=fit_generator];
-	"hist(0)$0" -> "[<_ast.Name object at 0x12fa48790>](0)"	[label=fit_generator];
+	"hist(0)$0" -> "[<_ast.Name object at 0x7fd500999760>](0)"	[label=fit_generator];
 	"500(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
 	"20(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
 	"400(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fa48790>](0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500999760>](0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
+	"final_loss(0)$0" -> "0(0)"	[label=evaluate];
+	"final_loss(0)$0" -> "x_val(0)$2"	[label=evaluate];
+	"final_loss(0)$0" -> "y_val(0)$1"	[label=evaluate];
+	"final_loss(0)$0" -> "model(0)$18"	[label=evaluate];
 	"final_acc(0)$0" -> "0(0)"	[label=evaluate];
 	"final_acc(0)$0" -> "x_val(0)$2"	[label=evaluate];
 	"final_acc(0)$0" -> "y_val(0)$1"	[label=evaluate];
 	"final_acc(0)$0" -> "model(0)$18"	[label=evaluate];
-	"print[2]" -> "final_acc(0)$0"	[label=print];
+	"Final loss: {0:.4f}, final accuracy: {1:.4f}(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
+	"print[129/0]" -> "final_loss(0)$0"	[label=print];
+	"print[129/0]" -> "final_acc(0)$0"	[label=print];
+	"print[129/0]" -> "Final loss: {0:.4f}, final accuracy: {1:.4f}(0)"	[label=print];
 	"plt(0)$0" -> "plt(0)"	[label=plot];
 	"plt(0)$0" -> "hist(0)$0"	[label=plot];
 	"plt(0)$0" -> "loss(0)"	[label=plot];
@@ -268,6 +265,9 @@ strict digraph "" {
 	"y_true(0)$0" -> "np(0)"	[label=argmax];
 	"y_true(0)$0" -> "1(0)"	[label=argmax];
 	"y_true(0)$0" -> "y_val(0)$1"	[label=argmax];
+	"cm(0)$0" -> "y_pred(0)$0"	[label=confusion_matrix];
+	"cm(0)$0" -> "y_true(0)$0"	[label=confusion_matrix];
+	"print[149/0]" -> "cm(0)$0"	[label=print];
 	"mnist_testset(0)$0" -> "np(0)"	[label=loadtxt];
 	"mnist_testset(0)$0" -> "test_file(0)$0"	[label=loadtxt];
 	"mnist_testset(0)$0" -> "1(0)"	[label=loadtxt];
@@ -300,9 +300,9 @@ strict digraph "" {
 	"len(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
 	"f(0)$1" -> "f(0)$0"	[label=write];
 	"f(0)$1" -> "(0)"	[label=write];
-	"f(0)$1" -> "[<_ast.Call object at 0x12f8a9a00>, <_ast.Constant object at 0x12f8a9a30>, <_ast.Call object at 0x12f8a9be0>, <_ast.Constant object \
-at 0x12f8a9b50>](0)"	[label=write];
+	"f(0)$1" -> "[<_ast.Call object at 0x7fd4c04aa3d0>, <_ast.Constant object at 0x7fd4c04aa610>, <_ast.Call object at 0x7fd4c04aa4f0>, <_ast.Constant \
+object at 0x7fd4c04aa8b0>](0)"	[label=write];
 	"(0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f8a9a00>, <_ast.Constant object at 0x12f8a9a30>, <_ast.Call object at 0x12f8a9be0>, <_ast.Constant object \
-at 0x12f8a9b50>](0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd4c04aa3d0>, <_ast.Constant object at 0x7fd4c04aa610>, <_ast.Call object at 0x7fd4c04aa4f0>, <_ast.Constant \
+object at 0x7fd4c04aa8b0>](0)" -> "welcome-to-deep-learning-cnn-99.ipynb"	[label=appearsIn];
 }

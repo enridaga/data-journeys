@@ -1,0 +1,52 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/basic-data-exploration#1257244313> rdfs:label "melbourne_data(0)$1" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-5093745719260235631> ;
+    dj:describe <http://purl.org/dj/kaggle/basic-data-exploration#1257178776> .
+
+<http://purl.org/dj/kaggle/basic-data-exploration#1257178776> rdfs:label "melbourne_data(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-2156720025867512494> ;
+    dj:read_csv <http://purl.org/dj/kaggle/basic-data-exploration#2019035306>,
+        <http://purl.org/dj/kaggle/basic-data-exploration#80085334> .
+
+<http://purl.org/dj/kaggle/basic-data-exploration#2019035306> rdfs:label "melbourne_file_path(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/basic-data-exploration#58004286> .
+
+<http://purl.org/dj/kaggle/basic-data-exploration#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> ;
+    dj:appearsIn k:basic-data-exploration .
+
+<http://purl.org/dj/kaggle/basic-data-exploration#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> ;
+    dj:appearsIn k:basic-data-exploration ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/basic-data-exploration/activity/-5093745719260235631> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-2156720025867512494> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> ;
+    dj:importedBy k:basic-data-exploration .
+
+<http://purl.org/dj/kaggle/basic-data-exploration/activity/-2156720025867512494> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> .
+
+k:basic-data-exploration a k:Notebook ;
+    rdfs:label "basic-data-exploration.ipynb" .
+
+<http://purl.org/dj/kaggle/basic-data-exploration/activity/-6869986125777935878> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:basic-data-exploration .
+

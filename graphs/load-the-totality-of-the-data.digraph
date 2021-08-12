@@ -8,9 +8,9 @@ strict digraph "" {
 	os -> "load-the-totality-of-the-data.ipynb"	[label=importedBy];
 	"os(0)" -> "load-the-totality-of-the-data.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "load-the-totality-of-the-data.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
 	"MachineIdentifier(0)" -> "load-the-totality-of-the-data.ipynb"	[label=appearsIn];
 	"dtypes(0)$0" -> "MachineIdentifier(0)"	[label=assignedFrom];
 	"dtypes(0)$0" -> "ProductName(0)"	[label=assignedFrom];

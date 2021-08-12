@@ -74,108 +74,14 @@ digraph "" {
 	os -> "keras-neural-net-for-champs.ipynb"	[label=importedBy];
 	"os(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "df_train(0)$0"	[label=print];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "Mapping...(2)"	[label=print];
-	"print[0]" -> "RAM usage: {} GB(3)"	[label=print];
-	"print[0]" -> "df_train(0)$4"	[label=print];
-	"print[0]" -> "df_train(0)$5"	[label=print];
-	"print[0]" -> "df_train(0)$6"	[label=print];
-	"print[0]" -> "df_train(0)$7"	[label=print];
-	"print[0]" -> "mol_type(0)"	[label=print];
-	"print[0]" -> "Training \%s(0)"	[label=print];
-	"print[0]" -> "len(9)"	[label=print];
-	"print[0]" -> "Total training time: (0)"	[label=print];
-	"print[0]" -> "total cv score is(0)"	[label=print];
-	"print[0]" -> "keras(0)"	[label=print];
+	"print[22/0]" -> "os(0)"	[label=print];
+	"print[22/0]" -> ".(0)"	[label=print];
+	".(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"df_train(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_train(0)$0" -> "train.csv(0)"	[label=read_csv];
-	"df_train(0)$4" -> "atom_idx(0)"	[label=rename];
-	"df_train(0)$4" -> "df_train(0)$3"	[label=rename];
-	"df_train(0)$4" -> "atom(0)"	[label=rename];
-	"df_train(0)$4" -> "x(0)"	[label=rename];
-	"df_train(0)$4" -> "y(0)"	[label=rename];
-	"df_train(0)$4" -> "z(0)"	[label=rename];
-	"df_train(0)$4" -> "mulliken_charge(0)"	[label=rename];
-	"df_train(0)$4" -> "XX(0)"	[label=rename];
-	"df_train(0)$4" -> "YX(0)"	[label=rename];
-	"df_train(0)$4" -> "ZX(0)"	[label=rename];
-	"df_train(0)$4" -> "XY(0)"	[label=rename];
-	"df_train(0)$4" -> "YY(0)"	[label=rename];
-	"df_train(0)$4" -> "ZY(0)"	[label=rename];
-	"df_train(0)$4" -> "XZ(0)"	[label=rename];
-	"df_train(0)$4" -> "YZ(0)"	[label=rename];
-	"df_train(0)$4" -> "ZZ(0)"	[label=rename];
-	"df_train(0)$4" -> "atom_(0)"	[label=rename];
-	"df_train(0)$4" -> "x_(0)"	[label=rename];
-	"df_train(0)$4" -> "y_(0)"	[label=rename];
-	"df_train(0)$4" -> "z_(0)"	[label=rename];
-	"df_train(0)$4" -> "charge_(0)"	[label=rename];
-	"df_train(0)$4" -> "XX_(0)"	[label=rename];
-	"df_train(0)$4" -> "YX_(0)"	[label=rename];
-	"df_train(0)$4" -> "ZX_(0)"	[label=rename];
-	"df_train(0)$4" -> "XY_(0)"	[label=rename];
-	"df_train(0)$4" -> "YY_(0)"	[label=rename];
-	"df_train(0)$4" -> "ZY_(0)"	[label=rename];
-	"df_train(0)$4" -> "XZ_(0)"	[label=rename];
-	"df_train(0)$4" -> "YZ_(0)"	[label=rename];
-	"df_train(0)$4" -> "ZZ_(0)"	[label=rename];
-	"df_train(0)$5" -> "df_train(0)$4"	[label=make_features];
-	"df_train(0)$6" -> "df_train(0)$5"	[label=get_dist];
-	"df_train(0)$7" -> "df_train(0)$6"	[label=add_features];
-	"mol_type(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"mol_type(0)" -> "mol_types(0)$0"	[label=iteratorOf];
-	"Training \%s(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"Total training time: (0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"total cv score is(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"keras(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"keras(0)" -> keras	[label=assignedFrom];
-	".(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"print[1]" -> "mol_type(0)"	[label=print];
-	"print[1]" -> ".(0)"	[label=print];
-	"print[1]" -> "df_test(0)$0"	[label=print];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "df_1(2)"	[label=print];
-	"print[1]" -> "py(3)$0"	[label=print];
-	"print[1]" -> "df_test(0)$2"	[label=print];
-	"print[1]" -> "df_test(0)$3"	[label=print];
-	"print[1]" -> "df_test(0)$4"	[label=print];
-	"print[1]" -> "df_test(0)$5"	[label=print];
-	"print[1]" -> "datetime(0)"	[label=print];
-	"print[1]" -> "cv_score_total(0)$2"	[label=print];
-	"print[1]" -> "submit(9)$0"	[label=print];
-	"print[1]" -> ": cv score is (0)"	[label=print];
+	"train.csv(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"df_test(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_test(0)$0" -> "test.csv(0)"	[label=read_csv];
-	"end_mem(1)$0" -> "1024(1)"	[label=Div];
-	"end_mem(1)$0" -> "2(1)"	[label=Div];
-	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"df_1(2)" -> "map_atom_info[0]"	[label=_argToVar];
-	"py(3)$0" -> "psutil(3)"	[label=Process];
-	"py(3)$0" -> "os(3)"	[label=Process];
-	"df_test(0)$2" -> "atom_idx(0)"	[label=rename];
-	"df_test(0)$2" -> "atom(0)"	[label=rename];
-	"df_test(0)$2" -> "x(0)"	[label=rename];
-	"df_test(0)$2" -> "y(0)"	[label=rename];
-	"df_test(0)$2" -> "z(0)"	[label=rename];
-	"df_test(0)$2" -> "atom_(0)"	[label=rename];
-	"df_test(0)$2" -> "x_(0)"	[label=rename];
-	"df_test(0)$2" -> "y_(0)"	[label=rename];
-	"df_test(0)$2" -> "z_(0)"	[label=rename];
-	"df_test(0)$2" -> "df_test(0)$1"	[label=rename];
-	"df_test(0)$3" -> "df_test(0)$2"	[label=make_features];
-	"df_test(0)$4" -> "df_test(0)$3"	[label=get_dist];
-	"df_test(0)$5" -> "df_test(0)$4"	[label=add_features];
-	"datetime(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"datetime(0)" -> datetime	[label=assignedFrom];
-	"cv_score_total(0)$2" -> "mol_types(0)$0"	[label=Div];
-	"cv_score_total(0)$2" -> "len(0)"	[label=Div];
-	"cv_score_total(0)$2" -> "cv_score_total(0)$1"	[label=Div];
-	"submit(9)$0" -> "pd(9)"	[label=read_csv];
-	"submit(9)$0" -> "sample_submission.csv(9)"	[label=read_csv];
-	": cv score is (0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"train.csv(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"test.csv(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"df_struct(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_struct(0)$0" -> "structures.csv(0)"	[label=read_csv];
@@ -188,8 +94,8 @@ digraph "" {
 	"magnetic_shielding_tensors.csv(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x12f957040>, <_ast.Constant object at 0x12f9579a0>, <_ast.Constant object at 0x12f957d00>, <_ast.Constant \
-object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant object at 0x12f957f40>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd5008320a0>, <_ast.Constant object at 0x7fd500832430>, <_ast.Constant object at 0x7fd5008328e0>, <_\
+ast.Constant object at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832e80>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -221,56 +127,53 @@ object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant ob
 	"df(1)$6" -> "col(1)"	[label=astype];
 	"df(1)$6" -> "np(1)"	[label=astype];
 	"df(1)$6" -> "df(1)$5"	[label=astype];
-	"print[2]" -> "len(9)"	[label=print];
-	"print[2]" -> "df_struct(0)$0"	[label=print];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[2]" -> "df_2(2)"	[label=print];
-	"print[2]" -> "0(3)"	[label=print];
-	"print[2]" -> "start_time(0)$0"	[label=print];
-	"print[2]" -> "out of(0)"	[label=print];
-	"print[2]" -> "cv_score(0)$1"	[label=print];
-	"df_2(2)" -> "map_atom_info[1]"	[label=_argToVar];
-	"start_time(0)$0" -> "datetime(0)"	[label=now];
-	"out of(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"cv_score(0)$1" -> "np(0)"	[label=append];
-	"cv_score(0)$1" -> "cv_score(0)$0"	[label=append];
-	"cv_score(0)$1" -> "accuracy(0)$0"	[label=append];
-	"print[3]" -> "df_train_sub_charge(0)$0"	[label=print];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[3]" -> "atom_idx(2)"	[label=print];
-	"print[3]" -> "2.0(3)"	[label=print];
-	"print[3]" -> "mol_types(0)$0"	[label=print];
-	"print[3]" -> "predictions(9)"	[label=print];
-	"print[3]" -> "i(0)$0"	[label=print];
-	"atom_idx(2)" -> "map_atom_info[2]"	[label=_argToVar];
-	"mol_types(0)$0" -> "df_train(0)$7"	[label=unique];
-	"mol_types(0)$0" -> "type(0)"	[label=unique];
-	"predictions(9)" -> "submit[0]"	[label=_argToVar];
-	"i(0)$0" -> "0(0)"	[label=assignedFrom];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[4]" -> "df_train_sub_tensor(0)$0"	[label=print];
-	"print[4]" -> "30(3)"	[label=print];
-	"print[4]" -> "
-(0)"	[label=print];
-	"
-(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
+	"end_mem(1)$0" -> "1024(1)"	[label=Div];
+	"end_mem(1)$0" -> "2(1)"	[label=Div];
+	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
+	"print[59/16]" -> "start_mem(1)$0"	[label=print];
+	"print[59/16]" -> "end_mem(1)$0"	[label=print];
+	"print[59/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[59/16]" -> "100(1)"	[label=print];
+	"print[61/0]" -> "df_train(0)$0"	[label=print];
+	"print[61/0]" -> "df_test(0)$0"	[label=print];
+	"print[61/0]" -> "df_struct(0)$0"	[label=print];
+	"print[61/0]" -> "df_train_sub_charge(0)$0"	[label=print];
+	"print[61/0]" -> "df_train_sub_tensor(0)$0"	[label=print];
+	"print[67/0]" -> "df_train(0)$0"	[label=print];
+	"print[67/0]" -> "df_test(0)$0"	[label=print];
+	"print[67/0]" -> "df_struct(0)$0"	[label=print];
+	"print[67/0]" -> "df_train_sub_charge(0)$0"	[label=print];
+	"print[67/0]" -> "df_train_sub_tensor(0)$0"	[label=print];
 	psutil -> "keras-neural-net-for-champs.ipynb"	[label=importedBy];
 	"psutil(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"psutil(0)" -> psutil	[label=assignedFrom];
+	"df_1(2)" -> "map_atom_info[0]"	[label=_argToVar];
+	"df_2(2)" -> "map_atom_info[1]"	[label=_argToVar];
+	"atom_idx(2)" -> "map_atom_info[2]"	[label=_argToVar];
+	"print[75/4]" -> "df_1(2)"	[label=print];
+	"print[75/4]" -> "df_2(2)"	[label=print];
+	"print[75/4]" -> "atom_idx(2)"	[label=print];
+	"print[75/4]" -> "Mapping...(2)"	[label=print];
 	"df(2)$0" -> "df_1(2)"	[label=merge];
 	"df(2)$0" -> "df_2(2)"	[label=merge];
 	"df(2)$0" -> "pd(2)"	[label=merge];
-	"df(2)$0" -> "[<_ast.Constant object at 0x130532ca0>, <_ast.Constant object at 0x130532190>](2)"	[label=merge];
+	"df(2)$0" -> "[<_ast.Constant object at 0x7fd500849fd0>, <_ast.Constant object at 0x7fd5008499a0>](2)"	[label=merge];
 	"df(2)$0" -> "left(2)"	[label=merge];
-	"df(2)$0" -> "[<_ast.Constant object at 0x130532850>, <_ast.JoinedStr object at 0x1305325e0>](2)"	[label=merge];
-	"df(2)$0" -> "[<_ast.Constant object at 0x12fade460>, <_ast.Constant object at 0x12fade1f0>](2)"	[label=merge];
+	"df(2)$0" -> "[<_ast.Constant object at 0x7fd500849c40>, <_ast.JoinedStr object at 0x7fd5008493a0>](2)"	[label=merge];
+	"df(2)$0" -> "[<_ast.Constant object at 0x7fd5008492b0>, <_ast.Constant object at 0x7fd5008496d0>](2)"	[label=merge];
 	"df(2)$1" -> "df(2)$0"	[label=drop];
 	"df(2)$1" -> "atom_index(2)"	[label=drop];
 	"df(2)$1" -> "1(2)"	[label=drop];
-	"[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fadec70>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"py(3)$0" -> "psutil(3)"	[label=Process];
+	"py(3)$0" -> "os(3)"	[label=Process];
+	"print[87/4]" -> "py(3)$0"	[label=print];
+	"print[87/4]" -> "RAM usage: {} GB(3)"	[label=print];
+	"print[87/4]" -> "0(3)"	[label=print];
+	"print[87/4]" -> "2.0(3)"	[label=print];
+	"print[87/4]" -> "30(3)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500817280>, <_ast.Constant object at 0x7fd500817d00>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"atom_idx(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"atom_idx(0)" -> "[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fadec70>](0)"	[label=iteratorOf];
+	"atom_idx(0)" -> "[<_ast.Constant object at 0x7fd500817280>, <_ast.Constant object at 0x7fd500817d00>](0)"	[label=iteratorOf];
 	"df_train(0)$1" -> "df_train(0)$0"	[label=map_atom_info];
 	"df_train(0)$1" -> "df_struct(0)$0"	[label=map_atom_info];
 	"df_train(0)$1" -> "atom_idx(0)"	[label=map_atom_info];
@@ -280,6 +183,36 @@ object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant ob
 	"df_train(0)$3" -> "df_train_sub_tensor(0)$0"	[label=map_atom_info];
 	"df_train(0)$3" -> "atom_idx(0)"	[label=map_atom_info];
 	"df_train(0)$3" -> "df_train(0)$2"	[label=map_atom_info];
+	"df_train(0)$4" -> "atom_idx(0)"	[label=rename];
+	"df_train(0)$4" -> "df_train(0)$3"	[label=rename];
+	"df_train(0)$4" -> "atom(0)"	[label=rename];
+	"df_train(0)$4" -> "x(0)"	[label=rename];
+	"df_train(0)$4" -> "y(0)"	[label=rename];
+	"df_train(0)$4" -> "z(0)"	[label=rename];
+	"df_train(0)$4" -> "mulliken_charge(0)"	[label=rename];
+	"df_train(0)$4" -> "XX(0)"	[label=rename];
+	"df_train(0)$4" -> "YX(0)"	[label=rename];
+	"df_train(0)$4" -> "ZX(0)"	[label=rename];
+	"df_train(0)$4" -> "XY(0)"	[label=rename];
+	"df_train(0)$4" -> "YY(0)"	[label=rename];
+	"df_train(0)$4" -> "ZY(0)"	[label=rename];
+	"df_train(0)$4" -> "XZ(0)"	[label=rename];
+	"df_train(0)$4" -> "YZ(0)"	[label=rename];
+	"df_train(0)$4" -> "ZZ(0)"	[label=rename];
+	"df_train(0)$4" -> "atom_(0)"	[label=rename];
+	"df_train(0)$4" -> "x_(0)"	[label=rename];
+	"df_train(0)$4" -> "y_(0)"	[label=rename];
+	"df_train(0)$4" -> "z_(0)"	[label=rename];
+	"df_train(0)$4" -> "charge_(0)"	[label=rename];
+	"df_train(0)$4" -> "XX_(0)"	[label=rename];
+	"df_train(0)$4" -> "YX_(0)"	[label=rename];
+	"df_train(0)$4" -> "ZX_(0)"	[label=rename];
+	"df_train(0)$4" -> "XY_(0)"	[label=rename];
+	"df_train(0)$4" -> "YY_(0)"	[label=rename];
+	"df_train(0)$4" -> "ZY_(0)"	[label=rename];
+	"df_train(0)$4" -> "XZ_(0)"	[label=rename];
+	"df_train(0)$4" -> "YZ_(0)"	[label=rename];
+	"df_train(0)$4" -> "ZZ_(0)"	[label=rename];
 	"atom(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"x(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"y(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
@@ -311,6 +244,16 @@ object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant ob
 	"df_test(0)$1" -> "df_test(0)$0"	[label=map_atom_info];
 	"df_test(0)$1" -> "df_struct(0)$0"	[label=map_atom_info];
 	"df_test(0)$1" -> "atom_idx(0)"	[label=map_atom_info];
+	"df_test(0)$2" -> "atom_idx(0)"	[label=rename];
+	"df_test(0)$2" -> "atom(0)"	[label=rename];
+	"df_test(0)$2" -> "x(0)"	[label=rename];
+	"df_test(0)$2" -> "y(0)"	[label=rename];
+	"df_test(0)$2" -> "z(0)"	[label=rename];
+	"df_test(0)$2" -> "atom_(0)"	[label=rename];
+	"df_test(0)$2" -> "x_(0)"	[label=rename];
+	"df_test(0)$2" -> "y_(0)"	[label=rename];
+	"df_test(0)$2" -> "z_(0)"	[label=rename];
+	"df_test(0)$2" -> "df_test(0)$1"	[label=rename];
 	"df_struct(0)$1" -> "df_struct(0)$0"	[label=transform];
 	"df_struct(0)$1" -> "x(0)"	[label=transform];
 	"df_struct(0)$1" -> "molecule_name(0)"	[label=transform];
@@ -331,6 +274,8 @@ object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant ob
 	"df_struct(0)$4" -> "max(0)"	[label=transform];
 	"atom_index(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"max(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"print[122/4]" -> "df_train(0)$4"	[label=print];
+	"print[122/4]" -> "df_test(0)$2"	[label=print];
 	"df(4)" -> "make_features[0]"	[label=_argToVar];
 	"df(4)$0" -> "df(4)"	[label=Sub];
 	"df(4)$0" -> "df(4)$0"	[label=Sub];
@@ -351,15 +296,20 @@ object at 0x12f9574c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant ob
 	"df(4)$3" -> "dy(4)"	[label=Pow];
 	"df(4)$3" -> "dz(4)"	[label=Pow];
 	"df(4)$3" -> "1(4)"	[label=Pow];
+	"df_train(0)$5" -> "df_train(0)$4"	[label=make_features];
+	"df_test(0)$3" -> "df_test(0)$2"	[label=make_features];
 	"test_prediction(0)$0" -> "np(0)"	[label=zeros];
 	"test_prediction(0)$0" -> "df_test(0)$3"	[label=zeros];
 	"test_prediction(0)$0" -> "len(0)"	[label=zeros];
 	"len(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"print[136/0]" -> "df_train(0)$5"	[label=print];
+	"print[136/0]" -> "df_test(0)$3"	[label=print];
 	"df(5)" -> "get_dist[0]"	[label=_argToVar];
 	"df_temp(5)$0" -> "df(5)"	[label=copy];
-	"df_temp(5)$0" -> "[<_ast.Constant object at 0x12f9a62b0>, <_ast.Constant object at 0x12f9a62e0>, <_ast.Constant object at 0x12f9a6310>, <_ast.Constant \
-object at 0x12f9a6340>, <_ast.Constant object at 0x12f9a6370>, <_ast.Constant object at 0x12f9a63a0>, <_ast.Constant object at 0x12f9a63d0>, <_\
-ast.Constant object at 0x12f9a6400>, <_ast.Constant object at 0x12f9a6430>, <_ast.Constant object at 0x12f9a6460>](5)"	[label=copy];
+	"df_temp(5)$0" -> "[<_ast.Constant object at 0x7fd500824fa0>, <_ast.Constant object at 0x7fd500824d60>, <_ast.Constant object at 0x7fd500824dc0>, <_\
+ast.Constant object at 0x7fd500824eb0>, <_ast.Constant object at 0x7fd500824fd0>, <_ast.Constant object at 0x7fd500824f70>, <_ast.Constant \
+object at 0x7fd5008243a0>, <_ast.Constant object at 0x7fd4c05a6e50>, <_ast.Constant object at 0x7fd4c05a61c0>, <_ast.Constant object \
+at 0x7fd4c05a6250>](5)"	[label=copy];
 	"df_temp_(5)$0" -> "df_temp(5)$0"	[label=copy];
 	"df_temp_(5)$1" -> "df_temp_(5)$0"	[label=rename];
 	"df_temp_(5)$1" -> "atom_index_0(5)"	[label=rename];
@@ -375,19 +325,19 @@ ast.Constant object at 0x12f9a6400>, <_ast.Constant object at 0x12f9a6430>, <_as
 	"df_temp_all(5)$0" -> "pd(5)"	[label=concat];
 	"df_temp_all(5)$0" -> "0(5)"	[label=concat];
 	"df_temp_all(5)$1" -> "df_temp_all(5)$0"	[label=transform];
-	"df_temp_all(5)$1" -> "[<_ast.Constant object at 0x12f9a6ee0>, <_ast.Constant object at 0x12f9a6f10>](5)"	[label=transform];
+	"df_temp_all(5)$1" -> "[<_ast.Constant object at 0x7fd4c05a68e0>, <_ast.Constant object at 0x7fd4c05a6460>](5)"	[label=transform];
 	"df_temp_all(5)$1" -> "distance(5)"	[label=transform];
 	"df_temp_all(5)$1" -> "min(5)"	[label=transform];
 	"df_temp_all(5)$2" -> "df_temp_all(5)$1"	[label=transform];
 	"df_temp_all(5)$2" -> "distance(5)"	[label=transform];
-	"df_temp_all(5)$2" -> "[<_ast.Constant object at 0x12f9a32b0>, <_ast.Constant object at 0x12f9a32e0>](5)"	[label=transform];
+	"df_temp_all(5)$2" -> "[<_ast.Constant object at 0x7fd4c05a6a90>, <_ast.Constant object at 0x7fd4c05a6f70>](5)"	[label=transform];
 	"df_temp_all(5)$2" -> "max(5)"	[label=transform];
 	"df_temp(5)$1" -> "distance(5)"	[label=copy];
 	"df_temp(5)$1" -> "df_temp_all(5)$2"	[label=copy];
 	"df_temp(5)$1" -> "min_distance(5)"	[label=copy];
 	"df_temp(5)$2" -> "df_temp(5)$1"	[label=drop];
-	"df_temp(5)$2" -> "[<_ast.Constant object at 0x12f9a3880>, <_ast.Constant object at 0x12f9a38b0>, <_ast.Constant object at 0x12f9a38e0>, <_ast.Constant \
-object at 0x12f9a3910>](5)"	[label=drop];
+	"df_temp(5)$2" -> "[<_ast.Constant object at 0x7fd5008223d0>, <_ast.Constant object at 0x7fd500822340>, <_ast.Constant object at 0x7fd500822400>, <_\
+ast.Constant object at 0x7fd500822640>](5)"	[label=drop];
 	"df_temp(5)$2" -> "1(5)"	[label=drop];
 	"df_temp(5)$3" -> "atom_index_0(5)"	[label=rename];
 	"df_temp(5)$3" -> "atom_index_1(5)"	[label=rename];
@@ -402,8 +352,8 @@ object at 0x12f9a3910>](5)"	[label=drop];
 	"df_temp(5)$3" -> "x_closest(5)"	[label=rename];
 	"df_temp(5)$3" -> "y_closest(5)"	[label=rename];
 	"df_temp(5)$3" -> "z_closest(5)"	[label=rename];
-	"atom_idx(5)" -> "[<_ast.Constant object at 0x12f9a3e80>, <_ast.Constant object at 0x12f9a3eb0>](5)"	[label=iteratorOf];
-	"atom_idx(5)" -> "[<_ast.Constant object at 0x12f8802e0>, <_ast.Constant object at 0x12f880310>](5)"	[label=iteratorOf];
+	"atom_idx(5)" -> "[<_ast.Constant object at 0x7fd500822550>, <_ast.Constant object at 0x7fd500822220>](5)"	[label=iteratorOf];
+	"atom_idx(5)" -> "[<_ast.Constant object at 0x7fd4c05b5130>, <_ast.Constant object at 0x7fd4c05b5d90>](5)"	[label=iteratorOf];
 	"df(5)$0" -> "df(5)"	[label=map_atom_info];
 	"df(5)$0" -> "df_temp(5)$3"	[label=map_atom_info];
 	"df(5)$0" -> "atom_idx(5)"	[label=map_atom_info];
@@ -424,8 +374,8 @@ object at 0x12f9a3910>](5)"	[label=drop];
 	"df_temp(5)$4" -> "max_distance(5)"	[label=copy];
 	"df_temp(5)$5" -> "1(5)"	[label=drop];
 	"df_temp(5)$5" -> "df_temp(5)$4"	[label=drop];
-	"df_temp(5)$5" -> "[<_ast.Constant object at 0x12f895ca0>, <_ast.Constant object at 0x12f895cd0>, <_ast.Constant object at 0x12f895d00>, <_ast.Constant \
-object at 0x12f895d30>](5)"	[label=drop];
+	"df_temp(5)$5" -> "[<_ast.Constant object at 0x7fd4c05b59d0>, <_ast.Constant object at 0x7fd4c05b5a00>, <_ast.Constant object at 0x7fd4c05b5a30>, <_\
+ast.Constant object at 0x7fd4c05b5a90>](5)"	[label=drop];
 	"df_temp(5)$6" -> "atom_index_0(5)"	[label=rename];
 	"df_temp(5)$6" -> "atom_index_1(5)"	[label=rename];
 	"df_temp(5)$6" -> "x_1(5)"	[label=rename];
@@ -454,6 +404,10 @@ object at 0x12f895d30>](5)"	[label=drop];
 	"df(5)$3" -> "x_farthest_(5)"	[label=rename];
 	"df(5)$3" -> "y_farthest_(5)"	[label=rename];
 	"df(5)$3" -> "z_farthest_(5)"	[label=rename];
+	"df_test(0)$4" -> "df_test(0)$3"	[label=get_dist];
+	"df_train(0)$6" -> "df_train(0)$5"	[label=get_dist];
+	"print[191/0]" -> "df_test(0)$4"	[label=print];
+	"print[191/0]" -> "df_train(0)$6"	[label=print];
 	"df(6)" -> "add_features[0]"	[label=_argToVar];
 	"df(6)$0" -> "df(6)"	[label=Pow];
 	"df(6)$0" -> "df(6)$0"	[label=Pow];
@@ -712,13 +666,17 @@ object at 0x12f895d30>](5)"	[label=drop];
 	"df(6)$35" -> "df(6)$35"	[label=Add];
 	"df(6)$36" -> "1(6)"	[label=drop];
 	"df(6)$36" -> "df(6)$35"	[label=drop];
-	"df(6)$36" -> "[<_ast.Constant object at 0x130bc8670>, <_ast.Constant object at 0x130bc86a0>, <_ast.Constant object at 0x130bc86d0>, <_ast.Constant \
-object at 0x130bc8700>, <_ast.Constant object at 0x130bc8730>, <_ast.Constant object at 0x130bc8760>, <_ast.Constant object at 0x130bc8820>, <_\
-ast.Constant object at 0x130bc87f0>, <_ast.Constant object at 0x130bc8790>, <_ast.Constant object at 0x130bc84c0>, <_ast.Constant \
-object at 0x130bc84f0>, <_ast.Constant object at 0x130bc8880>, <_ast.Constant object at 0x130bc8940>, <_ast.Constant object at 0x130bc88b0>, <_\
-ast.Constant object at 0x130bc88e0>, <_ast.Constant object at 0x130bc8910>, <_ast.Constant object at 0x130bc8970>, <_ast.Constant \
-object at 0x130bc8d60>, <_ast.Constant object at 0x130bc89a0>, <_ast.Constant object at 0x130bc8a30>, <_ast.Constant object at 0x130bc8a60>](\
-6)"	[label=drop];
+	"df(6)$36" -> "[<_ast.Constant object at 0x7fd4c05c8340>, <_ast.Constant object at 0x7fd4c05c83a0>, <_ast.Constant object at 0x7fd4c05c8400>, <_\
+ast.Constant object at 0x7fd4c05c8430>, <_ast.Constant object at 0x7fd4c05c8460>, <_ast.Constant object at 0x7fd4c05c84c0>, <_ast.Constant \
+object at 0x7fd4c05c8490>, <_ast.Constant object at 0x7fd4c05c8520>, <_ast.Constant object at 0x7fd4c05c8550>, <_ast.Constant object \
+at 0x7fd4c05c8580>, <_ast.Constant object at 0x7fd4c05c85b0>, <_ast.Constant object at 0x7fd4c05c85e0>, <_ast.Constant object at \
+0x7fd4c05c8610>, <_ast.Constant object at 0x7fd4c05c8640>, <_ast.Constant object at 0x7fd4c05c8670>, <_ast.Constant object at 0x7fd4c05c86a0>, <_\
+ast.Constant object at 0x7fd4c05c86d0>, <_ast.Constant object at 0x7fd4c05c8700>, <_ast.Constant object at 0x7fd4c05c83d0>, <_ast.Constant \
+object at 0x7fd4c05c8730>, <_ast.Constant object at 0x7fd4c05c8760>](6)"	[label=drop];
+	"df_train(0)$7" -> "df_train(0)$6"	[label=add_features];
+	"df_test(0)$5" -> "df_test(0)$4"	[label=add_features];
+	"print[238/0]" -> "df_train(0)$7"	[label=print];
+	"print[238/0]" -> "df_test(0)$5"	[label=print];
 	"input_shape(7)" -> "create_nn_model[0]"	[label=_argToVar];
 	"inp(7)$0" -> "input_shape(7)"	[label=Input];
 	"x(7)$0" -> "inp(7)$0"	[label=assignedFrom];
@@ -831,23 +789,10 @@ object at 0x130bc8d60>, <_ast.Constant object at 0x130bc89a0>, <_ast.Constant ob
 	"out(7)$0" -> "x(7)$33"	[label=assignedFrom];
 	"out(7)$0" -> "1(7)"	[label=assignedFrom];
 	"model(7)$0" -> "inp(7)$0"	[label=Model];
-	"model(7)$0" -> "[<_ast.Name object at 0x130bd4a00>, <_ast.Name object at 0x130bd4a30>, <_ast.Name object at 0x130bd4a60>, <_ast.Name object at 0x130bd4a90>](\
-7)"	[label=Model];
+	"model(7)$0" -> "[<_ast.Name object at 0x7fd4c05b9700>, <_ast.Name object at 0x7fd4c05b9730>, <_ast.Name object at 0x7fd4c05b9760>, <_ast.Name object \
+at 0x7fd4c05b9790>](7)"	[label=Model];
 	"history(8)" -> "plot_history[0]"	[label=_argToVar];
-	"plot_history[0]" -> "history(0)$0"	[label=plot_history];
-	"history(0)$0" -> "epoch_n(0)$0"	[label=fit];
-	"history(0)$0" -> "verbose(0)$0"	[label=fit];
-	"history(0)$0" -> "batch_size(0)$0"	[label=fit];
-	"history(0)$0" -> "train_input(0)$0"	[label=fit];
-	"history(0)$0" -> "cv_input(0)$0"	[label=fit];
-	"history(0)$0" -> "nn_model(0)$2"	[label=fit];
-	"history(0)$0" -> "[<_ast.Name object at 0x12f8d24f0>, <_ast.Name object at 0x12f8d2520>, <_ast.Name object at 0x12f8d2550>, <_ast.Name object at 0x12f8d2580>](\
-0)"	[label=fit];
-	"history(0)$0" -> "[<_ast.Name object at 0x12f8d26d0>, <_ast.Name object at 0x12f8d2700>, <_ast.Name object at 0x12f8d2730>, <_ast.Name object at 0x12f8d2760>](\
-0)"	[label=fit];
-	"history(0)$0" -> "[<_ast.Name object at 0x12f8d2820>, <_ast.Name object at 0x12f8d2850>, <_ast.Name object at 0x12f8d2880>](0)"	[label=fit];
 	"label(8)" -> "plot_history[1]"	[label=_argToVar];
-	"plot_history[1]" -> "mol_type(0)"	[label=plot_history];
 	"plt(8)$0" -> "history(8)"	[label=plot];
 	"plt(8)$0" -> "plt(8)"	[label=plot];
 	"plt(8)$0" -> "loss(8)"	[label=plot];
@@ -862,11 +807,15 @@ object at 0x130bc8d60>, <_ast.Constant object at 0x130bc89a0>, <_ast.Constant ob
 	"plt(8)$4" -> "plt(8)$3"	[label=xlabel];
 	"plt(8)$4" -> "Epoch(8)"	[label=xlabel];
 	"_(8)$0" -> "plt(8)$4"	[label=legend];
-	"_(8)$0" -> "[<_ast.Constant object at 0x130bae4c0>, <_ast.Constant object at 0x130bae100>](8)"	[label=legend];
+	"_(8)$0" -> "[<_ast.Constant object at 0x7fd500861250>, <_ast.Constant object at 0x7fd500861280>](8)"	[label=legend];
 	"_(8)$0" -> "upper left(8)"	[label=legend];
 	"plt(8)$5" -> "plt(8)$4"	[label=show];
 	datetime -> "keras-neural-net-for-champs.ipynb"	[label=importedBy];
 	datetime -> datetime	[label=importedBy];
+	"datetime(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"datetime(0)" -> datetime	[label=assignedFrom];
+	"mol_types(0)$0" -> "df_train(0)$7"	[label=unique];
+	"mol_types(0)$0" -> "type(0)"	[label=unique];
 	"type(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"[](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"cv_score(0)$0" -> "[](0)"	[label=assignedFrom];
@@ -898,62 +847,75 @@ object at 0x130bc8d60>, <_ast.Constant object at 0x130bc89a0>, <_ast.Constant ob
 	"sess(0)$0" -> "config(0)$2"	[label=Session];
 	"K(0)$0" -> "K(0)"	[label=set_session];
 	"K(0)$0" -> "sess(0)$0"	[label=set_session];
+	"start_time(0)$0" -> "datetime(0)"	[label=now];
+	"mol_type(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"mol_type(0)" -> "mol_types(0)$0"	[label=iteratorOf];
 	"../keras-neural-net-for-champs/molecule_model_\%s.hdf5(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"model_name_rd(0)$0" -> "mol_type(0)"	[label=Mod];
 	"model_name_rd(0)$0" -> "../keras-neural-net-for-champs/molecule_model_\%s.hdf5(0)"	[label=Mod];
 	"/kaggle/working/molecule_model_\%s.hdf5(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"model_name_wrt(0)$0" -> "mol_type(0)"	[label=Mod];
 	"model_name_wrt(0)$0" -> "/kaggle/working/molecule_model_\%s.hdf5(0)"	[label=Mod];
+	"Training \%s(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"print[317/4]" -> "mol_types(0)$0"	[label=print];
+	"print[317/4]" -> "mol_type(0)"	[label=print];
+	"print[317/4]" -> "Training \%s(0)"	[label=print];
+	"print[317/4]" -> "out of(0)"	[label=print];
+	"print[317/4]" -> "
+(0)"	[label=print];
+	"out of(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"
+(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"df_train_(0)$0" -> "df_train(0)$7"	[label=assignedFrom];
-	"df_train_(0)$0" -> "mol_type(0)"	[label=assignedFrom];
 	"df_train_(0)$0" -> "type(0)"	[label=assignedFrom];
-	"df_test_(0)$0" -> "mol_type(0)"	[label=assignedFrom];
+	"df_train_(0)$0" -> "mol_type(0)"	[label=assignedFrom];
 	"df_test_(0)$0" -> "df_test(0)$5"	[label=assignedFrom];
 	"df_test_(0)$0" -> "type(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bd2e80>, <_ast.Constant object at 0x130bd2eb0>, <_ast.Constant object at 0x130bd2ee0>, <_ast.Constant \
-object at 0x130bd2f10>, <_ast.Constant object at 0x130bd2f40>, <_ast.Constant object at 0x130bd2f70>, <_ast.Constant object at 0x130bd2fa0>, <_\
-ast.Constant object at 0x130bd2fd0>, <_ast.Constant object at 0x130bcd040>, <_ast.Constant object at 0x130bcd070>, <_ast.Constant \
-object at 0x130bcd0a0>, <_ast.Constant object at 0x130bcd0d0>, <_ast.Constant object at 0x130bcd100>, <_ast.Constant object at 0x130bcd130>, <_\
-ast.Constant object at 0x130bcd160>, <_ast.Constant object at 0x130bcd190>, <_ast.Constant object at 0x130bcd1c0>, <_ast.Constant \
-object at 0x130bcd1f0>, <_ast.Constant object at 0x130bcd220>, <_ast.Constant object at 0x130bcd250>, <_ast.Constant object at 0x130bcd280>, <_\
-ast.Constant object at 0x130bcd2b0>, <_ast.Constant object at 0x130bcd2e0>, <_ast.Constant object at 0x130bcd310>, <_ast.Constant \
-object at 0x130bcd340>, <_ast.Constant object at 0x130bcd370>, <_ast.Constant object at 0x130bcd3a0>, <_ast.Constant object at 0x130bcd3d0>, <_\
-ast.Constant object at 0x130bcd400>, <_ast.Constant object at 0x130bcd430>, <_ast.Constant object at 0x130bcd460>, <_ast.Constant \
-object at 0x130bcd490>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"input_features(0)$0" -> "[<_ast.Constant object at 0x130bd2e80>, <_ast.Constant object at 0x130bd2eb0>, <_ast.Constant object at 0x130bd2ee0>, <_ast.Constant \
-object at 0x130bd2f10>, <_ast.Constant object at 0x130bd2f40>, <_ast.Constant object at 0x130bd2f70>, <_ast.Constant object at 0x130bd2fa0>, <_\
-ast.Constant object at 0x130bd2fd0>, <_ast.Constant object at 0x130bcd040>, <_ast.Constant object at 0x130bcd070>, <_ast.Constant \
-object at 0x130bcd0a0>, <_ast.Constant object at 0x130bcd0d0>, <_ast.Constant object at 0x130bcd100>, <_ast.Constant object at 0x130bcd130>, <_\
-ast.Constant object at 0x130bcd160>, <_ast.Constant object at 0x130bcd190>, <_ast.Constant object at 0x130bcd1c0>, <_ast.Constant \
-object at 0x130bcd1f0>, <_ast.Constant object at 0x130bcd220>, <_ast.Constant object at 0x130bcd250>, <_ast.Constant object at 0x130bcd280>, <_\
-ast.Constant object at 0x130bcd2b0>, <_ast.Constant object at 0x130bcd2e0>, <_ast.Constant object at 0x130bcd310>, <_ast.Constant \
-object at 0x130bcd340>, <_ast.Constant object at 0x130bcd370>, <_ast.Constant object at 0x130bcd3a0>, <_ast.Constant object at 0x130bcd3d0>, <_\
-ast.Constant object at 0x130bcd400>, <_ast.Constant object at 0x130bcd430>, <_ast.Constant object at 0x130bcd460>, <_ast.Constant \
-object at 0x130bcd490>](0)"	[label=assignedFrom];
+	"df_test_(0)$0" -> "mol_type(0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500868b80>, <_ast.Constant object at 0x7fd500868bb0>, <_ast.Constant object at 0x7fd500868be0>, <_\
+ast.Constant object at 0x7fd500868c10>, <_ast.Constant object at 0x7fd500868c40>, <_ast.Constant object at 0x7fd500868c70>, <_ast.Constant \
+object at 0x7fd500868ca0>, <_ast.Constant object at 0x7fd500868cd0>, <_ast.Constant object at 0x7fd500868d00>, <_ast.Constant object \
+at 0x7fd500868d30>, <_ast.Constant object at 0x7fd500868d60>, <_ast.Constant object at 0x7fd500868d90>, <_ast.Constant object at \
+0x7fd500868dc0>, <_ast.Constant object at 0x7fd500868df0>, <_ast.Constant object at 0x7fd500868e20>, <_ast.Constant object at 0x7fd500868e50>, <_\
+ast.Constant object at 0x7fd500868e80>, <_ast.Constant object at 0x7fd500868eb0>, <_ast.Constant object at 0x7fd500868ee0>, <_ast.Constant \
+object at 0x7fd500868f10>, <_ast.Constant object at 0x7fd500868f40>, <_ast.Constant object at 0x7fd500868f70>, <_ast.Constant object \
+at 0x7fd500868fa0>, <_ast.Constant object at 0x7fd500868fd0>, <_ast.Constant object at 0x7fd5008542e0>, <_ast.Constant object at \
+0x7fd500854040>, <_ast.Constant object at 0x7fd500854070>, <_ast.Constant object at 0x7fd5008540a0>, <_ast.Constant object at 0x7fd5008540d0>, <_\
+ast.Constant object at 0x7fd500854100>, <_ast.Constant object at 0x7fd500854130>, <_ast.Constant object at 0x7fd500854160>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"input_features(0)$0" -> "[<_ast.Constant object at 0x7fd500868b80>, <_ast.Constant object at 0x7fd500868bb0>, <_ast.Constant object at 0x7fd500868be0>, <_\
+ast.Constant object at 0x7fd500868c10>, <_ast.Constant object at 0x7fd500868c40>, <_ast.Constant object at 0x7fd500868c70>, <_ast.Constant \
+object at 0x7fd500868ca0>, <_ast.Constant object at 0x7fd500868cd0>, <_ast.Constant object at 0x7fd500868d00>, <_ast.Constant object \
+at 0x7fd500868d30>, <_ast.Constant object at 0x7fd500868d60>, <_ast.Constant object at 0x7fd500868d90>, <_ast.Constant object at \
+0x7fd500868dc0>, <_ast.Constant object at 0x7fd500868df0>, <_ast.Constant object at 0x7fd500868e20>, <_ast.Constant object at 0x7fd500868e50>, <_\
+ast.Constant object at 0x7fd500868e80>, <_ast.Constant object at 0x7fd500868eb0>, <_ast.Constant object at 0x7fd500868ee0>, <_ast.Constant \
+object at 0x7fd500868f10>, <_ast.Constant object at 0x7fd500868f40>, <_ast.Constant object at 0x7fd500868f70>, <_ast.Constant object \
+at 0x7fd500868fa0>, <_ast.Constant object at 0x7fd500868fd0>, <_ast.Constant object at 0x7fd5008542e0>, <_ast.Constant object at \
+0x7fd500854040>, <_ast.Constant object at 0x7fd500854070>, <_ast.Constant object at 0x7fd5008540a0>, <_ast.Constant object at 0x7fd5008540d0>, <_\
+ast.Constant object at 0x7fd500854100>, <_ast.Constant object at 0x7fd500854130>, <_ast.Constant object at 0x7fd500854160>](0)"	[label=assignedFrom];
 	"input_data(0)$0" -> "pd(0)"	[label=fit_transform];
 	"input_data(0)$0" -> "StandardScaler(0)"	[label=fit_transform];
-	"input_data(0)$0" -> "[<_ast.Subscript object at 0x130bcd6a0>, <_ast.Subscript object at 0x130bcd880>](0)"	[label=fit_transform];
-	"[<_ast.Subscript object at 0x130bcd6a0>, <_ast.Subscript object at 0x130bcd880>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"input_data(0)$0" -> "[<_ast.Subscript object at 0x7fd500854490>, <_ast.Subscript object at 0x7fd500854670>](0)"	[label=fit_transform];
+	"[<_ast.Subscript object at 0x7fd500854490>, <_ast.Subscript object at 0x7fd500854670>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"target_data(0)$0" -> "df_train_(0)$0"	[label=assignedFrom];
 	"target_data(0)$0" -> "scalar_coupling_constant(0)"	[label=assignedFrom];
 	"scalar_coupling_constant(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"target_data_1(0)$0" -> "df_train_(0)$0"	[label=assignedFrom];
-	"target_data_1(0)$0" -> "[<_ast.Constant object at 0x130bcdeb0>, <_ast.Constant object at 0x130bcdee0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bcdeb0>, <_ast.Constant object at 0x130bcdee0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"target_data_1(0)$0" -> "[<_ast.Constant object at 0x7fd500854c70>, <_ast.Constant object at 0x7fd500854c10>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854c70>, <_ast.Constant object at 0x7fd500854c10>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"target_data_2(0)$0" -> "df_train_(0)$0"	[label=assignedFrom];
-	"target_data_2(0)$0" -> "[<_ast.Constant object at 0x130bb61c0>, <_ast.Constant object at 0x130bb61f0>, <_ast.Constant object at 0x130bb6220>, <_ast.Constant \
-object at 0x130bb6250>, <_ast.Constant object at 0x130bb6280>, <_ast.Constant object at 0x130bb62b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bb61c0>, <_ast.Constant object at 0x130bb61f0>, <_ast.Constant object at 0x130bb6220>, <_ast.Constant \
-object at 0x130bb6250>, <_ast.Constant object at 0x130bb6280>, <_ast.Constant object at 0x130bb62b0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"target_data_2(0)$0" -> "[<_ast.Constant object at 0x7fd500854d60>, <_ast.Constant object at 0x7fd500854cd0>, <_ast.Constant object at 0x7fd500854f40>, <_\
+ast.Constant object at 0x7fd500854c40>, <_ast.Constant object at 0x7fd500854f70>, <_ast.Constant object at 0x7fd500854fa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500854d60>, <_ast.Constant object at 0x7fd500854cd0>, <_ast.Constant object at 0x7fd500854f40>, <_\
+ast.Constant object at 0x7fd500854c40>, <_ast.Constant object at 0x7fd500854f70>, <_ast.Constant object at 0x7fd500854fa0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"target_data_3(0)$0" -> "df_train_(0)$0"	[label=assignedFrom];
-	"target_data_3(0)$0" -> "[<_ast.Constant object at 0x130bb6520>, <_ast.Constant object at 0x130bb6550>, <_ast.Constant object at 0x130bb6580>, <_ast.Constant \
-object at 0x130bb65b0>, <_ast.Constant object at 0x130bb65e0>, <_ast.Constant object at 0x130bb6610>, <_ast.Constant object at 0x130bb6640>, <_\
-ast.Constant object at 0x130bb6670>, <_ast.Constant object at 0x130bb66a0>, <_ast.Constant object at 0x130bb66d0>, <_ast.Constant \
-object at 0x130bb6700>, <_ast.Constant object at 0x130bb6730>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bb6520>, <_ast.Constant object at 0x130bb6550>, <_ast.Constant object at 0x130bb6580>, <_ast.Constant \
-object at 0x130bb65b0>, <_ast.Constant object at 0x130bb65e0>, <_ast.Constant object at 0x130bb6610>, <_ast.Constant object at 0x130bb6640>, <_\
-ast.Constant object at 0x130bb6670>, <_ast.Constant object at 0x130bb66a0>, <_ast.Constant object at 0x130bb66d0>, <_ast.Constant \
-object at 0x130bb6700>, <_ast.Constant object at 0x130bb6730>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"target_data_3(0)$0" -> "[<_ast.Constant object at 0x7fd500850250>, <_ast.Constant object at 0x7fd500850280>, <_ast.Constant object at 0x7fd5008502b0>, <_\
+ast.Constant object at 0x7fd5008502e0>, <_ast.Constant object at 0x7fd500850310>, <_ast.Constant object at 0x7fd500850340>, <_ast.Constant \
+object at 0x7fd500850370>, <_ast.Constant object at 0x7fd5008503a0>, <_ast.Constant object at 0x7fd5008503d0>, <_ast.Constant object \
+at 0x7fd500850400>, <_ast.Constant object at 0x7fd500850430>, <_ast.Constant object at 0x7fd500850460>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500850250>, <_ast.Constant object at 0x7fd500850280>, <_ast.Constant object at 0x7fd5008502b0>, <_\
+ast.Constant object at 0x7fd5008502e0>, <_ast.Constant object at 0x7fd500850310>, <_ast.Constant object at 0x7fd500850340>, <_ast.Constant \
+object at 0x7fd500850370>, <_ast.Constant object at 0x7fd5008503a0>, <_ast.Constant object at 0x7fd5008503d0>, <_ast.Constant object \
+at 0x7fd500850400>, <_ast.Constant object at 0x7fd500850430>, <_ast.Constant object at 0x7fd500850460>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"m1(0)$0" -> "1(0)"	[label=assignedFrom];
 	"4(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"m2(0)$0" -> "4(0)"	[label=assignedFrom];
@@ -1031,17 +993,33 @@ object at 0x130bb6700>, <_ast.Constant object at 0x130bb6730>](0)" -> "keras-neu
 	"sv_mod(0)$0" -> "True(0)"	[label=ModelCheckpoint];
 	"sv_mod(0)$0" -> "model_name_wrt(0)$0"	[label=ModelCheckpoint];
 	"sv_mod(0)$0" -> "val_loss(0)"	[label=ModelCheckpoint];
-	"[<_ast.Name object at 0x12f8d24f0>, <_ast.Name object at 0x12f8d2520>, <_ast.Name object at 0x12f8d2550>, <_ast.Name object at 0x12f8d2580>](\
-0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d26d0>, <_ast.Name object at 0x12f8d2700>, <_ast.Name object at 0x12f8d2730>, <_ast.Name object at 0x12f8d2760>](\
-0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d2820>, <_ast.Name object at 0x12f8d2850>, <_ast.Name object at 0x12f8d2880>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"history(0)$0" -> "epoch_n(0)$0"	[label=fit];
+	"history(0)$0" -> "verbose(0)$0"	[label=fit];
+	"history(0)$0" -> "batch_size(0)$0"	[label=fit];
+	"history(0)$0" -> "train_input(0)$0"	[label=fit];
+	"history(0)$0" -> "cv_input(0)$0"	[label=fit];
+	"history(0)$0" -> "nn_model(0)$2"	[label=fit];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd50085a1c0>, <_ast.Name object at 0x7fd50085a220>, <_ast.Name object at 0x7fd50085a280>, <_ast.Name object \
+at 0x7fd50085a2b0>](0)"	[label=fit];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd50085a430>, <_ast.Name object at 0x7fd50085a5e0>, <_ast.Name object at 0x7fd50085a460>, <_ast.Name object \
+at 0x7fd50085a4f0>](0)"	[label=fit];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd50085a580>, <_ast.Name object at 0x7fd50085a490>, <_ast.Name object at 0x7fd50085a4c0>](0)"	[label=fit];
+	"[<_ast.Name object at 0x7fd50085a1c0>, <_ast.Name object at 0x7fd50085a220>, <_ast.Name object at 0x7fd50085a280>, <_ast.Name object \
+at 0x7fd50085a2b0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50085a430>, <_ast.Name object at 0x7fd50085a5e0>, <_ast.Name object at 0x7fd50085a460>, <_ast.Name object \
+at 0x7fd50085a4f0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50085a580>, <_ast.Name object at 0x7fd50085a490>, <_ast.Name object at 0x7fd50085a4c0>](0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"cv_predict(0)$0" -> "cv_input(0)$0"	[label=predict];
 	"cv_predict(0)$0" -> "nn_model(0)$2"	[label=predict];
+	"plot_history[384/4]" -> "mol_type(0)"	[label=plot_history];
+	"plot_history[384/4]" -> "history(0)$0"	[label=plot_history];
 	"accuracy(0)$0" -> "np(0)"	[label=mean];
 	"accuracy(0)$0" -> "0(0)"	[label=mean];
 	"accuracy(0)$0" -> "cv_target(0)$0"	[label=mean];
 	"accuracy(0)$0" -> "cv_predict(0)$0"	[label=mean];
+	"cv_score(0)$1" -> "np(0)"	[label=append];
+	"cv_score(0)$1" -> "cv_score(0)$0"	[label=append];
+	"cv_score(0)$1" -> "accuracy(0)$0"	[label=append];
 	"cv_score_total(0)$1" -> "np(0)"	[label=Add];
 	"cv_score_total(0)$1" -> "cv_score_total(0)$0"	[label=Add];
 	"cv_score_total(0)$1" -> "accuracy(0)$0"	[label=Add];
@@ -1051,11 +1029,36 @@ object at 0x130bb6700>, <_ast.Constant object at 0x130bb6730>](0)" -> "keras-neu
 	"test_prediction(0)$1" -> "0(0)"	[label=assignedFrom];
 	"test_prediction(0)$1" -> "test_predict(0)$0"	[label=assignedFrom];
 	"K(0)$1" -> "K(0)$0"	[label=clear_session];
-	"submit[0]" -> "test_prediction(0)$1"	[label=submit];
-	"submit(9)$1" -> "submit(9)$0"	[label=assignedFrom];
+	"cv_score_total(0)$2" -> "len(0)"	[label=Div];
+	"cv_score_total(0)$2" -> "mol_types(0)$0"	[label=Div];
+	"cv_score_total(0)$2" -> "cv_score_total(0)$1"	[label=Div];
+	"predictions(9)" -> "submit[0]"	[label=_argToVar];
+	"submit(9)$0" -> "pd(9)"	[label=read_csv];
+	"submit(9)$0" -> "sample_submission.csv(9)"	[label=read_csv];
+	"print[402/4]" -> "predictions(9)"	[label=print];
+	"print[402/4]" -> "submit(9)$0"	[label=print];
+	"print[402/4]" -> "len(9)"	[label=print];
 	"submit(9)$1" -> "predictions(9)"	[label=assignedFrom];
+	"submit(9)$1" -> "submit(9)$0"	[label=assignedFrom];
 	"submit(9)$2" -> "submit(9)$1"	[label=to_csv];
 	"submit(9)$2" -> "/kaggle/working/workingsubmission-test.csv(9)"	[label=to_csv];
-	"i(0)$1" -> "i(0)$0"	[label=Add];
+	"submit[405/0]" -> "test_prediction(0)$1"	[label=submit];
+	"Total training time: (0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"print[407/0]" -> "datetime(0)"	[label=print];
+	"print[407/0]" -> "start_time(0)$0"	[label=print];
+	"print[407/0]" -> "Total training time: (0)"	[label=print];
+	"i(0)$0" -> "0(0)"	[label=assignedFrom];
+	"print[411/4]" -> "mol_type(0)"	[label=print];
+	"print[411/4]" -> "cv_score(0)$1"	[label=print];
+	"print[411/4]" -> "i(0)$0"	[label=print];
+	"print[411/4]" -> ": cv score is (0)"	[label=print];
+	": cv score is (0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
 	"i(0)$1" -> "1(0)"	[label=Add];
+	"i(0)$1" -> "i(0)$0"	[label=Add];
+	"total cv score is(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"print[413/0]" -> "cv_score_total(0)$2"	[label=print];
+	"print[413/0]" -> "total cv score is(0)"	[label=print];
+	"keras(0)" -> "keras-neural-net-for-champs.ipynb"	[label=appearsIn];
+	"keras(0)" -> keras	[label=assignedFrom];
+	"print[415/0]" -> "keras(0)"	[label=print];
 }

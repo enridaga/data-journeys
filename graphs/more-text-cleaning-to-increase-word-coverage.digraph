@@ -50,79 +50,8 @@ digraph "" {
 	"num_partitions(0)$0" -> "20(0)"	[label=assignedFrom];
 	"num_cores(0)$0" -> "psutil(0)"	[label=cpu_count];
 	"number of cores:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"print[0]" -> "number of cores:(0)"	[label=print];
-	"print[0]" -> "Train:(0)"	[label=print];
-	"print[0]" -> "Test:(0)"	[label=print];
-	"print[0]" -> "Extracting GloVe embedding(0)"	[label=print];
-	"print[0]" -> "Extracting Paragram embedding(0)"	[label=print];
-	"print[0]" -> "Extracting FastText embedding(0)"	[label=print];
-	"print[0]" -> "Extracting GoogleNews embedding(0)"	[label=print];
-	"print[0]" -> "Found embeddings for {:.2\%} of vocab(5)"	[label=print];
-	"print[0]" -> "Found embeddings for  {:.2\%} of all text(5)"	[label=print];
-	"print[0]" -> "Glove : (6)"	[label=print];
-	"print[0]" -> "Paragram : (6)"	[label=print];
-	"print[0]" -> "FastText : (6)"	[label=print];
-	"print[0]" -> "Google : (6)"	[label=print];
-	"print[0]" -> "glove oov rate:(0)"	[label=print];
-	"print[0]" -> "paragram oov rate:(0)"	[label=print];
-	"print[0]" -> "fasttext oov rate:(0)"	[label=print];
-	"print[0]" -> "google oov rate:(0)"	[label=print];
-	"print[0]" -> "!!Error: Could Not Find Key: {}(14)"	[label=print];
-	"print[0]" -> "found (0)"	[label=print];
-	"Train:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"Test:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"Extracting GloVe embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"Extracting Paragram embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"Extracting FastText embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"Extracting GoogleNews embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"glove oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"paragram oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"fasttext oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"google oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"found (0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"print[1]" -> "num_cores(0)$0"	[label=print];
-	"print[1]" -> "train_df(0)$0"	[label=print];
-	"print[1]" -> "test_df(0)$0"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "nb_known_words(5)$4"	[label=print];
-	"print[1]" -> "len(5)"	[label=print];
-	"print[1]" -> "oov_glove(0)$0"	[label=print];
-	"print[1]" -> "oov_paragram(0)$0"	[label=print];
-	"print[1]" -> "oov_fasttext(0)$0"	[label=print];
-	"print[1]" -> "oov_google(0)$0"	[label=print];
-	"print[1]" -> "word(14)$1"	[label=print];
-	"print[1]" -> "oov_glove(0)$2"	[label=print];
-	"print[1]" -> "oov_paragram(0)$2"	[label=print];
-	"print[1]" -> "oov_fasttext(0)$2"	[label=print];
-	"print[1]" -> "oov_google(0)$2"	[label=print];
-	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
-	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
-	"train_df(0)$0" -> "utf8(0)"	[label=read_csv];
-	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
-	"test_df(0)$0" -> "utf8(0)"	[label=read_csv];
-	"test_df(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"len(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"nb_known_words(5)$4" -> "vocab(5)"	[label=Add];
-	"nb_known_words(5)$4" -> "word(5)"	[label=Add];
-	"nb_known_words(5)$4" -> "nb_known_words(5)$3"	[label=Add];
-	"oov_glove(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
-	"oov_glove(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
-	"oov_paragram(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
-	"oov_paragram(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
-	"oov_google(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
-	"oov_google(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
-	"word(14)$1" -> "match(14)"	[label=group];
-	"word(14)$1" -> "0(14)"	[label=group];
-	"oov_glove(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
-	"oov_glove(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
-	"oov_paragram(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
-	"oov_paragram(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
-	"oov_fasttext(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
-	"oov_google(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
-	"oov_google(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
+	"print[23/0]" -> "num_cores(0)$0"	[label=print];
+	"print[23/0]" -> "number of cores:(0)"	[label=print];
 	"df(1)" -> "df_parallelize_run[0]"	[label=_argToVar];
 	"func(1)" -> "df_parallelize_run[1]"	[label=_argToVar];
 	"df_split(1)$0" -> "df(1)"	[label=array_split];
@@ -135,23 +64,36 @@ digraph "" {
 	"df(1)$0" -> "pd(1)"	[label=concat];
 	"pool(1)$1" -> "pool(1)$0"	[label=close];
 	"pool(1)$2" -> "pool(1)$1"	[label=join];
+	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"train_df(0)$0" -> "utf8(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"test_df(0)$0" -> "utf8(0)"	[label=read_csv];
+	"test_df(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"all_test_texts(0)$0" -> "test_df(0)$0"	[label=join];
 	"all_test_texts(0)$0" -> "(0)"	[label=join];
+	"Train:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[37/0]" -> "train_df(0)$0"	[label=print];
+	"print[37/0]" -> "Train:(0)"	[label=print];
+	"Test:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[38/0]" -> "test_df(0)$0"	[label=print];
+	"print[38/0]" -> "Test:(0)"	[label=print];
 	"train_ques_lens(0)$0" -> "train_df(0)$0"	[label=map];
-	"train_ques_lens(0)$0" -> "len(0)"	[label=map];
 	"train_ques_lens(0)$0" -> "question_text(0)"	[label=map];
+	"train_ques_lens(0)$0" -> "len(0)"	[label=map];
 	"train_ques_lens(0)$0" -> "x(0)"	[label=map];
 	"train_ques_lens(0)$0" -> " (0)"	[label=map];
 	"question_text(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"len(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"x(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	" (0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"test_ques_lens(0)$0" -> "test_df(0)$0"	[label=map];
-	"test_ques_lens(0)$0" -> "len(0)"	[label=map];
 	"test_ques_lens(0)$0" -> "question_text(0)"	[label=map];
+	"test_ques_lens(0)$0" -> "len(0)"	[label=map];
 	"test_ques_lens(0)$0" -> "x(0)"	[label=map];
 	"test_ques_lens(0)$0" -> " (0)"	[label=map];
 	"train_len_sts(0)$0" -> "train_ques_lens(0)$0"	[label=rename];
@@ -171,11 +113,11 @@ digraph "" {
 	"test_len_sts(0)$1" -> "int(0)"	[label=astype];
 	"test_len_sts(0)$1" -> "test_len_sts(0)$0"	[label=astype];
 	"len_sts(0)$0" -> "pd(0)"	[label=concat];
-	"len_sts(0)$0" -> "[<_ast.Name object at 0x12fc4fb50>, <_ast.Name object at 0x12fc4f070>](0)"	[label=concat];
+	"len_sts(0)$0" -> "[<_ast.Name object at 0x7fd4902ab9a0>, <_ast.Name object at 0x7fd4902abc10>](0)"	[label=concat];
 	"len_sts(0)$0" -> "1(0)"	[label=concat];
-	"[<_ast.Name object at 0x12fc4fb50>, <_ast.Name object at 0x12fc4f070>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902ab9a0>, <_ast.Name object at 0x7fd4902abc10>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"1(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"display[0]" -> "len_sts(0)$0"	[label=display];
+	"display[47/0]" -> "len_sts(0)$0"	[label=display];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
 	"file(2)" -> "load_embed[0]"	[label=_argToVar];
 	"word(3)" -> "get_coefs[0]"	[label=_argToVar];
@@ -203,9 +145,17 @@ digraph "" {
 	"wiki_news(0)$0" -> "../input/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec(0)"	[label=assignedFrom];
 	"../input/embeddings/GoogleNews-vectors-negative300/GoogleNews-vectors-negative300.bin(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"google_path(0)$0" -> "../input/embeddings/GoogleNews-vectors-negative300/GoogleNews-vectors-negative300.bin(0)"	[label=assignedFrom];
+	"Extracting GloVe embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[70/0]" -> "Extracting GloVe embedding(0)"	[label=print];
 	"embed_glove(0)$0" -> "glove(0)$0"	[label=load_embed];
+	"Extracting Paragram embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[72/0]" -> "Extracting Paragram embedding(0)"	[label=print];
 	"embed_paragram(0)$0" -> "paragram(0)$0"	[label=load_embed];
+	"Extracting FastText embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[74/0]" -> "Extracting FastText embedding(0)"	[label=print];
 	"embed_fasttext(0)$0" -> "wiki_news(0)$0"	[label=load_embed];
+	"Extracting GoogleNews embedding(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[76/0]" -> "Extracting GoogleNews embedding(0)"	[label=print];
 	"embed_google(0)$0" -> "google_path(0)$0"	[label=load_embed];
 	"texts(4)" -> "build_vocab[0]"	[label=_argToVar];
 	"sentences(4)$0" -> "texts(4)"	[label=assignedFrom];
@@ -242,25 +192,22 @@ digraph "" {
 	"known_words(5)$3" -> "embeddings_index(5)"	[label=assignedFrom];
 	"known_words(5)$3" -> "word(5)"	[label=assignedFrom];
 	"known_words(5)$3" -> "known_words(5)$2"	[label=assignedFrom];
+	"nb_known_words(5)$4" -> "vocab(5)"	[label=Add];
+	"nb_known_words(5)$4" -> "word(5)"	[label=Add];
+	"nb_known_words(5)$4" -> "nb_known_words(5)$3"	[label=Add];
 	"unknown_words(5)$0" -> "vocab(5)"	[label=assignedFrom];
 	"unknown_words(5)$0" -> "word(5)"	[label=assignedFrom];
 	"unknown_words(5)$0" -> "unknown_words(5)"	[label=assignedFrom];
 	"nb_unknown_words(5)$1" -> "vocab(5)"	[label=Add];
 	"nb_unknown_words(5)$1" -> "nb_unknown_words(5)$0"	[label=Add];
 	"nb_unknown_words(5)$1" -> "word(5)"	[label=Add];
-	"print[2]" -> "nb_known_words(5)$4"	[label=print];
-	"print[2]" -> "known_words(5)$3"	[label=print];
-	"print[2]" -> "oov_rate(0)"	[label=print];
-	"print[2]" -> "bug_punc_spacing_words_mapping(0)$1"	[label=print];
-	"oov_rate(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"bug_punc_spacing_words_mapping(0)$1" -> " (0)"	[label=assignedFrom];
-	"bug_punc_spacing_words_mapping(0)$1" -> "vocab(0)"	[label=assignedFrom];
-	"bug_punc_spacing_words_mapping(0)$1" -> "bug_punc_spacing_words_mapping(0)$0"	[label=assignedFrom];
-	"print[3]" -> "len(5)"	[label=print];
-	"print[3]" -> "nb_unknown_words(5)$1"	[label=print];
-	"print[3]" -> " bug words(0)"	[label=print];
-	" bug words(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"print[4]" -> "vocab(5)"	[label=print];
+	"print[111/4]" -> "vocab(5)"	[label=print];
+	"print[111/4]" -> "known_words(5)$3"	[label=print];
+	"print[111/4]" -> "Found embeddings for {:.2\%} of vocab(5)"	[label=print];
+	"print[111/4]" -> "len(5)"	[label=print];
+	"print[112/4]" -> "nb_known_words(5)$4"	[label=print];
+	"print[112/4]" -> "nb_unknown_words(5)$1"	[label=print];
+	"print[112/4]" -> "Found embeddings for  {:.2\%} of all text(5)"	[label=print];
 	"unknown_words(5)$1" -> "unknown_words(5)$1"	[label=assignedFrom];
 	"unknown_words(5)$1" -> "sorted(5)"	[label=assignedFrom];
 	"unknown_words(5)$1" -> "operator(5)"	[label=assignedFrom];
@@ -268,10 +215,11 @@ digraph "" {
 	"train_df(6)" -> "vocab_check_coverage[0]"	[label=_argToVar];
 	"test_df(6)" -> "vocab_check_coverage[1]"	[label=_argToVar];
 	"df(6)$0" -> "pd(6)"	[label=reset_index];
-	"df(6)$0" -> "[<_ast.Call object at 0x12f9177c0>, <_ast.Name object at 0x12f917640>](6)"	[label=reset_index];
+	"df(6)$0" -> "[<_ast.Call object at 0x7fd5008279d0>, <_ast.Name object at 0x7fd500827580>](6)"	[label=reset_index];
 	"df(6)$0" -> "True(6)"	[label=reset_index];
 	"vocab(6)$0" -> "df(6)$0"	[label=build_vocab];
 	"vocab(6)$0" -> "question_text(6)"	[label=build_vocab];
+	"print[121/4]" -> "Glove : (6)"	[label=print];
 	"oov_glove(6)$0" -> "vocab(6)$0"	[label=check_coverage];
 	"oov_glove(6)$0" -> "embed_glove(6)"	[label=check_coverage];
 	"oov_glove(6)$1" -> "vocab(6)$0"	[label=assignedFrom];
@@ -279,6 +227,7 @@ digraph "" {
 	"oov_glove(6)$1" -> "oov_rate(6)"	[label=assignedFrom];
 	"oov_glove(6)$1" -> "oov_words(6)"	[label=assignedFrom];
 	"oov_glove(6)$1" -> "len(6)"	[label=assignedFrom];
+	"print[124/4]" -> "Paragram : (6)"	[label=print];
 	"oov_paragram(6)$0" -> "vocab(6)$0"	[label=check_coverage];
 	"oov_paragram(6)$0" -> "embed_paragram(6)"	[label=check_coverage];
 	"oov_paragram(6)$1" -> "vocab(6)$0"	[label=assignedFrom];
@@ -286,6 +235,7 @@ digraph "" {
 	"oov_paragram(6)$1" -> "oov_words(6)"	[label=assignedFrom];
 	"oov_paragram(6)$1" -> "len(6)"	[label=assignedFrom];
 	"oov_paragram(6)$1" -> "oov_paragram(6)$1"	[label=assignedFrom];
+	"print[127/4]" -> "FastText : (6)"	[label=print];
 	"oov_fasttext(6)$0" -> "vocab(6)$0"	[label=check_coverage];
 	"oov_fasttext(6)$0" -> "embed_fasttext(6)"	[label=check_coverage];
 	"oov_fasttext(6)$1" -> "vocab(6)$0"	[label=assignedFrom];
@@ -293,6 +243,7 @@ digraph "" {
 	"oov_fasttext(6)$1" -> "oov_words(6)"	[label=assignedFrom];
 	"oov_fasttext(6)$1" -> "len(6)"	[label=assignedFrom];
 	"oov_fasttext(6)$1" -> "oov_fasttext(6)$1"	[label=assignedFrom];
+	"print[130/4]" -> "Google : (6)"	[label=print];
 	"oov_google(6)$0" -> "vocab(6)$0"	[label=check_coverage];
 	"oov_google(6)$0" -> "embed_google(6)"	[label=check_coverage];
 	"oov_google(6)$1" -> "vocab(6)$0"	[label=assignedFrom];
@@ -300,14 +251,39 @@ digraph "" {
 	"oov_google(6)$1" -> "oov_words(6)"	[label=assignedFrom];
 	"oov_google(6)$1" -> "len(6)"	[label=assignedFrom];
 	"oov_google(6)$1" -> "oov_google(6)$1"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f890d60>, <_ast.Constant object at 0x12f890d90>, <_ast.Constant object at 0x12f890dc0>, <_ast.Constant \
-object at 0x12f890df0>, <_ast.Constant object at 0x12f890e20>, <_ast.Constant object at 0x12f890e50>, <_ast.Constant object at 0x12f890e80>, <_\
-ast.Constant object at 0x12f890eb0>, <_ast.Constant object at 0x12f890ee0>, <_ast.Constant object at 0x12f890f10>, <_ast.Constant \
-object at 0x12f890f40>, <_ast.Constant object at 0x12f890f70>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"spaces(0)$0" -> "[<_ast.Constant object at 0x12f890d60>, <_ast.Constant object at 0x12f890d90>, <_ast.Constant object at 0x12f890dc0>, <_ast.Constant \
-object at 0x12f890df0>, <_ast.Constant object at 0x12f890e20>, <_ast.Constant object at 0x12f890e50>, <_ast.Constant object at 0x12f890e80>, <_\
-ast.Constant object at 0x12f890eb0>, <_ast.Constant object at 0x12f890ee0>, <_ast.Constant object at 0x12f890f10>, <_ast.Constant \
-object at 0x12f890f40>, <_ast.Constant object at 0x12f890f70>](0)"	[label=assignedFrom];
+	"oov_glove(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
+	"oov_glove(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
+	"oov_paragram(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
+	"oov_paragram(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
+	"oov_google(0)$0" -> "train_df(0)$0"	[label=vocab_check_coverage];
+	"oov_google(0)$0" -> "test_df(0)$0"	[label=vocab_check_coverage];
+	"glove oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[138/0]" -> "oov_glove(0)$0"	[label=print];
+	"print[138/0]" -> "glove oov rate:(0)"	[label=print];
+	"print[138/0]" -> "oov_rate(0)"	[label=print];
+	"oov_rate(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"paragram oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[139/0]" -> "oov_paragram(0)$0"	[label=print];
+	"print[139/0]" -> "oov_rate(0)"	[label=print];
+	"print[139/0]" -> "paragram oov rate:(0)"	[label=print];
+	"fasttext oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[140/0]" -> "oov_fasttext(0)$0"	[label=print];
+	"print[140/0]" -> "oov_rate(0)"	[label=print];
+	"print[140/0]" -> "fasttext oov rate:(0)"	[label=print];
+	"google oov rate:(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[141/0]" -> "oov_google(0)$0"	[label=print];
+	"print[141/0]" -> "oov_rate(0)"	[label=print];
+	"print[141/0]" -> "google oov rate:(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500821a90>, <_ast.Constant object at 0x7fd500821ac0>, <_ast.Constant object at 0x7fd500821af0>, <_\
+ast.Constant object at 0x7fd500821b20>, <_ast.Constant object at 0x7fd500821b50>, <_ast.Constant object at 0x7fd500821b80>, <_ast.Constant \
+object at 0x7fd500821bb0>, <_ast.Constant object at 0x7fd500821be0>, <_ast.Constant object at 0x7fd500821c10>, <_ast.Constant object \
+at 0x7fd500821c40>, <_ast.Constant object at 0x7fd500821c70>, <_ast.Constant object at 0x7fd500821ca0>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"spaces(0)$0" -> "[<_ast.Constant object at 0x7fd500821a90>, <_ast.Constant object at 0x7fd500821ac0>, <_ast.Constant object at 0x7fd500821af0>, <_\
+ast.Constant object at 0x7fd500821b20>, <_ast.Constant object at 0x7fd500821b50>, <_ast.Constant object at 0x7fd500821b80>, <_ast.Constant \
+object at 0x7fd500821bb0>, <_ast.Constant object at 0x7fd500821be0>, <_ast.Constant object at 0x7fd500821c10>, <_ast.Constant object \
+at 0x7fd500821c40>, <_ast.Constant object at 0x7fd500821c70>, <_ast.Constant object at 0x7fd500821ca0>](0)"	[label=assignedFrom];
 	"text(7)" -> "remove_space[0]"	[label=_argToVar];
 	"space(7)" -> "spaces(7)"	[label=iteratorOf];
 	"text(7)$0" -> "text(7)"	[label=replace];
@@ -829,6 +805,10 @@ object at 0x12f890f40>, <_ast.Constant object at 0x12f890f70>](0)"	[label=assign
 	"word(14)$0" -> "pattern_dict(14)"	[label=get];
 	"word(14)$0" -> "0(14)"	[label=get];
 	"word(14)$0" -> "\(14)"	[label=get];
+	"word(14)$1" -> "match(14)"	[label=group];
+	"word(14)$1" -> "0(14)"	[label=group];
+	"print[291/12]" -> "word(14)$1"	[label=print];
+	"print[291/12]" -> "!!Error: Could Not Find Key: {}(14)"	[label=print];
 	"misspell_mapping(0)$0" -> "(0)"	[label=assignedFrom];
 	"misspell_mapping(0)$0" -> "Remainers(0)"	[label=assignedFrom];
 	"misspell_mapping(0)$0" -> "Terroristan(0)"	[label=assignedFrom];
@@ -1648,86 +1628,92 @@ object at 0x12f890f40>, <_ast.Constant object at 0x12f890f70>](0)"	[label=assign
 	"text(15)$0" -> "bad_word(15)"	[label=replace];
 	"text(15)$0" -> "misspell_mapping(15)"	[label=replace];
 	"regular_punct(0)$0" -> "string(0)"	[label=list];
-	"[<_ast.Constant object at 0x12fafba60>, <_ast.Constant object at 0x12fafba90>, <_ast.Constant object at 0x12fafbac0>, <_ast.Constant \
-object at 0x12fafbaf0>, <_ast.Constant object at 0x12fafbb20>, <_ast.Constant object at 0x12fafbb50>, <_ast.Constant object at 0x12fafbb80>, <_\
-ast.Constant object at 0x12fafbbb0>, <_ast.Constant object at 0x12fafb7f0>, <_ast.Constant object at 0x12fafbbe0>, <_ast.Constant \
-object at 0x12fafbc40>, <_ast.Constant object at 0x12fafbc10>, <_ast.Constant object at 0x12fafbc70>, <_ast.Constant object at 0x12fafbca0>, <_\
-ast.Constant object at 0x12fafbcd0>, <_ast.Constant object at 0x12fafbd00>, <_ast.Constant object at 0x12fafbd30>, <_ast.Constant \
-object at 0x12fafbd60>, <_ast.Constant object at 0x12fafbd90>, <_ast.Constant object at 0x12fafbdc0>, <_ast.Constant object at 0x12fafbdf0>, <_\
-ast.Constant object at 0x12fafbe20>, <_ast.Constant object at 0x12fafbe50>, <_ast.Constant object at 0x12fafbe80>, <_ast.Constant \
-object at 0x12fafbeb0>, <_ast.Constant object at 0x12fafbee0>, <_ast.Constant object at 0x12fafbf10>, <_ast.Constant object at 0x12fafbf40>, <_\
-ast.Constant object at 0x12fafbf70>, <_ast.Constant object at 0x12fafbfa0>, <_ast.Constant object at 0x12fafbfd0>, <_ast.Constant \
-object at 0x12faef040>, <_ast.Constant object at 0x12faef0a0>, <_ast.Constant object at 0x12faef130>, <_ast.Constant object at 0x12faef160>, <_\
-ast.Constant object at 0x12faef190>, <_ast.Constant object at 0x12faef1c0>, <_ast.Constant object at 0x12faef1f0>, <_ast.Constant \
-object at 0x12faef220>, <_ast.Constant object at 0x12faef250>, <_ast.Constant object at 0x12faef280>, <_ast.Constant object at 0x12faef2b0>, <_\
-ast.Constant object at 0x12faef2e0>, <_ast.Constant object at 0x12faef310>, <_ast.Constant object at 0x12faef340>, <_ast.Constant \
-object at 0x12faef370>, <_ast.Constant object at 0x12faef3a0>, <_ast.Constant object at 0x12faef3d0>, <_ast.Constant object at 0x12faef100>, <_\
-ast.Constant object at 0x12faef400>, <_ast.Constant object at 0x12faef460>, <_ast.Constant object at 0x12faef4c0>, <_ast.Constant \
-object at 0x12faef4f0>, <_ast.Constant object at 0x12faef520>, <_ast.Constant object at 0x12faef550>, <_ast.Constant object at 0x12faef580>, <_\
-ast.Constant object at 0x12faef5b0>, <_ast.Constant object at 0x12faef5e0>, <_ast.Constant object at 0x12faef610>, <_ast.Constant \
-object at 0x12faef640>, <_ast.Constant object at 0x12faef670>, <_ast.Constant object at 0x12faef0d0>, <_ast.Constant object at 0x12faef6a0>, <_\
-ast.Constant object at 0x12faef6d0>, <_ast.Constant object at 0x12faef700>, <_ast.Constant object at 0x12faef730>, <_ast.Constant \
-object at 0x12faef760>, <_ast.Constant object at 0x12faef490>, <_ast.Constant object at 0x12faef790>, <_ast.Constant object at 0x12faef7c0>, <_\
-ast.Constant object at 0x12faef7f0>, <_ast.Constant object at 0x12faef820>, <_ast.Constant object at 0x12faef850>, <_ast.Constant \
-object at 0x12faef880>, <_ast.Constant object at 0x12faef8b0>, <_ast.Constant object at 0x12faef8e0>, <_ast.Constant object at 0x12faef940>, <_\
-ast.Constant object at 0x12faef910>, <_ast.Constant object at 0x12faef970>, <_ast.Constant object at 0x12faef9a0>, <_ast.Constant \
-object at 0x12faef9d0>, <_ast.Constant object at 0x12faefa00>, <_ast.Constant object at 0x12faefa60>, <_ast.Constant object at 0x12faefa90>, <_\
-ast.Constant object at 0x12faefac0>, <_ast.Constant object at 0x12faefaf0>, <_ast.Constant object at 0x12faefb20>, <_ast.Constant \
-object at 0x12faefb50>, <_ast.Constant object at 0x12faefb80>, <_ast.Constant object at 0x12faefbb0>, <_ast.Constant object at 0x12faefbe0>, <_\
-ast.Constant object at 0x12faefc10>, <_ast.Constant object at 0x12faefc40>, <_ast.Constant object at 0x12faef070>, <_ast.Constant \
-object at 0x12faefca0>, <_ast.Constant object at 0x12faefd00>, <_ast.Constant object at 0x12faefd30>, <_ast.Constant object at 0x12faefa30>, <_\
-ast.Constant object at 0x12faefd60>, <_ast.Constant object at 0x12faefd90>, <_ast.Constant object at 0x12faefdc0>, <_ast.Constant \
-object at 0x12faefdf0>, <_ast.Constant object at 0x12faefe20>, <_ast.Constant object at 0x12faefe50>, <_ast.Constant object at 0x12faefe80>, <_\
-ast.Constant object at 0x12faefeb0>, <_ast.Constant object at 0x12faefee0>, <_ast.Constant object at 0x12faeff40>, <_ast.Constant \
-object at 0x12faeff70>, <_ast.Constant object at 0x12faeffd0>, <_ast.Constant object at 0x12faeffa0>, <_ast.Constant object at 0x12faefcd0>, <_\
-ast.Constant object at 0x12faefc70>, <_ast.Constant object at 0x12faeff10>, <_ast.Constant object at 0x12faef430>, <_ast.Constant \
-object at 0x12f933040>, <_ast.Constant object at 0x12f933070>, <_ast.Constant object at 0x12f9330a0>, <_ast.Constant object at 0x12f9330d0>, <_\
-ast.Constant object at 0x12f933100>, <_ast.Constant object at 0x12f933130>, <_ast.Constant object at 0x12f933160>, <_ast.Constant \
-object at 0x12f933190>, <_ast.Constant object at 0x12f9331c0>, <_ast.Constant object at 0x12f9331f0>, <_ast.Constant object at 0x12f933220>, <_\
-ast.Constant object at 0x12f933250>, <_ast.Constant object at 0x12f933280>, <_ast.Constant object at 0x12f9332b0>, <_ast.Constant \
-object at 0x12f9332e0>, <_ast.Constant object at 0x12f933310>, <_ast.Constant object at 0x12f933340>, <_ast.Constant object at 0x12f933370>, <_\
-ast.Constant object at 0x12f9333a0>, <_ast.Constant object at 0x12f9333d0>, <_ast.Constant object at 0x12f933400>, <_ast.Constant \
-object at 0x12f933430>, <_ast.Constant object at 0x12f933460>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"extra_punct(0)$0" -> "[<_ast.Constant object at 0x12fafba60>, <_ast.Constant object at 0x12fafba90>, <_ast.Constant object at 0x12fafbac0>, <_ast.Constant \
-object at 0x12fafbaf0>, <_ast.Constant object at 0x12fafbb20>, <_ast.Constant object at 0x12fafbb50>, <_ast.Constant object at 0x12fafbb80>, <_\
-ast.Constant object at 0x12fafbbb0>, <_ast.Constant object at 0x12fafb7f0>, <_ast.Constant object at 0x12fafbbe0>, <_ast.Constant \
-object at 0x12fafbc40>, <_ast.Constant object at 0x12fafbc10>, <_ast.Constant object at 0x12fafbc70>, <_ast.Constant object at 0x12fafbca0>, <_\
-ast.Constant object at 0x12fafbcd0>, <_ast.Constant object at 0x12fafbd00>, <_ast.Constant object at 0x12fafbd30>, <_ast.Constant \
-object at 0x12fafbd60>, <_ast.Constant object at 0x12fafbd90>, <_ast.Constant object at 0x12fafbdc0>, <_ast.Constant object at 0x12fafbdf0>, <_\
-ast.Constant object at 0x12fafbe20>, <_ast.Constant object at 0x12fafbe50>, <_ast.Constant object at 0x12fafbe80>, <_ast.Constant \
-object at 0x12fafbeb0>, <_ast.Constant object at 0x12fafbee0>, <_ast.Constant object at 0x12fafbf10>, <_ast.Constant object at 0x12fafbf40>, <_\
-ast.Constant object at 0x12fafbf70>, <_ast.Constant object at 0x12fafbfa0>, <_ast.Constant object at 0x12fafbfd0>, <_ast.Constant \
-object at 0x12faef040>, <_ast.Constant object at 0x12faef0a0>, <_ast.Constant object at 0x12faef130>, <_ast.Constant object at 0x12faef160>, <_\
-ast.Constant object at 0x12faef190>, <_ast.Constant object at 0x12faef1c0>, <_ast.Constant object at 0x12faef1f0>, <_ast.Constant \
-object at 0x12faef220>, <_ast.Constant object at 0x12faef250>, <_ast.Constant object at 0x12faef280>, <_ast.Constant object at 0x12faef2b0>, <_\
-ast.Constant object at 0x12faef2e0>, <_ast.Constant object at 0x12faef310>, <_ast.Constant object at 0x12faef340>, <_ast.Constant \
-object at 0x12faef370>, <_ast.Constant object at 0x12faef3a0>, <_ast.Constant object at 0x12faef3d0>, <_ast.Constant object at 0x12faef100>, <_\
-ast.Constant object at 0x12faef400>, <_ast.Constant object at 0x12faef460>, <_ast.Constant object at 0x12faef4c0>, <_ast.Constant \
-object at 0x12faef4f0>, <_ast.Constant object at 0x12faef520>, <_ast.Constant object at 0x12faef550>, <_ast.Constant object at 0x12faef580>, <_\
-ast.Constant object at 0x12faef5b0>, <_ast.Constant object at 0x12faef5e0>, <_ast.Constant object at 0x12faef610>, <_ast.Constant \
-object at 0x12faef640>, <_ast.Constant object at 0x12faef670>, <_ast.Constant object at 0x12faef0d0>, <_ast.Constant object at 0x12faef6a0>, <_\
-ast.Constant object at 0x12faef6d0>, <_ast.Constant object at 0x12faef700>, <_ast.Constant object at 0x12faef730>, <_ast.Constant \
-object at 0x12faef760>, <_ast.Constant object at 0x12faef490>, <_ast.Constant object at 0x12faef790>, <_ast.Constant object at 0x12faef7c0>, <_\
-ast.Constant object at 0x12faef7f0>, <_ast.Constant object at 0x12faef820>, <_ast.Constant object at 0x12faef850>, <_ast.Constant \
-object at 0x12faef880>, <_ast.Constant object at 0x12faef8b0>, <_ast.Constant object at 0x12faef8e0>, <_ast.Constant object at 0x12faef940>, <_\
-ast.Constant object at 0x12faef910>, <_ast.Constant object at 0x12faef970>, <_ast.Constant object at 0x12faef9a0>, <_ast.Constant \
-object at 0x12faef9d0>, <_ast.Constant object at 0x12faefa00>, <_ast.Constant object at 0x12faefa60>, <_ast.Constant object at 0x12faefa90>, <_\
-ast.Constant object at 0x12faefac0>, <_ast.Constant object at 0x12faefaf0>, <_ast.Constant object at 0x12faefb20>, <_ast.Constant \
-object at 0x12faefb50>, <_ast.Constant object at 0x12faefb80>, <_ast.Constant object at 0x12faefbb0>, <_ast.Constant object at 0x12faefbe0>, <_\
-ast.Constant object at 0x12faefc10>, <_ast.Constant object at 0x12faefc40>, <_ast.Constant object at 0x12faef070>, <_ast.Constant \
-object at 0x12faefca0>, <_ast.Constant object at 0x12faefd00>, <_ast.Constant object at 0x12faefd30>, <_ast.Constant object at 0x12faefa30>, <_\
-ast.Constant object at 0x12faefd60>, <_ast.Constant object at 0x12faefd90>, <_ast.Constant object at 0x12faefdc0>, <_ast.Constant \
-object at 0x12faefdf0>, <_ast.Constant object at 0x12faefe20>, <_ast.Constant object at 0x12faefe50>, <_ast.Constant object at 0x12faefe80>, <_\
-ast.Constant object at 0x12faefeb0>, <_ast.Constant object at 0x12faefee0>, <_ast.Constant object at 0x12faeff40>, <_ast.Constant \
-object at 0x12faeff70>, <_ast.Constant object at 0x12faeffd0>, <_ast.Constant object at 0x12faeffa0>, <_ast.Constant object at 0x12faefcd0>, <_\
-ast.Constant object at 0x12faefc70>, <_ast.Constant object at 0x12faeff10>, <_ast.Constant object at 0x12faef430>, <_ast.Constant \
-object at 0x12f933040>, <_ast.Constant object at 0x12f933070>, <_ast.Constant object at 0x12f9330a0>, <_ast.Constant object at 0x12f9330d0>, <_\
-ast.Constant object at 0x12f933100>, <_ast.Constant object at 0x12f933130>, <_ast.Constant object at 0x12f933160>, <_ast.Constant \
-object at 0x12f933190>, <_ast.Constant object at 0x12f9331c0>, <_ast.Constant object at 0x12f9331f0>, <_ast.Constant object at 0x12f933220>, <_\
-ast.Constant object at 0x12f933250>, <_ast.Constant object at 0x12f933280>, <_ast.Constant object at 0x12f9332b0>, <_ast.Constant \
-object at 0x12f9332e0>, <_ast.Constant object at 0x12f933310>, <_ast.Constant object at 0x12f933340>, <_ast.Constant object at 0x12f933370>, <_\
-ast.Constant object at 0x12f9333a0>, <_ast.Constant object at 0x12f9333d0>, <_ast.Constant object at 0x12f933400>, <_ast.Constant \
-object at 0x12f933430>, <_ast.Constant object at 0x12f933460>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04e87c0>, <_ast.Constant object at 0x7fd4c04e87f0>, <_ast.Constant object at 0x7fd4c04e8820>, <_\
+ast.Constant object at 0x7fd4c04e8550>, <_ast.Constant object at 0x7fd4c04e8850>, <_ast.Constant object at 0x7fd4c04e8880>, <_ast.Constant \
+object at 0x7fd4c04e88b0>, <_ast.Constant object at 0x7fd4c04e88e0>, <_ast.Constant object at 0x7fd4c04e8910>, <_ast.Constant object \
+at 0x7fd4c04e8940>, <_ast.Constant object at 0x7fd4c04e8970>, <_ast.Constant object at 0x7fd4c04e89a0>, <_ast.Constant object at \
+0x7fd4c04e89d0>, <_ast.Constant object at 0x7fd4c04e8a00>, <_ast.Constant object at 0x7fd4c04e8a30>, <_ast.Constant object at 0x7fd4c04e8a90>, <_\
+ast.Constant object at 0x7fd4c04e8730>, <_ast.Constant object at 0x7fd4c04e8ac0>, <_ast.Constant object at 0x7fd4c04e8b20>, <_ast.Constant \
+object at 0x7fd4c04e8b50>, <_ast.Constant object at 0x7fd4c04e8b80>, <_ast.Constant object at 0x7fd4c04e8bb0>, <_ast.Constant object \
+at 0x7fd4c04e8be0>, <_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8c40>, <_ast.Constant object at \
+0x7fd4c04e8c70>, <_ast.Constant object at 0x7fd4c04e8ca0>, <_ast.Constant object at 0x7fd4c04e8cd0>, <_ast.Constant object at 0x7fd4c04e8d00>, <_\
+ast.Constant object at 0x7fd4c04e8d30>, <_ast.Constant object at 0x7fd4c04e8d60>, <_ast.Constant object at 0x7fd4c04e8d90>, <_ast.Constant \
+object at 0x7fd4c04e8dc0>, <_ast.Constant object at 0x7fd4c04e8df0>, <_ast.Constant object at 0x7fd4c04e8af0>, <_ast.Constant object \
+at 0x7fd4c04e8e20>, <_ast.Constant object at 0x7fd4c04e8e50>, <_ast.Constant object at 0x7fd4c04e8e80>, <_ast.Constant object at \
+0x7fd4c04e8eb0>, <_ast.Constant object at 0x7fd4c04e8ee0>, <_ast.Constant object at 0x7fd4c04e8f10>, <_ast.Constant object at 0x7fd4c04e8f40>, <_\
+ast.Constant object at 0x7fd4c04e8f70>, <_ast.Constant object at 0x7fd4c04e8fa0>, <_ast.Constant object at 0x7fd4c04e8fd0>, <_ast.Constant \
+object at 0x7fd4c04e8a60>, <_ast.Constant object at 0x7fd4c04e8220>, <_ast.Constant object at 0x7fd4c04de040>, <_ast.Constant object \
+at 0x7fd4c04de070>, <_ast.Constant object at 0x7fd4c04de0a0>, <_ast.Constant object at 0x7fd4c04de0d0>, <_ast.Constant object at \
+0x7fd4c04de100>, <_ast.Constant object at 0x7fd4c04de130>, <_ast.Constant object at 0x7fd4c04de160>, <_ast.Constant object at 0x7fd4c04de190>, <_\
+ast.Constant object at 0x7fd4c04de1c0>, <_ast.Constant object at 0x7fd4c04de1f0>, <_ast.Constant object at 0x7fd4c04de220>, <_ast.Constant \
+object at 0x7fd4c04de250>, <_ast.Constant object at 0x7fd4c04de280>, <_ast.Constant object at 0x7fd4c04de2b0>, <_ast.Constant object \
+at 0x7fd4c04de2e0>, <_ast.Constant object at 0x7fd4c04de310>, <_ast.Constant object at 0x7fd4c04de340>, <_ast.Constant object at \
+0x7fd4c04de370>, <_ast.Constant object at 0x7fd4c04de3a0>, <_ast.Constant object at 0x7fd4c04de3d0>, <_ast.Constant object at 0x7fd4c04de400>, <_\
+ast.Constant object at 0x7fd4c04de430>, <_ast.Constant object at 0x7fd4c04de460>, <_ast.Constant object at 0x7fd4c04de490>, <_ast.Constant \
+object at 0x7fd4c04de4c0>, <_ast.Constant object at 0x7fd4c04de4f0>, <_ast.Constant object at 0x7fd4c04de520>, <_ast.Constant object \
+at 0x7fd4c04de550>, <_ast.Constant object at 0x7fd4c04de580>, <_ast.Constant object at 0x7fd4c04de5b0>, <_ast.Constant object at \
+0x7fd4c04de5e0>, <_ast.Constant object at 0x7fd4c04de610>, <_ast.Constant object at 0x7fd4c04de640>, <_ast.Constant object at 0x7fd4c04de670>, <_\
+ast.Constant object at 0x7fd4c04de6a0>, <_ast.Constant object at 0x7fd4c04de6d0>, <_ast.Constant object at 0x7fd4c04de700>, <_ast.Constant \
+object at 0x7fd4c04de730>, <_ast.Constant object at 0x7fd4c04de760>, <_ast.Constant object at 0x7fd4c04de790>, <_ast.Constant object \
+at 0x7fd4c04de7c0>, <_ast.Constant object at 0x7fd4c04de7f0>, <_ast.Constant object at 0x7fd4c04de820>, <_ast.Constant object at \
+0x7fd4c04de850>, <_ast.Constant object at 0x7fd4c04de880>, <_ast.Constant object at 0x7fd4c04de8b0>, <_ast.Constant object at 0x7fd4c04de8e0>, <_\
+ast.Constant object at 0x7fd4c04de910>, <_ast.Constant object at 0x7fd4c04de940>, <_ast.Constant object at 0x7fd4c04de970>, <_ast.Constant \
+object at 0x7fd4c04de9a0>, <_ast.Constant object at 0x7fd4c04de9d0>, <_ast.Constant object at 0x7fd4c04dea00>, <_ast.Constant object \
+at 0x7fd4c04dea30>, <_ast.Constant object at 0x7fd4c04dea60>, <_ast.Constant object at 0x7fd4c04dea90>, <_ast.Constant object at \
+0x7fd4c04deac0>, <_ast.Constant object at 0x7fd4c04deaf0>, <_ast.Constant object at 0x7fd4c04deb20>, <_ast.Constant object at 0x7fd4c04deb50>, <_\
+ast.Constant object at 0x7fd4c04deb80>, <_ast.Constant object at 0x7fd4c04debb0>, <_ast.Constant object at 0x7fd4c04debe0>, <_ast.Constant \
+object at 0x7fd4c04dec10>, <_ast.Constant object at 0x7fd4c04dec40>, <_ast.Constant object at 0x7fd4c04dec70>, <_ast.Constant object \
+at 0x7fd4c04deca0>, <_ast.Constant object at 0x7fd4c04decd0>, <_ast.Constant object at 0x7fd4c04ded00>, <_ast.Constant object at \
+0x7fd4c04ded30>, <_ast.Constant object at 0x7fd4c04ded60>, <_ast.Constant object at 0x7fd4c04ded90>, <_ast.Constant object at 0x7fd4c04dedc0>, <_\
+ast.Constant object at 0x7fd4c04dedf0>, <_ast.Constant object at 0x7fd4c04dee20>, <_ast.Constant object at 0x7fd4c04dee50>, <_ast.Constant \
+object at 0x7fd4c04dee80>, <_ast.Constant object at 0x7fd4c04deeb0>, <_ast.Constant object at 0x7fd4c04deee0>, <_ast.Constant object \
+at 0x7fd4c04def10>, <_ast.Constant object at 0x7fd4c04def40>, <_ast.Constant object at 0x7fd4c04def70>, <_ast.Constant object at \
+0x7fd4c04defa0>, <_ast.Constant object at 0x7fd4c04defd0>, <_ast.Constant object at 0x7fd4c04f7040>, <_ast.Constant object at 0x7fd4c04f7070>, <_\
+ast.Constant object at 0x7fd4c04f70a0>, <_ast.Constant object at 0x7fd4c04f70d0>, <_ast.Constant object at 0x7fd4c04f7100>, <_ast.Constant \
+object at 0x7fd4c04f7130>, <_ast.Constant object at 0x7fd4c04f7190>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"extra_punct(0)$0" -> "[<_ast.Constant object at 0x7fd4c04e87c0>, <_ast.Constant object at 0x7fd4c04e87f0>, <_ast.Constant object at 0x7fd4c04e8820>, <_\
+ast.Constant object at 0x7fd4c04e8550>, <_ast.Constant object at 0x7fd4c04e8850>, <_ast.Constant object at 0x7fd4c04e8880>, <_ast.Constant \
+object at 0x7fd4c04e88b0>, <_ast.Constant object at 0x7fd4c04e88e0>, <_ast.Constant object at 0x7fd4c04e8910>, <_ast.Constant object \
+at 0x7fd4c04e8940>, <_ast.Constant object at 0x7fd4c04e8970>, <_ast.Constant object at 0x7fd4c04e89a0>, <_ast.Constant object at \
+0x7fd4c04e89d0>, <_ast.Constant object at 0x7fd4c04e8a00>, <_ast.Constant object at 0x7fd4c04e8a30>, <_ast.Constant object at 0x7fd4c04e8a90>, <_\
+ast.Constant object at 0x7fd4c04e8730>, <_ast.Constant object at 0x7fd4c04e8ac0>, <_ast.Constant object at 0x7fd4c04e8b20>, <_ast.Constant \
+object at 0x7fd4c04e8b50>, <_ast.Constant object at 0x7fd4c04e8b80>, <_ast.Constant object at 0x7fd4c04e8bb0>, <_ast.Constant object \
+at 0x7fd4c04e8be0>, <_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8c40>, <_ast.Constant object at \
+0x7fd4c04e8c70>, <_ast.Constant object at 0x7fd4c04e8ca0>, <_ast.Constant object at 0x7fd4c04e8cd0>, <_ast.Constant object at 0x7fd4c04e8d00>, <_\
+ast.Constant object at 0x7fd4c04e8d30>, <_ast.Constant object at 0x7fd4c04e8d60>, <_ast.Constant object at 0x7fd4c04e8d90>, <_ast.Constant \
+object at 0x7fd4c04e8dc0>, <_ast.Constant object at 0x7fd4c04e8df0>, <_ast.Constant object at 0x7fd4c04e8af0>, <_ast.Constant object \
+at 0x7fd4c04e8e20>, <_ast.Constant object at 0x7fd4c04e8e50>, <_ast.Constant object at 0x7fd4c04e8e80>, <_ast.Constant object at \
+0x7fd4c04e8eb0>, <_ast.Constant object at 0x7fd4c04e8ee0>, <_ast.Constant object at 0x7fd4c04e8f10>, <_ast.Constant object at 0x7fd4c04e8f40>, <_\
+ast.Constant object at 0x7fd4c04e8f70>, <_ast.Constant object at 0x7fd4c04e8fa0>, <_ast.Constant object at 0x7fd4c04e8fd0>, <_ast.Constant \
+object at 0x7fd4c04e8a60>, <_ast.Constant object at 0x7fd4c04e8220>, <_ast.Constant object at 0x7fd4c04de040>, <_ast.Constant object \
+at 0x7fd4c04de070>, <_ast.Constant object at 0x7fd4c04de0a0>, <_ast.Constant object at 0x7fd4c04de0d0>, <_ast.Constant object at \
+0x7fd4c04de100>, <_ast.Constant object at 0x7fd4c04de130>, <_ast.Constant object at 0x7fd4c04de160>, <_ast.Constant object at 0x7fd4c04de190>, <_\
+ast.Constant object at 0x7fd4c04de1c0>, <_ast.Constant object at 0x7fd4c04de1f0>, <_ast.Constant object at 0x7fd4c04de220>, <_ast.Constant \
+object at 0x7fd4c04de250>, <_ast.Constant object at 0x7fd4c04de280>, <_ast.Constant object at 0x7fd4c04de2b0>, <_ast.Constant object \
+at 0x7fd4c04de2e0>, <_ast.Constant object at 0x7fd4c04de310>, <_ast.Constant object at 0x7fd4c04de340>, <_ast.Constant object at \
+0x7fd4c04de370>, <_ast.Constant object at 0x7fd4c04de3a0>, <_ast.Constant object at 0x7fd4c04de3d0>, <_ast.Constant object at 0x7fd4c04de400>, <_\
+ast.Constant object at 0x7fd4c04de430>, <_ast.Constant object at 0x7fd4c04de460>, <_ast.Constant object at 0x7fd4c04de490>, <_ast.Constant \
+object at 0x7fd4c04de4c0>, <_ast.Constant object at 0x7fd4c04de4f0>, <_ast.Constant object at 0x7fd4c04de520>, <_ast.Constant object \
+at 0x7fd4c04de550>, <_ast.Constant object at 0x7fd4c04de580>, <_ast.Constant object at 0x7fd4c04de5b0>, <_ast.Constant object at \
+0x7fd4c04de5e0>, <_ast.Constant object at 0x7fd4c04de610>, <_ast.Constant object at 0x7fd4c04de640>, <_ast.Constant object at 0x7fd4c04de670>, <_\
+ast.Constant object at 0x7fd4c04de6a0>, <_ast.Constant object at 0x7fd4c04de6d0>, <_ast.Constant object at 0x7fd4c04de700>, <_ast.Constant \
+object at 0x7fd4c04de730>, <_ast.Constant object at 0x7fd4c04de760>, <_ast.Constant object at 0x7fd4c04de790>, <_ast.Constant object \
+at 0x7fd4c04de7c0>, <_ast.Constant object at 0x7fd4c04de7f0>, <_ast.Constant object at 0x7fd4c04de820>, <_ast.Constant object at \
+0x7fd4c04de850>, <_ast.Constant object at 0x7fd4c04de880>, <_ast.Constant object at 0x7fd4c04de8b0>, <_ast.Constant object at 0x7fd4c04de8e0>, <_\
+ast.Constant object at 0x7fd4c04de910>, <_ast.Constant object at 0x7fd4c04de940>, <_ast.Constant object at 0x7fd4c04de970>, <_ast.Constant \
+object at 0x7fd4c04de9a0>, <_ast.Constant object at 0x7fd4c04de9d0>, <_ast.Constant object at 0x7fd4c04dea00>, <_ast.Constant object \
+at 0x7fd4c04dea30>, <_ast.Constant object at 0x7fd4c04dea60>, <_ast.Constant object at 0x7fd4c04dea90>, <_ast.Constant object at \
+0x7fd4c04deac0>, <_ast.Constant object at 0x7fd4c04deaf0>, <_ast.Constant object at 0x7fd4c04deb20>, <_ast.Constant object at 0x7fd4c04deb50>, <_\
+ast.Constant object at 0x7fd4c04deb80>, <_ast.Constant object at 0x7fd4c04debb0>, <_ast.Constant object at 0x7fd4c04debe0>, <_ast.Constant \
+object at 0x7fd4c04dec10>, <_ast.Constant object at 0x7fd4c04dec40>, <_ast.Constant object at 0x7fd4c04dec70>, <_ast.Constant object \
+at 0x7fd4c04deca0>, <_ast.Constant object at 0x7fd4c04decd0>, <_ast.Constant object at 0x7fd4c04ded00>, <_ast.Constant object at \
+0x7fd4c04ded30>, <_ast.Constant object at 0x7fd4c04ded60>, <_ast.Constant object at 0x7fd4c04ded90>, <_ast.Constant object at 0x7fd4c04dedc0>, <_\
+ast.Constant object at 0x7fd4c04dedf0>, <_ast.Constant object at 0x7fd4c04dee20>, <_ast.Constant object at 0x7fd4c04dee50>, <_ast.Constant \
+object at 0x7fd4c04dee80>, <_ast.Constant object at 0x7fd4c04deeb0>, <_ast.Constant object at 0x7fd4c04deee0>, <_ast.Constant object \
+at 0x7fd4c04def10>, <_ast.Constant object at 0x7fd4c04def40>, <_ast.Constant object at 0x7fd4c04def70>, <_ast.Constant object at \
+0x7fd4c04defa0>, <_ast.Constant object at 0x7fd4c04defd0>, <_ast.Constant object at 0x7fd4c04f7040>, <_ast.Constant object at 0x7fd4c04f7070>, <_\
+ast.Constant object at 0x7fd4c04f70a0>, <_ast.Constant object at 0x7fd4c04f70d0>, <_ast.Constant object at 0x7fd4c04f7100>, <_ast.Constant \
+object at 0x7fd4c04f7130>, <_ast.Constant object at 0x7fd4c04f7190>](0)"	[label=assignedFrom];
 	"set(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"all_punct(0)$0" -> "regular_punct(0)$0"	[label=list];
 	"all_punct(0)$0" -> "extra_punct(0)$0"	[label=list];
@@ -9971,10 +9957,10 @@ object at 0x12f933430>, <_ast.Constant object at 0x12f933460>](0)"	[label=assign
 	"text(17)$0" -> "text(17)"	[label=replace];
 	"text(17)$0" -> "bad_word(17)"	[label=replace];
 	"text(17)$0" -> "bad_case_words(17)"	[label=replace];
-	"[<_ast.Constant object at 0x130bd1d60>, <_ast.Constant object at 0x130bd1d90>, <_ast.Constant object at 0x130bd1dc0>, <_ast.Constant \
-object at 0x130bd1df0>, <_ast.Constant object at 0x130bd1e20>, <_ast.Constant object at 0x130bd1e50>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
-	"mis_connect_list(0)$0" -> "[<_ast.Constant object at 0x130bd1d60>, <_ast.Constant object at 0x130bd1d90>, <_ast.Constant object at 0x130bd1dc0>, <_ast.Constant \
-object at 0x130bd1df0>, <_ast.Constant object at 0x130bd1e20>, <_ast.Constant object at 0x130bd1e50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d09d1af0>, <_ast.Constant object at 0x7fd4d09d1b20>, <_ast.Constant object at 0x7fd4d09d1b50>, <_\
+ast.Constant object at 0x7fd4d09d1b80>, <_ast.Constant object at 0x7fd4d09d1bb0>, <_ast.Constant object at 0x7fd4d09d1be0>](0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"mis_connect_list(0)$0" -> "[<_ast.Constant object at 0x7fd4d09d1af0>, <_ast.Constant object at 0x7fd4d09d1b20>, <_ast.Constant object at 0x7fd4d09d1b50>, <_\
+ast.Constant object at 0x7fd4d09d1b80>, <_ast.Constant object at 0x7fd4d09d1bb0>, <_ast.Constant object at 0x7fd4d09d1be0>](0)"	[label=assignedFrom];
 	"mis_connect_re(0)$0" -> "re(0)"	[label=compile];
 	"mis_connect_re(0)$0" -> "mis_connect_list(0)$0"	[label=compile];
 	"mis_connect_re(0)$0" -> "(\%s)(0)"	[label=compile];
@@ -10245,6 +10231,15 @@ object at 0x130bd1df0>, <_ast.Constant object at 0x130bd1e20>, <_ast.Constant ob
 	"bug_punc_spacing_words_mapping(0)$0" -> " (0)"	[label=assignedFrom];
 	"bug_punc_spacing_words_mapping(0)$0" -> "vocab(0)"	[label=assignedFrom];
 	"bug_punc_spacing_words_mapping(0)$0" -> "bug_punc_spacing_words_mapping(0)"	[label=assignedFrom];
+	"bug_punc_spacing_words_mapping(0)$1" -> " (0)"	[label=assignedFrom];
+	"bug_punc_spacing_words_mapping(0)$1" -> "vocab(0)"	[label=assignedFrom];
+	"bug_punc_spacing_words_mapping(0)$1" -> "bug_punc_spacing_words_mapping(0)$0"	[label=assignedFrom];
+	"found (0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
+	"print[1308/0]" -> "len(0)"	[label=print];
+	"print[1308/0]" -> "bug_punc_spacing_words_mapping(0)$1"	[label=print];
+	"print[1308/0]" -> "found (0)"	[label=print];
+	"print[1308/0]" -> " bug words(0)"	[label=print];
+	" bug words(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"text(22)" -> "spacing_dash_point[0]"	[label=_argToVar];
 	"text(22)$0" -> "text(22)"	[label=replace];
 	"text(22)$0" -> "-(22)"	[label=replace];
@@ -10273,6 +10268,26 @@ object at 0x130bd1df0>, <_ast.Constant object at 0x130bd1e20>, <_ast.Constant ob
 	"fix_dash_point_spacing_bug_wrapper(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];
 	"test_df(0)$3" -> "test_df(0)$2"	[label=df_parallelize_run];
 	"test_df(0)$3" -> "fix_dash_point_spacing_bug_wrapper(0)"	[label=df_parallelize_run];
+	"oov_glove(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
+	"oov_glove(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
+	"oov_paragram(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
+	"oov_paragram(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
+	"oov_fasttext(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
+	"oov_google(0)$2" -> "train_df(0)$3"	[label=vocab_check_coverage];
+	"oov_google(0)$2" -> "test_df(0)$3"	[label=vocab_check_coverage];
+	"print[1333/0]" -> "glove oov rate:(0)"	[label=print];
+	"print[1333/0]" -> "oov_rate(0)"	[label=print];
+	"print[1333/0]" -> "oov_glove(0)$2"	[label=print];
+	"print[1334/0]" -> "oov_rate(0)"	[label=print];
+	"print[1334/0]" -> "paragram oov rate:(0)"	[label=print];
+	"print[1334/0]" -> "oov_paragram(0)$2"	[label=print];
+	"print[1335/0]" -> "oov_rate(0)"	[label=print];
+	"print[1335/0]" -> "fasttext oov rate:(0)"	[label=print];
+	"print[1335/0]" -> "oov_fasttext(0)$2"	[label=print];
+	"print[1336/0]" -> "oov_rate(0)"	[label=print];
+	"print[1336/0]" -> "google oov rate:(0)"	[label=print];
+	"print[1336/0]" -> "oov_google(0)$2"	[label=print];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=to_csv];
 	"train_df(0)$4" -> "cleaned_train.csv(0)"	[label=to_csv];
 	"cleaned_train.csv(0)" -> "more-text-cleaning-to-increase-word-coverage.ipynb"	[label=appearsIn];

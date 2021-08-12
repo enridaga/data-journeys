@@ -102,97 +102,26 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Dataset Shape: (1)"	[label=print];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(2)"	[label=print];
-	"print[0]" -> "df_train(0)$14"	[label=print];
-	"print[0]" -> "Shape before dummy transformation: (0)"	[label=print];
-	"print[0]" -> "Shape after dummy transformation: (0)"	[label=print];
-	"print[0]" -> "Shape of X: (0)"	[label=print];
-	"print[0]" -> "Shape of X_test: (0)"	[label=print];
-	"print[0]" -> "Params: (5)"	[label=print];
-	"print[0]" -> "Score Validation : (5)"	[label=print];
-	"print[0]" -> "Full Score Run: (5)"	[label=print];
-	"print[0]" -> "i(0)"	[label=print];
-	"print[0]" -> "## (0)"	[label=print];
-	"df_train(0)$14" -> "df_train(0)$14"	[label=Add];
-	"df_train(0)$14" -> "City(0)"	[label=Add];
-	"df_train(0)$14" -> "df_train(0)$13"	[label=Add];
-	"df_train(0)$14" -> "IntersectionId(0)"	[label=Add];
-	"df_train(0)$14" -> "str(0)"	[label=Add];
-	"Shape before dummy transformation: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"Shape after dummy transformation: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"Shape of X: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"Shape of X_test: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"i(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"i(0)" -> "range(0)"	[label=iteratorOf];
-	"i(0)" -> "all_preds(0)$0"	[label=iteratorOf];
-	"i(0)" -> "len(0)"	[label=iteratorOf];
-	"## (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"print[1]" -> "df(1)"	[label=print];
-	"print[1]" -> "end_mem(2)$0"	[label=print];
-	"print[1]" -> "1(0)"	[label=print];
-	"print[1]" -> "Intersec(0)"	[label=print];
-	"print[1]" -> "df_train(0)$23"	[label=print];
-	"print[1]" -> "df_train(0)$24"	[label=print];
-	"print[1]" -> "X(0)$0"	[label=print];
-	"print[1]" -> "X_test(0)$0"	[label=print];
-	"print[1]" -> "params(5)"	[label=print];
-	"print[1]" -> "score_uni(5)$0"	[label=print];
-	"print[1]" -> "score(5)$0"	[label=print];
-	"df(1)" -> "resumetable[0]"	[label=_argToVar];
-	"end_mem(2)$0" -> "1024(2)"	[label=Div];
-	"end_mem(2)$0" -> "2(2)"	[label=Div];
-	"end_mem(2)$0" -> "df(2)$6"	[label=Div];
-	"1(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"Intersec(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"df_train(0)$23" -> "df_train(0)$22"	[label=map];
-	"df_train(0)$23" -> "monthly_rainfall(0)$0"	[label=map];
-	"df_train(0)$23" -> "city_month(0)"	[label=map];
-	"df_train(0)$24" -> "pd(0)"	[label=get_dummies];
-	"df_train(0)$24" -> "df_train(0)$24"	[label=get_dummies];
-	"df_train(0)$24" -> "False(0)"	[label=get_dummies];
-	"df_train(0)$24" -> "[<_ast.Constant object at 0x12f93d7f0>](0)"	[label=get_dummies];
-	"df_train(0)$24" -> "[<_ast.Constant object at 0x12f93d8b0>](0)"	[label=get_dummies];
-	"X(0)$0" -> "df_train(0)$26"	[label=assignedFrom];
-	"X(0)$0" -> "interesting_feat(0)$0"	[label=assignedFrom];
-	"X_test(0)$0" -> "df_test(0)$21"	[label=assignedFrom];
-	"X_test(0)$0" -> "interesting_feat(0)$0"	[label=assignedFrom];
-	"params(5)" -> "evaluate_metric[0]"	[label=_argToVar];
-	"score_uni(5)$0" -> "i(5)"	[label=sqrt];
-	"score_uni(5)$0" -> "pred_lgb(5)$0"	[label=sqrt];
-	"score_uni(5)$0" -> "np(5)"	[label=sqrt];
-	"score_uni(5)$0" -> "mean_squared_error(5)"	[label=sqrt];
-	"score_uni(5)$0" -> "y_val(5)"	[label=sqrt];
-	"score(5)$0" -> "0(5)"	[label=sqrt];
-	"score(5)$0" -> "np(5)"	[label=sqrt];
-	"score(5)$0" -> "mean_squared_error(5)"	[label=sqrt];
-	"score(5)$0" -> "pred(5)$1"	[label=sqrt];
-	"score(5)$0" -> "y_val_sc(5)$1"	[label=sqrt];
-	"print[2]" -> "filename(0)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "100(2)"	[label=print];
-	"print[2]" -> "6(0)"	[label=print];
-	"print[2]" -> " running done.(0)"	[label=print];
-	"6(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	" running done.(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[30/8]" -> "os(0)"	[label=print];
+	"print[30/8]" -> "dirname(0)"	[label=print];
+	"print[30/8]" -> "filename(0)"	[label=print];
 	"df_train(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_train(0)$0" -> "/kaggle/input/bigquery-geotab-intersection-congestion/train.csv(0)"	[label=read_csv];
 	"/kaggle/input/bigquery-geotab-intersection-congestion/train.csv(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_test(0)$0" -> "/kaggle/input/bigquery-geotab-intersection-congestion/test.csv(0)"	[label=read_csv];
 	"/kaggle/input/bigquery-geotab-intersection-congestion/test.csv(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"resumetable[0]" -> "df_train(0)$0"	[label=resumetable];
+	"df(1)" -> "resumetable[0]"	[label=_argToVar];
+	"print[36/4]" -> "df(1)"	[label=print];
+	"print[36/4]" -> "Dataset Shape: (1)"	[label=print];
 	"summary(1)$0" -> "df(1)"	[label=DataFrame];
 	"summary(1)$0" -> "pd(1)"	[label=DataFrame];
-	"summary(1)$0" -> "[<_ast.Constant object at 0x12fc4fd30>](1)"	[label=DataFrame];
+	"summary(1)$0" -> "[<_ast.Constant object at 0x7fd4c04cce50>](1)"	[label=DataFrame];
 	"summary(1)$1" -> "summary(1)$0"	[label=reset_index];
 	"summary(1)$2" -> "summary(1)$1"	[label=assignedFrom];
 	"summary(1)$2" -> "index(1)"	[label=assignedFrom];
 	"summary(1)$3" -> "summary(1)$2"	[label=assignedFrom];
-	"summary(1)$3" -> "[<_ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4f190>](1)"	[label=assignedFrom];
+	"summary(1)$3" -> "[<_ast.Constant object at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd500999100>](1)"	[label=assignedFrom];
 	"summary(1)$4" -> "df(1)"	[label=assignedFrom];
 	"summary(1)$4" -> "summary(1)$3"	[label=assignedFrom];
 	"summary(1)$5" -> "df(1)"	[label=assignedFrom];
@@ -216,8 +145,8 @@ digraph "" {
 	"summary(1)$9" -> "True(1)"	[label=round];
 	"df(2)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(2)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(2)$0" -> "[<_ast.Constant object at 0x12f8f5490>, <_ast.Constant object at 0x12f8f5af0>, <_ast.Constant object at 0x12f8f5f70>, <_ast.Constant \
-object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant object at 0x12f8f5c70>](2)"	[label=assignedFrom];
+	"numerics(2)$0" -> "[<_ast.Constant object at 0x7fd4902ab040>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902abaf0>, <_\
+ast.Constant object at 0x7fd4902abe50>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902abf40>](2)"	[label=assignedFrom];
 	"start_mem(2)$0" -> "df(2)"	[label=Div];
 	"start_mem(2)$0" -> "1024(2)"	[label=Div];
 	"start_mem(2)$0" -> "2(2)"	[label=Div];
@@ -249,11 +178,15 @@ object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant ob
 	"df(2)$6" -> "col(2)"	[label=astype];
 	"df(2)$6" -> "np(2)"	[label=astype];
 	"df(2)$6" -> "df(2)$5"	[label=astype];
-	"print[3]" -> "start_mem(2)$0"	[label=print];
-	"print[3]" -> " Run(0)"	[label=print];
-	" Run(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"print[4]" -> "end_mem(2)$0"	[label=print];
-	"print[5]" -> "start_mem(2)$0"	[label=print];
+	"end_mem(2)$0" -> "1024(2)"	[label=Div];
+	"end_mem(2)$0" -> "2(2)"	[label=Div];
+	"end_mem(2)$0" -> "df(2)$6"	[label=Div];
+	"print[77/16]" -> "start_mem(2)$0"	[label=print];
+	"print[77/16]" -> "end_mem(2)$0"	[label=print];
+	"print[77/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(2)"	[label=print];
+	"print[77/16]" -> "100(2)"	[label=print];
+	"resumetable[80/0]" -> "df_train(0)$0"	[label=resumetable];
+	"resumetable[81/0]" -> "df_train(0)$0"	[label=resumetable];
 	"total(0)$0" -> "df_train(0)$0"	[label=len];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"plt(0)$1" -> "plt(0)$0"	[label=subplot];
@@ -319,9 +252,9 @@ object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant ob
 	"1.15(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"plt(0)$2" -> "plt(0)$1"	[label=show];
 	"tmp_hour(0)$0" -> "df_train(0)$0"	[label=reset_index];
-	"tmp_hour(0)$0" -> "[<_ast.Constant object at 0x12f8897f0>, <_ast.Constant object at 0x12f889220>](0)"	[label=reset_index];
+	"tmp_hour(0)$0" -> "[<_ast.Constant object at 0x7fd500834700>, <_ast.Constant object at 0x7fd5008346a0>](0)"	[label=reset_index];
 	"tmp_hour(0)$0" -> "RowId(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f8897f0>, <_ast.Constant object at 0x12f889220>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500834700>, <_ast.Constant object at 0x7fd5008346a0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"RowId(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=figure];
 	"plt(0)$4" -> "plt(0)$3"	[label=subplot];
@@ -380,8 +313,8 @@ object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant ob
 	"tmp(0)$0" -> "100(0)"	[label=reset_index];
 	"tmp(0)$0" -> "RowId(0)"	[label=reset_index];
 	"tmp(0)$0" -> "round(0)"	[label=reset_index];
-	"tmp(0)$0" -> "[<_ast.Constant object at 0x12f9a41f0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f9a41f0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"tmp(0)$0" -> "[<_ast.Constant object at 0x7fd501626e20>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd501626e20>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"plt(0)$9" -> "211(0)"	[label=subplot];
 	"plt(0)$9" -> "plt(0)$8"	[label=subplot];
 	"g(0)$11" -> "sns(0)"	[label=countplot];
@@ -464,12 +397,12 @@ object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant ob
 	"TOP 45 most commmon IntersectionID's (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"plt(0)$17" -> "plt(0)$16"	[label=show];
 	"df_train(0)$2" -> "df_train(0)$1"	[label=head];
-	"[<_ast.Constant object at 0x12f88a190>, <_ast.Constant object at 0x12f88a1c0>, <_ast.Constant object at 0x12f88a1f0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"t_stopped(0)$0" -> "[<_ast.Constant object at 0x12f88a190>, <_ast.Constant object at 0x12f88a1c0>, <_ast.Constant object at 0x12f88a1f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a2e0>, <_ast.Constant object at 0x12f88a310>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"t_first_stopped(0)$0" -> "[<_ast.Constant object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a2e0>, <_ast.Constant object at 0x12f88a310>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a3d0>, <_ast.Constant object at 0x12f88a400>, <_ast.Constant object at 0x12f88a430>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"d_first_stopped(0)$0" -> "[<_ast.Constant object at 0x12f88a3d0>, <_ast.Constant object at 0x12f88a400>, <_ast.Constant object at 0x12f88a430>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd501611e50>, <_ast.Constant object at 0x7fd501611e80>, <_ast.Constant object at 0x7fd501611eb0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"t_stopped(0)$0" -> "[<_ast.Constant object at 0x7fd501611e50>, <_ast.Constant object at 0x7fd501611e80>, <_ast.Constant object at 0x7fd501611eb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd501611f70>, <_ast.Constant object at 0x7fd501611fa0>, <_ast.Constant object at 0x7fd501611fd0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"t_first_stopped(0)$0" -> "[<_ast.Constant object at 0x7fd501611f70>, <_ast.Constant object at 0x7fd501611fa0>, <_ast.Constant object at 0x7fd501611fd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5016220d0>, <_ast.Constant object at 0x7fd501622130>, <_ast.Constant object at 0x7fd501622160>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"d_first_stopped(0)$0" -> "[<_ast.Constant object at 0x7fd5016220d0>, <_ast.Constant object at 0x7fd501622130>, <_ast.Constant object at 0x7fd501622160>](0)"	[label=assignedFrom];
 	"plt(0)$18" -> "plt(0)$17"	[label=figure];
 	"plt(0)$19" -> "plt(0)$18"	[label=title];
 	"plt(0)$19" -> "Correlation of Features for Train Set(0)"	[label=title];
@@ -488,16 +421,17 @@ object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d00>, <_ast.Constant ob
 	"target_cols(0)$0" -> "d_first_stopped(0)$0"	[label=Add];
 	"col(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"col(0)" -> "target_cols(0)$0"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f964040>, <_ast.Constant object at 0x12f964070>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f964040>, <_ast.Constant object at 0x12f964070>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"df_train(0)$3" -> "1(0)"	[label=minmax_scale];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c04e6d30>, <_ast.Constant object at 0x7fd4c04e6a60>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd4c04e6d30>, <_ast.Constant object at 0x7fd4c04e6a60>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_train(0)$3" -> "0(0)"	[label=minmax_scale];
 	"df_train(0)$3" -> "df_train(0)$2"	[label=minmax_scale];
 	"df_train(0)$3" -> "col(0)"	[label=minmax_scale];
-	"[<_ast.Constant object at 0x12f88e4c0>, <_ast.Constant object at 0x12f88e4f0>, <_ast.Constant object at 0x12f88e520>, <_ast.Constant \
-object at 0x12f88e550>, <_ast.Constant object at 0x12f88e580>, <_ast.Constant object at 0x12f88e5b0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"min_max_cols(0)$0" -> "[<_ast.Constant object at 0x12f88e4c0>, <_ast.Constant object at 0x12f88e4f0>, <_ast.Constant object at 0x12f88e520>, <_ast.Constant \
-object at 0x12f88e550>, <_ast.Constant object at 0x12f88e580>, <_ast.Constant object at 0x12f88e5b0>](0)"	[label=assignedFrom];
+	"df_train(0)$3" -> "1(0)"	[label=minmax_scale];
+	"1(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50162a160>, <_ast.Constant object at 0x7fd50162a190>, <_ast.Constant object at 0x7fd50162a1c0>, <_\
+ast.Constant object at 0x7fd50162a1f0>, <_ast.Constant object at 0x7fd50162a220>, <_ast.Constant object at 0x7fd50162a250>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"min_max_cols(0)$0" -> "[<_ast.Constant object at 0x7fd50162a160>, <_ast.Constant object at 0x7fd50162a190>, <_ast.Constant object at 0x7fd50162a1c0>, <_\
+ast.Constant object at 0x7fd50162a1f0>, <_ast.Constant object at 0x7fd50162a220>, <_ast.Constant object at 0x7fd50162a250>](0)"	[label=assignedFrom];
 	"pca(0)$0" -> "3(0)"	[label=PCA];
 	"pca(0)$0" -> "5(0)"	[label=PCA];
 	"5(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
@@ -511,8 +445,8 @@ object at 0x12f88e550>, <_ast.Constant object at 0x12f88e580>, <_ast.Constant ob
 	"principalDf(0)$1" -> "principalDf(0)$0"	[label=rename];
 	"df_train(0)$4" -> "pd(0)"	[label=concat];
 	"df_train(0)$4" -> "1(0)"	[label=concat];
-	"df_train(0)$4" -> "[<_ast.Name object at 0x12f88e100>, <_ast.Name object at 0x12f886040>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f88e100>, <_ast.Name object at 0x12f886040>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"df_train(0)$4" -> "[<_ast.Name object at 0x7fd50162acd0>, <_ast.Name object at 0x7fd50162ad00>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50162acd0>, <_ast.Name object at 0x7fd50162ad00>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"pca(0)$1" -> "pca(0)$0"	[label=sum];
 	"g(0)$16" -> "City(0)"	[label=FacetGrid];
 	"g(0)$16" -> "sns(0)$0"	[label=FacetGrid];
@@ -704,15 +638,15 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)"	[label=suptitl
 Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"plt(0)$42" -> "plt(0)$41"	[label=subplots_adjust];
 	"plt(0)$43" -> "plt(0)$42"	[label=show];
-	"round[0]" -> "pd(0)"	[label=round];
-	"[<_ast.Subscript object at 0x1305376d0>, <_ast.Subscript object at 0x1305377c0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"round[1]" -> "[<_ast.Subscript object at 0x1305376d0>, <_ast.Subscript object at 0x1305377c0>](0)"	[label=round];
-	"round[2]" -> "df_train(0)$5"	[label=round];
-	"round[3]" -> "City(0)"	[label=round];
+	"round[324/0]" -> "pd(0)"	[label=round];
+	"round[324/0]" -> "City(0)"	[label=round];
+	"round[324/0]" -> "100(0)"	[label=round];
+	"round[324/0]" -> "0(0)"	[label=round];
+	"round[324/0]" -> "df_train(0)$5"	[label=round];
+	"round[324/0]" -> "[<_ast.Subscript object at 0x7fd5008243d0>, <_ast.Subscript object at 0x7fd5008244c0>](0)"	[label=round];
+	"round[324/0]" -> "index(0)"	[label=round];
+	"[<_ast.Subscript object at 0x7fd5008243d0>, <_ast.Subscript object at 0x7fd5008244c0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"index(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"round[4]" -> "index(0)"	[label=round];
-	"round[5]" -> "100(0)"	[label=round];
-	"round[6]" -> "0(0)"	[label=round];
 	"df_train(0)$6" -> "pd(0)"	[label=read_csv];
 	"df_train(0)$6" -> "/kaggle/input/bigquery-geotab-intersection-congestion/train.csv(0)"	[label=read_csv];
 	"df_test(0)$1" -> "pd(0)"	[label=read_csv];
@@ -739,9 +673,9 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful
 	"df_test(0)$2" -> "Hour(0)"	[label=date_cyc_enc];
 	"df_test(0)$2" -> "df_test(0)$1"	[label=date_cyc_enc];
 	"df_test(0)$2" -> "24(0)"	[label=date_cyc_enc];
-	"df_train(0)$8" -> "1(0)"	[label=apply];
 	"df_train(0)$8" -> "0(0)"	[label=apply];
 	"df_train(0)$8" -> "Hour(0)"	[label=apply];
+	"df_train(0)$8" -> "1(0)"	[label=apply];
 	"df_train(0)$8" -> "df_train(0)$7"	[label=apply];
 	"df_train(0)$8" -> "7(0)"	[label=apply];
 	"df_train(0)$8" -> "x(0)"	[label=apply];
@@ -749,91 +683,97 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful
 	"7(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"x(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"18(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"df_test(0)$3" -> "1(0)"	[label=apply];
 	"df_test(0)$3" -> "0(0)"	[label=apply];
 	"df_test(0)$3" -> "Hour(0)"	[label=apply];
+	"df_test(0)$3" -> "1(0)"	[label=apply];
 	"df_test(0)$3" -> "df_test(0)$2"	[label=apply];
 	"df_test(0)$3" -> "7(0)"	[label=apply];
 	"df_test(0)$3" -> "x(0)"	[label=apply];
 	"df_test(0)$3" -> "18(0)"	[label=apply];
-	"df_train(0)$9" -> "1(0)"	[label=apply];
-	"df_train(0)$9" -> "6(0)"	[label=apply];
 	"df_train(0)$9" -> "0(0)"	[label=apply];
 	"df_train(0)$9" -> "Hour(0)"	[label=apply];
+	"df_train(0)$9" -> "1(0)"	[label=apply];
 	"df_train(0)$9" -> "10(0)"	[label=apply];
 	"df_train(0)$9" -> "df_train(0)$8"	[label=apply];
 	"df_train(0)$9" -> "x(0)"	[label=apply];
-	"df_test(0)$4" -> "1(0)"	[label=apply];
-	"df_test(0)$4" -> "6(0)"	[label=apply];
+	"df_train(0)$9" -> "6(0)"	[label=apply];
+	"6(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$4" -> "0(0)"	[label=apply];
 	"df_test(0)$4" -> "Hour(0)"	[label=apply];
+	"df_test(0)$4" -> "1(0)"	[label=apply];
 	"df_test(0)$4" -> "10(0)"	[label=apply];
 	"df_test(0)$4" -> "x(0)"	[label=apply];
 	"df_test(0)$4" -> "df_test(0)$3"	[label=apply];
-	"df_train(0)$10" -> "1(0)"	[label=apply];
+	"df_test(0)$4" -> "6(0)"	[label=apply];
 	"df_train(0)$10" -> "0(0)"	[label=apply];
 	"df_train(0)$10" -> "Hour(0)"	[label=apply];
+	"df_train(0)$10" -> "1(0)"	[label=apply];
 	"df_train(0)$10" -> "x(0)"	[label=apply];
 	"df_train(0)$10" -> "df_train(0)$9"	[label=apply];
 	"df_train(0)$10" -> "17(0)"	[label=apply];
 	"df_train(0)$10" -> "20(0)"	[label=apply];
 	"17(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"20(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"df_test(0)$5" -> "1(0)"	[label=apply];
 	"df_test(0)$5" -> "0(0)"	[label=apply];
 	"df_test(0)$5" -> "Hour(0)"	[label=apply];
+	"df_test(0)$5" -> "1(0)"	[label=apply];
 	"df_test(0)$5" -> "x(0)"	[label=apply];
 	"df_test(0)$5" -> "df_test(0)$4"	[label=apply];
 	"df_test(0)$5" -> "17(0)"	[label=apply];
 	"df_test(0)$5" -> "20(0)"	[label=apply];
 	"df_train(0)$11" -> "np(0)"	[label=where];
-	"df_train(0)$11" -> "1(0)"	[label=where];
 	"df_train(0)$11" -> "0(0)"	[label=where];
+	"df_train(0)$11" -> "1(0)"	[label=where];
 	"df_train(0)$11" -> "Weekend(0)"	[label=where];
 	"df_train(0)$11" -> "df_train(0)$10"	[label=where];
 	"df_train(0)$11" -> "df_train(0)$11"	[label=where];
 	"df_train(0)$11" -> "is_day(0)"	[label=where];
 	"is_day(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$6" -> "np(0)"	[label=where];
-	"df_test(0)$6" -> "1(0)"	[label=where];
 	"df_test(0)$6" -> "0(0)"	[label=where];
+	"df_test(0)$6" -> "1(0)"	[label=where];
 	"df_test(0)$6" -> "Weekend(0)"	[label=where];
 	"df_test(0)$6" -> "df_test(0)$5"	[label=where];
 	"df_test(0)$6" -> "df_train(0)$11"	[label=where];
 	"df_test(0)$6" -> "is_day(0)"	[label=where];
 	"df_test(0)$6" -> "df_test(0)$6"	[label=where];
 	"df_train(0)$12" -> "np(0)"	[label=where];
-	"df_train(0)$12" -> "1(0)"	[label=where];
 	"df_train(0)$12" -> "0(0)"	[label=where];
+	"df_train(0)$12" -> "1(0)"	[label=where];
 	"df_train(0)$12" -> "Weekend(0)"	[label=where];
 	"df_train(0)$12" -> "df_train(0)$11"	[label=where];
 	"df_train(0)$12" -> "df_train(0)$12"	[label=where];
 	"df_train(0)$12" -> "is_morning(0)"	[label=where];
 	"is_morning(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$7" -> "np(0)"	[label=where];
-	"df_test(0)$7" -> "1(0)"	[label=where];
 	"df_test(0)$7" -> "0(0)"	[label=where];
+	"df_test(0)$7" -> "1(0)"	[label=where];
 	"df_test(0)$7" -> "Weekend(0)"	[label=where];
 	"df_test(0)$7" -> "df_test(0)$6"	[label=where];
 	"df_test(0)$7" -> "df_train(0)$12"	[label=where];
 	"df_test(0)$7" -> "is_morning(0)"	[label=where];
 	"df_test(0)$7" -> "df_test(0)$7"	[label=where];
 	"df_train(0)$13" -> "np(0)"	[label=where];
-	"df_train(0)$13" -> "1(0)"	[label=where];
 	"df_train(0)$13" -> "0(0)"	[label=where];
+	"df_train(0)$13" -> "1(0)"	[label=where];
 	"df_train(0)$13" -> "Weekend(0)"	[label=where];
 	"df_train(0)$13" -> "df_train(0)$12"	[label=where];
 	"df_train(0)$13" -> "df_train(0)$13"	[label=where];
 	"df_train(0)$13" -> "is_night(0)"	[label=where];
 	"is_night(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$8" -> "np(0)"	[label=where];
-	"df_test(0)$8" -> "1(0)"	[label=where];
 	"df_test(0)$8" -> "0(0)"	[label=where];
+	"df_test(0)$8" -> "1(0)"	[label=where];
 	"df_test(0)$8" -> "Weekend(0)"	[label=where];
 	"df_test(0)$8" -> "df_test(0)$7"	[label=where];
 	"df_test(0)$8" -> "df_train(0)$13"	[label=where];
 	"df_test(0)$8" -> "is_night(0)"	[label=where];
 	"df_test(0)$8" -> "df_test(0)$8"	[label=where];
+	"df_train(0)$14" -> "City(0)"	[label=Add];
+	"df_train(0)$14" -> "df_train(0)$13"	[label=Add];
+	"df_train(0)$14" -> "df_train(0)$14"	[label=Add];
+	"df_train(0)$14" -> "IntersectionId(0)"	[label=Add];
+	"df_train(0)$14" -> "str(0)"	[label=Add];
 	"IntersectionId(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"str(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$9" -> "City(0)"	[label=Add];
@@ -841,22 +781,26 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful
 	"df_test(0)$9" -> "IntersectionId(0)"	[label=Add];
 	"df_test(0)$9" -> "str(0)"	[label=Add];
 	"df_test(0)$9" -> "df_test(0)$9"	[label=Add];
+	"print[356/0]" -> "6(0)"	[label=print];
+	"print[356/0]" -> "df_train(0)$14"	[label=print];
+	"print[356/0]" -> "Intersec(0)"	[label=print];
+	"Intersec(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"le(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"le(0)$0" -> "pd(0)"	[label=fit];
 	"le(0)$0" -> "le(0)"	[label=fit];
-	"le(0)$0" -> "[<_ast.Subscript object at 0x1305321f0>, <_ast.Subscript object at 0x130532250>](0)"	[label=fit];
-	"[<_ast.Subscript object at 0x1305321f0>, <_ast.Subscript object at 0x130532250>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"le(0)$0" -> "[<_ast.Subscript object at 0x7fd50081fbe0>, <_ast.Subscript object at 0x7fd50081fcd0>](0)"	[label=fit];
+	"[<_ast.Subscript object at 0x7fd50081fbe0>, <_ast.Subscript object at 0x7fd50081fcd0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_train(0)$15" -> "df_train(0)$14"	[label=transform];
 	"df_train(0)$15" -> "Intersec(0)"	[label=transform];
 	"df_train(0)$15" -> "le(0)$0"	[label=transform];
 	"df_train(0)$15" -> "df_train(0)$15"	[label=transform];
-	"df_test(0)$10" -> "Intersec(0)"	[label=transform];
 	"df_test(0)$10" -> "df_test(0)$9"	[label=transform];
+	"df_test(0)$10" -> "Intersec(0)"	[label=transform];
 	"df_test(0)$10" -> "le(0)$0"	[label=transform];
 	"df_test(0)$10" -> "df_test(0)$10"	[label=transform];
 	"Road(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"road_encoding(0)$0" -> "1(0)"	[label=assignedFrom];
 	"road_encoding(0)$0" -> "3(0)"	[label=assignedFrom];
+	"road_encoding(0)$0" -> "1(0)"	[label=assignedFrom];
 	"road_encoding(0)$0" -> "2(0)"	[label=assignedFrom];
 	"road_encoding(0)$0" -> "4(0)"	[label=assignedFrom];
 	"road_encoding(0)$0" -> "Road(0)"	[label=assignedFrom];
@@ -888,9 +832,9 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful
 	"df_test(0)$12" -> "ExitStreetName(0)"	[label=apply];
 	"df_test(0)$12" -> "df_test(0)$11"	[label=apply];
 	"N(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"directions(0)$0" -> "1(0)"	[label=assignedFrom];
 	"directions(0)$0" -> "3(0)"	[label=assignedFrom];
 	"directions(0)$0" -> "0(0)"	[label=assignedFrom];
+	"directions(0)$0" -> "1(0)"	[label=assignedFrom];
 	"directions(0)$0" -> "5(0)"	[label=assignedFrom];
 	"directions(0)$0" -> "2(0)"	[label=assignedFrom];
 	"directions(0)$0" -> "4(0)"	[label=assignedFrom];
@@ -1089,70 +1033,94 @@ Principal Component Analysis Dispersion by HOURS AND CLUSTERS(0)" -> "insightful
 	"2.75(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"3.16(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"3.31(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"df_train(0)$23" -> "df_train(0)$22"	[label=map];
+	"df_train(0)$23" -> "monthly_rainfall(0)$0"	[label=map];
+	"df_train(0)$23" -> "city_month(0)"	[label=map];
 	"city_month(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$18" -> "df_test(0)$17"	[label=map];
 	"df_test(0)$18" -> "monthly_rainfall(0)$0"	[label=map];
 	"df_test(0)$18" -> "city_month(0)"	[label=map];
-	"[<_ast.Constant object at 0x12f93d7f0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f93d8b0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"Shape before dummy transformation: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[417/0]" -> "df_train(0)$23"	[label=print];
+	"print[417/0]" -> "Shape before dummy transformation: (0)"	[label=print];
+	"df_train(0)$24" -> "pd(0)"	[label=get_dummies];
+	"df_train(0)$24" -> "False(0)"	[label=get_dummies];
+	"df_train(0)$24" -> "df_train(0)$24"	[label=get_dummies];
+	"df_train(0)$24" -> "[<_ast.Constant object at 0x7fd4c04e6490>](0)"	[label=get_dummies];
+	"df_train(0)$24" -> "[<_ast.Constant object at 0x7fd4c04e6550>](0)"	[label=get_dummies];
+	"[<_ast.Constant object at 0x7fd4c04e6490>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e6550>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"Shape after dummy transformation: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[421/0]" -> "df_train(0)$24"	[label=print];
+	"print[421/0]" -> "Shape after dummy transformation: (0)"	[label=print];
 	"df_test(0)$19" -> "pd(0)"	[label=get_dummies];
 	"df_test(0)$19" -> "False(0)"	[label=get_dummies];
 	"df_test(0)$19" -> "df_test(0)$19"	[label=get_dummies];
-	"df_test(0)$19" -> "[<_ast.Constant object at 0x12f93dd00>](0)"	[label=get_dummies];
-	"df_test(0)$19" -> "[<_ast.Constant object at 0x12f93ddf0>](0)"	[label=get_dummies];
-	"[<_ast.Constant object at 0x12f93dd00>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f93ddf0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"df_test(0)$19" -> "[<_ast.Constant object at 0x7fd4c04e69a0>](0)"	[label=get_dummies];
+	"df_test(0)$19" -> "[<_ast.Constant object at 0x7fd4c04e6a90>](0)"	[label=get_dummies];
+	"[<_ast.Constant object at 0x7fd4c04e69a0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e6a90>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	StandardScaler -> "sklearn.preprocessing"	[label=importedBy];
 	"StandardScaler(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"StandardScaler(0)" -> StandardScaler	[label=assignedFrom];
 	"scaler(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"scaler(0)$0" -> "col(0)"	[label=fit];
 	"scaler(0)$0" -> "1(0)"	[label=fit];
 	"scaler(0)$0" -> "df_train(0)$24"	[label=fit];
-	"scaler(0)$0" -> "col(0)"	[label=fit];
 	"scaler(0)$0" -> "scaler(0)"	[label=fit];
+	"df_train(0)$25" -> "col(0)"	[label=transform];
 	"df_train(0)$25" -> "1(0)"	[label=transform];
 	"df_train(0)$25" -> "df_train(0)$24"	[label=transform];
-	"df_train(0)$25" -> "col(0)"	[label=transform];
 	"df_train(0)$25" -> "scaler(0)$0"	[label=transform];
 	"df_train(0)$25" -> "df_train(0)$25"	[label=transform];
-	"df_test(0)$20" -> "1(0)"	[label=transform];
 	"df_test(0)$20" -> "col(0)"	[label=transform];
+	"df_test(0)$20" -> "1(0)"	[label=transform];
 	"df_test(0)$20" -> "df_test(0)$19"	[label=transform];
 	"df_test(0)$20" -> "scaler(0)$0"	[label=transform];
 	"df_test(0)$20" -> "df_test(0)$20"	[label=transform];
 	"df_train(0)$26" -> "df_train(0)$25"	[label=drop];
-	"df_train(0)$26" -> "[<_ast.Constant object at 0x12f964c10>, <_ast.Constant object at 0x12f964c40>, <_ast.Constant object at 0x12f964c70>, <_ast.Constant \
-object at 0x12f964ca0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f964c10>, <_ast.Constant object at 0x12f964c40>, <_ast.Constant object at 0x12f964c70>, <_ast.Constant \
-object at 0x12f964ca0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"df_train(0)$26" -> "[<_ast.Constant object at 0x7fd4c04f8910>, <_ast.Constant object at 0x7fd4c04f8940>, <_ast.Constant object at 0x7fd4c04f8970>, <_\
+ast.Constant object at 0x7fd4c04f89a0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04f8910>, <_ast.Constant object at 0x7fd4c04f8940>, <_ast.Constant object at 0x7fd4c04f8970>, <_\
+ast.Constant object at 0x7fd4c04f89a0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"df_test(0)$21" -> "df_test(0)$20"	[label=drop];
-	"df_test(0)$21" -> "[<_ast.Constant object at 0x12f964f10>, <_ast.Constant object at 0x12f964f40>, <_ast.Constant object at 0x12f964f70>, <_ast.Constant \
-object at 0x12f964fa0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f964f10>, <_ast.Constant object at 0x12f964f40>, <_ast.Constant object at 0x12f964f70>, <_ast.Constant \
-object at 0x12f964fa0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f95f1f0>, <_ast.Constant object at 0x12f95f220>, <_ast.Constant object at 0x12f95f250>, <_ast.Constant \
-object at 0x12f95f280>, <_ast.Constant object at 0x12f95f2b0>, <_ast.Constant object at 0x12f95f2e0>, <_ast.Constant object at 0x12f95f310>, <_\
-ast.Constant object at 0x12f95f340>, <_ast.Constant object at 0x12f95f370>, <_ast.Constant object at 0x12f95f3a0>, <_ast.Constant \
-object at 0x12f95f3d0>, <_ast.Constant object at 0x12f95f400>, <_ast.Constant object at 0x12f95f430>, <_ast.Constant object at 0x12f95f460>, <_\
-ast.Constant object at 0x12f95f490>, <_ast.Constant object at 0x12f95f4c0>, <_ast.Constant object at 0x12f95f4f0>, <_ast.Constant \
-object at 0x12f95f520>, <_ast.Constant object at 0x12f95f550>, <_ast.Constant object at 0x12f95f580>, <_ast.Constant object at 0x12f95f5b0>, <_\
-ast.Constant object at 0x12f95f5e0>, <_ast.Constant object at 0x12f95f610>, <_ast.Constant object at 0x12f95f640>, <_ast.Constant \
-object at 0x12f95f670>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"interesting_feat(0)$0" -> "[<_ast.Constant object at 0x12f95f1f0>, <_ast.Constant object at 0x12f95f220>, <_ast.Constant object at 0x12f95f250>, <_ast.Constant \
-object at 0x12f95f280>, <_ast.Constant object at 0x12f95f2b0>, <_ast.Constant object at 0x12f95f2e0>, <_ast.Constant object at 0x12f95f310>, <_\
-ast.Constant object at 0x12f95f340>, <_ast.Constant object at 0x12f95f370>, <_ast.Constant object at 0x12f95f3a0>, <_ast.Constant \
-object at 0x12f95f3d0>, <_ast.Constant object at 0x12f95f400>, <_ast.Constant object at 0x12f95f430>, <_ast.Constant object at 0x12f95f460>, <_\
-ast.Constant object at 0x12f95f490>, <_ast.Constant object at 0x12f95f4c0>, <_ast.Constant object at 0x12f95f4f0>, <_ast.Constant \
-object at 0x12f95f520>, <_ast.Constant object at 0x12f95f550>, <_ast.Constant object at 0x12f95f580>, <_ast.Constant object at 0x12f95f5b0>, <_\
-ast.Constant object at 0x12f95f5e0>, <_ast.Constant object at 0x12f95f610>, <_ast.Constant object at 0x12f95f640>, <_ast.Constant \
-object at 0x12f95f670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f95f730>, <_ast.Constant object at 0x12f95f760>, <_ast.Constant object at 0x12f95f790>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"total_time(0)$0" -> "[<_ast.Constant object at 0x12f95f730>, <_ast.Constant object at 0x12f95f760>, <_ast.Constant object at 0x12f95f790>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f95f850>, <_ast.Constant object at 0x12f95f880>, <_ast.Constant object at 0x12f95f8b0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"target_stopped(0)$0" -> "[<_ast.Constant object at 0x12f95f850>, <_ast.Constant object at 0x12f95f880>, <_ast.Constant object at 0x12f95f8b0>](0)"	[label=assignedFrom];
+	"df_test(0)$21" -> "[<_ast.Constant object at 0x7fd4c04f8c10>, <_ast.Constant object at 0x7fd4c04f8c40>, <_ast.Constant object at 0x7fd4c04f8c70>, <_\
+ast.Constant object at 0x7fd4c04f8ca0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04f8c10>, <_ast.Constant object at 0x7fd4c04f8c40>, <_ast.Constant object at 0x7fd4c04f8c70>, <_\
+ast.Constant object at 0x7fd4c04f8ca0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f8eb0>, <_ast.Constant object at 0x7fd4c04f8ee0>, <_ast.Constant object at 0x7fd4c04f8f10>, <_\
+ast.Constant object at 0x7fd4c04f8f40>, <_ast.Constant object at 0x7fd4c04f8f70>, <_ast.Constant object at 0x7fd4c04f8fa0>, <_ast.Constant \
+object at 0x7fd4c04f8fd0>, <_ast.Constant object at 0x7fd4c04d3040>, <_ast.Constant object at 0x7fd4c04d3070>, <_ast.Constant object \
+at 0x7fd4c04d30a0>, <_ast.Constant object at 0x7fd4c04d30d0>, <_ast.Constant object at 0x7fd4c04d3100>, <_ast.Constant object at \
+0x7fd4c04d3130>, <_ast.Constant object at 0x7fd4c04d3160>, <_ast.Constant object at 0x7fd4c04d3190>, <_ast.Constant object at 0x7fd4c04d31c0>, <_\
+ast.Constant object at 0x7fd4c04d31f0>, <_ast.Constant object at 0x7fd4c04d3220>, <_ast.Constant object at 0x7fd4c04d3250>, <_ast.Constant \
+object at 0x7fd4c04d3280>, <_ast.Constant object at 0x7fd4c04d32b0>, <_ast.Constant object at 0x7fd4c04d32e0>, <_ast.Constant object \
+at 0x7fd4c04d3310>, <_ast.Constant object at 0x7fd4c04d3340>, <_ast.Constant object at 0x7fd4c04d3370>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"interesting_feat(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f8eb0>, <_ast.Constant object at 0x7fd4c04f8ee0>, <_ast.Constant object at 0x7fd4c04f8f10>, <_\
+ast.Constant object at 0x7fd4c04f8f40>, <_ast.Constant object at 0x7fd4c04f8f70>, <_ast.Constant object at 0x7fd4c04f8fa0>, <_ast.Constant \
+object at 0x7fd4c04f8fd0>, <_ast.Constant object at 0x7fd4c04d3040>, <_ast.Constant object at 0x7fd4c04d3070>, <_ast.Constant object \
+at 0x7fd4c04d30a0>, <_ast.Constant object at 0x7fd4c04d30d0>, <_ast.Constant object at 0x7fd4c04d3100>, <_ast.Constant object at \
+0x7fd4c04d3130>, <_ast.Constant object at 0x7fd4c04d3160>, <_ast.Constant object at 0x7fd4c04d3190>, <_ast.Constant object at 0x7fd4c04d31c0>, <_\
+ast.Constant object at 0x7fd4c04d31f0>, <_ast.Constant object at 0x7fd4c04d3220>, <_ast.Constant object at 0x7fd4c04d3250>, <_ast.Constant \
+object at 0x7fd4c04d3280>, <_ast.Constant object at 0x7fd4c04d32b0>, <_ast.Constant object at 0x7fd4c04d32e0>, <_ast.Constant object \
+at 0x7fd4c04d3310>, <_ast.Constant object at 0x7fd4c04d3340>, <_ast.Constant object at 0x7fd4c04d3370>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d3430>, <_ast.Constant object at 0x7fd4c04d3460>, <_ast.Constant object at 0x7fd4c04d3490>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"total_time(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d3430>, <_ast.Constant object at 0x7fd4c04d3460>, <_ast.Constant object at 0x7fd4c04d3490>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d3550>, <_ast.Constant object at 0x7fd4c04d3580>, <_ast.Constant object at 0x7fd4c04d35b0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"target_stopped(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d3550>, <_ast.Constant object at 0x7fd4c04d3580>, <_ast.Constant object at 0x7fd4c04d35b0>](0)"	[label=assignedFrom];
+	"X(0)$0" -> "df_train(0)$26"	[label=assignedFrom];
+	"X(0)$0" -> "interesting_feat(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "df_train(0)$26"	[label=assignedFrom];
 	"y(0)$0" -> "total_time(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "target_stopped(0)$0"	[label=assignedFrom];
+	"X_test(0)$0" -> "df_test(0)$21"	[label=assignedFrom];
+	"X_test(0)$0" -> "interesting_feat(0)$0"	[label=assignedFrom];
+	"Shape of X: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[457/0]" -> "X(0)$0"	[label=print];
+	"print[457/0]" -> "Shape of X: (0)"	[label=print];
+	"Shape of X_test: (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[458/0]" -> "X_test(0)$0"	[label=print];
+	"print[458/0]" -> "Shape of X_test: (0)"	[label=print];
 	"X_train(0)$0" -> "X(0)$0"	[label=train_test_split];
 	"X_train(0)$0" -> "y(0)$0"	[label=train_test_split];
 	"X_train(0)$0" -> "0.1(0)"	[label=train_test_split];
@@ -1173,12 +1141,12 @@ object at 0x12f95f670>](0)"	[label=assignedFrom];
 	"y_val(0)$0" -> "42(0)"	[label=train_test_split];
 	"objective(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"hyper_space(0)$0" -> "hp(0)"	[label=assignedFrom];
-	"hyper_space(0)$0" -> "1(0)"	[label=assignedFrom];
-	"hyper_space(0)$0" -> "6(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "0(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "list(0)"	[label=assignedFrom];
+	"hyper_space(0)$0" -> "1(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "2(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "18(0)"	[label=assignedFrom];
+	"hyper_space(0)$0" -> "6(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "20(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "objective(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "metric(0)"	[label=assignedFrom];
@@ -1195,13 +1163,13 @@ object at 0x12f95f670>](0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "gbdt(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "range(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "180(0)"	[label=assignedFrom];
-	"hyper_space(0)$0" -> "[<_ast.Constant object at 0x12f92cc70>, <_ast.Constant object at 0x12f92cca0>, <_ast.Constant object at 0x12f92ccd0>, <_ast.Constant \
-object at 0x12f92cd00>](0)"	[label=assignedFrom];
+	"hyper_space(0)$0" -> "[<_ast.Constant object at 0x7fd4c04fb9d0>, <_ast.Constant object at 0x7fd4c04fba00>, <_ast.Constant object at 0x7fd4c04fba30>, <_\
+ast.Constant object at 0x7fd4c04fb730>](0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "0.7(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "0.03(0)"	[label=assignedFrom];
 	"hyper_space(0)$0" -> "0.12(0)"	[label=assignedFrom];
-	"hyper_space(0)$0" -> "[<_ast.Constant object at 0x12f9530a0>, <_ast.Constant object at 0x12f9530d0>, <_ast.Constant object at 0x12f953100>, <_ast.Constant \
-object at 0x12f953130>](0)"	[label=assignedFrom];
+	"hyper_space(0)$0" -> "[<_ast.Constant object at 0x7fd4c04fbdf0>, <_ast.Constant object at 0x7fd4c04fbe20>, <_ast.Constant object at 0x7fd4c04fbe50>, <_\
+ast.Constant object at 0x7fd4c04fbe80>](0)"	[label=assignedFrom];
 	"metric(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"boosting(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"gpu_device_id(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
@@ -1216,29 +1184,30 @@ object at 0x12f953130>](0)"	[label=assignedFrom];
 	"gbdt(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"range(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"180(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f92cc70>, <_ast.Constant object at 0x12f92cca0>, <_ast.Constant object at 0x12f92ccd0>, <_ast.Constant \
-object at 0x12f92cd00>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04fb9d0>, <_ast.Constant object at 0x7fd4c04fba00>, <_ast.Constant object at 0x7fd4c04fba30>, <_\
+ast.Constant object at 0x7fd4c04fb730>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"0.7(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"0.03(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"0.12(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9530a0>, <_ast.Constant object at 0x12f9530d0>, <_ast.Constant object at 0x12f953100>, <_ast.Constant \
-object at 0x12f953130>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9531f0>, <_ast.Constant object at 0x12f953220>, <_ast.Constant object at 0x12f953250>, <_ast.Constant \
-object at 0x12f953280>, <_ast.Constant object at 0x12f9532b0>, <_ast.Constant object at 0x12f9532e0>, <_ast.Constant object at 0x12f953310>, <_\
-ast.Constant object at 0x12f953340>, <_ast.Constant object at 0x12f953370>, <_ast.Constant object at 0x12f9533a0>, <_ast.Constant \
-object at 0x12f9533d0>, <_ast.Constant object at 0x12f953400>, <_ast.Constant object at 0x12f953430>, <_ast.Constant object at 0x12f953460>, <_\
-ast.Constant object at 0x12f953490>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"cat_feat(0)$0" -> "[<_ast.Constant object at 0x12f9531f0>, <_ast.Constant object at 0x12f953220>, <_ast.Constant object at 0x12f953250>, <_ast.Constant \
-object at 0x12f953280>, <_ast.Constant object at 0x12f9532b0>, <_ast.Constant object at 0x12f9532e0>, <_ast.Constant object at 0x12f953310>, <_\
-ast.Constant object at 0x12f953340>, <_ast.Constant object at 0x12f953370>, <_ast.Constant object at 0x12f9533a0>, <_ast.Constant \
-object at 0x12f9533d0>, <_ast.Constant object at 0x12f953400>, <_ast.Constant object at 0x12f953430>, <_ast.Constant object at 0x12f953460>, <_\
-ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04fbdf0>, <_ast.Constant object at 0x7fd4c04fbe20>, <_ast.Constant object at 0x7fd4c04fbe50>, <_\
+ast.Constant object at 0x7fd4c04fbe80>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04fbf40>, <_ast.Constant object at 0x7fd4c04fbf70>, <_ast.Constant object at 0x7fd4c04fbfa0>, <_\
+ast.Constant object at 0x7fd4c04fbfd0>, <_ast.Constant object at 0x7fd4c04fbd30>, <_ast.Constant object at 0x7fd4c04fbcd0>, <_ast.Constant \
+object at 0x7fd4c04fb6d0>, <_ast.Constant object at 0x7fd4c04fc070>, <_ast.Constant object at 0x7fd4c04fc0a0>, <_ast.Constant object \
+at 0x7fd4c04fc0d0>, <_ast.Constant object at 0x7fd4c04fc130>, <_ast.Constant object at 0x7fd4c04fc100>, <_ast.Constant object at \
+0x7fd4c04fc160>, <_ast.Constant object at 0x7fd4c04fc190>, <_ast.Constant object at 0x7fd4c04fc1c0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"cat_feat(0)$0" -> "[<_ast.Constant object at 0x7fd4c04fbf40>, <_ast.Constant object at 0x7fd4c04fbf70>, <_ast.Constant object at 0x7fd4c04fbfa0>, <_\
+ast.Constant object at 0x7fd4c04fbfd0>, <_ast.Constant object at 0x7fd4c04fbd30>, <_ast.Constant object at 0x7fd4c04fbcd0>, <_ast.Constant \
+object at 0x7fd4c04fb6d0>, <_ast.Constant object at 0x7fd4c04fc070>, <_ast.Constant object at 0x7fd4c04fc0a0>, <_ast.Constant object \
+at 0x7fd4c04fc0d0>, <_ast.Constant object at 0x7fd4c04fc130>, <_ast.Constant object at 0x7fd4c04fc100>, <_ast.Constant object at \
+0x7fd4c04fc160>, <_ast.Constant object at 0x7fd4c04fc190>, <_ast.Constant object at 0x7fd4c04fc1c0>](0)"	[label=assignedFrom];
 	KFold -> "sklearn.model_selection"	[label=importedBy];
 	"KFold(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"KFold(0)" -> KFold	[label=assignedFrom];
 	lightgbm -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=importedBy];
 	"lgb(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"lgb(0)" -> lightgbm	[label=assignedFrom];
+	"params(5)" -> "evaluate_metric[0]"	[label=_argToVar];
 	"all_preds_test(5)$0" -> "0(5)"	[label=assignedFrom];
 	"all_preds_test(5)$0" -> "1(5)"	[label=assignedFrom];
 	"all_preds_test(5)$0" -> "2(5)"	[label=assignedFrom];
@@ -1246,6 +1215,8 @@ ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
 	"all_preds_test(5)$0" -> "4(5)"	[label=assignedFrom];
 	"all_preds_test(5)$0" -> "5(5)"	[label=assignedFrom];
 	"all_preds_test(5)$0" -> "[](5)"	[label=assignedFrom];
+	"print[485/4]" -> "params(5)"	[label=print];
+	"print[485/4]" -> "Params: (5)"	[label=print];
 	"FOLDS(5)$0" -> "4(5)"	[label=assignedFrom];
 	"count(5)$0" -> "1(5)"	[label=assignedFrom];
 	"i(5)" -> "all_preds_test(5)$0"	[label=iteratorOf];
@@ -1286,13 +1257,20 @@ ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
 	"lgbm_reg(5)$0" -> "lgtrain(5)$0"	[label=train];
 	"lgbm_reg(5)$0" -> "lgb(5)"	[label=train];
 	"lgbm_reg(5)$0" -> "2000(5)"	[label=train];
-	"lgbm_reg(5)$0" -> "[<_ast.Name object at 0x12f95e400>](5)"	[label=train];
+	"lgbm_reg(5)$0" -> "[<_ast.Name object at 0x7fd5009ba100>](5)"	[label=train];
 	"lgbm_reg(5)$0" -> "cat_feat(5)"	[label=train];
 	"lgbm_reg(5)$0" -> "300(5)"	[label=train];
 	"pred_lgb(5)$0" -> "lgbm_reg(5)$0"	[label=predict];
 	"pred_lgb(5)$0" -> "X_val(5)"	[label=predict];
 	"all_preds_test(5)$1" -> "all_preds_test(5)$0"	[label=assignedFrom];
 	"all_preds_test(5)$1" -> "pred_lgb(5)$0"	[label=assignedFrom];
+	"score_uni(5)$0" -> "i(5)"	[label=sqrt];
+	"score_uni(5)$0" -> "pred_lgb(5)$0"	[label=sqrt];
+	"score_uni(5)$0" -> "np(5)"	[label=sqrt];
+	"score_uni(5)$0" -> "mean_squared_error(5)"	[label=sqrt];
+	"score_uni(5)$0" -> "y_val(5)"	[label=sqrt];
+	"print[514/8]" -> "score_uni(5)$0"	[label=print];
+	"print[514/8]" -> "Score Validation : (5)"	[label=print];
 	"pred(5)$0" -> "all_preds_test(5)$1"	[label=stack];
 	"pred(5)$0" -> "pd(5)"	[label=stack];
 	"pred(5)$1" -> "pd(5)"	[label=DataFrame];
@@ -1303,6 +1281,13 @@ ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
 	"y_val_sc(5)$1" -> "y_val_sc(5)$1"	[label=DataFrame];
 	"count(5)$1" -> "1(5)"	[label=Add];
 	"count(5)$1" -> "count(5)$0"	[label=Add];
+	"score(5)$0" -> "0(5)"	[label=sqrt];
+	"score(5)$0" -> "np(5)"	[label=sqrt];
+	"score(5)$0" -> "mean_squared_error(5)"	[label=sqrt];
+	"score(5)$0" -> "pred(5)$1"	[label=sqrt];
+	"score(5)$0" -> "y_val_sc(5)$1"	[label=sqrt];
+	"print[528/4]" -> "score(5)$0"	[label=print];
+	"print[528/4]" -> "Full Score Run: (5)"	[label=print];
 	"15(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"MAX_EVALS(0)$0" -> "15(0)"	[label=assignedFrom];
 	"evaluate_metric(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
@@ -1313,34 +1298,44 @@ ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
 	"best_vals(0)$0" -> "evaluate_metric(0)"	[label=fmin];
 	"best_params(0)$0" -> "hyper_space(0)$0"	[label=space_eval];
 	"best_params(0)$0" -> "best_vals(0)$0"	[label=space_eval];
-	"all_preds(0)$0" -> "1(0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "[](0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "3(0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "0(0)"	[label=assignedFrom];
+	"all_preds(0)$0" -> "1(0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "5(0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "2(0)"	[label=assignedFrom];
 	"all_preds(0)$0" -> "4(0)"	[label=assignedFrom];
+	"i(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"i(0)" -> "range(0)"	[label=iteratorOf];
+	"i(0)" -> "all_preds(0)$0"	[label=iteratorOf];
+	"i(0)" -> "len(0)"	[label=iteratorOf];
 	"len(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"X_tr(0)$0" -> "i(0)"	[label=train_test_split];
+	"## (0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"print[553/4]" -> "1(0)"	[label=print];
+	"print[553/4]" -> "i(0)"	[label=print];
+	"print[553/4]" -> "## (0)"	[label=print];
+	"print[553/4]" -> " Run(0)"	[label=print];
+	" Run(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"X_tr(0)$0" -> "X(0)$0"	[label=train_test_split];
 	"X_tr(0)$0" -> "y(0)$0"	[label=train_test_split];
 	"X_tr(0)$0" -> "0.1(0)"	[label=train_test_split];
+	"X_tr(0)$0" -> "i(0)"	[label=train_test_split];
 	"X_tr(0)$0" -> "31(0)"	[label=train_test_split];
 	"31(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"X_val(0)$1" -> "i(0)"	[label=train_test_split];
 	"X_val(0)$1" -> "X(0)$0"	[label=train_test_split];
 	"X_val(0)$1" -> "y(0)$0"	[label=train_test_split];
 	"X_val(0)$1" -> "0.1(0)"	[label=train_test_split];
+	"X_val(0)$1" -> "i(0)"	[label=train_test_split];
 	"X_val(0)$1" -> "31(0)"	[label=train_test_split];
-	"y_tr(0)$0" -> "i(0)"	[label=train_test_split];
 	"y_tr(0)$0" -> "X(0)$0"	[label=train_test_split];
 	"y_tr(0)$0" -> "y(0)$0"	[label=train_test_split];
 	"y_tr(0)$0" -> "0.1(0)"	[label=train_test_split];
+	"y_tr(0)$0" -> "i(0)"	[label=train_test_split];
 	"y_tr(0)$0" -> "31(0)"	[label=train_test_split];
-	"y_val(0)$1" -> "i(0)"	[label=train_test_split];
 	"y_val(0)$1" -> "X(0)$0"	[label=train_test_split];
 	"y_val(0)$1" -> "y(0)$0"	[label=train_test_split];
 	"y_val(0)$1" -> "0.1(0)"	[label=train_test_split];
+	"y_val(0)$1" -> "i(0)"	[label=train_test_split];
 	"y_val(0)$1" -> "31(0)"	[label=train_test_split];
 	"xg_train(0)$0" -> "lgb(0)"	[label=Dataset];
 	"xg_train(0)$0" -> "X_tr(0)$0"	[label=Dataset];
@@ -1352,16 +1347,20 @@ ast.Constant object at 0x12f953490>](0)"	[label=assignedFrom];
 	"lgbm_reg(0)$0" -> "best_params(0)$0"	[label=train];
 	"lgbm_reg(0)$0" -> "xg_train(0)$0"	[label=train];
 	"lgbm_reg(0)$0" -> "10000(0)"	[label=train];
-	"lgbm_reg(0)$0" -> "[<_ast.Name object at 0x12f8cc310>](0)"	[label=train];
+	"lgbm_reg(0)$0" -> "[<_ast.Name object at 0x7fd5009bbfd0>](0)"	[label=train];
 	"lgbm_reg(0)$0" -> "500(0)"	[label=train];
 	"lgbm_reg(0)$0" -> "250(0)"	[label=train];
 	"10000(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8cc310>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5009bbfd0>](0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"500(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"250(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"all_preds(0)$1" -> "X_test(0)$0"	[label=predict];
 	"all_preds(0)$1" -> "all_preds(0)$0"	[label=predict];
 	"all_preds(0)$1" -> "lgbm_reg(0)$0"	[label=predict];
+	"print[567/4]" -> "1(0)"	[label=print];
+	"print[567/4]" -> "i(0)"	[label=print];
+	"print[567/4]" -> " running done.(0)"	[label=print];
+	" running done.(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];
 	"sub(0)$0" -> "pd(0)"	[label=read_csv];
 	"sub(0)$0" -> "../input/bigquery-geotab-intersection-congestion/sample_submission.csv(0)"	[label=read_csv];
 	"../input/bigquery-geotab-intersection-congestion/sample_submission.csv(0)" -> "insightful-eda-modeling-lgbm-hyperopt.ipynb"	[label=appearsIn];

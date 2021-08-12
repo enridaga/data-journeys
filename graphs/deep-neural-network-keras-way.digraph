@@ -53,29 +53,20 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "train(0)$0"	[label=print];
-	"print[0]" -> "test(0)$0"	[label=print];
-	"print[0]" -> "input shape (0)"	[label=print];
-	"print[0]" -> "output shape (0)"	[label=print];
+	"print[23/0]" -> "check_output(0)"	[label=print];
+	"print[23/0]" -> "[<_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0310>](0)"	[label=print];
+	"print[23/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0310>](0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"utf8(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"print[28/0]" -> "train(0)$0"	[label=print];
+	"train(0)$1" -> "train(0)$0"	[label=head];
 	"test(0)$0" -> "pd(0)"	[label=read_csv];
 	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"input shape (0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
-	"output shape (0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5e50>](0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5e50>](0)"	[label=print];
-	"print[1]" -> "model(0)$2"	[label=print];
-	"model(0)$2" -> "Dense(0)"	[label=add];
-	"model(0)$2" -> "10(0)"	[label=add];
-	"model(0)$2" -> "model(0)$1"	[label=add];
-	"model(0)$2" -> "softmax(0)"	[label=add];
-	"utf8(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
-	"../input/train.csv(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
-	"train(0)$1" -> "train(0)$0"	[label=head];
 	"../input/test.csv(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"print[31/0]" -> "test(0)$0"	[label=print];
 	"test(0)$1" -> "test(0)$0"	[label=head];
 	"X_train(0)$0" -> "train(0)$1"	[label=astype];
 	"X_train(0)$0" -> "1(0)"	[label=astype];
@@ -173,7 +164,17 @@ digraph "" {
 	"standardize(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
 	"model(0)$1" -> "Flatten(0)"	[label=add];
 	"model(0)$1" -> "model(0)$0"	[label=add];
+	"model(0)$2" -> "Dense(0)"	[label=add];
+	"model(0)$2" -> "10(0)"	[label=add];
+	"model(0)$2" -> "model(0)$1"	[label=add];
+	"model(0)$2" -> "softmax(0)"	[label=add];
 	"softmax(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"input shape (0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"print[73/0]" -> "model(0)$2"	[label=print];
+	"print[73/0]" -> "input shape (0)"	[label=print];
+	"output shape (0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
+	"print[74/0]" -> "model(0)$2"	[label=print];
+	"print[74/0]" -> "output shape (0)"	[label=print];
 	"model(0)$3" -> "model(0)$2"	[label=compile];
 	"keras.preprocessing" -> "deep-neural-network-keras-way.ipynb"	[label=importedBy];
 	image -> "keras.preprocessing"	[label=importedBy];
@@ -264,8 +265,8 @@ digraph "" {
 	"plt(0)$15" -> "Accuracy(0)"	[label=ylabel];
 	"Accuracy(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
 	"plt(0)$16" -> "plt(0)$15"	[label=show];
-	"model(2)$0" -> "[<_ast.Call object at 0x12fc4fa60>, <_ast.Call object at 0x12fdcbbe0>, <_ast.Call object at 0x12fdcbfd0>, <_ast.Call object at 0x12fdcbd30>](\
-2)"	[label=Sequential];
+	"model(2)$0" -> "[<_ast.Call object at 0x7fd4c04f1bb0>, <_ast.Call object at 0x7fd4c04f18e0>, <_ast.Call object at 0x7fd4c04f11f0>, <_ast.Call object \
+at 0x7fd5008190d0>](2)"	[label=Sequential];
 	"model(2)$1" -> "model(2)$0"	[label=compile];
 	"0.01(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
 	"fc(0)" -> "deep-neural-network-keras-way.ipynb"	[label=appearsIn];
@@ -275,9 +276,9 @@ digraph "" {
 	"history(0)$1" -> "batches(0)$0"	[label=fit_generator];
 	"history(0)$1" -> "val_batches(0)$0"	[label=fit_generator];
 	"history(0)$1" -> "fc(0)$0"	[label=fit_generator];
-	"model(3)$0" -> "[<_ast.Call object at 0x12f88b0d0>, <_ast.Call object at 0x12f88b160>, <_ast.Call object at 0x12f88b400>, <_ast.Call object at 0x12f88b340>, <_\
-ast.Call object at 0x12f88b670>, <_ast.Call object at 0x12f88b4c0>, <_ast.Call object at 0x12f88b970>, <_ast.Call object at 0x12f88b9a0>, <_\
-ast.Call object at 0x12f88b7f0>, <_ast.Call object at 0x12f88bdc0>](3)"	[label=Sequential];
+	"model(3)$0" -> "[<_ast.Call object at 0x7fd500819e50>, <_ast.Call object at 0x7fd500819f40>, <_ast.Call object at 0x7fd4c04ff370>, <_ast.Call object \
+at 0x7fd4c04ff730>, <_ast.Call object at 0x7fd4c04ff2e0>, <_ast.Call object at 0x7fd4c04ff1c0>, <_ast.Call object at 0x7fd4c04ff400>, <_\
+ast.Call object at 0x7fd4c04ff100>, <_ast.Call object at 0x7fd4c04ffe20>, <_ast.Call object at 0x7fd4c04ffb20>](3)"	[label=Sequential];
 	"model(3)$1" -> "model(3)$0"	[label=compile];
 	"model(3)$1" -> "Adam(3)"	[label=compile];
 	"model(0)$4" -> "model(0)$3"	[label=assignedFrom];
@@ -307,10 +308,11 @@ ast.Call object at 0x12f88b7f0>, <_ast.Call object at 0x12f88bdc0>](3)"	[label=S
 	"history(0)$3" -> "batches(0)$1"	[label=fit_generator];
 	"history(0)$3" -> "val_batches(0)$1"	[label=fit_generator];
 	"history(0)$3" -> "model(0)$5"	[label=fit_generator];
-	"model(4)$0" -> "[<_ast.Call object at 0x12fadf4c0>, <_ast.Call object at 0x12fadf940>, <_ast.Call object at 0x12fadf580>, <_ast.Call object at 0x12fadfa30>, <_\
-ast.Call object at 0x12fadfca0>, <_ast.Call object at 0x12fadfd00>, <_ast.Call object at 0x12fadfe50>, <_ast.Call object at 0x12fadfe20>, <_\
-ast.Call object at 0x12f9a6040>, <_ast.Call object at 0x12f9a61f0>, <_ast.Call object at 0x12f9a6250>, <_ast.Call object at 0x12f9a62b0>, <_\
-ast.Call object at 0x12f9a6310>, <_ast.Call object at 0x12f9a6430>, <_ast.Call object at 0x12f9a6490>](4)"	[label=Sequential];
+	"model(4)$0" -> "[<_ast.Call object at 0x7fd4c04e64c0>, <_ast.Call object at 0x7fd4c04e6160>, <_ast.Call object at 0x7fd4c04e66a0>, <_ast.Call object \
+at 0x7fd4c04e6850>, <_ast.Call object at 0x7fd4c04e69d0>, <_ast.Call object at 0x7fd4c04e6640>, <_ast.Call object at 0x7fd4c04e6820>, <_\
+ast.Call object at 0x7fd4c04e6c10>, <_ast.Call object at 0x7fd4c04e6d30>, <_ast.Call object at 0x7fd4c04e6ee0>, <_ast.Call object \
+at 0x7fd4c04e6400>, <_ast.Call object at 0x7fd4c04e6f10>, <_ast.Call object at 0x7fd4c04e6910>, <_ast.Call object at 0x7fd4c04af130>, <_\
+ast.Call object at 0x7fd4c04af190>](4)"	[label=Sequential];
 	"model(4)$1" -> "model(4)$0"	[label=compile];
 	"model(4)$1" -> "Adam(4)"	[label=compile];
 	"model(0)$6" -> "0.01(0)"	[label=assignedFrom];

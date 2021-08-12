@@ -62,7 +62,7 @@ digraph "" {
 	"k_size(3)" -> "convlayer[2]"	[label=_argToVar];
 	"stride(3)" -> "convlayer[3]"	[label=_argToVar];
 	"padding(3)" -> "convlayer[4]"	[label=_argToVar];
-	"block(3)$0" -> "[<_ast.Call object at 0x12f951940>, <_ast.Call object at 0x12f9512b0>, <_ast.Call object at 0x12f9515e0>](3)"	[label=assignedFrom];
+	"block(3)$0" -> "[<_ast.Call object at 0x7fd5008720a0>, <_ast.Call object at 0x7fd4c04cc5e0>, <_ast.Call object at 0x7fd4c04cc8b0>](3)"	[label=assignedFrom];
 	"self(2)$2" -> "self(2)$1"	[label=Sequential];
 	"self(2)$2" -> "self(2)$2"	[label=Sequential];
 	"self(2)$2" -> "nn(2)"	[label=Sequential];
@@ -95,7 +95,7 @@ digraph "" {
 	"stride(7)" -> "convlayer[3]"	[label=_argToVar];
 	"padding(7)" -> "convlayer[4]"	[label=_argToVar];
 	"bn(7)" -> "convlayer[5]"	[label=_argToVar];
-	"block(7)$0" -> "[<_ast.Call object at 0x12f9571f0>](7)"	[label=assignedFrom];
+	"block(7)$0" -> "[<_ast.Call object at 0x7fd5007f05e0>](7)"	[label=assignedFrom];
 	"block(7)$1" -> "n_output(7)"	[label=append];
 	"block(7)$1" -> "block(7)$0"	[label=append];
 	"block(7)$1" -> "nn(7)"	[label=append];
@@ -171,15 +171,15 @@ digraph "" {
 	"img(11)$1" -> "img(11)$1"	[label=transform2];
 	"self(12)" -> "__len__[0]"	[label=_argToVar];
 	"transform1(0)$0" -> "transforms(0)"	[label=Compose];
-	"transform1(0)$0" -> "[<_ast.Call object at 0x130532040>, <_ast.Call object at 0x130532310>](0)"	[label=Compose];
-	"[<_ast.Call object at 0x130532040>, <_ast.Call object at 0x130532310>](0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f8a61c0>](0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"random_transforms(0)$0" -> "[<_ast.Call object at 0x12f8a61c0>](0)"	[label=assignedFrom];
+	"transform1(0)$0" -> "[<_ast.Call object at 0x7fd500833f40>, <_ast.Call object at 0x7fd500833b50>](0)"	[label=Compose];
+	"[<_ast.Call object at 0x7fd500833f40>, <_ast.Call object at 0x7fd500833b50>](0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd500833490>](0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
+	"random_transforms(0)$0" -> "[<_ast.Call object at 0x7fd500833490>](0)"	[label=assignedFrom];
 	"transform2(0)$0" -> "transforms(0)"	[label=Compose];
-	"transform2(0)$0" -> "[<_ast.Call object at 0x12f8a6460>, <_ast.Call object at 0x12f8a6340>, <_ast.Call object at 0x12f8a61f0>, <_ast.Call object at 0x12f8a67c0>](\
-0)"	[label=Compose];
-	"[<_ast.Call object at 0x12f8a6460>, <_ast.Call object at 0x12f8a6340>, <_ast.Call object at 0x12f8a61f0>, <_ast.Call object at 0x12f8a67c0>](\
-0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
+	"transform2(0)$0" -> "[<_ast.Call object at 0x7fd5008334c0>, <_ast.Call object at 0x7fd5009c1280>, <_ast.Call object at 0x7fd5009c1460>, <_ast.Call object \
+at 0x7fd5009c11f0>](0)"	[label=Compose];
+	"[<_ast.Call object at 0x7fd5008334c0>, <_ast.Call object at 0x7fd5009c1280>, <_ast.Call object at 0x7fd5009c1460>, <_ast.Call object \
+at 0x7fd5009c11f0>](0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
 	"../input/all-dogs/all-dogs/(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
 	"train_dataset(0)$0" -> "transform1(0)$0"	[label=DogDataset];
 	"train_dataset(0)$0" -> "transform2(0)$0"	[label=DogDataset];
@@ -321,16 +321,15 @@ digraph "" {
 	"errG(0)$1" -> "errG(0)$0"	[label=backward];
 	"optimizerG(0)$1" -> "optimizerG(0)$0"	[label=step];
 	"[\%d/\%d][\%d/\%d] Loss_D: \%.4f Loss_G: \%.4f(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"print[0]" -> "[\%d/\%d][\%d/\%d] Loss_D: \%.4f Loss_G: \%.4f(0)"	[label=print];
-	"print[1]" -> "epoch(0)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[3]" -> "epochs(0)$0"	[label=print];
-	"print[4]" -> "ii(0)"	[label=print];
-	"print[5]" -> "1(0)"	[label=print];
-	"print[6]" -> "len(0)"	[label=print];
-	"print[7]" -> "train_loader(0)$0"	[label=print];
-	"print[8]" -> "errD(0)$1"	[label=print];
-	"print[9]" -> "errG(0)$1"	[label=print];
+	"print[179/12]" -> "epochs(0)$0"	[label=print];
+	"print[179/12]" -> "train_loader(0)$0"	[label=print];
+	"print[179/12]" -> "1(0)"	[label=print];
+	"print[179/12]" -> "ii(0)"	[label=print];
+	"print[179/12]" -> "len(0)"	[label=print];
+	"print[179/12]" -> "epoch(0)"	[label=print];
+	"print[179/12]" -> "errD(0)$1"	[label=print];
+	"print[179/12]" -> "errG(0)$1"	[label=print];
+	"print[179/12]" -> "[\%d/\%d][\%d/\%d] Loss_D: \%.4f Loss_G: \%.4f(0)"	[label=print];
 	"gen_z(0)$0" -> "torch(0)"	[label=randn];
 	"gen_z(0)$0" -> "32(0)"	[label=randn];
 	"gen_z(0)$0" -> "nz(0)$0"	[label=randn];
@@ -384,18 +383,17 @@ digraph "" {
 	"i_image(0)" -> "0(0)"	[label=iteratorOf];
 	"i_image(0)" -> "range(0)"	[label=iteratorOf];
 	"i_image(0)" -> "gen_images(0)$2"	[label=iteratorOf];
-	"save_image[0]" -> "gen_images(0)$2"	[label=save_image];
-	"save_image[1]" -> "i_image(0)"	[label=save_image];
-	"save_image[2]" -> "os(0)$0"	[label=save_image];
-	"save_image[3]" -> "../output_images(0)"	[label=save_image];
+	"save_image[201/8]" -> "os(0)$0"	[label=save_image];
+	"save_image[201/8]" -> "../output_images(0)"	[label=save_image];
+	"save_image[201/8]" -> "i_batch(0)"	[label=save_image];
+	"save_image[201/8]" -> "gen_images(0)$2"	[label=save_image];
+	"save_image[201/8]" -> "i_image(0)"	[label=save_image];
+	"save_image[201/8]" -> "image_(0)"	[label=save_image];
+	"save_image[201/8]" -> "05d(0)"	[label=save_image];
+	"save_image[201/8]" -> ".png(0)"	[label=save_image];
 	"image_(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"save_image[4]" -> "image_(0)"	[label=save_image];
-	"save_image[5]" -> "i_batch(0)"	[label=save_image];
-	"save_image[6]" -> "i_image(0)"	[label=save_image];
 	"05d(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"save_image[7]" -> "05d(0)"	[label=save_image];
 	".png(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
-	"save_image[8]" -> ".png(0)"	[label=save_image];
 	shutil -> "ralsgan-dogs.ipynb"	[label=importedBy];
 	"shutil(0)" -> "ralsgan-dogs.ipynb"	[label=appearsIn];
 	"shutil(0)" -> shutil	[label=assignedFrom];

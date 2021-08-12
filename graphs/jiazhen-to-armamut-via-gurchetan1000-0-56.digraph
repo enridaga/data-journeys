@@ -14,64 +14,9 @@ digraph "" {
 	os -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=importedBy];
 	"os(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "all_df(0)$1"	[label=print];
-	"print[0]" -> "Processing lag(2)"	[label=print];
-	"print[0]" -> "Leak values found in train(2)"	[label=print];
-	"print[0]" -> "\% of correct leaks values in train (2)"	[label=print];
-	"print[0]" -> "Na count(2)"	[label=print];
-	"print[0]" -> "Score (filled with nonzero mean)(2)"	[label=print];
-	"print[0]" -> "best_score(0)$0"	[label=print];
-	"print[0]" -> "Processing lag(4)"	[label=print];
-	"print[0]" -> "Leak values found in test(4)"	[label=print];
-	"print[0]" -> "baseline_sub_lag_(0)"	[label=print];
-	"all_df(0)$1" -> "all_df(0)$0"	[label=astype];
-	"all_df(0)$1" -> "str(0)"	[label=astype];
-	"best_score(0)$0" -> "np(0)"	[label=min];
-	"best_score(0)$0" -> "result(0)$1"	[label=min];
-	"best_score(0)$0" -> "score(0)"	[label=min];
-	"baseline_sub_lag_(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"print[8/0]" -> "os(0)"	[label=print];
+	"print[8/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"print[1]" -> "best_score(0)$0"	[label=print];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "i(2)"	[label=print];
-	"print[1]" -> "leaky_value_counts(2)$1"	[label=print];
-	"print[1]" -> "leaky_value_corrects(2)$1"	[label=print];
-	"print[1]" -> "tmp(2)$1"	[label=print];
-	"print[1]" -> "scores(2)$1"	[label=print];
-	"print[1]" -> "i(4)"	[label=print];
-	"print[1]" -> "leaky_value_counts(4)$1"	[label=print];
-	"print[1]" -> "best_lag(0)$1"	[label=print];
-	"i(2)" -> "max_nlags(2)$0"	[label=iteratorOf];
-	"i(2)" -> "range(2)"	[label=iteratorOf];
-	"leaky_value_counts(2)$1" -> "0(2)"	[label=append];
-	"leaky_value_counts(2)$1" -> "leaky_value_counts(2)$0"	[label=append];
-	"leaky_value_counts(2)$1" -> "compiled_leak(2)"	[label=append];
-	"leaky_value_counts(2)$1" -> "train_leak(2)$5"	[label=append];
-	"leaky_value_counts(2)$1" -> "sum(2)"	[label=append];
-	"leaky_value_corrects(2)$1" -> "leaky_value_counts(2)$1"	[label=append];
-	"leaky_value_corrects(2)$1" -> "1(2)"	[label=append];
-	"leaky_value_corrects(2)$1" -> "leaky_value_corrects(2)$0"	[label=append];
-	"leaky_value_corrects(2)$1" -> "_correct_counts(2)$0"	[label=append];
-	"leaky_value_corrects(2)$1" -> "1.0(2)"	[label=append];
-	"tmp(2)$1" -> "zeroleak(2)$0"	[label=assignedFrom];
-	"tmp(2)$1" -> "tmp(2)$0"	[label=assignedFrom];
-	"tmp(2)$1" -> "nonzero_mean(2)"	[label=assignedFrom];
-	"scores(2)$1" -> "tmp(2)$1"	[label=append];
-	"scores(2)$1" -> "np(2)"	[label=append];
-	"scores(2)$1" -> "scores(2)$0"	[label=append];
-	"scores(2)$1" -> "compiled_leak(2)"	[label=append];
-	"scores(2)$1" -> "mean_squared_error(2)"	[label=append];
-	"scores(2)$1" -> "y(2)"	[label=append];
-	"scores(2)$1" -> "14.49(2)"	[label=append];
-	"i(4)" -> "max_nlags(4)"	[label=iteratorOf];
-	"i(4)" -> "range(4)"	[label=iteratorOf];
-	"leaky_value_counts(4)$1" -> "0(4)"	[label=append];
-	"leaky_value_counts(4)$1" -> "leaky_value_counts(4)$0"	[label=append];
-	"leaky_value_counts(4)$1" -> "compiled_leak(4)"	[label=append];
-	"leaky_value_counts(4)$1" -> "test_leak(4)$5"	[label=append];
-	"leaky_value_counts(4)$1" -> "sum(4)"	[label=append];
-	"best_lag(0)$1" -> "37(0)"	[label=assignedFrom];
 	lightgbm -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=importedBy];
 	"lgb(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"lgb(0)" -> lightgbm	[label=assignedFrom];
@@ -134,8 +79,8 @@ digraph "" {
 	"f(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"transact_cols(0)$0" -> "train(0)$0"	[label=assignedFrom];
 	"transact_cols(0)$0" -> "f(0)"	[label=assignedFrom];
-	"transact_cols(0)$0" -> "[<_ast.Constant object at 0x12f88ab80>, <_ast.Constant object at 0x12f88a1f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88ab80>, <_ast.Constant object at 0x12f88a1f0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"transact_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc070>, <_ast.Constant object at 0x7fd4c04cc610>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc070>, <_ast.Constant object at 0x7fd4c04cc610>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "np(0)"	[label=assignedFrom];
 	"y(0)$0" -> "train(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "target(0)"	[label=assignedFrom];
@@ -144,77 +89,88 @@ digraph "" {
 	"test(0)$1" -> "test(0)$0"	[label=mean];
 	"test(0)$1" -> "target(0)"	[label=mean];
 	"all_df(0)$0" -> "pd(0)"	[label=reset_index];
-	"all_df(0)$0" -> "[<_ast.Name object at 0x12fade4c0>, <_ast.Name object at 0x12fade130>](0)"	[label=reset_index];
+	"all_df(0)$0" -> "[<_ast.Name object at 0x7fd500999b80>, <_ast.Name object at 0x7fd500999ac0>](0)"	[label=reset_index];
 	"all_df(0)$0" -> "True(0)"	[label=reset_index];
-	"[<_ast.Name object at 0x12fade4c0>, <_ast.Name object at 0x12fade130>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500999b80>, <_ast.Name object at 0x7fd500999ac0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"True(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"all_df(0)$1" -> "all_df(0)$0"	[label=astype];
+	"all_df(0)$1" -> "str(0)"	[label=astype];
 	"str(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade970>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant \
-object at 0x12fadef40>, <_ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12fade250>, <_\
-ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12fade5b0>, <_ast.Constant object at 0x12faded30>, <_ast.Constant \
-object at 0x12fade490>, <_ast.Constant object at 0x12fade940>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade5e0>, <_\
-ast.Constant object at 0x12fadeb20>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant \
-object at 0x12fade910>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fade880>, <_\
-ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant object at 0x12fade3d0>, <_ast.Constant \
-object at 0x12fade760>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade610>, <_\
-ast.Constant object at 0x12fadeeb0>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade040>, <_ast.Constant \
-object at 0x12fadec10>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant object at 0x12fadeac0>, <_\
-ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fadef70>, <_ast.Constant \
-object at 0x12fade2b0>, <_ast.Constant object at 0x12fade700>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade970>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant \
-object at 0x12fadef40>, <_ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12fade250>, <_\
-ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12fade5b0>, <_ast.Constant object at 0x12faded30>, <_ast.Constant \
-object at 0x12fade490>, <_ast.Constant object at 0x12fade940>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade5e0>, <_\
-ast.Constant object at 0x12fadeb20>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant \
-object at 0x12fade910>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fade880>, <_\
-ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant object at 0x12fade3d0>, <_ast.Constant \
-object at 0x12fade760>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade610>, <_\
-ast.Constant object at 0x12fadeeb0>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade040>, <_ast.Constant \
-object at 0x12fadec10>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant object at 0x12fadeac0>, <_\
-ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fadef70>, <_ast.Constant \
-object at 0x12fade2b0>, <_ast.Constant object at 0x12fade700>](0)"	[label=assignedFrom];
-	"[<_ast.List object at 0x12fade9d0>, <_ast.List object at 0x12f9570d0>, <_ast.List object at 0x12f9575e0>, <_ast.List object at 0x12f8f5460>, <_\
-ast.List object at 0x12f8f5fd0>, <_ast.List object at 0x12f951dc0>, <_ast.List object at 0x12f9513a0>, <_ast.List object at 0x12fc4f3d0>, <_\
-ast.List object at 0x12fc4f7f0>, <_ast.List object at 0x1305327f0>, <_ast.List object at 0x130532d00>, <_ast.List object at 0x12f85ecd0>, <_\
-ast.List object at 0x12f89f280>, <_ast.List object at 0x12f89fbe0>, <_ast.List object at 0x12ff2f520>, <_ast.List object at 0x12ff2fca0>](\
+	"print[36/0]" -> "all_df(0)$1"	[label=print];
+	"[<_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at 0x7fd500999130>, <_\
+ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant \
+object at 0x7fd500999550>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object \
+at 0x7fd500999220>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at \
+0x7fd500999700>, <_ast.Constant object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd500999df0>, <_\
+ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant \
+object at 0x7fd500999040>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant object \
+at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at \
+0x7fd500999e80>, <_ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999610>, <_\
+ast.Constant object at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999730>, <_ast.Constant \
+object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object \
+at 0x7fd500999a90>, <_ast.Constant object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at \
+0x7fd500999d00>, <_ast.Constant object at 0x7fd500999af0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at 0x7fd500999130>, <_\
+ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant \
+object at 0x7fd500999550>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object \
+at 0x7fd500999220>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at \
+0x7fd500999700>, <_ast.Constant object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd500999df0>, <_\
+ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant \
+object at 0x7fd500999040>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant object \
+at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at \
+0x7fd500999e80>, <_ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999610>, <_\
+ast.Constant object at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999730>, <_ast.Constant \
+object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object \
+at 0x7fd500999a90>, <_ast.Constant object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999280>, <_ast.Constant object at \
+0x7fd500999d00>, <_ast.Constant object at 0x7fd500999af0>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd5009993a0>, <_ast.List object at 0x7fd50085bd00>, <_ast.List object at 0x7fd50085b790>, <_ast.List object \
+at 0x7fd500836d00>, <_ast.List object at 0x7fd500836280>, <_ast.List object at 0x7fd50080d400>, <_ast.List object at 0x7fd50080d340>, <_\
+ast.List object at 0x7fd500832a30>, <_ast.List object at 0x7fd500832160>, <_ast.List object at 0x7fd4902c5ee0>, <_ast.List object \
+at 0x7fd4902c5730>, <_ast.List object at 0x7fd5007f0d90>, <_ast.List object at 0x7fd4c04ff520>, <_ast.List object at 0x7fd4c04ff220>, <_\
+ast.List object at 0x7fd4902ab610>, <_ast.List object at 0x7fd4902ab070>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"colgroups(0)$0" -> "[<_ast.List object at 0x7fd5009993a0>, <_ast.List object at 0x7fd50085bd00>, <_ast.List object at 0x7fd50085b790>, <_ast.List object \
+at 0x7fd500836d00>, <_ast.List object at 0x7fd500836280>, <_ast.List object at 0x7fd50080d400>, <_ast.List object at 0x7fd50080d340>, <_\
+ast.List object at 0x7fd500832a30>, <_ast.List object at 0x7fd500832160>, <_ast.List object at 0x7fd4902c5ee0>, <_ast.List object \
+at 0x7fd4902c5730>, <_ast.List object at 0x7fd5007f0d90>, <_ast.List object at 0x7fd4c04ff520>, <_ast.List object at 0x7fd4c04ff220>, <_\
+ast.List object at 0x7fd4902ab610>, <_ast.List object at 0x7fd4902ab070>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd500828160>, <_ast.List object at 0x7fd500828910>, <_ast.List object at 0x7fd50082f100>, <_ast.List object \
+at 0x7fd50082f8b0>, <_ast.List object at 0x7fd5008100a0>, <_ast.List object at 0x7fd500810850>, <_ast.List object at 0x7fd500822040>, <_\
+ast.List object at 0x7fd5008227f0>, <_ast.List object at 0x7fd500822fa0>, <_ast.List object at 0x7fd50082bd00>, <_ast.List object \
+at 0x7fd50082b490>, <_ast.List object at 0x7fd5008137f0>, <_ast.List object at 0x7fd500813f70>, <_ast.List object at 0x7fd5008296d0>, <_\
+ast.List object at 0x7fd500829e80>, <_ast.List object at 0x7fd4c095f670>, <_ast.List object at 0x7fd4c095fe20>, <_ast.List object \
+at 0x7fd4c098d610>, <_ast.List object at 0x7fd4c098ddc0>, <_ast.List object at 0x7fd4c09585b0>, <_ast.List object at 0x7fd4c0958d60>, <_\
+ast.List object at 0x7fd4c0984550>, <_ast.List object at 0x7fd4c0984d30>, <_ast.List object at 0x7fd4c09664f0>, <_ast.List object \
+at 0x7fd4c0966ca0>, <_ast.List object at 0x7fd4c098b490>, <_ast.List object at 0x7fd4c098bc40>, <_ast.List object at 0x7fd4c095b430>, <_\
+ast.List object at 0x7fd4c095bbe0>, <_ast.List object at 0x7fd5008a83d0>, <_ast.List object at 0x7fd5008a8b80>, <_ast.List object \
+at 0x7fd5008aa370>, <_ast.List object at 0x7fd5008aab20>, <_ast.List object at 0x7fd50088b310>, <_ast.List object at 0x7fd50088bac0>, <_\
+ast.List object at 0x7fd5008af2e0>, <_ast.List object at 0x7fd5008afac0>, <_ast.List object at 0x7fd500879250>, <_ast.List object \
+at 0x7fd500879a00>, <_ast.List object at 0x7fd500896220>, <_ast.List object at 0x7fd500896a00>, <_ast.List object at 0x7fd50087a190>, <_\
+ast.List object at 0x7fd50087a9a0>, <_ast.List object at 0x7fd5008b5130>, <_ast.List object at 0x7fd5008b58e0>, <_ast.List object \
+at 0x7fd5008650d0>, <_ast.List object at 0x7fd5008658b0>, <_ast.List object at 0x7fd50084f070>, <_ast.List object at 0x7fd50084f820>, <_\
+ast.List object at 0x7fd50084ffd0>, <_ast.List object at 0x7fd50083a850>, <_ast.List object at 0x7fd50083aee0>, <_ast.List object \
+at 0x7fd500840760>, <_ast.List object at 0x7fd500840f10>, <_ast.List object at 0x7fd500852700>, <_ast.List object at 0x7fd500852eb0>, <_\
+ast.List object at 0x7fd5008507c0>, <_ast.List object at 0x7fd500850eb0>, <_ast.List object at 0x7fd50084e6d0>, <_ast.List object \
+at 0x7fd50084ee20>, <_ast.List object at 0x7fd50086c730>, <_ast.List object at 0x7fd50086cfa0>, <_ast.List object at 0x7fd4c04d55b0>](\
 0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"colgroups(0)$0" -> "[<_ast.List object at 0x12fade9d0>, <_ast.List object at 0x12f9570d0>, <_ast.List object at 0x12f9575e0>, <_ast.List object at 0x12f8f5460>, <_\
-ast.List object at 0x12f8f5fd0>, <_ast.List object at 0x12f951dc0>, <_ast.List object at 0x12f9513a0>, <_ast.List object at 0x12fc4f3d0>, <_\
-ast.List object at 0x12fc4f7f0>, <_ast.List object at 0x1305327f0>, <_ast.List object at 0x130532d00>, <_ast.List object at 0x12f85ecd0>, <_\
-ast.List object at 0x12f89f280>, <_ast.List object at 0x12f89fbe0>, <_ast.List object at 0x12ff2f520>, <_ast.List object at 0x12ff2fca0>](\
+	"colgps(0)$0" -> "[<_ast.List object at 0x7fd500828160>, <_ast.List object at 0x7fd500828910>, <_ast.List object at 0x7fd50082f100>, <_ast.List object \
+at 0x7fd50082f8b0>, <_ast.List object at 0x7fd5008100a0>, <_ast.List object at 0x7fd500810850>, <_ast.List object at 0x7fd500822040>, <_\
+ast.List object at 0x7fd5008227f0>, <_ast.List object at 0x7fd500822fa0>, <_ast.List object at 0x7fd50082bd00>, <_ast.List object \
+at 0x7fd50082b490>, <_ast.List object at 0x7fd5008137f0>, <_ast.List object at 0x7fd500813f70>, <_ast.List object at 0x7fd5008296d0>, <_\
+ast.List object at 0x7fd500829e80>, <_ast.List object at 0x7fd4c095f670>, <_ast.List object at 0x7fd4c095fe20>, <_ast.List object \
+at 0x7fd4c098d610>, <_ast.List object at 0x7fd4c098ddc0>, <_ast.List object at 0x7fd4c09585b0>, <_ast.List object at 0x7fd4c0958d60>, <_\
+ast.List object at 0x7fd4c0984550>, <_ast.List object at 0x7fd4c0984d30>, <_ast.List object at 0x7fd4c09664f0>, <_ast.List object \
+at 0x7fd4c0966ca0>, <_ast.List object at 0x7fd4c098b490>, <_ast.List object at 0x7fd4c098bc40>, <_ast.List object at 0x7fd4c095b430>, <_\
+ast.List object at 0x7fd4c095bbe0>, <_ast.List object at 0x7fd5008a83d0>, <_ast.List object at 0x7fd5008a8b80>, <_ast.List object \
+at 0x7fd5008aa370>, <_ast.List object at 0x7fd5008aab20>, <_ast.List object at 0x7fd50088b310>, <_ast.List object at 0x7fd50088bac0>, <_\
+ast.List object at 0x7fd5008af2e0>, <_ast.List object at 0x7fd5008afac0>, <_ast.List object at 0x7fd500879250>, <_ast.List object \
+at 0x7fd500879a00>, <_ast.List object at 0x7fd500896220>, <_ast.List object at 0x7fd500896a00>, <_ast.List object at 0x7fd50087a190>, <_\
+ast.List object at 0x7fd50087a9a0>, <_ast.List object at 0x7fd5008b5130>, <_ast.List object at 0x7fd5008b58e0>, <_ast.List object \
+at 0x7fd5008650d0>, <_ast.List object at 0x7fd5008658b0>, <_ast.List object at 0x7fd50084f070>, <_ast.List object at 0x7fd50084f820>, <_\
+ast.List object at 0x7fd50084ffd0>, <_ast.List object at 0x7fd50083a850>, <_ast.List object at 0x7fd50083aee0>, <_ast.List object \
+at 0x7fd500840760>, <_ast.List object at 0x7fd500840f10>, <_ast.List object at 0x7fd500852700>, <_ast.List object at 0x7fd500852eb0>, <_\
+ast.List object at 0x7fd5008507c0>, <_ast.List object at 0x7fd500850eb0>, <_ast.List object at 0x7fd50084e6d0>, <_ast.List object \
+at 0x7fd50084ee20>, <_ast.List object at 0x7fd50086c730>, <_ast.List object at 0x7fd50086cfa0>, <_ast.List object at 0x7fd4c04d55b0>](\
 0)"	[label=assignedFrom];
-	"[<_ast.List object at 0x12fafc5b0>, <_ast.List object at 0x12fafcee0>, <_ast.List object at 0x12f88e400>, <_ast.List object at 0x12f88ebb0>, <_\
-ast.List object at 0x12f89d430>, <_ast.List object at 0x12f89dc10>, <_ast.List object at 0x12f894340>, <_ast.List object at 0x12f894af0>, <_\
-ast.List object at 0x12f87a2e0>, <_ast.List object at 0x12f87aa90>, <_ast.List object at 0x12fb05280>, <_ast.List object at 0x12fb05a30>, <_\
-ast.List object at 0x12fafd220>, <_ast.List object at 0x12fafd9d0>, <_ast.List object at 0x12fb101f0>, <_ast.List object at 0x12fb10970>, <_\
-ast.List object at 0x12fafa160>, <_ast.List object at 0x12fafa910>, <_ast.List object at 0x12fb14100>, <_ast.List object at 0x12fb148b0>, <_\
-ast.List object at 0x12faeb0a0>, <_ast.List object at 0x12faeb850>, <_ast.List object at 0x12fb12040>, <_ast.List object at 0x12fb127f0>, <_\
-ast.List object at 0x12fb12fa0>, <_ast.List object at 0x12fad7790>, <_ast.List object at 0x12fad7f40>, <_ast.List object at 0x12f8c4730>, <_\
-ast.List object at 0x12f8c4ee0>, <_ast.List object at 0x12f8c0700>, <_ast.List object at 0x12f8c0e80>, <_ast.List object at 0x12f8b5670>, <_\
-ast.List object at 0x12f8b5e20>, <_ast.List object at 0x12f8e4640>, <_ast.List object at 0x12f8e4e20>, <_ast.List object at 0x12f8a75b0>, <_\
-ast.List object at 0x12f8a7d60>, <_ast.List object at 0x12f8ba580>, <_ast.List object at 0x12f8bad60>, <_ast.List object at 0x12f8d34f0>, <_\
-ast.List object at 0x12f8d3cd0>, <_ast.List object at 0x12f8e54c0>, <_ast.List object at 0x12f8e5ca0>, <_ast.List object at 0x12f8e1460>, <_\
-ast.List object at 0x12f8e1be0>, <_ast.List object at 0x12f9563d0>, <_ast.List object at 0x12f956b80>, <_ast.List object at 0x12f934370>, <_\
-ast.List object at 0x12f934b20>, <_ast.List object at 0x12f960340>, <_ast.List object at 0x12f960ac0>, <_ast.List object at 0x12f92d2b0>, <_\
-ast.List object at 0x12f92da60>, <_ast.List object at 0x12f94c280>, <_ast.List object at 0x12f94ca00>, <_ast.List object at 0x12f9471f0>, <_\
-ast.List object at 0x12f9479a0>, <_ast.List object at 0x12f94f190>, <_ast.List object at 0x12f94f940>, <_ast.List object at 0x12f937130>, <_\
-ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List object at 0x12f92e6a0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"colgps(0)$0" -> "[<_ast.List object at 0x12fafc5b0>, <_ast.List object at 0x12fafcee0>, <_ast.List object at 0x12f88e400>, <_ast.List object at 0x12f88ebb0>, <_\
-ast.List object at 0x12f89d430>, <_ast.List object at 0x12f89dc10>, <_ast.List object at 0x12f894340>, <_ast.List object at 0x12f894af0>, <_\
-ast.List object at 0x12f87a2e0>, <_ast.List object at 0x12f87aa90>, <_ast.List object at 0x12fb05280>, <_ast.List object at 0x12fb05a30>, <_\
-ast.List object at 0x12fafd220>, <_ast.List object at 0x12fafd9d0>, <_ast.List object at 0x12fb101f0>, <_ast.List object at 0x12fb10970>, <_\
-ast.List object at 0x12fafa160>, <_ast.List object at 0x12fafa910>, <_ast.List object at 0x12fb14100>, <_ast.List object at 0x12fb148b0>, <_\
-ast.List object at 0x12faeb0a0>, <_ast.List object at 0x12faeb850>, <_ast.List object at 0x12fb12040>, <_ast.List object at 0x12fb127f0>, <_\
-ast.List object at 0x12fb12fa0>, <_ast.List object at 0x12fad7790>, <_ast.List object at 0x12fad7f40>, <_ast.List object at 0x12f8c4730>, <_\
-ast.List object at 0x12f8c4ee0>, <_ast.List object at 0x12f8c0700>, <_ast.List object at 0x12f8c0e80>, <_ast.List object at 0x12f8b5670>, <_\
-ast.List object at 0x12f8b5e20>, <_ast.List object at 0x12f8e4640>, <_ast.List object at 0x12f8e4e20>, <_ast.List object at 0x12f8a75b0>, <_\
-ast.List object at 0x12f8a7d60>, <_ast.List object at 0x12f8ba580>, <_ast.List object at 0x12f8bad60>, <_ast.List object at 0x12f8d34f0>, <_\
-ast.List object at 0x12f8d3cd0>, <_ast.List object at 0x12f8e54c0>, <_ast.List object at 0x12f8e5ca0>, <_ast.List object at 0x12f8e1460>, <_\
-ast.List object at 0x12f8e1be0>, <_ast.List object at 0x12f9563d0>, <_ast.List object at 0x12f956b80>, <_ast.List object at 0x12f934370>, <_\
-ast.List object at 0x12f934b20>, <_ast.List object at 0x12f960340>, <_ast.List object at 0x12f960ac0>, <_ast.List object at 0x12f92d2b0>, <_\
-ast.List object at 0x12f92da60>, <_ast.List object at 0x12f94c280>, <_ast.List object at 0x12f94ca00>, <_ast.List object at 0x12f9471f0>, <_\
-ast.List object at 0x12f9479a0>, <_ast.List object at 0x12f94f190>, <_ast.List object at 0x12f94f940>, <_ast.List object at 0x12f937130>, <_\
-ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List object at 0x12f92e6a0>](0)"	[label=assignedFrom];
 	"pattern_1964666(0)$0" -> "pd(0)"	[label=read_csv];
 	"pattern_1964666(0)$0" -> "../input/pattern-found/pattern_1964666.66.csv(0)"	[label=read_csv];
 	"../input/pattern-found/pattern_1964666.66.csv(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
@@ -234,23 +190,23 @@ ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List o
 	"pattern_3255483(0)$0" -> "../input/pattern-found/pattern_3255483.88.csv(0)"	[label=read_csv];
 	"../input/pattern-found/pattern_3255483.88.csv(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_1964666(0)$1" -> "pattern_1964666(0)$0"	[label=drop];
-	"pattern_1964666(0)$1" -> "[<_ast.Constant object at 0x12f902820>, <_ast.Constant object at 0x12f902850>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f902820>, <_ast.Constant object at 0x12f902850>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_1964666(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cb520>, <_ast.Constant object at 0x7fd4c04cb550>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cb520>, <_ast.Constant object at 0x7fd4c04cb550>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_1166666(0)$1" -> "pattern_1166666(0)$0"	[label=drop];
-	"pattern_1166666(0)$1" -> "[<_ast.Constant object at 0x12f902ac0>, <_ast.Constant object at 0x12f902af0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f902ac0>, <_ast.Constant object at 0x12f902af0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_1166666(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cb7c0>, <_ast.Constant object at 0x7fd4c04cb7f0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cb7c0>, <_ast.Constant object at 0x7fd4c04cb7f0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_812666(0)$1" -> "pattern_812666(0)$0"	[label=drop];
-	"pattern_812666(0)$1" -> "[<_ast.Constant object at 0x12f902d60>, <_ast.Constant object at 0x12f902d90>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f902d60>, <_ast.Constant object at 0x12f902d90>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_812666(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cba60>, <_ast.Constant object at 0x7fd4c04cba90>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cba60>, <_ast.Constant object at 0x7fd4c04cba90>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_2002166(0)$1" -> "pattern_2002166(0)$0"	[label=drop];
-	"pattern_2002166(0)$1" -> "[<_ast.Constant object at 0x12f8ec040>, <_ast.Constant object at 0x12f8ec070>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8ec040>, <_ast.Constant object at 0x12f8ec070>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_2002166(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cbd00>, <_ast.Constant object at 0x7fd4c04cbd30>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cbd00>, <_ast.Constant object at 0x7fd4c04cbd30>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_3160000(0)$1" -> "pattern_3160000(0)$0"	[label=drop];
-	"pattern_3160000(0)$1" -> "[<_ast.Constant object at 0x12f8ec2e0>, <_ast.Constant object at 0x12f8ec310>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8ec2e0>, <_ast.Constant object at 0x12f8ec310>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_3160000(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cbfa0>, <_ast.Constant object at 0x7fd4c04cbfd0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cbfa0>, <_ast.Constant object at 0x7fd4c04cbfd0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_3255483(0)$1" -> "pattern_3255483(0)$0"	[label=drop];
-	"pattern_3255483(0)$1" -> "[<_ast.Constant object at 0x12f8ec580>, <_ast.Constant object at 0x12f8ec5b0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8ec580>, <_ast.Constant object at 0x12f8ec5b0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"pattern_3255483(0)$1" -> "[<_ast.Constant object at 0x7fd4c04f62b0>, <_ast.Constant object at 0x7fd4c04f6310>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04f62b0>, <_ast.Constant object at 0x7fd4c04f6310>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"pattern_1166666(0)$2" -> "pattern_1166666(0)$1"	[label=rename];
 	"[](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"l(0)$0" -> "[](0)"	[label=assignedFrom];
@@ -309,11 +265,11 @@ ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List o
 	"d2(1)$1" -> "lag(1)"	[label=assignedFrom];
 	"d2(1)$1" -> "d2(1)$0"	[label=assignedFrom];
 	"d3(1)$0" -> "d2(1)$1"	[label=assignedFrom];
-	"d3(1)$0" -> "[<_ast.Constant object at 0x12f91bf10>](1)"	[label=assignedFrom];
+	"d3(1)$0" -> "[<_ast.Constant object at 0x7fd4c04fbc10>](1)"	[label=assignedFrom];
 	"d3(1)$0" -> "False(1)"	[label=assignedFrom];
 	"d4(1)$0" -> "d1(1)$1"	[label=assignedFrom];
 	"d4(1)$0" -> "False(1)"	[label=assignedFrom];
-	"d4(1)$0" -> "[<_ast.Constant object at 0x12f924220>](1)"	[label=assignedFrom];
+	"d4(1)$0" -> "[<_ast.Constant object at 0x7fd4c04fbee0>](1)"	[label=assignedFrom];
 	"d5(1)$0" -> "key(1)"	[label=merge];
 	"d5(1)$0" -> "d3(1)$0"	[label=merge];
 	"d5(1)$0" -> "d4(1)$0"	[label=merge];
@@ -329,7 +285,7 @@ ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List o
 	"max_nlags(2)$0" -> "2(2)"	[label=Sub];
 	"train_leak(2)$0" -> "cols(2)"	[label=assignedFrom];
 	"train_leak(2)$0" -> "train(2)"	[label=assignedFrom];
-	"train_leak(2)$0" -> "[<_ast.Constant object at 0x12f924eb0>, <_ast.Constant object at 0x12f924ee0>](2)"	[label=assignedFrom];
+	"train_leak(2)$0" -> "[<_ast.Constant object at 0x7fd4c04e4bb0>, <_ast.Constant object at 0x7fd4c04e4be0>](2)"	[label=assignedFrom];
 	"train_leak(2)$1" -> "train_leak(2)$0"	[label=assignedFrom];
 	"train_leak(2)$1" -> "0(2)"	[label=assignedFrom];
 	"train_leak(2)$2" -> "train(2)"	[label=apply];
@@ -343,13 +299,17 @@ ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List o
 	"leaky_value_counts(2)$0" -> "[](2)"	[label=assignedFrom];
 	"leaky_value_corrects(2)$0" -> "[](2)"	[label=assignedFrom];
 	"leaky_cols(2)$0" -> "[](2)"	[label=assignedFrom];
+	"i(2)" -> "max_nlags(2)$0"	[label=iteratorOf];
+	"i(2)" -> "range(2)"	[label=iteratorOf];
 	"c(2)$0" -> "i(2)"	[label=Add];
 	"c(2)$0" -> "leaked_target_(2)"	[label=Add];
 	"c(2)$0" -> "str(2)"	[label=Add];
-	"train_leak(2)$3" -> "i(2)"	[label=_get_leak];
+	"print[186/8]" -> "i(2)"	[label=print];
+	"print[186/8]" -> "Processing lag(2)"	[label=print];
 	"train_leak(2)$3" -> "cols(2)"	[label=_get_leak];
 	"train_leak(2)$3" -> "train(2)"	[label=_get_leak];
 	"train_leak(2)$3" -> "train_leak(2)$2"	[label=_get_leak];
+	"train_leak(2)$3" -> "i(2)"	[label=_get_leak];
 	"train_leak(2)$3" -> "ss(2)"	[label=_get_leak];
 	"leaky_cols(2)$1" -> "leaky_cols(2)$0"	[label=append];
 	"leaky_cols(2)$1" -> "c(2)$0"	[label=append];
@@ -358,28 +318,51 @@ ast.List object at 0x12f937910>, <_ast.List object at 0x12f92e0d0>, <_ast.List o
 	"train_leak(2)$4" -> "leaky_cols(2)$1"	[label=assignedFrom];
 	"train_leak(2)$4" -> "train_leak(2)$4"	[label=assignedFrom];
 	"train_leak(2)$4" -> "ID(2)"	[label=assignedFrom];
-	"train_leak(2)$4" -> "[<_ast.Constant object at 0x12f9173a0>, <_ast.Constant object at 0x12f9173d0>](2)"	[label=assignedFrom];
+	"train_leak(2)$4" -> "[<_ast.Constant object at 0x7fd4c04fd070>, <_ast.Constant object at 0x7fd4c04fd0a0>](2)"	[label=assignedFrom];
 	"train_leak(2)$4" -> "left(2)"	[label=assignedFrom];
-	"train_leak(2)$4" -> "[<_ast.Constant object at 0x12f917610>, <_ast.Constant object at 0x12f917640>](2)"	[label=assignedFrom];
-	"train_leak(2)$4" -> "[<_ast.Constant object at 0x12f917700>, <_ast.Constant object at 0x12f917730>](2)"	[label=assignedFrom];
+	"train_leak(2)$4" -> "[<_ast.Constant object at 0x7fd4c04fd370>, <_ast.Constant object at 0x7fd4c04fd3a0>](2)"	[label=assignedFrom];
+	"train_leak(2)$4" -> "[<_ast.Constant object at 0x7fd4c04fd460>, <_ast.Constant object at 0x7fd4c04fd130>](2)"	[label=assignedFrom];
 	"zeroleak(2)$0" -> "0(2)"	[label=assignedFrom];
 	"zeroleak(2)$0" -> "train_leak(2)$4"	[label=assignedFrom];
 	"zeroleak(2)$0" -> "compiled_leak(2)"	[label=assignedFrom];
 	"train_leak(2)$5" -> "c(2)$0"	[label=assignedFrom];
 	"train_leak(2)$5" -> "train_leak(2)$4"	[label=assignedFrom];
 	"train_leak(2)$5" -> "zeroleak(2)$0"	[label=assignedFrom];
+	"leaky_value_counts(2)$1" -> "0(2)"	[label=append];
+	"leaky_value_counts(2)$1" -> "leaky_value_counts(2)$0"	[label=append];
+	"leaky_value_counts(2)$1" -> "compiled_leak(2)"	[label=append];
+	"leaky_value_counts(2)$1" -> "train_leak(2)$5"	[label=append];
+	"leaky_value_counts(2)$1" -> "sum(2)"	[label=append];
 	"_correct_counts(2)$0" -> "compiled_leak(2)"	[label=sum];
 	"_correct_counts(2)$0" -> "train_leak(2)$5"	[label=sum];
 	"_correct_counts(2)$0" -> "target(2)"	[label=sum];
-	"print[2]" -> "1(2)"	[label=print];
-	"print[2]" -> "
-best_lag(0)"	[label=print];
-	"print[2]" -> "1(4)"	[label=print];
-	"print[2]" -> ".csv saved(0)"	[label=print];
-	"
-best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	".csv saved(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"leaky_value_corrects(2)$1" -> "1(2)"	[label=append];
+	"leaky_value_corrects(2)$1" -> "leaky_value_corrects(2)$0"	[label=append];
+	"leaky_value_corrects(2)$1" -> "leaky_value_counts(2)$1"	[label=append];
+	"leaky_value_corrects(2)$1" -> "_correct_counts(2)$0"	[label=append];
+	"leaky_value_corrects(2)$1" -> "1.0(2)"	[label=append];
+	"print[200/8]" -> "1(2)"	[label=print];
+	"print[200/8]" -> "leaky_value_counts(2)$1"	[label=print];
+	"print[200/8]" -> "Leak values found in train(2)"	[label=print];
+	"print[201/8]" -> "1(2)"	[label=print];
+	"print[201/8]" -> "leaky_value_corrects(2)$1"	[label=print];
+	"print[201/8]" -> "\% of correct leaks values in train (2)"	[label=print];
 	"tmp(2)$0" -> "train_leak(2)$5"	[label=copy];
+	"tmp(2)$1" -> "zeroleak(2)$0"	[label=assignedFrom];
+	"tmp(2)$1" -> "tmp(2)$0"	[label=assignedFrom];
+	"tmp(2)$1" -> "nonzero_mean(2)"	[label=assignedFrom];
+	"print[207/8]" -> "tmp(2)$1"	[label=print];
+	"print[207/8]" -> "Na count(2)"	[label=print];
+	"scores(2)$1" -> "np(2)"	[label=append];
+	"scores(2)$1" -> "scores(2)$0"	[label=append];
+	"scores(2)$1" -> "compiled_leak(2)"	[label=append];
+	"scores(2)$1" -> "tmp(2)$1"	[label=append];
+	"scores(2)$1" -> "mean_squared_error(2)"	[label=append];
+	"scores(2)$1" -> "y(2)"	[label=append];
+	"scores(2)$1" -> "14.49(2)"	[label=append];
+	"print[209/8]" -> "1(2)"	[label=print];
+	"print[209/8]" -> "scores(2)$1"	[label=print];
+	"print[209/8]" -> "Score (filled with nonzero mean)(2)"	[label=print];
 	"result(2)$0" -> "leaky_value_counts(2)$1"	[label=dict];
 	"result(2)$0" -> "leaky_value_corrects(2)$1"	[label=dict];
 	"result(2)$0" -> "scores(2)$1"	[label=dict];
@@ -392,11 +375,19 @@ best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appears
 	"train_leaky_stat.csv(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"train_leak(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"train_leak(0)$0" -> "train_leak(0)"	[label=head];
+	"best_score(0)$0" -> "np(0)"	[label=min];
+	"best_score(0)$0" -> "result(0)$1"	[label=min];
+	"best_score(0)$0" -> "score(0)"	[label=min];
 	"score(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"best_lag(0)$0" -> "np(0)"	[label=argmin];
 	"best_lag(0)$0" -> "result(0)$1"	[label=argmin];
 	"best_lag(0)$0" -> "score(0)"	[label=argmin];
-	"print[3]" -> "best_lag(0)$0"	[label=print];
+	"print[226/0]" -> "best_score(0)$0"	[label=print];
+	"print[226/0]" -> "best_lag(0)$0"	[label=print];
+	"print[226/0]" -> "
+best_lag(0)"	[label=print];
+	"
+best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"leak_df(3)" -> "rewrite_compiled_leak[0]"	[label=_argToVar];
 	"lag(3)" -> "rewrite_compiled_leak[1]"	[label=_argToVar];
 	"leak_df(3)$0" -> "leak_df(3)"	[label=assignedFrom];
@@ -423,27 +414,31 @@ best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appears
 	"test(0)$2" -> "test(0)$1"	[label=head];
 	"max_nlags(4)" -> "compiled_leak_result_test[0]"	[label=_argToVar];
 	"test_leak(4)$0" -> "test(4)"	[label=assignedFrom];
-	"test_leak(4)$0" -> "[<_ast.Constant object at 0x12f9227f0>, <_ast.Constant object at 0x12f922820>](4)"	[label=assignedFrom];
+	"test_leak(4)$0" -> "[<_ast.Constant object at 0x7fd4c04d44f0>, <_ast.Constant object at 0x7fd4c04d4520>](4)"	[label=assignedFrom];
 	"test_leak(4)$0" -> "cols(4)"	[label=assignedFrom];
 	"test_leak(4)$1" -> "test_leak(4)$0"	[label=assignedFrom];
 	"test_leak(4)$1" -> "0(4)"	[label=assignedFrom];
-	"test_leak(4)$2" -> "1(4)"	[label=apply];
 	"test_leak(4)$2" -> "test(4)"	[label=apply];
 	"test_leak(4)$2" -> "test_leak(4)$1"	[label=apply];
 	"test_leak(4)$2" -> "0(4)"	[label=apply];
 	"test_leak(4)$2" -> "transact_cols(4)"	[label=apply];
 	"test_leak(4)$2" -> "np(4)"	[label=apply];
 	"test_leak(4)$2" -> "x(4)"	[label=apply];
+	"test_leak(4)$2" -> "1(4)"	[label=apply];
 	"scores(4)$0" -> "[](4)"	[label=assignedFrom];
 	"leaky_value_counts(4)$0" -> "[](4)"	[label=assignedFrom];
 	"leaky_cols(4)$0" -> "[](4)"	[label=assignedFrom];
+	"i(4)" -> "max_nlags(4)"	[label=iteratorOf];
+	"i(4)" -> "range(4)"	[label=iteratorOf];
 	"c(4)$0" -> "i(4)"	[label=Add];
 	"c(4)$0" -> "leaked_target_(4)"	[label=Add];
 	"c(4)$0" -> "str(4)"	[label=Add];
-	"test_leak(4)$3" -> "i(4)"	[label=_get_leak];
+	"print[253/8]" -> "i(4)"	[label=print];
+	"print[253/8]" -> "Processing lag(4)"	[label=print];
 	"test_leak(4)$3" -> "test(4)"	[label=_get_leak];
 	"test_leak(4)$3" -> "cols(4)"	[label=_get_leak];
 	"test_leak(4)$3" -> "test_leak(4)$2"	[label=_get_leak];
+	"test_leak(4)$3" -> "i(4)"	[label=_get_leak];
 	"test_leak(4)$3" -> "ss(4)"	[label=_get_leak];
 	"leaky_cols(4)$1" -> "leaky_cols(4)$0"	[label=append];
 	"leaky_cols(4)$1" -> "c(4)$0"	[label=append];
@@ -452,16 +447,24 @@ best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appears
 	"test_leak(4)$4" -> "leaky_cols(4)$1"	[label=assignedFrom];
 	"test_leak(4)$4" -> "test_leak(4)$4"	[label=assignedFrom];
 	"test_leak(4)$4" -> "ID(4)"	[label=assignedFrom];
-	"test_leak(4)$4" -> "[<_ast.Constant object at 0x12f91abe0>, <_ast.Constant object at 0x12f91ac10>](4)"	[label=assignedFrom];
+	"test_leak(4)$4" -> "[<_ast.Constant object at 0x7fd4c05ba8e0>, <_ast.Constant object at 0x7fd4c05ba910>](4)"	[label=assignedFrom];
 	"test_leak(4)$4" -> "left(4)"	[label=assignedFrom];
-	"test_leak(4)$4" -> "[<_ast.Constant object at 0x12f91ae80>, <_ast.Constant object at 0x12f91aeb0>](4)"	[label=assignedFrom];
-	"test_leak(4)$4" -> "[<_ast.Constant object at 0x12f91af70>, <_ast.Constant object at 0x12f91afa0>](4)"	[label=assignedFrom];
+	"test_leak(4)$4" -> "[<_ast.Constant object at 0x7fd4c05bab80>, <_ast.Constant object at 0x7fd4c05babb0>](4)"	[label=assignedFrom];
+	"test_leak(4)$4" -> "[<_ast.Constant object at 0x7fd4c05bac70>, <_ast.Constant object at 0x7fd4c05baca0>](4)"	[label=assignedFrom];
 	"zeroleak(4)$0" -> "0(4)"	[label=assignedFrom];
 	"zeroleak(4)$0" -> "test_leak(4)$4"	[label=assignedFrom];
 	"zeroleak(4)$0" -> "compiled_leak(4)"	[label=assignedFrom];
 	"test_leak(4)$5" -> "c(4)$0"	[label=assignedFrom];
 	"test_leak(4)$5" -> "test_leak(4)$4"	[label=assignedFrom];
 	"test_leak(4)$5" -> "zeroleak(4)$0"	[label=assignedFrom];
+	"leaky_value_counts(4)$1" -> "0(4)"	[label=append];
+	"leaky_value_counts(4)$1" -> "leaky_value_counts(4)$0"	[label=append];
+	"leaky_value_counts(4)$1" -> "compiled_leak(4)"	[label=append];
+	"leaky_value_counts(4)$1" -> "test_leak(4)$5"	[label=append];
+	"leaky_value_counts(4)$1" -> "sum(4)"	[label=append];
+	"print[267/8]" -> "1(4)"	[label=print];
+	"print[267/8]" -> "leaky_value_counts(4)$1"	[label=print];
+	"print[267/8]" -> "Leak values found in test(4)"	[label=print];
 	"result(4)$0" -> "leaky_value_counts(4)$1"	[label=dict];
 	"38(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"test_leak(0)$0" -> "38(0)"	[label=compiled_leak_result_test];
@@ -473,15 +476,16 @@ best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appears
 	"test_result(0)$2" -> "test_leaky_stat.csv(0)"	[label=to_csv];
 	"test_leaky_stat.csv(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"37(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
-	"test_leak(0)$1" -> "best_lag(0)$1"	[label=rewrite_compiled_leak];
+	"best_lag(0)$1" -> "37(0)"	[label=assignedFrom];
 	"test_leak(0)$1" -> "test_leak(0)$0"	[label=rewrite_compiled_leak];
+	"test_leak(0)$1" -> "best_lag(0)$1"	[label=rewrite_compiled_leak];
 	"test_leak(0)$2" -> "test_leak(0)$1"	[label=head];
 	"test_res(0)$0" -> "np(0)"	[label=replace];
 	"test_res(0)$0" -> "leaky_cols(0)$0"	[label=replace];
 	"test_res(0)$0" -> "test_leak(0)$2"	[label=replace];
-	"test_res(0)$0" -> "[<_ast.Constant object at 0x13054a8e0>](0)"	[label=replace];
+	"test_res(0)$0" -> "[<_ast.Constant object at 0x7fd4c05990a0>](0)"	[label=replace];
 	"test_res(0)$0" -> "0.0(0)"	[label=replace];
-	"[<_ast.Constant object at 0x13054a8e0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05990a0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"0.0(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"test_res(0)$1" -> "test_res(0)$0"	[label=to_csv];
 	"test_res(0)$1" -> "test_leak.csv(0)"	[label=to_csv];
@@ -495,15 +499,20 @@ best_lag(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appears
 	"0(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"nonzero_mean(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"sub(0)$0" -> "test(0)$2"	[label=assignedFrom];
-	"sub(0)$0" -> "[<_ast.Constant object at 0x13052d280>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x13052d280>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"sub(0)$0" -> "[<_ast.Constant object at 0x7fd4c0599df0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0599df0>](0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"sub(0)$1" -> "test_leak(0)$3"	[label=assignedFrom];
 	"sub(0)$1" -> "compiled_leak(0)"	[label=assignedFrom];
 	"sub(0)$1" -> "sub(0)$0"	[label=assignedFrom];
-	"sub(0)$2" -> "baseline_sub_lag_(0)"	[label=to_csv];
 	"sub(0)$2" -> "best_lag(0)$1"	[label=to_csv];
 	"sub(0)$2" -> "sub(0)$1"	[label=to_csv];
+	"sub(0)$2" -> "baseline_sub_lag_(0)"	[label=to_csv];
 	"sub(0)$2" -> ".csv(0)"	[label=to_csv];
+	"baseline_sub_lag_(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	".csv(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
+	"print[300/0]" -> "best_lag(0)$1"	[label=print];
+	"print[300/0]" -> "baseline_sub_lag_(0)"	[label=print];
+	"print[300/0]" -> ".csv saved(0)"	[label=print];
+	".csv saved(0)" -> "jiazhen-to-armamut-via-gurchetan1000-0-56.ipynb"	[label=appearsIn];
 	"sub(0)$3" -> "sub(0)$2"	[label=tail];
 }

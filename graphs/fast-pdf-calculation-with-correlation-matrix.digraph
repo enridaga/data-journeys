@@ -8,15 +8,9 @@ digraph "" {
 	os -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=importedBy];
 	"os(0)" -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "col(7)"	[label=print];
-	"print[0]" -> "cols(7)$0"	[label=print];
-	"col(7)" -> "print_corr[1]"	[label=_argToVar];
-	"cols(7)$0" -> "col(7)"	[label=assignedFrom];
-	"cols(7)$0" -> "corr_mat(7)"	[label=assignedFrom];
-	"cols(7)$0" -> "bar(7)"	[label=assignedFrom];
+	"print[13/0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
 	seaborn -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=importedBy];
 	"sns(0)" -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
@@ -34,35 +28,38 @@ digraph "" {
 	"yp(1)$0" -> "1(1)"	[label=clip];
 	"tr(2)" -> "reverse[0]"	[label=_argToVar];
 	"te(2)" -> "reverse[1]"	[label=_argToVar];
-	"reverse_list(2)$0" -> "[<_ast.Constant object at 0x12fade640>, <_ast.Constant object at 0x12fadec70>, <_ast.Constant object at 0x12fade250>, <_ast.Constant \
-object at 0x12fadeb20>, <_ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12faded60>, <_\
-ast.Constant object at 0x12fade850>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade2b0>, <_ast.Constant \
-object at 0x12fadeaf0>, <_ast.Constant object at 0x12fade5b0>, <_ast.Constant object at 0x12fadea00>, <_ast.Constant object at 0x12fade340>, <_\
-ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade940>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant \
-object at 0x12fadeb80>, <_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12faded00>, <_ast.Constant object at 0x12fade0d0>, <_\
-ast.Constant object at 0x12fade7f0>, <_ast.Constant object at 0x12fade3a0>, <_ast.Constant object at 0x12fadeee0>, <_ast.Constant \
-object at 0x12fade460>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fadebe0>, <_ast.Constant object at 0x12fade820>, <_\
-ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fadee50>, <_ast.Constant object at 0x12fade040>, <_ast.Constant \
-object at 0x12fade310>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fadeac0>, <_\
-ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fadef70>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant \
-object at 0x12fade6a0>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade550>, <_ast.Constant object at 0x12fade760>, <_\
-ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade970>, <_ast.Constant object at 0x12fadea90>, <_ast.Constant \
-object at 0x12fade8e0>, <_ast.Constant object at 0x12fade9a0>, <_ast.Constant object at 0x12fade3d0>, <_ast.Constant object at 0x12fade370>, <_\
-ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade430>, <_ast.Constant object at 0x12fadeb50>, <_ast.Constant \
-object at 0x12fade1f0>, <_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade4c0>, <_\
-ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12fade100>, <_ast.Constant object at 0x12faded30>, <_ast.Constant \
-object at 0x12fade910>, <_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fadec10>, <_ast.Constant object at 0x12faded90>, <_\
-ast.Constant object at 0x12fade880>, <_ast.Constant object at 0x12fadeeb0>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant \
-object at 0x12fade6d0>, <_ast.Constant object at 0x12f957040>, <_ast.Constant object at 0x12f957c10>, <_ast.Constant object at 0x12f957520>, <_\
-ast.Constant object at 0x12f957c40>, <_ast.Constant object at 0x12f957760>, <_ast.Constant object at 0x12f9579d0>, <_ast.Constant \
-object at 0x12f957190>, <_ast.Constant object at 0x12f957bb0>, <_ast.Constant object at 0x12f957c70>, <_ast.Constant object at 0x12f957940>, <_\
-ast.Constant object at 0x12f957eb0>, <_ast.Constant object at 0x12f957a00>, <_ast.Constant object at 0x12f957df0>, <_ast.Constant \
-object at 0x12f9577c0>, <_ast.Constant object at 0x12f9574f0>, <_ast.Constant object at 0x12f9570d0>, <_ast.Constant object at 0x12f9577f0>, <_\
-ast.Constant object at 0x12f957460>, <_ast.Constant object at 0x12f957dc0>, <_ast.Constant object at 0x12f957ee0>, <_ast.Constant \
-object at 0x12f9571c0>, <_ast.Constant object at 0x12f957af0>, <_ast.Constant object at 0x12f957ca0>, <_ast.Constant object at 0x12f9570a0>, <_\
-ast.Constant object at 0x12f957580>, <_ast.Constant object at 0x12f957f40>, <_ast.Constant object at 0x12f957370>, <_ast.Constant \
-object at 0x12f9571f0>, <_ast.Constant object at 0x12f957d90>, <_ast.Constant object at 0x12f957730>, <_ast.Constant object at 0x12f9573a0>, <_\
-ast.Constant object at 0x12f957130>, <_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f957790>](2)"	[label=assignedFrom];
+	"reverse_list(2)$0" -> "[<_ast.Constant object at 0x7fd5008368e0>, <_ast.Constant object at 0x7fd500836250>, <_ast.Constant object at 0x7fd500836700>, <_\
+ast.Constant object at 0x7fd500836850>, <_ast.Constant object at 0x7fd500836c10>, <_ast.Constant object at 0x7fd500836520>, <_ast.Constant \
+object at 0x7fd500836340>, <_ast.Constant object at 0x7fd500836b20>, <_ast.Constant object at 0x7fd500836430>, <_ast.Constant object \
+at 0x7fd5008360d0>, <_ast.Constant object at 0x7fd5008361c0>, <_ast.Constant object at 0x7fd500836130>, <_ast.Constant object at \
+0x7fd500836fa0>, <_ast.Constant object at 0x7fd500836a90>, <_ast.Constant object at 0x7fd500836310>, <_ast.Constant object at 0x7fd500836280>, <_\
+ast.Constant object at 0x7fd5008365e0>, <_ast.Constant object at 0x7fd500836940>, <_ast.Constant object at 0x7fd500836970>, <_ast.Constant \
+object at 0x7fd5008362e0>, <_ast.Constant object at 0x7fd500836f40>, <_ast.Constant object at 0x7fd500836e20>, <_ast.Constant object \
+at 0x7fd500836820>, <_ast.Constant object at 0x7fd5008363a0>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at \
+0x7fd500836460>, <_ast.Constant object at 0x7fd500836e80>, <_ast.Constant object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd5008369a0>, <_\
+ast.Constant object at 0x7fd500836670>, <_ast.Constant object at 0x7fd500836370>, <_ast.Constant object at 0x7fd500836040>, <_ast.Constant \
+object at 0x7fd500836610>, <_ast.Constant object at 0x7fd500836d90>, <_ast.Constant object at 0x7fd500836910>, <_ast.Constant object \
+at 0x7fd500836cd0>, <_ast.Constant object at 0x7fd500836c40>, <_ast.Constant object at 0x7fd500836f70>, <_ast.Constant object at \
+0x7fd500836760>, <_ast.Constant object at 0x7fd500836220>, <_ast.Constant object at 0x7fd500836b80>, <_ast.Constant object at 0x7fd500836c70>, <_\
+ast.Constant object at 0x7fd500836df0>, <_ast.Constant object at 0x7fd500836790>, <_ast.Constant object at 0x7fd500836ee0>, <_ast.Constant \
+object at 0x7fd500836640>, <_ast.Constant object at 0x7fd500836070>, <_ast.Constant object at 0x7fd500836fd0>, <_ast.Constant object \
+at 0x7fd5008360a0>, <_ast.Constant object at 0x7fd500836ac0>, <_ast.Constant object at 0x7fd500836be0>, <_ast.Constant object at \
+0x7fd5008369d0>, <_ast.Constant object at 0x7fd500836d60>, <_ast.Constant object at 0x7fd5008366d0>, <_ast.Constant object at 0x7fd5008365b0>, <_\
+ast.Constant object at 0x7fd500836f10>, <_ast.Constant object at 0x7fd500836550>, <_ast.Constant object at 0x7fd500836eb0>, <_ast.Constant \
+object at 0x7fd500836a60>, <_ast.Constant object at 0x7fd500836730>, <_ast.Constant object at 0x7fd500836580>, <_ast.Constant object \
+at 0x7fd5008366a0>, <_ast.Constant object at 0x7fd5008362b0>, <_ast.Constant object at 0x7fd500836b50>, <_ast.Constant object at \
+0x7fd500836af0>, <_ast.Constant object at 0x7fd500836a00>, <_ast.Constant object at 0x7fd500832490>, <_ast.Constant object at 0x7fd500832520>, <_\
+ast.Constant object at 0x7fd500832970>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object at 0x7fd500832160>, <_ast.Constant \
+object at 0x7fd500832d00>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd5008320d0>, <_ast.Constant object \
+at 0x7fd500832fa0>, <_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832940>, <_ast.Constant object at \
+0x7fd500832c10>, <_ast.Constant object at 0x7fd500832790>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd5008325b0>, <_\
+ast.Constant object at 0x7fd500832f10>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd500832a90>, <_ast.Constant \
+object at 0x7fd5008326d0>, <_ast.Constant object at 0x7fd500832220>, <_ast.Constant object at 0x7fd5008320a0>, <_ast.Constant object \
+at 0x7fd500832df0>, <_ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at \
+0x7fd500832fd0>, <_ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008321f0>, <_\
+ast.Constant object at 0x7fd500832070>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832d30>, <_ast.Constant \
+object at 0x7fd500832280>, <_ast.Constant object at 0x7fd5008324c0>, <_ast.Constant object at 0x7fd500832f40>, <_ast.Constant object \
+at 0x7fd5008327c0>](2)"	[label=assignedFrom];
 	"reverse_list(2)$1" -> "reverse_list(2)$1"	[label=assignedFrom];
 	"reverse_list(2)$1" -> "var_\%d(2)"	[label=assignedFrom];
 	"reverse_list(2)$1" -> "i(2)"	[label=assignedFrom];
@@ -122,8 +119,8 @@ ast.Constant object at 0x12f957130>, <_ast.Constant object at 0x12f9572b0>, <_as
 	"df(5)$0" -> "tr(5)"	[label=agg];
 	"df(5)$0" -> "col(5)"	[label=agg];
 	"df(5)$0" -> "target(5)"	[label=agg];
-	"df(5)$0" -> "[<_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f58b0>](5)"	[label=agg];
-	"cols(5)$0" -> "[<_ast.Constant object at 0x12f8f5760>, <_ast.Constant object at 0x12f8f5880>](5)"	[label=assignedFrom];
+	"df(5)$0" -> "[<_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ffa00>](5)"	[label=agg];
+	"cols(5)$0" -> "[<_ast.Constant object at 0x7fd4c04ffe20>, <_ast.Constant object at 0x7fd4c04ffdc0>](5)"	[label=assignedFrom];
 	"df(5)$1" -> "df(5)$0"	[label=assignedFrom];
 	"df(5)$1" -> "cols(5)$0"	[label=assignedFrom];
 	"df(5)$2" -> "df(5)$1"	[label=reset_index];
@@ -176,12 +173,18 @@ ast.Constant object at 0x12f957130>, <_ast.Constant object at 0x12f9572b0>, <_as
 	"y(6)$1" -> "y(6)$0"	[label=append];
 	"y(6)$1" -> "res(6)$0"	[label=append];
 	"corr_mat(7)" -> "print_corr[0]"	[label=_argToVar];
+	"col(7)" -> "print_corr[1]"	[label=_argToVar];
 	"bar(7)" -> "print_corr[2]"	[label=_argToVar];
+	"print[93/4]" -> "col(7)"	[label=print];
+	"cols(7)$0" -> "corr_mat(7)"	[label=assignedFrom];
+	"cols(7)$0" -> "col(7)"	[label=assignedFrom];
+	"cols(7)$0" -> "bar(7)"	[label=assignedFrom];
 	"cols_(7)$0" -> "cols(7)$0"	[label=assignedFrom];
 	"cols_(7)$0" -> "var_\%s(7)"	[label=assignedFrom];
 	"cols_(7)$0" -> "i(7)"	[label=assignedFrom];
 	"cols_(7)$0" -> "_(7)"	[label=assignedFrom];
 	"cols_(7)$0" -> "1(7)"	[label=assignedFrom];
+	"print[96/4]" -> "cols(7)$0"	[label=print];
 	"../input/(0)" -> "fast-pdf-calculation-with-correlation-matrix.ipynb"	[label=appearsIn];
 	"path(0)$0" -> "../input/(0)"	[label=assignedFrom];
 	"tr(0)$0" -> "pd(0)"	[label=read_csv];

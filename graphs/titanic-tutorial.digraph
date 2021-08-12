@@ -20,23 +20,9 @@ strict digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "\% of women who survived:(0)"	[label=print];
-	"print[0]" -> "\% of men who survived:(0)"	[label=print];
-	"print[0]" -> "Your submission was successfully saved!(0)"	[label=print];
-	"\% of women who survived:(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
-	"\% of men who survived:(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
-	"Your submission was successfully saved!(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "rate_women(0)$0"	[label=print];
-	"print[1]" -> "rate_men(0)$0"	[label=print];
-	"rate_women(0)$0" -> "women(0)$0"	[label=Div];
-	"rate_women(0)$0" -> "sum(0)"	[label=Div];
-	"rate_women(0)$0" -> "len(0)"	[label=Div];
-	"rate_men(0)$0" -> "sum(0)"	[label=Div];
-	"rate_men(0)$0" -> "len(0)"	[label=Div];
-	"rate_men(0)$0" -> "men(0)$0"	[label=Div];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[15/8]" -> "os(0)"	[label=print];
+	"print[15/8]" -> "dirname(0)"	[label=print];
+	"print[15/8]" -> "filename(0)"	[label=print];
 	"train_data(0)$0" -> "pd(0)"	[label=read_csv];
 	"train_data(0)$0" -> "/kaggle/input/titanic/train.csv(0)"	[label=read_csv];
 	"/kaggle/input/titanic/train.csv(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
@@ -51,21 +37,33 @@ strict digraph "" {
 	"female(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
 	"Survived(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
 	"sum(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"rate_women(0)$0" -> "women(0)$0"	[label=Div];
+	"rate_women(0)$0" -> "sum(0)"	[label=Div];
+	"rate_women(0)$0" -> "len(0)"	[label=Div];
 	"len(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"\% of women who survived:(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"print[25/0]" -> "rate_women(0)$0"	[label=print];
+	"print[25/0]" -> "\% of women who survived:(0)"	[label=print];
 	"men(0)$0" -> "train_data(0)$1"	[label=assignedFrom];
 	"men(0)$0" -> "Survived(0)"	[label=assignedFrom];
 	"men(0)$0" -> "male(0)"	[label=assignedFrom];
 	"male(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"rate_men(0)$0" -> "sum(0)"	[label=Div];
+	"rate_men(0)$0" -> "len(0)"	[label=Div];
+	"rate_men(0)$0" -> "men(0)$0"	[label=Div];
+	"\% of men who survived:(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"print[29/0]" -> "rate_men(0)$0"	[label=print];
+	"print[29/0]" -> "\% of men who survived:(0)"	[label=print];
 	"sklearn.ensemble" -> "titanic-tutorial.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
 	"RandomForestClassifier(0)" -> RandomForestClassifier	[label=assignedFrom];
 	"y(0)$0" -> "train_data(0)$1"	[label=assignedFrom];
 	"y(0)$0" -> "Survived(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f5610>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5220>, <_ast.Constant \
-object at 0x12f8f5430>](0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
-	"features(0)$0" -> "[<_ast.Constant object at 0x12f8f5610>, <_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5220>, <_ast.Constant \
-object at 0x12f8f5430>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc190>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd5007e7280>, <_\
+ast.Constant object at 0x7fd5007e71f0>](0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"features(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc190>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd5007e7280>, <_\
+ast.Constant object at 0x7fd5007e71f0>](0)"	[label=assignedFrom];
 	"X(0)$0" -> "pd(0)"	[label=get_dummies];
 	"X(0)$0" -> "train_data(0)$1"	[label=get_dummies];
 	"X(0)$0" -> "features(0)$0"	[label=get_dummies];
@@ -92,4 +90,6 @@ object at 0x12f8f5430>](0)"	[label=assignedFrom];
 	"output(0)$1" -> "output(0)$0"	[label=to_csv];
 	"output(0)$1" -> "my_submission.csv(0)"	[label=to_csv];
 	"my_submission.csv(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"Your submission was successfully saved!(0)" -> "titanic-tutorial.ipynb"	[label=appearsIn];
+	"print[44/0]" -> "Your submission was successfully saved!(0)"	[label=print];
 }

@@ -204,20 +204,8 @@ digraph "" {
 	"test_times(0)$0" -> "5(0)"	[label=prepare_sparse_features];
 	"test_times(0)$0" -> "50000(0)"	[label=prepare_sparse_features];
 	"test_times(0)$0" -> "s(0)"	[label=prepare_sparse_features];
-	"print[0]" -> "X_train_sites(0)$0"	[label=print];
-	"print[0]" -> "CV scores(3)"	[label=print];
-	"print[0]" -> "CV mean: {}, CV std: {}(3)"	[label=print];
-	"print[0]" -> "New feature weights:(3)"	[label=print];
-	"print[0]" -> "pd(3)"	[label=print];
-	"print[1]" -> "X_test_sites(0)$0"	[label=print];
-	"print[1]" -> "cv_scores(3)$0"	[label=print];
-	"print[1]" -> "feature(3)"	[label=print];
-	"cv_scores(3)$0" -> "model(3)"	[label=cross_val_score];
-	"cv_scores(3)$0" -> "X_train(3)"	[label=cross_val_score];
-	"cv_scores(3)$0" -> "y_train(3)"	[label=cross_val_score];
-	"cv_scores(3)$0" -> "cv(3)"	[label=cross_val_score];
-	"cv_scores(3)$0" -> "scoring(3)"	[label=cross_val_score];
-	"cv_scores(3)$0" -> "4(3)"	[label=cross_val_score];
+	"print[68/0]" -> "X_train_sites(0)$0"	[label=print];
+	"print[68/0]" -> "X_test_sites(0)$0"	[label=print];
 	"10(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"time_split(0)$0" -> "10(0)"	[label=TimeSeriesSplit];
 	"logit(0)$0" -> "SEED(0)$0"	[label=LogisticRegression];
@@ -237,19 +225,7 @@ digraph "" {
 	"logit(0)$1" -> "logit(0)$0"	[label=fit];
 	"eli5(0)$0" -> "eli5(0)"	[label=show_weights];
 	"predicted_labels(2)" -> "write_to_submission_file[0]"	[label=_argToVar];
-	"write_to_submission_file[0]" -> "logit_test_pred(0)$0"	[label=write_to_submission_file];
-	"write_to_submission_file[0]" -> "test_pred(3)$0"	[label=write_to_submission_file];
-	"logit_test_pred(0)$0" -> "1(0)"	[label=assignedFrom];
-	"logit_test_pred(0)$0" -> "X_test_sites(0)$0"	[label=assignedFrom];
-	"logit_test_pred(0)$0" -> "logit(0)$1"	[label=assignedFrom];
-	"test_pred(3)$0" -> "X_test(3)"	[label=assignedFrom];
-	"test_pred(3)$0" -> "model(3)$0"	[label=assignedFrom];
-	"test_pred(3)$0" -> "1(3)"	[label=assignedFrom];
 	"out_file(2)" -> "write_to_submission_file[1]"	[label=_argToVar];
-	"write_to_submission_file[1]" -> "subm1.csv(0)"	[label=write_to_submission_file];
-	"write_to_submission_file[1]" -> "submission_file_name(3)"	[label=write_to_submission_file];
-	"subm1.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"submission_file_name(3)" -> "train_and_predict[9]"	[label=_argToVar];
 	"target(2)" -> "write_to_submission_file[2]"	[label=_argToVar];
 	"index_label(2)" -> "write_to_submission_file[3]"	[label=_argToVar];
 	"predicted_df(2)$0" -> "predicted_labels(2)"	[label=DataFrame];
@@ -257,9 +233,15 @@ digraph "" {
 	"predicted_df(2)$0" -> "np(2)"	[label=DataFrame];
 	"predicted_df(2)$0" -> "1(2)"	[label=DataFrame];
 	"predicted_df(2)$0" -> "0(2)"	[label=DataFrame];
-	"predicted_df(2)$0" -> "[<_ast.Name object at 0x12f8e5af0>](2)"	[label=DataFrame];
+	"predicted_df(2)$0" -> "[<_ast.Name object at 0x7fd5007f0910>](2)"	[label=DataFrame];
 	"predicted_df(2)$1" -> "out_file(2)"	[label=to_csv];
 	"predicted_df(2)$1" -> "predicted_df(2)$0"	[label=to_csv];
+	"logit_test_pred(0)$0" -> "1(0)"	[label=assignedFrom];
+	"logit_test_pred(0)$0" -> "X_test_sites(0)$0"	[label=assignedFrom];
+	"logit_test_pred(0)$0" -> "logit(0)$1"	[label=assignedFrom];
+	"write_to_submission_file[89/0]" -> "logit_test_pred(0)$0"	[label=write_to_submission_file];
+	"write_to_submission_file[89/0]" -> "subm1.csv(0)"	[label=write_to_submission_file];
+	"subm1.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"model(3)" -> "train_and_predict[0]"	[label=_argToVar];
 	"X_train(3)" -> "train_and_predict[1]"	[label=_argToVar];
 	"y_train(3)" -> "train_and_predict[2]"	[label=_argToVar];
@@ -269,22 +251,39 @@ digraph "" {
 	"cv(3)" -> "train_and_predict[6]"	[label=_argToVar];
 	"scoring(3)" -> "train_and_predict[7]"	[label=_argToVar];
 	"top_n_features_to_show(3)" -> "train_and_predict[8]"	[label=_argToVar];
-	"print[2]" -> "cv_scores(3)$0"	[label=print];
-	"print[2]" -> "coef(3)"	[label=print];
+	"submission_file_name(3)" -> "train_and_predict[9]"	[label=_argToVar];
+	"cv_scores(3)$0" -> "model(3)"	[label=cross_val_score];
+	"cv_scores(3)$0" -> "X_train(3)"	[label=cross_val_score];
+	"cv_scores(3)$0" -> "y_train(3)"	[label=cross_val_score];
+	"cv_scores(3)$0" -> "cv(3)"	[label=cross_val_score];
+	"cv_scores(3)$0" -> "scoring(3)"	[label=cross_val_score];
+	"cv_scores(3)$0" -> "4(3)"	[label=cross_val_score];
+	"print[97/4]" -> "cv_scores(3)$0"	[label=print];
+	"print[97/4]" -> "CV scores(3)"	[label=print];
+	"print[98/4]" -> "cv_scores(3)$0"	[label=print];
+	"print[98/4]" -> "CV mean: {}, CV std: {}(3)"	[label=print];
 	"model(3)$0" -> "model(3)"	[label=fit];
 	"model(3)$0" -> "X_train(3)"	[label=fit];
 	"model(3)$0" -> "y_train(3)"	[label=fit];
 	"all_feature_names(3)$0" -> "site_feature_names(3)"	[label=Add];
 	"all_feature_names(3)$0" -> "new_feature_names(3)"	[label=Add];
 	"all_feature_names(3)$1" -> "site_feature_names(3)"	[label=assignedFrom];
-	"display_html[0]" -> "eli5(3)"	[label=display_html];
-	"display_html[1]" -> "model(3)$0"	[label=display_html];
-	"display_html[2]" -> "all_feature_names(3)$1"	[label=display_html];
-	"display_html[3]" -> "top_n_features_to_show(3)"	[label=display_html];
-	"print[3]" -> "new_feature_names(3)"	[label=print];
-	"print[4]" -> "model(3)$0"	[label=print];
-	"print[5]" -> "len(3)"	[label=print];
-	"print[6]" -> "new_feature_names(3)"	[label=print];
+	"display_html[106/4]" -> "top_n_features_to_show(3)"	[label=display_html];
+	"display_html[106/4]" -> "model(3)$0"	[label=display_html];
+	"display_html[106/4]" -> "all_feature_names(3)$1"	[label=display_html];
+	"display_html[106/4]" -> "eli5(3)"	[label=display_html];
+	"print[110/8]" -> "New feature weights:(3)"	[label=print];
+	"print[112/8]" -> "new_feature_names(3)"	[label=print];
+	"print[112/8]" -> "model(3)$0"	[label=print];
+	"print[112/8]" -> "pd(3)"	[label=print];
+	"print[112/8]" -> "feature(3)"	[label=print];
+	"print[112/8]" -> "coef(3)"	[label=print];
+	"print[112/8]" -> "len(3)"	[label=print];
+	"test_pred(3)$0" -> "X_test(3)"	[label=assignedFrom];
+	"test_pred(3)$0" -> "model(3)$0"	[label=assignedFrom];
+	"test_pred(3)$0" -> "1(3)"	[label=assignedFrom];
+	"write_to_submission_file[116/4]" -> "submission_file_name(3)"	[label=write_to_submission_file];
+	"write_to_submission_file[116/4]" -> "test_pred(3)$0"	[label=write_to_submission_file];
 	"cv_scores1(0)$1" -> "X_train_sites(0)$0"	[label=train_and_predict];
 	"cv_scores1(0)$1" -> "X_test_sites(0)$0"	[label=train_and_predict];
 	"cv_scores1(0)$1" -> "y_train(0)$0"	[label=train_and_predict];
@@ -355,10 +354,10 @@ digraph "" {
 	"6(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"pd(0)$0" -> "pd(0)"	[label=crosstab];
 	"pd(0)$0" -> "y_train(0)$0"	[label=crosstab];
-	"pd(0)$0" -> "[<_ast.Name object at 0x12faf7880>, <_ast.Name object at 0x12faf78b0>, <_ast.Name object at 0x12faf7700>, <_ast.Name object at 0x12faf77f0>](\
-0)"	[label=crosstab];
-	"[<_ast.Name object at 0x12faf7880>, <_ast.Name object at 0x12faf78b0>, <_ast.Name object at 0x12faf7700>, <_ast.Name object at 0x12faf77f0>](\
-0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"pd(0)$0" -> "[<_ast.Name object at 0x7fd500832550>, <_ast.Name object at 0x7fd500832d00>, <_ast.Name object at 0x7fd500832790>, <_ast.Name object \
+at 0x7fd500832940>](0)"	[label=crosstab];
+	"[<_ast.Name object at 0x7fd500832550>, <_ast.Name object at 0x7fd500832d00>, <_ast.Name object at 0x7fd500832790>, <_ast.Name object \
+at 0x7fd500832940>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"times(4)" -> "add_time_features[0]"	[label=_argToVar];
 	"X_sparse(4)" -> "add_time_features[1]"	[label=_argToVar];
 	"add_hour(4)" -> "add_time_features[2]"	[label=_argToVar];
@@ -385,10 +384,10 @@ digraph "" {
 	"night(4)$0" -> "1(4)"	[label=reshape];
 	"night(4)$0" -> "0(4)"	[label=reshape];
 	"night(4)$0" -> "6(4)"	[label=reshape];
-	"objects_to_hstack(4)$0" -> "[<_ast.Name object at 0x12f9a3d00>, <_ast.Name object at 0x12f9a3d30>, <_ast.Name object at 0x12f9a3d60>, <_ast.Name object at 0x12f9a3d90>, <_\
-ast.Name object at 0x12f9a3dc0>](4)"	[label=assignedFrom];
-	"feature_names(4)$0" -> "[<_ast.Constant object at 0x12f9a3e80>, <_ast.Constant object at 0x12f9a3eb0>, <_ast.Constant object at 0x12f9a3ee0>, <_ast.Constant \
-object at 0x12f9a3f10>](4)"	[label=assignedFrom];
+	"objects_to_hstack(4)$0" -> "[<_ast.Name object at 0x7fd500869a90>, <_ast.Name object at 0x7fd500869a60>, <_ast.Name object at 0x7fd500869ac0>, <_ast.Name object \
+at 0x7fd500869af0>, <_ast.Name object at 0x7fd500869b20>](4)"	[label=assignedFrom];
+	"feature_names(4)$0" -> "[<_ast.Constant object at 0x7fd500869be0>, <_ast.Constant object at 0x7fd500869c10>, <_ast.Constant object at 0x7fd500869c40>, <_\
+ast.Constant object at 0x7fd500869ca0>](4)"	[label=assignedFrom];
 	"objects_to_hstack(4)$1" -> "hour(4)$0"	[label=append];
 	"objects_to_hstack(4)$1" -> "1(4)"	[label=append];
 	"objects_to_hstack(4)$1" -> "objects_to_hstack(4)$0"	[label=append];
@@ -452,9 +451,9 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"cv_scores4(0)$0" -> "new_feat_names(0)$1"	[label=train_and_predict];
 	"cv_scores4(0)$0" -> "X_train_with_time_incorrect(0)$0"	[label=train_and_predict];
 	"cv_scores4(0)$0" -> "X_test_with_time_incorrect(0)$0"	[label=train_and_predict];
-	"cv_scores4(0)$0" -> "[<_ast.Constant object at 0x12fadaac0>](0)"	[label=train_and_predict];
+	"cv_scores4(0)$0" -> "[<_ast.Constant object at 0x7fd5008337c0>](0)"	[label=train_and_predict];
 	"cv_scores4(0)$0" -> "subm4.csv(0)"	[label=train_and_predict];
-	"[<_ast.Constant object at 0x12fadaac0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008337c0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"subm4.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"train_durations(0)$0" -> "1(0)"	[label=astype];
 	"train_durations(0)$0" -> "train_times(0)$0"	[label=astype];
@@ -472,10 +471,10 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"test_dur_scaled(0)$0" -> "1(0)"	[label=transform];
 	"test_dur_scaled(0)$0" -> "test_durations(0)$0"	[label=transform];
 	"test_dur_scaled(0)$0" -> "scaler(0)"	[label=transform];
-	"[<_ast.Name object at 0x12fb13a60>, <_ast.Name object at 0x12fb13a90>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"X_train_with_time_correct(0)$0" -> "[<_ast.Name object at 0x12fb13a60>, <_ast.Name object at 0x12fb13a90>](0)"	[label=hstack];
-	"[<_ast.Name object at 0x12fb13bb0>, <_ast.Name object at 0x12fb13be0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"X_test_with_time_correct(0)$0" -> "[<_ast.Name object at 0x12fb13bb0>, <_ast.Name object at 0x12fb13be0>](0)"	[label=hstack];
+	"[<_ast.Name object at 0x7fd50082c790>, <_ast.Name object at 0x7fd50082c7c0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"X_train_with_time_correct(0)$0" -> "[<_ast.Name object at 0x7fd50082c790>, <_ast.Name object at 0x7fd50082c7c0>](0)"	[label=hstack];
+	"[<_ast.Name object at 0x7fd50082c8e0>, <_ast.Name object at 0x7fd50082c910>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"X_test_with_time_correct(0)$0" -> "[<_ast.Name object at 0x7fd50082c8e0>, <_ast.Name object at 0x7fd50082c910>](0)"	[label=hstack];
 	"cv_scores5(0)$0" -> "y_train(0)$0"	[label=train_and_predict];
 	"cv_scores5(0)$0" -> "vectorizer(0)$0"	[label=train_and_predict];
 	"cv_scores5(0)$0" -> "time_split(0)$0"	[label=train_and_predict];
@@ -483,9 +482,9 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"cv_scores5(0)$0" -> "new_feat_names(0)$1"	[label=train_and_predict];
 	"cv_scores5(0)$0" -> "X_train_with_time_correct(0)$0"	[label=train_and_predict];
 	"cv_scores5(0)$0" -> "X_test_with_time_correct(0)$0"	[label=train_and_predict];
-	"cv_scores5(0)$0" -> "[<_ast.Constant object at 0x12fb02130>](0)"	[label=train_and_predict];
+	"cv_scores5(0)$0" -> "[<_ast.Constant object at 0x7fd50082ce20>](0)"	[label=train_and_predict];
 	"cv_scores5(0)$0" -> "subm5.csv(0)"	[label=train_and_predict];
-	"[<_ast.Constant object at 0x12fb02130>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082ce20>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"subm5.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"times(6)" -> "add_day_month[0]"	[label=_argToVar];
 	"X_sparse(6)" -> "add_day_month[1]"	[label=_argToVar];
@@ -503,9 +502,9 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"year_month(6)$0" -> "1(6)"	[label=Div];
 	"year_month(6)$0" -> "100(6)"	[label=Div];
 	"year_month(6)$0" -> "100000.0(6)"	[label=Div];
-	"objects_to_hstack(6)$0" -> "[<_ast.Name object at 0x12fae91c0>, <_ast.Name object at 0x12fae91f0>, <_ast.Name object at 0x12fae9220>, <_ast.Name object at 0x12fae9250>](\
-6)"	[label=assignedFrom];
-	"feature_names(6)$0" -> "[<_ast.Constant object at 0x12fae9310>, <_ast.Constant object at 0x12fae9340>, <_ast.Constant object at 0x12fae9370>](6)"	[label=assignedFrom];
+	"objects_to_hstack(6)$0" -> "[<_ast.Name object at 0x7fd500814ee0>, <_ast.Name object at 0x7fd500814f10>, <_ast.Name object at 0x7fd500814f40>, <_ast.Name object \
+at 0x7fd500814f70>](6)"	[label=assignedFrom];
+	"feature_names(6)$0" -> "[<_ast.Constant object at 0x7fd500814370>, <_ast.Constant object at 0x7fd5008190a0>, <_ast.Constant object at 0x7fd500819070>](6)"	[label=assignedFrom];
 	"X(6)$0" -> "objects_to_hstack(6)$0"	[label=hstack];
 	"X_train_final(0)$0" -> "train_times(0)$0"	[label=add_day_month];
 	"X_train_final(0)$0" -> "X_train_with_time_correct(0)$0"	[label=add_day_month];
@@ -523,9 +522,9 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"cv_scores6(0)$0" -> "X_train_final(0)$0"	[label=train_and_predict];
 	"cv_scores6(0)$0" -> "more_feat_names(0)$0"	[label=train_and_predict];
 	"cv_scores6(0)$0" -> "X_test_final(0)$0"	[label=train_and_predict];
-	"cv_scores6(0)$0" -> "[<_ast.Constant object at 0x12fae9d90>](0)"	[label=train_and_predict];
+	"cv_scores6(0)$0" -> "[<_ast.Constant object at 0x7fd500819af0>](0)"	[label=train_and_predict];
 	"cv_scores6(0)$0" -> "subm6.csv(0)"	[label=train_and_predict];
-	"[<_ast.Constant object at 0x12fae9d90>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500819af0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"subm6.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"c_values(0)$0" -> "np(0)"	[label=logspace];
 	"c_values(0)$0" -> "2(0)"	[label=logspace];
@@ -551,31 +550,35 @@ object at 0x12f9a3f10>](4)"	[label=assignedFrom];
 	"cv_scores7(0)$0" -> "more_feat_names(0)$0"	[label=train_and_predict];
 	"cv_scores7(0)$0" -> "X_test_final(0)$0"	[label=train_and_predict];
 	"cv_scores7(0)$0" -> "final_model(0)$0"	[label=train_and_predict];
-	"cv_scores7(0)$0" -> "[<_ast.Constant object at 0x12faece50>](0)"	[label=train_and_predict];
+	"cv_scores7(0)$0" -> "[<_ast.Constant object at 0x7fd500810b80>](0)"	[label=train_and_predict];
 	"cv_scores7(0)$0" -> "subm7.csv(0)"	[label=train_and_predict];
-	"[<_ast.Constant object at 0x12faece50>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500810b80>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"subm7.csv(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"cv_means(0)$0" -> "np(0)"	[label=assignedFrom];
 	"cv_means(0)$0" -> "5(0)"	[label=assignedFrom];
 	"cv_means(0)$0" -> "cv_scores(0)"	[label=assignedFrom];
-	"cv_means(0)$0" -> "[<_ast.Name object at 0x12fb0d3a0>, <_ast.Name object at 0x12fb0d400>, <_ast.Name object at 0x12fb0d3d0>, <_ast.Name object at 0x12fb0d460>, <_\
-ast.Name object at 0x12fb0d520>, <_ast.Name object at 0x12fb0d490>, <_ast.Name object at 0x12fb0d4f0>](0)"	[label=assignedFrom];
+	"cv_means(0)$0" -> "[<_ast.Name object at 0x7fd500828070>, <_ast.Name object at 0x7fd5008280a0>, <_ast.Name object at 0x7fd5008280d0>, <_ast.Name object \
+at 0x7fd500828100>, <_ast.Name object at 0x7fd500828130>, <_ast.Name object at 0x7fd500828160>, <_ast.Name object at 0x7fd500828190>](\
+0)"	[label=assignedFrom];
 	"cv_scores(0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb0d3a0>, <_ast.Name object at 0x12fb0d400>, <_ast.Name object at 0x12fb0d3d0>, <_ast.Name object at 0x12fb0d460>, <_\
-ast.Name object at 0x12fb0d520>, <_ast.Name object at 0x12fb0d490>, <_ast.Name object at 0x12fb0d4f0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500828070>, <_ast.Name object at 0x7fd5008280a0>, <_ast.Name object at 0x7fd5008280d0>, <_ast.Name object \
+at 0x7fd500828100>, <_ast.Name object at 0x7fd500828130>, <_ast.Name object at 0x7fd500828160>, <_ast.Name object at 0x7fd500828190>](\
+0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
 	"cv_stds(0)$0" -> "np(0)"	[label=assignedFrom];
 	"cv_stds(0)$0" -> "5(0)"	[label=assignedFrom];
 	"cv_stds(0)$0" -> "cv_scores(0)"	[label=assignedFrom];
-	"cv_stds(0)$0" -> "[<_ast.Name object at 0x12fb0d7f0>, <_ast.Name object at 0x12fb0d7c0>, <_ast.Name object at 0x12fb0d640>, <_ast.Name object at 0x12fb0d670>, <_\
-ast.Name object at 0x12fb0d850>, <_ast.Name object at 0x12fb0d8e0>, <_ast.Name object at 0x12fb0d9a0>](0)"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12fb0d7f0>, <_ast.Name object at 0x12fb0d7c0>, <_ast.Name object at 0x12fb0d640>, <_ast.Name object at 0x12fb0d670>, <_\
-ast.Name object at 0x12fb0d850>, <_ast.Name object at 0x12fb0d8e0>, <_ast.Name object at 0x12fb0d9a0>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb0d970>, <_ast.Constant object at 0x12fb0d880>, <_ast.Constant object at 0x12fb0da30>, <_ast.Constant \
-object at 0x12fb0da90>, <_ast.Constant object at 0x12fb0da60>, <_ast.Constant object at 0x12fb0dac0>, <_ast.Constant object at 0x12fb0daf0>](\
-0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
-	"public_lb_scores(0)$0" -> "[<_ast.Constant object at 0x12fb0d970>, <_ast.Constant object at 0x12fb0d880>, <_ast.Constant object at 0x12fb0da30>, <_ast.Constant \
-object at 0x12fb0da90>, <_ast.Constant object at 0x12fb0da60>, <_ast.Constant object at 0x12fb0dac0>, <_ast.Constant object at 0x12fb0daf0>](\
+	"cv_stds(0)$0" -> "[<_ast.Name object at 0x7fd500828460>, <_ast.Name object at 0x7fd500828490>, <_ast.Name object at 0x7fd5008284c0>, <_ast.Name object \
+at 0x7fd5008284f0>, <_ast.Name object at 0x7fd500828520>, <_ast.Name object at 0x7fd500828550>, <_ast.Name object at 0x7fd500828580>](\
 0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500828460>, <_ast.Name object at 0x7fd500828490>, <_ast.Name object at 0x7fd5008284c0>, <_ast.Name object \
+at 0x7fd5008284f0>, <_ast.Name object at 0x7fd500828520>, <_ast.Name object at 0x7fd500828550>, <_ast.Name object at 0x7fd500828580>](\
+0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500828640>, <_ast.Constant object at 0x7fd500828670>, <_ast.Constant object at 0x7fd5008286a0>, <_\
+ast.Constant object at 0x7fd5008286d0>, <_ast.Constant object at 0x7fd500828700>, <_ast.Constant object at 0x7fd500828730>, <_ast.Constant \
+object at 0x7fd500828790>](0)" -> "model-validation-in-a-competition.ipynb"	[label=appearsIn];
+	"public_lb_scores(0)$0" -> "[<_ast.Constant object at 0x7fd500828640>, <_ast.Constant object at 0x7fd500828670>, <_ast.Constant object at 0x7fd5008286a0>, <_\
+ast.Constant object at 0x7fd5008286d0>, <_ast.Constant object at 0x7fd500828700>, <_ast.Constant object at 0x7fd500828730>, <_ast.Constant \
+object at 0x7fd500828790>](0)"	[label=assignedFrom];
 	"subm_df(0)$0" -> "1(0)"	[label=DataFrame];
 	"subm_df(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"subm_df(0)$0" -> "cv_means(0)$0"	[label=DataFrame];

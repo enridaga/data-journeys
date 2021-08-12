@@ -49,8 +49,6 @@ digraph "" {
 	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
 	"ignore(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"seed(1)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "SEED(0)$0"	[label=seed_everything];
-	"SEED(0)$0" -> "42(0)"	[label=assignedFrom];
 	"random(1)$0" -> "seed(1)"	[label=seed];
 	"random(1)$0" -> "random(1)"	[label=seed];
 	"os(1)$0" -> "seed(1)"	[label=str];
@@ -82,7 +80,7 @@ digraph "" {
 	"P_y(2)$0" -> "features_columns(2)"	[label=assignedFrom];
 	"P_y(2)$0" -> "target(2)"	[label=assignedFrom];
 	"tt_df(2)$0" -> "tt_df(2)"	[label=assignedFrom];
-	"tt_df(2)$0" -> "[<_ast.Constant object at 0x12fade8e0>, <_ast.Name object at 0x12fade610>](2)"	[label=assignedFrom];
+	"tt_df(2)$0" -> "[<_ast.Constant object at 0x7fd4902aba00>, <_ast.Name object at 0x7fd4902ab940>](2)"	[label=assignedFrom];
 	"predictions(2)$0" -> "tt_df(2)$0"	[label=zeros];
 	"predictions(2)$0" -> "np(2)"	[label=zeros];
 	"predictions(2)$0" -> "len(2)"	[label=zeros];
@@ -98,50 +96,11 @@ digraph "" {
 	"val_idx(2)" -> "X(2)$0"	[label=iteratorOf];
 	"val_idx(2)" -> "y(2)$0"	[label=iteratorOf];
 	"val_idx(2)" -> "enumerate(2)"	[label=iteratorOf];
-	"print[0]" -> "metrics(0)"	[label=print];
-	"print[0]" -> "len(2)"	[label=print];
-	"print[0]" -> "Fold:(2)"	[label=print];
-	"print[0]" -> "feature_imp(2)$0"	[label=print];
-	"print[0]" -> "Load Data(0)"	[label=print];
-	"print[0]" -> "Shape control:(0)"	[label=print];
-	"print[0]" -> "col(0)"	[label=print];
-	"print[0]" -> "features_discard(0)$0"	[label=print];
-	"feature_imp(2)$0" -> "X(2)$0"	[label=DataFrame];
-	"feature_imp(2)$0" -> "estimator(2)$0"	[label=DataFrame];
-	"feature_imp(2)$0" -> "pd(2)"	[label=DataFrame];
-	"feature_imp(2)$0" -> "sorted(2)"	[label=DataFrame];
-	"feature_imp(2)$0" -> "zip(2)"	[label=DataFrame];
-	"feature_imp(2)$0" -> "[<_ast.Constant object at 0x12fdb2190>, <_ast.Constant object at 0x12fdb2850>](2)"	[label=DataFrame];
-	"Load Data(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"Shape control:(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"col(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"col(0)" -> "list(0)"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$0"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f962f40>, <_ast.Constant object at 0x12f962f70>](0)"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$2"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$3"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fa79880>, <_ast.Constant object at 0x12fa79820>, <_ast.Constant object at 0x12fa79b20>](0)"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$4"	[label=iteratorOf];
-	"col(0)" -> "train_df(0)$17"	[label=iteratorOf];
-	"features_discard(0)$0" -> "0(0)"	[label=list];
-	"features_discard(0)$0" -> "features_check(0)$2"	[label=list];
-	"print[1]" -> "fold_(2)"	[label=print];
-	"print[1]" -> "tr_x(2)$0"	[label=print];
-	"print[1]" -> "train_df(0)$3"	[label=print];
-	"print[1]" -> "test_predictions(0)$0"	[label=print];
+	"print[36/8]" -> "fold_(2)"	[label=print];
+	"print[36/8]" -> "Fold:(2)"	[label=print];
 	"tr_x(2)$0" -> "X(2)$0"	[label=assignedFrom];
 	"tr_x(2)$0" -> "y(2)$0"	[label=assignedFrom];
 	"tr_x(2)$0" -> "trn_idx(2)"	[label=assignedFrom];
-	"train_df(0)$3" -> "train_df(0)$3"	[label=reset_index];
-	"train_df(0)$3" -> "train_df(0)$2"	[label=reset_index];
-	"train_df(0)$3" -> "DT_M(0)"	[label=reset_index];
-	"train_df(0)$3" -> "True(0)"	[label=reset_index];
-	"train_df(0)$3" -> "1(0)"	[label=reset_index];
-	"test_predictions(0)$0" -> "TARGET(0)$0"	[label=make_predictions];
-	"test_predictions(0)$0" -> "train_df(0)$21"	[label=make_predictions];
-	"test_predictions(0)$0" -> "test_df(0)$19"	[label=make_predictions];
-	"test_predictions(0)$0" -> "features_columns(0)$0"	[label=make_predictions];
-	"test_predictions(0)$0" -> "lgb_params(0)$3"	[label=make_predictions];
 	"tr_y(2)$0" -> "X(2)$0"	[label=assignedFrom];
 	"tr_y(2)$0" -> "y(2)$0"	[label=assignedFrom];
 	"tr_y(2)$0" -> "trn_idx(2)"	[label=assignedFrom];
@@ -151,14 +110,9 @@ digraph "" {
 	"vl_y(2)$0" -> "X(2)$0"	[label=assignedFrom];
 	"vl_y(2)$0" -> "y(2)$0"	[label=assignedFrom];
 	"vl_y(2)$0" -> "val_idx(2)"	[label=assignedFrom];
-	"print[2]" -> "len(2)"	[label=print];
-	"print[2]" -> "TARGET(0)$0"	[label=print];
-	"print[2]" -> "test_df(0)$1"	[label=print];
-	"TARGET(0)$0" -> "isFraud(0)"	[label=assignedFrom];
-	"test_df(0)$1" -> "pd(0)"	[label=read_pickle];
-	"test_df(0)$1" -> "../input/ieee-data-minification/test_transaction.pkl(0)"	[label=read_pickle];
-	"print[3]" -> "test_predictions(0)$0"	[label=print];
-	"print[3]" -> "vl_x(2)$0"	[label=print];
+	"print[40/8]" -> "len(2)"	[label=print];
+	"print[40/8]" -> "tr_x(2)$0"	[label=print];
+	"print[40/8]" -> "vl_x(2)$0"	[label=print];
 	"tr_data(2)$0" -> "tr_x(2)$0"	[label=Dataset];
 	"tr_data(2)$0" -> "tr_y(2)$0"	[label=Dataset];
 	"tr_data(2)$0" -> "lgb(2)"	[label=Dataset];
@@ -171,25 +125,37 @@ digraph "" {
 	"estimator(2)$0" -> "lgb_params(2)"	[label=train];
 	"estimator(2)$0" -> "tr_data(2)$0"	[label=train];
 	"estimator(2)$0" -> "lgb(2)"	[label=train];
-	"estimator(2)$0" -> "[<_ast.Name object at 0x12fdb2a60>, <_ast.Name object at 0x12fdb2e80>](2)"	[label=train];
+	"estimator(2)$0" -> "[<_ast.Name object at 0x7fd500832d90>, <_ast.Name object at 0x7fd500832bb0>](2)"	[label=train];
 	"estimator(2)$0" -> "200(2)"	[label=train];
 	"pp_p(2)$0" -> "P(2)$0"	[label=predict];
 	"pp_p(2)$0" -> "estimator(2)$0"	[label=predict];
 	"predictions(2)$1" -> "NFOLDS(2)"	[label=Add];
 	"predictions(2)$1" -> "predictions(2)$0"	[label=Add];
 	"predictions(2)$1" -> "pp_p(2)$0"	[label=Add];
+	"feature_imp(2)$0" -> "X(2)$0"	[label=DataFrame];
+	"feature_imp(2)$0" -> "estimator(2)$0"	[label=DataFrame];
+	"feature_imp(2)$0" -> "pd(2)"	[label=DataFrame];
+	"feature_imp(2)$0" -> "sorted(2)"	[label=DataFrame];
+	"feature_imp(2)$0" -> "zip(2)"	[label=DataFrame];
+	"feature_imp(2)$0" -> "[<_ast.Constant object at 0x7fd50085bdf0>, <_ast.Constant object at 0x7fd50085bbe0>](2)"	[label=DataFrame];
+	"print[60/12]" -> "feature_imp(2)$0"	[label=print];
 	"gc(2)$0" -> "gc(2)"	[label=collect];
 	"tt_df(2)$1" -> "tt_df(2)$0"	[label=assignedFrom];
 	"tt_df(2)$1" -> "predictions(2)$1"	[label=assignedFrom];
 	"42(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"SEED(0)$0" -> "42(0)"	[label=assignedFrom];
+	"seed_everything[73/0]" -> "SEED(0)$0"	[label=seed_everything];
 	"False(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"LOCAL_TEST(0)$0" -> "False(0)"	[label=assignedFrom];
 	"isFraud(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"TARGET(0)$0" -> "isFraud(0)"	[label=assignedFrom];
 	"START_DATE(0)$0" -> "datetime(0)"	[label=strptime];
 	"START_DATE(0)$0" -> "2017-11-30(0)"	[label=strptime];
 	"START_DATE(0)$0" -> "\%Y-\%m-\%d(0)"	[label=strptime];
 	"2017-11-30(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"\%Y-\%m-\%d(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"Load Data(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"print[79/0]" -> "Load Data(0)"	[label=print];
 	"train_df(0)$0" -> "pd(0)"	[label=read_pickle];
 	"train_df(0)$0" -> "../input/ieee-data-minification/train_transaction.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/train_transaction.pkl(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
@@ -212,6 +178,11 @@ digraph "" {
 	"test_df(0)$0" -> "DT_M(0)"	[label=reset_index];
 	"test_df(0)$0" -> "True(0)"	[label=reset_index];
 	"True(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"train_df(0)$3" -> "train_df(0)$2"	[label=reset_index];
+	"train_df(0)$3" -> "DT_M(0)"	[label=reset_index];
+	"train_df(0)$3" -> "True(0)"	[label=reset_index];
+	"train_df(0)$3" -> "train_df(0)$3"	[label=reset_index];
+	"train_df(0)$3" -> "1(0)"	[label=reset_index];
 	"1(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"train_identity(0)$0" -> "pd(0)"	[label=read_pickle];
 	"train_identity(0)$0" -> "../input/ieee-data-minification/train_identity.pkl(0)"	[label=read_pickle];
@@ -221,11 +192,13 @@ digraph "" {
 	"test_identity(0)$0" -> "train_identity(0)$0"	[label=reset_index];
 	"test_identity(0)$0" -> "TransactionID(0)"	[label=reset_index];
 	"TransactionID(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"train_identity(0)$1" -> "train_df(0)$3"	[label=reset_index];
 	"train_identity(0)$1" -> "True(0)"	[label=reset_index];
+	"train_identity(0)$1" -> "train_df(0)$3"	[label=reset_index];
 	"train_identity(0)$1" -> "train_identity(0)$0"	[label=reset_index];
 	"train_identity(0)$1" -> "TransactionID(0)"	[label=reset_index];
 	"train_identity(0)$1" -> "train_identity(0)$1"	[label=reset_index];
+	"test_df(0)$1" -> "pd(0)"	[label=read_pickle];
+	"test_df(0)$1" -> "../input/ieee-data-minification/test_transaction.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/test_transaction.pkl(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"train_identity(0)$2" -> "pd(0)"	[label=read_pickle];
 	"train_identity(0)$2" -> "../input/ieee-data-minification/train_identity.pkl(0)"	[label=read_pickle];
@@ -236,9 +209,13 @@ digraph "" {
 	"base_columns(0)$0" -> "train_df(0)$3"	[label=Add];
 	"base_columns(0)$0" -> "train_identity(0)$2"	[label=Add];
 	"base_columns(0)$0" -> "list(0)"	[label=Add];
-	"[<_ast.Name object at 0x12fc2b5e0>, <_ast.Name object at 0x12fc2bbb0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"Shape control:(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"print[105/0]" -> "train_df(0)$3"	[label=print];
+	"print[105/0]" -> "test_df(0)$1"	[label=print];
+	"print[105/0]" -> "Shape control:(0)"	[label=print];
+	"[<_ast.Name object at 0x7fd5007f0fd0>, <_ast.Name object at 0x7fd5007f0c70>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"df(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12fc2b5e0>, <_ast.Name object at 0x12fc2bbb0>](0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd5007f0fd0>, <_ast.Name object at 0x7fd5007f0c70>](0)"	[label=iteratorOf];
 	"df(0)$0" -> "datetime(0)"	[label=apply];
 	"df(0)$0" -> "START_DATE(0)$0"	[label=apply];
 	"df(0)$0" -> "TransactionDT(0)"	[label=apply];
@@ -274,38 +251,48 @@ digraph "" {
 	"df(0)$7" -> "df(0)$7"	[label=where];
 	"df(0)$7" -> "D9(0)"	[label=where];
 	"df(0)$7" -> "0(0)"	[label=where];
-	"df(0)$7" -> "[<_ast.Name object at 0x12f962af0>, <_ast.Name object at 0x12f962580>](0)"	[label=iteratorOf];
+	"df(0)$7" -> "[<_ast.Name object at 0x7fd500819820>, <_ast.Name object at 0x7fd500819520>](0)"	[label=iteratorOf];
 	"D9(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"0(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f962af0>, <_ast.Name object at 0x12f962580>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532880>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"i_cols(0)$0" -> "[<_ast.Constant object at 0x130532880>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f962f40>, <_ast.Constant object at 0x12f962f70>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"i_cols(0)$2" -> "[<_ast.Constant object at 0x12f92ed30>, <_ast.Constant object at 0x12f92ed60>, <_ast.Constant object at 0x12f92ed90>, <_ast.Constant \
-object at 0x12f92edc0>, <_ast.Constant object at 0x12f92edf0>, <_ast.Constant object at 0x12f92ee20>, <_ast.Constant object at 0x12f92ee50>](\
-0)"	[label=assignedFrom];
-	"i_cols(0)$3" -> "[<_ast.Constant object at 0x12fa644c0>, <_ast.Constant object at 0x12fa644f0>, <_ast.Constant object at 0x12fa64520>, <_ast.Constant \
-object at 0x12fa64550>, <_ast.Constant object at 0x12fa64580>, <_ast.Constant object at 0x12fa645e0>, <_ast.Constant object at 0x12fa64610>, <_\
-ast.Constant object at 0x12fa64640>, <_ast.Constant object at 0x12fa64670>, <_ast.Constant object at 0x12fa646a0>, <_ast.Constant \
-object at 0x12fa646d0>, <_ast.Constant object at 0x12fa64700>, <_ast.Constant object at 0x12fa64730>, <_ast.Constant object at 0x12fa64760>, <_\
-ast.Constant object at 0x12fa64790>, <_ast.Constant object at 0x12fa647c0>, <_ast.Constant object at 0x12fa647f0>, <_ast.Constant \
-object at 0x12fa64820>, <_ast.Constant object at 0x12fa64850>, <_ast.Constant object at 0x12fa64880>, <_ast.Constant object at 0x12fa648b0>, <_\
-ast.Constant object at 0x12fa64910>, <_ast.Constant object at 0x12fa648e0>, <_ast.Constant object at 0x12fa64940>, <_ast.Constant \
-object at 0x12fa64970>, <_ast.Constant object at 0x12fa649a0>, <_ast.Constant object at 0x12fa649d0>, <_ast.Constant object at 0x12fa64a00>, <_\
-ast.Constant object at 0x12fa64a30>, <_ast.Constant object at 0x12fa64a60>, <_ast.Constant object at 0x12fa64a90>, <_ast.Constant \
-object at 0x12fa64ac0>, <_ast.Constant object at 0x12fa64af0>, <_ast.Constant object at 0x12fa64b20>, <_ast.Constant object at 0x12fa64b50>, <_\
-ast.Constant object at 0x12fa64b80>, <_ast.Constant object at 0x12fa64bb0>, <_ast.Constant object at 0x12fa64be0>, <_ast.Constant \
-object at 0x12fa64c10>, <_ast.Constant object at 0x12fa645b0>, <_ast.Constant object at 0x12fa64c70>, <_ast.Constant object at 0x12fa64cd0>, <_\
-ast.Constant object at 0x12fa64d00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa79880>, <_ast.Constant object at 0x12fa79820>, <_ast.Constant object at 0x12fa79b20>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"i_cols(0)$4" -> "[<_ast.Constant object at 0x12fa5c820>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500819820>, <_ast.Name object at 0x7fd500819520>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c098b340>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"i_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c098b340>](0)"	[label=assignedFrom];
+	"col(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"col(0)" -> "list(0)"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$0"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd5008199a0>, <_ast.Constant object at 0x7fd5008196d0>](0)"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$2"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$3"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500827c40>, <_ast.Constant object at 0x7fd500827c70>, <_ast.Constant object at 0x7fd500827820>](0)"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$4"	[label=iteratorOf];
+	"col(0)" -> "train_df(0)$17"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd5008199a0>, <_ast.Constant object at 0x7fd5008196d0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"i_cols(0)$2" -> "[<_ast.Constant object at 0x7fd500811a00>, <_ast.Constant object at 0x7fd500811a30>, <_ast.Constant object at 0x7fd500811a60>, <_\
+ast.Constant object at 0x7fd500811a90>, <_ast.Constant object at 0x7fd500811ac0>, <_ast.Constant object at 0x7fd500811af0>, <_ast.Constant \
+object at 0x7fd500811b20>](0)"	[label=assignedFrom];
+	"i_cols(0)$3" -> "[<_ast.Constant object at 0x7fd500820130>, <_ast.Constant object at 0x7fd500820160>, <_ast.Constant object at 0x7fd500820190>, <_\
+ast.Constant object at 0x7fd5008201c0>, <_ast.Constant object at 0x7fd5008201f0>, <_ast.Constant object at 0x7fd500820220>, <_ast.Constant \
+object at 0x7fd500820250>, <_ast.Constant object at 0x7fd500820280>, <_ast.Constant object at 0x7fd5008202b0>, <_ast.Constant object \
+at 0x7fd5008202e0>, <_ast.Constant object at 0x7fd500820310>, <_ast.Constant object at 0x7fd500820340>, <_ast.Constant object at \
+0x7fd500820370>, <_ast.Constant object at 0x7fd5008203a0>, <_ast.Constant object at 0x7fd5008203d0>, <_ast.Constant object at 0x7fd500820400>, <_\
+ast.Constant object at 0x7fd500820430>, <_ast.Constant object at 0x7fd500820460>, <_ast.Constant object at 0x7fd500820490>, <_ast.Constant \
+object at 0x7fd5008204c0>, <_ast.Constant object at 0x7fd5008204f0>, <_ast.Constant object at 0x7fd500820520>, <_ast.Constant object \
+at 0x7fd500820550>, <_ast.Constant object at 0x7fd500820580>, <_ast.Constant object at 0x7fd5008205e0>, <_ast.Constant object at \
+0x7fd500820640>, <_ast.Constant object at 0x7fd500820670>, <_ast.Constant object at 0x7fd5008206a0>, <_ast.Constant object at 0x7fd5008206d0>, <_\
+ast.Constant object at 0x7fd500820700>, <_ast.Constant object at 0x7fd500820730>, <_ast.Constant object at 0x7fd500820760>, <_ast.Constant \
+object at 0x7fd500820790>, <_ast.Constant object at 0x7fd5008207c0>, <_ast.Constant object at 0x7fd5008207f0>, <_ast.Constant object \
+at 0x7fd500820820>, <_ast.Constant object at 0x7fd500820850>, <_ast.Constant object at 0x7fd500820880>, <_ast.Constant object at \
+0x7fd5008208b0>, <_ast.Constant object at 0x7fd5008208e0>, <_ast.Constant object at 0x7fd500820910>, <_ast.Constant object at 0x7fd500820610>, <_\
+ast.Constant object at 0x7fd500820940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500827c40>, <_ast.Constant object at 0x7fd500827c70>, <_ast.Constant object at 0x7fd500827820>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"i_cols(0)$4" -> "[<_ast.Constant object at 0x7fd500830490>](0)"	[label=assignedFrom];
 	"train_df(0)$17" -> "train_df(0)$17"	[label=Div];
 	"train_df(0)$17" -> "period(0)"	[label=Div];
 	"train_df(0)$17" -> "train_df(0)$16"	[label=Div];
 	"train_df(0)$17" -> "_total(0)"	[label=Div];
 	"valid_card(0)$0" -> "pd(0)"	[label=concat];
-	"valid_card(0)$0" -> "[<_ast.Subscript object at 0x130532970>, <_ast.Subscript object at 0x130532220>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x130532970>, <_ast.Subscript object at 0x130532220>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"valid_card(0)$0" -> "[<_ast.Subscript object at 0x7fd4c098b0a0>, <_ast.Subscript object at 0x7fd4c098b700>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c098b0a0>, <_ast.Subscript object at 0x7fd4c098b700>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"valid_card(0)$1" -> "col(0)"	[label=value_counts];
 	"valid_card(0)$1" -> "valid_card(0)$0"	[label=value_counts];
 	"valid_card(0)$2" -> "valid_card(0)$1"	[label=assignedFrom];
@@ -314,13 +301,13 @@ ast.Constant object at 0x12fa64d00>](0)"	[label=assignedFrom];
 	"2(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"valid_card(0)$3" -> "valid_card(0)$2"	[label=list];
 	"train_df(0)$4" -> "np(0)"	[label=where];
-	"train_df(0)$4" -> "col(0)"	[label=where];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=where];
 	"train_df(0)$4" -> "test_df(0)$1"	[label=where];
+	"train_df(0)$4" -> "col(0)"	[label=where];
 	"train_df(0)$4" -> "train_df(0)$4"	[label=where];
 	"test_df(0)$2" -> "np(0)"	[label=where];
-	"test_df(0)$2" -> "col(0)"	[label=where];
 	"test_df(0)$2" -> "test_df(0)$1"	[label=where];
+	"test_df(0)$2" -> "col(0)"	[label=where];
 	"test_df(0)$2" -> "train_df(0)$4"	[label=where];
 	"test_df(0)$2" -> "test_df(0)$2"	[label=where];
 	"train_df(0)$5" -> "np(0)"	[label=where];
@@ -333,12 +320,12 @@ ast.Constant object at 0x12fa64d00>](0)"	[label=assignedFrom];
 	"test_df(0)$3" -> "valid_card(0)$3"	[label=where];
 	"test_df(0)$3" -> "test_df(0)$2"	[label=where];
 	"test_df(0)$3" -> "test_df(0)$3"	[label=where];
-	"[<_ast.Constant object at 0x12f962880>, <_ast.Constant object at 0x12f962190>, <_ast.Constant object at 0x12f9624c0>, <_ast.Constant \
-object at 0x12f962520>, <_ast.Constant object at 0x12f962850>, <_ast.Constant object at 0x12f9624f0>, <_ast.Constant object at 0x12f962070>, <_\
-ast.Constant object at 0x12f962310>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"i_cols(0)$1" -> "[<_ast.Constant object at 0x12f962880>, <_ast.Constant object at 0x12f962190>, <_ast.Constant object at 0x12f9624c0>, <_ast.Constant \
-object at 0x12f962520>, <_ast.Constant object at 0x12f962850>, <_ast.Constant object at 0x12f9624f0>, <_ast.Constant object at 0x12f962070>, <_\
-ast.Constant object at 0x12f962310>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500821f40>, <_ast.Constant object at 0x7fd500819400>, <_ast.Constant object at 0x7fd5008190a0>, <_\
+ast.Constant object at 0x7fd500819250>, <_ast.Constant object at 0x7fd500819040>, <_ast.Constant object at 0x7fd5008194f0>, <_ast.Constant \
+object at 0x7fd500819130>, <_ast.Constant object at 0x7fd500819640>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"i_cols(0)$1" -> "[<_ast.Constant object at 0x7fd500821f40>, <_ast.Constant object at 0x7fd500819400>, <_ast.Constant object at 0x7fd5008190a0>, <_\
+ast.Constant object at 0x7fd500819250>, <_ast.Constant object at 0x7fd500819040>, <_ast.Constant object at 0x7fd5008194f0>, <_ast.Constant \
+object at 0x7fd500819130>, <_ast.Constant object at 0x7fd500819640>](0)"	[label=assignedFrom];
 	"df(0)$8" -> "np(0)"	[label=astype];
 	"df(0)$8" -> "1(0)"	[label=astype];
 	"df(0)$8" -> "df(0)$7"	[label=astype];
@@ -347,17 +334,17 @@ ast.Constant object at 0x12f962310>](0)"	[label=assignedFrom];
 	"df(0)$9" -> "1(0)"	[label=astype];
 	"df(0)$9" -> "i_cols(0)$1"	[label=astype];
 	"df(0)$9" -> "df(0)$8"	[label=astype];
-	"df(0)$9" -> "[<_ast.Name object at 0x12f95ba60>, <_ast.Name object at 0x12f95ba90>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12f95ba60>, <_ast.Name object at 0x12f95ba90>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"temp_dict(0)$0" -> "col(0)"	[label=rename];
+	"df(0)$9" -> "[<_ast.Name object at 0x7fd5008286d0>, <_ast.Name object at 0x7fd500828700>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd5008286d0>, <_ast.Name object at 0x7fd500828700>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_dict(0)$0" -> "TARGET(0)$0"	[label=rename];
+	"temp_dict(0)$0" -> "col(0)"	[label=rename];
 	"temp_dict(0)$0" -> "train_df(0)$5"	[label=rename];
-	"temp_dict(0)$0" -> "[<_ast.Name object at 0x13052a910>](0)"	[label=rename];
-	"temp_dict(0)$0" -> "[<_ast.Constant object at 0x13052a730>](0)"	[label=rename];
+	"temp_dict(0)$0" -> "[<_ast.Name object at 0x7fd500819340>](0)"	[label=rename];
+	"temp_dict(0)$0" -> "[<_ast.Constant object at 0x7fd500819280>](0)"	[label=rename];
 	"temp_dict(0)$0" -> "mean(0)"	[label=rename];
 	"temp_dict(0)$0" -> "_target_mean(0)"	[label=rename];
-	"[<_ast.Name object at 0x13052a910>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x13052a730>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500819340>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500819280>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"mean(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"_target_mean(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_dict(0)$1" -> "col(0)"	[label=assignedFrom];
@@ -436,27 +423,27 @@ ast.Constant object at 0x12f962310>](0)"	[label=assignedFrom];
 	"test_df(0)$8" -> "train_df(0)$10"	[label=where];
 	"test_df(0)$8" -> "TransactionAmt(0)"	[label=where];
 	"test_df(0)$8" -> "test_df(0)$8"	[label=where];
-	"[<_ast.Constant object at 0x12f92ed30>, <_ast.Constant object at 0x12f92ed60>, <_ast.Constant object at 0x12f92ed90>, <_ast.Constant \
-object at 0x12f92edc0>, <_ast.Constant object at 0x12f92edf0>, <_ast.Constant object at 0x12f92ee20>, <_ast.Constant object at 0x12f92ee50>](\
-0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f92efa0>, <_ast.Constant object at 0x12f92efd0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500811a00>, <_ast.Constant object at 0x7fd500811a30>, <_ast.Constant object at 0x7fd500811a60>, <_\
+ast.Constant object at 0x7fd500811a90>, <_ast.Constant object at 0x7fd500811ac0>, <_ast.Constant object at 0x7fd500811af0>, <_ast.Constant \
+object at 0x7fd500811b20>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500811c40>, <_ast.Constant object at 0x7fd500811c70>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"agg_type(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"agg_type(0)" -> "[<_ast.Constant object at 0x12f92efa0>, <_ast.Constant object at 0x12f92efd0>](0)"	[label=iteratorOf];
+	"agg_type(0)" -> "[<_ast.Constant object at 0x7fd500811c40>, <_ast.Constant object at 0x7fd500811c70>](0)"	[label=iteratorOf];
 	"new_col_name(0)$0" -> "col(0)"	[label=Add];
 	"new_col_name(0)$0" -> "agg_type(0)"	[label=Add];
 	"new_col_name(0)$0" -> "_TransactionAmt_(0)"	[label=Add];
 	"_TransactionAmt_(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$0" -> "pd(0)"	[label=concat];
-	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x12f9272b0>, <_ast.Subscript object at 0x12f927400>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f9272b0>, <_ast.Subscript object at 0x12f927400>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x7fd500811f40>, <_ast.Subscript object at 0x7fd50081d070>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500811f40>, <_ast.Subscript object at 0x7fd50081d070>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$1" -> "TransactionAmt(0)"	[label=rename];
 	"temp_df(0)$1" -> "agg_type(0)"	[label=rename];
 	"temp_df(0)$1" -> "new_col_name(0)$0"	[label=rename];
 	"temp_df(0)$1" -> "temp_df(0)$0"	[label=rename];
-	"temp_df(0)$1" -> "[<_ast.Name object at 0x12f9277c0>](0)"	[label=rename];
-	"temp_df(0)$1" -> "[<_ast.Name object at 0x12f9278e0>](0)"	[label=rename];
-	"[<_ast.Name object at 0x12f9277c0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9278e0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$1" -> "[<_ast.Name object at 0x7fd50081d370>](0)"	[label=rename];
+	"temp_df(0)$1" -> "[<_ast.Name object at 0x7fd50081d6d0>](0)"	[label=rename];
+	"[<_ast.Name object at 0x7fd50081d370>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50081d6d0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$2" -> "col(0)"	[label=list];
 	"temp_df(0)$2" -> "temp_df(0)$1"	[label=list];
 	"temp_df(0)$3" -> "new_col_name(0)$0"	[label=to_dict];
@@ -506,8 +493,8 @@ object at 0x12f92edc0>, <_ast.Constant object at 0x12f92edf0>, <_ast.Constant ob
 	"df(0)$14" -> "r(0)$0"	[label=apply];
 	"df(0)$14" -> "df(0)$13"	[label=apply];
 	"df(0)$14" -> ".(0)"	[label=apply];
-	"df(0)$14" -> "[<_ast.Name object at 0x12f9600a0>, <_ast.Name object at 0x12f9600d0>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12f9600a0>, <_ast.Name object at 0x12f9600d0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"df(0)$14" -> "[<_ast.Name object at 0x7fd500818cd0>, <_ast.Name object at 0x7fd500818d30>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd500818cd0>, <_ast.Name object at 0x7fd500818d30>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"df(0)$15" -> "df(0)$14"	[label=lower];
 	"df(0)$15" -> "DeviceInfo(0)"	[label=lower];
 	"df(0)$15" -> "unknown_device(0)"	[label=lower];
@@ -555,48 +542,49 @@ object at 0x12f92edc0>, <_ast.Constant object at 0x12f92edf0>, <_ast.Constant ob
 	"df(0)$22" -> "df(0)$21"	[label=apply];
 	"df(0)$22" -> "id_31(0)"	[label=apply];
 	"temp_df(0)$4" -> "train_df(0)$12"	[label=assignedFrom];
-	"temp_df(0)$4" -> "[<_ast.Constant object at 0x12fa636a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa636a0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$4" -> "[<_ast.Constant object at 0x7fd5008362e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008362e0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$5" -> "train_identity(0)$2"	[label=merge];
 	"temp_df(0)$5" -> "temp_df(0)$4"	[label=merge];
-	"temp_df(0)$5" -> "[<_ast.Constant object at 0x12fa638b0>](0)"	[label=merge];
+	"temp_df(0)$5" -> "[<_ast.Constant object at 0x7fd5008364f0>](0)"	[label=merge];
 	"temp_df(0)$5" -> "left(0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fa638b0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008364f0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"left(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"train_df(0)$13" -> "pd(0)"	[label=concat];
 	"train_df(0)$13" -> "1(0)"	[label=concat];
-	"train_df(0)$13" -> "[<_ast.Name object at 0x12fa63bb0>, <_ast.Name object at 0x12fa63be0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fa63bb0>, <_ast.Name object at 0x12fa63be0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"train_df(0)$13" -> "[<_ast.Name object at 0x7fd500836850>, <_ast.Name object at 0x7fd500836880>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500836850>, <_ast.Name object at 0x7fd500836880>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$6" -> "test_df(0)$10"	[label=assignedFrom];
-	"temp_df(0)$6" -> "[<_ast.Constant object at 0x12fa63df0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa63df0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$6" -> "[<_ast.Constant object at 0x7fd500836a60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500836a60>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$7" -> "test_identity(0)$1"	[label=merge];
 	"temp_df(0)$7" -> "left(0)"	[label=merge];
 	"temp_df(0)$7" -> "temp_df(0)$6"	[label=merge];
-	"temp_df(0)$7" -> "[<_ast.Constant object at 0x12fa63c10>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fa63c10>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$7" -> "[<_ast.Constant object at 0x7fd500836ca0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd500836ca0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"test_df(0)$11" -> "pd(0)"	[label=concat];
 	"test_df(0)$11" -> "1(0)"	[label=concat];
-	"test_df(0)$11" -> "[<_ast.Name object at 0x12fa64340>, <_ast.Name object at 0x12fa64370>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fa64340>, <_ast.Name object at 0x12fa64370>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa644c0>, <_ast.Constant object at 0x12fa644f0>, <_ast.Constant object at 0x12fa64520>, <_ast.Constant \
-object at 0x12fa64550>, <_ast.Constant object at 0x12fa64580>, <_ast.Constant object at 0x12fa645e0>, <_ast.Constant object at 0x12fa64610>, <_\
-ast.Constant object at 0x12fa64640>, <_ast.Constant object at 0x12fa64670>, <_ast.Constant object at 0x12fa646a0>, <_ast.Constant \
-object at 0x12fa646d0>, <_ast.Constant object at 0x12fa64700>, <_ast.Constant object at 0x12fa64730>, <_ast.Constant object at 0x12fa64760>, <_\
-ast.Constant object at 0x12fa64790>, <_ast.Constant object at 0x12fa647c0>, <_ast.Constant object at 0x12fa647f0>, <_ast.Constant \
-object at 0x12fa64820>, <_ast.Constant object at 0x12fa64850>, <_ast.Constant object at 0x12fa64880>, <_ast.Constant object at 0x12fa648b0>, <_\
-ast.Constant object at 0x12fa64910>, <_ast.Constant object at 0x12fa648e0>, <_ast.Constant object at 0x12fa64940>, <_ast.Constant \
-object at 0x12fa64970>, <_ast.Constant object at 0x12fa649a0>, <_ast.Constant object at 0x12fa649d0>, <_ast.Constant object at 0x12fa64a00>, <_\
-ast.Constant object at 0x12fa64a30>, <_ast.Constant object at 0x12fa64a60>, <_ast.Constant object at 0x12fa64a90>, <_ast.Constant \
-object at 0x12fa64ac0>, <_ast.Constant object at 0x12fa64af0>, <_ast.Constant object at 0x12fa64b20>, <_ast.Constant object at 0x12fa64b50>, <_\
-ast.Constant object at 0x12fa64b80>, <_ast.Constant object at 0x12fa64bb0>, <_ast.Constant object at 0x12fa64be0>, <_ast.Constant \
-object at 0x12fa64c10>, <_ast.Constant object at 0x12fa645b0>, <_ast.Constant object at 0x12fa64c70>, <_ast.Constant object at 0x12fa64cd0>, <_\
-ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"test_df(0)$11" -> "[<_ast.Name object at 0x7fd500836fa0>, <_ast.Name object at 0x7fd500836fd0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500836fa0>, <_ast.Name object at 0x7fd500836fd0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500820130>, <_ast.Constant object at 0x7fd500820160>, <_ast.Constant object at 0x7fd500820190>, <_\
+ast.Constant object at 0x7fd5008201c0>, <_ast.Constant object at 0x7fd5008201f0>, <_ast.Constant object at 0x7fd500820220>, <_ast.Constant \
+object at 0x7fd500820250>, <_ast.Constant object at 0x7fd500820280>, <_ast.Constant object at 0x7fd5008202b0>, <_ast.Constant object \
+at 0x7fd5008202e0>, <_ast.Constant object at 0x7fd500820310>, <_ast.Constant object at 0x7fd500820340>, <_ast.Constant object at \
+0x7fd500820370>, <_ast.Constant object at 0x7fd5008203a0>, <_ast.Constant object at 0x7fd5008203d0>, <_ast.Constant object at 0x7fd500820400>, <_\
+ast.Constant object at 0x7fd500820430>, <_ast.Constant object at 0x7fd500820460>, <_ast.Constant object at 0x7fd500820490>, <_ast.Constant \
+object at 0x7fd5008204c0>, <_ast.Constant object at 0x7fd5008204f0>, <_ast.Constant object at 0x7fd500820520>, <_ast.Constant object \
+at 0x7fd500820550>, <_ast.Constant object at 0x7fd500820580>, <_ast.Constant object at 0x7fd5008205e0>, <_ast.Constant object at \
+0x7fd500820640>, <_ast.Constant object at 0x7fd500820670>, <_ast.Constant object at 0x7fd5008206a0>, <_ast.Constant object at 0x7fd5008206d0>, <_\
+ast.Constant object at 0x7fd500820700>, <_ast.Constant object at 0x7fd500820730>, <_ast.Constant object at 0x7fd500820760>, <_ast.Constant \
+object at 0x7fd500820790>, <_ast.Constant object at 0x7fd5008207c0>, <_ast.Constant object at 0x7fd5008207f0>, <_ast.Constant object \
+at 0x7fd500820820>, <_ast.Constant object at 0x7fd500820850>, <_ast.Constant object at 0x7fd500820880>, <_ast.Constant object at \
+0x7fd5008208b0>, <_ast.Constant object at 0x7fd5008208e0>, <_ast.Constant object at 0x7fd500820910>, <_ast.Constant object at 0x7fd500820610>, <_\
+ast.Constant object at 0x7fd500820940>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$8" -> "pd(0)"	[label=concat];
-	"temp_df(0)$8" -> "[<_ast.Subscript object at 0x12fa64ee0>, <_ast.Subscript object at 0x12fa64fd0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa64ee0>, <_ast.Subscript object at 0x12fa64fd0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"fq_encode(0)$0" -> "col(0)"	[label=to_dict];
+	"temp_df(0)$8" -> "[<_ast.Subscript object at 0x7fd500820b20>, <_ast.Subscript object at 0x7fd500820c70>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500820b20>, <_ast.Subscript object at 0x7fd500820c70>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"fq_encode(0)$0" -> "False(0)"	[label=to_dict];
+	"fq_encode(0)$0" -> "col(0)"	[label=to_dict];
 	"fq_encode(0)$0" -> "temp_df(0)$8"	[label=to_dict];
 	"train_df(0)$14" -> "col(0)"	[label=map];
 	"train_df(0)$14" -> "train_df(0)$13"	[label=map];
@@ -605,8 +593,8 @@ ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.
 	"test_df(0)$12" -> "test_df(0)$11"	[label=map];
 	"test_df(0)$12" -> "fq_encode(0)$0"	[label=map];
 	"temp_df(0)$9" -> "pd(0)"	[label=concat];
-	"temp_df(0)$9" -> "[<_ast.Subscript object at 0x12fa799a0>, <_ast.Subscript object at 0x12fa79b80>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa799a0>, <_ast.Subscript object at 0x12fa79b80>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$9" -> "[<_ast.Subscript object at 0x7fd500827b50>, <_ast.Subscript object at 0x7fd500827a00>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500827b50>, <_ast.Subscript object at 0x7fd500827a00>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"fq_encode(0)$1" -> "col(0)"	[label=to_dict];
 	"fq_encode(0)$1" -> "temp_df(0)$9"	[label=to_dict];
 	"train_df(0)$15" -> "col(0)"	[label=map];
@@ -615,17 +603,17 @@ ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.
 	"test_df(0)$13" -> "col(0)"	[label=map];
 	"test_df(0)$13" -> "test_df(0)$12"	[label=map];
 	"test_df(0)$13" -> "fq_encode(0)$1"	[label=map];
-	"[<_ast.Constant object at 0x12fa5c700>, <_ast.Constant object at 0x12fa5c730>, <_ast.Constant object at 0x12fa5c760>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"periods(0)$0" -> "[<_ast.Constant object at 0x12fa5c700>, <_ast.Constant object at 0x12fa5c730>, <_ast.Constant object at 0x12fa5c760>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa5c820>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500830370>, <_ast.Constant object at 0x7fd5008303a0>, <_ast.Constant object at 0x7fd5008303d0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"periods(0)$0" -> "[<_ast.Constant object at 0x7fd500830370>, <_ast.Constant object at 0x7fd5008303a0>, <_ast.Constant object at 0x7fd5008303d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500830490>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"period(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"period(0)" -> "periods(0)$0"	[label=iteratorOf];
 	"new_column(0)$0" -> "col(0)"	[label=Add];
 	"new_column(0)$0" -> "_(0)"	[label=Add];
 	"new_column(0)$0" -> "period(0)"	[label=Add];
 	"temp_df(0)$10" -> "pd(0)"	[label=concat];
-	"temp_df(0)$10" -> "[<_ast.Subscript object at 0x12fa5cbe0>, <_ast.Subscript object at 0x12fa5cd30>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa5cbe0>, <_ast.Subscript object at 0x12fa5cd30>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"temp_df(0)$10" -> "[<_ast.Subscript object at 0x7fd500830880>, <_ast.Subscript object at 0x7fd500830970>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500830880>, <_ast.Subscript object at 0x7fd500830970>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"temp_df(0)$11" -> "col(0)"	[label=Add];
 	"temp_df(0)$11" -> "str(0)"	[label=Add];
 	"temp_df(0)$11" -> "_(0)"	[label=Add];
@@ -653,6 +641,7 @@ ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.
 	"test_df(0)$15" -> "test_df(0)$14"	[label=Div];
 	"test_df(0)$15" -> "_total(0)"	[label=Div];
 	"test_df(0)$15" -> "test_df(0)$15"	[label=Div];
+	"print[324/8]" -> "col(0)"	[label=print];
 	"train_df(0)$18" -> "col(0)"	[label=fillna];
 	"train_df(0)$18" -> "train_df(0)$17"	[label=fillna];
 	"train_df(0)$18" -> "unseen_before_label(0)"	[label=fillna];
@@ -667,8 +656,8 @@ ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.
 	"test_df(0)$17" -> "str(0)"	[label=astype];
 	"test_df(0)$17" -> "test_df(0)$16"	[label=astype];
 	"le(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "list(0)"	[label=fit];
+	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "train_df(0)$19"	[label=fit];
 	"le(0)$0" -> "test_df(0)$17"	[label=fit];
 	"le(0)$0" -> "le(0)"	[label=fit];
@@ -687,18 +676,20 @@ ast.Constant object at 0x12fa64d00>](0)" -> "ieee-gb-2-make-amount-useful-again.
 	"test_df(0)$19" -> "col(0)"	[label=astype];
 	"test_df(0)$19" -> "test_df(0)$18"	[label=astype];
 	"test_df(0)$19" -> "category(0)"	[label=astype];
-	"[<_ast.Constant object at 0x12fa74340>, <_ast.Constant object at 0x12fa74370>, <_ast.Name object at 0x12fa743a0>, <_ast.Constant \
-object at 0x12fa743d0>, <_ast.Constant object at 0x12fa74400>, <_ast.Constant object at 0x12fa74430>, <_ast.Constant object at 0x12fa74460>, <_\
-ast.Constant object at 0x12fa74490>, <_ast.Constant object at 0x12fa744c0>, <_ast.Constant object at 0x12fa744f0>, <_ast.Constant \
-object at 0x12fa74520>, <_ast.Constant object at 0x12fa74550>, <_ast.Constant object at 0x12fa74580>, <_ast.Constant object at 0x12fa745b0>, <_\
-ast.Constant object at 0x12fa745e0>, <_ast.Constant object at 0x12fa74610>, <_ast.Constant object at 0x12fa74640>, <_ast.Constant \
-object at 0x12fa74670>, <_ast.Constant object at 0x12fa746a0>, <_ast.Constant object at 0x12fa746d0>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"rm_cols(0)$0" -> "[<_ast.Constant object at 0x12fa74340>, <_ast.Constant object at 0x12fa74370>, <_ast.Name object at 0x12fa743a0>, <_ast.Constant \
-object at 0x12fa743d0>, <_ast.Constant object at 0x12fa74400>, <_ast.Constant object at 0x12fa74430>, <_ast.Constant object at 0x12fa74460>, <_\
-ast.Constant object at 0x12fa74490>, <_ast.Constant object at 0x12fa744c0>, <_ast.Constant object at 0x12fa744f0>, <_ast.Constant \
-object at 0x12fa74520>, <_ast.Constant object at 0x12fa74550>, <_ast.Constant object at 0x12fa74580>, <_ast.Constant object at 0x12fa745b0>, <_\
-ast.Constant object at 0x12fa745e0>, <_ast.Constant object at 0x12fa74610>, <_ast.Constant object at 0x12fa74640>, <_ast.Constant \
-object at 0x12fa74670>, <_ast.Constant object at 0x12fa746a0>, <_ast.Constant object at 0x12fa746d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d4f70>, <_ast.Constant object at 0x7fd4c04d4fa0>, <_ast.Name object at 0x7fd4c04d4fd0>, <_ast.Constant \
+object at 0x7fd4c04d8040>, <_ast.Constant object at 0x7fd4c04d8070>, <_ast.Constant object at 0x7fd4c04d80a0>, <_ast.Constant object \
+at 0x7fd4c04d80d0>, <_ast.Constant object at 0x7fd4c04d8100>, <_ast.Constant object at 0x7fd4c04d8130>, <_ast.Constant object at \
+0x7fd4c04d8160>, <_ast.Constant object at 0x7fd4c04d8190>, <_ast.Constant object at 0x7fd4c04d81c0>, <_ast.Constant object at 0x7fd4c04d81f0>, <_\
+ast.Constant object at 0x7fd4c04d8220>, <_ast.Constant object at 0x7fd4c04d8250>, <_ast.Constant object at 0x7fd4c04d82b0>, <_ast.Constant \
+object at 0x7fd4c04d8280>, <_ast.Constant object at 0x7fd4c04d82e0>, <_ast.Constant object at 0x7fd4c04d8310>, <_ast.Constant object \
+at 0x7fd4c04d8340>](0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
+	"rm_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d4f70>, <_ast.Constant object at 0x7fd4c04d4fa0>, <_ast.Name object at 0x7fd4c04d4fd0>, <_ast.Constant \
+object at 0x7fd4c04d8040>, <_ast.Constant object at 0x7fd4c04d8070>, <_ast.Constant object at 0x7fd4c04d80a0>, <_ast.Constant object \
+at 0x7fd4c04d80d0>, <_ast.Constant object at 0x7fd4c04d8100>, <_ast.Constant object at 0x7fd4c04d8130>, <_ast.Constant object at \
+0x7fd4c04d8160>, <_ast.Constant object at 0x7fd4c04d8190>, <_ast.Constant object at 0x7fd4c04d81c0>, <_ast.Constant object at 0x7fd4c04d81f0>, <_\
+ast.Constant object at 0x7fd4c04d8220>, <_ast.Constant object at 0x7fd4c04d8250>, <_ast.Constant object at 0x7fd4c04d82b0>, <_ast.Constant \
+object at 0x7fd4c04d8280>, <_ast.Constant object at 0x7fd4c04d82e0>, <_ast.Constant object at 0x7fd4c04d8310>, <_ast.Constant object \
+at 0x7fd4c04d8340>](0)"	[label=assignedFrom];
 	"scipy.stats" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=importedBy];
 	ks_2samp -> "scipy.stats"	[label=importedBy];
 	"ks_2samp(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
@@ -715,9 +706,12 @@ object at 0x12fa74670>, <_ast.Constant object at 0x12fa746a0>, <_ast.Constant ob
 	"features_check(0)$2" -> "pd(0)"	[label=sort_values];
 	"features_check(0)$2" -> "columns_to_check(0)$0"	[label=sort_values];
 	"features_check(0)$2" -> "features_check(0)$2"	[label=sort_values];
+	"features_discard(0)$0" -> "0(0)"	[label=list];
+	"features_discard(0)$0" -> "features_check(0)$2"	[label=list];
+	"print[364/0]" -> "features_discard(0)$0"	[label=print];
 	"features_discard(0)$1" -> "[](0)"	[label=assignedFrom];
-	"features_columns(0)$0" -> "col(0)"	[label=assignedFrom];
 	"features_columns(0)$0" -> "list(0)"	[label=assignedFrom];
+	"features_columns(0)$0" -> "col(0)"	[label=assignedFrom];
 	"features_columns(0)$0" -> "train_df(0)$21"	[label=assignedFrom];
 	"features_columns(0)$0" -> "rm_cols(0)$0"	[label=assignedFrom];
 	"features_columns(0)$0" -> "features_discard(0)$1"	[label=assignedFrom];
@@ -783,8 +777,16 @@ object at 0x12fa74670>, <_ast.Constant object at 0x12fa746a0>, <_ast.Constant ob
 	"lgb_params(0)$2" -> "20000(0)"	[label=assignedFrom];
 	"lgb_params(0)$3" -> "100(0)"	[label=assignedFrom];
 	"lgb_params(0)$3" -> "lgb_params(0)$2"	[label=assignedFrom];
+	"test_predictions(0)$0" -> "TARGET(0)$0"	[label=make_predictions];
+	"test_predictions(0)$0" -> "train_df(0)$21"	[label=make_predictions];
+	"test_predictions(0)$0" -> "test_df(0)$19"	[label=make_predictions];
+	"test_predictions(0)$0" -> "features_columns(0)$0"	[label=make_predictions];
+	"test_predictions(0)$0" -> "lgb_params(0)$3"	[label=make_predictions];
+	"print[398/4]" -> "metrics(0)"	[label=print];
+	"print[398/4]" -> "TARGET(0)$0"	[label=print];
+	"print[398/4]" -> "test_predictions(0)$0"	[label=print];
+	"print[398/4]" -> "prediction(0)"	[label=print];
 	"prediction(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
-	"print[4]" -> "prediction(0)"	[label=print];
 	"0.005(0)" -> "ieee-gb-2-make-amount-useful-again.ipynb"	[label=appearsIn];
 	"lgb_params(0)$4" -> "lgb_params(0)$3"	[label=assignedFrom];
 	"lgb_params(0)$4" -> "0.005(0)"	[label=assignedFrom];

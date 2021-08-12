@@ -48,72 +48,34 @@ digraph "" {
 	"../input/WA_Fn-UseC_-Telco-Customer-Churn.csv(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"telcom(0)$1" -> "telcom(0)$0"	[label=head];
 	"Rows     : (0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"print[0]" -> "Rows     : (0)"	[label=print];
-	"print[0]" -> "Columns  : (0)"	[label=print];
-	"print[0]" -> "
-Features : 
-(0)"	[label=print];
-	"print[0]" -> "
-Missing values :  (0)"	[label=print];
-	"print[0]" -> "
-Unique values :  
-(0)"	[label=print];
-	"print[0]" -> "algorithm(12)$0"	[label=print];
-	"print[0]" -> "
- Classification report : 
-(12)"	[label=print];
-	"print[0]" -> "Accuracy   Score : (12)"	[label=print];
-	"print[0]" -> "Area under curve : (12)"	[label=print];
-	"print[0]" -> "fit(0)$0"	[label=print];
-	"print[0]" -> "scores(0)"	[label=print];
-	"print[0]" -> "P - Values(0)"	[label=print];
-	"print[0]" -> "algorithm(14)$0"	[label=print];
-	"print[0]" -> "
- Classification report : 
-(14)"	[label=print];
-	"print[0]" -> "Accuracy Score   : (14)"	[label=print];
-	"print[0]" -> "Area under curve : (14)"	[label=print];
+	"print[24/0]" -> "telcom(0)$1"	[label=print];
+	"print[24/0]" -> "Rows     : (0)"	[label=print];
+	"print[24/0]" -> "0(0)"	[label=print];
+	"0(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"Columns  : (0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"print[25/0]" -> "telcom(0)$1"	[label=print];
+	"print[25/0]" -> "Columns  : (0)"	[label=print];
+	"print[25/0]" -> "1(0)"	[label=print];
+	"1(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"
 Features : 
 (0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "telcom(0)$1"	[label=print];
+	"print[26/0]" -> "
+Features : 
+(0)"	[label=print];
 	"
 Missing values :  (0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"print[27/0]" -> "telcom(0)$1"	[label=print];
+	"print[27/0]" -> "
+Missing values :  (0)"	[label=print];
 	"
 Unique values :  
 (0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"algorithm(12)$0" -> "algorithm(12)"	[label=fit];
-	"algorithm(12)$0" -> "training_x(12)"	[label=fit];
-	"algorithm(12)$0" -> "training_y(12)"	[label=fit];
-	"fit(0)$0" -> "df_x(0)$0"	[label=fit];
-	"fit(0)$0" -> "df_y(0)$0"	[label=fit];
-	"fit(0)$0" -> "select(0)$0"	[label=fit];
-	"scores(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"P - Values(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"algorithm(14)$0" -> "algorithm(14)"	[label=fit];
-	"algorithm(14)$0" -> "training_x(14)"	[label=fit];
-	"algorithm(14)$0" -> "training_y(14)"	[label=fit];
-	"print[1]" -> "telcom(0)$1"	[label=print];
-	"print[1]" -> "classification_report(12)"	[label=print];
-	"print[1]" -> "accuracy_score(12)"	[label=print];
-	"print[1]" -> "model_roc_auc(12)$0"	[label=print];
-	"print[1]" -> "classification_report(14)"	[label=print];
-	"print[1]" -> "accuracy_score(14)"	[label=print];
-	"print[1]" -> "model_roc_auc(14)$0"	[label=print];
-	"model_roc_auc(12)$0" -> "testing_y(12)"	[label=roc_auc_score];
-	"model_roc_auc(12)$0" -> "predictions(12)$0"	[label=roc_auc_score];
-	"model_roc_auc(14)$0" -> "testing_y(14)"	[label=roc_auc_score];
-	"model_roc_auc(14)$0" -> "predictions(14)$0"	[label=roc_auc_score];
-	"0(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "testing_y(12)"	[label=print];
-	"print[2]" -> "
-(12)"	[label=print];
-	"print[2]" -> "testing_y(14)"	[label=print];
-	"1(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"testing_y(12)" -> "telecom_churn_prediction[4]"	[label=_argToVar];
-	"testing_y(14)" -> "telecom_churn_prediction_alg[4]"	[label=_argToVar];
+	"print[28/0]" -> "telcom(0)$1"	[label=print];
+	"print[28/0]" -> "
+Unique values :  
+(0)"	[label=print];
 	"telcom(0)$2" -> "np(0)"	[label=replace];
 	"telcom(0)$2" -> "telcom(0)$1"	[label=replace];
 	"telcom(0)$2" -> "TotalCharges(0)"	[label=replace];
@@ -129,10 +91,10 @@ Unique values :
 	"telcom(0)$5" -> "telcom(0)$4"	[label=astype];
 	"telcom(0)$5" -> "float(0)"	[label=astype];
 	"float(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant \
-object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f790>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"replace_cols(0)$0" -> "[<_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant \
-object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f790>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0d60>, <_\
+ast.Constant object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0b50>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"replace_cols(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0d60>, <_\
+ast.Constant object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0b50>](0)"	[label=assignedFrom];
 	"i(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"i(0)" -> "itertools(0)"	[label=iteratorOf];
 	"i(0)" -> "replace_cols(0)$0"	[label=iteratorOf];
@@ -167,28 +129,31 @@ object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant ob
 	"n(0)$1" -> "np(0)"	[label=tolist];
 	"n(0)$1" -> "0(0)"	[label=tolist];
 	"n(0)$1" -> "10(0)"	[label=tolist];
-	"lst(0)$0" -> "[<_ast.Name object at 0x12f8eb880>, <_ast.Name object at 0x12f8eb8b0>, <_ast.Name object at 0x12f8eb8e0>, <_ast.Name object at 0x12f8eb910>, <_\
-ast.Name object at 0x12f8eb940>, <_ast.Name object at 0x12f8eb970>, <_ast.Name object at 0x12f8eb9a0>, <_ast.Name object at 0x12f8eb9d0>, <_\
-ast.Name object at 0x12f8eba00>, <_ast.Name object at 0x12f8eba30>](0)"	[label=assignedFrom];
+	"lst(0)$0" -> "[<_ast.Name object at 0x7fd490132610>, <_ast.Name object at 0x7fd490132670>, <_ast.Name object at 0x7fd490132100>, <_ast.Name object \
+at 0x7fd4901326a0>, <_ast.Name object at 0x7fd4901326d0>, <_ast.Name object at 0x7fd490132700>, <_ast.Name object at 0x7fd490132730>, <_\
+ast.Name object at 0x7fd490132760>, <_ast.Name object at 0x7fd490132460>, <_ast.Name object at 0x7fd490132790>](0)"	[label=assignedFrom];
 	"length(0)$0" -> "lst(0)$0"	[label=len];
-	"mods(0)$0" -> "[<_ast.Constant object at 0x12f8ebbe0>, <_ast.Constant object at 0x12f8ebc10>, <_ast.Constant object at 0x12f8ebc40>, <_ast.Constant \
-object at 0x12f8ebc70>, <_ast.Constant object at 0x12f8ebca0>, <_ast.Constant object at 0x12f8ebcd0>, <_ast.Constant object at 0x12f8ebd00>, <_\
-ast.Constant object at 0x12f8ebd30>, <_ast.Constant object at 0x12f8ebd60>, <_ast.Constant object at 0x12f8ebd90>](0)"	[label=assignedFrom];
+	"mods(0)$0" -> "[<_ast.Constant object at 0x7fd490132640>, <_ast.Constant object at 0x7fd490132940>, <_ast.Constant object at 0x7fd490132970>, <_\
+ast.Constant object at 0x7fd4901329d0>, <_ast.Constant object at 0x7fd4901329a0>, <_ast.Constant object at 0x7fd490132a00>, <_ast.Constant \
+object at 0x7fd490132a30>, <_ast.Constant object at 0x7fd490132a60>, <_ast.Constant object at 0x7fd490132a90>, <_ast.Constant object \
+at 0x7fd490132ac0>](0)"	[label=assignedFrom];
 	"range(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"lst(0)$1" -> "[<_ast.Name object at 0x12f9152e0>, <_ast.Name object at 0x12f915310>, <_ast.Name object at 0x12f915340>, <_ast.Name object at 0x12f915370>, <_\
-ast.Name object at 0x12f9153a0>, <_ast.Name object at 0x12f9153d0>, <_ast.Name object at 0x12f915400>, <_ast.Name object at 0x12f915430>, <_\
-ast.Name object at 0x12f915160>, <_ast.Name object at 0x12f915460>](0)"	[label=assignedFrom];
+	"lst(0)$1" -> "[<_ast.Name object at 0x7fd49013bf70>, <_ast.Name object at 0x7fd49013bfa0>, <_ast.Name object at 0x7fd49013bfd0>, <_ast.Name object \
+at 0x7fd5009a7040>, <_ast.Name object at 0x7fd5009a7070>, <_ast.Name object at 0x7fd5009a70a0>, <_ast.Name object at 0x7fd5009a70d0>, <_\
+ast.Name object at 0x7fd5009a7100>, <_ast.Name object at 0x7fd5009a7130>, <_ast.Name object at 0x7fd5009a7160>](0)"	[label=assignedFrom];
 	"length(0)$1" -> "lst(0)$1"	[label=len];
-	"mods(0)$1" -> "[<_ast.Constant object at 0x12f915610>, <_ast.Constant object at 0x12f915640>, <_ast.Constant object at 0x12f915670>, <_ast.Constant \
-object at 0x12f9156a0>, <_ast.Constant object at 0x12f9156d0>, <_ast.Constant object at 0x12f915730>, <_ast.Constant object at 0x12f915760>, <_\
-ast.Constant object at 0x12f915790>, <_ast.Constant object at 0x12f9157c0>, <_ast.Constant object at 0x12f9157f0>](0)"	[label=assignedFrom];
-	"lst(0)$2" -> "[<_ast.Name object at 0x12f8ed160>, <_ast.Name object at 0x12f8ed190>, <_ast.Name object at 0x12f8ed1c0>, <_ast.Name object at 0x12f8ed1f0>, <_\
-ast.Name object at 0x12f8ed220>, <_ast.Name object at 0x12f8ed250>, <_ast.Name object at 0x12f8ed280>, <_ast.Name object at 0x12f8ed2b0>, <_\
-ast.Name object at 0x12f8ed2e0>, <_ast.Name object at 0x12f8ed310>](0)"	[label=assignedFrom];
+	"mods(0)$1" -> "[<_ast.Constant object at 0x7fd5009a7310>, <_ast.Constant object at 0x7fd5009a7340>, <_ast.Constant object at 0x7fd5009a7370>, <_\
+ast.Constant object at 0x7fd5009a73a0>, <_ast.Constant object at 0x7fd5009a73d0>, <_ast.Constant object at 0x7fd5009a7400>, <_ast.Constant \
+object at 0x7fd5009a7430>, <_ast.Constant object at 0x7fd5009a7460>, <_ast.Constant object at 0x7fd5009a7490>, <_ast.Constant object \
+at 0x7fd5009a74c0>](0)"	[label=assignedFrom];
+	"lst(0)$2" -> "[<_ast.Name object at 0x7fd5009bfe20>, <_ast.Name object at 0x7fd5009bfe50>, <_ast.Name object at 0x7fd5009bfe80>, <_ast.Name object \
+at 0x7fd5009bfeb0>, <_ast.Name object at 0x7fd5009bfee0>, <_ast.Name object at 0x7fd5009bff10>, <_ast.Name object at 0x7fd5009bff40>, <_\
+ast.Name object at 0x7fd5009bff70>, <_ast.Name object at 0x7fd5009bffa0>, <_ast.Name object at 0x7fd5009bffd0>](0)"	[label=assignedFrom];
 	"length(0)$2" -> "lst(0)$2"	[label=len];
-	"mods(0)$2" -> "[<_ast.Constant object at 0x12f8ed4c0>, <_ast.Constant object at 0x12f8ed4f0>, <_ast.Constant object at 0x12f8ed520>, <_ast.Constant \
-object at 0x12f8ed550>, <_ast.Constant object at 0x12f8ed580>, <_ast.Constant object at 0x12f8ed5b0>, <_ast.Constant object at 0x12f8ed5e0>, <_\
-ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_ast.Constant object at 0x12f8ed670>](0)"	[label=assignedFrom];
+	"mods(0)$2" -> "[<_ast.Constant object at 0x7fd5009c52b0>, <_ast.Constant object at 0x7fd5009c52e0>, <_ast.Constant object at 0x7fd5009c5310>, <_\
+ast.Constant object at 0x7fd5009c5370>, <_ast.Constant object at 0x7fd5009c5100>, <_ast.Constant object at 0x7fd5009c50d0>, <_ast.Constant \
+object at 0x7fd5009c5070>, <_ast.Constant object at 0x7fd5009c57c0>, <_ast.Constant object at 0x7fd5009c53d0>, <_ast.Constant object \
+at 0x7fd5009c54c0>](0)"	[label=assignedFrom];
 	"telcom(0)$6" -> "telcom(0)$5"	[label=replace];
 	"telcom(0)$6" -> "i(0)"	[label=replace];
 	"telcom(0)$6" -> "No internet service(0)"	[label=replace];
@@ -216,10 +181,10 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"not_churn(0)$0" -> "No(0)"	[label=assignedFrom];
 	"not_churn(0)$0" -> "telcom(0)$8"	[label=assignedFrom];
 	"not_churn(0)$0" -> "Churn(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadedc0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"Id_col(0)$0" -> "[<_ast.Constant object at 0x12fadedc0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadeb20>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"target_col(0)$0" -> "[<_ast.Constant object at 0x12fadeb20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ffb20>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"Id_col(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffb20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ffee0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"target_col(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffee0>](0)"	[label=assignedFrom];
 	"cat_cols(0)$0" -> "telcom(0)$8"	[label=tolist];
 	"cat_cols(0)$0" -> "6(0)"	[label=tolist];
 	"6(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
@@ -232,14 +197,14 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"trace(0)$0" -> "lab(0)$0"	[label=Pie];
 	"trace(0)$0" -> "val(0)$0"	[label=Pie];
 	"trace(0)$0" -> "dict(0)"	[label=Pie];
-	"trace(0)$0" -> "[<_ast.Constant object at 0x12fb13370>, <_ast.Constant object at 0x12fb13be0>](0)"	[label=Pie];
+	"trace(0)$0" -> "[<_ast.Constant object at 0x7fd500844df0>, <_ast.Constant object at 0x7fd500844a00>](0)"	[label=Pie];
 	"trace(0)$0" -> "white(0)"	[label=Pie];
 	"trace(0)$0" -> "1.3(0)"	[label=Pie];
 	"trace(0)$0" -> "90(0)"	[label=Pie];
 	"trace(0)$0" -> "label+value+text(0)"	[label=Pie];
 	"trace(0)$0" -> "0.5(0)"	[label=Pie];
 	"dict(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb13370>, <_ast.Constant object at 0x12fb13be0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500844df0>, <_ast.Constant object at 0x7fd500844a00>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"white(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"1.3(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"90(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
@@ -251,21 +216,20 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"layout(0)$0" -> "rgb(243,243,243)(0)"	[label=Layout];
 	"Customer attrition in data(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"rgb(243,243,243)(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb13c10>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Name object at 0x12fb13c10>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ccd00>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd4c04ccd00>](0)"	[label=assignedFrom];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "layout(0)$0"	[label=Figure];
 	"fig(0)$0" -> "data(0)$0"	[label=Figure];
 	"py(0)$1" -> "py(0)$0"	[label=iplot];
 	"py(0)$1" -> "fig(0)$0"	[label=iplot];
 	"column(2)" -> "plot_pie[0]"	[label=_argToVar];
-	"plot_pie[0]" -> "i(0)"	[label=plot_pie];
 	"trace1(2)$0" -> "column(2)"	[label=Pie];
 	"trace1(2)$0" -> "go(2)"	[label=Pie];
 	"trace1(2)$0" -> "churn(2)"	[label=Pie];
 	"trace1(2)$0" -> "label+percent+name(2)"	[label=Pie];
 	"trace1(2)$0" -> "dict(2)"	[label=Pie];
-	"trace1(2)$0" -> "[<_ast.Constant object at 0x12f9a4790>, <_ast.Constant object at 0x12f9a45b0>](2)"	[label=Pie];
+	"trace1(2)$0" -> "[<_ast.Constant object at 0x7fd5008291f0>, <_ast.Constant object at 0x7fd5008291c0>](2)"	[label=Pie];
 	"trace1(2)$0" -> "Churn Customers(2)"	[label=Pie];
 	"trace1(2)$0" -> "2(2)"	[label=Pie];
 	"trace1(2)$0" -> "rgb(243,243,243)(2)"	[label=Pie];
@@ -278,22 +242,21 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"trace2(2)$0" -> "rgb(243,243,243)(2)"	[label=Pie];
 	"trace2(2)$0" -> "0.6(2)"	[label=Pie];
 	"trace2(2)$0" -> "not_churn(2)"	[label=Pie];
-	"trace2(2)$0" -> "[<_ast.Constant object at 0x12faed430>, <_ast.Constant object at 0x12faed7c0>](2)"	[label=Pie];
+	"trace2(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ab340>, <_ast.Constant object at 0x7fd4c04ab1c0>](2)"	[label=Pie];
 	"trace2(2)$0" -> "Non churn customers(2)"	[label=Pie];
 	"layout(2)$0" -> "column(2)"	[label=Layout];
 	"layout(2)$0" -> "go(2)"	[label=Layout];
 	"layout(2)$0" -> "dict(2)"	[label=Layout];
 	"layout(2)$0" -> "rgb(243,243,243)(2)"	[label=Layout];
 	"layout(2)$0" -> " distribution in customer attrition (2)"	[label=Layout];
-	"layout(2)$0" -> "[<_ast.Call object at 0x12faedc40>, <_ast.Call object at 0x12faed670>](2)"	[label=Layout];
-	"data(2)$0" -> "[<_ast.Name object at 0x12fc1a940>, <_ast.Name object at 0x12fc1a7f0>](2)"	[label=assignedFrom];
+	"layout(2)$0" -> "[<_ast.Call object at 0x7fd4c04ab6a0>, <_ast.Call object at 0x7fd4c04abf40>](2)"	[label=Layout];
+	"data(2)$0" -> "[<_ast.Name object at 0x7fd50082e280>, <_ast.Name object at 0x7fd50082e130>](2)"	[label=assignedFrom];
 	"fig(2)$0" -> "go(2)"	[label=Figure];
 	"fig(2)$0" -> "layout(2)$0"	[label=Figure];
 	"fig(2)$0" -> "data(2)$0"	[label=Figure];
 	"py(2)$0" -> "fig(2)$0"	[label=iplot];
 	"py(2)$0" -> "py(2)"	[label=iplot];
 	"column(3)" -> "histogram[0]"	[label=_argToVar];
-	"histogram[0]" -> "i(0)"	[label=histogram];
 	"trace1(3)$0" -> "column(3)"	[label=Histogram];
 	"trace1(3)$0" -> "go(3)"	[label=Histogram];
 	"trace1(3)$0" -> "churn(3)"	[label=Histogram];
@@ -312,7 +275,7 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"trace2(3)$0" -> "0.9(3)"	[label=Histogram];
 	"trace2(3)$0" -> "not_churn(3)"	[label=Histogram];
 	"trace2(3)$0" -> "Non churn customers(3)"	[label=Histogram];
-	"data(3)$0" -> "[<_ast.Name object at 0x12f9a6730>, <_ast.Name object at 0x12f9a6760>](3)"	[label=assignedFrom];
+	"data(3)$0" -> "[<_ast.Name object at 0x7fd49029e3d0>, <_ast.Name object at 0x7fd49029e370>](3)"	[label=assignedFrom];
 	"layout(3)$0" -> "column(3)"	[label=Layout];
 	"layout(3)$0" -> "go(3)"	[label=Layout];
 	"layout(3)$0" -> "percent(3)"	[label=Layout];
@@ -329,7 +292,6 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"py(3)$0" -> "fig(3)$0"	[label=iplot];
 	"py(3)$0" -> "py(3)"	[label=iplot];
 	"df(4)" -> "scatter_matrix[0]"	[label=_argToVar];
-	"scatter_matrix[0]" -> "telcom(0)$8"	[label=scatter_matrix];
 	"df(4)$0" -> "df(4)"	[label=sort_values];
 	"df(4)$0" -> "Churn(4)"	[label=sort_values];
 	"df(4)$0" -> "True(4)"	[label=sort_values];
@@ -353,7 +315,7 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"trace(4)$0" -> "pl_colorscale(4)$0"	[label=Splom];
 	"trace(4)$0" -> "text(4)$0"	[label=Splom];
 	"trace(4)$0" -> "go(4)"	[label=Splom];
-	"trace(4)$0" -> "[<_ast.Call object at 0x12fc48940>, <_ast.Call object at 0x12fc48b80>, <_ast.Call object at 0x12fc48dc0>](4)"	[label=Splom];
+	"trace(4)$0" -> "[<_ast.Call object at 0x7fd490299640>, <_ast.Call object at 0x7fd490299880>, <_ast.Call object at 0x7fd490299ac0>](4)"	[label=Splom];
 	"trace(4)$0" -> "dict(4)"	[label=Splom];
 	"trace(4)$0" -> "3(4)"	[label=Splom];
 	"trace(4)$0" -> "False(4)"	[label=Splom];
@@ -372,23 +334,26 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"layout(4)$0" -> "select(4)"	[label=Layout];
 	"layout(4)$0" -> "closest(4)"	[label=Layout];
 	"layout(4)$0" -> "rgba(240,240,240, 0.95)(4)"	[label=Layout];
-	"data(4)$0" -> "[<_ast.Name object at 0x12fc37490>](4)"	[label=assignedFrom];
+	"data(4)$0" -> "[<_ast.Name object at 0x7fd490295190>](4)"	[label=assignedFrom];
 	"fig(4)$0" -> "go(4)"	[label=Figure];
 	"fig(4)$0" -> "layout(4)$0"	[label=Figure];
 	"fig(4)$0" -> "data(4)$0"	[label=Figure];
 	"py(4)$0" -> "fig(4)$0"	[label=iplot];
 	"py(4)$0" -> "py(4)"	[label=iplot];
+	"plot_pie[253/4]" -> "i(0)"	[label=plot_pie];
+	"histogram[257/4]" -> "i(0)"	[label=histogram];
+	"scatter_matrix[260/0]" -> "telcom(0)$8"	[label=scatter_matrix];
 	"tg_ch(0)$0" -> "churn(0)$0"	[label=reset_index];
 	"tg_ch(0)$0" -> "tenure_group(0)"	[label=reset_index];
 	"tenure_group(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc37eb0>, <_ast.Constant object at 0x12fc37ee0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd490295bb0>, <_ast.Constant object at 0x7fd490295be0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"tg_ch(0)$1" -> "tg_ch(0)$0"	[label=assignedFrom];
-	"tg_ch(0)$1" -> "[<_ast.Constant object at 0x12fc37eb0>, <_ast.Constant object at 0x12fc37ee0>](0)"	[label=assignedFrom];
+	"tg_ch(0)$1" -> "[<_ast.Constant object at 0x7fd490295bb0>, <_ast.Constant object at 0x7fd490295be0>](0)"	[label=assignedFrom];
 	"tg_nch(0)$0" -> "not_churn(0)$0"	[label=reset_index];
 	"tg_nch(0)$0" -> "tenure_group(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fc24220>, <_ast.Constant object at 0x12fc24250>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd490295ee0>, <_ast.Constant object at 0x7fd490295f10>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"tg_nch(0)$1" -> "tg_nch(0)$0"	[label=assignedFrom];
-	"tg_nch(0)$1" -> "[<_ast.Constant object at 0x12fc24220>, <_ast.Constant object at 0x12fc24250>](0)"	[label=assignedFrom];
+	"tg_nch(0)$1" -> "[<_ast.Constant object at 0x7fd490295ee0>, <_ast.Constant object at 0x7fd490295f10>](0)"	[label=assignedFrom];
 	"trace1(0)$0" -> "go(0)"	[label=Bar];
 	"trace1(0)$0" -> "dict(0)"	[label=Bar];
 	"trace1(0)$0" -> "0.5(0)"	[label=Bar];
@@ -427,8 +392,8 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"tenure group(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"5(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"2(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fc32d00>, <_ast.Name object at 0x12fc32d30>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x12fc32d00>, <_ast.Name object at 0x12fc32d30>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4902afa00>, <_ast.Name object at 0x7fd4902afa30>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd4902afa00>, <_ast.Name object at 0x7fd4902afa30>](0)"	[label=assignedFrom];
 	"fig(0)$1" -> "go(0)"	[label=Figure];
 	"fig(0)$1" -> "layout(0)$1"	[label=Figure];
 	"fig(0)$1" -> "data(0)$1"	[label=Figure];
@@ -492,12 +457,12 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"trace7(0)$0" -> "No(0)"	[label=plot_churncharges_scatter];
 	"trace7(0)$0" -> "blue(0)"	[label=plot_churncharges_scatter];
 	"blue(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fc39a30>, <_ast.Name object at 0x12fc39a60>, <_ast.Name object at 0x12fc39580>, <_ast.Name object at 0x12fc39a90>, <_\
-ast.Name object at 0x12fc39ac0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data1(0)$0" -> "[<_ast.Name object at 0x12fc39a30>, <_ast.Name object at 0x12fc39a60>, <_ast.Name object at 0x12fc39580>, <_ast.Name object at 0x12fc39a90>, <_\
-ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12fc39b80>, <_ast.Name object at 0x12fc39bb0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data2(0)$0" -> "[<_ast.Name object at 0x12fc39b80>, <_ast.Name object at 0x12fc39bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4902b8730>, <_ast.Name object at 0x7fd4902b8760>, <_ast.Name object at 0x7fd4902b87c0>, <_ast.Name object \
+at 0x7fd4902b8790>, <_ast.Name object at 0x7fd4902b87f0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data1(0)$0" -> "[<_ast.Name object at 0x7fd4902b8730>, <_ast.Name object at 0x7fd4902b8760>, <_ast.Name object at 0x7fd4902b87c0>, <_ast.Name object \
+at 0x7fd4902b8790>, <_ast.Name object at 0x7fd4902b87f0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4902b88b0>, <_ast.Name object at 0x7fd4902b88e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data2(0)$0" -> "[<_ast.Name object at 0x7fd4902b88b0>, <_ast.Name object at 0x7fd4902b88e0>](0)"	[label=assignedFrom];
 	"title(7)" -> "layout_title[0]"	[label=_argToVar];
 	"layout(7)$0" -> "title(7)"	[label=Layout];
 	"layout(7)$0" -> "go(7)"	[label=Layout];
@@ -525,10 +490,10 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	"py(0)$4" -> "fig2(0)$0"	[label=iplot];
 	"py(0)$4" -> "py(0)$3"	[label=iplot];
 	"avg_tgc(0)$0" -> "telcom(0)$8"	[label=reset_index];
-	"avg_tgc(0)$0" -> "[<_ast.Constant object at 0x12fc1b340>, <_ast.Constant object at 0x12fc1b460>](0)"	[label=reset_index];
-	"avg_tgc(0)$0" -> "[<_ast.Constant object at 0x12fc1b4c0>, <_ast.Constant object at 0x12fc1b3d0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fc1b340>, <_ast.Constant object at 0x12fc1b460>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc1b4c0>, <_ast.Constant object at 0x12fc1b3d0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"avg_tgc(0)$0" -> "[<_ast.Constant object at 0x7fd4902bcfd0>, <_ast.Constant object at 0x7fd500833040>](0)"	[label=reset_index];
+	"avg_tgc(0)$0" -> "[<_ast.Constant object at 0x7fd5008330d0>, <_ast.Constant object at 0x7fd500833100>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4902bcfd0>, <_ast.Constant object at 0x7fd500833040>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008330d0>, <_ast.Constant object at 0x7fd500833100>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"column(8)" -> "mean_charges[0]"	[label=_argToVar];
 	"aggregate(8)" -> "mean_charges[1]"	[label=_argToVar];
 	"tracer(8)$0" -> "column(8)"	[label=Bar];
@@ -563,8 +528,8 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	"layout1(0)$1" -> "Monthly Charges(0)"	[label=layout_plot];
 	"Tenure group(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"Monthly Charges(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fafc160>, <_ast.Name object at 0x12fafc130>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data1(0)$1" -> "[<_ast.Name object at 0x12fafc160>, <_ast.Name object at 0x12fafc130>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500818e50>, <_ast.Name object at 0x7fd500818fa0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data1(0)$1" -> "[<_ast.Name object at 0x7fd500818e50>, <_ast.Name object at 0x7fd500818fa0>](0)"	[label=assignedFrom];
 	"fig1(0)$1" -> "go(0)"	[label=Figure];
 	"fig1(0)$1" -> "layout1(0)$1"	[label=Figure];
 	"fig1(0)$1" -> "data1(0)$1"	[label=Figure];
@@ -577,8 +542,8 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	"layout2(0)$1" -> "Average Total Charges by Tenure groups(0)"	[label=layout_plot];
 	"layout2(0)$1" -> "Total Charges(0)"	[label=layout_plot];
 	"Total Charges(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fafc820>, <_ast.Name object at 0x12fafc850>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data2(0)$1" -> "[<_ast.Name object at 0x12fafc820>, <_ast.Name object at 0x12fafc850>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008244c0>, <_ast.Name object at 0x7fd5008244f0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data2(0)$1" -> "[<_ast.Name object at 0x7fd5008244c0>, <_ast.Name object at 0x7fd5008244f0>](0)"	[label=assignedFrom];
 	"fig2(0)$1" -> "go(0)"	[label=Figure];
 	"fig2(0)$1" -> "layout2(0)$1"	[label=Figure];
 	"fig2(0)$1" -> "data2(0)$1"	[label=Figure];
@@ -640,8 +605,8 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	"rgb(230, 230,230)(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"total charges(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"700(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb03a60>, <_ast.Name object at 0x12fb03a90>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x12fb03a60>, <_ast.Name object at 0x12fb03a90>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500813610>, <_ast.Name object at 0x7fd5008137c0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd500813610>, <_ast.Name object at 0x7fd5008137c0>](0)"	[label=assignedFrom];
 	"fig(0)$2" -> "go(0)"	[label=Figure];
 	"fig(0)$2" -> "layout(0)$2"	[label=Figure];
 	"fig(0)$2" -> "data(0)$2"	[label=Figure];
@@ -654,10 +619,10 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	StandardScaler -> "sklearn.preprocessing"	[label=importedBy];
 	"StandardScaler(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"StandardScaler(0)" -> StandardScaler	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fb03fa0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"Id_col(0)$1" -> "[<_ast.Constant object at 0x12fb03fa0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12faea0a0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"target_col(0)$1" -> "[<_ast.Constant object at 0x12faea0a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500813b50>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"Id_col(0)$1" -> "[<_ast.Constant object at 0x7fd500813b50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500813e20>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"target_col(0)$1" -> "[<_ast.Constant object at 0x7fd500813e20>](0)"	[label=assignedFrom];
 	"cat_cols(0)$2" -> "6(0)"	[label=tolist];
 	"cat_cols(0)$2" -> "telcom(0)$9"	[label=tolist];
 	"cat_cols(0)$3" -> "x(0)"	[label=assignedFrom];
@@ -707,38 +672,38 @@ ast.Name object at 0x12fc39ac0>](0)"	[label=assignedFrom];
 	"summary(0)$2" -> "summary(0)$2"	[label=around];
 	"summary(0)$2" -> "3(0)"	[label=around];
 	"3(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Subscript object at 0x12fb0f6d0>, <_ast.Subscript object at 0x12fb0f7c0>, <_ast.Subscript object at 0x12fb0f8b0>, <_ast.Subscript \
-object at 0x12fb0f9a0>, <_ast.Subscript object at 0x12fb0fac0>, <_ast.Subscript object at 0x12fb0fbb0>, <_ast.Subscript object at \
-0x12fb0fca0>, <_ast.Subscript object at 0x12fb0fd90>, <_ast.Subscript object at 0x12fb0fe80>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"val_lst(0)$0" -> "[<_ast.Subscript object at 0x12fb0f6d0>, <_ast.Subscript object at 0x12fb0f7c0>, <_ast.Subscript object at 0x12fb0f8b0>, <_ast.Subscript \
-object at 0x12fb0f9a0>, <_ast.Subscript object at 0x12fb0fac0>, <_ast.Subscript object at 0x12fb0fbb0>, <_ast.Subscript object at \
-0x12fb0fca0>, <_ast.Subscript object at 0x12fb0fd90>, <_ast.Subscript object at 0x12fb0fe80>](0)"	[label=assignedFrom];
+	"[<_ast.Subscript object at 0x7fd5008223d0>, <_ast.Subscript object at 0x7fd5008224c0>, <_ast.Subscript object at 0x7fd5008225b0>, <_\
+ast.Subscript object at 0x7fd5008226a0>, <_ast.Subscript object at 0x7fd500822790>, <_ast.Subscript object at 0x7fd500822880>, <_\
+ast.Subscript object at 0x7fd500822970>, <_ast.Subscript object at 0x7fd500822a60>, <_ast.Subscript object at 0x7fd500822b50>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"val_lst(0)$0" -> "[<_ast.Subscript object at 0x7fd5008223d0>, <_ast.Subscript object at 0x7fd5008224c0>, <_ast.Subscript object at 0x7fd5008225b0>, <_\
+ast.Subscript object at 0x7fd5008226a0>, <_ast.Subscript object at 0x7fd500822790>, <_ast.Subscript object at 0x7fd500822880>, <_\
+ast.Subscript object at 0x7fd500822970>, <_ast.Subscript object at 0x7fd500822a60>, <_ast.Subscript object at 0x7fd500822b50>](0)"	[label=assignedFrom];
 	"trace(0)$1" -> "go(0)"	[label=Table];
 	"trace(0)$1" -> "dict(0)"	[label=Table];
 	"trace(0)$1" -> "summary(0)$2"	[label=Table];
 	"trace(0)$1" -> "val_lst(0)$0"	[label=Table];
-	"trace(0)$1" -> "[<_ast.Constant object at 0x12f8913d0>](0)"	[label=Table];
-	"trace(0)$1" -> "[<_ast.Constant object at 0x12f891070>](0)"	[label=Table];
-	"trace(0)$1" -> "[<_ast.Constant object at 0x12f891670>](0)"	[label=Table];
-	"trace(0)$1" -> "[<_ast.Constant object at 0x12f891ac0>, <_ast.Constant object at 0x12f891b20>](0)"	[label=Table];
-	"trace(0)$1" -> "[<_ast.Constant object at 0x12f891970>, <_ast.Constant object at 0x12f8919d0>, <_ast.Constant object at 0x12f8919a0>, <_ast.Constant \
-object at 0x12f891940>, <_ast.Constant object at 0x12f891b50>, <_ast.Constant object at 0x12f891c70>, <_ast.Constant object at 0x12f891ca0>, <_\
-ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)"	[label=Table];
-	"[<_ast.Constant object at 0x12f8913d0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f891070>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f891670>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f891ac0>, <_ast.Constant object at 0x12f891b20>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f891970>, <_ast.Constant object at 0x12f8919d0>, <_ast.Constant object at 0x12f8919a0>, <_ast.Constant \
-object at 0x12f891940>, <_ast.Constant object at 0x12f891b50>, <_ast.Constant object at 0x12f891c70>, <_ast.Constant object at 0x12f891ca0>, <_\
-ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"trace(0)$1" -> "[<_ast.Constant object at 0x7fd5008310a0>](0)"	[label=Table];
+	"trace(0)$1" -> "[<_ast.Constant object at 0x7fd500831250>](0)"	[label=Table];
+	"trace(0)$1" -> "[<_ast.Constant object at 0x7fd5008314f0>](0)"	[label=Table];
+	"trace(0)$1" -> "[<_ast.Constant object at 0x7fd500831670>, <_ast.Constant object at 0x7fd5008316a0>](0)"	[label=Table];
+	"trace(0)$1" -> "[<_ast.Constant object at 0x7fd500831790>, <_ast.Constant object at 0x7fd5008317c0>, <_ast.Constant object at 0x7fd5008317f0>, <_\
+ast.Constant object at 0x7fd500831820>, <_ast.Constant object at 0x7fd500831850>, <_ast.Constant object at 0x7fd500831880>, <_ast.Constant \
+object at 0x7fd5008318b0>, <_ast.Constant object at 0x7fd5008318e0>, <_ast.Constant object at 0x7fd500831910>](0)"	[label=Table];
+	"[<_ast.Constant object at 0x7fd5008310a0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500831250>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008314f0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500831670>, <_ast.Constant object at 0x7fd5008316a0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500831790>, <_ast.Constant object at 0x7fd5008317c0>, <_ast.Constant object at 0x7fd5008317f0>, <_\
+ast.Constant object at 0x7fd500831820>, <_ast.Constant object at 0x7fd500831850>, <_ast.Constant object at 0x7fd500831880>, <_ast.Constant \
+object at 0x7fd5008318b0>, <_ast.Constant object at 0x7fd5008318e0>, <_ast.Constant object at 0x7fd500831910>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"layout(0)$3" -> "go(0)"	[label=Layout];
 	"layout(0)$3" -> "dict(0)"	[label=Layout];
 	"layout(0)$3" -> "Variable Summary(0)"	[label=Layout];
 	"Variable Summary(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"figure(0)$0" -> "go(0)"	[label=Figure];
 	"figure(0)$0" -> "layout(0)$3"	[label=Figure];
-	"figure(0)$0" -> "[<_ast.Name object at 0x12f891e80>](0)"	[label=Figure];
-	"[<_ast.Name object at 0x12f891e80>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"figure(0)$0" -> "[<_ast.Name object at 0x7fd500831c70>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd500831c70>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"py(0)$8" -> "py(0)$7"	[label=iplot];
 	"py(0)$8" -> "figure(0)$0"	[label=iplot];
 	"correlation(0)$0" -> "telcom(0)$13"	[label=corr];
@@ -772,8 +737,8 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"210(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"25(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"9(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8995e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Name object at 0x12f8995e0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500852280>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x7fd500852280>](0)"	[label=assignedFrom];
 	"fig(0)$3" -> "go(0)"	[label=Figure];
 	"fig(0)$3" -> "layout(0)$4"	[label=Figure];
 	"fig(0)$3" -> "data(0)$3"	[label=Figure];
@@ -795,8 +760,8 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"principal_components(0)$0" -> "X(0)$0"	[label=fit_transform];
 	"pca_data(0)$0" -> "pd(0)"	[label=DataFrame];
 	"pca_data(0)$0" -> "principal_components(0)$0"	[label=DataFrame];
-	"pca_data(0)$0" -> "[<_ast.Constant object at 0x12f8952e0>, <_ast.Constant object at 0x12f895310>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f8952e0>, <_ast.Constant object at 0x12f895310>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"pca_data(0)$0" -> "[<_ast.Constant object at 0x7fd500852fa0>, <_ast.Constant object at 0x7fd500852fd0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd500852fa0>, <_ast.Constant object at 0x7fd500852fd0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"pca_data(0)$1" -> "True(0)"	[label=merge];
 	"pca_data(0)$1" -> "left(0)"	[label=merge];
 	"pca_data(0)$1" -> "Y(0)$0"	[label=merge];
@@ -842,8 +807,8 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"trace2(0)$4" -> "Not Churn(0)"	[label=pca_scatter];
 	"trace2(0)$4" -> "royalblue(0)"	[label=pca_scatter];
 	"royalblue(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8908b0>, <_ast.Name object at 0x12f8908e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$4" -> "[<_ast.Name object at 0x12f8908b0>, <_ast.Name object at 0x12f8908e0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50086e5b0>, <_ast.Name object at 0x7fd50086e5e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$4" -> "[<_ast.Name object at 0x7fd50086e5b0>, <_ast.Name object at 0x7fd50086e5e0>](0)"	[label=assignedFrom];
 	"fig(0)$4" -> "go(0)"	[label=Figure];
 	"fig(0)$4" -> "layout(0)$5"	[label=Figure];
 	"fig(0)$4" -> "data(0)$4"	[label=Figure];
@@ -854,22 +819,15 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"dat_rad(0)$0" -> "telcom(0)$13"	[label=assignedFrom];
 	"dat_rad(0)$0" -> "bi_cs(0)$0"	[label=assignedFrom];
 	"df(11)" -> "plot_radar[0]"	[label=_argToVar];
-	"plot_radar[0]" -> "dat_rad(0)$0"	[label=plot_radar];
 	"aggregate(11)" -> "plot_radar[1]"	[label=_argToVar];
-	"plot_radar[1]" -> "0(0)"	[label=plot_radar];
-	"plot_radar[1]" -> "1(0)"	[label=plot_radar];
 	"title(11)" -> "plot_radar[2]"	[label=_argToVar];
-	"plot_radar[2]" -> "Churn -  Customers(0)"	[label=plot_radar];
-	"plot_radar[2]" -> "Non Churn - Customers(0)"	[label=plot_radar];
-	"Churn -  Customers(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"Non Churn - Customers(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"data_frame(11)$0" -> "df(11)"	[label=assignedFrom];
 	"data_frame(11)$0" -> "aggregate(11)"	[label=assignedFrom];
 	"data_frame(11)$0" -> "Churn(11)"	[label=assignedFrom];
 	"data_frame_x(11)$0" -> "data_frame(11)$0"	[label=reset_index];
 	"data_frame_x(11)$0" -> "bi_cs(11)"	[label=reset_index];
 	"data_frame_x(11)$1" -> "data_frame_x(11)$0"	[label=assignedFrom];
-	"data_frame_x(11)$1" -> "[<_ast.Constant object at 0x12f87c850>, <_ast.Constant object at 0x12f87c670>](11)"	[label=assignedFrom];
+	"data_frame_x(11)$1" -> "[<_ast.Constant object at 0x7fd500849100>, <_ast.Constant object at 0x7fd500849400>](11)"	[label=assignedFrom];
 	"data_frame_x(11)$2" -> "data_frame(11)$0"	[label=Sub];
 	"data_frame_x(11)$2" -> "data_frame_x(11)$1"	[label=Sub];
 	"data_frame_x(11)$2" -> "data_frame_x(11)$2"	[label=Sub];
@@ -908,12 +866,20 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"layout(11)$0" -> "below traces(11)"	[label=Layout];
 	"layout(11)$0" -> "rgb(243,243,243)(11)"	[label=Layout];
 	"layout(11)$0" -> "700(11)"	[label=Layout];
-	"data(11)$0" -> "[<_ast.Name object at 0x12f8c6910>, <_ast.Name object at 0x12f8c6940>](11)"	[label=assignedFrom];
+	"data(11)$0" -> "[<_ast.Name object at 0x7fd50084b640>, <_ast.Name object at 0x7fd50084b670>](11)"	[label=assignedFrom];
 	"fig(11)$0" -> "go(11)"	[label=Figure];
 	"fig(11)$0" -> "layout(11)$0"	[label=Figure];
 	"fig(11)$0" -> "data(11)$0"	[label=Figure];
 	"py(11)$0" -> "fig(11)$0"	[label=iplot];
 	"py(11)$0" -> "py(11)"	[label=iplot];
+	"plot_radar[633/0]" -> "1(0)"	[label=plot_radar];
+	"plot_radar[633/0]" -> "dat_rad(0)$0"	[label=plot_radar];
+	"plot_radar[633/0]" -> "Churn -  Customers(0)"	[label=plot_radar];
+	"Churn -  Customers(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plot_radar[634/0]" -> "0(0)"	[label=plot_radar];
+	"plot_radar[634/0]" -> "dat_rad(0)$0"	[label=plot_radar];
+	"plot_radar[634/0]" -> "Non Churn - Customers(0)"	[label=plot_radar];
+	"Non Churn - Customers(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"sklearn.model_selection" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
@@ -978,175 +944,20 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"test_Y(0)$0" -> "target_col(0)$1"	[label=assignedFrom];
 	"test_Y(0)$0" -> "test(0)$0"	[label=assignedFrom];
 	"algorithm(12)" -> "telecom_churn_prediction[0]"	[label=_argToVar];
-	"telecom_churn_prediction[0]" -> "logit(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "logit_smote(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "logit_rfe(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "dt_classifier(13)$1"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "rfc(15)$1"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "svc_lin(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "lgbm_c(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[0]" -> "xgc(0)$0"	[label=telecom_churn_prediction];
-	"logit(0)$0" -> "0(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "1(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "True(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "False(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "1.0(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "None(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "100(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "ovr(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "l2(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
-	"logit(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "0(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "1(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "True(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "False(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "1.0(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "None(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "100(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "ovr(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "l2(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
-	"logit_smote(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "0(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "1(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "True(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "False(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "1.0(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "None(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "100(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "ovr(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "l2(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
-	"logit_rfe(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
-	"dt_classifier(13)$1" -> "dtc_x(13)$0"	[label=fit];
-	"dt_classifier(13)$1" -> "dtc_y(13)$0"	[label=fit];
-	"dt_classifier(13)$1" -> "dt_classifier(13)$0"	[label=fit];
-	"rfc(15)$1" -> "rf_x(15)$0"	[label=fit];
-	"rfc(15)$1" -> "rf_y(15)$0"	[label=fit];
-	"rfc(15)$1" -> "rfc(15)$0"	[label=fit];
-	"svc_lin(0)$0" -> "1(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "True(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "3(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "False(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "1.0(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "None(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "ovr(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "200(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "0.0(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "linear(0)"	[label=SVC];
-	"svc_lin(0)$0" -> "0.001(0)"	[label=SVC];
-	"lgbm_c(0)$0" -> "0(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "1(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "0.5(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "True(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "1.0(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "None(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "100(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "0.0(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "0.001(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "gbdt(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "7(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "20(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "500(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "binary(0)"	[label=LGBMClassifier];
-	"lgbm_c(0)$0" -> "200000(0)"	[label=LGBMClassifier];
-	"xgc(0)$0" -> "0(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "1(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "0.5(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "0.9(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "True(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "None(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "100(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "7(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "gbtree(0)"	[label=XGBClassifier];
-	"xgc(0)$0" -> "binary:logistic(0)"	[label=XGBClassifier];
 	"training_x(12)" -> "telecom_churn_prediction[1]"	[label=_argToVar];
-	"telecom_churn_prediction[1]" -> "train_X(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[1]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[1]" -> "train_rf_X(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[1]" -> "dtc_x(13)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[1]" -> "rf_x(15)$0"	[label=telecom_churn_prediction];
-	"os_smote_X(0)$1" -> "pd(0)"	[label=DataFrame];
-	"os_smote_X(0)$1" -> "os_smote_X(0)$1"	[label=DataFrame];
-	"os_smote_X(0)$1" -> "cols(0)$1"	[label=DataFrame];
-	"train_rf_X(0)$0" -> "os_smote_X(0)$1"	[label=assignedFrom];
-	"train_rf_X(0)$0" -> "cols(0)$2"	[label=assignedFrom];
-	"dtc_x(13)$0" -> "columns(13)"	[label=assignedFrom];
-	"dtc_x(13)$0" -> "df_x(13)"	[label=assignedFrom];
-	"rf_x(15)$0" -> "columns(15)"	[label=assignedFrom];
-	"rf_x(15)$0" -> "dataframe(15)$0"	[label=assignedFrom];
-	"rf_x(15)$0" -> "target_col(15)"	[label=assignedFrom];
-	"rf_x(15)$0" -> "i(15)"	[label=assignedFrom];
 	"testing_x(12)" -> "telecom_churn_prediction[2]"	[label=_argToVar];
-	"telecom_churn_prediction[2]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[2]" -> "test_rf_X(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[2]" -> "test_X(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[2]" -> "test_X(15)"	[label=telecom_churn_prediction];
-	"test_rf_X(0)$0" -> "test(0)$0"	[label=assignedFrom];
-	"test_rf_X(0)$0" -> "cols(0)$2"	[label=assignedFrom];
 	"training_y(12)" -> "telecom_churn_prediction[3]"	[label=_argToVar];
-	"telecom_churn_prediction[3]" -> "train_Y(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[3]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[3]" -> "train_rf_Y(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[3]" -> "columns(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[3]" -> "columns(15)"	[label=telecom_churn_prediction];
-	"os_smote_Y(0)$1" -> "pd(0)"	[label=DataFrame];
-	"os_smote_Y(0)$1" -> "target_col(0)$1"	[label=DataFrame];
-	"os_smote_Y(0)$1" -> "os_smote_Y(0)$1"	[label=DataFrame];
-	"train_rf_Y(0)$0" -> "os_smote_Y(0)$1"	[label=assignedFrom];
-	"columns(13)" -> "plot_decision_tree[0]"	[label=_argToVar];
-	"columns(15)" -> "plot_tree_randomforest[0]"	[label=_argToVar];
-	"telecom_churn_prediction[4]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[4]" -> "test_rf_Y(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[4]" -> "dtc_y(13)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[4]" -> "rf_y(15)$0"	[label=telecom_churn_prediction];
-	"test_rf_Y(0)$0" -> "target_col(0)$1"	[label=assignedFrom];
-	"test_rf_Y(0)$0" -> "test(0)$0"	[label=assignedFrom];
-	"dtc_y(13)$0" -> "df_y(13)"	[label=assignedFrom];
-	"dtc_y(13)$0" -> "target_col(13)"	[label=assignedFrom];
-	"rf_y(15)$0" -> "dataframe(15)$0"	[label=assignedFrom];
-	"rf_y(15)$0" -> "target_col(15)"	[label=assignedFrom];
+	"testing_y(12)" -> "telecom_churn_prediction[4]"	[label=_argToVar];
 	"cols(12)" -> "telecom_churn_prediction[5]"	[label=_argToVar];
-	"telecom_churn_prediction[5]" -> "cols(0)$0"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "cols(0)$1"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "cols(0)$2"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "test_Y(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "test_Y(15)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "cols(0)$5"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[5]" -> "cols(0)$6"	[label=telecom_churn_prediction];
-	"cols(0)$1" -> "i(0)"	[label=assignedFrom];
-	"cols(0)$1" -> "Id_col(0)$1"	[label=assignedFrom];
-	"cols(0)$1" -> "target_col(0)$1"	[label=assignedFrom];
-	"cols(0)$1" -> "telcom(0)$13"	[label=assignedFrom];
-	"cols(0)$2" -> "True(0)"	[label=tolist];
-	"cols(0)$2" -> "idc_rfe(0)$0"	[label=tolist];
-	"cols(0)$2" -> "rfe_support(0)"	[label=tolist];
-	"cols(0)$2" -> "columns(0)"	[label=tolist];
-	"cols(0)$5" -> "i(0)"	[label=assignedFrom];
-	"cols(0)$5" -> "Id_col(0)$1"	[label=assignedFrom];
-	"cols(0)$5" -> "target_col(0)$1"	[label=assignedFrom];
-	"cols(0)$5" -> "telcom(0)$13"	[label=assignedFrom];
-	"cols(0)$6" -> "i(0)"	[label=assignedFrom];
-	"cols(0)$6" -> "Id_col(0)$1"	[label=assignedFrom];
-	"cols(0)$6" -> "target_col(0)$1"	[label=assignedFrom];
-	"cols(0)$6" -> "telcom(0)$13"	[label=assignedFrom];
 	"cf(12)" -> "telecom_churn_prediction[6]"	[label=_argToVar];
-	"telecom_churn_prediction[6]" -> "columns(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[6]" -> "columns(15)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[6]" -> "coefficients(0)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[6]" -> "features(0)"	[label=telecom_churn_prediction];
-	"coefficients(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"features(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"threshold_plot(12)" -> "telecom_churn_prediction[7]"	[label=_argToVar];
-	"telecom_churn_prediction[7]" -> "True(0)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[7]" -> "False(0)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[7]" -> "features(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[7]" -> "features(15)"	[label=telecom_churn_prediction];
-	"predictions(12)$0" -> "algorithm(12)$0"	[label=predict];
+	"algorithm(12)$0" -> "algorithm(12)"	[label=fit];
+	"algorithm(12)$0" -> "training_x(12)"	[label=fit];
+	"algorithm(12)$0" -> "training_y(12)"	[label=fit];
 	"predictions(12)$0" -> "testing_x(12)"	[label=predict];
-	"probabilities(12)$0" -> "algorithm(12)$0"	[label=predict_proba];
+	"predictions(12)$0" -> "algorithm(12)$0"	[label=predict];
 	"probabilities(12)$0" -> "testing_x(12)"	[label=predict_proba];
+	"probabilities(12)$0" -> "algorithm(12)$0"	[label=predict_proba];
 	"coefficients(12)$0" -> "algorithm(12)$0"	[label=DataFrame];
 	"coefficients(12)$0" -> "pd(12)"	[label=DataFrame];
 	"coefficients(12)$1" -> "algorithm(12)$0"	[label=DataFrame];
@@ -1159,16 +970,29 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"coef_sumry(12)$0" -> "True(12)"	[label=merge];
 	"coef_sumry(12)$0" -> "left(12)"	[label=merge];
 	"coef_sumry(12)$1" -> "coef_sumry(12)$0"	[label=assignedFrom];
-	"coef_sumry(12)$1" -> "[<_ast.Constant object at 0x12f8d4fa0>, <_ast.Constant object at 0x12f8d4fd0>](12)"	[label=assignedFrom];
+	"coef_sumry(12)$1" -> "[<_ast.Constant object at 0x7fd500856c70>, <_ast.Constant object at 0x7fd500856cd0>](12)"	[label=assignedFrom];
 	"coef_sumry(12)$2" -> "coefficients(12)$1"	[label=sort_values];
 	"coef_sumry(12)$2" -> "coef_sumry(12)$1"	[label=sort_values];
 	"coef_sumry(12)$2" -> "False(12)"	[label=sort_values];
-	"print[3]" -> "predictions(12)$0"	[label=print];
-	"print[3]" -> "predictions(14)$0"	[label=print];
-	"predictions(14)$0" -> "algorithm(14)$0"	[label=predict];
-	"predictions(14)$0" -> "testing_x(14)"	[label=predict];
+	"print[684/4]" -> "algorithm(12)$0"	[label=print];
+	"print[685/4]" -> "testing_y(12)"	[label=print];
+	"print[685/4]" -> "predictions(12)$0"	[label=print];
+	"print[685/4]" -> "
+ Classification report : 
+(12)"	[label=print];
+	"print[685/4]" -> "classification_report(12)"	[label=print];
+	"print[686/4]" -> "testing_y(12)"	[label=print];
+	"print[686/4]" -> "predictions(12)$0"	[label=print];
+	"print[686/4]" -> "Accuracy   Score : (12)"	[label=print];
+	"print[686/4]" -> "accuracy_score(12)"	[label=print];
 	"conf_matrix(12)$0" -> "testing_y(12)"	[label=confusion_matrix];
 	"conf_matrix(12)$0" -> "predictions(12)$0"	[label=confusion_matrix];
+	"model_roc_auc(12)$0" -> "testing_y(12)"	[label=roc_auc_score];
+	"model_roc_auc(12)$0" -> "predictions(12)$0"	[label=roc_auc_score];
+	"print[691/4]" -> "model_roc_auc(12)$0"	[label=print];
+	"print[691/4]" -> "Area under curve : (12)"	[label=print];
+	"print[691/4]" -> "
+(12)"	[label=print];
 	"fpr(12)$0" -> "testing_y(12)"	[label=roc_curve];
 	"fpr(12)$0" -> "probabilities(12)$0"	[label=roc_curve];
 	"fpr(12)$0" -> "1(12)"	[label=roc_curve];
@@ -1181,8 +1005,8 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"trace1(12)$0" -> "False(12)"	[label=Heatmap];
 	"trace1(12)$0" -> "conf_matrix(12)$0"	[label=Heatmap];
 	"trace1(12)$0" -> "go(12)"	[label=Heatmap];
-	"trace1(12)$0" -> "[<_ast.Constant object at 0x12f8cff70>, <_ast.Constant object at 0x12f8cffa0>](12)"	[label=Heatmap];
-	"trace1(12)$0" -> "[<_ast.Constant object at 0x12f8c30a0>, <_ast.Constant object at 0x12f8c30d0>](12)"	[label=Heatmap];
+	"trace1(12)$0" -> "[<_ast.Constant object at 0x7fd4c04e1c70>, <_ast.Constant object at 0x7fd4c04e1ca0>](12)"	[label=Heatmap];
+	"trace1(12)$0" -> "[<_ast.Constant object at 0x7fd4c04e1d60>, <_ast.Constant object at 0x7fd4c04e1d90>](12)"	[label=Heatmap];
 	"trace1(12)$0" -> "Picnic(12)"	[label=Heatmap];
 	"trace1(12)$0" -> "matrix(12)"	[label=Heatmap];
 	"trace2(12)$0" -> "model_roc_auc(12)$0"	[label=Scatter];
@@ -1197,8 +1021,8 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"trace3(12)$0" -> "go(12)"	[label=Scatter];
 	"trace3(12)$0" -> "dict(12)"	[label=Scatter];
 	"trace3(12)$0" -> "2(12)"	[label=Scatter];
-	"trace3(12)$0" -> "[<_ast.Constant object at 0x12f8c3970>, <_ast.Constant object at 0x12f8c39a0>](12)"	[label=Scatter];
-	"trace3(12)$0" -> "[<_ast.Constant object at 0x12f8c3a60>, <_ast.Constant object at 0x12f8c3a90>](12)"	[label=Scatter];
+	"trace3(12)$0" -> "[<_ast.Constant object at 0x7fd4c04da670>, <_ast.Constant object at 0x7fd4c04da6a0>](12)"	[label=Scatter];
+	"trace3(12)$0" -> "[<_ast.Constant object at 0x7fd4c04da760>, <_ast.Constant object at 0x7fd4c04da790>](12)"	[label=Scatter];
 	"trace3(12)$0" -> "rgb(205, 12, 24)(12)"	[label=Scatter];
 	"trace3(12)$0" -> "dot(12)"	[label=Scatter];
 	"trace4(12)$0" -> "coefficients(12)$1"	[label=Bar];
@@ -1211,7 +1035,7 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"trace4(12)$0" -> "black(12)"	[label=Bar];
 	"fig(12)$0" -> "2(12)"	[label=make_subplots];
 	"fig(12)$0" -> "tls(12)"	[label=make_subplots];
-	"fig(12)$0" -> "[<_ast.List object at 0x12f8cb8b0>, <_ast.List object at 0x12f8cb940>](12)"	[label=make_subplots];
+	"fig(12)$0" -> "[<_ast.List object at 0x7fd4c04f65b0>, <_ast.List object at 0x7fd4c04f6640>](12)"	[label=make_subplots];
 	"fig(12)$0" -> "Confusion Matrix(12)"	[label=make_subplots];
 	"fig(12)$0" -> "Receiver operating characteristic(12)"	[label=make_subplots];
 	"fig(12)$0" -> "Feature Importances(12)"	[label=make_subplots];
@@ -1250,16 +1074,40 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"visualizer(12)$1" -> "visualizer(12)$0"	[label=fit];
 	"visualizer(12)$2" -> "visualizer(12)$1"	[label=poof];
 	"1.0(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"logit(0)$0" -> "0(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "1(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "True(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "False(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "1.0(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "None(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "100(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "ovr(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "l2(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
+	"logit(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
 	"None(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"100(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"ovr(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"l2(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"liblinear(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"0.0001(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"telecom_churn_prediction[748/0]" -> "True(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "cols(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "train_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "train_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "logit(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[748/0]" -> "coefficients(0)"	[label=telecom_churn_prediction];
+	"coefficients(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"imblearn.over_sampling" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	SMOTE -> "imblearn.over_sampling"	[label=importedBy];
 	"SMOTE(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"SMOTE(0)" -> SMOTE	[label=assignedFrom];
+	"cols(0)$1" -> "i(0)"	[label=assignedFrom];
+	"cols(0)$1" -> "Id_col(0)$1"	[label=assignedFrom];
+	"cols(0)$1" -> "target_col(0)$1"	[label=assignedFrom];
+	"cols(0)$1" -> "telcom(0)$13"	[label=assignedFrom];
 	"smote_X(0)$0" -> "telcom(0)$13"	[label=assignedFrom];
 	"smote_X(0)$0" -> "cols(0)$1"	[label=assignedFrom];
 	"smote_Y(0)$0" -> "target_col(0)$1"	[label=assignedFrom];
@@ -1287,6 +1135,31 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"os_smote_Y(0)$0" -> "smote_train_X(0)$0"	[label=fit_sample];
 	"os_smote_Y(0)$0" -> "smote_train_Y(0)$0"	[label=fit_sample];
 	"os_smote_Y(0)$0" -> "os(0)$0"	[label=fit_sample];
+	"os_smote_X(0)$1" -> "pd(0)"	[label=DataFrame];
+	"os_smote_X(0)$1" -> "cols(0)$1"	[label=DataFrame];
+	"os_smote_X(0)$1" -> "os_smote_X(0)$1"	[label=DataFrame];
+	"os_smote_Y(0)$1" -> "pd(0)"	[label=DataFrame];
+	"os_smote_Y(0)$1" -> "target_col(0)$1"	[label=DataFrame];
+	"os_smote_Y(0)$1" -> "os_smote_Y(0)$1"	[label=DataFrame];
+	"logit_smote(0)$0" -> "0(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "1(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "True(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "False(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "1.0(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "None(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "100(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "ovr(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "l2(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
+	"logit_smote(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
+	"telecom_churn_prediction[778/0]" -> "True(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "coefficients(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "cols(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[778/0]" -> "logit_smote(0)$0"	[label=telecom_churn_prediction];
 	"sklearn.feature_selection" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	RFE -> "sklearn.feature_selection"	[label=importedBy];
 	"RFE(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
@@ -1309,6 +1182,36 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"rfe_support(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"columns(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"ranking(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"cols(0)$2" -> "True(0)"	[label=tolist];
+	"cols(0)$2" -> "idc_rfe(0)$0"	[label=tolist];
+	"cols(0)$2" -> "rfe_support(0)"	[label=tolist];
+	"cols(0)$2" -> "columns(0)"	[label=tolist];
+	"train_rf_X(0)$0" -> "os_smote_X(0)$1"	[label=assignedFrom];
+	"train_rf_X(0)$0" -> "cols(0)$2"	[label=assignedFrom];
+	"train_rf_Y(0)$0" -> "os_smote_Y(0)$1"	[label=assignedFrom];
+	"test_rf_X(0)$0" -> "test(0)$0"	[label=assignedFrom];
+	"test_rf_X(0)$0" -> "cols(0)$2"	[label=assignedFrom];
+	"test_rf_Y(0)$0" -> "target_col(0)$1"	[label=assignedFrom];
+	"test_rf_Y(0)$0" -> "test(0)$0"	[label=assignedFrom];
+	"logit_rfe(0)$0" -> "0(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "1(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "True(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "False(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "1.0(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "None(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "100(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "ovr(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "l2(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
+	"logit_rfe(0)$0" -> "0.0001(0)"	[label=LogisticRegression];
+	"telecom_churn_prediction[810/0]" -> "True(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "coefficients(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "cols(0)$2"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "train_rf_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "train_rf_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "test_rf_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "test_rf_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[810/0]" -> "logit_rfe(0)$0"	[label=telecom_churn_prediction];
 	"tab_rk(0)$0" -> "ff(0)"	[label=create_table];
 	"tab_rk(0)$0" -> "idc_rfe(0)$0"	[label=create_table];
 	"py(0)$11" -> "py(0)$10"	[label=iplot];
@@ -1329,15 +1232,25 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"df_y(0)$0" -> "df_telcom_og(0)$0"	[label=assignedFrom];
 	"select(0)$0" -> "3(0)"	[label=SelectKBest];
 	"select(0)$0" -> "chi2(0)"	[label=SelectKBest];
+	"fit(0)$0" -> "df_x(0)$0"	[label=fit];
+	"fit(0)$0" -> "df_y(0)$0"	[label=fit];
+	"fit(0)$0" -> "select(0)$0"	[label=fit];
+	"scores(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"print[830/0]" -> "scores(0)"	[label=print];
+	"print[831/0]" -> "fit(0)$0"	[label=print];
+	"P - Values(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"print[832/0]" -> "P - Values(0)"	[label=print];
+	"print[833/0]" -> "fit(0)$0"	[label=print];
 	"score(0)$0" -> "pd(0)"	[label=DataFrame];
+	"score(0)$0" -> "cols(0)$3"	[label=DataFrame];
 	"score(0)$0" -> "fit(0)$0"	[label=DataFrame];
 	"score(0)$0" -> "scores(0)"	[label=DataFrame];
 	"score(0)$0" -> "features(0)"	[label=DataFrame];
-	"score(0)$0" -> "cols(0)$3"	[label=DataFrame];
 	"score(0)$0" -> "p_values(0)"	[label=DataFrame];
+	"features(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"p_values(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"score(0)$1" -> "scores(0)"	[label=sort_values];
 	"score(0)$1" -> "False(0)"	[label=sort_values];
+	"score(0)$1" -> "scores(0)"	[label=sort_values];
 	"score(0)$1" -> "score(0)$0"	[label=sort_values];
 	"score(0)$2" -> "np(0)"	[label=where];
 	"score(0)$2" -> "num_cols(0)$1"	[label=where];
@@ -1349,10 +1262,10 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"Numerical(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"Categorical(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"trace(0)$3" -> "go(0)"	[label=Scatter];
-	"trace(0)$3" -> "scores(0)"	[label=Scatter];
 	"trace(0)$3" -> "1(0)"	[label=Scatter];
 	"trace(0)$3" -> "dict(0)"	[label=Scatter];
 	"trace(0)$3" -> "red(0)"	[label=Scatter];
+	"trace(0)$3" -> "scores(0)"	[label=Scatter];
 	"trace(0)$3" -> "features(0)"	[label=Scatter];
 	"trace(0)$3" -> "score(0)$2"	[label=Scatter];
 	"trace(0)$3" -> "Categorical(0)"	[label=Scatter];
@@ -1363,10 +1276,10 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"Categorial(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"lines+markers(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"trace1(0)$5" -> "go(0)"	[label=Bar];
-	"trace1(0)$5" -> "scores(0)"	[label=Bar];
 	"trace1(0)$5" -> "1(0)"	[label=Bar];
 	"trace1(0)$5" -> "dict(0)"	[label=Bar];
 	"trace1(0)$5" -> "royalblue(0)"	[label=Bar];
+	"trace1(0)$5" -> "scores(0)"	[label=Bar];
 	"trace1(0)$5" -> "features(0)"	[label=Bar];
 	"trace1(0)$5" -> "score(0)$2"	[label=Bar];
 	"trace1(0)$5" -> "Numerical(0)"	[label=Bar];
@@ -1376,7 +1289,6 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"x2(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"y2(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"layout(0)$6" -> "go(0)"	[label=Layout];
-	"layout(0)$6" -> "scores(0)"	[label=Layout];
 	"layout(0)$6" -> "1(0)"	[label=Layout];
 	"layout(0)$6" -> "dict(0)"	[label=Layout];
 	"layout(0)$6" -> "90(0)"	[label=Layout];
@@ -1385,17 +1297,18 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"layout(0)$6" -> "5(0)"	[label=Layout];
 	"layout(0)$6" -> "2(0)"	[label=Layout];
 	"layout(0)$6" -> "10(0)"	[label=Layout];
+	"layout(0)$6" -> "scores(0)"	[label=Layout];
 	"layout(0)$6" -> "x2(0)"	[label=Layout];
 	"layout(0)$6" -> "Scores for Categorical & Numerical features(0)"	[label=Layout];
-	"layout(0)$6" -> "[<_ast.Constant object at 0x1305195b0>, <_ast.Constant object at 0x1305195e0>](0)"	[label=Layout];
+	"layout(0)$6" -> "[<_ast.Constant object at 0x7fd4c05b1280>, <_ast.Constant object at 0x7fd4c05b12b0>](0)"	[label=Layout];
 	"layout(0)$6" -> "200(0)"	[label=Layout];
-	"layout(0)$6" -> "[<_ast.Constant object at 0x130519e80>, <_ast.Constant object at 0x130519eb0>](0)"	[label=Layout];
+	"layout(0)$6" -> "[<_ast.Constant object at 0x7fd4c05b1b80>, <_ast.Constant object at 0x7fd4c05b1bb0>](0)"	[label=Layout];
 	"Scores for Categorical & Numerical features(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305195b0>, <_ast.Constant object at 0x1305195e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05b1280>, <_ast.Constant object at 0x7fd4c05b12b0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"200(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130519e80>, <_ast.Constant object at 0x130519eb0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x13052a310>, <_ast.Name object at 0x13052a340>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$5" -> "[<_ast.Name object at 0x13052a310>, <_ast.Name object at 0x13052a340>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05b1b80>, <_ast.Constant object at 0x7fd4c05b1bb0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c05b1f70>, <_ast.Name object at 0x7fd4c05b1fa0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Name object at 0x7fd4c05b1f70>, <_ast.Name object at 0x7fd4c05b1fa0>](0)"	[label=assignedFrom];
 	"fig(0)$5" -> "go(0)"	[label=Figure];
 	"fig(0)$5" -> "layout(0)$6"	[label=Figure];
 	"fig(0)$5" -> "data(0)$5"	[label=Figure];
@@ -1433,85 +1346,89 @@ ast.Constant object at 0x12f891cd0>, <_ast.Constant object at 0x12f891d30>](0)" 
 	"features_num(0)$0" -> "score(0)$2"	[label=tolist];
 	"features_num(0)$0" -> "Numerical(0)"	[label=tolist];
 	"features_num(0)$0" -> "feature_type(0)"	[label=tolist];
-	"plot_decision_tree[0]" -> "features_cat(0)$0"	[label=plot_decision_tree];
-	"plot_decision_tree[0]" -> "features_num(0)$0"	[label=plot_decision_tree];
-	"plot_decision_tree[0]" -> "columns(0)$0"	[label=plot_decision_tree];
-	"columns(0)$0" -> "[<_ast.Constant object at 0x1305299d0>, <_ast.Constant object at 0x130529a00>, <_ast.Constant object at 0x130529a30>, <_ast.Constant \
-object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)"	[label=assignedFrom];
+	"columns(13)" -> "plot_decision_tree[0]"	[label=_argToVar];
 	"maximum_depth(13)" -> "plot_decision_tree[1]"	[label=_argToVar];
-	"plot_decision_tree[1]" -> "3(0)"	[label=plot_decision_tree];
 	"criterion_type(13)" -> "plot_decision_tree[2]"	[label=_argToVar];
-	"plot_decision_tree[2]" -> "gini(0)"	[label=plot_decision_tree];
-	"plot_decision_tree[2]" -> "entropy(0)"	[label=plot_decision_tree];
-	"gini(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"entropy(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"split_type(13)" -> "plot_decision_tree[3]"	[label=_argToVar];
-	"plot_decision_tree[3]" -> "best(0)"	[label=plot_decision_tree];
-	"best(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model_performance(13)" -> "plot_decision_tree[4]"	[label=_argToVar];
-	"plot_decision_tree[4]" -> "True(0)"	[label=plot_decision_tree];
+	"dtc_x(13)$0" -> "columns(13)"	[label=assignedFrom];
+	"dtc_x(13)$0" -> "df_x(13)"	[label=assignedFrom];
+	"dtc_y(13)$0" -> "df_y(13)"	[label=assignedFrom];
+	"dtc_y(13)$0" -> "target_col(13)"	[label=assignedFrom];
 	"dt_classifier(13)$0" -> "maximum_depth(13)"	[label=DecisionTreeClassifier];
 	"dt_classifier(13)$0" -> "criterion_type(13)"	[label=DecisionTreeClassifier];
 	"dt_classifier(13)$0" -> "split_type(13)"	[label=DecisionTreeClassifier];
-	"graph(13)$0" -> "dt_classifier(13)$1"	[label=Source];
+	"dt_classifier(13)$1" -> "dtc_x(13)$0"	[label=fit];
+	"dt_classifier(13)$1" -> "dtc_y(13)$0"	[label=fit];
+	"dt_classifier(13)$1" -> "dt_classifier(13)$0"	[label=fit];
 	"graph(13)$0" -> "columns(13)"	[label=Source];
+	"graph(13)$0" -> "dt_classifier(13)$1"	[label=Source];
 	"graph(13)$0" -> "tree(13)"	[label=Source];
 	"graph(13)$0" -> "None(13)"	[label=Source];
 	"graph(13)$0" -> "True(13)"	[label=Source];
 	"graph(13)$0" -> "False(13)"	[label=Source];
 	"graph(13)$0" -> "2(13)"	[label=Source];
-	"graph(13)$0" -> "[<_ast.Constant object at 0x13051df40>, <_ast.Constant object at 0x13051df70>](13)"	[label=Source];
-	"telecom_churn_prediction[8]" -> "True(13)"	[label=telecom_churn_prediction];
-	"telecom_churn_prediction[8]" -> "True(15)"	[label=telecom_churn_prediction];
-	"display[0]" -> "graph(13)$0"	[label=display];
-	"display[0]" -> "graph(15)$0"	[label=display];
-	"graph(15)$0" -> "columns(15)"	[label=Source];
-	"graph(15)$0" -> "True(15)"	[label=Source];
-	"graph(15)$0" -> "estimated_tree(15)$0"	[label=Source];
-	"graph(15)$0" -> "tree(15)"	[label=Source];
-	"graph(15)$0" -> "None(15)"	[label=Source];
-	"graph(15)$0" -> "False(15)"	[label=Source];
-	"graph(15)$0" -> "2(15)"	[label=Source];
-	"graph(15)$0" -> "[<_ast.Constant object at 0x12f9655b0>, <_ast.Constant object at 0x12f9655e0>](15)"	[label=Source];
-	"[<_ast.Constant object at 0x1305299d0>, <_ast.Constant object at 0x130529a00>, <_ast.Constant object at 0x130529a30>, <_ast.Constant \
-object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"graph(13)$0" -> "[<_ast.Constant object at 0x7fd4c05b6c40>, <_ast.Constant object at 0x7fd4c05b6c70>](13)"	[label=Source];
+	"telecom_churn_prediction[924/8]" -> "columns(13)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "dtc_x(13)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "dtc_y(13)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "dt_classifier(13)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "True(13)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "test_X(13)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "test_Y(13)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[924/8]" -> "features(13)"	[label=telecom_churn_prediction];
+	"display[928/4]" -> "graph(13)$0"	[label=display];
+	"plot_decision_tree[930/0]" -> "3(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[930/0]" -> "features_num(0)$0"	[label=plot_decision_tree];
+	"plot_decision_tree[930/0]" -> "gini(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[930/0]" -> "best(0)"	[label=plot_decision_tree];
+	"gini(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"best(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plot_decision_tree[931/0]" -> "True(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[931/0]" -> "3(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[931/0]" -> "features_cat(0)$0"	[label=plot_decision_tree];
+	"plot_decision_tree[931/0]" -> "best(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[931/0]" -> "entropy(0)"	[label=plot_decision_tree];
+	"entropy(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05c86d0>, <_ast.Constant object at 0x7fd4c05c8700>, <_ast.Constant object at 0x7fd4c05c8730>, <_\
+ast.Constant object at 0x7fd4c05c8760>, <_ast.Constant object at 0x7fd4c05c8790>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c05c86d0>, <_ast.Constant object at 0x7fd4c05c8700>, <_ast.Constant object at 0x7fd4c05c8730>, <_\
+ast.Constant object at 0x7fd4c05c8760>, <_ast.Constant object at 0x7fd4c05c8790>](0)"	[label=assignedFrom];
+	"plot_decision_tree[937/0]" -> "True(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[937/0]" -> "3(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[937/0]" -> "gini(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[937/0]" -> "best(0)"	[label=plot_decision_tree];
+	"plot_decision_tree[937/0]" -> "columns(0)$0"	[label=plot_decision_tree];
 	"algorithm(14)" -> "telecom_churn_prediction_alg[0]"	[label=_argToVar];
-	"telecom_churn_prediction_alg[0]" -> "knn(0)$0"	[label=telecom_churn_prediction_alg];
-	"telecom_churn_prediction_alg[0]" -> "gnb(0)$0"	[label=telecom_churn_prediction_alg];
-	"telecom_churn_prediction_alg[0]" -> "svc_rbf(0)$0"	[label=telecom_churn_prediction_alg];
-	"knn(0)$0" -> "1(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "5(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "2(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "None(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "auto(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "30(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "minkowski(0)"	[label=KNeighborsClassifier];
-	"knn(0)$0" -> "uniform(0)"	[label=KNeighborsClassifier];
-	"gnb(0)$0" -> "None(0)"	[label=GaussianNB];
-	"svc_rbf(0)$0" -> "1(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "True(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "3(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "False(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "1.0(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "None(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "200(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "0.0(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "0.001(0)"	[label=SVC];
-	"svc_rbf(0)$0" -> "rbf(0)"	[label=SVC];
 	"training_x(14)" -> "telecom_churn_prediction_alg[1]"	[label=_argToVar];
-	"telecom_churn_prediction_alg[1]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction_alg];
 	"testing_x(14)" -> "telecom_churn_prediction_alg[2]"	[label=_argToVar];
-	"telecom_churn_prediction_alg[2]" -> "test_X(0)$0"	[label=telecom_churn_prediction_alg];
 	"training_y(14)" -> "telecom_churn_prediction_alg[3]"	[label=_argToVar];
-	"telecom_churn_prediction_alg[3]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction_alg];
-	"telecom_churn_prediction_alg[4]" -> "test_Y(0)$0"	[label=telecom_churn_prediction_alg];
+	"testing_y(14)" -> "telecom_churn_prediction_alg[4]"	[label=_argToVar];
 	"threshold_plot(14)" -> "telecom_churn_prediction_alg[5]"	[label=_argToVar];
-	"telecom_churn_prediction_alg[5]" -> "True(0)"	[label=telecom_churn_prediction_alg];
-	"telecom_churn_prediction_alg[5]" -> "False(0)"	[label=telecom_churn_prediction_alg];
-	"probabilities(14)$0" -> "algorithm(14)$0"	[label=predict_proba];
+	"algorithm(14)$0" -> "algorithm(14)"	[label=fit];
+	"algorithm(14)$0" -> "training_x(14)"	[label=fit];
+	"algorithm(14)$0" -> "training_y(14)"	[label=fit];
+	"predictions(14)$0" -> "testing_x(14)"	[label=predict];
+	"predictions(14)$0" -> "algorithm(14)$0"	[label=predict];
 	"probabilities(14)$0" -> "testing_x(14)"	[label=predict_proba];
+	"probabilities(14)$0" -> "algorithm(14)$0"	[label=predict_proba];
+	"print[946/4]" -> "algorithm(14)$0"	[label=print];
+	"print[947/4]" -> "testing_y(14)"	[label=print];
+	"print[947/4]" -> "predictions(14)$0"	[label=print];
+	"print[947/4]" -> "
+ Classification report : 
+(14)"	[label=print];
+	"print[947/4]" -> "classification_report(14)"	[label=print];
+	"print[948/4]" -> "testing_y(14)"	[label=print];
+	"print[948/4]" -> "predictions(14)$0"	[label=print];
+	"print[948/4]" -> "Accuracy Score   : (14)"	[label=print];
+	"print[948/4]" -> "accuracy_score(14)"	[label=print];
 	"conf_matrix(14)$0" -> "testing_y(14)"	[label=confusion_matrix];
 	"conf_matrix(14)$0" -> "predictions(14)$0"	[label=confusion_matrix];
+	"model_roc_auc(14)$0" -> "testing_y(14)"	[label=roc_auc_score];
+	"model_roc_auc(14)$0" -> "predictions(14)$0"	[label=roc_auc_score];
+	"print[953/4]" -> "model_roc_auc(14)$0"	[label=print];
+	"print[953/4]" -> "Area under curve : (14)"	[label=print];
 	"fpr(14)$0" -> "testing_y(14)"	[label=roc_curve];
 	"fpr(14)$0" -> "probabilities(14)$0"	[label=roc_curve];
 	"fpr(14)$0" -> "1(14)"	[label=roc_curve];
@@ -1533,14 +1450,14 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"trace2(14)$0" -> "go(14)"	[label=Scatter];
 	"trace2(14)$0" -> "dict(14)"	[label=Scatter];
 	"trace2(14)$0" -> "2(14)"	[label=Scatter];
-	"trace2(14)$0" -> "[<_ast.Constant object at 0x13052f460>, <_ast.Constant object at 0x13052f490>](14)"	[label=Scatter];
-	"trace2(14)$0" -> "[<_ast.Constant object at 0x13052f550>, <_ast.Constant object at 0x13052f580>](14)"	[label=Scatter];
+	"trace2(14)$0" -> "[<_ast.Constant object at 0x7fd4c05b9160>, <_ast.Constant object at 0x7fd4c05b9190>](14)"	[label=Scatter];
+	"trace2(14)$0" -> "[<_ast.Constant object at 0x7fd4c05b9250>, <_ast.Constant object at 0x7fd4c05b9280>](14)"	[label=Scatter];
 	"trace2(14)$0" -> "rgb(205, 12, 24)(14)"	[label=Scatter];
 	"trace2(14)$0" -> "dot(14)"	[label=Scatter];
 	"trace3(14)$0" -> "conf_matrix(14)$0"	[label=Heatmap];
 	"trace3(14)$0" -> "go(14)"	[label=Heatmap];
-	"trace3(14)$0" -> "[<_ast.Constant object at 0x13052fa30>, <_ast.Constant object at 0x13052fa60>](14)"	[label=Heatmap];
-	"trace3(14)$0" -> "[<_ast.Constant object at 0x13052fb20>, <_ast.Constant object at 0x13052fb50>](14)"	[label=Heatmap];
+	"trace3(14)$0" -> "[<_ast.Constant object at 0x7fd4c05b9730>, <_ast.Constant object at 0x7fd4c05b9760>](14)"	[label=Heatmap];
+	"trace3(14)$0" -> "[<_ast.Constant object at 0x7fd4c05b9850>, <_ast.Constant object at 0x7fd4c05b9880>](14)"	[label=Heatmap];
 	"trace3(14)$0" -> "False(14)"	[label=Heatmap];
 	"trace3(14)$0" -> "Blues(14)"	[label=Heatmap];
 	"trace3(14)$0" -> "matrix(14)"	[label=Heatmap];
@@ -1558,13 +1475,13 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"layout(14)$0" -> "rgb(243,243,243)(14)"	[label=Layout];
 	"layout(14)$0" -> "false positive rate(14)"	[label=Layout];
 	"layout(14)$0" -> "rgb(255, 255, 255)(14)"	[label=Layout];
-	"layout(14)$0" -> "[<_ast.Constant object at 0x130541670>, <_ast.Constant object at 0x1305416a0>](14)"	[label=Layout];
+	"layout(14)$0" -> "[<_ast.Constant object at 0x7fd4c05ce370>, <_ast.Constant object at 0x7fd4c05ce3a0>](14)"	[label=Layout];
 	"layout(14)$0" -> "5(14)"	[label=Layout];
 	"layout(14)$0" -> "true positive rate(14)"	[label=Layout];
 	"layout(14)$0" -> "200(14)"	[label=Layout];
-	"layout(14)$0" -> "[<_ast.Constant object at 0x130541e50>, <_ast.Constant object at 0x130541e80>](14)"	[label=Layout];
+	"layout(14)$0" -> "[<_ast.Constant object at 0x7fd4c05ceb50>, <_ast.Constant object at 0x7fd4c05ceb80>](14)"	[label=Layout];
 	"layout(14)$0" -> "90(14)"	[label=Layout];
-	"data(14)$0" -> "[<_ast.Name object at 0x1305482b0>, <_ast.Name object at 0x1305482e0>, <_ast.Name object at 0x130548310>](14)"	[label=assignedFrom];
+	"data(14)$0" -> "[<_ast.Name object at 0x7fd4c05cef40>, <_ast.Name object at 0x7fd4c05cef70>, <_ast.Name object at 0x7fd4c05cefa0>](14)"	[label=assignedFrom];
 	"fig(14)$0" -> "go(14)"	[label=Figure];
 	"fig(14)$0" -> "layout(14)$0"	[label=Figure];
 	"fig(14)$0" -> "data(14)$0"	[label=Figure];
@@ -1580,79 +1497,216 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"KNeighborsClassifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"KNeighborsClassifier(0)" -> KNeighborsClassifier	[label=assignedFrom];
 	"auto(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"knn(0)$0" -> "1(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "5(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "2(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "None(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "auto(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "30(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "minkowski(0)"	[label=KNeighborsClassifier];
+	"knn(0)$0" -> "uniform(0)"	[label=KNeighborsClassifier];
 	"30(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"minkowski(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"uniform(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"telecom_churn_prediction_alg[1006/0]" -> "True(0)"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1006/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1006/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1006/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1006/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1006/0]" -> "knn(0)$0"	[label=telecom_churn_prediction_alg];
 	"sklearn.ensemble" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"RandomForestClassifier(0)" -> RandomForestClassifier	[label=assignedFrom];
-	"plot_tree_randomforest[0]" -> "cols1(0)$0"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[0]" -> "cols1(0)$1"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[0]" -> "cols(0)$4"	[label=plot_tree_randomforest];
+	"columns(15)" -> "plot_tree_randomforest[0]"	[label=_argToVar];
+	"nf_estimators(15)" -> "plot_tree_randomforest[1]"	[label=_argToVar];
+	"estimated_tree(15)" -> "plot_tree_randomforest[2]"	[label=_argToVar];
+	"maximum_depth(15)" -> "plot_tree_randomforest[3]"	[label=_argToVar];
+	"criterion_type(15)" -> "plot_tree_randomforest[4]"	[label=_argToVar];
+	"model_performance(15)" -> "plot_tree_randomforest[5]"	[label=_argToVar];
+	"dataframe(15)$0" -> "columns(15)"	[label=copy];
+	"dataframe(15)$0" -> "df_telcom_og(15)"	[label=copy];
+	"dataframe(15)$0" -> "target_col(15)"	[label=copy];
+	"rf_x(15)$0" -> "columns(15)"	[label=assignedFrom];
+	"rf_x(15)$0" -> "dataframe(15)$0"	[label=assignedFrom];
+	"rf_x(15)$0" -> "target_col(15)"	[label=assignedFrom];
+	"rf_x(15)$0" -> "i(15)"	[label=assignedFrom];
+	"rf_y(15)$0" -> "dataframe(15)$0"	[label=assignedFrom];
+	"rf_y(15)$0" -> "target_col(15)"	[label=assignedFrom];
+	"rfc(15)$0" -> "nf_estimators(15)"	[label=RandomForestClassifier];
+	"rfc(15)$0" -> "maximum_depth(15)"	[label=RandomForestClassifier];
+	"rfc(15)$0" -> "criterion_type(15)"	[label=RandomForestClassifier];
+	"rfc(15)$1" -> "rf_x(15)$0"	[label=fit];
+	"rfc(15)$1" -> "rf_y(15)$0"	[label=fit];
+	"rfc(15)$1" -> "rfc(15)$0"	[label=fit];
+	"estimated_tree(15)$0" -> "rfc(15)$1"	[label=assignedFrom];
+	"estimated_tree(15)$0" -> "estimated_tree(15)$0"	[label=assignedFrom];
+	"graph(15)$0" -> "columns(15)"	[label=Source];
+	"graph(15)$0" -> "estimated_tree(15)$0"	[label=Source];
+	"graph(15)$0" -> "tree(15)"	[label=Source];
+	"graph(15)$0" -> "None(15)"	[label=Source];
+	"graph(15)$0" -> "True(15)"	[label=Source];
+	"graph(15)$0" -> "False(15)"	[label=Source];
+	"graph(15)$0" -> "2(15)"	[label=Source];
+	"graph(15)$0" -> "[<_ast.Constant object at 0x7fd4c05b52e0>, <_ast.Constant object at 0x7fd4c05b5310>](15)"	[label=Source];
+	"display[1043/4]" -> "graph(15)$0"	[label=display];
+	"telecom_churn_prediction[1047/8]" -> "columns(15)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "rf_x(15)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "rf_y(15)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "rfc(15)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "True(15)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "test_X(15)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "test_Y(15)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1047/8]" -> "features(15)"	[label=telecom_churn_prediction];
 	"cols1(0)$0" -> "i(0)"	[label=assignedFrom];
 	"cols1(0)$0" -> "Id_col(0)$1"	[label=assignedFrom];
 	"cols1(0)$0" -> "target_col(0)$1"	[label=assignedFrom];
 	"cols1(0)$0" -> "train_X(0)$0"	[label=assignedFrom];
+	"plot_tree_randomforest[1054/0]" -> "True(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1054/0]" -> "3(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1054/0]" -> "100(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1054/0]" -> "entropy(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1054/0]" -> "cols1(0)$0"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1054/0]" -> "99(0)"	[label=plot_tree_randomforest];
+	"99(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"cols1(0)$1" -> "i(0)"	[label=assignedFrom];
 	"cols1(0)$1" -> "Id_col(0)$1"	[label=assignedFrom];
 	"cols1(0)$1" -> "target_col(0)$1"	[label=assignedFrom];
 	"cols1(0)$1" -> "train_X(0)$0"	[label=assignedFrom];
+	"plot_tree_randomforest[1059/4]" -> "i(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1059/4]" -> "3(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1059/4]" -> "False(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1059/4]" -> "10(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1059/4]" -> "entropy(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1059/4]" -> "cols1(0)$1"	[label=plot_tree_randomforest];
 	"cols(0)$4" -> "True(0)"	[label=tolist];
 	"cols(0)$4" -> "idc_rfe(0)$0"	[label=tolist];
 	"cols(0)$4" -> "rfe_support(0)"	[label=tolist];
 	"cols(0)$4" -> "columns(0)$0"	[label=tolist];
-	"nf_estimators(15)" -> "plot_tree_randomforest[1]"	[label=_argToVar];
-	"plot_tree_randomforest[1]" -> "100(0)"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[1]" -> "10(0)"	[label=plot_tree_randomforest];
-	"estimated_tree(15)" -> "plot_tree_randomforest[2]"	[label=_argToVar];
-	"plot_tree_randomforest[2]" -> "i(0)"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[2]" -> "99(0)"	[label=plot_tree_randomforest];
-	"99(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"maximum_depth(15)" -> "plot_tree_randomforest[3]"	[label=_argToVar];
-	"plot_tree_randomforest[3]" -> "3(0)"	[label=plot_tree_randomforest];
-	"criterion_type(15)" -> "plot_tree_randomforest[4]"	[label=_argToVar];
-	"plot_tree_randomforest[4]" -> "gini(0)"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[4]" -> "entropy(0)"	[label=plot_tree_randomforest];
-	"model_performance(15)" -> "plot_tree_randomforest[5]"	[label=_argToVar];
-	"plot_tree_randomforest[5]" -> "True(0)"	[label=plot_tree_randomforest];
-	"plot_tree_randomforest[5]" -> "False(0)"	[label=plot_tree_randomforest];
-	"dataframe(15)$0" -> "columns(15)"	[label=copy];
-	"dataframe(15)$0" -> "df_telcom_og(15)"	[label=copy];
-	"dataframe(15)$0" -> "target_col(15)"	[label=copy];
-	"rfc(15)$0" -> "nf_estimators(15)"	[label=RandomForestClassifier];
-	"rfc(15)$0" -> "maximum_depth(15)"	[label=RandomForestClassifier];
-	"rfc(15)$0" -> "criterion_type(15)"	[label=RandomForestClassifier];
-	"estimated_tree(15)$0" -> "rfc(15)$1"	[label=assignedFrom];
-	"estimated_tree(15)$0" -> "estimated_tree(15)$0"	[label=assignedFrom];
+	"plot_tree_randomforest[1066/4]" -> "i(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1066/4]" -> "3(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1066/4]" -> "False(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1066/4]" -> "10(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1066/4]" -> "gini(0)"	[label=plot_tree_randomforest];
+	"plot_tree_randomforest[1066/4]" -> "cols(0)$4"	[label=plot_tree_randomforest];
 	"sklearn.naive_bayes" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	GaussianNB -> "sklearn.naive_bayes"	[label=importedBy];
 	"GaussianNB(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"GaussianNB(0)" -> GaussianNB	[label=assignedFrom];
+	"gnb(0)$0" -> "None(0)"	[label=GaussianNB];
+	"telecom_churn_prediction_alg[1071/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1071/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1071/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1071/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1071/0]" -> "gnb(0)$0"	[label=telecom_churn_prediction_alg];
 	"sklearn.svm" -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	SVC -> "sklearn.svm"	[label=importedBy];
 	"SVC(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"SVC(0)" -> SVC	[label=assignedFrom];
+	"svc_lin(0)$0" -> "1(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "True(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "3(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "False(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "1.0(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "None(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "ovr(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "200(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "0.0(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "linear(0)"	[label=SVC];
+	"svc_lin(0)$0" -> "0.001(0)"	[label=SVC];
 	"0.0(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"linear(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"0.001(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"cols(0)$5" -> "i(0)"	[label=assignedFrom];
+	"cols(0)$5" -> "Id_col(0)$1"	[label=assignedFrom];
+	"cols(0)$5" -> "target_col(0)$1"	[label=assignedFrom];
+	"cols(0)$5" -> "telcom(0)$13"	[label=assignedFrom];
+	"telecom_churn_prediction[1082/0]" -> "False(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "coefficients(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "svc_lin(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1082/0]" -> "cols(0)$5"	[label=telecom_churn_prediction];
+	"svc_rbf(0)$0" -> "1(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "True(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "3(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "False(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "1.0(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "None(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "200(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "0.0(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "0.001(0)"	[label=SVC];
+	"svc_rbf(0)$0" -> "rbf(0)"	[label=SVC];
 	"rbf(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"telecom_churn_prediction_alg[1096/0]" -> "False(0)"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1096/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1096/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1096/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1096/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction_alg];
+	"telecom_churn_prediction_alg[1096/0]" -> "svc_rbf(0)$0"	[label=telecom_churn_prediction_alg];
 	lightgbm -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	LGBMClassifier -> lightgbm	[label=importedBy];
 	"LGBMClassifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"LGBMClassifier(0)" -> LGBMClassifier	[label=assignedFrom];
 	"gbdt(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"lgbm_c(0)$0" -> "0(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "1(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "0.5(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "True(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "1.0(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "None(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "100(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "0.0(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "0.001(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "gbdt(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "7(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "20(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "500(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "binary(0)"	[label=LGBMClassifier];
+	"lgbm_c(0)$0" -> "200000(0)"	[label=LGBMClassifier];
 	"7(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"20(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"500(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"binary(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"200000(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"cols(0)$6" -> "i(0)"	[label=assignedFrom];
+	"cols(0)$6" -> "Id_col(0)$1"	[label=assignedFrom];
+	"cols(0)$6" -> "target_col(0)$1"	[label=assignedFrom];
+	"cols(0)$6" -> "telcom(0)$13"	[label=assignedFrom];
+	"telecom_churn_prediction[1107/0]" -> "True(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "features(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "lgbm_c(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1107/0]" -> "cols(0)$6"	[label=telecom_churn_prediction];
 	xgboost -> "telecom-customer-churn-prediction.ipynb"	[label=importedBy];
 	XGBClassifier -> xgboost	[label=importedBy];
 	"XGBClassifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"XGBClassifier(0)" -> XGBClassifier	[label=assignedFrom];
+	"xgc(0)$0" -> "0(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "1(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "0.5(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "0.9(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "True(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "None(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "100(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "7(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "gbtree(0)"	[label=XGBClassifier];
+	"xgc(0)$0" -> "binary:logistic(0)"	[label=XGBClassifier];
 	"gbtree(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"binary:logistic(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"telecom_churn_prediction[1120/0]" -> "True(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "test_X(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "test_Y(0)$0"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "os_smote_X(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "os_smote_Y(0)$1"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "features(0)"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "cols(0)$6"	[label=telecom_churn_prediction];
+	"telecom_churn_prediction[1120/0]" -> "xgc(0)$0"	[label=telecom_churn_prediction];
 	cohen_kappa_score -> "sklearn.metrics"	[label=importedBy];
 	"cohen_kappa_score(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"cohen_kappa_score(0)" -> cohen_kappa_score	[label=assignedFrom];
@@ -1687,13 +1741,13 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"df(16)$0" -> "f1_score(16)"	[label=DataFrame];
 	"df(16)$0" -> "Area_under_curve(16)"	[label=DataFrame];
 	"df(16)$0" -> "Kappa_metric(16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f960e50>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f960eb0>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f960f10>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f960f70>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f960fd0>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f954070>](16)"	[label=DataFrame];
-	"df(16)$0" -> "[<_ast.Name object at 0x12f9540d0>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010eb50>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ebb0>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ec10>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ec70>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ecd0>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ed30>](16)"	[label=DataFrame];
+	"df(16)$0" -> "[<_ast.Name object at 0x7fd49010ed90>](16)"	[label=DataFrame];
 	"model1(0)$0" -> "train_X(0)$0"	[label=model_report];
 	"model1(0)$0" -> "train_Y(0)$0"	[label=model_report];
 	"model1(0)$0" -> "test_X(0)$0"	[label=model_report];
@@ -1703,16 +1757,16 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"Logistic Regression(Baseline_model)(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model2(0)$0" -> "test_X(0)$0"	[label=model_report];
 	"model2(0)$0" -> "test_Y(0)$0"	[label=model_report];
-	"model2(0)$0" -> "logit_smote(0)$0"	[label=model_report];
 	"model2(0)$0" -> "os_smote_X(0)$1"	[label=model_report];
 	"model2(0)$0" -> "os_smote_Y(0)$1"	[label=model_report];
+	"model2(0)$0" -> "logit_smote(0)$0"	[label=model_report];
 	"model2(0)$0" -> "Logistic Regression(SMOTE)(0)"	[label=model_report];
 	"Logistic Regression(SMOTE)(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"model3(0)$0" -> "logit_rfe(0)$0"	[label=model_report];
 	"model3(0)$0" -> "train_rf_X(0)$0"	[label=model_report];
-	"model3(0)$0" -> "test_rf_X(0)$0"	[label=model_report];
 	"model3(0)$0" -> "train_rf_Y(0)$0"	[label=model_report];
+	"model3(0)$0" -> "test_rf_X(0)$0"	[label=model_report];
 	"model3(0)$0" -> "test_rf_Y(0)$0"	[label=model_report];
+	"model3(0)$0" -> "logit_rfe(0)$0"	[label=model_report];
 	"model3(0)$0" -> "Logistic Regression(RFE)(0)"	[label=model_report];
 	"Logistic Regression(RFE)(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"decision_tree(0)$0" -> "9(0)"	[label=DecisionTreeClassifier];
@@ -1755,9 +1809,9 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"Naive Bayes(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model8(0)$0" -> "test_X(0)$0"	[label=model_report];
 	"model8(0)$0" -> "test_Y(0)$0"	[label=model_report];
-	"model8(0)$0" -> "svc_lin(0)$0"	[label=model_report];
 	"model8(0)$0" -> "os_smote_X(0)$1"	[label=model_report];
 	"model8(0)$0" -> "os_smote_Y(0)$1"	[label=model_report];
+	"model8(0)$0" -> "svc_lin(0)$0"	[label=model_report];
 	"model8(0)$0" -> "SVM Classifier Linear(0)"	[label=model_report];
 	"SVM Classifier Linear(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model9(0)$0" -> "test_X(0)$0"	[label=model_report];
@@ -1769,26 +1823,28 @@ object at 0x130529a60>, <_ast.Constant object at 0x130529a90>](0)" -> "telecom-c
 	"SVM Classifier RBF(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model10(0)$0" -> "test_X(0)$0"	[label=model_report];
 	"model10(0)$0" -> "test_Y(0)$0"	[label=model_report];
-	"model10(0)$0" -> "lgbm_c(0)$0"	[label=model_report];
 	"model10(0)$0" -> "os_smote_X(0)$1"	[label=model_report];
 	"model10(0)$0" -> "os_smote_Y(0)$1"	[label=model_report];
+	"model10(0)$0" -> "lgbm_c(0)$0"	[label=model_report];
 	"model10(0)$0" -> "LGBM Classifier(0)"	[label=model_report];
 	"LGBM Classifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model11(0)$0" -> "test_X(0)$0"	[label=model_report];
 	"model11(0)$0" -> "test_Y(0)$0"	[label=model_report];
-	"model11(0)$0" -> "xgc(0)$0"	[label=model_report];
 	"model11(0)$0" -> "os_smote_X(0)$1"	[label=model_report];
 	"model11(0)$0" -> "os_smote_Y(0)$1"	[label=model_report];
+	"model11(0)$0" -> "xgc(0)$0"	[label=model_report];
 	"model11(0)$0" -> "XGBoost Classifier(0)"	[label=model_report];
 	"XGBoost Classifier(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model_performances(0)$0" -> "pd(0)"	[label=reset_index];
 	"model_performances(0)$0" -> "0(0)"	[label=reset_index];
-	"model_performances(0)$0" -> "[<_ast.Name object at 0x12f92d040>, <_ast.Name object at 0x12f92d070>, <_ast.Name object at 0x12f92d0a0>, <_ast.Name object at 0x12f92d0d0>, <_\
-ast.Name object at 0x12f92d100>, <_ast.Name object at 0x12f92d130>, <_ast.Name object at 0x12f92d160>, <_ast.Name object at 0x12f92d190>, <_\
-ast.Name object at 0x12f92d1c0>, <_ast.Name object at 0x12f92d1f0>, <_ast.Name object at 0x12f92d220>](0)"	[label=reset_index];
-	"[<_ast.Name object at 0x12f92d040>, <_ast.Name object at 0x12f92d070>, <_ast.Name object at 0x12f92d0a0>, <_ast.Name object at 0x12f92d0d0>, <_\
-ast.Name object at 0x12f92d100>, <_ast.Name object at 0x12f92d130>, <_ast.Name object at 0x12f92d160>, <_ast.Name object at 0x12f92d190>, <_\
-ast.Name object at 0x12f92d1c0>, <_ast.Name object at 0x12f92d1f0>, <_ast.Name object at 0x12f92d220>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"model_performances(0)$0" -> "[<_ast.Name object at 0x7fd49012bd30>, <_ast.Name object at 0x7fd49012bd60>, <_ast.Name object at 0x7fd49012bd90>, <_ast.Name object \
+at 0x7fd49012bdc0>, <_ast.Name object at 0x7fd49012bdf0>, <_ast.Name object at 0x7fd49012bb20>, <_ast.Name object at 0x7fd49012be20>, <_\
+ast.Name object at 0x7fd49012be50>, <_ast.Name object at 0x7fd49012be80>, <_ast.Name object at 0x7fd49012bee0>, <_ast.Name object \
+at 0x7fd49012bf10>](0)"	[label=reset_index];
+	"[<_ast.Name object at 0x7fd49012bd30>, <_ast.Name object at 0x7fd49012bd60>, <_ast.Name object at 0x7fd49012bd90>, <_ast.Name object \
+at 0x7fd49012bdc0>, <_ast.Name object at 0x7fd49012bdf0>, <_ast.Name object at 0x7fd49012bb20>, <_ast.Name object at 0x7fd49012be20>, <_\
+ast.Name object at 0x7fd49012be50>, <_ast.Name object at 0x7fd49012be80>, <_ast.Name object at 0x7fd49012bee0>, <_ast.Name object \
+at 0x7fd49012bf10>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"model_performances(0)$1" -> "1(0)"	[label=drop];
 	"model_performances(0)$1" -> "index(0)"	[label=drop];
 	"model_performances(0)$1" -> "model_performances(0)$0"	[label=drop];
@@ -1842,21 +1898,22 @@ ast.Name object at 0x12f92d1c0>, <_ast.Name object at 0x12f92d1f0>, <_ast.Name o
 	"trace5(0)$1" -> "Kappa_metric(0)"	[label=output_tracer];
 	"trace5(0)$1" -> "#FFCC99(0)"	[label=output_tracer];
 	"#FFCC99(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8eb3d0>, <_ast.Name object at 0x12f8eb400>, <_ast.Name object at 0x12f8eb430>, <_ast.Name object at 0x12f8eb460>, <_\
-ast.Name object at 0x12f8eb490>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"data(0)$6" -> "[<_ast.Name object at 0x12f8eb3d0>, <_ast.Name object at 0x12f8eb400>, <_ast.Name object at 0x12f8eb430>, <_ast.Name object at 0x12f8eb460>, <_\
-ast.Name object at 0x12f8eb490>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4901320d0>, <_ast.Name object at 0x7fd490132130>, <_ast.Name object at 0x7fd490132160>, <_ast.Name object \
+at 0x7fd490132190>, <_ast.Name object at 0x7fd4901321c0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Name object at 0x7fd4901320d0>, <_ast.Name object at 0x7fd490132130>, <_ast.Name object at 0x7fd490132160>, <_ast.Name object \
+at 0x7fd490132190>, <_ast.Name object at 0x7fd4901321c0>](0)"	[label=assignedFrom];
 	"fig(0)$6" -> "go(0)"	[label=Figure];
 	"fig(0)$6" -> "layout(0)$7"	[label=Figure];
 	"fig(0)$6" -> "data(0)$6"	[label=Figure];
 	"py(0)$14" -> "py(0)$13"	[label=iplot];
 	"py(0)$14" -> "fig(0)$6"	[label=iplot];
-	"[<_ast.Name object at 0x12f8eb880>, <_ast.Name object at 0x12f8eb8b0>, <_ast.Name object at 0x12f8eb8e0>, <_ast.Name object at 0x12f8eb910>, <_\
-ast.Name object at 0x12f8eb940>, <_ast.Name object at 0x12f8eb970>, <_ast.Name object at 0x12f8eb9a0>, <_ast.Name object at 0x12f8eb9d0>, <_\
-ast.Name object at 0x12f8eba00>, <_ast.Name object at 0x12f8eba30>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ebbe0>, <_ast.Constant object at 0x12f8ebc10>, <_ast.Constant object at 0x12f8ebc40>, <_ast.Constant \
-object at 0x12f8ebc70>, <_ast.Constant object at 0x12f8ebca0>, <_ast.Constant object at 0x12f8ebcd0>, <_ast.Constant object at 0x12f8ebd00>, <_\
-ast.Constant object at 0x12f8ebd30>, <_ast.Constant object at 0x12f8ebd60>, <_ast.Constant object at 0x12f8ebd90>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd490132610>, <_ast.Name object at 0x7fd490132670>, <_ast.Name object at 0x7fd490132100>, <_ast.Name object \
+at 0x7fd4901326a0>, <_ast.Name object at 0x7fd4901326d0>, <_ast.Name object at 0x7fd490132700>, <_ast.Name object at 0x7fd490132730>, <_\
+ast.Name object at 0x7fd490132760>, <_ast.Name object at 0x7fd490132460>, <_ast.Name object at 0x7fd490132790>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd490132640>, <_ast.Constant object at 0x7fd490132940>, <_ast.Constant object at 0x7fd490132970>, <_\
+ast.Constant object at 0x7fd4901329d0>, <_ast.Constant object at 0x7fd4901329a0>, <_ast.Constant object at 0x7fd490132a00>, <_ast.Constant \
+object at 0x7fd490132a30>, <_ast.Constant object at 0x7fd490132a60>, <_ast.Constant object at 0x7fd490132a90>, <_ast.Constant object \
+at 0x7fd490132ac0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"fig(0)$7" -> "plt(0)"	[label=figure];
 	"fig(0)$7" -> "13(0)"	[label=figure];
 	"fig(0)$7" -> "15(0)"	[label=figure];
@@ -1903,12 +1960,13 @@ ast.Constant object at 0x12f8ebd30>, <_ast.Constant object at 0x12f8ebd60>, <_as
 	"plt(0)$1" -> "k(0)"	[label=title];
 	"plt(0)$1" -> "plt(0)$0"	[label=title];
 	"plt(0)$2" -> "plt(0)$1"	[label=subplots_adjust];
-	"[<_ast.Name object at 0x12f9152e0>, <_ast.Name object at 0x12f915310>, <_ast.Name object at 0x12f915340>, <_ast.Name object at 0x12f915370>, <_\
-ast.Name object at 0x12f9153a0>, <_ast.Name object at 0x12f9153d0>, <_ast.Name object at 0x12f915400>, <_ast.Name object at 0x12f915430>, <_\
-ast.Name object at 0x12f915160>, <_ast.Name object at 0x12f915460>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f915610>, <_ast.Constant object at 0x12f915640>, <_ast.Constant object at 0x12f915670>, <_ast.Constant \
-object at 0x12f9156a0>, <_ast.Constant object at 0x12f9156d0>, <_ast.Constant object at 0x12f915730>, <_ast.Constant object at 0x12f915760>, <_\
-ast.Constant object at 0x12f915790>, <_ast.Constant object at 0x12f9157c0>, <_ast.Constant object at 0x12f9157f0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd49013bf70>, <_ast.Name object at 0x7fd49013bfa0>, <_ast.Name object at 0x7fd49013bfd0>, <_ast.Name object \
+at 0x7fd5009a7040>, <_ast.Name object at 0x7fd5009a7070>, <_ast.Name object at 0x7fd5009a70a0>, <_ast.Name object at 0x7fd5009a70d0>, <_\
+ast.Name object at 0x7fd5009a7100>, <_ast.Name object at 0x7fd5009a7130>, <_ast.Name object at 0x7fd5009a7160>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009a7310>, <_ast.Constant object at 0x7fd5009a7340>, <_ast.Constant object at 0x7fd5009a7370>, <_\
+ast.Constant object at 0x7fd5009a73a0>, <_ast.Constant object at 0x7fd5009a73d0>, <_ast.Constant object at 0x7fd5009a7400>, <_ast.Constant \
+object at 0x7fd5009a7430>, <_ast.Constant object at 0x7fd5009a7460>, <_ast.Constant object at 0x7fd5009a7490>, <_ast.Constant object \
+at 0x7fd5009a74c0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=use];
 	"plt(0)$3" -> "dark_background(0)"	[label=use];
 	"dark_background(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
@@ -1941,18 +1999,18 @@ ast.Constant object at 0x12f915790>, <_ast.Constant object at 0x12f9157c0>, <_as
 	"plt(0)$4" -> "fpr(0)$0"	[label=plot];
 	"plt(0)$4" -> "tpr(0)$0"	[label=plot];
 	"plt(0)$5" -> "plt(0)$4"	[label=plot];
-	"plt(0)$5" -> "[<_ast.Constant object at 0x12f921cd0>, <_ast.Constant object at 0x12f921d00>](0)"	[label=plot];
-	"plt(0)$5" -> "[<_ast.Constant object at 0x12f921d60>, <_ast.Constant object at 0x12f921d90>](0)"	[label=plot];
-	"[<_ast.Constant object at 0x12f921cd0>, <_ast.Constant object at 0x12f921d00>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f921d60>, <_ast.Constant object at 0x12f921d90>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plt(0)$5" -> "[<_ast.Constant object at 0x7fd5009bb9d0>, <_ast.Constant object at 0x7fd5009bba00>](0)"	[label=plot];
+	"plt(0)$5" -> "[<_ast.Constant object at 0x7fd5009bba60>, <_ast.Constant object at 0x7fd5009bba90>](0)"	[label=plot];
+	"[<_ast.Constant object at 0x7fd5009bb9d0>, <_ast.Constant object at 0x7fd5009bba00>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bba60>, <_ast.Constant object at 0x7fd5009bba90>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"plt(0)$6" -> "fpr(0)$0"	[label=fill_between];
 	"plt(0)$6" -> "tpr(0)$0"	[label=fill_between];
 	"plt(0)$6" -> "plt(0)$5"	[label=fill_between];
 	"plt(0)$7" -> "plt(0)$6"	[label=fill_between];
-	"plt(0)$7" -> "[<_ast.Constant object at 0x12f8ff2b0>, <_ast.Constant object at 0x12f8ff2e0>](0)"	[label=fill_between];
-	"plt(0)$7" -> "[<_ast.Constant object at 0x12f8ff340>, <_ast.Constant object at 0x12f8ff370>](0)"	[label=fill_between];
-	"[<_ast.Constant object at 0x12f8ff2b0>, <_ast.Constant object at 0x12f8ff2e0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ff340>, <_ast.Constant object at 0x12f8ff370>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plt(0)$7" -> "[<_ast.Constant object at 0x7fd5009bbf70>, <_ast.Constant object at 0x7fd5009bbfa0>](0)"	[label=fill_between];
+	"plt(0)$7" -> "[<_ast.Constant object at 0x7fd5009bf040>, <_ast.Constant object at 0x7fd5009bf070>](0)"	[label=fill_between];
+	"[<_ast.Constant object at 0x7fd5009bbf70>, <_ast.Constant object at 0x7fd5009bbfa0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bf040>, <_ast.Constant object at 0x7fd5009bf070>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"plt(0)$8" -> "plt(0)$7"	[label=legend];
 	"qx(0)$1" -> "k(0)"	[label=set_facecolor];
 	"qx(0)$1" -> "qx(0)$0"	[label=set_facecolor];
@@ -1977,12 +2035,13 @@ ast.Constant object at 0x12f915790>, <_ast.Constant object at 0x12f9157c0>, <_as
 	average_precision_score -> "sklearn.metrics"	[label=importedBy];
 	"average_precision_score(0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"average_precision_score(0)" -> average_precision_score	[label=assignedFrom];
-	"[<_ast.Name object at 0x12f8ed160>, <_ast.Name object at 0x12f8ed190>, <_ast.Name object at 0x12f8ed1c0>, <_ast.Name object at 0x12f8ed1f0>, <_\
-ast.Name object at 0x12f8ed220>, <_ast.Name object at 0x12f8ed250>, <_ast.Name object at 0x12f8ed280>, <_ast.Name object at 0x12f8ed2b0>, <_\
-ast.Name object at 0x12f8ed2e0>, <_ast.Name object at 0x12f8ed310>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ed4c0>, <_ast.Constant object at 0x12f8ed4f0>, <_ast.Constant object at 0x12f8ed520>, <_ast.Constant \
-object at 0x12f8ed550>, <_ast.Constant object at 0x12f8ed580>, <_ast.Constant object at 0x12f8ed5b0>, <_ast.Constant object at 0x12f8ed5e0>, <_\
-ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_ast.Constant object at 0x12f8ed670>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5009bfe20>, <_ast.Name object at 0x7fd5009bfe50>, <_ast.Name object at 0x7fd5009bfe80>, <_ast.Name object \
+at 0x7fd5009bfeb0>, <_ast.Name object at 0x7fd5009bfee0>, <_ast.Name object at 0x7fd5009bff10>, <_ast.Name object at 0x7fd5009bff40>, <_\
+ast.Name object at 0x7fd5009bff70>, <_ast.Name object at 0x7fd5009bffa0>, <_ast.Name object at 0x7fd5009bffd0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c52b0>, <_ast.Constant object at 0x7fd5009c52e0>, <_ast.Constant object at 0x7fd5009c5310>, <_\
+ast.Constant object at 0x7fd5009c5370>, <_ast.Constant object at 0x7fd5009c5100>, <_ast.Constant object at 0x7fd5009c50d0>, <_ast.Constant \
+object at 0x7fd5009c5070>, <_ast.Constant object at 0x7fd5009c57c0>, <_ast.Constant object at 0x7fd5009c53d0>, <_ast.Constant object \
+at 0x7fd5009c54c0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"fig(0)$11" -> "13(0)"	[label=figure];
 	"fig(0)$11" -> "plt(0)$12"	[label=figure];
 	"fig(0)$11" -> "17(0)"	[label=figure];
@@ -2011,10 +2070,10 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"plt(0)$13" -> "recall(0)$0"	[label=plot];
 	"plt(0)$13" -> "precision(0)$0"	[label=plot];
 	"plt(0)$14" -> "plt(0)$13"	[label=plot];
-	"plt(0)$14" -> "[<_ast.Constant object at 0x12f923940>, <_ast.Constant object at 0x12f923910>](0)"	[label=plot];
-	"plt(0)$14" -> "[<_ast.Constant object at 0x12f9239a0>, <_ast.Constant object at 0x12f9239d0>](0)"	[label=plot];
-	"[<_ast.Constant object at 0x12f923940>, <_ast.Constant object at 0x12f923910>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9239a0>, <_ast.Constant object at 0x12f9239d0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plt(0)$14" -> "[<_ast.Constant object at 0x7fd5009c3640>, <_ast.Constant object at 0x7fd5009c3610>](0)"	[label=plot];
+	"plt(0)$14" -> "[<_ast.Constant object at 0x7fd5009c36a0>, <_ast.Constant object at 0x7fd5009c36d0>](0)"	[label=plot];
+	"[<_ast.Constant object at 0x7fd5009c3640>, <_ast.Constant object at 0x7fd5009c3610>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c36a0>, <_ast.Constant object at 0x7fd5009c36d0>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"plt(0)$15" -> "recall(0)$0"	[label=fill_between];
 	"plt(0)$15" -> "precision(0)$0"	[label=fill_between];
 	"plt(0)$15" -> "plt(0)$14"	[label=fill_between];
@@ -2030,8 +2089,8 @@ ast.Constant object at 0x12f8ed610>, <_ast.Constant object at 0x12f8ed640>, <_as
 	"plt(0)$20" -> "precision(0)$0"	[label=ylabel];
 	"plt(0)$20" -> "plt(0)$19"	[label=ylabel];
 	"plt(0)$21" -> "plt(0)$20"	[label=xlim];
-	"plt(0)$21" -> "[<_ast.Constant object at 0x12f917820>, <_ast.Constant object at 0x12f917850>](0)"	[label=xlim];
-	"[<_ast.Constant object at 0x12f917820>, <_ast.Constant object at 0x12f917850>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
+	"plt(0)$21" -> "[<_ast.Constant object at 0x7fd5009b7520>, <_ast.Constant object at 0x7fd5009b7550>](0)"	[label=xlim];
+	"[<_ast.Constant object at 0x7fd5009b7520>, <_ast.Constant object at 0x7fd5009b7550>](0)" -> "telecom-customer-churn-prediction.ipynb"	[label=appearsIn];
 	"plt(0)$22" -> "np(0)"	[label=yticks];
 	"plt(0)$22" -> "0(0)"	[label=yticks];
 	"plt(0)$22" -> "1(0)"	[label=yticks];

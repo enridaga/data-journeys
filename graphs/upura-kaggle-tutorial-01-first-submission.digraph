@@ -18,24 +18,22 @@ digraph "" {
 	"train(0)$1" -> "train(0)$0"	[label=head];
 	"test(0)$1" -> "test(0)$0"	[label=head];
 	"data(0)$0" -> "pd(0)"	[label=concat];
-	"data(0)$0" -> "[<_ast.Name object at 0x12f85e640>, <_ast.Name object at 0x12f85ec40>](0)"	[label=concat];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd4c048e8b0>, <_ast.Name object at 0x7fd500872730>](0)"	[label=concat];
 	"data(0)$0" -> "False(0)"	[label=concat];
-	"[<_ast.Name object at 0x12f85e640>, <_ast.Name object at 0x12f85ec40>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c048e8b0>, <_ast.Name object at 0x7fd500872730>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
 	"False(0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=head];
 	"len(0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
-	"print[0]" -> "len(0)"	[label=print];
-	"print[1]" -> "train(0)$1"	[label=print];
-	"print[2]" -> "len(0)"	[label=print];
-	"print[3]" -> "test(0)$1"	[label=print];
-	"print[4]" -> "len(0)"	[label=print];
-	"print[5]" -> "data(0)$1"	[label=print];
+	"print[13/0]" -> "train(0)$1"	[label=print];
+	"print[13/0]" -> "test(0)$1"	[label=print];
+	"print[13/0]" -> "data(0)$1"	[label=print];
+	"print[13/0]" -> "len(0)"	[label=print];
 	"data(0)$2" -> "data(0)$1"	[label=sum];
 	"data(0)$3" -> "data(0)$2"	[label=replace];
-	"data(0)$3" -> "[<_ast.Constant object at 0x12f85ed90>, <_ast.Constant object at 0x12f85ebe0>](0)"	[label=replace];
-	"data(0)$3" -> "[<_ast.Constant object at 0x12f85ed60>, <_ast.Constant object at 0x12f85ea90>](0)"	[label=replace];
-	"[<_ast.Constant object at 0x12f85ed90>, <_ast.Constant object at 0x12f85ebe0>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ed60>, <_ast.Constant object at 0x12f85ea90>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999280>](0)"	[label=replace];
+	"data(0)$3" -> "[<_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999490>](0)"	[label=replace];
+	"[<_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999280>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999490>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
 	"data(0)$4" -> "data(0)$3"	[label=fillna];
 	"data(0)$4" -> "S(0)"	[label=fillna];
 	"S(0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
@@ -69,10 +67,10 @@ digraph "" {
 	"data(0)$7" -> "data(0)$6"	[label=fillna];
 	"data(0)$7" -> "age_avg(0)$0"	[label=fillna];
 	"data(0)$7" -> "age_std(0)$0"	[label=fillna];
-	"[<_ast.Constant object at 0x12f989ee0>, <_ast.Constant object at 0x12f951250>, <_ast.Constant object at 0x12f951340>, <_ast.Constant \
-object at 0x12f951310>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant object at 0x12f951e50>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
-	"delete_columns(0)$0" -> "[<_ast.Constant object at 0x12f989ee0>, <_ast.Constant object at 0x12f951250>, <_ast.Constant object at 0x12f951340>, <_ast.Constant \
-object at 0x12f951310>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant object at 0x12f951e50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f0fd0>, <_\
+ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0430>](0)" -> "upura-kaggle-tutorial-01-first-submission.ipynb"	[label=appearsIn];
+	"delete_columns(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f0fd0>, <_\
+ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0430>](0)"	[label=assignedFrom];
 	"data(0)$8" -> "data(0)$7"	[label=drop];
 	"data(0)$8" -> "delete_columns(0)$0"	[label=drop];
 	"train(0)$2" -> "len(0)"	[label=assignedFrom];

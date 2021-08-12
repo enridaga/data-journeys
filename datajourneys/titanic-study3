@@ -20,15 +20,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "data(0)$1"	[label=print];
-	"print[0]" -> "-------------------------------------------(1)"	[label=print];
-	"print[0]" -> "data(0)$9"	[label=print];
-	"data(0)$1" -> "data(0)$0"	[label=head];
-	"data(0)$9" -> "1(0)"	[label=assignedFrom];
-	"data(0)$9" -> "data(0)$8"	[label=assignedFrom];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[15/8]" -> "os(0)"	[label=print];
+	"print[15/8]" -> "dirname(0)"	[label=print];
+	"print[15/8]" -> "filename(0)"	[label=print];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "/kaggle/input/titanic/train.csv(0)"	[label=read_csv];
 	"/kaggle/input/titanic/train.csv(0)" -> "titanic-study3.ipynb"	[label=appearsIn];
@@ -45,8 +39,13 @@ digraph "" {
 	"Survived(0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"1(0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"data(0)$0" -> "pd(0)"	[label=concat];
-	"data(0)$0" -> "[<_ast.Name object at 0x12f951820>, <_ast.Name object at 0x12f951430>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f951820>, <_ast.Name object at 0x12f951430>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd4c04ff730>, <_ast.Name object at 0x7fd4c04ff070>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04ff730>, <_ast.Name object at 0x7fd4c04ff070>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "data(0)$0"	[label=head];
+	"print[27/4]" -> "-------------------------------------------(1)"	[label=print];
+	"print[28/0]" -> "data(0)$1"	[label=print];
+	"print[30/0]" -> "data(0)$1"	[label=print];
+	"print[32/0]" -> "data(0)$1"	[label=print];
 	"data(0)$2" -> "data(0)$1"	[label=fillna];
 	"data(0)$2" -> "data(0)$2"	[label=fillna];
 	"data(0)$3" -> "data(0)$2"	[label=fillna];
@@ -64,19 +63,22 @@ digraph "" {
 	"data(0)$7" -> "data(0)$7"	[label=Add];
 	"data(0)$8" -> "0(0)"	[label=assignedFrom];
 	"data(0)$8" -> "data(0)$7"	[label=assignedFrom];
+	"data(0)$9" -> "1(0)"	[label=assignedFrom];
+	"data(0)$9" -> "data(0)$8"	[label=assignedFrom];
+	"print[42/0]" -> "data(0)$9"	[label=print];
 	"data(0)$10" -> "data(0)$9"	[label=head];
 	"df_Embarked(0)$0" -> "pd(0)"	[label=get_dummies];
 	"df_Embarked(0)$0" -> "data(0)$10"	[label=get_dummies];
 	"data(0)$11" -> "pd(0)"	[label=concat];
 	"data(0)$11" -> "1(0)"	[label=concat];
-	"data(0)$11" -> "[<_ast.Name object at 0x130532610>, <_ast.Name object at 0x130532850>](0)"	[label=concat];
-	"[<_ast.Name object at 0x130532610>, <_ast.Name object at 0x130532850>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"data(0)$11" -> "[<_ast.Name object at 0x7fd50080d310>, <_ast.Name object at 0x7fd50080ddc0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50080d310>, <_ast.Name object at 0x7fd50080ddc0>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"data(0)$12" -> "data(0)$11"	[label=head];
 	"data(0)$13" -> "data(0)$12"	[label=drop];
-	"data(0)$13" -> "[<_ast.Constant object at 0x130532dc0>, <_ast.Constant object at 0x1305320a0>, <_ast.Constant object at 0x130532d00>, <_ast.Constant \
-object at 0x130532970>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x130532dc0>, <_ast.Constant object at 0x1305320a0>, <_ast.Constant object at 0x130532d00>, <_ast.Constant \
-object at 0x130532970>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"data(0)$13" -> "[<_ast.Constant object at 0x7fd50080dee0>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080ddf0>, <_\
+ast.Constant object at 0x7fd50080d670>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50080dee0>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080ddf0>, <_\
+ast.Constant object at 0x7fd50080d670>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"data(0)$14" -> "data(0)$13"	[label=head];
 	"train_kai(0)$0" -> "train(0)$1"	[label=assignedFrom];
 	"train_kai(0)$0" -> "data(0)$14"	[label=assignedFrom];
@@ -86,19 +88,19 @@ object at 0x130532970>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"test_kai(0)$0" -> "data(0)$14"	[label=assignedFrom];
 	"test_kai(0)$0" -> "len(0)"	[label=assignedFrom];
 	"X_train(0)$0" -> "train_kai(0)$0"	[label=assignedFrom];
-	"X_train(0)$0" -> "[<_ast.Constant object at 0x12f88a970>, <_ast.Constant object at 0x12f88ad60>, <_ast.Constant object at 0x12f88adf0>, <_ast.Constant \
-object at 0x12f88a0a0>, <_ast.Constant object at 0x12f88aaf0>, <_ast.Constant object at 0x12f88a790>, <_ast.Constant object at 0x12f88a940>, <_\
-ast.Constant object at 0x12f88a670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a970>, <_ast.Constant object at 0x12f88ad60>, <_ast.Constant object at 0x12f88adf0>, <_ast.Constant \
-object at 0x12f88a0a0>, <_ast.Constant object at 0x12f88aaf0>, <_ast.Constant object at 0x12f88a790>, <_ast.Constant object at 0x12f88a940>, <_\
-ast.Constant object at 0x12f88a670>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"X_train(0)$0" -> "[<_ast.Constant object at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab460>, <_\
+ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant \
+object at 0x7fd4902ab8b0>, <_ast.Constant object at 0x7fd4902ab820>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902ab460>, <_\
+ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant \
+object at 0x7fd4902ab8b0>, <_ast.Constant object at 0x7fd4902ab820>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"X_test(0)$0" -> "test_kai(0)$0"	[label=assignedFrom];
-	"X_test(0)$0" -> "[<_ast.Constant object at 0x12f88a370>, <_ast.Constant object at 0x12f88a5e0>, <_ast.Constant object at 0x12f88afa0>, <_ast.Constant \
-object at 0x12f88a340>, <_ast.Constant object at 0x12f88af70>, <_ast.Constant object at 0x12f88abe0>, <_ast.Constant object at 0x12f88af40>, <_\
-ast.Constant object at 0x12f88a640>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88a370>, <_ast.Constant object at 0x12f88a5e0>, <_ast.Constant object at 0x12f88afa0>, <_ast.Constant \
-object at 0x12f88a340>, <_ast.Constant object at 0x12f88af70>, <_ast.Constant object at 0x12f88abe0>, <_ast.Constant object at 0x12f88af40>, <_\
-ast.Constant object at 0x12f88a640>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902ab730>, <_\
+ast.Constant object at 0x7fd4902abd90>, <_ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant \
+object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902aba00>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902ab730>, <_\
+ast.Constant object at 0x7fd4902abd90>, <_ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant \
+object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902aba00>](0)" -> "titanic-study3.ipynb"	[label=appearsIn];
 	"sklearn.linear_model" -> "titanic-study3.ipynb"	[label=importedBy];
 	LogisticRegression -> "sklearn.linear_model"	[label=importedBy];
 	"LogisticRegression(0)" -> "titanic-study3.ipynb"	[label=appearsIn];

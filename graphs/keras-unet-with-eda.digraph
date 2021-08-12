@@ -195,13 +195,13 @@ digraph "" {
 	"h(7)$0" -> "0(7)"	[label=assignedFrom];
 	"mask2(7)$0" -> "1(7)"	[label=concatenate];
 	"mask2(7)$0" -> "np(7)"	[label=concatenate];
-	"mask2(7)$0" -> "[<_ast.Subscript object at 0x12f894b50>, <_ast.Call object at 0x12f8946a0>](7)"	[label=concatenate];
+	"mask2(7)$0" -> "[<_ast.Subscript object at 0x7fd500828670>, <_ast.Call object at 0x7fd5008282e0>](7)"	[label=concatenate];
 	"mask2(7)$1" -> "mask(7)"	[label=logical_xor];
 	"mask2(7)$1" -> "np(7)"	[label=logical_xor];
 	"mask2(7)$1" -> "mask2(7)$1"	[label=logical_xor];
 	"mask3(7)$0" -> "0(7)"	[label=concatenate];
 	"mask3(7)$0" -> "np(7)"	[label=concatenate];
-	"mask3(7)$0" -> "[<_ast.Subscript object at 0x12f894a00>, <_ast.Call object at 0x12f894ca0>](7)"	[label=concatenate];
+	"mask3(7)$0" -> "[<_ast.Subscript object at 0x7fd500828ee0>, <_ast.Call object at 0x7fd5008281f0>](7)"	[label=concatenate];
 	"mask3(7)$1" -> "mask(7)"	[label=logical_xor];
 	"mask3(7)$1" -> "np(7)"	[label=logical_xor];
 	"mask3(7)$1" -> "mask3(7)$1"	[label=logical_xor];
@@ -217,25 +217,25 @@ digraph "" {
 	"k(8)" -> "2(8)"	[label=iteratorOf];
 	"temp(8)$0" -> "0(8)"	[label=concatenate];
 	"temp(8)$0" -> "np(8)"	[label=concatenate];
-	"temp(8)$0" -> "[<_ast.Subscript object at 0x12fc49760>, <_ast.Call object at 0x12fc49d90>](8)"	[label=concatenate];
+	"temp(8)$0" -> "[<_ast.Subscript object at 0x7fd4c04cce50>, <_ast.Call object at 0x7fd4c04cc9a0>](8)"	[label=concatenate];
 	"mask(8)$0" -> "temp(8)$0"	[label=logical_or];
 	"mask(8)$0" -> "np(8)"	[label=logical_or];
 	"mask(8)$0" -> "mask(8)$0"	[label=logical_or];
 	"temp(8)$1" -> "0(8)"	[label=concatenate];
 	"temp(8)$1" -> "np(8)"	[label=concatenate];
-	"temp(8)$1" -> "[<_ast.Call object at 0x12f8a3370>, <_ast.Subscript object at 0x12f8a3820>](8)"	[label=concatenate];
+	"temp(8)$1" -> "[<_ast.Call object at 0x7fd4c04cc8b0>, <_ast.Subscript object at 0x7fd4c04cc6a0>](8)"	[label=concatenate];
 	"mask(8)$1" -> "np(8)"	[label=logical_or];
 	"mask(8)$1" -> "temp(8)$1"	[label=logical_or];
 	"mask(8)$1" -> "mask(8)$1"	[label=logical_or];
 	"temp(8)$2" -> "1(8)"	[label=concatenate];
 	"temp(8)$2" -> "np(8)"	[label=concatenate];
-	"temp(8)$2" -> "[<_ast.Subscript object at 0x12f8a33d0>, <_ast.Call object at 0x12f8a3a90>](8)"	[label=concatenate];
+	"temp(8)$2" -> "[<_ast.Subscript object at 0x7fd500819400>, <_ast.Call object at 0x7fd5008194f0>](8)"	[label=concatenate];
 	"mask(8)$2" -> "np(8)"	[label=logical_or];
 	"mask(8)$2" -> "temp(8)$2"	[label=logical_or];
 	"mask(8)$2" -> "mask(8)$2"	[label=logical_or];
 	"temp(8)$3" -> "1(8)"	[label=concatenate];
 	"temp(8)$3" -> "np(8)"	[label=concatenate];
-	"temp(8)$3" -> "[<_ast.Call object at 0x12fad9d60>, <_ast.Subscript object at 0x12fad9160>](8)"	[label=concatenate];
+	"temp(8)$3" -> "[<_ast.Call object at 0x7fd500819bb0>, <_ast.Subscript object at 0x7fd500819d90>](8)"	[label=concatenate];
 	"mask(8)$3" -> "np(8)"	[label=logical_or];
 	"mask(8)$3" -> "temp(8)$3"	[label=logical_or];
 	"mask(8)$3" -> "mask(8)$3"	[label=logical_or];
@@ -246,12 +246,12 @@ digraph "" {
 	"bar(0)$0" -> "(0)"	[label=bar];
 	"bar(0)$0" -> "train2(0)$8"	[label=bar];
 	"bar(0)$0" -> "plt(0)$0"	[label=bar];
-	"bar(0)$0" -> "[<_ast.Constant object at 0x12fad99a0>, <_ast.Constant object at 0x12fad9a60>, <_ast.Constant object at 0x12fad9a30>, <_ast.Constant \
-object at 0x12fad99d0>](0)"	[label=bar];
+	"bar(0)$0" -> "[<_ast.Constant object at 0x7fd490292940>, <_ast.Constant object at 0x7fd490292610>, <_ast.Constant object at 0x7fd490292d60>, <_\
+ast.Constant object at 0x7fd490292d90>](0)"	[label=bar];
 	"bar(0)$0" -> "100(0)"	[label=bar];
 	"bar(0)$0" -> "5(0)"	[label=bar];
-	"[<_ast.Constant object at 0x12fad99a0>, <_ast.Constant object at 0x12fad9a60>, <_ast.Constant object at 0x12fad9a30>, <_ast.Constant \
-object at 0x12fad99d0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd490292940>, <_ast.Constant object at 0x7fd490292610>, <_ast.Constant object at 0x7fd490292d60>, <_\
+ast.Constant object at 0x7fd490292d90>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"100(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"5(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"plt(0)$1" -> "plt(0)$0"	[label=title];
@@ -264,10 +264,10 @@ object at 0x12fad99d0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "Defect Type(0)"	[label=xlabel];
 	"Defect Type(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "plt(0)$3"	[label=xticks];
-	"plt(0)$4" -> "[<_ast.Constant object at 0x12f9a3310>, <_ast.Constant object at 0x12f9a3340>, <_ast.Constant object at 0x12f9a3370>, <_ast.Constant \
-object at 0x12f9a33a0>](0)"	[label=xticks];
-	"[<_ast.Constant object at 0x12f9a3310>, <_ast.Constant object at 0x12f9a3340>, <_ast.Constant object at 0x12f9a3370>, <_ast.Constant \
-object at 0x12f9a33a0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"plt(0)$4" -> "[<_ast.Constant object at 0x7fd490292df0>, <_ast.Constant object at 0x7fd490292550>, <_ast.Constant object at 0x7fd490292310>, <_\
+ast.Constant object at 0x7fd490292460>](0)"	[label=xticks];
+	"[<_ast.Constant object at 0x7fd490292df0>, <_ast.Constant object at 0x7fd490292550>, <_ast.Constant object at 0x7fd490292310>, <_\
+ast.Constant object at 0x7fd490292460>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"rect(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"rect(0)" -> "bar(0)$0"	[label=iteratorOf];
 	"height(0)$0" -> "rect(0)"	[label=get_height];
@@ -318,17 +318,9 @@ object at 0x12f9a33a0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"True(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"filenames(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"Images and masks from our Data Generator(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"print[0]" -> "Images and masks from our Data Generator(0)"	[label=print];
-	"print[0]" -> "KEY: yellow=defect1, green=defect2, blue=defect3, magenta=defect4(0)"	[label=print];
-	"print[0]" -> "Plotting predictions...(0)"	[label=print];
-	"print[0]" -> "######################################(0)"	[label=print];
-	"print[0]" -> "## Threshold =(0)"	[label=print];
-	"print[0]" -> "With threshold =(0)"	[label=print];
+	"print[134/0]" -> "Images and masks from our Data Generator(0)"	[label=print];
 	"KEY: yellow=defect1, green=defect2, blue=defect3, magenta=defect4(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"Plotting predictions...(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"######################################(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"## Threshold =(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"With threshold =(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"print[135/0]" -> "KEY: yellow=defect1, green=defect2, blue=defect3, magenta=defect4(0)"	[label=print];
 	"enumerate(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"i(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"i(0)" -> "ImageId(0)"	[label=iteratorOf];
@@ -525,6 +517,9 @@ object at 0x12f9a33a0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"preds(0)$0" -> "1(0)"	[label=predict_generator];
 	"preds(0)$0" -> "model(0)$1"	[label=predict_generator];
 	"preds(0)$0" -> "valid_batches(0)$1"	[label=predict_generator];
+	"Plotting predictions...(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"print[204/0]" -> "Plotting predictions...(0)"	[label=print];
+	"print[205/0]" -> "KEY: yellow=defect1, green=defect2, blue=defect3, magenta=defect4(0)"	[label=print];
 	"plt(0)$23" -> "plt(0)$22"	[label=figure];
 	"plt(0)$24" -> "1(0)"	[label=subplot];
 	"plt(0)$24" -> "2(0)"	[label=subplot];
@@ -630,6 +625,8 @@ object at 0x12f9a33a0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"preds(0)$1" -> "1(0)"	[label=predict_generator];
 	"preds(0)$1" -> "model(0)$1"	[label=predict_generator];
 	"preds(0)$1" -> "valid_batches(0)$3"	[label=predict_generator];
+	"print[254/0]" -> "Plotting predictions...(0)"	[label=print];
+	"print[255/0]" -> "KEY: yellow=defect1, green=defect2, blue=defect3, magenta=defect4(0)"	[label=print];
 	"plt(0)$35" -> "plt(0)$34"	[label=figure];
 	"plt(0)$36" -> "1(0)"	[label=subplot];
 	"plt(0)$36" -> "2(0)"	[label=subplot];
@@ -729,24 +726,27 @@ object at 0x12f9a33a0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
 	"250(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"pix_min(0)$0" -> "250(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8961f0>, <_ast.Constant object at 0x12f896220>, <_ast.Constant object at 0x12f896250>, <_ast.Constant \
-object at 0x12f8960d0>, <_ast.Constant object at 0x12f896100>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500814b50>, <_ast.Constant object at 0x7fd500814b20>, <_ast.Constant object at 0x7fd500814ac0>, <_\
+ast.Constant object at 0x7fd500814a00>, <_ast.Constant object at 0x7fd500814f40>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"THRESHOLD(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"THRESHOLD(0)" -> "[<_ast.Constant object at 0x12f8961f0>, <_ast.Constant object at 0x12f896220>, <_ast.Constant object at 0x12f896250>, <_ast.Constant \
-object at 0x12f8960d0>, <_ast.Constant object at 0x12f896100>](0)"	[label=iteratorOf];
-	"print[1]" -> "THRESHOLD(0)"	[label=print];
+	"THRESHOLD(0)" -> "[<_ast.Constant object at 0x7fd500814b50>, <_ast.Constant object at 0x7fd500814b20>, <_ast.Constant object at 0x7fd500814ac0>, <_\
+ast.Constant object at 0x7fd500814a00>, <_ast.Constant object at 0x7fd500814f40>](0)"	[label=iteratorOf];
+	"######################################(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"print[305/4]" -> "######################################(0)"	[label=print];
+	"## Threshold =(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"print[306/4]" -> "THRESHOLD(0)"	[label=print];
+	"print[306/4]" -> "## Threshold =(0)"	[label=print];
+	"print[306/4]" -> "displayed below ##(0)"	[label=print];
 	"displayed below ##(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "displayed below ##(0)"	[label=print];
-	"print[2]" -> ", defect(0)"	[label=print];
-	", defect(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"[<_ast.List object at 0x12f896550>, <_ast.List object at 0x12f896400>, <_ast.List object at 0x12f8964f0>, <_ast.List object at 0x12f896640>](\
-0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"correct(0)$0" -> "[<_ast.List object at 0x12f896550>, <_ast.List object at 0x12f896400>, <_ast.List object at 0x12f8964f0>, <_ast.List object at 0x12f896640>](\
-0)"	[label=assignedFrom];
-	"[<_ast.List object at 0x12f896670>, <_ast.List object at 0x12f8966a0>, <_ast.List object at 0x12f896700>, <_ast.List object at 0x12f896760>](\
-0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"incorrect(0)$0" -> "[<_ast.List object at 0x12f896670>, <_ast.List object at 0x12f8966a0>, <_ast.List object at 0x12f896700>, <_ast.List object at 0x12f896760>](\
-0)"	[label=assignedFrom];
+	"print[307/4]" -> "######################################(0)"	[label=print];
+	"[<_ast.List object at 0x7fd50082e340>, <_ast.List object at 0x7fd50082e370>, <_ast.List object at 0x7fd50082e3a0>, <_ast.List object \
+at 0x7fd50082e3d0>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"correct(0)$0" -> "[<_ast.List object at 0x7fd50082e340>, <_ast.List object at 0x7fd50082e370>, <_ast.List object at 0x7fd50082e3a0>, <_ast.List object \
+at 0x7fd50082e3d0>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd50082e4f0>, <_ast.List object at 0x7fd50082e520>, <_ast.List object at 0x7fd50082e550>, <_ast.List object \
+at 0x7fd50082e580>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"incorrect(0)$0" -> "[<_ast.List object at 0x7fd50082e4f0>, <_ast.List object at 0x7fd50082e520>, <_ast.List object at 0x7fd50082e550>, <_ast.List object \
+at 0x7fd50082e580>](0)"	[label=assignedFrom];
 	"f(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"f(0)" -> "ImageId(0)"	[label=iteratorOf];
 	"f(0)" -> "train2(0)$8"	[label=iteratorOf];
@@ -773,11 +773,11 @@ object at 0x12f8960d0>, <_ast.Constant object at 0x12f896100>](0)"	[label=iterat
 	"correct(0)$1" -> "correct(0)$0"	[label=append];
 	"correct(0)$1" -> "sums(0)$0"	[label=append];
 	"plt(0)$47" -> "plt(0)$46"	[label=figure];
-	"[<_ast.Constant object at 0x12f87a370>, <_ast.Constant object at 0x12f87a3a0>, <_ast.Constant object at 0x12f87a3d0>, <_ast.Constant \
-object at 0x12f87a400>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500856070>, <_ast.Constant object at 0x7fd5008560a0>, <_ast.Constant object at 0x7fd5008560d0>, <_\
+ast.Constant object at 0x7fd500856100>](0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"limit(0)$0" -> "j(0)"	[label=assignedFrom];
-	"limit(0)$0" -> "[<_ast.Constant object at 0x12f87a370>, <_ast.Constant object at 0x12f87a3a0>, <_ast.Constant object at 0x12f87a3d0>, <_ast.Constant \
-object at 0x12f87a400>](0)"	[label=assignedFrom];
+	"limit(0)$0" -> "[<_ast.Constant object at 0x7fd500856070>, <_ast.Constant object at 0x7fd5008560a0>, <_ast.Constant object at 0x7fd5008560d0>, <_\
+ast.Constant object at 0x7fd500856100>](0)"	[label=assignedFrom];
 	"plt(0)$48" -> "1(0)"	[label=subplot];
 	"plt(0)$48" -> "2(0)"	[label=subplot];
 	"plt(0)$48" -> "j(0)"	[label=subplot];
@@ -809,22 +809,23 @@ object at 0x12f87a400>](0)"	[label=assignedFrom];
 	"c2(0)$0" -> "np(0)"	[label=array];
 	"c2(0)$0" -> "j(0)"	[label=array];
 	"c2(0)$0" -> "incorrect(0)$1"	[label=array];
-	"print[3]" -> "j(0)"	[label=print];
-	"print[4]" -> "1(0)"	[label=print];
+	"With threshold =(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
+	"print[329/8]" -> "0(0)"	[label=print];
+	"print[329/8]" -> "1(0)"	[label=print];
+	"print[329/8]" -> "len(0)"	[label=print];
+	"print[329/8]" -> "j(0)"	[label=print];
+	"print[329/8]" -> "THRESHOLD(0)"	[label=print];
+	"print[329/8]" -> "c1(0)$0"	[label=print];
+	"print[329/8]" -> "c2(0)$0"	[label=print];
+	"print[329/8]" -> "With threshold =(0)"	[label=print];
+	"print[329/8]" -> ", defect(0)"	[label=print];
+	"print[329/8]" -> "has(0)"	[label=print];
+	"print[329/8]" -> "correct and(0)"	[label=print];
+	"print[329/8]" -> "incorrect masks(0)"	[label=print];
+	", defect(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
 	"has(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"print[5]" -> "has(0)"	[label=print];
-	"print[6]" -> "len(0)"	[label=print];
-	"print[7]" -> "c1(0)$0"	[label=print];
-	"print[8]" -> "c1(0)$0"	[label=print];
-	"print[9]" -> "0(0)"	[label=print];
 	"correct and(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"print[10]" -> "correct and(0)"	[label=print];
-	"print[11]" -> "len(0)"	[label=print];
-	"print[12]" -> "c2(0)$0"	[label=print];
-	"print[13]" -> "c2(0)$0"	[label=print];
-	"print[14]" -> "0(0)"	[label=print];
 	"incorrect masks(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];
-	"print[15]" -> "incorrect masks(0)"	[label=print];
 	"model(0)$2" -> "model(0)$1"	[label=save];
 	"model(0)$2" -> "UNET.h5(0)"	[label=save];
 	"UNET.h5(0)" -> "keras-unet-with-eda.ipynb"	[label=appearsIn];

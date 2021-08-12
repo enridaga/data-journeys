@@ -96,26 +96,26 @@ digraph "" {
 	" Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	" Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	" Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f957f10>, <_ast.Constant object at 0x12f957fd0>, <_ast.Constant object at 0x12f9575e0>, <_ast.Constant \
-object at 0x12f957220>, <_ast.Constant object at 0x12f957880>, <_ast.Constant object at 0x12f957e20>, <_ast.Constant object at 0x12f957b50>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"categoryVariableList(0)$0" -> "[<_ast.Constant object at 0x12f957f10>, <_ast.Constant object at 0x12f957fd0>, <_ast.Constant object at 0x12f9575e0>, <_ast.Constant \
-object at 0x12f957220>, <_ast.Constant object at 0x12f957880>, <_ast.Constant object at 0x12f957e20>, <_ast.Constant object at 0x12f957b50>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832760>, <_\
+ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832af0>, <_ast.Constant object at 0x7fd500832640>, <_ast.Constant \
+object at 0x7fd500832d90>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"categoryVariableList(0)$0" -> "[<_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832760>, <_\
+ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832af0>, <_ast.Constant object at 0x7fd500832640>, <_ast.Constant \
+object at 0x7fd500832d90>](0)"	[label=assignedFrom];
 	"var(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"var(0)" -> "categoryVariableList(0)$0"	[label=iteratorOf];
 	"var(0)" -> "categoricalFeatureNames(0)$0"	[label=iteratorOf];
-	"categoricalFeatureNames(0)$0" -> "[<_ast.Constant object at 0x12fc26580>, <_ast.Constant object at 0x12fc265b0>, <_ast.Constant object at 0x12fc265e0>, <_ast.Constant \
-object at 0x12fc26610>, <_ast.Constant object at 0x12fc26640>, <_ast.Constant object at 0x12fc26670>, <_ast.Constant object at 0x12fc266a0>, <_\
-ast.Constant object at 0x12fc266d0>](0)"	[label=assignedFrom];
+	"categoricalFeatureNames(0)$0" -> "[<_ast.Constant object at 0x7fd50082f280>, <_ast.Constant object at 0x7fd50082f2b0>, <_ast.Constant object at 0x7fd50082f2e0>, <_\
+ast.Constant object at 0x7fd50082f310>, <_ast.Constant object at 0x7fd50082f340>, <_ast.Constant object at 0x7fd50082f370>, <_ast.Constant \
+object at 0x7fd50082f3a0>, <_ast.Constant object at 0x7fd50082f3d0>](0)"	[label=assignedFrom];
 	"dailyData(0)$8" -> "dailyData(0)$7"	[label=astype];
 	"dailyData(0)$8" -> "var(0)"	[label=astype];
 	"dailyData(0)$8" -> "category(0)"	[label=astype];
 	"category(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"dailyData(0)$9" -> "1(0)"	[label=drop];
 	"dailyData(0)$9" -> "dailyData(0)$8"	[label=drop];
-	"dailyData(0)$9" -> "[<_ast.Constant object at 0x12fc4f100>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc4f100>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"dailyData(0)$9" -> "[<_ast.Constant object at 0x7fd5007f06a0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd5007f06a0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"dataTypeDf(0)$0" -> "pd(0)$0"	[label=rename];
 	"dataTypeDf(0)$0" -> "0(0)"	[label=rename];
 	"dataTypeDf(0)$0" -> "dailyData(0)$9"	[label=rename];
@@ -157,38 +157,18 @@ ast.Constant object at 0x12fc266d0>](0)"	[label=assignedFrom];
 	"dailyDataWithoutOutliers(0)$0" -> "dailyData(0)$9"	[label=assignedFrom];
 	"dailyDataWithoutOutliers(0)$0" -> "count(0)"	[label=assignedFrom];
 	"Shape Of The Before Ouliers: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"print[0]" -> "Shape Of The Before Ouliers: (0)"	[label=print];
-	"print[0]" -> "Shape Of The After Ouliers: (0)"	[label=print];
-	"print[0]" -> "RMSLE Value For Linear Regression: (0)"	[label=print];
-	"print[0]" -> "grid_ridge_m(0)$1"	[label=print];
-	"print[0]" -> "RMSLE Value For Ridge Regression: (0)"	[label=print];
-	"print[0]" -> "grid_lasso_m(0)$1"	[label=print];
-	"print[0]" -> "RMSLE Value For Lasso Regression: (0)"	[label=print];
-	"print[0]" -> "RMSLE Value For Random Forest: (0)"	[label=print];
-	"print[0]" -> "RMSLE Value For Gradient Boost: (0)"	[label=print];
+	"print[86/0]" -> "dailyData(0)$9"	[label=print];
+	"print[86/0]" -> "Shape Of The Before Ouliers: (0)"	[label=print];
 	"Shape Of The After Ouliers: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"RMSLE Value For Linear Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"grid_ridge_m(0)$1" -> "dataTrain(0)$2"	[label=fit];
-	"grid_ridge_m(0)$1" -> "yLabelsLog(0)$1"	[label=fit];
-	"grid_ridge_m(0)$1" -> "grid_ridge_m(0)$0"	[label=fit];
-	"RMSLE Value For Ridge Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"grid_lasso_m(0)$1" -> "dataTrain(0)$2"	[label=fit];
-	"grid_lasso_m(0)$1" -> "yLabelsLog(0)$2"	[label=fit];
-	"grid_lasso_m(0)$1" -> "grid_lasso_m(0)$0"	[label=fit];
-	"RMSLE Value For Lasso Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"RMSLE Value For Random Forest: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"RMSLE Value For Gradient Boost: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"print[1]" -> "dailyData(0)$9"	[label=print];
-	"print[1]" -> "dailyDataWithoutOutliers(0)$0"	[label=print];
-	"print[1]" -> "rmsle(0)"	[label=print];
-	"rmsle(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[88/0]" -> "dailyDataWithoutOutliers(0)$0"	[label=print];
+	"print[88/0]" -> "Shape Of The After Ouliers: (0)"	[label=print];
 	"corrMatt(0)$0" -> "dailyData(0)$9"	[label=corr];
-	"corrMatt(0)$0" -> "[<_ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f951100>, <_ast.Constant object at 0x12f951df0>, <_ast.Constant \
-object at 0x12f9513a0>, <_ast.Constant object at 0x12f9515e0>, <_ast.Constant object at 0x12f951c70>, <_ast.Constant object at 0x12f9512e0>](\
-0)"	[label=corr];
-	"[<_ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f951100>, <_ast.Constant object at 0x12f951df0>, <_ast.Constant \
-object at 0x12f9513a0>, <_ast.Constant object at 0x12f9515e0>, <_ast.Constant object at 0x12f951c70>, <_ast.Constant object at 0x12f9512e0>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"corrMatt(0)$0" -> "[<_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902ab070>, <_\
+ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant \
+object at 0x7fd4902ab6d0>](0)"	[label=corr];
+	"[<_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902ab070>, <_\
+ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant \
+object at 0x7fd4902ab6d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"mask(0)$0" -> "np(0)"	[label=array];
 	"mask(0)$0" -> "corrMatt(0)$0"	[label=array];
 	"False(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
@@ -250,20 +230,20 @@ object at 0x12f9513a0>, <_ast.Constant object at 0x12f9515e0>, <_ast.Constant ob
 	"fig(0)$11" -> "12(0)"	[label=set_size_inches];
 	"fig(0)$11" -> "20(0)"	[label=set_size_inches];
 	"fig(0)$11" -> "fig(0)$10"	[label=set_size_inches];
-	"[<_ast.Constant object at 0x12f894490>, <_ast.Constant object at 0x12f8944c0>, <_ast.Constant object at 0x12f8944f0>, <_ast.Constant \
-object at 0x12f894520>, <_ast.Constant object at 0x12f894460>, <_ast.Constant object at 0x12f894070>, <_ast.Constant object at 0x12f8943a0>, <_\
-ast.Constant object at 0x12f8943d0>, <_ast.Constant object at 0x12f894400>, <_ast.Constant object at 0x12f894550>, <_ast.Constant \
-object at 0x12f8945b0>, <_ast.Constant object at 0x12f894610>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"sortOrder(0)$0" -> "[<_ast.Constant object at 0x12f894490>, <_ast.Constant object at 0x12f8944c0>, <_ast.Constant object at 0x12f8944f0>, <_ast.Constant \
-object at 0x12f894520>, <_ast.Constant object at 0x12f894460>, <_ast.Constant object at 0x12f894070>, <_ast.Constant object at 0x12f8943a0>, <_\
-ast.Constant object at 0x12f8943d0>, <_ast.Constant object at 0x12f894400>, <_ast.Constant object at 0x12f894550>, <_ast.Constant \
-object at 0x12f8945b0>, <_ast.Constant object at 0x12f894610>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f894580>, <_ast.Constant object at 0x12f8946d0>, <_ast.Constant object at 0x12f894af0>, <_ast.Constant \
-object at 0x12f8940d0>, <_ast.Constant object at 0x12f894730>, <_ast.Constant object at 0x12f894790>, <_ast.Constant object at 0x12f8947c0>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"hueOrder(0)$0" -> "[<_ast.Constant object at 0x12f894580>, <_ast.Constant object at 0x12f8946d0>, <_ast.Constant object at 0x12f894af0>, <_ast.Constant \
-object at 0x12f8940d0>, <_ast.Constant object at 0x12f894730>, <_ast.Constant object at 0x12f894790>, <_ast.Constant object at 0x12f8947c0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b280>, <_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b460>, <_\
+ast.Constant object at 0x7fd50085b550>, <_ast.Constant object at 0x7fd50085b700>, <_ast.Constant object at 0x7fd50085b610>, <_ast.Constant \
+object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd4d0583700>, <_ast.Constant object at 0x7fd4d0583070>, <_ast.Constant object \
+at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d05830d0>, <_ast.Constant object at 0x7fd4d0583100>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"sortOrder(0)$0" -> "[<_ast.Constant object at 0x7fd50085b280>, <_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b460>, <_\
+ast.Constant object at 0x7fd50085b550>, <_ast.Constant object at 0x7fd50085b700>, <_ast.Constant object at 0x7fd50085b610>, <_ast.Constant \
+object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd4d0583700>, <_ast.Constant object at 0x7fd4d0583070>, <_ast.Constant object \
+at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d05830d0>, <_ast.Constant object at 0x7fd4d0583100>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d05831f0>, <_ast.Constant object at 0x7fd4d0583220>, <_ast.Constant object at 0x7fd4d0583250>, <_\
+ast.Constant object at 0x7fd4d05831c0>, <_ast.Constant object at 0x7fd4d0583160>, <_ast.Constant object at 0x7fd4d0583280>, <_ast.Constant \
+object at 0x7fd4d05836d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"hueOrder(0)$0" -> "[<_ast.Constant object at 0x7fd4d05831f0>, <_ast.Constant object at 0x7fd4d0583220>, <_ast.Constant object at 0x7fd4d0583250>, <_\
+ast.Constant object at 0x7fd4d05831c0>, <_ast.Constant object at 0x7fd4d0583160>, <_ast.Constant object at 0x7fd4d0583280>, <_ast.Constant \
+object at 0x7fd4d05836d0>](0)"	[label=assignedFrom];
 	"monthAggregated(0)$0" -> "pd(0)$0"	[label=reset_index];
 	"monthAggregated(0)$0" -> "dailyData(0)$9"	[label=reset_index];
 	"monthAggregated(0)$0" -> "count(0)"	[label=reset_index];
@@ -277,9 +257,9 @@ object at 0x12f8940d0>, <_ast.Constant object at 0x12f894730>, <_ast.Constant ob
 	"hourAggregated(0)$0" -> "pd(0)$0"	[label=reset_index];
 	"hourAggregated(0)$0" -> "dailyData(0)$9"	[label=reset_index];
 	"hourAggregated(0)$0" -> "count(0)"	[label=reset_index];
-	"hourAggregated(0)$0" -> "[<_ast.Constant object at 0x12f9a4640>, <_ast.Constant object at 0x12f9a4670>](0)"	[label=reset_index];
+	"hourAggregated(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af340>, <_ast.Constant object at 0x7fd4c04af370>](0)"	[label=reset_index];
 	"hourAggregated(0)$0" -> "True(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f9a4640>, <_ast.Constant object at 0x12f9a4670>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04af340>, <_ast.Constant object at 0x7fd4c04af370>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"True(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"sn(0)$12" -> "sn(0)$11"	[label=pointplot];
 	"ax2(0)$2" -> "ax2(0)$1"	[label=set];
@@ -287,24 +267,24 @@ object at 0x12f8940d0>, <_ast.Constant object at 0x12f894730>, <_ast.Constant ob
 	"hourAggregated(0)$1" -> "dailyData(0)$9"	[label=reset_index];
 	"hourAggregated(0)$1" -> "count(0)"	[label=reset_index];
 	"hourAggregated(0)$1" -> "True(0)"	[label=reset_index];
-	"hourAggregated(0)$1" -> "[<_ast.Constant object at 0x12fc16490>, <_ast.Constant object at 0x12fc164c0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fc16490>, <_ast.Constant object at 0x12fc164c0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"hourAggregated(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ab190>, <_ast.Constant object at 0x7fd4c04ab1c0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4c04ab190>, <_ast.Constant object at 0x7fd4c04ab1c0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"sn(0)$13" -> "sn(0)$12"	[label=pointplot];
 	"ax3(0)$2" -> "ax3(0)$1"	[label=set];
 	"hourTransformed(0)$0" -> "pd(0)$0"	[label=melt];
 	"hourTransformed(0)$0" -> "dailyData(0)$9"	[label=melt];
-	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x12fc3c250>, <_ast.Constant object at 0x12fc3c280>, <_ast.Constant object at 0x12fc3c2b0>](0)"	[label=melt];
-	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x12fc3c3a0>](0)"	[label=melt];
-	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x12fc3c460>, <_ast.Constant object at 0x12fc3c490>](0)"	[label=melt];
-	"[<_ast.Constant object at 0x12fc3c250>, <_ast.Constant object at 0x12fc3c280>, <_ast.Constant object at 0x12fc3c2b0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc3c3a0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc3c460>, <_ast.Constant object at 0x12fc3c490>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x7fd4c04abf10>, <_ast.Constant object at 0x7fd4c04abf40>, <_ast.Constant object at 0x7fd4c04abf70>](0)"	[label=melt];
+	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a80a0>](0)"	[label=melt];
+	"hourTransformed(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8160>, <_ast.Constant object at 0x7fd4c04a8190>](0)"	[label=melt];
+	"[<_ast.Constant object at 0x7fd4c04abf10>, <_ast.Constant object at 0x7fd4c04abf40>, <_ast.Constant object at 0x7fd4c04abf70>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a80a0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8160>, <_ast.Constant object at 0x7fd4c04a8190>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"hourAggregated(0)$2" -> "pd(0)$0"	[label=reset_index];
 	"hourAggregated(0)$2" -> "True(0)"	[label=reset_index];
 	"hourAggregated(0)$2" -> "hourTransformed(0)$0"	[label=reset_index];
-	"hourAggregated(0)$2" -> "[<_ast.Constant object at 0x12fc3c760>, <_ast.Constant object at 0x12fc3c790>](0)"	[label=reset_index];
+	"hourAggregated(0)$2" -> "[<_ast.Constant object at 0x7fd4c04a8460>, <_ast.Constant object at 0x7fd4c04a8490>](0)"	[label=reset_index];
 	"hourAggregated(0)$2" -> "value(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fc3c760>, <_ast.Constant object at 0x12fc3c790>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8460>, <_ast.Constant object at 0x7fd4c04a8490>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"value(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"sn(0)$14" -> "sn(0)$13"	[label=pointplot];
 	"ax4(0)$1" -> "ax4(0)$0"	[label=set];
@@ -352,12 +332,12 @@ object at 0x12f8940d0>, <_ast.Constant object at 0x12f894730>, <_ast.Constant ob
 	"dataWindNot0(0)$0" -> "0(0)"	[label=assignedFrom];
 	"dataWindNot0(0)$0" -> "data(0)$7"	[label=assignedFrom];
 	"dataWindNot0(0)$0" -> "windspeed(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc317f0>, <_ast.Constant object at 0x12fc31820>, <_ast.Constant object at 0x12fc31850>, <_ast.Constant \
-object at 0x12fc31880>, <_ast.Constant object at 0x12fc318b0>, <_ast.Constant object at 0x12fc318e0>, <_ast.Constant object at 0x12fc31910>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"windColumns(0)$0" -> "[<_ast.Constant object at 0x12fc317f0>, <_ast.Constant object at 0x12fc31820>, <_ast.Constant object at 0x12fc31850>, <_ast.Constant \
-object at 0x12fc31880>, <_ast.Constant object at 0x12fc318b0>, <_ast.Constant object at 0x12fc318e0>, <_ast.Constant object at 0x12fc31910>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008344f0>, <_ast.Constant object at 0x7fd500834520>, <_ast.Constant object at 0x7fd500834550>, <_\
+ast.Constant object at 0x7fd500834580>, <_ast.Constant object at 0x7fd5008345b0>, <_ast.Constant object at 0x7fd5008345e0>, <_ast.Constant \
+object at 0x7fd500834610>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"windColumns(0)$0" -> "[<_ast.Constant object at 0x7fd5008344f0>, <_ast.Constant object at 0x7fd500834520>, <_ast.Constant object at 0x7fd500834550>, <_\
+ast.Constant object at 0x7fd500834580>, <_ast.Constant object at 0x7fd5008345b0>, <_ast.Constant object at 0x7fd5008345e0>, <_ast.Constant \
+object at 0x7fd500834610>](0)"	[label=assignedFrom];
 	"rfModel_wind(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"rfModel_wind(0)$0" -> "windspeed(0)"	[label=fit];
 	"rfModel_wind(0)$0" -> "dataWindNot0(0)$0"	[label=fit];
@@ -373,30 +353,30 @@ object at 0x12fc31880>, <_ast.Constant object at 0x12fc318b0>, <_ast.Constant ob
 	"data(0)$9" -> "data(0)$8"	[label=reset_index];
 	"data(0)$10" -> "index(0)"	[label=drop];
 	"data(0)$10" -> "data(0)$9"	[label=drop];
-	"[<_ast.Constant object at 0x12fc26580>, <_ast.Constant object at 0x12fc265b0>, <_ast.Constant object at 0x12fc265e0>, <_ast.Constant \
-object at 0x12fc26610>, <_ast.Constant object at 0x12fc26640>, <_ast.Constant object at 0x12fc26670>, <_ast.Constant object at 0x12fc266a0>, <_\
-ast.Constant object at 0x12fc266d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc26790>, <_ast.Constant object at 0x12fc267c0>, <_ast.Constant object at 0x12fc267f0>, <_ast.Constant \
-object at 0x12fc26820>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"numericalFeatureNames(0)$0" -> "[<_ast.Constant object at 0x12fc26790>, <_ast.Constant object at 0x12fc267c0>, <_ast.Constant object at 0x12fc267f0>, <_ast.Constant \
-object at 0x12fc26820>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc26910>, <_ast.Constant object at 0x12fc26940>, <_ast.Constant object at 0x12fc26970>, <_ast.Constant \
-object at 0x12fc269a0>, <_ast.Constant object at 0x12fc269d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"dropFeatures(0)$0" -> "[<_ast.Constant object at 0x12fc26910>, <_ast.Constant object at 0x12fc26940>, <_ast.Constant object at 0x12fc26970>, <_ast.Constant \
-object at 0x12fc269a0>, <_ast.Constant object at 0x12fc269d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082f280>, <_ast.Constant object at 0x7fd50082f2b0>, <_ast.Constant object at 0x7fd50082f2e0>, <_\
+ast.Constant object at 0x7fd50082f310>, <_ast.Constant object at 0x7fd50082f340>, <_ast.Constant object at 0x7fd50082f370>, <_ast.Constant \
+object at 0x7fd50082f3a0>, <_ast.Constant object at 0x7fd50082f3d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082f490>, <_ast.Constant object at 0x7fd50082f4c0>, <_ast.Constant object at 0x7fd50082f4f0>, <_\
+ast.Constant object at 0x7fd50082f520>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"numericalFeatureNames(0)$0" -> "[<_ast.Constant object at 0x7fd50082f490>, <_ast.Constant object at 0x7fd50082f4c0>, <_ast.Constant object at 0x7fd50082f4f0>, <_\
+ast.Constant object at 0x7fd50082f520>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082f610>, <_ast.Constant object at 0x7fd50082f640>, <_ast.Constant object at 0x7fd50082f670>, <_\
+ast.Constant object at 0x7fd50082f6a0>, <_ast.Constant object at 0x7fd50082f6d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"dropFeatures(0)$0" -> "[<_ast.Constant object at 0x7fd50082f610>, <_ast.Constant object at 0x7fd50082f640>, <_ast.Constant object at 0x7fd50082f670>, <_\
+ast.Constant object at 0x7fd50082f6a0>, <_ast.Constant object at 0x7fd50082f6d0>](0)"	[label=assignedFrom];
 	"data(0)$11" -> "var(0)"	[label=astype];
 	"data(0)$11" -> "category(0)"	[label=astype];
 	"data(0)$11" -> "data(0)$10"	[label=astype];
 	"dataTrain(0)$1" -> "pd(0)$0"	[label=sort_values];
 	"dataTrain(0)$1" -> "count(0)"	[label=sort_values];
 	"dataTrain(0)$1" -> "data(0)$11"	[label=sort_values];
-	"dataTrain(0)$1" -> "[<_ast.Constant object at 0x12f8990d0>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f8990d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"dataTrain(0)$1" -> "[<_ast.Constant object at 0x7fd50082fdf0>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd50082fdf0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"dataTest(0)$1" -> "pd(0)$0"	[label=sort_values];
 	"dataTest(0)$1" -> "count(0)"	[label=sort_values];
 	"dataTest(0)$1" -> "data(0)$11"	[label=sort_values];
-	"dataTest(0)$1" -> "[<_ast.Constant object at 0x12f8994c0>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f8994c0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"dataTest(0)$1" -> "[<_ast.Constant object at 0x7fd50082b1c0>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd50082b1c0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"datetimecol(0)$0" -> "datetime(0)"	[label=assignedFrom];
 	"datetimecol(0)$0" -> "dataTest(0)$1"	[label=assignedFrom];
 	"yLabels(0)$0" -> "count(0)"	[label=assignedFrom];
@@ -459,66 +439,60 @@ object at 0x12fc269a0>, <_ast.Constant object at 0x12fc269d0>](0)"	[label=assign
 	"lModel(0)$0" -> "lModel(0)"	[label=fit];
 	"preds(0)$0" -> "dataTrain(0)$2"	[label=predict];
 	"preds(0)$0" -> "lModel(0)$0"	[label=predict];
-	"print[2]" -> "np(0)"	[label=print];
-	"print[3]" -> "yLabelsLog(0)$0"	[label=print];
-	"print[3]" -> "yLabelsLog(0)$1"	[label=print];
-	"print[3]" -> "yLabelsLog(0)$2"	[label=print];
-	"print[3]" -> "yLabelsLog(0)$3"	[label=print];
-	"print[3]" -> "yLabelsLog(0)$4"	[label=print];
-	"yLabelsLog(0)$1" -> "np(0)"	[label=log1p];
-	"yLabelsLog(0)$1" -> "yLabels(0)$0"	[label=log1p];
-	"yLabelsLog(0)$2" -> "np(0)"	[label=log1p];
-	"yLabelsLog(0)$2" -> "yLabels(0)$0"	[label=log1p];
-	"yLabelsLog(0)$3" -> "np(0)"	[label=log1p];
-	"yLabelsLog(0)$3" -> "yLabels(0)$0"	[label=log1p];
-	"yLabelsLog(0)$4" -> "np(0)"	[label=log1p];
-	"yLabelsLog(0)$4" -> "yLabels(0)$0"	[label=log1p];
-	"print[4]" -> "np(0)"	[label=print];
-	"print[5]" -> "preds(0)$0"	[label=print];
-	"print[5]" -> "preds(0)$1"	[label=print];
-	"print[5]" -> "preds(0)$2"	[label=print];
-	"print[5]" -> "preds(0)$3"	[label=print];
-	"print[5]" -> "preds(0)$4"	[label=print];
-	"preds(0)$1" -> "grid_ridge_m(0)$1"	[label=predict];
-	"preds(0)$1" -> "dataTrain(0)$2"	[label=predict];
-	"preds(0)$2" -> "grid_lasso_m(0)$1"	[label=predict];
-	"preds(0)$2" -> "dataTrain(0)$2"	[label=predict];
-	"preds(0)$3" -> "dataTrain(0)$2"	[label=predict];
-	"preds(0)$3" -> "rfModel(0)$1"	[label=predict];
-	"preds(0)$4" -> "dataTrain(0)$2"	[label=predict];
-	"preds(0)$4" -> "gbm(0)$1"	[label=predict];
-	"print[6]" -> "False(0)"	[label=print];
+	"RMSLE Value For Linear Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[274/0]" -> "np(0)"	[label=print];
+	"print[274/0]" -> "False(0)"	[label=print];
+	"print[274/0]" -> "yLabelsLog(0)$0"	[label=print];
+	"print[274/0]" -> "preds(0)$0"	[label=print];
+	"print[274/0]" -> "RMSLE Value For Linear Regression: (0)"	[label=print];
+	"print[274/0]" -> "rmsle(0)"	[label=print];
+	"rmsle(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"max_iter(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"ridge_params_(0)$0" -> "max_iter(0)"	[label=assignedFrom];
 	"ridge_params_(0)$0" -> "alpha(0)"	[label=assignedFrom];
-	"ridge_params_(0)$0" -> "[<_ast.Constant object at 0x12f895a30>](0)"	[label=assignedFrom];
-	"ridge_params_(0)$0" -> "[<_ast.Constant object at 0x12f895d60>, <_ast.Constant object at 0x12f895d90>, <_ast.Constant object at 0x12f895dc0>, <_ast.Constant \
-object at 0x12f895df0>, <_ast.Constant object at 0x12f895e20>, <_ast.Constant object at 0x12f895e50>, <_ast.Constant object at 0x12f895e80>, <_\
-ast.Constant object at 0x12f895eb0>, <_ast.Constant object at 0x12f895ee0>, <_ast.Constant object at 0x12f895f10>, <_ast.Constant \
-object at 0x12f895f40>, <_ast.Constant object at 0x12f895f70>, <_ast.Constant object at 0x12f895fa0>, <_ast.Constant object at 0x12f895fd0>](\
-0)"	[label=assignedFrom];
+	"ridge_params_(0)$0" -> "[<_ast.Constant object at 0x7fd5008289d0>](0)"	[label=assignedFrom];
+	"ridge_params_(0)$0" -> "[<_ast.Constant object at 0x7fd500828a30>, <_ast.Constant object at 0x7fd500828a60>, <_ast.Constant object at 0x7fd500828a90>, <_\
+ast.Constant object at 0x7fd500828ac0>, <_ast.Constant object at 0x7fd500828af0>, <_ast.Constant object at 0x7fd500828820>, <_ast.Constant \
+object at 0x7fd500828b20>, <_ast.Constant object at 0x7fd500828b50>, <_ast.Constant object at 0x7fd500828b80>, <_ast.Constant object \
+at 0x7fd500828bb0>, <_ast.Constant object at 0x7fd500828be0>, <_ast.Constant object at 0x7fd500828c10>, <_ast.Constant object at \
+0x7fd500828c40>, <_ast.Constant object at 0x7fd500828c70>](0)"	[label=assignedFrom];
 	"alpha(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f895a30>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f895d60>, <_ast.Constant object at 0x12f895d90>, <_ast.Constant object at 0x12f895dc0>, <_ast.Constant \
-object at 0x12f895df0>, <_ast.Constant object at 0x12f895e20>, <_ast.Constant object at 0x12f895e50>, <_ast.Constant object at 0x12f895e80>, <_\
-ast.Constant object at 0x12f895eb0>, <_ast.Constant object at 0x12f895ee0>, <_ast.Constant object at 0x12f895f10>, <_ast.Constant \
-object at 0x12f895f40>, <_ast.Constant object at 0x12f895f70>, <_ast.Constant object at 0x12f895fa0>, <_ast.Constant object at 0x12f895fd0>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
-	"rmsle_scorer(0)$0" -> "rmsle(0)"	[label=make_scorer];
+	"[<_ast.Constant object at 0x7fd5008289d0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500828a30>, <_ast.Constant object at 0x7fd500828a60>, <_ast.Constant object at 0x7fd500828a90>, <_\
+ast.Constant object at 0x7fd500828ac0>, <_ast.Constant object at 0x7fd500828af0>, <_ast.Constant object at 0x7fd500828820>, <_ast.Constant \
+object at 0x7fd500828b20>, <_ast.Constant object at 0x7fd500828b50>, <_ast.Constant object at 0x7fd500828b80>, <_ast.Constant object \
+at 0x7fd500828bb0>, <_ast.Constant object at 0x7fd500828be0>, <_ast.Constant object at 0x7fd500828c10>, <_ast.Constant object at \
+0x7fd500828c40>, <_ast.Constant object at 0x7fd500828c70>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"rmsle_scorer(0)$0" -> "False(0)"	[label=make_scorer];
 	"rmsle_scorer(0)$0" -> "metrics(0)"	[label=make_scorer];
+	"rmsle_scorer(0)$0" -> "rmsle(0)"	[label=make_scorer];
 	"ridge_m_(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"grid_ridge_m(0)$0" -> "5(0)"	[label=GridSearchCV];
 	"grid_ridge_m(0)$0" -> "ridge_params_(0)$0"	[label=GridSearchCV];
 	"grid_ridge_m(0)$0" -> "rmsle_scorer(0)$0"	[label=GridSearchCV];
 	"grid_ridge_m(0)$0" -> "ridge_m_(0)"	[label=GridSearchCV];
+	"yLabelsLog(0)$1" -> "np(0)"	[label=log1p];
+	"yLabelsLog(0)$1" -> "yLabels(0)$0"	[label=log1p];
+	"grid_ridge_m(0)$1" -> "dataTrain(0)$2"	[label=fit];
+	"grid_ridge_m(0)$1" -> "grid_ridge_m(0)$0"	[label=fit];
+	"grid_ridge_m(0)$1" -> "yLabelsLog(0)$1"	[label=fit];
+	"preds(0)$1" -> "dataTrain(0)$2"	[label=predict];
+	"preds(0)$1" -> "grid_ridge_m(0)$1"	[label=predict];
+	"print[295/0]" -> "grid_ridge_m(0)$1"	[label=print];
+	"RMSLE Value For Ridge Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[297/0]" -> "np(0)"	[label=print];
+	"print[297/0]" -> "False(0)"	[label=print];
+	"print[297/0]" -> "rmsle(0)"	[label=print];
+	"print[297/0]" -> "yLabelsLog(0)$1"	[label=print];
+	"print[297/0]" -> "preds(0)$1"	[label=print];
+	"print[297/0]" -> "RMSLE Value For Ridge Regression: (0)"	[label=print];
 	"fig(0)$12" -> "plt(0)"	[label=subplots];
 	"ax(0)$3" -> "plt(0)"	[label=subplots];
 	"fig(0)$13" -> "12(0)"	[label=set_size_inches];
 	"fig(0)$13" -> "5(0)"	[label=set_size_inches];
 	"fig(0)$13" -> "fig(0)$12"	[label=set_size_inches];
-	"df(0)$0" -> "grid_ridge_m(0)$1"	[label=DataFrame];
 	"df(0)$0" -> "pd(0)$1"	[label=DataFrame];
+	"df(0)$0" -> "grid_ridge_m(0)$1"	[label=DataFrame];
 	"df(0)$1" -> "x(0)"	[label=apply];
 	"df(0)$1" -> "alpha(0)"	[label=apply];
 	"df(0)$1" -> "df(0)$0"	[label=apply];
@@ -531,32 +505,47 @@ object at 0x12f895f40>, <_ast.Constant object at 0x12f895f70>, <_ast.Constant ob
 	"sn(0)$15" -> "sn(0)$14"	[label=pointplot];
 	"alpha(0)$0" -> "np(0)"	[label=Div];
 	"alpha(0)$0" -> "1(0)"	[label=Div];
-	"alpha(0)$0" -> "[<_ast.Constant object at 0x12f896f40>, <_ast.Constant object at 0x12f896fa0>, <_ast.Constant object at 0x12f896fd0>, <_ast.Constant \
-object at 0x12f896f70>, <_ast.Constant object at 0x12f896ee0>, <_ast.Constant object at 0x12f896f10>, <_ast.Constant object at 0x12f896e80>, <_\
-ast.Constant object at 0x12f8968b0>, <_ast.Constant object at 0x12f896820>, <_ast.Constant object at 0x12f896520>, <_ast.Constant \
-object at 0x12f896550>, <_ast.Constant object at 0x12f896580>, <_ast.Constant object at 0x12f8965b0>, <_ast.Constant object at 0x12f8965e0>](\
-0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f896f40>, <_ast.Constant object at 0x12f896fa0>, <_ast.Constant object at 0x12f896fd0>, <_ast.Constant \
-object at 0x12f896f70>, <_ast.Constant object at 0x12f896ee0>, <_ast.Constant object at 0x12f896f10>, <_ast.Constant object at 0x12f896e80>, <_\
-ast.Constant object at 0x12f8968b0>, <_ast.Constant object at 0x12f896820>, <_ast.Constant object at 0x12f896520>, <_ast.Constant \
-object at 0x12f896550>, <_ast.Constant object at 0x12f896580>, <_ast.Constant object at 0x12f8965b0>, <_ast.Constant object at 0x12f8965e0>](\
-0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"alpha(0)$0" -> "[<_ast.Constant object at 0x7fd500817a00>, <_ast.Constant object at 0x7fd500817a30>, <_ast.Constant object at 0x7fd500817a60>, <_\
+ast.Constant object at 0x7fd500817a90>, <_ast.Constant object at 0x7fd500817ac0>, <_ast.Constant object at 0x7fd500817af0>, <_ast.Constant \
+object at 0x7fd500817b20>, <_ast.Constant object at 0x7fd500817b50>, <_ast.Constant object at 0x7fd500817b80>, <_ast.Constant object \
+at 0x7fd500817bb0>, <_ast.Constant object at 0x7fd500817310>, <_ast.Constant object at 0x7fd500817be0>, <_ast.Constant object at \
+0x7fd500817c10>, <_ast.Constant object at 0x7fd500817c40>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500817a00>, <_ast.Constant object at 0x7fd500817a30>, <_ast.Constant object at 0x7fd500817a60>, <_\
+ast.Constant object at 0x7fd500817a90>, <_ast.Constant object at 0x7fd500817ac0>, <_ast.Constant object at 0x7fd500817af0>, <_ast.Constant \
+object at 0x7fd500817b20>, <_ast.Constant object at 0x7fd500817b50>, <_ast.Constant object at 0x7fd500817b80>, <_ast.Constant object \
+at 0x7fd500817bb0>, <_ast.Constant object at 0x7fd500817310>, <_ast.Constant object at 0x7fd500817be0>, <_ast.Constant object at \
+0x7fd500817c10>, <_ast.Constant object at 0x7fd500817c40>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"lasso_params_(0)$0" -> "max_iter(0)"	[label=assignedFrom];
 	"lasso_params_(0)$0" -> "alpha(0)$0"	[label=assignedFrom];
-	"lasso_params_(0)$0" -> "[<_ast.Constant object at 0x12f89b2e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89b2e0>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"lasso_params_(0)$0" -> "[<_ast.Constant object at 0x7fd500817d90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500817d90>](0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"lasso_m_(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"grid_lasso_m(0)$0" -> "5(0)"	[label=GridSearchCV];
 	"grid_lasso_m(0)$0" -> "rmsle_scorer(0)$0"	[label=GridSearchCV];
 	"grid_lasso_m(0)$0" -> "lasso_params_(0)$0"	[label=GridSearchCV];
 	"grid_lasso_m(0)$0" -> "lasso_m_(0)"	[label=GridSearchCV];
+	"yLabelsLog(0)$2" -> "np(0)"	[label=log1p];
+	"yLabelsLog(0)$2" -> "yLabels(0)$0"	[label=log1p];
+	"grid_lasso_m(0)$1" -> "dataTrain(0)$2"	[label=fit];
+	"grid_lasso_m(0)$1" -> "grid_lasso_m(0)$0"	[label=fit];
+	"grid_lasso_m(0)$1" -> "yLabelsLog(0)$2"	[label=fit];
+	"preds(0)$2" -> "dataTrain(0)$2"	[label=predict];
+	"preds(0)$2" -> "grid_lasso_m(0)$1"	[label=predict];
+	"print[330/0]" -> "grid_lasso_m(0)$1"	[label=print];
+	"RMSLE Value For Lasso Regression: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[332/0]" -> "np(0)"	[label=print];
+	"print[332/0]" -> "False(0)"	[label=print];
+	"print[332/0]" -> "rmsle(0)"	[label=print];
+	"print[332/0]" -> "yLabelsLog(0)$2"	[label=print];
+	"print[332/0]" -> "preds(0)$2"	[label=print];
+	"print[332/0]" -> "RMSLE Value For Lasso Regression: (0)"	[label=print];
 	"fig(0)$14" -> "plt(0)"	[label=subplots];
 	"ax(0)$4" -> "plt(0)"	[label=subplots];
 	"fig(0)$15" -> "12(0)"	[label=set_size_inches];
 	"fig(0)$15" -> "5(0)"	[label=set_size_inches];
 	"fig(0)$15" -> "fig(0)$14"	[label=set_size_inches];
-	"df(0)$3" -> "grid_lasso_m(0)$1"	[label=DataFrame];
 	"df(0)$3" -> "pd(0)$1"	[label=DataFrame];
+	"df(0)$3" -> "grid_lasso_m(0)$1"	[label=DataFrame];
 	"df(0)$4" -> "x(0)"	[label=apply];
 	"df(0)$4" -> "parameters(0)"	[label=apply];
 	"df(0)$4" -> "alpha(0)$0"	[label=apply];
@@ -567,9 +556,20 @@ object at 0x12f896550>, <_ast.Constant object at 0x12f896580>, <_ast.Constant ob
 	"sn(0)$16" -> "sn(0)$15"	[label=pointplot];
 	"100(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"rfModel(0)$0" -> "100(0)"	[label=RandomForestRegressor];
+	"yLabelsLog(0)$3" -> "np(0)"	[label=log1p];
+	"yLabelsLog(0)$3" -> "yLabels(0)$0"	[label=log1p];
 	"rfModel(0)$1" -> "dataTrain(0)$2"	[label=fit];
-	"rfModel(0)$1" -> "yLabelsLog(0)$3"	[label=fit];
 	"rfModel(0)$1" -> "rfModel(0)$0"	[label=fit];
+	"rfModel(0)$1" -> "yLabelsLog(0)$3"	[label=fit];
+	"preds(0)$3" -> "dataTrain(0)$2"	[label=predict];
+	"preds(0)$3" -> "rfModel(0)$1"	[label=predict];
+	"RMSLE Value For Random Forest: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[357/0]" -> "np(0)"	[label=print];
+	"print[357/0]" -> "False(0)"	[label=print];
+	"print[357/0]" -> "rmsle(0)"	[label=print];
+	"print[357/0]" -> "yLabelsLog(0)$3"	[label=print];
+	"print[357/0]" -> "preds(0)$3"	[label=print];
+	"print[357/0]" -> "RMSLE Value For Random Forest: (0)"	[label=print];
 	GradientBoostingRegressor -> "sklearn.ensemble"	[label=importedBy];
 	"GradientBoostingRegressor(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
 	"GradientBoostingRegressor(0)" -> GradientBoostingRegressor	[label=assignedFrom];
@@ -577,9 +577,20 @@ object at 0x12f896550>, <_ast.Constant object at 0x12f896580>, <_ast.Constant ob
 	"gbm(0)$0" -> "4000(0)"	[label=GradientBoostingRegressor];
 	"gbm(0)$0" -> "0.01(0)"	[label=GradientBoostingRegressor];
 	"0.01(0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"yLabelsLog(0)$4" -> "np(0)"	[label=log1p];
+	"yLabelsLog(0)$4" -> "yLabels(0)$0"	[label=log1p];
 	"gbm(0)$1" -> "dataTrain(0)$2"	[label=fit];
-	"gbm(0)$1" -> "yLabelsLog(0)$4"	[label=fit];
 	"gbm(0)$1" -> "gbm(0)$0"	[label=fit];
+	"gbm(0)$1" -> "yLabelsLog(0)$4"	[label=fit];
+	"preds(0)$4" -> "dataTrain(0)$2"	[label=predict];
+	"preds(0)$4" -> "gbm(0)$1"	[label=predict];
+	"RMSLE Value For Gradient Boost: (0)" -> "eda-ensemble-model-top-10-percentile.ipynb"	[label=appearsIn];
+	"print[368/0]" -> "np(0)"	[label=print];
+	"print[368/0]" -> "False(0)"	[label=print];
+	"print[368/0]" -> "rmsle(0)"	[label=print];
+	"print[368/0]" -> "yLabelsLog(0)$4"	[label=print];
+	"print[368/0]" -> "preds(0)$4"	[label=print];
+	"print[368/0]" -> "RMSLE Value For Gradient Boost: (0)"	[label=print];
 	"predsTest(0)$0" -> "dataTest(0)$2"	[label=predict];
 	"predsTest(0)$0" -> "gbm(0)$1"	[label=predict];
 	"fig(0)$16" -> "plt(0)"	[label=subplots];

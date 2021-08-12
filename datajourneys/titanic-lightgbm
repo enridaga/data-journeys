@@ -20,9 +20,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[15/8]" -> "os(0)"	[label=print];
+	"print[15/8]" -> "dirname(0)"	[label=print];
+	"print[15/8]" -> "filename(0)"	[label=print];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "/kaggle/input/titanic/train.csv(0)"	[label=read_csv];
 	"/kaggle/input/titanic/train.csv(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
@@ -39,14 +39,14 @@ digraph "" {
 	"Survived(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"1(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"data(0)$0" -> "pd(0)"	[label=concat];
-	"data(0)$0" -> "[<_ast.Name object at 0x12f8f5910>, <_ast.Name object at 0x12f8f55b0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8f5910>, <_ast.Name object at 0x12f8f55b0>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd5007f0eb0>, <_ast.Name object at 0x7fd5007f05b0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd5007f0eb0>, <_ast.Name object at 0x7fd5007f05b0>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=head];
 	"data(0)$2" -> "data(0)$1"	[label=drop];
-	"data(0)$2" -> "[<_ast.Constant object at 0x12f8f57f0>, <_ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5730>, <_ast.Constant \
-object at 0x12f8f5970>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8f57f0>, <_ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5730>, <_ast.Constant \
-object at 0x12f8f5970>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Constant object at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f0b20>, <_\
+ast.Constant object at 0x7fd5007f0760>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f0b20>, <_\
+ast.Constant object at 0x7fd5007f0760>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"data(0)$3" -> "data(0)$2"	[label=head];
 	"X_train(0)$0" -> "train(0)$1"	[label=assignedFrom];
 	"X_train(0)$0" -> "data(0)$3"	[label=assignedFrom];
@@ -80,8 +80,8 @@ object at 0x12f8f5970>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	lightgbm -> "titanic-lightgbm.ipynb"	[label=importedBy];
 	"lgb(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"lgb(0)" -> lightgbm	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x130532430>, <_ast.Constant object at 0x130532f70>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
-	"categorical_features(0)$0" -> "[<_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x130532430>, <_ast.Constant object at 0x130532f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50080d280>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080d5b0>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
+	"categorical_features(0)$0" -> "[<_ast.Constant object at 0x7fd50080d280>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080d5b0>](0)"	[label=assignedFrom];
 	"lgb_train(0)$0" -> "X_train(0)$1"	[label=Dataset];
 	"lgb_train(0)$0" -> "y_train(0)$1"	[label=Dataset];
 	"lgb_train(0)$0" -> "lgb(0)"	[label=Dataset];
@@ -98,11 +98,11 @@ object at 0x12f8f5970>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "lgb(0)"	[label=train];
 	"model(0)$0" -> "lgb_train(0)$0"	[label=train];
 	"model(0)$0" -> "params(0)$0"	[label=train];
-	"model(0)$0" -> "[<_ast.Name object at 0x1305326d0>, <_ast.Name object at 0x130532910>](0)"	[label=train];
+	"model(0)$0" -> "[<_ast.Name object at 0x7fd5009999a0>, <_ast.Name object at 0x7fd5009991c0>](0)"	[label=train];
 	"model(0)$0" -> "10(0)"	[label=train];
 	"model(0)$0" -> "1000(0)"	[label=train];
 	"model(0)$0" -> "5(0)"	[label=train];
-	"[<_ast.Name object at 0x1305326d0>, <_ast.Name object at 0x130532910>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5009999a0>, <_ast.Name object at 0x7fd5009991c0>](0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"10(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"1000(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];
 	"5(0)" -> "titanic-lightgbm.ipynb"	[label=appearsIn];

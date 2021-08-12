@@ -91,7 +91,7 @@ digraph "" {
 	"tagged_data(3)$0" -> "TaggedDocument(3)"	[label=assignedFrom];
 	"tagged_data(3)$0" -> "word_tokenize(3)"	[label=assignedFrom];
 	"tagged_data(3)$0" -> "_d(3)"	[label=assignedFrom];
-	"tagged_data(3)$0" -> "[<_ast.Call object at 0x12f88afa0>](3)"	[label=assignedFrom];
+	"tagged_data(3)$0" -> "[<_ast.Call object at 0x7fd4c04cc4c0>](3)"	[label=assignedFrom];
 	"tagged_data(3)$0" -> "i(3)"	[label=assignedFrom];
 	"tagged_data(3)$0" -> "enumerate(3)"	[label=assignedFrom];
 	"self(3)$0" -> "self(3)"	[label=Doc2Vec];
@@ -127,40 +127,28 @@ digraph "" {
 	"train(6)$0" -> "/kaggle/input/google-quest-challenge/train.csv(6)"	[label=read_csv];
 	"test(6)$0" -> "pd(6)"	[label=read_csv];
 	"test(6)$0" -> "/kaggle/input/google-quest-challenge/test.csv(6)"	[label=read_csv];
-	"target_cols(6)$0" -> "[<_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f951cd0>, <_ast.Constant object at 0x12f951790>, <_ast.Constant \
-object at 0x12f951e20>, <_ast.Constant object at 0x12f9510a0>, <_ast.Constant object at 0x12f951250>, <_ast.Constant object at 0x12f951a30>, <_\
-ast.Constant object at 0x12f951f40>, <_ast.Constant object at 0x12f951e50>, <_ast.Constant object at 0x12f9512e0>, <_ast.Constant \
-object at 0x12f951220>, <_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f951b80>, <_ast.Constant object at 0x12f951fd0>, <_\
-ast.Constant object at 0x12f951b50>, <_ast.Constant object at 0x12f951df0>, <_ast.Constant object at 0x12f951eb0>, <_ast.Constant \
-object at 0x12f9514c0>, <_ast.Constant object at 0x12f9511c0>, <_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951a90>, <_\
-ast.Constant object at 0x12f9512b0>, <_ast.Constant object at 0x12f951d60>, <_ast.Constant object at 0x12f9517f0>, <_ast.Constant \
-object at 0x12f951970>, <_ast.Constant object at 0x12f9519d0>, <_ast.Constant object at 0x12f85ec10>, <_ast.Constant object at 0x12f85e910>, <_\
-ast.Constant object at 0x12f85ed00>, <_ast.Constant object at 0x12f85ebe0>](6)"	[label=assignedFrom];
-	"data_cols(6)$0" -> "[<_ast.Constant object at 0x12f85ea90>, <_ast.Constant object at 0x12f85e940>, <_ast.Constant object at 0x12f85ec40>, <_ast.Constant \
-object at 0x12f85eb80>](6)"	[label=assignedFrom];
+	"target_cols(6)$0" -> "[<_ast.Constant object at 0x7fd50080d3a0>, <_ast.Constant object at 0x7fd50080d2e0>, <_ast.Constant object at 0x7fd50080d310>, <_\
+ast.Constant object at 0x7fd50080da60>, <_ast.Constant object at 0x7fd50080d820>, <_ast.Constant object at 0x7fd50080d520>, <_ast.Constant \
+object at 0x7fd50080de50>, <_ast.Constant object at 0x7fd50080d040>, <_ast.Constant object at 0x7fd50080d1c0>, <_ast.Constant object \
+at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080d250>, <_ast.Constant object at \
+0x7fd50080d790>, <_ast.Constant object at 0x7fd50080df10>, <_ast.Constant object at 0x7fd50080d1f0>, <_ast.Constant object at 0x7fd500999fa0>, <_\
+ast.Constant object at 0x7fd500999520>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant \
+object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd5009994c0>, <_ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object \
+at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at \
+0x7fd500999640>, <_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009992b0>, <_\
+ast.Constant object at 0x7fd5009995b0>](6)"	[label=assignedFrom];
+	"data_cols(6)$0" -> "[<_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd500999ac0>, <_\
+ast.Constant object at 0x7fd500999070>](6)"	[label=assignedFrom];
 	"y_train(6)$0" -> "train(6)$0"	[label=copy];
 	"y_train(6)$0" -> "target_cols(6)$0"	[label=copy];
-	"print[0]" -> "type(6)"	[label=print];
-	"print[0]" -> "x_train_question_vec(6)$0"	[label=print];
-	"print[0]" -> "epoch(0)"	[label=print];
-	"print[0]" -> "training score is (0)"	[label=print];
-	"print[0]" -> "validation score is (0)"	[label=print];
-	"x_train_question_vec(6)$0" -> "x_train(6)$0"	[label=fit_transform];
-	"x_train_question_vec(6)$0" -> "question_body_doc2vec(6)"	[label=fit_transform];
-	"x_train_question_vec(6)$0" -> "question_body(6)"	[label=fit_transform];
-	"epoch(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
-	"epoch(0)" -> "epoch_size(0)$0"	[label=iteratorOf];
-	"epoch(0)" -> "range(0)"	[label=iteratorOf];
-	"training score is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
-	"validation score is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
-	"print[1]" -> "y_train(6)$0"	[label=print];
-	"print[1]" -> ", loss is (0)"	[label=print];
-	"print[1]" -> "calc_score(0)"	[label=print];
-	", loss is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
-	"calc_score(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"print[83/4]" -> "y_train(6)$0"	[label=print];
+	"print[83/4]" -> "type(6)"	[label=print];
 	"x_train(6)$0" -> "train(6)$0"	[label=copy];
 	"x_train(6)$0" -> "data_cols(6)$0"	[label=copy];
 	"x_test(6)$0" -> "test(6)$0"	[label=copy];
+	"x_train_question_vec(6)$0" -> "x_train(6)$0"	[label=fit_transform];
+	"x_train_question_vec(6)$0" -> "question_body_doc2vec(6)"	[label=fit_transform];
+	"x_train_question_vec(6)$0" -> "question_body(6)"	[label=fit_transform];
 	"x_test_question_vec(6)$0" -> "x_test(6)$0"	[label=transform];
 	"x_test_question_vec(6)$0" -> "question_body_doc2vec(6)"	[label=transform];
 	"x_test_question_vec(6)$0" -> "question_body(6)"	[label=transform];
@@ -170,11 +158,12 @@ object at 0x12f85eb80>](6)"	[label=assignedFrom];
 	"x_test_answer_vec(6)$0" -> "x_test(6)$0"	[label=transform];
 	"x_test_answer_vec(6)$0" -> "question_body_doc2vec(6)"	[label=transform];
 	"x_test_answer_vec(6)$0" -> "answer(6)"	[label=transform];
-	"text_encoder(6)$0" -> "[<_ast.Tuple object at 0x12f8f5040>, <_ast.Tuple object at 0x12f8f5a00>](6)"	[label=Pipeline];
+	"print[99/4]" -> "x_train_question_vec(6)$0"	[label=print];
+	"text_encoder(6)$0" -> "[<_ast.Tuple object at 0x7fd500836c10>, <_ast.Tuple object at 0x7fd500836d00>](6)"	[label=Pipeline];
 	"text_encoder(6)$0" -> "True(6)"	[label=Pipeline];
-	"ohe(6)$0" -> "[<_ast.Constant object at 0x12f8f56d0>](6)"	[label=OneHotEncoder];
-	"preprocessor(6)$0" -> "[<_ast.Tuple object at 0x12ff2f100>, <_ast.Tuple object at 0x12ff2f460>, <_ast.Tuple object at 0x12ff2f340>, <_ast.Tuple object \
-at 0x12ff2fb20>](6)"	[label=ColumnTransformer];
+	"ohe(6)$0" -> "[<_ast.Constant object at 0x7fd5008360a0>](6)"	[label=OneHotEncoder];
+	"preprocessor(6)$0" -> "[<_ast.Tuple object at 0x7fd500836250>, <_ast.Tuple object at 0x7fd500836790>, <_ast.Tuple object at 0x7fd500836cd0>, <_ast.Tuple \
+object at 0x7fd5008362b0>](6)"	[label=ColumnTransformer];
 	"x_train(6)$1" -> "preprocessor(6)$0"	[label=astype];
 	"x_train(6)$1" -> "x_train(6)$1"	[label=astype];
 	"x_train(6)$1" -> "np(6)"	[label=astype];
@@ -184,11 +173,11 @@ at 0x12ff2fb20>](6)"	[label=ColumnTransformer];
 	"y_train(6)$1" -> "y_train(6)$0"	[label=astype];
 	"y_train(6)$1" -> "np(6)"	[label=astype];
 	"x_train(6)$2" -> "np(6)"	[label=concatenate];
-	"x_train(6)$2" -> "[<_ast.Name object at 0x12ff2f5e0>, <_ast.Name object at 0x12ff2fb80>, <_ast.Name object at 0x12ff2f220>](6)"	[label=concatenate];
+	"x_train(6)$2" -> "[<_ast.Name object at 0x7fd4c04ff700>, <_ast.Name object at 0x7fd4c04ff880>, <_ast.Name object at 0x7fd4c04ffd30>](6)"	[label=concatenate];
 	"x_train(6)$2" -> "1(6)"	[label=concatenate];
 	"x_test(6)$2" -> "np(6)"	[label=concatenate];
 	"x_test(6)$2" -> "1(6)"	[label=concatenate];
-	"x_test(6)$2" -> "[<_ast.Name object at 0x12ff2fcd0>, <_ast.Name object at 0x12ff2ff70>, <_ast.Name object at 0x12ff2fdc0>](6)"	[label=concatenate];
+	"x_test(6)$2" -> "[<_ast.Name object at 0x7fd4c04ffbe0>, <_ast.Name object at 0x7fd4c04fff70>, <_ast.Name object at 0x7fd4c04ff940>](6)"	[label=concatenate];
 	"prediction(7)" -> "calc_score[0]"	[label=_argToVar];
 	"label(7)" -> "calc_score[1]"	[label=_argToVar];
 	"score(7)$0" -> "0(7)"	[label=assignedFrom];
@@ -282,11 +271,11 @@ at 0x12ff2fb20>](6)"	[label=ColumnTransformer];
 	"val_size(0)$0" -> "train_size(0)$0"	[label=Sub];
 	"train_dataset(0)$0" -> "torch(0)"	[label=random_split];
 	"train_dataset(0)$0" -> "dataset(0)$0"	[label=random_split];
-	"train_dataset(0)$0" -> "[<_ast.Name object at 0x130532bb0>, <_ast.Name object at 0x1305325b0>](0)"	[label=random_split];
-	"[<_ast.Name object at 0x130532bb0>, <_ast.Name object at 0x1305325b0>](0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"train_dataset(0)$0" -> "[<_ast.Name object at 0x7fd4902ab250>, <_ast.Name object at 0x7fd4902ab5e0>](0)"	[label=random_split];
+	"[<_ast.Name object at 0x7fd4902ab250>, <_ast.Name object at 0x7fd4902ab5e0>](0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
 	"val_dataset(0)$0" -> "torch(0)"	[label=random_split];
 	"val_dataset(0)$0" -> "dataset(0)$0"	[label=random_split];
-	"val_dataset(0)$0" -> "[<_ast.Name object at 0x130532bb0>, <_ast.Name object at 0x1305325b0>](0)"	[label=random_split];
+	"val_dataset(0)$0" -> "[<_ast.Name object at 0x7fd4902ab250>, <_ast.Name object at 0x7fd4902ab5e0>](0)"	[label=random_split];
 	"train_dataloader(0)$0" -> "train_dataset(0)$0"	[label=DataLoader];
 	"train_dataloader(0)$0" -> "20(0)"	[label=DataLoader];
 	"train_dataloader(0)$0" -> "True(0)"	[label=DataLoader];
@@ -303,6 +292,9 @@ at 0x12ff2fb20>](6)"	[label=ColumnTransformer];
 	"loss_list(0)$0" -> "np(0)"	[label=zeros];
 	"loss_list(0)$0" -> "epoch_size(0)$0"	[label=zeros];
 	"range(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"epoch(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"epoch(0)" -> "epoch_size(0)$0"	[label=iteratorOf];
+	"epoch(0)" -> "range(0)"	[label=iteratorOf];
 	"enumerate(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
 	"n_batch(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
 	"n_batch(0)" -> "train_dataloader(0)$0"	[label=iteratorOf];
@@ -327,35 +319,33 @@ at 0x12ff2fb20>](6)"	[label=ColumnTransformer];
 	"loss_list(0)$1" -> "tmp(0)$0"	[label=Add];
 	"loss_list(0)$2" -> "n_batch(0)"	[label=Div];
 	"loss_list(0)$2" -> "loss_list(0)$1"	[label=Div];
-	"print[2]" -> "loss_list(0)$2"	[label=print];
-	"print[2]" -> "train_prediction(0)$2"	[label=print];
-	"print[2]" -> "val_prediction(0)$2"	[label=print];
-	"train_prediction(0)$2" -> "train_prediction(0)$1"	[label=assignedFrom];
-	"val_prediction(0)$2" -> "val_prediction(0)$1"	[label=assignedFrom];
-	"print[3]" -> "epoch(0)"	[label=print];
-	"print[3]" -> "train_dataset(0)$0"	[label=print];
-	"print[3]" -> "val_dataset(0)$0"	[label=print];
+	"print[224/4]" -> "epoch(0)"	[label=print];
+	"print[224/4]" -> "loss_list(0)$2"	[label=print];
+	"print[224/4]" -> ", loss is (0)"	[label=print];
+	", loss is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=plot];
 	"plt(0)$0" -> "loss_list(0)$2"	[label=plot];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
-	"[<_ast.Constant object at 0x12f9a3550>, <_ast.Constant object at 0x12f9a3580>, <_ast.Constant object at 0x12f9a35b0>, <_ast.Constant \
-object at 0x12f9a35e0>, <_ast.Constant object at 0x12f9a3610>, <_ast.Constant object at 0x12f9a3640>, <_ast.Constant object at 0x12f9a3670>, <_\
-ast.Constant object at 0x12f9a36a0>, <_ast.Constant object at 0x12f9a36d0>, <_ast.Constant object at 0x12f9a3700>, <_ast.Constant \
-object at 0x12f9a3730>, <_ast.Constant object at 0x12f9a3760>, <_ast.Constant object at 0x12f9a3790>, <_ast.Constant object at 0x12f9a37c0>, <_\
-ast.Constant object at 0x12f9a37f0>, <_ast.Constant object at 0x12f9a3820>, <_ast.Constant object at 0x12f9a3850>, <_ast.Constant \
-object at 0x12f9a3880>, <_ast.Constant object at 0x12f9a38b0>, <_ast.Constant object at 0x12f9a38e0>, <_ast.Constant object at 0x12f9a3910>, <_\
-ast.Constant object at 0x12f9a3940>, <_ast.Constant object at 0x12f9a3970>, <_ast.Constant object at 0x12f9a39a0>, <_ast.Constant \
-object at 0x12f9a39d0>, <_ast.Constant object at 0x12f9a3a00>, <_ast.Constant object at 0x12f9a3a30>, <_ast.Constant object at 0x12f9a3a60>, <_\
-ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>](0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
-	"target_cols(0)$0" -> "[<_ast.Constant object at 0x12f9a3550>, <_ast.Constant object at 0x12f9a3580>, <_ast.Constant object at 0x12f9a35b0>, <_ast.Constant \
-object at 0x12f9a35e0>, <_ast.Constant object at 0x12f9a3610>, <_ast.Constant object at 0x12f9a3640>, <_ast.Constant object at 0x12f9a3670>, <_\
-ast.Constant object at 0x12f9a36a0>, <_ast.Constant object at 0x12f9a36d0>, <_ast.Constant object at 0x12f9a3700>, <_ast.Constant \
-object at 0x12f9a3730>, <_ast.Constant object at 0x12f9a3760>, <_ast.Constant object at 0x12f9a3790>, <_ast.Constant object at 0x12f9a37c0>, <_\
-ast.Constant object at 0x12f9a37f0>, <_ast.Constant object at 0x12f9a3820>, <_ast.Constant object at 0x12f9a3850>, <_ast.Constant \
-object at 0x12f9a3880>, <_ast.Constant object at 0x12f9a38b0>, <_ast.Constant object at 0x12f9a38e0>, <_ast.Constant object at 0x12f9a3910>, <_\
-ast.Constant object at 0x12f9a3940>, <_ast.Constant object at 0x12f9a3970>, <_ast.Constant object at 0x12f9a39a0>, <_ast.Constant \
-object at 0x12f9a39d0>, <_ast.Constant object at 0x12f9a3a00>, <_ast.Constant object at 0x12f9a3a30>, <_ast.Constant object at 0x12f9a3a60>, <_\
-ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500822250>, <_ast.Constant object at 0x7fd500822280>, <_ast.Constant object at 0x7fd5008222b0>, <_\
+ast.Constant object at 0x7fd5008222e0>, <_ast.Constant object at 0x7fd500822310>, <_ast.Constant object at 0x7fd500822340>, <_ast.Constant \
+object at 0x7fd500822370>, <_ast.Constant object at 0x7fd5008223a0>, <_ast.Constant object at 0x7fd5008223d0>, <_ast.Constant object \
+at 0x7fd500822400>, <_ast.Constant object at 0x7fd500822430>, <_ast.Constant object at 0x7fd500822460>, <_ast.Constant object at \
+0x7fd500822490>, <_ast.Constant object at 0x7fd5008224c0>, <_ast.Constant object at 0x7fd5008224f0>, <_ast.Constant object at 0x7fd500822520>, <_\
+ast.Constant object at 0x7fd500822550>, <_ast.Constant object at 0x7fd500822580>, <_ast.Constant object at 0x7fd5008225b0>, <_ast.Constant \
+object at 0x7fd5008225e0>, <_ast.Constant object at 0x7fd500822610>, <_ast.Constant object at 0x7fd500822640>, <_ast.Constant object \
+at 0x7fd500822670>, <_ast.Constant object at 0x7fd5008226a0>, <_ast.Constant object at 0x7fd5008226d0>, <_ast.Constant object at \
+0x7fd500822700>, <_ast.Constant object at 0x7fd500822730>, <_ast.Constant object at 0x7fd500822760>, <_ast.Constant object at 0x7fd500822790>, <_\
+ast.Constant object at 0x7fd5008227c0>](0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"target_cols(0)$0" -> "[<_ast.Constant object at 0x7fd500822250>, <_ast.Constant object at 0x7fd500822280>, <_ast.Constant object at 0x7fd5008222b0>, <_\
+ast.Constant object at 0x7fd5008222e0>, <_ast.Constant object at 0x7fd500822310>, <_ast.Constant object at 0x7fd500822340>, <_ast.Constant \
+object at 0x7fd500822370>, <_ast.Constant object at 0x7fd5008223a0>, <_ast.Constant object at 0x7fd5008223d0>, <_ast.Constant object \
+at 0x7fd500822400>, <_ast.Constant object at 0x7fd500822430>, <_ast.Constant object at 0x7fd500822460>, <_ast.Constant object at \
+0x7fd500822490>, <_ast.Constant object at 0x7fd5008224c0>, <_ast.Constant object at 0x7fd5008224f0>, <_ast.Constant object at 0x7fd500822520>, <_\
+ast.Constant object at 0x7fd500822550>, <_ast.Constant object at 0x7fd500822580>, <_ast.Constant object at 0x7fd5008225b0>, <_ast.Constant \
+object at 0x7fd5008225e0>, <_ast.Constant object at 0x7fd500822610>, <_ast.Constant object at 0x7fd500822640>, <_ast.Constant object \
+at 0x7fd500822670>, <_ast.Constant object at 0x7fd5008226a0>, <_ast.Constant object at 0x7fd5008226d0>, <_ast.Constant object at \
+0x7fd500822700>, <_ast.Constant object at 0x7fd500822730>, <_ast.Constant object at 0x7fd500822760>, <_ast.Constant object at 0x7fd500822790>, <_\
+ast.Constant object at 0x7fd5008227c0>](0)"	[label=assignedFrom];
 	"train_prediction(0)$0" -> "np(0)"	[label=zeros];
 	"train_prediction(0)$0" -> "len(0)"	[label=zeros];
 	"train_prediction(0)$0" -> "train_dataset(0)$0"	[label=zeros];
@@ -374,6 +364,13 @@ ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>](0)"	
 	"output(0)$1" -> "input(0)$0"	[label=model];
 	"train_prediction(0)$1" -> "train_prediction(0)$0"	[label=numpy];
 	"train_prediction(0)$1" -> "output(0)$1"	[label=numpy];
+	"train_prediction(0)$2" -> "train_prediction(0)$1"	[label=assignedFrom];
+	"training score is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"print[254/0]" -> "train_dataset(0)$0"	[label=print];
+	"print[254/0]" -> "train_prediction(0)$2"	[label=print];
+	"print[254/0]" -> "training score is (0)"	[label=print];
+	"print[254/0]" -> "calc_score(0)"	[label=print];
+	"calc_score(0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
 	"val_prediction(0)$0" -> "np(0)"	[label=zeros];
 	"val_prediction(0)$0" -> "len(0)"	[label=zeros];
 	"val_prediction(0)$0" -> "val_dataset(0)$0"	[label=zeros];
@@ -384,6 +381,12 @@ ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>](0)"	
 	"output(0)$2" -> "input(0)$1"	[label=model];
 	"val_prediction(0)$1" -> "val_prediction(0)$0"	[label=numpy];
 	"val_prediction(0)$1" -> "output(0)$2"	[label=numpy];
+	"val_prediction(0)$2" -> "val_prediction(0)$1"	[label=assignedFrom];
+	"validation score is (0)" -> "tfidf-doc2vec-pytorch.ipynb"	[label=appearsIn];
+	"print[265/4]" -> "val_dataset(0)$0"	[label=print];
+	"print[265/4]" -> "calc_score(0)"	[label=print];
+	"print[265/4]" -> "val_prediction(0)$2"	[label=print];
+	"print[265/4]" -> "validation score is (0)"	[label=print];
 	"prediction(0)$0" -> "np(0)"	[label=zeros];
 	"prediction(0)$0" -> "test_dataset(0)$0"	[label=zeros];
 	"prediction(0)$0" -> "len(0)"	[label=zeros];

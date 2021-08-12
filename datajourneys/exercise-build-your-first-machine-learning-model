@@ -18,9 +18,7 @@ strict digraph "" {
 	"*(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
 	"*(0)" -> "*"	[label=assignedFrom];
 	"Setup Complete(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
-	"print[0]" -> "Setup Complete(0)"	[label=print];
-	"print[0]" -> "predictions(0)$0"	[label=print];
-	"predictions(0)$0" -> "_(0)"	[label=assignedFrom];
+	"print[28/0]" -> "Setup Complete(0)"	[label=print];
 	"step_1(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
 	"step_1(0)$0" -> "step_1(0)"	[label=check];
 	"step_2(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
@@ -29,6 +27,8 @@ strict digraph "" {
 	"iowa_model(0)$0" -> "_(0)"	[label=assignedFrom];
 	"step_3(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
 	"step_3(0)$0" -> "step_3(0)"	[label=check];
+	"predictions(0)$0" -> "_(0)"	[label=assignedFrom];
+	"print[92/0]" -> "predictions(0)$0"	[label=print];
 	"step_4(0)" -> "exercise-build-your-first-machine-learning-model.ipynb"	[label=appearsIn];
 	"step_4(0)$0" -> "step_4(0)"	[label=check];
 }

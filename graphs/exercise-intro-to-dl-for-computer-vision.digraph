@@ -11,15 +11,16 @@ strict digraph "" {
 	"*(0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
 	"*(0)" -> "*"	[label=assignedFrom];
 	"Setup Complete(0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
-	"print[0]" -> "Setup Complete(0)"	[label=print];
-	"[<_ast.List object at 0x12f8ab040>, <_ast.List object at 0x12f8ab1c0>](0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
-	"horizontal_line_conv(0)$0" -> "[<_ast.List object at 0x12f8ab040>, <_ast.List object at 0x12f8ab1c0>](0)"	[label=assignedFrom];
+	"print[6/0]" -> "Setup Complete(0)"	[label=print];
+	"[<_ast.List object at 0x7fd50080d1c0>, <_ast.List object at 0x7fd50080ddf0>](0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
+	"horizontal_line_conv(0)$0" -> "[<_ast.List object at 0x7fd50080d1c0>, <_ast.List object at 0x7fd50080ddf0>](0)"	[label=assignedFrom];
 	"original_image(0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
-	"visualize_conv[0]" -> "original_image(0)"	[label=visualize_conv];
-	"visualize_conv[1]" -> "horizontal_line_conv(0)$0"	[label=visualize_conv];
-	"visualize_conv[1]" -> "vertical_line_conv(0)$0"	[label=visualize_conv];
-	"vertical_line_conv(0)$0" -> "____(0)"	[label=assignedFrom];
+	"visualize_conv[11/0]" -> "horizontal_line_conv(0)$0"	[label=visualize_conv];
+	"visualize_conv[11/0]" -> "original_image(0)"	[label=visualize_conv];
 	"____(0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
+	"vertical_line_conv(0)$0" -> "____(0)"	[label=assignedFrom];
 	"q_1(0)" -> "exercise-intro-to-dl-for-computer-vision.ipynb"	[label=appearsIn];
 	"q_1(0)$0" -> "q_1(0)"	[label=check];
+	"visualize_conv[15/0]" -> "original_image(0)"	[label=visualize_conv];
+	"visualize_conv[15/0]" -> "vertical_line_conv(0)$0"	[label=visualize_conv];
 }

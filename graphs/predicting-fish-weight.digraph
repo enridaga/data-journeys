@@ -36,7 +36,7 @@ digraph "" {
 	"df(2)$0" -> "df(2)"	[label=drop];
 	"df(2)$0" -> "colname(2)"	[label=drop];
 	"df(2)$1" -> "pd(2)"	[label=concat];
-	"df(2)$1" -> "[<_ast.Name object at 0x12f88a4f0>, <_ast.Name object at 0x12f88a100>](2)"	[label=concat];
+	"df(2)$1" -> "[<_ast.Name object at 0x7fd4c059c820>, <_ast.Name object at 0x7fd4c059c9a0>](2)"	[label=concat];
 	"df(2)$1" -> "1(2)"	[label=concat];
 	"fish(0)$0" -> "pd(0)"	[label=read_csv];
 	"fish(0)$0" -> "../input/fish-market/Fish.csv(0)"	[label=read_csv];
@@ -56,8 +56,8 @@ digraph "" {
 	"float64(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"fish_continuous(0)$1" -> "fish_continuous(0)$0"	[label=head];
 	"fish_categorical(0)$0" -> "fish(0)$3"	[label=assignedFrom];
-	"fish_categorical(0)$0" -> "[<_ast.Constant object at 0x12fc4f880>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4f880>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"fish_categorical(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0a30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0a30>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"fish_categorical(0)$1" -> "fish_categorical(0)$0"	[label=head];
 	"fish_continuous(0)$2" -> "fish_continuous(0)$1"	[label=apply];
 	"fish_continuous(0)$2" -> "x(0)"	[label=apply];
@@ -67,13 +67,13 @@ digraph "" {
 	"0.05(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"0.95(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"fish_categorical(0)$2" -> "fish_categorical(0)$1"	[label=dummy_vars];
-	"fish_categorical(0)$2" -> "[<_ast.Constant object at 0x12fade040>](0)"	[label=dummy_vars];
-	"[<_ast.Constant object at 0x12fade040>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"fish_categorical(0)$2" -> "[<_ast.Constant object at 0x7fd500999790>](0)"	[label=dummy_vars];
+	"[<_ast.Constant object at 0x7fd500999790>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"fish_categorical(0)$3" -> "fish_categorical(0)$2"	[label=head];
 	"fish_final(0)$0" -> "pd(0)"	[label=concat];
-	"fish_final(0)$0" -> "[<_ast.Name object at 0x12fade5b0>, <_ast.Name object at 0x12fade460>](0)"	[label=concat];
+	"fish_final(0)$0" -> "[<_ast.Name object at 0x7fd5009992b0>, <_ast.Name object at 0x7fd500999b50>](0)"	[label=concat];
 	"fish_final(0)$0" -> "1(0)"	[label=concat];
-	"[<_ast.Name object at 0x12fade5b0>, <_ast.Name object at 0x12fade460>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5009992b0>, <_ast.Name object at 0x7fd500999b50>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"1(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"fish_final(0)$1" -> "fish_final(0)$0"	[label=head];
 	"fish_final(0)$2" -> "fish_final(0)$1"	[label=sum];
@@ -99,25 +99,25 @@ digraph "" {
 	"np(0)$0" -> "np(0)"	[label=skew];
 	"train_x(0)$0" -> "fish_final(0)$4"	[label=train_test_split];
 	"train_x(0)$0" -> "ln_Weight(0)"	[label=train_test_split];
-	"train_x(0)$0" -> "[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f9512b0>](0)"	[label=train_test_split];
+	"train_x(0)$0" -> "[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)"	[label=train_test_split];
 	"train_x(0)$0" -> "123(0)"	[label=train_test_split];
 	"train_x(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f9512b0>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"123(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"0.3(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"test_x(0)$0" -> "fish_final(0)$4"	[label=train_test_split];
 	"test_x(0)$0" -> "ln_Weight(0)"	[label=train_test_split];
-	"test_x(0)$0" -> "[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f9512b0>](0)"	[label=train_test_split];
+	"test_x(0)$0" -> "[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)"	[label=train_test_split];
 	"test_x(0)$0" -> "123(0)"	[label=train_test_split];
 	"test_x(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"train_y(0)$0" -> "fish_final(0)$4"	[label=train_test_split];
 	"train_y(0)$0" -> "ln_Weight(0)"	[label=train_test_split];
-	"train_y(0)$0" -> "[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f9512b0>](0)"	[label=train_test_split];
+	"train_y(0)$0" -> "[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)"	[label=train_test_split];
 	"train_y(0)$0" -> "123(0)"	[label=train_test_split];
 	"train_y(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"test_y(0)$0" -> "fish_final(0)$4"	[label=train_test_split];
 	"test_y(0)$0" -> "ln_Weight(0)"	[label=train_test_split];
-	"test_y(0)$0" -> "[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f9512b0>](0)"	[label=train_test_split];
+	"test_y(0)$0" -> "[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)"	[label=train_test_split];
 	"test_y(0)$0" -> "123(0)"	[label=train_test_split];
 	"test_y(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"train(0)$0" -> "fish_final(0)$4"	[label=train_test_split];
@@ -127,25 +127,20 @@ digraph "" {
 	"test(0)$0" -> "123(0)"	[label=train_test_split];
 	"test(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"No.of observations in train(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
-	"print[0]" -> "No.of observations in train(0)"	[label=print];
-	"print[0]" -> "No.of observations in test(0)"	[label=print];
-	"print[0]" -> "fish_log(0)$0"	[label=print];
-	"print[0]" -> "fish_log_2(0)$0"	[label=print];
+	"print[64/0]" -> "train(0)$0"	[label=print];
+	"print[64/0]" -> "No.of observations in train(0)"	[label=print];
 	"No.of observations in test(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"print[65/0]" -> "test(0)$0"	[label=print];
+	"print[65/0]" -> "No.of observations in test(0)"	[label=print];
 	"fish_log(0)$0" -> "smf(0)"	[label=fit];
 	"fish_log(0)$0" -> "train(0)$0"	[label=fit];
 	"fish_log(0)$0" -> "ln_Weight ~ Length1 + Length2 + Length3 + Height + Width + Species_Parkki + Species_Perch + 
                       Species_Pike + \
 Species_Roach + Species_Smelt + Species_Whitefish(0)"	[label=fit];
-	"fish_log_2(0)$0" -> "smf(0)"	[label=fit];
-	"fish_log_2(0)$0" -> "train(0)$0"	[label=fit];
-	"fish_log_2(0)$0" -> "ln_Weight ~ Length1   + Height  + 
-                     Species_Smelt (0)"	[label=fit];
-	"print[1]" -> "train(0)$0"	[label=print];
-	"print[1]" -> "test(0)$0"	[label=print];
 	"ln_Weight ~ Length1 + Length2 + Length3 + Height + Width + Species_Parkki + Species_Perch + 
                       Species_Pike + \
 Species_Roach + Species_Smelt + Species_Whitefish(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"print[69/0]" -> "fish_log(0)$0"	[label=print];
 	"ln_Weight ~ Length1   + Height   + Width +
                      Species_Smelt (0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"model_param(0)$0" -> "ln_Weight ~ Length1   + Height   + Width +
@@ -177,8 +172,13 @@ Species_Roach + Species_Smelt + Species_Whitefish(0)" -> "predicting-fish-weight
 	"i(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"range(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"vif(0)$3" -> "vif(0)$2"	[label=sort_values];
+	"fish_log_2(0)$0" -> "smf(0)"	[label=fit];
+	"fish_log_2(0)$0" -> "train(0)$0"	[label=fit];
+	"fish_log_2(0)$0" -> "ln_Weight ~ Length1   + Height  + 
+                     Species_Smelt (0)"	[label=fit];
 	"ln_Weight ~ Length1   + Height  + 
                      Species_Smelt (0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"print[81/0]" -> "fish_log_2(0)$0"	[label=print];
 	"np(0)$1" -> "ln_Weight(0)"	[label=mean];
 	"np(0)$1" -> "np(0)$0"	[label=mean];
 	"np(0)$1" -> "train(0)$0"	[label=mean];
@@ -212,15 +212,15 @@ Species_Roach + Species_Smelt + Species_Whitefish(0)" -> "predicting-fish-weight
 	"param_grid(0)$0" -> "3(0)"	[label=assignedFrom];
 	"param_grid(0)$0" -> "11(0)"	[label=assignedFrom];
 	"param_grid(0)$0" -> "7(0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8f5940>, <_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5310>, <_ast.Constant \
-object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5190>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab760>, <_\
+ast.Constant object at 0x7fd4902abee0>, <_ast.Constant object at 0x7fd4902ab070>](0)"	[label=assignedFrom];
 	"max_features(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"n_estimators(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"3(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"11(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"7(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5940>, <_ast.Constant object at 0x12f8f58e0>, <_ast.Constant object at 0x12f8f5310>, <_ast.Constant \
-object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5190>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab760>, <_\
+ast.Constant object at 0x7fd4902abee0>, <_ast.Constant object at 0x7fd4902ab070>](0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	GridSearchCV -> "sklearn.model_selection"	[label=importedBy];
 	"GridSearchCV(0)" -> "predicting-fish-weight.ipynb"	[label=appearsIn];
 	"GridSearchCV(0)" -> GridSearchCV	[label=assignedFrom];

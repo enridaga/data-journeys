@@ -8,16 +8,9 @@ digraph "" {
 	os -> "toxic-bert-plain-vanila.ipynb"	[label=importedBy];
 	"os(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "longer(1)$1"	[label=print];
-	"print[0]" -> "loaded \%d records(0)"	[label=print];
-	"longer(1)$1" -> "longer(1)$0"	[label=Add];
-	"longer(1)$1" -> "1(1)"	[label=Add];
-	"loaded \%d records(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"print[15/0]" -> "os(0)"	[label=print];
+	"print[15/0]" -> "../input/nvidiaapex/repository/NVIDIA-apex-39e153a(0)"	[label=print];
 	"../input/nvidiaapex/repository/NVIDIA-apex-39e153a(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input/nvidiaapex/repository/NVIDIA-apex-39e153a(0)"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"len(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	__future__ -> "toxic-bert-plain-vanila.ipynb"	[label=importedBy];
 	absolute_import -> __future__	[label=importedBy];
 	"absolute_import(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
@@ -186,15 +179,18 @@ digraph "" {
 	"tokens_a(1)$0" -> "text(1)"	[label=tokenize];
 	"tokens_a(1)$1" -> "max_seq_length(1)$0"	[label=assignedFrom];
 	"tokens_a(1)$1" -> "tokens_a(1)$0"	[label=assignedFrom];
+	"longer(1)$1" -> "longer(1)$0"	[label=Add];
+	"longer(1)$1" -> "1(1)"	[label=Add];
 	"one_token(1)$0" -> "tokenizer(1)"	[label=Add];
 	"one_token(1)$0" -> "max_seq_length(1)$0"	[label=Add];
 	"one_token(1)$0" -> "tokens_a(1)$1"	[label=Add];
-	"one_token(1)$0" -> "[<_ast.Constant object at 0x12f9575e0>](1)"	[label=Add];
-	"one_token(1)$0" -> "[<_ast.Constant object at 0x12f9577f0>](1)"	[label=Add];
-	"one_token(1)$0" -> "[<_ast.Constant object at 0x12f957610>](1)"	[label=Add];
+	"one_token(1)$0" -> "[<_ast.Constant object at 0x7fd4902abd90>](1)"	[label=Add];
+	"one_token(1)$0" -> "[<_ast.Constant object at 0x7fd4902ab040>](1)"	[label=Add];
+	"one_token(1)$0" -> "[<_ast.Constant object at 0x7fd4902abf10>](1)"	[label=Add];
 	"one_token(1)$0" -> "len(1)"	[label=Add];
 	"all_tokens(1)$1" -> "all_tokens(1)$0"	[label=append];
 	"all_tokens(1)$1" -> "one_token(1)$0"	[label=append];
+	"print[102/4]" -> "longer(1)$1"	[label=print];
 	"BERT_MODEL_PATH(0)$1" -> "../input/bert-pretrained-models/uncased_l-12_h-768_a-12/uncased_L-12_H-768_A-12/(0)"	[label=assignedFrom];
 	"tokenizer(0)$0" -> "BertTokenizer(0)"	[label=from_pretrained];
 	"tokenizer(0)$0" -> "BERT_MODEL_PATH(0)$1"	[label=from_pretrained];
@@ -210,7 +206,11 @@ digraph "" {
 	"train_df(0)$0" -> "os(0)$0"	[label=sample];
 	"train_df(0)$0" -> "train.csv(0)"	[label=sample];
 	"train.csv(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"print[2]" -> "train_df(0)$0"	[label=print];
+	"loaded \%d records(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"print[109/0]" -> "train_df(0)$0"	[label=print];
+	"print[109/0]" -> "loaded \%d records(0)"	[label=print];
+	"print[109/0]" -> "len(0)"	[label=print];
+	"len(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=astype];
 	"train_df(0)$1" -> "comment_text(0)"	[label=astype];
 	"train_df(0)$1" -> "str(0)"	[label=astype];
@@ -224,18 +224,18 @@ digraph "" {
 	"DUMMY_VALUE(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"train_df(0)$2" -> "0(0)"	[label=fillna];
 	"train_df(0)$2" -> "train_df(0)$1"	[label=fillna];
-	"[<_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fade160>, <_ast.Constant \
-object at 0x12fade7f0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade6d0>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fade160>, <_ast.Constant \
-object at 0x12fade7f0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade6d0>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fade910>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"y_columns(0)$0" -> "[<_ast.Constant object at 0x12fade910>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832820>, <_ast.Constant object at 0x7fd500832b20>, <_\
+ast.Constant object at 0x7fd500832e20>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832fa0>, <_ast.Constant object at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832ac0>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832820>, <_ast.Constant object at 0x7fd500832b20>, <_\
+ast.Constant object at 0x7fd500832e20>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832fa0>, <_ast.Constant object at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832ac0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008326a0>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"y_columns(0)$0" -> "[<_ast.Constant object at 0x7fd5008326a0>](0)"	[label=assignedFrom];
 	"train_df(0)$3" -> "1(0)"	[label=drop];
 	"train_df(0)$3" -> "train_df(0)$2"	[label=drop];
-	"train_df(0)$3" -> "[<_ast.Constant object at 0x12fadecd0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fadecd0>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"train_df(0)$3" -> "[<_ast.Constant object at 0x7fd500832a60>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500832a60>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"train_df(0)$4" -> "target(0)"	[label=astype];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=astype];
 	"train_df(0)$4" -> "0.5(0)"	[label=astype];
@@ -275,22 +275,22 @@ ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	
 	"torch(0)$1" -> "torch(0)$0"	[label=manual_seed];
 	"torch(0)$2" -> "True(0)"	[label=assignedFrom];
 	"torch(0)$2" -> "torch(0)$1"	[label=assignedFrom];
-	"model(0)$0" -> "len(0)"	[label=from_pretrained];
 	"model(0)$0" -> "BertForSequenceClassification(0)"	[label=from_pretrained];
 	"model(0)$0" -> "../working(0)"	[label=from_pretrained];
 	"model(0)$0" -> "None(0)"	[label=from_pretrained];
+	"model(0)$0" -> "len(0)"	[label=from_pretrained];
 	"model(0)$0" -> "y_columns(0)$0"	[label=from_pretrained];
 	"model(0)$1" -> "model(0)$0"	[label=zero_grad];
 	"model(0)$2" -> "device(0)$0"	[label=to];
 	"model(0)$2" -> "model(0)$1"	[label=to];
 	"param_optimizer(0)$0" -> "model(0)$2"	[label=list];
-	"[<_ast.Constant object at 0x12f8c3d00>, <_ast.Constant object at 0x12f8c3be0>, <_ast.Constant object at 0x12f8c3f40>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"no_decay(0)$0" -> "[<_ast.Constant object at 0x12f8c3d00>, <_ast.Constant object at 0x12f8c3be0>, <_ast.Constant object at 0x12f8c3f40>](0)"	[label=assignedFrom];
-	"[<_ast.Dict object at 0x12f8c36d0>, <_ast.Dict object at 0x12f8f54f0>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
-	"optimizer_grouped_parameters(0)$0" -> "[<_ast.Dict object at 0x12f8c36d0>, <_ast.Dict object at 0x12f8f54f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b2e0>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"no_decay(0)$0" -> "[<_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b2e0>](0)"	[label=assignedFrom];
+	"[<_ast.Dict object at 0x7fd50085b700>, <_ast.Dict object at 0x7fd50085b370>](0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"optimizer_grouped_parameters(0)$0" -> "[<_ast.Dict object at 0x7fd50085b700>, <_ast.Dict object at 0x7fd50085b370>](0)"	[label=assignedFrom];
 	"train(0)$0" -> "train_dataset(0)$0"	[label=assignedFrom];
-	"num_train_optimization_steps(0)$0" -> "len(0)"	[label=int];
 	"num_train_optimization_steps(0)$0" -> "EPOCHS(0)$0"	[label=int];
+	"num_train_optimization_steps(0)$0" -> "len(0)"	[label=int];
 	"num_train_optimization_steps(0)$0" -> "batch_size(0)$0"	[label=int];
 	"num_train_optimization_steps(0)$0" -> "accumulation_steps(0)$0"	[label=int];
 	"num_train_optimization_steps(0)$0" -> "train(0)$0"	[label=int];
@@ -366,9 +366,9 @@ ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	
 	"avg_loss(0)$1" -> "train_loader(0)$0"	[label=Add];
 	"avg_loss(0)$1" -> "avg_loss(0)$0"	[label=Add];
 	"avg_loss(0)$1" -> "loss(0)$0"	[label=Add];
-	"avg_accuracy(0)$1" -> "len(0)"	[label=Add];
 	"avg_accuracy(0)$1" -> "device(0)$0"	[label=Add];
 	"avg_accuracy(0)$1" -> "0(0)"	[label=Add];
+	"avg_accuracy(0)$1" -> "len(0)"	[label=Add];
 	"avg_accuracy(0)$1" -> "0.5(0)"	[label=Add];
 	"avg_accuracy(0)$1" -> "torch(0)$2"	[label=Add];
 	"avg_accuracy(0)$1" -> "train_loader(0)$0"	[label=Add];
@@ -379,8 +379,8 @@ ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	
 	"torch(0)$3" -> "output_model_file(0)$0"	[label=save];
 	"torch(0)$3" -> "torch(0)$2"	[label=save];
 	"torch(0)$3" -> "model(0)$4"	[label=save];
-	"model(0)$5" -> "len(0)"	[label=BertForSequenceClassification];
 	"model(0)$5" -> "bert_config(0)$0"	[label=BertForSequenceClassification];
+	"model(0)$5" -> "len(0)"	[label=BertForSequenceClassification];
 	"model(0)$5" -> "y_columns(0)$0"	[label=BertForSequenceClassification];
 	"model(0)$6" -> "output_model_file(0)$0"	[label=load_state_dict];
 	"model(0)$6" -> "torch(0)$3"	[label=load_state_dict];
@@ -421,24 +421,11 @@ ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	
 	"total(3)$0" -> "p(3)"	[label=sum];
 	"total(3)$0" -> "np(3)"	[label=sum];
 	"bias_df(4)" -> "get_final_metric[0]"	[label=_argToVar];
-	"get_final_metric[0]" -> "bias_metrics_df(0)$0"	[label=get_final_metric];
-	"bias_metrics_df(0)$0" -> "target(0)"	[label=compute_bias_metrics_for_model];
-	"bias_metrics_df(0)$0" -> "identity_columns(0)$0"	[label=compute_bias_metrics_for_model];
-	"bias_metrics_df(0)$0" -> "test_df(0)$1"	[label=compute_bias_metrics_for_model];
-	"bias_metrics_df(0)$0" -> "MODEL_NAME(0)$0"	[label=compute_bias_metrics_for_model];
 	"overall_auc(4)" -> "get_final_metric[1]"	[label=_argToVar];
-	"get_final_metric[1]" -> "calculate_overall_auc(0)"	[label=get_final_metric];
-	"calculate_overall_auc(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"POWER(4)" -> "get_final_metric[2]"	[label=_argToVar];
-	"get_final_metric[2]" -> "test_df(0)$1"	[label=get_final_metric];
-	"test_df(0)$1" -> "test_df(0)$0"	[label=numpy];
-	"test_df(0)$1" -> "torch(0)$3"	[label=numpy];
-	"test_df(0)$1" -> "valid_preds(0)$1"	[label=numpy];
 	"OVERALL_MODEL_WEIGHT(4)" -> "get_final_metric[3]"	[label=_argToVar];
-	"get_final_metric[3]" -> "MODEL_NAME(0)$0"	[label=get_final_metric];
-	"MODEL_NAME(0)$0" -> "model1(0)"	[label=assignedFrom];
 	"bias_score(4)$0" -> "np(4)"	[label=average];
-	"bias_score(4)$0" -> "[<_ast.Call object at 0x12f894130>, <_ast.Call object at 0x12f8942b0>, <_ast.Call object at 0x12f894430>](4)"	[label=average];
+	"bias_score(4)$0" -> "[<_ast.Call object at 0x7fd4c04addf0>, <_ast.Call object at 0x7fd4c04adf70>, <_ast.Call object at 0x7fd50081f130>](4)"	[label=average];
 	"subgroup_auc(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 	"SUBGROUP_AUC(0)$0" -> "subgroup_auc(0)"	[label=assignedFrom];
 	"bpsn_auc(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
@@ -512,5 +499,18 @@ ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade610>](0)"	
 	"records(9)$1" -> "records(9)$0"	[label=append];
 	"records(9)$1" -> "record(9)$3"	[label=append];
 	"model1(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
+	"MODEL_NAME(0)$0" -> "model1(0)"	[label=assignedFrom];
+	"test_df(0)$1" -> "test_df(0)$0"	[label=numpy];
+	"test_df(0)$1" -> "torch(0)$3"	[label=numpy];
+	"test_df(0)$1" -> "valid_preds(0)$1"	[label=numpy];
 	"TOXICITY_COLUMN(0)$1" -> "target(0)"	[label=assignedFrom];
+	"bias_metrics_df(0)$0" -> "target(0)"	[label=compute_bias_metrics_for_model];
+	"bias_metrics_df(0)$0" -> "identity_columns(0)$0"	[label=compute_bias_metrics_for_model];
+	"bias_metrics_df(0)$0" -> "MODEL_NAME(0)$0"	[label=compute_bias_metrics_for_model];
+	"bias_metrics_df(0)$0" -> "test_df(0)$1"	[label=compute_bias_metrics_for_model];
+	"get_final_metric[289/0]" -> "MODEL_NAME(0)$0"	[label=get_final_metric];
+	"get_final_metric[289/0]" -> "test_df(0)$1"	[label=get_final_metric];
+	"get_final_metric[289/0]" -> "bias_metrics_df(0)$0"	[label=get_final_metric];
+	"get_final_metric[289/0]" -> "calculate_overall_auc(0)"	[label=get_final_metric];
+	"calculate_overall_auc(0)" -> "toxic-bert-plain-vanila.ipynb"	[label=appearsIn];
 }

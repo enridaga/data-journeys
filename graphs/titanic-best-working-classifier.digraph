@@ -22,66 +22,22 @@ digraph "" {
 	"test(0)$0" -> "Age(0)"	[label=read_csv];
 	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x1305328e0>, <_ast.Name object at 0x130532610>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"full_data(0)$0" -> "[<_ast.Name object at 0x1305328e0>, <_ast.Name object at 0x130532610>](0)"	[label=assignedFrom];
-	"print[0]" -> "pd(0)"	[label=print];
-	"print[0]" -> "train(0)$0"	[label=print];
-	"print[0]" -> "train(0)$1"	[label=print];
-	"print[0]" -> "train(0)$2"	[label=print];
-	"print[0]" -> "train(0)$4"	[label=print];
-	"train(0)$1" -> "pd(0)"	[label=qcut];
-	"train(0)$1" -> "train(0)$0"	[label=qcut];
-	"train(0)$1" -> "train(0)$1"	[label=qcut];
-	"train(0)$1" -> "Fare(0)"	[label=qcut];
-	"train(0)$1" -> "4(0)"	[label=qcut];
-	"train(0)$2" -> "pd(0)"	[label=cut];
-	"train(0)$2" -> "Age(0)"	[label=cut];
-	"train(0)$2" -> "train(0)$1"	[label=cut];
-	"train(0)$2" -> "train(0)$2"	[label=cut];
-	"train(0)$2" -> "5(0)"	[label=cut];
-	"train(0)$4" -> "1(0)"	[label=drop];
-	"train(0)$4" -> "train(0)$3"	[label=drop];
-	"train(0)$4" -> "[<_ast.Constant object at 0x12f8d3190>, <_ast.Constant object at 0x12f8d31c0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x1305321c0>, <_ast.Constant object at 0x130532430>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"print[1]" -> "train(0)$2"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x1305321c0>, <_ast.Constant object at 0x130532430>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x1305327c0>, <_ast.Constant object at 0x130532880>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12f88a3d0>, <_ast.Constant object at 0x12f88a460>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12f88ac70>, <_ast.Constant object at 0x12f88a700>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f190>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4fee0>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12fadec70>, <_ast.Constant object at 0x12fade4f0>](0)"	[label=print];
-	"print[1]" -> "[<_ast.Constant object at 0x12f85ec10>, <_ast.Constant object at 0x12f85ea60>](0)"	[label=print];
-	"print[1]" -> "10(0)"	[label=print];
-	"[<_ast.Constant object at 0x1305327c0>, <_ast.Constant object at 0x130532880>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88a3d0>, <_ast.Constant object at 0x12f88a460>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88ac70>, <_ast.Constant object at 0x12f88a700>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f190>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4fee0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadec70>, <_ast.Constant object at 0x12fade4f0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ec10>, <_ast.Constant object at 0x12f85ea60>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"10(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305326a0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"print[2]" -> "[<_ast.Constant object at 0x1305326a0>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x1305321f0>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12f88a370>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12f88aa00>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fc4ff70>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fc4f550>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fade1c0>](0)"	[label=print];
-	"print[2]" -> "Title(0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12f85ef40>](0)"	[label=print];
-	"[<_ast.Constant object at 0x1305321f0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88a370>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88aa00>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4ff70>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f550>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade1c0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"Title(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ef40>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5008321f0>, <_ast.Name object at 0x7fd500832580>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"full_data(0)$0" -> "[<_ast.Name object at 0x7fd5008321f0>, <_ast.Name object at 0x7fd500832580>](0)"	[label=assignedFrom];
+	"print[20/0]" -> "train(0)$0"	[label=print];
+	"print[21/0]" -> "train(0)$0"	[label=print];
+	"print[21/0]" -> "[<_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832c40>](0)"	[label=print];
+	"print[21/0]" -> "[<_ast.Constant object at 0x7fd500832dc0>](0)"	[label=print];
+	"print[21/0]" -> "False(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832c40>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832dc0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"False(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"print[3]" -> "train(0)$2"	[label=print];
-	"print[3]" -> "False(0)"	[label=print];
+	"print[22/0]" -> "train(0)$0"	[label=print];
+	"print[22/0]" -> "False(0)"	[label=print];
+	"print[22/0]" -> "[<_ast.Constant object at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832b80>](0)"	[label=print];
+	"print[22/0]" -> "[<_ast.Constant object at 0x7fd500832e50>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832b80>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832e50>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)" -> "full_data(0)$0"	[label=iteratorOf];
 	"dataset(0)$0" -> "full_data(0)$0"	[label=iteratorOf];
@@ -93,23 +49,52 @@ digraph "" {
 	"SibSp(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"Parch(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"1(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[27/0]" -> "train(0)$0"	[label=print];
+	"print[27/0]" -> "False(0)"	[label=print];
+	"print[27/0]" -> "[<_ast.Constant object at 0x7fd4c04cceb0>, <_ast.Constant object at 0x7fd4c04cc4c0>](0)"	[label=print];
+	"print[27/0]" -> "[<_ast.Constant object at 0x7fd4c04cca30>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04cceb0>, <_ast.Constant object at 0x7fd4c04cc4c0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cca30>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)$1" -> "0(0)"	[label=assignedFrom];
 	"dataset(0)$1" -> "dataset(0)$0"	[label=assignedFrom];
 	"dataset(0)$2" -> "full_data(0)$0"	[label=iteratorOf];
 	"dataset(0)$2" -> "1(0)"	[label=assignedFrom];
 	"dataset(0)$2" -> "dataset(0)$1"	[label=assignedFrom];
+	"print[34/0]" -> "train(0)$0"	[label=print];
+	"print[34/0]" -> "False(0)"	[label=print];
+	"print[34/0]" -> "[<_ast.Constant object at 0x7fd4c04ccbb0>, <_ast.Constant object at 0x7fd4c04ccf70>](0)"	[label=print];
+	"print[34/0]" -> "[<_ast.Constant object at 0x7fd4c04cc100>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ccbb0>, <_ast.Constant object at 0x7fd4c04ccf70>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc100>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)$3" -> "full_data(0)$0"	[label=iteratorOf];
 	"dataset(0)$3" -> "dataset(0)$2"	[label=fillna];
 	"dataset(0)$3" -> "Embarked(0)"	[label=fillna];
 	"dataset(0)$3" -> "S(0)"	[label=fillna];
 	"Embarked(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"S(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[39/0]" -> "train(0)$0"	[label=print];
+	"print[39/0]" -> "False(0)"	[label=print];
+	"print[39/0]" -> "[<_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999d90>](0)"	[label=print];
+	"print[39/0]" -> "[<_ast.Constant object at 0x7fd500999b20>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999d90>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999b20>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)$4" -> "train(0)$0"	[label=fillna];
 	"dataset(0)$4" -> "full_data(0)$0"	[label=iteratorOf];
 	"dataset(0)$4" -> "dataset(0)$3"	[label=fillna];
 	"dataset(0)$4" -> "Fare(0)"	[label=fillna];
 	"Fare(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"train(0)$1" -> "pd(0)"	[label=qcut];
+	"train(0)$1" -> "train(0)$0"	[label=qcut];
+	"train(0)$1" -> "Fare(0)"	[label=qcut];
+	"train(0)$1" -> "train(0)$1"	[label=qcut];
+	"train(0)$1" -> "4(0)"	[label=qcut];
 	"4(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[46/0]" -> "False(0)"	[label=print];
+	"print[46/0]" -> "train(0)$1"	[label=print];
+	"print[46/0]" -> "[<_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0b50>](0)"	[label=print];
+	"print[46/0]" -> "[<_ast.Constant object at 0x7fd5007f0a60>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0b50>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0a60>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"age_avg(0)$0" -> "Age(0)"	[label=mean];
 	"age_avg(0)$0" -> "dataset(0)$4"	[label=mean];
 	"age_std(0)$0" -> "Age(0)"	[label=std];
@@ -127,7 +112,18 @@ digraph "" {
 	"dataset(0)$6" -> "dataset(0)$5"	[label=astype];
 	"dataset(0)$6" -> "int(0)"	[label=astype];
 	"int(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"train(0)$2" -> "pd(0)"	[label=cut];
+	"train(0)$2" -> "Age(0)"	[label=cut];
+	"train(0)$2" -> "train(0)$1"	[label=cut];
+	"train(0)$2" -> "train(0)$2"	[label=cut];
+	"train(0)$2" -> "5(0)"	[label=cut];
 	"5(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[69/0]" -> "False(0)"	[label=print];
+	"print[69/0]" -> "train(0)$2"	[label=print];
+	"print[69/0]" -> "[<_ast.Constant object at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d0583df0>](0)"	[label=print];
+	"print[69/0]" -> "[<_ast.Constant object at 0x7fd4d0583610>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d0583df0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0583610>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"name(1)" -> "get_title[0]"	[label=_argToVar];
 	"title_search(1)$0" -> "name(1)"	[label=search];
 	"title_search(1)$0" -> "re(1)"	[label=search];
@@ -138,19 +134,23 @@ digraph "" {
 	"dataset(0)$7" -> "get_title(0)"	[label=apply];
 	"Name(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"get_title(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[90/0]" -> "pd(0)"	[label=print];
+	"print[90/0]" -> "train(0)$2"	[label=print];
+	"print[90/0]" -> "Title(0)"	[label=print];
+	"print[90/0]" -> "Sex(0)"	[label=print];
+	"Title(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"Sex(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"print[4]" -> "Sex(0)"	[label=print];
-	"dataset(0)$8" -> "Title(0)"	[label=replace];
 	"dataset(0)$8" -> "dataset(0)$7"	[label=replace];
-	"dataset(0)$8" -> "[<_ast.Constant object at 0x12f8956d0>, <_ast.Constant object at 0x12f895df0>, <_ast.Constant object at 0x12f895340>, <_ast.Constant \
-object at 0x12f895f10>, <_ast.Constant object at 0x12f895760>, <_ast.Constant object at 0x12f895c10>, <_ast.Constant object at 0x12f895490>, <_\
-ast.Constant object at 0x12f895d00>, <_ast.Constant object at 0x12f8951c0>, <_ast.Constant object at 0x12f895100>, <_ast.Constant \
-object at 0x12f8953a0>](0)"	[label=replace];
+	"dataset(0)$8" -> "Title(0)"	[label=replace];
+	"dataset(0)$8" -> "[<_ast.Constant object at 0x7fd5008527c0>, <_ast.Constant object at 0x7fd500852730>, <_ast.Constant object at 0x7fd5008529a0>, <_\
+ast.Constant object at 0x7fd500852d00>, <_ast.Constant object at 0x7fd500852b20>, <_ast.Constant object at 0x7fd500852be0>, <_ast.Constant \
+object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852d60>, <_ast.Constant object \
+at 0x7fd500852ac0>, <_ast.Constant object at 0x7fd500852d30>](0)"	[label=replace];
 	"dataset(0)$8" -> "Rare(0)"	[label=replace];
-	"[<_ast.Constant object at 0x12f8956d0>, <_ast.Constant object at 0x12f895df0>, <_ast.Constant object at 0x12f895340>, <_ast.Constant \
-object at 0x12f895f10>, <_ast.Constant object at 0x12f895760>, <_ast.Constant object at 0x12f895c10>, <_ast.Constant object at 0x12f895490>, <_\
-ast.Constant object at 0x12f895d00>, <_ast.Constant object at 0x12f8951c0>, <_ast.Constant object at 0x12f895100>, <_ast.Constant \
-object at 0x12f8953a0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008527c0>, <_ast.Constant object at 0x7fd500852730>, <_ast.Constant object at 0x7fd5008529a0>, <_\
+ast.Constant object at 0x7fd500852d00>, <_ast.Constant object at 0x7fd500852b20>, <_ast.Constant object at 0x7fd500852be0>, <_ast.Constant \
+object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852d60>, <_ast.Constant object \
+at 0x7fd500852ac0>, <_ast.Constant object at 0x7fd500852d30>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"Rare(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)$9" -> "Title(0)"	[label=replace];
 	"dataset(0)$9" -> "dataset(0)$8"	[label=replace];
@@ -170,6 +170,12 @@ object at 0x12f8953a0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=ap
 	"dataset(0)$11" -> "Mrs(0)"	[label=replace];
 	"Mme(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"Mrs(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"print[107/0]" -> "False(0)"	[label=print];
+	"print[107/0]" -> "train(0)$2"	[label=print];
+	"print[107/0]" -> "[<_ast.Constant object at 0x7fd5008363a0>, <_ast.Constant object at 0x7fd500836e80>](0)"	[label=print];
+	"print[107/0]" -> "[<_ast.Constant object at 0x7fd500836fa0>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5008363a0>, <_ast.Constant object at 0x7fd500836e80>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836fa0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"dataset(0)$12" -> "0(0)"	[label=astype];
 	"dataset(0)$12" -> "1(0)"	[label=astype];
 	"dataset(0)$12" -> "int(0)"	[label=astype];
@@ -231,19 +237,25 @@ object at 0x12f8953a0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=ap
 	"dataset(0)$24" -> "dataset(0)$23"	[label=assignedFrom];
 	"dataset(0)$25" -> "4(0)"	[label=assignedFrom];
 	"dataset(0)$25" -> "dataset(0)$24"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4c70>, <_ast.Constant object at 0x12f9a4ca0>, <_ast.Constant object at 0x12f9a4cd0>, <_ast.Constant \
-object at 0x12f9a4dc0>, <_ast.Constant object at 0x12f9a4e50>, <_ast.Constant object at 0x12f9a4e80>, <_ast.Constant object at 0x12f9a4e20>](\
-0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"drop_elements(0)$0" -> "[<_ast.Constant object at 0x12f9a4c70>, <_ast.Constant object at 0x12f9a4ca0>, <_ast.Constant object at 0x12f9a4cd0>, <_ast.Constant \
-object at 0x12f9a4dc0>, <_ast.Constant object at 0x12f9a4e50>, <_ast.Constant object at 0x12f9a4e80>, <_ast.Constant object at 0x12f9a4e20>](\
-0)"	[label=assignedFrom];
-	"train(0)$3" -> "train(0)$2"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff220>, <_\
+ast.Constant object at 0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant \
+object at 0x7fd4c04fff40>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"drop_elements(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff220>, <_\
+ast.Constant object at 0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant \
+object at 0x7fd4c04fff40>](0)"	[label=assignedFrom];
 	"train(0)$3" -> "1(0)"	[label=drop];
+	"train(0)$3" -> "train(0)$2"	[label=drop];
 	"train(0)$3" -> "drop_elements(0)$0"	[label=drop];
-	"[<_ast.Constant object at 0x12f8d3190>, <_ast.Constant object at 0x12f8d31c0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"train(0)$4" -> "1(0)"	[label=drop];
+	"train(0)$4" -> "train(0)$3"	[label=drop];
+	"train(0)$4" -> "[<_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ffaf0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ffaf0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"test(0)$1" -> "test(0)$0"	[label=drop];
 	"test(0)$1" -> "1(0)"	[label=drop];
 	"test(0)$1" -> "drop_elements(0)$0"	[label=drop];
+	"print[176/0]" -> "train(0)$4"	[label=print];
+	"print[176/0]" -> "10(0)"	[label=print];
+	"10(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"train(0)$5" -> "train(0)$4"	[label=assignedFrom];
 	"test(0)$2" -> "test(0)$1"	[label=assignedFrom];
 	"matplotlib.pyplot" -> "titanic-best-working-classifier.ipynb"	[label=importedBy];
@@ -300,14 +312,14 @@ object at 0x12f9a4dc0>, <_ast.Constant object at 0x12f9a4e50>, <_ast.Constant ob
 	LogisticRegression -> "sklearn.linear_model"	[label=importedBy];
 	"LogisticRegression(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"LogisticRegression(0)" -> LogisticRegression	[label=assignedFrom];
-	"[<_ast.Call object at 0x12f8d3fd0>, <_ast.Call object at 0x12f8a70a0>, <_ast.Call object at 0x12f8a7190>, <_ast.Call object at 0x12f8a71f0>, <_\
-ast.Call object at 0x12f8a7250>, <_ast.Call object at 0x12f8a72b0>, <_ast.Call object at 0x12f8a7310>, <_ast.Call object at 0x12f8a7370>, <_\
-ast.Call object at 0x12f8a73d0>, <_ast.Call object at 0x12f8a7430>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"classifiers(0)$0" -> "[<_ast.Call object at 0x12f8d3fd0>, <_ast.Call object at 0x12f8a70a0>, <_ast.Call object at 0x12f8a7190>, <_ast.Call object at 0x12f8a71f0>, <_\
-ast.Call object at 0x12f8a7250>, <_ast.Call object at 0x12f8a72b0>, <_ast.Call object at 0x12f8a7310>, <_ast.Call object at 0x12f8a7370>, <_\
-ast.Call object at 0x12f8a73d0>, <_ast.Call object at 0x12f8a7430>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a7520>, <_ast.Constant object at 0x12f8a7550>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
-	"log_cols(0)$0" -> "[<_ast.Constant object at 0x12f8a7520>, <_ast.Constant object at 0x12f8a7550>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd50080d400>, <_ast.Call object at 0x7fd50080d9d0>, <_ast.Call object at 0x7fd50080d730>, <_ast.Call object \
+at 0x7fd50080d4f0>, <_ast.Call object at 0x7fd50080d7c0>, <_ast.Call object at 0x7fd50080d1c0>, <_ast.Call object at 0x7fd50080d820>, <_\
+ast.Call object at 0x7fd50080de50>, <_ast.Call object at 0x7fd4c05cb0a0>, <_ast.Call object at 0x7fd4c05cb160>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"classifiers(0)$0" -> "[<_ast.Call object at 0x7fd50080d400>, <_ast.Call object at 0x7fd50080d9d0>, <_ast.Call object at 0x7fd50080d730>, <_ast.Call object \
+at 0x7fd50080d4f0>, <_ast.Call object at 0x7fd50080d7c0>, <_ast.Call object at 0x7fd50080d1c0>, <_ast.Call object at 0x7fd50080d820>, <_\
+ast.Call object at 0x7fd50080de50>, <_ast.Call object at 0x7fd4c05cb0a0>, <_ast.Call object at 0x7fd4c05cb160>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05cb490>, <_ast.Constant object at 0x7fd4c05cb190>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"log_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c05cb490>, <_ast.Constant object at 0x7fd4c05cb190>](0)"	[label=assignedFrom];
 	"log(0)$0" -> "pd(0)"	[label=DataFrame];
 	"log(0)$0" -> "log_cols(0)$0"	[label=DataFrame];
 	"sss(0)$0" -> "0(0)"	[label=StratifiedShuffleSplit];
@@ -361,8 +373,8 @@ ast.Call object at 0x12f8a73d0>, <_ast.Call object at 0x12f8a7430>](0)"	[label=a
 	"10.0(0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"log_entry(0)$0" -> "pd(0)"	[label=DataFrame];
 	"log_entry(0)$0" -> "log_cols(0)$0"	[label=DataFrame];
-	"log_entry(0)$0" -> "[<_ast.List object at 0x12f895c40>](0)"	[label=DataFrame];
-	"[<_ast.List object at 0x12f895c40>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
+	"log_entry(0)$0" -> "[<_ast.List object at 0x7fd50081ffd0>](0)"	[label=DataFrame];
+	"[<_ast.List object at 0x7fd50081ffd0>](0)" -> "titanic-best-working-classifier.ipynb"	[label=appearsIn];
 	"log(0)$1" -> "log(0)$0"	[label=append];
 	"log(0)$1" -> "log_entry(0)$0"	[label=append];
 	"plt(0)$0" -> "plt(0)"	[label=xlabel];

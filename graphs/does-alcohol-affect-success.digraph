@@ -15,11 +15,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x1305324f0>, <_ast.Constant object at 0x130532790>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x1305324f0>, <_ast.Constant object at 0x130532790>](0)"	[label=print];
+	"print[26/0]" -> "check_output(0)"	[label=print];
+	"print[26/0]" -> "[<_ast.Constant object at 0x7fd5007f0340>, <_ast.Constant object at 0x7fd5007f02e0>](0)"	[label=print];
+	"print[26/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0340>, <_ast.Constant object at 0x7fd5007f02e0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"data(0)$0" -> "pd(0)"	[label=read_csv];
 	"data(0)$0" -> "../input/student-mat.csv(0)"	[label=read_csv];
 	"../input/student-mat.csv(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
@@ -50,38 +50,38 @@ digraph "" {
 	"len(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"ax(0)$0" -> "sns(0)$0"	[label=barplot];
 	"ax(0)$0" -> "list(0)$1"	[label=barplot];
-	"ax(0)$0" -> "[<_ast.Constant object at 0x12f9515e0>, <_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f9514c0>, <_ast.Constant \
-object at 0x12f951730>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f951e80>, <_\
-ast.Constant object at 0x12f951790>, <_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951a00>, <_ast.Constant \
-object at 0x12f951f10>](0)"	[label=barplot];
-	"[<_ast.Constant object at 0x12f9515e0>, <_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f9514c0>, <_ast.Constant \
-object at 0x12f951730>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f951e80>, <_\
-ast.Constant object at 0x12f951790>, <_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951a00>, <_ast.Constant \
-object at 0x12f951f10>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
+	"ax(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc2b0>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04cc490>, <_\
+ast.Constant object at 0x7fd4c04cc070>, <_ast.Constant object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04cc5b0>, <_ast.Constant \
+object at 0x7fd4c04cc430>, <_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04ccd30>, <_ast.Constant object \
+at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04ccbe0>](0)"	[label=barplot];
+	"[<_ast.Constant object at 0x7fd4c04cc2b0>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04cc490>, <_\
+ast.Constant object at 0x7fd4c04cc070>, <_ast.Constant object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04cc5b0>, <_ast.Constant \
+object at 0x7fd4c04cc430>, <_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04ccd30>, <_ast.Constant object \
+at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04ccbe0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=ylabel];
 	"plt(0)$3" -> "Number of Students(0)"	[label=ylabel];
 	"Number of Students(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "plt(0)$3"	[label=xlabel];
 	"plt(0)$4" -> "Weekly alcohol consumption(0)"	[label=xlabel];
 	"Weekly alcohol consumption(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951d90>, <_ast.Constant object at 0x12f951bb0>, <_ast.Constant object at 0x12f951a90>, <_ast.Constant \
-object at 0x12f951ee0>, <_ast.Constant object at 0x12f951d60>, <_ast.Constant object at 0x12f9519d0>, <_ast.Constant object at 0x12f9514f0>, <_\
-ast.Constant object at 0x12f9512e0>, <_ast.Constant object at 0x12f951ca0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"labels(0)$0" -> "[<_ast.Constant object at 0x12f951d90>, <_ast.Constant object at 0x12f951bb0>, <_ast.Constant object at 0x12f951a90>, <_ast.Constant \
-object at 0x12f951ee0>, <_ast.Constant object at 0x12f951d60>, <_ast.Constant object at 0x12f9519d0>, <_ast.Constant object at 0x12f9514f0>, <_\
-ast.Constant object at 0x12f9512e0>, <_ast.Constant object at 0x12f951ca0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f951c40>, <_ast.Constant object at 0x12f951c70>, <_ast.Constant object at 0x12f951fa0>, <_ast.Constant \
-object at 0x12f951cd0>, <_ast.Constant object at 0x12f951b80>, <_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f951af0>, <_\
-ast.Constant object at 0x12f9517f0>, <_ast.Constant object at 0x12f9518b0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12f951c40>, <_ast.Constant object at 0x12f951c70>, <_ast.Constant object at 0x12f951fa0>, <_ast.Constant \
-object at 0x12f951cd0>, <_ast.Constant object at 0x12f951b80>, <_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f951af0>, <_\
-ast.Constant object at 0x12f9517f0>, <_ast.Constant object at 0x12f9518b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f951d30>, <_ast.Constant object at 0x12f951520>, <_ast.Constant object at 0x12f9519a0>, <_ast.Constant \
-object at 0x12f951be0>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951100>, <_\
-ast.Constant object at 0x12f951070>, <_ast.Constant object at 0x12f951e50>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
-	"explode(0)$0" -> "[<_ast.Constant object at 0x12f951d30>, <_ast.Constant object at 0x12f951520>, <_ast.Constant object at 0x12f9519a0>, <_ast.Constant \
-object at 0x12f951be0>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951100>, <_\
-ast.Constant object at 0x12f951070>, <_ast.Constant object at 0x12f951e50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc8b0>, <_ast.Constant object at 0x7fd4c04ccca0>, <_\
+ast.Constant object at 0x7fd4c04cc1f0>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant \
+object at 0x7fd4c04ccdc0>, <_ast.Constant object at 0x7fd4c04cceb0>, <_ast.Constant object at 0x7fd4c04cc190>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
+	"labels(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc8b0>, <_ast.Constant object at 0x7fd4c04ccca0>, <_\
+ast.Constant object at 0x7fd4c04cc1f0>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant \
+object at 0x7fd4c04ccdc0>, <_ast.Constant object at 0x7fd4c04cceb0>, <_ast.Constant object at 0x7fd4c04cc190>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cccd0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999580>, <_\
+ast.Constant object at 0x7fd500999640>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999700>, <_ast.Constant \
+object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd5009996d0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cccd0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999580>, <_\
+ast.Constant object at 0x7fd500999640>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999700>, <_ast.Constant \
+object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd5009996d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd500999970>, <_\
+ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant \
+object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999940>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
+	"explode(0)$0" -> "[<_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd500999970>, <_\
+ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant \
+object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999940>](0)"	[label=assignedFrom];
 	"sizes(0)$0" -> "[](0)"	[label=assignedFrom];
 	"sizes(0)$1" -> "data(0)$1"	[label=append];
 	"sizes(0)$1" -> "i(0)"	[label=append];
@@ -132,12 +132,12 @@ ast.Constant object at 0x12f951070>, <_ast.Constant object at 0x12f951e50>](0)"	
 	"list(0)$3" -> "list(0)$2"	[label=append];
 	"ax(0)$1" -> "sns(0)$1"	[label=barplot];
 	"ax(0)$1" -> "list(0)$3"	[label=barplot];
-	"ax(0)$1" -> "[<_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f9575b0>, <_ast.Constant object at 0x12f9576a0>, <_ast.Constant \
-object at 0x12f9578b0>, <_ast.Constant object at 0x12f957c70>, <_ast.Constant object at 0x12f957160>, <_ast.Constant object at 0x12f957c10>, <_\
-ast.Constant object at 0x12f957490>, <_ast.Constant object at 0x12f957dc0>](0)"	[label=barplot];
-	"[<_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f9575b0>, <_ast.Constant object at 0x12f9576a0>, <_ast.Constant \
-object at 0x12f9578b0>, <_ast.Constant object at 0x12f957c70>, <_ast.Constant object at 0x12f957160>, <_ast.Constant object at 0x12f957c10>, <_\
-ast.Constant object at 0x12f957490>, <_ast.Constant object at 0x12f957dc0>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
+	"ax(0)$1" -> "[<_ast.Constant object at 0x7fd501141850>, <_ast.Constant object at 0x7fd501141cd0>, <_ast.Constant object at 0x7fd501141b50>, <_\
+ast.Constant object at 0x7fd501141310>, <_ast.Constant object at 0x7fd501141e80>, <_ast.Constant object at 0x7fd501141d00>, <_ast.Constant \
+object at 0x7fd501141a60>, <_ast.Constant object at 0x7fd501141700>, <_ast.Constant object at 0x7fd501141400>](0)"	[label=barplot];
+	"[<_ast.Constant object at 0x7fd501141850>, <_ast.Constant object at 0x7fd501141cd0>, <_ast.Constant object at 0x7fd501141b50>, <_\
+ast.Constant object at 0x7fd501141310>, <_ast.Constant object at 0x7fd501141e80>, <_ast.Constant object at 0x7fd501141d00>, <_ast.Constant \
+object at 0x7fd501141a60>, <_ast.Constant object at 0x7fd501141700>, <_ast.Constant object at 0x7fd501141400>](0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];
 	"plt(0)$9" -> "plt(0)$8"	[label=ylabel];
 	"plt(0)$9" -> "Average Grades of students(0)"	[label=ylabel];
 	"Average Grades of students(0)" -> "does-alcohol-affect-success.ipynb"	[label=appearsIn];

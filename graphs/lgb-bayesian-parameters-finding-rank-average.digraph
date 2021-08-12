@@ -126,7 +126,7 @@ digraph "" {
 	"clf(1)$0" -> "xg_train(1)$0"	[label=train];
 	"clf(1)$0" -> "lgb(1)"	[label=train];
 	"clf(1)$0" -> "num_round(1)$0"	[label=train];
-	"clf(1)$0" -> "[<_ast.Name object at 0x12fc4f100>](1)"	[label=train];
+	"clf(1)$0" -> "[<_ast.Name object at 0x7fd500999370>](1)"	[label=train];
 	"clf(1)$0" -> "250(1)"	[label=train];
 	"clf(1)$0" -> "50(1)"	[label=train];
 	"predictions(1)$0" -> "train_df(1)"	[label=predict];
@@ -188,38 +188,13 @@ digraph "" {
 	"LGB_BO(0)$0" -> "LGB_bayesian(0)"	[label=BayesianOptimization];
 	"LGB_BO(0)$0" -> "13(0)"	[label=BayesianOptimization];
 	"13(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"print[0]" -> "LGB_BO(0)$0"	[label=print];
-	"print[0]" -> "-(0)"	[label=print];
-	"print[0]" -> "Iteration {}: 
-	{}(0)"	[label=print];
-	"print[0]" -> "
-fold {}(0)"	[label=print];
-	"print[0]" -> "
-
-CV AUC: {:<0.2f}(0)"	[label=print];
-	"print[0]" -> "Rank averaging on(0)"	[label=print];
-	"-(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"Iteration {}: 
-	{}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"
-fold {}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"
-
-CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"Rank averaging on(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[104/0]" -> "LGB_BO(0)$0"	[label=print];
 	"init_points(0)$0" -> "5(0)"	[label=assignedFrom];
 	"n_iter(0)$0" -> "5(0)"	[label=assignedFrom];
+	"-(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[107/0]" -> "-(0)"	[label=print];
+	"print[107/0]" -> "130(0)"	[label=print];
 	"130(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"print[1]" -> "metrics(0)"	[label=print];
-	"print[1]" -> "130(0)"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"print[1]" -> "nfold(0)$0"	[label=print];
-	"print[1]" -> "i(0)$0"	[label=print];
-	"i(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"i(0)" -> "LGB_BO(0)$3"	[label=iteratorOf];
-	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"nfold(0)$0" -> "5(0)"	[label=assignedFrom];
-	"i(0)$0" -> "1(0)"	[label=assignedFrom];
 	"warnings(0)$0" -> "warnings(0)"	[label=filterwarnings];
 	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
 	"ignore(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
@@ -227,13 +202,18 @@ CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[la
 	"LGB_BO(0)$2" -> "LGB_BO(0)$1"	[label=probe];
 	"LGB_BO(0)$3" -> "LGB_BO(0)$2"	[label=maximize];
 	"enumerate(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"i(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"i(0)" -> "LGB_BO(0)$3"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"res(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"res(0)" -> "LGB_BO(0)$3"	[label=iteratorOf];
 	"res(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"print[2]" -> "train_df(0)$2"	[label=print];
-	"print[2]" -> "res(0)"	[label=print];
-	"print[2]" -> "fold predictions(0)"	[label=print];
-	"fold predictions(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"Iteration {}: 
+	{}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[131/4]" -> "i(0)"	[label=print];
+	"print[131/4]" -> "res(0)"	[label=print];
+	"print[131/4]" -> "Iteration {}: 
+	{}(0)"	[label=print];
 	"param_lgb(0)$0" -> "True(0)"	[label=assignedFrom];
 	"param_lgb(0)$0" -> "1(0)"	[label=assignedFrom];
 	"param_lgb(0)$0" -> "num_leaves(0)"	[label=assignedFrom];
@@ -294,6 +274,7 @@ CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[la
 	"gbdt(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"auc(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"False(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"nfold(0)$0" -> "5(0)"	[label=assignedFrom];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
 	"skf(0)$0" -> "True(0)"	[label=StratifiedKFold];
 	"skf(0)$0" -> "nfold(0)$0"	[label=StratifiedKFold];
@@ -307,12 +288,18 @@ CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[la
 	"predictions(0)$0" -> "test_df(0)$1"	[label=zeros];
 	"predictions(0)$0" -> "nfold(0)$0"	[label=zeros];
 	"predictions(0)$0" -> "len(0)"	[label=zeros];
+	"i(0)$0" -> "1(0)"	[label=assignedFrom];
 	"train_index(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"train_index(0)" -> "train_df(0)$2"	[label=iteratorOf];
 	"train_index(0)" -> "skf(0)$0"	[label=iteratorOf];
 	"valid_index(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"valid_index(0)" -> "train_df(0)$2"	[label=iteratorOf];
 	"valid_index(0)" -> "skf(0)$0"	[label=iteratorOf];
+	"
+fold {}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[168/4]" -> "i(0)$0"	[label=print];
+	"print[168/4]" -> "
+fold {}(0)"	[label=print];
 	"xg_train(0)$0" -> "lgb(0)"	[label=Dataset];
 	"xg_train(0)$0" -> "target(0)$0"	[label=Dataset];
 	"xg_train(0)$0" -> "predictors(0)$0"	[label=Dataset];
@@ -329,11 +316,11 @@ CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[la
 	"clf(0)$0" -> "param_lgb(0)$0"	[label=train];
 	"clf(0)$0" -> "xg_train(0)$0"	[label=train];
 	"clf(0)$0" -> "5000(0)"	[label=train];
-	"clf(0)$0" -> "[<_ast.Name object at 0x12f8f2d00>](0)"	[label=train];
+	"clf(0)$0" -> "[<_ast.Name object at 0x7fd4c04ad430>](0)"	[label=train];
 	"clf(0)$0" -> "250(0)"	[label=train];
 	"clf(0)$0" -> "50(0)"	[label=train];
 	"5000(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8f2d00>](0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04ad430>](0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"250(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"50(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"oof(0)$1" -> "predictors(0)$0"	[label=predict];
@@ -350,7 +337,20 @@ CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[la
 	"i(0)$1" -> "i(0)$0"	[label=Add];
 	"i(0)$1" -> "range(0)"	[label=iteratorOf];
 	"range(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
-	"print[3]" -> "oof(0)$1"	[label=print];
+	"
+
+CV AUC: {:<0.2f}(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[187/0]" -> "metrics(0)"	[label=print];
+	"print[187/0]" -> "train_df(0)$2"	[label=print];
+	"print[187/0]" -> "oof(0)$1"	[label=print];
+	"print[187/0]" -> "
+
+CV AUC: {:<0.2f}(0)"	[label=print];
+	"Rank averaging on(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
+	"print[189/0]" -> "nfold(0)$0"	[label=print];
+	"print[189/0]" -> "Rank averaging on(0)"	[label=print];
+	"print[189/0]" -> "fold predictions(0)"	[label=print];
+	"fold predictions(0)" -> "lgb-bayesian-parameters-finding-rank-average.ipynb"	[label=appearsIn];
 	"rank_predictions(0)$0" -> "np(0)"	[label=zeros];
 	"rank_predictions(0)$0" -> "1(0)"	[label=zeros];
 	"rank_predictions(0)$0" -> "0(0)"	[label=zeros];

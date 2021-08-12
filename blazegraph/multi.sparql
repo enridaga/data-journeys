@@ -1,0 +1,39 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl:  <http://www.w3.org/2002/07/owl#> 
+PREFIX dj:   <http://purl.org/dj/> 
+PREFIX : <http://purl.org/datajourneys/> 
+
+SELECT DISTINCT ?Notebook ?Node ?Arc ?Label ?Team
+WHERE {
+  BIND ( STRBEFORE(SUBSTR(STR(?Node), 27), "#") AS ?Notebook ) .
+
+  # Training set
+  { BIND(dj:print as ?Arc) . BIND("T1" AS ?Team) . BIND(":Visualisation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:append as ?Arc) . BIND("T1" AS ?Team) . BIND(":Preparation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:plot as ?Arc) . BIND("T1" AS ?Team) . BIND(":Visualisation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:Add as ?Arc) . BIND("T1" AS ?Team) . BIND(":Preparation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:importedBy as ?Arc) . BIND("T1" AS ?Team) . BIND(":Reuse" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:read_csv as ?Arc) . BIND("T1" AS ?Team) . BIND(":Movement" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:to_csv as ?Arc) . BIND("T1" AS ?Team) . BIND(":Movement" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:predict as ?Arc) . BIND("T1" AS ?Team) . BIND(":Analysis" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:tanh as ?Arc) . BIND("T1" AS ?Team) . BIND(":Analysis" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  # Test set
+  { BIND(dj:subplots as ?Arc) . BIND("T2" AS ?Team) . BIND(":Visualisation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:iteratorOf as ?Arc) . BIND("T2" AS ?Team) . BIND(":Preparation" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:_argToVar as ?Arc) . BIND("T2" AS ?Team) . BIND(":Reuse" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:copy as ?Arc) . BIND("T1" AS ?Team) . BIND(":Movement" AS ?Label) . ?Node ?Arc [] . }
+  UNION
+  { BIND(dj:fit as ?Arc) . BIND("T1" AS ?Team) . BIND(":Analysis" AS ?Label) . ?Node ?Arc [] . }
+}

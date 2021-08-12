@@ -72,8 +72,8 @@ digraph "" {
 	"axes(0)$2" -> "axes(0)$1"	[label=imshow];
 	"axes(0)$3" -> "pred_mask(0)$1"	[label=imshow];
 	"axes(0)$3" -> "axes(0)$2"	[label=imshow];
-	"[<_ast.Constant object at 0x12f8f5af0>, <_ast.Constant object at 0x12f8f52b0>, <_ast.Constant object at 0x12f8f5a90>](0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"labels(0)$0" -> "[<_ast.Constant object at 0x12f8f5af0>, <_ast.Constant object at 0x12f8f52b0>, <_ast.Constant object at 0x12f8f5a90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ff4c0>](0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"labels(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ff4c0>](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ind(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ind(0)" -> "axes(0)$3"	[label=iteratorOf];
@@ -138,10 +138,10 @@ digraph "" {
 	"axes(0)$10" -> "axes(0)$9"	[label=annotate];
 	"axes(0)$11" -> "union(0)$0"	[label=imshow];
 	"axes(0)$11" -> "axes(0)$10"	[label=imshow];
-	"[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951b50>, <_ast.Constant object at 0x12f951430>, <_ast.Constant \
-object at 0x12f951700>](0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"labels(0)$1" -> "[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951b50>, <_ast.Constant object at 0x12f951430>, <_ast.Constant \
-object at 0x12f951700>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832910>, <_\
+ast.Constant object at 0x7fd500832040>](0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"labels(0)$1" -> "[<_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832910>, <_\
+ast.Constant object at 0x7fd500832040>](0)"	[label=assignedFrom];
 	"ax(0)$2" -> "ind(0)"	[label=set_title];
 	"ax(0)$2" -> "ax(0)$1"	[label=set_title];
 	"ax(0)$2" -> "labels(0)$1"	[label=set_title];
@@ -170,23 +170,26 @@ object at 0x12f951700>](0)"	[label=assignedFrom];
 	"s(1)$1" -> "s(1)$0"	[label=assignedFrom];
 	"s(1)$1" -> "thresh(1)"	[label=assignedFrom];
 	"Does this IoU hit at each threshold?(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"print[0]" -> "Does this IoU hit at each threshold?(0)"	[label=print];
-	"print[0]" -> "get_iou_vector(0)"	[label=print];
-	"print[0]" -> "Average precision value for image `{}` is {}(0)"	[label=print];
-	"print[0]" -> "ppt(0)$1"	[label=print];
+	"print[69/0]" -> "Does this IoU hit at each threshold?(0)"	[label=print];
 	"get_iou_vector(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"Average precision value for image `{}` is {}(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"ppt(0)$1" -> "A(0)$0"	[label=get_iou_vector];
-	"ppt(0)$1" -> "GT-P(0)"	[label=get_iou_vector];
-	"print[1]" -> "im_id(0)$0"	[label=print];
-	"print[1]" -> "A(0)$0"	[label=print];
-	"print[2]" -> "B(0)$0"	[label=print];
-	"print[2]" -> "ppt(0)$1"	[label=print];
-	"print[2]" -> "ppt(0)$0"	[label=print];
+	"print[70/0]" -> "A(0)$0"	[label=print];
+	"print[70/0]" -> "B(0)$0"	[label=print];
+	"print[70/0]" -> "get_iou_vector(0)"	[label=print];
+	"print[70/0]" -> "GT-P(0)"	[label=print];
+	"GT-P(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ppt(0)$0" -> "A(0)$0"	[label=get_iou_vector];
 	"ppt(0)$0" -> "B(0)$0"	[label=get_iou_vector];
 	"ppt(0)$0" -> "precisions_per_thresholds(0)"	[label=get_iou_vector];
-	"GT-P(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"print[3]" -> "GT-P(0)"	[label=print];
 	"precisions_per_thresholds(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"Average precision value for image `{}` is {}(0)" -> "explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[72/0]" -> "im_id(0)$0"	[label=print];
+	"print[72/0]" -> "ppt(0)$0"	[label=print];
+	"print[72/0]" -> "Average precision value for image `{}` is {}(0)"	[label=print];
+	"ppt(0)$1" -> "A(0)$0"	[label=get_iou_vector];
+	"ppt(0)$1" -> "GT-P(0)"	[label=get_iou_vector];
+	"print[75/0]" -> "Does this IoU hit at each threshold?(0)"	[label=print];
+	"print[76/0]" -> "ppt(0)$1"	[label=print];
+	"print[77/0]" -> "im_id(0)$0"	[label=print];
+	"print[77/0]" -> "Average precision value for image `{}` is {}(0)"	[label=print];
+	"print[77/0]" -> "ppt(0)$1"	[label=print];
 }

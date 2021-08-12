@@ -23,8 +23,8 @@ digraph "" {
 	numpy -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	"np(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"np(0)" -> numpy	[label=assignedFrom];
-	"[<_ast.List object at 0x12f8ab280>, <_ast.List object at 0x12f8ab880>, <_ast.List object at 0x12f85e5b0>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"texts(0)$0" -> "[<_ast.List object at 0x12f8ab280>, <_ast.List object at 0x12f8ab880>, <_ast.List object at 0x12f85e5b0>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd4c048ef40>, <_ast.List object at 0x7fd4c048ec10>, <_ast.List object at 0x7fd500999f10>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"texts(0)$0" -> "[<_ast.List object at 0x7fd4c048ef40>, <_ast.List object at 0x7fd4c048ec10>, <_ast.List object at 0x7fd500999f10>](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"dictionary(0)$0" -> "reduce(0)"	[label=list];
 	"dictionary(0)$0" -> "texts(0)$0"	[label=list];
@@ -52,43 +52,8 @@ digraph "" {
 	"t(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"t(0)" -> "texts(0)$0"	[label=iteratorOf];
 	"vectorize(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"print[0]" -> "vectorize(0)"	[label=print];
-	"print[0]" -> "Is a bot? (0)"	[label=print];
-	"print[0]" -> "Is mobile? (0)"	[label=print];
-	"print[0]" -> "Is PC? (0)"	[label=print];
-	"print[0]" -> "OS Family: (0)"	[label=print];
-	"print[0]" -> "OS Version: (0)"	[label=print];
-	"print[0]" -> "Browser Family: (0)"	[label=print];
-	"print[0]" -> "Browser Version: (0)"	[label=print];
-	"print[0]" -> "cross_val_score(0)$2"	[label=print];
-	"print[0]" -> "LR + selection: (0)"	[label=print];
-	"print[0]" -> "LR: (0)"	[label=print];
-	"print[0]" -> "RF: (0)"	[label=print];
-	"Is a bot? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"Is mobile? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"Is PC? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"OS Family: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"OS Version: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"Browser Family: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"Browser Version: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"cross_val_score(0)$2" -> cross_val_score	[label=assignedFrom];
-	"cross_val_score(0)$2" -> "cross_val_score(0)$1"	[label=mean];
-	"LR + selection: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"LR: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"RF: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"print[1]" -> "t(0)"	[label=print];
-	"print[1]" -> "cross_val_score(0)$2"	[label=print];
-	"print[1]" -> "ua(0)$1"	[label=print];
-	"print[1]" -> "pipe(0)$0"	[label=print];
-	"print[1]" -> "lr(0)"	[label=print];
-	"print[1]" -> "rf(0)"	[label=print];
-	"ua(0)$1" -> "ua(0)$1"	[label=parse];
-	"ua(0)$1" -> "user_agents(0)"	[label=parse];
-	"pipe(0)$0" -> "LogisticRegression(0)"	[label=make_pipeline];
-	"pipe(0)$0" -> "RandomForestClassifier(0)"	[label=make_pipeline];
-	"pipe(0)$0" -> "SelectFromModel(0)"	[label=make_pipeline];
-	"lr(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"rf(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[32/4]" -> "t(0)"	[label=print];
+	"print[32/4]" -> "vectorize(0)"	[label=print];
 	"sklearn.feature_extraction.text" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	CountVectorizer -> "sklearn.feature_extraction.text"	[label=importedBy];
 	"CountVectorizer(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
@@ -109,19 +74,19 @@ digraph "" {
 	"vect(0)$4" -> "char_wb(0)"	[label=CountVectorizer];
 	"char_wb(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"n1(0)$0" -> "vect(0)$4"	[label=toarray];
-	"n1(0)$0" -> "[<_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadeeb0>](0)"	[label=toarray];
-	"[<_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadeeb0>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"n1(0)$0" -> "[<_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd5008322e0>](0)"	[label=toarray];
+	"[<_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd5008322e0>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"n2(0)$0" -> "vect(0)$4"	[label=toarray];
-	"n2(0)$0" -> "[<_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadeeb0>](0)"	[label=toarray];
+	"n2(0)$0" -> "[<_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd5008322e0>](0)"	[label=toarray];
 	"n3(0)$0" -> "vect(0)$4"	[label=toarray];
-	"n3(0)$0" -> "[<_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadeeb0>](0)"	[label=toarray];
+	"n3(0)$0" -> "[<_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd5008322e0>](0)"	[label=toarray];
 	"n4(0)$0" -> "vect(0)$4"	[label=toarray];
-	"n4(0)$0" -> "[<_ast.Constant object at 0x12fade220>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadeeb0>](0)"	[label=toarray];
+	"n4(0)$0" -> "[<_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd5008322e0>](0)"	[label=toarray];
 	"keras.applications.resnet50" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	ResNet50 -> "keras.applications.resnet50"	[label=importedBy];
 	"ResNet50(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
@@ -195,8 +160,8 @@ object at 0x12fadeeb0>](0)"	[label=toarray];
 	"revgc(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"revgc(0)" -> reverse_geocoder	[label=assignedFrom];
 	"revgc(0)$0" -> "revgc(0)"	[label=search];
-	"revgc(0)$0" -> "[<_ast.Subscript object at 0x12fc4f190>, <_ast.Subscript object at 0x12fc4ff70>](0)"	[label=search];
-	"[<_ast.Subscript object at 0x12fc4f190>, <_ast.Subscript object at 0x12fc4ff70>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"revgc(0)$0" -> "[<_ast.Subscript object at 0x7fd4c04af070>, <_ast.Subscript object at 0x7fd4c04af3a0>](0)"	[label=search];
+	"[<_ast.Subscript object at 0x7fd4c04af070>, <_ast.Subscript object at 0x7fd4c04af3a0>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"df(0)$1" -> "pd(0)"	[label=apply];
 	"df(0)$1" -> "df(0)$0"	[label=apply];
 	"df(0)$1" -> "x(0)$2"	[label=apply];
@@ -223,16 +188,18 @@ object at 0x12fadeeb0>](0)"	[label=toarray];
 	"distance(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"distance(0)" -> distance	[label=assignedFrom];
 	"make_harmonic_features(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"euclidean[0]" -> "make_harmonic_features(0)"	[label=euclidean];
+	"euclidean[98/0]" -> "1(0)"	[label=euclidean];
+	"euclidean[98/0]" -> "make_harmonic_features(0)"	[label=euclidean];
+	"euclidean[98/0]" -> "23(0)"	[label=euclidean];
 	"23(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"euclidean[1]" -> "23(0)"	[label=euclidean];
-	"euclidean[1]" -> "9(0)"	[label=euclidean];
+	"euclidean[99/0]" -> "make_harmonic_features(0)"	[label=euclidean];
+	"euclidean[99/0]" -> "9(0)"	[label=euclidean];
+	"euclidean[99/0]" -> "11(0)"	[label=euclidean];
 	"9(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"euclidean[2]" -> "make_harmonic_features(0)"	[label=euclidean];
-	"euclidean[3]" -> "1(0)"	[label=euclidean];
-	"euclidean[3]" -> "11(0)"	[label=euclidean];
-	"euclidean[3]" -> "21(0)"	[label=euclidean];
 	"11(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"euclidean[100/0]" -> "make_harmonic_features(0)"	[label=euclidean];
+	"euclidean[100/0]" -> "9(0)"	[label=euclidean];
+	"euclidean[100/0]" -> "21(0)"	[label=euclidean];
 	"21(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	user_agents -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	"user_agents(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
@@ -241,6 +208,29 @@ object at 0x12fadeeb0>](0)"	[label=toarray];
 0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"ua(0)$0" -> "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36(\
 0)"	[label=assignedFrom];
+	"ua(0)$1" -> "user_agents(0)"	[label=parse];
+	"ua(0)$1" -> "ua(0)$1"	[label=parse];
+	"Is a bot? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[107/0]" -> "ua(0)$1"	[label=print];
+	"print[107/0]" -> "Is a bot? (0)"	[label=print];
+	"Is mobile? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[108/0]" -> "ua(0)$1"	[label=print];
+	"print[108/0]" -> "Is mobile? (0)"	[label=print];
+	"Is PC? (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[109/0]" -> "ua(0)$1"	[label=print];
+	"print[109/0]" -> "Is PC? (0)"	[label=print];
+	"OS Family: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[110/0]" -> "ua(0)$1"	[label=print];
+	"print[110/0]" -> "OS Family: (0)"	[label=print];
+	"OS Version: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[111/0]" -> "ua(0)$1"	[label=print];
+	"print[111/0]" -> "OS Version: (0)"	[label=print];
+	"Browser Family: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[112/0]" -> "ua(0)$1"	[label=print];
+	"print[112/0]" -> "Browser Family: (0)"	[label=print];
+	"Browser Version: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[113/0]" -> "ua(0)$1"	[label=print];
+	"print[113/0]" -> "Browser Version: (0)"	[label=print];
 	"sklearn.preprocessing" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	StandardScaler -> "sklearn.preprocessing"	[label=importedBy];
 	"StandardScaler(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
@@ -258,25 +248,19 @@ object at 0x12fadeeb0>](0)"	[label=toarray];
 	"data(0)$1" -> "1000(0)"	[label=reshape];
 	"10(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"1000(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"shapiro[0]" -> "np(0)"	[label=shapiro];
-	"shapiro[0]" -> "StandardScaler(0)"	[label=shapiro];
-	"shapiro[0]" -> "data(0)$1"	[label=shapiro];
-	"shapiro[0]" -> "data(0)$3"	[label=shapiro];
-	"data(0)$3" -> "1(0)"	[label=rvs];
-	"data(0)$3" -> "1000(0)"	[label=rvs];
-	"data(0)$3" -> "lognorm(0)"	[label=rvs];
-	"shapiro[1]" -> "data(0)$1"	[label=shapiro];
-	"shapiro[1]" -> "data(0)$3"	[label=shapiro];
+	"shapiro[120/0]" -> "data(0)$1"	[label=shapiro];
+	"shapiro[122/0]" -> "StandardScaler(0)"	[label=shapiro];
+	"shapiro[122/0]" -> "data(0)$1"	[label=shapiro];
 	"data(0)$2" -> "np(0)"	[label=astype];
 	"data(0)$2" -> "1(0)"	[label=astype];
-	"data(0)$2" -> "[<_ast.Constant object at 0x12feb14c0>, <_ast.Constant object at 0x12feb10a0>, <_ast.Constant object at 0x12feb16d0>, <_ast.UnaryOp \
-object at 0x12feb1cd0>, <_ast.Constant object at 0x12feb10d0>, <_ast.Constant object at 0x12feb1100>, <_ast.Constant object at 0x12feb12b0>, <_\
-ast.Constant object at 0x12feb11c0>, <_ast.UnaryOp object at 0x12feb13d0>, <_ast.Constant object at 0x12feb1040>, <_ast.Constant \
-object at 0x12feb1220>](0)"	[label=astype];
-	"[<_ast.Constant object at 0x12feb14c0>, <_ast.Constant object at 0x12feb10a0>, <_ast.Constant object at 0x12feb16d0>, <_ast.UnaryOp \
-object at 0x12feb1cd0>, <_ast.Constant object at 0x12feb10d0>, <_ast.Constant object at 0x12feb1100>, <_ast.Constant object at 0x12feb12b0>, <_\
-ast.Constant object at 0x12feb11c0>, <_ast.UnaryOp object at 0x12feb13d0>, <_ast.Constant object at 0x12feb1040>, <_ast.Constant \
-object at 0x12feb1220>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Constant object at 0x7fd5009af3d0>, <_ast.Constant object at 0x7fd5009af8b0>, <_ast.Constant object at 0x7fd5009af880>, <_\
+ast.UnaryOp object at 0x7fd5009af280>, <_ast.Constant object at 0x7fd5009afa90>, <_ast.Constant object at 0x7fd5009afe20>, <_ast.Constant \
+object at 0x7fd5009af4f0>, <_ast.Constant object at 0x7fd5009af100>, <_ast.UnaryOp object at 0x7fd5009affa0>, <_ast.Constant object \
+at 0x7fd5009afa00>, <_ast.Constant object at 0x7fd5009af7f0>](0)"	[label=astype];
+	"[<_ast.Constant object at 0x7fd5009af3d0>, <_ast.Constant object at 0x7fd5009af8b0>, <_ast.Constant object at 0x7fd5009af880>, <_\
+ast.UnaryOp object at 0x7fd5009af280>, <_ast.Constant object at 0x7fd5009afa90>, <_ast.Constant object at 0x7fd5009afe20>, <_ast.Constant \
+object at 0x7fd5009af4f0>, <_ast.Constant object at 0x7fd5009af100>, <_ast.UnaryOp object at 0x7fd5009affa0>, <_ast.Constant object \
+at 0x7fd5009afa00>, <_ast.Constant object at 0x7fd5009af7f0>](0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"StandardScaler(0)$0" -> "StandardScaler(0)"	[label=fit_transform];
 	"StandardScaler(0)$0" -> "data(0)$2"	[label=fit_transform];
 	MinMaxScaler -> "sklearn.preprocessing"	[label=importedBy];
@@ -287,6 +271,12 @@ object at 0x12feb1220>](0)" -> "topic-6-feature-engineering-and-feature-selectio
 	lognorm -> "scipy.stats"	[label=importedBy];
 	"lognorm(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"lognorm(0)" -> lognorm	[label=assignedFrom];
+	"data(0)$3" -> "1(0)"	[label=rvs];
+	"data(0)$3" -> "1000(0)"	[label=rvs];
+	"data(0)$3" -> "lognorm(0)"	[label=rvs];
+	"shapiro[135/0]" -> "data(0)$3"	[label=shapiro];
+	"shapiro[136/0]" -> "np(0)"	[label=shapiro];
+	"shapiro[136/0]" -> "data(0)$3"	[label=shapiro];
 	"statsmodels.api" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	"sm(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"sm(0)" -> "statsmodels.api"	[label=assignedFrom];
@@ -359,6 +349,8 @@ object at 0x12feb1220>](0)" -> "topic-6-feature-engineering-and-feature-selectio
 	"0.9(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"cross_val_score(0)$0" -> "cross_val_score(0)"	[label=mean];
 	"cross_val_score(0)$1" -> "cross_val_score(0)$0"	[label=mean];
+	"cross_val_score(0)$2" -> cross_val_score	[label=assignedFrom];
+	"cross_val_score(0)$2" -> "cross_val_score(0)$1"	[label=mean];
 	"sklearn.ensemble" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
@@ -370,24 +362,56 @@ object at 0x12feb1220>](0)" -> "topic-6-feature-engineering-and-feature-selectio
 	make_pipeline -> "sklearn.pipeline"	[label=importedBy];
 	"make_pipeline(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
 	"make_pipeline(0)" -> make_pipeline	[label=assignedFrom];
-	"print[2]" -> "rf(0)"	[label=print];
-	"print[2]" -> "x_data_generated(0)"	[label=print];
-	"print[2]" -> "pipe1(0)$0"	[label=print];
-	"print[2]" -> "pipe2(0)$0"	[label=print];
+	"pipe(0)$0" -> "LogisticRegression(0)"	[label=make_pipeline];
+	"pipe(0)$0" -> "RandomForestClassifier(0)"	[label=make_pipeline];
+	"pipe(0)$0" -> "SelectFromModel(0)"	[label=make_pipeline];
+	"print[188/0]" -> "x_data_generated(0)"	[label=print];
+	"print[188/0]" -> "y_data_generated(0)"	[label=print];
+	"print[188/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[188/0]" -> "lr(0)"	[label=print];
+	"print[188/0]" -> "neg_log_loss(0)"	[label=print];
+	"lr(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"neg_log_loss(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[189/0]" -> "x_data_generated(0)"	[label=print];
+	"print[189/0]" -> "y_data_generated(0)"	[label=print];
+	"print[189/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[189/0]" -> "neg_log_loss(0)"	[label=print];
+	"print[189/0]" -> "rf(0)"	[label=print];
+	"rf(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[190/0]" -> "x_data_generated(0)"	[label=print];
+	"print[190/0]" -> "y_data_generated(0)"	[label=print];
+	"print[190/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[190/0]" -> "pipe(0)$0"	[label=print];
+	"print[190/0]" -> "neg_log_loss(0)"	[label=print];
+	"x_data(0)$0" -> "x_data_generated(0)"	[label=assignedFrom];
+	"y_data(0)$0" -> "y_data_generated(0)"	[label=assignedFrom];
 	"pipe1(0)$0" -> "StandardScaler(0)$0"	[label=make_pipeline];
 	"pipe1(0)$0" -> "LogisticRegression(0)"	[label=make_pipeline];
 	"pipe1(0)$0" -> "RandomForestClassifier(0)"	[label=make_pipeline];
 	"pipe1(0)$0" -> "SelectFromModel(0)"	[label=make_pipeline];
 	"pipe2(0)$0" -> "StandardScaler(0)$0"	[label=make_pipeline];
 	"pipe2(0)$0" -> "LogisticRegression(0)"	[label=make_pipeline];
-	"print[3]" -> "y_data_generated(0)"	[label=print];
-	"print[3]" -> "x_data(0)$0"	[label=print];
-	"x_data(0)$0" -> "x_data_generated(0)"	[label=assignedFrom];
-	"neg_log_loss(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
-	"print[4]" -> "neg_log_loss(0)"	[label=print];
-	"print[4]" -> "y_data(0)$0"	[label=print];
-	"y_data(0)$0" -> "y_data_generated(0)"	[label=assignedFrom];
-	"print[5]" -> "neg_log_loss(0)"	[label=print];
+	"LR + selection: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[201/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[201/0]" -> "neg_log_loss(0)"	[label=print];
+	"print[201/0]" -> "x_data(0)$0"	[label=print];
+	"print[201/0]" -> "y_data(0)$0"	[label=print];
+	"print[201/0]" -> "pipe1(0)$0"	[label=print];
+	"print[201/0]" -> "LR + selection: (0)"	[label=print];
+	"LR: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[202/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[202/0]" -> "neg_log_loss(0)"	[label=print];
+	"print[202/0]" -> "x_data(0)$0"	[label=print];
+	"print[202/0]" -> "y_data(0)$0"	[label=print];
+	"print[202/0]" -> "pipe2(0)$0"	[label=print];
+	"print[202/0]" -> "LR: (0)"	[label=print];
+	"RF: (0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];
+	"print[203/0]" -> "cross_val_score(0)$2"	[label=print];
+	"print[203/0]" -> "neg_log_loss(0)"	[label=print];
+	"print[203/0]" -> "rf(0)"	[label=print];
+	"print[203/0]" -> "x_data(0)$0"	[label=print];
+	"print[203/0]" -> "y_data(0)$0"	[label=print];
+	"print[203/0]" -> "RF: (0)"	[label=print];
 	"mlxtend.feature_selection" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=importedBy];
 	SequentialFeatureSelector -> "mlxtend.feature_selection"	[label=importedBy];
 	"SequentialFeatureSelector(0)" -> "topic-6-feature-engineering-and-feature-selection.ipynb"	[label=appearsIn];

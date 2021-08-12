@@ -6,11 +6,11 @@ strict digraph "" {
 	"melbourne_file_path(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)"	[label=assignedFrom];
 	"melbourne_data(0)$0" -> "pd(0)"	[label=read_csv];
 	"melbourne_data(0)$0" -> "melbourne_file_path(0)$0"	[label=read_csv];
-	"print[0]" -> "melbourne_data(0)$0"	[label=print];
-	"print[0]" -> "melbourne_price_data(0)$0"	[label=print];
+	"print[6/0]" -> "melbourne_data(0)$0"	[label=print];
 	"melbourne_price_data(0)$0" -> "melbourne_data(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x12f989ee0>](0)" -> "selecting-and-filtering-in-pandas.ipynb"	[label=appearsIn];
-	"columns_of_interest(0)$0" -> "[<_ast.Constant object at 0x12f989e80>, <_ast.Constant object at 0x12f989ee0>](0)"	[label=assignedFrom];
+	"print[10/0]" -> "melbourne_price_data(0)$0"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048e760>](0)" -> "selecting-and-filtering-in-pandas.ipynb"	[label=appearsIn];
+	"columns_of_interest(0)$0" -> "[<_ast.Constant object at 0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048e760>](0)"	[label=assignedFrom];
 	"two_columns_of_data(0)$0" -> "melbourne_data(0)$0"	[label=assignedFrom];
 	"two_columns_of_data(0)$0" -> "columns_of_interest(0)$0"	[label=assignedFrom];
 	"two_columns_of_data(0)$1" -> "two_columns_of_data(0)$0"	[label=describe];

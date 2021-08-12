@@ -70,10 +70,10 @@ strict digraph "" {
 	"field_idx(1)$0" -> "field(1)"	[label=index];
 	"field_idx(1)$0" -> "list(1)"	[label=index];
 	"field_idx(1)$0" -> "train(1)"	[label=index];
-	"[<_ast.Tuple object at 0x12f957c70>, <_ast.Tuple object at 0x12f957550>, <_ast.Tuple object at 0x12f957d30>, <_ast.Tuple object \
-at 0x12f9573d0>, <_ast.Tuple object at 0x12f957e50>, <_ast.Tuple object at 0x12f85ec40>](0)" -> "eli5-for-mercari.ipynb"	[label=appearsIn];
-	"vectorizer(0)$0" -> "[<_ast.Tuple object at 0x12f957c70>, <_ast.Tuple object at 0x12f957550>, <_ast.Tuple object at 0x12f957d30>, <_ast.Tuple object \
-at 0x12f9573d0>, <_ast.Tuple object at 0x12f957e50>, <_ast.Tuple object at 0x12f85ec40>](0)"	[label=FeatureUnion];
+	"[<_ast.Tuple object at 0x7fd5009c14f0>, <_ast.Tuple object at 0x7fd5009c1400>, <_ast.Tuple object at 0x7fd5009c1100>, <_ast.Tuple \
+object at 0x7fd5009c1670>, <_ast.Tuple object at 0x7fd5009c1fa0>, <_ast.Tuple object at 0x7fd5007f03d0>](0)" -> "eli5-for-mercari.ipynb"	[label=appearsIn];
+	"vectorizer(0)$0" -> "[<_ast.Tuple object at 0x7fd5009c14f0>, <_ast.Tuple object at 0x7fd5009c1400>, <_ast.Tuple object at 0x7fd5009c1100>, <_ast.Tuple \
+object at 0x7fd5009c1670>, <_ast.Tuple object at 0x7fd5009c1fa0>, <_ast.Tuple object at 0x7fd5007f03d0>](0)"	[label=FeatureUnion];
 	"X_train(0)$0" -> "train(0)$6"	[label=fit_transform];
 	"X_train(0)$0" -> "vectorizer(0)$0"	[label=fit_transform];
 	"y_true(2)" -> "get_rmsle[0]"	[label=_argToVar];
@@ -112,10 +112,10 @@ at 0x12f9573d0>, <_ast.Tuple object at 0x12f957e50>, <_ast.Tuple object at 0x12f
 	"rmsle(0)$0" -> "valid_ids(0)"	[label=get_rmsle];
 	"rmsle(0)$0" -> "y_pred_valid(0)$0"	[label=get_rmsle];
 	"valid rmsle: (0)" -> "eli5-for-mercari.ipynb"	[label=appearsIn];
-	"print[0]" -> "valid rmsle: (0)"	[label=print];
-	"print[1]" -> "rmsle(0)$0"	[label=print];
+	"print[129/4]" -> "rmsle(0)$0"	[label=print];
+	"print[129/4]" -> "valid rmsle: (0)"	[label=print];
+	"print[129/4]" -> ".5f(0)"	[label=print];
 	".5f(0)" -> "eli5-for-mercari.ipynb"	[label=appearsIn];
-	"print[2]" -> ".5f(0)"	[label=print];
 	"eli5(0)$0" -> "eli5(0)"	[label=show_weights];
 	"eli5(0)$0" -> "model(0)$1"	[label=show_weights];
 	"eli5(0)$1" -> "model(0)$1"	[label=show_weights];

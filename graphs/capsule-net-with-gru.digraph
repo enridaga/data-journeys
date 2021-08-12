@@ -112,13 +112,9 @@ digraph "" {
 	roc_auc_score -> "sklearn.metrics"	[label=importedBy];
 	"roc_auc_score(0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"roc_auc_score(0)" -> roc_auc_score	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "
- ROC-AUC - epoch: {:d} - score: {:.6f}(3)"	[label=print];
+	"print[25/0]" -> "os(0)"	[label=print];
+	"print[25/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "epoch(3)"	[label=print];
-	"epoch(3)" -> "on_epoch_end[1]"	[label=_argToVar];
 	"../input/glove840b300dtxt/glove.840B.300d.txt(0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"EMBEDDING_FILE(0)$0" -> "../input/glove840b300dtxt/glove.840B.300d.txt(0)"	[label=assignedFrom];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
@@ -136,10 +132,10 @@ digraph "" {
 	"X_train(0)$0" -> "comment_text(0)"	[label=lower];
 	"comment_text(0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"y_train(0)$0" -> "train(0)$1"	[label=assignedFrom];
-	"y_train(0)$0" -> "[<_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fade640>, <_ast.Constant object at 0x12fade610>, <_ast.Constant \
-object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade9a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fade640>, <_ast.Constant object at 0x12fade610>, <_ast.Constant \
-object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade9a0>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
+	"y_train(0)$0" -> "[<_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999790>, <_ast.Constant object at 0x7fd5009998b0>, <_\
+ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999700>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999790>, <_ast.Constant object at 0x7fd5009998b0>, <_\
+ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999700>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"X_test(0)$0" -> "test(0)$1"	[label=lower];
 	"X_test(0)$0" -> "comment_text(0)"	[label=lower];
 	"100000(0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
@@ -157,13 +153,17 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"self(2)$1" -> "validation_data(2)"	[label=assignedFrom];
 	"self(2)$1" -> "self(2)$0"	[label=assignedFrom];
 	"self(3)" -> "on_epoch_end[0]"	[label=_argToVar];
+	"epoch(3)" -> "on_epoch_end[1]"	[label=_argToVar];
 	"logs(3)" -> "on_epoch_end[2]"	[label=_argToVar];
 	"y_pred(3)$0" -> "self(3)"	[label=predict];
 	"y_pred(3)$0" -> "0(3)"	[label=predict];
 	"score(3)$0" -> "self(3)"	[label=roc_auc_score];
 	"score(3)$0" -> "y_pred(3)$0"	[label=roc_auc_score];
-	"print[2]" -> "1(3)"	[label=print];
-	"print[3]" -> "score(3)$0"	[label=print];
+	"print[53/12]" -> "epoch(3)"	[label=print];
+	"print[53/12]" -> "score(3)$0"	[label=print];
+	"print[53/12]" -> "
+ ROC-AUC - epoch: {:d} - score: {:.6f}(3)"	[label=print];
+	"print[53/12]" -> "1(3)"	[label=print];
 	"tok(0)$0" -> "text(0)"	[label=Tokenizer];
 	"tok(0)$0" -> "max_features(0)$0"	[label=Tokenizer];
 	"tok(0)$0" -> "True(0)"	[label=Tokenizer];
@@ -296,8 +296,8 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"u_hat_vecs(8)$1" -> "self(8)"	[label=local_conv1d];
 	"u_hat_vecs(8)$1" -> "u_vecs(8)"	[label=local_conv1d];
 	"u_hat_vecs(8)$1" -> "K(8)"	[label=local_conv1d];
-	"u_hat_vecs(8)$1" -> "[<_ast.Constant object at 0x12f89ca30>](8)"	[label=local_conv1d];
-	"u_hat_vecs(8)$1" -> "[<_ast.Constant object at 0x12f89cc10>](8)"	[label=local_conv1d];
+	"u_hat_vecs(8)$1" -> "[<_ast.Constant object at 0x7fd500829280>](8)"	[label=local_conv1d];
+	"u_hat_vecs(8)$1" -> "[<_ast.Constant object at 0x7fd5008295e0>](8)"	[label=local_conv1d];
 	"batch_size(8)$0" -> "u_vecs(8)"	[label=assignedFrom];
 	"batch_size(8)$0" -> "K(8)"	[label=assignedFrom];
 	"batch_size(8)$0" -> "0(8)"	[label=assignedFrom];
@@ -341,11 +341,11 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"outputs(8)$0" -> "K(8)"	[label=activation];
 	"outputs(8)$0" -> "u_hat_vecs(8)$3"	[label=activation];
 	"outputs(8)$0" -> "c(8)$1"	[label=activation];
-	"outputs(8)$0" -> "[<_ast.Constant object at 0x12f9a30a0>, <_ast.Constant object at 0x12f9a30d0>](8)"	[label=activation];
+	"outputs(8)$0" -> "[<_ast.Constant object at 0x7fd4c04abd30>, <_ast.Constant object at 0x7fd4c04abca0>](8)"	[label=activation];
 	"b(8)$3" -> "K(8)"	[label=batch_dot];
 	"b(8)$3" -> "u_hat_vecs(8)$3"	[label=batch_dot];
 	"b(8)$3" -> "outputs(8)$0"	[label=batch_dot];
-	"b(8)$3" -> "[<_ast.Constant object at 0x12f9a33d0>, <_ast.Constant object at 0x12f9a3400>](8)"	[label=batch_dot];
+	"b(8)$3" -> "[<_ast.Constant object at 0x7fd4c04a80d0>, <_ast.Constant object at 0x7fd4c04a8100>](8)"	[label=batch_dot];
 	"self(9)" -> "compute_output_shape[0]"	[label=_argToVar];
 	"input_shape(9)" -> "compute_output_shape[1]"	[label=_argToVar];
 	"input1(10)$0" -> "maxlen(10)"	[label=Input];
@@ -354,7 +354,7 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"embed_layer(10)$0" -> "Embedding(10)"	[label=assignedFrom];
 	"embed_layer(10)$0" -> "max_features(10)"	[label=assignedFrom];
 	"embed_layer(10)$0" -> "embed_size(10)"	[label=assignedFrom];
-	"embed_layer(10)$0" -> "[<_ast.Name object at 0x12f9a3b50>](10)"	[label=assignedFrom];
+	"embed_layer(10)$0" -> "[<_ast.Name object at 0x7fd4c04a8850>](10)"	[label=assignedFrom];
 	"embed_layer(10)$0" -> "False(10)"	[label=assignedFrom];
 	"embed_layer(10)$1" -> "embed_layer(10)$1"	[label=assignedFrom];
 	"embed_layer(10)$1" -> "SpatialDropout1D(10)"	[label=assignedFrom];
@@ -418,8 +418,8 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"hist(0)$0" -> "y_tra(0)$0"	[label=fit];
 	"hist(0)$0" -> "y_val(0)$0"	[label=fit];
 	"hist(0)$0" -> "model(0)"	[label=fit];
-	"hist(0)$0" -> "[<_ast.Name object at 0x12f88eb20>](0)"	[label=fit];
-	"[<_ast.Name object at 0x12f88eb20>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
+	"hist(0)$0" -> "[<_ast.Name object at 0x7fd500830820>](0)"	[label=fit];
+	"[<_ast.Name object at 0x7fd500830820>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"hist(0)$1" -> "1(0)"	[label=fit];
 	"hist(0)$1" -> "batch_size(0)$0"	[label=fit];
 	"hist(0)$1" -> "X_tra(0)$0"	[label=fit];
@@ -427,8 +427,8 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"hist(0)$1" -> "y_tra(0)$0"	[label=fit];
 	"hist(0)$1" -> "y_val(0)$0"	[label=fit];
 	"hist(0)$1" -> "model(0)"	[label=fit];
-	"hist(0)$1" -> "[<_ast.Name object at 0x12f882040>](0)"	[label=fit];
-	"[<_ast.Name object at 0x12f882040>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
+	"hist(0)$1" -> "[<_ast.Name object at 0x7fd500830d00>](0)"	[label=fit];
+	"[<_ast.Name object at 0x7fd500830d00>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"hist(0)$2" -> "1(0)"	[label=fit];
 	"hist(0)$2" -> "batch_size(0)$0"	[label=fit];
 	"hist(0)$2" -> "X_tra(0)$0"	[label=fit];
@@ -436,8 +436,8 @@ object at 0x12fade880>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant ob
 	"hist(0)$2" -> "y_tra(0)$0"	[label=fit];
 	"hist(0)$2" -> "y_val(0)$0"	[label=fit];
 	"hist(0)$2" -> "model(0)"	[label=fit];
-	"hist(0)$2" -> "[<_ast.Name object at 0x12f882550>](0)"	[label=fit];
-	"[<_ast.Name object at 0x12f882550>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
+	"hist(0)$2" -> "[<_ast.Name object at 0x7fd50080d280>](0)"	[label=fit];
+	"[<_ast.Name object at 0x7fd50080d280>](0)" -> "capsule-net-with-gru.ipynb"	[label=appearsIn];
 	"y_pred(0)$0" -> "x_test(0)$0"	[label=predict];
 	"y_pred(0)$0" -> "1(0)"	[label=predict];
 	"y_pred(0)$0" -> "model(0)"	[label=predict];

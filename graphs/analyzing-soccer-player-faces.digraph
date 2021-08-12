@@ -71,19 +71,16 @@ digraph "" {
 	"listOfImages(0)$1" -> "currImage(0)$0"	[label=append];
 	"enumerate(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
 	"no image for '(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"print[0]" -> "no image for '(0)"	[label=print];
-	"print[0]" -> "didn't load '(0)"	[label=print];
-	"print[0]" -> "Total number of loaded face images is \%d(0)"	[label=print];
-	"didn't load '(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"Total number of loaded face images is \%d(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"print[1]" -> "currName(0)$0"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"len(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
+	"print[57/12]" -> "currName(0)$0"	[label=print];
+	"print[57/12]" -> "no image for '(0)"	[label=print];
+	"print[57/12]" -> "'(0)"	[label=print];
 	"'(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"print[2]" -> "listOfImages(0)$1"	[label=print];
-	"print[2]" -> "'(0)"	[label=print];
 	"listOfPlayerNames(0)$1" -> "listOfPlayerNames(0)$0"	[label=append];
 	"listOfPlayerNames(0)$1" -> "currName(0)$0"	[label=append];
+	"didn't load '(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
+	"print[67/8]" -> "currName(0)$0"	[label=print];
+	"print[67/8]" -> "'(0)"	[label=print];
+	"print[67/8]" -> "didn't load '(0)"	[label=print];
 	"x(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
 	"femaleNames(0)$0" -> "femaleFaceFiles(0)$0"	[label=assignedFrom];
 	"femaleNames(0)$0" -> "/(0)"	[label=assignedFrom];
@@ -94,6 +91,11 @@ digraph "" {
 	"isFemale(0)$0" -> "listOfPlayerNames(0)$1"	[label=assignedFrom];
 	"isFemale(0)$0" -> "x(0)"	[label=assignedFrom];
 	"isFemale(0)$0" -> "femaleNames(0)$0"	[label=assignedFrom];
+	"Total number of loaded face images is \%d(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
+	"print[77/0]" -> "listOfImages(0)$1"	[label=print];
+	"print[77/0]" -> "Total number of loaded face images is \%d(0)"	[label=print];
+	"print[77/0]" -> "len(0)"	[label=print];
+	"len(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
 	"9(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
 	"matplotlib(0)$1" -> "matplotlib(0)$0"	[label=assignedFrom];
 	"matplotlib(0)$1" -> "9(0)"	[label=assignedFrom];
@@ -310,7 +312,7 @@ digraph "" {
 	"reconstructedImage(7)$1" -> "np(7)"	[label=ravel];
 	"reconstructedImage(7)$1" -> "reconstructedImage(7)$0"	[label=ravel];
 	"reconstructedImage(7)$1" -> "dataSampleInd(7)$0"	[label=ravel];
-	"reconstructedImage(7)$1" -> "[<_ast.Constant object at 0x12fc4a640>, <_ast.UnaryOp object at 0x12fc4a670>](7)"	[label=ravel];
+	"reconstructedImage(7)$1" -> "[<_ast.Constant object at 0x7fd490134340>, <_ast.UnaryOp object at 0x7fd490134370>](7)"	[label=ravel];
 	"diffImage(7)$0" -> "originalImage(7)$1"	[label=abs];
 	"diffImage(7)$0" -> "reconstructedImage(7)$1"	[label=abs];
 	"plt(7)$1" -> "0(7)"	[label=subplot];
@@ -585,8 +587,8 @@ digraph "" {
 	"showAsTraces(9)$0" -> "1(9)"	[label=assignedFrom];
 	"X_rep(9)$0" -> "self(9)"	[label=RepresentUsingModel];
 	"X_rep(9)$0" -> "X(9)"	[label=RepresentUsingModel];
-	"percentilesToShow(9)$0" -> "[<_ast.Constant object at 0x130523910>, <_ast.Constant object at 0x130523940>, <_ast.Constant object at 0x130523970>, <_ast.Constant \
-object at 0x1305239a0>, <_ast.Constant object at 0x1305239d0>, <_ast.Constant object at 0x130523a00>](9)"	[label=assignedFrom];
+	"percentilesToShow(9)$0" -> "[<_ast.Constant object at 0x7fd50081a640>, <_ast.Constant object at 0x7fd50081a610>, <_ast.Constant object at 0x7fd50081a670>, <_\
+ast.Constant object at 0x7fd50081a6a0>, <_ast.Constant object at 0x7fd50081a6d0>, <_ast.Constant object at 0x7fd50081a700>](9)"	[label=assignedFrom];
 	"numReadDataSamplePerPercentile(9)$0" -> "4(9)"	[label=assignedFrom];
 	"representationPercentiles(9)$0" -> "[](9)"	[label=assignedFrom];
 	"percentile(9)" -> "percentilesToShow(9)$0"	[label=iteratorOf];
@@ -851,13 +853,13 @@ object at 0x1305239a0>, <_ast.Constant object at 0x1305239d0>, <_ast.Constant ob
 	"listOfAllPlayerNames(0)$0" -> "playerData(0)$0"	[label=tolist];
 	"listOfAllPlayerNames(0)$0" -> "Name(0)"	[label=tolist];
 	"False(0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faf17f0>, <_ast.Constant object at 0x12faf1820>, <_ast.Constant object at 0x12faf1850>, <_ast.Constant \
-object at 0x12faf1880>, <_ast.Constant object at 0x12faf18b0>, <_ast.Constant object at 0x12faf18e0>](0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
-	"desiredColumns(0)$0" -> "[<_ast.Constant object at 0x12faf17f0>, <_ast.Constant object at 0x12faf1820>, <_ast.Constant object at 0x12faf1850>, <_ast.Constant \
-object at 0x12faf1880>, <_ast.Constant object at 0x12faf18b0>, <_ast.Constant object at 0x12faf18e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd49029c4c0>, <_ast.Constant object at 0x7fd49029c520>, <_ast.Constant object at 0x7fd49029c550>, <_\
+ast.Constant object at 0x7fd49029c580>, <_ast.Constant object at 0x7fd49029c5b0>, <_ast.Constant object at 0x7fd49029c5e0>](0)" -> "analyzing-soccer-player-faces.ipynb"	[label=appearsIn];
+	"desiredColumns(0)$0" -> "[<_ast.Constant object at 0x7fd49029c4c0>, <_ast.Constant object at 0x7fd49029c520>, <_ast.Constant object at 0x7fd49029c550>, <_\
+ast.Constant object at 0x7fd49029c580>, <_ast.Constant object at 0x7fd49029c5b0>, <_ast.Constant object at 0x7fd49029c5e0>](0)"	[label=assignedFrom];
 	"playerWithPicsData(0)$0" -> "pd(0)"	[label=DataFrame];
-	"playerWithPicsData(0)$0" -> "len(0)"	[label=DataFrame];
 	"playerWithPicsData(0)$0" -> "listOfPlayerNames(0)$1"	[label=DataFrame];
+	"playerWithPicsData(0)$0" -> "len(0)"	[label=DataFrame];
 	"playerWithPicsData(0)$0" -> "range(0)"	[label=DataFrame];
 	"playerWithPicsData(0)$0" -> "desiredColumns(0)$0"	[label=DataFrame];
 	"playerWithPicsData(0)$1" -> "listOfPlayerNames(0)$1"	[label=assignedFrom];

@@ -29,33 +29,23 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "Train shape : (0)"	[label=print];
-	"print[0]" -> "Test shape : (0)"	[label=print];
-	"print[0]" -> "columns(0)"	[label=print];
-	"print[0]" -> "Columns containing the unique values : (0)"	[label=print];
-	"print[0]" -> "--------------------------------------------------(0)"	[label=print];
-	"Train shape : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"Test shape : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"columns(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"columns(0)" -> "unique_values_dict(0)$0"	[label=iteratorOf];
-	"Columns containing the unique values : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"--------------------------------------------------(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f989af0>, <_ast.Constant object at 0x12f989f70>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f989af0>, <_ast.Constant object at 0x12f989f70>](0)"	[label=print];
-	"print[1]" -> "train_df(0)$0"	[label=print];
-	"print[1]" -> "test_df(0)$0"	[label=print];
-	"print[1]" -> "unique_val(0)"	[label=print];
+	"print[30/0]" -> "check_output(0)"	[label=print];
+	"print[30/0]" -> "[<_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd4c048e7f0>](0)"	[label=print];
+	"print[30/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd4c048e7f0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"utf8(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"train_df(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"test_df(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"test_df(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"unique_val(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"unique_val(0)" -> "unique_values_dict(0)$0"	[label=iteratorOf];
-	"utf8(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
-	"../input/train.csv(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"../input/test.csv(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"Train shape : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"print[35/0]" -> "train_df(0)$0"	[label=print];
+	"print[35/0]" -> "Train shape : (0)"	[label=print];
+	"Test shape : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"print[37/0]" -> "test_df(0)$0"	[label=print];
+	"print[37/0]" -> "Test shape : (0)"	[label=print];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"plt(0)$1" -> "np(0)"	[label=scatter];
@@ -84,15 +74,15 @@ digraph "" {
 	"y value(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "plt(0)$6"	[label=show];
 	"dtype_df(0)$0" -> "train_df(0)$2"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5520>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902ab130>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"dtype_df(0)$1" -> "dtype_df(0)$0"	[label=assignedFrom];
-	"dtype_df(0)$1" -> "[<_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5520>](0)"	[label=assignedFrom];
+	"dtype_df(0)$1" -> "[<_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902ab130>](0)"	[label=assignedFrom];
 	"dtype_df(0)$2" -> "dtype_df(0)$1"	[label=reset_index];
 	"missing_df(0)$0" -> "0(0)"	[label=reset_index];
 	"missing_df(0)$0" -> "train_df(0)$2"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d60>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cdee0>, <_ast.Constant object at 0x7fd4c04cdf70>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"missing_df(0)$1" -> "missing_df(0)$0"	[label=assignedFrom];
-	"missing_df(0)$1" -> "[<_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d60>](0)"	[label=assignedFrom];
+	"missing_df(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cdee0>, <_ast.Constant object at 0x7fd4c04cdf70>](0)"	[label=assignedFrom];
 	"missing_df(0)$2" -> "0(0)"	[label=assignedFrom];
 	"missing_df(0)$2" -> "missing_df(0)$1"	[label=assignedFrom];
 	"missing_df(0)$2" -> "missing_df(0)$2"	[label=assignedFrom];
@@ -120,6 +110,16 @@ digraph "" {
 	"tlist(0)$1" -> "tlist(0)$0"	[label=append];
 	"unique_values_dict(0)$0" -> "unique_values_dict(0)"	[label=assignedFrom];
 	"unique_values_dict(0)$0" -> "tlist(0)$1"	[label=assignedFrom];
+	"unique_val(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"unique_val(0)" -> "unique_values_dict(0)$0"	[label=iteratorOf];
+	"columns(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"columns(0)" -> "unique_values_dict(0)$0"	[label=iteratorOf];
+	"Columns containing the unique values : (0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"print[94/4]" -> "unique_val(0)"	[label=print];
+	"print[94/4]" -> "Columns containing the unique values : (0)"	[label=print];
+	"print[96/4]" -> "columns(0)"	[label=print];
+	"--------------------------------------------------(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"print[98/4]" -> "--------------------------------------------------(0)"	[label=print];
 	"X0(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"var_name(0)$0" -> "X0(0)"	[label=assignedFrom];
 	"col_order(0)$0" -> "np(0)"	[label=tolist];
@@ -301,15 +301,15 @@ digraph "" {
 	"new_df(0)$0" -> "column_name(0)"	[label=DataFrame];
 	"new_df(0)$0" -> "value(0)"	[label=DataFrame];
 	"new_df(0)$0" -> "y_mean(0)"	[label=DataFrame];
-	"new_df(0)$0" -> "[<_ast.Constant object at 0x12f89bee0>](0)"	[label=DataFrame];
+	"new_df(0)$0" -> "[<_ast.Constant object at 0x7fd500810cd0>](0)"	[label=DataFrame];
 	"new_df(0)$0" -> "len(0)"	[label=DataFrame];
-	"new_df(0)$0" -> "[<_ast.Constant object at 0x12f8a2040>](0)"	[label=DataFrame];
+	"new_df(0)$0" -> "[<_ast.Constant object at 0x7fd500810dc0>](0)"	[label=DataFrame];
 	"column_name(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"value(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"y_mean(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89bee0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500810cd0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"len(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a2040>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500810dc0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"new_df(0)$1" -> "new_df(0)$0"	[label=pivot];
 	"new_df(0)$1" -> "column_name(0)"	[label=pivot];
 	"new_df(0)$1" -> "value(0)"	[label=pivot];
@@ -342,8 +342,8 @@ digraph "" {
 	"test_df(0)$1" -> "test(0)"	[label=assignedFrom];
 	"full_df(0)$0" -> "pd(0)$1"	[label=concat];
 	"full_df(0)$0" -> "0(0)"	[label=concat];
-	"full_df(0)$0" -> "[<_ast.Subscript object at 0x12f895b80>, <_ast.Subscript object at 0x12f895d30>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f895b80>, <_ast.Subscript object at 0x12f895d30>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"full_df(0)$0" -> "[<_ast.Subscript object at 0x7fd50081c880>, <_ast.Subscript object at 0x7fd50081ca00>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd50081c880>, <_ast.Subscript object at 0x7fd50081ca00>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"plt(0)$61" -> "plt(0)$60"	[label=figure];
 	"sns(0)$11" -> "sns(0)$10"	[label=violinplot];
 	"plt(0)$62" -> "plt(0)$61"	[label=xlabel];
@@ -355,13 +355,13 @@ digraph "" {
 	"plt(0)$64" -> "Distribution of ID variable with evaluation set(0)"	[label=title];
 	"Distribution of ID variable with evaluation set(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"plt(0)$65" -> "plt(0)$64"	[label=show];
-	"[<_ast.Constant object at 0x12f890ac0>, <_ast.Constant object at 0x12f890a90>, <_ast.Constant object at 0x12f8907f0>, <_ast.Constant \
-object at 0x12f890af0>, <_ast.Constant object at 0x12f890b20>, <_ast.Constant object at 0x12f890b50>, <_ast.Constant object at 0x12f890b80>, <_\
-ast.Constant object at 0x12f890be0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008216d0>, <_ast.Constant object at 0x7fd500821700>, <_ast.Constant object at 0x7fd500821730>, <_\
+ast.Constant object at 0x7fd500821760>, <_ast.Constant object at 0x7fd500821790>, <_ast.Constant object at 0x7fd5008217c0>, <_ast.Constant \
+object at 0x7fd5008217f0>, <_ast.Constant object at 0x7fd500821820>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"f(0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
-	"f(0)" -> "[<_ast.Constant object at 0x12f890ac0>, <_ast.Constant object at 0x12f890a90>, <_ast.Constant object at 0x12f8907f0>, <_ast.Constant \
-object at 0x12f890af0>, <_ast.Constant object at 0x12f890b20>, <_ast.Constant object at 0x12f890b50>, <_ast.Constant object at 0x12f890b80>, <_\
-ast.Constant object at 0x12f890be0>](0)"	[label=iteratorOf];
+	"f(0)" -> "[<_ast.Constant object at 0x7fd5008216d0>, <_ast.Constant object at 0x7fd500821700>, <_ast.Constant object at 0x7fd500821730>, <_\
+ast.Constant object at 0x7fd500821760>, <_ast.Constant object at 0x7fd500821790>, <_ast.Constant object at 0x7fd5008217c0>, <_ast.Constant \
+object at 0x7fd5008217f0>, <_ast.Constant object at 0x7fd500821820>](0)"	[label=iteratorOf];
 	"lbl(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
 	"lbl(0)$1" -> "train_df(0)$3"	[label=fit];
 	"lbl(0)$1" -> "f(0)"	[label=fit];
@@ -377,8 +377,8 @@ ast.Constant object at 0x12f890be0>](0)"	[label=iteratorOf];
 	"train_y(0)$0" -> "train_df(0)$4"	[label=assignedFrom];
 	"train_X(0)$0" -> "1(0)"	[label=drop];
 	"train_X(0)$0" -> "train_df(0)$4"	[label=drop];
-	"train_X(0)$0" -> "[<_ast.Constant object at 0x12f89d4c0>, <_ast.Constant object at 0x12f89d4f0>, <_ast.Constant object at 0x12f89d520>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f89d4c0>, <_ast.Constant object at 0x12f89d4f0>, <_ast.Constant object at 0x12f89d520>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"train_X(0)$0" -> "[<_ast.Constant object at 0x7fd500811220>, <_ast.Constant object at 0x7fd500811250>, <_ast.Constant object at 0x7fd500811280>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500811220>, <_ast.Constant object at 0x7fd500811250>, <_ast.Constant object at 0x7fd500811280>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"preds(1)" -> "xgb_r2_score[0]"	[label=_argToVar];
 	"dtrain(1)" -> "xgb_r2_score[1]"	[label=_argToVar];
 	"labels(1)$0" -> "dtrain(1)"	[label=get_label];
@@ -473,7 +473,7 @@ ast.Constant object at 0x12f890be0>](0)"	[label=iteratorOf];
 	"plt(0)$70" -> "indices(0)$0"	[label=xticks];
 	"plt(0)$70" -> "plt(0)$69"	[label=xticks];
 	"plt(0)$71" -> "plt(0)$70"	[label=xlim];
-	"plt(0)$71" -> "[<_ast.UnaryOp object at 0x130519280>, <_ast.Call object at 0x130519310>](0)"	[label=xlim];
-	"[<_ast.UnaryOp object at 0x130519280>, <_ast.Call object at 0x130519310>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
+	"plt(0)$71" -> "[<_ast.UnaryOp object at 0x7fd500822f40>, <_ast.Call object at 0x7fd500822fa0>](0)"	[label=xlim];
+	"[<_ast.UnaryOp object at 0x7fd500822f40>, <_ast.Call object at 0x7fd500822fa0>](0)" -> "simple-exploration-notebook-mercedes.ipynb"	[label=appearsIn];
 	"plt(0)$72" -> "plt(0)$71"	[label=show];
 }

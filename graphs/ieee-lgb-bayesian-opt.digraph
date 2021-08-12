@@ -120,39 +120,14 @@ digraph "" {
 	"test_df(0)$0" -> "left(0)"	[label=merge];
 	"test_df(0)$0" -> "True(0)"	[label=merge];
 	"Train shape : (0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[0]" -> "Train shape : (0)"	[label=print];
-	"print[0]" -> "Test shape  : (0)"	[label=print];
-	"print[0]" -> "LGB_BO(0)$0"	[label=print];
-	"print[0]" -> "-(0)"	[label=print];
-	"print[0]" -> "
-fold {}(0)"	[label=print];
-	"print[0]" -> "
-CV roc score        : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"Test shape  : (0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"LGB_BO(0)$0" -> "42(0)"	[label=BayesianOptimization];
-	"LGB_BO(0)$0" -> "bounds_LGB(0)$0"	[label=BayesianOptimization];
-	"LGB_BO(0)$0" -> "LGB_bayesian(0)"	[label=BayesianOptimization];
-	"-(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"
-fold {}(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"
-CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"print[37/0]" -> "train_df(0)$0"	[label=print];
+	"print[37/0]" -> "Train shape : (0)"	[label=print];
+	"print[37/0]" -> "str(0)"	[label=print];
 	"str(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "str(0)"	[label=print];
-	"print[1]" -> "130(0)"	[label=print];
-	"print[1]" -> "i(0)$0"	[label=print];
-	"130(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"i(0)$0" -> "1(0)"	[label=assignedFrom];
-	"print[2]" -> "train_df(0)$0"	[label=print];
-	"print[2]" -> "test_df(0)$0"	[label=print];
-	"print[2]" -> "roc_aucs(0)$1"	[label=print];
-	"roc_aucs(0)$1" -> "roc_auc_score(0)"	[label=append];
-	"roc_aucs(0)$1" -> "train_df(0)$8"	[label=append];
-	"roc_aucs(0)$1" -> "target(0)$0"	[label=append];
-	"roc_aucs(0)$1" -> "roc_aucs(0)$0"	[label=append];
-	"roc_aucs(0)$1" -> "valid_idx(0)"	[label=append];
-	"roc_aucs(0)$1" -> "oof(0)$1"	[label=append];
+	"Test shape  : (0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"print[38/0]" -> "test_df(0)$0"	[label=print];
+	"print[38/0]" -> "str(0)"	[label=print];
+	"print[38/0]" -> "Test shape  : (0)"	[label=print];
 	"pd(0)$0" -> "pd(0)"	[label=set_option];
 	"pd(0)$0" -> "display.max_columns(0)"	[label=set_option];
 	"pd(0)$0" -> "500(0)"	[label=set_option];
@@ -163,9 +138,9 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"percent(1)$0" -> "data(1)"	[label=Mult];
 	"percent(1)$0" -> "100(1)"	[label=Mult];
 	"tt(1)$0" -> "pd(1)"	[label=concat];
-	"tt(1)$0" -> "[<_ast.Name object at 0x12fade7f0>, <_ast.Name object at 0x12fade1f0>](1)"	[label=concat];
+	"tt(1)$0" -> "[<_ast.Name object at 0x7fd50080dca0>, <_ast.Name object at 0x7fd50080d250>](1)"	[label=concat];
 	"tt(1)$0" -> "1(1)"	[label=concat];
-	"tt(1)$0" -> "[<_ast.Constant object at 0x12fade3d0>, <_ast.Constant object at 0x12fadeb50>](1)"	[label=concat];
+	"tt(1)$0" -> "[<_ast.Constant object at 0x7fd50080d400>, <_ast.Constant object at 0x7fd50080dd90>](1)"	[label=concat];
 	"types(1)$0" -> "[](1)"	[label=assignedFrom];
 	"col(1)" -> "data(1)"	[label=iteratorOf];
 	"dtype(1)$0" -> "data(1)"	[label=str];
@@ -175,10 +150,9 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"tt(1)$1" -> "tt(1)$0"	[label=assignedFrom];
 	"tt(1)$1" -> "types(1)$1"	[label=assignedFrom];
 	"missing_data(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"display[0]" -> "missing_data(0)"	[label=display];
-	"display[1]" -> "train_df(0)$0"	[label=display];
-	"display[2]" -> "missing_data(0)"	[label=display];
-	"display[3]" -> "test_df(0)$0"	[label=display];
+	"display[51/0]" -> "train_df(0)$0"	[label=display];
+	"display[51/0]" -> "test_df(0)$0"	[label=display];
+	"display[51/0]" -> "missing_data(0)"	[label=display];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=sum];
 	"train_df(0)$1" -> "1(0)"	[label=sum];
 	"1(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
@@ -322,11 +296,11 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"aol(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"centurylink(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"apple(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fdf0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"us_emails(0)$0" -> "[<_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fdf0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4f040>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object at 0x7fd4902abdf0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"us_emails(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object at 0x7fd4902abdf0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902ab460>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"c(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"c(0)" -> "[<_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4f040>](0)"	[label=iteratorOf];
+	"c(0)" -> "[<_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902ab460>](0)"	[label=iteratorOf];
 	"train_df(0)$2" -> "train_df(0)$1"	[label=map];
 	"train_df(0)$2" -> "emails(0)$0"	[label=map];
 	"train_df(0)$2" -> "c(0)"	[label=map];
@@ -364,7 +338,6 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"test_df(0)$4" -> "_suffix(0)"	[label=map];
 	"test_df(0)$4" -> "us(0)"	[label=map];
 	"labels(0)$0" -> "np(0)"	[label=assignedFrom];
-	"labels(0)$0" -> "130(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "500(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "1(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "gmail(0)"	[label=assignedFrom];
@@ -4089,6 +4062,7 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"labels(0)$0" -> "127(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "128(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "129(0)"	[label=assignedFrom];
+	"labels(0)$0" -> "130(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "131(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "132(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "133(0)"	[label=assignedFrom];
@@ -11206,6 +11180,7 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"127(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"128(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"129(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"130(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"131(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"132(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"133(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
@@ -14783,7 +14758,7 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"clf(3)$0" -> "trn_data(3)$0"	[label=train];
 	"clf(3)$0" -> "lgb(3)"	[label=train];
 	"clf(3)$0" -> "50(3)"	[label=train];
-	"clf(3)$0" -> "[<_ast.Name object at 0x13051e490>, <_ast.Name object at 0x13051e4c0>](3)"	[label=train];
+	"clf(3)$0" -> "[<_ast.Name object at 0x7fd4c063d190>, <_ast.Name object at 0x7fd4c063d1c0>](3)"	[label=train];
 	"clf(3)$0" -> "0(3)"	[label=train];
 	"oof(3)$1" -> "oof(3)$0"	[label=predict];
 	"oof(3)$1" -> "train_df(3)"	[label=predict];
@@ -14826,22 +14801,21 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"1e-05(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"0.01(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"LGB_bayesian(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"LGB_BO(0)$0" -> "42(0)"	[label=BayesianOptimization];
+	"LGB_BO(0)$0" -> "bounds_LGB(0)$0"	[label=BayesianOptimization];
+	"LGB_BO(0)$0" -> "LGB_bayesian(0)"	[label=BayesianOptimization];
+	"print[168/0]" -> "LGB_BO(0)$0"	[label=print];
 	"init_points(0)$0" -> "10(0)"	[label=assignedFrom];
 	"n_iter(0)$0" -> "15(0)"	[label=assignedFrom];
+	"-(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"print[171/0]" -> "130(0)"	[label=print];
+	"print[171/0]" -> "-(0)"	[label=print];
 	"warnings(0)$1" -> "warnings(0)$0"	[label=filterwarnings];
 	"warnings(0)$1" -> "ignore(0)"	[label=filterwarnings];
 	"LGB_BO(0)$1" -> "LGB_BO(0)$0"	[label=maximize];
 	"cm(4)" -> "plot_confusion_matrix[0]"	[label=_argToVar];
-	"plot_confusion_matrix[0]" -> "cm(0)$0"	[label=plot_confusion_matrix];
-	"cm(0)$0" -> "np(0)"	[label=average];
-	"cm(0)$0" -> "0(0)"	[label=average];
-	"cm(0)$0" -> "cms(0)$1"	[label=average];
 	"classes(4)" -> "plot_confusion_matrix[1]"	[label=_argToVar];
-	"plot_confusion_matrix[1]" -> "class_names(0)$0"	[label=plot_confusion_matrix];
-	"class_names(0)$0" -> "[<_ast.Constant object at 0x12fa8f0d0>, <_ast.Constant object at 0x12fa8f100>](0)"	[label=assignedFrom];
 	"normalize(4)" -> "plot_confusion_matrix[2]"	[label=_argToVar];
-	"plot_confusion_matrix[2]" -> "LGB Confusion matrix [averaged/folds](0)"	[label=plot_confusion_matrix];
-	"LGB Confusion matrix [averaged/folds](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"title(4)" -> "plot_confusion_matrix[3]"	[label=_argToVar];
 	"cmap(4)" -> "plot_confusion_matrix[4]"	[label=_argToVar];
 	"plt(4)$0" -> "cm(4)"	[label=imshow];
@@ -14956,12 +14930,18 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"predictions(0)$0" -> "test_df(0)$8"	[label=zeros];
 	"predictions(0)$0" -> "len(0)"	[label=zeros];
 	"feature_importance_df(0)$0" -> "pd(0)$0"	[label=DataFrame];
+	"i(0)$0" -> "1(0)"	[label=assignedFrom];
 	"train_idx(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"train_idx(0)" -> "train_df(0)$8"	[label=iteratorOf];
 	"train_idx(0)" -> "skf(0)$0"	[label=iteratorOf];
 	"valid_idx(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"valid_idx(0)" -> "train_df(0)$8"	[label=iteratorOf];
 	"valid_idx(0)" -> "skf(0)$0"	[label=iteratorOf];
+	"
+fold {}(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"print[244/4]" -> "i(0)$0"	[label=print];
+	"print[244/4]" -> "
+fold {}(0)"	[label=print];
 	"trn_data(0)$0" -> "lgb(0)"	[label=Dataset];
 	"trn_data(0)$0" -> "train_df(0)$8"	[label=Dataset];
 	"trn_data(0)$0" -> "features(0)$1"	[label=Dataset];
@@ -14977,8 +14957,8 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"clf(0)$0" -> "100(0)"	[label=train];
 	"clf(0)$0" -> "param_lgb(0)$0"	[label=train];
 	"clf(0)$0" -> "trn_data(0)$0"	[label=train];
-	"clf(0)$0" -> "[<_ast.Name object at 0x13051b910>, <_ast.Name object at 0x13051b9d0>](0)"	[label=train];
-	"[<_ast.Name object at 0x13051b910>, <_ast.Name object at 0x13051b9d0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"clf(0)$0" -> "[<_ast.Name object at 0x7fd4c062c4c0>, <_ast.Name object at 0x7fd4c062c520>](0)"	[label=train];
+	"[<_ast.Name object at 0x7fd4c062c4c0>, <_ast.Name object at 0x7fd4c062c520>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"oof(0)$1" -> "train_df(0)$8"	[label=predict];
 	"oof(0)$1" -> "features(0)$1"	[label=predict];
 	"oof(0)$1" -> "oof(0)$0"	[label=predict];
@@ -14989,6 +14969,12 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"predictions(0)$1" -> "nfold(0)$0"	[label=Add];
 	"predictions(0)$1" -> "predictions(0)$0"	[label=Add];
 	"predictions(0)$1" -> "clf(0)$0"	[label=Add];
+	"roc_aucs(0)$1" -> "roc_auc_score(0)"	[label=append];
+	"roc_aucs(0)$1" -> "train_df(0)$8"	[label=append];
+	"roc_aucs(0)$1" -> "target(0)$0"	[label=append];
+	"roc_aucs(0)$1" -> "roc_aucs(0)$0"	[label=append];
+	"roc_aucs(0)$1" -> "valid_idx(0)"	[label=append];
+	"roc_aucs(0)$1" -> "oof(0)$1"	[label=append];
 	"accuracies(0)$1" -> "accuracy_score(0)"	[label=append];
 	"accuracies(0)$1" -> "train_df(0)$8"	[label=append];
 	"accuracies(0)$1" -> "target(0)$0"	[label=append];
@@ -15063,8 +15049,8 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"plt(0)$2" -> "plt(0)$1"	[label=plot];
 	"plt(0)$2" -> "precision(0)$0"	[label=plot];
 	"plt(0)$2" -> "recall(0)$0"	[label=plot];
-	"i(0)$1" -> "i(0)$0"	[label=Add];
 	"i(0)$1" -> "1(0)"	[label=Add];
+	"i(0)$1" -> "i(0)$0"	[label=Add];
 	"cms(0)$1" -> "confusion_matrix(0)"	[label=append];
 	"cms(0)$1" -> "train_df(0)$8"	[label=append];
 	"cms(0)$1" -> "target(0)$0"	[label=append];
@@ -15081,49 +15067,41 @@ CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb
 	"fold_importance_df(0)$3" -> "fold_importance_df(0)$2"	[label=Add];
 	"feature_importance_df(0)$1" -> "pd(0)$0"	[label=concat];
 	"feature_importance_df(0)$1" -> "0(0)"	[label=concat];
-	"feature_importance_df(0)$1" -> "[<_ast.Name object at 0x12fa57f70>, <_ast.Name object at 0x12fa57fd0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fa57f70>, <_ast.Name object at 0x12fa57fd0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[3]" -> "np(0)"	[label=print];
-	"print[4]" -> "roc_aucs(0)$1"	[label=print];
+	"feature_importance_df(0)$1" -> "[<_ast.Name object at 0x7fd4c09d4bb0>, <_ast.Name object at 0x7fd4c09d4be0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c09d4bb0>, <_ast.Name object at 0x7fd4c09d4be0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"
+CV roc score        : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"print[292/0]" -> "np(0)"	[label=print];
+	"print[292/0]" -> "roc_aucs(0)$1"	[label=print];
+	"print[292/0]" -> "accuracies(0)$1"	[label=print];
+	"print[292/0]" -> "recalls(0)$1"	[label=print];
+	"print[292/0]" -> "precisions(0)$1"	[label=print];
+	"print[292/0]" -> "f1_scores(0)$1"	[label=print];
+	"print[292/0]" -> "
+CV roc score        : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
+	"print[292/0]" -> "
+CV accuracy score   : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
+	"print[292/0]" -> "
+CV recall score     : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
+	"print[292/0]" -> "
+CV precision score  : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
+	"print[292/0]" -> "
+CV f1 score         : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"
 CV accuracy score   : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[5]" -> "
-CV accuracy score   : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"print[6]" -> "np(0)"	[label=print];
-	"print[7]" -> "accuracies(0)$1"	[label=print];
-	"print[8]" -> "np(0)"	[label=print];
-	"print[9]" -> "accuracies(0)$1"	[label=print];
 	"
 CV recall score     : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[10]" -> "
-CV recall score     : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"print[11]" -> "np(0)"	[label=print];
-	"print[12]" -> "recalls(0)$1"	[label=print];
-	"print[13]" -> "np(0)"	[label=print];
-	"print[14]" -> "recalls(0)$1"	[label=print];
 	"
 CV precision score  : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[15]" -> "
-CV precision score  : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"print[16]" -> "np(0)"	[label=print];
-	"print[17]" -> "precisions(0)$1"	[label=print];
-	"print[18]" -> "np(0)"	[label=print];
-	"print[19]" -> "precisions(0)$1"	[label=print];
 	"
 CV f1 score         : {0:.4f}, std: {1:.4f}.(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"print[20]" -> "
-CV f1 score         : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"print[21]" -> "np(0)"	[label=print];
-	"print[22]" -> "f1_scores(0)$1"	[label=print];
-	"print[23]" -> "np(0)"	[label=print];
-	"print[24]" -> "f1_scores(0)$1"	[label=print];
 	"f(0)$1" -> "1(0)"	[label=figure];
 	"f(0)$1" -> "plt(0)$2"	[label=figure];
 	"plt(0)$3" -> "plt(0)$2"	[label=plot];
-	"plt(0)$3" -> "[<_ast.Constant object at 0x12fa58d90>, <_ast.Constant object at 0x12fa58dc0>](0)"	[label=plot];
-	"plt(0)$3" -> "[<_ast.Constant object at 0x12fa58430>, <_ast.Constant object at 0x12fa58e50>](0)"	[label=plot];
-	"[<_ast.Constant object at 0x12fa58d90>, <_ast.Constant object at 0x12fa58dc0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa58430>, <_ast.Constant object at 0x12fa58e50>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"plt(0)$3" -> "[<_ast.Constant object at 0x7fd4c09a9b20>, <_ast.Constant object at 0x7fd4c09a9b80>](0)"	[label=plot];
+	"plt(0)$3" -> "[<_ast.Constant object at 0x7fd4c09a9be0>, <_ast.Constant object at 0x7fd4c09a9c10>](0)"	[label=plot];
+	"[<_ast.Constant object at 0x7fd4c09a9b20>, <_ast.Constant object at 0x7fd4c09a9b80>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c09a9be0>, <_ast.Constant object at 0x7fd4c09a9c10>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"mean_tpr(0)$0" -> "np(0)"	[label=mean];
 	"mean_tpr(0)$0" -> "0(0)"	[label=mean];
 	"mean_tpr(0)$0" -> "tprs(0)$1"	[label=mean];
@@ -15145,10 +15123,10 @@ CV f1 score         : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"g(0)$1" -> "2(0)"	[label=figure];
 	"g(0)$1" -> "plt(0)$8"	[label=figure];
 	"plt(0)$9" -> "plt(0)$8"	[label=plot];
-	"plt(0)$9" -> "[<_ast.Constant object at 0x12fa6beb0>, <_ast.Constant object at 0x12fa6bee0>](0)"	[label=plot];
-	"plt(0)$9" -> "[<_ast.Constant object at 0x12fa6bf40>, <_ast.Constant object at 0x12fa6bf70>](0)"	[label=plot];
-	"[<_ast.Constant object at 0x12fa6beb0>, <_ast.Constant object at 0x12fa6bee0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa6bf40>, <_ast.Constant object at 0x12fa6bf70>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"plt(0)$9" -> "[<_ast.Constant object at 0x7fd4c09a3c10>, <_ast.Constant object at 0x7fd4c09a38e0>](0)"	[label=plot];
+	"plt(0)$9" -> "[<_ast.Constant object at 0x7fd4c09a3c70>, <_ast.Constant object at 0x7fd4c09a3ca0>](0)"	[label=plot];
+	"[<_ast.Constant object at 0x7fd4c09a3c10>, <_ast.Constant object at 0x7fd4c09a38e0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c09a3c70>, <_ast.Constant object at 0x7fd4c09a3ca0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"y_real(0)$2" -> "np(0)"	[label=concatenate];
 	"y_real(0)$2" -> "y_real(0)$2"	[label=concatenate];
 	"y_proba(0)$2" -> "np(0)"	[label=concatenate];
@@ -15174,8 +15152,16 @@ CV f1 score         : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"plt(0)$14" -> "plt(0)$13"	[label=legend];
 	"plt(0)$15" -> "False(0)"	[label=assignedFrom];
 	"plt(0)$15" -> "plt(0)$14"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa8f0d0>, <_ast.Constant object at 0x12fa8f100>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"cm(0)$0" -> "np(0)"	[label=average];
+	"cm(0)$0" -> "0(0)"	[label=average];
+	"cm(0)$0" -> "cms(0)$1"	[label=average];
+	"[<_ast.Constant object at 0x7fd4c09d5df0>, <_ast.Constant object at 0x7fd4c09d5dc0>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"class_names(0)$0" -> "[<_ast.Constant object at 0x7fd4c09d5df0>, <_ast.Constant object at 0x7fd4c09d5dc0>](0)"	[label=assignedFrom];
 	"plt(0)$16" -> "plt(0)$15"	[label=figure];
+	"plot_confusion_matrix[331/0]" -> "cm(0)$0"	[label=plot_confusion_matrix];
+	"plot_confusion_matrix[331/0]" -> "class_names(0)$0"	[label=plot_confusion_matrix];
+	"plot_confusion_matrix[331/0]" -> "LGB Confusion matrix [averaged/folds](0)"	[label=plot_confusion_matrix];
+	"LGB Confusion matrix [averaged/folds](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"plt(0)$17" -> "plt(0)$16"	[label=show];
 	"plt(0)$18" -> "plt(0)$17"	[label=use];
 	"plt(0)$18" -> "dark_background(0)"	[label=use];
@@ -15183,10 +15169,10 @@ CV f1 score         : {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"cols(0)$0" -> "30(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "False(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "feature_importance_df(0)$1"	[label=assignedFrom];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x12fa8f910>, <_ast.Constant object at 0x12fa8f940>](0)"	[label=assignedFrom];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c09ae3a0>, <_ast.Constant object at 0x7fd4c09ae700>](0)"	[label=assignedFrom];
 	"cols(0)$0" -> "Feature(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "importance(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa8f910>, <_ast.Constant object at 0x12fa8f940>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c09ae3a0>, <_ast.Constant object at 0x7fd4c09ae700>](0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"Feature(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"importance(0)" -> "ieee-lgb-bayesian-opt.ipynb"	[label=appearsIn];
 	"best_features(0)$0" -> "feature_importance_df(0)$1"	[label=assignedFrom];

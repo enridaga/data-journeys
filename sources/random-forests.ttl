@@ -1,0 +1,115 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/sources/random-forests> a k:Notebook .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1322649418> rdfs:label "train_test_split(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/964298441> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1989675282> rdfs:label "RandomForestRegressor(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1541671057> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#417137581> rdfs:label "print[53/0]" ;
+    dj:print <http://purl.org/dj/kaggle/sources/random-forests#1722550378>,
+        <http://purl.org/dj/kaggle/sources/random-forests#324600561>,
+        <http://purl.org/dj/kaggle/sources/random-forests#764675315> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1013319129> rdfs:label "forest_model(0)$0" ;
+    dj:RandomForestRegressor <http://purl.org/dj/kaggle/sources/random-forests#29950131> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1013384666> rdfs:label "forest_model(0)$1" ;
+    dj:fit <http://purl.org/dj/kaggle/sources/random-forests#1013319129>,
+        <http://purl.org/dj/kaggle/sources/random-forests#477168555>,
+        <http://purl.org/dj/kaggle/sources/random-forests#490144716> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1257178776> rdfs:label "melbourne_data(0)$0" ;
+    dj:read_csv <http://purl.org/dj/kaggle/sources/random-forests#2019035306>,
+        <http://purl.org/dj/kaggle/sources/random-forests#80085334> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1722550378> rdfs:label "mean_absolute_error(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1307576297> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1867778141> rdfs:label "melbourne_features(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/sources/random-forests#3353958250> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#2019035306> rdfs:label "melbourne_file_path(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/sources/random-forests#58004286> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#29950131> rdfs:label "1(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#311624400> rdfs:label "val_X(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/sources/random-forests#29687986>,
+        <http://purl.org/dj/kaggle/sources/random-forests#76611886>,
+        <http://purl.org/dj/kaggle/sources/random-forests#89588047> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#324600561> rdfs:label "val_y(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/sources/random-forests#29687986>,
+        <http://purl.org/dj/kaggle/sources/random-forests#76611886>,
+        <http://purl.org/dj/kaggle/sources/random-forests#89588047> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#3353958250> rdfs:label "[<ast.Constant object at 0x132abfa90>, <ast.Constant object at 0x132abfa60>, <ast.Constant object at 0x132abfa30>, <ast.Constant object at 0x132abfa00>, <ast.Constant object at 0x132abf9d0>, <ast.Constant object at 0x132abf9a0>, <ast.Constant object at 0x132abf970>](0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#477168555> rdfs:label "train_X(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/sources/random-forests#29687986>,
+        <http://purl.org/dj/kaggle/sources/random-forests#76611886>,
+        <http://purl.org/dj/kaggle/sources/random-forests#89588047> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#490144716> rdfs:label "train_y(0)$0" ;
+    dj:train_test_split <http://purl.org/dj/kaggle/sources/random-forests#29687986>,
+        <http://purl.org/dj/kaggle/sources/random-forests#76611886>,
+        <http://purl.org/dj/kaggle/sources/random-forests#89588047> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#764675315> rdfs:label "melb_preds(0)$0" ;
+    dj:predict <http://purl.org/dj/kaggle/sources/random-forests#1013384666>,
+        <http://purl.org/dj/kaggle/sources/random-forests#311624400> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#80085334> rdfs:label "pd(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/python/lib/1307576297> rdfs:label "mean_absolute_error" ;
+    dj:importedBy <http://purl.org/dj/python/lib/816055830> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    dj:importedBy <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/python/lib/1541671057> rdfs:label "RandomForestRegressor" ;
+    dj:importedBy <http://purl.org/dj/python/lib/919996010> .
+
+<http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
+    dj:importedBy <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/python/lib/816055830> rdfs:label "sklearn.metrics" ;
+    dj:importedBy <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/python/lib/919996010> rdfs:label "sklearn.ensemble" ;
+    dj:importedBy <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/python/lib/964298441> rdfs:label "train_test_split" ;
+    dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1257244313> rdfs:label "melbourne_data(0)$1" ;
+    dj:dropna <http://purl.org/dj/kaggle/sources/random-forests#1257178776>,
+        <http://purl.org/dj/kaggle/sources/random-forests#29687986> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#76611886> rdfs:label "X(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/sources/random-forests#1257244313>,
+        <http://purl.org/dj/kaggle/sources/random-forests#1867778141> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#89588047> rdfs:label "y(0)$0" ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/sources/random-forests#1257244313> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#29687986> rdfs:label "0(0)" ;
+    dj:appearsIn <http://purl.org/dj/kaggle/sources/random-forests#1717504232> .
+
+<http://purl.org/dj/kaggle/sources/random-forests#1717504232> rdfs:label "sources/random-forests" .
+

@@ -1,0 +1,95 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#677840031> rdfs:label "us_cities(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-212744720428597579> ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#677774494> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#1561135094> rdfs:label "global_air_quality(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:appearsIn k:sql-scavenger-hunt-day-1 .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#1825900637> rdfs:label "bigquery-public-data(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:appearsIn k:sql-scavenger-hunt-day-1 .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#292619014> rdfs:label "openaq(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:appearsIn k:sql-scavenger-hunt-day-1 .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#3050185374> rdfs:label """SELECT city
+            FROM `bigquery-public-data.openaq.global_air_quality`
+            WHERE country = 'US'
+        (0)""" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:appearsIn k:sql-scavenger-hunt-day-1 .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#338166540> rdfs:label "query(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#3050185374> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480248761> rdfs:label "open_aq(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:BigQueryHelper <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#1825900637>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#292619014>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#509281332> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480314298> rdfs:label "open_aq(0)$1" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:list_tables <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480248761> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480379835> rdfs:label "open_aq(0)$2" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-756083595034862975> ;
+    dj:head <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#1561135094>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480314298> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#509281332> rdfs:label "bq_helper(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:appearsIn k:sql-scavenger-hunt-day-1 ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/306250675> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#677774494> rdfs:label "us_cities(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-2716482745514261787>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:query_to_pandas_safe <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#338166540>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1#480379835> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-212744720428597579> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-2716482745514261787>,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> .
+
+<http://purl.org/dj/python/lib/306250675> rdfs:label "bq_helper" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> ;
+    dj:importedBy k:sql-scavenger-hunt-day-1 .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-2716482745514261787> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-756083595034862975> .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-756083595034862975> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> .
+
+k:sql-scavenger-hunt-day-1 a k:Notebook ;
+    rdfs:label "sql-scavenger-hunt-day-1.ipynb" .
+
+<http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-8080479727561312271> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:sql-scavenger-hunt-day-1,
+        <http://purl.org/dj/kaggle/sql-scavenger-hunt-day-1/activity/-756083595034862975> .
+

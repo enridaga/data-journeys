@@ -8,14 +8,9 @@ digraph "" {
 	os -> "basic-feature-benchmark.ipynb"	[label=importedBy];
 	"os(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Score: (0)"	[label=print];
-	"Score: (0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"print[13/0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "score(0)$0"	[label=print];
-	"score(0)$0" -> "y_train(0)$1"	[label=mean_absolute_error];
-	"score(0)$0" -> "y_pred(0)$0"	[label=mean_absolute_error];
 	"matplotlib.pyplot" -> "basic-feature-benchmark.ipynb"	[label=importedBy];
 	"plt(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
@@ -59,17 +54,17 @@ digraph "" {
 	"X_train(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"X_train(0)$0" -> "segments(0)$0"	[label=DataFrame];
 	"X_train(0)$0" -> "range(0)"	[label=DataFrame];
-	"X_train(0)$0" -> "[<_ast.Constant object at 0x12f85e850>, <_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
-object at 0x12f85efa0>](0)"	[label=DataFrame];
+	"X_train(0)$0" -> "[<_ast.Constant object at 0x7fd5008320a0>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd500832970>, <_\
+ast.Constant object at 0x7fd500832670>](0)"	[label=DataFrame];
 	"range(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e850>, <_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
-object at 0x12f85efa0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008320a0>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd500832970>, <_\
+ast.Constant object at 0x7fd500832670>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"y_train(0)$0" -> "np(0)"	[label=DataFrame];
 	"y_train(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"y_train(0)$0" -> "segments(0)$0"	[label=DataFrame];
 	"y_train(0)$0" -> "range(0)"	[label=DataFrame];
-	"y_train(0)$0" -> "[<_ast.Constant object at 0x12f9571c0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f9571c0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"y_train(0)$0" -> "[<_ast.Constant object at 0x7fd5008322b0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd5008322b0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"segment(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"segment(0)" -> "tqdm(0)"	[label=iteratorOf];
 	"segment(0)" -> "segments(0)$0"	[label=iteratorOf];
@@ -123,13 +118,18 @@ object at 0x12f85efa0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn]
 	"plt(0)$5" -> "predicted(0)"	[label=ylabel];
 	"predicted(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"plt(0)$6" -> "plt(0)$5"	[label=plot];
-	"plt(0)$6" -> "[<_ast.Tuple object at 0x12f8f5d90>, <_ast.Tuple object at 0x12f8f55b0>](0)"	[label=plot];
-	"plt(0)$6" -> "[<_ast.Tuple object at 0x12f8f5fd0>, <_ast.Tuple object at 0x12f8f50a0>](0)"	[label=plot];
-	"[<_ast.Tuple object at 0x12f8f5d90>, <_ast.Tuple object at 0x12f8f55b0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12f8f5fd0>, <_ast.Tuple object at 0x12f8f50a0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"plt(0)$6" -> "[<_ast.Tuple object at 0x7fd4c04cc130>, <_ast.Tuple object at 0x7fd4c04cc4c0>](0)"	[label=plot];
+	"plt(0)$6" -> "[<_ast.Tuple object at 0x7fd4c04cc760>, <_ast.Tuple object at 0x7fd4c04ccc10>](0)"	[label=plot];
+	"[<_ast.Tuple object at 0x7fd4c04cc130>, <_ast.Tuple object at 0x7fd4c04cc4c0>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c04cc760>, <_ast.Tuple object at 0x7fd4c04ccc10>](0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "plt(0)$6"	[label=show];
+	"score(0)$0" -> "y_train(0)$1"	[label=mean_absolute_error];
+	"score(0)$0" -> "y_pred(0)$0"	[label=mean_absolute_error];
+	"Score: (0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
+	"print[64/0]" -> "score(0)$0"	[label=print];
+	"print[64/0]" -> "Score: (0)"	[label=print];
+	"print[64/0]" -> "0.3f(0)"	[label=print];
 	"0.3f(0)" -> "basic-feature-benchmark.ipynb"	[label=appearsIn];
-	"print[2]" -> "0.3f(0)"	[label=print];
 	"submission(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"submission(0)$0" -> "seg_id(0)"	[label=read_csv];

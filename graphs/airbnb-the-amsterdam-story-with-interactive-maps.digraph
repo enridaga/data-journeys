@@ -51,7 +51,7 @@ digraph "" {
 	"cufflinks(0)" -> cufflinks	[label=assignedFrom];
 	"cufflinks(0)$0" -> "cufflinks(0)"	[label=go_offline];
 	"True(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "True(0)"	[label=init_notebook_mode];
+	"init_notebook_mode[24/0]" -> "True(0)"	[label=init_notebook_mode];
 	"nltk.tokenize" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=importedBy];
 	word_tokenize -> "nltk.tokenize"	[label=importedBy];
 	"word_tokenize(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
@@ -74,17 +74,12 @@ digraph "" {
 	WordCloud -> wordcloud	[label=importedBy];
 	"WordCloud(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"WordCloud(0)" -> WordCloud	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "listings(0)$0"	[label=print];
-	"print[0]" -> "calendar(0)$3"	[label=print];
+	"print[32/0]" -> "os(0)"	[label=print];
+	"print[32/0]" -> "../input(0)"	[label=print];
+	"../input(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"listings(0)$0" -> "pd(0)"	[label=read_csv];
 	"listings(0)$0" -> "../input/listings.csv(0)"	[label=read_csv];
 	"listings(0)$0" -> "id(0)"	[label=read_csv];
-	"calendar(0)$3" -> "calendar(0)$3"	[label=assignedFrom];
-	"calendar(0)$3" -> "calendar(0)$2"	[label=assignedFrom];
-	"calendar(0)$3" -> "2019-12-05(0)"	[label=assignedFrom];
-	"../input(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
 	"../input/listings.csv(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"id(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"listings_details(0)$0" -> "pd(0)"	[label=read_csv];
@@ -95,28 +90,31 @@ digraph "" {
 	"False(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"calendar(0)$0" -> "pd(0)"	[label=read_csv];
 	"calendar(0)$0" -> "../input/calendar.csv(0)"	[label=read_csv];
-	"calendar(0)$0" -> "[<_ast.Constant object at 0x12fc4fa90>](0)"	[label=read_csv];
-	"calendar(0)$0" -> "[<_ast.Constant object at 0x12fc4f370>](0)"	[label=read_csv];
+	"calendar(0)$0" -> "[<_ast.Constant object at 0x7fd500999a90>](0)"	[label=read_csv];
+	"calendar(0)$0" -> "[<_ast.Constant object at 0x7fd5009998e0>](0)"	[label=read_csv];
 	"../input/calendar.csv(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fa90>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f370>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999a90>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009998e0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"reviews_details(0)$0" -> "pd(0)"	[label=read_csv];
 	"reviews_details(0)$0" -> "../input/reviews_details.csv(0)"	[label=read_csv];
-	"reviews_details(0)$0" -> "[<_ast.Constant object at 0x12fc4f5b0>](0)"	[label=read_csv];
+	"reviews_details(0)$0" -> "[<_ast.Constant object at 0x7fd5009990d0>](0)"	[label=read_csv];
 	"../input/reviews_details.csv(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f5b0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant \
-object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4fa30>, <_\
-ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant \
-object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f790>, <_\
-ast.Constant object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4f940>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"target_columns(0)$0" -> "[<_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant \
-object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4fa30>, <_\
-ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant \
-object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f790>, <_\
-ast.Constant object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4f940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009990d0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"print[39/0]" -> "listings(0)$0"	[label=print];
+	"[<_ast.Constant object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999460>, <_\
+ast.Constant object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999d60>, <_ast.Constant \
+object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object \
+at 0x7fd500999580>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at \
+0x7fd500999940>, <_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_\
+ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048ef70>, <_ast.Constant \
+object at 0x7fd4c048eaf0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"target_columns(0)$0" -> "[<_ast.Constant object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999460>, <_\
+ast.Constant object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999d60>, <_ast.Constant \
+object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object \
+at 0x7fd500999580>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at \
+0x7fd500999940>, <_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_\
+ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048ef70>, <_ast.Constant \
+object at 0x7fd4c048eaf0>](0)"	[label=assignedFrom];
 	"listings(0)$1" -> "pd(0)"	[label=merge];
 	"listings(0)$1" -> "id(0)"	[label=merge];
 	"listings(0)$1" -> "listings_details(0)$0"	[label=merge];
@@ -126,8 +124,8 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"left(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"listings(0)$2" -> "listings(0)$1"	[label=info];
 	"listings(0)$3" -> "listings(0)$2"	[label=drop];
-	"listings(0)$3" -> "[<_ast.Constant object at 0x12fc4fd00>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc4fd00>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"listings(0)$3" -> "[<_ast.Constant object at 0x7fd4c048ef40>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c048ef40>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"listings(0)$4" -> "pd(0)"	[label=to_numeric];
 	"listings(0)$4" -> "listings(0)$3"	[label=to_numeric];
 	"listings(0)$4" -> "listings(0)$4"	[label=to_numeric];
@@ -159,9 +157,9 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"locations(0)$0" -> "lons2018(0)$0"	[label=list];
 	"locations(0)$0" -> "zip(0)"	[label=list];
 	"map1(0)$0" -> "folium(0)"	[label=Map];
-	"map1(0)$0" -> "[<_ast.Constant object at 0x130532fd0>, <_ast.Constant object at 0x130532b20>](0)"	[label=Map];
+	"map1(0)$0" -> "[<_ast.Constant object at 0x7fd500836b80>, <_ast.Constant object at 0x7fd500836a00>](0)"	[label=Map];
 	"map1(0)$0" -> "11.5(0)"	[label=Map];
-	"[<_ast.Constant object at 0x130532fd0>, <_ast.Constant object at 0x130532b20>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836b80>, <_ast.Constant object at 0x7fd500836a00>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"11.5(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"FastMarkerCluster(0)$0" -> "FastMarkerCluster(0)"	[label=add_to];
 	"FastMarkerCluster(0)$0" -> "map1(0)$0"	[label=add_to];
@@ -173,8 +171,8 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"plt(0)$3" -> "plt(0)$2"	[label=show];
 	"listings(0)$6" -> "listings(0)$5"	[label=unique];
 	"prop(0)$0" -> "listings(0)$6"	[label=count];
-	"prop(0)$0" -> "[<_ast.Constant object at 0x12f957220>, <_ast.Constant object at 0x12f9571c0>](0)"	[label=count];
-	"[<_ast.Constant object at 0x12f957220>, <_ast.Constant object at 0x12f9571c0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"prop(0)$0" -> "[<_ast.Constant object at 0x7fd50080d9d0>, <_ast.Constant object at 0x7fd50080d460>](0)"	[label=count];
+	"[<_ast.Constant object at 0x7fd50080d9d0>, <_ast.Constant object at 0x7fd50080d460>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"prop(0)$1" -> "prop(0)$0"	[label=unstack];
 	"prop(0)$2" -> "prop(0)$1"	[label=sum];
 	"prop(0)$2" -> "0(0)"	[label=sum];
@@ -184,8 +182,8 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"3(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"1(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"prop(0)$3" -> "prop(0)$2"	[label=sort_values];
-	"prop(0)$3" -> "[<_ast.Constant object at 0x12f957af0>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f957af0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"prop(0)$3" -> "[<_ast.Constant object at 0x7fd50080d0a0>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd50080d0a0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"prop(0)$4" -> "prop(0)$3"	[label=assignedFrom];
 	"prop(0)$4" -> "prop(0)$4"	[label=assignedFrom];
 	"prop(0)$4" -> "total(0)"	[label=assignedFrom];
@@ -193,8 +191,8 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"total(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"100(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"prop(0)$5" -> "prop(0)$4"	[label=drop];
-	"prop(0)$5" -> "[<_ast.Constant object at 0x12f957490>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f957490>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"prop(0)$5" -> "[<_ast.Constant object at 0x7fd50080d4f0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50080d4f0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"prop(0)$6" -> "prop(0)$5"	[label=plot];
 	"plt(0)$4" -> "plt(0)$3"	[label=title];
 	"plt(0)$4" -> "Property types in Amsterdam(0)"	[label=title];
@@ -228,12 +226,12 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"Private room(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_private(0)$0" -> "False(0)"	[label=sort_values];
 	"host_private(0)$0" -> "private(0)$0"	[label=sort_values];
-	"host_private(0)$0" -> "[<_ast.Constant object at 0x12f951760>, <_ast.Constant object at 0x12f951400>, <_ast.Constant object at 0x12f9510a0>](0)"	[label=sort_values];
+	"host_private(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc310>](0)"	[label=sort_values];
 	"host_private(0)$0" -> "private_rooms(0)"	[label=sort_values];
-	"host_private(0)$0" -> "[<_ast.Constant object at 0x12f951ee0>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f951760>, <_ast.Constant object at 0x12f951400>, <_ast.Constant object at 0x12f9510a0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"host_private(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccd30>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc310>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"private_rooms(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951ee0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccd30>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_private(0)$1" -> "host_private(0)$0"	[label=head];
 	"feliciano(0)$0" -> "private(0)$0"	[label=assignedFrom];
 	"feliciano(0)$0" -> "host_id(0)"	[label=assignedFrom];
@@ -241,22 +239,22 @@ object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant ob
 	"host_id(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"67005410(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"feliciano(0)$1" -> "feliciano(0)$0"	[label=assignedFrom];
-	"feliciano(0)$1" -> "[<_ast.Constant object at 0x12f951a60>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant object at 0x12f9512e0>, <_ast.Constant \
-object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f951a60>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant object at 0x12f9512e0>, <_ast.Constant \
-object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"feliciano(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cca60>, <_\
+ast.Constant object at 0x7fd4c04ccb80>, <_ast.Constant object at 0x7fd4c04cc9a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant object at 0x7fd4c04cc940>, <_ast.Constant object at 0x7fd4c04cca60>, <_\
+ast.Constant object at 0x7fd4c04ccb80>, <_ast.Constant object at 0x7fd4c04cc9a0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"listing_id(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"feliciano(0)$2" -> "feliciano(0)$1"	[label=assignedFrom];
 	"feliciano(0)$2" -> "listing_id(0)"	[label=assignedFrom];
 	"freq(0)$2" -> "listings(0)$6"	[label=reset_index];
-	"freq(0)$2" -> "[<_ast.Constant object at 0x12f951040>](0)"	[label=reset_index];
+	"freq(0)$2" -> "[<_ast.Constant object at 0x7fd4c04cc790>](0)"	[label=reset_index];
 	"freq(0)$2" -> "num_host_listings(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f951040>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc790>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"num_host_listings(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_prop(0)$0" -> "freq(0)$2"	[label=transpose];
-	"host_prop(0)$0" -> "[<_ast.Constant object at 0x12f85eac0>](0)"	[label=transpose];
+	"host_prop(0)$0" -> "[<_ast.Constant object at 0x7fd4d0983130>](0)"	[label=transpose];
 	"host_prop(0)$0" -> "count(0)"	[label=transpose];
-	"[<_ast.Constant object at 0x12f85eac0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0983130>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"count(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_prop(0)$1" -> "0(0)"	[label=assignedFrom];
 	"host_prop(0)$1" -> "host_prop(0)$0"	[label=assignedFrom];
@@ -265,12 +263,12 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"host_prop(0)$2" -> "host_prop(0)$2"	[label=drop];
 	"freq(0)$3" -> "listings(0)$6"	[label=reset_index];
 	"freq(0)$3" -> "num_host_listings(0)"	[label=reset_index];
-	"freq(0)$3" -> "[<_ast.Constant object at 0x12f85e6d0>, <_ast.Constant object at 0x12f85e910>, <_ast.Constant object at 0x12f85e790>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f85e6d0>, <_ast.Constant object at 0x12f85e910>, <_ast.Constant object at 0x12f85e790>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"freq(0)$3" -> "[<_ast.Constant object at 0x7fd4d0983370>, <_ast.Constant object at 0x7fd4d09832e0>, <_ast.Constant object at 0x7fd4d0983820>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4d0983370>, <_ast.Constant object at 0x7fd4d09832e0>, <_ast.Constant object at 0x7fd4d0983820>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"freq(0)$4" -> "False(0)"	[label=sort_values];
 	"freq(0)$4" -> "freq(0)$3"	[label=sort_values];
-	"freq(0)$4" -> "[<_ast.Constant object at 0x12f9a6040>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f9a6040>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"freq(0)$4" -> "[<_ast.Constant object at 0x7fd4d0983f10>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd4d0983f10>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"freq(0)$5" -> "num_host_listings(0)"	[label=assignedFrom];
 	"freq(0)$5" -> "freq(0)$4"	[label=assignedFrom];
 	"freq(0)$5" -> "freq(0)$5"	[label=assignedFrom];
@@ -299,8 +297,8 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"adam(0)$0" -> "../input/neighbourhoods.geojson(0)"	[label=read_file];
 	"../input/neighbourhoods.geojson(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"feq(0)$7" -> "pd(0)"	[label=DataFrame];
-	"feq(0)$7" -> "[<_ast.Name object at 0x12f8854c0>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12f8854c0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"feq(0)$7" -> "[<_ast.Name object at 0x7fd4c04ff850>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4c04ff850>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"feq(0)$8" -> "feq(0)$7"	[label=transpose];
 	"adam(0)$1" -> "pd(0)"	[label=merge];
 	"adam(0)$1" -> "left(0)"	[label=merge];
@@ -314,9 +312,9 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"map_dict(0)$0" -> "adam(0)$3"	[label=to_dict];
 	"map_dict(0)$0" -> "average_price(0)"	[label=to_dict];
 	"average_price(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f885fd0>, <_ast.Constant object at 0x12f899040>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085fc70>, <_ast.Constant object at 0x7fd50085f8b0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"color_scale(0)$0" -> "map_dict(0)$0"	[label=LinearColormap];
-	"color_scale(0)$0" -> "[<_ast.Constant object at 0x12f885fd0>, <_ast.Constant object at 0x12f899040>](0)"	[label=LinearColormap];
+	"color_scale(0)$0" -> "[<_ast.Constant object at 0x7fd50085fc70>, <_ast.Constant object at 0x7fd50085f8b0>](0)"	[label=LinearColormap];
 	"color_scale(0)$0" -> "min(0)"	[label=LinearColormap];
 	"color_scale(0)$0" -> "max(0)"	[label=LinearColormap];
 	"min(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
@@ -327,9 +325,9 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"value(1)$0" -> "properties(1)"	[label=get];
 	"value(1)$0" -> "neighbourhood(1)"	[label=get];
 	"map3(0)$0" -> "folium(0)"	[label=Map];
-	"map3(0)$0" -> "[<_ast.Constant object at 0x12f8998e0>, <_ast.Constant object at 0x12f899910>](0)"	[label=Map];
+	"map3(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0ee0>](0)"	[label=Map];
 	"map3(0)$0" -> "11(0)"	[label=Map];
-	"[<_ast.Constant object at 0x12f8998e0>, <_ast.Constant object at 0x12f899910>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0ee0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"11(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"folium(0)$0" -> "folium(0)"	[label=add_to];
 	"folium(0)$0" -> "map3(0)$0"	[label=add_to];
@@ -568,7 +566,11 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"calendar(0)$2" -> "calendar(0)$2"	[label=to_numeric];
 	"calendar(0)$2" -> "$(0)"	[label=to_numeric];
 	"$(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"calendar(0)$3" -> "calendar(0)$2"	[label=assignedFrom];
+	"calendar(0)$3" -> "calendar(0)$3"	[label=assignedFrom];
+	"calendar(0)$3" -> "2019-12-05(0)"	[label=assignedFrom];
 	"2019-12-05(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"print[239/0]" -> "calendar(0)$3"	[label=print];
 	"listings(0)$8" -> "listing_id(0)"	[label=assignedFrom];
 	"listings(0)$8" -> "listings(0)$7"	[label=assignedFrom];
 	"calendar(0)$4" -> "pd(0)"	[label=merge];
@@ -576,15 +578,15 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"calendar(0)$4" -> "listing_id(0)"	[label=merge];
 	"calendar(0)$4" -> "listings(0)$8"	[label=merge];
 	"calendar(0)$4" -> "calendar(0)$4"	[label=merge];
-	"calendar(0)$4" -> "[<_ast.Constant object at 0x12f9105e0>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f9105e0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"calendar(0)$4" -> "[<_ast.Constant object at 0x7fd500834340>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd500834340>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"calendar(0)$5" -> "15(0)"	[label=sample];
 	"calendar(0)$5" -> "calendar(0)$4"	[label=sample];
 	"sum_available(0)$0" -> "t(0)"	[label=reset_index];
 	"sum_available(0)$0" -> "calendar(0)$5"	[label=reset_index];
-	"sum_available(0)$0" -> "[<_ast.Constant object at 0x12f910c10>](0)"	[label=reset_index];
+	"sum_available(0)$0" -> "[<_ast.Constant object at 0x7fd5008349a0>](0)"	[label=reset_index];
 	"sum_available(0)$0" -> "available(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f910c10>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008349a0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"available(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"sum_available(0)$1" -> "sum_available(0)$0"	[label=day_name];
 	"sum_available(0)$1" -> "date(0)"	[label=day_name];
@@ -596,8 +598,8 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"average_price(0)$0" -> "2(0)"	[label=reset_index];
 	"average_price(0)$0" -> "t(0)"	[label=reset_index];
 	"average_price(0)$0" -> "calendar(0)$5"	[label=reset_index];
-	"average_price(0)$0" -> "[<_ast.Constant object at 0x12f8e9a30>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f8e9a30>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"average_price(0)$0" -> "[<_ast.Constant object at 0x7fd500829700>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500829700>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"average_price(0)$1" -> "date(0)"	[label=day_name];
 	"average_price(0)$1" -> "average_price(0)$0"	[label=day_name];
 	"average_price(0)$2" -> "date(0)"	[label=set_index];
@@ -608,23 +610,23 @@ object at 0x12f9517f0>, <_ast.Constant object at 0x12f951640>](0)" -> "airbnb-th
 	"reviews_details(0)$1" -> "listing_id(0)"	[label=merge];
 	"reviews_details(0)$1" -> "listings(0)$8"	[label=merge];
 	"reviews_details(0)$1" -> "reviews_details(0)$1"	[label=merge];
-	"reviews_details(0)$1" -> "[<_ast.Constant object at 0x12f8fe5e0>, <_ast.Constant object at 0x12f8fe430>, <_ast.Constant object at 0x12f8fe340>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f8fe5e0>, <_ast.Constant object at 0x12f8fe430>, <_ast.Constant object at 0x12f8fe340>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"reviews_details(0)$1" -> "[<_ast.Constant object at 0x7fd500896310>, <_ast.Constant object at 0x7fd500896340>, <_ast.Constant object at 0x7fd500896040>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd500896310>, <_ast.Constant object at 0x7fd500896340>, <_ast.Constant object at 0x7fd500896040>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"reviews_details(0)$2" -> "id(0)"	[label=set_index];
 	"reviews_details(0)$2" -> "reviews_details(0)$1"	[label=set_index];
 	"reviews_details(0)$3" -> "reviews_details(0)$2"	[label=assignedFrom];
-	"reviews_details(0)$3" -> "[<_ast.Constant object at 0x12f8fe9a0>, <_ast.Constant object at 0x12f8fecd0>, <_ast.Constant object at 0x12f8fe9d0>, <_ast.Constant \
-object at 0x12f8fea60>, <_ast.Constant object at 0x12f8fea90>, <_ast.Constant object at 0x12f8feac0>, <_ast.Constant object at 0x12f8feb20>, <_\
-ast.Constant object at 0x12f8feb50>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8fe9a0>, <_ast.Constant object at 0x12f8fecd0>, <_ast.Constant object at 0x12f8fe9d0>, <_ast.Constant \
-object at 0x12f8fea60>, <_ast.Constant object at 0x12f8fea90>, <_ast.Constant object at 0x12f8feac0>, <_ast.Constant object at 0x12f8feb20>, <_\
-ast.Constant object at 0x12f8feb50>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"reviews_details(0)$3" -> "[<_ast.Constant object at 0x7fd500896700>, <_ast.Constant object at 0x7fd500896730>, <_ast.Constant object at 0x7fd500896760>, <_\
+ast.Constant object at 0x7fd500896790>, <_ast.Constant object at 0x7fd5008967c0>, <_ast.Constant object at 0x7fd500896820>, <_ast.Constant \
+object at 0x7fd500896850>, <_ast.Constant object at 0x7fd500896880>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500896700>, <_ast.Constant object at 0x7fd500896730>, <_ast.Constant object at 0x7fd500896760>, <_\
+ast.Constant object at 0x7fd500896790>, <_ast.Constant object at 0x7fd5008967c0>, <_ast.Constant object at 0x7fd500896820>, <_ast.Constant \
+object at 0x7fd500896850>, <_ast.Constant object at 0x7fd500896880>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"reviews_details(0)$4" -> "reviews_details(0)$3"	[label=head];
 	"host_reviews(0)$0" -> "False(0)"	[label=to_frame];
 	"host_reviews(0)$0" -> "number_of_reviews(0)"	[label=to_frame];
 	"host_reviews(0)$0" -> "reviews_details(0)$4"	[label=to_frame];
-	"host_reviews(0)$0" -> "[<_ast.Constant object at 0x12f8fef40>, <_ast.Constant object at 0x12f8fee50>](0)"	[label=to_frame];
-	"[<_ast.Constant object at 0x12f8fef40>, <_ast.Constant object at 0x12f8fee50>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"host_reviews(0)$0" -> "[<_ast.Constant object at 0x7fd500896be0>, <_ast.Constant object at 0x7fd500896c10>](0)"	[label=to_frame];
+	"[<_ast.Constant object at 0x7fd500896be0>, <_ast.Constant object at 0x7fd500896c10>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_reviews(0)$1" -> "host_reviews(0)$0"	[label=head];
 	"reviews_details(0)$5" -> "reviews_details(0)$4"	[label=head];
 	"reviews_details(0)$6" -> "reviews_details(0)$5"	[label=assignedFrom];
@@ -668,10 +670,10 @@ ast.Constant object at 0x12f8feb50>](0)" -> "airbnb-the-amsterdam-story-with-int
 	"reviews_details(0)$12" -> "\s+(0)"	[label=replace];
 	"\s+(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_names(0)$0" -> "reviews_details(0)$12"	[label=drop_duplicates];
-	"host_names(0)$0" -> "[<_ast.Constant object at 0x12f908f70>](0)"	[label=drop_duplicates];
-	"[<_ast.Constant object at 0x12f908f70>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"host_names(0)$0" -> "[<_ast.Constant object at 0x7fd500899c70>](0)"	[label=drop_duplicates];
+	"[<_ast.Constant object at 0x7fd500899c70>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"host_names(0)$1" -> "host_names(0)$0"	[label=tolist];
-	"len[0]" -> "host_names(0)$1"	[label=len];
+	"len[289/0]" -> "host_names(0)$1"	[label=len];
 	"texts(0)$0" -> "reviews_details(0)$12"	[label=tolist];
 	"vec(0)$0" -> "CountVectorizer(0)"	[label=fit];
 	"vec(0)$0" -> "texts(0)$0"	[label=fit];
@@ -689,9 +691,9 @@ ast.Constant object at 0x12f8feb50>](0)" -> "airbnb-the-amsterdam-story-with-int
 	"cvec_df(0)$0" -> "pd(0)"	[label=sort_values];
 	"cvec_df(0)$0" -> "False(0)"	[label=sort_values];
 	"cvec_df(0)$0" -> "words_freq(0)$0"	[label=sort_values];
-	"cvec_df(0)$0" -> "[<_ast.Constant object at 0x12f920dc0>, <_ast.Constant object at 0x12f920df0>](0)"	[label=sort_values];
+	"cvec_df(0)$0" -> "[<_ast.Constant object at 0x7fd500886bb0>, <_ast.Constant object at 0x7fd5008867c0>](0)"	[label=sort_values];
 	"cvec_df(0)$0" -> "counts(0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f920dc0>, <_ast.Constant object at 0x12f920df0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500886bb0>, <_ast.Constant object at 0x7fd5008867c0>](0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"counts(0)" -> "airbnb-the-amsterdam-story-with-interactive-maps.ipynb"	[label=appearsIn];
 	"cvec_df(0)$1" -> "10(0)"	[label=head];
 	"cvec_df(0)$1" -> "cvec_df(0)$0"	[label=head];

@@ -40,8 +40,8 @@ digraph "" {
 	"target(0)$0" -> "data(0)$0"	[label=log1p];
 	"target(0)$0" -> "target(0)$0"	[label=log1p];
 	"data(0)$1" -> "data(0)$0"	[label=drop];
-	"data(0)$1" -> "[<_ast.Constant object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85e190>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f85e5e0>, <_ast.Constant object at 0x12f85e190>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008327f0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008327f0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"leak(0)$0" -> "pd(0)"	[label=read_csv];
 	"leak(0)$0" -> "../input/breaking-lb-fresh-start-with-lag-selection/train_leak.csv(0)"	[label=read_csv];
 	"../input/breaking-lb-fresh-start-with-lag-selection/train_leak.csv(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
@@ -89,10 +89,10 @@ digraph "" {
 	"enumerate(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"features(0)$0" -> "data(0)$3"	[label=assignedFrom];
 	"features(0)$0" -> "f(0)"	[label=assignedFrom];
-	"features(0)$0" -> "[<_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade070>, <_ast.Constant object at 0x12fadea00>, <_ast.Constant \
-object at 0x12fade8e0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade070>, <_ast.Constant object at 0x12fadea00>, <_ast.Constant \
-object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"features(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ff7f0>, <_\
+ast.Constant object at 0x7fd4c04ff640>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ff7f0>, <_\
+ast.Constant object at 0x7fd4c04ff640>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"_f(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"_f(0)" -> "features(0)$0"	[label=iteratorOf];
 	"score(0)$0" -> "0(0)"	[label=assignedFrom];
@@ -100,8 +100,8 @@ object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"reg(0)$1" -> "data(0)$3"	[label=fit];
 	"reg(0)$1" -> "reg(0)$0"	[label=fit];
 	"reg(0)$1" -> "trn_(0)"	[label=fit];
-	"reg(0)$1" -> "[<_ast.Constant object at 0x12f88a190>, <_ast.Name object at 0x12f88aeb0>](0)"	[label=fit];
-	"[<_ast.Constant object at 0x12f88a190>, <_ast.Name object at 0x12f88aeb0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"reg(0)$1" -> "[<_ast.Constant object at 0x7fd5007f0940>, <_ast.Name object at 0x7fd5007f0d90>](0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd5007f0940>, <_ast.Name object at 0x7fd5007f0d90>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"rmse(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"score(0)$1" -> "target(0)$0"	[label=Add];
 	"score(0)$1" -> "data(0)$3"	[label=Add];
@@ -110,16 +110,16 @@ object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"score(0)$1" -> "score(0)$0"	[label=Add];
 	"score(0)$1" -> "reg(0)$1"	[label=Add];
 	"score(0)$1" -> "rmse(0)"	[label=Add];
-	"score(0)$1" -> "[<_ast.Constant object at 0x12f88a3a0>, <_ast.Name object at 0x12f88a6d0>](0)"	[label=Add];
-	"[<_ast.Constant object at 0x12f88a3a0>, <_ast.Name object at 0x12f88a6d0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"score(0)$1" -> "[<_ast.Constant object at 0x7fd50080d070>, <_ast.Name object at 0x7fd50080dee0>](0)"	[label=Add];
+	"[<_ast.Constant object at 0x7fd50080d070>, <_ast.Name object at 0x7fd50080dee0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"scores(0)$1" -> "scores(0)$0"	[label=append];
 	"scores(0)$1" -> "_f(0)"	[label=append];
 	"scores(0)$1" -> "score(0)$1"	[label=append];
 	"report(0)$0" -> "pd(0)"	[label=set_index];
 	"report(0)$0" -> "scores(0)$1"	[label=set_index];
-	"report(0)$0" -> "[<_ast.Constant object at 0x130532580>, <_ast.Constant object at 0x130532d90>](0)"	[label=set_index];
+	"report(0)$0" -> "[<_ast.Constant object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d730>](0)"	[label=set_index];
 	"report(0)$0" -> "feature(0)"	[label=set_index];
-	"[<_ast.Constant object at 0x130532580>, <_ast.Constant object at 0x130532d90>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d730>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"feature(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"report(0)$1" -> "nb_zeros(0)$0"	[label=assignedFrom];
 	"report(0)$1" -> "report(0)$0"	[label=assignedFrom];
@@ -201,8 +201,8 @@ object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"100(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"150(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"255(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12f8b3700>, <_ast.Tuple object at 0x12f8b3670>, <_ast.Tuple object at 0x12f8b31f0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"TOOLTIPS(0)$0" -> "[<_ast.Tuple object at 0x12f8b3700>, <_ast.Tuple object at 0x12f8b3670>, <_ast.Tuple object at 0x12f8b31f0>](0)"	[label=assignedFrom];
+	"[<_ast.Tuple object at 0x7fd50085bfa0>, <_ast.Tuple object at 0x7fd50085b7f0>, <_ast.Tuple object at 0x7fd4c048ecd0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"TOOLTIPS(0)$0" -> "[<_ast.Tuple object at 0x7fd50085bfa0>, <_ast.Tuple object at 0x7fd50085b7f0>, <_ast.Tuple object at 0x7fd4c048ecd0>](0)"	[label=assignedFrom];
 	"hover, crosshair, pan, wheel_zoom, zoom_in, zoom_out, box_zoom, undo, redo, reset, tap, save, box_select, poly_select, lasso_select(\
 0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"TOOLS(0)$0" -> "hover, crosshair, pan, wheel_zoom, zoom_in, zoom_out, box_zoom, undo, redo, reset, tap, save, box_select, poly_select, lasso_select(\
@@ -235,7 +235,7 @@ object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"p(0)$7" -> "y(0)"	[label=scatter];
 	"x(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"y(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"show[0]" -> "p(0)$7"	[label=show];
+	"show[99/0]" -> "p(0)$7"	[label=show];
 	"report(0)$5" -> "report(0)$4"	[label=to_csv];
 	"report(0)$5" -> "feature_report.csv(0)"	[label=to_csv];
 	"feature_report.csv(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
@@ -296,10 +296,10 @@ object at 0x12fade8e0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"1(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"features(0)$1" -> "data(0)$3"	[label=assignedFrom];
 	"features(0)$1" -> "f(0)"	[label=assignedFrom];
-	"features(0)$1" -> "[<_ast.Constant object at 0x12fb00be0>, <_ast.Constant object at 0x12fb00c10>, <_ast.Constant object at 0x12fb00c40>, <_ast.Constant \
-object at 0x12fb00c70>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fb00be0>, <_ast.Constant object at 0x12fb00c10>, <_ast.Constant object at 0x12fb00c40>, <_ast.Constant \
-object at 0x12fb00c70>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"features(0)$1" -> "[<_ast.Constant object at 0x7fd500999400>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999e20>, <_\
+ast.Constant object at 0x7fd500999340>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999400>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999e20>, <_\
+ast.Constant object at 0x7fd500999340>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"data(0)$4" -> "np(0)"	[label=replace];
 	"data(0)$4" -> "data(0)$3"	[label=replace];
 	"data(0)$4" -> "0(0)"	[label=replace];
@@ -372,12 +372,12 @@ object at 0x12fb00c70>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn
 	"test(0)$10" -> "test(0)$9"	[label=kurtosis];
 	"features(0)$2" -> "good_features(0)$0"	[label=tolist];
 	"features(0)$3" -> "features(0)$2"	[label=Add];
-	"features(0)$3" -> "[<_ast.Constant object at 0x12fadf5b0>, <_ast.Constant object at 0x12fadf8b0>, <_ast.Constant object at 0x12fadf8e0>, <_ast.Constant \
-object at 0x12fadf910>, <_ast.Constant object at 0x12fadf940>, <_ast.Constant object at 0x12fadf970>, <_ast.Constant object at 0x12fadf9a0>, <_\
-ast.Constant object at 0x12fadf9d0>](0)"	[label=Add];
-	"[<_ast.Constant object at 0x12fadf5b0>, <_ast.Constant object at 0x12fadf8b0>, <_ast.Constant object at 0x12fadf8e0>, <_ast.Constant \
-object at 0x12fadf910>, <_ast.Constant object at 0x12fadf940>, <_ast.Constant object at 0x12fadf970>, <_ast.Constant object at 0x12fadf9a0>, <_\
-ast.Constant object at 0x12fadf9d0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"features(0)$3" -> "[<_ast.Constant object at 0x7fd500819580>, <_ast.Constant object at 0x7fd5008195b0>, <_ast.Constant object at 0x7fd5008195e0>, <_\
+ast.Constant object at 0x7fd500819610>, <_ast.Constant object at 0x7fd500819640>, <_ast.Constant object at 0x7fd500819670>, <_ast.Constant \
+object at 0x7fd5008196a0>, <_ast.Constant object at 0x7fd5008196d0>](0)"	[label=Add];
+	"[<_ast.Constant object at 0x7fd500819580>, <_ast.Constant object at 0x7fd5008195b0>, <_ast.Constant object at 0x7fd5008195e0>, <_\
+ast.Constant object at 0x7fd500819610>, <_ast.Constant object at 0x7fd500819640>, <_ast.Constant object at 0x7fd500819670>, <_ast.Constant \
+object at 0x7fd5008196a0>, <_ast.Constant object at 0x7fd5008196d0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"dtrain(0)$0" -> "target(0)$0"	[label=Dataset];
 	"dtrain(0)$0" -> "False(0)"	[label=Dataset];
 	"dtrain(0)$0" -> "lgb(0)"	[label=Dataset];
@@ -468,29 +468,32 @@ ast.Constant object at 0x12fadf9d0>](0)" -> "feature-scoring-vs-zeros.ipynb"	[la
 	"test(0)$12" -> "test(0)$11"	[label=Add];
 	"test(0)$12" -> "clf(0)$0"	[label=Add];
 	"test(0)$12" -> "test(0)$12"	[label=Add];
-	"print[0]" -> "mean_squared_error(0)"	[label=print];
-	"print[0]" -> "OOF SCORE : \%9.6f(0)"	[label=print];
-	"print[0]" -> "OOF SCORE with LEAK : \%9.6f(0)"	[label=print];
-	"OOF SCORE : \%9.6f(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"OOF SCORE with LEAK : \%9.6f(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"print[1]" -> "mean_squared_error(0)"	[label=print];
-	"print[1]" -> "target(0)$0"	[label=print];
-	"print[2]" -> "target(0)$0"	[label=print];
-	"print[2]" -> "val_idx(0)"	[label=print];
-	"print[3]" -> "oof_preds(0)$1"	[label=print];
-	"print[3]" -> "data(0)$13"	[label=print];
-	"data(0)$13" -> "np(0)"	[label=log1p];
-	"data(0)$13" -> "leak(0)$0"	[label=log1p];
-	"data(0)$13" -> "data(0)$13"	[label=log1p];
-	"data(0)$13" -> "data(0)$12"	[label=log1p];
-	"print[4]" -> "val_idx(0)"	[label=print];
-	"print[4]" -> "0.5(0)"	[label=print];
-	"print[4]" -> "predictions(0)"	[label=print];
+	"print[182/4]" -> "mean_squared_error(0)"	[label=print];
+	"print[182/4]" -> "target(0)$0"	[label=print];
+	"print[182/4]" -> "val_idx(0)"	[label=print];
+	"print[182/4]" -> "oof_preds(0)$1"	[label=print];
+	"print[182/4]" -> "0.5(0)"	[label=print];
 	"0.5(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"predictions(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
-	"print[5]" -> "0.5(0)"	[label=print];
 	"data(0)$12" -> "data(0)$11"	[label=assignedFrom];
 	"data(0)$12" -> "oof_preds(0)$1"	[label=assignedFrom];
+	"data(0)$13" -> "np(0)"	[label=log1p];
+	"data(0)$13" -> "leak(0)$0"	[label=log1p];
+	"data(0)$13" -> "data(0)$12"	[label=log1p];
+	"data(0)$13" -> "data(0)$13"	[label=log1p];
+	"OOF SCORE : \%9.6f(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"print[187/0]" -> "mean_squared_error(0)"	[label=print];
+	"print[187/0]" -> "target(0)$0"	[label=print];
+	"print[187/0]" -> "oof_preds(0)$1"	[label=print];
+	"print[187/0]" -> "0.5(0)"	[label=print];
+	"print[187/0]" -> "OOF SCORE : \%9.6f(0)"	[label=print];
+	"OOF SCORE with LEAK : \%9.6f(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
+	"print[189/0]" -> "mean_squared_error(0)"	[label=print];
+	"print[189/0]" -> "target(0)$0"	[label=print];
+	"print[189/0]" -> "0.5(0)"	[label=print];
+	"print[189/0]" -> "data(0)$13"	[label=print];
+	"print[189/0]" -> "OOF SCORE with LEAK : \%9.6f(0)"	[label=print];
+	"print[189/0]" -> "predictions(0)"	[label=print];
+	"predictions(0)" -> "feature-scoring-vs-zeros.ipynb"	[label=appearsIn];
 	"test(0)$13" -> "np(0)"	[label=expm1];
 	"test(0)$13" -> "target(0)$0"	[label=expm1];
 	"test(0)$13" -> "test(0)$12"	[label=expm1];

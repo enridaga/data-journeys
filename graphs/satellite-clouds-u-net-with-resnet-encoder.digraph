@@ -99,16 +99,16 @@ digraph "" {
 	"train_df(0)$3" -> "train_df(0)$2"	[label=assignedFrom];
 	"train_df(0)$3" -> "EncodedPixels(0)"	[label=assignedFrom];
 	"EncodedPixels(0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
-	"print[0]" -> "train_df(0)$3"	[label=print];
-	"print[0]" -> "mask_count_df(0)$1"	[label=print];
-	"mask_count_df(0)$1" -> "mask_count_df(0)$0"	[label=sort_values];
-	"mask_count_df(0)$1" -> "hasMask(0)"	[label=sort_values];
+	"print[29/0]" -> "train_df(0)$3"	[label=print];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=head];
 	"mask_count_df(0)$0" -> "np(0)"	[label=reset_index];
 	"mask_count_df(0)$0" -> "train_df(0)$4"	[label=reset_index];
 	"mask_count_df(0)$0" -> "ImageId(0)"	[label=reset_index];
 	"ImageId(0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
+	"mask_count_df(0)$1" -> "mask_count_df(0)$0"	[label=sort_values];
+	"mask_count_df(0)$1" -> "hasMask(0)"	[label=sort_values];
 	"hasMask(0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
+	"print[33/0]" -> "mask_count_df(0)$1"	[label=print];
 	"mask_count_df(0)$2" -> "mask_count_df(0)$1"	[label=head];
 	"sub_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"sub_df(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
@@ -121,8 +121,8 @@ digraph "" {
 	"test_imgs(0)$0" -> "pd(0)"	[label=DataFrame];
 	"test_imgs(0)$0" -> "ImageId(0)"	[label=DataFrame];
 	"test_imgs(0)$0" -> "sub_df(0)$1"	[label=DataFrame];
-	"test_imgs(0)$0" -> "[<_ast.Constant object at 0x12f8f52b0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f8f52b0>](0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
+	"test_imgs(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff700>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd4c04ff700>](0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
 	"img(1)" -> "np_resize[0]"	[label=_argToVar];
 	"input_shape(1)" -> "np_resize[1]"	[label=_argToVar];
 	"height(1)$0" -> "input_shape(1)"	[label=assignedFrom];
@@ -130,7 +130,7 @@ digraph "" {
 	"img(2)" -> "mask2rle[0]"	[label=_argToVar];
 	"pixels(2)$0" -> "img(2)"	[label=flatten];
 	"pixels(2)$1" -> "np(2)"	[label=concatenate];
-	"pixels(2)$1" -> "[<_ast.List object at 0x1305326a0>, <_ast.Name object at 0x130532190>, <_ast.List object at 0x130532ac0>](2)"	[label=concatenate];
+	"pixels(2)$1" -> "[<_ast.List object at 0x7fd4c04ffb50>, <_ast.Name object at 0x7fd4c04ff3d0>, <_ast.List object at 0x7fd4c04ff370>](2)"	[label=concatenate];
 	"runs(2)$0" -> "pixels(2)$1"	[label=Add];
 	"runs(2)$0" -> "np(2)"	[label=Add];
 	"runs(2)$0" -> "1(2)"	[label=Add];
@@ -268,7 +268,7 @@ digraph "" {
 	"grads(8)$0" -> "loss(8)"	[label=get_gradients];
 	"grads(8)$0" -> "params(8)"	[label=get_gradients];
 	"self(8)$0" -> "self(8)"	[label=assignedFrom];
-	"self(8)$0" -> "[<_ast.Call object at 0x12f9a61f0>](8)"	[label=assignedFrom];
+	"self(8)$0" -> "[<_ast.Call object at 0x7fd4c04a8eb0>](8)"	[label=assignedFrom];
 	"lr(8)$0" -> "self(8)$0"	[label=assignedFrom];
 	"lr(8)$1" -> "self(8)$0"	[label=Mult];
 	"lr(8)$1" -> "lr(8)$0"	[label=Mult];
@@ -323,7 +323,7 @@ digraph "" {
 	"self(8)$1" -> "ms(8)$0"	[label=Add];
 	"self(8)$1" -> "vs(8)$0"	[label=Add];
 	"self(8)$1" -> "vhats(8)$1"	[label=Add];
-	"self(8)$1" -> "[<_ast.Attribute object at 0x12f88ab20>](8)"	[label=Add];
+	"self(8)$1" -> "[<_ast.Attribute object at 0x7fd5009d4820>](8)"	[label=Add];
 	"beta_1_t(8)$0" -> "K(8)"	[label=pow];
 	"beta_1_t(8)$0" -> "t(8)$0"	[label=pow];
 	"beta_1_t(8)$0" -> "self(8)$1"	[label=pow];
@@ -609,7 +609,7 @@ digraph "" {
 	"img(22)" -> "__random_transform[1]"	[label=_argToVar];
 	"masks(22)" -> "__random_transform[2]"	[label=_argToVar];
 	"composition(22)$0" -> "albu(22)"	[label=Compose];
-	"composition(22)$0" -> "[<_ast.Call object at 0x12f915a30>, <_ast.Call object at 0x12f915ac0>, <_ast.Call object at 0x12f915b50>](22)"	[label=Compose];
+	"composition(22)$0" -> "[<_ast.Call object at 0x7fd50080f730>, <_ast.Call object at 0x7fd50080f7c0>, <_ast.Call object at 0x7fd50080f880>](22)"	[label=Compose];
 	"composed(22)$0" -> "img(22)"	[label=composition];
 	"composed(22)$0" -> "masks(22)"	[label=composition];
 	"aug_img(22)$0" -> "composed(22)$0"	[label=assignedFrom];
@@ -731,7 +731,7 @@ digraph "" {
 	"u6(24)$0" -> "64(24)"	[label=assignedFrom];
 	"u6(24)$0" -> "c55(24)$1"	[label=assignedFrom];
 	"u6(24)$0" -> "Conv2DTranspose(24)"	[label=assignedFrom];
-	"u6(24)$1" -> "[<_ast.Name object at 0x12f904310>, <_ast.Name object at 0x12f904340>](24)"	[label=concatenate];
+	"u6(24)$1" -> "[<_ast.Name object at 0x7fd500835940>, <_ast.Name object at 0x7fd500820040>](24)"	[label=concatenate];
 	"c6(24)$0" -> "Conv2D(24)"	[label=assignedFrom];
 	"c6(24)$0" -> "3(24)"	[label=assignedFrom];
 	"c6(24)$0" -> "elu(24)"	[label=assignedFrom];
@@ -749,7 +749,7 @@ digraph "" {
 	"u71(24)$0" -> "32(24)"	[label=assignedFrom];
 	"u71(24)$0" -> "Conv2DTranspose(24)"	[label=assignedFrom];
 	"u71(24)$0" -> "c6(24)$1"	[label=assignedFrom];
-	"u71(24)$1" -> "[<_ast.Name object at 0x12f904dc0>, <_ast.Name object at 0x12f904df0>](24)"	[label=concatenate];
+	"u71(24)$1" -> "[<_ast.Name object at 0x7fd500820ac0>, <_ast.Name object at 0x7fd500820af0>](24)"	[label=concatenate];
 	"c71(24)$0" -> "Conv2D(24)"	[label=assignedFrom];
 	"c71(24)$0" -> "3(24)"	[label=assignedFrom];
 	"c71(24)$0" -> "elu(24)"	[label=assignedFrom];
@@ -767,7 +767,7 @@ digraph "" {
 	"u7(24)$0" -> "32(24)"	[label=assignedFrom];
 	"u7(24)$0" -> "Conv2DTranspose(24)"	[label=assignedFrom];
 	"u7(24)$0" -> "c61(24)$0"	[label=assignedFrom];
-	"u7(24)$1" -> "[<_ast.Name object at 0x12f9198b0>, <_ast.Name object at 0x12f9198e0>](24)"	[label=concatenate];
+	"u7(24)$1" -> "[<_ast.Name object at 0x7fd50082f5b0>, <_ast.Name object at 0x7fd50082f5e0>](24)"	[label=concatenate];
 	"c7(24)$0" -> "Conv2D(24)"	[label=assignedFrom];
 	"c7(24)$0" -> "3(24)"	[label=assignedFrom];
 	"c7(24)$0" -> "elu(24)"	[label=assignedFrom];
@@ -785,7 +785,7 @@ digraph "" {
 	"u8(24)$0" -> "16(24)"	[label=assignedFrom];
 	"u8(24)$0" -> "Conv2DTranspose(24)"	[label=assignedFrom];
 	"u8(24)$0" -> "c7(24)$1"	[label=assignedFrom];
-	"u8(24)$1" -> "[<_ast.Name object at 0x12f90c3d0>, <_ast.Name object at 0x12f90c3a0>](24)"	[label=concatenate];
+	"u8(24)$1" -> "[<_ast.Name object at 0x7fd5008700a0>, <_ast.Name object at 0x7fd5008700d0>](24)"	[label=concatenate];
 	"c8(24)$0" -> "Conv2D(24)"	[label=assignedFrom];
 	"c8(24)$0" -> "3(24)"	[label=assignedFrom];
 	"c8(24)$0" -> "elu(24)"	[label=assignedFrom];
@@ -804,7 +804,7 @@ digraph "" {
 	"u9(24)$0" -> "Conv2DTranspose(24)"	[label=assignedFrom];
 	"u9(24)$0" -> "c8(24)$1"	[label=assignedFrom];
 	"u9(24)$1" -> "3(24)"	[label=concatenate];
-	"u9(24)$1" -> "[<_ast.Name object at 0x12f90ce80>, <_ast.Name object at 0x12f90cee0>](24)"	[label=concatenate];
+	"u9(24)$1" -> "[<_ast.Name object at 0x7fd500870b50>, <_ast.Name object at 0x7fd500870b80>](24)"	[label=concatenate];
 	"c9(24)$0" -> "Conv2D(24)"	[label=assignedFrom];
 	"c9(24)$0" -> "8(24)"	[label=assignedFrom];
 	"c9(24)$0" -> "3(24)"	[label=assignedFrom];
@@ -822,8 +822,8 @@ digraph "" {
 	"outputs(24)$0" -> "4(24)"	[label=assignedFrom];
 	"outputs(24)$0" -> "1(24)"	[label=assignedFrom];
 	"outputs(24)$0" -> "sigmoid(24)"	[label=assignedFrom];
-	"model(24)$0" -> "[<_ast.Name object at 0x12f8a79a0>](24)"	[label=Model];
-	"model(24)$0" -> "[<_ast.Name object at 0x12f8a7a60>](24)"	[label=Model];
+	"model(24)$0" -> "[<_ast.Name object at 0x7fd5008476d0>](24)"	[label=Model];
+	"model(24)$0" -> "[<_ast.Name object at 0x7fd500847790>](24)"	[label=Model];
 	"32(0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
 	"BATCH_SIZE(0)$0" -> "32(0)"	[label=assignedFrom];
 	"train_idx(0)$0" -> "mask_count_df(0)$2"	[label=train_test_split];
@@ -875,9 +875,9 @@ digraph "" {
 	"history(0)$0" -> "train_generator(0)$0"	[label=fit_generator];
 	"history(0)$0" -> "val_generator(0)$0"	[label=fit_generator];
 	"history(0)$0" -> "model(0)$2"	[label=fit_generator];
-	"history(0)$0" -> "[<_ast.Name object at 0x12f8d54f0>](0)"	[label=fit_generator];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd50084b190>](0)"	[label=fit_generator];
 	"history(0)$0" -> "30(0)"	[label=fit_generator];
-	"[<_ast.Name object at 0x12f8d54f0>](0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50084b190>](0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
 	"30(0)" -> "satellite-clouds-u-net-with-resnet-encoder.ipynb"	[label=appearsIn];
 	"json(0)$0" -> "json(0)"	[label=dump];
 	"json(0)$0" -> "history(0)$0"	[label=dump];

@@ -34,19 +34,9 @@ digraph "" {
 	ImageFilter -> PIL	[label=importedBy];
 	"ImageFilter(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"ImageFilter(0)" -> ImageFilter	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "submission(0)$0"	[label=print];
-	"submission(0)$0" -> "np(0)"	[label=DataFrame];
-	"submission(0)$0" -> "pd(0)"	[label=DataFrame];
-	"submission(0)$0" -> "../input/aptos2019-blindness-detection/sample_submission.csv(0)"	[label=DataFrame];
-	"submission(0)$0" -> "output(0)$5"	[label=DataFrame];
-	"submission(0)$0" -> "id_code(0)"	[label=DataFrame];
-	"submission(0)$0" -> "diagnosis(0)"	[label=DataFrame];
-	"submission(0)$0" -> "int(0)"	[label=DataFrame];
+	"print[13/0]" -> "os(0)"	[label=print];
+	"print[13/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "./(0)"	[label=print];
-	"./(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"sklearn.model_selection" -> "eye-inference-num-class-1-ver3.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
@@ -119,8 +109,6 @@ digraph "" {
 	"EfficientNet(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"EfficientNet(0)" -> EfficientNet	[label=assignedFrom];
 	"seed(1)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "1234(0)"	[label=seed_everything];
-	"1234(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"random(1)$0" -> "seed(1)"	[label=seed];
 	"random(1)$0" -> "random(1)"	[label=seed];
 	"os(1)$0" -> "seed(1)"	[label=str];
@@ -133,6 +121,8 @@ digraph "" {
 	"torch(1)$1" -> "torch(1)$0"	[label=manual_seed];
 	"torch(1)$2" -> "torch(1)$1"	[label=assignedFrom];
 	"torch(1)$2" -> "True(1)"	[label=assignedFrom];
+	"1234(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
+	"seed_everything[41/0]" -> "1234(0)"	[label=seed_everything];
 	"5(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"TTA(0)$0" -> "5(0)"	[label=assignedFrom];
 	"1(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
@@ -218,7 +208,7 @@ digraph "" {
 	"img3(5)$0" -> "2(5)"	[label=assignedFrom];
 	"img(5)$0" -> "np(5)"	[label=stack];
 	"img(5)$0" -> "1(5)"	[label=stack];
-	"img(5)$0" -> "[<_ast.Name object at 0x12fec9e50>, <_ast.Name object at 0x12fec9ee0>, <_ast.Name object at 0x12fec9d90>](5)"	[label=stack];
+	"img(5)$0" -> "[<_ast.Name object at 0x7fd4c04cce50>, <_ast.Name object at 0x7fd4c04cca00>, <_ast.Name object at 0x7fd4c04cc550>](5)"	[label=stack];
 	"self(7)" -> "__init__[0]"	[label=_argToVar];
 	"dataframe(7)" -> "__init__[1]"	[label=_argToVar];
 	"transform(7)" -> "__init__[2]"	[label=_argToVar];
@@ -256,10 +246,10 @@ digraph "" {
 	"image(9)$6" -> "self(9)"	[label=transform];
 	"image(9)$6" -> "image(9)$6"	[label=transform];
 	"test_transform(0)$0" -> "transforms(0)"	[label=Compose];
-	"test_transform(0)$0" -> "[<_ast.Call object at 0x12f8a6ee0>, <_ast.Call object at 0x12f8a6c40>, <_ast.Call object at 0x12f8a6640>, <_ast.Call object at 0x12f8a64c0>](\
-0)"	[label=Compose];
-	"[<_ast.Call object at 0x12f8a6ee0>, <_ast.Call object at 0x12f8a6c40>, <_ast.Call object at 0x12f8a6640>, <_ast.Call object at 0x12f8a64c0>](\
-0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
+	"test_transform(0)$0" -> "[<_ast.Call object at 0x7fd50082acd0>, <_ast.Call object at 0x7fd50082a8e0>, <_ast.Call object at 0x7fd50082ac10>, <_ast.Call object \
+at 0x7fd50082a850>](0)"	[label=Compose];
+	"[<_ast.Call object at 0x7fd50082acd0>, <_ast.Call object at 0x7fd50082a8e0>, <_ast.Call object at 0x7fd50082ac10>, <_ast.Call object \
+at 0x7fd50082a850>](0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"testset(0)$0" -> "pd(0)"	[label=MyDataset];
 	"testset(0)$0" -> "test_transform(0)$0"	[label=MyDataset];
 	"testset(0)$0" -> "../input/aptos2019-blindness-detection/sample_submission.csv(0)"	[label=MyDataset];
@@ -320,10 +310,10 @@ digraph "" {
 	"test_pred(0)$1" -> "1(0)"	[label=Add];
 	"test_pred(0)$1" -> "test_pred(0)$0"	[label=Add];
 	"test_pred(0)$1" -> "pred(0)$0"	[label=Add];
-	"[<_ast.Constant object at 0x12fb0ab20>, <_ast.Constant object at 0x12fb0af10>, <_ast.Constant object at 0x12fb0af70>, <_ast.Constant \
-object at 0x12fb0af40>](0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
-	"coef(0)$0" -> "[<_ast.Constant object at 0x12fb0ab20>, <_ast.Constant object at 0x12fb0af10>, <_ast.Constant object at 0x12fb0af70>, <_ast.Constant \
-object at 0x12fb0af40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a8310>, <_ast.Constant object at 0x7fd4c04a8b80>, <_ast.Constant object at 0x7fd4c04a8be0>, <_\
+ast.Constant object at 0x7fd4c04a8c70>](0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
+	"coef(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8310>, <_ast.Constant object at 0x7fd4c04a8b80>, <_ast.Constant object at 0x7fd4c04a8be0>, <_\
+ast.Constant object at 0x7fd4c04a8c70>](0)"	[label=assignedFrom];
 	"0(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"output(0)$1" -> "output(0)$0"	[label=assignedFrom];
 	"output(0)$1" -> "0(0)"	[label=assignedFrom];
@@ -338,10 +328,21 @@ object at 0x12fb0af40>](0)"	[label=assignedFrom];
 	"4(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"output(0)$5" -> "output(0)$4"	[label=assignedFrom];
 	"output(0)$5" -> "4(0)"	[label=assignedFrom];
+	"submission(0)$0" -> "np(0)"	[label=DataFrame];
+	"submission(0)$0" -> "pd(0)"	[label=DataFrame];
+	"submission(0)$0" -> "../input/aptos2019-blindness-detection/sample_submission.csv(0)"	[label=DataFrame];
+	"submission(0)$0" -> "output(0)$5"	[label=DataFrame];
+	"submission(0)$0" -> "id_code(0)"	[label=DataFrame];
+	"submission(0)$0" -> "diagnosis(0)"	[label=DataFrame];
+	"submission(0)$0" -> "int(0)"	[label=DataFrame];
 	"id_code(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"diagnosis(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 	"int(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
+	"print[160/0]" -> "submission(0)$0"	[label=print];
 	"submission(0)$1" -> "submission(0)$0"	[label=to_csv];
 	"submission(0)$1" -> "submission.csv(0)"	[label=to_csv];
 	"submission.csv(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
+	"print[162/0]" -> "os(0)"	[label=print];
+	"print[162/0]" -> "./(0)"	[label=print];
+	"./(0)" -> "eye-inference-num-class-1-ver3.ipynb"	[label=appearsIn];
 }

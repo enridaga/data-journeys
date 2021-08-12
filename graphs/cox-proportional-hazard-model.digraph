@@ -23,9 +23,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "cox-proportional-hazard-model.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[9/8]" -> "os(0)"	[label=print];
+	"print[9/8]" -> "dirname(0)"	[label=print];
+	"print[9/8]" -> "filename(0)"	[label=print];
 	"play(1)" -> "extract_feature[0]"	[label=_argToVar];
 	"is_train(1)" -> "extract_feature[1]"	[label=_argToVar];
 	"direction(1)$0" -> "1(1)"	[label=assignedFrom];
@@ -48,14 +48,14 @@ digraph "" {
 	"yardToGoal(1)$0" -> "100(1)"	[label=Sub];
 	"yardToGoal(1)$0" -> "YardLine(1)"	[label=Sub];
 	"start(1)$0" -> "np(1)"	[label=Mod];
-	"start(1)$0" -> "[<_ast.BinOp object at 0x12f951250>, <_ast.BinOp object at 0x12f9519a0>](1)"	[label=Mod];
+	"start(1)$0" -> "[<_ast.BinOp object at 0x7fd5007f0580>, <_ast.BinOp object at 0x7fd5007f0760>](1)"	[label=Mod];
 	"start(1)$0" -> "120(1)"	[label=Mod];
 	"yardToGoal(1)$1" -> "play(1)"	[label=assignedFrom];
 	"yardToGoal(1)$1" -> "0(1)"	[label=assignedFrom];
 	"yardToGoal(1)$1" -> "YardLine(1)"	[label=assignedFrom];
 	"start(1)$1" -> "np(1)"	[label=Mod];
 	"start(1)$1" -> "120(1)"	[label=Mod];
-	"start(1)$1" -> "[<_ast.BinOp object at 0x12f951b20>, <_ast.BinOp object at 0x12f951700>](1)"	[label=Mod];
+	"start(1)$1" -> "[<_ast.BinOp object at 0x7fd5007f03d0>, <_ast.BinOp object at 0x7fd5007f0a90>](1)"	[label=Mod];
 	"Dir(1)$0" -> "play(1)"	[label=assignedFrom];
 	"Dir(1)$0" -> "Dir(1)$0"	[label=assignedFrom];
 	"rad(1)$0" -> "np(1)"	[label=nan_to_num];
@@ -79,15 +79,15 @@ digraph "" {
 	"A(1)$0" -> "A(1)$0"	[label=Mult];
 	"loc(1)$0" -> "direction(1)$1"	[label=Mult];
 	"loc(1)$0" -> "np(1)"	[label=Mult];
-	"loc(1)$0" -> "[<_ast.BinOp object at 0x12fc4f6a0>, <_ast.BinOp object at 0x12fc4ffa0>](1)"	[label=Mult];
+	"loc(1)$0" -> "[<_ast.BinOp object at 0x7fd50085b2e0>, <_ast.BinOp object at 0x7fd50085b8e0>](1)"	[label=Mult];
 	"vel(1)$0" -> "direction(1)$1"	[label=Mult];
 	"vel(1)$0" -> "np(1)"	[label=Mult];
 	"vel(1)$0" -> "S(1)$0"	[label=Mult];
-	"vel(1)$0" -> "[<_ast.Call object at 0x12f8f5250>, <_ast.Call object at 0x12f8f5e20>](1)"	[label=Mult];
+	"vel(1)$0" -> "[<_ast.Call object at 0x7fd50085beb0>, <_ast.Call object at 0x7fd50085b100>](1)"	[label=Mult];
 	"acc(1)$0" -> "direction(1)$1"	[label=Mult];
 	"acc(1)$0" -> "np(1)"	[label=Mult];
 	"acc(1)$0" -> "A(1)$0"	[label=Mult];
-	"acc(1)$0" -> "[<_ast.Call object at 0x12f8f5c70>, <_ast.Call object at 0x12f8f57f0>](1)"	[label=Mult];
+	"acc(1)$0" -> "[<_ast.Call object at 0x7fd50085bdf0>, <_ast.Call object at 0x7fd50085b220>](1)"	[label=Mult];
 	"locRusher(1)$0" -> "indRusher(1)$0"	[label=assignedFrom];
 	"locRusher(1)$0" -> "loc(1)$0"	[label=assignedFrom];
 	"locRusher(1)$0" -> "vel(1)$0"	[label=assignedFrom];
@@ -101,7 +101,7 @@ digraph "" {
 	"accRusher(1)$0" -> "vel(1)$0"	[label=assignedFrom];
 	"accRusher(1)$0" -> "acc(1)$0"	[label=assignedFrom];
 	"diff(1)$0" -> "np(1)"	[label=hstack];
-	"diff(1)$0" -> "[<_ast.Call object at 0x12f8f5640>, <_ast.Call object at 0x12f8f5af0>, <_ast.Call object at 0x12f8f5070>](1)"	[label=hstack];
+	"diff(1)$0" -> "[<_ast.Call object at 0x7fd50085b880>, <_ast.Call object at 0x7fd501141460>, <_ast.Call object at 0x7fd501141fa0>](1)"	[label=hstack];
 	"scrimWidth(1)$0" -> "5(1)"	[label=assignedFrom];
 	"inTheBox(1)$0" -> "play(1)"	[label=Mult];
 	"inTheBox(1)$0" -> "np(1)"	[label=Mult];
@@ -131,14 +131,14 @@ digraph "" {
 	"locAwayDet(1)$0" -> "inTheBox(1)$0"	[label=assignedFrom];
 	"locAwayDet(1)$0" -> "2.0(1)"	[label=assignedFrom];
 	"x(1)$1" -> "np(1)"	[label=hstack];
-	"x(1)$1" -> "[<_ast.Call object at 0x12fae58b0>, <_ast.Call object at 0x12fae5e50>, <_ast.Name object at 0x12fae5b80>, <_ast.Name object at 0x12fae5e80>, <_\
-ast.Name object at 0x12fae5a00>](1)"	[label=hstack];
+	"x(1)$1" -> "[<_ast.Call object at 0x7fd500832370>, <_ast.Call object at 0x7fd500832e80>, <_ast.Name object at 0x7fd5008328e0>, <_ast.Name object \
+at 0x7fd500832850>, <_ast.Name object at 0x7fd500832df0>](1)"	[label=hstack];
 	"x(1)$2" -> "np(1)"	[label=hstack];
-	"x(1)$2" -> "[<_ast.Call object at 0x12fae5fa0>, <_ast.Call object at 0x12fada160>, <_ast.Name object at 0x12fada280>, <_ast.Name object at 0x12fada2b0>, <_\
-ast.Name object at 0x12fada2e0>](1)"	[label=hstack];
+	"x(1)$2" -> "[<_ast.Call object at 0x7fd4d02dd2e0>, <_ast.Call object at 0x7fd4d02dd520>, <_ast.Name object at 0x7fd4d02dd370>, <_ast.Name object \
+at 0x7fd4d02dd4c0>, <_ast.Name object at 0x7fd4d02dd190>](1)"	[label=hstack];
 	"x(1)$3" -> "np(1)"	[label=hstack];
-	"x(1)$3" -> "[<_ast.Name object at 0x12fada400>, <_ast.Name object at 0x12fada430>, <_ast.Name object at 0x12fada550>, <_ast.Name object at 0x12fada310>, <_\
-ast.Call object at 0x12fada5e0>, <_ast.Call object at 0x12fada5b0>](1)"	[label=hstack];
+	"x(1)$3" -> "[<_ast.Name object at 0x7fd4d02ddbb0>, <_ast.Name object at 0x7fd4d02dd2b0>, <_ast.Name object at 0x7fd4d02dd8e0>, <_ast.Name object \
+at 0x7fd4d02ddee0>, <_ast.Call object at 0x7fd4d02dd6a0>, <_ast.Call object at 0x7fd4d02dd7c0>](1)"	[label=hstack];
 	"offset(1)$0" -> "0(1)"	[label=Sub];
 	"offset(1)$0" -> "locRusher(1)$0"	[label=Sub];
 	"offset(1)$0" -> "5(1)"	[label=Sub];
@@ -189,8 +189,8 @@ ast.Call object at 0x12fada5e0>, <_ast.Call object at 0x12fada5b0>](1)"	[label=h
 	"1.4551(0)" -> "cox-proportional-hazard-model.ipynb"	[label=appearsIn];
 	"2.757(0)" -> "cox-proportional-hazard-model.ipynb"	[label=appearsIn];
 	"downs(0)$0" -> "np(0)"	[label=array];
-	"downs(0)$0" -> "[<_ast.Constant object at 0x12f8f1100>, <_ast.Constant object at 0x12f8f1130>, <_ast.Constant object at 0x12f8f1160>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12f8f1100>, <_ast.Constant object at 0x12f8f1130>, <_ast.Constant object at 0x12f8f1160>](0)" -> "cox-proportional-hazard-model.ipynb"	[label=appearsIn];
+	"downs(0)$0" -> "[<_ast.Constant object at 0x7fd5008372b0>, <_ast.Constant object at 0x7fd500837760>, <_ast.Constant object at 0x7fd500837100>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd5008372b0>, <_ast.Constant object at 0x7fd500837760>, <_ast.Constant object at 0x7fd500837100>](0)" -> "cox-proportional-hazard-model.ipynb"	[label=appearsIn];
 	"teams(0)$0" -> "pd(0)"	[label=assignedFrom];
 	"teams(0)$0" -> "data(0)$5"	[label=assignedFrom];
 	"teams(0)$0" -> "PossessionTeam(0)"	[label=assignedFrom];

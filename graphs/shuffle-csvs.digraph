@@ -47,7 +47,7 @@ digraph "" {
 	"df(5)$0" -> "os(5)"	[label=read_csv];
 	"df(5)$0" -> "train_simplified(5)"	[label=read_csv];
 	"df(5)$0" -> ".csv(5)"	[label=read_csv];
-	"df(5)$0" -> "[<_ast.Constant object at 0x12f8f5460>](5)"	[label=read_csv];
+	"df(5)$0" -> "[<_ast.Constant object at 0x7fd500999a60>](5)"	[label=read_csv];
 	"df(5)$1" -> "df(5)$0"	[label=apply];
 	"df(5)$1" -> "drawing(5)"	[label=apply];
 	"df(5)$1" -> "json(5)"	[label=apply];
@@ -58,18 +58,8 @@ digraph "" {
 	"NCSVS(0)$0" -> "100(0)"	[label=assignedFrom];
 	"categories(0)$0" -> "s(0)$0"	[label=list_all_categories];
 	"len(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
-	"print[0]" -> "len(0)"	[label=print];
-	"print[0]" -> "df(0)$6"	[label=print];
-	"print[0]" -> "Latest run {}.
-Total time {}s(0)"	[label=print];
-	"df(0)$6" -> "filename(0)$1"	[label=to_csv];
-	"df(0)$6" -> "df(0)$5"	[label=to_csv];
-	"df(0)$6" -> ".gz(0)"	[label=to_csv];
-	"Latest run {}.
-Total time {}s(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
-	"print[1]" -> "categories(0)$0"	[label=print];
-	"print[1]" -> "end(0)$0"	[label=print];
-	"end(0)$0" -> "dt(0)"	[label=now];
+	"print[32/0]" -> "categories(0)$0"	[label=print];
+	"print[32/0]" -> "len(0)"	[label=print];
 	"y(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"y(0)" -> "tqdm(0)"	[label=iteratorOf];
 	"y(0)" -> "categories(0)$0"	[label=iteratorOf];
@@ -102,9 +92,9 @@ Total time {}s(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"chunk(0)$0" -> "df(0)$2"	[label=assignedFrom];
 	"chunk(0)$0" -> "k(0)"	[label=assignedFrom];
 	"chunk(0)$1" -> "chunk(0)$0"	[label=drop];
-	"chunk(0)$1" -> "[<_ast.Constant object at 0x12f9572e0>](0)"	[label=drop];
+	"chunk(0)$1" -> "[<_ast.Constant object at 0x7fd50085bd30>](0)"	[label=drop];
 	"chunk(0)$1" -> "1(0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f9572e0>](0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085bd30>](0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"1(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"chunk(0)$2" -> "filename(0)$0"	[label=to_csv];
 	"chunk(0)$2" -> "chunk(0)$1"	[label=to_csv];
@@ -122,9 +112,18 @@ Total time {}s(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"df(0)$5" -> "df(0)$4"	[label=drop];
 	"df(0)$5" -> "rnd(0)"	[label=drop];
 	"rnd(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
+	"df(0)$6" -> "filename(0)$1"	[label=to_csv];
+	"df(0)$6" -> "df(0)$5"	[label=to_csv];
+	"df(0)$6" -> ".gz(0)"	[label=to_csv];
 	".gz(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
 	"os(0)$0" -> "os(0)"	[label=remove];
 	"os(0)$0" -> "filename(0)$1"	[label=remove];
-	"print[2]" -> "end(0)$0"	[label=print];
-	"print[3]" -> "start(0)$0"	[label=print];
+	"print[53/0]" -> "df(0)$6"	[label=print];
+	"end(0)$0" -> "dt(0)"	[label=now];
+	"Latest run {}.
+Total time {}s(0)" -> "shuffle-csvs.ipynb"	[label=appearsIn];
+	"print[55/0]" -> "start(0)$0"	[label=print];
+	"print[55/0]" -> "end(0)$0"	[label=print];
+	"print[55/0]" -> "Latest run {}.
+Total time {}s(0)"	[label=print];
 }

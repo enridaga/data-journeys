@@ -53,49 +53,49 @@ digraph "" {
 	"/kaggle/input/ashrae-energy-prediction/building_metadata.csv(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"train_df(0)$0" -> "/kaggle/input/ashrae-energy-prediction/train.csv(0)"	[label=read_csv];
-	"train_df(0)$0" -> "[<_ast.Constant object at 0x130532850>](0)"	[label=read_csv];
+	"train_df(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab610>](0)"	[label=read_csv];
 	"/kaggle/input/ashrae-energy-prediction/train.csv(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532850>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab610>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"test_df(0)$0" -> "/kaggle/input/ashrae-energy-prediction/test.csv(0)"	[label=read_csv];
-	"test_df(0)$0" -> "[<_ast.Constant object at 0x1305321f0>](0)"	[label=read_csv];
+	"test_df(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab970>](0)"	[label=read_csv];
 	"/kaggle/input/ashrae-energy-prediction/test.csv(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305321f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab970>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"weather_train_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"weather_train_df(0)$0" -> "/kaggle/input/ashrae-energy-prediction/weather_train.csv(0)"	[label=read_csv];
-	"weather_train_df(0)$0" -> "[<_ast.Constant object at 0x130532eb0>](0)"	[label=read_csv];
+	"weather_train_df(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab730>](0)"	[label=read_csv];
 	"/kaggle/input/ashrae-energy-prediction/weather_train.csv(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532eb0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab730>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"weather_test_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"weather_test_df(0)$0" -> "/kaggle/input/ashrae-energy-prediction/weather_test.csv(0)"	[label=read_csv];
-	"weather_test_df(0)$0" -> "[<_ast.Constant object at 0x130532190>](0)"	[label=read_csv];
+	"weather_test_df(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab7f0>](0)"	[label=read_csv];
 	"/kaggle/input/ashrae-energy-prediction/weather_test.csv(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532190>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab7f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"test_df(0)$1" -> "test_df(0)$0"	[label=head];
 	"weather(0)$0" -> "pd(0)"	[label=concat];
-	"weather(0)$0" -> "[<_ast.Name object at 0x130532400>, <_ast.Name object at 0x1305323d0>](0)"	[label=concat];
+	"weather(0)$0" -> "[<_ast.Name object at 0x7fd4902ab130>, <_ast.Name object at 0x7fd4902abd60>](0)"	[label=concat];
 	"weather(0)$0" -> "True(0)"	[label=concat];
-	"[<_ast.Name object at 0x130532400>, <_ast.Name object at 0x1305323d0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902ab130>, <_ast.Name object at 0x7fd4902abd60>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"True(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305327f0>, <_ast.Constant object at 0x12fade4f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"weather_key(0)$0" -> "[<_ast.Constant object at 0x1305327f0>, <_ast.Constant object at 0x12fade4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab760>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"weather_key(0)$0" -> "[<_ast.Constant object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab760>](0)"	[label=assignedFrom];
 	"temp_skeleton(0)$0" -> "weather(0)$0"	[label=copy];
 	"temp_skeleton(0)$0" -> "weather_key(0)$0"	[label=copy];
-	"temp_skeleton(0)$0" -> "[<_ast.Constant object at 0x12fade6d0>](0)"	[label=copy];
-	"[<_ast.Constant object at 0x12fade6d0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"temp_skeleton(0)$0" -> "[<_ast.Constant object at 0x7fd500999b50>](0)"	[label=copy];
+	"[<_ast.Constant object at 0x7fd500999b50>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"temp_skeleton(0)$1" -> "temp_skeleton(0)$0"	[label=rank];
-	"temp_skeleton(0)$1" -> "[<_ast.Constant object at 0x12fadef70>, <_ast.Attribute object at 0x12fadea00>](0)"	[label=rank];
+	"temp_skeleton(0)$1" -> "[<_ast.Constant object at 0x7fd500999280>, <_ast.Attribute object at 0x7fd500999190>](0)"	[label=rank];
 	"temp_skeleton(0)$1" -> "air_temperature(0)"	[label=rank];
 	"temp_skeleton(0)$1" -> "average(0)"	[label=rank];
-	"[<_ast.Constant object at 0x12fadef70>, <_ast.Attribute object at 0x12fadea00>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999280>, <_ast.Attribute object at 0x7fd500999190>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"air_temperature(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"average(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"df_2d(0)$0" -> "temp_skeleton(0)$1"	[label=unstack];
-	"df_2d(0)$0" -> "[<_ast.Constant object at 0x12fade8b0>, <_ast.Attribute object at 0x12fadef40>](0)"	[label=unstack];
+	"df_2d(0)$0" -> "[<_ast.Constant object at 0x7fd500999f10>, <_ast.Attribute object at 0x7fd500999430>](0)"	[label=unstack];
 	"df_2d(0)$0" -> "temp_rank(0)"	[label=unstack];
 	"df_2d(0)$0" -> "1(0)"	[label=unstack];
-	"[<_ast.Constant object at 0x12fade8b0>, <_ast.Attribute object at 0x12fadef40>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999f10>, <_ast.Attribute object at 0x7fd500999430>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"temp_rank(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"1(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"site_ids_offsets(0)$0" -> "pd(0)"	[label=Series];
@@ -141,8 +141,8 @@ digraph "" {
 	"weather_train_df(0)$7" -> "weather_train_df(0)$6"	[label=head];
 	"df(2)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(2)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(2)$0" -> "[<_ast.Constant object at 0x130530880>, <_ast.Constant object at 0x130530550>, <_ast.Constant object at 0x1305308e0>, <_ast.Constant \
-object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant object at 0x1305307f0>](2)"	[label=assignedFrom];
+	"numerics(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ffbb0>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff3d0>, <_\
+ast.Constant object at 0x7fd4c04ffca0>, <_ast.Constant object at 0x7fd4c04ff070>, <_ast.Constant object at 0x7fd4c04ffa00>](2)"	[label=assignedFrom];
 	"start_mem(2)$0" -> "df(2)"	[label=Div];
 	"start_mem(2)$0" -> "1024(2)"	[label=Div];
 	"start_mem(2)$0" -> "2(2)"	[label=Div];
@@ -177,54 +177,35 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"end_mem(2)$0" -> "1024(2)"	[label=Div];
 	"end_mem(2)$0" -> "2(2)"	[label=Div];
 	"end_mem(2)$0" -> "df(2)$6"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(2)"	[label=print];
-	"print[0]" -> "Training data shape: (0)"	[label=print];
-	"print[0]" -> "Weather training shape: (0)"	[label=print];
-	"print[0]" -> "Weather testing shape: (0)"	[label=print];
-	"print[0]" -> "Test data shape: (0)"	[label=print];
-	"print[0]" -> "Average meter reading: (0)"	[label=print];
-	"print[0]" -> "Shape of training dataset: (0)"	[label=print];
-	"print[0]" -> "Shape of testing dataset: (0)"	[label=print];
-	"Training data shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Weather training shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Weather testing shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Test data shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Average meter reading: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Shape of training dataset: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"Shape of testing dataset: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"print[1]" -> "end_mem(2)$0"	[label=print];
-	"print[1]" -> "metadata_df(0)$2"	[label=print];
-	"print[1]" -> "train_df(0)$3"	[label=print];
-	"print[1]" -> "test_df(0)$2"	[label=print];
-	"print[1]" -> "weather_train_df(0)$8"	[label=print];
-	"print[1]" -> "weather_test_df(0)$5"	[label=print];
-	"print[1]" -> "full_train_df(0)$3"	[label=print];
-	"print[1]" -> "full_test_df(0)$10"	[label=print];
-	"print[1]" -> "full_train_df(0)$15"	[label=print];
-	"metadata_df(0)$2" -> "metadata_df(0)$1"	[label=reduce_mem_usage];
-	"train_df(0)$3" -> "train_df(0)$2"	[label=reduce_mem_usage];
-	"test_df(0)$2" -> "test_df(0)$1"	[label=reduce_mem_usage];
-	"weather_train_df(0)$8" -> "weather_train_df(0)$7"	[label=reduce_mem_usage];
-	"weather_test_df(0)$5" -> "weather_test_df(0)$4"	[label=reduce_mem_usage];
-	"full_train_df(0)$3" -> "full_train_df(0)$2"	[label=head];
-	"full_test_df(0)$10" -> "1(0)"	[label=drop];
-	"full_test_df(0)$10" -> "full_test_df(0)$9"	[label=drop];
-	"full_test_df(0)$10" -> "[<_ast.Constant object at 0x12f8a1910>](0)"	[label=drop];
-	"full_train_df(0)$15" -> "1(0)"	[label=drop];
-	"full_train_df(0)$15" -> "full_train_df(0)$14"	[label=drop];
-	"full_train_df(0)$15" -> "[<_ast.Constant object at 0x12f8a1af0>](0)"	[label=drop];
-	"print[2]" -> "100(2)"	[label=print];
-	"print[2]" -> " kWh(0)"	[label=print];
-	" kWh(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"print[3]" -> "start_mem(2)$0"	[label=print];
-	"print[4]" -> "end_mem(2)$0"	[label=print];
-	"print[5]" -> "start_mem(2)$0"	[label=print];
+	"print[88/16]" -> "start_mem(2)$0"	[label=print];
+	"print[88/16]" -> "end_mem(2)$0"	[label=print];
+	"print[88/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(2)"	[label=print];
+	"print[88/16]" -> "100(2)"	[label=print];
 	"le(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"metadata_df(0)$1" -> "metadata_df(0)$0"	[label=fit_transform];
 	"metadata_df(0)$1" -> "le(0)"	[label=fit_transform];
 	"metadata_df(0)$1" -> "metadata_df(0)$1"	[label=fit_transform];
 	"metadata_df(0)$1" -> "primary_use(0)"	[label=fit_transform];
 	"primary_use(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"metadata_df(0)$2" -> "metadata_df(0)$1"	[label=reduce_mem_usage];
+	"train_df(0)$3" -> "train_df(0)$2"	[label=reduce_mem_usage];
+	"test_df(0)$2" -> "test_df(0)$1"	[label=reduce_mem_usage];
+	"weather_train_df(0)$8" -> "weather_train_df(0)$7"	[label=reduce_mem_usage];
+	"weather_test_df(0)$5" -> "weather_test_df(0)$4"	[label=reduce_mem_usage];
+	"Training data shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[97/0]" -> "train_df(0)$3"	[label=print];
+	"print[97/0]" -> "Training data shape: (0)"	[label=print];
+	"Weather training shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[98/0]" -> "weather_train_df(0)$8"	[label=print];
+	"print[98/0]" -> "Weather training shape: (0)"	[label=print];
+	"print[99/0]" -> "weather_test_df(0)$5"	[label=print];
+	"print[99/0]" -> "Weather training shape: (0)"	[label=print];
+	"Weather testing shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[100/0]" -> "metadata_df(0)$2"	[label=print];
+	"print[100/0]" -> "Weather testing shape: (0)"	[label=print];
+	"Test data shape: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[101/0]" -> "test_df(0)$2"	[label=print];
+	"print[101/0]" -> "Test data shape: (0)"	[label=print];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=head];
 	"weather_train_df(0)$9" -> "weather_train_df(0)$8"	[label=head];
 	"metadata_df(0)$3" -> "metadata_df(0)$2"	[label=head];
@@ -239,8 +220,8 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"full_train_df(0)$1" -> "weather_train_df(0)$9"	[label=merge];
 	"full_train_df(0)$1" -> "full_train_df(0)$0"	[label=merge];
 	"full_train_df(0)$1" -> "left(0)"	[label=merge];
-	"full_train_df(0)$1" -> "[<_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85e670>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85e670>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"full_train_df(0)$1" -> "[<_ast.Constant object at 0x7fd50085bbe0>, <_ast.Constant object at 0x7fd50085b2b0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd50085bbe0>, <_ast.Constant object at 0x7fd50085b2b0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"full_train_df(0)$2" -> "air_temperature(0)"	[label=assignedFrom];
 	"full_train_df(0)$2" -> "full_train_df(0)$1"	[label=assignedFrom];
 	"full_train_df(0)$2" -> "full_train_df(0)$2"	[label=assignedFrom];
@@ -266,19 +247,20 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"full_test_df(0)$1" -> "weather_test_df(0)$5"	[label=merge];
 	"full_test_df(0)$1" -> "left(0)"	[label=merge];
 	"full_test_df(0)$1" -> "full_test_df(0)$0"	[label=merge];
-	"full_test_df(0)$1" -> "[<_ast.Constant object at 0x130bc94c0>, <_ast.Constant object at 0x130bc94f0>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x130bc94c0>, <_ast.Constant object at 0x130bc94f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"full_test_df(0)$1" -> "[<_ast.Constant object at 0x7fd4c04a71c0>, <_ast.Constant object at 0x7fd4c04a71f0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4c04a71c0>, <_ast.Constant object at 0x7fd4c04a71f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"gc(0)$1" -> "gc(0)$0"	[label=collect];
+	"full_train_df(0)$3" -> "full_train_df(0)$2"	[label=head];
 	"ax(0)$0" -> "sns(0)$1"	[label=barplot];
-	"ax(0)$0" -> "full_train_df(0)$3"	[label=barplot];
 	"ax(0)$0" -> "le(0)"	[label=barplot];
 	"ax(0)$0" -> "primary_use(0)"	[label=barplot];
-	"ax(0)$0" -> "[<_ast.Constant object at 0x130bc9d30>](0)"	[label=barplot];
+	"ax(0)$0" -> "full_train_df(0)$3"	[label=barplot];
+	"ax(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a7a30>](0)"	[label=barplot];
 	"ax(0)$0" -> "counts(0)"	[label=barplot];
-	"ax(0)$0" -> "[<_ast.Constant object at 0x130b9b070>](0)"	[label=barplot];
-	"[<_ast.Constant object at 0x130bc9d30>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"ax(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a7d30>](0)"	[label=barplot];
+	"[<_ast.Constant object at 0x7fd4c04a7a30>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"counts(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130b9b070>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a7d30>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"ax(0)$1" -> "ax(0)$0"	[label=set];
 	"ax(0)$2" -> "ax(0)$1"	[label=set_xticklabels];
 	"ax(0)$2" -> "ax(0)$2"	[label=set_xticklabels];
@@ -307,15 +289,20 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"meter(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"ax(0)$4" -> "ax(0)$3"	[label=set];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
+	"Average meter reading: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[135/0]" -> "full_train_df(0)$3"	[label=print];
+	"print[135/0]" -> "Average meter reading: (0)"	[label=print];
+	"print[135/0]" -> " kWh(0)"	[label=print];
+	" kWh(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"ax(0)$5" -> "np(0)"	[label=barplot];
 	"ax(0)$5" -> "sns(0)$1"	[label=barplot];
 	"ax(0)$5" -> "meter_reading(0)"	[label=barplot];
 	"ax(0)$5" -> "full_train_df(0)$3"	[label=barplot];
 	"ax(0)$5" -> "meter_types(0)$0"	[label=barplot];
-	"ax(0)$5" -> "[<_ast.Constant object at 0x130bab940>](0)"	[label=barplot];
-	"ax(0)$5" -> "[<_ast.Constant object at 0x130babb50>](0)"	[label=barplot];
-	"[<_ast.Constant object at 0x130bab940>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130babb50>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"ax(0)$5" -> "[<_ast.Constant object at 0x7fd5008305e0>](0)"	[label=barplot];
+	"ax(0)$5" -> "[<_ast.Constant object at 0x7fd500830820>](0)"	[label=barplot];
+	"[<_ast.Constant object at 0x7fd5008305e0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500830820>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"ax(0)$6" -> "ax(0)$5"	[label=set];
 	"plt(0)$2" -> "plt(0)$1"	[label=show];
 	"fig(0)$0" -> "1(0)"	[label=subplots];
@@ -331,8 +318,8 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"full_train_df(0)$4" -> "full_train_df(0)$3"	[label=plot];
 	"full_test_df(0)$2" -> "full_test_df(0)$1"	[label=plot];
 	"ax(0)$9" -> "ax(0)$8"	[label=legend];
-	"ax(0)$9" -> "[<_ast.Constant object at 0x130b97cd0>, <_ast.Constant object at 0x130b97d30>](0)"	[label=legend];
-	"[<_ast.Constant object at 0x130b97cd0>, <_ast.Constant object at 0x130b97d30>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"ax(0)$9" -> "[<_ast.Constant object at 0x7fd50081d9d0>, <_ast.Constant object at 0x7fd50081da00>](0)"	[label=legend];
+	"[<_ast.Constant object at 0x7fd50081d9d0>, <_ast.Constant object at 0x7fd50081da00>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"fig(0)$1" -> "1(0)"	[label=subplots];
 	"fig(0)$1" -> "plt(0)$2"	[label=subplots];
 	"fig(0)$1" -> "15(0)"	[label=subplots];
@@ -459,21 +446,33 @@ object at 0x130530070>, <_ast.Constant object at 0x130530220>, <_ast.Constant ob
 	"full_train_df(0)$14" -> "full_train_df(0)$13"	[label=query];
 	"full_train_df(0)$14" -> "not (building_id <= 104 & meter == 0 & timestamp <= \"2016-05-20\")(0)"	[label=query];
 	"not (building_id <= 104 & meter == 0 & timestamp <= \"2016-05-20\")(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a1910>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a1af0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"full_test_df(0)$10" -> "1(0)"	[label=drop];
+	"full_test_df(0)$10" -> "full_test_df(0)$9"	[label=drop];
+	"full_test_df(0)$10" -> "[<_ast.Constant object at 0x7fd4d0986610>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d0986610>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"full_train_df(0)$15" -> "1(0)"	[label=drop];
+	"full_train_df(0)$15" -> "full_train_df(0)$14"	[label=drop];
+	"full_train_df(0)$15" -> "[<_ast.Constant object at 0x7fd4d09867f0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d09867f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"Shape of training dataset: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[200/0]" -> "full_train_df(0)$15"	[label=print];
+	"print[200/0]" -> "Shape of training dataset: (0)"	[label=print];
+	"Shape of testing dataset: (0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"print[201/0]" -> "full_test_df(0)$10"	[label=print];
+	"print[201/0]" -> "Shape of testing dataset: (0)"	[label=print];
 	"full_train_df(0)$16" -> "full_train_df(0)$15"	[label=tail];
 	"full_train_df(0)$17" -> "full_train_df(0)$16"	[label=tail];
 	"full_train_df(0)$18" -> "full_train_df(0)$17"	[label=reduce_mem_usage];
 	"full_test_df(0)$11" -> "full_test_df(0)$10"	[label=reduce_mem_usage];
 	"gc(0)$2" -> "gc(0)$1"	[label=collect];
-	"[<_ast.Tuple object at 0x12f89c4f0>, <_ast.Tuple object at 0x12f89c5b0>, <_ast.Tuple object at 0x12f89c670>, <_ast.Tuple object \
-at 0x12f89c730>, <_ast.Tuple object at 0x12f89c7f0>, <_ast.Tuple object at 0x12f89c8e0>, <_ast.Tuple object at 0x12f89c9a0>, <_ast.Tuple \
-object at 0x12f89ca60>, <_ast.Tuple object at 0x12f89cb20>, <_ast.Tuple object at 0x12f89cbe0>, <_ast.Tuple object at 0x12f89cc70>, <_\
-ast.Tuple object at 0x12f89cd30>, <_ast.Tuple object at 0x12f89cdf0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"beaufort(0)$0" -> "[<_ast.Tuple object at 0x12f89c4f0>, <_ast.Tuple object at 0x12f89c5b0>, <_ast.Tuple object at 0x12f89c670>, <_ast.Tuple object \
-at 0x12f89c730>, <_ast.Tuple object at 0x12f89c7f0>, <_ast.Tuple object at 0x12f89c8e0>, <_ast.Tuple object at 0x12f89c9a0>, <_ast.Tuple \
-object at 0x12f89ca60>, <_ast.Tuple object at 0x12f89cb20>, <_ast.Tuple object at 0x12f89cbe0>, <_ast.Tuple object at 0x12f89cc70>, <_\
-ast.Tuple object at 0x12f89cd30>, <_ast.Tuple object at 0x12f89cdf0>](0)"	[label=assignedFrom];
+	"[<_ast.Tuple object at 0x7fd4d09a1220>, <_ast.Tuple object at 0x7fd4d09a1310>, <_ast.Tuple object at 0x7fd4d09a1400>, <_ast.Tuple \
+object at 0x7fd4d09a14c0>, <_ast.Tuple object at 0x7fd4d09a1580>, <_ast.Tuple object at 0x7fd4d09a1610>, <_ast.Tuple object at 0x7fd4d09a1700>, <_\
+ast.Tuple object at 0x7fd4d09a17c0>, <_ast.Tuple object at 0x7fd4d09a1850>, <_ast.Tuple object at 0x7fd4d09a1910>, <_ast.Tuple object \
+at 0x7fd4d09a19a0>, <_ast.Tuple object at 0x7fd4d09a1a60>, <_ast.Tuple object at 0x7fd4d09a1b50>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"beaufort(0)$0" -> "[<_ast.Tuple object at 0x7fd4d09a1220>, <_ast.Tuple object at 0x7fd4d09a1310>, <_ast.Tuple object at 0x7fd4d09a1400>, <_ast.Tuple \
+object at 0x7fd4d09a14c0>, <_ast.Tuple object at 0x7fd4d09a1580>, <_ast.Tuple object at 0x7fd4d09a1610>, <_ast.Tuple object at 0x7fd4d09a1700>, <_\
+ast.Tuple object at 0x7fd4d09a17c0>, <_ast.Tuple object at 0x7fd4d09a1850>, <_ast.Tuple object at 0x7fd4d09a1910>, <_ast.Tuple object \
+at 0x7fd4d09a19a0>, <_ast.Tuple object at 0x7fd4d09a1a60>, <_ast.Tuple object at 0x7fd4d09a1b50>](0)"	[label=assignedFrom];
 	"item(0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
 	"item(0)" -> "beaufort(0)$0"	[label=iteratorOf];
 	"full_train_df(0)$19" -> "0(0)"	[label=assignedFrom];
@@ -522,20 +521,20 @@ ast.Tuple object at 0x12f89cd30>, <_ast.Tuple object at 0x12f89cdf0>](0)"	[label
 	"full_train_df(0)$26" -> "12(0)"	[label=encode_cyclic_feature];
 	"full_train_df(0)$26" -> "full_train_df(0)$25"	[label=encode_cyclic_feature];
 	"full_train_df(0)$27" -> "full_train_df(0)$26"	[label=reduce_mem_usage];
-	"[<_ast.Constant object at 0x12f88f760>, <_ast.Constant object at 0x12f88f790>, <_ast.Constant object at 0x12f88f7c0>, <_ast.Constant \
-object at 0x12f88f7f0>, <_ast.Constant object at 0x12f88f820>, <_ast.Constant object at 0x12f88f850>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"categoricals(0)$0" -> "[<_ast.Constant object at 0x12f88f760>, <_ast.Constant object at 0x12f88f790>, <_ast.Constant object at 0x12f88f7c0>, <_ast.Constant \
-object at 0x12f88f7f0>, <_ast.Constant object at 0x12f88f820>, <_ast.Constant object at 0x12f88f850>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88f910>, <_ast.Constant object at 0x12f88f940>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"drop_cols(0)$0" -> "[<_ast.Constant object at 0x12f88f910>, <_ast.Constant object at 0x12f88f940>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88fa00>, <_ast.Constant object at 0x12f88fa30>, <_ast.Constant object at 0x12f88fa60>, <_ast.Constant \
-object at 0x12f88fa90>, <_ast.Constant object at 0x12f88fac0>, <_ast.Constant object at 0x12f88faf0>, <_ast.Constant object at 0x12f88fb20>, <_\
-ast.Constant object at 0x12f88fb50>, <_ast.Constant object at 0x12f88fb80>, <_ast.Constant object at 0x12f88fbb0>, <_ast.Constant \
-object at 0x12f88fbe0>, <_ast.Constant object at 0x12f88fc10>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
-	"numericals(0)$0" -> "[<_ast.Constant object at 0x12f88fa00>, <_ast.Constant object at 0x12f88fa30>, <_ast.Constant object at 0x12f88fa60>, <_ast.Constant \
-object at 0x12f88fa90>, <_ast.Constant object at 0x12f88fac0>, <_ast.Constant object at 0x12f88faf0>, <_ast.Constant object at 0x12f88fb20>, <_\
-ast.Constant object at 0x12f88fb50>, <_ast.Constant object at 0x12f88fb80>, <_ast.Constant object at 0x12f88fbb0>, <_ast.Constant \
-object at 0x12f88fbe0>, <_ast.Constant object at 0x12f88fc10>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d09964c0>, <_ast.Constant object at 0x7fd4d09964f0>, <_ast.Constant object at 0x7fd4d0996520>, <_\
+ast.Constant object at 0x7fd4d0996550>, <_ast.Constant object at 0x7fd4d0996250>, <_ast.Constant object at 0x7fd4d0996580>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"categoricals(0)$0" -> "[<_ast.Constant object at 0x7fd4d09964c0>, <_ast.Constant object at 0x7fd4d09964f0>, <_ast.Constant object at 0x7fd4d0996520>, <_\
+ast.Constant object at 0x7fd4d0996550>, <_ast.Constant object at 0x7fd4d0996250>, <_ast.Constant object at 0x7fd4d0996580>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0996640>, <_ast.Constant object at 0x7fd4d0996670>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"drop_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4d0996640>, <_ast.Constant object at 0x7fd4d0996670>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0996730>, <_ast.Constant object at 0x7fd4d0996790>, <_ast.Constant object at 0x7fd4d09967c0>, <_\
+ast.Constant object at 0x7fd4d0996820>, <_ast.Constant object at 0x7fd4d0996760>, <_ast.Constant object at 0x7fd4d0996850>, <_ast.Constant \
+object at 0x7fd4d09968b0>, <_ast.Constant object at 0x7fd4d09967f0>, <_ast.Constant object at 0x7fd4d09968e0>, <_ast.Constant object \
+at 0x7fd4d0996910>, <_ast.Constant object at 0x7fd4d0996940>, <_ast.Constant object at 0x7fd4d09961f0>](0)" -> "ashrae-eda-fe-lightgbm-1-12.ipynb"	[label=appearsIn];
+	"numericals(0)$0" -> "[<_ast.Constant object at 0x7fd4d0996730>, <_ast.Constant object at 0x7fd4d0996790>, <_ast.Constant object at 0x7fd4d09967c0>, <_\
+ast.Constant object at 0x7fd4d0996820>, <_ast.Constant object at 0x7fd4d0996760>, <_ast.Constant object at 0x7fd4d0996850>, <_ast.Constant \
+object at 0x7fd4d09968b0>, <_ast.Constant object at 0x7fd4d09967f0>, <_ast.Constant object at 0x7fd4d09968e0>, <_ast.Constant object \
+at 0x7fd4d0996910>, <_ast.Constant object at 0x7fd4d0996940>, <_ast.Constant object at 0x7fd4d09961f0>](0)"	[label=assignedFrom];
 	"feat_cols(0)$0" -> "categoricals(0)$0"	[label=Add];
 	"feat_cols(0)$0" -> "numericals(0)$0"	[label=Add];
 	"full_train_df(0)$28" -> "full_train_df(0)$27"	[label=tail];

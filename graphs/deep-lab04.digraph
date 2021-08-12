@@ -115,7 +115,6 @@ digraph "" {
 	"autoencoder(0)$2" -> "autoencoder(0)$1"	[label=fit];
 	"autoencoder(0)$3" -> "autoencoder(0)$2"	[label=summary];
 	"autoencoder(2)" -> "dense[0]"	[label=_argToVar];
-	"dense[0]" -> "autoencoder(0)$3"	[label=dense];
 	"input_img(2)$0" -> "150(2)"	[label=Input];
 	"input_img(2)$0" -> "3(2)"	[label=Input];
 	"encoder_dim(2)$0" -> "1000(2)"	[label=Input];
@@ -146,4 +145,5 @@ digraph "" {
 	"fc(2)$3" -> "fc(2)$2"	[label=fit];
 	"fc(2)$3" -> "train_images(2)"	[label=fit];
 	"fc(2)$3" -> "train_labels(2)"	[label=fit];
+	"dense[91/0]" -> "autoencoder(0)$3"	[label=dense];
 }

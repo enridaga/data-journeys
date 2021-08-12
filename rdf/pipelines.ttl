@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://purl.org/dj/kaggle/pipelines#1034946045> rdfs:label "preprocessor(0)$0" ;
-    dj:ColumnTransformer <http://purl.org/dj/kaggle/pipelines#2734167878> .
+    dj:ColumnTransformer <http://purl.org/dj/kaggle/pipelines#1544428063> .
 
 <http://purl.org/dj/kaggle/pipelines#1322649418> rdfs:label "train_test_split(0)" ;
     dj:appearsIn k:pipelines ;
@@ -24,14 +24,8 @@
 <http://purl.org/dj/kaggle/pipelines#2407467432> rdfs:label "numerical_transformer(0)$0" ;
     dj:SimpleImputer <http://purl.org/dj/kaggle/pipelines#444662764> .
 
-<http://purl.org/dj/kaggle/pipelines#249561878> rdfs:label "print[0]" ;
-    dj:print <http://purl.org/dj/kaggle/pipelines#115999119> .
-
-<http://purl.org/dj/kaggle/pipelines#249692951> rdfs:label "print[1]" ;
-    dj:print <http://purl.org/dj/kaggle/pipelines#326238962> .
-
 <http://purl.org/dj/kaggle/pipelines#2750548582> rdfs:label "categorical_transformer(0)$0" ;
-    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#2888308601> .
+    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#1260853704> .
 
 <http://purl.org/dj/kaggle/pipelines#320406247> rdfs:label "model(0)$0" ;
     dj:RandomForestRegressor <http://purl.org/dj/kaggle/pipelines#29687986>,
@@ -41,6 +35,10 @@
     dj:appearsIn k:pipelines ;
     dj:assignedFrom <http://purl.org/dj/python/lib/237765431> .
 
+<http://purl.org/dj/kaggle/pipelines#477496281> rdfs:label "print[130/0]" ;
+    dj:print <http://purl.org/dj/kaggle/pipelines#115999119>,
+        <http://purl.org/dj/kaggle/pipelines#326238962> .
+
 <http://purl.org/dj/kaggle/pipelines#849020303> rdfs:label "OneHotEncoder(0)" ;
     dj:appearsIn k:pipelines ;
     dj:assignedFrom <http://purl.org/dj/python/lib/577766670> .
@@ -49,18 +47,18 @@
     dj:appearsIn k:pipelines ;
     dj:assignedFrom <http://purl.org/dj/python/lib/610010449> .
 
-<http://purl.org/dj/kaggle/pipelines#1014959493> rdfs:label "[<_ast.Constant object at 0x12f8ab190>](0)" ;
-    dj:appearsIn k:pipelines .
-
-<http://purl.org/dj/kaggle/pipelines#1075714336> rdfs:label "[<_ast.Constant object at 0x130532550>, <_ast.Constant object at 0x130532a90>](0)" ;
+<http://purl.org/dj/kaggle/pipelines#1008736562> rdfs:label "[<_ast.Tuple object at 0x7fd50085ba30>, <_ast.Tuple object at 0x7fd50085b2b0>](0)" ;
     dj:appearsIn k:pipelines .
 
 <http://purl.org/dj/kaggle/pipelines#115999119> rdfs:label "MAE:(0)" ;
     dj:appearsIn k:pipelines .
 
+<http://purl.org/dj/kaggle/pipelines#1260853704> rdfs:label "[<_ast.Tuple object at 0x7fd4c04cc820>, <_ast.Tuple object at 0x7fd4c04cc5e0>](0)" ;
+    dj:appearsIn k:pipelines .
+
 <http://purl.org/dj/kaggle/pipelines#1265698470> rdfs:label "numerical_cols(0)$0" ;
-    dj:assignedFrom <http://purl.org/dj/kaggle/pipelines#1075714336>,
-        <http://purl.org/dj/kaggle/pipelines#220070534>,
+    dj:assignedFrom <http://purl.org/dj/kaggle/pipelines#220070534>,
+        <http://purl.org/dj/kaggle/pipelines#63511568>,
         <http://purl.org/dj/kaggle/pipelines#979305917> .
 
 <http://purl.org/dj/kaggle/pipelines#1521616740> rdfs:label "categorical_cols(0)$0" ;
@@ -69,16 +67,13 @@
         <http://purl.org/dj/kaggle/pipelines#45809891>,
         <http://purl.org/dj/kaggle/pipelines#979305917> .
 
-<http://purl.org/dj/kaggle/pipelines#2734167878> rdfs:label "[<_ast.Tuple object at 0x12f8f5310>, <_ast.Tuple object at 0x12f8f5190>](0)" ;
+<http://purl.org/dj/kaggle/pipelines#1544428063> rdfs:label "[<_ast.Tuple object at 0x7fd4c04ccfa0>, <_ast.Tuple object at 0x7fd4c04ccb20>](0)" ;
+    dj:appearsIn k:pipelines .
+
+<http://purl.org/dj/kaggle/pipelines#1718554145> rdfs:label "[<_ast.Constant object at 0x7fd5007f0700>](0)" ;
     dj:appearsIn k:pipelines .
 
 <http://purl.org/dj/kaggle/pipelines#285475577> rdfs:label "object(0)" ;
-    dj:appearsIn k:pipelines .
-
-<http://purl.org/dj/kaggle/pipelines#2888308601> rdfs:label "[<_ast.Tuple object at 0x12f8f5c70>, <_ast.Tuple object at 0x12f8f5430>](0)" ;
-    dj:appearsIn k:pipelines .
-
-<http://purl.org/dj/kaggle/pipelines#2929072080> rdfs:label "[<_ast.Tuple object at 0x12f8f54c0>, <_ast.Tuple object at 0x12fc4fd30>](0)" ;
     dj:appearsIn k:pipelines .
 
 <http://purl.org/dj/kaggle/pipelines#29950131> rdfs:label "1(0)" ;
@@ -126,6 +121,9 @@
 <http://purl.org/dj/kaggle/pipelines#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
     dj:appearsIn k:pipelines .
 
+<http://purl.org/dj/kaggle/pipelines#63511568> rdfs:label "[<_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd4c04cca30>](0)" ;
+    dj:appearsIn k:pipelines .
+
 <http://purl.org/dj/kaggle/pipelines#64815379> rdfs:label "100(0)" ;
     dj:appearsIn k:pipelines .
 
@@ -134,7 +132,7 @@
     dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
 
 <http://purl.org/dj/kaggle/pipelines#896927089> rdfs:label "my_pipeline(0)$0" ;
-    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#2929072080> .
+    dj:Pipeline <http://purl.org/dj/kaggle/pipelines#1008736562> .
 
 <http://purl.org/dj/kaggle/pipelines#896992626> rdfs:label "my_pipeline(0)$1" ;
     dj:fit <http://purl.org/dj/kaggle/pipelines#465699756>,
@@ -218,7 +216,7 @@
     dj:appearsIn k:pipelines .
 
 <http://purl.org/dj/kaggle/pipelines#76611886> rdfs:label "X(0)$0" ;
-    dj:drop <http://purl.org/dj/kaggle/pipelines#1014959493>,
+    dj:drop <http://purl.org/dj/kaggle/pipelines#1718554145>,
         <http://purl.org/dj/kaggle/pipelines#243401328>,
         <http://purl.org/dj/kaggle/pipelines#29950131> .
 

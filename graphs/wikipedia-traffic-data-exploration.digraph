@@ -29,32 +29,8 @@ digraph "" {
 	Counter -> collections	[label=importedBy];
 	"Counter(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"Counter(0)" -> Counter	[label=assignedFrom];
-	"print[0]" -> "train(0)$3"	[label=print];
-	"print[0]" -> "Counter(0)"	[label=print];
-	"print[0]" -> "key(0)"	[label=print];
-	"print[0]" -> "sum_set(0)$2"	[label=print];
-	"print[0]" -> "
-
-(0)"	[label=print];
-	"print[0]" -> "	ARIMA failed(0)"	[label=print];
-	"key(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"key(0)" -> "top_pages(0)$0"	[label=iteratorOf];
-	"key(0)" -> "lang_sets(0)$7"	[label=iteratorOf];
-	"key(0)" -> "sums(0)$0"	[label=iteratorOf];
-	"sum_set(0)$2" -> "sum_set(0)$1"	[label=sort_values];
-	"sum_set(0)$2" -> "total(0)"	[label=sort_values];
-	"sum_set(0)$2" -> "False(0)"	[label=sort_values];
-	"
-
-(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"	ARIMA failed(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"print[1]" -> "train(0)$3"	[label=print];
-	"print[1]" -> "10(0)"	[label=print];
-	"print[1]" -> "top_pages(0)$0"	[label=print];
-	"10(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"top_pages(0)$0" -> "0(0)"	[label=assignedFrom];
-	"top_pages(0)$0" -> "sum_set(0)$2"	[label=assignedFrom];
-	"top_pages(0)$0" -> "top_pages(0)"	[label=assignedFrom];
+	"print[24/0]" -> "train(0)$3"	[label=print];
+	"print[24/0]" -> "Counter(0)"	[label=print];
 	"lang_sets(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"lang_sets(0)$0" -> "0(0)"	[label=assignedFrom];
 	"lang_sets(0)$0" -> "train(0)$3"	[label=assignedFrom];
@@ -105,11 +81,18 @@ digraph "" {
 	"lang_sets(0)$7" -> "lang_sets(0)$6"	[label=assignedFrom];
 	"lang_sets(0)$7" -> "es(0)"	[label=assignedFrom];
 	"es(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"key(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"key(0)" -> "lang_sets(0)$7"	[label=iteratorOf];
+	"key(0)" -> "sums(0)$0"	[label=iteratorOf];
+	"key(0)" -> "top_pages(0)$0"	[label=iteratorOf];
 	"sums(0)$0" -> "0(0)"	[label=Div];
-	"sums(0)$0" -> "key(0)"	[label=Div];
 	"sums(0)$0" -> "1(0)"	[label=Div];
 	"sums(0)$0" -> "lang_sets(0)$7"	[label=Div];
+	"sums(0)$0" -> "key(0)"	[label=Div];
 	"sums(0)$0" -> "sums(0)"	[label=Div];
+	"top_pages(0)$0" -> "0(0)"	[label=assignedFrom];
+	"top_pages(0)$0" -> "sum_set(0)$2"	[label=assignedFrom];
+	"top_pages(0)$0" -> "top_pages(0)"	[label=assignedFrom];
 	"sums(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"r(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"days(0)$0" -> "0(0)"	[label=assignedFrom];
@@ -120,8 +103,8 @@ digraph "" {
 	"range(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "plt(0)"	[label=figure];
 	"fig(0)$0" -> "1(0)"	[label=figure];
-	"fig(0)$0" -> "[<_ast.Constant object at 0x12f957d30>, <_ast.Constant object at 0x12f957eb0>](0)"	[label=figure];
-	"[<_ast.Constant object at 0x12f957d30>, <_ast.Constant object at 0x12f957eb0>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"fig(0)$0" -> "[<_ast.Constant object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832c10>](0)"	[label=figure];
+	"[<_ast.Constant object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832c10>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=ylabel];
 	"plt(0)$0" -> "Views per Page(0)"	[label=ylabel];
 	"Views per Page(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
@@ -166,10 +149,9 @@ digraph "" {
 	"fft(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"fft(0)" -> fft	[label=assignedFrom];
 	"key(2)" -> "plot_with_fft[0]"	[label=_argToVar];
-	"plot_with_fft[0]" -> "key(0)"	[label=plot_with_fft];
 	"fig(2)$0" -> "plt(2)"	[label=figure];
 	"fig(2)$0" -> "1(2)"	[label=figure];
-	"fig(2)$0" -> "[<_ast.Constant object at 0x12f85ec70>, <_ast.Constant object at 0x12fa54550>](2)"	[label=figure];
+	"fig(2)$0" -> "[<_ast.Constant object at 0x7fd4c04cc850>, <_ast.Constant object at 0x7fd4c04cc580>](2)"	[label=figure];
 	"plt(2)$0" -> "plt(2)"	[label=ylabel];
 	"plt(2)$0" -> "Views per Page(2)"	[label=ylabel];
 	"plt(2)$1" -> "plt(2)$0"	[label=xlabel];
@@ -183,7 +165,7 @@ digraph "" {
 	"plt(2)$3" -> "sums(2)"	[label=plot];
 	"fig(2)$1" -> "plt(2)$3"	[label=figure];
 	"fig(2)$1" -> "2(2)"	[label=figure];
-	"fig(2)$1" -> "[<_ast.Constant object at 0x12fa541c0>, <_ast.Constant object at 0x12fa54280>](2)"	[label=figure];
+	"fig(2)$1" -> "[<_ast.Constant object at 0x7fd50085b2e0>, <_ast.Constant object at 0x7fd50085b6d0>](2)"	[label=figure];
 	"fft_complex(2)$0" -> "key(2)"	[label=fft];
 	"fft_complex(2)$0" -> "sums(2)"	[label=fft];
 	"fft_mag(2)$0" -> "fft_complex(2)$0"	[label=assignedFrom];
@@ -214,16 +196,9 @@ digraph "" {
 	"plt(2)$9" -> "plt(2)$8"	[label=axvline];
 	"plt(2)$10" -> "plt(2)$9"	[label=axvline];
 	"plt(2)$11" -> "plt(2)$10"	[label=show];
+	"plot_with_fft[84/4]" -> "key(0)"	[label=plot_with_fft];
 	"key(3)" -> "plot_entry[0]"	[label=_argToVar];
-	"plot_entry[0]" -> "en(0)"	[label=plot_entry];
-	"plot_entry[0]" -> "fr(0)"	[label=plot_entry];
-	"plot_entry[0]" -> "es(0)"	[label=plot_entry];
 	"idx(3)" -> "plot_entry[1]"	[label=_argToVar];
-	"plot_entry[1]" -> "i(0)"	[label=plot_entry];
-	"i(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"i(0)" -> "idx(0)$0"	[label=iteratorOf];
-	"i(0)" -> "idx(0)$1"	[label=iteratorOf];
-	"i(0)" -> "idx(0)$2"	[label=iteratorOf];
 	"data(3)$0" -> "key(3)"	[label=assignedFrom];
 	"data(3)$0" -> "idx(3)"	[label=assignedFrom];
 	"data(3)$0" -> "lang_sets(3)"	[label=assignedFrom];
@@ -246,54 +221,77 @@ digraph "" {
 	"plt(3)$3" -> "train(3)"	[label=title];
 	"plt(3)$3" -> "0(3)"	[label=title];
 	"plt(3)$4" -> "plt(3)$3"	[label=show];
-	"[<_ast.Constant object at 0x12f88aac0>, <_ast.Constant object at 0x12f88af70>, <_ast.Constant object at 0x12f88a640>, <_ast.Constant \
-object at 0x12f88a6a0>, <_ast.Constant object at 0x12f88aca0>, <_ast.Constant object at 0x12f88ac70>, <_ast.Constant object at 0x12f88ab50>, <_\
-ast.Constant object at 0x12f88ab80>, <_ast.Constant object at 0x12f88a7c0>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant \
-object at 0x12f88a460>, <_ast.Constant object at 0x12f88abb0>, <_ast.Constant object at 0x12f88afa0>, <_ast.Constant object at 0x12f88a100>](\
-0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"idx(0)$0" -> "[<_ast.Constant object at 0x12f88aac0>, <_ast.Constant object at 0x12f88af70>, <_ast.Constant object at 0x12f88a640>, <_ast.Constant \
-object at 0x12f88a6a0>, <_ast.Constant object at 0x12f88aca0>, <_ast.Constant object at 0x12f88ac70>, <_ast.Constant object at 0x12f88ab50>, <_\
-ast.Constant object at 0x12f88ab80>, <_ast.Constant object at 0x12f88a7c0>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant \
-object at 0x12f88a460>, <_ast.Constant object at 0x12f88abb0>, <_ast.Constant object at 0x12f88afa0>, <_ast.Constant object at 0x12f88a100>](\
-0)"	[label=assignedFrom];
-	"idx(0)$1" -> "[<_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f951f10>, <_ast.Constant \
-object at 0x12f9515b0>, <_ast.Constant object at 0x12f951be0>, <_ast.Constant object at 0x12f9519a0>, <_ast.Constant object at 0x12f951190>, <_\
-ast.Constant object at 0x12f951f40>, <_ast.Constant object at 0x12f9516a0>, <_ast.Constant object at 0x12f951c40>, <_ast.Constant \
-object at 0x12f951d00>, <_ast.Constant object at 0x12f951490>, <_ast.Constant object at 0x12f951040>, <_ast.Constant object at 0x12f951cd0>](\
-0)"	[label=assignedFrom];
-	"idx(0)$2" -> "[<_ast.Constant object at 0x12f951430>, <_ast.Constant object at 0x12f951970>, <_ast.Constant object at 0x12f951070>, <_ast.Constant \
-object at 0x12f951400>, <_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951700>, <_\
-ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f9513d0>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant \
-object at 0x12f951b20>, <_ast.Constant object at 0x12f951ca0>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f951af0>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f951f10>, <_ast.Constant \
-object at 0x12f9515b0>, <_ast.Constant object at 0x12f951be0>, <_ast.Constant object at 0x12f9519a0>, <_ast.Constant object at 0x12f951190>, <_\
-ast.Constant object at 0x12f951f40>, <_ast.Constant object at 0x12f9516a0>, <_ast.Constant object at 0x12f951c40>, <_ast.Constant \
-object at 0x12f951d00>, <_ast.Constant object at 0x12f951490>, <_ast.Constant object at 0x12f951040>, <_ast.Constant object at 0x12f951cd0>](\
-0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951430>, <_ast.Constant object at 0x12f951970>, <_ast.Constant object at 0x12f951070>, <_ast.Constant \
-object at 0x12f951400>, <_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951700>, <_\
-ast.Constant object at 0x12f951c10>, <_ast.Constant object at 0x12f9513d0>, <_ast.Constant object at 0x12f951f70>, <_ast.Constant \
-object at 0x12f951b20>, <_ast.Constant object at 0x12f951ca0>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f951af0>](\
-0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0583f70>, <_ast.Constant object at 0x7fd4d05839d0>, <_ast.Constant object at 0x7fd4d0583f10>, <_\
+ast.Constant object at 0x7fd4d0583ee0>, <_ast.Constant object at 0x7fd4d0583ca0>, <_ast.Constant object at 0x7fd4d0583a90>, <_ast.Constant \
+object at 0x7fd4d0583c70>, <_ast.Constant object at 0x7fd4d05834f0>, <_ast.Constant object at 0x7fd4d0583b20>, <_ast.Constant object \
+at 0x7fd4d0583430>, <_ast.Constant object at 0x7fd4d0583880>, <_ast.Constant object at 0x7fd4d0583eb0>, <_ast.Constant object at \
+0x7fd4d05837c0>, <_ast.Constant object at 0x7fd4d0583940>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"idx(0)$0" -> "[<_ast.Constant object at 0x7fd4d0583f70>, <_ast.Constant object at 0x7fd4d05839d0>, <_ast.Constant object at 0x7fd4d0583f10>, <_\
+ast.Constant object at 0x7fd4d0583ee0>, <_ast.Constant object at 0x7fd4d0583ca0>, <_ast.Constant object at 0x7fd4d0583a90>, <_ast.Constant \
+object at 0x7fd4d0583c70>, <_ast.Constant object at 0x7fd4d05834f0>, <_ast.Constant object at 0x7fd4d0583b20>, <_ast.Constant object \
+at 0x7fd4d0583430>, <_ast.Constant object at 0x7fd4d0583880>, <_ast.Constant object at 0x7fd4d0583eb0>, <_ast.Constant object at \
+0x7fd4d05837c0>, <_ast.Constant object at 0x7fd4d0583940>](0)"	[label=assignedFrom];
+	"i(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"i(0)" -> "idx(0)$0"	[label=iteratorOf];
+	"i(0)" -> "idx(0)$1"	[label=iteratorOf];
+	"i(0)" -> "idx(0)$2"	[label=iteratorOf];
+	"idx(0)$1" -> "[<_ast.Constant object at 0x7fd4d0583760>, <_ast.Constant object at 0x7fd4d0583af0>, <_ast.Constant object at 0x7fd4d0583d90>, <_\
+ast.Constant object at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d0583160>, <_ast.Constant object at 0x7fd4d05837f0>, <_ast.Constant \
+object at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object \
+at 0x7fd5009999d0>, <_ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at \
+0x7fd500999850>, <_ast.Constant object at 0x7fd500999a90>](0)"	[label=assignedFrom];
+	"idx(0)$2" -> "[<_ast.Constant object at 0x7fd500999670>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999040>, <_\
+ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999a60>, <_ast.Constant \
+object at 0x7fd500999ee0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999730>, <_ast.Constant object \
+at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at \
+0x7fd500999a30>, <_ast.Constant object at 0x7fd500999220>](0)"	[label=assignedFrom];
+	"plot_entry[96/4]" -> "en(0)"	[label=plot_entry];
+	"plot_entry[96/4]" -> "i(0)"	[label=plot_entry];
+	"[<_ast.Constant object at 0x7fd4d0583760>, <_ast.Constant object at 0x7fd4d0583af0>, <_ast.Constant object at 0x7fd4d0583d90>, <_\
+ast.Constant object at 0x7fd4d05830a0>, <_ast.Constant object at 0x7fd4d0583160>, <_ast.Constant object at 0x7fd4d05837f0>, <_ast.Constant \
+object at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object \
+at 0x7fd5009999d0>, <_ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at \
+0x7fd500999850>, <_ast.Constant object at 0x7fd500999a90>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"plot_entry[99/4]" -> "es(0)"	[label=plot_entry];
+	"plot_entry[99/4]" -> "i(0)"	[label=plot_entry];
+	"[<_ast.Constant object at 0x7fd500999670>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd500999040>, <_\
+ast.Constant object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999a60>, <_ast.Constant \
+object at 0x7fd500999ee0>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999730>, <_ast.Constant object \
+at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object at \
+0x7fd500999a30>, <_ast.Constant object at 0x7fd500999220>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"plot_entry[102/4]" -> "fr(0)"	[label=plot_entry];
+	"plot_entry[102/4]" -> "i(0)"	[label=plot_entry];
 	"5(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"npages(0)$0" -> "5(0)"	[label=assignedFrom];
+	"print[107/4]" -> "key(0)"	[label=print];
 	"sum_set(0)$0" -> "pd(0)"	[label=DataFrame];
-	"sum_set(0)$0" -> "key(0)"	[label=DataFrame];
 	"sum_set(0)$0" -> "lang_sets(0)$7"	[label=DataFrame];
-	"sum_set(0)$0" -> "[<_ast.Constant object at 0x12fc20250>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fc20250>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"sum_set(0)$1" -> "key(0)"	[label=sum];
+	"sum_set(0)$0" -> "key(0)"	[label=DataFrame];
+	"sum_set(0)$0" -> "[<_ast.Constant object at 0x7fd5009990d0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd5009990d0>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"sum_set(0)$1" -> "1(0)"	[label=sum];
 	"sum_set(0)$1" -> "lang_sets(0)$7"	[label=sum];
+	"sum_set(0)$1" -> "key(0)"	[label=sum];
 	"sum_set(0)$1" -> "sum_set(0)$0"	[label=sum];
+	"sum_set(0)$2" -> "sum_set(0)$1"	[label=sort_values];
+	"sum_set(0)$2" -> "total(0)"	[label=sort_values];
+	"sum_set(0)$2" -> "False(0)"	[label=sort_values];
 	"total(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"False(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"print[111/4]" -> "sum_set(0)$2"	[label=print];
+	"print[111/4]" -> "10(0)"	[label=print];
+	"10(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"top_pages(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
-	"fig(0)$1" -> "10(0)"	[label=figure];
+	"
+
+(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"print[113/4]" -> "
+
+(0)"	[label=print];
 	"fig(0)$1" -> "1(0)"	[label=figure];
 	"fig(0)$1" -> "plt(0)$5"	[label=figure];
 	"fig(0)$1" -> "5(0)"	[label=figure];
+	"fig(0)$1" -> "10(0)"	[label=figure];
 	"cols(0)$0" -> "train(0)$3"	[label=assignedFrom];
 	"cols(0)$1" -> "1(0)"	[label=assignedFrom];
 	"cols(0)$1" -> "cols(0)$0"	[label=assignedFrom];
@@ -326,8 +324,8 @@ object at 0x12f951b20>, <_ast.Constant object at 0x12f951ca0>, <_ast.Constant ob
 	"acf(0)" -> acf	[label=assignedFrom];
 	"fig(0)$2" -> "1(0)"	[label=figure];
 	"fig(0)$2" -> "plt(0)$10"	[label=figure];
-	"fig(0)$2" -> "[<_ast.Constant object at 0x12f889ee0>, <_ast.Constant object at 0x12f889f10>](0)"	[label=figure];
-	"[<_ast.Constant object at 0x12f889ee0>, <_ast.Constant object at 0x12f889f10>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"fig(0)$2" -> "[<_ast.Constant object at 0x7fd500852bb0>, <_ast.Constant object at 0x7fd500852d00>](0)"	[label=figure];
+	"[<_ast.Constant object at 0x7fd500852bb0>, <_ast.Constant object at 0x7fd500852d00>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"ax1(0)$0" -> "fig(0)$2"	[label=add_subplot];
 	"ax1(0)$0" -> "121(0)"	[label=add_subplot];
 	"121(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
@@ -402,17 +400,21 @@ object at 0x12f951b20>, <_ast.Constant object at 0x12f951ca0>, <_ast.Constant ob
 	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
 	"ignore(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"arima(0)$0" -> "data(0)$2"	[label=ARIMA];
-	"arima(0)$0" -> "[<_ast.Constant object at 0x12fc31940>, <_ast.Constant object at 0x12fc31970>, <_ast.Constant object at 0x12fc319a0>](0)"	[label=ARIMA];
-	"[<_ast.Constant object at 0x12fc31940>, <_ast.Constant object at 0x12fc31970>, <_ast.Constant object at 0x12fc319a0>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"arima(0)$0" -> "[<_ast.Constant object at 0x7fd500827640>, <_ast.Constant object at 0x7fd500827670>, <_ast.Constant object at 0x7fd5008276a0>](0)"	[label=ARIMA];
+	"[<_ast.Constant object at 0x7fd500827640>, <_ast.Constant object at 0x7fd500827670>, <_ast.Constant object at 0x7fd5008276a0>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"result(0)$1" -> "False(0)"	[label=fit];
 	"result(0)$1" -> "arima(0)$0"	[label=fit];
 	"arima(0)$1" -> "data(0)$2"	[label=ARIMA];
-	"arima(0)$1" -> "[<_ast.Constant object at 0x12fc31cd0>, <_ast.Constant object at 0x12fc31d00>, <_ast.Constant object at 0x12fc31d30>](0)"	[label=ARIMA];
-	"[<_ast.Constant object at 0x12fc31cd0>, <_ast.Constant object at 0x12fc31d00>, <_ast.Constant object at 0x12fc31d30>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"arima(0)$1" -> "[<_ast.Constant object at 0x7fd5008279d0>, <_ast.Constant object at 0x7fd500827a00>, <_ast.Constant object at 0x7fd500827a30>](0)"	[label=ARIMA];
+	"[<_ast.Constant object at 0x7fd5008279d0>, <_ast.Constant object at 0x7fd500827a00>, <_ast.Constant object at 0x7fd500827a30>](0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
 	"result(0)$2" -> "False(0)"	[label=fit];
 	"result(0)$2" -> "arima(0)$1"	[label=fit];
-	"print[2]" -> "key(0)"	[label=print];
-	"print[3]" -> "Page(0)"	[label=print];
+	"print[165/16]" -> "train(0)$3"	[label=print];
+	"print[165/16]" -> "key(0)"	[label=print];
+	"print[165/16]" -> "top_pages(0)$0"	[label=print];
+	"print[165/16]" -> "Page(0)"	[label=print];
+	"	ARIMA failed(0)" -> "wikipedia-traffic-data-exploration.ipynb"	[label=appearsIn];
+	"print[166/16]" -> "	ARIMA failed(0)"	[label=print];
 	"pred(0)$0" -> "result(0)$2"	[label=predict];
 	"pred(0)$0" -> "2(0)"	[label=predict];
 	"pred(0)$0" -> "599(0)"	[label=predict];

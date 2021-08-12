@@ -31,74 +31,75 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "reduce_train(0)$0"	[label=print];
-	"print[0]" -> "subm(0)$2"	[label=print];
-	"reduce_train(0)$0" -> "pd(0)"	[label=read_csv];
-	"reduce_train(0)$0" -> "url1(0)$0"	[label=read_csv];
-	"reduce_train(0)$0" -> "None(0)"	[label=read_csv];
-	"subm(0)$2" -> "testm(0)$0"	[label=assignedFrom];
-	"subm(0)$2" -> "subm(0)$1"	[label=assignedFrom];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "reduce_test(0)$0"	[label=print];
-	"reduce_test(0)$0" -> "pd(0)"	[label=read_csv];
-	"reduce_test(0)$0" -> "url2(0)$0"	[label=read_csv];
-	"reduce_test(0)$0" -> "None(0)"	[label=read_csv];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[10/8]" -> "os(0)"	[label=print];
+	"print[10/8]" -> "dirname(0)"	[label=print];
+	"print[10/8]" -> "filename(0)"	[label=print];
 	"../input/ram-reduce/reduce_train.csv(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
 	"url1(0)$0" -> "../input/ram-reduce/reduce_train.csv(0)"	[label=assignedFrom];
 	"../input/ram-reduce/reduce_test.csv(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
 	"url2(0)$0" -> "../input/ram-reduce/reduce_test.csv(0)"	[label=assignedFrom];
+	"reduce_train(0)$0" -> "pd(0)"	[label=read_csv];
+	"reduce_train(0)$0" -> "url1(0)$0"	[label=read_csv];
+	"reduce_train(0)$0" -> "None(0)"	[label=read_csv];
 	"None(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"reduce_test(0)$0" -> "pd(0)"	[label=read_csv];
+	"reduce_test(0)$0" -> "url2(0)$0"	[label=read_csv];
+	"reduce_test(0)$0" -> "None(0)"	[label=read_csv];
+	"print[15/0]" -> "reduce_train(0)$0"	[label=print];
+	"print[15/0]" -> "reduce_test(0)$0"	[label=print];
 	"accuracy_group(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
 	"target(0)$0" -> "accuracy_group(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f85ed30>, <_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant \
-object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f1c0>, <_\
-ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant \
-object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f430>, <_\
-ast.Constant object at 0x12fc4f160>, <_ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4ff10>, <_ast.Constant \
-object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4ffd0>, <_ast.Constant object at 0x12fc4fc40>, <_\
-ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4fd60>, <_ast.Constant \
-object at 0x12fc4fca0>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f940>, <_\
-ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant \
-object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f280>, <_\
-ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f5b0>, <_ast.Constant \
-object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fd90>, <_\
-ast.Constant object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant \
-object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f790>, <_ast.Constant object at 0x12fc4feb0>, <_\
-ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f970>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f820>, <_\
-ast.Constant object at 0x12fc4fbe0>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant \
-object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4fb50>, <_\
-ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant \
-object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4ffa0>, <_\
-ast.Constant object at 0x12fc4f0d0>, <_ast.Constant object at 0x12fc4f9d0>, <_ast.Constant object at 0x12fc4f610>, <_ast.Constant \
-object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant object at 0x12fc4f0a0>, <_\
-ast.Constant object at 0x12fc4f5e0>, <_ast.Constant object at 0x12fc4f100>](0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
-	"select(0)$0" -> "[<_ast.Constant object at 0x12f85ed30>, <_ast.Constant object at 0x12f85ef70>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant \
-object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f1c0>, <_\
-ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant \
-object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f430>, <_\
-ast.Constant object at 0x12fc4f160>, <_ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4ff10>, <_ast.Constant \
-object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4ffd0>, <_ast.Constant object at 0x12fc4fc40>, <_\
-ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4fd60>, <_ast.Constant \
-object at 0x12fc4fca0>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f940>, <_\
-ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant \
-object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f280>, <_\
-ast.Constant object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f5b0>, <_ast.Constant \
-object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fd90>, <_\
-ast.Constant object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f580>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant \
-object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f790>, <_ast.Constant object at 0x12fc4feb0>, <_\
-ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f970>, <_ast.Constant object at 0x12fc4fac0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f820>, <_\
-ast.Constant object at 0x12fc4fbe0>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant \
-object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4fb50>, <_\
-ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant \
-object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4ffa0>, <_\
-ast.Constant object at 0x12fc4f0d0>, <_ast.Constant object at 0x12fc4f9d0>, <_ast.Constant object at 0x12fc4f610>, <_ast.Constant \
-object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4fee0>, <_ast.Constant object at 0x12fc4f7c0>, <_ast.Constant object at 0x12fc4f0a0>, <_\
-ast.Constant object at 0x12fc4f5e0>, <_ast.Constant object at 0x12fc4f100>](0)"	[label=assignedFrom];
-	"len[0]" -> "select(0)$0"	[label=len];
+	"[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008328b0>, <_\
+ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant \
+object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object \
+at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant object at \
+0x7fd500832640>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object \
+at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at \
+0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832df0>, <_\
+ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant \
+object at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at \
+0x7fd500832c10>, <_ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd5008323d0>, <_\
+ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832940>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832f70>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at \
+0x7fd500832910>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd4c04ff160>, <_\
+ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant \
+object at 0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object \
+at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff250>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff880>, <_\
+ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff040>, <_ast.Constant object \
+at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff2e0>](0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"select(0)$0" -> "[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008328b0>, <_\
+ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant \
+object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object \
+at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant object at \
+0x7fd500832640>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object \
+at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at \
+0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832df0>, <_\
+ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant \
+object at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at \
+0x7fd500832c10>, <_ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd5008323d0>, <_\
+ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832940>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832f70>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at \
+0x7fd500832910>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd4c04ff160>, <_\
+ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant \
+object at 0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object \
+at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff250>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff880>, <_\
+ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff040>, <_ast.Constant object \
+at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff2e0>](0)"	[label=assignedFrom];
+	"len[18/0]" -> "select(0)$0"	[label=len];
 	catboost -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
 	CatBoostClassifier -> catboost	[label=importedBy];
 	"CatBoostClassifier(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
@@ -144,6 +145,9 @@ ast.Constant object at 0x12fc4f5e0>, <_ast.Constant object at 0x12fc4f100>](0)"	
 	"subm(0)$1" -> "subm(0)$0"	[label=assignedFrom];
 	"subm(0)$1" -> "installation_id(0)"	[label=assignedFrom];
 	"installation_id(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"subm(0)$2" -> "testm(0)$0"	[label=assignedFrom];
+	"subm(0)$2" -> "subm(0)$1"	[label=assignedFrom];
+	"print[32/0]" -> "subm(0)$2"	[label=print];
 	"subm(0)$3" -> "subm(0)$2"	[label=head];
 	"subm(0)$4" -> "subm(0)$3"	[label=to_csv];
 	"subm(0)$4" -> "submission.csv(0)"	[label=to_csv];

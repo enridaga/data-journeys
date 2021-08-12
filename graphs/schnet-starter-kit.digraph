@@ -64,13 +64,10 @@ digraph "" {
 	"../input/champs-scalar-coupling/structures.csv(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"structures_groups(0)$0" -> "molecule_name(0)"	[label=groupby];
 	"structures_groups(0)$0" -> "structures(0)$0"	[label=groupby];
-	"display[0]" -> "train(0)"	[label=display];
-	"display[0]" -> "valid(0)"	[label=display];
-	"display[0]" -> "test(0)"	[label=display];
-	"display[0]" -> "structures(0)$0"	[label=display];
-	"display[0]" -> "submit(0)$0"	[label=display];
-	"submit(0)$0" -> "pd(0)"	[label=read_csv];
-	"submit(0)$0" -> "kernel_schnet.csv(0)"	[label=read_csv];
+	"display[44/0]" -> "train(0)"	[label=display];
+	"display[45/0]" -> "valid(0)"	[label=display];
+	"display[46/0]" -> "test(0)"	[label=display];
+	"display[47/0]" -> "structures(0)$0"	[label=display];
 	"scipy.spatial" -> "schnet-starter-kit.ipynb"	[label=importedBy];
 	distance -> "scipy.spatial"	[label=importedBy];
 	"distance(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
@@ -80,7 +77,7 @@ digraph "" {
 	"list_atoms(3)" -> "__init__[2]"	[label=_argToVar];
 	"self(3)$0" -> "self(3)"	[label=assignedFrom];
 	"self(3)$0" -> "points_df(3)"	[label=assignedFrom];
-	"self(3)$0" -> "[<_ast.Constant object at 0x12f9a45e0>, <_ast.Constant object at 0x12f9a40a0>, <_ast.Constant object at 0x12f9a4e50>](3)"	[label=assignedFrom];
+	"self(3)$0" -> "[<_ast.Constant object at 0x7fd4c04cc8b0>, <_ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04cc790>](3)"	[label=assignedFrom];
 	"self(3)$1" -> "self(3)$0"	[label=cdist];
 	"self(3)$1" -> "self(3)$1"	[label=cdist];
 	"self(3)$1" -> "distance(3)"	[label=cdist];
@@ -113,7 +110,7 @@ digraph "" {
 	"self(3)$5" -> "self(3)$4"	[label=astype];
 	"self(3)$5" -> "np(3)"	[label=astype];
 	"self(3)$5" -> "1(3)"	[label=astype];
-	"self(3)$5" -> "[<_ast.Name object at 0x12f85e9a0>, <_ast.Name object at 0x12f85ee80>](3)"	[label=astype];
+	"self(3)$5" -> "[<_ast.Name object at 0x7fd4902ab190>, <_ast.Name object at 0x7fd4902abe50>](3)"	[label=astype];
 	"self(4)" -> "input_array[0]"	[label=_argToVar];
 	"self(5)" -> "dists[0]"	[label=_argToVar];
 	"set(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
@@ -122,16 +119,10 @@ digraph "" {
 	"list_atoms(0)$0" -> "atom(0)"	[label=list];
 	"atom(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"list of atoms(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
-	"print[0]" -> "list_atoms(0)$0"	[label=print];
-	"print[0]" -> "list of atoms(0)"	[label=print];
-	"print[0]" -> "preprocess training molecules ...(0)"	[label=print];
-	"print[0]" -> "preprocess validation molecules ...(0)"	[label=print];
-	"print[0]" -> "preprocess test molecules ...(0)"	[label=print];
-	"print[0]" -> "shape: {}(0)"	[label=print];
+	"print[81/0]" -> "list of atoms(0)"	[label=print];
+	"print[82/0]" -> "list_atoms(0)$0"	[label=print];
 	"preprocess training molecules ...(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
-	"preprocess validation molecules ...(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
-	"preprocess test molecules ...(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
-	"shape: {}(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
+	"print[86/0]" -> "preprocess training molecules ...(0)"	[label=print];
 	"train_moles(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"mole(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"mole(0)" -> "train_moles(0)"	[label=iteratorOf];
@@ -150,6 +141,8 @@ digraph "" {
 	"train_targets(0)$0" -> "train_gp(0)$0"	[label=append];
 	"train_targets(0)$0" -> "mole(0)"	[label=append];
 	"train_targets(0)$0" -> "train_targets(0)"	[label=append];
+	"preprocess validation molecules ...(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
+	"print[93/0]" -> "preprocess validation molecules ...(0)"	[label=print];
 	"valid_graphs(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"valid_graphs(0)$0" -> "structures_groups(0)$0"	[label=append];
 	"valid_graphs(0)$0" -> "list_atoms(0)$0"	[label=append];
@@ -160,6 +153,8 @@ digraph "" {
 	"valid_targets(0)$0" -> "valid_gp(0)$0"	[label=append];
 	"valid_targets(0)$0" -> "mole(0)"	[label=append];
 	"valid_targets(0)$0" -> "valid_targets(0)"	[label=append];
+	"preprocess test molecules ...(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
+	"print[100/0]" -> "preprocess test molecules ...(0)"	[label=print];
 	"test_graphs(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"test_graphs(0)$0" -> "structures_groups(0)$0"	[label=append];
 	"test_graphs(0)$0" -> "list_atoms(0)$0"	[label=append];
@@ -278,7 +273,7 @@ digraph "" {
 	"h(12)$2" -> "F(12)"	[label=concat];
 	"h(12)$2" -> "2(12)"	[label=concat];
 	"concat(12)$0" -> "F(12)"	[label=concat];
-	"concat(12)$0" -> "[<_ast.Subscript object at 0x12f8f50d0>, <_ast.Subscript object at 0x12f8f5280>, <_ast.Call object at 0x12f9a31f0>](12)"	[label=concat];
+	"concat(12)$0" -> "[<_ast.Subscript object at 0x7fd4c0986970>, <_ast.Subscript object at 0x7fd4c0986fd0>, <_ast.Call object at 0x7fd4c0986490>](12)"	[label=concat];
 	"concat(12)$0" -> "1(12)"	[label=concat];
 	"h1(12)$0" -> "self(12)"	[label=leaky_relu];
 	"h1(12)$0" -> "F(12)"	[label=leaky_relu];
@@ -426,8 +421,8 @@ digraph "" {
 	"list_targets(16)$0" -> "targets(16)"	[label=append];
 	"list_targets(16)$0" -> "d(16)"	[label=append];
 	"list_targets(16)$0" -> "list_targets(16)"	[label=append];
-	"list_targets(16)$0" -> "[<_ast.Constant object at 0x12f899040>, <_ast.Constant object at 0x12f899070>, <_ast.Constant object at 0x12f8990d0>, <_ast.Constant \
-object at 0x12f8990a0>](16)"	[label=append];
+	"list_targets(16)$0" -> "[<_ast.Constant object at 0x7fd50081ce20>, <_ast.Constant object at 0x7fd50081ce50>, <_ast.Constant object at 0x7fd50081c520>, <_\
+ast.Constant object at 0x7fd50081ceb0>](16)"	[label=append];
 	"list_targets(16)$0" -> "np(16)"	[label=append];
 	"sample_index(16)$0" -> "targets(16)"	[label=full];
 	"sample_index(16)$0" -> "i(16)"	[label=full];
@@ -437,11 +432,11 @@ object at 0x12f8990a0>](16)"	[label=append];
 	"sample_index(16)$0" -> "1(16)"	[label=full];
 	"atom_index(16)$0" -> "targets(16)"	[label=assignedFrom];
 	"atom_index(16)$0" -> "d(16)"	[label=assignedFrom];
-	"atom_index(16)$0" -> "[<_ast.Constant object at 0x12f899730>, <_ast.Constant object at 0x12f899790>](16)"	[label=assignedFrom];
+	"atom_index(16)$0" -> "[<_ast.Constant object at 0x7fd500821490>, <_ast.Constant object at 0x7fd5008214c0>](16)"	[label=assignedFrom];
 	"list_pairs_index(16)$0" -> "np(16)"	[label=append];
 	"list_pairs_index(16)$0" -> "1(16)"	[label=append];
 	"list_pairs_index(16)$0" -> "list_pairs_index(16)"	[label=append];
-	"list_pairs_index(16)$0" -> "[<_ast.Name object at 0x12f899970>, <_ast.Name object at 0x12f8999a0>](16)"	[label=append];
+	"list_pairs_index(16)$0" -> "[<_ast.Name object at 0x7fd5008216a0>, <_ast.Name object at 0x7fd5008216d0>](16)"	[label=append];
 	"input_array(16)$0" -> "device(16)"	[label=to_device];
 	"input_array(16)$0" -> "list_array(16)$0"	[label=to_device];
 	"input_array(16)$0" -> "np(16)"	[label=to_device];
@@ -613,13 +608,18 @@ object at 0x12f8990a0>](16)"	[label=append];
 	"trainer(0)$6" -> "trainer(0)$5"	[label=extend];
 	"trainer(0)$7" -> "training(0)"	[label=extend];
 	"trainer(0)$7" -> "trainer(0)$6"	[label=extend];
-	"trainer(0)$7" -> "[<_ast.Constant object at 0x12f8b3250>, <_ast.Constant object at 0x12f8b3280>, <_ast.Constant object at 0x12f8b32b0>, <_ast.Constant \
-object at 0x12f8b32e0>, <_ast.Constant object at 0x12f8b3310>](0)"	[label=extend];
-	"[<_ast.Constant object at 0x12f8b3250>, <_ast.Constant object at 0x12f8b3280>, <_ast.Constant object at 0x12f8b32b0>, <_ast.Constant \
-object at 0x12f8b32e0>, <_ast.Constant object at 0x12f8b3310>](0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
+	"trainer(0)$7" -> "[<_ast.Constant object at 0x7fd500893040>, <_ast.Constant object at 0x7fd500893070>, <_ast.Constant object at 0x7fd5008930a0>, <_\
+ast.Constant object at 0x7fd5008930d0>, <_ast.Constant object at 0x7fd500893100>](0)"	[label=extend];
+	"[<_ast.Constant object at 0x7fd500893040>, <_ast.Constant object at 0x7fd500893070>, <_ast.Constant object at 0x7fd5008930a0>, <_\
+ast.Constant object at 0x7fd5008930d0>, <_ast.Constant object at 0x7fd500893100>](0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
 	"chainer(0)$0" -> "chainer(0)"	[label=assignedFrom];
 	"chainer(0)$0" -> "True(0)"	[label=assignedFrom];
 	"trainer(0)$8" -> "trainer(0)$7"	[label=run];
+	"submit(0)$0" -> "pd(0)"	[label=read_csv];
+	"submit(0)$0" -> "kernel_schnet.csv(0)"	[label=read_csv];
 	"kernel_schnet.csv(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
-	"print[1]" -> "submit(0)$0"	[label=print];
+	"display[388/0]" -> "submit(0)$0"	[label=display];
+	"shape: {}(0)" -> "schnet-starter-kit.ipynb"	[label=appearsIn];
+	"print[389/0]" -> "submit(0)$0"	[label=print];
+	"print[389/0]" -> "shape: {}(0)"	[label=print];
 }

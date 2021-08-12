@@ -170,8 +170,8 @@ digraph "" {
 	"df_train(0)$0" -> "../input/metadata_train.csv(0)"	[label=read_csv];
 	"../input/metadata_train.csv(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"df_train(0)$1" -> "df_train(0)$0"	[label=set_index];
-	"df_train(0)$1" -> "[<_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f9512b0>](0)"	[label=set_index];
-	"[<_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f9512b0>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"df_train(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cd9a0>, <_ast.Constant object at 0x7fd4c04cd4c0>](0)"	[label=set_index];
+	"[<_ast.Constant object at 0x7fd4c04cd9a0>, <_ast.Constant object at 0x7fd4c04cd4c0>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"df_train(0)$2" -> "df_train(0)$1"	[label=head];
 	"127(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"max_num(0)$0" -> "127(0)"	[label=assignedFrom];
@@ -212,9 +212,9 @@ digraph "" {
 	"std_bot(9)$0" -> "std(9)$0"	[label=Sub];
 	"percentil_calc(9)$0" -> "ts_range(9)$0"	[label=percentile];
 	"percentil_calc(9)$0" -> "np(9)"	[label=percentile];
-	"percentil_calc(9)$0" -> "[<_ast.Constant object at 0x1305322b0>, <_ast.Constant object at 0x130532250>, <_ast.Constant object at 0x130532dc0>, <_ast.Constant \
-object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant object at 0x1305326d0>, <_ast.Constant object at 0x130532eb0>](\
-9)"	[label=percentile];
+	"percentil_calc(9)$0" -> "[<_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd5009992b0>, <_\
+ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999640>, <_ast.Constant \
+object at 0x7fd5009990d0>](9)"	[label=percentile];
 	"max_range(9)$0" -> "0(9)"	[label=Sub];
 	"max_range(9)$0" -> "percentil_calc(9)$0"	[label=Sub];
 	"max_range(9)$0" -> "1(9)"	[label=Sub];
@@ -222,7 +222,7 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"relative_percentile(9)$0" -> "percentil_calc(9)$0"	[label=Sub];
 	"new_ts(9)$1" -> "new_ts(9)$0"	[label=append];
 	"new_ts(9)$1" -> "np(9)"	[label=append];
-	"new_ts(9)$1" -> "[<_ast.Call object at 0x12fade070>, <_ast.Name object at 0x12faded60>, <_ast.Name object at 0x12fade160>](9)"	[label=append];
+	"new_ts(9)$1" -> "[<_ast.Call object at 0x7fd500999f10>, <_ast.Name object at 0x7fd4c04cc610>, <_ast.Name object at 0x7fd4c04cc820>](9)"	[label=append];
 	"start(10)" -> "prep_data[0]"	[label=_argToVar];
 	"end(10)" -> "prep_data[1]"	[label=_argToVar];
 	"praq_train(10)$0" -> "start(10)"	[label=to_pandas];
@@ -242,7 +242,7 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"id_measurement(10)" -> "int(10)"	[label=iteratorOf];
 	"id_measurement(10)" -> "3(10)"	[label=iteratorOf];
 	"X_signal(10)$0" -> "[](10)"	[label=assignedFrom];
-	"phase(10)" -> "[<_ast.Constant object at 0x130ba4070>, <_ast.Constant object at 0x130ba46a0>, <_ast.Constant object at 0x130ba4550>](10)"	[label=iteratorOf];
+	"phase(10)" -> "[<_ast.Constant object at 0x7fd4c04ccd90>, <_ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04cc370>](10)"	[label=iteratorOf];
 	"signal_id(10)$0" -> "id_measurement(10)"	[label=assignedFrom];
 	"signal_id(10)$0" -> "df_train(10)"	[label=assignedFrom];
 	"signal_id(10)$0" -> "phase(10)"	[label=assignedFrom];
@@ -269,8 +269,8 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"X(0)$0" -> "[](0)"	[label=assignedFrom];
 	"y(0)$0" -> "[](0)"	[label=assignedFrom];
 	"total_size(11)$0" -> "df_train(11)"	[label=len];
-	"ini(11)" -> "[<_ast.Tuple object at 0x12f8f6370>, <_ast.Tuple object at 0x12f8f6400>](11)"	[label=iteratorOf];
-	"end(11)" -> "[<_ast.Tuple object at 0x12f8f6370>, <_ast.Tuple object at 0x12f8f6400>](11)"	[label=iteratorOf];
+	"ini(11)" -> "[<_ast.Tuple object at 0x7fd4c04da130>, <_ast.Tuple object at 0x7fd4c04da6d0>](11)"	[label=iteratorOf];
+	"end(11)" -> "[<_ast.Tuple object at 0x7fd4c04da130>, <_ast.Tuple object at 0x7fd4c04da6d0>](11)"	[label=iteratorOf];
 	"X_temp(11)$0" -> "ini(11)"	[label=prep_data];
 	"X_temp(11)$0" -> "end(11)"	[label=prep_data];
 	"y_temp(11)$0" -> "ini(11)"	[label=prep_data];
@@ -283,28 +283,8 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"X(0)$1" -> "X(0)$1"	[label=concatenate];
 	"y(0)$1" -> "np(0)"	[label=concatenate];
 	"y(0)$1" -> "y(0)$1"	[label=concatenate];
-	"print[0]" -> "X(0)$1"	[label=print];
-	"print[0]" -> "Beginning fold {}(0)"	[label=print];
-	"print[0]" -> "first_sig(0)$0"	[label=print];
-	"print[0]" -> "start_end(0)$1"	[label=print];
-	"print[0]" -> "len(0)"	[label=print];
-	"Beginning fold {}(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"first_sig(0)$0" -> "0(0)"	[label=assignedFrom];
-	"first_sig(0)$0" -> "meta_test(0)$2"	[label=assignedFrom];
-	"start_end(0)$1" -> "1(0)"	[label=Add];
-	"start_end(0)$1" -> "start_end(0)$0"	[label=Add];
-	"start_end(0)$1" -> "[<_ast.List object at 0x12f899760>](0)"	[label=Add];
-	"len(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"print[1]" -> "y(0)$1"	[label=print];
-	"print[1]" -> "idx(0)"	[label=print];
-	"print[1]" -> "n_parts(0)$0"	[label=print];
-	"print[1]" -> "submission(0)$0"	[label=print];
-	"idx(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"idx(0)" -> "splits(0)$0"	[label=iteratorOf];
-	"idx(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"n_parts(0)$0" -> "10(0)"	[label=assignedFrom];
-	"submission(0)$0" -> "pd(0)"	[label=read_csv];
-	"submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
+	"print[203/0]" -> "X(0)$1"	[label=print];
+	"print[203/0]" -> "y(0)$1"	[label=print];
 	"np(0)$0" -> "np(0)"	[label=save];
 	"np(0)$0" -> "X(0)$1"	[label=save];
 	"np(0)$0" -> "X.npy(0)"	[label=save];
@@ -353,6 +333,9 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"preds_val(0)$0" -> "[](0)"	[label=assignedFrom];
 	"y_val(0)$0" -> "[](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"idx(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"idx(0)" -> "splits(0)$0"	[label=iteratorOf];
+	"idx(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"train_idx(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"train_idx(0)" -> "splits(0)$0"	[label=iteratorOf];
 	"train_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
@@ -360,10 +343,11 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"val_idx(0)" -> "splits(0)$0"	[label=iteratorOf];
 	"val_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"K(0)$0" -> "K(0)"	[label=clear_session];
+	"Beginning fold {}(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"print[241/4]" -> "idx(0)"	[label=print];
+	"print[241/4]" -> "Beginning fold {}(0)"	[label=print];
+	"print[241/4]" -> "1(0)"	[label=print];
 	"1(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "max_line(0)$0"	[label=print];
-	"max_line(0)$0" -> "meta_test(0)$2"	[label=len];
 	"train_X(0)$0" -> "X(0)$1"	[label=assignedFrom];
 	"train_X(0)$0" -> "y(0)$1"	[label=assignedFrom];
 	"train_X(0)$0" -> "train_idx(0)"	[label=assignedFrom];
@@ -382,8 +366,8 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"val_y(0)$0" -> "val_idx(0)"	[label=assignedFrom];
 	"model(0)$0" -> "train_X(0)$0"	[label=model_lstm];
 	"weights_{}.h5(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"ckpt(0)$0" -> "idx(0)"	[label=ModelCheckpoint];
 	"ckpt(0)$0" -> "True(0)"	[label=ModelCheckpoint];
+	"ckpt(0)$0" -> "idx(0)"	[label=ModelCheckpoint];
 	"ckpt(0)$0" -> "1(0)"	[label=ModelCheckpoint];
 	"ckpt(0)$0" -> "weights_{}.h5(0)"	[label=ModelCheckpoint];
 	"ckpt(0)$0" -> "val_matthews_correlation(0)"	[label=ModelCheckpoint];
@@ -442,29 +426,37 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"meta_test(0)$0" -> "../input/metadata_test.csv(0)"	[label=read_csv];
 	"../input/metadata_test.csv(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"meta_test(0)$1" -> "meta_test(0)$0"	[label=set_index];
-	"meta_test(0)$1" -> "[<_ast.Constant object at 0x12f89f850>](0)"	[label=set_index];
-	"[<_ast.Constant object at 0x12f89f850>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"meta_test(0)$1" -> "[<_ast.Constant object at 0x7fd500830520>](0)"	[label=set_index];
+	"[<_ast.Constant object at 0x7fd500830520>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"meta_test(0)$2" -> "meta_test(0)$1"	[label=head];
+	"first_sig(0)$0" -> "0(0)"	[label=assignedFrom];
+	"first_sig(0)$0" -> "meta_test(0)$2"	[label=assignedFrom];
 	"10(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"n_parts(0)$0" -> "10(0)"	[label=assignedFrom];
+	"max_line(0)$0" -> "meta_test(0)$2"	[label=len];
 	"part_size(0)$0" -> "n_parts(0)$0"	[label=int];
 	"part_size(0)$0" -> "max_line(0)$0"	[label=int];
 	"last_part(0)$0" -> "n_parts(0)$0"	[label=Mod];
 	"last_part(0)$0" -> "max_line(0)$0"	[label=Mod];
-	"print[3]" -> "part_size(0)$0"	[label=print];
-	"print[4]" -> "last_part(0)$0"	[label=print];
-	"print[5]" -> "n_parts(0)$0"	[label=print];
-	"print[6]" -> "part_size(0)$0"	[label=print];
-	"print[7]" -> "last_part(0)$0"	[label=print];
-	"[<_ast.Name object at 0x12f8992b0>, <_ast.BinOp object at 0x12f8990d0>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"print[290/0]" -> "first_sig(0)$0"	[label=print];
+	"print[290/0]" -> "n_parts(0)$0"	[label=print];
+	"print[290/0]" -> "max_line(0)$0"	[label=print];
+	"print[290/0]" -> "part_size(0)$0"	[label=print];
+	"print[290/0]" -> "last_part(0)$0"	[label=print];
+	"[<_ast.Name object at 0x7fd500830f10>, <_ast.BinOp object at 0x7fd500830f40>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"start_end(0)$0" -> "first_sig(0)$0"	[label=assignedFrom];
 	"start_end(0)$0" -> "max_line(0)$0"	[label=assignedFrom];
 	"start_end(0)$0" -> "part_size(0)$0"	[label=assignedFrom];
-	"start_end(0)$0" -> "[<_ast.Name object at 0x12f8992b0>, <_ast.BinOp object at 0x12f8990d0>](0)"	[label=assignedFrom];
+	"start_end(0)$0" -> "[<_ast.Name object at 0x7fd500830f10>, <_ast.BinOp object at 0x7fd500830f40>](0)"	[label=assignedFrom];
 	"start_end(0)$0" -> "x(0)"	[label=assignedFrom];
 	"start_end(0)$0" -> "range(0)"	[label=assignedFrom];
 	"x(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"range(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"[<_ast.List object at 0x12f899760>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"start_end(0)$1" -> "1(0)"	[label=Add];
+	"start_end(0)$1" -> "start_end(0)$0"	[label=Add];
+	"start_end(0)$1" -> "[<_ast.List object at 0x7fd50080f430>](0)"	[label=Add];
+	"[<_ast.List object at 0x7fd50080f430>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"print[294/0]" -> "start_end(0)$1"	[label=print];
 	"X_test(0)$0" -> "[](0)"	[label=assignedFrom];
 	"start(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"start(0)" -> "start_end(0)$1"	[label=iteratorOf];
@@ -497,11 +489,10 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"subset_test_col(0)$0" -> "i(0)"	[label=assignedFrom];
 	"subset_trans(0)$0" -> "subset_test_col(0)$0"	[label=transform_ts];
 	"X_test(0)$1" -> "X_test(0)$0"	[label=append];
-	"X_test(0)$1" -> "[<_ast.Name object at 0x12f8969d0>, <_ast.Name object at 0x12f896a00>, <_ast.Name object at 0x12f896ac0>, <_ast.Name object at 0x12f896af0>](\
-0)"	[label=append];
-	"[<_ast.Name object at 0x12f8969d0>, <_ast.Name object at 0x12f896a00>, <_ast.Name object at 0x12f896ac0>, <_ast.Name object at 0x12f896af0>](\
-0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
-	"X_test_input(0)$0" -> "len(0)"	[label=asarray];
+	"X_test(0)$1" -> "[<_ast.Name object at 0x7fd500819550>, <_ast.Name object at 0x7fd500819580>, <_ast.Name object at 0x7fd5008195b0>, <_ast.Name object \
+at 0x7fd5008195e0>](0)"	[label=append];
+	"[<_ast.Name object at 0x7fd500819550>, <_ast.Name object at 0x7fd500819580>, <_ast.Name object at 0x7fd5008195b0>, <_ast.Name object \
+at 0x7fd5008195e0>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"X_test_input(0)$0" -> "np(0)$1"	[label=asarray];
 	"X_test_input(0)$0" -> "1(0)"	[label=asarray];
 	"X_test_input(0)$0" -> "0(0)"	[label=asarray];
@@ -509,13 +500,21 @@ object at 0x1305326a0>, <_ast.Constant object at 0x130532fd0>, <_ast.Constant ob
 	"X_test_input(0)$0" -> "i(0)"	[label=asarray];
 	"X_test_input(0)$0" -> "3(0)"	[label=asarray];
 	"X_test_input(0)$0" -> "X_test(0)$1"	[label=asarray];
-	"X_test_input(0)$0" -> "[<_ast.Subscript object at 0x12f896c10>, <_ast.Subscript object at 0x12f896fd0>, <_ast.Subscript object at 0x12f8967c0>](0)"	[label=asarray];
-	"[<_ast.Subscript object at 0x12f896c10>, <_ast.Subscript object at 0x12f896fd0>, <_ast.Subscript object at 0x12f8967c0>](0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"X_test_input(0)$0" -> "[<_ast.Subscript object at 0x7fd500819820>, <_ast.Subscript object at 0x7fd5008199d0>, <_ast.Subscript object at 0x7fd500819be0>](\
+0)"	[label=asarray];
+	"X_test_input(0)$0" -> "len(0)"	[label=asarray];
+	"[<_ast.Subscript object at 0x7fd500819820>, <_ast.Subscript object at 0x7fd5008199d0>, <_ast.Subscript object at 0x7fd500819be0>](\
+0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"len(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
 	"np(0)$2" -> "np(0)$1"	[label=save];
 	"np(0)$2" -> "X_test_input(0)$0"	[label=save];
 	"np(0)$2" -> "X_test.npy(0)"	[label=save];
 	"X_test.npy(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"submission(0)$0" -> "pd(0)"	[label=read_csv];
+	"submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "5-fold-lstm-attention-fully-commented-0-694.ipynb"	[label=appearsIn];
+	"print[309/0]" -> "len(0)"	[label=print];
+	"print[309/0]" -> "submission(0)$0"	[label=print];
 	"submission(0)$1" -> "submission(0)$0"	[label=head];
 	"preds_test(0)$0" -> "[](0)"	[label=assignedFrom];
 	"model(0)$3" -> "weights_{}.h5(0)"	[label=load_weights];

@@ -20,21 +20,9 @@ digraph "" {
 	listdir -> os	[label=importedBy];
 	"listdir(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"listdir(0)" -> listdir	[label=assignedFrom];
-	"print[0]" -> "listdir(0)"	[label=print];
-	"print[0]" -> "train(0)$3"	[label=print];
-	"print[0]" -> "test_files(0)$0"	[label=print];
-	"train(0)$3" -> "5(0)"	[label=head];
-	"train(0)$3" -> "train(0)$2"	[label=head];
-	"test_files(0)$0" -> "../input/test(0)"	[label=listdir];
+	"print[14/0]" -> "listdir(0)"	[label=print];
+	"print[14/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "n(0)"	[label=print];
-	"print[1]" -> "0(0)"	[label=print];
-	"n(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"n(0)" -> "5(0)"	[label=iteratorOf];
-	"n(0)" -> "range(0)"	[label=iteratorOf];
-	"n(0)" -> "4(0)"	[label=iteratorOf];
-	"0(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	warnings -> "shaking-earth.ipynb"	[label=importedBy];
 	"warnings(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -47,7 +35,7 @@ digraph "" {
 	"warnings(0)$2" -> "warnings(0)$1"	[label=filterwarnings];
 	"<iframe width=\"800\" height=\"400\" src=\"https://www.youtube.com/embed/m_dBwwDJ4uo\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
 encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"HTML[0]" -> "<iframe width=\"800\" height=\"400\" src=\"https://www.youtube.com/embed/m_dBwwDJ4uo\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
+	"HTML[21/0]" -> "<iframe width=\"800\" height=\"400\" src=\"https://www.youtube.com/embed/m_dBwwDJ4uo\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
 encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[label=HTML];
 	"train(0)$0" -> "np(0)"	[label=read_csv];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
@@ -69,8 +57,16 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"train(0)$2" -> "quaketime(0)"	[label=rename];
 	"signal(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"quaketime(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"train(0)$3" -> "5(0)"	[label=head];
+	"train(0)$3" -> "train(0)$2"	[label=head];
 	"range(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"n(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"n(0)" -> "5(0)"	[label=iteratorOf];
+	"n(0)" -> "range(0)"	[label=iteratorOf];
+	"n(0)" -> "4(0)"	[label=iteratorOf];
 	"4(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"print[28/4]" -> "train(0)$3"	[label=print];
+	"print[28/4]" -> "n(0)"	[label=print];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
 	"fig(0)$0" -> "2(0)"	[label=subplots];
 	"fig(0)$0" -> "1(0)"	[label=subplots];
@@ -119,9 +115,10 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"ax(0)$9" -> "3(0)"	[label=subplots];
 	"ax(0)$9" -> "18(0)"	[label=subplots];
 	"ax(0)$10" -> "train(0)$3"	[label=plot];
-	"ax(0)$10" -> "0(0)"	[label=plot];
 	"ax(0)$10" -> "ax(0)$9"	[label=plot];
+	"ax(0)$10" -> "0(0)"	[label=plot];
 	"ax(0)$10" -> "50000(0)"	[label=plot];
+	"0(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"50000(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"ax(0)$11" -> "Index(0)"	[label=set_xlabel];
 	"ax(0)$11" -> "ax(0)$10"	[label=set_xlabel];
@@ -163,14 +160,17 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"../input/test/(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"test_path(0)$0" -> "../input/test/(0)"	[label=assignedFrom];
 	"../input/test(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"print[2]" -> "5(0)"	[label=print];
-	"len[0]" -> "test_files(0)$0"	[label=len];
-	"len[0]" -> "sample_submission(0)$1"	[label=len];
-	"sample_submission(0)$1" -> "2(0)"	[label=head];
-	"sample_submission(0)$1" -> "sample_submission(0)$0"	[label=head];
+	"test_files(0)$0" -> "../input/test(0)"	[label=listdir];
+	"print[53/0]" -> "5(0)"	[label=print];
+	"print[53/0]" -> "0(0)"	[label=print];
+	"print[53/0]" -> "test_files(0)$0"	[label=print];
+	"len[54/0]" -> "test_files(0)$0"	[label=len];
 	"sample_submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"sample_submission(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"sample_submission(0)$1" -> "2(0)"	[label=head];
+	"sample_submission(0)$1" -> "sample_submission(0)$0"	[label=head];
+	"len[57/0]" -> "sample_submission(0)$1"	[label=len];
 	"fig(0)$2" -> "plt(0)"	[label=subplots];
 	"fig(0)$2" -> "4(0)"	[label=subplots];
 	"fig(0)$2" -> "1(0)"	[label=subplots];
@@ -183,9 +183,9 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"ax(0)$22" -> "20(0)"	[label=subplots];
 	"ax(0)$22" -> "25(0)"	[label=subplots];
 	"seg(0)$0" -> "pd(0)"	[label=read_csv];
-	"seg(0)$0" -> "test_files(0)$0"	[label=read_csv];
 	"seg(0)$0" -> "n(0)"	[label=read_csv];
 	"seg(0)$0" -> "test_path(0)$0"	[label=read_csv];
+	"seg(0)$0" -> "test_files(0)$0"	[label=read_csv];
 	"ax(0)$23" -> "ax(0)$22"	[label=plot];
 	"ax(0)$23" -> "seg(0)$0"	[label=plot];
 	"ax(0)$24" -> "Index(0)"	[label=set_xlabel];
@@ -194,10 +194,10 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"ax(0)$25" -> "Signal(0)"	[label=set_ylabel];
 	"Signal(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"ax(0)$26" -> "ax(0)$25"	[label=set_ylim];
-	"ax(0)$26" -> "[<_ast.UnaryOp object at 0x12fb0dcd0>, <_ast.Constant object at 0x12fb0d700>](0)"	[label=set_ylim];
-	"[<_ast.UnaryOp object at 0x12fb0dcd0>, <_ast.Constant object at 0x12fb0d700>](0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"ax(0)$27" -> "test_files(0)$0"	[label=set_title];
+	"ax(0)$26" -> "[<_ast.UnaryOp object at 0x7fd500824220>, <_ast.Constant object at 0x7fd500824340>](0)"	[label=set_ylim];
+	"[<_ast.UnaryOp object at 0x7fd500824220>, <_ast.Constant object at 0x7fd500824340>](0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"ax(0)$27" -> "n(0)"	[label=set_title];
+	"ax(0)$27" -> "test_files(0)$0"	[label=set_title];
 	"ax(0)$27" -> "ax(0)$26"	[label=set_title];
 	"ax(0)$27" -> "Test {}(0)"	[label=set_title];
 	"Test {}(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
@@ -261,10 +261,10 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[
 	"TimeSeriesSplit(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"TimeSeriesSplit(0)" -> TimeSeriesSplit	[label=assignedFrom];
 	"cv(0)$0" -> "5(0)"	[label=TimeSeriesSplit];
-	"[<_ast.Constant object at 0x12f9a0700>, <_ast.Constant object at 0x12f9a0730>, <_ast.Constant object at 0x12f9a0760>, <_ast.Constant \
-object at 0x12f9a0790>](0)" -> "shaking-earth.ipynb"	[label=appearsIn];
-	"window_sizes(0)$0" -> "[<_ast.Constant object at 0x12f9a0700>, <_ast.Constant object at 0x12f9a0730>, <_ast.Constant object at 0x12f9a0760>, <_ast.Constant \
-object at 0x12f9a0790>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500847130>, <_ast.Constant object at 0x7fd500847040>, <_ast.Constant object at 0x7fd500847070>, <_\
+ast.Constant object at 0x7fd5008470a0>](0)" -> "shaking-earth.ipynb"	[label=appearsIn];
+	"window_sizes(0)$0" -> "[<_ast.Constant object at 0x7fd500847130>, <_ast.Constant object at 0x7fd500847040>, <_ast.Constant object at 0x7fd500847070>, <_\
+ast.Constant object at 0x7fd5008470a0>](0)"	[label=assignedFrom];
 	"window(0)" -> "shaking-earth.ipynb"	[label=appearsIn];
 	"window(0)" -> "window_sizes(0)$0"	[label=iteratorOf];
 	"train(0)$9" -> "train(0)$8"	[label=mean];

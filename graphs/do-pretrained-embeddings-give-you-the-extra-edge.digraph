@@ -90,10 +90,10 @@ digraph "" {
 	"../input/jigsaw-toxic-comment-classification-challenge/test.csv(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"0(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"embed_size(0)$0" -> "0(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4f940>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant \
-object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4fa30>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"list_classes(0)$0" -> "[<_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4f940>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant \
-object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant object at 0x12fc4fa30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0e20>, <_\
+ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f0a90>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"list_classes(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0e20>, <_\
+ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f0a90>](0)"	[label=assignedFrom];
 	"y(0)$0" -> "train(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "list_classes(0)$0"	[label=assignedFrom];
 	"list_sentences_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
@@ -141,18 +141,15 @@ object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant ob
 	"embeddings_index(1)$0" -> "coefs(1)$0"	[label=assignedFrom];
 	"embeddings_index(1)$0" -> "embeddings_index(1)"	[label=assignedFrom];
 	"f(1)$1" -> "f(1)$0"	[label=close];
-	"print[0]" -> "Loaded \%s word vectors.(1)"	[label=print];
-	"print[0]" -> "total embedded:(1)"	[label=print];
-	"print[1]" -> "len(1)"	[label=print];
-	"print[1]" -> "embeddedCount(1)$1"	[label=print];
-	"embeddedCount(1)$1" -> "1(1)"	[label=Add];
-	"embeddedCount(1)$1" -> "embeddedCount(1)$0"	[label=Add];
-	"print[2]" -> "embeddings_index(1)$0"	[label=print];
-	"print[2]" -> "embeddings_index(1)$1"	[label=print];
-	"print[2]" -> "common words(1)"	[label=print];
+	"print[105/12]" -> "embeddings_index(1)$0"	[label=print];
+	"print[105/12]" -> "Loaded \%s word vectors.(1)"	[label=print];
+	"print[105/12]" -> "len(1)"	[label=print];
 	"embeddings_index(1)$1" -> "word2vecDict(1)$0"	[label=word_vec];
 	"embeddings_index(1)$1" -> "word(1)$0"	[label=word_vec];
 	"embeddings_index(1)$1" -> "embeddings_index(1)$0"	[label=word_vec];
+	"print[115/12]" -> "Loaded \%s word vectors.(1)"	[label=print];
+	"print[115/12]" -> "len(1)"	[label=print];
+	"print[115/12]" -> "embeddings_index(1)$1"	[label=print];
 	"gc(1)$0" -> "gc(1)"	[label=collect];
 	"all_embs(1)$0" -> "np(1)"	[label=stack];
 	"all_embs(1)$0" -> "embeddings_index(1)$1"	[label=stack];
@@ -174,6 +171,11 @@ object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant ob
 	"embedding_vector(1)$0" -> "embeddings_index(1)$1"	[label=get];
 	"embedding_matrix(1)$1" -> "embedding_matrix(1)$0"	[label=assignedFrom];
 	"embedding_matrix(1)$1" -> "embedding_vector(1)$0"	[label=assignedFrom];
+	"embeddedCount(1)$1" -> "1(1)"	[label=Add];
+	"embeddedCount(1)$1" -> "embeddedCount(1)$0"	[label=Add];
+	"print[165/8]" -> "embeddedCount(1)$1"	[label=print];
+	"print[165/8]" -> "total embedded:(1)"	[label=print];
+	"print[165/8]" -> "common words(1)"	[label=print];
 	"gc(1)$2" -> "gc(1)$1"	[label=collect];
 	"embedding_matrix(0)$0" -> "word2vec(0)"	[label=loadEmbeddingMatrix];
 	"inp(0)$0" -> "maxlen(0)$0"	[label=Input];
@@ -183,11 +185,11 @@ object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant ob
 	"x(0)$0" -> "inp(0)$0"	[label=assignedFrom];
 	"x(0)$0" -> "len(0)"	[label=assignedFrom];
 	"x(0)$0" -> "1(0)"	[label=assignedFrom];
-	"x(0)$0" -> "[<_ast.Name object at 0x12fade760>](0)"	[label=assignedFrom];
+	"x(0)$0" -> "[<_ast.Name object at 0x7fd4c04cc940>](0)"	[label=assignedFrom];
 	"x(0)$0" -> "False(0)"	[label=assignedFrom];
 	"len(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"1(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fade760>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04cc940>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"False(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"x(0)$1" -> "LSTM(0)"	[label=assignedFrom];
 	"x(0)$1" -> "Bidirectional(0)"	[label=assignedFrom];
@@ -233,22 +235,22 @@ object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant ob
 	"all_losses(0)$0" -> "fasttext_val_loss(0)"	[label=assignedFrom];
 	"all_losses(0)$0" -> "baseline_loss(0)"	[label=assignedFrom];
 	"all_losses(0)$0" -> "baseline_val_loss(0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x130532730>, <_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x130532370>, <_ast.Constant \
-object at 0x130532c70>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x130532820>, <_ast.Constant object at 0x1305327c0>, <_ast.Constant \
-object at 0x130532760>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x130532b20>, <_ast.Constant object at 0x130532af0>, <_ast.Constant object at 0x130532f70>, <_ast.Constant \
-object at 0x130532d00>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x1305326d0>, <_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532a00>, <_ast.Constant \
-object at 0x130532c40>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x130532e20>, <_ast.Constant object at 0x130532310>, <_ast.Constant object at 0x130532c10>, <_ast.Constant \
-object at 0x130532940>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x130532850>, <_ast.Constant object at 0x130532040>, <_ast.Constant object at 0x130532ca0>, <_ast.Constant \
-object at 0x130532fa0>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x1305324c0>, <_ast.Constant object at 0x130532130>, <_ast.Constant object at 0x130532be0>, <_ast.Constant \
-object at 0x1305328e0>](0)"	[label=assignedFrom];
-	"all_losses(0)$0" -> "[<_ast.Constant object at 0x130532490>, <_ast.Constant object at 0x130532250>, <_ast.Constant object at 0x130532880>, <_ast.Constant \
-object at 0x130532a60>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1220>, <_ast.Constant object at 0x7fd5009c1fa0>, <_ast.Constant object at 0x7fd5009c1520>, <_\
+ast.Constant object at 0x7fd5009c1100>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c12e0>, <_ast.Constant object at 0x7fd5009c1490>, <_ast.Constant object at 0x7fd5009c1a30>, <_\
+ast.Constant object at 0x7fd5009c1700>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1190>, <_ast.Constant object at 0x7fd5009c1c40>, <_ast.Constant object at 0x7fd5009c18b0>, <_\
+ast.Constant object at 0x7fd5009c1130>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1820>, <_ast.Constant object at 0x7fd5009c11c0>, <_ast.Constant object at 0x7fd5009c1a60>, <_\
+ast.Constant object at 0x7fd5009c1580>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1940>, <_ast.Constant object at 0x7fd5009c15e0>, <_ast.Constant object at 0x7fd5009c1fd0>, <_\
+ast.Constant object at 0x7fd5009c1f10>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1ee0>, <_ast.Constant object at 0x7fd5009c1430>, <_ast.Constant object at 0x7fd5009c13a0>, <_\
+ast.Constant object at 0x7fd5009c1d00>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1b20>, <_ast.Constant object at 0x7fd5009c1d90>, <_ast.Constant object at 0x7fd5009c1760>, <_\
+ast.Constant object at 0x7fd5009c1ca0>](0)"	[label=assignedFrom];
+	"all_losses(0)$0" -> "[<_ast.Constant object at 0x7fd5009c1550>, <_ast.Constant object at 0x7fd5009c18e0>, <_ast.Constant object at 0x7fd5009c1d60>, <_\
+ast.Constant object at 0x7fd5009c1df0>](0)"	[label=assignedFrom];
 	"word2vec_val_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"glove_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"glove_val_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
@@ -256,22 +258,22 @@ object at 0x130532a60>](0)"	[label=assignedFrom];
 	"fasttext_val_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"baseline_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"baseline_val_loss(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532730>, <_ast.Constant object at 0x130532ac0>, <_ast.Constant object at 0x130532370>, <_ast.Constant \
-object at 0x130532c70>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x130532820>, <_ast.Constant object at 0x1305327c0>, <_ast.Constant \
-object at 0x130532760>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532b20>, <_ast.Constant object at 0x130532af0>, <_ast.Constant object at 0x130532f70>, <_ast.Constant \
-object at 0x130532d00>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305326d0>, <_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532a00>, <_ast.Constant \
-object at 0x130532c40>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532e20>, <_ast.Constant object at 0x130532310>, <_ast.Constant object at 0x130532c10>, <_ast.Constant \
-object at 0x130532940>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532850>, <_ast.Constant object at 0x130532040>, <_ast.Constant object at 0x130532ca0>, <_ast.Constant \
-object at 0x130532fa0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305324c0>, <_ast.Constant object at 0x130532130>, <_ast.Constant object at 0x130532be0>, <_ast.Constant \
-object at 0x1305328e0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532490>, <_ast.Constant object at 0x130532250>, <_ast.Constant object at 0x130532880>, <_ast.Constant \
-object at 0x130532a60>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1220>, <_ast.Constant object at 0x7fd5009c1fa0>, <_ast.Constant object at 0x7fd5009c1520>, <_\
+ast.Constant object at 0x7fd5009c1100>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c12e0>, <_ast.Constant object at 0x7fd5009c1490>, <_ast.Constant object at 0x7fd5009c1a30>, <_\
+ast.Constant object at 0x7fd5009c1700>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1190>, <_ast.Constant object at 0x7fd5009c1c40>, <_ast.Constant object at 0x7fd5009c18b0>, <_\
+ast.Constant object at 0x7fd5009c1130>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1820>, <_ast.Constant object at 0x7fd5009c11c0>, <_ast.Constant object at 0x7fd5009c1a60>, <_\
+ast.Constant object at 0x7fd5009c1580>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1940>, <_ast.Constant object at 0x7fd5009c15e0>, <_ast.Constant object at 0x7fd5009c1fd0>, <_\
+ast.Constant object at 0x7fd5009c1f10>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1ee0>, <_ast.Constant object at 0x7fd5009c1430>, <_ast.Constant object at 0x7fd5009c13a0>, <_\
+ast.Constant object at 0x7fd5009c1d00>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1b20>, <_ast.Constant object at 0x7fd5009c1d90>, <_ast.Constant object at 0x7fd5009c1760>, <_\
+ast.Constant object at 0x7fd5009c1ca0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009c1550>, <_ast.Constant object at 0x7fd5009c18e0>, <_ast.Constant object at 0x7fd5009c1d60>, <_\
+ast.Constant object at 0x7fd5009c1df0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"epochRange(0)$0" -> "np(0)"	[label=arange];
 	"epochRange(0)$0" -> "1(0)"	[label=arange];
 	"epochRange(0)$0" -> "5(0)"	[label=arange];
@@ -302,10 +304,10 @@ object at 0x130532a60>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge
 	"plt(0)$6" -> "epoch(0)"	[label=xlabel];
 	"epoch(0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "plt(0)$6"	[label=legend];
-	"plt(0)$7" -> "[<_ast.Constant object at 0x12f90a970>, <_ast.Constant object at 0x12f90a8e0>, <_ast.Constant object at 0x12f90aa00>, <_ast.Constant \
-object at 0x12f90a4f0>](0)"	[label=legend];
-	"[<_ast.Constant object at 0x12f90a970>, <_ast.Constant object at 0x12f90a8e0>, <_ast.Constant object at 0x12f90aa00>, <_ast.Constant \
-object at 0x12f90a4f0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"plt(0)$7" -> "[<_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd5008323a0>, <_\
+ast.Constant object at 0x7fd500832d30>](0)"	[label=legend];
+	"[<_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd5008323a0>, <_\
+ast.Constant object at 0x7fd500832d30>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"plt(0)$8" -> "plt(0)$7"	[label=show];
 	"epochRange(0)$1" -> "np(0)"	[label=arange];
 	"epochRange(0)$1" -> "1(0)"	[label=arange];
@@ -326,8 +328,8 @@ object at 0x12f90a4f0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge
 	"plt(0)$13" -> "epoch(0)"	[label=xlabel];
 	"plt(0)$13" -> "plt(0)$12"	[label=xlabel];
 	"plt(0)$14" -> "plt(0)$13"	[label=legend];
-	"plt(0)$14" -> "[<_ast.Constant object at 0x12f89a6d0>, <_ast.Constant object at 0x12f89a910>](0)"	[label=legend];
-	"[<_ast.Constant object at 0x12f89a6d0>, <_ast.Constant object at 0x12f89a910>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
+	"plt(0)$14" -> "[<_ast.Constant object at 0x7fd50085b880>, <_ast.Constant object at 0x7fd50085b0a0>](0)"	[label=legend];
+	"[<_ast.Constant object at 0x7fd50085b880>, <_ast.Constant object at 0x7fd50085b0a0>](0)" -> "do-pretrained-embeddings-give-you-the-extra-edge.ipynb"	[label=appearsIn];
 	"plt(0)$15" -> "plt(0)$14"	[label=show];
 	"f(0)$0" -> "plt(0)$15"	[label=subplots];
 	"f(0)$0" -> "2(0)"	[label=subplots];

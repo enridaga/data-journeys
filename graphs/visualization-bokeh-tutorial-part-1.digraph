@@ -9,11 +9,11 @@ strict digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f989af0>, <_ast.Constant object at 0x12f989c10>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f989af0>, <_ast.Constant object at 0x12f989c10>](0)"	[label=print];
+	"print[13/0]" -> "check_output(0)"	[label=print];
+	"print[13/0]" -> "[<_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048ee20>](0)"	[label=print];
+	"print[13/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048eb20>, <_ast.Constant object at 0x7fd4c048ee20>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"data(0)$0" -> "pd(0)"	[label=read_csv];
 	"data(0)$0" -> "../input/vgsales.csv(0)"	[label=read_csv];
 	"../input/vgsales.csv(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
@@ -76,59 +76,43 @@ strict digraph "" {
 	"pan,box_zoom(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"plot(0)$1" -> "plot(0)$0"	[label=circle];
 	"my_first_bokeh_plot.html(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"output_file[0]" -> "my_first_bokeh_plot.html(0)"	[label=output_file];
-	"show[0]" -> "plot(0)$1"	[label=show];
-	"show[0]" -> "plot(0)$3"	[label=show];
-	"show[0]" -> "plot(0)$5"	[label=show];
-	"show[0]" -> "plot(0)$7"	[label=show];
-	"show[0]" -> "plot(0)$9"	[label=show];
-	"show[0]" -> "plot(0)$11"	[label=show];
-	"show[0]" -> "plot(0)$12"	[label=show];
-	"show[0]" -> "layout3(0)$0"	[label=show];
-	"show[0]" -> "layout(0)$0"	[label=show];
-	"show[0]" -> "layout(0)$1"	[label=show];
-	"show[0]" -> "tabs(0)$0"	[label=show];
-	"show[0]" -> "layout4(0)$0"	[label=show];
-	"plot(0)$3" -> "plot(0)$2"	[label=cross];
-	"plot(0)$5" -> "plot(0)$4"	[label=circle];
-	"plot(0)$7" -> "plot(0)$6"	[label=circle];
-	"plot(0)$9" -> "plot(0)$8"	[label=circle];
-	"plot(0)$11" -> "plot(0)$10"	[label=circle];
-	"plot(0)$12" -> "plot(0)$11"	[label=circle];
-	"layout3(0)$0" -> "layout1(0)$0"	[label=column];
-	"layout3(0)$0" -> "layout2(0)$0"	[label=column];
-	"layout(0)$0" -> "column(0)"	[label=row];
-	"layout(0)$0" -> "p1(0)$0"	[label=row];
-	"layout(0)$0" -> "p2(0)$0"	[label=row];
-	"layout(0)$0" -> "p3(0)$0"	[label=row];
-	"layout(0)$1" -> "[<_ast.List object at 0x130522850>, <_ast.List object at 0x130522550>](0)"	[label=gridplot];
-	"layout(0)$1" -> "above(0)"	[label=gridplot];
-	"tabs(0)$0" -> "[<_ast.Name object at 0x130522310>, <_ast.Name object at 0x1305221f0>](0)"	[label=Tabs];
-	"layout4(0)$0" -> "p1(0)$0"	[label=column];
-	"layout4(0)$0" -> "p2(0)$2"	[label=column];
+	"output_file[37/0]" -> "my_first_bokeh_plot.html(0)"	[label=output_file];
+	"show[38/0]" -> "plot(0)$1"	[label=show];
 	"plot(0)$2" -> "plot(0)$1"	[label=diamond];
+	"plot(0)$3" -> "plot(0)$2"	[label=cross];
+	"show[44/0]" -> "plot(0)$3"	[label=show];
 	"plot(0)$4" -> "plot(0)$3"	[label=line];
+	"plot(0)$5" -> "plot(0)$4"	[label=circle];
+	"show[49/0]" -> "plot(0)$5"	[label=show];
 	"plot(0)$6" -> "plot(0)$5"	[label=patches];
 	"source(0)$0" -> "data(0)$5"	[label=ColumnDataSource];
+	"plot(0)$7" -> "plot(0)$6"	[label=circle];
+	"show[60/0]" -> "plot(0)$7"	[label=show];
 	"box_select,lasso_select(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"plot(0)$8" -> "box_select,lasso_select(0)"	[label=figure];
-	"[<_ast.Tuple object at 0x12f8f50a0>, <_ast.Tuple object at 0x12f8f5100>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"hover(0)$0" -> "[<_ast.Tuple object at 0x12f8f50a0>, <_ast.Tuple object at 0x12f8f5100>](0)"	[label=HoverTool];
+	"plot(0)$9" -> "plot(0)$8"	[label=circle];
+	"show[71/0]" -> "plot(0)$9"	[label=show];
+	"[<_ast.Tuple object at 0x7fd50085b340>, <_ast.Tuple object at 0x7fd50085b430>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"hover(0)$0" -> "[<_ast.Tuple object at 0x7fd50085b340>, <_ast.Tuple object at 0x7fd50085b430>](0)"	[label=HoverTool];
 	"hover(0)$0" -> "hline(0)"	[label=HoverTool];
 	"hline(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d60>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"plot(0)$10" -> "[<_ast.Name object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5d60>](0)"	[label=figure];
+	"[<_ast.Name object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b490>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"plot(0)$10" -> "[<_ast.Name object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b490>](0)"	[label=figure];
+	"plot(0)$11" -> "plot(0)$10"	[label=circle];
+	"show[76/0]" -> "plot(0)$11"	[label=show];
 	"factors(0)$0" -> "data(0)$5"	[label=list];
-	"[<_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade160>, <_ast.Constant \
-object at 0x12fade550>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fade790>, <_\
-ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade460>, <_ast.Constant object at 0x12fadeb80>, <_ast.Constant \
-object at 0x12fade490>, <_ast.Constant object at 0x12fadeca0>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade160>, <_ast.Constant \
-object at 0x12fade550>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fade790>, <_\
-ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade460>, <_ast.Constant object at 0x12fadeb80>, <_ast.Constant \
-object at 0x12fade490>, <_ast.Constant object at 0x12fadeca0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085ba60>, <_ast.Constant object at 0x7fd50085b9a0>, <_\
+ast.Constant object at 0x7fd4c096d880>, <_ast.Constant object at 0x7fd4c096da30>, <_ast.Constant object at 0x7fd4c096dbb0>, <_ast.Constant \
+object at 0x7fd4c096dc70>, <_ast.Constant object at 0x7fd4c096db50>, <_ast.Constant object at 0x7fd4c096da60>, <_ast.Constant object \
+at 0x7fd4c096d9a0>, <_ast.Constant object at 0x7fd4c096dca0>, <_ast.Constant object at 0x7fd4c096d160>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085ba60>, <_ast.Constant object at 0x7fd50085b9a0>, <_\
+ast.Constant object at 0x7fd4c096d880>, <_ast.Constant object at 0x7fd4c096da30>, <_ast.Constant object at 0x7fd4c096dbb0>, <_ast.Constant \
+object at 0x7fd4c096dc70>, <_ast.Constant object at 0x7fd4c096db50>, <_ast.Constant object at 0x7fd4c096da60>, <_ast.Constant object \
+at 0x7fd4c096d9a0>, <_ast.Constant object at 0x7fd4c096dca0>, <_ast.Constant object at 0x7fd4c096d160>](0)"	[label=assignedFrom];
 	"mapper(0)$0" -> "factors(0)$0"	[label=CategoricalColorMapper];
 	"mapper(0)$0" -> "colors(0)$0"	[label=CategoricalColorMapper];
+	"plot(0)$12" -> "plot(0)$11"	[label=circle];
+	"show[83/0]" -> "plot(0)$12"	[label=show];
 	"p1(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"p1(0)$0" -> "p1(0)"	[label=circle];
 	"p2(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
@@ -141,17 +125,33 @@ object at 0x12fade490>, <_ast.Constant object at 0x12fadeca0>](0)"	[label=assign
 	"layout1(0)$0" -> "p2(0)$0"	[label=row];
 	"layout2(0)$0" -> "p3(0)$0"	[label=row];
 	"layout2(0)$0" -> "p4(0)$0"	[label=row];
-	"[<_ast.List object at 0x130522850>, <_ast.List object at 0x130522550>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"layout3(0)$0" -> "layout1(0)$0"	[label=column];
+	"layout3(0)$0" -> "layout2(0)$0"	[label=column];
+	"show[97/0]" -> "layout3(0)$0"	[label=show];
+	"layout(0)$0" -> "column(0)"	[label=row];
+	"layout(0)$0" -> "p1(0)$0"	[label=row];
+	"layout(0)$0" -> "p2(0)$0"	[label=row];
+	"layout(0)$0" -> "p3(0)$0"	[label=row];
+	"show[101/0]" -> "layout(0)$0"	[label=show];
+	"[<_ast.List object at 0x7fd500890940>, <_ast.List object at 0x7fd500890e50>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"layout(0)$1" -> "[<_ast.List object at 0x7fd500890940>, <_ast.List object at 0x7fd500890e50>](0)"	[label=gridplot];
+	"layout(0)$1" -> "above(0)"	[label=gridplot];
 	"above(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"show[104/0]" -> "layout(0)$1"	[label=show];
 	"tab1(0)$0" -> "p1(0)$0"	[label=Panel];
 	"tab1(0)$0" -> "Global_Sales(0)"	[label=Panel];
 	"Global_Sales(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
 	"tab2(0)$0" -> "p2(0)$0"	[label=Panel];
 	"tab2(0)$0" -> "EU_Sales(0)"	[label=Panel];
 	"EU_Sales(0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130522310>, <_ast.Name object at 0x1305221f0>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500890310>, <_ast.Name object at 0x7fd5008900d0>](0)" -> "visualization-bokeh-tutorial-part-1.ipynb"	[label=appearsIn];
+	"tabs(0)$0" -> "[<_ast.Name object at 0x7fd500890310>, <_ast.Name object at 0x7fd5008900d0>](0)"	[label=Tabs];
+	"show[111/0]" -> "tabs(0)$0"	[label=show];
 	"p2(0)$1" -> "p1(0)$0"	[label=assignedFrom];
 	"p2(0)$1" -> "p2(0)$0"	[label=assignedFrom];
 	"p2(0)$2" -> "p1(0)$0"	[label=assignedFrom];
 	"p2(0)$2" -> "p2(0)$1"	[label=assignedFrom];
+	"layout4(0)$0" -> "p1(0)$0"	[label=column];
+	"layout4(0)$0" -> "p2(0)$2"	[label=column];
+	"show[117/0]" -> "layout4(0)$0"	[label=show];
 }

@@ -33,162 +33,37 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "grid(1)"	[label=print];
-	"print[0]" -> "best_score(1)$0"	[label=print];
-	"print[0]" -> "corr_abs(2)$0"	[label=print];
-	"print[0]" -> "df_train(0)$0"	[label=print];
-	"print[0]" -> "df_test(0)$0"	[label=print];
-	"print[0]" -> "*(0)"	[label=print];
-	"print[0]" -> "Skewness: \%f(0)"	[label=print];
-	"print[0]" -> "Kurtosis: \%f(0)"	[label=print];
-	"print[0]" -> "df_train(0)$4"	[label=print];
-	"print[0]" -> "Number of Numerical features: (0)"	[label=print];
-	"print[0]" -> "Number of Categorical features: (0)"	[label=print];
-	"print[0]" -> "{:15}(0)"	[label=print];
-	"print[0]" -> "df_train(0)$11"	[label=print];
-	"print[0]" -> "ser_corr(0)$0"	[label=print];
-	"print[0]" -> "cols_abv_corr_limit(0)$0"	[label=print];
-	"print[0]" -> "cols_bel_corr_limit(0)$0"	[label=print];
-	"print[0]" -> "List of numerical features with r above min_val_corr :(0)"	[label=print];
-	"print[0]" -> "List of numerical features with r below min_val_corr :(0)"	[label=print];
-	"print[0]" -> "#(0)"	[label=print];
-	"print[0]" -> "g(0)$0"	[label=print];
-	"print[0]" -> "ser_corr_1(0)$0"	[label=print];
-	"print[0]" -> "ser_corr_2(0)$0"	[label=print];
-	"print[0]" -> "corr_abs(0)$1"	[label=print];
-	"print[0]" -> "cols(0)$3"	[label=print];
-	"print[0]" -> "feats(0)$1"	[label=print];
-	"grid(1)" -> "get_best_score[0]"	[label=_argToVar];
-	"best_score(1)$0" -> "grid(1)"	[label=sqrt];
-	"best_score(1)$0" -> "np(1)"	[label=sqrt];
-	"corr_abs(2)$0" -> "corr(2)$0"	[label=abs];
-	"df_train(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"df_train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
-	"df_test(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"df_test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"*(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"Skewness: \%f(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"Kurtosis: \%f(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"df_train(0)$4" -> "df_train(0)$3"	[label=drop];
-	"df_train(0)$4" -> "SalePrice(0)"	[label=drop];
-	"Number of Numerical features: (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"Number of Categorical features: (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"{:15}(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"df_train(0)$11" -> "df_train(0)$11"	[label=drop];
-	"df_train(0)$11" -> "SalePrice_Log(0)"	[label=drop];
-	"df_train(0)$11" -> "GrLivArea_Log(0)"	[label=drop];
-	"df_train(0)$11" -> "df_train(0)$10"	[label=drop];
-	"df_train(0)$11" -> "8.3(0)"	[label=drop];
-	"df_train(0)$11" -> "12.5(0)"	[label=drop];
-	"ser_corr(0)$0" -> "target(0)$0"	[label=assignedFrom];
-	"ser_corr(0)$0" -> "corr_abs(0)$0"	[label=assignedFrom];
-	"ser_corr(0)$0" -> "nr_num_cols(0)$0"	[label=assignedFrom];
-	"cols_abv_corr_limit(0)$0" -> "ser_corr(0)$0"	[label=list];
-	"cols_abv_corr_limit(0)$0" -> "min_val_corr(0)$0"	[label=list];
-	"cols_bel_corr_limit(0)$0" -> "ser_corr(0)$0"	[label=list];
-	"cols_bel_corr_limit(0)$0" -> "min_val_corr(0)$0"	[label=list];
-	"List of numerical features with r above min_val_corr :(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"List of numerical features with r below min_val_corr :(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"#(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"g(0)$0" -> "df_train(0)$11"	[label=mean];
-	"g(0)$0" -> "catg(0)"	[label=mean];
-	"g(0)$0" -> "target(0)$0"	[label=mean];
-	"ser_corr_1(0)$0" -> "target(0)$0"	[label=assignedFrom];
-	"ser_corr_1(0)$0" -> "corr_abs_1(0)$0"	[label=assignedFrom];
-	"ser_corr_1(0)$0" -> "nr_all_cols(0)$0"	[label=assignedFrom];
-	"ser_corr_2(0)$0" -> "target(0)$0"	[label=assignedFrom];
-	"ser_corr_2(0)$0" -> "corr_abs_2(0)$0"	[label=assignedFrom];
-	"ser_corr_2(0)$0" -> "nr_all_cols(0)$1"	[label=assignedFrom];
-	"corr_abs(0)$1" -> "corr(0)$1"	[label=abs];
-	"cols(0)$3" -> "cols(0)$2"	[label=list];
-	"feats(0)$1" -> "SalePrice_Log(0)"	[label=remove];
-	"feats(0)$1" -> "feats(0)$0"	[label=remove];
-	"[<_ast.Constant object at 0x12f85e9a0>, <_ast.Constant object at 0x12f85eaf0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f85e9a0>, <_ast.Constant object at 0x12f85eaf0>](0)"	[label=print];
-	"print[1]" -> "nr_c(2)"	[label=print];
-	"print[1]" -> "50(0)"	[label=print];
-	"print[1]" -> "df_train(0)$2"	[label=print];
-	"print[1]" -> "df_train(0)$3"	[label=print];
-	"print[1]" -> "numerical_feats(0)$0"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "categorical_feats(0)$0"	[label=print];
-	"print[1]" -> "100(0)"	[label=print];
-	"print[1]" -> "col(0)"	[label=print];
-	"print[1]" -> "df_train(0)$9"	[label=print];
-	"print[1]" -> "30(0)"	[label=print];
-	"print[1]" -> "catg(0)"	[label=print];
-	"print[1]" -> "nr_all_cols(0)$2"	[label=print];
-	"nr_c(2)" -> "print_cols_large_corr[1]"	[label=_argToVar];
-	"50(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"df_train(0)$2" -> "df_train(0)$1"	[label=describe];
-	"df_train(0)$3" -> "np(0)"	[label=log];
-	"df_train(0)$3" -> "df_train(0)$2"	[label=log];
-	"df_train(0)$3" -> "df_train(0)$3"	[label=log];
-	"df_train(0)$3" -> "SalePrice(0)"	[label=log];
-	"numerical_feats(0)$0" -> "df_train(0)$4"	[label=assignedFrom];
-	"numerical_feats(0)$0" -> "object(0)"	[label=assignedFrom];
-	"len(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"categorical_feats(0)$0" -> "df_train(0)$4"	[label=assignedFrom];
-	"categorical_feats(0)$0" -> "object(0)"	[label=assignedFrom];
-	"100(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"col(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"col(0)" -> "numerical_feats(0)$0"	[label=iteratorOf];
-	"col(0)" -> "cols_fillna(0)$0"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fc4ea90>, <_ast.Constant object at 0x12fc4eac0>, <_ast.Constant object at 0x12fc4eaf0>, <_ast.Constant \
-object at 0x12fc4eb20>](0)"	[label=iteratorOf];
-	"df_train(0)$9" -> "df_train(0)$8"	[label=sum];
-	"30(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"catg(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"catg(0)" -> "categorical_feats(0)$0"	[label=iteratorOf];
-	"catg(0)" -> "list(0)"	[label=iteratorOf];
-	"catg(0)" -> "catg_list(0)$1"	[label=iteratorOf];
-	"nr_all_cols(0)$2" -> "df_train(0)$12"	[label=len];
+	"print[17/0]" -> "check_output(0)"	[label=print];
+	"print[17/0]" -> "[<_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009999a0>](0)"	[label=print];
+	"print[17/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009999a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"print[2]" -> "numerical_feats(0)$0"	[label=print];
-	"print[2]" -> "categorical_feats(0)$0"	[label=print];
-	"print[2]" -> "utf8(0)"	[label=print];
-	"print[2]" -> "SalePrice_Log(0)"	[label=print];
-	"print[2]" -> "target(0)$0"	[label=print];
-	"print[2]" -> "targ(2)"	[label=print];
-	"print[2]" -> "SalePrice(0)"	[label=print];
-	"print[2]" -> "Skewness: {:05.2f}(0)"	[label=print];
-	"print[2]" -> "GrLivArea(0)"	[label=print];
-	"print[2]" -> "LotArea(0)"	[label=print];
-	"print[2]" -> "GrLivArea_Log(0)"	[label=print];
-	"print[2]" -> "LotArea_Log(0)"	[label=print];
-	"SalePrice_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"target(0)$0" -> "SalePrice_Log(0)"	[label=assignedFrom];
-	"targ(2)" -> "print_cols_large_corr[2]"	[label=_argToVar];
-	"SalePrice(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"Skewness: {:05.2f}(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"GrLivArea(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"LotArea(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"GrLivArea_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"LotArea_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"5(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"nr_cv(0)$0" -> "5(0)"	[label=assignedFrom];
 	"1(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"use_logvals(0)$0" -> "1(0)"	[label=assignedFrom];
+	"SalePrice_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"target(0)$0" -> "SalePrice_Log(0)"	[label=assignedFrom];
 	"0.4(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"min_val_corr(0)$0" -> "0.4(0)"	[label=assignedFrom];
 	"drop_similar(0)$0" -> "1(0)"	[label=assignedFrom];
+	"grid(1)" -> "get_best_score[0]"	[label=_argToVar];
+	"best_score(1)$0" -> "grid(1)"	[label=sqrt];
+	"best_score(1)$0" -> "np(1)"	[label=sqrt];
+	"print[36/4]" -> "best_score(1)$0"	[label=print];
+	"print[37/4]" -> "grid(1)"	[label=print];
+	"print[38/4]" -> "grid(1)"	[label=print];
 	"df(2)" -> "print_cols_large_corr[0]"	[label=_argToVar];
+	"nr_c(2)" -> "print_cols_large_corr[1]"	[label=_argToVar];
+	"targ(2)" -> "print_cols_large_corr[2]"	[label=_argToVar];
 	"corr(2)$0" -> "df(2)"	[label=corr];
-	"print[3]" -> "df_train(0)$9"	[label=print];
-	"print[3]" -> "target(0)$0"	[label=print];
-	"print[3]" -> "targ(2)"	[label=print];
+	"corr_abs(2)$0" -> "corr(2)$0"	[label=abs];
+	"print[44/4]" -> "nr_c(2)"	[label=print];
+	"print[44/4]" -> "targ(2)"	[label=print];
+	"print[44/4]" -> "corr_abs(2)$0"	[label=print];
 	"df(3)" -> "plot_corr_matrix[0]"	[label=_argToVar];
-	"plot_corr_matrix[0]" -> "df_train(0)$11"	[label=plot_corr_matrix];
-	"plot_corr_matrix[0]" -> "df_train(0)$12"	[label=plot_corr_matrix];
-	"df_train(0)$12" -> "df_train(0)$11"	[label=head];
 	"nr_c(3)" -> "plot_corr_matrix[1]"	[label=_argToVar];
-	"plot_corr_matrix[1]" -> "nr_feats(0)$0"	[label=plot_corr_matrix];
-	"plot_corr_matrix[1]" -> "nr_feats(0)$1"	[label=plot_corr_matrix];
-	"nr_feats(0)$0" -> "cols_abv_corr_limit(0)$0"	[label=len];
-	"nr_feats(0)$1" -> "df_train(0)$12"	[label=len];
 	"targ(3)" -> "plot_corr_matrix[2]"	[label=_argToVar];
-	"plot_corr_matrix[2]" -> "target(0)$0"	[label=plot_corr_matrix];
 	"corr(3)$0" -> "df(3)"	[label=corr];
 	"corr_abs(3)$0" -> "corr(3)$0"	[label=abs];
 	"cols(3)$0" -> "nr_c(3)"	[label=assignedFrom];
@@ -202,18 +77,74 @@ object at 0x12fc4eb20>](0)"	[label=iteratorOf];
 	"sns(3)$1" -> "cm(3)$0"	[label=heatmap];
 	"sns(3)$1" -> "sns(3)$0"	[label=heatmap];
 	"plt(3)$1" -> "plt(3)$0"	[label=show];
+	"df_train(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"df_train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"df_test(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"df_test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[61/0]" -> "df_train(0)$0"	[label=print];
+	"*(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[62/0]" -> "*(0)"	[label=print];
+	"print[62/0]" -> "50(0)"	[label=print];
+	"50(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[63/0]" -> "df_test(0)$0"	[label=print];
+	"print[64/0]" -> "df_train(0)$0"	[label=print];
+	"print[65/0]" -> "*(0)"	[label=print];
+	"print[65/0]" -> "50(0)"	[label=print];
+	"print[66/0]" -> "df_test(0)$0"	[label=print];
 	"df_train(0)$1" -> "df_train(0)$0"	[label=head];
+	"df_train(0)$2" -> "df_train(0)$1"	[label=describe];
 	"df_test(0)$1" -> "df_test(0)$0"	[label=head];
 	"df_test(0)$2" -> "df_test(0)$1"	[label=describe];
 	"sns(0)$1" -> "sns(0)$0"	[label=distplot];
 	"sns(0)$1" -> "df_train(0)$2"	[label=distplot];
 	"sns(0)$1" -> "SalePrice(0)"	[label=distplot];
-	"sns(0)$2" -> "df_train(0)$3"	[label=distplot];
+	"SalePrice(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"Skewness: \%f(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[73/0]" -> "df_train(0)$2"	[label=print];
+	"print[73/0]" -> "SalePrice(0)"	[label=print];
+	"print[73/0]" -> "Skewness: \%f(0)"	[label=print];
+	"Kurtosis: \%f(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[74/0]" -> "df_train(0)$2"	[label=print];
+	"print[74/0]" -> "SalePrice(0)"	[label=print];
+	"print[74/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"df_train(0)$3" -> "np(0)"	[label=log];
+	"df_train(0)$3" -> "df_train(0)$2"	[label=log];
+	"df_train(0)$3" -> "SalePrice(0)"	[label=log];
+	"df_train(0)$3" -> "df_train(0)$3"	[label=log];
 	"sns(0)$2" -> "SalePrice_Log(0)"	[label=distplot];
 	"sns(0)$2" -> "sns(0)$1"	[label=distplot];
+	"sns(0)$2" -> "df_train(0)$3"	[label=distplot];
+	"print[79/0]" -> "SalePrice_Log(0)"	[label=print];
+	"print[79/0]" -> "Skewness: \%f(0)"	[label=print];
+	"print[79/0]" -> "df_train(0)$3"	[label=print];
+	"print[80/0]" -> "SalePrice_Log(0)"	[label=print];
+	"print[80/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"print[80/0]" -> "df_train(0)$3"	[label=print];
+	"df_train(0)$4" -> "SalePrice(0)"	[label=drop];
+	"df_train(0)$4" -> "df_train(0)$3"	[label=drop];
+	"numerical_feats(0)$0" -> "df_train(0)$4"	[label=assignedFrom];
+	"numerical_feats(0)$0" -> "object(0)"	[label=assignedFrom];
 	"object(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"Number of Numerical features: (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[84/0]" -> "numerical_feats(0)$0"	[label=print];
+	"print[84/0]" -> "Number of Numerical features: (0)"	[label=print];
+	"print[84/0]" -> "len(0)"	[label=print];
+	"len(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"categorical_feats(0)$0" -> "df_train(0)$4"	[label=assignedFrom];
+	"categorical_feats(0)$0" -> "object(0)"	[label=assignedFrom];
+	"Number of Categorical features: (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[87/0]" -> "len(0)"	[label=print];
+	"print[87/0]" -> "categorical_feats(0)$0"	[label=print];
+	"print[87/0]" -> "Number of Categorical features: (0)"	[label=print];
+	"print[88/0]" -> "df_train(0)$4"	[label=print];
+	"print[88/0]" -> "numerical_feats(0)$0"	[label=print];
+	"print[89/0]" -> "*(0)"	[label=print];
+	"print[89/0]" -> "100(0)"	[label=print];
+	"100(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[90/0]" -> "df_train(0)$4"	[label=print];
+	"print[90/0]" -> "categorical_feats(0)$0"	[label=print];
 	"df_train(0)$5" -> "df_train(0)$4"	[label=head];
 	"df_train(0)$6" -> "df_train(0)$5"	[label=head];
 	"total(0)$0" -> "df_train(0)$6"	[label=sort_values];
@@ -223,29 +154,36 @@ object at 0x12fc4eb20>](0)"	[label=iteratorOf];
 	"percent(0)$0" -> "False(0)"	[label=sort_values];
 	"missing_data(0)$0" -> "pd(0)$0"	[label=concat];
 	"missing_data(0)$0" -> "1(0)"	[label=concat];
-	"missing_data(0)$0" -> "[<_ast.Name object at 0x12f889250>, <_ast.Name object at 0x12f889280>](0)"	[label=concat];
-	"missing_data(0)$0" -> "[<_ast.Constant object at 0x12f8893d0>, <_ast.Constant object at 0x12f889400>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f889250>, <_ast.Name object at 0x12f889280>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8893d0>, <_ast.Constant object at 0x12f889400>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"missing_data(0)$0" -> "[<_ast.Name object at 0x7fd5007f0820>, <_ast.Name object at 0x7fd5007f0cd0>](0)"	[label=concat];
+	"missing_data(0)$0" -> "[<_ast.Constant object at 0x7fd5008212e0>, <_ast.Constant object at 0x7fd500821160>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd5007f0820>, <_ast.Name object at 0x7fd5007f0cd0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008212e0>, <_ast.Constant object at 0x7fd500821160>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"missing_data(0)$1" -> "missing_data(0)$0"	[label=head];
 	"missing_data(0)$1" -> "20(0)"	[label=head];
 	"20(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8895e0>, <_ast.Constant object at 0x12f889610>, <_ast.Constant object at 0x12f889640>, <_ast.Constant \
-object at 0x12f889670>, <_ast.Constant object at 0x12f8896a0>, <_ast.Constant object at 0x12f8896d0>, <_ast.Constant object at 0x12f889700>, <_\
-ast.Constant object at 0x12f889730>, <_ast.Constant object at 0x12f889760>, <_ast.Constant object at 0x12f889790>, <_ast.Constant \
-object at 0x12f8897c0>, <_ast.Constant object at 0x12f8897f0>, <_ast.Constant object at 0x12f889820>, <_ast.Constant object at 0x12f889850>, <_\
-ast.Constant object at 0x12f889880>, <_ast.Constant object at 0x12f8898b0>, <_ast.Constant object at 0x12f8898e0>, <_ast.Constant \
-object at 0x12f889910>, <_ast.Constant object at 0x12f889940>, <_ast.Constant object at 0x12f889970>, <_ast.Constant object at 0x12f8899a0>, <_\
-ast.Constant object at 0x12f8899d0>, <_ast.Constant object at 0x12f889a00>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"cols_fillna(0)$0" -> "[<_ast.Constant object at 0x12f8895e0>, <_ast.Constant object at 0x12f889610>, <_ast.Constant object at 0x12f889640>, <_ast.Constant \
-object at 0x12f889670>, <_ast.Constant object at 0x12f8896a0>, <_ast.Constant object at 0x12f8896d0>, <_ast.Constant object at 0x12f889700>, <_\
-ast.Constant object at 0x12f889730>, <_ast.Constant object at 0x12f889760>, <_ast.Constant object at 0x12f889790>, <_ast.Constant \
-object at 0x12f8897c0>, <_ast.Constant object at 0x12f8897f0>, <_ast.Constant object at 0x12f889820>, <_ast.Constant object at 0x12f889850>, <_\
-ast.Constant object at 0x12f889880>, <_ast.Constant object at 0x12f8898b0>, <_ast.Constant object at 0x12f8898e0>, <_ast.Constant \
-object at 0x12f889910>, <_ast.Constant object at 0x12f889940>, <_ast.Constant object at 0x12f889970>, <_ast.Constant object at 0x12f8899a0>, <_\
-ast.Constant object at 0x12f8899d0>, <_ast.Constant object at 0x12f889a00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4ea90>, <_ast.Constant object at 0x12fc4eac0>, <_ast.Constant object at 0x12fc4eaf0>, <_ast.Constant \
-object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500821100>, <_ast.Constant object at 0x7fd500821490>, <_ast.Constant object at 0x7fd5008214f0>, <_\
+ast.Constant object at 0x7fd5008213d0>, <_ast.Constant object at 0x7fd5008213a0>, <_ast.Constant object at 0x7fd500821280>, <_ast.Constant \
+object at 0x7fd5008216d0>, <_ast.Constant object at 0x7fd500821760>, <_ast.Constant object at 0x7fd500821790>, <_ast.Constant object \
+at 0x7fd500821c40>, <_ast.Constant object at 0x7fd500821ac0>, <_ast.Constant object at 0x7fd500821be0>, <_ast.Constant object at \
+0x7fd500821580>, <_ast.Constant object at 0x7fd500821cd0>, <_ast.Constant object at 0x7fd500821c10>, <_ast.Constant object at 0x7fd500821a60>, <_\
+ast.Constant object at 0x7fd500821970>, <_ast.Constant object at 0x7fd500821940>, <_ast.Constant object at 0x7fd500821400>, <_ast.Constant \
+object at 0x7fd500821430>, <_ast.Constant object at 0x7fd500821730>, <_ast.Constant object at 0x7fd5008219a0>, <_ast.Constant object \
+at 0x7fd5008217f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"cols_fillna(0)$0" -> "[<_ast.Constant object at 0x7fd500821100>, <_ast.Constant object at 0x7fd500821490>, <_ast.Constant object at 0x7fd5008214f0>, <_\
+ast.Constant object at 0x7fd5008213d0>, <_ast.Constant object at 0x7fd5008213a0>, <_ast.Constant object at 0x7fd500821280>, <_ast.Constant \
+object at 0x7fd5008216d0>, <_ast.Constant object at 0x7fd500821760>, <_ast.Constant object at 0x7fd500821790>, <_ast.Constant object \
+at 0x7fd500821c40>, <_ast.Constant object at 0x7fd500821ac0>, <_ast.Constant object at 0x7fd500821be0>, <_ast.Constant object at \
+0x7fd500821580>, <_ast.Constant object at 0x7fd500821cd0>, <_ast.Constant object at 0x7fd500821c10>, <_ast.Constant object at 0x7fd500821a60>, <_\
+ast.Constant object at 0x7fd500821970>, <_ast.Constant object at 0x7fd500821940>, <_ast.Constant object at 0x7fd500821400>, <_ast.Constant \
+object at 0x7fd500821430>, <_ast.Constant object at 0x7fd500821730>, <_ast.Constant object at 0x7fd5008219a0>, <_ast.Constant object \
+at 0x7fd5008217f0>](0)"	[label=assignedFrom];
+	"col(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"col(0)" -> "numerical_feats(0)$0"	[label=iteratorOf];
+	"col(0)" -> "cols_fillna(0)$0"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd5008388b0>, <_ast.Constant object at 0x7fd500838910>, <_ast.Constant object at 0x7fd500838970>, <_\
+ast.Constant object at 0x7fd5008389a0>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd5008388b0>, <_ast.Constant object at 0x7fd500838910>, <_ast.Constant object at 0x7fd500838970>, <_\
+ast.Constant object at 0x7fd5008389a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"df_train(0)$7" -> "df_train(0)$6"	[label=fillna];
 	"df_train(0)$7" -> "None(0)"	[label=fillna];
 	"None(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
@@ -257,10 +195,10 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"percent(0)$1" -> "df_train(0)$7"	[label=sort_values];
 	"missing_data(0)$2" -> "pd(0)$0"	[label=concat];
 	"missing_data(0)$2" -> "1(0)"	[label=concat];
-	"missing_data(0)$2" -> "[<_ast.Name object at 0x12f8996a0>, <_ast.Name object at 0x12f8996d0>](0)"	[label=concat];
-	"missing_data(0)$2" -> "[<_ast.Constant object at 0x12f899820>, <_ast.Constant object at 0x12f899850>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8996a0>, <_ast.Name object at 0x12f8996d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f899820>, <_ast.Constant object at 0x12f899850>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"missing_data(0)$2" -> "[<_ast.Name object at 0x7fd4902ab850>, <_ast.Name object at 0x7fd4902abeb0>](0)"	[label=concat];
+	"missing_data(0)$2" -> "[<_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902ab970>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4902ab850>, <_ast.Name object at 0x7fd4902abeb0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902ab970>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"missing_data(0)$3" -> "5(0)"	[label=head];
 	"missing_data(0)$3" -> "missing_data(0)$2"	[label=head];
 	"df_train(0)$8" -> "df_train(0)$7"	[label=fillna];
@@ -273,29 +211,47 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"percent(0)$2" -> "df_train(0)$8"	[label=sort_values];
 	"missing_data(0)$4" -> "pd(0)$0"	[label=concat];
 	"missing_data(0)$4" -> "1(0)"	[label=concat];
-	"missing_data(0)$4" -> "[<_ast.Name object at 0x12f8a44c0>, <_ast.Name object at 0x12f8a44f0>](0)"	[label=concat];
-	"missing_data(0)$4" -> "[<_ast.Constant object at 0x12f8a4640>, <_ast.Constant object at 0x12f8a4670>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8a44c0>, <_ast.Name object at 0x12f8a44f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a4640>, <_ast.Constant object at 0x12f8a4670>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"missing_data(0)$4" -> "[<_ast.Name object at 0x7fd50082e2b0>, <_ast.Name object at 0x7fd50082e2e0>](0)"	[label=concat];
+	"missing_data(0)$4" -> "[<_ast.Constant object at 0x7fd50082e430>, <_ast.Constant object at 0x7fd50082e460>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50082e2b0>, <_ast.Name object at 0x7fd50082e2e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082e430>, <_ast.Constant object at 0x7fd50082e460>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"missing_data(0)$5" -> "5(0)"	[label=head];
 	"missing_data(0)$5" -> "missing_data(0)$4"	[label=head];
+	"df_train(0)$9" -> "df_train(0)$8"	[label=sum];
 	"df_test(0)$5" -> "df_test(0)$4"	[label=sum];
-	"print[4]" -> "col(0)"	[label=print];
+	"{:15}(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[123/4]" -> "col(0)"	[label=print];
+	"print[123/4]" -> "df_train(0)$9"	[label=print];
+	"print[123/4]" -> "{:15}(0)"	[label=print];
+	"print[123/4]" -> "Skewness: {:05.2f}(0)"	[label=print];
+	"print[123/4]" -> "   (0)"	[label=print];
+	"print[123/4]" -> "Kurtosis: {:06.2f}(0)"	[label=print];
+	"Skewness: {:05.2f}(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"   (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"print[5]" -> "   (0)"	[label=print];
 	"Kurtosis: {:06.2f}(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"print[6]" -> "Kurtosis: {:06.2f}(0)"	[label=print];
-	"print[7]" -> "df_train(0)$9"	[label=print];
-	"print[8]" -> "col(0)"	[label=print];
+	"sns(0)$3" -> "sns(0)$2"	[label=distplot];
 	"sns(0)$3" -> "df_train(0)$9"	[label=distplot];
 	"sns(0)$3" -> "GrLivArea(0)"	[label=distplot];
-	"sns(0)$3" -> "sns(0)$2"	[label=distplot];
+	"GrLivArea(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[130/0]" -> "Skewness: \%f(0)"	[label=print];
+	"print[130/0]" -> "df_train(0)$9"	[label=print];
+	"print[130/0]" -> "GrLivArea(0)"	[label=print];
+	"print[131/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"print[131/0]" -> "df_train(0)$9"	[label=print];
+	"print[131/0]" -> "GrLivArea(0)"	[label=print];
 	"sns(0)$4" -> "df_train(0)$9"	[label=distplot];
-	"sns(0)$4" -> "LotArea(0)"	[label=distplot];
 	"sns(0)$4" -> "sns(0)$3"	[label=distplot];
-	"[<_ast.Name object at 0x12f8a6fd0>, <_ast.Name object at 0x12f8a6eb0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"sns(0)$4" -> "LotArea(0)"	[label=distplot];
+	"LotArea(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[134/0]" -> "Skewness: \%f(0)"	[label=print];
+	"print[134/0]" -> "df_train(0)$9"	[label=print];
+	"print[134/0]" -> "LotArea(0)"	[label=print];
+	"print[135/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"print[135/0]" -> "df_train(0)$9"	[label=print];
+	"print[135/0]" -> "LotArea(0)"	[label=print];
+	"[<_ast.Name object at 0x7fd500827d60>, <_ast.Name object at 0x7fd500827d90>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"df(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12f8a6fd0>, <_ast.Name object at 0x12f8a6eb0>](0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd500827d60>, <_ast.Name object at 0x7fd500827d90>](0)"	[label=iteratorOf];
 	"df(0)$0" -> "np(0)"	[label=log];
 	"df(0)$0" -> "GrLivArea(0)"	[label=log];
 	"df(0)$0" -> "df(0)"	[label=log];
@@ -308,16 +264,30 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"df(0)$2" -> "df(0)$2"	[label=log];
 	"df(0)$3" -> "LotArea(0)"	[label=drop];
 	"df(0)$3" -> "df(0)$2"	[label=drop];
-	"df(0)$3" -> "[<_ast.Name object at 0x12f893bb0>, <_ast.Name object at 0x12f893be0>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12f893bb0>, <_ast.Name object at 0x12f893be0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"numerical_feats(0)$1" -> "df_train(0)$9"	[label=assignedFrom];
+	"df(0)$3" -> "[<_ast.Name object at 0x7fd500860a60>, <_ast.Name object at 0x7fd500860a90>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd500860a60>, <_ast.Name object at 0x7fd500860a90>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"numerical_feats(0)$1" -> "object(0)"	[label=assignedFrom];
+	"numerical_feats(0)$1" -> "df_train(0)$9"	[label=assignedFrom];
 	"sns(0)$5" -> "df_train(0)$9"	[label=distplot];
-	"sns(0)$5" -> "GrLivArea_Log(0)"	[label=distplot];
 	"sns(0)$5" -> "sns(0)$4"	[label=distplot];
+	"sns(0)$5" -> "GrLivArea_Log(0)"	[label=distplot];
+	"GrLivArea_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[148/0]" -> "Skewness: \%f(0)"	[label=print];
+	"print[148/0]" -> "df_train(0)$9"	[label=print];
+	"print[148/0]" -> "GrLivArea_Log(0)"	[label=print];
+	"print[149/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"print[149/0]" -> "df_train(0)$9"	[label=print];
+	"print[149/0]" -> "GrLivArea_Log(0)"	[label=print];
 	"sns(0)$6" -> "df_train(0)$9"	[label=distplot];
-	"sns(0)$6" -> "LotArea_Log(0)"	[label=distplot];
 	"sns(0)$6" -> "sns(0)$5"	[label=distplot];
+	"sns(0)$6" -> "LotArea_Log(0)"	[label=distplot];
+	"LotArea_Log(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[152/0]" -> "Skewness: \%f(0)"	[label=print];
+	"print[152/0]" -> "df_train(0)$9"	[label=print];
+	"print[152/0]" -> "LotArea_Log(0)"	[label=print];
+	"print[153/0]" -> "Kurtosis: \%f(0)"	[label=print];
+	"print[153/0]" -> "df_train(0)$9"	[label=print];
+	"print[153/0]" -> "LotArea_Log(0)"	[label=print];
 	"12(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"nr_rows(0)$0" -> "12(0)"	[label=assignedFrom];
 	"3(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
@@ -334,8 +304,8 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"axs(0)$0" -> "nr_cols(0)$0"	[label=subplots];
 	"axs(0)$0" -> "3.5(0)"	[label=subplots];
 	"li_num_feats(0)$0" -> "numerical_feats(0)$1"	[label=list];
-	"[<_ast.Constant object at 0x12f880640>, <_ast.Constant object at 0x12f895040>, <_ast.Constant object at 0x12f895070>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"li_not_plot(0)$0" -> "[<_ast.Constant object at 0x12f880640>, <_ast.Constant object at 0x12f895040>, <_ast.Constant object at 0x12f895070>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500820e80>, <_ast.Constant object at 0x7fd500820eb0>, <_ast.Constant object at 0x7fd500820ee0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"li_not_plot(0)$0" -> "[<_ast.Constant object at 0x7fd500820e80>, <_ast.Constant object at 0x7fd500820eb0>, <_ast.Constant object at 0x7fd500820ee0>](0)"	[label=assignedFrom];
 	"c(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"c(0)" -> "nr_cols(0)$0"	[label=iteratorOf];
 	"c(0)" -> "range(0)"	[label=iteratorOf];
@@ -362,14 +332,14 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"i(0)$0" -> "nr_cols(0)$0"	[label=Add];
 	"i(0)$0" -> "c(0)"	[label=Add];
 	"i(0)$0" -> "r(0)"	[label=Add];
-	"sns(0)$7" -> "df_train(0)$9"	[label=regplot];
 	"sns(0)$7" -> "target(0)$0"	[label=regplot];
+	"sns(0)$7" -> "df_train(0)$9"	[label=regplot];
 	"sns(0)$7" -> "sns(0)$6"	[label=regplot];
 	"sns(0)$7" -> "li_plot_num_feats(0)$0"	[label=regplot];
 	"sns(0)$7" -> "i(0)$0"	[label=regplot];
 	"stp(0)$0" -> "stats(0)"	[label=pearsonr];
-	"stp(0)$0" -> "df_train(0)$9"	[label=pearsonr];
 	"stp(0)$0" -> "target(0)$0"	[label=pearsonr];
+	"stp(0)$0" -> "df_train(0)$9"	[label=pearsonr];
 	"stp(0)$0" -> "li_plot_num_feats(0)$0"	[label=pearsonr];
 	"stp(0)$0" -> "i(0)$0"	[label=pearsonr];
 	"r = (0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
@@ -385,8 +355,8 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"axs(0)$1" -> "str_title(0)$0"	[label=set_title];
 	"plt(0)$0" -> "plt(0)"	[label=tight_layout];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
-	"df_train(0)$10" -> "df_train(0)$9"	[label=drop];
 	"df_train(0)$10" -> "SalePrice_Log(0)"	[label=drop];
+	"df_train(0)$10" -> "df_train(0)$9"	[label=drop];
 	"df_train(0)$10" -> "df_train(0)$10"	[label=drop];
 	"df_train(0)$10" -> "OverallQual(0)"	[label=drop];
 	"df_train(0)$10" -> "10(0)"	[label=drop];
@@ -394,13 +364,47 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"OverallQual(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"10(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"12.3(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"df_train(0)$11" -> "SalePrice_Log(0)"	[label=drop];
+	"df_train(0)$11" -> "GrLivArea_Log(0)"	[label=drop];
+	"df_train(0)$11" -> "df_train(0)$10"	[label=drop];
+	"df_train(0)$11" -> "df_train(0)$11"	[label=drop];
+	"df_train(0)$11" -> "8.3(0)"	[label=drop];
+	"df_train(0)$11" -> "12.5(0)"	[label=drop];
 	"8.3(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"12.5(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"corr(0)$0" -> "df_train(0)$11"	[label=corr];
 	"corr_abs(0)$0" -> "corr(0)$0"	[label=abs];
 	"nr_num_cols(0)$0" -> "numerical_feats(0)$1"	[label=len];
+	"ser_corr(0)$0" -> "target(0)$0"	[label=assignedFrom];
+	"ser_corr(0)$0" -> "corr_abs(0)$0"	[label=assignedFrom];
+	"ser_corr(0)$0" -> "nr_num_cols(0)$0"	[label=assignedFrom];
+	"cols_abv_corr_limit(0)$0" -> "min_val_corr(0)$0"	[label=list];
+	"cols_abv_corr_limit(0)$0" -> "ser_corr(0)$0"	[label=list];
+	"cols_bel_corr_limit(0)$0" -> "min_val_corr(0)$0"	[label=list];
+	"cols_bel_corr_limit(0)$0" -> "ser_corr(0)$0"	[label=list];
+	"print[189/0]" -> "ser_corr(0)$0"	[label=print];
+	"print[190/0]" -> "*(0)"	[label=print];
+	"print[190/0]" -> "30(0)"	[label=print];
+	"30(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"List of numerical features with r above min_val_corr :(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[191/0]" -> "List of numerical features with r above min_val_corr :(0)"	[label=print];
+	"print[192/0]" -> "cols_abv_corr_limit(0)$0"	[label=print];
+	"print[193/0]" -> "*(0)"	[label=print];
+	"print[193/0]" -> "30(0)"	[label=print];
+	"List of numerical features with r below min_val_corr :(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[194/0]" -> "List of numerical features with r below min_val_corr :(0)"	[label=print];
+	"print[195/0]" -> "cols_bel_corr_limit(0)$0"	[label=print];
+	"catg(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"catg(0)" -> "categorical_feats(0)$0"	[label=iteratorOf];
+	"catg(0)" -> "list(0)"	[label=iteratorOf];
+	"catg(0)" -> "catg_list(0)$1"	[label=iteratorOf];
 	"catg_list(0)$1" -> "catg_list(0)$0"	[label=remove];
 	"catg_list(0)$1" -> "Neighborhood(0)"	[label=remove];
+	"print[198/4]" -> "df_train(0)$11"	[label=print];
+	"print[198/4]" -> "catg(0)"	[label=print];
+	"#(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"print[199/4]" -> "50(0)"	[label=print];
+	"print[199/4]" -> "#(0)"	[label=print];
 	"li_cat_feats(0)$0" -> "categorical_feats(0)$0"	[label=list];
 	"15(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"fig(0)$1" -> "3(0)"	[label=subplots];
@@ -420,45 +424,53 @@ object at 0x12fc4eb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"sns(0)$8" -> "sns(0)$7"	[label=boxplot];
 	"plt(0)$2" -> "plt(0)$1"	[label=tight_layout];
 	"plt(0)$3" -> "plt(0)$2"	[label=show];
-	"[<_ast.Constant object at 0x12f89dc10>, <_ast.Constant object at 0x12f89dc40>, <_ast.Constant object at 0x12f89dc70>, <_ast.Constant \
-object at 0x12f89dca0>, <_ast.Constant object at 0x12f89dcd0>, <_ast.Constant object at 0x12f89dd00>, <_ast.Constant object at 0x12f89dd30>, <_\
-ast.Constant object at 0x12f89dd60>, <_ast.Constant object at 0x12f89dd90>, <_ast.Constant object at 0x12f89ddc0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"catg_strong_corr(0)$0" -> "[<_ast.Constant object at 0x12f89dc10>, <_ast.Constant object at 0x12f89dc40>, <_ast.Constant object at 0x12f89dc70>, <_ast.Constant \
-object at 0x12f89dca0>, <_ast.Constant object at 0x12f89dcd0>, <_ast.Constant object at 0x12f89dd00>, <_ast.Constant object at 0x12f89dd30>, <_\
-ast.Constant object at 0x12f89dd60>, <_ast.Constant object at 0x12f89dd90>, <_ast.Constant object at 0x12f89ddc0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89de80>, <_ast.Constant object at 0x12f89deb0>, <_ast.Constant object at 0x12f89dee0>, <_ast.Constant \
-object at 0x12f89df10>, <_ast.Constant object at 0x12f89df40>, <_ast.Constant object at 0x12f89df70>, <_ast.Constant object at 0x12f89dfa0>, <_\
-ast.Constant object at 0x12f89dfd0>, <_ast.Constant object at 0x12f893040>, <_ast.Constant object at 0x12f893070>, <_ast.Constant \
-object at 0x12f8930a0>, <_ast.Constant object at 0x12f8930d0>, <_ast.Constant object at 0x12f893100>, <_ast.Constant object at 0x12f893130>, <_\
-ast.Constant object at 0x12f893160>, <_ast.Constant object at 0x12f893190>, <_ast.Constant object at 0x12f8931c0>, <_ast.Constant \
-object at 0x12f8931f0>, <_ast.Constant object at 0x12f893220>, <_ast.Constant object at 0x12f893250>, <_ast.Constant object at 0x12f893280>, <_\
-ast.Constant object at 0x12f8932b0>, <_ast.Constant object at 0x12f8932e0>, <_ast.Constant object at 0x12f893310>, <_ast.Constant \
-object at 0x12f893340>, <_ast.Constant object at 0x12f893370>, <_ast.Constant object at 0x12f8933a0>, <_ast.Constant object at 0x12f8933d0>, <_\
-ast.Constant object at 0x12f893400>, <_ast.Constant object at 0x12f893430>, <_ast.Constant object at 0x12f893460>, <_ast.Constant \
-object at 0x12f893490>, <_ast.Constant object at 0x12f8934c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"catg_weak_corr(0)$0" -> "[<_ast.Constant object at 0x12f89de80>, <_ast.Constant object at 0x12f89deb0>, <_ast.Constant object at 0x12f89dee0>, <_ast.Constant \
-object at 0x12f89df10>, <_ast.Constant object at 0x12f89df40>, <_ast.Constant object at 0x12f89df70>, <_ast.Constant object at 0x12f89dfa0>, <_\
-ast.Constant object at 0x12f89dfd0>, <_ast.Constant object at 0x12f893040>, <_ast.Constant object at 0x12f893070>, <_ast.Constant \
-object at 0x12f8930a0>, <_ast.Constant object at 0x12f8930d0>, <_ast.Constant object at 0x12f893100>, <_ast.Constant object at 0x12f893130>, <_\
-ast.Constant object at 0x12f893160>, <_ast.Constant object at 0x12f893190>, <_ast.Constant object at 0x12f8931c0>, <_ast.Constant \
-object at 0x12f8931f0>, <_ast.Constant object at 0x12f893220>, <_ast.Constant object at 0x12f893250>, <_ast.Constant object at 0x12f893280>, <_\
-ast.Constant object at 0x12f8932b0>, <_ast.Constant object at 0x12f8932e0>, <_ast.Constant object at 0x12f893310>, <_ast.Constant \
-object at 0x12f893340>, <_ast.Constant object at 0x12f893370>, <_ast.Constant object at 0x12f8933a0>, <_ast.Constant object at 0x12f8933d0>, <_\
-ast.Constant object at 0x12f893400>, <_ast.Constant object at 0x12f893430>, <_ast.Constant object at 0x12f893460>, <_ast.Constant \
-object at 0x12f893490>, <_ast.Constant object at 0x12f8934c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500844a00>, <_ast.Constant object at 0x7fd500844a30>, <_ast.Constant object at 0x7fd500844a60>, <_\
+ast.Constant object at 0x7fd500844a90>, <_ast.Constant object at 0x7fd500844ac0>, <_ast.Constant object at 0x7fd500844af0>, <_ast.Constant \
+object at 0x7fd500844b20>, <_ast.Constant object at 0x7fd500844b50>, <_ast.Constant object at 0x7fd500844b80>, <_ast.Constant object \
+at 0x7fd500844bb0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"catg_strong_corr(0)$0" -> "[<_ast.Constant object at 0x7fd500844a00>, <_ast.Constant object at 0x7fd500844a30>, <_ast.Constant object at 0x7fd500844a60>, <_\
+ast.Constant object at 0x7fd500844a90>, <_ast.Constant object at 0x7fd500844ac0>, <_ast.Constant object at 0x7fd500844af0>, <_ast.Constant \
+object at 0x7fd500844b20>, <_ast.Constant object at 0x7fd500844b50>, <_ast.Constant object at 0x7fd500844b80>, <_ast.Constant object \
+at 0x7fd500844bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500844c70>, <_ast.Constant object at 0x7fd500844ca0>, <_ast.Constant object at 0x7fd500844cd0>, <_\
+ast.Constant object at 0x7fd500844d00>, <_ast.Constant object at 0x7fd500844d30>, <_ast.Constant object at 0x7fd500844d60>, <_ast.Constant \
+object at 0x7fd500844d90>, <_ast.Constant object at 0x7fd500844dc0>, <_ast.Constant object at 0x7fd500844df0>, <_ast.Constant object \
+at 0x7fd500844e20>, <_ast.Constant object at 0x7fd500844e50>, <_ast.Constant object at 0x7fd500844e80>, <_ast.Constant object at \
+0x7fd500844eb0>, <_ast.Constant object at 0x7fd500844ee0>, <_ast.Constant object at 0x7fd500844f10>, <_ast.Constant object at 0x7fd500844f40>, <_\
+ast.Constant object at 0x7fd500844f70>, <_ast.Constant object at 0x7fd500844fa0>, <_ast.Constant object at 0x7fd500844fd0>, <_ast.Constant \
+object at 0x7fd5008601f0>, <_ast.Constant object at 0x7fd5008600d0>, <_ast.Constant object at 0x7fd5008601c0>, <_ast.Constant object \
+at 0x7fd5008602e0>, <_ast.Constant object at 0x7fd500860250>, <_ast.Constant object at 0x7fd500860280>, <_ast.Constant object at \
+0x7fd500860100>, <_ast.Constant object at 0x7fd500860220>, <_ast.Constant object at 0x7fd5008604c0>, <_ast.Constant object at 0x7fd500860040>, <_\
+ast.Constant object at 0x7fd500860130>, <_ast.Constant object at 0x7fd500860070>, <_ast.Constant object at 0x7fd500860160>, <_ast.Constant \
+object at 0x7fd5008600a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"catg_weak_corr(0)$0" -> "[<_ast.Constant object at 0x7fd500844c70>, <_ast.Constant object at 0x7fd500844ca0>, <_ast.Constant object at 0x7fd500844cd0>, <_\
+ast.Constant object at 0x7fd500844d00>, <_ast.Constant object at 0x7fd500844d30>, <_ast.Constant object at 0x7fd500844d60>, <_ast.Constant \
+object at 0x7fd500844d90>, <_ast.Constant object at 0x7fd500844dc0>, <_ast.Constant object at 0x7fd500844df0>, <_ast.Constant object \
+at 0x7fd500844e20>, <_ast.Constant object at 0x7fd500844e50>, <_ast.Constant object at 0x7fd500844e80>, <_ast.Constant object at \
+0x7fd500844eb0>, <_ast.Constant object at 0x7fd500844ee0>, <_ast.Constant object at 0x7fd500844f10>, <_ast.Constant object at 0x7fd500844f40>, <_\
+ast.Constant object at 0x7fd500844f70>, <_ast.Constant object at 0x7fd500844fa0>, <_ast.Constant object at 0x7fd500844fd0>, <_ast.Constant \
+object at 0x7fd5008601f0>, <_ast.Constant object at 0x7fd5008600d0>, <_ast.Constant object at 0x7fd5008601c0>, <_ast.Constant object \
+at 0x7fd5008602e0>, <_ast.Constant object at 0x7fd500860250>, <_ast.Constant object at 0x7fd500860280>, <_ast.Constant object at \
+0x7fd500860100>, <_ast.Constant object at 0x7fd500860220>, <_ast.Constant object at 0x7fd5008604c0>, <_ast.Constant object at 0x7fd500860040>, <_\
+ast.Constant object at 0x7fd500860130>, <_ast.Constant object at 0x7fd500860070>, <_ast.Constant object at 0x7fd500860160>, <_ast.Constant \
+object at 0x7fd5008600a0>](0)"	[label=assignedFrom];
+	"nr_feats(0)$0" -> "cols_abv_corr_limit(0)$0"	[label=len];
+	"plot_corr_matrix[229/0]" -> "target(0)$0"	[label=plot_corr_matrix];
+	"plot_corr_matrix[229/0]" -> "df_train(0)$11"	[label=plot_corr_matrix];
+	"plot_corr_matrix[229/0]" -> "nr_feats(0)$0"	[label=plot_corr_matrix];
 	"id_test(0)$0" -> "df_test(0)$5"	[label=assignedFrom];
 	"id_test(0)$0" -> "Id(0)"	[label=assignedFrom];
 	"Id(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"to_drop_num(0)$0" -> "cols_bel_corr_limit(0)$0"	[label=assignedFrom];
 	"to_drop_catg(0)$0" -> "catg_weak_corr(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f893a90>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500860940>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"cols_to_drop(0)$0" -> "to_drop_num(0)$0"	[label=Add];
 	"cols_to_drop(0)$0" -> "to_drop_catg(0)$0"	[label=Add];
-	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x12f893a90>](0)"	[label=Add];
+	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x7fd500860940>](0)"	[label=Add];
 	"df(0)$4" -> "df(0)$3"	[label=drop];
 	"df(0)$4" -> "cols_to_drop(0)$0"	[label=drop];
-	"df(0)$4" -> "[<_ast.Name object at 0x12fc23b20>, <_ast.Name object at 0x12fc23b50>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12fc23b20>, <_ast.Name object at 0x12fc23b50>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"df(0)$4" -> "[<_ast.Name object at 0x7fd50083d970>, <_ast.Name object at 0x7fd50083d9a0>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd50083d970>, <_ast.Name object at 0x7fd50083d9a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"catg_list(0)$0" -> "catg_strong_corr(0)$0"	[label=copy];
 	"Neighborhood(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"sns(0)$9" -> "sns(0)$8"	[label=violinplot];
@@ -472,28 +484,32 @@ object at 0x12f893490>, <_ast.Constant object at 0x12f8934c0>](0)"	[label=assign
 	"sns(0)$10" -> "sns(0)$9"	[label=violinplot];
 	"plt(0)$5" -> "plt(0)$4"	[label=xticks];
 	"plt(0)$6" -> "plt(0)$5"	[label=show];
-	"[<_ast.Constant object at 0x12fc23190>, <_ast.Constant object at 0x12fc231c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"msz_catg2(0)$0" -> "[<_ast.Constant object at 0x12fc23190>, <_ast.Constant object at 0x12fc231c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc23280>, <_ast.Constant object at 0x12fc232b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"msz_catg3(0)$0" -> "[<_ast.Constant object at 0x12fc23280>, <_ast.Constant object at 0x12fc232b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc23370>, <_ast.Constant object at 0x12fc233a0>, <_ast.Constant object at 0x12fc233d0>, <_ast.Constant \
-object at 0x12fc23400>, <_ast.Constant object at 0x12fc23430>, <_ast.Constant object at 0x12fc23460>, <_ast.Constant object at 0x12fc23490>, <_\
-ast.Constant object at 0x12fc234c0>, <_ast.Constant object at 0x12fc234f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"nbhd_catg2(0)$0" -> "[<_ast.Constant object at 0x12fc23370>, <_ast.Constant object at 0x12fc233a0>, <_ast.Constant object at 0x12fc233d0>, <_ast.Constant \
-object at 0x12fc23400>, <_ast.Constant object at 0x12fc23430>, <_ast.Constant object at 0x12fc23460>, <_ast.Constant object at 0x12fc23490>, <_\
-ast.Constant object at 0x12fc234c0>, <_ast.Constant object at 0x12fc234f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc235b0>, <_ast.Constant object at 0x12fc235e0>, <_ast.Constant object at 0x12fc23610>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"nbhd_catg3(0)$0" -> "[<_ast.Constant object at 0x12fc235b0>, <_ast.Constant object at 0x12fc235e0>, <_ast.Constant object at 0x12fc23610>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc236d0>, <_ast.Constant object at 0x12fc23700>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"cond2_catg2(0)$0" -> "[<_ast.Constant object at 0x12fc236d0>, <_ast.Constant object at 0x12fc23700>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc237c0>, <_ast.Constant object at 0x12fc237f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"cond2_catg3(0)$0" -> "[<_ast.Constant object at 0x12fc237c0>, <_ast.Constant object at 0x12fc237f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc238b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"SlTy_catg1(0)$0" -> "[<_ast.Constant object at 0x12fc238b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc23970>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"SlTy_catg3(0)$0" -> "[<_ast.Constant object at 0x12fc23970>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc23a30>, <_ast.Constant object at 0x12fc23a60>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"SlTy_catg4(0)$0" -> "[<_ast.Constant object at 0x12fc23a30>, <_ast.Constant object at 0x12fc23a60>](0)"	[label=assignedFrom];
+	"g(0)$0" -> "target(0)$0"	[label=mean];
+	"g(0)$0" -> "df_train(0)$11"	[label=mean];
+	"g(0)$0" -> "catg(0)"	[label=mean];
+	"print[258/4]" -> "g(0)$0"	[label=print];
+	"[<_ast.Constant object at 0x7fd500854f40>, <_ast.Constant object at 0x7fd500854f70>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"msz_catg2(0)$0" -> "[<_ast.Constant object at 0x7fd500854f40>, <_ast.Constant object at 0x7fd500854f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d0a0>, <_ast.Constant object at 0x7fd50083d070>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"msz_catg3(0)$0" -> "[<_ast.Constant object at 0x7fd50083d0a0>, <_ast.Constant object at 0x7fd50083d070>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d160>, <_ast.Constant object at 0x7fd50083d190>, <_ast.Constant object at 0x7fd50083d1c0>, <_\
+ast.Constant object at 0x7fd50083d1f0>, <_ast.Constant object at 0x7fd50083d220>, <_ast.Constant object at 0x7fd50083d250>, <_ast.Constant \
+object at 0x7fd50083d280>, <_ast.Constant object at 0x7fd50083d2b0>, <_ast.Constant object at 0x7fd50083d2e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"nbhd_catg2(0)$0" -> "[<_ast.Constant object at 0x7fd50083d160>, <_ast.Constant object at 0x7fd50083d190>, <_ast.Constant object at 0x7fd50083d1c0>, <_\
+ast.Constant object at 0x7fd50083d1f0>, <_ast.Constant object at 0x7fd50083d220>, <_ast.Constant object at 0x7fd50083d250>, <_ast.Constant \
+object at 0x7fd50083d280>, <_ast.Constant object at 0x7fd50083d2b0>, <_ast.Constant object at 0x7fd50083d2e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d370>, <_ast.Constant object at 0x7fd50083d3d0>, <_ast.Constant object at 0x7fd50083d400>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"nbhd_catg3(0)$0" -> "[<_ast.Constant object at 0x7fd50083d370>, <_ast.Constant object at 0x7fd50083d3d0>, <_ast.Constant object at 0x7fd50083d400>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d4c0>, <_ast.Constant object at 0x7fd50083d4f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"cond2_catg2(0)$0" -> "[<_ast.Constant object at 0x7fd50083d4c0>, <_ast.Constant object at 0x7fd50083d4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d5b0>, <_ast.Constant object at 0x7fd50083d5e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"cond2_catg3(0)$0" -> "[<_ast.Constant object at 0x7fd50083d5b0>, <_ast.Constant object at 0x7fd50083d5e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d6a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"SlTy_catg1(0)$0" -> "[<_ast.Constant object at 0x7fd50083d6a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d7c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"SlTy_catg3(0)$0" -> "[<_ast.Constant object at 0x7fd50083d7c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d880>, <_ast.Constant object at 0x7fd50083d8b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"SlTy_catg4(0)$0" -> "[<_ast.Constant object at 0x7fd50083d880>, <_ast.Constant object at 0x7fd50083d8b0>](0)"	[label=assignedFrom];
 	"df(0)$5" -> "1(0)"	[label=assignedFrom];
 	"df(0)$5" -> "df(0)$4"	[label=assignedFrom];
 	"2(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
@@ -555,14 +571,16 @@ ast.Constant object at 0x12fc234c0>, <_ast.Constant object at 0x12fc234f0>](0)"	
 	"df(0)$33" -> "df(0)$32"	[label=assignedFrom];
 	"df(0)$34" -> "4(0)"	[label=assignedFrom];
 	"df(0)$34" -> "df(0)$33"	[label=assignedFrom];
-	"df(0)$34" -> "[<_ast.Name object at 0x12fc38190>, <_ast.Name object at 0x12fc381c0>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12fc38190>, <_ast.Name object at 0x12fc381c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc40820>, <_ast.Constant object at 0x12fc40850>, <_ast.Constant object at 0x12fc40880>, <_ast.Constant \
-object at 0x12fc408b0>, <_ast.Constant object at 0x12fc408e0>, <_ast.Constant object at 0x12fc40910>, <_ast.Constant object at 0x12fc40940>, <_\
-ast.Constant object at 0x12fc40970>, <_ast.Constant object at 0x12fc409a0>, <_ast.Constant object at 0x12fc409d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"new_col_num(0)$0" -> "[<_ast.Constant object at 0x12fc40820>, <_ast.Constant object at 0x12fc40850>, <_ast.Constant object at 0x12fc40880>, <_ast.Constant \
-object at 0x12fc408b0>, <_ast.Constant object at 0x12fc408e0>, <_ast.Constant object at 0x12fc40910>, <_ast.Constant object at 0x12fc40940>, <_\
-ast.Constant object at 0x12fc40970>, <_ast.Constant object at 0x12fc409a0>, <_ast.Constant object at 0x12fc409d0>](0)"	[label=assignedFrom];
+	"df(0)$34" -> "[<_ast.Name object at 0x7fd500850fd0>, <_ast.Name object at 0x7fd500850c10>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd500850fd0>, <_ast.Name object at 0x7fd500850c10>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500868610>, <_ast.Constant object at 0x7fd500868640>, <_ast.Constant object at 0x7fd500868670>, <_\
+ast.Constant object at 0x7fd5008686a0>, <_ast.Constant object at 0x7fd5008686d0>, <_ast.Constant object at 0x7fd500868700>, <_ast.Constant \
+object at 0x7fd500868730>, <_ast.Constant object at 0x7fd500868760>, <_ast.Constant object at 0x7fd500868790>, <_ast.Constant object \
+at 0x7fd500868820>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"new_col_num(0)$0" -> "[<_ast.Constant object at 0x7fd500868610>, <_ast.Constant object at 0x7fd500868640>, <_ast.Constant object at 0x7fd500868670>, <_\
+ast.Constant object at 0x7fd5008686a0>, <_ast.Constant object at 0x7fd5008686d0>, <_ast.Constant object at 0x7fd500868700>, <_ast.Constant \
+object at 0x7fd500868730>, <_ast.Constant object at 0x7fd500868760>, <_ast.Constant object at 0x7fd500868790>, <_ast.Constant object \
+at 0x7fd500868820>](0)"	[label=assignedFrom];
 	"fig(0)$4" -> "3(0)"	[label=subplots];
 	"fig(0)$4" -> "3.5(0)"	[label=subplots];
 	"fig(0)$4" -> "nr_cols(0)$2"	[label=subplots];
@@ -576,14 +594,14 @@ ast.Constant object at 0x12fc40970>, <_ast.Constant object at 0x12fc409a0>, <_as
 	"i(0)$2" -> "c(0)"	[label=Add];
 	"i(0)$2" -> "nr_cols(0)$2"	[label=Add];
 	"i(0)$2" -> "r(0)"	[label=Add];
-	"sns(0)$11" -> "df_train(0)$11"	[label=regplot];
 	"sns(0)$11" -> "target(0)$0"	[label=regplot];
+	"sns(0)$11" -> "df_train(0)$11"	[label=regplot];
 	"sns(0)$11" -> "sns(0)$10"	[label=regplot];
 	"sns(0)$11" -> "new_col_num(0)$0"	[label=regplot];
 	"sns(0)$11" -> "i(0)$2"	[label=regplot];
 	"stp(0)$1" -> "stats(0)"	[label=pearsonr];
-	"stp(0)$1" -> "df_train(0)$11"	[label=pearsonr];
 	"stp(0)$1" -> "target(0)$0"	[label=pearsonr];
+	"stp(0)$1" -> "df_train(0)$11"	[label=pearsonr];
 	"stp(0)$1" -> "new_col_num(0)$0"	[label=pearsonr];
 	"stp(0)$1" -> "i(0)$2"	[label=pearsonr];
 	"str_title(0)$1" -> "1(0)"	[label=Add];
@@ -596,17 +614,21 @@ ast.Constant object at 0x12fc40970>, <_ast.Constant object at 0x12fc409a0>, <_as
 	"axs(0)$4" -> "str_title(0)$1"	[label=set_title];
 	"plt(0)$7" -> "plt(0)$6"	[label=tight_layout];
 	"plt(0)$8" -> "plt(0)$7"	[label=show];
-	"[<_ast.Constant object at 0x12fc426d0>, <_ast.Constant object at 0x12fc42700>, <_ast.Constant object at 0x12fc42730>, <_ast.Constant \
-object at 0x12fc42760>, <_ast.Constant object at 0x12fc42790>, <_ast.Constant object at 0x12fc427c0>, <_ast.Constant object at 0x12fc427f0>, <_\
-ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"catg_cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x12fc426d0>, <_ast.Constant object at 0x12fc42700>, <_ast.Constant object at 0x12fc42730>, <_ast.Constant \
-object at 0x12fc42760>, <_ast.Constant object at 0x12fc42790>, <_ast.Constant object at 0x12fc427c0>, <_ast.Constant object at 0x12fc427f0>, <_\
-ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500850580>, <_ast.Constant object at 0x7fd5008505b0>, <_ast.Constant object at 0x7fd500850610>, <_\
+ast.Constant object at 0x7fd500850640>, <_ast.Constant object at 0x7fd500850670>, <_ast.Constant object at 0x7fd500850370>, <_ast.Constant \
+object at 0x7fd5008506a0>, <_ast.Constant object at 0x7fd5008506d0>, <_ast.Constant object at 0x7fd500850700>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"catg_cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x7fd500850580>, <_ast.Constant object at 0x7fd5008505b0>, <_ast.Constant object at 0x7fd500850610>, <_\
+ast.Constant object at 0x7fd500850640>, <_ast.Constant object at 0x7fd500850670>, <_ast.Constant object at 0x7fd500850370>, <_ast.Constant \
+object at 0x7fd5008506a0>, <_ast.Constant object at 0x7fd5008506d0>, <_ast.Constant object at 0x7fd500850700>](0)"	[label=assignedFrom];
 	"corr1(0)$0" -> "df_train(0)$11"	[label=corr];
 	"corr_abs_1(0)$0" -> "corr1(0)$0"	[label=abs];
 	"nr_all_cols(0)$0" -> "df_train(0)$11"	[label=len];
-	"cols_bel_corr_limit_1(0)$0" -> "ser_corr_1(0)$0"	[label=list];
+	"ser_corr_1(0)$0" -> "target(0)$0"	[label=assignedFrom];
+	"ser_corr_1(0)$0" -> "corr_abs_1(0)$0"	[label=assignedFrom];
+	"ser_corr_1(0)$0" -> "nr_all_cols(0)$0"	[label=assignedFrom];
+	"print[349/0]" -> "ser_corr_1(0)$0"	[label=print];
 	"cols_bel_corr_limit_1(0)$0" -> "min_val_corr(0)$0"	[label=list];
+	"cols_bel_corr_limit_1(0)$0" -> "ser_corr_1(0)$0"	[label=list];
 	"df(0)$35" -> "df(0)$34"	[label=drop];
 	"df(0)$35" -> "catg_cols_to_drop(0)$0"	[label=drop];
 	"df(0)$36" -> "cols_bel_corr_limit_1(0)$0"	[label=drop];
@@ -614,19 +636,38 @@ ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)"	
 	"corr2(0)$0" -> "df_train(0)$11"	[label=corr];
 	"corr_abs_2(0)$0" -> "corr2(0)$0"	[label=abs];
 	"nr_all_cols(0)$1" -> "df_train(0)$11"	[label=len];
+	"ser_corr_2(0)$0" -> "target(0)$0"	[label=assignedFrom];
+	"ser_corr_2(0)$0" -> "corr_abs_2(0)$0"	[label=assignedFrom];
+	"ser_corr_2(0)$0" -> "nr_all_cols(0)$1"	[label=assignedFrom];
+	"print[362/0]" -> "ser_corr_2(0)$0"	[label=print];
+	"df_train(0)$12" -> "df_train(0)$11"	[label=head];
 	"df_test(0)$6" -> "df_test(0)$5"	[label=head];
 	"corr(0)$1" -> "df_train(0)$12"	[label=corr];
+	"corr_abs(0)$1" -> "corr(0)$1"	[label=abs];
+	"nr_all_cols(0)$2" -> "df_train(0)$12"	[label=len];
+	"print[370/0]" -> "target(0)$0"	[label=print];
+	"print[370/0]" -> "corr_abs(0)$1"	[label=print];
+	"print[370/0]" -> "nr_all_cols(0)$2"	[label=print];
+	"nr_feats(0)$1" -> "df_train(0)$12"	[label=len];
+	"plot_corr_matrix[372/0]" -> "target(0)$0"	[label=plot_corr_matrix];
+	"plot_corr_matrix[372/0]" -> "df_train(0)$12"	[label=plot_corr_matrix];
+	"plot_corr_matrix[372/0]" -> "nr_feats(0)$1"	[label=plot_corr_matrix];
+	"cols(0)$0" -> "target(0)$0"	[label=assignedFrom];
 	"cols(0)$0" -> "corr_abs(0)$1"	[label=assignedFrom];
 	"cols(0)$0" -> "nr_all_cols(0)$2"	[label=assignedFrom];
-	"cols(0)$0" -> "target(0)$0"	[label=assignedFrom];
 	"cols(0)$1" -> "cols(0)$0"	[label=list];
 	"cols(0)$2" -> "col(0)"	[label=remove];
 	"cols(0)$2" -> "cols(0)$1"	[label=remove];
+	"cols(0)$3" -> "cols(0)$2"	[label=list];
+	"print[381/0]" -> "cols(0)$3"	[label=print];
 	"feats(0)$0" -> "cols(0)$3"	[label=copy];
-	"df_train_ml(0)$0" -> "feats(0)$1"	[label=copy];
+	"feats(0)$1" -> "SalePrice_Log(0)"	[label=remove];
+	"feats(0)$1" -> "feats(0)$0"	[label=remove];
+	"print[386/0]" -> "feats(0)$1"	[label=print];
 	"df_train_ml(0)$0" -> "df_train(0)$12"	[label=copy];
-	"df_test_ml(0)$0" -> "feats(0)$1"	[label=copy];
+	"df_train_ml(0)$0" -> "feats(0)$1"	[label=copy];
 	"df_test_ml(0)$0" -> "df_test(0)$6"	[label=copy];
+	"df_test_ml(0)$0" -> "feats(0)$1"	[label=copy];
 	"y(0)$0" -> "target(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "df_train(0)$12"	[label=assignedFrom];
 	"sklearn.preprocessing" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=importedBy];
@@ -668,14 +709,14 @@ ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)"	
 	"parameters(0)$0" -> "fit_intercept(0)"	[label=assignedFrom];
 	"parameters(0)$0" -> "normalize(0)"	[label=assignedFrom];
 	"parameters(0)$0" -> "copy_X(0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8b5580>, <_ast.Constant object at 0x12f8b5d60>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8b5af0>, <_ast.Constant object at 0x12f8b5f70>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8b55b0>, <_ast.Constant object at 0x12f8b58e0>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c05ada60>, <_ast.Constant object at 0x7fd4c05ada90>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c05adaf0>, <_ast.Constant object at 0x7fd4c05adb20>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c05adb80>, <_ast.Constant object at 0x7fd4c05adbb0>](0)"	[label=assignedFrom];
 	"normalize(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"copy_X(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b5580>, <_ast.Constant object at 0x12f8b5d60>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b5af0>, <_ast.Constant object at 0x12f8b5f70>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b55b0>, <_ast.Constant object at 0x12f8b58e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05ada60>, <_ast.Constant object at 0x7fd4c05ada90>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05adaf0>, <_ast.Constant object at 0x7fd4c05adb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05adb80>, <_ast.Constant object at 0x7fd4c05adbb0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"linreg(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_linear(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_linear(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -689,12 +730,12 @@ ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)"	
 	"parameters(0)$1" -> "fit_intercept(0)"	[label=assignedFrom];
 	"parameters(0)$1" -> "normalize(0)"	[label=assignedFrom];
 	"parameters(0)$1" -> "copy_X(0)"	[label=assignedFrom];
-	"parameters(0)$1" -> "[<_ast.Constant object at 0x12f8a7520>, <_ast.Constant object at 0x12f8a7550>](0)"	[label=assignedFrom];
-	"parameters(0)$1" -> "[<_ast.Constant object at 0x12f8a75b0>, <_ast.Constant object at 0x12f8a75e0>](0)"	[label=assignedFrom];
-	"parameters(0)$1" -> "[<_ast.Constant object at 0x12f8a7640>, <_ast.Constant object at 0x12f8a7670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a7520>, <_ast.Constant object at 0x12f8a7550>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a75b0>, <_ast.Constant object at 0x12f8a75e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a7640>, <_ast.Constant object at 0x12f8a7670>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"parameters(0)$1" -> "[<_ast.Constant object at 0x7fd4c05bd310>, <_ast.Constant object at 0x7fd4c05bd340>](0)"	[label=assignedFrom];
+	"parameters(0)$1" -> "[<_ast.Constant object at 0x7fd4c05bd3d0>, <_ast.Constant object at 0x7fd4c05bd400>](0)"	[label=assignedFrom];
+	"parameters(0)$1" -> "[<_ast.Constant object at 0x7fd4c05bd4c0>, <_ast.Constant object at 0x7fd4c05bd4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05bd310>, <_ast.Constant object at 0x7fd4c05bd340>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bd3d0>, <_ast.Constant object at 0x7fd4c05bd400>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bd4c0>, <_ast.Constant object at 0x7fd4c05bd4f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"linreg_sc(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_linear_sc(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_linear_sc(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -724,17 +765,17 @@ ast.Constant object at 0x12fc42820>, <_ast.Constant object at 0x12fc42850>](0)"	
 	"parameters(0)$2" -> "normalize(0)"	[label=assignedFrom];
 	"parameters(0)$2" -> "alpha(0)"	[label=assignedFrom];
 	"parameters(0)$2" -> "tol(0)"	[label=assignedFrom];
-	"parameters(0)$2" -> "[<_ast.Constant object at 0x12f8ca790>, <_ast.Constant object at 0x12f8ca7c0>, <_ast.Constant object at 0x12f8ca7f0>, <_ast.Constant \
-object at 0x12f8ca820>, <_ast.Constant object at 0x12f8ca850>, <_ast.Constant object at 0x12f8ca880>](0)"	[label=assignedFrom];
-	"parameters(0)$2" -> "[<_ast.Constant object at 0x12f8ca8e0>, <_ast.Constant object at 0x12f8ca910>](0)"	[label=assignedFrom];
-	"parameters(0)$2" -> "[<_ast.Constant object at 0x12f8ca970>, <_ast.Constant object at 0x12f8ca9a0>, <_ast.Constant object at 0x12f8ca9d0>, <_ast.Constant \
-object at 0x12f8caa00>](0)"	[label=assignedFrom];
+	"parameters(0)$2" -> "[<_ast.Constant object at 0x7fd4c05a95b0>, <_ast.Constant object at 0x7fd4c05a95e0>, <_ast.Constant object at 0x7fd4c05a9610>, <_\
+ast.Constant object at 0x7fd4c05a9640>, <_ast.Constant object at 0x7fd4c05a9670>, <_ast.Constant object at 0x7fd4c05a96a0>](0)"	[label=assignedFrom];
+	"parameters(0)$2" -> "[<_ast.Constant object at 0x7fd4c05a9700>, <_ast.Constant object at 0x7fd4c05a9730>](0)"	[label=assignedFrom];
+	"parameters(0)$2" -> "[<_ast.Constant object at 0x7fd4c05a9790>, <_ast.Constant object at 0x7fd4c05a97f0>, <_ast.Constant object at 0x7fd4c05a9490>, <_\
+ast.Constant object at 0x7fd4c05a9820>](0)"	[label=assignedFrom];
 	"tol(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ca790>, <_ast.Constant object at 0x12f8ca7c0>, <_ast.Constant object at 0x12f8ca7f0>, <_ast.Constant \
-object at 0x12f8ca820>, <_ast.Constant object at 0x12f8ca850>, <_ast.Constant object at 0x12f8ca880>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ca8e0>, <_ast.Constant object at 0x12f8ca910>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ca970>, <_ast.Constant object at 0x12f8ca9a0>, <_ast.Constant object at 0x12f8ca9d0>, <_ast.Constant \
-object at 0x12f8caa00>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05a95b0>, <_ast.Constant object at 0x7fd4c05a95e0>, <_ast.Constant object at 0x7fd4c05a9610>, <_\
+ast.Constant object at 0x7fd4c05a9640>, <_ast.Constant object at 0x7fd4c05a9670>, <_ast.Constant object at 0x7fd4c05a96a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05a9700>, <_ast.Constant object at 0x7fd4c05a9730>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05a9790>, <_ast.Constant object at 0x7fd4c05a97f0>, <_ast.Constant object at 0x7fd4c05a9490>, <_\
+ast.Constant object at 0x7fd4c05a9820>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"ridge(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_ridge(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_ridge(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -748,16 +789,16 @@ object at 0x12f8caa00>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"parameters(0)$3" -> "normalize(0)"	[label=assignedFrom];
 	"parameters(0)$3" -> "alpha(0)"	[label=assignedFrom];
 	"parameters(0)$3" -> "tol(0)"	[label=assignedFrom];
-	"parameters(0)$3" -> "[<_ast.Constant object at 0x12f8c31f0>, <_ast.Constant object at 0x12f8c3220>, <_ast.Constant object at 0x12f8c3250>, <_ast.Constant \
-object at 0x12f8c3280>, <_ast.Constant object at 0x12f8c32b0>, <_ast.Constant object at 0x12f8c32e0>](0)"	[label=assignedFrom];
-	"parameters(0)$3" -> "[<_ast.Constant object at 0x12f8c3340>, <_ast.Constant object at 0x12f8c3370>](0)"	[label=assignedFrom];
-	"parameters(0)$3" -> "[<_ast.Constant object at 0x12f8c33d0>, <_ast.Constant object at 0x12f8c3400>, <_ast.Constant object at 0x12f8c3460>, <_ast.Constant \
-object at 0x12f8c3430>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8c31f0>, <_ast.Constant object at 0x12f8c3220>, <_ast.Constant object at 0x12f8c3250>, <_ast.Constant \
-object at 0x12f8c3280>, <_ast.Constant object at 0x12f8c32b0>, <_ast.Constant object at 0x12f8c32e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c3340>, <_ast.Constant object at 0x12f8c3370>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c33d0>, <_ast.Constant object at 0x12f8c3400>, <_ast.Constant object at 0x12f8c3460>, <_ast.Constant \
-object at 0x12f8c3430>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"parameters(0)$3" -> "[<_ast.Constant object at 0x7fd4c05a9f70>, <_ast.Constant object at 0x7fd4c05a9fa0>, <_ast.Constant object at 0x7fd4c05a9fd0>, <_\
+ast.Constant object at 0x7fd4c05980d0>, <_ast.Constant object at 0x7fd4c0598100>, <_ast.Constant object at 0x7fd4c0598730>](0)"	[label=assignedFrom];
+	"parameters(0)$3" -> "[<_ast.Constant object at 0x7fd4c0598130>, <_ast.Constant object at 0x7fd4c05983d0>](0)"	[label=assignedFrom];
+	"parameters(0)$3" -> "[<_ast.Constant object at 0x7fd4c05980a0>, <_ast.Constant object at 0x7fd4c0598250>, <_ast.Constant object at 0x7fd4c0598490>, <_\
+ast.Constant object at 0x7fd4c0598520>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05a9f70>, <_ast.Constant object at 0x7fd4c05a9fa0>, <_ast.Constant object at 0x7fd4c05a9fd0>, <_\
+ast.Constant object at 0x7fd4c05980d0>, <_ast.Constant object at 0x7fd4c0598100>, <_ast.Constant object at 0x7fd4c0598730>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0598130>, <_ast.Constant object at 0x7fd4c05983d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05980a0>, <_ast.Constant object at 0x7fd4c0598250>, <_ast.Constant object at 0x7fd4c0598490>, <_\
+ast.Constant object at 0x7fd4c0598520>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"ridge_sc(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_ridge_sc(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_ridge_sc(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -776,16 +817,16 @@ object at 0x12f8c3430>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"parameters(0)$4" -> "normalize(0)"	[label=assignedFrom];
 	"parameters(0)$4" -> "alpha(0)"	[label=assignedFrom];
 	"parameters(0)$4" -> "tol(0)"	[label=assignedFrom];
-	"parameters(0)$4" -> "[<_ast.Constant object at 0x12f8c3d90>, <_ast.Constant object at 0x12f8c3dc0>, <_ast.Constant object at 0x12f8c3df0>, <_ast.Constant \
-object at 0x12f8c3e50>, <_ast.Constant object at 0x12f8c3ac0>, <_ast.Constant object at 0x12f8c3e20>](0)"	[label=assignedFrom];
-	"parameters(0)$4" -> "[<_ast.Constant object at 0x12f8c3eb0>, <_ast.Constant object at 0x12f8c3ee0>](0)"	[label=assignedFrom];
-	"parameters(0)$4" -> "[<_ast.Constant object at 0x12f8c3f70>, <_ast.Constant object at 0x12f8c3fa0>, <_ast.Constant object at 0x12f8c3fd0>, <_ast.Constant \
-object at 0x12f8b9040>, <_ast.Constant object at 0x12f8b9070>, <_ast.Constant object at 0x12f8b90a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8c3d90>, <_ast.Constant object at 0x12f8c3dc0>, <_ast.Constant object at 0x12f8c3df0>, <_ast.Constant \
-object at 0x12f8c3e50>, <_ast.Constant object at 0x12f8c3ac0>, <_ast.Constant object at 0x12f8c3e20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c3eb0>, <_ast.Constant object at 0x12f8c3ee0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c3f70>, <_ast.Constant object at 0x12f8c3fa0>, <_ast.Constant object at 0x12f8c3fd0>, <_ast.Constant \
-object at 0x12f8b9040>, <_ast.Constant object at 0x12f8b9070>, <_ast.Constant object at 0x12f8b90a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"parameters(0)$4" -> "[<_ast.Constant object at 0x7fd4c0598c40>, <_ast.Constant object at 0x7fd4c0598c10>, <_ast.Constant object at 0x7fd4c0598c70>, <_\
+ast.Constant object at 0x7fd4c0598ca0>, <_ast.Constant object at 0x7fd4c05986a0>, <_ast.Constant object at 0x7fd4c0598d00>](0)"	[label=assignedFrom];
+	"parameters(0)$4" -> "[<_ast.Constant object at 0x7fd4c0598d30>, <_ast.Constant object at 0x7fd4c0598d60>](0)"	[label=assignedFrom];
+	"parameters(0)$4" -> "[<_ast.Constant object at 0x7fd4c0598df0>, <_ast.Constant object at 0x7fd4c0598e20>, <_ast.Constant object at 0x7fd4c0598e50>, <_\
+ast.Constant object at 0x7fd4c0598e80>, <_ast.Constant object at 0x7fd4c0598eb0>, <_ast.Constant object at 0x7fd4c0598ee0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0598c40>, <_ast.Constant object at 0x7fd4c0598c10>, <_ast.Constant object at 0x7fd4c0598c70>, <_\
+ast.Constant object at 0x7fd4c0598ca0>, <_ast.Constant object at 0x7fd4c05986a0>, <_ast.Constant object at 0x7fd4c0598d00>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0598d30>, <_ast.Constant object at 0x7fd4c0598d60>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0598df0>, <_ast.Constant object at 0x7fd4c0598e20>, <_ast.Constant object at 0x7fd4c0598e50>, <_\
+ast.Constant object at 0x7fd4c0598e80>, <_ast.Constant object at 0x7fd4c0598eb0>, <_ast.Constant object at 0x7fd4c0598ee0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"lasso(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_lasso(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_lasso(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -807,20 +848,20 @@ object at 0x12f8b9040>, <_ast.Constant object at 0x12f8b9070>, <_ast.Constant ob
 	"parameters(0)$5" -> "tol(0)"	[label=assignedFrom];
 	"parameters(0)$5" -> "max_iter(0)"	[label=assignedFrom];
 	"parameters(0)$5" -> "l1_ratio(0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9a90>, <_ast.Constant object at 0x12f8b9ac0>, <_ast.Constant object at 0x12f8b9af0>](0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9b50>](0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9bb0>, <_ast.Constant object at 0x12f8b9be0>](0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9c40>, <_ast.Constant object at 0x12f8b9c70>](0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9cd0>, <_ast.Constant object at 0x12f8b9d00>](0)"	[label=assignedFrom];
-	"parameters(0)$5" -> "[<_ast.Constant object at 0x12f8b9d60>, <_ast.Constant object at 0x12f8b9d90>, <_ast.Constant object at 0x12f8b9dc0>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05ba880>, <_ast.Constant object at 0x7fd4c05ba8b0>, <_ast.Constant object at 0x7fd4c05ba8e0>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05ba940>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05ba9a0>, <_ast.Constant object at 0x7fd4c05ba9d0>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05baa30>, <_ast.Constant object at 0x7fd4c05baa60>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05baac0>, <_ast.Constant object at 0x7fd4c05baaf0>](0)"	[label=assignedFrom];
+	"parameters(0)$5" -> "[<_ast.Constant object at 0x7fd4c05bab50>, <_ast.Constant object at 0x7fd4c05bab80>, <_ast.Constant object at 0x7fd4c05babb0>](0)"	[label=assignedFrom];
 	"max_iter(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"l1_ratio(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9a90>, <_ast.Constant object at 0x12f8b9ac0>, <_ast.Constant object at 0x12f8b9af0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9b50>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9bb0>, <_ast.Constant object at 0x12f8b9be0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9c40>, <_ast.Constant object at 0x12f8b9c70>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9cd0>, <_ast.Constant object at 0x12f8b9d00>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b9d60>, <_ast.Constant object at 0x12f8b9d90>, <_ast.Constant object at 0x12f8b9dc0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05ba880>, <_ast.Constant object at 0x7fd4c05ba8b0>, <_ast.Constant object at 0x7fd4c05ba8e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05ba940>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05ba9a0>, <_ast.Constant object at 0x7fd4c05ba9d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05baa30>, <_ast.Constant object at 0x7fd4c05baa60>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05baac0>, <_ast.Constant object at 0x7fd4c05baaf0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05bab50>, <_ast.Constant object at 0x7fd4c05bab80>, <_ast.Constant object at 0x7fd4c05babb0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"enet(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_enet(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_enet(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -840,15 +881,15 @@ object at 0x12f8b9040>, <_ast.Constant object at 0x12f8b9070>, <_ast.Constant ob
 	"parameters(0)$6" -> "alpha(0)"	[label=assignedFrom];
 	"parameters(0)$6" -> "max_iter(0)"	[label=assignedFrom];
 	"parameters(0)$6" -> "epsilon(0)"	[label=assignedFrom];
-	"parameters(0)$6" -> "[<_ast.Constant object at 0x12f8af730>](0)"	[label=assignedFrom];
-	"parameters(0)$6" -> "[<_ast.Constant object at 0x12f8af790>](0)"	[label=assignedFrom];
-	"parameters(0)$6" -> "[<_ast.Constant object at 0x12f8af7f0>](0)"	[label=assignedFrom];
-	"parameters(0)$6" -> "[<_ast.Constant object at 0x12f8af850>](0)"	[label=assignedFrom];
+	"parameters(0)$6" -> "[<_ast.Constant object at 0x7fd4c059a580>](0)"	[label=assignedFrom];
+	"parameters(0)$6" -> "[<_ast.Constant object at 0x7fd4c059a5e0>](0)"	[label=assignedFrom];
+	"parameters(0)$6" -> "[<_ast.Constant object at 0x7fd4c059a640>](0)"	[label=assignedFrom];
+	"parameters(0)$6" -> "[<_ast.Constant object at 0x7fd4c059a6a0>](0)"	[label=assignedFrom];
 	"epsilon(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8af730>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8af790>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8af7f0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8af850>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c059a580>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c059a5e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c059a640>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c059a6a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"sgd(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_sgd(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_sgd(0)$0" -> "1(0)"	[label=GridSearchCV];
@@ -872,29 +913,29 @@ object at 0x12f8b9040>, <_ast.Constant object at 0x12f8b9070>, <_ast.Constant ob
 	"param_grid(0)$0" -> "min_samples_split(0)"	[label=assignedFrom];
 	"param_grid(0)$0" -> "presort(0)"	[label=assignedFrom];
 	"param_grid(0)$0" -> "random_state(0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b7220>, <_ast.Constant object at 0x12f8b7250>, <_ast.Constant object at 0x12f8b7280>, <_ast.Constant \
-object at 0x12f8b72b0>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b7370>, <_ast.Constant object at 0x12f8b73a0>, <_ast.Constant object at 0x12f8b73d0>, <_ast.Constant \
-object at 0x12f8b7400>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b74c0>, <_ast.Constant object at 0x12f8b7490>, <_ast.Constant object at 0x12f8b7520>, <_ast.Constant \
-object at 0x12f8b74f0>, <_ast.Constant object at 0x12f8b7580>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b7670>, <_ast.Constant object at 0x12f8b7310>, <_ast.Constant object at 0x12f8b76a0>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b7700>, <_ast.Constant object at 0x12f8b7730>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f8b7790>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c059a9a0>, <_ast.Constant object at 0x7fd4c059afd0>, <_ast.Constant object at 0x7fd4c059a940>, <_\
+ast.Constant object at 0x7fd4c04eb040>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb0a0>, <_ast.Constant object at 0x7fd4c04eb0d0>, <_ast.Constant object at 0x7fd4c04eb100>, <_\
+ast.Constant object at 0x7fd4c04eb130>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb1c0>, <_ast.Constant object at 0x7fd4c04eb1f0>, <_ast.Constant object at 0x7fd4c04eb220>, <_\
+ast.Constant object at 0x7fd4c04eb250>, <_ast.Constant object at 0x7fd4c04eb280>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb2e0>, <_ast.Constant object at 0x7fd4c04eb310>, <_ast.Constant object at 0x7fd4c04eb340>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb3a0>, <_ast.Constant object at 0x7fd4c04eb3d0>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb430>](0)"	[label=assignedFrom];
 	"max_features(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"max_leaf_nodes(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"min_samples_split(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"presort(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"random_state(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b7220>, <_ast.Constant object at 0x12f8b7250>, <_ast.Constant object at 0x12f8b7280>, <_ast.Constant \
-object at 0x12f8b72b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b7370>, <_ast.Constant object at 0x12f8b73a0>, <_ast.Constant object at 0x12f8b73d0>, <_ast.Constant \
-object at 0x12f8b7400>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b74c0>, <_ast.Constant object at 0x12f8b7490>, <_ast.Constant object at 0x12f8b7520>, <_ast.Constant \
-object at 0x12f8b74f0>, <_ast.Constant object at 0x12f8b7580>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b7670>, <_ast.Constant object at 0x12f8b7310>, <_ast.Constant object at 0x12f8b76a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b7700>, <_ast.Constant object at 0x12f8b7730>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8b7790>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c059a9a0>, <_ast.Constant object at 0x7fd4c059afd0>, <_ast.Constant object at 0x7fd4c059a940>, <_\
+ast.Constant object at 0x7fd4c04eb040>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04eb0a0>, <_ast.Constant object at 0x7fd4c04eb0d0>, <_ast.Constant object at 0x7fd4c04eb100>, <_\
+ast.Constant object at 0x7fd4c04eb130>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04eb1c0>, <_ast.Constant object at 0x7fd4c04eb1f0>, <_ast.Constant object at 0x7fd4c04eb220>, <_\
+ast.Constant object at 0x7fd4c04eb250>, <_ast.Constant object at 0x7fd4c04eb280>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04eb2e0>, <_ast.Constant object at 0x7fd4c04eb310>, <_ast.Constant object at 0x7fd4c04eb340>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04eb3a0>, <_ast.Constant object at 0x7fd4c04eb3d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04eb430>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_dtree(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_dtree(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"grid_dtree(0)$0" -> "score_calc(0)$0"	[label=GridSearchCV];
@@ -922,15 +963,15 @@ object at 0x12f8b74f0>, <_ast.Constant object at 0x12f8b7580>](0)" -> "house-pri
 	"param_grid(0)$1" -> "min_samples_split(0)"	[label=assignedFrom];
 	"param_grid(0)$1" -> "random_state(0)"	[label=assignedFrom];
 	"param_grid(0)$1" -> "n_estimators(0)"	[label=assignedFrom];
-	"param_grid(0)$1" -> "[<_ast.Constant object at 0x12f8c6400>, <_ast.Constant object at 0x12f8c6460>, <_ast.Constant object at 0x12f8c6490>, <_ast.Constant \
-object at 0x12f8c64c0>](0)"	[label=assignedFrom];
-	"param_grid(0)$1" -> "[<_ast.Constant object at 0x12f8c6550>, <_ast.Constant object at 0x12f8c6580>](0)"	[label=assignedFrom];
-	"param_grid(0)$1" -> "[<_ast.Constant object at 0x12f8c65b0>](0)"	[label=assignedFrom];
+	"param_grid(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ed220>, <_ast.Constant object at 0x7fd4c04ed250>, <_ast.Constant object at 0x7fd4c04ed280>, <_\
+ast.Constant object at 0x7fd4c04ed2e0>](0)"	[label=assignedFrom];
+	"param_grid(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ed370>, <_ast.Constant object at 0x7fd4c04ed3a0>](0)"	[label=assignedFrom];
+	"param_grid(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ed400>](0)"	[label=assignedFrom];
 	"n_estimators(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c6400>, <_ast.Constant object at 0x12f8c6460>, <_ast.Constant object at 0x12f8c6490>, <_ast.Constant \
-object at 0x12f8c64c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c6550>, <_ast.Constant object at 0x12f8c6580>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c65b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ed220>, <_ast.Constant object at 0x7fd4c04ed250>, <_ast.Constant object at 0x7fd4c04ed280>, <_\
+ast.Constant object at 0x7fd4c04ed2e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ed370>, <_ast.Constant object at 0x7fd4c04ed3a0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ed400>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_rf(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_rf(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"grid_rf(0)$0" -> "score_calc(0)$0"	[label=GridSearchCV];
@@ -965,18 +1006,18 @@ object at 0x12f8c64c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=ap
 	"param_grid(0)$2" -> "n_neighbors(0)"	[label=assignedFrom];
 	"param_grid(0)$2" -> "weights(0)"	[label=assignedFrom];
 	"param_grid(0)$2" -> "algorithm(0)"	[label=assignedFrom];
-	"param_grid(0)$2" -> "[<_ast.Constant object at 0x12f8ae8e0>, <_ast.Constant object at 0x12f8ae910>, <_ast.Constant object at 0x12f8ae940>, <_ast.Constant \
-object at 0x12f8ae970>, <_ast.Constant object at 0x12f8ae9a0>, <_ast.Constant object at 0x12f8ae9d0>, <_ast.Constant object at 0x12f8aea00>](\
-0)"	[label=assignedFrom];
-	"param_grid(0)$2" -> "[<_ast.Constant object at 0x12f8aea60>, <_ast.Constant object at 0x12f8aea90>](0)"	[label=assignedFrom];
-	"param_grid(0)$2" -> "[<_ast.Constant object at 0x12f8aeaf0>, <_ast.Constant object at 0x12f8ae820>, <_ast.Constant object at 0x12f8aeb20>](0)"	[label=assignedFrom];
+	"param_grid(0)$2" -> "[<_ast.Constant object at 0x7fd4c04e1760>, <_ast.Constant object at 0x7fd4c04e1790>, <_ast.Constant object at 0x7fd4c04e1490>, <_\
+ast.Constant object at 0x7fd4c04e17c0>, <_ast.Constant object at 0x7fd4c04e17f0>, <_ast.Constant object at 0x7fd4c04e1820>, <_ast.Constant \
+object at 0x7fd4c04e1850>](0)"	[label=assignedFrom];
+	"param_grid(0)$2" -> "[<_ast.Constant object at 0x7fd4c04e15b0>, <_ast.Constant object at 0x7fd4c04e18b0>](0)"	[label=assignedFrom];
+	"param_grid(0)$2" -> "[<_ast.Constant object at 0x7fd4c04e1910>, <_ast.Constant object at 0x7fd4c04e1940>, <_ast.Constant object at 0x7fd4c04e1970>](0)"	[label=assignedFrom];
 	"weights(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"algorithm(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ae8e0>, <_ast.Constant object at 0x12f8ae910>, <_ast.Constant object at 0x12f8ae940>, <_ast.Constant \
-object at 0x12f8ae970>, <_ast.Constant object at 0x12f8ae9a0>, <_ast.Constant object at 0x12f8ae9d0>, <_ast.Constant object at 0x12f8aea00>](\
-0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8aea60>, <_ast.Constant object at 0x12f8aea90>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8aeaf0>, <_ast.Constant object at 0x12f8ae820>, <_ast.Constant object at 0x12f8aeb20>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e1760>, <_ast.Constant object at 0x7fd4c04e1790>, <_ast.Constant object at 0x7fd4c04e1490>, <_\
+ast.Constant object at 0x7fd4c04e17c0>, <_ast.Constant object at 0x7fd4c04e17f0>, <_ast.Constant object at 0x7fd4c04e1820>, <_ast.Constant \
+object at 0x7fd4c04e1850>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e15b0>, <_ast.Constant object at 0x7fd4c04e18b0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e1910>, <_ast.Constant object at 0x7fd4c04e1940>, <_ast.Constant object at 0x7fd4c04e1970>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_knn(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_knn(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"grid_knn(0)$0" -> "score_calc(0)$0"	[label=GridSearchCV];
@@ -1024,11 +1065,11 @@ object at 0x12f8ae970>, <_ast.Constant object at 0x12f8ae9a0>, <_ast.Constant ob
 	"normalize_y(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"param_grid(0)$3" -> "normalize_y(0)"	[label=assignedFrom];
 	"param_grid(0)$3" -> "kernel(0)"	[label=assignedFrom];
-	"param_grid(0)$3" -> "[<_ast.Constant object at 0x12f9362e0>, <_ast.Constant object at 0x12f936310>](0)"	[label=assignedFrom];
-	"param_grid(0)$3" -> "[<_ast.Call object at 0x12f936370>, <_ast.Call object at 0x12f9363d0>](0)"	[label=assignedFrom];
+	"param_grid(0)$3" -> "[<_ast.Constant object at 0x7fd4c04f0130>, <_ast.Constant object at 0x7fd4c04f0190>](0)"	[label=assignedFrom];
+	"param_grid(0)$3" -> "[<_ast.Call object at 0x7fd4c04f01f0>, <_ast.Call object at 0x7fd4c04f0250>](0)"	[label=assignedFrom];
 	"kernel(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9362e0>, <_ast.Constant object at 0x12f936310>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f936370>, <_ast.Call object at 0x12f9363d0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f0130>, <_ast.Constant object at 0x7fd4c04f0190>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd4c04f01f0>, <_ast.Call object at 0x7fd4c04f0250>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
 	"grid_gpr(0)$0" -> "nr_cv(0)$0"	[label=GridSearchCV];
 	"grid_gpr(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"grid_gpr(0)$0" -> "score_calc(0)$0"	[label=GridSearchCV];
@@ -1052,18 +1093,18 @@ object at 0x12f8ae970>, <_ast.Constant object at 0x12f8ae9a0>, <_ast.Constant ob
 	"sub_gpr(0)$4" -> "sub_gpr(0)$3"	[label=to_csv];
 	"sub_gpr(0)$4" -> "gpr.csv(0)"	[label=to_csv];
 	"gpr.csv(0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9454c0>, <_ast.Name object at 0x12f9454f0>, <_ast.Name object at 0x12f945520>, <_ast.Name object at 0x12f945550>, <_\
-ast.Name object at 0x12f945580>, <_ast.Name object at 0x12f9455b0>, <_ast.Name object at 0x12f9455e0>, <_ast.Name object at 0x12f945610>, <_\
-ast.Name object at 0x12f945640>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"list_scores(0)$0" -> "[<_ast.Name object at 0x12f9454c0>, <_ast.Name object at 0x12f9454f0>, <_ast.Name object at 0x12f945520>, <_ast.Name object at 0x12f945550>, <_\
-ast.Name object at 0x12f945580>, <_ast.Name object at 0x12f9455b0>, <_ast.Name object at 0x12f9455e0>, <_ast.Name object at 0x12f945610>, <_\
-ast.Name object at 0x12f945640>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f945700>, <_ast.Constant object at 0x12f945730>, <_ast.Constant object at 0x12f945760>, <_ast.Constant \
-object at 0x12f9457c0>, <_ast.Constant object at 0x12f945820>, <_ast.Constant object at 0x12f945850>, <_ast.Constant object at 0x12f945880>, <_\
-ast.Constant object at 0x12f9458b0>, <_ast.Constant object at 0x12f9458e0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
-	"list_regressors(0)$0" -> "[<_ast.Constant object at 0x12f945700>, <_ast.Constant object at 0x12f945730>, <_ast.Constant object at 0x12f945760>, <_ast.Constant \
-object at 0x12f9457c0>, <_ast.Constant object at 0x12f945820>, <_ast.Constant object at 0x12f945850>, <_ast.Constant object at 0x12f945880>, <_\
-ast.Constant object at 0x12f9458b0>, <_ast.Constant object at 0x12f9458e0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04f42b0>, <_ast.Name object at 0x7fd4c04f42e0>, <_ast.Name object at 0x7fd4c04f4310>, <_ast.Name object \
+at 0x7fd4c04f4340>, <_ast.Name object at 0x7fd4c04f4370>, <_ast.Name object at 0x7fd4c04f43a0>, <_ast.Name object at 0x7fd4c04f43d0>, <_\
+ast.Name object at 0x7fd4c04f4430>, <_ast.Name object at 0x7fd4c04f44c0>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"list_scores(0)$0" -> "[<_ast.Name object at 0x7fd4c04f42b0>, <_ast.Name object at 0x7fd4c04f42e0>, <_ast.Name object at 0x7fd4c04f4310>, <_ast.Name object \
+at 0x7fd4c04f4340>, <_ast.Name object at 0x7fd4c04f4370>, <_ast.Name object at 0x7fd4c04f43a0>, <_ast.Name object at 0x7fd4c04f43d0>, <_\
+ast.Name object at 0x7fd4c04f4430>, <_ast.Name object at 0x7fd4c04f44c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04f4580>, <_ast.Constant object at 0x7fd4c04f45b0>, <_ast.Constant object at 0x7fd4c04f45e0>, <_\
+ast.Constant object at 0x7fd4c04f4610>, <_ast.Constant object at 0x7fd4c04f4640>, <_ast.Constant object at 0x7fd4c04f4670>, <_ast.Constant \
+object at 0x7fd4c04f46a0>, <_ast.Constant object at 0x7fd4c04f46d0>, <_ast.Constant object at 0x7fd4c04f4700>](0)" -> "house-prices-eda-to-ml-beginner.ipynb"	[label=appearsIn];
+	"list_regressors(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f4580>, <_ast.Constant object at 0x7fd4c04f45b0>, <_ast.Constant object at 0x7fd4c04f45e0>, <_\
+ast.Constant object at 0x7fd4c04f4610>, <_ast.Constant object at 0x7fd4c04f4640>, <_ast.Constant object at 0x7fd4c04f4670>, <_ast.Constant \
+object at 0x7fd4c04f46a0>, <_ast.Constant object at 0x7fd4c04f46d0>, <_ast.Constant object at 0x7fd4c04f4700>](0)"	[label=assignedFrom];
 	"fig(0)$5" -> "plt(0)$8"	[label=subplots];
 	"ax(0)$1" -> "plt(0)$8"	[label=subplots];
 	"fig(0)$6" -> "10(0)"	[label=set_size_inches];

@@ -18,9 +18,9 @@ digraph "" {
 	"data(0)$0" -> "../input/independent-data-1222019/Ulterra 5 Blade 150 RPM (Phase 2).csv(0)"	[label=read_csv];
 	"../input/independent-data-1222019/Ulterra 5 Blade 150 RPM (Phase 2).csv(0)" -> "kerkar-modeling-e1ddeb.ipynb"	[label=appearsIn];
 	"sns(1)$0" -> "sns(1)"	[label=set];
-	"columns(1)$0" -> "[<_ast.Constant object at 0x12f85e190>, <_ast.Constant object at 0x12f85eb50>, <_ast.Constant object at 0x12f85e8e0>, <_ast.Constant \
-object at 0x12f85eac0>, <_ast.Constant object at 0x12f85ee20>, <_ast.Constant object at 0x12f85eb20>, <_ast.Constant object at 0x12f85ebb0>, <_\
-ast.Constant object at 0x12f85eb80>](1)"	[label=assignedFrom];
+	"columns(1)$0" -> "[<_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048eca0>, <_\
+ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048e5b0>, <_ast.Constant object at 0x7fd4c048e940>, <_ast.Constant \
+object at 0x7fd4c048ea90>, <_ast.Constant object at 0x7fd4c048eaf0>](1)"	[label=assignedFrom];
 	"sns(1)$1" -> "sns(1)$0"	[label=pairplot];
 	"sns(1)$1" -> "columns(1)$0"	[label=pairplot];
 	"sns(1)$1" -> "data(1)"	[label=pairplot];
@@ -71,10 +71,7 @@ ast.Constant object at 0x12f85eb80>](1)"	[label=assignedFrom];
 	"ROP(3)$0" -> "2(3)"	[label=Div];
 	"ROP(3)$0" -> "math(3)"	[label=Div];
 	"ROP(3)$0" -> "3(3)"	[label=Div];
-	"print[0]" -> "CCS(3)$0"	[label=print];
-	"print[0]" -> "Best Fitness= \%s(5)"	[label=print];
-	"print[0]" -> "best_coff(0)$0"	[label=print];
-	"best_coff(0)$0" -> "df(0)$0"	[label=Best_coffs];
+	"print[60/4]" -> "CCS(3)$0"	[label=print];
 	"w(4)" -> "Objective_Function[0]"	[label=_argToVar];
 	"Error(4)$0" -> "0(4)"	[label=assignedFrom];
 	"ROP_pred_list(4)$0" -> "[](4)"	[label=assignedFrom];
@@ -175,15 +172,16 @@ ast.Constant object at 0x12f85eb80>](1)"	[label=assignedFrom];
 	"pop(5)$1" -> "trial(5)$0"	[label=assignedFrom];
 	"best_idx(5)$1" -> "j(5)"	[label=assignedFrom];
 	"best(5)$1" -> "trial_denorm(5)$0"	[label=assignedFrom];
-	"print[1]" -> "fitness(5)$1"	[label=print];
-	"print[2]" -> "best_idx(5)$1"	[label=print];
+	"print[103/8]" -> "fitness(5)$1"	[label=print];
+	"print[103/8]" -> "best_idx(5)$1"	[label=print];
+	"print[103/8]" -> "Best Fitness= \%s(5)"	[label=print];
 	"ite(6)" -> "Run_DEA[0]"	[label=_argToVar];
 	"results(6)$0" -> "[](6)"	[label=assignedFrom];
 	"result(6)$0" -> "ite(6)"	[label=list];
 	"result(6)$0" -> "De_Algorithm(6)"	[label=list];
 	"result(6)$0" -> "Objective_Function(6)"	[label=list];
-	"result(6)$0" -> "[<_ast.Tuple object at 0x130534250>, <_ast.Tuple object at 0x1305344c0>, <_ast.Tuple object at 0x1305349a0>, <_ast.Tuple object \
-at 0x130534160>, <_ast.Tuple object at 0x130534a30>, <_ast.Tuple object at 0x130534550>](6)"	[label=list];
+	"result(6)$0" -> "[<_ast.Tuple object at 0x7fd500999bb0>, <_ast.Tuple object at 0x7fd500999070>, <_ast.Tuple object at 0x7fd500999370>, <_ast.Tuple \
+object at 0x7fd5009990a0>, <_ast.Tuple object at 0x7fd500999040>, <_ast.Tuple object at 0x7fd500999ac0>](6)"	[label=list];
 	"result(6)$0" -> "0.7(6)"	[label=list];
 	"result(6)$0" -> "0.8(6)"	[label=list];
 	"result(6)$0" -> "15(6)"	[label=list];
@@ -192,7 +190,7 @@ at 0x130534160>, <_ast.Tuple object at 0x130534a30>, <_ast.Tuple object at 0x130
 	"df(7)" -> "Best_coffs[0]"	[label=_argToVar];
 	"df(7)$0" -> "df(7)"	[label=zip];
 	"df(7)$0" -> "0(7)"	[label=zip];
-	"cols(7)$0" -> "[<_ast.Constant object at 0x12f9a6ac0>](7)"	[label=assignedFrom];
+	"cols(7)$0" -> "[<_ast.Constant object at 0x7fd500849f10>](7)"	[label=assignedFrom];
 	"df(7)$1" -> "df(7)$0"	[label=drop];
 	"df(7)$1" -> "cols(7)$0"	[label=drop];
 	"df(7)$1" -> "df(7)$1"	[label=drop];
@@ -202,8 +200,6 @@ at 0x130534160>, <_ast.Tuple object at 0x130534a30>, <_ast.Tuple object at 0x130
 	"best_coff(7)$0" -> "len(7)"	[label=assignedFrom];
 	"best_coff(7)$0" -> "1(7)"	[label=assignedFrom];
 	"df(8)" -> "Plot_DEA_Evolution[0]"	[label=_argToVar];
-	"Plot_DEA_Evolution[0]" -> "df(0)$0"	[label=Plot_DEA_Evolution];
-	"df(0)$0" -> "1000(0)"	[label=Run_DEA];
 	"data_ncol(8)$0" -> "df(8)"	[label=len];
 	"fig(8)$0" -> "plt(8)"	[label=figure];
 	"fig(8)$0" -> "15(8)"	[label=figure];
@@ -264,6 +260,10 @@ at 0x130534160>, <_ast.Tuple object at 0x130534a30>, <_ast.Tuple object at 0x130
 	"plt(9)$4" -> "plt(9)$3"	[label=ylabel];
 	"1000(0)" -> "kerkar-modeling-e1ddeb.ipynb"	[label=appearsIn];
 	"results(0)$0" -> "1000(0)"	[label=Run_DEA];
+	"df(0)$0" -> "1000(0)"	[label=Run_DEA];
+	"best_coff(0)$0" -> "df(0)$0"	[label=Best_coffs];
+	"print[165/0]" -> "best_coff(0)$0"	[label=print];
+	"Plot_DEA_Evolution[166/0]" -> "df(0)$0"	[label=Plot_DEA_Evolution];
 	"Kerkar_Model(0)" -> "kerkar-modeling-e1ddeb.ipynb"	[label=appearsIn];
 	"Est_ROP_Model(0)$0" -> "best_coff(0)$0"	[label=assignedFrom];
 	"Est_ROP_Model(0)$0" -> "Kerkar_Model(0)"	[label=assignedFrom];

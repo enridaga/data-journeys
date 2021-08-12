@@ -14,121 +14,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Train Data Size (0)"	[label=print];
-	"print[0]" -> "Specs Data size (0)"	[label=print];
-	"print[0]" -> "train_labels(0)$0"	[label=print];
-	"print[0]" -> "Train Lables size (0)"	[label=print];
-	"print[0]" -> "Test size (0)"	[label=print];
-	"print[0]" -> "Sample_submission  size (0)"	[label=print];
-	"print[0]" -> "
-Train_Data columns (0)"	[label=print];
-	"print[0]" -> "
-Specs_Data columns (0)"	[label=print];
-	"print[0]" -> "
-Train_Labels columns (0)"	[label=print];
-	"print[0]" -> "
-Test_Data columns (0)"	[label=print];
-	"print[0]" -> "
-Sample_submission columns (0)"	[label=print];
-	"print[0]" -> "Qualitative/Categorical Columns:(0)"	[label=print];
-	"print[0]" -> "cate_cols(0)$0"	[label=print];
-	"print[0]" -> "
-Quntitative/Numerical Columns:(0)"	[label=print];
-	"print[0]" -> "num_cols(0)$0"	[label=print];
-	"print[0]" -> "train_data(0)$1"	[label=print];
-	"print[0]" -> "Unique installation ids:(0)"	[label=print];
-	"print[0]" -> "
-Unique Game Sessions:(0)"	[label=print];
-	"print[0]" -> "
-Unique Titles:(0)"	[label=print];
-	"print[0]" -> "merge_data(0)$0"	[label=print];
-	"print[0]" -> "type_count(0)$1"	[label=print];
-	"print[0]" -> "type_count(0)$3"	[label=print];
-	"print[0]" -> "train_data(0)$11"	[label=print];
-	"print[0]" -> "date_title_count(0)$2"	[label=print];
-	"print[0]" -> "event_count(0)$3"	[label=print];
-	"print[0]" -> "data(0)$0"	[label=print];
-	"Train Data Size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"Specs Data size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"train_labels(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"train_labels(0)$0" -> "/kaggle/input/data-science-bowl-2019/train_labels.csv(0)"	[label=read_csv];
-	"Train Lables size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"Test size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"Sample_submission  size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Train_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Specs_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Train_Labels columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Test_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Sample_submission columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"Qualitative/Categorical Columns:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"cate_cols(0)$0" -> "train_data(0)$0"	[label=assignedFrom];
-	"cate_cols(0)$0" -> "[<_ast.Constant object at 0x12f8f5c70>](0)"	[label=assignedFrom];
-	"
-Quntitative/Numerical Columns:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"num_cols(0)$0" -> "train_data(0)$0"	[label=assignedFrom];
-	"num_cols(0)$0" -> "[<_ast.Constant object at 0x12f8f5d30>](0)"	[label=assignedFrom];
-	"train_data(0)$1" -> "train_data(0)$0"	[label=count];
-	"Unique installation ids:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Unique Game Sessions:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"
-Unique Titles:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"merge_data(0)$0" -> "train_labels(0)$0"	[label=merge];
-	"merge_data(0)$0" -> "train_data(0)$1"	[label=merge];
-	"merge_data(0)$0" -> "pd(0)$1"	[label=merge];
-	"merge_data(0)$0" -> "[<_ast.Constant object at 0x12feb1310>, <_ast.Constant object at 0x12feb10a0>, <_ast.Constant object at 0x12feb1340>](0)"	[label=merge];
-	"type_count(0)$1" -> "type(0)"	[label=round];
-	"type_count(0)$1" -> "2(0)"	[label=round];
-	"type_count(0)$1" -> "type_count(0)$0"	[label=round];
-	"type_count(0)$1" -> "total(0)$0"	[label=round];
-	"type_count(0)$1" -> "100(0)"	[label=round];
-	"type_count(0)$3" -> "world(0)"	[label=round];
-	"type_count(0)$3" -> "2(0)"	[label=round];
-	"type_count(0)$3" -> "100(0)"	[label=round];
-	"type_count(0)$3" -> "type_count(0)$2"	[label=round];
-	"type_count(0)$3" -> "total(0)$1"	[label=round];
-	"train_data(0)$11" -> "timestamp(0)"	[label=assignedFrom];
-	"train_data(0)$11" -> "train_data(0)$10"	[label=assignedFrom];
-	"date_title_count(0)$2" -> "merge_data(0)$11"	[label=reset_index];
-	"date_title_count(0)$2" -> "[<_ast.Constant object at 0x12f93afd0>](0)"	[label=reset_index];
-	"date_title_count(0)$2" -> "game_time(0)"	[label=reset_index];
-	"event_count(0)$3" -> "event_count(0)$2"	[label=sort_values];
-	"data(0)$0" -> "train_data(0)$11"	[label=assignedFrom];
-	"data(0)$0" -> "event_code(0)"	[label=assignedFrom];
-	"data(0)$0" -> "4030(0)"	[label=assignedFrom];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "train_labels(0)$0"	[label=print];
-	"print[1]" -> "train_data(0)$0"	[label=print];
-	"print[1]" -> "specs_data(0)$0"	[label=print];
-	"print[1]" -> "test_data(0)$0"	[label=print];
-	"print[1]" -> "sample_submission(0)$0"	[label=print];
-	"print[1]" -> "title(0)"	[label=print];
-	"print[1]" -> "type(0)"	[label=print];
-	"print[1]" -> "world(0)"	[label=print];
-	"print[1]" -> "year(0)"	[label=print];
-	"print[1]" -> "month(0)"	[label=print];
-	"print[1]" -> "date(0)"	[label=print];
-	"train_data(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"train_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/train.csv(0)"	[label=read_csv];
-	"specs_data(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"specs_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/specs.csv(0)"	[label=read_csv];
-	"test_data(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"test_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/test.csv(0)"	[label=read_csv];
-	"sample_submission(0)$0" -> "pd(0)$1"	[label=read_csv];
-	"sample_submission(0)$0" -> "/kaggle/input/data-science-bowl-2019/sample_submission.csv(0)"	[label=read_csv];
-	"title(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"type(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"world(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"year(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"month(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"date(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[8/8]" -> "os(0)"	[label=print];
+	"print[8/8]" -> "dirname(0)"	[label=print];
+	"print[8/8]" -> "filename(0)"	[label=print];
 	pandas -> "eda-visualization-story-dsb-2019.ipynb"	[label=importedBy];
 	"pd(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"pd(0)" -> pandas	[label=assignedFrom];
@@ -177,178 +65,277 @@ Unique Titles:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn]
 	"pd(0)$1" -> "500(0)"	[label=set_option];
 	"display.max_columns(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"500(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"train_data(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"train_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/train.csv(0)"	[label=read_csv];
 	"/kaggle/input/data-science-bowl-2019/train.csv(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"Train Data Size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[30/0]" -> "train_data(0)$0"	[label=print];
+	"print[30/0]" -> "Train Data Size (0)"	[label=print];
+	"specs_data(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"specs_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/specs.csv(0)"	[label=read_csv];
 	"/kaggle/input/data-science-bowl-2019/specs.csv(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"Specs Data size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[32/0]" -> "specs_data(0)$0"	[label=print];
+	"print[32/0]" -> "Specs Data size (0)"	[label=print];
+	"train_labels(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"train_labels(0)$0" -> "/kaggle/input/data-science-bowl-2019/train_labels.csv(0)"	[label=read_csv];
 	"/kaggle/input/data-science-bowl-2019/train_labels.csv(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"Train Lables size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[34/0]" -> "train_labels(0)$0"	[label=print];
+	"print[34/0]" -> "Train Lables size (0)"	[label=print];
+	"test_data(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"test_data(0)$0" -> "/kaggle/input/data-science-bowl-2019/test.csv(0)"	[label=read_csv];
 	"/kaggle/input/data-science-bowl-2019/test.csv(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"Test size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[36/0]" -> "test_data(0)$0"	[label=print];
+	"print[36/0]" -> "Test size (0)"	[label=print];
+	"sample_submission(0)$0" -> "pd(0)$1"	[label=read_csv];
+	"sample_submission(0)$0" -> "/kaggle/input/data-science-bowl-2019/sample_submission.csv(0)"	[label=read_csv];
 	"/kaggle/input/data-science-bowl-2019/sample_submission.csv(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"Sample_submission  size (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[38/0]" -> "sample_submission(0)$0"	[label=print];
+	"print[38/0]" -> "Sample_submission  size (0)"	[label=print];
+	"
+Train_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[40/0]" -> "train_data(0)$0"	[label=print];
+	"print[40/0]" -> "
+Train_Data columns (0)"	[label=print];
+	"
+Specs_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[41/0]" -> "specs_data(0)$0"	[label=print];
+	"print[41/0]" -> "
+Specs_Data columns (0)"	[label=print];
+	"
+Train_Labels columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[42/0]" -> "train_labels(0)$0"	[label=print];
+	"print[42/0]" -> "
+Train_Labels columns (0)"	[label=print];
+	"
+Test_Data columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[43/0]" -> "test_data(0)$0"	[label=print];
+	"print[43/0]" -> "
+Test_Data columns (0)"	[label=print];
+	"
+Sample_submission columns (0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[44/0]" -> "sample_submission(0)$0"	[label=print];
+	"print[44/0]" -> "
+Sample_submission columns (0)"	[label=print];
 	"acc_grp(0)$0" -> "train_labels(0)$0"	[label=reset_index];
-	"acc_grp(0)$0" -> "[<_ast.Constant object at 0x12fecf550>](0)"	[label=reset_index];
+	"acc_grp(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc0d0>](0)"	[label=reset_index];
 	"acc_grp(0)$0" -> "game_session(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fecf550>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc0d0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"game_session(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"display[0]" -> "acc_grp(0)$0"	[label=display];
-	"display[0]" -> "title_grp(0)$0"	[label=display];
-	"display[0]" -> "game_grp(0)$0"	[label=display];
+	"display[47/0]" -> "acc_grp(0)$0"	[label=display];
+	"fig(0)$0" -> "go(0)"	[label=Figure];
+	"fig(0)$0" -> "[<_ast.Call object at 0x7fd500832ac0>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd500832ac0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"fig(0)$1" -> "fig(0)$0"	[label=show];
 	"title_grp(0)$0" -> "train_labels(0)$0"	[label=reset_index];
 	"title_grp(0)$0" -> "game_session(0)"	[label=reset_index];
-	"title_grp(0)$0" -> "[<_ast.Constant object at 0x12fecfe50>](0)"	[label=reset_index];
-	"game_grp(0)$0" -> "train_labels(0)$0"	[label=reset_index];
-	"game_grp(0)$0" -> "[<_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade3a0>](0)"	[label=reset_index];
-	"game_grp(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"fig(0)$0" -> "go(0)"	[label=Figure];
-	"fig(0)$0" -> "[<_ast.Call object at 0x12fecf8e0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12fecf8e0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$1" -> "fig(0)$0"	[label=show];
-	"[<_ast.Constant object at 0x12fecfe50>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"title_grp(0)$0" -> "[<_ast.Constant object at 0x7fd500832b80>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500832b80>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"display[51/0]" -> "title_grp(0)$0"	[label=display];
 	"fig(0)$2" -> "go(0)"	[label=Figure];
-	"fig(0)$2" -> "[<_ast.Call object at 0x12fecfeb0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12fecfeb0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"fig(0)$2" -> "[<_ast.Call object at 0x7fd500832670>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd500832670>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$3" -> "fig(0)$2"	[label=show];
-	"[<_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade3a0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"game_grp(0)$0" -> "train_labels(0)$0"	[label=reset_index];
+	"game_grp(0)$0" -> "[<_ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd5008321f0>](0)"	[label=reset_index];
+	"game_grp(0)$0" -> "installation_id(0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd5008321f0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"installation_id(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"display[55/0]" -> "game_grp(0)$0"	[label=display];
 	"fig(0)$4" -> "go(0)"	[label=Figure];
-	"fig(0)$4" -> "[<_ast.Constant object at 0x12fade550>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade250>, <_ast.Constant \
-object at 0x12fadedc0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade970>, <_ast.Constant object at 0x12fadebb0>, <_\
-ast.Constant object at 0x12fade430>, <_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fadec10>, <_ast.Constant \
-object at 0x12fade3d0>, <_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant object at 0x12fade850>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant \
-object at 0x12fadee80>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade700>, <_\
-ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant \
-object at 0x12fade9d0>](0)"	[label=Figure];
-	"fig(0)$4" -> "[<_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12fade760>, <_ast.Constant \
-object at 0x12fade880>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fadecd0>, <_\
-ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
-object at 0x12fade730>, <_ast.Constant object at 0x12faded30>, <_ast.Constant object at 0x12fb135b0>, <_ast.Constant object at 0x12fb136a0>, <_\
-ast.Constant object at 0x12fb13e80>, <_ast.Constant object at 0x12fb13d00>, <_ast.Constant object at 0x12fb13100>, <_ast.Constant \
-object at 0x12fb13d90>, <_ast.Constant object at 0x12fb131f0>, <_ast.Constant object at 0x12fb13610>, <_ast.Constant object at 0x12fb13250>, <_\
-ast.Constant object at 0x12fb130d0>, <_ast.Constant object at 0x12fb13bb0>, <_ast.Constant object at 0x12fb13340>, <_ast.Constant \
-object at 0x12fb13580>](0)"	[label=Figure];
-	"fig(0)$4" -> "[<_ast.Constant object at 0x12fb13310>, <_ast.Constant object at 0x12fb137c0>, <_ast.Constant object at 0x12fb13280>, <_ast.Constant \
-object at 0x12fb13400>, <_ast.Constant object at 0x12fb13460>, <_ast.Constant object at 0x12fb13220>, <_ast.Constant object at 0x12fb13b80>, <_\
-ast.Constant object at 0x12fb13640>, <_ast.Constant object at 0x12fb13160>, <_ast.Constant object at 0x12fb130a0>, <_ast.Constant \
-object at 0x12fb13490>, <_ast.Constant object at 0x12fb131c0>, <_ast.Constant object at 0x12fb13be0>, <_ast.Constant object at 0x12fb13040>, <_\
-ast.Constant object at 0x12fb132b0>, <_ast.Constant object at 0x12fb13a30>, <_ast.Constant object at 0x12fb134f0>, <_ast.Constant \
-object at 0x12fb139a0>, <_ast.Constant object at 0x12fb13e20>, <_ast.Constant object at 0x12fb13b20>, <_ast.Constant object at 0x12fb13940>, <_\
-ast.Constant object at 0x12fb13820>, <_ast.Constant object at 0x12fb13cd0>, <_ast.Constant object at 0x12fb13760>, <_ast.Constant \
-object at 0x12fb13ac0>](0)"	[label=Figure];
-	"fig(0)$4" -> "[<_ast.Constant object at 0x12fb132e0>, <_ast.Constant object at 0x12fb13a90>, <_ast.Constant object at 0x12fb13d60>, <_ast.Constant \
-object at 0x12fb134c0>, <_ast.Constant object at 0x12fb13790>, <_ast.Constant object at 0x12fb13ca0>, <_ast.Constant object at 0x12fb13c10>, <_\
-ast.Constant object at 0x12fb13d30>, <_ast.Constant object at 0x12fb138b0>, <_ast.Constant object at 0x12fb13550>, <_ast.Constant \
-object at 0x12fb13b50>, <_ast.Constant object at 0x12fb13910>, <_ast.Constant object at 0x12fb13670>, <_ast.Constant object at 0x12fb139d0>, <_\
-ast.Constant object at 0x12fb13c40>, <_ast.Constant object at 0x12fb133d0>, <_ast.Constant object at 0x12fb13a60>, <_ast.Constant \
-object at 0x12fb13a00>, <_ast.Constant object at 0x12fb13430>, <_ast.Constant object at 0x12fb137f0>, <_ast.Constant object at 0x12fb13f40>, <_\
-ast.Constant object at 0x12fb13520>, <_ast.Constant object at 0x12fb13df0>, <_ast.Constant object at 0x12fb13fa0>, <_ast.Constant \
-object at 0x12fb13f70>](0)"	[label=Figure];
+	"fig(0)$4" -> "[<_ast.Constant object at 0x7fd4902abf70>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab100>, <_\
+ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant \
+object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object \
+at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant object at \
+0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902ab550>, <_\
+ast.Constant object at 0x7fd4902ab1f0>, <_ast.Constant object at 0x7fd4902ab790>, <_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant \
+object at 0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object \
+at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abc40>](0)"	[label=Figure];
+	"fig(0)$4" -> "[<_ast.Constant object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902ab9d0>, <_\
+ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab8b0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant \
+object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object \
+at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at \
+0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab400>, <_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902abee0>, <_\
+ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant \
+object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902abdf0>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object \
+at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902ab430>](0)"	[label=Figure];
+	"fig(0)$4" -> "[<_ast.Constant object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902abb20>, <_ast.Constant object at 0x7fd4902abdc0>, <_\
+ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902aba30>, <_ast.Constant object at 0x7fd4902abd90>, <_ast.Constant \
+object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object \
+at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at \
+0x7fd4902abf10>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object at 0x7fd4c04ff760>, <_\
+ast.Constant object at 0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ff1c0>, <_ast.Constant object at 0x7fd4c04ff5b0>, <_ast.Constant object \
+at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object at 0x7fd4c04ff6a0>](0)"	[label=Figure];
+	"fig(0)$4" -> "[<_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff4f0>, <_\
+ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant \
+object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object \
+at 0x7fd4c04ffa30>, <_ast.Constant object at 0x7fd4c04ff400>, <_ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at \
+0x7fd4c04ff610>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ff130>, <_\
+ast.Constant object at 0x7fd4c04ffbb0>, <_ast.Constant object at 0x7fd4c04ff2e0>, <_ast.Constant object at 0x7fd4c04ffb50>, <_ast.Constant \
+object at 0x7fd4c04ffd60>, <_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object \
+at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff100>](0)"	[label=Figure];
 	"fig(0)$4" -> "total(0)"	[label=Figure];
-	"[<_ast.Constant object at 0x12fade550>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade250>, <_ast.Constant \
-object at 0x12fadedc0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade970>, <_ast.Constant object at 0x12fadebb0>, <_\
-ast.Constant object at 0x12fade430>, <_ast.Constant object at 0x12fadeb50>, <_ast.Constant object at 0x12fadec10>, <_ast.Constant \
-object at 0x12fade3d0>, <_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant object at 0x12fade850>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant \
-object at 0x12fadee80>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade700>, <_\
-ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant \
-object at 0x12fade9d0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12fade760>, <_ast.Constant \
-object at 0x12fade880>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fadecd0>, <_\
-ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
-object at 0x12fade730>, <_ast.Constant object at 0x12faded30>, <_ast.Constant object at 0x12fb135b0>, <_ast.Constant object at 0x12fb136a0>, <_\
-ast.Constant object at 0x12fb13e80>, <_ast.Constant object at 0x12fb13d00>, <_ast.Constant object at 0x12fb13100>, <_ast.Constant \
-object at 0x12fb13d90>, <_ast.Constant object at 0x12fb131f0>, <_ast.Constant object at 0x12fb13610>, <_ast.Constant object at 0x12fb13250>, <_\
-ast.Constant object at 0x12fb130d0>, <_ast.Constant object at 0x12fb13bb0>, <_ast.Constant object at 0x12fb13340>, <_ast.Constant \
-object at 0x12fb13580>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb13310>, <_ast.Constant object at 0x12fb137c0>, <_ast.Constant object at 0x12fb13280>, <_ast.Constant \
-object at 0x12fb13400>, <_ast.Constant object at 0x12fb13460>, <_ast.Constant object at 0x12fb13220>, <_ast.Constant object at 0x12fb13b80>, <_\
-ast.Constant object at 0x12fb13640>, <_ast.Constant object at 0x12fb13160>, <_ast.Constant object at 0x12fb130a0>, <_ast.Constant \
-object at 0x12fb13490>, <_ast.Constant object at 0x12fb131c0>, <_ast.Constant object at 0x12fb13be0>, <_ast.Constant object at 0x12fb13040>, <_\
-ast.Constant object at 0x12fb132b0>, <_ast.Constant object at 0x12fb13a30>, <_ast.Constant object at 0x12fb134f0>, <_ast.Constant \
-object at 0x12fb139a0>, <_ast.Constant object at 0x12fb13e20>, <_ast.Constant object at 0x12fb13b20>, <_ast.Constant object at 0x12fb13940>, <_\
-ast.Constant object at 0x12fb13820>, <_ast.Constant object at 0x12fb13cd0>, <_ast.Constant object at 0x12fb13760>, <_ast.Constant \
-object at 0x12fb13ac0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb132e0>, <_ast.Constant object at 0x12fb13a90>, <_ast.Constant object at 0x12fb13d60>, <_ast.Constant \
-object at 0x12fb134c0>, <_ast.Constant object at 0x12fb13790>, <_ast.Constant object at 0x12fb13ca0>, <_ast.Constant object at 0x12fb13c10>, <_\
-ast.Constant object at 0x12fb13d30>, <_ast.Constant object at 0x12fb138b0>, <_ast.Constant object at 0x12fb13550>, <_ast.Constant \
-object at 0x12fb13b50>, <_ast.Constant object at 0x12fb13910>, <_ast.Constant object at 0x12fb13670>, <_ast.Constant object at 0x12fb139d0>, <_\
-ast.Constant object at 0x12fb13c40>, <_ast.Constant object at 0x12fb133d0>, <_ast.Constant object at 0x12fb13a60>, <_ast.Constant \
-object at 0x12fb13a00>, <_ast.Constant object at 0x12fb13430>, <_ast.Constant object at 0x12fb137f0>, <_ast.Constant object at 0x12fb13f40>, <_\
-ast.Constant object at 0x12fb13520>, <_ast.Constant object at 0x12fb13df0>, <_ast.Constant object at 0x12fb13fa0>, <_ast.Constant \
-object at 0x12fb13f70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abf70>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab100>, <_\
+ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant \
+object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object \
+at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant object at \
+0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902ab550>, <_\
+ast.Constant object at 0x7fd4902ab1f0>, <_ast.Constant object at 0x7fd4902ab790>, <_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant \
+object at 0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object \
+at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abc40>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902ab9d0>, <_\
+ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab8b0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant \
+object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object \
+at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at \
+0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab400>, <_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902abee0>, <_\
+ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant \
+object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902abdf0>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object \
+at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902ab430>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902abb20>, <_ast.Constant object at 0x7fd4902abdc0>, <_\
+ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902aba30>, <_ast.Constant object at 0x7fd4902abd90>, <_ast.Constant \
+object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object \
+at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at \
+0x7fd4902abf10>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object at 0x7fd4c04ff760>, <_\
+ast.Constant object at 0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ff1c0>, <_ast.Constant object at 0x7fd4c04ff5b0>, <_ast.Constant object \
+at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object at 0x7fd4c04ff6a0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff4f0>, <_\
+ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant \
+object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object \
+at 0x7fd4c04ffa30>, <_ast.Constant object at 0x7fd4c04ff400>, <_ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at \
+0x7fd4c04ff610>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ff130>, <_\
+ast.Constant object at 0x7fd4c04ffbb0>, <_ast.Constant object at 0x7fd4c04ff2e0>, <_ast.Constant object at 0x7fd4c04ffb50>, <_ast.Constant \
+object at 0x7fd4c04ffd60>, <_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object \
+at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff100>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"total(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$5" -> "fig(0)$4"	[label=update_layout];
 	"fig(0)$6" -> "fig(0)$5"	[label=show];
-	"[<_ast.Constant object at 0x12f8f5c70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5d30>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"game(0)$0" -> "train_data(0)$1"	[label=assignedFrom];
+	"Qualitative/Categorical Columns:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[68/0]" -> "Qualitative/Categorical Columns:(0)"	[label=print];
+	"cate_cols(0)$0" -> "train_data(0)$0"	[label=assignedFrom];
+	"cate_cols(0)$0" -> "[<_ast.Constant object at 0x7fd5007f05b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f05b0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[70/0]" -> "cate_cols(0)$0"	[label=print];
+	"
+Quntitative/Numerical Columns:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[71/0]" -> "
+Quntitative/Numerical Columns:(0)"	[label=print];
+	"num_cols(0)$0" -> "train_data(0)$0"	[label=assignedFrom];
+	"num_cols(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0940>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[73/0]" -> "num_cols(0)$0"	[label=print];
+	"train_data(0)$1" -> "train_data(0)$0"	[label=count];
 	"game(0)$0" -> "game_session(0)"	[label=assignedFrom];
+	"game(0)$0" -> "train_data(0)$1"	[label=assignedFrom];
 	"game(0)$0" -> "fffe9cd0cc5b076b(0)"	[label=assignedFrom];
 	"fffe9cd0cc5b076b(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"game(0)$1" -> "game(0)$0"	[label=head];
 	"game(0)$1" -> "2(0)"	[label=head];
 	"2(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12feb1310>, <_ast.Constant object at 0x12feb10a0>, <_ast.Constant object at 0x12feb1340>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"merge_data(0)$1" -> "merge_data(0)$0"	[label=head];
+	"Unique installation ids:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[79/0]" -> "Unique installation ids:(0)"	[label=print];
+	"print[80/0]" -> "train_data(0)$1"	[label=print];
+	"print[81/0]" -> "train_labels(0)$0"	[label=print];
+	"
+Unique Game Sessions:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[82/0]" -> "
+Unique Game Sessions:(0)"	[label=print];
+	"print[83/0]" -> "train_data(0)$1"	[label=print];
+	"print[84/0]" -> "train_labels(0)$0"	[label=print];
+	"
+Unique Titles:(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[85/0]" -> "
+Unique Titles:(0)"	[label=print];
+	"print[86/0]" -> "train_data(0)$1"	[label=print];
+	"print[87/0]" -> "train_labels(0)$0"	[label=print];
+	"merge_data(0)$0" -> "pd(0)$1"	[label=merge];
+	"merge_data(0)$0" -> "train_labels(0)$0"	[label=merge];
+	"merge_data(0)$0" -> "train_data(0)$1"	[label=merge];
+	"merge_data(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af670>, <_ast.Constant object at 0x7fd4c04afeb0>, <_ast.Constant object at 0x7fd4c04af940>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4c04af670>, <_ast.Constant object at 0x7fd4c04afeb0>, <_ast.Constant object at 0x7fd4c04af940>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[90/0]" -> "merge_data(0)$0"	[label=print];
 	"merge_data(0)$1" -> "2(0)"	[label=head];
+	"merge_data(0)$1" -> "merge_data(0)$0"	[label=head];
 	"event_count(0)$0" -> "train_data(0)$1"	[label=reset_index];
 	"event_count(0)$0" -> "title(0)"	[label=reset_index];
+	"title(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"event_count(0)$1" -> "event_count(0)$0"	[label=astype];
 	"event_count(0)$1" -> "index(0)"	[label=astype];
 	"event_count(0)$1" -> "category(0)"	[label=astype];
 	"index(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"category(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$7" -> "title(0)"	[label=bar];
 	"fig(0)$7" -> "px(0)"	[label=bar];
+	"fig(0)$7" -> "title(0)"	[label=bar];
 	"fig(0)$7" -> "event_count(0)$1"	[label=bar];
 	"fig(0)$7" -> "index(0)"	[label=bar];
 	"fig(0)$7" -> "0(0)"	[label=bar];
 	"fig(0)$7" -> "10(0)"	[label=bar];
-	"fig(0)$7" -> "[<_ast.Constant object at 0x12feb19a0>](0)"	[label=bar];
+	"fig(0)$7" -> "[<_ast.Constant object at 0x7fd5009af550>](0)"	[label=bar];
 	"fig(0)$7" -> "Event Count(0)"	[label=bar];
 	"fig(0)$7" -> "400(0)"	[label=bar];
 	"0(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"10(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12feb19a0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009af550>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"Event Count(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"400(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$8" -> "fig(0)$7"	[label=show];
-	"fig(0)$9" -> "title(0)"	[label=bar];
 	"fig(0)$9" -> "px(0)"	[label=bar];
+	"fig(0)$9" -> "title(0)"	[label=bar];
 	"fig(0)$9" -> "event_count(0)$1"	[label=bar];
 	"fig(0)$9" -> "index(0)"	[label=bar];
 	"fig(0)$9" -> "10(0)"	[label=bar];
 	"fig(0)$9" -> "Event Count(0)"	[label=bar];
 	"fig(0)$9" -> "400(0)"	[label=bar];
-	"fig(0)$9" -> "[<_ast.Constant object at 0x130532550>](0)"	[label=bar];
-	"[<_ast.Constant object at 0x130532550>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"fig(0)$9" -> "[<_ast.Constant object at 0x7fd50080d520>](0)"	[label=bar];
+	"[<_ast.Constant object at 0x7fd50080d520>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$10" -> "fig(0)$9"	[label=show];
 	"type_count(0)$0" -> "train_data(0)$1"	[label=reset_index];
 	"type_count(0)$0" -> "type(0)"	[label=reset_index];
+	"type(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"total(0)$0" -> "train_data(0)$1"	[label=len];
+	"type_count(0)$1" -> "2(0)"	[label=round];
+	"type_count(0)$1" -> "type_count(0)$0"	[label=round];
+	"type_count(0)$1" -> "type(0)"	[label=round];
+	"type_count(0)$1" -> "total(0)$0"	[label=round];
+	"type_count(0)$1" -> "100(0)"	[label=round];
 	"100(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$11" -> "type_count(0)$1"	[label=bar];
-	"fig(0)$11" -> "type(0)"	[label=bar];
+	"print[107/0]" -> "type_count(0)$1"	[label=print];
 	"fig(0)$11" -> "px(0)"	[label=bar];
 	"fig(0)$11" -> "index(0)"	[label=bar];
 	"fig(0)$11" -> "400(0)"	[label=bar];
-	"fig(0)$11" -> "[<_ast.Constant object at 0x12fec1220>, <_ast.Constant object at 0x12fec1250>](0)"	[label=bar];
+	"fig(0)$11" -> "type(0)"	[label=bar];
+	"fig(0)$11" -> "type_count(0)$1"	[label=bar];
+	"fig(0)$11" -> "[<_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object at 0x7fd50080d280>](0)"	[label=bar];
 	"fig(0)$11" -> "Type Count(0)"	[label=bar];
-	"[<_ast.Constant object at 0x12fec1220>, <_ast.Constant object at 0x12fec1250>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object at 0x7fd50080d280>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"Type Count(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$12" -> "fig(0)$11"	[label=show];
 	"type_count(0)$2" -> "train_data(0)$1"	[label=reset_index];
 	"type_count(0)$2" -> "world(0)"	[label=reset_index];
+	"world(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"total(0)$1" -> "train_data(0)$1"	[label=len];
-	"fig(0)$13" -> "type_count(0)$3"	[label=bar];
-	"fig(0)$13" -> "world(0)"	[label=bar];
+	"type_count(0)$3" -> "2(0)"	[label=round];
+	"type_count(0)$3" -> "100(0)"	[label=round];
+	"type_count(0)$3" -> "type_count(0)$2"	[label=round];
+	"type_count(0)$3" -> "world(0)"	[label=round];
+	"type_count(0)$3" -> "total(0)$1"	[label=round];
+	"print[116/0]" -> "type_count(0)$3"	[label=print];
 	"fig(0)$13" -> "px(0)"	[label=bar];
 	"fig(0)$13" -> "index(0)"	[label=bar];
 	"fig(0)$13" -> "400(0)"	[label=bar];
-	"fig(0)$13" -> "[<_ast.Constant object at 0x12fec1fd0>, <_ast.Constant object at 0x12fec4040>](0)"	[label=bar];
+	"fig(0)$13" -> "world(0)"	[label=bar];
+	"fig(0)$13" -> "type_count(0)$3"	[label=bar];
+	"fig(0)$13" -> "[<_ast.Constant object at 0x7fd500869cd0>, <_ast.Constant object at 0x7fd500869d00>](0)"	[label=bar];
 	"fig(0)$13" -> "World Count(0)"	[label=bar];
-	"[<_ast.Constant object at 0x12fec1fd0>, <_ast.Constant object at 0x12fec4040>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500869cd0>, <_ast.Constant object at 0x7fd500869d00>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"World Count(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$14" -> "fig(0)$13"	[label=show];
-	"train_data(0)$2" -> "train_data(0)$1"	[label=to_datetime];
 	"train_data(0)$2" -> "pd(0)$1"	[label=to_datetime];
+	"train_data(0)$2" -> "train_data(0)$1"	[label=to_datetime];
 	"train_data(0)$2" -> "train_data(0)$2"	[label=to_datetime];
 	"train_data(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"timestamp(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
@@ -368,73 +355,84 @@ object at 0x12fb13f70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=a
 	"train_data(0)$9" -> "train_data(0)$8"	[label=assignedFrom];
 	"train_data(0)$10" -> "timestamp(0)"	[label=assignedFrom];
 	"train_data(0)$10" -> "train_data(0)$9"	[label=assignedFrom];
-	"month_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"train_data(0)$11" -> "timestamp(0)"	[label=assignedFrom];
+	"train_data(0)$11" -> "train_data(0)$10"	[label=assignedFrom];
+	"print[132/0]" -> "train_data(0)$11"	[label=print];
+	"print[132/0]" -> "year(0)"	[label=print];
+	"year(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[133/0]" -> "train_data(0)$11"	[label=print];
+	"print[133/0]" -> "month(0)"	[label=print];
+	"month(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[134/0]" -> "train_data(0)$11"	[label=print];
+	"print[134/0]" -> "date(0)"	[label=print];
+	"date(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"month_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"month_count(0)$0" -> "[<_ast.Constant object at 0x12fea04c0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fea04c0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"month_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"month_count(0)$0" -> "[<_ast.Constant object at 0x7fd500818220>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500818220>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"total(0)$2" -> "train_data(0)$11"	[label=len];
 	"month_count(0)$1" -> "installation_id(0)"	[label=round];
 	"month_count(0)$1" -> "2(0)"	[label=round];
 	"month_count(0)$1" -> "100(0)"	[label=round];
 	"month_count(0)$1" -> "month_count(0)$0"	[label=round];
 	"month_count(0)$1" -> "total(0)$2"	[label=round];
-	"fig(0)$15" -> "month(0)"	[label=bar];
 	"fig(0)$15" -> "px(0)"	[label=bar];
 	"fig(0)$15" -> "installation_id(0)"	[label=bar];
 	"fig(0)$15" -> "400(0)"	[label=bar];
+	"fig(0)$15" -> "month(0)"	[label=bar];
 	"fig(0)$15" -> "month_count(0)$1"	[label=bar];
-	"fig(0)$15" -> "[<_ast.Constant object at 0x12fea0d60>, <_ast.Constant object at 0x12fea0d90>](0)"	[label=bar];
+	"fig(0)$15" -> "[<_ast.Constant object at 0x7fd500818a60>, <_ast.Constant object at 0x7fd500818ac0>](0)"	[label=bar];
 	"fig(0)$15" -> "Installation Count(0)"	[label=bar];
-	"[<_ast.Constant object at 0x12fea0d60>, <_ast.Constant object at 0x12fea0d90>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500818a60>, <_ast.Constant object at 0x7fd500818ac0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"Installation Count(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$16" -> "fig(0)$15"	[label=show];
-	"date_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"date_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"date_count(0)$0" -> "[<_ast.Constant object at 0x12fe95280>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fe95280>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$17" -> "date(0)"	[label=Figure];
+	"date_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"date_count(0)$0" -> "[<_ast.Constant object at 0x7fd500818fd0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500818fd0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$17" -> "go(0)"	[label=Figure];
 	"fig(0)$17" -> "installation_id(0)"	[label=Figure];
+	"fig(0)$17" -> "date(0)"	[label=Figure];
 	"fig(0)$17" -> "date_count(0)$0"	[label=Figure];
 	"fig(0)$18" -> "fig(0)$17"	[label=show];
-	"hour_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"hour_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"hour_count(0)$0" -> "[<_ast.Constant object at 0x12fe95af0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fe95af0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"hour_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"hour_count(0)$0" -> "[<_ast.Constant object at 0x7fd5008138b0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd5008138b0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$19" -> "go(0)"	[label=Figure];
 	"fig(0)$19" -> "installation_id(0)"	[label=Figure];
 	"fig(0)$19" -> "hour_count(0)$0"	[label=Figure];
 	"fig(0)$19" -> "hour(0)"	[label=Figure];
 	"hour(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$20" -> "fig(0)$19"	[label=show];
-	"week_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"week_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"week_count(0)$0" -> "[<_ast.Constant object at 0x12fea4340>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fea4340>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"week_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"week_count(0)$0" -> "[<_ast.Constant object at 0x7fd500810040>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500810040>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$21" -> "go(0)"	[label=Figure];
 	"fig(0)$21" -> "installation_id(0)"	[label=Figure];
 	"fig(0)$21" -> "week_count(0)$0"	[label=Figure];
 	"fig(0)$21" -> "weekofyear(0)"	[label=Figure];
 	"weekofyear(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$22" -> "fig(0)$21"	[label=show];
-	"week_type_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"week_type_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"week_type_count(0)$0" -> "[<_ast.Constant object at 0x12fea4b80>, <_ast.Constant object at 0x12fea4bb0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fea4b80>, <_ast.Constant object at 0x12fea4bb0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$23" -> "type(0)"	[label=line];
+	"week_type_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"week_type_count(0)$0" -> "[<_ast.Constant object at 0x7fd500810880>, <_ast.Constant object at 0x7fd5008108b0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500810880>, <_ast.Constant object at 0x7fd5008108b0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$23" -> "px(0)"	[label=line];
 	"fig(0)$23" -> "installation_id(0)"	[label=line];
+	"fig(0)$23" -> "type(0)"	[label=line];
 	"fig(0)$23" -> "weekofyear(0)"	[label=line];
 	"fig(0)$23" -> "week_type_count(0)$0"	[label=line];
 	"fig(0)$24" -> "fig(0)$23"	[label=show];
-	"date_type_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"date_type_count(0)$0" -> "installation_id(0)"	[label=reset_index];
-	"date_type_count(0)$0" -> "[<_ast.Constant object at 0x12fed22e0>, <_ast.Constant object at 0x12fed2310>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fed22e0>, <_ast.Constant object at 0x12fed2310>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$25" -> "type(0)"	[label=line];
-	"fig(0)$25" -> "date(0)"	[label=line];
+	"date_type_count(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"date_type_count(0)$0" -> "[<_ast.Constant object at 0x7fd500810f40>, <_ast.Constant object at 0x7fd500810f70>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500810f40>, <_ast.Constant object at 0x7fd500810f70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$25" -> "px(0)"	[label=line];
 	"fig(0)$25" -> "installation_id(0)"	[label=line];
+	"fig(0)$25" -> "type(0)"	[label=line];
+	"fig(0)$25" -> "date(0)"	[label=line];
 	"fig(0)$25" -> "date_type_count(0)$0"	[label=line];
 	"fig(0)$26" -> "fig(0)$25"	[label=show];
 	"merge_data(0)$2" -> "pd(0)$1"	[label=to_datetime];
@@ -461,30 +459,34 @@ object at 0x12fb13f70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=a
 	"merge_data(0)$11" -> "merge_data(0)$10"	[label=assignedFrom];
 	"date_title_count(0)$0" -> "game_session(0)"	[label=reset_index];
 	"date_title_count(0)$0" -> "merge_data(0)$11"	[label=reset_index];
-	"date_title_count(0)$0" -> "[<_ast.Constant object at 0x12f93a250>, <_ast.Constant object at 0x12f93a280>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f93a250>, <_ast.Constant object at 0x12f93a280>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$27" -> "title(0)"	[label=line];
+	"date_title_count(0)$0" -> "[<_ast.Constant object at 0x7fd500820fa0>, <_ast.Constant object at 0x7fd500820fd0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500820fa0>, <_ast.Constant object at 0x7fd500820fd0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$27" -> "px(0)"	[label=line];
 	"fig(0)$27" -> "game_session(0)"	[label=line];
+	"fig(0)$27" -> "title(0)"	[label=line];
 	"fig(0)$27" -> "date_title_count(0)$0"	[label=line];
 	"fig(0)$27" -> "dayofweek(0)"	[label=line];
 	"dayofweek(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$28" -> "fig(0)$27"	[label=show];
 	"date_title_count(0)$1" -> "game_session(0)"	[label=reset_index];
 	"date_title_count(0)$1" -> "merge_data(0)$11"	[label=reset_index];
-	"date_title_count(0)$1" -> "[<_ast.Constant object at 0x12f93a910>, <_ast.Constant object at 0x12f93a940>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f93a910>, <_ast.Constant object at 0x12f93a940>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$29" -> "title(0)"	[label=line];
+	"date_title_count(0)$1" -> "[<_ast.Constant object at 0x7fd500828670>, <_ast.Constant object at 0x7fd5008286a0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500828670>, <_ast.Constant object at 0x7fd5008286a0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$29" -> "px(0)"	[label=line];
 	"fig(0)$29" -> "game_session(0)"	[label=line];
+	"fig(0)$29" -> "title(0)"	[label=line];
 	"fig(0)$29" -> "hour(0)"	[label=line];
 	"fig(0)$29" -> "date_title_count(0)$1"	[label=line];
 	"fig(0)$30" -> "fig(0)$29"	[label=show];
-	"[<_ast.Constant object at 0x12f93afd0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"date_title_count(0)$2" -> "merge_data(0)$11"	[label=reset_index];
+	"date_title_count(0)$2" -> "[<_ast.Constant object at 0x7fd500828d00>](0)"	[label=reset_index];
+	"date_title_count(0)$2" -> "game_time(0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500828d00>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"game_time(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$31" -> "date_title_count(0)$2"	[label=line];
-	"fig(0)$31" -> "title(0)"	[label=line];
+	"print[175/0]" -> "date_title_count(0)$2"	[label=print];
 	"fig(0)$31" -> "px(0)"	[label=line];
+	"fig(0)$31" -> "title(0)"	[label=line];
+	"fig(0)$31" -> "date_title_count(0)$2"	[label=line];
 	"fig(0)$31" -> "game_time(0)"	[label=line];
 	"fig(0)$32" -> "fig(0)$31"	[label=show];
 	"merge_data(0)$12" -> "category(0)"	[label=astype];
@@ -493,91 +495,102 @@ object at 0x12fb13f70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=a
 	"event_code(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"event_count(0)$2" -> "merge_data(0)$12"	[label=reset_index];
 	"event_count(0)$2" -> "event_count(0)$2"	[label=reset_index];
-	"event_count(0)$2" -> "[<_ast.Constant object at 0x12f948a60>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f948a60>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"event_count(0)$2" -> "[<_ast.Constant object at 0x7fd500827760>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500827760>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"event_count(0)$3" -> "event_count(0)$2"	[label=sort_values];
+	"print[182/0]" -> "event_count(0)$3"	[label=print];
 	"plt(0)$1" -> "plt(0)$0"	[label=figure];
-	"ax(0)$0" -> "event_count(0)$3"	[label=barplot];
 	"ax(0)$0" -> "sns(0)"	[label=barplot];
 	"ax(0)$0" -> "event_code(0)"	[label=barplot];
+	"ax(0)$0" -> "event_count(0)$3"	[label=barplot];
+	"data(0)$0" -> "train_data(0)$11"	[label=assignedFrom];
+	"data(0)$0" -> "event_code(0)"	[label=assignedFrom];
+	"data(0)$0" -> "4030(0)"	[label=assignedFrom];
 	"4030(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"print[189/0]" -> "title(0)"	[label=print];
+	"print[189/0]" -> "data(0)$0"	[label=print];
+	"print[190/0]" -> "type(0)"	[label=print];
+	"print[190/0]" -> "data(0)$0"	[label=print];
+	"print[191/0]" -> "world(0)"	[label=print];
+	"print[191/0]" -> "data(0)$0"	[label=print];
 	"game(0)$2" -> "train_data(0)$11"	[label=reset_index];
 	"game(0)$2" -> "game_time(0)"	[label=reset_index];
-	"game(0)$2" -> "[<_ast.Constant object at 0x12f92cf10>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f92cf10>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"game(0)$2" -> "[<_ast.Constant object at 0x7fd50082ccd0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd50082ccd0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"game(0)$3" -> "game(0)$2"	[label=sort_values];
-	"fig(0)$33" -> "world(0)"	[label=bar];
 	"fig(0)$33" -> "px(0)"	[label=bar];
 	"fig(0)$33" -> "400(0)"	[label=bar];
+	"fig(0)$33" -> "world(0)"	[label=bar];
 	"fig(0)$33" -> "game_time(0)"	[label=bar];
 	"fig(0)$33" -> "game(0)$3"	[label=bar];
-	"fig(0)$33" -> "[<_ast.Constant object at 0x12f9546a0>](0)"	[label=bar];
+	"fig(0)$33" -> "[<_ast.Constant object at 0x7fd5008352e0>](0)"	[label=bar];
 	"fig(0)$33" -> "Game Time(0)"	[label=bar];
-	"[<_ast.Constant object at 0x12f9546a0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008352e0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"Game Time(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$34" -> "fig(0)$33"	[label=show];
 	"game(0)$4" -> "train_data(0)$11"	[label=reset_index];
 	"game(0)$4" -> "game_time(0)"	[label=reset_index];
-	"game(0)$4" -> "[<_ast.Constant object at 0x12f954c70>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f954c70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"game(0)$4" -> "[<_ast.Constant object at 0x7fd500835820>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd500835820>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"game(0)$5" -> "game(0)$4"	[label=sort_values];
-	"fig(0)$35" -> "title(0)"	[label=bar];
 	"fig(0)$35" -> "px(0)"	[label=bar];
+	"fig(0)$35" -> "title(0)"	[label=bar];
 	"fig(0)$35" -> "0(0)"	[label=bar];
 	"fig(0)$35" -> "10(0)"	[label=bar];
 	"fig(0)$35" -> "400(0)"	[label=bar];
 	"fig(0)$35" -> "game_time(0)"	[label=bar];
 	"fig(0)$35" -> "Game Time(0)"	[label=bar];
 	"fig(0)$35" -> "game(0)$5"	[label=bar];
-	"fig(0)$35" -> "[<_ast.Constant object at 0x12f961340>](0)"	[label=bar];
-	"[<_ast.Constant object at 0x12f961340>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"fig(0)$35" -> "[<_ast.Constant object at 0x7fd500835fa0>](0)"	[label=bar];
+	"[<_ast.Constant object at 0x7fd500835fa0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"fig(0)$36" -> "fig(0)$35"	[label=show];
 	"game_sess(0)$0" -> "game_session(0)"	[label=assignedFrom];
 	"game_sess(0)$0" -> "merge_data(0)$12"	[label=assignedFrom];
 	"game_sess(0)$0" -> "a229f001486f628c(0)"	[label=assignedFrom];
 	"a229f001486f628c(0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
-	"fig(0)$37" -> "event_count(0)$3"	[label=scatter];
 	"fig(0)$37" -> "px(0)"	[label=scatter];
 	"fig(0)$37" -> "game_time(0)"	[label=scatter];
+	"fig(0)$37" -> "event_count(0)$3"	[label=scatter];
 	"fig(0)$37" -> "game_sess(0)$0"	[label=scatter];
 	"fig(0)$38" -> "fig(0)$37"	[label=show];
-	"world_type(0)$0" -> "train_data(0)$11"	[label=reset_index];
 	"world_type(0)$0" -> "game_session(0)"	[label=reset_index];
-	"world_type(0)$0" -> "[<_ast.Constant object at 0x12f961fd0>, <_ast.Constant object at 0x12f9612b0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f961fd0>, <_ast.Constant object at 0x12f9612b0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"world_type(0)$0" -> "train_data(0)$11"	[label=reset_index];
+	"world_type(0)$0" -> "[<_ast.Constant object at 0x7fd50080fc40>, <_ast.Constant object at 0x7fd50080fc70>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd50080fc40>, <_ast.Constant object at 0x7fd50080fc70>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"plt(0)$2" -> "plt(0)$1"	[label=figure];
-	"ax(0)$1" -> "type(0)"	[label=barplot];
-	"ax(0)$1" -> "world(0)"	[label=barplot];
 	"ax(0)$1" -> "sns(0)"	[label=barplot];
 	"ax(0)$1" -> "game_session(0)"	[label=barplot];
+	"ax(0)$1" -> "type(0)"	[label=barplot];
+	"ax(0)$1" -> "world(0)"	[label=barplot];
 	"ax(0)$1" -> "world_type(0)$0"	[label=barplot];
 	"world_type(0)$1" -> "train_data(0)$11"	[label=reset_index];
 	"world_type(0)$1" -> "game_time(0)"	[label=reset_index];
-	"world_type(0)$1" -> "[<_ast.Constant object at 0x12f959550>, <_ast.Constant object at 0x12f9598b0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f959550>, <_ast.Constant object at 0x12f9598b0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"world_type(0)$1" -> "[<_ast.Constant object at 0x7fd5009c74f0>, <_ast.Constant object at 0x7fd5009c7520>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd5009c74f0>, <_ast.Constant object at 0x7fd5009c7520>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=figure];
+	"ax(0)$2" -> "sns(0)"	[label=barplot];
 	"ax(0)$2" -> "type(0)"	[label=barplot];
 	"ax(0)$2" -> "world(0)"	[label=barplot];
-	"ax(0)$2" -> "sns(0)"	[label=barplot];
 	"ax(0)$2" -> "game_time(0)"	[label=barplot];
 	"ax(0)$2" -> "world_type(0)$1"	[label=barplot];
 	"world_type(0)$2" -> "train_data(0)$11"	[label=reset_index];
 	"world_type(0)$2" -> "event_count(0)$3"	[label=reset_index];
-	"world_type(0)$2" -> "[<_ast.Constant object at 0x12f943100>, <_ast.Constant object at 0x12f943130>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f943100>, <_ast.Constant object at 0x12f943130>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"world_type(0)$2" -> "[<_ast.Constant object at 0x7fd5009c7dc0>, <_ast.Constant object at 0x7fd5009c7df0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd5009c7dc0>, <_ast.Constant object at 0x7fd5009c7df0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "plt(0)$3"	[label=figure];
-	"ax(0)$3" -> "event_count(0)$3"	[label=barplot];
+	"ax(0)$3" -> "sns(0)"	[label=barplot];
 	"ax(0)$3" -> "type(0)"	[label=barplot];
 	"ax(0)$3" -> "world(0)"	[label=barplot];
-	"ax(0)$3" -> "sns(0)"	[label=barplot];
+	"ax(0)$3" -> "event_count(0)$3"	[label=barplot];
 	"ax(0)$3" -> "world_type(0)$2"	[label=barplot];
 	"world_type(0)$3" -> "game_session(0)"	[label=reset_index];
 	"world_type(0)$3" -> "merge_data(0)$12"	[label=reset_index];
-	"world_type(0)$3" -> "[<_ast.Constant object at 0x12f943a00>, <_ast.Constant object at 0x12f943700>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f943a00>, <_ast.Constant object at 0x12f943700>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
+	"world_type(0)$3" -> "[<_ast.Constant object at 0x7fd5009b46a0>, <_ast.Constant object at 0x7fd5009b46d0>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd5009b46a0>, <_ast.Constant object at 0x7fd5009b46d0>](0)" -> "eda-visualization-story-dsb-2019.ipynb"	[label=appearsIn];
 	"plt(0)$5" -> "plt(0)$4"	[label=figure];
-	"ax(0)$4" -> "title(0)"	[label=barplot];
-	"ax(0)$4" -> "world(0)"	[label=barplot];
 	"ax(0)$4" -> "sns(0)"	[label=barplot];
 	"ax(0)$4" -> "game_session(0)"	[label=barplot];
+	"ax(0)$4" -> "title(0)"	[label=barplot];
+	"ax(0)$4" -> "world(0)"	[label=barplot];
 	"ax(0)$4" -> "world_type(0)$3"	[label=barplot];
 }

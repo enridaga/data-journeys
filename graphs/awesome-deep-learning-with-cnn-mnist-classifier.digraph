@@ -23,29 +23,29 @@ digraph "" {
 	"input_layer(1)$0" -> "features(1)"	[label=reshape];
 	"input_layer(1)$0" -> "tf(1)"	[label=reshape];
 	"input_layer(1)$0" -> "x(1)"	[label=reshape];
-	"input_layer(1)$0" -> "[<_ast.UnaryOp object at 0x12f8ab370>, <_ast.Constant object at 0x12f8ab880>, <_ast.Constant object at 0x12f8ab1f0>, <_ast.Constant \
-object at 0x12f8ab0a0>](1)"	[label=reshape];
+	"input_layer(1)$0" -> "[<_ast.UnaryOp object at 0x7fd4c048ecd0>, <_ast.Constant object at 0x7fd4c048ed90>, <_ast.Constant object at 0x7fd4c048ec70>, <_\
+ast.Constant object at 0x7fd4c048e5b0>](1)"	[label=reshape];
 	"conv1(1)$0" -> "input_layer(1)$0"	[label=conv2d];
 	"conv1(1)$0" -> "tf(1)"	[label=conv2d];
 	"conv1(1)$0" -> "32(1)"	[label=conv2d];
-	"conv1(1)$0" -> "[<_ast.Constant object at 0x12f85ebb0>, <_ast.Constant object at 0x12f85e9d0>](1)"	[label=conv2d];
+	"conv1(1)$0" -> "[<_ast.Constant object at 0x7fd50080d8b0>, <_ast.Constant object at 0x7fd50080da00>](1)"	[label=conv2d];
 	"conv1(1)$0" -> "same(1)"	[label=conv2d];
 	"pool1(1)$0" -> "tf(1)"	[label=max_pooling2d];
 	"pool1(1)$0" -> "conv1(1)$0"	[label=max_pooling2d];
-	"pool1(1)$0" -> "[<_ast.Constant object at 0x12f85e880>, <_ast.Constant object at 0x12f85e670>](1)"	[label=max_pooling2d];
+	"pool1(1)$0" -> "[<_ast.Constant object at 0x7fd50080d8e0>, <_ast.Constant object at 0x7fd50080d610>](1)"	[label=max_pooling2d];
 	"pool1(1)$0" -> "2(1)"	[label=max_pooling2d];
 	"conv2(1)$0" -> "tf(1)"	[label=conv2d];
 	"conv2(1)$0" -> "same(1)"	[label=conv2d];
 	"conv2(1)$0" -> "pool1(1)$0"	[label=conv2d];
 	"conv2(1)$0" -> "64(1)"	[label=conv2d];
-	"conv2(1)$0" -> "[<_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85e640>](1)"	[label=conv2d];
+	"conv2(1)$0" -> "[<_ast.Constant object at 0x7fd50080d460>, <_ast.Constant object at 0x7fd50080dbe0>](1)"	[label=conv2d];
 	"pool2(1)$0" -> "tf(1)"	[label=max_pooling2d];
 	"pool2(1)$0" -> "2(1)"	[label=max_pooling2d];
 	"pool2(1)$0" -> "conv2(1)$0"	[label=max_pooling2d];
-	"pool2(1)$0" -> "[<_ast.Constant object at 0x12f957820>, <_ast.Constant object at 0x12f9579a0>](1)"	[label=max_pooling2d];
+	"pool2(1)$0" -> "[<_ast.Constant object at 0x7fd50080d4f0>, <_ast.Constant object at 0x7fd50080d0d0>](1)"	[label=max_pooling2d];
 	"pool2_flat(1)$0" -> "tf(1)"	[label=reshape];
 	"pool2_flat(1)$0" -> "pool2(1)$0"	[label=reshape];
-	"pool2_flat(1)$0" -> "[<_ast.UnaryOp object at 0x12f957e50>, <_ast.BinOp object at 0x12f957160>](1)"	[label=reshape];
+	"pool2_flat(1)$0" -> "[<_ast.UnaryOp object at 0x7fd4c04cc130>, <_ast.BinOp object at 0x7fd4c04ccfa0>](1)"	[label=reshape];
 	"dense(1)$0" -> "tf(1)"	[label=dense];
 	"dense(1)$0" -> "pool2_flat(1)$0"	[label=dense];
 	"dense(1)$0" -> "1024(1)"	[label=dense];
@@ -126,5 +126,5 @@ object at 0x12f8ab0a0>](1)"	[label=reshape];
 	"False(0)" -> "awesome-deep-learning-with-cnn-mnist-classifier.ipynb"	[label=appearsIn];
 	"eval_results(0)$0" -> "mnist_classifier(0)$2"	[label=evaluate];
 	"eval_results(0)$0" -> "eval_input_fn(0)$0"	[label=evaluate];
-	"print[0]" -> "eval_results(0)$0"	[label=print];
+	"print[109/0]" -> "eval_results(0)$0"	[label=print];
 }

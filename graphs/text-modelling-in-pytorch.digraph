@@ -174,148 +174,139 @@ digraph "" {
 	"os(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
 	"Available embeddings:(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[0]" -> "Available embeddings:(0)"	[label=print];
-	"print[0]" -> "Average word length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average word length of questions in test is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Max word length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Max word length of questions in test is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average character length of questions in train is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Average character length of questions in test is {0:.0f}.(0)"	[label=print];
-	"print[0]" -> "Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 val_f1={:.4f} best_t={:.2f} 	 time={:.2f}s(16)"	[label=print];
-	"print[0]" -> "Epoch {}/{} 	 loss={:.4f} 	 time={:.2f}s(16)"	[label=print];
-	"print[0]" -> "Validation loss: (16)"	[label=print];
-	"print[0]" -> "Fold (0)"	[label=print];
-	"Average word length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Average word length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Max word length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Max word length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Average character length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Average character length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"Fold (0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "os(0)"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"print[1]" -> "epoch(16)"	[label=print];
-	"print[1]" -> "avg_val_loss(16)$3"	[label=print];
-	"i(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"i(0)" -> "splits(0)$0"	[label=iteratorOf];
-	"i(0)" -> "word_index(0)$0"	[label=iteratorOf];
-	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"epoch(16)" -> "n_epochs(16)"	[label=iteratorOf];
-	"epoch(16)" -> "range(16)"	[label=iteratorOf];
-	"avg_val_loss(16)$3" -> "valid_loader(16)$0"	[label=Add];
-	"avg_val_loss(16)$3" -> "loss_fn(16)$0"	[label=Add];
-	"avg_val_loss(16)$3" -> "y_batch(16)"	[label=Add];
-	"avg_val_loss(16)$3" -> "len(16)"	[label=Add];
-	"avg_val_loss(16)$3" -> "avg_val_loss(16)$2"	[label=Add];
-	"avg_val_loss(16)$3" -> "y_pred(16)$2"	[label=Add];
+	"print[54/0]" -> "os(0)"	[label=print];
+	"print[54/0]" -> "Available embeddings:(0)"	[label=print];
+	"print[54/0]" -> "../input/embeddings/(0)"	[label=print];
 	"../input/embeddings/(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[2]" -> "test(0)$0"	[label=print];
-	"print[2]" -> "../input/embeddings/(0)"	[label=print];
-	"print[2]" -> "train(0)$2"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"print[2]" -> "1(16)"	[label=print];
-	"train(0)$2" -> "train(0)$1"	[label=head];
-	"1(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"train(0)$1" -> "train(0)$0"	[label=value_counts];
+	"train(0)$2" -> "train(0)$1"	[label=head];
+	"Average word length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[57/0]" -> "np(0)"	[label=print];
+	"print[57/0]" -> "train(0)$2"	[label=print];
+	"print[57/0]" -> "Average word length of questions in train is {0:.0f}.(0)"	[label=print];
+	"print[57/0]" -> "question_text(0)"	[label=print];
+	"print[57/0]" -> "len(0)"	[label=print];
+	"print[57/0]" -> "x(0)"	[label=print];
 	"question_text(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[3]" -> "question_text(0)"	[label=print];
-	"print[3]" -> "n_epochs(16)"	[label=print];
 	"len(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[4]" -> "len(0)"	[label=print];
-	"print[4]" -> "avg_loss(16)$1"	[label=print];
-	"avg_loss(16)$1" -> "train_loader(16)$0"	[label=Add];
-	"avg_loss(16)$1" -> "avg_loss(16)$0"	[label=Add];
-	"avg_loss(16)$1" -> "loss(16)$1"	[label=Add];
-	"avg_loss(16)$1" -> "len(16)"	[label=Add];
 	"x(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"print[5]" -> "x(0)"	[label=print];
-	"print[5]" -> "avg_val_loss(16)$1"	[label=print];
-	"print[5]" -> "elapsed_time(16)$1"	[label=print];
-	"avg_val_loss(16)$1" -> "valid_loader(16)$0"	[label=Add];
-	"avg_val_loss(16)$1" -> "loss_fn(16)$0"	[label=Add];
-	"avg_val_loss(16)$1" -> "y_batch(16)"	[label=Add];
-	"avg_val_loss(16)$1" -> "len(16)"	[label=Add];
-	"avg_val_loss(16)$1" -> "avg_val_loss(16)$0"	[label=Add];
-	"avg_val_loss(16)$1" -> "y_pred(16)$1"	[label=Add];
-	"elapsed_time(16)$1" -> "start_time(16)$0"	[label=Sub];
-	"elapsed_time(16)$1" -> "time(16)"	[label=Sub];
-	"[<_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12faded60>, <_ast.Constant \
-object at 0x12fade730>, <_ast.Constant object at 0x12fade700>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade790>, <_\
-ast.Constant object at 0x12fade940>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fade820>, <_ast.Constant \
-object at 0x12fade8b0>, <_ast.Constant object at 0x12fadebe0>, <_ast.Constant object at 0x12fade5e0>, <_ast.Constant object at 0x12fadee80>, <_\
-ast.Constant object at 0x12fade160>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fadeeb0>, <_ast.Constant \
-object at 0x12fade910>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fadef70>, <_\
-ast.Constant object at 0x12fade070>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeb20>, <_ast.Constant \
-object at 0x12fadec10>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade0d0>, <_\
-ast.Constant object at 0x12fade760>, <_ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12faded00>, <_ast.Constant \
-object at 0x12fade340>, <_ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade3a0>, <_\
-ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade0a0>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant \
-object at 0x12fade430>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fadea60>, <_ast.Constant object at 0x12fade2e0>, <_\
-ast.Constant object at 0x12fade580>, <_ast.Constant object at 0x12fade550>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant \
-object at 0x12fade640>, <_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade2b0>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fc4fb80>, <_ast.Constant \
-object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4ff10>, <_\
-ast.Constant object at 0x12fc4f9d0>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4fb50>, <_ast.Constant \
-object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant object at 0x12fc4ffa0>, <_\
-ast.Constant object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f5e0>, <_ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4fa90>, <_\
-ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4f0d0>, <_ast.Constant \
-object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4faf0>, <_\
-ast.Constant object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant \
-object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fbe0>, <_ast.Constant object at 0x12fc4fca0>, <_\
-ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant \
-object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f1c0>, <_\
-ast.Constant object at 0x12fc4f070>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant \
-object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f5b0>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant object at 0x12fc4fd60>, <_\
-ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant \
-object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4f8e0>, <_\
-ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant \
-object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f2b0>, <_\
-ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f820>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant \
-object at 0x12fc4ffd0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f580>, <_\
-ast.Constant object at 0x12fc4f790>, <_ast.Constant object at 0x12fc4f160>, <_ast.Constant object at 0x12fc4f340>, <_ast.Constant \
-object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant object at 0x12fc4f940>, <_ast.Constant object at 0x12fc4f7c0>, <_\
-ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant \
-object at 0x12fc4fee0>](0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
-	"puncts(0)$0" -> "[<_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fadedc0>, <_ast.Constant object at 0x12faded60>, <_ast.Constant \
-object at 0x12fade730>, <_ast.Constant object at 0x12fade700>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade790>, <_\
-ast.Constant object at 0x12fade940>, <_ast.Constant object at 0x12fade280>, <_ast.Constant object at 0x12fade820>, <_ast.Constant \
-object at 0x12fade8b0>, <_ast.Constant object at 0x12fadebe0>, <_ast.Constant object at 0x12fade5e0>, <_ast.Constant object at 0x12fadee80>, <_\
-ast.Constant object at 0x12fade160>, <_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fadeeb0>, <_ast.Constant \
-object at 0x12fade910>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fadef70>, <_\
-ast.Constant object at 0x12fade070>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeb20>, <_ast.Constant \
-object at 0x12fadec10>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade0d0>, <_\
-ast.Constant object at 0x12fade760>, <_ast.Constant object at 0x12fade6d0>, <_ast.Constant object at 0x12faded00>, <_ast.Constant \
-object at 0x12fade340>, <_ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade3a0>, <_\
-ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade0a0>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant \
-object at 0x12fade430>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fadea60>, <_ast.Constant object at 0x12fade2e0>, <_\
-ast.Constant object at 0x12fade580>, <_ast.Constant object at 0x12fade550>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant \
-object at 0x12fade640>, <_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fadea30>, <_ast.Constant object at 0x12fade2b0>, <_\
-ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fc4fb80>, <_ast.Constant \
-object at 0x12fc4f490>, <_ast.Constant object at 0x12fc4f040>, <_ast.Constant object at 0x12fc4f130>, <_ast.Constant object at 0x12fc4ff10>, <_\
-ast.Constant object at 0x12fc4f9d0>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4fb50>, <_ast.Constant \
-object at 0x12fc4f370>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fdc0>, <_ast.Constant object at 0x12fc4ffa0>, <_\
-ast.Constant object at 0x12fc4f1f0>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f5e0>, <_ast.Constant object at 0x12fc4f520>, <_ast.Constant object at 0x12fc4fa90>, <_\
-ast.Constant object at 0x12fc4fac0>, <_ast.Constant object at 0x12fc4f2e0>, <_ast.Constant object at 0x12fc4f0d0>, <_ast.Constant \
-object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4faf0>, <_\
-ast.Constant object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f100>, <_ast.Constant object at 0x12fc4fa30>, <_ast.Constant \
-object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4fbe0>, <_ast.Constant object at 0x12fc4fca0>, <_\
-ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant \
-object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4f1c0>, <_\
-ast.Constant object at 0x12fc4f070>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant \
-object at 0x12fc4fe20>, <_ast.Constant object at 0x12fc4f5b0>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant object at 0x12fc4fd60>, <_\
-ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant \
-object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4f8e0>, <_\
-ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fdf0>, <_ast.Constant object at 0x12fc4f4c0>, <_ast.Constant \
-object at 0x12fc4fbb0>, <_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4f2b0>, <_\
-ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f820>, <_ast.Constant object at 0x12fc4f550>, <_ast.Constant \
-object at 0x12fc4ffd0>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f580>, <_\
-ast.Constant object at 0x12fc4f790>, <_ast.Constant object at 0x12fc4f160>, <_ast.Constant object at 0x12fc4f340>, <_ast.Constant \
-object at 0x12fc4fe80>, <_ast.Constant object at 0x12fc4f700>, <_ast.Constant object at 0x12fc4f940>, <_ast.Constant object at 0x12fc4f7c0>, <_\
-ast.Constant object at 0x12fc4f6d0>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4ff70>, <_ast.Constant \
-object at 0x12fc4fee0>](0)"	[label=assignedFrom];
+	"Average word length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[58/0]" -> "np(0)"	[label=print];
+	"print[58/0]" -> "test(0)$0"	[label=print];
+	"print[58/0]" -> "question_text(0)"	[label=print];
+	"print[58/0]" -> "len(0)"	[label=print];
+	"print[58/0]" -> "x(0)"	[label=print];
+	"print[58/0]" -> "Average word length of questions in test is {0:.0f}.(0)"	[label=print];
+	"Max word length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "np(0)"	[label=print];
+	"print[59/0]" -> "train(0)$2"	[label=print];
+	"print[59/0]" -> "question_text(0)"	[label=print];
+	"print[59/0]" -> "len(0)"	[label=print];
+	"print[59/0]" -> "x(0)"	[label=print];
+	"print[59/0]" -> "Max word length of questions in train is {0:.0f}.(0)"	[label=print];
+	"Max word length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[60/0]" -> "np(0)"	[label=print];
+	"print[60/0]" -> "test(0)$0"	[label=print];
+	"print[60/0]" -> "question_text(0)"	[label=print];
+	"print[60/0]" -> "len(0)"	[label=print];
+	"print[60/0]" -> "x(0)"	[label=print];
+	"print[60/0]" -> "Max word length of questions in test is {0:.0f}.(0)"	[label=print];
+	"Average character length of questions in train is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[61/0]" -> "np(0)"	[label=print];
+	"print[61/0]" -> "train(0)$2"	[label=print];
+	"print[61/0]" -> "question_text(0)"	[label=print];
+	"print[61/0]" -> "len(0)"	[label=print];
+	"print[61/0]" -> "x(0)"	[label=print];
+	"print[61/0]" -> "Average character length of questions in train is {0:.0f}.(0)"	[label=print];
+	"Average character length of questions in test is {0:.0f}.(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[62/0]" -> "np(0)"	[label=print];
+	"print[62/0]" -> "test(0)$0"	[label=print];
+	"print[62/0]" -> "question_text(0)"	[label=print];
+	"print[62/0]" -> "len(0)"	[label=print];
+	"print[62/0]" -> "x(0)"	[label=print];
+	"print[62/0]" -> "Average character length of questions in test is {0:.0f}.(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab160>, <_\
+ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant \
+object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902ab550>, <_ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object \
+at 0x7fd4902abf70>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at \
+0x7fd4902ab1f0>, <_ast.Constant object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant object at 0x7fd4902ab670>, <_\
+ast.Constant object at 0x7fd4902ab040>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant \
+object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object \
+at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object at \
+0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902ab070>, <_ast.Constant object at 0x7fd4902ab310>, <_\
+ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant \
+object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object \
+at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902abb50>, <_ast.Constant object at \
+0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abe50>, <_\
+ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant \
+object at 0x7fd4902aba30>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object \
+at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902abdf0>, <_ast.Constant object at \
+0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab8b0>, <_\
+ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab400>, <_ast.Constant \
+object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object \
+at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab100>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at \
+0x7fd4902aba00>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902abee0>, <_\
+ast.Constant object at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant \
+object at 0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902ab7c0>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object \
+at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f07c0>, <_ast.Constant object at \
+0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f04c0>, <_\
+ast.Constant object at 0x7fd5007f0fd0>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at 0x7fd5007f0d60>, <_ast.Constant \
+object at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object \
+at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object at \
+0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant \
+object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object \
+at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at \
+0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f0940>, <_\
+ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant \
+object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object \
+at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at \
+0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f03d0>, <_\
+ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant \
+object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object \
+at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at \
+0x7fd5007f0340>](0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"puncts(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant object at 0x7fd4902ab160>, <_\
+ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant \
+object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902ab550>, <_ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object \
+at 0x7fd4902abf70>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at \
+0x7fd4902ab1f0>, <_ast.Constant object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant object at 0x7fd4902ab670>, <_\
+ast.Constant object at 0x7fd4902ab040>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab3d0>, <_ast.Constant \
+object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object \
+at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object at \
+0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902ab070>, <_ast.Constant object at 0x7fd4902ab310>, <_\
+ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant \
+object at 0x7fd4902ab9d0>, <_ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object \
+at 0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902abb50>, <_ast.Constant object at \
+0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abe50>, <_\
+ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant \
+object at 0x7fd4902aba30>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object \
+at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902abdf0>, <_ast.Constant object at \
+0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab8b0>, <_\
+ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab400>, <_ast.Constant \
+object at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object \
+at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab100>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at \
+0x7fd4902aba00>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902abee0>, <_\
+ast.Constant object at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant \
+object at 0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902ab7c0>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object \
+at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f07c0>, <_ast.Constant object at \
+0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f04c0>, <_\
+ast.Constant object at 0x7fd5007f0fd0>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at 0x7fd5007f0d60>, <_ast.Constant \
+object at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object \
+at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object at \
+0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant \
+object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object \
+at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at \
+0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f0940>, <_\
+ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant \
+object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object \
+at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at \
+0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f03d0>, <_\
+ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant \
+object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object \
+at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at \
+0x7fd5007f0340>](0)"	[label=assignedFrom];
 	"x(2)" -> "clean_text[0]"	[label=_argToVar];
 	"x(2)$0" -> "x(2)"	[label=str];
 	"punct(2)" -> "puncts(2)"	[label=iteratorOf];
@@ -685,13 +676,18 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"nb_words(0)$0" -> "max_features(0)$0"	[label=min];
 	"nb_words(0)$0" -> "word_index(0)$0"	[label=min];
 	"embedding_matrix(0)$0" -> "np(0)"	[label=normal];
-	"embedding_matrix(0)$0" -> "1(0)"	[label=normal];
 	"embedding_matrix(0)$0" -> "embed_size(0)$0"	[label=normal];
 	"embedding_matrix(0)$0" -> "emb_mean(0)$0"	[label=normal];
 	"embedding_matrix(0)$0" -> "emb_std(0)$0"	[label=normal];
 	"embedding_matrix(0)$0" -> "nb_words(0)$0"	[label=normal];
+	"embedding_matrix(0)$0" -> "1(0)"	[label=normal];
+	"1(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"word(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"word(0)" -> "word_index(0)$0"	[label=iteratorOf];
+	"i(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"i(0)" -> "splits(0)$0"	[label=iteratorOf];
+	"i(0)" -> "word_index(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"enumerate(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"embedding_vector(0)$0" -> "embedding_index(0)$0"	[label=get];
 	"embedding_vector(0)$0" -> "word(0)"	[label=get];
@@ -717,9 +713,9 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"emb_std(0)$1" -> "0.0053247833(0)"	[label=assignedFrom];
 	"emb_std(0)$1" -> "0.49346462(0)"	[label=assignedFrom];
 	"embedding_matrix1(0)$0" -> "np(0)"	[label=normal];
-	"embedding_matrix1(0)$0" -> "1(0)"	[label=normal];
 	"embedding_matrix1(0)$0" -> "embed_size(0)$0"	[label=normal];
 	"embedding_matrix1(0)$0" -> "nb_words(0)$0"	[label=normal];
+	"embedding_matrix1(0)$0" -> "1(0)"	[label=normal];
 	"embedding_matrix1(0)$0" -> "emb_mean(0)$1"	[label=normal];
 	"embedding_matrix1(0)$0" -> "emb_std(0)$1"	[label=normal];
 	"embedding_vector(0)$1" -> "word(0)"	[label=get];
@@ -727,9 +723,9 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"embedding_matrix1(0)$1" -> "embedding_matrix1(0)$0"	[label=assignedFrom];
 	"embedding_matrix1(0)$1" -> "embedding_vector(0)$1"	[label=assignedFrom];
 	"embedding_matrix(0)$2" -> "np(0)"	[label=mean];
-	"embedding_matrix(0)$2" -> "[<_ast.Name object at 0x12f8d5df0>, <_ast.Name object at 0x12f8d5d60>](0)"	[label=mean];
+	"embedding_matrix(0)$2" -> "[<_ast.Name object at 0x7fd5008679a0>, <_ast.Name object at 0x7fd5008679d0>](0)"	[label=mean];
 	"embedding_matrix(0)$2" -> "0(0)"	[label=mean];
-	"[<_ast.Name object at 0x12f8d5df0>, <_ast.Name object at 0x12f8d5d60>](0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5008679a0>, <_ast.Name object at 0x7fd5008679d0>](0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"0(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"self(11)" -> "__init__[0]"	[label=_argToVar];
 	"feature_dim(11)" -> "__init__[1]"	[label=_argToVar];
@@ -900,6 +896,8 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"loss_fn(16)$0" -> "torch(16)"	[label=cuda];
 	"loss_fn(16)$0" -> "mean(16)"	[label=cuda];
 	"best_score(16)$0" -> "np(16)"	[label=assignedFrom];
+	"epoch(16)" -> "range(16)"	[label=iteratorOf];
+	"epoch(16)" -> "n_epochs(16)"	[label=iteratorOf];
 	"start_time(16)$0" -> "time(16)"	[label=time];
 	"model(16)$0" -> "model(16)"	[label=train];
 	"avg_loss(16)$0" -> "0.0(16)"	[label=assignedFrom];
@@ -920,6 +918,10 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"optimizer(16)$1" -> "optimizer(16)$0"	[label=zero_grad];
 	"loss(16)$1" -> "loss(16)$0"	[label=backward];
 	"optimizer(16)$2" -> "optimizer(16)$1"	[label=step];
+	"avg_loss(16)$1" -> "train_loader(16)$0"	[label=Add];
+	"avg_loss(16)$1" -> "avg_loss(16)$0"	[label=Add];
+	"avg_loss(16)$1" -> "loss(16)$1"	[label=Add];
+	"avg_loss(16)$1" -> "len(16)"	[label=Add];
 	"model(16)$1" -> "model(16)$0"	[label=eval];
 	"valid_preds(16)$0" -> "np(16)"	[label=zeros];
 	"valid_preds(16)$0" -> "x_val_fold(16)"	[label=zeros];
@@ -930,6 +932,12 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"i(16)" -> "test_loader(16)"	[label=iteratorOf];
 	"y_pred(16)$1" -> "x_batch(16)"	[label=detach];
 	"y_pred(16)$1" -> "model(16)$1"	[label=detach];
+	"avg_val_loss(16)$1" -> "valid_loader(16)$0"	[label=Add];
+	"avg_val_loss(16)$1" -> "loss_fn(16)$0"	[label=Add];
+	"avg_val_loss(16)$1" -> "y_batch(16)"	[label=Add];
+	"avg_val_loss(16)$1" -> "len(16)"	[label=Add];
+	"avg_val_loss(16)$1" -> "avg_val_loss(16)$0"	[label=Add];
+	"avg_val_loss(16)$1" -> "y_pred(16)$1"	[label=Add];
 	"valid_preds(16)$1" -> "valid_preds(16)$0"	[label=assignedFrom];
 	"valid_preds(16)$1" -> "0(16)"	[label=assignedFrom];
 	"valid_preds(16)$1" -> "y_pred(16)$1"	[label=assignedFrom];
@@ -944,19 +952,41 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"val_threshold(16)$0" -> "threshold(16)"	[label=assignedFrom];
 	"elapsed_time(16)$0" -> "start_time(16)$0"	[label=Sub];
 	"elapsed_time(16)$0" -> "time(16)"	[label=Sub];
-	"print[6]" -> "val_f1(16)$0"	[label=print];
-	"print[7]" -> "val_threshold(16)$0"	[label=print];
-	"print[8]" -> "elapsed_time(16)$0"	[label=print];
+	"print[339/12]" -> "epoch(16)"	[label=print];
+	"print[339/12]" -> "n_epochs(16)"	[label=print];
+	"print[339/12]" -> "avg_loss(16)$1"	[label=print];
+	"print[339/12]" -> "avg_val_loss(16)$1"	[label=print];
+	"print[339/12]" -> "val_f1(16)$0"	[label=print];
+	"print[339/12]" -> "val_threshold(16)$0"	[label=print];
+	"print[339/12]" -> "elapsed_time(16)$0"	[label=print];
+	"print[339/12]" -> "Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 val_f1={:.4f} best_t={:.2f} 	 time={:.2f}s(16)"	[label=print];
+	"print[339/12]" -> "1(16)"	[label=print];
+	"elapsed_time(16)$1" -> "start_time(16)$0"	[label=Sub];
+	"elapsed_time(16)$1" -> "time(16)"	[label=Sub];
+	"print[343/12]" -> "epoch(16)"	[label=print];
+	"print[343/12]" -> "n_epochs(16)"	[label=print];
+	"print[343/12]" -> "avg_loss(16)$1"	[label=print];
+	"print[343/12]" -> "1(16)"	[label=print];
+	"print[343/12]" -> "elapsed_time(16)$1"	[label=print];
+	"print[343/12]" -> "Epoch {}/{} 	 loss={:.4f} 	 time={:.2f}s(16)"	[label=print];
 	"valid_preds(16)$2" -> "np(16)"	[label=zeros];
 	"valid_preds(16)$2" -> "x_val_fold(16)"	[label=zeros];
 	"valid_preds(16)$2" -> "0(16)"	[label=zeros];
 	"avg_val_loss(16)$2" -> "0.0(16)"	[label=assignedFrom];
 	"y_pred(16)$2" -> "x_batch(16)"	[label=detach];
 	"y_pred(16)$2" -> "model(16)$1"	[label=detach];
+	"avg_val_loss(16)$3" -> "valid_loader(16)$0"	[label=Add];
+	"avg_val_loss(16)$3" -> "loss_fn(16)$0"	[label=Add];
+	"avg_val_loss(16)$3" -> "y_batch(16)"	[label=Add];
+	"avg_val_loss(16)$3" -> "len(16)"	[label=Add];
+	"avg_val_loss(16)$3" -> "avg_val_loss(16)$2"	[label=Add];
+	"avg_val_loss(16)$3" -> "y_pred(16)$2"	[label=Add];
 	"valid_preds(16)$3" -> "0(16)"	[label=assignedFrom];
 	"valid_preds(16)$3" -> "sigmoid(16)"	[label=assignedFrom];
 	"valid_preds(16)$3" -> "valid_preds(16)$2"	[label=assignedFrom];
 	"valid_preds(16)$3" -> "y_pred(16)$2"	[label=assignedFrom];
+	"print[355/4]" -> "avg_val_loss(16)$3"	[label=print];
+	"print[355/4]" -> "Validation loss: (16)"	[label=print];
 	"test_preds(16)$0" -> "np(16)"	[label=zeros];
 	"test_preds(16)$0" -> "test_loader(16)"	[label=zeros];
 	"test_preds(16)$0" -> "len(16)"	[label=zeros];
@@ -999,7 +1029,6 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"search_result(17)$0" -> "best_score(17)$1"	[label=assignedFrom];
 	"search_result(17)$0" -> "f1(17)"	[label=assignedFrom];
 	"seed(18)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "seed(0)$0"	[label=seed_everything];
 	"random(18)$0" -> "seed(18)"	[label=seed];
 	"random(18)$0" -> "random(18)"	[label=seed];
 	"os(18)$0" -> "seed(18)"	[label=str];
@@ -1063,7 +1092,12 @@ object at 0x12fc4fee0>](0)"	[label=assignedFrom];
 	"valid_loader(0)$0" -> "batch_size(0)$0"	[label=DataLoader];
 	"valid_loader(0)$0" -> "False(0)"	[label=DataLoader];
 	"valid_loader(0)$0" -> "valid(0)$0"	[label=DataLoader];
-	"seed_everything[1]" -> "i(0)"	[label=seed_everything];
+	"Fold (0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
+	"print[408/4]" -> "1(0)"	[label=print];
+	"print[408/4]" -> "i(0)"	[label=print];
+	"print[408/4]" -> "Fold (0)"	[label=print];
+	"seed_everything[410/4]" -> "i(0)"	[label=seed_everything];
+	"seed_everything[410/4]" -> "seed(0)$0"	[label=seed_everything];
 	"model(0)" -> "text-modelling-in-pytorch.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "model(0)"	[label=cuda];
 	"valid_preds_fold(0)$0" -> "False(0)"	[label=train_model];

@@ -77,7 +77,7 @@ digraph "" {
 	"xgtest(1)$0" -> "test_X(1)"	[label=DMatrix];
 	"xgtest(1)$0" -> "test_y(1)"	[label=DMatrix];
 	"xgtest(1)$0" -> "xgb(1)"	[label=DMatrix];
-	"watchlist(1)$0" -> "[<_ast.Tuple object at 0x12fc4f070>, <_ast.Tuple object at 0x12fc4f1f0>](1)"	[label=assignedFrom];
+	"watchlist(1)$0" -> "[<_ast.Tuple object at 0x7fd4c04ccf70>, <_ast.Tuple object at 0x7fd4c04cc130>](1)"	[label=assignedFrom];
 	"model(1)$0" -> "num_rounds(1)$0"	[label=train];
 	"model(1)$0" -> "plst(1)$0"	[label=train];
 	"model(1)$0" -> "xgtrain(1)$0"	[label=train];
@@ -104,27 +104,12 @@ digraph "" {
 	"train_df(0)$0" -> "train_file(0)$0"	[label=read_json];
 	"test_df(0)$0" -> "pd(0)"	[label=read_json];
 	"test_df(0)$0" -> "test_file(0)$0"	[label=read_json];
-	"print[0]" -> "train_df(0)$0"	[label=print];
-	"print[0]" -> "test_df(0)$0"	[label=print];
-	"print[0]" -> "train_df(0)$10"	[label=print];
-	"print[0]" -> "train_X(0)$0"	[label=print];
-	"print[0]" -> "cv_scores(0)$1"	[label=print];
-	"train_df(0)$10" -> "features(0)"	[label=apply];
-	"train_df(0)$10" -> "x(0)"	[label=apply];
-	"train_df(0)$10" -> " (0)"	[label=apply];
-	"train_df(0)$10" -> "train_df(0)$9"	[label=apply];
-	"train_df(0)$10" -> "_(0)"	[label=apply];
-	"train_df(0)$10" -> "i(0)"	[label=apply];
-	"train_X(0)$0" -> "sparse(0)"	[label=tocsr];
-	"train_X(0)$0" -> "[<_ast.Subscript object at 0x12fa66bb0>, <_ast.Name object at 0x12fa66d60>](0)"	[label=tocsr];
-	"cv_scores(0)$1" -> "log_loss(0)"	[label=append];
-	"cv_scores(0)$1" -> "cv_scores(0)$0"	[label=append];
-	"cv_scores(0)$1" -> "val_y(0)$0"	[label=append];
-	"cv_scores(0)$1" -> "preds(0)$0"	[label=append];
-	"[<_ast.Constant object at 0x12fa5b610>, <_ast.Constant object at 0x12fa5b6d0>, <_ast.Constant object at 0x12fa5b670>, <_ast.Constant \
-object at 0x12fa5b7f0>, <_ast.Constant object at 0x12fa5b6a0>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
-	"features_to_use(0)$0" -> "[<_ast.Constant object at 0x12fa5b610>, <_ast.Constant object at 0x12fa5b6d0>, <_ast.Constant object at 0x12fa5b670>, <_ast.Constant \
-object at 0x12fa5b7f0>, <_ast.Constant object at 0x12fa5b6a0>](0)"	[label=assignedFrom];
+	"print[84/0]" -> "train_df(0)$0"	[label=print];
+	"print[86/0]" -> "test_df(0)$0"	[label=print];
+	"[<_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832a90>, <_\
+ast.Constant object at 0x7fd500832670>, <_ast.Constant object at 0x7fd500832e20>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"features_to_use(0)$0" -> "[<_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832a90>, <_\
+ast.Constant object at 0x7fd500832670>, <_ast.Constant object at 0x7fd500832e20>](0)"	[label=assignedFrom];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=apply];
 	"train_df(0)$1" -> "photos(0)"	[label=apply];
 	"train_df(0)$1" -> "len(0)"	[label=apply];
@@ -179,16 +164,16 @@ object at 0x12fa5b7f0>, <_ast.Constant object at 0x12fa5b6a0>](0)"	[label=assign
 	"test_df(0)$8" -> "created(0)"	[label=assignedFrom];
 	"test_df(0)$8" -> "test_df(0)$7"	[label=assignedFrom];
 	"features_to_use(0)$1" -> "features_to_use(0)$0"	[label=extend];
-	"features_to_use(0)$1" -> "[<_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant \
-object at 0x12fade8b0>, <_ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade340>, <_\
-ast.Constant object at 0x12fade730>](0)"	[label=extend];
-	"[<_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant \
-object at 0x12fade8b0>, <_ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade340>, <_\
-ast.Constant object at 0x12fade730>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant object at 0x12fadec10>, <_ast.Constant \
-object at 0x12fade520>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
-	"categorical(0)$0" -> "[<_ast.Constant object at 0x12fadeca0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant object at 0x12fadec10>, <_ast.Constant \
-object at 0x12fade520>](0)"	[label=assignedFrom];
+	"features_to_use(0)$1" -> "[<_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object at 0x7fd4902abc70>, <_\
+ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant \
+object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abd00>](0)"	[label=extend];
+	"[<_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902ab9a0>, <_ast.Constant object at 0x7fd4902abc70>, <_\
+ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant \
+object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abd00>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant object at 0x7fd4902ab7f0>, <_\
+ast.Constant object at 0x7fd4902ab1f0>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"categorical(0)$0" -> "[<_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant object at 0x7fd4902ab7f0>, <_\
+ast.Constant object at 0x7fd4902ab1f0>](0)"	[label=assignedFrom];
 	"f(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"f(0)" -> "categorical(0)$0"	[label=iteratorOf];
 	"lbl(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
@@ -210,6 +195,12 @@ object at 0x12fade520>](0)"	[label=assignedFrom];
 	"test_df(0)$9" -> "test_df(0)$9"	[label=transform];
 	"features_to_use(0)$2" -> "features_to_use(0)$1"	[label=append];
 	"features_to_use(0)$2" -> "f(0)"	[label=append];
+	"train_df(0)$10" -> "features(0)"	[label=apply];
+	"train_df(0)$10" -> "x(0)"	[label=apply];
+	"train_df(0)$10" -> " (0)"	[label=apply];
+	"train_df(0)$10" -> "train_df(0)$9"	[label=apply];
+	"train_df(0)$10" -> "_(0)"	[label=apply];
+	"train_df(0)$10" -> "i(0)"	[label=apply];
 	"_(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"i(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"test_df(0)$10" -> "features(0)"	[label=apply];
@@ -218,22 +209,24 @@ object at 0x12fade520>](0)"	[label=assignedFrom];
 	"test_df(0)$10" -> "test_df(0)$9"	[label=apply];
 	"test_df(0)$10" -> "_(0)"	[label=apply];
 	"test_df(0)$10" -> "i(0)"	[label=apply];
-	"print[1]" -> "features(0)"	[label=print];
-	"print[1]" -> "test_X(0)$0"	[label=print];
-	"test_X(0)$0" -> "sparse(0)"	[label=tocsr];
-	"test_X(0)$0" -> "[<_ast.Subscript object at 0x12fa66fd0>, <_ast.Name object at 0x12fa664f0>](0)"	[label=tocsr];
+	"print[164/0]" -> "features(0)"	[label=print];
+	"print[164/0]" -> "train_df(0)$10"	[label=print];
 	"english(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"tfidf(0)$0" -> "english(0)"	[label=CountVectorizer];
 	"tfidf(0)$0" -> "200(0)"	[label=CountVectorizer];
 	"200(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
-	"tr_sparse(0)$0" -> "train_df(0)$10"	[label=fit_transform];
 	"tr_sparse(0)$0" -> "features(0)"	[label=fit_transform];
+	"tr_sparse(0)$0" -> "train_df(0)$10"	[label=fit_transform];
 	"tr_sparse(0)$0" -> "tfidf(0)$0"	[label=fit_transform];
 	"te_sparse(0)$0" -> "features(0)"	[label=transform];
 	"te_sparse(0)$0" -> "test_df(0)$10"	[label=transform];
 	"te_sparse(0)$0" -> "tfidf(0)$0"	[label=transform];
-	"[<_ast.Subscript object at 0x12fa66bb0>, <_ast.Name object at 0x12fa66d60>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
-	"[<_ast.Subscript object at 0x12fa66fd0>, <_ast.Name object at 0x12fa664f0>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"train_X(0)$0" -> "sparse(0)"	[label=tocsr];
+	"train_X(0)$0" -> "[<_ast.Subscript object at 0x7fd500834f10>, <_ast.Name object at 0x7fd5008340a0>](0)"	[label=tocsr];
+	"[<_ast.Subscript object at 0x7fd500834f10>, <_ast.Name object at 0x7fd5008340a0>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"test_X(0)$0" -> "sparse(0)"	[label=tocsr];
+	"test_X(0)$0" -> "[<_ast.Subscript object at 0x7fd500834cd0>, <_ast.Name object at 0x7fd5009b0d60>](0)"	[label=tocsr];
+	"[<_ast.Subscript object at 0x7fd500834cd0>, <_ast.Name object at 0x7fd5009b0d60>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"high(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"target_num_map(0)$0" -> "high(0)"	[label=assignedFrom];
 	"target_num_map(0)$0" -> "medium(0)"	[label=assignedFrom];
@@ -247,11 +240,13 @@ object at 0x12fade520>](0)"	[label=assignedFrom];
 	"1(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"2(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"train_y(0)$0" -> "np(0)"	[label=array];
-	"train_y(0)$0" -> "train_df(0)$10"	[label=array];
 	"train_y(0)$0" -> "x(0)"	[label=array];
+	"train_y(0)$0" -> "train_df(0)$10"	[label=array];
 	"train_y(0)$0" -> "target_num_map(0)$0"	[label=array];
 	"train_y(0)$0" -> "interest_level(0)"	[label=array];
 	"interest_level(0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"print[181/0]" -> "train_X(0)$0"	[label=print];
+	"print[181/0]" -> "test_X(0)$0"	[label=print];
 	"[](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"cv_scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"kf(0)$0" -> "model_selection(0)"	[label=KFold];
@@ -292,6 +287,11 @@ object at 0x12fade520>](0)"	[label=assignedFrom];
 	"model(0)$0" -> "val_X(0)$0"	[label=runXGB];
 	"model(0)$0" -> "dev_y(0)$0"	[label=runXGB];
 	"model(0)$0" -> "val_y(0)$0"	[label=runXGB];
+	"cv_scores(0)$1" -> "log_loss(0)"	[label=append];
+	"cv_scores(0)$1" -> "cv_scores(0)$0"	[label=append];
+	"cv_scores(0)$1" -> "val_y(0)$0"	[label=append];
+	"cv_scores(0)$1" -> "preds(0)$0"	[label=append];
+	"print[196/8]" -> "cv_scores(0)$1"	[label=print];
 	"preds(0)$1" -> "train_X(0)$0"	[label=runXGB];
 	"preds(0)$1" -> "test_X(0)$0"	[label=runXGB];
 	"preds(0)$1" -> "train_y(0)$0"	[label=runXGB];
@@ -303,9 +303,9 @@ object at 0x12fade520>](0)"	[label=assignedFrom];
 	"model(0)$1" -> "400(0)"	[label=runXGB];
 	"out_df(0)$0" -> "pd(0)"	[label=DataFrame];
 	"out_df(0)$0" -> "preds(0)$1"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f9a3400>, <_ast.Constant object at 0x12f9a3430>, <_ast.Constant object at 0x12f9a3460>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd501626ac0>, <_ast.Constant object at 0x7fd501626730>, <_ast.Constant object at 0x7fd501626a90>](0)" -> "xgb-starter-in-python.ipynb"	[label=appearsIn];
 	"out_df(0)$1" -> "out_df(0)$0"	[label=assignedFrom];
-	"out_df(0)$1" -> "[<_ast.Constant object at 0x12f9a3400>, <_ast.Constant object at 0x12f9a3430>, <_ast.Constant object at 0x12f9a3460>](0)"	[label=assignedFrom];
+	"out_df(0)$1" -> "[<_ast.Constant object at 0x7fd501626ac0>, <_ast.Constant object at 0x7fd501626730>, <_ast.Constant object at 0x7fd501626a90>](0)"	[label=assignedFrom];
 	"out_df(0)$2" -> "test_df(0)$10"	[label=assignedFrom];
 	"out_df(0)$2" -> "out_df(0)$1"	[label=assignedFrom];
 	"out_df(0)$3" -> "out_df(0)$2"	[label=to_csv];

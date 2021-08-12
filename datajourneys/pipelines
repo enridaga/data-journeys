@@ -11,9 +11,9 @@ strict digraph "" {
 	"../input/melbourne-housing-snapshot/melb_data.csv(0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "data(0)$0"	[label=assignedFrom];
 	"X(0)$0" -> "data(0)$0"	[label=drop];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12f8ab190>](0)"	[label=drop];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0700>](0)"	[label=drop];
 	"X(0)$0" -> "1(0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8ab190>](0)" -> "pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0700>](0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"1(0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"X_train_full(0)$0" -> "y(0)$0"	[label=train_test_split];
 	"X_train_full(0)$0" -> "X(0)$0"	[label=train_test_split];
@@ -47,8 +47,8 @@ strict digraph "" {
 	"object(0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"numerical_cols(0)$0" -> "X_train_full(0)$0"	[label=assignedFrom];
 	"numerical_cols(0)$0" -> "cname(0)"	[label=assignedFrom];
-	"numerical_cols(0)$0" -> "[<_ast.Constant object at 0x130532550>, <_ast.Constant object at 0x130532a90>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130532550>, <_ast.Constant object at 0x130532a90>](0)" -> "pipelines.ipynb"	[label=appearsIn];
+	"numerical_cols(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd4c04cca30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd4c04cca30>](0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"my_cols(0)$0" -> "categorical_cols(0)$0"	[label=Add];
 	"my_cols(0)$0" -> "numerical_cols(0)$0"	[label=Add];
 	"X_train(0)$0" -> "X_train_full(0)$0"	[label=copy];
@@ -74,10 +74,10 @@ strict digraph "" {
 	"OneHotEncoder(0)" -> OneHotEncoder	[label=assignedFrom];
 	"constant(0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"numerical_transformer(0)$0" -> "constant(0)"	[label=SimpleImputer];
-	"[<_ast.Tuple object at 0x12f8f5c70>, <_ast.Tuple object at 0x12f8f5430>](0)" -> "pipelines.ipynb"	[label=appearsIn];
-	"categorical_transformer(0)$0" -> "[<_ast.Tuple object at 0x12f8f5c70>, <_ast.Tuple object at 0x12f8f5430>](0)"	[label=Pipeline];
-	"[<_ast.Tuple object at 0x12f8f5310>, <_ast.Tuple object at 0x12f8f5190>](0)" -> "pipelines.ipynb"	[label=appearsIn];
-	"preprocessor(0)$0" -> "[<_ast.Tuple object at 0x12f8f5310>, <_ast.Tuple object at 0x12f8f5190>](0)"	[label=ColumnTransformer];
+	"[<_ast.Tuple object at 0x7fd4c04cc820>, <_ast.Tuple object at 0x7fd4c04cc5e0>](0)" -> "pipelines.ipynb"	[label=appearsIn];
+	"categorical_transformer(0)$0" -> "[<_ast.Tuple object at 0x7fd4c04cc820>, <_ast.Tuple object at 0x7fd4c04cc5e0>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd4c04ccfa0>, <_ast.Tuple object at 0x7fd4c04ccb20>](0)" -> "pipelines.ipynb"	[label=appearsIn];
+	"preprocessor(0)$0" -> "[<_ast.Tuple object at 0x7fd4c04ccfa0>, <_ast.Tuple object at 0x7fd4c04ccb20>](0)"	[label=ColumnTransformer];
 	"sklearn.ensemble" -> "pipelines.ipynb"	[label=importedBy];
 	RandomForestRegressor -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestRegressor(0)" -> "pipelines.ipynb"	[label=appearsIn];
@@ -89,8 +89,8 @@ strict digraph "" {
 	mean_absolute_error -> "sklearn.metrics"	[label=importedBy];
 	"mean_absolute_error(0)" -> "pipelines.ipynb"	[label=appearsIn];
 	"mean_absolute_error(0)" -> mean_absolute_error	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12f8f54c0>, <_ast.Tuple object at 0x12fc4fd30>](0)" -> "pipelines.ipynb"	[label=appearsIn];
-	"my_pipeline(0)$0" -> "[<_ast.Tuple object at 0x12f8f54c0>, <_ast.Tuple object at 0x12fc4fd30>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd50085ba30>, <_ast.Tuple object at 0x7fd50085b2b0>](0)" -> "pipelines.ipynb"	[label=appearsIn];
+	"my_pipeline(0)$0" -> "[<_ast.Tuple object at 0x7fd50085ba30>, <_ast.Tuple object at 0x7fd50085b2b0>](0)"	[label=Pipeline];
 	"my_pipeline(0)$1" -> "y_train(0)$0"	[label=fit];
 	"my_pipeline(0)$1" -> "X_train(0)$1"	[label=fit];
 	"my_pipeline(0)$1" -> "my_pipeline(0)$0"	[label=fit];
@@ -99,6 +99,6 @@ strict digraph "" {
 	"score(0)$0" -> "y_valid(0)$0"	[label=mean_absolute_error];
 	"score(0)$0" -> "preds(0)$0"	[label=mean_absolute_error];
 	"MAE:(0)" -> "pipelines.ipynb"	[label=appearsIn];
-	"print[0]" -> "MAE:(0)"	[label=print];
-	"print[1]" -> "score(0)$0"	[label=print];
+	"print[130/0]" -> "score(0)$0"	[label=print];
+	"print[130/0]" -> "MAE:(0)"	[label=print];
 }

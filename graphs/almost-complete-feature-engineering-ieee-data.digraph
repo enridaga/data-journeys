@@ -34,7 +34,7 @@ digraph "" {
 	"ff(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"ff(0)" -> "plotly.figure_factory"	[label=assignedFrom];
 	"True(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "True(0)"	[label=init_notebook_mode];
+	"init_notebook_mode[19/0]" -> "True(0)"	[label=init_notebook_mode];
 	sklearn -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=importedBy];
 	preprocessing -> sklearn	[label=importedBy];
 	"preprocessing(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
@@ -113,65 +113,13 @@ digraph "" {
 	gc -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=importedBy];
 	"gc(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"gc(0)" -> gc	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "Shape before PCA(0)"	[label=print];
-	"print[0]" -> "Transaction Shape (0)"	[label=print];
-	"print[0]" -> "Id Shape           (0)"	[label=print];
-	"print[0]" -> "X_train(0)$1"	[label=print];
-	"print[0]" -> "X_test(0)$1"	[label=print];
-	"print[0]" -> "
-############## New Run ################(5)"	[label=print];
-	"print[0]" -> "params = (5)"	[label=print];
-	"print[0]" -> "count(5)$0"	[label=print];
-	"print[0]" -> "Total Time Run: (5)"	[label=print];
-	"print[0]" -> "Mean ROC_AUC: (5)"	[label=print];
-	"Shape before PCA(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"Transaction Shape (0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"Id Shape           (0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"X_train(0)$1" -> "X_train(0)$0"	[label=reduce_mem_usage];
-	"X_test(0)$1" -> "X_test(0)$0"	[label=reduce_mem_usage];
-	"count(5)$0" -> "1(5)"	[label=assignedFrom];
+	"print[41/0]" -> "os(0)"	[label=print];
+	"print[41/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "df(0)$14"	[label=print];
-	"print[1]" -> "df_id(0)$3"	[label=print];
-	"print[1]" -> "params(5)$0"	[label=print];
-	"print[1]" -> "score_mean(5)$1"	[label=print];
-	"print[1]" -> " CV - score: (5)"	[label=print];
-	"print[1]" -> "round(5)"	[label=print];
-	"end_mem(1)$0" -> "1024(1)"	[label=Div];
-	"end_mem(1)$0" -> "2(1)"	[label=Div];
-	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"df(0)$14" -> "df(0)$13"	[label=fillna];
-	"df(0)$14" -> "None(0)"	[label=fillna];
-	"df_id(0)$3" -> "labels(0)$0"	[label=map];
-	"df_id(0)$3" -> "c1(0)"	[label=map];
-	"df_id(0)$3" -> "df_id(0)$2"	[label=map];
-	"df_id(0)$3" -> "str(0)"	[label=map];
-	"df_id(0)$3" -> "x(0)"	[label=map];
-	"params(5)$0" -> "params(5)$0"	[label=assignedFrom];
-	"params(5)$0" -> "max_depth(5)"	[label=assignedFrom];
-	"params(5)$0" -> "gamma(5)"	[label=assignedFrom];
-	"params(5)$0" -> "subsample(5)"	[label=assignedFrom];
-	"params(5)$0" -> "reg_alpha(5)"	[label=assignedFrom];
-	"params(5)$0" -> "reg_lambda(5)"	[label=assignedFrom];
-	"params(5)$0" -> "learning_rate(5)"	[label=assignedFrom];
-	"params(5)$0" -> "num_leaves(5)"	[label=assignedFrom];
-	"params(5)$0" -> "colsample_bytree(5)"	[label=assignedFrom];
-	"params(5)$0" -> "min_child_samples(5)"	[label=assignedFrom];
-	"params(5)$0" -> "feature_fraction(5)"	[label=assignedFrom];
-	"params(5)$0" -> "bagging_fraction(5)"	[label=assignedFrom];
-	"params(5)$0" -> "int(5)"	[label=assignedFrom];
-	"params(5)$0" -> "{:.3f}(5)"	[label=assignedFrom];
-	"params(5)$0" -> "{:.2f}(5)"	[label=assignedFrom];
-	"score_mean(5)$1" -> "score(5)$0"	[label=Add];
-	"score_mean(5)$1" -> "score_mean(5)$0"	[label=Add];
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x12f88a5e0>, <_ast.Constant object at 0x12f88a520>, <_ast.Constant object at 0x12f88a9a0>, <_ast.Constant \
-object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a130>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd50085bc70>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object at 0x7fd50085bd00>, <_\
+ast.Constant object at 0x7fd50085b9a0>, <_ast.Constant object at 0x7fd50085b2e0>, <_ast.Constant object at 0x7fd50085b4c0>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -203,26 +151,13 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"df(1)$6" -> "col(1)"	[label=astype];
 	"df(1)$6" -> "np(1)"	[label=astype];
 	"df(1)$6" -> "df(1)$5"	[label=astype];
-	"print[2]" -> "round(5)"	[label=print];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[2]" -> "FOLDS(5)$0"	[label=print];
-	"print[2]" -> "time2(5)$0"	[label=print];
-	"FOLDS(5)$0" -> "3(5)"	[label=assignedFrom];
-	"time2(5)$0" -> "time1(5)$0"	[label=Sub];
-	"time2(5)$0" -> "time(5)"	[label=Sub];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[3]" -> "score(5)$0"	[label=print];
-	"print[3]" -> "60(5)"	[label=print];
-	"score(5)$0" -> "True(5)"	[label=assignedFrom];
-	"score(5)$0" -> "X_vl(5)$0"	[label=assignedFrom];
-	"score(5)$0" -> "y_vl(5)$0"	[label=assignedFrom];
-	"score(5)$0" -> "clf(5)$1"	[label=assignedFrom];
-	"score(5)$0" -> "make_scorer(5)"	[label=assignedFrom];
-	"score(5)$0" -> "roc_auc_score(5)"	[label=assignedFrom];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[4]" -> "4(5)"	[label=print];
-	"print[4]" -> "2(5)"	[label=print];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
+	"end_mem(1)$0" -> "1024(1)"	[label=Div];
+	"end_mem(1)$0" -> "2(1)"	[label=Div];
+	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
+	"print[68/16]" -> "start_mem(1)$0"	[label=print];
+	"print[68/16]" -> "end_mem(1)$0"	[label=print];
+	"print[68/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[68/16]" -> "100(1)"	[label=print];
 	"df(2)" -> "PCA_change[0]"	[label=_argToVar];
 	"cols(2)" -> "PCA_change[1]"	[label=_argToVar];
 	"n_components(2)" -> "PCA_change[2]"	[label=_argToVar];
@@ -239,7 +174,7 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"df(2)$0" -> "cols(2)"	[label=drop];
 	"principalDf(2)$1" -> "principalDf(2)$0"	[label=rename];
 	"df(2)$1" -> "pd(2)"	[label=concat];
-	"df(2)$1" -> "[<_ast.Name object at 0x12fade820>, <_ast.Name object at 0x12fade070>](2)"	[label=concat];
+	"df(2)$1" -> "[<_ast.Name object at 0x7fd4c04cc160>, <_ast.Name object at 0x7fd4c04cc5e0>](2)"	[label=concat];
 	"df(2)$1" -> "1(2)"	[label=concat];
 	"df_trans(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_trans(0)$0" -> "../input/train_transaction.csv(0)"	[label=read_csv];
@@ -7513,7 +7448,7 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"w(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"h(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"c(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"c(0)" -> "[<_ast.Constant object at 0x12ff3edc0>, <_ast.Constant object at 0x12ff3edf0>](0)"	[label=iteratorOf];
+	"c(0)" -> "[<_ast.Constant object at 0x7fd4c0642b20>, <_ast.Constant object at 0x7fd4c0642b80>](0)"	[label=iteratorOf];
 	"s(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"r(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"discover(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
@@ -14634,15 +14569,20 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"3610(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"3611(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"3612(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12ff3edc0>, <_ast.Constant object at 0x12ff3edf0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_id(0)$3" -> "labels(0)$0"	[label=map];
+	"df_id(0)$3" -> "c1(0)"	[label=map];
+	"df_id(0)$3" -> "df_id(0)$2"	[label=map];
+	"df_id(0)$3" -> "str(0)"	[label=map];
+	"df_id(0)$3" -> "x(0)"	[label=map];
+	"[<_ast.Constant object at 0x7fd4c0642b20>, <_ast.Constant object at 0x7fd4c0642b80>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"test(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test_trans(0)$2" -> "df_test_trans(0)$1"	[label=assignedFrom];
 	"df_test_trans(0)$2" -> "test(0)"	[label=assignedFrom];
 	"df(0)$0" -> "pd(0)"	[label=concat];
-	"df(0)$0" -> "[<_ast.Name object at 0x12fc49400>, <_ast.Name object at 0x12fc49430>](0)"	[label=concat];
+	"df(0)$0" -> "[<_ast.Name object at 0x7fd4c0617100>, <_ast.Name object at 0x7fd4c0617190>](0)"	[label=concat];
 	"df(0)$0" -> "0(0)"	[label=concat];
 	"df(0)$0" -> "False(0)"	[label=concat];
-	"[<_ast.Name object at 0x12fc49400>, <_ast.Name object at 0x12fc49430>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c0617100>, <_ast.Name object at 0x7fd4c0617190>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"0(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"False(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df(0)$1" -> "df(0)$0"	[label=reset_index];
@@ -14661,6 +14601,8 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"df(0)$3" -> "x(0)"	[label=map];
 	"str(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"x(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"Shape before PCA(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"print[426/0]" -> "Shape before PCA(0)"	[label=print];
 	"mas_v(0)$0" -> "55(0)"	[label=assignedFrom];
 	"mas_v(0)$0" -> "df(0)$3"	[label=assignedFrom];
 	"col(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
@@ -14671,25 +14613,26 @@ object at 0x12f88a460>, <_ast.Constant object at 0x12f88a2b0>, <_ast.Constant ob
 	"col(0)" -> "one_fill(0)$0"	[label=iteratorOf];
 	"col(0)" -> "nn_fill(0)$0"	[label=iteratorOf];
 	"col(0)" -> "cat_cols(0)$0"	[label=iteratorOf];
-	"c_feat(0)$0" -> "[<_ast.Constant object at 0x12fa16e20>, <_ast.Constant object at 0x12fa16e50>, <_ast.Constant object at 0x12fa16e80>, <_ast.Constant \
-object at 0x12fa16eb0>, <_ast.Constant object at 0x12fa16f10>, <_ast.Constant object at 0x12fa16f40>, <_ast.Constant object at 0x12fa16f70>, <_\
-ast.Constant object at 0x12fa16fa0>, <_ast.Constant object at 0x12fa16fd0>, <_ast.Constant object at 0x12fa16ee0>, <_ast.Constant \
-object at 0x12fa168e0>, <_ast.Constant object at 0x12fa1b040>, <_ast.Constant object at 0x12fa1b0a0>, <_ast.Constant object at 0x12fa1b100>](\
-0)"	[label=assignedFrom];
-	"m_feat(0)$0" -> "[<_ast.Constant object at 0x12fa404f0>, <_ast.Constant object at 0x12fa40520>, <_ast.Constant object at 0x12fa40550>, <_ast.Constant \
-object at 0x12fa405b0>, <_ast.Constant object at 0x12fa40280>, <_ast.Constant object at 0x12fa40670>, <_ast.Constant object at 0x12fa406a0>, <_\
-ast.Constant object at 0x12fa406d0>, <_ast.Constant object at 0x12fa40700>](0)"	[label=assignedFrom];
-	"id_num_cols(0)$0" -> "[<_ast.Constant object at 0x12fa53c40>, <_ast.Constant object at 0x12fa53c70>, <_ast.Constant object at 0x12fa53ca0>, <_ast.Constant \
-object at 0x12fa53cd0>, <_ast.Constant object at 0x12fa53d00>, <_ast.Constant object at 0x12fa53d30>, <_ast.Constant object at 0x12fa53d60>, <_\
-ast.Constant object at 0x12fa53d90>, <_ast.Constant object at 0x12fa53dc0>, <_ast.Constant object at 0x12fa53df0>, <_ast.Constant \
-object at 0x12fa53e20>](0)"	[label=assignedFrom];
-	"one_fill(0)$0" -> "[<_ast.Constant object at 0x12fa4a7c0>, <_ast.Constant object at 0x12fa4a7f0>, <_ast.Constant object at 0x12fa4a820>, <_ast.Constant \
-object at 0x12fa4a850>, <_ast.Constant object at 0x12fa4a880>, <_ast.Constant object at 0x12fa4a8b0>, <_ast.Constant object at 0x12fa4a8e0>, <_\
-ast.Constant object at 0x12fa4a910>, <_ast.Constant object at 0x12fa4a940>, <_ast.Constant object at 0x12fa4a970>, <_ast.Constant \
-object at 0x12fa4a9a0>, <_ast.Constant object at 0x12fa4aa00>, <_ast.Constant object at 0x12fa4aa30>](0)"	[label=assignedFrom];
-	"nn_fill(0)$0" -> "[<_ast.Constant object at 0x12fa4aaf0>, <_ast.Constant object at 0x12fa4ab20>](0)"	[label=assignedFrom];
-	"cat_cols(0)$0" -> "[<_ast.Constant object at 0x12fa7adc0>, <_ast.Constant object at 0x12fa7adf0>, <_ast.Constant object at 0x12fa7ae20>, <_ast.Constant \
-object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)"	[label=assignedFrom];
+	"c_feat(0)$0" -> "[<_ast.Constant object at 0x7fd4c060cb50>, <_ast.Constant object at 0x7fd4c060cbb0>, <_ast.Constant object at 0x7fd4c060cbe0>, <_\
+ast.Constant object at 0x7fd4c060cc10>, <_ast.Constant object at 0x7fd4c060cc40>, <_ast.Constant object at 0x7fd4c060cc70>, <_ast.Constant \
+object at 0x7fd4c060cca0>, <_ast.Constant object at 0x7fd4c060ccd0>, <_ast.Constant object at 0x7fd4c060cd00>, <_ast.Constant object \
+at 0x7fd4c060cd30>, <_ast.Constant object at 0x7fd4c060cd60>, <_ast.Constant object at 0x7fd4c060cdc0>, <_ast.Constant object at \
+0x7fd4c060cd90>, <_ast.Constant object at 0x7fd4c060cdf0>](0)"	[label=assignedFrom];
+	"m_feat(0)$0" -> "[<_ast.Constant object at 0x7fd4c05fc1c0>, <_ast.Constant object at 0x7fd4c05fc1f0>, <_ast.Constant object at 0x7fd4c05fc220>, <_\
+ast.Constant object at 0x7fd4c05fc250>, <_ast.Constant object at 0x7fd4c05fc280>, <_ast.Constant object at 0x7fd4c05fc2e0>, <_ast.Constant \
+object at 0x7fd4c05fc310>, <_ast.Constant object at 0x7fd4c05fc340>, <_ast.Constant object at 0x7fd4c05fc370>](0)"	[label=assignedFrom];
+	"id_num_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c05ec9a0>, <_ast.Constant object at 0x7fd4c05ec9d0>, <_ast.Constant object at 0x7fd4c05eca00>, <_\
+ast.Constant object at 0x7fd4c05eca30>, <_ast.Constant object at 0x7fd4c05eca60>, <_ast.Constant object at 0x7fd4c05eca90>, <_ast.Constant \
+object at 0x7fd4c05ecac0>, <_ast.Constant object at 0x7fd4c05ecaf0>, <_ast.Constant object at 0x7fd4c05ecb50>, <_ast.Constant object \
+at 0x7fd4c05ecbb0>, <_ast.Constant object at 0x7fd4c05ecbe0>](0)"	[label=assignedFrom];
+	"one_fill(0)$0" -> "[<_ast.Constant object at 0x7fd4c05e6520>, <_ast.Constant object at 0x7fd4c05e6550>, <_ast.Constant object at 0x7fd4c05e6580>, <_\
+ast.Constant object at 0x7fd4c05e65b0>, <_ast.Constant object at 0x7fd4c05e65e0>, <_ast.Constant object at 0x7fd4c05e6610>, <_ast.Constant \
+object at 0x7fd4c05e6640>, <_ast.Constant object at 0x7fd4c05e6670>, <_ast.Constant object at 0x7fd4c05e66d0>, <_ast.Constant object \
+at 0x7fd4c05e66a0>, <_ast.Constant object at 0x7fd4c05e6700>, <_ast.Constant object at 0x7fd4c05e6730>, <_ast.Constant object at \
+0x7fd4c05e6760>](0)"	[label=assignedFrom];
+	"nn_fill(0)$0" -> "[<_ast.Constant object at 0x7fd4c05e6820>, <_ast.Constant object at 0x7fd4c05e6880>](0)"	[label=assignedFrom];
+	"cat_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4d0999b50>, <_ast.Constant object at 0x7fd4d0999b80>, <_ast.Constant object at 0x7fd4d0999bb0>, <_\
+ast.Constant object at 0x7fd4d0999be0>, <_ast.Constant object at 0x7fd4d0999c10>](0)"	[label=assignedFrom];
 	"df(0)$4" -> "2(0)"	[label=fillna];
 	"df(0)$4" -> "df(0)$3"	[label=fillna];
 	"df(0)$4" -> "col(0)"	[label=fillna];
@@ -14703,28 +14646,28 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)"	[label=assign
 	"df(0)$6" -> "df(0)$5"	[label=PCA_change];
 	"df(0)$6" -> "PCA_V_(0)"	[label=PCA_change];
 	"PCA_V_(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa4fd00>, <_ast.Constant object at 0x12fa4fcd0>, <_ast.Constant object at 0x12fa4fd30>, <_ast.Constant \
-object at 0x12fa4fd60>, <_ast.Constant object at 0x12fa4fd90>, <_ast.Constant object at 0x12fa4fdf0>, <_ast.Constant object at 0x12fa4fe20>, <_\
-ast.Constant object at 0x12fa4fe50>, <_ast.Constant object at 0x12fa4fe80>, <_ast.Constant object at 0x12fa4feb0>, <_ast.Constant \
-object at 0x12fa4fee0>, <_ast.Constant object at 0x12fa4ff10>, <_ast.Constant object at 0x12fa4ff40>, <_ast.Constant object at 0x12fa4ff70>, <_\
-ast.Constant object at 0x12fa4ffa0>, <_ast.Constant object at 0x12fa4ffd0>, <_ast.Constant object at 0x12fa4f9a0>, <_ast.Constant \
-object at 0x12fa4fdc0>, <_ast.Constant object at 0x12fa16040>, <_ast.Constant object at 0x12fa16070>, <_ast.Constant object at 0x12fa160a0>, <_\
-ast.Constant object at 0x12fa160d0>, <_ast.Constant object at 0x12fa16100>, <_ast.Constant object at 0x12fa16130>, <_ast.Constant \
-object at 0x12fa16160>, <_ast.Constant object at 0x12fa16190>, <_ast.Constant object at 0x12fa161c0>, <_ast.Constant object at 0x12fa161f0>, <_\
-ast.Constant object at 0x12fa16220>, <_ast.Constant object at 0x12fa16250>, <_ast.Constant object at 0x12fa16280>, <_ast.Constant \
-object at 0x12fa162b0>, <_ast.Constant object at 0x12fa162e0>, <_ast.Constant object at 0x12fa16310>, <_ast.Constant object at 0x12fa16370>](\
-0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"columns(0)$0" -> "[<_ast.Constant object at 0x12fa4fd00>, <_ast.Constant object at 0x12fa4fcd0>, <_ast.Constant object at 0x12fa4fd30>, <_ast.Constant \
-object at 0x12fa4fd60>, <_ast.Constant object at 0x12fa4fd90>, <_ast.Constant object at 0x12fa4fdf0>, <_ast.Constant object at 0x12fa4fe20>, <_\
-ast.Constant object at 0x12fa4fe50>, <_ast.Constant object at 0x12fa4fe80>, <_ast.Constant object at 0x12fa4feb0>, <_ast.Constant \
-object at 0x12fa4fee0>, <_ast.Constant object at 0x12fa4ff10>, <_ast.Constant object at 0x12fa4ff40>, <_ast.Constant object at 0x12fa4ff70>, <_\
-ast.Constant object at 0x12fa4ffa0>, <_ast.Constant object at 0x12fa4ffd0>, <_ast.Constant object at 0x12fa4f9a0>, <_ast.Constant \
-object at 0x12fa4fdc0>, <_ast.Constant object at 0x12fa16040>, <_ast.Constant object at 0x12fa16070>, <_ast.Constant object at 0x12fa160a0>, <_\
-ast.Constant object at 0x12fa160d0>, <_ast.Constant object at 0x12fa16100>, <_ast.Constant object at 0x12fa16130>, <_ast.Constant \
-object at 0x12fa16160>, <_ast.Constant object at 0x12fa16190>, <_ast.Constant object at 0x12fa161c0>, <_ast.Constant object at 0x12fa161f0>, <_\
-ast.Constant object at 0x12fa16220>, <_ast.Constant object at 0x12fa16250>, <_ast.Constant object at 0x12fa16280>, <_ast.Constant \
-object at 0x12fa162b0>, <_ast.Constant object at 0x12fa162e0>, <_ast.Constant object at 0x12fa16310>, <_ast.Constant object at 0x12fa16370>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0614a00>, <_ast.Constant object at 0x7fd4c0614a30>, <_ast.Constant object at 0x7fd4c0614550>, <_\
+ast.Constant object at 0x7fd4c0614a60>, <_ast.Constant object at 0x7fd4c0614a90>, <_ast.Constant object at 0x7fd4c0614ac0>, <_ast.Constant \
+object at 0x7fd4c0614af0>, <_ast.Constant object at 0x7fd4c0614b20>, <_ast.Constant object at 0x7fd4c0614b50>, <_ast.Constant object \
+at 0x7fd4c0614b80>, <_ast.Constant object at 0x7fd4c0614bb0>, <_ast.Constant object at 0x7fd4c0614be0>, <_ast.Constant object at \
+0x7fd4c0614c10>, <_ast.Constant object at 0x7fd4c0614c70>, <_ast.Constant object at 0x7fd4c0614ca0>, <_ast.Constant object at 0x7fd4c0614cd0>, <_\
+ast.Constant object at 0x7fd4c0614d00>, <_ast.Constant object at 0x7fd4c0614d30>, <_ast.Constant object at 0x7fd4c0614d60>, <_ast.Constant \
+object at 0x7fd4c0614d90>, <_ast.Constant object at 0x7fd4c0614dc0>, <_ast.Constant object at 0x7fd4c0614df0>, <_ast.Constant object \
+at 0x7fd4c0614e20>, <_ast.Constant object at 0x7fd4c0614e50>, <_ast.Constant object at 0x7fd4c0614e80>, <_ast.Constant object at \
+0x7fd4c0614eb0>, <_ast.Constant object at 0x7fd4c0614ee0>, <_ast.Constant object at 0x7fd4c0614f10>, <_ast.Constant object at 0x7fd4c0614f40>, <_\
+ast.Constant object at 0x7fd4c0614fa0>, <_ast.Constant object at 0x7fd4c0614f70>, <_ast.Constant object at 0x7fd4c0614fd0>, <_ast.Constant \
+object at 0x7fd4c0614c40>, <_ast.Constant object at 0x7fd4c060c040>, <_ast.Constant object at 0x7fd4c060c070>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c0614a00>, <_ast.Constant object at 0x7fd4c0614a30>, <_ast.Constant object at 0x7fd4c0614550>, <_\
+ast.Constant object at 0x7fd4c0614a60>, <_ast.Constant object at 0x7fd4c0614a90>, <_ast.Constant object at 0x7fd4c0614ac0>, <_ast.Constant \
+object at 0x7fd4c0614af0>, <_ast.Constant object at 0x7fd4c0614b20>, <_ast.Constant object at 0x7fd4c0614b50>, <_ast.Constant object \
+at 0x7fd4c0614b80>, <_ast.Constant object at 0x7fd4c0614bb0>, <_ast.Constant object at 0x7fd4c0614be0>, <_ast.Constant object at \
+0x7fd4c0614c10>, <_ast.Constant object at 0x7fd4c0614c70>, <_ast.Constant object at 0x7fd4c0614ca0>, <_ast.Constant object at 0x7fd4c0614cd0>, <_\
+ast.Constant object at 0x7fd4c0614d00>, <_ast.Constant object at 0x7fd4c0614d30>, <_ast.Constant object at 0x7fd4c0614d60>, <_ast.Constant \
+object at 0x7fd4c0614d90>, <_ast.Constant object at 0x7fd4c0614dc0>, <_ast.Constant object at 0x7fd4c0614df0>, <_ast.Constant object \
+at 0x7fd4c0614e20>, <_ast.Constant object at 0x7fd4c0614e50>, <_ast.Constant object at 0x7fd4c0614e80>, <_ast.Constant object at \
+0x7fd4c0614eb0>, <_ast.Constant object at 0x7fd4c0614ee0>, <_ast.Constant object at 0x7fd4c0614f10>, <_ast.Constant object at 0x7fd4c0614f40>, <_\
+ast.Constant object at 0x7fd4c0614fa0>, <_ast.Constant object at 0x7fd4c0614f70>, <_ast.Constant object at 0x7fd4c0614fd0>, <_ast.Constant \
+object at 0x7fd4c0614c40>, <_ast.Constant object at 0x7fd4c060c040>, <_ast.Constant object at 0x7fd4c060c070>](0)"	[label=assignedFrom];
 	"km(0)$0" -> "6(0)"	[label=KMeans];
 	"km(0)$1" -> "df(0)$6"	[label=fit];
 	"km(0)$1" -> "columns(0)$0"	[label=fit];
@@ -14737,11 +14680,11 @@ object at 0x12fa162b0>, <_ast.Constant object at 0x12fa162e0>, <_ast.Constant ob
 	"gc(0)$0" -> "gc(0)"	[label=collect];
 	"df(0)$8" -> "columns(0)$0"	[label=reduce_mem_usage];
 	"df(0)$8" -> "df(0)$7"	[label=reduce_mem_usage];
-	"[<_ast.Constant object at 0x12fa16e20>, <_ast.Constant object at 0x12fa16e50>, <_ast.Constant object at 0x12fa16e80>, <_ast.Constant \
-object at 0x12fa16eb0>, <_ast.Constant object at 0x12fa16f10>, <_ast.Constant object at 0x12fa16f40>, <_ast.Constant object at 0x12fa16f70>, <_\
-ast.Constant object at 0x12fa16fa0>, <_ast.Constant object at 0x12fa16fd0>, <_ast.Constant object at 0x12fa16ee0>, <_ast.Constant \
-object at 0x12fa168e0>, <_ast.Constant object at 0x12fa1b040>, <_ast.Constant object at 0x12fa1b0a0>, <_ast.Constant object at 0x12fa1b100>](\
-0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c060cb50>, <_ast.Constant object at 0x7fd4c060cbb0>, <_ast.Constant object at 0x7fd4c060cbe0>, <_\
+ast.Constant object at 0x7fd4c060cc10>, <_ast.Constant object at 0x7fd4c060cc40>, <_ast.Constant object at 0x7fd4c060cc70>, <_ast.Constant \
+object at 0x7fd4c060cca0>, <_ast.Constant object at 0x7fd4c060ccd0>, <_ast.Constant object at 0x7fd4c060cd00>, <_ast.Constant object \
+at 0x7fd4c060cd30>, <_ast.Constant object at 0x7fd4c060cd60>, <_ast.Constant object at 0x7fd4c060cdc0>, <_ast.Constant object at \
+0x7fd4c060cd90>, <_ast.Constant object at 0x7fd4c060cdf0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df(0)$9" -> "1(0)"	[label=fillna];
 	"df(0)$9" -> "col(0)"	[label=fillna];
 	"df(0)$9" -> "df(0)$8"	[label=fillna];
@@ -14755,8 +14698,8 @@ object at 0x12fa168e0>, <_ast.Constant object at 0x12fa1b040>, <_ast.Constant ob
 	"df(0)$11" -> "df(0)$10"	[label=PCA_change];
 	"df(0)$11" -> "PCA_C_(0)"	[label=PCA_change];
 	"PCA_C_(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa1bbe0>, <_ast.Constant object at 0x12fa1bc10>, <_ast.Constant object at 0x12fa1bc40>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"c_features(0)$0" -> "[<_ast.Constant object at 0x12fa1bbe0>, <_ast.Constant object at 0x12fa1bc10>, <_ast.Constant object at 0x12fa1bc40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05f19d0>, <_ast.Constant object at 0x7fd4c05f1a00>, <_ast.Constant object at 0x7fd4c05f1a30>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"c_features(0)$0" -> "[<_ast.Constant object at 0x7fd4c05f19d0>, <_ast.Constant object at 0x7fd4c05f1a00>, <_ast.Constant object at 0x7fd4c05f1a30>](0)"	[label=assignedFrom];
 	"km(0)$2" -> "4(0)"	[label=KMeans];
 	"km(0)$3" -> "df(0)$11"	[label=fit];
 	"km(0)$3" -> "c_features(0)$0"	[label=fit];
@@ -14766,9 +14709,11 @@ object at 0x12fa168e0>, <_ast.Constant object at 0x12fa1b040>, <_ast.Constant ob
 	"df(0)$12" -> "km(0)$3"	[label=predict];
 	"df(0)$12" -> "df(0)$12"	[label=predict];
 	"df(0)$13" -> "df(0)$12"	[label=reduce_mem_usage];
-	"[<_ast.Constant object at 0x12fa404f0>, <_ast.Constant object at 0x12fa40520>, <_ast.Constant object at 0x12fa40550>, <_ast.Constant \
-object at 0x12fa405b0>, <_ast.Constant object at 0x12fa40280>, <_ast.Constant object at 0x12fa40670>, <_ast.Constant object at 0x12fa406a0>, <_\
-ast.Constant object at 0x12fa406d0>, <_ast.Constant object at 0x12fa40700>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05fc1c0>, <_ast.Constant object at 0x7fd4c05fc1f0>, <_ast.Constant object at 0x7fd4c05fc220>, <_\
+ast.Constant object at 0x7fd4c05fc250>, <_ast.Constant object at 0x7fd4c05fc280>, <_ast.Constant object at 0x7fd4c05fc2e0>, <_ast.Constant \
+object at 0x7fd4c05fc310>, <_ast.Constant object at 0x7fd4c05fc340>, <_ast.Constant object at 0x7fd4c05fc370>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df(0)$14" -> "df(0)$13"	[label=fillna];
+	"df(0)$14" -> "None(0)"	[label=fillna];
 	"None(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_id(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_id(0)$0" -> "TransactionID(0)"	[label=read_csv];
@@ -14785,30 +14730,36 @@ ast.Constant object at 0x12fa406d0>, <_ast.Constant object at 0x12fa40700>](0)" 
 	"df_id(0)$1" -> "pd(0)"	[label=concat];
 	"df_id(0)$1" -> "0(0)"	[label=concat];
 	"df_id(0)$1" -> "False(0)"	[label=concat];
-	"df_id(0)$1" -> "[<_ast.Name object at 0x12fa40580>, <_ast.Name object at 0x12fa408e0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fa40580>, <_ast.Name object at 0x12fa408e0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_id(0)$1" -> "[<_ast.Name object at 0x7fd4c05fccd0>, <_ast.Name object at 0x7fd4c05fcd00>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c05fccd0>, <_ast.Name object at 0x7fd4c05fcd00>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"Transaction Shape (0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"print[484/0]" -> "df(0)$14"	[label=print];
+	"print[484/0]" -> "Transaction Shape (0)"	[label=print];
+	"Id Shape           (0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"print[485/0]" -> "df_id(0)$3"	[label=print];
+	"print[485/0]" -> "Id Shape           (0)"	[label=print];
 	"lbl(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
-	"lbl(0)$1" -> "df_id(0)$3"	[label=fit];
 	"lbl(0)$1" -> "f(0)"	[label=fit];
+	"lbl(0)$1" -> "df_id(0)$3"	[label=fit];
 	"lbl(0)$1" -> "lbl(0)$0"	[label=fit];
 	"lbl(0)$1" -> "list(0)"	[label=fit];
 	"list(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"df_id(0)$4" -> "df_id(0)$3"	[label=transform];
 	"df_id(0)$4" -> "f(0)"	[label=transform];
+	"df_id(0)$4" -> "df_id(0)$3"	[label=transform];
 	"df_id(0)$4" -> "lbl(0)$1"	[label=transform];
 	"df_id(0)$4" -> "list(0)"	[label=transform];
 	"df_id(0)$4" -> "df_id(0)$4"	[label=transform];
 	"df(0)$15" -> "True(0)"	[label=merge];
-	"df(0)$15" -> "df(0)$14"	[label=merge];
 	"df(0)$15" -> "TransactionID(0)"	[label=merge];
+	"df(0)$15" -> "df(0)$14"	[label=merge];
 	"df(0)$15" -> "df_id(0)$4"	[label=merge];
 	"df(0)$15" -> "left(0)"	[label=merge];
 	"left(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df(0)$16" -> "df(0)$15"	[label=reduce_mem_usage];
-	"[<_ast.Constant object at 0x12fa53c40>, <_ast.Constant object at 0x12fa53c70>, <_ast.Constant object at 0x12fa53ca0>, <_ast.Constant \
-object at 0x12fa53cd0>, <_ast.Constant object at 0x12fa53d00>, <_ast.Constant object at 0x12fa53d30>, <_ast.Constant object at 0x12fa53d60>, <_\
-ast.Constant object at 0x12fa53d90>, <_ast.Constant object at 0x12fa53dc0>, <_ast.Constant object at 0x12fa53df0>, <_ast.Constant \
-object at 0x12fa53e20>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05ec9a0>, <_ast.Constant object at 0x7fd4c05ec9d0>, <_ast.Constant object at 0x7fd4c05eca00>, <_\
+ast.Constant object at 0x7fd4c05eca30>, <_ast.Constant object at 0x7fd4c05eca60>, <_ast.Constant object at 0x7fd4c05eca90>, <_ast.Constant \
+object at 0x7fd4c05ecac0>, <_ast.Constant object at 0x7fd4c05ecaf0>, <_ast.Constant object at 0x7fd4c05ecb50>, <_ast.Constant object \
+at 0x7fd4c05ecbb0>, <_ast.Constant object at 0x7fd4c05ecbe0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df(0)$17" -> "1(0)"	[label=minmax_scale];
 	"df(0)$17" -> "0(0)"	[label=minmax_scale];
 	"df(0)$17" -> "col(0)"	[label=minmax_scale];
@@ -14845,8 +14796,8 @@ object at 0x12fa53e20>](0)" -> "almost-complete-feature-engineering-ieee-data.ip
 	"x(3)$1" -> "-999(3)"	[label=replace];
 	"x(3)$1" -> "nan(3)"	[label=replace];
 	"df(4)" -> "definie_indexes[0]"	[label=_argToVar];
-	"cards_cols(4)$0" -> "[<_ast.Constant object at 0x12fa3e8e0>, <_ast.Constant object at 0x12fa3e910>, <_ast.Constant object at 0x12fa3e940>, <_ast.Constant \
-object at 0x12fa3e970>](4)"	[label=assignedFrom];
+	"cards_cols(4)$0" -> "[<_ast.Constant object at 0x7fd4c05dc640>, <_ast.Constant object at 0x7fd4c05dc670>, <_ast.Constant object at 0x7fd4c05dc6a0>, <_\
+ast.Constant object at 0x7fd4c05dc6d0>](4)"	[label=assignedFrom];
 	"card(4)" -> "cards_cols(4)$0"	[label=iteratorOf];
 	"df(4)$0" -> "df(4)"	[label=map];
 	"df(4)$0" -> "card(4)"	[label=map];
@@ -14857,8 +14808,8 @@ object at 0x12fa3e970>](4)"	[label=assignedFrom];
 	"df(4)$1" -> "df(4)$1"	[label=Add];
 	"df(4)$1" -> " (4)"	[label=Add];
 	"df(4)$2" -> "df(4)$1"	[label=sort_values];
-	"df(4)$2" -> "[<_ast.Constant object at 0x12fa501f0>, <_ast.Constant object at 0x12fa50220>](4)"	[label=sort_values];
-	"df(4)$2" -> "[<_ast.Constant object at 0x12fa502e0>, <_ast.Constant object at 0x12fa50310>](4)"	[label=sort_values];
+	"df(4)$2" -> "[<_ast.Constant object at 0x7fd4c05dcfa0>, <_ast.Constant object at 0x7fd4c05dcfd0>](4)"	[label=sort_values];
+	"df(4)$2" -> "[<_ast.Constant object at 0x7fd4c05dce80>, <_ast.Constant object at 0x7fd4c0600040>](4)"	[label=sort_values];
 	"df(4)$3" -> "df(4)$2"	[label=apply];
 	"df(4)$3" -> "Card_ID(4)"	[label=apply];
 	"df(4)$3" -> "corret_card_id(4)"	[label=apply];
@@ -14895,21 +14846,22 @@ object at 0x12fa3e970>](4)"	[label=assignedFrom];
 	"df(4)$9" -> "0(4)"	[label=fillna];
 	"df(0)$23" -> "df(0)$22"	[label=definie_indexes];
 	"df(0)$24" -> "df(0)$23"	[label=reduce_mem_usage];
-	"[<_ast.Constant object at 0x12fa4a430>, <_ast.Constant object at 0x12fa4a490>, <_ast.Constant object at 0x12fa4a4c0>, <_ast.Constant \
-object at 0x12fa4a4f0>, <_ast.Constant object at 0x12fa4a520>, <_ast.Constant object at 0x12fa4a550>, <_ast.Constant object at 0x12fa4a580>, <_\
-ast.Constant object at 0x12fa4a5b0>, <_ast.Constant object at 0x12fa4a5e0>, <_ast.Constant object at 0x12fa4a610>, <_ast.Constant \
-object at 0x12fa4a670>, <_ast.Constant object at 0x12fa4a6a0>, <_ast.Constant object at 0x12fa4a6d0>, <_ast.Constant object at 0x12fa4a700>, <_\
-ast.Constant object at 0x12fa4a730>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"d_features(0)$0" -> "[<_ast.Constant object at 0x12fa4a430>, <_ast.Constant object at 0x12fa4a490>, <_ast.Constant object at 0x12fa4a4c0>, <_ast.Constant \
-object at 0x12fa4a4f0>, <_ast.Constant object at 0x12fa4a520>, <_ast.Constant object at 0x12fa4a550>, <_ast.Constant object at 0x12fa4a580>, <_\
-ast.Constant object at 0x12fa4a5b0>, <_ast.Constant object at 0x12fa4a5e0>, <_ast.Constant object at 0x12fa4a610>, <_ast.Constant \
-object at 0x12fa4a670>, <_ast.Constant object at 0x12fa4a6a0>, <_ast.Constant object at 0x12fa4a6d0>, <_ast.Constant object at 0x12fa4a700>, <_\
-ast.Constant object at 0x12fa4a730>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa4a7c0>, <_ast.Constant object at 0x12fa4a7f0>, <_ast.Constant object at 0x12fa4a820>, <_ast.Constant \
-object at 0x12fa4a850>, <_ast.Constant object at 0x12fa4a880>, <_ast.Constant object at 0x12fa4a8b0>, <_ast.Constant object at 0x12fa4a8e0>, <_\
-ast.Constant object at 0x12fa4a910>, <_ast.Constant object at 0x12fa4a940>, <_ast.Constant object at 0x12fa4a970>, <_ast.Constant \
-object at 0x12fa4a9a0>, <_ast.Constant object at 0x12fa4aa00>, <_ast.Constant object at 0x12fa4aa30>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa4aaf0>, <_ast.Constant object at 0x12fa4ab20>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05e6130>, <_ast.Constant object at 0x7fd4c05e6190>, <_ast.Constant object at 0x7fd4c05e6220>, <_\
+ast.Constant object at 0x7fd4c05e6250>, <_ast.Constant object at 0x7fd4c05e6280>, <_ast.Constant object at 0x7fd4c05e62b0>, <_ast.Constant \
+object at 0x7fd4c05e62e0>, <_ast.Constant object at 0x7fd4c05e6310>, <_ast.Constant object at 0x7fd4c05e6340>, <_ast.Constant object \
+at 0x7fd4c05e6370>, <_ast.Constant object at 0x7fd4c05e63d0>, <_ast.Constant object at 0x7fd4c05e6400>, <_ast.Constant object at \
+0x7fd4c05e6430>, <_ast.Constant object at 0x7fd4c05e6460>, <_ast.Constant object at 0x7fd4c05e6490>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"d_features(0)$0" -> "[<_ast.Constant object at 0x7fd4c05e6130>, <_ast.Constant object at 0x7fd4c05e6190>, <_ast.Constant object at 0x7fd4c05e6220>, <_\
+ast.Constant object at 0x7fd4c05e6250>, <_ast.Constant object at 0x7fd4c05e6280>, <_ast.Constant object at 0x7fd4c05e62b0>, <_ast.Constant \
+object at 0x7fd4c05e62e0>, <_ast.Constant object at 0x7fd4c05e6310>, <_ast.Constant object at 0x7fd4c05e6340>, <_ast.Constant object \
+at 0x7fd4c05e6370>, <_ast.Constant object at 0x7fd4c05e63d0>, <_ast.Constant object at 0x7fd4c05e6400>, <_ast.Constant object at \
+0x7fd4c05e6430>, <_ast.Constant object at 0x7fd4c05e6460>, <_ast.Constant object at 0x7fd4c05e6490>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05e6520>, <_ast.Constant object at 0x7fd4c05e6550>, <_ast.Constant object at 0x7fd4c05e6580>, <_\
+ast.Constant object at 0x7fd4c05e65b0>, <_ast.Constant object at 0x7fd4c05e65e0>, <_ast.Constant object at 0x7fd4c05e6610>, <_ast.Constant \
+object at 0x7fd4c05e6640>, <_ast.Constant object at 0x7fd4c05e6670>, <_ast.Constant object at 0x7fd4c05e66d0>, <_ast.Constant object \
+at 0x7fd4c05e66a0>, <_ast.Constant object at 0x7fd4c05e6700>, <_ast.Constant object at 0x7fd4c05e6730>, <_ast.Constant object at \
+0x7fd4c05e6760>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05e6820>, <_ast.Constant object at 0x7fd4c05e6880>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df(0)$25" -> "1(0)"	[label=minmax_scale];
 	"df(0)$25" -> "0(0)"	[label=minmax_scale];
 	"df(0)$25" -> "col(0)"	[label=minmax_scale];
@@ -14929,12 +14881,12 @@ object at 0x12fa4a9a0>, <_ast.Constant object at 0x12fa4aa00>, <_ast.Constant ob
 	"df(0)$29" -> "df(0)$28"	[label=PCA_change];
 	"df(0)$29" -> "PCA_D_(0)"	[label=PCA_change];
 	"PCA_D_(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa47c10>, <_ast.Constant object at 0x12fa47910>, <_ast.Constant object at 0x12fa47c40>, <_ast.Constant \
-object at 0x12fa47c70>, <_ast.Constant object at 0x12fa47ca0>, <_ast.Constant object at 0x12fa47cd0>, <_ast.Constant object at 0x12fa47d00>, <_\
-ast.Constant object at 0x12fa47d30>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"pca_d(0)$0" -> "[<_ast.Constant object at 0x12fa47c10>, <_ast.Constant object at 0x12fa47910>, <_ast.Constant object at 0x12fa47c40>, <_ast.Constant \
-object at 0x12fa47c70>, <_ast.Constant object at 0x12fa47ca0>, <_ast.Constant object at 0x12fa47cd0>, <_ast.Constant object at 0x12fa47d00>, <_\
-ast.Constant object at 0x12fa47d30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c06468e0>, <_ast.Constant object at 0x7fd4c0646910>, <_ast.Constant object at 0x7fd4c0646940>, <_\
+ast.Constant object at 0x7fd4c0646970>, <_ast.Constant object at 0x7fd4c06469a0>, <_ast.Constant object at 0x7fd4c06469d0>, <_ast.Constant \
+object at 0x7fd4c0646a00>, <_ast.Constant object at 0x7fd4c0646a30>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"pca_d(0)$0" -> "[<_ast.Constant object at 0x7fd4c06468e0>, <_ast.Constant object at 0x7fd4c0646910>, <_ast.Constant object at 0x7fd4c0646940>, <_\
+ast.Constant object at 0x7fd4c0646970>, <_ast.Constant object at 0x7fd4c06469a0>, <_ast.Constant object at 0x7fd4c06469d0>, <_ast.Constant \
+object at 0x7fd4c0646a00>, <_ast.Constant object at 0x7fd4c0646a30>](0)"	[label=assignedFrom];
 	"km(0)$4" -> "8(0)"	[label=KMeans];
 	"km(0)$5" -> "df(0)$29"	[label=fit];
 	"km(0)$5" -> "pca_d(0)$0"	[label=fit];
@@ -15078,8 +15030,8 @@ ast.Constant object at 0x12fa47d30>](0)"	[label=assignedFrom];
 	"emails(0)$0" -> "spectrum(0)"	[label=assignedFrom];
 	"emails(0)$0" -> "yahoo(0)"	[label=assignedFrom];
 	"emails(0)$0" -> "apple(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12ff3eca0>, <_ast.Constant object at 0x12ff3ecd0>, <_ast.Constant object at 0x12ff3ed00>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"us_emails(0)$0" -> "[<_ast.Constant object at 0x12ff3eca0>, <_ast.Constant object at 0x12ff3ecd0>, <_ast.Constant object at 0x12ff3ed00>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0642a30>, <_ast.Constant object at 0x7fd4c0642a60>, <_ast.Constant object at 0x7fd4c0642a90>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"us_emails(0)$0" -> "[<_ast.Constant object at 0x7fd4c0642a30>, <_ast.Constant object at 0x7fd4c0642a60>, <_ast.Constant object at 0x7fd4c0642a90>](0)"	[label=assignedFrom];
 	"df_train(0)$8" -> "c(0)"	[label=map];
 	"df_train(0)$8" -> "df_train(0)$7"	[label=map];
 	"df_train(0)$8" -> "emails(0)$0"	[label=map];
@@ -15133,80 +15085,80 @@ ast.Constant object at 0x12fa47d30>](0)"	[label=assignedFrom];
 	"df_train(0)$13" -> "TransactionAmt(0)"	[label=Sub];
 	"df_train(0)$13" -> "df_train(0)$12"	[label=Sub];
 	"df_train(0)$13" -> "df_train(0)$13"	[label=Sub];
-	"df_train(0)$13" -> "[<_ast.Constant object at 0x12ff4fc40>](0)"	[label=Sub];
+	"df_train(0)$13" -> "[<_ast.Constant object at 0x7fd4c061a940>](0)"	[label=Sub];
 	"df_train(0)$13" -> "mean(0)"	[label=Sub];
-	"[<_ast.Constant object at 0x12ff4fc40>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c061a940>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"mean(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$14" -> "TransactionAmt(0)"	[label=Div];
 	"df_train(0)$14" -> "df_train(0)$13"	[label=Div];
 	"df_train(0)$14" -> "df_train(0)$14"	[label=Div];
 	"df_train(0)$14" -> "TransactionAmt_to_mean_card_id(0)"	[label=Div];
-	"df_train(0)$14" -> "[<_ast.Constant object at 0x12ff220d0>](0)"	[label=Div];
+	"df_train(0)$14" -> "[<_ast.Constant object at 0x7fd4c061adc0>](0)"	[label=Div];
 	"df_train(0)$14" -> "std(0)"	[label=Div];
 	"TransactionAmt_to_mean_card_id(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12ff220d0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c061adc0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"std(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$13" -> "TransactionAmt(0)"	[label=Sub];
 	"df_test(0)$13" -> "df_test(0)$12"	[label=Sub];
 	"df_test(0)$13" -> "mean(0)"	[label=Sub];
 	"df_test(0)$13" -> "df_test(0)$13"	[label=Sub];
-	"df_test(0)$13" -> "[<_ast.Constant object at 0x12ff22550>](0)"	[label=Sub];
-	"[<_ast.Constant object at 0x12ff22550>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$13" -> "[<_ast.Constant object at 0x7fd4c06202b0>](0)"	[label=Sub];
+	"[<_ast.Constant object at 0x7fd4c06202b0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$14" -> "TransactionAmt(0)"	[label=Div];
 	"df_test(0)$14" -> "TransactionAmt_to_mean_card_id(0)"	[label=Div];
 	"df_test(0)$14" -> "std(0)"	[label=Div];
 	"df_test(0)$14" -> "df_test(0)$13"	[label=Div];
 	"df_test(0)$14" -> "df_test(0)$14"	[label=Div];
-	"df_test(0)$14" -> "[<_ast.Constant object at 0x12ff229d0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff229d0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$14" -> "[<_ast.Constant object at 0x7fd4c0620430>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c0620430>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$15" -> "TransactionAmt(0)"	[label=Div];
 	"df_train(0)$15" -> "mean(0)"	[label=Div];
 	"df_train(0)$15" -> "df_train(0)$14"	[label=Div];
 	"df_train(0)$15" -> "df_train(0)$15"	[label=Div];
-	"df_train(0)$15" -> "[<_ast.Constant object at 0x12ff22e50>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff22e50>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_train(0)$15" -> "[<_ast.Constant object at 0x7fd4c0620bb0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c0620bb0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$16" -> "TransactionAmt(0)"	[label=Div];
 	"df_train(0)$16" -> "mean(0)"	[label=Div];
 	"df_train(0)$16" -> "df_train(0)$15"	[label=Div];
 	"df_train(0)$16" -> "df_train(0)$16"	[label=Div];
-	"df_train(0)$16" -> "[<_ast.Constant object at 0x12ff24310>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff24310>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_train(0)$16" -> "[<_ast.Constant object at 0x7fd4c061c040>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c061c040>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$17" -> "TransactionAmt(0)"	[label=Div];
 	"df_train(0)$17" -> "std(0)"	[label=Div];
 	"df_train(0)$17" -> "df_train(0)$16"	[label=Div];
 	"df_train(0)$17" -> "df_train(0)$17"	[label=Div];
-	"df_train(0)$17" -> "[<_ast.Constant object at 0x12ff247c0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff247c0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_train(0)$17" -> "[<_ast.Constant object at 0x7fd4c061c550>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c061c550>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$18" -> "TransactionAmt(0)"	[label=Div];
 	"df_train(0)$18" -> "std(0)"	[label=Div];
 	"df_train(0)$18" -> "df_train(0)$17"	[label=Div];
 	"df_train(0)$18" -> "df_train(0)$18"	[label=Div];
-	"df_train(0)$18" -> "[<_ast.Constant object at 0x12ff24c10>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff24c10>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_train(0)$18" -> "[<_ast.Constant object at 0x7fd4c061c9d0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c061c9d0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$15" -> "TransactionAmt(0)"	[label=Div];
 	"df_test(0)$15" -> "mean(0)"	[label=Div];
 	"df_test(0)$15" -> "df_test(0)$14"	[label=Div];
 	"df_test(0)$15" -> "df_test(0)$15"	[label=Div];
-	"df_test(0)$15" -> "[<_ast.Constant object at 0x12ff180d0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff180d0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$15" -> "[<_ast.Constant object at 0x7fd4c061ce20>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c061ce20>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$16" -> "TransactionAmt(0)"	[label=Div];
 	"df_test(0)$16" -> "mean(0)"	[label=Div];
 	"df_test(0)$16" -> "df_test(0)$15"	[label=Div];
 	"df_test(0)$16" -> "df_test(0)$16"	[label=Div];
-	"df_test(0)$16" -> "[<_ast.Constant object at 0x12ff18550>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff18550>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$16" -> "[<_ast.Constant object at 0x7fd4c064e280>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c064e280>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$17" -> "TransactionAmt(0)"	[label=Div];
 	"df_test(0)$17" -> "std(0)"	[label=Div];
 	"df_test(0)$17" -> "df_test(0)$16"	[label=Div];
 	"df_test(0)$17" -> "df_test(0)$17"	[label=Div];
-	"df_test(0)$17" -> "[<_ast.Constant object at 0x12ff189d0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff189d0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$17" -> "[<_ast.Constant object at 0x7fd4c064e7c0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c064e7c0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$18" -> "TransactionAmt(0)"	[label=Div];
 	"df_test(0)$18" -> "std(0)"	[label=Div];
 	"df_test(0)$18" -> "df_test(0)$17"	[label=Div];
 	"df_test(0)$18" -> "df_test(0)$18"	[label=Div];
-	"df_test(0)$18" -> "[<_ast.Constant object at 0x12ff18e50>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12ff18e50>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$18" -> "[<_ast.Constant object at 0x7fd4c064ebe0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd4c064ebe0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_train(0)$19" -> "np(0)"	[label=log];
 	"df_train(0)$19" -> "TransactionAmt(0)"	[label=log];
 	"df_train(0)$19" -> "df_train(0)$18"	[label=log];
@@ -15271,8 +15223,8 @@ ast.Constant object at 0x12fa47d30>](0)"	[label=assignedFrom];
 	"df_test(0)$24" -> "float(0)"	[label=astype];
 	"df_test(0)$24" -> "card2(0)"	[label=astype];
 	"df_test(0)$24" -> "df_test(0)$23"	[label=astype];
-	"[<_ast.Constant object at 0x12fa7adc0>, <_ast.Constant object at 0x12fa7adf0>, <_ast.Constant object at 0x12fa7ae20>, <_ast.Constant \
-object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0999b50>, <_ast.Constant object at 0x7fd4d0999b80>, <_ast.Constant object at 0x7fd4d0999bb0>, <_\
+ast.Constant object at 0x7fd4d0999be0>, <_ast.Constant object at 0x7fd4d0999c10>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"le(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
 	"le(0)$1" -> "str(0)"	[label=fit];
 	"le(0)$1" -> "col(0)"	[label=fit];
@@ -15325,8 +15277,8 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"X_train(0)$0" -> "1(0)"	[label=drop];
 	"X_train(0)$0" -> "TransactionDT(0)"	[label=drop];
 	"X_train(0)$0" -> "df_train(0)$28"	[label=drop];
-	"X_train(0)$0" -> "[<_ast.Constant object at 0x12fa71a90>, <_ast.Constant object at 0x12fa71ac0>, <_ast.Constant object at 0x12fa71af0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fa71a90>, <_ast.Constant object at 0x12fa71ac0>, <_ast.Constant object at 0x12fa71af0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"X_train(0)$0" -> "[<_ast.Constant object at 0x7fd4d09766a0>, <_ast.Constant object at 0x7fd4d09766d0>, <_ast.Constant object at 0x7fd4d0976700>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d09766a0>, <_ast.Constant object at 0x7fd4d09766d0>, <_ast.Constant object at 0x7fd4d0976700>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"y_train(0)$0" -> "TransactionDT(0)"	[label=astype];
 	"y_train(0)$0" -> "isFraud(0)"	[label=astype];
 	"y_train(0)$0" -> "df_train(0)$28"	[label=astype];
@@ -15335,12 +15287,16 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"X_test(0)$0" -> "1(0)"	[label=drop];
 	"X_test(0)$0" -> "TransactionDT(0)"	[label=drop];
 	"X_test(0)$0" -> "df_test(0)$28"	[label=drop];
-	"X_test(0)$0" -> "[<_ast.Constant object at 0x12fa71f10>, <_ast.Constant object at 0x12fa71f40>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fa71f10>, <_ast.Constant object at 0x12fa71f40>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "[<_ast.Constant object at 0x7fd4d0976be0>, <_ast.Constant object at 0x7fd4d0976c10>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d0976be0>, <_ast.Constant object at 0x7fd4d0976c10>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"df_test(0)$29" -> "df_test(0)$28"	[label=assignedFrom];
-	"df_test(0)$29" -> "[<_ast.Constant object at 0x12fa5c1c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa5c1c0>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"df_test(0)$29" -> "[<_ast.Constant object at 0x7fd4d0976e80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0976e80>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"gc(0)$1" -> "gc(0)$0"	[label=collect];
+	"X_train(0)$1" -> "X_train(0)$0"	[label=reduce_mem_usage];
+	"X_test(0)$1" -> "X_test(0)$0"	[label=reduce_mem_usage];
+	"print[720/0]" -> "X_train(0)$1"	[label=print];
+	"print[721/0]" -> "X_test(0)$1"	[label=print];
 	plot_importance -> xgboost	[label=importedBy];
 	"plot_importance(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"plot_importance(0)" -> plot_importance	[label=assignedFrom];
@@ -15355,6 +15311,27 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"TimeSeriesSplit(0)" -> TimeSeriesSplit	[label=assignedFrom];
 	"params(5)" -> "objective[0]"	[label=_argToVar];
 	"time1(5)$0" -> "time(5)"	[label=time];
+	"params(5)$0" -> "params(5)$0"	[label=assignedFrom];
+	"params(5)$0" -> "max_depth(5)"	[label=assignedFrom];
+	"params(5)$0" -> "gamma(5)"	[label=assignedFrom];
+	"params(5)$0" -> "subsample(5)"	[label=assignedFrom];
+	"params(5)$0" -> "reg_alpha(5)"	[label=assignedFrom];
+	"params(5)$0" -> "reg_lambda(5)"	[label=assignedFrom];
+	"params(5)$0" -> "learning_rate(5)"	[label=assignedFrom];
+	"params(5)$0" -> "num_leaves(5)"	[label=assignedFrom];
+	"params(5)$0" -> "colsample_bytree(5)"	[label=assignedFrom];
+	"params(5)$0" -> "min_child_samples(5)"	[label=assignedFrom];
+	"params(5)$0" -> "feature_fraction(5)"	[label=assignedFrom];
+	"params(5)$0" -> "bagging_fraction(5)"	[label=assignedFrom];
+	"params(5)$0" -> "int(5)"	[label=assignedFrom];
+	"params(5)$0" -> "{:.3f}(5)"	[label=assignedFrom];
+	"params(5)$0" -> "{:.2f}(5)"	[label=assignedFrom];
+	"print[749/4]" -> "
+############## New Run ################(5)"	[label=print];
+	"print[750/4]" -> "params(5)$0"	[label=print];
+	"print[750/4]" -> "params = (5)"	[label=print];
+	"FOLDS(5)$0" -> "3(5)"	[label=assignedFrom];
+	"count(5)$0" -> "1(5)"	[label=assignedFrom];
 	"skf(5)$0" -> "FOLDS(5)$0"	[label=StratifiedKFold];
 	"skf(5)$0" -> "True(5)"	[label=StratifiedKFold];
 	"skf(5)$0" -> "42(5)"	[label=StratifiedKFold];
@@ -15367,10 +15344,10 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"val_idx(5)" -> "X_train(5)"	[label=iteratorOf];
 	"val_idx(5)" -> "y_train(5)"	[label=iteratorOf];
 	"clf(5)$0" -> "params(5)$0"	[label=XGBClassifier];
-	"clf(5)$0" -> "4(5)"	[label=XGBClassifier];
 	"clf(5)$0" -> "True(5)"	[label=XGBClassifier];
 	"clf(5)$0" -> "xgb(5)"	[label=XGBClassifier];
 	"clf(5)$0" -> "1000(5)"	[label=XGBClassifier];
+	"clf(5)$0" -> "4(5)"	[label=XGBClassifier];
 	"clf(5)$0" -> "gpu_hist(5)"	[label=XGBClassifier];
 	"X_tr(5)$0" -> "tr_idx(5)"	[label=assignedFrom];
 	"X_tr(5)$0" -> "X_train(5)"	[label=assignedFrom];
@@ -15387,9 +15364,32 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"clf(5)$1" -> "clf(5)$0"	[label=fit];
 	"clf(5)$1" -> "X_tr(5)$0"	[label=fit];
 	"clf(5)$1" -> "y_tr(5)$0"	[label=fit];
+	"score(5)$0" -> "True(5)"	[label=assignedFrom];
+	"score(5)$0" -> "X_vl(5)$0"	[label=assignedFrom];
+	"score(5)$0" -> "y_vl(5)$0"	[label=assignedFrom];
+	"score(5)$0" -> "clf(5)$1"	[label=assignedFrom];
+	"score(5)$0" -> "make_scorer(5)"	[label=assignedFrom];
+	"score(5)$0" -> "roc_auc_score(5)"	[label=assignedFrom];
+	"score_mean(5)$1" -> "score_mean(5)$0"	[label=Add];
+	"score_mean(5)$1" -> "score(5)$0"	[label=Add];
+	"print[773/8]" -> "count(5)$0"	[label=print];
+	"print[773/8]" -> "4(5)"	[label=print];
+	"print[773/8]" -> "score(5)$0"	[label=print];
+	"print[773/8]" -> " CV - score: (5)"	[label=print];
+	"print[773/8]" -> "round(5)"	[label=print];
 	"count(5)$1" -> "count(5)$0"	[label=Add];
 	"count(5)$1" -> "1(5)"	[label=Add];
+	"time2(5)$0" -> "time1(5)$0"	[label=Sub];
+	"time2(5)$0" -> "time(5)"	[label=Sub];
+	"print[776/4]" -> "round(5)"	[label=print];
+	"print[776/4]" -> "time2(5)$0"	[label=print];
+	"print[776/4]" -> "Total Time Run: (5)"	[label=print];
+	"print[776/4]" -> "60(5)"	[label=print];
+	"print[776/4]" -> "2(5)"	[label=print];
 	"gc(5)$0" -> "gc(5)"	[label=collect];
+	"print[778/4]" -> "FOLDS(5)$0"	[label=print];
+	"print[778/4]" -> "score_mean(5)$1"	[label=print];
+	"print[778/4]" -> "Mean ROC_AUC: (5)"	[label=print];
 	"max_depth(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"space(0)$0" -> "hp(0)"	[label=assignedFrom];
 	"space(0)$0" -> "1(0)"	[label=assignedFrom];
@@ -15416,9 +15416,9 @@ object at 0x12fa7ae50>, <_ast.Constant object at 0x12fa7ae80>](0)" -> "almost-co
 	"space(0)$0" -> "0.3(0)"	[label=assignedFrom];
 	"space(0)$0" -> "0.9(0)"	[label=assignedFrom];
 	"space(0)$0" -> "range(0)"	[label=assignedFrom];
-	"space(0)$0" -> "[<_ast.Constant object at 0x12fa86940>, <_ast.Constant object at 0x12fa869a0>, <_ast.Constant object at 0x12fa869d0>, <_ast.Constant \
-object at 0x12fa86a00>, <_ast.Constant object at 0x12fa86a30>, <_ast.Constant object at 0x12fa86a60>, <_ast.Constant object at 0x12fa86a90>](\
-0)"	[label=assignedFrom];
+	"space(0)$0" -> "[<_ast.Constant object at 0x7fd4d09a7640>, <_ast.Constant object at 0x7fd4d09a7670>, <_ast.Constant object at 0x7fd4d09a76a0>, <_\
+ast.Constant object at 0x7fd4d09a76d0>, <_ast.Constant object at 0x7fd4d09a7700>, <_ast.Constant object at 0x7fd4d09a7730>, <_ast.Constant \
+object at 0x7fd4d09a7760>](0)"	[label=assignedFrom];
 	"space(0)$0" -> "0.8(0)"	[label=assignedFrom];
 	"reg_alpha(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"reg_lambda(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
@@ -15436,9 +15436,9 @@ object at 0x12fa86a00>, <_ast.Constant object at 0x12fa86a30>, <_ast.Constant ob
 	"0.3(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"0.9(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"range(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa86940>, <_ast.Constant object at 0x12fa869a0>, <_ast.Constant object at 0x12fa869d0>, <_ast.Constant \
-object at 0x12fa86a00>, <_ast.Constant object at 0x12fa86a30>, <_ast.Constant object at 0x12fa86a60>, <_ast.Constant object at 0x12fa86a90>](\
-0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d09a7640>, <_ast.Constant object at 0x7fd4d09a7670>, <_ast.Constant object at 0x7fd4d09a76a0>, <_\
+ast.Constant object at 0x7fd4d09a76d0>, <_ast.Constant object at 0x7fd4d09a7700>, <_ast.Constant object at 0x7fd4d09a7730>, <_ast.Constant \
+object at 0x7fd4d09a7760>](0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"0.8(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"objective(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
 	"best(0)$0" -> "tpe(0)"	[label=fmin];
@@ -15455,11 +15455,11 @@ object at 0x12fa86a00>, <_ast.Constant object at 0x12fa86a30>, <_ast.Constant ob
 	"clf(0)$0" -> "best_params(0)$1"	[label=XGBClassifier];
 	"clf(0)$0" -> "gpu_hist(0)"	[label=XGBClassifier];
 	"gpu_hist(0)" -> "almost-complete-feature-engineering-ieee-data.ipynb"	[label=appearsIn];
-	"clf(0)$1" -> "X_train(0)$1"	[label=fit];
 	"clf(0)$1" -> "y_train(0)$0"	[label=fit];
+	"clf(0)$1" -> "X_train(0)$1"	[label=fit];
 	"clf(0)$1" -> "clf(0)$0"	[label=fit];
-	"y_preds(0)$0" -> "X_test(0)$1"	[label=assignedFrom];
 	"y_preds(0)$0" -> "1(0)"	[label=assignedFrom];
+	"y_preds(0)$0" -> "X_test(0)$1"	[label=assignedFrom];
 	"y_preds(0)$0" -> "clf(0)$1"	[label=assignedFrom];
 	"sample_submission(0)$1" -> "sample_submission(0)$0"	[label=assignedFrom];
 	"sample_submission(0)$1" -> "y_preds(0)$0"	[label=assignedFrom];

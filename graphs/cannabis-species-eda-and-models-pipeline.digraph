@@ -50,67 +50,14 @@ digraph "" {
 	"strains(0)$0" -> "pd(0)"	[label=read_csv];
 	"strains(0)$0" -> "../input/cannabis.csv(0)"	[label=read_csv];
 	"../input/cannabis.csv(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"print[0]" -> "strains(0)$0"	[label=print];
-	"print[0]" -> "strains(0)$2"	[label=print];
-	"print[0]" -> "Rating Distribuition by Species Type(0)"	[label=print];
-	"print[0]" -> "strains(0)$5"	[label=print];
-	"print[0]" -> "The top 5 First Effects related(0)"	[label=print];
-	"print[0]" -> "The top 5 Second related Effects(0)"	[label=print];
-	"print[0]" -> "accuracy_score(0)"	[label=print];
-	"print[0]" -> "confusion_matrix(0)"	[label=print];
-	"print[0]" -> "classification_report(0)"	[label=print];
-	"print[0]" -> "X_train Shape: (0)"	[label=print];
-	"print[0]" -> "X_test Shape: (0)"	[label=print];
-	"print[0]" -> "X_important_train Shape: (0)"	[label=print];
-	"print[0]" -> "X_important_test Shape: (0)"	[label=print];
-	"print[0]" -> "msg(0)$0"	[label=print];
-	"print[0]" -> "Ridge_model(0)$1"	[label=print];
-	"print[0]" -> "Training score data: (0)"	[label=print];
-	"print[0]" -> "Ridge Best Parameters: (0)"	[label=print];
-	"print[0]" -> "xgb_model(0)$1"	[label=print];
-	"print[0]" -> "Results of the GridSearchCV of XGB: (0)"	[label=print];
-	"print[0]" -> "METRICS 
-Accuracy Score: (0)"	[label=print];
-	"print[0]" -> "gb_model(0)$1"	[label=print];
-	"print[0]" -> "Results of the GridSearchCV of Gradient Boosting Classifier: (0)"	[label=print];
-	"print[0]" -> "Accuracy is {}\%(0)"	[label=print];
+	"print[23/0]" -> "strains(0)$0"	[label=print];
+	"print[24/0]" -> "strains(0)$0"	[label=print];
+	"print[25/0]" -> "strains(0)$0"	[label=print];
+	"strains(0)$1" -> "strains(0)$0"	[label=head];
 	"strains(0)$2" -> "strains(0)$1"	[label=astype];
 	"strains(0)$2" -> "str(0)"	[label=astype];
-	"Rating Distribuition by Species Type(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"strains(0)$5" -> "strains(0)$4"	[label=head];
-	"The top 5 First Effects related(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"The top 5 Second related Effects(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"accuracy_score(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"accuracy_score(0)" -> accuracy_score	[label=assignedFrom];
-	"confusion_matrix(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"confusion_matrix(0)" -> confusion_matrix	[label=assignedFrom];
-	"classification_report(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"classification_report(0)" -> classification_report	[label=assignedFrom];
-	"X_train Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"X_test Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"X_important_train Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"X_important_test Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"msg(0)$0" -> "name(0)"	[label=Mod];
-	"msg(0)$0" -> "cv_results(0)$0"	[label=Mod];
-	"msg(0)$0" -> "\%s: \%f (+/- \%f)(0)"	[label=Mod];
-	"Ridge_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
-	"Ridge_model(0)$1" -> "y_train(0)$0"	[label=fit];
-	"Ridge_model(0)$1" -> "Ridge_model(0)$0"	[label=fit];
-	"Training score data: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"Ridge Best Parameters: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"xgb_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
-	"xgb_model(0)$1" -> "y_train(0)$0"	[label=fit];
-	"xgb_model(0)$1" -> "xgb_model(0)$0"	[label=fit];
-	"Results of the GridSearchCV of XGB: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"METRICS 
-Accuracy Score: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"gb_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
-	"gb_model(0)$1" -> "y_train(0)$0"	[label=fit];
-	"gb_model(0)$1" -> "gb_model(0)$0"	[label=fit];
-	"Results of the GridSearchCV of Gradient Boosting Classifier: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"Accuracy is {}\%(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"strains(0)$1" -> "strains(0)$0"	[label=head];
 	"str(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[29/0]" -> "strains(0)$2"	[label=print];
 	"total(0)$0" -> "strains(0)$2"	[label=len];
 	"plt(0)$1" -> "plt(0)$0"	[label=figure];
 	"g(0)$0" -> "sns(0)"	[label=countplot];
@@ -174,6 +121,8 @@ Accuracy Score: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=
 	"g(0)$8" -> "Rating(0)"	[label=set_xlabel];
 	"g(0)$8" -> "g(0)$7"	[label=set_xlabel];
 	"plt(0)$4" -> "plt(0)$3"	[label=show];
+	"Rating Distribuition by Species Type(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[62/0]" -> "Rating Distribuition by Species Type(0)"	[label=print];
 	"plt(0)$5" -> "plt(0)$4"	[label=figure];
 	"plt(0)$6" -> "plt(0)$5"	[label=suptitle];
 	"plt(0)$6" -> "Rating Distributions by Cannabis Species(0)"	[label=suptitle];
@@ -261,84 +210,44 @@ Accuracy Score: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=
 	"df_effect(0)$0" -> "strains(0)$2"	[label=DataFrame];
 	"df_effect(0)$0" -> ",(0)"	[label=DataFrame];
 	"df_effect(0)$0" -> "4(0)"	[label=DataFrame];
-	"df_effect(0)$0" -> "[<_ast.Constant object at 0x12ff2ffd0>, <_ast.Constant object at 0x12ff2f8e0>, <_ast.Constant object at 0x12f89f040>, <_ast.Constant \
-object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)"	[label=DataFrame];
+	"df_effect(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object at 0x7fd5007f05e0>, <_\
+ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0df0>](0)"	[label=DataFrame];
 	",(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"4(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12ff2ffd0>, <_ast.Constant object at 0x12ff2f8e0>, <_ast.Constant object at 0x12f89f040>, <_ast.Constant \
-object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object at 0x7fd5007f05e0>, <_\
+ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0df0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"df_flavors(0)$0" -> "pd(0)"	[label=DataFrame];
 	"df_flavors(0)$0" -> "strains(0)$2"	[label=DataFrame];
 	"df_flavors(0)$0" -> "2(0)"	[label=DataFrame];
 	"df_flavors(0)$0" -> ",(0)"	[label=DataFrame];
 	"df_flavors(0)$0" -> "True(0)"	[label=DataFrame];
-	"df_flavors(0)$0" -> "[<_ast.Constant object at 0x12f89f520>, <_ast.Constant object at 0x12f89f580>, <_ast.Constant object at 0x12f89f6a0>](0)"	[label=DataFrame];
+	"df_flavors(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab940>](0)"	[label=DataFrame];
 	"True(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89f520>, <_ast.Constant object at 0x12f89f580>, <_ast.Constant object at 0x12f89f6a0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab940>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"strains(0)$3" -> "pd(0)"	[label=concat];
-	"strains(0)$3" -> "[<_ast.Name object at 0x12f89fe20>, <_ast.Name object at 0x12f89fcd0>](0)"	[label=concat];
+	"strains(0)$3" -> "[<_ast.Name object at 0x7fd4902ab580>, <_ast.Name object at 0x7fd4902ab0d0>](0)"	[label=concat];
 	"strains(0)$3" -> "1(0)"	[label=concat];
-	"[<_ast.Name object at 0x12f89fe20>, <_ast.Name object at 0x12f89fcd0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902ab580>, <_ast.Name object at 0x7fd4902ab0d0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"1(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"strains(0)$4" -> "pd(0)"	[label=concat];
 	"strains(0)$4" -> "1(0)"	[label=concat];
-	"strains(0)$4" -> "[<_ast.Name object at 0x12f89f940>, <_ast.Name object at 0x12f89f8e0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f89f940>, <_ast.Name object at 0x12f89f8e0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"strains(0)$4" -> "[<_ast.Name object at 0x7fd4902abeb0>, <_ast.Name object at 0x7fd4902ab3a0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4902abeb0>, <_ast.Name object at 0x7fd4902ab3a0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"strains(0)$5" -> "strains(0)$4"	[label=head];
+	"The top 5 First Effects related(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[124/0]" -> "The top 5 First Effects related(0)"	[label=print];
+	"print[125/0]" -> "strains(0)$5"	[label=print];
+	"print[125/0]" -> "Effect_1(0)"	[label=print];
+	"print[125/0]" -> "5(0)"	[label=print];
 	"Effect_1(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"print[1]" -> "accuracy_score(0)"	[label=print];
-	"print[1]" -> "Effect_1(0)"	[label=print];
-	"print[1]" -> "Effect_2(0)"	[label=print];
-	"print[1]" -> "X_train(0)$0"	[label=print];
-	"print[1]" -> "X_test(0)$0"	[label=print];
-	"print[1]" -> "y_test(0)$0"	[label=print];
-	"print[1]" -> "X_important_train(0)$0"	[label=print];
-	"print[1]" -> "X_important_test(0)$0"	[label=print];
-	"print[1]" -> "tpot(0)$1"	[label=print];
-	"Effect_2(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"X_train(0)$0" -> "42(0)"	[label=train_test_split];
-	"X_train(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"X_train(0)$0" -> "y(0)$1"	[label=train_test_split];
-	"X_train(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"X_test(0)$0" -> "42(0)"	[label=train_test_split];
-	"X_test(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"X_test(0)$0" -> "y(0)$1"	[label=train_test_split];
-	"X_test(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"y_test(0)$0" -> "42(0)"	[label=train_test_split];
-	"y_test(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"y_test(0)$0" -> "y(0)$1"	[label=train_test_split];
-	"y_test(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"X_important_train(0)$0" -> "X_train(0)$0"	[label=transform];
-	"X_important_train(0)$0" -> "selection(0)$0"	[label=transform];
-	"X_important_test(0)$0" -> "X_test(0)$0"	[label=transform];
-	"X_important_test(0)$0" -> "selection(0)$0"	[label=transform];
-	"tpot(0)$1" -> "X_important_train(0)$0"	[label=fit];
-	"tpot(0)$1" -> "y_train(0)$0"	[label=fit];
-	"tpot(0)$1" -> "tpot(0)$0"	[label=fit];
 	"5(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"print[2]" -> "y_test(0)$0"	[label=print];
-	"print[2]" -> "X_important_test(0)$0"	[label=print];
-	"print[2]" -> "5(0)"	[label=print];
-	"print[2]" -> "y_train(0)$0"	[label=print];
-	"print[2]" -> "y_pred(0)$0"	[label=print];
-	"print[2]" -> "y_pred(0)$1"	[label=print];
-	"print[2]" -> "y_pred(0)$2"	[label=print];
-	"y_train(0)$0" -> "42(0)"	[label=train_test_split];
-	"y_train(0)$0" -> "X(0)$1"	[label=train_test_split];
-	"y_train(0)$0" -> "y(0)$1"	[label=train_test_split];
-	"y_train(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"y_pred(0)$0" -> "X_important_test(0)$0"	[label=predict];
-	"y_pred(0)$0" -> "Ridge_model(0)$3"	[label=predict];
-	"y_pred(0)$1" -> "X_important_test(0)$0"	[label=predict];
-	"y_pred(0)$1" -> "xgb(0)$1"	[label=predict];
-	"y_pred(0)$2" -> "X_important_test(0)$0"	[label=predict];
-	"y_pred(0)$2" -> "gb(0)$1"	[label=predict];
 	"plt(0)$9" -> "plt(0)$8"	[label=figure];
 	"g(0)$14" -> "sns(0)"	[label=boxplot];
-	"g(0)$14" -> "strains(0)$5"	[label=boxplot];
 	"g(0)$14" -> "Type(0)"	[label=boxplot];
 	"g(0)$14" -> "hls(0)"	[label=boxplot];
 	"g(0)$14" -> "3(0)"	[label=boxplot];
 	"g(0)$14" -> "Rating(0)"	[label=boxplot];
+	"g(0)$14" -> "strains(0)$5"	[label=boxplot];
 	"g(0)$14" -> "Effect_1(0)"	[label=boxplot];
 	"g(0)$15" -> "g(0)$14"	[label=set_xlabel];
 	"g(0)$15" -> "Related Effect(0)"	[label=set_xlabel];
@@ -350,13 +259,19 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"g(0)$17" -> "First Effect Related x Rating by Species Type(0)"	[label=set_title];
 	"First Effect Related x Rating by Species Type(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$10" -> "plt(0)$9"	[label=show];
+	"The top 5 Second related Effects(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[139/0]" -> "The top 5 Second related Effects(0)"	[label=print];
+	"print[140/0]" -> "strains(0)$5"	[label=print];
+	"print[140/0]" -> "5(0)"	[label=print];
+	"print[140/0]" -> "Effect_2(0)"	[label=print];
+	"Effect_2(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$11" -> "plt(0)$10"	[label=figure];
 	"g(0)$18" -> "sns(0)"	[label=boxplot];
-	"g(0)$18" -> "strains(0)$5"	[label=boxplot];
 	"g(0)$18" -> "Type(0)"	[label=boxplot];
 	"g(0)$18" -> "hls(0)"	[label=boxplot];
 	"g(0)$18" -> "3(0)"	[label=boxplot];
 	"g(0)$18" -> "Rating(0)"	[label=boxplot];
+	"g(0)$18" -> "strains(0)$5"	[label=boxplot];
 	"g(0)$18" -> "Effect_2(0)"	[label=boxplot];
 	"g(0)$19" -> "Related Effect(0)"	[label=set_xlabel];
 	"g(0)$19" -> "g(0)$18"	[label=set_xlabel];
@@ -381,13 +296,13 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"plt(0)$17" -> "General Cannabis First flavors described (0)"	[label=title];
 	"General Cannabis First flavors described (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$18" -> "plt(0)$17"	[label=show];
-	"total_rat5(0)$0" -> "strains(0)$5"	[label=len];
 	"total_rat5(0)$0" -> "Rating(0)"	[label=len];
+	"total_rat5(0)$0" -> "strains(0)$5"	[label=len];
 	"total_rat5(0)$0" -> "5(0)"	[label=len];
 	"plt(0)$19" -> "plt(0)$18"	[label=figure];
-	"g(0)$22" -> "strains(0)$5"	[label=countplot];
 	"g(0)$22" -> "Type(0)"	[label=countplot];
 	"g(0)$22" -> "Rating(0)"	[label=countplot];
+	"g(0)$22" -> "strains(0)$5"	[label=countplot];
 	"g(0)$22" -> "5(0)"	[label=countplot];
 	"g(0)$22" -> "sns(0)$0"	[label=countplot];
 	"g(0)$23" -> "Species(0)"	[label=set_xlabel];
@@ -414,8 +329,8 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"g(0)$27" -> "1.15(0)"	[label=set_ylim];
 	"1.15(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$20" -> "plt(0)$19"	[label=show];
-	"strains_top(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"strains_top(0)$0" -> "Rating(0)"	[label=assignedFrom];
+	"strains_top(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"strains_top(0)$0" -> "5(0)"	[label=assignedFrom];
 	"plt(0)$21" -> "plt(0)$20"	[label=figure];
 	"plt(0)$22" -> "plt(0)$21"	[label=subplot];
@@ -454,12 +369,12 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"g1(0)$9" -> "g1(0)$9"	[label=set_xticklabels];
 	"plt(0)$24" -> "plt(0)$23"	[label=subplots_adjust];
 	"plt(0)$25" -> "plt(0)$24"	[label=show];
-	"hibridas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"hibridas(0)$0" -> "hybrid(0)"	[label=assignedFrom];
-	"indicas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
+	"hibridas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"indicas(0)$0" -> "indica(0)"	[label=assignedFrom];
-	"sativas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
+	"indicas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"sativas(0)$0" -> "sativa(0)"	[label=assignedFrom];
+	"sativas(0)$0" -> "strains(0)$5"	[label=assignedFrom];
 	"dataframe(1)" -> "get_effects[0]"	[label=_argToVar];
 	"list_ef(1)" -> "dataframe(1)"	[label=iteratorOf];
 	"effects_list(1)$0" -> "list_ef(1)"	[label=split];
@@ -630,8 +545,8 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"Hibrid flavors distribution(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$44" -> "plt(0)$43"	[label=subplots_adjust];
 	"plt(0)$45" -> "plt(0)$44"	[label=show];
-	"strains(0)$6" -> "strains(0)$5"	[label=apply];
 	"strains(0)$6" -> "str(0)"	[label=apply];
+	"strains(0)$6" -> "strains(0)$5"	[label=apply];
 	"strains(0)$6" -> "Description(0)"	[label=apply];
 	"strains(0)$6" -> "len(0)"	[label=apply];
 	"strains(0)$6" -> "x(0)"	[label=apply];
@@ -710,12 +625,12 @@ object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f310>](0)" -> "cannabis-
 	"plt(0)$47" -> "plt(0)$46"	[label=subplots_adjust];
 	"plt(0)$48" -> "plt(0)$47"	[label=show];
 	"stopwords(0)$0" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x13052dfa0>, <_ast.Constant object at 0x13052df70>, <_ast.Constant object at 0x13052dca0>, <_ast.Constant \
-object at 0x13052dd90>, <_ast.Constant object at 0x13052df10>, <_ast.Constant object at 0x13052de50>, <_ast.Constant object at 0x13052de80>, <_\
-ast.Constant object at 0x13052dfd0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"newStopWords(0)$0" -> "[<_ast.Constant object at 0x13052dfa0>, <_ast.Constant object at 0x13052df70>, <_ast.Constant object at 0x13052dca0>, <_ast.Constant \
-object at 0x13052dd90>, <_ast.Constant object at 0x13052df10>, <_ast.Constant object at 0x13052de50>, <_ast.Constant object at 0x13052de80>, <_\
-ast.Constant object at 0x13052dfd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05d2a90>, <_ast.Constant object at 0x7fd4c05d2ac0>, <_ast.Constant object at 0x7fd4c05d2af0>, <_\
+ast.Constant object at 0x7fd4c05d2b20>, <_ast.Constant object at 0x7fd4c05d2b50>, <_ast.Constant object at 0x7fd4c05d2b80>, <_ast.Constant \
+object at 0x7fd4c05d2bb0>, <_ast.Constant object at 0x7fd4c05d2be0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"newStopWords(0)$0" -> "[<_ast.Constant object at 0x7fd4c05d2a90>, <_ast.Constant object at 0x7fd4c05d2ac0>, <_ast.Constant object at 0x7fd4c05d2af0>, <_\
+ast.Constant object at 0x7fd4c05d2b20>, <_ast.Constant object at 0x7fd4c05d2b50>, <_ast.Constant object at 0x7fd4c05d2b80>, <_ast.Constant \
+object at 0x7fd4c05d2bb0>, <_ast.Constant object at 0x7fd4c05d2be0>](0)"	[label=assignedFrom];
 	"stopwords(0)$1" -> "stopwords(0)$0"	[label=update];
 	"stopwords(0)$1" -> "newStopWords(0)$0"	[label=update];
 	"wordcloud(0)$0" -> "WordCloud(0)"	[label=generate];
@@ -750,14 +665,14 @@ ast.Constant object at 0x13052dfd0>](0)"	[label=assignedFrom];
 	"off(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"plt(0)$52" -> "plt(0)$51"	[label=show];
 	"stopwords(0)$2" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x13051d700>, <_ast.Constant object at 0x13052f040>, <_ast.Constant object at 0x13052f0a0>, <_ast.Constant \
-object at 0x13052f1c0>, <_ast.Constant object at 0x13052f0d0>, <_ast.Constant object at 0x13052f130>, <_ast.Constant object at 0x13052f190>, <_\
-ast.Constant object at 0x13052f160>, <_ast.Constant object at 0x13052f100>, <_ast.Constant object at 0x13052f070>, <_ast.Constant \
-object at 0x13052f1f0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"newStopWords(0)$1" -> "[<_ast.Constant object at 0x13051d700>, <_ast.Constant object at 0x13052f040>, <_ast.Constant object at 0x13052f0a0>, <_ast.Constant \
-object at 0x13052f1c0>, <_ast.Constant object at 0x13052f0d0>, <_ast.Constant object at 0x13052f130>, <_ast.Constant object at 0x13052f190>, <_\
-ast.Constant object at 0x13052f160>, <_ast.Constant object at 0x13052f100>, <_ast.Constant object at 0x13052f070>, <_ast.Constant \
-object at 0x13052f1f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05b8700>, <_ast.Constant object at 0x7fd4c05b8d30>, <_ast.Constant object at 0x7fd4c05b8d60>, <_\
+ast.Constant object at 0x7fd4c05b8d90>, <_ast.Constant object at 0x7fd4c05b8dc0>, <_ast.Constant object at 0x7fd4c05b8df0>, <_ast.Constant \
+object at 0x7fd4c05b8e20>, <_ast.Constant object at 0x7fd4c05b8e50>, <_ast.Constant object at 0x7fd4c05b8e80>, <_ast.Constant object \
+at 0x7fd4c05b8eb0>, <_ast.Constant object at 0x7fd4c05b8ee0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"newStopWords(0)$1" -> "[<_ast.Constant object at 0x7fd4c05b8700>, <_ast.Constant object at 0x7fd4c05b8d30>, <_ast.Constant object at 0x7fd4c05b8d60>, <_\
+ast.Constant object at 0x7fd4c05b8d90>, <_ast.Constant object at 0x7fd4c05b8dc0>, <_ast.Constant object at 0x7fd4c05b8df0>, <_ast.Constant \
+object at 0x7fd4c05b8e20>, <_ast.Constant object at 0x7fd4c05b8e50>, <_ast.Constant object at 0x7fd4c05b8e80>, <_ast.Constant object \
+at 0x7fd4c05b8eb0>, <_ast.Constant object at 0x7fd4c05b8ee0>](0)"	[label=assignedFrom];
 	"stopwords(0)$3" -> "stopwords(0)$2"	[label=update];
 	"stopwords(0)$3" -> "newStopWords(0)$1"	[label=update];
 	"wordcloud(0)$1" -> "WordCloud(0)"	[label=generate];
@@ -784,14 +699,14 @@ object at 0x13052f1f0>](0)"	[label=assignedFrom];
 	"plt(0)$55" -> "plt(0)$54"	[label=axis];
 	"plt(0)$56" -> "plt(0)$55"	[label=show];
 	"stopwords(0)$4" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x13054d280>, <_ast.Constant object at 0x13054d430>, <_ast.Constant object at 0x13054d490>, <_ast.Constant \
-object at 0x13054d4c0>, <_ast.Constant object at 0x13054d4f0>, <_ast.Constant object at 0x13054d520>, <_ast.Constant object at 0x13054d550>, <_\
-ast.Constant object at 0x13054d580>, <_ast.Constant object at 0x13054d5b0>, <_ast.Constant object at 0x13054d5e0>, <_ast.Constant \
-object at 0x13054d610>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"newStopWords(0)$2" -> "[<_ast.Constant object at 0x13054d280>, <_ast.Constant object at 0x13054d430>, <_ast.Constant object at 0x13054d490>, <_ast.Constant \
-object at 0x13054d4c0>, <_ast.Constant object at 0x13054d4f0>, <_ast.Constant object at 0x13054d520>, <_ast.Constant object at 0x13054d550>, <_\
-ast.Constant object at 0x13054d580>, <_ast.Constant object at 0x13054d5b0>, <_ast.Constant object at 0x13054d5e0>, <_ast.Constant \
-object at 0x13054d610>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05ba070>, <_ast.Constant object at 0x7fd4c05ba0d0>, <_ast.Constant object at 0x7fd4c05ba190>, <_\
+ast.Constant object at 0x7fd4c05ba280>, <_ast.Constant object at 0x7fd4c05ba1c0>, <_ast.Constant object at 0x7fd4c05ba220>, <_ast.Constant \
+object at 0x7fd4c05ba250>, <_ast.Constant object at 0x7fd4c05ba1f0>, <_ast.Constant object at 0x7fd4c05ba2b0>, <_ast.Constant object \
+at 0x7fd4c05ba3d0>, <_ast.Constant object at 0x7fd4c05ba430>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"newStopWords(0)$2" -> "[<_ast.Constant object at 0x7fd4c05ba070>, <_ast.Constant object at 0x7fd4c05ba0d0>, <_ast.Constant object at 0x7fd4c05ba190>, <_\
+ast.Constant object at 0x7fd4c05ba280>, <_ast.Constant object at 0x7fd4c05ba1c0>, <_ast.Constant object at 0x7fd4c05ba220>, <_ast.Constant \
+object at 0x7fd4c05ba250>, <_ast.Constant object at 0x7fd4c05ba1f0>, <_ast.Constant object at 0x7fd4c05ba2b0>, <_ast.Constant object \
+at 0x7fd4c05ba3d0>, <_ast.Constant object at 0x7fd4c05ba430>](0)"	[label=assignedFrom];
 	"stopwords(0)$5" -> "stopwords(0)$4"	[label=update];
 	"stopwords(0)$5" -> "newStopWords(0)$2"	[label=update];
 	"wordcloud(0)$2" -> "WordCloud(0)"	[label=generate];
@@ -819,14 +734,14 @@ object at 0x13054d610>](0)"	[label=assignedFrom];
 	"plt(0)$59" -> "plt(0)$58"	[label=axis];
 	"plt(0)$60" -> "plt(0)$59"	[label=show];
 	"stopwords(0)$6" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x130546850>, <_ast.Constant object at 0x130546880>, <_ast.Constant object at 0x1305468b0>, <_ast.Constant \
-object at 0x1305468e0>, <_ast.Constant object at 0x130546910>, <_ast.Constant object at 0x130546940>, <_ast.Constant object at 0x130546970>, <_\
-ast.Constant object at 0x1305469a0>, <_ast.Constant object at 0x1305469d0>, <_ast.Constant object at 0x130546a00>, <_ast.Constant \
-object at 0x130546a30>, <_ast.Constant object at 0x130546a60>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"newStopWords(0)$3" -> "[<_ast.Constant object at 0x130546850>, <_ast.Constant object at 0x130546880>, <_ast.Constant object at 0x1305468b0>, <_ast.Constant \
-object at 0x1305468e0>, <_ast.Constant object at 0x130546910>, <_ast.Constant object at 0x130546940>, <_ast.Constant object at 0x130546970>, <_\
-ast.Constant object at 0x1305469a0>, <_ast.Constant object at 0x1305469d0>, <_ast.Constant object at 0x130546a00>, <_ast.Constant \
-object at 0x130546a30>, <_ast.Constant object at 0x130546a60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05b3550>, <_ast.Constant object at 0x7fd4c05b3580>, <_ast.Constant object at 0x7fd4c05b35b0>, <_\
+ast.Constant object at 0x7fd4c05b35e0>, <_ast.Constant object at 0x7fd4c05b3610>, <_ast.Constant object at 0x7fd4c05b3640>, <_ast.Constant \
+object at 0x7fd4c05b3670>, <_ast.Constant object at 0x7fd4c05b36a0>, <_ast.Constant object at 0x7fd4c05b36d0>, <_ast.Constant object \
+at 0x7fd4c05b3700>, <_ast.Constant object at 0x7fd4c05b3730>, <_ast.Constant object at 0x7fd4c05b3760>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"newStopWords(0)$3" -> "[<_ast.Constant object at 0x7fd4c05b3550>, <_ast.Constant object at 0x7fd4c05b3580>, <_ast.Constant object at 0x7fd4c05b35b0>, <_\
+ast.Constant object at 0x7fd4c05b35e0>, <_ast.Constant object at 0x7fd4c05b3610>, <_ast.Constant object at 0x7fd4c05b3640>, <_ast.Constant \
+object at 0x7fd4c05b3670>, <_ast.Constant object at 0x7fd4c05b36a0>, <_ast.Constant object at 0x7fd4c05b36d0>, <_ast.Constant object \
+at 0x7fd4c05b3700>, <_ast.Constant object at 0x7fd4c05b3730>, <_ast.Constant object at 0x7fd4c05b3760>](0)"	[label=assignedFrom];
 	"stopwords(0)$7" -> "stopwords(0)$6"	[label=update];
 	"stopwords(0)$7" -> "newStopWords(0)$3"	[label=update];
 	"wordcloud(0)$3" -> "WordCloud(0)"	[label=generate];
@@ -853,12 +768,14 @@ object at 0x130546a30>, <_ast.Constant object at 0x130546a60>](0)"	[label=assign
 	"plt(0)$63" -> "plt(0)$62"	[label=axis];
 	"plt(0)$64" -> "plt(0)$63"	[label=show];
 	"stopwords(0)$8" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x13053dd00>, <_ast.Constant object at 0x13053dd30>, <_ast.Constant object at 0x13053dd60>, <_ast.Constant \
-object at 0x13053dd90>, <_ast.Constant object at 0x13053ddc0>, <_ast.Constant object at 0x13053daf0>, <_ast.Constant object at 0x13053ddf0>, <_\
-ast.Constant object at 0x13053de20>, <_ast.Constant object at 0x13053de50>, <_ast.Constant object at 0x13053de80>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"newStopWords(0)$4" -> "[<_ast.Constant object at 0x13053dd00>, <_ast.Constant object at 0x13053dd30>, <_ast.Constant object at 0x13053dd60>, <_ast.Constant \
-object at 0x13053dd90>, <_ast.Constant object at 0x13053ddc0>, <_ast.Constant object at 0x13053daf0>, <_ast.Constant object at 0x13053ddf0>, <_\
-ast.Constant object at 0x13053de20>, <_ast.Constant object at 0x13053de50>, <_ast.Constant object at 0x13053de80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0599ee0>, <_ast.Constant object at 0x7fd4c0599e20>, <_ast.Constant object at 0x7fd4c0599fa0>, <_\
+ast.Constant object at 0x7fd4c0599bb0>, <_ast.Constant object at 0x7fd4c0599c10>, <_ast.Constant object at 0x7fd4c05998e0>, <_ast.Constant \
+object at 0x7fd4c05996a0>, <_ast.Constant object at 0x7fd4c0599070>, <_ast.Constant object at 0x7fd4c0599b80>, <_ast.Constant object \
+at 0x7fd4c0599af0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"newStopWords(0)$4" -> "[<_ast.Constant object at 0x7fd4c0599ee0>, <_ast.Constant object at 0x7fd4c0599e20>, <_ast.Constant object at 0x7fd4c0599fa0>, <_\
+ast.Constant object at 0x7fd4c0599bb0>, <_ast.Constant object at 0x7fd4c0599c10>, <_ast.Constant object at 0x7fd4c05998e0>, <_ast.Constant \
+object at 0x7fd4c05996a0>, <_ast.Constant object at 0x7fd4c0599070>, <_ast.Constant object at 0x7fd4c0599b80>, <_ast.Constant object \
+at 0x7fd4c0599af0>](0)"	[label=assignedFrom];
 	"stopwords(0)$9" -> "stopwords(0)$8"	[label=update];
 	"stopwords(0)$9" -> "newStopWords(0)$4"	[label=update];
 	"wordcloud(0)$4" -> "WordCloud(0)"	[label=generate];
@@ -891,28 +808,34 @@ ast.Constant object at 0x13053de20>, <_ast.Constant object at 0x13053de50>, <_as
 	"strains(0)$9" -> "strains(0)$9"	[label=assignedFrom];
 	"dummy(0)$0" -> "pd(0)"	[label=get_dummies];
 	"dummy(0)$0" -> "strains(0)$9"	[label=get_dummies];
-	"dummy(0)$0" -> "[<_ast.Constant object at 0x1305445b0>, <_ast.Constant object at 0x1305445e0>, <_ast.Constant object at 0x130544610>, <_ast.Constant \
-object at 0x130544640>, <_ast.Constant object at 0x130544670>, <_ast.Constant object at 0x1305446a0>, <_ast.Constant object at 0x1305446d0>, <_\
-ast.Constant object at 0x130544700>](0)"	[label=get_dummies];
-	"[<_ast.Constant object at 0x1305445b0>, <_ast.Constant object at 0x1305445e0>, <_ast.Constant object at 0x130544610>, <_ast.Constant \
-object at 0x130544640>, <_ast.Constant object at 0x130544670>, <_ast.Constant object at 0x1305446a0>, <_ast.Constant object at 0x1305446d0>, <_\
-ast.Constant object at 0x130544700>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"dummy(0)$0" -> "[<_ast.Constant object at 0x7fd4c05a3310>, <_ast.Constant object at 0x7fd4c05a3340>, <_ast.Constant object at 0x7fd4c05a3370>, <_\
+ast.Constant object at 0x7fd4c05a33a0>, <_ast.Constant object at 0x7fd4c05a33d0>, <_ast.Constant object at 0x7fd4c05a3400>, <_ast.Constant \
+object at 0x7fd4c05a3430>, <_ast.Constant object at 0x7fd4c05a3130>](0)"	[label=get_dummies];
+	"[<_ast.Constant object at 0x7fd4c05a3310>, <_ast.Constant object at 0x7fd4c05a3340>, <_ast.Constant object at 0x7fd4c05a3370>, <_\
+ast.Constant object at 0x7fd4c05a33a0>, <_ast.Constant object at 0x7fd4c05a33d0>, <_ast.Constant object at 0x7fd4c05a3400>, <_ast.Constant \
+object at 0x7fd4c05a3430>, <_ast.Constant object at 0x7fd4c05a3130>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"strains(0)$10" -> "pd(0)"	[label=concat];
 	"strains(0)$10" -> "1(0)"	[label=concat];
-	"strains(0)$10" -> "[<_ast.Name object at 0x1305448b0>, <_ast.Name object at 0x1305448e0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x1305448b0>, <_ast.Name object at 0x1305448e0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"strains(0)$10" -> "[<_ast.Name object at 0x7fd4c05a3610>, <_ast.Name object at 0x7fd4c05a3640>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c05a3610>, <_ast.Name object at 0x7fd4c05a3640>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"strains(0)$11" -> "1(0)"	[label=drop];
 	"strains(0)$11" -> "strains(0)$10"	[label=drop];
-	"strains(0)$11" -> "[<_ast.Constant object at 0x130544b20>, <_ast.Constant object at 0x130544b50>, <_ast.Constant object at 0x130544b80>, <_ast.Constant \
-object at 0x130544be0>, <_ast.Constant object at 0x130544c10>, <_ast.Constant object at 0x130544c40>, <_ast.Constant object at 0x130544c70>, <_\
-ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x130544b20>, <_ast.Constant object at 0x130544b50>, <_ast.Constant object at 0x130544b80>, <_ast.Constant \
-object at 0x130544be0>, <_ast.Constant object at 0x130544c10>, <_ast.Constant object at 0x130544c40>, <_ast.Constant object at 0x130544c70>, <_\
-ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"strains(0)$11" -> "[<_ast.Constant object at 0x7fd4c05a37f0>, <_ast.Constant object at 0x7fd4c05a3820>, <_ast.Constant object at 0x7fd4c05a3850>, <_\
+ast.Constant object at 0x7fd4c05a3880>, <_ast.Constant object at 0x7fd4c05a38b0>, <_ast.Constant object at 0x7fd4c05a38e0>, <_ast.Constant \
+object at 0x7fd4c05a3910>, <_ast.Constant object at 0x7fd4c05a3940>, <_ast.Constant object at 0x7fd4c05a3970>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c05a37f0>, <_ast.Constant object at 0x7fd4c05a3820>, <_ast.Constant object at 0x7fd4c05a3850>, <_\
+ast.Constant object at 0x7fd4c05a3880>, <_ast.Constant object at 0x7fd4c05a38b0>, <_ast.Constant object at 0x7fd4c05a38e0>, <_ast.Constant \
+object at 0x7fd4c05a3910>, <_ast.Constant object at 0x7fd4c05a3940>, <_ast.Constant object at 0x7fd4c05a3970>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"sklearn.metrics" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=importedBy];
 	accuracy_score -> "sklearn.metrics"	[label=importedBy];
+	"accuracy_score(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"accuracy_score(0)" -> accuracy_score	[label=assignedFrom];
 	confusion_matrix -> "sklearn.metrics"	[label=importedBy];
+	"confusion_matrix(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"confusion_matrix(0)" -> confusion_matrix	[label=assignedFrom];
 	classification_report -> "sklearn.metrics"	[label=importedBy];
+	"classification_report(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"classification_report(0)" -> classification_report	[label=assignedFrom];
 	"sklearn.model_selection" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=importedBy];
 	cross_val_score -> "sklearn.model_selection"	[label=importedBy];
 	"cross_val_score(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
@@ -1014,7 +937,29 @@ ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)" 
 	"y(0)$1" -> "np(0)"	[label=astype];
 	"y(0)$1" -> "y(0)$0"	[label=astype];
 	"y(0)$1" -> "False(0)"	[label=astype];
+	"X_train(0)$0" -> "42(0)"	[label=train_test_split];
+	"X_train(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"X_train(0)$0" -> "y(0)$1"	[label=train_test_split];
+	"X_train(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"0.3(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "42(0)"	[label=train_test_split];
+	"X_test(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"X_test(0)$0" -> "y(0)$1"	[label=train_test_split];
+	"X_test(0)$0" -> "0.3(0)"	[label=train_test_split];
+	"y_train(0)$0" -> "42(0)"	[label=train_test_split];
+	"y_train(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"y_train(0)$0" -> "y(0)$1"	[label=train_test_split];
+	"y_train(0)$0" -> "0.3(0)"	[label=train_test_split];
+	"y_test(0)$0" -> "42(0)"	[label=train_test_split];
+	"y_test(0)$0" -> "X(0)$1"	[label=train_test_split];
+	"y_test(0)$0" -> "y(0)$1"	[label=train_test_split];
+	"y_test(0)$0" -> "0.3(0)"	[label=train_test_split];
+	"X_train Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[502/0]" -> "X_train(0)$0"	[label=print];
+	"print[502/0]" -> "X_train Shape: (0)"	[label=print];
+	"X_test Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[503/0]" -> "X_test(0)$0"	[label=print];
+	"print[503/0]" -> "X_test Shape: (0)"	[label=print];
 	"thresh(0)$0" -> "5(0)"	[label=Mult];
 	"thresh(0)$0" -> "3.5(0)"	[label=Mult];
 	"thresh(0)$0" -> "10(0)"	[label=Mult];
@@ -1027,56 +972,66 @@ ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)" 
 	"clfs(0)$9" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$9" -> "ExtraTreesClassifier(0)"	[label=append];
 	"clfs(0)$9" -> "clfs(0)$8"	[label=append];
-	"clfs(0)$9" -> "[<_ast.Tuple object at 0x12fadb400>, <_ast.Tuple object at 0x12fadb4c0>](0)"	[label=append];
+	"clfs(0)$9" -> "[<_ast.Tuple object at 0x7fd4c097e100>, <_ast.Tuple object at 0x7fd4c097e1c0>](0)"	[label=append];
 	"selection(0)$0" -> "True(0)"	[label=SelectFromModel];
 	"selection(0)$0" -> "thresh(0)$0"	[label=SelectFromModel];
 	"selection(0)$0" -> "model(0)$0"	[label=SelectFromModel];
+	"X_important_train(0)$0" -> "X_train(0)$0"	[label=transform];
+	"X_important_train(0)$0" -> "selection(0)$0"	[label=transform];
+	"X_important_test(0)$0" -> "X_test(0)$0"	[label=transform];
+	"X_important_test(0)$0" -> "selection(0)$0"	[label=transform];
+	"X_important_train Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[512/0]" -> "X_important_train(0)$0"	[label=print];
+	"print[512/0]" -> "X_important_train Shape: (0)"	[label=print];
+	"X_important_test Shape: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[513/0]" -> "X_important_test(0)$0"	[label=print];
+	"print[513/0]" -> "X_important_test Shape: (0)"	[label=print];
 	"clfs(0)$0" -> "[](0)"	[label=assignedFrom];
 	"seed(0)$0" -> "3(0)"	[label=assignedFrom];
 	"clfs(0)$1" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$1" -> "clfs(0)$0"	[label=append];
 	"clfs(0)$1" -> "LogReg(0)"	[label=append];
-	"clfs(0)$1" -> "[<_ast.Tuple object at 0x12fb0c760>, <_ast.Tuple object at 0x12fb0c820>](0)"	[label=append];
+	"clfs(0)$1" -> "[<_ast.Tuple object at 0x7fd4c096e460>, <_ast.Tuple object at 0x7fd4c096e520>](0)"	[label=append];
 	"LogReg(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fb0c760>, <_ast.Tuple object at 0x12fb0c820>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c096e460>, <_ast.Tuple object at 0x7fd4c096e520>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$2" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$2" -> "XGBClassifier(0)"	[label=append];
 	"clfs(0)$2" -> "clfs(0)$1"	[label=append];
-	"clfs(0)$2" -> "[<_ast.Tuple object at 0x12fb0cac0>, <_ast.Tuple object at 0x12fb0cb80>](0)"	[label=append];
-	"[<_ast.Tuple object at 0x12fb0cac0>, <_ast.Tuple object at 0x12fb0cb80>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"clfs(0)$2" -> "[<_ast.Tuple object at 0x7fd4c096e7c0>, <_ast.Tuple object at 0x7fd4c096e880>](0)"	[label=append];
+	"[<_ast.Tuple object at 0x7fd4c096e7c0>, <_ast.Tuple object at 0x7fd4c096e880>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$3" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$3" -> "clfs(0)$2"	[label=append];
 	"clfs(0)$3" -> "KNN(0)"	[label=append];
-	"clfs(0)$3" -> "[<_ast.Tuple object at 0x12fb0ce20>, <_ast.Tuple object at 0x12fb0cee0>](0)"	[label=append];
+	"clfs(0)$3" -> "[<_ast.Tuple object at 0x7fd4c096eb20>, <_ast.Tuple object at 0x7fd4c096ebe0>](0)"	[label=append];
 	"KNN(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fb0ce20>, <_ast.Tuple object at 0x12fb0cee0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c096eb20>, <_ast.Tuple object at 0x7fd4c096ebe0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$4" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$4" -> "DecisionTreeClassifier(0)"	[label=append];
 	"clfs(0)$4" -> "clfs(0)$3"	[label=append];
-	"clfs(0)$4" -> "[<_ast.Tuple object at 0x12fb001c0>, <_ast.Tuple object at 0x12fb00280>](0)"	[label=append];
-	"[<_ast.Tuple object at 0x12fb001c0>, <_ast.Tuple object at 0x12fb00280>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"clfs(0)$4" -> "[<_ast.Tuple object at 0x7fd4c096ee80>, <_ast.Tuple object at 0x7fd4c096ef40>](0)"	[label=append];
+	"[<_ast.Tuple object at 0x7fd4c096ee80>, <_ast.Tuple object at 0x7fd4c096ef40>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$5" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$5" -> "RandomForestClassifier(0)"	[label=append];
 	"clfs(0)$5" -> "clfs(0)$4"	[label=append];
-	"clfs(0)$5" -> "[<_ast.Tuple object at 0x12fb00520>, <_ast.Tuple object at 0x12fb005e0>](0)"	[label=append];
-	"[<_ast.Tuple object at 0x12fb00520>, <_ast.Tuple object at 0x12fb005e0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"clfs(0)$5" -> "[<_ast.Tuple object at 0x7fd4c095f2b0>, <_ast.Tuple object at 0x7fd4c095f370>](0)"	[label=append];
+	"[<_ast.Tuple object at 0x7fd4c095f2b0>, <_ast.Tuple object at 0x7fd4c095f370>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$6" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$6" -> "GradientBoostingClassifier(0)"	[label=append];
 	"clfs(0)$6" -> "clfs(0)$5"	[label=append];
-	"clfs(0)$6" -> "[<_ast.Tuple object at 0x12fb00880>, <_ast.Tuple object at 0x12fb00940>](0)"	[label=append];
-	"[<_ast.Tuple object at 0x12fb00880>, <_ast.Tuple object at 0x12fb00940>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"clfs(0)$6" -> "[<_ast.Tuple object at 0x7fd4c095f580>, <_ast.Tuple object at 0x7fd4c095f640>](0)"	[label=append];
+	"[<_ast.Tuple object at 0x7fd4c095f580>, <_ast.Tuple object at 0x7fd4c095f640>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$7" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$7" -> "RidgeClassifier(0)"	[label=append];
 	"clfs(0)$7" -> "clfs(0)$6"	[label=append];
-	"clfs(0)$7" -> "[<_ast.Tuple object at 0x12fb00d00>, <_ast.Tuple object at 0x12fb00dc0>](0)"	[label=append];
-	"[<_ast.Tuple object at 0x12fb00d00>, <_ast.Tuple object at 0x12fb00dc0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"clfs(0)$7" -> "[<_ast.Tuple object at 0x7fd4c095fa60>, <_ast.Tuple object at 0x7fd4c095fb20>](0)"	[label=append];
+	"[<_ast.Tuple object at 0x7fd4c095fa60>, <_ast.Tuple object at 0x7fd4c095fb20>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"clfs(0)$8" -> "Pipeline(0)"	[label=append];
 	"clfs(0)$8" -> "clfs(0)$7"	[label=append];
 	"clfs(0)$8" -> "BaggingRidgeClassifier(0)"	[label=append];
-	"clfs(0)$8" -> "[<_ast.Tuple object at 0x12fadb0a0>, <_ast.Tuple object at 0x12fadb160>](0)"	[label=append];
+	"clfs(0)$8" -> "[<_ast.Tuple object at 0x7fd4c095fdf0>, <_ast.Tuple object at 0x7fd4c095feb0>](0)"	[label=append];
 	"BaggingRidgeClassifier(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fadb0a0>, <_ast.Tuple object at 0x12fadb160>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fadb400>, <_ast.Tuple object at 0x12fadb4c0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c095fdf0>, <_ast.Tuple object at 0x7fd4c095feb0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c097e100>, <_ast.Tuple object at 0x7fd4c097e1c0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"accuracy(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"scoring(0)$0" -> "accuracy(0)"	[label=assignedFrom];
 	"7(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
@@ -1088,16 +1043,20 @@ ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)" 
 	"kfold(0)$0" -> "seed(0)$0"	[label=KFold];
 	"kfold(0)$0" -> "n_folds(0)$0"	[label=KFold];
 	"cv_results(0)$0" -> "1(0)"	[label=cross_val_score];
-	"cv_results(0)$0" -> "X_important_train(0)$0"	[label=cross_val_score];
 	"cv_results(0)$0" -> "5(0)"	[label=cross_val_score];
 	"cv_results(0)$0" -> "y_train(0)$0"	[label=cross_val_score];
 	"cv_results(0)$0" -> "model(0)$0"	[label=cross_val_score];
+	"cv_results(0)$0" -> "X_important_train(0)$0"	[label=cross_val_score];
 	"cv_results(0)$0" -> "scoring(0)$0"	[label=cross_val_score];
 	"names(0)$1" -> "names(0)$0"	[label=append];
 	"names(0)$1" -> "name(0)"	[label=append];
 	"results(0)$1" -> "results(0)$0"	[label=append];
 	"results(0)$1" -> "cv_results(0)$0"	[label=append];
 	"\%s: \%f (+/- \%f)(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"msg(0)$0" -> "name(0)"	[label=Mod];
+	"msg(0)$0" -> "cv_results(0)$0"	[label=Mod];
+	"msg(0)$0" -> "\%s: \%f (+/- \%f)(0)"	[label=Mod];
+	"print[565/4]" -> "msg(0)$0"	[label=print];
 	"fig(0)$5" -> "plt(0)$68"	[label=figure];
 	"fig(0)$5" -> "15(0)"	[label=figure];
 	"fig(0)$5" -> "6(0)"	[label=figure];
@@ -1128,64 +1087,95 @@ ast.Constant object at 0x130544ca0>, <_ast.Constant object at 0x130544cd0>](0)" 
 	"params_ridge(0)$0" -> "alpha(0)"	[label=assignedFrom];
 	"params_ridge(0)$0" -> "tol(0)"	[label=assignedFrom];
 	"params_ridge(0)$0" -> "solver(0)"	[label=assignedFrom];
-	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x12faee460>, <_ast.Constant object at 0x12faee490>, <_ast.Constant object at 0x12faee4c0>](0)"	[label=assignedFrom];
-	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x12faee520>, <_ast.Constant object at 0x12faee550>, <_ast.Constant object at 0x12faee580>](0)"	[label=assignedFrom];
-	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x12faee5e0>, <_ast.Constant object at 0x12faee610>, <_ast.Constant object at 0x12faee640>, <_ast.Constant \
-object at 0x12faee670>, <_ast.Constant object at 0x12faee6a0>, <_ast.Constant object at 0x12faee6d0>, <_ast.Constant object at 0x12faee700>](\
-0)"	[label=assignedFrom];
+	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x7fd4c0963160>, <_ast.Constant object at 0x7fd4c09631c0>, <_ast.Constant object at 0x7fd4c09631f0>](0)"	[label=assignedFrom];
+	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x7fd4c0963250>, <_ast.Constant object at 0x7fd4c0963280>, <_ast.Constant object at 0x7fd4c09632b0>](0)"	[label=assignedFrom];
+	"params_ridge(0)$0" -> "[<_ast.Constant object at 0x7fd4c0963370>, <_ast.Constant object at 0x7fd4c09633a0>, <_ast.Constant object at 0x7fd4c09633d0>, <_\
+ast.Constant object at 0x7fd4c0963400>, <_ast.Constant object at 0x7fd4c0963430>, <_ast.Constant object at 0x7fd4c0963460>, <_ast.Constant \
+object at 0x7fd4c0963490>](0)"	[label=assignedFrom];
 	"tol(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"solver(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faee460>, <_ast.Constant object at 0x12faee490>, <_ast.Constant object at 0x12faee4c0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faee520>, <_ast.Constant object at 0x12faee550>, <_ast.Constant object at 0x12faee580>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12faee5e0>, <_ast.Constant object at 0x12faee610>, <_ast.Constant object at 0x12faee640>, <_ast.Constant \
-object at 0x12faee670>, <_ast.Constant object at 0x12faee6a0>, <_ast.Constant object at 0x12faee6d0>, <_ast.Constant object at 0x12faee700>](\
-0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0963160>, <_ast.Constant object at 0x7fd4c09631c0>, <_ast.Constant object at 0x7fd4c09631f0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0963250>, <_ast.Constant object at 0x7fd4c0963280>, <_ast.Constant object at 0x7fd4c09632b0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0963370>, <_ast.Constant object at 0x7fd4c09633a0>, <_ast.Constant object at 0x7fd4c09633d0>, <_\
+ast.Constant object at 0x7fd4c0963400>, <_ast.Constant object at 0x7fd4c0963430>, <_ast.Constant object at 0x7fd4c0963460>, <_ast.Constant \
+object at 0x7fd4c0963490>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"ridge(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"Ridge_model(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"Ridge_model(0)$0" -> "5(0)"	[label=GridSearchCV];
 	"Ridge_model(0)$0" -> "params_ridge(0)$0"	[label=GridSearchCV];
 	"Ridge_model(0)$0" -> "ridge(0)"	[label=GridSearchCV];
+	"Ridge_model(0)$1" -> "y_train(0)$0"	[label=fit];
+	"Ridge_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
+	"Ridge_model(0)$1" -> "Ridge_model(0)$0"	[label=fit];
+	"Training score data: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[592/0]" -> "Training score data: (0)"	[label=print];
+	"print[593/0]" -> "y_train(0)$0"	[label=print];
+	"print[593/0]" -> "X_important_train(0)$0"	[label=print];
+	"print[593/0]" -> "Ridge_model(0)$1"	[label=print];
+	"Ridge Best Parameters: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[594/0]" -> "Ridge Best Parameters: (0)"	[label=print];
+	"print[595/0]" -> "Ridge_model(0)$1"	[label=print];
 	"sparse_cg(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"Ridge_model(0)$2" -> "sparse_cg(0)"	[label=RidgeClassifier];
 	"Ridge_model(0)$2" -> "0.001(0)"	[label=RidgeClassifier];
 	"Ridge_model(0)$2" -> "1.0(0)"	[label=RidgeClassifier];
 	"0.001(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"1.0(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"Ridge_model(0)$3" -> "X_important_train(0)$0"	[label=fit];
 	"Ridge_model(0)$3" -> "y_train(0)$0"	[label=fit];
+	"Ridge_model(0)$3" -> "X_important_train(0)$0"	[label=fit];
 	"Ridge_model(0)$3" -> "Ridge_model(0)$2"	[label=fit];
+	"y_pred(0)$0" -> "X_important_test(0)$0"	[label=predict];
+	"y_pred(0)$0" -> "Ridge_model(0)$3"	[label=predict];
+	"print[602/0]" -> "accuracy_score(0)"	[label=print];
+	"print[602/0]" -> "y_test(0)$0"	[label=print];
+	"print[602/0]" -> "y_pred(0)$0"	[label=print];
+	"print[603/0]" -> "confusion_matrix(0)"	[label=print];
+	"print[603/0]" -> "y_test(0)$0"	[label=print];
+	"print[603/0]" -> "y_pred(0)$0"	[label=print];
+	"print[604/0]" -> "classification_report(0)"	[label=print];
+	"print[604/0]" -> "y_test(0)$0"	[label=print];
+	"print[604/0]" -> "y_pred(0)$0"	[label=print];
 	"n_estimators(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"param_xgb(0)$0" -> "n_estimators(0)"	[label=assignedFrom];
 	"param_xgb(0)$0" -> "max_depth(0)"	[label=assignedFrom];
 	"param_xgb(0)$0" -> "min_child_weight(0)"	[label=assignedFrom];
 	"param_xgb(0)$0" -> "colsample_bytree(0)"	[label=assignedFrom];
 	"param_xgb(0)$0" -> "colsample_bylevel(0)"	[label=assignedFrom];
-	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x12fb03df0>, <_ast.Constant object at 0x12fb03e20>, <_ast.Constant object at 0x12fb03e50>](0)"	[label=assignedFrom];
-	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x12fb03eb0>, <_ast.Constant object at 0x12fb03ee0>, <_ast.Constant object at 0x12fb03f10>, <_ast.Constant \
-object at 0x12fb03f40>](0)"	[label=assignedFrom];
-	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x12fb03fa0>, <_ast.Constant object at 0x12fb03fd0>, <_ast.Constant object at 0x12fb036d0>, <_ast.Constant \
-object at 0x12fb03100>](0)"	[label=assignedFrom];
-	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x12fafa0a0>, <_ast.Constant object at 0x12fafa0d0>, <_ast.Constant object at 0x12fafa100>, <_ast.Constant \
-object at 0x12fafa130>, <_ast.Constant object at 0x12fafa160>, <_ast.Constant object at 0x12fafa190>](0)"	[label=assignedFrom];
-	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x12fafa1f0>, <_ast.Constant object at 0x12fafa220>, <_ast.Constant object at 0x12fafa250>](0)"	[label=assignedFrom];
+	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x7fd4c097aa90>, <_ast.Constant object at 0x7fd4c097aac0>, <_ast.Constant object at 0x7fd4c097aaf0>](0)"	[label=assignedFrom];
+	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x7fd4c097ab50>, <_ast.Constant object at 0x7fd4c097ab80>, <_ast.Constant object at 0x7fd4c097abb0>, <_\
+ast.Constant object at 0x7fd4c097abe0>](0)"	[label=assignedFrom];
+	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x7fd4c097ac40>, <_ast.Constant object at 0x7fd4c097ac70>, <_ast.Constant object at 0x7fd4c097aca0>, <_\
+ast.Constant object at 0x7fd4c097acd0>](0)"	[label=assignedFrom];
+	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x7fd4c097ad60>, <_ast.Constant object at 0x7fd4c097ad90>, <_ast.Constant object at 0x7fd4c097adc0>, <_\
+ast.Constant object at 0x7fd4c097adf0>, <_ast.Constant object at 0x7fd4c097ae20>, <_ast.Constant object at 0x7fd4c097ae50>](0)"	[label=assignedFrom];
+	"param_xgb(0)$0" -> "[<_ast.Constant object at 0x7fd4c097aeb0>, <_ast.Constant object at 0x7fd4c097aee0>, <_ast.Constant object at 0x7fd4c097af10>](0)"	[label=assignedFrom];
 	"max_depth(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"min_child_weight(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"colsample_bytree(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"colsample_bylevel(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb03df0>, <_ast.Constant object at 0x12fb03e20>, <_ast.Constant object at 0x12fb03e50>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb03eb0>, <_ast.Constant object at 0x12fb03ee0>, <_ast.Constant object at 0x12fb03f10>, <_ast.Constant \
-object at 0x12fb03f40>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb03fa0>, <_ast.Constant object at 0x12fb03fd0>, <_ast.Constant object at 0x12fb036d0>, <_ast.Constant \
-object at 0x12fb03100>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fafa0a0>, <_ast.Constant object at 0x12fafa0d0>, <_ast.Constant object at 0x12fafa100>, <_ast.Constant \
-object at 0x12fafa130>, <_ast.Constant object at 0x12fafa160>, <_ast.Constant object at 0x12fafa190>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fafa1f0>, <_ast.Constant object at 0x12fafa220>, <_ast.Constant object at 0x12fafa250>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097aa90>, <_ast.Constant object at 0x7fd4c097aac0>, <_ast.Constant object at 0x7fd4c097aaf0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097ab50>, <_ast.Constant object at 0x7fd4c097ab80>, <_ast.Constant object at 0x7fd4c097abb0>, <_\
+ast.Constant object at 0x7fd4c097abe0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097ac40>, <_ast.Constant object at 0x7fd4c097ac70>, <_ast.Constant object at 0x7fd4c097aca0>, <_\
+ast.Constant object at 0x7fd4c097acd0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097ad60>, <_ast.Constant object at 0x7fd4c097ad90>, <_ast.Constant object at 0x7fd4c097adc0>, <_\
+ast.Constant object at 0x7fd4c097adf0>, <_ast.Constant object at 0x7fd4c097ae20>, <_ast.Constant object at 0x7fd4c097ae50>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097aeb0>, <_ast.Constant object at 0x7fd4c097aee0>, <_ast.Constant object at 0x7fd4c097af10>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"xgb(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"xgb_model(0)$0" -> "3(0)"	[label=GridSearchCV];
 	"xgb_model(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"xgb_model(0)$0" -> "accuracy(0)"	[label=GridSearchCV];
 	"xgb_model(0)$0" -> "param_xgb(0)$0"	[label=GridSearchCV];
 	"xgb_model(0)$0" -> "xgb(0)"	[label=GridSearchCV];
+	"xgb_model(0)$1" -> "y_train(0)$0"	[label=fit];
+	"xgb_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
+	"xgb_model(0)$1" -> "xgb_model(0)$0"	[label=fit];
+	"Results of the GridSearchCV of XGB: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[621/0]" -> "Results of the GridSearchCV of XGB: (0)"	[label=print];
+	"print[623/0]" -> "xgb_model(0)$1"	[label=print];
+	"print[625/0]" -> "y_train(0)$0"	[label=print];
+	"print[625/0]" -> "X_important_train(0)$0"	[label=print];
+	"print[625/0]" -> "xgb_model(0)$1"	[label=print];
 	"0.1(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"xgb(0)$0" -> "2(0)"	[label=XGBClassifier];
 	"xgb(0)$0" -> "4(0)"	[label=XGBClassifier];
@@ -1195,42 +1185,76 @@ object at 0x12fafa130>, <_ast.Constant object at 0x12fafa160>, <_ast.Constant ob
 	"xgb(0)$0" -> "multi(0)"	[label=XGBClassifier];
 	"0.8(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"multi(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"xgb(0)$1" -> "X_important_train(0)$0"	[label=fit];
 	"xgb(0)$1" -> "y_train(0)$0"	[label=fit];
+	"xgb(0)$1" -> "X_important_train(0)$0"	[label=fit];
 	"xgb(0)$1" -> "xgb(0)$0"	[label=fit];
-	"print[3]" -> "y_test(0)$0"	[label=print];
-	"print[3]" -> "y_pred(0)$1"	[label=print];
-	"print[3]" -> "y_pred(0)$2"	[label=print];
+	"y_pred(0)$1" -> "X_important_test(0)$0"	[label=predict];
+	"y_pred(0)$1" -> "xgb(0)$1"	[label=predict];
+	"METRICS 
+Accuracy Score: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[637/0]" -> "accuracy_score(0)"	[label=print];
+	"print[637/0]" -> "y_test(0)$0"	[label=print];
+	"print[637/0]" -> "y_pred(0)$1"	[label=print];
+	"print[637/0]" -> "METRICS 
+Accuracy Score: (0)"	[label=print];
+	"print[638/0]" -> "confusion_matrix(0)"	[label=print];
+	"print[638/0]" -> "y_test(0)$0"	[label=print];
+	"print[638/0]" -> "y_pred(0)$1"	[label=print];
+	"print[639/0]" -> "classification_report(0)"	[label=print];
+	"print[639/0]" -> "y_test(0)$0"	[label=print];
+	"print[639/0]" -> "y_pred(0)$1"	[label=print];
 	"param_gb(0)$0" -> "n_estimators(0)"	[label=assignedFrom];
 	"param_gb(0)$0" -> "max_depth(0)"	[label=assignedFrom];
 	"param_gb(0)$0" -> "max_features(0)"	[label=assignedFrom];
 	"param_gb(0)$0" -> "learning_rate(0)"	[label=assignedFrom];
-	"param_gb(0)$0" -> "[<_ast.Constant object at 0x12fb14940>, <_ast.Constant object at 0x12fb14970>, <_ast.Constant object at 0x12fb149a0>](0)"	[label=assignedFrom];
-	"param_gb(0)$0" -> "[<_ast.Constant object at 0x12fb14a00>, <_ast.Constant object at 0x12fb14a30>, <_ast.Constant object at 0x12fb14a60>](0)"	[label=assignedFrom];
-	"param_gb(0)$0" -> "[<_ast.Constant object at 0x12fb14ac0>, <_ast.Constant object at 0x12fb14af0>, <_ast.Constant object at 0x12fb14b20>, <_ast.Constant \
-object at 0x12fb14b50>](0)"	[label=assignedFrom];
-	"param_gb(0)$0" -> "[<_ast.Constant object at 0x12fb14be0>, <_ast.Constant object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant \
-object at 0x12fb14c70>, <_ast.Constant object at 0x12fb14ca0>](0)"	[label=assignedFrom];
+	"param_gb(0)$0" -> "[<_ast.Constant object at 0x7fd4c0990670>, <_ast.Constant object at 0x7fd4c09906a0>, <_ast.Constant object at 0x7fd4c09906d0>](0)"	[label=assignedFrom];
+	"param_gb(0)$0" -> "[<_ast.Constant object at 0x7fd4c0990760>, <_ast.Constant object at 0x7fd4c09907f0>, <_ast.Constant object at 0x7fd4c0990820>](0)"	[label=assignedFrom];
+	"param_gb(0)$0" -> "[<_ast.Constant object at 0x7fd4c0990880>, <_ast.Constant object at 0x7fd4c09908b0>, <_ast.Constant object at 0x7fd4c09908e0>, <_\
+ast.Constant object at 0x7fd4c0990910>](0)"	[label=assignedFrom];
+	"param_gb(0)$0" -> "[<_ast.Constant object at 0x7fd4c09909a0>, <_ast.Constant object at 0x7fd4c09909d0>, <_ast.Constant object at 0x7fd4c0990a00>, <_\
+ast.Constant object at 0x7fd4c0990a30>, <_ast.Constant object at 0x7fd4c0990a60>](0)"	[label=assignedFrom];
 	"max_features(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"learning_rate(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb14940>, <_ast.Constant object at 0x12fb14970>, <_ast.Constant object at 0x12fb149a0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb14a00>, <_ast.Constant object at 0x12fb14a30>, <_ast.Constant object at 0x12fb14a60>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb14ac0>, <_ast.Constant object at 0x12fb14af0>, <_ast.Constant object at 0x12fb14b20>, <_ast.Constant \
-object at 0x12fb14b50>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb14be0>, <_ast.Constant object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant \
-object at 0x12fb14c70>, <_ast.Constant object at 0x12fb14ca0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0990670>, <_ast.Constant object at 0x7fd4c09906a0>, <_ast.Constant object at 0x7fd4c09906d0>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0990760>, <_ast.Constant object at 0x7fd4c09907f0>, <_ast.Constant object at 0x7fd4c0990820>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0990880>, <_ast.Constant object at 0x7fd4c09908b0>, <_ast.Constant object at 0x7fd4c09908e0>, <_\
+ast.Constant object at 0x7fd4c0990910>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c09909a0>, <_ast.Constant object at 0x7fd4c09909d0>, <_ast.Constant object at 0x7fd4c0990a00>, <_\
+ast.Constant object at 0x7fd4c0990a30>, <_ast.Constant object at 0x7fd4c0990a60>](0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"gb(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
 	"gb_model(0)$0" -> "1(0)"	[label=GridSearchCV];
 	"gb_model(0)$0" -> "5(0)"	[label=GridSearchCV];
 	"gb_model(0)$0" -> "accuracy(0)"	[label=GridSearchCV];
 	"gb_model(0)$0" -> "param_gb(0)$0"	[label=GridSearchCV];
 	"gb_model(0)$0" -> "gb(0)"	[label=GridSearchCV];
+	"gb_model(0)$1" -> "y_train(0)$0"	[label=fit];
+	"gb_model(0)$1" -> "X_important_train(0)$0"	[label=fit];
+	"gb_model(0)$1" -> "gb_model(0)$0"	[label=fit];
+	"Results of the GridSearchCV of Gradient Boosting Classifier: (0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[656/0]" -> "Results of the GridSearchCV of Gradient Boosting Classifier: (0)"	[label=print];
+	"print[657/0]" -> "gb_model(0)$1"	[label=print];
+	"print[658/0]" -> "y_train(0)$0"	[label=print];
+	"print[658/0]" -> "X_important_train(0)$0"	[label=print];
+	"print[658/0]" -> "gb_model(0)$1"	[label=print];
 	"gb(0)$0" -> "3(0)"	[label=GradientBoostingClassifier];
 	"gb(0)$0" -> "150(0)"	[label=GradientBoostingClassifier];
 	"gb(0)$0" -> "0.1(0)"	[label=GradientBoostingClassifier];
-	"gb(0)$1" -> "X_important_train(0)$0"	[label=fit];
 	"gb(0)$1" -> "y_train(0)$0"	[label=fit];
+	"gb(0)$1" -> "X_important_train(0)$0"	[label=fit];
 	"gb(0)$1" -> "gb(0)$0"	[label=fit];
+	"y_pred(0)$2" -> "X_important_test(0)$0"	[label=predict];
+	"y_pred(0)$2" -> "gb(0)$1"	[label=predict];
+	"print[666/0]" -> "accuracy_score(0)"	[label=print];
+	"print[666/0]" -> "y_test(0)$0"	[label=print];
+	"print[666/0]" -> "METRICS 
+Accuracy Score: (0)"	[label=print];
+	"print[666/0]" -> "y_pred(0)$2"	[label=print];
+	"print[667/0]" -> "confusion_matrix(0)"	[label=print];
+	"print[667/0]" -> "y_test(0)$0"	[label=print];
+	"print[667/0]" -> "y_pred(0)$2"	[label=print];
+	"print[668/0]" -> "classification_report(0)"	[label=print];
+	"print[668/0]" -> "y_test(0)$0"	[label=print];
+	"print[668/0]" -> "y_pred(0)$2"	[label=print];
 	tpot -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=importedBy];
 	TPOTClassifier -> tpot	[label=importedBy];
 	"TPOTClassifier(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
@@ -1242,5 +1266,13 @@ object at 0x12fb14c70>, <_ast.Constant object at 0x12fb14ca0>](0)" -> "cannabis-
 	"tpot(0)$0" -> "15(0)"	[label=TPOTClassifier];
 	"tpot(0)$0" -> "auto(0)"	[label=TPOTClassifier];
 	"auto(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
-	"print[4]" -> "100(0)"	[label=print];
+	"tpot(0)$1" -> "y_train(0)$0"	[label=fit];
+	"tpot(0)$1" -> "X_important_train(0)$0"	[label=fit];
+	"tpot(0)$1" -> "tpot(0)$0"	[label=fit];
+	"Accuracy is {}\%(0)" -> "cannabis-species-eda-and-models-pipeline.ipynb"	[label=appearsIn];
+	"print[683/0]" -> "100(0)"	[label=print];
+	"print[683/0]" -> "y_test(0)$0"	[label=print];
+	"print[683/0]" -> "X_important_test(0)$0"	[label=print];
+	"print[683/0]" -> "tpot(0)$1"	[label=print];
+	"print[683/0]" -> "Accuracy is {}\%(0)"	[label=print];
 }

@@ -103,12 +103,12 @@ digraph "" {
 	"seed(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"seed(0)" -> seed	[label=assignedFrom];
 	"10(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"seed[0]" -> "10(0)"	[label=seed];
+	"seed[24/0]" -> "10(0)"	[label=seed];
 	tensorflow -> "cloud-classifier-for-post-processing.ipynb"	[label=importedBy];
 	set_random_seed -> tensorflow	[label=importedBy];
 	"set_random_seed(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"set_random_seed(0)" -> set_random_seed	[label=assignedFrom];
-	"set_random_seed[0]" -> "10(0)"	[label=set_random_seed];
+	"set_random_seed[26/0]" -> "10(0)"	[label=set_random_seed];
 	"../input/understanding_cloud_organization/test_images/(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"test_imgs_folder(0)$0" -> "../input/understanding_cloud_organization/test_images/(0)"	[label=assignedFrom];
 	"../input/understanding_cloud_organization/train_images/(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
@@ -150,8 +150,8 @@ digraph "" {
 	"class_name(0)" -> "classes(0)$0"	[label=iteratorOf];
 	"class_name(0)" -> "class_names(0)$0"	[label=iteratorOf];
 	"class_name(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"class_names(0)$0" -> "[<_ast.Constant object at 0x12f8a6ee0>, <_ast.Constant object at 0x12f8a6f10>, <_ast.Constant object at 0x12f8a6f40>, <_ast.Constant \
-object at 0x12f8a6f70>](0)"	[label=assignedFrom];
+	"class_names(0)$0" -> "[<_ast.Constant object at 0x7fd500830b50>, <_ast.Constant object at 0x7fd500830b80>, <_ast.Constant object at 0x7fd500830bb0>, <_\
+ast.Constant object at 0x7fd500830be0>](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"train_df(0)$6" -> "x(0)"	[label=map];
 	"train_df(0)$6" -> "0(0)"	[label=map];
@@ -280,11 +280,11 @@ object at 0x12f8a6f70>](0)"	[label=assignedFrom];
 	"labels(6)$0" -> "img_2_ohe_vector(6)"	[label=assignedFrom];
 	"labels(6)$0" -> "img(6)"	[label=assignedFrom];
 	"labels(6)$1" -> "self(6)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12f8f5160>, <_ast.Call object at 0x12f8f5850>, <_ast.Call object at 0x12f8f5670>, <_ast.Call object at 0x12f8f5910>](\
-0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd500999490>, <_ast.Call object at 0x7fd500999640>, <_ast.Call object at 0x7fd5009996a0>, <_ast.Call object \
+at 0x7fd500999cd0>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"albumentations_train(0)$0" -> "1(0)"	[label=Compose];
-	"albumentations_train(0)$0" -> "[<_ast.Call object at 0x12f8f5160>, <_ast.Call object at 0x12f8f5850>, <_ast.Call object at 0x12f8f5670>, <_ast.Call object at 0x12f8f5910>](\
-0)"	[label=Compose];
+	"albumentations_train(0)$0" -> "[<_ast.Call object at 0x7fd500999490>, <_ast.Call object at 0x7fd500999640>, <_ast.Call object at 0x7fd5009996a0>, <_ast.Call object \
+at 0x7fd500999cd0>](0)"	[label=Compose];
 	"data_generator_train(0)$0" -> "train_imgs(0)$0"	[label=DataGenenerator];
 	"data_generator_train(0)$0" -> "albumentations_train(0)$0"	[label=DataGenenerator];
 	"data_generator_train_eval(0)$0" -> "train_imgs(0)$0"	[label=DataGenenerator];
@@ -306,8 +306,8 @@ object at 0x12f8a6f70>](0)"	[label=assignedFrom];
 	"self(8)$1" -> "num_workers(8)"	[label=assignedFrom];
 	"self(8)$1" -> "self(8)$0"	[label=assignedFrom];
 	"self(8)$2" -> "self(8)$1"	[label=assignedFrom];
-	"self(8)$2" -> "[<_ast.Constant object at 0x12f951790>, <_ast.Constant object at 0x12f951520>, <_ast.Constant object at 0x12f9513d0>, <_ast.Constant \
-object at 0x12f9510d0>](8)"	[label=assignedFrom];
+	"self(8)$2" -> "[<_ast.Constant object at 0x7fd4c04ccdc0>, <_ast.Constant object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04cc580>, <_\
+ast.Constant object at 0x7fd4c04cc340>](8)"	[label=assignedFrom];
 	"self(8)$3" -> "self(8)$2"	[label=assignedFrom];
 	"self(8)$3" -> "self(8)$3"	[label=assignedFrom];
 	"self(8)$3" -> "[](8)"	[label=assignedFrom];
@@ -334,48 +334,13 @@ object at 0x12f9510d0>](8)"	[label=assignedFrom];
 	"y_true(9)" -> "compute_pr_auc[1]"	[label=_argToVar];
 	"y_pred(9)" -> "compute_pr_auc[2]"	[label=_argToVar];
 	"pr_auc_mean(9)$0" -> "0(9)"	[label=assignedFrom];
-	"print[0]" -> "
+	"print[125/8]" -> "
 (9)"	[label=print];
-	"print[0]" -> "PR AUC (9)"	[label=print];
-	"print[0]" -> "
-(12)"	[label=print];
-	"print[0]" -> "
-(13)"	[label=print];
-	"print[0]" -> "len(0)"	[label=print];
-	"len(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"print[1]" -> "self(9)"	[label=print];
-	"print[1]" -> "#(9)"	[label=print];
-	"print[1]" -> "#(12)"	[label=print];
-	"print[1]" -> "#(13)"	[label=print];
-	"print[1]" -> "image_labels_empty(0)$0"	[label=print];
-	"image_labels_empty(0)$0" -> "_(0)"	[label=add];
-	"image_labels_empty(0)$0" -> "class_name(0)"	[label=add];
-	"image_labels_empty(0)$0" -> "img(0)"	[label=add];
-	"image_labels_empty(0)$0" -> "image_labels_empty(0)"	[label=add];
-	"print[2]" -> "30(9)"	[label=print];
-	"print[2]" -> "class_i(9)"	[label=print];
-	"print[2]" -> "20(9)"	[label=print];
-	"print[2]" -> "20(12)"	[label=print];
-	"print[2]" -> "20(13)"	[label=print];
-	"print[2]" -> "predictions_nonempty(0)$0"	[label=print];
+	"print[125/8]" -> "#(9)"	[label=print];
+	"print[125/8]" -> "30(9)"	[label=print];
 	"class_i(9)" -> "self(9)"	[label=iteratorOf];
 	"class_i(9)" -> "range(9)"	[label=iteratorOf];
 	"class_i(9)" -> "len(9)"	[label=iteratorOf];
-	"predictions_nonempty(0)$0" -> "EncodedPixels(0)"	[label=set];
-	"predictions_nonempty(0)$0" -> "Image_Label(0)"	[label=set];
-	"predictions_nonempty(0)$0" -> "submission(0)$1"	[label=set];
-	"print[3]" -> "
-(9)"	[label=print];
-	"print[3]" -> ", (9)"	[label=print];
-	"print[3]" -> "
- PR AUC mean, (9)"	[label=print];
-	"print[3]" -> "
-Saved new checkpoint
-(12)"	[label=print];
-	"print[3]" -> "
-Reduced learning rate to (13)"	[label=print];
-	"print[3]" -> " masks would be removed(0)"	[label=print];
-	" masks would be removed(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"precision(9)$0" -> "y_true(9)"	[label=precision_recall_curve];
 	"precision(9)$0" -> "y_pred(9)"	[label=precision_recall_curve];
 	"precision(9)$0" -> "class_i(9)"	[label=precision_recall_curve];
@@ -391,34 +356,27 @@ Reduced learning rate to (13)"	[label=print];
 	"pr_auc_mean(9)$1" -> "pr_auc_mean(9)$0"	[label=Add];
 	"pr_auc_mean(9)$1" -> "len(9)"	[label=Add];
 	"pr_auc_mean(9)$1" -> "pr_auc(9)$0"	[label=Add];
-	"print[4]" -> "self(9)"	[label=print];
-	"print[4]" -> "#(12)"	[label=print];
-	"print[4]" -> "self(9)$0"	[label=print];
-	"print[4]" -> "new_lr(13)$0"	[label=print];
+	"print[130/12]" -> "self(9)"	[label=print];
+	"print[130/12]" -> "
+(9)"	[label=print];
+	"print[130/12]" -> "class_i(9)"	[label=print];
+	"print[130/12]" -> "pr_auc(9)$0"	[label=print];
+	"print[130/12]" -> "PR AUC (9)"	[label=print];
+	"print[130/12]" -> ", (9)"	[label=print];
+	"print[130/12]" -> ": (9)"	[label=print];
+	"print[130/12]" -> ".3f(9)"	[label=print];
 	"self(9)$0" -> "self(9)"	[label=append];
 	"self(9)$0" -> "pr_auc(9)$0"	[label=append];
-	"new_lr(13)$0" -> "self(13)"	[label=Mult];
-	"new_lr(13)$0" -> "float(13)"	[label=Mult];
-	"new_lr(13)$0" -> "keras(13)"	[label=Mult];
-	"print[5]" -> "20(12)"	[label=print];
-	"print[5]" -> ": (9)"	[label=print];
-	"print[5]" -> ".
-(13)"	[label=print];
-	"print[6]" -> "
-(12)"	[label=print];
-	"print[6]" -> "#(13)"	[label=print];
-	"print[6]" -> "pr_auc(9)$0"	[label=print];
-	"print[6]" -> "pr_auc_mean(9)$1"	[label=print];
-	"print[7]" -> "20(13)"	[label=print];
-	"print[7]" -> ".3f(9)"	[label=print];
-	"print[8]" -> "
+	"print[132/8]" -> "
 (9)"	[label=print];
-	"print[8]" -> "
-(13)"	[label=print];
-	"print[9]" -> "#(9)"	[label=print];
-	"print[10]" -> "20(9)"	[label=print];
-	"print[11]" -> "
-(9)"	[label=print];
+	"print[132/8]" -> "#(9)"	[label=print];
+	"print[132/8]" -> "pr_auc_mean(9)$1"	[label=print];
+	"print[132/8]" -> ": (9)"	[label=print];
+	"print[132/8]" -> ".3f(9)"	[label=print];
+	"print[132/8]" -> "self(9)$0"	[label=print];
+	"print[132/8]" -> "20(9)"	[label=print];
+	"print[132/8]" -> "
+ PR AUC mean, (9)"	[label=print];
 	"self(9)$1" -> "pr_auc_mean(9)$1"	[label=append];
 	"self(9)$1" -> "self(9)$0"	[label=append];
 	"self(10)" -> "is_patience_lost[0]"	[label=_argToVar];
@@ -449,10 +407,29 @@ Reduced learning rate to (13)"	[label=print];
 	"self(12)$1" -> "classifier_densenet169_epoch_(12)"	[label=save];
 	"self(12)$1" -> "_val_pr_auc_(12)"	[label=save];
 	"self(12)$1" -> ".h5(12)"	[label=save];
+	"print[152/12]" -> "
+(12)"	[label=print];
+	"print[152/12]" -> "#(12)"	[label=print];
+	"print[152/12]" -> "20(12)"	[label=print];
+	"print[152/12]" -> "
+Saved new checkpoint
+(12)"	[label=print];
 	"self(13)" -> "reduce_lr_on_plateau[0]"	[label=_argToVar];
-	"keras(13)$0" -> "new_lr(13)$0"	[label=set_value];
+	"new_lr(13)$0" -> "self(13)"	[label=Mult];
+	"new_lr(13)$0" -> "float(13)"	[label=Mult];
+	"new_lr(13)$0" -> "keras(13)"	[label=Mult];
 	"keras(13)$0" -> "self(13)"	[label=set_value];
+	"keras(13)$0" -> "new_lr(13)$0"	[label=set_value];
 	"keras(13)$0" -> "keras(13)"	[label=set_value];
+	"print[158/12]" -> "new_lr(13)$0"	[label=print];
+	"print[158/12]" -> "
+(13)"	[label=print];
+	"print[158/12]" -> "#(13)"	[label=print];
+	"print[158/12]" -> "20(13)"	[label=print];
+	"print[158/12]" -> "
+Reduced learning rate to (13)"	[label=print];
+	"print[158/12]" -> ".
+(13)"	[label=print];
 	"self(14)" -> "on_epoch_end[0]"	[label=_argToVar];
 	"epoch(14)" -> "on_epoch_end[1]"	[label=_argToVar];
 	"logs(14)" -> "on_epoch_end[2]"	[label=_argToVar];
@@ -497,8 +474,8 @@ Reduced learning rate to (13)"	[label=print];
 	"history_0(0)$0" -> "data_generator_train(0)$0"	[label=fit_generator];
 	"history_0(0)$0" -> "data_generator_val(0)$0"	[label=fit_generator];
 	"history_0(0)$0" -> "model(0)$0"	[label=fit_generator];
-	"history_0(0)$0" -> "[<_ast.Name object at 0x12f8857f0>, <_ast.Name object at 0x12f885820>](0)"	[label=fit_generator];
-	"[<_ast.Name object at 0x12f8857f0>, <_ast.Name object at 0x12f885820>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"history_0(0)$0" -> "[<_ast.Name object at 0x7fd5008113d0>, <_ast.Name object at 0x7fd500811400>](0)"	[label=fit_generator];
+	"[<_ast.Name object at 0x7fd5008113d0>, <_ast.Name object at 0x7fd500811400>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"True(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"base_layer(0)$1" -> "base_layer(0)$0"	[label=assignedFrom];
 	"base_layer(0)$1" -> "True(0)"	[label=assignedFrom];
@@ -509,19 +486,10 @@ Reduced learning rate to (13)"	[label=print];
 	"history_1(0)$0" -> "data_generator_train(0)$0"	[label=fit_generator];
 	"history_1(0)$0" -> "data_generator_val(0)$0"	[label=fit_generator];
 	"history_1(0)$0" -> "model(0)$1"	[label=fit_generator];
-	"history_1(0)$0" -> "[<_ast.Name object at 0x12f89c100>, <_ast.Name object at 0x12f89c1f0>](0)"	[label=fit_generator];
-	"[<_ast.Name object at 0x12f89c100>, <_ast.Name object at 0x12f89c1f0>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"history_1(0)$0" -> "[<_ast.Name object at 0x7fd500811dc0>, <_ast.Name object at 0x7fd500811e20>](0)"	[label=fit_generator];
+	"[<_ast.Name object at 0x7fd500811dc0>, <_ast.Name object at 0x7fd500811e20>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"ax(17)" -> "plot_with_dots[0]"	[label=_argToVar];
-	"plot_with_dots[0]" -> "plt(0)$0"	[label=plot_with_dots];
-	"plot_with_dots[0]" -> "plt(0)$6"	[label=plot_with_dots];
-	"plt(0)$0" -> "plt(0)"	[label=figure];
-	"plt(0)$6" -> "plt(0)$5"	[label=figure];
 	"np_array(17)" -> "plot_with_dots[1]"	[label=_argToVar];
-	"plot_with_dots[1]" -> "history_0(0)$0"	[label=plot_with_dots];
-	"plot_with_dots[1]" -> "pr_auc_history_train(0)$0"	[label=plot_with_dots];
-	"plot_with_dots[1]" -> "pr_auc_history_val(0)$0"	[label=plot_with_dots];
-	"pr_auc_history_train(0)$0" -> "train_metric_callback(0)$0"	[label=get_pr_auc_history];
-	"pr_auc_history_val(0)$0" -> "val_callback(0)$0"	[label=get_pr_auc_history];
 	"ax(17)$0" -> "ax(17)"	[label=scatter];
 	"ax(17)$0" -> "np_array(17)"	[label=scatter];
 	"ax(17)$0" -> "list(17)"	[label=scatter];
@@ -534,11 +502,15 @@ Reduced learning rate to (13)"	[label=print];
 	"ax(17)$1" -> "range(17)"	[label=plot];
 	"ax(17)$1" -> "1(17)"	[label=plot];
 	"ax(17)$1" -> "len(17)"	[label=plot];
-	"plot_with_dots[2]" -> "1(0)"	[label=plot_with_dots];
-	"plot_with_dots[2]" -> "loss(0)"	[label=plot_with_dots];
-	"plot_with_dots[2]" -> "val_loss(0)"	[label=plot_with_dots];
-	"loss(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"val_loss(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"pr_auc_history_train(0)$0" -> "train_metric_callback(0)$0"	[label=get_pr_auc_history];
+	"pr_auc_history_val(0)$0" -> "val_callback(0)$0"	[label=get_pr_auc_history];
+	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"plot_with_dots[218/0]" -> "1(0)"	[label=plot_with_dots];
+	"plot_with_dots[218/0]" -> "pr_auc_history_train(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[218/0]" -> "plt(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[219/0]" -> "1(0)"	[label=plot_with_dots];
+	"plot_with_dots[219/0]" -> "pr_auc_history_val(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[219/0]" -> "plt(0)$0"	[label=plot_with_dots];
 	"plt(0)$1" -> "plt(0)$0"	[label=xlabel];
 	"plt(0)$1" -> "Epoch(0)"	[label=xlabel];
 	"Epoch(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
@@ -546,25 +518,33 @@ Reduced learning rate to (13)"	[label=print];
 	"plt(0)$2" -> "Mean PR AUC(0)"	[label=ylabel];
 	"Mean PR AUC(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$3" -> "plt(0)$2"	[label=legend];
-	"plt(0)$3" -> "[<_ast.Constant object at 0x12f88f790>, <_ast.Constant object at 0x12f88f7c0>](0)"	[label=legend];
-	"[<_ast.Constant object at 0x12f88f790>, <_ast.Constant object at 0x12f88f7c0>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"plt(0)$3" -> "[<_ast.Constant object at 0x7fd5008212e0>, <_ast.Constant object at 0x7fd500821400>](0)"	[label=legend];
+	"[<_ast.Constant object at 0x7fd5008212e0>, <_ast.Constant object at 0x7fd500821400>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "plt(0)$3"	[label=title];
 	"plt(0)$4" -> "Training and Validation PR AUC(0)"	[label=title];
 	"Training and Validation PR AUC(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$5" -> "plt(0)$4"	[label=savefig];
 	"plt(0)$5" -> "pr_auc_hist.png(0)"	[label=savefig];
 	"pr_auc_hist.png(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"plot_with_dots[3]" -> "history_1(0)$0"	[label=plot_with_dots];
-	"plot_with_dots[4]" -> "loss(0)"	[label=plot_with_dots];
-	"plot_with_dots[4]" -> "val_loss(0)"	[label=plot_with_dots];
-	"plt(0)$7" -> "plt(0)$6"	[label=xlabel];
+	"plt(0)$6" -> "plt(0)$5"	[label=figure];
+	"plot_with_dots[227/0]" -> "history_0(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[227/0]" -> "history_1(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[227/0]" -> "plt(0)$6"	[label=plot_with_dots];
+	"plot_with_dots[227/0]" -> "loss(0)"	[label=plot_with_dots];
+	"loss(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"plot_with_dots[228/0]" -> "history_0(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[228/0]" -> "history_1(0)$0"	[label=plot_with_dots];
+	"plot_with_dots[228/0]" -> "plt(0)$6"	[label=plot_with_dots];
+	"plot_with_dots[228/0]" -> "val_loss(0)"	[label=plot_with_dots];
+	"val_loss(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "Epoch(0)"	[label=xlabel];
+	"plt(0)$7" -> "plt(0)$6"	[label=xlabel];
 	"plt(0)$8" -> "plt(0)$7"	[label=ylabel];
 	"plt(0)$8" -> "Binary Crossentropy(0)"	[label=ylabel];
 	"Binary Crossentropy(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$9" -> "plt(0)$8"	[label=legend];
-	"plt(0)$9" -> "[<_ast.Constant object at 0x12f8a67f0>, <_ast.Constant object at 0x12f8a6820>](0)"	[label=legend];
-	"[<_ast.Constant object at 0x12f8a67f0>, <_ast.Constant object at 0x12f8a6820>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"plt(0)$9" -> "[<_ast.Constant object at 0x7fd500830490>, <_ast.Constant object at 0x7fd5008304f0>](0)"	[label=legend];
+	"[<_ast.Constant object at 0x7fd500830490>, <_ast.Constant object at 0x7fd5008304f0>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"plt(0)$10" -> "plt(0)$9"	[label=title];
 	"plt(0)$10" -> "Training and Validation Loss(0)"	[label=title];
 	"Training and Validation Loss(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
@@ -574,11 +554,11 @@ Reduced learning rate to (13)"	[label=print];
 	"../input/clouds-classifier-files/classifier_densenet169_epoch_21_val_pr_auc_0.8365921057512743.h5(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"model(0)$2" -> "../input/clouds-classifier-files/classifier_densenet169_epoch_21_val_pr_auc_0.8365921057512743.h5(0)"	[label=load_model];
 	"../input/clouds-classifier-files/loss_hist_densenet169.png(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"Image[0]" -> "../input/clouds-classifier-files/loss_hist_densenet169.png(0)"	[label=Image];
-	"Image[0]" -> "../input/clouds-classifier-files/pr_auc_hist_densenet169.png(0)"	[label=Image];
+	"Image[236/0]" -> "../input/clouds-classifier-files/loss_hist_densenet169.png(0)"	[label=Image];
 	"../input/clouds-classifier-files/pr_auc_hist_densenet169.png(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a6ee0>, <_ast.Constant object at 0x12f8a6f10>, <_ast.Constant object at 0x12f8a6f40>, <_ast.Constant \
-object at 0x12f8a6f70>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"Image[237/0]" -> "../input/clouds-classifier-files/pr_auc_hist_densenet169.png(0)"	[label=Image];
+	"[<_ast.Constant object at 0x7fd500830b50>, <_ast.Constant object at 0x7fd500830b80>, <_ast.Constant object at 0x7fd500830bb0>, <_\
+ast.Constant object at 0x7fd500830be0>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"y_true(18)" -> "get_threshold_for_recall[0]"	[label=_argToVar];
 	"y_pred(18)" -> "get_threshold_for_recall[1]"	[label=_argToVar];
 	"class_i(18)" -> "get_threshold_for_recall[2]"	[label=_argToVar];
@@ -633,11 +613,12 @@ object at 0x12f8a6f70>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[lab
 	"plt(18)$6" -> "plt(18)$5"	[label=ylabel];
 	"plt(18)$6" -> "Precision(18)"	[label=ylabel];
 	"plt(18)$7" -> "plt(18)$6"	[label=ylim];
-	"plt(18)$7" -> "[<_ast.Constant object at 0x12f912520>, <_ast.Constant object at 0x12f912550>](18)"	[label=ylim];
+	"plt(18)$7" -> "[<_ast.Constant object at 0x7fd4c04fc1f0>, <_ast.Constant object at 0x7fd4c04fc220>](18)"	[label=ylim];
 	"plt(18)$8" -> "plt(18)$7"	[label=xlim];
-	"plt(18)$8" -> "[<_ast.Constant object at 0x12f9126a0>, <_ast.Constant object at 0x12f9126d0>](18)"	[label=xlim];
+	"plt(18)$8" -> "[<_ast.Constant object at 0x7fd4c04fc370>, <_ast.Constant object at 0x7fd4c04fc3a0>](18)"	[label=xlim];
 	"plt(18)$9" -> "plt(18)$8"	[label=legend];
-	"plt(18)$9" -> "[<_ast.Constant object at 0x12f912820>, <_ast.JoinedStr object at 0x12f912850>, <_ast.JoinedStr object at 0x12f912b20>](18)"	[label=legend];
+	"plt(18)$9" -> "[<_ast.Constant object at 0x7fd4c04fc490>, <_ast.JoinedStr object at 0x7fd4c04fc4f0>, <_ast.JoinedStr object at 0x7fd4c04fc7f0>](\
+18)"	[label=legend];
 	"plt(18)$10" -> "class_i(18)"	[label=title];
 	"plt(18)$10" -> "plt(18)$9"	[label=title];
 	"plt(18)$10" -> "Precision-Recall curve for Class (18)"	[label=title];
@@ -678,10 +659,23 @@ object at 0x12f8a6f70>](0)" -> "cloud-classifier-for-post-processing.ipynb"	[lab
 	"class_i(0)" -> "class_names(0)$0"	[label=iteratorOf];
 	"class_i(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"image_labels_empty(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"image_labels_empty(0)$0" -> "_(0)"	[label=add];
+	"image_labels_empty(0)$0" -> "class_name(0)"	[label=add];
+	"image_labels_empty(0)$0" -> "img(0)"	[label=add];
+	"image_labels_empty(0)$0" -> "image_labels_empty(0)"	[label=add];
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "../input/efficient-net-b4-unet-clouds/submission.csv(0)"	[label=read_csv];
 	"../input/efficient-net-b4-unet-clouds/submission.csv(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"submission(0)$1" -> "submission(0)$0"	[label=head];
+	"predictions_nonempty(0)$0" -> "EncodedPixels(0)"	[label=set];
+	"predictions_nonempty(0)$0" -> "Image_Label(0)"	[label=set];
+	"predictions_nonempty(0)$0" -> "submission(0)$1"	[label=set];
+	"len(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
+	"print[287/0]" -> "image_labels_empty(0)$0"	[label=print];
+	"print[287/0]" -> "predictions_nonempty(0)$0"	[label=print];
+	"print[287/0]" -> "len(0)"	[label=print];
+	"print[287/0]" -> " masks would be removed(0)"	[label=print];
+	" masks would be removed(0)" -> "cloud-classifier-for-post-processing.ipynb"	[label=appearsIn];
 	"submission(0)$2" -> "np(0)"	[label=assignedFrom];
 	"submission(0)$2" -> "submission(0)$1"	[label=assignedFrom];
 	"submission(0)$3" -> "submission(0)$2"	[label=to_csv];

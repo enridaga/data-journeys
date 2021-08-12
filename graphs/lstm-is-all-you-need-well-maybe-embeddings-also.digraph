@@ -57,10 +57,10 @@ digraph "" {
 	"embeddings_index(0)$0" -> "embeddings_index(0)"	[label=assignedFrom];
 	"f(0)$1" -> "f(0)$0"	[label=close];
 	"Found \%s word vectors.(0)" -> "lstm-is-all-you-need-well-maybe-embeddings-also.ipynb"	[label=appearsIn];
-	"print[0]" -> "Found \%s word vectors.(0)"	[label=print];
+	"print[24/0]" -> "embeddings_index(0)$0"	[label=print];
+	"print[24/0]" -> "Found \%s word vectors.(0)"	[label=print];
+	"print[24/0]" -> "len(0)"	[label=print];
 	"len(0)" -> "lstm-is-all-you-need-well-maybe-embeddings-also.ipynb"	[label=appearsIn];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[2]" -> "embeddings_index(0)$0"	[label=print];
 	"text(1)" -> "text_to_array[0]"	[label=_argToVar];
 	"empyt_emb(1)$0" -> "np(1)"	[label=zeros];
 	"empyt_emb(1)$0" -> "300(1)"	[label=zeros];
@@ -74,7 +74,7 @@ digraph "" {
 	"embeds(1)$1" -> "30(1)"	[label=Add];
 	"embeds(1)$1" -> "embeds(1)$0"	[label=Add];
 	"embeds(1)$1" -> "embeds(1)$1"	[label=Add];
-	"embeds(1)$1" -> "[<_ast.Name object at 0x12f8f5460>](1)"	[label=Add];
+	"embeds(1)$1" -> "[<_ast.Name object at 0x7fd4c04ffa30>](1)"	[label=Add];
 	"embeds(1)$1" -> "len(1)"	[label=Add];
 	"val_vects(0)$0" -> "np(0)"	[label=array];
 	"val_vects(0)$0" -> "tqdm(0)"	[label=array];

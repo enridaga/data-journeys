@@ -77,8 +77,8 @@ digraph "" {
 	"ignore(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"consumption_beer(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"x_prediction(0)$0" -> "consumption_beer(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f85efa0>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"x_column(0)$0" -> "[<_ast.Constant object at 0x12f85efa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc2b0>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"x_column(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc2b0>](0)"	[label=assignedFrom];
 	"0(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"isweekend(0)$0" -> "0(0)"	[label=assignedFrom];
 	"isweekend(0)$0" -> "1(0)"	[label=assignedFrom];
@@ -146,7 +146,7 @@ digraph "" {
 	"path(1)$0" -> "../input/beer-consumption-sao-paulo/Consumo_cerveja.csv(1)"	[label=assignedFrom];
 	"df_HE(1)$0" -> "path(1)$0"	[label=read_csv];
 	"df_HE(1)$0" -> "pd(1)"	[label=read_csv];
-	"df_HE(1)$0" -> "[<_ast.Constant object at 0x12f8f5a00>](1)"	[label=read_csv];
+	"df_HE(1)$0" -> "[<_ast.Constant object at 0x7fd4902ab070>](1)"	[label=read_csv];
 	"df_HE(1)$0" -> ",(1)"	[label=read_csv];
 	"df_HE(1)$0" -> ".(1)"	[label=read_csv];
 	"df_HE(1)$1" -> "df_HE(1)$0"	[label=dropna];
@@ -260,7 +260,7 @@ digraph "" {
 	"i(8)" -> "df_test(8)$0"	[label=iteratorOf];
 	"i(8)" -> "range(8)"	[label=iteratorOf];
 	"i(8)" -> "len(8)"	[label=iteratorOf];
-	"arr(8)$0" -> "[<_ast.Call object at 0x12fae3370>](8)"	[label=assignedFrom];
+	"arr(8)$0" -> "[<_ast.Call object at 0x7fd500999f40>](8)"	[label=assignedFrom];
 	"predict(8)$0" -> "poly(8)$0"	[label=fit_transform];
 	"predict(8)$0" -> "arr(8)$0"	[label=fit_transform];
 	"res_predict(8)$0" -> "reg(8)$0"	[label=predict];
@@ -279,13 +279,7 @@ digraph "" {
 	"test_comb(9)" -> "test_all_combination_rmse[1]"	[label=_argToVar];
 	"df_train(9)" -> "test_all_combination_rmse[2]"	[label=_argToVar];
 	"df_test(9)" -> "test_all_combination_rmse[3]"	[label=_argToVar];
-	"print[0]" -> "datetime(9)"	[label=print];
-	"print[0]" -> "Quantidade de teste:(9)"	[label=print];
-	"print[0]" -> "rmse_best_feature(0)$0"	[label=print];
-	"rmse_best_feature(0)$0" -> "x_column(0)$0"	[label=test_regression];
-	"rmse_best_feature(0)$0" -> "train(0)$0"	[label=test_regression];
-	"rmse_best_feature(0)$0" -> "test(0)$0"	[label=test_regression];
-	"rmse_best_feature(0)$0" -> "y_columns(0)$1"	[label=test_regression];
+	"print[144/4]" -> "datetime(9)"	[label=print];
 	"minor(9)$0" -> "100000(9)"	[label=assignedFrom];
 	"best_comp(9)$0" -> "[](9)"	[label=assignedFrom];
 	"count_test(9)$0" -> "1(9)"	[label=assignedFrom];
@@ -299,11 +293,11 @@ digraph "" {
 	"subset(9)" -> "itertools(9)"	[label=iteratorOf];
 	"count_test(9)$1" -> "count_test(9)$0"	[label=Add];
 	"count_test(9)$1" -> "1(9)"	[label=Add];
-	"print[1]" -> "str(9)"	[label=print];
-	"print[2]" -> "count_test(9)$1"	[label=print];
-	"print[3]" -> " Menor valor do RMSE: (9)"	[label=print];
-	"print[4]" -> "str(9)"	[label=print];
-	"print[5]" -> "minor(9)$0"	[label=print];
+	"print[153/16]" -> "minor(9)$0"	[label=print];
+	"print[153/16]" -> "count_test(9)$1"	[label=print];
+	"print[153/16]" -> "Quantidade de teste:(9)"	[label=print];
+	"print[153/16]" -> "str(9)"	[label=print];
+	"print[153/16]" -> " Menor valor do RMSE: (9)"	[label=print];
 	"y_columns(9)$0" -> "subset(9)"	[label=array];
 	"y_columns(9)$0" -> "np(9)"	[label=array];
 	"mrse(9)$0" -> "x_column(9)"	[label=test_regression];
@@ -320,6 +314,7 @@ digraph "" {
 	"p(9)$0" -> "y_columns(9)$0"	[label=test_regression];
 	"minor(9)$1" -> "mrse(9)$0"	[label=assignedFrom];
 	"best_comp(9)$1" -> "y_columns(9)$0"	[label=assignedFrom];
+	"print[162/4]" -> "datetime(9)"	[label=print];
 	"line1(10)" -> "line_plot[0]"	[label=_argToVar];
 	"line2(10)" -> "line_plot[1]"	[label=_argToVar];
 	"label1(10)" -> "line_plot[2]"	[label=_argToVar];
@@ -391,40 +386,48 @@ digraph "" {
 	"train2(0)$0" -> "df_consumption_NotHE(0)"	[label=train_test_split];
 	"test2(0)$0" -> "0.2(0)"	[label=train_test_split];
 	"test2(0)$0" -> "df_consumption_NotHE(0)"	[label=train_test_split];
-	"[<_ast.Constant object at 0x12fc19850>, <_ast.Constant object at 0x12fc19880>, <_ast.Constant object at 0x12fc198b0>, <_ast.Constant \
-object at 0x12fc198e0>, <_ast.Constant object at 0x12fc19910>, <_ast.Constant object at 0x12fc19940>, <_ast.Constant object at 0x12fc19970>, <_\
-ast.Constant object at 0x12fc199a0>, <_ast.Constant object at 0x12fc199d0>, <_ast.Constant object at 0x12fc19a00>, <_ast.Constant \
-object at 0x12fc19a30>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"columns(0)$0" -> "[<_ast.Constant object at 0x12fc19850>, <_ast.Constant object at 0x12fc19880>, <_ast.Constant object at 0x12fc198b0>, <_ast.Constant \
-object at 0x12fc198e0>, <_ast.Constant object at 0x12fc19910>, <_ast.Constant object at 0x12fc19940>, <_ast.Constant object at 0x12fc19970>, <_\
-ast.Constant object at 0x12fc199a0>, <_ast.Constant object at 0x12fc199d0>, <_ast.Constant object at 0x12fc19a00>, <_ast.Constant \
-object at 0x12fc19a30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500886520>, <_ast.Constant object at 0x7fd5008864c0>, <_ast.Constant object at 0x7fd500886640>, <_\
+ast.Constant object at 0x7fd5008868e0>, <_ast.Constant object at 0x7fd500886670>, <_ast.Constant object at 0x7fd500886820>, <_ast.Constant \
+object at 0x7fd500886880>, <_ast.Constant object at 0x7fd5008868b0>, <_ast.Constant object at 0x7fd500886850>, <_ast.Constant object \
+at 0x7fd5008866a0>, <_ast.Constant object at 0x7fd5008866d0>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"columns(0)$0" -> "[<_ast.Constant object at 0x7fd500886520>, <_ast.Constant object at 0x7fd5008864c0>, <_ast.Constant object at 0x7fd500886640>, <_\
+ast.Constant object at 0x7fd5008868e0>, <_ast.Constant object at 0x7fd500886670>, <_ast.Constant object at 0x7fd500886820>, <_ast.Constant \
+object at 0x7fd500886880>, <_ast.Constant object at 0x7fd5008868b0>, <_ast.Constant object at 0x7fd500886850>, <_ast.Constant object \
+at 0x7fd5008866a0>, <_ast.Constant object at 0x7fd5008866d0>](0)"	[label=assignedFrom];
 	"p1(0)$0" -> "df_consumption_HE(0)"	[label=plot_correlation];
 	"p1(0)$0" -> "columns(0)$0"	[label=plot_correlation];
 	"p1(0)$0" -> "RMSE better return feature correlation(0)"	[label=plot_correlation];
 	"RMSE better return feature correlation(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc19d30>, <_ast.Constant object at 0x12fc19d60>, <_ast.Constant object at 0x12fc19d90>, <_ast.Constant \
-object at 0x12fc19dc0>, <_ast.Constant object at 0x12fc19df0>, <_ast.Constant object at 0x12fc19e20>, <_ast.Constant object at 0x12fc19e50>, <_\
-ast.Constant object at 0x12fc19e80>, <_ast.Constant object at 0x12fc19eb0>, <_ast.Constant object at 0x12fc19ee0>, <_ast.Constant \
-object at 0x12fc19f10>, <_ast.Constant object at 0x12fc19f40>, <_ast.Constant object at 0x12fc19f70>, <_ast.Constant object at 0x12fc19fa0>, <_\
-ast.Constant object at 0x12fc19fd0>, <_ast.Constant object at 0x12fc41040>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"columns(0)$1" -> "[<_ast.Constant object at 0x12fc19d30>, <_ast.Constant object at 0x12fc19d60>, <_ast.Constant object at 0x12fc19d90>, <_ast.Constant \
-object at 0x12fc19dc0>, <_ast.Constant object at 0x12fc19df0>, <_ast.Constant object at 0x12fc19e20>, <_ast.Constant object at 0x12fc19e50>, <_\
-ast.Constant object at 0x12fc19e80>, <_ast.Constant object at 0x12fc19eb0>, <_ast.Constant object at 0x12fc19ee0>, <_ast.Constant \
-object at 0x12fc19f10>, <_ast.Constant object at 0x12fc19f40>, <_ast.Constant object at 0x12fc19f70>, <_ast.Constant object at 0x12fc19fa0>, <_\
-ast.Constant object at 0x12fc19fd0>, <_ast.Constant object at 0x12fc41040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008861f0>, <_ast.Constant object at 0x7fd500886490>, <_ast.Constant object at 0x7fd500886f40>, <_\
+ast.Constant object at 0x7fd500886ee0>, <_ast.Constant object at 0x7fd500886dc0>, <_ast.Constant object at 0x7fd500886d00>, <_ast.Constant \
+object at 0x7fd500886b20>, <_ast.Constant object at 0x7fd500886b80>, <_ast.Constant object at 0x7fd500886e80>, <_ast.Constant object \
+at 0x7fd500886f10>, <_ast.Constant object at 0x7fd500886eb0>, <_ast.Constant object at 0x7fd5008869a0>, <_ast.Constant object at \
+0x7fd500886d30>, <_ast.Constant object at 0x7fd500886c40>, <_ast.Constant object at 0x7fd500886fd0>, <_ast.Constant object at 0x7fd500886bb0>](\
+0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"columns(0)$1" -> "[<_ast.Constant object at 0x7fd5008861f0>, <_ast.Constant object at 0x7fd500886490>, <_ast.Constant object at 0x7fd500886f40>, <_\
+ast.Constant object at 0x7fd500886ee0>, <_ast.Constant object at 0x7fd500886dc0>, <_ast.Constant object at 0x7fd500886d00>, <_ast.Constant \
+object at 0x7fd500886b20>, <_ast.Constant object at 0x7fd500886b80>, <_ast.Constant object at 0x7fd500886e80>, <_ast.Constant object \
+at 0x7fd500886f10>, <_ast.Constant object at 0x7fd500886eb0>, <_ast.Constant object at 0x7fd5008869a0>, <_ast.Constant object at \
+0x7fd500886d30>, <_ast.Constant object at 0x7fd500886c40>, <_ast.Constant object at 0x7fd500886fd0>, <_ast.Constant object at 0x7fd500886bb0>](\
+0)"	[label=assignedFrom];
 	"p2(0)$0" -> "df_consumption_HE(0)"	[label=plot_correlation];
 	"p2(0)$0" -> "columns(0)$1"	[label=plot_correlation];
 	"p2(0)$0" -> "Correlation of all features(0)"	[label=plot_correlation];
 	"Correlation of all features(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"show[0]" -> "row(0)"	[label=show];
-	"show[0]" -> "p1(0)$1"	[label=show];
-	"show[0]" -> "line_plotted(0)$0"	[label=show];
-	"show[0]" -> "line_plotted(0)$4"	[label=show];
-	"show[0]" -> "rmse_bar(0)$3"	[label=show];
+	"show[241/0]" -> "row(0)"	[label=show];
+	"show[241/0]" -> "p1(0)$0"	[label=show];
+	"show[241/0]" -> "p2(0)$0"	[label=show];
+	"[<_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04fff70>, <_\
+ast.Constant object at 0x7fd4c04ffeb0>, <_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ff160>, <_ast.Constant \
+object at 0x7fd4c04ffe20>, <_ast.Constant object at 0x7fd4c04ff1c0>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"columns(0)$2" -> "[<_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04fff70>, <_\
+ast.Constant object at 0x7fd4c04ffeb0>, <_ast.Constant object at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ff160>, <_ast.Constant \
+object at 0x7fd4c04ffe20>, <_ast.Constant object at 0x7fd4c04ff1c0>](0)"	[label=assignedFrom];
 	"p1(0)$1" -> "df_consumption_NotHE(0)"	[label=plot_correlation];
 	"p1(0)$1" -> "columns(0)$2"	[label=plot_correlation];
 	"p1(0)$1" -> "Correlation of all using data without hot enconding features(0)"	[label=plot_correlation];
+	"Correlation of all using data without hot enconding features(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"show[246/0]" -> "p1(0)$1"	[label=show];
 	"line_plotted(0)$0" -> "Viridis256(0)"	[label=line_plot];
 	"line_plotted(0)$0" -> "x_prediction(0)$0"	[label=line_plot];
 	"line_plotted(0)$0" -> "train(0)$0"	[label=line_plot];
@@ -434,36 +437,22 @@ ast.Constant object at 0x12fc19fd0>, <_ast.Constant object at 0x12fc41040>](0)"	
 	"line_plotted(0)$0" -> "128(0)"	[label=line_plot];
 	"line_plotted(0)$0" -> "255(0)"	[label=line_plot];
 	"line_plotted(0)$0" -> "Consumption Beer [Training and Test](0)"	[label=line_plot];
-	"line_plotted(0)$4" -> "line_plotted(0)$4"	[label=line_plot];
-	"line_plotted(0)$4" -> "sp(0)$3"	[label=line_plot];
-	"line_plotted(0)$4" -> "Test [Without Hot Enconded Features With Best Correlations](0)"	[label=line_plot];
-	"line_plotted(0)$4" -> "blue(0)"	[label=line_plot];
-	"rmse_bar(0)$3" -> "0(0)"	[label=assignedFrom];
-	"rmse_bar(0)$3" -> "rmse_bar(0)$2"	[label=assignedFrom];
-	"show[1]" -> "p1(0)$0"	[label=show];
-	"show[2]" -> "p2(0)$0"	[label=show];
-	"[<_ast.Constant object at 0x12fc414c0>, <_ast.Constant object at 0x12fc414f0>, <_ast.Constant object at 0x12fc41520>, <_ast.Constant \
-object at 0x12fc41550>, <_ast.Constant object at 0x12fc41580>, <_ast.Constant object at 0x12fc415b0>, <_ast.Constant object at 0x12fc415e0>, <_\
-ast.Constant object at 0x12fc41610>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"columns(0)$2" -> "[<_ast.Constant object at 0x12fc414c0>, <_ast.Constant object at 0x12fc414f0>, <_ast.Constant object at 0x12fc41520>, <_ast.Constant \
-object at 0x12fc41550>, <_ast.Constant object at 0x12fc41580>, <_ast.Constant object at 0x12fc415b0>, <_ast.Constant object at 0x12fc415e0>, <_\
-ast.Constant object at 0x12fc41610>](0)"	[label=assignedFrom];
-	"Correlation of all using data without hot enconding features(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"Alvos(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"Teste(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"128(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"255(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"Consumption Beer [Training and Test](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89c2e0>, <_ast.Constant object at 0x12f89c310>, <_ast.Constant object at 0x12f89c340>, <_ast.Constant \
-object at 0x12f89c370>, <_ast.Constant object at 0x12f89c3a0>, <_ast.Constant object at 0x12f89c3d0>, <_ast.Constant object at 0x12f89c400>, <_\
-ast.Constant object at 0x12f89c430>, <_ast.Constant object at 0x12f89c460>, <_ast.Constant object at 0x12f89c490>, <_ast.Constant \
-object at 0x12f89c4c0>, <_ast.Constant object at 0x12f89c4f0>, <_ast.Constant object at 0x12f89c520>, <_ast.Constant object at 0x12f89c550>, <_\
-ast.Constant object at 0x12f89c580>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"y_columns(0)$0" -> "[<_ast.Constant object at 0x12f89c2e0>, <_ast.Constant object at 0x12f89c310>, <_ast.Constant object at 0x12f89c340>, <_ast.Constant \
-object at 0x12f89c370>, <_ast.Constant object at 0x12f89c3a0>, <_ast.Constant object at 0x12f89c3d0>, <_ast.Constant object at 0x12f89c400>, <_\
-ast.Constant object at 0x12f89c430>, <_ast.Constant object at 0x12f89c460>, <_ast.Constant object at 0x12f89c490>, <_ast.Constant \
-object at 0x12f89c4c0>, <_ast.Constant object at 0x12f89c4f0>, <_ast.Constant object at 0x12f89c520>, <_ast.Constant object at 0x12f89c550>, <_\
-ast.Constant object at 0x12f89c580>](0)"	[label=assignedFrom];
+	"show[249/0]" -> "line_plotted(0)$0"	[label=show];
+	"[<_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at 0x7fd4c04ffca0>, <_ast.Constant object at 0x7fd4c04ac040>, <_\
+ast.Constant object at 0x7fd4c04ac070>, <_ast.Constant object at 0x7fd4c04ac0a0>, <_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant \
+object at 0x7fd4c04ac100>, <_ast.Constant object at 0x7fd4c04ac130>, <_ast.Constant object at 0x7fd4c04ac160>, <_ast.Constant object \
+at 0x7fd4c04ac190>, <_ast.Constant object at 0x7fd4c04ac1c0>, <_ast.Constant object at 0x7fd4c04ac1f0>, <_ast.Constant object at \
+0x7fd4c04ac220>, <_ast.Constant object at 0x7fd4c04ac250>, <_ast.Constant object at 0x7fd4c04ac280>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"y_columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at 0x7fd4c04ffca0>, <_ast.Constant object at 0x7fd4c04ac040>, <_\
+ast.Constant object at 0x7fd4c04ac070>, <_ast.Constant object at 0x7fd4c04ac0a0>, <_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant \
+object at 0x7fd4c04ac100>, <_ast.Constant object at 0x7fd4c04ac130>, <_ast.Constant object at 0x7fd4c04ac160>, <_ast.Constant object \
+at 0x7fd4c04ac190>, <_ast.Constant object at 0x7fd4c04ac1c0>, <_ast.Constant object at 0x7fd4c04ac1f0>, <_ast.Constant object at \
+0x7fd4c04ac220>, <_ast.Constant object at 0x7fd4c04ac250>, <_ast.Constant object at 0x7fd4c04ac280>](0)"	[label=assignedFrom];
 	"rmse_all(0)$0" -> "x_column(0)$0"	[label=test_regression];
 	"rmse_all(0)$0" -> "train(0)$0"	[label=test_regression];
 	"rmse_all(0)$0" -> "test(0)$0"	[label=test_regression];
@@ -487,12 +476,18 @@ ast.Constant object at 0x12f89c580>](0)"	[label=assignedFrom];
 	"Targets(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"Test [Full](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"Consumption Beer [Polynomial Regression](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89ce80>, <_ast.Constant object at 0x12f89ceb0>, <_ast.Constant object at 0x12f89cee0>, <_ast.Constant \
-object at 0x12f89cf10>, <_ast.Constant object at 0x12f89cf40>, <_ast.Constant object at 0x12f89cf70>, <_ast.Constant object at 0x12f89cfa0>, <_\
-ast.Constant object at 0x12f89cfd0>, <_ast.Constant object at 0x12f89d040>, <_ast.Constant object at 0x12f89d070>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"y_columns(0)$1" -> "[<_ast.Constant object at 0x12f89ce80>, <_ast.Constant object at 0x12f89ceb0>, <_ast.Constant object at 0x12f89cee0>, <_ast.Constant \
-object at 0x12f89cf10>, <_ast.Constant object at 0x12f89cf40>, <_ast.Constant object at 0x12f89cf70>, <_ast.Constant object at 0x12f89cfa0>, <_\
-ast.Constant object at 0x12f89cfd0>, <_ast.Constant object at 0x12f89d040>, <_ast.Constant object at 0x12f89d070>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04acb80>, <_ast.Constant object at 0x7fd4c04acbb0>, <_ast.Constant object at 0x7fd4c04acbe0>, <_\
+ast.Constant object at 0x7fd4c04acc10>, <_ast.Constant object at 0x7fd4c04acc40>, <_ast.Constant object at 0x7fd4c04acc70>, <_ast.Constant \
+object at 0x7fd4c04acca0>, <_ast.Constant object at 0x7fd4c04accd0>, <_ast.Constant object at 0x7fd4c04acd00>, <_ast.Constant object \
+at 0x7fd4c04acd30>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"y_columns(0)$1" -> "[<_ast.Constant object at 0x7fd4c04acb80>, <_ast.Constant object at 0x7fd4c04acbb0>, <_ast.Constant object at 0x7fd4c04acbe0>, <_\
+ast.Constant object at 0x7fd4c04acc10>, <_ast.Constant object at 0x7fd4c04acc40>, <_ast.Constant object at 0x7fd4c04acc70>, <_ast.Constant \
+object at 0x7fd4c04acca0>, <_ast.Constant object at 0x7fd4c04accd0>, <_ast.Constant object at 0x7fd4c04acd00>, <_ast.Constant object \
+at 0x7fd4c04acd30>](0)"	[label=assignedFrom];
+	"rmse_best_feature(0)$0" -> "x_column(0)$0"	[label=test_regression];
+	"rmse_best_feature(0)$0" -> "train(0)$0"	[label=test_regression];
+	"rmse_best_feature(0)$0" -> "test(0)$0"	[label=test_regression];
+	"rmse_best_feature(0)$0" -> "y_columns(0)$1"	[label=test_regression];
 	"sr(0)$1" -> "x_column(0)$0"	[label=test_regression];
 	"sr(0)$1" -> "train(0)$0"	[label=test_regression];
 	"sr(0)$1" -> "test(0)$0"	[label=test_regression];
@@ -507,12 +502,12 @@ ast.Constant object at 0x12f89cfd0>, <_ast.Constant object at 0x12f89d040>, <_as
 	"line_plotted(0)$2" -> "line_plotted(0)$2"	[label=line_plot];
 	"line_plotted(0)$2" -> "Test [Best Features](0)"	[label=line_plot];
 	"Test [Best Features](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d730>, <_ast.Constant object at 0x12f89d760>, <_ast.Constant object at 0x12f89d790>, <_ast.Constant \
-object at 0x12f89d7c0>, <_ast.Constant object at 0x12f89d7f0>, <_ast.Constant object at 0x12f89d820>, <_ast.Constant object at 0x12f89d850>](\
-0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"y_columns(0)$2" -> "[<_ast.Constant object at 0x12f89d730>, <_ast.Constant object at 0x12f89d760>, <_ast.Constant object at 0x12f89d790>, <_ast.Constant \
-object at 0x12f89d7c0>, <_ast.Constant object at 0x12f89d7f0>, <_ast.Constant object at 0x12f89d820>, <_ast.Constant object at 0x12f89d850>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008b2430>, <_ast.Constant object at 0x7fd5008b2460>, <_ast.Constant object at 0x7fd5008b2490>, <_\
+ast.Constant object at 0x7fd5008b24c0>, <_ast.Constant object at 0x7fd5008b24f0>, <_ast.Constant object at 0x7fd5008b2520>, <_ast.Constant \
+object at 0x7fd5008b2550>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"y_columns(0)$2" -> "[<_ast.Constant object at 0x7fd5008b2430>, <_ast.Constant object at 0x7fd5008b2460>, <_ast.Constant object at 0x7fd5008b2490>, <_\
+ast.Constant object at 0x7fd5008b24c0>, <_ast.Constant object at 0x7fd5008b24f0>, <_ast.Constant object at 0x7fd5008b2520>, <_ast.Constant \
+object at 0x7fd5008b2550>](0)"	[label=assignedFrom];
 	"rmse_not_he(0)$0" -> "x_column(0)$0"	[label=test_regression];
 	"rmse_not_he(0)$0" -> "train2(0)$0"	[label=test_regression];
 	"rmse_not_he(0)$0" -> "test2(0)$0"	[label=test_regression];
@@ -531,10 +526,10 @@ object at 0x12f89d7c0>, <_ast.Constant object at 0x12f89d7f0>, <_ast.Constant ob
 	"line_plotted(0)$3" -> "red(0)"	[label=line_plot];
 	"Test [Without Hot Enconded Features](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"red(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89ddf0>, <_ast.Constant object at 0x12f89de20>, <_ast.Constant object at 0x12f89de50>, <_ast.Constant \
-object at 0x12f89de80>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"y_columns(0)$3" -> "[<_ast.Constant object at 0x12f89ddf0>, <_ast.Constant object at 0x12f89de20>, <_ast.Constant object at 0x12f89de50>, <_ast.Constant \
-object at 0x12f89de80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008b2af0>, <_ast.Constant object at 0x7fd5008b2b20>, <_ast.Constant object at 0x7fd5008b2b50>, <_\
+ast.Constant object at 0x7fd5008b2b80>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"y_columns(0)$3" -> "[<_ast.Constant object at 0x7fd5008b2af0>, <_ast.Constant object at 0x7fd5008b2b20>, <_ast.Constant object at 0x7fd5008b2b50>, <_\
+ast.Constant object at 0x7fd5008b2b80>](0)"	[label=assignedFrom];
 	"rmse_best_not_he(0)$0" -> "x_column(0)$0"	[label=test_regression];
 	"rmse_best_not_he(0)$0" -> "train2(0)$0"	[label=test_regression];
 	"rmse_best_not_he(0)$0" -> "test2(0)$0"	[label=test_regression];
@@ -547,12 +542,16 @@ object at 0x12f89de80>](0)"	[label=assignedFrom];
 	"sp(0)$3" -> "train2(0)$0"	[label=test_regression];
 	"sp(0)$3" -> "test2(0)$0"	[label=test_regression];
 	"sp(0)$3" -> "y_columns(0)$3"	[label=test_regression];
+	"line_plotted(0)$4" -> "sp(0)$3"	[label=line_plot];
+	"line_plotted(0)$4" -> "line_plotted(0)$4"	[label=line_plot];
+	"line_plotted(0)$4" -> "Test [Without Hot Enconded Features With Best Correlations](0)"	[label=line_plot];
+	"line_plotted(0)$4" -> "blue(0)"	[label=line_plot];
 	"Test [Without Hot Enconded Features With Best Correlations](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"blue(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a04c0>, <_ast.Constant object at 0x12f8a04f0>, <_ast.Constant object at 0x12f8a0520>, <_ast.Constant \
-object at 0x12f8a0550>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
-	"labels(0)$0" -> "[<_ast.Constant object at 0x12f8a04c0>, <_ast.Constant object at 0x12f8a04f0>, <_ast.Constant object at 0x12f8a0520>, <_ast.Constant \
-object at 0x12f8a0550>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008b1190>, <_ast.Constant object at 0x7fd5008b11c0>, <_ast.Constant object at 0x7fd5008b11f0>, <_\
+ast.Constant object at 0x7fd5008b1220>](0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
+	"labels(0)$0" -> "[<_ast.Constant object at 0x7fd5008b1190>, <_ast.Constant object at 0x7fd5008b11c0>, <_ast.Constant object at 0x7fd5008b11f0>, <_\
+ast.Constant object at 0x7fd5008b1220>](0)"	[label=assignedFrom];
 	"rmse_bar(0)$0" -> "labels(0)$0"	[label=figure];
 	"rmse_bar(0)$0" -> "1200(0)"	[label=figure];
 	"rmse_bar(0)$0" -> "400(0)"	[label=figure];
@@ -564,4 +563,9 @@ object at 0x12f8a0550>](0)"	[label=assignedFrom];
 	"None(0)" -> "cosumo-de-cerveja-rmse-2320-42.ipynb"	[label=appearsIn];
 	"rmse_bar(0)$2" -> "rmse_bar(0)$1"	[label=assignedFrom];
 	"rmse_bar(0)$2" -> "None(0)"	[label=assignedFrom];
+	"rmse_bar(0)$3" -> "0(0)"	[label=assignedFrom];
+	"rmse_bar(0)$3" -> "rmse_bar(0)$2"	[label=assignedFrom];
+	"show[275/0]" -> "line_plotted(0)$4"	[label=show];
+	"show[276/0]" -> "rmse_bar(0)$3"	[label=show];
+	"print[277/0]" -> "rmse_best_feature(0)$0"	[label=print];
 }

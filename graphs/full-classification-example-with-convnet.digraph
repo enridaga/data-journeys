@@ -47,11 +47,8 @@ digraph "" {
 	"img(2)$1" -> "img(2)$1"	[label=resize];
 	"img(2)$1" -> "IMG_SIZE(2)"	[label=resize];
 	"training_data(2)$1" -> "training_data(2)$0"	[label=append];
-	"training_data(2)$1" -> "[<_ast.Call object at 0x12faded60>, <_ast.Call object at 0x12fade1f0>](2)"	[label=append];
-	"shuffle[0]" -> "training_data(2)$1"	[label=shuffle];
-	"shuffle[0]" -> "testing_data(3)$1"	[label=shuffle];
-	"testing_data(3)$1" -> "testing_data(3)$0"	[label=append];
-	"testing_data(3)$1" -> "[<_ast.Call object at 0x12fc4f0d0>, <_ast.Name object at 0x12fc4f730>](3)"	[label=append];
+	"training_data(2)$1" -> "[<_ast.Call object at 0x7fd50085bc70>, <_ast.Call object at 0x7fd50085bb50>](2)"	[label=append];
+	"shuffle[54/4]" -> "training_data(2)$1"	[label=shuffle];
 	"np(2)$0" -> "training_data(2)$1"	[label=save];
 	"np(2)$0" -> "np(2)"	[label=save];
 	"np(2)$0" -> "train_data.npy(2)"	[label=save];
@@ -70,6 +67,9 @@ digraph "" {
 	"img(3)$1" -> "cv2(3)"	[label=resize];
 	"img(3)$1" -> "img(3)$1"	[label=resize];
 	"img(3)$1" -> "IMG_SIZE(3)"	[label=resize];
+	"testing_data(3)$1" -> "testing_data(3)$0"	[label=append];
+	"testing_data(3)$1" -> "[<_ast.Call object at 0x7fd4c04ccca0>, <_ast.Name object at 0x7fd4c04cc490>](3)"	[label=append];
+	"shuffle[77/4]" -> "testing_data(3)$1"	[label=shuffle];
 	"np(3)$0" -> "testing_data(3)$1"	[label=save];
 	"np(3)$0" -> "np(3)"	[label=save];
 	"np(3)$0" -> "test_data.npy(3)"	[label=save];
@@ -97,10 +97,10 @@ digraph "" {
 	regression -> "tflearn.layers.estimator"	[label=importedBy];
 	"regression(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"regression(0)" -> regression	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f85e6a0>, <_ast.Name object at 0x12f85e6d0>, <_ast.Name object at 0x12f85e7c0>, <_ast.Constant object \
-at 0x12f85ec70>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
-	"convnet(0)$0" -> "[<_ast.Constant object at 0x12f85e6a0>, <_ast.Name object at 0x12f85e6d0>, <_ast.Name object at 0x12f85e7c0>, <_ast.Constant object \
-at 0x12f85ec70>](0)"	[label=input_data];
+	"[<_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Name object at 0x7fd4c04ff910>, <_ast.Name object at 0x7fd4c04ffcd0>, <_ast.Constant \
+object at 0x7fd4c04ff0d0>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
+	"convnet(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Name object at 0x7fd4c04ff910>, <_ast.Name object at 0x7fd4c04ffcd0>, <_ast.Constant \
+object at 0x7fd4c04ff0d0>](0)"	[label=input_data];
 	"convnet(0)$0" -> "input(0)"	[label=input_data];
 	"input(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"convnet(0)$1" -> "convnet(0)$0"	[label=conv_2d];
@@ -146,7 +146,7 @@ at 0x12f85ec70>](0)"	[label=input_data];
 	"model(0)$1" -> "MODEL_NAME(0)$0"	[label=load];
 	"model(0)$1" -> "model(0)$0"	[label=load];
 	"model loaded!(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
-	"print[0]" -> "model loaded!(0)"	[label=print];
+	"print[130/4]" -> "model loaded!(0)"	[label=print];
 	"train_data(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "train_data(0)"	[label=assignedFrom];
 	"train(0)$0" -> "500(0)"	[label=assignedFrom];
@@ -183,11 +183,11 @@ at 0x12f85ec70>](0)"	[label=input_data];
 	"tf(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"tf(0)" -> tensorflow	[label=assignedFrom];
 	"tf(0)$0" -> "tf(0)"	[label=reset_default_graph];
-	"[<_ast.Constant object at 0x12f89f340>, <_ast.Name object at 0x12f89f580>, <_ast.Name object at 0x12f89f2b0>, <_ast.Constant object \
-at 0x12f89f0a0>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c09613a0>, <_ast.Name object at 0x7fd4c0961250>, <_ast.Name object at 0x7fd4c0961400>, <_ast.Constant \
+object at 0x7fd4c09618e0>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"convnet(0)$9" -> "input(0)"	[label=input_data];
-	"convnet(0)$9" -> "[<_ast.Constant object at 0x12f89f340>, <_ast.Name object at 0x12f89f580>, <_ast.Name object at 0x12f89f2b0>, <_ast.Constant object \
-at 0x12f89f0a0>](0)"	[label=input_data];
+	"convnet(0)$9" -> "[<_ast.Constant object at 0x7fd4c09613a0>, <_ast.Name object at 0x7fd4c0961250>, <_ast.Name object at 0x7fd4c0961400>, <_ast.Constant \
+object at 0x7fd4c09618e0>](0)"	[label=input_data];
 	"convnet(0)$10" -> "32(0)"	[label=conv_2d];
 	"convnet(0)$10" -> "5(0)"	[label=conv_2d];
 	"convnet(0)$10" -> "relu(0)"	[label=conv_2d];
@@ -242,6 +242,7 @@ at 0x12f89f0a0>](0)"	[label=input_data];
 	"model(0)$3" -> "convnet(0)$25"	[label=DNN];
 	"model(0)$4" -> "MODEL_NAME(0)$0"	[label=load];
 	"model(0)$4" -> "model(0)$3"	[label=load];
+	"print[213/4]" -> "model loaded!(0)"	[label=print];
 	"train(0)$1" -> "train_data(0)"	[label=assignedFrom];
 	"train(0)$1" -> "500(0)"	[label=assignedFrom];
 	"test(0)$1" -> "train_data(0)"	[label=assignedFrom];
@@ -305,8 +306,8 @@ at 0x12f89f0a0>](0)"	[label=input_data];
 	"data(0)$0" -> "img_data(0)$0"	[label=reshape];
 	"model_out(0)$0" -> "0(0)"	[label=assignedFrom];
 	"model_out(0)$0" -> "model(0)$6"	[label=assignedFrom];
-	"model_out(0)$0" -> "[<_ast.Name object at 0x12f89c250>](0)"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12f89c250>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
+	"model_out(0)$0" -> "[<_ast.Name object at 0x7fd5008321f0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008321f0>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"Dog(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"str_label(0)$0" -> "Dog(0)"	[label=assignedFrom];
 	"Cat(0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
@@ -337,8 +338,8 @@ at 0x12f89f0a0>](0)"	[label=input_data];
 	"data(0)$1" -> "img_data(0)$1"	[label=reshape];
 	"model_out(0)$1" -> "0(0)"	[label=assignedFrom];
 	"model_out(0)$1" -> "model(0)$6"	[label=assignedFrom];
-	"model_out(0)$1" -> "[<_ast.Name object at 0x12f9a66a0>](0)"	[label=assignedFrom];
-	"[<_ast.Name object at 0x12f9a66a0>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
+	"model_out(0)$1" -> "[<_ast.Name object at 0x7fd5009a8370>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5009a8370>](0)" -> "full-classification-example-with-convnet.ipynb"	[label=appearsIn];
 	"f(0)$1" -> "1(0)"	[label=write];
 	"f(0)$1" -> "f(0)$0"	[label=write];
 	"f(0)$1" -> "img_num(0)$1"	[label=write];

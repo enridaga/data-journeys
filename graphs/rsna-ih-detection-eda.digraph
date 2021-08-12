@@ -15,12 +15,8 @@ strict digraph "" {
 	"HTML(0)" -> HTML	[label=assignedFrom];
 	"<iframe width=\"800\" height=\"500\" src=\"https://www.youtube.com/embed/Kb_wzb7-rvE\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
 encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
-	"HTML[0]" -> "<iframe width=\"800\" height=\"500\" src=\"https://www.youtube.com/embed/Kb_wzb7-rvE\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
+	"HTML[8/0]" -> "<iframe width=\"800\" height=\"500\" src=\"https://www.youtube.com/embed/Kb_wzb7-rvE\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
 encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[label=HTML];
-	"HTML[0]" -> "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KZld-5W99cI\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
-encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[label=HTML];
-	"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KZld-5W99cI\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
-encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
 	numpy -> "rsna-ih-detection-eda.ipynb"	[label=importedBy];
 	"np(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
 	"np(0)" -> numpy	[label=assignedFrom];
@@ -73,7 +69,7 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -
 	"Sequence(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
 	"Sequence(0)" -> Sequence	[label=assignedFrom];
 	"../input/rsna-intracranial-hemorrhage-detection/(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
-	"listdir[0]" -> "../input/rsna-intracranial-hemorrhage-detection/(0)"	[label=listdir];
+	"listdir[31/0]" -> "../input/rsna-intracranial-hemorrhage-detection/(0)"	[label=listdir];
 	"INPUT_PATH(0)$0" -> "../input/rsna-intracranial-hemorrhage-detection/(0)"	[label=assignedFrom];
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "INPUT_PATH(0)$0"	[label=read_csv];
@@ -186,7 +182,11 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -
 	"dataset(0)$0" -> "train_dir(0)$0"	[label=dcmread];
 	"dataset(0)$0" -> "ID_c5c23af94.dcm(0)"	[label=dcmread];
 	"ID_c5c23af94.dcm(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
-	"print[0]" -> "dataset(0)$0"	[label=print];
+	"print[82/0]" -> "dataset(0)$0"	[label=print];
+	"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KZld-5W99cI\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
+encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
+	"HTML[83/0]" -> "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/KZld-5W99cI\" frameborder=\"0\" allow=\"accelerometer; autoplay; \
+encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)"	[label=HTML];
 	"fig(0)$1" -> "10(0)"	[label=subplots];
 	"fig(0)$1" -> "1(0)"	[label=subplots];
 	"fig(0)$1" -> "20(0)"	[label=subplots];
@@ -204,9 +204,9 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -
 	"file(0)" -> "train_files(0)$0"	[label=iteratorOf];
 	"file(0)" -> "test_files(0)$0"	[label=iteratorOf];
 	"file(0)" -> "1000(0)"	[label=iteratorOf];
-	"file(0)" -> "[<_ast.Constant object at 0x12f87e3a0>, <_ast.Constant object at 0x12f87e3d0>, <_ast.Constant object at 0x12f87e400>](0)"	[label=iteratorOf];
+	"file(0)" -> "[<_ast.Constant object at 0x7fd50161d190>, <_ast.Constant object at 0x7fd50161d1c0>, <_ast.Constant object at 0x7fd50161d1f0>](0)"	[label=iteratorOf];
 	"1000(0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f87e3a0>, <_ast.Constant object at 0x12f87e3d0>, <_ast.Constant object at 0x12f87e400>](0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50161d190>, <_ast.Constant object at 0x7fd50161d1c0>, <_ast.Constant object at 0x7fd50161d1f0>](0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
 	"dataset(0)$1" -> "pydicom(0)"	[label=dcmread];
 	"dataset(0)$1" -> "train_dir(0)$0"	[label=dcmread];
 	"dataset(0)$1" -> "file(0)"	[label=dcmread];
@@ -462,8 +462,8 @@ encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>(0)" -
 	"ax(0)$48" -> "ax(0)$47"	[label=set_ylabel];
 	"doc_windows(0)$0" -> "pd(0)"	[label=DataFrame];
 	"doc_windows(0)$0" -> "spacing_filenames(0)$3"	[label=DataFrame];
-	"doc_windows(0)$0" -> "[<_ast.Constant object at 0x12f899a00>, <_ast.Constant object at 0x12f899a30>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f899a00>, <_ast.Constant object at 0x12f899a30>](0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
+	"doc_windows(0)$0" -> "[<_ast.Constant object at 0x7fd50161e7f0>, <_ast.Constant object at 0x7fd50161e820>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd50161e7f0>, <_ast.Constant object at 0x7fd50161e820>](0)" -> "rsna-ih-detection-eda.ipynb"	[label=appearsIn];
 	"doc_windows(0)$1" -> "window_widths(0)$1"	[label=assignedFrom];
 	"doc_windows(0)$1" -> "doc_windows(0)$0"	[label=assignedFrom];
 	"doc_windows(0)$2" -> "window_levels(0)$1"	[label=assignedFrom];

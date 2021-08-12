@@ -4,11 +4,11 @@ strict digraph "" {
 	"YouTubeVideo(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
 	"YouTubeVideo(0)" -> YouTubeVideo	[label=assignedFrom];
 	"sDG5tPtsbSA(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
-	"YouTubeVideo[0]" -> "sDG5tPtsbSA(0)"	[label=YouTubeVideo];
+	"YouTubeVideo[3/0]" -> "sDG5tPtsbSA(0)"	[label=YouTubeVideo];
+	"YouTubeVideo[3/0]" -> "800(0)"	[label=YouTubeVideo];
+	"YouTubeVideo[3/0]" -> "450(0)"	[label=YouTubeVideo];
 	"800(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
-	"YouTubeVideo[1]" -> "800(0)"	[label=YouTubeVideo];
 	"450(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
-	"YouTubeVideo[2]" -> "450(0)"	[label=YouTubeVideo];
 	"os.path" -> "tensorflow-programming.ipynb"	[label=importedBy];
 	join -> "os.path"	[label=importedBy];
 	"join(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
@@ -18,11 +18,11 @@ strict digraph "" {
 	"img_paths(0)$0" -> "join(0)"	[label=assignedFrom];
 	"img_paths(0)$0" -> "image_dir(0)$0"	[label=assignedFrom];
 	"img_paths(0)$0" -> "filename(0)"	[label=assignedFrom];
-	"img_paths(0)$0" -> "[<_ast.Constant object at 0x12f8ab370>, <_ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab3a0>, <_ast.Constant \
-object at 0x12f8ab430>](0)"	[label=assignedFrom];
+	"img_paths(0)$0" -> "[<_ast.Constant object at 0x7fd50080dc70>, <_ast.Constant object at 0x7fd50080df70>, <_ast.Constant object at 0x7fd50080d0d0>, <_\
+ast.Constant object at 0x7fd50080d940>](0)"	[label=assignedFrom];
 	"filename(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8ab370>, <_ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab3a0>, <_ast.Constant \
-object at 0x12f8ab430>](0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080dc70>, <_ast.Constant object at 0x7fd50080df70>, <_ast.Constant object at 0x7fd50080d0d0>, <_\
+ast.Constant object at 0x7fd50080d940>](0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
 	numpy -> "tensorflow-programming.ipynb"	[label=importedBy];
 	"np(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
 	"np(0)" -> numpy	[label=assignedFrom];
@@ -83,8 +83,8 @@ object at 0x12f8ab430>](0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
 	"img_path(0)" -> "tensorflow-programming.ipynb"	[label=appearsIn];
 	"img_path(0)" -> "img_paths(0)$0"	[label=iteratorOf];
 	"img_path(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"display[0]" -> "Image(0)"	[label=display];
-	"display[1]" -> "img_path(0)"	[label=display];
-	"print[0]" -> "most_likely_labels(0)$0"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
+	"display[34/4]" -> "Image(0)"	[label=display];
+	"display[34/4]" -> "img_path(0)"	[label=display];
+	"print[35/4]" -> "most_likely_labels(0)$0"	[label=print];
+	"print[35/4]" -> "i(0)"	[label=print];
 }

@@ -37,9 +37,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "capsule-kannad.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[20/8]" -> "os(0)"	[label=print];
+	"print[20/8]" -> "dirname(0)"	[label=print];
+	"print[20/8]" -> "filename(0)"	[label=print];
 	"tf(0)$1" -> "tf(0)$0"	[label=reset_default_graph];
 	"train_data(0)$0" -> "pd(0)"	[label=read_csv];
 	"train_data(0)$0" -> "/kaggle/input/Kannada-MNIST/train.csv(0)"	[label=read_csv];
@@ -72,10 +72,10 @@ digraph "" {
 	"plt(0)$4" -> "plt(0)$3"	[label=show];
 	"X(0)$0" -> "tf(0)$1"	[label=placeholder];
 	"X(0)$0" -> "X(0)$0"	[label=placeholder];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951490>, <_ast.Constant object at 0x12f951cd0>, <_ast.Constant \
-object at 0x12f9517f0>](0)"	[label=placeholder];
-	"[<_ast.Constant object at 0x12f951e80>, <_ast.Constant object at 0x12f951490>, <_ast.Constant object at 0x12f951cd0>, <_ast.Constant \
-object at 0x12f9517f0>](0)" -> "capsule-kannad.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd500832ee0>, <_\
+ast.Constant object at 0x7fd500832880>](0)"	[label=placeholder];
+	"[<_ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd500832ee0>, <_\
+ast.Constant object at 0x7fd500832880>](0)" -> "capsule-kannad.ipynb"	[label=appearsIn];
 	"filters(0)" -> "capsule-kannad.ipynb"	[label=appearsIn];
 	"conv_layer1_params(0)$0" -> "tf(0)$1"	[label=assignedFrom];
 	"conv_layer1_params(0)$0" -> "1(0)"	[label=assignedFrom];

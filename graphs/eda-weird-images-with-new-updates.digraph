@@ -52,19 +52,7 @@ digraph "" {
 	"label_df(0)$0" -> "../input/imet-2019-fgvc6/labels.csv(0)"	[label=read_csv];
 	"../input/imet-2019-fgvc6/labels.csv(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
 	"Files loaded!(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"print[0]" -> "Files loaded!(0)"	[label=print];
-	"print[0]" -> "Culture : (0)"	[label=print];
-	"print[0]" -> "Tag     : (0)"	[label=print];
-	"print[0]" -> "Unknown : (0)"	[label=print];
-	"print[0]" -> "Total   : (0)"	[label=print];
-	"print[0]" -> "LABELS OF IMAGE
-(0)"	[label=print];
-	"Culture : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"Tag     : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"Unknown : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"Total   : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"LABELS OF IMAGE
-(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[21/0]" -> "Files loaded!(0)"	[label=print];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"plt(0)$1" -> "plt(0)$0"	[label=subplot];
 	"plt(0)$1" -> "121(0)"	[label=subplot];
@@ -255,15 +243,20 @@ digraph "" {
 	"tag(0)$1" -> "tag(0)$0"	[label=Add];
 	"unknown(0)$1" -> "1(0)"	[label=Add];
 	"unknown(0)$1" -> "unknown(0)$0"	[label=Add];
-	"print[1]" -> "label_names(0)$0"	[label=print];
-	"print[1]" -> "culture(0)$1"	[label=print];
-	"print[1]" -> "tag(0)$1"	[label=print];
-	"print[1]" -> "unknown(0)$1"	[label=print];
-	"print[2]" -> "tag(0)$1"	[label=print];
-	"print[2]" -> "int(0)"	[label=print];
-	"int(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"print[3]" -> "l(0)"	[label=print];
-	"print[3]" -> "unknown(0)$1"	[label=print];
+	"Culture : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[107/0]" -> "culture(0)$1"	[label=print];
+	"print[107/0]" -> "Culture : (0)"	[label=print];
+	"Tag     : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[108/0]" -> "tag(0)$1"	[label=print];
+	"print[108/0]" -> "Tag     : (0)"	[label=print];
+	"Unknown : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[109/0]" -> "unknown(0)$1"	[label=print];
+	"print[109/0]" -> "Unknown : (0)"	[label=print];
+	"Total   : (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[110/0]" -> "culture(0)$1"	[label=print];
+	"print[110/0]" -> "tag(0)$1"	[label=print];
+	"print[110/0]" -> "unknown(0)$1"	[label=print];
+	"print[110/0]" -> "Total   : (0)"	[label=print];
 	"label_sum(0)$0" -> "np(0)"	[label=sum];
 	"label_sum(0)$0" -> "0(0)"	[label=sum];
 	"label_sum(0)$0" -> "train_labels(0)$1"	[label=sum];
@@ -374,15 +367,16 @@ digraph "" {
 	"ax(0)$0" -> "num_labels(0)$1"	[label=countplot];
 	"ax1(0)$1" -> "df_train(0)$2"	[label=annotate];
 	"ax1(0)$1" -> "0(0)"	[label=annotate];
-	"ax1(0)$1" -> "int(0)"	[label=annotate];
 	"ax1(0)$1" -> "ax1(0)$0"	[label=annotate];
 	"ax1(0)$1" -> "p(0)"	[label=annotate];
+	"ax1(0)$1" -> "int(0)"	[label=annotate];
 	"ax1(0)$1" -> "
 (0)"	[label=annotate];
 	"ax1(0)$1" -> "100(0)"	[label=annotate];
 	"ax1(0)$1" -> ".2f(0)"	[label=annotate];
 	"ax1(0)$1" -> "\%(0)"	[label=annotate];
 	"ax1(0)$1" -> "2.0(0)"	[label=annotate];
+	"int(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
 	"
 (0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
 	"100(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
@@ -403,9 +397,9 @@ digraph "" {
 	"plt(0)$52" -> "plt(0)$51"	[label=yticks];
 	"ax2(0)$1" -> "df_train(0)$2"	[label=annotate];
 	"ax2(0)$1" -> "0(0)"	[label=annotate];
-	"ax2(0)$1" -> "int(0)"	[label=annotate];
 	"ax2(0)$1" -> "p(0)"	[label=annotate];
 	"ax2(0)$1" -> "ax2(0)$0"	[label=annotate];
+	"ax2(0)$1" -> "int(0)"	[label=annotate];
 	"ax2(0)$1" -> "
 (0)"	[label=annotate];
 	"ax2(0)$1" -> "100(0)"	[label=annotate];
@@ -445,23 +439,26 @@ digraph "" {
 	"img(0)$3" -> "train_path(0)$0"	[label=open];
 	"img(0)$3" -> ".png(0)"	[label=open];
 	"img(0)$3" -> "img_w_11_labels_path(0)$0"	[label=open];
-	"print[4]" -> "l(0)"	[label=print];
-	"sorted(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"print[5]" -> "sorted(0)"	[label=print];
-	"print[6]" -> "int(0)"	[label=print];
-	"print[7]" -> "l(0)"	[label=print];
-	"print[8]" -> "l(0)"	[label=print];
-	"print[9]" -> "img_labels(0)$0"	[label=print];
-	"print[10]" -> "
+	"LABELS OF IMAGE
+(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"print[199/0]" -> "label_names(0)$0"	[label=print];
+	"print[199/0]" -> "l(0)"	[label=print];
+	"print[199/0]" -> "int(0)"	[label=print];
+	"print[199/0]" -> "
 (0)"	[label=print];
+	"print[199/0]" -> "img_labels(0)$0"	[label=print];
+	"print[199/0]" -> "LABELS OF IMAGE
+(0)"	[label=print];
+	"print[199/0]" -> "sorted(0)"	[label=print];
+	"sorted(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
 	"plt(0)$58" -> "plt(0)$57"	[label=figure];
 	"plt(0)$59" -> "img(0)$3"	[label=imshow];
 	"plt(0)$59" -> "plt(0)$58"	[label=imshow];
 	"plt(0)$60" -> "off(0)"	[label=axis];
 	"plt(0)$60" -> "plt(0)$59"	[label=axis];
 	"plt(0)$61" -> "plt(0)$60"	[label=show];
-	"[<_ast.Constant object at 0x12f88e2e0>, <_ast.Constant object at 0x12f88e310>, <_ast.Constant object at 0x12f88e340>](0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"pal(0)$0" -> "[<_ast.Constant object at 0x12f88e2e0>, <_ast.Constant object at 0x12f88e310>, <_ast.Constant object at 0x12f88e340>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500850f70>, <_ast.Constant object at 0x7fd500850fa0>, <_ast.Constant object at 0x7fd500850fd0>](0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"pal(0)$0" -> "[<_ast.Constant object at 0x7fd500850f70>, <_ast.Constant object at 0x7fd500850fa0>, <_ast.Constant object at 0x7fd500850fd0>](0)"	[label=assignedFrom];
 	"plt(0)$62" -> "plt(0)$61"	[label=figure];
 	"plt(0)$63" -> "1(0)"	[label=subplot];
 	"plt(0)$63" -> "2(0)"	[label=subplot];
@@ -623,8 +620,8 @@ digraph "" {
 	"plt(0)$94" -> "Edge Only(0)"	[label=title];
 	"Edge Only(0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
 	"plt(0)$95" -> "plt(0)$94"	[label=show];
-	"[<_ast.Constant object at 0x12fa95790>, <_ast.Constant object at 0x12fa958b0>, <_ast.Constant object at 0x12fa95940>](0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
-	"pal(0)$1" -> "[<_ast.Constant object at 0x12fa95790>, <_ast.Constant object at 0x12fa958b0>, <_ast.Constant object at 0x12fa95940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500828220>, <_ast.Constant object at 0x7fd500828400>, <_ast.Constant object at 0x7fd5008283d0>](0)" -> "eda-weird-images-with-new-updates.ipynb"	[label=appearsIn];
+	"pal(0)$1" -> "[<_ast.Constant object at 0x7fd500828220>, <_ast.Constant object at 0x7fd500828400>, <_ast.Constant object at 0x7fd5008283d0>](0)"	[label=assignedFrom];
 	"plt(0)$96" -> "plt(0)$95"	[label=figure];
 	"plt(0)$97" -> "1(0)"	[label=subplot];
 	"plt(0)$97" -> "2(0)"	[label=subplot];

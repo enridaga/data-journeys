@@ -35,11 +35,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f989a00>, <_ast.Constant object at 0x12f989fa0>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f989a00>, <_ast.Constant object at 0x12f989fa0>](0)"	[label=print];
+	"print[36/0]" -> "check_output(0)"	[label=print];
+	"print[36/0]" -> "[<_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant object at 0x7fd4c048e610>](0)"	[label=print];
+	"print[36/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant object at 0x7fd4c048e610>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"image_id(1)" -> "read_image_labels[0]"	[label=_argToVar];
 	"image_file(1)$0" -> "image_id(1)"	[label=format];
 	"image_file(1)$0" -> "../input/stage1_train/{}/images/{}.png(1)"	[label=format];
@@ -116,8 +116,8 @@ digraph "" {
 	"label(2)$2" -> "label(2)$1"	[label=assignedFrom];
 	"image_ids(0)$0" -> "check_output(0)"	[label=split];
 	"image_ids(0)$0" -> "utf8(0)"	[label=split];
-	"image_ids(0)$0" -> "[<_ast.Constant object at 0x12f957fa0>, <_ast.Constant object at 0x12f957880>](0)"	[label=split];
-	"[<_ast.Constant object at 0x12f957fa0>, <_ast.Constant object at 0x12f957880>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
+	"image_ids(0)$0" -> "[<_ast.Constant object at 0x7fd5008323d0>, <_ast.Constant object at 0x7fd500832250>](0)"	[label=split];
+	"[<_ast.Constant object at 0x7fd5008323d0>, <_ast.Constant object at 0x7fd500832250>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
 	"image_id(0)$0" -> "random(0)"	[label=assignedFrom];
 	"image_id(0)$0" -> "image_ids(0)$0"	[label=assignedFrom];
 	"image_id(0)$0" -> "0(0)"	[label=assignedFrom];
@@ -211,184 +211,184 @@ digraph "" {
 	"shutil(4)$1" -> "../input/stage1_train/{}/augs_masks/(4)"	[label=rmtree];
 	"image_ids(0)$1" -> "check_output(0)"	[label=split];
 	"image_ids(0)$1" -> "utf8(0)"	[label=split];
-	"image_ids(0)$1" -> "[<_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4fa30>](0)"	[label=split];
-	"[<_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4fa30>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
+	"image_ids(0)$1" -> "[<_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0550>](0)"	[label=split];
+	"[<_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0550>](0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
 	"10(0)" -> "data-augmentation-and-tensorflow-u-net.ipynb"	[label=appearsIn];
 	"split_num(0)$0" -> "10(0)"	[label=assignedFrom];
 	"name(5)" -> "get_variable[0]"	[label=_argToVar];
 	"shape(5)" -> "get_variable[1]"	[label=_argToVar];
 	"X(6)" -> "UNet[0]"	[label=_argToVar];
 	"W1_1(6)$0" -> "W1_1(6)"	[label=get_variable];
-	"W1_1(6)$0" -> "[<_ast.Constant object at 0x12fc4f8e0>, <_ast.Constant object at 0x12fc4fb80>, <_ast.Constant object at 0x12fc4f9d0>, <_ast.Constant \
-object at 0x12fc4f6a0>](6)"	[label=get_variable];
+	"W1_1(6)$0" -> "[<_ast.Constant object at 0x7fd4d0583bb0>, <_ast.Constant object at 0x7fd4d0583d00>, <_ast.Constant object at 0x7fd4d0583a30>, <_\
+ast.Constant object at 0x7fd4d0583d30>](6)"	[label=get_variable];
 	"Z1(6)$0" -> "X(6)"	[label=conv2d];
 	"Z1(6)$0" -> "W1_1(6)$0"	[label=conv2d];
 	"Z1(6)$0" -> "tf(6)"	[label=conv2d];
-	"Z1(6)$0" -> "[<_ast.Constant object at 0x12fc4f880>, <_ast.Constant object at 0x12fc4f820>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant \
-object at 0x12fc4f7f0>](6)"	[label=conv2d];
+	"Z1(6)$0" -> "[<_ast.Constant object at 0x7fd4d0583700>, <_ast.Constant object at 0x7fd4d0583cd0>, <_ast.Constant object at 0x7fd4d0583730>, <_\
+ast.Constant object at 0x7fd4d0583850>](6)"	[label=conv2d];
 	"Z1(6)$0" -> "SAME(6)"	[label=conv2d];
 	"A1(6)$0" -> "Z1(6)$0"	[label=relu];
 	"A1(6)$0" -> "tf(6)"	[label=relu];
 	"W1_2(6)$0" -> "W1_2(6)"	[label=get_variable];
-	"W1_2(6)$0" -> "[<_ast.Constant object at 0x12fc204c0>, <_ast.Constant object at 0x12fc201c0>, <_ast.Constant object at 0x12fc20400>, <_ast.Constant \
-object at 0x12fc202e0>](6)"	[label=get_variable];
+	"W1_2(6)$0" -> "[<_ast.Constant object at 0x7fd4d0583dc0>, <_ast.Constant object at 0x7fd4d0583130>, <_ast.Constant object at 0x7fd4d0583040>, <_\
+ast.Constant object at 0x7fd4d0583670>](6)"	[label=get_variable];
 	"Z2(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z2(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z2(6)$0" -> "A1(6)$0"	[label=conv2d];
 	"Z2(6)$0" -> "W1_2(6)$0"	[label=conv2d];
-	"Z2(6)$0" -> "[<_ast.Constant object at 0x12fc206a0>, <_ast.Constant object at 0x12fc201f0>, <_ast.Constant object at 0x12fc20580>, <_ast.Constant \
-object at 0x12fc20220>](6)"	[label=conv2d];
+	"Z2(6)$0" -> "[<_ast.Constant object at 0x7fd500829190>, <_ast.Constant object at 0x7fd500829f40>, <_ast.Constant object at 0x7fd500829160>, <_\
+ast.Constant object at 0x7fd500829250>](6)"	[label=conv2d];
 	"A2(6)$0" -> "tf(6)"	[label=relu];
 	"A2(6)$0" -> "Z2(6)$0"	[label=relu];
 	"P1(6)$0" -> "tf(6)"	[label=max_pool];
 	"P1(6)$0" -> "SAME(6)"	[label=max_pool];
 	"P1(6)$0" -> "A2(6)$0"	[label=max_pool];
-	"P1(6)$0" -> "[<_ast.Constant object at 0x12fc20700>, <_ast.Constant object at 0x12fc20a60>, <_ast.Constant object at 0x12fc20bb0>, <_ast.Constant \
-object at 0x12fc20c40>](6)"	[label=max_pool];
-	"P1(6)$0" -> "[<_ast.Constant object at 0x12fc20970>, <_ast.Constant object at 0x12fc20c10>, <_ast.Constant object at 0x12fc207c0>, <_ast.Constant \
-object at 0x12fc20a90>](6)"	[label=max_pool];
+	"P1(6)$0" -> "[<_ast.Constant object at 0x7fd5008299a0>, <_ast.Constant object at 0x7fd500829520>, <_ast.Constant object at 0x7fd5008295b0>, <_\
+ast.Constant object at 0x7fd500829820>](6)"	[label=max_pool];
+	"P1(6)$0" -> "[<_ast.Constant object at 0x7fd500829640>, <_ast.Constant object at 0x7fd500829790>, <_ast.Constant object at 0x7fd500829c40>, <_\
+ast.Constant object at 0x7fd500829cd0>](6)"	[label=max_pool];
 	"W2_1(6)$0" -> "W2_1(6)"	[label=get_variable];
-	"W2_1(6)$0" -> "[<_ast.Constant object at 0x12fc20f40>, <_ast.Constant object at 0x12fc20eb0>, <_ast.Constant object at 0x12fc20ee0>, <_ast.Constant \
-object at 0x12fc20d60>](6)"	[label=get_variable];
+	"W2_1(6)$0" -> "[<_ast.Constant object at 0x7fd500829ca0>, <_ast.Constant object at 0x7fd500829d00>, <_ast.Constant object at 0x7fd5008298e0>, <_\
+ast.Constant object at 0x7fd500829b20>](6)"	[label=get_variable];
 	"Z3(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z3(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z3(6)$0" -> "P1(6)$0"	[label=conv2d];
 	"Z3(6)$0" -> "W2_1(6)$0"	[label=conv2d];
-	"Z3(6)$0" -> "[<_ast.Constant object at 0x12f951d60>, <_ast.Constant object at 0x12f951b50>, <_ast.Constant object at 0x12f951df0>, <_ast.Constant \
-object at 0x12f951940>](6)"	[label=conv2d];
+	"Z3(6)$0" -> "[<_ast.Constant object at 0x7fd500829dc0>, <_ast.Constant object at 0x7fd500829d60>, <_ast.Constant object at 0x7fd500829d90>, <_\
+ast.Constant object at 0x7fd500829370>](6)"	[label=conv2d];
 	"A3(6)$0" -> "tf(6)"	[label=relu];
 	"A3(6)$0" -> "Z3(6)$0"	[label=relu];
 	"W2_2(6)$0" -> "W2_2(6)"	[label=get_variable];
-	"W2_2(6)$0" -> "[<_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f9518e0>, <_ast.Constant object at 0x12f951100>, <_ast.Constant \
-object at 0x12f951b80>](6)"	[label=get_variable];
+	"W2_2(6)$0" -> "[<_ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999ca0>, <_\
+ast.Constant object at 0x7fd500999970>](6)"	[label=get_variable];
 	"Z4(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z4(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z4(6)$0" -> "A3(6)$0"	[label=conv2d];
 	"Z4(6)$0" -> "W2_2(6)$0"	[label=conv2d];
-	"Z4(6)$0" -> "[<_ast.Constant object at 0x12f951430>, <_ast.Constant object at 0x12f951970>, <_ast.Constant object at 0x12f951070>, <_ast.Constant \
-object at 0x12f951400>](6)"	[label=conv2d];
+	"Z4(6)$0" -> "[<_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd500999ee0>, <_\
+ast.Constant object at 0x7fd500999910>](6)"	[label=conv2d];
 	"A4(6)$0" -> "tf(6)"	[label=relu];
 	"A4(6)$0" -> "Z4(6)$0"	[label=relu];
 	"P2(6)$0" -> "tf(6)"	[label=max_pool];
 	"P2(6)$0" -> "SAME(6)"	[label=max_pool];
 	"P2(6)$0" -> "A4(6)$0"	[label=max_pool];
-	"P2(6)$0" -> "[<_ast.Constant object at 0x12f951dc0>, <_ast.Constant object at 0x12f951670>, <_ast.Constant object at 0x12f9510a0>, <_ast.Constant \
-object at 0x12f951820>](6)"	[label=max_pool];
-	"P2(6)$0" -> "[<_ast.Constant object at 0x12f951520>, <_ast.Constant object at 0x12f9512b0>, <_ast.Constant object at 0x12f9511c0>, <_ast.Constant \
-object at 0x12f951a90>](6)"	[label=max_pool];
+	"P2(6)$0" -> "[<_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd500999880>, <_ast.Constant object at 0x7fd500999940>, <_\
+ast.Constant object at 0x7fd500999100>](6)"	[label=max_pool];
+	"P2(6)$0" -> "[<_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at 0x7fd500999f40>, <_ast.Constant object at 0x7fd500999430>, <_\
+ast.Constant object at 0x7fd500999460>](6)"	[label=max_pool];
 	"W3_1(6)$0" -> "W3_1(6)"	[label=get_variable];
-	"W3_1(6)$0" -> "[<_ast.Constant object at 0x12f88ac40>, <_ast.Constant object at 0x12f88a490>, <_ast.Constant object at 0x12f88a580>, <_ast.Constant \
-object at 0x12f88a220>](6)"	[label=get_variable];
+	"W3_1(6)$0" -> "[<_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at 0x7fd50080d040>, <_\
+ast.Constant object at 0x7fd50080d670>](6)"	[label=get_variable];
 	"Z5(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z5(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z5(6)$0" -> "P2(6)$0"	[label=conv2d];
 	"Z5(6)$0" -> "W3_1(6)$0"	[label=conv2d];
-	"Z5(6)$0" -> "[<_ast.Constant object at 0x12f88ad00>, <_ast.Constant object at 0x12f88a5b0>, <_ast.Constant object at 0x12f88aaf0>, <_ast.Constant \
-object at 0x12f88aee0>](6)"	[label=conv2d];
+	"Z5(6)$0" -> "[<_ast.Constant object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d6a0>, <_ast.Constant object at 0x7fd50080ddc0>, <_\
+ast.Constant object at 0x7fd50080da90>](6)"	[label=conv2d];
 	"A5(6)$0" -> "tf(6)"	[label=relu];
 	"A5(6)$0" -> "Z5(6)$0"	[label=relu];
 	"W3_2(6)$0" -> "W3_2(6)"	[label=get_variable];
-	"W3_2(6)$0" -> "[<_ast.Constant object at 0x12f88a940>, <_ast.Constant object at 0x12f88adc0>, <_ast.Constant object at 0x12f88a670>, <_ast.Constant \
-object at 0x12f88a2e0>](6)"	[label=get_variable];
+	"W3_2(6)$0" -> "[<_ast.Constant object at 0x7fd50080d430>, <_ast.Constant object at 0x7fd50080dc10>, <_ast.Constant object at 0x7fd50080dc40>, <_\
+ast.Constant object at 0x7fd50080d490>](6)"	[label=get_variable];
 	"Z6(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z6(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z6(6)$0" -> "A5(6)$0"	[label=conv2d];
 	"Z6(6)$0" -> "W3_2(6)$0"	[label=conv2d];
-	"Z6(6)$0" -> "[<_ast.Constant object at 0x12f88a8b0>, <_ast.Constant object at 0x12f88ad30>, <_ast.Constant object at 0x12f88a340>, <_ast.Constant \
-object at 0x12f88a160>](6)"	[label=conv2d];
+	"Z6(6)$0" -> "[<_ast.Constant object at 0x7fd50080d520>, <_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080d4f0>, <_\
+ast.Constant object at 0x7fd50080de20>](6)"	[label=conv2d];
 	"A6(6)$0" -> "tf(6)"	[label=relu];
 	"A6(6)$0" -> "Z6(6)$0"	[label=relu];
 	"P3(6)$0" -> "tf(6)"	[label=max_pool];
 	"P3(6)$0" -> "SAME(6)"	[label=max_pool];
 	"P3(6)$0" -> "A6(6)$0"	[label=max_pool];
-	"P3(6)$0" -> "[<_ast.Constant object at 0x12fc2f1f0>, <_ast.Constant object at 0x12fc2f220>, <_ast.Constant object at 0x12fc2f250>, <_ast.Constant \
-object at 0x12fc2f280>](6)"	[label=max_pool];
-	"P3(6)$0" -> "[<_ast.Constant object at 0x12fc2f340>, <_ast.Constant object at 0x12fc2f370>, <_ast.Constant object at 0x12fc2f3a0>, <_ast.Constant \
-object at 0x12fc2f3d0>](6)"	[label=max_pool];
+	"P3(6)$0" -> "[<_ast.Constant object at 0x7fd50080d880>, <_ast.Constant object at 0x7fd50080d100>, <_ast.Constant object at 0x7fd50080dfd0>, <_\
+ast.Constant object at 0x7fd50080d580>](6)"	[label=max_pool];
+	"P3(6)$0" -> "[<_ast.Constant object at 0x7fd500837040>, <_ast.Constant object at 0x7fd500837070>, <_ast.Constant object at 0x7fd5008370a0>, <_\
+ast.Constant object at 0x7fd5008370d0>](6)"	[label=max_pool];
 	"W4_1(6)$0" -> "W4_1(6)"	[label=get_variable];
-	"W4_1(6)$0" -> "[<_ast.Constant object at 0x12fc2f700>, <_ast.Constant object at 0x12fc2f730>, <_ast.Constant object at 0x12fc2f760>, <_ast.Constant \
-object at 0x12fc2f790>](6)"	[label=get_variable];
+	"W4_1(6)$0" -> "[<_ast.Constant object at 0x7fd500837400>, <_ast.Constant object at 0x7fd500837430>, <_ast.Constant object at 0x7fd500837460>, <_\
+ast.Constant object at 0x7fd500837490>](6)"	[label=get_variable];
 	"Z7(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z7(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z7(6)$0" -> "P3(6)$0"	[label=conv2d];
 	"Z7(6)$0" -> "W4_1(6)$0"	[label=conv2d];
-	"Z7(6)$0" -> "[<_ast.Constant object at 0x12fc2f9d0>, <_ast.Constant object at 0x12fc2fa00>, <_ast.Constant object at 0x12fc2fa30>, <_ast.Constant \
-object at 0x12fc2fa60>](6)"	[label=conv2d];
+	"Z7(6)$0" -> "[<_ast.Constant object at 0x7fd5008376d0>, <_ast.Constant object at 0x7fd500837700>, <_ast.Constant object at 0x7fd500837730>, <_\
+ast.Constant object at 0x7fd500837760>](6)"	[label=conv2d];
 	"A7(6)$0" -> "tf(6)"	[label=relu];
 	"A7(6)$0" -> "Z7(6)$0"	[label=relu];
 	"W4_2(6)$0" -> "W4_2(6)"	[label=get_variable];
-	"W4_2(6)$0" -> "[<_ast.Constant object at 0x12fc2fd90>, <_ast.Constant object at 0x12fc2fdc0>, <_ast.Constant object at 0x12fc2fdf0>, <_ast.Constant \
-object at 0x12fc2fe20>](6)"	[label=get_variable];
+	"W4_2(6)$0" -> "[<_ast.Constant object at 0x7fd500837a90>, <_ast.Constant object at 0x7fd500837ac0>, <_ast.Constant object at 0x7fd500837af0>, <_\
+ast.Constant object at 0x7fd500837b20>](6)"	[label=get_variable];
 	"Z8(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z8(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z8(6)$0" -> "A7(6)$0"	[label=conv2d];
 	"Z8(6)$0" -> "W4_2(6)$0"	[label=conv2d];
-	"Z8(6)$0" -> "[<_ast.Constant object at 0x12fc190a0>, <_ast.Constant object at 0x12fc190d0>, <_ast.Constant object at 0x12fc19100>, <_ast.Constant \
-object at 0x12fc19130>](6)"	[label=conv2d];
+	"Z8(6)$0" -> "[<_ast.Constant object at 0x7fd500837d60>, <_ast.Constant object at 0x7fd500837d90>, <_ast.Constant object at 0x7fd500837dc0>, <_\
+ast.Constant object at 0x7fd500837df0>](6)"	[label=conv2d];
 	"A8(6)$0" -> "tf(6)"	[label=relu];
 	"A8(6)$0" -> "Z8(6)$0"	[label=relu];
 	"P4(6)$0" -> "tf(6)"	[label=max_pool];
 	"P4(6)$0" -> "SAME(6)"	[label=max_pool];
 	"P4(6)$0" -> "A8(6)$0"	[label=max_pool];
-	"P4(6)$0" -> "[<_ast.Constant object at 0x12fc19520>, <_ast.Constant object at 0x12fc19550>, <_ast.Constant object at 0x12fc19580>, <_ast.Constant \
-object at 0x12fc195b0>](6)"	[label=max_pool];
-	"P4(6)$0" -> "[<_ast.Constant object at 0x12fc19670>, <_ast.Constant object at 0x12fc196a0>, <_ast.Constant object at 0x12fc196d0>, <_ast.Constant \
-object at 0x12fc19700>](6)"	[label=max_pool];
+	"P4(6)$0" -> "[<_ast.Constant object at 0x7fd500834220>, <_ast.Constant object at 0x7fd500834250>, <_ast.Constant object at 0x7fd500834280>, <_\
+ast.Constant object at 0x7fd5008342b0>](6)"	[label=max_pool];
+	"P4(6)$0" -> "[<_ast.Constant object at 0x7fd500834370>, <_ast.Constant object at 0x7fd5008343a0>, <_ast.Constant object at 0x7fd5008343d0>, <_\
+ast.Constant object at 0x7fd500834400>](6)"	[label=max_pool];
 	"W5_1(6)$0" -> "W5_1(6)"	[label=get_variable];
-	"W5_1(6)$0" -> "[<_ast.Constant object at 0x12fc19a60>, <_ast.Constant object at 0x12fc19a90>, <_ast.Constant object at 0x12fc19ac0>, <_ast.Constant \
-object at 0x12fc19af0>](6)"	[label=get_variable];
+	"W5_1(6)$0" -> "[<_ast.Constant object at 0x7fd500834760>, <_ast.Constant object at 0x7fd500834790>, <_ast.Constant object at 0x7fd5008347c0>, <_\
+ast.Constant object at 0x7fd5008347f0>](6)"	[label=get_variable];
 	"Z9(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z9(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z9(6)$0" -> "P4(6)$0"	[label=conv2d];
 	"Z9(6)$0" -> "W5_1(6)$0"	[label=conv2d];
-	"Z9(6)$0" -> "[<_ast.Constant object at 0x12fc19d30>, <_ast.Constant object at 0x12fc19d60>, <_ast.Constant object at 0x12fc19d90>, <_ast.Constant \
-object at 0x12fc19dc0>](6)"	[label=conv2d];
+	"Z9(6)$0" -> "[<_ast.Constant object at 0x7fd500834a30>, <_ast.Constant object at 0x7fd500834a60>, <_ast.Constant object at 0x7fd500834a90>, <_\
+ast.Constant object at 0x7fd500834ac0>](6)"	[label=conv2d];
 	"A9(6)$0" -> "tf(6)"	[label=relu];
 	"A9(6)$0" -> "Z9(6)$0"	[label=relu];
 	"W5_2(6)$0" -> "W5_2(6)"	[label=get_variable];
-	"W5_2(6)$0" -> "[<_ast.Constant object at 0x12fc26130>, <_ast.Constant object at 0x12fc26160>, <_ast.Constant object at 0x12fc26190>, <_ast.Constant \
-object at 0x12fc261c0>](6)"	[label=get_variable];
+	"W5_2(6)$0" -> "[<_ast.Constant object at 0x7fd500834df0>, <_ast.Constant object at 0x7fd500834e20>, <_ast.Constant object at 0x7fd500834e50>, <_\
+ast.Constant object at 0x7fd500834e80>](6)"	[label=get_variable];
 	"Z10(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z10(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z10(6)$0" -> "A9(6)$0"	[label=conv2d];
 	"Z10(6)$0" -> "W5_2(6)$0"	[label=conv2d];
-	"Z10(6)$0" -> "[<_ast.Constant object at 0x12fc26430>, <_ast.Constant object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant \
-object at 0x12fc264c0>](6)"	[label=conv2d];
+	"Z10(6)$0" -> "[<_ast.Constant object at 0x7fd50081a100>, <_ast.Constant object at 0x7fd50081a130>, <_ast.Constant object at 0x7fd50081a160>, <_\
+ast.Constant object at 0x7fd50081a190>](6)"	[label=conv2d];
 	"A10(6)$0" -> "tf(6)"	[label=relu];
 	"A10(6)$0" -> "Z10(6)$0"	[label=relu];
 	"W6_1(6)$0" -> "W6_1(6)"	[label=get_variable];
-	"W6_1(6)$0" -> "[<_ast.Constant object at 0x12fc26910>, <_ast.Constant object at 0x12fc26940>, <_ast.Constant object at 0x12fc26970>, <_ast.Constant \
-object at 0x12fc269d0>](6)"	[label=get_variable];
+	"W6_1(6)$0" -> "[<_ast.Constant object at 0x7fd50081a610>, <_ast.Constant object at 0x7fd50081a640>, <_ast.Constant object at 0x7fd50081a670>, <_\
+ast.Constant object at 0x7fd50081a6a0>](6)"	[label=get_variable];
 	"U1(6)$0" -> "tf(6)"	[label=conv2d_transpose];
 	"U1(6)$0" -> "SAME(6)"	[label=conv2d_transpose];
 	"U1(6)$0" -> "A10(6)$0"	[label=conv2d_transpose];
 	"U1(6)$0" -> "128(6)"	[label=conv2d_transpose];
 	"U1(6)$0" -> "2(6)"	[label=conv2d_transpose];
 	"U1(6)$1" -> "tf(6)"	[label=concat];
-	"U1(6)$1" -> "[<_ast.Name object at 0x12fc26eb0>, <_ast.Name object at 0x12fc26ee0>](6)"	[label=concat];
+	"U1(6)$1" -> "[<_ast.Name object at 0x7fd50081ab80>, <_ast.Name object at 0x7fd50081abb0>](6)"	[label=concat];
 	"U1(6)$1" -> "3(6)"	[label=concat];
 	"W6_2(6)$0" -> "W6_2(6)"	[label=get_variable];
-	"W6_2(6)$0" -> "[<_ast.Constant object at 0x12f894070>, <_ast.Constant object at 0x12f8940a0>, <_ast.Constant object at 0x12f8940d0>, <_ast.Constant \
-object at 0x12f894100>](6)"	[label=get_variable];
+	"W6_2(6)$0" -> "[<_ast.Constant object at 0x7fd50081ad30>, <_ast.Constant object at 0x7fd50081ad60>, <_ast.Constant object at 0x7fd50081ad90>, <_\
+ast.Constant object at 0x7fd50081adc0>](6)"	[label=get_variable];
 	"Z11(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z11(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z11(6)$0" -> "W6_1(6)$0"	[label=conv2d];
 	"Z11(6)$0" -> "U1(6)$1"	[label=conv2d];
-	"Z11(6)$0" -> "[<_ast.Constant object at 0x12f894340>, <_ast.Constant object at 0x12f894370>, <_ast.Constant object at 0x12f8943a0>, <_ast.Constant \
-object at 0x12f8943d0>](6)"	[label=conv2d];
+	"Z11(6)$0" -> "[<_ast.Constant object at 0x7fd500817040>, <_ast.Constant object at 0x7fd500817070>, <_ast.Constant object at 0x7fd5008170a0>, <_\
+ast.Constant object at 0x7fd5008170d0>](6)"	[label=conv2d];
 	"A11(6)$0" -> "tf(6)"	[label=relu];
 	"A11(6)$0" -> "Z11(6)$0"	[label=relu];
 	"Z12(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z12(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z12(6)$0" -> "W6_2(6)$0"	[label=conv2d];
 	"Z12(6)$0" -> "A11(6)$0"	[label=conv2d];
-	"Z12(6)$0" -> "[<_ast.Constant object at 0x12f894850>, <_ast.Constant object at 0x12f894880>, <_ast.Constant object at 0x12f8948b0>, <_ast.Constant \
-object at 0x12f8948e0>](6)"	[label=conv2d];
+	"Z12(6)$0" -> "[<_ast.Constant object at 0x7fd5008174f0>, <_ast.Constant object at 0x7fd500817520>, <_ast.Constant object at 0x7fd500817550>, <_\
+ast.Constant object at 0x7fd500817580>](6)"	[label=conv2d];
 	"A12(6)$0" -> "tf(6)"	[label=relu];
 	"A12(6)$0" -> "Z12(6)$0"	[label=relu];
 	"W7_1(6)$0" -> "W7_1(6)"	[label=get_variable];
-	"W7_1(6)$0" -> "[<_ast.Constant object at 0x12f894d90>, <_ast.Constant object at 0x12f894dc0>, <_ast.Constant object at 0x12f894df0>, <_ast.Constant \
-object at 0x12f894e20>](6)"	[label=get_variable];
+	"W7_1(6)$0" -> "[<_ast.Constant object at 0x7fd500817a00>, <_ast.Constant object at 0x7fd500817a30>, <_ast.Constant object at 0x7fd500817a60>, <_\
+ast.Constant object at 0x7fd500817a90>](6)"	[label=get_variable];
 	"U2(6)$0" -> "tf(6)"	[label=conv2d_transpose];
 	"U2(6)$0" -> "SAME(6)"	[label=conv2d_transpose];
 	"U2(6)$0" -> "2(6)"	[label=conv2d_transpose];
@@ -396,29 +396,29 @@ object at 0x12f894e20>](6)"	[label=get_variable];
 	"U2(6)$0" -> "64(6)"	[label=conv2d_transpose];
 	"U2(6)$1" -> "tf(6)"	[label=concat];
 	"U2(6)$1" -> "3(6)"	[label=concat];
-	"U2(6)$1" -> "[<_ast.Name object at 0x12f89e2b0>, <_ast.Name object at 0x12f89e2e0>](6)"	[label=concat];
+	"U2(6)$1" -> "[<_ast.Name object at 0x7fd500817f70>, <_ast.Name object at 0x7fd500817fa0>](6)"	[label=concat];
 	"Z13(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z13(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z13(6)$0" -> "W7_1(6)$0"	[label=conv2d];
 	"Z13(6)$0" -> "U2(6)$1"	[label=conv2d];
-	"Z13(6)$0" -> "[<_ast.Constant object at 0x12f89e550>, <_ast.Constant object at 0x12f89e580>, <_ast.Constant object at 0x12f89e5b0>, <_ast.Constant \
-object at 0x12f89e5e0>](6)"	[label=conv2d];
+	"Z13(6)$0" -> "[<_ast.Constant object at 0x7fd500819250>, <_ast.Constant object at 0x7fd500819280>, <_ast.Constant object at 0x7fd5008192b0>, <_\
+ast.Constant object at 0x7fd5008192e0>](6)"	[label=conv2d];
 	"A13(6)$0" -> "tf(6)"	[label=relu];
 	"A13(6)$0" -> "Z13(6)$0"	[label=relu];
 	"W7_2(6)$0" -> "W7_2(6)"	[label=get_variable];
-	"W7_2(6)$0" -> "[<_ast.Constant object at 0x12f89e910>, <_ast.Constant object at 0x12f89e940>, <_ast.Constant object at 0x12f89e970>, <_ast.Constant \
-object at 0x12f89e9a0>](6)"	[label=get_variable];
+	"W7_2(6)$0" -> "[<_ast.Constant object at 0x7fd5008196a0>, <_ast.Constant object at 0x7fd5008196d0>, <_ast.Constant object at 0x7fd500819730>, <_\
+ast.Constant object at 0x7fd500819760>](6)"	[label=get_variable];
 	"Z14(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z14(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z14(6)$0" -> "A13(6)$0"	[label=conv2d];
 	"Z14(6)$0" -> "W7_2(6)$0"	[label=conv2d];
-	"Z14(6)$0" -> "[<_ast.Constant object at 0x12f89ebe0>, <_ast.Constant object at 0x12f89ec10>, <_ast.Constant object at 0x12f89ec40>, <_ast.Constant \
-object at 0x12f89ec70>](6)"	[label=conv2d];
+	"Z14(6)$0" -> "[<_ast.Constant object at 0x7fd500819940>, <_ast.Constant object at 0x7fd500819970>, <_ast.Constant object at 0x7fd5008199a0>, <_\
+ast.Constant object at 0x7fd5008199d0>](6)"	[label=conv2d];
 	"A14(6)$0" -> "tf(6)"	[label=relu];
 	"A14(6)$0" -> "Z14(6)$0"	[label=relu];
 	"W8_1(6)$0" -> "W8_1(6)"	[label=get_variable];
-	"W8_1(6)$0" -> "[<_ast.Constant object at 0x12f8a5130>, <_ast.Constant object at 0x12f8a5160>, <_ast.Constant object at 0x12f8a5190>, <_ast.Constant \
-object at 0x12f8a51c0>](6)"	[label=get_variable];
+	"W8_1(6)$0" -> "[<_ast.Constant object at 0x7fd500819e80>, <_ast.Constant object at 0x7fd500819eb0>, <_ast.Constant object at 0x7fd500819ee0>, <_\
+ast.Constant object at 0x7fd500819f10>](6)"	[label=get_variable];
 	"U3(6)$0" -> "tf(6)"	[label=conv2d_transpose];
 	"U3(6)$0" -> "SAME(6)"	[label=conv2d_transpose];
 	"U3(6)$0" -> "2(6)"	[label=conv2d_transpose];
@@ -426,29 +426,29 @@ object at 0x12f8a51c0>](6)"	[label=get_variable];
 	"U3(6)$0" -> "32(6)"	[label=conv2d_transpose];
 	"U3(6)$1" -> "tf(6)"	[label=concat];
 	"U3(6)$1" -> "3(6)"	[label=concat];
-	"U3(6)$1" -> "[<_ast.Name object at 0x12f8a56d0>, <_ast.Name object at 0x12f8a5700>](6)"	[label=concat];
+	"U3(6)$1" -> "[<_ast.Name object at 0x7fd5008133d0>, <_ast.Name object at 0x7fd500813400>](6)"	[label=concat];
 	"Z15(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z15(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z15(6)$0" -> "W8_1(6)$0"	[label=conv2d];
 	"Z15(6)$0" -> "U3(6)$1"	[label=conv2d];
-	"Z15(6)$0" -> "[<_ast.Constant object at 0x12f8a5340>, <_ast.Constant object at 0x12f8a5970>, <_ast.Constant object at 0x12f8a59a0>, <_ast.Constant \
-object at 0x12f8a59d0>](6)"	[label=conv2d];
+	"Z15(6)$0" -> "[<_ast.Constant object at 0x7fd500813040>, <_ast.Constant object at 0x7fd500813670>, <_ast.Constant object at 0x7fd5008136a0>, <_\
+ast.Constant object at 0x7fd5008136d0>](6)"	[label=conv2d];
 	"A15(6)$0" -> "tf(6)"	[label=relu];
 	"A15(6)$0" -> "Z15(6)$0"	[label=relu];
 	"W8_2(6)$0" -> "W8_2(6)"	[label=get_variable];
-	"W8_2(6)$0" -> "[<_ast.Constant object at 0x12f8a5d30>, <_ast.Constant object at 0x12f8a5d60>, <_ast.Constant object at 0x12f8a5d90>, <_ast.Constant \
-object at 0x12f8a5dc0>](6)"	[label=get_variable];
+	"W8_2(6)$0" -> "[<_ast.Constant object at 0x7fd500813a30>, <_ast.Constant object at 0x7fd500813a60>, <_ast.Constant object at 0x7fd500813a90>, <_\
+ast.Constant object at 0x7fd500813ac0>](6)"	[label=get_variable];
 	"Z16(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z16(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z16(6)$0" -> "A15(6)$0"	[label=conv2d];
 	"Z16(6)$0" -> "W8_2(6)$0"	[label=conv2d];
-	"Z16(6)$0" -> "[<_ast.Constant object at 0x12f8a5fd0>, <_ast.Constant object at 0x12f89d040>, <_ast.Constant object at 0x12f89d070>, <_ast.Constant \
-object at 0x12f89d0a0>](6)"	[label=conv2d];
+	"Z16(6)$0" -> "[<_ast.Constant object at 0x7fd500813cd0>, <_ast.Constant object at 0x7fd500813d00>, <_ast.Constant object at 0x7fd500813d30>, <_\
+ast.Constant object at 0x7fd500813d60>](6)"	[label=conv2d];
 	"A16(6)$0" -> "tf(6)"	[label=relu];
 	"A16(6)$0" -> "Z16(6)$0"	[label=relu];
 	"W9_1(6)$0" -> "W9_1(6)"	[label=get_variable];
-	"W9_1(6)$0" -> "[<_ast.Constant object at 0x12f89d520>, <_ast.Constant object at 0x12f89d550>, <_ast.Constant object at 0x12f89d580>, <_ast.Constant \
-object at 0x12f89d5b0>](6)"	[label=get_variable];
+	"W9_1(6)$0" -> "[<_ast.Constant object at 0x7fd500856220>, <_ast.Constant object at 0x7fd500856280>, <_ast.Constant object at 0x7fd5008562e0>, <_\
+ast.Constant object at 0x7fd500856310>](6)"	[label=get_variable];
 	"U4(6)$0" -> "tf(6)"	[label=conv2d_transpose];
 	"U4(6)$0" -> "SAME(6)"	[label=conv2d_transpose];
 	"U4(6)$0" -> "2(6)"	[label=conv2d_transpose];
@@ -456,35 +456,35 @@ object at 0x12f89d5b0>](6)"	[label=get_variable];
 	"U4(6)$0" -> "16(6)"	[label=conv2d_transpose];
 	"U4(6)$1" -> "tf(6)"	[label=concat];
 	"U4(6)$1" -> "3(6)"	[label=concat];
-	"U4(6)$1" -> "[<_ast.Name object at 0x12f89da90>, <_ast.Name object at 0x12f89dac0>](6)"	[label=concat];
+	"U4(6)$1" -> "[<_ast.Name object at 0x7fd5008567c0>, <_ast.Name object at 0x7fd5008567f0>](6)"	[label=concat];
 	"Z17(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z17(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z17(6)$0" -> "W9_1(6)$0"	[label=conv2d];
 	"Z17(6)$0" -> "U4(6)$1"	[label=conv2d];
-	"Z17(6)$0" -> "[<_ast.Constant object at 0x12f89dd30>, <_ast.Constant object at 0x12f89dd60>, <_ast.Constant object at 0x12f89dd90>, <_ast.Constant \
-object at 0x12f89ddc0>](6)"	[label=conv2d];
+	"Z17(6)$0" -> "[<_ast.Constant object at 0x7fd500856ac0>, <_ast.Constant object at 0x7fd500856af0>, <_ast.Constant object at 0x7fd500856b20>, <_\
+ast.Constant object at 0x7fd500856b50>](6)"	[label=conv2d];
 	"A17(6)$0" -> "tf(6)"	[label=relu];
 	"A17(6)$0" -> "Z17(6)$0"	[label=relu];
 	"W9_2(6)$0" -> "W9_2(6)"	[label=get_variable];
-	"W9_2(6)$0" -> "[<_ast.Constant object at 0x12f88c130>, <_ast.Constant object at 0x12f88c160>, <_ast.Constant object at 0x12f88c190>, <_ast.Constant \
-object at 0x12f88c1c0>](6)"	[label=get_variable];
+	"W9_2(6)$0" -> "[<_ast.Constant object at 0x7fd500856e50>, <_ast.Constant object at 0x7fd500856e80>, <_ast.Constant object at 0x7fd500856eb0>, <_\
+ast.Constant object at 0x7fd500856ee0>](6)"	[label=get_variable];
 	"Z18(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z18(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z18(6)$0" -> "A17(6)$0"	[label=conv2d];
 	"Z18(6)$0" -> "W9_2(6)$0"	[label=conv2d];
-	"Z18(6)$0" -> "[<_ast.Constant object at 0x12f88c400>, <_ast.Constant object at 0x12f88c430>, <_ast.Constant object at 0x12f88c460>, <_ast.Constant \
-object at 0x12f88c490>](6)"	[label=conv2d];
+	"Z18(6)$0" -> "[<_ast.Constant object at 0x7fd50083d130>, <_ast.Constant object at 0x7fd50083d160>, <_ast.Constant object at 0x7fd50083d190>, <_\
+ast.Constant object at 0x7fd50083d1c0>](6)"	[label=conv2d];
 	"A18(6)$0" -> "tf(6)"	[label=relu];
 	"A18(6)$0" -> "Z18(6)$0"	[label=relu];
 	"W10(6)$0" -> "W10(6)"	[label=get_variable];
-	"W10(6)$0" -> "[<_ast.Constant object at 0x12f88c910>, <_ast.Constant object at 0x12f88c940>, <_ast.Constant object at 0x12f88c970>, <_ast.Constant \
-object at 0x12f88c9a0>](6)"	[label=get_variable];
+	"W10(6)$0" -> "[<_ast.Constant object at 0x7fd50083d670>, <_ast.Constant object at 0x7fd50083d6a0>, <_ast.Constant object at 0x7fd50083d6d0>, <_\
+ast.Constant object at 0x7fd50083d700>](6)"	[label=get_variable];
 	"Z19(6)$0" -> "tf(6)"	[label=conv2d];
 	"Z19(6)$0" -> "SAME(6)"	[label=conv2d];
 	"Z19(6)$0" -> "A18(6)$0"	[label=conv2d];
 	"Z19(6)$0" -> "W10(6)$0"	[label=conv2d];
-	"Z19(6)$0" -> "[<_ast.Constant object at 0x12f88cbe0>, <_ast.Constant object at 0x12f88cc10>, <_ast.Constant object at 0x12f88cc40>, <_ast.Constant \
-object at 0x12f88cc70>](6)"	[label=conv2d];
+	"Z19(6)$0" -> "[<_ast.Constant object at 0x7fd50083d940>, <_ast.Constant object at 0x7fd50083d970>, <_ast.Constant object at 0x7fd50083d9a0>, <_\
+ast.Constant object at 0x7fd50083d9d0>](6)"	[label=conv2d];
 	"A19(6)$0" -> "tf(6)"	[label=sigmoid];
 	"A19(6)$0" -> "Z19(6)$0"	[label=sigmoid];
 	"Y_pred(6)$0" -> "A19(6)$0"	[label=assignedFrom];
@@ -534,5 +534,5 @@ object at 0x12f88cc70>](6)"	[label=conv2d];
 	"model_dict(9)$0" -> "Iou(9)"	[label=assignedFrom];
 	"model_dict(9)$0" -> "Loss(9)"	[label=assignedFrom];
 	"model_dict(9)$0" -> "g(9)"	[label=assignedFrom];
-	"model_dict(9)$0" -> "[<_ast.Name object at 0x12f889070>, <_ast.Name object at 0x12f8890a0>](9)"	[label=assignedFrom];
+	"model_dict(9)$0" -> "[<_ast.Name object at 0x7fd500852d90>, <_ast.Name object at 0x7fd500852df0>](9)"	[label=assignedFrom];
 }

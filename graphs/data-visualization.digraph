@@ -12,17 +12,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "Image shape: {} | image type: {} | mask shape: {} | mask type: {}(0)"	[label=print];
-	"Image shape: {} | image type: {} | mask shape: {} | mask type: {}(0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade1c0>, <_ast.Constant object at 0x12fadea90>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12fade1c0>, <_ast.Constant object at 0x12fadea90>](0)"	[label=print];
-	"print[1]" -> "img(0)$0"	[label=print];
-	"img(0)$0" -> "image_id(0)$0"	[label=get_image_data];
-	"img(0)$0" -> "Train(0)"	[label=get_image_data];
+	"print[15/0]" -> "check_output(0)"	[label=print];
+	"print[15/0]" -> "[<_ast.Constant object at 0x7fd4c04cc5b0>, <_ast.Constant object at 0x7fd4c04ccf10>](0)"	[label=print];
+	"print[15/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04cc5b0>, <_ast.Constant object at 0x7fd4c04ccf10>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"print[2]" -> "img(0)$0"	[label=print];
-	"print[2]" -> "utf8(0)"	[label=print];
 	os -> "data-visualization.ipynb"	[label=importedBy];
 	"os(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
@@ -131,15 +125,19 @@ digraph "" {
 	"image_id(0)$0" -> "0(0)"	[label=assignedFrom];
 	"0(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"img(0)$0" -> "image_id(0)$0"	[label=get_image_data];
+	"img(0)$0" -> "Train(0)"	[label=get_image_data];
 	"Train(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"mask(0)$0" -> "image_id(0)$0"	[label=get_image_data];
 	"mask(0)$0" -> "Train_mask(0)"	[label=get_image_data];
 	"Train_mask(0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"img_masked(0)$0" -> "img(0)$0"	[label=bitwise_and];
 	"img_masked(0)$0" -> "cv2(0)"	[label=bitwise_and];
+	"img_masked(0)$0" -> "img(0)$0"	[label=bitwise_and];
 	"img_masked(0)$0" -> "mask(0)$0"	[label=bitwise_and];
-	"print[3]" -> "mask(0)$0"	[label=print];
-	"print[4]" -> "mask(0)$0"	[label=print];
+	"Image shape: {} | image type: {} | mask shape: {} | mask type: {}(0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"print[103/0]" -> "img(0)$0"	[label=print];
+	"print[103/0]" -> "mask(0)$0"	[label=print];
+	"print[103/0]" -> "Image shape: {} | image type: {} | mask shape: {} | mask type: {}(0)"	[label=print];
 	"plt(0)$1" -> "plt(0)$0"	[label=subplot];
 	"plt(0)$1" -> "131(0)"	[label=subplot];
 	"131(0)" -> "data-visualization.ipynb"	[label=appearsIn];
@@ -210,8 +208,8 @@ digraph "" {
 	"_ids(0)$0" -> "gname(0)"	[label=assignedFrom];
 	"enumerate(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"_ids(0)$1" -> "id(0)"	[label=assignedFrom];
-	"_ids(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"_ids(0)$1" -> "gname(0)"	[label=assignedFrom];
+	"_ids(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"_ids(0)$2" -> "id(0)"	[label=assignedFrom];
 	"_ids(0)$2" -> "gname(0)"	[label=assignedFrom];
 	"_ids(0)$2" -> "gb_year_make_model_trim1(0)$1"	[label=assignedFrom];
@@ -384,46 +382,35 @@ digraph "" {
 	"sns(0)" -> seaborn	[label=assignedFrom];
 	"sns(0)$0" -> "sns(0)"	[label=countplot];
 	"train_gb_year_make_model_trim1(0)$0" -> "train_metadata_csv(0)$0"	[label=groupby];
-	"train_gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x12fc4d970>, <_ast.Constant object at 0x12fc4d9a0>, <_ast.Constant object at 0x12fc4d9d0>, <_ast.Constant \
-object at 0x12fc4da00>](0)"	[label=groupby];
-	"[<_ast.Constant object at 0x12fc4d970>, <_ast.Constant object at 0x12fc4d9a0>, <_ast.Constant object at 0x12fc4d9d0>, <_ast.Constant \
-object at 0x12fc4da00>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"len[0]" -> "train_gb_year_make_model_trim1(0)$0"	[label=len];
-	"len[0]" -> "test_gb_year_make_model_trim1(0)$0"	[label=len];
-	"len[0]" -> "similar_cars(0)$1"	[label=len];
-	"len[0]" -> "gb_year_make_model_trim1(0)$0"	[label=len];
-	"len[0]" -> "similar_cars(0)$2"	[label=len];
-	"len[0]" -> "models_in_train_and_test(0)$0"	[label=len];
-	"test_gb_year_make_model_trim1(0)$0" -> "test_metadata_csv(0)$1"	[label=groupby];
-	"test_gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x12fc4bfa0>, <_ast.Constant object at 0x12fc4bfd0>, <_ast.Constant object at 0x12fc48040>, <_ast.Constant \
-object at 0x12fc48070>](0)"	[label=groupby];
-	"similar_cars(0)$1" -> "len(0)"	[label=assignedFrom];
-	"similar_cars(0)$1" -> "1(0)"	[label=assignedFrom];
-	"similar_cars(0)$1" -> "k(0)$1"	[label=assignedFrom];
-	"similar_cars(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
-	"gb_year_make_model_trim1(0)$0" -> "METADATA_CSV(0)$6"	[label=groupby];
-	"gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x12f88eb80>, <_ast.Constant object at 0x12f88ebb0>, <_ast.Constant object at 0x12f88ebe0>, <_ast.Constant \
-object at 0x12f88ec10>](0)"	[label=groupby];
-	"similar_cars(0)$2" -> "len(0)"	[label=assignedFrom];
-	"similar_cars(0)$2" -> "1(0)"	[label=assignedFrom];
-	"similar_cars(0)$2" -> "gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
-	"similar_cars(0)$2" -> "k(0)$2"	[label=assignedFrom];
-	"models_in_train_and_test(0)$0" -> "gb_year_make_model_trim1(0)$1"	[label=assignedFrom];
-	"models_in_train_and_test(0)$0" -> "k(0)$3"	[label=assignedFrom];
-	"models_in_train_and_test(0)$0" -> "cond(0)$0"	[label=assignedFrom];
+	"train_gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x7fd50082d700>, <_ast.Constant object at 0x7fd50082d730>, <_ast.Constant object at 0x7fd50082d760>, <_\
+ast.Constant object at 0x7fd50082d460>](0)"	[label=groupby];
+	"[<_ast.Constant object at 0x7fd50082d700>, <_ast.Constant object at 0x7fd50082d730>, <_ast.Constant object at 0x7fd50082d760>, <_\
+ast.Constant object at 0x7fd50082d460>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"len[188/0]" -> "train_gb_year_make_model_trim1(0)$0"	[label=len];
 	"similar_cars(0)$0" -> "len(0)"	[label=assignedFrom];
 	"similar_cars(0)$0" -> "1(0)"	[label=assignedFrom];
 	"similar_cars(0)$0" -> "k(0)$1"	[label=assignedFrom];
 	"similar_cars(0)$0" -> "train_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"gname(0)" -> "data-visualization.ipynb"	[label=appearsIn];
-	"gname(0)" -> "similar_cars(0)$1"	[label=iteratorOf];
-	"gname(0)" -> "similar_cars(0)$2"	[label=iteratorOf];
-	"gname(0)" -> "models_in_train_and_test(0)$0"	[label=iteratorOf];
 	"gname(0)" -> "similar_cars(0)$0"	[label=iteratorOf];
+	"gname(0)" -> "similar_cars(0)$1"	[label=iteratorOf];
 	"gname(0)" -> "20(0)"	[label=iteratorOf];
+	"gname(0)" -> "similar_cars(0)$2"	[label=iteratorOf];
 	"gname(0)" -> "10(0)"	[label=iteratorOf];
+	"gname(0)" -> "models_in_train_and_test(0)$0"	[label=iteratorOf];
+	"similar_cars(0)$1" -> "len(0)"	[label=assignedFrom];
+	"similar_cars(0)$1" -> "1(0)"	[label=assignedFrom];
+	"similar_cars(0)$1" -> "k(0)$1"	[label=assignedFrom];
+	"similar_cars(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"20(0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"similar_cars(0)$2" -> "len(0)"	[label=assignedFrom];
+	"similar_cars(0)$2" -> "1(0)"	[label=assignedFrom];
+	"similar_cars(0)$2" -> "k(0)$2"	[label=assignedFrom];
+	"similar_cars(0)$2" -> "gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"10(0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"models_in_train_and_test(0)$0" -> "gb_year_make_model_trim1(0)$1"	[label=assignedFrom];
+	"models_in_train_and_test(0)$0" -> "k(0)$3"	[label=assignedFrom];
+	"models_in_train_and_test(0)$0" -> "cond(0)$0"	[label=assignedFrom];
 	"_trim2(0)$0" -> "train_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"_trim2(0)$0" -> "gname(0)"	[label=assignedFrom];
 	"_trim2(0)$0" -> "trim2(0)"	[label=assignedFrom];
@@ -458,12 +445,17 @@ object at 0x12f88ec10>](0)"	[label=groupby];
 	"-(0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"test_metadata_csv(0)$1" -> "test_metadata_csv(0)$0"	[label=assignedFrom];
 	"test_metadata_csv(0)$1" -> "-(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4bfa0>, <_ast.Constant object at 0x12fc4bfd0>, <_ast.Constant object at 0x12fc48040>, <_ast.Constant \
-object at 0x12fc48070>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"test_gb_year_make_model_trim1(0)$0" -> "test_metadata_csv(0)$1"	[label=groupby];
+	"test_gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x7fd500831be0>, <_ast.Constant object at 0x7fd500831af0>, <_ast.Constant object at 0x7fd500831c10>, <_\
+ast.Constant object at 0x7fd500831c70>](0)"	[label=groupby];
+	"[<_ast.Constant object at 0x7fd500831be0>, <_ast.Constant object at 0x7fd500831af0>, <_ast.Constant object at 0x7fd500831c10>, <_\
+ast.Constant object at 0x7fd500831c70>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"len[208/0]" -> "test_gb_year_make_model_trim1(0)$0"	[label=len];
+	"len[210/0]" -> "similar_cars(0)$1"	[label=len];
 	"k(0)$2" -> "5(0)"	[label=assignedFrom];
-	"_trim2(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"_trim2(0)$1" -> "gname(0)"	[label=assignedFrom];
 	"_trim2(0)$1" -> "trim2(0)"	[label=assignedFrom];
+	"_trim2(0)$1" -> "test_gb_year_make_model_trim1(0)$0"	[label=assignedFrom];
 	"plt(0)$18" -> "plt(0)$17"	[label=figure];
 	"plt(0)$19" -> "gname(0)"	[label=suptitle];
 	"plt(0)$19" -> "{}(0)"	[label=suptitle];
@@ -503,11 +495,16 @@ object at 0x12fc48070>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
 	"METADATA_CSV(0)$5" -> "METADATA_CSV(0)$4"	[label=assignedFrom];
 	"METADATA_CSV(0)$6" -> "-(0)"	[label=assignedFrom];
 	"METADATA_CSV(0)$6" -> "METADATA_CSV(0)$5"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88eb80>, <_ast.Constant object at 0x12f88ebb0>, <_ast.Constant object at 0x12f88ebe0>, <_ast.Constant \
-object at 0x12f88ec10>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"gb_year_make_model_trim1(0)$0" -> "METADATA_CSV(0)$6"	[label=groupby];
+	"gb_year_make_model_trim1(0)$0" -> "[<_ast.Constant object at 0x7fd5008187c0>, <_ast.Constant object at 0x7fd5008187f0>, <_ast.Constant object at 0x7fd500818820>, <_\
+ast.Constant object at 0x7fd500818850>](0)"	[label=groupby];
+	"[<_ast.Constant object at 0x7fd5008187c0>, <_ast.Constant object at 0x7fd5008187f0>, <_ast.Constant object at 0x7fd500818820>, <_\
+ast.Constant object at 0x7fd500818850>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"len[233/0]" -> "gb_year_make_model_trim1(0)$0"	[label=len];
+	"len[235/0]" -> "similar_cars(0)$2"	[label=len];
 	"gb_year_make_model_trim1(0)$1" -> "0(0)"	[label=get_group];
-	"gb_year_make_model_trim1(0)$1" -> "gb_year_make_model_trim1(0)$0"	[label=get_group];
 	"gb_year_make_model_trim1(0)$1" -> "similar_cars(0)$2"	[label=get_group];
+	"gb_year_make_model_trim1(0)$1" -> "gb_year_make_model_trim1(0)$0"	[label=get_group];
 	"k(0)$3" -> "5(0)"	[label=assignedFrom];
 	"_trim2(0)$2" -> "gname(0)"	[label=assignedFrom];
 	"_trim2(0)$2" -> "trim2(0)"	[label=assignedFrom];
@@ -562,8 +559,9 @@ train={}, test={}
 	"cond(0)$0" -> "1(0)"	[label=assignedFrom];
 	"cond(0)$0" -> "gb_year_make_model_trim1(0)$1"	[label=assignedFrom];
 	"cond(0)$0" -> "k(0)$3"	[label=assignedFrom];
-	"cond(0)$0" -> "[<_ast.Constant object at 0x12f89c6a0>, <_ast.Constant object at 0x12f89c6d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89c6a0>, <_ast.Constant object at 0x12f89c6d0>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"cond(0)$0" -> "[<_ast.Constant object at 0x7fd50081f2b0>, <_ast.Constant object at 0x7fd50081f2e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081f2b0>, <_ast.Constant object at 0x7fd50081f2e0>](0)" -> "data-visualization.ipynb"	[label=appearsIn];
+	"len[257/0]" -> "models_in_train_and_test(0)$0"	[label=len];
 	"sns(0)$2" -> "sns(0)$1"	[label=set_style];
 	"sns(0)$2" -> "False(0)"	[label=set_style];
 	"sns(0)$2" -> "whitegrid(0)"	[label=set_style];

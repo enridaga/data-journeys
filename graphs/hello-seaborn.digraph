@@ -10,7 +10,7 @@ strict digraph "" {
 	"sns(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
 	"sns(0)" -> seaborn	[label=assignedFrom];
 	"Setup Complete(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
-	"print[0]" -> "Setup Complete(0)"	[label=print];
+	"print[12/0]" -> "Setup Complete(0)"	[label=print];
 	"../input/fifa.csv(0)" -> "hello-seaborn.ipynb"	[label=appearsIn];
 	"fifa_filepath(0)$0" -> "../input/fifa.csv(0)"	[label=assignedFrom];
 	"fifa_data(0)$0" -> "pd(0)$0"	[label=read_csv];

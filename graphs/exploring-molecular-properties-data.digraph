@@ -40,21 +40,11 @@ digraph "" {
 	"../input/test.csv(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"The training set has shape {}(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"print[0]" -> "The training set has shape {}(0)"	[label=print];
-	"print[0]" -> "The test set has shape {}(0)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(0)"	[label=print];
-	"print[0]" -> "submission_csv_name(0)$0"	[label=print];
-	"print[0]" -> "Saving LGB Submission as:(0)"	[label=print];
+	"print[17/0]" -> "train_df(0)$1"	[label=print];
+	"print[17/0]" -> "The training set has shape {}(0)"	[label=print];
 	"The test set has shape {}(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"CV mean score: {0:.4f}, std: {1:.4f}.(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"submission_csv_name(0)$0" -> "np(0)"	[label=format];
-	"submission_csv_name(0)$0" -> "n_fold(0)$0"	[label=format];
-	"submission_csv_name(0)$0" -> "scores(0)$2"	[label=format];
-	"submission_csv_name(0)$0" -> "submission_lgb_{}folds_{}CV.csv(0)"	[label=format];
-	"Saving LGB Submission as:(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "test_df(0)$0"	[label=print];
-	"print[1]" -> "train_df(0)$1"	[label=print];
+	"print[18/0]" -> "test_df(0)$0"	[label=print];
+	"print[18/0]" -> "The test set has shape {}(0)"	[label=print];
 	"train_df(0)$2" -> "train_df(0)$1"	[label=plot];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
 	"fig(0)$0" -> "plt(0)$1"	[label=subplots];
@@ -190,8 +180,8 @@ digraph "" {
 	"df(2)$0" -> "pd(2)"	[label=merge];
 	"df(2)$0" -> "structures(2)"	[label=merge];
 	"df(2)$0" -> "left(2)"	[label=merge];
-	"df(2)$0" -> "[<_ast.Constant object at 0x12fc4fd90>, <_ast.JoinedStr object at 0x12fc4fc40>](2)"	[label=merge];
-	"df(2)$0" -> "[<_ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4fe50>](2)"	[label=merge];
+	"df(2)$0" -> "[<_ast.Constant object at 0x7fd4d09ae820>, <_ast.JoinedStr object at 0x7fd4d09ae940>](2)"	[label=merge];
+	"df(2)$0" -> "[<_ast.Constant object at 0x7fd4d09ae9d0>, <_ast.Constant object at 0x7fd4d09aea30>](2)"	[label=merge];
 	"df(2)$1" -> "df(2)$0"	[label=drop];
 	"df(2)$1" -> "atom_index(2)"	[label=drop];
 	"df(2)$1" -> "1(2)"	[label=drop];
@@ -215,17 +205,17 @@ digraph "" {
 	"test_df(0)$7" -> "1(0)"	[label=map_atom_info];
 	"test_df(0)$7" -> "test_df(0)$6"	[label=map_atom_info];
 	"train_p_0(0)$0" -> "train_df(0)$9"	[label=assignedFrom];
-	"train_p_0(0)$0" -> "[<_ast.Constant object at 0x12f9a4be0>, <_ast.Constant object at 0x12f9a4c10>, <_ast.Constant object at 0x12f9a4c40>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4be0>, <_ast.Constant object at 0x12f9a4c10>, <_ast.Constant object at 0x12f9a4c40>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"train_p_0(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a88e0>, <_ast.Constant object at 0x7fd4c04a8910>, <_ast.Constant object at 0x7fd4c04a8940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a88e0>, <_ast.Constant object at 0x7fd4c04a8910>, <_ast.Constant object at 0x7fd4c04a8940>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"train_p_1(0)$0" -> "train_df(0)$9"	[label=assignedFrom];
-	"train_p_1(0)$0" -> "[<_ast.Constant object at 0x12f9a4df0>, <_ast.Constant object at 0x12f9a4e20>, <_ast.Constant object at 0x12f9a4e50>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4df0>, <_ast.Constant object at 0x12f9a4e20>, <_ast.Constant object at 0x12f9a4e50>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"train_p_1(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8af0>, <_ast.Constant object at 0x7fd4c04a8b20>, <_ast.Constant object at 0x7fd4c04a8b50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a8af0>, <_ast.Constant object at 0x7fd4c04a8b20>, <_ast.Constant object at 0x7fd4c04a8b50>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"test_p_0(0)$0" -> "test_df(0)$7"	[label=assignedFrom];
-	"test_p_0(0)$0" -> "[<_ast.Constant object at 0x12f9a6040>, <_ast.Constant object at 0x12f9a6070>, <_ast.Constant object at 0x12f9a60a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a6040>, <_ast.Constant object at 0x12f9a6070>, <_ast.Constant object at 0x12f9a60a0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"test_p_0(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8d00>, <_ast.Constant object at 0x7fd4c04a8d30>, <_ast.Constant object at 0x7fd4c04a8d60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a8d00>, <_ast.Constant object at 0x7fd4c04a8d30>, <_ast.Constant object at 0x7fd4c04a8d60>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"test_p_1(0)$0" -> "test_df(0)$7"	[label=assignedFrom];
-	"test_p_1(0)$0" -> "[<_ast.Constant object at 0x12f9a6250>, <_ast.Constant object at 0x12f9a6280>, <_ast.Constant object at 0x12f9a62b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a6250>, <_ast.Constant object at 0x12f9a6280>, <_ast.Constant object at 0x12f9a62b0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"test_p_1(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8f10>, <_ast.Constant object at 0x7fd4c04a8f40>, <_ast.Constant object at 0x7fd4c04a8f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a8f10>, <_ast.Constant object at 0x7fd4c04a8f40>, <_ast.Constant object at 0x7fd4c04a8f70>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"train_df(0)$10" -> "np(0)"	[label=norm];
 	"train_df(0)$10" -> "1(0)"	[label=norm];
 	"train_df(0)$10" -> "train_df(0)$9"	[label=norm];
@@ -266,12 +256,12 @@ digraph "" {
 	"test_df(0)$10" -> "test_df(0)$9"	[label=astype];
 	"train_df(0)$13" -> "pd(0)"	[label=concat];
 	"train_df(0)$13" -> "1(0)"	[label=concat];
-	"train_df(0)$13" -> "[<_ast.Name object at 0x130bb68e0>, <_ast.Call object at 0x130bb6910>](0)"	[label=concat];
-	"[<_ast.Name object at 0x130bb68e0>, <_ast.Call object at 0x130bb6910>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"train_df(0)$13" -> "[<_ast.Name object at 0x7fd4c04a75e0>, <_ast.Call object at 0x7fd4c04a7610>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04a75e0>, <_ast.Call object at 0x7fd4c04a7610>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"test_df(0)$11" -> "pd(0)"	[label=concat];
 	"test_df(0)$11" -> "1(0)"	[label=concat];
-	"test_df(0)$11" -> "[<_ast.Name object at 0x130bb6c40>, <_ast.Call object at 0x130bb6c70>](0)"	[label=concat];
-	"[<_ast.Name object at 0x130bb6c40>, <_ast.Call object at 0x130bb6c70>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"test_df(0)$11" -> "[<_ast.Name object at 0x7fd4c04a7970>, <_ast.Call object at 0x7fd4c04a79a0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04a7970>, <_ast.Call object at 0x7fd4c04a79a0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"color_index(0)$0" -> "0(0)"	[label=assignedFrom];
 	"axes_index(0)$0" -> "0(0)"	[label=assignedFrom];
 	"fig(0)$3" -> "1(0)"	[label=subplots];
@@ -311,23 +301,23 @@ digraph "" {
 	"test_df(0)$12" -> "dist(0)"	[label=Div];
 	"test_df(0)$12" -> "mean(0)"	[label=Div];
 	"test_df(0)$12" -> "test_df(0)$12"	[label=Div];
-	"[<_ast.Constant object at 0x130bab820>, <_ast.Constant object at 0x130bab850>, <_ast.Constant object at 0x130bab880>, <_ast.Constant \
-object at 0x130bab8b0>, <_ast.Constant object at 0x130bab8e0>, <_ast.Constant object at 0x130bab910>, <_ast.Constant object at 0x130bab940>, <_\
-ast.Constant object at 0x130bab970>, <_ast.Constant object at 0x130bab9a0>, <_ast.Constant object at 0x130bab9d0>, <_ast.Constant \
-object at 0x130baba00>, <_ast.Constant object at 0x130baba30>, <_ast.Constant object at 0x130baba60>, <_ast.Constant object at 0x130baba90>, <_\
-ast.Constant object at 0x130babac0>, <_ast.Constant object at 0x130babaf0>, <_ast.Constant object at 0x130babb20>, <_ast.Constant \
-object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant object at 0x130babbb0>, <_ast.Constant object at 0x130babbe0>](\
-0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"FEATURES(0)$0" -> "[<_ast.Constant object at 0x130bab820>, <_ast.Constant object at 0x130bab850>, <_ast.Constant object at 0x130bab880>, <_ast.Constant \
-object at 0x130bab8b0>, <_ast.Constant object at 0x130bab8e0>, <_ast.Constant object at 0x130bab910>, <_ast.Constant object at 0x130bab940>, <_\
-ast.Constant object at 0x130bab970>, <_ast.Constant object at 0x130bab9a0>, <_ast.Constant object at 0x130bab9d0>, <_ast.Constant \
-object at 0x130baba00>, <_ast.Constant object at 0x130baba30>, <_ast.Constant object at 0x130baba60>, <_ast.Constant object at 0x130baba90>, <_\
-ast.Constant object at 0x130babac0>, <_ast.Constant object at 0x130babaf0>, <_ast.Constant object at 0x130babb20>, <_ast.Constant \
-object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant object at 0x130babbb0>, <_ast.Constant object at 0x130babbe0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0981520>, <_ast.Constant object at 0x7fd4d0981580>, <_ast.Constant object at 0x7fd4d0981550>, <_\
+ast.Constant object at 0x7fd4d09815b0>, <_ast.Constant object at 0x7fd4d09815e0>, <_ast.Constant object at 0x7fd4d0981610>, <_ast.Constant \
+object at 0x7fd4d0981640>, <_ast.Constant object at 0x7fd4d0981670>, <_ast.Constant object at 0x7fd4d09816a0>, <_ast.Constant object \
+at 0x7fd4d09816d0>, <_ast.Constant object at 0x7fd4d0981700>, <_ast.Constant object at 0x7fd4d0981730>, <_ast.Constant object at \
+0x7fd4d0981760>, <_ast.Constant object at 0x7fd4d0981790>, <_ast.Constant object at 0x7fd4d09817c0>, <_ast.Constant object at 0x7fd4d09817f0>, <_\
+ast.Constant object at 0x7fd4d0981820>, <_ast.Constant object at 0x7fd4d0981850>, <_ast.Constant object at 0x7fd4d0981880>, <_ast.Constant \
+object at 0x7fd4d09818e0>, <_ast.Constant object at 0x7fd4d0981910>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"FEATURES(0)$0" -> "[<_ast.Constant object at 0x7fd4d0981520>, <_ast.Constant object at 0x7fd4d0981580>, <_ast.Constant object at 0x7fd4d0981550>, <_\
+ast.Constant object at 0x7fd4d09815b0>, <_ast.Constant object at 0x7fd4d09815e0>, <_ast.Constant object at 0x7fd4d0981610>, <_ast.Constant \
+object at 0x7fd4d0981640>, <_ast.Constant object at 0x7fd4d0981670>, <_ast.Constant object at 0x7fd4d09816a0>, <_ast.Constant object \
+at 0x7fd4d09816d0>, <_ast.Constant object at 0x7fd4d0981700>, <_ast.Constant object at 0x7fd4d0981730>, <_ast.Constant object at \
+0x7fd4d0981760>, <_ast.Constant object at 0x7fd4d0981790>, <_ast.Constant object at 0x7fd4d09817c0>, <_ast.Constant object at 0x7fd4d09817f0>, <_\
+ast.Constant object at 0x7fd4d0981820>, <_ast.Constant object at 0x7fd4d0981850>, <_ast.Constant object at 0x7fd4d0981880>, <_ast.Constant \
+object at 0x7fd4d09818e0>, <_ast.Constant object at 0x7fd4d0981910>](0)"	[label=assignedFrom];
 	"TARGET(0)$0" -> "scalar_coupling_constant(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130babd30>, <_ast.Constant object at 0x130babd60>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"CAT_FEATS(0)$0" -> "[<_ast.Constant object at 0x130babd30>, <_ast.Constant object at 0x130babd60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0981a60>, <_ast.Constant object at 0x7fd4d0981a90>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"CAT_FEATS(0)$0" -> "[<_ast.Constant object at 0x7fd4d0981a60>, <_ast.Constant object at 0x7fd4d0981a90>](0)"	[label=assignedFrom];
 	"2000(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"N_ESTIMATORS(0)$0" -> "2000(0)"	[label=assignedFrom];
 	"500(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
@@ -467,17 +457,18 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"fold_importance(0)$3" -> "fold_importance(0)$2"	[label=Add];
 	"feature_importance(0)$1" -> "pd(0)"	[label=concat];
 	"feature_importance(0)$1" -> "0(0)"	[label=concat];
-	"feature_importance(0)$1" -> "[<_ast.Name object at 0x130bbceb0>, <_ast.Name object at 0x130bbcf10>](0)"	[label=concat];
-	"[<_ast.Name object at 0x130bbceb0>, <_ast.Name object at 0x130bbcf10>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"feature_importance(0)$1" -> "[<_ast.Name object at 0x7fd4d09abbe0>, <_ast.Name object at 0x7fd4d09abc10>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4d09abbe0>, <_ast.Name object at 0x7fd4d09abc10>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"prediction(0)$1" -> "folds(0)$0"	[label=Div];
 	"prediction(0)$1" -> "prediction(0)$0"	[label=Div];
 	"scores(0)$1" -> "mean_absolute_error(0)"	[label=append];
 	"scores(0)$1" -> "scores(0)$0"	[label=append];
 	"scores(0)$1" -> "y_valid(0)$0"	[label=append];
 	"scores(0)$1" -> "y_pred_valid(0)$0"	[label=append];
-	"print[2]" -> "scores(0)$1"	[label=print];
-	"print[3]" -> "np(0)"	[label=print];
-	"print[4]" -> "scores(0)$1"	[label=print];
+	"CV mean score: {0:.4f}, std: {1:.4f}.(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"print[241/8]" -> "np(0)"	[label=print];
+	"print[241/8]" -> "scores(0)$1"	[label=print];
+	"print[241/8]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(0)"	[label=print];
 	"oof(0)$1" -> "1(0)"	[label=reshape];
 	"oof(0)$1" -> "oof(0)$0"	[label=reshape];
 	"oof(0)$1" -> "y_pred_valid(0)$0"	[label=reshape];
@@ -488,6 +479,10 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"prediction(0)$2" -> "y_pred(0)$0"	[label=Add];
 	"prediction(0)$2" -> "prediction(0)$1"	[label=Add];
 	"submission_lgb_{}folds_{}CV.csv(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"submission_csv_name(0)$0" -> "np(0)"	[label=format];
+	"submission_csv_name(0)$0" -> "n_fold(0)$0"	[label=format];
+	"submission_csv_name(0)$0" -> "scores(0)$2"	[label=format];
+	"submission_csv_name(0)$0" -> "submission_lgb_{}folds_{}CV.csv(0)"	[label=format];
 	"oof_lgb_{}folds_{}CV.csv(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"oof_csv_name(0)$0" -> "np(0)"	[label=format];
 	"oof_csv_name(0)$0" -> "n_fold(0)$0"	[label=format];
@@ -498,6 +493,9 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"fi_csv_name(0)$0" -> "n_fold(0)$0"	[label=format];
 	"fi_csv_name(0)$0" -> "scores(0)$2"	[label=format];
 	"fi_csv_name(0)$0" -> "fi_lgb_{}folds_{}CV.csv(0)"	[label=format];
+	"Saving LGB Submission as:(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"print[251/4]" -> "Saving LGB Submission as:(0)"	[label=print];
+	"print[252/4]" -> "submission_csv_name(0)$0"	[label=print];
 	"ss(0)$2" -> "pd(0)"	[label=read_csv];
 	"ss(0)$2" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"ss(0)$3" -> "prediction(0)$2"	[label=assignedFrom];
@@ -506,8 +504,8 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"ss(0)$4" -> "ss(0)$3"	[label=to_csv];
 	"ss(0)$5" -> "ss(0)$4"	[label=head];
 	"oof_df(0)$0" -> "train_df(0)$14"	[label=copy];
-	"oof_df(0)$0" -> "[<_ast.Constant object at 0x12f87e7f0>, <_ast.Constant object at 0x12f87e820>, <_ast.Constant object at 0x12f87e850>](0)"	[label=copy];
-	"[<_ast.Constant object at 0x12f87e7f0>, <_ast.Constant object at 0x12f87e820>, <_ast.Constant object at 0x12f87e850>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"oof_df(0)$0" -> "[<_ast.Constant object at 0x7fd4d09a3520>, <_ast.Constant object at 0x7fd4d09a3550>, <_ast.Constant object at 0x7fd4d09a3580>](0)"	[label=copy];
+	"[<_ast.Constant object at 0x7fd4d09a3520>, <_ast.Constant object at 0x7fd4d09a3550>, <_ast.Constant object at 0x7fd4d09a3580>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"oof_df(0)$1" -> "oof(0)$1"	[label=assignedFrom];
 	"oof_df(0)$1" -> "oof_df(0)$0"	[label=assignedFrom];
 	"oof_df(0)$2" -> "oof_csv_name(0)$0"	[label=to_csv];
@@ -518,11 +516,11 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"feature_importance(0)$3" -> "feature_importance(0)$2"	[label=Div];
 	"cols(0)$0" -> "False(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "feature_importance(0)$3"	[label=assignedFrom];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x12f890400>, <_ast.Constant object at 0x12f890460>](0)"	[label=assignedFrom];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd4d09a3f70>, <_ast.Constant object at 0x7fd4d09a3fa0>](0)"	[label=assignedFrom];
 	"cols(0)$0" -> "feature(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "importance(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "50(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f890400>, <_ast.Constant object at 0x12f890460>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d09a3f70>, <_ast.Constant object at 0x7fd4d09a3fa0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"feature(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"importance(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"50(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
@@ -549,19 +547,19 @@ object at 0x130babb50>, <_ast.Constant object at 0x130babb80>, <_ast.Constant ob
 	"RUN_CATBOOST_CV(0)$0" -> "False(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "scalar_coupling_constant(0)"	[label=assignedFrom];
 	"labels(0)$0" -> "train_df(0)$14"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a12e0>, <_ast.Constant object at 0x12f8a1310>, <_ast.Constant object at 0x12f8a1340>, <_ast.Constant \
-object at 0x12f8a1370>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"cat_features(0)$0" -> "[<_ast.Constant object at 0x12f8a12e0>, <_ast.Constant object at 0x12f8a1310>, <_ast.Constant object at 0x12f8a1340>, <_ast.Constant \
-object at 0x12f8a1370>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082efd0>, <_ast.Constant object at 0x7fd50082e9a0>, <_ast.Constant object at 0x7fd50081f040>, <_\
+ast.Constant object at 0x7fd50081f070>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"cat_features(0)$0" -> "[<_ast.Constant object at 0x7fd50082efd0>, <_ast.Constant object at 0x7fd50082e9a0>, <_ast.Constant object at 0x7fd50081f040>, <_\
+ast.Constant object at 0x7fd50081f070>](0)"	[label=assignedFrom];
 	"cv_data(0)$0" -> "train_df(0)$14"	[label=assignedFrom];
-	"cv_data(0)$0" -> "[<_ast.Constant object at 0x12f8a14c0>, <_ast.Constant object at 0x12f8a14f0>, <_ast.Constant object at 0x12f8a1520>, <_ast.Constant \
-object at 0x12f8a1550>, <_ast.Constant object at 0x12f8a1580>, <_ast.Constant object at 0x12f8a15b0>, <_ast.Constant object at 0x12f8a15e0>, <_\
-ast.Constant object at 0x12f8a1610>, <_ast.Constant object at 0x12f8a1640>, <_ast.Constant object at 0x12f8a1670>, <_ast.Constant \
-object at 0x12f8a16a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a14c0>, <_ast.Constant object at 0x12f8a14f0>, <_ast.Constant object at 0x12f8a1520>, <_ast.Constant \
-object at 0x12f8a1550>, <_ast.Constant object at 0x12f8a1580>, <_ast.Constant object at 0x12f8a15b0>, <_ast.Constant object at 0x12f8a15e0>, <_\
-ast.Constant object at 0x12f8a1610>, <_ast.Constant object at 0x12f8a1640>, <_ast.Constant object at 0x12f8a1670>, <_ast.Constant \
-object at 0x12f8a16a0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"cv_data(0)$0" -> "[<_ast.Constant object at 0x7fd50081f1c0>, <_ast.Constant object at 0x7fd50081f1f0>, <_ast.Constant object at 0x7fd50081f220>, <_\
+ast.Constant object at 0x7fd50081f250>, <_ast.Constant object at 0x7fd50081f280>, <_ast.Constant object at 0x7fd50081f2b0>, <_ast.Constant \
+object at 0x7fd50081f2e0>, <_ast.Constant object at 0x7fd50081f310>, <_ast.Constant object at 0x7fd50081f340>, <_ast.Constant object \
+at 0x7fd50081f370>, <_ast.Constant object at 0x7fd50081f3a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081f1c0>, <_ast.Constant object at 0x7fd50081f1f0>, <_ast.Constant object at 0x7fd50081f220>, <_\
+ast.Constant object at 0x7fd50081f250>, <_ast.Constant object at 0x7fd50081f280>, <_ast.Constant object at 0x7fd50081f2b0>, <_ast.Constant \
+object at 0x7fd50081f2e0>, <_ast.Constant object at 0x7fd50081f310>, <_ast.Constant object at 0x7fd50081f340>, <_ast.Constant object \
+at 0x7fd50081f370>, <_ast.Constant object at 0x7fd50081f3a0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"cv_dataset(0)$0" -> "labels(0)$0"	[label=Pool];
 	"cv_dataset(0)$0" -> "cat_features(0)$0"	[label=Pool];
 	"cv_dataset(0)$0" -> "cv_data(0)$0"	[label=Pool];
@@ -601,17 +599,19 @@ object at 0x12f8a16a0>](0)" -> "exploring-molecular-properties-data.ipynb"	[labe
 	"CatBoostRegressor(0)" -> CatBoostRegressor	[label=assignedFrom];
 	"200000(0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
 	"ITERATIONS(0)$1" -> "200000(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89ca90>, <_ast.Constant object at 0x12f89cac0>, <_ast.Constant object at 0x12f89caf0>, <_ast.Constant \
-object at 0x12f89c790>, <_ast.Constant object at 0x12f89c730>, <_ast.Constant object at 0x12f89c760>, <_ast.Constant object at 0x12f89cb50>, <_\
-ast.Constant object at 0x12f89ce80>, <_ast.Constant object at 0x12f89c880>, <_ast.Constant object at 0x12f89cd00>, <_ast.Constant \
-object at 0x12f89cdf0>, <_ast.Constant object at 0x12f89ce20>, <_ast.Constant object at 0x12f89ce50>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"FEATURES(0)$1" -> "[<_ast.Constant object at 0x12f89ca90>, <_ast.Constant object at 0x12f89cac0>, <_ast.Constant object at 0x12f89caf0>, <_ast.Constant \
-object at 0x12f89c790>, <_ast.Constant object at 0x12f89c730>, <_ast.Constant object at 0x12f89c760>, <_ast.Constant object at 0x12f89cb50>, <_\
-ast.Constant object at 0x12f89ce80>, <_ast.Constant object at 0x12f89c880>, <_ast.Constant object at 0x12f89cd00>, <_ast.Constant \
-object at 0x12f89cdf0>, <_ast.Constant object at 0x12f89ce20>, <_ast.Constant object at 0x12f89ce50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500835580>, <_ast.Constant object at 0x7fd5008355b0>, <_ast.Constant object at 0x7fd5008355e0>, <_\
+ast.Constant object at 0x7fd500835610>, <_ast.Constant object at 0x7fd500835640>, <_ast.Constant object at 0x7fd500835670>, <_ast.Constant \
+object at 0x7fd5008356a0>, <_ast.Constant object at 0x7fd5008356d0>, <_ast.Constant object at 0x7fd500835700>, <_ast.Constant object \
+at 0x7fd500835730>, <_ast.Constant object at 0x7fd500835760>, <_ast.Constant object at 0x7fd500835790>, <_ast.Constant object at \
+0x7fd5008357c0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"FEATURES(0)$1" -> "[<_ast.Constant object at 0x7fd500835580>, <_ast.Constant object at 0x7fd5008355b0>, <_ast.Constant object at 0x7fd5008355e0>, <_\
+ast.Constant object at 0x7fd500835610>, <_ast.Constant object at 0x7fd500835640>, <_ast.Constant object at 0x7fd500835670>, <_ast.Constant \
+object at 0x7fd5008356a0>, <_ast.Constant object at 0x7fd5008356d0>, <_ast.Constant object at 0x7fd500835700>, <_ast.Constant object \
+at 0x7fd500835730>, <_ast.Constant object at 0x7fd500835760>, <_ast.Constant object at 0x7fd500835790>, <_ast.Constant object at \
+0x7fd5008357c0>](0)"	[label=assignedFrom];
 	"TARGET(0)$1" -> "scalar_coupling_constant(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89cfd0>, <_ast.Constant object at 0x12f89cf70>, <_ast.Constant object at 0x12f89cfa0>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
-	"CAT_FEATS(0)$1" -> "[<_ast.Constant object at 0x12f89cfd0>, <_ast.Constant object at 0x12f89cf70>, <_ast.Constant object at 0x12f89cfa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500835910>, <_ast.Constant object at 0x7fd500835940>, <_ast.Constant object at 0x7fd500835970>](0)" -> "exploring-molecular-properties-data.ipynb"	[label=appearsIn];
+	"CAT_FEATS(0)$1" -> "[<_ast.Constant object at 0x7fd500835910>, <_ast.Constant object at 0x7fd500835940>, <_ast.Constant object at 0x7fd500835970>](0)"	[label=assignedFrom];
 	"train_dataset(0)$0" -> "scalar_coupling_constant(0)"	[label=Pool];
 	"train_dataset(0)$0" -> "train_df(0)$14"	[label=Pool];
 	"train_dataset(0)$0" -> "FEATURES(0)$1"	[label=Pool];

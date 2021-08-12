@@ -1,55 +1,57 @@
 strict digraph "" {
 	node [label="\N"];
-	"http://purl.org/dj/python/lib/520815811"	[label="520815811 (google.cloud: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count"	[label="group-by-having-count"];
-	"http://purl.org/dj/python/lib/520815811" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526"	[label="893191526 (improved_df(0)$1: Preparation)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/python/lib/520815811"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#893125989"	[label="893125989 (improved_df(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#893125989"	[label=head];
-	"http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="439485418 (bigquery(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label="45809891 (10(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label="1678062168 (
-
-                 SELECT parent, COUNT(1) AS NumPosts
-
-                 FROM `bigquery-public-data.hacker_news.comments`
-
-                 \
-GROUP BY parent
-
-                 HAVING COUNT(1) > 10
-
-                 (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#687932583"	[label="687932583 (query_job(0)$1: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#893125989" -> "http://purl.org/dj/kaggle/group-by-having-count#687932583"	[label=to_dataframe];
-	"http://purl.org/dj/kaggle/group-by-having-count#439485418" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/python/lib/251003753"	[label="251003753 (bigquery: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#439485418" -> "http://purl.org/dj/python/lib/251003753"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/group-by-having-count#45809891" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1678062168" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label="395510614 (client(0)$1: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#864159051"	[label="864159051 (safe_config(0)$1: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#864159051"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#1303381713"	[label="1303381713 (query_improved(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#1303381713"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#1825900637"	[label="1825900637 (bigquery-public-data(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1825900637" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=appearsIn];
-	"http://purl.org/dj/python/lib/251003753" -> "http://purl.org/dj/python/lib/520815811"	[label=importedBy];
-	"http://purl.org/dj/kaggle/group-by-having-count#687867046"	[label="687867046 (query_job(0)$0: Reuse)"];
 	"http://purl.org/dj/kaggle/group-by-having-count#864093514"	[label="864093514 (safe_config(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#864093514"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#1172833902"	[label="1172833902 (query_popular(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#1172833902"	[label=query];
-	"http://purl.org/dj/kaggle/group-by-having-count#864093514" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=QueryJobConfig];
-	"http://purl.org/dj/kaggle/group-by-having-count#864093514" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=QueryJobConfig];
+	"http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="439485418 (bigquery(0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#864093514" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="QueryJobConfig ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label="45809891 (10(0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#864093514" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label="QueryJobConfig ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count"	[label="group-by-having-count (group-by-having-count.ipynb)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#439485418" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/251003753"	[label="251003753 (bigquery: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#439485418" -> "http://purl.org/dj/python/lib/251003753"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#45809891" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/520815811"	[label="520815811 (google.cloud: Reuse)"];
+	"http://purl.org/dj/python/lib/251003753" -> "http://purl.org/dj/python/lib/520815811"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#316146398"	[label="316146398 (table(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#654967930"	[label="654967930 (table_ref(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#316146398" -> "http://purl.org/dj/kaggle/group-by-having-count#654967930"	[label="get_table ()"];
 	"http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label="395445077 (client(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#395510614" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label=to_dataframe];
+	"http://purl.org/dj/kaggle/group-by-having-count#316146398" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label="get_table ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label="873465176 (dataset_ref(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#654967930" -> "http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label="table ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#440861672"	[label="440861672 (comments(0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#654967930" -> "http://purl.org/dj/kaggle/group-by-having-count#440861672"	[label="table ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#395445077" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="Client ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label="dataset ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1825900637"	[label="1825900637 (bigquery-public-data(0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#1825900637"	[label="dataset ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#693372172"	[label="693372172 (hacker_news(0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#693372172"	[label="dataset ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#440861672" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#893191526"	[label="893191526 (improved_df(0)$1: Preparation)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#893125989"	[label="893125989 (improved_df(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#893191526" -> "http://purl.org/dj/kaggle/group-by-having-count#893125989"	[label="head ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687932583"	[label="687932583 (query_job(0)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#893125989" -> "http://purl.org/dj/kaggle/group-by-having-count#687932583"	[label="to_dataframe ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#864159051"	[label="864159051 (safe_config(0)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#864159051"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label="395510614 (client(0)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1303381713"	[label="1303381713 (query_improved(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687932583" -> "http://purl.org/dj/kaggle/group-by-having-count#1303381713"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1578764191"	[label="1578764191 (popular_comments(0)$1: Preparation)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1578698654"	[label="1578698654 (popular_comments(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#1578698654"	[label="head ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687867046"	[label="687867046 (query_job(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1578698654" -> "http://purl.org/dj/kaggle/group-by-having-count#687867046"	[label="to_dataframe ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#864093514"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1172833902"	[label="1172833902 (query_popular(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#1172833902"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#687867046" -> "http://purl.org/dj/kaggle/group-by-having-count#395510614"	[label="query ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1825900637" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#693372172" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#864159051" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label="QueryJobConfig ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#864159051" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label="QueryJobConfig ()"];
 	"http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label="890384083 (
 
                 SELECT parent, COUNT(id)
@@ -62,25 +64,39 @@ GROUP BY parent
                 HAVING COUNT(id) > 10
 
                 (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1172833902" -> "http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/group-by-having-count#316146398"	[label="316146398 (table(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#654967930"	[label="654967930 (table_ref(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#316146398" -> "http://purl.org/dj/kaggle/group-by-having-count#654967930"	[label=get_table];
-	"http://purl.org/dj/kaggle/group-by-having-count#316146398" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label=get_table];
-	"http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label="873465176 (dataset_ref(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#654967930" -> "http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label=table];
-	"http://purl.org/dj/kaggle/group-by-having-count#440861672"	[label="440861672 (comments(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#654967930" -> "http://purl.org/dj/kaggle/group-by-having-count#440861672"	[label=table];
-	"http://purl.org/dj/kaggle/group-by-having-count#395445077" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=Client];
-	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#1825900637"	[label=dataset];
-	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label=dataset];
-	"http://purl.org/dj/kaggle/group-by-having-count#693372172"	[label="693372172 (hacker_news(0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#873465176" -> "http://purl.org/dj/kaggle/group-by-having-count#693372172"	[label=dataset];
-	"http://purl.org/dj/kaggle/group-by-having-count#440861672" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=appearsIn];
-	"http://purl.org/dj/kaggle/group-by-having-count#864159051" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=QueryJobConfig];
-	"http://purl.org/dj/kaggle/group-by-having-count#864159051" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=QueryJobConfig];
-	"http://purl.org/dj/kaggle/group-by-having-count#1303381713" -> "http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/group-by-having-count#693372172" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
+	"http://purl.org/dj/kaggle/group-by-having-count#1172833902" -> "http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#890384083" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#795411732"	[label="795411732 (query_good(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#550381020"	[label="550381020 (
+
+             SELECT parent, COUNT(id)
+
+             FROM `bigquery-public-data.hacker_news.comments`
+
+             \
+GROUP BY parent
+
+             (0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#795411732" -> "http://purl.org/dj/kaggle/group-by-having-count#550381020"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#550381020" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#395510614" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label="to_dataframe ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#476447676"	[label="476447676 (dataset(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#476447676" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label="get_dataset ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#476447676" -> "http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label="get_dataset ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label="1678062168 (
+
+                 SELECT parent, COUNT(1) AS NumPosts
+
+                 FROM `bigquery-public-data.hacker_news.comments`
+
+                 \
+GROUP BY parent
+
+                 HAVING COUNT(1) > 10
+
+                 (0): Reuse)"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1303381713" -> "http://purl.org/dj/kaggle/group-by-having-count#1678062168"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/520815811" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="importedBy ()"];
 	"http://purl.org/dj/kaggle/group-by-having-count#678036626"	[label="678036626 (query_bad(0)$0: Reuse)"];
 	"http://purl.org/dj/kaggle/group-by-having-count#1086466107"	[label="1086466107 (
 
@@ -92,31 +108,7 @@ GROUP BY parent
 GROUP BY parent
 
             (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#678036626" -> "http://purl.org/dj/kaggle/group-by-having-count#1086466107"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/group-by-having-count#1086466107" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191"	[label="1578764191 (popular_comments(0)$1: Preparation)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/python/lib/520815811"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#439485418"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#45809891"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578698654"	[label="1578698654 (popular_comments(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#1578698654"	[label=head];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578764191" -> "http://purl.org/dj/kaggle/group-by-having-count#890384083"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#1578698654" -> "http://purl.org/dj/kaggle/group-by-having-count#687867046"	[label=to_dataframe];
-	"http://purl.org/dj/kaggle/group-by-having-count#890384083" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/group-by-having-count#550381020"	[label="550381020 (
-
-             SELECT parent, COUNT(id)
-
-             FROM `bigquery-public-data.hacker_news.comments`
-
-             \
-GROUP BY parent
-
-             (0): Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#550381020" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label=appearsIn];
-	"http://purl.org/dj/kaggle/group-by-having-count#795411732"	[label="795411732 (query_good(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#795411732" -> "http://purl.org/dj/kaggle/group-by-having-count#550381020"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/group-by-having-count#476447676"	[label="476447676 (dataset(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/group-by-having-count#476447676" -> "http://purl.org/dj/kaggle/group-by-having-count#395445077"	[label=get_dataset];
-	"http://purl.org/dj/kaggle/group-by-having-count#476447676" -> "http://purl.org/dj/kaggle/group-by-having-count#873465176"	[label=get_dataset];
+	"http://purl.org/dj/kaggle/group-by-having-count#678036626" -> "http://purl.org/dj/kaggle/group-by-having-count#1086466107"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1086466107" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/group-by-having-count#1678062168" -> "http://purl.org/dj/kaggle/group-by-having-count"	[label="appearsIn ()"];
 }

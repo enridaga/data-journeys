@@ -26,23 +26,21 @@ strict digraph "" {
 	"col(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"col(0)" -> "df(0)$2"	[label=iteratorOf];
 	"col(0)" -> "cols_to_use(0)$0"	[label=iteratorOf];
-	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant \
-object at 0x12fc4fb50>](0)"	[label=assignedFrom];
+	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccfd0>, <_ast.Constant object at 0x7fd4c04cc3a0>, <_ast.Constant object at 0x7fd4c04cc070>, <_\
+ast.Constant object at 0x7fd4c04cc190>](0)"	[label=assignedFrom];
 	"labels(0)$1" -> "labels(0)$0"	[label=append];
 	"labels(0)$1" -> "col(0)"	[label=append];
 	"values(0)$1" -> "df(0)$2"	[label=append];
 	"values(0)$1" -> "values(0)$0"	[label=append];
 	"values(0)$1" -> "col(0)"	[label=append];
-	"print[0]" -> "col(0)"	[label=print];
-	"print[0]" -> "len(0)"	[label=print];
-	"len(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
-	"print[1]" -> "df(0)$2"	[label=print];
-	"print[1]" -> "values(0)$1"	[label=print];
+	"print[42/4]" -> "col(0)"	[label=print];
+	"print[42/4]" -> "values(0)$1"	[label=print];
+	"print[42/4]" -> "1(0)"	[label=print];
 	"1(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
-	"print[2]" -> "1(0)"	[label=print];
 	"ind(0)$0" -> "np(0)"	[label=arange];
 	"ind(0)$0" -> "labels(0)$1"	[label=arange];
 	"ind(0)$0" -> "len(0)"	[label=arange];
+	"len(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"0.9(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"width(0)$0" -> "0.9(0)"	[label=assignedFrom];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
@@ -73,8 +71,8 @@ object at 0x12fc4fb50>](0)"	[label=assignedFrom];
 	"ax(0)$4" -> "Number of missing values in each column(0)"	[label=set_title];
 	"Number of missing values in each column(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=show];
-	"[<_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant \
-object at 0x12fc4fb50>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccfd0>, <_ast.Constant object at 0x7fd4c04cc3a0>, <_ast.Constant object at 0x7fd4c04cc070>, <_\
+ast.Constant object at 0x7fd4c04cc190>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"fig(0)$1" -> "plt(0)$0"	[label=figure];
 	"fig(0)$1" -> "8(0)"	[label=figure];
 	"fig(0)$1" -> "20(0)"	[label=figure];
@@ -112,6 +110,8 @@ object at 0x12fc4fb50>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appe
 	"6(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"sns(0)$0" -> "sns(0)"	[label=countplot];
 	"plt(0)$8" -> "plt(0)$7"	[label=show];
+	"print[89/0]" -> "df(0)$2"	[label=print];
+	"print[89/0]" -> "len(0)"	[label=print];
 	"temp_df(0)$0" -> "df(0)$2"	[label=sort_values];
 	"temp_df(0)$0" -> "y(0)"	[label=sort_values];
 	"temp_df(0)$0" -> "id(0)"	[label=sort_values];
@@ -119,10 +119,10 @@ object at 0x12fc4fb50>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appe
 	"id(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"mean(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"temp_df(0)$1" -> "temp_df(0)$0"	[label=head];
-	"[<_ast.Constant object at 0x12f88ab50>, <_ast.Constant object at 0x12f88a280>, <_ast.Constant object at 0x12f88a8e0>, <_ast.Constant \
-object at 0x12f88a070>, <_ast.Constant object at 0x12f88a250>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
-	"id_to_use(0)$0" -> "[<_ast.Constant object at 0x12f88ab50>, <_ast.Constant object at 0x12f88a280>, <_ast.Constant object at 0x12f88a8e0>, <_ast.Constant \
-object at 0x12f88a070>, <_ast.Constant object at 0x12f88a250>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab790>, <_\
+ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab8e0>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
+	"id_to_use(0)$0" -> "[<_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab790>, <_\
+ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab8e0>](0)"	[label=assignedFrom];
 	"fig(0)$3" -> "8(0)"	[label=figure];
 	"fig(0)$3" -> "plt(0)$8"	[label=figure];
 	"fig(0)$3" -> "25(0)"	[label=figure];
@@ -132,10 +132,10 @@ object at 0x12f88a070>, <_ast.Constant object at 0x12f88a250>](0)"	[label=assign
 	"id_val(0)" -> "id_to_use(0)$0"	[label=iteratorOf];
 	"id_val(0)" -> "id_to_use(0)$1"	[label=iteratorOf];
 	"id_val(0)" -> "id_to_use(0)$2"	[label=iteratorOf];
-	"id_to_use(0)$1" -> "[<_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade430>, <_ast.Constant \
-object at 0x12fade0d0>, <_ast.Constant object at 0x12fadeb80>](0)"	[label=assignedFrom];
-	"id_to_use(0)$2" -> "[<_ast.Constant object at 0x12f957220>, <_ast.Constant object at 0x12f957cd0>, <_ast.Constant object at 0x12f9576d0>, <_ast.Constant \
-object at 0x12f957340>, <_ast.Constant object at 0x12f957070>](0)"	[label=assignedFrom];
+	"id_to_use(0)$1" -> "[<_ast.Constant object at 0x7fd500836d90>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836fa0>, <_\
+ast.Constant object at 0x7fd500836f70>, <_ast.Constant object at 0x7fd5008364c0>](0)"	[label=assignedFrom];
+	"id_to_use(0)$2" -> "[<_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd500832940>, <_\
+ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd5008320d0>](0)"	[label=assignedFrom];
 	"plot_count(0)$3" -> "1(0)"	[label=Add];
 	"plot_count(0)$3" -> "plot_count(0)$2"	[label=Add];
 	"plt(0)$9" -> "1(0)"	[label=subplot];
@@ -162,8 +162,8 @@ object at 0x12f957340>, <_ast.Constant object at 0x12f957070>](0)"	[label=assign
 	"temp_df(0)$3" -> "id(0)"	[label=sort_values];
 	"temp_df(0)$3" -> "mean(0)"	[label=sort_values];
 	"temp_df(0)$4" -> "temp_df(0)$3"	[label=tail];
-	"[<_ast.Constant object at 0x12fade370>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade430>, <_ast.Constant \
-object at 0x12fade0d0>, <_ast.Constant object at 0x12fadeb80>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836d90>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836fa0>, <_\
+ast.Constant object at 0x7fd500836f70>, <_ast.Constant object at 0x7fd5008364c0>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"fig(0)$4" -> "8(0)"	[label=figure];
 	"fig(0)$4" -> "25(0)"	[label=figure];
 	"fig(0)$4" -> "plt(0)$13"	[label=figure];
@@ -192,8 +192,8 @@ object at 0x12fade0d0>, <_ast.Constant object at 0x12fadeb80>](0)" -> "simple-ex
 	"temp_df(0)$6" -> "count(0)"	[label=sort_values];
 	"count(0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"temp_df(0)$7" -> "temp_df(0)$6"	[label=tail];
-	"[<_ast.Constant object at 0x12f957220>, <_ast.Constant object at 0x12f957cd0>, <_ast.Constant object at 0x12f9576d0>, <_ast.Constant \
-object at 0x12f957340>, <_ast.Constant object at 0x12f957070>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd500832940>, <_\
+ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd5008320d0>](0)" -> "simple-exploration-notebook-5.ipynb"	[label=appearsIn];
 	"fig(0)$5" -> "8(0)"	[label=figure];
 	"fig(0)$5" -> "25(0)"	[label=figure];
 	"fig(0)$5" -> "plt(0)$18"	[label=figure];

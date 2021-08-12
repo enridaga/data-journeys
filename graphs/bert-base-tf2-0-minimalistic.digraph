@@ -71,37 +71,31 @@ digraph "" {
 	"df_sub(0)$0" -> "sample_submission.csv(0)"	[label=read_csv];
 	"sample_submission.csv(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
 	"train shape =(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
-	"print[0]" -> "train shape =(0)"	[label=print];
-	"print[0]" -> "test shape =(0)"	[label=print];
-	"print[0]" -> "
-output categories:
-	(0)"	[label=print];
-	"print[0]" -> "
-input categories:
-	(0)"	[label=print];
-	"print[0]" -> "
-validation rho: \%.4f(12)"	[label=print];
+	"print[25/0]" -> "df_train(0)$0"	[label=print];
+	"print[25/0]" -> "train shape =(0)"	[label=print];
 	"test shape =(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
-	"
-output categories:
-	(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
-	"
-input categories:
-	(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
-	"print[1]" -> "df_train(0)$0"	[label=print];
-	"print[1]" -> "df_test(0)$0"	[label=print];
-	"print[1]" -> "output_categories(0)$0"	[label=print];
-	"print[1]" -> "input_categories(0)$0"	[label=print];
-	"print[1]" -> "rho_val(12)$0"	[label=print];
+	"print[26/0]" -> "df_test(0)$0"	[label=print];
+	"print[26/0]" -> "test shape =(0)"	[label=print];
 	"output_categories(0)$0" -> "df_train(0)$0"	[label=list];
 	"output_categories(0)$0" -> "11(0)"	[label=list];
-	"input_categories(0)$0" -> "df_train(0)$0"	[label=list];
-	"input_categories(0)$0" -> "[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f951700>, <_ast.Constant object at 0x12f9511f0>](0)"	[label=list];
-	"rho_val(12)$0" -> "self(12)$0"	[label=compute_spearmanr];
-	"rho_val(12)$0" -> "np(12)"	[label=compute_spearmanr];
-	"rho_val(12)$0" -> "0(12)"	[label=compute_spearmanr];
 	"11(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9510d0>, <_ast.Constant object at 0x12f951700>, <_ast.Constant object at 0x12f9511f0>](0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
+	"input_categories(0)$0" -> "df_train(0)$0"	[label=list];
+	"input_categories(0)$0" -> "[<_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object at 0x7fd5009996d0>](0)"	[label=list];
+	"[<_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object at 0x7fd5009996d0>](0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
+	"
+output categories:
+	(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
+	"print[30/0]" -> "output_categories(0)$0"	[label=print];
+	"print[30/0]" -> "
+output categories:
+	(0)"	[label=print];
+	"
+input categories:
+	(0)" -> "bert-base-tf2-0-minimalistic.ipynb"	[label=appearsIn];
+	"print[31/0]" -> "input_categories(0)$0"	[label=print];
+	"print[31/0]" -> "
+input categories:
+	(0)"	[label=print];
 	"tokens(1)" -> "_get_masks[0]"	[label=_argToVar];
 	"max_seq_length(1)" -> "_get_masks[1]"	[label=_argToVar];
 	"tokens(2)" -> "_get_segments[0]"	[label=_argToVar];
@@ -121,7 +115,7 @@ input categories:
 	"token_ids(3)$0" -> "tokenizer(3)"	[label=convert_tokens_to_ids];
 	"input_ids(3)$0" -> "max_seq_length(3)"	[label=Add];
 	"input_ids(3)$0" -> "token_ids(3)$0"	[label=Add];
-	"input_ids(3)$0" -> "[<_ast.Constant object at 0x12f85e5e0>](3)"	[label=Add];
+	"input_ids(3)$0" -> "[<_ast.Constant object at 0x7fd4902abcd0>](3)"	[label=Add];
 	"input_ids(3)$0" -> "len(3)"	[label=Add];
 	"title(4)" -> "_trim_input[0]"	[label=_argToVar];
 	"question(4)" -> "_trim_input[1]"	[label=_argToVar];
@@ -175,10 +169,10 @@ input categories:
 	"stoken(5)$0" -> "title(5)"	[label=Add];
 	"stoken(5)$0" -> "question(5)"	[label=Add];
 	"stoken(5)$0" -> "answer(5)"	[label=Add];
-	"stoken(5)$0" -> "[<_ast.Constant object at 0x12fade250>](5)"	[label=Add];
-	"stoken(5)$0" -> "[<_ast.Constant object at 0x12fade7f0>](5)"	[label=Add];
-	"stoken(5)$0" -> "[<_ast.Constant object at 0x12fade640>](5)"	[label=Add];
-	"stoken(5)$0" -> "[<_ast.Constant object at 0x12fade310>](5)"	[label=Add];
+	"stoken(5)$0" -> "[<_ast.Constant object at 0x7fd4c04cc940>](5)"	[label=Add];
+	"stoken(5)$0" -> "[<_ast.Constant object at 0x7fd4c04cc070>](5)"	[label=Add];
+	"stoken(5)$0" -> "[<_ast.Constant object at 0x7fd4c04ccf40>](5)"	[label=Add];
+	"stoken(5)$0" -> "[<_ast.Constant object at 0x7fd50085bd30>](5)"	[label=Add];
 	"input_ids(5)$0" -> "tokenizer(5)"	[label=_get_ids];
 	"input_ids(5)$0" -> "max_sequence_length(5)"	[label=_get_ids];
 	"input_ids(5)$0" -> "stoken(5)$0"	[label=_get_ids];
@@ -281,6 +275,12 @@ input categories:
 	"logs(12)" -> "on_epoch_end[2]"	[label=_argToVar];
 	"self(12)$0" -> "self(12)"	[label=append];
 	"self(12)$0" -> "self(12)$0"	[label=append];
+	"rho_val(12)$0" -> "self(12)$0"	[label=compute_spearmanr];
+	"rho_val(12)$0" -> "np(12)"	[label=compute_spearmanr];
+	"rho_val(12)$0" -> "0(12)"	[label=compute_spearmanr];
+	"print[161/8]" -> "rho_val(12)$0"	[label=print];
+	"print[161/8]" -> "
+validation rho: \%.4f(12)"	[label=print];
 	"self(12)$1" -> "epoch(12)"	[label=save_weights];
 	"self(12)$1" -> "self(12)$0"	[label=save_weights];
 	"self(12)$1" -> "bert-base-(12)"	[label=save_weights];
@@ -301,8 +301,8 @@ input categories:
 	"bert_layer(13)$0" -> "hub(13)"	[label=KerasLayer];
 	"bert_layer(13)$0" -> "BERT_PATH(13)"	[label=KerasLayer];
 	"bert_layer(13)$0" -> "True(13)"	[label=KerasLayer];
-	"_(13)$0" -> "[<_ast.Name object at 0x12fc224c0>, <_ast.Name object at 0x12fc224f0>, <_ast.Name object at 0x12fc22520>](13)"	[label=bert_layer];
-	"sequence_output(13)$0" -> "[<_ast.Name object at 0x12fc224c0>, <_ast.Name object at 0x12fc224f0>, <_ast.Name object at 0x12fc22520>](13)"	[label=bert_layer];
+	"_(13)$0" -> "[<_ast.Name object at 0x7fd50087f100>, <_ast.Name object at 0x7fd50087f0d0>, <_ast.Name object at 0x7fd50087f070>](13)"	[label=bert_layer];
+	"sequence_output(13)$0" -> "[<_ast.Name object at 0x7fd50087f100>, <_ast.Name object at 0x7fd50087f0d0>, <_ast.Name object at 0x7fd50087f070>](13)"	[label=bert_layer];
 	"x(13)$0" -> "tf(13)"	[label=assignedFrom];
 	"x(13)$0" -> "sequence_output(13)$0"	[label=assignedFrom];
 	"x(13)$1" -> "tf(13)"	[label=assignedFrom];
@@ -315,7 +315,7 @@ input categories:
 	"out(13)$0" -> "dense_output(13)"	[label=assignedFrom];
 	"model(13)$0" -> "tf(13)"	[label=Model];
 	"model(13)$0" -> "out(13)$0"	[label=Model];
-	"model(13)$0" -> "[<_ast.Name object at 0x12fc22dc0>, <_ast.Name object at 0x12fc22df0>, <_ast.Name object at 0x12fc22e20>](13)"	[label=Model];
+	"model(13)$0" -> "[<_ast.Name object at 0x7fd50087f9d0>, <_ast.Name object at 0x7fd50087fa00>, <_ast.Name object at 0x7fd50087faf0>](13)"	[label=Model];
 	"model(14)" -> "train_and_predict[0]"	[label=_argToVar];
 	"train_data(14)" -> "train_and_predict[1]"	[label=_argToVar];
 	"valid_data(14)" -> "train_and_predict[2]"	[label=_argToVar];

@@ -14,49 +14,21 @@ digraph "" {
 	pandas -> "masters-final-project-eda.ipynb"	[label=importedBy];
 	"pd(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"pd(0)" -> pandas	[label=assignedFrom];
-	"print[0]" -> "sys(0)"	[label=print];
-	"print[0]" -> "np(0)"	[label=print];
-	"print[0]" -> "pandas:(0)"	[label=print];
-	"print[0]" -> "numpy:(0)"	[label=print];
-	"print[0]" -> "scipy:(0)"	[label=print];
-	"print[0]" -> "matplotlib:(0)"	[label=print];
-	"print[0]" -> "ok(0)"	[label=print];
-	"print[0]" -> "train_df(0)$0"	[label=print];
-	"print[0]" -> "np(0)$0"	[label=print];
-	"print[0]" -> "ttf_diff(0)$1"	[label=print];
-	"print[0]" -> "peaks_lg(0)$0"	[label=print];
+	"print[7/0]" -> "sys(0)"	[label=print];
 	"pandas:(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[8/0]" -> "pd(0)"	[label=print];
+	"print[8/0]" -> "pandas:(0)"	[label=print];
 	"numpy:(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[9/0]" -> "np(0)"	[label=print];
+	"print[9/0]" -> "numpy:(0)"	[label=print];
 	"scipy:(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[10/0]" -> "scipy(0)"	[label=print];
+	"print[10/0]" -> "scipy:(0)"	[label=print];
 	"matplotlib:(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[11/0]" -> "matplotlib(0)"	[label=print];
+	"print[11/0]" -> "matplotlib:(0)"	[label=print];
 	"ok(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"train_df(0)$0" -> "np(0)"	[label=read_csv];
-	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
-	"train_df(0)$0" -> "os(0)"	[label=read_csv];
-	"train_df(0)$0" -> "DATA_DIR(0)$0"	[label=read_csv];
-	"train_df(0)$0" -> "train.csv(0)"	[label=read_csv];
-	"train_df(0)$0" -> "acoustic_data(0)"	[label=read_csv];
-	"train_df(0)$0" -> "time_to_failure(0)"	[label=read_csv];
-	"np(0)$0" -> "np(0)"	[label=seed];
-	"np(0)$0" -> "2018(0)"	[label=seed];
-	"ttf_diff(0)$1" -> "ttf_diff(0)$1"	[label=assignedFrom];
-	"ttf_diff(0)$1" -> "0(0)"	[label=assignedFrom];
-	"ttf_diff(0)$1" -> "ttf_diff(0)$0"	[label=assignedFrom];
-	"peaks_lg(0)$0" -> "peaks(0)$1"	[label=assignedFrom];
-	"peaks_lg(0)$0" -> "2000.0(0)"	[label=assignedFrom];
-	"print[1]" -> "scipy(0)"	[label=print];
-	"print[1]" -> "matplotlib(0)"	[label=print];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "pd(0)"	[label=print];
-	"print[1]" -> "peaks_lg(0)$0"	[label=print];
-	"print[1]" -> "sizes(0)$1"	[label=print];
-	"print[1]" -> "0(0)"	[label=print];
-	"print[1]" -> "2624(0)"	[label=print];
-	"sizes(0)$1" -> "0(0)"	[label=assignedFrom];
-	"sizes(0)$1" -> "sizes(0)$0"	[label=assignedFrom];
-	"sizes(0)$1" -> "df(0)$0"	[label=assignedFrom];
-	"0(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"2624(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[12/0]" -> "ok(0)"	[label=print];
 	os -> "masters-final-project-eda.ipynb"	[label=importedBy];
 	"os(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
@@ -73,13 +45,24 @@ digraph "" {
 	"matplotlib.pyplot" -> "masters-final-project-eda.ipynb"	[label=importedBy];
 	"plt(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"print[22/0]" -> "ok(0)"	[label=print];
 	"../input(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"DATA_DIR(0)$0" -> "../input(0)"	[label=assignedFrom];
 	"../input/test(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"TEST_DIR(0)$0" -> "../input/test(0)"	[label=assignedFrom];
+	"print[25/0]" -> "ok(0)"	[label=print];
+	"train_df(0)$0" -> "np(0)"	[label=read_csv];
+	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_df(0)$0" -> "os(0)"	[label=read_csv];
+	"train_df(0)$0" -> "DATA_DIR(0)$0"	[label=read_csv];
+	"train_df(0)$0" -> "train.csv(0)"	[label=read_csv];
+	"train_df(0)$0" -> "acoustic_data(0)"	[label=read_csv];
+	"train_df(0)$0" -> "time_to_failure(0)"	[label=read_csv];
 	"train.csv(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"acoustic_data(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 	"time_to_failure(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[28/0]" -> "train_df(0)$0"	[label=print];
+	"print[29/0]" -> "ok(0)"	[label=print];
 	"ld(0)$0" -> "os(0)"	[label=listdir];
 	"ld(0)$0" -> "TEST_DIR(0)$0"	[label=listdir];
 	"sizes(0)$0" -> "np(0)"	[label=zeros];
@@ -97,6 +80,17 @@ digraph "" {
 	"df(0)$0" -> "os(0)"	[label=read_csv];
 	"df(0)$0" -> "TEST_DIR(0)$0"	[label=read_csv];
 	"df(0)$0" -> "f(0)"	[label=read_csv];
+	"sizes(0)$1" -> "sizes(0)$0"	[label=assignedFrom];
+	"sizes(0)$1" -> "df(0)$0"	[label=assignedFrom];
+	"sizes(0)$1" -> "0(0)"	[label=assignedFrom];
+	"0(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"print[37/0]" -> "np(0)"	[label=print];
+	"print[37/0]" -> "sizes(0)$1"	[label=print];
+	"print[38/0]" -> "np(0)"	[label=print];
+	"print[38/0]" -> "sizes(0)$1"	[label=print];
+	"print[39/0]" -> "np(0)"	[label=print];
+	"print[39/0]" -> "sizes(0)$1"	[label=print];
+	"print[40/0]" -> "ok(0)"	[label=print];
 	"train_ad_sample_df(0)$0" -> "train_df(0)$0"	[label=assignedFrom];
 	"train_ad_sample_df(0)$0" -> "acoustic_data(0)"	[label=assignedFrom];
 	"train_ad_sample_df(0)$0" -> "100(0)"	[label=assignedFrom];
@@ -105,9 +99,7 @@ digraph "" {
 	"train_ttf_sample_df(0)$0" -> "time_to_failure(0)"	[label=assignedFrom];
 	"train_ttf_sample_df(0)$0" -> "100(0)"	[label=assignedFrom];
 	"train_ad_sample_df(1)" -> "plot_acc_ttf_data[0]"	[label=_argToVar];
-	"plot_acc_ttf_data[0]" -> "train_ad_sample_df(0)$0"	[label=plot_acc_ttf_data];
 	"train_ttf_sample_df(1)" -> "plot_acc_ttf_data[1]"	[label=_argToVar];
-	"plot_acc_ttf_data[1]" -> "train_ttf_sample_df(0)$0"	[label=plot_acc_ttf_data];
 	"title(1)" -> "plot_acc_ttf_data[2]"	[label=_argToVar];
 	"fig(1)$0" -> "plt(1)"	[label=subplots];
 	"fig(1)$0" -> "12(1)"	[label=subplots];
@@ -122,19 +114,23 @@ digraph "" {
 	"ax1(1)$1" -> "ax1(1)$0"	[label=set_ylabel];
 	"ax1(1)$1" -> "acoustic data(1)"	[label=set_ylabel];
 	"plt(1)$2" -> "plt(1)$1"	[label=legend];
-	"plt(1)$2" -> "[<_ast.Constant object at 0x12f957f70>](1)"	[label=legend];
+	"plt(1)$2" -> "[<_ast.Constant object at 0x7fd5009990a0>](1)"	[label=legend];
 	"ax2(1)$0" -> "ax1(1)$1"	[label=twinx];
 	"plt(1)$3" -> "train_ttf_sample_df(1)"	[label=plot];
 	"plt(1)$3" -> "plt(1)$2"	[label=plot];
 	"ax2(1)$1" -> "ax2(1)$0"	[label=set_ylabel];
 	"ax2(1)$1" -> "time to failure(1)"	[label=set_ylabel];
 	"plt(1)$4" -> "plt(1)$3"	[label=legend];
-	"plt(1)$4" -> "[<_ast.Constant object at 0x12f957640>](1)"	[label=legend];
+	"plt(1)$4" -> "[<_ast.Constant object at 0x7fd5007f06a0>](1)"	[label=legend];
 	"plt(1)$5" -> "plt(1)$4"	[label=grid];
 	"plt(1)$5" -> "True(1)"	[label=grid];
+	"plot_acc_ttf_data[56/0]" -> "train_ad_sample_df(0)$0"	[label=plot_acc_ttf_data];
+	"plot_acc_ttf_data[56/0]" -> "train_ttf_sample_df(0)$0"	[label=plot_acc_ttf_data];
+	"np(0)$0" -> "np(0)"	[label=seed];
+	"np(0)$0" -> "2018(0)"	[label=seed];
 	"2018(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"rand_idxs(0)$0" -> "np(0)$0"	[label=randint];
 	"rand_idxs(0)$0" -> "0(0)"	[label=randint];
+	"rand_idxs(0)$0" -> "np(0)$0"	[label=randint];
 	"rand_idxs(0)$0" -> "629145480(0)"	[label=randint];
 	"rand_idxs(0)$0" -> "150000(0)"	[label=randint];
 	"rand_idxs(0)$0" -> "16(0)"	[label=randint];
@@ -179,18 +175,25 @@ digraph "" {
 	"j(0)$1" -> "1(0)"	[label=Add];
 	"plt(0)$0" -> "plt(0)"	[label=tight_layout];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
+	"print[84/0]" -> "ok(0)"	[label=print];
 	"ttf_diff(0)$0" -> "train_df(0)$0"	[label=diff];
 	"ttf_diff(0)$0" -> "time_to_failure(0)"	[label=diff];
-	"[<_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f951b80>, <_ast.Constant \
-object at 0x12fade370>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade8b0>, <_\
-ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fade3a0>, <_ast.Constant \
-object at 0x12fadefd0>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant object at 0x12fadeaf0>, <_\
-ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"failure_idxs(0)$0" -> "[<_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951b20>, <_ast.Constant object at 0x12f951b80>, <_ast.Constant \
-object at 0x12fade370>, <_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade790>, <_ast.Constant object at 0x12fade8b0>, <_\
-ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fade3a0>, <_ast.Constant \
-object at 0x12fadefd0>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant object at 0x12fadeaf0>, <_\
-ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	[label=assignedFrom];
+	"ttf_diff(0)$1" -> "0(0)"	[label=assignedFrom];
+	"ttf_diff(0)$1" -> "ttf_diff(0)$0"	[label=assignedFrom];
+	"ttf_diff(0)$1" -> "ttf_diff(0)$1"	[label=assignedFrom];
+	"print[87/0]" -> "ttf_diff(0)$1"	[label=print];
+	"[<_ast.Constant object at 0x7fd500832b50>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd500832310>, <_\
+ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant \
+object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832460>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at \
+0x7fd5008329a0>, <_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant object at 0x7fd5008325e0>](\
+0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"failure_idxs(0)$0" -> "[<_ast.Constant object at 0x7fd500832b50>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd500832310>, <_\
+ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant \
+object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832460>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at \
+0x7fd5008329a0>, <_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant object at 0x7fd5008325e0>](\
+0)"	[label=assignedFrom];
 	"f(0)$1" -> "4(0)"	[label=subplots];
 	"f(0)$1" -> "14(0)"	[label=subplots];
 	"f(0)$1" -> "8(0)"	[label=subplots];
@@ -298,8 +301,8 @@ ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	
 	"axes(0)$8" -> "sig(0)$0"	[label=plot];
 	"i(0)$10" -> "1(0)"	[label=Add];
 	"i(0)$10" -> "i(0)$9"	[label=Add];
-	"i(0)$11" -> "0(0)"	[label=assignedFrom];
 	"i(0)$11" -> "enumerate(0)"	[label=iteratorOf];
+	"i(0)$11" -> "0(0)"	[label=assignedFrom];
 	"i(0)$11" -> "ld(0)$5"	[label=iteratorOf];
 	"i(0)$11" -> "signals(0)$0"	[label=iteratorOf];
 	"i(0)$11" -> "signals(0)$1"	[label=iteratorOf];
@@ -410,8 +413,8 @@ ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	
 	"ad_end(0)$0" -> "12(0)"	[label=Mult];
 	"ad_end(0)$0" -> "ad(0)$7"	[label=Mult];
 	"ad_end(0)$0" -> "hann_win(0)$0"	[label=Mult];
-	"ad(0)$8" -> "np(0)$0"	[label=concatenate];
 	"ad(0)$8" -> "0(0)"	[label=concatenate];
+	"ad(0)$8" -> "np(0)$0"	[label=concatenate];
 	"ad(0)$8" -> "12(0)"	[label=concatenate];
 	"ad(0)$8" -> "ad_beg(0)$0"	[label=concatenate];
 	"ad(0)$8" -> "ad_end(0)$0"	[label=concatenate];
@@ -463,8 +466,8 @@ ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	
 	"ad_end(0)$1" -> "12(0)"	[label=Mult];
 	"ad_end(0)$1" -> "ad(0)$10"	[label=Mult];
 	"ad_end(0)$1" -> "hann_win(0)$1"	[label=Mult];
-	"ad(0)$11" -> "np(0)$0"	[label=concatenate];
 	"ad(0)$11" -> "0(0)"	[label=concatenate];
+	"ad(0)$11" -> "np(0)$0"	[label=concatenate];
 	"ad(0)$11" -> "12(0)"	[label=concatenate];
 	"ad(0)$11" -> "ad_beg(0)$1"	[label=concatenate];
 	"ad(0)$11" -> "ad_end(0)$1"	[label=concatenate];
@@ -498,8 +501,8 @@ ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	
 	"plt(0)$17" -> "plt(0)$16"	[label=plot];
 	"plt(0)$18" -> "plt(0)$17"	[label=tight_layout];
 	"plt(0)$19" -> "plt(0)$18"	[label=show];
-	"peaks(0)$0" -> "np(0)$0"	[label=zeros];
 	"peaks(0)$0" -> "len(0)"	[label=zeros];
+	"peaks(0)$0" -> "np(0)$0"	[label=zeros];
 	"peaks(0)$0" -> "ld(0)$5"	[label=zeros];
 	"df(0)$4" -> "pd(0)"	[label=read_csv];
 	"df(0)$4" -> "os(0)"	[label=read_csv];
@@ -508,15 +511,21 @@ ast.Constant object at 0x12fade9d0>, <_ast.Constant object at 0x12fade7f0>](0)"	
 	"peaks(0)$1" -> "acoustic_data(0)"	[label=max];
 	"peaks(0)$1" -> "peaks(0)$0"	[label=max];
 	"peaks(0)$1" -> "df(0)$4"	[label=max];
+	"peaks_lg(0)$0" -> "peaks(0)$1"	[label=assignedFrom];
+	"peaks_lg(0)$0" -> "2000.0(0)"	[label=assignedFrom];
 	"2000.0(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "np(0)$0"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[3]" -> "np(0)$0"	[label=print];
-	"print[3]" -> "4194(0)"	[label=print];
-	"4194(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"print[4]" -> "16(0)"	[label=print];
-	"print[4]" -> "peaks(0)$1"	[label=print];
-	"print[5]" -> "0(0)"	[label=print];
+	"print[253/0]" -> "0(0)"	[label=print];
+	"print[253/0]" -> "peaks_lg(0)$0"	[label=print];
+	"print[254/0]" -> "0(0)"	[label=print];
+	"print[254/0]" -> "np(0)$0"	[label=print];
+	"print[254/0]" -> "peaks(0)$1"	[label=print];
+	"print[254/0]" -> "peaks_lg(0)$0"	[label=print];
+	"print[254/0]" -> "100.0(0)"	[label=print];
 	"100.0(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
-	"print[6]" -> "100.0(0)"	[label=print];
+	"print[255/0]" -> "np(0)$0"	[label=print];
+	"print[255/0]" -> "16(0)"	[label=print];
+	"print[255/0]" -> "2624(0)"	[label=print];
+	"print[255/0]" -> "4194(0)"	[label=print];
+	"2624(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
+	"4194(0)" -> "masters-final-project-eda.ipynb"	[label=appearsIn];
 }

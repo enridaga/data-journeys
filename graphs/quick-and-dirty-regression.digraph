@@ -191,13 +191,13 @@ digraph "" {
 	"prefix(1)$0" -> "re(1)"	[label=ifnone];
 	"prefix(1)$0" -> "[Dd]ate$(1)"	[label=ifnone];
 	"prefix(1)$0" -> "(1)"	[label=ifnone];
-	"attr(1)$0" -> "[<_ast.Constant object at 0x12f8f5d00>, <_ast.Constant object at 0x12f8f5ac0>, <_ast.Constant object at 0x12f8f5b50>, <_ast.Constant \
-object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant object at 0x12f8f51c0>, <_ast.Constant object at 0x12f8f5a00>](\
-1)"	[label=assignedFrom];
+	"attr(1)$0" -> "[<_ast.Constant object at 0x7fd50080dd30>, <_ast.Constant object at 0x7fd50080d970>, <_ast.Constant object at 0x7fd50080d370>, <_\
+ast.Constant object at 0x7fd50080d040>, <_ast.Constant object at 0x7fd50080d910>, <_ast.Constant object at 0x7fd50080d2e0>, <_ast.Constant \
+object at 0x7fd50080da30>](1)"	[label=assignedFrom];
 	"attr(1)$1" -> "attr(1)$0"	[label=append];
 	"attr(1)$1" -> "Date(1)"	[label=append];
 	"attr(1)$2" -> "attr(1)$1"	[label=Add];
-	"attr(1)$2" -> "[<_ast.Constant object at 0x12f8f59a0>, <_ast.Constant object at 0x12f8f5790>](1)"	[label=Add];
+	"attr(1)$2" -> "[<_ast.Constant object at 0x7fd50080d3d0>, <_ast.Constant object at 0x7fd50080df10>](1)"	[label=Add];
 	"n(1)" -> "attr(1)$2"	[label=iteratorOf];
 	"df(1)$0" -> "df(1)"	[label=getattr];
 	"df(1)$0" -> "field(1)$0"	[label=getattr];
@@ -214,15 +214,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"TransformerMixin(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"TransformerMixin(0)" -> TransformerMixin	[label=assignedFrom];
 	"a1(3)" -> "qwk[0]"	[label=_argToVar];
-	"qwk[0]" -> "y(0)$0"	[label=qwk];
-	"y(0)$0" -> "reduce_train(0)$1"	[label=assignedFrom];
-	"y(0)$0" -> "accuracy_group(0)"	[label=assignedFrom];
 	"a2(3)" -> "qwk[1]"	[label=_argToVar];
-	"qwk[1]" -> "opt_preds(0)$0"	[label=qwk];
-	"opt_preds(0)$0" -> "1(0)"	[label=predict];
-	"opt_preds(0)$0" -> "pr1(0)$0"	[label=predict];
-	"opt_preds(0)$0" -> "optR(0)$0"	[label=predict];
-	"opt_preds(0)$0" -> "coefficients(0)$0"	[label=predict];
 	"max_rat(3)$0" -> "3(3)"	[label=assignedFrom];
 	"a1(3)$0" -> "a1(3)$0"	[label=asarray];
 	"a1(3)$0" -> "np(3)"	[label=asarray];
@@ -299,8 +291,8 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"params(8)" -> "fit[7]"	[label=_argToVar];
 	"eval_metric(8)$0" -> "eval_qwk_lgb_regr(8)"	[label=assignedFrom];
 	"eval_metric(8)$1" -> "auc(8)"	[label=assignedFrom];
-	"eval_set(8)$0" -> "[<_ast.Tuple object at 0x12fada190>](8)"	[label=assignedFrom];
-	"eval_names(8)$0" -> "[<_ast.Constant object at 0x12fadaa30>](8)"	[label=assignedFrom];
+	"eval_set(8)$0" -> "[<_ast.Tuple object at 0x7fd4d057dfd0>](8)"	[label=assignedFrom];
+	"eval_names(8)$0" -> "[<_ast.Constant object at 0x7fd4d057db80>](8)"	[label=assignedFrom];
 	"self(8)$0" -> "self(8)"	[label=set_params];
 	"self(8)$0" -> "params(8)"	[label=set_params];
 	"eval_set(8)$1" -> "X_valid(8)"	[label=append];
@@ -342,8 +334,8 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"X_holdout(13)" -> "fit[5]"	[label=_argToVar];
 	"y_holdout(13)" -> "fit[6]"	[label=_argToVar];
 	"params(13)" -> "fit[7]"	[label=_argToVar];
-	"eval_set(13)$0" -> "[<_ast.Tuple object at 0x12f94cd00>](13)"	[label=assignedFrom];
-	"eval_names(13)$0" -> "[<_ast.Constant object at 0x12f94cb80>](13)"	[label=assignedFrom];
+	"eval_set(13)$0" -> "[<_ast.Tuple object at 0x7fd4c04f62b0>](13)"	[label=assignedFrom];
+	"eval_names(13)$0" -> "[<_ast.Constant object at 0x7fd4c04f6a30>](13)"	[label=assignedFrom];
 	"self(13)$0" -> "self(13)"	[label=set_params];
 	"self(13)$0" -> "params(13)"	[label=set_params];
 	"eval_set(13)$1" -> "X_valid(13)"	[label=append];
@@ -380,7 +372,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"X_holdout(17)" -> "fit[5]"	[label=_argToVar];
 	"y_holdout(17)" -> "fit[6]"	[label=_argToVar];
 	"params(17)" -> "fit[7]"	[label=_argToVar];
-	"eval_set(17)$0" -> "[<_ast.Tuple object at 0x12f9a6160>](17)"	[label=assignedFrom];
+	"eval_set(17)$0" -> "[<_ast.Tuple object at 0x7fd4c04ace20>](17)"	[label=assignedFrom];
 	"self(17)$0" -> "self(17)"	[label=set_params];
 	"self(17)$0" -> "params(17)"	[label=set_params];
 	"self(17)$0" -> "k(17)"	[label=set_params];
@@ -416,7 +408,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"X_holdout(21)" -> "fit[5]"	[label=_argToVar];
 	"y_holdout(21)" -> "fit[6]"	[label=_argToVar];
 	"params(21)" -> "fit[7]"	[label=_argToVar];
-	"eval_set(21)$0" -> "[<_ast.Tuple object at 0x12fc319d0>](21)"	[label=assignedFrom];
+	"eval_set(21)$0" -> "[<_ast.Tuple object at 0x7fd5009c0730>](21)"	[label=assignedFrom];
 	"self(21)$0" -> "self(21)"	[label=set_params];
 	"self(21)$0" -> "params(21)"	[label=set_params];
 	"eval_set(21)$1" -> "X_valid(21)"	[label=append];
@@ -571,7 +563,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"self(35)$1" -> "None(35)"	[label=assignedFrom];
 	"self(35)$2" -> "self(35)$1"	[label=DataFrame];
 	"self(35)$2" -> "pd(35)"	[label=DataFrame];
-	"self(35)$2" -> "[<_ast.Constant object at 0x12f89b130>, <_ast.Constant object at 0x12f89b160>](35)"	[label=DataFrame];
+	"self(35)$2" -> "[<_ast.Constant object at 0x7fd4c04d0e20>, <_ast.Constant object at 0x7fd4c04d0df0>](35)"	[label=DataFrame];
 	"self(35)$3" -> "transformers(35)"	[label=assignedFrom];
 	"self(35)$3" -> "self(35)$2"	[label=assignedFrom];
 	"self(35)$3" -> "k(35)"	[label=assignedFrom];
@@ -623,54 +615,11 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"valid_index(35)" -> "installation_id(35)"	[label=iteratorOf];
 	"X_hold(35)$0" -> "X_holdout(35)$1"	[label=copy];
 	"X_hold(35)$1" -> "None(35)"	[label=assignedFrom];
-	"print[0]" -> "Fold (35)"	[label=print];
-	"print[0]" -> "CV mean score on (37)"	[label=print];
-	"print[0]" -> "Reading train.csv file....(47)"	[label=print];
-	"print[0]" -> "Training.csv file have {} rows and {} columns(47)"	[label=print];
-	"print[0]" -> "Reading test.csv file....(47)"	[label=print];
-	"print[0]" -> "Test.csv file have {} rows and {} columns(47)"	[label=print];
-	"print[0]" -> "Reading train_labels.csv file....(47)"	[label=print];
-	"print[0]" -> "Train_labels.csv file have {} rows and {} columns(47)"	[label=print];
-	"print[0]" -> "Reading specs.csv file....(47)"	[label=print];
-	"print[0]" -> "Specs.csv file have {} rows and {} columns(47)"	[label=print];
-	"print[0]" -> "Reading sample_submission.csv file....(47)"	[label=print];
-	"print[0]" -> "Sample_submission.csv file have {} rows and {} columns(47)"	[label=print];
-	"print[1]" -> "fold_n(35)"	[label=print];
-	"print[1]" -> "d(37)"	[label=print];
-	"print[1]" -> "train(47)$0"	[label=print];
-	"print[1]" -> "test(47)$0"	[label=print];
-	"print[1]" -> "train_labels(47)$0"	[label=print];
-	"print[1]" -> "specs(47)$0"	[label=print];
-	"print[1]" -> "sample_submission(47)$0"	[label=print];
-	"d(37)" -> "datasets(37)$0"	[label=iteratorOf];
-	"train(47)$0" -> "pd(47)"	[label=read_csv];
-	"train(47)$0" -> "/kaggle/input/data-science-bowl-2019/train.csv(47)"	[label=read_csv];
-	"test(47)$0" -> "pd(47)"	[label=read_csv];
-	"test(47)$0" -> "/kaggle/input/data-science-bowl-2019/test.csv(47)"	[label=read_csv];
-	"train_labels(47)$0" -> "pd(47)"	[label=read_csv];
-	"train_labels(47)$0" -> "/kaggle/input/data-science-bowl-2019/train_labels.csv(47)"	[label=read_csv];
-	"specs(47)$0" -> "pd(47)"	[label=read_csv];
-	"specs(47)$0" -> "/kaggle/input/data-science-bowl-2019/specs.csv(47)"	[label=read_csv];
-	"sample_submission(47)$0" -> "pd(47)"	[label=read_csv];
-	"sample_submission(47)$0" -> "/kaggle/input/data-science-bowl-2019/sample_submission.csv(47)"	[label=read_csv];
-	"print[2]" -> "1(35)"	[label=print];
-	"print[2]" -> ": (37)"	[label=print];
-	"print[2]" -> "0(47)"	[label=print];
-	"print[3]" -> "train(47)$0"	[label=print];
-	"print[3]" -> "test(47)$0"	[label=print];
-	"print[3]" -> "train_labels(47)$0"	[label=print];
-	"print[3]" -> "specs(47)$0"	[label=print];
-	"print[3]" -> "sample_submission(47)$0"	[label=print];
-	"print[3]" -> " started at (35)"	[label=print];
-	"print[3]" -> "np(37)"	[label=print];
-	"print[4]" -> "time(35)"	[label=print];
-	"print[4]" -> "scores(37)$0"	[label=print];
-	"print[4]" -> "1(47)"	[label=print];
-	"scores(37)$0" -> "d(37)"	[label=assignedFrom];
-	"scores(37)$0" -> "scores(37)$0"	[label=assignedFrom];
-	"scores(37)$0" -> "self(37)"	[label=assignedFrom];
-	"scores(37)$0" -> "k(37)"	[label=assignedFrom];
-	"scores(37)$0" -> "v(37)"	[label=assignedFrom];
+	"print[501/16]" -> "1(35)"	[label=print];
+	"print[501/16]" -> "fold_n(35)"	[label=print];
+	"print[501/16]" -> "Fold (35)"	[label=print];
+	"print[501/16]" -> " started at (35)"	[label=print];
+	"print[501/16]" -> "time(35)"	[label=print];
 	"X_train(35)$0" -> "X(35)$1"	[label=assignedFrom];
 	"X_train(35)$0" -> "train_index(35)"	[label=assignedFrom];
 	"X_train(35)$0" -> "valid_index(35)"	[label=assignedFrom];
@@ -710,7 +659,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"X_new2(35)$0" -> "X_valid(35)$2"	[label=copy];
 	"X_new2(35)$1" -> "X_holdout(35)$1"	[label=copy];
 	"X_new(35)$0" -> "pd(35)"	[label=concat];
-	"X_new(35)$0" -> "[<_ast.Name object at 0x12f886e20>, <_ast.Name object at 0x12f886bb0>](35)"	[label=concat];
+	"X_new(35)$0" -> "[<_ast.Name object at 0x7fd4c04c4850>, <_ast.Name object at 0x7fd4c04c4880>](35)"	[label=concat];
 	"X_new(35)$0" -> "0(35)"	[label=concat];
 	"y_new(35)$0" -> "np(35)"	[label=hstack];
 	"y_new(35)$0" -> "X_new1(35)$0"	[label=hstack];
@@ -749,7 +698,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"fold_importance(35)$0" -> "model(35)$1"	[label=DataFrame];
 	"fold_importance(35)$0" -> "list(35)"	[label=DataFrame];
 	"fold_importance(35)$0" -> "zip(35)"	[label=DataFrame];
-	"fold_importance(35)$0" -> "[<_ast.Constant object at 0x12f9364f0>, <_ast.Constant object at 0x12f936520>](35)"	[label=DataFrame];
+	"fold_importance(35)$0" -> "[<_ast.Constant object at 0x7fd5008191f0>, <_ast.Constant object at 0x7fd500819220>](35)"	[label=DataFrame];
 	"self(35)$16" -> "self(35)$15"	[label=append];
 	"self(35)$16" -> "fold_importance(35)$0"	[label=append];
 	"self(35)$17" -> "model(35)$1"	[label=append];
@@ -835,15 +784,23 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"datasets(37)$0" -> "scores(37)"	[label=assignedFrom];
 	"datasets(37)$0" -> "0(37)"	[label=assignedFrom];
 	"datasets(37)$0" -> "len(37)"	[label=assignedFrom];
-	"print[5]" -> ".4f(37)"	[label=print];
-	"print[6]" -> " +/- (37)"	[label=print];
-	"print[7]" -> "np(37)"	[label=print];
-	"print[8]" -> "scores(37)$0"	[label=print];
-	"print[9]" -> ".4f(37)"	[label=print];
-	"print[10]" -> " std.(37)"	[label=print];
-	"self(37)$0" -> "np(37)"	[label=mean];
-	"self(37)$0" -> "scores(37)$0"	[label=mean];
+	"d(37)" -> "datasets(37)$0"	[label=iteratorOf];
+	"scores(37)$0" -> "self(37)"	[label=assignedFrom];
+	"scores(37)$0" -> "k(37)"	[label=assignedFrom];
+	"scores(37)$0" -> "v(37)"	[label=assignedFrom];
+	"scores(37)$0" -> "d(37)"	[label=assignedFrom];
+	"scores(37)$0" -> "scores(37)$0"	[label=assignedFrom];
+	"print[588/12]" -> "d(37)"	[label=print];
+	"print[588/12]" -> "scores(37)$0"	[label=print];
+	"print[588/12]" -> "CV mean score on (37)"	[label=print];
+	"print[588/12]" -> ": (37)"	[label=print];
+	"print[588/12]" -> "np(37)"	[label=print];
+	"print[588/12]" -> ".4f(37)"	[label=print];
+	"print[588/12]" -> " +/- (37)"	[label=print];
+	"print[588/12]" -> " std.(37)"	[label=print];
 	"self(37)$0" -> "self(37)"	[label=mean];
+	"self(37)$0" -> "scores(37)$0"	[label=mean];
+	"self(37)$0" -> "np(37)"	[label=mean];
 	"self(38)" -> "predict[0]"	[label=_argToVar];
 	"X_test(38)" -> "predict[1]"	[label=_argToVar];
 	"averaging(38)" -> "predict[2]"	[label=_argToVar];
@@ -907,7 +864,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"drop_null_importance(40)" -> "get_top_features[1]"	[label=_argToVar];
 	"top_n(40)" -> "get_top_features[2]"	[label=_argToVar];
 	"grouped_feats(40)$0" -> "self(40)"	[label=mean];
-	"grouped_feats(40)$0" -> "[<_ast.Constant object at 0x12f8d34c0>](40)"	[label=mean];
+	"grouped_feats(40)$0" -> "[<_ast.Constant object at 0x7fd4c059c190>](40)"	[label=mean];
 	"grouped_feats(40)$0" -> "importance(40)"	[label=mean];
 	"grouped_feats(40)$1" -> "grouped_feats(40)$0"	[label=assignedFrom];
 	"grouped_feats(40)$1" -> "grouped_feats(40)$1"	[label=assignedFrom];
@@ -928,7 +885,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"full_evals_results(41)$1" -> "evals_result(41)$2"	[label=append];
 	"full_evals_results(41)$2" -> "self(41)"	[label=rename];
 	"full_evals_results(41)$2" -> "full_evals_results(41)$1"	[label=rename];
-	"full_evals_results(41)$2" -> "[<_ast.Constant object at 0x12f8d2850>](41)"	[label=rename];
+	"full_evals_results(41)$2" -> "[<_ast.Constant object at 0x7fd4c05a3550>](41)"	[label=rename];
 	"full_evals_results(41)$2" -> "value(41)"	[label=rename];
 	"full_evals_results(41)$2" -> "variable(41)"	[label=rename];
 	"full_evals_results(41)$2" -> "dataset(41)"	[label=rename];
@@ -991,6 +948,41 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"data(46)$0" -> "copy(46)"	[label=deepcopy];
 	"self(46)$0" -> "self(46)"	[label=fit];
 	"self(46)$0" -> "data(46)$0"	[label=fit];
+	"print[722/4]" -> "Reading train.csv file....(47)"	[label=print];
+	"train(47)$0" -> "pd(47)"	[label=read_csv];
+	"train(47)$0" -> "/kaggle/input/data-science-bowl-2019/train.csv(47)"	[label=read_csv];
+	"print[724/4]" -> "train(47)$0"	[label=print];
+	"print[724/4]" -> "Training.csv file have {} rows and {} columns(47)"	[label=print];
+	"print[724/4]" -> "0(47)"	[label=print];
+	"print[724/4]" -> "1(47)"	[label=print];
+	"print[726/4]" -> "Reading test.csv file....(47)"	[label=print];
+	"test(47)$0" -> "pd(47)"	[label=read_csv];
+	"test(47)$0" -> "/kaggle/input/data-science-bowl-2019/test.csv(47)"	[label=read_csv];
+	"print[728/4]" -> "0(47)"	[label=print];
+	"print[728/4]" -> "1(47)"	[label=print];
+	"print[728/4]" -> "test(47)$0"	[label=print];
+	"print[728/4]" -> "Test.csv file have {} rows and {} columns(47)"	[label=print];
+	"print[730/4]" -> "Reading train_labels.csv file....(47)"	[label=print];
+	"train_labels(47)$0" -> "pd(47)"	[label=read_csv];
+	"train_labels(47)$0" -> "/kaggle/input/data-science-bowl-2019/train_labels.csv(47)"	[label=read_csv];
+	"print[732/4]" -> "0(47)"	[label=print];
+	"print[732/4]" -> "1(47)"	[label=print];
+	"print[732/4]" -> "train_labels(47)$0"	[label=print];
+	"print[732/4]" -> "Train_labels.csv file have {} rows and {} columns(47)"	[label=print];
+	"print[734/4]" -> "Reading specs.csv file....(47)"	[label=print];
+	"specs(47)$0" -> "pd(47)"	[label=read_csv];
+	"specs(47)$0" -> "/kaggle/input/data-science-bowl-2019/specs.csv(47)"	[label=read_csv];
+	"print[736/4]" -> "0(47)"	[label=print];
+	"print[736/4]" -> "1(47)"	[label=print];
+	"print[736/4]" -> "specs(47)$0"	[label=print];
+	"print[736/4]" -> "Specs.csv file have {} rows and {} columns(47)"	[label=print];
+	"print[738/4]" -> "Reading sample_submission.csv file....(47)"	[label=print];
+	"sample_submission(47)$0" -> "pd(47)"	[label=read_csv];
+	"sample_submission(47)$0" -> "/kaggle/input/data-science-bowl-2019/sample_submission.csv(47)"	[label=read_csv];
+	"print[740/4]" -> "0(47)"	[label=print];
+	"print[740/4]" -> "1(47)"	[label=print];
+	"print[740/4]" -> "sample_submission(47)$0"	[label=print];
+	"print[740/4]" -> "Sample_submission.csv file have {} rows and {} columns(47)"	[label=print];
 	"train(48)" -> "encode_title[0]"	[label=_argToVar];
 	"test(48)" -> "encode_title[1]"	[label=_argToVar];
 	"train_labels(48)" -> "encode_title[2]"	[label=_argToVar];
@@ -1272,7 +1264,7 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"reduce_train(51)$0" -> "pd(51)"	[label=DataFrame];
 	"reduce_test(51)$0" -> "compiled_test(51)$1"	[label=DataFrame];
 	"reduce_test(51)$0" -> "pd(51)"	[label=DataFrame];
-	"categoricals(51)$0" -> "[<_ast.Constant object at 0x12f91a5b0>](51)"	[label=assignedFrom];
+	"categoricals(51)$0" -> "[<_ast.Constant object at 0x7fd4d0575280>](51)"	[label=assignedFrom];
 	"train(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "train(0)"	[label=encode_title];
 	"train(0)$0" -> "test(0)$0"	[label=encode_title];
@@ -1312,44 +1304,45 @@ object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5910>, <_ast.Constant ob
 	"categoricals(0)$0" -> "test(0)$0"	[label=get_train_and_test];
 	"reduce_train(52)" -> "preprocess[0]"	[label=_argToVar];
 	"reduce_test(52)" -> "preprocess[1]"	[label=_argToVar];
-	"df(52)" -> "[<_ast.Name object at 0x12f91aee0>, <_ast.Name object at 0x12f91af10>](52)"	[label=iteratorOf];
+	"df(52)" -> "[<_ast.Name object at 0x7fd4d0575be0>, <_ast.Name object at 0x7fd4d0575c10>](52)"	[label=iteratorOf];
 	"df(52)$0" -> "df(52)"	[label=transform];
-	"df(52)$0" -> "[<_ast.Constant object at 0x12f903220>](52)"	[label=transform];
+	"df(52)$0" -> "[<_ast.Constant object at 0x7fd4d0575ee0>](52)"	[label=transform];
 	"df(52)$0" -> "Clip(52)"	[label=transform];
 	"df(52)$0" -> "count(52)"	[label=transform];
 	"df(52)$1" -> "df(52)$0"	[label=transform];
-	"df(52)$1" -> "[<_ast.Constant object at 0x12f903580>](52)"	[label=transform];
+	"df(52)$1" -> "[<_ast.Constant object at 0x7fd4d058e280>](52)"	[label=transform];
 	"df(52)$1" -> "duration_mean(52)"	[label=transform];
 	"df(52)$1" -> "mean(52)"	[label=transform];
 	"df(52)$2" -> "df(52)$1"	[label=transform];
-	"df(52)$2" -> "[<_ast.Constant object at 0x12f9038e0>](52)"	[label=transform];
+	"df(52)$2" -> "[<_ast.Constant object at 0x7fd4d058e5e0>](52)"	[label=transform];
 	"df(52)$2" -> "session_title(52)"	[label=transform];
 	"df(52)$2" -> "nunique(52)"	[label=transform];
 	"df(52)$3" -> "df(52)$2"	[label=sum];
-	"df(52)$3" -> "[<_ast.Constant object at 0x12f903c10>, <_ast.Constant object at 0x12f903c40>, <_ast.Constant object at 0x12f903c70>, <_ast.Constant \
-object at 0x12f903ca0>, <_ast.Constant object at 0x12f903cd0>, <_ast.Constant object at 0x12f903d00>, <_ast.Constant object at 0x12f903d30>, <_\
-ast.Constant object at 0x12f903d60>, <_ast.Constant object at 0x12f903d90>, <_ast.Constant object at 0x12f903dc0>, <_ast.Constant \
-object at 0x12f903df0>, <_ast.Constant object at 0x12f903e20>, <_ast.Constant object at 0x12f903e50>, <_ast.Constant object at 0x12f903e80>, <_\
-ast.Constant object at 0x12f903eb0>, <_ast.Constant object at 0x12f903ee0>, <_ast.Constant object at 0x12f903f10>, <_ast.Constant \
-object at 0x12f903f40>, <_ast.Constant object at 0x12f903f70>, <_ast.Constant object at 0x12f903fa0>, <_ast.Constant object at 0x12f903fd0>, <_\
-ast.Constant object at 0x12f90c040>, <_ast.Constant object at 0x12f90c070>, <_ast.Constant object at 0x12f90c0a0>, <_ast.Constant \
-object at 0x12f90c0d0>, <_ast.Constant object at 0x12f90c100>, <_ast.Constant object at 0x12f90c130>, <_ast.Constant object at 0x12f90c160>, <_\
-ast.Constant object at 0x12f90c190>, <_ast.Constant object at 0x12f90c1c0>, <_ast.Constant object at 0x12f90c1f0>, <_ast.Constant \
-object at 0x12f90c220>, <_ast.Constant object at 0x12f90c280>, <_ast.Constant object at 0x12f90c250>, <_ast.Constant object at 0x12f90c2b0>, <_\
-ast.Constant object at 0x12f90c2e0>, <_ast.Constant object at 0x12f90c310>, <_ast.Constant object at 0x12f90c340>, <_ast.Constant \
-object at 0x12f90c370>, <_ast.Constant object at 0x12f90c3a0>, <_ast.Constant object at 0x12f90c3d0>, <_ast.Constant object at 0x12f90c400>](\
+	"df(52)$3" -> "[<_ast.Constant object at 0x7fd4d058e910>, <_ast.Constant object at 0x7fd4d058e940>, <_ast.Constant object at 0x7fd4d058e970>, <_\
+ast.Constant object at 0x7fd4d058e9a0>, <_ast.Constant object at 0x7fd4d058e9d0>, <_ast.Constant object at 0x7fd4d058ea00>, <_ast.Constant \
+object at 0x7fd4d058ea30>, <_ast.Constant object at 0x7fd4d058ea60>, <_ast.Constant object at 0x7fd4d058ea90>, <_ast.Constant object \
+at 0x7fd4d058eac0>, <_ast.Constant object at 0x7fd4d058eaf0>, <_ast.Constant object at 0x7fd4d058eb20>, <_ast.Constant object at \
+0x7fd4d058eb50>, <_ast.Constant object at 0x7fd4d058eb80>, <_ast.Constant object at 0x7fd4d058ebb0>, <_ast.Constant object at 0x7fd4d058ebe0>, <_\
+ast.Constant object at 0x7fd4d058ec10>, <_ast.Constant object at 0x7fd4d058ec40>, <_ast.Constant object at 0x7fd4d058ec70>, <_ast.Constant \
+object at 0x7fd4d058eca0>, <_ast.Constant object at 0x7fd4d058ecd0>, <_ast.Constant object at 0x7fd4d058ed00>, <_ast.Constant object \
+at 0x7fd4d058ed30>, <_ast.Constant object at 0x7fd4d058ed60>, <_ast.Constant object at 0x7fd4d058ed90>, <_ast.Constant object at \
+0x7fd4d058edc0>, <_ast.Constant object at 0x7fd4d058edf0>, <_ast.Constant object at 0x7fd4d058ee20>, <_ast.Constant object at 0x7fd4d058ee50>, <_\
+ast.Constant object at 0x7fd4d058ee80>, <_ast.Constant object at 0x7fd4d058eeb0>, <_ast.Constant object at 0x7fd4d058eee0>, <_ast.Constant \
+object at 0x7fd4d058ef10>, <_ast.Constant object at 0x7fd4d058ef40>, <_ast.Constant object at 0x7fd4d058ef70>, <_ast.Constant object \
+at 0x7fd4d058efa0>, <_ast.Constant object at 0x7fd4d058efd0>, <_ast.Constant object at 0x7fd4d0579040>, <_ast.Constant object at \
+0x7fd4d0579070>, <_ast.Constant object at 0x7fd4d05790a0>, <_ast.Constant object at 0x7fd4d05790d0>, <_ast.Constant object at 0x7fd4d0579100>](\
 52)"	[label=sum];
 	"df(52)$3" -> "1(52)"	[label=sum];
 	"df(52)$4" -> "mean(52)"	[label=transform];
 	"df(52)$4" -> "df(52)$3"	[label=transform];
-	"df(52)$4" -> "[<_ast.Constant object at 0x12f90c7c0>](52)"	[label=transform];
+	"df(52)$4" -> "[<_ast.Constant object at 0x7fd4d05794c0>](52)"	[label=transform];
 	"df(52)$4" -> "sum_event_code_count(52)"	[label=transform];
 	"features(52)$0" -> "reduce_train(52)"	[label=assignedFrom];
 	"features(52)$0" -> "1(52)"	[label=assignedFrom];
 	"features(52)$0" -> "0(52)"	[label=assignedFrom];
 	"features(52)$1" -> "features(52)$1"	[label=Add];
 	"features(52)$1" -> "x(52)"	[label=Add];
-	"features(52)$1" -> "[<_ast.Constant object at 0x12f90cf40>, <_ast.Constant object at 0x12f90cf70>](52)"	[label=Add];
+	"features(52)$1" -> "[<_ast.Constant object at 0x7fd4d0579c40>, <_ast.Constant object at 0x7fd4d0579c70>](52)"	[label=Add];
 	"features(52)$1" -> "acc_(52)"	[label=Add];
 	"features(52)$1" -> "title(52)"	[label=Add];
 	"features(52)$1" -> "assess_titles(52)"	[label=Add];
@@ -1408,14 +1401,16 @@ object at 0x12f90c370>, <_ast.Constant object at 0x12f90c3a0>, <_ast.Constant ob
 	"0.9(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"100(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"cappa(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
+	"y(0)$0" -> "reduce_train(0)$1"	[label=assignedFrom];
+	"y(0)$0" -> "accuracy_group(0)"	[label=assignedFrom];
 	"accuracy_group(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"5(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"n_fold(0)$0" -> "5(0)"	[label=assignedFrom];
 	"folds(0)$0" -> "n_fold(0)$0"	[label=GroupKFold];
-	"[<_ast.Constant object at 0x12f91ddf0>, <_ast.Constant object at 0x12f91de20>, <_ast.Constant object at 0x12f91de50>, <_ast.Constant \
-object at 0x12f91de80>, <_ast.Constant object at 0x12f91deb0>](0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
-	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x12f91ddf0>, <_ast.Constant object at 0x12f91de20>, <_ast.Constant object at 0x12f91de50>, <_ast.Constant \
-object at 0x12f91de80>, <_ast.Constant object at 0x12f91deb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d05a1af0>, <_ast.Constant object at 0x7fd4d05a1b20>, <_ast.Constant object at 0x7fd4d05a1b50>, <_\
+ast.Constant object at 0x7fd4d05a1b80>, <_ast.Constant object at 0x7fd4d05a1bb0>](0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
+	"cols_to_drop(0)$0" -> "[<_ast.Constant object at 0x7fd4d05a1af0>, <_ast.Constant object at 0x7fd4d05a1b20>, <_ast.Constant object at 0x7fd4d05a1b50>, <_\
+ast.Constant object at 0x7fd4d05a1b80>, <_ast.Constant object at 0x7fd4d05a1bb0>](0)"	[label=assignedFrom];
 	"ft(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
 	"transformers(0)$0" -> "ft(0)"	[label=assignedFrom];
 	"LGBWrapper_regr(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
@@ -1438,19 +1433,19 @@ object at 0x12f91de80>, <_ast.Constant object at 0x12f91deb0>](0)"	[label=assign
 	"X_p(55)$0" -> "coef(55)"	[label=cut];
 	"X_p(55)$0" -> "X(55)"	[label=cut];
 	"X_p(55)$0" -> "pd(55)"	[label=cut];
-	"X_p(55)$0" -> "[<_ast.UnaryOp object at 0x12f8ecfa0>](55)"	[label=cut];
+	"X_p(55)$0" -> "[<_ast.UnaryOp object at 0x7fd4d05a5d00>](55)"	[label=cut];
 	"X_p(55)$0" -> "list(55)"	[label=cut];
 	"X_p(55)$0" -> "np(55)"	[label=cut];
-	"X_p(55)$0" -> "[<_ast.Attribute object at 0x12f91b1c0>](55)"	[label=cut];
-	"X_p(55)$0" -> "[<_ast.Constant object at 0x12f91b310>, <_ast.Constant object at 0x12f91b340>, <_ast.Constant object at 0x12f91b370>, <_ast.Constant \
-object at 0x12f91b3a0>](55)"	[label=cut];
+	"X_p(55)$0" -> "[<_ast.Attribute object at 0x7fd4d05a5ee0>](55)"	[label=cut];
+	"X_p(55)$0" -> "[<_ast.Constant object at 0x7fd4d05a5fd0>, <_ast.Constant object at 0x7fd4d05a5a90>, <_ast.Constant object at 0x7fd4d05a5a30>, <_\
+ast.Constant object at 0x7fd4d0574040>](55)"	[label=cut];
 	"self(56)" -> "fit[0]"	[label=_argToVar];
 	"X(56)" -> "fit[1]"	[label=_argToVar];
 	"y(56)" -> "fit[2]"	[label=_argToVar];
 	"loss_partial(56)$0" -> "self(56)"	[label=partial];
 	"loss_partial(56)$0" -> "X(56)"	[label=partial];
 	"loss_partial(56)$0" -> "y(56)"	[label=partial];
-	"initial_coef(56)$0" -> "[<_ast.Constant object at 0x12f91b940>, <_ast.Constant object at 0x12f91b970>, <_ast.Constant object at 0x12f91b9a0>](56)"	[label=assignedFrom];
+	"initial_coef(56)$0" -> "[<_ast.Constant object at 0x7fd4d0574610>, <_ast.Constant object at 0x7fd4d0574640>, <_ast.Constant object at 0x7fd4d0574670>](56)"	[label=assignedFrom];
 	"self(56)$0" -> "self(56)"	[label=minimize];
 	"self(56)$0" -> "loss_partial(56)$0"	[label=minimize];
 	"self(56)$0" -> "initial_coef(56)$0"	[label=minimize];
@@ -1463,11 +1458,17 @@ object at 0x12f91b3a0>](55)"	[label=cut];
 	"pr1(0)$0" -> "reduce_train(0)$1"	[label=predict];
 	"pr1(0)$0" -> "regressor_model1(0)$1"	[label=predict];
 	"optR(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];
-	"optR(0)$0" -> "y(0)$0"	[label=fit];
 	"optR(0)$0" -> "1(0)"	[label=fit];
+	"optR(0)$0" -> "y(0)$0"	[label=fit];
 	"optR(0)$0" -> "pr1(0)$0"	[label=fit];
 	"optR(0)$0" -> "optR(0)"	[label=fit];
 	"coefficients(0)$0" -> "optR(0)$0"	[label=coefficients];
+	"opt_preds(0)$0" -> "1(0)"	[label=predict];
+	"opt_preds(0)$0" -> "pr1(0)$0"	[label=predict];
+	"opt_preds(0)$0" -> "optR(0)$0"	[label=predict];
+	"opt_preds(0)$0" -> "coefficients(0)$0"	[label=predict];
+	"qwk[1032/0]" -> "y(0)$0"	[label=qwk];
+	"qwk[1032/0]" -> "opt_preds(0)$0"	[label=qwk];
 	"pr1(0)$1" -> "reduce_test(0)$1"	[label=predict];
 	"pr1(0)$1" -> "regressor_model1(0)$1"	[label=predict];
 	"0(0)" -> "quick-and-dirty-regression.ipynb"	[label=appearsIn];

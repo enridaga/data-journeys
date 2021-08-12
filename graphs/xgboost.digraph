@@ -9,10 +9,10 @@ strict digraph "" {
 	"data(0)$0" -> "pd(0)"	[label=read_csv];
 	"data(0)$0" -> "../input/melbourne-housing-snapshot/melb_data.csv(0)"	[label=read_csv];
 	"../input/melbourne-housing-snapshot/melb_data.csv(0)" -> "xgboost.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9899a0>, <_ast.Constant object at 0x12f989df0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant \
-object at 0x12f989f40>, <_ast.Constant object at 0x12f989fa0>](0)" -> "xgboost.ipynb"	[label=appearsIn];
-	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x12f9899a0>, <_ast.Constant object at 0x12f989df0>, <_ast.Constant object at 0x12f989a00>, <_ast.Constant \
-object at 0x12f989f40>, <_ast.Constant object at 0x12f989fa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd4c048e970>, <_\
+ast.Constant object at 0x7fd4c048ec10>, <_ast.Constant object at 0x7fd4c048ecd0>](0)" -> "xgboost.ipynb"	[label=appearsIn];
+	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd4c048e970>, <_\
+ast.Constant object at 0x7fd4c048ec10>, <_ast.Constant object at 0x7fd4c048ecd0>](0)"	[label=assignedFrom];
 	"X(0)$0" -> "data(0)$0"	[label=assignedFrom];
 	"X(0)$0" -> "cols_to_use(0)$0"	[label=assignedFrom];
 	"y(0)$0" -> "data(0)$0"	[label=assignedFrom];
@@ -39,12 +39,12 @@ object at 0x12f989f40>, <_ast.Constant object at 0x12f989fa0>](0)"	[label=assign
 	"predictions(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"predictions(0)$0" -> "my_model(0)$0"	[label=predict];
 	"Mean Absolute Error: (0)" -> "xgboost.ipynb"	[label=appearsIn];
-	"print[0]" -> "Mean Absolute Error: (0)"	[label=print];
+	"print[46/0]" -> "y_valid(0)$0"	[label=print];
+	"print[46/0]" -> "mean_absolute_error(0)"	[label=print];
+	"print[46/0]" -> "predictions(0)$0"	[label=print];
+	"print[46/0]" -> "Mean Absolute Error: (0)"	[label=print];
+	"print[46/0]" -> "str(0)"	[label=print];
 	"str(0)" -> "xgboost.ipynb"	[label=appearsIn];
-	"print[1]" -> "str(0)"	[label=print];
-	"print[2]" -> "mean_absolute_error(0)"	[label=print];
-	"print[3]" -> "predictions(0)$0"	[label=print];
-	"print[4]" -> "y_valid(0)$0"	[label=print];
 	"500(0)" -> "xgboost.ipynb"	[label=appearsIn];
 	"my_model(0)$1" -> "500(0)"	[label=XGBRegressor];
 	"my_model(0)$2" -> "X_train(0)$0"	[label=fit];

@@ -25,13 +25,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Score: (0)"	[label=print];
-	"Score: (0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "score(0)$0"	[label=print];
-	"score(0)$0" -> "new(0)$1"	[label=cost_function];
-	"print[2]" -> "filename(0)"	[label=print];
+	"print[15/8]" -> "os(0)"	[label=print];
+	"print[15/8]" -> "dirname(0)"	[label=print];
+	"print[15/8]" -> "filename(0)"	[label=print];
 	"/kaggle/input/santa-2019-workshop-scheduling/family_data.csv(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	"fpath(0)$0" -> "/kaggle/input/santa-2019-workshop-scheduling/family_data.csv(0)"	[label=assignedFrom];
 	"data(0)$0" -> "pd(0)"	[label=read_csv];
@@ -46,9 +42,9 @@ digraph "" {
 	"data(0)$1" -> "data(0)$0"	[label=head];
 	"submission(0)$1" -> "submission(0)$0"	[label=head];
 	"family_size_dict(0)$0" -> "data(0)$1"	[label=assignedFrom];
-	"family_size_dict(0)$0" -> "[<_ast.Constant object at 0x12f9516a0>](0)"	[label=assignedFrom];
+	"family_size_dict(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0bb0>](0)"	[label=assignedFrom];
 	"family_size_dict(0)$0" -> "n_people(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9516a0>](0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0bb0>](0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	"n_people(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	"choice_(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	"cols(0)$0" -> "choice_(0)"	[label=assignedFrom];
@@ -211,10 +207,14 @@ digraph "" {
 	"start_score(0)$1" -> "new(0)$1"	[label=cost_function];
 	"submission(0)$2" -> "submission(0)$1"	[label=assignedFrom];
 	"submission(0)$2" -> "new(0)$1"	[label=assignedFrom];
-	"submission(0)$3" -> "score(0)$0"	[label=to_csv];
+	"score(0)$0" -> "new(0)$1"	[label=cost_function];
 	"submission(0)$3" -> "submission(0)$2"	[label=to_csv];
+	"submission(0)$3" -> "score(0)$0"	[label=to_csv];
 	"submission(0)$3" -> "submission_(0)"	[label=to_csv];
 	"submission(0)$3" -> ".csv(0)"	[label=to_csv];
 	"submission_(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
 	".csv(0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
+	"Score: (0)" -> "santa-s-2019-starter-notebook.ipynb"	[label=appearsIn];
+	"print[128/0]" -> "score(0)$0"	[label=print];
+	"print[128/0]" -> "Score: (0)"	[label=print];
 }

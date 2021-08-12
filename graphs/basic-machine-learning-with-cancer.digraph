@@ -54,51 +54,9 @@ strict digraph "" {
 	"data(0)$0" -> "0(0)"	[label=read_csv];
 	"../input/data.csv(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"0(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"print[0]" -> "data(0)$0"	[label=print];
-	"print[0]" -> "features_mean(0)$0"	[label=print];
-	"print[0]" -> "features_se(0)$0"	[label=print];
-	"print[0]" -> "features_worst(0)$0"	[label=print];
-	"print[0]" -> "-----------------------------------(0)"	[label=print];
-	"print[0]" -> "------------------------------------(0)"	[label=print];
-	"print[0]" -> "train(0)$0"	[label=print];
-	"print[0]" -> "test(0)$0"	[label=print];
-	"print[0]" -> "featimp(0)$0"	[label=print];
-	"print[0]" -> "featimp(0)$1"	[label=print];
-	"print[0]" -> "Accuracy : \%s(2)"	[label=print];
-	"print[0]" -> "Cross-Validation Score : \%s(2)"	[label=print];
-	"print[0]" -> "clf(3)$1"	[label=print];
-	"print[0]" -> "The best parameter found on development set is :(3)"	[label=print];
-	"print[0]" -> "the bset estimator is (3)"	[label=print];
-	"print[0]" -> "The best score is (3)"	[label=print];
-	"features_mean(0)$0" -> "data(0)$3"	[label=list];
-	"features_mean(0)$0" -> "1(0)"	[label=list];
-	"features_mean(0)$0" -> "11(0)"	[label=list];
-	"features_se(0)$0" -> "data(0)$3"	[label=list];
-	"features_se(0)$0" -> "11(0)"	[label=list];
-	"features_se(0)$0" -> "20(0)"	[label=list];
-	"features_worst(0)$0" -> "data(0)$3"	[label=list];
-	"features_worst(0)$0" -> "21(0)"	[label=list];
-	"features_worst(0)$0" -> "31(0)"	[label=list];
-	"-----------------------------------(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"------------------------------------(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"train(0)$0" -> "data(0)$5"	[label=train_test_split];
-	"train(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"test(0)$0" -> "data(0)$5"	[label=train_test_split];
-	"test(0)$0" -> "0.3(0)"	[label=train_test_split];
-	"featimp(0)$0" -> "pd(0)"	[label=sort_values];
-	"featimp(0)$0" -> "prediction_var(0)$1"	[label=sort_values];
-	"featimp(0)$0" -> "model(0)$5"	[label=sort_values];
-	"featimp(0)$0" -> "False(0)"	[label=sort_values];
-	"featimp(0)$1" -> "pd(0)"	[label=sort_values];
-	"featimp(0)$1" -> "False(0)"	[label=sort_values];
-	"featimp(0)$1" -> "prediction_var(0)$3"	[label=sort_values];
-	"featimp(0)$1" -> "model(0)$15"	[label=sort_values];
-	"clf(3)$1" -> "clf(3)$0"	[label=fit];
-	"clf(3)$1" -> "train_X(3)"	[label=fit];
-	"clf(3)$1" -> "train_y(3)"	[label=fit];
+	"print[43/0]" -> "data(0)$0"	[label=print];
+	"print[43/0]" -> "2(0)"	[label=print];
 	"2(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"print[1]" -> "2(0)"	[label=print];
-	"print[1]" -> "{0:.3\%}(2)"	[label=print];
 	"data(0)$1" -> "data(0)$0"	[label=info];
 	"data(0)$2" -> "data(0)$1"	[label=drop];
 	"data(0)$2" -> "Unnamed: 32(0)"	[label=drop];
@@ -106,11 +64,27 @@ strict digraph "" {
 	"data(0)$3" -> "data(0)$2"	[label=drop];
 	"data(0)$3" -> "id(0)"	[label=drop];
 	"id(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"features_mean(0)$0" -> "data(0)$3"	[label=list];
+	"features_mean(0)$0" -> "1(0)"	[label=list];
+	"features_mean(0)$0" -> "11(0)"	[label=list];
 	"1(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"11(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"features_se(0)$0" -> "data(0)$3"	[label=list];
+	"features_se(0)$0" -> "11(0)"	[label=list];
+	"features_se(0)$0" -> "20(0)"	[label=list];
 	"20(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"features_worst(0)$0" -> "data(0)$3"	[label=list];
+	"features_worst(0)$0" -> "21(0)"	[label=list];
+	"features_worst(0)$0" -> "31(0)"	[label=list];
 	"21(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"31(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"print[74/0]" -> "features_mean(0)$0"	[label=print];
+	"-----------------------------------(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"print[76/0]" -> "-----------------------------------(0)"	[label=print];
+	"print[78/0]" -> "features_se(0)$0"	[label=print];
+	"------------------------------------(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"print[80/0]" -> "------------------------------------(0)"	[label=print];
+	"print[82/0]" -> "features_worst(0)$0"	[label=print];
 	"data(0)$4" -> "0(0)"	[label=map];
 	"data(0)$4" -> "data(0)$3"	[label=map];
 	"data(0)$4" -> "1(0)"	[label=map];
@@ -129,16 +103,22 @@ strict digraph "" {
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"sns(0)$1" -> "sns(0)$0"	[label=heatmap];
 	"sns(0)$1" -> "corr(0)$0"	[label=heatmap];
-	"[<_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957a60>, <_ast.Constant object at 0x12f9578b0>, <_ast.Constant \
-object at 0x12f957040>, <_ast.Constant object at 0x12f957820>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"prediction_var(0)$0" -> "[<_ast.Constant object at 0x12f957be0>, <_ast.Constant object at 0x12f957a60>, <_ast.Constant object at 0x12f9578b0>, <_ast.Constant \
-object at 0x12f957040>, <_ast.Constant object at 0x12f957820>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc1c0>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccdc0>, <_\
+ast.Constant object at 0x7fd4c04ccc40>, <_ast.Constant object at 0x7fd4c04cc280>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"prediction_var(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc1c0>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccdc0>, <_\
+ast.Constant object at 0x7fd4c04ccc40>, <_ast.Constant object at 0x7fd4c04cc280>](0)"	[label=assignedFrom];
+	"train(0)$0" -> "data(0)$5"	[label=train_test_split];
+	"train(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"0.3(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"train_X(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"test(0)$0" -> "data(0)$5"	[label=train_test_split];
+	"test(0)$0" -> "0.3(0)"	[label=train_test_split];
+	"print[120/0]" -> "train(0)$0"	[label=print];
+	"print[122/0]" -> "test(0)$0"	[label=print];
 	"train_X(0)$0" -> "prediction_var(0)$0"	[label=assignedFrom];
+	"train_X(0)$0" -> "train(0)$0"	[label=assignedFrom];
 	"train_y(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"test_X(0)$0" -> "test(0)$0"	[label=assignedFrom];
 	"test_X(0)$0" -> "prediction_var(0)$0"	[label=assignedFrom];
+	"test_X(0)$0" -> "test(0)$0"	[label=assignedFrom];
 	"test_y(0)$0" -> "test(0)$0"	[label=assignedFrom];
 	"100(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"model(0)$0" -> "100(0)"	[label=RandomForestClassifier];
@@ -175,7 +155,12 @@ object at 0x12f957040>, <_ast.Constant object at 0x12f957820>](0)"	[label=assign
 	"metrics(0)$2" -> "metrics(0)$1"	[label=accuracy_score];
 	"metrics(0)$2" -> "test_y(0)$1"	[label=accuracy_score];
 	"metrics(0)$2" -> "prediction(0)$2"	[label=accuracy_score];
+	"featimp(0)$0" -> "pd(0)"	[label=sort_values];
+	"featimp(0)$0" -> "prediction_var(0)$1"	[label=sort_values];
+	"featimp(0)$0" -> "model(0)$5"	[label=sort_values];
+	"featimp(0)$0" -> "False(0)"	[label=sort_values];
 	"False(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"print[164/0]" -> "featimp(0)$0"	[label=print];
 	"model(0)$6" -> "svm(0)"	[label=SVC];
 	"model(0)$7" -> "train_X(0)$1"	[label=fit];
 	"model(0)$7" -> "train_y(0)$1"	[label=fit];
@@ -185,10 +170,10 @@ object at 0x12f957040>, <_ast.Constant object at 0x12f957820>](0)"	[label=assign
 	"metrics(0)$3" -> "test_y(0)$1"	[label=accuracy_score];
 	"metrics(0)$3" -> "metrics(0)$2"	[label=accuracy_score];
 	"metrics(0)$3" -> "prediction(0)$3"	[label=accuracy_score];
-	"[<_ast.Constant object at 0x130522610>, <_ast.Constant object at 0x130522400>, <_ast.Constant object at 0x130522eb0>, <_ast.Constant \
-object at 0x130522820>, <_ast.Constant object at 0x130522670>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"prediction_var(0)$2" -> "[<_ast.Constant object at 0x130522610>, <_ast.Constant object at 0x130522400>, <_ast.Constant object at 0x130522eb0>, <_ast.Constant \
-object at 0x130522820>, <_ast.Constant object at 0x130522670>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085bd30>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"prediction_var(0)$2" -> "[<_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085bd30>](0)"	[label=assignedFrom];
 	"train_X(0)$2" -> "train(0)$0"	[label=assignedFrom];
 	"train_X(0)$2" -> "prediction_var(0)$2"	[label=assignedFrom];
 	"train_y(0)$2" -> "train(0)$0"	[label=assignedFrom];
@@ -238,10 +223,15 @@ object at 0x130522820>, <_ast.Constant object at 0x130522670>](0)"	[label=assign
 	"metrics(0)$7" -> "test_y(0)$3"	[label=accuracy_score];
 	"metrics(0)$7" -> "metrics(0)$6"	[label=accuracy_score];
 	"metrics(0)$7" -> "prediction(0)$7"	[label=accuracy_score];
-	"[<_ast.Constant object at 0x12f8f5f10>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5a00>, <_ast.Constant \
-object at 0x12f8f54c0>, <_ast.Constant object at 0x12f8f5100>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"prediction_var(0)$4" -> "[<_ast.Constant object at 0x12f8f5f10>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5a00>, <_ast.Constant \
-object at 0x12f8f54c0>, <_ast.Constant object at 0x12f8f5100>](0)"	[label=assignedFrom];
+	"featimp(0)$1" -> "pd(0)"	[label=sort_values];
+	"featimp(0)$1" -> "False(0)"	[label=sort_values];
+	"featimp(0)$1" -> "prediction_var(0)$3"	[label=sort_values];
+	"featimp(0)$1" -> "model(0)$15"	[label=sort_values];
+	"print[240/0]" -> "featimp(0)$1"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ff9d0>, <_\
+ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff640>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"prediction_var(0)$4" -> "[<_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ff9d0>, <_\
+ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff640>](0)"	[label=assignedFrom];
 	"train_X(0)$4" -> "train(0)$0"	[label=assignedFrom];
 	"train_X(0)$4" -> "prediction_var(0)$4"	[label=assignedFrom];
 	"train_y(0)$4" -> "train(0)$0"	[label=assignedFrom];
@@ -280,10 +270,10 @@ object at 0x12f8f54c0>, <_ast.Constant object at 0x12f8f5100>](0)"	[label=assign
 	"pd(0)$0" -> "pd(0)"	[label=scatter_matrix];
 	"pd(0)$0" -> "features_mean(0)$0"	[label=scatter_matrix];
 	"pd(0)$0" -> "data(0)$5"	[label=scatter_matrix];
-	"[<_ast.Constant object at 0x12f951a00>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f951670>, <_ast.Constant \
-object at 0x12f951640>, <_ast.Constant object at 0x12f951d30>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"predictor_var(0)$0" -> "[<_ast.Constant object at 0x12f951a00>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f951670>, <_ast.Constant \
-object at 0x12f951640>, <_ast.Constant object at 0x12f951d30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd490293d30>, <_ast.Constant object at 0x7fd4902937c0>, <_ast.Constant object at 0x7fd490293c70>, <_\
+ast.Constant object at 0x7fd490293eb0>, <_ast.Constant object at 0x7fd490293ca0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"predictor_var(0)$0" -> "[<_ast.Constant object at 0x7fd490293d30>, <_ast.Constant object at 0x7fd4902937c0>, <_ast.Constant object at 0x7fd490293c70>, <_\
+ast.Constant object at 0x7fd490293eb0>, <_ast.Constant object at 0x7fd490293ca0>](0)"	[label=assignedFrom];
 	"model(1)" -> "model[0]"	[label=_argToVar];
 	"data(1)" -> "model[1]"	[label=_argToVar];
 	"prediction(1)" -> "model[2]"	[label=_argToVar];
@@ -291,25 +281,14 @@ object at 0x12f951640>, <_ast.Constant object at 0x12f951d30>](0)"	[label=assign
 	"kf(1)$0" -> "data(1)"	[label=KFold];
 	"kf(1)$0" -> "0(1)"	[label=KFold];
 	"kf(1)$0" -> "10(1)"	[label=KFold];
-	"[<_ast.Constant object at 0x12fc4b0d0>, <_ast.Constant object at 0x12fc4b160>, <_ast.Constant object at 0x12fc4b310>, <_ast.Constant \
-object at 0x12fc4b370>, <_ast.Constant object at 0x12fc4b430>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"prediction_var(0)$5" -> "[<_ast.Constant object at 0x12fc4b0d0>, <_ast.Constant object at 0x12fc4b160>, <_ast.Constant object at 0x12fc4b310>, <_ast.Constant \
-object at 0x12fc4b370>, <_ast.Constant object at 0x12fc4b430>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902933a0>, <_ast.Constant object at 0x7fd490293520>, <_ast.Constant object at 0x7fd4902932b0>, <_\
+ast.Constant object at 0x7fd490293e50>, <_ast.Constant object at 0x7fd5009bb3a0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"prediction_var(0)$5" -> "[<_ast.Constant object at 0x7fd4902933a0>, <_ast.Constant object at 0x7fd490293520>, <_ast.Constant object at 0x7fd4902932b0>, <_\
+ast.Constant object at 0x7fd490293e50>, <_ast.Constant object at 0x7fd5009bb3a0>](0)"	[label=assignedFrom];
 	"model(2)" -> "classification_model[0]"	[label=_argToVar];
-	"classification_model[0]" -> "model(0)$19"	[label=classification_model];
-	"classification_model[0]" -> "model(0)$20"	[label=classification_model];
-	"classification_model[0]" -> "model(0)$21"	[label=classification_model];
-	"model(0)$20" -> "svm(0)"	[label=SVC];
-	"model(0)$21" -> "100(0)"	[label=RandomForestClassifier];
 	"data(2)" -> "classification_model[1]"	[label=_argToVar];
-	"classification_model[1]" -> "data(0)$5"	[label=classification_model];
 	"prediction_input(2)" -> "classification_model[2]"	[label=_argToVar];
-	"classification_model[2]" -> "prediction_var(0)$6"	[label=classification_model];
-	"prediction_var(0)$6" -> "[<_ast.Constant object at 0x12fc3a040>, <_ast.Constant object at 0x12fc3a220>, <_ast.Constant object at 0x12fc3a610>, <_ast.Constant \
-object at 0x12fc3a0a0>, <_ast.Constant object at 0x12fc3a1c0>](0)"	[label=assignedFrom];
 	"output(2)" -> "classification_model[3]"	[label=_argToVar];
-	"classification_model[3]" -> "outcome_var(0)$0"	[label=classification_model];
-	"outcome_var(0)$0" -> "diagnosis(0)"	[label=assignedFrom];
 	"model(2)$0" -> "model(2)"	[label=fit];
 	"model(2)$0" -> "data(2)"	[label=fit];
 	"model(2)$0" -> "prediction_input(2)"	[label=fit];
@@ -321,8 +300,9 @@ object at 0x12fc3a0a0>, <_ast.Constant object at 0x12fc3a1c0>](0)"	[label=assign
 	"accuracy(2)$0" -> "output(2)"	[label=accuracy_score];
 	"accuracy(2)$0" -> "predictions(2)$0"	[label=accuracy_score];
 	"accuracy(2)$0" -> "metrics(2)"	[label=accuracy_score];
-	"print[2]" -> "accuracy(2)$0"	[label=print];
-	"print[2]" -> "np(2)"	[label=print];
+	"print[353/4]" -> "accuracy(2)$0"	[label=print];
+	"print[353/4]" -> "Accuracy : \%s(2)"	[label=print];
+	"print[353/4]" -> "{0:.3\%}(2)"	[label=print];
 	"kf(2)$0" -> "data(2)"	[label=KFold];
 	"kf(2)$0" -> "0(2)"	[label=KFold];
 	"kf(2)$0" -> "5(2)"	[label=KFold];
@@ -348,55 +328,82 @@ object at 0x12fc3a0a0>, <_ast.Constant object at 0x12fc3a1c0>](0)"	[label=assign
 	"error(2)$1" -> "model(2)$1"	[label=append];
 	"error(2)$1" -> "test_X(2)$0"	[label=append];
 	"error(2)$1" -> "test_y(2)$0"	[label=append];
-	"print[3]" -> "error(2)$1"	[label=print];
-	"[<_ast.Constant object at 0x12fc3a040>, <_ast.Constant object at 0x12fc3a220>, <_ast.Constant object at 0x12fc3a610>, <_ast.Constant \
-object at 0x12fc3a0a0>, <_ast.Constant object at 0x12fc3a1c0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"print[403/8]" -> "{0:.3\%}(2)"	[label=print];
+	"print[403/8]" -> "error(2)$1"	[label=print];
+	"print[403/8]" -> "Cross-Validation Score : \%s(2)"	[label=print];
+	"print[403/8]" -> "np(2)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5008101f0>, <_ast.Constant object at 0x7fd500810250>, <_ast.Constant object at 0x7fd5008102b0>, <_\
+ast.Constant object at 0x7fd500810280>, <_ast.Constant object at 0x7fd500810220>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"prediction_var(0)$6" -> "[<_ast.Constant object at 0x7fd5008101f0>, <_ast.Constant object at 0x7fd500810250>, <_ast.Constant object at 0x7fd5008102b0>, <_\
+ast.Constant object at 0x7fd500810280>, <_ast.Constant object at 0x7fd500810220>](0)"	[label=assignedFrom];
+	"outcome_var(0)$0" -> "diagnosis(0)"	[label=assignedFrom];
+	"classification_model[417/0]" -> "data(0)$5"	[label=classification_model];
+	"classification_model[417/0]" -> "model(0)$19"	[label=classification_model];
+	"classification_model[417/0]" -> "prediction_var(0)$6"	[label=classification_model];
+	"classification_model[417/0]" -> "outcome_var(0)$0"	[label=classification_model];
+	"model(0)$20" -> "svm(0)"	[label=SVC];
+	"classification_model[423/0]" -> "data(0)$5"	[label=classification_model];
+	"classification_model[423/0]" -> "prediction_var(0)$6"	[label=classification_model];
+	"classification_model[423/0]" -> "outcome_var(0)$0"	[label=classification_model];
+	"classification_model[423/0]" -> "model(0)$20"	[label=classification_model];
+	"classification_model[429/0]" -> "data(0)$5"	[label=classification_model];
+	"classification_model[429/0]" -> "prediction_var(0)$6"	[label=classification_model];
+	"classification_model[429/0]" -> "outcome_var(0)$0"	[label=classification_model];
+	"classification_model[429/0]" -> "model(0)$20"	[label=classification_model];
+	"model(0)$21" -> "100(0)"	[label=RandomForestClassifier];
+	"classification_model[436/0]" -> "data(0)$5"	[label=classification_model];
+	"classification_model[436/0]" -> "prediction_var(0)$6"	[label=classification_model];
+	"classification_model[436/0]" -> "outcome_var(0)$0"	[label=classification_model];
+	"classification_model[436/0]" -> "model(0)$21"	[label=classification_model];
+	"classification_model[445/0]" -> "data(0)$5"	[label=classification_model];
+	"classification_model[445/0]" -> "prediction_var(0)$6"	[label=classification_model];
+	"classification_model[445/0]" -> "outcome_var(0)$0"	[label=classification_model];
+	"classification_model[445/0]" -> "model(0)$21"	[label=classification_model];
 	"data_X(0)$0" -> "data(0)$5"	[label=assignedFrom];
 	"data_X(0)$0" -> "prediction_var(0)$6"	[label=assignedFrom];
 	"data_y(0)$0" -> "diagnosis(0)"	[label=assignedFrom];
 	"data_y(0)$0" -> "data(0)$5"	[label=assignedFrom];
 	"model(3)" -> "Classification_model_gridsearchCV[0]"	[label=_argToVar];
-	"Classification_model_gridsearchCV[0]" -> "model(0)$21"	[label=Classification_model_gridsearchCV];
-	"Classification_model_gridsearchCV[0]" -> "model(0)$22"	[label=Classification_model_gridsearchCV];
-	"model(0)$22" -> "svm(0)"	[label=SVC];
 	"param_grid(3)" -> "Classification_model_gridsearchCV[1]"	[label=_argToVar];
-	"Classification_model_gridsearchCV[1]" -> "param_grid(0)$0"	[label=Classification_model_gridsearchCV];
-	"Classification_model_gridsearchCV[1]" -> "param_grid(0)$1"	[label=Classification_model_gridsearchCV];
-	"Classification_model_gridsearchCV[1]" -> "param_grid(0)$2"	[label=Classification_model_gridsearchCV];
-	"param_grid(0)$0" -> "max_features(0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "min_samples_split(0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "min_samples_leaf(0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f9a30a0>, <_ast.Constant object at 0x12f9a30d0>, <_ast.Constant object at 0x12f9a3100>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f9a3160>, <_ast.Constant object at 0x12f9a3190>, <_ast.Constant object at 0x12f9a31c0>, <_ast.Constant \
-object at 0x12f9a31f0>, <_ast.Constant object at 0x12f9a3220>, <_ast.Constant object at 0x12f9a3250>, <_ast.Constant object at 0x12f9a3280>, <_\
-ast.Constant object at 0x12f9a32b0>, <_ast.Constant object at 0x12f9a32e0>](0)"	[label=assignedFrom];
-	"param_grid(0)$0" -> "[<_ast.Constant object at 0x12f9a3340>, <_ast.Constant object at 0x12f9a3370>, <_ast.Constant object at 0x12f9a33a0>, <_ast.Constant \
-object at 0x12f9a33d0>, <_ast.Constant object at 0x12f9a3400>, <_ast.Constant object at 0x12f9a3430>, <_ast.Constant object at 0x12f9a3460>, <_\
-ast.Constant object at 0x12f9a3490>, <_ast.Constant object at 0x12f9a34c0>](0)"	[label=assignedFrom];
-	"param_grid(0)$1" -> "k_range(0)$0"	[label=assignedFrom];
-	"param_grid(0)$1" -> "leaf_size(0)$0"	[label=assignedFrom];
-	"param_grid(0)$1" -> "weight_options(0)$0"	[label=assignedFrom];
-	"param_grid(0)$1" -> "n_neighbors(0)"	[label=assignedFrom];
-	"param_grid(0)$1" -> "weights(0)"	[label=assignedFrom];
-	"param_grid(0)$2" -> "[<_ast.Dict object at 0x12fc3b0d0>, <_ast.Dict object at 0x12fc3b2b0>](0)"	[label=assignedFrom];
 	"data_X(3)" -> "Classification_model_gridsearchCV[2]"	[label=_argToVar];
-	"Classification_model_gridsearchCV[2]" -> "data_X(0)$0"	[label=Classification_model_gridsearchCV];
 	"data_y(3)" -> "Classification_model_gridsearchCV[3]"	[label=_argToVar];
-	"Classification_model_gridsearchCV[3]" -> "data_y(0)$0"	[label=Classification_model_gridsearchCV];
 	"clf(3)$0" -> "model(3)"	[label=GridSearchCV];
 	"clf(3)$0" -> "param_grid(3)"	[label=GridSearchCV];
 	"clf(3)$0" -> "10(3)"	[label=GridSearchCV];
 	"clf(3)$0" -> "accuracy(3)"	[label=GridSearchCV];
+	"clf(3)$1" -> "clf(3)$0"	[label=fit];
+	"clf(3)$1" -> "train_X(3)"	[label=fit];
+	"clf(3)$1" -> "train_y(3)"	[label=fit];
+	"print[467/4]" -> "The best parameter found on development set is :(3)"	[label=print];
+	"print[471/4]" -> "clf(3)$1"	[label=print];
+	"print[473/4]" -> "the bset estimator is (3)"	[label=print];
+	"print[475/4]" -> "clf(3)$1"	[label=print];
+	"print[477/4]" -> "The best score is (3)"	[label=print];
+	"print[481/4]" -> "clf(3)$1"	[label=print];
 	"max_features(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"param_grid(0)$0" -> "max_features(0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "min_samples_split(0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "min_samples_leaf(0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04abd60>, <_ast.Constant object at 0x7fd4c04abd90>, <_ast.Constant object at 0x7fd4c04abdc0>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04abe20>, <_ast.Constant object at 0x7fd4c04abe50>, <_ast.Constant object at 0x7fd4c04abe80>, <_\
+ast.Constant object at 0x7fd4c04abeb0>, <_ast.Constant object at 0x7fd4c04abee0>, <_ast.Constant object at 0x7fd4c04abf10>, <_ast.Constant \
+object at 0x7fd4c04abf40>, <_ast.Constant object at 0x7fd4c04abf70>, <_ast.Constant object at 0x7fd4c04abfa0>](0)"	[label=assignedFrom];
+	"param_grid(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8040>, <_ast.Constant object at 0x7fd4c04a8070>, <_ast.Constant object at 0x7fd4c04a80a0>, <_\
+ast.Constant object at 0x7fd4c04a80d0>, <_ast.Constant object at 0x7fd4c04a8100>, <_ast.Constant object at 0x7fd4c04a8130>, <_ast.Constant \
+object at 0x7fd4c04a8160>, <_ast.Constant object at 0x7fd4c04a8190>, <_ast.Constant object at 0x7fd4c04a81c0>](0)"	[label=assignedFrom];
 	"min_samples_split(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"min_samples_leaf(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a30a0>, <_ast.Constant object at 0x12f9a30d0>, <_ast.Constant object at 0x12f9a3100>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3160>, <_ast.Constant object at 0x12f9a3190>, <_ast.Constant object at 0x12f9a31c0>, <_ast.Constant \
-object at 0x12f9a31f0>, <_ast.Constant object at 0x12f9a3220>, <_ast.Constant object at 0x12f9a3250>, <_ast.Constant object at 0x12f9a3280>, <_\
-ast.Constant object at 0x12f9a32b0>, <_ast.Constant object at 0x12f9a32e0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3340>, <_ast.Constant object at 0x12f9a3370>, <_ast.Constant object at 0x12f9a33a0>, <_ast.Constant \
-object at 0x12f9a33d0>, <_ast.Constant object at 0x12f9a3400>, <_ast.Constant object at 0x12f9a3430>, <_ast.Constant object at 0x12f9a3460>, <_\
-ast.Constant object at 0x12f9a3490>, <_ast.Constant object at 0x12f9a34c0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04abd60>, <_ast.Constant object at 0x7fd4c04abd90>, <_ast.Constant object at 0x7fd4c04abdc0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04abe20>, <_ast.Constant object at 0x7fd4c04abe50>, <_ast.Constant object at 0x7fd4c04abe80>, <_\
+ast.Constant object at 0x7fd4c04abeb0>, <_ast.Constant object at 0x7fd4c04abee0>, <_ast.Constant object at 0x7fd4c04abf10>, <_ast.Constant \
+object at 0x7fd4c04abf40>, <_ast.Constant object at 0x7fd4c04abf70>, <_ast.Constant object at 0x7fd4c04abfa0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8040>, <_ast.Constant object at 0x7fd4c04a8070>, <_ast.Constant object at 0x7fd4c04a80a0>, <_\
+ast.Constant object at 0x7fd4c04a80d0>, <_ast.Constant object at 0x7fd4c04a8100>, <_ast.Constant object at 0x7fd4c04a8130>, <_ast.Constant \
+object at 0x7fd4c04a8160>, <_ast.Constant object at 0x7fd4c04a8190>, <_ast.Constant object at 0x7fd4c04a81c0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"Classification_model_gridsearchCV[506/0]" -> "model(0)$21"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[506/0]" -> "data_X(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[506/0]" -> "data_y(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[506/0]" -> "param_grid(0)$0"	[label=Classification_model_gridsearchCV];
 	"range(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
 	"k_range(0)$0" -> "1(0)"	[label=list];
 	"k_range(0)$0" -> "range(0)"	[label=list];
@@ -405,9 +412,24 @@ ast.Constant object at 0x12f9a3490>, <_ast.Constant object at 0x12f9a34c0>](0)" 
 	"leaf_size(0)$0" -> "1(0)"	[label=list];
 	"leaf_size(0)$0" -> "range(0)"	[label=list];
 	"leaf_size(0)$0" -> "30(0)"	[label=list];
-	"[<_ast.Constant object at 0x12f9a3b80>, <_ast.Constant object at 0x12f9a3bb0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"weight_options(0)$0" -> "[<_ast.Constant object at 0x12f9a3b80>, <_ast.Constant object at 0x12f9a3bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04a8880>, <_ast.Constant object at 0x7fd4c04a88b0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"weight_options(0)$0" -> "[<_ast.Constant object at 0x7fd4c04a8880>, <_ast.Constant object at 0x7fd4c04a88b0>](0)"	[label=assignedFrom];
 	"n_neighbors(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"param_grid(0)$1" -> "k_range(0)$0"	[label=assignedFrom];
+	"param_grid(0)$1" -> "leaf_size(0)$0"	[label=assignedFrom];
+	"param_grid(0)$1" -> "weight_options(0)$0"	[label=assignedFrom];
+	"param_grid(0)$1" -> "n_neighbors(0)"	[label=assignedFrom];
+	"param_grid(0)$1" -> "weights(0)"	[label=assignedFrom];
 	"weights(0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
-	"[<_ast.Dict object at 0x12fc3b0d0>, <_ast.Dict object at 0x12fc3b2b0>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"Classification_model_gridsearchCV[521/0]" -> "model(0)$21"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[521/0]" -> "data_X(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[521/0]" -> "data_y(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[521/0]" -> "param_grid(0)$1"	[label=Classification_model_gridsearchCV];
+	"model(0)$22" -> "svm(0)"	[label=SVC];
+	"[<_ast.Dict object at 0x7fd4c04a8d90>, <_ast.Dict object at 0x7fd4c04a8f70>](0)" -> "basic-machine-learning-with-cancer.ipynb"	[label=appearsIn];
+	"param_grid(0)$2" -> "[<_ast.Dict object at 0x7fd4c04a8d90>, <_ast.Dict object at 0x7fd4c04a8f70>](0)"	[label=assignedFrom];
+	"Classification_model_gridsearchCV[542/0]" -> "data_X(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[542/0]" -> "data_y(0)$0"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[542/0]" -> "model(0)$22"	[label=Classification_model_gridsearchCV];
+	"Classification_model_gridsearchCV[542/0]" -> "param_grid(0)$2"	[label=Classification_model_gridsearchCV];
 }

@@ -91,7 +91,7 @@ digraph "" {
 	"tokenizer(0)$0" -> "True(0)"	[label=Tokenizer];
 	"True(0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
 	"fitting tokenizer(0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
-	"print[0]" -> "fitting tokenizer(0)"	[label=print];
+	"print[50/0]" -> "fitting tokenizer(0)"	[label=print];
 	"tokenizer(0)$1" -> "TEXT_COL(0)$0"	[label=fit_on_texts];
 	"tokenizer(0)$1" -> "train(0)$0"	[label=fit_on_texts];
 	"tokenizer(0)$1" -> "test(0)$0"	[label=fit_on_texts];
@@ -251,7 +251,7 @@ digraph "" {
 	"embedding_layer(11)$0" -> "word_index(11)"	[label=Embedding];
 	"embedding_layer(11)$0" -> "1(11)"	[label=Embedding];
 	"embedding_layer(11)$0" -> "300(11)"	[label=Embedding];
-	"embedding_layer(11)$0" -> "[<_ast.Name object at 0x12f88c250>](11)"	[label=Embedding];
+	"embedding_layer(11)$0" -> "[<_ast.Name object at 0x7fd4c04d8040>](11)"	[label=Embedding];
 	"embedding_layer(11)$0" -> "False(11)"	[label=Embedding];
 	"x(11)$0" -> "sequence_input(11)$0"	[label=embedding_layer];
 	"x(11)$1" -> "L(11)"	[label=assignedFrom];
@@ -269,7 +269,7 @@ digraph "" {
 	"max_pool1(11)$0" -> "L(11)"	[label=assignedFrom];
 	"max_pool1(11)$0" -> "x(11)$2"	[label=assignedFrom];
 	"x(11)$3" -> "L(11)"	[label=concatenate];
-	"x(11)$3" -> "[<_ast.Name object at 0x12f939070>, <_ast.Name object at 0x12f939400>, <_ast.Name object at 0x12f9390a0>](11)"	[label=concatenate];
+	"x(11)$3" -> "[<_ast.Name object at 0x7fd4c04d8fd0>, <_ast.Name object at 0x7fd4c04d80d0>, <_ast.Name object at 0x7fd4c04d8c10>](11)"	[label=concatenate];
 	"preds(11)$0" -> "L(11)"	[label=assignedFrom];
 	"preds(11)$0" -> "1(11)"	[label=assignedFrom];
 	"preds(11)$0" -> "x(11)$3"	[label=assignedFrom];
@@ -305,11 +305,11 @@ digraph "" {
 	"test_preds(0)$0" -> "np(0)"	[label=zeros];
 	"test_preds(0)$0" -> "X_test(0)$1"	[label=zeros];
 	"test_preds(0)$0" -> "0(0)"	[label=zeros];
-	"[<_ast.Constant object at 0x12faf5eb0>, <_ast.Constant object at 0x12faf5ac0>, <_ast.Constant object at 0x12faf5700>, <_ast.Constant \
-object at 0x12faf5b50>, <_ast.Constant object at 0x12faf5040>](0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902ab250>, <_\
+ast.Constant object at 0x7fd4902ab310>, <_ast.Constant object at 0x7fd4902ab850>](0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
 	"fold(0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
-	"fold(0)" -> "[<_ast.Constant object at 0x12faf5eb0>, <_ast.Constant object at 0x12faf5ac0>, <_ast.Constant object at 0x12faf5700>, <_ast.Constant \
-object at 0x12faf5b50>, <_ast.Constant object at 0x12faf5040>](0)"	[label=iteratorOf];
+	"fold(0)" -> "[<_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902ab250>, <_\
+ast.Constant object at 0x7fd4902ab310>, <_ast.Constant object at 0x7fd4902ab850>](0)"	[label=iteratorOf];
 	"K(0)$0" -> "K(0)"	[label=clear_session];
 	"tr_ind(0)$0" -> "splits(0)$0"	[label=assignedFrom];
 	"tr_ind(0)$0" -> "fold(0)"	[label=assignedFrom];
@@ -351,9 +351,9 @@ object at 0x12faf5b50>, <_ast.Constant object at 0x12faf5040>](0)"	[label=iterat
 	roc_auc_score -> "sklearn.metrics"	[label=importedBy];
 	"roc_auc_score(0)" -> "keras-baseline-lstm-attention-5-fold.ipynb"	[label=appearsIn];
 	"roc_auc_score(0)" -> roc_auc_score	[label=assignedFrom];
-	"roc_auc_score[0]" -> "y_train(0)$0"	[label=roc_auc_score];
-	"roc_auc_score[1]" -> "0.5(0)"	[label=roc_auc_score];
-	"roc_auc_score[2]" -> "oof_preds(0)$1"	[label=roc_auc_score];
+	"roc_auc_score[206/0]" -> "y_train(0)$0"	[label=roc_auc_score];
+	"roc_auc_score[206/0]" -> "0.5(0)"	[label=roc_auc_score];
+	"roc_auc_score[206/0]" -> "oof_preds(0)$1"	[label=roc_auc_score];
 	"submission(0)$0" -> "pd(0)"	[label=read_csv];
 	"submission(0)$0" -> "id(0)"	[label=read_csv];
 	"submission(0)$0" -> "../input/jigsaw-unintended-bias-in-toxicity-classification/sample_submission.csv(0)"	[label=read_csv];

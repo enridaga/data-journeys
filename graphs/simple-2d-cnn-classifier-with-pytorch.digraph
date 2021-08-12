@@ -87,8 +87,6 @@ digraph "" {
 	"transforms(0)" -> transforms	[label=assignedFrom];
 	"torch(0)$0" -> "torch(0)"	[label=is_available];
 	"seed(1)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "SEED(0)$0"	[label=seed_everything];
-	"SEED(0)$0" -> "2019(0)"	[label=assignedFrom];
 	"random(1)$0" -> "seed(1)"	[label=seed];
 	"random(1)$0" -> "random(1)"	[label=seed];
 	"os(1)$0" -> "seed(1)"	[label=str];
@@ -102,6 +100,8 @@ digraph "" {
 	"torch(1)$2" -> "torch(1)$1"	[label=assignedFrom];
 	"torch(1)$2" -> "True(1)"	[label=assignedFrom];
 	"2019(0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
+	"SEED(0)$0" -> "2019(0)"	[label=assignedFrom];
+	"seed_everything[37/0]" -> "SEED(0)$0"	[label=seed_everything];
 	"N_JOBS(0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
 	"os(0)$0" -> "os(0)"	[label=str];
 	"os(0)$0" -> "N_JOBS(0)"	[label=str];
@@ -202,9 +202,9 @@ digraph "" {
 	"train_noisy(0)$0" -> "csvs(0)$0"	[label=read_csv];
 	"train_noisy(0)$0" -> "train_noisy(0)$0"	[label=read_csv];
 	"train_df(0)$0" -> "pd(0)"	[label=concat];
-	"train_df(0)$0" -> "[<_ast.Name object at 0x12fadecd0>, <_ast.Name object at 0x12fade2b0>](0)"	[label=concat];
+	"train_df(0)$0" -> "[<_ast.Name object at 0x7fd5009996a0>, <_ast.Name object at 0x7fd500999df0>](0)"	[label=concat];
 	"train_df(0)$0" -> "True(0)"	[label=concat];
-	"[<_ast.Name object at 0x12fadecd0>, <_ast.Name object at 0x12fade2b0>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd5009996a0>, <_ast.Name object at 0x7fd500999df0>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
 	"True(0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
@@ -274,8 +274,8 @@ digraph "" {
 	"crop(7)$0" -> "random(7)"	[label=randint];
 	"crop(7)$0" -> "0(7)"	[label=randint];
 	"image(7)$1" -> "image(7)$0"	[label=crop];
-	"image(7)$1" -> "[<_ast.Name object at 0x12f957250>, <_ast.Constant object at 0x12f957940>, <_ast.BinOp object at 0x12f957370>, <_ast.Name object \
-at 0x12f957490>](7)"	[label=crop];
+	"image(7)$1" -> "[<_ast.Name object at 0x7fd4c04cceb0>, <_ast.Constant object at 0x7fd4c04cc520>, <_ast.BinOp object at 0x7fd4c04ccbe0>, <_ast.Name \
+object at 0x7fd4c04cc340>](7)"	[label=crop];
 	"image(7)$2" -> "self(7)"	[label=div_];
 	"image(7)$2" -> "image(7)$2"	[label=div_];
 	"image(7)$2" -> "255(7)"	[label=div_];
@@ -314,8 +314,8 @@ at 0x12f957490>](7)"	[label=crop];
 	"crop(11)$0" -> "random(11)"	[label=randint];
 	"crop(11)$0" -> "0(11)"	[label=randint];
 	"image(11)$1" -> "image(11)$0"	[label=crop];
-	"image(11)$1" -> "[<_ast.Name object at 0x12f9a40d0>, <_ast.Constant object at 0x12f9a4100>, <_ast.BinOp object at 0x12f9a4130>, <_ast.Name object \
-at 0x12f9a41c0>](11)"	[label=crop];
+	"image(11)$1" -> "[<_ast.Name object at 0x7fd4902abeb0>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.BinOp object at 0x7fd4902ab460>, <_ast.Name \
+object at 0x7fd4902abb50>](11)"	[label=crop];
 	"image(11)$2" -> "self(11)"	[label=div_];
 	"image(11)$2" -> "image(11)$2"	[label=div_];
 	"image(11)$2" -> "255(11)"	[label=div_];
@@ -325,10 +325,10 @@ at 0x12f9a41c0>](11)"	[label=crop];
 	"transforms_dict(0)$0" -> "transforms(0)"	[label=assignedFrom];
 	"transforms_dict(0)$0" -> "test(0)"	[label=assignedFrom];
 	"transforms_dict(0)$0" -> "train(0)"	[label=assignedFrom];
-	"transforms_dict(0)$0" -> "[<_ast.Call object at 0x12f9a47c0>, <_ast.Call object at 0x12f9a4880>](0)"	[label=assignedFrom];
-	"transforms_dict(0)$0" -> "[<_ast.Call object at 0x12f9a49d0>, <_ast.Call object at 0x12f9a4a90>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12f9a47c0>, <_ast.Call object at 0x12f9a4880>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f9a49d0>, <_ast.Call object at 0x12f9a4a90>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
+	"transforms_dict(0)$0" -> "[<_ast.Call object at 0x7fd50085ba00>, <_ast.Call object at 0x7fd50085b580>](0)"	[label=assignedFrom];
+	"transforms_dict(0)$0" -> "[<_ast.Call object at 0x7fd50085beb0>, <_ast.Call object at 0x7fd50085b520>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd50085ba00>, <_ast.Call object at 0x7fd50085b580>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd50085beb0>, <_ast.Call object at 0x7fd50085b520>](0)" -> "simple-2d-cnn-classifier-with-pytorch.ipynb"	[label=appearsIn];
 	"self(13)" -> "__init__[0]"	[label=_argToVar];
 	"in_channels(13)" -> "__init__[1]"	[label=_argToVar];
 	"out_channels(13)" -> "__init__[2]"	[label=_argToVar];
@@ -398,7 +398,7 @@ at 0x12f9a41c0>](11)"	[label=crop];
 	"_(18)$0" -> "2(18)"	[label=max];
 	"x(18)$3" -> "self(18)"	[label=fc];
 	"x(18)$3" -> "x(18)$3"	[label=fc];
-	"Classifier[0]" -> "num_classes(0)$0"	[label=Classifier];
+	"Classifier[273/0]" -> "num_classes(0)$0"	[label=Classifier];
 	"x_train(19)" -> "train_model[0]"	[label=_argToVar];
 	"y_train(19)" -> "train_model[1]"	[label=_argToVar];
 	"train_transforms(19)" -> "train_model[2]"	[label=_argToVar];

@@ -92,96 +92,68 @@ digraph "" {
 	"interactions_df(0)$2" -> "x(0)"	[label=apply];
 	"x(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"users_interactions_count_df(0)$0" -> "interactions_df(0)$2"	[label=size];
-	"users_interactions_count_df(0)$0" -> "[<_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4f5b0>](0)"	[label=size];
+	"users_interactions_count_df(0)$0" -> "[<_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd500999f10>](0)"	[label=size];
 	"users_interactions_count_df(0)$0" -> "personId(0)"	[label=size];
-	"[<_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4f5b0>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd500999f10>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"personId(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"# users: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"print[0]" -> "# users: \%d(0)"	[label=print];
-	"print[0]" -> "# users with at least 5 interactions: \%d(0)"	[label=print];
-	"print[0]" -> "# of interactions: \%d(0)"	[label=print];
-	"print[0]" -> "# of interactions from users with at least 5 interactions: \%d(0)"	[label=print];
-	"print[0]" -> "# of unique user/item interactions: \%d(0)"	[label=print];
-	"print[0]" -> "# interactions on Train set: \%d(0)"	[label=print];
-	"print[0]" -> "# interactions on Test set: \%d(0)"	[label=print];
-	"print[0]" -> "\%d users processed(7)"	[label=print];
-	"print[0]" -> "Evaluating Popularity recommendation model...(0)"	[label=print];
-	"print[0]" -> "
-Global metrics:
-\%s(0)"	[label=print];
-	"print[0]" -> "myprofile(0)$0"	[label=print];
-	"print[0]" -> "Evaluating Content-Based Filtering model...(0)"	[label=print];
-	"print[0]" -> "Evaluating Collaborative Filtering (SVD Matrix Factorization) model...(0)"	[label=print];
-	"print[0]" -> "Evaluating Hybrid model...(0)"	[label=print];
-	"# users with at least 5 interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"# of interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"# of interactions from users with at least 5 interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"# of unique user/item interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"# interactions on Train set: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"# interactions on Test set: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"Evaluating Popularity recommendation model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"
-Global metrics:
-\%s(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"myprofile(0)$0" -> "user_profiles(0)"	[label=assignedFrom];
-	"myprofile(0)$0" -> "1479311724257856983(0)"	[label=assignedFrom];
-	"Evaluating Content-Based Filtering model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"Evaluating Collaborative Filtering (SVD Matrix Factorization) model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"Evaluating Hybrid model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[31/0]" -> "users_interactions_count_df(0)$0"	[label=print];
+	"print[31/0]" -> "# users: \%d(0)"	[label=print];
+	"print[31/0]" -> "len(0)"	[label=print];
 	"len(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "idx(7)"	[label=print];
-	"print[1]" -> "pop_global_metrics(0)$0"	[label=print];
-	"print[1]" -> "cb_global_metrics(0)$0"	[label=print];
-	"print[1]" -> "cf_global_metrics(0)$0"	[label=print];
-	"print[1]" -> "hybrid_global_metrics(0)$0"	[label=print];
-	"idx(7)" -> "enumerate(7)"	[label=iteratorOf];
-	"idx(7)" -> "list(7)"	[label=iteratorOf];
-	"idx(7)" -> "interactions_test_indexed_df(7)"	[label=iteratorOf];
-	"pop_global_metrics(0)$0" -> "popularity_model(0)$0"	[label=evaluate_model];
-	"pop_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
-	"cb_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
-	"cb_global_metrics(0)$0" -> "content_based_recommender_model(0)$0"	[label=evaluate_model];
-	"cf_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
-	"cf_global_metrics(0)$0" -> "cf_recommender_model(0)$0"	[label=evaluate_model];
-	"hybrid_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
-	"hybrid_global_metrics(0)$0" -> "hybrid_recommender_model(0)$0"	[label=evaluate_model];
-	"print[2]" -> "interactions_df(0)$2"	[label=print];
-	"print[2]" -> "users_interactions_count_df(0)$0"	[label=print];
-	"print[2]" -> "users_with_enough_interactions_df(0)$0"	[label=print];
-	"print[2]" -> "interactions_from_selected_users_df(0)$0"	[label=print];
-	"print[2]" -> "interactions_full_df(0)$0"	[label=print];
-	"print[2]" -> "interactions_train_df(0)$0"	[label=print];
-	"print[2]" -> "interactions_test_df(0)$0"	[label=print];
 	"users_with_enough_interactions_df(0)$0" -> "5(0)"	[label=assignedFrom];
 	"users_with_enough_interactions_df(0)$0" -> "users_interactions_count_df(0)$0"	[label=assignedFrom];
-	"users_with_enough_interactions_df(0)$0" -> "[<_ast.Constant object at 0x12fc4f610>](0)"	[label=assignedFrom];
+	"users_with_enough_interactions_df(0)$0" -> "[<_ast.Constant object at 0x7fd500999040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500999040>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"# users with at least 5 interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[33/0]" -> "len(0)"	[label=print];
+	"print[33/0]" -> "users_with_enough_interactions_df(0)$0"	[label=print];
+	"print[33/0]" -> "# users with at least 5 interactions: \%d(0)"	[label=print];
+	"# of interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[34/0]" -> "interactions_df(0)$2"	[label=print];
+	"print[34/0]" -> "len(0)"	[label=print];
+	"print[34/0]" -> "# of interactions: \%d(0)"	[label=print];
 	"interactions_from_selected_users_df(0)$0" -> "interactions_df(0)$2"	[label=merge];
 	"interactions_from_selected_users_df(0)$0" -> "personId(0)"	[label=merge];
 	"interactions_from_selected_users_df(0)$0" -> "users_with_enough_interactions_df(0)$0"	[label=merge];
 	"interactions_from_selected_users_df(0)$0" -> "right(0)"	[label=merge];
+	"right(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"# of interactions from users with at least 5 interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[39/0]" -> "len(0)"	[label=print];
+	"print[39/0]" -> "interactions_from_selected_users_df(0)$0"	[label=print];
+	"print[39/0]" -> "# of interactions from users with at least 5 interactions: \%d(0)"	[label=print];
+	"x(1)" -> "smooth_user_preference[0]"	[label=_argToVar];
 	"interactions_full_df(0)$0" -> "interactions_from_selected_users_df(0)$0"	[label=reset_index];
-	"interactions_full_df(0)$0" -> "[<_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade250>](0)"	[label=reset_index];
+	"interactions_full_df(0)$0" -> "[<_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902abf10>](0)"	[label=reset_index];
 	"interactions_full_df(0)$0" -> "eventStrength(0)"	[label=reset_index];
 	"interactions_full_df(0)$0" -> "smooth_user_preference(0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at 0x7fd4902abf10>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"eventStrength(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"smooth_user_preference(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"# of unique user/item interactions: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[46/0]" -> "len(0)"	[label=print];
+	"print[46/0]" -> "interactions_full_df(0)$0"	[label=print];
+	"print[46/0]" -> "# of unique user/item interactions: \%d(0)"	[label=print];
+	"interactions_full_df(0)$1" -> "10(0)"	[label=head];
+	"interactions_full_df(0)$1" -> "interactions_full_df(0)$0"	[label=head];
 	"interactions_train_df(0)$0" -> "personId(0)"	[label=train_test_split];
 	"interactions_train_df(0)$0" -> "interactions_full_df(0)$1"	[label=train_test_split];
 	"interactions_train_df(0)$0" -> "0.2(0)"	[label=train_test_split];
 	"interactions_train_df(0)$0" -> "42(0)"	[label=train_test_split];
+	"0.2(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"42(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"interactions_test_df(0)$0" -> "personId(0)"	[label=train_test_split];
 	"interactions_test_df(0)$0" -> "interactions_full_df(0)$1"	[label=train_test_split];
 	"interactions_test_df(0)$0" -> "0.2(0)"	[label=train_test_split];
 	"interactions_test_df(0)$0" -> "42(0)"	[label=train_test_split];
-	"[<_ast.Constant object at 0x12fc4f610>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"right(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"x(1)" -> "smooth_user_preference[0]"	[label=_argToVar];
-	"[<_ast.Constant object at 0x12fade820>, <_ast.Constant object at 0x12fade250>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"eventStrength(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"smooth_user_preference(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"interactions_full_df(0)$1" -> "10(0)"	[label=head];
-	"interactions_full_df(0)$1" -> "interactions_full_df(0)$0"	[label=head];
-	"0.2(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"42(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"# interactions on Train set: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[53/0]" -> "len(0)"	[label=print];
+	"print[53/0]" -> "interactions_train_df(0)$0"	[label=print];
+	"print[53/0]" -> "# interactions on Train set: \%d(0)"	[label=print];
+	"# interactions on Test set: \%d(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[54/0]" -> "len(0)"	[label=print];
+	"print[54/0]" -> "interactions_test_df(0)$0"	[label=print];
+	"print[54/0]" -> "# interactions on Test set: \%d(0)"	[label=print];
 	"interactions_full_indexed_df(0)$0" -> "personId(0)"	[label=set_index];
 	"interactions_full_indexed_df(0)$0" -> "interactions_full_df(0)$1"	[label=set_index];
 	"interactions_train_indexed_df(0)$0" -> "personId(0)"	[label=set_index];
@@ -231,7 +203,7 @@ Global metrics:
 	"interacted_values_testset(6)$0" -> "interactions_test_indexed_df(6)"	[label=assignedFrom];
 	"person_interacted_items_testset(6)$0" -> "interacted_values_testset(6)$0"	[label=set];
 	"person_interacted_items_testset(6)$0" -> "contentId(6)"	[label=set];
-	"person_interacted_items_testset(6)$1" -> "[<_ast.Call object at 0x12fc3fa00>](6)"	[label=set];
+	"person_interacted_items_testset(6)$1" -> "[<_ast.Call object at 0x7fd4c04ff2b0>](6)"	[label=set];
 	"interacted_items_count_testset(6)$0" -> "person_interacted_items_testset(6)$1"	[label=len];
 	"person_recs_df(6)$0" -> "model(6)"	[label=recommend_items];
 	"person_recs_df(6)$0" -> "person_id(6)"	[label=recommend_items];
@@ -249,7 +221,7 @@ Global metrics:
 	"non_interacted_items_sample(6)$0" -> "32(6)"	[label=get_not_interacted_items_sample];
 	"items_to_filter_recs(6)$0" -> "non_interacted_items_sample(6)$0"	[label=union];
 	"items_to_filter_recs(6)$0" -> "set(6)"	[label=union];
-	"items_to_filter_recs(6)$0" -> "[<_ast.Name object at 0x12fc3f700>](6)"	[label=union];
+	"items_to_filter_recs(6)$0" -> "[<_ast.Name object at 0x7fd4c04ff460>](6)"	[label=union];
 	"valid_recs_df(6)$0" -> "contentId(6)"	[label=assignedFrom];
 	"valid_recs_df(6)$0" -> "person_recs_df(6)$0"	[label=assignedFrom];
 	"valid_recs_df(6)$0" -> "items_to_filter_recs(6)$0"	[label=assignedFrom];
@@ -294,6 +266,9 @@ Global metrics:
 	"self(7)" -> "evaluate_model[0]"	[label=_argToVar];
 	"model(7)" -> "evaluate_model[1]"	[label=_argToVar];
 	"people_metrics(7)$0" -> "[](7)"	[label=assignedFrom];
+	"idx(7)" -> "enumerate(7)"	[label=iteratorOf];
+	"idx(7)" -> "list(7)"	[label=iteratorOf];
+	"idx(7)" -> "interactions_test_indexed_df(7)"	[label=iteratorOf];
 	"person_id(7)" -> "enumerate(7)"	[label=iteratorOf];
 	"person_id(7)" -> "list(7)"	[label=iteratorOf];
 	"person_id(7)" -> "interactions_test_indexed_df(7)"	[label=iteratorOf];
@@ -304,6 +279,8 @@ Global metrics:
 	"person_metrics(7)$1" -> "person_metrics(7)$0"	[label=assignedFrom];
 	"people_metrics(7)$1" -> "people_metrics(7)$0"	[label=append];
 	"people_metrics(7)$1" -> "person_metrics(7)$1"	[label=append];
+	"print[144/8]" -> "idx(7)"	[label=print];
+	"print[144/8]" -> "\%d users processed(7)"	[label=print];
 	"detailed_results_df(7)$0" -> "people_metrics(7)$1"	[label=sort_values];
 	"detailed_results_df(7)$0" -> "pd(7)"	[label=sort_values];
 	"detailed_results_df(7)$0" -> "interacted_count(7)"	[label=sort_values];
@@ -354,13 +331,24 @@ Global metrics:
 	"recommendations_df(11)$1" -> "recommendations_df(11)$0"	[label=assignedFrom];
 	"recommendations_df(11)$1" -> "contentId(11)"	[label=assignedFrom];
 	"recommendations_df(11)$1" -> "left(11)"	[label=assignedFrom];
-	"recommendations_df(11)$1" -> "[<_ast.Constant object at 0x12f89a730>, <_ast.Constant object at 0x12f89a8b0>, <_ast.Constant object at 0x12f89a7f0>, <_ast.Constant \
-object at 0x12f89aca0>, <_ast.Constant object at 0x12f89a310>](11)"	[label=assignedFrom];
+	"recommendations_df(11)$1" -> "[<_ast.Constant object at 0x7fd4902a1be0>, <_ast.Constant object at 0x7fd4902a1c10>, <_ast.Constant object at 0x7fd4902a1c40>, <_\
+ast.Constant object at 0x7fd4902a1c70>, <_ast.Constant object at 0x7fd4902a1ca0>](11)"	[label=assignedFrom];
 	"popularity_model(0)$0" -> "articles_df(0)$2"	[label=PopularityRecommender];
 	"popularity_model(0)$0" -> "item_popularity_df(0)$1"	[label=PopularityRecommender];
+	"Evaluating Popularity recommendation model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[190/0]" -> "Evaluating Popularity recommendation model...(0)"	[label=print];
 	"model_evaluator(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"pop_global_metrics(0)$0" -> "popularity_model(0)$0"	[label=evaluate_model];
+	"pop_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
 	"pop_detailed_results_df(0)$0" -> "popularity_model(0)$0"	[label=evaluate_model];
 	"pop_detailed_results_df(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
+	"
+Global metrics:
+\%s(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[192/0]" -> "pop_global_metrics(0)$0"	[label=print];
+	"print[192/0]" -> "
+Global metrics:
+\%s(0)"	[label=print];
 	"pop_detailed_results_df(0)$1" -> "10(0)"	[label=head];
 	"pop_detailed_results_df(0)$1" -> "pop_detailed_results_df(0)$0"	[label=head];
 	"stopwords_list(0)$0" -> "stopwords(0)"	[label=Add];
@@ -429,11 +417,11 @@ object at 0x12f89aca0>, <_ast.Constant object at 0x12f89a310>](11)"	[label=assig
 	"user_profiles(15)$0" -> "person_id(15)"	[label=build_users_profile];
 	"user_profiles(15)$0" -> "user_profiles(15)"	[label=build_users_profile];
 	"user_profiles(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
-	"len[0]" -> "user_profiles(0)"	[label=len];
-	"len[0]" -> "cf_preds_df(0)$1"	[label=len];
-	"cf_preds_df(0)$1" -> "10(0)"	[label=head];
-	"cf_preds_df(0)$1" -> "cf_preds_df(0)$0"	[label=head];
+	"len[237/0]" -> "user_profiles(0)"	[label=len];
+	"myprofile(0)$0" -> "user_profiles(0)"	[label=assignedFrom];
+	"myprofile(0)$0" -> "1479311724257856983(0)"	[label=assignedFrom];
 	"1479311724257856983(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[239/0]" -> "myprofile(0)$0"	[label=print];
 	"pd(0)$0" -> "pd(0)"	[label=DataFrame];
 	"pd(0)$0" -> "x(0)"	[label=DataFrame];
 	"pd(0)$0" -> "1(0)"	[label=DataFrame];
@@ -484,21 +472,29 @@ object at 0x12f89aca0>, <_ast.Constant object at 0x12f89a310>](11)"	[label=assig
 	"recommendations_df(20)$0" -> "topn(20)"	[label=head];
 	"recommendations_df(20)$0" -> "similar_items_filtered(20)$0"	[label=head];
 	"recommendations_df(20)$0" -> "pd(20)"	[label=head];
-	"recommendations_df(20)$0" -> "[<_ast.Constant object at 0x12f8938e0>, <_ast.Constant object at 0x12f893850>](20)"	[label=head];
+	"recommendations_df(20)$0" -> "[<_ast.Constant object at 0x7fd4c04fc4f0>, <_ast.Constant object at 0x7fd4c04fc520>](20)"	[label=head];
 	"recommendations_df(20)$1" -> "self(20)"	[label=assignedFrom];
 	"recommendations_df(20)$1" -> "recommendations_df(20)$0"	[label=assignedFrom];
 	"recommendations_df(20)$1" -> "left(20)"	[label=assignedFrom];
 	"recommendations_df(20)$1" -> "contentId(20)"	[label=assignedFrom];
-	"recommendations_df(20)$1" -> "[<_ast.Constant object at 0x12f8933a0>, <_ast.Constant object at 0x12f8933d0>, <_ast.Constant object at 0x12f893550>, <_ast.Constant \
-object at 0x12f893370>, <_ast.Constant object at 0x12f8935e0>](20)"	[label=assignedFrom];
+	"recommendations_df(20)$1" -> "[<_ast.Constant object at 0x7fd4c04fcb50>, <_ast.Constant object at 0x7fd4c04fcb80>, <_ast.Constant object at 0x7fd4c04fcbb0>, <_\
+ast.Constant object at 0x7fd4c04fcbe0>, <_ast.Constant object at 0x7fd4c04fcc10>](20)"	[label=assignedFrom];
 	"content_based_recommender_model(0)$0" -> "articles_df(0)$2"	[label=ContentBasedRecommender];
+	"Evaluating Content-Based Filtering model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[283/0]" -> "Evaluating Content-Based Filtering model...(0)"	[label=print];
+	"cb_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
+	"cb_global_metrics(0)$0" -> "content_based_recommender_model(0)$0"	[label=evaluate_model];
 	"cb_detailed_results_df(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
 	"cb_detailed_results_df(0)$0" -> "content_based_recommender_model(0)$0"	[label=evaluate_model];
+	"print[285/0]" -> "
+Global metrics:
+\%s(0)"	[label=print];
+	"print[285/0]" -> "cb_global_metrics(0)$0"	[label=print];
 	"cb_detailed_results_df(0)$1" -> "10(0)"	[label=head];
 	"cb_detailed_results_df(0)$1" -> "cb_detailed_results_df(0)$0"	[label=head];
 	"users_items_pivot_matrix_df(0)$0" -> "personId(0)"	[label=fillna];
-	"users_items_pivot_matrix_df(0)$0" -> "interactions_train_df(0)$0"	[label=fillna];
 	"users_items_pivot_matrix_df(0)$0" -> "eventStrength(0)"	[label=fillna];
+	"users_items_pivot_matrix_df(0)$0" -> "interactions_train_df(0)$0"	[label=fillna];
 	"users_items_pivot_matrix_df(0)$0" -> "contentId(0)"	[label=fillna];
 	"users_items_pivot_matrix_df(0)$0" -> "0(0)"	[label=fillna];
 	"0(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
@@ -526,6 +522,9 @@ object at 0x12f893370>, <_ast.Constant object at 0x12f8935e0>](20)"	[label=assig
 	"cf_preds_df(0)$0" -> "users_items_pivot_matrix_df(0)$1"	[label=transpose];
 	"cf_preds_df(0)$0" -> "users_ids(0)$0"	[label=transpose];
 	"cf_preds_df(0)$0" -> "all_user_predicted_ratings_norm(0)$0"	[label=transpose];
+	"cf_preds_df(0)$1" -> "10(0)"	[label=head];
+	"cf_preds_df(0)$1" -> "cf_preds_df(0)$0"	[label=head];
+	"len[314/0]" -> "cf_preds_df(0)$1"	[label=len];
 	"MODEL_NAME(21)$0" -> "Collaborative Filtering(21)"	[label=assignedFrom];
 	"self(22)" -> "__init__[0]"	[label=_argToVar];
 	"cf_predictions_df(22)" -> "__init__[1]"	[label=_argToVar];
@@ -554,12 +553,20 @@ object at 0x12f893370>, <_ast.Constant object at 0x12f8935e0>](20)"	[label=assig
 	"recommendations_df(24)$1" -> "recommendations_df(24)$0"	[label=assignedFrom];
 	"recommendations_df(24)$1" -> "contentId(24)"	[label=assignedFrom];
 	"recommendations_df(24)$1" -> "left(24)"	[label=assignedFrom];
-	"recommendations_df(24)$1" -> "[<_ast.Constant object at 0x12f87c700>, <_ast.Constant object at 0x12f87c730>, <_ast.Constant object at 0x12f87c760>, <_ast.Constant \
-object at 0x12f87c790>, <_ast.Constant object at 0x12f87c7c0>](24)"	[label=assignedFrom];
+	"recommendations_df(24)$1" -> "[<_ast.Constant object at 0x7fd50081c400>, <_ast.Constant object at 0x7fd50081c460>, <_ast.Constant object at 0x7fd50081c430>, <_\
+ast.Constant object at 0x7fd50081c490>, <_ast.Constant object at 0x7fd50081c4c0>](24)"	[label=assignedFrom];
 	"cf_recommender_model(0)$0" -> "articles_df(0)$2"	[label=CFRecommender];
 	"cf_recommender_model(0)$0" -> "cf_preds_df(0)$1"	[label=CFRecommender];
+	"Evaluating Collaborative Filtering (SVD Matrix Factorization) model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[348/0]" -> "Evaluating Collaborative Filtering (SVD Matrix Factorization) model...(0)"	[label=print];
+	"cf_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
+	"cf_global_metrics(0)$0" -> "cf_recommender_model(0)$0"	[label=evaluate_model];
 	"cf_detailed_results_df(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
 	"cf_detailed_results_df(0)$0" -> "cf_recommender_model(0)$0"	[label=evaluate_model];
+	"print[350/0]" -> "
+Global metrics:
+\%s(0)"	[label=print];
+	"print[350/0]" -> "cf_global_metrics(0)$0"	[label=print];
 	"cf_detailed_results_df(0)$1" -> "10(0)"	[label=head];
 	"cf_detailed_results_df(0)$1" -> "cf_detailed_results_df(0)$0"	[label=head];
 	"MODEL_NAME(25)$0" -> "Hybrid(25)"	[label=assignedFrom];
@@ -617,24 +624,32 @@ object at 0x12f87c790>, <_ast.Constant object at 0x12f87c7c0>](24)"	[label=assig
 	"recommendations_df(28)$1" -> "contentId(28)"	[label=assignedFrom];
 	"recommendations_df(28)$1" -> "recommendations_df(28)$0"	[label=assignedFrom];
 	"recommendations_df(28)$1" -> "left(28)"	[label=assignedFrom];
-	"recommendations_df(28)$1" -> "[<_ast.Constant object at 0x12f8cc1f0>, <_ast.Constant object at 0x12f8cc220>, <_ast.Constant object at 0x12f8cc280>, <_ast.Constant \
-object at 0x12f8cc2b0>, <_ast.Constant object at 0x12f8cc250>](28)"	[label=assignedFrom];
+	"recommendations_df(28)$1" -> "[<_ast.Constant object at 0x7fd500811eb0>, <_ast.Constant object at 0x7fd500811ee0>, <_ast.Constant object at 0x7fd500811f10>, <_\
+ast.Constant object at 0x7fd500811f40>, <_ast.Constant object at 0x7fd500811f70>](28)"	[label=assignedFrom];
 	"hybrid_recommender_model(0)$0" -> "articles_df(0)$2"	[label=HybridRecommender];
 	"hybrid_recommender_model(0)$0" -> "1.0(0)"	[label=HybridRecommender];
 	"hybrid_recommender_model(0)$0" -> "content_based_recommender_model(0)$0"	[label=HybridRecommender];
 	"hybrid_recommender_model(0)$0" -> "cf_recommender_model(0)$0"	[label=HybridRecommender];
 	"hybrid_recommender_model(0)$0" -> "100.0(0)"	[label=HybridRecommender];
 	"100.0(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"Evaluating Hybrid model...(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"print[402/0]" -> "Evaluating Hybrid model...(0)"	[label=print];
+	"hybrid_global_metrics(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
+	"hybrid_global_metrics(0)$0" -> "hybrid_recommender_model(0)$0"	[label=evaluate_model];
 	"hybrid_detailed_results_df(0)$0" -> "model_evaluator(0)"	[label=evaluate_model];
 	"hybrid_detailed_results_df(0)$0" -> "hybrid_recommender_model(0)$0"	[label=evaluate_model];
+	"print[404/0]" -> "
+Global metrics:
+\%s(0)"	[label=print];
+	"print[404/0]" -> "hybrid_global_metrics(0)$0"	[label=print];
 	"hybrid_detailed_results_df(0)$1" -> "10(0)"	[label=head];
 	"hybrid_detailed_results_df(0)$1" -> "hybrid_detailed_results_df(0)$0"	[label=head];
 	"global_metrics_df(0)$0" -> "pd(0)$0"	[label=set_index];
-	"global_metrics_df(0)$0" -> "[<_ast.Name object at 0x12f8cccd0>, <_ast.Name object at 0x12f8ccd60>, <_ast.Name object at 0x12f8ccdc0>, <_ast.Name object at 0x12f8ccdf0>](\
-0)"	[label=set_index];
+	"global_metrics_df(0)$0" -> "[<_ast.Name object at 0x7fd500813370>, <_ast.Name object at 0x7fd500813a00>, <_ast.Name object at 0x7fd500813a30>, <_ast.Name object \
+at 0x7fd5008139a0>](0)"	[label=set_index];
 	"global_metrics_df(0)$0" -> "modelName(0)"	[label=set_index];
-	"[<_ast.Name object at 0x12f8cccd0>, <_ast.Name object at 0x12f8ccd60>, <_ast.Name object at 0x12f8ccdc0>, <_ast.Name object at 0x12f8ccdf0>](\
-0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500813370>, <_ast.Name object at 0x7fd500813a00>, <_ast.Name object at 0x7fd500813a30>, <_ast.Name object \
+at 0x7fd5008139a0>](0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"modelName(0)" -> "recommender-systems-in-python-101.ipynb"	[label=appearsIn];
 	"ax(0)$0" -> "15(0)"	[label=plot];
 	"ax(0)$0" -> "global_metrics_df(0)$0"	[label=plot];

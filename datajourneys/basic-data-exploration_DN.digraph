@@ -1,20 +1,18 @@
 strict digraph "" {
 	node [label="\N"];
-	"http://purl.org/dj/python/lib/144966264"	[label="144966264 (pandas: Reuse)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration"	[label="basic-data-exploration"];
-	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label=previousActivity];
 	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776"	[label="1257178776 (melbourne_data(0)$0: Movement)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/python/lib/144966264"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/basic-data-exploration#58004286"	[label="58004286 (../input/melbourne-housing-snapshot/melb_data.csv(0): Reuse)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/kaggle/basic-data-exploration#58004286"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/basic-data-exploration#80085334"	[label="80085334 (pd(0): Reuse)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/kaggle/basic-data-exploration#80085334"	[label=previousActivity];
 	"http://purl.org/dj/kaggle/basic-data-exploration#2019035306"	[label="2019035306 (melbourne_file_path(0)$0: Reuse)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/kaggle/basic-data-exploration#2019035306"	[label=read_csv];
-	"http://purl.org/dj/kaggle/basic-data-exploration#58004286" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/basic-data-exploration#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label=assignedFrom];
-	"http://purl.org/dj/kaggle/basic-data-exploration#80085334" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label=previousActivity];
-	"http://purl.org/dj/kaggle/basic-data-exploration#2019035306" -> "http://purl.org/dj/kaggle/basic-data-exploration#58004286"	[label=assignedFrom];
+	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/kaggle/basic-data-exploration#2019035306"	[label="read_csv ()"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#80085334"	[label="80085334 (pd(0): Reuse)"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#1257178776" -> "http://purl.org/dj/kaggle/basic-data-exploration#80085334"	[label="read_csv ()"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#58004286"	[label="58004286 (../input/melbourne-housing-snapshot/melb_data.csv(0): Reuse)"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#2019035306" -> "http://purl.org/dj/kaggle/basic-data-exploration#58004286"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/144966264"	[label="144966264 (pandas: Reuse)"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/basic-data-exploration"	[label="basic-data-exploration (basic-data-exploration.ipynb)"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#80085334" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/basic-data-exploration#58004286" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/basic-data-exploration"	[label="importedBy ()"];
 	"http://purl.org/dj/kaggle/basic-data-exploration#1257244313"	[label="1257244313 (melbourne_data(0)$1: Reuse)"];
-	"http://purl.org/dj/kaggle/basic-data-exploration#1257244313" -> "http://purl.org/dj/kaggle/basic-data-exploration#1257178776"	[label=previousActivity];
+	"http://purl.org/dj/kaggle/basic-data-exploration#1257244313" -> "http://purl.org/dj/kaggle/basic-data-exploration#1257178776"	[label="describe ()"];
 }

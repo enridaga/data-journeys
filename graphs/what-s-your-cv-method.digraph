@@ -1,8 +1,8 @@
 digraph "" {
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x106605910>, <_ast.Constant object at 0x130532a60>, <_ast.Constant object at 0x130532e20>, <_ast.Constant \
-object at 0x1305324f0>, <_ast.Constant object at 0x130532b50>, <_ast.Constant object at 0x130532070>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd5008726d0>, <_ast.Constant object at 0x7fd5008720a0>, <_ast.Constant object at 0x7fd500872580>, <_\
+ast.Constant object at 0x7fd500872040>, <_ast.Constant object at 0x7fd500872550>, <_ast.Constant object at 0x7fd500872730>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -37,39 +37,10 @@ object at 0x1305324f0>, <_ast.Constant object at 0x130532b50>, <_ast.Constant ob
 	"end_mem(1)$0" -> "1024(1)"	[label=Div];
 	"end_mem(1)$0" -> "2(1)"	[label=Div];
 	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "folds(0)$0"	[label=print];
-	"print[0]" -> "-(0)"	[label=print];
-	"print[0]" -> "fold :(0)"	[label=print];
-	"print[0]" -> "val_set_range : (0)"	[label=print];
-	"folds(0)$0" -> "folds(0)$0"	[label=iteratorOf];
-	"folds(0)$0" -> "[<_ast.Constant object at 0x12f951a90>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951550>](0)"	[label=assignedFrom];
-	"-(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"fold :(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"val_set_range : (0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "50(0)"	[label=print];
-	"print[1]" -> "-fold(0)"	[label=print];
-	"print[1]" -> "fold_(0)"	[label=print];
-	"print[1]" -> "vl_x(0)$0"	[label=print];
-	"50(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"-fold(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"fold_(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"fold_(0)" -> "df_train(0)$2"	[label=iteratorOf];
-	"fold_(0)" -> "fold(0)$0"	[label=iteratorOf];
-	"fold_(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"fold_(0)" -> "meter_reading(0)"	[label=iteratorOf];
-	"vl_x(0)$0" -> "df_train(0)$2"	[label=assignedFrom];
-	"vl_x(0)$0" -> "meter_reading(0)"	[label=assignedFrom];
-	"vl_x(0)$0" -> "val_idx(0)"	[label=assignedFrom];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[2]" -> "timestamp(0)"	[label=print];
-	"timestamp(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[3]" -> "vl_x(0)$0"	[label=print];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[4]" -> "timestamp(0)"	[label=print];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
+	"print[28/16]" -> "start_mem(1)$0"	[label=print];
+	"print[28/16]" -> "end_mem(1)$0"	[label=print];
+	"print[28/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[28/16]" -> "100(1)"	[label=print];
 	pandas -> "what-s-your-cv-method.ipynb"	[label=importedBy];
 	"pd(0)" -> pandas	[label=assignedFrom];
 	"pd(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
@@ -98,17 +69,32 @@ object at 0x1305324f0>, <_ast.Constant object at 0x130532b50>, <_ast.Constant ob
 	"df_train(0)$0" -> "/train.csv(0)"	[label=read_csv];
 	"/train.csv(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"df_train(0)$1" -> "df_train(0)$0"	[label=reduce_mem_usage];
-	"df_train(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"df_train(0)$2" -> "pd(0)"	[label=to_datetime];
 	"df_train(0)$2" -> "df_train(0)$1"	[label=to_datetime];
 	"df_train(0)$2" -> "df_train(0)$2"	[label=to_datetime];
-	"[<_ast.Constant object at 0x12f951a90>, <_ast.Constant object at 0x12f951130>, <_ast.Constant object at 0x12f951550>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"df_train(0)$2" -> "timestamp(0)"	[label=to_datetime];
+	"timestamp(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc8b0>, <_ast.Constant object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04cc700>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"folds(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc8b0>, <_ast.Constant object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04cc700>](0)"	[label=assignedFrom];
+	"folds(0)$0" -> "folds(0)$0"	[label=iteratorOf];
 	"fold(0)$0" -> "folds(0)$0"	[label=KFold];
 	"fold(0)$0" -> "False(0)"	[label=KFold];
 	"fold(0)$0" -> "42(0)"	[label=KFold];
 	"False(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"42(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"-(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"print[45/4]" -> "-(0)"	[label=print];
+	"print[45/4]" -> "50(0)"	[label=print];
+	"50(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"print[46/4]" -> "folds(0)$0"	[label=print];
+	"print[46/4]" -> "-fold(0)"	[label=print];
+	"-fold(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"enumerate(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"fold_(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"fold_(0)" -> "df_train(0)$2"	[label=iteratorOf];
+	"fold_(0)" -> "fold(0)$0"	[label=iteratorOf];
+	"fold_(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"fold_(0)" -> "meter_reading(0)"	[label=iteratorOf];
 	"meter_reading(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"trn_idx(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"trn_idx(0)" -> "df_train(0)$2"	[label=iteratorOf];
@@ -126,9 +112,19 @@ object at 0x1305324f0>, <_ast.Constant object at 0x130532b50>, <_ast.Constant ob
 	"tr_y(0)$0" -> "df_train(0)$2"	[label=assignedFrom];
 	"tr_y(0)$0" -> "meter_reading(0)"	[label=assignedFrom];
 	"tr_y(0)$0" -> "trn_idx(0)"	[label=assignedFrom];
+	"vl_x(0)$0" -> "df_train(0)$2"	[label=assignedFrom];
+	"vl_x(0)$0" -> "meter_reading(0)"	[label=assignedFrom];
+	"vl_x(0)$0" -> "val_idx(0)"	[label=assignedFrom];
 	"vl_y(0)$0" -> "df_train(0)$2"	[label=assignedFrom];
 	"vl_y(0)$0" -> "meter_reading(0)"	[label=assignedFrom];
 	"vl_y(0)$0" -> "val_idx(0)"	[label=assignedFrom];
+	"fold :(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"print[50/8]" -> "fold_(0)"	[label=print];
+	"print[50/8]" -> "fold :(0)"	[label=print];
+	"val_set_range : (0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"print[51/8]" -> "timestamp(0)"	[label=print];
+	"print[51/8]" -> "vl_x(0)$0"	[label=print];
+	"print[51/8]" -> "val_set_range : (0)"	[label=print];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
 	"fig(0)$0" -> "1(0)"	[label=subplots];
 	"fig(0)$0" -> "14(0)"	[label=subplots];
@@ -172,23 +168,23 @@ object at 0x1305324f0>, <_ast.Constant object at 0x130532b50>, <_ast.Constant ob
 	"chilledwater(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"steam(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"hotwater(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ebb0>, <_ast.Constant object at 0x12f85eac0>, <_ast.Constant object at 0x12f85ebe0>, <_ast.Constant \
-object at 0x12f85ed60>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080dca0>, <_ast.Constant object at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080d850>, <_\
+ast.Constant object at 0x7fd50080d310>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"col(0)$0" -> "enumerate(0)"	[label=iteratorOf];
-	"col(0)$0" -> "[<_ast.Constant object at 0x12f85ebb0>, <_ast.Constant object at 0x12f85eac0>, <_ast.Constant object at 0x12f85ebe0>, <_ast.Constant \
-object at 0x12f85ed60>](0)"	[label=assignedFrom];
+	"col(0)$0" -> "[<_ast.Constant object at 0x7fd50080dca0>, <_ast.Constant object at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080d850>, <_\
+ast.Constant object at 0x7fd50080d310>](0)"	[label=assignedFrom];
 	"col(0)$0" -> "col(0)$0"	[label=iteratorOf];
 	"col(0)$0" -> "column(0)$0"	[label=iteratorOf];
 	"col(0)$0" -> "column(0)$1"	[label=iteratorOf];
 	"col(0)$0" -> "column(0)$2"	[label=iteratorOf];
 	"col(0)$0" -> "column(0)$3"	[label=iteratorOf];
-	"column(0)$0" -> "[<_ast.Constant object at 0x12f894430>, <_ast.Constant object at 0x12f894520>, <_ast.Constant object at 0x12f894460>](0)"	[label=assignedFrom];
-	"column(0)$1" -> "[<_ast.Constant object at 0x12f9a6730>, <_ast.Constant object at 0x12f9a6760>, <_ast.Constant object at 0x12f9a6790>, <_ast.Constant \
-object at 0x12f9a67c0>](0)"	[label=assignedFrom];
-	"column(0)$2" -> "[<_ast.Constant object at 0x12f89f400>, <_ast.Constant object at 0x12f89f430>, <_ast.Constant object at 0x12f89f490>, <_ast.Constant \
-object at 0x12f89f460>, <_ast.Constant object at 0x12f89f4c0>](0)"	[label=assignedFrom];
-	"column(0)$3" -> "[<_ast.Constant object at 0x12f8a0e80>, <_ast.Constant object at 0x12f8a0eb0>, <_ast.Constant object at 0x12f8a0ee0>, <_ast.Constant \
-object at 0x12f8a0f10>](0)"	[label=assignedFrom];
+	"column(0)$0" -> "[<_ast.Constant object at 0x7fd4c04aa1c0>, <_ast.Constant object at 0x7fd4c04aa1f0>, <_ast.Constant object at 0x7fd4c04aa220>](0)"	[label=assignedFrom];
+	"column(0)$1" -> "[<_ast.Constant object at 0x7fd4d09a8430>, <_ast.Constant object at 0x7fd4d09a8460>, <_ast.Constant object at 0x7fd4d09a8490>, <_\
+ast.Constant object at 0x7fd4d09a84c0>](0)"	[label=assignedFrom];
+	"column(0)$2" -> "[<_ast.Constant object at 0x7fd4d098e100>, <_ast.Constant object at 0x7fd4d098e130>, <_ast.Constant object at 0x7fd4d098e160>, <_\
+ast.Constant object at 0x7fd4d098e190>, <_ast.Constant object at 0x7fd4d098e1c0>](0)"	[label=assignedFrom];
+	"column(0)$3" -> "[<_ast.Constant object at 0x7fd500829b20>, <_ast.Constant object at 0x7fd500829b50>, <_ast.Constant object at 0x7fd500829b80>, <_\
+ast.Constant object at 0x7fd500829bb0>](0)"	[label=assignedFrom];
 	"fig(0)$1" -> "plt(0)"	[label=subplots];
 	"fig(0)$1" -> "1(0)"	[label=subplots];
 	"fig(0)$1" -> "14(0)"	[label=subplots];
@@ -235,14 +231,14 @@ object at 0x12f8a0f10>](0)"	[label=assignedFrom];
 	"fold2(0)$0" -> "/kaggle/input/2fold/submission.csv(0)"	[label=read_csv];
 	"/kaggle/input/2fold/submission.csv(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fold2(0)$1" -> "fold2(0)$0"	[label=reduce_mem_usage];
-	"fold2(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"fold2(0)$2" -> "pd(0)"	[label=to_datetime];
+	"fold2(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"fold2(0)$2" -> "fold2(0)$1"	[label=to_datetime];
 	"fold2(0)$2" -> "fold2(0)$2"	[label=to_datetime];
 	"fold2(0)$3" -> "pd(0)"	[label=concat];
 	"fold2(0)$3" -> "1(0)"	[label=concat];
-	"fold2(0)$3" -> "[<_ast.Name object at 0x12f8f5310>, <_ast.Name object at 0x12f8f5cd0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8f5310>, <_ast.Name object at 0x12f8f5cd0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"fold2(0)$3" -> "[<_ast.Name object at 0x7fd4d099fbe0>, <_ast.Name object at 0x7fd4d099fa60>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4d099fbe0>, <_ast.Name object at 0x7fd4d099fa60>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fold2(0)$4" -> "1(0)"	[label=map];
 	"fold2(0)$4" -> "meter(0)"	[label=map];
 	"fold2(0)$4" -> "0(0)"	[label=map];
@@ -255,7 +251,7 @@ object at 0x12f8a0f10>](0)"	[label=assignedFrom];
 	"fold2(0)$4" -> "fold2(0)$3"	[label=map];
 	"fold2(0)$5" -> "fold2(0)$4"	[label=head];
 	"gc(0)$1" -> "gc(0)$0"	[label=collect];
-	"[<_ast.Constant object at 0x12f894430>, <_ast.Constant object at 0x12f894520>, <_ast.Constant object at 0x12f894460>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04aa1c0>, <_ast.Constant object at 0x7fd4c04aa1f0>, <_ast.Constant object at 0x7fd4c04aa220>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fig(0)$2" -> "plt(0)"	[label=subplots];
 	"fig(0)$2" -> "1(0)"	[label=subplots];
 	"fig(0)$2" -> "14(0)"	[label=subplots];
@@ -280,8 +276,8 @@ object at 0x12f8a0f10>](0)"	[label=assignedFrom];
 	"axes(0)$7" -> "by hour and day, month(0)"	[label=set_title];
 	"by hour and day, month(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"axes(0)$8" -> "axes(0)$7"	[label=legend];
-	"[<_ast.Constant object at 0x12f9a6730>, <_ast.Constant object at 0x12f9a6760>, <_ast.Constant object at 0x12f9a6790>, <_ast.Constant \
-object at 0x12f9a67c0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d09a8430>, <_ast.Constant object at 0x7fd4d09a8460>, <_ast.Constant object at 0x7fd4d09a8490>, <_\
+ast.Constant object at 0x7fd4d09a84c0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fig(0)$3" -> "plt(0)"	[label=subplots];
 	"fig(0)$3" -> "100(0)"	[label=subplots];
 	"fig(0)$3" -> "2(0)"	[label=subplots];
@@ -358,13 +354,13 @@ object at 0x12f9a67c0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fold4(0)$0" -> "/kaggle/input/4fold/submission.csv(0)"	[label=read_csv];
 	"/kaggle/input/4fold/submission.csv(0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fold4(0)$1" -> "fold4(0)$0"	[label=reduce_mem_usage];
-	"fold4(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"fold4(0)$2" -> "pd(0)"	[label=to_datetime];
+	"fold4(0)$2" -> "timestamp(0)"	[label=to_datetime];
 	"fold4(0)$2" -> "fold4(0)$1"	[label=to_datetime];
 	"fold4(0)$2" -> "fold4(0)$2"	[label=to_datetime];
 	"fold4(0)$3" -> "fold4(0)$2"	[label=head];
-	"[<_ast.Constant object at 0x12f89f400>, <_ast.Constant object at 0x12f89f430>, <_ast.Constant object at 0x12f89f490>, <_ast.Constant \
-object at 0x12f89f460>, <_ast.Constant object at 0x12f89f4c0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d098e100>, <_ast.Constant object at 0x7fd4d098e130>, <_ast.Constant object at 0x7fd4d098e160>, <_\
+ast.Constant object at 0x7fd4d098e190>, <_ast.Constant object at 0x7fd4d098e1c0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fig(0)$6" -> "plt(0)"	[label=subplots];
 	"fig(0)$6" -> "1(0)"	[label=subplots];
 	"fig(0)$6" -> "14(0)"	[label=subplots];
@@ -391,8 +387,8 @@ object at 0x12f89f460>, <_ast.Constant object at 0x12f89f4c0>](0)" -> "what-s-yo
 	"gc(0)$3" -> "gc(0)$2"	[label=collect];
 	"fold4(0)$7" -> "pd(0)"	[label=concat];
 	"fold4(0)$7" -> "1(0)"	[label=concat];
-	"fold4(0)$7" -> "[<_ast.Name object at 0x12f8a08b0>, <_ast.Name object at 0x12f8a08e0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8a08b0>, <_ast.Name object at 0x12f8a08e0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"fold4(0)$7" -> "[<_ast.Name object at 0x7fd500829580>, <_ast.Name object at 0x7fd5008295b0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500829580>, <_ast.Name object at 0x7fd5008295b0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fold4(0)$8" -> "1(0)"	[label=map];
 	"fold4(0)$8" -> "meter(0)"	[label=map];
 	"fold4(0)$8" -> "0(0)"	[label=map];
@@ -403,8 +399,8 @@ object at 0x12f89f460>, <_ast.Constant object at 0x12f89f4c0>](0)" -> "what-s-yo
 	"fold4(0)$8" -> "steam(0)"	[label=map];
 	"fold4(0)$8" -> "hotwater(0)"	[label=map];
 	"fold4(0)$8" -> "fold4(0)$7"	[label=map];
-	"[<_ast.Constant object at 0x12f8a0e80>, <_ast.Constant object at 0x12f8a0eb0>, <_ast.Constant object at 0x12f8a0ee0>, <_ast.Constant \
-object at 0x12f8a0f10>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500829b20>, <_ast.Constant object at 0x7fd500829b50>, <_ast.Constant object at 0x7fd500829b80>, <_\
+ast.Constant object at 0x7fd500829bb0>](0)" -> "what-s-your-cv-method.ipynb"	[label=appearsIn];
 	"fig(0)$7" -> "plt(0)"	[label=subplots];
 	"fig(0)$7" -> "100(0)"	[label=subplots];
 	"fig(0)$7" -> "2(0)"	[label=subplots];

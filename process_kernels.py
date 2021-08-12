@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.7
+#!/usr/local/bin/python3.8
 import datajourney as DJ
 import json as J
 from os import listdir

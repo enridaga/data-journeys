@@ -59,8 +59,8 @@ digraph "" {
 	"sns(0)$0" -> "sns(0)"	[label=set];
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x12fade130>, <_ast.Constant object at 0x12fade490>, <_ast.Constant object at 0x12fade280>, <_ast.Constant \
-object at 0x12fade670>, <_ast.Constant object at 0x12fade430>, <_ast.Constant object at 0x12fade940>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd500832c70>, <_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832850>, <_\
+ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832430>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -95,97 +95,17 @@ object at 0x12fade670>, <_ast.Constant object at 0x12fade430>, <_ast.Constant ob
 	"end_mem(1)$0" -> "1024(1)"	[label=Div];
 	"end_mem(1)$0" -> "2(1)"	[label=Div];
 	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"print[0]" -> "metrics(0)"	[label=print];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "len(6)"	[label=print];
-	"print[0]" -> "Fold:(6)"	[label=print];
-	"print[0]" -> "feature_imp(6)$0"	[label=print];
-	"print[0]" -> "OOF AUC:(6)"	[label=print];
-	"print[0]" -> "Holdout AUC:(6)"	[label=print];
-	"print[0]" -> "Load Data(0)"	[label=print];
-	"print[0]" -> "Shape control:(0)"	[label=print];
-	"print[0]" -> "col(0)"	[label=print];
-	"print[0]" -> "features_discard(0)$0"	[label=print];
-	"feature_imp(6)$0" -> "X(6)$0"	[label=DataFrame];
-	"feature_imp(6)$0" -> "estimator(6)$0"	[label=DataFrame];
-	"feature_imp(6)$0" -> "pd(6)"	[label=DataFrame];
-	"feature_imp(6)$0" -> "sorted(6)"	[label=DataFrame];
-	"feature_imp(6)$0" -> "zip(6)"	[label=DataFrame];
-	"feature_imp(6)$0" -> "[<_ast.Constant object at 0x12fa61310>, <_ast.Constant object at 0x12fa61340>](6)"	[label=DataFrame];
-	"Load Data(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"Shape control:(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"col(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"col(0)" -> "list(0)"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$0"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$2"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$3"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fda1fd0>, <_ast.Constant object at 0x12fdc6040>, <_ast.Constant object at 0x12fdc6070>](0)"	[label=iteratorOf];
-	"col(0)" -> "i_cols(0)$4"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fdccb50>, <_ast.Constant object at 0x12fdccb80>](0)"	[label=iteratorOf];
-	"col(0)" -> "train_df(0)$17"	[label=iteratorOf];
-	"features_discard(0)$0" -> "0(0)"	[label=list];
-	"features_discard(0)$0" -> "features_check(0)$2"	[label=list];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "fold_(6)"	[label=print];
-	"print[1]" -> "tr_x(6)$0"	[label=print];
-	"print[1]" -> "metrics(6)"	[label=print];
-	"print[1]" -> "train_df(0)$3"	[label=print];
-	"print[1]" -> "test_predictions(0)$0"	[label=print];
-	"fold_(6)" -> "y(6)$0"	[label=iteratorOf];
-	"fold_(6)" -> "folds(6)$0"	[label=iteratorOf];
-	"fold_(6)" -> "X(6)$0"	[label=iteratorOf];
-	"fold_(6)" -> "split_groups(6)$0"	[label=iteratorOf];
-	"fold_(6)" -> "enumerate(6)"	[label=iteratorOf];
-	"tr_x(6)$0" -> "y(6)$0"	[label=assignedFrom];
-	"tr_x(6)$0" -> "X(6)$0"	[label=assignedFrom];
-	"tr_x(6)$0" -> "trn_idx(6)"	[label=assignedFrom];
-	"train_df(0)$3" -> "train_df(0)$3"	[label=reset_index];
-	"train_df(0)$3" -> "True(0)"	[label=reset_index];
-	"train_df(0)$3" -> "1(0)"	[label=reset_index];
-	"train_df(0)$3" -> "train_df(0)$2"	[label=reset_index];
-	"train_df(0)$3" -> "DT_M(0)"	[label=reset_index];
-	"test_predictions(0)$0" -> "TARGET(0)$0"	[label=make_predictions];
-	"test_predictions(0)$0" -> "train_df(0)$21"	[label=make_predictions];
-	"test_predictions(0)$0" -> "test_df(0)$19"	[label=make_predictions];
-	"test_predictions(0)$0" -> "features_columns(0)$0"	[label=make_predictions];
-	"test_predictions(0)$0" -> "lgb_params(0)$3"	[label=make_predictions];
-	"print[2]" -> "len(6)"	[label=print];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[2]" -> "y(6)$0"	[label=print];
-	"print[2]" -> "tt_df(6)$1"	[label=print];
-	"print[2]" -> "TARGET(0)$0"	[label=print];
-	"print[2]" -> "test_df(0)$1"	[label=print];
-	"y(6)$0" -> "tr_df(6)"	[label=assignedFrom];
-	"y(6)$0" -> "features_columns(6)"	[label=assignedFrom];
-	"y(6)$0" -> "target(6)"	[label=assignedFrom];
-	"tt_df(6)$1" -> "tt_df(6)$0"	[label=assignedFrom];
-	"tt_df(6)$1" -> "predictions(6)$1"	[label=assignedFrom];
-	"TARGET(0)$0" -> "isFraud(0)"	[label=assignedFrom];
-	"test_df(0)$1" -> "pd(0)"	[label=read_pickle];
-	"test_df(0)$1" -> "../input/ieee-data-minification/test_transaction.pkl(0)"	[label=read_pickle];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[3]" -> "test_predictions(0)$0"	[label=print];
-	"print[3]" -> "vl_x(6)$0"	[label=print];
-	"print[3]" -> "oof(6)$1"	[label=print];
-	"print[3]" -> "TARGET(6)"	[label=print];
-	"vl_x(6)$0" -> "y(6)$0"	[label=assignedFrom];
-	"vl_x(6)$0" -> "X(6)$0"	[label=assignedFrom];
-	"vl_x(6)$0" -> "val_idx(6)"	[label=assignedFrom];
-	"oof(6)$1" -> "oof(6)$0"	[label=Div];
-	"oof(6)$1" -> "oof_preds(6)$0"	[label=Div];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[4]" -> "tt_df(6)$1"	[label=print];
-	"print[4]" -> "prediction(0)"	[label=print];
-	"prediction(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
-	"print[5]" -> "prediction(6)"	[label=print];
+	"print[45/16]" -> "start_mem(1)$0"	[label=print];
+	"print[45/16]" -> "end_mem(1)$0"	[label=print];
+	"print[45/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[45/16]" -> "100(1)"	[label=print];
 	"warnings(0)$1" -> warnings	[label=assignedFrom];
 	"warnings(0)$1" -> "warnings(0)$0"	[label=simplefilter];
 	"warnings(0)$1" -> "ignore(0)"	[label=simplefilter];
-	"[<_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951ee0>, <_ast.Constant \
-object at 0x12f951df0>, <_ast.Constant object at 0x12f951cd0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"files(0)$0" -> "[<_ast.Constant object at 0x12f9516d0>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951ee0>, <_ast.Constant \
-object at 0x12f951df0>, <_ast.Constant object at 0x12f951cd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0820>, <_\
+ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0910>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"files(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at 0x7fd5007f0820>, <_\
+ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0910>](0)"	[label=assignedFrom];
 	"file(2)" -> "load_data[0]"	[label=_argToVar];
 	"pool(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"test_identity(0)$0" -> "files(0)$0"	[label=map];
@@ -212,8 +132,8 @@ object at 0x12f951df0>, <_ast.Constant object at 0x12f951cd0>](0)"	[label=assign
 	"total(0)$0" -> "train_transaction(0)$1"	[label=len];
 	"total_amt(0)$0" -> "train_transaction(0)$1"	[label=sum];
 	"total_amt(0)$0" -> "TransactionAmt(0)"	[label=sum];
-	"total_amt(0)$0" -> "[<_ast.Constant object at 0x12f9a4730>](0)"	[label=sum];
-	"[<_ast.Constant object at 0x12f9a4730>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"total_amt(0)$0" -> "[<_ast.Constant object at 0x7fd50080d2e0>](0)"	[label=sum];
+	"[<_ast.Constant object at 0x7fd50080d2e0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"plt(0)$1" -> "plt(0)$0"	[label=subplot];
 	"plt(0)$1" -> "121(0)"	[label=subplot];
@@ -269,8 +189,8 @@ object at 0x12f951df0>, <_ast.Constant object at 0x12f951cd0>](0)"	[label=assign
 	"100(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"percent_amt(0)$0" -> "train_transaction(0)$1"	[label=sum];
 	"percent_amt(0)$0" -> "TransactionAmt(0)"	[label=sum];
-	"percent_amt(0)$0" -> "[<_ast.Constant object at 0x130532a00>](0)"	[label=sum];
-	"[<_ast.Constant object at 0x130532a00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"percent_amt(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff760>](0)"	[label=sum];
+	"[<_ast.Constant object at 0x7fd4c04ff760>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"percent_amt(0)$1" -> "percent_amt(0)$0"	[label=reset_index];
 	"plt(0)$2" -> "plt(0)$1"	[label=subplot];
 	"plt(0)$2" -> "122(0)"	[label=subplot];
@@ -474,12 +394,12 @@ FRAUD and NO FRAUD Transaction Amount Distribution(0)" -> "light-gbm-with-comple
 	"plot_2_2(0)$1" -> "ProductCD(0)"	[label=pointplot];
 	"plot_2_2(0)$1" -> "tmp(0)$2"	[label=pointplot];
 	"plot_2_2(0)$1" -> "black(0)"	[label=pointplot];
-	"plot_2_2(0)$1" -> "[<_ast.Constant object at 0x12f886850>, <_ast.Constant object at 0x12f886880>, <_ast.Constant object at 0x12f8868b0>, <_ast.Constant \
-object at 0x12f8868e0>, <_ast.Constant object at 0x12f886910>](0)"	[label=pointplot];
+	"plot_2_2(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ac550>, <_ast.Constant object at 0x7fd4c04ac580>, <_ast.Constant object at 0x7fd4c04ac5b0>, <_\
+ast.Constant object at 0x7fd4c04ac5e0>, <_ast.Constant object at 0x7fd4c04ac610>](0)"	[label=pointplot];
 	"plot_2_2(0)$1" -> "False(0)"	[label=pointplot];
 	"black(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f886850>, <_ast.Constant object at 0x12f886880>, <_ast.Constant object at 0x12f8868b0>, <_ast.Constant \
-object at 0x12f8868e0>, <_ast.Constant object at 0x12f886910>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ac550>, <_ast.Constant object at 0x7fd4c04ac580>, <_ast.Constant object at 0x7fd4c04ac5b0>, <_\
+ast.Constant object at 0x7fd4c04ac5e0>, <_ast.Constant object at 0x7fd4c04ac610>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"False(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"plot_2_2(0)$2" -> "plot_2_2(0)$1"	[label=set_ylabel];
 	"plot_2_2(0)$2" -> "\% of Fraud Transactions(0)"	[label=set_ylabel];
@@ -705,10 +625,10 @@ object at 0x12f8868e0>, <_ast.Constant object at 0x12f886910>](0)" -> "light-gbm
 	"plot_2_2(0)$4" -> "False(0)"	[label=pointplot];
 	"plot_2_2(0)$4" -> "card4(0)"	[label=pointplot];
 	"plot_2_2(0)$4" -> "tmp(0)$8"	[label=pointplot];
-	"plot_2_2(0)$4" -> "[<_ast.Constant object at 0x12f8ccac0>, <_ast.Constant object at 0x12f8ccaf0>, <_ast.Constant object at 0x12f8ccb20>, <_ast.Constant \
-object at 0x12f8ccb50>](0)"	[label=pointplot];
-	"[<_ast.Constant object at 0x12f8ccac0>, <_ast.Constant object at 0x12f8ccaf0>, <_ast.Constant object at 0x12f8ccb20>, <_ast.Constant \
-object at 0x12f8ccb50>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"plot_2_2(0)$4" -> "[<_ast.Constant object at 0x7fd4c05b87c0>, <_ast.Constant object at 0x7fd4c05b87f0>, <_ast.Constant object at 0x7fd4c05b8820>, <_\
+ast.Constant object at 0x7fd4c05b8850>](0)"	[label=pointplot];
+	"[<_ast.Constant object at 0x7fd4c05b87c0>, <_ast.Constant object at 0x7fd4c05b87f0>, <_ast.Constant object at 0x7fd4c05b8820>, <_\
+ast.Constant object at 0x7fd4c05b8850>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"plot_2_2(0)$5" -> "\% of Fraud Transactions(0)"	[label=set_ylabel];
 	"plot_2_2(0)$5" -> "plot_2_2(0)$4"	[label=set_ylabel];
 	"plot_2(0)$11" -> "plot_2(0)$10"	[label=set_title];
@@ -823,30 +743,26 @@ object at 0x12f8ccb50>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appear
 	"plot_3(0)$16" -> "plot_3(0)$15"	[label=set_ylabel];
 	"plt(0)$46" -> "plt(0)$45"	[label=subplots_adjust];
 	"plt(0)$47" -> "plt(0)$46"	[label=show];
-	"[<_ast.Constant object at 0x12f8b35b0>, <_ast.Constant object at 0x12f8b35e0>, <_ast.Constant object at 0x12f8b3610>, <_ast.Constant \
-object at 0x12f8b3640>, <_ast.Constant object at 0x12f8b3670>, <_ast.Constant object at 0x12f8b36a0>, <_ast.Constant object at 0x12f8b36d0>, <_\
-ast.Constant object at 0x12f8b3700>, <_ast.Constant object at 0x12f8b3730>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05d42b0>, <_ast.Constant object at 0x7fd4c05d42e0>, <_ast.Constant object at 0x7fd4c05d4310>, <_\
+ast.Constant object at 0x7fd4c05d4340>, <_ast.Constant object at 0x7fd4c05d4370>, <_ast.Constant object at 0x7fd4c05d43a0>, <_ast.Constant \
+object at 0x7fd4c05d43d0>, <_ast.Constant object at 0x7fd4c05d4400>, <_ast.Constant object at 0x7fd4c05d4430>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"columns(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"columns(0)" -> "[<_ast.Constant object at 0x12f8b35b0>, <_ast.Constant object at 0x12f8b35e0>, <_ast.Constant object at 0x12f8b3610>, <_ast.Constant \
-object at 0x12f8b3640>, <_ast.Constant object at 0x12f8b3670>, <_ast.Constant object at 0x12f8b36a0>, <_ast.Constant object at 0x12f8b36d0>, <_\
-ast.Constant object at 0x12f8b3700>, <_ast.Constant object at 0x12f8b3730>](0)"	[label=iteratorOf];
-	"columns(0)" -> "[<_ast.Constant object at 0x12f8aab50>, <_ast.Constant object at 0x12f8aa880>, <_ast.Constant object at 0x12f8aab80>, <_ast.Constant \
-object at 0x12f8aa580>, <_ast.Constant object at 0x12f8aabb0>, <_ast.Constant object at 0x12f8aabe0>, <_ast.Constant object at 0x12f8aac10>, <_\
-ast.Constant object at 0x12f8aac40>, <_ast.Constant object at 0x12f8aac70>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f8aab50>, <_ast.Constant object at 0x12f8aa880>, <_ast.Constant object at 0x12f8aab80>, <_ast.Constant \
-object at 0x12f8aa580>, <_ast.Constant object at 0x12f8aabb0>, <_ast.Constant object at 0x12f8aabe0>, <_ast.Constant object at 0x12f8aac10>, <_\
-ast.Constant object at 0x12f8aac40>, <_ast.Constant object at 0x12f8aac70>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"columns(0)" -> "[<_ast.Constant object at 0x7fd4c05d42b0>, <_ast.Constant object at 0x7fd4c05d42e0>, <_ast.Constant object at 0x7fd4c05d4310>, <_\
+ast.Constant object at 0x7fd4c05d4340>, <_ast.Constant object at 0x7fd4c05d4370>, <_ast.Constant object at 0x7fd4c05d43a0>, <_ast.Constant \
+object at 0x7fd4c05d43d0>, <_ast.Constant object at 0x7fd4c05d4400>, <_ast.Constant object at 0x7fd4c05d4430>](0)"	[label=iteratorOf];
+	"columns(0)" -> "[<_ast.Constant object at 0x7fd4c05c87f0>, <_ast.Constant object at 0x7fd4c05c8850>, <_ast.Constant object at 0x7fd4c05c8820>, <_\
+ast.Constant object at 0x7fd4c05c8880>, <_ast.Constant object at 0x7fd4c05c88b0>, <_ast.Constant object at 0x7fd4c05c88e0>, <_ast.Constant \
+object at 0x7fd4c05c8910>, <_ast.Constant object at 0x7fd4c05c8940>, <_ast.Constant object at 0x7fd4c05c8970>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd4c05c87f0>, <_ast.Constant object at 0x7fd4c05c8850>, <_ast.Constant object at 0x7fd4c05c8820>, <_\
+ast.Constant object at 0x7fd4c05c8880>, <_ast.Constant object at 0x7fd4c05c88b0>, <_ast.Constant object at 0x7fd4c05c88e0>, <_ast.Constant \
+object at 0x7fd4c05c8910>, <_ast.Constant object at 0x7fd4c05c8940>, <_ast.Constant object at 0x7fd4c05c8970>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_transaction(0)$4" -> "train_transaction(0)$3"	[label=fillna];
 	"train_transaction(0)$4" -> "columns(0)"	[label=fillna];
 	"train_transaction(0)$4" -> "Miss(0)"	[label=fillna];
 	"Miss(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"DataFile(3)" -> "ploting_dist_ratio[0]"	[label=_argToVar];
-	"ploting_dist_ratio[0]" -> "train_transaction(0)$4"	[label=ploting_dist_ratio];
 	"Column(3)" -> "ploting_dist_ratio[1]"	[label=_argToVar];
-	"ploting_dist_ratio[1]" -> "columns(0)"	[label=ploting_dist_ratio];
 	"lim(3)" -> "ploting_dist_ratio[2]"	[label=_argToVar];
-	"ploting_dist_ratio[2]" -> "2500(0)"	[label=ploting_dist_ratio];
-	"2500(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"tmp(3)$0" -> "DataFile(3)"	[label=Mult];
 	"tmp(3)$0" -> "Column(3)"	[label=Mult];
 	"tmp(3)$0" -> "pd(3)"	[label=Mult];
@@ -904,7 +820,7 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"perc_amt(3)$0" -> "isFraud(3)"	[label=unstack];
 	"perc_amt(3)$0" -> "100(3)"	[label=unstack];
 	"perc_amt(3)$0" -> "train_transaction(3)"	[label=unstack];
-	"perc_amt(3)$0" -> "[<_ast.Constant object at 0x12f8a7850>, <_ast.Name object at 0x12f8a7880>](3)"	[label=unstack];
+	"perc_amt(3)$0" -> "[<_ast.Constant object at 0x7fd4c05985b0>, <_ast.Name object at 0x7fd4c05985e0>](3)"	[label=unstack];
 	"perc_amt(3)$0" -> "TransactionAmt(3)"	[label=unstack];
 	"perc_amt(3)$0" -> "total_amt(3)"	[label=unstack];
 	"perc_amt(3)$1" -> "perc_amt(3)$0"	[label=reset_index];
@@ -943,41 +859,16 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"plot_2(3)$3" -> "Transaction Amount(U$)(3)"	[label=set_ylabel];
 	"plt(3)$4" -> "plt(3)$3"	[label=subplots_adjust];
 	"plt(3)$5" -> "plt(3)$4"	[label=show];
+	"ploting_dist_ratio[385/4]" -> "columns(0)"	[label=ploting_dist_ratio];
+	"ploting_dist_ratio[385/4]" -> "train_transaction(0)$4"	[label=ploting_dist_ratio];
+	"ploting_dist_ratio[385/4]" -> "2500(0)"	[label=ploting_dist_ratio];
+	"2500(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_transaction(0)$5" -> "Others(0)"	[label=assignedFrom];
 	"train_transaction(0)$5" -> "train_transaction(0)$4"	[label=assignedFrom];
 	"train_transaction(0)$6" -> "Others(0)"	[label=assignedFrom];
 	"train_transaction(0)$6" -> "train_transaction(0)$5"	[label=assignedFrom];
 	"DataFile(4)" -> "ploting_cnt_amt[0]"	[label=_argToVar];
-	"ploting_cnt_amt[0]" -> "train_transaction(0)$6"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[0]" -> "train_transaction(0)$11"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[0]" -> "train_transaction(0)$12"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[0]" -> "train_transaction(0)$13"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[0]" -> "train_transaction(0)$17"	[label=ploting_cnt_amt];
-	"train_transaction(0)$11" -> "train_transaction(0)$10"	[label=fillna];
-	"train_transaction(0)$11" -> "NoInf(0)"	[label=fillna];
-	"train_transaction(0)$12" -> "Others(0)"	[label=assignedFrom];
-	"train_transaction(0)$12" -> "train_transaction(0)$11"	[label=assignedFrom];
-	"train_transaction(0)$13" -> "Others(0)"	[label=assignedFrom];
-	"train_transaction(0)$13" -> "train_transaction(0)$12"	[label=assignedFrom];
-	"train_transaction(0)$17" -> "Date(0)"	[label=assignedFrom];
-	"train_transaction(0)$17" -> "train_transaction(0)$16"	[label=assignedFrom];
 	"Column(4)" -> "ploting_cnt_amt[1]"	[label=_argToVar];
-	"ploting_cnt_amt[1]" -> "addr1(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "addr2(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "R_emaildomain(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "C1(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "C2(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "_Days(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "_Weekdays(0)"	[label=ploting_cnt_amt];
-	"ploting_cnt_amt[1]" -> "_Hours(0)"	[label=ploting_cnt_amt];
-	"addr1(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"addr2(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"R_emaildomain(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"C1(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"C2(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"_Days(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"_Weekdays(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"_Hours(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"lim(4)" -> "ploting_cnt_amt[2]"	[label=_argToVar];
 	"tmp(4)$0" -> "DataFile(4)"	[label=Mult];
 	"tmp(4)$0" -> "Column(4)"	[label=Mult];
@@ -1048,14 +939,14 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"perc_amt(4)$0" -> "DataFile(4)"	[label=unstack];
 	"perc_amt(4)$0" -> "isFraud(4)"	[label=unstack];
 	"perc_amt(4)$0" -> "100(4)"	[label=unstack];
-	"perc_amt(4)$0" -> "[<_ast.Constant object at 0x12f949d30>, <_ast.Name object at 0x12f949d60>](4)"	[label=unstack];
+	"perc_amt(4)$0" -> "[<_ast.Constant object at 0x7fd4c098ba00>, <_ast.Name object at 0x7fd4c098ba30>](4)"	[label=unstack];
 	"perc_amt(4)$0" -> "TransactionAmt(4)"	[label=unstack];
-	"perc_amt(4)$0" -> "[<_ast.Name object at 0x12f949f70>](4)"	[label=unstack];
+	"perc_amt(4)$0" -> "[<_ast.Name object at 0x7fd4c098bc40>](4)"	[label=unstack];
 	"perc_amt(4)$1" -> "perc_amt(4)$0"	[label=reset_index];
 	"perc_amt(4)$2" -> "perc_amt(4)$1"	[label=rename];
 	"amt(4)$0" -> "DataFile(4)"	[label=reset_index];
 	"amt(4)$0" -> "TransactionAmt(4)"	[label=reset_index];
-	"amt(4)$0" -> "[<_ast.Name object at 0x12f9326a0>](4)"	[label=reset_index];
+	"amt(4)$0" -> "[<_ast.Name object at 0x7fd4c098d3a0>](4)"	[label=reset_index];
 	"perc_amt(4)$3" -> "0(4)"	[label=fillna];
 	"perc_amt(4)$3" -> "perc_amt(4)$2"	[label=fillna];
 	"plt(4)$3" -> "plt(4)$2"	[label=subplot];
@@ -1103,6 +994,12 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"plot_2(4)$6" -> "total_amt(4)"	[label=text];
 	"plt(4)$4" -> "plt(4)$3"	[label=subplots_adjust];
 	"plt(4)$5" -> "plt(4)$4"	[label=show];
+	"ploting_cnt_amt[451/0]" -> "train_transaction(0)$6"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[451/0]" -> "addr1(0)"	[label=ploting_cnt_amt];
+	"addr1(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"ploting_cnt_amt[452/0]" -> "train_transaction(0)$6"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[452/0]" -> "addr2(0)"	[label=ploting_cnt_amt];
+	"addr2(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"Google(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_transaction(0)$7" -> "train_transaction(0)$6"	[label=assignedFrom];
 	"train_transaction(0)$7" -> "Google(0)"	[label=assignedFrom];
@@ -1114,7 +1011,22 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"train_transaction(0)$9" -> "Microsoft(0)"	[label=assignedFrom];
 	"train_transaction(0)$10" -> "Others(0)"	[label=assignedFrom];
 	"train_transaction(0)$10" -> "train_transaction(0)$9"	[label=assignedFrom];
+	"train_transaction(0)$11" -> "train_transaction(0)$10"	[label=fillna];
+	"train_transaction(0)$11" -> "NoInf(0)"	[label=fillna];
 	"NoInf(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"ploting_cnt_amt[466/0]" -> "train_transaction(0)$11"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[466/0]" -> "R_emaildomain(0)"	[label=ploting_cnt_amt];
+	"R_emaildomain(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"train_transaction(0)$12" -> "Others(0)"	[label=assignedFrom];
+	"train_transaction(0)$12" -> "train_transaction(0)$11"	[label=assignedFrom];
+	"ploting_cnt_amt[470/0]" -> "train_transaction(0)$12"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[470/0]" -> "C1(0)"	[label=ploting_cnt_amt];
+	"C1(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"train_transaction(0)$13" -> "Others(0)"	[label=assignedFrom];
+	"train_transaction(0)$13" -> "train_transaction(0)$12"	[label=assignedFrom];
+	"ploting_cnt_amt[474/0]" -> "train_transaction(0)$13"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[474/0]" -> "C2(0)"	[label=ploting_cnt_amt];
+	"C2(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"2017-12-01(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"START_DATE(0)$0" -> "2017-12-01(0)"	[label=assignedFrom];
 	"startdate(0)$0" -> "datetime(0)"	[label=strptime];
@@ -1133,6 +1045,8 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"Date(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_transaction(0)$16" -> "train_transaction(0)$15"	[label=assignedFrom];
 	"train_transaction(0)$16" -> "Date(0)"	[label=assignedFrom];
+	"train_transaction(0)$17" -> "Date(0)"	[label=assignedFrom];
+	"train_transaction(0)$17" -> "train_transaction(0)$16"	[label=assignedFrom];
 	"test_transaction(0)$1" -> "datetime(0)"	[label=apply];
 	"test_transaction(0)$1" -> "test_transaction(0)$0"	[label=apply];
 	"test_transaction(0)$1" -> "startdate(0)$0"	[label=apply];
@@ -1144,6 +1058,15 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"test_transaction(0)$3" -> "test_transaction(0)$2"	[label=assignedFrom];
 	"test_transaction(0)$4" -> "Date(0)"	[label=assignedFrom];
 	"test_transaction(0)$4" -> "test_transaction(0)$3"	[label=assignedFrom];
+	"ploting_cnt_amt[489/0]" -> "train_transaction(0)$17"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[489/0]" -> "_Days(0)"	[label=ploting_cnt_amt];
+	"_Days(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"ploting_cnt_amt[490/0]" -> "train_transaction(0)$17"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[490/0]" -> "_Weekdays(0)"	[label=ploting_cnt_amt];
+	"_Weekdays(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"ploting_cnt_amt[491/0]" -> "train_transaction(0)$17"	[label=ploting_cnt_amt];
+	"ploting_cnt_amt[491/0]" -> "_Hours(0)"	[label=ploting_cnt_amt];
+	"_Hours(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"plotly.graph_objs" -> "light-gbm-with-complete-eda.ipynb"	[label=importedBy];
 	"go(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"go(0)" -> "plotly.graph_objs"	[label=assignedFrom];
@@ -1160,18 +1083,20 @@ Cound and \%Fraud by each category(3)"	[label=set_title];
 	"plotly.figure_factory" -> "light-gbm-with-complete-eda.ipynb"	[label=importedBy];
 	"ff(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"ff(0)" -> "plotly.figure_factory"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f91d5b0>, <_ast.Constant object at 0x12f91d5e0>, <_ast.Constant object at 0x12f91d610>, <_ast.Constant \
-object at 0x12f91d640>, <_ast.Constant object at 0x12f91d670>, <_ast.Constant object at 0x12f91d6a0>, <_ast.Constant object at 0x12f91d6d0>, <_\
-ast.Constant object at 0x12f91d700>, <_ast.Constant object at 0x12f91d730>, <_ast.Constant object at 0x12f91d760>, <_ast.Constant \
-object at 0x12f91d790>, <_ast.Constant object at 0x12f91d7c0>, <_ast.Constant object at 0x12f91d7f0>, <_ast.Constant object at 0x12f91d820>, <_\
-ast.Constant object at 0x12f91d850>, <_ast.Constant object at 0x12f91d880>, <_ast.Constant object at 0x12f91d8b0>, <_ast.Constant \
-object at 0x12f91d8e0>, <_ast.Constant object at 0x12f91d910>, <_ast.Constant object at 0x12f91d940>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"color_op(0)$0" -> "[<_ast.Constant object at 0x12f91d5b0>, <_ast.Constant object at 0x12f91d5e0>, <_ast.Constant object at 0x12f91d610>, <_ast.Constant \
-object at 0x12f91d640>, <_ast.Constant object at 0x12f91d670>, <_ast.Constant object at 0x12f91d6a0>, <_ast.Constant object at 0x12f91d6d0>, <_\
-ast.Constant object at 0x12f91d700>, <_ast.Constant object at 0x12f91d730>, <_ast.Constant object at 0x12f91d760>, <_ast.Constant \
-object at 0x12f91d790>, <_ast.Constant object at 0x12f91d7c0>, <_ast.Constant object at 0x12f91d7f0>, <_ast.Constant object at 0x12f91d820>, <_\
-ast.Constant object at 0x12f91d850>, <_ast.Constant object at 0x12f91d880>, <_ast.Constant object at 0x12f91d8b0>, <_ast.Constant \
-object at 0x12f91d8e0>, <_ast.Constant object at 0x12f91d910>, <_ast.Constant object at 0x12f91d940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d32e0>, <_ast.Constant object at 0x7fd4c04d3310>, <_ast.Constant object at 0x7fd4c04d3340>, <_\
+ast.Constant object at 0x7fd4c04d3370>, <_ast.Constant object at 0x7fd4c04d33a0>, <_ast.Constant object at 0x7fd4c04d33d0>, <_ast.Constant \
+object at 0x7fd4c04d3430>, <_ast.Constant object at 0x7fd4c04d30d0>, <_ast.Constant object at 0x7fd4c04d3460>, <_ast.Constant object \
+at 0x7fd4c04d34c0>, <_ast.Constant object at 0x7fd4c04d34f0>, <_ast.Constant object at 0x7fd4c04d3520>, <_ast.Constant object at \
+0x7fd4c04d3580>, <_ast.Constant object at 0x7fd4c04d35b0>, <_ast.Constant object at 0x7fd4c04d35e0>, <_ast.Constant object at 0x7fd4c04d3610>, <_\
+ast.Constant object at 0x7fd4c04d3640>, <_ast.Constant object at 0x7fd4c04d3670>, <_ast.Constant object at 0x7fd4c04d36a0>, <_ast.Constant \
+object at 0x7fd4c04d36d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"color_op(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d32e0>, <_ast.Constant object at 0x7fd4c04d3310>, <_ast.Constant object at 0x7fd4c04d3340>, <_\
+ast.Constant object at 0x7fd4c04d3370>, <_ast.Constant object at 0x7fd4c04d33a0>, <_ast.Constant object at 0x7fd4c04d33d0>, <_ast.Constant \
+object at 0x7fd4c04d3430>, <_ast.Constant object at 0x7fd4c04d30d0>, <_ast.Constant object at 0x7fd4c04d3460>, <_ast.Constant object \
+at 0x7fd4c04d34c0>, <_ast.Constant object at 0x7fd4c04d34f0>, <_ast.Constant object at 0x7fd4c04d3520>, <_ast.Constant object at \
+0x7fd4c04d3580>, <_ast.Constant object at 0x7fd4c04d35b0>, <_ast.Constant object at 0x7fd4c04d35e0>, <_ast.Constant object at 0x7fd4c04d3610>, <_\
+ast.Constant object at 0x7fd4c04d3640>, <_ast.Constant object at 0x7fd4c04d3670>, <_ast.Constant object at 0x7fd4c04d36a0>, <_ast.Constant \
+object at 0x7fd4c04d36d0>](0)"	[label=assignedFrom];
 	"dates_temp(0)$0" -> "TransactionAmt(0)"	[label=reset_index];
 	"dates_temp(0)$0" -> "train_transaction(0)$17"	[label=reset_index];
 	"trace(0)$0" -> "Date(0)"	[label=Scatter];
@@ -1207,45 +1132,44 @@ object at 0x12f91d8e0>, <_ast.Constant object at 0x12f91d910>, <_ast.Constant ob
 	"layout(0)$0" -> "dict(0)"	[label=dict];
 	"layout(0)$0" -> "Total Transactions(0)"	[label=dict];
 	"layout(0)$0" -> "Total Transactions and Fraud Informations by Date(0)"	[label=dict];
-	"layout(0)$0" -> "[<_ast.Call object at 0x12f8eb190>, <_ast.Call object at 0x12f8eb4c0>, <_ast.Call object at 0x12f8eb460>, <_ast.Call object at 0x12f8eb9d0>](\
-0)"	[label=dict];
+	"layout(0)$0" -> "[<_ast.Call object at 0x7fd4c04c4e50>, <_ast.Call object at 0x7fd4c04e2100>, <_ast.Call object at 0x7fd4c04e23a0>, <_ast.Call object \
+at 0x7fd4c04e2640>](0)"	[label=dict];
 	"layout(0)$0" -> "date(0)"	[label=dict];
 	"layout(0)$0" -> "y(0)"	[label=dict];
 	"layout(0)$0" -> "right(0)"	[label=dict];
 	"layout(0)$0" -> "Total Transaction Amount(0)"	[label=dict];
-	"[<_ast.Call object at 0x12f8eb190>, <_ast.Call object at 0x12f8eb4c0>, <_ast.Call object at 0x12f8eb460>, <_ast.Call object at 0x12f8eb9d0>](\
-0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd4c04c4e50>, <_ast.Call object at 0x7fd4c04e2100>, <_ast.Call object at 0x7fd4c04e23a0>, <_ast.Call object \
+at 0x7fd4c04e2640>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"date(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"y(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"right(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"Total Transaction Amount(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9013a0>, <_ast.Name object at 0x12f9013d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04d0040>, <_ast.Name object at 0x7fd4c04d0070>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "layout(0)$0"	[label=dict];
-	"fig(0)$0" -> "[<_ast.Name object at 0x12f9013a0>, <_ast.Name object at 0x12f9013d0>](0)"	[label=dict];
-	"iplot[0]" -> "fig(0)$0"	[label=iplot];
-	"iplot[0]" -> "fig(0)$1"	[label=iplot];
-	"fig(0)$1" -> "layout(0)$1"	[label=dict];
-	"fig(0)$1" -> "[<_ast.Name object at 0x12f910c70>, <_ast.Name object at 0x12f910970>](0)"	[label=dict];
-	"[<_ast.Constant object at 0x12f9012e0>, <_ast.Constant object at 0x12f901610>, <_ast.Constant object at 0x12f901640>, <_ast.Constant \
-object at 0x12f901670>, <_ast.Constant object at 0x12f9016a0>, <_ast.Constant object at 0x12f9016d0>, <_ast.Constant object at 0x12f901700>, <_\
-ast.Constant object at 0x12f901730>, <_ast.Constant object at 0x12f901760>, <_ast.Constant object at 0x12f901790>, <_ast.Constant \
-object at 0x12f9017c0>, <_ast.Constant object at 0x12f9017f0>, <_ast.Constant object at 0x12f901820>, <_ast.Constant object at 0x12f901850>, <_\
-ast.Constant object at 0x12f9018b0>, <_ast.Constant object at 0x12f901910>, <_ast.Constant object at 0x12f901940>, <_ast.Constant \
-object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant object at 0x12f9019d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"color_op(0)$1" -> "[<_ast.Constant object at 0x12f9012e0>, <_ast.Constant object at 0x12f901610>, <_ast.Constant object at 0x12f901640>, <_ast.Constant \
-object at 0x12f901670>, <_ast.Constant object at 0x12f9016a0>, <_ast.Constant object at 0x12f9016d0>, <_ast.Constant object at 0x12f901700>, <_\
-ast.Constant object at 0x12f901730>, <_ast.Constant object at 0x12f901760>, <_ast.Constant object at 0x12f901790>, <_ast.Constant \
-object at 0x12f9017c0>, <_ast.Constant object at 0x12f9017f0>, <_ast.Constant object at 0x12f901820>, <_ast.Constant object at 0x12f901850>, <_\
-ast.Constant object at 0x12f9018b0>, <_ast.Constant object at 0x12f901910>, <_ast.Constant object at 0x12f901940>, <_ast.Constant \
-object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant object at 0x12f9019d0>](0)"	[label=assignedFrom];
+	"fig(0)$0" -> "[<_ast.Name object at 0x7fd4c04d0040>, <_ast.Name object at 0x7fd4c04d0070>](0)"	[label=dict];
+	"iplot[546/0]" -> "fig(0)$0"	[label=iplot];
+	"[<_ast.Constant object at 0x7fd4c04d02b0>, <_ast.Constant object at 0x7fd4c04d02e0>, <_ast.Constant object at 0x7fd4c04d0310>, <_\
+ast.Constant object at 0x7fd4c04d0340>, <_ast.Constant object at 0x7fd4c04d0370>, <_ast.Constant object at 0x7fd4c04d03a0>, <_ast.Constant \
+object at 0x7fd4c04d03d0>, <_ast.Constant object at 0x7fd4c04d0400>, <_ast.Constant object at 0x7fd4c04d0430>, <_ast.Constant object \
+at 0x7fd4c04d0460>, <_ast.Constant object at 0x7fd4c04d0490>, <_ast.Constant object at 0x7fd4c04d04c0>, <_ast.Constant object at \
+0x7fd4c04d04f0>, <_ast.Constant object at 0x7fd4c04d0520>, <_ast.Constant object at 0x7fd4c04d0550>, <_ast.Constant object at 0x7fd4c04d0580>, <_\
+ast.Constant object at 0x7fd4c04d05e0>, <_ast.Constant object at 0x7fd4c04d0610>, <_ast.Constant object at 0x7fd4c04d0640>, <_ast.Constant \
+object at 0x7fd4c04d0670>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"color_op(0)$1" -> "[<_ast.Constant object at 0x7fd4c04d02b0>, <_ast.Constant object at 0x7fd4c04d02e0>, <_ast.Constant object at 0x7fd4c04d0310>, <_\
+ast.Constant object at 0x7fd4c04d0340>, <_ast.Constant object at 0x7fd4c04d0370>, <_ast.Constant object at 0x7fd4c04d03a0>, <_ast.Constant \
+object at 0x7fd4c04d03d0>, <_ast.Constant object at 0x7fd4c04d0400>, <_ast.Constant object at 0x7fd4c04d0430>, <_ast.Constant object \
+at 0x7fd4c04d0460>, <_ast.Constant object at 0x7fd4c04d0490>, <_ast.Constant object at 0x7fd4c04d04c0>, <_ast.Constant object at \
+0x7fd4c04d04f0>, <_ast.Constant object at 0x7fd4c04d0520>, <_ast.Constant object at 0x7fd4c04d0550>, <_ast.Constant object at 0x7fd4c04d0580>, <_\
+ast.Constant object at 0x7fd4c04d05e0>, <_ast.Constant object at 0x7fd4c04d0610>, <_ast.Constant object at 0x7fd4c04d0640>, <_ast.Constant \
+object at 0x7fd4c04d0670>](0)"	[label=assignedFrom];
 	"tmp_amt(0)$0" -> "TransactionAmt(0)"	[label=reset_index];
 	"tmp_amt(0)$0" -> "train_transaction(0)$17"	[label=reset_index];
-	"tmp_amt(0)$0" -> "[<_ast.Attribute object at 0x12f901be0>, <_ast.Constant object at 0x12f901ca0>](0)"	[label=reset_index];
-	"[<_ast.Attribute object at 0x12f901be0>, <_ast.Constant object at 0x12f901ca0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"tmp_amt(0)$0" -> "[<_ast.Attribute object at 0x7fd4c04d08b0>, <_ast.Constant object at 0x7fd4c04d09a0>](0)"	[label=reset_index];
+	"[<_ast.Attribute object at 0x7fd4c04d08b0>, <_ast.Constant object at 0x7fd4c04d09a0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"tmp_trans(0)$0" -> "TransactionAmt(0)"	[label=reset_index];
 	"tmp_trans(0)$0" -> "train_transaction(0)$17"	[label=reset_index];
-	"tmp_trans(0)$0" -> "[<_ast.Attribute object at 0x12f901f70>, <_ast.Constant object at 0x12f901280>](0)"	[label=reset_index];
-	"[<_ast.Attribute object at 0x12f901f70>, <_ast.Constant object at 0x12f901280>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"tmp_trans(0)$0" -> "[<_ast.Attribute object at 0x7fd4c04d0c40>, <_ast.Constant object at 0x7fd4c04d0d00>](0)"	[label=reset_index];
+	"[<_ast.Attribute object at 0x7fd4c04d0c40>, <_ast.Constant object at 0x7fd4c04d0d00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"tmp_trans_fraud(0)$0" -> "isFraud(0)"	[label=assignedFrom];
 	"tmp_trans_fraud(0)$0" -> "1(0)"	[label=assignedFrom];
 	"tmp_trans_fraud(0)$0" -> "tmp_trans(0)$0"	[label=assignedFrom];
@@ -1285,11 +1209,14 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"layout(0)$1" -> "right(0)"	[label=dict];
 	"layout(0)$1" -> "Total Transaction Amount(0)"	[label=dict];
 	"layout(0)$1" -> "FRAUD TRANSACTIONS - Total Transactions and Fraud Informations by Date(0)"	[label=dict];
-	"layout(0)$1" -> "[<_ast.Call object at 0x12f8f4a30>, <_ast.Call object at 0x12f8f4cd0>, <_ast.Call object at 0x12f8f4f70>, <_ast.Call object at 0x12f910250>](\
-0)"	[label=dict];
-	"[<_ast.Call object at 0x12f8f4a30>, <_ast.Call object at 0x12f8f4cd0>, <_ast.Call object at 0x12f8f4f70>, <_ast.Call object at 0x12f910250>](\
-0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f910c70>, <_ast.Name object at 0x12f910970>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"layout(0)$1" -> "[<_ast.Call object at 0x7fd4c04c17c0>, <_ast.Call object at 0x7fd4c04c1700>, <_ast.Call object at 0x7fd4c04c1ca0>, <_ast.Call object \
+at 0x7fd4c04c1f70>](0)"	[label=dict];
+	"[<_ast.Call object at 0x7fd4c04c17c0>, <_ast.Call object at 0x7fd4c04c1700>, <_ast.Call object at 0x7fd4c04c1ca0>, <_ast.Call object \
+at 0x7fd4c04c1f70>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04fb910>, <_ast.Name object at 0x7fd4c04fb940>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"fig(0)$1" -> "layout(0)$1"	[label=dict];
+	"fig(0)$1" -> "[<_ast.Name object at 0x7fd4c04fb910>, <_ast.Name object at 0x7fd4c04fb940>](0)"	[label=dict];
+	"iplot[597/0]" -> "fig(0)$1"	[label=iplot];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
@@ -1297,8 +1224,6 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"StratifiedKFold(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"StratifiedKFold(0)" -> StratifiedKFold	[label=assignedFrom];
 	"seed(5)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "SEED(0)$0"	[label=seed_everything];
-	"SEED(0)$0" -> "42(0)"	[label=assignedFrom];
 	"random(5)$0" -> "seed(5)"	[label=seed];
 	"random(5)$0" -> "random(5)"	[label=seed];
 	"os(5)$0" -> "seed(5)"	[label=str];
@@ -1315,6 +1240,9 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"X(6)$0" -> "tr_df(6)"	[label=assignedFrom];
 	"X(6)$0" -> "features_columns(6)"	[label=assignedFrom];
 	"X(6)$0" -> "target(6)"	[label=assignedFrom];
+	"y(6)$0" -> "tr_df(6)"	[label=assignedFrom];
+	"y(6)$0" -> "features_columns(6)"	[label=assignedFrom];
+	"y(6)$0" -> "target(6)"	[label=assignedFrom];
 	"P(6)$0" -> "tt_df(6)"	[label=assignedFrom];
 	"P(6)$0" -> "features_columns(6)"	[label=assignedFrom];
 	"P(6)$0" -> "target(6)"	[label=assignedFrom];
@@ -1324,29 +1252,45 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"split_groups(6)$0" -> "tr_df(6)"	[label=assignedFrom];
 	"split_groups(6)$0" -> "DT_M(6)"	[label=assignedFrom];
 	"tt_df(6)$0" -> "tt_df(6)"	[label=assignedFrom];
-	"tt_df(6)$0" -> "[<_ast.Constant object at 0x12f90a100>, <_ast.Name object at 0x12f90a130>](6)"	[label=assignedFrom];
-	"predictions(6)$0" -> "len(6)"	[label=zeros];
+	"tt_df(6)$0" -> "[<_ast.Constant object at 0x7fd500869e80>, <_ast.Name object at 0x7fd500869eb0>](6)"	[label=assignedFrom];
 	"predictions(6)$0" -> "tt_df(6)$0"	[label=zeros];
 	"predictions(6)$0" -> "np(6)"	[label=zeros];
-	"oof(6)$0" -> "len(6)"	[label=zeros];
+	"predictions(6)$0" -> "len(6)"	[label=zeros];
 	"oof(6)$0" -> "tr_df(6)"	[label=zeros];
 	"oof(6)$0" -> "np(6)"	[label=zeros];
-	"trn_idx(6)" -> "y(6)$0"	[label=iteratorOf];
+	"oof(6)$0" -> "len(6)"	[label=zeros];
+	"fold_(6)" -> "folds(6)$0"	[label=iteratorOf];
+	"fold_(6)" -> "X(6)$0"	[label=iteratorOf];
+	"fold_(6)" -> "y(6)$0"	[label=iteratorOf];
+	"fold_(6)" -> "split_groups(6)$0"	[label=iteratorOf];
+	"fold_(6)" -> "enumerate(6)"	[label=iteratorOf];
 	"trn_idx(6)" -> "folds(6)$0"	[label=iteratorOf];
 	"trn_idx(6)" -> "X(6)$0"	[label=iteratorOf];
+	"trn_idx(6)" -> "y(6)$0"	[label=iteratorOf];
 	"trn_idx(6)" -> "split_groups(6)$0"	[label=iteratorOf];
 	"trn_idx(6)" -> "enumerate(6)"	[label=iteratorOf];
-	"val_idx(6)" -> "y(6)$0"	[label=iteratorOf];
 	"val_idx(6)" -> "folds(6)$0"	[label=iteratorOf];
 	"val_idx(6)" -> "X(6)$0"	[label=iteratorOf];
+	"val_idx(6)" -> "y(6)$0"	[label=iteratorOf];
 	"val_idx(6)" -> "split_groups(6)$0"	[label=iteratorOf];
 	"val_idx(6)" -> "enumerate(6)"	[label=iteratorOf];
-	"tr_y(6)$0" -> "y(6)$0"	[label=assignedFrom];
+	"print[618/8]" -> "fold_(6)"	[label=print];
+	"print[618/8]" -> "Fold:(6)"	[label=print];
+	"tr_x(6)$0" -> "X(6)$0"	[label=assignedFrom];
+	"tr_x(6)$0" -> "y(6)$0"	[label=assignedFrom];
+	"tr_x(6)$0" -> "trn_idx(6)"	[label=assignedFrom];
 	"tr_y(6)$0" -> "X(6)$0"	[label=assignedFrom];
+	"tr_y(6)$0" -> "y(6)$0"	[label=assignedFrom];
 	"tr_y(6)$0" -> "trn_idx(6)"	[label=assignedFrom];
-	"vl_y(6)$0" -> "y(6)$0"	[label=assignedFrom];
+	"vl_x(6)$0" -> "X(6)$0"	[label=assignedFrom];
+	"vl_x(6)$0" -> "y(6)$0"	[label=assignedFrom];
+	"vl_x(6)$0" -> "val_idx(6)"	[label=assignedFrom];
 	"vl_y(6)$0" -> "X(6)$0"	[label=assignedFrom];
+	"vl_y(6)$0" -> "y(6)$0"	[label=assignedFrom];
 	"vl_y(6)$0" -> "val_idx(6)"	[label=assignedFrom];
+	"print[622/8]" -> "len(6)"	[label=print];
+	"print[622/8]" -> "tr_x(6)$0"	[label=print];
+	"print[622/8]" -> "vl_x(6)$0"	[label=print];
 	"tr_data(6)$0" -> "tr_x(6)$0"	[label=Dataset];
 	"tr_data(6)$0" -> "tr_y(6)$0"	[label=Dataset];
 	"tr_data(6)$0" -> "lgb(6)"	[label=Dataset];
@@ -1356,7 +1300,7 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"estimator(6)$0" -> "lgb_params(6)"	[label=train];
 	"estimator(6)$0" -> "tr_data(6)$0"	[label=train];
 	"estimator(6)$0" -> "lgb(6)"	[label=train];
-	"estimator(6)$0" -> "[<_ast.Name object at 0x12fa94790>, <_ast.Name object at 0x12fa947c0>](6)"	[label=train];
+	"estimator(6)$0" -> "[<_ast.Name object at 0x7fd500854460>, <_ast.Name object at 0x7fd500854490>](6)"	[label=train];
 	"estimator(6)$0" -> "200(6)"	[label=train];
 	"pp_p(6)$0" -> "P(6)$0"	[label=predict];
 	"pp_p(6)$0" -> "estimator(6)$0"	[label=predict];
@@ -1365,7 +1309,27 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"predictions(6)$1" -> "pp_p(6)$0"	[label=Add];
 	"oof_preds(6)$0" -> "vl_x(6)$0"	[label=predict];
 	"oof_preds(6)$0" -> "estimator(6)$0"	[label=predict];
+	"oof(6)$1" -> "oof(6)$0"	[label=Div];
+	"oof(6)$1" -> "oof_preds(6)$0"	[label=Div];
+	"feature_imp(6)$0" -> "X(6)$0"	[label=DataFrame];
+	"feature_imp(6)$0" -> "estimator(6)$0"	[label=DataFrame];
+	"feature_imp(6)$0" -> "pd(6)"	[label=DataFrame];
+	"feature_imp(6)$0" -> "sorted(6)"	[label=DataFrame];
+	"feature_imp(6)$0" -> "zip(6)"	[label=DataFrame];
+	"feature_imp(6)$0" -> "[<_ast.Constant object at 0x7fd500854fa0>, <_ast.Constant object at 0x7fd500854fd0>](6)"	[label=DataFrame];
+	"print[641/12]" -> "feature_imp(6)$0"	[label=print];
 	"gc(6)$0" -> "gc(6)"	[label=collect];
+	"tt_df(6)$1" -> "tt_df(6)$0"	[label=assignedFrom];
+	"tt_df(6)$1" -> "predictions(6)$1"	[label=assignedFrom];
+	"print[647/4]" -> "y(6)$0"	[label=print];
+	"print[647/4]" -> "oof(6)$1"	[label=print];
+	"print[647/4]" -> "OOF AUC:(6)"	[label=print];
+	"print[647/4]" -> "metrics(6)"	[label=print];
+	"print[649/8]" -> "tt_df(6)$1"	[label=print];
+	"print[649/8]" -> "metrics(6)"	[label=print];
+	"print[649/8]" -> "Holdout AUC:(6)"	[label=print];
+	"print[649/8]" -> "TARGET(6)"	[label=print];
+	"print[649/8]" -> "prediction(6)"	[label=print];
 	os -> "light-gbm-with-complete-eda.ipynb"	[label=importedBy];
 	"os(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
@@ -1376,11 +1340,16 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"random(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"random(0)" -> random	[label=assignedFrom];
 	"42(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"SEED(0)$0" -> "42(0)"	[label=assignedFrom];
+	"seed_everything[654/0]" -> "SEED(0)$0"	[label=seed_everything];
 	"LOCAL_TEST(0)$0" -> "False(0)"	[label=assignedFrom];
+	"TARGET(0)$0" -> "isFraud(0)"	[label=assignedFrom];
 	"START_DATE(0)$1" -> "datetime(0)"	[label=strptime];
 	"START_DATE(0)$1" -> "\%Y-\%m-\%d(0)"	[label=strptime];
 	"START_DATE(0)$1" -> "2017-11-30(0)"	[label=strptime];
 	"2017-11-30(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"Load Data(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"print[658/0]" -> "Load Data(0)"	[label=print];
 	"train_df(0)$0" -> "pd(0)"	[label=read_pickle];
 	"train_df(0)$0" -> "../input/ieee-data-minification/train_transaction.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/train_transaction.pkl(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
@@ -1400,6 +1369,11 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"test_df(0)$0" -> "True(0)"	[label=reset_index];
 	"test_df(0)$0" -> "train_df(0)$2"	[label=reset_index];
 	"test_df(0)$0" -> "DT_M(0)"	[label=reset_index];
+	"train_df(0)$3" -> "True(0)"	[label=reset_index];
+	"train_df(0)$3" -> "1(0)"	[label=reset_index];
+	"train_df(0)$3" -> "train_df(0)$2"	[label=reset_index];
+	"train_df(0)$3" -> "DT_M(0)"	[label=reset_index];
+	"train_df(0)$3" -> "train_df(0)$3"	[label=reset_index];
 	"train_identity(0)$1" -> "pd(0)"	[label=read_pickle];
 	"train_identity(0)$1" -> "../input/ieee-data-minification/train_identity.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/train_identity.pkl(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
@@ -1408,23 +1382,29 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"test_identity(0)$1" -> "train_identity(0)$1"	[label=reset_index];
 	"test_identity(0)$1" -> "TransactionID(0)"	[label=reset_index];
 	"TransactionID(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"train_identity(0)$2" -> "train_df(0)$3"	[label=reset_index];
 	"train_identity(0)$2" -> "True(0)"	[label=reset_index];
+	"train_identity(0)$2" -> "train_df(0)$3"	[label=reset_index];
 	"train_identity(0)$2" -> "train_identity(0)$1"	[label=reset_index];
 	"train_identity(0)$2" -> "TransactionID(0)"	[label=reset_index];
 	"train_identity(0)$2" -> "train_identity(0)$2"	[label=reset_index];
+	"test_df(0)$1" -> "pd(0)"	[label=read_pickle];
+	"test_df(0)$1" -> "../input/ieee-data-minification/test_transaction.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/test_transaction.pkl(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_identity(0)$3" -> "pd(0)"	[label=read_pickle];
 	"train_identity(0)$3" -> "../input/ieee-data-minification/train_identity.pkl(0)"	[label=read_pickle];
 	"test_identity(0)$2" -> "pd(0)"	[label=read_pickle];
 	"test_identity(0)$2" -> "../input/ieee-data-minification/test_identity.pkl(0)"	[label=read_pickle];
 	"../input/ieee-data-minification/test_identity.pkl(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"base_columns(0)$0" -> "train_df(0)$3"	[label=Add];
 	"base_columns(0)$0" -> "list(0)"	[label=Add];
+	"base_columns(0)$0" -> "train_df(0)$3"	[label=Add];
 	"base_columns(0)$0" -> "train_identity(0)$3"	[label=Add];
-	"[<_ast.Name object at 0x12fa73e80>, <_ast.Name object at 0x12fa73eb0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"Shape control:(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"print[681/0]" -> "train_df(0)$3"	[label=print];
+	"print[681/0]" -> "test_df(0)$1"	[label=print];
+	"print[681/0]" -> "Shape control:(0)"	[label=print];
+	"[<_ast.Name object at 0x7fd50083eb50>, <_ast.Name object at 0x7fd50083eb80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"df(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12fa73e80>, <_ast.Name object at 0x12fa73eb0>](0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd50083eb50>, <_ast.Name object at 0x7fd50083eb80>](0)"	[label=iteratorOf];
 	"df(0)$0" -> "datetime(0)"	[label=apply];
 	"df(0)$0" -> "TransactionDT(0)"	[label=apply];
 	"df(0)$0" -> "x(0)"	[label=apply];
@@ -1460,36 +1440,46 @@ object at 0x12f901970>, <_ast.Constant object at 0x12f9019a0>, <_ast.Constant ob
 	"df(0)$7" -> "df(0)$6"	[label=where];
 	"df(0)$7" -> "df(0)$7"	[label=where];
 	"df(0)$7" -> "D9(0)"	[label=where];
-	"df(0)$7" -> "[<_ast.Name object at 0x12fa5cc40>, <_ast.Name object at 0x12fa5cc70>](0)"	[label=iteratorOf];
+	"df(0)$7" -> "[<_ast.Name object at 0x7fd4902ae9a0>, <_ast.Name object at 0x7fd4902ae9d0>](0)"	[label=iteratorOf];
 	"D9(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fa5cc40>, <_ast.Name object at 0x12fa5cc70>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa6bd30>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"i_cols(0)$0" -> "[<_ast.Constant object at 0x12fa6bd30>](0)"	[label=assignedFrom];
-	"i_cols(0)$2" -> "[<_ast.Constant object at 0x12fb0c310>, <_ast.Constant object at 0x12fb0c340>, <_ast.Constant object at 0x12fb0c370>, <_ast.Constant \
-object at 0x12fb0c3a0>, <_ast.Constant object at 0x12fb0c3d0>, <_ast.Constant object at 0x12fb0c400>, <_ast.Constant object at 0x12fb0c430>](\
-0)"	[label=assignedFrom];
-	"i_cols(0)$3" -> "[<_ast.Constant object at 0x12fdc3a60>, <_ast.Constant object at 0x12fdc3a90>, <_ast.Constant object at 0x12fdc3ac0>, <_ast.Constant \
-object at 0x12fdc3af0>, <_ast.Constant object at 0x12fdc3b20>, <_ast.Constant object at 0x12fdc3b50>, <_ast.Constant object at 0x12fdc3b80>, <_\
-ast.Constant object at 0x12fdc3bb0>, <_ast.Constant object at 0x12fdc3be0>, <_ast.Constant object at 0x12fdc3c10>, <_ast.Constant \
-object at 0x12fdc3c40>, <_ast.Constant object at 0x12fdc3c70>, <_ast.Constant object at 0x12fdc3ca0>, <_ast.Constant object at 0x12fdc3cd0>, <_\
-ast.Constant object at 0x12fdc3d00>, <_ast.Constant object at 0x12fdc3d30>, <_ast.Constant object at 0x12fdc3d60>, <_ast.Constant \
-object at 0x12fdc3d90>, <_ast.Constant object at 0x12fdc3dc0>, <_ast.Constant object at 0x12fdc3df0>, <_ast.Constant object at 0x12fdc3e20>, <_\
-ast.Constant object at 0x12fdc3e50>, <_ast.Constant object at 0x12fdc3e80>, <_ast.Constant object at 0x12fdc3eb0>, <_ast.Constant \
-object at 0x12fdc3ee0>, <_ast.Constant object at 0x12fdc3f10>, <_ast.Constant object at 0x12fdc3f40>, <_ast.Constant object at 0x12fdc3f70>, <_\
-ast.Constant object at 0x12fdc3fa0>, <_ast.Constant object at 0x12fdc3fd0>, <_ast.Constant object at 0x12fda1040>, <_ast.Constant \
-object at 0x12fda1070>, <_ast.Constant object at 0x12fda10a0>, <_ast.Constant object at 0x12fda10d0>, <_ast.Constant object at 0x12fda1100>, <_\
-ast.Constant object at 0x12fda1130>, <_ast.Constant object at 0x12fda1160>, <_ast.Constant object at 0x12fda1190>, <_ast.Constant \
-object at 0x12fda11c0>, <_ast.Constant object at 0x12fda11f0>, <_ast.Constant object at 0x12fda1220>, <_ast.Constant object at 0x12fda1250>, <_\
-ast.Constant object at 0x12fda1280>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fda1fd0>, <_ast.Constant object at 0x12fdc6040>, <_ast.Constant object at 0x12fdc6070>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"i_cols(0)$4" -> "[<_ast.Constant object at 0x12fdc6dc0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fdccb50>, <_ast.Constant object at 0x12fdccb80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902ae9a0>, <_ast.Name object at 0x7fd4902ae9d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500850a00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"i_cols(0)$0" -> "[<_ast.Constant object at 0x7fd500850a00>](0)"	[label=assignedFrom];
+	"col(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"col(0)" -> "list(0)"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$0"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$2"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$3"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4d0574cd0>, <_ast.Constant object at 0x7fd4d0574d00>, <_ast.Constant object at 0x7fd4d0574d30>](0)"	[label=iteratorOf];
+	"col(0)" -> "i_cols(0)$4"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4d058f8e0>, <_ast.Constant object at 0x7fd4d058f910>](0)"	[label=iteratorOf];
+	"col(0)" -> "train_df(0)$17"	[label=iteratorOf];
+	"i_cols(0)$2" -> "[<_ast.Constant object at 0x7fd4902c7fd0>, <_ast.Constant object at 0x7fd4902b1040>, <_ast.Constant object at 0x7fd4902b1070>, <_\
+ast.Constant object at 0x7fd4902b10a0>, <_ast.Constant object at 0x7fd4902b10d0>, <_ast.Constant object at 0x7fd4902b1100>, <_ast.Constant \
+object at 0x7fd4902b1130>](0)"	[label=assignedFrom];
+	"i_cols(0)$3" -> "[<_ast.Constant object at 0x7fd4d0573760>, <_ast.Constant object at 0x7fd4d0573790>, <_ast.Constant object at 0x7fd4d05737c0>, <_\
+ast.Constant object at 0x7fd4d05737f0>, <_ast.Constant object at 0x7fd4d0573850>, <_ast.Constant object at 0x7fd4d0573880>, <_ast.Constant \
+object at 0x7fd4d05738b0>, <_ast.Constant object at 0x7fd4d05738e0>, <_ast.Constant object at 0x7fd4d0573910>, <_ast.Constant object \
+at 0x7fd4d0573940>, <_ast.Constant object at 0x7fd4d0573970>, <_ast.Constant object at 0x7fd4d05739a0>, <_ast.Constant object at \
+0x7fd4d05739d0>, <_ast.Constant object at 0x7fd4d0573a00>, <_ast.Constant object at 0x7fd4d0573a30>, <_ast.Constant object at 0x7fd4d0573a60>, <_\
+ast.Constant object at 0x7fd4d0573a90>, <_ast.Constant object at 0x7fd4d0573ac0>, <_ast.Constant object at 0x7fd4d0573af0>, <_ast.Constant \
+object at 0x7fd4d0573820>, <_ast.Constant object at 0x7fd4d0573b20>, <_ast.Constant object at 0x7fd4d0573b50>, <_ast.Constant object \
+at 0x7fd4d0573b80>, <_ast.Constant object at 0x7fd4d0573bb0>, <_ast.Constant object at 0x7fd4d0573be0>, <_ast.Constant object at \
+0x7fd4d0573c10>, <_ast.Constant object at 0x7fd4d0573c40>, <_ast.Constant object at 0x7fd4d0573c70>, <_ast.Constant object at 0x7fd4d0573ca0>, <_\
+ast.Constant object at 0x7fd4d0573cd0>, <_ast.Constant object at 0x7fd4d0573d00>, <_ast.Constant object at 0x7fd4d0573d30>, <_ast.Constant \
+object at 0x7fd4d0573d60>, <_ast.Constant object at 0x7fd4d0573d90>, <_ast.Constant object at 0x7fd4d0573df0>, <_ast.Constant object \
+at 0x7fd4d0573e20>, <_ast.Constant object at 0x7fd4d0573e50>, <_ast.Constant object at 0x7fd4d0573e80>, <_ast.Constant object at \
+0x7fd4d0573eb0>, <_ast.Constant object at 0x7fd4d0573ee0>, <_ast.Constant object at 0x7fd4d0573f10>, <_ast.Constant object at 0x7fd4d0573f40>, <_\
+ast.Constant object at 0x7fd4d0573f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0574cd0>, <_ast.Constant object at 0x7fd4d0574d00>, <_ast.Constant object at 0x7fd4d0574d30>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"i_cols(0)$4" -> "[<_ast.Constant object at 0x7fd4d0597ac0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d058f8e0>, <_ast.Constant object at 0x7fd4d058f910>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_df(0)$17" -> "col(0)"	[label=map];
 	"train_df(0)$17" -> "train_df(0)$16"	[label=map];
 	"train_df(0)$17" -> "temp_dict(0)$2"	[label=map];
 	"valid_card(0)$0" -> "pd(0)"	[label=concat];
-	"valid_card(0)$0" -> "[<_ast.Subscript object at 0x12fa6bfa0>, <_ast.Subscript object at 0x12fa67040>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa6bfa0>, <_ast.Subscript object at 0x12fa67040>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"valid_card(0)$0" -> "[<_ast.Subscript object at 0x7fd500850be0>, <_ast.Subscript object at 0x7fd500850d00>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500850be0>, <_ast.Subscript object at 0x7fd500850d00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"valid_card(0)$1" -> "col(0)"	[label=value_counts];
 	"valid_card(0)$1" -> "valid_card(0)$0"	[label=value_counts];
 	"valid_card(0)$2" -> "valid_card(0)$1"	[label=assignedFrom];
@@ -1498,13 +1488,13 @@ ast.Constant object at 0x12fda1280>](0)"	[label=assignedFrom];
 	"2(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"valid_card(0)$3" -> "valid_card(0)$2"	[label=list];
 	"train_df(0)$4" -> "np(0)"	[label=where];
-	"train_df(0)$4" -> "col(0)"	[label=where];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=where];
 	"train_df(0)$4" -> "test_df(0)$1"	[label=where];
+	"train_df(0)$4" -> "col(0)"	[label=where];
 	"train_df(0)$4" -> "train_df(0)$4"	[label=where];
 	"test_df(0)$2" -> "np(0)"	[label=where];
-	"test_df(0)$2" -> "col(0)"	[label=where];
 	"test_df(0)$2" -> "test_df(0)$1"	[label=where];
+	"test_df(0)$2" -> "col(0)"	[label=where];
 	"test_df(0)$2" -> "train_df(0)$4"	[label=where];
 	"test_df(0)$2" -> "test_df(0)$2"	[label=where];
 	"train_df(0)$5" -> "np(0)"	[label=where];
@@ -1517,12 +1507,12 @@ ast.Constant object at 0x12fda1280>](0)"	[label=assignedFrom];
 	"test_df(0)$3" -> "valid_card(0)$3"	[label=where];
 	"test_df(0)$3" -> "test_df(0)$2"	[label=where];
 	"test_df(0)$3" -> "test_df(0)$3"	[label=where];
-	"[<_ast.Constant object at 0x12fa5ca30>, <_ast.Constant object at 0x12fa5ca60>, <_ast.Constant object at 0x12fa5ca90>, <_ast.Constant \
-object at 0x12fa5cac0>, <_ast.Constant object at 0x12fa5caf0>, <_ast.Constant object at 0x12fa5cb20>, <_ast.Constant object at 0x12fa5cb50>, <_\
-ast.Constant object at 0x12fa5cb80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"i_cols(0)$1" -> "[<_ast.Constant object at 0x12fa5ca30>, <_ast.Constant object at 0x12fa5ca60>, <_ast.Constant object at 0x12fa5ca90>, <_ast.Constant \
-object at 0x12fa5cac0>, <_ast.Constant object at 0x12fa5caf0>, <_ast.Constant object at 0x12fa5cb20>, <_ast.Constant object at 0x12fa5cb50>, <_\
-ast.Constant object at 0x12fa5cb80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ae7c0>, <_ast.Constant object at 0x7fd4902ae7f0>, <_ast.Constant object at 0x7fd4902ae820>, <_\
+ast.Constant object at 0x7fd4902ae550>, <_ast.Constant object at 0x7fd4902ae850>, <_ast.Constant object at 0x7fd4902ae880>, <_ast.Constant \
+object at 0x7fd4902ae8b0>, <_ast.Constant object at 0x7fd4902ae8e0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"i_cols(0)$1" -> "[<_ast.Constant object at 0x7fd4902ae7c0>, <_ast.Constant object at 0x7fd4902ae7f0>, <_ast.Constant object at 0x7fd4902ae820>, <_\
+ast.Constant object at 0x7fd4902ae550>, <_ast.Constant object at 0x7fd4902ae850>, <_ast.Constant object at 0x7fd4902ae880>, <_ast.Constant \
+object at 0x7fd4902ae8b0>, <_ast.Constant object at 0x7fd4902ae8e0>](0)"	[label=assignedFrom];
 	"df(0)$8" -> "np(0)"	[label=astype];
 	"df(0)$8" -> "1(0)"	[label=astype];
 	"df(0)$8" -> "df(0)$7"	[label=astype];
@@ -1531,8 +1521,8 @@ ast.Constant object at 0x12fa5cb80>](0)"	[label=assignedFrom];
 	"df(0)$9" -> "1(0)"	[label=astype];
 	"df(0)$9" -> "i_cols(0)$1"	[label=astype];
 	"df(0)$9" -> "df(0)$8"	[label=astype];
-	"df(0)$9" -> "[<_ast.Name object at 0x12fb12040>, <_ast.Name object at 0x12fb12070>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12fb12040>, <_ast.Name object at 0x12fb12070>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"df(0)$9" -> "[<_ast.Name object at 0x7fd49028ad30>, <_ast.Name object at 0x7fd49028ad60>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd49028ad30>, <_ast.Name object at 0x7fd49028ad60>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_df(0)$6" -> "card1(0)"	[label=Add];
 	"train_df(0)$6" -> "card2(0)"	[label=Add];
 	"train_df(0)$6" -> "train_df(0)$5"	[label=Add];
@@ -1591,27 +1581,27 @@ ast.Constant object at 0x12fa5cb80>](0)"	[label=assignedFrom];
 	"test_df(0)$7" -> "test_df(0)$6"	[label=where];
 	"test_df(0)$7" -> "train_df(0)$9"	[label=where];
 	"test_df(0)$7" -> "test_df(0)$7"	[label=where];
-	"[<_ast.Constant object at 0x12fb0c310>, <_ast.Constant object at 0x12fb0c340>, <_ast.Constant object at 0x12fb0c370>, <_ast.Constant \
-object at 0x12fb0c3a0>, <_ast.Constant object at 0x12fb0c3d0>, <_ast.Constant object at 0x12fb0c400>, <_ast.Constant object at 0x12fb0c430>](\
-0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb0c610>, <_ast.Constant object at 0x12fb0c640>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902c7fd0>, <_ast.Constant object at 0x7fd4902b1040>, <_ast.Constant object at 0x7fd4902b1070>, <_\
+ast.Constant object at 0x7fd4902b10a0>, <_ast.Constant object at 0x7fd4902b10d0>, <_ast.Constant object at 0x7fd4902b1100>, <_ast.Constant \
+object at 0x7fd4902b1130>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902b1280>, <_ast.Constant object at 0x7fd4902b12b0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"agg_type(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"agg_type(0)" -> "[<_ast.Constant object at 0x12fb0c610>, <_ast.Constant object at 0x12fb0c640>](0)"	[label=iteratorOf];
+	"agg_type(0)" -> "[<_ast.Constant object at 0x7fd4902b1280>, <_ast.Constant object at 0x7fd4902b12b0>](0)"	[label=iteratorOf];
 	"new_col_name(0)$0" -> "col(0)"	[label=Add];
 	"new_col_name(0)$0" -> "agg_type(0)"	[label=Add];
 	"new_col_name(0)$0" -> "_TransactionAmt_(0)"	[label=Add];
 	"_TransactionAmt_(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$0" -> "pd(0)"	[label=concat];
-	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x12fb0c880>, <_ast.Subscript object at 0x12fb0c9d0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fb0c880>, <_ast.Subscript object at 0x12fb0c9d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x7fd4902b1580>, <_ast.Subscript object at 0x7fd4902b16d0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4902b1580>, <_ast.Subscript object at 0x7fd4902b16d0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$1" -> "TransactionAmt(0)"	[label=rename];
 	"temp_df(0)$1" -> "agg_type(0)"	[label=rename];
 	"temp_df(0)$1" -> "new_col_name(0)$0"	[label=rename];
 	"temp_df(0)$1" -> "temp_df(0)$0"	[label=rename];
-	"temp_df(0)$1" -> "[<_ast.Name object at 0x12fb0cd90>](0)"	[label=rename];
-	"temp_df(0)$1" -> "[<_ast.Name object at 0x12fb0ce50>](0)"	[label=rename];
-	"[<_ast.Name object at 0x12fb0cd90>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb0ce50>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$1" -> "[<_ast.Name object at 0x7fd4902b1a90>](0)"	[label=rename];
+	"temp_df(0)$1" -> "[<_ast.Name object at 0x7fd4902b1b80>](0)"	[label=rename];
+	"[<_ast.Name object at 0x7fd4902b1a90>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902b1b80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$2" -> "col(0)"	[label=list];
 	"temp_df(0)$2" -> "temp_df(0)$1"	[label=list];
 	"temp_df(0)$3" -> "new_col_name(0)$0"	[label=to_dict];
@@ -1660,8 +1650,8 @@ object at 0x12fb0c3a0>, <_ast.Constant object at 0x12fb0c3d0>, <_ast.Constant ob
 	"df(0)$14" -> "r(0)$0"	[label=apply];
 	"df(0)$14" -> "df(0)$13"	[label=apply];
 	"df(0)$14" -> ".(0)"	[label=apply];
-	"df(0)$14" -> "[<_ast.Name object at 0x12fb0e640>, <_ast.Name object at 0x12fb0e670>](0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12fb0e640>, <_ast.Name object at 0x12fb0e670>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"df(0)$14" -> "[<_ast.Name object at 0x7fd4902a1340>, <_ast.Name object at 0x7fd4902a1370>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd4902a1340>, <_ast.Name object at 0x7fd4902a1370>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"df(0)$15" -> "df(0)$14"	[label=lower];
 	"df(0)$15" -> "DeviceInfo(0)"	[label=lower];
 	"df(0)$15" -> "unknown_device(0)"	[label=lower];
@@ -1708,48 +1698,49 @@ object at 0x12fb0c3a0>, <_ast.Constant object at 0x12fb0c3d0>, <_ast.Constant ob
 	"df(0)$22" -> "df(0)$21"	[label=apply];
 	"df(0)$22" -> "id_31(0)"	[label=apply];
 	"temp_df(0)$4" -> "train_df(0)$11"	[label=assignedFrom];
-	"temp_df(0)$4" -> "[<_ast.Constant object at 0x12fdb2c10>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fdb2c10>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$4" -> "[<_ast.Constant object at 0x7fd4d0583910>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0583910>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$5" -> "train_identity(0)$3"	[label=merge];
 	"temp_df(0)$5" -> "temp_df(0)$4"	[label=merge];
-	"temp_df(0)$5" -> "[<_ast.Constant object at 0x12fdb2e20>](0)"	[label=merge];
+	"temp_df(0)$5" -> "[<_ast.Constant object at 0x7fd4d0583b20>](0)"	[label=merge];
 	"temp_df(0)$5" -> "left(0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fdb2e20>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0583b20>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"left(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"train_df(0)$12" -> "pd(0)"	[label=concat];
 	"train_df(0)$12" -> "1(0)"	[label=concat];
-	"train_df(0)$12" -> "[<_ast.Name object at 0x12fdc3190>, <_ast.Name object at 0x12fdc31c0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fdc3190>, <_ast.Name object at 0x12fdc31c0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"train_df(0)$12" -> "[<_ast.Name object at 0x7fd4d0583e50>, <_ast.Name object at 0x7fd4d0583e80>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4d0583e50>, <_ast.Name object at 0x7fd4d0583e80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$6" -> "test_df(0)$9"	[label=assignedFrom];
-	"temp_df(0)$6" -> "[<_ast.Constant object at 0x12fdc33a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fdc33a0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$6" -> "[<_ast.Constant object at 0x7fd4d05730a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d05730a0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$7" -> "test_identity(0)$2"	[label=merge];
 	"temp_df(0)$7" -> "left(0)"	[label=merge];
 	"temp_df(0)$7" -> "temp_df(0)$6"	[label=merge];
-	"temp_df(0)$7" -> "[<_ast.Constant object at 0x12fdc35b0>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fdc35b0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$7" -> "[<_ast.Constant object at 0x7fd4d05732b0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d05732b0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"test_df(0)$10" -> "pd(0)"	[label=concat];
 	"test_df(0)$10" -> "1(0)"	[label=concat];
-	"test_df(0)$10" -> "[<_ast.Name object at 0x12fdc38e0>, <_ast.Name object at 0x12fdc3910>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12fdc38e0>, <_ast.Name object at 0x12fdc3910>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fdc3a60>, <_ast.Constant object at 0x12fdc3a90>, <_ast.Constant object at 0x12fdc3ac0>, <_ast.Constant \
-object at 0x12fdc3af0>, <_ast.Constant object at 0x12fdc3b20>, <_ast.Constant object at 0x12fdc3b50>, <_ast.Constant object at 0x12fdc3b80>, <_\
-ast.Constant object at 0x12fdc3bb0>, <_ast.Constant object at 0x12fdc3be0>, <_ast.Constant object at 0x12fdc3c10>, <_ast.Constant \
-object at 0x12fdc3c40>, <_ast.Constant object at 0x12fdc3c70>, <_ast.Constant object at 0x12fdc3ca0>, <_ast.Constant object at 0x12fdc3cd0>, <_\
-ast.Constant object at 0x12fdc3d00>, <_ast.Constant object at 0x12fdc3d30>, <_ast.Constant object at 0x12fdc3d60>, <_ast.Constant \
-object at 0x12fdc3d90>, <_ast.Constant object at 0x12fdc3dc0>, <_ast.Constant object at 0x12fdc3df0>, <_ast.Constant object at 0x12fdc3e20>, <_\
-ast.Constant object at 0x12fdc3e50>, <_ast.Constant object at 0x12fdc3e80>, <_ast.Constant object at 0x12fdc3eb0>, <_ast.Constant \
-object at 0x12fdc3ee0>, <_ast.Constant object at 0x12fdc3f10>, <_ast.Constant object at 0x12fdc3f40>, <_ast.Constant object at 0x12fdc3f70>, <_\
-ast.Constant object at 0x12fdc3fa0>, <_ast.Constant object at 0x12fdc3fd0>, <_ast.Constant object at 0x12fda1040>, <_ast.Constant \
-object at 0x12fda1070>, <_ast.Constant object at 0x12fda10a0>, <_ast.Constant object at 0x12fda10d0>, <_ast.Constant object at 0x12fda1100>, <_\
-ast.Constant object at 0x12fda1130>, <_ast.Constant object at 0x12fda1160>, <_ast.Constant object at 0x12fda1190>, <_ast.Constant \
-object at 0x12fda11c0>, <_ast.Constant object at 0x12fda11f0>, <_ast.Constant object at 0x12fda1220>, <_ast.Constant object at 0x12fda1250>, <_\
-ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"test_df(0)$10" -> "[<_ast.Name object at 0x7fd4d05735e0>, <_ast.Name object at 0x7fd4d0573610>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4d05735e0>, <_ast.Name object at 0x7fd4d0573610>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0573760>, <_ast.Constant object at 0x7fd4d0573790>, <_ast.Constant object at 0x7fd4d05737c0>, <_\
+ast.Constant object at 0x7fd4d05737f0>, <_ast.Constant object at 0x7fd4d0573850>, <_ast.Constant object at 0x7fd4d0573880>, <_ast.Constant \
+object at 0x7fd4d05738b0>, <_ast.Constant object at 0x7fd4d05738e0>, <_ast.Constant object at 0x7fd4d0573910>, <_ast.Constant object \
+at 0x7fd4d0573940>, <_ast.Constant object at 0x7fd4d0573970>, <_ast.Constant object at 0x7fd4d05739a0>, <_ast.Constant object at \
+0x7fd4d05739d0>, <_ast.Constant object at 0x7fd4d0573a00>, <_ast.Constant object at 0x7fd4d0573a30>, <_ast.Constant object at 0x7fd4d0573a60>, <_\
+ast.Constant object at 0x7fd4d0573a90>, <_ast.Constant object at 0x7fd4d0573ac0>, <_ast.Constant object at 0x7fd4d0573af0>, <_ast.Constant \
+object at 0x7fd4d0573820>, <_ast.Constant object at 0x7fd4d0573b20>, <_ast.Constant object at 0x7fd4d0573b50>, <_ast.Constant object \
+at 0x7fd4d0573b80>, <_ast.Constant object at 0x7fd4d0573bb0>, <_ast.Constant object at 0x7fd4d0573be0>, <_ast.Constant object at \
+0x7fd4d0573c10>, <_ast.Constant object at 0x7fd4d0573c40>, <_ast.Constant object at 0x7fd4d0573c70>, <_ast.Constant object at 0x7fd4d0573ca0>, <_\
+ast.Constant object at 0x7fd4d0573cd0>, <_ast.Constant object at 0x7fd4d0573d00>, <_ast.Constant object at 0x7fd4d0573d30>, <_ast.Constant \
+object at 0x7fd4d0573d60>, <_ast.Constant object at 0x7fd4d0573d90>, <_ast.Constant object at 0x7fd4d0573df0>, <_ast.Constant object \
+at 0x7fd4d0573e20>, <_ast.Constant object at 0x7fd4d0573e50>, <_ast.Constant object at 0x7fd4d0573e80>, <_ast.Constant object at \
+0x7fd4d0573eb0>, <_ast.Constant object at 0x7fd4d0573ee0>, <_ast.Constant object at 0x7fd4d0573f10>, <_ast.Constant object at 0x7fd4d0573f40>, <_\
+ast.Constant object at 0x7fd4d0573f70>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$8" -> "pd(0)"	[label=concat];
-	"temp_df(0)$8" -> "[<_ast.Subscript object at 0x12fda1460>, <_ast.Subscript object at 0x12fda1580>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fda1460>, <_ast.Subscript object at 0x12fda1580>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"fq_encode(0)$0" -> "col(0)"	[label=to_dict];
+	"temp_df(0)$8" -> "[<_ast.Subscript object at 0x7fd4d0574160>, <_ast.Subscript object at 0x7fd4d0574280>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4d0574160>, <_ast.Subscript object at 0x7fd4d0574280>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"fq_encode(0)$0" -> "False(0)"	[label=to_dict];
+	"fq_encode(0)$0" -> "col(0)"	[label=to_dict];
 	"fq_encode(0)$0" -> "temp_df(0)$8"	[label=to_dict];
 	"train_df(0)$13" -> "col(0)"	[label=map];
 	"train_df(0)$13" -> "train_df(0)$12"	[label=map];
@@ -1758,8 +1749,8 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$11" -> "test_df(0)$10"	[label=map];
 	"test_df(0)$11" -> "fq_encode(0)$0"	[label=map];
 	"temp_df(0)$9" -> "pd(0)"	[label=concat];
-	"temp_df(0)$9" -> "[<_ast.Subscript object at 0x12fdc61c0>, <_ast.Subscript object at 0x12fdc62e0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fdc61c0>, <_ast.Subscript object at 0x12fdc62e0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$9" -> "[<_ast.Subscript object at 0x7fd4d0574e80>, <_ast.Subscript object at 0x7fd4d0574fa0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4d0574e80>, <_ast.Subscript object at 0x7fd4d0574fa0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"fq_encode(0)$1" -> "col(0)"	[label=to_dict];
 	"fq_encode(0)$1" -> "temp_df(0)$9"	[label=to_dict];
 	"train_df(0)$14" -> "col(0)"	[label=map];
@@ -1768,17 +1759,17 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$12" -> "col(0)"	[label=map];
 	"test_df(0)$12" -> "test_df(0)$11"	[label=map];
 	"test_df(0)$12" -> "fq_encode(0)$1"	[label=map];
-	"[<_ast.Constant object at 0x12fdc6ca0>, <_ast.Constant object at 0x12fdc6cd0>, <_ast.Constant object at 0x12fdc6d00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"periods(0)$0" -> "[<_ast.Constant object at 0x12fdc6ca0>, <_ast.Constant object at 0x12fdc6cd0>, <_ast.Constant object at 0x12fdc6d00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fdc6dc0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d05979a0>, <_ast.Constant object at 0x7fd4d05979d0>, <_ast.Constant object at 0x7fd4d0597a00>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"periods(0)$0" -> "[<_ast.Constant object at 0x7fd4d05979a0>, <_ast.Constant object at 0x7fd4d05979d0>, <_ast.Constant object at 0x7fd4d0597a00>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0597ac0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"period(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"period(0)" -> "periods(0)$0"	[label=iteratorOf];
 	"new_column(0)$0" -> "col(0)"	[label=Add];
 	"new_column(0)$0" -> "_(0)"	[label=Add];
 	"new_column(0)$0" -> "period(0)"	[label=Add];
 	"temp_df(0)$10" -> "pd(0)"	[label=concat];
-	"temp_df(0)$10" -> "[<_ast.Subscript object at 0x12fdd11c0>, <_ast.Subscript object at 0x12fdd1340>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fdd11c0>, <_ast.Subscript object at 0x12fdd1340>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"temp_df(0)$10" -> "[<_ast.Subscript object at 0x7fd4d0597ee0>, <_ast.Subscript object at 0x7fd4d0597b80>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4d0597ee0>, <_ast.Subscript object at 0x7fd4d0597b80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_df(0)$11" -> "col(0)"	[label=Add];
 	"temp_df(0)$11" -> "str(0)"	[label=Add];
 	"temp_df(0)$11" -> "_(0)"	[label=Add];
@@ -1810,15 +1801,15 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$14" -> "test_df(0)$13"	[label=Div];
 	"test_df(0)$14" -> "_total(0)"	[label=Div];
 	"test_df(0)$14" -> "test_df(0)$14"	[label=Div];
-	"temp_dict(0)$0" -> "col(0)"	[label=rename];
 	"temp_dict(0)$0" -> "TARGET(0)$0"	[label=rename];
+	"temp_dict(0)$0" -> "col(0)"	[label=rename];
 	"temp_dict(0)$0" -> "train_df(0)$16"	[label=rename];
-	"temp_dict(0)$0" -> "[<_ast.Name object at 0x12fdcce80>](0)"	[label=rename];
-	"temp_dict(0)$0" -> "[<_ast.Constant object at 0x12fdccf70>](0)"	[label=rename];
+	"temp_dict(0)$0" -> "[<_ast.Name object at 0x7fd4d058fbb0>](0)"	[label=rename];
+	"temp_dict(0)$0" -> "[<_ast.Constant object at 0x7fd4d058fca0>](0)"	[label=rename];
 	"temp_dict(0)$0" -> "mean(0)"	[label=rename];
 	"temp_dict(0)$0" -> "_target_mean(0)"	[label=rename];
-	"[<_ast.Name object at 0x12fdcce80>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fdccf70>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4d058fbb0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d058fca0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"mean(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"_target_mean(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"temp_dict(0)$1" -> "col(0)"	[label=assignedFrom];
@@ -1829,6 +1820,7 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$15" -> "col(0)"	[label=map];
 	"test_df(0)$15" -> "test_df(0)$14"	[label=map];
 	"test_df(0)$15" -> "temp_dict(0)$2"	[label=map];
+	"print[827/8]" -> "col(0)"	[label=print];
 	"train_df(0)$18" -> "col(0)"	[label=fillna];
 	"train_df(0)$18" -> "train_df(0)$17"	[label=fillna];
 	"train_df(0)$18" -> "unseen_before_label(0)"	[label=fillna];
@@ -1843,8 +1835,8 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$17" -> "str(0)"	[label=astype];
 	"test_df(0)$17" -> "test_df(0)$16"	[label=astype];
 	"le(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "list(0)"	[label=fit];
+	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "train_df(0)$19"	[label=fit];
 	"le(0)$0" -> "test_df(0)$17"	[label=fit];
 	"le(0)$0" -> "le(0)"	[label=fit];
@@ -1863,18 +1855,20 @@ ast.Constant object at 0x12fda1280>](0)" -> "light-gbm-with-complete-eda.ipynb"	
 	"test_df(0)$19" -> "col(0)"	[label=astype];
 	"test_df(0)$19" -> "test_df(0)$18"	[label=astype];
 	"test_df(0)$19" -> "category(0)"	[label=astype];
-	"[<_ast.Constant object at 0x12fd96880>, <_ast.Constant object at 0x12fd96580>, <_ast.Name object at 0x12fd968b0>, <_ast.Constant \
-object at 0x12fd968e0>, <_ast.Constant object at 0x12fd96910>, <_ast.Constant object at 0x12fd96940>, <_ast.Constant object at 0x12fd96970>, <_\
-ast.Constant object at 0x12fd969a0>, <_ast.Constant object at 0x12fd969d0>, <_ast.Constant object at 0x12fd96a00>, <_ast.Constant \
-object at 0x12fd96a30>, <_ast.Constant object at 0x12fd96a60>, <_ast.Constant object at 0x12fd96a90>, <_ast.Constant object at 0x12fd96ac0>, <_\
-ast.Constant object at 0x12fd96af0>, <_ast.Constant object at 0x12fd96b50>, <_ast.Constant object at 0x12fd96bb0>, <_ast.Constant \
-object at 0x12fd96be0>, <_ast.Constant object at 0x12fd96c10>, <_ast.Constant object at 0x12fd96c40>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
-	"rm_cols(0)$0" -> "[<_ast.Constant object at 0x12fd96880>, <_ast.Constant object at 0x12fd96580>, <_ast.Name object at 0x12fd968b0>, <_ast.Constant \
-object at 0x12fd968e0>, <_ast.Constant object at 0x12fd96910>, <_ast.Constant object at 0x12fd96940>, <_ast.Constant object at 0x12fd96970>, <_\
-ast.Constant object at 0x12fd969a0>, <_ast.Constant object at 0x12fd969d0>, <_ast.Constant object at 0x12fd96a00>, <_ast.Constant \
-object at 0x12fd96a30>, <_ast.Constant object at 0x12fd96a60>, <_ast.Constant object at 0x12fd96a90>, <_ast.Constant object at 0x12fd96ac0>, <_\
-ast.Constant object at 0x12fd96af0>, <_ast.Constant object at 0x12fd96b50>, <_ast.Constant object at 0x12fd96bb0>, <_ast.Constant \
-object at 0x12fd96be0>, <_ast.Constant object at 0x12fd96c10>, <_ast.Constant object at 0x12fd96c40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0571520>, <_ast.Constant object at 0x7fd4d0571550>, <_ast.Name object at 0x7fd4d0571580>, <_ast.Constant \
+object at 0x7fd4d05715b0>, <_ast.Constant object at 0x7fd4d05715e0>, <_ast.Constant object at 0x7fd4d0571610>, <_ast.Constant object \
+at 0x7fd4d0571640>, <_ast.Constant object at 0x7fd4d0571670>, <_ast.Constant object at 0x7fd4d05716a0>, <_ast.Constant object at \
+0x7fd4d05716d0>, <_ast.Constant object at 0x7fd4d0571700>, <_ast.Constant object at 0x7fd4d0571730>, <_ast.Constant object at 0x7fd4d0571760>, <_\
+ast.Constant object at 0x7fd4d0571790>, <_ast.Constant object at 0x7fd4d05717c0>, <_ast.Constant object at 0x7fd4d05717f0>, <_ast.Constant \
+object at 0x7fd4d0571820>, <_ast.Constant object at 0x7fd4d0571850>, <_ast.Constant object at 0x7fd4d05718b0>, <_ast.Constant object \
+at 0x7fd4d05718e0>](0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
+	"rm_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4d0571520>, <_ast.Constant object at 0x7fd4d0571550>, <_ast.Name object at 0x7fd4d0571580>, <_ast.Constant \
+object at 0x7fd4d05715b0>, <_ast.Constant object at 0x7fd4d05715e0>, <_ast.Constant object at 0x7fd4d0571610>, <_ast.Constant object \
+at 0x7fd4d0571640>, <_ast.Constant object at 0x7fd4d0571670>, <_ast.Constant object at 0x7fd4d05716a0>, <_ast.Constant object at \
+0x7fd4d05716d0>, <_ast.Constant object at 0x7fd4d0571700>, <_ast.Constant object at 0x7fd4d0571730>, <_ast.Constant object at 0x7fd4d0571760>, <_\
+ast.Constant object at 0x7fd4d0571790>, <_ast.Constant object at 0x7fd4d05717c0>, <_ast.Constant object at 0x7fd4d05717f0>, <_ast.Constant \
+object at 0x7fd4d0571820>, <_ast.Constant object at 0x7fd4d0571850>, <_ast.Constant object at 0x7fd4d05718b0>, <_ast.Constant object \
+at 0x7fd4d05718e0>](0)"	[label=assignedFrom];
 	"scipy.stats" -> "light-gbm-with-complete-eda.ipynb"	[label=importedBy];
 	ks_2samp -> "scipy.stats"	[label=importedBy];
 	"ks_2samp(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
@@ -1891,9 +1885,12 @@ object at 0x12fd96be0>, <_ast.Constant object at 0x12fd96c10>, <_ast.Constant ob
 	"features_check(0)$2" -> "pd(0)"	[label=sort_values];
 	"features_check(0)$2" -> "columns_to_check(0)$0"	[label=sort_values];
 	"features_check(0)$2" -> "features_check(0)$2"	[label=sort_values];
+	"features_discard(0)$0" -> "0(0)"	[label=list];
+	"features_discard(0)$0" -> "features_check(0)$2"	[label=list];
+	"print[860/0]" -> "features_discard(0)$0"	[label=print];
 	"features_discard(0)$1" -> "[](0)"	[label=assignedFrom];
-	"features_columns(0)$0" -> "col(0)"	[label=assignedFrom];
 	"features_columns(0)$0" -> "list(0)"	[label=assignedFrom];
+	"features_columns(0)$0" -> "col(0)"	[label=assignedFrom];
 	"features_columns(0)$0" -> "train_df(0)$21"	[label=assignedFrom];
 	"features_columns(0)$0" -> "rm_cols(0)$0"	[label=assignedFrom];
 	"features_columns(0)$0" -> "features_discard(0)$1"	[label=assignedFrom];
@@ -1966,6 +1963,16 @@ object at 0x12fd96be0>, <_ast.Constant object at 0x12fd96c10>, <_ast.Constant ob
 	"lgb_params(0)$2" -> "20000(0)"	[label=assignedFrom];
 	"lgb_params(0)$3" -> "100(0)"	[label=assignedFrom];
 	"lgb_params(0)$3" -> "lgb_params(0)$2"	[label=assignedFrom];
+	"test_predictions(0)$0" -> "TARGET(0)$0"	[label=make_predictions];
+	"test_predictions(0)$0" -> "train_df(0)$21"	[label=make_predictions];
+	"test_predictions(0)$0" -> "test_df(0)$19"	[label=make_predictions];
+	"test_predictions(0)$0" -> "features_columns(0)$0"	[label=make_predictions];
+	"test_predictions(0)$0" -> "lgb_params(0)$3"	[label=make_predictions];
+	"print[891/4]" -> "metrics(0)"	[label=print];
+	"print[891/4]" -> "TARGET(0)$0"	[label=print];
+	"print[891/4]" -> "test_predictions(0)$0"	[label=print];
+	"print[891/4]" -> "prediction(0)"	[label=print];
+	"prediction(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"0.007(0)" -> "light-gbm-with-complete-eda.ipynb"	[label=appearsIn];
 	"lgb_params(0)$4" -> "lgb_params(0)$3"	[label=assignedFrom];
 	"lgb_params(0)$4" -> "0.007(0)"	[label=assignedFrom];

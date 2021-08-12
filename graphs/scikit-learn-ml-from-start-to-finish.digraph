@@ -34,9 +34,9 @@ digraph "" {
 	"bins(1)$0" -> "35(1)"	[label=assignedFrom];
 	"bins(1)$0" -> "60(1)"	[label=assignedFrom];
 	"bins(1)$0" -> "120(1)"	[label=assignedFrom];
-	"group_names(1)$0" -> "[<_ast.Constant object at 0x12f9578e0>, <_ast.Constant object at 0x12f957fa0>, <_ast.Constant object at 0x12f9570a0>, <_ast.Constant \
-object at 0x12f9578b0>, <_ast.Constant object at 0x12f957610>, <_ast.Constant object at 0x12f957760>, <_ast.Constant object at 0x12f957fd0>, <_\
-ast.Constant object at 0x12f957880>](1)"	[label=assignedFrom];
+	"group_names(1)$0" -> "[<_ast.Constant object at 0x7fd50080d9d0>, <_ast.Constant object at 0x7fd50080da60>, <_ast.Constant object at 0x7fd50080d070>, <_\
+ast.Constant object at 0x7fd50080d700>, <_ast.Constant object at 0x7fd50080dfa0>, <_ast.Constant object at 0x7fd50080d190>, <_ast.Constant \
+object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d3d0>](1)"	[label=assignedFrom];
 	"categories(1)$0" -> "df(1)$0"	[label=cut];
 	"categories(1)$0" -> "bins(1)$0"	[label=cut];
 	"categories(1)$0" -> "group_names(1)$0"	[label=cut];
@@ -58,8 +58,8 @@ ast.Constant object at 0x12f957880>](1)"	[label=assignedFrom];
 	"bins(3)$0" -> "15(3)"	[label=assignedFrom];
 	"bins(3)$0" -> "31(3)"	[label=assignedFrom];
 	"bins(3)$0" -> "1000(3)"	[label=assignedFrom];
-	"group_names(3)$0" -> "[<_ast.Constant object at 0x12f8f5bb0>, <_ast.Constant object at 0x12f8f5b50>, <_ast.Constant object at 0x12f8f53d0>, <_ast.Constant \
-object at 0x12f8f51f0>, <_ast.Constant object at 0x12f8f5f40>](3)"	[label=assignedFrom];
+	"group_names(3)$0" -> "[<_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object at 0x7fd500832550>, <_\
+ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd500832970>](3)"	[label=assignedFrom];
 	"categories(3)$0" -> "df(3)$0"	[label=cut];
 	"categories(3)$0" -> "bins(3)$0"	[label=cut];
 	"categories(3)$0" -> "group_names(3)$0"	[label=cut];
@@ -94,10 +94,10 @@ object at 0x12f8f51f0>, <_ast.Constant object at 0x12f8f5f40>](3)"	[label=assign
 	"preprocessing(0)" -> preprocessing	[label=assignedFrom];
 	"df_train(7)" -> "encode_features[0]"	[label=_argToVar];
 	"df_test(7)" -> "encode_features[1]"	[label=_argToVar];
-	"features(7)$0" -> "[<_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade460>, <_ast.Constant \
-object at 0x12fade0a0>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant object at 0x12fade610>](7)"	[label=assignedFrom];
+	"features(7)$0" -> "[<_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd500999c10>, <_ast.Constant object at 0x7fd500999ac0>, <_\
+ast.Constant object at 0x7fd500999400>, <_ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd500999430>](7)"	[label=assignedFrom];
 	"df_combined(7)$0" -> "pd(7)"	[label=concat];
-	"df_combined(7)$0" -> "[<_ast.Subscript object at 0x12fade5e0>, <_ast.Subscript object at 0x12fadec70>](7)"	[label=concat];
+	"df_combined(7)$0" -> "[<_ast.Subscript object at 0x7fd500999be0>, <_ast.Subscript object at 0x7fd5009998b0>](7)"	[label=concat];
 	"feature(7)" -> "features(7)$0"	[label=iteratorOf];
 	"le(7)$0" -> "preprocessing(7)"	[label=LabelEncoder];
 	"le(7)$1" -> "df_combined(7)$0"	[label=fit];
@@ -121,9 +121,9 @@ object at 0x12fade0a0>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant ob
 	"train_test_split(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
 	"X_all(0)$0" -> "data_train(0)$5"	[label=drop];
-	"X_all(0)$0" -> "[<_ast.Constant object at 0x130532df0>, <_ast.Constant object at 0x130532d90>](0)"	[label=drop];
+	"X_all(0)$0" -> "[<_ast.Constant object at 0x7fd50082f490>, <_ast.Constant object at 0x7fd50082f7c0>](0)"	[label=drop];
 	"X_all(0)$0" -> "1(0)"	[label=drop];
-	"[<_ast.Constant object at 0x130532df0>, <_ast.Constant object at 0x130532d90>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082f490>, <_ast.Constant object at 0x7fd50082f7c0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"1(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"y_all(0)$0" -> "data_train(0)$5"	[label=assignedFrom];
 	"y_all(0)$0" -> "Survived(0)"	[label=assignedFrom];
@@ -168,25 +168,25 @@ object at 0x12fade0a0>, <_ast.Constant object at 0x12fade1c0>, <_ast.Constant ob
 	"parameters(0)$0" -> "max_depth(0)"	[label=assignedFrom];
 	"parameters(0)$0" -> "min_samples_split(0)"	[label=assignedFrom];
 	"parameters(0)$0" -> "min_samples_leaf(0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d5880>, <_ast.Constant object at 0x12f8d5b80>, <_ast.Constant object at 0x12f8d52b0>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d51f0>, <_ast.Constant object at 0x12f8d5040>, <_ast.Constant object at 0x12f8d5d30>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d5310>, <_ast.Constant object at 0x12f8d5250>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d5ac0>, <_ast.Constant object at 0x12f8d5af0>, <_ast.Constant object at 0x12f8d5f70>, <_ast.Constant \
-object at 0x12f8d5550>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d54c0>, <_ast.Constant object at 0x12f8d5340>, <_ast.Constant object at 0x12f8d59a0>](0)"	[label=assignedFrom];
-	"parameters(0)$0" -> "[<_ast.Constant object at 0x12f8d56d0>, <_ast.Constant object at 0x12f8d5760>, <_ast.Constant object at 0x12f8d57f0>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ffd90>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ffa30>, <_ast.Constant object at 0x7fd4c04ff490>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object at 0x7fd4c04ff9d0>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ffcd0>, <_ast.Constant object at 0x7fd4c04ffd30>, <_\
+ast.Constant object at 0x7fd4c04ffa00>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffe50>, <_ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ff5b0>](0)"	[label=assignedFrom];
+	"parameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant object at 0x7fd4c04ff880>](0)"	[label=assignedFrom];
 	"max_features(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"criterion(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"max_depth(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"min_samples_split(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"min_samples_leaf(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d5880>, <_ast.Constant object at 0x12f8d5b80>, <_ast.Constant object at 0x12f8d52b0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d51f0>, <_ast.Constant object at 0x12f8d5040>, <_ast.Constant object at 0x12f8d5d30>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d5310>, <_ast.Constant object at 0x12f8d5250>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d5ac0>, <_ast.Constant object at 0x12f8d5af0>, <_ast.Constant object at 0x12f8d5f70>, <_ast.Constant \
-object at 0x12f8d5550>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d54c0>, <_ast.Constant object at 0x12f8d5340>, <_ast.Constant object at 0x12f8d59a0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d56d0>, <_ast.Constant object at 0x12f8d5760>, <_ast.Constant object at 0x12f8d57f0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ffd90>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ffa30>, <_ast.Constant object at 0x7fd4c04ff490>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04fff10>, <_ast.Constant object at 0x7fd4c04ff9d0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ffcd0>, <_ast.Constant object at 0x7fd4c04ffd30>, <_\
+ast.Constant object at 0x7fd4c04ffa00>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ffe50>, <_ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ff5b0>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant object at 0x7fd4c04ff880>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"acc_scorer(0)$0" -> "accuracy_score(0)"	[label=make_scorer];
 	"clf(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"grid_obj(0)$0" -> "parameters(0)$0"	[label=GridSearchCV];
@@ -201,32 +201,22 @@ object at 0x12f8d5550>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[lab
 	"clf(0)$1" -> "clf(0)$0"	[label=fit];
 	"predictions(0)$0" -> "X_test(0)$0"	[label=predict];
 	"predictions(0)$0" -> "clf(0)$1"	[label=predict];
-	"print[0]" -> "accuracy_score(0)"	[label=print];
-	"print[0]" -> "Fold {0} accuracy: {1}(8)"	[label=print];
-	"print[0]" -> "Mean Accuracy: {0}(8)"	[label=print];
-	"print[1]" -> "y_test(0)$0"	[label=print];
-	"print[1]" -> "fold(8)$1"	[label=print];
-	"print[1]" -> "mean_outcome(8)$0"	[label=print];
-	"fold(8)$1" -> "fold(8)$0"	[label=Add];
-	"fold(8)$1" -> "1(8)"	[label=Add];
-	"mean_outcome(8)$0" -> "outcomes(8)$1"	[label=mean];
-	"mean_outcome(8)$0" -> "np(8)"	[label=mean];
-	"print[2]" -> "predictions(0)$0"	[label=print];
-	"print[2]" -> "accuracy(8)$0"	[label=print];
-	"accuracy(8)$0" -> "y_test(8)$0"	[label=accuracy_score];
-	"accuracy(8)$0" -> "predictions(8)$0"	[label=accuracy_score];
+	"print[112/0]" -> "y_test(0)$0"	[label=print];
+	"print[112/0]" -> "accuracy_score(0)"	[label=print];
+	"print[112/0]" -> "predictions(0)$0"	[label=print];
 	"sklearn.cross_validation" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=importedBy];
 	KFold -> "sklearn.cross_validation"	[label=importedBy];
 	"KFold(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];
 	"KFold(0)" -> KFold	[label=assignedFrom];
 	"clf(8)" -> "run_kfold[0]"	[label=_argToVar];
-	"run_kfold[0]" -> "clf(0)$1"	[label=run_kfold];
 	"kf(8)$0" -> "891(8)"	[label=KFold];
 	"kf(8)$0" -> "10(8)"	[label=KFold];
 	"outcomes(8)$0" -> "[](8)"	[label=assignedFrom];
 	"fold(8)$0" -> "0(8)"	[label=assignedFrom];
 	"train_index(8)" -> "kf(8)$0"	[label=iteratorOf];
 	"test_index(8)" -> "kf(8)$0"	[label=iteratorOf];
+	"fold(8)$1" -> "fold(8)$0"	[label=Add];
+	"fold(8)$1" -> "1(8)"	[label=Add];
 	"X_train(8)$0" -> "train_index(8)"	[label=assignedFrom];
 	"X_train(8)$0" -> "test_index(8)"	[label=assignedFrom];
 	"X_train(8)$0" -> "X_all(8)"	[label=assignedFrom];
@@ -244,8 +234,18 @@ object at 0x12f8d5550>](0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[lab
 	"clf(8)$0" -> "y_train(8)$0"	[label=fit];
 	"predictions(8)$0" -> "X_test(8)$0"	[label=predict];
 	"predictions(8)$0" -> "clf(8)$0"	[label=predict];
-	"outcomes(8)$1" -> "accuracy(8)$0"	[label=append];
+	"accuracy(8)$0" -> "y_test(8)$0"	[label=accuracy_score];
+	"accuracy(8)$0" -> "predictions(8)$0"	[label=accuracy_score];
 	"outcomes(8)$1" -> "outcomes(8)$0"	[label=append];
+	"outcomes(8)$1" -> "accuracy(8)$0"	[label=append];
+	"print[127/8]" -> "fold(8)$1"	[label=print];
+	"print[127/8]" -> "accuracy(8)$0"	[label=print];
+	"print[127/8]" -> "Fold {0} accuracy: {1}(8)"	[label=print];
+	"mean_outcome(8)$0" -> "outcomes(8)$1"	[label=mean];
+	"mean_outcome(8)$0" -> "np(8)"	[label=mean];
+	"print[129/4]" -> "mean_outcome(8)$0"	[label=print];
+	"print[129/4]" -> "Mean Accuracy: {0}(8)"	[label=print];
+	"run_kfold[131/0]" -> "clf(0)$1"	[label=run_kfold];
 	"ids(0)$0" -> "data_test(0)$2"	[label=assignedFrom];
 	"ids(0)$0" -> "PassengerId(0)"	[label=assignedFrom];
 	"PassengerId(0)" -> "scikit-learn-ml-from-start-to-finish.ipynb"	[label=appearsIn];

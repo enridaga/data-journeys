@@ -29,11 +29,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f8ab070>, <_ast.Constant object at 0x12f8ab370>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f8ab070>, <_ast.Constant object at 0x12f8ab370>](0)"	[label=print];
+	"print[19/0]" -> "check_output(0)"	[label=print];
+	"print[19/0]" -> "[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ea90>](0)"	[label=print];
+	"print[19/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ea90>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	warnings -> "note-prediction-results-of-kernel-rank.ipynb"	[label=importedBy];
 	"warnings(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -56,8 +56,8 @@ digraph "" {
 	"data(0)$1" -> "24(0)"	[label=head];
 	"24(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"lis(0)$0" -> "pd(0)"	[label=concat];
-	"lis(0)$0" -> "[<_ast.Subscript object at 0x12f9518b0>, <_ast.Subscript object at 0x12f9510a0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f9518b0>, <_ast.Subscript object at 0x12f9510a0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"lis(0)$0" -> "[<_ast.Subscript object at 0x7fd4c04ffb80>, <_ast.Subscript object at 0x7fd4c04ffca0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c04ffb80>, <_ast.Subscript object at 0x7fd4c04ffca0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=subplots];
 	"wordcloud(0)$0" -> "WordCloud(0)"	[label=generate];
 	"wordcloud(0)$0" -> "lis(0)$0"	[label=generate];
@@ -119,20 +119,22 @@ digraph "" {
 	"sorted_data(0)$1" -> "data_last(0)$0"	[label=reindex];
 	"sorted_data(0)$1" -> "new_index(0)$1"	[label=reindex];
 	"plt(0)$12" -> "plt(0)$11"	[label=figure];
-	"[<_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fade3d0>, <_ast.Constant \
-object at 0x12faded60>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade880>, <_ast.Constant object at 0x12fade460>, <_\
-ast.Constant object at 0x12fade8b0>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadef40>, <_ast.Constant object at 0x12faded30>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade490>, <_\
-ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fade910>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant \
-object at 0x12fade280>, <_ast.Constant object at 0x12fade0a0>, <_ast.Constant object at 0x12fade850>, <_ast.Constant object at 0x12fade580>, <_\
-ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade670>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"silver(0)$0" -> "[<_ast.Constant object at 0x12fade250>, <_ast.Constant object at 0x12fadea90>, <_ast.Constant object at 0x12fade3d0>, <_ast.Constant \
-object at 0x12faded60>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fade880>, <_ast.Constant object at 0x12fade460>, <_\
-ast.Constant object at 0x12fade8b0>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant object at 0x12fade640>, <_ast.Constant \
-object at 0x12fadef40>, <_ast.Constant object at 0x12faded30>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade490>, <_\
-ast.Constant object at 0x12fadef10>, <_ast.Constant object at 0x12fade910>, <_ast.Constant object at 0x12fadeca0>, <_ast.Constant \
-object at 0x12fade280>, <_ast.Constant object at 0x12fade0a0>, <_ast.Constant object at 0x12fade850>, <_ast.Constant object at 0x12fade580>, <_\
-ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12faded90>, <_ast.Constant object at 0x12fade670>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500836d60>, <_ast.Constant object at 0x7fd5008360d0>, <_ast.Constant object at 0x7fd5008365b0>, <_\
+ast.Constant object at 0x7fd5008366a0>, <_ast.Constant object at 0x7fd500836340>, <_ast.Constant object at 0x7fd500836640>, <_ast.Constant \
+object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836af0>, <_ast.Constant object at 0x7fd500836910>, <_ast.Constant object \
+at 0x7fd500836130>, <_ast.Constant object at 0x7fd5008367c0>, <_ast.Constant object at 0x7fd5008366d0>, <_ast.Constant object at \
+0x7fd500836ca0>, <_ast.Constant object at 0x7fd500836c10>, <_ast.Constant object at 0x7fd500836040>, <_ast.Constant object at 0x7fd500836bb0>, <_\
+ast.Constant object at 0x7fd500836760>, <_ast.Constant object at 0x7fd500836b20>, <_ast.Constant object at 0x7fd500836940>, <_ast.Constant \
+object at 0x7fd500836100>, <_ast.Constant object at 0x7fd500836c70>, <_ast.Constant object at 0x7fd5008363a0>, <_ast.Constant object \
+at 0x7fd500836dc0>, <_ast.Constant object at 0x7fd5008361f0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"silver(0)$0" -> "[<_ast.Constant object at 0x7fd500836d60>, <_ast.Constant object at 0x7fd5008360d0>, <_ast.Constant object at 0x7fd5008365b0>, <_\
+ast.Constant object at 0x7fd5008366a0>, <_ast.Constant object at 0x7fd500836340>, <_ast.Constant object at 0x7fd500836640>, <_ast.Constant \
+object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836af0>, <_ast.Constant object at 0x7fd500836910>, <_ast.Constant object \
+at 0x7fd500836130>, <_ast.Constant object at 0x7fd5008367c0>, <_ast.Constant object at 0x7fd5008366d0>, <_ast.Constant object at \
+0x7fd500836ca0>, <_ast.Constant object at 0x7fd500836c10>, <_ast.Constant object at 0x7fd500836040>, <_ast.Constant object at 0x7fd500836bb0>, <_\
+ast.Constant object at 0x7fd500836760>, <_ast.Constant object at 0x7fd500836b20>, <_ast.Constant object at 0x7fd500836940>, <_ast.Constant \
+object at 0x7fd500836100>, <_ast.Constant object at 0x7fd500836c70>, <_ast.Constant object at 0x7fd5008363a0>, <_ast.Constant object \
+at 0x7fd500836dc0>, <_ast.Constant object at 0x7fd5008361f0>](0)"	[label=assignedFrom];
 	"ax(0)$1" -> "sns(0)$1"	[label=barplot];
 	"ax(0)$1" -> "kernel_silver(0)"	[label=barplot];
 	"ax(0)$1" -> "sorted_data(0)$1"	[label=barplot];
@@ -217,8 +219,8 @@ ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12faded90>, <_as
 	"rgb(0,0,255)(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"1.5(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"0.6(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fafc4f0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x12fafc4f0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500832bb0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd500832bb0>](0)"	[label=assignedFrom];
 	"layout(0)$0" -> "go(0)"	[label=Layout];
 	"layout(0)$0" -> "Kernel Total Medal(0)"	[label=Layout];
 	"Kernel Total Medal(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
@@ -260,20 +262,22 @@ ast.Constant object at 0x12fadefd0>, <_ast.Constant object at 0x12faded90>, <_as
 	"sorted_data(0)$6" -> "data_last(0)$1"	[label=reindex];
 	"sorted_data(0)$6" -> "new_index(0)$5"	[label=reindex];
 	"plt(0)$30" -> "plt(0)$29"	[label=figure];
-	"[<_ast.Constant object at 0x12ff2f2b0>, <_ast.Constant object at 0x12ff2fdc0>, <_ast.Constant object at 0x12ff2f0a0>, <_ast.Constant \
-object at 0x12ff2f3a0>, <_ast.Constant object at 0x12ff2f8b0>, <_ast.Constant object at 0x12ff2f640>, <_ast.Constant object at 0x12ff2f7c0>, <_\
-ast.Constant object at 0x12ff2f5b0>, <_ast.Constant object at 0x12ff2f190>, <_ast.Constant object at 0x12f89f4f0>, <_ast.Constant \
-object at 0x12f89f5b0>, <_ast.Constant object at 0x12f89feb0>, <_ast.Constant object at 0x12f89f580>, <_ast.Constant object at 0x12f89f610>, <_\
-ast.Constant object at 0x12f89f2b0>, <_ast.Constant object at 0x12f89f730>, <_ast.Constant object at 0x12f89f400>, <_ast.Constant \
-object at 0x12f89f370>, <_ast.Constant object at 0x12f89f280>, <_ast.Constant object at 0x12f89f310>, <_ast.Constant object at 0x12f89f340>, <_\
-ast.Constant object at 0x12f89f880>, <_ast.Constant object at 0x12f89f100>, <_ast.Constant object at 0x12f89f9d0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"silver(0)$1" -> "[<_ast.Constant object at 0x12ff2f2b0>, <_ast.Constant object at 0x12ff2fdc0>, <_ast.Constant object at 0x12ff2f0a0>, <_ast.Constant \
-object at 0x12ff2f3a0>, <_ast.Constant object at 0x12ff2f8b0>, <_ast.Constant object at 0x12ff2f640>, <_ast.Constant object at 0x12ff2f7c0>, <_\
-ast.Constant object at 0x12ff2f5b0>, <_ast.Constant object at 0x12ff2f190>, <_ast.Constant object at 0x12f89f4f0>, <_ast.Constant \
-object at 0x12f89f5b0>, <_ast.Constant object at 0x12f89feb0>, <_ast.Constant object at 0x12f89f580>, <_ast.Constant object at 0x12f89f610>, <_\
-ast.Constant object at 0x12f89f2b0>, <_ast.Constant object at 0x12f89f730>, <_ast.Constant object at 0x12f89f400>, <_ast.Constant \
-object at 0x12f89f370>, <_ast.Constant object at 0x12f89f280>, <_ast.Constant object at 0x12f89f310>, <_ast.Constant object at 0x12f89f340>, <_\
-ast.Constant object at 0x12f89f880>, <_ast.Constant object at 0x12f89f100>, <_ast.Constant object at 0x12f89f9d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b430>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b4f0>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant \
+object at 0x7fd50085bd60>, <_ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object \
+at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at \
+0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0c10>, <_\
+ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant \
+object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object \
+at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0520>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"silver(0)$1" -> "[<_ast.Constant object at 0x7fd50085b430>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b4f0>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant \
+object at 0x7fd50085bd60>, <_ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object \
+at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at \
+0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0c10>, <_\
+ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant \
+object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object \
+at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0520>](0)"	[label=assignedFrom];
 	"ax(0)$4" -> "sns(0)$1"	[label=barplot];
 	"ax(0)$4" -> "discussion_silver(0)"	[label=barplot];
 	"ax(0)$4" -> "sorted_data(0)$6"	[label=barplot];
@@ -348,8 +352,8 @@ ast.Constant object at 0x12f89f880>, <_ast.Constant object at 0x12f89f100>, <_as
 	"disc_rank(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"rgb(238,205,69)(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"rgb(255,0,0)(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8cfee0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Name object at 0x12f8cfee0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50082abe0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x7fd50082abe0>](0)"	[label=assignedFrom];
 	"layout(0)$1" -> "go(0)"	[label=Layout];
 	"layout(0)$1" -> "Discussion Total Medal(0)"	[label=Layout];
 	"Discussion Total Medal(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
@@ -381,8 +385,8 @@ ast.Constant object at 0x12f89f880>, <_ast.Constant object at 0x12f89f100>, <_as
 	"data_CPMP(0)$1" -> "data_CPMP(0)$1"	[label=Add];
 	"g(0)$0" -> "sns(0)$2"	[label=pairplot];
 	"g(0)$0" -> "data_CPMP(0)$1"	[label=pairplot];
-	"g(0)$0" -> "[<_ast.Constant object at 0x12f8c8670>, <_ast.Constant object at 0x12f8c86a0>, <_ast.Constant object at 0x12f8c86d0>](0)"	[label=pairplot];
-	"[<_ast.Constant object at 0x12f8c8670>, <_ast.Constant object at 0x12f8c86a0>, <_ast.Constant object at 0x12f8c86d0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"g(0)$0" -> "[<_ast.Constant object at 0x7fd50082d370>, <_ast.Constant object at 0x7fd50082d3a0>, <_ast.Constant object at 0x7fd50082d3d0>](0)"	[label=pairplot];
+	"[<_ast.Constant object at 0x7fd50082d370>, <_ast.Constant object at 0x7fd50082d3a0>, <_ast.Constant object at 0x7fd50082d3d0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"g(0)$1" -> "plt(0)$42"	[label=map_upper];
 	"g(0)$1" -> "g(0)$0"	[label=map_upper];
 	"g(0)$1" -> "purple(0)"	[label=map_upper];
@@ -409,22 +413,24 @@ ast.Constant object at 0x12f89f880>, <_ast.Constant object at 0x12f89f100>, <_as
 	"data(0)$5" -> "data(0)$4"	[label=astype];
 	"c(0)$0" -> "0(0)"	[label=assignedFrom];
 	"color(0)$0" -> "0(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d9610>, <_ast.Constant object at 0x12f8d9640>, <_ast.Constant object at 0x12f8d9670>, <_ast.Constant \
-object at 0x12f8d96a0>, <_ast.Constant object at 0x12f8d96d0>, <_ast.Constant object at 0x12f8d9730>, <_ast.Constant object at 0x12f8d9760>, <_\
-ast.Constant object at 0x12f8d9790>, <_ast.Constant object at 0x12f8d97c0>, <_ast.Constant object at 0x12f8d97f0>, <_ast.Constant \
-object at 0x12f8d9820>, <_ast.Constant object at 0x12f8d9850>, <_ast.Constant object at 0x12f8d9880>, <_ast.Constant object at 0x12f8d98b0>, <_\
-ast.Constant object at 0x12f8d98e0>, <_ast.Constant object at 0x12f8d9910>, <_ast.Constant object at 0x12f8d9940>, <_ast.Constant \
-object at 0x12f8d9970>, <_ast.Constant object at 0x12f8d99a0>, <_ast.Constant object at 0x12f8d99d0>, <_ast.Constant object at 0x12f8d9a30>, <_\
-ast.Constant object at 0x12f8d9a00>, <_ast.Constant object at 0x12f8d9a60>, <_ast.Constant object at 0x12f8d9a90>, <_ast.Constant \
-object at 0x12f8d9ac0>, <_ast.Constant object at 0x12f8d9af0>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"color_list(0)$0" -> "[<_ast.Constant object at 0x12f8d9610>, <_ast.Constant object at 0x12f8d9640>, <_ast.Constant object at 0x12f8d9670>, <_ast.Constant \
-object at 0x12f8d96a0>, <_ast.Constant object at 0x12f8d96d0>, <_ast.Constant object at 0x12f8d9730>, <_ast.Constant object at 0x12f8d9760>, <_\
-ast.Constant object at 0x12f8d9790>, <_ast.Constant object at 0x12f8d97c0>, <_ast.Constant object at 0x12f8d97f0>, <_ast.Constant \
-object at 0x12f8d9820>, <_ast.Constant object at 0x12f8d9850>, <_ast.Constant object at 0x12f8d9880>, <_ast.Constant object at 0x12f8d98b0>, <_\
-ast.Constant object at 0x12f8d98e0>, <_ast.Constant object at 0x12f8d9910>, <_ast.Constant object at 0x12f8d9940>, <_ast.Constant \
-object at 0x12f8d9970>, <_ast.Constant object at 0x12f8d99a0>, <_ast.Constant object at 0x12f8d99d0>, <_ast.Constant object at 0x12f8d9a30>, <_\
-ast.Constant object at 0x12f8d9a00>, <_ast.Constant object at 0x12f8d9a60>, <_ast.Constant object at 0x12f8d9a90>, <_ast.Constant \
-object at 0x12f8d9ac0>, <_ast.Constant object at 0x12f8d9af0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081d2e0>, <_ast.Constant object at 0x7fd50081d310>, <_ast.Constant object at 0x7fd50081d340>, <_\
+ast.Constant object at 0x7fd50081d370>, <_ast.Constant object at 0x7fd50081d3a0>, <_ast.Constant object at 0x7fd50081d3d0>, <_ast.Constant \
+object at 0x7fd50081d400>, <_ast.Constant object at 0x7fd50081d430>, <_ast.Constant object at 0x7fd50081d460>, <_ast.Constant object \
+at 0x7fd50081d490>, <_ast.Constant object at 0x7fd50081d4c0>, <_ast.Constant object at 0x7fd50081d4f0>, <_ast.Constant object at \
+0x7fd50081d520>, <_ast.Constant object at 0x7fd50081d550>, <_ast.Constant object at 0x7fd50081d580>, <_ast.Constant object at 0x7fd50081d5b0>, <_\
+ast.Constant object at 0x7fd50081d5e0>, <_ast.Constant object at 0x7fd50081d610>, <_ast.Constant object at 0x7fd50081d640>, <_ast.Constant \
+object at 0x7fd50081d670>, <_ast.Constant object at 0x7fd50081d6a0>, <_ast.Constant object at 0x7fd50081d6d0>, <_ast.Constant object \
+at 0x7fd50081d700>, <_ast.Constant object at 0x7fd50081d730>, <_ast.Constant object at 0x7fd50081d760>, <_ast.Constant object at \
+0x7fd50081d790>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"color_list(0)$0" -> "[<_ast.Constant object at 0x7fd50081d2e0>, <_ast.Constant object at 0x7fd50081d310>, <_ast.Constant object at 0x7fd50081d340>, <_\
+ast.Constant object at 0x7fd50081d370>, <_ast.Constant object at 0x7fd50081d3a0>, <_ast.Constant object at 0x7fd50081d3d0>, <_ast.Constant \
+object at 0x7fd50081d400>, <_ast.Constant object at 0x7fd50081d430>, <_ast.Constant object at 0x7fd50081d460>, <_ast.Constant object \
+at 0x7fd50081d490>, <_ast.Constant object at 0x7fd50081d4c0>, <_ast.Constant object at 0x7fd50081d4f0>, <_ast.Constant object at \
+0x7fd50081d520>, <_ast.Constant object at 0x7fd50081d550>, <_ast.Constant object at 0x7fd50081d580>, <_ast.Constant object at 0x7fd50081d5b0>, <_\
+ast.Constant object at 0x7fd50081d5e0>, <_ast.Constant object at 0x7fd50081d610>, <_ast.Constant object at 0x7fd50081d640>, <_ast.Constant \
+object at 0x7fd50081d670>, <_ast.Constant object at 0x7fd50081d6a0>, <_ast.Constant object at 0x7fd50081d6d0>, <_ast.Constant object \
+at 0x7fd50081d700>, <_ast.Constant object at 0x7fd50081d730>, <_ast.Constant object at 0x7fd50081d760>, <_ast.Constant object at \
+0x7fd50081d790>](0)"	[label=assignedFrom];
 	"each(0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"each(0)" -> "name(0)"	[label=iteratorOf];
 	"each(0)" -> "data(0)$5"	[label=iteratorOf];
@@ -471,22 +477,24 @@ object at 0x12f8d9ac0>, <_ast.Constant object at 0x12f8d9af0>](0)"	[label=assign
 	"ax1(0)$1" -> "plt(0)$50"	[label=subplots];
 	"c(0)$2" -> "0(0)"	[label=assignedFrom];
 	"color(0)$2" -> "0(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8e5e50>, <_ast.Constant object at 0x12f8e5e80>, <_ast.Constant object at 0x12f8e5eb0>, <_ast.Constant \
-object at 0x12f8e5ee0>, <_ast.Constant object at 0x12f8e5f10>, <_ast.Constant object at 0x12f8e5f40>, <_ast.Constant object at 0x12f8e5f70>, <_\
-ast.Constant object at 0x12f8e5fa0>, <_ast.Constant object at 0x12f8e5fd0>, <_ast.Constant object at 0x12f8e5220>, <_ast.Constant \
-object at 0x12f8af040>, <_ast.Constant object at 0x12f8af070>, <_ast.Constant object at 0x12f8af0a0>, <_ast.Constant object at 0x12f8af0d0>, <_\
-ast.Constant object at 0x12f8af100>, <_ast.Constant object at 0x12f8af130>, <_ast.Constant object at 0x12f8af160>, <_ast.Constant \
-object at 0x12f8af190>, <_ast.Constant object at 0x12f8af1c0>, <_ast.Constant object at 0x12f8af1f0>, <_ast.Constant object at 0x12f8af220>, <_\
-ast.Constant object at 0x12f8af250>, <_ast.Constant object at 0x12f8af280>, <_ast.Constant object at 0x12f8af2b0>, <_ast.Constant \
-object at 0x12f8af2e0>, <_ast.Constant object at 0x12f8af310>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
-	"color_list(0)$1" -> "[<_ast.Constant object at 0x12f8e5e50>, <_ast.Constant object at 0x12f8e5e80>, <_ast.Constant object at 0x12f8e5eb0>, <_ast.Constant \
-object at 0x12f8e5ee0>, <_ast.Constant object at 0x12f8e5f10>, <_ast.Constant object at 0x12f8e5f40>, <_ast.Constant object at 0x12f8e5f70>, <_\
-ast.Constant object at 0x12f8e5fa0>, <_ast.Constant object at 0x12f8e5fd0>, <_ast.Constant object at 0x12f8e5220>, <_ast.Constant \
-object at 0x12f8af040>, <_ast.Constant object at 0x12f8af070>, <_ast.Constant object at 0x12f8af0a0>, <_ast.Constant object at 0x12f8af0d0>, <_\
-ast.Constant object at 0x12f8af100>, <_ast.Constant object at 0x12f8af130>, <_ast.Constant object at 0x12f8af160>, <_ast.Constant \
-object at 0x12f8af190>, <_ast.Constant object at 0x12f8af1c0>, <_ast.Constant object at 0x12f8af1f0>, <_ast.Constant object at 0x12f8af220>, <_\
-ast.Constant object at 0x12f8af250>, <_ast.Constant object at 0x12f8af280>, <_ast.Constant object at 0x12f8af2b0>, <_ast.Constant \
-object at 0x12f8af2e0>, <_ast.Constant object at 0x12f8af310>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500835820>, <_ast.Constant object at 0x7fd500835b50>, <_ast.Constant object at 0x7fd500835b80>, <_\
+ast.Constant object at 0x7fd500835bb0>, <_ast.Constant object at 0x7fd500835be0>, <_ast.Constant object at 0x7fd500835c10>, <_ast.Constant \
+object at 0x7fd500835c40>, <_ast.Constant object at 0x7fd500835c70>, <_ast.Constant object at 0x7fd500835ca0>, <_ast.Constant object \
+at 0x7fd500835cd0>, <_ast.Constant object at 0x7fd500835d00>, <_ast.Constant object at 0x7fd500835d30>, <_ast.Constant object at \
+0x7fd500835d60>, <_ast.Constant object at 0x7fd500835d90>, <_ast.Constant object at 0x7fd500835dc0>, <_ast.Constant object at 0x7fd500835df0>, <_\
+ast.Constant object at 0x7fd500835e50>, <_ast.Constant object at 0x7fd500835eb0>, <_ast.Constant object at 0x7fd500835ee0>, <_ast.Constant \
+object at 0x7fd500835f10>, <_ast.Constant object at 0x7fd500835f40>, <_ast.Constant object at 0x7fd500835f70>, <_ast.Constant object \
+at 0x7fd500835fa0>, <_ast.Constant object at 0x7fd500835fd0>, <_ast.Constant object at 0x7fd500835e80>, <_ast.Constant object at \
+0x7fd500835e20>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"color_list(0)$1" -> "[<_ast.Constant object at 0x7fd500835820>, <_ast.Constant object at 0x7fd500835b50>, <_ast.Constant object at 0x7fd500835b80>, <_\
+ast.Constant object at 0x7fd500835bb0>, <_ast.Constant object at 0x7fd500835be0>, <_ast.Constant object at 0x7fd500835c10>, <_ast.Constant \
+object at 0x7fd500835c40>, <_ast.Constant object at 0x7fd500835c70>, <_ast.Constant object at 0x7fd500835ca0>, <_ast.Constant object \
+at 0x7fd500835cd0>, <_ast.Constant object at 0x7fd500835d00>, <_ast.Constant object at 0x7fd500835d30>, <_ast.Constant object at \
+0x7fd500835d60>, <_ast.Constant object at 0x7fd500835d90>, <_ast.Constant object at 0x7fd500835dc0>, <_ast.Constant object at 0x7fd500835df0>, <_\
+ast.Constant object at 0x7fd500835e50>, <_ast.Constant object at 0x7fd500835eb0>, <_ast.Constant object at 0x7fd500835ee0>, <_ast.Constant \
+object at 0x7fd500835f10>, <_ast.Constant object at 0x7fd500835f40>, <_ast.Constant object at 0x7fd500835f70>, <_ast.Constant object \
+at 0x7fd500835fa0>, <_ast.Constant object at 0x7fd500835fd0>, <_ast.Constant object at 0x7fd500835e80>, <_ast.Constant object at \
+0x7fd500835e20>](0)"	[label=assignedFrom];
 	"sns(0)$4" -> "sns(0)$3"	[label=pointplot];
 	"plt(0)$51" -> "each(0)"	[label=text];
 	"plt(0)$51" -> "27.5(0)"	[label=text];
@@ -526,8 +534,8 @@ object at 0x12f8af2e0>, <_ast.Constant object at 0x12f8af310>](0)"	[label=assign
 	"melted(0)$0" -> "pd(0)"	[label=melt];
 	"melted(0)$0" -> "name(0)"	[label=melt];
 	"melted(0)$0" -> "data(0)$6"	[label=melt];
-	"melted(0)$0" -> "[<_ast.Constant object at 0x12f89d4f0>, <_ast.Constant object at 0x12f89d520>](0)"	[label=melt];
-	"[<_ast.Constant object at 0x12f89d4f0>, <_ast.Constant object at 0x12f89d520>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
+	"melted(0)$0" -> "[<_ast.Constant object at 0x7fd500830220>, <_ast.Constant object at 0x7fd500830250>](0)"	[label=melt];
+	"[<_ast.Constant object at 0x7fd500830220>, <_ast.Constant object at 0x7fd500830250>](0)" -> "note-prediction-results-of-kernel-rank.ipynb"	[label=appearsIn];
 	"plt(0)$61" -> "plt(0)$60"	[label=xticks];
 	"ax(0)$6" -> "name(0)"	[label=barplot];
 	"ax(0)$6" -> "sns(0)$4"	[label=barplot];

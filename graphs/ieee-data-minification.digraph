@@ -26,8 +26,8 @@ digraph "" {
 	"ignore(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
 	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(1)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(1)$0" -> "[<_ast.Constant object at 0x12f8ab790>, <_ast.Constant object at 0x12f8ab0a0>, <_ast.Constant object at 0x12f8ab250>, <_ast.Constant \
-object at 0x12f8ab280>, <_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant object at 0x12f8aba60>](1)"	[label=assignedFrom];
+	"numerics(1)$0" -> "[<_ast.Constant object at 0x7fd4c048eee0>, <_ast.Constant object at 0x7fd4c048ec10>, <_ast.Constant object at 0x7fd4c048edc0>, <_\
+ast.Constant object at 0x7fd4c048e7f0>, <_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048e8b0>](1)"	[label=assignedFrom];
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
@@ -62,35 +62,12 @@ object at 0x12f8ab280>, <_ast.Constant object at 0x12f8ab0d0>, <_ast.Constant ob
 	"end_mem(1)$0" -> "1024(1)"	[label=Div];
 	"end_mem(1)$0" -> "2(1)"	[label=Div];
 	"end_mem(1)$0" -> "df(1)$6"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
-	"print[0]" -> "Load Data(0)"	[label=print];
-	"print[0]" -> "Bad transformation(0)"	[label=print];
-	"print[0]" -> "Encoding(0)"	[label=print];
-	"print[0]" -> "col_encoded(0)$0"	[label=print];
-	"print[0]" -> "col_encoded(0)$1"	[label=print];
+	"print[41/16]" -> "start_mem(1)$0"	[label=print];
+	"print[41/16]" -> "end_mem(1)$0"	[label=print];
+	"print[41/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(1)"	[label=print];
+	"print[41/16]" -> "100(1)"	[label=print];
 	"Load Data(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"Bad transformation(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"Encoding(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"col_encoded(0)$0" -> "col(0)"	[label=to_dict];
-	"col_encoded(0)$0" -> "temp_df(0)$0"	[label=to_dict];
-	"col_encoded(0)$1" -> "col(0)"	[label=to_dict];
-	"col_encoded(0)$1" -> "temp_df(0)$1"	[label=to_dict];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "col(0)"	[label=print];
-	"col(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"col(0)" -> "df(0)$0"	[label=iteratorOf];
-	"col(0)" -> "list(0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f8f56d0>, <_ast.Constant object at 0x12f8f54c0>, <_ast.Constant object at 0x12f8f58e0>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4f160>, <_ast.Constant \
-object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4fb80>, <_\
-ast.Constant object at 0x12fc4f430>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f85ea60>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f940310>](0)"	[label=iteratorOf];
-	"col(0)" -> "df(0)$2"	[label=iteratorOf];
-	"print[2]" -> "100(1)"	[label=print];
-	"print[3]" -> "start_mem(1)$0"	[label=print];
-	"print[4]" -> "end_mem(1)$0"	[label=print];
-	"print[5]" -> "start_mem(1)$0"	[label=print];
+	"print[46/0]" -> "Load Data(0)"	[label=print];
 	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"train_df(0)$0" -> "../input/train_transaction.csv(0)"	[label=read_csv];
 	"../input/train_transaction.csv(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
@@ -106,39 +83,58 @@ ast.Constant object at 0x12fc4f430>](0)"	[label=iteratorOf];
 	"test_identity(0)$0" -> "pd(0)"	[label=read_csv];
 	"test_identity(0)$0" -> "../input/test_identity.csv(0)"	[label=read_csv];
 	"../input/test_identity.csv(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8f5940>, <_ast.Name object at 0x12f8f5550>, <_ast.Name object at 0x12f8f55e0>, <_ast.Name object at 0x12f8f5790>](\
-0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04d5880>, <_ast.Name object at 0x7fd4c04d5190>, <_ast.Name object at 0x7fd4c04d5bb0>, <_ast.Name object \
+at 0x7fd4c04d5b20>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
 	"df(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12f8f5940>, <_ast.Name object at 0x12f8f5550>, <_ast.Name object at 0x12f8f55e0>, <_ast.Name object at 0x12f8f5790>](\
-0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd4c04d5880>, <_ast.Name object at 0x7fd4c04d5190>, <_ast.Name object at 0x7fd4c04d5bb0>, <_ast.Name object \
+at 0x7fd4c04d5b20>](0)"	[label=iteratorOf];
 	"original(0)$0" -> "df(0)"	[label=copy];
 	"df(0)$0" -> "df(0)"	[label=reduce_mem_usage];
 	"list(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f56d0>, <_ast.Constant object at 0x12f8f54c0>, <_ast.Constant object at 0x12f8f58e0>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4f160>, <_ast.Constant \
-object at 0x12fc4f760>, <_ast.Constant object at 0x12fc4f610>, <_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4fb80>, <_\
-ast.Constant object at 0x12fc4f430>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ea60>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f940310>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"col(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"col(0)" -> "df(0)$0"	[label=iteratorOf];
+	"col(0)" -> "list(0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c04d5640>, <_ast.Constant object at 0x7fd4c04d5610>, <_ast.Constant object at 0x7fd4c04d5490>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd50080d580>, <_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant object at 0x7fd50080deb0>, <_\
+ast.Constant object at 0x7fd50080d520>, <_ast.Constant object at 0x7fd50080d970>, <_ast.Constant object at 0x7fd50080d0d0>, <_ast.Constant \
+object at 0x7fd50080d6a0>, <_ast.Constant object at 0x7fd50080d5e0>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500999e50>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4d02e7910>](0)"	[label=iteratorOf];
+	"col(0)" -> "df(0)$2"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd4c04d5640>, <_ast.Constant object at 0x7fd4c04d5610>, <_ast.Constant object at 0x7fd4c04d5490>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d580>, <_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant object at 0x7fd50080deb0>, <_\
+ast.Constant object at 0x7fd50080d520>, <_ast.Constant object at 0x7fd50080d970>, <_ast.Constant object at 0x7fd50080d0d0>, <_ast.Constant \
+object at 0x7fd50080d6a0>, <_ast.Constant object at 0x7fd50080d5e0>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999e50>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d02e7910>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
 	"df(0)$2" -> "df(0)$1"	[label=reduce_mem_usage];
-	"df(0)$1" -> "col(0)"	[label=assignedFrom];
 	"df(0)$1" -> "original(0)$0"	[label=assignedFrom];
 	"df(0)$1" -> "df(0)$0"	[label=assignedFrom];
-	"df(0)$1" -> "[<_ast.Name object at 0x12f939340>, <_ast.Name object at 0x12f939370>, <_ast.Name object at 0x12f9393a0>, <_ast.Name object at 0x12f9393d0>](\
-0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12f939340>, <_ast.Name object at 0x12f939370>, <_ast.Name object at 0x12f9393a0>, <_ast.Name object at 0x12f9393d0>](\
-0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"df(0)$1" -> "col(0)"	[label=assignedFrom];
+	"df(0)$1" -> "[<_ast.Name object at 0x7fd4d02d9070>, <_ast.Name object at 0x7fd4d02d90a0>, <_ast.Name object at 0x7fd4d02d90d0>, <_ast.Name object \
+at 0x7fd4d02d9100>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd4d02d9070>, <_ast.Name object at 0x7fd4d02d90a0>, <_ast.Name object at 0x7fd4d02d90d0>, <_ast.Name object \
+at 0x7fd4d02d9100>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"Bad transformation(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"print[64/16]" -> "col(0)"	[label=print];
+	"print[64/16]" -> "Bad transformation(0)"	[label=print];
+	"Encoding(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"print[71/4]" -> "col(0)"	[label=print];
+	"print[71/4]" -> "Encoding(0)"	[label=print];
 	"temp_df(0)$0" -> "pd(0)"	[label=concat];
-	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x12f8f55b0>, <_ast.Subscript object at 0x12fc4f5e0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f8f55b0>, <_ast.Subscript object at 0x12fc4f5e0>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"train_df(0)$1" -> "col_encoded(0)$0"	[label=map];
-	"train_df(0)$1" -> "col(0)"	[label=map];
+	"temp_df(0)$0" -> "[<_ast.Subscript object at 0x7fd50080dc70>, <_ast.Subscript object at 0x7fd50080d490>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd50080dc70>, <_ast.Subscript object at 0x7fd50080d490>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"col_encoded(0)$0" -> "col(0)"	[label=to_dict];
+	"col_encoded(0)$0" -> "temp_df(0)$0"	[label=to_dict];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=map];
-	"test_df(0)$2" -> "col_encoded(0)$0"	[label=map];
-	"test_df(0)$2" -> "col(0)"	[label=map];
+	"train_df(0)$1" -> "col(0)"	[label=map];
+	"train_df(0)$1" -> "col_encoded(0)$0"	[label=map];
 	"test_df(0)$2" -> "test_df(0)$1"	[label=map];
-	"train_df(0)$2" -> "col(0)"	[label=map];
+	"test_df(0)$2" -> "col(0)"	[label=map];
+	"test_df(0)$2" -> "col_encoded(0)$0"	[label=map];
+	"print[76/4]" -> "col_encoded(0)$0"	[label=print];
 	"train_df(0)$2" -> "0(0)"	[label=map];
+	"train_df(0)$2" -> "col(0)"	[label=map];
 	"train_df(0)$2" -> "train_df(0)$1"	[label=map];
 	"train_df(0)$2" -> "T(0)"	[label=map];
 	"train_df(0)$2" -> "F(0)"	[label=map];
@@ -146,21 +142,26 @@ ast.Constant object at 0x12fc4f430>](0)" -> "ieee-data-minification.ipynb"	[labe
 	"T(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
 	"F(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
 	"1(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"test_df(0)$3" -> "col(0)"	[label=map];
 	"test_df(0)$3" -> "0(0)"	[label=map];
+	"test_df(0)$3" -> "col(0)"	[label=map];
 	"test_df(0)$3" -> "test_df(0)$2"	[label=map];
 	"test_df(0)$3" -> "T(0)"	[label=map];
 	"test_df(0)$3" -> "F(0)"	[label=map];
 	"test_df(0)$3" -> "1(0)"	[label=map];
+	"print[86/4]" -> "col(0)"	[label=print];
+	"print[86/4]" -> "Encoding(0)"	[label=print];
 	"temp_df(0)$1" -> "pd(0)"	[label=concat];
-	"temp_df(0)$1" -> "[<_ast.Subscript object at 0x12f85e670>, <_ast.Subscript object at 0x12f85ea30>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f85e670>, <_ast.Subscript object at 0x12f85ea30>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"train_df(0)$3" -> "col_encoded(0)$1"	[label=map];
+	"temp_df(0)$1" -> "[<_ast.Subscript object at 0x7fd500999160>, <_ast.Subscript object at 0x7fd500999df0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500999160>, <_ast.Subscript object at 0x7fd500999df0>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"col_encoded(0)$1" -> "col(0)"	[label=to_dict];
+	"col_encoded(0)$1" -> "temp_df(0)$1"	[label=to_dict];
 	"train_df(0)$3" -> "col(0)"	[label=map];
 	"train_df(0)$3" -> "train_df(0)$2"	[label=map];
-	"test_df(0)$4" -> "col_encoded(0)$1"	[label=map];
+	"train_df(0)$3" -> "col_encoded(0)$1"	[label=map];
 	"test_df(0)$4" -> "col(0)"	[label=map];
 	"test_df(0)$4" -> "test_df(0)$3"	[label=map];
+	"test_df(0)$4" -> "col_encoded(0)$1"	[label=map];
+	"print[91/4]" -> "col_encoded(0)$1"	[label=print];
 	"df(2)" -> "minify_identity_df[0]"	[label=_argToVar];
 	"df(2)$0" -> "df(2)"	[label=map];
 	"df(2)$0" -> "id_12(2)"	[label=map];
@@ -281,8 +282,8 @@ ast.Constant object at 0x12fc4f430>](0)" -> "ieee-data-minification.ipynb"	[labe
 	"test_identity(0)$2" -> "test_identity(0)$1"	[label=fillna];
 	"test_identity(0)$2" -> "unseen_before_label(0)"	[label=fillna];
 	"le(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
-	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "list(0)"	[label=fit];
+	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "train_identity(0)$2"	[label=fit];
 	"le(0)$0" -> "test_identity(0)$2"	[label=fit];
 	"le(0)$0" -> "le(0)"	[label=fit];
@@ -298,10 +299,12 @@ ast.Constant object at 0x12fc4f430>](0)" -> "ieee-data-minification.ipynb"	[labe
 	"df(0)$3" -> "col(0)"	[label=assignedFrom];
 	"df(0)$3" -> "df(0)$2"	[label=assignedFrom];
 	"df(0)$3" -> "original(0)$1"	[label=assignedFrom];
-	"df(0)$3" -> "[<_ast.Name object at 0x12f952400>, <_ast.Name object at 0x12f952430>, <_ast.Name object at 0x12f952460>, <_ast.Name object at 0x12f952490>](\
-0)"	[label=iteratorOf];
-	"[<_ast.Name object at 0x12f952400>, <_ast.Name object at 0x12f952430>, <_ast.Name object at 0x12f952460>, <_ast.Name object at 0x12f952490>](\
-0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"df(0)$3" -> "[<_ast.Name object at 0x7fd4d02e5130>, <_ast.Name object at 0x7fd4d02e5160>, <_ast.Name object at 0x7fd4d02e5190>, <_ast.Name object \
+at 0x7fd4d02e51c0>](0)"	[label=iteratorOf];
+	"[<_ast.Name object at 0x7fd4d02e5130>, <_ast.Name object at 0x7fd4d02e5160>, <_ast.Name object at 0x7fd4d02e5190>, <_ast.Name object \
+at 0x7fd4d02e51c0>](0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];
+	"print[147/16]" -> "col(0)"	[label=print];
+	"print[147/16]" -> "Bad transformation(0)"	[label=print];
 	"train_df(0)$4" -> "train_df(0)$3"	[label=to_pickle];
 	"train_df(0)$4" -> "train_transaction_fixed.pkl(0)"	[label=to_pickle];
 	"train_transaction_fixed.pkl(0)" -> "ieee-data-minification.ipynb"	[label=appearsIn];

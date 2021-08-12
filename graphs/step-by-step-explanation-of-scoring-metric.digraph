@@ -97,8 +97,8 @@ digraph "" {
 	"axes(0)$2" -> "targ_masks(0)$2"	[label=imshow];
 	"axes(0)$2" -> "0(0)"	[label=imshow];
 	"axes(0)$2" -> "axes(0)$1"	[label=imshow];
-	"[<_ast.Constant object at 0x12f917e50>, <_ast.Constant object at 0x12f917e80>, <_ast.Constant object at 0x12f917970>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"labels(0)$0" -> "[<_ast.Constant object at 0x12f917e50>, <_ast.Constant object at 0x12f917e80>, <_ast.Constant object at 0x12f917970>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object at 0x7fd500999460>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"labels(0)$0" -> "[<_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object at 0x7fd500999460>](0)"	[label=assignedFrom];
 	"ax(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ax(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"ax(0)" -> "axes(0)$3"	[label=iteratorOf];
@@ -155,10 +155,10 @@ digraph "" {
 	"axes(0)$10" -> "axes(0)$9"	[label=annotate];
 	"axes(0)$11" -> "union(0)$0"	[label=imshow];
 	"axes(0)$11" -> "axes(0)$10"	[label=imshow];
-	"[<_ast.Constant object at 0x12f8f5130>, <_ast.Constant object at 0x12f8f5fd0>, <_ast.Constant object at 0x12f8f5d60>, <_ast.Constant \
-object at 0x12f8f54c0>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"labels(0)$1" -> "[<_ast.Constant object at 0x12f8f5130>, <_ast.Constant object at 0x12f8f5fd0>, <_ast.Constant object at 0x12f8f5d60>, <_ast.Constant \
-object at 0x12f8f54c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff100>, <_\
+ast.Constant object at 0x7fd4c04ff9a0>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"labels(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff100>, <_\
+ast.Constant object at 0x7fd4c04ff9a0>](0)"	[label=assignedFrom];
 	"ax(0)$2" -> "ind(0)"	[label=set_title];
 	"ax(0)$2" -> "ax(0)$1"	[label=set_title];
 	"ax(0)$2" -> "labels(0)$1"	[label=set_title];
@@ -190,53 +190,13 @@ object at 0x12f8f54c0>](0)"	[label=assignedFrom];
 	"s(1)$1" -> "s(1)$0"	[label=assignedFrom];
 	"s(1)$1" -> "thresh(1)"	[label=assignedFrom];
 	"Does this IoU hit at each threshold?(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"print[0]" -> "Does this IoU hit at each threshold?(0)"	[label=print];
-	"print[0]" -> "get_iou_vector(0)"	[label=print];
-	"print[0]" -> "df(0)$1"	[label=print];
-	"print[0]" -> "Performance of Predicted Mask 3 vs. each Ground Truth mask across IoU thresholds(0)"	[label=print];
-	"print[0]" -> "At a threshold of {:0.2f}...
-	TP = {}
-	FP = {}
-	FN = {}
-	p = {:0.3f}(0)"	[label=print];
-	"print[0]" -> "Precision values at each threshold:(0)"	[label=print];
-	"print[0]" -> "	t({:0.2f}) = {:0.3f}(0)"	[label=print];
-	"print[0]" -> "Mean precision for image is: {:0.3f}(0)"	[label=print];
+	"print[73/0]" -> "Does this IoU hit at each threshold?(0)"	[label=print];
 	"get_iou_vector(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"df(0)$1" -> "df(0)$0"	[label=append];
-	"df(0)$1" -> "s(0)$0"	[label=append];
-	"Performance of Predicted Mask 3 vs. each Ground Truth mask across IoU thresholds(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"At a threshold of {:0.2f}...
-	TP = {}
-	FP = {}
-	FN = {}
-	p = {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"Precision values at each threshold:(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"	t({:0.2f}) = {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"Mean precision for image is: {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(0)"	[label=print];
-	"print[1]" -> "A(0)$0"	[label=print];
-	"print[1]" -> "thresh(0)"	[label=print];
-	"thresh(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"thresh(0)" -> "np(0)"	[label=iteratorOf];
-	"thresh(0)" -> "1(0)"	[label=iteratorOf];
-	"thresh(0)" -> "iou_vol(0)$1"	[label=iteratorOf];
-	"thresh(0)" -> "0.5(0)"	[label=iteratorOf];
-	"thresh(0)" -> "[<_ast.List object at 0x12f9a3cd0>, <_ast.List object at 0x12f9a3d60>](0)"	[label=iteratorOf];
-	"thresh(0)" -> "zip(0)"	[label=iteratorOf];
-	"thresh(0)" -> "0.05(0)"	[label=iteratorOf];
-	"print[2]" -> "B(0)$0"	[label=print];
-	"print[2]" -> "tp(0)$0"	[label=print];
-	"print[2]" -> "p(0)$1"	[label=print];
-	"print[2]" -> "ps(0)$1"	[label=print];
-	"tp(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
-	"p(0)$1" -> "iou_mat(0)"	[label=iou_thresh_precision];
-	"ps(0)$1" -> "p(0)$1"	[label=append];
-	"ps(0)$1" -> "ps(0)$0"	[label=append];
+	"print[74/0]" -> "A(0)$0"	[label=print];
+	"print[74/0]" -> "B(0)$0"	[label=print];
+	"print[74/0]" -> "get_iou_vector(0)"	[label=print];
+	"print[74/0]" -> "GT-P(0)"	[label=print];
 	"GT-P(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"print[3]" -> "GT-P(0)"	[label=print];
-	"print[3]" -> "fp(0)$0"	[label=print];
-	"fp(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
 	"df(0)$0" -> "pd(0)"	[label=DataFrame];
 	"gt_mask(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"gt_mask(0)" -> "targ_masks(0)$2"	[label=iteratorOf];
@@ -247,9 +207,14 @@ object at 0x12f8f54c0>](0)"	[label=assignedFrom];
 	"s(0)$0" -> "gt_mask(0)"	[label=get_iou_vector];
 	"s(0)$0" -> "P3-GT{}(0)"	[label=get_iou_vector];
 	"P3-GT{}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"df(0)$1" -> "df(0)$0"	[label=append];
+	"df(0)$1" -> "s(0)$0"	[label=append];
+	"Performance of Predicted Mask 3 vs. each Ground Truth mask across IoU thresholds(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[79/0]" -> "Performance of Predicted Mask 3 vs. each Ground Truth mask across IoU thresholds(0)"	[label=print];
+	"print[80/0]" -> "df(0)$1"	[label=print];
 	"iou_vol(0)$0" -> "np(0)"	[label=zeros];
-	"iou_vol(0)$0" -> "[<_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f7f0>](0)"	[label=zeros];
-	"[<_ast.Constant object at 0x12fc4ff70>, <_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f7f0>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"iou_vol(0)$0" -> "[<_ast.Constant object at 0x7fd500869400>, <_ast.Constant object at 0x7fd500869220>, <_ast.Constant object at 0x7fd500869760>](0)"	[label=zeros];
+	"[<_ast.Constant object at 0x7fd500869400>, <_ast.Constant object at 0x7fd500869220>, <_ast.Constant object at 0x7fd500869760>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ii(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"ii(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"ii(0)" -> "pred_masks(0)$1"	[label=iteratorOf];
@@ -355,15 +320,40 @@ object at 0x12f8f54c0>](0)"	[label=assignedFrom];
 	"p(2)$0" -> "tp(2)$0"	[label=Div];
 	"p(2)$0" -> "fp(2)$0"	[label=Div];
 	"p(2)$0" -> "fn(2)$0"	[label=Div];
-	"[<_ast.List object at 0x12f9a3cd0>, <_ast.List object at 0x12f9a3d60>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd4c04aaac0>, <_ast.List object at 0x7fd4c04aab50>](0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"thresh(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"thresh(0)" -> "np(0)"	[label=iteratorOf];
+	"thresh(0)" -> "1(0)"	[label=iteratorOf];
+	"thresh(0)" -> "iou_vol(0)$1"	[label=iteratorOf];
+	"thresh(0)" -> "0.5(0)"	[label=iteratorOf];
+	"thresh(0)" -> "[<_ast.List object at 0x7fd4c04aaac0>, <_ast.List object at 0x7fd4c04aab50>](0)"	[label=iteratorOf];
+	"thresh(0)" -> "zip(0)"	[label=iteratorOf];
+	"thresh(0)" -> "0.05(0)"	[label=iteratorOf];
 	"zip(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"0.05(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"hits(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
-	"hits(0)" -> "[<_ast.List object at 0x12f9a3cd0>, <_ast.List object at 0x12f9a3d60>](0)"	[label=iteratorOf];
+	"hits(0)" -> "[<_ast.List object at 0x7fd4c04aaac0>, <_ast.List object at 0x7fd4c04aab50>](0)"	[label=iteratorOf];
+	"tp(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
+	"fp(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
 	"fn(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
 	"p(0)$0" -> "hits(0)"	[label=iou_thresh_precision];
-	"print[4]" -> "fn(0)$0"	[label=print];
-	"print[5]" -> "p(0)$0"	[label=print];
+	"At a threshold of {:0.2f}...
+	TP = {}
+	FP = {}
+	FN = {}
+	p = {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[128/4]" -> "thresh(0)"	[label=print];
+	"print[128/4]" -> "tp(0)$0"	[label=print];
+	"print[128/4]" -> "fp(0)$0"	[label=print];
+	"print[128/4]" -> "fn(0)$0"	[label=print];
+	"print[128/4]" -> "p(0)$0"	[label=print];
+	"print[128/4]" -> "At a threshold of {:0.2f}...
+	TP = {}
+	FP = {}
+	FN = {}
+	p = {:0.3f}(0)"	[label=print];
+	"Precision values at each threshold:(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[130/0]" -> "Precision values at each threshold:(0)"	[label=print];
 	"ps(0)$0" -> "[](0)"	[label=assignedFrom];
 	"iou_mat(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
 	"iou_mat(0)" -> "np(0)"	[label=iteratorOf];
@@ -373,4 +363,15 @@ object at 0x12f8f54c0>](0)"	[label=assignedFrom];
 	"iou_mat(0)" -> "zip(0)"	[label=iteratorOf];
 	"iou_mat(0)" -> "0.05(0)"	[label=iteratorOf];
 	"_(0)$0" -> "iou_mat(0)"	[label=iou_thresh_precision];
+	"p(0)$1" -> "iou_mat(0)"	[label=iou_thresh_precision];
+	"	t({:0.2f}) = {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[134/4]" -> "thresh(0)"	[label=print];
+	"print[134/4]" -> "p(0)$1"	[label=print];
+	"print[134/4]" -> "	t({:0.2f}) = {:0.3f}(0)"	[label=print];
+	"ps(0)$1" -> "ps(0)$0"	[label=append];
+	"ps(0)$1" -> "p(0)$1"	[label=append];
+	"Mean precision for image is: {:0.3f}(0)" -> "step-by-step-explanation-of-scoring-metric.ipynb"	[label=appearsIn];
+	"print[136/0]" -> "np(0)"	[label=print];
+	"print[136/0]" -> "ps(0)$1"	[label=print];
+	"print[136/0]" -> "Mean precision for image is: {:0.3f}(0)"	[label=print];
 }

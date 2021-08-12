@@ -1,0 +1,107 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#132776362> rdfs:label "pd(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:set_option <http://purl.org/dj/kaggle/data-types-and-missing-values#30998711>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#445383666>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#80085334> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#497091550> rdfs:label "reviews(0)$3" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-6683578038131089850> ;
+    dj:replace <http://purl.org/dj/kaggle/data-types-and-missing-values#334234442>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#497026013>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#769918282> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#29687986> rdfs:label "0(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#3018526890> rdfs:label "../input/wine-reviews/winemag-data-130k-v2.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#30998711> rdfs:label "5(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#327680770> rdfs:label "float64(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#334234442> rdfs:label "@kerino(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#356123506> rdfs:label "Unknown(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#445383666> rdfs:label "max_rows(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#496894939> rdfs:label "reviews(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/2279612338617276158> ;
+    dj:read_csv <http://purl.org/dj/kaggle/data-types-and-missing-values#29687986>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#3018526890>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#80085334> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#496960476> rdfs:label "reviews(0)$1" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-6683578038131089850> ;
+    dj:astype <http://purl.org/dj/kaggle/data-types-and-missing-values#327680770>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#496894939> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#497026013> rdfs:label "reviews(0)$2" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-6683578038131089850> ;
+    dj:fillna <http://purl.org/dj/kaggle/data-types-and-missing-values#356123506>,
+        <http://purl.org/dj/kaggle/data-types-and-missing-values#496960476> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#769918282> rdfs:label "@kerinokeefe(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:importedBy k:data-types-and-missing-values .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> ;
+    dj:appearsIn k:data-types-and-missing-values ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values/activity/2279612338617276158> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-6683578038131089850> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/data-types-and-missing-values/activity/2279612338617276158> .
+
+k:data-types-and-missing-values a k:Notebook ;
+    rdfs:label "data-types-and-missing-values.ipynb" .
+
+<http://purl.org/dj/kaggle/data-types-and-missing-values/activity/-3184857299500419252> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:data-types-and-missing-values .
+

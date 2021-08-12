@@ -1,0 +1,225 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/model-validation#1322649418> rdfs:label "train_test_split(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/964298441> .
+
+<http://purl.org/dj/kaggle/model-validation#1967917308> rdfs:label "DecisionTreeRegressor(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1524238459> .
+
+<http://purl.org/dj/kaggle/model-validation#2192181609> rdfs:label "mean_absolute_error[45/0]" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-2236164384553707478>,
+        <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> ;
+    dj:mean_absolute_error <http://purl.org/dj/kaggle/model-validation#2359560567>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#418055088> rdfs:label "print[74/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-2925009363482578625> ;
+    dj:print <http://purl.org/dj/kaggle/model-validation#1404765980>,
+        <http://purl.org/dj/kaggle/model-validation#1722550378>,
+        <http://purl.org/dj/kaggle/model-validation#324600561> .
+
+<http://purl.org/dj/kaggle/model-validation#1170212539> rdfs:label "melbourne_model(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation .
+
+<http://purl.org/dj/kaggle/model-validation#1257178776> rdfs:label "melbourne_data(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/4315526896584964290> ;
+    dj:read_csv <http://purl.org/dj/kaggle/model-validation#2019035306>,
+        <http://purl.org/dj/kaggle/model-validation#80085334> .
+
+<http://purl.org/dj/kaggle/model-validation#1403979536> rdfs:label "melbourne_model(0)$1" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> ;
+    dj:fit <http://purl.org/dj/kaggle/model-validation#1403913999>,
+        <http://purl.org/dj/kaggle/model-validation#477168555>,
+        <http://purl.org/dj/kaggle/model-validation#490144716> .
+
+<http://purl.org/dj/kaggle/model-validation#1404765980> rdfs:label "val_predictions(0)$0" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> ;
+    dj:predict <http://purl.org/dj/kaggle/model-validation#1403979536>,
+        <http://purl.org/dj/kaggle/model-validation#311624400> .
+
+<http://purl.org/dj/kaggle/model-validation#1722550378> rdfs:label "mean_absolute_error(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1307576297> .
+
+<http://purl.org/dj/kaggle/model-validation#1867778141> rdfs:label "melbourne_features(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#3972423766> .
+
+<http://purl.org/dj/kaggle/model-validation#2019035306> rdfs:label "melbourne_file_path(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#58004286> .
+
+<http://purl.org/dj/kaggle/model-validation#2359560567> rdfs:label "predicted_home_prices(0)$0" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> ;
+    dj:predict <http://purl.org/dj/kaggle/model-validation#1403913999>,
+        <http://purl.org/dj/kaggle/model-validation#76611886> .
+
+<http://purl.org/dj/kaggle/model-validation#311624400> rdfs:label "val_X(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#29687986>,
+        <http://purl.org/dj/kaggle/model-validation#76611886>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#324600561> rdfs:label "val_y(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#29687986>,
+        <http://purl.org/dj/kaggle/model-validation#76611886>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#3972423766> rdfs:label "[<_ast.Constant object at 0x7fd4c048e4f0>, <_ast.Constant object at 0x7fd4c048eaf0>, <_ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048ef40>, <_ast.Constant object at 0x7fd4c048ebb0>, <_ast.Constant object at 0x7fd4c048e940>, <_ast.Constant object at 0x7fd4c048ed00>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation .
+
+<http://purl.org/dj/kaggle/model-validation#477168555> rdfs:label "train_X(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#29687986>,
+        <http://purl.org/dj/kaggle/model-validation#76611886>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#490144716> rdfs:label "train_y(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/model-validation#29687986>,
+        <http://purl.org/dj/kaggle/model-validation#76611886>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#58004286> rdfs:label "../input/melbourne-housing-snapshot/melb_data.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation .
+
+<http://purl.org/dj/kaggle/model-validation#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/-2236164384553707478> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/-2925009363482578625> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622>,
+        <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> .
+
+<http://purl.org/dj/python/lib/1307576297> rdfs:label "mean_absolute_error" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy <http://purl.org/dj/python/lib/816055830> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy k:model-validation .
+
+<http://purl.org/dj/python/lib/1524238459> rdfs:label "DecisionTreeRegressor" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy <http://purl.org/dj/python/lib/532874447> .
+
+<http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy k:model-validation .
+
+<http://purl.org/dj/python/lib/532874447> rdfs:label "sklearn.tree" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy k:model-validation .
+
+<http://purl.org/dj/python/lib/816055830> rdfs:label "sklearn.metrics" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy k:model-validation .
+
+<http://purl.org/dj/python/lib/964298441> rdfs:label "train_test_split" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
+
+<http://purl.org/dj/kaggle/model-validation#1403913999> rdfs:label "melbourne_model(0)$0" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> ;
+    dj:fit <http://purl.org/dj/kaggle/model-validation#1170212539>,
+        <http://purl.org/dj/kaggle/model-validation#76611886>,
+        <http://purl.org/dj/kaggle/model-validation#89588047> .
+
+<http://purl.org/dj/kaggle/model-validation#2743274054> rdfs:label "filtered_melbourne_data(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> ;
+    dj:dropna <http://purl.org/dj/kaggle/model-validation#1257178776>,
+        <http://purl.org/dj/kaggle/model-validation#29687986> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/4315526896584964290> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> .
+
+<http://purl.org/dj/kaggle/model-validation#29687986> rdfs:label "0(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> ;
+    dj:appearsIn k:model-validation .
+
+<http://purl.org/dj/kaggle/model-validation#76611886> rdfs:label "X(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#1867778141>,
+        <http://purl.org/dj/kaggle/model-validation#2743274054> .
+
+<http://purl.org/dj/kaggle/model-validation#89588047> rdfs:label "y(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/model-validation#2743274054> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/4661073901652080542> a ns1:Analysis ;
+    rdfs:label "Analysis" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/-5163766037868245622>,
+        <http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914>,
+        <http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> .
+
+<http://purl.org/dj/kaggle/model-validation/activity/891763757084259695> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/model-validation/activity/4315526896584964290> .
+
+k:model-validation a k:Notebook ;
+    rdfs:label "model-validation.ipynb" .
+
+<http://purl.org/dj/kaggle/model-validation/activity/1132848619887327914> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:model-validation .
+

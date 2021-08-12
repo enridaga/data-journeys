@@ -55,7 +55,7 @@ digraph "" {
 	"data(0)$0" -> "str(0)"	[label=normalize];
 	"data(0)$0" -> "x(0)"	[label=normalize];
 	"data(0)$0" -> "masks(0)"	[label=normalize];
-	"data(0)$0" -> "[<_ast.Constant object at 0x12fa48400>, <_ast.Constant object at 0x12fa48a00>](0)"	[label=normalize];
+	"data(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd4c04cc8e0>](0)"	[label=normalize];
 	"data(0)$0" -> "test(0)"	[label=normalize];
 	"data(0)$0" -> "None(0)"	[label=normalize];
 	"data(0)$0" -> "get_transforms(0)"	[label=normalize];
@@ -68,7 +68,7 @@ digraph "" {
 	"str(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"x(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"masks(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa48400>, <_ast.Constant object at 0x12fa48a00>](0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd4c04cc8e0>](0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"test(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"None(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"get_transforms(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
@@ -79,9 +79,9 @@ digraph "" {
 	"data(0)$1" -> "data(0)$0"	[label=show_batch];
 	"learn(0)$0" -> "data(0)$1"	[label=unet_learner];
 	"learn(0)$0" -> "models(0)"	[label=unet_learner];
-	"learn(0)$0" -> "[<_ast.Name object at 0x12fa48880>](0)"	[label=unet_learner];
+	"learn(0)$0" -> "[<_ast.Name object at 0x7fd4c04ffee0>](0)"	[label=unet_learner];
 	"models(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fa48880>](0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04ffee0>](0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"learn(0)$1" -> "learn(0)$0"	[label=fit_one_cycle];
 	"learn(0)$1" -> "6(0)"	[label=fit_one_cycle];
 	"6(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
@@ -221,7 +221,7 @@ digraph "" {
 	"preds(0)$3" -> "Ellipsis(0)"	[label=numpy];
 	"preds(0)$3" -> "best_thr(0)$0"	[label=numpy];
 	"preds(0)$3" -> "preds(0)$2"	[label=numpy];
-	"print[0]" -> "preds(0)$3"	[label=print];
+	"print[92/0]" -> "preds(0)$3"	[label=print];
 	"rles(0)$0" -> "[](0)"	[label=assignedFrom];
 	"p(0)" -> "pneumothorax-fastai-u-net.ipynb"	[label=appearsIn];
 	"p(0)" -> "progress_bar(0)"	[label=iteratorOf];

@@ -1,0 +1,47 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243466865> rdfs:label "data(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-623905582398205687> ;
+    dj:head <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243401328> .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#2016086216> rdfs:label "../input/adult.data.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-3526423920032291936> ;
+    dj:appearsIn k:a1-demo-pandas-and-uci-adult-dataset .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#243401328> rdfs:label "data(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-8804372069531060258> ;
+    dj:read_csv <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#2016086216>,
+        <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#80085334> .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-3526423920032291936> ;
+    dj:appearsIn k:a1-demo-pandas-and-uci-adult-dataset ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-623905582398205687> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-8804372069531060258> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-3526423920032291936> ;
+    dj:importedBy k:a1-demo-pandas-and-uci-adult-dataset .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-8804372069531060258> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-3526423920032291936> .
+
+k:a1-demo-pandas-and-uci-adult-dataset a k:Notebook ;
+    rdfs:label "a1-demo-pandas-and-uci-adult-dataset.ipynb" .
+
+<http://purl.org/dj/kaggle/a1-demo-pandas-and-uci-adult-dataset/activity/-3526423920032291936> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:a1-demo-pandas-and-uci-adult-dataset .
+

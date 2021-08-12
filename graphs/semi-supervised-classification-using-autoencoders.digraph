@@ -111,28 +111,13 @@ digraph "" {
 	"True(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"X(0)$0" -> "1(0)"	[label=assignedFrom];
 	"X(0)$0" -> "df(0)$0"	[label=assignedFrom];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12fadec10>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadec10>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffe20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ffe20>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"Y(0)$0" -> "Class(0)"	[label=assignedFrom];
 	"Y(0)$0" -> "df(0)$0"	[label=assignedFrom];
 	"x1(1)" -> "tsne_plot[0]"	[label=_argToVar];
-	"tsne_plot[0]" -> "X(0)$0"	[label=tsne_plot];
-	"tsne_plot[0]" -> "rep_x(0)$0"	[label=tsne_plot];
-	"rep_x(0)$0" -> "np(0)$0"	[label=append];
-	"rep_x(0)$0" -> "0(0)"	[label=append];
-	"rep_x(0)$0" -> "norm_hid_rep(0)$0"	[label=append];
-	"rep_x(0)$0" -> "fraud_hid_rep(0)$0"	[label=append];
 	"y1(1)" -> "tsne_plot[1]"	[label=_argToVar];
-	"tsne_plot[1]" -> "Y(0)$0"	[label=tsne_plot];
-	"tsne_plot[1]" -> "rep_y(0)$0"	[label=tsne_plot];
-	"rep_y(0)$0" -> "np(0)$0"	[label=append];
-	"rep_y(0)$0" -> "y_n(0)$0"	[label=append];
-	"rep_y(0)$0" -> "y_f(0)$0"	[label=append];
 	"name(1)" -> "tsne_plot[2]"	[label=_argToVar];
-	"tsne_plot[2]" -> "original.png(0)"	[label=tsne_plot];
-	"tsne_plot[2]" -> "latent_representation.png(0)"	[label=tsne_plot];
-	"original.png(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"latent_representation.png(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"tsne(1)$0" -> "2(1)"	[label=TSNE];
 	"tsne(1)$0" -> "0(1)"	[label=TSNE];
 	"X_t(1)$0" -> "x1(1)"	[label=fit_transform];
@@ -154,6 +139,10 @@ digraph "" {
 	"plt(1)$4" -> "name(1)"	[label=savefig];
 	"plt(1)$4" -> "plt(1)$3"	[label=savefig];
 	"plt(1)$5" -> "plt(1)$4"	[label=show];
+	"tsne_plot[42/0]" -> "X(0)$0"	[label=tsne_plot];
+	"tsne_plot[42/0]" -> "Y(0)$0"	[label=tsne_plot];
+	"tsne_plot[42/0]" -> "original.png(0)"	[label=tsne_plot];
+	"original.png(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"input_layer(0)$0" -> "1(0)"	[label=Input];
 	"input_layer(0)$0" -> "X(0)$0"	[label=Input];
 	"encoded(0)$0" -> "Dense(0)"	[label=assignedFrom];
@@ -188,8 +177,8 @@ digraph "" {
 	"autoencoder(0)$1" -> "autoencoder(0)$0"	[label=compile];
 	"x(0)$0" -> "data(0)$2"	[label=drop];
 	"x(0)$0" -> "1(0)"	[label=drop];
-	"x(0)$0" -> "[<_ast.Constant object at 0x12fafb040>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fafb040>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab430>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4902ab430>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "data(0)$2"	[label=assignedFrom];
 	"y(0)$0" -> "Class(0)"	[label=assignedFrom];
 	"x_scale(0)$0" -> "preprocessing(0)"	[label=fit_transform];
@@ -223,12 +212,23 @@ digraph "" {
 	"3000(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"fraud_hid_rep(0)$0" -> "x_fraud(0)$0"	[label=predict];
 	"fraud_hid_rep(0)$0" -> "hidden_representation(0)$2"	[label=predict];
+	"rep_x(0)$0" -> "np(0)$0"	[label=append];
+	"rep_x(0)$0" -> "0(0)"	[label=append];
+	"rep_x(0)$0" -> "norm_hid_rep(0)$0"	[label=append];
+	"rep_x(0)$0" -> "fraud_hid_rep(0)$0"	[label=append];
 	"y_n(0)$0" -> "np(0)$0"	[label=zeros];
 	"y_n(0)$0" -> "0(0)"	[label=zeros];
 	"y_n(0)$0" -> "norm_hid_rep(0)$0"	[label=zeros];
 	"y_f(0)$0" -> "np(0)$0"	[label=ones];
 	"y_f(0)$0" -> "0(0)"	[label=ones];
 	"y_f(0)$0" -> "fraud_hid_rep(0)$0"	[label=ones];
+	"rep_y(0)$0" -> "np(0)$0"	[label=append];
+	"rep_y(0)$0" -> "y_n(0)$0"	[label=append];
+	"rep_y(0)$0" -> "y_f(0)$0"	[label=append];
+	"tsne_plot[76/0]" -> "rep_x(0)$0"	[label=tsne_plot];
+	"tsne_plot[76/0]" -> "rep_y(0)$0"	[label=tsne_plot];
+	"tsne_plot[76/0]" -> "latent_representation.png(0)"	[label=tsne_plot];
+	"latent_representation.png(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"IPython.display" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=importedBy];
 	display -> "IPython.display"	[label=importedBy];
 	"display(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
@@ -239,17 +239,17 @@ digraph "" {
 	HTML -> "IPython.display"	[label=importedBy];
 	"HTML(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"HTML(0)" -> HTML	[label=assignedFrom];
-	"display[0]" -> "HTML(0)"	[label=display];
+	"display[78/0]" -> "HTML(0)"	[label=display];
+	"display[78/0]" -> "<table align=\"center\">
+<tr ><td><b>Actual Representation (Before) </b></td><td><b>Latent Representation (Actual)</b></td></tr>
+<\
+tr><td><img src='original.png'></td><td>
+             <img src='latent_representation.png'></td></tr></table>(0)"	[label=display];
 	"<table align=\"center\">
 <tr ><td><b>Actual Representation (Before) </b></td><td><b>Latent Representation (Actual)</b></td></tr>
 <\
 tr><td><img src='original.png'></td><td>
              <img src='latent_representation.png'></td></tr></table>(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"display[1]" -> "<table align=\"center\">
-<tr ><td><b>Actual Representation (Before) </b></td><td><b>Latent Representation (Actual)</b></td></tr>
-<\
-tr><td><img src='original.png'></td><td>
-             <img src='latent_representation.png'></td></tr></table>(0)"	[label=display];
 	"train_x(0)$0" -> "rep_x(0)$0"	[label=train_test_split];
 	"train_x(0)$0" -> "rep_y(0)$0"	[label=train_test_split];
 	"train_x(0)$0" -> "0.25(0)"	[label=train_test_split];
@@ -271,25 +271,18 @@ tr><td><img src='original.png'></td><td>
 	"pred_y(0)$0" -> "val_x(0)$0"	[label=predict];
 	"pred_y(0)$0" -> "clf(0)$0"	[label=predict];
 	"(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"print[0]" -> "classification_report(0)"	[label=print];
-	"print[0]" -> "accuracy_score(0)"	[label=print];
-	"print[0]" -> "(0)"	[label=print];
-	"print[0]" -> "Classification Report: (0)"	[label=print];
-	"print[0]" -> "Accuracy Score: (0)"	[label=print];
+	"print[86/0]" -> "(0)"	[label=print];
 	"Classification Report: (0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"print[87/0]" -> "Classification Report: (0)"	[label=print];
+	"print[88/0]" -> "classification_report(0)"	[label=print];
+	"print[88/0]" -> "val_y(0)$0"	[label=print];
+	"print[88/0]" -> "pred_y(0)$0"	[label=print];
+	"print[90/0]" -> "(0)"	[label=print];
 	"Accuracy Score: (0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"print[1]" -> "accuracy_score(0)"	[label=print];
-	"print[1]" -> "val_y(0)$0"	[label=print];
-	"print[1]" -> "val_y(0)$1"	[label=print];
-	"val_y(0)$1" -> "0.25(0)"	[label=train_test_split];
-	"val_y(0)$1" -> "rep_x(0)$1"	[label=train_test_split];
-	"val_y(0)$1" -> "rep_y(0)$1"	[label=train_test_split];
-	"print[2]" -> "val_y(0)$0"	[label=print];
-	"print[2]" -> "pred_y(0)$0"	[label=print];
-	"print[2]" -> "pred_y(0)$1"	[label=print];
-	"pred_y(0)$1" -> "val_x(0)$1"	[label=predict];
-	"pred_y(0)$1" -> "clf(0)$1"	[label=predict];
-	"print[3]" -> "pred_y(0)$0"	[label=print];
+	"print[91/0]" -> "accuracy_score(0)"	[label=print];
+	"print[91/0]" -> "val_y(0)$0"	[label=print];
+	"print[91/0]" -> "pred_y(0)$0"	[label=print];
+	"print[91/0]" -> "Accuracy Score: (0)"	[label=print];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "../input/titanic/train.csv(0)"	[label=read_csv];
 	"../input/titanic/train.csv(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
@@ -299,8 +292,8 @@ tr><td><img src='original.png'></td><td>
 	re -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=importedBy];
 	"re(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"re(0)" -> re	[label=assignedFrom];
-	"[<_ast.Name object at 0x12fa36190>, <_ast.Name object at 0x12fa36730>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"full_data(0)$0" -> "[<_ast.Name object at 0x12fa36190>, <_ast.Name object at 0x12fa36730>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500999be0>, <_ast.Name object at 0x7fd5009996a0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"full_data(0)$0" -> "[<_ast.Name object at 0x7fd500999be0>, <_ast.Name object at 0x7fd5009996a0>](0)"	[label=assignedFrom];
 	"train(0)$1" -> "len(0)"	[label=apply];
 	"train(0)$1" -> "train(0)$0"	[label=apply];
 	"train(0)$1" -> "Name(0)"	[label=apply];
@@ -391,16 +384,16 @@ tr><td><img src='original.png'></td><td>
 	"get_title(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"dataset(0)$8" -> "dataset(0)$7"	[label=replace];
 	"dataset(0)$8" -> "Title(0)"	[label=replace];
-	"dataset(0)$8" -> "[<_ast.Constant object at 0x12f8a1670>, <_ast.Constant object at 0x12f8a16a0>, <_ast.Constant object at 0x12f8a16d0>, <_ast.Constant \
-object at 0x12f8a1700>, <_ast.Constant object at 0x12f8a1730>, <_ast.Constant object at 0x12f8a1760>, <_ast.Constant object at 0x12f8a1790>, <_\
-ast.Constant object at 0x12f8a17c0>, <_ast.Constant object at 0x12f8a17f0>, <_ast.Constant object at 0x12f8a1820>, <_ast.Constant \
-object at 0x12f8a1850>](0)"	[label=replace];
+	"dataset(0)$8" -> "[<_ast.Constant object at 0x7fd49029e370>, <_ast.Constant object at 0x7fd49029e3a0>, <_ast.Constant object at 0x7fd49029e3d0>, <_\
+ast.Constant object at 0x7fd49029e400>, <_ast.Constant object at 0x7fd49029e430>, <_ast.Constant object at 0x7fd49029e460>, <_ast.Constant \
+object at 0x7fd49029e490>, <_ast.Constant object at 0x7fd49029e4c0>, <_ast.Constant object at 0x7fd49029e4f0>, <_ast.Constant object \
+at 0x7fd49029e520>, <_ast.Constant object at 0x7fd49029e550>](0)"	[label=replace];
 	"dataset(0)$8" -> "Rare(0)"	[label=replace];
 	"Title(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a1670>, <_ast.Constant object at 0x12f8a16a0>, <_ast.Constant object at 0x12f8a16d0>, <_ast.Constant \
-object at 0x12f8a1700>, <_ast.Constant object at 0x12f8a1730>, <_ast.Constant object at 0x12f8a1760>, <_ast.Constant object at 0x12f8a1790>, <_\
-ast.Constant object at 0x12f8a17c0>, <_ast.Constant object at 0x12f8a17f0>, <_ast.Constant object at 0x12f8a1820>, <_ast.Constant \
-object at 0x12f8a1850>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49029e370>, <_ast.Constant object at 0x7fd49029e3a0>, <_ast.Constant object at 0x7fd49029e3d0>, <_\
+ast.Constant object at 0x7fd49029e400>, <_ast.Constant object at 0x7fd49029e430>, <_ast.Constant object at 0x7fd49029e460>, <_ast.Constant \
+object at 0x7fd49029e490>, <_ast.Constant object at 0x7fd49029e4c0>, <_ast.Constant object at 0x7fd49029e4f0>, <_ast.Constant object \
+at 0x7fd49029e520>, <_ast.Constant object at 0x7fd49029e550>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"Rare(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"dataset(0)$9" -> "dataset(0)$8"	[label=replace];
 	"dataset(0)$9" -> "Title(0)"	[label=replace];
@@ -481,24 +474,24 @@ object at 0x12f8a1850>](0)" -> "semi-supervised-classification-using-autoencoder
 	"dataset(0)$24" -> "dataset(0)$23"	[label=assignedFrom];
 	"dataset(0)$25" -> "4(0)"	[label=assignedFrom];
 	"dataset(0)$25" -> "dataset(0)$24"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f89e8e0>, <_ast.Constant object at 0x12f89e910>, <_ast.Constant object at 0x12f89e940>, <_ast.Constant \
-object at 0x12f89e970>, <_ast.Constant object at 0x12f89e9a0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
-	"drop_elements(0)$0" -> "[<_ast.Constant object at 0x12f89e8e0>, <_ast.Constant object at 0x12f89e910>, <_ast.Constant object at 0x12f89e940>, <_ast.Constant \
-object at 0x12f89e970>, <_ast.Constant object at 0x12f89e9a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081f5e0>, <_ast.Constant object at 0x7fd50081f610>, <_ast.Constant object at 0x7fd50081f640>, <_\
+ast.Constant object at 0x7fd50081f670>, <_ast.Constant object at 0x7fd50081f6a0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"drop_elements(0)$0" -> "[<_ast.Constant object at 0x7fd50081f5e0>, <_ast.Constant object at 0x7fd50081f610>, <_ast.Constant object at 0x7fd50081f640>, <_\
+ast.Constant object at 0x7fd50081f670>, <_ast.Constant object at 0x7fd50081f6a0>](0)"	[label=assignedFrom];
 	"train(0)$5" -> "1(0)"	[label=drop];
 	"train(0)$5" -> "train(0)$4"	[label=drop];
 	"train(0)$5" -> "drop_elements(0)$0"	[label=drop];
 	"train(0)$6" -> "1(0)"	[label=drop];
 	"train(0)$6" -> "train(0)$5"	[label=drop];
-	"train(0)$6" -> "[<_ast.Constant object at 0x12f89eca0>, <_ast.Constant object at 0x12f89ecd0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f89eca0>, <_ast.Constant object at 0x12f89ecd0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"train(0)$6" -> "[<_ast.Constant object at 0x7fd50081f9a0>, <_ast.Constant object at 0x7fd50081f9d0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50081f9a0>, <_ast.Constant object at 0x7fd50081f9d0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"test(0)$3" -> "1(0)"	[label=drop];
 	"test(0)$3" -> "test(0)$2"	[label=drop];
 	"test(0)$3" -> "drop_elements(0)$0"	[label=drop];
 	"X(0)$1" -> "1(0)"	[label=drop];
 	"X(0)$1" -> "train(0)$6"	[label=drop];
-	"X(0)$1" -> "[<_ast.Constant object at 0x12f88c0a0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f88c0a0>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
+	"X(0)$1" -> "[<_ast.Constant object at 0x7fd50081fd60>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50081fd60>](0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
 	"y(0)$1" -> "train(0)$6"	[label=assignedFrom];
 	"y(0)$1" -> "Survived(0)"	[label=assignedFrom];
 	"Survived(0)" -> "semi-supervised-classification-using-autoencoders.ipynb"	[label=appearsIn];
@@ -583,9 +576,20 @@ object at 0x12f89e970>, <_ast.Constant object at 0x12f89e9a0>](0)"	[label=assign
 	"train_y(0)$1" -> "0.25(0)"	[label=train_test_split];
 	"train_y(0)$1" -> "rep_x(0)$1"	[label=train_test_split];
 	"train_y(0)$1" -> "rep_y(0)$1"	[label=train_test_split];
+	"val_y(0)$1" -> "0.25(0)"	[label=train_test_split];
+	"val_y(0)$1" -> "rep_x(0)$1"	[label=train_test_split];
+	"val_y(0)$1" -> "rep_y(0)$1"	[label=train_test_split];
 	"clf(0)$1" -> "LogisticRegression(0)"	[label=fit];
 	"clf(0)$1" -> "train_x(0)$1"	[label=fit];
 	"clf(0)$1" -> "train_y(0)$1"	[label=fit];
+	"pred_y(0)$1" -> "val_x(0)$1"	[label=predict];
+	"pred_y(0)$1" -> "clf(0)$1"	[label=predict];
+	"print[198/0]" -> "classification_report(0)"	[label=print];
+	"print[198/0]" -> "val_y(0)$1"	[label=print];
+	"print[198/0]" -> "pred_y(0)$1"	[label=print];
+	"print[199/0]" -> "accuracy_score(0)"	[label=print];
+	"print[199/0]" -> "val_y(0)$1"	[label=print];
+	"print[199/0]" -> "pred_y(0)$1"	[label=print];
 	"temp(0)$0" -> "pd(0)"	[label=DataFrame];
 	"temp(0)$0" -> "../input/titanic/test.csv(0)"	[label=DataFrame];
 	"temp(0)$0" -> "PassengerId(0)"	[label=DataFrame];

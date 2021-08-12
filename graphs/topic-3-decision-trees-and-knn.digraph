@@ -141,49 +141,8 @@ digraph "" {
 	"export_graphviz(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"export_graphviz(0)" -> export_graphviz	[label=assignedFrom];
 	"tree(2)" -> "tree_graph_to_png[0]"	[label=_argToVar];
-	"tree_graph_to_png[0]" -> "clf_tree(0)$1"	[label=tree_graph_to_png];
-	"tree_graph_to_png[0]" -> "age_tree(0)$1"	[label=tree_graph_to_png];
-	"tree_graph_to_png[0]" -> "age_sal_tree(0)$1"	[label=tree_graph_to_png];
-	"tree_graph_to_png[0]" -> "tree_grid(0)$1"	[label=tree_graph_to_png];
-	"tree_graph_to_png[0]" -> "tree(0)$2"	[label=tree_graph_to_png];
-	"age_tree(0)$1" -> "1(0)"	[label=fit];
-	"age_tree(0)$1" -> "Age(0)"	[label=fit];
-	"age_tree(0)$1" -> "Loan Default(0)"	[label=fit];
-	"age_tree(0)$1" -> "data(0)$1"	[label=fit];
-	"age_tree(0)$1" -> "age_tree(0)$0"	[label=fit];
-	"age_sal_tree(0)$1" -> "Loan Default(0)"	[label=fit];
-	"age_sal_tree(0)$1" -> "data2(0)$1"	[label=fit];
-	"age_sal_tree(0)$1" -> "age_sal_tree(0)$0"	[label=fit];
-	"age_sal_tree(0)$1" -> "[<_ast.Constant object at 0x12f9a43d0>, <_ast.Constant object at 0x12f9a4400>](0)"	[label=fit];
-	"tree_grid(0)$1" -> "X_train(0)$1"	[label=fit];
-	"tree_grid(0)$1" -> "y_train(0)$1"	[label=fit];
-	"tree_grid(0)$1" -> "tree_grid(0)$0"	[label=fit];
-	"tree(0)$2" -> "17(0)"	[label=fit];
-	"tree(0)$2" -> "DecisionTreeClassifier(0)"	[label=fit];
-	"tree(0)$2" -> "y(0)$0"	[label=fit];
-	"tree(0)$2" -> "X(0)"	[label=fit];
 	"feature_names(2)" -> "tree_graph_to_png[1]"	[label=_argToVar];
-	"tree_graph_to_png[1]" -> "[<_ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade1f0>](0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[1]" -> "[<_ast.Constant object at 0x12f9a3580>](0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[1]" -> "[<_ast.Constant object at 0x12f9a4760>, <_ast.Constant object at 0x12f9a4790>](0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[1]" -> "df(0)$5"	[label=tree_graph_to_png];
-	"tree_graph_to_png[1]" -> "[<_ast.Constant object at 0x12f89de80>, <_ast.Constant object at 0x12f89de20>](0)"	[label=tree_graph_to_png];
-	"[<_ast.Constant object at 0x12fadee20>, <_ast.Constant object at 0x12fade1f0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3580>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a4760>, <_ast.Constant object at 0x12f9a4790>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"df(0)$5" -> "df(0)$4"	[label=head];
-	"[<_ast.Constant object at 0x12f89de80>, <_ast.Constant object at 0x12f89de20>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"png_file_to_save(2)" -> "tree_graph_to_png[2]"	[label=_argToVar];
-	"tree_graph_to_png[2]" -> "topic3_decision_tree1.png(0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[2]" -> "topic3_decision_tree2.png(0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[2]" -> "topic3_decision_tree3.png(0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[2]" -> "topic3_decision_tree4.png(0)"	[label=tree_graph_to_png];
-	"tree_graph_to_png[2]" -> "topic3_decision_tree5.png(0)"	[label=tree_graph_to_png];
-	"topic3_decision_tree1.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"topic3_decision_tree2.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"topic3_decision_tree3.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"topic3_decision_tree4.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"topic3_decision_tree5.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"tree_str(2)$0" -> "tree(2)"	[label=export_graphviz];
 	"tree_str(2)$0" -> "feature_names(2)"	[label=export_graphviz];
 	"tree_str(2)$0" -> "True(2)"	[label=export_graphviz];
@@ -192,63 +151,87 @@ digraph "" {
 	"graph(2)$0" -> "pydotplus(2)"	[label=graph_from_dot_data];
 	"graph(2)$1" -> "png_file_to_save(2)"	[label=write_png];
 	"graph(2)$1" -> "graph(2)$0"	[label=write_png];
+	"tree_graph_to_png[63/0]" -> "clf_tree(0)$1"	[label=tree_graph_to_png];
+	"tree_graph_to_png[63/0]" -> "[<_ast.Constant object at 0x7fd4c04ccb50>, <_ast.Constant object at 0x7fd4c04cc970>](0)"	[label=tree_graph_to_png];
+	"tree_graph_to_png[63/0]" -> "topic3_decision_tree1.png(0)"	[label=tree_graph_to_png];
+	"[<_ast.Constant object at 0x7fd4c04ccb50>, <_ast.Constant object at 0x7fd4c04cc970>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"topic3_decision_tree1.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"data(0)$0" -> "pd(0)"	[label=DataFrame];
 	"data(0)$0" -> "Age(0)"	[label=DataFrame];
 	"data(0)$0" -> "Loan Default(0)"	[label=DataFrame];
-	"data(0)$0" -> "[<_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
-object at 0x12fadeca0>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade580>, <_ast.Constant object at 0x12fade1c0>, <_\
-ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade310>, <_ast.Constant \
-object at 0x12fade550>](0)"	[label=DataFrame];
-	"data(0)$0" -> "[<_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant \
-object at 0x12fade5e0>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade9a0>, <_ast.Constant object at 0x12fadeeb0>, <_\
-ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadea00>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant \
-object at 0x12fade280>](0)"	[label=DataFrame];
+	"data(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc340>, <_ast.Constant object at 0x7fd4c04ccc40>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_\
+ast.Constant object at 0x7fd4c04ccb20>, <_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant \
+object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04ccc10>, <_ast.Constant object at 0x7fd4c04cc2e0>, <_ast.Constant object \
+at 0x7fd4c04cc730>, <_ast.Constant object at 0x7fd4c04cc7f0>](0)"	[label=DataFrame];
+	"data(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc280>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc5e0>, <_\
+ast.Constant object at 0x7fd4c04cce20>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccee0>, <_ast.Constant \
+object at 0x7fd4c04cc580>, <_ast.Constant object at 0x7fd4c04cc7c0>, <_ast.Constant object at 0x7fd4c04cc3a0>, <_ast.Constant object \
+at 0x7fd4c04cce50>, <_ast.Constant object at 0x7fd4c04ccd90>](0)"	[label=DataFrame];
 	"Age(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"Loan Default(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fade340>, <_ast.Constant \
-object at 0x12fadeca0>, <_ast.Constant object at 0x12fade040>, <_ast.Constant object at 0x12fade580>, <_ast.Constant object at 0x12fade1c0>, <_\
-ast.Constant object at 0x12fadedf0>, <_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12fade310>, <_ast.Constant \
-object at 0x12fade550>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fadec40>, <_ast.Constant object at 0x12fade7f0>, <_ast.Constant \
-object at 0x12fade5e0>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fade9a0>, <_ast.Constant object at 0x12fadeeb0>, <_\
-ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadea00>, <_ast.Constant object at 0x12fadee80>, <_ast.Constant \
-object at 0x12fade280>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc340>, <_ast.Constant object at 0x7fd4c04ccc40>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_\
+ast.Constant object at 0x7fd4c04ccb20>, <_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant \
+object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04ccc10>, <_ast.Constant object at 0x7fd4c04cc2e0>, <_ast.Constant object \
+at 0x7fd4c04cc730>, <_ast.Constant object at 0x7fd4c04cc7f0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc280>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc5e0>, <_\
+ast.Constant object at 0x7fd4c04cce20>, <_ast.Constant object at 0x7fd4c04cc220>, <_ast.Constant object at 0x7fd4c04ccee0>, <_ast.Constant \
+object at 0x7fd4c04cc580>, <_ast.Constant object at 0x7fd4c04cc7c0>, <_ast.Constant object at 0x7fd4c04cc3a0>, <_ast.Constant object \
+at 0x7fd4c04cce50>, <_ast.Constant object at 0x7fd4c04ccd90>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=sort_values];
 	"data(0)$1" -> "Age(0)"	[label=sort_values];
 	"age_tree(0)$0" -> "17(0)"	[label=DecisionTreeClassifier];
+	"age_tree(0)$1" -> "1(0)"	[label=fit];
+	"age_tree(0)$1" -> "Age(0)"	[label=fit];
+	"age_tree(0)$1" -> "Loan Default(0)"	[label=fit];
+	"age_tree(0)$1" -> "data(0)$1"	[label=fit];
+	"age_tree(0)$1" -> "age_tree(0)$0"	[label=fit];
+	"tree_graph_to_png[72/0]" -> "age_tree(0)$1"	[label=tree_graph_to_png];
+	"tree_graph_to_png[72/0]" -> "[<_ast.Constant object at 0x7fd500837100>](0)"	[label=tree_graph_to_png];
+	"tree_graph_to_png[72/0]" -> "topic3_decision_tree2.png(0)"	[label=tree_graph_to_png];
+	"[<_ast.Constant object at 0x7fd500837100>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"topic3_decision_tree2.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"data2(0)$0" -> "pd(0)"	[label=DataFrame];
 	"data2(0)$0" -> "Age(0)"	[label=DataFrame];
 	"data2(0)$0" -> "Loan Default(0)"	[label=DataFrame];
 	"data2(0)$0" -> "Salary(0)"	[label=DataFrame];
-	"data2(0)$0" -> "[<_ast.Constant object at 0x12f9a3850>, <_ast.Constant object at 0x12f9a3880>, <_ast.Constant object at 0x12f9a38b0>, <_ast.Constant \
-object at 0x12f9a38e0>, <_ast.Constant object at 0x12f9a3910>, <_ast.Constant object at 0x12f9a3940>, <_ast.Constant object at 0x12f9a3970>, <_\
-ast.Constant object at 0x12f9a39a0>, <_ast.Constant object at 0x12f9a39d0>, <_ast.Constant object at 0x12f9a3a00>, <_ast.Constant \
-object at 0x12f9a3a30>](0)"	[label=DataFrame];
-	"data2(0)$0" -> "[<_ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>, <_ast.Constant object at 0x12f9a3af0>, <_ast.Constant \
-object at 0x12f9a3b20>, <_ast.Constant object at 0x12f9a3b50>, <_ast.Constant object at 0x12f9a3b80>, <_ast.Constant object at 0x12f9a3bb0>, <_\
-ast.Constant object at 0x12f9a3be0>, <_ast.Constant object at 0x12f9a3c10>, <_ast.Constant object at 0x12f9a3c40>, <_ast.Constant \
-object at 0x12f9a3c70>](0)"	[label=DataFrame];
-	"data2(0)$0" -> "[<_ast.Constant object at 0x12f9a3cd0>, <_ast.Constant object at 0x12f9a3d00>, <_ast.Constant object at 0x12f9a3d30>, <_ast.Constant \
-object at 0x12f9a3d60>, <_ast.Constant object at 0x12f9a3d90>, <_ast.Constant object at 0x12f9a3dc0>, <_ast.Constant object at 0x12f9a3df0>, <_\
-ast.Constant object at 0x12f9a3e20>, <_ast.Constant object at 0x12f9a3e50>, <_ast.Constant object at 0x12f9a3e80>, <_ast.Constant \
-object at 0x12f9a3eb0>](0)"	[label=DataFrame];
+	"data2(0)$0" -> "[<_ast.Constant object at 0x7fd5008375b0>, <_ast.Constant object at 0x7fd500837130>, <_ast.Constant object at 0x7fd500837040>, <_\
+ast.Constant object at 0x7fd5008373a0>, <_ast.Constant object at 0x7fd500837340>, <_ast.Constant object at 0x7fd500837370>, <_ast.Constant \
+object at 0x7fd500837190>, <_ast.Constant object at 0x7fd500837610>, <_ast.Constant object at 0x7fd500837c40>, <_ast.Constant object \
+at 0x7fd500837520>, <_ast.Constant object at 0x7fd500837790>](0)"	[label=DataFrame];
+	"data2(0)$0" -> "[<_ast.Constant object at 0x7fd500837250>, <_ast.Constant object at 0x7fd500837b80>, <_ast.Constant object at 0x7fd500837670>, <_\
+ast.Constant object at 0x7fd500837700>, <_ast.Constant object at 0x7fd500837430>, <_ast.Constant object at 0x7fd5008376a0>, <_ast.Constant \
+object at 0x7fd500837a90>, <_ast.Constant object at 0x7fd500837b50>, <_ast.Constant object at 0x7fd500837bb0>, <_ast.Constant object \
+at 0x7fd500837760>, <_ast.Constant object at 0x7fd500837310>](0)"	[label=DataFrame];
+	"data2(0)$0" -> "[<_ast.Constant object at 0x7fd5008372b0>, <_ast.Constant object at 0x7fd500837af0>, <_ast.Constant object at 0x7fd5008377f0>, <_\
+ast.Constant object at 0x7fd5008379a0>, <_ast.Constant object at 0x7fd5008379d0>, <_ast.Constant object at 0x7fd5008378b0>, <_ast.Constant \
+object at 0x7fd500837850>, <_ast.Constant object at 0x7fd5008378e0>, <_ast.Constant object at 0x7fd500837970>, <_ast.Constant object \
+at 0x7fd500837940>, <_ast.Constant object at 0x7fd500837910>](0)"	[label=DataFrame];
 	"Salary(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3850>, <_ast.Constant object at 0x12f9a3880>, <_ast.Constant object at 0x12f9a38b0>, <_ast.Constant \
-object at 0x12f9a38e0>, <_ast.Constant object at 0x12f9a3910>, <_ast.Constant object at 0x12f9a3940>, <_ast.Constant object at 0x12f9a3970>, <_\
-ast.Constant object at 0x12f9a39a0>, <_ast.Constant object at 0x12f9a39d0>, <_ast.Constant object at 0x12f9a3a00>, <_ast.Constant \
-object at 0x12f9a3a30>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3a90>, <_ast.Constant object at 0x12f9a3ac0>, <_ast.Constant object at 0x12f9a3af0>, <_ast.Constant \
-object at 0x12f9a3b20>, <_ast.Constant object at 0x12f9a3b50>, <_ast.Constant object at 0x12f9a3b80>, <_ast.Constant object at 0x12f9a3bb0>, <_\
-ast.Constant object at 0x12f9a3be0>, <_ast.Constant object at 0x12f9a3c10>, <_ast.Constant object at 0x12f9a3c40>, <_ast.Constant \
-object at 0x12f9a3c70>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a3cd0>, <_ast.Constant object at 0x12f9a3d00>, <_ast.Constant object at 0x12f9a3d30>, <_ast.Constant \
-object at 0x12f9a3d60>, <_ast.Constant object at 0x12f9a3d90>, <_ast.Constant object at 0x12f9a3dc0>, <_ast.Constant object at 0x12f9a3df0>, <_\
-ast.Constant object at 0x12f9a3e20>, <_ast.Constant object at 0x12f9a3e50>, <_ast.Constant object at 0x12f9a3e80>, <_ast.Constant \
-object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008375b0>, <_ast.Constant object at 0x7fd500837130>, <_ast.Constant object at 0x7fd500837040>, <_\
+ast.Constant object at 0x7fd5008373a0>, <_ast.Constant object at 0x7fd500837340>, <_ast.Constant object at 0x7fd500837370>, <_ast.Constant \
+object at 0x7fd500837190>, <_ast.Constant object at 0x7fd500837610>, <_ast.Constant object at 0x7fd500837c40>, <_ast.Constant object \
+at 0x7fd500837520>, <_ast.Constant object at 0x7fd500837790>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500837250>, <_ast.Constant object at 0x7fd500837b80>, <_ast.Constant object at 0x7fd500837670>, <_\
+ast.Constant object at 0x7fd500837700>, <_ast.Constant object at 0x7fd500837430>, <_ast.Constant object at 0x7fd5008376a0>, <_ast.Constant \
+object at 0x7fd500837a90>, <_ast.Constant object at 0x7fd500837b50>, <_ast.Constant object at 0x7fd500837bb0>, <_ast.Constant object \
+at 0x7fd500837760>, <_ast.Constant object at 0x7fd500837310>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008372b0>, <_ast.Constant object at 0x7fd500837af0>, <_ast.Constant object at 0x7fd5008377f0>, <_\
+ast.Constant object at 0x7fd5008379a0>, <_ast.Constant object at 0x7fd5008379d0>, <_ast.Constant object at 0x7fd5008378b0>, <_ast.Constant \
+object at 0x7fd500837850>, <_ast.Constant object at 0x7fd5008378e0>, <_ast.Constant object at 0x7fd500837970>, <_ast.Constant object \
+at 0x7fd500837940>, <_ast.Constant object at 0x7fd500837910>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"data2(0)$1" -> "Age(0)"	[label=sort_values];
 	"data2(0)$1" -> "data2(0)$0"	[label=sort_values];
 	"age_sal_tree(0)$0" -> "17(0)"	[label=DecisionTreeClassifier];
-	"[<_ast.Constant object at 0x12f9a43d0>, <_ast.Constant object at 0x12f9a4400>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"age_sal_tree(0)$1" -> "Loan Default(0)"	[label=fit];
+	"age_sal_tree(0)$1" -> "data2(0)$1"	[label=fit];
+	"age_sal_tree(0)$1" -> "age_sal_tree(0)$0"	[label=fit];
+	"age_sal_tree(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant object at 0x7fd4c04ac100>](0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd4c04ac0d0>, <_ast.Constant object at 0x7fd4c04ac100>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"tree_graph_to_png[81/0]" -> "age_sal_tree(0)$1"	[label=tree_graph_to_png];
+	"tree_graph_to_png[81/0]" -> "[<_ast.Constant object at 0x7fd4c04ac460>, <_ast.Constant object at 0x7fd4c04ac490>](0)"	[label=tree_graph_to_png];
+	"tree_graph_to_png[81/0]" -> "topic3_decision_tree3.png(0)"	[label=tree_graph_to_png];
+	"[<_ast.Constant object at 0x7fd4c04ac460>, <_ast.Constant object at 0x7fd4c04ac490>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"topic3_decision_tree3.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"150(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"n_train(0)$0" -> "150(0)"	[label=assignedFrom];
 	"1000(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
@@ -309,8 +292,8 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"plt(0)$18" -> "g(0)"	[label=plot];
 	"g(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"plt(0)$19" -> "plt(0)$18"	[label=xlim];
-	"plt(0)$19" -> "[<_ast.UnaryOp object at 0x12fecdf10>, <_ast.Constant object at 0x12fecdf70>](0)"	[label=xlim];
-	"[<_ast.UnaryOp object at 0x12fecdf10>, <_ast.Constant object at 0x12fecdf70>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"plt(0)$19" -> "[<_ast.UnaryOp object at 0x7fd4c05b8c10>, <_ast.Constant object at 0x7fd4c05b8c70>](0)"	[label=xlim];
+	"[<_ast.UnaryOp object at 0x7fd4c05b8c10>, <_ast.Constant object at 0x7fd4c05b8c70>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"plt(0)$20" -> "2(0)"	[label=title];
 	"plt(0)$20" -> "np(0)$0"	[label=title];
 	"plt(0)$20" -> "n_test(0)$0"	[label=title];
@@ -346,8 +329,9 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"y(0)$0" -> "df(0)$3"	[label=assignedFrom];
 	"y(0)$0" -> "Churn(0)"	[label=assignedFrom];
 	"df(0)$4" -> "df(0)$3"	[label=drop];
-	"df(0)$4" -> "[<_ast.Constant object at 0x12feb22b0>, <_ast.Constant object at 0x12feb22e0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12feb22b0>, <_ast.Constant object at 0x12feb22e0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"df(0)$4" -> "[<_ast.Constant object at 0x7fd4c05c0f40>, <_ast.Constant object at 0x7fd4c05c0f70>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c05c0f40>, <_ast.Constant object at 0x7fd4c05c0f70>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"df(0)$5" -> "df(0)$4"	[label=head];
 	"sklearn.model_selection" -> "topic-3-decision-trees-and-knn.ipynb"	[label=importedBy];
 	train_test_split -> "sklearn.model_selection"	[label=importedBy];
 	"train_test_split(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
@@ -364,21 +348,21 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"StandardScaler(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"StandardScaler(0)" -> StandardScaler	[label=assignedFrom];
 	"X_train(0)$1" -> "17(0)"	[label=train_test_split];
-	"X_train(0)$1" -> "df(0)$5"	[label=train_test_split];
 	"X_train(0)$1" -> "y(0)$0"	[label=train_test_split];
+	"X_train(0)$1" -> "df(0)$5"	[label=train_test_split];
 	"X_train(0)$1" -> "0.3(0)"	[label=train_test_split];
 	"0.3(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"X_holdout(0)$0" -> "17(0)"	[label=train_test_split];
-	"X_holdout(0)$0" -> "df(0)$5"	[label=train_test_split];
 	"X_holdout(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"X_holdout(0)$0" -> "df(0)$5"	[label=train_test_split];
 	"X_holdout(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"y_train(0)$1" -> "17(0)"	[label=train_test_split];
-	"y_train(0)$1" -> "df(0)$5"	[label=train_test_split];
 	"y_train(0)$1" -> "y(0)$0"	[label=train_test_split];
+	"y_train(0)$1" -> "df(0)$5"	[label=train_test_split];
 	"y_train(0)$1" -> "0.3(0)"	[label=train_test_split];
 	"y_holdout(0)$0" -> "17(0)"	[label=train_test_split];
-	"y_holdout(0)$0" -> "df(0)$5"	[label=train_test_split];
 	"y_holdout(0)$0" -> "y(0)$0"	[label=train_test_split];
+	"y_holdout(0)$0" -> "df(0)$5"	[label=train_test_split];
 	"y_holdout(0)$0" -> "0.3(0)"	[label=train_test_split];
 	"tree(0)$0" -> "17(0)"	[label=DecisionTreeClassifier];
 	"tree(0)$0" -> "5(0)"	[label=DecisionTreeClassifier];
@@ -401,20 +385,12 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"accuracy_score(0)" -> accuracy_score	[label=assignedFrom];
 	"tree_pred(0)$0" -> "X_holdout(0)$0"	[label=predict];
 	"tree_pred(0)$0" -> "tree(0)$1"	[label=predict];
-	"accuracy_score[0]" -> "y_holdout(0)$0"	[label=accuracy_score];
-	"accuracy_score[1]" -> "tree_grid(0)$1"	[label=accuracy_score];
-	"accuracy_score[1]" -> "tree_pred(0)$0"	[label=accuracy_score];
-	"accuracy_score[1]" -> "knn_pred(0)$0"	[label=accuracy_score];
-	"accuracy_score[1]" -> "knn_grid(0)$1"	[label=accuracy_score];
-	"accuracy_score[1]" -> "forest_grid(0)$1"	[label=accuracy_score];
+	"accuracy_score[145/0]" -> "y_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[145/0]" -> "tree_pred(0)$0"	[label=accuracy_score];
 	"knn_pred(0)$0" -> "X_holdout_scaled(0)$0"	[label=predict];
 	"knn_pred(0)$0" -> "knn(0)$1"	[label=predict];
-	"knn_grid(0)$1" -> "X_train(0)$1"	[label=fit];
-	"knn_grid(0)$1" -> "y_train(0)$1"	[label=fit];
-	"knn_grid(0)$1" -> "knn_grid(0)$0"	[label=fit];
-	"forest_grid(0)$1" -> "X_train(0)$1"	[label=fit];
-	"forest_grid(0)$1" -> "y_train(0)$1"	[label=fit];
-	"forest_grid(0)$1" -> "forest_grid(0)$0"	[label=fit];
+	"accuracy_score[147/0]" -> "y_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[147/0]" -> "knn_pred(0)$0"	[label=accuracy_score];
 	GridSearchCV -> "sklearn.model_selection"	[label=importedBy];
 	"GridSearchCV(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"GridSearchCV(0)" -> GridSearchCV	[label=assignedFrom];
@@ -438,13 +414,22 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"tree_grid(0)$0" -> "tree_params(0)$0"	[label=GridSearchCV];
 	"tree_grid(0)$0" -> "True(0)"	[label=GridSearchCV];
 	"True(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"accuracy_score[2]" -> "X_holdout(0)$0"	[label=accuracy_score];
+	"tree_grid(0)$1" -> "X_train(0)$1"	[label=fit];
+	"tree_grid(0)$1" -> "y_train(0)$1"	[label=fit];
+	"tree_grid(0)$1" -> "tree_grid(0)$0"	[label=fit];
+	"accuracy_score[160/0]" -> "X_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[160/0]" -> "y_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[160/0]" -> "tree_grid(0)$1"	[label=accuracy_score];
+	"tree_graph_to_png[161/0]" -> "df(0)$5"	[label=tree_graph_to_png];
+	"tree_graph_to_png[161/0]" -> "tree_grid(0)$1"	[label=tree_graph_to_png];
+	"tree_graph_to_png[161/0]" -> "topic3_decision_tree4.png(0)"	[label=tree_graph_to_png];
+	"topic3_decision_tree4.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"sklearn.pipeline" -> "topic-3-decision-trees-and-knn.ipynb"	[label=importedBy];
 	Pipeline -> "sklearn.pipeline"	[label=importedBy];
 	"Pipeline(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"Pipeline(0)" -> Pipeline	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12fe97820>, <_ast.Tuple object at 0x12fe978e0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"knn_pipe(0)$0" -> "[<_ast.Tuple object at 0x12fe97820>, <_ast.Tuple object at 0x12fe978e0>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd5008214f0>, <_ast.Tuple object at 0x7fd5008215b0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"knn_pipe(0)$0" -> "[<_ast.Tuple object at 0x7fd5008214f0>, <_ast.Tuple object at 0x7fd5008215b0>](0)"	[label=Pipeline];
 	"knn__n_neighbors(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"knn_params(0)$0" -> "1(0)"	[label=assignedFrom];
 	"knn_params(0)$0" -> "range(0)"	[label=assignedFrom];
@@ -455,6 +440,12 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"knn_grid(0)$0" -> "True(0)"	[label=GridSearchCV];
 	"knn_grid(0)$0" -> "knn_pipe(0)$0"	[label=GridSearchCV];
 	"knn_grid(0)$0" -> "knn_params(0)$0"	[label=GridSearchCV];
+	"knn_grid(0)$1" -> "X_train(0)$1"	[label=fit];
+	"knn_grid(0)$1" -> "y_train(0)$1"	[label=fit];
+	"knn_grid(0)$1" -> "knn_grid(0)$0"	[label=fit];
+	"accuracy_score[175/0]" -> "X_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[175/0]" -> "y_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[175/0]" -> "knn_grid(0)$1"	[label=accuracy_score];
 	"sklearn.ensemble" -> "topic-3-decision-trees-and-knn.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
@@ -462,25 +453,12 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"forest(0)$0" -> "1(0)"	[label=RandomForestClassifier];
 	"forest(0)$0" -> "17(0)"	[label=RandomForestClassifier];
 	"forest(0)$0" -> "100(0)"	[label=RandomForestClassifier];
-	"print[0]" -> "np(0)$0"	[label=print];
-	"print[0]" -> "Decision tree. CV: {}, holdout: {}(0)"	[label=print];
-	"Decision tree. CV: {}, holdout: {}(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"print[1]" -> "cross_val_score(0)"	[label=print];
-	"print[1]" -> "tree_cv_score(0)$0"	[label=print];
-	"tree_cv_score(0)$0" -> "5(0)"	[label=mean];
-	"tree_cv_score(0)$0" -> "cross_val_score(0)"	[label=mean];
-	"tree_cv_score(0)$0" -> "np(0)$2"	[label=mean];
-	"tree_cv_score(0)$0" -> "X_train(0)$3"	[label=mean];
-	"tree_cv_score(0)$0" -> "y_train(0)$3"	[label=mean];
-	"tree_cv_score(0)$0" -> "tree(0)$5"	[label=mean];
-	"print[2]" -> "forest(0)$0"	[label=print];
-	"print[2]" -> "tree_holdout_score(0)$0"	[label=print];
-	"tree_holdout_score(0)$0" -> "X_holdout(0)$2"	[label=accuracy_score];
-	"tree_holdout_score(0)$0" -> "y_holdout(0)$2"	[label=accuracy_score];
-	"tree_holdout_score(0)$0" -> "tree(0)$6"	[label=accuracy_score];
-	"print[3]" -> "X_train(0)$1"	[label=print];
-	"print[4]" -> "y_train(0)$1"	[label=print];
-	"print[5]" -> "5(0)"	[label=print];
+	"print[180/0]" -> "np(0)$0"	[label=print];
+	"print[180/0]" -> "5(0)"	[label=print];
+	"print[180/0]" -> "X_train(0)$1"	[label=print];
+	"print[180/0]" -> "y_train(0)$1"	[label=print];
+	"print[180/0]" -> "cross_val_score(0)"	[label=print];
+	"print[180/0]" -> "forest(0)$0"	[label=print];
 	"forest_params(0)$0" -> "4(0)"	[label=assignedFrom];
 	"forest_params(0)$0" -> "range(0)"	[label=assignedFrom];
 	"forest_params(0)$0" -> "max_depth(0)"	[label=assignedFrom];
@@ -495,6 +473,12 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"forest_grid(0)$0" -> "True(0)"	[label=GridSearchCV];
 	"forest_grid(0)$0" -> "forest(0)$0"	[label=GridSearchCV];
 	"forest_grid(0)$0" -> "forest_params(0)$0"	[label=GridSearchCV];
+	"forest_grid(0)$1" -> "X_train(0)$1"	[label=fit];
+	"forest_grid(0)$1" -> "y_train(0)$1"	[label=fit];
+	"forest_grid(0)$1" -> "forest_grid(0)$0"	[label=fit];
+	"accuracy_score[190/0]" -> "X_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[190/0]" -> "y_holdout(0)$0"	[label=accuracy_score];
+	"accuracy_score[190/0]" -> "forest_grid(0)$1"	[label=accuracy_score];
 	"n(5)" -> "form_linearly_separable_data[0]"	[label=_argToVar];
 	"x1_min(5)" -> "form_linearly_separable_data[1]"	[label=_argToVar];
 	"x1_max(5)" -> "form_linearly_separable_data[2]"	[label=_argToVar];
@@ -511,7 +495,7 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"x2(5)$0" -> "x2_max(5)"	[label=randint];
 	"x2(5)$0" -> "np(5)"	[label=randint];
 	"data(5)$1" -> "data(5)$0"	[label=append];
-	"data(5)$1" -> "[<_ast.Name object at 0x12f89edc0>, <_ast.Name object at 0x12f89edf0>](5)"	[label=append];
+	"data(5)$1" -> "[<_ast.Name object at 0x7fd500810ac0>, <_ast.Name object at 0x7fd500810af0>](5)"	[label=append];
 	"target(5)$1" -> "target(5)$0"	[label=append];
 	"target(5)$1" -> "x1(5)$0"	[label=append];
 	"target(5)$1" -> "np(5)"	[label=append];
@@ -521,6 +505,10 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"plt(0)$22" -> "plt(0)$21"	[label=scatter];
 	"plt(0)$22" -> "X(0)"	[label=scatter];
 	"X(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"tree(0)$2" -> "17(0)"	[label=fit];
+	"tree(0)$2" -> "DecisionTreeClassifier(0)"	[label=fit];
+	"tree(0)$2" -> "y(0)$0"	[label=fit];
+	"tree(0)$2" -> "X(0)"	[label=fit];
 	"xx(0)$2" -> "X(0)"	[label=get_grid];
 	"yy(0)$1" -> "X(0)"	[label=get_grid];
 	"predicted(0)$1" -> "np(0)$0"	[label=reshape];
@@ -538,6 +526,11 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"plt(0)$25" -> "plt(0)$24"	[label=title];
 	"plt(0)$25" -> "Easy task. Decision tree compexifies everything(0)"	[label=title];
 	"Easy task. Decision tree compexifies everything(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"tree_graph_to_png[213/0]" -> "tree(0)$2"	[label=tree_graph_to_png];
+	"tree_graph_to_png[213/0]" -> "[<_ast.Constant object at 0x7fd500822a90>, <_ast.Constant object at 0x7fd500822ac0>](0)"	[label=tree_graph_to_png];
+	"tree_graph_to_png[213/0]" -> "topic3_decision_tree5.png(0)"	[label=tree_graph_to_png];
+	"[<_ast.Constant object at 0x7fd500822a90>, <_ast.Constant object at 0x7fd500822ac0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"topic3_decision_tree5.png(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"knn(0)$2" -> "1(0)"	[label=fit];
 	"knn(0)$2" -> "y(0)$0"	[label=fit];
 	"knn(0)$2" -> "KNeighborsClassifier(0)"	[label=fit];
@@ -566,8 +559,8 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"X(0)$0" -> "data(0)$1"	[label=assignedFrom];
 	"y(0)$1" -> "data(0)$1"	[label=assignedFrom];
 	"X(0)$1" -> "X(0)$0"	[label=reshape];
-	"X(0)$1" -> "[<_ast.Constant object at 0x12f8a1670>, <_ast.Constant object at 0x12f8a16a0>](0)"	[label=reshape];
-	"[<_ast.Constant object at 0x12f8a1670>, <_ast.Constant object at 0x12f8a16a0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"X(0)$1" -> "[<_ast.Constant object at 0x7fd500836370>, <_ast.Constant object at 0x7fd5008363a0>](0)"	[label=reshape];
+	"[<_ast.Constant object at 0x7fd500836370>, <_ast.Constant object at 0x7fd5008363a0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"f(0)$0" -> "1(0)"	[label=subplots];
 	"f(0)$0" -> "4(0)"	[label=subplots];
 	"f(0)$0" -> "True(0)"	[label=subplots];
@@ -587,8 +580,8 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"axes(0)$1" -> "X(0)$1"	[label=imshow];
 	"axes(0)$1" -> "axes(0)$0"	[label=imshow];
 	"axes(0)$1" -> "i(0)"	[label=imshow];
-	"axes(0)$1" -> "[<_ast.Constant object at 0x12f8a1f70>, <_ast.Constant object at 0x12f8a1fa0>](0)"	[label=imshow];
-	"[<_ast.Constant object at 0x12f8a1f70>, <_ast.Constant object at 0x12f8a1fa0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"axes(0)$1" -> "[<_ast.Constant object at 0x7fd500836be0>, <_ast.Constant object at 0x7fd500836c10>](0)"	[label=imshow];
+	"[<_ast.Constant object at 0x7fd500836be0>, <_ast.Constant object at 0x7fd500836c10>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"X_train(0)$2" -> "17(0)"	[label=train_test_split];
 	"X_train(0)$2" -> "0.3(0)"	[label=train_test_split];
 	"X_train(0)$2" -> "y(0)$1"	[label=train_test_split];
@@ -607,8 +600,8 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"y_holdout(0)$1" -> "X(0)$1"	[label=train_test_split];
 	"tree(0)$3" -> "17(0)"	[label=DecisionTreeClassifier];
 	"tree(0)$3" -> "5(0)"	[label=DecisionTreeClassifier];
-	"[<_ast.Tuple object at 0x12f8a2610>, <_ast.Tuple object at 0x12f8a26d0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"knn_pipe(0)$1" -> "[<_ast.Tuple object at 0x12f8a2610>, <_ast.Tuple object at 0x12f8a26d0>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd50082d310>, <_ast.Tuple object at 0x7fd50082d3d0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"knn_pipe(0)$1" -> "[<_ast.Tuple object at 0x7fd50082d310>, <_ast.Tuple object at 0x7fd50082d3d0>](0)"	[label=Pipeline];
 	"tree(0)$4" -> "X_train(0)$2"	[label=fit];
 	"tree(0)$4" -> "y_train(0)$2"	[label=fit];
 	"tree(0)$4" -> "tree(0)$3"	[label=fit];
@@ -621,20 +614,20 @@ object at 0x12f9a3eb0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=app
 	"knn_pred(0)$1" -> "knn_pipe(0)$2"	[label=predict];
 	"tree_params(0)$1" -> "max_depth(0)"	[label=assignedFrom];
 	"tree_params(0)$1" -> "max_features(0)"	[label=assignedFrom];
-	"tree_params(0)$1" -> "[<_ast.Constant object at 0x12f87a070>, <_ast.Constant object at 0x12f87a0a0>, <_ast.Constant object at 0x12f87a0d0>, <_ast.Constant \
-object at 0x12f87a100>, <_ast.Constant object at 0x12f87a130>, <_ast.Constant object at 0x12f87a190>, <_ast.Constant object at 0x12f87a220>, <_\
-ast.Constant object at 0x12f87a250>, <_ast.Constant object at 0x12f87a280>, <_ast.Constant object at 0x12f87a2b0>, <_ast.Constant \
-object at 0x12f87a2e0>](0)"	[label=assignedFrom];
-	"tree_params(0)$1" -> "[<_ast.Constant object at 0x12f87a340>, <_ast.Constant object at 0x12f87a3a0>, <_ast.Constant object at 0x12f87a3d0>, <_ast.Constant \
-object at 0x12f87a370>, <_ast.Constant object at 0x12f87a400>, <_ast.Constant object at 0x12f87a430>, <_ast.Constant object at 0x12f87a460>, <_\
-ast.Constant object at 0x12f87a490>, <_ast.Constant object at 0x12f87a4c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f87a070>, <_ast.Constant object at 0x12f87a0a0>, <_ast.Constant object at 0x12f87a0d0>, <_ast.Constant \
-object at 0x12f87a100>, <_ast.Constant object at 0x12f87a130>, <_ast.Constant object at 0x12f87a190>, <_ast.Constant object at 0x12f87a220>, <_\
-ast.Constant object at 0x12f87a250>, <_ast.Constant object at 0x12f87a280>, <_ast.Constant object at 0x12f87a2b0>, <_ast.Constant \
-object at 0x12f87a2e0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f87a340>, <_ast.Constant object at 0x12f87a3a0>, <_ast.Constant object at 0x12f87a3d0>, <_ast.Constant \
-object at 0x12f87a370>, <_ast.Constant object at 0x12f87a400>, <_ast.Constant object at 0x12f87a430>, <_ast.Constant object at 0x12f87a460>, <_\
-ast.Constant object at 0x12f87a490>, <_ast.Constant object at 0x12f87a4c0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"tree_params(0)$1" -> "[<_ast.Constant object at 0x7fd50082dd30>, <_ast.Constant object at 0x7fd50082dd60>, <_ast.Constant object at 0x7fd50082dd90>, <_\
+ast.Constant object at 0x7fd50082ddc0>, <_ast.Constant object at 0x7fd50082ddf0>, <_ast.Constant object at 0x7fd50082de20>, <_ast.Constant \
+object at 0x7fd50082de50>, <_ast.Constant object at 0x7fd50082de80>, <_ast.Constant object at 0x7fd50082deb0>, <_ast.Constant object \
+at 0x7fd50082dee0>, <_ast.Constant object at 0x7fd50082df10>](0)"	[label=assignedFrom];
+	"tree_params(0)$1" -> "[<_ast.Constant object at 0x7fd50082df70>, <_ast.Constant object at 0x7fd50082dfa0>, <_ast.Constant object at 0x7fd50082dfd0>, <_\
+ast.Constant object at 0x7fd500839040>, <_ast.Constant object at 0x7fd5008390a0>, <_ast.Constant object at 0x7fd5008390d0>, <_ast.Constant \
+object at 0x7fd500839070>, <_ast.Constant object at 0x7fd500839100>, <_ast.Constant object at 0x7fd500839130>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082dd30>, <_ast.Constant object at 0x7fd50082dd60>, <_ast.Constant object at 0x7fd50082dd90>, <_\
+ast.Constant object at 0x7fd50082ddc0>, <_ast.Constant object at 0x7fd50082ddf0>, <_ast.Constant object at 0x7fd50082de20>, <_ast.Constant \
+object at 0x7fd50082de50>, <_ast.Constant object at 0x7fd50082de80>, <_ast.Constant object at 0x7fd50082deb0>, <_ast.Constant object \
+at 0x7fd50082dee0>, <_ast.Constant object at 0x7fd50082df10>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082df70>, <_ast.Constant object at 0x7fd50082dfa0>, <_ast.Constant object at 0x7fd50082dfd0>, <_\
+ast.Constant object at 0x7fd500839040>, <_ast.Constant object at 0x7fd5008390a0>, <_ast.Constant object at 0x7fd5008390d0>, <_ast.Constant \
+object at 0x7fd500839070>, <_ast.Constant object at 0x7fd500839100>, <_ast.Constant object at 0x7fd500839130>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"tree_grid(0)$2" -> "1(0)"	[label=GridSearchCV];
 	"tree_grid(0)$2" -> "5(0)"	[label=GridSearchCV];
 	"tree_grid(0)$2" -> "True(0)"	[label=GridSearchCV];
@@ -664,11 +657,11 @@ ast.Constant object at 0x12f87a490>, <_ast.Constant object at 0x12f87a4c0>](0)" 
 	"np(6)$0" -> "np(6)"	[label=assignedFrom];
 	"y(6)$0" -> "n_obj(6)"	[label=choice];
 	"y(6)$0" -> "np(6)$0"	[label=choice];
-	"y(6)$0" -> "[<_ast.UnaryOp object at 0x12f886490>, <_ast.Constant object at 0x12f8864f0>](6)"	[label=choice];
+	"y(6)$0" -> "[<_ast.UnaryOp object at 0x7fd500848160>, <_ast.Constant object at 0x7fd5008481c0>](6)"	[label=choice];
 	"x1(6)$0" -> "y(6)$0"	[label=Mult];
 	"x1(6)$0" -> "0.3(6)"	[label=Mult];
 	"x_other(6)$0" -> "np(6)$0"	[label=random];
-	"x_other(6)$0" -> "[<_ast.Name object at 0x12f886880>, <_ast.BinOp object at 0x12f8868b0>](6)"	[label=random];
+	"x_other(6)$0" -> "[<_ast.Name object at 0x7fd500848220>, <_ast.BinOp object at 0x7fd500848550>](6)"	[label=random];
 	"X_train(0)$3" -> "17(0)"	[label=train_test_split];
 	"X_train(0)$3" -> "0.3(0)"	[label=train_test_split];
 	"X_train(0)$3" -> "y(0)$1"	[label=train_test_split];
@@ -688,20 +681,20 @@ ast.Constant object at 0x12f87a490>, <_ast.Constant object at 0x12f87a4c0>](0)" 
 	"[](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"cv_scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"holdout_scores(0)$0" -> "[](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88f2b0>, <_ast.Constant object at 0x12f88f310>, <_ast.Constant object at 0x12f88f340>, <_ast.Constant \
-object at 0x12f88f2e0>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500848e80>, <_ast.Constant object at 0x7fd5008486d0>, <_ast.Constant object at 0x7fd500848880>, <_\
+ast.Constant object at 0x7fd500868040>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"n_neighb(0)$0" -> "50(0)"	[label=Add];
 	"n_neighb(0)$0" -> "range(0)"	[label=Add];
-	"n_neighb(0)$0" -> "[<_ast.Constant object at 0x12f88f2b0>, <_ast.Constant object at 0x12f88f310>, <_ast.Constant object at 0x12f88f340>, <_ast.Constant \
-object at 0x12f88f2e0>](0)"	[label=Add];
+	"n_neighb(0)$0" -> "[<_ast.Constant object at 0x7fd500848e80>, <_ast.Constant object at 0x7fd5008486d0>, <_ast.Constant object at 0x7fd500848880>, <_\
+ast.Constant object at 0x7fd500868040>](0)"	[label=Add];
 	"n_neighb(0)$0" -> "list(0)"	[label=Add];
 	"n_neighb(0)$0" -> "550(0)"	[label=Add];
 	"list(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"550(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"k(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
 	"k(0)" -> "n_neighb(0)$0"	[label=iteratorOf];
-	"[<_ast.Tuple object at 0x12f88f640>, <_ast.Tuple object at 0x12f88f700>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
-	"knn_pipe(0)$3" -> "[<_ast.Tuple object at 0x12f88f640>, <_ast.Tuple object at 0x12f88f700>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd500868340>, <_ast.Tuple object at 0x7fd500868400>](0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"knn_pipe(0)$3" -> "[<_ast.Tuple object at 0x7fd500868340>, <_ast.Tuple object at 0x7fd500868400>](0)"	[label=Pipeline];
 	"cv_scores(0)$1" -> "5(0)"	[label=append];
 	"cv_scores(0)$1" -> "cross_val_score(0)"	[label=append];
 	"cv_scores(0)$1" -> "np(0)$2"	[label=append];
@@ -729,7 +722,20 @@ object at 0x12f88f2e0>](0)"	[label=Add];
 	"plt(0)$32" -> "plt(0)$31"	[label=legend];
 	"tree(0)$5" -> "1(0)"	[label=DecisionTreeClassifier];
 	"tree(0)$5" -> "17(0)"	[label=DecisionTreeClassifier];
+	"tree_cv_score(0)$0" -> "5(0)"	[label=mean];
+	"tree_cv_score(0)$0" -> "cross_val_score(0)"	[label=mean];
+	"tree_cv_score(0)$0" -> "np(0)$2"	[label=mean];
+	"tree_cv_score(0)$0" -> "X_train(0)$3"	[label=mean];
+	"tree_cv_score(0)$0" -> "y_train(0)$3"	[label=mean];
+	"tree_cv_score(0)$0" -> "tree(0)$5"	[label=mean];
 	"tree(0)$6" -> "X_train(0)$3"	[label=fit];
 	"tree(0)$6" -> "y_train(0)$3"	[label=fit];
 	"tree(0)$6" -> "tree(0)$5"	[label=fit];
+	"tree_holdout_score(0)$0" -> "X_holdout(0)$2"	[label=accuracy_score];
+	"tree_holdout_score(0)$0" -> "y_holdout(0)$2"	[label=accuracy_score];
+	"tree_holdout_score(0)$0" -> "tree(0)$6"	[label=accuracy_score];
+	"Decision tree. CV: {}, holdout: {}(0)" -> "topic-3-decision-trees-and-knn.ipynb"	[label=appearsIn];
+	"print[289/0]" -> "tree_cv_score(0)$0"	[label=print];
+	"print[289/0]" -> "tree_holdout_score(0)$0"	[label=print];
+	"print[289/0]" -> "Decision tree. CV: {}, holdout: {}(0)"	[label=print];
 }

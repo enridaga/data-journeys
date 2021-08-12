@@ -83,33 +83,12 @@ digraph "" {
 	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
 	"test_df(0)$0" -> "../input/aptos2019-blindness-detection/test.csv(0)"	[label=read_csv];
 	"../input/aptos2019-blindness-detection/test.csv(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
-	"print[0]" -> "train_df(0)$0"	[label=print];
-	"print[0]" -> "test_df(0)$0"	[label=print];
-	"print[0]" -> "x_train(0)$1"	[label=print];
-	"print[0]" -> "x_test(0)$1"	[label=print];
-	"print[0]" -> "y_train(0)$0"	[label=print];
-	"print[0]" -> "Original y_train:(0)"	[label=print];
-	"print[0]" -> "Multilabel version:(0)"	[label=print];
-	"print[0]" -> "val_kappa: (12)"	[label=print];
-	"print[0]" -> "Validation Kappa has improved. Saving model.(12)"	[label=print];
-	"x_train(0)$1" -> "x_train(0)$0"	[label=preprocess_image];
-	"x_train(0)$1" -> "image_id(0)"	[label=preprocess_image];
-	"x_train(0)$1" -> "../input/aptos2019-blindness-detection/train_images/(0)"	[label=preprocess_image];
-	"x_train(0)$1" -> ".png(0)"	[label=preprocess_image];
-	"x_test(0)$1" -> "image_id(0)"	[label=preprocess_image];
-	"x_test(0)$1" -> ".png(0)"	[label=preprocess_image];
-	"x_test(0)$1" -> "x_test(0)$0"	[label=preprocess_image];
-	"x_test(0)$1" -> "../input/aptos2019-blindness-detection/test_images/(0)"	[label=preprocess_image];
-	"y_train(0)$0" -> "pd(0)"	[label=assignedFrom];
-	"y_train(0)$0" -> "train_df(0)$3"	[label=assignedFrom];
-	"y_train(0)$0" -> "diagnosis(0)"	[label=assignedFrom];
-	"Original y_train:(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
-	"Multilabel version:(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"print[28/0]" -> "train_df(0)$0"	[label=print];
+	"print[29/0]" -> "test_df(0)$0"	[label=print];
 	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
 	"train_df(0)$2" -> "train_df(0)$1"	[label=hist];
 	"train_df(0)$3" -> "train_df(0)$2"	[label=value_counts];
 	"df(1)" -> "display_samples[0]"	[label=_argToVar];
-	"display_samples[0]" -> "train_df(0)$3"	[label=display_samples];
 	"columns(1)" -> "display_samples[1]"	[label=_argToVar];
 	"rows(1)" -> "display_samples[2]"	[label=_argToVar];
 	"fig(1)$0" -> "columns(1)"	[label=figure];
@@ -142,6 +121,7 @@ digraph "" {
 	"plt(1)$1" -> "img(1)$1"	[label=imshow];
 	"plt(1)$1" -> "plt(1)$0"	[label=imshow];
 	"plt(1)$2" -> "plt(1)$1"	[label=tight_layout];
+	"display_samples[48/0]" -> "train_df(0)$3"	[label=display_samples];
 	"im(2)" -> "get_pad_width[0]"	[label=_argToVar];
 	"new_shape(2)" -> "get_pad_width[1]"	[label=_argToVar];
 	"is_rgb(2)" -> "get_pad_width[2]"	[label=_argToVar];
@@ -211,6 +191,10 @@ digraph "" {
 	"image_id(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"image_id(0)" -> "id_code(0)"	[label=iteratorOf];
 	"../input/aptos2019-blindness-detection/train_images/(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"x_train(0)$1" -> "x_train(0)$0"	[label=preprocess_image];
+	"x_train(0)$1" -> "image_id(0)"	[label=preprocess_image];
+	"x_train(0)$1" -> "../input/aptos2019-blindness-detection/train_images/(0)"	[label=preprocess_image];
+	"x_train(0)$1" -> ".png(0)"	[label=preprocess_image];
 	".png(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
 	"N(0)$1" -> "test_df(0)$0"	[label=assignedFrom];
 	"N(0)$1" -> "0(0)"	[label=assignedFrom];
@@ -219,7 +203,17 @@ digraph "" {
 	"x_test(0)$0" -> "3(0)"	[label=empty];
 	"x_test(0)$0" -> "N(0)$1"	[label=empty];
 	"../input/aptos2019-blindness-detection/test_images/(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"x_test(0)$1" -> "image_id(0)"	[label=preprocess_image];
+	"x_test(0)$1" -> ".png(0)"	[label=preprocess_image];
+	"x_test(0)$1" -> "x_test(0)$0"	[label=preprocess_image];
+	"x_test(0)$1" -> "../input/aptos2019-blindness-detection/test_images/(0)"	[label=preprocess_image];
+	"y_train(0)$0" -> "pd(0)"	[label=assignedFrom];
+	"y_train(0)$0" -> "train_df(0)$3"	[label=assignedFrom];
+	"y_train(0)$0" -> "diagnosis(0)"	[label=assignedFrom];
 	"diagnosis(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"print[80/0]" -> "x_train(0)$1"	[label=print];
+	"print[81/0]" -> "y_train(0)$0"	[label=print];
+	"print[82/0]" -> "x_test(0)$1"	[label=print];
 	"y_train_multi(0)$0" -> "np(0)$0"	[label=empty];
 	"y_train_multi(0)$0" -> "y_train(0)$0"	[label=empty];
 	"y_train_multi(0)$1" -> "y_train(0)$0"	[label=assignedFrom];
@@ -227,19 +221,19 @@ digraph "" {
 	"y_train_multi(0)$1" -> "4(0)"	[label=assignedFrom];
 	"4(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
 	"y_train_multi(0)$2" -> "np(0)$0"	[label=logical_or];
-	"y_train_multi(0)$2" -> "y_train(0)$0"	[label=logical_or];
 	"y_train_multi(0)$2" -> "i(0)"	[label=logical_or];
 	"y_train_multi(0)$2" -> "1(0)"	[label=logical_or];
+	"y_train_multi(0)$2" -> "y_train(0)$0"	[label=logical_or];
 	"y_train_multi(0)$2" -> "y_train_multi(0)$1"	[label=logical_or];
 	"y_train_multi(0)$2" -> "y_train_multi(0)$2"	[label=logical_or];
-	"print[1]" -> "y_train(0)$0"	[label=print];
-	"print[1]" -> "y_train_multi(0)$2"	[label=print];
-	"print[1]" -> "_val_kappa(12)$0"	[label=print];
-	"_val_kappa(12)$0" -> "y_val(12)$1"	[label=cohen_kappa_score];
-	"_val_kappa(12)$0" -> "y_pred(12)$1"	[label=cohen_kappa_score];
-	"_val_kappa(12)$0" -> "quadratic(12)"	[label=cohen_kappa_score];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> ".4f(12)"	[label=print];
+	"Original y_train:(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"print[89/0]" -> "0(0)"	[label=print];
+	"print[89/0]" -> "y_train(0)$0"	[label=print];
+	"print[89/0]" -> "Original y_train:(0)"	[label=print];
+	"Multilabel version:(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"print[90/0]" -> "0(0)"	[label=print];
+	"print[90/0]" -> "y_train_multi(0)$2"	[label=print];
+	"print[90/0]" -> "Multilabel version:(0)"	[label=print];
 	"x_train(0)$2" -> "2019(0)"	[label=train_test_split];
 	"x_train(0)$2" -> "x_train(0)$1"	[label=train_test_split];
 	"x_train(0)$2" -> "y_train_multi(0)$2"	[label=train_test_split];
@@ -370,19 +364,19 @@ digraph "" {
 	"mixup_generator(0)$0" -> "0.2(0)"	[label=assignedFrom];
 	"0.2(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
 	"true_labels(0)$0" -> "np(0)$0"	[label=array];
-	"true_labels(0)$0" -> "[<_ast.Constant object at 0x12fadf040>, <_ast.Constant object at 0x12fadf070>, <_ast.Constant object at 0x12fadf0a0>, <_ast.Constant \
-object at 0x12fadf0d0>, <_ast.Constant object at 0x12fadf100>, <_ast.Constant object at 0x12fadf130>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12fadf040>, <_ast.Constant object at 0x12fadf070>, <_ast.Constant object at 0x12fadf0a0>, <_ast.Constant \
-object at 0x12fadf0d0>, <_ast.Constant object at 0x12fadf100>, <_ast.Constant object at 0x12fadf130>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"true_labels(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abd00>, <_\
+ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant object at 0x7fd4902ab8b0>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd4902ab490>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902abd00>, <_\
+ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant object at 0x7fd4902ab8b0>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
 	"pred_labels(0)$0" -> "np(0)$0"	[label=array];
-	"pred_labels(0)$0" -> "[<_ast.Constant object at 0x12fadf2b0>, <_ast.Constant object at 0x12fadf2e0>, <_ast.Constant object at 0x12fadf310>, <_ast.Constant \
-object at 0x12fadf340>, <_ast.Constant object at 0x12fadf370>, <_ast.Constant object at 0x12fadf3a0>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12fadf2b0>, <_ast.Constant object at 0x12fadf2e0>, <_ast.Constant object at 0x12fadf310>, <_ast.Constant \
-object at 0x12fadf340>, <_ast.Constant object at 0x12fadf370>, <_ast.Constant object at 0x12fadf3a0>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
-	"accuracy_score[0]" -> "true_labels(0)$0"	[label=accuracy_score];
-	"accuracy_score[1]" -> "pred_labels(0)$0"	[label=accuracy_score];
-	"cohen_kappa_score[0]" -> "true_labels(0)$0"	[label=cohen_kappa_score];
-	"cohen_kappa_score[1]" -> "pred_labels(0)$0"	[label=cohen_kappa_score];
+	"pred_labels(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902abd90>, <_\
+ast.Constant object at 0x7fd4c04a8040>, <_ast.Constant object at 0x7fd4c04a8070>, <_ast.Constant object at 0x7fd4c04a80a0>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902abd90>, <_\
+ast.Constant object at 0x7fd4c04a8040>, <_ast.Constant object at 0x7fd4c04a8070>, <_ast.Constant object at 0x7fd4c04a80a0>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"accuracy_score[171/0]" -> "true_labels(0)$0"	[label=accuracy_score];
+	"accuracy_score[171/0]" -> "pred_labels(0)$0"	[label=accuracy_score];
+	"cohen_kappa_score[172/0]" -> "true_labels(0)$0"	[label=cohen_kappa_score];
+	"cohen_kappa_score[172/0]" -> "pred_labels(0)$0"	[label=cohen_kappa_score];
 	"self(11)" -> "on_train_begin[0]"	[label=_argToVar];
 	"logs(11)" -> "on_train_begin[1]"	[label=_argToVar];
 	"self(11)$0" -> "self(11)"	[label=assignedFrom];
@@ -402,8 +396,15 @@ object at 0x12fadf340>, <_ast.Constant object at 0x12fadf370>, <_ast.Constant ob
 	"y_pred(12)$1" -> "1(12)"	[label=Sub];
 	"y_pred(12)$1" -> "y_pred(12)$0"	[label=Sub];
 	"y_pred(12)$1" -> "int(12)"	[label=Sub];
-	"self(12)$0" -> "_val_kappa(12)$0"	[label=append];
+	"_val_kappa(12)$0" -> "y_val(12)$1"	[label=cohen_kappa_score];
+	"_val_kappa(12)$0" -> "y_pred(12)$1"	[label=cohen_kappa_score];
+	"_val_kappa(12)$0" -> "quadratic(12)"	[label=cohen_kappa_score];
 	"self(12)$0" -> "self(12)"	[label=append];
+	"self(12)$0" -> "_val_kappa(12)$0"	[label=append];
+	"print[192/8]" -> "_val_kappa(12)$0"	[label=print];
+	"print[192/8]" -> "val_kappa: (12)"	[label=print];
+	"print[192/8]" -> ".4f(12)"	[label=print];
+	"print[195/12]" -> "Validation Kappa has improved. Saving model.(12)"	[label=print];
 	"self(12)$1" -> "self(12)$0"	[label=save];
 	"self(12)$1" -> "model.h5(12)"	[label=save];
 	"../input/densenet-keras/DenseNet-BC-121-32-no-top.h5(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
@@ -434,9 +435,9 @@ object at 0x12fadf340>, <_ast.Constant object at 0x12fadf370>, <_ast.Constant ob
 	"history(0)$0" -> "data_generator(0)$0"	[label=fit_generator];
 	"history(0)$0" -> "model(0)$0"	[label=fit_generator];
 	"history(0)$0" -> "15(0)"	[label=fit_generator];
-	"history(0)$0" -> "[<_ast.Name object at 0x12faef160>](0)"	[label=fit_generator];
+	"history(0)$0" -> "[<_ast.Name object at 0x7fd4c096ae20>](0)"	[label=fit_generator];
 	"15(0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12faef160>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c096ae20>](0)" -> "aptos-2019-densenet-keras-starter.ipynb"	[label=appearsIn];
 	"json(0)$0" -> "json(0)"	[label=dump];
 	"json(0)$0" -> "history(0)$0"	[label=dump];
 	"json(0)$0" -> "f(0)"	[label=dump];

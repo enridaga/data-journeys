@@ -22,8 +22,7 @@ strict digraph "" {
 	"result(0)$0" -> "100000(0)"	[label=detect];
 	"rawdata(0)" -> "data-cleaning-challenge-inconsistent-data-entry.ipynb"	[label=appearsIn];
 	"100000(0)" -> "data-cleaning-challenge-inconsistent-data-entry.ipynb"	[label=appearsIn];
-	"print[0]" -> "result(0)$0"	[label=print];
-	"print[0]" -> "All done!(1)"	[label=print];
+	"print[18/0]" -> "result(0)$0"	[label=print];
 	"suicide_attacks(0)$0" -> "pd(0)"	[label=read_csv];
 	"suicide_attacks(0)$0" -> "../input/PakistanSuicideAttacks Ver 11 (30-November-2017).csv(0)"	[label=read_csv];
 	"suicide_attacks(0)$0" -> "Windows-1252(0)"	[label=read_csv];
@@ -47,11 +46,8 @@ strict digraph "" {
 	"d.i khan(0)" -> "data-cleaning-challenge-inconsistent-data-entry.ipynb"	[label=appearsIn];
 	"10(0)" -> "data-cleaning-challenge-inconsistent-data-entry.ipynb"	[label=appearsIn];
 	"df(1)" -> "replace_matches_in_column[0]"	[label=_argToVar];
-	"replace_matches_in_column[0]" -> "suicide_attacks(0)$2"	[label=replace_matches_in_column];
 	"column(1)" -> "replace_matches_in_column[1]"	[label=_argToVar];
-	"replace_matches_in_column[1]" -> "City(0)"	[label=replace_matches_in_column];
 	"string_to_match(1)" -> "replace_matches_in_column[2]"	[label=_argToVar];
-	"replace_matches_in_column[2]" -> "d.i khan(0)"	[label=replace_matches_in_column];
 	"min_ratio(1)" -> "replace_matches_in_column[3]"	[label=_argToVar];
 	"strings(1)$0" -> "df(1)"	[label=unique];
 	"strings(1)$0" -> "column(1)"	[label=unique];
@@ -68,6 +64,10 @@ strict digraph "" {
 	"rows_with_matches(1)$0" -> "close_matches(1)$0"	[label=isin];
 	"df(1)$0" -> "df(1)"	[label=assignedFrom];
 	"df(1)$0" -> "string_to_match(1)"	[label=assignedFrom];
+	"print[65/4]" -> "All done!(1)"	[label=print];
+	"replace_matches_in_column[67/0]" -> "City(0)"	[label=replace_matches_in_column];
+	"replace_matches_in_column[67/0]" -> "suicide_attacks(0)$2"	[label=replace_matches_in_column];
+	"replace_matches_in_column[67/0]" -> "d.i khan(0)"	[label=replace_matches_in_column];
 	"cities(0)$4" -> "City(0)"	[label=unique];
 	"cities(0)$4" -> "suicide_attacks(0)$2"	[label=unique];
 	"cities(0)$5" -> "cities(0)$4"	[label=sort];

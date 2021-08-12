@@ -56,21 +56,23 @@ digraph "" {
 	"os(0)$0" -> "os(0)"	[label=listdir];
 	"os(0)$0" -> "../input/data-science-bowl-2019(0)"	[label=listdir];
 	"../input/data-science-bowl-2019(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant \
-object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f970>, <_\
-ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f490>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"keep_cols(0)$0" -> "[<_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f850>, <_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant \
-object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fc4f6a0>, <_ast.Constant object at 0x12fc4fc70>, <_ast.Constant object at 0x12fc4f970>, <_\
-ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant object at 0x12fc4f490>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d8b50>, <_ast.Constant object at 0x7fd4c04d8a90>, <_ast.Constant object at 0x7fd4c04d85b0>, <_\
+ast.Constant object at 0x7fd4c04d8730>, <_ast.Constant object at 0x7fd4c04d8ca0>, <_ast.Constant object at 0x7fd4c04d8d90>, <_ast.Constant \
+object at 0x7fd4c04d80d0>, <_ast.Constant object at 0x7fd4c04d8220>, <_ast.Constant object at 0x7fd4c04d8940>, <_ast.Constant object \
+at 0x7fd4c04d8eb0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"keep_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d8b50>, <_ast.Constant object at 0x7fd4c04d8a90>, <_ast.Constant object at 0x7fd4c04d85b0>, <_\
+ast.Constant object at 0x7fd4c04d8730>, <_ast.Constant object at 0x7fd4c04d8ca0>, <_ast.Constant object at 0x7fd4c04d8d90>, <_ast.Constant \
+object at 0x7fd4c04d80d0>, <_ast.Constant object at 0x7fd4c04d8220>, <_ast.Constant object at 0x7fd4c04d8940>, <_ast.Constant object \
+at 0x7fd4c04d8eb0>](0)"	[label=assignedFrom];
 	"train(0)$0" -> "pd(0)"	[label=read_csv];
 	"train(0)$0" -> "keep_cols(0)$0"	[label=read_csv];
 	"train(0)$0" -> "../input/data-science-bowl-2019/train.csv(0)"	[label=read_csv];
 	"../input/data-science-bowl-2019/train.csv(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"train_labels(0)$0" -> "pd(0)"	[label=read_csv];
 	"train_labels(0)$0" -> "../input/data-science-bowl-2019/train_labels.csv(0)"	[label=read_csv];
-	"train_labels(0)$0" -> "[<_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f4c0>](0)"	[label=read_csv];
+	"train_labels(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d8ee0>, <_ast.Constant object at 0x7fd4c04d8dc0>, <_ast.Constant object at 0x7fd4c04d8c40>](0)"	[label=read_csv];
 	"../input/data-science-bowl-2019/train_labels.csv(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f730>, <_ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f4c0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04d8ee0>, <_ast.Constant object at 0x7fd4c04d8dc0>, <_ast.Constant object at 0x7fd4c04d8c40>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"test(0)$0" -> "pd(0)"	[label=read_csv];
 	"test(0)$0" -> "keep_cols(0)$0"	[label=read_csv];
 	"test(0)$0" -> "../input/data-science-bowl-2019/test.csv(0)"	[label=read_csv];
@@ -112,10 +114,10 @@ ast.Constant object at 0x12fc4f430>, <_ast.Constant object at 0x12fc4fb20>, <_as
 	"df(1)$4" -> "df(1)$3"	[label=assignedFrom];
 	"df(1)$5" -> "timestamp(1)"	[label=assignedFrom];
 	"df(1)$5" -> "df(1)$4"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88aca0>, <_ast.Constant object at 0x12f88a190>, <_ast.Constant object at 0x12f88a3d0>, <_ast.Constant \
-object at 0x12f88aa00>, <_ast.Constant object at 0x12f88a760>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"time_features(0)$0" -> "[<_ast.Constant object at 0x12f88aca0>, <_ast.Constant object at 0x12f88a190>, <_ast.Constant object at 0x12f88a3d0>, <_ast.Constant \
-object at 0x12f88aa00>, <_ast.Constant object at 0x12f88a760>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f03a0>, <_\
+ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0eb0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"time_features(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f03a0>, <_\
+ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0eb0>](0)"	[label=assignedFrom];
 	"df(2)" -> "prepare_data[0]"	[label=_argToVar];
 	"df(2)$0" -> "df(2)"	[label=extract_time_features];
 	"df(2)$1" -> "df(2)$0"	[label=drop];
@@ -123,37 +125,37 @@ object at 0x12f88aa00>, <_ast.Constant object at 0x12f88a760>](0)"	[label=assign
 	"df(2)$1" -> "1(2)"	[label=drop];
 	"join_one(2)$0" -> "df(2)$1"	[label=agg];
 	"join_one(2)$0" -> "pd(2)"	[label=agg];
-	"join_one(2)$0" -> "[<_ast.Constant object at 0x12f88a2b0>, <_ast.Constant object at 0x12f88a700>, <_ast.Constant object at 0x12f88aa30>](2)"	[label=agg];
-	"join_one(2)$0" -> "[<_ast.Constant object at 0x12f88a070>](2)"	[label=agg];
-	"join_one(2)$0" -> "[<_ast.Constant object at 0x12f88a310>, <_ast.Constant object at 0x12f88ab80>](2)"	[label=agg];
+	"join_one(2)$0" -> "[<_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0670>](2)"	[label=agg];
+	"join_one(2)$0" -> "[<_ast.Constant object at 0x7fd5007f0ca0>](2)"	[label=agg];
+	"join_one(2)$0" -> "[<_ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f0fd0>](2)"	[label=agg];
 	"join_one(2)$0" -> "False(2)"	[label=agg];
 	"join_one(2)$0" -> "sum(2)"	[label=agg];
 	"agg(2)$0" -> "sum(2)"	[label=assignedFrom];
 	"agg(2)$0" -> "event_count(2)"	[label=assignedFrom];
 	"agg(2)$0" -> "game_time(2)"	[label=assignedFrom];
 	"agg(2)$0" -> "event_id(2)"	[label=assignedFrom];
-	"agg(2)$0" -> "[<_ast.Constant object at 0x130532d90>, <_ast.Constant object at 0x1305326a0>](2)"	[label=assignedFrom];
+	"agg(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ff7f0>](2)"	[label=assignedFrom];
 	"agg(2)$0" -> "count(2)"	[label=assignedFrom];
 	"join_two(2)$0" -> "df(2)$1"	[label=agg];
 	"join_two(2)$0" -> "1(2)"	[label=agg];
 	"join_two(2)$0" -> "False(2)"	[label=agg];
 	"join_two(2)$0" -> "agg(2)$0"	[label=agg];
 	"join_two(2)$0" -> "time_features(2)"	[label=agg];
-	"join_two(2)$0" -> "[<_ast.Constant object at 0x130532b50>, <_ast.Constant object at 0x130532df0>](2)"	[label=agg];
+	"join_two(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ffd60>, <_ast.Constant object at 0x7fd4c04ff4c0>](2)"	[label=agg];
 	"join_two(2)$1" -> "join_two(2)$0"	[label=assignedFrom];
 	"join_two(2)$1" -> "join_two(2)$1"	[label=assignedFrom];
 	"join_two(2)$1" -> " (2)"	[label=assignedFrom];
 	"join_two(2)$1" -> "col(2)"	[label=assignedFrom];
 	"join_three(2)$0" -> "df(2)$1"	[label=first];
 	"join_three(2)$0" -> "False(2)"	[label=first];
-	"join_three(2)$0" -> "[<_ast.Constant object at 0x1305329a0>, <_ast.Constant object at 0x1305325b0>, <_ast.Constant object at 0x130532b20>, <_ast.Constant \
-object at 0x130532700>, <_ast.Constant object at 0x130532a00>](2)"	[label=first];
-	"join_three(2)$0" -> "[<_ast.Constant object at 0x1305324c0>, <_ast.Constant object at 0x1305321c0>](2)"	[label=first];
+	"join_three(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff100>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_\
+ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04ff6d0>](2)"	[label=first];
+	"join_three(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ff2e0>, <_ast.Constant object at 0x7fd4c04fff70>](2)"	[label=first];
 	"join_four(2)$0" -> "df(2)$1"	[label=applymap];
 	"join_four(2)$0" -> "False(2)"	[label=applymap];
 	"join_four(2)$0" -> "time_features(2)"	[label=applymap];
-	"join_four(2)$0" -> "[<_ast.Constant object at 0x12f8f5e80>, <_ast.Constant object at 0x12f8f5f10>](2)"	[label=applymap];
-	"join_four(2)$0" -> "[<_ast.Constant object at 0x12f8f5610>, <_ast.Constant object at 0x12f8f5130>](2)"	[label=applymap];
+	"join_four(2)$0" -> "[<_ast.Constant object at 0x7fd4c04cc610>, <_ast.Constant object at 0x7fd4c04cc1f0>](2)"	[label=applymap];
+	"join_four(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ccb80>, <_ast.Constant object at 0x7fd4c04cc430>](2)"	[label=applymap];
 	"join_four(2)$0" -> "mode(2)"	[label=applymap];
 	"join_four(2)$0" -> "x(2)"	[label=applymap];
 	"join_four(2)$0" -> "0(2)"	[label=applymap];
@@ -163,8 +165,8 @@ object at 0x130532700>, <_ast.Constant object at 0x130532a00>](2)"	[label=first]
 	"join_five(2)$0" -> "join_two(2)$1"	[label=join];
 	"join_five(2)$0" -> "join_three(2)$0"	[label=join];
 	"join_five(2)$0" -> "join_one(2)$1"	[label=join];
-	"join_five(2)$0" -> "[<_ast.Constant object at 0x12f8f52e0>, <_ast.Constant object at 0x12f8f5d00>](2)"	[label=join];
-	"join_five(2)$0" -> "[<_ast.Constant object at 0x12f8f5670>, <_ast.Constant object at 0x12f8f5e20>](2)"	[label=join];
+	"join_five(2)$0" -> "[<_ast.Constant object at 0x7fd4c04ccd00>, <_ast.Constant object at 0x7fd4c04cc2b0>](2)"	[label=join];
+	"join_five(2)$0" -> "[<_ast.Constant object at 0x7fd4c04cc520>, <_ast.Constant object at 0x7fd4c04cc7f0>](2)"	[label=join];
 	"join_train(0)$0" -> "train(0)$3"	[label=prepare_data];
 	"cols(0)$0" -> "join_train(0)$0"	[label=assignedFrom];
 	"cols(0)$0" -> "2(0)"	[label=assignedFrom];
@@ -193,12 +195,12 @@ object at 0x130532700>, <_ast.Constant object at 0x130532a00>](2)"	[label=first]
 	"cols(0)$4" -> "cols(0)$3"	[label=append];
 	"df(0)$0" -> "installation_id(0)"	[label=agg];
 	"df(0)$0" -> "join_test(0)$1"	[label=agg];
-	"df(0)$0" -> "[<_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant \
-object at 0x12fade370>](0)"	[label=agg];
+	"df(0)$0" -> "[<_ast.Constant object at 0x7fd5008324c0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832100>, <_\
+ast.Constant object at 0x7fd500832d90>](0)"	[label=agg];
 	"df(0)$0" -> "False(0)"	[label=agg];
 	"df(0)$0" -> "mean(0)"	[label=agg];
-	"[<_ast.Constant object at 0x12fade0d0>, <_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fade1f0>, <_ast.Constant \
-object at 0x12fade370>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008324c0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832100>, <_\
+ast.Constant object at 0x7fd500832d90>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"False(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"mean(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"df_two(0)$0" -> "installation_id(0)"	[label=drop];
@@ -213,30 +215,30 @@ object at 0x12fade370>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=a
 	"df_three(0)$0" -> "join_test(0)$1"	[label=drop];
 	"df_three(0)$0" -> "False(0)"	[label=drop];
 	"df_three(0)$0" -> "1(0)"	[label=drop];
-	"df_three(0)$0" -> "[<_ast.Constant object at 0x12f957af0>, <_ast.Constant object at 0x12f957790>, <_ast.Constant object at 0x12f9572b0>, <_ast.Constant \
-object at 0x12f957130>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f957af0>, <_ast.Constant object at 0x12f957790>, <_ast.Constant object at 0x12f9572b0>, <_ast.Constant \
-object at 0x12f957130>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"df_three(0)$0" -> "[<_ast.Constant object at 0x7fd500836730>, <_ast.Constant object at 0x7fd500836c10>, <_ast.Constant object at 0x7fd500836ca0>, <_\
+ast.Constant object at 0x7fd500836f70>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500836730>, <_ast.Constant object at 0x7fd500836c10>, <_ast.Constant object at 0x7fd500836ca0>, <_\
+ast.Constant object at 0x7fd500836f70>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"df_four(0)$0" -> "mode(0)"	[label=applymap];
 	"df_four(0)$0" -> "x(0)$0"	[label=applymap];
 	"df_four(0)$0" -> "installation_id(0)"	[label=applymap];
 	"df_four(0)$0" -> "time_features(0)$0"	[label=applymap];
 	"df_four(0)$0" -> "join_test(0)$1"	[label=applymap];
 	"df_four(0)$0" -> "False(0)"	[label=applymap];
-	"df_four(0)$0" -> "[<_ast.Constant object at 0x12f9579d0>](0)"	[label=applymap];
+	"df_four(0)$0" -> "[<_ast.Constant object at 0x7fd500836340>](0)"	[label=applymap];
 	"df_four(0)$0" -> "0(0)"	[label=applymap];
-	"[<_ast.Constant object at 0x12f9579d0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836340>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"0(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"final_train(0)$0" -> "pd(0)"	[label=drop];
 	"final_train(0)$0" -> "train_labels(0)$0"	[label=drop];
 	"final_train(0)$0" -> "join_train(0)$1"	[label=drop];
 	"final_train(0)$0" -> "1(0)"	[label=drop];
-	"final_train(0)$0" -> "[<_ast.Constant object at 0x12f9160d0>, <_ast.Constant object at 0x12f916100>](0)"	[label=drop];
+	"final_train(0)$0" -> "[<_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant object at 0x7fd50080d130>](0)"	[label=drop];
 	"final_train(0)$0" -> "left(0)"	[label=drop];
-	"final_train(0)$0" -> "[<_ast.Constant object at 0x12f9161f0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f9160d0>, <_ast.Constant object at 0x12f916100>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"final_train(0)$0" -> "[<_ast.Constant object at 0x7fd50080dbe0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant object at 0x7fd50080d130>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"left(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9161f0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080dbe0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"final_test(0)$0" -> "installation_id(0)"	[label=drop];
 	"final_test(0)$0" -> "df(0)$0"	[label=drop];
 	"final_test(0)$0" -> "df_two(0)$0"	[label=drop];
@@ -247,10 +249,10 @@ object at 0x12f957130>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=a
 	"df(0)$1" -> "False(0)"	[label=agg];
 	"df(0)$1" -> "mean(0)"	[label=agg];
 	"df(0)$1" -> "final_train(0)$0"	[label=agg];
-	"df(0)$1" -> "[<_ast.Constant object at 0x12f9167f0>, <_ast.Constant object at 0x12f916970>, <_ast.Constant object at 0x12f9168e0>, <_ast.Constant \
-object at 0x12f916910>](0)"	[label=agg];
-	"[<_ast.Constant object at 0x12f9167f0>, <_ast.Constant object at 0x12f916970>, <_ast.Constant object at 0x12f9168e0>, <_ast.Constant \
-object at 0x12f916910>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"df(0)$1" -> "[<_ast.Constant object at 0x7fd50080da30>, <_ast.Constant object at 0x7fd50080d3a0>, <_ast.Constant object at 0x7fd50080df70>, <_\
+ast.Constant object at 0x7fd50080dbb0>](0)"	[label=agg];
+	"[<_ast.Constant object at 0x7fd50080da30>, <_ast.Constant object at 0x7fd50080d3a0>, <_ast.Constant object at 0x7fd50080df70>, <_\
+ast.Constant object at 0x7fd50080dbb0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"df_two(0)$1" -> "installation_id(0)"	[label=drop];
 	"df_two(0)$1" -> "cols(0)$4"	[label=drop];
 	"df_two(0)$1" -> "False(0)"	[label=drop];
@@ -261,10 +263,10 @@ object at 0x12f916910>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=a
 	"df_three(0)$1" -> "False(0)"	[label=drop];
 	"df_three(0)$1" -> "1(0)"	[label=drop];
 	"df_three(0)$1" -> "final_train(0)$0"	[label=drop];
-	"df_three(0)$1" -> "[<_ast.Constant object at 0x12f9a4370>, <_ast.Constant object at 0x12f9a43a0>, <_ast.Constant object at 0x12f9a43d0>, <_ast.Constant \
-object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f9a4370>, <_ast.Constant object at 0x12f9a43a0>, <_ast.Constant object at 0x12f9a43d0>, <_ast.Constant \
-object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"df_three(0)$1" -> "[<_ast.Constant object at 0x7fd49011b6d0>, <_ast.Constant object at 0x7fd49011ba00>, <_ast.Constant object at 0x7fd49011b9a0>, <_\
+ast.Constant object at 0x7fd49011b9d0>, <_ast.Constant object at 0x7fd49011b070>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd49011b6d0>, <_ast.Constant object at 0x7fd49011ba00>, <_ast.Constant object at 0x7fd49011b9a0>, <_\
+ast.Constant object at 0x7fd49011b9d0>, <_ast.Constant object at 0x7fd49011b070>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"df_four(0)$1" -> "mode(0)"	[label=applymap];
 	"df_four(0)$1" -> "x(0)$0"	[label=applymap];
 	"df_four(0)$1" -> "installation_id(0)"	[label=applymap];
@@ -272,23 +274,22 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"df_four(0)$1" -> "join_train(0)$1"	[label=applymap];
 	"df_four(0)$1" -> "False(0)"	[label=applymap];
 	"df_four(0)$1" -> "0(0)"	[label=applymap];
-	"df_four(0)$1" -> "[<_ast.Constant object at 0x12f9a4970>](0)"	[label=applymap];
-	"[<_ast.Constant object at 0x12f9a4970>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"df_four(0)$1" -> "[<_ast.Constant object at 0x7fd49011bc10>](0)"	[label=applymap];
+	"[<_ast.Constant object at 0x7fd49011bc10>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"final_train(0)$1" -> "installation_id(0)"	[label=drop];
 	"final_train(0)$1" -> "1(0)"	[label=drop];
 	"final_train(0)$1" -> "df(0)$1"	[label=drop];
 	"final_train(0)$1" -> "df_two(0)$1"	[label=drop];
 	"final_train(0)$1" -> "df_three(0)$1"	[label=drop];
 	"final_train(0)$1" -> "df_four(0)$1"	[label=drop];
-	"len[0]" -> "set(0)"	[label=len];
-	"len[1]" -> "final_train(0)$1"	[label=len];
-	"len[2]" -> "set(0)"	[label=len];
-	"len[3]" -> "final_test(0)$0"	[label=len];
+	"len[128/0]" -> "set(0)"	[label=len];
+	"len[128/0]" -> "final_test(0)$0"	[label=len];
+	"len[128/0]" -> "final_train(0)$1"	[label=len];
 	"final(0)$0" -> "pd(0)"	[label=concat];
-	"final(0)$0" -> "[<_ast.Name object at 0x12f9a6610>, <_ast.Name object at 0x12f9a6640>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f9a6610>, <_ast.Name object at 0x12f9a6640>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a6700>, <_ast.Constant object at 0x12f9a6730>, <_ast.Constant object at 0x12f9a6760>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"encoding(0)$0" -> "[<_ast.Constant object at 0x12f9a6700>, <_ast.Constant object at 0x12f9a6730>, <_ast.Constant object at 0x12f9a6760>](0)"	[label=assignedFrom];
+	"final(0)$0" -> "[<_ast.Name object at 0x7fd500999280>, <_ast.Name object at 0x7fd500999b50>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500999280>, <_ast.Name object at 0x7fd500999b50>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009995e0>](0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"encoding(0)$0" -> "[<_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009995e0>](0)"	[label=assignedFrom];
 	"col(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"col(0)" -> "encoding(0)$0"	[label=iteratorOf];
 	"lb(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
@@ -372,7 +373,7 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"xgb_model(3)$0" -> "xgb(3)"	[label=train];
 	"xgb_model(3)$0" -> "xgb_train(3)$0"	[label=train];
 	"xgb_model(3)$0" -> "1000(3)"	[label=train];
-	"xgb_model(3)$0" -> "[<_ast.Tuple object at 0x12fafddf0>, <_ast.Tuple object at 0x12fafde80>](3)"	[label=train];
+	"xgb_model(3)$0" -> "[<_ast.Tuple object at 0x7fd490108ca0>, <_ast.Tuple object at 0x7fd490108c40>](3)"	[label=train];
 	"xgb_model(3)$0" -> "False(3)"	[label=train];
 	"xgb_model(3)$0" -> "20(3)"	[label=train];
 	"val_X(3)$1" -> "xgb(3)"	[label=DMatrix];
@@ -386,15 +387,8 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"score(3)$0" -> "quadratic(3)"	[label=cohen_kappa_score];
 	"scores(3)$1" -> "scores(3)$0"	[label=append];
 	"scores(3)$1" -> "score(3)$0"	[label=append];
-	"print[0]" -> "choen_kappa_score :(3)"	[label=print];
-	"print[0]" -> "Mean score:(3)"	[label=print];
-	"print[0]" -> "Thresh=\%.3f, n=\%d, cohen kappa score: \%.2f\%\%(0)"	[label=print];
-	"Thresh=\%.3f, n=\%d, cohen kappa score: \%.2f\%\%(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"print[1]" -> "np(3)"	[label=print];
-	"print[1]" -> "score(3)$0"	[label=print];
-	"print[1]" -> "thresh(0)"	[label=print];
-	"thresh(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"thresh(0)" -> "threshold(0)$0"	[label=iteratorOf];
+	"print[184/8]" -> "score(3)$0"	[label=print];
+	"print[184/8]" -> "choen_kappa_score :(3)"	[label=print];
 	"pred(3)$0" -> "final_test(3)$0"	[label=predict];
 	"pred(3)$0" -> "xgb_model(3)$0"	[label=predict];
 	"y_pre(3)$1" -> "y_pre(3)$0"	[label=Add];
@@ -402,10 +396,9 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"pred(3)$1" -> "np(3)"	[label=asarray];
 	"pred(3)$1" -> "y_pre(3)$1"	[label=asarray];
 	"pred(3)$1" -> "line(3)"	[label=asarray];
-	"print[2]" -> "scores(3)$1"	[label=print];
-	"print[2]" -> "select_X_train(0)$0"	[label=print];
-	"select_X_train(0)$0" -> "X_train(0)$1"	[label=transform];
-	"select_X_train(0)$0" -> "selection(0)$0"	[label=transform];
+	"print[190/4]" -> "np(3)"	[label=print];
+	"print[190/4]" -> "scores(3)$1"	[label=print];
+	"print[190/4]" -> "Mean score:(3)"	[label=print];
 	"xgb_model(0)$0" -> "final_test(0)$1"	[label=model];
 	"xgb_model(0)$0" -> "X_train(0)$0"	[label=model];
 	"xgb_model(0)$0" -> "y_train(0)$0"	[label=model];
@@ -473,13 +466,17 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"threshold(0)$0" -> "model(0)$0"	[label=assignedFrom];
 	"threshold(0)$0" -> "40(0)"	[label=assignedFrom];
 	"40(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"selection(0)$0" -> "thresh(0)"	[label=SelectFromModel];
+	"thresh(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"thresh(0)" -> "threshold(0)$0"	[label=iteratorOf];
 	"selection(0)$0" -> "model(0)$0"	[label=SelectFromModel];
+	"selection(0)$0" -> "thresh(0)"	[label=SelectFromModel];
 	"selection(0)$0" -> "True(0)"	[label=SelectFromModel];
 	"True(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"select_X_train(0)$0" -> "X_train(0)$1"	[label=transform];
+	"select_X_train(0)$0" -> "selection(0)$0"	[label=transform];
 	"selection_model(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"selection_model(0)$0" -> "select_X_train(0)$0"	[label=fit];
 	"selection_model(0)$0" -> "y_train(0)$1"	[label=fit];
+	"selection_model(0)$0" -> "select_X_train(0)$0"	[label=fit];
 	"selection_model(0)$0" -> "selection_model(0)"	[label=fit];
 	"select_X_test(0)$0" -> "X_test(0)$0"	[label=transform];
 	"select_X_test(0)$0" -> "selection(0)$0"	[label=transform];
@@ -492,8 +489,12 @@ object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>](0)" -> "xgboost-f
 	"value(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
 	"accuracy(0)$0" -> "y_test(0)$0"	[label=cohen_kappa_score];
 	"accuracy(0)$0" -> "predictions(0)$0"	[label=cohen_kappa_score];
-	"print[3]" -> "1(0)"	[label=print];
-	"print[4]" -> "accuracy(0)$0"	[label=print];
+	"Thresh=\%.3f, n=\%d, cohen kappa score: \%.2f\%\%(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
+	"print[223/4]" -> "1(0)"	[label=print];
+	"print[223/4]" -> "thresh(0)"	[label=print];
+	"print[223/4]" -> "select_X_train(0)$0"	[label=print];
+	"print[223/4]" -> "accuracy(0)$0"	[label=print];
+	"print[223/4]" -> "Thresh=\%.3f, n=\%d, cohen kappa score: \%.2f\%\%(0)"	[label=print];
+	"print[223/4]" -> "100.0(0)"	[label=print];
 	"100.0(0)" -> "xgboost-feature-selection-dsbowl.ipynb"	[label=appearsIn];
-	"print[5]" -> "100.0(0)"	[label=print];
 }

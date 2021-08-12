@@ -1,0 +1,172 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#132841899> rdfs:label "pd(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2198676593407731260>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/6949474246229496803> ;
+    dj:concat <http://purl.org/dj/kaggle/renaming-and-combining#132776362>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#3919910899> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#251331202> rdfs:label "left(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-1074880084079628004>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/-662960008027653664> ;
+    dj:join <http://purl.org/dj/kaggle/renaming-and-combining#251265665>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#326238964> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#497091550> rdfs:label "reviews(0)$3" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2540973628000228367> ;
+    dj:rename_axis <http://purl.org/dj/kaggle/renaming-and-combining#284361465>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#497026013> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#1432225591> rdfs:label "british_youtube(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#132776362>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#3997174956> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#1522796401> rdfs:label "canadian_youtube(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#132776362>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#3992325287> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#251265665> rdfs:label "left(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-1074880084079628004> ;
+    dj:set_index <http://purl.org/dj/kaggle/renaming-and-combining#1522796401>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#4283505583> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#284361465> rdfs:label "fields(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#29687986> rdfs:label "0(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#3018526890> rdfs:label "../input/wine-reviews/winemag-data-130k-v2.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#30998711> rdfs:label "5(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#326238964> rdfs:label "right(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-662960008027653664> ;
+    dj:set_index <http://purl.org/dj/kaggle/renaming-and-combining#1432225591>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#4098562901> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#3919910899> rdfs:label "[<_ast.Name object at 0x7fd50080d550>, <_ast.Name object at 0x7fd50080d5b0>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#3992325287> rdfs:label "../input/youtube-new/CAvideos.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#3997174956> rdfs:label "../input/youtube-new/GBvideos.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#4098562901> rdfs:label "[<_ast.Constant object at 0x7fd50080d160>, <_ast.Constant object at 0x7fd50080d640>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#4283505583> rdfs:label "[<_ast.Constant object at 0x7fd50080d8b0>, <_ast.Constant object at 0x7fd50080da00>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#445383666> rdfs:label "max_rows(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:appearsIn k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#496894939> rdfs:label "reviews(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> ;
+    dj:read_csv <http://purl.org/dj/kaggle/renaming-and-combining#132776362>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#29687986>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#3018526890> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#496960476> rdfs:label "reviews(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2540973628000228367> ;
+    dj:rename <http://purl.org/dj/kaggle/renaming-and-combining#496894939> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#497026013> rdfs:label "reviews(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2540973628000228367> ;
+    dj:rename <http://purl.org/dj/kaggle/renaming-and-combining#496960476> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2198676593407731260> ;
+    dj:appearsIn k:renaming-and-combining ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> ;
+    dj:importedBy k:renaming-and-combining .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/-1074880084079628004> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/-662960008027653664> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/-2540973628000228367> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/6949474246229496803> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining#132776362> rdfs:label "pd(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2198676593407731260>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/6949474246229496803> ;
+    dj:set_option <http://purl.org/dj/kaggle/renaming-and-combining#30998711>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#445383666>,
+        <http://purl.org/dj/kaggle/renaming-and-combining#80085334> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/-2198676593407731260> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity k:renaming-and-combining,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/5357797978878855783> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/renaming-and-combining/activity/-2198676593407731260>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863>,
+        <http://purl.org/dj/kaggle/renaming-and-combining/activity/6949474246229496803> .
+
+k:renaming-and-combining a k:Notebook ;
+    rdfs:label "renaming-and-combining.ipynb" .
+
+<http://purl.org/dj/kaggle/renaming-and-combining/activity/3036073468953893863> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:renaming-and-combining .
+

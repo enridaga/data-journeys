@@ -54,15 +54,17 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[2]" -> "filename(0)"	[label=print];
-	"[<_ast.Constant object at 0x12fb00190>, <_ast.Constant object at 0x12fb002b0>, <_ast.Constant object at 0x12fb00370>, <_ast.Constant \
-object at 0x12fb00730>, <_ast.Constant object at 0x12fb00fa0>, <_ast.Constant object at 0x12fb006d0>, <_ast.Constant object at 0x12fb00dc0>, <_\
-ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_ast.Constant object at 0x12fb00d90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12fb00190>, <_ast.Constant object at 0x12fb002b0>, <_ast.Constant object at 0x12fb00370>, <_ast.Constant \
-object at 0x12fb00730>, <_ast.Constant object at 0x12fb00fa0>, <_ast.Constant object at 0x12fb006d0>, <_ast.Constant object at 0x12fb00dc0>, <_\
-ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_ast.Constant object at 0x12fb00d90>](0)"	[label=assignedFrom];
+	"print[30/8]" -> "os(0)"	[label=print];
+	"print[30/8]" -> "dirname(0)"	[label=print];
+	"print[30/8]" -> "filename(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd50080da90>, <_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at 0x7fd50080d3a0>, <_\
+ast.Constant object at 0x7fd50080db50>, <_ast.Constant object at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant \
+object at 0x7fd50080dd30>, <_ast.Constant object at 0x7fd50080d2b0>, <_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object \
+at 0x7fd50080d400>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd50080da90>, <_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at 0x7fd50080d3a0>, <_\
+ast.Constant object at 0x7fd50080db50>, <_ast.Constant object at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080dd90>, <_ast.Constant \
+object at 0x7fd50080dd30>, <_ast.Constant object at 0x7fd50080d2b0>, <_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object \
+at 0x7fd50080d400>](0)"	[label=assignedFrom];
 	warnings -> "geek-girls-rising-myth-or-reality.ipynb"	[label=importedBy];
 	"warnings(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -76,16 +78,16 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"df_2019(0)$1" -> "0(0)"	[label=assignedFrom];
 	"0(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_2019(0)$2" -> "df_2019(0)$1"	[label=drop];
-	"df_2019(0)$2" -> "[<_ast.Constant object at 0x12fb00880>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fb00880>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"df_2019(0)$2" -> "[<_ast.Constant object at 0x7fd50080d730>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50080d730>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_2018(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_2018(0)$0" -> "../input/kaggle-survey-2018/multipleChoiceResponses.csv(0)"	[label=read_csv];
 	"../input/kaggle-survey-2018/multipleChoiceResponses.csv(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_2018(0)$1" -> "0(0)"	[label=assignedFrom];
 	"df_2018(0)$1" -> "df_2018(0)$0"	[label=assignedFrom];
 	"df_2018(0)$2" -> "df_2018(0)$1"	[label=drop];
-	"df_2018(0)$2" -> "[<_ast.Constant object at 0x12f85ed90>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f85ed90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"df_2018(0)$2" -> "[<_ast.Constant object at 0x7fd50085b8b0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50085b8b0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_2017(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_2017(0)$0" -> "../input/kaggle-survey-2017/multipleChoiceResponses.csv(0)"	[label=read_csv];
 	"df_2017(0)$0" -> "ISO-8859-1(0)"	[label=read_csv];
@@ -105,41 +107,10 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"percentage_df(2)$0" -> "counts_df(2)$0"	[label=Div];
 	"percentage_df(2)$0" -> "100(2)"	[label=Div];
 	"data(3)" -> "plot_graph[0]"	[label=_argToVar];
-	"plot_graph[0]" -> "female_2019(0)$0"	[label=plot_graph];
-	"plot_graph[0]" -> "female_2019(0)$7"	[label=plot_graph];
-	"plot_graph[0]" -> "female_2019(0)$8"	[label=plot_graph];
-	"female_2019(0)$0" -> "df_2019(0)$3"	[label=assignedFrom];
-	"female_2019(0)$0" -> "What is your gender? - Selected Choice(0)"	[label=assignedFrom];
-	"female_2019(0)$0" -> "Female(0)"	[label=assignedFrom];
-	"female_2019(0)$7" -> "np(0)"	[label=where];
-	"female_2019(0)$7" -> "female_2019(0)$7"	[label=where];
-	"female_2019(0)$7" -> "What is your age (# years)?(0)"	[label=where];
-	"female_2019(0)$7" -> "Age Group(0)"	[label=where];
-	"female_2019(0)$7" -> "female_2019(0)$6"	[label=where];
-	"female_2019(0)$7" -> "[<_ast.Constant object at 0x12f948850>](0)"	[label=where];
-	"female_2019(0)$7" -> "70s and above(0)"	[label=where];
-	"female_2019(0)$8" -> "female_2019(0)$7"	[label=fillna];
-	"female_2019(0)$8" -> "didnot Disclose(0)"	[label=fillna];
 	"question(3)" -> "plot_graph[1]"	[label=_argToVar];
-	"plot_graph[1]" -> "In which country do you currently reside?(0)"	[label=plot_graph];
-	"plot_graph[1]" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=plot_graph];
-	"plot_graph[1]" -> "What is your current yearly compensation (approximate $USD)?(0)"	[label=plot_graph];
-	"In which country do you currently reside?(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"What is your current yearly compensation (approximate $USD)?(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"title(3)" -> "plot_graph[2]"	[label=_argToVar];
-	"plot_graph[2]" -> "Top 20 countries of female respondents(0)"	[label=plot_graph];
-	"plot_graph[2]" -> "Top 20 roles for female respondents in 2019(0)"	[label=plot_graph];
-	"plot_graph[2]" -> "Salary Range of Female respondents in 2019(0)"	[label=plot_graph];
-	"Top 20 countries of female respondents(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"Top 20 roles for female respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"Salary Range of Female respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"x_axis_title(3)" -> "plot_graph[3]"	[label=_argToVar];
-	"plot_graph[3]" -> "Percentage of Female Respondents(0)"	[label=plot_graph];
-	"Percentage of Female Respondents(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"y_axis_title(3)" -> "plot_graph[4]"	[label=_argToVar];
-	"plot_graph[4]" -> "Annual Salary in USD(0)"	[label=plot_graph];
-	"Annual Salary in USD(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df(3)$0" -> "data(3)"	[label=return_percentage];
 	"df(3)$0" -> "question(3)"	[label=return_percentage];
 	"trace1(3)$0" -> "question(3)"	[label=Bar];
@@ -149,7 +120,7 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"trace1(3)$0" -> "dodgerblue(3)"	[label=Bar];
 	"trace1(3)$0" -> "black(3)"	[label=Bar];
 	"trace1(3)$0" -> "1(3)"	[label=Bar];
-	"data(3)$0" -> "[<_ast.Name object at 0x12faf59a0>](3)"	[label=assignedFrom];
+	"data(3)$0" -> "[<_ast.Name object at 0x7fd500832b20>](3)"	[label=assignedFrom];
 	"layout(3)$0" -> "title(3)"	[label=Layout];
 	"layout(3)$0" -> "x_axis_title(3)"	[label=Layout];
 	"layout(3)$0" -> "y_axis_title(3)"	[label=Layout];
@@ -164,15 +135,7 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"fig(3)$0" -> "go(3)"	[label=Figure];
 	"fig(3)$0" -> "data(3)$0"	[label=Figure];
 	"fig(3)$0" -> "layout(3)$0"	[label=Figure];
-	"iplot[0]" -> "fig(3)$0"	[label=iplot];
-	"iplot[0]" -> "fig(6)$0"	[label=iplot];
-	"iplot[0]" -> "fig(8)$0"	[label=iplot];
-	"fig(6)$0" -> "go(6)"	[label=Figure];
-	"fig(6)$0" -> "data(6)$0"	[label=Figure];
-	"fig(6)$0" -> "layout(6)$0"	[label=Figure];
-	"fig(8)$0" -> "go(8)"	[label=Figure];
-	"fig(8)$0" -> "data(8)$0"	[label=Figure];
-	"fig(8)$0" -> "layout(8)$0"	[label=Figure];
+	"iplot[88/4]" -> "fig(3)$0"	[label=iplot];
 	"df_2019(0)$3" -> "df_2019(0)$2"	[label=replace];
 	"df_2019(0)$3" -> "United States of America(0)"	[label=replace];
 	"df_2019(0)$3" -> "Viet Nam(0)"	[label=replace];
@@ -210,6 +173,9 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"male_2019(0)$0" -> "Male(0)"	[label=assignedFrom];
 	"What is your gender? - Selected Choice(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Male(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"female_2019(0)$0" -> "df_2019(0)$3"	[label=assignedFrom];
+	"female_2019(0)$0" -> "What is your gender? - Selected Choice(0)"	[label=assignedFrom];
+	"female_2019(0)$0" -> "Female(0)"	[label=assignedFrom];
 	"Female(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"male_2018(0)$0" -> "df_2018(0)$3"	[label=assignedFrom];
 	"male_2018(0)$0" -> "What is your gender? - Selected Choice(0)"	[label=assignedFrom];
@@ -226,25 +192,26 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"female_2017(0)$0" -> "GenderSelect(0)"	[label=assignedFrom];
 	"10(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"topn(0)$0" -> "10(0)"	[label=assignedFrom];
-	"count_male(0)$0" -> "In which country do you currently reside?(0)"	[label=reset_index];
 	"count_male(0)$0" -> "male_2019(0)$0"	[label=reset_index];
 	"count_male(0)$0" -> "topn(0)$0"	[label=reset_index];
+	"count_male(0)$0" -> "In which country do you currently reside?(0)"	[label=reset_index];
+	"In which country do you currently reside?(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"count_female(0)$0" -> "female_2019(0)$0"	[label=reset_index];
-	"count_female(0)$0" -> "In which country do you currently reside?(0)"	[label=reset_index];
 	"count_female(0)$0" -> "topn(0)$0"	[label=reset_index];
+	"count_female(0)$0" -> "In which country do you currently reside?(0)"	[label=reset_index];
 	"pie_men(0)$0" -> "go(0)"	[label=Pie];
-	"pie_men(0)$0" -> "In which country do you currently reside?(0)"	[label=Pie];
 	"pie_men(0)$0" -> "count_male(0)$0"	[label=Pie];
+	"pie_men(0)$0" -> "In which country do you currently reside?(0)"	[label=Pie];
 	"pie_men(0)$0" -> "index(0)"	[label=Pie];
 	"pie_men(0)$0" -> "Men(0)"	[label=Pie];
 	"pie_men(0)$0" -> "0.4(0)"	[label=Pie];
 	"pie_men(0)$0" -> "x(0)"	[label=Pie];
-	"pie_men(0)$0" -> "[<_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5b20>](0)"	[label=Pie];
+	"pie_men(0)$0" -> "[<_ast.Constant object at 0x7fd4c04d88b0>, <_ast.Constant object at 0x7fd4c04d8370>](0)"	[label=Pie];
 	"index(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Men(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"0.4(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"x(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5a90>, <_ast.Constant object at 0x12f8f5b20>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04d88b0>, <_ast.Constant object at 0x7fd4c04d8370>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"pie_women(0)$0" -> "go(0)"	[label=Pie];
 	"pie_women(0)$0" -> "In which country do you currently reside?(0)"	[label=Pie];
 	"pie_women(0)$0" -> "count_female(0)$0"	[label=Pie];
@@ -252,42 +219,42 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"pie_women(0)$0" -> "x(0)"	[label=Pie];
 	"pie_women(0)$0" -> "Women(0)"	[label=Pie];
 	"pie_women(0)$0" -> "0.5(0)"	[label=Pie];
-	"pie_women(0)$0" -> "[<_ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5b50>](0)"	[label=Pie];
+	"pie_women(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0460>](0)"	[label=Pie];
 	"Women(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"0.5(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5a60>, <_ast.Constant object at 0x12f8f5b50>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0460>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Top-10 Countries with Respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"layout(0)$0" -> "10(0)"	[label=dict];
 	"layout(0)$0" -> "Top-10 Countries with Respondents in 2019(0)"	[label=dict];
 	"layout(0)$0" -> "dict(0)"	[label=dict];
 	"layout(0)$0" -> "h(0)"	[label=dict];
-	"layout(0)$0" -> "[<_ast.Call object at 0x12f8f5d90>, <_ast.Call object at 0x12f957d90>](0)"	[label=dict];
+	"layout(0)$0" -> "[<_ast.Call object at 0x7fd5007f0b20>, <_ast.Call object at 0x7fd5007f0d00>](0)"	[label=dict];
 	"dict(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"h(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f8f5d90>, <_ast.Call object at 0x12f957d90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f957880>, <_ast.Name object at 0x12f957f70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd5007f0b20>, <_ast.Call object at 0x7fd5007f0d00>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4902ab490>, <_ast.Name object at 0x7fd4902abaf0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "layout(0)$0"	[label=dict];
-	"fig(0)$0" -> "[<_ast.Name object at 0x12f957880>, <_ast.Name object at 0x12f957f70>](0)"	[label=dict];
+	"fig(0)$0" -> "[<_ast.Name object at 0x7fd4902ab490>, <_ast.Name object at 0x7fd4902abaf0>](0)"	[label=dict];
 	"py(0)$1" -> "py(0)$0"	[label=iplot];
 	"py(0)$1" -> "fig(0)$0"	[label=iplot];
 	"df_all_surveys(0)$0" -> "pd(0)"	[label=DataFrame];
-	"df_all_surveys(0)$0" -> "[<_ast.Call object at 0x12f957730>, <_ast.Call object at 0x12f957130>, <_ast.Call object at 0x12f957dc0>](0)"	[label=DataFrame];
-	"df_all_surveys(0)$0" -> "[<_ast.Constant object at 0x12f9577f0>](0)"	[label=DataFrame];
-	"df_all_surveys(0)$0" -> "[<_ast.Constant object at 0x12f9571c0>, <_ast.Constant object at 0x12f957bb0>, <_ast.Constant object at 0x12f957100>](0)"	[label=DataFrame];
-	"[<_ast.Call object at 0x12f957730>, <_ast.Call object at 0x12f957130>, <_ast.Call object at 0x12f957dc0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9577f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9571c0>, <_ast.Constant object at 0x12f957bb0>, <_ast.Constant object at 0x12f957100>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88ad90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"df_all_surveys(0)$0" -> "[<_ast.Call object at 0x7fd4902ab790>, <_ast.Call object at 0x7fd4902ab220>, <_ast.Call object at 0x7fd4902ab6d0>](0)"	[label=DataFrame];
+	"df_all_surveys(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab460>](0)"	[label=DataFrame];
+	"df_all_surveys(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab7c0>](0)"	[label=DataFrame];
+	"[<_ast.Call object at 0x7fd4902ab790>, <_ast.Call object at 0x7fd4902ab220>, <_ast.Call object at 0x7fd4902ab6d0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab460>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab7c0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ab3a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_all_surveys(0)$1" -> "df_all_surveys(0)$0"	[label=assignedFrom];
-	"df_all_surveys(0)$1" -> "[<_ast.Constant object at 0x12f88ad90>](0)"	[label=assignedFrom];
+	"df_all_surveys(0)$1" -> "[<_ast.Constant object at 0x7fd4902ab3a0>](0)"	[label=assignedFrom];
 	"x(0)$0" -> "df_all_surveys(0)$1"	[label=assignedFrom];
 	"x(0)$0" -> "Number of responses(0)"	[label=assignedFrom];
 	"Number of responses(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "df_all_surveys(0)$1"	[label=assignedFrom];
 	"y(0)$0" -> "Number of responses(0)"	[label=assignedFrom];
 	"fig(0)$1" -> "go(0)"	[label=Figure];
-	"fig(0)$1" -> "[<_ast.Call object at 0x12f88a3a0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12f88a3a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$1" -> "[<_ast.Call object at 0x7fd4c04ff400>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd4c04ff400>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"1(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$2" -> "fig(0)$1"	[label=assignedFrom];
 	"fig(0)$2" -> "1(0)"	[label=assignedFrom];
@@ -296,10 +263,10 @@ ast.Constant object at 0x12fb00850>, <_ast.Constant object at 0x12fb00f70>, <_as
 	"fig(0)$3" -> "black(0)"	[label=assignedFrom];
 	"fig(0)$4" -> "fig(0)$3"	[label=update_layout];
 	"fig(0)$5" -> "fig(0)$4"	[label=show];
-	"[<_ast.Constant object at 0x130532190>, <_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532df0>, <_ast.Constant \
-object at 0x130532b20>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"colors1(0)$0" -> "[<_ast.Constant object at 0x130532190>, <_ast.Constant object at 0x130532a30>, <_ast.Constant object at 0x130532df0>, <_ast.Constant \
-object at 0x130532b20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc4c0>, <_ast.Constant object at 0x7fd4c04cca60>, <_ast.Constant object at 0x7fd4c04cc160>, <_\
+ast.Constant object at 0x7fd4c04cc580>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"colors1(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc4c0>, <_ast.Constant object at 0x7fd4c04cca60>, <_ast.Constant object at 0x7fd4c04cc160>, <_\
+ast.Constant object at 0x7fd4c04cc580>](0)"	[label=assignedFrom];
 	"counts(0)$0" -> "df_2019(0)$3"	[label=value_counts];
 	"counts(0)$0" -> "What is your gender? - Selected Choice(0)"	[label=value_counts];
 	"counts(0)$0" -> "True(0)"	[label=value_counts];
@@ -319,18 +286,18 @@ object at 0x130532b20>](0)"	[label=assignedFrom];
 	"Gender Distribution in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$6" -> "go(0)"	[label=Figure];
 	"fig(0)$6" -> "layout(0)$1"	[label=Figure];
-	"fig(0)$6" -> "[<_ast.Name object at 0x12f9a43a0>](0)"	[label=Figure];
-	"[<_ast.Name object at 0x12f9a43a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$6" -> "[<_ast.Name object at 0x7fd4c04ccf40>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd4c04ccf40>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"py(0)$2" -> "py(0)$1"	[label=iplot];
 	"py(0)$2" -> "fig(0)$6"	[label=iplot];
 	"plotly.subplots" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=importedBy];
 	make_subplots -> "plotly.subplots"	[label=importedBy];
 	"make_subplots(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"make_subplots(0)" -> make_subplots	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a46a0>, <_ast.Constant object at 0x12f9a46d0>, <_ast.Constant object at 0x12f9a4700>, <_ast.Constant \
-object at 0x12f9a4730>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"colors2(0)$0" -> "[<_ast.Constant object at 0x12f9a46a0>, <_ast.Constant object at 0x12f9a46d0>, <_ast.Constant object at 0x12f9a4700>, <_ast.Constant \
-object at 0x12f9a4730>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902b92e0>, <_ast.Constant object at 0x7fd4902b9280>, <_ast.Constant object at 0x7fd4902b92b0>, <_\
+ast.Constant object at 0x7fd4902b9340>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"colors2(0)$0" -> "[<_ast.Constant object at 0x7fd4902b92e0>, <_ast.Constant object at 0x7fd4902b9280>, <_ast.Constant object at 0x7fd4902b92b0>, <_\
+ast.Constant object at 0x7fd4902b9340>](0)"	[label=assignedFrom];
 	"gender_count_2019(0)$0" -> "df_2019(0)$3"	[label=value_counts];
 	"gender_count_2019(0)$0" -> "What is your gender? - Selected Choice(0)"	[label=value_counts];
 	"gender_count_2019(0)$0" -> "True(0)"	[label=value_counts];
@@ -340,19 +307,19 @@ object at 0x12f9a4730>](0)"	[label=assignedFrom];
 	"gender_count_2017(0)$0" -> "df_2017(0)$0"	[label=value_counts];
 	"gender_count_2017(0)$0" -> "GenderSelect(0)"	[label=value_counts];
 	"gender_count_2017(0)$0" -> "True(0)"	[label=value_counts];
-	"[<_ast.Constant object at 0x12f9a4eb0>, <_ast.Constant object at 0x12f9a4ee0>, <_ast.Constant object at 0x12f9a4f10>, <_ast.Constant \
-object at 0x12f9a4f40>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"labels(0)$1" -> "[<_ast.Constant object at 0x12f9a4eb0>, <_ast.Constant object at 0x12f9a4ee0>, <_ast.Constant object at 0x12f9a4f10>, <_ast.Constant \
-object at 0x12f9a4f40>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f889070>, <_ast.Constant object at 0x12f8890a0>, <_ast.Constant object at 0x12f8890d0>, <_ast.Constant \
-object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"labels1(0)$0" -> "[<_ast.Constant object at 0x12f889070>, <_ast.Constant object at 0x12f8890a0>, <_ast.Constant object at 0x12f8890d0>, <_ast.Constant \
-object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902b99a0>, <_ast.Constant object at 0x7fd4902b9ca0>, <_ast.Constant object at 0x7fd4902b9eb0>, <_\
+ast.Constant object at 0x7fd4902b9ee0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"labels(0)$1" -> "[<_ast.Constant object at 0x7fd4902b99a0>, <_ast.Constant object at 0x7fd4902b9ca0>, <_ast.Constant object at 0x7fd4902b9eb0>, <_\
+ast.Constant object at 0x7fd4902b9ee0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902b9c70>, <_ast.Constant object at 0x7fd4902b9a60>, <_ast.Constant object at 0x7fd4902b9e50>, <_\
+ast.Constant object at 0x7fd4902b97c0>, <_ast.Constant object at 0x7fd4902b9e20>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"labels1(0)$0" -> "[<_ast.Constant object at 0x7fd4902b9c70>, <_ast.Constant object at 0x7fd4902b9a60>, <_ast.Constant object at 0x7fd4902b9e50>, <_\
+ast.Constant object at 0x7fd4902b97c0>, <_ast.Constant object at 0x7fd4902b9e20>](0)"	[label=assignedFrom];
 	"fig(0)$7" -> "1(0)"	[label=make_subplots];
 	"fig(0)$7" -> "3(0)"	[label=make_subplots];
-	"fig(0)$7" -> "[<_ast.List object at 0x12f8893d0>](0)"	[label=make_subplots];
+	"fig(0)$7" -> "[<_ast.List object at 0x7fd4c04ad100>](0)"	[label=make_subplots];
 	"3(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.List object at 0x12f8893d0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd4c04ad100>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$8" -> "go(0)"	[label=add_trace];
 	"fig(0)$8" -> "dict(0)"	[label=add_trace];
 	"fig(0)$8" -> "1(0)"	[label=add_trace];
@@ -406,9 +373,9 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"country_number(0)$0" -> "female_2019(0)$0"	[label=DataFrame];
 	"country_number(0)$0" -> "In which country do you currently reside?(0)"	[label=DataFrame];
 	"country_number(0)$1" -> "country_number(0)$0"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88ccd0>, <_ast.Constant object at 0x12f88cd30>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500811a60>, <_ast.Constant object at 0x7fd500811a90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"country_number(0)$2" -> "country_number(0)$1"	[label=assignedFrom];
-	"country_number(0)$2" -> "[<_ast.Constant object at 0x12f88ccd0>, <_ast.Constant object at 0x12f88cd30>](0)"	[label=assignedFrom];
+	"country_number(0)$2" -> "[<_ast.Constant object at 0x7fd500811a60>, <_ast.Constant object at 0x7fd500811a90>](0)"	[label=assignedFrom];
 	"country_number(0)$3" -> "country_number(0)$2"	[label=drop];
 	"country_number(0)$4" -> "country_number(0)$3"	[label=apply];
 	"country_number(0)$4" -> "country(0)"	[label=apply];
@@ -419,8 +386,8 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"c(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"country_number(0)$5" -> "5(0)"	[label=head];
 	"country_number(0)$5" -> "country_number(0)$4"	[label=head];
-	"[<_ast.Call object at 0x12f896550>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"worldmap(0)$0" -> "[<_ast.Call object at 0x12f896550>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd500835280>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"worldmap(0)$0" -> "[<_ast.Call object at 0x7fd500835280>](0)"	[label=assignedFrom];
 	"The Nationality of Female Respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"layout(0)$2" -> "dict(0)"	[label=dict];
 	"layout(0)$2" -> "True(0)"	[label=dict];
@@ -449,7 +416,7 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"trace1(5)$0" -> "dodgerblue(5)"	[label=Bar];
 	"trace1(5)$0" -> "black(5)"	[label=Bar];
 	"trace1(5)$0" -> "1(5)"	[label=Bar];
-	"data(5)$0" -> "[<_ast.Name object at 0x12f8a02e0>](5)"	[label=assignedFrom];
+	"data(5)$0" -> "[<_ast.Name object at 0x7fd500817820>](5)"	[label=assignedFrom];
 	"layout(5)$0" -> "title(5)"	[label=Layout];
 	"layout(5)$0" -> "x_axis_title(5)"	[label=Layout];
 	"layout(5)$0" -> "go(5)"	[label=Layout];
@@ -465,10 +432,16 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"fig(5)$1" -> "fig(5)$0"	[label=show];
 	"response_count(0)$0" -> "female_2019(0)$0"	[label=count];
 	"response_count(0)$0" -> "In which country do you currently reside?(0)"	[label=count];
+	"plot_graph[251/0]" -> "female_2019(0)$0"	[label=plot_graph];
+	"plot_graph[251/0]" -> "In which country do you currently reside?(0)"	[label=plot_graph];
+	"plot_graph[251/0]" -> "Top 20 countries of female respondents(0)"	[label=plot_graph];
+	"plot_graph[251/0]" -> "Percentage of Female Respondents(0)"	[label=plot_graph];
+	"Top 20 countries of female respondents(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"Percentage of Female Respondents(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_country_2019(0)$0" -> "female_2019(0)$0"	[label=assignedFrom];
 	"female_country_2019(0)$0" -> "In which country do you currently reside?(0)"	[label=assignedFrom];
-	"female_country_2018(0)$0" -> "In which country do you currently reside?(0)"	[label=assignedFrom];
 	"female_country_2018(0)$0" -> "female_2018(0)$0"	[label=assignedFrom];
+	"female_country_2018(0)$0" -> "In which country do you currently reside?(0)"	[label=assignedFrom];
 	"female_country_2017(0)$0" -> "female_2017(0)$0"	[label=assignedFrom];
 	"female_country_2017(0)$0" -> "Country(0)"	[label=assignedFrom];
 	"Country(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
@@ -483,13 +456,13 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"f_2017(0)$0" -> "female_country_2017(0)$0"	[label=value_counts];
 	"f_2017(0)$0" -> "India(0)"	[label=value_counts];
 	"female_country_count(0)$0" -> "pd(0)"	[label=DataFrame];
-	"female_country_count(0)$0" -> "[<_ast.Name object at 0x12f89edf0>, <_ast.Name object at 0x12f89ee20>, <_ast.Name object at 0x12f89ee80>](0)"	[label=DataFrame];
-	"female_country_count(0)$0" -> "[<_ast.Constant object at 0x12f89ef70>, <_ast.Constant object at 0x12f89efd0>, <_ast.Constant object at 0x12f89ea60>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12f89edf0>, <_ast.Name object at 0x12f89ee20>, <_ast.Name object at 0x12f89ee80>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89ef70>, <_ast.Constant object at 0x12f89efd0>, <_ast.Constant object at 0x12f89ea60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Call object at 0x12f8910d0>, <_ast.Call object at 0x12f891160>, <_ast.Call object at 0x12f8911f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"female_country_count(0)$0" -> "[<_ast.Name object at 0x7fd500818b80>, <_ast.Name object at 0x7fd500818250>, <_ast.Name object at 0x7fd500818bb0>](0)"	[label=DataFrame];
+	"female_country_count(0)$0" -> "[<_ast.Constant object at 0x7fd500818c70>, <_ast.Constant object at 0x7fd500818ca0>, <_ast.Constant object at 0x7fd500818cd0>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd500818b80>, <_ast.Name object at 0x7fd500818250>, <_ast.Name object at 0x7fd500818bb0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500818c70>, <_ast.Constant object at 0x7fd500818ca0>, <_ast.Constant object at 0x7fd500818cd0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Call object at 0x7fd500818e80>, <_ast.Call object at 0x7fd500818f40>, <_ast.Call object at 0x7fd500818fd0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_country_count(0)$1" -> "female_country_count(0)$0"	[label=assignedFrom];
-	"female_country_count(0)$1" -> "[<_ast.Call object at 0x12f8910d0>, <_ast.Call object at 0x12f891160>, <_ast.Call object at 0x12f8911f0>](0)"	[label=assignedFrom];
+	"female_country_count(0)$1" -> "[<_ast.Call object at 0x7fd500818e80>, <_ast.Call object at 0x7fd500818f40>, <_ast.Call object at 0x7fd500818fd0>](0)"	[label=assignedFrom];
 	"female_country_count(0)$2" -> "United States(0)"	[label=Mult];
 	"female_country_count(0)$2" -> "female_country_count(0)$1"	[label=Mult];
 	"female_country_count(0)$2" -> "female_country_count(0)$2"	[label=Mult];
@@ -542,10 +515,10 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"African_2017(0)$0" -> "Kenya(0)"	[label=value_counts];
 	"African_2017(0)$0" -> "South Africa(0)"	[label=value_counts];
 	"African_subcontinent_count(0)$0" -> "pd(0)"	[label=DataFrame];
-	"African_subcontinent_count(0)$0" -> "[<_ast.Name object at 0x12f886e20>, <_ast.Name object at 0x12f886e50>, <_ast.Name object at 0x12f886b80>](0)"	[label=DataFrame];
-	"African_subcontinent_count(0)$0" -> "[<_ast.Constant object at 0x12f886f10>, <_ast.Constant object at 0x12f886f40>, <_ast.Constant object at 0x12f886f70>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12f886e20>, <_ast.Name object at 0x12f886e50>, <_ast.Name object at 0x12f886b80>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f886f10>, <_ast.Constant object at 0x12f886f40>, <_ast.Constant object at 0x12f886f70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"African_subcontinent_count(0)$0" -> "[<_ast.Name object at 0x7fd500819b80>, <_ast.Name object at 0x7fd500819250>, <_ast.Name object at 0x7fd500819bb0>](0)"	[label=DataFrame];
+	"African_subcontinent_count(0)$0" -> "[<_ast.Constant object at 0x7fd500819c70>, <_ast.Constant object at 0x7fd500819ca0>, <_ast.Constant object at 0x7fd500819cd0>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd500819b80>, <_ast.Name object at 0x7fd500819250>, <_ast.Name object at 0x7fd500819bb0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500819c70>, <_ast.Constant object at 0x7fd500819ca0>, <_ast.Constant object at 0x7fd500819cd0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"African_subcontinent_count(0)$1" -> "0(0)"	[label=fillna];
 	"African_subcontinent_count(0)$1" -> "African_subcontinent_count(0)$0"	[label=fillna];
 	"African_subcontinent_count(0)$2" -> "1(0)"	[label=sum];
@@ -556,18 +529,18 @@ object at 0x12f889100>, <_ast.Constant object at 0x12f889130>](0)"	[label=assign
 	"y(0)$1" -> "African_subcontinent_count(0)$2"	[label=assignedFrom];
 	"y(0)$1" -> "Sum(0)"	[label=assignedFrom];
 	"fig1(0)$0" -> "go(0)"	[label=Figure];
-	"fig1(0)$0" -> "[<_ast.Call object at 0x12f89a9a0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12f89a9a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig1(0)$0" -> "[<_ast.Call object at 0x7fd50080f640>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd50080f640>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig1(0)$1" -> "1(0)"	[label=assignedFrom];
 	"fig1(0)$1" -> "fig1(0)$0"	[label=assignedFrom];
 	"fig1(0)$2" -> "black(0)"	[label=assignedFrom];
 	"fig1(0)$2" -> "fig1(0)$1"	[label=assignedFrom];
 	"fig1(0)$3" -> "fig1(0)$2"	[label=update_layout];
 	"fig1(0)$4" -> "fig1(0)$3"	[label=show];
-	"[<_ast.Constant object at 0x12f92ca60>, <_ast.Constant object at 0x12f92ca90>, <_ast.Constant object at 0x12f92cac0>, <_ast.Constant \
-object at 0x12f92caf0>, <_ast.Constant object at 0x12f92cb50>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"countries(0)$0" -> "[<_ast.Constant object at 0x12f92ca60>, <_ast.Constant object at 0x12f92ca90>, <_ast.Constant object at 0x12f92cac0>, <_ast.Constant \
-object at 0x12f92caf0>, <_ast.Constant object at 0x12f92cb50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500828730>, <_ast.Constant object at 0x7fd500828760>, <_ast.Constant object at 0x7fd500828790>, <_\
+ast.Constant object at 0x7fd5008287c0>, <_ast.Constant object at 0x7fd5008287f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"countries(0)$0" -> "[<_ast.Constant object at 0x7fd500828730>, <_ast.Constant object at 0x7fd500828760>, <_ast.Constant object at 0x7fd500828790>, <_\
+ast.Constant object at 0x7fd5008287c0>, <_ast.Constant object at 0x7fd5008287f0>](0)"	[label=assignedFrom];
 	"African_subcontinent_count(0)$3" -> "African_subcontinent_count(0)$2"	[label=plot];
 	"plt(0)$8" -> "8(0)"	[label=set_size_inches];
 	"plt(0)$8" -> "10(0)"	[label=set_size_inches];
@@ -588,23 +561,23 @@ object at 0x12f92caf0>, <_ast.Constant object at 0x12f92cb50>](0)"	[label=assign
 	"female_2017(0)$1" -> "female_2017(0)$0"	[label=cut];
 	"female_2017(0)$1" -> "female_2017(0)$1"	[label=cut];
 	"female_2017(0)$1" -> "Age(0)"	[label=cut];
-	"female_2017(0)$1" -> "[<_ast.Constant object at 0x12f963040>, <_ast.Constant object at 0x12f963070>, <_ast.Constant object at 0x12f9630d0>, <_ast.Constant \
-object at 0x12f9630a0>, <_ast.Constant object at 0x12f963100>, <_ast.Constant object at 0x12f963160>, <_ast.Constant object at 0x12f963190>, <_\
-ast.Constant object at 0x12f9631c0>, <_ast.Constant object at 0x12f9631f0>, <_ast.Constant object at 0x12f963220>, <_ast.Constant \
-object at 0x12f963250>, <_ast.Constant object at 0x12f963280>](0)"	[label=cut];
-	"female_2017(0)$1" -> "[<_ast.Constant object at 0x12f963340>, <_ast.Constant object at 0x12f963370>, <_ast.Constant object at 0x12f9633a0>, <_ast.Constant \
-object at 0x12f9633d0>, <_ast.Constant object at 0x12f963430>, <_ast.Constant object at 0x12f963130>, <_ast.Constant object at 0x12f963460>, <_\
-ast.Constant object at 0x12f963490>, <_ast.Constant object at 0x12f9634c0>, <_ast.Constant object at 0x12f9634f0>, <_ast.Constant \
-object at 0x12f963520>](0)"	[label=cut];
+	"female_2017(0)$1" -> "[<_ast.Constant object at 0x7fd500833d90>, <_ast.Constant object at 0x7fd500833dc0>, <_ast.Constant object at 0x7fd500833df0>, <_\
+ast.Constant object at 0x7fd500833e20>, <_ast.Constant object at 0x7fd500833e50>, <_ast.Constant object at 0x7fd500833e80>, <_ast.Constant \
+object at 0x7fd500833eb0>, <_ast.Constant object at 0x7fd500833ee0>, <_ast.Constant object at 0x7fd500833f10>, <_ast.Constant object \
+at 0x7fd500833f40>, <_ast.Constant object at 0x7fd500833f70>, <_ast.Constant object at 0x7fd500833fa0>](0)"	[label=cut];
+	"female_2017(0)$1" -> "[<_ast.Constant object at 0x7fd4902ae040>, <_ast.Constant object at 0x7fd4902ae070>, <_ast.Constant object at 0x7fd4902ae0a0>, <_\
+ast.Constant object at 0x7fd4902ae0d0>, <_ast.Constant object at 0x7fd4902ae100>, <_ast.Constant object at 0x7fd4902ae130>, <_ast.Constant \
+object at 0x7fd4902ae160>, <_ast.Constant object at 0x7fd4902ae190>, <_ast.Constant object at 0x7fd4902ae1c0>, <_ast.Constant object \
+at 0x7fd4902ae1f0>, <_ast.Constant object at 0x7fd4902ae220>](0)"	[label=cut];
 	"Age(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f963040>, <_ast.Constant object at 0x12f963070>, <_ast.Constant object at 0x12f9630d0>, <_ast.Constant \
-object at 0x12f9630a0>, <_ast.Constant object at 0x12f963100>, <_ast.Constant object at 0x12f963160>, <_ast.Constant object at 0x12f963190>, <_\
-ast.Constant object at 0x12f9631c0>, <_ast.Constant object at 0x12f9631f0>, <_ast.Constant object at 0x12f963220>, <_ast.Constant \
-object at 0x12f963250>, <_ast.Constant object at 0x12f963280>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f963340>, <_ast.Constant object at 0x12f963370>, <_ast.Constant object at 0x12f9633a0>, <_ast.Constant \
-object at 0x12f9633d0>, <_ast.Constant object at 0x12f963430>, <_ast.Constant object at 0x12f963130>, <_ast.Constant object at 0x12f963460>, <_\
-ast.Constant object at 0x12f963490>, <_ast.Constant object at 0x12f9634c0>, <_ast.Constant object at 0x12f9634f0>, <_ast.Constant \
-object at 0x12f963520>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500833d90>, <_ast.Constant object at 0x7fd500833dc0>, <_ast.Constant object at 0x7fd500833df0>, <_\
+ast.Constant object at 0x7fd500833e20>, <_ast.Constant object at 0x7fd500833e50>, <_ast.Constant object at 0x7fd500833e80>, <_ast.Constant \
+object at 0x7fd500833eb0>, <_ast.Constant object at 0x7fd500833ee0>, <_ast.Constant object at 0x7fd500833f10>, <_ast.Constant object \
+at 0x7fd500833f40>, <_ast.Constant object at 0x7fd500833f70>, <_ast.Constant object at 0x7fd500833fa0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902ae040>, <_ast.Constant object at 0x7fd4902ae070>, <_ast.Constant object at 0x7fd4902ae0a0>, <_\
+ast.Constant object at 0x7fd4902ae0d0>, <_ast.Constant object at 0x7fd4902ae100>, <_ast.Constant object at 0x7fd4902ae130>, <_ast.Constant \
+object at 0x7fd4902ae160>, <_ast.Constant object at 0x7fd4902ae190>, <_ast.Constant object at 0x7fd4902ae1c0>, <_ast.Constant object \
+at 0x7fd4902ae1f0>, <_ast.Constant object at 0x7fd4902ae220>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"x(0)$2" -> "female_2017(0)$1"	[label=value_counts];
 	"x(0)$2" -> "Age in years(0)"	[label=value_counts];
 	"Age in years(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
@@ -614,10 +587,10 @@ object at 0x12f963520>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=
 	"z(0)$0" -> "female_2019(0)$0"	[label=value_counts];
 	"z(0)$0" -> "What is your age (# years)?(0)"	[label=value_counts];
 	"w(0)$0" -> "pd(0)"	[label=DataFrame];
-	"w(0)$0" -> "[<_ast.Name object at 0x12f963c10>, <_ast.Name object at 0x12f963c40>, <_ast.Name object at 0x12f963c70>](0)"	[label=DataFrame];
-	"w(0)$0" -> "[<_ast.Constant object at 0x12f963d30>, <_ast.Constant object at 0x12f963d60>, <_ast.Constant object at 0x12f963d90>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12f963c10>, <_ast.Name object at 0x12f963c40>, <_ast.Name object at 0x12f963c70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f963d30>, <_ast.Constant object at 0x12f963d60>, <_ast.Constant object at 0x12f963d90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"w(0)$0" -> "[<_ast.Name object at 0x7fd4902ae8e0>, <_ast.Name object at 0x7fd4902ae910>, <_ast.Name object at 0x7fd4902ae940>](0)"	[label=DataFrame];
+	"w(0)$0" -> "[<_ast.Constant object at 0x7fd4902aea00>, <_ast.Constant object at 0x7fd4902aea30>, <_ast.Constant object at 0x7fd4902aea60>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4902ae8e0>, <_ast.Name object at 0x7fd4902ae910>, <_ast.Name object at 0x7fd4902ae940>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902aea00>, <_ast.Constant object at 0x7fd4902aea30>, <_ast.Constant object at 0x7fd4902aea60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"w(0)$1" -> "0(0)"	[label=fillna];
 	"w(0)$1" -> "w(0)$0"	[label=fillna];
 	"w(0)$2" -> "2017(0)"	[label=Mult];
@@ -664,20 +637,20 @@ object at 0x12f963520>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=
 	"female_2019(0)$1" -> "female_2019(0)$0"	[label=where];
 	"female_2019(0)$1" -> "What is your age (# years)?(0)"	[label=where];
 	"female_2019(0)$1" -> "female_2019(0)$1"	[label=where];
-	"female_2019(0)$1" -> "[<_ast.Constant object at 0x12f943ca0>](0)"	[label=where];
+	"female_2019(0)$1" -> "[<_ast.Constant object at 0x7fd4902c7a60>](0)"	[label=where];
 	"female_2019(0)$1" -> "18-21(0)"	[label=where];
 	"female_2019(0)$1" -> "(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f943ca0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902c7a60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"18-21(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$2" -> "np(0)"	[label=where];
 	"female_2019(0)$2" -> "What is your age (# years)?(0)"	[label=where];
 	"female_2019(0)$2" -> "female_2019(0)$1"	[label=where];
 	"female_2019(0)$2" -> "female_2019(0)$2"	[label=where];
-	"female_2019(0)$2" -> "[<_ast.Constant object at 0x12f94b040>, <_ast.Constant object at 0x12f94b070>](0)"	[label=where];
+	"female_2019(0)$2" -> "[<_ast.Constant object at 0x7fd4902c7dc0>, <_ast.Constant object at 0x7fd4902c7df0>](0)"	[label=where];
 	"female_2019(0)$2" -> "22-29(0)"	[label=where];
 	"female_2019(0)$2" -> "Age Group(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f94b040>, <_ast.Constant object at 0x12f94b070>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902c7dc0>, <_ast.Constant object at 0x7fd4902c7df0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"22-29(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Age Group(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$3" -> "np(0)"	[label=where];
@@ -685,56 +658,63 @@ object at 0x12f963520>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=
 	"female_2019(0)$3" -> "female_2019(0)$2"	[label=where];
 	"female_2019(0)$3" -> "Age Group(0)"	[label=where];
 	"female_2019(0)$3" -> "female_2019(0)$3"	[label=where];
-	"female_2019(0)$3" -> "[<_ast.Constant object at 0x12f94b520>, <_ast.Constant object at 0x12f94b550>](0)"	[label=where];
+	"female_2019(0)$3" -> "[<_ast.Constant object at 0x7fd4902a40a0>, <_ast.Constant object at 0x7fd4902a4070>](0)"	[label=where];
 	"female_2019(0)$3" -> "30-39(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f94b520>, <_ast.Constant object at 0x12f94b550>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902a40a0>, <_ast.Constant object at 0x7fd4902a4070>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"30-39(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$4" -> "np(0)"	[label=where];
 	"female_2019(0)$4" -> "What is your age (# years)?(0)"	[label=where];
 	"female_2019(0)$4" -> "Age Group(0)"	[label=where];
 	"female_2019(0)$4" -> "female_2019(0)$3"	[label=where];
 	"female_2019(0)$4" -> "female_2019(0)$4"	[label=where];
-	"female_2019(0)$4" -> "[<_ast.Constant object at 0x12f94ba00>, <_ast.Constant object at 0x12f94ba30>](0)"	[label=where];
+	"female_2019(0)$4" -> "[<_ast.Constant object at 0x7fd4902a4610>, <_ast.Constant object at 0x7fd4902a4a30>](0)"	[label=where];
 	"female_2019(0)$4" -> "40-49(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f94ba00>, <_ast.Constant object at 0x12f94ba30>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902a4610>, <_ast.Constant object at 0x7fd4902a4a30>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"40-49(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$5" -> "np(0)"	[label=where];
 	"female_2019(0)$5" -> "What is your age (# years)?(0)"	[label=where];
 	"female_2019(0)$5" -> "Age Group(0)"	[label=where];
 	"female_2019(0)$5" -> "female_2019(0)$4"	[label=where];
 	"female_2019(0)$5" -> "female_2019(0)$5"	[label=where];
-	"female_2019(0)$5" -> "[<_ast.Constant object at 0x12f94beb0>, <_ast.Constant object at 0x12f94bee0>](0)"	[label=where];
+	"female_2019(0)$5" -> "[<_ast.Constant object at 0x7fd4902a4d30>, <_ast.Constant object at 0x7fd4902a4b50>](0)"	[label=where];
 	"female_2019(0)$5" -> "50-59(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f94beb0>, <_ast.Constant object at 0x12f94bee0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902a4d30>, <_ast.Constant object at 0x7fd4902a4b50>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"50-59(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$6" -> "np(0)"	[label=where];
 	"female_2019(0)$6" -> "What is your age (# years)?(0)"	[label=where];
 	"female_2019(0)$6" -> "Age Group(0)"	[label=where];
 	"female_2019(0)$6" -> "female_2019(0)$5"	[label=where];
 	"female_2019(0)$6" -> "female_2019(0)$6"	[label=where];
-	"female_2019(0)$6" -> "[<_ast.Constant object at 0x12f9483a0>](0)"	[label=where];
+	"female_2019(0)$6" -> "[<_ast.Constant object at 0x7fd4902bf070>](0)"	[label=where];
 	"female_2019(0)$6" -> "60-69(0)"	[label=where];
-	"[<_ast.Constant object at 0x12f9483a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902bf070>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"60-69(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f948850>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"female_2019(0)$7" -> "np(0)"	[label=where];
+	"female_2019(0)$7" -> "What is your age (# years)?(0)"	[label=where];
+	"female_2019(0)$7" -> "Age Group(0)"	[label=where];
+	"female_2019(0)$7" -> "female_2019(0)$6"	[label=where];
+	"female_2019(0)$7" -> "female_2019(0)$7"	[label=where];
+	"female_2019(0)$7" -> "[<_ast.Constant object at 0x7fd4902bf4f0>](0)"	[label=where];
+	"female_2019(0)$7" -> "70s and above(0)"	[label=where];
+	"[<_ast.Constant object at 0x7fd4902bf4f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"70s and above(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f948a60>, <_ast.Constant object at 0x12f948760>, <_ast.Constant object at 0x12f948a90>, <_ast.Constant \
-object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant object at 0x12f948b20>, <_ast.Constant object at 0x12f948b50>](\
-0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"colors(0)$1" -> "[<_ast.Constant object at 0x12f948a60>, <_ast.Constant object at 0x12f948760>, <_ast.Constant object at 0x12f948a90>, <_ast.Constant \
-object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant object at 0x12f948b20>, <_ast.Constant object at 0x12f948b50>](\
-0)"	[label=assignedFrom];
-	"count_age(0)$0" -> "female_2019(0)$7"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4902bf6d0>, <_ast.Constant object at 0x7fd4902bf700>, <_ast.Constant object at 0x7fd4902bf730>, <_\
+ast.Constant object at 0x7fd4902bf760>, <_ast.Constant object at 0x7fd4902bf790>, <_ast.Constant object at 0x7fd4902bf7c0>, <_ast.Constant \
+object at 0x7fd4902bf7f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"colors(0)$1" -> "[<_ast.Constant object at 0x7fd4902bf6d0>, <_ast.Constant object at 0x7fd4902bf700>, <_ast.Constant object at 0x7fd4902bf730>, <_\
+ast.Constant object at 0x7fd4902bf760>, <_ast.Constant object at 0x7fd4902bf790>, <_ast.Constant object at 0x7fd4902bf7c0>, <_ast.Constant \
+object at 0x7fd4902bf7f0>](0)"	[label=assignedFrom];
 	"count_age(0)$0" -> "What is your age (# years)?(0)"	[label=reset_index];
-	"count_age(0)$0" -> "[<_ast.Constant object at 0x12f948dc0>, <_ast.Constant object at 0x12f948df0>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f948dc0>, <_ast.Constant object at 0x12f948df0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f948f70>, <_ast.Constant object at 0x12f948fa0>, <_ast.Constant object at 0x12f948fd0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"count_age(0)$0" -> "female_2019(0)$7"	[label=reset_index];
+	"count_age(0)$0" -> "[<_ast.Constant object at 0x7fd4902bfa30>, <_ast.Constant object at 0x7fd4902bfa60>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4902bfa30>, <_ast.Constant object at 0x7fd4902bfa60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902bfbe0>, <_ast.Constant object at 0x7fd4902bfc10>, <_ast.Constant object at 0x7fd4902bfc40>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"count_age(0)$1" -> "count_age(0)$0"	[label=assignedFrom];
-	"count_age(0)$1" -> "[<_ast.Constant object at 0x12f948f70>, <_ast.Constant object at 0x12f948fa0>, <_ast.Constant object at 0x12f948fd0>](0)"	[label=assignedFrom];
-	"count_age(0)$2" -> "female_2019(0)$7"	[label=assignedFrom];
+	"count_age(0)$1" -> "[<_ast.Constant object at 0x7fd4902bfbe0>, <_ast.Constant object at 0x7fd4902bfc10>, <_ast.Constant object at 0x7fd4902bfc40>](0)"	[label=assignedFrom];
 	"count_age(0)$2" -> "In which country do you currently reside?(0)"	[label=assignedFrom];
 	"count_age(0)$2" -> "Country(0)"	[label=assignedFrom];
 	"count_age(0)$2" -> "15(0)"	[label=assignedFrom];
+	"count_age(0)$2" -> "female_2019(0)$7"	[label=assignedFrom];
 	"count_age(0)$2" -> "count_age(0)$1"	[label=assignedFrom];
 	"count_age(0)$2" -> "count_age(0)$2"	[label=assignedFrom];
 	"count_age(0)$3" -> "Country(0)"	[label=assignedFrom];
@@ -742,9 +722,9 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"count_age(0)$3" -> "count_age(0)$3"	[label=assignedFrom];
 	"count_age(0)$3" -> "Other(0)"	[label=assignedFrom];
 	"Other(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"count_age(0)$4" -> "female_2019(0)$7"	[label=Mult];
 	"count_age(0)$4" -> "100(0)"	[label=Mult];
 	"count_age(0)$4" -> "len(0)"	[label=Mult];
+	"count_age(0)$4" -> "female_2019(0)$7"	[label=Mult];
 	"count_age(0)$4" -> "count_age(0)$3"	[label=Mult];
 	"count_age(0)$4" -> "Count(0)"	[label=Mult];
 	"Count(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
@@ -783,9 +763,9 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"qualification(0)$0" -> "female_2019(0)$7"	[label=to_frame];
 	"qualification(0)$0" -> "What is the highest level of formal education that you have attained or plan to attain within the next 2 years?(0)"	[label=to_frame];
 	"What is the highest level of formal education that you have attained or plan to attain within the next 2 years?(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"qualification(0)$1" -> "female_2019(0)$7"	[label=Mult];
 	"qualification(0)$1" -> "100(0)"	[label=Mult];
 	"qualification(0)$1" -> "len(0)"	[label=Mult];
+	"qualification(0)$1" -> "female_2019(0)$7"	[label=Mult];
 	"qualification(0)$1" -> "qualification(0)$0"	[label=Mult];
 	"labels(0)$2" -> "qualification(0)$1"	[label=assignedFrom];
 	"qualification(0)$2" -> "qualification(0)$1"	[label=plot];
@@ -809,8 +789,8 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"Qualification(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"plt(0)$38" -> "plt(0)$37"	[label=show];
 	"df_edu_temp(0)$0" -> "pd(0)"	[label=crosstab];
-	"df_edu_temp(0)$0" -> "female_2019(0)$7"	[label=crosstab];
 	"df_edu_temp(0)$0" -> "In which country do you currently reside?(0)"	[label=crosstab];
+	"df_edu_temp(0)$0" -> "female_2019(0)$7"	[label=crosstab];
 	"df_edu_temp(0)$0" -> "What is the highest level of formal education that you have attained or plan to attain within the next 2 years?(0)"	[label=crosstab];
 	"df_edu(0)$0" -> "United States(0)"	[label=drop];
 	"df_edu(0)$0" -> "China(0)"	[label=drop];
@@ -830,9 +810,9 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"Canada(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Germany(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"I prefer not to answer(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"df_edu(0)$1" -> "female_2019(0)$7"	[label=Mult];
 	"df_edu(0)$1" -> "100(0)"	[label=Mult];
 	"df_edu(0)$1" -> "len(0)"	[label=Mult];
+	"df_edu(0)$1" -> "female_2019(0)$7"	[label=Mult];
 	"df_edu(0)$1" -> "df_edu(0)$0"	[label=Mult];
 	"df_edu(0)$2" -> "df_edu(0)$1"	[label=plot];
 	"plt(0)$39" -> "8(0)"	[label=set_size_inches];
@@ -857,27 +837,28 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"female_title_2017(0)$0" -> "female_2017(0)$1"	[label=dropna];
 	"female_title_2017(0)$0" -> "CurrentJobTitleSelect(0)"	[label=dropna];
 	"CurrentJobTitleSelect(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"female_title_2018(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=dropna];
 	"female_title_2018(0)$0" -> "female_2018(0)$0"	[label=dropna];
+	"female_title_2018(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=dropna];
+	"Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_title_2019(0)$0" -> "female_2019(0)$7"	[label=dropna];
 	"female_title_2019(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=dropna];
 	"fig(0)$21" -> "1(0)"	[label=subplots];
 	"fig(0)$21" -> "3(0)"	[label=subplots];
 	"fig(0)$21" -> "plt(0)$46"	[label=subplots];
-	"fig(0)$21" -> "[<_ast.Constant object at 0x12f91d310>, <_ast.Constant object at 0x12f91d340>](0)"	[label=subplots];
-	"[<_ast.Constant object at 0x12f91d310>, <_ast.Constant object at 0x12f91d340>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$21" -> "[<_ast.Constant object at 0x7fd4c04c8e50>, <_ast.Constant object at 0x7fd4c04c8df0>](0)"	[label=subplots];
+	"[<_ast.Constant object at 0x7fd4c04c8e50>, <_ast.Constant object at 0x7fd4c04c8df0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"ax1(0)$0" -> "1(0)"	[label=subplots];
 	"ax1(0)$0" -> "3(0)"	[label=subplots];
 	"ax1(0)$0" -> "plt(0)$46"	[label=subplots];
-	"ax1(0)$0" -> "[<_ast.Constant object at 0x12f91d310>, <_ast.Constant object at 0x12f91d340>](0)"	[label=subplots];
+	"ax1(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c8e50>, <_ast.Constant object at 0x7fd4c04c8df0>](0)"	[label=subplots];
 	"ax2(0)$0" -> "1(0)"	[label=subplots];
 	"ax2(0)$0" -> "3(0)"	[label=subplots];
 	"ax2(0)$0" -> "plt(0)$46"	[label=subplots];
-	"ax2(0)$0" -> "[<_ast.Constant object at 0x12f91d310>, <_ast.Constant object at 0x12f91d340>](0)"	[label=subplots];
+	"ax2(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c8e50>, <_ast.Constant object at 0x7fd4c04c8df0>](0)"	[label=subplots];
 	"ax3(0)$0" -> "1(0)"	[label=subplots];
 	"ax3(0)$0" -> "3(0)"	[label=subplots];
 	"ax3(0)$0" -> "plt(0)$46"	[label=subplots];
-	"ax3(0)$0" -> "[<_ast.Constant object at 0x12f91d310>, <_ast.Constant object at 0x12f91d340>](0)"	[label=subplots];
+	"ax3(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c8e50>, <_ast.Constant object at 0x7fd4c04c8df0>](0)"	[label=subplots];
 	"wordcloud1(0)$0" -> "WordCloud(0)"	[label=generate];
 	"wordcloud1(0)$0" -> "female_title_2017(0)$0"	[label=generate];
 	"wordcloud1(0)$0" -> "white(0)"	[label=generate];
@@ -938,7 +919,7 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"trace1(6)$0" -> "skyblue(6)"	[label=Bar];
 	"trace1(6)$0" -> "black(6)"	[label=Bar];
 	"trace1(6)$0" -> "1(6)"	[label=Bar];
-	"data(6)$0" -> "[<_ast.Name object at 0x12f90d5e0>](6)"	[label=assignedFrom];
+	"data(6)$0" -> "[<_ast.Name object at 0x7fd4c04ec2e0>](6)"	[label=assignedFrom];
 	"layout(6)$0" -> "title(6)"	[label=Layout];
 	"layout(6)$0" -> "x_axis_title(6)"	[label=Layout];
 	"layout(6)$0" -> "go(6)"	[label=Layout];
@@ -948,9 +929,18 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"layout(6)$0" -> "500(6)"	[label=Layout];
 	"layout(6)$0" -> "reversed(6)"	[label=Layout];
 	"layout(6)$0" -> "False(6)"	[label=Layout];
+	"fig(6)$0" -> "go(6)"	[label=Figure];
+	"fig(6)$0" -> "data(6)$0"	[label=Figure];
+	"fig(6)$0" -> "layout(6)$0"	[label=Figure];
+	"iplot[488/4]" -> "fig(6)$0"	[label=iplot];
+	"plot_graph[491/0]" -> "Percentage of Female Respondents(0)"	[label=plot_graph];
+	"plot_graph[491/0]" -> "female_2019(0)$7"	[label=plot_graph];
+	"plot_graph[491/0]" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=plot_graph];
+	"plot_graph[491/0]" -> "Top 20 roles for female respondents in 2019(0)"	[label=plot_graph];
+	"Top 20 roles for female respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_roles_temp(0)$0" -> "pd(0)"	[label=crosstab];
-	"df_roles_temp(0)$0" -> "female_2019(0)$7"	[label=crosstab];
 	"df_roles_temp(0)$0" -> "In which country do you currently reside?(0)"	[label=crosstab];
+	"df_roles_temp(0)$0" -> "female_2019(0)$7"	[label=crosstab];
 	"df_roles_temp(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=crosstab];
 	"df_roles_temp(0)$1" -> "df_roles_temp(0)$0"	[label=Add];
 	"df_roles_temp(0)$1" -> "df_roles_temp(0)$1"	[label=Add];
@@ -976,13 +966,13 @@ object at 0x12f948ac0>, <_ast.Constant object at 0x12f948af0>, <_ast.Constant ob
 	"df_roles(0)$0" -> "Canada(0)"	[label=drop];
 	"df_roles(0)$0" -> "Germany(0)"	[label=drop];
 	"df_roles(0)$0" -> "df_roles_temp(0)$2"	[label=drop];
-	"df_roles(0)$0" -> "[<_ast.Constant object at 0x12f922490>, <_ast.Constant object at 0x12f9224c0>, <_ast.Constant object at 0x12f9224f0>, <_ast.Constant \
-object at 0x12f922520>, <_ast.Constant object at 0x12f922550>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f922490>, <_ast.Constant object at 0x12f9224c0>, <_ast.Constant object at 0x12f9224f0>, <_ast.Constant \
-object at 0x12f922520>, <_ast.Constant object at 0x12f922550>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"df_roles(0)$1" -> "female_2019(0)$7"	[label=Mult];
+	"df_roles(0)$0" -> "[<_ast.Constant object at 0x7fd4c04e81c0>, <_ast.Constant object at 0x7fd4c04e81f0>, <_ast.Constant object at 0x7fd4c04e8220>, <_\
+ast.Constant object at 0x7fd4c04e8250>, <_ast.Constant object at 0x7fd4c04e8280>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04e81c0>, <_ast.Constant object at 0x7fd4c04e81f0>, <_ast.Constant object at 0x7fd4c04e8220>, <_\
+ast.Constant object at 0x7fd4c04e8250>, <_ast.Constant object at 0x7fd4c04e8280>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"df_roles(0)$1" -> "100(0)"	[label=Mult];
 	"df_roles(0)$1" -> "len(0)"	[label=Mult];
+	"df_roles(0)$1" -> "female_2019(0)$7"	[label=Mult];
 	"df_roles(0)$1" -> "df_roles(0)$0"	[label=Mult];
 	"ax(0)$0" -> "1(0)"	[label=plot];
 	"ax(0)$0" -> "df_roles(0)$1"	[label=plot];
@@ -1022,8 +1012,8 @@ object at 0x12f922520>, <_ast.Constant object at 0x12f922550>](0)" -> "geek-girl
 	"female_DS_2017(0)$0" -> "return_percentage1(0)"	[label=assignedFrom];
 	"female_DS_2017(0)$0" -> "Data Scientist(0)"	[label=assignedFrom];
 	"Data Scientist(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"female_DS_2018(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=assignedFrom];
 	"female_DS_2018(0)$0" -> "female_2018(0)$0"	[label=assignedFrom];
+	"female_DS_2018(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=assignedFrom];
 	"female_DS_2018(0)$0" -> "return_percentage1(0)"	[label=assignedFrom];
 	"female_DS_2018(0)$0" -> "Data Scientist(0)"	[label=assignedFrom];
 	"female_DS_2019(0)$0" -> "female_2019(0)$7"	[label=assignedFrom];
@@ -1031,17 +1021,17 @@ object at 0x12f922520>, <_ast.Constant object at 0x12f922550>](0)" -> "geek-girl
 	"female_DS_2019(0)$0" -> "return_percentage1(0)"	[label=assignedFrom];
 	"female_DS_2019(0)$0" -> "Data Scientist(0)"	[label=assignedFrom];
 	"ds(0)$0" -> "pd(0)"	[label=DataFrame];
-	"ds(0)$0" -> "[<_ast.Name object at 0x12f8fbd30>, <_ast.Name object at 0x12f8fbd60>, <_ast.Name object at 0x12f8fbd90>](0)"	[label=DataFrame];
-	"ds(0)$0" -> "[<_ast.Constant object at 0x12f8fbe80>](0)"	[label=DataFrame];
-	"ds(0)$0" -> "[<_ast.Constant object at 0x12f8fbf40>, <_ast.Constant object at 0x12f8fbf70>, <_ast.Constant object at 0x12f8fbfa0>](0)"	[label=DataFrame];
-	"[<_ast.Name object at 0x12f8fbd30>, <_ast.Name object at 0x12f8fbd60>, <_ast.Name object at 0x12f8fbd90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8fbe80>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8fbf40>, <_ast.Constant object at 0x12f8fbf70>, <_ast.Constant object at 0x12f8fbfa0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"ds(0)$0" -> "[<_ast.Name object at 0x7fd4c04f5eb0>, <_ast.Name object at 0x7fd4c04f5f10>, <_ast.Name object at 0x7fd4c04f5f70>](0)"	[label=DataFrame];
+	"ds(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f5fa0>](0)"	[label=DataFrame];
+	"ds(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f5af0>, <_ast.Constant object at 0x7fd4c04f5ca0>, <_ast.Constant object at 0x7fd4c04f5b50>](0)"	[label=DataFrame];
+	"[<_ast.Name object at 0x7fd4c04f5eb0>, <_ast.Name object at 0x7fd4c04f5f10>, <_ast.Name object at 0x7fd4c04f5f70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f5fa0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f5af0>, <_ast.Constant object at 0x7fd4c04f5ca0>, <_ast.Constant object at 0x7fd4c04f5b50>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"ds(0)$1" -> "1(0)"	[label=round];
 	"ds(0)$1" -> "ds(0)$0"	[label=round];
-	"[<_ast.Constant object at 0x12f8f41c0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04f5910>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"ds(0)$2" -> "ds(0)$1"	[label=assignedFrom];
-	"ds(0)$2" -> "[<_ast.Constant object at 0x12f8f41c0>](0)"	[label=assignedFrom];
+	"ds(0)$2" -> "[<_ast.Constant object at 0x7fd4c04f5910>](0)"	[label=assignedFrom];
 	"x(0)$3" -> "ds(0)$2"	[label=assignedFrom];
 	"x(0)$3" -> "Percentage of total roles(0)"	[label=assignedFrom];
 	"Percentage of total roles(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
@@ -1050,31 +1040,35 @@ object at 0x12f922520>, <_ast.Constant object at 0x12f922550>](0)" -> "geek-girl
 	"y(0)$3" -> "ds(0)$2"	[label=round];
 	"y(0)$3" -> "Percentage of total roles(0)"	[label=round];
 	"fig(0)$22" -> "go(0)"	[label=Figure];
-	"fig(0)$22" -> "[<_ast.Call object at 0x12f8f47c0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12f8f47c0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$22" -> "[<_ast.Call object at 0x7fd4c04e4430>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd4c04e4430>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$23" -> "1(0)"	[label=assignedFrom];
 	"fig(0)$23" -> "fig(0)$22"	[label=assignedFrom];
 	"fig(0)$24" -> "black(0)"	[label=assignedFrom];
 	"fig(0)$24" -> "fig(0)$23"	[label=assignedFrom];
 	"fig(0)$25" -> "fig(0)$24"	[label=update_layout];
 	"fig(0)$26" -> "fig(0)$25"	[label=show];
+	"female_2019(0)$8" -> "female_2019(0)$7"	[label=fillna];
+	"female_2019(0)$8" -> "didnot Disclose(0)"	[label=fillna];
 	"didnot Disclose(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fad6a00>, <_ast.Constant object at 0x12fad6a30>, <_ast.Constant object at 0x12fad6a60>, <_ast.Constant \
-object at 0x12fad6a90>, <_ast.Constant object at 0x12fad6ac0>, <_ast.Constant object at 0x12fad6af0>, <_ast.Constant object at 0x12fad6b20>, <_\
-ast.Constant object at 0x12fad6b50>, <_ast.Constant object at 0x12fad6b80>, <_ast.Constant object at 0x12fad6bb0>, <_ast.Constant \
-object at 0x12fad6be0>, <_ast.Constant object at 0x12fad6c10>, <_ast.Constant object at 0x12fad6c40>, <_ast.Constant object at 0x12fad6c70>, <_\
-ast.Constant object at 0x12fad6ca0>, <_ast.Constant object at 0x12fad6cd0>, <_ast.Constant object at 0x12fad6d00>, <_ast.Constant \
-object at 0x12fad6d30>, <_ast.Constant object at 0x12fad6d60>, <_ast.Constant object at 0x12fad6d90>, <_ast.Constant object at 0x12fad6dc0>, <_\
-ast.Constant object at 0x12fad6df0>, <_ast.Constant object at 0x12fad6e20>, <_ast.Constant object at 0x12fad6e50>, <_ast.Constant \
-object at 0x12fad6e80>, <_ast.Constant object at 0x12fad6eb0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"salary_order(0)$0" -> "[<_ast.Constant object at 0x12fad6a00>, <_ast.Constant object at 0x12fad6a30>, <_ast.Constant object at 0x12fad6a60>, <_ast.Constant \
-object at 0x12fad6a90>, <_ast.Constant object at 0x12fad6ac0>, <_ast.Constant object at 0x12fad6af0>, <_ast.Constant object at 0x12fad6b20>, <_\
-ast.Constant object at 0x12fad6b50>, <_ast.Constant object at 0x12fad6b80>, <_ast.Constant object at 0x12fad6bb0>, <_ast.Constant \
-object at 0x12fad6be0>, <_ast.Constant object at 0x12fad6c10>, <_ast.Constant object at 0x12fad6c40>, <_ast.Constant object at 0x12fad6c70>, <_\
-ast.Constant object at 0x12fad6ca0>, <_ast.Constant object at 0x12fad6cd0>, <_ast.Constant object at 0x12fad6d00>, <_ast.Constant \
-object at 0x12fad6d30>, <_ast.Constant object at 0x12fad6d60>, <_ast.Constant object at 0x12fad6d90>, <_ast.Constant object at 0x12fad6dc0>, <_\
-ast.Constant object at 0x12fad6df0>, <_ast.Constant object at 0x12fad6e20>, <_ast.Constant object at 0x12fad6e50>, <_ast.Constant \
-object at 0x12fad6e80>, <_ast.Constant object at 0x12fad6eb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04eb460>, <_ast.Constant object at 0x7fd4c04eb790>, <_ast.Constant object at 0x7fd4c04eb7c0>, <_\
+ast.Constant object at 0x7fd4c04eb7f0>, <_ast.Constant object at 0x7fd4c04eb820>, <_ast.Constant object at 0x7fd4c04eb850>, <_ast.Constant \
+object at 0x7fd4c04eb880>, <_ast.Constant object at 0x7fd4c04eb8b0>, <_ast.Constant object at 0x7fd4c04eb8e0>, <_ast.Constant object \
+at 0x7fd4c04eb910>, <_ast.Constant object at 0x7fd4c04eb940>, <_ast.Constant object at 0x7fd4c04eb970>, <_ast.Constant object at \
+0x7fd4c04eb9a0>, <_ast.Constant object at 0x7fd4c04eb9d0>, <_ast.Constant object at 0x7fd4c04eba30>, <_ast.Constant object at 0x7fd4c04eba00>, <_\
+ast.Constant object at 0x7fd4c04eba90>, <_ast.Constant object at 0x7fd4c04ebac0>, <_ast.Constant object at 0x7fd4c04ebaf0>, <_ast.Constant \
+object at 0x7fd4c04ebb20>, <_ast.Constant object at 0x7fd4c04ebb50>, <_ast.Constant object at 0x7fd4c04ebb80>, <_ast.Constant object \
+at 0x7fd4c04ebbb0>, <_ast.Constant object at 0x7fd4c04ebbe0>, <_ast.Constant object at 0x7fd4c04ebc10>, <_ast.Constant object at \
+0x7fd4c04ebc40>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"salary_order(0)$0" -> "[<_ast.Constant object at 0x7fd4c04eb460>, <_ast.Constant object at 0x7fd4c04eb790>, <_ast.Constant object at 0x7fd4c04eb7c0>, <_\
+ast.Constant object at 0x7fd4c04eb7f0>, <_ast.Constant object at 0x7fd4c04eb820>, <_ast.Constant object at 0x7fd4c04eb850>, <_ast.Constant \
+object at 0x7fd4c04eb880>, <_ast.Constant object at 0x7fd4c04eb8b0>, <_ast.Constant object at 0x7fd4c04eb8e0>, <_ast.Constant object \
+at 0x7fd4c04eb910>, <_ast.Constant object at 0x7fd4c04eb940>, <_ast.Constant object at 0x7fd4c04eb970>, <_ast.Constant object at \
+0x7fd4c04eb9a0>, <_ast.Constant object at 0x7fd4c04eb9d0>, <_ast.Constant object at 0x7fd4c04eba30>, <_ast.Constant object at 0x7fd4c04eba00>, <_\
+ast.Constant object at 0x7fd4c04eba90>, <_ast.Constant object at 0x7fd4c04ebac0>, <_ast.Constant object at 0x7fd4c04ebaf0>, <_ast.Constant \
+object at 0x7fd4c04ebb20>, <_ast.Constant object at 0x7fd4c04ebb50>, <_ast.Constant object at 0x7fd4c04ebb80>, <_ast.Constant object \
+at 0x7fd4c04ebbb0>, <_ast.Constant object at 0x7fd4c04ebbe0>, <_ast.Constant object at 0x7fd4c04ebc10>, <_ast.Constant object at \
+0x7fd4c04ebc40>](0)"	[label=assignedFrom];
 	"data(8)" -> "plot_graph[0]"	[label=_argToVar];
 	"question(8)" -> "plot_graph[1]"	[label=_argToVar];
 	"title(8)" -> "plot_graph[2]"	[label=_argToVar];
@@ -1089,7 +1083,7 @@ object at 0x12fad6e80>, <_ast.Constant object at 0x12fad6eb0>](0)"	[label=assign
 	"trace1(8)$0" -> "dodgerblue(8)"	[label=Bar];
 	"trace1(8)$0" -> "black(8)"	[label=Bar];
 	"trace1(8)$0" -> "1(8)"	[label=Bar];
-	"data(8)$0" -> "[<_ast.Name object at 0x12fae39a0>](8)"	[label=assignedFrom];
+	"data(8)$0" -> "[<_ast.Name object at 0x7fd5008476d0>](8)"	[label=assignedFrom];
 	"layout(8)$0" -> "title(8)"	[label=Layout];
 	"layout(8)$0" -> "x_axis_title(8)"	[label=Layout];
 	"layout(8)$0" -> "y_axis_title(8)"	[label=Layout];
@@ -1101,28 +1095,40 @@ object at 0x12fad6e80>, <_ast.Constant object at 0x12fad6eb0>](0)"	[label=assign
 	"layout(8)$0" -> "category(8)"	[label=Layout];
 	"layout(8)$0" -> "array(8)"	[label=Layout];
 	"layout(8)$0" -> "salary_order(8)"	[label=Layout];
+	"fig(8)$0" -> "go(8)"	[label=Figure];
+	"fig(8)$0" -> "data(8)$0"	[label=Figure];
+	"fig(8)$0" -> "layout(8)$0"	[label=Figure];
+	"iplot[599/4]" -> "fig(8)$0"	[label=iplot];
+	"plot_graph[601/0]" -> "Percentage of Female Respondents(0)"	[label=plot_graph];
+	"plot_graph[601/0]" -> "female_2019(0)$8"	[label=plot_graph];
+	"plot_graph[601/0]" -> "What is your current yearly compensation (approximate $USD)?(0)"	[label=plot_graph];
+	"plot_graph[601/0]" -> "Salary Range of Female respondents in 2019(0)"	[label=plot_graph];
+	"plot_graph[601/0]" -> "Annual Salary in USD(0)"	[label=plot_graph];
+	"What is your current yearly compensation (approximate $USD)?(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"Salary Range of Female respondents in 2019(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"Annual Salary in USD(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"q(0)$0" -> "What is your current yearly compensation (approximate $USD)?(0)"	[label=assignedFrom];
 	"female_2019(0)$9" -> "np(0)"	[label=where];
-	"female_2019(0)$9" -> "female_2019(0)$8"	[label=where];
 	"female_2019(0)$9" -> " (0)"	[label=where];
+	"female_2019(0)$9" -> "female_2019(0)$8"	[label=where];
 	"female_2019(0)$9" -> "q(0)$0"	[label=where];
 	"female_2019(0)$9" -> "female_2019(0)$9"	[label=where];
-	"female_2019(0)$9" -> "[<_ast.Constant object at 0x12fadca60>, <_ast.Constant object at 0x12fadca90>, <_ast.Constant object at 0x12fadcac0>, <_ast.Constant \
-object at 0x12fadcaf0>, <_ast.Constant object at 0x12fadcb20>, <_ast.Constant object at 0x12fadcb50>, <_ast.Constant object at 0x12fadcb80>](\
-0)"	[label=where];
+	"female_2019(0)$9" -> "[<_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant object at 0x7fd5008527c0>, <_\
+ast.Constant object at 0x7fd5008527f0>, <_ast.Constant object at 0x7fd500852820>, <_ast.Constant object at 0x7fd500852850>, <_ast.Constant \
+object at 0x7fd500852880>](0)"	[label=where];
 	"female_2019(0)$9" -> "0-10,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fadca60>, <_ast.Constant object at 0x12fadca90>, <_ast.Constant object at 0x12fadcac0>, <_ast.Constant \
-object at 0x12fadcaf0>, <_ast.Constant object at 0x12fadcb20>, <_ast.Constant object at 0x12fadcb50>, <_ast.Constant object at 0x12fadcb80>](\
-0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant object at 0x7fd5008527c0>, <_\
+ast.Constant object at 0x7fd5008527f0>, <_ast.Constant object at 0x7fd500852820>, <_ast.Constant object at 0x7fd500852850>, <_ast.Constant \
+object at 0x7fd500852880>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"0-10,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$10" -> "np(0)"	[label=where];
 	"female_2019(0)$10" -> "q(0)$0"	[label=where];
 	"female_2019(0)$10" -> "female_2019(0)$9"	[label=where];
 	"female_2019(0)$10" -> "female_2019(0)$10"	[label=where];
-	"female_2019(0)$10" -> "[<_ast.Constant object at 0x12fadcf70>, <_ast.Constant object at 0x12fadcfa0>](0)"	[label=where];
+	"female_2019(0)$10" -> "[<_ast.Constant object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd500852c70>](0)"	[label=where];
 	"female_2019(0)$10" -> "10-20,000(0)"	[label=where];
 	"female_2019(0)$10" -> "Salary Range(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fadcf70>, <_ast.Constant object at 0x12fadcfa0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd500852c70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"10-20,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"Salary Range(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$11" -> "np(0)"	[label=where];
@@ -1130,126 +1136,126 @@ object at 0x12fadcaf0>, <_ast.Constant object at 0x12fadcb20>, <_ast.Constant ob
 	"female_2019(0)$11" -> "female_2019(0)$10"	[label=where];
 	"female_2019(0)$11" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$11" -> "female_2019(0)$11"	[label=where];
-	"female_2019(0)$11" -> "[<_ast.Constant object at 0x12fafd400>, <_ast.Constant object at 0x12fafd430>](0)"	[label=where];
+	"female_2019(0)$11" -> "[<_ast.Constant object at 0x7fd50086e160>, <_ast.Constant object at 0x7fd50086e190>](0)"	[label=where];
 	"female_2019(0)$11" -> "20-30,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafd400>, <_ast.Constant object at 0x12fafd430>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086e160>, <_ast.Constant object at 0x7fd50086e190>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"20-30,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$12" -> "np(0)"	[label=where];
 	"female_2019(0)$12" -> "q(0)$0"	[label=where];
 	"female_2019(0)$12" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$12" -> "female_2019(0)$11"	[label=where];
 	"female_2019(0)$12" -> "female_2019(0)$12"	[label=where];
-	"female_2019(0)$12" -> "[<_ast.Constant object at 0x12fafd5e0>](0)"	[label=where];
+	"female_2019(0)$12" -> "[<_ast.Constant object at 0x7fd50086e5e0>](0)"	[label=where];
 	"female_2019(0)$12" -> "30-40,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafd5e0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086e5e0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"30-40,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$13" -> "np(0)"	[label=where];
 	"female_2019(0)$13" -> "q(0)$0"	[label=where];
 	"female_2019(0)$13" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$13" -> "female_2019(0)$12"	[label=where];
 	"female_2019(0)$13" -> "female_2019(0)$13"	[label=where];
-	"female_2019(0)$13" -> "[<_ast.Constant object at 0x12fafdd90>](0)"	[label=where];
+	"female_2019(0)$13" -> "[<_ast.Constant object at 0x7fd50086ea90>](0)"	[label=where];
 	"female_2019(0)$13" -> "40-50,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafdd90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086ea90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"40-50,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$14" -> "np(0)"	[label=where];
 	"female_2019(0)$14" -> "q(0)$0"	[label=where];
 	"female_2019(0)$14" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$14" -> "female_2019(0)$13"	[label=where];
 	"female_2019(0)$14" -> "female_2019(0)$14"	[label=where];
-	"female_2019(0)$14" -> "[<_ast.Constant object at 0x12faf01f0>](0)"	[label=where];
+	"female_2019(0)$14" -> "[<_ast.Constant object at 0x7fd50086ef10>](0)"	[label=where];
 	"female_2019(0)$14" -> "50-60,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faf01f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086ef10>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"50-60,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$15" -> "np(0)"	[label=where];
 	"female_2019(0)$15" -> "q(0)$0"	[label=where];
 	"female_2019(0)$15" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$15" -> "female_2019(0)$14"	[label=where];
 	"female_2019(0)$15" -> "female_2019(0)$15"	[label=where];
-	"female_2019(0)$15" -> "[<_ast.Constant object at 0x12faf0670>](0)"	[label=where];
+	"female_2019(0)$15" -> "[<_ast.Constant object at 0x7fd50084e3a0>](0)"	[label=where];
 	"female_2019(0)$15" -> "60-70,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faf0670>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50084e3a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"60-70,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$16" -> "np(0)"	[label=where];
 	"female_2019(0)$16" -> "q(0)$0"	[label=where];
 	"female_2019(0)$16" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$16" -> "female_2019(0)$15"	[label=where];
 	"female_2019(0)$16" -> "female_2019(0)$16"	[label=where];
-	"female_2019(0)$16" -> "[<_ast.Constant object at 0x12faf0af0>](0)"	[label=where];
+	"female_2019(0)$16" -> "[<_ast.Constant object at 0x7fd50084e820>](0)"	[label=where];
 	"female_2019(0)$16" -> "70-80,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faf0af0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50084e820>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"70-80,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$17" -> "np(0)"	[label=where];
 	"female_2019(0)$17" -> "q(0)$0"	[label=where];
 	"female_2019(0)$17" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$17" -> "female_2019(0)$16"	[label=where];
 	"female_2019(0)$17" -> "female_2019(0)$17"	[label=where];
-	"female_2019(0)$17" -> "[<_ast.Constant object at 0x12faf0f70>](0)"	[label=where];
+	"female_2019(0)$17" -> "[<_ast.Constant object at 0x7fd50084eca0>](0)"	[label=where];
 	"female_2019(0)$17" -> "80-90,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faf0f70>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50084eca0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"80-90,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$18" -> "np(0)"	[label=where];
 	"female_2019(0)$18" -> "q(0)$0"	[label=where];
 	"female_2019(0)$18" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$18" -> "female_2019(0)$17"	[label=where];
 	"female_2019(0)$18" -> "female_2019(0)$18"	[label=where];
-	"female_2019(0)$18" -> "[<_ast.Constant object at 0x12faef460>](0)"	[label=where];
+	"female_2019(0)$18" -> "[<_ast.Constant object at 0x7fd500857160>](0)"	[label=where];
 	"female_2019(0)$18" -> "90-100,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faef460>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500857160>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"90-100,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$19" -> "np(0)"	[label=where];
 	"female_2019(0)$19" -> "q(0)$0"	[label=where];
 	"female_2019(0)$19" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$19" -> "female_2019(0)$18"	[label=where];
 	"female_2019(0)$19" -> "female_2019(0)$19"	[label=where];
-	"female_2019(0)$19" -> "[<_ast.Constant object at 0x12faef8b0>](0)"	[label=where];
+	"female_2019(0)$19" -> "[<_ast.Constant object at 0x7fd500857610>](0)"	[label=where];
 	"female_2019(0)$19" -> "100-125,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faef8b0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500857610>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"100-125,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$20" -> "np(0)"	[label=where];
 	"female_2019(0)$20" -> "q(0)$0"	[label=where];
 	"female_2019(0)$20" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$20" -> "female_2019(0)$19"	[label=where];
 	"female_2019(0)$20" -> "female_2019(0)$20"	[label=where];
-	"female_2019(0)$20" -> "[<_ast.Constant object at 0x12faefd60>](0)"	[label=where];
+	"female_2019(0)$20" -> "[<_ast.Constant object at 0x7fd500857a60>](0)"	[label=where];
 	"female_2019(0)$20" -> "125-150,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12faefd60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500857a60>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"125-150,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$21" -> "np(0)"	[label=where];
 	"female_2019(0)$21" -> "q(0)$0"	[label=where];
 	"female_2019(0)$21" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$21" -> "female_2019(0)$20"	[label=where];
 	"female_2019(0)$21" -> "female_2019(0)$21"	[label=where];
-	"female_2019(0)$21" -> "[<_ast.Constant object at 0x12fafc1f0>](0)"	[label=where];
+	"female_2019(0)$21" -> "[<_ast.Constant object at 0x7fd500857f10>](0)"	[label=where];
 	"female_2019(0)$21" -> "150-200,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafc1f0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500857f10>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"150-200,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$22" -> "np(0)"	[label=where];
 	"female_2019(0)$22" -> "q(0)$0"	[label=where];
 	"female_2019(0)$22" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$22" -> "female_2019(0)$21"	[label=where];
 	"female_2019(0)$22" -> "female_2019(0)$22"	[label=where];
-	"female_2019(0)$22" -> "[<_ast.Constant object at 0x12fafc670>](0)"	[label=where];
+	"female_2019(0)$22" -> "[<_ast.Constant object at 0x7fd5008623a0>](0)"	[label=where];
 	"female_2019(0)$22" -> "200-250,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafc670>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008623a0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"200-250,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$23" -> "np(0)"	[label=where];
 	"female_2019(0)$23" -> "q(0)$0"	[label=where];
 	"female_2019(0)$23" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$23" -> "female_2019(0)$22"	[label=where];
 	"female_2019(0)$23" -> "female_2019(0)$23"	[label=where];
-	"female_2019(0)$23" -> "[<_ast.Constant object at 0x12fafcb20>](0)"	[label=where];
+	"female_2019(0)$23" -> "[<_ast.Constant object at 0x7fd500862820>](0)"	[label=where];
 	"female_2019(0)$23" -> "250-300,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafcb20>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500862820>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"250-300,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$24" -> "np(0)"	[label=where];
 	"female_2019(0)$24" -> "q(0)$0"	[label=where];
 	"female_2019(0)$24" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$24" -> "female_2019(0)$23"	[label=where];
 	"female_2019(0)$24" -> "female_2019(0)$24"	[label=where];
-	"female_2019(0)$24" -> "[<_ast.Constant object at 0x12fafcf10>](0)"	[label=where];
+	"female_2019(0)$24" -> "[<_ast.Constant object at 0x7fd500862ca0>](0)"	[label=where];
 	"female_2019(0)$24" -> "300-500,000(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fafcf10>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500862ca0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"300-500,000(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$25" -> "np(0)"	[label=where];
 	"female_2019(0)$25" -> "q(0)$0"	[label=where];
@@ -1257,16 +1263,16 @@ object at 0x12fadcaf0>, <_ast.Constant object at 0x12fadcb20>, <_ast.Constant ob
 	"female_2019(0)$25" -> "female_2019(0)$24"	[label=where];
 	"female_2019(0)$25" -> "300-500,000(0)"	[label=where];
 	"female_2019(0)$25" -> "female_2019(0)$25"	[label=where];
-	"female_2019(0)$25" -> "[<_ast.Constant object at 0x12fb0d430>](0)"	[label=where];
-	"[<_ast.Constant object at 0x12fb0d430>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"female_2019(0)$25" -> "[<_ast.Constant object at 0x7fd500870190>](0)"	[label=where];
+	"[<_ast.Constant object at 0x7fd500870190>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$26" -> "np(0)"	[label=where];
 	"female_2019(0)$26" -> "q(0)$0"	[label=where];
 	"female_2019(0)$26" -> "Salary Range(0)"	[label=where];
 	"female_2019(0)$26" -> "female_2019(0)$25"	[label=where];
 	"female_2019(0)$26" -> "female_2019(0)$26"	[label=where];
-	"female_2019(0)$26" -> "[<_ast.Constant object at 0x12fb0d8b0>](0)"	[label=where];
+	"female_2019(0)$26" -> "[<_ast.Constant object at 0x7fd500870670>](0)"	[label=where];
 	"female_2019(0)$26" -> "500,000+(0)"	[label=where];
-	"[<_ast.Constant object at 0x12fb0d8b0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500870670>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"500,000+(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2019(0)$27" -> "didnot Disclose(0)"	[label=fillna];
 	"female_2019(0)$27" -> "female_2019(0)$26"	[label=fillna];
@@ -1276,25 +1282,25 @@ object at 0x12fadcaf0>, <_ast.Constant object at 0x12fadcb20>, <_ast.Constant ob
 	"I do not wish to disclose my approximate yearly compensation(0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"female_2018(0)$2" -> "didnot Disclose(0)"	[label=fillna];
 	"female_2018(0)$2" -> "female_2018(0)$1"	[label=fillna];
-	"[<_ast.Constant object at 0x12fb11280>, <_ast.Constant object at 0x12fb112b0>, <_ast.Constant object at 0x12fb112e0>, <_ast.Constant \
-object at 0x12fb11310>, <_ast.Constant object at 0x12fb11340>, <_ast.Constant object at 0x12fb11370>, <_ast.Constant object at 0x12fb113a0>, <_\
-ast.Constant object at 0x12fb113d0>, <_ast.Constant object at 0x12fb11400>, <_ast.Constant object at 0x12fb11430>, <_ast.Constant \
-object at 0x12fb11460>, <_ast.Constant object at 0x12fb11490>, <_ast.Constant object at 0x12fb114c0>, <_ast.Constant object at 0x12fb114f0>, <_\
-ast.Constant object at 0x12fb11520>, <_ast.Constant object at 0x12fb11550>, <_ast.Constant object at 0x12fb11580>, <_ast.Constant \
-object at 0x12fb115b0>, <_ast.Constant object at 0x12fb115e0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
-	"salary_order2(0)$0" -> "[<_ast.Constant object at 0x12fb11280>, <_ast.Constant object at 0x12fb112b0>, <_ast.Constant object at 0x12fb112e0>, <_ast.Constant \
-object at 0x12fb11310>, <_ast.Constant object at 0x12fb11340>, <_ast.Constant object at 0x12fb11370>, <_ast.Constant object at 0x12fb113a0>, <_\
-ast.Constant object at 0x12fb113d0>, <_ast.Constant object at 0x12fb11400>, <_ast.Constant object at 0x12fb11430>, <_ast.Constant \
-object at 0x12fb11460>, <_ast.Constant object at 0x12fb11490>, <_ast.Constant object at 0x12fb114c0>, <_ast.Constant object at 0x12fb114f0>, <_\
-ast.Constant object at 0x12fb11520>, <_ast.Constant object at 0x12fb11550>, <_ast.Constant object at 0x12fb11580>, <_ast.Constant \
-object at 0x12fb115b0>, <_ast.Constant object at 0x12fb115e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500870fd0>, <_ast.Constant object at 0x7fd500870fa0>, <_ast.Constant object at 0x7fd500870130>, <_\
+ast.Constant object at 0x7fd50084f040>, <_ast.Constant object at 0x7fd50084f070>, <_ast.Constant object at 0x7fd50084f0a0>, <_ast.Constant \
+object at 0x7fd50084f0d0>, <_ast.Constant object at 0x7fd50084f100>, <_ast.Constant object at 0x7fd50084f130>, <_ast.Constant object \
+at 0x7fd50084f160>, <_ast.Constant object at 0x7fd50084f190>, <_ast.Constant object at 0x7fd50084f1c0>, <_ast.Constant object at \
+0x7fd50084f1f0>, <_ast.Constant object at 0x7fd50084f220>, <_ast.Constant object at 0x7fd50084f250>, <_ast.Constant object at 0x7fd50084f280>, <_\
+ast.Constant object at 0x7fd50084f2b0>, <_ast.Constant object at 0x7fd50084f2e0>, <_ast.Constant object at 0x7fd50084f310>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"salary_order2(0)$0" -> "[<_ast.Constant object at 0x7fd500870fd0>, <_ast.Constant object at 0x7fd500870fa0>, <_ast.Constant object at 0x7fd500870130>, <_\
+ast.Constant object at 0x7fd50084f040>, <_ast.Constant object at 0x7fd50084f070>, <_ast.Constant object at 0x7fd50084f0a0>, <_ast.Constant \
+object at 0x7fd50084f0d0>, <_ast.Constant object at 0x7fd50084f100>, <_ast.Constant object at 0x7fd50084f130>, <_ast.Constant object \
+at 0x7fd50084f160>, <_ast.Constant object at 0x7fd50084f190>, <_ast.Constant object at 0x7fd50084f1c0>, <_ast.Constant object at \
+0x7fd50084f1f0>, <_ast.Constant object at 0x7fd50084f220>, <_ast.Constant object at 0x7fd50084f250>, <_ast.Constant object at 0x7fd50084f280>, <_\
+ast.Constant object at 0x7fd50084f2b0>, <_ast.Constant object at 0x7fd50084f2e0>, <_ast.Constant object at 0x7fd50084f310>](0)"	[label=assignedFrom];
 	"df1(0)$0" -> "Salary Range(0)"	[label=return_percentage];
 	"df1(0)$0" -> "female_2019(0)$27"	[label=return_percentage];
 	"df2(0)$0" -> "What is your current yearly compensation (approximate $USD)?(0)"	[label=return_percentage];
 	"df2(0)$0" -> "female_2018(0)$2"	[label=return_percentage];
 	"fig(0)$27" -> "go(0)"	[label=Figure];
-	"fig(0)$27" -> "[<_ast.Call object at 0x12fb119d0>, <_ast.Call object at 0x12fb11d90>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12fb119d0>, <_ast.Call object at 0x12fb11d90>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$27" -> "[<_ast.Call object at 0x7fd50084f730>, <_ast.Call object at 0x7fd50084fac0>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd50084f730>, <_ast.Call object at 0x7fd50084fac0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$28" -> "fig(0)$27"	[label=update_layout];
 	"fig(0)$29" -> "fig(0)$28"	[label=show];
 	"male_2019(0)$1" -> "male_2019(0)$0"	[label=fillna];
@@ -1306,8 +1312,8 @@ object at 0x12fb115b0>, <_ast.Constant object at 0x12fb115e0>](0)"	[label=assign
 	"df_male_salary(0)$0" -> "male_salary_2019(0)$0"	[label=assignedFrom];
 	"df_female_salary(0)$0" -> "female_salary_2019(0)$0"	[label=assignedFrom];
 	"fig(0)$30" -> "go(0)"	[label=Figure];
-	"fig(0)$30" -> "[<_ast.Call object at 0x12faf2fa0>, <_ast.Call object at 0x130b9c310>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x12faf2fa0>, <_ast.Call object at 0x130b9c310>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$30" -> "[<_ast.Call object at 0x7fd500861c70>, <_ast.Call object at 0x7fd4c0599040>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd500861c70>, <_ast.Call object at 0x7fd4c0599040>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$31" -> "fig(0)$30"	[label=update_layout];
 	"fig(0)$32" -> "fig(0)$31"	[label=show];
 	"total_data(9)" -> "return_percentage_groupbarplot[0]"	[label=_argToVar];
@@ -1319,8 +1325,8 @@ object at 0x12fb115b0>, <_ast.Constant object at 0x12fb115e0>](0)"	[label=assign
 	"percentage_df(9)$0" -> "total(9)$0"	[label=Div];
 	"percentage_df(9)$0" -> "counts_df(9)$0"	[label=Div];
 	"percentage_df(9)$0" -> "100(9)"	[label=Div];
-	"DS_2019(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=assignedFrom];
 	"DS_2019(0)$0" -> "df_2019(0)$3"	[label=assignedFrom];
+	"DS_2019(0)$0" -> "Select the title most similar to your current role (or most recent title if retired): - Selected Choice(0)"	[label=assignedFrom];
 	"DS_2019(0)$0" -> "Data Scientist(0)"	[label=assignedFrom];
 	"female_2019(0)$28" -> "didnot Disclose(0)"	[label=fillna];
 	"female_2019(0)$28" -> "female_2019(0)$27"	[label=fillna];
@@ -1339,8 +1345,8 @@ object at 0x12fb115b0>, <_ast.Constant object at 0x12fb115e0>](0)"	[label=assign
 	"df_DS_female(0)$0" -> "DS_2019(0)$0"	[label=return_percentage_groupbarplot];
 	"df_DS_female(0)$0" -> "female_DS_2019(0)$1"	[label=return_percentage_groupbarplot];
 	"fig(0)$33" -> "go(0)"	[label=Figure];
-	"fig(0)$33" -> "[<_ast.Call object at 0x130bb24f0>, <_ast.Call object at 0x130bb28b0>](0)"	[label=Figure];
-	"[<_ast.Call object at 0x130bb24f0>, <_ast.Call object at 0x130bb28b0>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
+	"fig(0)$33" -> "[<_ast.Call object at 0x7fd4c05b2190>, <_ast.Call object at 0x7fd4c05b2460>](0)"	[label=Figure];
+	"[<_ast.Call object at 0x7fd4c05b2190>, <_ast.Call object at 0x7fd4c05b2460>](0)" -> "geek-girls-rising-myth-or-reality.ipynb"	[label=appearsIn];
 	"fig(0)$34" -> "fig(0)$33"	[label=update_layout];
 	"fig(0)$35" -> "fig(0)$34"	[label=show];
 	"df_salary_temp(0)$0" -> "pd(0)"	[label=crosstab];

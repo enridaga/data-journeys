@@ -43,169 +43,45 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"print[0]" -> "The train data size before dropping Id feature is : {} (0)"	[label=print];
-	"print[0]" -> "The test data size before dropping Id feature is : {} (0)"	[label=print];
-	"print[0]" -> "
-The train data size after dropping Id feature is : {} (0)"	[label=print];
-	"print[0]" -> "The test data size after dropping Id feature is : {} (0)"	[label=print];
-	"print[0]" -> "
- mu = {:.2f} and sigma = {:.2f}
-(0)"	[label=print];
-	"print[0]" -> "all_data size is : {}(0)"	[label=print];
-	"print[0]" -> "Shape all_data: {}(0)"	[label=print];
-	"print[0]" -> "
-Skew in numerical features: 
-(0)"	[label=print];
-	"print[0]" -> "There are {} skewed numerical features to Box Cox transform(0)"	[label=print];
-	"print[0]" -> "all_data(0)$30"	[label=print];
-	"print[0]" -> "
-Lasso score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "ElasticNet score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "Kernel Ridge score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "Gradient Boosting score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "Xgboost score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "LGBM score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> " Averaged base models score: {:.4f} ({:.4f})
-(0)"	[label=print];
-	"print[0]" -> "Stacking Averaged models score: {:.4f} ({:.4f})(0)"	[label=print];
-	"print[0]" -> "rmsle(0)"	[label=print];
-	"print[0]" -> "RMSLE score on train data:(0)"	[label=print];
-	"The train data size before dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"The test data size before dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"
-The train data size after dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"The test data size after dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"
- mu = {:.2f} and sigma = {:.2f}
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"all_data size is : {}(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"Shape all_data: {}(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"
-Skew in numerical features: 
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"There are {} skewed numerical features to Box Cox transform(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"all_data(0)$30" -> "pd(0)$0"	[label=get_dummies];
-	"all_data(0)$30" -> "all_data(0)$30"	[label=get_dummies];
-	"
-Lasso score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"ElasticNet score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"Kernel Ridge score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"Gradient Boosting score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"Xgboost score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"LGBM score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	" Averaged base models score: {:.4f} ({:.4f})
-(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"Stacking Averaged models score: {:.4f} ({:.4f})(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"rmsle(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"RMSLE score on train data:(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e970>, <_ast.Constant object at 0x12f85e730>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f85e970>, <_ast.Constant object at 0x12f85e730>](0)"	[label=print];
-	"print[1]" -> "train(0)$1"	[label=print];
-	"print[1]" -> "test(0)$1"	[label=print];
-	"print[1]" -> "train(0)$2"	[label=print];
-	"print[1]" -> "test(0)$2"	[label=print];
-	"print[1]" -> "mu(0)$0"	[label=print];
-	"print[1]" -> "mu(0)$1"	[label=print];
-	"print[1]" -> "y_train(0)$0"	[label=print];
-	"print[1]" -> "all_data(0)$1"	[label=print];
-	"print[1]" -> "all_data(0)$27"	[label=print];
-	"print[1]" -> "skewness(0)$2"	[label=print];
-	"print[1]" -> "score(0)$0"	[label=print];
-	"print[1]" -> "score(0)$1"	[label=print];
-	"print[1]" -> "score(0)$2"	[label=print];
-	"print[1]" -> "score(0)$3"	[label=print];
-	"print[1]" -> "score(0)$4"	[label=print];
-	"print[1]" -> "score(0)$5"	[label=print];
-	"print[1]" -> "score(0)$6"	[label=print];
-	"print[1]" -> "score(0)$7"	[label=print];
-	"train(0)$1" -> "train(0)$0"	[label=head];
-	"train(0)$1" -> "5(0)"	[label=head];
-	"test(0)$1" -> "test(0)$0"	[label=head];
-	"test(0)$1" -> "5(0)"	[label=head];
-	"train(0)$2" -> "train(0)$1"	[label=drop];
-	"train(0)$2" -> "Id(0)"	[label=drop];
-	"test(0)$2" -> "test(0)$1"	[label=drop];
-	"test(0)$2" -> "Id(0)"	[label=drop];
-	"mu(0)$0" -> "norm(0)"	[label=fit];
-	"mu(0)$0" -> "SalePrice(0)"	[label=fit];
-	"mu(0)$0" -> "train(0)$3"	[label=fit];
-	"mu(0)$1" -> "norm(0)"	[label=fit];
-	"mu(0)$1" -> "SalePrice(0)"	[label=fit];
-	"mu(0)$1" -> "train(0)$4"	[label=fit];
-	"y_train(0)$0" -> "train(0)$4"	[label=assignedFrom];
-	"all_data(0)$1" -> "all_data(0)$0"	[label=drop];
-	"all_data(0)$1" -> "[<_ast.Constant object at 0x12fa0b550>](0)"	[label=drop];
-	"all_data(0)$27" -> "all_data(0)$27"	[label=transform];
-	"all_data(0)$27" -> "all_data(0)$26"	[label=transform];
-	"all_data(0)$27" -> "c(0)"	[label=transform];
-	"all_data(0)$27" -> "lbl(0)$0"	[label=transform];
-	"all_data(0)$27" -> "list(0)"	[label=transform];
-	"skewness(0)$2" -> "skewness(0)$2"	[label=assignedFrom];
-	"skewness(0)$2" -> "skewness(0)$1"	[label=assignedFrom];
-	"skewness(0)$2" -> "abs(0)"	[label=assignedFrom];
-	"skewness(0)$2" -> "0.75(0)"	[label=assignedFrom];
-	"score(0)$0" -> "lasso(0)$0"	[label=rmsle_cv];
-	"score(0)$1" -> "ENet(0)$0"	[label=rmsle_cv];
-	"score(0)$2" -> "KRR(0)$0"	[label=rmsle_cv];
-	"score(0)$3" -> "GBoost(0)$0"	[label=rmsle_cv];
-	"score(0)$4" -> "model_xgb(0)$0"	[label=rmsle_cv];
-	"score(0)$5" -> "model_lgb(0)$0"	[label=rmsle_cv];
-	"score(0)$6" -> "averaged_models(0)$0"	[label=rmsle_cv];
-	"score(0)$7" -> "stacked_averaged_models(0)$0"	[label=rmsle_cv];
+	"print[48/0]" -> "check_output(0)"	[label=print];
+	"print[48/0]" -> "[<_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ffdf0>](0)"	[label=print];
+	"print[48/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ffdf0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"print[2]" -> "score(0)$0"	[label=print];
-	"print[2]" -> "score(0)$1"	[label=print];
-	"print[2]" -> "score(0)$2"	[label=print];
-	"print[2]" -> "score(0)$3"	[label=print];
-	"print[2]" -> "score(0)$4"	[label=print];
-	"print[2]" -> "score(0)$5"	[label=print];
-	"print[2]" -> "score(0)$6"	[label=print];
-	"print[2]" -> "score(0)$7"	[label=print];
-	"print[2]" -> "utf8(0)"	[label=print];
-	"print[2]" -> "sigma(0)$0"	[label=print];
-	"print[2]" -> "sigma(0)$1"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> "stacked_train_pred(0)$0"	[label=print];
-	"print[2]" -> "xgb_train_pred(0)$0"	[label=print];
-	"print[2]" -> "lgb_train_pred(0)$0"	[label=print];
-	"sigma(0)$0" -> "norm(0)"	[label=fit];
-	"sigma(0)$0" -> "SalePrice(0)"	[label=fit];
-	"sigma(0)$0" -> "train(0)$3"	[label=fit];
-	"sigma(0)$1" -> "norm(0)"	[label=fit];
-	"sigma(0)$1" -> "SalePrice(0)"	[label=fit];
-	"sigma(0)$1" -> "train(0)$4"	[label=fit];
-	"0(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"stacked_train_pred(0)$0" -> "train(0)$5"	[label=predict];
-	"stacked_train_pred(0)$0" -> "stacked_averaged_models(0)$1"	[label=predict];
-	"xgb_train_pred(0)$0" -> "train(0)$5"	[label=predict];
-	"xgb_train_pred(0)$0" -> "model_xgb(0)$1"	[label=predict];
-	"lgb_train_pred(0)$0" -> "train(0)$5"	[label=predict];
-	"lgb_train_pred(0)$0" -> "model_lgb(0)$1"	[label=predict];
 	"train(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"test(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"train(0)$1" -> "train(0)$0"	[label=head];
+	"train(0)$1" -> "5(0)"	[label=head];
 	"5(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"test(0)$1" -> "test(0)$0"	[label=head];
+	"test(0)$1" -> "5(0)"	[label=head];
+	"The train data size before dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[66/0]" -> "train(0)$1"	[label=print];
+	"print[66/0]" -> "The train data size before dropping Id feature is : {} (0)"	[label=print];
+	"The test data size before dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[68/0]" -> "test(0)$1"	[label=print];
+	"print[68/0]" -> "The test data size before dropping Id feature is : {} (0)"	[label=print];
 	"train_ID(0)$0" -> "train(0)$1"	[label=assignedFrom];
 	"train_ID(0)$0" -> "Id(0)"	[label=assignedFrom];
 	"Id(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"test_ID(0)$0" -> "test(0)$1"	[label=assignedFrom];
 	"test_ID(0)$0" -> "Id(0)"	[label=assignedFrom];
+	"train(0)$2" -> "train(0)$1"	[label=drop];
+	"train(0)$2" -> "Id(0)"	[label=drop];
+	"test(0)$2" -> "test(0)$1"	[label=drop];
+	"test(0)$2" -> "Id(0)"	[label=drop];
+	"
+The train data size after dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[90/0]" -> "train(0)$2"	[label=print];
+	"print[90/0]" -> "
+The train data size after dropping Id feature is : {} (0)"	[label=print];
+	"The test data size after dropping Id feature is : {} (0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[92/0]" -> "test(0)$2"	[label=print];
+	"print[92/0]" -> "The test data size after dropping Id feature is : {} (0)"	[label=print];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
 	"ax(0)$0" -> "plt(0)"	[label=subplots];
 	"ax(0)$1" -> "ax(0)$0"	[label=scatter];
@@ -238,9 +114,23 @@ Lasso score: {:.4f} ({:.4f})
 	"sns(0)$1" -> "sns(0)$0"	[label=distplot];
 	"sns(0)$1" -> "SalePrice(0)"	[label=distplot];
 	"sns(0)$1" -> "train(0)$3"	[label=distplot];
+	"mu(0)$0" -> "norm(0)"	[label=fit];
+	"mu(0)$0" -> "SalePrice(0)"	[label=fit];
+	"mu(0)$0" -> "train(0)$3"	[label=fit];
+	"sigma(0)$0" -> "norm(0)"	[label=fit];
+	"sigma(0)$0" -> "SalePrice(0)"	[label=fit];
+	"sigma(0)$0" -> "train(0)$3"	[label=fit];
+	"
+ mu = {:.2f} and sigma = {:.2f}
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[130/0]" -> "mu(0)$0"	[label=print];
+	"print[130/0]" -> "sigma(0)$0"	[label=print];
+	"print[130/0]" -> "
+ mu = {:.2f} and sigma = {:.2f}
+(0)"	[label=print];
 	"plt(0)$6" -> "plt(0)$5"	[label=legend];
-	"plt(0)$6" -> "[<_ast.Call object at 0x12f957ca0>](0)"	[label=legend];
-	"[<_ast.Call object at 0x12f957ca0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"plt(0)$6" -> "[<_ast.Call object at 0x7fd4902ab4c0>](0)"	[label=legend];
+	"[<_ast.Call object at 0x7fd4902ab4c0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "plt(0)$6"	[label=ylabel];
 	"plt(0)$7" -> "Frequency(0)"	[label=ylabel];
 	"Frequency(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
@@ -260,9 +150,20 @@ Lasso score: {:.4f} ({:.4f})
 	"sns(0)$2" -> "SalePrice(0)"	[label=distplot];
 	"sns(0)$2" -> "sns(0)$1"	[label=distplot];
 	"sns(0)$2" -> "train(0)$4"	[label=distplot];
+	"mu(0)$1" -> "norm(0)"	[label=fit];
+	"mu(0)$1" -> "SalePrice(0)"	[label=fit];
+	"mu(0)$1" -> "train(0)$4"	[label=fit];
+	"sigma(0)$1" -> "norm(0)"	[label=fit];
+	"sigma(0)$1" -> "SalePrice(0)"	[label=fit];
+	"sigma(0)$1" -> "train(0)$4"	[label=fit];
+	"print[169/0]" -> "
+ mu = {:.2f} and sigma = {:.2f}
+(0)"	[label=print];
+	"print[169/0]" -> "mu(0)$1"	[label=print];
+	"print[169/0]" -> "sigma(0)$1"	[label=print];
 	"plt(0)$10" -> "plt(0)$9"	[label=legend];
-	"plt(0)$10" -> "[<_ast.Call object at 0x12fadefd0>](0)"	[label=legend];
-	"[<_ast.Call object at 0x12fadefd0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"plt(0)$10" -> "[<_ast.Call object at 0x7fd5008328e0>](0)"	[label=legend];
+	"[<_ast.Call object at 0x7fd5008328e0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"plt(0)$11" -> "Frequency(0)"	[label=ylabel];
 	"plt(0)$11" -> "plt(0)$10"	[label=ylabel];
 	"plt(0)$12" -> "SalePrice distribution(0)"	[label=title];
@@ -273,16 +174,23 @@ Lasso score: {:.4f} ({:.4f})
 	"res(0)$1" -> "train(0)$4"	[label=probplot];
 	"res(0)$1" -> "plt(0)$12"	[label=probplot];
 	"plt(0)$13" -> "plt(0)$12"	[label=show];
-	"ntrain(0)$0" -> "0(0)"	[label=assignedFrom];
 	"ntrain(0)$0" -> "train(0)$4"	[label=assignedFrom];
+	"ntrain(0)$0" -> "0(0)"	[label=assignedFrom];
+	"0(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"ntest(0)$0" -> "test(0)$2"	[label=assignedFrom];
 	"ntest(0)$0" -> "0(0)"	[label=assignedFrom];
+	"y_train(0)$0" -> "train(0)$4"	[label=assignedFrom];
 	"all_data(0)$0" -> "pd(0)$0"	[label=reset_index];
 	"all_data(0)$0" -> "test(0)$2"	[label=reset_index];
 	"all_data(0)$0" -> "train(0)$4"	[label=reset_index];
 	"all_data(0)$0" -> "True(0)"	[label=reset_index];
 	"True(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fa0b550>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"all_data(0)$1" -> "all_data(0)$0"	[label=drop];
+	"all_data(0)$1" -> "[<_ast.Constant object at 0x7fd5007f0a00>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd5007f0a00>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"all_data size is : {}(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[203/0]" -> "all_data(0)$1"	[label=print];
+	"print[203/0]" -> "all_data size is : {}(0)"	[label=print];
 	"all_data_na(0)$0" -> "all_data(0)$1"	[label=Mult];
 	"all_data_na(0)$0" -> "len(0)"	[label=Mult];
 	"all_data_na(0)$0" -> "100(0)"	[label=Mult];
@@ -415,9 +323,9 @@ Lasso score: {:.4f} ({:.4f})
 	"all_data(0)$14" -> "MSZoning(0)"	[label=fillna];
 	"MSZoning(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"all_data(0)$15" -> "all_data(0)$14"	[label=drop];
-	"all_data(0)$15" -> "[<_ast.Constant object at 0x12f87aa90>](0)"	[label=drop];
+	"all_data(0)$15" -> "[<_ast.Constant object at 0x7fd50082a7c0>](0)"	[label=drop];
 	"all_data(0)$15" -> "1(0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f87aa90>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082a7c0>](0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"1(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"all_data(0)$16" -> "all_data(0)$15"	[label=fillna];
 	"all_data(0)$16" -> "Functional(0)"	[label=fillna];
@@ -526,8 +434,16 @@ Lasso score: {:.4f} ({:.4f})
 	"lbl(0)$0" -> "lbl(0)"	[label=fit];
 	"lbl(0)$0" -> "list(0)"	[label=fit];
 	"list(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"all_data(0)$28" -> "all_data(0)$27"	[label=Add];
+	"all_data(0)$27" -> "all_data(0)$26"	[label=transform];
+	"all_data(0)$27" -> "c(0)"	[label=transform];
+	"all_data(0)$27" -> "lbl(0)$0"	[label=transform];
+	"all_data(0)$27" -> "list(0)"	[label=transform];
+	"all_data(0)$27" -> "all_data(0)$27"	[label=transform];
+	"Shape all_data: {}(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[328/0]" -> "all_data(0)$27"	[label=print];
+	"print[328/0]" -> "Shape all_data: {}(0)"	[label=print];
 	"all_data(0)$28" -> "TotalBsmtSF(0)"	[label=Add];
+	"all_data(0)$28" -> "all_data(0)$27"	[label=Add];
 	"all_data(0)$28" -> "all_data(0)$28"	[label=Add];
 	"all_data(0)$28" -> "1stFlrSF(0)"	[label=Add];
 	"all_data(0)$28" -> "2ndFlrSF(0)"	[label=Add];
@@ -541,6 +457,12 @@ Lasso score: {:.4f} ({:.4f})
 	"skewed_feats(0)$0" -> "False(0)"	[label=sort_values];
 	"skewed_feats(0)$0" -> "all_data(0)$28"	[label=sort_values];
 	"skewed_feats(0)$0" -> "numeric_feats(0)$0"	[label=sort_values];
+	"
+Skew in numerical features: 
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[346/0]" -> "
+Skew in numerical features: 
+(0)"	[label=print];
 	"skewness(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"skewness(0)$0" -> "skewed_feats(0)$0"	[label=DataFrame];
 	"skewness(0)$0" -> "Skew(0)"	[label=DataFrame];
@@ -548,8 +470,16 @@ Lasso score: {:.4f} ({:.4f})
 	"skewness(0)$1" -> "skewness(0)$0"	[label=head];
 	"skewness(0)$1" -> "10(0)"	[label=head];
 	"10(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"skewness(0)$2" -> "skewness(0)$1"	[label=assignedFrom];
+	"skewness(0)$2" -> "skewness(0)$2"	[label=assignedFrom];
+	"skewness(0)$2" -> "abs(0)"	[label=assignedFrom];
+	"skewness(0)$2" -> "0.75(0)"	[label=assignedFrom];
 	"abs(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"0.75(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"There are {} skewed numerical features to Box Cox transform(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[354/0]" -> "0(0)"	[label=print];
+	"print[354/0]" -> "skewness(0)$2"	[label=print];
+	"print[354/0]" -> "There are {} skewed numerical features to Box Cox transform(0)"	[label=print];
 	"scipy.special" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=importedBy];
 	boxcox1p -> "scipy.special"	[label=importedBy];
 	"boxcox1p(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
@@ -562,10 +492,13 @@ Lasso score: {:.4f} ({:.4f})
 	"all_data(0)$29" -> "all_data(0)$28"	[label=boxcox1p];
 	"all_data(0)$29" -> "lam(0)$0"	[label=boxcox1p];
 	"all_data(0)$29" -> "feat(0)"	[label=boxcox1p];
-	"train(0)$5" -> "all_data(0)$30"	[label=assignedFrom];
+	"all_data(0)$30" -> "pd(0)$0"	[label=get_dummies];
+	"all_data(0)$30" -> "all_data(0)$30"	[label=get_dummies];
+	"print[377/0]" -> "all_data(0)$30"	[label=print];
 	"train(0)$5" -> "ntrain(0)$0"	[label=assignedFrom];
-	"test(0)$3" -> "all_data(0)$30"	[label=assignedFrom];
+	"train(0)$5" -> "all_data(0)$30"	[label=assignedFrom];
 	"test(0)$3" -> "ntrain(0)$0"	[label=assignedFrom];
+	"test(0)$3" -> "all_data(0)$30"	[label=assignedFrom];
 	"sklearn.linear_model" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=importedBy];
 	ElasticNet -> "sklearn.linear_model"	[label=importedBy];
 	"ElasticNet(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
@@ -716,6 +649,44 @@ Lasso score: {:.4f} ({:.4f})
 	"9(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"6(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
 	"11(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"score(0)$0" -> "lasso(0)$0"	[label=rmsle_cv];
+	"
+Lasso score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[454/0]" -> "score(0)$0"	[label=print];
+	"print[454/0]" -> "
+Lasso score: {:.4f} ({:.4f})
+(0)"	[label=print];
+	"score(0)$1" -> "ENet(0)$0"	[label=rmsle_cv];
+	"ElasticNet score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[457/0]" -> "score(0)$1"	[label=print];
+	"print[457/0]" -> "ElasticNet score: {:.4f} ({:.4f})
+(0)"	[label=print];
+	"score(0)$2" -> "KRR(0)$0"	[label=rmsle_cv];
+	"Kernel Ridge score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[460/0]" -> "score(0)$2"	[label=print];
+	"print[460/0]" -> "Kernel Ridge score: {:.4f} ({:.4f})
+(0)"	[label=print];
+	"score(0)$3" -> "GBoost(0)$0"	[label=rmsle_cv];
+	"Gradient Boosting score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[463/0]" -> "score(0)$3"	[label=print];
+	"print[463/0]" -> "Gradient Boosting score: {:.4f} ({:.4f})
+(0)"	[label=print];
+	"score(0)$4" -> "model_xgb(0)$0"	[label=rmsle_cv];
+	"Xgboost score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[468/0]" -> "score(0)$4"	[label=print];
+	"print[468/0]" -> "Xgboost score: {:.4f} ({:.4f})
+(0)"	[label=print];
+	"score(0)$5" -> "model_lgb(0)$0"	[label=rmsle_cv];
+	"LGBM score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[471/0]" -> "score(0)$5"	[label=print];
+	"print[471/0]" -> "LGBM score: {:.4f} ({:.4f})
+(0)"	[label=print];
 	"self(4)" -> "__init__[0]"	[label=_argToVar];
 	"models(4)" -> "__init__[1]"	[label=_argToVar];
 	"self(4)$0" -> "self(4)"	[label=assignedFrom];
@@ -741,6 +712,12 @@ Lasso score: {:.4f} ({:.4f})
 	"averaged_models(0)$0" -> "ENet(0)$0"	[label=AveragingModels];
 	"averaged_models(0)$0" -> "KRR(0)$0"	[label=AveragingModels];
 	"averaged_models(0)$0" -> "GBoost(0)$0"	[label=AveragingModels];
+	"score(0)$6" -> "averaged_models(0)$0"	[label=rmsle_cv];
+	" Averaged base models score: {:.4f} ({:.4f})
+(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[517/0]" -> "score(0)$6"	[label=print];
+	"print[517/0]" -> " Averaged base models score: {:.4f} ({:.4f})
+(0)"	[label=print];
 	"self(8)" -> "__init__[0]"	[label=_argToVar];
 	"base_models(8)" -> "__init__[1]"	[label=_argToVar];
 	"meta_model(8)" -> "__init__[2]"	[label=_argToVar];
@@ -804,32 +781,56 @@ Lasso score: {:.4f} ({:.4f})
 	"stacked_averaged_models(0)$0" -> "ENet(0)$0"	[label=StackingAveragedModels];
 	"stacked_averaged_models(0)$0" -> "KRR(0)$0"	[label=StackingAveragedModels];
 	"stacked_averaged_models(0)$0" -> "GBoost(0)$0"	[label=StackingAveragedModels];
+	"score(0)$7" -> "stacked_averaged_models(0)$0"	[label=rmsle_cv];
+	"Stacking Averaged models score: {:.4f} ({:.4f})(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[593/0]" -> "score(0)$7"	[label=print];
+	"print[593/0]" -> "Stacking Averaged models score: {:.4f} ({:.4f})(0)"	[label=print];
 	"y(11)" -> "rmsle[0]"	[label=_argToVar];
 	"y_pred(11)" -> "rmsle[1]"	[label=_argToVar];
 	"stacked_averaged_models(0)$1" -> "y_train(0)$0"	[label=fit];
 	"stacked_averaged_models(0)$1" -> "train(0)$5"	[label=fit];
 	"stacked_averaged_models(0)$1" -> "stacked_averaged_models(0)$0"	[label=fit];
+	"stacked_train_pred(0)$0" -> "train(0)$5"	[label=predict];
+	"stacked_train_pred(0)$0" -> "stacked_averaged_models(0)$1"	[label=predict];
 	"stacked_pred(0)$0" -> "np(0)"	[label=expm1];
 	"stacked_pred(0)$0" -> "test(0)$3"	[label=expm1];
 	"stacked_pred(0)$0" -> "stacked_averaged_models(0)$1"	[label=expm1];
+	"rmsle(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[603/0]" -> "y_train(0)$0"	[label=print];
+	"print[603/0]" -> "stacked_train_pred(0)$0"	[label=print];
+	"print[603/0]" -> "rmsle(0)"	[label=print];
 	"model_xgb(0)$1" -> "y_train(0)$0"	[label=fit];
 	"model_xgb(0)$1" -> "train(0)$5"	[label=fit];
 	"model_xgb(0)$1" -> "model_xgb(0)$0"	[label=fit];
+	"xgb_train_pred(0)$0" -> "train(0)$5"	[label=predict];
+	"xgb_train_pred(0)$0" -> "model_xgb(0)$1"	[label=predict];
 	"xgb_pred(0)$0" -> "np(0)"	[label=expm1];
 	"xgb_pred(0)$0" -> "test(0)$3"	[label=expm1];
 	"xgb_pred(0)$0" -> "model_xgb(0)$1"	[label=expm1];
+	"print[610/0]" -> "y_train(0)$0"	[label=print];
+	"print[610/0]" -> "rmsle(0)"	[label=print];
+	"print[610/0]" -> "xgb_train_pred(0)$0"	[label=print];
 	"model_lgb(0)$1" -> "y_train(0)$0"	[label=fit];
 	"model_lgb(0)$1" -> "train(0)$5"	[label=fit];
 	"model_lgb(0)$1" -> "model_lgb(0)$0"	[label=fit];
+	"lgb_train_pred(0)$0" -> "train(0)$5"	[label=predict];
+	"lgb_train_pred(0)$0" -> "model_lgb(0)$1"	[label=predict];
 	"lgb_pred(0)$0" -> "np(0)"	[label=expm1];
 	"lgb_pred(0)$0" -> "test(0)$3"	[label=expm1];
 	"lgb_pred(0)$0" -> "model_lgb(0)$1"	[label=expm1];
+	"print[617/0]" -> "y_train(0)$0"	[label=print];
+	"print[617/0]" -> "rmsle(0)"	[label=print];
+	"print[617/0]" -> "lgb_train_pred(0)$0"	[label=print];
+	"RMSLE score on train data:(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
+	"print[622/0]" -> "RMSLE score on train data:(0)"	[label=print];
+	"print[624/0]" -> "y_train(0)$0"	[label=print];
+	"print[624/0]" -> "0.15(0)"	[label=print];
+	"print[624/0]" -> "stacked_train_pred(0)$0"	[label=print];
+	"print[624/0]" -> "rmsle(0)"	[label=print];
+	"print[624/0]" -> "xgb_train_pred(0)$0"	[label=print];
+	"print[624/0]" -> "lgb_train_pred(0)$0"	[label=print];
+	"print[624/0]" -> "0.7(0)"	[label=print];
 	"0.7(0)" -> "stacked-regressions-top-4-on-leaderboard.ipynb"	[label=appearsIn];
-	"print[3]" -> "0.7(0)"	[label=print];
-	"print[4]" -> "xgb_train_pred(0)$0"	[label=print];
-	"print[5]" -> "0.15(0)"	[label=print];
-	"print[6]" -> "lgb_train_pred(0)$0"	[label=print];
-	"print[7]" -> "0.15(0)"	[label=print];
 	"ensemble(0)$0" -> "0.15(0)"	[label=Add];
 	"ensemble(0)$0" -> "stacked_pred(0)$0"	[label=Add];
 	"ensemble(0)$0" -> "xgb_pred(0)$0"	[label=Add];

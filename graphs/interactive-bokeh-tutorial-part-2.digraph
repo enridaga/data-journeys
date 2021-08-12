@@ -9,11 +9,11 @@ strict digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f989dc0>, <_ast.Constant object at 0x12f989af0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f989dc0>, <_ast.Constant object at 0x12f989af0>](0)"	[label=print];
+	"print[13/0]" -> "check_output(0)"	[label=print];
+	"print[13/0]" -> "[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0d90>](0)"	[label=print];
+	"print[13/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0d90>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"bokeh.io" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
 	output_file -> "bokeh.io"	[label=importedBy];
 	"output_file(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
@@ -94,24 +94,24 @@ strict digraph "" {
 	"Publisher(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"Platform(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"factors(0)$0" -> "data(0)$6"	[label=tolist];
-	"[<_ast.Constant object at 0x12f8f5670>, <_ast.Constant object at 0x12f8f5c70>, <_ast.Constant object at 0x12f8f5340>, <_ast.Constant \
-object at 0x12f8f5790>, <_ast.Constant object at 0x12f8f5160>, <_ast.Constant object at 0x12f8f5df0>, <_ast.Constant object at 0x12f8f59a0>, <_\
-ast.Constant object at 0x12f8f5490>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5c40>, <_ast.Constant \
-object at 0x12f8f5ee0>, <_ast.Constant object at 0x12f8f5d90>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12f8f5670>, <_ast.Constant object at 0x12f8f5c70>, <_ast.Constant object at 0x12f8f5340>, <_ast.Constant \
-object at 0x12f8f5790>, <_ast.Constant object at 0x12f8f5160>, <_ast.Constant object at 0x12f8f5df0>, <_ast.Constant object at 0x12f8f59a0>, <_\
-ast.Constant object at 0x12f8f5490>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5c40>, <_ast.Constant \
-object at 0x12f8f5ee0>, <_ast.Constant object at 0x12f8f5d90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048e760>, <_\
+ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object \
+at 0x7fd4c048ea90>, <_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048ef70>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048e760>, <_\
+ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object \
+at 0x7fd4c048ea90>, <_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048ef70>](0)"	[label=assignedFrom];
 	"color_mapper(0)$0" -> "factors(0)$0"	[label=CategoricalColorMapper];
 	"color_mapper(0)$0" -> "colors(0)$0"	[label=CategoricalColorMapper];
-	"[<_ast.Tuple object at 0x12f8f5e80>, <_ast.Tuple object at 0x12f85ebb0>, <_ast.Tuple object at 0x12f85e7f0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"hover(0)$0" -> "[<_ast.Tuple object at 0x12f8f5e80>, <_ast.Tuple object at 0x12f85ebb0>, <_ast.Tuple object at 0x12f85e7f0>](0)"	[label=HoverTool];
+	"[<_ast.Tuple object at 0x7fd4902abe20>, <_ast.Tuple object at 0x7fd4902abdf0>, <_ast.Tuple object at 0x7fd4902ab100>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"hover(0)$0" -> "[<_ast.Tuple object at 0x7fd4902abe20>, <_ast.Tuple object at 0x7fd4902abdf0>, <_ast.Tuple object at 0x7fd4902ab100>](0)"	[label=HoverTool];
 	"Video Game Sales(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"plot(0)$0" -> "Video Game Sales(0)"	[label=figure];
-	"plot(0)$0" -> "[<_ast.Name object at 0x12f85e610>, <_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant \
-object at 0x12f85e6a0>](0)"	[label=figure];
-	"[<_ast.Name object at 0x12f85e610>, <_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant \
-object at 0x12f85e6a0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"plot(0)$0" -> "[<_ast.Name object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant \
+object at 0x7fd4902abd00>](0)"	[label=figure];
+	"[<_ast.Name object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant \
+object at 0x7fd4902abd00>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"plot(0)$1" -> "x(0)$0"	[label=circle];
 	"plot(0)$1" -> "y(0)$0"	[label=circle];
 	"plot(0)$1" -> "plot(0)$0"	[label=circle];
@@ -135,20 +135,20 @@ object at 0x12f85e6a0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=
 	"plot(1)$0" -> "plot(1)"	[label=assignedFrom];
 	"plot(1)$1" -> "c2(1)$0"	[label=assignedFrom];
 	"plot(1)$1" -> "plot(1)$0"	[label=assignedFrom];
-	"show[0]" -> "plot(0)$1"	[label=show];
+	"show[80/0]" -> "plot(0)$1"	[label=show];
+	"show[80/0]" -> "True(0)"	[label=show];
 	"True(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"show[1]" -> "True(0)"	[label=show];
 	"update(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"interact[0]" -> "update(0)"	[label=interact];
-	"[<_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4f3d0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"interact[1]" -> "[<_ast.Constant object at 0x12fc4fd60>, <_ast.Constant object at 0x12fc4ff40>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4f3d0>](0)"	[label=interact];
-	"[<_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant \
-object at 0x12fc4f640>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"interact[2]" -> "[<_ast.Constant object at 0x12fc4f310>, <_ast.Constant object at 0x12fc4fd00>, <_ast.Constant object at 0x12fc4f280>, <_ast.Constant \
-object at 0x12fc4f640>](0)"	[label=interact];
-	"interact[3]" -> "1980(0)"	[label=interact];
+	"interact[83/0]" -> "1980(0)"	[label=interact];
+	"interact[83/0]" -> "update(0)"	[label=interact];
+	"interact[83/0]" -> "[<_ast.Constant object at 0x7fd500836550>, <_ast.Constant object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836be0>, <_\
+ast.Constant object at 0x7fd5008361f0>](0)"	[label=interact];
+	"interact[83/0]" -> "[<_ast.Constant object at 0x7fd500836640>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836940>, <_\
+ast.Constant object at 0x7fd500836f70>](0)"	[label=interact];
+	"interact[83/0]" -> "2020(0)"	[label=interact];
+	"[<_ast.Constant object at 0x7fd500836550>, <_ast.Constant object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836be0>, <_\
+ast.Constant object at 0x7fd5008361f0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836640>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836940>, <_\
+ast.Constant object at 0x7fd500836f70>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
 	"2020(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
-	"interact[4]" -> "2020(0)"	[label=interact];
 }

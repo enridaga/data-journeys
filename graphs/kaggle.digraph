@@ -38,37 +38,19 @@ digraph "" {
 	"sns(0)$0" -> "SalePrice(0)"	[label=distplot];
 	"SalePrice(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"Skewness: \%f(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"print[0]" -> "Skewness: \%f(0)"	[label=print];
-	"print[0]" -> "Kurtosis: \%f(0)"	[label=print];
-	"print[0]" -> "clf(0)"	[label=print];
-	"print[0]" -> "str(0)"	[label=print];
-	"print[0]" -> "y_pred(0)$1"	[label=print];
-	"print[0]" -> "x(0)$2"	[label=print];
-	"print[0]" -> "y_te_pred(0)$0"	[label=print];
+	"print[24/0]" -> "data_train(0)$1"	[label=print];
+	"print[24/0]" -> "SalePrice(0)"	[label=print];
+	"print[24/0]" -> "Skewness: \%f(0)"	[label=print];
 	"Kurtosis: \%f(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"clf(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"clf(0)" -> "clfs(0)$0"	[label=iteratorOf];
-	"str(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"y_pred(0)$1" -> "X_test(0)$1"	[label=predict];
-	"y_pred(0)$1" -> "clf(0)$1"	[label=predict];
-	"x(0)$2" -> "data_test_x(0)$1"	[label=assignedFrom];
-	"y_te_pred(0)$0" -> "x(0)$2"	[label=predict];
-	"y_te_pred(0)$0" -> "rfr(0)$0"	[label=predict];
-	"print[1]" -> "data_train(0)$1"	[label=print];
-	"print[1]" -> " cost:(0)"	[label=print];
-	"print[1]" -> " Error:(0)"	[label=print];
-	"print[1]" -> "e(0)"	[label=print];
-	" cost:(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	" Error:(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"e(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"print[2]" -> "SalePrice(0)"	[label=print];
-	"print[2]" -> "str(0)"	[label=print];
+	"print[25/0]" -> "data_train(0)$1"	[label=print];
+	"print[25/0]" -> "SalePrice(0)"	[label=print];
+	"print[25/0]" -> "Kurtosis: \%f(0)"	[label=print];
 	"CentralAir(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$0" -> "CentralAir(0)"	[label=assignedFrom];
 	"data(0)$0" -> "pd(0)"	[label=concat];
-	"data(0)$0" -> "[<_ast.Subscript object at 0x12f85ef70>, <_ast.Subscript object at 0x12f85ebe0>](0)"	[label=concat];
+	"data(0)$0" -> "[<_ast.Subscript object at 0x7fd4c04cc760>, <_ast.Subscript object at 0x7fd4c04cc1c0>](0)"	[label=concat];
 	"data(0)$0" -> "1(0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f85ef70>, <_ast.Subscript object at 0x12f85ebe0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"[<_ast.Subscript object at 0x7fd4c04cc760>, <_ast.Subscript object at 0x7fd4c04cc1c0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"1(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"fig(0)$0" -> "sns(0)$0"	[label=boxplot];
 	"fig(0)$0" -> "SalePrice(0)"	[label=boxplot];
@@ -79,8 +61,8 @@ digraph "" {
 	"var(0)$1" -> "OverallQual(0)"	[label=assignedFrom];
 	"data(0)$1" -> "pd(0)"	[label=concat];
 	"data(0)$1" -> "1(0)"	[label=concat];
-	"data(0)$1" -> "[<_ast.Subscript object at 0x12fc4fee0>, <_ast.Subscript object at 0x12fc4f520>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fc4fee0>, <_ast.Subscript object at 0x12fc4f520>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Subscript object at 0x7fd500999250>, <_ast.Subscript object at 0x7fd500999ee0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500999250>, <_ast.Subscript object at 0x7fd500999ee0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"fig(0)$2" -> "sns(0)$0"	[label=boxplot];
 	"fig(0)$2" -> "SalePrice(0)"	[label=boxplot];
 	"fig(0)$2" -> "var(0)$1"	[label=boxplot];
@@ -90,8 +72,8 @@ digraph "" {
 	"var(0)$2" -> "YearBuilt(0)"	[label=assignedFrom];
 	"data(0)$2" -> "pd(0)"	[label=concat];
 	"data(0)$2" -> "1(0)"	[label=concat];
-	"data(0)$2" -> "[<_ast.Subscript object at 0x12fc4f820>, <_ast.Subscript object at 0x12fadec40>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fc4f820>, <_ast.Subscript object at 0x12fadec40>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Subscript object at 0x7fd500999460>, <_ast.Subscript object at 0x7fd5009993a0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500999460>, <_ast.Subscript object at 0x7fd5009993a0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"f(0)$0" -> "plt(0)"	[label=subplots];
 	"f(0)$0" -> "26(0)"	[label=subplots];
 	"f(0)$0" -> "12(0)"	[label=subplots];
@@ -108,15 +90,15 @@ digraph "" {
 	"var(0)$3" -> "YearBuilt(0)"	[label=assignedFrom];
 	"data(0)$3" -> "pd(0)"	[label=concat];
 	"data(0)$3" -> "1(0)"	[label=concat];
-	"data(0)$3" -> "[<_ast.Subscript object at 0x12fade520>, <_ast.Subscript object at 0x12fade430>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fade520>, <_ast.Subscript object at 0x12fade430>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Subscript object at 0x7fd4902ab0a0>, <_ast.Subscript object at 0x7fd4902abca0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4902ab0a0>, <_ast.Subscript object at 0x7fd4902abca0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$4" -> "data(0)$3"	[label=scatter];
 	"Neighborhood(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$4" -> "Neighborhood(0)"	[label=assignedFrom];
 	"data(0)$5" -> "pd(0)"	[label=concat];
 	"data(0)$5" -> "1(0)"	[label=concat];
-	"data(0)$5" -> "[<_ast.Subscript object at 0x12f8f5b50>, <_ast.Subscript object at 0x12f8f5940>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f8f5b50>, <_ast.Subscript object at 0x12f8f5940>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Subscript object at 0x7fd4902abf40>, <_ast.Subscript object at 0x7fd4902ab760>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4902abf40>, <_ast.Subscript object at 0x7fd4902ab760>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"f(0)$1" -> "plt(0)"	[label=subplots];
 	"f(0)$1" -> "26(0)"	[label=subplots];
 	"f(0)$1" -> "12(0)"	[label=subplots];
@@ -134,43 +116,43 @@ digraph "" {
 	"x(0)" -> "Neighborhood(0)"	[label=iteratorOf];
 	"x(0)" -> "data(0)$5"	[label=iteratorOf];
 	"x(0)" -> "f_names(0)$0"	[label=iteratorOf];
-	"f_names(0)$0" -> "[<_ast.Constant object at 0x12f88b8b0>, <_ast.Constant object at 0x12f88b910>](0)"	[label=assignedFrom];
+	"f_names(0)$0" -> "[<_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832b20>](0)"	[label=assignedFrom];
 	"location(0)$1" -> "location(0)$0"	[label=append];
 	"location(0)$1" -> "x(0)"	[label=append];
 	"data(0)$6" -> "data(0)$5"	[label=sort_values];
-	"data(0)$6" -> "[<_ast.Constant object at 0x12f9171c0>, <_ast.Constant object at 0x12f917b50>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f9171c0>, <_ast.Constant object at 0x12f917b50>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Constant object at 0x7fd5009b0520>, <_ast.Constant object at 0x7fd5009b0280>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd5009b0520>, <_ast.Constant object at 0x7fd5009b0280>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"nb_data(0)$0" -> "data(0)$6"	[label=assignedFrom];
 	"LotArea(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$5" -> "LotArea(0)"	[label=assignedFrom];
 	"data(0)$7" -> "pd(0)"	[label=concat];
 	"data(0)$7" -> "1(0)"	[label=concat];
-	"data(0)$7" -> "[<_ast.Subscript object at 0x12f917c10>, <_ast.Subscript object at 0x12f917550>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f917c10>, <_ast.Subscript object at 0x12f917550>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$7" -> "[<_ast.Subscript object at 0x7fd5009b00a0>, <_ast.Subscript object at 0x7fd5009b04f0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd5009b00a0>, <_ast.Subscript object at 0x7fd5009b04f0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$8" -> "data(0)$7"	[label=scatter];
 	"GrLivArea(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$6" -> "GrLivArea(0)"	[label=assignedFrom];
 	"data(0)$9" -> "pd(0)"	[label=concat];
 	"data(0)$9" -> "1(0)"	[label=concat];
-	"data(0)$9" -> "[<_ast.Subscript object at 0x12f9177c0>, <_ast.Subscript object at 0x12f917a90>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f9177c0>, <_ast.Subscript object at 0x12f917a90>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$9" -> "[<_ast.Subscript object at 0x7fd5007f0280>, <_ast.Subscript object at 0x7fd5007f0580>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd5007f0280>, <_ast.Subscript object at 0x7fd5007f0580>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$10" -> "data(0)$9"	[label=scatter];
 	"TotalBsmtSF(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$7" -> "TotalBsmtSF(0)"	[label=assignedFrom];
 	"data(0)$11" -> "pd(0)"	[label=concat];
 	"data(0)$11" -> "1(0)"	[label=concat];
-	"data(0)$11" -> "[<_ast.Subscript object at 0x12fa55580>, <_ast.Subscript object at 0x12fa55e50>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa55580>, <_ast.Subscript object at 0x12fa55e50>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$11" -> "[<_ast.Subscript object at 0x7fd5007f09a0>, <_ast.Subscript object at 0x7fd4c04ff700>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd5007f09a0>, <_ast.Subscript object at 0x7fd4c04ff700>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$12" -> "data(0)$11"	[label=scatter];
 	"MiscVal(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"var(0)$8" -> "MiscVal(0)"	[label=assignedFrom];
 	"data(0)$13" -> "pd(0)"	[label=concat];
 	"data(0)$13" -> "1(0)"	[label=concat];
-	"data(0)$13" -> "[<_ast.Subscript object at 0x12fa55370>, <_ast.Subscript object at 0x12fa55400>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fa55370>, <_ast.Subscript object at 0x12fa55400>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$13" -> "[<_ast.Subscript object at 0x7fd4c04ff730>, <_ast.Subscript object at 0x7fd4c04ff1f0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c04ff730>, <_ast.Subscript object at 0x7fd4c04ff1f0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$14" -> "data(0)$13"	[label=scatter];
-	"[<_ast.Constant object at 0x12f889130>, <_ast.Constant object at 0x12f8890d0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"var(0)$9" -> "[<_ast.Constant object at 0x12f889130>, <_ast.Constant object at 0x12f8890d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff460>, <_ast.Constant object at 0x7fd4c04ff250>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"var(0)$9" -> "[<_ast.Constant object at 0x7fd4c04ff460>, <_ast.Constant object at 0x7fd4c04ff250>](0)"	[label=assignedFrom];
 	"range(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"index(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"index(0)" -> "range(0)"	[label=iteratorOf];
@@ -178,8 +160,8 @@ digraph "" {
 	"2(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$15" -> "pd(0)"	[label=concat];
 	"data(0)$15" -> "1(0)"	[label=concat];
-	"data(0)$15" -> "[<_ast.Subscript object at 0x12f889250>, <_ast.Subscript object at 0x12f889640>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f889250>, <_ast.Subscript object at 0x12f889640>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data(0)$15" -> "[<_ast.Subscript object at 0x7fd4c04ff520>, <_ast.Subscript object at 0x7fd500832310>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c04ff520>, <_ast.Subscript object at 0x7fd500832310>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data(0)$16" -> "data(0)$15"	[label=scatter];
 	"corrmat(0)$0" -> "data_train(0)$1"	[label=corr];
 	"f(0)$2" -> "plt(0)"	[label=subplots];
@@ -196,7 +178,7 @@ digraph "" {
 	preprocessing -> sklearn	[label=importedBy];
 	"preprocessing(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"preprocessing(0)" -> preprocessing	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f88b8b0>, <_ast.Constant object at 0x12f88b910>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832b20>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"label(0)$0" -> "preprocessing(0)"	[label=LabelEncoder];
 	"data_train(0)$2" -> "data_train(0)$1"	[label=fit_transform];
 	"data_train(0)$2" -> "x(0)"	[label=fit_transform];
@@ -232,12 +214,12 @@ digraph "" {
 	"size(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=show];
 	"sns(0)$4" -> "sns(0)$3"	[label=set];
-	"[<_ast.Constant object at 0x12fa5b850>, <_ast.Constant object at 0x12fa5bb50>, <_ast.Constant object at 0x12fa5bdf0>, <_ast.Constant \
-object at 0x12fa5b4c0>, <_ast.Constant object at 0x12fa5b940>, <_ast.Constant object at 0x12fa5bc70>, <_ast.Constant object at 0x12fa5bf40>, <_\
-ast.Constant object at 0x12fa5be50>](0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"cols(0)$1" -> "[<_ast.Constant object at 0x12fa5b850>, <_ast.Constant object at 0x12fa5bb50>, <_ast.Constant object at 0x12fa5bdf0>, <_ast.Constant \
-object at 0x12fa5b4c0>, <_ast.Constant object at 0x12fa5b940>, <_ast.Constant object at 0x12fa5bc70>, <_ast.Constant object at 0x12fa5bf40>, <_\
-ast.Constant object at 0x12fa5be50>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04e8bb0>, <_ast.Constant object at 0x7fd4c04e8640>, <_ast.Constant object at 0x7fd4c04e8c40>, <_\
+ast.Constant object at 0x7fd4c04e8100>, <_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8670>, <_ast.Constant \
+object at 0x7fd4c04e8be0>, <_ast.Constant object at 0x7fd4c04e8ac0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"cols(0)$1" -> "[<_ast.Constant object at 0x7fd4c04e8bb0>, <_ast.Constant object at 0x7fd4c04e8640>, <_ast.Constant object at 0x7fd4c04e8c40>, <_\
+ast.Constant object at 0x7fd4c04e8100>, <_ast.Constant object at 0x7fd4c04e8c10>, <_ast.Constant object at 0x7fd4c04e8670>, <_ast.Constant \
+object at 0x7fd4c04e8be0>, <_ast.Constant object at 0x7fd4c04e8ac0>](0)"	[label=assignedFrom];
 	"sns(0)$5" -> "data_train(0)$2"	[label=pairplot];
 	"sns(0)$5" -> "sns(0)$4"	[label=pairplot];
 	"sns(0)$5" -> "cols(0)$1"	[label=pairplot];
@@ -259,12 +241,12 @@ ast.Constant object at 0x12fa5be50>](0)"	[label=assignedFrom];
 	train_test_split -> "sklearn.cross_validation"	[label=importedBy];
 	"train_test_split(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa668b0>, <_ast.Constant object at 0x12fa66af0>, <_ast.Constant object at 0x12fa66df0>, <_ast.Constant \
-object at 0x12fa66a60>, <_ast.Constant object at 0x12fa66310>, <_ast.Constant object at 0x12fa66bb0>, <_ast.Constant object at 0x12fa66fd0>](\
-0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"cols(0)$2" -> "[<_ast.Constant object at 0x12fa668b0>, <_ast.Constant object at 0x12fa66af0>, <_ast.Constant object at 0x12fa66df0>, <_ast.Constant \
-object at 0x12fa66a60>, <_ast.Constant object at 0x12fa66310>, <_ast.Constant object at 0x12fa66bb0>, <_ast.Constant object at 0x12fa66fd0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500834460>, <_ast.Constant object at 0x7fd500834430>, <_ast.Constant object at 0x7fd5008343a0>, <_\
+ast.Constant object at 0x7fd500834040>, <_ast.Constant object at 0x7fd500834280>, <_ast.Constant object at 0x7fd5008342b0>, <_ast.Constant \
+object at 0x7fd500834070>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"cols(0)$2" -> "[<_ast.Constant object at 0x7fd500834460>, <_ast.Constant object at 0x7fd500834430>, <_ast.Constant object at 0x7fd5008343a0>, <_\
+ast.Constant object at 0x7fd500834040>, <_ast.Constant object at 0x7fd500834280>, <_ast.Constant object at 0x7fd5008342b0>, <_ast.Constant \
+object at 0x7fd500834070>](0)"	[label=assignedFrom];
 	"x(0)$0" -> "data_train(0)$2"	[label=assignedFrom];
 	"x(0)$0" -> "cols(0)$2"	[label=assignedFrom];
 	"y(0)$0" -> "SalePrice(0)"	[label=assignedFrom];
@@ -299,24 +281,36 @@ object at 0x12fa66a60>, <_ast.Constant object at 0x12fa66310>, <_ast.Constant ob
 	"clfs(0)$0" -> "400(0)"	[label=assignedFrom];
 	"BayesianRidge(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"400(0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"clf(0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"clf(0)" -> "clfs(0)$0"	[label=iteratorOf];
 	"clfs(0)$1" -> "X_train(0)$0"	[label=fit];
 	"clfs(0)$1" -> "y_train(0)$0"	[label=fit];
 	"clfs(0)$1" -> "clfs(0)$0"	[label=fit];
-	"y_pred(0)$0" -> "clf(0)"	[label=predict];
 	"y_pred(0)$0" -> "X_test(0)$0"	[label=predict];
+	"y_pred(0)$0" -> "clf(0)"	[label=predict];
 	"y_pred(0)$0" -> "clfs(0)$1"	[label=predict];
-	"print[3]" -> "np(0)"	[label=print];
-	"print[4]" -> "y_pred(0)$0"	[label=print];
-	"print[5]" -> "y_test(0)$0"	[label=print];
+	"print[117/8]" -> "np(0)"	[label=print];
+	"print[117/8]" -> "y_test(0)$0"	[label=print];
+	"print[117/8]" -> "clf(0)"	[label=print];
+	"print[117/8]" -> "y_pred(0)$0"	[label=print];
+	"print[117/8]" -> " cost:(0)"	[label=print];
+	"print[117/8]" -> "str(0)"	[label=print];
+	"print[117/8]" -> "len(0)"	[label=print];
+	" cost:(0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"str(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"len(0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"print[6]" -> "len(0)"	[label=print];
-	"print[7]" -> "y_pred(0)$0"	[label=print];
-	"[<_ast.Constant object at 0x12f9a40a0>, <_ast.Constant object at 0x12f9a40d0>, <_ast.Constant object at 0x12f9a4100>, <_ast.Constant \
-object at 0x12f9a4130>, <_ast.Constant object at 0x12f9a4160>, <_ast.Constant object at 0x12f9a4190>, <_ast.Constant object at 0x12f9a41c0>](\
-0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"cols(0)$3" -> "[<_ast.Constant object at 0x12f9a40a0>, <_ast.Constant object at 0x12f9a40d0>, <_ast.Constant object at 0x12f9a4100>, <_ast.Constant \
-object at 0x12f9a4130>, <_ast.Constant object at 0x12f9a4160>, <_ast.Constant object at 0x12f9a4190>, <_ast.Constant object at 0x12f9a41c0>](\
-0)"	[label=assignedFrom];
+	"print[119/8]" -> "clf(0)"	[label=print];
+	"print[119/8]" -> " Error:(0)"	[label=print];
+	" Error:(0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"print[120/8]" -> "str(0)"	[label=print];
+	"print[120/8]" -> "e(0)"	[label=print];
+	"e(0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04a8d60>, <_ast.Constant object at 0x7fd4c04a8d90>, <_ast.Constant object at 0x7fd4c04a8dc0>, <_\
+ast.Constant object at 0x7fd4c04a8df0>, <_ast.Constant object at 0x7fd4c04a8e20>, <_ast.Constant object at 0x7fd4c04a8e50>, <_ast.Constant \
+object at 0x7fd4c04a8e80>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"cols(0)$3" -> "[<_ast.Constant object at 0x7fd4c04a8d60>, <_ast.Constant object at 0x7fd4c04a8d90>, <_ast.Constant object at 0x7fd4c04a8dc0>, <_\
+ast.Constant object at 0x7fd4c04a8df0>, <_ast.Constant object at 0x7fd4c04a8e20>, <_ast.Constant object at 0x7fd4c04a8e50>, <_ast.Constant \
+object at 0x7fd4c04a8e80>](0)"	[label=assignedFrom];
 	"x(0)$1" -> "data_train(0)$2"	[label=assignedFrom];
 	"x(0)$1" -> "cols(0)$3"	[label=assignedFrom];
 	"y(0)$1" -> "SalePrice(0)"	[label=assignedFrom];
@@ -341,6 +335,9 @@ object at 0x12f9a4130>, <_ast.Constant object at 0x12f9a4160>, <_ast.Constant ob
 	"clf(0)$1" -> "X_train(0)$1"	[label=fit];
 	"clf(0)$1" -> "y_train(0)$1"	[label=fit];
 	"clf(0)$1" -> "clf(0)$0"	[label=fit];
+	"y_pred(0)$1" -> "X_test(0)$1"	[label=predict];
+	"y_pred(0)$1" -> "clf(0)$1"	[label=predict];
+	"print[129/0]" -> "y_pred(0)$1"	[label=print];
 	"rfr(0)$0" -> "clf(0)$1"	[label=assignedFrom];
 	"data_test(0)$0" -> "pd(0)"	[label=read_csv];
 	"data_test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
@@ -348,10 +345,10 @@ object at 0x12f9a4130>, <_ast.Constant object at 0x12f9a4160>, <_ast.Constant ob
 	"data_test(0)$1" -> "data_test(0)$0"	[label=sum];
 	"data_test(0)$2" -> "data_test(0)$1"	[label=describe];
 	"data_test(0)$3" -> "data_test(0)$2"	[label=describe];
-	"[<_ast.Constant object at 0x12f87a910>, <_ast.Constant object at 0x12f87a940>, <_ast.Constant object at 0x12f87a970>, <_ast.Constant \
-object at 0x12f87a9a0>, <_ast.Constant object at 0x12f87a9d0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
-	"cols2(0)$0" -> "[<_ast.Constant object at 0x12f87a910>, <_ast.Constant object at 0x12f87a940>, <_ast.Constant object at 0x12f87a970>, <_ast.Constant \
-object at 0x12f87a9a0>, <_ast.Constant object at 0x12f87a9d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ad670>, <_ast.Constant object at 0x7fd4c04ad6a0>, <_ast.Constant object at 0x7fd4c04ad6d0>, <_\
+ast.Constant object at 0x7fd4c04ad700>, <_ast.Constant object at 0x7fd4c04ad730>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"cols2(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ad670>, <_ast.Constant object at 0x7fd4c04ad6a0>, <_ast.Constant object at 0x7fd4c04ad6d0>, <_\
+ast.Constant object at 0x7fd4c04ad700>, <_ast.Constant object at 0x7fd4c04ad730>](0)"	[label=assignedFrom];
 	"cars(0)$0" -> "data_test(0)$3"	[label=fillna];
 	"cars(0)$0" -> "GarageCars(0)"	[label=fillna];
 	"cars(0)$0" -> "1.766118(0)"	[label=fillna];
@@ -363,17 +360,23 @@ object at 0x12f87a9a0>, <_ast.Constant object at 0x12f87a9d0>](0)"	[label=assign
 	"1046.11797(0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data_test_x(0)$0" -> "pd(0)"	[label=concat];
 	"data_test_x(0)$0" -> "1(0)"	[label=concat];
-	"data_test_x(0)$0" -> "[<_ast.Subscript object at 0x12f87aee0>, <_ast.Name object at 0x12f87afd0>, <_ast.Name object at 0x12f8a5040>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f87aee0>, <_ast.Name object at 0x12f87afd0>, <_ast.Name object at 0x12f8a5040>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"data_test_x(0)$0" -> "[<_ast.Subscript object at 0x7fd4c04adc70>, <_ast.Name object at 0x7fd4c04add60>, <_ast.Name object at 0x7fd4c04add90>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c04adc70>, <_ast.Name object at 0x7fd4c04add60>, <_ast.Name object at 0x7fd4c04add90>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"data_test_x(0)$1" -> "data_test_x(0)$0"	[label=sum];
+	"x(0)$2" -> "data_test_x(0)$1"	[label=assignedFrom];
+	"y_te_pred(0)$0" -> "rfr(0)$0"	[label=predict];
+	"y_te_pred(0)$0" -> "x(0)$2"	[label=predict];
+	"print[157/0]" -> "y_te_pred(0)$0"	[label=print];
+	"print[159/0]" -> "y_te_pred(0)$0"	[label=print];
+	"print[160/0]" -> "x(0)$2"	[label=print];
 	"prediction(0)$0" -> "pd(0)"	[label=DataFrame];
 	"prediction(0)$0" -> "y_te_pred(0)$0"	[label=DataFrame];
-	"prediction(0)$0" -> "[<_ast.Constant object at 0x12f8a5a00>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f8a5a00>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"prediction(0)$0" -> "[<_ast.Constant object at 0x7fd5016266a0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd5016266a0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"result(0)$0" -> "pd(0)"	[label=concat];
 	"result(0)$0" -> "1(0)"	[label=concat];
-	"result(0)$0" -> "[<_ast.Subscript object at 0x12f8a5b50>, <_ast.Name object at 0x12f8a5c10>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f8a5b50>, <_ast.Name object at 0x12f8a5c10>](0)" -> "kaggle.ipynb"	[label=appearsIn];
+	"result(0)$0" -> "[<_ast.Subscript object at 0x7fd5016267f0>, <_ast.Name object at 0x7fd5016268e0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd5016267f0>, <_ast.Name object at 0x7fd5016268e0>](0)" -> "kaggle.ipynb"	[label=appearsIn];
 	"result(0)$1" -> "result(0)$0"	[label=to_csv];
 	"result(0)$1" -> "./Predictions.csv(0)"	[label=to_csv];
 	"./Predictions.csv(0)" -> "kaggle.ipynb"	[label=appearsIn];

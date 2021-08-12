@@ -24,119 +24,42 @@ digraph "" {
 	os -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=importedBy];
 	"os(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "training(0)$1"	[label=print];
-	"print[0]" -> "testing(0)$1"	[label=print];
-	"print[0]" -> "num_values(0)$0"	[label=print];
-	"print[0]" -> "These are the numerical features:(0)"	[label=print];
-	"print[0]" -> "Training Data Frame(1)"	[label=print];
-	"print[0]" -> "pd(1)"	[label=print];
-	"print[0]" -> " (1)"	[label=print];
-	"print[0]" -> "Testing Data Frame(1)"	[label=print];
-	"print[0]" -> "total_survived_females(0)$0"	[label=print];
-	"print[0]" -> "total_survived_males(0)$0"	[label=print];
-	"print[0]" -> "Total people survived is: (0)"	[label=print];
-	"print[0]" -> "Proportion of Females who survived:(0)"	[label=print];
-	"print[0]" -> "Proportion of Males who survived:(0)"	[label=print];
-	"print[0]" -> "total_survived_one(0)$0"	[label=print];
-	"print[0]" -> "total_survived_two(0)$0"	[label=print];
-	"print[0]" -> "total_survived_three(0)$0"	[label=print];
-	"print[0]" -> "Proportion of Class 1 Passengers who survived:(0)"	[label=print];
-	"print[0]" -> "Proportion of Class 2 Passengers who survived:(0)"	[label=print];
-	"print[0]" -> "Proportion of Class 3 Passengers who survived:(0)"	[label=print];
-	"print[0]" -> "titles(0)$0"	[label=print];
-	"print[0]" -> "frequency_titles(0)$1"	[label=print];
-	"print[0]" -> "title_dataframe(0)$0"	[label=print];
-	"print[0]" -> "The Score for SVC is: (0)"	[label=print];
-	"print[0]" -> "The Score for LinearSVC is: (0)"	[label=print];
-	"print[0]" -> "The Score for Random Forest is: (0)"	[label=print];
-	"print[0]" -> "The Score for Logistic Regression is: (0)"	[label=print];
-	"print[0]" -> "The Score for KNeighbors is: (0)"	[label=print];
-	"print[0]" -> "The Score for Gaussian NB is: (0)"	[label=print];
-	"print[0]" -> "The Score for Decision Tree is: (0)"	[label=print];
-	"print[0]" -> "The Score for XGBoost is: (0)"	[label=print];
-	"print[0]" -> "submission(0)$1"	[label=print];
-	"training(0)$1" -> "training(0)$0"	[label=head];
-	"testing(0)$1" -> "testing(0)$0"	[label=head];
-	"num_values(0)$0" -> "types_train(0)$0"	[label=assignedFrom];
-	"num_values(0)$0" -> "float(0)"	[label=assignedFrom];
-	"These are the numerical features:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"total_survived_females(0)$0" -> "training(0)$6"	[label=sum];
-	"total_survived_females(0)$0" -> "female(0)"	[label=sum];
-	"total_survived_females(0)$0" -> "Survived(0)"	[label=sum];
-	"total_survived_males(0)$0" -> "training(0)$6"	[label=sum];
-	"total_survived_males(0)$0" -> "Survived(0)"	[label=sum];
-	"total_survived_males(0)$0" -> "male(0)"	[label=sum];
-	"Total people survived is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"Proportion of Females who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"Proportion of Males who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"total_survived_one(0)$0" -> "training(0)$6"	[label=sum];
-	"total_survived_one(0)$0" -> "Survived(0)"	[label=sum];
-	"total_survived_one(0)$0" -> "1(0)"	[label=sum];
-	"total_survived_two(0)$0" -> "training(0)$6"	[label=sum];
-	"total_survived_two(0)$0" -> "Survived(0)"	[label=sum];
-	"total_survived_two(0)$0" -> "2(0)"	[label=sum];
-	"total_survived_three(0)$0" -> "training(0)$6"	[label=sum];
-	"total_survived_three(0)$0" -> "Survived(0)"	[label=sum];
-	"total_survived_three(0)$0" -> "3(0)"	[label=sum];
-	"Proportion of Class 1 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"Proportion of Class 2 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"Proportion of Class 3 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"titles(0)$0" -> "training(0)$14"	[label=set];
-	"titles(0)$0" -> "Title(0)"	[label=set];
-	"frequency_titles(0)$1" -> "title_list(0)$0"	[label=append];
-	"frequency_titles(0)$1" -> "frequency_titles(0)$0"	[label=append];
-	"frequency_titles(0)$1" -> "i(0)"	[label=append];
-	"title_dataframe(0)$0" -> "pd(0)"	[label=DataFrame];
-	"title_dataframe(0)$0" -> "frequency_titles(0)$1"	[label=DataFrame];
-	"title_dataframe(0)$0" -> "titles(0)$1"	[label=DataFrame];
-	"title_dataframe(0)$0" -> "Titles(0)"	[label=DataFrame];
-	"title_dataframe(0)$0" -> "Frequency(0)"	[label=DataFrame];
-	"The Score for SVC is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for LinearSVC is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for Random Forest is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for Logistic Regression is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for KNeighbors is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for Gaussian NB is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for Decision Tree is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"The Score for XGBoost is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"submission(0)$1" -> "submission(0)$0"	[label=to_csv];
-	"submission(0)$1" -> "titanic.csv(0)"	[label=to_csv];
+	"print[14/0]" -> "os(0)"	[label=print];
+	"print[14/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"print[1]" -> "total_survived_females(0)$0"	[label=print];
-	"print[1]" -> "../input(0)"	[label=print];
-	"print[1]" -> "training(1)"	[label=print];
-	"print[1]" -> "testing(1)"	[label=print];
-	"print[1]" -> "str(0)"	[label=print];
-	"print[1]" -> "total_survived_class(0)$0"	[label=print];
-	"training(1)" -> "null_table[0]"	[label=_argToVar];
-	"testing(1)" -> "null_table[1]"	[label=_argToVar];
-	"str(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"total_survived_class(0)$0" -> "total_survived_one(0)$0"	[label=Add];
-	"total_survived_class(0)$0" -> "total_survived_two(0)$0"	[label=Add];
-	"total_survived_class(0)$0" -> "total_survived_three(0)$0"	[label=Add];
 	"training(0)$0" -> "pd(0)"	[label=read_csv];
 	"training(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"testing(0)$0" -> "pd(0)"	[label=read_csv];
 	"testing(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"training(0)$1" -> "training(0)$0"	[label=head];
+	"testing(0)$1" -> "testing(0)$0"	[label=head];
+	"print[19/0]" -> "training(0)$1"	[label=print];
+	"print[20/0]" -> "testing(0)$1"	[label=print];
 	"types_train(0)$0" -> "training(0)$1"	[label=assignedFrom];
+	"num_values(0)$0" -> "types_train(0)$0"	[label=assignedFrom];
+	"num_values(0)$0" -> "float(0)"	[label=assignedFrom];
 	"float(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"These are the numerical features:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[24/0]" -> "These are the numerical features:(0)"	[label=print];
+	"print[25/0]" -> "num_values(0)$0"	[label=print];
 	"training(0)$2" -> "training(0)$1"	[label=describe];
-	"null_table[0]" -> "training(0)$2"	[label=null_table];
-	"null_table[0]" -> "training(0)$3"	[label=null_table];
-	"null_table[0]" -> "training(0)$5"	[label=null_table];
+	"training(1)" -> "null_table[0]"	[label=_argToVar];
+	"testing(1)" -> "null_table[1]"	[label=_argToVar];
+	"print[28/4]" -> "Training Data Frame(1)"	[label=print];
+	"print[29/4]" -> "training(1)"	[label=print];
+	"print[29/4]" -> "pd(1)"	[label=print];
+	"print[30/4]" -> " (1)"	[label=print];
+	"print[31/4]" -> "Testing Data Frame(1)"	[label=print];
+	"print[32/4]" -> "testing(1)"	[label=print];
+	"print[32/4]" -> "pd(1)"	[label=print];
+	"null_table[34/0]" -> "testing(0)$1"	[label=null_table];
+	"null_table[34/0]" -> "training(0)$2"	[label=null_table];
 	"training(0)$3" -> "training(0)$2"	[label=drop];
-	"training(0)$5" -> "training(0)$4"	[label=fillna];
-	"training(0)$5" -> "S(0)"	[label=fillna];
-	"null_table[1]" -> "testing(0)$1"	[label=null_table];
-	"null_table[1]" -> "testing(0)$2"	[label=null_table];
-	"null_table[1]" -> "testing(0)$4"	[label=null_table];
 	"testing(0)$2" -> "testing(0)$1"	[label=drop];
-	"testing(0)$4" -> "testing(0)$4"	[label=fillna];
-	"testing(0)$4" -> "testing(0)$3"	[label=fillna];
-	"testing(0)$4" -> "Fare(0)"	[label=fillna];
+	"null_table[38/0]" -> "training(0)$3"	[label=null_table];
+	"null_table[38/0]" -> "testing(0)$2"	[label=null_table];
 	"copy(0)$0" -> "training(0)$3"	[label=copy];
 	"copy(0)$1" -> "copy(0)$0"	[label=dropna];
 	"sns(0)$1" -> "sns(0)$0"	[label=distplot];
@@ -149,8 +72,15 @@ digraph "" {
 	"testing(0)$3" -> "testing(0)$2"	[label=fillna];
 	"testing(0)$3" -> "Age(0)"	[label=fillna];
 	"testing(0)$3" -> "testing(0)$3"	[label=fillna];
+	"training(0)$5" -> "training(0)$4"	[label=fillna];
+	"training(0)$5" -> "S(0)"	[label=fillna];
 	"S(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"testing(0)$4" -> "testing(0)$3"	[label=fillna];
+	"testing(0)$4" -> "testing(0)$4"	[label=fillna];
+	"testing(0)$4" -> "Fare(0)"	[label=fillna];
 	"Fare(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"null_table[48/0]" -> "training(0)$5"	[label=null_table];
+	"null_table[48/0]" -> "testing(0)$4"	[label=null_table];
 	"training(0)$6" -> "training(0)$5"	[label=head];
 	"testing(0)$5" -> "testing(0)$4"	[label=head];
 	"sns(0)$2" -> "sns(0)$1"	[label=barplot];
@@ -158,37 +88,29 @@ digraph "" {
 	"plt(0)$0" -> "Distribution of Survival based on Gender(0)"	[label=title];
 	"Distribution of Survival based on Gender(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
+	"total_survived_females(0)$0" -> "training(0)$6"	[label=sum];
+	"total_survived_females(0)$0" -> "female(0)"	[label=sum];
+	"total_survived_females(0)$0" -> "Survived(0)"	[label=sum];
 	"female(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"Survived(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"total_survived_males(0)$0" -> "training(0)$6"	[label=sum];
+	"total_survived_males(0)$0" -> "Survived(0)"	[label=sum];
+	"total_survived_males(0)$0" -> "male(0)"	[label=sum];
 	"male(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "total_survived_females(0)$0"	[label=print];
-	"print[2]" -> "total_survived_males(0)$0"	[label=print];
-	"print[2]" -> "total_survived_class(0)$0"	[label=print];
-	"print[2]" -> "acc_svc(0)$0"	[label=print];
-	"print[2]" -> "acc_linsvc(0)$0"	[label=print];
-	"print[2]" -> "acc_rf(0)$0"	[label=print];
-	"print[2]" -> "acc_logreg(0)$0"	[label=print];
-	"print[2]" -> "acc_knn(0)$0"	[label=print];
-	"print[2]" -> "acc_gnb(0)$0"	[label=print];
-	"print[2]" -> "acc_dt(0)$0"	[label=print];
-	"print[2]" -> "acc_xg(0)$0"	[label=print];
-	"acc_svc(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_svc(0)$0" -> "pred_svc(0)$0"	[label=accuracy_score];
-	"acc_linsvc(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_linsvc(0)$0" -> "pred_linsvc(0)$0"	[label=accuracy_score];
-	"acc_rf(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_rf(0)$0" -> "pred_rf(0)$0"	[label=accuracy_score];
-	"acc_logreg(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_logreg(0)$0" -> "pred_logreg(0)$0"	[label=accuracy_score];
-	"acc_knn(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_knn(0)$0" -> "pred_knn(0)$0"	[label=accuracy_score];
-	"acc_gnb(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_gnb(0)$0" -> "pred_gnb(0)$0"	[label=accuracy_score];
-	"acc_dt(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_dt(0)$0" -> "pred_dt(0)$0"	[label=accuracy_score];
-	"acc_xg(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
-	"acc_xg(0)$0" -> "pred_xg(0)$0"	[label=accuracy_score];
-	"print[3]" -> "total_survived_males(0)$0"	[label=print];
+	"Total people survived is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "total_survived_females(0)$0"	[label=print];
+	"print[59/0]" -> "total_survived_males(0)$0"	[label=print];
+	"print[59/0]" -> "Total people survived is: (0)"	[label=print];
+	"print[59/0]" -> "str(0)"	[label=print];
+	"str(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"Proportion of Females who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[60/0]" -> "Proportion of Females who survived:(0)"	[label=print];
+	"print[61/0]" -> "total_survived_females(0)$0"	[label=print];
+	"print[61/0]" -> "total_survived_males(0)$0"	[label=print];
+	"Proportion of Males who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[62/0]" -> "Proportion of Males who survived:(0)"	[label=print];
+	"print[63/0]" -> "total_survived_females(0)$0"	[label=print];
+	"print[63/0]" -> "total_survived_males(0)$0"	[label=print];
 	"sns(0)$3" -> "sns(0)$2"	[label=barplot];
 	"plt(0)$2" -> "plt(0)$1"	[label=ylabel];
 	"plt(0)$2" -> "Survival Rate(0)"	[label=ylabel];
@@ -197,9 +119,36 @@ digraph "" {
 	"plt(0)$3" -> "Distribution of Survival Based on Class(0)"	[label=title];
 	"Distribution of Survival Based on Class(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "plt(0)$3"	[label=show];
+	"total_survived_one(0)$0" -> "training(0)$6"	[label=sum];
+	"total_survived_one(0)$0" -> "Survived(0)"	[label=sum];
+	"total_survived_one(0)$0" -> "1(0)"	[label=sum];
 	"1(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"total_survived_two(0)$0" -> "training(0)$6"	[label=sum];
+	"total_survived_two(0)$0" -> "Survived(0)"	[label=sum];
+	"total_survived_two(0)$0" -> "2(0)"	[label=sum];
 	"2(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"total_survived_three(0)$0" -> "training(0)$6"	[label=sum];
+	"total_survived_three(0)$0" -> "Survived(0)"	[label=sum];
+	"total_survived_three(0)$0" -> "3(0)"	[label=sum];
 	"3(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"total_survived_class(0)$0" -> "total_survived_one(0)$0"	[label=Add];
+	"total_survived_class(0)$0" -> "total_survived_two(0)$0"	[label=Add];
+	"total_survived_class(0)$0" -> "total_survived_three(0)$0"	[label=Add];
+	"print[74/0]" -> "Total people survived is: (0)"	[label=print];
+	"print[74/0]" -> "str(0)"	[label=print];
+	"print[74/0]" -> "total_survived_class(0)$0"	[label=print];
+	"Proportion of Class 1 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[75/0]" -> "Proportion of Class 1 Passengers who survived:(0)"	[label=print];
+	"print[76/0]" -> "total_survived_one(0)$0"	[label=print];
+	"print[76/0]" -> "total_survived_class(0)$0"	[label=print];
+	"Proportion of Class 2 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[77/0]" -> "Proportion of Class 2 Passengers who survived:(0)"	[label=print];
+	"print[78/0]" -> "total_survived_two(0)$0"	[label=print];
+	"print[78/0]" -> "total_survived_class(0)$0"	[label=print];
+	"Proportion of Class 3 Passengers who survived:(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[79/0]" -> "Proportion of Class 3 Passengers who survived:(0)"	[label=print];
+	"print[80/0]" -> "total_survived_three(0)$0"	[label=print];
+	"print[80/0]" -> "total_survived_class(0)$0"	[label=print];
 	"sns(0)$4" -> "sns(0)$3"	[label=barplot];
 	"plt(0)$5" -> "Survival Rate(0)"	[label=ylabel];
 	"plt(0)$5" -> "plt(0)$4"	[label=ylabel];
@@ -224,10 +173,10 @@ digraph "" {
 	"sns(0)$6" -> "sns(0)$5"	[label=distplot];
 	"sns(0)$6" -> "survived_ages(0)$0"	[label=distplot];
 	"plt(0)$10" -> "plt(0)$9"	[label=axis];
-	"plt(0)$10" -> "[<_ast.Constant object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f610>, <_ast.Constant object at 0x12f89ff10>, <_ast.Constant \
-object at 0x12f89faf0>](0)"	[label=axis];
-	"[<_ast.Constant object at 0x12f89fd30>, <_ast.Constant object at 0x12f89f610>, <_ast.Constant object at 0x12f89ff10>, <_ast.Constant \
-object at 0x12f89faf0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"plt(0)$10" -> "[<_ast.Constant object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999130>, <_\
+ast.Constant object at 0x7fd5009995e0>](0)"	[label=axis];
+	"[<_ast.Constant object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999130>, <_\
+ast.Constant object at 0x7fd5009995e0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"plt(0)$11" -> "Survived(0)"	[label=title];
 	"plt(0)$11" -> "plt(0)$10"	[label=title];
 	"plt(0)$12" -> "plt(0)$11"	[label=ylabel];
@@ -239,10 +188,10 @@ object at 0x12f89faf0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"sns(0)$7" -> "not_survived_ages(0)$0"	[label=distplot];
 	"sns(0)$7" -> "sns(0)$6"	[label=distplot];
 	"plt(0)$14" -> "plt(0)$13"	[label=axis];
-	"plt(0)$14" -> "[<_ast.Constant object at 0x12f89fe50>, <_ast.Constant object at 0x12f89f2b0>, <_ast.Constant object at 0x12f89fe80>, <_ast.Constant \
-object at 0x12f89f490>](0)"	[label=axis];
-	"[<_ast.Constant object at 0x12f89fe50>, <_ast.Constant object at 0x12f89f2b0>, <_ast.Constant object at 0x12f89fe80>, <_ast.Constant \
-object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"plt(0)$14" -> "[<_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999bb0>, <_\
+ast.Constant object at 0x7fd5009991f0>](0)"	[label=axis];
+	"[<_ast.Constant object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999bb0>, <_\
+ast.Constant object at 0x7fd5009991f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"plt(0)$15" -> "plt(0)$14"	[label=title];
 	"plt(0)$15" -> "Didn't Survive(0)"	[label=title];
 	"Didn't Survive(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
@@ -256,9 +205,9 @@ object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"5(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"testing(0)$6" -> "testing(0)$5"	[label=sample];
 	"testing(0)$6" -> "5(0)"	[label=sample];
-	"set[0]" -> "training(0)$7"	[label=set];
+	"set[104/0]" -> "training(0)$7"	[label=set];
+	"set[104/0]" -> "Embarked(0)"	[label=set];
 	"Embarked(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"set[1]" -> "Embarked(0)"	[label=set];
 	"sklearn.preprocessing" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=importedBy];
 	LabelEncoder -> "sklearn.preprocessing"	[label=importedBy];
 	"LabelEncoder(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
@@ -333,16 +282,29 @@ object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"testing(0)$12" -> "([A-Za-z]+)\.(0)"	[label=extract];
 	"testing(0)$12" -> "True(0)"	[label=extract];
 	"training(0)$14" -> "training(0)$13"	[label=head];
+	"titles(0)$0" -> "training(0)$14"	[label=set];
+	"titles(0)$0" -> "Title(0)"	[label=set];
 	"Title(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[152/0]" -> "titles(0)$0"	[label=print];
 	"title_list(0)$0" -> "training(0)$14"	[label=list];
 	"title_list(0)$0" -> "Title(0)"	[label=list];
 	"[](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"frequency_titles(0)$0" -> "[](0)"	[label=assignedFrom];
 	"i(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"i(0)" -> "titles(0)$0"	[label=iteratorOf];
+	"frequency_titles(0)$1" -> "title_list(0)$0"	[label=append];
+	"frequency_titles(0)$1" -> "frequency_titles(0)$0"	[label=append];
+	"frequency_titles(0)$1" -> "i(0)"	[label=append];
+	"print[159/0]" -> "frequency_titles(0)$1"	[label=print];
 	"titles(0)$1" -> "titles(0)$0"	[label=list];
+	"title_dataframe(0)$0" -> "pd(0)"	[label=DataFrame];
+	"title_dataframe(0)$0" -> "frequency_titles(0)$1"	[label=DataFrame];
+	"title_dataframe(0)$0" -> "titles(0)$1"	[label=DataFrame];
+	"title_dataframe(0)$0" -> "Titles(0)"	[label=DataFrame];
+	"title_dataframe(0)$0" -> "Frequency(0)"	[label=DataFrame];
 	"Titles(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"Frequency(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[167/0]" -> "title_dataframe(0)$0"	[label=print];
 	"Mlle(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"title_replacements(0)$0" -> "Mlle(0)"	[label=assignedFrom];
 	"title_replacements(0)$0" -> "Major(0)"	[label=assignedFrom];
@@ -471,8 +433,8 @@ object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"GridSearchCV(0)" -> GridSearchCV	[label=assignedFrom];
 	"X_train(0)$0" -> "1(0)"	[label=drop];
 	"X_train(0)$0" -> "training(0)$21"	[label=drop];
-	"X_train(0)$0" -> "[<_ast.Constant object at 0x12f88cd30>, <_ast.Constant object at 0x12f88cd60>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f88cd30>, <_ast.Constant object at 0x12f88cd60>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"X_train(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ada30>, <_ast.Constant object at 0x7fd4c04ada60>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04ada30>, <_ast.Constant object at 0x7fd4c04ada60>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"y_train(0)$0" -> "Survived(0)"	[label=assignedFrom];
 	"y_train(0)$0" -> "training(0)$21"	[label=assignedFrom];
 	"X_test(0)$0" -> "1(0)"	[label=drop];
@@ -504,14 +466,14 @@ object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"parameters_svc(0)$0" -> "kernel(0)"	[label=assignedFrom];
 	"parameters_svc(0)$0" -> "probability(0)"	[label=assignedFrom];
 	"parameters_svc(0)$0" -> "verbose(0)"	[label=assignedFrom];
-	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x12f8907f0>, <_ast.Constant object at 0x12f890820>](0)"	[label=assignedFrom];
-	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x12f890880>, <_ast.Constant object at 0x12f8908b0>](0)"	[label=assignedFrom];
-	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x12f890940>, <_ast.Constant object at 0x12f890970>](0)"	[label=assignedFrom];
+	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af4f0>, <_ast.Constant object at 0x7fd4c04af520>](0)"	[label=assignedFrom];
+	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af580>, <_ast.Constant object at 0x7fd4c04af5b0>](0)"	[label=assignedFrom];
+	"parameters_svc(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af610>, <_ast.Constant object at 0x7fd4c04af640>](0)"	[label=assignedFrom];
 	"probability(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"verbose(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8907f0>, <_ast.Constant object at 0x12f890820>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f890880>, <_ast.Constant object at 0x12f8908b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f890940>, <_ast.Constant object at 0x12f890970>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04af4f0>, <_ast.Constant object at 0x7fd4c04af520>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04af580>, <_ast.Constant object at 0x7fd4c04af5b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04af610>, <_ast.Constant object at 0x7fd4c04af640>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"svc_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_svc(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_svc(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -526,20 +488,26 @@ object at 0x12f89f490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"svc_clf(0)$1" -> "svc_clf(0)$0"	[label=fit];
 	"pred_svc(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_svc(0)$0" -> "svc_clf(0)$1"	[label=predict];
+	"acc_svc(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_svc(0)$0" -> "pred_svc(0)$0"	[label=accuracy_score];
+	"The Score for SVC is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[250/0]" -> "str(0)"	[label=print];
+	"print[250/0]" -> "acc_svc(0)$0"	[label=print];
+	"print[250/0]" -> "The Score for SVC is: (0)"	[label=print];
 	"multi_class(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"parameters_linsvc(0)$0" -> "multi_class(0)"	[label=assignedFrom];
 	"parameters_linsvc(0)$0" -> "fit_intercept(0)"	[label=assignedFrom];
 	"parameters_linsvc(0)$0" -> "max_iter(0)"	[label=assignedFrom];
-	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x12f896520>, <_ast.Constant object at 0x12f896550>](0)"	[label=assignedFrom];
-	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x12f8965b0>, <_ast.Constant object at 0x12f8965e0>](0)"	[label=assignedFrom];
-	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x12f896640>, <_ast.Constant object at 0x12f896670>, <_ast.Constant object at 0x12f8966a0>, <_ast.Constant \
-object at 0x12f8966d0>](0)"	[label=assignedFrom];
+	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x7fd50099e220>, <_ast.Constant object at 0x7fd50099e250>](0)"	[label=assignedFrom];
+	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x7fd50099e2b0>, <_ast.Constant object at 0x7fd50099e2e0>](0)"	[label=assignedFrom];
+	"parameters_linsvc(0)$0" -> "[<_ast.Constant object at 0x7fd50099e340>, <_ast.Constant object at 0x7fd50099e370>, <_ast.Constant object at 0x7fd50099e3a0>, <_\
+ast.Constant object at 0x7fd50099e3d0>](0)"	[label=assignedFrom];
 	"fit_intercept(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"max_iter(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f896520>, <_ast.Constant object at 0x12f896550>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8965b0>, <_ast.Constant object at 0x12f8965e0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f896640>, <_ast.Constant object at 0x12f896670>, <_ast.Constant object at 0x12f8966a0>, <_ast.Constant \
-object at 0x12f8966d0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099e220>, <_ast.Constant object at 0x7fd50099e250>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099e2b0>, <_ast.Constant object at 0x7fd50099e2e0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099e340>, <_ast.Constant object at 0x7fd50099e370>, <_ast.Constant object at 0x7fd50099e3a0>, <_\
+ast.Constant object at 0x7fd50099e3d0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"linsvc_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_linsvc(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_linsvc(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -554,34 +522,40 @@ object at 0x12f8966d0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"linsvc_clf(0)$1" -> "linsvc_clf(0)$0"	[label=fit];
 	"pred_linsvc(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_linsvc(0)$0" -> "linsvc_clf(0)$1"	[label=predict];
+	"acc_linsvc(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_linsvc(0)$0" -> "pred_linsvc(0)$0"	[label=accuracy_score];
+	"The Score for LinearSVC is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[264/0]" -> "str(0)"	[label=print];
+	"print[264/0]" -> "acc_linsvc(0)$0"	[label=print];
+	"print[264/0]" -> "The Score for LinearSVC is: (0)"	[label=print];
 	"n_estimators(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"parameters_rf(0)$0" -> "n_estimators(0)"	[label=assignedFrom];
 	"parameters_rf(0)$0" -> "criterion(0)"	[label=assignedFrom];
 	"parameters_rf(0)$0" -> "max_features(0)"	[label=assignedFrom];
 	"parameters_rf(0)$0" -> "max_depth(0)"	[label=assignedFrom];
 	"parameters_rf(0)$0" -> "min_samples_split(0)"	[label=assignedFrom];
-	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x12f8a5370>, <_ast.Constant object at 0x12f8a53a0>, <_ast.Constant object at 0x12f8a53d0>, <_ast.Constant \
-object at 0x12f8a5400>, <_ast.Constant object at 0x12f8a5430>, <_ast.Constant object at 0x12f8a5460>, <_ast.Constant object at 0x12f8a5490>, <_\
-ast.Constant object at 0x12f8a54c0>](0)"	[label=assignedFrom];
-	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x12f8a5520>, <_ast.Constant object at 0x12f8a5550>](0)"	[label=assignedFrom];
-	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x12f8a55b0>, <_ast.Constant object at 0x12f8a55e0>, <_ast.Constant object at 0x12f8a5610>](0)"	[label=assignedFrom];
-	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x12f8a5670>, <_ast.Constant object at 0x12f8a56a0>, <_ast.Constant object at 0x12f8a56d0>, <_ast.Constant \
-object at 0x12f8a5700>](0)"	[label=assignedFrom];
-	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x12f8a5760>, <_ast.Constant object at 0x12f8a5790>, <_ast.Constant object at 0x12f8a57c0>, <_ast.Constant \
-object at 0x12f8a57f0>](0)"	[label=assignedFrom];
+	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x7fd50099b070>, <_ast.Constant object at 0x7fd50099b0a0>, <_ast.Constant object at 0x7fd50099b0d0>, <_\
+ast.Constant object at 0x7fd50099b100>, <_ast.Constant object at 0x7fd50099b130>, <_ast.Constant object at 0x7fd50099b160>, <_ast.Constant \
+object at 0x7fd50099b190>, <_ast.Constant object at 0x7fd50099b1c0>](0)"	[label=assignedFrom];
+	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x7fd50099b220>, <_ast.Constant object at 0x7fd50099b250>](0)"	[label=assignedFrom];
+	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x7fd50099b2b0>, <_ast.Constant object at 0x7fd50099b2e0>, <_ast.Constant object at 0x7fd50099b310>](0)"	[label=assignedFrom];
+	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x7fd50099b370>, <_ast.Constant object at 0x7fd50099b3a0>, <_ast.Constant object at 0x7fd50099b3d0>, <_\
+ast.Constant object at 0x7fd50099b400>](0)"	[label=assignedFrom];
+	"parameters_rf(0)$0" -> "[<_ast.Constant object at 0x7fd50099b460>, <_ast.Constant object at 0x7fd50099b490>, <_ast.Constant object at 0x7fd50099b4c0>, <_\
+ast.Constant object at 0x7fd50099b4f0>](0)"	[label=assignedFrom];
 	"criterion(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"max_features(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"max_depth(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"min_samples_split(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a5370>, <_ast.Constant object at 0x12f8a53a0>, <_ast.Constant object at 0x12f8a53d0>, <_ast.Constant \
-object at 0x12f8a5400>, <_ast.Constant object at 0x12f8a5430>, <_ast.Constant object at 0x12f8a5460>, <_ast.Constant object at 0x12f8a5490>, <_\
-ast.Constant object at 0x12f8a54c0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a5520>, <_ast.Constant object at 0x12f8a5550>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a55b0>, <_ast.Constant object at 0x12f8a55e0>, <_ast.Constant object at 0x12f8a5610>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a5670>, <_ast.Constant object at 0x12f8a56a0>, <_ast.Constant object at 0x12f8a56d0>, <_ast.Constant \
-object at 0x12f8a5700>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8a5760>, <_ast.Constant object at 0x12f8a5790>, <_ast.Constant object at 0x12f8a57c0>, <_ast.Constant \
-object at 0x12f8a57f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099b070>, <_ast.Constant object at 0x7fd50099b0a0>, <_ast.Constant object at 0x7fd50099b0d0>, <_\
+ast.Constant object at 0x7fd50099b100>, <_ast.Constant object at 0x7fd50099b130>, <_ast.Constant object at 0x7fd50099b160>, <_ast.Constant \
+object at 0x7fd50099b190>, <_ast.Constant object at 0x7fd50099b1c0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099b220>, <_ast.Constant object at 0x7fd50099b250>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099b2b0>, <_ast.Constant object at 0x7fd50099b2e0>, <_ast.Constant object at 0x7fd50099b310>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099b370>, <_ast.Constant object at 0x7fd50099b3a0>, <_ast.Constant object at 0x7fd50099b3d0>, <_\
+ast.Constant object at 0x7fd50099b400>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50099b460>, <_ast.Constant object at 0x7fd50099b490>, <_ast.Constant object at 0x7fd50099b4c0>, <_\
+ast.Constant object at 0x7fd50099b4f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"rf_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_rf(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_rf(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -596,26 +570,32 @@ object at 0x12f8a57f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"rf_clf(0)$1" -> "rf_clf(0)$0"	[label=fit];
 	"pred_rf(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_rf(0)$0" -> "rf_clf(0)$1"	[label=predict];
+	"acc_rf(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_rf(0)$0" -> "pred_rf(0)$0"	[label=accuracy_score];
+	"The Score for Random Forest is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[279/0]" -> "str(0)"	[label=print];
+	"print[279/0]" -> "acc_rf(0)$0"	[label=print];
+	"print[279/0]" -> "The Score for Random Forest is: (0)"	[label=print];
 	"penalty(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"parameters_logreg(0)$0" -> "fit_intercept(0)"	[label=assignedFrom];
 	"parameters_logreg(0)$0" -> "max_iter(0)"	[label=assignedFrom];
 	"parameters_logreg(0)$0" -> "penalty(0)"	[label=assignedFrom];
 	"parameters_logreg(0)$0" -> "solver(0)"	[label=assignedFrom];
 	"parameters_logreg(0)$0" -> "warm_start(0)"	[label=assignedFrom];
-	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x12f89b490>](0)"	[label=assignedFrom];
-	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x12f89b4f0>, <_ast.Constant object at 0x12f89b520>](0)"	[label=assignedFrom];
-	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x12f89b5b0>, <_ast.Constant object at 0x12f89b5e0>, <_ast.Constant object at 0x12f89b610>, <_ast.Constant \
-object at 0x12f89b640>, <_ast.Constant object at 0x12f89b670>](0)"	[label=assignedFrom];
-	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x12f89b700>, <_ast.Constant object at 0x12f89b730>, <_ast.Constant object at 0x12f89b760>](0)"	[label=assignedFrom];
-	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x12f89b7c0>, <_ast.Constant object at 0x12f89b7f0>](0)"	[label=assignedFrom];
+	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x7fd5009bb1c0>](0)"	[label=assignedFrom];
+	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x7fd5009bb220>, <_ast.Constant object at 0x7fd5009bb250>](0)"	[label=assignedFrom];
+	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x7fd5009bb2e0>, <_ast.Constant object at 0x7fd5009bb310>, <_ast.Constant object at 0x7fd5009bb340>, <_\
+ast.Constant object at 0x7fd5009bb370>, <_ast.Constant object at 0x7fd5009bb3a0>](0)"	[label=assignedFrom];
+	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x7fd5009bb400>, <_ast.Constant object at 0x7fd5009bb430>, <_ast.Constant object at 0x7fd5009bb490>](0)"	[label=assignedFrom];
+	"parameters_logreg(0)$0" -> "[<_ast.Constant object at 0x7fd5009bb4c0>, <_ast.Constant object at 0x7fd5009bb4f0>](0)"	[label=assignedFrom];
 	"solver(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"warm_start(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b4f0>, <_ast.Constant object at 0x12f89b520>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b5b0>, <_ast.Constant object at 0x12f89b5e0>, <_ast.Constant object at 0x12f89b610>, <_ast.Constant \
-object at 0x12f89b640>, <_ast.Constant object at 0x12f89b670>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b700>, <_ast.Constant object at 0x12f89b730>, <_ast.Constant object at 0x12f89b760>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b7c0>, <_ast.Constant object at 0x12f89b7f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bb1c0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bb220>, <_ast.Constant object at 0x7fd5009bb250>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bb2e0>, <_ast.Constant object at 0x7fd5009bb310>, <_ast.Constant object at 0x7fd5009bb340>, <_\
+ast.Constant object at 0x7fd5009bb370>, <_ast.Constant object at 0x7fd5009bb3a0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bb400>, <_ast.Constant object at 0x7fd5009bb430>, <_ast.Constant object at 0x7fd5009bb490>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009bb4c0>, <_ast.Constant object at 0x7fd5009bb4f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"logreg_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_logreg(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_logreg(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -630,24 +610,30 @@ object at 0x12f89b640>, <_ast.Constant object at 0x12f89b670>](0)" -> "titanic-g
 	"logreg_clf(0)$1" -> "logreg_clf(0)$0"	[label=fit];
 	"pred_logreg(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_logreg(0)$0" -> "logreg_clf(0)$1"	[label=predict];
+	"acc_logreg(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_logreg(0)$0" -> "pred_logreg(0)$0"	[label=accuracy_score];
+	"The Score for Logistic Regression is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[294/0]" -> "str(0)"	[label=print];
+	"print[294/0]" -> "acc_logreg(0)$0"	[label=print];
+	"print[294/0]" -> "The Score for Logistic Regression is: (0)"	[label=print];
 	"n_neighbors(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"parameters_knn(0)$0" -> "n_neighbors(0)"	[label=assignedFrom];
 	"parameters_knn(0)$0" -> "weights(0)"	[label=assignedFrom];
 	"parameters_knn(0)$0" -> "algorithm(0)"	[label=assignedFrom];
 	"parameters_knn(0)$0" -> "leaf_size(0)"	[label=assignedFrom];
-	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x12f89d3d0>, <_ast.Constant object at 0x12f89d400>, <_ast.Constant object at 0x12f89d430>, <_ast.Constant \
-object at 0x12f89d460>](0)"	[label=assignedFrom];
-	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x12f89d4c0>, <_ast.Constant object at 0x12f89d4f0>](0)"	[label=assignedFrom];
-	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x12f89d550>, <_ast.Constant object at 0x12f89d580>, <_ast.Constant object at 0x12f89d5b0>](0)"	[label=assignedFrom];
-	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x12f89d610>, <_ast.Constant object at 0x12f89d640>, <_ast.Constant object at 0x12f89d670>](0)"	[label=assignedFrom];
+	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x7fd5009a30d0>, <_ast.Constant object at 0x7fd5009a3100>, <_ast.Constant object at 0x7fd5009a3130>, <_\
+ast.Constant object at 0x7fd5009a3160>](0)"	[label=assignedFrom];
+	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x7fd5009a31c0>, <_ast.Constant object at 0x7fd5009a31f0>](0)"	[label=assignedFrom];
+	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x7fd5009a3250>, <_ast.Constant object at 0x7fd5009a3280>, <_ast.Constant object at 0x7fd5009a32b0>](0)"	[label=assignedFrom];
+	"parameters_knn(0)$0" -> "[<_ast.Constant object at 0x7fd5009a3340>, <_ast.Constant object at 0x7fd5009a3370>, <_ast.Constant object at 0x7fd5009a33a0>](0)"	[label=assignedFrom];
 	"weights(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"algorithm(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"leaf_size(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d3d0>, <_ast.Constant object at 0x12f89d400>, <_ast.Constant object at 0x12f89d430>, <_ast.Constant \
-object at 0x12f89d460>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d4c0>, <_ast.Constant object at 0x12f89d4f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d550>, <_ast.Constant object at 0x12f89d580>, <_ast.Constant object at 0x12f89d5b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89d610>, <_ast.Constant object at 0x12f89d640>, <_ast.Constant object at 0x12f89d670>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009a30d0>, <_ast.Constant object at 0x7fd5009a3100>, <_ast.Constant object at 0x7fd5009a3130>, <_\
+ast.Constant object at 0x7fd5009a3160>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009a31c0>, <_ast.Constant object at 0x7fd5009a31f0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009a3250>, <_ast.Constant object at 0x7fd5009a3280>, <_ast.Constant object at 0x7fd5009a32b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009a3340>, <_ast.Constant object at 0x7fd5009a3370>, <_ast.Constant object at 0x7fd5009a33a0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"knn_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_knn(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_knn(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -662,6 +648,12 @@ object at 0x12f89d460>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"knn_clf(0)$1" -> "knn_clf(0)$0"	[label=fit];
 	"pred_knn(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_knn(0)$0" -> "knn_clf(0)$1"	[label=predict];
+	"acc_knn(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_knn(0)$0" -> "pred_knn(0)$0"	[label=accuracy_score];
+	"The Score for KNeighbors is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[309/0]" -> "str(0)"	[label=print];
+	"print[309/0]" -> "acc_knn(0)$0"	[label=print];
+	"print[309/0]" -> "The Score for KNeighbors is: (0)"	[label=print];
 	"gnb_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_gnb(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_gnb(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -677,16 +669,22 @@ object at 0x12f89d460>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"gnb_clf(0)$1" -> "gnb_clf(0)$0"	[label=fit];
 	"pred_gnb(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_gnb(0)$0" -> "gnb_clf(0)$1"	[label=predict];
+	"acc_gnb(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_gnb(0)$0" -> "pred_gnb(0)$0"	[label=accuracy_score];
+	"The Score for Gaussian NB is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[323/0]" -> "str(0)"	[label=print];
+	"print[323/0]" -> "acc_gnb(0)$0"	[label=print];
+	"print[323/0]" -> "The Score for Gaussian NB is: (0)"	[label=print];
 	"parameters_dt(0)$0" -> "criterion(0)"	[label=assignedFrom];
 	"parameters_dt(0)$0" -> "max_features(0)"	[label=assignedFrom];
 	"parameters_dt(0)$0" -> "splitter(0)"	[label=assignedFrom];
-	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x12f88ad00>, <_ast.Constant object at 0x12f88ad30>](0)"	[label=assignedFrom];
-	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x12f88ad90>, <_ast.Constant object at 0x12f88adc0>](0)"	[label=assignedFrom];
-	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x12f88ae20>, <_ast.Constant object at 0x12f88ae50>, <_ast.Constant object at 0x12f88ae80>](0)"	[label=assignedFrom];
+	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x7fd500827a60>, <_ast.Constant object at 0x7fd500827a90>](0)"	[label=assignedFrom];
+	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x7fd500827af0>, <_ast.Constant object at 0x7fd500827b20>](0)"	[label=assignedFrom];
+	"parameters_dt(0)$0" -> "[<_ast.Constant object at 0x7fd500827b80>, <_ast.Constant object at 0x7fd500827bb0>, <_ast.Constant object at 0x7fd500827be0>](0)"	[label=assignedFrom];
 	"splitter(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88ad00>, <_ast.Constant object at 0x12f88ad30>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88ad90>, <_ast.Constant object at 0x12f88adc0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f88ae20>, <_ast.Constant object at 0x12f88ae50>, <_ast.Constant object at 0x12f88ae80>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500827a60>, <_ast.Constant object at 0x7fd500827a90>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500827af0>, <_ast.Constant object at 0x7fd500827b20>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500827b80>, <_ast.Constant object at 0x7fd500827bb0>, <_ast.Constant object at 0x7fd500827be0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"dt_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_dt(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_dt(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -701,6 +699,12 @@ object at 0x12f89d460>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"dt_clf(0)$1" -> "dt_clf(0)$0"	[label=fit];
 	"pred_dt(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_dt(0)$0" -> "dt_clf(0)$1"	[label=predict];
+	"acc_dt(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_dt(0)$0" -> "pred_dt(0)$0"	[label=accuracy_score];
+	"The Score for Decision Tree is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[337/0]" -> "str(0)"	[label=print];
+	"print[337/0]" -> "acc_dt(0)$0"	[label=print];
+	"print[337/0]" -> "The Score for Decision Tree is: (0)"	[label=print];
 	xgboost -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=importedBy];
 	XGBClassifier -> xgboost	[label=importedBy];
 	"XGBClassifier(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
@@ -708,12 +712,12 @@ object at 0x12f89d460>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"objective(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"parameters_xg(0)$0" -> "n_estimators(0)"	[label=assignedFrom];
 	"parameters_xg(0)$0" -> "objective(0)"	[label=assignedFrom];
-	"parameters_xg(0)$0" -> "[<_ast.Constant object at 0x13053bac0>](0)"	[label=assignedFrom];
-	"parameters_xg(0)$0" -> "[<_ast.Constant object at 0x13053bb20>, <_ast.Constant object at 0x13053bb50>, <_ast.Constant object at 0x13053bb80>, <_ast.Constant \
-object at 0x13053bbb0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x13053bac0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x13053bb20>, <_ast.Constant object at 0x13053bb50>, <_ast.Constant object at 0x13053bb80>, <_ast.Constant \
-object at 0x13053bbb0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"parameters_xg(0)$0" -> "[<_ast.Constant object at 0x7fd50081f7c0>](0)"	[label=assignedFrom];
+	"parameters_xg(0)$0" -> "[<_ast.Constant object at 0x7fd50081f820>, <_ast.Constant object at 0x7fd50081f850>, <_ast.Constant object at 0x7fd50081f880>, <_\
+ast.Constant object at 0x7fd50081f8b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081f7c0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50081f820>, <_ast.Constant object at 0x7fd50081f850>, <_ast.Constant object at 0x7fd50081f880>, <_\
+ast.Constant object at 0x7fd50081f8b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"xg_clf(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"grid_xg(0)$0" -> "make_scorer(0)"	[label=GridSearchCV];
 	"grid_xg(0)$0" -> "accuracy_score(0)"	[label=GridSearchCV];
@@ -728,23 +732,29 @@ object at 0x13053bbb0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label
 	"xg_clf(0)$1" -> "xg_clf(0)$0"	[label=fit];
 	"pred_xg(0)$0" -> "X_valid(0)$0"	[label=predict];
 	"pred_xg(0)$0" -> "xg_clf(0)$1"	[label=predict];
+	"acc_xg(0)$0" -> "y_valid(0)$0"	[label=accuracy_score];
+	"acc_xg(0)$0" -> "pred_xg(0)$0"	[label=accuracy_score];
+	"The Score for XGBoost is: (0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[353/0]" -> "str(0)"	[label=print];
+	"print[353/0]" -> "acc_xg(0)$0"	[label=print];
+	"print[353/0]" -> "The Score for XGBoost is: (0)"	[label=print];
 	"model_performance(0)$0" -> "pd(0)"	[label=DataFrame];
 	"model_performance(0)$0" -> "Model(0)"	[label=DataFrame];
 	"model_performance(0)$0" -> "Accuracy(0)"	[label=DataFrame];
-	"model_performance(0)$0" -> "[<_ast.Constant object at 0x13053e760>, <_ast.Constant object at 0x13053e790>, <_ast.Constant object at 0x13053e7c0>, <_ast.Constant \
-object at 0x13053e820>, <_ast.Constant object at 0x13053e7f0>, <_ast.Constant object at 0x13053e850>, <_ast.Constant object at 0x13053e880>, <_\
-ast.Constant object at 0x13053e8b0>](0)"	[label=DataFrame];
-	"model_performance(0)$0" -> "[<_ast.Name object at 0x13053e910>, <_ast.Name object at 0x13053e940>, <_ast.Name object at 0x13053e970>, <_ast.Name object at 0x13053e9a0>, <_\
-ast.Name object at 0x13053e9d0>, <_ast.Name object at 0x13053ea00>, <_ast.Name object at 0x13053ea60>, <_ast.Name object at 0x13053ea90>](\
-0)"	[label=DataFrame];
+	"model_performance(0)$0" -> "[<_ast.Constant object at 0x7fd500819490>, <_ast.Constant object at 0x7fd5008194c0>, <_ast.Constant object at 0x7fd5008194f0>, <_\
+ast.Constant object at 0x7fd500819520>, <_ast.Constant object at 0x7fd500819550>, <_ast.Constant object at 0x7fd500819580>, <_ast.Constant \
+object at 0x7fd5008195b0>, <_ast.Constant object at 0x7fd5008195e0>](0)"	[label=DataFrame];
+	"model_performance(0)$0" -> "[<_ast.Name object at 0x7fd500819640>, <_ast.Name object at 0x7fd500819670>, <_ast.Name object at 0x7fd5008196a0>, <_ast.Name object \
+at 0x7fd5008193a0>, <_ast.Name object at 0x7fd5008196d0>, <_ast.Name object at 0x7fd500819700>, <_ast.Name object at 0x7fd500819730>, <_\
+ast.Name object at 0x7fd500819760>](0)"	[label=DataFrame];
 	"Model(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"Accuracy(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x13053e760>, <_ast.Constant object at 0x13053e790>, <_ast.Constant object at 0x13053e7c0>, <_ast.Constant \
-object at 0x13053e820>, <_ast.Constant object at 0x13053e7f0>, <_ast.Constant object at 0x13053e850>, <_ast.Constant object at 0x13053e880>, <_\
-ast.Constant object at 0x13053e8b0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x13053e910>, <_ast.Name object at 0x13053e940>, <_ast.Name object at 0x13053e970>, <_ast.Name object at 0x13053e9a0>, <_\
-ast.Name object at 0x13053e9d0>, <_ast.Name object at 0x13053ea00>, <_ast.Name object at 0x13053ea60>, <_ast.Name object at 0x13053ea90>](\
-0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500819490>, <_ast.Constant object at 0x7fd5008194c0>, <_ast.Constant object at 0x7fd5008194f0>, <_\
+ast.Constant object at 0x7fd500819520>, <_ast.Constant object at 0x7fd500819550>, <_ast.Constant object at 0x7fd500819580>, <_ast.Constant \
+object at 0x7fd5008195b0>, <_ast.Constant object at 0x7fd5008195e0>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500819640>, <_ast.Name object at 0x7fd500819670>, <_ast.Name object at 0x7fd5008196a0>, <_ast.Name object \
+at 0x7fd5008193a0>, <_ast.Name object at 0x7fd5008196d0>, <_ast.Name object at 0x7fd500819700>, <_ast.Name object at 0x7fd500819730>, <_\
+ast.Name object at 0x7fd500819760>](0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
 	"model_performance(0)$1" -> "model_performance(0)$0"	[label=sort_values];
 	"svc_clf(0)$2" -> "y_train(0)$0"	[label=fit];
 	"svc_clf(0)$2" -> "X_train(0)$1"	[label=fit];
@@ -756,5 +766,8 @@ ast.Name object at 0x13053e9d0>, <_ast.Name object at 0x13053ea00>, <_ast.Name o
 	"submission(0)$0" -> "testing(0)$19"	[label=DataFrame];
 	"submission(0)$0" -> "PassengerId(0)"	[label=DataFrame];
 	"submission(0)$0" -> "submission_predictions(0)$0"	[label=DataFrame];
+	"submission(0)$1" -> "submission(0)$0"	[label=to_csv];
+	"submission(0)$1" -> "titanic.csv(0)"	[label=to_csv];
 	"titanic.csv(0)" -> "titanic-guide-with-sklearn-and-eda.ipynb"	[label=appearsIn];
+	"print[371/0]" -> "submission(0)$1"	[label=print];
 }

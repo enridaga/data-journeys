@@ -38,46 +38,34 @@ digraph "" {
 	"sns(0)$0" -> "SalePrice(0)"	[label=distplot];
 	"SalePrice(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"Skewness: \%f(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"print[0]" -> "Skewness: \%f(0)"	[label=print];
-	"print[0]" -> "Kurtosis: \%f(0)"	[label=print];
-	"print[0]" -> "low_range(0)$0"	[label=print];
-	"print[0]" -> "high_range(0)$0"	[label=print];
-	"print[0]" -> "outer range (low) of the distribution:(0)"	[label=print];
-	"print[0]" -> "
-outer range (high) of the distribution:(0)"	[label=print];
+	"print[23/0]" -> "df_train(0)$1"	[label=print];
+	"print[23/0]" -> "SalePrice(0)"	[label=print];
+	"print[23/0]" -> "Skewness: \%f(0)"	[label=print];
 	"Kurtosis: \%f(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"low_range(0)$0" -> "10(0)"	[label=assignedFrom];
-	"low_range(0)$0" -> "saleprice_scaled(0)$0"	[label=assignedFrom];
-	"low_range(0)$0" -> "0(0)"	[label=assignedFrom];
-	"high_range(0)$0" -> "10(0)"	[label=assignedFrom];
-	"high_range(0)$0" -> "saleprice_scaled(0)$0"	[label=assignedFrom];
-	"high_range(0)$0" -> "0(0)"	[label=assignedFrom];
-	"outer range (low) of the distribution:(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"
-outer range (high) of the distribution:(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"print[1]" -> "df_train(0)$1"	[label=print];
-	"print[2]" -> "SalePrice(0)"	[label=print];
+	"print[24/0]" -> "df_train(0)$1"	[label=print];
+	"print[24/0]" -> "SalePrice(0)"	[label=print];
+	"print[24/0]" -> "Kurtosis: \%f(0)"	[label=print];
 	"GrLivArea(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"var(0)$0" -> "GrLivArea(0)"	[label=assignedFrom];
 	"data(0)$0" -> "pd(0)"	[label=concat];
-	"data(0)$0" -> "[<_ast.Subscript object at 0x12f85e790>, <_ast.Subscript object at 0x12f85e670>](0)"	[label=concat];
+	"data(0)$0" -> "[<_ast.Subscript object at 0x7fd4902ab880>, <_ast.Subscript object at 0x7fd4c048efa0>](0)"	[label=concat];
 	"data(0)$0" -> "1(0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f85e790>, <_ast.Subscript object at 0x12f85e670>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"[<_ast.Subscript object at 0x7fd4902ab880>, <_ast.Subscript object at 0x7fd4c048efa0>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"1(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"data(0)$1" -> "data(0)$0"	[label=scatter];
 	"TotalBsmtSF(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"var(0)$1" -> "TotalBsmtSF(0)"	[label=assignedFrom];
 	"data(0)$2" -> "pd(0)"	[label=concat];
 	"data(0)$2" -> "1(0)"	[label=concat];
-	"data(0)$2" -> "[<_ast.Subscript object at 0x12f8f5400>, <_ast.Subscript object at 0x12f8f5dc0>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f8f5400>, <_ast.Subscript object at 0x12f8f5dc0>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Subscript object at 0x7fd4c048eb20>, <_ast.Subscript object at 0x7fd500832ca0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd4c048eb20>, <_ast.Subscript object at 0x7fd500832ca0>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"data(0)$3" -> "data(0)$2"	[label=scatter];
 	"OverallQual(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"var(0)$2" -> "OverallQual(0)"	[label=assignedFrom];
 	"data(0)$4" -> "pd(0)"	[label=concat];
 	"data(0)$4" -> "1(0)"	[label=concat];
-	"data(0)$4" -> "[<_ast.Subscript object at 0x12f8f5a30>, <_ast.Subscript object at 0x12f8f5e50>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f8f5a30>, <_ast.Subscript object at 0x12f8f5e50>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"data(0)$4" -> "[<_ast.Subscript object at 0x7fd500832100>, <_ast.Subscript object at 0x7fd500832430>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500832100>, <_ast.Subscript object at 0x7fd500832430>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"f(0)$0" -> "plt(0)"	[label=subplots];
 	"f(0)$0" -> "8(0)"	[label=subplots];
 	"f(0)$0" -> "6(0)"	[label=subplots];
@@ -95,8 +83,8 @@ outer range (high) of the distribution:(0)" -> "comprehensive-data-exploration-w
 	"var(0)$3" -> "YearBuilt(0)"	[label=assignedFrom];
 	"data(0)$5" -> "pd(0)"	[label=concat];
 	"data(0)$5" -> "1(0)"	[label=concat];
-	"data(0)$5" -> "[<_ast.Subscript object at 0x12fc4f2e0>, <_ast.Subscript object at 0x12fc4fc10>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fc4f2e0>, <_ast.Subscript object at 0x12fc4fc10>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Subscript object at 0x7fd5007f0b20>, <_ast.Subscript object at 0x7fd5007f05e0>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd5007f0b20>, <_ast.Subscript object at 0x7fd5007f05e0>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"f(0)$1" -> "plt(0)"	[label=subplots];
 	"f(0)$1" -> "8(0)"	[label=subplots];
 	"f(0)$1" -> "16(0)"	[label=subplots];
@@ -142,12 +130,12 @@ outer range (high) of the distribution:(0)" -> "comprehensive-data-exploration-w
 	"size(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"plt(0)$1" -> "plt(0)$0"	[label=show];
 	"sns(0)$3" -> "sns(0)$2"	[label=set];
-	"[<_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f9512b0>, <_ast.Constant object at 0x12f9514c0>, <_ast.Constant \
-object at 0x12f9519a0>, <_ast.Constant object at 0x12f951d90>, <_ast.Constant object at 0x12f951880>, <_ast.Constant object at 0x12f951f70>](\
-0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"cols(0)$1" -> "[<_ast.Constant object at 0x12f951ac0>, <_ast.Constant object at 0x12f9512b0>, <_ast.Constant object at 0x12f9514c0>, <_ast.Constant \
-object at 0x12f9519a0>, <_ast.Constant object at 0x12f951d90>, <_ast.Constant object at 0x12f951880>, <_ast.Constant object at 0x12f951f70>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ffac0>, <_\
+ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff400>, <_ast.Constant \
+object at 0x7fd4c04ff550>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"cols(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ffac0>, <_\
+ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff400>, <_ast.Constant \
+object at 0x7fd4c04ff550>](0)"	[label=assignedFrom];
 	"sns(0)$4" -> "df_train(0)$1"	[label=pairplot];
 	"sns(0)$4" -> "sns(0)$3"	[label=pairplot];
 	"sns(0)$4" -> "cols(0)$1"	[label=pairplot];
@@ -159,10 +147,10 @@ object at 0x12f9519a0>, <_ast.Constant object at 0x12f951d90>, <_ast.Constant ob
 	"percent(0)$0" -> "False(0)"	[label=sort_values];
 	"missing_data(0)$0" -> "pd(0)"	[label=concat];
 	"missing_data(0)$0" -> "1(0)"	[label=concat];
-	"missing_data(0)$0" -> "[<_ast.Name object at 0x12f957430>, <_ast.Name object at 0x12f957160>](0)"	[label=concat];
-	"missing_data(0)$0" -> "[<_ast.Constant object at 0x12f9578b0>, <_ast.Constant object at 0x12f957a30>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f957430>, <_ast.Name object at 0x12f957160>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9578b0>, <_ast.Constant object at 0x12f957a30>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"missing_data(0)$0" -> "[<_ast.Name object at 0x7fd500836460>, <_ast.Name object at 0x7fd500836d90>](0)"	[label=concat];
+	"missing_data(0)$0" -> "[<_ast.Constant object at 0x7fd5008366d0>, <_ast.Constant object at 0x7fd500836cd0>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd500836460>, <_ast.Name object at 0x7fd500836d90>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008366d0>, <_ast.Constant object at 0x7fd500836cd0>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"missing_data(0)$1" -> "missing_data(0)$0"	[label=head];
 	"missing_data(0)$1" -> "20(0)"	[label=head];
 	"20(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
@@ -180,12 +168,26 @@ object at 0x12f9519a0>, <_ast.Constant object at 0x12f951d90>, <_ast.Constant ob
 	"saleprice_scaled(0)$0" -> "StandardScaler(0)"	[label=fit_transform];
 	"saleprice_scaled(0)$0" -> "SalePrice(0)"	[label=fit_transform];
 	"saleprice_scaled(0)$0" -> "df_train(0)$4"	[label=fit_transform];
+	"low_range(0)$0" -> "10(0)"	[label=assignedFrom];
+	"low_range(0)$0" -> "saleprice_scaled(0)$0"	[label=assignedFrom];
+	"low_range(0)$0" -> "0(0)"	[label=assignedFrom];
 	"0(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"high_range(0)$0" -> "10(0)"	[label=assignedFrom];
+	"high_range(0)$0" -> "saleprice_scaled(0)$0"	[label=assignedFrom];
+	"high_range(0)$0" -> "0(0)"	[label=assignedFrom];
+	"outer range (low) of the distribution:(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"print[74/0]" -> "outer range (low) of the distribution:(0)"	[label=print];
+	"print[75/0]" -> "low_range(0)$0"	[label=print];
+	"
+outer range (high) of the distribution:(0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"print[76/0]" -> "
+outer range (high) of the distribution:(0)"	[label=print];
+	"print[77/0]" -> "high_range(0)$0"	[label=print];
 	"var(0)$4" -> "GrLivArea(0)"	[label=assignedFrom];
 	"data(0)$6" -> "pd(0)"	[label=concat];
 	"data(0)$6" -> "1(0)"	[label=concat];
-	"data(0)$6" -> "[<_ast.Subscript object at 0x130ba42b0>, <_ast.Subscript object at 0x130ba4340>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x130ba42b0>, <_ast.Subscript object at 0x130ba4340>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Subscript object at 0x7fd500999790>, <_ast.Subscript object at 0x7fd500999730>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500999790>, <_ast.Subscript object at 0x7fd500999730>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"data(0)$7" -> "data(0)$6"	[label=scatter];
 	"df_train(0)$5" -> "df_train(0)$4"	[label=drop];
 	"df_train(0)$5" -> "df_train(0)$5"	[label=drop];
@@ -201,8 +203,8 @@ object at 0x12f9519a0>, <_ast.Constant object at 0x12f951d90>, <_ast.Constant ob
 	"var(0)$5" -> "TotalBsmtSF(0)"	[label=assignedFrom];
 	"data(0)$8" -> "pd(0)"	[label=concat];
 	"data(0)$8" -> "1(0)"	[label=concat];
-	"data(0)$8" -> "[<_ast.Subscript object at 0x12fade220>, <_ast.Subscript object at 0x12fade460>](0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12fade220>, <_ast.Subscript object at 0x12fade460>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
+	"data(0)$8" -> "[<_ast.Subscript object at 0x7fd50080d8e0>, <_ast.Subscript object at 0x7fd4c04cc070>](0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd50080d8e0>, <_ast.Subscript object at 0x7fd4c04cc070>](0)" -> "comprehensive-data-exploration-with-python.ipynb"	[label=appearsIn];
 	"data(0)$9" -> "data(0)$8"	[label=scatter];
 	"sns(0)$5" -> "SalePrice(0)"	[label=distplot];
 	"sns(0)$5" -> "sns(0)$4"	[label=distplot];

@@ -15,7 +15,7 @@ strict digraph "" {
 	"iter_test(0)$0" -> "env(0)$0"	[label=iter_test];
 	"test_df(0)$0" -> "iter_test(0)$0"	[label=iteratorOf];
 	"sample_prediction_df(0)$0" -> "iter_test(0)$0"	[label=iteratorOf];
-	"next[0]" -> "iter_test(0)$0"	[label=next];
+	"next[16/0]" -> "iter_test(0)$0"	[label=next];
 	"env(0)$1" -> "env(0)$0"	[label=predict];
 	"env(0)$1" -> "sample_prediction_df(0)$0"	[label=predict];
 	"env(0)$2" -> "sample_prediction_df(0)$0"	[label=predict];
@@ -25,12 +25,10 @@ strict digraph "" {
 	"os(0)" -> "nfl-big-data-bowl-official-starter-notebook.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
 	"filename(0)" -> "nfl-big-data-bowl-official-starter-notebook.ipynb"	[label=appearsIn];
-	"print[0]" -> "filename(0)"	[label=print];
-	"print[1]" -> "filename(0)"	[label=print];
-	"print[2]" -> "os(0)"	[label=print];
+	"print[23/0]" -> "os(0)"	[label=print];
+	"print[23/0]" -> "filename(0)"	[label=print];
+	"print[23/0]" -> "/kaggle/working(0)"	[label=print];
+	"print[23/0]" -> ".csv(0)"	[label=print];
 	"/kaggle/working(0)" -> "nfl-big-data-bowl-official-starter-notebook.ipynb"	[label=appearsIn];
-	"print[3]" -> "/kaggle/working(0)"	[label=print];
 	".csv(0)" -> "nfl-big-data-bowl-official-starter-notebook.ipynb"	[label=appearsIn];
-	"print[4]" -> ".csv(0)"	[label=print];
-	"print[5]" -> "filename(0)"	[label=print];
 }

@@ -31,80 +31,8 @@ digraph "" {
 	"df_yout(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_yout(0)$0" -> "../input/usvideosyoutube/USvideos.csv(0)"	[label=read_csv];
 	"../input/usvideosyoutube/USvideos.csv(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"print[0]" -> "df_yout(0)$0"	[label=print];
-	"print[0]" -> "df_yout(0)$6"	[label=print];
-	"print[0]" -> "Views quantiles(0)"	[label=print];
-	"print[0]" -> "(0)"	[label=print];
-	"print[0]" -> "Likes quantiles(0)"	[label=print];
-	"print[0]" -> "Dislikes quantiles(0)"	[label=print];
-	"print[0]" -> "Comment quantiles(0)"	[label=print];
-	"print[0]" -> "df_yout(0)$23"	[label=print];
-	"print[0]" -> "Category Name count(0)"	[label=print];
-	"print[0]" -> "wordcloud(0)$0"	[label=print];
-	"print[0]" -> "wordcloud(0)$1"	[label=print];
-	"print[0]" -> "wordcloud(0)$2"	[label=print];
-	"print[0]" -> "wordcloud(0)$3"	[label=print];
-	"print[0]" -> "df_yout(0)$48"	[label=print];
-	"print[0]" -> "df_yout(0)$51"	[label=print];
-	"print[0]" -> "TOP 5 Hour values(0)"	[label=print];
-	"df_yout(0)$6" -> "np(0)"	[label=log];
-	"df_yout(0)$6" -> "df_yout(0)$6"	[label=log];
-	"df_yout(0)$6" -> "1(0)"	[label=log];
-	"df_yout(0)$6" -> "df_yout(0)$5"	[label=log];
-	"df_yout(0)$6" -> "comment_count(0)"	[label=log];
-	"Views quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"Likes quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"Dislikes quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"Comment quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"df_yout(0)$23" -> "df_yout(0)$22"	[label=assignedFrom];
-	"df_yout(0)$23" -> "News & Politics(0)"	[label=assignedFrom];
-	"Category Name count(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"wordcloud(0)$0" -> "WordCloud(0)"	[label=generate];
-	"wordcloud(0)$0" -> "title(0)"	[label=generate];
-	"wordcloud(0)$0" -> "str(0)"	[label=generate];
-	"wordcloud(0)$0" -> "df_yout(0)$46"	[label=generate];
-	"wordcloud(0)$0" -> "stopwords(0)$0"	[label=generate];
-	"wordcloud(0)$0" -> "black(0)"	[label=generate];
-	"wordcloud(0)$0" -> "1000(0)"	[label=generate];
-	"wordcloud(0)$0" -> "120(0)"	[label=generate];
-	"wordcloud(0)$0" -> "42(0)"	[label=generate];
-	"wordcloud(0)$1" -> "WordCloud(0)"	[label=generate];
-	"wordcloud(0)$1" -> "title(0)"	[label=generate];
-	"wordcloud(0)$1" -> "str(0)"	[label=generate];
-	"wordcloud(0)$1" -> "df_yout(0)$46"	[label=generate];
-	"wordcloud(0)$1" -> "black(0)"	[label=generate];
-	"wordcloud(0)$1" -> "42(0)"	[label=generate];
-	"wordcloud(0)$1" -> "stopwords(0)$1"	[label=generate];
-	"wordcloud(0)$1" -> "150(0)"	[label=generate];
-	"wordcloud(0)$1" -> "40(0)"	[label=generate];
-	"wordcloud(0)$2" -> "WordCloud(0)"	[label=generate];
-	"wordcloud(0)$2" -> "str(0)"	[label=generate];
-	"wordcloud(0)$2" -> "df_yout(0)$46"	[label=generate];
-	"wordcloud(0)$2" -> "black(0)"	[label=generate];
-	"wordcloud(0)$2" -> "42(0)"	[label=generate];
-	"wordcloud(0)$2" -> "stopwords(0)$3"	[label=generate];
-	"wordcloud(0)$2" -> "1200(0)"	[label=generate];
-	"wordcloud(0)$2" -> "80(0)"	[label=generate];
-	"wordcloud(0)$2" -> "description(0)"	[label=generate];
-	"wordcloud(0)$3" -> "WordCloud(0)"	[label=generate];
-	"wordcloud(0)$3" -> "str(0)"	[label=generate];
-	"wordcloud(0)$3" -> "tags(0)"	[label=generate];
-	"wordcloud(0)$3" -> "df_yout(0)$46"	[label=generate];
-	"wordcloud(0)$3" -> "black(0)"	[label=generate];
-	"wordcloud(0)$3" -> "120(0)"	[label=generate];
-	"wordcloud(0)$3" -> "42(0)"	[label=generate];
-	"wordcloud(0)$3" -> "1200(0)"	[label=generate];
-	"wordcloud(0)$3" -> "stopwords(0)$4"	[label=generate];
-	"df_yout(0)$48" -> "df_yout(0)$47"	[label=assignedFrom];
-	"df_yout(0)$48" -> "publish_time(0)"	[label=assignedFrom];
-	"df_yout(0)$51" -> "True(0)"	[label=astype];
-	"df_yout(0)$51" -> "str(0)"	[label=astype];
-	"df_yout(0)$51" -> "publish_time(0)"	[label=astype];
-	"df_yout(0)$51" -> "df_yout(0)$50"	[label=astype];
-	"df_yout(0)$51" -> ":(0)"	[label=astype];
-	"df_yout(0)$51" -> "int(0)"	[label=astype];
-	"TOP 5 Hour values(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[12/0]" -> "df_yout(0)$0"	[label=print];
+	"print[13/0]" -> "df_yout(0)$0"	[label=print];
 	"df_yout(0)$1" -> "df_yout(0)$0"	[label=info];
 	"df_yout(0)$2" -> "df_yout(0)$1"	[label=head];
 	"df_yout(0)$3" -> "np(0)"	[label=log];
@@ -126,6 +54,11 @@ digraph "" {
 	"df_yout(0)$5" -> "df_yout(0)$5"	[label=log];
 	"df_yout(0)$5" -> "dislikes(0)"	[label=log];
 	"dislikes(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"df_yout(0)$6" -> "np(0)"	[label=log];
+	"df_yout(0)$6" -> "1(0)"	[label=log];
+	"df_yout(0)$6" -> "df_yout(0)$5"	[label=log];
+	"df_yout(0)$6" -> "df_yout(0)$6"	[label=log];
+	"df_yout(0)$6" -> "comment_count(0)"	[label=log];
 	"comment_count(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"plt(0)$1" -> "plt(0)$0"	[label=subplot];
@@ -174,33 +107,42 @@ digraph "" {
 	"COMMENTS LOG DISTRIBUITION(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$5" -> "plt(0)$4"	[label=subplots_adjust];
 	"plt(0)$6" -> "plt(0)$5"	[label=show];
-	"print[1]" -> "likes(0)"	[label=print];
-	"print[1]" -> "views(0)"	[label=print];
-	"print[1]" -> "dislikes(0)"	[label=print];
-	"print[1]" -> "comment_count(0)"	[label=print];
-	"print[1]" -> "5(0)"	[label=print];
-	"print[1]" -> "month(0)"	[label=print];
-	"print[1]" -> "hour(0)"	[label=print];
-	"5(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"month(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"hour(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadec10>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade5e0>, <_ast.Constant \
-object at 0x12fade610>, <_ast.Constant object at 0x12fade3d0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"print[2]" -> "5(0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fadec10>, <_ast.Constant object at 0x12fade190>, <_ast.Constant object at 0x12fade5e0>, <_ast.Constant \
-object at 0x12fade610>, <_ast.Constant object at 0x12fade3d0>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade310>, <_ast.Constant \
-object at 0x12fadea60>, <_ast.Constant object at 0x12fadeeb0>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12faded00>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant \
-object at 0x12fade820>, <_ast.Constant object at 0x12fade520>](0)"	[label=print];
-	"print[2]" -> "[<_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f5550>, <_ast.Constant \
-object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)"	[label=print];
-	"[<_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade2e0>, <_ast.Constant object at 0x12fade310>, <_ast.Constant \
-object at 0x12fadea60>, <_ast.Constant object at 0x12fadeeb0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade670>, <_ast.Constant object at 0x12faded00>, <_ast.Constant object at 0x12fadeaf0>, <_ast.Constant \
-object at 0x12fade820>, <_ast.Constant object at 0x12fade520>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f50d0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f5550>, <_ast.Constant \
-object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"Views quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[43/0]" -> "Views quantiles(0)"	[label=print];
+	"print[44/0]" -> "views(0)"	[label=print];
+	"print[44/0]" -> "df_yout(0)$6"	[label=print];
+	"print[44/0]" -> "[<_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant object at 0x7fd4c04ccee0>, <_\
+ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc400>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cc730>, <_ast.Constant object at 0x7fd4c04ccee0>, <_\
+ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc400>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[45/0]" -> "(0)"	[label=print];
+	"Likes quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[46/0]" -> "Likes quantiles(0)"	[label=print];
+	"print[47/0]" -> "likes(0)"	[label=print];
+	"print[47/0]" -> "df_yout(0)$6"	[label=print];
+	"print[47/0]" -> "[<_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ffa90>, <_ast.Constant object at 0x7fd4c04ff400>, <_\
+ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff520>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ffa90>, <_ast.Constant object at 0x7fd4c04ff400>, <_\
+ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff520>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[48/0]" -> "(0)"	[label=print];
+	"Dislikes quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[49/0]" -> "Dislikes quantiles(0)"	[label=print];
+	"print[50/0]" -> "dislikes(0)"	[label=print];
+	"print[50/0]" -> "df_yout(0)$6"	[label=print];
+	"print[50/0]" -> "[<_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff940>, <_ast.Constant object at 0x7fd4c04ff550>, <_\
+ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04fffa0>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff940>, <_ast.Constant object at 0x7fd4c04ff550>, <_\
+ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04fffa0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[51/0]" -> "(0)"	[label=print];
+	"Comment quantiles(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[52/0]" -> "Comment quantiles(0)"	[label=print];
+	"print[53/0]" -> "df_yout(0)$6"	[label=print];
+	"print[53/0]" -> "comment_count(0)"	[label=print];
+	"print[53/0]" -> "[<_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ffd00>, <_ast.Constant object at 0x7fd4c04ff6a0>, <_\
+ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff0d0>](0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ffd00>, <_ast.Constant object at 0x7fd4c04ff6a0>, <_\
+ast.Constant object at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff0d0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"df_yout(0)$7" -> "np(0)"	[label=assignedFrom];
 	"df_yout(0)$7" -> "df_yout(0)$6"	[label=assignedFrom];
 	"Film and Animation(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -249,6 +191,13 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"df_yout(0)$22" -> "df_yout(0)$21"	[label=assignedFrom];
 	"df_yout(0)$22" -> "Non Profits and Activism(0)"	[label=assignedFrom];
 	"News & Politics(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"df_yout(0)$23" -> "df_yout(0)$22"	[label=assignedFrom];
+	"df_yout(0)$23" -> "News & Politics(0)"	[label=assignedFrom];
+	"Category Name count(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[72/0]" -> "Category Name count(0)"	[label=print];
+	"print[73/0]" -> "df_yout(0)$23"	[label=print];
+	"print[73/0]" -> "5(0)"	[label=print];
+	"5(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$7" -> "plt(0)$6"	[label=figure];
 	"plt(0)$8" -> "plt(0)$7"	[label=subplot];
 	"plt(0)$8" -> "211(0)"	[label=subplot];
@@ -273,8 +222,8 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"plt(0)$9" -> "212(0)"	[label=subplot];
 	"212(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"g1(0)$2" -> "sns(0)"	[label=boxplot];
-	"g1(0)$2" -> "df_yout(0)$23"	[label=boxplot];
 	"g1(0)$2" -> "views_log(0)"	[label=boxplot];
+	"g1(0)$2" -> "df_yout(0)$23"	[label=boxplot];
 	"g1(0)$2" -> "category_name(0)"	[label=boxplot];
 	"g1(0)$2" -> "Set1(0)"	[label=boxplot];
 	"g1(0)$3" -> "g(0)$4"	[label=set_xticklabels];
@@ -291,8 +240,8 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"plt(0)$11" -> "plt(0)$10"	[label=show];
 	"plt(0)$12" -> "plt(0)$11"	[label=figure];
 	"g(0)$5" -> "sns(0)"	[label=boxplot];
-	"g(0)$5" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$5" -> "likes_log(0)"	[label=boxplot];
+	"g(0)$5" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$5" -> "category_name(0)"	[label=boxplot];
 	"g(0)$5" -> "Set1(0)"	[label=boxplot];
 	"g(0)$6" -> "g(0)$5"	[label=set_xticklabels];
@@ -308,8 +257,8 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"plt(0)$13" -> "plt(0)$12"	[label=show];
 	"plt(0)$14" -> "plt(0)$13"	[label=figure];
 	"g(0)$10" -> "sns(0)"	[label=boxplot];
-	"g(0)$10" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$10" -> "dislikes_log(0)"	[label=boxplot];
+	"g(0)$10" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$10" -> "category_name(0)"	[label=boxplot];
 	"g(0)$10" -> "Set1(0)"	[label=boxplot];
 	"g(0)$11" -> "g(0)$10"	[label=set_xticklabels];
@@ -325,8 +274,8 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"plt(0)$15" -> "plt(0)$14"	[label=show];
 	"plt(0)$16" -> "plt(0)$15"	[label=figure];
 	"g(0)$15" -> "sns(0)"	[label=boxplot];
-	"g(0)$15" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$15" -> "comment_log(0)"	[label=boxplot];
+	"g(0)$15" -> "df_yout(0)$23"	[label=boxplot];
 	"g(0)$15" -> "category_name(0)"	[label=boxplot];
 	"g(0)$15" -> "Set1(0)"	[label=boxplot];
 	"g(0)$16" -> "g(0)$15"	[label=set_xticklabels];
@@ -340,9 +289,9 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"g(0)$19" -> "Comments Count(log)(0)"	[label=set_ylabel];
 	"Comments Count(log)(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$17" -> "plt(0)$16"	[label=show];
-	"df_yout(0)$24" -> "df_yout(0)$23"	[label=Mult];
 	"df_yout(0)$24" -> "likes(0)"	[label=Mult];
 	"df_yout(0)$24" -> "views(0)"	[label=Mult];
+	"df_yout(0)$24" -> "df_yout(0)$23"	[label=Mult];
 	"df_yout(0)$24" -> "df_yout(0)$24"	[label=Mult];
 	"df_yout(0)$24" -> "100(0)"	[label=Mult];
 	"100(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -587,12 +536,12 @@ object at 0x12f8f5b20>, <_ast.Constant object at 0x12f8f5b80>](0)" -> "extensive
 	"plt(0)$41" -> "plt(0)$40"	[label=figure];
 	"sns(0)$0" -> "sns(0)"	[label=heatmap];
 	"sns(0)$0" -> "df_yout(0)$26"	[label=heatmap];
-	"sns(0)$0" -> "[<_ast.Constant object at 0x12f88b5e0>, <_ast.Constant object at 0x12f88b550>, <_ast.Constant object at 0x12f88b610>, <_ast.Constant \
-object at 0x12f88b670>, <_ast.Constant object at 0x12f88b6a0>, <_ast.Constant object at 0x12f88b6d0>, <_ast.Constant object at 0x12f88b700>, <_\
-ast.Constant object at 0x12f88b730>](0)"	[label=heatmap];
-	"[<_ast.Constant object at 0x12f88b5e0>, <_ast.Constant object at 0x12f88b550>, <_ast.Constant object at 0x12f88b610>, <_ast.Constant \
-object at 0x12f88b670>, <_ast.Constant object at 0x12f88b6a0>, <_ast.Constant object at 0x12f88b6d0>, <_ast.Constant object at 0x12f88b700>, <_\
-ast.Constant object at 0x12f88b730>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"sns(0)$0" -> "[<_ast.Constant object at 0x7fd500848250>, <_ast.Constant object at 0x7fd500848280>, <_ast.Constant object at 0x7fd5008482b0>, <_\
+ast.Constant object at 0x7fd5008482e0>, <_ast.Constant object at 0x7fd500848310>, <_ast.Constant object at 0x7fd500848340>, <_ast.Constant \
+object at 0x7fd500848370>, <_ast.Constant object at 0x7fd5008483a0>](0)"	[label=heatmap];
+	"[<_ast.Constant object at 0x7fd500848250>, <_ast.Constant object at 0x7fd500848280>, <_ast.Constant object at 0x7fd5008482b0>, <_\
+ast.Constant object at 0x7fd5008482e0>, <_ast.Constant object at 0x7fd500848310>, <_ast.Constant object at 0x7fd500848340>, <_ast.Constant \
+object at 0x7fd500848370>, <_ast.Constant object at 0x7fd5008483a0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$42" -> "plt(0)$41"	[label=show];
 	string -> "extensive-usa-youtube-eda.ipynb"	[label=importedBy];
 	"string(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -826,8 +775,8 @@ ast.Constant object at 0x12f88b730>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"g4(0)$7" -> "count_punctuations_tags(0)"	[label=distplot];
 	"g4(0)$7" -> "Tags(0)"	[label=distplot];
 	"g4(0)$8" -> "g4(0)$7"	[label=set_xlim];
-	"g4(0)$8" -> "[<_ast.UnaryOp object at 0x130541940>, <_ast.Constant object at 0x1305419a0>](0)"	[label=set_xlim];
-	"[<_ast.UnaryOp object at 0x130541940>, <_ast.Constant object at 0x1305419a0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"g4(0)$8" -> "[<_ast.UnaryOp object at 0x7fd500853640>, <_ast.Constant object at 0x7fd5008536a0>](0)"	[label=set_xlim];
+	"[<_ast.UnaryOp object at 0x7fd500853640>, <_ast.Constant object at 0x7fd5008536a0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"g4(0)$9" -> "g4(0)$8"	[label=set_title];
 	"g4(0)$9" -> "COUNT PONCTUATIONS DISTRIBUITION(0)"	[label=set_title];
 	"COUNT PONCTUATIONS DISTRIBUITION(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -902,8 +851,8 @@ ast.Constant object at 0x12f88b730>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"g8(0)$1" -> "mean_word_len_tags(0)"	[label=distplot];
 	"mean_word_len_tags(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"g8(0)$2" -> "g8(0)$1"	[label=set_xlim];
-	"g8(0)$2" -> "[<_ast.UnaryOp object at 0x13053df70>, <_ast.Constant object at 0x13053dfd0>](0)"	[label=set_xlim];
-	"[<_ast.UnaryOp object at 0x13053df70>, <_ast.Constant object at 0x13053dfd0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"g8(0)$2" -> "[<_ast.UnaryOp object at 0x7fd4c05b4bb0>, <_ast.Constant object at 0x7fd4c05b4c10>](0)"	[label=set_xlim];
+	"[<_ast.UnaryOp object at 0x7fd4c05b4bb0>, <_ast.Constant object at 0x7fd4c05b4c10>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"g8(0)$3" -> "g8(0)$2"	[label=set_title];
 	"g8(0)$3" -> "MEAN WORD LEN DISTRIBUITION(0)"	[label=set_title];
 	"MEAN WORD LEN DISTRIBUITION(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -1034,16 +983,16 @@ ast.Constant object at 0x12f88b730>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"plt(0)$69" -> "plt(0)$68"	[label=figure];
 	"sns(0)$1" -> "sns(0)$0"	[label=heatmap];
 	"sns(0)$1" -> "df_yout(0)$46"	[label=heatmap];
-	"sns(0)$1" -> "[<_ast.Constant object at 0x12f90c670>, <_ast.Constant object at 0x12f90c6a0>, <_ast.Constant object at 0x12f90c6d0>, <_ast.Constant \
-object at 0x12f90c700>, <_ast.Constant object at 0x12f90c730>, <_ast.Constant object at 0x12f90c760>, <_ast.Constant object at 0x12f90c790>, <_\
-ast.Constant object at 0x12f90c7c0>, <_ast.Constant object at 0x12f90c7f0>, <_ast.Constant object at 0x12f90c850>, <_ast.Constant \
-object at 0x12f90c820>, <_ast.Constant object at 0x12f90c880>, <_ast.Constant object at 0x12f90c8b0>, <_ast.Constant object at 0x12f90c8e0>, <_\
-ast.Constant object at 0x12f90c910>](0)"	[label=heatmap];
-	"[<_ast.Constant object at 0x12f90c670>, <_ast.Constant object at 0x12f90c6a0>, <_ast.Constant object at 0x12f90c6d0>, <_ast.Constant \
-object at 0x12f90c700>, <_ast.Constant object at 0x12f90c730>, <_ast.Constant object at 0x12f90c760>, <_ast.Constant object at 0x12f90c790>, <_\
-ast.Constant object at 0x12f90c7c0>, <_ast.Constant object at 0x12f90c7f0>, <_ast.Constant object at 0x12f90c850>, <_ast.Constant \
-object at 0x12f90c820>, <_ast.Constant object at 0x12f90c880>, <_ast.Constant object at 0x12f90c8b0>, <_ast.Constant object at 0x12f90c8e0>, <_\
-ast.Constant object at 0x12f90c910>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"sns(0)$1" -> "[<_ast.Constant object at 0x7fd4c0599340>, <_ast.Constant object at 0x7fd4c0599370>, <_ast.Constant object at 0x7fd4c05993a0>, <_\
+ast.Constant object at 0x7fd4c05993d0>, <_ast.Constant object at 0x7fd4c0599400>, <_ast.Constant object at 0x7fd4c0599430>, <_ast.Constant \
+object at 0x7fd4c0599460>, <_ast.Constant object at 0x7fd4c0599490>, <_ast.Constant object at 0x7fd4c05994c0>, <_ast.Constant object \
+at 0x7fd4c05994f0>, <_ast.Constant object at 0x7fd4c0599520>, <_ast.Constant object at 0x7fd4c0599550>, <_ast.Constant object at \
+0x7fd4c0599580>, <_ast.Constant object at 0x7fd4c05995b0>, <_ast.Constant object at 0x7fd4c05995e0>](0)"	[label=heatmap];
+	"[<_ast.Constant object at 0x7fd4c0599340>, <_ast.Constant object at 0x7fd4c0599370>, <_ast.Constant object at 0x7fd4c05993a0>, <_\
+ast.Constant object at 0x7fd4c05993d0>, <_ast.Constant object at 0x7fd4c0599400>, <_ast.Constant object at 0x7fd4c0599430>, <_ast.Constant \
+object at 0x7fd4c0599460>, <_ast.Constant object at 0x7fd4c0599490>, <_ast.Constant object at 0x7fd4c05994c0>, <_ast.Constant object \
+at 0x7fd4c05994f0>, <_ast.Constant object at 0x7fd4c0599520>, <_ast.Constant object at 0x7fd4c0599550>, <_ast.Constant object at \
+0x7fd4c0599580>, <_ast.Constant object at 0x7fd4c05995b0>, <_ast.Constant object at 0x7fd4c05995e0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$70" -> "plt(0)$69"	[label=show];
 	"15(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"mpl(0)$0" -> "mpl(0)"	[label=assignedFrom];
@@ -1055,14 +1004,24 @@ ast.Constant object at 0x12f90c910>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"mpl(0)$2" -> "0.1(0)"	[label=assignedFrom];
 	"plt(0)$71" -> "plt(0)$70"	[label=figure];
 	"stopwords(0)$0" -> "STOPWORDS(0)"	[label=set];
+	"wordcloud(0)$0" -> "WordCloud(0)"	[label=generate];
+	"wordcloud(0)$0" -> "title(0)"	[label=generate];
+	"wordcloud(0)$0" -> "str(0)"	[label=generate];
+	"wordcloud(0)$0" -> "df_yout(0)$46"	[label=generate];
+	"wordcloud(0)$0" -> "stopwords(0)$0"	[label=generate];
+	"wordcloud(0)$0" -> "black(0)"	[label=generate];
+	"wordcloud(0)$0" -> "1000(0)"	[label=generate];
+	"wordcloud(0)$0" -> "120(0)"	[label=generate];
+	"wordcloud(0)$0" -> "42(0)"	[label=generate];
 	"black(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"1000(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"120(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"42(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[415/0]" -> "wordcloud(0)$0"	[label=print];
 	"fig(0)$0" -> "1(0)"	[label=figure];
 	"fig(0)$0" -> "plt(0)$71"	[label=figure];
-	"plt(0)$72" -> "wordcloud(0)$0"	[label=imshow];
 	"plt(0)$72" -> "plt(0)$71"	[label=imshow];
+	"plt(0)$72" -> "wordcloud(0)$0"	[label=imshow];
 	"plt(0)$73" -> "plt(0)$72"	[label=title];
 	"plt(0)$73" -> "WORD CLOUD - TITLES(0)"	[label=title];
 	"WORD CLOUD - TITLES(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -1072,12 +1031,22 @@ ast.Constant object at 0x12f90c910>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"plt(0)$75" -> "plt(0)$74"	[label=show];
 	"plt(0)$76" -> "plt(0)$75"	[label=figure];
 	"stopwords(0)$1" -> "STOPWORDS(0)"	[label=set];
+	"wordcloud(0)$1" -> "WordCloud(0)"	[label=generate];
+	"wordcloud(0)$1" -> "title(0)"	[label=generate];
+	"wordcloud(0)$1" -> "str(0)"	[label=generate];
+	"wordcloud(0)$1" -> "df_yout(0)$46"	[label=generate];
+	"wordcloud(0)$1" -> "black(0)"	[label=generate];
+	"wordcloud(0)$1" -> "42(0)"	[label=generate];
+	"wordcloud(0)$1" -> "stopwords(0)$1"	[label=generate];
+	"wordcloud(0)$1" -> "150(0)"	[label=generate];
+	"wordcloud(0)$1" -> "40(0)"	[label=generate];
 	"150(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"40(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[432/0]" -> "wordcloud(0)$1"	[label=print];
 	"fig(0)$1" -> "1(0)"	[label=figure];
 	"fig(0)$1" -> "plt(0)$76"	[label=figure];
-	"plt(0)$77" -> "wordcloud(0)$1"	[label=imshow];
 	"plt(0)$77" -> "plt(0)$76"	[label=imshow];
+	"plt(0)$77" -> "wordcloud(0)$1"	[label=imshow];
 	"plt(0)$78" -> "plt(0)$77"	[label=title];
 	"plt(0)$78" -> "WORD CLOUD - DESCRIPTION(0)"	[label=title];
 	"WORD CLOUD - DESCRIPTION(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -1086,19 +1055,29 @@ ast.Constant object at 0x12f90c910>](0)" -> "extensive-usa-youtube-eda.ipynb"	[l
 	"plt(0)$80" -> "plt(0)$79"	[label=show];
 	"plt(0)$81" -> "plt(0)$80"	[label=figure];
 	"stopwords(0)$2" -> "STOPWORDS(0)"	[label=set];
-	"[<_ast.Constant object at 0x12f908100>, <_ast.Constant object at 0x12f908130>, <_ast.Constant object at 0x12f908160>, <_ast.Constant \
-object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant object at 0x12f9081f0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
-	"newStopWords(0)$0" -> "[<_ast.Constant object at 0x12f908100>, <_ast.Constant object at 0x12f908130>, <_ast.Constant object at 0x12f908160>, <_ast.Constant \
-object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant object at 0x12f9081f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05a0dc0>, <_ast.Constant object at 0x7fd4c05a0df0>, <_ast.Constant object at 0x7fd4c05a0e20>, <_\
+ast.Constant object at 0x7fd4c05a0e50>, <_ast.Constant object at 0x7fd4c05a0e80>, <_ast.Constant object at 0x7fd4c05a0eb0>](0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"newStopWords(0)$0" -> "[<_ast.Constant object at 0x7fd4c05a0dc0>, <_ast.Constant object at 0x7fd4c05a0df0>, <_ast.Constant object at 0x7fd4c05a0e20>, <_\
+ast.Constant object at 0x7fd4c05a0e50>, <_ast.Constant object at 0x7fd4c05a0e80>, <_ast.Constant object at 0x7fd4c05a0eb0>](0)"	[label=assignedFrom];
 	"stopwords(0)$3" -> "stopwords(0)$2"	[label=update];
 	"stopwords(0)$3" -> "newStopWords(0)$0"	[label=update];
+	"wordcloud(0)$2" -> "WordCloud(0)"	[label=generate];
+	"wordcloud(0)$2" -> "str(0)"	[label=generate];
+	"wordcloud(0)$2" -> "df_yout(0)$46"	[label=generate];
+	"wordcloud(0)$2" -> "black(0)"	[label=generate];
+	"wordcloud(0)$2" -> "42(0)"	[label=generate];
+	"wordcloud(0)$2" -> "stopwords(0)$3"	[label=generate];
+	"wordcloud(0)$2" -> "1200(0)"	[label=generate];
+	"wordcloud(0)$2" -> "80(0)"	[label=generate];
+	"wordcloud(0)$2" -> "description(0)"	[label=generate];
 	"1200(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"80(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"description(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[454/0]" -> "wordcloud(0)$2"	[label=print];
 	"fig(0)$2" -> "1(0)"	[label=figure];
 	"fig(0)$2" -> "plt(0)$81"	[label=figure];
-	"plt(0)$82" -> "wordcloud(0)$2"	[label=imshow];
 	"plt(0)$82" -> "plt(0)$81"	[label=imshow];
+	"plt(0)$82" -> "wordcloud(0)$2"	[label=imshow];
 	"plt(0)$83" -> "WORD CLOUD - DESCRIPTION(0)"	[label=title];
 	"plt(0)$83" -> "plt(0)$82"	[label=title];
 	"plt(0)$84" -> "off(0)"	[label=axis];
@@ -1106,10 +1085,20 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"plt(0)$85" -> "plt(0)$84"	[label=show];
 	"plt(0)$86" -> "plt(0)$85"	[label=figure];
 	"stopwords(0)$4" -> "STOPWORDS(0)"	[label=set];
+	"wordcloud(0)$3" -> "WordCloud(0)"	[label=generate];
+	"wordcloud(0)$3" -> "str(0)"	[label=generate];
+	"wordcloud(0)$3" -> "tags(0)"	[label=generate];
+	"wordcloud(0)$3" -> "df_yout(0)$46"	[label=generate];
+	"wordcloud(0)$3" -> "black(0)"	[label=generate];
+	"wordcloud(0)$3" -> "120(0)"	[label=generate];
+	"wordcloud(0)$3" -> "42(0)"	[label=generate];
+	"wordcloud(0)$3" -> "1200(0)"	[label=generate];
+	"wordcloud(0)$3" -> "stopwords(0)$4"	[label=generate];
+	"print[471/0]" -> "wordcloud(0)$3"	[label=print];
 	"fig(0)$3" -> "1(0)"	[label=figure];
 	"fig(0)$3" -> "plt(0)$86"	[label=figure];
-	"plt(0)$87" -> "wordcloud(0)$3"	[label=imshow];
 	"plt(0)$87" -> "plt(0)$86"	[label=imshow];
+	"plt(0)$87" -> "wordcloud(0)$3"	[label=imshow];
 	"plt(0)$88" -> "plt(0)$87"	[label=title];
 	"plt(0)$88" -> "WORD CLOUD - TAGS(0)"	[label=title];
 	"WORD CLOUD - TAGS(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
@@ -1123,13 +1112,20 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"df_yout(0)$47" -> "\%Y-\%m-\%dT\%H:\%M:\%S.\%fZ(0)"	[label=to_datetime];
 	"publish_time(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"\%Y-\%m-\%dT\%H:\%M:\%S.\%fZ(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"df_yout(0)$48" -> "df_yout(0)$47"	[label=assignedFrom];
+	"df_yout(0)$48" -> "publish_time(0)"	[label=assignedFrom];
+	"print[480/0]" -> "Category Name count(0)"	[label=print];
+	"print[481/0]" -> "5(0)"	[label=print];
+	"print[481/0]" -> "df_yout(0)$48"	[label=print];
+	"print[481/0]" -> "month(0)"	[label=print];
+	"month(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$91" -> "plt(0)$90"	[label=figure];
 	"plt(0)$92" -> "211(0)"	[label=subplot];
 	"plt(0)$92" -> "plt(0)$91"	[label=subplot];
-	"g(0)$35" -> "df_yout(0)$48"	[label=countplot];
-	"g(0)$35" -> "month(0)"	[label=countplot];
 	"g(0)$35" -> "Set1(0)"	[label=countplot];
 	"g(0)$35" -> "sns(0)$1"	[label=countplot];
+	"g(0)$35" -> "df_yout(0)$48"	[label=countplot];
+	"g(0)$35" -> "month(0)"	[label=countplot];
 	"g(0)$36" -> "g(0)$35"	[label=set_xticklabels];
 	"g(0)$36" -> "g(0)$36"	[label=set_xticklabels];
 	"g(0)$37" -> "g(0)$36"	[label=set_title];
@@ -1142,11 +1138,11 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"g(0)$39" -> "g(0)$38"	[label=set_ylabel];
 	"plt(0)$93" -> "212(0)"	[label=subplot];
 	"plt(0)$93" -> "plt(0)$92"	[label=subplot];
-	"g1(0)$33" -> "df_yout(0)$48"	[label=lvplot];
-	"g1(0)$33" -> "month(0)"	[label=lvplot];
 	"g1(0)$33" -> "Set1(0)"	[label=lvplot];
 	"g1(0)$33" -> "like_rate(0)"	[label=lvplot];
 	"g1(0)$33" -> "sns(0)$1"	[label=lvplot];
+	"g1(0)$33" -> "df_yout(0)$48"	[label=lvplot];
+	"g1(0)$33" -> "month(0)"	[label=lvplot];
 	"g1(0)$34" -> "g(0)$39"	[label=set_xticklabels];
 	"g1(0)$34" -> "g1(0)$33"	[label=set_xticklabels];
 	"g1(0)$35" -> "g1(0)$34"	[label=set_title];
@@ -1159,8 +1155,8 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"Like Rate(log)(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$94" -> "plt(0)$93"	[label=subplots_adjust];
 	"plt(0)$95" -> "plt(0)$94"	[label=show];
-	"df_yout(0)$49" -> "df_yout(0)$48"	[label=insert];
 	"df_yout(0)$49" -> "publish_time(0)"	[label=insert];
+	"df_yout(0)$49" -> "df_yout(0)$48"	[label=insert];
 	"df_yout(0)$49" -> "df_yout(0)$49"	[label=insert];
 	"df_yout(0)$49" -> "4(0)"	[label=insert];
 	"df_yout(0)$49" -> "publish_date(0)"	[label=insert];
@@ -1168,15 +1164,27 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"publish_date(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"df_yout(0)$50" -> "publish_time(0)"	[label=assignedFrom];
 	"df_yout(0)$50" -> "df_yout(0)$49"	[label=assignedFrom];
+	"df_yout(0)$51" -> "True(0)"	[label=astype];
+	"df_yout(0)$51" -> "str(0)"	[label=astype];
+	"df_yout(0)$51" -> "publish_time(0)"	[label=astype];
+	"df_yout(0)$51" -> "df_yout(0)$50"	[label=astype];
+	"df_yout(0)$51" -> ":(0)"	[label=astype];
+	"df_yout(0)$51" -> "int(0)"	[label=astype];
 	":(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"int(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"TOP 5 Hour values(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
+	"print[506/0]" -> "TOP 5 Hour values(0)"	[label=print];
+	"print[507/0]" -> "5(0)"	[label=print];
+	"print[507/0]" -> "df_yout(0)$51"	[label=print];
+	"print[507/0]" -> "hour(0)"	[label=print];
+	"hour(0)" -> "extensive-usa-youtube-eda.ipynb"	[label=appearsIn];
 	"plt(0)$96" -> "plt(0)$95"	[label=figure];
 	"plt(0)$97" -> "211(0)"	[label=subplot];
 	"plt(0)$97" -> "plt(0)$96"	[label=subplot];
-	"g(0)$40" -> "df_yout(0)$51"	[label=countplot];
-	"g(0)$40" -> "hour(0)"	[label=countplot];
 	"g(0)$40" -> "Set1(0)"	[label=countplot];
 	"g(0)$40" -> "sns(0)$1"	[label=countplot];
+	"g(0)$40" -> "df_yout(0)$51"	[label=countplot];
+	"g(0)$40" -> "hour(0)"	[label=countplot];
 	"g(0)$41" -> "g(0)$40"	[label=set_xticklabels];
 	"g(0)$41" -> "g(0)$41"	[label=set_xticklabels];
 	"g(0)$42" -> "g(0)$41"	[label=set_title];
@@ -1189,11 +1197,11 @@ object at 0x12f908190>, <_ast.Constant object at 0x12f9081c0>, <_ast.Constant ob
 	"g(0)$44" -> "g(0)$43"	[label=set_ylabel];
 	"plt(0)$98" -> "212(0)"	[label=subplot];
 	"plt(0)$98" -> "plt(0)$97"	[label=subplot];
-	"g1(0)$38" -> "df_yout(0)$51"	[label=lvplot];
-	"g1(0)$38" -> "hour(0)"	[label=lvplot];
 	"g1(0)$38" -> "Set1(0)"	[label=lvplot];
 	"g1(0)$38" -> "like_rate(0)"	[label=lvplot];
 	"g1(0)$38" -> "sns(0)$1"	[label=lvplot];
+	"g1(0)$38" -> "df_yout(0)$51"	[label=lvplot];
+	"g1(0)$38" -> "hour(0)"	[label=lvplot];
 	"g1(0)$39" -> "g(0)$44"	[label=set_xticklabels];
 	"g1(0)$39" -> "g1(0)$38"	[label=set_xticklabels];
 	"g1(0)$40" -> "g1(0)$39"	[label=set_title];

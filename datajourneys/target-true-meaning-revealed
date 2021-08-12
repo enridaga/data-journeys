@@ -43,10 +43,10 @@ digraph "" {
 	"train(0)$1" -> "target(0)"	[label=Pow];
 	"target(0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
 	"merchant_counts(0)$0" -> "historical_transactions(0)$1"	[label=reset_index];
-	"merchant_counts(0)$0" -> "[<_ast.Constant object at 0x12fade7c0>](0)"	[label=reset_index];
+	"merchant_counts(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc940>](0)"	[label=reset_index];
 	"merchant_counts(0)$0" -> "merchant_id(0)"	[label=reset_index];
 	"merchant_counts(0)$0" -> "merchant_n(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fade7c0>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc940>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
 	"merchant_id(0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
 	"merchant_n(0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
 	"one_merchant(0)$0" -> "merchant_counts(0)$0"	[label=reset_index];
@@ -80,20 +80,17 @@ digraph "" {
 	"dat(0)$4" -> "dat(0)$3"	[label=head];
 	"dat(0)$5" -> "dat(0)$4"	[label=reset_index];
 	"dat(0)$6" -> "dat(0)$5"	[label=sort_values];
-	"dat(0)$6" -> "[<_ast.Constant object at 0x12f8f53d0>, <_ast.Constant object at 0x12f8f5d90>](0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f8f53d0>, <_ast.Constant object at 0x12f8f5d90>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5850>, <_ast.Constant object at 0x12f8f55e0>, <_ast.Constant object at 0x12f8f5880>, <_ast.Constant \
-object at 0x12f8f5cd0>, <_ast.Constant object at 0x12f8f5bb0>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
-	"prices(0)$0" -> "[<_ast.Constant object at 0x12f8f5850>, <_ast.Constant object at 0x12f8f55e0>, <_ast.Constant object at 0x12f8f5880>, <_ast.Constant \
-object at 0x12f8f5cd0>, <_ast.Constant object at 0x12f8f5bb0>](0)"	[label=assignedFrom];
+	"dat(0)$6" -> "[<_ast.Constant object at 0x7fd4c05d0f40>, <_ast.Constant object at 0x7fd4c05d0160>](0)"	[label=sort_values];
+	"[<_ast.Constant object at 0x7fd4c05d0f40>, <_ast.Constant object at 0x7fd4c05d0160>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05d0a30>, <_ast.Constant object at 0x7fd4c05d0c10>, <_ast.Constant object at 0x7fd4c05d0820>, <_\
+ast.Constant object at 0x7fd4c05d0130>, <_ast.Constant object at 0x7fd4c05d0640>](0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
+	"prices(0)$0" -> "[<_ast.Constant object at 0x7fd4c05d0a30>, <_ast.Constant object at 0x7fd4c05d0c10>, <_ast.Constant object at 0x7fd4c05d0820>, <_\
+ast.Constant object at 0x7fd4c05d0130>, <_ast.Constant object at 0x7fd4c05d0640>](0)"	[label=assignedFrom];
 	"i(0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
-	"sorted[0]" -> "i(0)"	[label=sorted];
+	"sorted[25/0]" -> "prices(0)$0"	[label=sorted];
+	"sorted[25/0]" -> "i(0)"	[label=sorted];
+	"sorted[25/0]" -> "j(0)"	[label=sorted];
 	"j(0)" -> "target-true-meaning-revealed.ipynb"	[label=appearsIn];
-	"sorted[1]" -> "j(0)"	[label=sorted];
-	"sorted[2]" -> "j(0)"	[label=sorted];
-	"sorted[3]" -> "prices(0)$0"	[label=sorted];
-	"sorted[4]" -> "i(0)"	[label=sorted];
-	"sorted[5]" -> "prices(0)$0"	[label=sorted];
 	"dat(0)$7" -> "dat(0)$6"	[label=reset_index];
 	"dat(0)$8" -> "purchase_date(0)"	[label=sort_values];
 	"dat(0)$8" -> "dat(0)$7"	[label=sort_values];

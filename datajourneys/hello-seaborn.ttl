@@ -1,0 +1,119 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#196018726> rdfs:label "plt(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/2321687025649472694> ;
+    dj:figure <http://purl.org/dj/kaggle/hello-seaborn#127074770> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#198115882> rdfs:label "sns(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:lineplot <http://purl.org/dj/kaggle/hello-seaborn#128647638> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#415564712> rdfs:label "print[12/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/5187802734322113944> ;
+    dj:print <http://purl.org/dj/kaggle/hello-seaborn#956106220> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#639239270> rdfs:label "fifa_data(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/-6937665111379998376> ;
+    dj:head <http://purl.org/dj/kaggle/hello-seaborn#639173733> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#1094125080> rdfs:label "fifa_filepath(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/hello-seaborn#1158743676> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#1158743676> rdfs:label "../input/fifa.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn .
+
+<http://purl.org/dj/kaggle/hello-seaborn#127074770> rdfs:label "plt(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#128647638> rdfs:label "sns(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/194380523> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#132776362> rdfs:label "pd(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:register_matplotlib_converters <http://purl.org/dj/kaggle/hello-seaborn#80085334> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#151126528> rdfs:label "Date(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn .
+
+<http://purl.org/dj/kaggle/hello-seaborn#165478946> rdfs:label "True(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn .
+
+<http://purl.org/dj/kaggle/hello-seaborn#639173733> rdfs:label "fifa_data(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/8560254222278988554> ;
+    dj:read_csv <http://purl.org/dj/kaggle/hello-seaborn#1094125080>,
+        <http://purl.org/dj/kaggle/hello-seaborn#132776362>,
+        <http://purl.org/dj/kaggle/hello-seaborn#151126528>,
+        <http://purl.org/dj/kaggle/hello-seaborn#165478946> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/hello-seaborn#956106220> rdfs:label "Setup Complete(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:appearsIn k:hello-seaborn .
+
+<http://purl.org/dj/kaggle/hello-seaborn/activity/-6937665111379998376> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/8560254222278988554> .
+
+<http://purl.org/dj/kaggle/hello-seaborn/activity/2321687025649472694> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> .
+
+<http://purl.org/dj/kaggle/hello-seaborn/activity/5187802734322113944> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> .
+
+<http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:importedBy k:hello-seaborn .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:importedBy k:hello-seaborn .
+
+<http://purl.org/dj/python/lib/194380523> rdfs:label "seaborn" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> ;
+    dj:importedBy k:hello-seaborn .
+
+<http://purl.org/dj/kaggle/hello-seaborn/activity/8560254222278988554> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> .
+
+k:hello-seaborn a k:Notebook ;
+    rdfs:label "hello-seaborn.ipynb" .
+
+<http://purl.org/dj/kaggle/hello-seaborn/activity/3895906965808764893> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:hello-seaborn .
+

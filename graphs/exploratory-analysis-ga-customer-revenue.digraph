@@ -36,11 +36,11 @@ digraph "" {
 	"tools(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"tools(0)" -> tools	[label=assignedFrom];
 	"True(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"init_notebook_mode[0]" -> "True(0)"	[label=init_notebook_mode];
-	"[<_ast.Constant object at 0x12f9575e0>, <_ast.Constant object at 0x12f9570a0>, <_ast.Constant object at 0x12f9570d0>, <_ast.Constant \
-object at 0x12f957400>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"json_cols(0)$0" -> "[<_ast.Constant object at 0x12f9575e0>, <_ast.Constant object at 0x12f9570a0>, <_ast.Constant object at 0x12f9570d0>, <_ast.Constant \
-object at 0x12f957400>](0)"	[label=assignedFrom];
+	"init_notebook_mode[12/0]" -> "True(0)"	[label=init_notebook_mode];
+	"[<_ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832670>, <_\
+ast.Constant object at 0x7fd5008329a0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"json_cols(0)$0" -> "[<_ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832670>, <_\
+ast.Constant object at 0x7fd5008329a0>](0)"	[label=assignedFrom];
 	"filename(1)" -> "load_df[0]"	[label=_argToVar];
 	"path(1)$0" -> "filename(1)"	[label=Add];
 	"path(1)$0" -> "../input/(1)"	[label=Add];
@@ -67,39 +67,20 @@ object at 0x12f957400>](0)"	[label=assignedFrom];
 	"train.csv(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"train(0)$0" -> "train.csv(0)"	[label=load_df];
 	"There are (0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[0]" -> "There are (0)"	[label=print];
-	"print[0]" -> "Snapshot: (0)"	[label=print];
-	"Snapshot: (0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "train(0)$0"	[label=print];
+	"print[26/0]" -> "There are (0)"	[label=print];
+	"print[26/0]" -> "str(0)"	[label=print];
+	"print[26/0]" -> "0(0)"	[label=print];
+	"print[26/0]" -> " rows and (0)"	[label=print];
+	"print[26/0]" -> "1(0)"	[label=print];
+	"print[26/0]" -> " raw columns in this dataset(0)"	[label=print];
 	"str(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[1]" -> "str(0)"	[label=print];
-	"print[2]" -> "train(0)$0"	[label=print];
-	"print[2]" -> "len(0)"	[label=print];
-	"len(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"0(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[3]" -> "0(0)"	[label=print];
-	"print[3]" -> "miss_per(0)$0"	[label=print];
-	"print[3]" -> "non_zero(0)$0"	[label=print];
-	"miss_per(0)$0" -> "len(0)"	[label=Div];
-	"miss_per(0)$0" -> "train(0)$1"	[label=Div];
-	"miss_per(0)$0" -> "v(0)"	[label=Div];
-	"miss_per(0)$0" -> "100(0)"	[label=Div];
-	"miss_per(0)$0" -> "miss_per(0)"	[label=Div];
-	"miss_per(0)$0" -> "float(0)"	[label=Div];
-	"non_zero(0)$0" -> "0(0)"	[label=assignedFrom];
-	"non_zero(0)$0" -> "totals_transactionRevenue(0)"	[label=assignedFrom];
-	"non_zero(0)$0" -> "tmp(0)$12"	[label=assignedFrom];
 	" rows and (0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[4]" -> " rows and (0)"	[label=print];
-	"print[4]" -> " columns with missing values(0)"	[label=print];
-	"print[4]" -> " visitors in the train dataset having non zero total transaction revenue(0)"	[label=print];
-	" columns with missing values(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	" visitors in the train dataset having non zero total transaction revenue(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[5]" -> "str(0)"	[label=print];
-	"print[6]" -> "train(0)$0"	[label=print];
 	"1(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[7]" -> "1(0)"	[label=print];
 	" raw columns in this dataset(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"print[8]" -> " raw columns in this dataset(0)"	[label=print];
+	"Snapshot: (0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"print[28/0]" -> "Snapshot: (0)"	[label=print];
 	"train(0)$1" -> "train(0)$0"	[label=head];
 	"dict(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"k(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
@@ -112,14 +93,27 @@ object at 0x12f957400>](0)"	[label=assignedFrom];
 	"v(0)" -> "dict(0)"	[label=iteratorOf];
 	"100(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"miss_per(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"miss_per(0)$0" -> "train(0)$1"	[label=Div];
+	"miss_per(0)$0" -> "v(0)"	[label=Div];
+	"miss_per(0)$0" -> "100(0)"	[label=Div];
+	"miss_per(0)$0" -> "miss_per(0)"	[label=Div];
+	"miss_per(0)$0" -> "float(0)"	[label=Div];
+	"miss_per(0)$0" -> "len(0)"	[label=Div];
 	"float(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"len(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	operator -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=importedBy];
 	"operator(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"operator(0)" -> operator	[label=assignedFrom];
 	"sorted_x(0)$0" -> "True(0)"	[label=sorted];
-	"sorted_x(0)$0" -> "miss_per(0)$0"	[label=sorted];
 	"sorted_x(0)$0" -> "1(0)"	[label=sorted];
+	"sorted_x(0)$0" -> "miss_per(0)$0"	[label=sorted];
 	"sorted_x(0)$0" -> "operator(0)"	[label=sorted];
+	"print[38/0]" -> "There are (0)"	[label=print];
+	"print[38/0]" -> "str(0)"	[label=print];
+	"print[38/0]" -> "miss_per(0)$0"	[label=print];
+	"print[38/0]" -> "len(0)"	[label=print];
+	"print[38/0]" -> " columns with missing values(0)"	[label=print];
+	" columns with missing values(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"_(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"kys(0)$0" -> "0(0)"	[label=assignedFrom];
 	"kys(0)$0" -> "1(0)"	[label=assignedFrom];
@@ -148,53 +142,15 @@ object at 0x12f957400>](0)"	[label=assignedFrom];
 	"300(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"figure(0)$0" -> "go(0)"	[label=Figure];
 	"figure(0)$0" -> "layout(0)$0"	[label=Figure];
-	"figure(0)$0" -> "[<_ast.Name object at 0x12f951310>](0)"	[label=Figure];
-	"[<_ast.Name object at 0x12f951310>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"iplot[0]" -> "figure(0)$0"	[label=iplot];
-	"iplot[0]" -> "fig(0)$4"	[label=iplot];
-	"iplot[0]" -> "fig(0)$9"	[label=iplot];
-	"iplot[0]" -> "fig(0)$13"	[label=iplot];
-	"iplot[0]" -> "fig(0)$17"	[label=iplot];
-	"iplot[0]" -> "fig(0)$18"	[label=iplot];
-	"iplot[0]" -> "fig(0)$19"	[label=iplot];
-	"iplot[0]" -> "fig(0)$23"	[label=iplot];
-	"iplot[0]" -> "fig(0)$24"	[label=iplot];
-	"iplot[0]" -> "fig(0)$25"	[label=iplot];
-	"iplot[0]" -> "fig(0)$26"	[label=iplot];
-	"iplot[0]" -> "fig(0)$31"	[label=iplot];
-	"iplot[0]" -> "fig(0)$36"	[label=iplot];
-	"iplot[0]" -> "figure(0)$1"	[label=iplot];
-	"iplot[0]" -> "fig(0)$42"	[label=iplot];
-	"fig(0)$4" -> "fig(0)$3"	[label=update];
-	"fig(0)$9" -> "fig(0)$8"	[label=update];
-	"fig(0)$13" -> "fig(0)$12"	[label=update];
-	"fig(0)$17" -> "fig(0)$16"	[label=update];
-	"fig(0)$18" -> "data(0)$0"	[label=dict];
-	"fig(0)$18" -> "layout(0)$1"	[label=dict];
-	"fig(0)$19" -> "data(0)$1"	[label=dict];
-	"fig(0)$19" -> "layout(0)$2"	[label=dict];
-	"fig(0)$23" -> "fig(0)$22"	[label=update];
-	"fig(0)$24" -> "go(0)"	[label=Figure];
-	"fig(0)$24" -> "layout(0)$3"	[label=Figure];
-	"fig(0)$24" -> "[<_ast.Name object at 0x12fc26c40>](0)"	[label=Figure];
-	"fig(0)$25" -> "go(0)"	[label=Figure];
-	"fig(0)$25" -> "layout(0)$4"	[label=Figure];
-	"fig(0)$25" -> "[<_ast.Name object at 0x12f87e280>](0)"	[label=Figure];
-	"fig(0)$26" -> "go(0)"	[label=Figure];
-	"fig(0)$26" -> "layout(0)$5"	[label=Figure];
-	"fig(0)$26" -> "[<_ast.Name object at 0x12f8a3190>](0)"	[label=Figure];
-	"fig(0)$31" -> "fig(0)$30"	[label=update];
-	"fig(0)$36" -> "fig(0)$35"	[label=update];
-	"figure(0)$1" -> "go(0)"	[label=Figure];
-	"figure(0)$1" -> "layout(0)$6"	[label=Figure];
-	"figure(0)$1" -> "[<_ast.Name object at 0x12f87a670>](0)"	[label=Figure];
-	"fig(0)$42" -> "fig(0)$41"	[label=update];
-	"[<_ast.Constant object at 0x12f9514c0>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951670>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"device_cols(0)$0" -> "[<_ast.Constant object at 0x12f9514c0>, <_ast.Constant object at 0x12f951e20>, <_ast.Constant object at 0x12f951670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f9518b0>, <_ast.Constant \
-object at 0x12f951610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x12f951a30>, <_ast.Constant object at 0x12f951280>, <_ast.Constant object at 0x12f9518b0>, <_ast.Constant \
-object at 0x12f951610>](0)"	[label=assignedFrom];
+	"figure(0)$0" -> "[<_ast.Name object at 0x7fd4902abc10>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd4902abc10>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"iplot[47/0]" -> "figure(0)$0"	[label=iplot];
+	"[<_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab040>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"device_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant object at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902ab0d0>, <_\
+ast.Constant object at 0x7fd4902ab850>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab340>, <_ast.Constant object at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902ab0d0>, <_\
+ast.Constant object at 0x7fd4902ab850>](0)"	[label=assignedFrom];
 	"[](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"traces(0)$0" -> "[](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
@@ -204,23 +160,23 @@ object at 0x12f951610>](0)"	[label=assignedFrom];
 	"i(0)" -> "device_cols(0)$1"	[label=iteratorOf];
 	"i(0)" -> "geo_cols(0)$1"	[label=iteratorOf];
 	"i(0)" -> "geo_cols(0)$2"	[label=iteratorOf];
-	"i(0)" -> "[<_ast.Constant object at 0x12f8a38b0>, <_ast.Constant object at 0x12f8a3a60>, <_ast.Constant object at 0x12f8a3af0>](0)"	[label=iteratorOf];
-	"device_cols(0)$1" -> "[<_ast.Constant object at 0x130532430>, <_ast.Constant object at 0x130532070>, <_ast.Constant object at 0x1305320a0>](0)"	[label=assignedFrom];
-	"geo_cols(0)$1" -> "[<_ast.Constant object at 0x12f890580>, <_ast.Constant object at 0x12f8905b0>](0)"	[label=assignedFrom];
-	"geo_cols(0)$2" -> "[<_ast.Constant object at 0x12f8f5d60>, <_ast.Constant object at 0x12f8f5610>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8a38b0>, <_ast.Constant object at 0x12f8a3a60>, <_ast.Constant object at 0x12f8a3af0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"i(0)" -> "[<_ast.Constant object at 0x7fd4c09675e0>, <_ast.Constant object at 0x7fd4c0967730>, <_ast.Constant object at 0x7fd4c0967610>](0)"	[label=iteratorOf];
+	"device_cols(0)$1" -> "[<_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999df0>, <_ast.Constant object at 0x7fd500999be0>](0)"	[label=assignedFrom];
+	"geo_cols(0)$1" -> "[<_ast.Constant object at 0x7fd50080d520>, <_ast.Constant object at 0x7fd50080d2e0>](0)"	[label=assignedFrom];
+	"geo_cols(0)$2" -> "[<_ast.Constant object at 0x7fd50081ddf0>, <_ast.Constant object at 0x7fd50081dee0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c09675e0>, <_ast.Constant object at 0x7fd4c0967730>, <_ast.Constant object at 0x7fd4c0967610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"col(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"col(0)" -> "device_cols(0)$0"	[label=iteratorOf];
 	"col(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"col(0)" -> "device_cols(0)$1"	[label=iteratorOf];
 	"col(0)" -> "geo_cols(0)$1"	[label=iteratorOf];
 	"col(0)" -> "geo_cols(0)$2"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f8a38b0>, <_ast.Constant object at 0x12f8a3a60>, <_ast.Constant object at 0x12f8a3af0>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f87ac40>, <_ast.Constant object at 0x12f87ac70>, <_ast.Constant object at 0x12f87aca0>, <_ast.Constant \
-object at 0x12f87acd0>, <_ast.Constant object at 0x12f87ad00>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c09675e0>, <_ast.Constant object at 0x7fd4c0967730>, <_ast.Constant object at 0x7fd4c0967610>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c0982970>, <_ast.Constant object at 0x7fd4c09829a0>, <_ast.Constant object at 0x7fd4c09829d0>, <_\
+ast.Constant object at 0x7fd4c0982a00>, <_ast.Constant object at 0x7fd4c0982a30>](0)"	[label=iteratorOf];
 	"col(0)" -> "train(0)$4"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f87ac40>, <_ast.Constant object at 0x12f87ac70>, <_ast.Constant object at 0x12f87aca0>, <_ast.Constant \
-object at 0x12f87acd0>, <_ast.Constant object at 0x12f87ad00>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c0982970>, <_ast.Constant object at 0x7fd4c09829a0>, <_ast.Constant object at 0x7fd4c09829d0>, <_\
+ast.Constant object at 0x7fd4c0982a00>, <_ast.Constant object at 0x7fd4c0982a30>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"train(0)$4" -> "float(0)"	[label=astype];
 	"train(0)$4" -> "col(0)"	[label=astype];
 	"train(0)$4" -> "train(0)$3"	[label=astype];
@@ -239,10 +195,10 @@ object at 0x12f87acd0>, <_ast.Constant object at 0x12f87ad00>](0)" -> "explorato
 	"fig(0)$0" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$0" -> "1(0)"	[label=make_subplots];
 	"fig(0)$0" -> "3(0)"	[label=make_subplots];
-	"fig(0)$0" -> "[<_ast.Constant object at 0x12fadeb20>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fadeb50>](0)"	[label=make_subplots];
+	"fig(0)$0" -> "[<_ast.Constant object at 0x7fd5008902e0>, <_ast.Constant object at 0x7fd500890100>, <_ast.Constant object at 0x7fd500890be0>](0)"	[label=make_subplots];
 	"fig(0)$0" -> "False(0)"	[label=make_subplots];
 	"3(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadeb20>, <_ast.Constant object at 0x12fade7c0>, <_ast.Constant object at 0x12fadeb50>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008902e0>, <_ast.Constant object at 0x7fd500890100>, <_ast.Constant object at 0x7fd500890be0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"False(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"fig(0)$1" -> "1(0)"	[label=append_trace];
 	"fig(0)$1" -> "traces(0)$1"	[label=append_trace];
@@ -258,19 +214,21 @@ object at 0x12f87acd0>, <_ast.Constant object at 0x12f87ad00>](0)" -> "explorato
 	"fig(0)$3" -> "3(0)"	[label=append_trace];
 	"fig(0)$3" -> "fig(0)$2"	[label=append_trace];
 	"fig(0)$3" -> "2(0)"	[label=append_trace];
+	"fig(0)$4" -> "fig(0)$3"	[label=update];
+	"iplot[62/0]" -> "fig(0)$4"	[label=iplot];
 	"train(0)$2" -> "train(0)$1"	[label=astype];
 	"train(0)$2" -> "float(0)"	[label=astype];
 	"train(0)$2" -> "totals_transactionRevenue(0)"	[label=astype];
 	"totals_transactionRevenue(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130532430>, <_ast.Constant object at 0x130532070>, <_ast.Constant object at 0x1305320a0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999df0>, <_ast.Constant object at 0x7fd500999be0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"fig(0)$5" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$5" -> "1(0)"	[label=make_subplots];
 	"fig(0)$5" -> "3(0)"	[label=make_subplots];
 	"fig(0)$5" -> "False(0)"	[label=make_subplots];
-	"fig(0)$5" -> "[<_ast.Constant object at 0x12fab1d90>, <_ast.Constant object at 0x12fab1a60>, <_ast.Constant object at 0x12fab14f0>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12fab1d90>, <_ast.Constant object at 0x12fab1a60>, <_ast.Constant object at 0x12fab14f0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fab1f40>, <_ast.Constant object at 0x12fab1cd0>, <_ast.Constant object at 0x12fab16d0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$1" -> "[<_ast.Constant object at 0x12fab1f40>, <_ast.Constant object at 0x12fab1cd0>, <_ast.Constant object at 0x12fab16d0>](0)"	[label=assignedFrom];
+	"fig(0)$5" -> "[<_ast.Constant object at 0x7fd500999880>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd500999a60>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd500999880>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd500999a60>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc5e0>, <_ast.Constant object at 0x7fd4c04cc970>, <_ast.Constant object at 0x7fd4c04cccd0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cc5e0>, <_ast.Constant object at 0x7fd4c04cc970>, <_ast.Constant object at 0x7fd4c04cccd0>](0)"	[label=assignedFrom];
 	"trs(0)$0" -> "[](0)"	[label=assignedFrom];
 	"tmp(0)$0" -> "col(0)"	[label=rename];
 	"tmp(0)$0" -> "train(0)$2"	[label=rename];
@@ -308,21 +266,23 @@ object at 0x12f87acd0>, <_ast.Constant object at 0x12f87ad00>](0)" -> "explorato
 	"fig(0)$8" -> "2(0)"	[label=append_trace];
 	"fig(0)$8" -> "trs(0)$1"	[label=append_trace];
 	"fig(0)$8" -> "fig(0)$7"	[label=append_trace];
-	"[<_ast.Constant object at 0x12f8902e0>, <_ast.Constant object at 0x12f890400>, <_ast.Constant object at 0x12f890700>, <_ast.Constant \
-object at 0x12f8901f0>, <_ast.Constant object at 0x12f890490>, <_ast.Constant object at 0x12f8904c0>, <_ast.Constant object at 0x12f890460>](\
-0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"geo_cols(0)$0" -> "[<_ast.Constant object at 0x12f8902e0>, <_ast.Constant object at 0x12f890400>, <_ast.Constant object at 0x12f890700>, <_ast.Constant \
-object at 0x12f8901f0>, <_ast.Constant object at 0x12f890490>, <_ast.Constant object at 0x12f8904c0>, <_ast.Constant object at 0x12f890460>](\
-0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f890580>, <_ast.Constant object at 0x12f8905b0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f890130>, <_ast.Constant object at 0x12f8901c0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$2" -> "[<_ast.Constant object at 0x12f890130>, <_ast.Constant object at 0x12f8901c0>](0)"	[label=assignedFrom];
+	"fig(0)$9" -> "fig(0)$8"	[label=update];
+	"iplot[83/0]" -> "fig(0)$9"	[label=iplot];
+	"[<_ast.Constant object at 0x7fd500178e20>, <_ast.Constant object at 0x7fd500178df0>, <_ast.Constant object at 0x7fd50080d8b0>, <_\
+ast.Constant object at 0x7fd50080d2b0>, <_ast.Constant object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d670>, <_ast.Constant \
+object at 0x7fd50080da30>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"geo_cols(0)$0" -> "[<_ast.Constant object at 0x7fd500178e20>, <_ast.Constant object at 0x7fd500178df0>, <_ast.Constant object at 0x7fd50080d8b0>, <_\
+ast.Constant object at 0x7fd50080d2b0>, <_ast.Constant object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d670>, <_ast.Constant \
+object at 0x7fd50080da30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50080d520>, <_ast.Constant object at 0x7fd50080d2e0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080db80>, <_ast.Constant object at 0x7fd50080d3a0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$2" -> "[<_ast.Constant object at 0x7fd50080db80>, <_ast.Constant object at 0x7fd50080d3a0>](0)"	[label=assignedFrom];
 	"fig(0)$10" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$10" -> "1(0)"	[label=make_subplots];
 	"fig(0)$10" -> "False(0)"	[label=make_subplots];
 	"fig(0)$10" -> "2(0)"	[label=make_subplots];
-	"fig(0)$10" -> "[<_ast.Constant object at 0x12f8908b0>, <_ast.Constant object at 0x12f890760>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12f8908b0>, <_ast.Constant object at 0x12f890760>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$10" -> "[<_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080df10>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080df10>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"trs(0)$2" -> "[](0)"	[label=assignedFrom];
 	"t(0)$1" -> "col(0)"	[label=value_counts];
 	"t(0)$1" -> "train(0)$2"	[label=value_counts];
@@ -343,15 +303,17 @@ object at 0x12f8901f0>, <_ast.Constant object at 0x12f890490>, <_ast.Constant ob
 	"fig(0)$12" -> "2(0)"	[label=append_trace];
 	"fig(0)$12" -> "trs(0)$3"	[label=append_trace];
 	"fig(0)$12" -> "fig(0)$11"	[label=append_trace];
-	"[<_ast.Constant object at 0x12f8f5d60>, <_ast.Constant object at 0x12f8f5610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$13" -> "fig(0)$12"	[label=update];
+	"iplot[99/0]" -> "fig(0)$13"	[label=iplot];
+	"[<_ast.Constant object at 0x7fd50081ddf0>, <_ast.Constant object at 0x7fd50081dee0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"fig(0)$14" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$14" -> "1(0)"	[label=make_subplots];
 	"fig(0)$14" -> "False(0)"	[label=make_subplots];
 	"fig(0)$14" -> "2(0)"	[label=make_subplots];
-	"fig(0)$14" -> "[<_ast.Constant object at 0x12f8f5520>, <_ast.Constant object at 0x12f8f5490>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12f8f5520>, <_ast.Constant object at 0x12f8f5490>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5eb0>, <_ast.Constant object at 0x12f8f5640>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$3" -> "[<_ast.Constant object at 0x12f8f5eb0>, <_ast.Constant object at 0x12f8f5640>](0)"	[label=assignedFrom];
+	"fig(0)$14" -> "[<_ast.Constant object at 0x7fd50081dc10>, <_ast.Constant object at 0x7fd50081dc40>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd50081dc10>, <_ast.Constant object at 0x7fd50081dc40>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085b6a0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$3" -> "[<_ast.Constant object at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085b6a0>](0)"	[label=assignedFrom];
 	"trs(0)$4" -> "[](0)"	[label=assignedFrom];
 	"tmp(0)$2" -> "col(0)"	[label=rename];
 	"tmp(0)$2" -> "train(0)$2"	[label=rename];
@@ -380,17 +342,19 @@ object at 0x12f8901f0>, <_ast.Constant object at 0x12f890490>, <_ast.Constant ob
 	"fig(0)$16" -> "2(0)"	[label=append_trace];
 	"fig(0)$16" -> "trs(0)$5"	[label=append_trace];
 	"fig(0)$16" -> "fig(0)$15"	[label=append_trace];
+	"fig(0)$17" -> "fig(0)$16"	[label=update];
+	"iplot[118/0]" -> "fig(0)$17"	[label=iplot];
 	"tmp(0)$4" -> "train(0)$2"	[label=value_counts];
 	"tmp(0)$4" -> "geoNetwork_country(0)"	[label=value_counts];
 	"geoNetwork_country(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.List object at 0x12fc33190>, <_ast.List object at 0x12fc33220>, <_ast.List object at 0x12fc332b0>, <_ast.List object at 0x12fc33340>, <_\
-ast.List object at 0x12fc333d0>, <_ast.List object at 0x12fc33460>, <_ast.List object at 0x12fc334f0>, <_ast.List object at 0x12fc33580>, <_\
-ast.List object at 0x12fc33610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colorscale(0)$0" -> "[<_ast.List object at 0x12fc33190>, <_ast.List object at 0x12fc33220>, <_ast.List object at 0x12fc332b0>, <_ast.List object at 0x12fc33340>, <_\
-ast.List object at 0x12fc333d0>, <_ast.List object at 0x12fc33460>, <_ast.List object at 0x12fc334f0>, <_ast.List object at 0x12fc33580>, <_\
-ast.List object at 0x12fc33610>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12fc33730>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Call object at 0x12fc33730>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd500827ca0>, <_ast.List object at 0x7fd500827c70>, <_ast.List object at 0x7fd500827dc0>, <_ast.List object \
+at 0x7fd4c04aa040>, <_ast.List object at 0x7fd4c04aa0d0>, <_ast.List object at 0x7fd4c04aa160>, <_ast.List object at 0x7fd4c04aa1f0>, <_\
+ast.List object at 0x7fd4c04aa280>, <_ast.List object at 0x7fd4c04aa310>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colorscale(0)$0" -> "[<_ast.List object at 0x7fd500827ca0>, <_ast.List object at 0x7fd500827c70>, <_ast.List object at 0x7fd500827dc0>, <_ast.List object \
+at 0x7fd4c04aa040>, <_ast.List object at 0x7fd4c04aa0d0>, <_ast.List object at 0x7fd4c04aa160>, <_ast.List object at 0x7fd4c04aa1f0>, <_\
+ast.List object at 0x7fd4c04aa280>, <_ast.List object at 0x7fd4c04aa310>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd4c04aa430>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Call object at 0x7fd4c04aa430>](0)"	[label=assignedFrom];
 	"500(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"layout(0)$1" -> "True(0)"	[label=dict];
 	"layout(0)$1" -> "dict(0)"	[label=dict];
@@ -408,18 +372,21 @@ ast.List object at 0x12fc33610>](0)"	[label=assignedFrom];
 	"60(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"10(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"rgb(102, 102, 102)(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$18" -> "data(0)$0"	[label=dict];
+	"fig(0)$18" -> "layout(0)$1"	[label=dict];
+	"iplot[163/0]" -> "fig(0)$18"	[label=iplot];
 	"tmp(0)$5" -> "train(0)$2"	[label=reset_index];
 	"tmp(0)$5" -> "totals_transactionRevenue(0)"	[label=reset_index];
 	"tmp(0)$5" -> "mean(0)"	[label=reset_index];
 	"tmp(0)$5" -> "geoNetwork_country(0)"	[label=reset_index];
-	"[<_ast.List object at 0x12fc22100>, <_ast.List object at 0x12fc22190>, <_ast.List object at 0x12fc22250>, <_ast.List object at 0x12fc222e0>, <_\
-ast.List object at 0x12fc22370>, <_ast.List object at 0x12fc22400>, <_ast.List object at 0x12fc22490>, <_ast.List object at 0x12fc224f0>, <_\
-ast.List object at 0x12fc225b0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colorscale(0)$1" -> "[<_ast.List object at 0x12fc22100>, <_ast.List object at 0x12fc22190>, <_ast.List object at 0x12fc22250>, <_ast.List object at 0x12fc222e0>, <_\
-ast.List object at 0x12fc22370>, <_ast.List object at 0x12fc22400>, <_ast.List object at 0x12fc22490>, <_ast.List object at 0x12fc224f0>, <_\
-ast.List object at 0x12fc225b0>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12fc226d0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Call object at 0x12fc226d0>](0)"	[label=assignedFrom];
+	"[<_ast.List object at 0x7fd4c04addc0>, <_ast.List object at 0x7fd4c04ade50>, <_ast.List object at 0x7fd4c04adee0>, <_ast.List object \
+at 0x7fd4c04adf70>, <_ast.List object at 0x7fd5008210d0>, <_ast.List object at 0x7fd500821100>, <_ast.List object at 0x7fd5008212b0>, <_\
+ast.List object at 0x7fd500821220>, <_ast.List object at 0x7fd500821190>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colorscale(0)$1" -> "[<_ast.List object at 0x7fd4c04addc0>, <_ast.List object at 0x7fd4c04ade50>, <_ast.List object at 0x7fd4c04adee0>, <_ast.List object \
+at 0x7fd4c04adf70>, <_ast.List object at 0x7fd5008210d0>, <_ast.List object at 0x7fd500821100>, <_ast.List object at 0x7fd5008212b0>, <_\
+ast.List object at 0x7fd500821220>, <_ast.List object at 0x7fd500821190>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd5008213a0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Call object at 0x7fd5008213a0>](0)"	[label=assignedFrom];
 	"layout(0)$2" -> "True(0)"	[label=dict];
 	"layout(0)$2" -> "dict(0)"	[label=dict];
 	"layout(0)$2" -> "False(0)"	[label=dict];
@@ -431,16 +398,19 @@ ast.List object at 0x12fc225b0>](0)"	[label=assignedFrom];
 	"layout(0)$2" -> "rgb(102, 102, 102)(0)"	[label=dict];
 	"layout(0)$2" -> "Mean Revenue by Countries(0)"	[label=dict];
 	"Mean Revenue by Countries(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$19" -> "data(0)$1"	[label=dict];
+	"fig(0)$19" -> "layout(0)$2"	[label=dict];
+	"iplot[212/0]" -> "fig(0)$19"	[label=iplot];
 	"fig(0)$20" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$20" -> "1(0)"	[label=make_subplots];
 	"fig(0)$20" -> "False(0)"	[label=make_subplots];
 	"fig(0)$20" -> "2(0)"	[label=make_subplots];
-	"fig(0)$20" -> "[<_ast.Constant object at 0x12fc50fd0>, <_ast.Constant object at 0x12fc37070>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12fc50fd0>, <_ast.Constant object at 0x12fc37070>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc372e0>, <_ast.Constant object at 0x12fc37220>, <_ast.Constant object at 0x12fc37280>, <_ast.Constant \
-object at 0x12fc37250>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$4" -> "[<_ast.Constant object at 0x12fc372e0>, <_ast.Constant object at 0x12fc37220>, <_ast.Constant object at 0x12fc37280>, <_ast.Constant \
-object at 0x12fc37250>](0)"	[label=assignedFrom];
+	"fig(0)$20" -> "[<_ast.Constant object at 0x7fd500818d00>, <_ast.Constant object at 0x7fd500818d60>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd500818d00>, <_ast.Constant object at 0x7fd500818d60>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500818eb0>, <_ast.Constant object at 0x7fd500818ee0>, <_ast.Constant object at 0x7fd500818f10>, <_\
+ast.Constant object at 0x7fd500818f40>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$4" -> "[<_ast.Constant object at 0x7fd500818eb0>, <_ast.Constant object at 0x7fd500818ee0>, <_ast.Constant object at 0x7fd500818f10>, <_\
+ast.Constant object at 0x7fd500818f40>](0)"	[label=assignedFrom];
 	"t1(0)$0" -> "train(0)$2"	[label=value_counts];
 	"t1(0)$0" -> "trafficSource_campaign(0)"	[label=value_counts];
 	"trafficSource_campaign(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
@@ -473,13 +443,15 @@ object at 0x12fc37250>](0)"	[label=assignedFrom];
 	"fig(0)$22" -> "2(0)"	[label=append_trace];
 	"fig(0)$22" -> "tr2(0)$0"	[label=append_trace];
 	"fig(0)$22" -> "fig(0)$21"	[label=append_trace];
+	"fig(0)$23" -> "fig(0)$22"	[label=update];
+	"iplot[227/0]" -> "fig(0)$23"	[label=iplot];
 	"tmp(0)$6" -> "train(0)$2"	[label=value_counts];
 	"tmp(0)$6" -> "channelGrouping(0)"	[label=value_counts];
 	"channelGrouping(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc263d0>, <_ast.Constant object at 0x12fc26400>, <_ast.Constant object at 0x12fc26430>, <_ast.Constant \
-object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant object at 0x12fc264c0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"colors(0)$5" -> "[<_ast.Constant object at 0x12fc263d0>, <_ast.Constant object at 0x12fc26400>, <_ast.Constant object at 0x12fc26430>, <_ast.Constant \
-object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant object at 0x12fc264c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50081f0a0>, <_ast.Constant object at 0x7fd50081f0d0>, <_ast.Constant object at 0x7fd50081f100>, <_\
+ast.Constant object at 0x7fd50081f130>, <_ast.Constant object at 0x7fd50081f160>, <_ast.Constant object at 0x7fd50081f190>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"colors(0)$5" -> "[<_ast.Constant object at 0x7fd50081f0a0>, <_ast.Constant object at 0x7fd50081f0d0>, <_ast.Constant object at 0x7fd50081f100>, <_\
+ast.Constant object at 0x7fd50081f130>, <_ast.Constant object at 0x7fd50081f160>, <_ast.Constant object at 0x7fd50081f190>](0)"	[label=assignedFrom];
 	"trace(0)$0" -> "go(0)"	[label=Pie];
 	"trace(0)$0" -> "dict(0)"	[label=Pie];
 	"trace(0)$0" -> "tmp(0)$6"	[label=Pie];
@@ -488,9 +460,13 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"layout(0)$3" -> "400(0)"	[label=Layout];
 	"layout(0)$3" -> "Channel Grouping(0)"	[label=Layout];
 	"Channel Grouping(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fc26c40>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$24" -> "go(0)"	[label=Figure];
+	"fig(0)$24" -> "layout(0)$3"	[label=Figure];
+	"fig(0)$24" -> "[<_ast.Name object at 0x7fd50081f910>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd50081f910>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"iplot[233/0]" -> "fig(0)$24"	[label=iplot];
+	"iplot[233/0]" -> "basic_pie_chart(0)"	[label=iplot];
 	"basic_pie_chart(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"iplot[1]" -> "basic_pie_chart(0)"	[label=iplot];
 	"df(2)" -> "_add_date_features[0]"	[label=_argToVar];
 	"df(2)$0" -> "df(2)"	[label=astype];
 	"df(2)$0" -> "date(2)"	[label=astype];
@@ -535,7 +511,11 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"layout(0)$4" -> "400(0)"	[label=Layout];
 	"layout(0)$4" -> "Visits by date(0)"	[label=Layout];
 	"Visits by date(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f87e280>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$25" -> "go(0)"	[label=Figure];
+	"fig(0)$25" -> "layout(0)$4"	[label=Figure];
+	"fig(0)$25" -> "[<_ast.Name object at 0x7fd500819f10>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd500819f10>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"iplot[252/0]" -> "fig(0)$25"	[label=iplot];
 	"tmp(0)$9" -> "totals_transactionRevenue(0)"	[label=reset_index];
 	"tmp(0)$9" -> "mean(0)"	[label=reset_index];
 	"tmp(0)$9" -> "train(0)$3"	[label=reset_index];
@@ -556,13 +536,17 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"layout(0)$5" -> "400(0)"	[label=Layout];
 	"layout(0)$5" -> "MonthlyRevenue by date(0)"	[label=Layout];
 	"MonthlyRevenue by date(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8a3190>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$26" -> "go(0)"	[label=Figure];
+	"fig(0)$26" -> "layout(0)$5"	[label=Figure];
+	"fig(0)$26" -> "[<_ast.Name object at 0x7fd4c098ce80>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd4c098ce80>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"iplot[260/0]" -> "fig(0)$26"	[label=iplot];
 	"fig(0)$27" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$27" -> "1(0)"	[label=make_subplots];
 	"fig(0)$27" -> "3(0)"	[label=make_subplots];
 	"fig(0)$27" -> "False(0)"	[label=make_subplots];
-	"fig(0)$27" -> "[<_ast.Constant object at 0x12f8a3490>, <_ast.Constant object at 0x12f8a3430>, <_ast.Constant object at 0x12f8a3610>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12f8a3490>, <_ast.Constant object at 0x12f8a3430>, <_ast.Constant object at 0x12f8a3610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$27" -> "[<_ast.Constant object at 0x7fd4c0967280>, <_ast.Constant object at 0x7fd4c0967250>, <_ast.Constant object at 0x7fd4c09671f0>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd4c0967280>, <_ast.Constant object at 0x7fd4c0967250>, <_ast.Constant object at 0x7fd4c09671f0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"trs(0)$6" -> "[](0)"	[label=assignedFrom];
 	"t(0)$2" -> "col(0)"	[label=value_counts];
 	"t(0)$2" -> "train(0)$3"	[label=value_counts];
@@ -586,6 +570,8 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"fig(0)$30" -> "2(0)"	[label=append_trace];
 	"fig(0)$30" -> "trs(0)$7"	[label=append_trace];
 	"fig(0)$30" -> "fig(0)$29"	[label=append_trace];
+	"fig(0)$31" -> "fig(0)$30"	[label=update];
+	"iplot[272/0]" -> "fig(0)$31"	[label=iplot];
 	"tmp1(0)$0" -> "totals_transactionRevenue(0)"	[label=reset_index];
 	"tmp1(0)$0" -> "mean(0)"	[label=reset_index];
 	"tmp1(0)$0" -> "train(0)$3"	[label=reset_index];
@@ -605,8 +591,8 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"fig(0)$32" -> "1(0)"	[label=make_subplots];
 	"fig(0)$32" -> "3(0)"	[label=make_subplots];
 	"fig(0)$32" -> "False(0)"	[label=make_subplots];
-	"fig(0)$32" -> "[<_ast.Constant object at 0x12f89f400>, <_ast.Constant object at 0x12f89f430>, <_ast.Constant object at 0x12f89f490>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12f89f400>, <_ast.Constant object at 0x12f89f430>, <_ast.Constant object at 0x12f89f490>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$32" -> "[<_ast.Constant object at 0x7fd4c0985250>, <_ast.Constant object at 0x7fd4c0985280>, <_ast.Constant object at 0x7fd4c09852b0>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd4c0985250>, <_ast.Constant object at 0x7fd4c0985280>, <_ast.Constant object at 0x7fd4c09852b0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"tr1(0)$1" -> "go(0)"	[label=Bar];
 	"tr1(0)$1" -> "dict(0)"	[label=Bar];
 	"tr1(0)$1" -> "0.5(0)"	[label=Bar];
@@ -636,6 +622,8 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"fig(0)$35" -> "3(0)"	[label=append_trace];
 	"fig(0)$35" -> "tr3(0)$1"	[label=append_trace];
 	"fig(0)$35" -> "fig(0)$34"	[label=append_trace];
+	"fig(0)$36" -> "fig(0)$35"	[label=update];
+	"iplot[289/0]" -> "fig(0)$36"	[label=iplot];
 	"vn(0)$0" -> "train(0)$3"	[label=value_counts];
 	"vn(0)$0" -> "visitNumber(0)"	[label=value_counts];
 	"visitNumber(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
@@ -661,7 +649,11 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"Visit Numbers Distribution(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"Frequency(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"VisitNumber(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f87a670>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"figure(0)$1" -> "go(0)"	[label=Figure];
+	"figure(0)$1" -> "layout(0)$6"	[label=Figure];
+	"figure(0)$1" -> "[<_ast.Name object at 0x7fd4c0982070>](0)"	[label=Figure];
+	"[<_ast.Name object at 0x7fd4c0982070>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"iplot[312/0]" -> "figure(0)$1"	[label=iplot];
 	warnings -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=importedBy];
 	"warnings(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -675,6 +667,15 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"tmp(0)$11" -> "fullVisitorId(0)"	[label=reset_index];
 	"fullVisitorId(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"tmp(0)$12" -> "tmp(0)$11"	[label=head];
+	"non_zero(0)$0" -> "0(0)"	[label=assignedFrom];
+	"non_zero(0)$0" -> "totals_transactionRevenue(0)"	[label=assignedFrom];
+	"non_zero(0)$0" -> "tmp(0)$12"	[label=assignedFrom];
+	"print[323/0]" -> "There are (0)"	[label=print];
+	"print[323/0]" -> "str(0)"	[label=print];
+	"print[323/0]" -> "len(0)"	[label=print];
+	"print[323/0]" -> "non_zero(0)$0"	[label=print];
+	"print[323/0]" -> " visitors in the train dataset having non zero total transaction revenue(0)"	[label=print];
+	" visitors in the train dataset having non zero total transaction revenue(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"sns(0)$0" -> "sns(0)"	[label=distplot];
 	"sns(0)$0" -> "non_zero(0)$0"	[label=distplot];
@@ -734,10 +735,10 @@ object at 0x12fc26460>, <_ast.Constant object at 0x12fc26490>, <_ast.Constant ob
 	"fig(0)$37" -> "tools(0)"	[label=make_subplots];
 	"fig(0)$37" -> "False(0)"	[label=make_subplots];
 	"fig(0)$37" -> "2(0)"	[label=make_subplots];
-	"fig(0)$37" -> "[<_ast.Constant object at 0x12fa6f280>, <_ast.Constant object at 0x12fa6f2b0>, <_ast.Constant object at 0x12fa6f2e0>, <_ast.Constant \
-object at 0x12fa6f310>](0)"	[label=make_subplots];
-	"[<_ast.Constant object at 0x12fa6f280>, <_ast.Constant object at 0x12fa6f2b0>, <_ast.Constant object at 0x12fa6f2e0>, <_ast.Constant \
-object at 0x12fa6f310>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"fig(0)$37" -> "[<_ast.Constant object at 0x7fd50087ff40>, <_ast.Constant object at 0x7fd50087ff70>, <_ast.Constant object at 0x7fd50087ffa0>, <_\
+ast.Constant object at 0x7fd50087ffd0>](0)"	[label=make_subplots];
+	"[<_ast.Constant object at 0x7fd50087ff40>, <_ast.Constant object at 0x7fd50087ff70>, <_ast.Constant object at 0x7fd50087ffa0>, <_\
+ast.Constant object at 0x7fd50087ffd0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"tr1(0)$2" -> "go(0)"	[label=Bar];
 	"tr1(0)$2" -> "20(0)"	[label=Bar];
 	"tr1(0)$2" -> "t1(0)$1"	[label=Bar];
@@ -763,13 +764,15 @@ object at 0x12fa6f310>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	
 	"fig(0)$41" -> "2(0)"	[label=append_trace];
 	"fig(0)$41" -> "tr4(0)$1"	[label=append_trace];
 	"fig(0)$41" -> "fig(0)$40"	[label=append_trace];
+	"fig(0)$42" -> "fig(0)$41"	[label=update];
+	"iplot[370/0]" -> "fig(0)$42"	[label=iplot];
 	"constant_columns(0)$0" -> "[](0)"	[label=assignedFrom];
 	"constant_columns(0)$1" -> "col(0)"	[label=append];
 	"constant_columns(0)$1" -> "constant_columns(0)$0"	[label=append];
-	"[<_ast.Constant object at 0x12fa941c0>, <_ast.Constant object at 0x12fa941f0>, <_ast.Constant object at 0x12fa94220>, <_ast.Constant \
-object at 0x12fa94250>, <_ast.Constant object at 0x12fa94280>, <_ast.Constant object at 0x12fa942b0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
-	"non_relevant(0)$0" -> "[<_ast.Constant object at 0x12fa941c0>, <_ast.Constant object at 0x12fa941f0>, <_ast.Constant object at 0x12fa94220>, <_ast.Constant \
-object at 0x12fa94250>, <_ast.Constant object at 0x12fa94280>, <_ast.Constant object at 0x12fa942b0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500878ee0>, <_ast.Constant object at 0x7fd500878f10>, <_ast.Constant object at 0x7fd500878f40>, <_\
+ast.Constant object at 0x7fd500878f70>, <_ast.Constant object at 0x7fd500878fa0>, <_ast.Constant object at 0x7fd500878fd0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"non_relevant(0)$0" -> "[<_ast.Constant object at 0x7fd500878ee0>, <_ast.Constant object at 0x7fd500878f10>, <_ast.Constant object at 0x7fd500878f40>, <_\
+ast.Constant object at 0x7fd500878f70>, <_ast.Constant object at 0x7fd500878fa0>, <_ast.Constant object at 0x7fd500878fd0>](0)"	[label=assignedFrom];
 	"test.csv(0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"test(0)$0" -> "test.csv(0)"	[label=load_df];
 	"test(0)$1" -> "test(0)$0"	[label=_add_date_features];
@@ -906,8 +909,8 @@ object at 0x12fa94250>, <_ast.Constant object at 0x12fa94280>, <_ast.Constant ob
 	"model(0)$0" -> "lgb(0)"	[label=train];
 	"model(0)$0" -> "lgb_params(0)$0"	[label=train];
 	"model(0)$0" -> "lgb_train(0)$0"	[label=train];
-	"model(0)$0" -> "[<_ast.Name object at 0x12fa71610>](0)"	[label=train];
-	"[<_ast.Name object at 0x12fa71610>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
+	"model(0)$0" -> "[<_ast.Name object at 0x7fd50088e2e0>](0)"	[label=train];
+	"[<_ast.Name object at 0x7fd50088e2e0>](0)" -> "exploratory-analysis-ga-customer-revenue.ipynb"	[label=appearsIn];
 	"preds(0)$0" -> "test(0)$3"	[label=predict];
 	"preds(0)$0" -> "features(0)$1"	[label=predict];
 	"preds(0)$0" -> "model(0)$0"	[label=predict];

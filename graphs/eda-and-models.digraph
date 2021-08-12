@@ -175,27 +175,7 @@ digraph "" {
 	"cache(3)$2" -> "0(3)"	[label=assignedFrom];
 	"actual_id(3)$1" -> "id(3)"	[label=assignedFrom];
 	"chart(4)" -> "render[0]"	[label=_argToVar];
-	"render[0]" -> "charts(0)$0"	[label=render];
-	"render[0]" -> "charts(0)$1"	[label=render];
-	"render[0]" -> "charts(0)$2"	[label=render];
-	"render[0]" -> "charts(0)$3"	[label=render];
-	"charts(0)$0" -> "chart(0)$0"	[label=assignedFrom];
-	"charts(0)$0" -> "charts(0)"	[label=assignedFrom];
-	"charts(0)$1" -> "charts(0)$0"	[label=assignedFrom];
-	"charts(0)$1" -> "chart(0)$1"	[label=assignedFrom];
-	"charts(0)$2" -> "charts(0)$1"	[label=assignedFrom];
-	"charts(0)$2" -> "chart(0)$2"	[label=assignedFrom];
-	"charts(0)$3" -> "charts(0)$2"	[label=assignedFrom];
-	"charts(0)$3" -> "chart(0)$3"	[label=assignedFrom];
 	"id(4)" -> "render[1]"	[label=_argToVar];
-	"render[1]" -> "id_12(0)"	[label=render];
-	"render[1]" -> "id_30(0)"	[label=render];
-	"render[1]" -> "ProductCD(0)"	[label=render];
-	"render[1]" -> "P_emaildomain(0)"	[label=render];
-	"id_12(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"id_30(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"ProductCD(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"P_emaildomain(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"chart_str(4)$0" -> "
     <div id=\"{id}\"></div><script>
     require([\"vega-embed\"], function(vg_embed) {{
@@ -210,8 +190,8 @@ really...anything?\");
     (4)"	[label=assignedFrom];
 	"df(5)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(5)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(5)$0" -> "[<_ast.Constant object at 0x12fade8b0>, <_ast.Constant object at 0x12fade520>, <_ast.Constant object at 0x12fadefd0>, <_ast.Constant \
-object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant object at 0x12fade2e0>](5)"	[label=assignedFrom];
+	"numerics(5)$0" -> "[<_ast.Constant object at 0x7fd5007f0790>, <_ast.Constant object at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f07f0>, <_\
+ast.Constant object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at 0x7fd5007f0c70>](5)"	[label=assignedFrom];
 	"start_mem(5)$0" -> "df(5)"	[label=Div];
 	"start_mem(5)$0" -> "True(5)"	[label=Div];
 	"start_mem(5)$0" -> "1024(5)"	[label=Div];
@@ -249,115 +229,10 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"end_mem(5)$0" -> "1024(5)"	[label=Div];
 	"end_mem(5)$0" -> "2(5)"	[label=Div];
 	"end_mem(5)$0" -> "df(5)$5"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(5)"	[label=print];
-	"print[0]" -> "Fold (9)"	[label=print];
-	"print[0]" -> "(9)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(9)"	[label=print];
-	"print[0]" -> "Fold (10)"	[label=print];
-	"print[0]" -> "(10)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(10)"	[label=print];
-	"print[0]" -> "Train dataset has (0)"	[label=print];
-	"print[0]" -> "Test dataset has (0)"	[label=print];
-	"print[0]" -> "There are (0)"	[label=print];
-	"Train dataset has (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"Test dataset has (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"There are (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"print[1]" -> "end_mem(5)$0"	[label=print];
-	"print[1]" -> "np(9)"	[label=print];
-	"print[1]" -> "fold_n(9)"	[label=print];
-	"print[1]" -> "np(10)"	[label=print];
-	"print[1]" -> "fold_n(10)"	[label=print];
-	"print[1]" -> "train(0)$0"	[label=print];
-	"print[1]" -> "test(0)$0"	[label=print];
-	"print[1]" -> "len(0)"	[label=print];
-	"fold_n(9)" -> "splits(9)$0"	[label=iteratorOf];
-	"fold_n(9)" -> "enumerate(9)"	[label=iteratorOf];
-	"fold_n(10)" -> "X(10)"	[label=iteratorOf];
-	"fold_n(10)" -> "folds(10)"	[label=iteratorOf];
-	"fold_n(10)" -> "enumerate(10)"	[label=iteratorOf];
-	"train(0)$0" -> "pd(0)$0"	[label=merge];
-	"train(0)$0" -> "train_identity(0)$0"	[label=merge];
-	"train(0)$0" -> "train_transaction(0)$0"	[label=merge];
-	"train(0)$0" -> "TransactionID(0)"	[label=merge];
-	"train(0)$0" -> "left(0)"	[label=merge];
-	"test(0)$0" -> "pd(0)$0"	[label=merge];
-	"test(0)$0" -> "test_identity(0)$0"	[label=merge];
-	"test(0)$0" -> "test_transaction(0)$0"	[label=merge];
-	"test(0)$0" -> "TransactionID(0)"	[label=merge];
-	"test(0)$0" -> "left(0)"	[label=merge];
-	"len(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"print[2]" -> "100(5)"	[label=print];
-	"print[2]" -> "1(9)"	[label=print];
-	"print[2]" -> ". (9)"	[label=print];
-	"print[2]" -> "scores(9)$2"	[label=print];
-	"print[2]" -> "1(10)"	[label=print];
-	"print[2]" -> ". (10)"	[label=print];
-	"print[2]" -> "scores(10)$2"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> " columns in train dataset with missing values.(0)"	[label=print];
-	"print[2]" -> "one_value_cols(0)$0"	[label=print];
-	"print[2]" -> "one_value_cols_test(0)$0"	[label=print];
-	"scores(9)$2" -> "eval_metric(9)"	[label=append];
-	"scores(9)$2" -> "metrics_dict(9)$0"	[label=append];
-	"scores(9)$2" -> "scoring_function(9)"	[label=append];
-	"scores(9)$2" -> "X_valid(9)$1"	[label=append];
-	"scores(9)$2" -> "y_valid(9)$1"	[label=append];
-	"scores(9)$2" -> "y_pred_valid(9)$3"	[label=append];
-	"scores(9)$2" -> "scores(9)$1"	[label=append];
-	"scores(9)$2" -> "type(9)"	[label=append];
-	"scores(10)$2" -> "eval_metric(10)"	[label=append];
-	"scores(10)$2" -> "metrics_dict(10)$0"	[label=append];
-	"scores(10)$2" -> "sklearn_scoring_function(10)"	[label=append];
-	"scores(10)$2" -> "y_valid(10)$1"	[label=append];
-	"scores(10)$2" -> "y_pred_valid(10)$3"	[label=append];
-	"scores(10)$2" -> "scores(10)$1"	[label=append];
-	"0(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	" columns in train dataset with missing values.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"one_value_cols(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"one_value_cols(0)$0" -> "1(0)"	[label=assignedFrom];
-	"one_value_cols(0)$0" -> "col(0)"	[label=assignedFrom];
-	"one_value_cols_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
-	"one_value_cols_test(0)$0" -> "1(0)"	[label=assignedFrom];
-	"one_value_cols_test(0)$0" -> "col(0)"	[label=assignedFrom];
-	"print[3]" -> "start_mem(5)$0"	[label=print];
-	"print[3]" -> "np(9)"	[label=print];
-	"print[3]" -> "np(10)"	[label=print];
-	"print[3]" -> "eval_metric(9)"	[label=print];
-	"print[3]" -> " started at (9)"	[label=print];
-	"print[3]" -> "eval_metric(10)"	[label=print];
-	"print[3]" -> " started at (10)"	[label=print];
-	"print[3]" -> " rows and (0)"	[label=print];
-	"print[3]" -> " columns in train dataset with one unique value.(0)"	[label=print];
-	"print[3]" -> " columns in test dataset with one unique value.(0)"	[label=print];
-	"eval_metric(9)" -> "train_model_regression[6]"	[label=_argToVar];
-	"eval_metric(10)" -> "train_model_classification[6]"	[label=_argToVar];
-	" rows and (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	" columns in train dataset with one unique value.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	" columns in test dataset with one unique value.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"print[4]" -> "end_mem(5)$0"	[label=print];
-	"print[4]" -> "train(0)$0"	[label=print];
-	"print[4]" -> "test(0)$0"	[label=print];
-	"print[4]" -> "scores(9)$2"	[label=print];
-	"print[4]" -> "scores(10)$2"	[label=print];
-	"print[4]" -> "time(9)"	[label=print];
-	"print[4]" -> ": (9)"	[label=print];
-	"print[4]" -> "time(10)"	[label=print];
-	"print[4]" -> ": (10)"	[label=print];
-	"print[5]" -> "start_mem(5)$0"	[label=print];
-	"print[5]" -> "score(9)$0"	[label=print];
-	"print[5]" -> "score(10)$0"	[label=print];
-	"print[5]" -> "1(0)"	[label=print];
-	"score(9)$0" -> "eval_metric(9)"	[label=assignedFrom];
-	"score(9)$0" -> "metrics_dict(9)$0"	[label=assignedFrom];
-	"score(9)$0" -> "sklearn_scoring_function(9)"	[label=assignedFrom];
-	"score(9)$0" -> "y_valid(9)$1"	[label=assignedFrom];
-	"score(9)$0" -> "y_pred_valid(9)$2"	[label=assignedFrom];
-	"score(10)$0" -> "eval_metric(10)"	[label=assignedFrom];
-	"score(10)$0" -> "metrics_dict(10)$0"	[label=assignedFrom];
-	"score(10)$0" -> "sklearn_scoring_function(10)"	[label=assignedFrom];
-	"score(10)$0" -> "y_valid(10)$1"	[label=assignedFrom];
-	"score(10)$0" -> "y_pred_valid(10)$2"	[label=assignedFrom];
-	"1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"print[162/16]" -> "start_mem(5)$0"	[label=print];
+	"print[162/16]" -> "end_mem(5)$0"	[label=print];
+	"print[162/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(5)"	[label=print];
+	"print[162/16]" -> "100(5)"	[label=print];
 	"y_true(6)" -> "fast_auc[0]"	[label=_argToVar];
 	"y_prob(6)" -> "fast_auc[1]"	[label=_argToVar];
 	"y_true(6)$0" -> "y_true(6)$0"	[label=asarray];
@@ -396,6 +271,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"params(9)" -> "train_model_regression[3]"	[label=_argToVar];
 	"folds(9)" -> "train_model_regression[4]"	[label=_argToVar];
 	"model_type(9)" -> "train_model_regression[5]"	[label=_argToVar];
+	"eval_metric(9)" -> "train_model_regression[6]"	[label=_argToVar];
 	"columns(9)" -> "train_model_regression[7]"	[label=_argToVar];
 	"plot_feature_importance(9)" -> "train_model_regression[8]"	[label=_argToVar];
 	"model(9)" -> "train_model_regression[9]"	[label=_argToVar];
@@ -430,18 +306,25 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"metrics_dict(9)$0" -> "scoring_function(9)"	[label=assignedFrom];
 	"metrics_dict(9)$0" -> "group_mean_log_mae(9)"	[label=assignedFrom];
 	"metrics_dict(9)$0" -> "MSE(9)"	[label=assignedFrom];
-	"oof(9)$0" -> "np(9)"	[label=zeros];
 	"oof(9)$0" -> "X(9)"	[label=zeros];
+	"oof(9)$0" -> "np(9)"	[label=zeros];
 	"oof(9)$0" -> "len(9)"	[label=zeros];
-	"prediction(9)$0" -> "np(9)"	[label=zeros];
 	"prediction(9)$0" -> "X_test(9)$0"	[label=zeros];
+	"prediction(9)$0" -> "np(9)"	[label=zeros];
 	"prediction(9)$0" -> "len(9)"	[label=zeros];
 	"scores(9)$0" -> "[](9)"	[label=assignedFrom];
 	"feature_importance(9)$0" -> "pd(9)"	[label=DataFrame];
+	"fold_n(9)" -> "splits(9)$0"	[label=iteratorOf];
+	"fold_n(9)" -> "enumerate(9)"	[label=iteratorOf];
 	"train_index(9)" -> "splits(9)$0"	[label=iteratorOf];
 	"train_index(9)" -> "enumerate(9)"	[label=iteratorOf];
 	"valid_index(9)" -> "splits(9)$0"	[label=iteratorOf];
 	"valid_index(9)" -> "enumerate(9)"	[label=iteratorOf];
+	"print[250/12]" -> "fold_n(9)"	[label=print];
+	"print[250/12]" -> "Fold (9)"	[label=print];
+	"print[250/12]" -> "1(9)"	[label=print];
+	"print[250/12]" -> " started at (9)"	[label=print];
+	"print[250/12]" -> "time(9)"	[label=print];
 	"X_train(9)$0" -> "X(9)"	[label=assignedFrom];
 	"X_train(9)$0" -> "columns(9)$0"	[label=assignedFrom];
 	"X_train(9)$0" -> "train_index(9)"	[label=assignedFrom];
@@ -470,9 +353,9 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"y_valid(9)$1" -> "y(9)"	[label=assignedFrom];
 	"y_valid(9)$1" -> "train_index(9)"	[label=assignedFrom];
 	"y_valid(9)$1" -> "valid_index(9)"	[label=assignedFrom];
-	"model(9)$0" -> "1(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "params(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "n_estimators(9)"	[label=LGBMRegressor];
+	"model(9)$0" -> "1(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "lgb(9)"	[label=LGBMRegressor];
 	"model(9)$1" -> "X_train(9)$1"	[label=fit];
 	"model(9)$1" -> "y_train(9)$1"	[label=fit];
@@ -489,7 +372,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"valid_data(9)$0" -> "X_valid(9)$1"	[label=DMatrix];
 	"valid_data(9)$0" -> "y_valid(9)$1"	[label=DMatrix];
 	"valid_data(9)$0" -> "xgb(9)"	[label=DMatrix];
-	"watchlist(9)$0" -> "[<_ast.Tuple object at 0x12f8a3c10>, <_ast.Tuple object at 0x12f8a3ca0>](9)"	[label=assignedFrom];
+	"watchlist(9)$0" -> "[<_ast.Tuple object at 0x7fd4c059a910>, <_ast.Tuple object at 0x7fd4c059a9a0>](9)"	[label=assignedFrom];
 	"model(9)$2" -> "params(9)"	[label=train];
 	"model(9)$2" -> "verbose(9)"	[label=train];
 	"model(9)$2" -> "train_data(9)$0"	[label=train];
@@ -512,17 +395,25 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"y_pred_valid(9)$2" -> "1(9)"	[label=reshape];
 	"y_pred_valid(9)$2" -> "X_valid(9)$1"	[label=reshape];
 	"y_pred_valid(9)$2" -> "model(9)$4"	[label=reshape];
-	"print[6]" -> ".4f(9)"	[label=print];
-	"print[6]" -> ".4f(10)"	[label=print];
-	"print[6]" -> " columns.(0)"	[label=print];
-	" columns.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"print[7]" -> ".(9)"	[label=print];
-	"print[7]" -> ".(10)"	[label=print];
-	"y_pred(9)$2" -> "1(9)"	[label=reshape];
+	"score(9)$0" -> "eval_metric(9)"	[label=assignedFrom];
+	"score(9)$0" -> "metrics_dict(9)$0"	[label=assignedFrom];
+	"score(9)$0" -> "sklearn_scoring_function(9)"	[label=assignedFrom];
+	"score(9)$0" -> "y_valid(9)$1"	[label=assignedFrom];
+	"score(9)$0" -> "y_pred_valid(9)$2"	[label=assignedFrom];
+	"print[282/12]" -> "eval_metric(9)"	[label=print];
+	"print[282/12]" -> "fold_n(9)"	[label=print];
+	"print[282/12]" -> "Fold (9)"	[label=print];
+	"print[282/12]" -> "score(9)$0"	[label=print];
+	"print[282/12]" -> ". (9)"	[label=print];
+	"print[282/12]" -> ": (9)"	[label=print];
+	"print[282/12]" -> ".4f(9)"	[label=print];
+	"print[282/12]" -> ".(9)"	[label=print];
+	"print[283/12]" -> "(9)"	[label=print];
 	"y_pred(9)$2" -> "X_test(9)$0"	[label=reshape];
+	"y_pred(9)$2" -> "1(9)"	[label=reshape];
 	"y_pred(9)$2" -> "model(9)$4"	[label=reshape];
-	"model(9)$5" -> "eval_metric(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "params(9)"	[label=CatBoostRegressor];
+	"model(9)$5" -> "eval_metric(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "metrics_dict(9)$0"	[label=CatBoostRegressor];
 	"model(9)$5" -> "catboost_metric_name(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "20000(9)"	[label=CatBoostRegressor];
@@ -533,8 +424,8 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"y_pred_valid(9)$3" -> "model(9)$6"	[label=predict];
 	"y_pred(9)$3" -> "X_test(9)$0"	[label=predict];
 	"y_pred(9)$3" -> "model(9)$6"	[label=predict];
-	"oof(9)$1" -> "1(9)"	[label=reshape];
 	"oof(9)$1" -> "oof(9)$0"	[label=reshape];
+	"oof(9)$1" -> "1(9)"	[label=reshape];
 	"oof(9)$1" -> "y_pred_valid(9)$3"	[label=reshape];
 	"scores(9)$1" -> "eval_metric(9)"	[label=append];
 	"scores(9)$1" -> "metrics_dict(9)$0"	[label=append];
@@ -542,6 +433,14 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"scores(9)$1" -> "scores(9)$0"	[label=append];
 	"scores(9)$1" -> "y_valid(9)$1"	[label=append];
 	"scores(9)$1" -> "y_pred_valid(9)$3"	[label=append];
+	"scores(9)$2" -> "eval_metric(9)"	[label=append];
+	"scores(9)$2" -> "metrics_dict(9)$0"	[label=append];
+	"scores(9)$2" -> "scoring_function(9)"	[label=append];
+	"scores(9)$2" -> "X_valid(9)$1"	[label=append];
+	"scores(9)$2" -> "y_valid(9)$1"	[label=append];
+	"scores(9)$2" -> "y_pred_valid(9)$3"	[label=append];
+	"scores(9)$2" -> "scores(9)$1"	[label=append];
+	"scores(9)$2" -> "type(9)"	[label=append];
 	"prediction(9)$1" -> "prediction(9)$0"	[label=Add];
 	"prediction(9)$1" -> "y_pred(9)$3"	[label=Add];
 	"fold_importance(9)$0" -> "pd(9)"	[label=DataFrame];
@@ -553,10 +452,13 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"fold_importance(9)$3" -> "1(9)"	[label=Add];
 	"fold_importance(9)$3" -> "fold_importance(9)$2"	[label=Add];
 	"feature_importance(9)$1" -> "pd(9)"	[label=concat];
-	"feature_importance(9)$1" -> "[<_ast.Name object at 0x12f8a6670>, <_ast.Name object at 0x12f8a66a0>](9)"	[label=concat];
+	"feature_importance(9)$1" -> "[<_ast.Name object at 0x7fd4c05cb340>, <_ast.Name object at 0x7fd4c05cb370>](9)"	[label=concat];
 	"feature_importance(9)$1" -> "0(9)"	[label=concat];
 	"prediction(9)$2" -> "n_splits(9)$0"	[label=Div];
 	"prediction(9)$2" -> "prediction(9)$1"	[label=Div];
+	"print[312/4]" -> "np(9)"	[label=print];
+	"print[312/4]" -> "scores(9)$2"	[label=print];
+	"print[312/4]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(9)"	[label=print];
 	"result_dict(9)$0" -> "oof(9)$1"	[label=assignedFrom];
 	"result_dict(9)$0" -> "result_dict(9)"	[label=assignedFrom];
 	"result_dict(9)$1" -> "prediction(9)$2"	[label=assignedFrom];
@@ -566,7 +468,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"feature_importance(9)$2" -> "n_splits(9)$0"	[label=Div];
 	"feature_importance(9)$2" -> "feature_importance(9)$1"	[label=Div];
 	"cols(9)$0" -> "feature_importance(9)$2"	[label=assignedFrom];
-	"cols(9)$0" -> "[<_ast.Constant object at 0x12f8a13a0>, <_ast.Constant object at 0x12f8a13d0>](9)"	[label=assignedFrom];
+	"cols(9)$0" -> "[<_ast.Constant object at 0x7fd4c05bd0a0>, <_ast.Constant object at 0x7fd4c05bd0d0>](9)"	[label=assignedFrom];
 	"cols(9)$0" -> "feature(9)"	[label=assignedFrom];
 	"cols(9)$0" -> "importance(9)"	[label=assignedFrom];
 	"cols(9)$0" -> "False(9)"	[label=assignedFrom];
@@ -585,6 +487,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"params(10)" -> "train_model_classification[3]"	[label=_argToVar];
 	"folds(10)" -> "train_model_classification[4]"	[label=_argToVar];
 	"model_type(10)" -> "train_model_classification[5]"	[label=_argToVar];
+	"eval_metric(10)" -> "train_model_classification[6]"	[label=_argToVar];
 	"columns(10)" -> "train_model_classification[7]"	[label=_argToVar];
 	"plot_feature_importance(10)" -> "train_model_classification[8]"	[label=_argToVar];
 	"model(10)" -> "train_model_classification[9]"	[label=_argToVar];
@@ -612,30 +515,38 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"metrics_dict(10)$0" -> "eval_auc(10)"	[label=assignedFrom];
 	"metrics_dict(10)$0" -> "AUC(10)"	[label=assignedFrom];
 	"metrics_dict(10)$0" -> "metrics(10)"	[label=assignedFrom];
-	"oof(10)$0" -> "np(10)"	[label=zeros];
-	"oof(10)$0" -> "1(10)"	[label=zeros];
 	"oof(10)$0" -> "X(10)"	[label=zeros];
+	"oof(10)$0" -> "np(10)"	[label=zeros];
 	"oof(10)$0" -> "len(10)"	[label=zeros];
-	"prediction(10)$0" -> "np(10)"	[label=zeros];
-	"prediction(10)$0" -> "1(10)"	[label=zeros];
+	"oof(10)$0" -> "1(10)"	[label=zeros];
 	"prediction(10)$0" -> "X_test(10)$0"	[label=zeros];
+	"prediction(10)$0" -> "np(10)"	[label=zeros];
 	"prediction(10)$0" -> "len(10)"	[label=zeros];
-	"oof(10)$1" -> "np(10)"	[label=zeros];
-	"oof(10)$1" -> "1(10)"	[label=zeros];
+	"prediction(10)$0" -> "1(10)"	[label=zeros];
 	"oof(10)$1" -> "X(10)"	[label=zeros];
+	"oof(10)$1" -> "np(10)"	[label=zeros];
 	"oof(10)$1" -> "len(10)"	[label=zeros];
-	"prediction(10)$1" -> "np(10)"	[label=zeros];
-	"prediction(10)$1" -> "1(10)"	[label=zeros];
+	"oof(10)$1" -> "1(10)"	[label=zeros];
 	"prediction(10)$1" -> "X_test(10)$0"	[label=zeros];
+	"prediction(10)$1" -> "np(10)"	[label=zeros];
 	"prediction(10)$1" -> "len(10)"	[label=zeros];
+	"prediction(10)$1" -> "1(10)"	[label=zeros];
 	"scores(10)$0" -> "[](10)"	[label=assignedFrom];
 	"feature_importance(10)$0" -> "pd(10)"	[label=DataFrame];
+	"fold_n(10)" -> "X(10)"	[label=iteratorOf];
+	"fold_n(10)" -> "folds(10)"	[label=iteratorOf];
+	"fold_n(10)" -> "enumerate(10)"	[label=iteratorOf];
 	"train_index(10)" -> "X(10)"	[label=iteratorOf];
 	"train_index(10)" -> "folds(10)"	[label=iteratorOf];
 	"train_index(10)" -> "enumerate(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "X(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "folds(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "enumerate(10)"	[label=iteratorOf];
+	"print[385/8]" -> "1(10)"	[label=print];
+	"print[385/8]" -> "fold_n(10)"	[label=print];
+	"print[385/8]" -> "Fold (10)"	[label=print];
+	"print[385/8]" -> " started at (10)"	[label=print];
+	"print[385/8]" -> "time(10)"	[label=print];
 	"X_train(10)$0" -> "X(10)"	[label=assignedFrom];
 	"X_train(10)$0" -> "columns(10)$0"	[label=assignedFrom];
 	"X_train(10)$0" -> "train_index(10)"	[label=assignedFrom];
@@ -674,8 +585,8 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"y_pred_valid(10)$0" -> "1(10)"	[label=assignedFrom];
 	"y_pred_valid(10)$0" -> "X_valid(10)$1"	[label=assignedFrom];
 	"y_pred_valid(10)$0" -> "model(10)$1"	[label=assignedFrom];
-	"y_pred(10)$0" -> "1(10)"	[label=assignedFrom];
 	"y_pred(10)$0" -> "X_test(10)$0"	[label=assignedFrom];
+	"y_pred(10)$0" -> "1(10)"	[label=assignedFrom];
 	"y_pred(10)$0" -> "model(10)$1"	[label=assignedFrom];
 	"train_data(10)$0" -> "X(10)"	[label=DMatrix];
 	"train_data(10)$0" -> "X_train(10)$1"	[label=DMatrix];
@@ -685,7 +596,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"valid_data(10)$0" -> "X_valid(10)$1"	[label=DMatrix];
 	"valid_data(10)$0" -> "y_valid(10)$1"	[label=DMatrix];
 	"valid_data(10)$0" -> "xgb(10)"	[label=DMatrix];
-	"watchlist(10)$0" -> "[<_ast.Tuple object at 0x12f92f760>, <_ast.Tuple object at 0x12f92f7f0>](10)"	[label=assignedFrom];
+	"watchlist(10)$0" -> "[<_ast.Tuple object at 0x7fd5008144c0>, <_ast.Tuple object at 0x7fd500814550>](10)"	[label=assignedFrom];
 	"model(10)$2" -> "params(10)"	[label=train];
 	"model(10)$2" -> "verbose(10)"	[label=train];
 	"model(10)$2" -> "early_stopping_rounds(10)"	[label=train];
@@ -708,10 +619,24 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"y_pred_valid(10)$2" -> "1(10)"	[label=reshape];
 	"y_pred_valid(10)$2" -> "X_valid(10)$1"	[label=reshape];
 	"y_pred_valid(10)$2" -> "model(10)$4"	[label=reshape];
+	"score(10)$0" -> "eval_metric(10)"	[label=assignedFrom];
+	"score(10)$0" -> "metrics_dict(10)$0"	[label=assignedFrom];
+	"score(10)$0" -> "sklearn_scoring_function(10)"	[label=assignedFrom];
+	"score(10)$0" -> "y_valid(10)$1"	[label=assignedFrom];
+	"score(10)$0" -> "y_pred_valid(10)$2"	[label=assignedFrom];
+	"print[417/12]" -> "eval_metric(10)"	[label=print];
+	"print[417/12]" -> "fold_n(10)"	[label=print];
+	"print[417/12]" -> "Fold (10)"	[label=print];
+	"print[417/12]" -> "score(10)$0"	[label=print];
+	"print[417/12]" -> ". (10)"	[label=print];
+	"print[417/12]" -> ": (10)"	[label=print];
+	"print[417/12]" -> ".4f(10)"	[label=print];
+	"print[417/12]" -> ".(10)"	[label=print];
+	"print[418/12]" -> "(10)"	[label=print];
 	"y_pred(10)$2" -> "X_test(10)$0"	[label=predict_proba];
 	"y_pred(10)$2" -> "model(10)$4"	[label=predict_proba];
-	"model(10)$5" -> "eval_metric(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "params(10)"	[label=CatBoostClassifier];
+	"model(10)$5" -> "eval_metric(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "n_estimators(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "metrics_dict(10)$0"	[label=CatBoostClassifier];
 	"model(10)$5" -> "catboost_metric_name(10)"	[label=CatBoostClassifier];
@@ -738,6 +663,12 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"oof(10)$3" -> "1(10)"	[label=reshape];
 	"oof(10)$3" -> "y_pred_valid(10)$3"	[label=reshape];
 	"oof(10)$3" -> "oof(10)$2"	[label=reshape];
+	"scores(10)$2" -> "eval_metric(10)"	[label=append];
+	"scores(10)$2" -> "metrics_dict(10)$0"	[label=append];
+	"scores(10)$2" -> "sklearn_scoring_function(10)"	[label=append];
+	"scores(10)$2" -> "y_valid(10)$1"	[label=append];
+	"scores(10)$2" -> "y_pred_valid(10)$3"	[label=append];
+	"scores(10)$2" -> "scores(10)$1"	[label=append];
 	"prediction(10)$3" -> "1(10)"	[label=Add];
 	"prediction(10)$3" -> "pd(10)"	[label=Add];
 	"prediction(10)$3" -> "y_pred(10)$3"	[label=Add];
@@ -747,14 +678,17 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"fold_importance(10)$1" -> "fold_importance(10)$0"	[label=assignedFrom];
 	"fold_importance(10)$2" -> "model(10)$6"	[label=assignedFrom];
 	"fold_importance(10)$2" -> "fold_importance(10)$1"	[label=assignedFrom];
-	"fold_importance(10)$3" -> "fold_n(10)"	[label=Add];
 	"fold_importance(10)$3" -> "1(10)"	[label=Add];
+	"fold_importance(10)$3" -> "fold_n(10)"	[label=Add];
 	"fold_importance(10)$3" -> "fold_importance(10)$2"	[label=Add];
 	"feature_importance(10)$1" -> "pd(10)"	[label=concat];
-	"feature_importance(10)$1" -> "[<_ast.Name object at 0x12f8a94f0>, <_ast.Name object at 0x12f8a9520>](10)"	[label=concat];
+	"feature_importance(10)$1" -> "[<_ast.Name object at 0x7fd50081c1f0>, <_ast.Name object at 0x7fd50081c220>](10)"	[label=concat];
 	"feature_importance(10)$1" -> "0(10)"	[label=concat];
 	"prediction(10)$4" -> "n_splits(10)$0"	[label=Div];
 	"prediction(10)$4" -> "prediction(10)$3"	[label=Div];
+	"print[454/4]" -> "np(10)"	[label=print];
+	"print[454/4]" -> "scores(10)$2"	[label=print];
+	"print[454/4]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(10)"	[label=print];
 	"result_dict(10)$0" -> "oof(10)$3"	[label=assignedFrom];
 	"result_dict(10)$0" -> "result_dict(10)"	[label=assignedFrom];
 	"result_dict(10)$1" -> "prediction(10)$4"	[label=assignedFrom];
@@ -764,7 +698,7 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"feature_importance(10)$2" -> "n_splits(10)$0"	[label=Div];
 	"feature_importance(10)$2" -> "feature_importance(10)$1"	[label=Div];
 	"cols(10)$0" -> "feature_importance(10)$2"	[label=assignedFrom];
-	"cols(10)$0" -> "[<_ast.Constant object at 0x12f8b9280>, <_ast.Constant object at 0x12f8b92b0>](10)"	[label=assignedFrom];
+	"cols(10)$0" -> "[<_ast.Constant object at 0x7fd50081cf70>, <_ast.Constant object at 0x7fd50081cfa0>](10)"	[label=assignedFrom];
 	"cols(10)$0" -> "feature(10)"	[label=assignedFrom];
 	"cols(10)$0" -> "importance(10)"	[label=assignedFrom];
 	"cols(10)$0" -> "False(10)"	[label=assignedFrom];
@@ -780,13 +714,13 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"result_dict(10)$4" -> "cols(10)$0"	[label=assignedFrom];
 	"result_dict(10)$4" -> "result_dict(10)$3"	[label=assignedFrom];
 	"(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"HTML[0]" -> "(0)"	[label=HTML];
+	"HTML[479/0]" -> "(0)"	[label=HTML];
+	"HTML[479/0]" -> "<script>(0)"	[label=HTML];
+	"HTML[479/0]" -> "workaround(0)"	[label=HTML];
+	"HTML[479/0]" -> "</script>(0)"	[label=HTML];
 	"<script>(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"HTML[1]" -> "<script>(0)"	[label=HTML];
 	"workaround(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"HTML[2]" -> "workaround(0)"	[label=HTML];
 	"</script>(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"HTML[3]" -> "</script>(0)"	[label=HTML];
 	"../input/(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"folder_path(0)$0" -> "../input/(0)"	[label=assignedFrom];
 	"train_identity(0)$0" -> "pd(0)$0"	[label=read_csv];
@@ -809,28 +743,80 @@ object at 0x12fade7f0>, <_ast.Constant object at 0x12fade910>, <_ast.Constant ob
 	"sub(0)$0" -> "folder_path(0)$0"	[label=read_csv];
 	"sub(0)$0" -> "sample_submission.csv(0)"	[label=read_csv];
 	"sample_submission.csv(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$0" -> "pd(0)$0"	[label=merge];
+	"train(0)$0" -> "train_identity(0)$0"	[label=merge];
+	"train(0)$0" -> "train_transaction(0)$0"	[label=merge];
+	"train(0)$0" -> "TransactionID(0)"	[label=merge];
+	"train(0)$0" -> "left(0)"	[label=merge];
 	"TransactionID(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"left(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$0" -> "pd(0)$0"	[label=merge];
+	"test(0)$0" -> "test_identity(0)$0"	[label=merge];
+	"test(0)$0" -> "test_transaction(0)$0"	[label=merge];
+	"test(0)$0" -> "TransactionID(0)"	[label=merge];
+	"test(0)$0" -> "left(0)"	[label=merge];
+	"Train dataset has (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"print[493/0]" -> "train(0)$0"	[label=print];
+	"print[493/0]" -> "Train dataset has (0)"	[label=print];
+	"print[493/0]" -> "0(0)"	[label=print];
+	"print[493/0]" -> " rows and (0)"	[label=print];
+	"print[493/0]" -> "1(0)"	[label=print];
+	"print[493/0]" -> " columns.(0)"	[label=print];
+	"0(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	" rows and (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	" columns.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"Test dataset has (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"print[494/0]" -> "test(0)$0"	[label=print];
+	"print[494/0]" -> "0(0)"	[label=print];
+	"print[494/0]" -> " rows and (0)"	[label=print];
+	"print[494/0]" -> "1(0)"	[label=print];
+	"print[494/0]" -> " columns.(0)"	[label=print];
+	"print[494/0]" -> "Test dataset has (0)"	[label=print];
 	"train_transaction(0)$1" -> "train_transaction(0)$0"	[label=head];
 	"train_identity(0)$1" -> "train_identity(0)$0"	[label=head];
+	"There are (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"print[498/0]" -> "train(0)$0"	[label=print];
+	"print[498/0]" -> "There are (0)"	[label=print];
+	"print[498/0]" -> " columns in train dataset with missing values.(0)"	[label=print];
+	" columns in train dataset with missing values.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"col(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"col(0)" -> "cat_cols(0)$0"	[label=iteratorOf];
-	"cat_cols(0)$0" -> "[<_ast.Constant object at 0x12f908430>, <_ast.Constant object at 0x12f908490>, <_ast.Constant object at 0x12f908460>, <_ast.Constant \
-object at 0x12f9084c0>, <_ast.Constant object at 0x12f9084f0>, <_ast.Constant object at 0x12f908520>, <_ast.Constant object at 0x12f908550>, <_\
-ast.Constant object at 0x12f908580>, <_ast.Constant object at 0x12f9085b0>, <_ast.Constant object at 0x12f9085e0>, <_ast.Constant \
-object at 0x12f908610>, <_ast.Constant object at 0x12f908640>, <_ast.Constant object at 0x12f908670>, <_ast.Constant object at 0x12f9086a0>, <_\
-ast.Constant object at 0x12f9086d0>, <_ast.Constant object at 0x12f908700>, <_ast.Constant object at 0x12f908340>, <_ast.Constant \
-object at 0x12f908730>, <_ast.Constant object at 0x12f908760>, <_ast.Constant object at 0x12f908790>, <_ast.Constant object at 0x12f908040>, <_\
-ast.Constant object at 0x12f9087c0>, <_ast.Constant object at 0x12f9087f0>, <_ast.Constant object at 0x12f908820>, <_ast.Constant \
-object at 0x12f908880>, <_ast.Constant object at 0x12f9088e0>, <_ast.Constant object at 0x12f908910>, <_ast.Constant object at 0x12f908940>, <_\
-ast.Constant object at 0x12f908970>, <_ast.Constant object at 0x12f9089a0>, <_ast.Constant object at 0x12f908a00>, <_ast.Constant \
-object at 0x12f908a30>, <_ast.Constant object at 0x12f908a60>, <_ast.Constant object at 0x12f908a90>, <_ast.Constant object at 0x12f908ac0>, <_\
-ast.Constant object at 0x12f908af0>, <_ast.Constant object at 0x12f908b20>, <_ast.Constant object at 0x12f908b50>, <_ast.Constant \
-object at 0x12f908b80>, <_ast.Constant object at 0x12f908bb0>, <_ast.Constant object at 0x12f9088b0>, <_ast.Constant object at 0x12f908be0>, <_\
-ast.Constant object at 0x12f908c10>, <_ast.Constant object at 0x12f908c40>, <_ast.Constant object at 0x12f908c70>, <_ast.Constant \
-object at 0x12f908ca0>, <_ast.Constant object at 0x12f908d00>, <_ast.Constant object at 0x12f908d30>, <_ast.Constant object at 0x12f908d60>, <_\
-ast.Constant object at 0x12f908d90>, <_ast.Constant object at 0x12f908dc0>, <_ast.Constant object at 0x12f908df0>, <_ast.Constant \
-object at 0x12f908e20>, <_ast.Constant object at 0x12f908e80>, <_ast.Constant object at 0x12f908e50>](0)"	[label=assignedFrom];
+	"cat_cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cdf70>, <_ast.Constant object at 0x7fd4c04cdfa0>, <_ast.Constant object at 0x7fd4c04cdfd0>, <_\
+ast.Constant object at 0x7fd4c04f4040>, <_ast.Constant object at 0x7fd4c04f4070>, <_ast.Constant object at 0x7fd4c04f40a0>, <_ast.Constant \
+object at 0x7fd4c04f40d0>, <_ast.Constant object at 0x7fd4c04f4100>, <_ast.Constant object at 0x7fd4c04f4130>, <_ast.Constant object \
+at 0x7fd4c04f4160>, <_ast.Constant object at 0x7fd4c04f41c0>, <_ast.Constant object at 0x7fd4c04f4190>, <_ast.Constant object at \
+0x7fd4c04f41f0>, <_ast.Constant object at 0x7fd4c04f4220>, <_ast.Constant object at 0x7fd4c04f4250>, <_ast.Constant object at 0x7fd4c04f4280>, <_\
+ast.Constant object at 0x7fd4c04f42b0>, <_ast.Constant object at 0x7fd4c04f42e0>, <_ast.Constant object at 0x7fd4c04f4310>, <_ast.Constant \
+object at 0x7fd4c04f4340>, <_ast.Constant object at 0x7fd4c04f4370>, <_ast.Constant object at 0x7fd4c04f43a0>, <_ast.Constant object \
+at 0x7fd4c04f43d0>, <_ast.Constant object at 0x7fd4c04f4400>, <_ast.Constant object at 0x7fd4c04f4430>, <_ast.Constant object at \
+0x7fd4c04f4460>, <_ast.Constant object at 0x7fd4c04f4490>, <_ast.Constant object at 0x7fd4c04f44c0>, <_ast.Constant object at 0x7fd4c04f4520>, <_\
+ast.Constant object at 0x7fd4c04f4550>, <_ast.Constant object at 0x7fd4c04f4580>, <_ast.Constant object at 0x7fd4c04f45b0>, <_ast.Constant \
+object at 0x7fd4c04f45e0>, <_ast.Constant object at 0x7fd4c04f4610>, <_ast.Constant object at 0x7fd4c04f4640>, <_ast.Constant object \
+at 0x7fd4c04f4670>, <_ast.Constant object at 0x7fd4c04f46a0>, <_ast.Constant object at 0x7fd4c04f46d0>, <_ast.Constant object at \
+0x7fd4c04f4700>, <_ast.Constant object at 0x7fd4c04f4730>, <_ast.Constant object at 0x7fd4c04f4790>, <_ast.Constant object at 0x7fd4c04f4760>, <_\
+ast.Constant object at 0x7fd4c04f47c0>, <_ast.Constant object at 0x7fd4c04f47f0>, <_ast.Constant object at 0x7fd4c04f4850>, <_ast.Constant \
+object at 0x7fd4c04f4880>, <_ast.Constant object at 0x7fd4c04f48b0>, <_ast.Constant object at 0x7fd4c04f48e0>, <_ast.Constant object \
+at 0x7fd4c04f4910>, <_ast.Constant object at 0x7fd4c04f4940>, <_ast.Constant object at 0x7fd4c04f4970>, <_ast.Constant object at \
+0x7fd4c04f49a0>, <_ast.Constant object at 0x7fd4c04f49d0>, <_ast.Constant object at 0x7fd4c04f4a00>, <_ast.Constant object at 0x7fd4c04f4a30>](\
+0)"	[label=assignedFrom];
+	"one_value_cols(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"one_value_cols(0)$0" -> "1(0)"	[label=assignedFrom];
+	"one_value_cols(0)$0" -> "col(0)"	[label=assignedFrom];
+	"one_value_cols_test(0)$0" -> "test(0)$0"	[label=assignedFrom];
+	"one_value_cols_test(0)$0" -> "1(0)"	[label=assignedFrom];
+	"one_value_cols_test(0)$0" -> "col(0)"	[label=assignedFrom];
+	"print[502/0]" -> "There are (0)"	[label=print];
+	"print[502/0]" -> "one_value_cols(0)$0"	[label=print];
+	"print[502/0]" -> "len(0)"	[label=print];
+	"print[502/0]" -> " columns in train dataset with one unique value.(0)"	[label=print];
+	"len(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	" columns in train dataset with one unique value.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"print[503/0]" -> "There are (0)"	[label=print];
+	"print[503/0]" -> "one_value_cols_test(0)$0"	[label=print];
+	"print[503/0]" -> "len(0)"	[label=print];
+	"print[503/0]" -> " columns in test dataset with one unique value.(0)"	[label=print];
+	" columns in test dataset with one unique value.(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=hist];
 	"plt(0)$0" -> "train(0)$0"	[label=hist];
 	"plt(0)$0" -> "id_01(0)"	[label=hist];
@@ -847,35 +833,35 @@ object at 0x12f908e20>, <_ast.Constant object at 0x12f908e80>, <_ast.Constant ob
 	"plt(0)$3" -> "plt(0)$2"	[label=title];
 	"plt(0)$3" -> "Distribution of id_07 variable(0)"	[label=title];
 	"Distribution of id_07 variable(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d0e20>, <_ast.Constant object at 0x12f8d0e80>, <_ast.Constant object at 0x12f8d0f40>, <_ast.Constant \
-object at 0x12f8d0f70>, <_ast.Constant object at 0x12f8d0fd0>, <_ast.Constant object at 0x12f8d0fa0>, <_ast.Constant object at 0x12f8d0eb0>, <_\
-ast.Constant object at 0x12f8d0f10>, <_ast.Constant object at 0x12f8d0ca0>, <_ast.Constant object at 0x12f8d0ee0>, <_ast.Constant \
-object at 0x12f8d0e50>, <_ast.Constant object at 0x12f8d03d0>, <_ast.Constant object at 0x12f8d0dc0>, <_ast.Constant object at 0x12f8d0df0>](\
-0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d0597ac0>, <_ast.Constant object at 0x7fd4d0597af0>, <_ast.Constant object at 0x7fd4d0597b20>, <_\
+ast.Constant object at 0x7fd4d0597b50>, <_ast.Constant object at 0x7fd4d0597b80>, <_ast.Constant object at 0x7fd4d0597bb0>, <_ast.Constant \
+object at 0x7fd4d0597be0>, <_ast.Constant object at 0x7fd4d0597c10>, <_ast.Constant object at 0x7fd4d0597c40>, <_ast.Constant object \
+at 0x7fd4d0597c70>, <_ast.Constant object at 0x7fd4d0597ca0>, <_ast.Constant object at 0x7fd4d0597cd0>, <_ast.Constant object at \
+0x7fd4d0597d00>, <_ast.Constant object at 0x7fd4d0597d30>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"i(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"i(0)" -> "[<_ast.Constant object at 0x12f8d0e20>, <_ast.Constant object at 0x12f8d0e80>, <_ast.Constant object at 0x12f8d0f40>, <_ast.Constant \
-object at 0x12f8d0f70>, <_ast.Constant object at 0x12f8d0fd0>, <_ast.Constant object at 0x12f8d0fa0>, <_ast.Constant object at 0x12f8d0eb0>, <_\
-ast.Constant object at 0x12f8d0f10>, <_ast.Constant object at 0x12f8d0ca0>, <_ast.Constant object at 0x12f8d0ee0>, <_ast.Constant \
-object at 0x12f8d0e50>, <_ast.Constant object at 0x12f8d03d0>, <_ast.Constant object at 0x12f8d0dc0>, <_ast.Constant object at 0x12f8d0df0>](\
-0)"	[label=iteratorOf];
-	"i(0)" -> "[<_ast.Constant object at 0x12f8b0fd0>, <_ast.Constant object at 0x12f8b0b80>, <_ast.Constant object at 0x12f8b0c10>, <_ast.Constant \
-object at 0x12f8e5040>, <_ast.Constant object at 0x12f8e5070>](0)"	[label=iteratorOf];
-	"i(0)" -> "[<_ast.Constant object at 0x12fb08160>, <_ast.Constant object at 0x12fb08190>, <_ast.Constant object at 0x12fb081c0>, <_ast.Constant \
-object at 0x12fb081f0>, <_ast.Constant object at 0x12fb08220>, <_ast.Constant object at 0x12fb08250>, <_ast.Constant object at 0x12fb08280>, <_\
-ast.Constant object at 0x12fb082b0>, <_ast.Constant object at 0x12fb082e0>, <_ast.Constant object at 0x12fb08310>, <_ast.Constant \
-object at 0x12fb08340>, <_ast.Constant object at 0x12fb08370>](0)"	[label=iteratorOf];
-	"i(0)" -> "[<_ast.Constant object at 0x12fafd610>, <_ast.Constant object at 0x12fafd640>, <_ast.Constant object at 0x12fafd670>, <_ast.Constant \
-object at 0x12fafd6a0>, <_ast.Constant object at 0x12fafd6d0>, <_ast.Constant object at 0x12fafd700>, <_ast.Constant object at 0x12fafd730>, <_\
-ast.Constant object at 0x12fafd760>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f8b0fd0>, <_ast.Constant object at 0x12f8b0b80>, <_ast.Constant object at 0x12f8b0c10>, <_ast.Constant \
-object at 0x12f8e5040>, <_ast.Constant object at 0x12f8e5070>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb08160>, <_ast.Constant object at 0x12fb08190>, <_ast.Constant object at 0x12fb081c0>, <_ast.Constant \
-object at 0x12fb081f0>, <_ast.Constant object at 0x12fb08220>, <_ast.Constant object at 0x12fb08250>, <_ast.Constant object at 0x12fb08280>, <_\
-ast.Constant object at 0x12fb082b0>, <_ast.Constant object at 0x12fb082e0>, <_ast.Constant object at 0x12fb08310>, <_ast.Constant \
-object at 0x12fb08340>, <_ast.Constant object at 0x12fb08370>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fafd610>, <_ast.Constant object at 0x12fafd640>, <_ast.Constant object at 0x12fafd670>, <_ast.Constant \
-object at 0x12fafd6a0>, <_ast.Constant object at 0x12fafd6d0>, <_ast.Constant object at 0x12fafd700>, <_ast.Constant object at 0x12fafd730>, <_\
-ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"i(0)" -> "[<_ast.Constant object at 0x7fd4d0597ac0>, <_ast.Constant object at 0x7fd4d0597af0>, <_ast.Constant object at 0x7fd4d0597b20>, <_\
+ast.Constant object at 0x7fd4d0597b50>, <_ast.Constant object at 0x7fd4d0597b80>, <_ast.Constant object at 0x7fd4d0597bb0>, <_ast.Constant \
+object at 0x7fd4d0597be0>, <_ast.Constant object at 0x7fd4d0597c10>, <_ast.Constant object at 0x7fd4d0597c40>, <_ast.Constant object \
+at 0x7fd4d0597c70>, <_ast.Constant object at 0x7fd4d0597ca0>, <_ast.Constant object at 0x7fd4d0597cd0>, <_ast.Constant object at \
+0x7fd4d0597d00>, <_ast.Constant object at 0x7fd4d0597d30>](0)"	[label=iteratorOf];
+	"i(0)" -> "[<_ast.Constant object at 0x7fd4c059bb80>, <_ast.Constant object at 0x7fd4c059bbb0>, <_ast.Constant object at 0x7fd4c059bbe0>, <_\
+ast.Constant object at 0x7fd4c059bc10>, <_ast.Constant object at 0x7fd4c059bc40>](0)"	[label=iteratorOf];
+	"i(0)" -> "[<_ast.Constant object at 0x7fd4d05a8cd0>, <_ast.Constant object at 0x7fd4d05a8d00>, <_ast.Constant object at 0x7fd4d05a8d30>, <_\
+ast.Constant object at 0x7fd4d05a8d60>, <_ast.Constant object at 0x7fd4d05a8d90>, <_ast.Constant object at 0x7fd4d05a8dc0>, <_ast.Constant \
+object at 0x7fd4d05a8e20>, <_ast.Constant object at 0x7fd4d05a8df0>, <_ast.Constant object at 0x7fd4d05a8e50>, <_ast.Constant object \
+at 0x7fd4d05a8e80>, <_ast.Constant object at 0x7fd4d05a8ee0>, <_ast.Constant object at 0x7fd4d05a8f10>](0)"	[label=iteratorOf];
+	"i(0)" -> "[<_ast.Constant object at 0x7fd5008411c0>, <_ast.Constant object at 0x7fd5008411f0>, <_ast.Constant object at 0x7fd500841220>, <_\
+ast.Constant object at 0x7fd500841250>, <_ast.Constant object at 0x7fd500841280>, <_ast.Constant object at 0x7fd5008412b0>, <_ast.Constant \
+object at 0x7fd5008412e0>, <_ast.Constant object at 0x7fd500841310>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd4c059bb80>, <_ast.Constant object at 0x7fd4c059bbb0>, <_ast.Constant object at 0x7fd4c059bbe0>, <_\
+ast.Constant object at 0x7fd4c059bc10>, <_ast.Constant object at 0x7fd4c059bc40>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d05a8cd0>, <_ast.Constant object at 0x7fd4d05a8d00>, <_ast.Constant object at 0x7fd4d05a8d30>, <_\
+ast.Constant object at 0x7fd4d05a8d60>, <_ast.Constant object at 0x7fd4d05a8d90>, <_ast.Constant object at 0x7fd4d05a8dc0>, <_ast.Constant \
+object at 0x7fd4d05a8e20>, <_ast.Constant object at 0x7fd4d05a8df0>, <_ast.Constant object at 0x7fd4d05a8e50>, <_ast.Constant object \
+at 0x7fd4d05a8e80>, <_ast.Constant object at 0x7fd4d05a8ee0>, <_ast.Constant object at 0x7fd4d05a8f10>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008411c0>, <_ast.Constant object at 0x7fd5008411f0>, <_ast.Constant object at 0x7fd500841220>, <_\
+ast.Constant object at 0x7fd500841250>, <_ast.Constant object at 0x7fd500841280>, <_ast.Constant object at 0x7fd5008412b0>, <_ast.Constant \
+object at 0x7fd5008412e0>, <_ast.Constant object at 0x7fd500841310>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"feature_count(0)$0" -> "train(0)$2"	[label=rename];
 	"feature_count(0)$0" -> "i(0)"	[label=rename];
 	"feature_count(0)$0" -> "False(0)"	[label=rename];
@@ -890,107 +876,41 @@ ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appear
 	"chart(0)$0" -> ":N(0)"	[label=properties];
 	"chart(0)$0" -> "count:Q(0)"	[label=properties];
 	"chart(0)$0" -> "Count(0)"	[label=properties];
-	"chart(0)$0" -> "[<_ast.Name object at 0x12f8d5d60>, <_ast.Constant object at 0x12f8d5d90>](0)"	[label=properties];
+	"chart(0)$0" -> "[<_ast.Name object at 0x7fd4d057f970>, <_ast.Constant object at 0x7fd4d057f9a0>](0)"	[label=properties];
 	"chart(0)$0" -> "Counts of (0)"	[label=properties];
 	"chart(0)$0" -> "400(0)"	[label=properties];
 	":N(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"count:Q(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"Count(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d5d60>, <_ast.Constant object at 0x12f8d5d90>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4d057f970>, <_ast.Constant object at 0x7fd4d057f9a0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"Counts of (0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"400(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"charts(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[2]" -> "charts(0)$0"	[label=render];
-	"render[2]" -> "charts(0)$1"	[label=render];
-	"render[2]" -> "charts(0)$2"	[label=render];
-	"render[2]" -> "charts(0)$3"	[label=render];
+	"charts(0)$0" -> "chart(0)$0"	[label=assignedFrom];
+	"charts(0)$0" -> "charts(0)"	[label=assignedFrom];
+	"render[520/0]" -> "charts(0)$0"	[label=render];
+	"render[520/0]" -> "id_12(0)"	[label=render];
+	"render[520/0]" -> "id_15(0)"	[label=render];
+	"render[520/0]" -> "id_16(0)"	[label=render];
+	"render[520/0]" -> "id_28(0)"	[label=render];
+	"render[520/0]" -> "id_29(0)"	[label=render];
+	"render[520/0]" -> "id_32(0)"	[label=render];
+	"render[520/0]" -> "id_34(0)"	[label=render];
+	"render[520/0]" -> "id_35(0)"	[label=render];
+	"render[520/0]" -> "id_36(0)"	[label=render];
+	"render[520/0]" -> "id_37(0)"	[label=render];
+	"render[520/0]" -> "id_38(0)"	[label=render];
+	"id_12(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"id_15(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[3]" -> "id_15(0)"	[label=render];
-	"render[3]" -> "id_31(0)"	[label=render];
-	"render[3]" -> "card4(0)"	[label=render];
-	"render[3]" -> "R_emaildomain(0)"	[label=render];
-	"id_31(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"card4(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"R_emaildomain(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[4]" -> "charts(0)$0"	[label=render];
-	"render[4]" -> "charts(0)$1"	[label=render];
-	"render[4]" -> "charts(0)$2"	[label=render];
-	"render[4]" -> "charts(0)$3"	[label=render];
 	"id_16(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[5]" -> "id_16(0)"	[label=render];
-	"render[5]" -> "id_33(0)"	[label=render];
-	"render[5]" -> "card6(0)"	[label=render];
-	"render[5]" -> "card1(0)"	[label=render];
-	"id_33(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"card6(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"card1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[6]" -> "charts(0)$0"	[label=render];
-	"render[6]" -> "charts(0)$1"	[label=render];
-	"render[6]" -> "charts(0)$2"	[label=render];
-	"render[6]" -> "charts(0)$3"	[label=render];
 	"id_28(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[7]" -> "id_28(0)"	[label=render];
-	"render[7]" -> "DeviceType(0)"	[label=render];
-	"render[7]" -> "M4(0)"	[label=render];
-	"render[7]" -> "card2(0)"	[label=render];
-	"DeviceType(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"M4(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"card2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[8]" -> "charts(0)$0"	[label=render];
-	"render[8]" -> "charts(0)$1"	[label=render];
-	"render[8]" -> "charts(0)$2"	[label=render];
-	"render[8]" -> "charts(0)$3"	[label=render];
 	"id_29(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[9]" -> "card6(0)"	[label=render];
-	"render[9]" -> "id_29(0)"	[label=render];
-	"render[9]" -> "DeviceInfo(0)"	[label=render];
-	"render[9]" -> "card3(0)"	[label=render];
-	"DeviceInfo(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"card3(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[10]" -> "charts(0)$0"	[label=render];
-	"render[10]" -> "charts(0)$2"	[label=render];
-	"render[10]" -> "charts(0)$3"	[label=render];
 	"id_32(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[11]" -> "M4(0)"	[label=render];
-	"render[11]" -> "id_32(0)"	[label=render];
-	"render[11]" -> "card5(0)"	[label=render];
-	"card5(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[12]" -> "charts(0)$0"	[label=render];
-	"render[12]" -> "charts(0)$2"	[label=render];
-	"render[12]" -> "charts(0)$3"	[label=render];
 	"id_34(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[13]" -> "id_34(0)"	[label=render];
-	"render[13]" -> "M1(0)"	[label=render];
-	"render[13]" -> "addr1(0)"	[label=render];
-	"M1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"addr1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[14]" -> "charts(0)$0"	[label=render];
-	"render[14]" -> "charts(0)$2"	[label=render];
-	"render[14]" -> "charts(0)$3"	[label=render];
 	"id_35(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[15]" -> "id_35(0)"	[label=render];
-	"render[15]" -> "M2(0)"	[label=render];
-	"render[15]" -> "addr2(0)"	[label=render];
-	"M2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"addr2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[16]" -> "charts(0)$0"	[label=render];
-	"render[16]" -> "charts(0)$2"	[label=render];
 	"id_36(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[17]" -> "id_36(0)"	[label=render];
-	"render[17]" -> "M3(0)"	[label=render];
-	"M3(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[18]" -> "charts(0)$0"	[label=render];
-	"render[18]" -> "charts(0)$2"	[label=render];
 	"id_37(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[19]" -> "id_37(0)"	[label=render];
-	"render[19]" -> "M5(0)"	[label=render];
-	"M5(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[20]" -> "charts(0)$0"	[label=render];
-	"render[20]" -> "charts(0)$2"	[label=render];
 	"id_38(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[21]" -> "id_38(0)"	[label=render];
-	"render[21]" -> "M6(0)"	[label=render];
-	"M6(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"feature_count(0)$1" -> "train(0)$2"	[label=rename];
 	"feature_count(0)$1" -> "i(0)"	[label=rename];
 	"feature_count(0)$1" -> "False(0)"	[label=rename];
@@ -1005,10 +925,23 @@ ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appear
 	"chart(0)$1" -> "Count(0)"	[label=properties];
 	"chart(0)$1" -> "Counts of (0)"	[label=properties];
 	"chart(0)$1" -> "feature_count(0)$1"	[label=properties];
-	"chart(0)$1" -> "[<_ast.Name object at 0x12f8e5e80>, <_ast.Constant object at 0x12f8e5eb0>](0)"	[label=properties];
+	"chart(0)$1" -> "[<_ast.Name object at 0x7fd4d05a2a90>, <_ast.Constant object at 0x7fd4d05a2ac0>](0)"	[label=properties];
 	"chart(0)$1" -> "800(0)"	[label=properties];
-	"[<_ast.Name object at 0x12f8e5e80>, <_ast.Constant object at 0x12f8e5eb0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4d05a2a90>, <_ast.Constant object at 0x7fd4d05a2ac0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"800(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"charts(0)$1" -> "charts(0)$0"	[label=assignedFrom];
+	"charts(0)$1" -> "chart(0)$1"	[label=assignedFrom];
+	"render[531/0]" -> "charts(0)$1"	[label=render];
+	"render[531/0]" -> "id_30(0)"	[label=render];
+	"render[531/0]" -> "id_31(0)"	[label=render];
+	"render[531/0]" -> "id_33(0)"	[label=render];
+	"render[531/0]" -> "DeviceType(0)"	[label=render];
+	"render[531/0]" -> "DeviceInfo(0)"	[label=render];
+	"id_30(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"id_31(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"id_33(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"DeviceType(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"DeviceInfo(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"plt(0)$4" -> "train(0)$2"	[label=hist];
 	"plt(0)$4" -> "plt(0)$3"	[label=hist];
 	"plt(0)$4" -> "TransactionDT(0)"	[label=hist];
@@ -1033,17 +966,35 @@ ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appear
 	"chart(0)$2" -> "Counts of (0)"	[label=properties];
 	"chart(0)$2" -> "400(0)"	[label=properties];
 	"chart(0)$2" -> "feature_count(0)$2"	[label=properties];
-	"chart(0)$2" -> "[<_ast.Name object at 0x12fae9070>, <_ast.Constant object at 0x12fae90a0>](0)"	[label=properties];
-	"[<_ast.Name object at 0x12fae9070>, <_ast.Constant object at 0x12fae90a0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[22]" -> "charts(0)$2"	[label=render];
+	"chart(0)$2" -> "[<_ast.Name object at 0x7fd4d05abc40>, <_ast.Constant object at 0x7fd4d05abc70>](0)"	[label=properties];
+	"[<_ast.Name object at 0x7fd4d05abc40>, <_ast.Constant object at 0x7fd4d05abc70>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"charts(0)$2" -> "charts(0)$1"	[label=assignedFrom];
+	"charts(0)$2" -> "chart(0)$2"	[label=assignedFrom];
+	"render[546/0]" -> "charts(0)$2"	[label=render];
+	"render[546/0]" -> "ProductCD(0)"	[label=render];
+	"render[546/0]" -> "card4(0)"	[label=render];
+	"render[546/0]" -> "card6(0)"	[label=render];
+	"render[546/0]" -> "M4(0)"	[label=render];
+	"render[546/0]" -> "M1(0)"	[label=render];
+	"render[546/0]" -> "M2(0)"	[label=render];
+	"render[546/0]" -> "M3(0)"	[label=render];
+	"render[546/0]" -> "M5(0)"	[label=render];
+	"render[546/0]" -> "M6(0)"	[label=render];
+	"render[546/0]" -> "M7(0)"	[label=render];
+	"render[546/0]" -> "M8(0)"	[label=render];
+	"render[546/0]" -> "M9(0)"	[label=render];
+	"ProductCD(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card4(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card6(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M4(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M3(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M5(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"M6(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"M7(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[23]" -> "M7(0)"	[label=render];
-	"render[24]" -> "charts(0)$2"	[label=render];
 	"M8(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[25]" -> "M8(0)"	[label=render];
-	"render[26]" -> "charts(0)$2"	[label=render];
 	"M9(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"render[27]" -> "M9(0)"	[label=render];
 	"feature_count(0)$3" -> "train(0)$2"	[label=rename];
 	"feature_count(0)$3" -> "i(0)"	[label=rename];
 	"feature_count(0)$3" -> "False(0)"	[label=rename];
@@ -1057,207 +1008,226 @@ ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appear
 	"chart(0)$3" -> "Count(0)"	[label=properties];
 	"chart(0)$3" -> "Counts of (0)"	[label=properties];
 	"chart(0)$3" -> "feature_count(0)$3"	[label=properties];
-	"chart(0)$3" -> "[<_ast.Name object at 0x12faf65b0>, <_ast.Constant object at 0x12faf6610>](0)"	[label=properties];
+	"chart(0)$3" -> "[<_ast.Name object at 0x7fd50086b160>, <_ast.Constant object at 0x7fd50086b190>](0)"	[label=properties];
 	"chart(0)$3" -> "600(0)"	[label=properties];
-	"[<_ast.Name object at 0x12faf65b0>, <_ast.Constant object at 0x12faf6610>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50086b160>, <_ast.Constant object at 0x7fd50086b190>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"600(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"charts(0)$3" -> "charts(0)$2"	[label=assignedFrom];
+	"charts(0)$3" -> "chart(0)$3"	[label=assignedFrom];
+	"render[557/0]" -> "charts(0)$3"	[label=render];
+	"render[557/0]" -> "P_emaildomain(0)"	[label=render];
+	"render[557/0]" -> "R_emaildomain(0)"	[label=render];
+	"render[557/0]" -> "card1(0)"	[label=render];
+	"render[557/0]" -> "card2(0)"	[label=render];
+	"render[557/0]" -> "card3(0)"	[label=render];
+	"render[557/0]" -> "card5(0)"	[label=render];
+	"render[557/0]" -> "addr1(0)"	[label=render];
+	"render[557/0]" -> "addr2(0)"	[label=render];
+	"P_emaildomain(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"R_emaildomain(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card3(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"card5(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"addr1(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"addr2(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$3" -> "train(0)$2"	[label=Div];
 	"train(0)$3" -> "train(0)$3"	[label=Div];
 	"train(0)$3" -> "TransactionAmt(0)"	[label=Div];
-	"train(0)$3" -> "[<_ast.Constant object at 0x12fafe640>](0)"	[label=Div];
+	"train(0)$3" -> "[<_ast.Constant object at 0x7fd500865250>](0)"	[label=Div];
 	"train(0)$3" -> "mean(0)"	[label=Div];
 	"TransactionAmt(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fafe640>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500865250>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"mean(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$4" -> "train(0)$3"	[label=Div];
 	"train(0)$4" -> "TransactionAmt(0)"	[label=Div];
 	"train(0)$4" -> "mean(0)"	[label=Div];
 	"train(0)$4" -> "train(0)$4"	[label=Div];
-	"train(0)$4" -> "[<_ast.Constant object at 0x12fafeaf0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fafeaf0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$4" -> "[<_ast.Constant object at 0x7fd500865700>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500865700>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$5" -> "TransactionAmt(0)"	[label=Div];
 	"train(0)$5" -> "train(0)$4"	[label=Div];
 	"train(0)$5" -> "train(0)$5"	[label=Div];
-	"train(0)$5" -> "[<_ast.Constant object at 0x12fafefd0>](0)"	[label=Div];
+	"train(0)$5" -> "[<_ast.Constant object at 0x7fd500865b80>](0)"	[label=Div];
 	"train(0)$5" -> "std(0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fafefd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500865b80>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"std(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$6" -> "TransactionAmt(0)"	[label=Div];
 	"train(0)$6" -> "train(0)$5"	[label=Div];
 	"train(0)$6" -> "std(0)"	[label=Div];
 	"train(0)$6" -> "train(0)$6"	[label=Div];
-	"train(0)$6" -> "[<_ast.Constant object at 0x12fadb400>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadb400>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$6" -> "[<_ast.Constant object at 0x7fd500865fd0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500865fd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$1" -> "test(0)$0"	[label=Div];
 	"test(0)$1" -> "TransactionAmt(0)"	[label=Div];
 	"test(0)$1" -> "mean(0)"	[label=Div];
 	"test(0)$1" -> "test(0)$1"	[label=Div];
-	"test(0)$1" -> "[<_ast.Constant object at 0x12fadb880>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadb880>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$1" -> "[<_ast.Constant object at 0x7fd5008404f0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd5008404f0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$2" -> "TransactionAmt(0)"	[label=Div];
 	"test(0)$2" -> "mean(0)"	[label=Div];
 	"test(0)$2" -> "test(0)$1"	[label=Div];
 	"test(0)$2" -> "test(0)$2"	[label=Div];
-	"test(0)$2" -> "[<_ast.Constant object at 0x12fadbd00>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadbd00>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$2" -> "[<_ast.Constant object at 0x7fd500840970>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500840970>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$3" -> "TransactionAmt(0)"	[label=Div];
 	"test(0)$3" -> "std(0)"	[label=Div];
 	"test(0)$3" -> "test(0)$2"	[label=Div];
 	"test(0)$3" -> "test(0)$3"	[label=Div];
-	"test(0)$3" -> "[<_ast.Constant object at 0x12fb011c0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fb011c0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$3" -> "[<_ast.Constant object at 0x7fd500840e20>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500840e20>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$4" -> "TransactionAmt(0)"	[label=Div];
 	"test(0)$4" -> "std(0)"	[label=Div];
 	"test(0)$4" -> "test(0)$3"	[label=Div];
 	"test(0)$4" -> "test(0)$4"	[label=Div];
-	"test(0)$4" -> "[<_ast.Constant object at 0x12fb01640>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fb01640>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$4" -> "[<_ast.Constant object at 0x7fd50085d2b0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50085d2b0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$7" -> "mean(0)"	[label=Div];
 	"train(0)$7" -> "train(0)$6"	[label=Div];
 	"train(0)$7" -> "train(0)$7"	[label=Div];
 	"train(0)$7" -> "id_02(0)"	[label=Div];
-	"train(0)$7" -> "[<_ast.Constant object at 0x12fb01ac0>](0)"	[label=Div];
+	"train(0)$7" -> "[<_ast.Constant object at 0x7fd50085d700>](0)"	[label=Div];
 	"id_02(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb01ac0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085d700>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$8" -> "mean(0)"	[label=Div];
 	"train(0)$8" -> "train(0)$7"	[label=Div];
 	"train(0)$8" -> "id_02(0)"	[label=Div];
 	"train(0)$8" -> "train(0)$8"	[label=Div];
-	"train(0)$8" -> "[<_ast.Constant object at 0x12fb01f40>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fb01f40>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$8" -> "[<_ast.Constant object at 0x7fd50085db50>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50085db50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$9" -> "std(0)"	[label=Div];
 	"train(0)$9" -> "id_02(0)"	[label=Div];
 	"train(0)$9" -> "train(0)$8"	[label=Div];
 	"train(0)$9" -> "train(0)$9"	[label=Div];
-	"train(0)$9" -> "[<_ast.Constant object at 0x12fadc400>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadc400>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$9" -> "[<_ast.Constant object at 0x7fd50085dfd0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50085dfd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$10" -> "std(0)"	[label=Div];
 	"train(0)$10" -> "id_02(0)"	[label=Div];
 	"train(0)$10" -> "train(0)$9"	[label=Div];
 	"train(0)$10" -> "train(0)$10"	[label=Div];
-	"train(0)$10" -> "[<_ast.Constant object at 0x12fadc8b0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadc8b0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$10" -> "[<_ast.Constant object at 0x7fd50084c490>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084c490>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$5" -> "mean(0)"	[label=Div];
 	"test(0)$5" -> "test(0)$4"	[label=Div];
 	"test(0)$5" -> "id_02(0)"	[label=Div];
 	"test(0)$5" -> "test(0)$5"	[label=Div];
-	"test(0)$5" -> "[<_ast.Constant object at 0x12fadcd30>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fadcd30>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$5" -> "[<_ast.Constant object at 0x7fd50084c910>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084c910>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$6" -> "mean(0)"	[label=Div];
 	"test(0)$6" -> "id_02(0)"	[label=Div];
 	"test(0)$6" -> "test(0)$5"	[label=Div];
 	"test(0)$6" -> "test(0)$6"	[label=Div];
-	"test(0)$6" -> "[<_ast.Constant object at 0x12fae51c0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fae51c0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$6" -> "[<_ast.Constant object at 0x7fd50084cd90>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084cd90>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$7" -> "std(0)"	[label=Div];
 	"test(0)$7" -> "id_02(0)"	[label=Div];
 	"test(0)$7" -> "test(0)$6"	[label=Div];
 	"test(0)$7" -> "test(0)$7"	[label=Div];
-	"test(0)$7" -> "[<_ast.Constant object at 0x12fae5670>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fae5670>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$7" -> "[<_ast.Constant object at 0x7fd50086e250>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50086e250>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$8" -> "std(0)"	[label=Div];
 	"test(0)$8" -> "id_02(0)"	[label=Div];
 	"test(0)$8" -> "test(0)$7"	[label=Div];
 	"test(0)$8" -> "test(0)$8"	[label=Div];
-	"test(0)$8" -> "[<_ast.Constant object at 0x12fae5b50>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12fae5b50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$8" -> "[<_ast.Constant object at 0x7fd50086e790>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50086e790>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$11" -> "mean(0)"	[label=Div];
 	"train(0)$11" -> "train(0)$10"	[label=Div];
 	"train(0)$11" -> "train(0)$11"	[label=Div];
 	"train(0)$11" -> "D15(0)"	[label=Div];
-	"train(0)$11" -> "[<_ast.Constant object at 0x12fae5fa0>](0)"	[label=Div];
+	"train(0)$11" -> "[<_ast.Constant object at 0x7fd50086ebe0>](0)"	[label=Div];
 	"D15(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fae5fa0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50086ebe0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$12" -> "mean(0)"	[label=Div];
 	"train(0)$12" -> "train(0)$11"	[label=Div];
 	"train(0)$12" -> "D15(0)"	[label=Div];
 	"train(0)$12" -> "train(0)$12"	[label=Div];
-	"train(0)$12" -> "[<_ast.Constant object at 0x12f8ed430>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8ed430>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$12" -> "[<_ast.Constant object at 0x7fd50086e4f0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50086e4f0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$13" -> "std(0)"	[label=Div];
 	"train(0)$13" -> "D15(0)"	[label=Div];
 	"train(0)$13" -> "train(0)$12"	[label=Div];
 	"train(0)$13" -> "train(0)$13"	[label=Div];
-	"train(0)$13" -> "[<_ast.Constant object at 0x12f8ed880>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8ed880>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$13" -> "[<_ast.Constant object at 0x7fd50083a490>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50083a490>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$14" -> "std(0)"	[label=Div];
 	"train(0)$14" -> "D15(0)"	[label=Div];
 	"train(0)$14" -> "train(0)$13"	[label=Div];
 	"train(0)$14" -> "train(0)$14"	[label=Div];
-	"train(0)$14" -> "[<_ast.Constant object at 0x12f8edd30>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8edd30>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$14" -> "[<_ast.Constant object at 0x7fd50083a8e0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50083a8e0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$9" -> "mean(0)"	[label=Div];
 	"test(0)$9" -> "test(0)$8"	[label=Div];
 	"test(0)$9" -> "D15(0)"	[label=Div];
 	"test(0)$9" -> "test(0)$9"	[label=Div];
-	"test(0)$9" -> "[<_ast.Constant object at 0x12f8fc220>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8fc220>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$9" -> "[<_ast.Constant object at 0x7fd50083ad90>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50083ad90>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$10" -> "mean(0)"	[label=Div];
 	"test(0)$10" -> "D15(0)"	[label=Div];
 	"test(0)$10" -> "test(0)$9"	[label=Div];
 	"test(0)$10" -> "test(0)$10"	[label=Div];
-	"test(0)$10" -> "[<_ast.Constant object at 0x12f8fc670>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8fc670>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$10" -> "[<_ast.Constant object at 0x7fd500867250>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500867250>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$11" -> "std(0)"	[label=Div];
 	"test(0)$11" -> "D15(0)"	[label=Div];
 	"test(0)$11" -> "test(0)$10"	[label=Div];
 	"test(0)$11" -> "test(0)$11"	[label=Div];
-	"test(0)$11" -> "[<_ast.Constant object at 0x12f8fcb50>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8fcb50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$11" -> "[<_ast.Constant object at 0x7fd5008676d0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd5008676d0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$12" -> "std(0)"	[label=Div];
 	"test(0)$12" -> "D15(0)"	[label=Div];
 	"test(0)$12" -> "test(0)$11"	[label=Div];
 	"test(0)$12" -> "test(0)$12"	[label=Div];
-	"test(0)$12" -> "[<_ast.Constant object at 0x12f8fcfd0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f8fcfd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$12" -> "[<_ast.Constant object at 0x7fd500867b50>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500867b50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$15" -> "mean(0)"	[label=Div];
 	"train(0)$15" -> "D15(0)"	[label=Div];
 	"train(0)$15" -> "train(0)$14"	[label=Div];
 	"train(0)$15" -> "train(0)$15"	[label=Div];
-	"train(0)$15" -> "[<_ast.Constant object at 0x12f90d430>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f90d430>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$15" -> "[<_ast.Constant object at 0x7fd500867fd0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500867fd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$16" -> "mean(0)"	[label=Div];
 	"train(0)$16" -> "D15(0)"	[label=Div];
 	"train(0)$16" -> "train(0)$15"	[label=Div];
 	"train(0)$16" -> "train(0)$16"	[label=Div];
-	"train(0)$16" -> "[<_ast.Constant object at 0x12f90d8e0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f90d8e0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$16" -> "[<_ast.Constant object at 0x7fd500850490>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500850490>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$17" -> "std(0)"	[label=Div];
 	"train(0)$17" -> "D15(0)"	[label=Div];
 	"train(0)$17" -> "train(0)$16"	[label=Div];
 	"train(0)$17" -> "train(0)$17"	[label=Div];
-	"train(0)$17" -> "[<_ast.Constant object at 0x12f90dd90>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f90dd90>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$17" -> "[<_ast.Constant object at 0x7fd500850910>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500850910>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$18" -> "std(0)"	[label=Div];
 	"train(0)$18" -> "D15(0)"	[label=Div];
 	"train(0)$18" -> "train(0)$17"	[label=Div];
 	"train(0)$18" -> "train(0)$18"	[label=Div];
-	"train(0)$18" -> "[<_ast.Constant object at 0x12f9151c0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f9151c0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"train(0)$18" -> "[<_ast.Constant object at 0x7fd500850d90>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd500850d90>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$13" -> "mean(0)"	[label=Div];
 	"test(0)$13" -> "D15(0)"	[label=Div];
 	"test(0)$13" -> "test(0)$12"	[label=Div];
 	"test(0)$13" -> "test(0)$13"	[label=Div];
-	"test(0)$13" -> "[<_ast.Constant object at 0x12f915670>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f915670>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$13" -> "[<_ast.Constant object at 0x7fd50084b250>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084b250>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$14" -> "mean(0)"	[label=Div];
 	"test(0)$14" -> "D15(0)"	[label=Div];
 	"test(0)$14" -> "test(0)$13"	[label=Div];
 	"test(0)$14" -> "test(0)$14"	[label=Div];
-	"test(0)$14" -> "[<_ast.Constant object at 0x12f915af0>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f915af0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$14" -> "[<_ast.Constant object at 0x7fd50084b6d0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084b6d0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$15" -> "std(0)"	[label=Div];
 	"test(0)$15" -> "D15(0)"	[label=Div];
 	"test(0)$15" -> "test(0)$14"	[label=Div];
 	"test(0)$15" -> "test(0)$15"	[label=Div];
-	"test(0)$15" -> "[<_ast.Constant object at 0x12f915c70>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f915c70>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$15" -> "[<_ast.Constant object at 0x7fd50084bb50>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084bb50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$16" -> "std(0)"	[label=Div];
 	"test(0)$16" -> "D15(0)"	[label=Div];
 	"test(0)$16" -> "test(0)$15"	[label=Div];
 	"test(0)$16" -> "test(0)$16"	[label=Div];
-	"test(0)$16" -> "[<_ast.Constant object at 0x12f900400>](0)"	[label=Div];
-	"[<_ast.Constant object at 0x12f900400>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$16" -> "[<_ast.Constant object at 0x7fd50084bfd0>](0)"	[label=Div];
+	"[<_ast.Constant object at 0x7fd50084bfd0>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"train(0)$19" -> "P_emaildomain(0)"	[label=split];
 	"train(0)$19" -> "train(0)$18"	[label=split];
 	"train(0)$19" -> ".(0)"	[label=split];
@@ -1308,29 +1278,31 @@ ast.Constant object at 0x12fafd760>](0)" -> "eda-and-models.ipynb"	[label=appear
 	"cols_to_drop(0)$1" -> "cols_to_drop(0)$0"	[label=remove];
 	"cols_to_drop(0)$1" -> "isFraud(0)"	[label=remove];
 	"isFraud(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
-	"len[0]" -> "cols_to_drop(0)$1"	[label=len];
+	"len[607/0]" -> "cols_to_drop(0)$1"	[label=len];
 	"train(0)$21" -> "1(0)"	[label=drop];
 	"train(0)$21" -> "train(0)$20"	[label=drop];
 	"train(0)$21" -> "cols_to_drop(0)$1"	[label=drop];
 	"test(0)$19" -> "1(0)"	[label=drop];
 	"test(0)$19" -> "test(0)$18"	[label=drop];
 	"test(0)$19" -> "cols_to_drop(0)$1"	[label=drop];
-	"[<_ast.Constant object at 0x12f908430>, <_ast.Constant object at 0x12f908490>, <_ast.Constant object at 0x12f908460>, <_ast.Constant \
-object at 0x12f9084c0>, <_ast.Constant object at 0x12f9084f0>, <_ast.Constant object at 0x12f908520>, <_ast.Constant object at 0x12f908550>, <_\
-ast.Constant object at 0x12f908580>, <_ast.Constant object at 0x12f9085b0>, <_ast.Constant object at 0x12f9085e0>, <_ast.Constant \
-object at 0x12f908610>, <_ast.Constant object at 0x12f908640>, <_ast.Constant object at 0x12f908670>, <_ast.Constant object at 0x12f9086a0>, <_\
-ast.Constant object at 0x12f9086d0>, <_ast.Constant object at 0x12f908700>, <_ast.Constant object at 0x12f908340>, <_ast.Constant \
-object at 0x12f908730>, <_ast.Constant object at 0x12f908760>, <_ast.Constant object at 0x12f908790>, <_ast.Constant object at 0x12f908040>, <_\
-ast.Constant object at 0x12f9087c0>, <_ast.Constant object at 0x12f9087f0>, <_ast.Constant object at 0x12f908820>, <_ast.Constant \
-object at 0x12f908880>, <_ast.Constant object at 0x12f9088e0>, <_ast.Constant object at 0x12f908910>, <_ast.Constant object at 0x12f908940>, <_\
-ast.Constant object at 0x12f908970>, <_ast.Constant object at 0x12f9089a0>, <_ast.Constant object at 0x12f908a00>, <_ast.Constant \
-object at 0x12f908a30>, <_ast.Constant object at 0x12f908a60>, <_ast.Constant object at 0x12f908a90>, <_ast.Constant object at 0x12f908ac0>, <_\
-ast.Constant object at 0x12f908af0>, <_ast.Constant object at 0x12f908b20>, <_ast.Constant object at 0x12f908b50>, <_ast.Constant \
-object at 0x12f908b80>, <_ast.Constant object at 0x12f908bb0>, <_ast.Constant object at 0x12f9088b0>, <_ast.Constant object at 0x12f908be0>, <_\
-ast.Constant object at 0x12f908c10>, <_ast.Constant object at 0x12f908c40>, <_ast.Constant object at 0x12f908c70>, <_ast.Constant \
-object at 0x12f908ca0>, <_ast.Constant object at 0x12f908d00>, <_ast.Constant object at 0x12f908d30>, <_ast.Constant object at 0x12f908d60>, <_\
-ast.Constant object at 0x12f908d90>, <_ast.Constant object at 0x12f908dc0>, <_ast.Constant object at 0x12f908df0>, <_ast.Constant \
-object at 0x12f908e20>, <_ast.Constant object at 0x12f908e80>, <_ast.Constant object at 0x12f908e50>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cdf70>, <_ast.Constant object at 0x7fd4c04cdfa0>, <_ast.Constant object at 0x7fd4c04cdfd0>, <_\
+ast.Constant object at 0x7fd4c04f4040>, <_ast.Constant object at 0x7fd4c04f4070>, <_ast.Constant object at 0x7fd4c04f40a0>, <_ast.Constant \
+object at 0x7fd4c04f40d0>, <_ast.Constant object at 0x7fd4c04f4100>, <_ast.Constant object at 0x7fd4c04f4130>, <_ast.Constant object \
+at 0x7fd4c04f4160>, <_ast.Constant object at 0x7fd4c04f41c0>, <_ast.Constant object at 0x7fd4c04f4190>, <_ast.Constant object at \
+0x7fd4c04f41f0>, <_ast.Constant object at 0x7fd4c04f4220>, <_ast.Constant object at 0x7fd4c04f4250>, <_ast.Constant object at 0x7fd4c04f4280>, <_\
+ast.Constant object at 0x7fd4c04f42b0>, <_ast.Constant object at 0x7fd4c04f42e0>, <_ast.Constant object at 0x7fd4c04f4310>, <_ast.Constant \
+object at 0x7fd4c04f4340>, <_ast.Constant object at 0x7fd4c04f4370>, <_ast.Constant object at 0x7fd4c04f43a0>, <_ast.Constant object \
+at 0x7fd4c04f43d0>, <_ast.Constant object at 0x7fd4c04f4400>, <_ast.Constant object at 0x7fd4c04f4430>, <_ast.Constant object at \
+0x7fd4c04f4460>, <_ast.Constant object at 0x7fd4c04f4490>, <_ast.Constant object at 0x7fd4c04f44c0>, <_ast.Constant object at 0x7fd4c04f4520>, <_\
+ast.Constant object at 0x7fd4c04f4550>, <_ast.Constant object at 0x7fd4c04f4580>, <_ast.Constant object at 0x7fd4c04f45b0>, <_ast.Constant \
+object at 0x7fd4c04f45e0>, <_ast.Constant object at 0x7fd4c04f4610>, <_ast.Constant object at 0x7fd4c04f4640>, <_ast.Constant object \
+at 0x7fd4c04f4670>, <_ast.Constant object at 0x7fd4c04f46a0>, <_ast.Constant object at 0x7fd4c04f46d0>, <_ast.Constant object at \
+0x7fd4c04f4700>, <_ast.Constant object at 0x7fd4c04f4730>, <_ast.Constant object at 0x7fd4c04f4790>, <_ast.Constant object at 0x7fd4c04f4760>, <_\
+ast.Constant object at 0x7fd4c04f47c0>, <_ast.Constant object at 0x7fd4c04f47f0>, <_ast.Constant object at 0x7fd4c04f4850>, <_ast.Constant \
+object at 0x7fd4c04f4880>, <_ast.Constant object at 0x7fd4c04f48b0>, <_ast.Constant object at 0x7fd4c04f48e0>, <_ast.Constant object \
+at 0x7fd4c04f4910>, <_ast.Constant object at 0x7fd4c04f4940>, <_ast.Constant object at 0x7fd4c04f4970>, <_ast.Constant object at \
+0x7fd4c04f49a0>, <_ast.Constant object at 0x7fd4c04f49d0>, <_ast.Constant object at 0x7fd4c04f4a00>, <_ast.Constant object at 0x7fd4c04f4a30>](\
+0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"le(0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"le(0)$0" -> "col(0)"	[label=fit];
 	"le(0)$0" -> "train(0)$21"	[label=fit];
@@ -1355,18 +1327,18 @@ object at 0x12f908e20>, <_ast.Constant object at 0x12f908e80>, <_ast.Constant ob
 	"X(0)$0" -> "1(0)"	[label=drop];
 	"X(0)$0" -> "TransactionDT(0)"	[label=drop];
 	"X(0)$0" -> "train(0)$22"	[label=drop];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12f8fff10>, <_ast.Constant object at 0x12f8fff40>, <_ast.Constant object at 0x12f8fff70>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8fff10>, <_ast.Constant object at 0x12f8fff40>, <_ast.Constant object at 0x12f8fff70>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c1af0>, <_ast.Constant object at 0x7fd4c04c1b20>, <_ast.Constant object at 0x7fd4c04c1b80>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04c1af0>, <_ast.Constant object at 0x7fd4c04c1b20>, <_ast.Constant object at 0x7fd4c04c1b80>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "TransactionDT(0)"	[label=assignedFrom];
 	"y(0)$0" -> "isFraud(0)"	[label=assignedFrom];
 	"y(0)$0" -> "train(0)$22"	[label=assignedFrom];
 	"X_test(0)$0" -> "1(0)"	[label=drop];
 	"X_test(0)$0" -> "test(0)$20"	[label=drop];
-	"X_test(0)$0" -> "[<_ast.Constant object at 0x12fc4c340>, <_ast.Constant object at 0x12fc4c370>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc4c340>, <_ast.Constant object at 0x12fc4c370>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c1f10>, <_ast.Constant object at 0x7fd4c04c1f40>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04c1f10>, <_ast.Constant object at 0x7fd4c04c1f40>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"test(0)$21" -> "test(0)$20"	[label=assignedFrom];
-	"test(0)$21" -> "[<_ast.Constant object at 0x12fc4c640>, <_ast.Constant object at 0x12fc4c670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4c640>, <_ast.Constant object at 0x12fc4c670>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
+	"test(0)$21" -> "[<_ast.Constant object at 0x7fd4c04c31f0>, <_ast.Constant object at 0x7fd4c04c3220>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04c31f0>, <_ast.Constant object at 0x7fd4c04c3220>](0)" -> "eda-and-models.ipynb"	[label=appearsIn];
 	"df(11)" -> "clean_inf_nan[0]"	[label=_argToVar];
 	"X(0)$1" -> "X(0)$0"	[label=clean_inf_nan];
 	"X_test(0)$1" -> "X_test(0)$0"	[label=clean_inf_nan];

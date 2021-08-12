@@ -61,8 +61,6 @@ digraph "" {
 	"nop(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"tqdm(0)$0" -> "nop(0)"	[label=assignedFrom];
 	"seed(3)" -> "seed_everything[0]"	[label=_argToVar];
-	"seed_everything[0]" -> "1234(0)"	[label=seed_everything];
-	"1234(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"random(3)$0" -> "seed(3)"	[label=seed];
 	"random(3)$0" -> "random(3)"	[label=seed];
 	"os(3)$0" -> "seed(3)"	[label=str];
@@ -265,7 +263,7 @@ digraph "" {
 	"aux_result(13)$0" -> "hidden(13)$0"	[label=linear_aux_out];
 	"out(13)$0" -> "torch(13)"	[label=cat];
 	"out(13)$0" -> "1(13)"	[label=cat];
-	"out(13)$0" -> "[<_ast.Name object at 0x12f9a47c0>, <_ast.Name object at 0x12f9a4550>](13)"	[label=cat];
+	"out(13)$0" -> "[<_ast.Name object at 0x7fd500841310>, <_ast.Name object at 0x7fd5008413d0>](13)"	[label=cat];
 	"data(14)" -> "preprocess[0]"	[label=_argToVar];
 	"punct(14)$0" -> "/-'?!.,#$\%'()*+-/:;<=>@[\]^_`{|}~`(14)"	[label=Add];
 	"punct(14)$0" -> "\"\"“”’(14)"	[label=Add];
@@ -291,18 +289,18 @@ digraph "" {
 	"x_train(0)$0" -> "comment_text(0)"	[label=preprocess];
 	"comment_text(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"y_aux_train(0)$0" -> "train(0)$0"	[label=assignedFrom];
-	"y_aux_train(0)$0" -> "[<_ast.Constant object at 0x12fc24790>, <_ast.Constant object at 0x12fc24640>, <_ast.Constant object at 0x12fc24700>, <_ast.Constant \
-object at 0x12fc24730>, <_ast.Constant object at 0x12fc24760>, <_ast.Constant object at 0x12fc246d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc24790>, <_ast.Constant object at 0x12fc24640>, <_ast.Constant object at 0x12fc24700>, <_ast.Constant \
-object at 0x12fc24730>, <_ast.Constant object at 0x12fc24760>, <_ast.Constant object at 0x12fc246d0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"y_aux_train(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ab3a0>, <_ast.Constant object at 0x7fd4c04ab3d0>, <_ast.Constant object at 0x7fd4c04ab400>, <_\
+ast.Constant object at 0x7fd4c04ab430>, <_ast.Constant object at 0x7fd4c04ab460>, <_ast.Constant object at 0x7fd4c04ab490>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ab3a0>, <_ast.Constant object at 0x7fd4c04ab3d0>, <_ast.Constant object at 0x7fd4c04ab400>, <_\
+ast.Constant object at 0x7fd4c04ab430>, <_ast.Constant object at 0x7fd4c04ab460>, <_ast.Constant object at 0x7fd4c04ab490>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"x_test(0)$0" -> "test(0)$0"	[label=preprocess];
 	"x_test(0)$0" -> "comment_text(0)"	[label=preprocess];
-	"[<_ast.Constant object at 0x12fc24b50>, <_ast.Constant object at 0x12fc24e20>, <_ast.Constant object at 0x12fc24d00>, <_ast.Constant \
-object at 0x12fc24b80>, <_ast.Constant object at 0x12fc24fd0>, <_ast.Constant object at 0x12fc24be0>, <_ast.Constant object at 0x12fc24c70>, <_\
-ast.Constant object at 0x12fc24dc0>, <_ast.Constant object at 0x12fc24f70>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x12fc24b50>, <_ast.Constant object at 0x12fc24e20>, <_ast.Constant object at 0x12fc24d00>, <_ast.Constant \
-object at 0x12fc24b80>, <_ast.Constant object at 0x12fc24fd0>, <_ast.Constant object at 0x12fc24be0>, <_ast.Constant object at 0x12fc24c70>, <_\
-ast.Constant object at 0x12fc24dc0>, <_ast.Constant object at 0x12fc24f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ab730>, <_ast.Constant object at 0x7fd4c04ab760>, <_ast.Constant object at 0x7fd4c04ab790>, <_\
+ast.Constant object at 0x7fd4c04ab7c0>, <_ast.Constant object at 0x7fd4c04ab7f0>, <_ast.Constant object at 0x7fd4c04ab820>, <_ast.Constant \
+object at 0x7fd4c04ab850>, <_ast.Constant object at 0x7fd4c04ab880>, <_ast.Constant object at 0x7fd4c04ab8b0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"identity_columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ab730>, <_ast.Constant object at 0x7fd4c04ab760>, <_ast.Constant object at 0x7fd4c04ab790>, <_\
+ast.Constant object at 0x7fd4c04ab7c0>, <_ast.Constant object at 0x7fd4c04ab7f0>, <_ast.Constant object at 0x7fd4c04ab820>, <_ast.Constant \
+object at 0x7fd4c04ab850>, <_ast.Constant object at 0x7fd4c04ab880>, <_ast.Constant object at 0x7fd4c04ab8b0>](0)"	[label=assignedFrom];
 	"weights(0)$0" -> "np(0)"	[label=Div];
 	"weights(0)$0" -> "4(0)"	[label=Div];
 	"weights(0)$0" -> "x_train(0)$0"	[label=Div];
@@ -346,8 +344,8 @@ ast.Constant object at 0x12fc24dc0>, <_ast.Constant object at 0x12fc24f70>](0)"	
 	"loss_weight(0)$0" -> "weights(0)$3"	[label=Div];
 	"loss_weight(0)$0" -> "1.0(0)"	[label=Div];
 	"y_train(0)$0" -> "np(0)"	[label=assignedFrom];
-	"y_train(0)$0" -> "[<_ast.Call object at 0x12f9a69d0>, <_ast.Name object at 0x12f9a6c10>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12f9a69d0>, <_ast.Name object at 0x12f9a6c10>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"y_train(0)$0" -> "[<_ast.Call object at 0x7fd4c04ac6a0>, <_ast.Name object at 0x7fd4c04ac8e0>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd4c04ac6a0>, <_ast.Name object at 0x7fd4c04ac8e0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"None(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"max_features(0)$0" -> "None(0)"	[label=assignedFrom];
 	"tokenizer(0)$0" -> "text(0)"	[label=Tokenizer];
@@ -375,33 +373,28 @@ ast.Constant object at 0x12fc24dc0>, <_ast.Constant object at 0x12fc24f70>](0)"	
 	"unknown_words_crawl(0)$0" -> "CRAWL_EMBEDDING_PATH(0)$0"	[label=build_matrix];
 	"unknown_words_crawl(0)$0" -> "tokenizer(0)$1"	[label=build_matrix];
 	"n unknown words (crawl): (0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"print[0]" -> "n unknown words (crawl): (0)"	[label=print];
-	"print[0]" -> "n unknown words (glove): (0)"	[label=print];
-	"print[0]" -> "Model (0)"	[label=print];
-	"n unknown words (glove): (0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"Model (0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"print[1]" -> "len(0)"	[label=print];
-	"print[1]" -> "model_idx(0)"	[label=print];
-	"model_idx(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"model_idx(0)" -> "NUM_MODELS(0)$0"	[label=iteratorOf];
-	"model_idx(0)" -> "range(0)"	[label=iteratorOf];
-	"print[2]" -> "unknown_words_crawl(0)$0"	[label=print];
-	"print[2]" -> "unknown_words_glove(0)$0"	[label=print];
-	"unknown_words_glove(0)$0" -> "GLOVE_EMBEDDING_PATH(0)$0"	[label=build_matrix];
-	"unknown_words_glove(0)$0" -> "tokenizer(0)$1"	[label=build_matrix];
+	"print[185/0]" -> "len(0)"	[label=print];
+	"print[185/0]" -> "unknown_words_crawl(0)$0"	[label=print];
+	"print[185/0]" -> "n unknown words (crawl): (0)"	[label=print];
 	"glove_matrix(0)$0" -> "GLOVE_EMBEDDING_PATH(0)$0"	[label=build_matrix];
 	"glove_matrix(0)$0" -> "tokenizer(0)$1"	[label=build_matrix];
+	"unknown_words_glove(0)$0" -> "GLOVE_EMBEDDING_PATH(0)$0"	[label=build_matrix];
+	"unknown_words_glove(0)$0" -> "tokenizer(0)$1"	[label=build_matrix];
+	"n unknown words (glove): (0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"print[187/0]" -> "len(0)"	[label=print];
+	"print[187/0]" -> "unknown_words_glove(0)$0"	[label=print];
+	"print[187/0]" -> "n unknown words (glove): (0)"	[label=print];
 	"embedding_matrix(0)$0" -> "np(0)"	[label=concatenate];
 	"embedding_matrix(0)$0" -> "1(0)"	[label=concatenate];
-	"embedding_matrix(0)$0" -> "[<_ast.Name object at 0x12faadfd0>, <_ast.Name object at 0x12fad4040>](0)"	[label=concatenate];
-	"[<_ast.Name object at 0x12faadfd0>, <_ast.Name object at 0x12fad4040>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"embedding_matrix(0)$0" -> "[<_ast.Name object at 0x7fd500860ca0>, <_ast.Name object at 0x7fd500860cd0>](0)"	[label=concatenate];
+	"[<_ast.Name object at 0x7fd500860ca0>, <_ast.Name object at 0x7fd500860cd0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
 	"x_train_torch(0)$0" -> "torch(0)"	[label=tensor];
 	"x_train_torch(0)$0" -> "x_train(0)$2"	[label=tensor];
 	"y_train_torch(0)$0" -> "np(0)"	[label=tensor];
 	"y_train_torch(0)$0" -> "torch(0)"	[label=tensor];
-	"y_train_torch(0)$0" -> "[<_ast.Name object at 0x12fad4790>, <_ast.Name object at 0x12fad47c0>](0)"	[label=tensor];
-	"[<_ast.Name object at 0x12fad4790>, <_ast.Name object at 0x12fad47c0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"y_train_torch(0)$0" -> "[<_ast.Name object at 0x7fd5008504c0>, <_ast.Name object at 0x7fd5008504f0>](0)"	[label=tensor];
+	"[<_ast.Name object at 0x7fd5008504c0>, <_ast.Name object at 0x7fd5008504f0>](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"x_test_torch(0)$0" -> "torch(0)"	[label=tensor];
 	"x_test_torch(0)$0" -> "x_test(0)$2"	[label=tensor];
 	"512(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
@@ -442,7 +435,15 @@ ast.Constant object at 0x12fc24dc0>, <_ast.Constant object at 0x12fc24f70>](0)"	
 	"[](0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
 	"all_test_preds(0)$0" -> "[](0)"	[label=assignedFrom];
 	"range(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
-	"seed_everything[1]" -> "model_idx(0)"	[label=seed_everything];
+	"model_idx(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"model_idx(0)" -> "NUM_MODELS(0)$0"	[label=iteratorOf];
+	"model_idx(0)" -> "range(0)"	[label=iteratorOf];
+	"Model (0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"print[215/4]" -> "model_idx(0)"	[label=print];
+	"print[215/4]" -> "Model (0)"	[label=print];
+	"1234(0)" -> "simple-lstm-with-identity-parameters-fastai.ipynb"	[label=appearsIn];
+	"seed_everything[216/4]" -> "model_idx(0)"	[label=seed_everything];
+	"seed_everything[216/4]" -> "1234(0)"	[label=seed_everything];
 	"model(0)$0" -> "y_aux_train(0)$0"	[label=NeuralNet];
 	"model(0)$0" -> "1(0)"	[label=NeuralNet];
 	"model(0)$0" -> "embedding_matrix(0)$0"	[label=NeuralNet];

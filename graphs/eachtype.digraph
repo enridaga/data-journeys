@@ -171,8 +171,8 @@ really...anything?\");
     (4)"	[label=assignedFrom];
 	"df(5)" -> "reduce_mem_usage[0]"	[label=_argToVar];
 	"verbose(5)" -> "reduce_mem_usage[1]"	[label=_argToVar];
-	"numerics(5)$0" -> "[<_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f957d30>, <_ast.Constant object at 0x12f957760>, <_ast.Constant \
-object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant object at 0x12f957670>](5)"	[label=assignedFrom];
+	"numerics(5)$0" -> "[<_ast.Constant object at 0x7fd500833970>, <_ast.Constant object at 0x7fd5008339a0>, <_ast.Constant object at 0x7fd5008334f0>, <_\
+ast.Constant object at 0x7fd5008337f0>, <_ast.Constant object at 0x7fd500833220>, <_ast.Constant object at 0x7fd500833640>](5)"	[label=assignedFrom];
 	"start_mem(5)$0" -> "df(5)"	[label=Div];
 	"start_mem(5)$0" -> "1024(5)"	[label=Div];
 	"start_mem(5)$0" -> "2(5)"	[label=Div];
@@ -207,150 +207,10 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"end_mem(5)$0" -> "1024(5)"	[label=Div];
 	"end_mem(5)$0" -> "2(5)"	[label=Div];
 	"end_mem(5)$0" -> "df(5)$6"	[label=Div];
-	"print[0]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(5)"	[label=print];
-	"print[0]" -> "Fold (9)"	[label=print];
-	"print[0]" -> "(9)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(9)"	[label=print];
-	"print[0]" -> "Fold (10)"	[label=print];
-	"print[0]" -> "(10)"	[label=print];
-	"print[0]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(10)"	[label=print];
-	"print[0]" -> "Train dataset shape is -> rows: {} cols:{}(0)"	[label=print];
-	"print[0]" -> "Test dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
-	"print[0]" -> "Sub dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
-	"print[0]" -> "Structures dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
-	"print[0]" -> "Scalar_coupling_contributions dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
-	"print[0]" -> "atomic_radius(0)$1"	[label=print];
-	"print[0]" -> "Calculating bonds(0)"	[label=print];
-	"print[0]" -> "Counting and condensing bonds(0)"	[label=print];
-	"print[0]" -> "error: (17)"	[label=print];
-	"print[0]" -> "error: (18)"	[label=print];
-	"print[0]" -> "X size(0)"	[label=print];
-	"print[0]" -> "X_test size(0)"	[label=print];
-	"print[0]" -> "dtest size(0)"	[label=print];
-	"print[0]" -> "y_fc size(0)"	[label=print];
-	"print[0]" -> "Training of type (0)"	[label=print];
-	"Train dataset shape is -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Test dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Sub dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Structures dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Scalar_coupling_contributions dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"atomic_radius(0)$1" -> "atomic_radius(0)$1"	[label=assignedFrom];
-	"atomic_radius(0)$1" -> "fudge_factor(0)$0"	[label=assignedFrom];
-	"atomic_radius(0)$1" -> "k(0)"	[label=assignedFrom];
-	"atomic_radius(0)$1" -> "v(0)"	[label=assignedFrom];
-	"Calculating bonds(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Counting and condensing bonds(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"X size(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"X_test size(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"dtest size(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"y_fc size(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"Training of type (0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"print[1]" -> "end_mem(5)$0"	[label=print];
-	"print[1]" -> "np(9)"	[label=print];
-	"print[1]" -> "fold_n(9)"	[label=print];
-	"print[1]" -> "np(10)"	[label=print];
-	"print[1]" -> "fold_n(10)"	[label=print];
-	"print[1]" -> "train(0)$0"	[label=print];
-	"print[1]" -> "test(0)$0"	[label=print];
-	"print[1]" -> "sub(0)$0"	[label=print];
-	"print[1]" -> "structures(0)$0"	[label=print];
-	"print[1]" -> "scalar_coupling_contributions(0)$0"	[label=print];
-	"print[1]" -> "str(17)"	[label=print];
-	"print[1]" -> "str(18)"	[label=print];
-	"print[1]" -> "test(0)$11"	[label=print];
-	"print[1]" -> "y_fc(0)$0"	[label=print];
-	"print[1]" -> "X(0)$0"	[label=print];
-	"print[1]" -> "X_test(0)$0"	[label=print];
-	"print[1]" -> "t(0)"	[label=print];
-	"fold_n(9)" -> "X(9)"	[label=iteratorOf];
-	"fold_n(9)" -> "folds(9)"	[label=iteratorOf];
-	"fold_n(9)" -> "enumerate(9)"	[label=iteratorOf];
-	"fold_n(10)" -> "X(10)"	[label=iteratorOf];
-	"fold_n(10)" -> "folds(10)"	[label=iteratorOf];
-	"fold_n(10)" -> "enumerate(10)"	[label=iteratorOf];
-	"train(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
-	"test(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
-	"sub(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"sub(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
-	"structures(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"structures(0)$0" -> "../input/structures.csv(0)"	[label=read_csv];
-	"scalar_coupling_contributions(0)$0" -> "pd(0)$0"	[label=read_csv];
-	"scalar_coupling_contributions(0)$0" -> "../input/scalar_coupling_contributions.csv(0)"	[label=read_csv];
-	"test(0)$11" -> "test(0)$10"	[label=encode_categoric_single];
-	"y_fc(0)$0" -> "train(0)$12"	[label=assignedFrom];
-	"y_fc(0)$0" -> "fc(0)"	[label=assignedFrom];
-	"X(0)$0" -> "1(0)"	[label=drop];
-	"X(0)$0" -> "train(0)$12"	[label=drop];
-	"X(0)$0" -> "[<_ast.Constant object at 0x12f8dd5b0>, <_ast.Constant object at 0x12f8dd8b0>](0)"	[label=drop];
-	"X_test(0)$0" -> "test(0)$11"	[label=copy];
-	"t(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"t(0)" -> "type(0)"	[label=iteratorOf];
-	"t(0)" -> "X(0)$1"	[label=iteratorOf];
-	"t(0)" -> "X(0)$3"	[label=iteratorOf];
-	"print[2]" -> "100(5)"	[label=print];
-	"print[2]" -> "1(9)"	[label=print];
-	"print[2]" -> ". (9)"	[label=print];
-	"print[2]" -> "scores(9)$2"	[label=print];
-	"print[2]" -> "1(10)"	[label=print];
-	"print[2]" -> ". (10)"	[label=print];
-	"print[2]" -> "scores(10)$1"	[label=print];
-	"print[2]" -> "0(0)"	[label=print];
-	"print[2]" -> "e(17)"	[label=print];
-	"print[2]" -> "e(18)"	[label=print];
-	"scores(9)$2" -> "eval_metric(9)"	[label=append];
-	"scores(9)$2" -> "metrics_dict(9)$0"	[label=append];
-	"scores(9)$2" -> "scoring_function(9)"	[label=append];
-	"scores(9)$2" -> "X_valid(9)$1"	[label=append];
-	"scores(9)$2" -> "y_valid(9)$1"	[label=append];
-	"scores(9)$2" -> "y_pred_valid(9)$3"	[label=append];
-	"scores(9)$2" -> "scores(9)$1"	[label=append];
-	"scores(9)$2" -> "type(9)"	[label=append];
-	"scores(10)$1" -> "1(10)"	[label=append];
-	"scores(10)$1" -> "eval_metric(10)"	[label=append];
-	"scores(10)$1" -> "metrics_dict(10)$0"	[label=append];
-	"scores(10)$1" -> "sklearn_scoring_function(10)"	[label=append];
-	"scores(10)$1" -> "scores(10)$0"	[label=append];
-	"scores(10)$1" -> "y_valid(10)$1"	[label=append];
-	"scores(10)$1" -> "y_pred_valid(10)$3"	[label=append];
-	"0(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"print[3]" -> "start_mem(5)$0"	[label=print];
-	"print[3]" -> "np(9)"	[label=print];
-	"print[3]" -> "np(10)"	[label=print];
-	"print[3]" -> "train(0)$0"	[label=print];
-	"print[3]" -> "test(0)$0"	[label=print];
-	"print[3]" -> "sub(0)$0"	[label=print];
-	"print[3]" -> "structures(0)$0"	[label=print];
-	"print[3]" -> "scalar_coupling_contributions(0)$0"	[label=print];
-	"print[3]" -> "eval_metric(9)"	[label=print];
-	"print[3]" -> " started at (9)"	[label=print];
-	"print[3]" -> "eval_metric(10)"	[label=print];
-	"print[3]" -> " started at (10)"	[label=print];
-	"eval_metric(9)" -> "train_model_regression[6]"	[label=_argToVar];
-	"eval_metric(10)" -> "train_model_classification[6]"	[label=_argToVar];
-	"print[4]" -> "end_mem(5)$0"	[label=print];
-	"print[4]" -> "scores(9)$2"	[label=print];
-	"print[4]" -> "scores(10)$1"	[label=print];
-	"print[4]" -> "time(9)"	[label=print];
-	"print[4]" -> ": (9)"	[label=print];
-	"print[4]" -> "time(10)"	[label=print];
-	"print[4]" -> ": (10)"	[label=print];
-	"print[4]" -> "1(0)"	[label=print];
-	"1(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"print[5]" -> "start_mem(5)$0"	[label=print];
-	"print[5]" -> "score(9)$0"	[label=print];
-	"print[5]" -> "score(10)$0"	[label=print];
-	"score(9)$0" -> "eval_metric(9)"	[label=assignedFrom];
-	"score(9)$0" -> "metrics_dict(9)$0"	[label=assignedFrom];
-	"score(9)$0" -> "sklearn_scoring_function(9)"	[label=assignedFrom];
-	"score(9)$0" -> "y_valid(9)$1"	[label=assignedFrom];
-	"score(9)$0" -> "y_pred_valid(9)$2"	[label=assignedFrom];
-	"score(10)$0" -> "eval_metric(10)"	[label=assignedFrom];
-	"score(10)$0" -> "metrics_dict(10)$0"	[label=assignedFrom];
-	"score(10)$0" -> "sklearn_scoring_function(10)"	[label=assignedFrom];
-	"score(10)$0" -> "y_valid(10)$1"	[label=assignedFrom];
-	"score(10)$0" -> "y_pred_valid(10)$2"	[label=assignedFrom];
+	"print[155/16]" -> "start_mem(5)$0"	[label=print];
+	"print[155/16]" -> "end_mem(5)$0"	[label=print];
+	"print[155/16]" -> "Mem. usage decreased to {:5.2f} Mb ({:.1f}\% reduction)(5)"	[label=print];
+	"print[155/16]" -> "100(5)"	[label=print];
 	"y_true(6)" -> "fast_auc[0]"	[label=_argToVar];
 	"y_prob(6)" -> "fast_auc[1]"	[label=_argToVar];
 	"y_true(6)$0" -> "y_true(6)$0"	[label=asarray];
@@ -389,6 +249,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"params(9)" -> "train_model_regression[3]"	[label=_argToVar];
 	"folds(9)" -> "train_model_regression[4]"	[label=_argToVar];
 	"model_type(9)" -> "train_model_regression[5]"	[label=_argToVar];
+	"eval_metric(9)" -> "train_model_regression[6]"	[label=_argToVar];
 	"columns(9)" -> "train_model_regression[7]"	[label=_argToVar];
 	"plot_feature_importance(9)" -> "train_model_regression[8]"	[label=_argToVar];
 	"model(9)" -> "train_model_regression[9]"	[label=_argToVar];
@@ -412,20 +273,28 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"metrics_dict(9)$0" -> "scoring_function(9)"	[label=assignedFrom];
 	"metrics_dict(9)$0" -> "group_mean_log_mae(9)"	[label=assignedFrom];
 	"metrics_dict(9)$0" -> "MSE(9)"	[label=assignedFrom];
-	"oof(9)$0" -> "np(9)"	[label=zeros];
 	"oof(9)$0" -> "X(9)"	[label=zeros];
+	"oof(9)$0" -> "np(9)"	[label=zeros];
 	"oof(9)$0" -> "len(9)"	[label=zeros];
-	"prediction(9)$0" -> "np(9)"	[label=zeros];
 	"prediction(9)$0" -> "X_test(9)$0"	[label=zeros];
+	"prediction(9)$0" -> "np(9)"	[label=zeros];
 	"prediction(9)$0" -> "len(9)"	[label=zeros];
 	"scores(9)$0" -> "[](9)"	[label=assignedFrom];
 	"feature_importance(9)$0" -> "pd(9)"	[label=DataFrame];
+	"fold_n(9)" -> "X(9)"	[label=iteratorOf];
+	"fold_n(9)" -> "folds(9)"	[label=iteratorOf];
+	"fold_n(9)" -> "enumerate(9)"	[label=iteratorOf];
 	"train_index(9)" -> "X(9)"	[label=iteratorOf];
 	"train_index(9)" -> "folds(9)"	[label=iteratorOf];
 	"train_index(9)" -> "enumerate(9)"	[label=iteratorOf];
 	"valid_index(9)" -> "X(9)"	[label=iteratorOf];
 	"valid_index(9)" -> "folds(9)"	[label=iteratorOf];
 	"valid_index(9)" -> "enumerate(9)"	[label=iteratorOf];
+	"print[240/8]" -> "fold_n(9)"	[label=print];
+	"print[240/8]" -> "Fold (9)"	[label=print];
+	"print[240/8]" -> "1(9)"	[label=print];
+	"print[240/8]" -> " started at (9)"	[label=print];
+	"print[240/8]" -> "time(9)"	[label=print];
 	"X_train(9)$0" -> "X(9)"	[label=assignedFrom];
 	"X_train(9)$0" -> "columns(9)$0"	[label=assignedFrom];
 	"X_train(9)$0" -> "train_index(9)"	[label=assignedFrom];
@@ -454,9 +323,9 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_valid(9)$1" -> "y(9)"	[label=assignedFrom];
 	"y_valid(9)$1" -> "train_index(9)"	[label=assignedFrom];
 	"y_valid(9)$1" -> "valid_index(9)"	[label=assignedFrom];
-	"model(9)$0" -> "1(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "params(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "n_estimators(9)"	[label=LGBMRegressor];
+	"model(9)$0" -> "1(9)"	[label=LGBMRegressor];
 	"model(9)$0" -> "lgb(9)"	[label=LGBMRegressor];
 	"model(9)$1" -> "X_train(9)$1"	[label=fit];
 	"model(9)$1" -> "y_train(9)$1"	[label=fit];
@@ -473,7 +342,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"valid_data(9)$0" -> "X_valid(9)$1"	[label=DMatrix];
 	"valid_data(9)$0" -> "y_valid(9)$1"	[label=DMatrix];
 	"valid_data(9)$0" -> "xgb(9)"	[label=DMatrix];
-	"watchlist(9)$0" -> "[<_ast.Tuple object at 0x12f8eb4c0>, <_ast.Tuple object at 0x12f8eb550>](9)"	[label=assignedFrom];
+	"watchlist(9)$0" -> "[<_ast.Tuple object at 0x7fd4c05ad1c0>, <_ast.Tuple object at 0x7fd4c05ad250>](9)"	[label=assignedFrom];
 	"model(9)$2" -> "params(9)"	[label=train];
 	"model(9)$2" -> "verbose(9)"	[label=train];
 	"model(9)$2" -> "train_data(9)$0"	[label=train];
@@ -496,15 +365,25 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_pred_valid(9)$2" -> "1(9)"	[label=reshape];
 	"y_pred_valid(9)$2" -> "X_valid(9)$1"	[label=reshape];
 	"y_pred_valid(9)$2" -> "model(9)$4"	[label=reshape];
-	"print[6]" -> ".4f(9)"	[label=print];
-	"print[6]" -> ".4f(10)"	[label=print];
-	"print[7]" -> ".(9)"	[label=print];
-	"print[7]" -> ".(10)"	[label=print];
-	"y_pred(9)$2" -> "1(9)"	[label=reshape];
+	"score(9)$0" -> "eval_metric(9)"	[label=assignedFrom];
+	"score(9)$0" -> "metrics_dict(9)$0"	[label=assignedFrom];
+	"score(9)$0" -> "sklearn_scoring_function(9)"	[label=assignedFrom];
+	"score(9)$0" -> "y_valid(9)$1"	[label=assignedFrom];
+	"score(9)$0" -> "y_pred_valid(9)$2"	[label=assignedFrom];
+	"print[272/12]" -> "eval_metric(9)"	[label=print];
+	"print[272/12]" -> "fold_n(9)"	[label=print];
+	"print[272/12]" -> "Fold (9)"	[label=print];
+	"print[272/12]" -> "score(9)$0"	[label=print];
+	"print[272/12]" -> ". (9)"	[label=print];
+	"print[272/12]" -> ": (9)"	[label=print];
+	"print[272/12]" -> ".4f(9)"	[label=print];
+	"print[272/12]" -> ".(9)"	[label=print];
+	"print[273/12]" -> "(9)"	[label=print];
 	"y_pred(9)$2" -> "X_test(9)$0"	[label=reshape];
+	"y_pred(9)$2" -> "1(9)"	[label=reshape];
 	"y_pred(9)$2" -> "model(9)$4"	[label=reshape];
-	"model(9)$5" -> "eval_metric(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "params(9)"	[label=CatBoostRegressor];
+	"model(9)$5" -> "eval_metric(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "metrics_dict(9)$0"	[label=CatBoostRegressor];
 	"model(9)$5" -> "catboost_metric_name(9)"	[label=CatBoostRegressor];
 	"model(9)$5" -> "20000(9)"	[label=CatBoostRegressor];
@@ -515,8 +394,8 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_pred_valid(9)$3" -> "model(9)$6"	[label=predict];
 	"y_pred(9)$3" -> "X_test(9)$0"	[label=predict];
 	"y_pred(9)$3" -> "model(9)$6"	[label=predict];
-	"oof(9)$1" -> "1(9)"	[label=reshape];
 	"oof(9)$1" -> "oof(9)$0"	[label=reshape];
+	"oof(9)$1" -> "1(9)"	[label=reshape];
 	"oof(9)$1" -> "y_pred_valid(9)$3"	[label=reshape];
 	"scores(9)$1" -> "eval_metric(9)"	[label=append];
 	"scores(9)$1" -> "metrics_dict(9)$0"	[label=append];
@@ -524,6 +403,14 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"scores(9)$1" -> "scores(9)$0"	[label=append];
 	"scores(9)$1" -> "y_valid(9)$1"	[label=append];
 	"scores(9)$1" -> "y_pred_valid(9)$3"	[label=append];
+	"scores(9)$2" -> "eval_metric(9)"	[label=append];
+	"scores(9)$2" -> "metrics_dict(9)$0"	[label=append];
+	"scores(9)$2" -> "scoring_function(9)"	[label=append];
+	"scores(9)$2" -> "X_valid(9)$1"	[label=append];
+	"scores(9)$2" -> "y_valid(9)$1"	[label=append];
+	"scores(9)$2" -> "y_pred_valid(9)$3"	[label=append];
+	"scores(9)$2" -> "scores(9)$1"	[label=append];
+	"scores(9)$2" -> "type(9)"	[label=append];
 	"prediction(9)$1" -> "prediction(9)$0"	[label=Add];
 	"prediction(9)$1" -> "y_pred(9)$3"	[label=Add];
 	"fold_importance(9)$0" -> "pd(9)"	[label=DataFrame];
@@ -535,10 +422,13 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"fold_importance(9)$3" -> "1(9)"	[label=Add];
 	"fold_importance(9)$3" -> "fold_importance(9)$2"	[label=Add];
 	"feature_importance(9)$1" -> "pd(9)"	[label=concat];
-	"feature_importance(9)$1" -> "[<_ast.Name object at 0x12f909eb0>, <_ast.Name object at 0x12f909ee0>](9)"	[label=concat];
+	"feature_importance(9)$1" -> "[<_ast.Name object at 0x7fd4c059cb80>, <_ast.Name object at 0x7fd4c059cbb0>](9)"	[label=concat];
 	"feature_importance(9)$1" -> "0(9)"	[label=concat];
 	"prediction(9)$2" -> "folds(9)"	[label=Div];
 	"prediction(9)$2" -> "prediction(9)$1"	[label=Div];
+	"print[303/4]" -> "np(9)"	[label=print];
+	"print[303/4]" -> "scores(9)$2"	[label=print];
+	"print[303/4]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(9)"	[label=print];
 	"result_dict(9)$0" -> "oof(9)$1"	[label=assignedFrom];
 	"result_dict(9)$0" -> "result_dict(9)"	[label=assignedFrom];
 	"result_dict(9)$1" -> "prediction(9)$2"	[label=assignedFrom];
@@ -548,7 +438,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"feature_importance(9)$2" -> "folds(9)"	[label=Div];
 	"feature_importance(9)$2" -> "feature_importance(9)$1"	[label=Div];
 	"cols(9)$0" -> "feature_importance(9)$2"	[label=assignedFrom];
-	"cols(9)$0" -> "[<_ast.Constant object at 0x12f88ec70>, <_ast.Constant object at 0x12f88eca0>](9)"	[label=assignedFrom];
+	"cols(9)$0" -> "[<_ast.Constant object at 0x7fd4c05d4970>, <_ast.Constant object at 0x7fd4c05d49a0>](9)"	[label=assignedFrom];
 	"cols(9)$0" -> "feature(9)"	[label=assignedFrom];
 	"cols(9)$0" -> "importance(9)"	[label=assignedFrom];
 	"cols(9)$0" -> "False(9)"	[label=assignedFrom];
@@ -567,6 +457,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"params(10)" -> "train_model_classification[3]"	[label=_argToVar];
 	"folds(10)" -> "train_model_classification[4]"	[label=_argToVar];
 	"model_type(10)" -> "train_model_classification[5]"	[label=_argToVar];
+	"eval_metric(10)" -> "train_model_classification[6]"	[label=_argToVar];
 	"columns(10)" -> "train_model_classification[7]"	[label=_argToVar];
 	"plot_feature_importance(10)" -> "train_model_classification[8]"	[label=_argToVar];
 	"model(10)" -> "train_model_classification[9]"	[label=_argToVar];
@@ -586,24 +477,32 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"metrics_dict(10)$0" -> "eval_auc(10)"	[label=assignedFrom];
 	"metrics_dict(10)$0" -> "AUC(10)"	[label=assignedFrom];
 	"metrics_dict(10)$0" -> "metrics(10)"	[label=assignedFrom];
-	"oof(10)$0" -> "np(10)"	[label=zeros];
 	"oof(10)$0" -> "X(10)"	[label=zeros];
 	"oof(10)$0" -> "y(10)"	[label=zeros];
+	"oof(10)$0" -> "np(10)"	[label=zeros];
 	"oof(10)$0" -> "len(10)"	[label=zeros];
 	"oof(10)$0" -> "set(10)"	[label=zeros];
-	"prediction(10)$0" -> "np(10)"	[label=zeros];
-	"prediction(10)$0" -> "1(10)"	[label=zeros];
 	"prediction(10)$0" -> "X_test(10)$0"	[label=zeros];
 	"prediction(10)$0" -> "oof(10)$0"	[label=zeros];
+	"prediction(10)$0" -> "np(10)"	[label=zeros];
 	"prediction(10)$0" -> "len(10)"	[label=zeros];
+	"prediction(10)$0" -> "1(10)"	[label=zeros];
 	"scores(10)$0" -> "[](10)"	[label=assignedFrom];
 	"feature_importance(10)$0" -> "pd(10)"	[label=DataFrame];
+	"fold_n(10)" -> "X(10)"	[label=iteratorOf];
+	"fold_n(10)" -> "folds(10)"	[label=iteratorOf];
+	"fold_n(10)" -> "enumerate(10)"	[label=iteratorOf];
 	"train_index(10)" -> "X(10)"	[label=iteratorOf];
 	"train_index(10)" -> "folds(10)"	[label=iteratorOf];
 	"train_index(10)" -> "enumerate(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "X(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "folds(10)"	[label=iteratorOf];
 	"valid_index(10)" -> "enumerate(10)"	[label=iteratorOf];
+	"print[367/8]" -> "1(10)"	[label=print];
+	"print[367/8]" -> "fold_n(10)"	[label=print];
+	"print[367/8]" -> "Fold (10)"	[label=print];
+	"print[367/8]" -> " started at (10)"	[label=print];
+	"print[367/8]" -> "time(10)"	[label=print];
 	"X_train(10)$0" -> "X(10)"	[label=assignedFrom];
 	"X_train(10)$0" -> "columns(10)$0"	[label=assignedFrom];
 	"X_train(10)$0" -> "train_index(10)"	[label=assignedFrom];
@@ -632,9 +531,9 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_valid(10)$1" -> "y(10)"	[label=assignedFrom];
 	"y_valid(10)$1" -> "train_index(10)"	[label=assignedFrom];
 	"y_valid(10)$1" -> "valid_index(10)"	[label=assignedFrom];
-	"model(10)$0" -> "1(10)"	[label=LGBMClassifier];
 	"model(10)$0" -> "params(10)"	[label=LGBMClassifier];
 	"model(10)$0" -> "n_estimators(10)"	[label=LGBMClassifier];
+	"model(10)$0" -> "1(10)"	[label=LGBMClassifier];
 	"model(10)$0" -> "lgb(10)"	[label=LGBMClassifier];
 	"model(10)$1" -> "X_train(10)$1"	[label=fit];
 	"model(10)$1" -> "y_train(10)$1"	[label=fit];
@@ -651,7 +550,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"valid_data(10)$0" -> "X_valid(10)$1"	[label=DMatrix];
 	"valid_data(10)$0" -> "y_valid(10)$1"	[label=DMatrix];
 	"valid_data(10)$0" -> "xgb(10)"	[label=DMatrix];
-	"watchlist(10)$0" -> "[<_ast.Tuple object at 0x12f8916a0>, <_ast.Tuple object at 0x12f891730>](10)"	[label=assignedFrom];
+	"watchlist(10)$0" -> "[<_ast.Tuple object at 0x7fd5008213a0>, <_ast.Tuple object at 0x7fd500821430>](10)"	[label=assignedFrom];
 	"model(10)$2" -> "params(10)"	[label=train];
 	"model(10)$2" -> "verbose(10)"	[label=train];
 	"model(10)$2" -> "early_stopping_rounds(10)"	[label=train];
@@ -674,10 +573,24 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_pred_valid(10)$2" -> "1(10)"	[label=reshape];
 	"y_pred_valid(10)$2" -> "X_valid(10)$1"	[label=reshape];
 	"y_pred_valid(10)$2" -> "model(10)$4"	[label=reshape];
+	"score(10)$0" -> "eval_metric(10)"	[label=assignedFrom];
+	"score(10)$0" -> "metrics_dict(10)$0"	[label=assignedFrom];
+	"score(10)$0" -> "sklearn_scoring_function(10)"	[label=assignedFrom];
+	"score(10)$0" -> "y_valid(10)$1"	[label=assignedFrom];
+	"score(10)$0" -> "y_pred_valid(10)$2"	[label=assignedFrom];
+	"print[399/12]" -> "eval_metric(10)"	[label=print];
+	"print[399/12]" -> "fold_n(10)"	[label=print];
+	"print[399/12]" -> "Fold (10)"	[label=print];
+	"print[399/12]" -> "score(10)$0"	[label=print];
+	"print[399/12]" -> ". (10)"	[label=print];
+	"print[399/12]" -> ": (10)"	[label=print];
+	"print[399/12]" -> ".4f(10)"	[label=print];
+	"print[399/12]" -> ".(10)"	[label=print];
+	"print[400/12]" -> "(10)"	[label=print];
 	"y_pred(10)$2" -> "X_test(10)$0"	[label=predict_proba];
 	"y_pred(10)$2" -> "model(10)$4"	[label=predict_proba];
-	"model(10)$5" -> "eval_metric(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "params(10)"	[label=CatBoostClassifier];
+	"model(10)$5" -> "eval_metric(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "n_estimators(10)"	[label=CatBoostClassifier];
 	"model(10)$5" -> "metrics_dict(10)$0"	[label=CatBoostClassifier];
 	"model(10)$5" -> "catboost_metric_name(10)"	[label=CatBoostClassifier];
@@ -690,6 +603,13 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"y_pred(10)$3" -> "model(10)$6"	[label=predict];
 	"oof(10)$1" -> "oof(10)$0"	[label=assignedFrom];
 	"oof(10)$1" -> "y_pred_valid(10)$3"	[label=assignedFrom];
+	"scores(10)$1" -> "eval_metric(10)"	[label=append];
+	"scores(10)$1" -> "metrics_dict(10)$0"	[label=append];
+	"scores(10)$1" -> "sklearn_scoring_function(10)"	[label=append];
+	"scores(10)$1" -> "1(10)"	[label=append];
+	"scores(10)$1" -> "scores(10)$0"	[label=append];
+	"scores(10)$1" -> "y_valid(10)$1"	[label=append];
+	"scores(10)$1" -> "y_pred_valid(10)$3"	[label=append];
 	"prediction(10)$1" -> "prediction(10)$0"	[label=Add];
 	"prediction(10)$1" -> "y_pred(10)$3"	[label=Add];
 	"fold_importance(10)$0" -> "pd(10)"	[label=DataFrame];
@@ -697,14 +617,17 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"fold_importance(10)$1" -> "fold_importance(10)$0"	[label=assignedFrom];
 	"fold_importance(10)$2" -> "model(10)$6"	[label=assignedFrom];
 	"fold_importance(10)$2" -> "fold_importance(10)$1"	[label=assignedFrom];
-	"fold_importance(10)$3" -> "fold_n(10)"	[label=Add];
 	"fold_importance(10)$3" -> "1(10)"	[label=Add];
+	"fold_importance(10)$3" -> "fold_n(10)"	[label=Add];
 	"fold_importance(10)$3" -> "fold_importance(10)$2"	[label=Add];
 	"feature_importance(10)$1" -> "pd(10)"	[label=concat];
-	"feature_importance(10)$1" -> "[<_ast.Name object at 0x130ba4b80>, <_ast.Name object at 0x130ba4bb0>](10)"	[label=concat];
+	"feature_importance(10)$1" -> "[<_ast.Name object at 0x7fd500829910>, <_ast.Name object at 0x7fd5008292e0>](10)"	[label=concat];
 	"feature_importance(10)$1" -> "0(10)"	[label=concat];
 	"prediction(10)$2" -> "folds(10)"	[label=Div];
 	"prediction(10)$2" -> "prediction(10)$1"	[label=Div];
+	"print[427/4]" -> "np(10)"	[label=print];
+	"print[427/4]" -> "scores(10)$1"	[label=print];
+	"print[427/4]" -> "CV mean score: {0:.4f}, std: {1:.4f}.(10)"	[label=print];
 	"result_dict(10)$0" -> "oof(10)$1"	[label=assignedFrom];
 	"result_dict(10)$0" -> "result_dict(10)"	[label=assignedFrom];
 	"result_dict(10)$1" -> "prediction(10)$2"	[label=assignedFrom];
@@ -714,7 +637,7 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"feature_importance(10)$2" -> "folds(10)"	[label=Div];
 	"feature_importance(10)$2" -> "feature_importance(10)$1"	[label=Div];
 	"cols(10)$0" -> "feature_importance(10)$2"	[label=assignedFrom];
-	"cols(10)$0" -> "[<_ast.Constant object at 0x130bbc9d0>, <_ast.Constant object at 0x130bbca00>](10)"	[label=assignedFrom];
+	"cols(10)$0" -> "[<_ast.Constant object at 0x7fd4c04cd790>, <_ast.Constant object at 0x7fd4c04cd160>](10)"	[label=assignedFrom];
 	"cols(10)$0" -> "feature(10)"	[label=assignedFrom];
 	"cols(10)$0" -> "importance(10)"	[label=assignedFrom];
 	"cols(10)$0" -> "False(10)"	[label=assignedFrom];
@@ -728,33 +651,70 @@ object at 0x12f957580>, <_ast.Constant object at 0x12f957220>, <_ast.Constant ob
 	"result_dict(10)$3" -> "result_dict(10)$2"	[label=assignedFrom];
 	"result_dict(10)$3" -> "feature_importance(10)$2"	[label=assignedFrom];
 	"(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"HTML[0]" -> "(0)"	[label=HTML];
+	"HTML[451/0]" -> "(0)"	[label=HTML];
+	"HTML[451/0]" -> "<script>(0)"	[label=HTML];
+	"HTML[451/0]" -> "workaround(0)"	[label=HTML];
+	"HTML[451/0]" -> "</script>(0)"	[label=HTML];
 	"<script>(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"HTML[1]" -> "<script>(0)"	[label=HTML];
 	"workaround(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"HTML[2]" -> "workaround(0)"	[label=HTML];
 	"</script>(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"HTML[3]" -> "</script>(0)"	[label=HTML];
+	"train(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
 	"../input/train.csv(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"test(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
 	"../input/test.csv(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"sub(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"sub(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"structures(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"structures(0)$0" -> "../input/structures.csv(0)"	[label=read_csv];
 	"../input/structures.csv(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"scalar_coupling_contributions(0)$0" -> "pd(0)$0"	[label=read_csv];
+	"scalar_coupling_contributions(0)$0" -> "../input/scalar_coupling_contributions.csv(0)"	[label=read_csv];
 	"../input/scalar_coupling_contributions.csv(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"Train dataset shape is -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[462/0]" -> "train(0)$0"	[label=print];
+	"print[462/0]" -> "Train dataset shape is -> rows: {} cols:{}(0)"	[label=print];
+	"print[462/0]" -> "0(0)"	[label=print];
+	"print[462/0]" -> "1(0)"	[label=print];
+	"0(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"1(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"Test dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[463/0]" -> "test(0)$0"	[label=print];
+	"print[463/0]" -> "0(0)"	[label=print];
+	"print[463/0]" -> "1(0)"	[label=print];
+	"print[463/0]" -> "Test dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
+	"Sub dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[464/0]" -> "sub(0)$0"	[label=print];
+	"print[464/0]" -> "0(0)"	[label=print];
+	"print[464/0]" -> "1(0)"	[label=print];
+	"print[464/0]" -> "Sub dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
+	"Structures dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[465/0]" -> "structures(0)$0"	[label=print];
+	"print[465/0]" -> "0(0)"	[label=print];
+	"print[465/0]" -> "1(0)"	[label=print];
+	"print[465/0]" -> "Structures dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
+	"Scalar_coupling_contributions dataset shape is  -> rows: {} cols:{}(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[466/0]" -> "scalar_coupling_contributions(0)$0"	[label=print];
+	"print[466/0]" -> "0(0)"	[label=print];
+	"print[466/0]" -> "1(0)"	[label=print];
+	"print[466/0]" -> "Scalar_coupling_contributions dataset shape is  -> rows: {} cols:{}(0)"	[label=print];
 	"4000(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"n_estimators_default(0)$0" -> "4000(0)"	[label=assignedFrom];
 	"train(0)$1" -> "pd(0)$0"	[label=merge];
 	"train(0)$1" -> "scalar_coupling_contributions(0)$0"	[label=merge];
 	"train(0)$1" -> "train(0)$1"	[label=merge];
 	"train(0)$1" -> "left(0)"	[label=merge];
-	"train(0)$1" -> "[<_ast.Constant object at 0x130bb55b0>, <_ast.Constant object at 0x130bb55e0>, <_ast.Constant object at 0x130bb5610>, <_ast.Constant \
-object at 0x130bb5640>](0)"	[label=merge];
-	"train(0)$1" -> "[<_ast.Constant object at 0x130bb5700>, <_ast.Constant object at 0x130bb5730>, <_ast.Constant object at 0x130bb5760>, <_ast.Constant \
-object at 0x130bb5790>](0)"	[label=merge];
+	"train(0)$1" -> "[<_ast.Constant object at 0x7fd4c04c6280>, <_ast.Constant object at 0x7fd4c04c62b0>, <_ast.Constant object at 0x7fd4c04c62e0>, <_\
+ast.Constant object at 0x7fd4c04c6400>](0)"	[label=merge];
+	"train(0)$1" -> "[<_ast.Constant object at 0x7fd4c04c63a0>, <_ast.Constant object at 0x7fd4c04c66d0>, <_ast.Constant object at 0x7fd4c04c64c0>, <_\
+ast.Constant object at 0x7fd4c04c6640>](0)"	[label=merge];
 	"left(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130bb55b0>, <_ast.Constant object at 0x130bb55e0>, <_ast.Constant object at 0x130bb5610>, <_ast.Constant \
-object at 0x130bb5640>](0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130bb5700>, <_ast.Constant object at 0x130bb5730>, <_ast.Constant object at 0x130bb5760>, <_ast.Constant \
-object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04c6280>, <_ast.Constant object at 0x7fd4c04c62b0>, <_ast.Constant object at 0x7fd4c04c62e0>, <_\
+ast.Constant object at 0x7fd4c04c6400>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04c63a0>, <_ast.Constant object at 0x7fd4c04c66d0>, <_ast.Constant object at 0x7fd4c04c64c0>, <_\
+ast.Constant object at 0x7fd4c04c6640>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"train(0)$2" -> "train(0)$1"	[label=head];
 	"train(0)$2" -> "10(0)"	[label=head];
 	"10(0)" -> "eachtype.ipynb"	[label=appearsIn];
@@ -788,7 +748,12 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"0.05(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"fudge_factor(0)$0" -> "0.05(0)"	[label=assignedFrom];
 	"k(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"atomic_radius(0)$1" -> "fudge_factor(0)$0"	[label=assignedFrom];
+	"atomic_radius(0)$1" -> "k(0)"	[label=assignedFrom];
+	"atomic_radius(0)$1" -> "atomic_radius(0)$1"	[label=assignedFrom];
+	"atomic_radius(0)$1" -> "v(0)"	[label=assignedFrom];
 	"v(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[496/0]" -> "atomic_radius(0)$1"	[label=print];
 	"electronegativity(0)$0" -> "H(0)"	[label=assignedFrom];
 	"electronegativity(0)$0" -> "C(0)"	[label=assignedFrom];
 	"electronegativity(0)$0" -> "N(0)"	[label=assignedFrom];
@@ -812,24 +777,21 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"atoms_en(0)$0" -> "atoms(0)$0"	[label=assignedFrom];
 	"atoms_en(0)$0" -> "x(0)"	[label=assignedFrom];
 	"x(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"atoms_rad(0)$0" -> "atomic_radius(0)$1"	[label=assignedFrom];
 	"atoms_rad(0)$0" -> "tqdm(0)"	[label=assignedFrom];
+	"atoms_rad(0)$0" -> "atomic_radius(0)$1"	[label=assignedFrom];
 	"atoms_rad(0)$0" -> "atoms(0)$0"	[label=assignedFrom];
 	"atoms_rad(0)$0" -> "x(0)"	[label=assignedFrom];
 	"structures(0)$1" -> "structures(0)$0"	[label=assignedFrom];
 	"structures(0)$1" -> "atoms_en(0)$0"	[label=assignedFrom];
 	"structures(0)$2" -> "atoms_rad(0)$0"	[label=assignedFrom];
 	"structures(0)$2" -> "structures(0)$1"	[label=assignedFrom];
-	"display[0]" -> "structures(0)$2"	[label=display];
-	"display[0]" -> "structures(0)$3"	[label=display];
-	"structures(0)$3" -> "structures(0)$2"	[label=join];
-	"structures(0)$3" -> "bond_df(0)$0"	[label=join];
+	"display[509/0]" -> "structures(0)$2"	[label=display];
 	"i_atom(0)$0" -> "structures(0)$2"	[label=assignedFrom];
 	"i_atom(0)$0" -> "atom_index(0)"	[label=assignedFrom];
 	"atom_index(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"p(0)$0" -> "structures(0)$2"	[label=assignedFrom];
-	"p(0)$0" -> "[<_ast.Constant object at 0x130b9a850>, <_ast.Constant object at 0x130b9a880>, <_ast.Constant object at 0x130b9a8b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130b9a850>, <_ast.Constant object at 0x130b9a880>, <_ast.Constant object at 0x130b9a8b0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"p(0)$0" -> "[<_ast.Constant object at 0x7fd4c04c25b0>, <_ast.Constant object at 0x7fd4c04c25e0>, <_ast.Constant object at 0x7fd4c04c2610>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04c25b0>, <_ast.Constant object at 0x7fd4c04c25e0>, <_ast.Constant object at 0x7fd4c04c2610>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"p_compare(0)$0" -> "p(0)$0"	[label=assignedFrom];
 	"m(0)$0" -> "structures(0)$2"	[label=assignedFrom];
 	"m(0)$0" -> "molecule_name(0)"	[label=assignedFrom];
@@ -855,6 +817,8 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"bond_dists(0)$0" -> "structures(0)$2"	[label=zeros];
 	"bond_dists(0)$0" -> "len(0)"	[label=zeros];
 	"bond_dists(0)$0" -> "max_atoms(0)$0"	[label=zeros];
+	"Calculating bonds(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[524/0]" -> "Calculating bonds(0)"	[label=print];
 	"i(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"i(0)" -> "1(0)"	[label=iteratorOf];
 	"i(0)" -> "tqdm(0)"	[label=iteratorOf];
@@ -933,6 +897,8 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"bond_dists(0)$4" -> "np(0)"	[label=delete];
 	"bond_dists(0)$4" -> "1(0)"	[label=delete];
 	"bond_dists(0)$4" -> "bond_dists(0)$4"	[label=delete];
+	"Counting and condensing bonds(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[555/0]" -> "Counting and condensing bonds(0)"	[label=print];
 	"bonds_numeric(0)$0" -> "tqdm(0)"	[label=assignedFrom];
 	"bonds_numeric(0)$0" -> "x(0)"	[label=assignedFrom];
 	"bonds_numeric(0)$0" -> "i(0)"	[label=assignedFrom];
@@ -965,16 +931,19 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"bond_data(0)$0" -> "n_bonds(0)$0"	[label=assignedFrom];
 	"bond_df(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"bond_df(0)$0" -> "bond_data(0)$0"	[label=DataFrame];
+	"structures(0)$3" -> "structures(0)$2"	[label=join];
+	"structures(0)$3" -> "bond_df(0)$0"	[label=join];
+	"display[569/0]" -> "structures(0)$3"	[label=display];
+	"display[569/0]" -> "20(0)"	[label=display];
 	"20(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"display[1]" -> "20(0)"	[label=display];
 	"df(11)" -> "map_atom_info[0]"	[label=_argToVar];
 	"atom_idx(11)" -> "map_atom_info[1]"	[label=_argToVar];
 	"df(11)$0" -> "df(11)$0"	[label=merge];
 	"df(11)$0" -> "pd(11)"	[label=merge];
 	"df(11)$0" -> "structures(11)"	[label=merge];
 	"df(11)$0" -> "left(11)"	[label=merge];
-	"df(11)$0" -> "[<_ast.Constant object at 0x130521d00>, <_ast.JoinedStr object at 0x130521d30>](11)"	[label=merge];
-	"df(11)$0" -> "[<_ast.Constant object at 0x130521eb0>, <_ast.Constant object at 0x130521ee0>](11)"	[label=merge];
+	"df(11)$0" -> "[<_ast.Constant object at 0x7fd500868a30>, <_ast.JoinedStr object at 0x7fd500868a60>](11)"	[label=merge];
+	"df(11)$0" -> "[<_ast.Constant object at 0x7fd500868be0>, <_ast.Constant object at 0x7fd500868c40>](11)"	[label=merge];
 	"df(11)$1" -> "atom_idx(11)"	[label=rename];
 	"df(11)$1" -> "df(11)$0"	[label=rename];
 	"df(11)$1" -> "atom(11)"	[label=rename];
@@ -994,17 +963,17 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"test(0)$3" -> "1(0)"	[label=map_atom_info];
 	"test(0)$3" -> "test(0)$2"	[label=map_atom_info];
 	"train_p_0(0)$0" -> "train(0)$4"	[label=assignedFrom];
-	"train_p_0(0)$0" -> "[<_ast.Constant object at 0x130545bb0>, <_ast.Constant object at 0x130545be0>, <_ast.Constant object at 0x130545c10>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130545bb0>, <_ast.Constant object at 0x130545be0>, <_ast.Constant object at 0x130545c10>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"train_p_0(0)$0" -> "[<_ast.Constant object at 0x7fd50086c880>, <_ast.Constant object at 0x7fd50086c910>, <_ast.Constant object at 0x7fd50086c940>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086c880>, <_ast.Constant object at 0x7fd50086c910>, <_ast.Constant object at 0x7fd50086c940>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"train_p_1(0)$0" -> "train(0)$4"	[label=assignedFrom];
-	"train_p_1(0)$0" -> "[<_ast.Constant object at 0x130545dc0>, <_ast.Constant object at 0x130545df0>, <_ast.Constant object at 0x130545e20>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130545dc0>, <_ast.Constant object at 0x130545df0>, <_ast.Constant object at 0x130545e20>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"train_p_1(0)$0" -> "[<_ast.Constant object at 0x7fd50086c8e0>, <_ast.Constant object at 0x7fd50086caf0>, <_ast.Constant object at 0x7fd50086cb20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086c8e0>, <_ast.Constant object at 0x7fd50086caf0>, <_ast.Constant object at 0x7fd50086cb20>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"test_p_0(0)$0" -> "test(0)$3"	[label=assignedFrom];
-	"test_p_0(0)$0" -> "[<_ast.Constant object at 0x130545fd0>, <_ast.Constant object at 0x13051b040>, <_ast.Constant object at 0x13051b070>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130545fd0>, <_ast.Constant object at 0x13051b040>, <_ast.Constant object at 0x13051b070>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"test_p_0(0)$0" -> "[<_ast.Constant object at 0x7fd50086cd00>, <_ast.Constant object at 0x7fd50086cd30>, <_ast.Constant object at 0x7fd50086cd60>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086cd00>, <_ast.Constant object at 0x7fd50086cd30>, <_ast.Constant object at 0x7fd50086cd60>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"test_p_1(0)$0" -> "test(0)$3"	[label=assignedFrom];
-	"test_p_1(0)$0" -> "[<_ast.Constant object at 0x13051b220>, <_ast.Constant object at 0x13051b250>, <_ast.Constant object at 0x13051b280>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x13051b220>, <_ast.Constant object at 0x13051b250>, <_ast.Constant object at 0x13051b280>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"test_p_1(0)$0" -> "[<_ast.Constant object at 0x7fd50086cf10>, <_ast.Constant object at 0x7fd50086cf40>, <_ast.Constant object at 0x7fd50086cf70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50086cf10>, <_ast.Constant object at 0x7fd50086cf40>, <_ast.Constant object at 0x7fd50086cf70>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"train(0)$5" -> "np(0)"	[label=norm];
 	"train(0)$5" -> "1(0)"	[label=norm];
 	"train(0)$5" -> "train(0)$4"	[label=norm];
@@ -1081,18 +1050,18 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$4" -> "id(12)"	[label=transform];
 	"df(12)$4" -> "count(12)"	[label=transform];
 	"df(12)$4" -> "df(12)$3"	[label=transform];
-	"df(12)$4" -> "[<_ast.Constant object at 0x1305476a0>, <_ast.Constant object at 0x130547700>](12)"	[label=transform];
+	"df(12)$4" -> "[<_ast.Constant object at 0x7fd50083a3a0>, <_ast.Constant object at 0x7fd50083a3d0>](12)"	[label=transform];
 	"df(12)$5" -> "id(12)"	[label=transform];
 	"df(12)$5" -> "count(12)"	[label=transform];
 	"df(12)$5" -> "df(12)$4"	[label=transform];
-	"df(12)$5" -> "[<_ast.Constant object at 0x130547a30>, <_ast.Constant object at 0x130547a60>](12)"	[label=transform];
+	"df(12)$5" -> "[<_ast.Constant object at 0x7fd50083a730>, <_ast.Constant object at 0x7fd50083a760>](12)"	[label=transform];
 	"df(12)$6" -> "df(12)$5"	[label=transform];
-	"df(12)$6" -> "[<_ast.Constant object at 0x130547e50>, <_ast.Constant object at 0x130547e80>](12)"	[label=transform];
+	"df(12)$6" -> "[<_ast.Constant object at 0x7fd50083ab20>, <_ast.Constant object at 0x7fd50083ab50>](12)"	[label=transform];
 	"df(12)$6" -> "x_1(12)"	[label=transform];
 	"df(12)$6" -> "std(12)"	[label=transform];
 	"df(12)$7" -> "mean(12)"	[label=transform];
 	"df(12)$7" -> "df(12)$6"	[label=transform];
-	"df(12)$7" -> "[<_ast.Constant object at 0x13054d250>, <_ast.Constant object at 0x13054d280>](12)"	[label=transform];
+	"df(12)$7" -> "[<_ast.Constant object at 0x7fd50083af10>, <_ast.Constant object at 0x7fd50083af40>](12)"	[label=transform];
 	"df(12)$7" -> "y_1(12)"	[label=transform];
 	"df(12)$8" -> "df(12)$7"	[label=Sub];
 	"df(12)$8" -> "y_1(12)"	[label=Sub];
@@ -1105,7 +1074,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$10" -> "max(12)"	[label=transform];
 	"df(12)$10" -> "y_1(12)"	[label=transform];
 	"df(12)$10" -> "df(12)$9"	[label=transform];
-	"df(12)$10" -> "[<_ast.Constant object at 0x13054deb0>, <_ast.Constant object at 0x13054dee0>](12)"	[label=transform];
+	"df(12)$10" -> "[<_ast.Constant object at 0x7fd50084fb50>, <_ast.Constant object at 0x7fd50084fbb0>](12)"	[label=transform];
 	"df(12)$11" -> "y_1(12)"	[label=Sub];
 	"df(12)$11" -> "df(12)$10"	[label=Sub];
 	"df(12)$11" -> "df(12)$11"	[label=Sub];
@@ -1113,15 +1082,15 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$12" -> "std(12)"	[label=transform];
 	"df(12)$12" -> "y_1(12)"	[label=transform];
 	"df(12)$12" -> "df(12)$11"	[label=transform];
-	"df(12)$12" -> "[<_ast.Constant object at 0x130519640>, <_ast.Constant object at 0x130519670>](12)"	[label=transform];
+	"df(12)$12" -> "[<_ast.Constant object at 0x7fd50085c520>, <_ast.Constant object at 0x7fd50085c580>](12)"	[label=transform];
 	"df(12)$13" -> "std(12)"	[label=transform];
 	"df(12)$13" -> "df(12)$12"	[label=transform];
-	"df(12)$13" -> "[<_ast.Constant object at 0x130519a30>, <_ast.Constant object at 0x130519a60>](12)"	[label=transform];
+	"df(12)$13" -> "[<_ast.Constant object at 0x7fd50085caf0>, <_ast.Constant object at 0x7fd50085cdf0>](12)"	[label=transform];
 	"df(12)$13" -> "z_1(12)"	[label=transform];
 	"df(12)$14" -> "dist(12)"	[label=transform];
 	"df(12)$14" -> "mean(12)"	[label=transform];
 	"df(12)$14" -> "df(12)$13"	[label=transform];
-	"df(12)$14" -> "[<_ast.Constant object at 0x130519e20>, <_ast.Constant object at 0x130519e50>](12)"	[label=transform];
+	"df(12)$14" -> "[<_ast.Constant object at 0x7fd50085c3a0>, <_ast.Constant object at 0x7fd50085cb50>](12)"	[label=transform];
 	"df(12)$15" -> "dist(12)"	[label=Sub];
 	"df(12)$15" -> "df(12)$14"	[label=Sub];
 	"df(12)$15" -> "df(12)$15"	[label=Sub];
@@ -1133,7 +1102,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$17" -> "dist(12)"	[label=transform];
 	"df(12)$17" -> "max(12)"	[label=transform];
 	"df(12)$17" -> "df(12)$16"	[label=transform];
-	"df(12)$17" -> "[<_ast.Constant object at 0x13053aa90>, <_ast.Constant object at 0x13053aac0>](12)"	[label=transform];
+	"df(12)$17" -> "[<_ast.Constant object at 0x7fd5008527f0>, <_ast.Constant object at 0x7fd500852790>](12)"	[label=transform];
 	"df(12)$18" -> "dist(12)"	[label=Sub];
 	"df(12)$18" -> "df(12)$17"	[label=Sub];
 	"df(12)$18" -> "df(12)$18"	[label=Sub];
@@ -1145,7 +1114,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$20" -> "dist(12)"	[label=transform];
 	"df(12)$20" -> "min(12)"	[label=transform];
 	"df(12)$20" -> "df(12)$19"	[label=transform];
-	"df(12)$20" -> "[<_ast.Constant object at 0x130534640>, <_ast.Constant object at 0x130534670>](12)"	[label=transform];
+	"df(12)$20" -> "[<_ast.Constant object at 0x7fd5009d3340>, <_ast.Constant object at 0x7fd5009d3370>](12)"	[label=transform];
 	"df(12)$21" -> "dist(12)"	[label=Sub];
 	"df(12)$21" -> "df(12)$20"	[label=Sub];
 	"df(12)$21" -> "df(12)$21"	[label=Sub];
@@ -1157,7 +1126,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$23" -> "dist(12)"	[label=transform];
 	"df(12)$23" -> "std(12)"	[label=transform];
 	"df(12)$23" -> "df(12)$22"	[label=transform];
-	"df(12)$23" -> "[<_ast.Constant object at 0x130525250>, <_ast.Constant object at 0x130525280>](12)"	[label=transform];
+	"df(12)$23" -> "[<_ast.Constant object at 0x7fd5009d3e80>, <_ast.Constant object at 0x7fd5009d3eb0>](12)"	[label=transform];
 	"df(12)$24" -> "dist(12)"	[label=Sub];
 	"df(12)$24" -> "df(12)$23"	[label=Sub];
 	"df(12)$24" -> "df(12)$24"	[label=Sub];
@@ -1169,7 +1138,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$26" -> "dist(12)"	[label=transform];
 	"df(12)$26" -> "mean(12)"	[label=transform];
 	"df(12)$26" -> "df(12)$25"	[label=transform];
-	"df(12)$26" -> "[<_ast.Constant object at 0x130525e20>, <_ast.Constant object at 0x130525e50>](12)"	[label=transform];
+	"df(12)$26" -> "[<_ast.Constant object at 0x7fd50081aa30>, <_ast.Constant object at 0x7fd50081aa60>](12)"	[label=transform];
 	"df(12)$27" -> "dist(12)"	[label=Sub];
 	"df(12)$27" -> "df(12)$26"	[label=Sub];
 	"df(12)$27" -> "df(12)$27"	[label=Sub];
@@ -1181,7 +1150,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$29" -> "dist(12)"	[label=transform];
 	"df(12)$29" -> "max(12)"	[label=transform];
 	"df(12)$29" -> "df(12)$28"	[label=transform];
-	"df(12)$29" -> "[<_ast.Constant object at 0x130542b20>, <_ast.Constant object at 0x130542bb0>](12)"	[label=transform];
+	"df(12)$29" -> "[<_ast.Constant object at 0x7fd4c05b9640>, <_ast.Constant object at 0x7fd4c05b9670>](12)"	[label=transform];
 	"df(12)$30" -> "dist(12)"	[label=Sub];
 	"df(12)$30" -> "df(12)$29"	[label=Sub];
 	"df(12)$30" -> "df(12)$30"	[label=Sub];
@@ -1193,7 +1162,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$32" -> "dist(12)"	[label=transform];
 	"df(12)$32" -> "min(12)"	[label=transform];
 	"df(12)$32" -> "df(12)$31"	[label=transform];
-	"df(12)$32" -> "[<_ast.Constant object at 0x12f945640>, <_ast.Constant object at 0x12f945670>](12)"	[label=transform];
+	"df(12)$32" -> "[<_ast.Constant object at 0x7fd4c04f8250>, <_ast.Constant object at 0x7fd4c04f8280>](12)"	[label=transform];
 	"df(12)$33" -> "dist(12)"	[label=Sub];
 	"df(12)$33" -> "df(12)$32"	[label=Sub];
 	"df(12)$33" -> "df(12)$33"	[label=Sub];
@@ -1205,7 +1174,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$35" -> "dist(12)"	[label=transform];
 	"df(12)$35" -> "std(12)"	[label=transform];
 	"df(12)$35" -> "df(12)$34"	[label=transform];
-	"df(12)$35" -> "[<_ast.Constant object at 0x12f959250>, <_ast.Constant object at 0x12f959280>](12)"	[label=transform];
+	"df(12)$35" -> "[<_ast.Constant object at 0x7fd4c04f8e20>, <_ast.Constant object at 0x7fd4c04f8e50>](12)"	[label=transform];
 	"df(12)$36" -> "dist(12)"	[label=Sub];
 	"df(12)$36" -> "df(12)$35"	[label=Sub];
 	"df(12)$36" -> "df(12)$36"	[label=Sub];
@@ -1217,11 +1186,11 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$38" -> "dist(12)"	[label=transform];
 	"df(12)$38" -> "mean(12)"	[label=transform];
 	"df(12)$38" -> "df(12)$37"	[label=transform];
-	"df(12)$38" -> "[<_ast.Constant object at 0x12f959e20>, <_ast.Constant object at 0x12f959e50>](12)"	[label=transform];
+	"df(12)$38" -> "[<_ast.Constant object at 0x7fd4c04f7a30>, <_ast.Constant object at 0x7fd4c04f7a60>](12)"	[label=transform];
 	"df(12)$39" -> "dist(12)"	[label=transform];
 	"df(12)$39" -> "min(12)"	[label=transform];
 	"df(12)$39" -> "df(12)$38"	[label=transform];
-	"df(12)$39" -> "[<_ast.Constant object at 0x12f950250>, <_ast.Constant object at 0x12f950280>](12)"	[label=transform];
+	"df(12)$39" -> "[<_ast.Constant object at 0x7fd4c04f7e20>, <_ast.Constant object at 0x7fd4c04f7e50>](12)"	[label=transform];
 	"df(12)$40" -> "dist(12)"	[label=Sub];
 	"df(12)$40" -> "df(12)$39"	[label=Sub];
 	"df(12)$40" -> "df(12)$40"	[label=Sub];
@@ -1233,7 +1202,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$42" -> "dist(12)"	[label=transform];
 	"df(12)$42" -> "std(12)"	[label=transform];
 	"df(12)$42" -> "df(12)$41"	[label=transform];
-	"df(12)$42" -> "[<_ast.Constant object at 0x12f950e20>, <_ast.Constant object at 0x12f950e50>](12)"	[label=transform];
+	"df(12)$42" -> "[<_ast.Constant object at 0x7fd5009b6a30>, <_ast.Constant object at 0x7fd5009b6a60>](12)"	[label=transform];
 	"df(12)$43" -> "dist(12)"	[label=Sub];
 	"df(12)$43" -> "df(12)$42"	[label=Sub];
 	"df(12)$43" -> "df(12)$43"	[label=Sub];
@@ -1241,7 +1210,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$44" -> "dist(12)"	[label=transform];
 	"df(12)$44" -> "std(12)"	[label=transform];
 	"df(12)$44" -> "df(12)$43"	[label=transform];
-	"df(12)$44" -> "[<_ast.Constant object at 0x12f965700>, <_ast.Constant object at 0x12f9657c0>](12)"	[label=transform];
+	"df(12)$44" -> "[<_ast.Constant object at 0x7fd5009a52e0>, <_ast.Constant object at 0x7fd5009a50a0>](12)"	[label=transform];
 	"df(12)$45" -> "dist(12)"	[label=Sub];
 	"df(12)$45" -> "df(12)$44"	[label=Sub];
 	"df(12)$45" -> "df(12)$45"	[label=Sub];
@@ -1249,7 +1218,7 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$46" -> "dist(12)"	[label=transform];
 	"df(12)$46" -> "mean(12)"	[label=transform];
 	"df(12)$46" -> "df(12)$45"	[label=transform];
-	"df(12)$46" -> "[<_ast.Constant object at 0x12f965ee0>, <_ast.Constant object at 0x12f965e50>](12)"	[label=transform];
+	"df(12)$46" -> "[<_ast.Constant object at 0x7fd5009a5a60>, <_ast.Constant object at 0x7fd5009a59d0>](12)"	[label=transform];
 	"df(12)$47" -> "dist(12)"	[label=Sub];
 	"df(12)$47" -> "df(12)$46"	[label=Sub];
 	"df(12)$47" -> "df(12)$47"	[label=Sub];
@@ -1261,15 +1230,15 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(12)$49" -> "dist(12)"	[label=transform];
 	"df(12)$49" -> "max(12)"	[label=transform];
 	"df(12)$49" -> "df(12)$48"	[label=transform];
-	"df(12)$49" -> "[<_ast.Constant object at 0x12f947a60>, <_ast.Constant object at 0x12f947a90>](12)"	[label=transform];
+	"df(12)$49" -> "[<_ast.Constant object at 0x7fd5009c8640>, <_ast.Constant object at 0x7fd5009c8670>](12)"	[label=transform];
 	"df(12)$50" -> "dist(12)"	[label=transform];
 	"df(12)$50" -> "min(12)"	[label=transform];
 	"df(12)$50" -> "df(12)$49"	[label=transform];
-	"df(12)$50" -> "[<_ast.Constant object at 0x12f947e50>, <_ast.Constant object at 0x12f947e80>](12)"	[label=transform];
+	"df(12)$50" -> "[<_ast.Constant object at 0x7fd5009c8a30>, <_ast.Constant object at 0x7fd5009c8a60>](12)"	[label=transform];
 	"df(12)$51" -> "dist(12)"	[label=transform];
 	"df(12)$51" -> "std(12)"	[label=transform];
 	"df(12)$51" -> "df(12)$50"	[label=transform];
-	"df(12)$51" -> "[<_ast.Constant object at 0x12f95e280>, <_ast.Constant object at 0x12f95e2e0>](12)"	[label=transform];
+	"df(12)$51" -> "[<_ast.Constant object at 0x7fd5009c8e20>, <_ast.Constant object at 0x7fd5009c8e50>](12)"	[label=transform];
 	"df(12)$52" -> "dist(12)"	[label=Sub];
 	"df(12)$52" -> "df(12)$51"	[label=Sub];
 	"df(12)$52" -> "df(12)$52"	[label=Sub];
@@ -1284,16 +1253,17 @@ object at 0x130bb5790>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"df(13)$0" -> "df_2(13)"	[label=merge];
 	"df(13)$0" -> "pd(13)"	[label=merge];
 	"df(13)$0" -> "left(13)"	[label=merge];
-	"df(13)$0" -> "[<_ast.Constant object at 0x12f95eee0>, <_ast.JoinedStr object at 0x12f95ef10>](13)"	[label=merge];
-	"df(13)$0" -> "[<_ast.Constant object at 0x12f95e580>, <_ast.Constant object at 0x12f941040>](13)"	[label=merge];
+	"df(13)$0" -> "[<_ast.Constant object at 0x7fd5009bfa30>, <_ast.JoinedStr object at 0x7fd5009bfa60>](13)"	[label=merge];
+	"df(13)$0" -> "[<_ast.Constant object at 0x7fd5009bfbe0>, <_ast.Constant object at 0x7fd5009bfc10>](13)"	[label=merge];
 	"df(13)$1" -> "df(13)$0"	[label=drop];
 	"df(13)$1" -> "atom_index(13)"	[label=drop];
 	"df(13)$1" -> "1(13)"	[label=drop];
 	"df_train(14)" -> "create_closest[0]"	[label=_argToVar];
 	"df_temp(14)$0" -> "df_train(14)"	[label=copy];
-	"df_temp(14)$0" -> "[<_ast.Constant object at 0x12f941580>, <_ast.Constant object at 0x12f9415b0>, <_ast.Constant object at 0x12f9415e0>, <_ast.Constant \
-object at 0x12f941610>, <_ast.Constant object at 0x12f941640>, <_ast.Constant object at 0x12f941670>, <_ast.Constant object at 0x12f9416a0>, <_\
-ast.Constant object at 0x12f9416d0>, <_ast.Constant object at 0x12f941700>, <_ast.Constant object at 0x12f941730>](14)"	[label=copy];
+	"df_temp(14)$0" -> "[<_ast.Constant object at 0x7fd5009b2190>, <_ast.Constant object at 0x7fd5009b21c0>, <_ast.Constant object at 0x7fd5009b21f0>, <_\
+ast.Constant object at 0x7fd5009b2220>, <_ast.Constant object at 0x7fd5009b2250>, <_ast.Constant object at 0x7fd5009b2280>, <_ast.Constant \
+object at 0x7fd5009b22e0>, <_ast.Constant object at 0x7fd5009b2340>, <_ast.Constant object at 0x7fd5009b2370>, <_ast.Constant object \
+at 0x7fd5009b23a0>](14)"	[label=copy];
 	"df_temp_(14)$0" -> "df_temp(14)$0"	[label=copy];
 	"df_temp_(14)$1" -> "df_temp_(14)$0"	[label=rename];
 	"df_temp_(14)$1" -> "atom_index_0(14)"	[label=rename];
@@ -1305,10 +1275,10 @@ ast.Constant object at 0x12f9416d0>, <_ast.Constant object at 0x12f941700>, <_as
 	"df_temp_(14)$1" -> "y_1(14)"	[label=rename];
 	"df_temp_(14)$1" -> "z_1(14)"	[label=rename];
 	"df_temp(14)$1" -> "pd(14)"	[label=concat];
-	"df_temp(14)$1" -> "[<_ast.Name object at 0x12f941eb0>, <_ast.Name object at 0x12f941ee0>](14)"	[label=concat];
+	"df_temp(14)$1" -> "[<_ast.Name object at 0x7fd5009b2af0>, <_ast.Name object at 0x7fd5009b2b20>](14)"	[label=concat];
 	"df_temp(14)$1" -> "0(14)"	[label=concat];
 	"df_temp(14)$2" -> "df_temp(14)$1"	[label=transform];
-	"df_temp(14)$2" -> "[<_ast.Constant object at 0x12f949280>, <_ast.Constant object at 0x12f949490>](14)"	[label=transform];
+	"df_temp(14)$2" -> "[<_ast.Constant object at 0x7fd5009b2e80>, <_ast.Constant object at 0x7fd5009b2eb0>](14)"	[label=transform];
 	"df_temp(14)$2" -> "dist(14)"	[label=transform];
 	"df_temp(14)$2" -> "min(14)"	[label=transform];
 	"df_temp(14)$3" -> "df_temp(14)$2"	[label=assignedFrom];
@@ -1316,8 +1286,8 @@ ast.Constant object at 0x12f9416d0>, <_ast.Constant object at 0x12f941700>, <_as
 	"df_temp(14)$3" -> "df_temp(14)$3"	[label=assignedFrom];
 	"df_temp(14)$3" -> "min_distance(14)"	[label=assignedFrom];
 	"df_temp(14)$4" -> "df_temp(14)$3"	[label=drop];
-	"df_temp(14)$4" -> "[<_ast.Constant object at 0x12f949790>, <_ast.Constant object at 0x12f9497c0>, <_ast.Constant object at 0x12f949760>, <_ast.Constant \
-object at 0x12f9497f0>](14)"	[label=drop];
+	"df_temp(14)$4" -> "[<_ast.Constant object at 0x7fd5009d13d0>, <_ast.Constant object at 0x7fd5009d1400>, <_ast.Constant object at 0x7fd5009d1430>, <_\
+ast.Constant object at 0x7fd5009d1460>](14)"	[label=drop];
 	"df_temp(14)$4" -> "1(14)"	[label=drop];
 	"df_temp(14)$5" -> "atom_index_0(14)"	[label=rename];
 	"df_temp(14)$5" -> "atom_index_1(14)"	[label=rename];
@@ -1332,7 +1302,7 @@ object at 0x12f9497f0>](14)"	[label=drop];
 	"df_temp(14)$5" -> "x_closest(14)"	[label=rename];
 	"df_temp(14)$5" -> "y_closest(14)"	[label=rename];
 	"df_temp(14)$5" -> "z_closest(14)"	[label=rename];
-	"atom_idx(14)" -> "[<_ast.Constant object at 0x12f949f10>, <_ast.Constant object at 0x12f949f70>](14)"	[label=iteratorOf];
+	"atom_idx(14)" -> "[<_ast.Constant object at 0x7fd5009d1a30>, <_ast.Constant object at 0x7fd5009d1a60>](14)"	[label=iteratorOf];
 	"df_train(14)$0" -> "df_train(14)"	[label=map_atom_info];
 	"df_train(14)$0" -> "df_temp(14)$5"	[label=map_atom_info];
 	"df_train(14)$0" -> "atom_idx(14)"	[label=map_atom_info];
@@ -1440,13 +1410,13 @@ object at 0x12f9497f0>](14)"	[label=drop];
 	"df(15)$13" -> "df(15)$13"	[label=Add];
 	"df(15)$14" -> "1(15)"	[label=drop];
 	"df(15)$14" -> "df(15)$13"	[label=drop];
-	"df(15)$14" -> "[<_ast.Constant object at 0x12f8d1bb0>, <_ast.Constant object at 0x12f8d1be0>, <_ast.Constant object at 0x12f8d1c10>, <_ast.Constant \
-object at 0x12f8d1c40>, <_ast.Constant object at 0x12f8d1c70>, <_ast.Constant object at 0x12f8d1ca0>, <_ast.Constant object at 0x12f8d1cd0>, <_\
-ast.Constant object at 0x12f8d1d00>, <_ast.Constant object at 0x12f8d1d30>](15)"	[label=drop];
-	"[<_ast.Constant object at 0x12f8d1f40>, <_ast.Constant object at 0x12f8d1f70>, <_ast.Constant object at 0x12f8d1fa0>, <_ast.Constant \
-object at 0x12f8d1fd0>, <_ast.Constant object at 0x12f8d3040>](0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"del_cols_list(0)$0" -> "[<_ast.Constant object at 0x12f8d1f40>, <_ast.Constant object at 0x12f8d1f70>, <_ast.Constant object at 0x12f8d1fa0>, <_ast.Constant \
-object at 0x12f8d1fd0>, <_ast.Constant object at 0x12f8d3040>](0)"	[label=assignedFrom];
+	"df(15)$14" -> "[<_ast.Constant object at 0x7fd4d0988820>, <_ast.Constant object at 0x7fd4d0988850>, <_ast.Constant object at 0x7fd4d0988880>, <_\
+ast.Constant object at 0x7fd4d09888b0>, <_ast.Constant object at 0x7fd4d09888e0>, <_ast.Constant object at 0x7fd4d0988910>, <_ast.Constant \
+object at 0x7fd4d0988940>, <_ast.Constant object at 0x7fd4d0988970>, <_ast.Constant object at 0x7fd4d09889a0>](15)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d0988b80>, <_ast.Constant object at 0x7fd4d0988bb0>, <_ast.Constant object at 0x7fd4d0988be0>, <_\
+ast.Constant object at 0x7fd4d0988c10>, <_ast.Constant object at 0x7fd4d0988c40>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"del_cols_list(0)$0" -> "[<_ast.Constant object at 0x7fd4d0988b80>, <_ast.Constant object at 0x7fd4d0988bb0>, <_ast.Constant object at 0x7fd4d0988be0>, <_\
+ast.Constant object at 0x7fd4d0988c10>, <_ast.Constant object at 0x7fd4d0988c40>](0)"	[label=assignedFrom];
 	"df(16)" -> "del_cols[0]"	[label=_argToVar];
 	"cols(16)" -> "del_cols[1]"	[label=_argToVar];
 	"del_cols_list_(16)$0" -> "df(16)"	[label=assignedFrom];
@@ -1462,69 +1432,96 @@ object at 0x12f8d1fd0>, <_ast.Constant object at 0x12f8d3040>](0)"	[label=assign
 	"df(17)" -> "encode_categoric_single[0]"	[label=_argToVar];
 	"cat_cols(17)$0" -> "[](17)"	[label=assignedFrom];
 	"cat_cols(17)$1" -> "df(17)"	[label=tolist];
-	"cat_cols(17)$1" -> "[<_ast.Constant object at 0x12f8d3be0>](17)"	[label=tolist];
+	"cat_cols(17)$1" -> "[<_ast.Constant object at 0x7fd4d097d880>](17)"	[label=tolist];
 	"cat(17)" -> "cat_cols(17)$1"	[label=iteratorOf];
 	"df(17)$0" -> "df(17)"	[label=fit_transform];
 	"df(17)$0" -> "cat(17)"	[label=fit_transform];
 	"df(17)$0" -> "df(17)$0"	[label=fit_transform];
 	"df(17)$0" -> "lbl(17)"	[label=fit_transform];
 	"df(17)$0" -> "list(17)"	[label=fit_transform];
+	"print[748/8]" -> "error: (17)"	[label=print];
+	"print[748/8]" -> "str(17)"	[label=print];
+	"print[748/8]" -> "e(17)"	[label=print];
 	"dtrain(18)" -> "encode_categoric[0]"	[label=_argToVar];
 	"dtest(18)" -> "encode_categoric[1]"	[label=_argToVar];
 	"objs_n(18)$0" -> "dtrain(18)"	[label=len];
 	"dfmerge(18)$0" -> "pd(18)"	[label=concat];
-	"dfmerge(18)$0" -> "[<_ast.Name object at 0x12f8d4670>, <_ast.Name object at 0x12f8d46a0>](18)"	[label=concat];
+	"dfmerge(18)$0" -> "[<_ast.Name object at 0x7fd4d09a4280>, <_ast.Name object at 0x7fd4d09a42b0>](18)"	[label=concat];
 	"dfmerge(18)$0" -> "0(18)"	[label=concat];
 	"cat_cols(18)$0" -> "[](18)"	[label=assignedFrom];
 	"cat_cols(18)$1" -> "dfmerge(18)$0"	[label=tolist];
-	"cat_cols(18)$1" -> "[<_ast.Constant object at 0x12f8d4a30>](18)"	[label=tolist];
+	"cat_cols(18)$1" -> "[<_ast.Constant object at 0x7fd4d09a4670>](18)"	[label=tolist];
 	"cat(18)" -> "cat_cols(18)$1"	[label=iteratorOf];
 	"dfmerge(18)$1" -> "dfmerge(18)$0"	[label=fit_transform];
 	"dfmerge(18)$1" -> "cat(18)"	[label=fit_transform];
 	"dfmerge(18)$1" -> "dfmerge(18)$1"	[label=fit_transform];
 	"dfmerge(18)$1" -> "lbl(18)"	[label=fit_transform];
 	"dfmerge(18)$1" -> "list(18)"	[label=fit_transform];
+	"print[761/8]" -> "error: (18)"	[label=print];
+	"print[761/8]" -> "str(18)"	[label=print];
+	"print[761/8]" -> "e(18)"	[label=print];
 	"dtrain(18)$0" -> "objs_n(18)$0"	[label=assignedFrom];
 	"dtrain(18)$0" -> "dfmerge(18)$1"	[label=assignedFrom];
 	"dtest(18)$0" -> "objs_n(18)$0"	[label=assignedFrom];
 	"dtest(18)$0" -> "dfmerge(18)$1"	[label=assignedFrom];
 	"train(0)$12" -> "train(0)$11"	[label=encode_categoric_single];
+	"test(0)$11" -> "test(0)$10"	[label=encode_categoric_single];
+	"y_fc(0)$0" -> "train(0)$12"	[label=assignedFrom];
+	"y_fc(0)$0" -> "fc(0)"	[label=assignedFrom];
 	"fc(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8dd5b0>, <_ast.Constant object at 0x12f8dd8b0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"X(0)$0" -> "1(0)"	[label=drop];
+	"X(0)$0" -> "train(0)$12"	[label=drop];
+	"X(0)$0" -> "[<_ast.Constant object at 0x7fd4d09af430>, <_ast.Constant object at 0x7fd4d09af460>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d09af430>, <_ast.Constant object at 0x7fd4d09af460>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"y(0)$0" -> "train(0)$12"	[label=assignedFrom];
 	"y(0)$0" -> "scalar_coupling_constant(0)"	[label=assignedFrom];
 	"scalar_coupling_constant(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "test(0)$11"	[label=copy];
+	"X size(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[775/0]" -> "X(0)$0"	[label=print];
+	"print[775/0]" -> "X size(0)"	[label=print];
+	"X_test size(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[776/0]" -> "X_test(0)$0"	[label=print];
+	"print[776/0]" -> "X_test size(0)"	[label=print];
+	"dtest size(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[777/0]" -> "test(0)$11"	[label=print];
+	"print[777/0]" -> "dtest size(0)"	[label=print];
+	"y_fc size(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[778/0]" -> "y_fc(0)$0"	[label=print];
+	"print[778/0]" -> "y_fc size(0)"	[label=print];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
-	"[<_ast.Constant object at 0x12f8d23d0>, <_ast.Constant object at 0x12f8d2400>, <_ast.Constant object at 0x12f8d2430>, <_ast.Constant \
-object at 0x12f8d2100>, <_ast.Constant object at 0x12f8d2460>, <_ast.Constant object at 0x12f8d2490>, <_ast.Constant object at 0x12f8d24c0>, <_\
-ast.Constant object at 0x12f8d24f0>, <_ast.Constant object at 0x12f8d2520>, <_ast.Constant object at 0x12f8d2550>, <_ast.Constant \
-object at 0x12f8d2580>, <_ast.Constant object at 0x12f8d25b0>, <_ast.Constant object at 0x12f8d25e0>, <_ast.Constant object at 0x12f8d2610>, <_\
-ast.Constant object at 0x12f8d2640>, <_ast.Constant object at 0x12f8d2370>, <_ast.Constant object at 0x12f8d2670>, <_ast.Constant \
-object at 0x12f8d26a0>, <_ast.Constant object at 0x12f8d26d0>, <_ast.Constant object at 0x12f8d2700>, <_ast.Constant object at 0x12f8d2730>, <_\
-ast.Constant object at 0x12f8d2760>, <_ast.Constant object at 0x12f8d2790>, <_ast.Constant object at 0x12f8d27c0>, <_ast.Constant \
-object at 0x12f8d2820>, <_ast.Constant object at 0x12f8d27f0>, <_ast.Constant object at 0x12f8d2850>, <_ast.Constant object at 0x12f8d2880>, <_\
-ast.Constant object at 0x12f8d28b0>, <_ast.Constant object at 0x12f8d28e0>, <_ast.Constant object at 0x12f8d2910>, <_ast.Constant \
-object at 0x12f8d2940>, <_ast.Constant object at 0x12f8d2970>, <_ast.Constant object at 0x12f8d20a0>, <_ast.Constant object at 0x12f8d29a0>, <_\
-ast.Constant object at 0x12f8d29d0>, <_ast.Constant object at 0x12f8d2a00>, <_ast.Constant object at 0x12f8d2a30>, <_ast.Constant \
-object at 0x12f8d2a60>, <_ast.Constant object at 0x12f8d2a90>, <_ast.Constant object at 0x12f8d2ac0>, <_ast.Constant object at 0x12f8d2af0>, <_\
-ast.Constant object at 0x12f8d2b20>, <_ast.Constant object at 0x12f8d2b80>, <_ast.Constant object at 0x12f8d2be0>, <_ast.Constant \
-object at 0x12f8d2c10>, <_ast.Constant object at 0x12f8d2310>, <_ast.Constant object at 0x12f8d2c40>, <_ast.Constant object at 0x12f8d2ca0>, <_\
-ast.Constant object at 0x12f8d2cd0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"good_columns(0)$0" -> "[<_ast.Constant object at 0x12f8d23d0>, <_ast.Constant object at 0x12f8d2400>, <_ast.Constant object at 0x12f8d2430>, <_ast.Constant \
-object at 0x12f8d2100>, <_ast.Constant object at 0x12f8d2460>, <_ast.Constant object at 0x12f8d2490>, <_ast.Constant object at 0x12f8d24c0>, <_\
-ast.Constant object at 0x12f8d24f0>, <_ast.Constant object at 0x12f8d2520>, <_ast.Constant object at 0x12f8d2550>, <_ast.Constant \
-object at 0x12f8d2580>, <_ast.Constant object at 0x12f8d25b0>, <_ast.Constant object at 0x12f8d25e0>, <_ast.Constant object at 0x12f8d2610>, <_\
-ast.Constant object at 0x12f8d2640>, <_ast.Constant object at 0x12f8d2370>, <_ast.Constant object at 0x12f8d2670>, <_ast.Constant \
-object at 0x12f8d26a0>, <_ast.Constant object at 0x12f8d26d0>, <_ast.Constant object at 0x12f8d2700>, <_ast.Constant object at 0x12f8d2730>, <_\
-ast.Constant object at 0x12f8d2760>, <_ast.Constant object at 0x12f8d2790>, <_ast.Constant object at 0x12f8d27c0>, <_ast.Constant \
-object at 0x12f8d2820>, <_ast.Constant object at 0x12f8d27f0>, <_ast.Constant object at 0x12f8d2850>, <_ast.Constant object at 0x12f8d2880>, <_\
-ast.Constant object at 0x12f8d28b0>, <_ast.Constant object at 0x12f8d28e0>, <_ast.Constant object at 0x12f8d2910>, <_ast.Constant \
-object at 0x12f8d2940>, <_ast.Constant object at 0x12f8d2970>, <_ast.Constant object at 0x12f8d20a0>, <_ast.Constant object at 0x12f8d29a0>, <_\
-ast.Constant object at 0x12f8d29d0>, <_ast.Constant object at 0x12f8d2a00>, <_ast.Constant object at 0x12f8d2a30>, <_ast.Constant \
-object at 0x12f8d2a60>, <_ast.Constant object at 0x12f8d2a90>, <_ast.Constant object at 0x12f8d2ac0>, <_ast.Constant object at 0x12f8d2af0>, <_\
-ast.Constant object at 0x12f8d2b20>, <_ast.Constant object at 0x12f8d2b80>, <_ast.Constant object at 0x12f8d2be0>, <_ast.Constant \
-object at 0x12f8d2c10>, <_ast.Constant object at 0x12f8d2310>, <_ast.Constant object at 0x12f8d2c40>, <_ast.Constant object at 0x12f8d2ca0>, <_\
-ast.Constant object at 0x12f8d2cd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d09afee0>, <_ast.Constant object at 0x7fd4d09aff10>, <_ast.Constant object at 0x7fd4d09aff40>, <_\
+ast.Constant object at 0x7fd4d09aff70>, <_ast.Constant object at 0x7fd4d09affa0>, <_ast.Constant object at 0x7fd4d09affd0>, <_ast.Constant \
+object at 0x7fd4d099a040>, <_ast.Constant object at 0x7fd4d099a070>, <_ast.Constant object at 0x7fd4d099a0a0>, <_ast.Constant object \
+at 0x7fd4d099a0d0>, <_ast.Constant object at 0x7fd4d099a100>, <_ast.Constant object at 0x7fd4d099a130>, <_ast.Constant object at \
+0x7fd4d099a160>, <_ast.Constant object at 0x7fd4d099a190>, <_ast.Constant object at 0x7fd4d099a1c0>, <_ast.Constant object at 0x7fd4d099a1f0>, <_\
+ast.Constant object at 0x7fd4d099a220>, <_ast.Constant object at 0x7fd4d099a250>, <_ast.Constant object at 0x7fd4d099a280>, <_ast.Constant \
+object at 0x7fd4d099a2b0>, <_ast.Constant object at 0x7fd4d099a2e0>, <_ast.Constant object at 0x7fd4d099a310>, <_ast.Constant object \
+at 0x7fd4d099a340>, <_ast.Constant object at 0x7fd4d099a370>, <_ast.Constant object at 0x7fd4d099a3a0>, <_ast.Constant object at \
+0x7fd4d099a3d0>, <_ast.Constant object at 0x7fd4d099a400>, <_ast.Constant object at 0x7fd4d099a430>, <_ast.Constant object at 0x7fd4d099a460>, <_\
+ast.Constant object at 0x7fd4d099a490>, <_ast.Constant object at 0x7fd4d099a4c0>, <_ast.Constant object at 0x7fd4d099a4f0>, <_ast.Constant \
+object at 0x7fd4d099a520>, <_ast.Constant object at 0x7fd4d099a550>, <_ast.Constant object at 0x7fd4d099a580>, <_ast.Constant object \
+at 0x7fd4d099a5b0>, <_ast.Constant object at 0x7fd4d099a5e0>, <_ast.Constant object at 0x7fd4d099a610>, <_ast.Constant object at \
+0x7fd4d099a640>, <_ast.Constant object at 0x7fd4d099a670>, <_ast.Constant object at 0x7fd4d099a6a0>, <_ast.Constant object at 0x7fd4d099a6d0>, <_\
+ast.Constant object at 0x7fd4d099a700>, <_ast.Constant object at 0x7fd4d099a730>, <_ast.Constant object at 0x7fd4d099a760>, <_ast.Constant \
+object at 0x7fd4d099a790>, <_ast.Constant object at 0x7fd4d099a7c0>, <_ast.Constant object at 0x7fd4d099a7f0>, <_ast.Constant object \
+at 0x7fd4d099a820>, <_ast.Constant object at 0x7fd4d099a850>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"good_columns(0)$0" -> "[<_ast.Constant object at 0x7fd4d09afee0>, <_ast.Constant object at 0x7fd4d09aff10>, <_ast.Constant object at 0x7fd4d09aff40>, <_\
+ast.Constant object at 0x7fd4d09aff70>, <_ast.Constant object at 0x7fd4d09affa0>, <_ast.Constant object at 0x7fd4d09affd0>, <_ast.Constant \
+object at 0x7fd4d099a040>, <_ast.Constant object at 0x7fd4d099a070>, <_ast.Constant object at 0x7fd4d099a0a0>, <_ast.Constant object \
+at 0x7fd4d099a0d0>, <_ast.Constant object at 0x7fd4d099a100>, <_ast.Constant object at 0x7fd4d099a130>, <_ast.Constant object at \
+0x7fd4d099a160>, <_ast.Constant object at 0x7fd4d099a190>, <_ast.Constant object at 0x7fd4d099a1c0>, <_ast.Constant object at 0x7fd4d099a1f0>, <_\
+ast.Constant object at 0x7fd4d099a220>, <_ast.Constant object at 0x7fd4d099a250>, <_ast.Constant object at 0x7fd4d099a280>, <_ast.Constant \
+object at 0x7fd4d099a2b0>, <_ast.Constant object at 0x7fd4d099a2e0>, <_ast.Constant object at 0x7fd4d099a310>, <_ast.Constant object \
+at 0x7fd4d099a340>, <_ast.Constant object at 0x7fd4d099a370>, <_ast.Constant object at 0x7fd4d099a3a0>, <_ast.Constant object at \
+0x7fd4d099a3d0>, <_ast.Constant object at 0x7fd4d099a400>, <_ast.Constant object at 0x7fd4d099a430>, <_ast.Constant object at 0x7fd4d099a460>, <_\
+ast.Constant object at 0x7fd4d099a490>, <_ast.Constant object at 0x7fd4d099a4c0>, <_ast.Constant object at 0x7fd4d099a4f0>, <_ast.Constant \
+object at 0x7fd4d099a520>, <_ast.Constant object at 0x7fd4d099a550>, <_ast.Constant object at 0x7fd4d099a580>, <_ast.Constant object \
+at 0x7fd4d099a5b0>, <_ast.Constant object at 0x7fd4d099a5e0>, <_ast.Constant object at 0x7fd4d099a610>, <_ast.Constant object at \
+0x7fd4d099a640>, <_ast.Constant object at 0x7fd4d099a670>, <_ast.Constant object at 0x7fd4d099a6a0>, <_ast.Constant object at 0x7fd4d099a6d0>, <_\
+ast.Constant object at 0x7fd4d099a700>, <_ast.Constant object at 0x7fd4d099a730>, <_ast.Constant object at 0x7fd4d099a760>, <_ast.Constant \
+object at 0x7fd4d099a790>, <_ast.Constant object at 0x7fd4d099a7c0>, <_ast.Constant object at 0x7fd4d099a7f0>, <_ast.Constant object \
+at 0x7fd4d099a820>, <_ast.Constant object at 0x7fd4d099a850>](0)"	[label=assignedFrom];
 	"X(0)$1" -> "X(0)$0"	[label=copy];
 	"X(0)$1" -> "good_columns(0)$0"	[label=copy];
 	"X_test(0)$1" -> "X_test(0)$0"	[label=copy];
@@ -1592,20 +1589,20 @@ ast.Constant object at 0x12f8d2cd0>](0)"	[label=assignedFrom];
 	"0.3(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"1.0(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"X_short(0)$0" -> "pd(0)$0"	[label=DataFrame];
-	"X_short(0)$0" -> "y_fc(0)$0"	[label=DataFrame];
 	"X_short(0)$0" -> "len(0)"	[label=DataFrame];
 	"X_short(0)$0" -> "type(0)"	[label=DataFrame];
+	"X_short(0)$0" -> "y_fc(0)$0"	[label=DataFrame];
 	"X_short(0)$0" -> "X(0)$1"	[label=DataFrame];
 	"X_short(0)$0" -> "ind(0)"	[label=DataFrame];
 	"X_short(0)$0" -> "oof(0)"	[label=DataFrame];
 	"X_short(0)$0" -> "target(0)"	[label=DataFrame];
 	"X_short(0)$0" -> "list(0)"	[label=DataFrame];
-	"X_short(0)$0" -> "[<_ast.Constant object at 0x12fb00df0>](0)"	[label=DataFrame];
+	"X_short(0)$0" -> "[<_ast.Constant object at 0x7fd4d09ada60>](0)"	[label=DataFrame];
 	"ind(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"oof(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"target(0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"list(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb00df0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d09ada60>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"X_short_test(0)$0" -> "pd(0)$0"	[label=DataFrame];
 	"X_short_test(0)$0" -> "len(0)"	[label=DataFrame];
 	"X_short_test(0)$0" -> "type(0)"	[label=DataFrame];
@@ -1613,21 +1610,28 @@ ast.Constant object at 0x12f8d2cd0>](0)"	[label=assignedFrom];
 	"X_short_test(0)$0" -> "ind(0)"	[label=DataFrame];
 	"X_short_test(0)$0" -> "list(0)"	[label=DataFrame];
 	"X_short_test(0)$0" -> "prediction(0)"	[label=DataFrame];
-	"X_short_test(0)$0" -> "[<_ast.Constant object at 0x12fb0a370>](0)"	[label=DataFrame];
+	"X_short_test(0)$0" -> "[<_ast.Constant object at 0x7fd4d09adf40>](0)"	[label=DataFrame];
 	"prediction(0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb0a370>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4d09adf40>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"t(0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"t(0)" -> "type(0)"	[label=iteratorOf];
+	"t(0)" -> "X(0)$1"	[label=iteratorOf];
+	"t(0)" -> "X(0)$3"	[label=iteratorOf];
 	"X(0)$3" -> "X(0)$2"	[label=copy];
 	"X(0)$3" -> "good_columns(0)$1"	[label=copy];
-	"X_t(0)$0" -> "t(0)"	[label=assignedFrom];
+	"Training of type (0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[858/4]" -> "t(0)"	[label=print];
+	"print[858/4]" -> "Training of type (0)"	[label=print];
 	"X_t(0)$0" -> "type(0)"	[label=assignedFrom];
 	"X_t(0)$0" -> "X(0)$1"	[label=assignedFrom];
-	"X_test_t(0)$0" -> "t(0)"	[label=assignedFrom];
+	"X_t(0)$0" -> "t(0)"	[label=assignedFrom];
 	"X_test_t(0)$0" -> "type(0)"	[label=assignedFrom];
 	"X_test_t(0)$0" -> "X_test(0)$1"	[label=assignedFrom];
-	"y_t(0)$0" -> "t(0)"	[label=assignedFrom];
+	"X_test_t(0)$0" -> "t(0)"	[label=assignedFrom];
 	"y_t(0)$0" -> "type(0)"	[label=assignedFrom];
 	"y_t(0)$0" -> "X_short(0)$0"	[label=assignedFrom];
 	"y_t(0)$0" -> "target(0)"	[label=assignedFrom];
+	"y_t(0)$0" -> "t(0)"	[label=assignedFrom];
 	"result_dict_lgb_oof(0)$0" -> "lgb(0)"	[label=train_model_regression];
 	"result_dict_lgb_oof(0)$0" -> "n_estimators_default(0)$0"	[label=train_model_regression];
 	"result_dict_lgb_oof(0)$0" -> "folds(0)$0"	[label=train_model_regression];
@@ -1655,36 +1659,38 @@ ast.Constant object at 0x12f8d2cd0>](0)"	[label=assignedFrom];
 	"X_test(0)$2" -> "X_test(0)$1"	[label=assignedFrom];
 	"X_test(0)$2" -> "prediction(0)"	[label=assignedFrom];
 	"X_test(0)$2" -> "X_short_test(0)$1"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fadf370>, <_ast.Constant object at 0x12fadf3a0>, <_ast.Constant object at 0x12fadf3d0>, <_ast.Constant \
-object at 0x12fadf400>, <_ast.Constant object at 0x12fadf430>, <_ast.Constant object at 0x12fadf460>, <_ast.Constant object at 0x12fadf490>, <_\
-ast.Constant object at 0x12fadf4c0>, <_ast.Constant object at 0x12fadf4f0>, <_ast.Constant object at 0x12fadf520>, <_ast.Constant \
-object at 0x12fadf550>, <_ast.Constant object at 0x12fadf580>, <_ast.Constant object at 0x12fadf5b0>, <_ast.Constant object at 0x12fadf5e0>, <_\
-ast.Constant object at 0x12fadf610>, <_ast.Constant object at 0x12fadf640>, <_ast.Constant object at 0x12fadf670>, <_ast.Constant \
-object at 0x12fadf6a0>, <_ast.Constant object at 0x12fadf6d0>, <_ast.Constant object at 0x12fadf700>, <_ast.Constant object at 0x12fadf730>, <_\
-ast.Constant object at 0x12fadf760>, <_ast.Constant object at 0x12fadf790>, <_ast.Constant object at 0x12fadf7c0>, <_ast.Constant \
-object at 0x12fadf7f0>, <_ast.Constant object at 0x12fadf820>, <_ast.Constant object at 0x12fadf850>, <_ast.Constant object at 0x12fadf880>, <_\
-ast.Constant object at 0x12fadf8b0>, <_ast.Constant object at 0x12fadf8e0>, <_ast.Constant object at 0x12fadf910>, <_ast.Constant \
-object at 0x12fadf940>, <_ast.Constant object at 0x12fadf970>, <_ast.Constant object at 0x12fadf9a0>, <_ast.Constant object at 0x12fadf9d0>, <_\
-ast.Constant object at 0x12fadfa00>, <_ast.Constant object at 0x12fadfa30>, <_ast.Constant object at 0x12fadfa60>, <_ast.Constant \
-object at 0x12fadfa90>, <_ast.Constant object at 0x12fadfac0>, <_ast.Constant object at 0x12fadfaf0>, <_ast.Constant object at 0x12fadfb20>, <_\
-ast.Constant object at 0x12fadfb50>, <_ast.Constant object at 0x12fadfb80>, <_ast.Constant object at 0x12fadfbb0>, <_ast.Constant \
-object at 0x12fadfbe0>, <_ast.Constant object at 0x12fadfc10>, <_ast.Constant object at 0x12fadfc40>, <_ast.Constant object at 0x12fadfc70>, <_\
-ast.Constant object at 0x12fadfca0>, <_ast.Constant object at 0x12fadfcd0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"good_columns(0)$1" -> "[<_ast.Constant object at 0x12fadf370>, <_ast.Constant object at 0x12fadf3a0>, <_ast.Constant object at 0x12fadf3d0>, <_ast.Constant \
-object at 0x12fadf400>, <_ast.Constant object at 0x12fadf430>, <_ast.Constant object at 0x12fadf460>, <_ast.Constant object at 0x12fadf490>, <_\
-ast.Constant object at 0x12fadf4c0>, <_ast.Constant object at 0x12fadf4f0>, <_ast.Constant object at 0x12fadf520>, <_ast.Constant \
-object at 0x12fadf550>, <_ast.Constant object at 0x12fadf580>, <_ast.Constant object at 0x12fadf5b0>, <_ast.Constant object at 0x12fadf5e0>, <_\
-ast.Constant object at 0x12fadf610>, <_ast.Constant object at 0x12fadf640>, <_ast.Constant object at 0x12fadf670>, <_ast.Constant \
-object at 0x12fadf6a0>, <_ast.Constant object at 0x12fadf6d0>, <_ast.Constant object at 0x12fadf700>, <_ast.Constant object at 0x12fadf730>, <_\
-ast.Constant object at 0x12fadf760>, <_ast.Constant object at 0x12fadf790>, <_ast.Constant object at 0x12fadf7c0>, <_ast.Constant \
-object at 0x12fadf7f0>, <_ast.Constant object at 0x12fadf820>, <_ast.Constant object at 0x12fadf850>, <_ast.Constant object at 0x12fadf880>, <_\
-ast.Constant object at 0x12fadf8b0>, <_ast.Constant object at 0x12fadf8e0>, <_ast.Constant object at 0x12fadf910>, <_ast.Constant \
-object at 0x12fadf940>, <_ast.Constant object at 0x12fadf970>, <_ast.Constant object at 0x12fadf9a0>, <_ast.Constant object at 0x12fadf9d0>, <_\
-ast.Constant object at 0x12fadfa00>, <_ast.Constant object at 0x12fadfa30>, <_ast.Constant object at 0x12fadfa60>, <_ast.Constant \
-object at 0x12fadfa90>, <_ast.Constant object at 0x12fadfac0>, <_ast.Constant object at 0x12fadfaf0>, <_ast.Constant object at 0x12fadfb20>, <_\
-ast.Constant object at 0x12fadfb50>, <_ast.Constant object at 0x12fadfb80>, <_ast.Constant object at 0x12fadfbb0>, <_ast.Constant \
-object at 0x12fadfbe0>, <_ast.Constant object at 0x12fadfc10>, <_ast.Constant object at 0x12fadfc40>, <_ast.Constant object at 0x12fadfc70>, <_\
-ast.Constant object at 0x12fadfca0>, <_ast.Constant object at 0x12fadfcd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d098cfd0>, <_ast.Constant object at 0x7fd4d098c190>, <_ast.Constant object at 0x7fd4d098ceb0>, <_\
+ast.Constant object at 0x7fd4d098cac0>, <_ast.Constant object at 0x7fd4d09a6040>, <_ast.Constant object at 0x7fd4d09a6070>, <_ast.Constant \
+object at 0x7fd4d09a60a0>, <_ast.Constant object at 0x7fd4d09a60d0>, <_ast.Constant object at 0x7fd4d09a6100>, <_ast.Constant object \
+at 0x7fd4d09a6130>, <_ast.Constant object at 0x7fd4d09a6160>, <_ast.Constant object at 0x7fd4d09a6190>, <_ast.Constant object at \
+0x7fd4d09a61c0>, <_ast.Constant object at 0x7fd4d09a61f0>, <_ast.Constant object at 0x7fd4d09a6220>, <_ast.Constant object at 0x7fd4d09a6250>, <_\
+ast.Constant object at 0x7fd4d09a62b0>, <_ast.Constant object at 0x7fd4d09a6280>, <_ast.Constant object at 0x7fd4d09a6310>, <_ast.Constant \
+object at 0x7fd4d09a63a0>, <_ast.Constant object at 0x7fd4d09a63d0>, <_ast.Constant object at 0x7fd4d09a6400>, <_ast.Constant object \
+at 0x7fd4d09a6430>, <_ast.Constant object at 0x7fd4d09a6460>, <_ast.Constant object at 0x7fd4d09a6490>, <_ast.Constant object at \
+0x7fd4d09a64c0>, <_ast.Constant object at 0x7fd4d09a64f0>, <_ast.Constant object at 0x7fd4d09a6520>, <_ast.Constant object at 0x7fd4d09a6550>, <_\
+ast.Constant object at 0x7fd4d09a6580>, <_ast.Constant object at 0x7fd4d09a65b0>, <_ast.Constant object at 0x7fd4d09a65e0>, <_ast.Constant \
+object at 0x7fd4d09a6610>, <_ast.Constant object at 0x7fd4d09a6640>, <_ast.Constant object at 0x7fd4d09a6370>, <_ast.Constant object \
+at 0x7fd4d09a6670>, <_ast.Constant object at 0x7fd4d09a66a0>, <_ast.Constant object at 0x7fd4d09a66d0>, <_ast.Constant object at \
+0x7fd4d09a6700>, <_ast.Constant object at 0x7fd4d09a6730>, <_ast.Constant object at 0x7fd4d09a6760>, <_ast.Constant object at 0x7fd4d09a6790>, <_\
+ast.Constant object at 0x7fd4d09a67c0>, <_ast.Constant object at 0x7fd4d09a67f0>, <_ast.Constant object at 0x7fd4d09a6820>, <_ast.Constant \
+object at 0x7fd4d09a6850>, <_ast.Constant object at 0x7fd4d09a6880>, <_ast.Constant object at 0x7fd4d09a68b0>, <_ast.Constant object \
+at 0x7fd4d09a68e0>, <_ast.Constant object at 0x7fd4d09a6910>, <_ast.Constant object at 0x7fd4d09a6940>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"good_columns(0)$1" -> "[<_ast.Constant object at 0x7fd4d098cfd0>, <_ast.Constant object at 0x7fd4d098c190>, <_ast.Constant object at 0x7fd4d098ceb0>, <_\
+ast.Constant object at 0x7fd4d098cac0>, <_ast.Constant object at 0x7fd4d09a6040>, <_ast.Constant object at 0x7fd4d09a6070>, <_ast.Constant \
+object at 0x7fd4d09a60a0>, <_ast.Constant object at 0x7fd4d09a60d0>, <_ast.Constant object at 0x7fd4d09a6100>, <_ast.Constant object \
+at 0x7fd4d09a6130>, <_ast.Constant object at 0x7fd4d09a6160>, <_ast.Constant object at 0x7fd4d09a6190>, <_ast.Constant object at \
+0x7fd4d09a61c0>, <_ast.Constant object at 0x7fd4d09a61f0>, <_ast.Constant object at 0x7fd4d09a6220>, <_ast.Constant object at 0x7fd4d09a6250>, <_\
+ast.Constant object at 0x7fd4d09a62b0>, <_ast.Constant object at 0x7fd4d09a6280>, <_ast.Constant object at 0x7fd4d09a6310>, <_ast.Constant \
+object at 0x7fd4d09a63a0>, <_ast.Constant object at 0x7fd4d09a63d0>, <_ast.Constant object at 0x7fd4d09a6400>, <_ast.Constant object \
+at 0x7fd4d09a6430>, <_ast.Constant object at 0x7fd4d09a6460>, <_ast.Constant object at 0x7fd4d09a6490>, <_ast.Constant object at \
+0x7fd4d09a64c0>, <_ast.Constant object at 0x7fd4d09a64f0>, <_ast.Constant object at 0x7fd4d09a6520>, <_ast.Constant object at 0x7fd4d09a6550>, <_\
+ast.Constant object at 0x7fd4d09a6580>, <_ast.Constant object at 0x7fd4d09a65b0>, <_ast.Constant object at 0x7fd4d09a65e0>, <_ast.Constant \
+object at 0x7fd4d09a6610>, <_ast.Constant object at 0x7fd4d09a6640>, <_ast.Constant object at 0x7fd4d09a6370>, <_ast.Constant object \
+at 0x7fd4d09a6670>, <_ast.Constant object at 0x7fd4d09a66a0>, <_ast.Constant object at 0x7fd4d09a66d0>, <_ast.Constant object at \
+0x7fd4d09a6700>, <_ast.Constant object at 0x7fd4d09a6730>, <_ast.Constant object at 0x7fd4d09a6760>, <_ast.Constant object at 0x7fd4d09a6790>, <_\
+ast.Constant object at 0x7fd4d09a67c0>, <_ast.Constant object at 0x7fd4d09a67f0>, <_ast.Constant object at 0x7fd4d09a6820>, <_ast.Constant \
+object at 0x7fd4d09a6850>, <_ast.Constant object at 0x7fd4d09a6880>, <_ast.Constant object at 0x7fd4d09a68b0>, <_ast.Constant object \
+at 0x7fd4d09a68e0>, <_ast.Constant object at 0x7fd4d09a6910>, <_ast.Constant object at 0x7fd4d09a6940>](0)"	[label=assignedFrom];
 	"X_test(0)$3" -> "X_test(0)$2"	[label=copy];
 	"X_test(0)$3" -> "good_columns(0)$1"	[label=copy];
 	"params(0)$1" -> "1(0)"	[label=assignedFrom];
@@ -1725,8 +1731,8 @@ ast.Constant object at 0x12fadfca0>, <_ast.Constant object at 0x12fadfcd0>](0)"	
 	"X_short(0)$2" -> "target(0)"	[label=DataFrame];
 	"X_short(0)$2" -> "list(0)"	[label=DataFrame];
 	"X_short(0)$2" -> "X(0)$3"	[label=DataFrame];
-	"X_short(0)$2" -> "[<_ast.Constant object at 0x12fb08c10>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fb08c10>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"X_short(0)$2" -> "[<_ast.Constant object at 0x7fd4d09777c0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd4d09777c0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
 	"X_short_test(0)$2" -> "pd(0)$0"	[label=DataFrame];
 	"X_short_test(0)$2" -> "len(0)"	[label=DataFrame];
 	"X_short_test(0)$2" -> "type(0)"	[label=DataFrame];
@@ -1734,17 +1740,19 @@ ast.Constant object at 0x12fadfca0>, <_ast.Constant object at 0x12fadfcd0>](0)"	
 	"X_short_test(0)$2" -> "list(0)"	[label=DataFrame];
 	"X_short_test(0)$2" -> "prediction(0)"	[label=DataFrame];
 	"X_short_test(0)$2" -> "X_test(0)$3"	[label=DataFrame];
-	"X_short_test(0)$2" -> "[<_ast.Constant object at 0x12fb0c100>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12fb0c100>](0)" -> "eachtype.ipynb"	[label=appearsIn];
-	"X_t(0)$1" -> "t(0)"	[label=assignedFrom];
+	"X_short_test(0)$2" -> "[<_ast.Constant object at 0x7fd4d0977cd0>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd4d0977cd0>](0)" -> "eachtype.ipynb"	[label=appearsIn];
+	"print[950/4]" -> "t(0)"	[label=print];
+	"print[950/4]" -> "Training of type (0)"	[label=print];
 	"X_t(0)$1" -> "type(0)"	[label=assignedFrom];
+	"X_t(0)$1" -> "t(0)"	[label=assignedFrom];
 	"X_t(0)$1" -> "X(0)$3"	[label=assignedFrom];
-	"X_test_t(0)$1" -> "t(0)"	[label=assignedFrom];
 	"X_test_t(0)$1" -> "type(0)"	[label=assignedFrom];
+	"X_test_t(0)$1" -> "t(0)"	[label=assignedFrom];
 	"X_test_t(0)$1" -> "X_test(0)$3"	[label=assignedFrom];
-	"y_t(0)$1" -> "t(0)"	[label=assignedFrom];
 	"y_t(0)$1" -> "type(0)"	[label=assignedFrom];
 	"y_t(0)$1" -> "target(0)"	[label=assignedFrom];
+	"y_t(0)$1" -> "t(0)"	[label=assignedFrom];
 	"y_t(0)$1" -> "X_short(0)$2"	[label=assignedFrom];
 	"result_dict_lgb3(0)$0" -> "lgb(0)"	[label=train_model_regression];
 	"result_dict_lgb3(0)$0" -> "n_estimators_default(0)$0"	[label=train_model_regression];

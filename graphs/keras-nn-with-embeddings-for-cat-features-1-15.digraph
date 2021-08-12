@@ -20,57 +20,9 @@ digraph "" {
 	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
 	"filename(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "Memory usage of properties dataframe is :(2)"	[label=print];
-	"print[0]" -> "******************************(2)"	[label=print];
-	"print[0]" -> "Column: (2)"	[label=print];
-	"print[0]" -> "dtype before: (2)"	[label=print];
-	"print[0]" -> "min for this col: (2)"	[label=print];
-	"print[0]" -> "max for this col: (2)"	[label=print];
-	"print[0]" -> "dtype after: (2)"	[label=print];
-	"print[0]" -> "___MEMORY USAGE AFTER COMPLETION:___(2)"	[label=print];
-	"print[0]" -> "Memory usage is: (2)"	[label=print];
-	"print[0]" -> "This is (2)"	[label=print];
-	"print[0]" -> "Fold:(0)"	[label=print];
-	"print[0]" -> "*(0)"	[label=print];
-	"Fold:(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"*(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"print[1]" -> "dirname(0)"	[label=print];
-	"print[1]" -> "df(2)"	[label=print];
-	"print[1]" -> "start_mem_usg(2)$0"	[label=print];
-	"print[1]" -> "col(2)"	[label=print];
-	"print[1]" -> "mx(2)$0"	[label=print];
-	"print[1]" -> "mn(2)$0"	[label=print];
-	"print[1]" -> "df(2)$9"	[label=print];
-	"print[1]" -> "mem_usg(2)$0"	[label=print];
-	"print[1]" -> "100(2)"	[label=print];
-	"print[1]" -> "fold_n(0)"	[label=print];
-	"print[1]" -> "50(0)"	[label=print];
-	"df(2)" -> "reduce_mem_usage[0]"	[label=_argToVar];
-	"start_mem_usg(2)$0" -> "df(2)"	[label=Div];
-	"start_mem_usg(2)$0" -> "1024(2)"	[label=Div];
-	"start_mem_usg(2)$0" -> "2(2)"	[label=Div];
-	"col(2)" -> "df(2)"	[label=iteratorOf];
-	"mx(2)$0" -> "df(2)"	[label=max];
-	"mx(2)$0" -> "col(2)"	[label=max];
-	"mn(2)$0" -> "df(2)"	[label=min];
-	"mn(2)$0" -> "col(2)"	[label=min];
-	"df(2)$9" -> "col(2)"	[label=astype];
-	"df(2)$9" -> "np(2)"	[label=astype];
-	"df(2)$9" -> "df(2)$8"	[label=astype];
-	"mem_usg(2)$0" -> "df(2)$9"	[label=Div];
-	"mem_usg(2)$0" -> "1024(2)"	[label=Div];
-	"mem_usg(2)$0" -> "2(2)"	[label=Div];
-	"fold_n(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"fold_n(0)" -> "building_id(0)"	[label=iteratorOf];
-	"fold_n(0)" -> "train(0)$12"	[label=iteratorOf];
-	"fold_n(0)" -> "kf(0)$0"	[label=iteratorOf];
-	"fold_n(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"50(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"print[2]" -> "filename(0)"	[label=print];
-	"print[2]" -> "col(2)"	[label=print];
-	"print[2]" -> "mem_usg(2)$0"	[label=print];
-	"print[2]" -> " MB(2)"	[label=print];
+	"print[15/8]" -> "os(0)"	[label=print];
+	"print[15/8]" -> "dirname(0)"	[label=print];
+	"print[15/8]" -> "filename(0)"	[label=print];
 	"keras.models" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=importedBy];
 	Model -> "keras.models"	[label=importedBy];
 	"Model(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
@@ -149,12 +101,12 @@ digraph "" {
 	"column_name(1)" -> "average_imputation[1]"	[label=_argToVar];
 	"imputation(1)$0" -> "df(1)"	[label=mean];
 	"imputation(1)$0" -> "column_name(1)"	[label=mean];
-	"imputation(1)$0" -> "[<_ast.Constant object at 0x12f85ee80>](1)"	[label=mean];
+	"imputation(1)$0" -> "[<_ast.Constant object at 0x7fd4c04cca60>](1)"	[label=mean];
 	"df(1)$0" -> "df(1)"	[label=apply];
 	"df(1)$0" -> "column_name(1)"	[label=apply];
 	"df(1)$0" -> "imputation(1)$0"	[label=apply];
 	"df(1)$0" -> "df(1)$0"	[label=apply];
-	"df(1)$0" -> "[<_ast.Name object at 0x12f8f5250>](1)"	[label=apply];
+	"df(1)$0" -> "[<_ast.Name object at 0x7fd4c04cceb0>](1)"	[label=apply];
 	"df(1)$0" -> "timestamp(1)"	[label=apply];
 	"df(1)$0" -> "x(1)"	[label=apply];
 	"building_df(0)$0" -> "pd(0)"	[label=read_csv];
@@ -174,10 +126,10 @@ digraph "" {
 	"left(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"train(0)$2" -> "weather_train(0)$0"	[label=merge];
 	"train(0)$2" -> "train(0)$1"	[label=merge];
-	"train(0)$2" -> "[<_ast.Constant object at 0x12fc4f040>, <_ast.Constant object at 0x12fc4f2b0>](0)"	[label=merge];
-	"train(0)$2" -> "[<_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f5b0>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fc4f040>, <_ast.Constant object at 0x12fc4f2b0>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f640>, <_ast.Constant object at 0x12fc4f5b0>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"train(0)$2" -> "[<_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999580>](0)"	[label=merge];
+	"train(0)$2" -> "[<_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999a60>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999580>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999a60>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"True(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"train(0)$3" -> "train(0)$2"	[label=assignedFrom];
 	"train(0)$3" -> "True(0)"	[label=assignedFrom];
@@ -198,14 +150,14 @@ digraph "" {
 	"train(0)$8" -> "train(0)$7"	[label=average_imputation];
 	"train(0)$8" -> "wind_speed(0)"	[label=average_imputation];
 	"wind_speed(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x12fadec10>, <_ast.Tuple object at 0x12fadeb80>, <_ast.Tuple object at 0x12fade490>, <_ast.Tuple object \
-at 0x12fade550>, <_ast.Tuple object at 0x12fadecd0>, <_ast.Tuple object at 0x12fade700>, <_ast.Tuple object at 0x12fadef40>, <_ast.Tuple \
-object at 0x12fade820>, <_ast.Tuple object at 0x12fadedc0>, <_ast.Tuple object at 0x12fade8e0>, <_ast.Tuple object at 0x12fadefd0>, <_\
-ast.Tuple object at 0x12fade250>, <_ast.Tuple object at 0x12fade400>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"beaufort(0)$0" -> "[<_ast.Tuple object at 0x12fadec10>, <_ast.Tuple object at 0x12fadeb80>, <_ast.Tuple object at 0x12fade490>, <_ast.Tuple object \
-at 0x12fade550>, <_ast.Tuple object at 0x12fadecd0>, <_ast.Tuple object at 0x12fade700>, <_ast.Tuple object at 0x12fadef40>, <_ast.Tuple \
-object at 0x12fade820>, <_ast.Tuple object at 0x12fadedc0>, <_ast.Tuple object at 0x12fade8e0>, <_ast.Tuple object at 0x12fadefd0>, <_\
-ast.Tuple object at 0x12fade250>, <_ast.Tuple object at 0x12fade400>](0)"	[label=assignedFrom];
+	"[<_ast.Tuple object at 0x7fd50080dc10>, <_ast.Tuple object at 0x7fd50080d280>, <_ast.Tuple object at 0x7fd50080d4f0>, <_ast.Tuple \
+object at 0x7fd50080df10>, <_ast.Tuple object at 0x7fd50080d6d0>, <_ast.Tuple object at 0x7fd50080d400>, <_ast.Tuple object at 0x7fd50080ddf0>, <_\
+ast.Tuple object at 0x7fd50080d640>, <_ast.Tuple object at 0x7fd50080d610>, <_ast.Tuple object at 0x7fd50080d0a0>, <_ast.Tuple object \
+at 0x7fd50080d820>, <_ast.Tuple object at 0x7fd50080daf0>, <_ast.Tuple object at 0x7fd50080db20>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"beaufort(0)$0" -> "[<_ast.Tuple object at 0x7fd50080dc10>, <_ast.Tuple object at 0x7fd50080d280>, <_ast.Tuple object at 0x7fd50080d4f0>, <_ast.Tuple \
+object at 0x7fd50080df10>, <_ast.Tuple object at 0x7fd50080d6d0>, <_ast.Tuple object at 0x7fd50080d400>, <_ast.Tuple object at 0x7fd50080ddf0>, <_\
+ast.Tuple object at 0x7fd50080d640>, <_ast.Tuple object at 0x7fd50080d610>, <_ast.Tuple object at 0x7fd50080d0a0>, <_ast.Tuple object \
+at 0x7fd50080d820>, <_ast.Tuple object at 0x7fd50080daf0>, <_ast.Tuple object at 0x7fd50080db20>](0)"	[label=assignedFrom];
 	"item(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"item(0)" -> "beaufort(0)$0"	[label=iteratorOf];
 	"train(0)$9" -> "train(0)$8"	[label=assignedFrom];
@@ -222,18 +174,18 @@ ast.Tuple object at 0x12fade250>, <_ast.Tuple object at 0x12fade400>](0)"	[label
 	"train(0)$10" -> "train(0)$10"	[label=fit_transform];
 	"train(0)$10" -> "primary_use(0)"	[label=fit_transform];
 	"primary_use(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f957460>, <_ast.Constant object at 0x12f9578e0>, <_ast.Constant object at 0x12f957700>, <_ast.Constant \
-object at 0x12f9570a0>, <_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f957c70>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"categoricals(0)$0" -> "[<_ast.Constant object at 0x12f957460>, <_ast.Constant object at 0x12f9578e0>, <_ast.Constant object at 0x12f957700>, <_ast.Constant \
-object at 0x12f9570a0>, <_ast.Constant object at 0x12f9572b0>, <_ast.Constant object at 0x12f957c70>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f957e80>, <_ast.Constant object at 0x12f957e50>, <_ast.Constant object at 0x1305327f0>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"drop_cols(0)$0" -> "[<_ast.Constant object at 0x12f957e80>, <_ast.Constant object at 0x12f957e50>, <_ast.Constant object at 0x1305327f0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130532220>, <_ast.Constant object at 0x130532f70>, <_ast.Constant object at 0x130532d30>, <_ast.Constant \
-object at 0x130532ac0>, <_ast.Constant object at 0x1305322b0>, <_ast.Constant object at 0x1305320d0>, <_ast.Constant object at 0x130532790>, <_\
-ast.Constant object at 0x1305328e0>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"numericals(0)$0" -> "[<_ast.Constant object at 0x130532220>, <_ast.Constant object at 0x130532f70>, <_ast.Constant object at 0x130532d30>, <_ast.Constant \
-object at 0x130532ac0>, <_ast.Constant object at 0x1305322b0>, <_ast.Constant object at 0x1305320d0>, <_ast.Constant object at 0x130532790>, <_\
-ast.Constant object at 0x1305328e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f07c0>, <_\
+ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at 0x7fd5007f0370>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"categoricals(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f07c0>, <_\
+ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at 0x7fd5007f0370>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0b80>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"drop_cols(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0b80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f07f0>, <_\
+ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at 0x7fd5007f0340>, <_ast.Constant \
+object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f0f10>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"numericals(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f07f0>, <_\
+ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at 0x7fd5007f0340>, <_ast.Constant \
+object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f0f10>](0)"	[label=assignedFrom];
 	"feat_cols(0)$0" -> "categoricals(0)$0"	[label=Add];
 	"feat_cols(0)$0" -> "numericals(0)$0"	[label=Add];
 	"target(0)$0" -> "np(0)"	[label=log1p];
@@ -244,10 +196,32 @@ ast.Constant object at 0x1305328e0>](0)"	[label=assignedFrom];
 	"train(0)$11" -> "drop_cols(0)$0"	[label=drop];
 	"train(0)$11" -> "1(0)"	[label=drop];
 	"1(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"df(2)" -> "reduce_mem_usage[0]"	[label=_argToVar];
+	"start_mem_usg(2)$0" -> "df(2)"	[label=Div];
+	"start_mem_usg(2)$0" -> "1024(2)"	[label=Div];
+	"start_mem_usg(2)$0" -> "2(2)"	[label=Div];
+	"print[83/4]" -> "start_mem_usg(2)$0"	[label=print];
+	"print[83/4]" -> "Memory usage of properties dataframe is :(2)"	[label=print];
+	"print[83/4]" -> " MB(2)"	[label=print];
 	"NAlist(2)$0" -> "[](2)"	[label=assignedFrom];
+	"col(2)" -> "df(2)"	[label=iteratorOf];
+	"print[88/12]" -> "******************************(2)"	[label=print];
+	"print[89/12]" -> "col(2)"	[label=print];
+	"print[89/12]" -> "Column: (2)"	[label=print];
+	"print[90/12]" -> "df(2)"	[label=print];
+	"print[90/12]" -> "col(2)"	[label=print];
+	"print[90/12]" -> "dtype before: (2)"	[label=print];
 	"IsInt(2)$0" -> "False(2)"	[label=assignedFrom];
-	"NAlist(2)$1" -> "col(2)"	[label=append];
+	"mx(2)$0" -> "df(2)"	[label=max];
+	"mx(2)$0" -> "col(2)"	[label=max];
+	"mn(2)$0" -> "df(2)"	[label=min];
+	"mn(2)$0" -> "col(2)"	[label=min];
+	"print[95/12]" -> "mn(2)$0"	[label=print];
+	"print[95/12]" -> "min for this col: (2)"	[label=print];
+	"print[96/12]" -> "mx(2)$0"	[label=print];
+	"print[96/12]" -> "max for this col: (2)"	[label=print];
 	"NAlist(2)$1" -> "NAlist(2)$0"	[label=append];
+	"NAlist(2)$1" -> "col(2)"	[label=append];
 	"df(2)$0" -> "df(2)"	[label=fillna];
 	"df(2)$0" -> "mn(2)$0"	[label=fillna];
 	"df(2)$0" -> "1(2)"	[label=fillna];
@@ -284,8 +258,25 @@ ast.Constant object at 0x1305328e0>](0)"	[label=assignedFrom];
 	"df(2)$8" -> "col(2)"	[label=astype];
 	"df(2)$8" -> "np(2)"	[label=astype];
 	"df(2)$8" -> "df(2)$7"	[label=astype];
-	"print[3]" -> "start_mem_usg(2)$0"	[label=print];
-	"print[4]" -> "\% of the initial size(2)"	[label=print];
+	"df(2)$9" -> "col(2)"	[label=astype];
+	"df(2)$9" -> "np(2)"	[label=astype];
+	"df(2)$9" -> "df(2)$8"	[label=astype];
+	"print[133/12]" -> "col(2)"	[label=print];
+	"print[133/12]" -> "df(2)$9"	[label=print];
+	"print[133/12]" -> "dtype after: (2)"	[label=print];
+	"print[134/12]" -> "******************************(2)"	[label=print];
+	"print[136/4]" -> "___MEMORY USAGE AFTER COMPLETION:___(2)"	[label=print];
+	"mem_usg(2)$0" -> "1024(2)"	[label=Div];
+	"mem_usg(2)$0" -> "2(2)"	[label=Div];
+	"mem_usg(2)$0" -> "df(2)$9"	[label=Div];
+	"print[138/4]" -> " MB(2)"	[label=print];
+	"print[138/4]" -> "mem_usg(2)$0"	[label=print];
+	"print[138/4]" -> "Memory usage is: (2)"	[label=print];
+	"print[139/4]" -> "start_mem_usg(2)$0"	[label=print];
+	"print[139/4]" -> "mem_usg(2)$0"	[label=print];
+	"print[139/4]" -> "This is (2)"	[label=print];
+	"print[139/4]" -> "100(2)"	[label=print];
+	"print[139/4]" -> "\% of the initial size(2)"	[label=print];
 	"train(0)$12" -> "train(0)$11"	[label=reduce_mem_usage];
 	"NAlist(0)$0" -> "train(0)$11"	[label=reduce_mem_usage];
 	"dense_dim_1(3)" -> "model[0]"	[label=_argToVar];
@@ -298,31 +289,31 @@ ast.Constant object at 0x1305328e0>](0)"	[label=assignedFrom];
 	"dropout4(3)" -> "model[7]"	[label=_argToVar];
 	"lr(3)" -> "model[8]"	[label=_argToVar];
 	"site_id(3)$0" -> "site_id(3)$0"	[label=Input];
-	"site_id(3)$0" -> "[<_ast.Constant object at 0x12f88a640>](3)"	[label=Input];
+	"site_id(3)$0" -> "[<_ast.Constant object at 0x7fd4c04ad340>](3)"	[label=Input];
 	"building_id(3)$0" -> "building_id(3)$0"	[label=Input];
-	"building_id(3)$0" -> "[<_ast.Constant object at 0x12f88a850>](3)"	[label=Input];
+	"building_id(3)$0" -> "[<_ast.Constant object at 0x7fd4c04ad550>](3)"	[label=Input];
 	"meter(3)$0" -> "meter(3)$0"	[label=Input];
-	"meter(3)$0" -> "[<_ast.Constant object at 0x12f88aa60>](3)"	[label=Input];
+	"meter(3)$0" -> "[<_ast.Constant object at 0x7fd4c04ad760>](3)"	[label=Input];
 	"primary_use(3)$0" -> "primary_use(3)$0"	[label=Input];
-	"primary_use(3)$0" -> "[<_ast.Constant object at 0x12f88ac70>](3)"	[label=Input];
+	"primary_use(3)$0" -> "[<_ast.Constant object at 0x7fd4c04ad970>](3)"	[label=Input];
 	"square_feet(3)$0" -> "square_feet(3)$0"	[label=Input];
-	"square_feet(3)$0" -> "[<_ast.Constant object at 0x12f88ae80>](3)"	[label=Input];
+	"square_feet(3)$0" -> "[<_ast.Constant object at 0x7fd4c04adb80>](3)"	[label=Input];
 	"year_built(3)$0" -> "year_built(3)$0"	[label=Input];
-	"year_built(3)$0" -> "[<_ast.Constant object at 0x12f8a00d0>](3)"	[label=Input];
+	"year_built(3)$0" -> "[<_ast.Constant object at 0x7fd4c04add90>](3)"	[label=Input];
 	"air_temperature(3)$0" -> "air_temperature(3)$0"	[label=Input];
-	"air_temperature(3)$0" -> "[<_ast.Constant object at 0x12f8a02e0>](3)"	[label=Input];
+	"air_temperature(3)$0" -> "[<_ast.Constant object at 0x7fd4c04adfa0>](3)"	[label=Input];
 	"cloud_coverage(3)$0" -> "cloud_coverage(3)$0"	[label=Input];
-	"cloud_coverage(3)$0" -> "[<_ast.Constant object at 0x12f8a04f0>](3)"	[label=Input];
+	"cloud_coverage(3)$0" -> "[<_ast.Constant object at 0x7fd5008301f0>](3)"	[label=Input];
 	"dew_temperature(3)$0" -> "dew_temperature(3)$0"	[label=Input];
-	"dew_temperature(3)$0" -> "[<_ast.Constant object at 0x12f8a0700>](3)"	[label=Input];
+	"dew_temperature(3)$0" -> "[<_ast.Constant object at 0x7fd500830400>](3)"	[label=Input];
 	"hour(3)$0" -> "hour(3)$0"	[label=Input];
-	"hour(3)$0" -> "[<_ast.Constant object at 0x12f8a0910>](3)"	[label=Input];
-	"precip(3)$0" -> "[<_ast.Constant object at 0x12f8a0b20>](3)"	[label=Input];
+	"hour(3)$0" -> "[<_ast.Constant object at 0x7fd500830610>](3)"	[label=Input];
+	"precip(3)$0" -> "[<_ast.Constant object at 0x7fd500830820>](3)"	[label=Input];
 	"precip(3)$0" -> "precip_depth_1_hr(3)"	[label=Input];
 	"weekday(3)$0" -> "weekday(3)$0"	[label=Input];
-	"weekday(3)$0" -> "[<_ast.Constant object at 0x12f8a0d30>](3)"	[label=Input];
+	"weekday(3)$0" -> "[<_ast.Constant object at 0x7fd500830a30>](3)"	[label=Input];
 	"beaufort_scale(3)$0" -> "beaufort_scale(3)$0"	[label=Input];
-	"beaufort_scale(3)$0" -> "[<_ast.Constant object at 0x12f8a0f40>](3)"	[label=Input];
+	"beaufort_scale(3)$0" -> "[<_ast.Constant object at 0x7fd500830c40>](3)"	[label=Input];
 	"emb_site_id(3)$0" -> "site_id(3)$0"	[label=assignedFrom];
 	"emb_site_id(3)$0" -> "Embedding(3)"	[label=assignedFrom];
 	"emb_site_id(3)$0" -> "16(3)"	[label=assignedFrom];
@@ -347,8 +338,8 @@ ast.Constant object at 0x1305328e0>](0)"	[label=assignedFrom];
 	"emb_weekday(3)$0" -> "Embedding(3)"	[label=assignedFrom];
 	"emb_weekday(3)$0" -> "2(3)"	[label=assignedFrom];
 	"emb_weekday(3)$0" -> "7(3)"	[label=assignedFrom];
-	"concat_emb(3)$0" -> "[<_ast.Call object at 0x12f8a3a60>, <_ast.Call object at 0x12f8a3b20>, <_ast.Call object at 0x12f8a3be0>, <_ast.Call object at 0x12f8a3ca0>, <_\
-ast.Call object at 0x12f8a3d60>, <_ast.Call object at 0x12f8a3e20>](3)"	[label=concatenate];
+	"concat_emb(3)$0" -> "[<_ast.Call object at 0x7fd500837790>, <_ast.Call object at 0x7fd500837850>, <_ast.Call object at 0x7fd500837910>, <_ast.Call object \
+at 0x7fd5008379d0>, <_ast.Call object at 0x7fd500837a90>, <_ast.Call object at 0x7fd500837520>](3)"	[label=concatenate];
 	"categ(3)$0" -> "dense_dim_1(3)"	[label=assignedFrom];
 	"categ(3)$0" -> "dropout1(3)"	[label=assignedFrom];
 	"categ(3)$0" -> "concat_emb(3)$0"	[label=assignedFrom];
@@ -363,9 +354,9 @@ ast.Call object at 0x12f8a3d60>, <_ast.Call object at 0x12f8a3e20>](3)"	[label=c
 	"categ(3)$2" -> "Dense(3)"	[label=assignedFrom];
 	"categ(3)$2" -> "relu(3)"	[label=assignedFrom];
 	"categ(3)$2" -> "categ(3)$2"	[label=assignedFrom];
-	"main_l(3)$0" -> "[<_ast.Name object at 0x12f8a4670>, <_ast.Name object at 0x12f8a46a0>, <_ast.Name object at 0x12f8a46d0>, <_ast.Name object at 0x12f8a4700>, <_\
-ast.Name object at 0x12f8a4730>, <_ast.Name object at 0x12f8a4760>, <_ast.Name object at 0x12f8a4790>, <_ast.Name object at 0x12f8a47c0>](\
-3)"	[label=concatenate];
+	"main_l(3)$0" -> "[<_ast.Name object at 0x7fd50082a370>, <_ast.Name object at 0x7fd50082a3a0>, <_ast.Name object at 0x7fd50082a3d0>, <_ast.Name object \
+at 0x7fd50082a400>, <_ast.Name object at 0x7fd50082a430>, <_ast.Name object at 0x7fd50082a460>, <_ast.Name object at 0x7fd50082a490>, <_\
+ast.Name object at 0x7fd50082a4c0>](3)"	[label=concatenate];
 	"main_l(3)$1" -> "dense_dim_3(3)"	[label=assignedFrom];
 	"main_l(3)$1" -> "dropout3(3)"	[label=assignedFrom];
 	"main_l(3)$1" -> "Dropout(3)"	[label=assignedFrom];
@@ -384,10 +375,10 @@ ast.Name object at 0x12f8a4730>, <_ast.Name object at 0x12f8a4760>, <_ast.Name o
 	"output(3)$0" -> "main_l(3)$3"	[label=assignedFrom];
 	"output(3)$0" -> "1(3)"	[label=assignedFrom];
 	"model(3)$0" -> "output(3)$0"	[label=Model];
-	"model(3)$0" -> "[<_ast.Name object at 0x12f87e0d0>, <_ast.Name object at 0x12f87e130>, <_ast.Name object at 0x12f87e160>, <_ast.Name object at 0x12f87e190>, <_\
-ast.Name object at 0x12f87e1c0>, <_ast.Name object at 0x12f87e1f0>, <_ast.Name object at 0x12f87e220>, <_ast.Name object at 0x12f87e250>, <_\
-ast.Name object at 0x12f87e280>, <_ast.Name object at 0x12f87e2b0>, <_ast.Name object at 0x12f87e2e0>, <_ast.Name object at 0x12f87e310>, <_\
-ast.Name object at 0x12f87e340>](3)"	[label=Model];
+	"model(3)$0" -> "[<_ast.Name object at 0x7fd50082ad90>, <_ast.Name object at 0x7fd50082adc0>, <_ast.Name object at 0x7fd50082adf0>, <_ast.Name object \
+at 0x7fd50082ae20>, <_ast.Name object at 0x7fd50082ae50>, <_ast.Name object at 0x7fd50082ae80>, <_ast.Name object at 0x7fd50082aeb0>, <_\
+ast.Name object at 0x7fd50082aee0>, <_ast.Name object at 0x7fd50082af10>, <_ast.Name object at 0x7fd50082af40>, <_ast.Name object \
+at 0x7fd50082af70>, <_ast.Name object at 0x7fd50082afa0>, <_ast.Name object at 0x7fd50082afd0>](3)"	[label=Model];
 	"model(3)$1" -> "model(3)$0"	[label=compile];
 	"y_true(4)" -> "root_mean_squared_error[0]"	[label=_argToVar];
 	"y_pred(4)" -> "root_mean_squared_error[1]"	[label=_argToVar];
@@ -427,7 +418,7 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"hist(6)$0" -> "X_v(6)"	[label=fit];
 	"hist(6)$0" -> "y_valid(6)"	[label=fit];
 	"hist(6)$0" -> "1(6)"	[label=fit];
-	"hist(6)$0" -> "[<_ast.Name object at 0x12f882e80>, <_ast.Name object at 0x12f882eb0>](6)"	[label=fit];
+	"hist(6)$0" -> "[<_ast.Name object at 0x7fd50081fbe0>, <_ast.Name object at 0x7fd50081fc10>](6)"	[label=fit];
 	"keras_model(6)$0" -> "fold(6)"	[label=load_model];
 	"keras_model(6)$0" -> "model_(6)"	[label=load_model];
 	"keras_model(6)$0" -> "str(6)"	[label=load_model];
@@ -458,6 +449,11 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"kf(0)$0" -> "folds(0)$0"	[label=StratifiedKFold];
 	"kf(0)$0" -> "seed(0)$0"	[label=StratifiedKFold];
 	"enumerate(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"fold_n(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"fold_n(0)" -> "building_id(0)"	[label=iteratorOf];
+	"fold_n(0)" -> "train(0)$12"	[label=iteratorOf];
+	"fold_n(0)" -> "kf(0)$0"	[label=iteratorOf];
+	"fold_n(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"train_index(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"train_index(0)" -> "building_id(0)"	[label=iteratorOf];
 	"train_index(0)" -> "train(0)$12"	[label=iteratorOf];
@@ -468,6 +464,9 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"valid_index(0)" -> "train(0)$12"	[label=iteratorOf];
 	"valid_index(0)" -> "kf(0)$0"	[label=iteratorOf];
 	"valid_index(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"Fold:(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"print[251/4]" -> "fold_n(0)"	[label=print];
+	"print[251/4]" -> "Fold:(0)"	[label=print];
 	"X_train(0)$0" -> "train(0)$12"	[label=assignedFrom];
 	"X_train(0)$0" -> "train_index(0)"	[label=assignedFrom];
 	"X_train(0)$0" -> "valid_index(0)"	[label=assignedFrom];
@@ -498,9 +497,9 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"0.2(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"0.1(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"0.001(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"mod(0)$0" -> "fold_n(0)"	[label=train_model];
 	"mod(0)$0" -> "batch_size(0)$0"	[label=train_model];
 	"mod(0)$0" -> "epochs(0)$0"	[label=train_model];
+	"mod(0)$0" -> "fold_n(0)"	[label=train_model];
 	"mod(0)$0" -> "y_train(0)$0"	[label=train_model];
 	"mod(0)$0" -> "y_valid(0)$0"	[label=train_model];
 	"mod(0)$0" -> "X_t(0)$0"	[label=train_model];
@@ -510,6 +509,10 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"3(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"models(0)$1" -> "models(0)$0"	[label=append];
 	"models(0)$1" -> "mod(0)$0"	[label=append];
+	"*(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"print[261/4]" -> "*(0)"	[label=print];
+	"print[261/4]" -> "50(0)"	[label=print];
+	"50(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	gc -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=importedBy];
 	"gc(0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"gc(0)" -> gc	[label=assignedFrom];
@@ -532,10 +535,10 @@ ast.Name object at 0x12f87e340>](3)"	[label=Model];
 	"test(0)$3" -> "left(0)"	[label=merge];
 	"test(0)$3" -> "test(0)$2"	[label=merge];
 	"test(0)$3" -> "weather_test(0)$0"	[label=merge];
-	"test(0)$3" -> "[<_ast.Constant object at 0x12f89b220>, <_ast.Constant object at 0x12f89b250>](0)"	[label=merge];
-	"test(0)$3" -> "[<_ast.Constant object at 0x12f89b310>, <_ast.Constant object at 0x12f89b340>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f89b220>, <_ast.Constant object at 0x12f89b250>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b310>, <_ast.Constant object at 0x12f89b340>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"test(0)$3" -> "[<_ast.Constant object at 0x7fd50081df10>, <_ast.Constant object at 0x7fd50081df40>](0)"	[label=merge];
+	"test(0)$3" -> "[<_ast.Constant object at 0x7fd50081dd90>, <_ast.Constant object at 0x7fd500824040>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd50081df10>, <_ast.Constant object at 0x7fd50081df40>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50081dd90>, <_ast.Constant object at 0x7fd500824040>](0)" -> "keras-nn-with-embeddings-for-cat-features-1-15.ipynb"	[label=appearsIn];
 	"test(0)$4" -> "pd(0)"	[label=to_datetime];
 	"test(0)$4" -> "timestamp(0)"	[label=to_datetime];
 	"test(0)$4" -> "test(0)$3"	[label=to_datetime];

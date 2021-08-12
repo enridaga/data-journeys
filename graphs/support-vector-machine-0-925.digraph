@@ -45,8 +45,8 @@ strict digraph "" {
 	"c(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
 	"cols(0)$0" -> "train(0)$1"	[label=assignedFrom];
 	"cols(0)$0" -> "c(0)"	[label=assignedFrom];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4ff10>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4fe50>, <_ast.Constant object at 0x12fc4fd30>, <_ast.Constant object at 0x12fc4ff10>](0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc880>, <_ast.Constant object at 0x7fd4c04ccf70>, <_ast.Constant object at 0x7fd4c04cc4c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc880>, <_ast.Constant object at 0x7fd4c04ccf70>, <_ast.Constant object at 0x7fd4c04cc4c0>](0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
 	"range(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
 	"i(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
 	"i(0)" -> "range(0)"	[label=iteratorOf];
@@ -118,12 +118,12 @@ strict digraph "" {
 	"auc(0)$0" -> "target(0)"	[label=roc_auc_score];
 	"auc(0)$0" -> "oof(0)$1"	[label=roc_auc_score];
 	"CV score =(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
-	"print[0]" -> "CV score =(0)"	[label=print];
+	"print[49/0]" -> "auc(0)$0"	[label=print];
+	"print[49/0]" -> "CV score =(0)"	[label=print];
+	"print[49/0]" -> "round(0)"	[label=print];
+	"print[49/0]" -> "5(0)"	[label=print];
 	"round(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
-	"print[1]" -> "round(0)"	[label=print];
-	"print[2]" -> "auc(0)$0"	[label=print];
 	"5(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];
-	"print[3]" -> "5(0)"	[label=print];
 	"sub(0)$0" -> "pd(0)"	[label=read_csv];
 	"sub(0)$0" -> "../input/sample_submission.csv(0)"	[label=read_csv];
 	"../input/sample_submission.csv(0)" -> "support-vector-machine-0-925.ipynb"	[label=appearsIn];

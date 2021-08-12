@@ -14,7 +14,9 @@ digraph "" {
 	"df(0)$0" -> "../input/telecom_churn.csv(0)"	[label=read_csv];
 	"../input/telecom_churn.csv(0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"df(0)$1" -> "df(0)$0"	[label=head];
-	"print[0]" -> "df(0)$1"	[label=print];
+	"print[7/0]" -> "df(0)$1"	[label=print];
+	"print[8/0]" -> "df(0)$1"	[label=print];
+	"print[9/0]" -> "df(0)$1"	[label=print];
 	"df(0)$2" -> "df(0)$1"	[label=astype];
 	"df(0)$2" -> "Churn(0)"	[label=astype];
 	"df(0)$2" -> "int64(0)"	[label=astype];
@@ -51,16 +53,16 @@ digraph "" {
 	"df(0)$17" -> "Voice mail plan(0)"	[label=replace];
 	"Voice mail plan(0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"df(0)$18" -> "df(0)$17"	[label=head];
-	"[<_ast.Constant object at 0x130532970>, <_ast.Constant object at 0x1305329a0>, <_ast.Constant object at 0x130532040>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
-	"columns_to_show(0)$0" -> "[<_ast.Constant object at 0x130532970>, <_ast.Constant object at 0x1305329a0>, <_ast.Constant object at 0x130532040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b430>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"columns_to_show(0)$0" -> "[<_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b430>](0)"	[label=assignedFrom];
 	"df(0)$19" -> "df(0)$18"	[label=describe];
-	"[<_ast.Constant object at 0x130532a90>, <_ast.Constant object at 0x130532700>, <_ast.Constant object at 0x130532f10>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
-	"columns_to_show(0)$1" -> "[<_ast.Constant object at 0x130532a90>, <_ast.Constant object at 0x130532700>, <_ast.Constant object at 0x130532f10>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50085b340>, <_ast.Constant object at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085bca0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"columns_to_show(0)$1" -> "[<_ast.Constant object at 0x7fd50085b340>, <_ast.Constant object at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085bca0>](0)"	[label=assignedFrom];
 	"df(0)$20" -> "df(0)$19"	[label=agg];
-	"df(0)$20" -> "[<_ast.Attribute object at 0x1305323a0>, <_ast.Attribute object at 0x130532c10>, <_ast.Attribute object at 0x130532bb0>, <_ast.Attribute \
-object at 0x130532b80>](0)"	[label=agg];
-	"[<_ast.Attribute object at 0x1305323a0>, <_ast.Attribute object at 0x130532c10>, <_ast.Attribute object at 0x130532bb0>, <_ast.Attribute \
-object at 0x130532b80>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"df(0)$20" -> "[<_ast.Attribute object at 0x7fd50085b0d0>, <_ast.Attribute object at 0x7fd50085ba30>, <_ast.Attribute object at 0x7fd50085bf40>, <_\
+ast.Attribute object at 0x7fd50085b5b0>](0)"	[label=agg];
+	"[<_ast.Attribute object at 0x7fd50085b0d0>, <_ast.Attribute object at 0x7fd50085ba30>, <_ast.Attribute object at 0x7fd50085bf40>, <_\
+ast.Attribute object at 0x7fd50085b5b0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"pd(0)$1" -> "pd(0)$0"	[label=crosstab];
 	"pd(0)$1" -> "Churn(0)"	[label=crosstab];
 	"pd(0)$1" -> "International plan(0)"	[label=crosstab];
@@ -70,10 +72,10 @@ object at 0x130532b80>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ip
 	"pd(0)$2" -> "df(0)$20"	[label=crosstab];
 	"pd(0)$2" -> "pd(0)$1"	[label=crosstab];
 	"df(0)$21" -> "df(0)$20"	[label=pivot_table];
-	"df(0)$21" -> "[<_ast.Constant object at 0x130ba4b50>, <_ast.Constant object at 0x130ba45e0>, <_ast.Constant object at 0x130ba46d0>](0)"	[label=pivot_table];
-	"df(0)$21" -> "[<_ast.Constant object at 0x130ba4370>](0)"	[label=pivot_table];
-	"[<_ast.Constant object at 0x130ba4b50>, <_ast.Constant object at 0x130ba45e0>, <_ast.Constant object at 0x130ba46d0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130ba4370>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"df(0)$21" -> "[<_ast.Constant object at 0x7fd500832e80>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832af0>](0)"	[label=pivot_table];
+	"df(0)$21" -> "[<_ast.Constant object at 0x7fd5008328b0>](0)"	[label=pivot_table];
+	"[<_ast.Constant object at 0x7fd500832e80>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832af0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008328b0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"total_calls(0)$0" -> "df(0)$21"	[label=Add];
 	"total_calls(0)$0" -> "Total day calls(0)"	[label=Add];
 	"total_calls(0)$0" -> "Total eve calls(0)"	[label=Add];
@@ -97,8 +99,8 @@ object at 0x130532b80>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ip
 	"Total intl charge(0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"df(0)$25" -> "df(0)$24"	[label=head];
 	"df(0)$26" -> "df(0)$25"	[label=drop];
-	"df(0)$26" -> "[<_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4faf0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant object at 0x12fc4faf0>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
+	"df(0)$26" -> "[<_ast.Constant object at 0x7fd500836700>, <_ast.Constant object at 0x7fd500836340>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500836700>, <_ast.Constant object at 0x7fd500836340>](0)" -> "topic-1-exploratory-data-analysis-with-pandas.ipynb"	[label=appearsIn];
 	"df(0)$27" -> "df(0)$26"	[label=head];
 	"pd(0)$3" -> "Churn(0)"	[label=crosstab];
 	"pd(0)$3" -> "International plan(0)"	[label=crosstab];

@@ -77,53 +77,50 @@ digraph "" {
 	"min_date(0)$0" -> "train_df(0)$2"	[label=min];
 	"max_date(0)$0" -> "timestamp(0)"	[label=max];
 	"max_date(0)$0" -> "train_df(0)$2"	[label=max];
-	"display[0]" -> "HTML(0)"	[label=display];
+	"display[30/0]" -> "HTML(0)"	[label=display];
+	"display[30/0]" -> "nrows(0)$0"	[label=display];
+	"display[30/0]" -> "nbuildings(0)$0"	[label=display];
+	"display[30/0]" -> "max_rows_building(0)$0"	[label=display];
+	"display[30/0]" -> "min_rows_building(0)$0"	[label=display];
+	"display[30/0]" -> "min_date(0)$0"	[label=display];
+	"display[30/0]" -> "max_date(0)$0"	[label=display];
+	"display[30/0]" -> "<br>Number of rows in the dataset: (0)"	[label=display];
+	"display[30/0]" -> ",(0)"	[label=display];
+	"display[30/0]" -> "</br>
+             <br>Number of buildings in the dataset: (0)"	[label=display];
+	"display[30/0]" -> "</br>
+             <br>Maximum of (0)"	[label=display];
+	"display[30/0]" -> " rows is available for a building</br>
+             <br>Minimum of (0)"	[label=display];
+	"display[30/0]" -> " rows is available for a building</br>
+             <br>Min date value in train data is (0)"	[label=display];
+	"display[30/0]" -> "</br>
+             <br>Max date value in train data is (0)"	[label=display];
+	"display[30/0]" -> "</br>
+             (0)"	[label=display];
 	"<br>Number of rows in the dataset: (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[1]" -> "<br>Number of rows in the dataset: (0)"	[label=display];
-	"display[2]" -> "nrows(0)$0"	[label=display];
 	",(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[3]" -> ",(0)"	[label=display];
 	"</br>
              <br>Number of buildings in the dataset: (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[4]" -> "</br>
-             <br>Number of buildings in the dataset: (0)"	[label=display];
-	"display[5]" -> "nbuildings(0)$0"	[label=display];
-	"display[6]" -> ",(0)"	[label=display];
 	"</br>
              <br>Maximum of (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[7]" -> "</br>
-             <br>Maximum of (0)"	[label=display];
-	"display[8]" -> "max_rows_building(0)$0"	[label=display];
-	"display[9]" -> ",(0)"	[label=display];
 	" rows is available for a building</br>
              <br>Minimum of (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[10]" -> " rows is available for a building</br>
-             <br>Minimum of (0)"	[label=display];
-	"display[11]" -> "min_rows_building(0)$0"	[label=display];
-	"display[12]" -> ",(0)"	[label=display];
 	" rows is available for a building</br>
              <br>Min date value in train data is (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[13]" -> " rows is available for a building</br>
-             <br>Min date value in train data is (0)"	[label=display];
-	"display[14]" -> "min_date(0)$0"	[label=display];
 	"</br>
              <br>Max date value in train data is (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[15]" -> "</br>
-             <br>Max date value in train data is (0)"	[label=display];
-	"display[16]" -> "max_date(0)$0"	[label=display];
 	"</br>
              (0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"display[17]" -> "</br>
-             (0)"	[label=display];
 	"cnt_srs(0)$0" -> "train_df(0)$2"	[label=value_counts];
 	"cnt_srs(0)$0" -> "meter(0)"	[label=value_counts];
 	"meter(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"cnt_srs(0)$1" -> "cnt_srs(0)$0"	[label=sort_index];
-	"[<_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e6d0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd5009998e0>, <_\
+ast.Constant object at 0x7fd500999310>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"cnt_srs(0)$2" -> "cnt_srs(0)$1"	[label=assignedFrom];
-	"cnt_srs(0)$2" -> "[<_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e6d0>](0)"	[label=assignedFrom];
+	"cnt_srs(0)$2" -> "[<_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at 0x7fd5009998e0>, <_\
+ast.Constant object at 0x7fd500999310>](0)"	[label=assignedFrom];
 	"trace(0)$0" -> "go(0)"	[label=Bar];
 	"trace(0)$0" -> "cnt_srs(0)$2"	[label=Bar];
 	"trace(0)$0" -> "dict(0)"	[label=Bar];
@@ -142,8 +139,8 @@ object at 0x12f85e6d0>](0)"	[label=assignedFrom];
 	"14(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"800(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"500(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fadef10>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Name object at 0x12fadef10>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500999250>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd500999250>](0)"	[label=assignedFrom];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "layout(0)$0"	[label=Figure];
 	"fig(0)$0" -> "data(0)$0"	[label=Figure];
@@ -267,21 +264,16 @@ object at 0x12f85e6d0>](0)"	[label=assignedFrom];
 	"p4(0)$0" -> "Meter Reading Distribution for Hot Water meter(0)"	[label=make_plot];
 	"p4(0)$0" -> "hot water(0)"	[label=make_plot];
 	"hot water(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"show[0]" -> "gridplot(0)"	[label=show];
-	"show[0]" -> "tabs(0)$0"	[label=show];
-	"show[0]" -> "tabs(0)$2"	[label=show];
-	"tabs(0)$0" -> "tab_list(0)$1"	[label=Tabs];
-	"tabs(0)$2" -> "main_tabs_list(0)$1"	[label=Tabs];
-	"[<_ast.Name object at 0x13051b670>, <_ast.Name object at 0x13051b430>, <_ast.Name object at 0x13051b520>, <_ast.Name object at 0x13051b0a0>](\
-0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"show[1]" -> "[<_ast.Name object at 0x13051b670>, <_ast.Name object at 0x13051b430>, <_ast.Name object at 0x13051b520>, <_ast.Name object at 0x13051b0a0>](\
-0)"	[label=show];
-	"show[2]" -> "2(0)"	[label=show];
+	"show[93/0]" -> "gridplot(0)"	[label=show];
+	"show[93/0]" -> "2(0)"	[label=show];
+	"show[93/0]" -> "[<_ast.Name object at 0x7fd500832100>, <_ast.Name object at 0x7fd500832f10>, <_ast.Name object at 0x7fd5008327c0>, <_ast.Name object \
+at 0x7fd500832610>](0)"	[label=show];
+	"show[93/0]" -> "400(0)"	[label=show];
+	"show[93/0]" -> "None(0)"	[label=show];
+	"[<_ast.Name object at 0x7fd500832100>, <_ast.Name object at 0x7fd500832f10>, <_ast.Name object at 0x7fd5008327c0>, <_ast.Name object \
+at 0x7fd500832610>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"400(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"show[3]" -> "400(0)"	[label=show];
-	"show[4]" -> "400(0)"	[label=show];
 	"None(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"show[5]" -> "None(0)"	[label=show];
 	"temp_df(0)$4" -> "train_df(0)$2"	[label=reset_index];
 	"temp_df(0)$4" -> "building_id(0)"	[label=reset_index];
 	"temp_df(0)$4" -> "True(0)"	[label=reset_index];
@@ -342,10 +334,10 @@ object at 0x12f85e6d0>](0)"	[label=assignedFrom];
 	"trace4(0)$0" -> "cnt_srs(0)$10"	[label=scatter_plot];
 	"trace4(0)$0" -> "purple(0)"	[label=scatter_plot];
 	"purple(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8d5970>, <_ast.Constant object at 0x12f8d5d60>, <_ast.Constant object at 0x12f8d5910>, <_ast.Constant \
-object at 0x12f8d5a90>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"subtitles(0)$0" -> "[<_ast.Constant object at 0x12f8d5970>, <_ast.Constant object at 0x12f8d5d60>, <_ast.Constant object at 0x12f8d5910>, <_ast.Constant \
-object at 0x12f8d5a90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500857d90>, <_ast.Constant object at 0x7fd5008577c0>, <_ast.Constant object at 0x7fd500857d60>, <_\
+ast.Constant object at 0x7fd500857df0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"subtitles(0)$0" -> "[<_ast.Constant object at 0x7fd500857d90>, <_ast.Constant object at 0x7fd5008577c0>, <_ast.Constant object at 0x7fd500857d60>, <_\
+ast.Constant object at 0x7fd500857df0>](0)"	[label=assignedFrom];
 	"fig(0)$1" -> "subplots(0)"	[label=make_subplots];
 	"fig(0)$1" -> "1(0)"	[label=make_subplots];
 	"fig(0)$1" -> "subtitles(0)$0"	[label=make_subplots];
@@ -416,10 +408,10 @@ object at 0x12f8d5a90>](0)"	[label=assignedFrom];
 	"cnt_srs(0)$18" -> "cnt_srs(0)$17"	[label=assignedFrom];
 	"trace4(0)$1" -> "purple(0)"	[label=scatter_plot];
 	"trace4(0)$1" -> "cnt_srs(0)$18"	[label=scatter_plot];
-	"[<_ast.Constant object at 0x12f9a3190>, <_ast.Constant object at 0x12f9a31c0>, <_ast.Constant object at 0x12f9a31f0>, <_ast.Constant \
-object at 0x12f9a3220>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"subtitles(0)$1" -> "[<_ast.Constant object at 0x12f9a3190>, <_ast.Constant object at 0x12f9a31c0>, <_ast.Constant object at 0x12f9a31f0>, <_ast.Constant \
-object at 0x12f9a3220>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ade50>, <_ast.Constant object at 0x7fd4c04ade80>, <_ast.Constant object at 0x7fd4c04adeb0>, <_\
+ast.Constant object at 0x7fd4c04adee0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"subtitles(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ade50>, <_ast.Constant object at 0x7fd4c04ade80>, <_ast.Constant object at 0x7fd4c04adeb0>, <_\
+ast.Constant object at 0x7fd4c04adee0>](0)"	[label=assignedFrom];
 	"fig(0)$7" -> "subplots(0)"	[label=make_subplots];
 	"fig(0)$7" -> "1(0)"	[label=make_subplots];
 	"fig(0)$7" -> "4(0)"	[label=make_subplots];
@@ -464,8 +456,8 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"layout(0)$1" -> "1000(0)"	[label=Layout];
 	"Primary use of Buildings - Count(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"1000(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x13053eee0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x13053eee0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50082abe0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd50082abe0>](0)"	[label=assignedFrom];
 	"fig(0)$13" -> "go(0)"	[label=Figure];
 	"fig(0)$13" -> "layout(0)$1"	[label=Figure];
 	"fig(0)$13" -> "data(0)$1"	[label=Figure];
@@ -486,8 +478,8 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"layout(0)$2" -> "1000(0)"	[label=Layout];
 	"layout(0)$2" -> "Floor count in the buildings - Count(0)"	[label=Layout];
 	"Floor count in the buildings - Count(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130537eb0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x130537eb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50080f1f0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd50080f1f0>](0)"	[label=assignedFrom];
 	"fig(0)$14" -> "go(0)"	[label=Figure];
 	"fig(0)$14" -> "layout(0)$2"	[label=Figure];
 	"fig(0)$14" -> "data(0)$2"	[label=Figure];
@@ -508,8 +500,8 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"layout(0)$3" -> "1000(0)"	[label=Layout];
 	"layout(0)$3" -> "Year built of the buildings - Count(0)"	[label=Layout];
 	"Year built of the buildings - Count(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130544f40>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Name object at 0x130544f40>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50082eb80>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Name object at 0x7fd50082eb80>](0)"	[label=assignedFrom];
 	"fig(0)$15" -> "go(0)"	[label=Figure];
 	"fig(0)$15" -> "layout(0)$3"	[label=Figure];
 	"fig(0)$15" -> "data(0)$3"	[label=Figure];
@@ -526,9 +518,9 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"weather_df(0)$0" -> "pd(0)$0"	[label=read_csv];
 	"weather_df(0)$0" -> "data_path(0)$0"	[label=read_csv];
 	"weather_df(0)$0" -> "weather_train.csv(0)"	[label=read_csv];
-	"weather_df(0)$0" -> "[<_ast.Constant object at 0x13052fcd0>](0)"	[label=read_csv];
+	"weather_df(0)$0" -> "[<_ast.Constant object at 0x7fd5008147f0>](0)"	[label=read_csv];
 	"weather_train.csv(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x13052fcd0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5008147f0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"weather_df(0)$1" -> "weather_df(0)$0"	[label=head];
 	"fig(0)$19" -> "px(0)"	[label=line];
 	"fig(0)$19" -> "timestamp(0)"	[label=line];
@@ -571,6 +563,8 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"Site:(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"tab_list(0)$1" -> "tab_list(0)$0"	[label=append];
 	"tab_list(0)$1" -> "tab(0)$0"	[label=append];
+	"tabs(0)$0" -> "tab_list(0)$1"	[label=Tabs];
+	"show[274/0]" -> "tabs(0)$0"	[label=show];
 	"df(4)" -> "get_plots[0]"	[label=_argToVar];
 	"col(4)" -> "get_plots[1]"	[label=_argToVar];
 	"color(4)" -> "get_plots[2]"	[label=_argToVar];
@@ -609,10 +603,10 @@ object at 0x12f9a3220>](0)"	[label=assignedFrom];
 	"color_map(0)$0" -> "brown(0)"	[label=assignedFrom];
 	"brown(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"main_tabs_list(0)$0" -> "[](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130517820>, <_ast.Constant object at 0x130517850>, <_ast.Constant object at 0x130517880>, <_ast.Constant \
-object at 0x1305178e0>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x130517820>, <_ast.Constant object at 0x130517850>, <_ast.Constant object at 0x130517880>, <_ast.Constant \
-object at 0x1305178e0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008204f0>, <_ast.Constant object at 0x7fd500820520>, <_ast.Constant object at 0x7fd500820550>, <_\
+ast.Constant object at 0x7fd500820580>](0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd5008204f0>, <_ast.Constant object at 0x7fd500820520>, <_ast.Constant object at 0x7fd500820550>, <_\
+ast.Constant object at 0x7fd500820580>](0)"	[label=assignedFrom];
 	"col(0)" -> "simple-exploration-notebook-ashrae.ipynb"	[label=appearsIn];
 	"col(0)" -> "cols(0)$0"	[label=iteratorOf];
 	"tab_list(0)$2" -> "[](0)"	[label=assignedFrom];
@@ -633,4 +627,6 @@ object at 0x1305178e0>](0)"	[label=assignedFrom];
 	"panel(0)$0" -> "tabs(0)$1"	[label=Panel];
 	"main_tabs_list(0)$1" -> "main_tabs_list(0)$0"	[label=append];
 	"main_tabs_list(0)$1" -> "panel(0)$0"	[label=append];
+	"tabs(0)$2" -> "main_tabs_list(0)$1"	[label=Tabs];
+	"show[314/0]" -> "tabs(0)$2"	[label=show];
 }

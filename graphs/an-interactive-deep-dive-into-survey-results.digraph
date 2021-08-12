@@ -32,11 +32,11 @@ digraph "" {
 	check_output -> subprocess	[label=importedBy];
 	"check_output(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"check_output(0)" -> check_output	[label=assignedFrom];
-	"print[0]" -> "check_output(0)"	[label=print];
-	"[<_ast.Constant object at 0x12f85ef10>, <_ast.Constant object at 0x12f85eac0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"print[1]" -> "[<_ast.Constant object at 0x12f85ef10>, <_ast.Constant object at 0x12f85eac0>](0)"	[label=print];
+	"print[17/0]" -> "check_output(0)"	[label=print];
+	"print[17/0]" -> "[<_ast.Constant object at 0x7fd4c04ccf10>, <_ast.Constant object at 0x7fd4c04cc340>](0)"	[label=print];
+	"print[17/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd4c04ccf10>, <_ast.Constant object at 0x7fd4c04cc340>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"utf8(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"print[2]" -> "utf8(0)"	[label=print];
 	"mcr_df(0)$0" -> "pd(0)$1"	[label=read_csv];
 	"mcr_df(0)$0" -> "../input/multipleChoiceResponses.csv(0)"	[label=read_csv];
 	"mcr_df(0)$0" -> "ISO-8859-1(0)"	[label=read_csv];
@@ -60,8 +60,8 @@ digraph "" {
 	"layout(0)$0" -> "go(0)"	[label=Layout];
 	"layout(0)$0" -> "Gender distribution(0)"	[label=Layout];
 	"Gender distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f9578b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$0" -> "[<_ast.Name object at 0x12f9578b0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04cc970>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$0" -> "[<_ast.Name object at 0x7fd4c04cc970>](0)"	[label=assignedFrom];
 	"fig(0)$0" -> "go(0)"	[label=Figure];
 	"fig(0)$0" -> "layout(0)$0"	[label=Figure];
 	"fig(0)$0" -> "data(0)$0"	[label=Figure];
@@ -81,8 +81,8 @@ digraph "" {
 	"layout(0)$1" -> "go(0)"	[label=Layout];
 	"layout(0)$1" -> "Employment Status distribution(0)"	[label=Layout];
 	"Employment Status distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f88ae80>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$1" -> "[<_ast.Name object at 0x12f88ae80>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4902abfa0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "[<_ast.Name object at 0x7fd4902abfa0>](0)"	[label=assignedFrom];
 	"fig(0)$1" -> "go(0)"	[label=Figure];
 	"fig(0)$1" -> "layout(0)$1"	[label=Figure];
 	"fig(0)$1" -> "data(0)$1"	[label=Figure];
@@ -102,8 +102,8 @@ digraph "" {
 	"layout(0)$2" -> "go(0)"	[label=Layout];
 	"layout(0)$2" -> "Age distribution(0)"	[label=Layout];
 	"Age distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fafc4c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$2" -> "[<_ast.Name object at 0x12fafc4c0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ffe50>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$2" -> "[<_ast.Name object at 0x7fd4c04ffe50>](0)"	[label=assignedFrom];
 	"fig(0)$2" -> "go(0)"	[label=Figure];
 	"fig(0)$2" -> "layout(0)$2"	[label=Figure];
 	"fig(0)$2" -> "data(0)$2"	[label=Figure];
@@ -651,21 +651,21 @@ Zimbabwe,13.74,ZWE
 	"new_df(0)$0" -> "mcr_df(0)$1"	[label=merge];
 	"new_df(0)$0" -> "Country(0)"	[label=merge];
 	"new_df(0)$0" -> "loc_df(0)$0"	[label=merge];
-	"new_df(0)$0" -> "[<_ast.Constant object at 0x12fade2b0>, <_ast.Constant object at 0x12fade7c0>](0)"	[label=merge];
+	"new_df(0)$0" -> "[<_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080d1c0>](0)"	[label=merge];
 	"new_df(0)$0" -> "COUNTRY(0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fade2b0>, <_ast.Constant object at 0x12fade7c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at 0x7fd50080d1c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"COUNTRY(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"new_df(0)$1" -> "Age(0)"	[label=reset_index];
 	"new_df(0)$1" -> "new_df(0)$0"	[label=reset_index];
-	"new_df(0)$1" -> "[<_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeb20>](0)"	[label=reset_index];
+	"new_df(0)$1" -> "[<_ast.Constant object at 0x7fd50080d370>, <_ast.Constant object at 0x7fd50080de50>](0)"	[label=reset_index];
 	"new_df(0)$1" -> "count(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12fade4f0>, <_ast.Constant object at 0x12fadeb20>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d370>, <_ast.Constant object at 0x7fd50080de50>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"count(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadea00>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fadec70>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50080d1f0>, <_ast.Constant object at 0x7fd50080dc40>, <_ast.Constant object at 0x7fd50080d700>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"new_df(0)$2" -> "new_df(0)$1"	[label=assignedFrom];
-	"new_df(0)$2" -> "[<_ast.Constant object at 0x12fadea00>, <_ast.Constant object at 0x12fade8e0>, <_ast.Constant object at 0x12fadec70>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12fade0a0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$3" -> "[<_ast.Call object at 0x12fade0a0>](0)"	[label=assignedFrom];
+	"new_df(0)$2" -> "[<_ast.Constant object at 0x7fd50080d1f0>, <_ast.Constant object at 0x7fd50080dc40>, <_ast.Constant object at 0x7fd50080d700>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd50080d100>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$3" -> "[<_ast.Call object at 0x7fd50080d100>](0)"	[label=assignedFrom];
 	"layout(0)$3" -> "False(0)"	[label=dict];
 	"layout(0)$3" -> "dict(0)"	[label=dict];
 	"layout(0)$3" -> "True(0)"	[label=dict];
@@ -696,8 +696,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$4" -> "go(0)"	[label=Layout];
 	"layout(0)$4" -> "Formal Education distribution(0)"	[label=Layout];
 	"Formal Education distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130532730>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$4" -> "[<_ast.Name object at 0x130532730>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500836100>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$4" -> "[<_ast.Name object at 0x7fd500836100>](0)"	[label=assignedFrom];
 	"fig(0)$4" -> "go(0)"	[label=Figure];
 	"fig(0)$4" -> "layout(0)$4"	[label=Figure];
 	"fig(0)$4" -> "data(0)$4"	[label=Figure];
@@ -718,8 +718,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$5" -> "go(0)"	[label=Layout];
 	"layout(0)$5" -> "Parents Education distribution(0)"	[label=Layout];
 	"Parents Education distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8f5520>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$5" -> "[<_ast.Name object at 0x12f8f5520>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50085b5e0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "[<_ast.Name object at 0x7fd50085b5e0>](0)"	[label=assignedFrom];
 	"fig(0)$5" -> "go(0)"	[label=Figure];
 	"fig(0)$5" -> "layout(0)$5"	[label=Figure];
 	"fig(0)$5" -> "data(0)$5"	[label=Figure];
@@ -737,8 +737,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$6" -> "go(0)"	[label=Layout];
 	"layout(0)$6" -> "Tenure distribution(0)"	[label=Layout];
 	"Tenure distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8f56a0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$6" -> "[<_ast.Name object at 0x12f8f56a0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500999100>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$6" -> "[<_ast.Name object at 0x7fd500999100>](0)"	[label=assignedFrom];
 	"fig(0)$6" -> "go(0)"	[label=Figure];
 	"fig(0)$6" -> "layout(0)$6"	[label=Figure];
 	"fig(0)$6" -> "data(0)$6"	[label=Figure];
@@ -754,8 +754,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$7" -> "go(0)"	[label=Layout];
 	"layout(0)$7" -> "StudentStatus distribution(0)"	[label=Layout];
 	"StudentStatus distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fc4f2e0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$7" -> "[<_ast.Name object at 0x12fc4f2e0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5009b2880>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$7" -> "[<_ast.Name object at 0x7fd5009b2880>](0)"	[label=assignedFrom];
 	"fig(0)$7" -> "go(0)"	[label=Figure];
 	"fig(0)$7" -> "layout(0)$7"	[label=Figure];
 	"fig(0)$7" -> "data(0)$7"	[label=Figure];
@@ -776,8 +776,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$8" -> "go(0)"	[label=Layout];
 	"layout(0)$8" -> "Students Learning Data Science(0)"	[label=Layout];
 	"Students Learning Data Science(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f87cb20>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$8" -> "[<_ast.Name object at 0x12f87cb20>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5009d4880>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$8" -> "[<_ast.Name object at 0x7fd5009d4880>](0)"	[label=assignedFrom];
 	"fig(0)$8" -> "go(0)"	[label=Figure];
 	"fig(0)$8" -> "layout(0)$8"	[label=Figure];
 	"fig(0)$8" -> "data(0)$8"	[label=Figure];
@@ -797,8 +797,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$9" -> "go(0)"	[label=Layout];
 	"layout(0)$9" -> "Working people looking for career switch(0)"	[label=Layout];
 	"Working people looking for career switch(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8a68b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$9" -> "[<_ast.Name object at 0x12f8a68b0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5009cb610>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$9" -> "[<_ast.Name object at 0x7fd5009cb610>](0)"	[label=assignedFrom];
 	"fig(0)$9" -> "go(0)"	[label=Figure];
 	"fig(0)$9" -> "layout(0)$9"	[label=Figure];
 	"fig(0)$9" -> "data(0)$9"	[label=Figure];
@@ -819,8 +819,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$10" -> "go(0)"	[label=Layout];
 	"layout(0)$10" -> "Current Job Title Distribution(0)"	[label=Layout];
 	"Current Job Title Distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f899850>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$10" -> "[<_ast.Name object at 0x12f899850>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50080f5b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$10" -> "[<_ast.Name object at 0x7fd50080f5b0>](0)"	[label=assignedFrom];
 	"fig(0)$10" -> "go(0)"	[label=Figure];
 	"fig(0)$10" -> "layout(0)$10"	[label=Figure];
 	"fig(0)$10" -> "data(0)$10"	[label=Figure];
@@ -836,8 +836,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$11" -> "go(0)"	[label=Layout];
 	"layout(0)$11" -> "TitleFit distribution(0)"	[label=Layout];
 	"TitleFit distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f89c520>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$11" -> "[<_ast.Name object at 0x12f89c520>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500817220>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$11" -> "[<_ast.Name object at 0x7fd500817220>](0)"	[label=assignedFrom];
 	"fig(0)$11" -> "go(0)"	[label=Figure];
 	"fig(0)$11" -> "layout(0)$11"	[label=Figure];
 	"fig(0)$11" -> "data(0)$11"	[label=Figure];
@@ -858,8 +858,8 @@ Zimbabwe,13.74,ZWE
 	"layout(0)$12" -> "go(0)"	[label=Layout];
 	"layout(0)$12" -> "Writes code to analyze data(0)"	[label=Layout];
 	"Writes code to analyze data(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8944c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$12" -> "[<_ast.Name object at 0x12f8944c0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500810160>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$12" -> "[<_ast.Name object at 0x7fd500810160>](0)"	[label=assignedFrom];
 	"fig(0)$12" -> "go(0)"	[label=Figure];
 	"fig(0)$12" -> "layout(0)$12"	[label=Figure];
 	"fig(0)$12" -> "data(0)$12"	[label=Figure];
@@ -877,8 +877,8 @@ Zimbabwe,13.74,ZWE
 	"Viridis(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"Type of current employer(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$13" -> "Type of current employer(0)"	[label=dict];
-	"[<_ast.Name object at 0x12f89b220>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$13" -> "[<_ast.Name object at 0x12f89b220>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500810e80>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$13" -> "[<_ast.Name object at 0x7fd500810e80>](0)"	[label=assignedFrom];
 	"fig(0)$13" -> "go(0)"	[label=Figure];
 	"fig(0)$13" -> "layout(0)$13"	[label=Figure];
 	"fig(0)$13" -> "data(0)$13"	[label=Figure];
@@ -887,12 +887,14 @@ Zimbabwe,13.74,ZWE
 	"cnt_srs(0)$11" -> "mcr_df(0)$1"	[label=value_counts];
 	"cnt_srs(0)$11" -> "EmployerSize(0)"	[label=value_counts];
 	"EmployerSize(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f89b8e0>, <_ast.Constant object at 0x12f89b580>, <_ast.Constant object at 0x12f89b910>, <_ast.Constant \
-object at 0x12f89b940>, <_ast.Constant object at 0x12f89b970>, <_ast.Constant object at 0x12f89b9a0>, <_ast.Constant object at 0x12f89b9d0>, <_\
-ast.Constant object at 0x12f89ba00>, <_ast.Constant object at 0x12f89b730>, <_ast.Constant object at 0x12f89ba30>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$0" -> "[<_ast.Constant object at 0x12f89b8e0>, <_ast.Constant object at 0x12f89b580>, <_ast.Constant object at 0x12f89b910>, <_ast.Constant \
-object at 0x12f89b940>, <_ast.Constant object at 0x12f89b970>, <_ast.Constant object at 0x12f89b9a0>, <_ast.Constant object at 0x12f89b9d0>, <_\
-ast.Constant object at 0x12f89ba00>, <_ast.Constant object at 0x12f89b730>, <_ast.Constant object at 0x12f89ba30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500811550>, <_ast.Constant object at 0x7fd500811580>, <_ast.Constant object at 0x7fd5008115b0>, <_\
+ast.Constant object at 0x7fd5008115e0>, <_ast.Constant object at 0x7fd500811640>, <_ast.Constant object at 0x7fd5008116a0>, <_ast.Constant \
+object at 0x7fd5008116d0>, <_ast.Constant object at 0x7fd500811700>, <_ast.Constant object at 0x7fd500811760>, <_ast.Constant object \
+at 0x7fd500811790>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$0" -> "[<_ast.Constant object at 0x7fd500811550>, <_ast.Constant object at 0x7fd500811580>, <_ast.Constant object at 0x7fd5008115b0>, <_\
+ast.Constant object at 0x7fd5008115e0>, <_ast.Constant object at 0x7fd500811640>, <_ast.Constant object at 0x7fd5008116a0>, <_ast.Constant \
+object at 0x7fd5008116d0>, <_ast.Constant object at 0x7fd500811700>, <_ast.Constant object at 0x7fd500811760>, <_ast.Constant object \
+at 0x7fd500811790>](0)"	[label=assignedFrom];
 	"values(0)$0" -> "cnt_srs(0)$11"	[label=assignedFrom];
 	"values(0)$0" -> "index(0)$0"	[label=assignedFrom];
 	"trace(0)$13" -> "go(0)"	[label=Scatter];
@@ -910,8 +912,8 @@ ast.Constant object at 0x12f89ba00>, <_ast.Constant object at 0x12f89b730>, <_as
 	"layout(0)$14" -> "go(0)"	[label=Layout];
 	"layout(0)$14" -> "Employer Size(0)"	[label=Layout];
 	"Employer Size(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130bbe4c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$14" -> "[<_ast.Name object at 0x130bbe4c0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50082e1f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$14" -> "[<_ast.Name object at 0x7fd50082e1f0>](0)"	[label=assignedFrom];
 	"fig(0)$14" -> "go(0)"	[label=Figure];
 	"fig(0)$14" -> "layout(0)$14"	[label=Figure];
 	"fig(0)$14" -> "data(0)$14"	[label=Figure];
@@ -934,8 +936,8 @@ ast.Constant object at 0x12f89ba00>, <_ast.Constant object at 0x12f89b730>, <_as
 	"layout(0)$15" -> "go(0)"	[label=Layout];
 	"layout(0)$15" -> "Employer Industry distribution(0)"	[label=Layout];
 	"Employer Industry distribution(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130bbf490>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$15" -> "[<_ast.Name object at 0x130bbf490>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500829190>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$15" -> "[<_ast.Name object at 0x7fd500829190>](0)"	[label=assignedFrom];
 	"fig(0)$15" -> "go(0)"	[label=Figure];
 	"fig(0)$15" -> "layout(0)$15"	[label=Figure];
 	"fig(0)$15" -> "data(0)$15"	[label=Figure];
@@ -945,10 +947,10 @@ ast.Constant object at 0x12f89ba00>, <_ast.Constant object at 0x12f89b730>, <_as
 	"cnt_srs(0)$13" -> "25(0)"	[label=head];
 	"cnt_srs(0)$13" -> "EmployerMLTime(0)"	[label=head];
 	"EmployerMLTime(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x130bbfb80>, <_ast.Constant object at 0x130bbfbb0>, <_ast.Constant object at 0x130bbfbe0>, <_ast.Constant \
-object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant object at 0x130bbfc70>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$1" -> "[<_ast.Constant object at 0x130bbfb80>, <_ast.Constant object at 0x130bbfbb0>, <_ast.Constant object at 0x130bbfbe0>, <_ast.Constant \
-object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant object at 0x130bbfc70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500829970>, <_ast.Constant object at 0x7fd5008299a0>, <_ast.Constant object at 0x7fd5008299d0>, <_\
+ast.Constant object at 0x7fd500829a00>, <_ast.Constant object at 0x7fd500829a30>, <_ast.Constant object at 0x7fd500829a60>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$1" -> "[<_ast.Constant object at 0x7fd500829970>, <_ast.Constant object at 0x7fd5008299a0>, <_ast.Constant object at 0x7fd5008299d0>, <_\
+ast.Constant object at 0x7fd500829a00>, <_ast.Constant object at 0x7fd500829a30>, <_ast.Constant object at 0x7fd500829a60>](0)"	[label=assignedFrom];
 	"values(0)$1" -> "cnt_srs(0)$13"	[label=assignedFrom];
 	"values(0)$1" -> "index(0)$1"	[label=assignedFrom];
 	"trace(0)$15" -> "go(0)"	[label=Bar];
@@ -959,8 +961,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"trace(0)$15" -> "values(0)$1"	[label=Bar];
 	"Number of years employer using ML / DS(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$16" -> "Number of years employer using ML / DS(0)"	[label=dict];
-	"[<_ast.Name object at 0x130bbd490>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$16" -> "[<_ast.Name object at 0x130bbd490>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04e7160>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$16" -> "[<_ast.Name object at 0x7fd4c04e7160>](0)"	[label=assignedFrom];
 	"fig(0)$16" -> "go(0)"	[label=Figure];
 	"fig(0)$16" -> "layout(0)$16"	[label=Figure];
 	"fig(0)$16" -> "data(0)$16"	[label=Figure];
@@ -980,8 +982,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"layout(0)$17" -> "go(0)"	[label=Layout];
 	"layout(0)$17" -> "Do you consider yourself a DS?(0)"	[label=Layout];
 	"Do you consider yourself a DS?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130b9c280>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$17" -> "[<_ast.Name object at 0x130b9c280>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04e7f40>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$17" -> "[<_ast.Name object at 0x7fd4c04e7f40>](0)"	[label=assignedFrom];
 	"fig(0)$17" -> "go(0)"	[label=Figure];
 	"fig(0)$17" -> "layout(0)$17"	[label=Figure];
 	"fig(0)$17" -> "data(0)$17"	[label=Figure];
@@ -1016,8 +1018,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"layout(0)$18" -> "go(0)"	[label=Layout];
 	"layout(0)$18" -> "How did you first start your ML / DS training?(0)"	[label=Layout];
 	"How did you first start your ML / DS training?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130b96e20>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$18" -> "[<_ast.Name object at 0x130b96e20>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04e2820>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$18" -> "[<_ast.Name object at 0x7fd4c04e2820>](0)"	[label=assignedFrom];
 	"fig(0)$18" -> "go(0)"	[label=Figure];
 	"fig(0)$18" -> "layout(0)$18"	[label=Figure];
 	"fig(0)$18" -> "data(0)$18"	[label=Figure];
@@ -1039,8 +1041,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"layout(0)$19" -> "go(0)"	[label=Layout];
 	"layout(0)$19" -> "ML Tool / Technology to learn planning to learn next year(0)"	[label=Layout];
 	"ML Tool / Technology to learn planning to learn next year(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130ba3820>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$19" -> "[<_ast.Name object at 0x130ba3820>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04d8a90>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$19" -> "[<_ast.Name object at 0x7fd4c04d8a90>](0)"	[label=assignedFrom];
 	"fig(0)$19" -> "go(0)"	[label=Figure];
 	"fig(0)$19" -> "layout(0)$19"	[label=Figure];
 	"fig(0)$19" -> "data(0)$19"	[label=Figure];
@@ -1061,8 +1063,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"layout(0)$20" -> "go(0)"	[label=Layout];
 	"layout(0)$20" -> "ML method planning to learn next year(0)"	[label=Layout];
 	"ML method planning to learn next year(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130b97bb0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$20" -> "[<_ast.Name object at 0x130b97bb0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04ca8e0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$20" -> "[<_ast.Name object at 0x7fd4c04ca8e0>](0)"	[label=assignedFrom];
 	"fig(0)$20" -> "go(0)"	[label=Figure];
 	"fig(0)$20" -> "layout(0)$20"	[label=Figure];
 	"fig(0)$20" -> "data(0)$20"	[label=Figure];
@@ -1079,8 +1081,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"trace(0)$20" -> "cnt_srs(0)$16"	[label=Bar];
 	"Which language do you recommend for new DS people?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$21" -> "Which language do you recommend for new DS people?(0)"	[label=dict];
-	"[<_ast.Name object at 0x130ba0910>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$21" -> "[<_ast.Name object at 0x130ba0910>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04cb670>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$21" -> "[<_ast.Name object at 0x7fd4c04cb670>](0)"	[label=assignedFrom];
 	"fig(0)$21" -> "go(0)"	[label=Figure];
 	"fig(0)$21" -> "layout(0)$21"	[label=Figure];
 	"fig(0)$21" -> "data(0)$21"	[label=Figure];
@@ -1103,8 +1105,8 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"layout(0)$22" -> "go(0)"	[label=Layout];
 	"layout(0)$22" -> "Most important way to prove knowledge of ML / DS knowledge(0)"	[label=Layout];
 	"Most important way to prove knowledge of ML / DS knowledge(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x130b9f8e0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$22" -> "[<_ast.Name object at 0x130b9f8e0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c04dd640>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$22" -> "[<_ast.Name object at 0x7fd4c04dd640>](0)"	[label=assignedFrom];
 	"fig(0)$22" -> "go(0)"	[label=Figure];
 	"fig(0)$22" -> "layout(0)$22"	[label=Figure];
 	"fig(0)$22" -> "data(0)$22"	[label=Figure];
@@ -1112,18 +1114,18 @@ object at 0x130bbfc10>, <_ast.Constant object at 0x130bbfc40>, <_ast.Constant ob
 	"py(0)$23" -> "fig(0)$22"	[label=iplot];
 	"mcr_df(0)$2" -> "mcr_df(0)$1"	[label=assignedFrom];
 	"mcr_df(0)$2" -> "100(0)"	[label=assignedFrom];
-	"[<_ast.Attribute object at 0x130ba7130>, <_ast.Attribute object at 0x130ba71c0>, <_ast.Attribute object at 0x130ba7250>, <_ast.Attribute \
-object at 0x130ba72e0>, <_ast.Attribute object at 0x130ba7370>, <_ast.Attribute object at 0x130ba7400>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"ys(0)$0" -> "[<_ast.Attribute object at 0x130ba7130>, <_ast.Attribute object at 0x130ba71c0>, <_ast.Attribute object at 0x130ba7250>, <_ast.Attribute \
-object at 0x130ba72e0>, <_ast.Attribute object at 0x130ba7370>, <_ast.Attribute object at 0x130ba7400>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130ba7550>, <_ast.Constant object at 0x130ba7580>, <_ast.Constant object at 0x130ba75b0>, <_ast.Constant \
-object at 0x130ba75e0>, <_ast.Constant object at 0x130ba7610>, <_ast.Constant object at 0x130ba7640>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"names(0)$0" -> "[<_ast.Constant object at 0x130ba7550>, <_ast.Constant object at 0x130ba7580>, <_ast.Constant object at 0x130ba75b0>, <_ast.Constant \
-object at 0x130ba75e0>, <_ast.Constant object at 0x130ba7610>, <_ast.Constant object at 0x130ba7640>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130ba7730>, <_ast.Constant object at 0x130ba7760>, <_ast.Constant object at 0x130ba7790>, <_ast.Constant \
-object at 0x130ba77c0>, <_ast.Constant object at 0x130ba77f0>, <_ast.Constant object at 0x130ba7820>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"colors(0)$0" -> "[<_ast.Constant object at 0x130ba7730>, <_ast.Constant object at 0x130ba7760>, <_ast.Constant object at 0x130ba7790>, <_ast.Constant \
-object at 0x130ba77c0>, <_ast.Constant object at 0x130ba77f0>, <_ast.Constant object at 0x130ba7820>](0)"	[label=assignedFrom];
+	"[<_ast.Attribute object at 0x7fd4c04dd850>, <_ast.Attribute object at 0x7fd4c04ddf40>, <_ast.Attribute object at 0x7fd4c04ddfa0>, <_\
+ast.Attribute object at 0x7fd4c04dde80>, <_ast.Attribute object at 0x7fd4c04f1070>, <_ast.Attribute object at 0x7fd4c04f1100>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"ys(0)$0" -> "[<_ast.Attribute object at 0x7fd4c04dd850>, <_ast.Attribute object at 0x7fd4c04ddf40>, <_ast.Attribute object at 0x7fd4c04ddfa0>, <_\
+ast.Attribute object at 0x7fd4c04dde80>, <_ast.Attribute object at 0x7fd4c04f1070>, <_ast.Attribute object at 0x7fd4c04f1100>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04f1280>, <_ast.Constant object at 0x7fd4c04f12b0>, <_ast.Constant object at 0x7fd4c04f12e0>, <_\
+ast.Constant object at 0x7fd4c04f1310>, <_ast.Constant object at 0x7fd4c04f1370>, <_ast.Constant object at 0x7fd4c04f13a0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"names(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f1280>, <_ast.Constant object at 0x7fd4c04f12b0>, <_ast.Constant object at 0x7fd4c04f12e0>, <_\
+ast.Constant object at 0x7fd4c04f1310>, <_ast.Constant object at 0x7fd4c04f1370>, <_ast.Constant object at 0x7fd4c04f13a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04f14c0>, <_ast.Constant object at 0x7fd4c04f14f0>, <_ast.Constant object at 0x7fd4c04f1520>, <_\
+ast.Constant object at 0x7fd4c04f1550>, <_ast.Constant object at 0x7fd4c04f1580>, <_ast.Constant object at 0x7fd4c04f15b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4c04f14c0>, <_ast.Constant object at 0x7fd4c04f14f0>, <_ast.Constant object at 0x7fd4c04f1520>, <_\
+ast.Constant object at 0x7fd4c04f1550>, <_ast.Constant object at 0x7fd4c04f1580>, <_ast.Constant object at 0x7fd4c04f15b0>](0)"	[label=assignedFrom];
 	"[](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"trace(0)$22" -> "[](0)"	[label=assignedFrom];
 	"range(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
@@ -1146,14 +1148,14 @@ object at 0x130ba77c0>, <_ast.Constant object at 0x130ba77f0>, <_ast.Constant ob
 	"fig(0)$23" -> "layout(0)$23"	[label=Figure];
 	"py(0)$24" -> "py(0)$23"	[label=iplot];
 	"py(0)$24" -> "fig(0)$23"	[label=iplot];
-	"[<_ast.Attribute object at 0x130bca640>, <_ast.Attribute object at 0x130bca6d0>, <_ast.Attribute object at 0x130bca760>, <_ast.Attribute \
-object at 0x130bca7f0>, <_ast.Attribute object at 0x130bca8b0>, <_ast.Attribute object at 0x130bca940>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"ys(0)$1" -> "[<_ast.Attribute object at 0x130bca640>, <_ast.Attribute object at 0x130bca6d0>, <_ast.Attribute object at 0x130bca760>, <_ast.Attribute \
-object at 0x130bca7f0>, <_ast.Attribute object at 0x130bca8b0>, <_ast.Attribute object at 0x130bca940>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130bcaa90>, <_ast.Constant object at 0x130bcaac0>, <_ast.Constant object at 0x130bcaaf0>, <_ast.Constant \
-object at 0x130bcab20>, <_ast.Constant object at 0x130bcab50>, <_ast.Constant object at 0x130bca850>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"names(0)$1" -> "[<_ast.Constant object at 0x130bcaa90>, <_ast.Constant object at 0x130bcaac0>, <_ast.Constant object at 0x130bcaaf0>, <_ast.Constant \
-object at 0x130bcab20>, <_ast.Constant object at 0x130bcab50>, <_ast.Constant object at 0x130bca850>](0)"	[label=assignedFrom];
+	"[<_ast.Attribute object at 0x7fd4c04d03d0>, <_ast.Attribute object at 0x7fd4c04d0460>, <_ast.Attribute object at 0x7fd4c04d04c0>, <_\
+ast.Attribute object at 0x7fd4c04d05b0>, <_ast.Attribute object at 0x7fd4c04d0640>, <_ast.Attribute object at 0x7fd4c04d06a0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"ys(0)$1" -> "[<_ast.Attribute object at 0x7fd4c04d03d0>, <_ast.Attribute object at 0x7fd4c04d0460>, <_ast.Attribute object at 0x7fd4c04d04c0>, <_\
+ast.Attribute object at 0x7fd4c04d05b0>, <_ast.Attribute object at 0x7fd4c04d0640>, <_ast.Attribute object at 0x7fd4c04d06a0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04d07f0>, <_ast.Constant object at 0x7fd4c04d0820>, <_ast.Constant object at 0x7fd4c04d0850>, <_\
+ast.Constant object at 0x7fd4c04d0880>, <_ast.Constant object at 0x7fd4c04d0580>, <_ast.Constant object at 0x7fd4c04d08b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"names(0)$1" -> "[<_ast.Constant object at 0x7fd4c04d07f0>, <_ast.Constant object at 0x7fd4c04d0820>, <_ast.Constant object at 0x7fd4c04d0850>, <_\
+ast.Constant object at 0x7fd4c04d0880>, <_ast.Constant object at 0x7fd4c04d0580>, <_ast.Constant object at 0x7fd4c04d08b0>](0)"	[label=assignedFrom];
 	"hsl((0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"colors(0)$1" -> "np(0)"	[label=assignedFrom];
 	"colors(0)$1" -> "6(0)"	[label=assignedFrom];
@@ -1201,8 +1203,8 @@ object at 0x130bcab20>, <_ast.Constant object at 0x130bcab50>, <_ast.Constant ob
 	"layout(0)$25" -> "go(0)"	[label=Layout];
 	"layout(0)$25" -> "How long have you been learning DS?(0)"	[label=Layout];
 	"How long have you been learning DS?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fadf700>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$23" -> "[<_ast.Name object at 0x12fadf700>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008573d0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$23" -> "[<_ast.Name object at 0x7fd5008573d0>](0)"	[label=assignedFrom];
 	"fig(0)$25" -> "go(0)"	[label=Figure];
 	"fig(0)$25" -> "layout(0)$25"	[label=Figure];
 	"fig(0)$25" -> "data(0)$23"	[label=Figure];
@@ -1212,10 +1214,10 @@ object at 0x130bcab20>, <_ast.Constant object at 0x130bcab50>, <_ast.Constant ob
 	"cnt_srs(0)$18" -> "mcr_df(0)$2"	[label=head];
 	"cnt_srs(0)$18" -> "TimeSpentStudying(0)"	[label=head];
 	"TimeSpentStudying(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fadfd90>, <_ast.Constant object at 0x12fadfdc0>, <_ast.Constant object at 0x12fadfdf0>, <_ast.Constant \
-object at 0x12fadfe20>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$2" -> "[<_ast.Constant object at 0x12fadfd90>, <_ast.Constant object at 0x12fadfdc0>, <_ast.Constant object at 0x12fadfdf0>, <_ast.Constant \
-object at 0x12fadfe20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500857b20>, <_ast.Constant object at 0x7fd500857b80>, <_ast.Constant object at 0x7fd500857bb0>, <_\
+ast.Constant object at 0x7fd500857be0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$2" -> "[<_ast.Constant object at 0x7fd500857b20>, <_ast.Constant object at 0x7fd500857b80>, <_ast.Constant object at 0x7fd500857bb0>, <_\
+ast.Constant object at 0x7fd500857be0>](0)"	[label=assignedFrom];
 	"values(0)$2" -> "cnt_srs(0)$18"	[label=assignedFrom];
 	"values(0)$2" -> "index(0)$2"	[label=assignedFrom];
 	"trace(0)$27" -> "go(0)"	[label=Bar];
@@ -1226,8 +1228,8 @@ object at 0x12fadfe20>](0)"	[label=assignedFrom];
 	"trace(0)$27" -> "values(0)$2"	[label=Bar];
 	"Time spent studying DS in a week(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$26" -> "Time spent studying DS in a week(0)"	[label=dict];
-	"[<_ast.Name object at 0x12fb05640>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$24" -> "[<_ast.Name object at 0x12fb05640>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500870340>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$24" -> "[<_ast.Name object at 0x7fd500870340>](0)"	[label=assignedFrom];
 	"fig(0)$26" -> "go(0)"	[label=Figure];
 	"fig(0)$26" -> "layout(0)$26"	[label=Figure];
 	"fig(0)$26" -> "data(0)$24"	[label=Figure];
@@ -1237,16 +1239,16 @@ object at 0x12fadfe20>](0)"	[label=assignedFrom];
 	"cnt_srs(0)$19" -> "mcr_df(0)$2"	[label=head];
 	"cnt_srs(0)$19" -> "WorkDatasetSize(0)"	[label=head];
 	"WorkDatasetSize(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb05d00>, <_ast.Constant object at 0x12fb05d30>, <_ast.Constant object at 0x12fb05d60>, <_ast.Constant \
-object at 0x12fb05d90>, <_ast.Constant object at 0x12fb05dc0>, <_ast.Constant object at 0x12fb05df0>, <_ast.Constant object at 0x12fb05e20>, <_\
-ast.Constant object at 0x12fb05e50>, <_ast.Constant object at 0x12fb05e80>, <_ast.Constant object at 0x12fb05eb0>, <_ast.Constant \
-object at 0x12fb05ee0>, <_ast.Constant object at 0x12fb05f10>, <_ast.Constant object at 0x12fb05f40>, <_ast.Constant object at 0x12fb05f70>, <_\
-ast.Constant object at 0x12fb05fa0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$3" -> "[<_ast.Constant object at 0x12fb05d00>, <_ast.Constant object at 0x12fb05d30>, <_ast.Constant object at 0x12fb05d60>, <_ast.Constant \
-object at 0x12fb05d90>, <_ast.Constant object at 0x12fb05dc0>, <_ast.Constant object at 0x12fb05df0>, <_ast.Constant object at 0x12fb05e20>, <_\
-ast.Constant object at 0x12fb05e50>, <_ast.Constant object at 0x12fb05e80>, <_ast.Constant object at 0x12fb05eb0>, <_ast.Constant \
-object at 0x12fb05ee0>, <_ast.Constant object at 0x12fb05f10>, <_ast.Constant object at 0x12fb05f40>, <_ast.Constant object at 0x12fb05f70>, <_\
-ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500870a00>, <_ast.Constant object at 0x7fd500870a30>, <_ast.Constant object at 0x7fd500870a60>, <_\
+ast.Constant object at 0x7fd500870a90>, <_ast.Constant object at 0x7fd500870ac0>, <_ast.Constant object at 0x7fd500870af0>, <_ast.Constant \
+object at 0x7fd500870b20>, <_ast.Constant object at 0x7fd500870b50>, <_ast.Constant object at 0x7fd500870b80>, <_ast.Constant object \
+at 0x7fd500870bb0>, <_ast.Constant object at 0x7fd500870be0>, <_ast.Constant object at 0x7fd500870c10>, <_ast.Constant object at \
+0x7fd500870c40>, <_ast.Constant object at 0x7fd500870c70>, <_ast.Constant object at 0x7fd500870ca0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$3" -> "[<_ast.Constant object at 0x7fd500870a00>, <_ast.Constant object at 0x7fd500870a30>, <_ast.Constant object at 0x7fd500870a60>, <_\
+ast.Constant object at 0x7fd500870a90>, <_ast.Constant object at 0x7fd500870ac0>, <_ast.Constant object at 0x7fd500870af0>, <_ast.Constant \
+object at 0x7fd500870b20>, <_ast.Constant object at 0x7fd500870b50>, <_ast.Constant object at 0x7fd500870b80>, <_ast.Constant object \
+at 0x7fd500870bb0>, <_ast.Constant object at 0x7fd500870be0>, <_ast.Constant object at 0x7fd500870c10>, <_ast.Constant object at \
+0x7fd500870c40>, <_ast.Constant object at 0x7fd500870c70>, <_ast.Constant object at 0x7fd500870ca0>](0)"	[label=assignedFrom];
 	"values(0)$3" -> "cnt_srs(0)$19"	[label=assignedFrom];
 	"values(0)$3" -> "index(0)$3"	[label=assignedFrom];
 	"trace(0)$28" -> "go(0)"	[label=Bar];
@@ -1257,8 +1259,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"trace(0)$28" -> "values(0)$3"	[label=Bar];
 	"Dataset size worked(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$27" -> "Dataset size worked(0)"	[label=dict];
-	"[<_ast.Name object at 0x12faf47c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$25" -> "[<_ast.Name object at 0x12faf47c0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008664f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$25" -> "[<_ast.Name object at 0x7fd5008664f0>](0)"	[label=assignedFrom];
 	"fig(0)$27" -> "go(0)"	[label=Figure];
 	"fig(0)$27" -> "layout(0)$27"	[label=Figure];
 	"fig(0)$27" -> "data(0)$25"	[label=Figure];
@@ -1298,8 +1300,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$28" -> "go(0)"	[label=Layout];
 	"layout(0)$28" -> "Computing Hardware used in work(0)"	[label=Layout];
 	"Computing Hardware used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12faf5130>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$26" -> "[<_ast.Name object at 0x12faf5130>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50085ae20>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$26" -> "[<_ast.Name object at 0x7fd50085ae20>](0)"	[label=assignedFrom];
 	"fig(0)$28" -> "go(0)"	[label=Figure];
 	"fig(0)$28" -> "layout(0)$28"	[label=Figure];
 	"fig(0)$28" -> "data(0)$26"	[label=Figure];
@@ -1337,8 +1339,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$29" -> "go(0)"	[label=Layout];
 	"layout(0)$29" -> "Data type used in work(0)"	[label=Layout];
 	"Data type used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fad5550>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$27" -> "[<_ast.Name object at 0x12fad5550>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008602b0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$27" -> "[<_ast.Name object at 0x7fd5008602b0>](0)"	[label=assignedFrom];
 	"fig(0)$29" -> "go(0)"	[label=Figure];
 	"fig(0)$29" -> "layout(0)$29"	[label=Figure];
 	"fig(0)$29" -> "data(0)$27"	[label=Figure];
@@ -1359,8 +1361,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$30" -> "go(0)"	[label=Layout];
 	"layout(0)$30" -> "How often the models built get into production in work?(0)"	[label=Layout];
 	"How often the models built get into production in work?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fafb340>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$28" -> "[<_ast.Name object at 0x12fafb340>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500848040>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$28" -> "[<_ast.Name object at 0x7fd500848040>](0)"	[label=assignedFrom];
 	"fig(0)$30" -> "go(0)"	[label=Figure];
 	"fig(0)$30" -> "layout(0)$30"	[label=Figure];
 	"fig(0)$30" -> "data(0)$28"	[label=Figure];
@@ -1381,8 +1383,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$31" -> "go(0)"	[label=Layout];
 	"layout(0)$31" -> "Algorithms used in work(0)"	[label=Layout];
 	"Algorithms used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12faf2220>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$29" -> "[<_ast.Name object at 0x12faf2220>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd5008641f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$29" -> "[<_ast.Name object at 0x7fd5008641f0>](0)"	[label=assignedFrom];
 	"fig(0)$31" -> "go(0)"	[label=Figure];
 	"fig(0)$31" -> "layout(0)$31"	[label=Figure];
 	"fig(0)$31" -> "data(0)$29"	[label=Figure];
@@ -1407,8 +1409,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$32" -> "go(0)"	[label=Layout];
 	"layout(0)$32" -> "Tools used in work(0)"	[label=Layout];
 	"Tools used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb009d0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$30" -> "[<_ast.Name object at 0x12fb009d0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50083a700>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$30" -> "[<_ast.Name object at 0x7fd50083a700>](0)"	[label=assignedFrom];
 	"fig(0)$32" -> "go(0)"	[label=Figure];
 	"fig(0)$32" -> "layout(0)$32"	[label=Figure];
 	"fig(0)$32" -> "data(0)$30"	[label=Figure];
@@ -1434,8 +1436,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$33" -> "go(0)"	[label=Layout];
 	"layout(0)$33" -> "Methods used in work(0)"	[label=Layout];
 	"Methods used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12faed640>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$31" -> "[<_ast.Name object at 0x12faed640>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500844c10>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$31" -> "[<_ast.Name object at 0x7fd500844c10>](0)"	[label=assignedFrom];
 	"fig(0)$33" -> "go(0)"	[label=Figure];
 	"fig(0)$33" -> "layout(0)$33"	[label=Figure];
 	"fig(0)$33" -> "data(0)$31"	[label=Figure];
@@ -1461,8 +1463,8 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"layout(0)$34" -> "go(0)"	[label=Layout];
 	"layout(0)$34" -> "Challenges faced in work(0)"	[label=Layout];
 	"Challenges faced in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fb14490>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$32" -> "[<_ast.Name object at 0x12fb14490>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd500869160>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$32" -> "[<_ast.Name object at 0x7fd500869160>](0)"	[label=assignedFrom];
 	"fig(0)$34" -> "go(0)"	[label=Figure];
 	"fig(0)$34" -> "layout(0)$34"	[label=Figure];
 	"fig(0)$34" -> "data(0)$32"	[label=Figure];
@@ -1472,12 +1474,12 @@ ast.Constant object at 0x12fb05fa0>](0)"	[label=assignedFrom];
 	"cnt_srs(0)$26" -> "mcr_df(0)$2"	[label=head];
 	"cnt_srs(0)$26" -> "WorkDataVisualizations(0)"	[label=head];
 	"WorkDataVisualizations(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fb14b80>, <_ast.Constant object at 0x12fb14bb0>, <_ast.Constant object at 0x12fb14be0>, <_ast.Constant \
-object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant object at 0x12fb14c70>, <_ast.Constant object at 0x12fb14ca0>](\
-0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$4" -> "[<_ast.Constant object at 0x12fb14b80>, <_ast.Constant object at 0x12fb14bb0>, <_ast.Constant object at 0x12fb14be0>, <_ast.Constant \
-object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant object at 0x12fb14c70>, <_ast.Constant object at 0x12fb14ca0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500869820>, <_ast.Constant object at 0x7fd500869850>, <_ast.Constant object at 0x7fd500869880>, <_\
+ast.Constant object at 0x7fd5008698b0>, <_ast.Constant object at 0x7fd5008698e0>, <_ast.Constant object at 0x7fd500869910>, <_ast.Constant \
+object at 0x7fd500869940>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$4" -> "[<_ast.Constant object at 0x7fd500869820>, <_ast.Constant object at 0x7fd500869850>, <_ast.Constant object at 0x7fd500869880>, <_\
+ast.Constant object at 0x7fd5008698b0>, <_ast.Constant object at 0x7fd5008698e0>, <_ast.Constant object at 0x7fd500869910>, <_ast.Constant \
+object at 0x7fd500869940>](0)"	[label=assignedFrom];
 	"values(0)$4" -> "cnt_srs(0)$26"	[label=assignedFrom];
 	"values(0)$4" -> "index(0)$4"	[label=assignedFrom];
 	"trace(0)$36" -> "go(0)"	[label=Bar];
@@ -1489,8 +1491,8 @@ object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant ob
 	"layout(0)$35" -> "go(0)"	[label=Layout];
 	"layout(0)$35" -> "Data visualizations used in work(0)"	[label=Layout];
 	"Data visualizations used in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8c7490>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$33" -> "[<_ast.Name object at 0x12f8c7490>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd50083d1c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$33" -> "[<_ast.Name object at 0x7fd50083d1c0>](0)"	[label=assignedFrom];
 	"fig(0)$35" -> "go(0)"	[label=Figure];
 	"fig(0)$35" -> "layout(0)$35"	[label=Figure];
 	"fig(0)$35" -> "data(0)$33"	[label=Figure];
@@ -1499,10 +1501,10 @@ object at 0x12fb14c10>, <_ast.Constant object at 0x12fb14c40>, <_ast.Constant ob
 	"cnt_srs(0)$27" -> "mcr_df(0)$2"	[label=value_counts];
 	"cnt_srs(0)$27" -> "WorkInternalVsExternalTools(0)"	[label=value_counts];
 	"WorkInternalVsExternalTools(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8c7b50>, <_ast.Constant object at 0x12f8c7b80>, <_ast.Constant object at 0x12f8c7bb0>, <_ast.Constant \
-object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant object at 0x12f8c7c40>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"index(0)$5" -> "[<_ast.Constant object at 0x12f8c7b50>, <_ast.Constant object at 0x12f8c7b80>, <_ast.Constant object at 0x12f8c7bb0>, <_ast.Constant \
-object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant object at 0x12f8c7c40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50083d820>, <_ast.Constant object at 0x7fd50083d850>, <_ast.Constant object at 0x7fd50083d880>, <_\
+ast.Constant object at 0x7fd50083d8b0>, <_ast.Constant object at 0x7fd50083d910>, <_ast.Constant object at 0x7fd50083d970>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"index(0)$5" -> "[<_ast.Constant object at 0x7fd50083d820>, <_ast.Constant object at 0x7fd50083d850>, <_ast.Constant object at 0x7fd50083d880>, <_\
+ast.Constant object at 0x7fd50083d8b0>, <_ast.Constant object at 0x7fd50083d910>, <_ast.Constant object at 0x7fd50083d970>](0)"	[label=assignedFrom];
 	"values(0)$5" -> "cnt_srs(0)$27"	[label=assignedFrom];
 	"values(0)$5" -> "index(0)$5"	[label=assignedFrom];
 	"trace(0)$37" -> "go(0)"	[label=Scatter];
@@ -1518,8 +1520,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$36" -> "go(0)"	[label=Layout];
 	"layout(0)$36" -> "Interval & External Tools in work(0)"	[label=Layout];
 	"Interval & External Tools in work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d37f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$34" -> "[<_ast.Name object at 0x12f8d37f0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05b94c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$34" -> "[<_ast.Name object at 0x7fd4c05b94c0>](0)"	[label=assignedFrom];
 	"fig(0)$36" -> "go(0)"	[label=Figure];
 	"fig(0)$36" -> "layout(0)$36"	[label=Figure];
 	"fig(0)$36" -> "data(0)$34"	[label=Figure];
@@ -1540,8 +1542,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$37" -> "go(0)"	[label=Layout];
 	"layout(0)$37" -> "At work, where does the DS team sit?(0)"	[label=Layout];
 	"At work, where does the DS team sit?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8c8310>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$35" -> "[<_ast.Name object at 0x12f8c8310>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05d22e0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$35" -> "[<_ast.Name object at 0x7fd4c05d22e0>](0)"	[label=assignedFrom];
 	"fig(0)$37" -> "go(0)"	[label=Figure];
 	"fig(0)$37" -> "layout(0)$37"	[label=Figure];
 	"fig(0)$37" -> "data(0)$35"	[label=Figure];
@@ -1593,8 +1595,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$38" -> "go(0)"	[label=Layout];
 	"layout(0)$38" -> "Data storage models used at work(0)"	[label=Layout];
 	"Data storage models used at work(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8d6f70>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$36" -> "[<_ast.Name object at 0x12f8d6f70>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05cfca0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$36" -> "[<_ast.Name object at 0x7fd4c05cfca0>](0)"	[label=assignedFrom];
 	"fig(0)$38" -> "go(0)"	[label=Figure];
 	"fig(0)$38" -> "layout(0)$38"	[label=Figure];
 	"fig(0)$38" -> "data(0)$36"	[label=Figure];
@@ -1619,8 +1621,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$39" -> "go(0)"	[label=Layout];
 	"layout(0)$39" -> "How do you share data at work?(0)"	[label=Layout];
 	"How do you share data at work?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8cc370>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$37" -> "[<_ast.Name object at 0x12f8cc370>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05ce040>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$37" -> "[<_ast.Name object at 0x7fd4c05ce040>](0)"	[label=assignedFrom];
 	"fig(0)$39" -> "go(0)"	[label=Figure];
 	"fig(0)$39" -> "layout(0)$39"	[label=Figure];
 	"fig(0)$39" -> "data(0)$37"	[label=Figure];
@@ -1640,8 +1642,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$40" -> "go(0)"	[label=Layout];
 	"layout(0)$40" -> "How do you share code at work?(0)"	[label=Layout];
 	"How do you share code at work?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8cb520>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$38" -> "[<_ast.Name object at 0x12f8cb520>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05b61f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$38" -> "[<_ast.Name object at 0x7fd4c05b61f0>](0)"	[label=assignedFrom];
 	"fig(0)$40" -> "go(0)"	[label=Figure];
 	"fig(0)$40" -> "layout(0)$40"	[label=Figure];
 	"fig(0)$40" -> "data(0)$38"	[label=Figure];
@@ -1665,8 +1667,8 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"layout(0)$41" -> "go(0)"	[label=Layout];
 	"layout(0)$41" -> "Understanding of math behind algos used at work?(0)"	[label=Layout];
 	"Understanding of math behind algos used at work?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8da550>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$39" -> "[<_ast.Name object at 0x12f8da550>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05cb1c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$39" -> "[<_ast.Name object at 0x7fd4c05cb1c0>](0)"	[label=assignedFrom];
 	"fig(0)$41" -> "go(0)"	[label=Figure];
 	"fig(0)$41" -> "layout(0)$41"	[label=Figure];
 	"fig(0)$41" -> "data(0)$39"	[label=Figure];
@@ -1680,46 +1682,49 @@ object at 0x12f8c7be0>, <_ast.Constant object at 0x12f8c7c10>, <_ast.Constant ob
 	"sometimes_count(0)$0" -> "[](0)"	[label=assignedFrom];
 	"often_count(0)$0" -> "[](0)"	[label=assignedFrom];
 	"mostly_count(0)$0" -> "[](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8daeb0>, <_ast.Constant object at 0x12f8daee0>, <_ast.Constant object at 0x12f8daf10>, <_ast.Constant \
-object at 0x12f8daf40>, <_ast.Constant object at 0x12f8da640>, <_ast.Constant object at 0x12f8dafa0>, <_ast.Constant object at 0x12f8da250>, <_\
-ast.Constant object at 0x12f8dafd0>, <_ast.Constant object at 0x12f8daf70>, <_ast.Constant object at 0x12f8c5040>, <_ast.Constant \
-object at 0x12f8c5070>, <_ast.Constant object at 0x12f8c50a0>, <_ast.Constant object at 0x12f8c50d0>, <_ast.Constant object at 0x12f8c5100>, <_\
-ast.Constant object at 0x12f8c5130>, <_ast.Constant object at 0x12f8c5160>, <_ast.Constant object at 0x12f8c51c0>, <_ast.Constant \
-object at 0x12f8c51f0>, <_ast.Constant object at 0x12f8c5220>, <_ast.Constant object at 0x12f8c5250>, <_ast.Constant object at 0x12f8c5280>, <_\
-ast.Constant object at 0x12f8c52b0>, <_ast.Constant object at 0x12f8c5310>, <_ast.Constant object at 0x12f8c52e0>, <_ast.Constant \
-object at 0x12f8c5340>, <_ast.Constant object at 0x12f8c5370>, <_ast.Constant object at 0x12f8c53a0>, <_ast.Constant object at 0x12f8c53d0>, <_\
-ast.Constant object at 0x12f8c5400>, <_ast.Constant object at 0x12f8c5430>, <_ast.Constant object at 0x12f8c5460>, <_ast.Constant \
-object at 0x12f8c5490>, <_ast.Constant object at 0x12f8c54f0>, <_ast.Constant object at 0x12f8c54c0>, <_ast.Constant object at 0x12f8c5520>, <_\
-ast.Constant object at 0x12f8c5550>, <_ast.Constant object at 0x12f8c5580>, <_ast.Constant object at 0x12f8c55b0>, <_ast.Constant \
-object at 0x12f8c55e0>, <_ast.Constant object at 0x12f8c5610>, <_ast.Constant object at 0x12f8c5640>, <_ast.Constant object at 0x12f8c5670>, <_\
-ast.Constant object at 0x12f8c56a0>, <_ast.Constant object at 0x12f8c56d0>, <_ast.Constant object at 0x12f8c5700>, <_ast.Constant \
-object at 0x12f8c5730>, <_ast.Constant object at 0x12f8c5760>, <_ast.Constant object at 0x12f8c5790>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x12f8daeb0>, <_ast.Constant object at 0x12f8daee0>, <_ast.Constant object at 0x12f8daf10>, <_ast.Constant \
-object at 0x12f8daf40>, <_ast.Constant object at 0x12f8da640>, <_ast.Constant object at 0x12f8dafa0>, <_ast.Constant object at 0x12f8da250>, <_\
-ast.Constant object at 0x12f8dafd0>, <_ast.Constant object at 0x12f8daf70>, <_ast.Constant object at 0x12f8c5040>, <_ast.Constant \
-object at 0x12f8c5070>, <_ast.Constant object at 0x12f8c50a0>, <_ast.Constant object at 0x12f8c50d0>, <_ast.Constant object at 0x12f8c5100>, <_\
-ast.Constant object at 0x12f8c5130>, <_ast.Constant object at 0x12f8c5160>, <_ast.Constant object at 0x12f8c51c0>, <_ast.Constant \
-object at 0x12f8c51f0>, <_ast.Constant object at 0x12f8c5220>, <_ast.Constant object at 0x12f8c5250>, <_ast.Constant object at 0x12f8c5280>, <_\
-ast.Constant object at 0x12f8c52b0>, <_ast.Constant object at 0x12f8c5310>, <_ast.Constant object at 0x12f8c52e0>, <_ast.Constant \
-object at 0x12f8c5340>, <_ast.Constant object at 0x12f8c5370>, <_ast.Constant object at 0x12f8c53a0>, <_ast.Constant object at 0x12f8c53d0>, <_\
-ast.Constant object at 0x12f8c5400>, <_ast.Constant object at 0x12f8c5430>, <_ast.Constant object at 0x12f8c5460>, <_ast.Constant \
-object at 0x12f8c5490>, <_ast.Constant object at 0x12f8c54f0>, <_ast.Constant object at 0x12f8c54c0>, <_ast.Constant object at 0x12f8c5520>, <_\
-ast.Constant object at 0x12f8c5550>, <_ast.Constant object at 0x12f8c5580>, <_ast.Constant object at 0x12f8c55b0>, <_ast.Constant \
-object at 0x12f8c55e0>, <_ast.Constant object at 0x12f8c5610>, <_ast.Constant object at 0x12f8c5640>, <_ast.Constant object at 0x12f8c5670>, <_\
-ast.Constant object at 0x12f8c56a0>, <_ast.Constant object at 0x12f8c56d0>, <_ast.Constant object at 0x12f8c5700>, <_ast.Constant \
-object at 0x12f8c5730>, <_ast.Constant object at 0x12f8c5760>, <_ast.Constant object at 0x12f8c5790>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05cbb50>, <_ast.Constant object at 0x7fd4c05cbb80>, <_ast.Constant object at 0x7fd4c05cbbb0>, <_\
+ast.Constant object at 0x7fd4c05cbbe0>, <_ast.Constant object at 0x7fd4c05cbc10>, <_ast.Constant object at 0x7fd4c05cbc40>, <_ast.Constant \
+object at 0x7fd4c05cbc70>, <_ast.Constant object at 0x7fd4c05cbca0>, <_ast.Constant object at 0x7fd4c05cbcd0>, <_ast.Constant object \
+at 0x7fd4c05cbd00>, <_ast.Constant object at 0x7fd4c05cbd30>, <_ast.Constant object at 0x7fd4c05cbd60>, <_ast.Constant object at \
+0x7fd4c05cbd90>, <_ast.Constant object at 0x7fd4c05cbdc0>, <_ast.Constant object at 0x7fd4c05cbdf0>, <_ast.Constant object at 0x7fd4c05cbe20>, <_\
+ast.Constant object at 0x7fd4c05cbe50>, <_ast.Constant object at 0x7fd4c05cbe80>, <_ast.Constant object at 0x7fd4c05cbeb0>, <_ast.Constant \
+object at 0x7fd4c05cbee0>, <_ast.Constant object at 0x7fd4c05cbf10>, <_ast.Constant object at 0x7fd4c05cbf40>, <_ast.Constant object \
+at 0x7fd4c05cbf70>, <_ast.Constant object at 0x7fd4c05cbfa0>, <_ast.Constant object at 0x7fd4c05cbfd0>, <_ast.Constant object at \
+0x7fd4c05a9040>, <_ast.Constant object at 0x7fd4c05a9070>, <_ast.Constant object at 0x7fd4c05a90a0>, <_ast.Constant object at 0x7fd4c05a90d0>, <_\
+ast.Constant object at 0x7fd4c05a9100>, <_ast.Constant object at 0x7fd4c05a9130>, <_ast.Constant object at 0x7fd4c05a9160>, <_ast.Constant \
+object at 0x7fd4c05a9190>, <_ast.Constant object at 0x7fd4c05a91c0>, <_ast.Constant object at 0x7fd4c05a91f0>, <_ast.Constant object \
+at 0x7fd4c05a9220>, <_ast.Constant object at 0x7fd4c05a9250>, <_ast.Constant object at 0x7fd4c05a9280>, <_ast.Constant object at \
+0x7fd4c05a92e0>, <_ast.Constant object at 0x7fd4c05a92b0>, <_ast.Constant object at 0x7fd4c05a9310>, <_ast.Constant object at 0x7fd4c05a9340>, <_\
+ast.Constant object at 0x7fd4c05a9370>, <_ast.Constant object at 0x7fd4c05a93a0>, <_ast.Constant object at 0x7fd4c05a9400>, <_ast.Constant \
+object at 0x7fd4c05a93d0>, <_ast.Constant object at 0x7fd4c05a9430>, <_ast.Constant object at 0x7fd4c05a9460>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"cols_to_use(0)$0" -> "[<_ast.Constant object at 0x7fd4c05cbb50>, <_ast.Constant object at 0x7fd4c05cbb80>, <_ast.Constant object at 0x7fd4c05cbbb0>, <_\
+ast.Constant object at 0x7fd4c05cbbe0>, <_ast.Constant object at 0x7fd4c05cbc10>, <_ast.Constant object at 0x7fd4c05cbc40>, <_ast.Constant \
+object at 0x7fd4c05cbc70>, <_ast.Constant object at 0x7fd4c05cbca0>, <_ast.Constant object at 0x7fd4c05cbcd0>, <_ast.Constant object \
+at 0x7fd4c05cbd00>, <_ast.Constant object at 0x7fd4c05cbd30>, <_ast.Constant object at 0x7fd4c05cbd60>, <_ast.Constant object at \
+0x7fd4c05cbd90>, <_ast.Constant object at 0x7fd4c05cbdc0>, <_ast.Constant object at 0x7fd4c05cbdf0>, <_ast.Constant object at 0x7fd4c05cbe20>, <_\
+ast.Constant object at 0x7fd4c05cbe50>, <_ast.Constant object at 0x7fd4c05cbe80>, <_ast.Constant object at 0x7fd4c05cbeb0>, <_ast.Constant \
+object at 0x7fd4c05cbee0>, <_ast.Constant object at 0x7fd4c05cbf10>, <_ast.Constant object at 0x7fd4c05cbf40>, <_ast.Constant object \
+at 0x7fd4c05cbf70>, <_ast.Constant object at 0x7fd4c05cbfa0>, <_ast.Constant object at 0x7fd4c05cbfd0>, <_ast.Constant object at \
+0x7fd4c05a9040>, <_ast.Constant object at 0x7fd4c05a9070>, <_ast.Constant object at 0x7fd4c05a90a0>, <_ast.Constant object at 0x7fd4c05a90d0>, <_\
+ast.Constant object at 0x7fd4c05a9100>, <_ast.Constant object at 0x7fd4c05a9130>, <_ast.Constant object at 0x7fd4c05a9160>, <_ast.Constant \
+object at 0x7fd4c05a9190>, <_ast.Constant object at 0x7fd4c05a91c0>, <_ast.Constant object at 0x7fd4c05a91f0>, <_ast.Constant object \
+at 0x7fd4c05a9220>, <_ast.Constant object at 0x7fd4c05a9250>, <_ast.Constant object at 0x7fd4c05a9280>, <_ast.Constant object at \
+0x7fd4c05a92e0>, <_ast.Constant object at 0x7fd4c05a92b0>, <_ast.Constant object at 0x7fd4c05a9310>, <_ast.Constant object at 0x7fd4c05a9340>, <_\
+ast.Constant object at 0x7fd4c05a9370>, <_ast.Constant object at 0x7fd4c05a93a0>, <_ast.Constant object at 0x7fd4c05a9400>, <_ast.Constant \
+object at 0x7fd4c05a93d0>, <_ast.Constant object at 0x7fd4c05a9430>, <_ast.Constant object at 0x7fd4c05a9460>](0)"	[label=assignedFrom];
 	"col(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"col(0)" -> "cols_to_use(0)$0"	[label=iteratorOf];
 	"col(0)" -> "cols_to_use(0)$1"	[label=iteratorOf];
-	"cols_to_use(0)$1" -> "[<_ast.Constant object at 0x12f961cd0>, <_ast.Constant object at 0x12f961d00>, <_ast.Constant object at 0x12f961d30>, <_ast.Constant \
-object at 0x12f961d60>, <_ast.Constant object at 0x12f961d90>, <_ast.Constant object at 0x12f961dc0>, <_ast.Constant object at 0x12f961df0>, <_\
-ast.Constant object at 0x12f961e20>, <_ast.Constant object at 0x12f961e50>, <_ast.Constant object at 0x12f961e80>, <_ast.Constant \
-object at 0x12f961eb0>, <_ast.Constant object at 0x12f961ee0>, <_ast.Constant object at 0x12f961f10>, <_ast.Constant object at 0x12f961f40>, <_\
-ast.Constant object at 0x12f961c70>, <_ast.Constant object at 0x12f961f70>, <_ast.Constant object at 0x12f961fa0>, <_ast.Constant \
-object at 0x12f961fd0>, <_ast.Constant object at 0x12f961c10>, <_ast.Constant object at 0x12f961610>, <_ast.Constant object at 0x12f950040>, <_\
-ast.Constant object at 0x12f950070>, <_ast.Constant object at 0x12f9500a0>, <_ast.Constant object at 0x12f9500d0>, <_ast.Constant \
-object at 0x12f950100>, <_ast.Constant object at 0x12f950130>, <_ast.Constant object at 0x12f950160>, <_ast.Constant object at 0x12f950190>, <_\
-ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)"	[label=assignedFrom];
+	"cols_to_use(0)$1" -> "[<_ast.Constant object at 0x7fd4c05c39d0>, <_ast.Constant object at 0x7fd4c05c3a00>, <_ast.Constant object at 0x7fd4c05c3a90>, <_\
+ast.Constant object at 0x7fd4c05c3ac0>, <_ast.Constant object at 0x7fd4c05c3af0>, <_ast.Constant object at 0x7fd4c05c3b20>, <_ast.Constant \
+object at 0x7fd4c05c3b50>, <_ast.Constant object at 0x7fd4c05c3b80>, <_ast.Constant object at 0x7fd4c05c3be0>, <_ast.Constant object \
+at 0x7fd4c05c3c40>, <_ast.Constant object at 0x7fd4c05c3c70>, <_ast.Constant object at 0x7fd4c05c3ca0>, <_ast.Constant object at \
+0x7fd4c05c3cd0>, <_ast.Constant object at 0x7fd4c05c3d00>, <_ast.Constant object at 0x7fd4c05c3d30>, <_ast.Constant object at 0x7fd4c05c3d60>, <_\
+ast.Constant object at 0x7fd4c05c3d90>, <_ast.Constant object at 0x7fd4c05c3dc0>, <_ast.Constant object at 0x7fd4c05c3a60>, <_ast.Constant \
+object at 0x7fd4c05c3df0>, <_ast.Constant object at 0x7fd4c05c3e20>, <_ast.Constant object at 0x7fd4c05c3e50>, <_ast.Constant object \
+at 0x7fd4c05c3e80>, <_ast.Constant object at 0x7fd4c05c3eb0>, <_ast.Constant object at 0x7fd4c05c3ee0>, <_ast.Constant object at \
+0x7fd4c05c3c10>, <_ast.Constant object at 0x7fd4c05c3f10>, <_ast.Constant object at 0x7fd4c05c3f40>, <_ast.Constant object at 0x7fd4c05c3f70>, <_\
+ast.Constant object at 0x7fd4c05c3fa0>](0)"	[label=assignedFrom];
 	"cnt_srs(0)$32" -> "mcr_df(0)$2"	[label=value_counts];
 	"cnt_srs(0)$32" -> "col(0)"	[label=value_counts];
 	"names(0)$3" -> "names(0)$2"	[label=append];
@@ -1773,10 +1778,10 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)"	
 	"stack(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"800(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"2250(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f961460>, <_ast.Name object at 0x12f961490>, <_ast.Name object at 0x12f9614c0>, <_ast.Name object at 0x12f9614f0>](\
-0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$40" -> "[<_ast.Name object at 0x12f961460>, <_ast.Name object at 0x12f961490>, <_ast.Name object at 0x12f9614c0>, <_ast.Name object at 0x12f9614f0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c05c3160>, <_ast.Name object at 0x7fd4c05c3190>, <_ast.Name object at 0x7fd4c05c31c0>, <_ast.Name object \
+at 0x7fd4c05c31f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$40" -> "[<_ast.Name object at 0x7fd4c05c3160>, <_ast.Name object at 0x7fd4c05c3190>, <_ast.Name object at 0x7fd4c05c31c0>, <_ast.Name object \
+at 0x7fd4c05c31f0>](0)"	[label=assignedFrom];
 	"fig(0)$42" -> "go(0)"	[label=Figure];
 	"fig(0)$42" -> "layout(0)$42"	[label=Figure];
 	"fig(0)$42" -> "data(0)$40"	[label=Figure];
@@ -1787,15 +1792,16 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)"	
 	"sometimes_count(0)$2" -> "[](0)"	[label=assignedFrom];
 	"often_count(0)$2" -> "[](0)"	[label=assignedFrom];
 	"mostly_count(0)$2" -> "[](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f961cd0>, <_ast.Constant object at 0x12f961d00>, <_ast.Constant object at 0x12f961d30>, <_ast.Constant \
-object at 0x12f961d60>, <_ast.Constant object at 0x12f961d90>, <_ast.Constant object at 0x12f961dc0>, <_ast.Constant object at 0x12f961df0>, <_\
-ast.Constant object at 0x12f961e20>, <_ast.Constant object at 0x12f961e50>, <_ast.Constant object at 0x12f961e80>, <_ast.Constant \
-object at 0x12f961eb0>, <_ast.Constant object at 0x12f961ee0>, <_ast.Constant object at 0x12f961f10>, <_ast.Constant object at 0x12f961f40>, <_\
-ast.Constant object at 0x12f961c70>, <_ast.Constant object at 0x12f961f70>, <_ast.Constant object at 0x12f961fa0>, <_ast.Constant \
-object at 0x12f961fd0>, <_ast.Constant object at 0x12f961c10>, <_ast.Constant object at 0x12f961610>, <_ast.Constant object at 0x12f950040>, <_\
-ast.Constant object at 0x12f950070>, <_ast.Constant object at 0x12f9500a0>, <_ast.Constant object at 0x12f9500d0>, <_ast.Constant \
-object at 0x12f950100>, <_ast.Constant object at 0x12f950130>, <_ast.Constant object at 0x12f950160>, <_ast.Constant object at 0x12f950190>, <_\
-ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05c39d0>, <_ast.Constant object at 0x7fd4c05c3a00>, <_ast.Constant object at 0x7fd4c05c3a90>, <_\
+ast.Constant object at 0x7fd4c05c3ac0>, <_ast.Constant object at 0x7fd4c05c3af0>, <_ast.Constant object at 0x7fd4c05c3b20>, <_ast.Constant \
+object at 0x7fd4c05c3b50>, <_ast.Constant object at 0x7fd4c05c3b80>, <_ast.Constant object at 0x7fd4c05c3be0>, <_ast.Constant object \
+at 0x7fd4c05c3c40>, <_ast.Constant object at 0x7fd4c05c3c70>, <_ast.Constant object at 0x7fd4c05c3ca0>, <_ast.Constant object at \
+0x7fd4c05c3cd0>, <_ast.Constant object at 0x7fd4c05c3d00>, <_ast.Constant object at 0x7fd4c05c3d30>, <_ast.Constant object at 0x7fd4c05c3d60>, <_\
+ast.Constant object at 0x7fd4c05c3d90>, <_ast.Constant object at 0x7fd4c05c3dc0>, <_ast.Constant object at 0x7fd4c05c3a60>, <_ast.Constant \
+object at 0x7fd4c05c3df0>, <_ast.Constant object at 0x7fd4c05c3e20>, <_ast.Constant object at 0x7fd4c05c3e50>, <_ast.Constant object \
+at 0x7fd4c05c3e80>, <_ast.Constant object at 0x7fd4c05c3eb0>, <_ast.Constant object at 0x7fd4c05c3ee0>, <_ast.Constant object at \
+0x7fd4c05c3c10>, <_ast.Constant object at 0x7fd4c05c3f10>, <_ast.Constant object at 0x7fd4c05c3f40>, <_ast.Constant object at 0x7fd4c05c3f70>, <_\
+ast.Constant object at 0x7fd4c05c3fa0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"cnt_srs(0)$33" -> "mcr_df(0)$2"	[label=value_counts];
 	"cnt_srs(0)$33" -> "col(0)"	[label=value_counts];
 	"names(0)$5" -> "col(0)"	[label=append];
@@ -1854,10 +1860,10 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"layout(0)$43" -> "2000(0)"	[label=Layout];
 	"How often do you the use given DS method?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"2000(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f947550>, <_ast.Name object at 0x12f947580>, <_ast.Name object at 0x12f9475b0>, <_ast.Name object at 0x12f9475e0>](\
-0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$41" -> "[<_ast.Name object at 0x12f947550>, <_ast.Name object at 0x12f947580>, <_ast.Name object at 0x12f9475b0>, <_ast.Name object at 0x12f9475e0>](\
-0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c095c1f0>, <_ast.Name object at 0x7fd4c095c220>, <_ast.Name object at 0x7fd4c095c250>, <_ast.Name object \
+at 0x7fd4c095c280>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$41" -> "[<_ast.Name object at 0x7fd4c095c1f0>, <_ast.Name object at 0x7fd4c095c220>, <_ast.Name object at 0x7fd4c095c250>, <_ast.Name object \
+at 0x7fd4c095c280>](0)"	[label=assignedFrom];
 	"fig(0)$43" -> "go(0)"	[label=Figure];
 	"fig(0)$43" -> "layout(0)$43"	[label=Figure];
 	"fig(0)$43" -> "data(0)$41"	[label=Figure];
@@ -1900,8 +1906,8 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"layout(0)$44" -> "go(0)"	[label=Layout];
 	"layout(0)$44" -> "How satisfied are you with current job - 1(High dissatisfaction) to 10(High Satisfaction)?(0)"	[label=Layout];
 	"How satisfied are you with current job - 1(High dissatisfaction) to 10(High Satisfaction)?(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f95da30>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$42" -> "[<_ast.Name object at 0x12f95da30>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c09776d0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$42" -> "[<_ast.Name object at 0x7fd4c09776d0>](0)"	[label=assignedFrom];
 	"fig(0)$44" -> "go(0)"	[label=Figure];
 	"fig(0)$44" -> "layout(0)$44"	[label=Figure];
 	"fig(0)$44" -> "data(0)$42"	[label=Figure];
@@ -1925,23 +1931,23 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"new_df(0)$3" -> "loc_df(0)$0"	[label=merge];
 	"new_df(0)$3" -> "COUNTRY(0)"	[label=merge];
 	"new_df(0)$3" -> "mcr_df(0)$4"	[label=merge];
-	"new_df(0)$3" -> "[<_ast.Constant object at 0x12f937850>, <_ast.Constant object at 0x12f937880>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f937850>, <_ast.Constant object at 0x12f937880>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"new_df(0)$3" -> "[<_ast.Constant object at 0x7fd4c097d430>, <_ast.Constant object at 0x7fd4c097d460>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4c097d430>, <_ast.Constant object at 0x7fd4c097d460>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"new_df(0)$4" -> "0(0)"	[label=assignedFrom];
 	"new_df(0)$4" -> "JobSatisfactionNew(0)"	[label=assignedFrom];
 	"new_df(0)$4" -> "new_df(0)$3"	[label=assignedFrom];
 	"new_df(0)$4" -> "new_df(0)$4"	[label=assignedFrom];
 	"new_df(0)$5" -> "JobSatisfactionNew(0)"	[label=reset_index];
 	"new_df(0)$5" -> "new_df(0)$4"	[label=reset_index];
-	"new_df(0)$5" -> "[<_ast.Constant object at 0x12f937eb0>, <_ast.Constant object at 0x12f937f10>](0)"	[label=reset_index];
+	"new_df(0)$5" -> "[<_ast.Constant object at 0x7fd4c097dac0>, <_ast.Constant object at 0x7fd4c097daf0>](0)"	[label=reset_index];
 	"new_df(0)$5" -> "mean(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f937eb0>, <_ast.Constant object at 0x12f937f10>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097dac0>, <_ast.Constant object at 0x7fd4c097daf0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"mean(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f937e80>, <_ast.Constant object at 0x12f937910>, <_ast.Constant object at 0x12f93e040>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c097dca0>, <_ast.Constant object at 0x7fd4c097dcd0>, <_ast.Constant object at 0x7fd4c097dd00>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"new_df(0)$6" -> "new_df(0)$5"	[label=assignedFrom];
-	"new_df(0)$6" -> "[<_ast.Constant object at 0x12f937e80>, <_ast.Constant object at 0x12f937910>, <_ast.Constant object at 0x12f93e040>](0)"	[label=assignedFrom];
-	"[<_ast.Call object at 0x12f93e130>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$43" -> "[<_ast.Call object at 0x12f93e130>](0)"	[label=assignedFrom];
+	"new_df(0)$6" -> "[<_ast.Constant object at 0x7fd4c097dca0>, <_ast.Constant object at 0x7fd4c097dcd0>, <_ast.Constant object at 0x7fd4c097dd00>](0)"	[label=assignedFrom];
+	"[<_ast.Call object at 0x7fd4c097ddc0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$43" -> "[<_ast.Call object at 0x7fd4c097ddc0>](0)"	[label=assignedFrom];
 	"Country wise mean job satisfaction score(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
 	"layout(0)$45" -> "False(0)"	[label=dict];
 	"layout(0)$45" -> "dict(0)"	[label=dict];
@@ -1970,8 +1976,8 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"layout(0)$46" -> "go(0)"	[label=Layout];
 	"layout(0)$46" -> "Top Data Science Blogs / Podcasts / Newsletters(0)"	[label=Layout];
 	"Top Data Science Blogs / Podcasts / Newsletters(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f956790>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$44" -> "[<_ast.Name object at 0x12f956790>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c0997460>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$44" -> "[<_ast.Name object at 0x7fd4c0997460>](0)"	[label=assignedFrom];
 	"fig(0)$46" -> "go(0)"	[label=Figure];
 	"fig(0)$46" -> "layout(0)$46"	[label=Figure];
 	"fig(0)$46" -> "data(0)$44"	[label=Figure];
@@ -2002,8 +2008,8 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"layout(0)$47" -> "go(0)"	[label=Layout];
 	"layout(0)$47" -> "Compensation Amount(0)"	[label=Layout];
 	"Compensation Amount(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f90cc10>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$45" -> "[<_ast.Name object at 0x12f90cc10>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c095a9d0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$45" -> "[<_ast.Name object at 0x7fd4c095a9d0>](0)"	[label=assignedFrom];
 	"fig(0)$47" -> "go(0)"	[label=Figure];
 	"fig(0)$47" -> "layout(0)$47"	[label=Figure];
 	"fig(0)$47" -> "data(0)$45"	[label=Figure];
@@ -2023,8 +2029,8 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"trace(0)$46" -> "comp_mcr(0)$4"	[label=Scatter];
 	"layout(0)$48" -> "go(0)"	[label=Layout];
 	"layout(0)$48" -> "Compensation Amount(0)"	[label=Layout];
-	"[<_ast.Name object at 0x12f926d60>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$46" -> "[<_ast.Name object at 0x12f926d60>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c09889a0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$46" -> "[<_ast.Name object at 0x7fd4c09889a0>](0)"	[label=assignedFrom];
 	"fig(0)$48" -> "go(0)"	[label=Figure];
 	"fig(0)$48" -> "layout(0)$48"	[label=Figure];
 	"fig(0)$48" -> "data(0)$46"	[label=Figure];
@@ -2081,8 +2087,8 @@ ast.Constant object at 0x12f9501c0>, <_ast.Constant object at 0x12f9501f0>](0)" 
 	"layout(0)$50" -> "go(0)"	[label=Layout];
 	"layout(0)$50" -> "Normalized Compensation Amount(0)"	[label=Layout];
 	"Normalized Compensation Amount(0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f918a60>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
-	"data(0)$47" -> "[<_ast.Name object at 0x12f918a60>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4c095d7c0>](0)" -> "an-interactive-deep-dive-into-survey-results.ipynb"	[label=appearsIn];
+	"data(0)$47" -> "[<_ast.Name object at 0x7fd4c095d7c0>](0)"	[label=assignedFrom];
 	"fig(0)$50" -> "go(0)"	[label=Figure];
 	"fig(0)$50" -> "layout(0)$50"	[label=Figure];
 	"fig(0)$50" -> "data(0)$47"	[label=Figure];

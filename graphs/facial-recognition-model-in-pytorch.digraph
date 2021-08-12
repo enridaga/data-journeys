@@ -38,14 +38,8 @@ digraph "" {
 	"cuda:0(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"cpu(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"Running on device: (0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[0]" -> "Running on device: (0)"	[label=print];
-	"print[0]" -> "Processing (0)"	[label=print];
-	"Processing (0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[1]" -> "device(0)$0"	[label=print];
-	"print[1]" -> "i(0)"	[label=print];
-	"i(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"i(0)" -> "filenames(0)$0"	[label=iteratorOf];
-	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"print[23/0]" -> "device(0)$0"	[label=print];
+	"print[23/0]" -> "Running on device: (0)"	[label=print];
 	"mtcnn(0)$0" -> "MTCNN(0)"	[label=eval];
 	"mtcnn(0)$0" -> "device(0)$0"	[label=eval];
 	"resnet(0)$0" -> "InceptionResnetV1(0)"	[label=eval];
@@ -62,6 +56,9 @@ digraph "" {
 	"[](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"X(0)$0" -> "[](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"i(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"i(0)" -> "filenames(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"filename(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"filename(0)" -> "filenames(0)$0"	[label=iteratorOf];
 	"filename(0)" -> "enumerate(0)"	[label=iteratorOf];
@@ -70,20 +67,22 @@ digraph "" {
 	"X(0)$2" -> "None(0)"	[label=append];
 	"X(0)$2" -> "X(0)$1"	[label=append];
 	"zip(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"Processing (0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"print[36/8]" -> "filenames(0)$0"	[label=print];
+	"print[36/8]" -> "i(0)"	[label=print];
+	"print[36/8]" -> "Processing (0)"	[label=print];
+	"print[36/8]" -> "1(0)"	[label=print];
+	"print[36/8]" -> "5n(0)"	[label=print];
+	"print[36/8]" -> " of (0)"	[label=print];
+	"print[36/8]" -> "len(0)"	[label=print];
+	"print[36/8]" -> " videos(0)"	[label=print];
+	"print[36/8]" -> "(0)"	[label=print];
 	"1(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[2]" -> "1(0)"	[label=print];
 	"5n(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[3]" -> "5n(0)"	[label=print];
 	" of (0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[4]" -> " of (0)"	[label=print];
 	"len(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[5]" -> "len(0)"	[label=print];
-	"print[6]" -> "filenames(0)$0"	[label=print];
-	"print[7]" -> "5n(0)"	[label=print];
 	" videos(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[8]" -> " videos(0)"	[label=print];
 	"(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
-	"print[9]" -> "(0)"	[label=print];
 	"v_cap(0)$0" -> "cv2(0)"	[label=VideoCapture];
 	"v_cap(0)$0" -> "filename(0)"	[label=VideoCapture];
 	"v_len(0)$0" -> "cv2(0)"	[label=int];
@@ -128,12 +127,14 @@ digraph "" {
 	"0.31777231(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"bias(0)$0" -> "0.31777231(0)"	[label=assignedFrom];
 	"weights(0)$0" -> "np(0)"	[label=array];
-	"weights(0)$0" -> "[<_ast.Constant object at 0x12f8d5820>, <_ast.Constant object at 0x12f8d5fa0>, <_ast.Constant object at 0x12f8d5f10>, <_ast.Constant \
-object at 0x12f8d5880>, <_ast.Constant object at 0x12f8d5a90>, <_ast.UnaryOp object at 0x12f8d52b0>, <_ast.Constant object at 0x12f8d50d0>, <_\
-ast.Constant object at 0x12f8d5610>, <_ast.Constant object at 0x12f8d51f0>, <_ast.UnaryOp object at 0x12f8d5790>](0)"	[label=array];
-	"[<_ast.Constant object at 0x12f8d5820>, <_ast.Constant object at 0x12f8d5fa0>, <_ast.Constant object at 0x12f8d5f10>, <_ast.Constant \
-object at 0x12f8d5880>, <_ast.Constant object at 0x12f8d5a90>, <_ast.UnaryOp object at 0x12f8d52b0>, <_ast.Constant object at 0x12f8d50d0>, <_\
-ast.Constant object at 0x12f8d5610>, <_ast.Constant object at 0x12f8d51f0>, <_ast.UnaryOp object at 0x12f8d5790>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"weights(0)$0" -> "[<_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at 0x7fd4902ab310>, <_\
+ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902abd00>, <_ast.UnaryOp object at 0x7fd4902abee0>, <_ast.Constant \
+object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.UnaryOp object \
+at 0x7fd4902ab910>](0)"	[label=array];
+	"[<_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at 0x7fd4902ab310>, <_\
+ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902abd00>, <_ast.UnaryOp object at 0x7fd4902abee0>, <_ast.Constant \
+object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object at 0x7fd4902ab2b0>, <_ast.UnaryOp object \
+at 0x7fd4902ab910>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"submission(0)$0" -> "[](0)"	[label=assignedFrom];
 	"x_i(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"x_i(0)" -> "filenames(0)$0"	[label=iteratorOf];
@@ -147,12 +148,12 @@ ast.Constant object at 0x12f8d5610>, <_ast.Constant object at 0x12f8d51f0>, <_as
 	"0.5(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"prob(0)$1" -> "0.5(0)"	[label=assignedFrom];
 	"submission(0)$1" -> "submission(0)$0"	[label=append];
-	"submission(0)$1" -> "[<_ast.Call object at 0x12f8d5fd0>, <_ast.Name object at 0x12f8d5970>](0)"	[label=append];
-	"[<_ast.Call object at 0x12f8d5fd0>, <_ast.Name object at 0x12f8d5970>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"submission(0)$1" -> "[<_ast.Call object at 0x7fd4c04fff70>, <_ast.Name object at 0x7fd4c04ff0a0>](0)"	[label=append];
+	"[<_ast.Call object at 0x7fd4c04fff70>, <_ast.Name object at 0x7fd4c04ff0a0>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"submission(0)$2" -> "pd(0)"	[label=DataFrame];
 	"submission(0)$2" -> "submission(0)$2"	[label=DataFrame];
-	"submission(0)$2" -> "[<_ast.Constant object at 0x12f8d5eb0>, <_ast.Constant object at 0x12f8d5cd0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f8d5eb0>, <_ast.Constant object at 0x12f8d5cd0>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
+	"submission(0)$2" -> "[<_ast.Constant object at 0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ffe80>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ffe80>](0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];
 	"submission(0)$3" -> "submission(0)$2"	[label=to_csv];
 	"submission(0)$3" -> "submission.csv(0)"	[label=to_csv];
 	"submission.csv(0)" -> "facial-recognition-model-in-pytorch.ipynb"	[label=appearsIn];

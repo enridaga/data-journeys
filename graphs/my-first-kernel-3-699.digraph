@@ -49,9 +49,9 @@ digraph "" {
 	"df_new_merchant_trans(0)$0" -> "pd(0)"	[label=read_csv];
 	"df_new_merchant_trans(0)$0" -> "../input/new_merchant_transactions.csv(0)"	[label=read_csv];
 	"../input/new_merchant_transactions.csv(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12fa5bac0>, <_ast.Name object at 0x12fa5b6a0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500832e80>, <_ast.Name object at 0x7fd500832a30>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"df(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"df(0)" -> "[<_ast.Name object at 0x12fa5bac0>, <_ast.Name object at 0x12fa5b6a0>](0)"	[label=iteratorOf];
+	"df(0)" -> "[<_ast.Name object at 0x7fd500832e80>, <_ast.Name object at 0x7fd500832a30>](0)"	[label=iteratorOf];
 	"df(0)$0" -> "df(0)"	[label=fillna];
 	"df(0)$0" -> "1.0(0)"	[label=fillna];
 	"1.0(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
@@ -60,9 +60,9 @@ digraph "" {
 	"A(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"df(0)$2" -> "df(0)$1"	[label=fillna];
 	"df(0)$2" -> "M_ID_00a6ca8a8a(0)"	[label=fillna];
-	"df(0)$2" -> "[<_ast.Name object at 0x12f85ed30>, <_ast.Name object at 0x12f85ecd0>](0)"	[label=iteratorOf];
+	"df(0)$2" -> "[<_ast.Name object at 0x7fd500999220>, <_ast.Name object at 0x7fd500999b80>](0)"	[label=iteratorOf];
 	"M_ID_00a6ca8a8a(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f85ed30>, <_ast.Name object at 0x12f85ecd0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd500999220>, <_ast.Name object at 0x7fd500999b80>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"name(1)" -> "get_new_columns[0]"	[label=_argToVar];
 	"aggs(1)" -> "get_new_columns[1]"	[label=_argToVar];
 	"df(0)$3" -> "pd(0)"	[label=to_datetime];
@@ -112,73 +112,73 @@ digraph "" {
 	"df(0)$13" -> "df(0)$12"	[label=Add];
 	"df(0)$13" -> "df(0)$13"	[label=Add];
 	"df(0)$13" -> "month_lag(0)"	[label=Add];
-	"df(0)$13" -> "[<_ast.Name object at 0x12f8c9700>, <_ast.Name object at 0x12f8c9730>](0)"	[label=iteratorOf];
+	"df(0)$13" -> "[<_ast.Name object at 0x7fd4c04a7400>, <_ast.Name object at 0x7fd4c04a7430>](0)"	[label=iteratorOf];
 	"month_lag(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Name object at 0x12f8c9700>, <_ast.Name object at 0x12f8c9730>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant \
-object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fc10>, <_\
-ast.Constant object at 0x12fc4fb80>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04a7400>, <_ast.Name object at 0x7fd4c04a7430>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc880>, <_ast.Constant object at 0x7fd4c04cc100>, <_\
+ast.Constant object at 0x7fd4c04cc4c0>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cca90>, <_ast.Constant \
+object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04ccc10>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"col(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"col(0)" -> "[<_ast.Constant object at 0x12fc4faf0>, <_ast.Constant object at 0x12fc4f250>, <_ast.Constant object at 0x12fc4fb20>, <_ast.Constant \
-object at 0x12fc4f550>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4fc10>, <_\
-ast.Constant object at 0x12fc4fb80>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12fa660d0>, <_ast.Constant object at 0x12fa66d30>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f8f5eb0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f58b0>, <_ast.Constant \
-object at 0x12f8f59a0>, <_ast.Constant object at 0x12f8f51f0>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5b80>, <_\
-ast.Constant object at 0x12f8f5940>](0)"	[label=iteratorOf];
-	"col(0)" -> "[<_ast.Constant object at 0x12f9a4fa0>, <_ast.Constant object at 0x12f9a4fd0>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12fa660d0>, <_ast.Constant object at 0x12fa66d30>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8f5eb0>, <_ast.Constant object at 0x12f8f5400>, <_ast.Constant object at 0x12f8f58b0>, <_ast.Constant \
-object at 0x12f8f59a0>, <_ast.Constant object at 0x12f8f51f0>, <_ast.Constant object at 0x12f8f5be0>, <_ast.Constant object at 0x12f8f5b80>, <_\
-ast.Constant object at 0x12f8f5940>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f9a4fa0>, <_ast.Constant object at 0x12f9a4fd0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f310>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c04cc9d0>, <_ast.Constant object at 0x7fd4c04cc880>, <_ast.Constant object at 0x7fd4c04cc100>, <_\
+ast.Constant object at 0x7fd4c04cc4c0>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cca90>, <_ast.Constant \
+object at 0x7fd4c04ccc70>, <_ast.Constant object at 0x7fd4c04ccc10>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ff280>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd500834040>, <_ast.Constant object at 0x7fd5008341c0>, <_ast.Constant object at 0x7fd5008340d0>, <_\
+ast.Constant object at 0x7fd500834d90>, <_ast.Constant object at 0x7fd500834eb0>, <_ast.Constant object at 0x7fd500834970>, <_ast.Constant \
+object at 0x7fd5008340a0>, <_ast.Constant object at 0x7fd500834f10>](0)"	[label=iteratorOf];
+	"col(0)" -> "[<_ast.Constant object at 0x7fd4c05c49d0>, <_ast.Constant object at 0x7fd4c05c4df0>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ff280>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500834040>, <_ast.Constant object at 0x7fd5008341c0>, <_ast.Constant object at 0x7fd5008340d0>, <_\
+ast.Constant object at 0x7fd500834d90>, <_ast.Constant object at 0x7fd500834eb0>, <_ast.Constant object at 0x7fd500834970>, <_ast.Constant \
+object at 0x7fd5008340a0>, <_ast.Constant object at 0x7fd500834f10>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c05c49d0>, <_ast.Constant object at 0x7fd4c05c4df0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccbe0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"aggs(0)$0" -> "[<_ast.Constant object at 0x12fc4f310>](0)"	[label=assignedFrom];
+	"aggs(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccbe0>](0)"	[label=assignedFrom];
 	"aggs(0)$0" -> "aggs(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant \
-object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f430>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccf10>, <_ast.Constant object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04ccdf0>, <_\
+ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cca30>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$1" -> "aggs(0)$0"	[label=assignedFrom];
-	"aggs(0)$1" -> "[<_ast.Constant object at 0x12fc4fa60>, <_ast.Constant object at 0x12fc4f910>, <_ast.Constant object at 0x12fc4fd90>, <_ast.Constant \
-object at 0x12fc4fc40>, <_ast.Constant object at 0x12fc4f430>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66e20>, <_ast.Constant object at 0x12fa665b0>, <_ast.Constant object at 0x12fa66df0>, <_ast.Constant \
-object at 0x12fa66ee0>, <_ast.Constant object at 0x12fa66310>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ccf10>, <_ast.Constant object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04ccdf0>, <_\
+ast.Constant object at 0x7fd4c04cc6d0>, <_ast.Constant object at 0x7fd4c04cca30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc1f0>, <_ast.Constant object at 0x7fd4c04cc820>, <_ast.Constant object at 0x7fd4c04cc400>, <_\
+ast.Constant object at 0x7fd4c04cc670>, <_ast.Constant object at 0x7fd4c04ccd30>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$2" -> "aggs(0)$1"	[label=assignedFrom];
-	"aggs(0)$2" -> "[<_ast.Constant object at 0x12fa66e20>, <_ast.Constant object at 0x12fa665b0>, <_ast.Constant object at 0x12fa66df0>, <_ast.Constant \
-object at 0x12fa66ee0>, <_ast.Constant object at 0x12fa66310>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66af0>, <_ast.Constant object at 0x12fa663a0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$2" -> "[<_ast.Constant object at 0x7fd4c04cc1f0>, <_ast.Constant object at 0x7fd4c04cc820>, <_ast.Constant object at 0x7fd4c04cc400>, <_\
+ast.Constant object at 0x7fd4c04cc670>, <_ast.Constant object at 0x7fd4c04ccd30>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc520>, <_ast.Constant object at 0x7fd4c04cc340>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$3" -> "aggs(0)$2"	[label=assignedFrom];
-	"aggs(0)$3" -> "[<_ast.Constant object at 0x12fa66af0>, <_ast.Constant object at 0x12fa663a0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa668b0>, <_ast.Constant object at 0x12fa66eb0>, <_ast.Constant object at 0x12fa66d00>, <_ast.Constant \
-object at 0x12fa66dc0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$3" -> "[<_ast.Constant object at 0x7fd4c04cc520>, <_ast.Constant object at 0x7fd4c04cc340>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff250>, <_\
+ast.Constant object at 0x7fd4c04ff7f0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$4" -> "aggs(0)$3"	[label=assignedFrom];
-	"aggs(0)$4" -> "[<_ast.Constant object at 0x12fa668b0>, <_ast.Constant object at 0x12fa66eb0>, <_ast.Constant object at 0x12fa66d00>, <_ast.Constant \
-object at 0x12fa66dc0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66670>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$4" -> "[<_ast.Constant object at 0x7fd4c04cc130>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff250>, <_\
+ast.Constant object at 0x7fd4c04ff7f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ffc40>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$5" -> "aggs(0)$4"	[label=assignedFrom];
-	"aggs(0)$5" -> "[<_ast.Constant object at 0x12fa66670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66c10>, <_ast.Constant object at 0x12fa66100>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$5" -> "[<_ast.Constant object at 0x7fd4c04ffc40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd4c04ff520>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$6" -> "aggs(0)$5"	[label=assignedFrom];
-	"aggs(0)$6" -> "[<_ast.Constant object at 0x12fa66c10>, <_ast.Constant object at 0x12fa66100>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa666a0>, <_ast.Constant object at 0x12fa661c0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$6" -> "[<_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd4c04ff520>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff880>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$7" -> "aggs(0)$6"	[label=assignedFrom];
-	"aggs(0)$7" -> "[<_ast.Constant object at 0x12fa666a0>, <_ast.Constant object at 0x12fa661c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66640>, <_ast.Constant object at 0x12fa66280>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$7" -> "[<_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff880>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff460>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$8" -> "aggs(0)$7"	[label=assignedFrom];
-	"aggs(0)$8" -> "[<_ast.Constant object at 0x12fa66640>, <_ast.Constant object at 0x12fa66280>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12fa66f70>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$8" -> "[<_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff460>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$9" -> "aggs(0)$8"	[label=assignedFrom];
-	"aggs(0)$9" -> "[<_ast.Constant object at 0x12fa66f70>](0)"	[label=assignedFrom];
+	"aggs(0)$9" -> "[<_ast.Constant object at 0x7fd4c04ff370>](0)"	[label=assignedFrom];
 	"df_hist_trans(0)$1" -> "df_hist_trans(0)$0"	[label=transform];
-	"df_hist_trans(0)$1" -> "[<_ast.Name object at 0x12fade3a0>](0)"	[label=transform];
+	"df_hist_trans(0)$1" -> "[<_ast.Name object at 0x7fd4c04ff040>](0)"	[label=transform];
 	"df_hist_trans(0)$1" -> "purchase_amount(0)"	[label=transform];
 	"df_hist_trans(0)$1" -> "mean(0)"	[label=transform];
-	"[<_ast.Name object at 0x12fade3a0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04ff040>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"purchase_amount(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"mean(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fade5e0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ff4f0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$10" -> "aggs(0)$9"	[label=assignedFrom];
-	"aggs(0)$10" -> "[<_ast.Constant object at 0x12fade5e0>](0)"	[label=assignedFrom];
+	"aggs(0)$10" -> "[<_ast.Constant object at 0x7fd4c04ff4f0>](0)"	[label=assignedFrom];
 	"hist(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"new_columns(0)$0" -> "aggs(0)$10"	[label=get_new_columns];
 	"new_columns(0)$0" -> "hist(0)"	[label=get_new_columns];
@@ -215,47 +215,47 @@ object at 0x12fa66dc0>](0)"	[label=assignedFrom];
 	"df_test(0)$1" -> "df_hist_trans_group(0)$5"	[label=merge];
 	"df_test(0)$1" -> "left(0)"	[label=merge];
 	"gc(0)$0" -> "gc(0)"	[label=collect];
-	"[<_ast.Constant object at 0x12f8f53d0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500834580>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$11" -> "aggs(0)$10"	[label=assignedFrom];
-	"aggs(0)$11" -> "[<_ast.Constant object at 0x12f8f53d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4190>, <_ast.Constant object at 0x12f9a41c0>, <_ast.Constant object at 0x12f9a41f0>, <_ast.Constant \
-object at 0x12f9a4220>, <_ast.Constant object at 0x12f9a4250>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$11" -> "[<_ast.Constant object at 0x7fd500834580>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500834af0>, <_ast.Constant object at 0x7fd500834c10>, <_ast.Constant object at 0x7fd500834fd0>, <_\
+ast.Constant object at 0x7fd500834c70>, <_ast.Constant object at 0x7fd500834ca0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$12" -> "aggs(0)$11"	[label=assignedFrom];
-	"aggs(0)$12" -> "[<_ast.Constant object at 0x12f9a4190>, <_ast.Constant object at 0x12f9a41c0>, <_ast.Constant object at 0x12f9a41f0>, <_ast.Constant \
-object at 0x12f9a4220>, <_ast.Constant object at 0x12f9a4250>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>, <_ast.Constant object at 0x12f9a4460>, <_ast.Constant \
-object at 0x12f9a4490>, <_ast.Constant object at 0x12f9a44c0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$12" -> "[<_ast.Constant object at 0x7fd500834af0>, <_ast.Constant object at 0x7fd500834c10>, <_ast.Constant object at 0x7fd500834fd0>, <_\
+ast.Constant object at 0x7fd500834c70>, <_ast.Constant object at 0x7fd500834ca0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500834be0>, <_ast.Constant object at 0x7fd500834cd0>, <_ast.Constant object at 0x7fd5008343d0>, <_\
+ast.Constant object at 0x7fd500834e20>, <_ast.Constant object at 0x7fd500834f70>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$13" -> "aggs(0)$12"	[label=assignedFrom];
-	"aggs(0)$13" -> "[<_ast.Constant object at 0x12f9a4400>, <_ast.Constant object at 0x12f9a4430>, <_ast.Constant object at 0x12f9a4460>, <_ast.Constant \
-object at 0x12f9a4490>, <_ast.Constant object at 0x12f9a44c0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4640>, <_ast.Constant object at 0x12f9a4670>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$13" -> "[<_ast.Constant object at 0x7fd500834be0>, <_ast.Constant object at 0x7fd500834cd0>, <_ast.Constant object at 0x7fd5008343d0>, <_\
+ast.Constant object at 0x7fd500834e20>, <_ast.Constant object at 0x7fd500834f70>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c4d90>, <_ast.Constant object at 0x7fd4c05c4640>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$14" -> "aggs(0)$13"	[label=assignedFrom];
-	"aggs(0)$14" -> "[<_ast.Constant object at 0x12f9a4640>, <_ast.Constant object at 0x12f9a4670>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a47f0>, <_ast.Constant object at 0x12f9a4820>, <_ast.Constant object at 0x12f9a4850>, <_ast.Constant \
-object at 0x12f9a4880>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$14" -> "[<_ast.Constant object at 0x7fd4c05c4d90>, <_ast.Constant object at 0x7fd4c05c4640>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c4b80>, <_ast.Constant object at 0x7fd4c05c4190>, <_ast.Constant object at 0x7fd4c05c4c70>, <_\
+ast.Constant object at 0x7fd4c05c4370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$15" -> "aggs(0)$14"	[label=assignedFrom];
-	"aggs(0)$15" -> "[<_ast.Constant object at 0x12f9a47f0>, <_ast.Constant object at 0x12f9a4820>, <_ast.Constant object at 0x12f9a4850>, <_ast.Constant \
-object at 0x12f9a4880>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4a00>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$15" -> "[<_ast.Constant object at 0x7fd4c05c4b80>, <_ast.Constant object at 0x7fd4c05c4190>, <_ast.Constant object at 0x7fd4c05c4c70>, <_\
+ast.Constant object at 0x7fd4c05c4370>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c47f0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$16" -> "aggs(0)$15"	[label=assignedFrom];
-	"aggs(0)$16" -> "[<_ast.Constant object at 0x12f9a4a00>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4b80>, <_ast.Constant object at 0x12f9a4bb0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$16" -> "[<_ast.Constant object at 0x7fd4c05c47f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c42e0>, <_ast.Constant object at 0x7fd4c05c4fd0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$17" -> "aggs(0)$16"	[label=assignedFrom];
-	"aggs(0)$17" -> "[<_ast.Constant object at 0x12f9a4b80>, <_ast.Constant object at 0x12f9a4bb0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4d30>, <_ast.Constant object at 0x12f9a4d60>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$17" -> "[<_ast.Constant object at 0x7fd4c05c42e0>, <_ast.Constant object at 0x7fd4c05c4fd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c4910>, <_ast.Constant object at 0x7fd4c05c4760>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$18" -> "aggs(0)$17"	[label=assignedFrom];
-	"aggs(0)$18" -> "[<_ast.Constant object at 0x12f9a4d30>, <_ast.Constant object at 0x12f9a4d60>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f9a4ee0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"aggs(0)$18" -> "[<_ast.Constant object at 0x7fd4c05c4910>, <_ast.Constant object at 0x7fd4c05c4760>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c05c4700>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$19" -> "aggs(0)$18"	[label=assignedFrom];
-	"aggs(0)$19" -> "[<_ast.Constant object at 0x12f9a4ee0>](0)"	[label=assignedFrom];
+	"aggs(0)$19" -> "[<_ast.Constant object at 0x7fd4c05c4700>](0)"	[label=assignedFrom];
 	"df_new_merchant_trans(0)$1" -> "df_new_merchant_trans(0)$0"	[label=transform];
 	"df_new_merchant_trans(0)$1" -> "purchase_amount(0)"	[label=transform];
 	"df_new_merchant_trans(0)$1" -> "mean(0)"	[label=transform];
-	"df_new_merchant_trans(0)$1" -> "[<_ast.Name object at 0x12f8dd310>](0)"	[label=transform];
-	"[<_ast.Name object at 0x12f8dd310>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8dd5b0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"df_new_merchant_trans(0)$1" -> "[<_ast.Name object at 0x7fd4c05c4310>](0)"	[label=transform];
+	"[<_ast.Name object at 0x7fd4c05c4310>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0190>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"aggs(0)$20" -> "aggs(0)$19"	[label=assignedFrom];
-	"aggs(0)$20" -> "[<_ast.Constant object at 0x12f8dd5b0>](0)"	[label=assignedFrom];
+	"aggs(0)$20" -> "[<_ast.Constant object at 0x7fd5007f0190>](0)"	[label=assignedFrom];
 	"new_hist(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"new_columns(0)$1" -> "aggs(0)$20"	[label=get_new_columns];
 	"new_columns(0)$1" -> "new_hist(0)"	[label=get_new_columns];
@@ -322,13 +322,13 @@ object at 0x12f9a4880>](0)"	[label=assignedFrom];
 	"df(0)$20" -> "first_active_month(0)"	[label=assignedFrom];
 	"df(0)$20" -> "df(0)$19"	[label=assignedFrom];
 	"df(0)$20" -> "df(0)$20"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8d5ca0>, <_ast.Constant object at 0x12f8d5cd0>, <_ast.Constant object at 0x12f8d5d00>, <_ast.Constant \
-object at 0x12f8d5d30>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd501637a00>, <_ast.Constant object at 0x7fd501637a30>, <_ast.Constant object at 0x7fd501637a60>, <_\
+ast.Constant object at 0x7fd501637a90>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"f(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"f(0)" -> "[<_ast.Constant object at 0x12f8d5ca0>, <_ast.Constant object at 0x12f8d5cd0>, <_ast.Constant object at 0x12f8d5d00>, <_ast.Constant \
-object at 0x12f8d5d30>](0)"	[label=iteratorOf];
-	"f(0)" -> "[<_ast.Constant object at 0x12f8c0850>, <_ast.Constant object at 0x12f8c0820>, <_ast.Constant object at 0x12f8c0880>](0)"	[label=iteratorOf];
-	"[<_ast.Constant object at 0x12f8c0850>, <_ast.Constant object at 0x12f8c0820>, <_ast.Constant object at 0x12f8c0880>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"f(0)" -> "[<_ast.Constant object at 0x7fd501637a00>, <_ast.Constant object at 0x7fd501637a30>, <_ast.Constant object at 0x7fd501637a60>, <_\
+ast.Constant object at 0x7fd501637a90>](0)"	[label=iteratorOf];
+	"f(0)" -> "[<_ast.Constant object at 0x7fd50162c4c0>, <_ast.Constant object at 0x7fd50162c4f0>, <_ast.Constant object at 0x7fd50162c520>](0)"	[label=iteratorOf];
+	"[<_ast.Constant object at 0x7fd50162c4c0>, <_ast.Constant object at 0x7fd50162c4f0>, <_ast.Constant object at 0x7fd50162c520>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"df(0)$21" -> "np(0)$0"	[label=Mult];
 	"df(0)$21" -> "df(0)$20"	[label=Mult];
 	"df(0)$21" -> "f(0)"	[label=Mult];
@@ -345,9 +345,9 @@ object at 0x12f8d5d30>](0)"	[label=iteratorOf];
 	"new_hist_purchase_amount_sum(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"hist_purchase_amount_sum(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"order_label(0)$0" -> "df_train(0)$6"	[label=mean];
-	"order_label(0)$0" -> "[<_ast.Name object at 0x12f8c0a60>](0)"	[label=mean];
+	"order_label(0)$0" -> "[<_ast.Name object at 0x7fd50162c700>](0)"	[label=mean];
 	"order_label(0)$0" -> "outliers(0)"	[label=mean];
-	"[<_ast.Name object at 0x12f8c0a60>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50162c700>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"outliers(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"df_train(0)$7" -> "df_train(0)$6"	[label=map];
 	"df_train(0)$7" -> "f(0)"	[label=map];
@@ -358,10 +358,10 @@ object at 0x12f8d5d30>](0)"	[label=iteratorOf];
 	"c(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"df_train_columns(0)$0" -> "df_train(0)$7"	[label=assignedFrom];
 	"df_train_columns(0)$0" -> "c(0)"	[label=assignedFrom];
-	"df_train_columns(0)$0" -> "[<_ast.Constant object at 0x12f8b82e0>, <_ast.Constant object at 0x12f8b8310>, <_ast.Constant object at 0x12f8b8340>, <_ast.Constant \
-object at 0x12f8b8370>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8b82e0>, <_ast.Constant object at 0x12f8b8310>, <_ast.Constant object at 0x12f8b8340>, <_ast.Constant \
-object at 0x12f8b8370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"df_train_columns(0)$0" -> "[<_ast.Constant object at 0x7fd50162cf40>, <_ast.Constant object at 0x7fd50162cf70>, <_ast.Constant object at 0x7fd50162cfa0>, <_\
+ast.Constant object at 0x7fd50162cfd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50162cf40>, <_ast.Constant object at 0x7fd50162cf70>, <_ast.Constant object at 0x7fd50162cfa0>, <_\
+ast.Constant object at 0x7fd50162cfd0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"target(0)$0" -> "df_train(0)$7"	[label=assignedFrom];
 	"target(0)$0" -> "target(0)$0"	[label=assignedFrom];
 	"num_leaves(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
@@ -448,8 +448,8 @@ object at 0x12f8b8370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"val_idx(0)" -> "folds(0)$0"	[label=iteratorOf];
 	"val_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"fold {}(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
-	"print[0]" -> "fold {}(0)"	[label=print];
-	"print[1]" -> "fold_(0)"	[label=print];
+	"print[141/4]" -> "fold_(0)"	[label=print];
+	"print[141/4]" -> "fold {}(0)"	[label=print];
 	"trn_data(0)$0" -> "lgb(0)"	[label=Dataset];
 	"trn_data(0)$0" -> "df_train(0)$7"	[label=Dataset];
 	"trn_data(0)$0" -> "df_train_columns(0)$0"	[label=Dataset];
@@ -466,9 +466,9 @@ object at 0x12f8b8370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"clf(0)$0" -> "param(0)$0"	[label=train];
 	"clf(0)$0" -> "trn_data(0)$0"	[label=train];
 	"clf(0)$0" -> "num_round(0)$0"	[label=train];
-	"clf(0)$0" -> "[<_ast.Name object at 0x12f8b53d0>, <_ast.Name object at 0x12f8b5400>](0)"	[label=train];
+	"clf(0)$0" -> "[<_ast.Name object at 0x7fd50161c130>, <_ast.Name object at 0x7fd50161c160>](0)"	[label=train];
 	"clf(0)$0" -> "100(0)"	[label=train];
-	"[<_ast.Name object at 0x12f8b53d0>, <_ast.Name object at 0x12f8b5400>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd50161c130>, <_ast.Name object at 0x7fd50161c160>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"100(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"oof(0)$1" -> "df_train(0)$7"	[label=predict];
 	"oof(0)$1" -> "df_train_columns(0)$0"	[label=predict];
@@ -485,8 +485,8 @@ object at 0x12f8b8370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"fold_importance_df(0)$3" -> "fold_importance_df(0)$2"	[label=Add];
 	"feature_importance_df(0)$1" -> "pd(0)"	[label=concat];
 	"feature_importance_df(0)$1" -> "0(0)"	[label=concat];
-	"feature_importance_df(0)$1" -> "[<_ast.Name object at 0x12f8b00a0>, <_ast.Name object at 0x12f8b00d0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8b00a0>, <_ast.Name object at 0x12f8b00d0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"feature_importance_df(0)$1" -> "[<_ast.Name object at 0x7fd50161cdf0>, <_ast.Name object at 0x7fd50161ce20>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd50161cdf0>, <_ast.Name object at 0x7fd50161ce20>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"predictions(0)$1" -> "df_test(0)$3"	[label=Add];
 	"predictions(0)$1" -> "df_train_columns(0)$0"	[label=Add];
 	"predictions(0)$1" -> "folds(0)$0"	[label=Add];
@@ -497,12 +497,12 @@ object at 0x12f8b8370>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"np(0)$1" -> "target(0)$0"	[label=sqrt];
 	"np(0)$1" -> "oof(0)$1"	[label=sqrt];
 	"cols(0)$0" -> "feature_importance_df(0)$1"	[label=assignedFrom];
-	"cols(0)$0" -> "[<_ast.Constant object at 0x12f8b0970>, <_ast.Constant object at 0x12f8b09a0>](0)"	[label=assignedFrom];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd5016233a0>, <_ast.Constant object at 0x7fd5016232b0>](0)"	[label=assignedFrom];
 	"cols(0)$0" -> "Feature(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "importance(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "False(0)"	[label=assignedFrom];
 	"cols(0)$0" -> "1000(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8b0970>, <_ast.Constant object at 0x12f8b09a0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5016233a0>, <_ast.Constant object at 0x7fd5016232b0>](0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"Feature(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"importance(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];
 	"False(0)" -> "my-first-kernel-3-699.ipynb"	[label=appearsIn];

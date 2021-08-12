@@ -7,21 +7,7 @@ digraph "" {
 	"twosigmanews(0)" -> twosigmanews	[label=assignedFrom];
 	"env(0)$0" -> "twosigmanews(0)"	[label=make_env];
 	"Done!(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"print[0]" -> "Done!(0)"	[label=print];
-	"print[0]" -> "lgb_params(0)$0"	[label=print];
-	"print[0]" -> "Best score was (0)"	[label=print];
-	"lgb_params(0)$0" -> "regression_l1(0)"	[label=dict];
-	"lgb_params(0)$0" -> "0.1(0)"	[label=dict];
-	"lgb_params(0)$0" -> "127(0)"	[label=dict];
-	"lgb_params(0)$0" -> "1(0)"	[label=dict];
-	"lgb_params(0)$0" -> "0.75(0)"	[label=dict];
-	"lgb_params(0)$0" -> "2(0)"	[label=dict];
-	"lgb_params(0)$0" -> "0.5(0)"	[label=dict];
-	"lgb_params(0)$0" -> "0.0(0)"	[label=dict];
-	"lgb_params(0)$0" -> "1.0(0)"	[label=dict];
-	"lgb_params(0)$0" -> "None(0)"	[label=dict];
-	"lgb_params(0)$0" -> "42(0)"	[label=dict];
-	"Best score was (0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"print[7/0]" -> "Done!(0)"	[label=print];
 	"market_train_df(0)$0" -> "env(0)$0"	[label=get_training_data];
 	"news_train_df(0)$0" -> "env(0)$0"	[label=get_training_data];
 	"market_train_df(0)$1" -> "market_train_df(0)$0"	[label=tail];
@@ -75,48 +61,48 @@ digraph "" {
 	"news_cols_agg(0)$0" -> "volumeCounts3D(0)"	[label=assignedFrom];
 	"news_cols_agg(0)$0" -> "volumeCounts5D(0)"	[label=assignedFrom];
 	"news_cols_agg(0)$0" -> "volumeCounts7D(0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4f430>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f9a0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant \
-object at 0x12fc4f520>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
-object at 0x12fc4fb20>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4fcd0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant \
-object at 0x12fc4fac0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant \
-object at 0x12fc4f070>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant \
-object at 0x12fc4fb80>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant \
-object at 0x12fc4f970>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e970>, <_ast.Constant object at 0x12f85efd0>, <_ast.Constant object at 0x12f85ed30>, <_ast.Constant \
-object at 0x12f85e6d0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85ee20>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant object at 0x12f85e610>, <_ast.Constant \
-object at 0x12f85eb20>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e6a0>, <_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e8e0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e940>, <_ast.Constant object at 0x12f85e7c0>, <_ast.Constant object at 0x12f85ed00>, <_ast.Constant \
-object at 0x12f85e760>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e9d0>, <_ast.Constant object at 0x12f85e670>, <_ast.Constant object at 0x12f85eaf0>, <_ast.Constant \
-object at 0x12f85e7f0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85eca0>, <_ast.Constant object at 0x12f85edf0>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
-object at 0x12f85ecd0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85e850>, <_ast.Constant object at 0x12f85eac0>, <_ast.Constant \
-object at 0x12f85ee50>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85ec40>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant object at 0x12f85eeb0>, <_ast.Constant \
-object at 0x12f85ef10>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85ec70>, <_ast.Constant object at 0x12f85ea90>, <_ast.Constant object at 0x12f85ea00>, <_ast.Constant \
-object at 0x12f85e9a0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85e910>, <_ast.Constant object at 0x12f85e190>, <_ast.Constant object at 0x12f85eee0>, <_ast.Constant \
-object at 0x12f85ea60>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f85ec10>, <_ast.Constant object at 0x12f85e730>, <_ast.Constant object at 0x12f85ef40>, <_ast.Constant \
-object at 0x12f85ef70>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f951160>, <_ast.Constant object at 0x12f951790>, <_ast.Constant object at 0x12f9511c0>, <_ast.Constant \
-object at 0x12f9510d0>](0)"	[label=assignedFrom];
-	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f951d30>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant \
-object at 0x12f951910>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd50085bfa0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085ba60>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b7f0>, <_ast.Constant object at 0x7fd50085b040>, <_\
+ast.Constant object at 0x7fd50085b1c0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b550>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b7c0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b9d0>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object at 0x7fd50085bee0>, <_\
+ast.Constant object at 0x7fd50085b9a0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085b2b0>, <_ast.Constant object at 0x7fd50085b070>, <_\
+ast.Constant object at 0x7fd50085b880>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085bf70>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at 0x7fd50085bd60>, <_\
+ast.Constant object at 0x7fd50085bd30>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at 0x7fd50085bb50>, <_\
+ast.Constant object at 0x7fd50085b100>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085b430>, <_ast.Constant object at 0x7fd50085b700>, <_\
+ast.Constant object at 0x7fd50085bbe0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b4c0>, <_ast.Constant object at 0x7fd50085bdc0>, <_ast.Constant object at 0x7fd50085b970>, <_\
+ast.Constant object at 0x7fd50085ba30>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b5b0>, <_ast.Constant object at 0x7fd50085bd90>, <_ast.Constant object at 0x7fd50085b760>, <_\
+ast.Constant object at 0x7fd50085b190>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b820>, <_ast.Constant object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b6a0>, <_\
+ast.Constant object at 0x7fd50085b5e0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085be50>, <_ast.Constant object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085bc70>, <_\
+ast.Constant object at 0x7fd50085bca0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085bb80>, <_\
+ast.Constant object at 0x7fd50085bcd0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b340>, <_ast.Constant object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd50085b0a0>, <_\
+ast.Constant object at 0x7fd50085bc10>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085baf0>, <_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object at 0x7fd50085b790>, <_\
+ast.Constant object at 0x7fd50085b850>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant object at 0x7fd50085b610>, <_ast.Constant object at 0x7fd50085b490>, <_\
+ast.Constant object at 0x7fd50085bfd0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd50085ba90>, <_ast.Constant object at 0x7fd50085b670>, <_ast.Constant object at 0x7fd50085b520>, <_\
+ast.Constant object at 0x7fd50085b280>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0f70>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f0ac0>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0a30>, <_\
+ast.Constant object at 0x7fd5007f0c70>](0)"	[label=assignedFrom];
+	"news_cols_agg(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05e0>, <_\
+ast.Constant object at 0x7fd5007f0430>](0)"	[label=assignedFrom];
 	"takeSequence(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"bodySize(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"wordCount(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
@@ -138,48 +124,48 @@ object at 0x12f951910>](0)"	[label=assignedFrom];
 	"volumeCounts3D(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"volumeCounts5D(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"volumeCounts7D(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f8b0>, <_ast.Constant object at 0x12fc4f430>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f9a0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f460>, <_ast.Constant object at 0x12fc4f190>, <_ast.Constant object at 0x12fc4f1f0>, <_ast.Constant \
-object at 0x12fc4f520>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4fa90>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4fbb0>, <_ast.Constant \
-object at 0x12fc4fb20>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f1c0>, <_ast.Constant object at 0x12fc4f0a0>, <_ast.Constant object at 0x12fc4feb0>, <_ast.Constant \
-object at 0x12fc4fcd0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f220>, <_ast.Constant object at 0x12fc4f2b0>, <_ast.Constant object at 0x12fc4f490>, <_ast.Constant \
-object at 0x12fc4fac0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f3d0>, <_ast.Constant object at 0x12fc4ffa0>, <_ast.Constant object at 0x12fc4f7f0>, <_ast.Constant \
-object at 0x12fc4f070>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f4f0>, <_ast.Constant object at 0x12fc4f340>, <_ast.Constant object at 0x12fc4fc10>, <_ast.Constant \
-object at 0x12fc4fb80>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12fc4f400>, <_ast.Constant object at 0x12fc4f3a0>, <_ast.Constant object at 0x12fc4fe50>, <_ast.Constant \
-object at 0x12fc4f970>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e970>, <_ast.Constant object at 0x12f85efd0>, <_ast.Constant object at 0x12f85ed30>, <_ast.Constant \
-object at 0x12f85e6d0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ee20>, <_ast.Constant object at 0x12f85ea30>, <_ast.Constant object at 0x12f85e610>, <_ast.Constant \
-object at 0x12f85eb20>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e6a0>, <_ast.Constant object at 0x12f85ee80>, <_ast.Constant object at 0x12f85ed90>, <_ast.Constant \
-object at 0x12f85e8e0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e940>, <_ast.Constant object at 0x12f85e7c0>, <_ast.Constant object at 0x12f85ed00>, <_ast.Constant \
-object at 0x12f85e760>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e9d0>, <_ast.Constant object at 0x12f85e670>, <_ast.Constant object at 0x12f85eaf0>, <_ast.Constant \
-object at 0x12f85e7f0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85eca0>, <_ast.Constant object at 0x12f85edf0>, <_ast.Constant object at 0x12f85e640>, <_ast.Constant \
-object at 0x12f85ecd0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e790>, <_ast.Constant object at 0x12f85e850>, <_ast.Constant object at 0x12f85eac0>, <_ast.Constant \
-object at 0x12f85ee50>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ec40>, <_ast.Constant object at 0x12f85eb80>, <_ast.Constant object at 0x12f85eeb0>, <_ast.Constant \
-object at 0x12f85ef10>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ec70>, <_ast.Constant object at 0x12f85ea90>, <_ast.Constant object at 0x12f85ea00>, <_ast.Constant \
-object at 0x12f85e9a0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85e910>, <_ast.Constant object at 0x12f85e190>, <_ast.Constant object at 0x12f85eee0>, <_ast.Constant \
-object at 0x12f85ea60>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f85ec10>, <_ast.Constant object at 0x12f85e730>, <_ast.Constant object at 0x12f85ef40>, <_ast.Constant \
-object at 0x12f85ef70>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951160>, <_ast.Constant object at 0x12f951790>, <_ast.Constant object at 0x12f9511c0>, <_ast.Constant \
-object at 0x12f9510d0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f951730>, <_ast.Constant object at 0x12f951d30>, <_ast.Constant object at 0x12f951ac0>, <_ast.Constant \
-object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd50085bfa0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085ba60>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b7f0>, <_ast.Constant object at 0x7fd50085b040>, <_\
+ast.Constant object at 0x7fd50085b1c0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085bf10>, <_ast.Constant object at 0x7fd50085b550>, <_ast.Constant object at 0x7fd50085b730>, <_\
+ast.Constant object at 0x7fd50085b7c0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b9d0>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object at 0x7fd50085bee0>, <_\
+ast.Constant object at 0x7fd50085b9a0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085b2b0>, <_ast.Constant object at 0x7fd50085b070>, <_\
+ast.Constant object at 0x7fd50085b880>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085bf70>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at 0x7fd50085bd60>, <_\
+ast.Constant object at 0x7fd50085bd30>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at 0x7fd50085bb50>, <_\
+ast.Constant object at 0x7fd50085b100>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b580>, <_ast.Constant object at 0x7fd50085b430>, <_ast.Constant object at 0x7fd50085b700>, <_\
+ast.Constant object at 0x7fd50085bbe0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b4c0>, <_ast.Constant object at 0x7fd50085bdc0>, <_ast.Constant object at 0x7fd50085b970>, <_\
+ast.Constant object at 0x7fd50085ba30>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b5b0>, <_ast.Constant object at 0x7fd50085bd90>, <_ast.Constant object at 0x7fd50085b760>, <_\
+ast.Constant object at 0x7fd50085b190>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b820>, <_ast.Constant object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b6a0>, <_\
+ast.Constant object at 0x7fd50085b5e0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085be50>, <_ast.Constant object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085bc70>, <_\
+ast.Constant object at 0x7fd50085bca0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085bb80>, <_\
+ast.Constant object at 0x7fd50085bcd0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b340>, <_ast.Constant object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd50085b0a0>, <_\
+ast.Constant object at 0x7fd50085bc10>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085baf0>, <_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object at 0x7fd50085b790>, <_\
+ast.Constant object at 0x7fd50085b850>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085b0d0>, <_ast.Constant object at 0x7fd50085b610>, <_ast.Constant object at 0x7fd50085b490>, <_\
+ast.Constant object at 0x7fd50085bfd0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085ba90>, <_ast.Constant object at 0x7fd50085b670>, <_ast.Constant object at 0x7fd50085b520>, <_\
+ast.Constant object at 0x7fd50085b280>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0f70>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f0ac0>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0a30>, <_\
+ast.Constant object at 0x7fd5007f0c70>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05e0>, <_\
+ast.Constant object at 0x7fd5007f0430>](0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"market_train_df(1)" -> "join_market_news[0]"	[label=_argToVar];
 	"news_train_df(1)" -> "join_market_news[1]"	[label=_argToVar];
 	"news_train_df(1)$0" -> "news_train_df(1)"	[label=findall];
@@ -196,7 +182,7 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"df_assetCodes(1)$0" -> "pd(1)"	[label=DataFrame];
 	"df_assetCodes(1)$0" -> "level_0(1)"	[label=DataFrame];
 	"df_assetCodes(1)$0" -> "assetCode(1)"	[label=DataFrame];
-	"news_cols(1)$0" -> "[<_ast.Constant object at 0x12f951970>, <_ast.Constant object at 0x12f951400>](1)"	[label=Add];
+	"news_cols(1)$0" -> "[<_ast.Constant object at 0x7fd4902ab1f0>, <_ast.Constant object at 0x7fd4902abe80>](1)"	[label=Add];
 	"news_cols(1)$0" -> "sorted(1)"	[label=Add];
 	"news_cols(1)$0" -> "news_cols_agg(1)"	[label=Add];
 	"news_train_df_expanded(1)$0" -> "news_train_df(1)$0"	[label=merge];
@@ -205,10 +191,10 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"news_train_df_expanded(1)$0" -> "level_0(1)"	[label=merge];
 	"news_train_df_expanded(1)$0" -> "news_cols(1)$0"	[label=merge];
 	"news_train_df_expanded(1)$0" -> "True(1)"	[label=merge];
-	"news_train_df_expanded(1)$0" -> "[<_ast.Constant object at 0x12f8f5640>, <_ast.Constant object at 0x12f8f5520>](1)"	[label=merge];
+	"news_train_df_expanded(1)$0" -> "[<_ast.Constant object at 0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902ab160>](1)"	[label=merge];
 	"news_train_df_aggregated(1)$0" -> "news_cols_agg(1)"	[label=agg];
 	"news_train_df_aggregated(1)$0" -> "news_train_df_expanded(1)$0"	[label=agg];
-	"news_train_df_aggregated(1)$0" -> "[<_ast.Constant object at 0x12f8f5340>, <_ast.Constant object at 0x12f8f51f0>](1)"	[label=agg];
+	"news_train_df_aggregated(1)$0" -> "[<_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant object at 0x7fd4902abe20>](1)"	[label=agg];
 	"news_train_df_aggregated(1)$1" -> "news_train_df_aggregated(1)$0"	[label=apply];
 	"news_train_df_aggregated(1)$1" -> "np(1)"	[label=apply];
 	"news_train_df_aggregated(1)$2" -> "news_train_df_aggregated(1)$1"	[label=assignedFrom];
@@ -217,7 +203,7 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"news_train_df_aggregated(1)$2" -> "col(1)"	[label=assignedFrom];
 	"market_train_df(1)$0" -> "market_train_df(1)"	[label=join];
 	"market_train_df(1)$0" -> "news_train_df_aggregated(1)$2"	[label=join];
-	"market_train_df(1)$0" -> "[<_ast.Constant object at 0x12f8f5490>, <_ast.Constant object at 0x12f8f5730>](1)"	[label=join];
+	"market_train_df(1)$0" -> "[<_ast.Constant object at 0x7fd50080ddc0>, <_ast.Constant object at 0x7fd50080de20>](1)"	[label=join];
 	"market_train_df(2)" -> "get_xy[0]"	[label=_argToVar];
 	"news_train_df(2)" -> "get_xy[1]"	[label=_argToVar];
 	"le(2)" -> "get_xy[2]"	[label=_argToVar];
@@ -273,7 +259,7 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"x(4)$5" -> "x(4)$4"	[label=assignedFrom];
 	"x(4)$5" -> "x(4)$5"	[label=assignedFrom];
 	"x(4)$6" -> "x(4)$5"	[label=drop];
-	"bogus_col(4)" -> "[<_ast.Constant object at 0x12f9a4040>, <_ast.Constant object at 0x12f9a4280>](4)"	[label=iteratorOf];
+	"bogus_col(4)" -> "[<_ast.Constant object at 0x7fd4c0961bb0>, <_ast.Constant object at 0x7fd4c0961610>](4)"	[label=iteratorOf];
 	"x(4)$7" -> "x(4)$6"	[label=astype];
 	"x(4)$7" -> "bogus_col(4)"	[label=astype];
 	"x(4)$7" -> "float(4)"	[label=astype];
@@ -339,6 +325,17 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"dvalid(0)$1" -> "dvalid(0)$0"	[label=assignedFrom];
 	"dvalid(0)$1" -> "extra_time(0)"	[label=assignedFrom];
 	"regression_l1(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"lgb_params(0)$0" -> "regression_l1(0)"	[label=dict];
+	"lgb_params(0)$0" -> "0.1(0)"	[label=dict];
+	"lgb_params(0)$0" -> "127(0)"	[label=dict];
+	"lgb_params(0)$0" -> "1(0)"	[label=dict];
+	"lgb_params(0)$0" -> "0.75(0)"	[label=dict];
+	"lgb_params(0)$0" -> "2(0)"	[label=dict];
+	"lgb_params(0)$0" -> "0.5(0)"	[label=dict];
+	"lgb_params(0)$0" -> "0.0(0)"	[label=dict];
+	"lgb_params(0)$0" -> "1.0(0)"	[label=dict];
+	"lgb_params(0)$0" -> "None(0)"	[label=dict];
+	"lgb_params(0)$0" -> "42(0)"	[label=dict];
 	"0.1(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"127(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
 	"1(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
@@ -359,10 +356,10 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"x_t_sum(5)$0" -> "df_time(5)$0"	[label=sum];
 	"x_t_sum(5)$0" -> "x_t(5)$0"	[label=sum];
 	"score(5)$0" -> "x_t_sum(5)$0"	[label=Div];
-	"m(0)$0" -> "lgb_params(0)$0"	[label=train];
 	"m(0)$0" -> "lgb(0)"	[label=train];
 	"m(0)$0" -> "dtrain(0)$0"	[label=train];
 	"m(0)$0" -> "dvalid(0)$1"	[label=train];
+	"m(0)$0" -> "lgb_params(0)$0"	[label=train];
 	"m(0)$0" -> "1000(0)"	[label=train];
 	"m(0)$0" -> "valid(0)"	[label=train];
 	"m(0)$0" -> "25(0)"	[label=train];
@@ -392,12 +389,15 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"valid_score(0)$0" -> "1(0)"	[label=assignedFrom];
 	"valid_score(0)$0" -> "sigma_score(0)"	[label=assignedFrom];
 	"valid_score(0)$0" -> "df_result(0)$0"	[label=assignedFrom];
-	"print[1]" -> "valid_score(0)$0"	[label=print];
+	"print[215/0]" -> "lgb_params(0)$0"	[label=print];
+	"Best score was (0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"print[216/0]" -> "num_boost_round(0)$0"	[label=print];
+	"print[216/0]" -> "valid_score(0)$0"	[label=print];
+	"print[216/0]" -> "Best score was (0)"	[label=print];
+	"print[216/0]" -> ".5f(0)"	[label=print];
+	"print[216/0]" -> " on round (0)"	[label=print];
 	".5f(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"print[2]" -> ".5f(0)"	[label=print];
 	" on round (0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"print[3]" -> " on round (0)"	[label=print];
-	"print[4]" -> "num_boost_round(0)$0"	[label=print];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
 	"fig(0)$0" -> "1(0)"	[label=subplots];
 	"fig(0)$0" -> "2(0)"	[label=subplots];
@@ -417,24 +417,14 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"dtrain_full(0)$0" -> "train_cols(0)$0"	[label=Dataset];
 	"dtrain_full(0)$0" -> "categorical_cols(0)$0"	[label=Dataset];
 	"dtrain_full(0)$0" -> "lgb(0)$1"	[label=Dataset];
-	"model(0)$0" -> "lgb_params(0)$0"	[label=train];
 	"model(0)$0" -> "dtrain(0)$0"	[label=train];
+	"model(0)$0" -> "lgb_params(0)$0"	[label=train];
 	"model(0)$0" -> "num_boost_round(0)$0"	[label=train];
 	"model(0)$0" -> "lgb(0)$1"	[label=train];
 	"predictions_template_df(6)" -> "make_predictions[0]"	[label=_argToVar];
-	"make_predictions[0]" -> "predictions_template_df(0)"	[label=make_predictions];
-	"predictions_template_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"predictions_template_df(0)" -> "days(0)$0"	[label=iteratorOf];
 	"market_obs_df(6)" -> "make_predictions[1]"	[label=_argToVar];
-	"make_predictions[1]" -> "market_obs_df(0)"	[label=make_predictions];
-	"market_obs_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"market_obs_df(0)" -> "days(0)$0"	[label=iteratorOf];
 	"news_obs_df(6)" -> "make_predictions[2]"	[label=_argToVar];
-	"make_predictions[2]" -> "news_obs_df(0)"	[label=make_predictions];
-	"news_obs_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
-	"news_obs_df(0)" -> "days(0)$0"	[label=iteratorOf];
 	"le(6)" -> "make_predictions[3]"	[label=_argToVar];
-	"make_predictions[3]" -> "le(0)$0"	[label=make_predictions];
 	"x(6)$0" -> "market_obs_df(6)"	[label=get_x];
 	"x(6)$0" -> "news_obs_df(6)"	[label=get_x];
 	"x(6)$0" -> "le(6)"	[label=get_x];
@@ -447,7 +437,18 @@ object at 0x12f951910>](0)" -> "a-simple-model-using-the-market-and-news-data.ip
 	"predictions_template_df(6)$0" -> "model(6)"	[label=clip];
 	"predictions_template_df(6)$0" -> "1(6)"	[label=clip];
 	"days(0)$0" -> "env(0)$0"	[label=get_prediction_days];
+	"market_obs_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"market_obs_df(0)" -> "days(0)$0"	[label=iteratorOf];
+	"news_obs_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"news_obs_df(0)" -> "days(0)$0"	[label=iteratorOf];
+	"predictions_template_df(0)" -> "a-simple-model-using-the-market-and-news-data.ipynb"	[label=appearsIn];
+	"predictions_template_df(0)" -> "days(0)$0"	[label=iteratorOf];
+	"make_predictions[231/4]" -> "le(0)$0"	[label=make_predictions];
+	"make_predictions[231/4]" -> "market_obs_df(0)"	[label=make_predictions];
+	"make_predictions[231/4]" -> "news_obs_df(0)"	[label=make_predictions];
+	"make_predictions[231/4]" -> "predictions_template_df(0)"	[label=make_predictions];
 	"env(0)$1" -> "env(0)$0"	[label=predict];
 	"env(0)$1" -> "predictions_template_df(0)"	[label=predict];
+	"print[233/0]" -> "Done!(0)"	[label=print];
 	"env(0)$2" -> "env(0)$1"	[label=write_submission_file];
 }

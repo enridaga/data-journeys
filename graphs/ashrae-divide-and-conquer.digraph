@@ -65,11 +65,11 @@ digraph "" {
 	"weather_test(0)$0" -> "pd(0)"	[label=read_csv];
 	"weather_test(0)$0" -> "path_weather_test(0)$0"	[label=read_csv];
 	"weather_train(0)$1" -> "weather_train(0)$0"	[label=drop];
-	"weather_train(0)$1" -> "[<_ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fadeb80>, <_ast.Constant object at 0x12fadeca0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fadef40>, <_ast.Constant object at 0x12fadeb80>, <_ast.Constant object at 0x12fadeca0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"weather_train(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cc7c0>, <_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04cc2b0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cc7c0>, <_ast.Constant object at 0x7fd4c04cc370>, <_ast.Constant object at 0x7fd4c04cc2b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"weather_test(0)$1" -> "weather_test(0)$0"	[label=drop];
-	"weather_test(0)$1" -> "[<_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fade190>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fadebb0>, <_ast.Constant object at 0x12fade730>, <_ast.Constant object at 0x12fade190>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"weather_test(0)$1" -> "[<_ast.Constant object at 0x7fd4c04cc160>, <_ast.Constant object at 0x7fd4c04cce20>, <_ast.Constant object at 0x7fd4c04ccfa0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04cc160>, <_ast.Constant object at 0x7fd4c04cce20>, <_ast.Constant object at 0x7fd4c04ccfa0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"weather_train(0)$2" -> "weather_train(0)$1"	[label=apply];
 	"weather_train(0)$2" -> "site_id(0)"	[label=apply];
 	"weather_train(0)$2" -> "group(0)"	[label=apply];
@@ -93,9 +93,9 @@ digraph "" {
 	"building_id(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_train(0)$2" -> "weather_train(0)$2"	[label=merge];
 	"df_train(0)$2" -> "df_train(0)$1"	[label=merge];
-	"df_train(0)$2" -> "[<_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade520>](0)"	[label=merge];
+	"df_train(0)$2" -> "[<_ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902ab250>](0)"	[label=merge];
 	"df_train(0)$2" -> "left(0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fadeac0>, <_ast.Constant object at 0x12fade520>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902ab250>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"left(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_train(0)$3" -> "df_train(0)$2"	[label=assignedFrom];
 	"df_train(0)$3" -> "df_train(0)$3"	[label=assignedFrom];
@@ -120,8 +120,8 @@ digraph "" {
 	"df_test(0)$2" -> "weather_test(0)$2"	[label=merge];
 	"df_test(0)$2" -> "left(0)"	[label=merge];
 	"df_test(0)$2" -> "df_test(0)$1"	[label=merge];
-	"df_test(0)$2" -> "[<_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f0d0>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12fc4f9a0>, <_ast.Constant object at 0x12fc4f0d0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_test(0)$2" -> "[<_ast.Constant object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0340>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0340>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test(0)$3" -> "df_test(0)$2"	[label=reset_index];
 	"df_test(0)$4" -> "pd(0)"	[label=to_datetime];
 	"df_test(0)$4" -> "\%Y-\%m-\%d \%H:\%M:\%S(0)"	[label=to_datetime];
@@ -140,30 +140,8 @@ digraph "" {
 	"start_mem(1)$0" -> "df(1)"	[label=Div];
 	"start_mem(1)$0" -> "1024(1)"	[label=Div];
 	"start_mem(1)$0" -> "2(1)"	[label=Div];
-	"print[0]" -> "Memory usage of dataframe is {:.2f} MB(1)"	[label=print];
-	"print[0]" -> "Memory usage after optimization is: {:.2f} MB(1)"	[label=print];
-	"print[0]" -> "Decreased by {:.1f}\%(1)"	[label=print];
-	"print[0]" -> "cv(0)$0"	[label=print];
-	"print[0]" -> "Site Id:(0)"	[label=print];
-	"print[0]" -> "
-Site Id:(0)"	[label=print];
-	"print[0]" -> "Preparing test data for site_id(0)"	[label=print];
-	"print[0]" -> "Scoring for site_id(0)"	[label=print];
-	"cv(0)$0" -> "2(0)"	[label=assignedFrom];
-	"Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"
-Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"Preparing test data for site_id(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"Scoring for site_id(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"print[1]" -> "site_id(0)"	[label=print];
-	"print[1]" -> "start_mem(1)$0"	[label=print];
-	"print[1]" -> "end_mem(1)$0"	[label=print];
-	"print[1]" -> "100(1)"	[label=print];
-	"print[1]" -> "fold CV for site_id:(0)"	[label=print];
-	"end_mem(1)$0" -> "1024(1)"	[label=Div];
-	"end_mem(1)$0" -> "2(1)"	[label=Div];
-	"end_mem(1)$0" -> "df(1)$7"	[label=Div];
-	"fold CV for site_id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[69/4]" -> "start_mem(1)$0"	[label=print];
+	"print[69/4]" -> "Memory usage of dataframe is {:.2f} MB(1)"	[label=print];
 	"col(1)" -> "df(1)"	[label=iteratorOf];
 	"col_type(1)$0" -> "df(1)"	[label=assignedFrom];
 	"col_type(1)$0" -> "col(1)"	[label=assignedFrom];
@@ -195,30 +173,15 @@ Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df(1)$7" -> "col(1)"	[label=astype];
 	"df(1)$7" -> "df(1)$6"	[label=astype];
 	"df(1)$7" -> "category(1)"	[label=astype];
-	"print[2]" -> "site_id(0)"	[label=print];
-	"print[2]" -> "start_mem(1)$0"	[label=print];
-	"print[2]" -> ", Fold:(0)"	[label=print];
-	"print[2]" -> ", CV RMSE:(0)"	[label=print];
-	"print[2]" -> "completed
-(0)"	[label=print];
-	", Fold:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	", CV RMSE:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"completed
-(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"print[3]" -> "np(0)"	[label=print];
-	"print[3]" -> "end_mem(1)$0"	[label=print];
-	"print[3]" -> "fold(0)"	[label=print];
-	"fold(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"fold(0)" -> "range(0)"	[label=iteratorOf];
-	"fold(0)" -> "cv(0)$0"	[label=iteratorOf];
-	"fold(0)" -> "kf(0)$0"	[label=iteratorOf];
-	"fold(0)" -> "X_train_site(0)$0"	[label=iteratorOf];
-	"fold(0)" -> "y_train_site(0)$0"	[label=iteratorOf];
-	"fold(0)" -> "enumerate(0)"	[label=iteratorOf];
-	"print[4]" -> "mean_squared_error(0)"	[label=print];
-	"print[4]" -> "start_mem(1)$0"	[label=print];
-	"print[4]" -> "1(0)"	[label=print];
-	"1(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"end_mem(1)$0" -> "1024(1)"	[label=Div];
+	"end_mem(1)$0" -> "2(1)"	[label=Div];
+	"end_mem(1)$0" -> "df(1)$7"	[label=Div];
+	"print[99/4]" -> "end_mem(1)$0"	[label=print];
+	"print[99/4]" -> "Memory usage after optimization is: {:.2f} MB(1)"	[label=print];
+	"print[100/4]" -> "start_mem(1)$0"	[label=print];
+	"print[100/4]" -> "end_mem(1)$0"	[label=print];
+	"print[100/4]" -> "Decreased by {:.1f}\%(1)"	[label=print];
+	"print[100/4]" -> "100(1)"	[label=print];
 	"df_train(0)$7" -> "df_train(0)$6"	[label=reduce_mem_usage];
 	"df_train(0)$7" -> "True(0)"	[label=reduce_mem_usage];
 	"True(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
@@ -241,40 +204,40 @@ Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test(0)$6" -> "df_test(0)$5"	[label=assignedFrom];
 	"df_test(0)$7" -> "df_test(0)$6"	[label=assignedFrom];
 	"df_building_meter(0)$0" -> "df_train(0)$9"	[label=reset_index];
-	"df_building_meter(0)$0" -> "[<_ast.Constant object at 0x12f87e250>, <_ast.Constant object at 0x12f87e220>](0)"	[label=reset_index];
+	"df_building_meter(0)$0" -> "[<_ast.Constant object at 0x7fd4c099b7c0>, <_ast.Constant object at 0x7fd4c099b790>](0)"	[label=reset_index];
 	"df_building_meter(0)$0" -> "log_meter_reading(0)"	[label=reset_index];
 	"df_building_meter(0)$0" -> "mean(0)"	[label=reset_index];
 	"df_building_meter(0)$0" -> "median(0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f87e250>, <_ast.Constant object at 0x12f87e220>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c099b7c0>, <_ast.Constant object at 0x7fd4c099b790>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"log_meter_reading(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"mean(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"median(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_train(0)$10" -> "df_train(0)$9"	[label=merge];
 	"df_train(0)$10" -> "df_building_meter(0)$0"	[label=merge];
-	"df_train(0)$10" -> "[<_ast.Constant object at 0x12f87e6a0>, <_ast.Constant object at 0x12f87e400>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f87e6a0>, <_ast.Constant object at 0x12f87e400>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_train(0)$10" -> "[<_ast.Constant object at 0x7fd4d097e1f0>, <_ast.Constant object at 0x7fd4d097e220>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d097e1f0>, <_ast.Constant object at 0x7fd4d097e220>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test(0)$8" -> "df_test(0)$7"	[label=merge];
 	"df_test(0)$8" -> "df_building_meter(0)$0"	[label=merge];
-	"df_test(0)$8" -> "[<_ast.Constant object at 0x12f87e970>, <_ast.Constant object at 0x12f87ea90>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f87e970>, <_ast.Constant object at 0x12f87ea90>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_test(0)$8" -> "[<_ast.Constant object at 0x7fd4d097e3a0>, <_ast.Constant object at 0x7fd4d097e310>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d097e3a0>, <_ast.Constant object at 0x7fd4d097e310>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_building_meter_hour(0)$0" -> "log_meter_reading(0)"	[label=reset_index];
 	"df_building_meter_hour(0)$0" -> "mean(0)"	[label=reset_index];
 	"df_building_meter_hour(0)$0" -> "median(0)"	[label=reset_index];
 	"df_building_meter_hour(0)$0" -> "df_train(0)$10"	[label=reset_index];
-	"df_building_meter_hour(0)$0" -> "[<_ast.Constant object at 0x12f87ed00>, <_ast.Constant object at 0x12f87e5e0>, <_ast.Constant object at 0x12f87ec70>](0)"	[label=reset_index];
-	"[<_ast.Constant object at 0x12f87ed00>, <_ast.Constant object at 0x12f87e5e0>, <_ast.Constant object at 0x12f87ec70>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_building_meter_hour(0)$0" -> "[<_ast.Constant object at 0x7fd4d097ea00>, <_ast.Constant object at 0x7fd4d097e8b0>, <_ast.Constant object at 0x7fd4d097e850>](0)"	[label=reset_index];
+	"[<_ast.Constant object at 0x7fd4d097ea00>, <_ast.Constant object at 0x7fd4d097e8b0>, <_ast.Constant object at 0x7fd4d097e850>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_train(0)$11" -> "df_train(0)$10"	[label=merge];
 	"df_train(0)$11" -> "df_building_meter_hour(0)$0"	[label=merge];
-	"df_train(0)$11" -> "[<_ast.Constant object at 0x12f87e610>, <_ast.Constant object at 0x12f87e670>, <_ast.Constant object at 0x12f87e580>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f87e610>, <_ast.Constant object at 0x12f87e670>, <_ast.Constant object at 0x12f87e580>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_train(0)$11" -> "[<_ast.Constant object at 0x7fd4d097e7c0>, <_ast.Constant object at 0x7fd4d097e6a0>, <_ast.Constant object at 0x7fd4d097e670>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d097e7c0>, <_ast.Constant object at 0x7fd4d097e6a0>, <_ast.Constant object at 0x7fd4d097e670>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test(0)$9" -> "df_test(0)$8"	[label=merge];
 	"df_test(0)$9" -> "df_building_meter_hour(0)$0"	[label=merge];
-	"df_test(0)$9" -> "[<_ast.Constant object at 0x12f87ec40>, <_ast.Constant object at 0x12f87e820>, <_ast.Constant object at 0x12f9a3040>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f87ec40>, <_ast.Constant object at 0x12f87e820>, <_ast.Constant object at 0x12f9a3040>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_test(0)$9" -> "[<_ast.Constant object at 0x7fd4d097ed90>, <_ast.Constant object at 0x7fd4d097edc0>, <_ast.Constant object at 0x7fd4d097edf0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d097ed90>, <_ast.Constant object at 0x7fd4d097edc0>, <_ast.Constant object at 0x7fd4d097edf0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df(2)" -> "create_lag_features[0]"	[label=_argToVar];
 	"window(2)" -> "create_lag_features[1]"	[label=_argToVar];
-	"feature_cols(2)$0" -> "[<_ast.Constant object at 0x12f9a3250>, <_ast.Constant object at 0x12f9a3280>, <_ast.Constant object at 0x12f9a32b0>, <_ast.Constant \
-object at 0x12f9a32e0>](2)"	[label=assignedFrom];
+	"feature_cols(2)$0" -> "[<_ast.Constant object at 0x7fd4d097efa0>, <_ast.Constant object at 0x7fd4d097efd0>, <_ast.Constant object at 0x7fd4d097ef70>, <_\
+ast.Constant object at 0x7fd4d097e9a0>](2)"	[label=assignedFrom];
 	"df_site(2)$0" -> "df(2)"	[label=groupby];
 	"df_site(2)$0" -> "site_id(2)"	[label=groupby];
 	"df_rolled(2)$0" -> "window(2)"	[label=rolling];
@@ -316,33 +279,38 @@ object at 0x12f9a32e0>](2)"	[label=assignedFrom];
 	"weather_train(0)$5" -> "18(0)"	[label=create_lag_features];
 	"18(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"weather_train(0)$6" -> "weather_train(0)$5"	[label=drop];
-	"weather_train(0)$6" -> "[<_ast.Constant object at 0x12f89aa60>, <_ast.Constant object at 0x12f89aa90>, <_ast.Constant object at 0x12f89aac0>, <_ast.Constant \
-object at 0x12f89aaf0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f89aa60>, <_ast.Constant object at 0x12f89aa90>, <_ast.Constant object at 0x12f89aac0>, <_ast.Constant \
-object at 0x12f89aaf0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"weather_train(0)$6" -> "[<_ast.Constant object at 0x7fd4d0979760>, <_ast.Constant object at 0x7fd4d0979790>, <_ast.Constant object at 0x7fd4d09797c0>, <_\
+ast.Constant object at 0x7fd4d09797f0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d0979760>, <_ast.Constant object at 0x7fd4d0979790>, <_ast.Constant object at 0x7fd4d09797c0>, <_\
+ast.Constant object at 0x7fd4d09797f0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_train(0)$12" -> "left(0)"	[label=merge];
 	"df_train(0)$12" -> "df_train(0)$11"	[label=merge];
 	"df_train(0)$12" -> "weather_train(0)$6"	[label=merge];
-	"df_train(0)$12" -> "[<_ast.Constant object at 0x12f89ae20>, <_ast.Constant object at 0x12f89ae50>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f89ae20>, <_ast.Constant object at 0x12f89ae50>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"df_train(0)$12" -> "[<_ast.Constant object at 0x7fd4d0979b20>, <_ast.Constant object at 0x7fd4d0979b50>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d0979b20>, <_ast.Constant object at 0x7fd4d0979b50>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"gc(0)$1" -> "gc(0)$0"	[label=collect];
-	"[<_ast.Constant object at 0x12f886190>, <_ast.Constant object at 0x12f8861c0>, <_ast.Constant object at 0x12f8861f0>, <_ast.Constant \
-object at 0x12f886220>, <_ast.Constant object at 0x12f886250>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"categorical_features(0)$0" -> "[<_ast.Constant object at 0x12f886190>, <_ast.Constant object at 0x12f8861c0>, <_ast.Constant object at 0x12f8861f0>, <_ast.Constant \
-object at 0x12f886220>, <_ast.Constant object at 0x12f886250>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d0979e50>, <_ast.Constant object at 0x7fd4d0979e80>, <_ast.Constant object at 0x7fd4d0979eb0>, <_\
+ast.Constant object at 0x7fd4d0979ee0>, <_ast.Constant object at 0x7fd4d0979f10>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"categorical_features(0)$0" -> "[<_ast.Constant object at 0x7fd4d0979e50>, <_ast.Constant object at 0x7fd4d0979e80>, <_ast.Constant object at 0x7fd4d0979eb0>, <_\
+ast.Constant object at 0x7fd4d0979ee0>, <_ast.Constant object at 0x7fd4d0979f10>](0)"	[label=assignedFrom];
 	"col(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"all_features(0)$0" -> "df_train(0)$12"	[label=assignedFrom];
 	"all_features(0)$0" -> "col(0)"	[label=assignedFrom];
-	"all_features(0)$0" -> "[<_ast.Constant object at 0x12f886520>, <_ast.Constant object at 0x12f886550>, <_ast.Constant object at 0x12f886580>, <_ast.Constant \
-object at 0x12f8865b0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f886520>, <_ast.Constant object at 0x12f886550>, <_ast.Constant object at 0x12f886580>, <_ast.Constant \
-object at 0x12f8865b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"all_features(0)$0" -> "[<_ast.Constant object at 0x7fd4d09a91f0>, <_ast.Constant object at 0x7fd4d09a9220>, <_ast.Constant object at 0x7fd4d09a9250>, <_\
+ast.Constant object at 0x7fd4d09a9280>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4d09a91f0>, <_ast.Constant object at 0x7fd4d09a9220>, <_ast.Constant object at 0x7fd4d09a9250>, <_\
+ast.Constant object at 0x7fd4d09a9280>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"2(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"cv(0)$0" -> "2(0)"	[label=assignedFrom];
 	"cv_scores(0)$0" -> "site_id(0)"	[label=assignedFrom];
 	"cv_scores(0)$0" -> "cv_score(0)"	[label=assignedFrom];
 	"cv_scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"cv_score(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"[](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[173/4]" -> "site_id(0)"	[label=print];
+	"print[173/4]" -> "cv(0)$0"	[label=print];
+	"print[173/4]" -> "fold CV for site_id:(0)"	[label=print];
+	"fold CV for site_id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"kf(0)$0" -> "seed(0)$0"	[label=KFold];
 	"kf(0)$0" -> "cv(0)$0"	[label=KFold];
 	"models(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
@@ -357,6 +325,13 @@ object at 0x12f8865b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"y_pred_train_site(0)$0" -> "X_train_site(0)$0"	[label=zeros];
 	"score(0)$0" -> "0(0)"	[label=assignedFrom];
 	"enumerate(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"fold(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"fold(0)" -> "range(0)"	[label=iteratorOf];
+	"fold(0)" -> "cv(0)$0"	[label=iteratorOf];
+	"fold(0)" -> "kf(0)$0"	[label=iteratorOf];
+	"fold(0)" -> "X_train_site(0)$0"	[label=iteratorOf];
+	"fold(0)" -> "y_train_site(0)$0"	[label=iteratorOf];
+	"fold(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"train_index(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"train_index(0)" -> "kf(0)$0"	[label=iteratorOf];
 	"train_index(0)" -> "X_train_site(0)$0"	[label=iteratorOf];
@@ -389,8 +364,8 @@ object at 0x12f8865b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"dvalid(0)$0" -> "categorical_features(0)$0"	[label=Dataset];
 	"dvalid(0)$0" -> "X_valid(0)$0"	[label=Dataset];
 	"dvalid(0)$0" -> "y_valid(0)$0"	[label=Dataset];
-	"[<_ast.Name object at 0x12f8a53a0>, <_ast.Name object at 0x12f8a53d0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"watchlist(0)$0" -> "[<_ast.Name object at 0x12f8a53a0>, <_ast.Name object at 0x12f8a53d0>](0)"	[label=assignedFrom];
+	"[<_ast.Name object at 0x7fd4d09830a0>, <_ast.Name object at 0x7fd4d09830d0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"watchlist(0)$0" -> "[<_ast.Name object at 0x7fd4d09830a0>, <_ast.Name object at 0x7fd4d09830d0>](0)"	[label=assignedFrom];
 	"objective(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"params(0)$0" -> "objective(0)"	[label=assignedFrom];
 	"params(0)$0" -> "num_leaves(0)"	[label=assignedFrom];
@@ -439,11 +414,17 @@ object at 0x12f8865b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"rmse(0)$0" -> "mean_squared_error(0)"	[label=sqrt];
 	"rmse(0)$0" -> "y_valid(0)$0"	[label=sqrt];
 	"rmse(0)$0" -> "y_pred_valid(0)$0"	[label=sqrt];
+	"Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[208/8]" -> "site_id(0)"	[label=print];
+	"print[208/8]" -> "fold(0)"	[label=print];
+	"print[208/8]" -> "rmse(0)$0"	[label=print];
+	"print[208/8]" -> "Site Id:(0)"	[label=print];
+	"print[208/8]" -> ", Fold:(0)"	[label=print];
+	"print[208/8]" -> "1(0)"	[label=print];
+	"print[208/8]" -> ", RMSE:(0)"	[label=print];
+	", Fold:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"1(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	", RMSE:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"print[5]" -> "y_train_site(0)$0"	[label=print];
-	"print[5]" -> ", RMSE:(0)"	[label=print];
-	"print[6]" -> "y_pred_train_site(0)$1"	[label=print];
-	"print[6]" -> "rmse(0)$0"	[label=print];
 	"score(0)$1" -> "cv(0)$0"	[label=Add];
 	"score(0)$1" -> "score(0)$0"	[label=Add];
 	"score(0)$1" -> "rmse(0)$0"	[label=Add];
@@ -453,20 +434,34 @@ object at 0x12f8865b0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"cv_scores(0)$2" -> "score(0)$1"	[label=append];
 	"cv_scores(0)$2" -> "cv_scores(0)$1"	[label=append];
 	"
-(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"print[7]" -> "
+Site Id:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[216/4]" -> "np(0)"	[label=print];
+	"print[216/4]" -> "mean_squared_error(0)"	[label=print];
+	"print[216/4]" -> "site_id(0)"	[label=print];
+	"print[216/4]" -> "y_train_site(0)$0"	[label=print];
+	"print[216/4]" -> "y_pred_train_site(0)$1"	[label=print];
+	"print[216/4]" -> "
+Site Id:(0)"	[label=print];
+	"print[216/4]" -> ", CV RMSE:(0)"	[label=print];
+	"print[216/4]" -> "
 (0)"	[label=print];
+	", CV RMSE:(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"
+(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"pd(0)$0" -> "pd(0)"	[label=from_dict];
 	"pd(0)$0" -> "cv_scores(0)$2"	[label=from_dict];
 	"gc(0)$3" -> "gc(0)$2"	[label=collect];
 	"weather_test(0)$5" -> "weather_test(0)$4"	[label=create_lag_features];
 	"weather_test(0)$5" -> "18(0)"	[label=create_lag_features];
 	"weather_test(0)$6" -> "weather_test(0)$5"	[label=drop];
-	"weather_test(0)$6" -> "[<_ast.Constant object at 0x12f89c340>, <_ast.Constant object at 0x12f89c4f0>, <_ast.Constant object at 0x12f89c550>, <_ast.Constant \
-object at 0x12f89c580>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f89c340>, <_ast.Constant object at 0x12f89c4f0>, <_ast.Constant object at 0x12f89c550>, <_ast.Constant \
-object at 0x12f89c580>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"weather_test(0)$6" -> "[<_ast.Constant object at 0x7fd4d097c1f0>, <_ast.Constant object at 0x7fd4d097c220>, <_ast.Constant object at 0x7fd4d097c250>, <_\
+ast.Constant object at 0x7fd4d097c280>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4d097c1f0>, <_ast.Constant object at 0x7fd4d097c220>, <_ast.Constant object at 0x7fd4d097c250>, <_\
+ast.Constant object at 0x7fd4d097c280>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test_sites(0)$0" -> "[](0)"	[label=assignedFrom];
+	"Preparing test data for site_id(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[225/4]" -> "site_id(0)"	[label=print];
+	"print[225/4]" -> "Preparing test data for site_id(0)"	[label=print];
 	"X_test_site(0)$0" -> "site_id(0)"	[label=assignedFrom];
 	"X_test_site(0)$0" -> "df_test(0)$9"	[label=assignedFrom];
 	"weather_test_site(0)$0" -> "site_id(0)"	[label=assignedFrom];
@@ -474,14 +469,17 @@ object at 0x12f89c580>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"X_test_site(0)$1" -> "left(0)"	[label=merge];
 	"X_test_site(0)$1" -> "X_test_site(0)$0"	[label=merge];
 	"X_test_site(0)$1" -> "weather_test_site(0)$0"	[label=merge];
-	"X_test_site(0)$1" -> "[<_ast.Constant object at 0x12f87a040>, <_ast.Constant object at 0x12f87a070>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f87a040>, <_ast.Constant object at 0x12f87a070>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"X_test_site(0)$1" -> "[<_ast.Constant object at 0x7fd4d097cd00>, <_ast.Constant object at 0x7fd4d097cd30>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4d097cd00>, <_ast.Constant object at 0x7fd4d097cd30>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"row_ids_site(0)$0" -> "X_test_site(0)$1"	[label=assignedFrom];
 	"X_test_site(0)$2" -> "all_features(0)$0"	[label=assignedFrom];
 	"X_test_site(0)$2" -> "X_test_site(0)$1"	[label=assignedFrom];
 	"y_pred_test_site(0)$0" -> "np(0)"	[label=zeros];
 	"y_pred_test_site(0)$0" -> "0(0)"	[label=zeros];
 	"y_pred_test_site(0)$0" -> "X_test_site(0)$2"	[label=zeros];
+	"Scoring for site_id(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"print[237/4]" -> "site_id(0)"	[label=print];
+	"print[237/4]" -> "Scoring for site_id(0)"	[label=print];
 	"model_lgb(0)$1" -> "site_id(0)"	[label=assignedFrom];
 	"model_lgb(0)$1" -> "fold(0)"	[label=assignedFrom];
 	"model_lgb(0)$1" -> "models(0)$1"	[label=assignedFrom];
@@ -499,6 +497,12 @@ object at 0x12f89c580>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"meter_reading(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"df_test_sites(0)$1" -> "df_test_sites(0)$0"	[label=append];
 	"df_test_sites(0)$1" -> "df_test_site(0)$0"	[label=append];
+	"print[246/4]" -> "site_id(0)"	[label=print];
+	"print[246/4]" -> "Scoring for site_id(0)"	[label=print];
+	"print[246/4]" -> "completed
+(0)"	[label=print];
+	"completed
+(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"gc(0)$5" -> "gc(0)$4"	[label=collect];
 	"submit(0)$0" -> "pd(0)$0"	[label=concat];
 	"submit(0)$0" -> "df_test_sites(0)$1"	[label=concat];
@@ -527,10 +531,10 @@ object at 0x12f89c580>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsI
 	"leak15(0)$0" -> "/kaggle/input/ashrae-leak-data/site15.csv(0)"	[label=read_csv];
 	"/kaggle/input/ashrae-leak-data/site15.csv(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"leak(0)$0" -> "pd(0)$0"	[label=concat];
-	"leak(0)$0" -> "[<_ast.Name object at 0x12f8ecee0>, <_ast.Name object at 0x12f8ecf10>, <_ast.Name object at 0x12f8ecf40>, <_ast.Name object at 0x12f8ecf70>, <_\
-ast.Name object at 0x12f8ecfa0>](0)"	[label=concat];
-	"[<_ast.Name object at 0x12f8ecee0>, <_ast.Name object at 0x12f8ecf10>, <_ast.Name object at 0x12f8ecf40>, <_ast.Name object at 0x12f8ecf70>, <_\
-ast.Name object at 0x12f8ecfa0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"leak(0)$0" -> "[<_ast.Name object at 0x7fd4c04e2c40>, <_ast.Name object at 0x7fd4c04e2c70>, <_ast.Name object at 0x7fd4c04e2ca0>, <_ast.Name object \
+at 0x7fd4c04e2cd0>, <_ast.Name object at 0x7fd4c04e2d00>](0)"	[label=concat];
+	"[<_ast.Name object at 0x7fd4c04e2c40>, <_ast.Name object at 0x7fd4c04e2c70>, <_ast.Name object at 0x7fd4c04e2ca0>, <_ast.Name object \
+at 0x7fd4c04e2cd0>, <_ast.Name object at 0x7fd4c04e2d00>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"gc(0)$6" -> "gc(0)$5"	[label=collect];
 	"test(0)$0" -> "path_test(0)$0"	[label=read_csv];
 	"test(0)$0" -> "pd(0)$0"	[label=read_csv];
@@ -539,23 +543,23 @@ ast.Name object at 0x12f8ecfa0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label
 	"test(0)$1" -> "test(0)$1"	[label=assignedFrom];
 	"leak(0)$1" -> "leak(0)$0"	[label=merge];
 	"leak(0)$1" -> "test(0)$1"	[label=merge];
-	"leak(0)$1" -> "[<_ast.Constant object at 0x12f9117f0>, <_ast.Constant object at 0x12f911820>, <_ast.Constant object at 0x12f911850>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f9117f0>, <_ast.Constant object at 0x12f911820>, <_ast.Constant object at 0x12f911850>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"leak(0)$1" -> "[<_ast.Constant object at 0x7fd4c04e54f0>, <_ast.Constant object at 0x7fd4c04e5520>, <_ast.Constant object at 0x7fd4c04e5550>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4c04e54f0>, <_ast.Constant object at 0x7fd4c04e5520>, <_ast.Constant object at 0x7fd4c04e5550>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"gc(0)$7" -> "gc(0)$6"	[label=collect];
 	"submit(0)$3" -> "left(0)"	[label=merge];
 	"submit(0)$3" -> "submit(0)$2"	[label=merge];
 	"submit(0)$3" -> "leak(0)$1"	[label=merge];
-	"submit(0)$3" -> "[<_ast.Constant object at 0x12f911be0>, <_ast.Constant object at 0x12f911c10>](0)"	[label=merge];
-	"submit(0)$3" -> "[<_ast.Constant object at 0x12f911d00>](0)"	[label=merge];
-	"[<_ast.Constant object at 0x12f911be0>, <_ast.Constant object at 0x12f911c10>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f911d00>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"submit(0)$3" -> "[<_ast.Constant object at 0x7fd4c04e58b0>, <_ast.Constant object at 0x7fd4c04e58e0>](0)"	[label=merge];
+	"submit(0)$3" -> "[<_ast.Constant object at 0x7fd4c04e59d0>](0)"	[label=merge];
+	"[<_ast.Constant object at 0x7fd4c04e58b0>, <_ast.Constant object at 0x7fd4c04e58e0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04e59d0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"submit(0)$4" -> "submit(0)$3"	[label=assignedFrom];
 	"submit(0)$4" -> "submit(0)$4"	[label=assignedFrom];
 	"submit(0)$4" -> "meter_reading_scraped(0)"	[label=assignedFrom];
 	"meter_reading_scraped(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"submit(0)$5" -> "submit(0)$4"	[label=drop];
-	"submit(0)$5" -> "[<_ast.Constant object at 0x12f90f100>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12f90f100>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
+	"submit(0)$5" -> "[<_ast.Constant object at 0x7fd4c04e5fd0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd4c04e5fd0>](0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];
 	"submit(0)$6" -> "submit(0)$5"	[label=to_csv];
 	"submit(0)$6" -> "submission.csv(0)"	[label=to_csv];
 	"submission.csv(0)" -> "ashrae-divide-and-conquer.ipynb"	[label=appearsIn];

@@ -26,11 +26,9 @@ digraph "" {
 	os -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=importedBy];
 	"os(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"os(0)" -> os	[label=assignedFrom];
-	"print[0]" -> "os(0)"	[label=print];
-	"print[0]" -> "self(5)$10"	[label=print];
-	"self(5)$10" -> "self(5)$9"	[label=reset_params];
+	"print[16/0]" -> "os(0)"	[label=print];
+	"print[16/0]" -> "../input(0)"	[label=print];
 	"../input(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
-	"print[1]" -> "../input(0)"	[label=print];
 	warnings -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=importedBy];
 	"warnings(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"warnings(0)" -> warnings	[label=assignedFrom];
@@ -186,22 +184,22 @@ digraph "" {
 	"target_counts(0)$0" -> "0(0)"	[label=sort_values];
 	"target_counts(0)$0" -> "1(0)"	[label=sort_values];
 	"target_counts(0)$0" -> "train_labels(0)$3"	[label=sort_values];
-	"target_counts(0)$0" -> "[<_ast.Constant object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5af0>](0)"	[label=sort_values];
+	"target_counts(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ffaf0>](0)"	[label=sort_values];
 	"target_counts(0)$0" -> "False(0)"	[label=sort_values];
-	"[<_ast.Constant object at 0x12f8f5c40>, <_ast.Constant object at 0x12f8f5af0>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ffaf0>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"False(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"plt(0)$0" -> "plt(0)"	[label=figure];
 	"sns(0)$1" -> "sns(0)$0"	[label=barplot];
 	"train_labels(0)$4" -> "1(0)"	[label=sum];
 	"train_labels(0)$4" -> "train_labels(0)$3"	[label=sum];
-	"train_labels(0)$4" -> "[<_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade520>](0)"	[label=sum];
-	"[<_ast.Constant object at 0x12fade6a0>, <_ast.Constant object at 0x12fade520>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"train_labels(0)$4" -> "[<_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abf10>](0)"	[label=sum];
+	"[<_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902abf10>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"special_target(2)" -> "find_counts[0]"	[label=_argToVar];
 	"labels(2)" -> "find_counts[1]"	[label=_argToVar];
 	"counts(2)$0" -> "special_target(2)"	[label=sum];
 	"counts(2)$0" -> "labels(2)"	[label=sum];
 	"counts(2)$0" -> "1(2)"	[label=sum];
-	"counts(2)$0" -> "[<_ast.Constant object at 0x12fade580>, <_ast.Constant object at 0x12fade610>, <_ast.Constant object at 0x12fadeb50>](2)"	[label=sum];
+	"counts(2)$0" -> "[<_ast.Constant object at 0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902ab040>](2)"	[label=sum];
 	"counts(2)$0" -> "0(2)"	[label=sum];
 	"counts(2)$1" -> "counts(2)$0"	[label=assignedFrom];
 	"counts(2)$1" -> "0(2)"	[label=assignedFrom];
@@ -229,8 +227,8 @@ digraph "" {
 	"\% of data(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"targets(0)$0" -> "1(0)"	[label=drop];
 	"targets(0)$0" -> "train_labels(0)$4"	[label=drop];
-	"targets(0)$0" -> "[<_ast.Constant object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f4f0>](0)"	[label=drop];
-	"[<_ast.Constant object at 0x12fc4fcd0>, <_ast.Constant object at 0x12fc4f670>, <_ast.Constant object at 0x12fc4f4f0>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"targets(0)$0" -> "[<_ast.Constant object at 0x7fd500999af0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999c40>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd500999af0>, <_ast.Constant object at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999c40>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"scipy.special" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=importedBy];
 	logsumexp -> "scipy.special"	[label=importedBy];
 	"logsumexp(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
@@ -265,6 +263,8 @@ digraph "" {
 	"log_bernoullis(5)$1" -> "self(5)$8"	[label=get_log_bernoullis];
 	"self(5)$9" -> "self(5)$8"	[label=get_log_likelihood];
 	"self(5)$9" -> "log_bernoullis(5)$1"	[label=get_log_likelihood];
+	"self(5)$10" -> "self(5)$9"	[label=reset_params];
+	"print[120/16]" -> "self(5)$10"	[label=print];
 	"self(6)" -> "reset_params[0]"	[label=_argToVar];
 	"self(6)$0" -> "self(6)"	[label=copy];
 	"self(6)$1" -> "self(6)$0"	[label=copy];
@@ -380,12 +380,14 @@ digraph "" {
 	"x_test(0)$0" -> "0(0)"	[label=train_test_split];
 	"x_test(0)$0" -> "X(0)$0"	[label=train_test_split];
 	"x_test(0)$0" -> "True(0)"	[label=train_test_split];
-	"[<_ast.Constant object at 0x12f894a90>, <_ast.Constant object at 0x12f894ac0>, <_ast.Constant object at 0x12f894af0>, <_ast.Constant \
-object at 0x12f894b20>, <_ast.Constant object at 0x12f894b50>, <_ast.Constant object at 0x12f894b80>, <_ast.Constant object at 0x12f894bb0>, <_\
-ast.Constant object at 0x12f894be0>, <_ast.Constant object at 0x12f894c10>, <_ast.Constant object at 0x12f894c40>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
-	"components_to_test(0)$0" -> "[<_ast.Constant object at 0x12f894a90>, <_ast.Constant object at 0x12f894ac0>, <_ast.Constant object at 0x12f894af0>, <_ast.Constant \
-object at 0x12f894b20>, <_ast.Constant object at 0x12f894b50>, <_ast.Constant object at 0x12f894b80>, <_ast.Constant object at 0x12f894bb0>, <_\
-ast.Constant object at 0x12f894be0>, <_ast.Constant object at 0x12f894c10>, <_ast.Constant object at 0x12f894c40>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04af790>, <_ast.Constant object at 0x7fd4c04af7c0>, <_ast.Constant object at 0x7fd4c04af7f0>, <_\
+ast.Constant object at 0x7fd4c04af820>, <_ast.Constant object at 0x7fd4c04af850>, <_ast.Constant object at 0x7fd4c04af880>, <_ast.Constant \
+object at 0x7fd4c04af8b0>, <_ast.Constant object at 0x7fd4c04af8e0>, <_ast.Constant object at 0x7fd4c04af910>, <_ast.Constant object \
+at 0x7fd4c04af940>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"components_to_test(0)$0" -> "[<_ast.Constant object at 0x7fd4c04af790>, <_ast.Constant object at 0x7fd4c04af7c0>, <_ast.Constant object at 0x7fd4c04af7f0>, <_\
+ast.Constant object at 0x7fd4c04af820>, <_ast.Constant object at 0x7fd4c04af850>, <_ast.Constant object at 0x7fd4c04af880>, <_ast.Constant \
+object at 0x7fd4c04af8b0>, <_ast.Constant object at 0x7fd4c04af8e0>, <_ast.Constant object at 0x7fd4c04af910>, <_ast.Constant object \
+at 0x7fd4c04af940>](0)"	[label=assignedFrom];
 	"[](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"range(0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
@@ -551,8 +553,8 @@ ast.Constant object at 0x12f894be0>, <_ast.Constant object at 0x12f894c10>, <_as
 	"mu(0)$0" -> "model(0)$3"	[label=DataFrame];
 	"mu(0)$0" -> "results(0)$2"	[label=DataFrame];
 	"mu(0)$0" -> "names(0)$0"	[label=DataFrame];
-	"mu(0)$0" -> "[<_ast.Constant object at 0x12f88f190>, <_ast.Constant object at 0x12f88f1c0>](0)"	[label=DataFrame];
-	"[<_ast.Constant object at 0x12f88f190>, <_ast.Constant object at 0x12f88f1c0>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"mu(0)$0" -> "[<_ast.Constant object at 0x7fd50081abb0>, <_ast.Constant object at 0x7fd50081af10>](0)"	[label=DataFrame];
+	"[<_ast.Constant object at 0x7fd50081abb0>, <_ast.Constant object at 0x7fd50081af10>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"mu(0)$1" -> "np(0)"	[label=apply];
 	"mu(0)$1" -> "mu(0)$0"	[label=apply];
 	"plt(0)$12" -> "plt(0)$11"	[label=figure];
@@ -646,17 +648,17 @@ ast.Constant object at 0x12f894be0>, <_ast.Constant object at 0x12f894c10>, <_as
 	"plt(0)$26" -> "plt(0)$25"	[label=figure];
 	"sns(0)$13" -> "sns(0)$12"	[label=boxplot];
 	"plt(0)$27" -> "plt(0)$26"	[label=ylim];
-	"plt(0)$27" -> "[<_ast.Constant object at 0x12f8d5550>, <_ast.Constant object at 0x12f8d5580>](0)"	[label=ylim];
-	"[<_ast.Constant object at 0x12f8d5550>, <_ast.Constant object at 0x12f8d5580>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"plt(0)$27" -> "[<_ast.Constant object at 0x7fd50086e250>, <_ast.Constant object at 0x7fd50086e280>](0)"	[label=ylim];
+	"[<_ast.Constant object at 0x7fd50086e250>, <_ast.Constant object at 0x7fd50086e280>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"plt(0)$28" -> "plt(0)$27"	[label=xticks];
 	"plt(0)$29" -> "(0)"	[label=xlabel];
 	"plt(0)$29" -> "plt(0)$28"	[label=xlabel];
 	"aggresome_cluster(0)$0" -> "1(0)"	[label=copy];
 	"aggresome_cluster(0)$0" -> "results(0)$5"	[label=copy];
-	"aggresome_cluster(0)$0" -> "[<_ast.Constant object at 0x12f8d5bb0>, <_ast.Constant object at 0x12f8d5be0>, <_ast.Constant object at 0x12f8d5c10>, <_ast.Constant \
-object at 0x12f8d5c40>, <_ast.Constant object at 0x12f8d5c70>](0)"	[label=copy];
-	"[<_ast.Constant object at 0x12f8d5bb0>, <_ast.Constant object at 0x12f8d5be0>, <_ast.Constant object at 0x12f8d5c10>, <_ast.Constant \
-object at 0x12f8d5c40>, <_ast.Constant object at 0x12f8d5c70>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"aggresome_cluster(0)$0" -> "[<_ast.Constant object at 0x7fd50086e8e0>, <_ast.Constant object at 0x7fd50086e910>, <_ast.Constant object at 0x7fd50086e940>, <_\
+ast.Constant object at 0x7fd50086e970>, <_ast.Constant object at 0x7fd50086e9a0>](0)"	[label=copy];
+	"[<_ast.Constant object at 0x7fd50086e8e0>, <_ast.Constant object at 0x7fd50086e910>, <_ast.Constant object at 0x7fd50086e940>, <_\
+ast.Constant object at 0x7fd50086e970>, <_ast.Constant object at 0x7fd50086e9a0>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"counts(0)$0" -> "aggresome_cluster(0)$0"	[label=sum];
 	"columns_of_interest(0)$0" -> "0(0)"	[label=list];
 	"columns_of_interest(0)$0" -> "counts(0)$0"	[label=list];
@@ -684,10 +686,10 @@ object at 0x12f8d5c40>, <_ast.Constant object at 0x12f8d5c70>](0)" -> "uncover-t
 	"af_cluster(0)$0" -> "0(0)"	[label=copy];
 	"af_cluster(0)$0" -> "1(0)"	[label=copy];
 	"af_cluster(0)$0" -> "results(0)$5"	[label=copy];
-	"af_cluster(0)$0" -> "[<_ast.Constant object at 0x12f8ddeb0>, <_ast.Constant object at 0x12f8ddfa0>, <_ast.Constant object at 0x12f8ddf10>, <_ast.Constant \
-object at 0x12f8ddf70>, <_ast.Constant object at 0x12f8ddf40>](0)"	[label=copy];
-	"[<_ast.Constant object at 0x12f8ddeb0>, <_ast.Constant object at 0x12f8ddfa0>, <_ast.Constant object at 0x12f8ddf10>, <_ast.Constant \
-object at 0x12f8ddf70>, <_ast.Constant object at 0x12f8ddf40>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
+	"af_cluster(0)$0" -> "[<_ast.Constant object at 0x7fd50086adc0>, <_ast.Constant object at 0x7fd50086ad60>, <_ast.Constant object at 0x7fd50086abe0>, <_\
+ast.Constant object at 0x7fd50086ac40>, <_ast.Constant object at 0x7fd50086ad00>](0)"	[label=copy];
+	"[<_ast.Constant object at 0x7fd50086adc0>, <_ast.Constant object at 0x7fd50086ad60>, <_ast.Constant object at 0x7fd50086abe0>, <_\
+ast.Constant object at 0x7fd50086ac40>, <_ast.Constant object at 0x7fd50086ad00>](0)" -> "uncover-target-correlations-with-bernoulli-mixture.ipynb"	[label=appearsIn];
 	"counts(0)$1" -> "af_cluster(0)$0"	[label=sum];
 	"columns_of_interest(0)$1" -> "0(0)"	[label=list];
 	"columns_of_interest(0)$1" -> "counts(0)$1"	[label=list];

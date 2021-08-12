@@ -58,72 +58,33 @@ digraph "" {
 	"df_sub(0)$0" -> "sample_submission.csv(0)"	[label=read_csv];
 	"sample_submission.csv(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"train shape =(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"print[0]" -> "train shape =(0)"	[label=print];
-	"print[0]" -> "test shape =(0)"	[label=print];
-	"print[0]" -> "
-output categories:
-	(0)"	[label=print];
-	"print[0]" -> "
-input categories:
-	(0)"	[label=print];
-	"print[0]" -> "train category one hot shape = {}(0)"	[label=print];
-	"print[0]" -> "test category one hot shape = {}(0)"	[label=print];
-	"print[0]" -> "train host one hot shape = {}(0)"	[label=print];
-	"print[0]" -> "test host one hot shape = {}(0)"	[label=print];
-	"print[0]" -> "
-epoch \%03d(13)"	[label=print];
-	"print[0]" -> "batch {:03d} : train loss {:.3f} : train cosine {:.3f} : train spearman {:.3f} : valid spearman {:.3f}(13)"	[label=print];
-	"print[0]" -> "
-
-fold {:01d}(0)"	[label=print];
+	"print[21/0]" -> "df_train(0)$0"	[label=print];
+	"print[21/0]" -> "train shape =(0)"	[label=print];
 	"test shape =(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"
-output categories:
-	(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"
-input categories:
-	(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"train category one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"test category one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"train host one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"test host one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"
-
-fold {:01d}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"print[1]" -> "df_train(0)$0"	[label=print];
-	"print[1]" -> "df_test(0)$0"	[label=print];
-	"print[1]" -> "output_categories(0)$0"	[label=print];
-	"print[1]" -> "input_categories(0)$0"	[label=print];
-	"print[1]" -> "train_category(0)$1"	[label=print];
-	"print[1]" -> "test_category(0)$1"	[label=print];
-	"print[1]" -> "train_host(0)$1"	[label=print];
-	"print[1]" -> "test_host(0)$1"	[label=print];
-	"print[1]" -> "epoch(13)"	[label=print];
-	"print[1]" -> "batch(13)"	[label=print];
-	"print[1]" -> "fold(0)"	[label=print];
+	"print[22/0]" -> "df_test(0)$0"	[label=print];
+	"print[22/0]" -> "test shape =(0)"	[label=print];
 	"output_categories(0)$0" -> "df_train(0)$0"	[label=list];
 	"output_categories(0)$0" -> "11(0)"	[label=list];
-	"input_categories(0)$0" -> "df_train(0)$0"	[label=list];
-	"input_categories(0)$0" -> "[<_ast.Constant object at 0x12f957d60>, <_ast.Constant object at 0x12f957a00>, <_ast.Constant object at 0x12f957130>, <_ast.Constant \
-object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)"	[label=list];
-	"train_category(0)$1" -> "np(0)$0"	[label=asarray];
-	"train_category(0)$1" -> "train_category(0)$1"	[label=asarray];
-	"test_category(0)$1" -> "np(0)$0"	[label=asarray];
-	"test_category(0)$1" -> "test_category(0)$1"	[label=asarray];
-	"train_host(0)$1" -> "np(0)$0"	[label=asarray];
-	"train_host(0)$1" -> "train_host(0)$1"	[label=asarray];
-	"test_host(0)$1" -> "np(0)$0"	[label=asarray];
-	"test_host(0)$1" -> "test_host(0)$1"	[label=asarray];
-	"epoch(13)" -> "num_epochs(13)"	[label=iteratorOf];
-	"epoch(13)" -> "range(13)"	[label=iteratorOf];
-	"batch(13)" -> "train_dataset(13)"	[label=iteratorOf];
-	"batch(13)" -> "enumerate(13)"	[label=iteratorOf];
-	"fold(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"fold(0)" -> "gkf(0)$0"	[label=iteratorOf];
-	"fold(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"11(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f957d60>, <_ast.Constant object at 0x12f957a00>, <_ast.Constant object at 0x12f957130>, <_ast.Constant \
-object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"input_categories(0)$0" -> "df_train(0)$0"	[label=list];
+	"input_categories(0)$0" -> "[<_ast.Constant object at 0x7fd50080d160>, <_ast.Constant object at 0x7fd50080de50>, <_ast.Constant object at 0x7fd50080dfa0>, <_\
+ast.Constant object at 0x7fd50080d4c0>, <_ast.Constant object at 0x7fd50080db20>](0)"	[label=list];
+	"[<_ast.Constant object at 0x7fd50080d160>, <_ast.Constant object at 0x7fd50080de50>, <_ast.Constant object at 0x7fd50080dfa0>, <_\
+ast.Constant object at 0x7fd50080d4c0>, <_ast.Constant object at 0x7fd50080db20>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"
+output categories:
+	(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "output_categories(0)$0"	[label=print];
+	"print[26/0]" -> "
+output categories:
+	(0)"	[label=print];
+	"
+input categories:
+	(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[27/0]" -> "input_categories(0)$0"	[label=print];
+	"print[27/0]" -> "
+input categories:
+	(0)"	[label=print];
 	"df(1)" -> "convert_to_use_vectors[0]"	[label=_argToVar];
 	"embed(1)" -> "convert_to_use_vectors[1]"	[label=_argToVar];
 	"t(1)$0" -> "df(1)"	[label=empty];
@@ -144,16 +105,16 @@ object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)" -> "use-class
 	"instance(1)" -> "tqdm(1)"	[label=iteratorOf];
 	"t(1)$1" -> "embed(1)"	[label=flatten];
 	"t(1)$1" -> "t(1)$0"	[label=flatten];
-	"t(1)$1" -> "[<_ast.Call object at 0x130532760>](1)"	[label=flatten];
+	"t(1)$1" -> "[<_ast.Call object at 0x7fd4902ab730>](1)"	[label=flatten];
 	"t(1)$1" -> "outputs(1)"	[label=flatten];
 	"q(1)$1" -> "embed(1)"	[label=flatten];
 	"q(1)$1" -> "q(1)$0"	[label=flatten];
 	"q(1)$1" -> "outputs(1)"	[label=flatten];
-	"q(1)$1" -> "[<_ast.Call object at 0x12f85e910>](1)"	[label=flatten];
+	"q(1)$1" -> "[<_ast.Call object at 0x7fd4c04ff130>](1)"	[label=flatten];
 	"a(1)$1" -> "embed(1)"	[label=flatten];
 	"a(1)$1" -> "a(1)$0"	[label=flatten];
 	"a(1)$1" -> "outputs(1)"	[label=flatten];
-	"a(1)$1" -> "[<_ast.Call object at 0x12f85ef40>](1)"	[label=flatten];
+	"a(1)$1" -> "[<_ast.Call object at 0x7fd4c04ffbb0>](1)"	[label=flatten];
 	"embed(0)$0" -> "hub(0)"	[label=load];
 	"embed(0)$0" -> "../input/universalsentenceencoderlarge4/(0)"	[label=load];
 	"../input/universalsentenceencoderlarge4/(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
@@ -198,6 +159,16 @@ object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)" -> "use-class
 	"test_category(0)$0" -> "df_train(0)$0"	[label=onehot_features];
 	"test_category(0)$0" -> "df_test(0)$0"	[label=onehot_features];
 	"test_category(0)$0" -> "category(0)"	[label=onehot_features];
+	"train_category(0)$1" -> "np(0)$0"	[label=asarray];
+	"train_category(0)$1" -> "train_category(0)$1"	[label=asarray];
+	"test_category(0)$1" -> "np(0)$0"	[label=asarray];
+	"test_category(0)$1" -> "test_category(0)$1"	[label=asarray];
+	"train category one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[57/0]" -> "train_category(0)$1"	[label=print];
+	"print[57/0]" -> "train category one hot shape = {}(0)"	[label=print];
+	"test category one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[58/0]" -> "test_category(0)$1"	[label=print];
+	"print[58/0]" -> "test category one hot shape = {}(0)"	[label=print];
 	"train_host(0)$0" -> "df_train(0)$0"	[label=onehot_features];
 	"train_host(0)$0" -> "df_test(0)$0"	[label=onehot_features];
 	"train_host(0)$0" -> "host(0)"	[label=onehot_features];
@@ -205,6 +176,16 @@ object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)" -> "use-class
 	"test_host(0)$0" -> "df_train(0)$0"	[label=onehot_features];
 	"test_host(0)$0" -> "df_test(0)$0"	[label=onehot_features];
 	"test_host(0)$0" -> "host(0)"	[label=onehot_features];
+	"train_host(0)$1" -> "np(0)$0"	[label=asarray];
+	"train_host(0)$1" -> "train_host(0)$1"	[label=asarray];
+	"test_host(0)$1" -> "np(0)$0"	[label=asarray];
+	"test_host(0)$1" -> "test_host(0)$1"	[label=asarray];
+	"train host one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[64/0]" -> "train_host(0)$1"	[label=print];
+	"print[64/0]" -> "train host one hot shape = {}(0)"	[label=print];
+	"test host one hot shape = {}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[65/0]" -> "test_host(0)$1"	[label=print];
+	"print[65/0]" -> "test host one hot shape = {}(0)"	[label=print];
 	"trues(3)" -> "compute_spearmanr[0]"	[label=_argToVar];
 	"preds(3)" -> "compute_spearmanr[1]"	[label=_argToVar];
 	"rhos(3)$0" -> "[](3)"	[label=assignedFrom];
@@ -340,8 +321,8 @@ object at 0x12f957820>, <_ast.Constant object at 0x12f957610>](0)" -> "use-class
 	"x4(9)$0" -> "4(9)"	[label=dense_hidden];
 	"x(9)$0" -> "1(9)"	[label=concat];
 	"x(9)$0" -> "tf(9)"	[label=concat];
-	"x(9)$0" -> "[<_ast.Name object at 0x12f9a3580>, <_ast.Name object at 0x12f9a35b0>, <_ast.Name object at 0x12f9a35e0>, <_ast.Name object at 0x12f9a3610>, <_\
-ast.Name object at 0x12f9a3640>](9)"	[label=concat];
+	"x(9)$0" -> "[<_ast.Name object at 0x7fd4c04ad280>, <_ast.Name object at 0x7fd4c04ad2b0>, <_ast.Name object at 0x7fd4c04ad2e0>, <_ast.Name object \
+at 0x7fd4c04ad310>, <_ast.Name object at 0x7fd4c04ad340>](9)"	[label=concat];
 	"inputs(10)" -> "create_dataset[0]"	[label=_argToVar];
 	"outputs(10)" -> "create_dataset[1]"	[label=_argToVar];
 	"batch_size(10)" -> "create_dataset[2]"	[label=_argToVar];
@@ -366,8 +347,8 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"optimizer(12)$0" -> "optimizer(12)"	[label=apply_gradients];
 	"optimizer(12)$0" -> "grad(12)$0"	[label=apply_gradients];
 	"optimizer(12)$0" -> "zip(12)"	[label=apply_gradients];
-	"metric[0]" -> "y(12)"	[label=metric];
-	"metric[1]" -> "pred(12)$0"	[label=metric];
+	"metric[165/8]" -> "y(12)"	[label=metric];
+	"metric[165/8]" -> "pred(12)$0"	[label=metric];
 	"model(13)" -> "train_and_predict[0]"	[label=_argToVar];
 	"loss_function(13)" -> "train_and_predict[1]"	[label=_argToVar];
 	"optimizer(13)" -> "train_and_predict[2]"	[label=_argToVar];
@@ -378,13 +359,16 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"num_epochs(13)" -> "train_and_predict[7]"	[label=_argToVar];
 	"valid_snapshot_preds(13)$0" -> "[](13)"	[label=assignedFrom];
 	"test_snapshot_preds(13)$0" -> "[](13)"	[label=assignedFrom];
-	"train_scores(13)$0" -> "[<_ast.Constant object at 0x13053b490>](13)"	[label=assignedFrom];
-	"train_scores(13)$0" -> "[<_ast.Constant object at 0x13053b4f0>](13)"	[label=assignedFrom];
-	"valid_scores(13)$0" -> "[<_ast.Constant object at 0x13053b490>](13)"	[label=assignedFrom];
-	"valid_scores(13)$0" -> "[<_ast.Constant object at 0x13053b4f0>](13)"	[label=assignedFrom];
-	"print[2]" -> "1(13)"	[label=print];
-	"print[2]" -> "1(0)"	[label=print];
-	"1(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"train_scores(13)$0" -> "[<_ast.Constant object at 0x7fd500810190>](13)"	[label=assignedFrom];
+	"train_scores(13)$0" -> "[<_ast.Constant object at 0x7fd5008101f0>](13)"	[label=assignedFrom];
+	"valid_scores(13)$0" -> "[<_ast.Constant object at 0x7fd500810190>](13)"	[label=assignedFrom];
+	"valid_scores(13)$0" -> "[<_ast.Constant object at 0x7fd5008101f0>](13)"	[label=assignedFrom];
+	"epoch(13)" -> "num_epochs(13)"	[label=iteratorOf];
+	"epoch(13)" -> "range(13)"	[label=iteratorOf];
+	"print[178/8]" -> "epoch(13)"	[label=print];
+	"print[178/8]" -> "
+epoch \%03d(13)"	[label=print];
+	"print[178/8]" -> "1(13)"	[label=print];
 	"epoch_loss(13)$0" -> "0.0(13)"	[label=assignedFrom];
 	"train_preds(13)$0" -> "np(13)"	[label=assignedFrom];
 	"train_preds(13)$0" -> "0(13)"	[label=assignedFrom];
@@ -392,6 +376,8 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"train_trues(13)$0" -> "np(13)"	[label=assignedFrom];
 	"train_trues(13)$0" -> "0(13)"	[label=assignedFrom];
 	"train_trues(13)$0" -> "30(13)"	[label=assignedFrom];
+	"batch(13)" -> "train_dataset(13)"	[label=iteratorOf];
+	"batch(13)" -> "enumerate(13)"	[label=iteratorOf];
 	"x_train(13)" -> "train_dataset(13)"	[label=iteratorOf];
 	"x_train(13)" -> "enumerate(13)"	[label=iteratorOf];
 	"y_train(13)" -> "train_dataset(13)"	[label=iteratorOf];
@@ -418,27 +404,18 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"train_preds(13)$1" -> "0(13)"	[label=append];
 	"train_preds(13)$1" -> "pred(13)$0"	[label=append];
 	"train_preds(13)$1" -> "train_preds(13)$1"	[label=append];
-	"print[3]" -> "epoch_loss(13)$1"	[label=print];
-	"print[4]" -> "batch(13)"	[label=print];
-	"print[5]" -> "1(13)"	[label=print];
-	"print[6]" -> "metric(13)"	[label=print];
-	"print[7]" -> "train_scores(13)$0"	[label=print];
-	"print[7]" -> "train_scores(13)$1"	[label=print];
+	"print[189/12]" -> "metric(13)"	[label=print];
+	"print[189/12]" -> "train_scores(13)$0"	[label=print];
+	"print[189/12]" -> "valid_scores(13)$0"	[label=print];
+	"print[189/12]" -> "1(13)"	[label=print];
+	"print[189/12]" -> "batch(13)"	[label=print];
+	"print[189/12]" -> "epoch_loss(13)$1"	[label=print];
+	"print[189/12]" -> "batch {:03d} : train loss {:.3f} : train cosine {:.3f} : train spearman {:.3f} : valid spearman {:.3f}(13)"	[label=print];
+	"print[189/12]" -> "(13)"	[label=print];
 	"train_scores(13)$1" -> "train_scores(13)$0"	[label=append];
 	"train_scores(13)$1" -> "train_trues(13)$1"	[label=append];
 	"train_scores(13)$1" -> "train_preds(13)$1"	[label=append];
 	"train_scores(13)$1" -> "compute_spearmanr(13)"	[label=append];
-	"print[8]" -> "1(13)"	[label=print];
-	"print[9]" -> "valid_scores(13)$0"	[label=print];
-	"print[9]" -> "valid_scores(13)$1"	[label=print];
-	"valid_scores(13)$1" -> "valid_scores(13)$0"	[label=append];
-	"valid_scores(13)$1" -> "np(13)"	[label=append];
-	"valid_scores(13)$1" -> "0(13)"	[label=append];
-	"valid_scores(13)$1" -> "compute_spearmanr(13)"	[label=append];
-	"valid_scores(13)$1" -> "valid_trues(13)$1"	[label=append];
-	"valid_scores(13)$1" -> "valid_snapshot_preds(13)$1"	[label=append];
-	"print[10]" -> "1(13)"	[label=print];
-	"print[11]" -> "(13)"	[label=print];
 	"dropout_preds(13)$0" -> "[](13)"	[label=assignedFrom];
 	"_(13)" -> "range(13)"	[label=iteratorOf];
 	"_(13)" -> "30(13)"	[label=iteratorOf];
@@ -466,6 +443,20 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"valid_snapshot_preds(13)$1" -> "np(13)"	[label=append];
 	"valid_snapshot_preds(13)$1" -> "0(13)"	[label=append];
 	"valid_snapshot_preds(13)$1" -> "dropout_preds(13)$1"	[label=append];
+	"valid_scores(13)$1" -> "valid_scores(13)$0"	[label=append];
+	"valid_scores(13)$1" -> "np(13)"	[label=append];
+	"valid_scores(13)$1" -> "0(13)"	[label=append];
+	"valid_scores(13)$1" -> "compute_spearmanr(13)"	[label=append];
+	"valid_scores(13)$1" -> "valid_trues(13)$1"	[label=append];
+	"valid_scores(13)$1" -> "valid_snapshot_preds(13)$1"	[label=append];
+	"print[206/8]" -> "metric(13)"	[label=print];
+	"print[206/8]" -> "1(13)"	[label=print];
+	"print[206/8]" -> "batch(13)"	[label=print];
+	"print[206/8]" -> "epoch_loss(13)$1"	[label=print];
+	"print[206/8]" -> "batch {:03d} : train loss {:.3f} : train cosine {:.3f} : train spearman {:.3f} : valid spearman {:.3f}(13)"	[label=print];
+	"print[206/8]" -> "(13)"	[label=print];
+	"print[206/8]" -> "train_scores(13)$1"	[label=print];
+	"print[206/8]" -> "valid_scores(13)$1"	[label=print];
 	"metric(13)$0" -> "metric(13)"	[label=reset_states];
 	"dropout_preds(13)$2" -> "[](13)"	[label=assignedFrom];
 	"test_preds(13)$0" -> "np(13)"	[label=empty];
@@ -484,18 +475,18 @@ ast.Name object at 0x12f9a3640>](9)"	[label=concat];
 	"test_snapshot_preds(13)$1" -> "np(13)"	[label=append];
 	"test_snapshot_preds(13)$1" -> "0(13)"	[label=append];
 	"test_snapshot_preds(13)$1" -> "dropout_preds(13)$3"	[label=append];
-	"[<_ast.Constant object at 0x130542460>, <_ast.Constant object at 0x1305425b0>, <_ast.Constant object at 0x130542610>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"input_units(0)$0" -> "[<_ast.Constant object at 0x130542460>, <_ast.Constant object at 0x1305425b0>, <_ast.Constant object at 0x130542610>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x1305425e0>, <_ast.Constant object at 0x130542700>, <_ast.Constant object at 0x130542430>, <_ast.Constant \
-object at 0x130542760>, <_ast.Constant object at 0x130542790>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"dense_units(0)$0" -> "[<_ast.Constant object at 0x1305425e0>, <_ast.Constant object at 0x130542700>, <_ast.Constant object at 0x130542430>, <_ast.Constant \
-object at 0x130542760>, <_ast.Constant object at 0x130542790>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500822220>, <_ast.Constant object at 0x7fd500822250>, <_ast.Constant object at 0x7fd500822280>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"input_units(0)$0" -> "[<_ast.Constant object at 0x7fd500822220>, <_ast.Constant object at 0x7fd500822250>, <_ast.Constant object at 0x7fd500822280>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500822370>, <_ast.Constant object at 0x7fd5008223a0>, <_ast.Constant object at 0x7fd5008223d0>, <_\
+ast.Constant object at 0x7fd500822400>, <_ast.Constant object at 0x7fd500822430>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"dense_units(0)$0" -> "[<_ast.Constant object at 0x7fd500822370>, <_ast.Constant object at 0x7fd5008223a0>, <_ast.Constant object at 0x7fd5008223d0>, <_\
+ast.Constant object at 0x7fd500822400>, <_ast.Constant object at 0x7fd500822430>](0)"	[label=assignedFrom];
 	"256(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"aux_units(0)$0" -> "256(0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x130542850>, <_ast.Constant object at 0x130542730>, <_ast.Constant object at 0x130542970>, <_ast.Constant \
-object at 0x1305429d0>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"dropout_rates(0)$0" -> "[<_ast.Constant object at 0x130542850>, <_ast.Constant object at 0x130542730>, <_ast.Constant object at 0x130542970>, <_ast.Constant \
-object at 0x1305429d0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500822580>, <_ast.Constant object at 0x7fd5008225b0>, <_ast.Constant object at 0x7fd5008225e0>, <_\
+ast.Constant object at 0x7fd500822610>](0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"dropout_rates(0)$0" -> "[<_ast.Constant object at 0x7fd500822580>, <_ast.Constant object at 0x7fd5008225b0>, <_ast.Constant object at 0x7fd5008225e0>, <_\
+ast.Constant object at 0x7fd500822610>](0)"	[label=assignedFrom];
 	"5(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"num_folds(0)$0" -> "5(0)"	[label=assignedFrom];
 	"12(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
@@ -519,12 +510,24 @@ object at 0x1305429d0>](0)"	[label=assignedFrom];
 	"train_fold_scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"valid_fold_scores(0)$0" -> "[](0)"	[label=assignedFrom];
 	"enumerate(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"fold(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"fold(0)" -> "gkf(0)$0"	[label=iteratorOf];
+	"fold(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"train_idx(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"train_idx(0)" -> "gkf(0)$0"	[label=iteratorOf];
 	"train_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
 	"valid_idx(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"valid_idx(0)" -> "gkf(0)$0"	[label=iteratorOf];
 	"valid_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"
+
+fold {:01d}(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
+	"print[246/4]" -> "fold(0)"	[label=print];
+	"print[246/4]" -> "
+
+fold {:01d}(0)"	[label=print];
+	"print[246/4]" -> "1(0)"	[label=print];
+	"1(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
 	"model(0)$1" -> "input_units(0)$0"	[label=NeuralNet];
 	"model(0)$1" -> "dense_units(0)$0"	[label=NeuralNet];
 	"model(0)$1" -> "aux_units(0)$0"	[label=NeuralNet];
@@ -532,28 +535,28 @@ object at 0x1305429d0>](0)"	[label=assignedFrom];
 	"train_dataset(0)$0" -> "np(0)$0"	[label=create_dataset];
 	"train_dataset(0)$0" -> "df_train(0)$0"	[label=create_dataset];
 	"train_dataset(0)$0" -> "output_categories(0)$0"	[label=create_dataset];
-	"train_dataset(0)$0" -> "train_category(0)$1"	[label=create_dataset];
-	"train_dataset(0)$0" -> "train_host(0)$1"	[label=create_dataset];
 	"train_dataset(0)$0" -> "train_t(0)$0"	[label=create_dataset];
 	"train_dataset(0)$0" -> "train_q(0)$0"	[label=create_dataset];
 	"train_dataset(0)$0" -> "train_a(0)$0"	[label=create_dataset];
+	"train_dataset(0)$0" -> "train_category(0)$1"	[label=create_dataset];
+	"train_dataset(0)$0" -> "train_host(0)$1"	[label=create_dataset];
 	"train_dataset(0)$0" -> "batch_size(0)$0"	[label=create_dataset];
 	"train_dataset(0)$0" -> "train_idx(0)"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "np(0)$0"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "df_train(0)$0"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "output_categories(0)$0"	[label=create_dataset];
-	"valid_dataset(0)$0" -> "train_category(0)$1"	[label=create_dataset];
-	"valid_dataset(0)$0" -> "train_host(0)$1"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "train_t(0)$0"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "train_q(0)$0"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "train_a(0)$0"	[label=create_dataset];
+	"valid_dataset(0)$0" -> "train_category(0)$1"	[label=create_dataset];
+	"valid_dataset(0)$0" -> "train_host(0)$1"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "batch_size(0)$0"	[label=create_dataset];
 	"valid_dataset(0)$0" -> "valid_idx(0)"	[label=create_dataset];
-	"test_dataset(0)$0" -> "test_category(0)$1"	[label=create_dataset];
-	"test_dataset(0)$0" -> "test_host(0)$1"	[label=create_dataset];
 	"test_dataset(0)$0" -> "test_t(0)$0"	[label=create_dataset];
 	"test_dataset(0)$0" -> "test_q(0)$0"	[label=create_dataset];
 	"test_dataset(0)$0" -> "test_a(0)$0"	[label=create_dataset];
+	"test_dataset(0)$0" -> "test_category(0)$1"	[label=create_dataset];
+	"test_dataset(0)$0" -> "test_host(0)$1"	[label=create_dataset];
 	"test_dataset(0)$0" -> "batch_size(0)$0"	[label=create_dataset];
 	"test_dataset(0)$0" -> "None(0)"	[label=create_dataset];
 	"valid_preds(0)$0" -> "num_epochs(0)$0"	[label=train_and_predict];
@@ -597,20 +600,20 @@ object at 0x1305429d0>](0)"	[label=assignedFrom];
 	"valid_fold_scores(0)$1" -> "valid_fold_scores(0)$0"	[label=append];
 	"valid_fold_scores(0)$1" -> "valid_scores(0)$0"	[label=append];
 	"fig(0)$0" -> "plt(0)"	[label=subplots];
-	"fig(0)$0" -> "1(0)"	[label=subplots];
 	"fig(0)$0" -> "5(0)"	[label=subplots];
 	"fig(0)$0" -> "num_folds(0)$0"	[label=subplots];
+	"fig(0)$0" -> "1(0)"	[label=subplots];
 	"axes(0)$0" -> "plt(0)"	[label=subplots];
-	"axes(0)$0" -> "1(0)"	[label=subplots];
 	"axes(0)$0" -> "5(0)"	[label=subplots];
 	"axes(0)$0" -> "num_folds(0)$0"	[label=subplots];
+	"axes(0)$0" -> "1(0)"	[label=subplots];
 	"i(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"i(0)" -> "1(0)"	[label=iteratorOf];
 	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"i(0)" -> "1(0)"	[label=iteratorOf];
 	"i(0)" -> "axes(0)$0"	[label=iteratorOf];
 	"ax(0)" -> "use-classifier-with-tf2-0-gradient-tape.ipynb"	[label=appearsIn];
-	"ax(0)" -> "1(0)"	[label=iteratorOf];
 	"ax(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"ax(0)" -> "1(0)"	[label=iteratorOf];
 	"ax(0)" -> "axes(0)$0"	[label=iteratorOf];
 	"ax(0)$0" -> "np(0)$0"	[label=plot];
 	"ax(0)$0" -> "1(0)"	[label=plot];

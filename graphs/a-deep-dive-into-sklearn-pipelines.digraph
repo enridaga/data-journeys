@@ -68,14 +68,14 @@ strict digraph "" {
 	"c(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"features(0)$0" -> "df(0)$5"	[label=assignedFrom];
 	"features(0)$0" -> "c(0)"	[label=assignedFrom];
-	"features(0)$0" -> "[<_ast.Constant object at 0x12f8f5550>, <_ast.Constant object at 0x12f8f56a0>, <_ast.Constant object at 0x12f8f56d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f5550>, <_ast.Constant object at 0x12f8f56a0>, <_ast.Constant object at 0x12f8f56d0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"features(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab580>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant object at 0x7fd4902ab580>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"numeric_features(0)$0" -> "df(0)$5"	[label=assignedFrom];
 	"numeric_features(0)$0" -> "c(0)"	[label=assignedFrom];
-	"numeric_features(0)$0" -> "[<_ast.Constant object at 0x12f8f5d90>, <_ast.Constant object at 0x12f8f5250>, <_ast.Constant object at 0x12f8f5ee0>, <_ast.Constant \
-object at 0x12f8f59d0>](0)"	[label=assignedFrom];
-	"[<_ast.Constant object at 0x12f8f5d90>, <_ast.Constant object at 0x12f8f5250>, <_ast.Constant object at 0x12f8f5ee0>, <_ast.Constant \
-object at 0x12f8f59d0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"numeric_features(0)$0" -> "[<_ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902abdc0>, <_\
+ast.Constant object at 0x7fd4902abe80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at 0x7fd4902abdc0>, <_\
+ast.Constant object at 0x7fd4902abe80>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"author(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"target(0)$0" -> "author(0)"	[label=assignedFrom];
 	"X_train(0)$0" -> "df(0)$5"	[label=train_test_split];
@@ -134,43 +134,43 @@ object at 0x12f8f59d0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label
 	TfidfVectorizer -> "sklearn.feature_extraction.text"	[label=importedBy];
 	"TfidfVectorizer(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"TfidfVectorizer(0)" -> TfidfVectorizer	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12fadee80>, <_ast.Tuple object at 0x12fade790>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"text(0)$0" -> "[<_ast.Tuple object at 0x12fadee80>, <_ast.Tuple object at 0x12fade790>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd4902b9df0>, <_ast.Tuple object at 0x7fd4902b97c0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"text(0)$0" -> "[<_ast.Tuple object at 0x7fd4902b9df0>, <_ast.Tuple object at 0x7fd4902b97c0>](0)"	[label=Pipeline];
 	"text(0)$1" -> "X_train(0)$1"	[label=fit_transform];
 	"text(0)$1" -> "text(0)$0"	[label=fit_transform];
 	"sklearn.preprocessing" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=importedBy];
 	StandardScaler -> "sklearn.preprocessing"	[label=importedBy];
 	"StandardScaler(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"StandardScaler(0)" -> StandardScaler	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12fade250>, <_ast.Tuple object at 0x12faded30>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"length(0)$0" -> "[<_ast.Tuple object at 0x12fade250>, <_ast.Tuple object at 0x12faded30>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd4902b9130>, <_ast.Tuple object at 0x7fd4902b9d90>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"length(0)$0" -> "[<_ast.Tuple object at 0x7fd4902b9130>, <_ast.Tuple object at 0x7fd4902b9d90>](0)"	[label=Pipeline];
 	"length(0)$1" -> "X_train(0)$1"	[label=fit_transform];
 	"length(0)$1" -> "length(0)$0"	[label=fit_transform];
-	"[<_ast.Tuple object at 0x12fadea30>, <_ast.Tuple object at 0x12f9574c0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"words(0)$0" -> "[<_ast.Tuple object at 0x12fadea30>, <_ast.Tuple object at 0x12f9574c0>](0)"	[label=Pipeline];
-	"[<_ast.Tuple object at 0x12f957310>, <_ast.Tuple object at 0x12f957250>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"words_not_stopword(0)$0" -> "[<_ast.Tuple object at 0x12f957310>, <_ast.Tuple object at 0x12f957250>](0)"	[label=Pipeline];
-	"[<_ast.Tuple object at 0x12f957e20>, <_ast.Tuple object at 0x12f957a90>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"avg_word_length(0)$0" -> "[<_ast.Tuple object at 0x12f957e20>, <_ast.Tuple object at 0x12f957a90>](0)"	[label=Pipeline];
-	"[<_ast.Tuple object at 0x12f9575e0>, <_ast.Tuple object at 0x12f957880>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"commas(0)$0" -> "[<_ast.Tuple object at 0x12f9575e0>, <_ast.Tuple object at 0x12f957880>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd4902b9fd0>, <_ast.Tuple object at 0x7fd4902b9d00>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"words(0)$0" -> "[<_ast.Tuple object at 0x7fd4902b9fd0>, <_ast.Tuple object at 0x7fd4902b9d00>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd4902b92e0>, <_ast.Tuple object at 0x7fd500872040>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"words_not_stopword(0)$0" -> "[<_ast.Tuple object at 0x7fd4902b92e0>, <_ast.Tuple object at 0x7fd500872040>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd500999910>, <_ast.Tuple object at 0x7fd500999310>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"avg_word_length(0)$0" -> "[<_ast.Tuple object at 0x7fd500999910>, <_ast.Tuple object at 0x7fd500999310>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd500999400>, <_ast.Tuple object at 0x7fd500999bb0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"commas(0)$0" -> "[<_ast.Tuple object at 0x7fd500999400>, <_ast.Tuple object at 0x7fd500999bb0>](0)"	[label=Pipeline];
 	FeatureUnion -> "sklearn.pipeline"	[label=importedBy];
 	"FeatureUnion(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"FeatureUnion(0)" -> FeatureUnion	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x12f957f40>, <_ast.Tuple object at 0x12f9572b0>, <_ast.Tuple object at 0x12f957eb0>, <_ast.Tuple object \
-at 0x12f957340>, <_ast.Tuple object at 0x12f957c40>, <_ast.Tuple object at 0x12f957760>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"feats(0)$0" -> "[<_ast.Tuple object at 0x12f957f40>, <_ast.Tuple object at 0x12f9572b0>, <_ast.Tuple object at 0x12f957eb0>, <_ast.Tuple object \
-at 0x12f957340>, <_ast.Tuple object at 0x12f957c40>, <_ast.Tuple object at 0x12f957760>](0)"	[label=FeatureUnion];
-	"[<_ast.Tuple object at 0x130532dc0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"feature_processing(0)$0" -> "[<_ast.Tuple object at 0x130532dc0>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd500999e80>, <_ast.Tuple object at 0x7fd500999100>, <_ast.Tuple object at 0x7fd500999a90>, <_ast.Tuple \
+object at 0x7fd500999700>, <_ast.Tuple object at 0x7fd500999070>, <_ast.Tuple object at 0x7fd500999550>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"feats(0)$0" -> "[<_ast.Tuple object at 0x7fd500999e80>, <_ast.Tuple object at 0x7fd500999100>, <_ast.Tuple object at 0x7fd500999a90>, <_ast.Tuple \
+object at 0x7fd500999700>, <_ast.Tuple object at 0x7fd500999070>, <_ast.Tuple object at 0x7fd500999550>](0)"	[label=FeatureUnion];
+	"[<_ast.Tuple object at 0x7fd500999430>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"feature_processing(0)$0" -> "[<_ast.Tuple object at 0x7fd500999430>](0)"	[label=Pipeline];
 	"feature_processing(0)$1" -> "X_train(0)$1"	[label=fit_transform];
 	"feature_processing(0)$1" -> "feature_processing(0)$0"	[label=fit_transform];
 	"sklearn.ensemble" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=importedBy];
 	RandomForestClassifier -> "sklearn.ensemble"	[label=importedBy];
 	"RandomForestClassifier(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"RandomForestClassifier(0)" -> RandomForestClassifier	[label=assignedFrom];
-	"[<_ast.Tuple object at 0x130532b50>, <_ast.Tuple object at 0x130532400>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"pipeline(0)$0" -> "[<_ast.Tuple object at 0x130532b50>, <_ast.Tuple object at 0x130532400>](0)"	[label=Pipeline];
+	"[<_ast.Tuple object at 0x7fd500999d00>, <_ast.Tuple object at 0x7fd4c04cc5b0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"pipeline(0)$0" -> "[<_ast.Tuple object at 0x7fd500999d00>, <_ast.Tuple object at 0x7fd4c04cc5b0>](0)"	[label=Pipeline];
 	"pipeline(0)$1" -> "y_train(0)$0"	[label=fit];
 	"pipeline(0)$1" -> "X_train(0)$1"	[label=fit];
 	"pipeline(0)$1" -> "pipeline(0)$0"	[label=fit];
@@ -188,17 +188,17 @@ at 0x12f957340>, <_ast.Tuple object at 0x12f957c40>, <_ast.Tuple object at 0x12f
 	"hyperparameters(0)$0" -> "features__text__tfidf__ngram_range(0)"	[label=assignedFrom];
 	"hyperparameters(0)$0" -> "classifier__max_depth(0)"	[label=assignedFrom];
 	"hyperparameters(0)$0" -> "classifier__min_samples_leaf(0)"	[label=assignedFrom];
-	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x1305326d0>, <_ast.Constant object at 0x1305320d0>](0)"	[label=assignedFrom];
-	"hyperparameters(0)$0" -> "[<_ast.Tuple object at 0x130532520>, <_ast.Tuple object at 0x130532f40>](0)"	[label=assignedFrom];
-	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x12f8823d0>, <_ast.Constant object at 0x12f882760>](0)"	[label=assignedFrom];
-	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x12f882220>, <_ast.Constant object at 0x12f882160>](0)"	[label=assignedFrom];
+	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd4c04cc610>](0)"	[label=assignedFrom];
+	"hyperparameters(0)$0" -> "[<_ast.Tuple object at 0x7fd4c04ccc40>, <_ast.Tuple object at 0x7fd4c04cc7c0>](0)"	[label=assignedFrom];
+	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccd30>, <_ast.Constant object at 0x7fd4c04cc8b0>](0)"	[label=assignedFrom];
+	"hyperparameters(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc190>, <_ast.Constant object at 0x7fd4c04cc370>](0)"	[label=assignedFrom];
 	"features__text__tfidf__ngram_range(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"classifier__max_depth(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"classifier__min_samples_leaf(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x1305326d0>, <_ast.Constant object at 0x1305320d0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"[<_ast.Tuple object at 0x130532520>, <_ast.Tuple object at 0x130532f40>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f8823d0>, <_ast.Constant object at 0x12f882760>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
-	"[<_ast.Constant object at 0x12f882220>, <_ast.Constant object at 0x12f882160>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc9a0>, <_ast.Constant object at 0x7fd4c04cc610>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Tuple object at 0x7fd4c04ccc40>, <_ast.Tuple object at 0x7fd4c04cc7c0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccd30>, <_ast.Constant object at 0x7fd4c04cc8b0>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04cc190>, <_ast.Constant object at 0x7fd4c04cc370>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"clf(0)$0" -> "pipeline(0)$2"	[label=GridSearchCV];
 	"clf(0)$0" -> "hyperparameters(0)$0"	[label=GridSearchCV];
 	"clf(0)$0" -> "5(0)"	[label=GridSearchCV];
@@ -225,9 +225,9 @@ at 0x12f957340>, <_ast.Tuple object at 0x12f957c40>, <_ast.Tuple object at 0x12f
 	"preds(0)$2" -> "classifier(0)"	[label=DataFrame];
 	"classifier(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"result(0)$0" -> "pd(0)"	[label=concat];
-	"result(0)$0" -> "[<_ast.Subscript object at 0x12f88a820>, <_ast.Name object at 0x12f88a460>](0)"	[label=concat];
+	"result(0)$0" -> "[<_ast.Subscript object at 0x7fd50080d460>, <_ast.Name object at 0x7fd50080d730>](0)"	[label=concat];
 	"result(0)$0" -> "1(0)"	[label=concat];
-	"[<_ast.Subscript object at 0x12f88a820>, <_ast.Name object at 0x12f88a460>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
+	"[<_ast.Subscript object at 0x7fd50080d460>, <_ast.Name object at 0x7fd50080d730>](0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"1(0)" -> "a-deep-dive-into-sklearn-pipelines.ipynb"	[label=appearsIn];
 	"result(0)$1" -> "id(0)"	[label=set_index];
 	"result(0)$1" -> "result(0)$0"	[label=set_index];
