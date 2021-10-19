@@ -35,7 +35,7 @@ group by ?arc
 order by desc(?count)
 ```
 4) The Frequent Activity Table (FAT) annotated with activity types was produced with a Google Spreadsheet, accessible at this link: https://docs.google.com/spreadsheets/d/1zx_XK9VhEtgxFFXpFy9RYzX5MDxZxZZDnqxOqvkXoDQ/edit?usp=sharing
-5) Rules are generated with notebook [Process ARCS rules.ipynb](Process ARCS rules.ipynb). SPARQL Construct queries are reported in file `activity_rules.json`.
+5) Rules are generated with notebook [Process ARCS rules.ipynb](<Process ARCS rules.ipynb>). SPARQL Construct queries are reported in file `activity_rules.json`.
 6) The training dataset is then produced by querying the triple store for instances of the arcs reported in Table 2, using the following SPARQL query:
 
 ```
@@ -99,6 +99,7 @@ for i in {1..10}; do papermill MultiClassificationExperiments.ipynb "./experimen
 ```
 The script repeats the experiments with different parameters: 10 to 200 randomly choosen notebooks, embedding method `rdf2vec` or `bertcode` and test regime `1` or `2`.
 
+Results are saved to file [MultiClassificationExperiments.csv](MultiClassificationExperiments).
 ### Knowledge compression
 This phase is performed in notebook [DataJourneyGenerator.ipynb](DataJourneyGenerator.ipynb). This notebook was executed on each of the input notebook. Output is in folder `datajourneys/`. Example follows.
 ### Guide example
