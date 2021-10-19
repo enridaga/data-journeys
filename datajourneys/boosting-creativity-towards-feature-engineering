@@ -1,0 +1,969 @@
+digraph "" {
+	numpy -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	pandas -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"pd(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	lightgbm -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"lgb(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"lgb(0)" -> lightgbm	[label=assignedFrom];
+	"sklearn.preprocessing" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	MinMaxScaler -> "sklearn.preprocessing"	[label=importedBy];
+	"MinMaxScaler(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"MinMaxScaler(0)" -> MinMaxScaler	[label=assignedFrom];
+	"sklearn.metrics" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	roc_auc_score -> "sklearn.metrics"	[label=importedBy];
+	"roc_auc_score(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"roc_auc_score(0)" -> roc_auc_score	[label=assignedFrom];
+	"sklearn.model_selection" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	StratifiedKFold -> "sklearn.model_selection"	[label=importedBy];
+	"StratifiedKFold(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"StratifiedKFold(0)" -> StratifiedKFold	[label=assignedFrom];
+	os -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"os(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	sys -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"sys(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sys(0)" -> sys	[label=assignedFrom];
+	"matplotlib.pyplot" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"plt(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	seaborn -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	"sns(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"scipy.stats" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	norm -> "scipy.stats"	[label=importedBy];
+	"norm(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"norm(0)" -> norm	[label=assignedFrom];
+	skewnorm -> "scipy.stats"	[label=importedBy];
+	"skewnorm(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"skewnorm(0)" -> skewnorm	[label=assignedFrom];
+	collections -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	defaultdict -> collections	[label=importedBy];
+	"defaultdict(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"defaultdict(0)" -> defaultdict	[label=assignedFrom];
+	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"train_df(0)$1" -> "train_df(0)$0"	[label=head];
+	"x(1)" -> "running_mean[0]"	[label=_argToVar];
+	"N(1)" -> "running_mean[1]"	[label=_argToVar];
+	"cumsum(1)$0" -> "x(1)"	[label=cumsum];
+	"cumsum(1)$0" -> "np(1)"	[label=cumsum];
+	"cumsum(1)$0" -> "0(1)"	[label=cumsum];
+	"var_0(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"var(0)$0" -> "var_0(0)"	[label=assignedFrom];
+	"mydf(0)$0" -> "train_df(0)$1"	[label=copy];
+	"var(2)" -> "df_to_bin[0]"	[label=_argToVar];
+	"mydf(2)" -> "df_to_bin[1]"	[label=_argToVar];
+	"IQR(2)$0" -> "var(2)"	[label=Sub];
+	"IQR(2)$0" -> "mydf(2)"	[label=Sub];
+	"IQR(2)$0" -> "[<_ast.Constant object at 0x7fd4902ab070>](2)"	[label=Sub];
+	"IQR(2)$0" -> "[<_ast.Constant object at 0x7fd4902ab760>](2)"	[label=Sub];
+	"n(2)$0" -> "200000(2)"	[label=assignedFrom];
+	"bin_size(2)$0" -> "IQR(2)$0"	[label=Div];
+	"bin_size(2)$0" -> "n(2)$0"	[label=Div];
+	"bin_size(2)$0" -> "2.5(2)"	[label=Div];
+	"bin_size(2)$0" -> "1(2)"	[label=Div];
+	"bin_size(2)$0" -> "3(2)"	[label=Div];
+	"bin_number(2)$0" -> "var(2)"	[label=int];
+	"bin_number(2)$0" -> "mydf(2)"	[label=int];
+	"bin_number(2)$0" -> "bin_size(2)$0"	[label=int];
+	"mydf(2)$0" -> "var(2)"	[label=astype];
+	"mydf(2)$0" -> "mydf(2)"	[label=astype];
+	"mydf(2)$0" -> "bin_number(2)$0"	[label=astype];
+	"mydf(2)$0" -> "mydf(2)$0"	[label=astype];
+	"mydf(2)$0" -> "pd(2)"	[label=astype];
+	"mydf(2)$0" -> "range(2)"	[label=astype];
+	"mydf(2)$0" -> "float(2)"	[label=astype];
+	"df_no_transfer(2)$0" -> "var(2)"	[label=sort_index];
+	"df_no_transfer(2)$0" -> "mydf(2)$0"	[label=sort_index];
+	"df_no_transfer(2)$0" -> "new(2)"	[label=sort_index];
+	"df_no_transfer(2)$0" -> "target(2)"	[label=sort_index];
+	"df_no_transfer(2)$0" -> "0(2)"	[label=sort_index];
+	"H0(2)$0" -> "df_no_transfer(2)$0"	[label=assignedFrom];
+	"H0(2)$0" -> "list(2)"	[label=assignedFrom];
+	"X0(2)$0" -> "df_no_transfer(2)$0"	[label=assignedFrom];
+	"X0(2)$0" -> "list(2)"	[label=assignedFrom];
+	"df_with_transfer(2)$0" -> "var(2)"	[label=sort_index];
+	"df_with_transfer(2)$0" -> "1(2)"	[label=sort_index];
+	"df_with_transfer(2)$0" -> "mydf(2)$0"	[label=sort_index];
+	"df_with_transfer(2)$0" -> "new(2)"	[label=sort_index];
+	"df_with_transfer(2)$0" -> "target(2)"	[label=sort_index];
+	"H1(2)$0" -> "list(2)"	[label=assignedFrom];
+	"H1(2)$0" -> "df_with_transfer(2)$0"	[label=assignedFrom];
+	"X1(2)$0" -> "list(2)"	[label=assignedFrom];
+	"X1(2)$0" -> "df_with_transfer(2)$0"	[label=assignedFrom];
+	"i(2)" -> "bin_number(2)$0"	[label=iteratorOf];
+	"i(2)" -> "range(2)"	[label=iteratorOf];
+	"H0(2)$1" -> "0(2)"	[label=append];
+	"H0(2)$1" -> "H0(2)$0"	[label=append];
+	"X0(2)$1" -> "X0(2)$0"	[label=append];
+	"X0(2)$1" -> "i(2)"	[label=append];
+	"H1(2)$1" -> "0(2)"	[label=append];
+	"H1(2)$1" -> "H1(2)$0"	[label=append];
+	"X1(2)$1" -> "X1(2)$0"	[label=append];
+	"X1(2)$1" -> "i(2)"	[label=append];
+	"H0(2)$2" -> "X0(2)$1"	[label=assignedFrom];
+	"H0(2)$2" -> "H0(2)$2"	[label=assignedFrom];
+	"H0(2)$2" -> "h(2)"	[label=assignedFrom];
+	"H0(2)$2" -> "_(2)"	[label=assignedFrom];
+	"H0(2)$2" -> "sorted(2)"	[label=assignedFrom];
+	"H0(2)$2" -> "zip(2)"	[label=assignedFrom];
+	"X0(2)$2" -> "H0(2)$2"	[label=assignedFrom];
+	"X0(2)$2" -> "_(2)"	[label=assignedFrom];
+	"X0(2)$2" -> "sorted(2)"	[label=assignedFrom];
+	"X0(2)$2" -> "zip(2)"	[label=assignedFrom];
+	"X0(2)$2" -> "X0(2)$2"	[label=assignedFrom];
+	"X0(2)$2" -> "x(2)"	[label=assignedFrom];
+	"H1(2)$2" -> "X1(2)$1"	[label=assignedFrom];
+	"H1(2)$2" -> "h(2)"	[label=assignedFrom];
+	"H1(2)$2" -> "_(2)"	[label=assignedFrom];
+	"H1(2)$2" -> "sorted(2)"	[label=assignedFrom];
+	"H1(2)$2" -> "zip(2)"	[label=assignedFrom];
+	"H1(2)$2" -> "H1(2)$2"	[label=assignedFrom];
+	"X1(2)$2" -> "_(2)"	[label=assignedFrom];
+	"X1(2)$2" -> "sorted(2)"	[label=assignedFrom];
+	"X1(2)$2" -> "zip(2)"	[label=assignedFrom];
+	"X1(2)$2" -> "x(2)"	[label=assignedFrom];
+	"X1(2)$2" -> "H1(2)$2"	[label=assignedFrom];
+	"X1(2)$2" -> "X1(2)$2"	[label=assignedFrom];
+	"H0(2)$3" -> "H0(2)$2"	[label=running_mean];
+	"H0(2)$3" -> "2(2)"	[label=running_mean];
+	"H1(2)$3" -> "H1(2)$2"	[label=running_mean];
+	"H1(2)$3" -> "2(2)"	[label=running_mean];
+	"Hsum(2)$0" -> "H0(2)$3"	[label=Add];
+	"Hsum(2)$0" -> "H1(2)$3"	[label=Add];
+	"var(0)$1" -> "var_0(0)"	[label=assignedFrom];
+	"var(0)$1" -> "regular_features(0)$0"	[label=iteratorOf];
+	"var(0)$1" -> "3(0)"	[label=iteratorOf];
+	"var(0)$1" -> "reversed_features(0)$0"	[label=iteratorOf];
+	"var(0)$1" -> "flat_features(0)$0"	[label=iteratorOf];
+	"var(0)$1" -> "extreme_features(0)$0"	[label=iteratorOf];
+	"var(0)$1" -> "[<_ast.Constant object at 0x7fd5009ccee0>, <_ast.Constant object at 0x7fd5009ccf10>, <_ast.Constant object at 0x7fd5009ccf40>](0)"	[label=iteratorOf];
+	"regular_features(0)$0" -> "[<_ast.Constant object at 0x7fd50083b460>, <_ast.Constant object at 0x7fd50083ba90>, <_ast.Constant object at 0x7fd50083bac0>, <_\
+ast.Constant object at 0x7fd50083baf0>, <_ast.Constant object at 0x7fd50083bb20>, <_ast.Constant object at 0x7fd50083bb50>, <_ast.Constant \
+object at 0x7fd50083bb80>, <_ast.Constant object at 0x7fd50083bbb0>, <_ast.Constant object at 0x7fd50083bbe0>, <_ast.Constant object \
+at 0x7fd50083bc10>, <_ast.Constant object at 0x7fd50083bc40>, <_ast.Constant object at 0x7fd50083bc70>, <_ast.Constant object at \
+0x7fd50083bca0>, <_ast.Constant object at 0x7fd50083bcd0>, <_ast.Constant object at 0x7fd50083bd00>, <_ast.Constant object at 0x7fd50083b130>, <_\
+ast.Constant object at 0x7fd50083bd60>, <_ast.Constant object at 0x7fd50083bd90>, <_ast.Constant object at 0x7fd50083bdc0>, <_ast.Constant \
+object at 0x7fd50083bdf0>, <_ast.Constant object at 0x7fd50083be20>, <_ast.Constant object at 0x7fd50083be50>, <_ast.Constant object \
+at 0x7fd50083be80>, <_ast.Constant object at 0x7fd50083beb0>, <_ast.Constant object at 0x7fd50083bee0>, <_ast.Constant object at \
+0x7fd50083bf10>, <_ast.Constant object at 0x7fd50083bf40>, <_ast.Constant object at 0x7fd50083bf70>, <_ast.Constant object at 0x7fd50083bfa0>, <_\
+ast.Constant object at 0x7fd50083bfd0>, <_ast.Constant object at 0x7fd50083bd30>, <_ast.Constant object at 0x7fd500852040>, <_ast.Constant \
+object at 0x7fd500852070>, <_ast.Constant object at 0x7fd5008520a0>, <_ast.Constant object at 0x7fd5008520d0>, <_ast.Constant object \
+at 0x7fd500852100>, <_ast.Constant object at 0x7fd500852130>, <_ast.Constant object at 0x7fd500852160>, <_ast.Constant object at \
+0x7fd500852190>, <_ast.Constant object at 0x7fd5008521c0>, <_ast.Constant object at 0x7fd5008521f0>, <_ast.Constant object at 0x7fd500852220>, <_\
+ast.Constant object at 0x7fd500852250>, <_ast.Constant object at 0x7fd500852280>, <_ast.Constant object at 0x7fd5008522b0>, <_ast.Constant \
+object at 0x7fd5008522e0>, <_ast.Constant object at 0x7fd500852310>, <_ast.Constant object at 0x7fd500852340>, <_ast.Constant object \
+at 0x7fd500852370>, <_ast.Constant object at 0x7fd5008523a0>, <_ast.Constant object at 0x7fd5008523d0>, <_ast.Constant object at \
+0x7fd500852400>, <_ast.Constant object at 0x7fd500852430>, <_ast.Constant object at 0x7fd500852460>, <_ast.Constant object at 0x7fd500852490>, <_\
+ast.Constant object at 0x7fd5008524c0>, <_ast.Constant object at 0x7fd5008524f0>, <_ast.Constant object at 0x7fd500852520>, <_ast.Constant \
+object at 0x7fd500852550>, <_ast.Constant object at 0x7fd500852580>, <_ast.Constant object at 0x7fd5008525b0>, <_ast.Constant object \
+at 0x7fd5008525e0>, <_ast.Constant object at 0x7fd500852610>, <_ast.Constant object at 0x7fd500852640>, <_ast.Constant object at \
+0x7fd500852670>, <_ast.Constant object at 0x7fd5008526a0>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852700>, <_\
+ast.Constant object at 0x7fd500852730>, <_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant \
+object at 0x7fd5008527c0>, <_ast.Constant object at 0x7fd5008527f0>, <_ast.Constant object at 0x7fd500852820>, <_ast.Constant object \
+at 0x7fd500852850>, <_ast.Constant object at 0x7fd500852880>, <_ast.Constant object at 0x7fd5008528b0>, <_ast.Constant object at \
+0x7fd5008528e0>, <_ast.Constant object at 0x7fd500852910>, <_ast.Constant object at 0x7fd500852940>, <_ast.Constant object at 0x7fd500852970>, <_\
+ast.Constant object at 0x7fd5008529a0>, <_ast.Constant object at 0x7fd5008529d0>, <_ast.Constant object at 0x7fd500852a00>, <_ast.Constant \
+object at 0x7fd500852a30>, <_ast.Constant object at 0x7fd500852a60>, <_ast.Constant object at 0x7fd500852a90>, <_ast.Constant object \
+at 0x7fd500852ac0>, <_ast.Constant object at 0x7fd500852af0>, <_ast.Constant object at 0x7fd500852b20>, <_ast.Constant object at \
+0x7fd500852b50>, <_ast.Constant object at 0x7fd500852b80>, <_ast.Constant object at 0x7fd500852bb0>, <_ast.Constant object at 0x7fd500852be0>, <_\
+ast.Constant object at 0x7fd500852c10>, <_ast.Constant object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd500852c70>, <_ast.Constant \
+object at 0x7fd500852ca0>, <_ast.Constant object at 0x7fd500852cd0>, <_ast.Constant object at 0x7fd500852d00>, <_ast.Constant object \
+at 0x7fd500852d30>, <_ast.Constant object at 0x7fd500852d60>, <_ast.Constant object at 0x7fd500852d90>, <_ast.Constant object at \
+0x7fd500852dc0>, <_ast.Constant object at 0x7fd500852df0>, <_ast.Constant object at 0x7fd500852e20>, <_ast.Constant object at 0x7fd500852e50>, <_\
+ast.Constant object at 0x7fd500852e80>, <_ast.Constant object at 0x7fd500852eb0>, <_ast.Constant object at 0x7fd500852ee0>, <_ast.Constant \
+object at 0x7fd500852f10>, <_ast.Constant object at 0x7fd500852f40>, <_ast.Constant object at 0x7fd500852f70>, <_ast.Constant object \
+at 0x7fd500852fa0>, <_ast.Constant object at 0x7fd500852fd0>, <_ast.Constant object at 0x7fd500869040>, <_ast.Constant object at \
+0x7fd500869070>, <_ast.Constant object at 0x7fd5008690a0>, <_ast.Constant object at 0x7fd5008690d0>, <_ast.Constant object at 0x7fd500869100>, <_\
+ast.Constant object at 0x7fd500869130>, <_ast.Constant object at 0x7fd500869160>, <_ast.Constant object at 0x7fd500869190>, <_ast.Constant \
+object at 0x7fd5008691c0>, <_ast.Constant object at 0x7fd5008691f0>, <_ast.Constant object at 0x7fd500869220>, <_ast.Constant object \
+at 0x7fd500869250>, <_ast.Constant object at 0x7fd500869280>, <_ast.Constant object at 0x7fd5008692b0>, <_ast.Constant object at \
+0x7fd5008692e0>, <_ast.Constant object at 0x7fd500869310>, <_ast.Constant object at 0x7fd500869340>, <_ast.Constant object at 0x7fd500869370>, <_\
+ast.Constant object at 0x7fd5008693a0>, <_ast.Constant object at 0x7fd5008693d0>, <_ast.Constant object at 0x7fd500869400>, <_ast.Constant \
+object at 0x7fd500869430>, <_ast.Constant object at 0x7fd500869460>, <_ast.Constant object at 0x7fd500869490>, <_ast.Constant object \
+at 0x7fd5008694c0>, <_ast.Constant object at 0x7fd5008694f0>, <_ast.Constant object at 0x7fd500869520>, <_ast.Constant object at \
+0x7fd500869550>, <_ast.Constant object at 0x7fd500869580>, <_ast.Constant object at 0x7fd5008695b0>, <_ast.Constant object at 0x7fd5008695e0>, <_\
+ast.Constant object at 0x7fd500869610>, <_ast.Constant object at 0x7fd500869640>, <_ast.Constant object at 0x7fd500869670>](0)"	[label=assignedFrom];
+	"3(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"reversed_features(0)$0" -> "[<_ast.Constant object at 0x7fd500869a30>, <_ast.Constant object at 0x7fd500869a60>, <_ast.Constant object at 0x7fd500869a90>, <_\
+ast.Constant object at 0x7fd500869ac0>, <_ast.Constant object at 0x7fd500869af0>, <_ast.Constant object at 0x7fd500869b20>, <_ast.Constant \
+object at 0x7fd500869b50>, <_ast.Constant object at 0x7fd500869b80>, <_ast.Constant object at 0x7fd500869bb0>, <_ast.Constant object \
+at 0x7fd500869be0>, <_ast.Constant object at 0x7fd500869c10>, <_ast.Constant object at 0x7fd500869c40>, <_ast.Constant object at \
+0x7fd500869c70>, <_ast.Constant object at 0x7fd500869ca0>, <_ast.Constant object at 0x7fd500869cd0>, <_ast.Constant object at 0x7fd500869d00>, <_\
+ast.Constant object at 0x7fd500869d30>, <_ast.Constant object at 0x7fd500869d60>, <_ast.Constant object at 0x7fd500869d90>, <_ast.Constant \
+object at 0x7fd500869dc0>, <_ast.Constant object at 0x7fd500869df0>, <_ast.Constant object at 0x7fd500869e20>, <_ast.Constant object \
+at 0x7fd500869e50>, <_ast.Constant object at 0x7fd500869e80>, <_ast.Constant object at 0x7fd500869eb0>, <_ast.Constant object at \
+0x7fd500869ee0>, <_ast.Constant object at 0x7fd500869f10>](0)"	[label=assignedFrom];
+	"flat_features(0)$0" -> "[<_ast.Constant object at 0x7fd5009cc310>, <_ast.Constant object at 0x7fd5009cc340>, <_ast.Constant object at 0x7fd5009cc3a0>, <_\
+ast.Constant object at 0x7fd5009cc3d0>, <_ast.Constant object at 0x7fd5009cc430>, <_ast.Constant object at 0x7fd5009cc400>, <_ast.Constant \
+object at 0x7fd5009cc460>, <_ast.Constant object at 0x7fd5009cc490>, <_ast.Constant object at 0x7fd5009cc4c0>, <_ast.Constant object \
+at 0x7fd5009cc4f0>, <_ast.Constant object at 0x7fd5009cc520>, <_ast.Constant object at 0x7fd5009cc550>, <_ast.Constant object at \
+0x7fd5009cc580>, <_ast.Constant object at 0x7fd5009cc5b0>, <_ast.Constant object at 0x7fd5009cc5e0>, <_ast.Constant object at 0x7fd5009cc610>, <_\
+ast.Constant object at 0x7fd5009cc640>, <_ast.Constant object at 0x7fd5009cc670>, <_ast.Constant object at 0x7fd5009cc6a0>, <_ast.Constant \
+object at 0x7fd5009cc6d0>](0)"	[label=assignedFrom];
+	"extreme_features(0)$0" -> "[<_ast.Constant object at 0x7fd5009cca60>, <_ast.Constant object at 0x7fd5009cca90>, <_ast.Constant object at 0x7fd5009ccac0>, <_\
+ast.Constant object at 0x7fd5009ccb20>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5009ccee0>, <_ast.Constant object at 0x7fd5009ccf10>, <_ast.Constant object at 0x7fd5009ccf40>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"bin_size(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"bin_size(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"bin_number(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"bin_number(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"mydf(0)$1" -> "train_df(0)$1"	[label=df_to_bin];
+	"mydf(0)$1" -> "var(0)$1"	[label=df_to_bin];
+	"H0(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"H0(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"H1(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"H1(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"Hsum(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"Hsum(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"X0(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"X0(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"X1(0)$0" -> "train_df(0)$1"	[label=df_to_bin];
+	"X1(0)$0" -> "var(0)$1"	[label=df_to_bin];
+	"fig(0)$0" -> "plt(0)"	[label=subplots];
+	"ax1(0)$0" -> "plt(0)"	[label=subplots];
+	"ax1(0)$1" -> "H0(0)$0"	[label=plot];
+	"ax1(0)$1" -> "ax1(0)$0"	[label=plot];
+	"ax1(0)$2" -> "H1(0)$0"	[label=plot];
+	"ax1(0)$2" -> "ax1(0)$1"	[label=plot];
+	"ax1(0)$3" -> "Hsum(0)$0"	[label=plot];
+	"ax1(0)$3" -> "ax1(0)$2"	[label=plot];
+	"plt(0)$0" -> "plt(0)"	[label=legend];
+	"fig(0)$1" -> "var(0)$1"	[label=suptitle];
+	"fig(0)$1" -> "fig(0)$0"	[label=suptitle];
+	"ax1(0)$4" -> "ax1(0)$3"	[label=set_ylabel];
+	"ax1(0)$4" -> "Frequency(0)"	[label=set_ylabel];
+	"Frequency(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax1(0)$5" -> "ax1(0)$4"	[label=tick_params];
+	"plt(0)$1" -> "plt(0)$0"	[label=xlabel];
+	"plt(0)$1" -> "Bin Number(0)"	[label=xlabel];
+	"Bin Number(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plt(0)$2" -> "plt(0)$1"	[label=show];
+	"80(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"Hmin(0)$0" -> "80(0)"	[label=assignedFrom];
+	"bin_number(3)" -> "get_probs[0]"	[label=_argToVar];
+	"H1(3)" -> "get_probs[1]"	[label=_argToVar];
+	"Hsum(3)" -> "get_probs[2]"	[label=_argToVar];
+	"Hmin(3)" -> "get_probs[3]"	[label=_argToVar];
+	"probs(3)$0" -> "[](3)"	[label=assignedFrom];
+	"i(3)" -> "bin_number(3)"	[label=iteratorOf];
+	"i(3)" -> "range(3)"	[label=iteratorOf];
+	"i(3)" -> "reversed(3)"	[label=iteratorOf];
+	"i(3)" -> "0(3)"	[label=iteratorOf];
+	"min_i(3)$0" -> "i(3)"	[label=assignedFrom];
+	"max_i(3)$0" -> "i(3)"	[label=assignedFrom];
+	"probs(3)$1" -> "probs(3)$0"	[label=append];
+	"probs(3)$1" -> "0(3)"	[label=append];
+	"probs(3)$2" -> "H1(3)"	[label=append];
+	"probs(3)$2" -> "Hsum(3)"	[label=append];
+	"probs(3)$2" -> "i(3)"	[label=append];
+	"probs(3)$2" -> "probs(3)$1"	[label=append];
+	"probs(0)$0" -> "bin_number(0)$0"	[label=get_probs];
+	"probs(0)$0" -> "H1(0)$0"	[label=get_probs];
+	"probs(0)$0" -> "Hsum(0)$0"	[label=get_probs];
+	"probs(0)$0" -> "Hmin(0)$0"	[label=get_probs];
+	"min_i(0)$0" -> "bin_number(0)$0"	[label=get_probs];
+	"min_i(0)$0" -> "H1(0)$0"	[label=get_probs];
+	"min_i(0)$0" -> "Hsum(0)$0"	[label=get_probs];
+	"min_i(0)$0" -> "Hmin(0)$0"	[label=get_probs];
+	"max_i(0)$0" -> "bin_number(0)$0"	[label=get_probs];
+	"max_i(0)$0" -> "H1(0)$0"	[label=get_probs];
+	"max_i(0)$0" -> "Hsum(0)$0"	[label=get_probs];
+	"max_i(0)$0" -> "Hmin(0)$0"	[label=get_probs];
+	"fig(0)$2" -> "plt(0)$2"	[label=subplots];
+	"ax1(0)$6" -> "plt(0)$2"	[label=subplots];
+	"ax2(0)$0" -> "ax1(0)$6"	[label=twinx];
+	"ax1(0)$7" -> "H0(0)$0"	[label=plot];
+	"ax1(0)$7" -> "ax1(0)$6"	[label=plot];
+	"ax1(0)$8" -> "H1(0)$0"	[label=plot];
+	"ax1(0)$8" -> "ax1(0)$7"	[label=plot];
+	"ax1(0)$9" -> "Hsum(0)$0"	[label=plot];
+	"ax1(0)$9" -> "ax1(0)$8"	[label=plot];
+	"ax2(0)$1" -> "probs(0)$0"	[label=plot];
+	"ax2(0)$1" -> "ax2(0)$0"	[label=plot];
+	"ax2(0)$1" -> "r(0)"	[label=plot];
+	"r(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax1(0)$10" -> "ax1(0)$9"	[label=legend];
+	"ax2(0)$2" -> "ax2(0)$1"	[label=legend];
+	"fig(0)$3" -> "var(0)$1"	[label=suptitle];
+	"fig(0)$3" -> "fig(0)$2"	[label=suptitle];
+	"ax1(0)$11" -> "Frequency(0)"	[label=set_ylabel];
+	"ax1(0)$11" -> "ax1(0)$10"	[label=set_ylabel];
+	"ax1(0)$12" -> "ax1(0)$11"	[label=tick_params];
+	"ax2(0)$3" -> "ax2(0)$2"	[label=set_ylabel];
+	"ax2(0)$3" -> "Probability(0)"	[label=set_ylabel];
+	"Probability(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax2(0)$4" -> "ax2(0)$3"	[label=tick_params];
+	"ax1(0)$13" -> "Bin Number(0)"	[label=set_xlabel];
+	"ax1(0)$13" -> "ax1(0)$12"	[label=set_xlabel];
+	"plt(0)$3" -> "plt(0)$2"	[label=show];
+	"bin_number(4)" -> "get_central_point[0]"	[label=_argToVar];
+	"Hsum(4)" -> "get_central_point[1]"	[label=_argToVar];
+	"H0(4)" -> "get_central_point[2]"	[label=_argToVar];
+	"H1(4)" -> "get_central_point[3]"	[label=_argToVar];
+	"slope(4)$0" -> "[](4)"	[label=assignedFrom];
+	"i(4)" -> "bin_number(4)"	[label=iteratorOf];
+	"i(4)" -> "range(4)"	[label=iteratorOf];
+	"i(4)" -> "1(4)"	[label=iteratorOf];
+	"init(4)$0" -> "Hsum(4)"	[label=assignedFrom];
+	"init(4)$0" -> "i(4)"	[label=assignedFrom];
+	"end(4)$0" -> "Hsum(4)"	[label=assignedFrom];
+	"end(4)$0" -> "i(4)"	[label=assignedFrom];
+	"end(4)$0" -> "1(4)"	[label=assignedFrom];
+	"x(4)$0" -> "1(4)"	[label=assignedFrom];
+	"y(4)$0" -> "init(4)$0"	[label=Sub];
+	"y(4)$0" -> "end(4)$0"	[label=Sub];
+	"slope(4)$1" -> "slope(4)$0"	[label=append];
+	"slope(4)$1" -> "x(4)$0"	[label=append];
+	"slope(4)$1" -> "y(4)$0"	[label=append];
+	"slope(4)$1" -> "np(4)"	[label=append];
+	"slope(4)$1" -> "180(4)"	[label=append];
+	"slope(4)$1" -> "3.1416(4)"	[label=append];
+	"slope(4)$2" -> "1(4)"	[label=append];
+	"slope(4)$2" -> "slope(4)$1"	[label=append];
+	"slope(4)$2" -> "slope(4)$2"	[label=append];
+	"slope(4)$3" -> "np(4)"	[label=array];
+	"slope(4)$3" -> "slope(4)$3"	[label=array];
+	"slopediff(4)$0" -> "[<_ast.Constant object at 0x7fd50080dbe0>](4)"	[label=assignedFrom];
+	"slopediff(4)$1" -> "i(4)"	[label=append];
+	"slopediff(4)$1" -> "1(4)"	[label=append];
+	"slopediff(4)$1" -> "np(4)"	[label=append];
+	"slopediff(4)$1" -> "slope(4)$3"	[label=append];
+	"slopediff(4)$1" -> "slopediff(4)$0"	[label=append];
+	"min_len(4)$0" -> "15(4)"	[label=assignedFrom];
+	"max_slop_diff(4)$0" -> "0.05(4)"	[label=assignedFrom];
+	"len_max_l(4)$0" -> "0(4)"	[label=assignedFrom];
+	"len_max_r(4)$0" -> "0(4)"	[label=assignedFrom];
+	"count(4)$0" -> "0(4)"	[label=assignedFrom];
+	"count(4)$1" -> "1(4)"	[label=Add];
+	"count(4)$1" -> "count(4)$0"	[label=Add];
+	"slope_dict_left(4)$0" -> "list(4)"	[label=defaultdict];
+	"slope_dict_right(4)$0" -> "list(4)"	[label=defaultdict];
+	"l(4)$0" -> "0(4)"	[label=assignedFrom];
+	"r(4)$0" -> "0(4)"	[label=assignedFrom];
+	"maxl(4)$0" -> "0(4)"	[label=assignedFrom];
+	"maxr(4)$0" -> "0(4)"	[label=assignedFrom];
+	"s(4)$0" -> "i(4)"	[label=assignedFrom];
+	"s(4)$0" -> "slope(4)$3"	[label=assignedFrom];
+	"sd(4)$0" -> "i(4)"	[label=assignedFrom];
+	"sd(4)$0" -> "slopediff(4)$1"	[label=assignedFrom];
+	"slope_dict_left(4)$1" -> "i(4)"	[label=append];
+	"slope_dict_left(4)$1" -> "slope_dict_left(4)$0"	[label=append];
+	"l_len(4)$0" -> "l(4)$0"	[label=len];
+	"l_len(4)$0" -> "slope_dict_left(4)$1"	[label=len];
+	"maxl(4)$1" -> "l(4)$0"	[label=assignedFrom];
+	"l(4)$1" -> "1(4)"	[label=Add];
+	"l(4)$1" -> "l(4)$0"	[label=Add];
+	"slope_dict_right(4)$1" -> "i(4)"	[label=append];
+	"slope_dict_right(4)$1" -> "slope_dict_right(4)$0"	[label=append];
+	"r_len(4)$0" -> "r(4)$0"	[label=len];
+	"r_len(4)$0" -> "slope_dict_right(4)$1"	[label=len];
+	"maxr(4)$1" -> "r(4)$0"	[label=assignedFrom];
+	"r(4)$1" -> "1(4)"	[label=Add];
+	"r(4)$1" -> "r(4)$0"	[label=Add];
+	"len_max_l(4)$1" -> "slope_dict_left(4)$1"	[label=len];
+	"len_max_l(4)$1" -> "maxl(4)$1"	[label=len];
+	"len_max_r(4)$1" -> "slope_dict_right(4)$1"	[label=len];
+	"len_max_r(4)$1" -> "maxr(4)$1"	[label=len];
+	"min_len(4)$1" -> "min_len(4)$0"	[label=Mult];
+	"min_len(4)$1" -> "0.9(4)"	[label=Mult];
+	"max_slop_diff(4)$1" -> "max_slop_diff(4)$0"	[label=Mult];
+	"max_slop_diff(4)$1" -> "1.1(4)"	[label=Mult];
+	"H0(4)$0" -> "H0(4)"	[label=running_mean];
+	"H0(4)$0" -> "2(4)"	[label=running_mean];
+	"H1(4)$0" -> "H1(4)"	[label=running_mean];
+	"H1(4)$0" -> "2(4)"	[label=running_mean];
+	"Hsum(4)$0" -> "H0(4)$0"	[label=Add];
+	"Hsum(4)$0" -> "H1(4)$0"	[label=Add];
+	"slope(4)$4" -> "[](4)"	[label=assignedFrom];
+	"init(4)$1" -> "i(4)"	[label=assignedFrom];
+	"init(4)$1" -> "Hsum(4)$0"	[label=assignedFrom];
+	"end(4)$1" -> "i(4)"	[label=assignedFrom];
+	"end(4)$1" -> "1(4)"	[label=assignedFrom];
+	"end(4)$1" -> "Hsum(4)$0"	[label=assignedFrom];
+	"x(4)$1" -> "1(4)"	[label=assignedFrom];
+	"y(4)$1" -> "init(4)$1"	[label=Sub];
+	"y(4)$1" -> "end(4)$1"	[label=Sub];
+	"slope(4)$5" -> "np(4)"	[label=append];
+	"slope(4)$5" -> "180(4)"	[label=append];
+	"slope(4)$5" -> "3.1416(4)"	[label=append];
+	"slope(4)$5" -> "slope(4)$4"	[label=append];
+	"slope(4)$5" -> "x(4)$1"	[label=append];
+	"slope(4)$5" -> "y(4)$1"	[label=append];
+	"slope(4)$6" -> "1(4)"	[label=append];
+	"slope(4)$6" -> "slope(4)$5"	[label=append];
+	"slope(4)$6" -> "slope(4)$6"	[label=append];
+	"slope(4)$7" -> "np(4)"	[label=array];
+	"slope(4)$7" -> "slope(4)$7"	[label=array];
+	"slopediff(4)$2" -> "[<_ast.Constant object at 0x7fd50082f730>](4)"	[label=assignedFrom];
+	"slopediff(4)$3" -> "i(4)"	[label=append];
+	"slopediff(4)$3" -> "1(4)"	[label=append];
+	"slopediff(4)$3" -> "np(4)"	[label=append];
+	"slopediff(4)$3" -> "slope(4)$7"	[label=append];
+	"slopediff(4)$3" -> "slopediff(4)$2"	[label=append];
+	"max_slop_diff(4)$2" -> "max_slop_diff(4)$1"	[label=Mult];
+	"max_slop_diff(4)$2" -> "1.1(4)"	[label=Mult];
+	"slope_left(4)$0" -> "slope_dict_left(4)$1"	[label=assignedFrom];
+	"slope_left(4)$0" -> "maxl(4)$1"	[label=assignedFrom];
+	"slope_right(4)$0" -> "slope_dict_right(4)$1"	[label=assignedFrom];
+	"slope_right(4)$0" -> "maxr(4)$1"	[label=assignedFrom];
+	"max_diff(4)$0" -> "100(4)"	[label=assignedFrom];
+	"slope_left(4)$1" -> "2(4)"	[label=assignedFrom];
+	"slope_left(4)$1" -> "slope_left(4)$0"	[label=assignedFrom];
+	"slope_right(4)$1" -> "1(4)"	[label=assignedFrom];
+	"slope_right(4)$1" -> "slope_right(4)$0"	[label=assignedFrom];
+	"slope_left(4)$2" -> "1(4)"	[label=assignedFrom];
+	"slope_left(4)$2" -> "slope_left(4)$1"	[label=assignedFrom];
+	"slope_right(4)$2" -> "2(4)"	[label=assignedFrom];
+	"slope_right(4)$2" -> "slope_right(4)$1"	[label=assignedFrom];
+	"i_median_left(4)$0" -> "2(4)"	[label=int];
+	"i_median_left(4)$0" -> "slope_left(4)$2"	[label=int];
+	"i_median_left(4)$0" -> "len(4)"	[label=int];
+	"i_median_right(4)$0" -> "2(4)"	[label=int];
+	"i_median_right(4)$0" -> "slope_right(4)$2"	[label=int];
+	"i_median_right(4)$0" -> "len(4)"	[label=int];
+	"l(4)$2" -> "0(4)"	[label=assignedFrom];
+	"r(4)$2" -> "0(4)"	[label=assignedFrom];
+	"H_left(4)$0" -> "Hsum(4)$0"	[label=assignedFrom];
+	"H_left(4)$0" -> "slope_left(4)$2"	[label=assignedFrom];
+	"H_right(4)$0" -> "Hsum(4)$0"	[label=assignedFrom];
+	"H_right(4)$0" -> "slope_right(4)$2"	[label=assignedFrom];
+	"indexes(4)$0" -> "[](4)"	[label=assignedFrom];
+	"h(4)" -> "H_left(4)$0"	[label=iteratorOf];
+	"h(4)" -> "H_right(4)$0"	[label=iteratorOf];
+	"indexes(4)$1" -> "np(4)"	[label=append];
+	"indexes(4)$1" -> "H_right(4)$0"	[label=append];
+	"indexes(4)$1" -> "indexes(4)$0"	[label=append];
+	"indexes(4)$1" -> "h(4)"	[label=append];
+	"index_left(4)" -> "range(4)"	[label=iteratorOf];
+	"index_left(4)" -> "slope_left(4)$2"	[label=iteratorOf];
+	"index_left(4)" -> "slope_right(4)$2"	[label=iteratorOf];
+	"index_left(4)" -> "len(4)"	[label=iteratorOf];
+	"index_left(4)" -> "indexes(4)$1"	[label=iteratorOf];
+	"index_left(4)" -> "zip(4)"	[label=iteratorOf];
+	"index_left(4)" -> "indexes(4)$2"	[label=iteratorOf];
+	"indexes(4)$2" -> "np(4)"	[label=append];
+	"indexes(4)$2" -> "H_left(4)$0"	[label=append];
+	"indexes(4)$2" -> "h(4)"	[label=append];
+	"indexes(4)$2" -> "indexes(4)$1"	[label=append];
+	"index_right(4)" -> "range(4)"	[label=iteratorOf];
+	"index_right(4)" -> "slope_left(4)$2"	[label=iteratorOf];
+	"index_right(4)" -> "slope_right(4)$2"	[label=iteratorOf];
+	"index_right(4)" -> "len(4)"	[label=iteratorOf];
+	"index_right(4)" -> "indexes(4)$1"	[label=iteratorOf];
+	"index_right(4)" -> "zip(4)"	[label=iteratorOf];
+	"index_right(4)" -> "indexes(4)$2"	[label=iteratorOf];
+	"l(4)$3" -> "slope_left(4)$2"	[label=Add];
+	"l(4)$3" -> "l(4)$2"	[label=Add];
+	"l(4)$3" -> "index_left(4)"	[label=Add];
+	"r(4)$3" -> "slope_right(4)$2"	[label=Add];
+	"r(4)$3" -> "r(4)$2"	[label=Add];
+	"r(4)$3" -> "index_right(4)"	[label=Add];
+	"central_point(4)$0" -> "1(4)"	[label=round];
+	"central_point(4)$0" -> "np(4)"	[label=round];
+	"central_point(4)$0" -> "2(4)"	[label=round];
+	"central_point(4)$0" -> "index_left(4)"	[label=round];
+	"central_point(4)$0" -> "l(4)$3"	[label=round];
+	"central_point(4)$0" -> "r(4)$3"	[label=round];
+	"l(4)$4" -> "slope_left(4)$2"	[label=Add];
+	"l(4)$4" -> "index_left(4)"	[label=Add];
+	"l(4)$4" -> "l(4)$3"	[label=Add];
+	"r(4)$4" -> "slope_right(4)$2"	[label=Add];
+	"r(4)$4" -> "index_right(4)"	[label=Add];
+	"r(4)$4" -> "r(4)$3"	[label=Add];
+	"central_point(4)$1" -> "1(4)"	[label=round];
+	"central_point(4)$1" -> "np(4)"	[label=round];
+	"central_point(4)$1" -> "2(4)"	[label=round];
+	"central_point(4)$1" -> "index_right(4)"	[label=round];
+	"central_point(4)$1" -> "l(4)$4"	[label=round];
+	"central_point(4)$1" -> "r(4)$4"	[label=round];
+	"central_point(4)$2" -> "np(4)"	[label=round];
+	"central_point(4)$2" -> "central_point(4)$2"	[label=round];
+	"central_point(0)$0" -> "bin_number(0)$0"	[label=get_central_point];
+	"central_point(0)$0" -> "H0(0)$0"	[label=get_central_point];
+	"central_point(0)$0" -> "H1(0)$0"	[label=get_central_point];
+	"central_point(0)$0" -> "Hsum(0)$1"	[label=get_central_point];
+	"Hsum(0)$1" -> "bin_number(0)$0"	[label=get_central_point];
+	"Hsum(0)$1" -> "H0(0)$0"	[label=get_central_point];
+	"Hsum(0)$1" -> "H1(0)$0"	[label=get_central_point];
+	"Hsum(0)$1" -> "Hsum(0)$1"	[label=get_central_point];
+	"slope_left(0)$0" -> "bin_number(0)$0"	[label=get_central_point];
+	"slope_left(0)$0" -> "H0(0)$0"	[label=get_central_point];
+	"slope_left(0)$0" -> "H1(0)$0"	[label=get_central_point];
+	"slope_left(0)$0" -> "Hsum(0)$1"	[label=get_central_point];
+	"slope_right(0)$0" -> "bin_number(0)$0"	[label=get_central_point];
+	"slope_right(0)$0" -> "H0(0)$0"	[label=get_central_point];
+	"slope_right(0)$0" -> "H1(0)$0"	[label=get_central_point];
+	"slope_right(0)$0" -> "Hsum(0)$1"	[label=get_central_point];
+	"i_median_left(0)$0" -> "bin_number(0)$0"	[label=get_central_point];
+	"i_median_left(0)$0" -> "H0(0)$0"	[label=get_central_point];
+	"i_median_left(0)$0" -> "H1(0)$0"	[label=get_central_point];
+	"i_median_left(0)$0" -> "Hsum(0)$1"	[label=get_central_point];
+	"i_median_right(0)$0" -> "bin_number(0)$0"	[label=get_central_point];
+	"i_median_right(0)$0" -> "H0(0)$0"	[label=get_central_point];
+	"i_median_right(0)$0" -> "H1(0)$0"	[label=get_central_point];
+	"i_median_right(0)$0" -> "Hsum(0)$1"	[label=get_central_point];
+	"fig(0)$4" -> "plt(0)$3"	[label=subplots];
+	"ax1(0)$14" -> "plt(0)$3"	[label=subplots];
+	"ax2(0)$5" -> "ax1(0)$14"	[label=twinx];
+	"ax1(0)$15" -> "H0(0)$0"	[label=plot];
+	"ax1(0)$15" -> "ax1(0)$14"	[label=plot];
+	"ax1(0)$16" -> "H1(0)$0"	[label=plot];
+	"ax1(0)$16" -> "ax1(0)$15"	[label=plot];
+	"ax1(0)$17" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$17" -> "ax1(0)$16"	[label=plot];
+	"ax1(0)$18" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$18" -> "slope_left(0)$0"	[label=plot];
+	"ax1(0)$18" -> "ax1(0)$17"	[label=plot];
+	"ax1(0)$18" -> "k(0)"	[label=plot];
+	"k(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax1(0)$19" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$19" -> "slope_right(0)$0"	[label=plot];
+	"ax1(0)$19" -> "ax1(0)$18"	[label=plot];
+	"ax1(0)$19" -> "k(0)"	[label=plot];
+	"ax1(0)$20" -> "ax1(0)$19"	[label=plot];
+	"ax1(0)$20" -> "[<_ast.Name object at 0x7fd50082e8e0>, <_ast.Name object at 0x7fd50082e910>](0)"	[label=plot];
+	"ax1(0)$20" -> "[<_ast.Constant object at 0x7fd50082e970>, <_ast.Constant object at 0x7fd50082e9a0>](0)"	[label=plot];
+	"ax1(0)$20" -> "grey(0)"	[label=plot];
+	"[<_ast.Name object at 0x7fd50082e8e0>, <_ast.Name object at 0x7fd50082e910>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50082e970>, <_ast.Constant object at 0x7fd50082e9a0>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"grey(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax2(0)$6" -> "probs(0)$0"	[label=plot];
+	"ax2(0)$6" -> "r(0)"	[label=plot];
+	"ax2(0)$6" -> "ax2(0)$5"	[label=plot];
+	"ax1(0)$21" -> "ax1(0)$20"	[label=legend];
+	"ax2(0)$7" -> "ax2(0)$6"	[label=legend];
+	"ax1(0)$22" -> "Frequency(0)"	[label=set_ylabel];
+	"ax1(0)$22" -> "ax1(0)$21"	[label=set_ylabel];
+	"ax1(0)$23" -> "ax1(0)$22"	[label=tick_params];
+	"ax1(0)$24" -> "Bin Number(0)"	[label=set_xlabel];
+	"ax1(0)$24" -> "ax1(0)$23"	[label=set_xlabel];
+	"ax2(0)$8" -> "Probability(0)"	[label=set_ylabel];
+	"ax2(0)$8" -> "ax2(0)$7"	[label=set_ylabel];
+	"ax2(0)$9" -> "ax2(0)$8"	[label=tick_params];
+	"fig(0)$5" -> "var(0)$1"	[label=suptitle];
+	"fig(0)$5" -> "fig(0)$4"	[label=suptitle];
+	"plt(0)$4" -> "bin_number(0)$0"	[label=xlabel];
+	"plt(0)$4" -> "plt(0)$3"	[label=xlabel];
+	"plt(0)$5" -> "plt(0)$4"	[label=show];
+	"central_point(5)" -> "get_ratio[0]"	[label=_argToVar];
+	"bin_number(5)" -> "get_ratio[1]"	[label=_argToVar];
+	"Hsum(5)" -> "get_ratio[2]"	[label=_argToVar];
+	"Hmin(5)" -> "get_ratio[3]"	[label=_argToVar];
+	"ratio(5)$0" -> "[](5)"	[label=assignedFrom];
+	"len_1st_half(5)$0" -> "central_point(5)"	[label=assignedFrom];
+	"len_2nd_half(5)$0" -> "central_point(5)"	[label=Sub];
+	"len_2nd_half(5)$0" -> "bin_number(5)"	[label=Sub];
+	"i(5)$0" -> "0(5)"	[label=assignedFrom];
+	"index(5)$0" -> "central_point(5)"	[label=Sub];
+	"index(5)$0" -> "len_2nd_half(5)$0"	[label=Sub];
+	"ratio(5)$1" -> "ratio(5)$0"	[label=append];
+	"ratio(5)$1" -> "0(5)"	[label=append];
+	"i(5)$1" -> "bin_number(5)"	[label=iteratorOf];
+	"i(5)$1" -> "i(5)$0"	[label=Add];
+	"i(5)$1" -> "i(5)$1"	[label=iteratorOf];
+	"i(5)$1" -> "1(5)"	[label=Add];
+	"i(5)$1" -> "range(5)"	[label=iteratorOf];
+	"i_end(5)$0" -> "central_point(5)"	[label=int];
+	"i_end(5)$0" -> "i(5)$1"	[label=int];
+	"i_end(5)$0" -> "1(5)"	[label=int];
+	"ratio(5)$2" -> "0(5)"	[label=append];
+	"ratio(5)$2" -> "ratio(5)$1"	[label=append];
+	"ratio(5)$3" -> "Hsum(5)"	[label=append];
+	"ratio(5)$3" -> "i(5)$1"	[label=append];
+	"ratio(5)$3" -> "i_end(5)$0"	[label=append];
+	"ratio(5)$3" -> "ratio(5)$2"	[label=append];
+	"index(5)$1" -> "central_point(5)"	[label=Sub];
+	"index(5)$1" -> "len_2nd_half(5)$0"	[label=Sub];
+	"i_end(5)$1" -> "central_point(5)"	[label=int];
+	"i_end(5)$1" -> "i(5)$1"	[label=int];
+	"i_end(5)$1" -> "1(5)"	[label=int];
+	"ratio(5)$4" -> "0(5)"	[label=append];
+	"ratio(5)$4" -> "ratio(5)$3"	[label=append];
+	"ratio(5)$5" -> "0(5)"	[label=append];
+	"ratio(5)$5" -> "ratio(5)$4"	[label=append];
+	"ratio(5)$6" -> "Hsum(5)"	[label=append];
+	"ratio(5)$6" -> "i(5)$1"	[label=append];
+	"ratio(5)$6" -> "i_end(5)$1"	[label=append];
+	"ratio(5)$6" -> "ratio(5)$5"	[label=append];
+	"ratio(0)$0" -> "bin_number(0)$0"	[label=get_ratio];
+	"ratio(0)$0" -> "Hmin(0)$0"	[label=get_ratio];
+	"ratio(0)$0" -> "central_point(0)$0"	[label=get_ratio];
+	"ratio(0)$0" -> "Hsum(0)$1"	[label=get_ratio];
+	"fig(0)$6" -> "plt(0)$5"	[label=subplots];
+	"ax1(0)$25" -> "plt(0)$5"	[label=subplots];
+	"ax2(0)$10" -> "ax1(0)$25"	[label=twinx];
+	"ax3(0)$0" -> "ax1(0)$25"	[label=twinx];
+	"ax1(0)$26" -> "H0(0)$0"	[label=plot];
+	"ax1(0)$26" -> "ax1(0)$25"	[label=plot];
+	"ax1(0)$27" -> "H1(0)$0"	[label=plot];
+	"ax1(0)$27" -> "ax1(0)$26"	[label=plot];
+	"ax1(0)$28" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$28" -> "ax1(0)$27"	[label=plot];
+	"ax1(0)$29" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$29" -> "slope_left(0)$0"	[label=plot];
+	"ax1(0)$29" -> "k(0)"	[label=plot];
+	"ax1(0)$29" -> "ax1(0)$28"	[label=plot];
+	"ax1(0)$30" -> "Hsum(0)$1"	[label=plot];
+	"ax1(0)$30" -> "slope_right(0)$0"	[label=plot];
+	"ax1(0)$30" -> "k(0)"	[label=plot];
+	"ax1(0)$30" -> "ax1(0)$29"	[label=plot];
+	"ax1(0)$31" -> "grey(0)"	[label=plot];
+	"ax1(0)$31" -> "ax1(0)$30"	[label=plot];
+	"ax1(0)$31" -> "[<_ast.Name object at 0x7fd50085c0d0>, <_ast.Name object at 0x7fd50085c100>](0)"	[label=plot];
+	"ax1(0)$31" -> "[<_ast.Constant object at 0x7fd50085c160>, <_ast.Constant object at 0x7fd50085c190>](0)"	[label=plot];
+	"[<_ast.Name object at 0x7fd50085c0d0>, <_ast.Name object at 0x7fd50085c100>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd50085c160>, <_ast.Constant object at 0x7fd50085c190>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax2(0)$11" -> "probs(0)$0"	[label=plot];
+	"ax2(0)$11" -> "r(0)"	[label=plot];
+	"ax2(0)$11" -> "ax2(0)$10"	[label=plot];
+	"ax3(0)$1" -> "ratio(0)$0"	[label=plot];
+	"ax3(0)$1" -> "ax3(0)$0"	[label=plot];
+	"ax3(0)$1" -> "b(0)"	[label=plot];
+	"b(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax1(0)$32" -> "ax1(0)$31"	[label=legend];
+	"ax2(0)$12" -> "ax2(0)$11"	[label=legend];
+	"ax3(0)$2" -> "ax3(0)$1"	[label=legend];
+	"fig(0)$7" -> "var(0)$1"	[label=suptitle];
+	"fig(0)$7" -> "fig(0)$6"	[label=suptitle];
+	"ax1(0)$33" -> "Frequency(0)"	[label=set_ylabel];
+	"ax1(0)$33" -> "ax1(0)$32"	[label=set_ylabel];
+	"ax1(0)$34" -> "ax1(0)$33"	[label=tick_params];
+	"ax1(0)$35" -> "Bin Number(0)"	[label=set_xlabel];
+	"ax1(0)$35" -> "ax1(0)$34"	[label=set_xlabel];
+	"ax2(0)$13" -> "Probability(0)"	[label=set_ylabel];
+	"ax2(0)$13" -> "ax2(0)$12"	[label=set_ylabel];
+	"ax2(0)$14" -> "ax2(0)$13"	[label=tick_params];
+	"ax3(0)$3" -> "ax3(0)$2"	[label=set_ylabel];
+	"ax3(0)$3" -> "Frequency ratio(0)"	[label=set_ylabel];
+	"Frequency ratio(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"ax3(0)$4" -> "ax3(0)$3"	[label=tick_params];
+	"ax3(0)$5" -> "ax3(0)$4"	[label=set_label_coords];
+	"ax3(0)$5" -> "1.18(0)"	[label=set_label_coords];
+	"ax3(0)$5" -> "0.5(0)"	[label=set_label_coords];
+	"1.18(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"0.5(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plt(0)$6" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"plt(0)$6" -> "plt(0)$5"	[label=show];
+	"var(6)" -> "plot_graph[0]"	[label=_argToVar];
+	"df(6)" -> "plot_graph[1]"	[label=_argToVar];
+	"Hmin(6)" -> "plot_graph[2]"	[label=_argToVar];
+	"bin_size(6)$0" -> "var(6)"	[label=df_to_bin];
+	"bin_size(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"bin_number(6)$0" -> "var(6)"	[label=df_to_bin];
+	"bin_number(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"df(6)$0" -> "var(6)"	[label=df_to_bin];
+	"df(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"H0(6)$0" -> "var(6)"	[label=df_to_bin];
+	"H0(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"H1(6)$0" -> "var(6)"	[label=df_to_bin];
+	"H1(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"Hsum(6)$0" -> "var(6)"	[label=df_to_bin];
+	"Hsum(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"X0(6)$0" -> "var(6)"	[label=df_to_bin];
+	"X0(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"X1(6)$0" -> "var(6)"	[label=df_to_bin];
+	"X1(6)$0" -> "train_df(6)"	[label=df_to_bin];
+	"probs(6)$0" -> "Hmin(6)"	[label=get_probs];
+	"probs(6)$0" -> "bin_number(6)$0"	[label=get_probs];
+	"probs(6)$0" -> "H1(6)$0"	[label=get_probs];
+	"probs(6)$0" -> "Hsum(6)$0"	[label=get_probs];
+	"min_i(6)$0" -> "Hmin(6)"	[label=get_probs];
+	"min_i(6)$0" -> "bin_number(6)$0"	[label=get_probs];
+	"min_i(6)$0" -> "H1(6)$0"	[label=get_probs];
+	"min_i(6)$0" -> "Hsum(6)$0"	[label=get_probs];
+	"max_i(6)$0" -> "Hmin(6)"	[label=get_probs];
+	"max_i(6)$0" -> "bin_number(6)$0"	[label=get_probs];
+	"max_i(6)$0" -> "H1(6)$0"	[label=get_probs];
+	"max_i(6)$0" -> "Hsum(6)$0"	[label=get_probs];
+	"central_point(6)$0" -> "bin_number(6)$0"	[label=get_central_point];
+	"central_point(6)$0" -> "H0(6)$0"	[label=get_central_point];
+	"central_point(6)$0" -> "H1(6)$0"	[label=get_central_point];
+	"central_point(6)$0" -> "Hsum(6)$1"	[label=get_central_point];
+	"Hsum(6)$1" -> "bin_number(6)$0"	[label=get_central_point];
+	"Hsum(6)$1" -> "H0(6)$0"	[label=get_central_point];
+	"Hsum(6)$1" -> "H1(6)$0"	[label=get_central_point];
+	"Hsum(6)$1" -> "Hsum(6)$1"	[label=get_central_point];
+	"slope_left(6)$0" -> "bin_number(6)$0"	[label=get_central_point];
+	"slope_left(6)$0" -> "H0(6)$0"	[label=get_central_point];
+	"slope_left(6)$0" -> "H1(6)$0"	[label=get_central_point];
+	"slope_left(6)$0" -> "Hsum(6)$1"	[label=get_central_point];
+	"slope_right(6)$0" -> "bin_number(6)$0"	[label=get_central_point];
+	"slope_right(6)$0" -> "H0(6)$0"	[label=get_central_point];
+	"slope_right(6)$0" -> "H1(6)$0"	[label=get_central_point];
+	"slope_right(6)$0" -> "Hsum(6)$1"	[label=get_central_point];
+	"i_median_left(6)$0" -> "bin_number(6)$0"	[label=get_central_point];
+	"i_median_left(6)$0" -> "H0(6)$0"	[label=get_central_point];
+	"i_median_left(6)$0" -> "H1(6)$0"	[label=get_central_point];
+	"i_median_left(6)$0" -> "Hsum(6)$1"	[label=get_central_point];
+	"i_median_right(6)$0" -> "bin_number(6)$0"	[label=get_central_point];
+	"i_median_right(6)$0" -> "H0(6)$0"	[label=get_central_point];
+	"i_median_right(6)$0" -> "H1(6)$0"	[label=get_central_point];
+	"i_median_right(6)$0" -> "Hsum(6)$1"	[label=get_central_point];
+	"ratio(6)$0" -> "Hmin(6)"	[label=get_ratio];
+	"ratio(6)$0" -> "bin_number(6)$0"	[label=get_ratio];
+	"ratio(6)$0" -> "central_point(6)$0"	[label=get_ratio];
+	"ratio(6)$0" -> "Hsum(6)$1"	[label=get_ratio];
+	"fig(6)$0" -> "plt(6)"	[label=subplots];
+	"ax1(6)$0" -> "plt(6)"	[label=subplots];
+	"ax2(6)$0" -> "ax1(6)$0"	[label=twinx];
+	"ax3(6)$0" -> "ax1(6)$0"	[label=twinx];
+	"ax1(6)$1" -> "H0(6)$0"	[label=plot];
+	"ax1(6)$1" -> "ax1(6)$0"	[label=plot];
+	"ax1(6)$2" -> "H1(6)$0"	[label=plot];
+	"ax1(6)$2" -> "ax1(6)$1"	[label=plot];
+	"ax1(6)$3" -> "Hsum(6)$1"	[label=plot];
+	"ax1(6)$3" -> "ax1(6)$2"	[label=plot];
+	"ax1(6)$4" -> "Hsum(6)$1"	[label=plot];
+	"ax1(6)$4" -> "slope_left(6)$0"	[label=plot];
+	"ax1(6)$4" -> "ax1(6)$3"	[label=plot];
+	"ax1(6)$4" -> "k(6)"	[label=plot];
+	"ax1(6)$5" -> "Hsum(6)$1"	[label=plot];
+	"ax1(6)$5" -> "slope_right(6)$0"	[label=plot];
+	"ax1(6)$5" -> "ax1(6)$4"	[label=plot];
+	"ax1(6)$5" -> "k(6)"	[label=plot];
+	"ax1(6)$6" -> "ax1(6)$5"	[label=plot];
+	"ax1(6)$6" -> "[<_ast.Name object at 0x7fd50084e850>, <_ast.Name object at 0x7fd50084e880>](6)"	[label=plot];
+	"ax1(6)$6" -> "[<_ast.Constant object at 0x7fd50084e8e0>, <_ast.Constant object at 0x7fd50084e910>](6)"	[label=plot];
+	"ax1(6)$6" -> "grey(6)"	[label=plot];
+	"ax2(6)$1" -> "probs(6)$0"	[label=plot];
+	"ax2(6)$1" -> "ax2(6)$0"	[label=plot];
+	"ax2(6)$1" -> "r(6)"	[label=plot];
+	"ax3(6)$1" -> "ratio(6)$0"	[label=plot];
+	"ax3(6)$1" -> "ax3(6)$0"	[label=plot];
+	"ax3(6)$1" -> "b(6)"	[label=plot];
+	"ax1(6)$7" -> "ax1(6)$6"	[label=legend];
+	"ax2(6)$2" -> "ax2(6)$1"	[label=legend];
+	"ax3(6)$2" -> "ax3(6)$1"	[label=legend];
+	"ax1(6)$8" -> "ax1(6)$7"	[label=set_ylabel];
+	"ax1(6)$8" -> "Frequency(6)"	[label=set_ylabel];
+	"ax1(6)$9" -> "ax1(6)$8"	[label=tick_params];
+	"ax1(6)$10" -> "ax1(6)$9"	[label=set_xlabel];
+	"ax1(6)$10" -> "Bin Number(6)"	[label=set_xlabel];
+	"ax2(6)$3" -> "ax2(6)$2"	[label=set_ylabel];
+	"ax2(6)$3" -> "Probability(6)"	[label=set_ylabel];
+	"ax2(6)$4" -> "ax2(6)$3"	[label=tick_params];
+	"ax3(6)$3" -> "ax3(6)$2"	[label=set_ylabel];
+	"ax3(6)$3" -> "Frequency ratio(6)"	[label=set_ylabel];
+	"ax3(6)$4" -> "ax3(6)$3"	[label=tick_params];
+	"ax3(6)$5" -> "ax3(6)$4"	[label=set_label_coords];
+	"ax3(6)$5" -> "1.18(6)"	[label=set_label_coords];
+	"ax3(6)$5" -> "0.5(6)"	[label=set_label_coords];
+	"fig(6)$1" -> "var(6)"	[label=suptitle];
+	"fig(6)$1" -> "fig(6)$0"	[label=suptitle];
+	"plt(6)$0" -> "bin_number(6)$0"	[label=xlabel];
+	"plt(6)$0" -> "plt(6)"	[label=xlabel];
+	"plt(6)$1" -> "plt(6)$0"	[label=show];
+	"[<_ast.Constant object at 0x7fd50083b460>, <_ast.Constant object at 0x7fd50083ba90>, <_ast.Constant object at 0x7fd50083bac0>, <_\
+ast.Constant object at 0x7fd50083baf0>, <_ast.Constant object at 0x7fd50083bb20>, <_ast.Constant object at 0x7fd50083bb50>, <_ast.Constant \
+object at 0x7fd50083bb80>, <_ast.Constant object at 0x7fd50083bbb0>, <_ast.Constant object at 0x7fd50083bbe0>, <_ast.Constant object \
+at 0x7fd50083bc10>, <_ast.Constant object at 0x7fd50083bc40>, <_ast.Constant object at 0x7fd50083bc70>, <_ast.Constant object at \
+0x7fd50083bca0>, <_ast.Constant object at 0x7fd50083bcd0>, <_ast.Constant object at 0x7fd50083bd00>, <_ast.Constant object at 0x7fd50083b130>, <_\
+ast.Constant object at 0x7fd50083bd60>, <_ast.Constant object at 0x7fd50083bd90>, <_ast.Constant object at 0x7fd50083bdc0>, <_ast.Constant \
+object at 0x7fd50083bdf0>, <_ast.Constant object at 0x7fd50083be20>, <_ast.Constant object at 0x7fd50083be50>, <_ast.Constant object \
+at 0x7fd50083be80>, <_ast.Constant object at 0x7fd50083beb0>, <_ast.Constant object at 0x7fd50083bee0>, <_ast.Constant object at \
+0x7fd50083bf10>, <_ast.Constant object at 0x7fd50083bf40>, <_ast.Constant object at 0x7fd50083bf70>, <_ast.Constant object at 0x7fd50083bfa0>, <_\
+ast.Constant object at 0x7fd50083bfd0>, <_ast.Constant object at 0x7fd50083bd30>, <_ast.Constant object at 0x7fd500852040>, <_ast.Constant \
+object at 0x7fd500852070>, <_ast.Constant object at 0x7fd5008520a0>, <_ast.Constant object at 0x7fd5008520d0>, <_ast.Constant object \
+at 0x7fd500852100>, <_ast.Constant object at 0x7fd500852130>, <_ast.Constant object at 0x7fd500852160>, <_ast.Constant object at \
+0x7fd500852190>, <_ast.Constant object at 0x7fd5008521c0>, <_ast.Constant object at 0x7fd5008521f0>, <_ast.Constant object at 0x7fd500852220>, <_\
+ast.Constant object at 0x7fd500852250>, <_ast.Constant object at 0x7fd500852280>, <_ast.Constant object at 0x7fd5008522b0>, <_ast.Constant \
+object at 0x7fd5008522e0>, <_ast.Constant object at 0x7fd500852310>, <_ast.Constant object at 0x7fd500852340>, <_ast.Constant object \
+at 0x7fd500852370>, <_ast.Constant object at 0x7fd5008523a0>, <_ast.Constant object at 0x7fd5008523d0>, <_ast.Constant object at \
+0x7fd500852400>, <_ast.Constant object at 0x7fd500852430>, <_ast.Constant object at 0x7fd500852460>, <_ast.Constant object at 0x7fd500852490>, <_\
+ast.Constant object at 0x7fd5008524c0>, <_ast.Constant object at 0x7fd5008524f0>, <_ast.Constant object at 0x7fd500852520>, <_ast.Constant \
+object at 0x7fd500852550>, <_ast.Constant object at 0x7fd500852580>, <_ast.Constant object at 0x7fd5008525b0>, <_ast.Constant object \
+at 0x7fd5008525e0>, <_ast.Constant object at 0x7fd500852610>, <_ast.Constant object at 0x7fd500852640>, <_ast.Constant object at \
+0x7fd500852670>, <_ast.Constant object at 0x7fd5008526a0>, <_ast.Constant object at 0x7fd5008526d0>, <_ast.Constant object at 0x7fd500852700>, <_\
+ast.Constant object at 0x7fd500852730>, <_ast.Constant object at 0x7fd500852760>, <_ast.Constant object at 0x7fd500852790>, <_ast.Constant \
+object at 0x7fd5008527c0>, <_ast.Constant object at 0x7fd5008527f0>, <_ast.Constant object at 0x7fd500852820>, <_ast.Constant object \
+at 0x7fd500852850>, <_ast.Constant object at 0x7fd500852880>, <_ast.Constant object at 0x7fd5008528b0>, <_ast.Constant object at \
+0x7fd5008528e0>, <_ast.Constant object at 0x7fd500852910>, <_ast.Constant object at 0x7fd500852940>, <_ast.Constant object at 0x7fd500852970>, <_\
+ast.Constant object at 0x7fd5008529a0>, <_ast.Constant object at 0x7fd5008529d0>, <_ast.Constant object at 0x7fd500852a00>, <_ast.Constant \
+object at 0x7fd500852a30>, <_ast.Constant object at 0x7fd500852a60>, <_ast.Constant object at 0x7fd500852a90>, <_ast.Constant object \
+at 0x7fd500852ac0>, <_ast.Constant object at 0x7fd500852af0>, <_ast.Constant object at 0x7fd500852b20>, <_ast.Constant object at \
+0x7fd500852b50>, <_ast.Constant object at 0x7fd500852b80>, <_ast.Constant object at 0x7fd500852bb0>, <_ast.Constant object at 0x7fd500852be0>, <_\
+ast.Constant object at 0x7fd500852c10>, <_ast.Constant object at 0x7fd500852c40>, <_ast.Constant object at 0x7fd500852c70>, <_ast.Constant \
+object at 0x7fd500852ca0>, <_ast.Constant object at 0x7fd500852cd0>, <_ast.Constant object at 0x7fd500852d00>, <_ast.Constant object \
+at 0x7fd500852d30>, <_ast.Constant object at 0x7fd500852d60>, <_ast.Constant object at 0x7fd500852d90>, <_ast.Constant object at \
+0x7fd500852dc0>, <_ast.Constant object at 0x7fd500852df0>, <_ast.Constant object at 0x7fd500852e20>, <_ast.Constant object at 0x7fd500852e50>, <_\
+ast.Constant object at 0x7fd500852e80>, <_ast.Constant object at 0x7fd500852eb0>, <_ast.Constant object at 0x7fd500852ee0>, <_ast.Constant \
+object at 0x7fd500852f10>, <_ast.Constant object at 0x7fd500852f40>, <_ast.Constant object at 0x7fd500852f70>, <_ast.Constant object \
+at 0x7fd500852fa0>, <_ast.Constant object at 0x7fd500852fd0>, <_ast.Constant object at 0x7fd500869040>, <_ast.Constant object at \
+0x7fd500869070>, <_ast.Constant object at 0x7fd5008690a0>, <_ast.Constant object at 0x7fd5008690d0>, <_ast.Constant object at 0x7fd500869100>, <_\
+ast.Constant object at 0x7fd500869130>, <_ast.Constant object at 0x7fd500869160>, <_ast.Constant object at 0x7fd500869190>, <_ast.Constant \
+object at 0x7fd5008691c0>, <_ast.Constant object at 0x7fd5008691f0>, <_ast.Constant object at 0x7fd500869220>, <_ast.Constant object \
+at 0x7fd500869250>, <_ast.Constant object at 0x7fd500869280>, <_ast.Constant object at 0x7fd5008692b0>, <_ast.Constant object at \
+0x7fd5008692e0>, <_ast.Constant object at 0x7fd500869310>, <_ast.Constant object at 0x7fd500869340>, <_ast.Constant object at 0x7fd500869370>, <_\
+ast.Constant object at 0x7fd5008693a0>, <_ast.Constant object at 0x7fd5008693d0>, <_ast.Constant object at 0x7fd500869400>, <_ast.Constant \
+object at 0x7fd500869430>, <_ast.Constant object at 0x7fd500869460>, <_ast.Constant object at 0x7fd500869490>, <_ast.Constant object \
+at 0x7fd5008694c0>, <_ast.Constant object at 0x7fd5008694f0>, <_ast.Constant object at 0x7fd500869520>, <_ast.Constant object at \
+0x7fd500869550>, <_ast.Constant object at 0x7fd500869580>, <_ast.Constant object at 0x7fd5008695b0>, <_ast.Constant object at 0x7fd5008695e0>, <_\
+ast.Constant object at 0x7fd500869610>, <_ast.Constant object at 0x7fd500869640>, <_ast.Constant object at 0x7fd500869670>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plot_graph[396/4]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[396/4]" -> "var(0)$1"	[label=plot_graph];
+	"plot_graph[396/4]" -> "80(0)"	[label=plot_graph];
+	"[<_ast.Constant object at 0x7fd500869a30>, <_ast.Constant object at 0x7fd500869a60>, <_ast.Constant object at 0x7fd500869a90>, <_\
+ast.Constant object at 0x7fd500869ac0>, <_ast.Constant object at 0x7fd500869af0>, <_ast.Constant object at 0x7fd500869b20>, <_ast.Constant \
+object at 0x7fd500869b50>, <_ast.Constant object at 0x7fd500869b80>, <_ast.Constant object at 0x7fd500869bb0>, <_ast.Constant object \
+at 0x7fd500869be0>, <_ast.Constant object at 0x7fd500869c10>, <_ast.Constant object at 0x7fd500869c40>, <_ast.Constant object at \
+0x7fd500869c70>, <_ast.Constant object at 0x7fd500869ca0>, <_ast.Constant object at 0x7fd500869cd0>, <_ast.Constant object at 0x7fd500869d00>, <_\
+ast.Constant object at 0x7fd500869d30>, <_ast.Constant object at 0x7fd500869d60>, <_ast.Constant object at 0x7fd500869d90>, <_ast.Constant \
+object at 0x7fd500869dc0>, <_ast.Constant object at 0x7fd500869df0>, <_ast.Constant object at 0x7fd500869e20>, <_ast.Constant object \
+at 0x7fd500869e50>, <_ast.Constant object at 0x7fd500869e80>, <_ast.Constant object at 0x7fd500869eb0>, <_ast.Constant object at \
+0x7fd500869ee0>, <_ast.Constant object at 0x7fd500869f10>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plot_graph[399/4]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[399/4]" -> "var(0)$1"	[label=plot_graph];
+	"plot_graph[399/4]" -> "80(0)"	[label=plot_graph];
+	"[<_ast.Constant object at 0x7fd5009cc310>, <_ast.Constant object at 0x7fd5009cc340>, <_ast.Constant object at 0x7fd5009cc3a0>, <_\
+ast.Constant object at 0x7fd5009cc3d0>, <_ast.Constant object at 0x7fd5009cc430>, <_ast.Constant object at 0x7fd5009cc400>, <_ast.Constant \
+object at 0x7fd5009cc460>, <_ast.Constant object at 0x7fd5009cc490>, <_ast.Constant object at 0x7fd5009cc4c0>, <_ast.Constant object \
+at 0x7fd5009cc4f0>, <_ast.Constant object at 0x7fd5009cc520>, <_ast.Constant object at 0x7fd5009cc550>, <_ast.Constant object at \
+0x7fd5009cc580>, <_ast.Constant object at 0x7fd5009cc5b0>, <_ast.Constant object at 0x7fd5009cc5e0>, <_ast.Constant object at 0x7fd5009cc610>, <_\
+ast.Constant object at 0x7fd5009cc640>, <_ast.Constant object at 0x7fd5009cc670>, <_ast.Constant object at 0x7fd5009cc6a0>, <_ast.Constant \
+object at 0x7fd5009cc6d0>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plot_graph[402/4]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[402/4]" -> "var(0)$1"	[label=plot_graph];
+	"plot_graph[402/4]" -> "80(0)"	[label=plot_graph];
+	"[<_ast.Constant object at 0x7fd5009cca60>, <_ast.Constant object at 0x7fd5009cca90>, <_ast.Constant object at 0x7fd5009ccac0>, <_\
+ast.Constant object at 0x7fd5009ccb20>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plot_graph[405/4]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[405/4]" -> "var(0)$1"	[label=plot_graph];
+	"plot_graph[405/4]" -> "80(0)"	[label=plot_graph];
+	"plot_graph[407/4]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[407/4]" -> "var(0)$1"	[label=plot_graph];
+	"plot_graph[407/4]" -> "80(0)"	[label=plot_graph];
+	itertools -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	starmap -> itertools	[label=importedBy];
+	"starmap(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"starmap(0)" -> starmap	[label=assignedFrom];
+	matplotlib -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	mlab -> matplotlib	[label=importedBy];
+	"mlab(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"mlab(0)" -> mlab	[label=assignedFrom];
+	truncnorm -> "scipy.stats"	[label=importedBy];
+	"truncnorm(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"truncnorm(0)" -> truncnorm	[label=assignedFrom];
+	"sklearn.mixture" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=importedBy];
+	GaussianMixture -> "sklearn.mixture"	[label=importedBy];
+	"GaussianMixture(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"GaussianMixture(0)" -> GaussianMixture	[label=assignedFrom];
+	"mydf(0)$2" -> "train_df(0)$1"	[label=assignedFrom];
+	"var_4(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"var(0)$2" -> "var_4(0)"	[label=assignedFrom];
+	"print[418/0]" -> "var(0)$2"	[label=print];
+	"2(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"n_components(0)$0" -> "2(0)"	[label=assignedFrom];
+	"mydf(0)$3" -> "mydf(0)$2"	[label=sort_values];
+	"mydf(0)$3" -> "var(0)$2"	[label=sort_values];
+	"samples(0)$0" -> "np(0)"	[label=array];
+	"samples(0)$0" -> "var(0)$2"	[label=array];
+	"samples(0)$0" -> "mydf(0)$3"	[label=array];
+	"samples_max(0)$0" -> "samples(0)$0"	[label=max];
+	"samples_min(0)$0" -> "samples(0)$0"	[label=min];
+	"mixture(0)$0" -> "GaussianMixture(0)"	[label=fit];
+	"mixture(0)$0" -> "n_components(0)$0"	[label=fit];
+	"mixture(0)$0" -> "samples(0)$0"	[label=fit];
+	"mixture(0)$0" -> "[<_ast.Constant object at 0x7fd5009c6040>, <_ast.Constant object at 0x7fd5009c6070>](0)"	[label=fit];
+	"mixture(0)$0" -> "[<_ast.List object at 0x7fd5009c6130>, <_ast.List object at 0x7fd5009c6190>](0)"	[label=fit];
+	"mixture(0)$0" -> "1(0)"	[label=fit];
+	"[<_ast.Constant object at 0x7fd5009c6040>, <_ast.Constant object at 0x7fd5009c6070>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"[<_ast.List object at 0x7fd5009c6130>, <_ast.List object at 0x7fd5009c6190>](0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"1(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"means_hat(0)$0" -> "mixture(0)$0"	[label=flatten];
+	"weights_hat(0)$0" -> "mixture(0)$0"	[label=flatten];
+	"sds_hat(0)$0" -> "np(0)"	[label=flatten];
+	"sds_hat(0)$0" -> "mixture(0)$0"	[label=flatten];
+	"m(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"means_hat(0)$1" -> "sds_hat(0)$0"	[label=assignedFrom];
+	"means_hat(0)$1" -> "m(0)"	[label=assignedFrom];
+	"means_hat(0)$1" -> "means_hat(0)$1"	[label=assignedFrom];
+	"means_hat(0)$1" -> "_(0)"	[label=assignedFrom];
+	"means_hat(0)$1" -> "sorted(0)"	[label=assignedFrom];
+	"means_hat(0)$1" -> "zip(0)"	[label=assignedFrom];
+	"_(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sorted(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"zip(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"s(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sds_hat(0)$1" -> "means_hat(0)$1"	[label=assignedFrom];
+	"sds_hat(0)$1" -> "_(0)"	[label=assignedFrom];
+	"sds_hat(0)$1" -> "sorted(0)"	[label=assignedFrom];
+	"sds_hat(0)$1" -> "zip(0)"	[label=assignedFrom];
+	"sds_hat(0)$1" -> "s(0)"	[label=assignedFrom];
+	"sds_hat(0)$1" -> "sds_hat(0)$1"	[label=assignedFrom];
+	"fig(0)$8" -> "plt(0)$6"	[label=subplots];
+	"ax1(0)$36" -> "plt(0)$6"	[label=subplots];
+	"ax2(0)$15" -> "ax1(0)$36"	[label=twinx];
+	"mu1_h(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"mu1_h(0)" -> "n_components(0)$0"	[label=iteratorOf];
+	"mu1_h(0)" -> "weights_hat(0)$0"	[label=iteratorOf];
+	"mu1_h(0)" -> "means_hat(0)$1"	[label=iteratorOf];
+	"mu1_h(0)" -> "zip(0)"	[label=iteratorOf];
+	"mu1_h(0)" -> "sds_hat(0)$1"	[label=iteratorOf];
+	"mu1_h(0)" -> "range(0)"	[label=iteratorOf];
+	"range(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sd1_h(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"sd1_h(0)" -> "n_components(0)$0"	[label=iteratorOf];
+	"sd1_h(0)" -> "weights_hat(0)$0"	[label=iteratorOf];
+	"sd1_h(0)" -> "means_hat(0)$1"	[label=iteratorOf];
+	"sd1_h(0)" -> "zip(0)"	[label=iteratorOf];
+	"sd1_h(0)" -> "sds_hat(0)$1"	[label=iteratorOf];
+	"sd1_h(0)" -> "range(0)"	[label=iteratorOf];
+	"weight(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"weight(0)" -> "n_components(0)$0"	[label=iteratorOf];
+	"weight(0)" -> "weights_hat(0)$0"	[label=iteratorOf];
+	"weight(0)" -> "means_hat(0)$1"	[label=iteratorOf];
+	"weight(0)" -> "zip(0)"	[label=iteratorOf];
+	"weight(0)" -> "sds_hat(0)$1"	[label=iteratorOf];
+	"weight(0)" -> "range(0)"	[label=iteratorOf];
+	"i(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"i(0)" -> "n_components(0)$0"	[label=iteratorOf];
+	"i(0)" -> "weights_hat(0)$0"	[label=iteratorOf];
+	"i(0)" -> "means_hat(0)$1"	[label=iteratorOf];
+	"i(0)" -> "zip(0)"	[label=iteratorOf];
+	"i(0)" -> "sds_hat(0)$1"	[label=iteratorOf];
+	"i(0)" -> "range(0)"	[label=iteratorOf];
+	"x_axis(0)$0" -> "np(0)"	[label=linspace];
+	"x_axis(0)$0" -> "samples(0)$0"	[label=linspace];
+	"x_axis(0)$0" -> "samples_max(0)$0"	[label=linspace];
+	"x_axis(0)$0" -> "samples_min(0)$0"	[label=linspace];
+	"x_axis(0)$0" -> "weight(0)"	[label=linspace];
+	"x_axis(0)$0" -> "int(0)"	[label=linspace];
+	"x_axis(0)$0" -> "len(0)"	[label=linspace];
+	"int(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"len(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"Y(0)$0" -> "np(0)"	[label=normal];
+	"Y(0)$0" -> "samples(0)$0"	[label=normal];
+	"Y(0)$0" -> "mu1_h(0)"	[label=normal];
+	"Y(0)$0" -> "sd1_h(0)"	[label=normal];
+	"Y(0)$0" -> "weight(0)"	[label=normal];
+	"Y(0)$0" -> "int(0)"	[label=normal];
+	"Y(0)$0" -> "len(0)"	[label=normal];
+	"Y(0)$1" -> "np(0)"	[label=exp];
+	"Y(0)$1" -> "mixture(0)$0"	[label=exp];
+	"Y(0)$1" -> "1(0)"	[label=exp];
+	"Y(0)$1" -> "x_axis(0)$0"	[label=exp];
+	"ax2(0)$16" -> "ax2(0)$15"	[label=plot];
+	"ax2(0)$16" -> "x_axis(0)$0"	[label=plot];
+	"ax2(0)$16" -> "Y(0)$1"	[label=plot];
+	"ax1(0)$37" -> "np(0)"	[label=hist];
+	"ax1(0)$37" -> "samples(0)$0"	[label=hist];
+	"ax1(0)$37" -> "ax1(0)$36"	[label=hist];
+	"ax1(0)$37" -> "mu1_h(0)"	[label=hist];
+	"ax1(0)$37" -> "sd1_h(0)"	[label=hist];
+	"ax1(0)$37" -> "weight(0)"	[label=hist];
+	"ax1(0)$37" -> "int(0)"	[label=hist];
+	"ax1(0)$37" -> "len(0)"	[label=hist];
+	"mydf(0)$4" -> "np(0)"	[label=assignedFrom];
+	"mydf(0)$4" -> "mydf(0)$3"	[label=assignedFrom];
+	"mydf(0)$5" -> "mydf(0)$4"	[label=sort_values];
+	"mydf(0)$5" -> "ID_code(0)"	[label=sort_values];
+	"ID_code(0)" -> "boosting-creativity-towards-feature-engineering.ipynb"	[label=appearsIn];
+	"plot_graph[456/0]" -> "train_df(0)$1"	[label=plot_graph];
+	"plot_graph[456/0]" -> "80(0)"	[label=plot_graph];
+	"plot_graph[456/0]" -> "var_4(0)"	[label=plot_graph];
+}
