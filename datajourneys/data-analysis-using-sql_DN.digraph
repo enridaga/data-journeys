@@ -1,0 +1,265 @@
+strict digraph "" {
+	node [label="\N"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#323945200"	[label="323945200 (teams(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="252510852 (conn(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#323945200" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="80085334 (pd(0): Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#323945200" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#4285012173"	[label="4285012173 (SELECT *
+                        FROM Team
+                        ORDER BY team_long_name
+                        LIMIT \
+10;(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#323945200" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#4285012173"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#552272907"	[label="552272907 (database(0)$0: Preparation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#252510852" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#552272907"	[label="connect ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#356385607"	[label="356385607 (sqlite3(0): Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#252510852" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#356385607"	[label="connect ()"];
+	"http://purl.org/dj/python/lib/144966264"	[label="144966264 (pandas: Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="data-analysis-using-sql (data-analysis-using-sql.ipynb)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#80085334" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#4285012173" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#253231747"	[label="253231747 (path(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#552272907" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#253231747"	[label="Add ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1109395063"	[label="1109395063 (database.sqlite(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#552272907" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1109395063"	[label="Add ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#356385607" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/199951046"	[label="199951046 (sqlite3: Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#356385607" -> "http://purl.org/dj/python/lib/199951046"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="1521289065 (leages_by_season(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1367571257"	[label="1367571257 (SELECT Country.name AS country_name, 
+                                        League.name AS league_name, 
+                                        \
+season,
+                                        count(distinct stage) AS number_of_stages,
+                                        \
+count(distinct HT.team_long_name) AS number_of_teams,
+                                        avg(home_team_goal) AS avg_home_team_\
+scors, 
+                                        avg(away_team_goal) AS avg_away_team_goals, 
+                                        \
+avg(home_team_goal-away_team_goal) AS avg_goal_dif, 
+                                        avg(home_team_goal+away_team_goal) \
+AS avg_goals, 
+                                        sum(home_team_goal+away_team_goal) AS total_goals                                       
+                                \
+FROM Match
+                                JOIN Country on Country.id = Match.country_id
+                                JOIN League \
+on League.id = Match.league_id
+                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
+                                \
+LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
+                                WHERE country_name in ('Spain', '\
+Germany', 'France', 'Italy', 'England')
+                                GROUP BY Country.name, League.name, season
+                                \
+HAVING count(distinct stage) > 10
+                                ORDER BY Country.name, League.name, season DESC
+                                ;(\
+0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1367571257"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1367571257" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#339280725"	[label="339280725 (Germany(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#339280725" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593"	[label="128647593 (df(0)$9: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="833488278 (country_name(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="788792660 (avg_goal_dif(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056"	[label="128582056 (df(0)$8: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128582056"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#213647997"	[label="213647997 (Spain(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128647593" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#213647997"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#833488278" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#788792660" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#339280725"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519"	[label="128516519 (df(0)$7: Preparation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128582056" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128516519"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#213647997" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#3770812953"	[label="3770812953 (SELECT *
+                        FROM Country;(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#3770812953" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122"	[label="158663122 (df(0)$11: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#214106757"	[label="214106757 (Italy(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#214106757"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585"	[label="158597585 (df(0)$10: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158663122" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#158597585"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#214106757" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128647593"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#265159377"	[label="265159377 (France(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158597585" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#265159377"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#265159377" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#395510609"	[label="395510609 (tables(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#395510609" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#395510609" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#3841070492"	[label="3841070492 (SELECT *
+                        FROM sqlite_master
+                        WHERE type='table';(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#395510609" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#3841070492"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#3841070492" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#293143307"	[label="293143307 (season(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#293143307"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#82575712"	[label="82575712 (np(0): Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128516519" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#82575712"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#293143307" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#82575712" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/111084090"	[label="111084090 (numpy: Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#82575712" -> "http://purl.org/dj/python/lib/111084090"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="511116341 (avg_goals(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#511116341" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834"	[label="128188834 (df(0)$2: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#213647997"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297"	[label="128123297 (df(0)$1: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128188834" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128123297"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#339280725"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760"	[label="128057760 (df(0)$0: Preparation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128123297" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128057760"	[label="list ()"];
+	"http://purl.org/dj/python/lib/111084090" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#385090412"	[label="385090412 (../input/(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#253231747" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#385090412"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1109395063" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#293143307"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128057760" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#82575712"	[label="DataFrame ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445"	[label="128385445 (df(0)$5: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908"	[label="128319908 (df(0)$4: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128319908"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#331547451"	[label="331547451 (England(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128385445" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#331547451"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#214106757"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371"	[label="128254371 (df(0)$3: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128319908" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128254371"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#331547451" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659"	[label="158728659 (df(0)$12: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#788792660"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#158663122"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158728659" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#331547451"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#385090412" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#127074770"	[label="127074770 (plt(0): Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#127074770" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/1065617167"	[label="1065617167 (matplotlib.pyplot: Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#127074770" -> "http://purl.org/dj/python/lib/1065617167"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/1065617167" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#477365180"	[label="477365180 (leagues(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#477365180" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#477365180" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#2934119632"	[label="2934119632 (SELECT *
+                        FROM League
+                        JOIN Country ON Country.id = League.country_id;(\
+0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#477365180" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#2934119632"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#2934119632" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1521289065"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#833488278"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#265159377"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#511116341"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128254371" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128188834"	[label="list ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#689112242"	[label="689112242 (countries(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#689112242" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#689112242" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#689112242" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#3770812953"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271727791"	[label="1271727791 (players_height(0)$1: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254"	[label="1271662254 (players_height(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271727791" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254"	[label="plot ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#2470193738"	[label="2470193738 (SELECT CASE
+                                        WHEN ROUND(height)<165 then 165
+                                        \
+WHEN ROUND(height)>195 then 195
+                                        ELSE ROUND(height)
+                                        \
+END AS calc_height, 
+                                        COUNT(height) AS distribution, 
+                                        (\
+avg(PA_Grouped.avg_overall_rating)) AS avg_overall_rating,
+                                        (avg(PA_Grouped.avg_potential)) \
+AS avg_potential,
+                                        AVG(weight) AS avg_weight 
+                            FROM PLAYER
+                            \
+LEFT JOIN (SELECT Player_Attributes.player_api_id, 
+                                        avg(Player_Attributes.overall_rating) \
+AS avg_overall_rating,
+                                        avg(Player_Attributes.potential) AS avg_potential  
+                                        \
+FROM Player_Attributes
+                                        GROUP BY Player_Attributes.player_api_id) 
+                                        \
+AS PA_Grouped ON PLAYER.player_api_id = PA_Grouped.player_api_id
+                            GROUP BY calc_height
+                            \
+ORDER BY calc_height
+                                ;(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1271662254" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#2470193738"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#2470193738" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158794196"	[label="158794196 (df(0)$13: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#158794196" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#158728659"	[label="plot ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1510213462"	[label="1510213462 (detailed_matches(0)$0: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1510213462" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#252510852"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1510213462" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#80085334"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1533800850"	[label="1533800850 (SELECT Match.id, 
+                                        Country.name AS country_name, 
+                                        \
+League.name AS league_name, 
+                                        season, 
+                                        stage, 
+                                        \
+date,
+                                        HT.team_long_name AS  home_team,
+                                        AT.team_long_\
+name AS away_team,
+                                        home_team_goal, 
+                                        away_team_goal                                        
+                                \
+FROM Match
+                                JOIN Country on Country.id = Match.country_id
+                                JOIN League \
+on League.id = Match.league_id
+                                LEFT JOIN Team AS HT on HT.team_api_id = Match.home_team_api_id
+                                \
+LEFT JOIN Team AS AT on AT.team_api_id = Match.away_team_api_id
+                                WHERE country_name = 'Spain'
+                                \
+ORDER by date
+                                LIMIT 10;(0): Reuse)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1510213462" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#1533800850"	[label="read_sql ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#1533800850" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/199951046" -> "http://purl.org/dj/kaggle/data-analysis-using-sql"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128450982"	[label="128450982 (df(0)$6: Visualisation)"];
+	"http://purl.org/dj/kaggle/data-analysis-using-sql#128450982" -> "http://purl.org/dj/kaggle/data-analysis-using-sql#128385445"	[label="plot ()"];
+}

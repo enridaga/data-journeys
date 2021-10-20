@@ -1,0 +1,661 @@
+digraph "" {
+	time -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"time(0)" -> time	[label=assignedFrom];
+	"time(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	random -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"random(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"random(0)" -> random	[label=assignedFrom];
+	os -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"os(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	"IPython.display" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	display -> "IPython.display"	[label=importedBy];
+	"display(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"display(0)" -> display	[label=assignedFrom];
+	numpy -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"np(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	pandas -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"pd(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	torch -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"torch(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"torch(0)" -> torch	[label=assignedFrom];
+	"torch.nn" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"nn(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"nn(0)" -> "torch.nn"	[label=assignedFrom];
+	"torch.utils.data" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	"torch.utils.data(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"torch.utils.data(0)" -> "torch.utils.data"	[label=assignedFrom];
+	"keras.preprocessing.text" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	Tokenizer -> "keras.preprocessing.text"	[label=importedBy];
+	"Tokenizer(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"Tokenizer(0)" -> Tokenizer	[label=assignedFrom];
+	"keras.preprocessing.sequence" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	pad_sequences -> "keras.preprocessing.sequence"	[label=importedBy];
+	"pad_sequences(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"pad_sequences(0)" -> pad_sequences	[label=assignedFrom];
+	"sklearn.model_selection" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	StratifiedKFold -> "sklearn.model_selection"	[label=importedBy];
+	"StratifiedKFold(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"StratifiedKFold(0)" -> StratifiedKFold	[label=assignedFrom];
+	"sklearn.metrics" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	f1_score -> "sklearn.metrics"	[label=importedBy];
+	"f1_score(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"f1_score(0)" -> f1_score	[label=assignedFrom];
+	tqdm -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=importedBy];
+	tqdm -> tqdm	[label=importedBy];
+	"tqdm(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"tqdm(0)" -> tqdm	[label=assignedFrom];
+	"tqdm(0)$0" -> "tqdm(0)"	[label=pandas];
+	"train_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_df(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"test_df(0)$0" -> "pd(0)"	[label=read_csv];
+	"test_df(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
+	"../input/test.csv(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"Train data dimension: (0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"print[28/0]" -> "train_df(0)$0"	[label=print];
+	"print[28/0]" -> "Train data dimension: (0)"	[label=print];
+	"display[29/0]" -> "train_df(0)$0"	[label=display];
+	"Test data dimension: (0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"print[30/0]" -> "test_df(0)$0"	[label=print];
+	"print[30/0]" -> "Test data dimension: (0)"	[label=print];
+	"display[31/0]" -> "test_df(0)$0"	[label=display];
+	"seed(1)" -> "seed_everything[0]"	[label=_argToVar];
+	"random(1)$0" -> "seed(1)"	[label=seed];
+	"random(1)$0" -> "random(1)"	[label=seed];
+	"os(1)$0" -> "seed(1)"	[label=str];
+	"os(1)$0" -> "os(1)"	[label=str];
+	"np(1)$0" -> "seed(1)"	[label=seed];
+	"np(1)$0" -> "np(1)"	[label=seed];
+	"torch(1)$0" -> "seed(1)"	[label=manual_seed];
+	"torch(1)$0" -> "torch(1)"	[label=manual_seed];
+	"torch(1)$1" -> "seed(1)"	[label=manual_seed];
+	"torch(1)$1" -> "torch(1)$0"	[label=manual_seed];
+	"torch(1)$2" -> "torch(1)$1"	[label=assignedFrom];
+	"torch(1)$2" -> "True(1)"	[label=assignedFrom];
+	"y_true(2)" -> "threshold_search[0]"	[label=_argToVar];
+	"y_proba(2)" -> "threshold_search[1]"	[label=_argToVar];
+	"best_threshold(2)$0" -> "0(2)"	[label=assignedFrom];
+	"best_score(2)$0" -> "0(2)"	[label=assignedFrom];
+	"threshold(2)" -> "tqdm(2)"	[label=iteratorOf];
+	"threshold(2)" -> "i(2)"	[label=iteratorOf];
+	"threshold(2)" -> "0.01(2)"	[label=iteratorOf];
+	"threshold(2)" -> "range(2)"	[label=iteratorOf];
+	"threshold(2)" -> "100(2)"	[label=iteratorOf];
+	"score(2)$0" -> "y_true(2)"	[label=f1_score];
+	"score(2)$0" -> "y_proba(2)"	[label=f1_score];
+	"score(2)$0" -> "threshold(2)"	[label=f1_score];
+	"best_threshold(2)$1" -> "threshold(2)"	[label=assignedFrom];
+	"best_score(2)$1" -> "score(2)$0"	[label=assignedFrom];
+	"search_result(2)$0" -> "threshold(2)"	[label=assignedFrom];
+	"search_result(2)$0" -> "best_threshold(2)$1"	[label=assignedFrom];
+	"search_result(2)$0" -> "best_score(2)$1"	[label=assignedFrom];
+	"search_result(2)$0" -> "f1(2)"	[label=assignedFrom];
+	"x(3)" -> "sigmoid[0]"	[label=_argToVar];
+	"300(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"embed_size(0)$0" -> "300(0)"	[label=assignedFrom];
+	"95000(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"max_features(0)$0" -> "95000(0)"	[label=assignedFrom];
+	"70(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"maxlen(0)$0" -> "70(0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0640>, <_\
+ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant \
+object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f07f0>, <_ast.Constant object \
+at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f0370>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at \
+0x7fd5007f0790>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0340>, <_\
+ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant \
+object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object \
+at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f0d60>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at \
+0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant \
+object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object \
+at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at \
+0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f07c0>, <_\
+ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant \
+object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object \
+at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0b20>, <_ast.Constant object at \
+0x7fd5007f0700>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0550>, <_\
+ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant \
+object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f0fd0>, <_ast.Constant object \
+at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at \
+0x7fd5007f06a0>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at 0x7fd50085b2b0>, <_\
+ast.Constant object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd50085ba30>, <_ast.Constant object at 0x7fd50085b7f0>, <_ast.Constant \
+object at 0x7fd50085baf0>, <_ast.Constant object at 0x7fd50085b6a0>, <_ast.Constant object at 0x7fd50085bd30>, <_ast.Constant object \
+at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b4f0>, <_ast.Constant object at \
+0x7fd50085b700>, <_ast.Constant object at 0x7fd50085bf70>, <_ast.Constant object at 0x7fd50085bc10>, <_ast.Constant object at 0x7fd50085b3a0>, <_\
+ast.Constant object at 0x7fd50085b670>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b430>, <_ast.Constant \
+object at 0x7fd50085b2e0>, <_ast.Constant object at 0x7fd50085bb80>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object \
+at 0x7fd50085b040>, <_ast.Constant object at 0x7fd50085b850>, <_ast.Constant object at 0x7fd50085bfd0>, <_ast.Constant object at \
+0x7fd50085b0a0>, <_ast.Constant object at 0x7fd50085b280>, <_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085bb20>, <_\
+ast.Constant object at 0x7fd50085bd00>, <_ast.Constant object at 0x7fd50085b910>, <_ast.Constant object at 0x7fd50085b310>, <_ast.Constant \
+object at 0x7fd50085bbb0>, <_ast.Constant object at 0x7fd50085bca0>, <_ast.Constant object at 0x7fd50085bac0>, <_ast.Constant object \
+at 0x7fd50085bdc0>, <_ast.Constant object at 0x7fd50085b1f0>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at \
+0x7fd50085bee0>, <_ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085b9a0>, <_ast.Constant object at 0x7fd50085b340>, <_\
+ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b760>, <_ast.Constant \
+object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b790>, <_ast.Constant object \
+at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085bd90>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at \
+0x7fd50085bc70>, <_ast.Constant object at 0x7fd50085bd60>, <_ast.Constant object at 0x7fd50085bcd0>, <_ast.Constant object at 0x7fd50085bc40>, <_\
+ast.Constant object at 0x7fd50085b8b0>, <_ast.Constant object at 0x7fd50085bdf0>, <_ast.Constant object at 0x7fd50085bfa0>, <_ast.Constant \
+object at 0x7fd50085ba90>, <_ast.Constant object at 0x7fd50085b5b0>, <_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object \
+at 0x7fd50085b970>, <_ast.Constant object at 0x7fd50085b370>, <_ast.Constant object at 0x7fd50085b520>, <_ast.Constant object at \
+0x7fd50085b7c0>](0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"puncts(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant object at 0x7fd5007f0640>, <_\
+ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant \
+object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f07f0>, <_ast.Constant object \
+at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f0370>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at \
+0x7fd5007f0790>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f0340>, <_\
+ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant \
+object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object \
+at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f0d60>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at \
+0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0d00>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant \
+object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0a00>, <_ast.Constant object \
+at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at \
+0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f07c0>, <_\
+ast.Constant object at 0x7fd5007f05b0>, <_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant \
+object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object \
+at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0b20>, <_ast.Constant object at \
+0x7fd5007f0700>, <_ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0550>, <_\
+ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant \
+object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f0fd0>, <_ast.Constant object \
+at 0x7fd5007f0580>, <_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at \
+0x7fd5007f06a0>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at 0x7fd50085b2b0>, <_\
+ast.Constant object at 0x7fd50085b130>, <_ast.Constant object at 0x7fd50085ba30>, <_ast.Constant object at 0x7fd50085b7f0>, <_ast.Constant \
+object at 0x7fd50085baf0>, <_ast.Constant object at 0x7fd50085b6a0>, <_ast.Constant object at 0x7fd50085bd30>, <_ast.Constant object \
+at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085b8e0>, <_ast.Constant object at 0x7fd50085b4f0>, <_ast.Constant object at \
+0x7fd50085b700>, <_ast.Constant object at 0x7fd50085bf70>, <_ast.Constant object at 0x7fd50085bc10>, <_ast.Constant object at 0x7fd50085b3a0>, <_\
+ast.Constant object at 0x7fd50085b670>, <_ast.Constant object at 0x7fd50085b640>, <_ast.Constant object at 0x7fd50085b430>, <_ast.Constant \
+object at 0x7fd50085b2e0>, <_ast.Constant object at 0x7fd50085bb80>, <_ast.Constant object at 0x7fd50085b460>, <_ast.Constant object \
+at 0x7fd50085b040>, <_ast.Constant object at 0x7fd50085b850>, <_ast.Constant object at 0x7fd50085bfd0>, <_ast.Constant object at \
+0x7fd50085b0a0>, <_ast.Constant object at 0x7fd50085b280>, <_ast.Constant object at 0x7fd50085b400>, <_ast.Constant object at 0x7fd50085bb20>, <_\
+ast.Constant object at 0x7fd50085bd00>, <_ast.Constant object at 0x7fd50085b910>, <_ast.Constant object at 0x7fd50085b310>, <_ast.Constant \
+object at 0x7fd50085bbb0>, <_ast.Constant object at 0x7fd50085bca0>, <_ast.Constant object at 0x7fd50085bac0>, <_ast.Constant object \
+at 0x7fd50085bdc0>, <_ast.Constant object at 0x7fd50085b1f0>, <_ast.Constant object at 0x7fd50085b6d0>, <_ast.Constant object at \
+0x7fd50085bee0>, <_ast.Constant object at 0x7fd50085b220>, <_ast.Constant object at 0x7fd50085b9a0>, <_ast.Constant object at 0x7fd50085b340>, <_\
+ast.Constant object at 0x7fd50085b100>, <_ast.Constant object at 0x7fd50085beb0>, <_ast.Constant object at 0x7fd50085b760>, <_ast.Constant \
+object at 0x7fd50085be20>, <_ast.Constant object at 0x7fd50085b250>, <_ast.Constant object at 0x7fd50085b790>, <_ast.Constant object \
+at 0x7fd50085bb50>, <_ast.Constant object at 0x7fd50085bd90>, <_ast.Constant object at 0x7fd50085bf40>, <_ast.Constant object at \
+0x7fd50085bc70>, <_ast.Constant object at 0x7fd50085bd60>, <_ast.Constant object at 0x7fd50085bcd0>, <_ast.Constant object at 0x7fd50085bc40>, <_\
+ast.Constant object at 0x7fd50085b8b0>, <_ast.Constant object at 0x7fd50085bdf0>, <_ast.Constant object at 0x7fd50085bfa0>, <_ast.Constant \
+object at 0x7fd50085ba90>, <_ast.Constant object at 0x7fd50085b5b0>, <_ast.Constant object at 0x7fd50085b160>, <_ast.Constant object \
+at 0x7fd50085b970>, <_ast.Constant object at 0x7fd50085b370>, <_ast.Constant object at 0x7fd50085b520>, <_ast.Constant object at \
+0x7fd50085b7c0>](0)"	[label=assignedFrom];
+	"x(4)" -> "clean_text[0]"	[label=_argToVar];
+	"x(4)$0" -> "x(4)"	[label=str];
+	"punct(4)" -> "puncts(4)"	[label=iteratorOf];
+	"x(4)$1" -> "x(4)$0"	[label=replace];
+	"x(4)$1" -> "punct(4)"	[label=replace];
+	"x(4)$1" -> " (4)"	[label=replace];
+	"train_df(0)$1" -> "train_df(0)$0"	[label=lower];
+	"train_df(0)$1" -> "question_text(0)"	[label=lower];
+	"question_text(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"test_df(0)$1" -> "test_df(0)$0"	[label=lower];
+	"test_df(0)$1" -> "question_text(0)"	[label=lower];
+	"train_df(0)$2" -> "train_df(0)$1"	[label=apply];
+	"train_df(0)$2" -> "question_text(0)"	[label=apply];
+	"train_df(0)$2" -> "clean_text(0)"	[label=apply];
+	"train_df(0)$2" -> "x(0)"	[label=apply];
+	"clean_text(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"x(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"test_df(0)$2" -> "question_text(0)"	[label=apply];
+	"test_df(0)$2" -> "test_df(0)$1"	[label=apply];
+	"test_df(0)$2" -> "clean_text(0)"	[label=apply];
+	"test_df(0)$2" -> "x(0)"	[label=apply];
+	"x_train(0)$0" -> "question_text(0)"	[label=assignedFrom];
+	"x_train(0)$0" -> "train_df(0)$2"	[label=assignedFrom];
+	"x_train(0)$0" -> "_##_(0)"	[label=assignedFrom];
+	"_##_(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"x_test(0)$0" -> "question_text(0)"	[label=assignedFrom];
+	"x_test(0)$0" -> "test_df(0)$2"	[label=assignedFrom];
+	"x_test(0)$0" -> "_##_(0)"	[label=assignedFrom];
+	"tokenizer(0)$0" -> "max_features(0)$0"	[label=Tokenizer];
+	"tokenizer(0)$1" -> "x_train(0)$0"	[label=fit_on_texts];
+	"tokenizer(0)$1" -> "tokenizer(0)$0"	[label=fit_on_texts];
+	"tokenizer(0)$1" -> "list(0)"	[label=fit_on_texts];
+	"list(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"x_train(0)$1" -> "tokenizer(0)$1"	[label=texts_to_sequences];
+	"x_train(0)$1" -> "x_train(0)$1"	[label=texts_to_sequences];
+	"x_test(0)$1" -> "tokenizer(0)$1"	[label=texts_to_sequences];
+	"x_test(0)$1" -> "x_test(0)$1"	[label=texts_to_sequences];
+	"x_train(0)$2" -> "maxlen(0)$0"	[label=pad_sequences];
+	"x_train(0)$2" -> "x_train(0)$1"	[label=pad_sequences];
+	"x_test(0)$2" -> "maxlen(0)$0"	[label=pad_sequences];
+	"x_test(0)$2" -> "x_test(0)$1"	[label=pad_sequences];
+	"y_train(0)$0" -> "train_df(0)$2"	[label=assignedFrom];
+	"y_train(0)$0" -> "target(0)"	[label=assignedFrom];
+	"target(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"word_index(5)" -> "load_glove[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(5)$0" -> "../input/embeddings/glove.840B.300d/glove.840B.300d.txt(5)"	[label=assignedFrom];
+	"word(6)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(5)$0" -> "EMBEDDING_FILE(5)$0"	[label=dict];
+	"embeddings_index(5)$0" -> "get_coefs(5)"	[label=dict];
+	"embeddings_index(5)$0" -> "o(5)"	[label=dict];
+	"embeddings_index(5)$0" -> " (5)"	[label=dict];
+	"embeddings_index(5)$0" -> "open(5)"	[label=dict];
+	"all_embs(5)$0" -> "embeddings_index(5)$0"	[label=stack];
+	"all_embs(5)$0" -> "np(5)"	[label=stack];
+	"emb_mean(5)$0" -> "0.005838499(5)"	[label=assignedFrom];
+	"emb_mean(5)$0" -> "0.48782197(5)"	[label=assignedFrom];
+	"emb_std(5)$0" -> "0.005838499(5)"	[label=assignedFrom];
+	"emb_std(5)$0" -> "0.48782197(5)"	[label=assignedFrom];
+	"embed_size(5)$0" -> "all_embs(5)$0"	[label=assignedFrom];
+	"embed_size(5)$0" -> "1(5)"	[label=assignedFrom];
+	"nb_words(5)$0" -> "word_index(5)"	[label=min];
+	"nb_words(5)$0" -> "max_features(5)"	[label=min];
+	"nb_words(5)$0" -> "len(5)"	[label=min];
+	"embedding_matrix(5)$0" -> "np(5)"	[label=normal];
+	"embedding_matrix(5)$0" -> "emb_mean(5)$0"	[label=normal];
+	"embedding_matrix(5)$0" -> "emb_std(5)$0"	[label=normal];
+	"embedding_matrix(5)$0" -> "embed_size(5)$0"	[label=normal];
+	"embedding_matrix(5)$0" -> "nb_words(5)$0"	[label=normal];
+	"word(5)" -> "word_index(5)"	[label=iteratorOf];
+	"i(5)" -> "word_index(5)"	[label=iteratorOf];
+	"embedding_vector(5)$0" -> "embeddings_index(5)$0"	[label=get];
+	"embedding_vector(5)$0" -> "word(5)"	[label=get];
+	"embedding_matrix(5)$1" -> "embedding_matrix(5)$0"	[label=assignedFrom];
+	"embedding_matrix(5)$1" -> "embedding_vector(5)$0"	[label=assignedFrom];
+	"word_index(7)" -> "load_fasttext[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(7)$0" -> "../input/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec(7)"	[label=assignedFrom];
+	"word(8)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(7)$0" -> "EMBEDDING_FILE(7)$0"	[label=dict];
+	"embeddings_index(7)$0" -> "get_coefs(7)"	[label=dict];
+	"embeddings_index(7)$0" -> "o(7)"	[label=dict];
+	"embeddings_index(7)$0" -> " (7)"	[label=dict];
+	"embeddings_index(7)$0" -> "open(7)"	[label=dict];
+	"embeddings_index(7)$0" -> "len(7)"	[label=dict];
+	"embeddings_index(7)$0" -> "100(7)"	[label=dict];
+	"all_embs(7)$0" -> "embeddings_index(7)$0"	[label=stack];
+	"all_embs(7)$0" -> "np(7)"	[label=stack];
+	"emb_mean(7)$0" -> "all_embs(7)$0"	[label=assignedFrom];
+	"emb_std(7)$0" -> "all_embs(7)$0"	[label=assignedFrom];
+	"embed_size(7)$0" -> "all_embs(7)$0"	[label=assignedFrom];
+	"embed_size(7)$0" -> "1(7)"	[label=assignedFrom];
+	"nb_words(7)$0" -> "word_index(7)"	[label=min];
+	"nb_words(7)$0" -> "len(7)"	[label=min];
+	"nb_words(7)$0" -> "max_features(7)"	[label=min];
+	"embedding_matrix(7)$0" -> "np(7)"	[label=normal];
+	"embedding_matrix(7)$0" -> "emb_mean(7)$0"	[label=normal];
+	"embedding_matrix(7)$0" -> "emb_std(7)$0"	[label=normal];
+	"embedding_matrix(7)$0" -> "embed_size(7)$0"	[label=normal];
+	"embedding_matrix(7)$0" -> "nb_words(7)$0"	[label=normal];
+	"word(7)" -> "word_index(7)"	[label=iteratorOf];
+	"i(7)" -> "word_index(7)"	[label=iteratorOf];
+	"embedding_vector(7)$0" -> "embeddings_index(7)$0"	[label=get];
+	"embedding_vector(7)$0" -> "word(7)"	[label=get];
+	"embedding_matrix(7)$1" -> "embedding_matrix(7)$0"	[label=assignedFrom];
+	"embedding_matrix(7)$1" -> "embedding_vector(7)$0"	[label=assignedFrom];
+	"word_index(9)" -> "load_para[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(9)$0" -> "../input/embeddings/paragram_300_sl999/paragram_300_sl999.txt(9)"	[label=assignedFrom];
+	"word(10)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(9)$0" -> "EMBEDDING_FILE(9)$0"	[label=dict];
+	"embeddings_index(9)$0" -> "get_coefs(9)"	[label=dict];
+	"embeddings_index(9)$0" -> "o(9)"	[label=dict];
+	"embeddings_index(9)$0" -> " (9)"	[label=dict];
+	"embeddings_index(9)$0" -> "open(9)"	[label=dict];
+	"embeddings_index(9)$0" -> "utf8(9)"	[label=dict];
+	"embeddings_index(9)$0" -> "ignore(9)"	[label=dict];
+	"embeddings_index(9)$0" -> "len(9)"	[label=dict];
+	"embeddings_index(9)$0" -> "100(9)"	[label=dict];
+	"all_embs(9)$0" -> "embeddings_index(9)$0"	[label=stack];
+	"all_embs(9)$0" -> "np(9)"	[label=stack];
+	"emb_mean(9)$0" -> "0.0053247833(9)"	[label=assignedFrom];
+	"emb_mean(9)$0" -> "0.49346462(9)"	[label=assignedFrom];
+	"emb_std(9)$0" -> "0.0053247833(9)"	[label=assignedFrom];
+	"emb_std(9)$0" -> "0.49346462(9)"	[label=assignedFrom];
+	"embed_size(9)$0" -> "all_embs(9)$0"	[label=assignedFrom];
+	"embed_size(9)$0" -> "1(9)"	[label=assignedFrom];
+	"nb_words(9)$0" -> "word_index(9)"	[label=min];
+	"nb_words(9)$0" -> "len(9)"	[label=min];
+	"nb_words(9)$0" -> "max_features(9)"	[label=min];
+	"embedding_matrix(9)$0" -> "np(9)"	[label=normal];
+	"embedding_matrix(9)$0" -> "emb_mean(9)$0"	[label=normal];
+	"embedding_matrix(9)$0" -> "emb_std(9)$0"	[label=normal];
+	"embedding_matrix(9)$0" -> "embed_size(9)$0"	[label=normal];
+	"embedding_matrix(9)$0" -> "nb_words(9)$0"	[label=normal];
+	"word(9)" -> "word_index(9)"	[label=iteratorOf];
+	"i(9)" -> "word_index(9)"	[label=iteratorOf];
+	"embedding_vector(9)$0" -> "embeddings_index(9)$0"	[label=get];
+	"embedding_vector(9)$0" -> "word(9)"	[label=get];
+	"embedding_matrix(9)$1" -> "embedding_matrix(9)$0"	[label=assignedFrom];
+	"embedding_matrix(9)$1" -> "embedding_vector(9)$0"	[label=assignedFrom];
+	"glove_embeddings(0)$0" -> "tokenizer(0)$1"	[label=load_glove];
+	"paragram_embeddings(0)$0" -> "tokenizer(0)$1"	[label=load_para];
+	"embedding_matrix(0)$0" -> "np(0)"	[label=mean];
+	"embedding_matrix(0)$0" -> "[<_ast.Name object at 0x7fd4d02ddf40>, <_ast.Name object at 0x7fd4d02dd8b0>](0)"	[label=mean];
+	"embedding_matrix(0)$0" -> "0(0)"	[label=mean];
+	"[<_ast.Name object at 0x7fd4d02ddf40>, <_ast.Name object at 0x7fd4d02dd8b0>](0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"0(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"np(0)$0" -> "np(0)"	[label=shape];
+	"np(0)$0" -> "embedding_matrix(0)$0"	[label=shape];
+	"splits(0)$0" -> "StratifiedKFold(0)"	[label=list];
+	"splits(0)$0" -> "x_train(0)$2"	[label=list];
+	"splits(0)$0" -> "y_train(0)$0"	[label=list];
+	"splits(0)$0" -> "5(0)"	[label=list];
+	"splits(0)$0" -> "True(0)"	[label=list];
+	"splits(0)$0" -> "10(0)"	[label=list];
+	"5(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"True(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"10(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"self(12)" -> "__init__[0]"	[label=_argToVar];
+	"feature_dim(12)" -> "__init__[1]"	[label=_argToVar];
+	"step_dim(12)" -> "__init__[2]"	[label=_argToVar];
+	"bias(12)" -> "__init__[3]"	[label=_argToVar];
+	"super(12)$0" -> "super(12)"	[label=__init__];
+	"self(12)$0" -> "self(12)"	[label=assignedFrom];
+	"self(12)$0" -> "True(12)"	[label=assignedFrom];
+	"self(12)$1" -> "bias(12)"	[label=assignedFrom];
+	"self(12)$1" -> "self(12)$0"	[label=assignedFrom];
+	"self(12)$2" -> "feature_dim(12)"	[label=assignedFrom];
+	"self(12)$2" -> "self(12)$1"	[label=assignedFrom];
+	"self(12)$3" -> "step_dim(12)"	[label=assignedFrom];
+	"self(12)$3" -> "self(12)$2"	[label=assignedFrom];
+	"self(12)$4" -> "self(12)$3"	[label=assignedFrom];
+	"self(12)$4" -> "0(12)"	[label=assignedFrom];
+	"weight(12)$0" -> "feature_dim(12)"	[label=zeros];
+	"weight(12)$0" -> "torch(12)"	[label=zeros];
+	"weight(12)$0" -> "1(12)"	[label=zeros];
+	"nn(12)$0" -> "weight(12)$0"	[label=xavier_uniform_];
+	"nn(12)$0" -> "nn(12)"	[label=xavier_uniform_];
+	"self(12)$5" -> "self(12)$4"	[label=Parameter];
+	"self(12)$5" -> "weight(12)$0"	[label=Parameter];
+	"self(12)$5" -> "nn(12)$0"	[label=Parameter];
+	"self(12)$6" -> "step_dim(12)"	[label=Parameter];
+	"self(12)$6" -> "torch(12)"	[label=Parameter];
+	"self(12)$6" -> "nn(12)$0"	[label=Parameter];
+	"self(12)$6" -> "self(12)$5"	[label=Parameter];
+	"self(13)" -> "forward[0]"	[label=_argToVar];
+	"x(13)" -> "forward[1]"	[label=_argToVar];
+	"mask(13)" -> "forward[2]"	[label=_argToVar];
+	"feature_dim(13)$0" -> "self(13)"	[label=assignedFrom];
+	"step_dim(13)$0" -> "self(13)"	[label=assignedFrom];
+	"eij(13)$0" -> "self(13)"	[label=view];
+	"eij(13)$0" -> "x(13)"	[label=view];
+	"eij(13)$0" -> "feature_dim(13)$0"	[label=view];
+	"eij(13)$0" -> "step_dim(13)$0"	[label=view];
+	"eij(13)$0" -> "torch(13)"	[label=view];
+	"eij(13)$0" -> "1(13)"	[label=view];
+	"eij(13)$1" -> "self(13)"	[label=Add];
+	"eij(13)$1" -> "eij(13)$0"	[label=Add];
+	"eij(13)$2" -> "torch(13)"	[label=tanh];
+	"eij(13)$2" -> "eij(13)$2"	[label=tanh];
+	"a(13)$0" -> "torch(13)"	[label=exp];
+	"a(13)$0" -> "eij(13)$2"	[label=exp];
+	"a(13)$1" -> "mask(13)"	[label=Mult];
+	"a(13)$1" -> "a(13)$0"	[label=Mult];
+	"a(13)$2" -> "torch(13)"	[label=Add];
+	"a(13)$2" -> "1(13)"	[label=Add];
+	"a(13)$2" -> "a(13)$1"	[label=Add];
+	"a(13)$2" -> "a(13)$2"	[label=Add];
+	"a(13)$2" -> "True(13)"	[label=Add];
+	"a(13)$2" -> "1e-10(13)"	[label=Add];
+	"weighted_input(13)$0" -> "x(13)"	[label=Mult];
+	"weighted_input(13)$0" -> "torch(13)"	[label=Mult];
+	"weighted_input(13)$0" -> "1(13)"	[label=Mult];
+	"weighted_input(13)$0" -> "a(13)$2"	[label=Mult];
+	"self(15)" -> "forward[0]"	[label=_argToVar];
+	"x(15)" -> "forward[1]"	[label=_argToVar];
+	"x(15)$0" -> "x(15)"	[label=unsqueeze];
+	"x(15)$0" -> "2(15)"	[label=unsqueeze];
+	"x(15)$1" -> "x(15)$0"	[label=permute];
+	"x(15)$1" -> "2(15)"	[label=permute];
+	"x(15)$1" -> "0(15)"	[label=permute];
+	"x(15)$1" -> "3(15)"	[label=permute];
+	"x(15)$1" -> "1(15)"	[label=permute];
+	"x(15)$2" -> "self(15)"	[label=forward];
+	"x(15)$2" -> "x(15)$2"	[label=forward];
+	"x(15)$2" -> "super(15)"	[label=forward];
+	"x(15)$2" -> "SpatialDropout(15)"	[label=forward];
+	"x(15)$3" -> "2(15)"	[label=permute];
+	"x(15)$3" -> "0(15)"	[label=permute];
+	"x(15)$3" -> "3(15)"	[label=permute];
+	"x(15)$3" -> "1(15)"	[label=permute];
+	"x(15)$3" -> "x(15)$2"	[label=permute];
+	"x(15)$4" -> "2(15)"	[label=squeeze];
+	"x(15)$4" -> "x(15)$3"	[label=squeeze];
+	"self(17)" -> "__init__[0]"	[label=_argToVar];
+	"super(17)$0" -> "super(17)"	[label=__init__];
+	"hidden_size(17)$0" -> "40(17)"	[label=assignedFrom];
+	"self(17)$0" -> "self(17)"	[label=Embedding];
+	"self(17)$0" -> "nn(17)"	[label=Embedding];
+	"self(17)$0" -> "max_features(17)"	[label=Embedding];
+	"self(17)$0" -> "embed_size(17)"	[label=Embedding];
+	"self(17)$1" -> "self(17)$0"	[label=Parameter];
+	"self(17)$1" -> "nn(17)"	[label=Parameter];
+	"self(17)$1" -> "torch(17)"	[label=Parameter];
+	"self(17)$1" -> "embedding_matrix(17)"	[label=Parameter];
+	"self(17)$2" -> "self(17)$1"	[label=assignedFrom];
+	"self(17)$2" -> "False(17)"	[label=assignedFrom];
+	"self(17)$3" -> "self(17)$2"	[label=SpatialDropout];
+	"self(17)$3" -> "0.1(17)"	[label=SpatialDropout];
+	"self(17)$4" -> "hidden_size(17)$0"	[label=LSTM];
+	"self(17)$4" -> "nn(17)"	[label=LSTM];
+	"self(17)$4" -> "embed_size(17)"	[label=LSTM];
+	"self(17)$4" -> "self(17)$3"	[label=LSTM];
+	"self(17)$4" -> "True(17)"	[label=LSTM];
+	"self(17)$5" -> "hidden_size(17)$0"	[label=GRU];
+	"self(17)$5" -> "nn(17)"	[label=GRU];
+	"self(17)$5" -> "self(17)$4"	[label=GRU];
+	"self(17)$5" -> "True(17)"	[label=GRU];
+	"self(17)$5" -> "2(17)"	[label=GRU];
+	"self(17)$6" -> "hidden_size(17)$0"	[label=Attention];
+	"self(17)$6" -> "self(17)$5"	[label=Attention];
+	"self(17)$6" -> "2(17)"	[label=Attention];
+	"self(17)$6" -> "maxlen(17)"	[label=Attention];
+	"self(17)$7" -> "hidden_size(17)$0"	[label=Attention];
+	"self(17)$7" -> "2(17)"	[label=Attention];
+	"self(17)$7" -> "self(17)$6"	[label=Attention];
+	"self(17)$7" -> "maxlen(17)"	[label=Attention];
+	"self(17)$8" -> "nn(17)"	[label=Linear];
+	"self(17)$8" -> "self(17)$7"	[label=Linear];
+	"self(17)$8" -> "320(17)"	[label=Linear];
+	"self(17)$8" -> "16(17)"	[label=Linear];
+	"self(17)$9" -> "nn(17)"	[label=ReLU];
+	"self(17)$9" -> "self(17)$8"	[label=ReLU];
+	"self(17)$10" -> "nn(17)"	[label=Dropout];
+	"self(17)$10" -> "0.1(17)"	[label=Dropout];
+	"self(17)$10" -> "self(17)$9"	[label=Dropout];
+	"self(17)$11" -> "nn(17)"	[label=Linear];
+	"self(17)$11" -> "16(17)"	[label=Linear];
+	"self(17)$11" -> "self(17)$10"	[label=Linear];
+	"self(17)$11" -> "1(17)"	[label=Linear];
+	"self(18)" -> "forward[0]"	[label=_argToVar];
+	"x(18)" -> "forward[1]"	[label=_argToVar];
+	"h_embedding(18)$0" -> "self(18)"	[label=embedding];
+	"h_embedding(18)$0" -> "x(18)"	[label=embedding];
+	"h_embedding(18)$1" -> "self(18)"	[label=embedding_dropout];
+	"h_embedding(18)$1" -> "h_embedding(18)$1"	[label=embedding_dropout];
+	"h_lstm(18)$0" -> "self(18)"	[label=lstm];
+	"h_lstm(18)$0" -> "h_embedding(18)$1"	[label=lstm];
+	"_(18)$0" -> "self(18)"	[label=lstm];
+	"_(18)$0" -> "h_embedding(18)$1"	[label=lstm];
+	"h_gru(18)$0" -> "self(18)"	[label=gru];
+	"h_gru(18)$0" -> "h_lstm(18)$0"	[label=gru];
+	"_(18)$1" -> "self(18)"	[label=gru];
+	"_(18)$1" -> "h_lstm(18)$0"	[label=gru];
+	"h_lstm_atten(18)$0" -> "self(18)"	[label=lstm_attention];
+	"h_lstm_atten(18)$0" -> "h_lstm(18)$0"	[label=lstm_attention];
+	"h_gru_atten(18)$0" -> "self(18)"	[label=gru_attention];
+	"h_gru_atten(18)$0" -> "h_gru(18)$0"	[label=gru_attention];
+	"avg_pool(18)$0" -> "h_gru(18)$0"	[label=mean];
+	"avg_pool(18)$0" -> "torch(18)"	[label=mean];
+	"avg_pool(18)$0" -> "1(18)"	[label=mean];
+	"max_pool(18)$0" -> "h_gru(18)$0"	[label=max];
+	"max_pool(18)$0" -> "torch(18)"	[label=max];
+	"max_pool(18)$0" -> "1(18)"	[label=max];
+	"_(18)$2" -> "h_gru(18)$0"	[label=max];
+	"_(18)$2" -> "torch(18)"	[label=max];
+	"_(18)$2" -> "1(18)"	[label=max];
+	"conc(18)$0" -> "h_lstm_atten(18)$0"	[label=cat];
+	"conc(18)$0" -> "h_gru_atten(18)$0"	[label=cat];
+	"conc(18)$0" -> "avg_pool(18)$0"	[label=cat];
+	"conc(18)$0" -> "torch(18)"	[label=cat];
+	"conc(18)$0" -> "1(18)"	[label=cat];
+	"conc(18)$0" -> "max_pool(18)$0"	[label=cat];
+	"conc(18)$1" -> "self(18)"	[label=relu];
+	"conc(18)$1" -> "conc(18)$1"	[label=relu];
+	"conc(18)$2" -> "self(18)"	[label=dropout];
+	"conc(18)$2" -> "conc(18)$2"	[label=dropout];
+	"out(18)$0" -> "self(18)"	[label=out];
+	"out(18)$0" -> "conc(18)$2"	[label=out];
+	"512(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"batch_size(0)$0" -> "512(0)"	[label=assignedFrom];
+	"6(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"n_epochs(0)$0" -> "6(0)"	[label=assignedFrom];
+	"train_preds(0)$0" -> "train_df(0)$2"	[label=zeros];
+	"train_preds(0)$0" -> "np(0)$0"	[label=zeros];
+	"train_preds(0)$0" -> "len(0)"	[label=zeros];
+	"len(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"test_preds(0)$0" -> "test_df(0)$2"	[label=zeros];
+	"test_preds(0)$0" -> "np(0)$0"	[label=zeros];
+	"test_preds(0)$0" -> "len(0)"	[label=zeros];
+	"x_test_cuda(0)$0" -> "torch(0)"	[label=cuda];
+	"x_test_cuda(0)$0" -> "x_test(0)$2"	[label=cuda];
+	"test(0)$0" -> "torch(0)"	[label=TensorDataset];
+	"test(0)$0" -> "x_test_cuda(0)$0"	[label=TensorDataset];
+	"test_loader(0)$0" -> "torch(0)"	[label=DataLoader];
+	"test_loader(0)$0" -> "batch_size(0)$0"	[label=DataLoader];
+	"test_loader(0)$0" -> "test(0)$0"	[label=DataLoader];
+	"test_loader(0)$0" -> "False(0)"	[label=DataLoader];
+	"False(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"enumerate(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"i(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"i(0)" -> "splits(0)$0"	[label=iteratorOf];
+	"i(0)" -> "test_loader(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"i(0)" -> "valid_loader(0)$0"	[label=iteratorOf];
+	"valid_loader(0)$0" -> "torch(0)"	[label=DataLoader];
+	"valid_loader(0)$0" -> "batch_size(0)$0"	[label=DataLoader];
+	"valid_loader(0)$0" -> "False(0)"	[label=DataLoader];
+	"valid_loader(0)$0" -> "valid(0)$0"	[label=DataLoader];
+	"train_idx(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"train_idx(0)" -> "splits(0)$0"	[label=iteratorOf];
+	"train_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"valid_idx(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"valid_idx(0)" -> "splits(0)$0"	[label=iteratorOf];
+	"valid_idx(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"x_train_fold(0)$0" -> "torch(0)"	[label=cuda];
+	"x_train_fold(0)$0" -> "x_train(0)$2"	[label=cuda];
+	"x_train_fold(0)$0" -> "train_idx(0)"	[label=cuda];
+	"y_train_fold(0)$0" -> "torch(0)"	[label=cuda];
+	"y_train_fold(0)$0" -> "y_train(0)$0"	[label=cuda];
+	"y_train_fold(0)$0" -> "np(0)$0"	[label=cuda];
+	"y_train_fold(0)$0" -> "train_idx(0)"	[label=cuda];
+	"x_val_fold(0)$0" -> "torch(0)"	[label=cuda];
+	"x_val_fold(0)$0" -> "x_train(0)$2"	[label=cuda];
+	"x_val_fold(0)$0" -> "valid_idx(0)"	[label=cuda];
+	"y_val_fold(0)$0" -> "torch(0)"	[label=cuda];
+	"y_val_fold(0)$0" -> "y_train(0)$0"	[label=cuda];
+	"y_val_fold(0)$0" -> "np(0)$0"	[label=cuda];
+	"y_val_fold(0)$0" -> "valid_idx(0)"	[label=cuda];
+	"model(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"model(0)$0" -> "model(0)"	[label=cuda];
+	"loss_fn(0)$0" -> "torch(0)"	[label=BCEWithLogitsLoss];
+	"loss_fn(0)$0" -> "mean(0)"	[label=BCEWithLogitsLoss];
+	"mean(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"optimizer(0)$0" -> "torch(0)"	[label=Adam];
+	"optimizer(0)$0" -> "model(0)$0"	[label=Adam];
+	"train(0)$0" -> "torch(0)"	[label=TensorDataset];
+	"train(0)$0" -> "x_train_fold(0)$0"	[label=TensorDataset];
+	"train(0)$0" -> "y_train_fold(0)$0"	[label=TensorDataset];
+	"valid(0)$0" -> "torch(0)"	[label=TensorDataset];
+	"valid(0)$0" -> "x_val_fold(0)$0"	[label=TensorDataset];
+	"valid(0)$0" -> "y_val_fold(0)$0"	[label=TensorDataset];
+	"train_loader(0)$0" -> "torch(0)"	[label=DataLoader];
+	"train_loader(0)$0" -> "True(0)"	[label=DataLoader];
+	"train_loader(0)$0" -> "batch_size(0)$0"	[label=DataLoader];
+	"train_loader(0)$0" -> "train(0)$0"	[label=DataLoader];
+	"Fold (0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"print[282/4]" -> "i(0)"	[label=print];
+	"print[282/4]" -> "Fold (0)"	[label=print];
+	"print[282/4]" -> "1(0)"	[label=print];
+	"1(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"range(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"epoch(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"epoch(0)" -> "n_epochs(0)$0"	[label=iteratorOf];
+	"epoch(0)" -> "range(0)"	[label=iteratorOf];
+	"start_time(0)$0" -> "time(0)"	[label=time];
+	"model(0)$1" -> "model(0)$0"	[label=train];
+	"0.0(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"avg_loss(0)$0" -> "0.0(0)"	[label=assignedFrom];
+	"x_batch(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"x_batch(0)" -> "tqdm(0)$0"	[label=iteratorOf];
+	"x_batch(0)" -> "True(0)"	[label=iteratorOf];
+	"x_batch(0)" -> "test_loader(0)$0"	[label=iteratorOf];
+	"x_batch(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"x_batch(0)" -> "valid_loader(0)$0"	[label=iteratorOf];
+	"x_batch(0)" -> "train_loader(0)$0"	[label=iteratorOf];
+	"y_batch(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"y_batch(0)" -> "tqdm(0)$0"	[label=iteratorOf];
+	"y_batch(0)" -> "True(0)"	[label=iteratorOf];
+	"y_batch(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"y_batch(0)" -> "valid_loader(0)$0"	[label=iteratorOf];
+	"y_batch(0)" -> "train_loader(0)$0"	[label=iteratorOf];
+	"y_pred(0)$0" -> "x_batch(0)"	[label=model];
+	"loss(0)$0" -> "y_batch(0)"	[label=loss_fn];
+	"loss(0)$0" -> "y_pred(0)$0"	[label=loss_fn];
+	"optimizer(0)$1" -> "optimizer(0)$0"	[label=zero_grad];
+	"loss(0)$1" -> "loss(0)$0"	[label=backward];
+	"optimizer(0)$2" -> "optimizer(0)$1"	[label=step];
+	"avg_loss(0)$1" -> "len(0)"	[label=Add];
+	"avg_loss(0)$1" -> "train_loader(0)$0"	[label=Add];
+	"avg_loss(0)$1" -> "avg_loss(0)$0"	[label=Add];
+	"avg_loss(0)$1" -> "loss(0)$1"	[label=Add];
+	"model(0)$2" -> "model(0)$1"	[label=eval];
+	"valid_preds_fold(0)$0" -> "0(0)"	[label=zeros];
+	"valid_preds_fold(0)$0" -> "np(0)$0"	[label=zeros];
+	"valid_preds_fold(0)$0" -> "x_val_fold(0)$0"	[label=zeros];
+	"test_preds_fold(0)$0" -> "test_df(0)$2"	[label=zeros];
+	"test_preds_fold(0)$0" -> "np(0)$0"	[label=zeros];
+	"test_preds_fold(0)$0" -> "len(0)"	[label=zeros];
+	"avg_val_loss(0)$0" -> "0.0(0)"	[label=assignedFrom];
+	"y_pred(0)$1" -> "x_batch(0)"	[label=detach];
+	"y_pred(0)$1" -> "model(0)$2"	[label=detach];
+	"avg_val_loss(0)$1" -> "len(0)"	[label=Add];
+	"avg_val_loss(0)$1" -> "valid_loader(0)$0"	[label=Add];
+	"avg_val_loss(0)$1" -> "loss_fn(0)$0"	[label=Add];
+	"avg_val_loss(0)$1" -> "y_batch(0)"	[label=Add];
+	"avg_val_loss(0)$1" -> "avg_val_loss(0)$0"	[label=Add];
+	"avg_val_loss(0)$1" -> "y_pred(0)$1"	[label=Add];
+	"sigmoid(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"valid_preds_fold(0)$1" -> "0(0)"	[label=assignedFrom];
+	"valid_preds_fold(0)$1" -> "valid_preds_fold(0)$0"	[label=assignedFrom];
+	"valid_preds_fold(0)$1" -> "y_pred(0)$1"	[label=assignedFrom];
+	"valid_preds_fold(0)$1" -> "sigmoid(0)"	[label=assignedFrom];
+	"elapsed_time(0)$0" -> "time(0)"	[label=Sub];
+	"elapsed_time(0)$0" -> "start_time(0)$0"	[label=Sub];
+	"Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"print[323/8]" -> "n_epochs(0)$0"	[label=print];
+	"print[323/8]" -> "1(0)"	[label=print];
+	"print[323/8]" -> "epoch(0)"	[label=print];
+	"print[323/8]" -> "avg_loss(0)$1"	[label=print];
+	"print[323/8]" -> "avg_val_loss(0)$1"	[label=print];
+	"print[323/8]" -> "elapsed_time(0)$0"	[label=print];
+	"print[323/8]" -> "Epoch {}/{} 	 loss={:.4f} 	 val_loss={:.4f} 	 time={:.2f}s(0)"	[label=print];
+	"y_pred(0)$2" -> "x_batch(0)"	[label=detach];
+	"y_pred(0)$2" -> "model(0)$2"	[label=detach];
+	"test_preds_fold(0)$1" -> "0(0)"	[label=assignedFrom];
+	"test_preds_fold(0)$1" -> "test_preds_fold(0)$0"	[label=assignedFrom];
+	"test_preds_fold(0)$1" -> "sigmoid(0)"	[label=assignedFrom];
+	"test_preds_fold(0)$1" -> "y_pred(0)$2"	[label=assignedFrom];
+	"train_preds(0)$1" -> "train_preds(0)$0"	[label=assignedFrom];
+	"train_preds(0)$1" -> "valid_preds_fold(0)$1"	[label=assignedFrom];
+	"test_preds(0)$1" -> "splits(0)$0"	[label=Add];
+	"test_preds(0)$1" -> "len(0)"	[label=Add];
+	"test_preds(0)$1" -> "test_preds(0)$0"	[label=Add];
+	"test_preds(0)$1" -> "test_preds_fold(0)$1"	[label=Add];
+	"search_result(0)$0" -> "y_train(0)$0"	[label=threshold_search];
+	"search_result(0)$0" -> "train_preds(0)$1"	[label=threshold_search];
+	"submission(0)$0" -> "test_df(0)$2"	[label=copy];
+	"submission(0)$0" -> "[<_ast.Constant object at 0x7fd4d02d4ca0>](0)"	[label=copy];
+	"[<_ast.Constant object at 0x7fd4d02d4ca0>](0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"submission(0)$1" -> "test_preds(0)$1"	[label=assignedFrom];
+	"submission(0)$1" -> "search_result(0)$0"	[label=assignedFrom];
+	"submission(0)$1" -> "submission(0)$0"	[label=assignedFrom];
+	"submission(0)$1" -> "threshold(0)"	[label=assignedFrom];
+	"threshold(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+	"submission(0)$2" -> "submission(0)$1"	[label=to_csv];
+	"submission(0)$2" -> "submission.csv(0)"	[label=to_csv];
+	"submission.csv(0)" -> "deterministic-neural-networks-using-pytorch.ipynb"	[label=appearsIn];
+}
