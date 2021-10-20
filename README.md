@@ -1,10 +1,37 @@
 # Data Journeys: representation and extraction
 Source code of approach, algorithms, and experimental results.
 
-All experiments are executed on a MacOS-X 10.15.7 with Python 3.8, configured via PyEnv in folder `dj-py3.8`.
+## Python environment
+All experiments are executed on a MacOS-X 10.15.7 with Python 3.8, configured via Conda in folder `dj-py3.8`.
+```
+$ conda create --name dj-py3.9 python=3.9
+```
+To activate this environment, use
+```
+$ source activate dj-py3.9
+```
+To deactivate an active environment, use
+```
+$ conda deactivate
+```
+Initialise the bash shell with:
+```
+$ conda init bash
+```
 
+Prerequirements:
+```
+$ conda activate dj-py3.9
+$ conda install networkx
+$ pip install rdflib graphviz pygraphviz jupyterlab
+$ pip install pandas numpy sklearn transformers gensim aiohttp
+$ pip install pyrdf2vec
+$ pip install papermill
+
+```
+Install Jupyter
 ## DATA JOURNEY ONTOLOGY (DJO)
-The ontology is in folder `ontology/`
+The ontology is in folder `ontology/datajourneys.ttl`
 
 ## Approach for extracting data journeys / Evaluation
 
@@ -13,18 +40,21 @@ Kernels downloaded from Kaggle: [kernels.zip](kernels.zip). The content of the f
 ### Datanode graph extraction
 
 The algorithm presented in Listing 1 is implemented in file `datajourney.py`. 
+
 The process is divided in two steps:
 
-1) `$ python process_kernels.py` generates a datanode representation in DOT format. Output is saved in folders `scripts/` and `graphs/`. The first includes the source code extracted from the notebook and the `graphs/` folder includes the generated datanode graphs in DOT format.
-2) `$ python generate_rdf.py` reengineers the content to RDF. Output is saved in folder `rdf/`.
+1) `(dj-py3.8) $ python process_kernels.py` generates a datanode representation in DOT format. Output is saved in folders `sources/` (python code only from notebboks) and `graphs/` (directed graph in DOT format). The first includes the source code extracted from the notebook and the `graphs/` folder includes the generated datanode graphs in DOT format.
+2) `(dj-py3.8) $ python generate_rdf.py` reengineers the content to RDF. Output is saved in folder `rdf/` and `graphs/`.
+
+The `rdf/` folder includes the datanode graphs extracted.
 
 ### Knowledge expansion
 
 The Frequent Activity Table (FAT) is produced running the following SPARQL query on a Triple Store containing all the RDF files generated in the previous step.
 The triple store used is Blazegraph, in folder `blazegraph/`.
 
-1) Load the RDF files with script `bulk_load.sh`
-2) Start blazegraph: `$ java -jar -Xmx4G blazegraph.jar`
+1) Load the RDF files with script `cd blazegraph && ./bulk_load.sh`
+2) Start blazegraph: `$ java -jar -Xmx4G blazegraph.jar`, UI can be accessed from the browser (follow the instructions in terminal)
 3) The Frequent Activity Table (FAT) is generated with a SPARQL query counting the number of occurrences of the properties in the graph:
 ```
 SELECT ?arc (COUNT(*) as ?count)
@@ -34,7 +64,8 @@ WHERE {
 group by ?arc
 order by desc(?count)
 ```
-4) The Frequent Activity Table (FAT) annotated with activity types was produced with a Google Spreadsheet, accessible at this link: https://docs.google.com/spreadsheets/d/1zx_XK9VhEtgxFFXpFy9RYzX5MDxZxZZDnqxOqvkXoDQ/edit?usp=sharing
+4) The Frequent Activity Table (FAT) annotated with activity types was produced with a Google Spreadsheet, accessible at this URL: https://docs.google.com/spreadsheets/d/1zx_XK9VhEtgxFFXpFy9RYzX5MDxZxZZDnqxOqvkXoDQ/edit?usp=sharing
+
 5) Rules are generated with notebook [Process ARCS rules.ipynb](<Process ARCS rules.ipynb>). SPARQL Construct queries are reported in file `activity_rules.json`.
 6) The training dataset is then produced by querying the triple store for instances of the arcs reported in Table 2, using the following SPARQL query:
 
@@ -100,8 +131,11 @@ for i in {1..10}; do papermill MultiClassificationExperiments.ipynb "./experimen
 The script repeats the experiments with different parameters: 10 to 200 randomly choosen notebooks, embedding method `rdf2vec` or `bertcode` and test regime `1` or `2`.
 
 Results are saved to file [MultiClassificationExperiments.csv](MultiClassificationExperiments).
+
+Results can be explored and analysed in [AnalyseResultsMulti.ipynb](AnalyseResultsMulti.ipynb).
 ### Knowledge compression
-This phase is performed in notebook [DataJourneyGenerator.ipynb](DataJourneyGenerator.ipynb). This notebook was executed on each of the input notebook. Output is in folder `datajourneys/`. Example follows.
+This phase is performed in notebook [DataJourneyGenerator.ipynb](DataJourneyGenerator.ipynb). This notebook was executed on each of the input notebook. Output is in folder `datajourneys/`. 
+
 ### Guide example
 The resulting notebooks are in folder `datajourneys/`. The guide example discussed in the paper is reported in the following files:
 
