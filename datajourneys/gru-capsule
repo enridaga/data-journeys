@@ -1,0 +1,618 @@
+digraph "" {
+	pandas -> "gru-capsule.ipynb"	[label=importedBy];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"pd(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	numpy -> "gru-capsule.ipynb"	[label=importedBy];
+	"np(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	tqdm -> "gru-capsule.ipynb"	[label=importedBy];
+	tqdm -> tqdm	[label=importedBy];
+	"tqdm(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"tqdm(0)" -> tqdm	[label=assignedFrom];
+	"tqdm(0)$0" -> "tqdm(0)"	[label=pandas];
+	"sklearn.model_selection" -> "gru-capsule.ipynb"	[label=importedBy];
+	train_test_split -> "sklearn.model_selection"	[label=importedBy];
+	"train_test_split(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"train_test_split(0)" -> train_test_split	[label=assignedFrom];
+	StratifiedKFold -> "sklearn.model_selection"	[label=importedBy];
+	"StratifiedKFold(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"StratifiedKFold(0)" -> StratifiedKFold	[label=assignedFrom];
+	sklearn -> "gru-capsule.ipynb"	[label=importedBy];
+	metrics -> sklearn	[label=importedBy];
+	"metrics(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"metrics(0)" -> metrics	[label=assignedFrom];
+	"keras.preprocessing.text" -> "gru-capsule.ipynb"	[label=importedBy];
+	Tokenizer -> "keras.preprocessing.text"	[label=importedBy];
+	"Tokenizer(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"Tokenizer(0)" -> Tokenizer	[label=assignedFrom];
+	"keras.preprocessing.sequence" -> "gru-capsule.ipynb"	[label=importedBy];
+	pad_sequences -> "keras.preprocessing.sequence"	[label=importedBy];
+	"pad_sequences(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"pad_sequences(0)" -> pad_sequences	[label=assignedFrom];
+	"keras.layers" -> "gru-capsule.ipynb"	[label=importedBy];
+	"*" -> "keras.layers"	[label=importedBy];
+	"*" -> "keras.models"	[label=importedBy];
+	"*" -> "keras.initializers"	[label=importedBy];
+	"*" -> "keras.optimizers"	[label=importedBy];
+	"*" -> "keras.callbacks"	[label=importedBy];
+	"keras.models" -> "gru-capsule.ipynb"	[label=importedBy];
+	"keras.initializers" -> "gru-capsule.ipynb"	[label=importedBy];
+	"keras.optimizers" -> "gru-capsule.ipynb"	[label=importedBy];
+	"keras.callbacks" -> "gru-capsule.ipynb"	[label=importedBy];
+	"*(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"*(0)" -> "*"	[label=assignedFrom];
+	keras -> "gru-capsule.ipynb"	[label=importedBy];
+	initializers -> keras	[label=importedBy];
+	"initializers(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"initializers(0)" -> initializers	[label=assignedFrom];
+	regularizers -> keras	[label=importedBy];
+	"regularizers(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"regularizers(0)" -> regularizers	[label=assignedFrom];
+	constraints -> keras	[label=importedBy];
+	"constraints(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"constraints(0)" -> constraints	[label=assignedFrom];
+	optimizers -> keras	[label=importedBy];
+	"optimizers(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"optimizers(0)" -> optimizers	[label=assignedFrom];
+	layers -> keras	[label=importedBy];
+	"layers(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"layers(0)" -> layers	[label=assignedFrom];
+	"keras.backend" -> "gru-capsule.ipynb"	[label=importedBy];
+	"K(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"K(0)" -> "keras.backend"	[label=assignedFrom];
+	tensorflow -> "gru-capsule.ipynb"	[label=importedBy];
+	"tf(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"tf(0)" -> tensorflow	[label=assignedFrom];
+	os -> "gru-capsule.ipynb"	[label=importedBy];
+	"os(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	time -> "gru-capsule.ipynb"	[label=importedBy];
+	"time(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"time(0)" -> time	[label=assignedFrom];
+	gc -> "gru-capsule.ipynb"	[label=importedBy];
+	"gc(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"gc(0)" -> gc	[label=assignedFrom];
+	re -> "gru-capsule.ipynb"	[label=importedBy];
+	"re(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"re(0)" -> re	[label=assignedFrom];
+	unidecode -> "gru-capsule.ipynb"	[label=importedBy];
+	unidecode -> unidecode	[label=importedBy];
+	"unidecode(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"unidecode(0)" -> unidecode	[label=assignedFrom];
+	"train(0)$0" -> "pd(0)"	[label=read_csv];
+	"train(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"test(0)$0" -> "pd(0)"	[label=read_csv];
+	"test(0)$0" -> "../input/test.csv(0)"	[label=read_csv];
+	"../input/test.csv(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"Train shape : (0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"print[26/0]" -> "train(0)$0"	[label=print];
+	"print[26/0]" -> "Train shape : (0)"	[label=print];
+	"Test shape : (0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"print[27/0]" -> "test(0)$0"	[label=print];
+	"print[27/0]" -> "Test shape : (0)"	[label=print];
+	"train(0)$1" -> "train(0)$0"	[label=lower];
+	"train(0)$1" -> "question_text(0)"	[label=lower];
+	"question_text(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"test(0)$1" -> "test(0)$0"	[label=lower];
+	"test(0)$1" -> "question_text(0)"	[label=lower];
+	"[<_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ffdc0>, <_ast.Constant object at 0x7fd4c04ff430>, <_\
+ast.Constant object at 0x7fd4c04ff940>, <_ast.Constant object at 0x7fd4c04ff5b0>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant \
+object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ffa00>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object \
+at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ff460>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ffeb0>, <_ast.Constant object at 0x7fd4c04ffc10>, <_ast.Constant object at 0x7fd4c04ffa30>, <_\
+ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff0d0>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant \
+object at 0x7fd4c04ff2b0>, <_ast.Constant object at 0x7fd4c04ffb20>, <_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object \
+at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ffe20>, <_ast.Constant object at \
+0x7fd4c04ff730>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ffcd0>, <_ast.Constant object at 0x7fd4c04fff10>, <_\
+ast.Constant object at 0x7fd4c04ff070>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ff850>, <_ast.Constant \
+object at 0x7fd4c04ff040>, <_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object \
+at 0x7fd4c04ff2e0>, <_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at \
+0x7fd4c04ff130>, <_ast.Constant object at 0x7fd4c04ff6d0>, <_ast.Constant object at 0x7fd4c04ff3d0>, <_ast.Constant object at 0x7fd4c04ffd00>, <_\
+ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff160>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant \
+object at 0x7fd4c04ff6a0>, <_ast.Constant object at 0x7fd4c04ffee0>, <_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant object \
+at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ffbb0>, <_ast.Constant object at \
+0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ffa90>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff910>, <_\
+ast.Constant object at 0x7fd4c04ffd30>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff1c0>, <_ast.Constant \
+object at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04ff100>, <_ast.Constant object at 0x7fd4c04ffe80>, <_ast.Constant object \
+at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ffe50>, <_ast.Constant object at 0x7fd4c04ff250>, <_ast.Constant object at \
+0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff9d0>, <_ast.Constant object at 0x7fd4c04ffd60>, <_\
+ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff610>, <_ast.Constant \
+object at 0x7fd4c04ff400>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object \
+at 0x7fd4c04ffca0>, <_ast.Constant object at 0x7fd4c04fffa0>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant object at 0x7fd500832700>, <_\
+ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant \
+object at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object \
+at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd500832670>, <_ast.Constant object at \
+0x7fd500832be0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd500832f40>, <_\
+ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant \
+object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd500832220>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832af0>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object at \
+0x7fd500832040>, <_ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832a90>, <_\
+ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd5008320d0>, <_ast.Constant \
+object at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832250>, <_ast.Constant object \
+at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832970>, <_ast.Constant object at 0x7fd500832f70>, <_ast.Constant object at \
+0x7fd500832ca0>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd500832c70>, <_ast.Constant object at 0x7fd500832610>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant \
+object at 0x7fd500832df0>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at 0x7fd500832a00>, <_ast.Constant object \
+at 0x7fd500832d90>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832400>, <_ast.Constant object at \
+0x7fd500832820>](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"puncts(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ffdc0>, <_ast.Constant object at 0x7fd4c04ff430>, <_\
+ast.Constant object at 0x7fd4c04ff940>, <_ast.Constant object at 0x7fd4c04ff5b0>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant \
+object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ffa00>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object \
+at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04ffbe0>, <_ast.Constant object at 0x7fd4c04ff460>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ffeb0>, <_ast.Constant object at 0x7fd4c04ffc10>, <_ast.Constant object at 0x7fd4c04ffa30>, <_\
+ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at 0x7fd4c04ff0d0>, <_ast.Constant object at 0x7fd4c04ff700>, <_ast.Constant \
+object at 0x7fd4c04ff2b0>, <_ast.Constant object at 0x7fd4c04ffb20>, <_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object \
+at 0x7fd4c04ffaf0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ffe20>, <_ast.Constant object at \
+0x7fd4c04ff730>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ffcd0>, <_ast.Constant object at 0x7fd4c04fff10>, <_\
+ast.Constant object at 0x7fd4c04ff070>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ff850>, <_ast.Constant \
+object at 0x7fd4c04ff040>, <_ast.Constant object at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff340>, <_ast.Constant object \
+at 0x7fd4c04ff2e0>, <_ast.Constant object at 0x7fd4c04ff0a0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at \
+0x7fd4c04ff130>, <_ast.Constant object at 0x7fd4c04ff6d0>, <_ast.Constant object at 0x7fd4c04ff3d0>, <_ast.Constant object at 0x7fd4c04ffd00>, <_\
+ast.Constant object at 0x7fd4c04ff220>, <_ast.Constant object at 0x7fd4c04ff160>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant \
+object at 0x7fd4c04ff6a0>, <_ast.Constant object at 0x7fd4c04ffee0>, <_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant object \
+at 0x7fd4c04ff310>, <_ast.Constant object at 0x7fd4c04ff3a0>, <_ast.Constant object at 0x7fd4c04ffbb0>, <_ast.Constant object at \
+0x7fd4c04ff5e0>, <_ast.Constant object at 0x7fd4c04ffa90>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff910>, <_\
+ast.Constant object at 0x7fd4c04ffd30>, <_ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff1c0>, <_ast.Constant \
+object at 0x7fd4c04ffc40>, <_ast.Constant object at 0x7fd4c04ff100>, <_ast.Constant object at 0x7fd4c04ffe80>, <_ast.Constant object \
+at 0x7fd4c04ff880>, <_ast.Constant object at 0x7fd4c04ffe50>, <_ast.Constant object at 0x7fd4c04ff250>, <_ast.Constant object at \
+0x7fd4c04ffd90>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff9d0>, <_ast.Constant object at 0x7fd4c04ffd60>, <_\
+ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff640>, <_ast.Constant object at 0x7fd4c04ff610>, <_ast.Constant \
+object at 0x7fd4c04ff400>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object \
+at 0x7fd4c04ffca0>, <_ast.Constant object at 0x7fd4c04fffa0>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant object at 0x7fd500832700>, <_\
+ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant \
+object at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object \
+at 0x7fd5008327c0>, <_ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd500832670>, <_ast.Constant object at \
+0x7fd500832be0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd500832f40>, <_\
+ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant \
+object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd500832220>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832af0>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object at \
+0x7fd500832040>, <_ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832a90>, <_\
+ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd500832d60>, <_ast.Constant object at 0x7fd5008320d0>, <_ast.Constant \
+object at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832250>, <_ast.Constant object \
+at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832970>, <_ast.Constant object at 0x7fd500832f70>, <_ast.Constant object at \
+0x7fd500832ca0>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd500832c70>, <_ast.Constant object at 0x7fd500832610>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant \
+object at 0x7fd500832df0>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at 0x7fd500832a00>, <_ast.Constant object \
+at 0x7fd500832d90>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832400>, <_ast.Constant object at \
+0x7fd500832820>](0)"	[label=assignedFrom];
+	"x(1)" -> "clean_text[0]"	[label=_argToVar];
+	"x(1)$0" -> "x(1)"	[label=str];
+	"punct(1)" -> "puncts(1)"	[label=iteratorOf];
+	"x(1)$1" -> "x(1)$0"	[label=replace];
+	"x(1)$1" -> "punct(1)"	[label=replace];
+	"x(1)$1" -> " (1)"	[label=replace];
+	"train(0)$2" -> "train(0)$1"	[label=apply];
+	"train(0)$2" -> "question_text(0)"	[label=apply];
+	"train(0)$2" -> "clean_text(0)"	[label=apply];
+	"train(0)$2" -> "x(0)"	[label=apply];
+	"clean_text(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"x(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"test(0)$2" -> "question_text(0)"	[label=apply];
+	"test(0)$2" -> "test(0)$1"	[label=apply];
+	"test(0)$2" -> "clean_text(0)"	[label=apply];
+	"test(0)$2" -> "x(0)"	[label=apply];
+	"300(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"embed_size(0)$0" -> "300(0)"	[label=assignedFrom];
+	"None(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"max_features(0)$0" -> "None(0)"	[label=assignedFrom];
+	"72(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"maxlen(0)$0" -> "72(0)"	[label=assignedFrom];
+	"X(0)$0" -> "question_text(0)"	[label=assignedFrom];
+	"X(0)$0" -> "train(0)$2"	[label=assignedFrom];
+	"X(0)$0" -> "_na_(0)"	[label=assignedFrom];
+	"_na_(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"X_test(0)$0" -> "question_text(0)"	[label=assignedFrom];
+	"X_test(0)$0" -> "test(0)$2"	[label=assignedFrom];
+	"X_test(0)$0" -> "_na_(0)"	[label=assignedFrom];
+	"tokenizer(0)$0" -> "max_features(0)$0"	[label=Tokenizer];
+	"tokenizer(0)$0" -> "(0)"	[label=Tokenizer];
+	"(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"tokenizer(0)$1" -> "X(0)$0"	[label=fit_on_texts];
+	"tokenizer(0)$1" -> "tokenizer(0)$0"	[label=fit_on_texts];
+	"tokenizer(0)$1" -> "list(0)"	[label=fit_on_texts];
+	"list(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"X(0)$1" -> "tokenizer(0)$1"	[label=texts_to_sequences];
+	"X(0)$1" -> "X(0)$1"	[label=texts_to_sequences];
+	"X_test(0)$1" -> "tokenizer(0)$1"	[label=texts_to_sequences];
+	"X_test(0)$1" -> "X_test(0)$1"	[label=texts_to_sequences];
+	"X(0)$2" -> "maxlen(0)$0"	[label=pad_sequences];
+	"X(0)$2" -> "X(0)$1"	[label=pad_sequences];
+	"X_test(0)$2" -> "maxlen(0)$0"	[label=pad_sequences];
+	"X_test(0)$2" -> "X_test(0)$1"	[label=pad_sequences];
+	"Y(0)$0" -> "train(0)$2"	[label=assignedFrom];
+	"Y(0)$0" -> "target(0)"	[label=assignedFrom];
+	"target(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"sub(0)$0" -> "test(0)$2"	[label=assignedFrom];
+	"sub(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0af0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0af0>](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"gc(0)$0" -> "gc(0)"	[label=collect];
+	"word_index(0)$0" -> "tokenizer(0)$1"	[label=assignedFrom];
+	"len(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"max_features(0)$1" -> "word_index(0)$0"	[label=Add];
+	"max_features(0)$1" -> "len(0)"	[label=Add];
+	"max_features(0)$1" -> "1(0)"	[label=Add];
+	"1(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"word_index(2)" -> "load_glove[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(2)$0" -> "../input/embeddings/glove.840B.300d/glove.840B.300d.txt(2)"	[label=assignedFrom];
+	"word(3)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(2)$0" -> "word_index(2)"	[label=dict];
+	"embeddings_index(2)$0" -> "EMBEDDING_FILE(2)$0"	[label=dict];
+	"embeddings_index(2)$0" -> "get_coefs(2)"	[label=dict];
+	"embeddings_index(2)$0" -> "o(2)"	[label=dict];
+	"embeddings_index(2)$0" -> " (2)"	[label=dict];
+	"embeddings_index(2)$0" -> "open(2)"	[label=dict];
+	"embeddings_index(2)$0" -> "0(2)"	[label=dict];
+	"all_embs(2)$0" -> "embeddings_index(2)$0"	[label=stack];
+	"all_embs(2)$0" -> "np(2)"	[label=stack];
+	"emb_mean(2)$0" -> "all_embs(2)$0"	[label=assignedFrom];
+	"emb_std(2)$0" -> "all_embs(2)$0"	[label=assignedFrom];
+	"embed_size(2)$0" -> "all_embs(2)$0"	[label=assignedFrom];
+	"embed_size(2)$0" -> "1(2)"	[label=assignedFrom];
+	"embedding_matrix(2)$0" -> "np(2)"	[label=normal];
+	"embedding_matrix(2)$0" -> "emb_mean(2)$0"	[label=normal];
+	"embedding_matrix(2)$0" -> "emb_std(2)$0"	[label=normal];
+	"embedding_matrix(2)$0" -> "embed_size(2)$0"	[label=normal];
+	"embedding_matrix(2)$0" -> "max_features(2)"	[label=normal];
+	"word(2)" -> "word_index(2)"	[label=iteratorOf];
+	"i(2)" -> "word_index(2)"	[label=iteratorOf];
+	"embedding_vector(2)$0" -> "embeddings_index(2)$0"	[label=get];
+	"embedding_vector(2)$0" -> "word(2)"	[label=get];
+	"embedding_matrix(2)$1" -> "embedding_matrix(2)$0"	[label=assignedFrom];
+	"embedding_matrix(2)$1" -> "embedding_vector(2)$0"	[label=assignedFrom];
+	"word_index(4)" -> "load_fasttext[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(4)$0" -> "../input/embeddings/wiki-news-300d-1M/wiki-news-300d-1M.vec(4)"	[label=assignedFrom];
+	"word(5)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(4)$0" -> "word_index(4)"	[label=dict];
+	"embeddings_index(4)$0" -> "EMBEDDING_FILE(4)$0"	[label=dict];
+	"embeddings_index(4)$0" -> "get_coefs(4)"	[label=dict];
+	"embeddings_index(4)$0" -> "o(4)"	[label=dict];
+	"embeddings_index(4)$0" -> " (4)"	[label=dict];
+	"embeddings_index(4)$0" -> "open(4)"	[label=dict];
+	"embeddings_index(4)$0" -> "len(4)"	[label=dict];
+	"embeddings_index(4)$0" -> "100(4)"	[label=dict];
+	"embeddings_index(4)$0" -> "0(4)"	[label=dict];
+	"all_embs(4)$0" -> "embeddings_index(4)$0"	[label=stack];
+	"all_embs(4)$0" -> "np(4)"	[label=stack];
+	"emb_mean(4)$0" -> "all_embs(4)$0"	[label=assignedFrom];
+	"emb_std(4)$0" -> "all_embs(4)$0"	[label=assignedFrom];
+	"embed_size(4)$0" -> "all_embs(4)$0"	[label=assignedFrom];
+	"embed_size(4)$0" -> "1(4)"	[label=assignedFrom];
+	"embedding_matrix(4)$0" -> "np(4)"	[label=normal];
+	"embedding_matrix(4)$0" -> "emb_mean(4)$0"	[label=normal];
+	"embedding_matrix(4)$0" -> "emb_std(4)$0"	[label=normal];
+	"embedding_matrix(4)$0" -> "embed_size(4)$0"	[label=normal];
+	"embedding_matrix(4)$0" -> "max_features(4)"	[label=normal];
+	"word(4)" -> "word_index(4)"	[label=iteratorOf];
+	"i(4)" -> "word_index(4)"	[label=iteratorOf];
+	"embedding_vector(4)$0" -> "embeddings_index(4)$0"	[label=get];
+	"embedding_vector(4)$0" -> "word(4)"	[label=get];
+	"embedding_matrix(4)$1" -> "embedding_matrix(4)$0"	[label=assignedFrom];
+	"embedding_matrix(4)$1" -> "embedding_vector(4)$0"	[label=assignedFrom];
+	"word_index(6)" -> "load_para[0]"	[label=_argToVar];
+	"EMBEDDING_FILE(6)$0" -> "../input/embeddings/paragram_300_sl999/paragram_300_sl999.txt(6)"	[label=assignedFrom];
+	"word(7)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(6)$0" -> "word_index(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "EMBEDDING_FILE(6)$0"	[label=dict];
+	"embeddings_index(6)$0" -> "get_coefs(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "o(6)"	[label=dict];
+	"embeddings_index(6)$0" -> " (6)"	[label=dict];
+	"embeddings_index(6)$0" -> "open(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "utf8(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "ignore(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "len(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "100(6)"	[label=dict];
+	"embeddings_index(6)$0" -> "0(6)"	[label=dict];
+	"all_embs(6)$0" -> "embeddings_index(6)$0"	[label=stack];
+	"all_embs(6)$0" -> "np(6)"	[label=stack];
+	"emb_mean(6)$0" -> "all_embs(6)$0"	[label=assignedFrom];
+	"emb_std(6)$0" -> "all_embs(6)$0"	[label=assignedFrom];
+	"embed_size(6)$0" -> "all_embs(6)$0"	[label=assignedFrom];
+	"embed_size(6)$0" -> "1(6)"	[label=assignedFrom];
+	"embedding_matrix(6)$0" -> "np(6)"	[label=normal];
+	"embedding_matrix(6)$0" -> "emb_mean(6)$0"	[label=normal];
+	"embedding_matrix(6)$0" -> "emb_std(6)$0"	[label=normal];
+	"embedding_matrix(6)$0" -> "embed_size(6)$0"	[label=normal];
+	"embedding_matrix(6)$0" -> "max_features(6)"	[label=normal];
+	"word(6)" -> "word_index(6)"	[label=iteratorOf];
+	"i(6)" -> "word_index(6)"	[label=iteratorOf];
+	"embedding_vector(6)$0" -> "embeddings_index(6)$0"	[label=get];
+	"embedding_vector(6)$0" -> "word(6)"	[label=get];
+	"embedding_matrix(6)$1" -> "embedding_matrix(6)$0"	[label=assignedFrom];
+	"embedding_matrix(6)$1" -> "embedding_vector(6)$0"	[label=assignedFrom];
+	"embedding_matrix_1(0)$0" -> "word_index(0)$0"	[label=load_glove];
+	"embedding_matrix_3(0)$0" -> "word_index(0)$0"	[label=load_para];
+	"embedding_matrix(0)$0" -> "np(0)"	[label=mean];
+	"embedding_matrix(0)$0" -> "embedding_matrix_1(0)$0"	[label=mean];
+	"embedding_matrix(0)$0" -> "embedding_matrix_3(0)$0"	[label=mean];
+	"embedding_matrix(0)$0" -> "0(0)"	[label=mean];
+	"0(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"gc(0)$1" -> "gc(0)$0"	[label=collect];
+	"np(0)$0" -> "np(0)"	[label=shape];
+	"np(0)$0" -> "embedding_matrix(0)$0"	[label=shape];
+	"x(8)" -> "squash[0]"	[label=_argToVar];
+	"axis(8)" -> "squash[1]"	[label=_argToVar];
+	"s_squared_norm(8)$0" -> "x(8)"	[label=sum];
+	"s_squared_norm(8)$0" -> "axis(8)"	[label=sum];
+	"s_squared_norm(8)$0" -> "K(8)"	[label=sum];
+	"s_squared_norm(8)$0" -> "True(8)"	[label=sum];
+	"scale(8)$0" -> "s_squared_norm(8)$0"	[label=sqrt];
+	"scale(8)$0" -> "K(8)"	[label=sqrt];
+	"self(10)" -> "__init__[0]"	[label=_argToVar];
+	"num_capsule(10)" -> "__init__[1]"	[label=_argToVar];
+	"dim_capsule(10)" -> "__init__[2]"	[label=_argToVar];
+	"routings(10)" -> "__init__[3]"	[label=_argToVar];
+	"kernel_size(10)" -> "__init__[4]"	[label=_argToVar];
+	"share_weights(10)" -> "__init__[5]"	[label=_argToVar];
+	"activation(10)" -> "__init__[6]"	[label=_argToVar];
+	"super(10)$0" -> "super(10)"	[label=__init__];
+	"self(10)$0" -> "self(10)"	[label=assignedFrom];
+	"self(10)$0" -> "num_capsule(10)"	[label=assignedFrom];
+	"self(10)$1" -> "dim_capsule(10)"	[label=assignedFrom];
+	"self(10)$1" -> "self(10)$0"	[label=assignedFrom];
+	"self(10)$2" -> "routings(10)"	[label=assignedFrom];
+	"self(10)$2" -> "self(10)$1"	[label=assignedFrom];
+	"self(10)$3" -> "kernel_size(10)"	[label=assignedFrom];
+	"self(10)$3" -> "self(10)$2"	[label=assignedFrom];
+	"self(10)$4" -> "share_weights(10)"	[label=assignedFrom];
+	"self(10)$4" -> "self(10)$3"	[label=assignedFrom];
+	"self(10)$5" -> "self(10)$4"	[label=assignedFrom];
+	"self(10)$5" -> "squash(10)"	[label=assignedFrom];
+	"self(10)$6" -> "activation(10)"	[label=Activation];
+	"self(10)$6" -> "self(10)$5"	[label=Activation];
+	"self(11)" -> "build[0]"	[label=_argToVar];
+	"input_shape(11)" -> "build[1]"	[label=_argToVar];
+	"super(11)$0" -> "input_shape(11)"	[label=build];
+	"super(11)$0" -> "super(11)"	[label=build];
+	"input_dim_capsule(11)$0" -> "input_shape(11)"	[label=assignedFrom];
+	"input_dim_capsule(11)$0" -> "1(11)"	[label=assignedFrom];
+	"self(11)$0" -> "self(11)"	[label=add_weight];
+	"self(11)$0" -> "input_dim_capsule(11)$0"	[label=add_weight];
+	"self(11)$0" -> "1(11)"	[label=add_weight];
+	"self(11)$0" -> "self(11)$0"	[label=add_weight];
+	"self(11)$0" -> "capsule_kernel(11)"	[label=add_weight];
+	"self(11)$0" -> "glorot_uniform(11)"	[label=add_weight];
+	"self(11)$0" -> "True(11)"	[label=add_weight];
+	"input_num_capsule(11)$0" -> "input_shape(11)"	[label=assignedFrom];
+	"input_num_capsule(11)$0" -> "2(11)"	[label=assignedFrom];
+	"self(11)$1" -> "input_dim_capsule(11)$0"	[label=add_weight];
+	"self(11)$1" -> "self(11)$0"	[label=add_weight];
+	"self(11)$1" -> "capsule_kernel(11)"	[label=add_weight];
+	"self(11)$1" -> "glorot_uniform(11)"	[label=add_weight];
+	"self(11)$1" -> "True(11)"	[label=add_weight];
+	"self(11)$1" -> "input_num_capsule(11)$0"	[label=add_weight];
+	"self(11)$1" -> "self(11)$1"	[label=add_weight];
+	"self(12)" -> "call[0]"	[label=_argToVar];
+	"u_vecs(12)" -> "call[1]"	[label=_argToVar];
+	"u_hat_vecs(12)$0" -> "self(12)"	[label=conv1d];
+	"u_hat_vecs(12)$0" -> "u_vecs(12)"	[label=conv1d];
+	"u_hat_vecs(12)$0" -> "K(12)"	[label=conv1d];
+	"u_hat_vecs(12)$1" -> "self(12)"	[label=local_conv1d];
+	"u_hat_vecs(12)$1" -> "u_vecs(12)"	[label=local_conv1d];
+	"u_hat_vecs(12)$1" -> "K(12)"	[label=local_conv1d];
+	"u_hat_vecs(12)$1" -> "[<_ast.Constant object at 0x7fd50082f6a0>](12)"	[label=local_conv1d];
+	"u_hat_vecs(12)$1" -> "[<_ast.Constant object at 0x7fd50082f700>](12)"	[label=local_conv1d];
+	"batch_size(12)$0" -> "u_vecs(12)"	[label=assignedFrom];
+	"batch_size(12)$0" -> "K(12)"	[label=assignedFrom];
+	"batch_size(12)$0" -> "0(12)"	[label=assignedFrom];
+	"input_num_capsule(12)$0" -> "u_vecs(12)"	[label=assignedFrom];
+	"input_num_capsule(12)$0" -> "K(12)"	[label=assignedFrom];
+	"input_num_capsule(12)$0" -> "1(12)"	[label=assignedFrom];
+	"u_hat_vecs(12)$2" -> "self(12)"	[label=reshape];
+	"u_hat_vecs(12)$2" -> "K(12)"	[label=reshape];
+	"u_hat_vecs(12)$2" -> "batch_size(12)$0"	[label=reshape];
+	"u_hat_vecs(12)$2" -> "input_num_capsule(12)$0"	[label=reshape];
+	"u_hat_vecs(12)$2" -> "u_hat_vecs(12)$2"	[label=reshape];
+	"u_hat_vecs(12)$3" -> "K(12)"	[label=permute_dimensions];
+	"u_hat_vecs(12)$3" -> "0(12)"	[label=permute_dimensions];
+	"u_hat_vecs(12)$3" -> "1(12)"	[label=permute_dimensions];
+	"u_hat_vecs(12)$3" -> "u_hat_vecs(12)$3"	[label=permute_dimensions];
+	"u_hat_vecs(12)$3" -> "2(12)"	[label=permute_dimensions];
+	"u_hat_vecs(12)$3" -> "3(12)"	[label=permute_dimensions];
+	"b(12)$0" -> "K(12)"	[label=zeros_like];
+	"b(12)$0" -> "0(12)"	[label=zeros_like];
+	"b(12)$0" -> "u_hat_vecs(12)$3"	[label=zeros_like];
+	"i(12)" -> "self(12)"	[label=iteratorOf];
+	"i(12)" -> "range(12)"	[label=iteratorOf];
+	"b(12)$1" -> "K(12)"	[label=permute_dimensions];
+	"b(12)$1" -> "0(12)"	[label=permute_dimensions];
+	"b(12)$1" -> "1(12)"	[label=permute_dimensions];
+	"b(12)$1" -> "2(12)"	[label=permute_dimensions];
+	"b(12)$1" -> "b(12)$1"	[label=permute_dimensions];
+	"c(12)$0" -> "K(12)"	[label=softmax];
+	"c(12)$0" -> "b(12)$1"	[label=softmax];
+	"c(12)$1" -> "K(12)"	[label=permute_dimensions];
+	"c(12)$1" -> "0(12)"	[label=permute_dimensions];
+	"c(12)$1" -> "1(12)"	[label=permute_dimensions];
+	"c(12)$1" -> "2(12)"	[label=permute_dimensions];
+	"c(12)$1" -> "c(12)$1"	[label=permute_dimensions];
+	"b(12)$2" -> "K(12)"	[label=permute_dimensions];
+	"b(12)$2" -> "0(12)"	[label=permute_dimensions];
+	"b(12)$2" -> "1(12)"	[label=permute_dimensions];
+	"b(12)$2" -> "2(12)"	[label=permute_dimensions];
+	"b(12)$2" -> "b(12)$2"	[label=permute_dimensions];
+	"outputs(12)$0" -> "self(12)"	[label=activation];
+	"outputs(12)$0" -> "u_hat_vecs(12)$3"	[label=activation];
+	"outputs(12)$0" -> "c(12)$1"	[label=activation];
+	"outputs(12)$0" -> "tf(12)"	[label=activation];
+	"outputs(12)$0" -> "[<_ast.Constant object at 0x7fd50081dd90>, <_ast.Constant object at 0x7fd50081ddc0>](12)"	[label=activation];
+	"b(12)$3" -> "u_hat_vecs(12)$3"	[label=batch_dot];
+	"b(12)$3" -> "outputs(12)$0"	[label=batch_dot];
+	"b(12)$3" -> "tf(12)"	[label=batch_dot];
+	"b(12)$3" -> "[<_ast.Constant object at 0x7fd500835160>, <_ast.Constant object at 0x7fd500835190>](12)"	[label=batch_dot];
+	"self(13)" -> "compute_output_shape[0]"	[label=_argToVar];
+	"input_shape(13)" -> "compute_output_shape[1]"	[label=_argToVar];
+	"K(14)$0" -> "K(14)"	[label=clear_session];
+	"inp(14)$0" -> "maxlen(14)"	[label=Input];
+	"x(14)$0" -> "inp(14)$0"	[label=assignedFrom];
+	"x(14)$0" -> "Embedding(14)"	[label=assignedFrom];
+	"x(14)$0" -> "max_features(14)"	[label=assignedFrom];
+	"x(14)$0" -> "embed_size(14)"	[label=assignedFrom];
+	"x(14)$0" -> "[<_ast.Name object at 0x7fd500835940>](14)"	[label=assignedFrom];
+	"x(14)$0" -> "False(14)"	[label=assignedFrom];
+	"x(14)$1" -> "x(14)$1"	[label=assignedFrom];
+	"x(14)$1" -> "SpatialDropout1D(14)"	[label=assignedFrom];
+	"x(14)$1" -> "0.2(14)"	[label=assignedFrom];
+	"x(14)$2" -> "x(14)$2"	[label=assignedFrom];
+	"x(14)$2" -> "Bidirectional(14)"	[label=assignedFrom];
+	"x(14)$2" -> "CuDNNGRU(14)"	[label=assignedFrom];
+	"x(14)$2" -> "100(14)"	[label=assignedFrom];
+	"x(14)$2" -> "True(14)"	[label=assignedFrom];
+	"x(14)$2" -> "glorot_normal(14)"	[label=assignedFrom];
+	"x(14)$2" -> "12300(14)"	[label=assignedFrom];
+	"x(14)$2" -> "orthogonal(14)"	[label=assignedFrom];
+	"x(14)$2" -> "1.0(14)"	[label=assignedFrom];
+	"x(14)$2" -> "10000(14)"	[label=assignedFrom];
+	"x(14)$3" -> "True(14)"	[label=assignedFrom];
+	"x(14)$3" -> "x(14)$3"	[label=assignedFrom];
+	"x(14)$3" -> "Capsule(14)"	[label=assignedFrom];
+	"x(14)$3" -> "10(14)"	[label=assignedFrom];
+	"x(14)$3" -> "4(14)"	[label=assignedFrom];
+	"x(14)$4" -> "x(14)$4"	[label=assignedFrom];
+	"x(14)$4" -> "Flatten(14)"	[label=assignedFrom];
+	"x(14)$5" -> "100(14)"	[label=assignedFrom];
+	"x(14)$5" -> "glorot_normal(14)"	[label=assignedFrom];
+	"x(14)$5" -> "12300(14)"	[label=assignedFrom];
+	"x(14)$5" -> "x(14)$5"	[label=assignedFrom];
+	"x(14)$5" -> "Dense(14)"	[label=assignedFrom];
+	"x(14)$5" -> "relu(14)"	[label=assignedFrom];
+	"x(14)$6" -> "x(14)$6"	[label=assignedFrom];
+	"x(14)$6" -> "Dropout(14)"	[label=assignedFrom];
+	"x(14)$6" -> "0.12(14)"	[label=assignedFrom];
+	"x(14)$7" -> "x(14)$7"	[label=assignedFrom];
+	"x(14)$7" -> "BatchNormalization(14)"	[label=assignedFrom];
+	"x(14)$8" -> "Dense(14)"	[label=assignedFrom];
+	"x(14)$8" -> "x(14)$8"	[label=assignedFrom];
+	"x(14)$8" -> "1(14)"	[label=assignedFrom];
+	"x(14)$8" -> "sigmoid(14)"	[label=assignedFrom];
+	"model(14)$0" -> "inp(14)$0"	[label=Model];
+	"model(14)$0" -> "x(14)$8"	[label=Model];
+	"model(14)$1" -> "model(14)$0"	[label=compile];
+	"y_true(15)" -> "f1_smart[0]"	[label=_argToVar];
+	"y_pred(15)" -> "f1_smart[1]"	[label=_argToVar];
+	"args(15)$0" -> "y_pred(15)"	[label=argsort];
+	"args(15)$0" -> "np(15)"	[label=argsort];
+	"tp(15)$0" -> "y_true(15)"	[label=sum];
+	"fs(15)$0" -> "y_true(15)"	[label=Div];
+	"fs(15)$0" -> "args(15)$0"	[label=Div];
+	"fs(15)$0" -> "np(15)"	[label=Div];
+	"fs(15)$0" -> "tp(15)$0"	[label=Div];
+	"fs(15)$0" -> "1(15)"	[label=Div];
+	"fs(15)$0" -> "0(15)"	[label=Div];
+	"res_idx(15)$0" -> "np(15)"	[label=argmax];
+	"res_idx(15)$0" -> "fs(15)$0"	[label=argmax];
+	"5(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"kfold(0)$0" -> "5(0)"	[label=StratifiedKFold];
+	"kfold(0)$0" -> "10(0)"	[label=StratifiedKFold];
+	"kfold(0)$0" -> "True(0)"	[label=StratifiedKFold];
+	"10(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"True(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"[](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"bestscore(0)$0" -> "[](0)"	[label=assignedFrom];
+	"y_test(0)$0" -> "X_test(0)$2"	[label=zeros];
+	"y_test(0)$0" -> "0(0)"	[label=zeros];
+	"y_test(0)$0" -> "np(0)$0"	[label=zeros];
+	"enumerate(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"i(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"i(0)" -> "X(0)$2"	[label=iteratorOf];
+	"i(0)" -> "Y(0)$0"	[label=iteratorOf];
+	"i(0)" -> "kfold(0)$0"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"train_index(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"train_index(0)" -> "X(0)$2"	[label=iteratorOf];
+	"train_index(0)" -> "Y(0)$0"	[label=iteratorOf];
+	"train_index(0)" -> "kfold(0)$0"	[label=iteratorOf];
+	"train_index(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"valid_index(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"valid_index(0)" -> "X(0)$2"	[label=iteratorOf];
+	"valid_index(0)" -> "Y(0)$0"	[label=iteratorOf];
+	"valid_index(0)" -> "kfold(0)$0"	[label=iteratorOf];
+	"valid_index(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"X_train(0)$0" -> "X(0)$2"	[label=assignedFrom];
+	"X_train(0)$0" -> "Y(0)$0"	[label=assignedFrom];
+	"X_train(0)$0" -> "train_index(0)"	[label=assignedFrom];
+	"X_train(0)$0" -> "valid_index(0)"	[label=assignedFrom];
+	"X_val(0)$0" -> "X(0)$2"	[label=assignedFrom];
+	"X_val(0)$0" -> "Y(0)$0"	[label=assignedFrom];
+	"X_val(0)$0" -> "train_index(0)"	[label=assignedFrom];
+	"X_val(0)$0" -> "valid_index(0)"	[label=assignedFrom];
+	"Y_train(0)$0" -> "X(0)$2"	[label=assignedFrom];
+	"Y_train(0)$0" -> "Y(0)$0"	[label=assignedFrom];
+	"Y_train(0)$0" -> "train_index(0)"	[label=assignedFrom];
+	"Y_train(0)$0" -> "valid_index(0)"	[label=assignedFrom];
+	"Y_val(0)$0" -> "X(0)$2"	[label=assignedFrom];
+	"Y_val(0)$0" -> "Y(0)$0"	[label=assignedFrom];
+	"Y_val(0)$0" -> "train_index(0)"	[label=assignedFrom];
+	"Y_val(0)$0" -> "valid_index(0)"	[label=assignedFrom];
+	"weights_best.h5(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"filepath(0)$0" -> "weights_best.h5(0)"	[label=assignedFrom];
+	"checkpoint(0)$0" -> "True(0)"	[label=ModelCheckpoint];
+	"checkpoint(0)$0" -> "filepath(0)$0"	[label=ModelCheckpoint];
+	"checkpoint(0)$0" -> "val_loss(0)"	[label=ModelCheckpoint];
+	"checkpoint(0)$0" -> "2(0)"	[label=ModelCheckpoint];
+	"checkpoint(0)$0" -> "min(0)"	[label=ModelCheckpoint];
+	"val_loss(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"2(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"min(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"reduce_lr(0)$0" -> "1(0)"	[label=ReduceLROnPlateau];
+	"reduce_lr(0)$0" -> "val_loss(0)"	[label=ReduceLROnPlateau];
+	"reduce_lr(0)$0" -> "2(0)"	[label=ReduceLROnPlateau];
+	"reduce_lr(0)$0" -> "0.6(0)"	[label=ReduceLROnPlateau];
+	"reduce_lr(0)$0" -> "0.0001(0)"	[label=ReduceLROnPlateau];
+	"0.6(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"0.0001(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"earlystopping(0)$0" -> "val_loss(0)"	[label=EarlyStopping];
+	"earlystopping(0)$0" -> "2(0)"	[label=EarlyStopping];
+	"earlystopping(0)$0" -> "0.0001(0)"	[label=EarlyStopping];
+	"earlystopping(0)$0" -> "auto(0)"	[label=EarlyStopping];
+	"auto(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"[<_ast.Name object at 0x7fd4c04e4ca0>, <_ast.Name object at 0x7fd4c04e4cd0>](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"callbacks(0)$0" -> "[<_ast.Name object at 0x7fd4c04e4ca0>, <_ast.Name object at 0x7fd4c04e4cd0>](0)"	[label=assignedFrom];
+	"model(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"print[237/14]" -> "model(0)"	[label=print];
+	"model(0)$0" -> "X_train(0)$0"	[label=fit];
+	"model(0)$0" -> "Y_train(0)$0"	[label=fit];
+	"model(0)$0" -> "model(0)"	[label=fit];
+	"model(0)$1" -> "filepath(0)$0"	[label=load_weights];
+	"model(0)$1" -> "model(0)$0"	[label=load_weights];
+	"y_pred(0)$0" -> "2(0)"	[label=predict];
+	"y_pred(0)$0" -> "model(0)$1"	[label=predict];
+	"y_pred(0)$0" -> "[<_ast.Name object at 0x7fd4c04ea700>](0)"	[label=predict];
+	"y_pred(0)$0" -> "1024(0)"	[label=predict];
+	"[<_ast.Name object at 0x7fd4c04ea700>](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"1024(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"y_test(0)$1" -> "np(0)$0"	[label=Add];
+	"y_test(0)$1" -> "5(0)"	[label=Add];
+	"y_test(0)$1" -> "y_test(0)$0"	[label=Add];
+	"y_test(0)$1" -> "2(0)"	[label=Add];
+	"y_test(0)$1" -> "model(0)$1"	[label=Add];
+	"y_test(0)$1" -> "1024(0)"	[label=Add];
+	"y_test(0)$1" -> "[<_ast.Name object at 0x7fd4c04eaa30>](0)"	[label=Add];
+	"[<_ast.Name object at 0x7fd4c04eaa30>](0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"f1(0)$0" -> "np(0)$0"	[label=f1_smart];
+	"f1(0)$0" -> "Y_val(0)$0"	[label=f1_smart];
+	"f1(0)$0" -> "y_pred(0)$0"	[label=f1_smart];
+	"threshold(0)$0" -> "np(0)$0"	[label=f1_smart];
+	"threshold(0)$0" -> "Y_val(0)$0"	[label=f1_smart];
+	"threshold(0)$0" -> "y_pred(0)$0"	[label=f1_smart];
+	"Optimal F1: {:.4f} at threshold: {:.4f}(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"print[244/4]" -> "f1(0)$0"	[label=print];
+	"print[244/4]" -> "threshold(0)$0"	[label=print];
+	"print[244/4]" -> "Optimal F1: {:.4f} at threshold: {:.4f}(0)"	[label=print];
+	"bestscore(0)$1" -> "bestscore(0)$0"	[label=append];
+	"bestscore(0)$1" -> "threshold(0)$0"	[label=append];
+	"y_test(0)$2" -> "1(0)"	[label=reshape];
+	"y_test(0)$2" -> "y_test(0)$1"	[label=reshape];
+	"pred_test_y(0)$0" -> "np(0)$0"	[label=astype];
+	"pred_test_y(0)$0" -> "bestscore(0)$1"	[label=astype];
+	"pred_test_y(0)$0" -> "y_test(0)$2"	[label=astype];
+	"pred_test_y(0)$0" -> "int(0)"	[label=astype];
+	"int(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+	"sub(0)$1" -> "sub(0)$0"	[label=assignedFrom];
+	"sub(0)$1" -> "pred_test_y(0)$0"	[label=assignedFrom];
+	"sub(0)$2" -> "sub(0)$1"	[label=to_csv];
+	"sub(0)$2" -> "submission.csv(0)"	[label=to_csv];
+	"submission.csv(0)" -> "gru-capsule.ipynb"	[label=appearsIn];
+}

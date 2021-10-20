@@ -1,0 +1,276 @@
+digraph "" {
+	os -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"os(0)" -> os	[label=assignedFrom];
+	"os(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	gc -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"gc(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"gc(0)" -> gc	[label=assignedFrom];
+	numpy -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"np(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	pandas -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"pd(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	seaborn -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"sns(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"matplotlib.pyplot" -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	"plt(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	tqdm -> "giba-s-property-extended-extended-result.ipynb"	[label=importedBy];
+	tqdm -> tqdm	[label=importedBy];
+	"tqdm(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"tqdm(0)" -> tqdm	[label=assignedFrom];
+	"../input/(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"DATA_DIR(0)$0" -> "../input/(0)"	[label=assignedFrom];
+	"int(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"hex2dec(0)$0" -> "int(0)"	[label=assignedFrom];
+	"hex2dec(0)$0" -> "x(0)"	[label=assignedFrom];
+	"hex2dec(0)$0" -> "16(0)"	[label=assignedFrom];
+	"x(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"16(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"train(0)$0" -> "pd(0)"	[label=read_csv];
+	"train(0)$0" -> "DATA_DIR(0)$0"	[label=read_csv];
+	"train(0)$0" -> "train.csv(0)"	[label=read_csv];
+	"train.csv(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff430>, <_ast.Constant object at 0x7fd4c04ffb50>, <_\
+ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ffa30>, <_ast.Constant \
+object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object \
+at 0x7fd4c04ff850>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at \
+0x7fd4c04ffe50>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff430>, <_ast.Constant object at 0x7fd4c04ffb50>, <_\
+ast.Constant object at 0x7fd4c04ff820>, <_ast.Constant object at 0x7fd4c04fff70>, <_ast.Constant object at 0x7fd4c04ffa30>, <_ast.Constant \
+object at 0x7fd4c04ffdf0>, <_ast.Constant object at 0x7fd4c04ff520>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object \
+at 0x7fd4c04ff850>, <_ast.Constant object at 0x7fd4c04ffac0>, <_ast.Constant object at 0x7fd4c04fff40>, <_ast.Constant object at \
+0x7fd4c04ffe50>](0)"	[label=assignedFrom];
+	"rows(0)$0" -> "np(0)"	[label=Sub];
+	"rows(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd4c04ff970>, <_\
+ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ffc10>, <_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant \
+object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object \
+at 0x7fd4c04ffd30>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at \
+0x7fd4c04ff5b0>](0)"	[label=Sub];
+	"rows(0)$0" -> "1(0)"	[label=Sub];
+	"[<_ast.Constant object at 0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff760>, <_ast.Constant object at 0x7fd4c04ff970>, <_\
+ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ffc10>, <_ast.Constant object at 0x7fd4c04ff4c0>, <_ast.Constant \
+object at 0x7fd4c04ff790>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ffaf0>, <_ast.Constant object \
+at 0x7fd4c04ffd30>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant object at 0x7fd4c04ff910>, <_ast.Constant object at \
+0x7fd4c04ff5b0>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"1(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"tmp(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"tmp(0)$0" -> "cols(0)$0"	[label=assignedFrom];
+	"tmp(0)$0" -> "rows(0)$0"	[label=assignedFrom];
+	"tmp(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object at 0x7fd4c04ffd90>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff190>, <_ast.Constant object at 0x7fd4c04ffd90>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"original shape(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[21/0]" -> "tmp(0)$0"	[label=print];
+	"print[21/0]" -> "original shape(0)"	[label=print];
+	"df_cand_col(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"df_cand_col(0)$0" -> "rows(0)$0"	[label=assignedFrom];
+	"df_cand_col(0)$1" -> "df_cand_col(0)$0"	[label=assignedFrom];
+	"df_cand_col(0)$1" -> "2(0)"	[label=assignedFrom];
+	"2(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"df_new(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"df_new(0)$0" -> "cols(0)$0"	[label=assignedFrom];
+	"df_new(0)$0" -> "rows(0)$0"	[label=assignedFrom];
+	"df_new(1)" -> "bf_search[0]"	[label=_argToVar];
+	"df_cand(1)" -> "bf_search[1]"	[label=_argToVar];
+	"cnt(1)$0" -> "0(1)"	[label=assignedFrom];
+	"head_curr(1)$0" -> "df_new(1)"	[label=assignedFrom];
+	"head_curr(1)$0" -> "0(1)"	[label=assignedFrom];
+	"head_curr(1)$0" -> "1(1)"	[label=assignedFrom];
+	"tail_curr(1)$0" -> "df_new(1)"	[label=assignedFrom];
+	"tail_curr(1)$0" -> "1(1)"	[label=assignedFrom];
+	"c(1)" -> "df_cand(1)"	[label=iteratorOf];
+	"df_new(1)$0" -> "df_new(1)"	[label=insert];
+	"df_new(1)$0" -> "df_cand(1)"	[label=insert];
+	"df_new(1)$0" -> "0(1)"	[label=insert];
+	"df_new(1)$0" -> "c(1)"	[label=insert];
+	"head_curr(1)$1" -> "0(1)"	[label=assignedFrom];
+	"head_curr(1)$1" -> "1(1)"	[label=assignedFrom];
+	"head_curr(1)$1" -> "df_new(1)$0"	[label=assignedFrom];
+	"print[40/16]" -> "c(1)"	[label=print];
+	"print[40/16]" -> "df_new(1)$0"	[label=print];
+	"print[40/16]" -> "found head!(1)"	[label=print];
+	"print[40/16]" -> "new shape(1)"	[label=print];
+	"cnt(1)$1" -> "cnt(1)$0"	[label=Add];
+	"cnt(1)$1" -> "1(1)"	[label=Add];
+	"df_new(1)$1" -> "df_cand(1)"	[label=assignedFrom];
+	"df_new(1)$1" -> "c(1)"	[label=assignedFrom];
+	"df_new(1)$1" -> "df_new(1)$0"	[label=assignedFrom];
+	"tail_curr(1)$1" -> "1(1)"	[label=assignedFrom];
+	"tail_curr(1)$1" -> "df_new(1)$1"	[label=assignedFrom];
+	"print[48/16]" -> "c(1)"	[label=print];
+	"print[48/16]" -> "new shape(1)"	[label=print];
+	"print[48/16]" -> "df_new(1)$1"	[label=print];
+	"print[48/16]" -> "found tail!(1)"	[label=print];
+	"cnt(1)$2" -> "1(1)"	[label=Add];
+	"cnt(1)$2" -> "cnt(1)$1"	[label=Add];
+	"cnt(1)$3" -> "0(1)"	[label=assignedFrom];
+	"Column searching ...(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[59/0]" -> "Column searching ...(0)"	[label=print];
+	"df_new(0)$1" -> "df_cand_col(0)$1"	[label=bf_search];
+	"df_new(0)$1" -> "df_new(0)$0"	[label=bf_search];
+	"df_new(0)$2" -> "df_new(0)$1"	[label=copy];
+	"df_cand_row(0)$0" -> "train(0)$0"	[label=copy];
+	"df_cand_row(0)$0" -> "df_new(0)$2"	[label=copy];
+	"df_cand_row(0)$1" -> "df_cand_row(0)$0"	[label=head];
+	"Row searching ...(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[66/0]" -> "Row searching ...(0)"	[label=print];
+	"df_new(0)$3" -> "df_new(0)$2"	[label=bf_search];
+	"df_new(0)$3" -> "df_cand_row(0)$1"	[label=bf_search];
+	"df_new(0)$4" -> "df_new(0)$3"	[label=copy];
+	"df_cand_col(0)$2" -> "train(0)$0"	[label=assignedFrom];
+	"df_cand_col(0)$2" -> "df_new(0)$4"	[label=assignedFrom];
+	"df_cand_col(0)$3" -> "2(0)"	[label=assignedFrom];
+	"df_cand_col(0)$3" -> "df_cand_col(0)$2"	[label=assignedFrom];
+	"Column searching (second time) ...(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[73/0]" -> "Column searching (second time) ...(0)"	[label=print];
+	"df_new(0)$5" -> "df_new(0)$4"	[label=bf_search];
+	"df_new(0)$5" -> "df_cand_col(0)$3"	[label=bf_search];
+	"new shape(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[75/0]" -> "df_new(0)$5"	[label=print];
+	"print[75/0]" -> "new shape(0)"	[label=print];
+	"Row indexes((0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[77/0]" -> "df_new(0)$5"	[label=print];
+	"print[77/0]" -> "Row indexes((0)"	[label=print];
+	"print[77/0]" -> "0(0)"	[label=print];
+	"print[77/0]" -> ")
+(0)"	[label=print];
+	"0(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	")
+(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"Column indexes((0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[78/0]" -> "1(0)"	[label=print];
+	"print[78/0]" -> "df_new(0)$5"	[label=print];
+	"print[78/0]" -> ")
+(0)"	[label=print];
+	"print[78/0]" -> "Column indexes((0)"	[label=print];
+	"enumerate(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"i(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"i(0)" -> "df_new(0)$5"	[label=iteratorOf];
+	"i(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"c(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"c(0)" -> "df_new(0)$5"	[label=iteratorOf];
+	"c(0)" -> "enumerate(0)"	[label=iteratorOf];
+	"No.(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[80/4]" -> "train(0)$0"	[label=print];
+	"print[80/4]" -> "df_new(0)$5"	[label=print];
+	"print[80/4]" -> "i(0)"	[label=print];
+	"print[80/4]" -> "c(0)"	[label=print];
+	"print[80/4]" -> "No.(0)"	[label=print];
+	"print[80/4]" -> "Column Name(0)"	[label=print];
+	"print[80/4]" -> "subset count(0)"	[label=print];
+	"print[80/4]" -> "1563411.76(0)"	[label=print];
+	"print[80/4]" -> "train count(0)"	[label=print];
+	"Column Name(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"subset count(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"1563411.76(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"train count(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"res_cnt(0)$0" -> "train(0)$0"	[label=dict];
+	"res_cnt(0)$0" -> "2(0)"	[label=dict];
+	"res_cnt(0)$0" -> "c(0)"	[label=dict];
+	"res_cnt(0)$0" -> "1563411.76(0)"	[label=dict];
+	"res_cnt(0)$1" -> "pd(0)"	[label=from_dict];
+	"res_cnt(0)$1" -> "res_cnt(0)$1"	[label=from_dict];
+	"res_cnt(0)$1" -> "index(0)"	[label=from_dict];
+	"res_cnt(0)$1" -> "[<_ast.Constant object at 0x7fd500832880>](0)"	[label=from_dict];
+	"index(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500832880>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"res_cnt(0)$2" -> "0(0)"	[label=sort_values];
+	"res_cnt(0)$2" -> "res_cnt(0)$1"	[label=sort_values];
+	"res_cnt(0)$2" -> "strange_number_cnt(0)"	[label=sort_values];
+	"res_cnt(0)$2" -> "False(0)"	[label=sort_values];
+	"strange_number_cnt(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"False(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"res_cnt(0)$3" -> "res_cnt(0)$2"	[label=head];
+	"res_cnt(0)$3" -> "10(0)"	[label=head];
+	"10(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[93/4]" -> "train(0)$0"	[label=print];
+	"print[93/4]" -> "df_new(0)$5"	[label=print];
+	"print[93/4]" -> "i(0)"	[label=print];
+	"print[93/4]" -> "c(0)"	[label=print];
+	"print[93/4]" -> "No.(0)"	[label=print];
+	"print[93/4]" -> "subset count(0)"	[label=print];
+	"print[93/4]" -> "1563411.76(0)"	[label=print];
+	"print[93/4]" -> "train count(0)"	[label=print];
+	"print[93/4]" -> "Row Name(0)"	[label=print];
+	"Row Name(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"tmp(0)$1" -> "train(0)$0"	[label=assignedFrom];
+	"tmp(0)$1" -> "2(0)"	[label=assignedFrom];
+	"idx(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"res_t_cnt(0)$0" -> "train(0)$0"	[label=dict];
+	"res_t_cnt(0)$0" -> "enumerate(0)"	[label=dict];
+	"res_t_cnt(0)$0" -> "i(0)"	[label=dict];
+	"res_t_cnt(0)$0" -> "1563411.76(0)"	[label=dict];
+	"res_t_cnt(0)$0" -> "tmp(0)$1"	[label=dict];
+	"res_t_cnt(0)$0" -> "idx(0)"	[label=dict];
+	"res_t_cnt(0)$1" -> "pd(0)"	[label=from_dict];
+	"res_t_cnt(0)$1" -> "index(0)"	[label=from_dict];
+	"res_t_cnt(0)$1" -> "res_t_cnt(0)$1"	[label=from_dict];
+	"res_t_cnt(0)$1" -> "[<_ast.Constant object at 0x7fd5008905b0>](0)"	[label=from_dict];
+	"[<_ast.Constant object at 0x7fd5008905b0>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"res_t_cnt(0)$2" -> "0(0)"	[label=sort_values];
+	"res_t_cnt(0)$2" -> "strange_number_cnt(0)"	[label=sort_values];
+	"res_t_cnt(0)$2" -> "False(0)"	[label=sort_values];
+	"res_t_cnt(0)$2" -> "res_t_cnt(0)$1"	[label=sort_values];
+	"head_row_indexes(0)$0" -> "strange_number_cnt(0)"	[label=tolist];
+	"head_row_indexes(0)$0" -> "res_t_cnt(0)$2"	[label=tolist];
+	"head_row_indexes(0)$0" -> "24(0)"	[label=tolist];
+	"24(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"mask(0)$0" -> "0(0)"	[label=assignedFrom];
+	"mask(0)$0" -> "strange_number_cnt(0)"	[label=assignedFrom];
+	"mask(0)$0" -> "res_t_cnt(0)$2"	[label=assignedFrom];
+	"mask(0)$1" -> "strange_number_cnt(0)"	[label=BitAnd];
+	"mask(0)$1" -> "res_t_cnt(0)$2"	[label=BitAnd];
+	"mask(0)$1" -> "mask(0)$0"	[label=BitAnd];
+	"mask(0)$1" -> "8(0)"	[label=BitAnd];
+	"8(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"tail_row_indexes(0)$0" -> "res_t_cnt(0)$2"	[label=tolist];
+	"tail_row_indexes(0)$0" -> "mask(0)$1"	[label=tolist];
+	"pd(0)$0" -> "pd(0)"	[label=concat];
+	"pd(0)$0" -> "[<_ast.Subscript object at 0x7fd500890700>, <_ast.Subscript object at 0x7fd50085b6a0>, <_ast.Subscript object at 0x7fd50085b7c0>](\
+0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd500890700>, <_ast.Subscript object at 0x7fd50085b6a0>, <_ast.Subscript object at 0x7fd50085b7c0>](\
+0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"df_new(0)$6" -> "pd(0)$0"	[label=concat];
+	"df_new(0)$6" -> "[<_ast.Subscript object at 0x7fd50085b340>, <_ast.Subscript object at 0x7fd50085b7f0>, <_ast.Subscript object at 0x7fd50085bb20>](\
+0)"	[label=concat];
+	"[<_ast.Subscript object at 0x7fd50085b340>, <_ast.Subscript object at 0x7fd50085b7f0>, <_ast.Subscript object at 0x7fd50085bb20>](\
+0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"df_new(2)" -> "row_bf_search[0]"	[label=_argToVar];
+	"df_new(2)$0" -> "df_new(2)"	[label=copy];
+	"df_cand_row(2)$0" -> "df_new(2)$0"	[label=copy];
+	"df_cand_row(2)$0" -> "train(2)"	[label=copy];
+	"print[124/4]" -> "Row searching ...(2)"	[label=print];
+	"df_new(2)$1" -> "df_new(2)$0"	[label=bf_search];
+	"df_new(2)$1" -> "df_cand_row(2)$0"	[label=bf_search];
+	"df_new(2)$2" -> "df_new(2)$1"	[label=copy];
+	"df_new(3)" -> "column_bf_search[0]"	[label=_argToVar];
+	"df_cand_col(3)$0" -> "df_new(3)"	[label=assignedFrom];
+	"df_cand_col(3)$0" -> "train(3)"	[label=assignedFrom];
+	"df_cand_col(3)$1" -> "df_cand_col(3)$0"	[label=assignedFrom];
+	"df_cand_col(3)$1" -> "2(3)"	[label=assignedFrom];
+	"print[131/4]" -> "Column searching ...(3)"	[label=print];
+	"df_new(3)$0" -> "df_new(3)"	[label=bf_search];
+	"df_new(3)$0" -> "df_cand_col(3)$1"	[label=bf_search];
+	"df_new(0)$7" -> "df_new(0)$6"	[label=column_bf_search];
+	"df_new(0)$8" -> "df_new(0)$7"	[label=row_bf_search];
+	"df_new_new(0)$0" -> "train(0)$0"	[label=assignedFrom];
+	"df_new_new(0)$0" -> "1(0)"	[label=assignedFrom];
+	"df_new_new(0)$0" -> "res_cnt(0)$3"	[label=assignedFrom];
+	"df_new_new(0)$0" -> "df_new(0)$8"	[label=assignedFrom];
+	"df_new_new(0)$0" -> "[<_ast.Constant object at 0x7fd4c0985100>, <_ast.Constant object at 0x7fd4c0985130>](0)"	[label=assignedFrom];
+	"df_new_new(0)$0" -> "6(0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c0985100>, <_ast.Constant object at 0x7fd4c0985130>](0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"6(0)" -> "giba-s-property-extended-extended-result.ipynb"	[label=appearsIn];
+	"print[143/0]" -> "Row indexes((0)"	[label=print];
+	"print[143/0]" -> "0(0)"	[label=print];
+	"print[143/0]" -> ")
+(0)"	[label=print];
+	"print[143/0]" -> "df_new_new(0)$0"	[label=print];
+	"print[144/0]" -> "1(0)"	[label=print];
+	"print[144/0]" -> ")
+(0)"	[label=print];
+	"print[144/0]" -> "Column indexes((0)"	[label=print];
+	"print[144/0]" -> "df_new_new(0)$0"	[label=print];
+}
