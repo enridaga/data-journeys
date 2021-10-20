@@ -1,0 +1,154 @@
+strict digraph "" {
+	numpy -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	pandas -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	"pd(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	subprocess -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	check_output -> subprocess	[label=importedBy];
+	"check_output(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"check_output(0)" -> check_output	[label=assignedFrom];
+	"print[13/0]" -> "check_output(0)"	[label=print];
+	"print[13/0]" -> "[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0d90>](0)"	[label=print];
+	"print[13/0]" -> "utf8(0)"	[label=print];
+	"[<_ast.Constant object at 0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0d90>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"utf8(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"bokeh.io" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	output_file -> "bokeh.io"	[label=importedBy];
+	"output_file(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"output_file(0)" -> output_file	[label=assignedFrom];
+	show -> "bokeh.io"	[label=importedBy];
+	"show(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"show(0)" -> show	[label=assignedFrom];
+	output_notebook -> "bokeh.io"	[label=importedBy];
+	"output_notebook(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"output_notebook(0)" -> output_notebook	[label=assignedFrom];
+	push_notebook -> "bokeh.io"	[label=importedBy];
+	"push_notebook(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"push_notebook(0)" -> push_notebook	[label=assignedFrom];
+	"bokeh.plotting" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	"*" -> "bokeh.plotting"	[label=importedBy];
+	"*(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"*(0)" -> "*"	[label=assignedFrom];
+	"bokeh.models" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	ColumnDataSource -> "bokeh.models"	[label=importedBy];
+	"ColumnDataSource(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"ColumnDataSource(0)" -> ColumnDataSource	[label=assignedFrom];
+	HoverTool -> "bokeh.models"	[label=importedBy];
+	"HoverTool(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"HoverTool(0)" -> HoverTool	[label=assignedFrom];
+	CategoricalColorMapper -> "bokeh.models"	[label=importedBy];
+	"CategoricalColorMapper(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"CategoricalColorMapper(0)" -> CategoricalColorMapper	[label=assignedFrom];
+	"bokeh.layouts" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	row -> "bokeh.layouts"	[label=importedBy];
+	"row(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"row(0)" -> row	[label=assignedFrom];
+	column -> "bokeh.layouts"	[label=importedBy];
+	"column(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"column(0)" -> column	[label=assignedFrom];
+	gridplot -> "bokeh.layouts"	[label=importedBy];
+	"gridplot(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"gridplot(0)" -> gridplot	[label=assignedFrom];
+	widgetbox -> "bokeh.layouts"	[label=importedBy];
+	"widgetbox(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"widgetbox(0)" -> widgetbox	[label=assignedFrom];
+	"bokeh.models.widgets" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	Tabs -> "bokeh.models.widgets"	[label=importedBy];
+	"Tabs(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"Tabs(0)" -> Tabs	[label=assignedFrom];
+	Panel -> "bokeh.models.widgets"	[label=importedBy];
+	"Panel(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"Panel(0)" -> Panel	[label=assignedFrom];
+	"data(0)$0" -> "pd(0)"	[label=read_csv];
+	"data(0)$0" -> "../input/vgsales.csv(0)"	[label=read_csv];
+	"../input/vgsales.csv(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"data(0)$1" -> "data(0)$0"	[label=info];
+	"data(0)$2" -> "data(0)$1"	[label=dropna];
+	"data(0)$3" -> "data(0)$2"	[label=info];
+	"data(0)$4" -> "data(0)$3"	[label=astype];
+	"data(0)$4" -> "int(0)"	[label=astype];
+	"int(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"data(0)$5" -> "data(0)$4"	[label=head];
+	"IPython.html.widgets" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=importedBy];
+	interact -> "IPython.html.widgets"	[label=importedBy];
+	"interact(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"interact(0)" -> interact	[label=assignedFrom];
+	"data(0)$6" -> "data(0)$5"	[label=set_index];
+	"data(0)$6" -> "Year(0)"	[label=set_index];
+	"Year(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"x(0)$0" -> "data(0)$6"	[label=assignedFrom];
+	"x(0)$0" -> "1980(0)"	[label=assignedFrom];
+	"1980(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"y(0)$0" -> "data(0)$6"	[label=assignedFrom];
+	"y(0)$0" -> "1980(0)"	[label=assignedFrom];
+	"source(0)$0" -> "data(0)$6"	[label=ColumnDataSource];
+	"source(0)$0" -> "x(0)$0"	[label=ColumnDataSource];
+	"source(0)$0" -> "1980(0)"	[label=ColumnDataSource];
+	"source(0)$0" -> "y(0)$0"	[label=ColumnDataSource];
+	"source(0)$0" -> "Genre(0)"	[label=ColumnDataSource];
+	"source(0)$0" -> "Publisher(0)"	[label=ColumnDataSource];
+	"source(0)$0" -> "Platform(0)"	[label=ColumnDataSource];
+	"Genre(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"Publisher(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"Platform(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"factors(0)$0" -> "data(0)$6"	[label=tolist];
+	"[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048e760>, <_\
+ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object \
+at 0x7fd4c048ea90>, <_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048ef70>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"colors(0)$0" -> "[<_ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048ec70>, <_ast.Constant object at 0x7fd4c048e760>, <_\
+ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at 0x7fd4c048ee20>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant \
+object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant object \
+at 0x7fd4c048ea90>, <_ast.Constant object at 0x7fd4c048e610>, <_ast.Constant object at 0x7fd4c048ef70>](0)"	[label=assignedFrom];
+	"color_mapper(0)$0" -> "factors(0)$0"	[label=CategoricalColorMapper];
+	"color_mapper(0)$0" -> "colors(0)$0"	[label=CategoricalColorMapper];
+	"[<_ast.Tuple object at 0x7fd4902abe20>, <_ast.Tuple object at 0x7fd4902abdf0>, <_ast.Tuple object at 0x7fd4902ab100>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"hover(0)$0" -> "[<_ast.Tuple object at 0x7fd4902abe20>, <_ast.Tuple object at 0x7fd4902abdf0>, <_ast.Tuple object at 0x7fd4902ab100>](0)"	[label=HoverTool];
+	"Video Game Sales(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"plot(0)$0" -> "Video Game Sales(0)"	[label=figure];
+	"plot(0)$0" -> "[<_ast.Name object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant \
+object at 0x7fd4902abd00>](0)"	[label=figure];
+	"[<_ast.Name object at 0x7fd4902ab160>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902abeb0>, <_ast.Constant \
+object at 0x7fd4902abd00>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"plot(0)$1" -> "x(0)$0"	[label=circle];
+	"plot(0)$1" -> "y(0)$0"	[label=circle];
+	"plot(0)$1" -> "plot(0)$0"	[label=circle];
+	"x_axis(1)" -> "update[0]"	[label=_argToVar];
+	"y_axis(1)" -> "update[1]"	[label=_argToVar];
+	"year(1)" -> "update[2]"	[label=_argToVar];
+	"c1(1)$0" -> "x_axis(1)"	[label=assignedFrom];
+	"c2(1)$0" -> "y_axis(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "year(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "c1(1)$0"	[label=assignedFrom];
+	"new_data(1)$0" -> "c2(1)$0"	[label=assignedFrom];
+	"new_data(1)$0" -> "x(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "y(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "Genre(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "Publisher(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "Platform(1)"	[label=assignedFrom];
+	"new_data(1)$0" -> "data(1)"	[label=assignedFrom];
+	"source(1)$0" -> "new_data(1)$0"	[label=assignedFrom];
+	"source(1)$0" -> "source(1)"	[label=assignedFrom];
+	"plot(1)$0" -> "c1(1)$0"	[label=assignedFrom];
+	"plot(1)$0" -> "plot(1)"	[label=assignedFrom];
+	"plot(1)$1" -> "c2(1)$0"	[label=assignedFrom];
+	"plot(1)$1" -> "plot(1)$0"	[label=assignedFrom];
+	"show[80/0]" -> "plot(0)$1"	[label=show];
+	"show[80/0]" -> "True(0)"	[label=show];
+	"True(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"update(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"interact[83/0]" -> "1980(0)"	[label=interact];
+	"interact[83/0]" -> "update(0)"	[label=interact];
+	"interact[83/0]" -> "[<_ast.Constant object at 0x7fd500836550>, <_ast.Constant object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836be0>, <_\
+ast.Constant object at 0x7fd5008361f0>](0)"	[label=interact];
+	"interact[83/0]" -> "[<_ast.Constant object at 0x7fd500836640>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836940>, <_\
+ast.Constant object at 0x7fd500836f70>](0)"	[label=interact];
+	"interact[83/0]" -> "2020(0)"	[label=interact];
+	"[<_ast.Constant object at 0x7fd500836550>, <_ast.Constant object at 0x7fd500836e50>, <_ast.Constant object at 0x7fd500836be0>, <_\
+ast.Constant object at 0x7fd5008361f0>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd500836640>, <_ast.Constant object at 0x7fd5008364f0>, <_ast.Constant object at 0x7fd500836940>, <_\
+ast.Constant object at 0x7fd500836f70>](0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+	"2020(0)" -> "interactive-bokeh-tutorial-part-2.ipynb"	[label=appearsIn];
+}
