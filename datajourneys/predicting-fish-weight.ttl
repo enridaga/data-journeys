@@ -1,0 +1,1016 @@
+@prefix dj: <http://purl.org/dj/> .
+@prefix k: <http://purl.org/dj/kaggle/> .
+@prefix ns1: <http://purl.org/datajourneys/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1242367742> rdfs:label "LinearRegression(0)" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3559798758257574838>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/898958973> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#128582050> rdfs:label "df(2)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    dj:drop <http://purl.org/dj/kaggle/predicting-fish-weight#355533667>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#76939598> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#128647587> rdfs:label "df(2)$1" ;
+    ns1:hasActivity ns1:Reuse ;
+    dj:concat <http://purl.org/dj/kaggle/predicting-fish-weight#30212277>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#4150335590>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#80347480> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1322649418> rdfs:label "train_test_split(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/964298441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1416628024> rdfs:label "fish_continuous(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/8858309895405338110> ;
+    dj:apply <http://purl.org/dj/kaggle/predicting-fish-weight#1416562487>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#48562426>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#87032133>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#89981262> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1521092448> rdfs:label "fish_categorical(0)$3" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/3948737999666082680> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#1521026911> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#192479774> rdfs:label "vif(0)$3" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3202542507793883892>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> ;
+    dj:sort_values <http://purl.org/dj/kaggle/predicting-fish-weight#192414237> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#196280874> rdfs:label "plt(0)$4" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/8482807936792304090> ;
+    dj:show <http://purl.org/dj/kaggle/predicting-fish-weight#196215337> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#198312493> rdfs:label "sns(0)$3" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> ;
+    dj:distplot <http://purl.org/dj/kaggle/predicting-fish-weight#198246956>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1989675282> rdfs:label "RandomForestRegressor(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1541671057> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#262079128> rdfs:label "test(0)$2" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-8555082654766941888> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#262013591> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#327942902> rdfs:label "train(0)$2" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6443572738332186427> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#327877365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#417596334> rdfs:label "print[81/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720> ;
+    dj:print <http://purl.org/dj/kaggle/predicting-fish-weight#740951218> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#417727407> rdfs:label "print[64/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/4057869344184014977> ;
+    dj:print <http://purl.org/dj/kaggle/predicting-fish-weight#2881751734>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327811828> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#417989552> rdfs:label "print[65/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746> ;
+    dj:print <http://purl.org/dj/kaggle/predicting-fish-weight#261948054>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#2692549208> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#419038132> rdfs:label "print[69/0]" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/2955922399213812609> ;
+    dj:print <http://purl.org/dj/kaggle/predicting-fish-weight#567084065> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#48693499> rdfs:label "x(1)" ;
+    ns1:hasActivity ns1:Reuse ;
+    dj:_argToVar <http://purl.org/dj/kaggle/predicting-fish-weight#632882471> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#488244172> rdfs:label "dummies(2)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    dj:get_dummies <http://purl.org/dj/kaggle/predicting-fish-weight#165741092>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#355533667>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#76939598>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#80347480> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#489948110> rdfs:label "metrics(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5067304862567969335> ;
+    dj:mean_squared_error <http://purl.org/dj/kaggle/predicting-fish-weight#411566957>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#411960174>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#489882573>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#878576993> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#516949054> rdfs:label "dmatrices(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/311952317> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#661324934> rdfs:label "fish_grid(0)$1" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/1206315711059746259> ;
+    dj:fit <http://purl.org/dj/kaggle/predicting-fish-weight#489751499>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#490144716>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#661259397> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#734135543> rdfs:label "GridSearchCV(0)" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/492766326> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#77005103> rdfs:label "Y(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> ;
+    dj:dmatrices <http://purl.org/dj/kaggle/predicting-fish-weight#327811828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#505545767>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#875038039> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#778110220> rdfs:label "fish_group(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546> ;
+    dj:mean <http://purl.org/dj/kaggle/predicting-fish-weight#251265667>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#340853582> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#127074770> rdfs:label "plt(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1065617167> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#128647638> rdfs:label "sns(0)" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/194380523> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#136577460> rdfs:label "np(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:skew <http://purl.org/dj/kaggle/predicting-fish-weight#82575712> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1416496950> rdfs:label "fish_continuous(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#251265667>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327680770> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1416562487> rdfs:label "fish_continuous(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1091167784517050210> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#1416496950> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1520895837> rdfs:label "fish_categorical(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/4690224455257869787> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#1741950542>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#251265667> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1520961374> rdfs:label "fish_categorical(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/4951971023994369749> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#1520895837> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1521026911> rdfs:label "fish_categorical(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2161706458143593764> ;
+    dj:dummy_vars <http://purl.org/dj/kaggle/predicting-fish-weight#1520961374>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#1699941896> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1561543891> rdfs:label "[<_ast.Constant object at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at 0x7fd4902abee0>, <_ast.Constant object at 0x7fd4902ab070>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#165741092> rdfs:label "True(2)" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1699941896> rdfs:label "[<_ast.Constant object at 0x7fd500999790>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#1741950542> rdfs:label "[<_ast.Constant object at 0x7fd5007f0a30>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#192283163> rdfs:label "vif(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/1840265407560132026> ;
+    dj:DataFrame <http://purl.org/dj/kaggle/predicting-fish-weight#80085334> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#192348700> rdfs:label "vif(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#192283163>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#76611886> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#192414237> rdfs:label "vif(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3202542507793883892>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#192348700>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#225116815>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#2773551820>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#29950131>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#44630251>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#76611886> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#196018726> rdfs:label "plt(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:show <http://purl.org/dj/kaggle/predicting-fish-weight#127074770> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#196084263> rdfs:label "plt(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/439216088330673354> ;
+    dj:figure <http://purl.org/dj/kaggle/predicting-fish-weight#196018726> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#196149800> rdfs:label "plt(0)$2" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/8482807936792304090> ;
+    dj:show <http://purl.org/dj/kaggle/predicting-fish-weight#196084263> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#196215337> rdfs:label "plt(0)$3" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/8482807936792304090> ;
+    dj:show <http://purl.org/dj/kaggle/predicting-fish-weight#196149800> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#198115882> rdfs:label "sns(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> ;
+    dj:countplot <http://purl.org/dj/kaggle/predicting-fish-weight#128647638>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#251265667>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#340853582> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#198181419> rdfs:label "sns(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> ;
+    dj:heatmap <http://purl.org/dj/kaggle/predicting-fish-weight#198115882>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761005291> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#198246956> rdfs:label "sns(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> ;
+    dj:distplot <http://purl.org/dj/kaggle/predicting-fish-weight#198181419>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#274858730>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761005291> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#225116815> rdfs:label "range(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#251069056> rdfs:label "fish(0)$0" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/5425341400456070034> ;
+    dj:read_csv <http://purl.org/dj/kaggle/predicting-fish-weight#3080063738>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#80085334> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#251134593> rdfs:label "fish(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7011735094171282923> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#251069056> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#251200130> rdfs:label "fish(0)$2" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057> ;
+    dj:value_counts <http://purl.org/dj/kaggle/predicting-fish-weight#251134593> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#2692549208> rdfs:label "No.of observations in test(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#2773551820> rdfs:label "variance_inflation_factor(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/2238646859> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#2809533800> rdfs:label """ln_Weight ~ Length1   + Height   + Width +
+                     Species_Smelt (0)""" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#287717482> rdfs:label """ln_Weight ~ Length1 + Length2 + Length3 + Height + Width + Species_Parkki + Species_Perch + 
+                      Species_Pike + Species_Roach + Species_Smelt + Species_Whitefish(0)""" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#2881751734> rdfs:label "No.of observations in train(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#30212276> rdfs:label "2(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#30212277> rdfs:label "1(2)" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#30474421> rdfs:label "3(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#3080063738> rdfs:label "../input/fish-market/Fish.csv(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#30998711> rdfs:label "5(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#31523001> rdfs:label "7(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#31785146> rdfs:label "8(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#327680770> rdfs:label "float64(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#365495161> rdfs:label "metrics(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/199230200> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#3923186429> rdfs:label """ln_Weight ~ Length1   + Height  + 
+                     Species_Smelt (0)""" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#3926857691> rdfs:label "[<_ast.Name object at 0x7fd5009992b0>, <_ast.Name object at 0x7fd500999b50>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#411566957> rdfs:label "test_x(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#4115602271>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#411960174> rdfs:label "test_y(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#4115602271>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#4150335590> rdfs:label "[<_ast.Name object at 0x7fd4c059c820>, <_ast.Name object at 0x7fd4c059c9a0>](2)" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#44630251> rdfs:label "i(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#46072036> rdfs:label "11(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#48562426> rdfs:label "x(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#489882573> rdfs:label "metrics(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5067304862567969335> ;
+    dj:mean_squared_error <http://purl.org/dj/kaggle/predicting-fish-weight#365495161>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#489751499>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#490144716>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#878576993> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#516031548> rdfs:label "max_depth(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#567084065> rdfs:label "fish_log(0)$0" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7851282461892556609> ;
+    dj:fit <http://purl.org/dj/kaggle/predicting-fish-weight#124912072>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#287717482>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327811828> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#632882471> rdfs:label "conti_summ[0]" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#639305008> rdfs:label "dummy_vars[0]" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#639436081> rdfs:label "dummy_vars[1]" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#64815379> rdfs:label "100(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#661259397> rdfs:label "fish_grid(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7329720525783173637> ;
+    dj:GridSearchCV <http://purl.org/dj/kaggle/predicting-fish-weight#165478946>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#29950131>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#30998711>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#701302028>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#763954412> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#701302028> rdfs:label "fish_random(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#760874217> rdfs:label "fish_final(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089> ;
+    dj:concat <http://purl.org/dj/kaggle/predicting-fish-weight#29950131>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#3926857691>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#80085334> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#760939754> rdfs:label "fish_final(0)$1" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/2042922542017337743> ;
+    dj:head <http://purl.org/dj/kaggle/predicting-fish-weight#760874217> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#761070828> rdfs:label "fish_final(0)$3" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:skew <http://purl.org/dj/kaggle/predicting-fish-weight#761005291> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#763954412> rdfs:label "param_grid(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7329720525783173637> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#136708534>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#1561543891>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#29950131>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#30474421>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#31523001>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#46072036>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#516031548>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#810419590>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#821560730> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#810419590> rdfs:label "max_features(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#821560730> rdfs:label "n_estimators(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#87032133> rdfs:label "0.05(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#878511456> rdfs:label "fish_random(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:RandomForestRegressor <http://purl.org/dj/kaggle/predicting-fish-weight#165478946>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#30212276>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#31785146>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#64815379> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#89981262> rdfs:label "0.95(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3559798758257574838> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6443572738332186427> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-8555082654766941888> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/2955922399213812609> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7851282461892556609> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/3948737999666082680> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2161706458143593764> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/4057869344184014977> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/8858309895405338110> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1091167784517050210>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/python/lib/1065617167> rdfs:label "matplotlib.pyplot" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/108266034> rdfs:label "patsy" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/111084090> rdfs:label "numpy" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/1416693770> rdfs:label "sklearn.linear_model" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/144966264> rdfs:label "pandas" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/1541671057> rdfs:label "RandomForestRegressor" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/919996010> .
+
+<http://purl.org/dj/python/lib/1911753024> rdfs:label "statsmodels.formula.api" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/194380523> rdfs:label "seaborn" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/198378225> rdfs:label "sklearn" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/199230200> rdfs:label "metrics" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/198378225> .
+
+<http://purl.org/dj/python/lib/2238646859> rdfs:label "variance_inflation_factor" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/315887310> .
+
+<http://purl.org/dj/python/lib/311952317> rdfs:label "dmatrices" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/108266034> .
+
+<http://purl.org/dj/python/lib/315887310> rdfs:label "statsmodels.stats.outliers_influence" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/492766326> rdfs:label "GridSearchCV" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
+
+<http://purl.org/dj/python/lib/898958973> rdfs:label "LinearRegression" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/1416693770> .
+
+<http://purl.org/dj/python/lib/919996010> rdfs:label "sklearn.ensemble" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/python/lib/964298441> rdfs:label "train_test_split" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy <http://purl.org/dj/python/lib/1865222485> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#124912072> rdfs:label "smf(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/1911753024> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#136642997> rdfs:label "np(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:mean <http://purl.org/dj/kaggle/predicting-fish-weight#136577460>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#136642997>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327811828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#740951218> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#165478946> rdfs:label "True(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#262013591> rdfs:label "test(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:exp <http://purl.org/dj/kaggle/predicting-fish-weight#136708534>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#261948054>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#262013591>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#740951218> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#274858730> rdfs:label "Weight(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#327877365> rdfs:label "train(0)$1" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:exp <http://purl.org/dj/kaggle/predicting-fish-weight#136708534>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327811828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327877365>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#740951218> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#340853582> rdfs:label "Species(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#355533667> rdfs:label "colname(2)" ;
+    ns1:hasActivity ns1:Reuse ;
+    dj:_argToVar <http://purl.org/dj/kaggle/predicting-fish-weight#639436081> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#505545767> rdfs:label "dataframe(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#76611886> rdfs:label "X(0)$0" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> ;
+    dj:dmatrices <http://purl.org/dj/kaggle/predicting-fish-weight#327811828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#505545767>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#875038039> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#76939598> rdfs:label "df(2)" ;
+    ns1:hasActivity ns1:Reuse ;
+    dj:_argToVar <http://purl.org/dj/kaggle/predicting-fish-weight#639305008> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#80347480> rdfs:label "pd(2)" ;
+    ns1:hasActivity ns1:Reuse .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#82575712> rdfs:label "np(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/111084090> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#875038039> rdfs:label "model_param(0)$0" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:assignedFrom <http://purl.org/dj/kaggle/predicting-fish-weight#2809533800> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#878576993> rdfs:label "fish_random(0)$1" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4764554431918321037>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/1206315711059746259> ;
+    dj:fit <http://purl.org/dj/kaggle/predicting-fish-weight#489751499>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#490144716>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#878511456> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1091167784517050210> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2161706458143593764> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/4951971023994369749>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3202542507793883892> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4318181777067671347> a ns1:Analysis ;
+    rdfs:label "Analysis" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4764554431918321037> a ns1:Analysis ;
+    rdfs:label "Analysis" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5067304862567969335> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4764554431918321037>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/1206315711059746259>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/1840265407560132026> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/2042922542017337743> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/439216088330673354> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/4690224455257869787> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/4951971023994369749> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/4690224455257869787> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/5425341400456070034> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/7011735094171282923> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/5425341400456070034> .
+
+<http://purl.org/dj/python/lib/1865222485> rdfs:label "sklearn.model_selection" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:importedBy k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#261948054> rdfs:label "test(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#489751499> rdfs:label "train_x(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#4115602271>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#490144716> rdfs:label "train_y(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#4115602271>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#761005291> rdfs:label "fish_final(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:sum <http://purl.org/dj/kaggle/predicting-fish-weight#760939754> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#80085334> rdfs:label "pd(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight ;
+    dj:assignedFrom <http://purl.org/dj/python/lib/144966264> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/1206315711059746259> a ns1:Analysis ;
+    rdfs:label "Analysis" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7329720525783173637> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/7329720525783173637> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/8482807936792304090> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/439216088330673354> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#136708534> rdfs:label "np(0)$2" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:mean <http://purl.org/dj/kaggle/predicting-fish-weight#136642997>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#136708534>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#261948054>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#501548067>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#740951218> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#251265667> rdfs:label "fish(0)$3" ;
+    ns1:hasActivity ns1:Movement ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057> ;
+    dj:sum <http://purl.org/dj/kaggle/predicting-fish-weight#251200130> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#29950131> rdfs:label "1(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#4115602271> rdfs:label "[<_ast.Constant object at 0x7fd5008844c0>, <_ast.Constant object at 0x7fd5008841c0>](0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/7851282461892556609> a ns1:Analysis ;
+    rdfs:label "Analysis" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#740951218> rdfs:label "fish_log_2(0)$0" ;
+    ns1:hasActivity ns1:Analysis ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4318181777067671347>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7851282461892556609> ;
+    dj:fit <http://purl.org/dj/kaggle/predicting-fish-weight#124912072>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#327811828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#3923186429> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2378812594389848546> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/6043619842436794277> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/1840265407560132026>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/988151281595570645> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#64553235> rdfs:label "0.3(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#66257176> rdfs:label "123(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#327811828> rdfs:label "train(0)$0" ;
+    ns1:hasActivity ns1:Preparation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> ;
+    dj:train_test_split <http://purl.org/dj/kaggle/predicting-fish-weight#64553235>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#66257176>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#501548067> rdfs:label "ln_Weight(0)" ;
+    ns1:hasActivity ns1:Reuse ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> ;
+    dj:appearsIn k:predicting-fish-weight .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-2844633615237066057> a ns1:Movement ;
+    rdfs:label "Movement" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7011735094171282923> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-577002863565270719> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity k:predicting-fish-weight,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-6956015571001647089> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight#761136365> rdfs:label "fish_final(0)$4" ;
+    ns1:hasActivity ns1:Visualisation ;
+    ns1:inActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> ;
+    dj:log <http://purl.org/dj/kaggle/predicting-fish-weight#274858730>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761070828>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#761136365>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight#82575712> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853> a ns1:Preparation ;
+    rdfs:label "Preparation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-3631071017581031746> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/-1444879496892494720> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-4318181777067671347>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/7851282461892556609> .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/343589039704119449> a ns1:Visualisation ;
+    rdfs:label "Visualisation" ;
+    ns1:previousActivity <http://purl.org/dj/kaggle/predicting-fish-weight/activity/-5565831501764950853>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/2042922542017337743>,
+        <http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> .
+
+k:predicting-fish-weight a k:Notebook ;
+    rdfs:label "predicting-fish-weight.ipynb" .
+
+<http://purl.org/dj/kaggle/predicting-fish-weight/activity/6365296217821910441> a ns1:Reuse ;
+    rdfs:label "Reuse" ;
+    ns1:previousActivity k:predicting-fish-weight .
+
