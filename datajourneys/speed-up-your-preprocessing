@@ -1,0 +1,207 @@
+strict digraph "" {
+	numpy -> "speed-up-your-preprocessing.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	pandas -> "speed-up-your-preprocessing.ipynb"	[label=importedBy];
+	"pd(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"train_org(0)$0" -> "pd(0)"	[label=read_csv];
+	"train_org(0)$0" -> "../input/train.csv(0)"	[label=read_csv];
+	"../input/train.csv(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"train shape:(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"print[6/0]" -> "train_org(0)$0"	[label=print];
+	"print[6/0]" -> "train shape:(0)"	[label=print];
+	"train_org(0)$1" -> "train_org(0)$0"	[label=head];
+	"x(1)" -> "clean_text_slow[0]"	[label=_argToVar];
+	"maxlen(1)" -> "clean_text_slow[1]"	[label=_argToVar];
+	"puncts(1)$0" -> "[<_ast.Constant object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048e5b0>, <_ast.Constant object at 0x7fd4c048ec70>, <_\
+ast.Constant object at 0x7fd4c048ed60>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant object at 0x7fd4c048eca0>, <_ast.Constant \
+object at 0x7fd4c048ee80>, <_ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048efa0>, <_ast.Constant object \
+at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd500872040>, <_ast.Constant object at \
+0x7fd500872730>, <_ast.Constant object at 0x7fd5008720a0>, <_ast.Constant object at 0x7fd5008726d0>, <_ast.Constant object at 0x7fd500872580>, <_\
+ast.Constant object at 0x7fd500872070>, <_ast.Constant object at 0x7fd500872460>, <_ast.Constant object at 0x7fd500872550>, <_ast.Constant \
+object at 0x7fd5007e71f0>, <_ast.Constant object at 0x7fd4e001a7f0>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object \
+at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at \
+0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0a00>, <_\
+ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant \
+object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object \
+at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at 0x7fd5007f07f0>, <_ast.Constant object at \
+0x7fd5007f0d60>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0460>, <_\
+ast.Constant object at 0x7fd5007f0790>, <_ast.Constant object at 0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant \
+object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object \
+at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at \
+0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0340>, <_\
+ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant \
+object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0700>, <_ast.Constant object \
+at 0x7fd5007f0370>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at \
+0x7fd5007f0fd0>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0b80>, <_\
+ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant \
+object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant object \
+at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at \
+0x7fd5007f0d00>, <_ast.Constant object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f06a0>, <_ast.Constant \
+object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f07c0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object \
+at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at \
+0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd4c04f6820>, <_ast.Constant object at 0x7fd4c04f6520>, <_\
+ast.Constant object at 0x7fd4c04f6910>, <_ast.Constant object at 0x7fd4c04f6640>, <_ast.Constant object at 0x7fd4c04f6a90>, <_ast.Constant \
+object at 0x7fd4c04f6b50>, <_ast.Constant object at 0x7fd4c04f69a0>, <_ast.Constant object at 0x7fd4c04f64c0>, <_ast.Constant object \
+at 0x7fd4c04f6460>, <_ast.Constant object at 0x7fd4c04f63d0>, <_ast.Constant object at 0x7fd4c04f68e0>, <_ast.Constant object at \
+0x7fd4c04f6e80>, <_ast.Constant object at 0x7fd4c04f6550>, <_ast.Constant object at 0x7fd4c04f6940>, <_ast.Constant object at 0x7fd4c04f67c0>, <_\
+ast.Constant object at 0x7fd4c04f6a00>, <_ast.Constant object at 0x7fd4c04f6d90>, <_ast.Constant object at 0x7fd4c04f6d30>, <_ast.Constant \
+object at 0x7fd4c04f69d0>, <_ast.Constant object at 0x7fd4c04f6fd0>, <_ast.Constant object at 0x7fd4c04f6eb0>, <_ast.Constant object \
+at 0x7fd4c04f6190>, <_ast.Constant object at 0x7fd4c04f68b0>, <_ast.Constant object at 0x7fd4c04f6ac0>, <_ast.Constant object at \
+0x7fd4c04f6a30>, <_ast.Constant object at 0x7fd4c04f6f10>, <_ast.Constant object at 0x7fd4c04f6310>, <_ast.Constant object at 0x7fd4c04f6c40>, <_\
+ast.Constant object at 0x7fd4c04f6c10>, <_ast.Constant object at 0x7fd4c04f61c0>, <_ast.Constant object at 0x7fd4c04f6b20>, <_ast.Constant \
+object at 0x7fd4c04f6e20>, <_ast.Constant object at 0x7fd4c04f6370>, <_ast.Constant object at 0x7fd4c04f6ca0>, <_ast.Constant object \
+at 0x7fd4c04f66a0>, <_ast.Constant object at 0x7fd4c04f64f0>, <_ast.Constant object at 0x7fd4c04f63a0>, <_ast.Constant object at \
+0x7fd4c04f6040>](1)"	[label=assignedFrom];
+	"x(1)$0" -> "x(1)"	[label=lower];
+	"punct(1)" -> "maxlen(1)"	[label=iteratorOf];
+	"punct(1)" -> "puncts(1)$0"	[label=iteratorOf];
+	"x(1)$1" -> "x(1)$0"	[label=replace];
+	"x(1)$1" -> "punct(1)"	[label=replace];
+	"x(1)$1" -> " (1)"	[label=replace];
+	"x(2)" -> "clean_text_fast[0]"	[label=_argToVar];
+	"maxlen(2)" -> "clean_text_fast[1]"	[label=_argToVar];
+	"puncts(2)$0" -> "[<_ast.Constant object at 0x7fd4c04f6dc0>, <_ast.Constant object at 0x7fd4c04f6b80>, <_ast.Constant object at 0x7fd4c04f6790>, <_\
+ast.Constant object at 0x7fd4c04f6670>, <_ast.Constant object at 0x7fd4c04f6880>, <_ast.Constant object at 0x7fd4c04f67f0>, <_ast.Constant \
+object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999130>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object \
+at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at \
+0x7fd500999790>, <_ast.Constant object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd500999be0>, <_\
+ast.Constant object at 0x7fd500999df0>, <_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant \
+object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd5009999a0>, <_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object \
+at 0x7fd500999a60>, <_ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant object at \
+0x7fd5009990a0>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999880>, <_\
+ast.Constant object at 0x7fd500999c70>, <_ast.Constant object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant \
+object at 0x7fd500999cd0>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant object \
+at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999190>, <_ast.Constant object at 0x7fd500999af0>, <_ast.Constant object at \
+0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999f40>, <_ast.Constant object at 0x7fd500999d00>, <_ast.Constant object at 0x7fd5009995e0>, <_\
+ast.Constant object at 0x7fd500999430>, <_ast.Constant object at 0x7fd500999c10>, <_ast.Constant object at 0x7fd500999970>, <_ast.Constant \
+object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999640>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object \
+at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999520>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at \
+0x7fd500999400>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd500999220>, <_\
+ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant \
+object at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object \
+at 0x7fd500999730>, <_ast.Constant object at 0x7fd5009999d0>, <_ast.Constant object at 0x7fd500999250>, <_ast.Constant object at \
+0x7fd500999ee0>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999700>, <_\
+ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant \
+object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd5009994c0>, <_ast.Constant object \
+at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at \
+0x7fd500999160>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009994f0>, <_\
+ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant \
+object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object \
+at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009992b0>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at \
+0x7fd50080d490>, <_ast.Constant object at 0x7fd50080d5e0>, <_ast.Constant object at 0x7fd50080d6a0>, <_ast.Constant object at 0x7fd50080dc70>, <_\
+ast.Constant object at 0x7fd50080d670>, <_ast.Constant object at 0x7fd50080d460>, <_ast.Constant object at 0x7fd50080d640>, <_ast.Constant \
+object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d3a0>, <_ast.Constant object at 0x7fd50080d520>, <_ast.Constant object \
+at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080d100>, <_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at \
+0x7fd50080d0d0>, <_ast.Constant object at 0x7fd50080df10>, <_ast.Constant object at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d130>, <_\
+ast.Constant object at 0x7fd50080d820>, <_ast.Constant object at 0x7fd50080d2e0>, <_ast.Constant object at 0x7fd50080de50>, <_ast.Constant \
+object at 0x7fd50080d700>, <_ast.Constant object at 0x7fd50080d040>, <_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object \
+at 0x7fd50080db20>, <_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object at \
+0x7fd50080dd60>, <_ast.Constant object at 0x7fd50080dca0>, <_ast.Constant object at 0x7fd50080d1c0>, <_ast.Constant object at 0x7fd50080d580>, <_\
+ast.Constant object at 0x7fd50080de20>, <_ast.Constant object at 0x7fd50080d400>, <_ast.Constant object at 0x7fd50080dfd0>, <_ast.Constant \
+object at 0x7fd50080d9d0>, <_ast.Constant object at 0x7fd50080d6d0>, <_ast.Constant object at 0x7fd50080d610>, <_ast.Constant object \
+at 0x7fd50080d880>, <_ast.Constant object at 0x7fd50080dd00>, <_ast.Constant object at 0x7fd50080df70>, <_ast.Constant object at \
+0x7fd50080db80>](2)"	[label=assignedFrom];
+	"x(2)$0" -> "x(2)"	[label=lower];
+	"punct(2)" -> "maxlen(2)"	[label=iteratorOf];
+	"punct(2)" -> "puncts(2)$0"	[label=iteratorOf];
+	"x(2)$1" -> "x(2)$0"	[label=replace];
+	"x(2)$1" -> "punct(2)"	[label=replace];
+	"x(2)$1" -> " (2)"	[label=replace];
+	"_(0)$0" -> "train_org(0)$1"	[label=apply];
+	"_(0)$0" -> "clean_text_slow(0)"	[label=apply];
+	"_(0)$0" -> "x(0)"	[label=apply];
+	"_(0)$0" -> "None(0)"	[label=apply];
+	"clean_text_slow(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"x(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"None(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"_(0)$1" -> "train_org(0)$1"	[label=apply];
+	"_(0)$1" -> "x(0)"	[label=apply];
+	"_(0)$1" -> "None(0)"	[label=apply];
+	"_(0)$1" -> "clean_text_fast(0)"	[label=apply];
+	"clean_text_fast(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"_(0)$2" -> "train_org(0)$1"	[label=apply];
+	"_(0)$2" -> "clean_text_slow(0)"	[label=apply];
+	"_(0)$2" -> "x(0)"	[label=apply];
+	"_(0)$2" -> "65(0)"	[label=apply];
+	"65(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"_(0)$3" -> "train_org(0)$1"	[label=apply];
+	"_(0)$3" -> "x(0)"	[label=apply];
+	"_(0)$3" -> "clean_text_fast(0)"	[label=apply];
+	"_(0)$3" -> "65(0)"	[label=apply];
+	"word_index(3)" -> "load_glove_slow[0]"	[label=_argToVar];
+	"max_words(3)" -> "load_glove_slow[1]"	[label=_argToVar];
+	"embed_size(3)" -> "load_glove_slow[2]"	[label=_argToVar];
+	"EMBEDDING_FILE(3)$0" -> "../input/embeddings/glove.840B.300d/glove.840B.300d.txt(3)"	[label=assignedFrom];
+	"word(4)" -> "get_coefs[0]"	[label=_argToVar];
+	"embeddings_index(3)$0" -> "word_index(3)"	[label=dict];
+	"embeddings_index(3)$0" -> "EMBEDDING_FILE(3)$0"	[label=dict];
+	"embeddings_index(3)$0" -> "get_coefs(3)"	[label=dict];
+	"embeddings_index(3)$0" -> "o(3)"	[label=dict];
+	"embeddings_index(3)$0" -> " (3)"	[label=dict];
+	"embeddings_index(3)$0" -> "open(3)"	[label=dict];
+	"embeddings_index(3)$0" -> "0(3)"	[label=dict];
+	"all_embs(3)$0" -> "embeddings_index(3)$0"	[label=stack];
+	"all_embs(3)$0" -> "np(3)"	[label=stack];
+	"emb_mean(3)$0" -> "all_embs(3)$0"	[label=assignedFrom];
+	"emb_std(3)$0" -> "all_embs(3)$0"	[label=assignedFrom];
+	"embed_size(3)$0" -> "all_embs(3)$0"	[label=assignedFrom];
+	"embed_size(3)$0" -> "1(3)"	[label=assignedFrom];
+	"embedding_matrix(3)$0" -> "max_words(3)"	[label=normal];
+	"embedding_matrix(3)$0" -> "np(3)"	[label=normal];
+	"embedding_matrix(3)$0" -> "emb_mean(3)$0"	[label=normal];
+	"embedding_matrix(3)$0" -> "emb_std(3)$0"	[label=normal];
+	"embedding_matrix(3)$0" -> "embed_size(3)$0"	[label=normal];
+	"word(3)" -> "word_index(3)"	[label=iteratorOf];
+	"i(3)" -> "word_index(3)"	[label=iteratorOf];
+	"embedding_vector(3)$0" -> "embeddings_index(3)$0"	[label=get];
+	"embedding_vector(3)$0" -> "word(3)"	[label=get];
+	"embedding_matrix(3)$1" -> "embedding_matrix(3)$0"	[label=assignedFrom];
+	"embedding_matrix(3)$1" -> "embedding_vector(3)$0"	[label=assignedFrom];
+	"word_index(5)" -> "load_glove_fast[0]"	[label=_argToVar];
+	"max_words(5)" -> "load_glove_fast[1]"	[label=_argToVar];
+	"embed_size(5)" -> "load_glove_fast[2]"	[label=_argToVar];
+	"EMBEDDING_FILE(5)$0" -> "../input/embeddings/glove.840B.300d/glove.840B.300d.txt(5)"	[label=assignedFrom];
+	"emb_mean(5)$0" -> "0.005838499(5)"	[label=assignedFrom];
+	"emb_mean(5)$0" -> "0.48782197(5)"	[label=assignedFrom];
+	"emb_std(5)$0" -> "0.005838499(5)"	[label=assignedFrom];
+	"emb_std(5)$0" -> "0.48782197(5)"	[label=assignedFrom];
+	"embedding_matrix(5)$0" -> "max_words(5)"	[label=normal];
+	"embedding_matrix(5)$0" -> "embed_size(5)"	[label=normal];
+	"embedding_matrix(5)$0" -> "emb_mean(5)$0"	[label=normal];
+	"embedding_matrix(5)$0" -> "emb_std(5)$0"	[label=normal];
+	"embedding_matrix(5)$0" -> "np(5)"	[label=normal];
+	"line(5)" -> "f(5)"	[label=iteratorOf];
+	"word(5)$0" -> "line(5)"	[label=split];
+	"word(5)$0" -> " (5)"	[label=split];
+	"word(5)$0" -> "1(5)"	[label=split];
+	"vec(5)$0" -> "line(5)"	[label=split];
+	"vec(5)$0" -> " (5)"	[label=split];
+	"vec(5)$0" -> "1(5)"	[label=split];
+	"i(5)$0" -> "word_index(5)"	[label=assignedFrom];
+	"i(5)$0" -> "word(5)$0"	[label=assignedFrom];
+	"embedding_vector(5)$0" -> "np(5)"	[label=assignedFrom];
+	"embedding_vector(5)$0" -> " (5)"	[label=assignedFrom];
+	"embedding_vector(5)$0" -> "vec(5)$0"	[label=assignedFrom];
+	"embedding_vector(5)$0" -> "float32(5)"	[label=assignedFrom];
+	"embedding_vector(5)$0" -> "300(5)"	[label=assignedFrom];
+	"embedding_matrix(5)$1" -> "embedding_matrix(5)$0"	[label=assignedFrom];
+	"embedding_matrix(5)$1" -> "embedding_vector(5)$0"	[label=assignedFrom];
+	"keras.preprocessing.text" -> "speed-up-your-preprocessing.ipynb"	[label=importedBy];
+	Tokenizer -> "keras.preprocessing.text"	[label=importedBy];
+	"Tokenizer(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"Tokenizer(0)" -> Tokenizer	[label=assignedFrom];
+	"tokenizer(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"tokenizer(0)$0" -> "train_org(0)$1"	[label=fit_on_texts];
+	"tokenizer(0)$0" -> "tokenizer(0)"	[label=fit_on_texts];
+	"_(0)$4" -> "tokenizer(0)$0"	[label=load_glove_slow];
+	"_(0)$4" -> "len(0)"	[label=load_glove_slow];
+	"_(0)$4" -> "1(0)"	[label=load_glove_slow];
+	"len(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"1(0)" -> "speed-up-your-preprocessing.ipynb"	[label=appearsIn];
+	"_(0)$5" -> "tokenizer(0)$0"	[label=load_glove_fast];
+	"_(0)$5" -> "len(0)"	[label=load_glove_fast];
+	"_(0)$5" -> "1(0)"	[label=load_glove_fast];
+}

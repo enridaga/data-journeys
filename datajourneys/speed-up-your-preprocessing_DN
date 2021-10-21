@@ -1,0 +1,308 @@
+strict digraph "" {
+	node [label="\N"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#45023470"	[label="45023470 (i(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#619906232"	[label="619906232 (word_index(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#45023470" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#619906232"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1171916585"	[label="1171916585 (load_glove_slow[0]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#619906232" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1171916585"	[label="_argToVar ()"];
+	"http://purl.org/dj/python/lib/144966264"	[label="144966264 (pandas: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="speed-up-your-preprocessing (speed-up-your-preprocessing.ipynb)"];
+	"http://purl.org/dj/python/lib/144966264" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#874054871"	[label="874054871 (EMBEDDING_FILE(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#876548617"	[label="876548617 (../input/embeddings/glove.840B.300d/glove.840B.300d.txt(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#874054871" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#876548617"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79495479"	[label="79495479 (_(0)$2: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48759021"	[label="48759021 (65(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79495479" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48759021"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="677250204 (train_org(0)$1: Preparation)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79495479" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1161955021"	[label="1161955021 (clean_text_slow(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79495479" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1161955021"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426"	[label="48562426 (x(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79495479" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48759021" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#677184667"	[label="677184667 (train_org(0)$0: Movement)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677184667"	[label="head ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1161955021" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79692090"	[label="79692090 (_(0)$5: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#29950131"	[label="29950131 (1(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79692090" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#29950131"	[label="load_glove_fast ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#689636529"	[label="689636529 (tokenizer(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79692090" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#689636529"	[label="load_glove_fast ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#121635265"	[label="121635265 (len(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79692090" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#121635265"	[label="load_glove_fast ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#29950131" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#689636529" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="fit_on_texts ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#535364701"	[label="535364701 (tokenizer(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#689636529" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#535364701"	[label="fit_on_texts ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#121635265" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#596247710"	[label="596247710 (embed_size(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162413844"	[label="1162413844 (load_glove_fast[2]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#596247710" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162413844"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118"	[label="1515915118 (embedding_matrix(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#596247710"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#83231077"	[label="83231077 (np(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#83231077"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#474809273"	[label="474809273 (emb_std(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#474809273"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#529663067"	[label="529663067 (max_words(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#529663067"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#553452559"	[label="553452559 (emb_mean(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#553452559"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#306709139"	[label="306709139 (0.48782197(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#474809273" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#306709139"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#348259011"	[label="348259011 (0.005838499(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#474809273" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#348259011"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162282771"	[label="1162282771 (load_glove_fast[1]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#529663067" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162282771"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#553452559" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#306709139"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#553452559" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#348259011"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#84607300"	[label="84607300 (i(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#620168378"	[label="620168378 (word_index(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#84607300" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#620168378"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#263520919"	[label="263520919 (word(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#84607300" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#263520919"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162151698"	[label="1162151698 (load_glove_fast[0]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#620168378" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1162151698"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#26149031"	[label="26149031 ( (5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#263520919" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#26149031"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#30605496"	[label="30605496 (1(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#263520919" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#30605496"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#171311663"	[label="171311663 (line(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#263520919" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#171311663"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480"	[label="557843480 (all_embs(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810"	[label="1513555810 (embeddings_index(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810"	[label="stack ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#82968931"	[label="82968931 (np(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#82968931"	[label="stack ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#619906232"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#874054871"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#30081205"	[label="30081205 (0(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#30081205"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#25886885"	[label="25886885 ( (3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#25886885"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#46596340"	[label="46596340 (o(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#46596340"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#510002228"	[label="510002228 (get_coefs(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#510002228"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#174588471"	[label="174588471 (open(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#174588471"	[label="dict ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#159253010"	[label="159253010 (None(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#159253010" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79429942"	[label="79429942 (_(0)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79429942" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79429942" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79429942" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#159253010"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1152190134"	[label="1152190134 (clean_text_fast(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79429942" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1152190134"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1152190134" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#80085334"	[label="80085334 (pd(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#677184667" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#80085334"	[label="read_csv ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1310918404"	[label="1310918404 (../input/train.csv(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#677184667" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1310918404"	[label="read_csv ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89784657"	[label="89784657 (x(2)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#236126894"	[label="236126894 (punct(2): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89784657" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#236126894"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#25755812"	[label="25755812 ( (2): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89784657" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#25755812"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89719120"	[label="89719120 (x(2)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89784657" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#89719120"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#415499125"	[label="415499125 (puncts(2)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#236126894" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#415499125"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#292291337"	[label="292291337 (maxlen(2): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#236126894" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#292291337"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48824572"	[label="48824572 (x(2): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89719120" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48824572"	[label="lower ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#2553199830"	[label="2553199830 ([<_ast.Constant object at 0x7fd4c04f6dc0>, <_ast.Constant object at 0x7fd4c04f6b80>, <_ast.Constant object at 0x7fd4c04f6790>, <_\
+ast.Constant object at 0x7fd4c04f6670>, <_ast.Constant object at 0x7fd4c04f6880>, <_ast.Constant object at 0x7fd4c04f67f0>, <_ast.Constant \
+object at 0x7fd500999e80>, <_ast.Constant object at 0x7fd500999130>, <_ast.Constant object at 0x7fd5009995b0>, <_ast.Constant object \
+at 0x7fd5009993a0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at \
+0x7fd500999790>, <_ast.Constant object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd500999fd0>, <_ast.Constant object at 0x7fd500999be0>, <_\
+ast.Constant object at 0x7fd500999df0>, <_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999ac0>, <_ast.Constant \
+object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd5009999a0>, <_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object \
+at 0x7fd500999a60>, <_ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant object at \
+0x7fd5009990a0>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999880>, <_\
+ast.Constant object at 0x7fd500999c70>, <_ast.Constant object at 0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant \
+object at 0x7fd500999cd0>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant object \
+at 0x7fd500999f10>, <_ast.Constant object at 0x7fd500999190>, <_ast.Constant object at 0x7fd500999af0>, <_ast.Constant object at \
+0x7fd5009996d0>, <_ast.Constant object at 0x7fd500999f40>, <_ast.Constant object at 0x7fd500999d00>, <_ast.Constant object at 0x7fd5009995e0>, <_\
+ast.Constant object at 0x7fd500999430>, <_ast.Constant object at 0x7fd500999c10>, <_ast.Constant object at 0x7fd500999970>, <_ast.Constant \
+object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999640>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object \
+at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999520>, <_ast.Constant object at 0x7fd5009998b0>, <_ast.Constant object at \
+0x7fd500999400>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd500999220>, <_\
+ast.Constant object at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant \
+object at 0x7fd500999940>, <_ast.Constant object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999910>, <_ast.Constant object \
+at 0x7fd500999730>, <_ast.Constant object at 0x7fd5009999d0>, <_ast.Constant object at 0x7fd500999250>, <_ast.Constant object at \
+0x7fd500999ee0>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999700>, <_\
+ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant \
+object at 0x7fd500999e50>, <_ast.Constant object at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd5009994c0>, <_ast.Constant object \
+at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at \
+0x7fd500999160>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd5009994f0>, <_\
+ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant \
+object at 0x7fd500999280>, <_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at 0x7fd500999f70>, <_ast.Constant object \
+at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009992b0>, <_ast.Constant object at 0x7fd50080dbb0>, <_ast.Constant object at \
+0x7fd50080d490>, <_ast.Constant object at 0x7fd50080d5e0>, <_ast.Constant object at 0x7fd50080d6a0>, <_ast.Constant object at 0x7fd50080dc70>, <_\
+ast.Constant object at 0x7fd50080d670>, <_ast.Constant object at 0x7fd50080d460>, <_ast.Constant object at 0x7fd50080d640>, <_ast.Constant \
+object at 0x7fd50080d5b0>, <_ast.Constant object at 0x7fd50080d3a0>, <_ast.Constant object at 0x7fd50080d520>, <_ast.Constant object \
+at 0x7fd50080d340>, <_ast.Constant object at 0x7fd50080d100>, <_ast.Constant object at 0x7fd50080d220>, <_ast.Constant object at \
+0x7fd50080d0d0>, <_ast.Constant object at 0x7fd50080df10>, <_ast.Constant object at 0x7fd50080d850>, <_ast.Constant object at 0x7fd50080d130>, <_\
+ast.Constant object at 0x7fd50080d820>, <_ast.Constant object at 0x7fd50080d2e0>, <_ast.Constant object at 0x7fd50080de50>, <_ast.Constant \
+object at 0x7fd50080d700>, <_ast.Constant object at 0x7fd50080d040>, <_ast.Constant object at 0x7fd50080d550>, <_ast.Constant object \
+at 0x7fd50080db20>, <_ast.Constant object at 0x7fd50080d760>, <_ast.Constant object at 0x7fd50080d070>, <_ast.Constant object at \
+0x7fd50080dd60>, <_ast.Constant object at 0x7fd50080dca0>, <_ast.Constant object at 0x7fd50080d1c0>, <_ast.Constant object at 0x7fd50080d580>, <_\
+ast.Constant object at 0x7fd50080de20>, <_ast.Constant object at 0x7fd50080d400>, <_ast.Constant object at 0x7fd50080dfd0>, <_ast.Constant \
+object at 0x7fd50080d9d0>, <_ast.Constant object at 0x7fd50080d6d0>, <_ast.Constant object at 0x7fd50080d610>, <_ast.Constant object \
+at 0x7fd50080d880>, <_ast.Constant object at 0x7fd50080dd00>, <_ast.Constant object at 0x7fd50080df70>, <_ast.Constant object at \
+0x7fd50080db80>](2): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#415499125" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#2553199830"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1165756190"	[label="1165756190 (clean_text_fast[1]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#292291337" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1165756190"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79561016"	[label="79561016 (_(0)$3: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79561016" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48759021"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79561016" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79561016" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79561016" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1152190134"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#529400921"	[label="529400921 (max_words(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1172047658"	[label="1172047658 (load_glove_slow[1]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#529400921" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1172047658"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828"	[label="1515390828 (embedding_matrix(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#82968931"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#529400921"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#758514928"	[label="758514928 (embed_size(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#758514928"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#552928269"	[label="552928269 (emb_mean(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#552928269"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#474284983"	[label="474284983 (emb_std(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#474284983"	[label="normal ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#758514928" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#30343350"	[label="30343350 (1(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#758514928" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#30343350"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#552928269" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#474284983" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#557843480"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#535364701" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#80085334" -> "http://purl.org/dj/python/lib/144966264"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#80085334" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915114"	[label="1515915114 (embedding_vector(3)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915114" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1513555810"	[label="get ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#179503681"	[label="179503681 (word(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915114" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#179503681"	[label="get ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#179503681" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#619906232"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404"	[label="1516439404 (embedding_vector(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#83231077"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#26149031"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#190579225"	[label="190579225 (vec(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#190579225"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#326828802"	[label="326828802 (float32(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#326828802"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#66257178"	[label="66257178 (300(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#66257178"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#190579225" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#26149031"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#190579225" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#30605496"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#190579225" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#171311663"	[label="split ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#510198845"	[label="510198845 (Tokenizer(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#510198845" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/305398716"	[label="305398716 (Tokenizer: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#510198845" -> "http://purl.org/dj/python/lib/305398716"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/2030832060"	[label="2030832060 (keras.preprocessing.text: Reuse)"];
+	"http://purl.org/dj/python/lib/305398716" -> "http://purl.org/dj/python/lib/2030832060"	[label="importedBy ()"];
+	"http://purl.org/dj/python/lib/2030832060" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79364405"	[label="79364405 (_(0)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79364405" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677250204"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79364405" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1161955021"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79364405" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48562426"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79364405" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#159253010"	[label="apply ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#874579161"	[label="874579161 (EMBEDDING_FILE(5)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#876810763"	[label="876810763 (../input/embeddings/glove.840B.300d/glove.840B.300d.txt(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#874579161" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#876810763"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#82575712"	[label="82575712 (np(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#82575712" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/python/lib/111084090"	[label="111084090 (numpy: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#82575712" -> "http://purl.org/dj/python/lib/111084090"	[label="assignedFrom ()"];
+	"http://purl.org/dj/python/lib/111084090" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="importedBy ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515980655"	[label="1515980655 (embedding_matrix(5)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515980655" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915118"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515980655" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1516439404"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515456365"	[label="1515456365 (embedding_matrix(3)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515456365" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515390828"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515456365" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1515915114"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89456975"	[label="89456975 (x(1)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48693499"	[label="48693499 (x(1): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89456975" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#48693499"	[label="lower ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1175390004"	[label="1175390004 (clean_text_slow[0]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48693499" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1175390004"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79626553"	[label="79626553 (_(0)$4: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79626553" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#29950131"	[label="load_glove_slow ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79626553" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#689636529"	[label="load_glove_slow ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#79626553" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#121635265"	[label="load_glove_slow ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#358024059"	[label="358024059 (print[6/0]: Visualisation)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#358024059" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#677184667"	[label="print ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#761136395"	[label="761136395 (train shape:(0): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#358024059" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#761136395"	[label="print ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#761136395" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#292160264"	[label="292160264 (maxlen(1): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1175521077"	[label="1175521077 (clean_text_slow[1]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#292160264" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1175521077"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#44499181"	[label="44499181 (f(5): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#171311663" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#44499181"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#595985564"	[label="595985564 (embed_size(3): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1172178731"	[label="1172178731 (load_glove_slow[2]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#595985564" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1172178731"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1310918404" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing"	[label="appearsIn ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89522512"	[label="89522512 (x(1)$1: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89522512" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#89456975"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#25624739"	[label="25624739 ( (1): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89522512" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#25624739"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#235995821"	[label="235995821 (punct(1): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#89522512" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#235995821"	[label="replace ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#235995821" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#292160264"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#415236980"	[label="415236980 (puncts(1)$0: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#235995821" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#415236980"	[label="iteratorOf ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#2803946280"	[label="2803946280 ([<_ast.Constant object at 0x7fd4c048edc0>, <_ast.Constant object at 0x7fd4c048e5b0>, <_ast.Constant object at 0x7fd4c048ec70>, <_\
+ast.Constant object at 0x7fd4c048ed60>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant object at 0x7fd4c048eca0>, <_ast.Constant \
+object at 0x7fd4c048ee80>, <_ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048efa0>, <_ast.Constant object \
+at 0x7fd4c048ed00>, <_ast.Constant object at 0x7fd4c048e880>, <_ast.Constant object at 0x7fd500872040>, <_ast.Constant object at \
+0x7fd500872730>, <_ast.Constant object at 0x7fd5008720a0>, <_ast.Constant object at 0x7fd5008726d0>, <_ast.Constant object at 0x7fd500872580>, <_\
+ast.Constant object at 0x7fd500872070>, <_ast.Constant object at 0x7fd500872460>, <_ast.Constant object at 0x7fd500872550>, <_ast.Constant \
+object at 0x7fd5007e71f0>, <_ast.Constant object at 0x7fd4e001a7f0>, <_ast.Constant object at 0x7fd5007f0580>, <_ast.Constant object \
+at 0x7fd5007f0190>, <_ast.Constant object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f0b50>, <_ast.Constant object at \
+0x7fd5007f0e50>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0f40>, <_ast.Constant object at 0x7fd5007f0a00>, <_\
+ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object at 0x7fd5007f0850>, <_ast.Constant object at 0x7fd5007f08b0>, <_ast.Constant \
+object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0130>, <_ast.Constant object \
+at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f09a0>, <_ast.Constant object at 0x7fd5007f07f0>, <_ast.Constant object at \
+0x7fd5007f0d60>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant object at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0460>, <_\
+ast.Constant object at 0x7fd5007f0790>, <_ast.Constant object at 0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant \
+object at 0x7fd5007f0610>, <_ast.Constant object at 0x7fd5007f0730>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object \
+at 0x7fd5007f0760>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at 0x7fd5007f0e80>, <_ast.Constant object at \
+0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f06d0>, <_ast.Constant object at 0x7fd5007f0af0>, <_ast.Constant object at 0x7fd5007f0340>, <_\
+ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant object at 0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant \
+object at 0x7fd5007f0430>, <_ast.Constant object at 0x7fd5007f0d90>, <_ast.Constant object at 0x7fd5007f0700>, <_ast.Constant object \
+at 0x7fd5007f0370>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0490>, <_ast.Constant object at \
+0x7fd5007f0fd0>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0b80>, <_\
+ast.Constant object at 0x7fd5007f0400>, <_ast.Constant object at 0x7fd5007f0bb0>, <_ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant \
+object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0ee0>, <_ast.Constant object at 0x7fd5007f09d0>, <_ast.Constant object \
+at 0x7fd5007f0310>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at \
+0x7fd5007f0d00>, <_ast.Constant object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f03a0>, <_ast.Constant object at 0x7fd5007f05b0>, <_\
+ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f0e20>, <_ast.Constant object at 0x7fd5007f06a0>, <_ast.Constant \
+object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f07c0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object \
+at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0880>, <_ast.Constant object at \
+0x7fd5007f0c40>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at 0x7fd4c04f6820>, <_ast.Constant object at 0x7fd4c04f6520>, <_\
+ast.Constant object at 0x7fd4c04f6910>, <_ast.Constant object at 0x7fd4c04f6640>, <_ast.Constant object at 0x7fd4c04f6a90>, <_ast.Constant \
+object at 0x7fd4c04f6b50>, <_ast.Constant object at 0x7fd4c04f69a0>, <_ast.Constant object at 0x7fd4c04f64c0>, <_ast.Constant object \
+at 0x7fd4c04f6460>, <_ast.Constant object at 0x7fd4c04f63d0>, <_ast.Constant object at 0x7fd4c04f68e0>, <_ast.Constant object at \
+0x7fd4c04f6e80>, <_ast.Constant object at 0x7fd4c04f6550>, <_ast.Constant object at 0x7fd4c04f6940>, <_ast.Constant object at 0x7fd4c04f67c0>, <_\
+ast.Constant object at 0x7fd4c04f6a00>, <_ast.Constant object at 0x7fd4c04f6d90>, <_ast.Constant object at 0x7fd4c04f6d30>, <_ast.Constant \
+object at 0x7fd4c04f69d0>, <_ast.Constant object at 0x7fd4c04f6fd0>, <_ast.Constant object at 0x7fd4c04f6eb0>, <_ast.Constant object \
+at 0x7fd4c04f6190>, <_ast.Constant object at 0x7fd4c04f68b0>, <_ast.Constant object at 0x7fd4c04f6ac0>, <_ast.Constant object at \
+0x7fd4c04f6a30>, <_ast.Constant object at 0x7fd4c04f6f10>, <_ast.Constant object at 0x7fd4c04f6310>, <_ast.Constant object at 0x7fd4c04f6c40>, <_\
+ast.Constant object at 0x7fd4c04f6c10>, <_ast.Constant object at 0x7fd4c04f61c0>, <_ast.Constant object at 0x7fd4c04f6b20>, <_ast.Constant \
+object at 0x7fd4c04f6e20>, <_ast.Constant object at 0x7fd4c04f6370>, <_ast.Constant object at 0x7fd4c04f6ca0>, <_ast.Constant object \
+at 0x7fd4c04f66a0>, <_ast.Constant object at 0x7fd4c04f64f0>, <_ast.Constant object at 0x7fd4c04f63a0>, <_ast.Constant object at \
+0x7fd4c04f6040>](1): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#415236980" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#2803946280"	[label="assignedFrom ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#1165625117"	[label="1165625117 (clean_text_fast[0]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#48824572" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#1165625117"	[label="_argToVar ()"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#179634754"	[label="179634754 (word(4): Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#523043992"	[label="523043992 (get_coefs[0]: Reuse)"];
+	"http://purl.org/dj/kaggle/speed-up-your-preprocessing#179634754" -> "http://purl.org/dj/kaggle/speed-up-your-preprocessing#523043992"	[label="_argToVar ()"];
+}

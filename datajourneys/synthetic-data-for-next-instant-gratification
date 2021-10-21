@@ -1,0 +1,572 @@
+digraph "" {
+	"sklearn.datasets" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	make_classification -> "sklearn.datasets"	[label=importedBy];
+	"make_classification(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"make_classification(0)" -> make_classification	[label=assignedFrom];
+	numpy -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"np(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"np(0)" -> numpy	[label=assignedFrom];
+	pandas -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"pd(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"np(0)$0" -> numpy	[label=assignedFrom];
+	"np(0)$0" -> "np(0)"	[label=seed];
+	"np(0)$0" -> "2019(0)"	[label=seed];
+	"2019(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"512(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train(0)$0" -> "np(0)$0"	[label=make_classification];
+	"train(0)$0" -> "512(0)"	[label=make_classification];
+	"train(0)$0" -> "255(0)"	[label=make_classification];
+	"train(0)$0" -> "33(0)"	[label=make_classification];
+	"train(0)$0" -> "47(0)"	[label=make_classification];
+	"train(0)$0" -> "0(0)"	[label=make_classification];
+	"train(0)$0" -> "0.08(0)"	[label=make_classification];
+	"255(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"33(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"47(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"0(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"0.08(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"target(0)$0" -> "np(0)$0"	[label=make_classification];
+	"target(0)$0" -> "512(0)"	[label=make_classification];
+	"target(0)$0" -> "255(0)"	[label=make_classification];
+	"target(0)$0" -> "33(0)"	[label=make_classification];
+	"target(0)$0" -> "47(0)"	[label=make_classification];
+	"target(0)$0" -> "0(0)"	[label=make_classification];
+	"target(0)$0" -> "0.08(0)"	[label=make_classification];
+	"train(0)$1" -> "np(0)$0"	[label=hstack];
+	"train(0)$1" -> "0(0)"	[label=hstack];
+	"train(0)$1" -> "train(0)$1"	[label=hstack];
+	"train(0)$1" -> "len(0)"	[label=hstack];
+	"train(0)$1" -> "1(0)"	[label=hstack];
+	"len(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"1(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"range(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"i(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"i(0)" -> "512(0)"	[label=iteratorOf];
+	"i(0)" -> "1(0)"	[label=iteratorOf];
+	"i(0)" -> "range(0)"	[label=iteratorOf];
+	"X(0)$0" -> "np(0)$0"	[label=make_classification];
+	"X(0)$0" -> "512(0)"	[label=make_classification];
+	"X(0)$0" -> "255(0)"	[label=make_classification];
+	"X(0)$0" -> "33(0)"	[label=make_classification];
+	"X(0)$0" -> "47(0)"	[label=make_classification];
+	"X(0)$0" -> "0(0)"	[label=make_classification];
+	"X(0)$0" -> "0.08(0)"	[label=make_classification];
+	"y(0)$0" -> "np(0)$0"	[label=make_classification];
+	"y(0)$0" -> "512(0)"	[label=make_classification];
+	"y(0)$0" -> "255(0)"	[label=make_classification];
+	"y(0)$0" -> "33(0)"	[label=make_classification];
+	"y(0)$0" -> "47(0)"	[label=make_classification];
+	"y(0)$0" -> "0(0)"	[label=make_classification];
+	"y(0)$0" -> "0.08(0)"	[label=make_classification];
+	"X(0)$1" -> "np(0)$0"	[label=hstack];
+	"X(0)$1" -> "len(0)"	[label=hstack];
+	"X(0)$1" -> "1(0)"	[label=hstack];
+	"X(0)$1" -> "i(0)"	[label=hstack];
+	"X(0)$1" -> "X(0)$1"	[label=hstack];
+	"train(0)$2" -> "np(0)$0"	[label=vstack];
+	"train(0)$2" -> "X(0)$1"	[label=vstack];
+	"train(0)$2" -> "train(0)$2"	[label=vstack];
+	"target(0)$1" -> "np(0)$0"	[label=concatenate];
+	"target(0)$1" -> "y(0)$0"	[label=concatenate];
+	"target(0)$1" -> "target(0)$1"	[label=concatenate];
+	"[](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"col_names(0)$0" -> "[](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c048ebe0>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant object at 0x7fd4c048ed90>, <_\
+ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant \
+object at 0x7fd4c048ebb0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object \
+at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048e490>, <_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at \
+0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048ef40>, <_ast.Constant object at 0x7fd4c048e940>, <_\
+ast.Constant object at 0x7fd4c048ec40>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant \
+object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902ab8b0>, <_ast.Constant object \
+at 0x7fd4902abdf0>, <_ast.Constant object at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at \
+0x7fd4902abb20>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902ab4c0>, <_\
+ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant \
+object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant object \
+at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at \
+0x7fd4902ab550>, <_ast.Constant object at 0x7fd4902ab7c0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902ab730>, <_\
+ast.Constant object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902abf10>, <_ast.Constant object at 0x7fd4902ab160>, <_ast.Constant \
+object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object \
+at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902ab1f0>, <_ast.Constant object at \
+0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abb50>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at 0x7fd4902ab490>, <_\
+ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902ab190>, <_ast.Constant \
+object at 0x7fd4902ab040>, <_ast.Constant object at 0x7fd4902ab7f0>, <_ast.Constant object at 0x7fd4902abf70>, <_ast.Constant object \
+at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab070>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at \
+0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902abd90>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902ab5b0>, <_\
+ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant \
+object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab310>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object \
+at 0x7fd4902ab400>, <_ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at \
+0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902abc70>, <_\
+ast.Constant object at 0x7fd4902ab100>, <_ast.Constant object at 0x7fd4902abee0>, <_ast.Constant object at 0x7fd4902aba00>, <_ast.Constant \
+object at 0x7fd4902abeb0>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"kind_arr(0)$0" -> "[<_ast.Constant object at 0x7fd4c048ebe0>, <_ast.Constant object at 0x7fd4c048efd0>, <_ast.Constant object at 0x7fd4c048ed90>, <_\
+ast.Constant object at 0x7fd4c048eeb0>, <_ast.Constant object at 0x7fd4c048eb80>, <_ast.Constant object at 0x7fd4c048ed00>, <_ast.Constant \
+object at 0x7fd4c048ebb0>, <_ast.Constant object at 0x7fd4c048e8b0>, <_ast.Constant object at 0x7fd4c048ef10>, <_ast.Constant object \
+at 0x7fd4c048ed30>, <_ast.Constant object at 0x7fd4c048e490>, <_ast.Constant object at 0x7fd4c048eac0>, <_ast.Constant object at \
+0x7fd4c048e970>, <_ast.Constant object at 0x7fd4c048ee50>, <_ast.Constant object at 0x7fd4c048ef40>, <_ast.Constant object at 0x7fd4c048e940>, <_\
+ast.Constant object at 0x7fd4c048ec40>, <_ast.Constant object at 0x7fd4902ab3a0>, <_ast.Constant object at 0x7fd4902ab5e0>, <_ast.Constant \
+object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab520>, <_ast.Constant object at 0x7fd4902ab8b0>, <_ast.Constant object \
+at 0x7fd4902abdf0>, <_ast.Constant object at 0x7fd4902ab8e0>, <_ast.Constant object at 0x7fd4902ab940>, <_ast.Constant object at \
+0x7fd4902abb20>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902aba90>, <_ast.Constant object at 0x7fd4902ab4c0>, <_\
+ast.Constant object at 0x7fd4902ab850>, <_ast.Constant object at 0x7fd4902ab610>, <_ast.Constant object at 0x7fd4902abb80>, <_ast.Constant \
+object at 0x7fd4902ab3d0>, <_ast.Constant object at 0x7fd4902abe80>, <_ast.Constant object at 0x7fd4902abac0>, <_ast.Constant object \
+at 0x7fd4902abbe0>, <_ast.Constant object at 0x7fd4902abaf0>, <_ast.Constant object at 0x7fd4902abca0>, <_ast.Constant object at \
+0x7fd4902ab550>, <_ast.Constant object at 0x7fd4902ab7c0>, <_ast.Constant object at 0x7fd4902ab460>, <_ast.Constant object at 0x7fd4902ab730>, <_\
+ast.Constant object at 0x7fd4902abe20>, <_ast.Constant object at 0x7fd4902abf10>, <_ast.Constant object at 0x7fd4902ab160>, <_ast.Constant \
+object at 0x7fd4902ab6d0>, <_ast.Constant object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902ab9d0>, <_ast.Constant object \
+at 0x7fd4902ab280>, <_ast.Constant object at 0x7fd4902abd00>, <_ast.Constant object at 0x7fd4902ab1f0>, <_ast.Constant object at \
+0x7fd4902abd30>, <_ast.Constant object at 0x7fd4902abb50>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at 0x7fd4902ab490>, <_\
+ast.Constant object at 0x7fd4902ab0a0>, <_ast.Constant object at 0x7fd4902ab4f0>, <_ast.Constant object at 0x7fd4902ab190>, <_ast.Constant \
+object at 0x7fd4902ab040>, <_ast.Constant object at 0x7fd4902ab7f0>, <_ast.Constant object at 0x7fd4902abf70>, <_ast.Constant object \
+at 0x7fd4902ab430>, <_ast.Constant object at 0x7fd4902ab070>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at \
+0x7fd4902ab130>, <_ast.Constant object at 0x7fd4902abd90>, <_ast.Constant object at 0x7fd4902ab970>, <_ast.Constant object at 0x7fd4902ab5b0>, <_\
+ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab880>, <_ast.Constant object at 0x7fd4902ab670>, <_ast.Constant \
+object at 0x7fd4902abbb0>, <_ast.Constant object at 0x7fd4902ab310>, <_ast.Constant object at 0x7fd4902abc40>, <_ast.Constant object \
+at 0x7fd4902ab400>, <_ast.Constant object at 0x7fd4902ab0d0>, <_ast.Constant object at 0x7fd4902ab2e0>, <_ast.Constant object at \
+0x7fd4902abfd0>, <_ast.Constant object at 0x7fd4902ab910>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902abc70>, <_\
+ast.Constant object at 0x7fd4902ab100>, <_ast.Constant object at 0x7fd4902abee0>, <_ast.Constant object at 0x7fd4902aba00>, <_ast.Constant \
+object at 0x7fd4902abeb0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab9a0>, <_\
+ast.Constant object at 0x7fd4902ab790>, <_ast.Constant object at 0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant \
+object at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object \
+at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902aba30>, <_ast.Constant object at \
+0x7fd500832850>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd5008326a0>, <_\
+ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant \
+object at 0x7fd500832e20>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832040>, <_ast.Constant object \
+at 0x7fd5008323d0>, <_ast.Constant object at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832970>, <_ast.Constant object at \
+0x7fd500832400>, <_ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object at 0x7fd500832e50>, <_\
+ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant object at 0x7fd5008324c0>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832430>, <_ast.Constant object \
+at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832490>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at \
+0x7fd500832a60>, <_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832940>, <_\
+ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant \
+object at 0x7fd500832f70>, <_ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object \
+at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832790>, <_ast.Constant object at 0x7fd500832ca0>, <_ast.Constant object at \
+0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832670>, <_\
+ast.Constant object at 0x7fd500832e80>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant \
+object at 0x7fd500832fa0>, <_ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object \
+at 0x7fd500832250>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832760>, <_ast.Constant object at \
+0x7fd500832af0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant object at 0x7fd5008320a0>, <_\
+ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832a90>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant \
+object at 0x7fd5008321c0>, <_ast.Constant object at 0x7fd500832820>, <_ast.Constant object at 0x7fd500832460>, <_ast.Constant object \
+at 0x7fd500832be0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at \
+0x7fd500832fd0>, <_ast.Constant object at 0x7fd500832df0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at 0x7fd5008326d0>, <_\
+ast.Constant object at 0x7fd500832220>, <_ast.Constant object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant \
+object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd500832a00>, <_ast.Constant object at 0x7fd500832d30>, <_ast.Constant object \
+at 0x7fd500832b50>, <_ast.Constant object at 0x7fd500832640>, <_ast.Constant object at 0x7fd500832f40>, <_ast.Constant object at \
+0x7fd500832610>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd5008321f0>, <_\
+ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd50082d3d0>, <_ast.Constant object at 0x7fd50082d190>, <_ast.Constant \
+object at 0x7fd50082d310>, <_ast.Constant object at 0x7fd50082d040>, <_ast.Constant object at 0x7fd50082d580>, <_ast.Constant object \
+at 0x7fd50082d070>, <_ast.Constant object at 0x7fd50082d400>, <_ast.Constant object at 0x7fd50082d100>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"color_arr(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab2b0>, <_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab9a0>, <_\
+ast.Constant object at 0x7fd4902ab790>, <_ast.Constant object at 0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902abfa0>, <_ast.Constant \
+object at 0x7fd4902abf40>, <_ast.Constant object at 0x7fd4902abdc0>, <_ast.Constant object at 0x7fd4902ab1c0>, <_ast.Constant object \
+at 0x7fd4902abc10>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant object at 0x7fd4902aba30>, <_ast.Constant object at \
+0x7fd500832850>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd5008328e0>, <_ast.Constant object at 0x7fd5008326a0>, <_\
+ast.Constant object at 0x7fd500832910>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant \
+object at 0x7fd500832e20>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832040>, <_ast.Constant object \
+at 0x7fd5008323d0>, <_ast.Constant object at 0x7fd500832100>, <_ast.Constant object at 0x7fd500832970>, <_ast.Constant object at \
+0x7fd500832400>, <_ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object at 0x7fd500832e50>, <_\
+ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant object at 0x7fd5008324c0>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832430>, <_ast.Constant object \
+at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832490>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at \
+0x7fd500832a60>, <_ast.Constant object at 0x7fd500832bb0>, <_ast.Constant object at 0x7fd500832c10>, <_ast.Constant object at 0x7fd500832940>, <_\
+ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant \
+object at 0x7fd500832f70>, <_ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd5008327c0>, <_ast.Constant object \
+at 0x7fd500832d60>, <_ast.Constant object at 0x7fd500832790>, <_ast.Constant object at 0x7fd500832ca0>, <_ast.Constant object at \
+0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832280>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832670>, <_\
+ast.Constant object at 0x7fd500832e80>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant \
+object at 0x7fd500832fa0>, <_ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object \
+at 0x7fd500832250>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832760>, <_ast.Constant object at \
+0x7fd500832af0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008328b0>, <_ast.Constant object at 0x7fd5008320a0>, <_\
+ast.Constant object at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832a90>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant \
+object at 0x7fd5008321c0>, <_ast.Constant object at 0x7fd500832820>, <_ast.Constant object at 0x7fd500832460>, <_ast.Constant object \
+at 0x7fd500832be0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at \
+0x7fd500832fd0>, <_ast.Constant object at 0x7fd500832df0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at 0x7fd5008326d0>, <_\
+ast.Constant object at 0x7fd500832220>, <_ast.Constant object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant \
+object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd500832a00>, <_ast.Constant object at 0x7fd500832d30>, <_ast.Constant object \
+at 0x7fd500832b50>, <_ast.Constant object at 0x7fd500832640>, <_ast.Constant object at 0x7fd500832f40>, <_ast.Constant object at \
+0x7fd500832610>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832ee0>, <_ast.Constant object at 0x7fd5008321f0>, <_\
+ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd50082d3d0>, <_ast.Constant object at 0x7fd50082d190>, <_ast.Constant \
+object at 0x7fd50082d310>, <_ast.Constant object at 0x7fd50082d040>, <_ast.Constant object at 0x7fd50082d580>, <_ast.Constant object \
+at 0x7fd50082d070>, <_ast.Constant object at 0x7fd50082d400>, <_ast.Constant object at 0x7fd50082d100>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd50082d670>, <_ast.Constant object at 0x7fd50082db50>, <_ast.Constant object at 0x7fd50082de80>, <_\
+ast.Constant object at 0x7fd50082d160>, <_ast.Constant object at 0x7fd50082d4c0>, <_ast.Constant object at 0x7fd50082d4f0>, <_ast.Constant \
+object at 0x7fd50082d490>, <_ast.Constant object at 0x7fd50082d7f0>, <_ast.Constant object at 0x7fd50082d1f0>, <_ast.Constant object \
+at 0x7fd50082d8b0>, <_ast.Constant object at 0x7fd50082d9d0>, <_ast.Constant object at 0x7fd50082db20>, <_ast.Constant object at \
+0x7fd50082d550>, <_ast.Constant object at 0x7fd50082dd90>, <_ast.Constant object at 0x7fd50082d1c0>, <_ast.Constant object at 0x7fd50082dfa0>, <_\
+ast.Constant object at 0x7fd50082df70>, <_ast.Constant object at 0x7fd50082dbe0>, <_ast.Constant object at 0x7fd50082d940>, <_ast.Constant \
+object at 0x7fd50082d280>, <_ast.Constant object at 0x7fd50082d2b0>, <_ast.Constant object at 0x7fd50082da90>, <_ast.Constant object \
+at 0x7fd50082d5e0>, <_ast.Constant object at 0x7fd50082d2e0>, <_ast.Constant object at 0x7fd50082d9a0>, <_ast.Constant object at \
+0x7fd50082dc70>, <_ast.Constant object at 0x7fd50082d910>, <_ast.Constant object at 0x7fd50082d430>, <_ast.Constant object at 0x7fd50082d220>, <_\
+ast.Constant object at 0x7fd50082d370>, <_ast.Constant object at 0x7fd50082dfd0>, <_ast.Constant object at 0x7fd50082d850>, <_ast.Constant \
+object at 0x7fd50082d130>, <_ast.Constant object at 0x7fd50082d250>, <_ast.Constant object at 0x7fd50082dd30>, <_ast.Constant object \
+at 0x7fd50082dac0>, <_ast.Constant object at 0x7fd50082da00>, <_ast.Constant object at 0x7fd50082dd60>, <_ast.Constant object at \
+0x7fd50082d760>, <_ast.Constant object at 0x7fd50082dc10>, <_ast.Constant object at 0x7fd50082d730>, <_ast.Constant object at 0x7fd50082da60>, <_\
+ast.Constant object at 0x7fd50082da30>, <_ast.Constant object at 0x7fd50082dc40>, <_ast.Constant object at 0x7fd50082d8e0>, <_ast.Constant \
+object at 0x7fd50082d880>, <_ast.Constant object at 0x7fd50082dca0>, <_ast.Constant object at 0x7fd50082d7c0>, <_ast.Constant object \
+at 0x7fd50082daf0>, <_ast.Constant object at 0x7fd50082d970>, <_ast.Constant object at 0x7fd50082df10>, <_ast.Constant object at \
+0x7fd50082d3a0>, <_ast.Constant object at 0x7fd50082dbb0>, <_ast.Constant object at 0x7fd50082df40>, <_ast.Constant object at 0x7fd50082d460>, <_\
+ast.Constant object at 0x7fd50082ddc0>, <_ast.Constant object at 0x7fd50082d5b0>, <_ast.Constant object at 0x7fd50082d340>, <_ast.Constant \
+object at 0x7fd50082d700>, <_ast.Constant object at 0x7fd50082db80>, <_ast.Constant object at 0x7fd50082dee0>, <_ast.Constant object \
+at 0x7fd50082de20>, <_ast.Constant object at 0x7fd50082ddf0>, <_ast.Constant object at 0x7fd50082de50>, <_ast.Constant object at \
+0x7fd50082dd00>, <_ast.Constant object at 0x7fd50082d790>, <_ast.Constant object at 0x7fd50082deb0>, <_ast.Constant object at 0x7fd50082d6d0>, <_\
+ast.Constant object at 0x7fd50082dcd0>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant \
+object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object \
+at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at 0x7fd500999880>, <_ast.Constant object at \
+0x7fd500999640>, <_ast.Constant object at 0x7fd500999430>, <_ast.Constant object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999fd0>, <_\
+ast.Constant object at 0x7fd500999250>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object at 0x7fd500999130>, <_ast.Constant \
+object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd5009994c0>, <_ast.Constant object at 0x7fd5009992b0>, <_ast.Constant object \
+at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at \
+0x7fd500999f70>, <_ast.Constant object at 0x7fd500999520>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009998b0>, <_\
+ast.Constant object at 0x7fd500999730>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant object at 0x7fd500999700>, <_ast.Constant \
+object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999ee0>, <_ast.Constant object \
+at 0x7fd500999280>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd5009999d0>, <_ast.Constant object at \
+0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd5009995b0>, <_\
+ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999190>, <_ast.Constant \
+object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object \
+at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at \
+0x7fd500999df0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999c10>, <_\
+ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at 0x7fd500999af0>, <_ast.Constant \
+object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd500999220>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant object \
+at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant object at 0x7fd500999790>, <_ast.Constant object at \
+0x7fd500999be0>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd5009993a0>, <_\
+ast.Constant object at 0x7fd500999c70>, <_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object at 0x7fd500999f40>, <_ast.Constant \
+object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object \
+at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at \
+0x7fd500999cd0>, <_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009999a0>, <_\
+ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999d00>, <_ast.Constant \
+object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd500999400>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object \
+at 0x7fd5007f0130>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at \
+0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0d90>, <_\
+ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant \
+object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0370>, <_ast.Constant object \
+at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at \
+0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f0bb0>, <_\
+ast.Constant object at 0x7fd5007f07c0>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"animal_arr(0)$0" -> "[<_ast.Constant object at 0x7fd50082d670>, <_ast.Constant object at 0x7fd50082db50>, <_ast.Constant object at 0x7fd50082de80>, <_\
+ast.Constant object at 0x7fd50082d160>, <_ast.Constant object at 0x7fd50082d4c0>, <_ast.Constant object at 0x7fd50082d4f0>, <_ast.Constant \
+object at 0x7fd50082d490>, <_ast.Constant object at 0x7fd50082d7f0>, <_ast.Constant object at 0x7fd50082d1f0>, <_ast.Constant object \
+at 0x7fd50082d8b0>, <_ast.Constant object at 0x7fd50082d9d0>, <_ast.Constant object at 0x7fd50082db20>, <_ast.Constant object at \
+0x7fd50082d550>, <_ast.Constant object at 0x7fd50082dd90>, <_ast.Constant object at 0x7fd50082d1c0>, <_ast.Constant object at 0x7fd50082dfa0>, <_\
+ast.Constant object at 0x7fd50082df70>, <_ast.Constant object at 0x7fd50082dbe0>, <_ast.Constant object at 0x7fd50082d940>, <_ast.Constant \
+object at 0x7fd50082d280>, <_ast.Constant object at 0x7fd50082d2b0>, <_ast.Constant object at 0x7fd50082da90>, <_ast.Constant object \
+at 0x7fd50082d5e0>, <_ast.Constant object at 0x7fd50082d2e0>, <_ast.Constant object at 0x7fd50082d9a0>, <_ast.Constant object at \
+0x7fd50082dc70>, <_ast.Constant object at 0x7fd50082d910>, <_ast.Constant object at 0x7fd50082d430>, <_ast.Constant object at 0x7fd50082d220>, <_\
+ast.Constant object at 0x7fd50082d370>, <_ast.Constant object at 0x7fd50082dfd0>, <_ast.Constant object at 0x7fd50082d850>, <_ast.Constant \
+object at 0x7fd50082d130>, <_ast.Constant object at 0x7fd50082d250>, <_ast.Constant object at 0x7fd50082dd30>, <_ast.Constant object \
+at 0x7fd50082dac0>, <_ast.Constant object at 0x7fd50082da00>, <_ast.Constant object at 0x7fd50082dd60>, <_ast.Constant object at \
+0x7fd50082d760>, <_ast.Constant object at 0x7fd50082dc10>, <_ast.Constant object at 0x7fd50082d730>, <_ast.Constant object at 0x7fd50082da60>, <_\
+ast.Constant object at 0x7fd50082da30>, <_ast.Constant object at 0x7fd50082dc40>, <_ast.Constant object at 0x7fd50082d8e0>, <_ast.Constant \
+object at 0x7fd50082d880>, <_ast.Constant object at 0x7fd50082dca0>, <_ast.Constant object at 0x7fd50082d7c0>, <_ast.Constant object \
+at 0x7fd50082daf0>, <_ast.Constant object at 0x7fd50082d970>, <_ast.Constant object at 0x7fd50082df10>, <_ast.Constant object at \
+0x7fd50082d3a0>, <_ast.Constant object at 0x7fd50082dbb0>, <_ast.Constant object at 0x7fd50082df40>, <_ast.Constant object at 0x7fd50082d460>, <_\
+ast.Constant object at 0x7fd50082ddc0>, <_ast.Constant object at 0x7fd50082d5b0>, <_ast.Constant object at 0x7fd50082d340>, <_ast.Constant \
+object at 0x7fd50082d700>, <_ast.Constant object at 0x7fd50082db80>, <_ast.Constant object at 0x7fd50082dee0>, <_ast.Constant object \
+at 0x7fd50082de20>, <_ast.Constant object at 0x7fd50082ddf0>, <_ast.Constant object at 0x7fd50082de50>, <_ast.Constant object at \
+0x7fd50082dd00>, <_ast.Constant object at 0x7fd50082d790>, <_ast.Constant object at 0x7fd50082deb0>, <_ast.Constant object at 0x7fd50082d6d0>, <_\
+ast.Constant object at 0x7fd50082dcd0>, <_ast.Constant object at 0x7fd5009991c0>, <_ast.Constant object at 0x7fd500999940>, <_ast.Constant \
+object at 0x7fd500999ac0>, <_ast.Constant object at 0x7fd500999610>, <_ast.Constant object at 0x7fd500999040>, <_ast.Constant object \
+at 0x7fd5009996a0>, <_ast.Constant object at 0x7fd500999460>, <_ast.Constant object at 0x7fd500999880>, <_ast.Constant object at \
+0x7fd500999640>, <_ast.Constant object at 0x7fd500999430>, <_ast.Constant object at 0x7fd500999970>, <_ast.Constant object at 0x7fd500999fd0>, <_\
+ast.Constant object at 0x7fd500999250>, <_ast.Constant object at 0x7fd500999070>, <_ast.Constant object at 0x7fd500999130>, <_ast.Constant \
+object at 0x7fd500999c40>, <_ast.Constant object at 0x7fd5009994c0>, <_ast.Constant object at 0x7fd5009992b0>, <_ast.Constant object \
+at 0x7fd500999340>, <_ast.Constant object at 0x7fd500999820>, <_ast.Constant object at 0x7fd5009996d0>, <_ast.Constant object at \
+0x7fd500999f70>, <_ast.Constant object at 0x7fd500999520>, <_ast.Constant object at 0x7fd500999a00>, <_ast.Constant object at 0x7fd5009998b0>, <_\
+ast.Constant object at 0x7fd500999730>, <_ast.Constant object at 0x7fd500999bb0>, <_ast.Constant object at 0x7fd500999700>, <_ast.Constant \
+object at 0x7fd500999910>, <_ast.Constant object at 0x7fd500999d90>, <_ast.Constant object at 0x7fd500999ee0>, <_ast.Constant object \
+at 0x7fd500999280>, <_ast.Constant object at 0x7fd5009997f0>, <_ast.Constant object at 0x7fd5009999d0>, <_ast.Constant object at \
+0x7fd5009997c0>, <_ast.Constant object at 0x7fd500999490>, <_ast.Constant object at 0x7fd5009995e0>, <_ast.Constant object at 0x7fd5009995b0>, <_\
+ast.Constant object at 0x7fd500999370>, <_ast.Constant object at 0x7fd500999d60>, <_ast.Constant object at 0x7fd500999190>, <_ast.Constant \
+object at 0x7fd500999fa0>, <_ast.Constant object at 0x7fd500999d30>, <_ast.Constant object at 0x7fd500999ca0>, <_ast.Constant object \
+at 0x7fd500999dc0>, <_ast.Constant object at 0x7fd500999850>, <_ast.Constant object at 0x7fd500999e80>, <_ast.Constant object at \
+0x7fd500999df0>, <_ast.Constant object at 0x7fd500999100>, <_ast.Constant object at 0x7fd500999b20>, <_ast.Constant object at 0x7fd500999c10>, <_\
+ast.Constant object at 0x7fd500999580>, <_ast.Constant object at 0x7fd5009990d0>, <_ast.Constant object at 0x7fd500999af0>, <_ast.Constant \
+object at 0x7fd5009994f0>, <_ast.Constant object at 0x7fd500999220>, <_ast.Constant object at 0x7fd5009990a0>, <_ast.Constant object \
+at 0x7fd5009993d0>, <_ast.Constant object at 0x7fd500999670>, <_ast.Constant object at 0x7fd500999790>, <_ast.Constant object at \
+0x7fd500999be0>, <_ast.Constant object at 0x7fd500999160>, <_ast.Constant object at 0x7fd500999a30>, <_ast.Constant object at 0x7fd5009993a0>, <_\
+ast.Constant object at 0x7fd500999c70>, <_ast.Constant object at 0x7fd500999a90>, <_ast.Constant object at 0x7fd500999f40>, <_ast.Constant \
+object at 0x7fd500999310>, <_ast.Constant object at 0x7fd500999f10>, <_ast.Constant object at 0x7fd5009991f0>, <_ast.Constant object \
+at 0x7fd500999b80>, <_ast.Constant object at 0x7fd5009992e0>, <_ast.Constant object at 0x7fd500999e50>, <_ast.Constant object at \
+0x7fd500999cd0>, <_ast.Constant object at 0x7fd500999760>, <_ast.Constant object at 0x7fd5009998e0>, <_ast.Constant object at 0x7fd5009999a0>, <_\
+ast.Constant object at 0x7fd500999e20>, <_ast.Constant object at 0x7fd500999b50>, <_ast.Constant object at 0x7fd500999d00>, <_ast.Constant \
+object at 0x7fd500999a60>, <_ast.Constant object at 0x7fd500999400>, <_ast.Constant object at 0x7fd500999550>, <_ast.Constant object \
+at 0x7fd5007f0130>, <_ast.Constant object at 0x7fd5007f0c10>, <_ast.Constant object at 0x7fd5007f0a30>, <_ast.Constant object at \
+0x7fd5007f0b20>, <_ast.Constant object at 0x7fd5007f0520>, <_ast.Constant object at 0x7fd5007f0dc0>, <_ast.Constant object at 0x7fd5007f0d90>, <_\
+ast.Constant object at 0x7fd5007f0ac0>, <_ast.Constant object at 0x7fd5007f0640>, <_ast.Constant object at 0x7fd5007f05e0>, <_ast.Constant \
+object at 0x7fd5007f0ca0>, <_ast.Constant object at 0x7fd5007f04f0>, <_ast.Constant object at 0x7fd5007f0370>, <_ast.Constant object \
+at 0x7fd5007f0df0>, <_ast.Constant object at 0x7fd5007f0910>, <_ast.Constant object at 0x7fd5007f0670>, <_ast.Constant object at \
+0x7fd5007f09d0>, <_ast.Constant object at 0x7fd5007f0f10>, <_ast.Constant object at 0x7fd5007f0f70>, <_ast.Constant object at 0x7fd5007f0bb0>, <_\
+ast.Constant object at 0x7fd5007f07c0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0ee0>, <_\
+ast.Constant object at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant \
+object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object \
+at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at \
+0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0700>, <_ast.Constant object at 0x7fd5007f0190>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant \
+object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0d00>, <_ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object \
+at 0x7fd5007f0340>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0f40>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"goal_arr(0)$0" -> "[<_ast.Constant object at 0x7fd5007f0820>, <_ast.Constant object at 0x7fd5007f0cd0>, <_ast.Constant object at 0x7fd5007f0ee0>, <_\
+ast.Constant object at 0x7fd5007f0b80>, <_ast.Constant object at 0x7fd5007f0a60>, <_ast.Constant object at 0x7fd5007f0280>, <_ast.Constant \
+object at 0x7fd5007f04c0>, <_ast.Constant object at 0x7fd5007f0be0>, <_ast.Constant object at 0x7fd5007f0460>, <_ast.Constant object \
+at 0x7fd5007f0b50>, <_ast.Constant object at 0x7fd5007f0a90>, <_ast.Constant object at 0x7fd5007f0eb0>, <_ast.Constant object at \
+0x7fd5007f02b0>, <_ast.Constant object at 0x7fd5007f0940>, <_ast.Constant object at 0x7fd5007f0700>, <_ast.Constant object at 0x7fd5007f0190>, <_\
+ast.Constant object at 0x7fd5007f03d0>, <_ast.Constant object at 0x7fd5007f0d30>, <_ast.Constant object at 0x7fd5007f02e0>, <_ast.Constant \
+object at 0x7fd5007f0550>, <_ast.Constant object at 0x7fd5007f0d00>, <_ast.Constant object at 0x7fd5007f0c70>, <_ast.Constant object \
+at 0x7fd5007f0340>, <_ast.Constant object at 0x7fd5007f0fa0>, <_ast.Constant object at 0x7fd5007f0f40>](0)"	[label=assignedFrom];
+	"_(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"_(0)" -> "255(0)"	[label=iteratorOf];
+	"_(0)" -> "range(0)"	[label=iteratorOf];
+	"new_col_name(0)$0" -> "np(0)$0"	[label=Add];
+	"new_col_name(0)$0" -> "kind_arr(0)$0"	[label=Add];
+	"new_col_name(0)$0" -> "color_arr(0)$0"	[label=Add];
+	"new_col_name(0)$0" -> "animal_arr(0)$0"	[label=Add];
+	"new_col_name(0)$0" -> "goal_arr(0)$0"	[label=Add];
+	"new_col_name(0)$0" -> "-(0)"	[label=Add];
+	"-(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"col_names(0)$1" -> "col_names(0)$0"	[label=append];
+	"col_names(0)$1" -> "new_col_name(0)$0"	[label=append];
+	"col_names(0)$2" -> "col_names(0)$1"	[label=append];
+	"col_names(0)$2" -> "wheezy-copper-turtle-magic(0)"	[label=append];
+	"wheezy-copper-turtle-magic(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train(0)$3" -> "pd(0)"	[label=DataFrame];
+	"train(0)$3" -> "col_names(0)$2"	[label=DataFrame];
+	"train(0)$3" -> "train(0)$3"	[label=DataFrame];
+	"train(0)$4" -> "target(0)$1"	[label=assignedFrom];
+	"train(0)$4" -> "train(0)$3"	[label=assignedFrom];
+	hashlib -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"hashlib(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"hashlib(0)" -> hashlib	[label=assignedFrom];
+	"inp(1)" -> "generate_hashed_id[0]"	[label=_argToVar];
+	"train(0)$5" -> "train(0)$4"	[label=assignedFrom];
+	"train(0)$6" -> "train(0)$5"	[label=apply];
+	"train(0)$6" -> "id(0)"	[label=apply];
+	"train(0)$6" -> "generate_hashed_id(0)"	[label=apply];
+	"id(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"generate_hashed_id(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"c(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"cols(0)$0" -> "train(0)$6"	[label=assignedFrom];
+	"cols(0)$0" -> "c(0)"	[label=assignedFrom];
+	"cols(0)$0" -> "[<_ast.Constant object at 0x7fd500824460>, <_ast.Constant object at 0x7fd500824340>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500824460>, <_ast.Constant object at 0x7fd500824340>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train(0)$7" -> "train(0)$6"	[label=assignedFrom];
+	"train(0)$7" -> "cols(0)$0"	[label=assignedFrom];
+	"train(0)$7" -> "[<_ast.Constant object at 0x7fd500824130>, <_ast.Constant object at 0x7fd500824040>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500824130>, <_ast.Constant object at 0x7fd500824040>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train(0)$8" -> "train(0)$7"	[label=head];
+	"train(0)$9" -> "train(0)$8"	[label=hist];
+	seaborn -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"sns(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	"matplotlib.pyplot" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"plt(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"sns(0)$0" -> "train(0)$9"	[label=distplot];
+	"sns(0)$0" -> "sns(0)"	[label=distplot];
+	"sns(0)$0" -> "10(0)"	[label=distplot];
+	"10(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"plt(0)$0" -> "plt(0)"	[label=figure];
+	"sns(0)$1" -> "train(0)$9"	[label=distplot];
+	"sns(0)$1" -> "sns(0)$0"	[label=distplot];
+	"sns(0)$1" -> "210(0)"	[label=distplot];
+	"210(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train_corr(0)$0" -> "1(0)"	[label=corr];
+	"train_corr(0)$0" -> "train(0)$9"	[label=corr];
+	"train_corr(0)$0" -> "50(0)"	[label=corr];
+	"train_corr(0)$0" -> "[<_ast.Constant object at 0x7fd4c04ccac0>, <_ast.Constant object at 0x7fd4c04cc3a0>](0)"	[label=corr];
+	"50(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd4c04ccac0>, <_ast.Constant object at 0x7fd4c04cc3a0>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"plt(0)$1" -> "plt(0)$0"	[label=figure];
+	"sns(0)$2" -> "sns(0)$1"	[label=heatmap];
+	"sns(0)$2" -> "train_corr(0)$0"	[label=heatmap];
+	"x(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"columns(0)$0" -> "train(0)$9"	[label=assignedFrom];
+	"columns(0)$0" -> "x(0)"	[label=assignedFrom];
+	"columns(0)$0" -> "[<_ast.Constant object at 0x7fd4c04cc850>, <_ast.Constant object at 0x7fd4c04cc0a0>, <_ast.Constant object at 0x7fd4c04cc7f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04cc850>, <_ast.Constant object at 0x7fd4c04cc0a0>, <_ast.Constant object at 0x7fd4c04cc7f0>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train2(0)$0" -> "0(0)"	[label=assignedFrom];
+	"train2(0)$0" -> "wheezy-copper-turtle-magic(0)"	[label=assignedFrom];
+	"train2(0)$0" -> "train(0)$9"	[label=assignedFrom];
+	"train2(0)$0" -> "columns(0)$0"	[label=assignedFrom];
+	"plt(0)$2" -> "plt(0)$1"	[label=figure];
+	"plt(0)$3" -> "train2(0)$0"	[label=plot];
+	"plt(0)$3" -> "plt(0)$2"	[label=plot];
+	"sns(0)$3" -> "train(0)$9"	[label=distplot];
+	"sns(0)$3" -> "10(0)"	[label=distplot];
+	"sns(0)$3" -> "sns(0)$2"	[label=distplot];
+	"sns(0)$3" -> "train2(0)$0"	[label=distplot];
+	"plt(0)$4" -> "plt(0)$3"	[label=figure];
+	"sns(0)$4" -> "train(0)$9"	[label=distplot];
+	"sns(0)$4" -> "210(0)"	[label=distplot];
+	"sns(0)$4" -> "train2(0)$0"	[label=distplot];
+	"sns(0)$4" -> "sns(0)$3"	[label=distplot];
+	os -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	"os(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	"sklearn.linear_model" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	LogisticRegression -> "sklearn.linear_model"	[label=importedBy];
+	"LogisticRegression(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"LogisticRegression(0)" -> LogisticRegression	[label=assignedFrom];
+	"sklearn.model_selection" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	StratifiedKFold -> "sklearn.model_selection"	[label=importedBy];
+	"StratifiedKFold(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"StratifiedKFold(0)" -> StratifiedKFold	[label=assignedFrom];
+	"sklearn.metrics" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	roc_auc_score -> "sklearn.metrics"	[label=importedBy];
+	"roc_auc_score(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"roc_auc_score(0)" -> roc_auc_score	[label=assignedFrom];
+	"cols(0)$1" -> "c(0)"	[label=assignedFrom];
+	"cols(0)$1" -> "train(0)$9"	[label=assignedFrom];
+	"cols(0)$1" -> "[<_ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff7f0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff7f0>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"oof(0)$0" -> "np(0)$0"	[label=zeros];
+	"oof(0)$0" -> "len(0)"	[label=zeros];
+	"oof(0)$0" -> "train(0)$9"	[label=zeros];
+	"5(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"skf(0)$0" -> "5(0)"	[label=StratifiedKFold];
+	"skf(0)$0" -> "42(0)"	[label=StratifiedKFold];
+	"42(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train_index(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train_index(0)" -> "1(0)"	[label=iteratorOf];
+	"train_index(0)" -> "target(0)$1"	[label=iteratorOf];
+	"train_index(0)" -> "train(0)$9"	[label=iteratorOf];
+	"train_index(0)" -> "skf(0)$0"	[label=iteratorOf];
+	"train_index(0)" -> "train2(0)$2"	[label=iteratorOf];
+	"train_index(0)" -> "skf(0)$1"	[label=iteratorOf];
+	"train_index(0)" -> "train2(0)$4"	[label=iteratorOf];
+	"train_index(0)" -> "train3(0)$0"	[label=iteratorOf];
+	"train_index(0)" -> "skf(0)$2"	[label=iteratorOf];
+	"train2(0)$2" -> "train2(0)$1"	[label=reset_index];
+	"skf(0)$1" -> "42(0)"	[label=StratifiedKFold];
+	"skf(0)$1" -> "25(0)"	[label=StratifiedKFold];
+	"train2(0)$4" -> "train2(0)$3"	[label=reset_index];
+	"train3(0)$0" -> "train2(0)$4"	[label=transform];
+	"train3(0)$0" -> "cols(0)$3"	[label=transform];
+	"train3(0)$0" -> "sel(0)$0"	[label=transform];
+	"skf(0)$2" -> "42(0)"	[label=StratifiedKFold];
+	"skf(0)$2" -> "11(0)"	[label=StratifiedKFold];
+	"test_index(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"test_index(0)" -> "1(0)"	[label=iteratorOf];
+	"test_index(0)" -> "target(0)$1"	[label=iteratorOf];
+	"test_index(0)" -> "train(0)$9"	[label=iteratorOf];
+	"test_index(0)" -> "skf(0)$0"	[label=iteratorOf];
+	"test_index(0)" -> "train2(0)$2"	[label=iteratorOf];
+	"test_index(0)" -> "skf(0)$1"	[label=iteratorOf];
+	"test_index(0)" -> "train2(0)$4"	[label=iteratorOf];
+	"test_index(0)" -> "train3(0)$0"	[label=iteratorOf];
+	"test_index(0)" -> "skf(0)$2"	[label=iteratorOf];
+	"liblinear(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$0" -> "liblinear(0)"	[label=LogisticRegression];
+	"clf(0)$0" -> "l2(0)"	[label=LogisticRegression];
+	"clf(0)$0" -> "1.0(0)"	[label=LogisticRegression];
+	"l2(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"1.0(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$1" -> "target(0)$1"	[label=fit];
+	"clf(0)$1" -> "train(0)$9"	[label=fit];
+	"clf(0)$1" -> "cols(0)$1"	[label=fit];
+	"clf(0)$1" -> "train_index(0)"	[label=fit];
+	"clf(0)$1" -> "clf(0)$0"	[label=fit];
+	"oof(0)$1" -> "1(0)"	[label=assignedFrom];
+	"oof(0)$1" -> "train(0)$9"	[label=assignedFrom];
+	"oof(0)$1" -> "cols(0)$1"	[label=assignedFrom];
+	"oof(0)$1" -> "oof(0)$0"	[label=assignedFrom];
+	"oof(0)$1" -> "test_index(0)"	[label=assignedFrom];
+	"oof(0)$1" -> "clf(0)$1"	[label=assignedFrom];
+	"auc(0)$0" -> "target(0)$1"	[label=roc_auc_score];
+	"auc(0)$0" -> "train(0)$9"	[label=roc_auc_score];
+	"auc(0)$0" -> "oof(0)$1"	[label=roc_auc_score];
+	"LR without interactions scores CV =(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"print[123/0]" -> "5(0)"	[label=print];
+	"print[123/0]" -> "auc(0)$0"	[label=print];
+	"print[123/0]" -> "LR without interactions scores CV =(0)"	[label=print];
+	"print[123/0]" -> "round(0)"	[label=print];
+	"round(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"cols(0)$2" -> "wheezy-copper-turtle-magic(0)"	[label=remove];
+	"cols(0)$2" -> "cols(0)$1"	[label=remove];
+	"interactions(0)$0" -> "np(0)$0"	[label=zeros];
+	"interactions(0)$0" -> "512(0)"	[label=zeros];
+	"interactions(0)$0" -> "255(0)"	[label=zeros];
+	"oof(0)$2" -> "np(0)$0"	[label=zeros];
+	"oof(0)$2" -> "len(0)"	[label=zeros];
+	"oof(0)$2" -> "train(0)$9"	[label=zeros];
+	"train2(0)$1" -> "i(0)"	[label=assignedFrom];
+	"train2(0)$1" -> "wheezy-copper-turtle-magic(0)"	[label=assignedFrom];
+	"train2(0)$1" -> "train(0)$9"	[label=assignedFrom];
+	"idx1(0)$0" -> "train2(0)$1"	[label=assignedFrom];
+	"25(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$2" -> "liblinear(0)"	[label=LogisticRegression];
+	"clf(0)$2" -> "l1(0)"	[label=LogisticRegression];
+	"clf(0)$2" -> "0.05(0)"	[label=LogisticRegression];
+	"l1(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"0.05(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$3" -> "target(0)$1"	[label=fit];
+	"clf(0)$3" -> "train_index(0)"	[label=fit];
+	"clf(0)$3" -> "train2(0)$2"	[label=fit];
+	"clf(0)$3" -> "cols(0)$2"	[label=fit];
+	"clf(0)$3" -> "clf(0)$2"	[label=fit];
+	"oof(0)$3" -> "1(0)"	[label=assignedFrom];
+	"oof(0)$3" -> "train2(0)$2"	[label=assignedFrom];
+	"oof(0)$3" -> "test_index(0)"	[label=assignedFrom];
+	"oof(0)$3" -> "cols(0)$2"	[label=assignedFrom];
+	"oof(0)$3" -> "oof(0)$2"	[label=assignedFrom];
+	"oof(0)$3" -> "clf(0)$3"	[label=assignedFrom];
+	"auc(0)$1" -> "target(0)$1"	[label=roc_auc_score];
+	"auc(0)$1" -> "train(0)$9"	[label=roc_auc_score];
+	"auc(0)$1" -> "oof(0)$3"	[label=roc_auc_score];
+	"LR with interactions scores CV =(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"print[146/0]" -> "5(0)"	[label=print];
+	"print[146/0]" -> "round(0)"	[label=print];
+	"print[146/0]" -> "auc(0)$1"	[label=print];
+	"print[146/0]" -> "LR with interactions scores CV =(0)"	[label=print];
+	"sklearn.svm" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	SVC -> "sklearn.svm"	[label=importedBy];
+	"SVC(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"SVC(0)" -> SVC	[label=assignedFrom];
+	"sklearn.feature_selection" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=importedBy];
+	VarianceThreshold -> "sklearn.feature_selection"	[label=importedBy];
+	"VarianceThreshold(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"VarianceThreshold(0)" -> VarianceThreshold	[label=assignedFrom];
+	"oof(0)$4" -> "np(0)$0"	[label=zeros];
+	"oof(0)$4" -> "len(0)"	[label=zeros];
+	"oof(0)$4" -> "train(0)$9"	[label=zeros];
+	"cols(0)$3" -> "c(0)"	[label=assignedFrom];
+	"cols(0)$3" -> "train(0)$9"	[label=assignedFrom];
+	"cols(0)$3" -> "[<_ast.Constant object at 0x7fd500818250>, <_ast.Constant object at 0x7fd500818430>, <_ast.Constant object at 0x7fd500818220>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd500818250>, <_ast.Constant object at 0x7fd500818430>, <_ast.Constant object at 0x7fd500818220>](0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"train2(0)$3" -> "i(0)"	[label=assignedFrom];
+	"train2(0)$3" -> "wheezy-copper-turtle-magic(0)"	[label=assignedFrom];
+	"train2(0)$3" -> "train(0)$9"	[label=assignedFrom];
+	"idx1(0)$1" -> "train2(0)$3"	[label=assignedFrom];
+	"sel(0)$0" -> "train2(0)$4"	[label=fit];
+	"sel(0)$0" -> "VarianceThreshold(0)"	[label=fit];
+	"sel(0)$0" -> "cols(0)$3"	[label=fit];
+	"sel(0)$0" -> "1.5(0)"	[label=fit];
+	"1.5(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"11(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"True(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$4" -> "True(0)"	[label=SVC];
+	"clf(0)$4" -> "poly(0)"	[label=SVC];
+	"clf(0)$4" -> "4(0)"	[label=SVC];
+	"clf(0)$4" -> "auto(0)"	[label=SVC];
+	"poly(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"4(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"auto(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"clf(0)$5" -> "target(0)$1"	[label=fit];
+	"clf(0)$5" -> "train_index(0)"	[label=fit];
+	"clf(0)$5" -> "train2(0)$4"	[label=fit];
+	"clf(0)$5" -> "train3(0)$0"	[label=fit];
+	"clf(0)$5" -> "clf(0)$4"	[label=fit];
+	"oof(0)$5" -> "1(0)"	[label=assignedFrom];
+	"oof(0)$5" -> "train3(0)$0"	[label=assignedFrom];
+	"oof(0)$5" -> "test_index(0)"	[label=assignedFrom];
+	"oof(0)$5" -> "oof(0)$4"	[label=assignedFrom];
+	"oof(0)$5" -> "clf(0)$5"	[label=assignedFrom];
+	"auc(0)$2" -> "target(0)$1"	[label=roc_auc_score];
+	"auc(0)$2" -> "train(0)$9"	[label=roc_auc_score];
+	"auc(0)$2" -> "oof(0)$5"	[label=roc_auc_score];
+	"CV score =(0)" -> "synthetic-data-for-next-instant-gratification.ipynb"	[label=appearsIn];
+	"print[181/0]" -> "5(0)"	[label=print];
+	"print[181/0]" -> "round(0)"	[label=print];
+	"print[181/0]" -> "auc(0)$2"	[label=print];
+	"print[181/0]" -> "CV score =(0)"	[label=print];
+}
