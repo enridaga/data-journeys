@@ -1,0 +1,179 @@
+digraph "" {
+	numpy -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	pandas -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"pd(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"matplotlib.pyplot" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"plt(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	seaborn -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"sns(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	chardet -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"chardet(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"chardet(0)" -> chardet	[label=assignedFrom];
+	nltk -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"nltk(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"nltk(0)" -> nltk	[label=assignedFrom];
+	"nltk.probability" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	FreqDist -> "nltk.probability"	[label=importedBy];
+	"FreqDist(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"FreqDist(0)" -> FreqDist	[label=assignedFrom];
+	"nltk.corpus" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	stopwords -> "nltk.corpus"	[label=importedBy];
+	"stopwords(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"stopwords(0)" -> stopwords	[label=assignedFrom];
+	string -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=importedBy];
+	"string(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"string(0)" -> string	[label=assignedFrom];
+	"result(0)$0" -> "chardet(0)"	[label=detect];
+	"result(0)$0" -> "f(0)"	[label=detect];
+	"f(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data(0)$0" -> "pd(0)"	[label=read_csv];
+	"raw_data(0)$0" -> "result(0)$0"	[label=read_csv];
+	"raw_data(0)$0" -> "../input/top50spotify2019/top50.csv(0)"	[label=read_csv];
+	"raw_data(0)$0" -> "encoding(0)"	[label=read_csv];
+	"../input/top50spotify2019/top50.csv(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"encoding(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data_lyrics(0)$0" -> "pd(0)"	[label=read_csv];
+	"raw_data_lyrics(0)$0" -> "../input/songs-lyrics/Lyrics.csv(0)"	[label=read_csv];
+	"../input/songs-lyrics/Lyrics.csv(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data(0)$1" -> "raw_data(0)$0"	[label=info];
+	"raw_data(0)$2" -> "raw_data(0)$1"	[label=drop];
+	"raw_data(0)$2" -> "Unnamed: 0(0)"	[label=drop];
+	"raw_data(0)$2" -> "1(0)"	[label=drop];
+	"Unnamed: 0(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"1(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data(0)$3" -> "raw_data(0)$2"	[label=head];
+	"raw_data(0)$3" -> "3(0)"	[label=head];
+	"3(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data_lyrics(0)$1" -> "raw_data_lyrics(0)$0"	[label=info];
+	"raw_data_lyrics(0)$2" -> "3(0)"	[label=head];
+	"raw_data_lyrics(0)$2" -> "raw_data_lyrics(0)$1"	[label=head];
+	"[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc160>, <_\
+ast.Constant object at 0x7fd4c04ccca0>, <_ast.Constant object at 0x7fd4c04cc610>, <_ast.Constant object at 0x7fd4c04cca60>, <_ast.Constant \
+object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant object at 0x7fd4c04cc700>, <_ast.Constant object \
+at 0x7fd4c04cc250>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_ast.Constant object at 0x7fd4c04cc670>, <_ast.Constant object at \
+0x7fd4c04ccaf0>](0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"raw_data(0)$4" -> "raw_data(0)$3"	[label=assignedFrom];
+	"raw_data(0)$4" -> "[<_ast.Constant object at 0x7fd4c04cc7f0>, <_ast.Constant object at 0x7fd4c04cc6a0>, <_ast.Constant object at 0x7fd4c04cc160>, <_\
+ast.Constant object at 0x7fd4c04ccca0>, <_ast.Constant object at 0x7fd4c04cc610>, <_ast.Constant object at 0x7fd4c04cca60>, <_ast.Constant \
+object at 0x7fd4c04cc460>, <_ast.Constant object at 0x7fd4c04cca30>, <_ast.Constant object at 0x7fd4c04cc700>, <_ast.Constant object \
+at 0x7fd4c04cc250>, <_ast.Constant object at 0x7fd4c04cc3d0>, <_ast.Constant object at 0x7fd4c04cc670>, <_ast.Constant object at \
+0x7fd4c04ccaf0>](0)"	[label=assignedFrom];
+	"raw_data(0)$5" -> "raw_data(0)$4"	[label=describe];
+	"sns(0)$0" -> "sns(0)"	[label=boxplot];
+	"fig(0)$0" -> "plt(0)"	[label=subplots];
+	"fig(0)$0" -> "1(0)"	[label=subplots];
+	"fig(0)$0" -> "3(0)"	[label=subplots];
+	"ax(0)$0" -> "plt(0)"	[label=subplots];
+	"ax(0)$0" -> "1(0)"	[label=subplots];
+	"ax(0)$0" -> "3(0)"	[label=subplots];
+	"fig(0)$1" -> "fig(0)$0"	[label=subplots_adjust];
+	"sns(0)$1" -> "sns(0)$0"	[label=boxplot];
+	"sns(0)$2" -> "sns(0)$1"	[label=boxplot];
+	"sns(0)$3" -> "sns(0)$2"	[label=boxplot];
+	"fig(0)$2" -> "fig(0)$1"	[label=show];
+	"fig(0)$3" -> "plt(0)"	[label=subplots];
+	"fig(0)$3" -> "1(0)"	[label=subplots];
+	"fig(0)$3" -> "3(0)"	[label=subplots];
+	"ax(0)$1" -> "plt(0)"	[label=subplots];
+	"ax(0)$1" -> "1(0)"	[label=subplots];
+	"ax(0)$1" -> "3(0)"	[label=subplots];
+	"fig(0)$4" -> "fig(0)$3"	[label=subplots_adjust];
+	"sns(0)$4" -> "sns(0)$3"	[label=boxplot];
+	"sns(0)$5" -> "sns(0)$4"	[label=boxplot];
+	"sns(0)$6" -> "sns(0)$5"	[label=boxplot];
+	"fig(0)$5" -> "fig(0)$4"	[label=show];
+	"fig(0)$6" -> "plt(0)"	[label=subplots];
+	"fig(0)$6" -> "1(0)"	[label=subplots];
+	"fig(0)$6" -> "3(0)"	[label=subplots];
+	"ax(0)$2" -> "plt(0)"	[label=subplots];
+	"ax(0)$2" -> "1(0)"	[label=subplots];
+	"ax(0)$2" -> "3(0)"	[label=subplots];
+	"fig(0)$7" -> "fig(0)$6"	[label=subplots_adjust];
+	"sns(0)$7" -> "sns(0)$6"	[label=boxplot];
+	"sns(0)$8" -> "sns(0)$7"	[label=boxplot];
+	"sns(0)$9" -> "sns(0)$8"	[label=boxplot];
+	"fig(0)$8" -> "fig(0)$7"	[label=show];
+	"sns(0)$10" -> "sns(0)$9"	[label=catplot];
+	"sns(0)$11" -> "sns(0)$10"	[label=catplot];
+	"sns(0)$12" -> "raw_data(0)$5"	[label=pairplot];
+	"sns(0)$12" -> "sns(0)$11"	[label=pairplot];
+	"dataset(0)$0" -> "pd(0)"	[label=merge];
+	"dataset(0)$0" -> "raw_data_lyrics(0)$2"	[label=merge];
+	"dataset(0)$0" -> "raw_data(0)$5"	[label=merge];
+	"dataset(0)$0" -> "Track_Name(0)"	[label=merge];
+	"dataset(0)$0" -> "Track.Name(0)"	[label=merge];
+	"Track_Name(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"Track.Name(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"dataset(0)$1" -> "dataset(0)$0"	[label=astype];
+	"dataset(0)$1" -> "Lyrics(0)"	[label=astype];
+	"dataset(0)$1" -> "str(0)"	[label=astype];
+	"Lyrics(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"str(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"dataset(0)$2" -> "dataset(0)$1"	[label=drop];
+	"dataset(0)$2" -> "dataset(0)$2"	[label=drop];
+	"dataset(0)$2" -> "[<_ast.Constant object at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085b9a0>](0)"	[label=drop];
+	"[<_ast.Constant object at 0x7fd50085b490>, <_ast.Constant object at 0x7fd50085b9a0>](0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"dataset(0)$3" -> "Lyrics(0)"	[label=replace];
+	"dataset(0)$3" -> "dataset(0)$2"	[label=replace];
+	"dataset(0)$3" -> "\n(0)"	[label=replace];
+	"dataset(0)$3" -> " (0)"	[label=replace];
+	"\n(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	" (0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"tokens(0)$0" -> "nltk(0)"	[label=map];
+	"tokens(0)$0" -> "Lyrics(0)"	[label=map];
+	"tokens(0)$0" -> "dataset(0)$3"	[label=map];
+	"tokens(0)$0" -> "(0)"	[label=map];
+	"(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"[](0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"allWords(0)$0" -> "[](0)"	[label=assignedFrom];
+	"wordList(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"wordList(0)" -> "tokens(0)$0"	[label=iteratorOf];
+	"allWords(0)$1" -> "allWords(0)$0"	[label=Add];
+	"allWords(0)$1" -> "wordList(0)"	[label=Add];
+	"fdist(0)$0" -> "allWords(0)$1"	[label=FreqDist];
+	"fdist(0)$1" -> "fdist(0)$0"	[label=plot];
+	"fdist(0)$1" -> "30(0)"	[label=plot];
+	"30(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"plt(0)$0" -> "plt(0)"	[label=show];
+	"stop_words_en(0)$0" -> "stopwords(0)"	[label=set];
+	"stop_words_en(0)$0" -> "english(0)"	[label=set];
+	"english(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"stop_words_es(0)$0" -> "stopwords(0)"	[label=set];
+	"stop_words_es(0)$0" -> "spanish(0)"	[label=set];
+	"spanish(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"punctuations(0)$0" -> "string(0)"	[label=list];
+	"i(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"allWords(0)$2" -> "punctuations(0)$0"	[label=assignedFrom];
+	"allWords(0)$2" -> "i(0)"	[label=assignedFrom];
+	"allWords(0)$2" -> "allWords(0)$2"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902abe80>, <_\
+ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant \
+object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object \
+at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at \
+0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab100>, <_\
+ast.Constant object at 0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902abb20>](0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"forbidden(0)$0" -> "[<_ast.Constant object at 0x7fd4902ab820>, <_ast.Constant object at 0x7fd4902ab5b0>, <_ast.Constant object at 0x7fd4902abe80>, <_\
+ast.Constant object at 0x7fd4902ab190>, <_ast.Constant object at 0x7fd4902ab6a0>, <_ast.Constant object at 0x7fd4902ab640>, <_ast.Constant \
+object at 0x7fd4902ab370>, <_ast.Constant object at 0x7fd4902ab220>, <_ast.Constant object at 0x7fd4902abc70>, <_ast.Constant object \
+at 0x7fd4902ab4c0>, <_ast.Constant object at 0x7fd4902abcd0>, <_ast.Constant object at 0x7fd4902ab760>, <_ast.Constant object at \
+0x7fd4902abd60>, <_ast.Constant object at 0x7fd4902aba60>, <_ast.Constant object at 0x7fd4902ab730>, <_ast.Constant object at 0x7fd4902ab100>, <_\
+ast.Constant object at 0x7fd4902ab580>, <_ast.Constant object at 0x7fd4902ab250>, <_ast.Constant object at 0x7fd4902abb20>](0)"	[label=assignedFrom];
+	"filtered_sent(0)$0" -> "[](0)"	[label=assignedFrom];
+	"w(0)" -> "kernel-spotify-top-50-lyrics-vs-popularity.ipynb"	[label=appearsIn];
+	"w(0)" -> "allWords(0)$2"	[label=iteratorOf];
+	"w(0)" -> "filtered_sent(0)$1"	[label=iteratorOf];
+	"filtered_sent(0)$1" -> "filtered_sent(0)$0"	[label=append];
+	"filtered_sent(0)$1" -> "w(0)"	[label=append];
+	"filter_(0)$0" -> "[](0)"	[label=assignedFrom];
+	"filter_(0)$1" -> "w(0)"	[label=append];
+	"filter_(0)$1" -> "filter_(0)$0"	[label=append];
+	"fdist(0)$2" -> "filter_(0)$1"	[label=FreqDist];
+	"fdist(0)$3" -> "30(0)"	[label=plot];
+	"fdist(0)$3" -> "fdist(0)$2"	[label=plot];
+	"plt(0)$1" -> "plt(0)$0"	[label=show];
+}
