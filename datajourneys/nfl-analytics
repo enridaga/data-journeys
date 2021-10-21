@@ -1,0 +1,293 @@
+digraph "" {
+	numpy -> "nfl-analytics.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	pandas -> "nfl-analytics.ipynb"	[label=importedBy];
+	"pd(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	"matplotlib.pyplot" -> "nfl-analytics.ipynb"	[label=importedBy];
+	"plt(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"plt(0)" -> "matplotlib.pyplot"	[label=assignedFrom];
+	"matplotlib.image" -> "nfl-analytics.ipynb"	[label=importedBy];
+	"mpimg(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"mpimg(0)" -> "matplotlib.image"	[label=assignedFrom];
+	warnings -> "nfl-analytics.ipynb"	[label=importedBy];
+	"warnings(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"warnings(0)" -> warnings	[label=assignedFrom];
+	"warnings(0)$0" -> "warnings(0)"	[label=filterwarnings];
+	"warnings(0)$0" -> "ignore(0)"	[label=filterwarnings];
+	"ignore(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	seaborn -> "nfl-analytics.ipynb"	[label=importedBy];
+	"sns(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)" -> seaborn	[label=assignedFrom];
+	functools -> "nfl-analytics.ipynb"	[label=importedBy];
+	reduce -> functools	[label=importedBy];
+	"reduce(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"reduce(0)" -> reduce	[label=assignedFrom];
+	os -> "nfl-analytics.ipynb"	[label=importedBy];
+	"os(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	gc -> "nfl-analytics.ipynb"	[label=importedBy];
+	"gc(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"gc(0)" -> gc	[label=assignedFrom];
+	psutil -> "nfl-analytics.ipynb"	[label=importedBy];
+	"psutil(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"psutil(0)" -> psutil	[label=assignedFrom];
+	"print[21/0]" -> "os(0)"	[label=print];
+	"print[21/0]" -> "../input/nfl-playing-surface-analytics/(0)"	[label=print];
+	"../input/nfl-playing-surface-analytics/(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"df(1)" -> "reduce_mem_usage[0]"	[label=_argToVar];
+	"start_mem(1)$0" -> "df(1)"	[label=Div];
+	"start_mem(1)$0" -> "1024(1)"	[label=Div];
+	"start_mem(1)$0" -> "2(1)"	[label=Div];
+	"print[38/4]" -> "start_mem(1)$0"	[label=print];
+	"print[38/4]" -> "Memory usage of dataframe is {:.2f} MB(1)"	[label=print];
+	"col(1)" -> "df(1)"	[label=iteratorOf];
+	"col_type(1)$0" -> "df(1)"	[label=assignedFrom];
+	"col_type(1)$0" -> "col(1)"	[label=assignedFrom];
+	"c_min(1)$0" -> "df(1)"	[label=min];
+	"c_min(1)$0" -> "col(1)"	[label=min];
+	"c_max(1)$0" -> "df(1)"	[label=max];
+	"c_max(1)$0" -> "col(1)"	[label=max];
+	"df(1)$0" -> "df(1)"	[label=astype];
+	"df(1)$0" -> "col(1)"	[label=astype];
+	"df(1)$0" -> "np(1)"	[label=astype];
+	"df(1)$1" -> "col(1)"	[label=astype];
+	"df(1)$1" -> "df(1)$0"	[label=astype];
+	"df(1)$1" -> "np(1)"	[label=astype];
+	"df(1)$2" -> "col(1)"	[label=astype];
+	"df(1)$2" -> "np(1)"	[label=astype];
+	"df(1)$2" -> "df(1)$1"	[label=astype];
+	"df(1)$3" -> "col(1)"	[label=astype];
+	"df(1)$3" -> "np(1)"	[label=astype];
+	"df(1)$3" -> "df(1)$2"	[label=astype];
+	"df(1)$4" -> "col(1)"	[label=astype];
+	"df(1)$4" -> "np(1)"	[label=astype];
+	"df(1)$4" -> "df(1)$3"	[label=astype];
+	"df(1)$5" -> "col(1)"	[label=astype];
+	"df(1)$5" -> "np(1)"	[label=astype];
+	"df(1)$5" -> "df(1)$4"	[label=astype];
+	"df(1)$6" -> "col(1)"	[label=astype];
+	"df(1)$6" -> "np(1)"	[label=astype];
+	"df(1)$6" -> "df(1)$5"	[label=astype];
+	"df(1)$7" -> "col(1)"	[label=astype];
+	"df(1)$7" -> "df(1)$6"	[label=astype];
+	"df(1)$7" -> "category(1)"	[label=astype];
+	"end_mem(1)$0" -> "1024(1)"	[label=Div];
+	"end_mem(1)$0" -> "2(1)"	[label=Div];
+	"end_mem(1)$0" -> "df(1)$7"	[label=Div];
+	"print[66/4]" -> "end_mem(1)$0"	[label=print];
+	"print[66/4]" -> "Memory usage after optimization is: {:.2f} MB(1)"	[label=print];
+	"print[67/4]" -> "start_mem(1)$0"	[label=print];
+	"print[67/4]" -> "end_mem(1)$0"	[label=print];
+	"print[67/4]" -> "Decreased by {:.1f}\%(1)"	[label=print];
+	"print[67/4]" -> "100(1)"	[label=print];
+	"file(2)" -> "import_data[0]"	[label=_argToVar];
+	"df(2)$0" -> "file(2)"	[label=read_csv];
+	"df(2)$0" -> "pd(2)"	[label=read_csv];
+	"df(2)$0" -> "True(2)"	[label=read_csv];
+	"df(2)$1" -> "df(2)$0"	[label=reduce_mem_usage];
+	"../input/nfl-playing-surface-analytics/InjuryRecord.csv(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"InjuryRecord(0)$0" -> "../input/nfl-playing-surface-analytics/InjuryRecord.csv(0)"	[label=import_data];
+	"../input/nfl-playing-surface-analytics/PlayList.csv(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayList(0)$0" -> "../input/nfl-playing-surface-analytics/PlayList.csv(0)"	[label=import_data];
+	"../input/nfl-playing-surface-analytics/PlayerTrackData.csv(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayerTrackData(0)$0" -> "../input/nfl-playing-surface-analytics/PlayerTrackData.csv(0)"	[label=import_data];
+	"PlayerTrackData(0)$1" -> "PlayerTrackData(0)$0"	[label=info];
+	"available RAM:(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"print[93/0]" -> "psutil(0)"	[label=print];
+	"print[93/0]" -> "available RAM:(0)"	[label=print];
+	"gc(0)$0" -> "gc(0)"	[label=collect];
+	"print[95/0]" -> "psutil(0)"	[label=print];
+	"print[95/0]" -> "available RAM:(0)"	[label=print];
+	"print[97/0]" -> "InjuryRecord(0)$0"	[label=print];
+	"print[98/0]" -> "PlayList(0)$0"	[label=print];
+	"print[99/0]" -> "PlayerTrackData(0)$1"	[label=print];
+	"print[100/0]" -> "PlayerTrackData(0)$1"	[label=print];
+	"print[101/0]" -> "PlayList(0)$0"	[label=print];
+	"print[102/0]" -> "InjuryRecord(0)$0"	[label=print];
+	"PlayerTrackData(0)$2" -> "PlayerTrackData(0)$1"	[label=head];
+	"PlayerTrackData(0)$2" -> "4(0)"	[label=head];
+	"4(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayList(0)$1" -> "PlayList(0)$0"	[label=head];
+	"PlayList(0)$1" -> "2(0)"	[label=head];
+	"2(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"InjuryRecord(0)$1" -> "InjuryRecord(0)$0"	[label=head];
+	"InjuryRecord(0)$1" -> "3(0)"	[label=head];
+	"3(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$0" -> "sns(0)"	[label=catplot];
+	"sns(0)$1" -> "sns(0)$0"	[label=catplot];
+	"sns(0)$2" -> "sns(0)$1"	[label=catplot];
+	"plt(0)$0" -> "plt(0)"	[label=set_size_inches];
+	"plt(0)$0" -> "16(0)"	[label=set_size_inches];
+	"plt(0)$0" -> "8(0)"	[label=set_size_inches];
+	"16(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"8(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$3" -> "sns(0)$2"	[label=catplot];
+	"plt(0)$1" -> "plt(0)$0"	[label=set_size_inches];
+	"plt(0)$1" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$1" -> "100(0)"	[label=set_size_inches];
+	"100(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$4" -> "sns(0)$3"	[label=catplot];
+	"plt(0)$2" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$2" -> "plt(0)$1"	[label=set_size_inches];
+	"plt(0)$2" -> "50(0)"	[label=set_size_inches];
+	"50(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$5" -> "sns(0)$4"	[label=catplot];
+	"plt(0)$3" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$3" -> "plt(0)$2"	[label=set_size_inches];
+	"plt(0)$3" -> "450(0)"	[label=set_size_inches];
+	"450(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$6" -> "sns(0)$5"	[label=catplot];
+	"plt(0)$4" -> "16(0)"	[label=set_size_inches];
+	"plt(0)$4" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$4" -> "plt(0)$3"	[label=set_size_inches];
+	"sns(0)$7" -> "sns(0)$6"	[label=catplot];
+	"plt(0)$5" -> "16(0)"	[label=set_size_inches];
+	"plt(0)$5" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$5" -> "plt(0)$4"	[label=set_size_inches];
+	"sns(0)$8" -> "sns(0)$7"	[label=catplot];
+	"plt(0)$6" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$6" -> "50(0)"	[label=set_size_inches];
+	"plt(0)$6" -> "plt(0)$5"	[label=set_size_inches];
+	"sns(0)$9" -> "sns(0)$8"	[label=catplot];
+	"plt(0)$7" -> "16(0)"	[label=set_size_inches];
+	"plt(0)$7" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$7" -> "plt(0)$6"	[label=set_size_inches];
+	"PlayerTrackData(0)$3" -> "PlayerTrackData(0)$2"	[label=value_counts];
+	"print[125/0]" -> "PlayerTrackData(0)$3"	[label=print];
+	"InjuryRecord(0)$2" -> "InjuryRecord(0)$1"	[label=value_counts];
+	"sns(0)$10" -> "sns(0)$9"	[label=catplot];
+	"plt(0)$8" -> "16(0)"	[label=set_size_inches];
+	"plt(0)$8" -> "8(0)"	[label=set_size_inches];
+	"plt(0)$8" -> "plt(0)$7"	[label=set_size_inches];
+	"InjuryRecord(0)$3" -> "InjuryRecord(0)$2"	[label=value_counts];
+	"sns(0)$11" -> "sns(0)$10"	[label=catplot];
+	"InjuryRecord(0)$4" -> "InjuryRecord(0)$3"	[label=value_counts];
+	"sns(0)$12" -> "sns(0)$11"	[label=catplot];
+	"InjuryRecord(0)$5" -> "InjuryRecord(0)$4"	[label=value_counts];
+	"sns(0)$13" -> "sns(0)$12"	[label=catplot];
+	"InjuryRecord(0)$6" -> "InjuryRecord(0)$5"	[label=value_counts];
+	"sns(0)$14" -> "sns(0)$13"	[label=catplot];
+	"PlayList(0)$2" -> "PlayList(0)$1"	[label=lower];
+	"PlayList(0)$3" -> "PlayList(0)$2"	[label=strip];
+	"PlayList(0)$4" -> "PlayList(0)$3"	[label=rstrip];
+	"PlayList(0)$5" -> "PlayList(0)$4"	[label=lstrip];
+	"stadium_name(0)$0" -> "PlayList(0)$5"	[label=unique];
+	"len(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"print[144/0]" -> "stadium_name(0)$0"	[label=print];
+	"print[144/0]" -> "len(0)"	[label=print];
+	"printing lists separated by commas(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"print[146/0]" -> "printing lists separated by commas(0)"	[label=print];
+	"print[148/0]" -> "stadium_name(0)$0"	[label=print];
+	"print[148/0]" -> "/(0)"	[label=print];
+	"/(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"[<_ast.Constant object at 0x7fd49012fd60>, <_ast.Constant object at 0x7fd49012fd90>, <_ast.Constant object at 0x7fd49012fdc0>, <_\
+ast.Constant object at 0x7fd49012fdf0>, <_ast.Constant object at 0x7fd49012fe20>, <_ast.Constant object at 0x7fd49012fe50>, <_ast.Constant \
+object at 0x7fd49012fe80>](0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"array_outdoors(0)$0" -> "[<_ast.Constant object at 0x7fd49012fd60>, <_ast.Constant object at 0x7fd49012fd90>, <_ast.Constant object at 0x7fd49012fdc0>, <_\
+ast.Constant object at 0x7fd49012fdf0>, <_ast.Constant object at 0x7fd49012fe20>, <_ast.Constant object at 0x7fd49012fe50>, <_ast.Constant \
+object at 0x7fd49012fe80>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd49012ff40>, <_ast.Constant object at 0x7fd49012ff70>, <_ast.Constant object at 0x7fd49012ffa0>, <_\
+ast.Constant object at 0x7fd49012ffd0>](0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"array_indoors(0)$0" -> "[<_ast.Constant object at 0x7fd49012ff40>, <_ast.Constant object at 0x7fd49012ff70>, <_ast.Constant object at 0x7fd49012ffa0>, <_\
+ast.Constant object at 0x7fd49012ffd0>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd49011a0d0>, <_ast.Constant object at 0x7fd49011a100>, <_ast.Constant object at 0x7fd49011a130>, <_\
+ast.Constant object at 0x7fd49011a160>, <_ast.Constant object at 0x7fd49011a190>, <_ast.Constant object at 0x7fd49011a1c0>, <_ast.Constant \
+object at 0x7fd49011a1f0>, <_ast.Constant object at 0x7fd49011a220>, <_ast.Constant object at 0x7fd49011a250>](0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"array_open(0)$0" -> "[<_ast.Constant object at 0x7fd49011a0d0>, <_ast.Constant object at 0x7fd49011a100>, <_ast.Constant object at 0x7fd49011a130>, <_\
+ast.Constant object at 0x7fd49011a160>, <_ast.Constant object at 0x7fd49011a190>, <_ast.Constant object at 0x7fd49011a1c0>, <_ast.Constant \
+object at 0x7fd49011a1f0>, <_ast.Constant object at 0x7fd49011a220>, <_ast.Constant object at 0x7fd49011a250>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd49011a310>, <_ast.Constant object at 0x7fd49011a340>, <_ast.Constant object at 0x7fd49011a370>, <_\
+ast.Constant object at 0x7fd49011a3a0>, <_ast.Constant object at 0x7fd49011a3d0>, <_ast.Constant object at 0x7fd49011a400>, <_ast.Constant \
+object at 0x7fd49011a430>, <_ast.Constant object at 0x7fd49011a460>, <_ast.Constant object at 0x7fd49011a490>, <_ast.Constant object \
+at 0x7fd49011a4c0>, <_ast.Constant object at 0x7fd49011a4f0>, <_ast.Constant object at 0x7fd49011a520>, <_ast.Constant object at \
+0x7fd49011a550>, <_ast.Constant object at 0x7fd49011a580>, <_ast.Constant object at 0x7fd49011a5b0>, <_ast.Constant object at 0x7fd49011a5e0>](\
+0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"array_closed(0)$0" -> "[<_ast.Constant object at 0x7fd49011a310>, <_ast.Constant object at 0x7fd49011a340>, <_ast.Constant object at 0x7fd49011a370>, <_\
+ast.Constant object at 0x7fd49011a3a0>, <_ast.Constant object at 0x7fd49011a3d0>, <_ast.Constant object at 0x7fd49011a400>, <_ast.Constant \
+object at 0x7fd49011a430>, <_ast.Constant object at 0x7fd49011a460>, <_ast.Constant object at 0x7fd49011a490>, <_ast.Constant object \
+at 0x7fd49011a4c0>, <_ast.Constant object at 0x7fd49011a4f0>, <_ast.Constant object at 0x7fd49011a520>, <_ast.Constant object at \
+0x7fd49011a550>, <_ast.Constant object at 0x7fd49011a580>, <_ast.Constant object at 0x7fd49011a5b0>, <_ast.Constant object at 0x7fd49011a5e0>](\
+0)"	[label=assignedFrom];
+	"PlayList(0)$6" -> "PlayList(0)$5"	[label=replace];
+	"PlayList(0)$6" -> "array_outdoors(0)$0"	[label=replace];
+	"PlayList(0)$6" -> "StadiumType(0)"	[label=replace];
+	"PlayList(0)$6" -> "outdoors(0)"	[label=replace];
+	"StadiumType(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"outdoors(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayList(0)$7" -> "array_indoors(0)$0"	[label=replace];
+	"PlayList(0)$7" -> "PlayList(0)$6"	[label=replace];
+	"PlayList(0)$7" -> "StadiumType(0)"	[label=replace];
+	"PlayList(0)$7" -> "indoors(0)"	[label=replace];
+	"indoors(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayList(0)$8" -> "array_open(0)$0"	[label=replace];
+	"PlayList(0)$8" -> "StadiumType(0)"	[label=replace];
+	"PlayList(0)$8" -> "PlayList(0)$7"	[label=replace];
+	"PlayList(0)$8" -> "open(0)"	[label=replace];
+	"open(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"PlayList(0)$9" -> "array_closed(0)$0"	[label=replace];
+	"PlayList(0)$9" -> "StadiumType(0)"	[label=replace];
+	"PlayList(0)$9" -> "PlayList(0)$8"	[label=replace];
+	"PlayList(0)$9" -> "closed(0)"	[label=replace];
+	"closed(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"InjuryRecord(0)$7" -> "2(0)"	[label=head];
+	"InjuryRecord(0)$7" -> "InjuryRecord(0)$6"	[label=head];
+	"PlayList(0)$10" -> "2(0)"	[label=head];
+	"PlayList(0)$10" -> "PlayList(0)$9"	[label=head];
+	"Injury_games_play(0)$0" -> "InjuryRecord(0)$7"	[label=merge];
+	"Injury_games_play(0)$0" -> "PlayList(0)$10"	[label=merge];
+	"Injury_games_play(0)$0" -> "PlayKey(0)"	[label=merge];
+	"Injury_games_play(0)$0" -> "left(0)"	[label=merge];
+	"PlayKey(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"left(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"Injury_games_play(0)$1" -> "Injury_games_play(0)$0"	[label=tail];
+	"Injury_games_play(0)$2" -> "Injury_games_play(0)$1"	[label=sum];
+	"Injury_games_play(0)$3" -> "pd(0)"	[label=assignedFrom];
+	"Injury_games_play(0)$3" -> "PlayKey(0)"	[label=assignedFrom];
+	"Injury_games_play(0)$3" -> "Injury_games_play(0)$2"	[label=assignedFrom];
+	"Injury_games_play(0)$3" -> "Injury_games_play(0)$3"	[label=assignedFrom];
+	"Injury_games_play(0)$4" -> "Injury_games_play(0)$3"	[label=tail];
+	"sns(0)$15" -> "sns(0)$14"	[label=catplot];
+	"Injury_games_play(0)$5" -> "Injury_games_play(0)$4"	[label=sum];
+	"Injury_games_play(0)$6" -> "Injury_games_play(0)$5"	[label=dropna];
+	"data(0)$0" -> "Injury_games_play(0)$6"	[label=assignedFrom];
+	"data(0)$0" -> "[<_ast.Constant object at 0x7fd49010a6d0>, <_ast.Constant object at 0x7fd49010a700>, <_ast.Constant object at 0x7fd49010a730>, <_\
+ast.Constant object at 0x7fd49010a760>, <_ast.Constant object at 0x7fd49010a790>, <_ast.Constant object at 0x7fd49010a7c0>, <_ast.Constant \
+object at 0x7fd49010a7f0>, <_ast.Constant object at 0x7fd49010a820>, <_ast.Constant object at 0x7fd49010a850>, <_ast.Constant object \
+at 0x7fd49010a880>, <_ast.Constant object at 0x7fd49010a8b0>, <_ast.Constant object at 0x7fd49010a8e0>, <_ast.Constant object at \
+0x7fd49010a910>](0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd49010a6d0>, <_ast.Constant object at 0x7fd49010a700>, <_ast.Constant object at 0x7fd49010a730>, <_\
+ast.Constant object at 0x7fd49010a760>, <_ast.Constant object at 0x7fd49010a790>, <_ast.Constant object at 0x7fd49010a7c0>, <_ast.Constant \
+object at 0x7fd49010a7f0>, <_ast.Constant object at 0x7fd49010a820>, <_ast.Constant object at 0x7fd49010a850>, <_ast.Constant object \
+at 0x7fd49010a880>, <_ast.Constant object at 0x7fd49010a8b0>, <_ast.Constant object at 0x7fd49010a8e0>, <_ast.Constant object at \
+0x7fd49010a910>](0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"ax(0)$0" -> "sns(0)$15"	[label=pairplot];
+	"ax(0)$0" -> "data(0)$0"	[label=pairplot];
+	"ax(0)$0" -> "BodyPart(0)"	[label=pairplot];
+	"ax(0)$0" -> "reg(0)"	[label=pairplot];
+	"BodyPart(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"reg(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"sns(0)$16" -> "sns(0)$15"	[label=catplot];
+	"Injury_games_play(0)$7" -> "Injury_games_play(0)$6"	[label=head];
+	"Injury_games_play(0)$8" -> "Injury_games_play(0)$7"	[label=info];
+	"print[194/0]" -> "InjuryRecord(0)$7"	[label=print];
+	"print[195/0]" -> "PlayList(0)$10"	[label=print];
+	"print[196/0]" -> "PlayerTrackData(0)$3"	[label=print];
+	"PlayList(0)$11" -> "4(0)"	[label=head];
+	"PlayList(0)$11" -> "PlayList(0)$10"	[label=head];
+	"[<_ast.Name object at 0x7fd490133970>, <_ast.Name object at 0x7fd4901339a0>, <_ast.Name object at 0x7fd4901339d0>](0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"dfs(0)$0" -> "[<_ast.Name object at 0x7fd490133970>, <_ast.Name object at 0x7fd4901339a0>, <_ast.Name object at 0x7fd4901339d0>](0)"	[label=assignedFrom];
+	"df_final(0)$0" -> "pd(0)"	[label=reduce];
+	"df_final(0)$0" -> "PlayKey(0)"	[label=reduce];
+	"df_final(0)$0" -> "left(0)"	[label=reduce];
+	"df_final(0)$0" -> "dfs(0)$0"	[label=reduce];
+	"df_final(0)$0" -> "right(0)"	[label=reduce];
+	"right(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"print[201/0]" -> "df_final(0)$0"	[label=print];
+	"print[201/0]" -> "10(0)"	[label=print];
+	"10(0)" -> "nfl-analytics.ipynb"	[label=appearsIn];
+	"df_final(0)$1" -> "df_final(0)$0"	[label=tail];
+	"df_final(0)$1" -> "10(0)"	[label=tail];
+	"df_final(0)$2" -> "df_final(0)$1"	[label=sum];
+}
