@@ -1,0 +1,155 @@
+digraph "" {
+	numpy -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	"np(0)" -> numpy	[label=assignedFrom];
+	"np(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	pandas -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	"pd(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"pd(0)" -> pandas	[label=assignedFrom];
+	tqdm -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	tqdm -> tqdm	[label=importedBy];
+	tqdm_notebook -> tqdm	[label=importedBy];
+	"tqdm_notebook(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"tqdm_notebook(0)" -> tqdm_notebook	[label=assignedFrom];
+	"tqdm(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"tqdm(0)" -> tqdm	[label=assignedFrom];
+	collections -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	Counter -> collections	[label=importedBy];
+	"Counter(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"Counter(0)" -> Counter	[label=assignedFrom];
+	os -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	"os(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"os(0)" -> os	[label=assignedFrom];
+	"dirname(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"dirname(0)" -> "os(0)"	[label=iteratorOf];
+	"dirname(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"/kaggle/input(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"_(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"_(0)" -> "os(0)"	[label=iteratorOf];
+	"_(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"filenames(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"filenames(0)" -> "os(0)"	[label=iteratorOf];
+	"filenames(0)" -> "/kaggle/input(0)"	[label=iteratorOf];
+	"filename(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"filename(0)" -> "filenames(0)"	[label=iteratorOf];
+	"print[10/8]" -> "os(0)"	[label=print];
+	"print[10/8]" -> "dirname(0)"	[label=print];
+	"print[10/8]" -> "filename(0)"	[label=print];
+	"../input/ram-reduce/reduce_train.csv(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"url1(0)$0" -> "../input/ram-reduce/reduce_train.csv(0)"	[label=assignedFrom];
+	"../input/ram-reduce/reduce_test.csv(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"url2(0)$0" -> "../input/ram-reduce/reduce_test.csv(0)"	[label=assignedFrom];
+	"reduce_train(0)$0" -> "pd(0)"	[label=read_csv];
+	"reduce_train(0)$0" -> "url1(0)$0"	[label=read_csv];
+	"reduce_train(0)$0" -> "None(0)"	[label=read_csv];
+	"None(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"reduce_test(0)$0" -> "pd(0)"	[label=read_csv];
+	"reduce_test(0)$0" -> "url2(0)$0"	[label=read_csv];
+	"reduce_test(0)$0" -> "None(0)"	[label=read_csv];
+	"print[15/0]" -> "reduce_train(0)$0"	[label=print];
+	"print[15/0]" -> "reduce_test(0)$0"	[label=print];
+	"accuracy_group(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"target(0)$0" -> "accuracy_group(0)"	[label=assignedFrom];
+	"[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008328b0>, <_\
+ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant \
+object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object \
+at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant object at \
+0x7fd500832640>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object \
+at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at \
+0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832df0>, <_\
+ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant \
+object at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at \
+0x7fd500832c10>, <_ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd5008323d0>, <_\
+ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832940>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832f70>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at \
+0x7fd500832910>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd4c04ff160>, <_\
+ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant \
+object at 0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object \
+at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff250>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff880>, <_\
+ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff040>, <_ast.Constant object \
+at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff2e0>](0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"select(0)$0" -> "[<_ast.Constant object at 0x7fd5008324f0>, <_ast.Constant object at 0x7fd5008322b0>, <_ast.Constant object at 0x7fd5008328b0>, <_\
+ast.Constant object at 0x7fd500832250>, <_ast.Constant object at 0x7fd5008329a0>, <_ast.Constant object at 0x7fd500832c70>, <_ast.Constant \
+object at 0x7fd500832550>, <_ast.Constant object at 0x7fd500832d90>, <_ast.Constant object at 0x7fd5008321f0>, <_ast.Constant object \
+at 0x7fd500832190>, <_ast.Constant object at 0x7fd500832130>, <_ast.Constant object at 0x7fd500832880>, <_ast.Constant object at \
+0x7fd500832640>, <_ast.Constant object at 0x7fd500832700>, <_ast.Constant object at 0x7fd500832b80>, <_ast.Constant object at 0x7fd5008324c0>, <_\
+ast.Constant object at 0x7fd5008329d0>, <_ast.Constant object at 0x7fd500832340>, <_ast.Constant object at 0x7fd500832b50>, <_ast.Constant \
+object at 0x7fd5008320d0>, <_ast.Constant object at 0x7fd500832a60>, <_ast.Constant object at 0x7fd500832070>, <_ast.Constant object \
+at 0x7fd500832d30>, <_ast.Constant object at 0x7fd500832370>, <_ast.Constant object at 0x7fd5008321c0>, <_ast.Constant object at \
+0x7fd500832ee0>, <_ast.Constant object at 0x7fd500832b20>, <_ast.Constant object at 0x7fd500832dc0>, <_ast.Constant object at 0x7fd500832df0>, <_\
+ast.Constant object at 0x7fd500832160>, <_ast.Constant object at 0x7fd500832e50>, <_ast.Constant object at 0x7fd5008326d0>, <_ast.Constant \
+object at 0x7fd5008325b0>, <_ast.Constant object at 0x7fd500832730>, <_ast.Constant object at 0x7fd500832cd0>, <_ast.Constant object \
+at 0x7fd500832100>, <_ast.Constant object at 0x7fd5008327f0>, <_ast.Constant object at 0x7fd500832d00>, <_ast.Constant object at \
+0x7fd500832c10>, <_ast.Constant object at 0x7fd5008325e0>, <_ast.Constant object at 0x7fd5008326a0>, <_ast.Constant object at 0x7fd5008323d0>, <_\
+ast.Constant object at 0x7fd5008322e0>, <_ast.Constant object at 0x7fd500832310>, <_ast.Constant object at 0x7fd5008323a0>, <_ast.Constant \
+object at 0x7fd500832940>, <_ast.Constant object at 0x7fd500832c40>, <_ast.Constant object at 0x7fd500832580>, <_ast.Constant object \
+at 0x7fd500832f70>, <_ast.Constant object at 0x7fd500832f10>, <_ast.Constant object at 0x7fd500832520>, <_ast.Constant object at \
+0x7fd500832910>, <_ast.Constant object at 0x7fd500832ac0>, <_ast.Constant object at 0x7fd500832a30>, <_ast.Constant object at 0x7fd4c04ff160>, <_\
+ast.Constant object at 0x7fd4c04ffa60>, <_ast.Constant object at 0x7fd4c04ff8e0>, <_ast.Constant object at 0x7fd4c04ff2b0>, <_ast.Constant \
+object at 0x7fd4c04ff7f0>, <_ast.Constant object at 0x7fd4c04ffc70>, <_ast.Constant object at 0x7fd4c04ffc40>, <_ast.Constant object \
+at 0x7fd4c04ff970>, <_ast.Constant object at 0x7fd4c04ff490>, <_ast.Constant object at 0x7fd4c04ff670>, <_ast.Constant object at \
+0x7fd4c04ff250>, <_ast.Constant object at 0x7fd4c04ff280>, <_ast.Constant object at 0x7fd4c04ff1f0>, <_ast.Constant object at 0x7fd4c04ff880>, <_\
+ast.Constant object at 0x7fd4c04ff8b0>, <_ast.Constant object at 0x7fd4c04ff550>, <_ast.Constant object at 0x7fd4c04ff130>, <_ast.Constant \
+object at 0x7fd4c04ffe80>, <_ast.Constant object at 0x7fd4c04ffb80>, <_ast.Constant object at 0x7fd4c04ff040>, <_ast.Constant object \
+at 0x7fd4c04ff580>, <_ast.Constant object at 0x7fd4c04ff9a0>, <_ast.Constant object at 0x7fd4c04ff790>, <_ast.Constant object at \
+0x7fd4c04ff4f0>, <_ast.Constant object at 0x7fd4c04ff2e0>](0)"	[label=assignedFrom];
+	"len[18/0]" -> "select(0)$0"	[label=len];
+	catboost -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=importedBy];
+	CatBoostClassifier -> catboost	[label=importedBy];
+	"CatBoostClassifier(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"CatBoostClassifier(0)" -> CatBoostClassifier	[label=assignedFrom];
+	CatBoostRegressor -> catboost	[label=importedBy];
+	"CatBoostRegressor(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"CatBoostRegressor(0)" -> CatBoostRegressor	[label=assignedFrom];
+	"0(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"cat(0)$0" -> "0(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "1000(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "99(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "100(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "MultiClass(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "AUC(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "0.7(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "Bernoulli(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "25(0)"	[label=CatBoostClassifier];
+	"cat(0)$0" -> "Plain(0)"	[label=CatBoostClassifier];
+	"1000(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"99(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"100(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"MultiClass(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"AUC(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"0.7(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"Bernoulli(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"25(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"Plain(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"cat(0)$1" -> "reduce_train(0)$0"	[label=fit];
+	"cat(0)$1" -> "target(0)$0"	[label=fit];
+	"cat(0)$1" -> "select(0)$0"	[label=fit];
+	"cat(0)$1" -> "cat(0)$0"	[label=fit];
+	"testm(0)$0" -> "reduce_test(0)$0"	[label=astype];
+	"testm(0)$0" -> "select(0)$0"	[label=astype];
+	"testm(0)$0" -> "cat(0)$1"	[label=astype];
+	"testm(0)$0" -> "int(0)"	[label=astype];
+	"int(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"subm(0)$0" -> "pd(0)"	[label=DataFrame];
+	"subm(0)$0" -> "1000(0)"	[label=DataFrame];
+	"subm(0)$0" -> "range(0)"	[label=DataFrame];
+	"range(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"subm(0)$1" -> "reduce_test(0)$0"	[label=assignedFrom];
+	"subm(0)$1" -> "1000(0)"	[label=assignedFrom];
+	"subm(0)$1" -> "subm(0)$0"	[label=assignedFrom];
+	"subm(0)$1" -> "installation_id(0)"	[label=assignedFrom];
+	"installation_id(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+	"subm(0)$2" -> "testm(0)$0"	[label=assignedFrom];
+	"subm(0)$2" -> "subm(0)$1"	[label=assignedFrom];
+	"print[32/0]" -> "subm(0)$2"	[label=print];
+	"subm(0)$3" -> "subm(0)$2"	[label=head];
+	"subm(0)$4" -> "subm(0)$3"	[label=to_csv];
+	"subm(0)$4" -> "submission.csv(0)"	[label=to_csv];
+	"submission.csv(0)" -> "2019-data-science-bowl-via-autoviml.ipynb"	[label=appearsIn];
+}
