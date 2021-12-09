@@ -1,31 +1,29 @@
 # Data Journeys: representation and extraction
 Source code of approach, algorithms, and experimental results.
 
+WARNING: running any of the following commands may alter the content of the folder, e.g. deleting/recreating files. Backup the content before execution! 
 ## Python environment
-All experiments are executed on a MacOS-X 10.15.7 with Python 3.8, configured via Conda in folder `dj-py3.8`.
+All experiments are executed on a MacOS-X 10.15.7 with Python 3.9, configured via Conda in folder `dj-py3.9`.
 ```
-$ conda create --name dj-py3.8 python=3.8
+$ python3 -m venv dj-py3.9
 ```
 To activate this environment, use
 ```
-$ source activate dj-py3.8
+$ source dj-py3.9/bin/activate
+$ python -m pip install --upgrade pip
 ```
 To deactivate an active environment, use
 ```
-$ conda deactivate
-```
-Initialise the bash shell with:
-```
-$ conda init bash
+$ deactivate
 ```
 
 Prerequirements:
 ```
-$ conda activate dj-py3.8
-$ conda install networkx
-$ pip install rdflib graphviz pygraphviz jupyterlab
+$ source dj-py3.9/bin/activate
+$ pip install networkx rdflib graphviz pygraphviz jupyter jupyterlab
 $ pip install pandas numpy sklearn transformers gensim aiohttp
-$ pip install pyrdf2vec
+$ pip install tensorflow
+$ pip install pyrdf2vec==0.1.1
 $ pip install papermill
 
 ```
@@ -134,7 +132,7 @@ Results are saved to file [MultiClassificationExperiments.csv](MultiClassificati
 
 Results can be explored and analysed in [AnalyseResultsMulti.ipynb](AnalyseResultsMulti.ipynb).
 ### Knowledge compression
-This phase is performed in notebook [DataJourneyGenerator.ipynb](DataJourneyGenerator.ipynb). This notebook was executed on each of the input notebook. Output is in folder `datajourneys/`. 
+This phase is performed in notebook [DataJourneyGenerator.ipynb](DataJourneyGenerator.ipynb). This notebook was executed on each of the input notebook (see script `build_datajourneys.sh`). Output is in folder `datajourneys/`. 
 
 ### Guide example
 The resulting notebooks are in folder `datajourneys/`. The guide example discussed in the paper is reported in the following files:
