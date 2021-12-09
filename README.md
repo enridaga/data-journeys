@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/250588858.svg)](https://zenodo.org/badge/latestdoi/250588858)
+
 # Software and data accompanying the article "Data journeys: knowledge representation and extraction"
 Source code of approach, algorithms, and experimental results.
 
