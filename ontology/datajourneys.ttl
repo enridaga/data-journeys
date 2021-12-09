@@ -98,7 +98,8 @@
 
 
 ###  http://purl.org/datajourneys/inJourney
-:inJourney rdf:type owl:ObjectProperty ;
+:inJourney rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Activity
                                        :Datanode
@@ -184,6 +185,12 @@
           rdfs:seeAlso <http://purl.org/net/wf-motifs#Analysis> .
 
 
+###  http://purl.org/datajourneys/Capability
+:Capability rdf:type owl:Class ;
+            rdfs:subClassOf :Support ;
+            rdfs:comment "any datanode which provides capabilities to the program, including pre-existing modules, functions, libraries" .
+
+
 ###  http://purl.org/datajourneys/Cleaning
 :Cleaning rdf:type owl:Class ;
           rdfs:subClassOf :Activity ;
@@ -201,9 +208,15 @@
           rdfs:seeAlso <http://purl.org/datanode/ns/Datanode> .
 
 
+###  http://purl.org/datajourneys/Documentation
+:Documentation rdf:type owl:Class ;
+               rdfs:subClassOf :Support .
+
+
 ###  http://purl.org/datajourneys/Input
 :Input rdf:type owl:Class ;
-       rdfs:subClassOf :Datanode .
+       rdfs:subClassOf :Datanode ;
+       rdfs:comment "a pre-existing data object served to the program for consumption and manipulation" .
 
 
 ###  http://purl.org/datajourneys/Journey
@@ -226,13 +239,14 @@ How to compare / link datanodes -> by their Types""" ,
 
 ###  http://purl.org/datajourneys/Output
 :Output rdf:type owl:Class ;
-        rdfs:subClassOf :Datanode .
+        rdfs:subClassOf :Datanode ;
+        rdfs:comment "a datanode produced by the program" .
 
 
 ###  http://purl.org/datajourneys/Parameter
 :Parameter rdf:type owl:Class ;
            rdfs:subClassOf :Datanode ;
-           rdfs:comment "A value that is needed to tune the behavior of the process. For example, a dataset is split in 2 parts, 20% for the test set and 80% for the training set. 2, 20%, and 80% are all parameters." .
+           rdfs:comment "any datanode which is not supposed to be modified by the program but is needed to tune the behaviour of the process. For example, a data source is split in 2 parts, 20% for the test set and 80\\% for the training set. 2, 20%, and 80% are all parameters." .
 
 
 ###  http://purl.org/datajourneys/Preparation
@@ -243,8 +257,8 @@ How to compare / link datanodes -> by their Types""" ,
 
 ###  http://purl.org/datajourneys/Reference
 :Reference rdf:type owl:Class ;
-           rdfs:subClassOf :Datanode ;
-           rdfs:comment "A dataset that is not changed by the journey but used as-is. For example, a lookup table." .
+           rdfs:subClassOf :Support ;
+           rdfs:comment "Any datanode used as background knowledge by the program, for example, a lookup service or a knowledge graph. Such datanode pre-exists the program and is external to the program." .
 
 
 ###  http://purl.org/datajourneys/Retrieval
@@ -294,11 +308,8 @@ How to compare / link datanodes -> by their Types""" ,
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Constant
-                :Input
+  owl:members ( :Input
                 :Output
-                :Parameter
-                :Reference
                 :Support
                 :Temporary
               )
