@@ -4,11 +4,11 @@ Source code of approach, algorithms, and experimental results.
 ## Python environment
 All experiments are executed on a MacOS-X 10.15.7 with Python 3.8, configured via Conda in folder `dj-py3.8`.
 ```
-$ conda create --name dj-py3.9 python=3.9
+$ conda create --name dj-py3.8 python=3.8
 ```
 To activate this environment, use
 ```
-$ source activate dj-py3.9
+$ source activate dj-py3.8
 ```
 To deactivate an active environment, use
 ```
@@ -21,7 +21,7 @@ $ conda init bash
 
 Prerequirements:
 ```
-$ conda activate dj-py3.9
+$ conda activate dj-py3.8
 $ conda install networkx
 $ pip install rdflib graphviz pygraphviz jupyterlab
 $ pip install pandas numpy sklearn transformers gensim aiohttp
