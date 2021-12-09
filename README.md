@@ -1,4 +1,4 @@
-# Data Journeys: representation and extraction
+# Software and data accompanying the article "Data journeys: knowledge representation and extraction"
 Source code of approach, algorithms, and experimental results.
 
 WARNING: running any of the following commands may alter the content of the folder, e.g. deleting/recreating files. Backup the content before execution! 
