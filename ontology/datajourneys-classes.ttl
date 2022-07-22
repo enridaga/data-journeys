@@ -1,0 +1,158 @@
+@prefix : <http://purl.org/datajourneys/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/datajourneys/> .
+
+<http://purl.org/datajourneys/> rdf:type owl:Ontology .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/datajourneys/Activity
+:Activity rdf:type owl:Class ;
+          rdfs:seeAlso <http://purl.org/net/wf-motifs#DataOperationMotif> .
+
+
+###  http://purl.org/datajourneys/Analysis
+:Analysis rdf:type owl:Class ;
+          rdfs:subClassOf :Activity ;
+          rdfs:seeAlso <http://purl.org/net/wf-motifs#Analysis> .
+
+
+###  http://purl.org/datajourneys/Capability
+:Capability rdf:type owl:Class ;
+            rdfs:subClassOf :Support ;
+            rdfs:comment "any datanode which provides capabilities to the program, including pre-existing modules, functions, libraries" .
+
+
+###  http://purl.org/datajourneys/Cleaning
+:Cleaning rdf:type owl:Class ;
+          rdfs:subClassOf :Activity ;
+          rdfs:seeAlso <http://purl.org/net/wf-motifs#DataCleaning> .
+
+
+###  http://purl.org/datajourneys/Constant
+:Constant rdf:type owl:Class ;
+          rdfs:subClassOf :Datanode ;
+          rdfs:comment "Changing this does not affect the rationale of the journey. E.g.: the configuration path to the folder where to save the results." .
+
+
+###  http://purl.org/datajourneys/Datanode
+:Datanode rdf:type owl:Class ;
+          rdfs:seeAlso <http://purl.org/datanode/ns/Datanode> .
+
+
+###  http://purl.org/datajourneys/Documentation
+:Documentation rdf:type owl:Class ;
+               rdfs:subClassOf :Support .
+
+
+###  http://purl.org/datajourneys/Input
+:Input rdf:type owl:Class ;
+       rdfs:subClassOf :Datanode ;
+       rdfs:comment "a pre-existing data object served to the program for consumption and manipulation" .
+
+
+###  http://purl.org/datajourneys/Journey
+:Journey rdf:type owl:Class ;
+         rdfs:comment """Many Journeys in 1 ontology
+
+1 Journey (can be) 1 named graph Journey subClassOf foaf:Document
+
+How to compare / link journeys -> by shared nodes (imports, constants)
+
+How to compare / link datanodes -> by their Types""" ,
+                      "Wraps all datanodes?" .
+
+
+###  http://purl.org/datajourneys/Movement
+:Movement rdf:type owl:Class ;
+          rdfs:subClassOf :Activity ;
+          rdfs:seeAlso <http://purl.org/net/wf-motifs#DataMovement> .
+
+
+###  http://purl.org/datajourneys/Output
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf :Datanode ;
+        rdfs:comment "a datanode produced by the program" .
+
+
+###  http://purl.org/datajourneys/Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:subClassOf :Datanode ;
+           rdfs:comment "any datanode which is not supposed to be modified by the program but is needed to tune the behaviour of the process. For example, a data source is split in 2 parts, 20% for the test set and 80\\% for the training set. 2, 20%, and 80% are all parameters." .
+
+
+###  http://purl.org/datajourneys/Preparation
+:Preparation rdf:type owl:Class ;
+             rdfs:subClassOf :Activity ;
+             rdfs:seeAlso <http://purl.org/net/wf-motifs#Preparation> .
+
+
+###  http://purl.org/datajourneys/Reference
+:Reference rdf:type owl:Class ;
+           rdfs:subClassOf :Support ;
+           rdfs:comment "Any datanode used as background knowledge by the program, for example, a lookup service or a knowledge graph. Such datanode pre-exists the program and is external to the program." .
+
+
+###  http://purl.org/datajourneys/Retrieval
+:Retrieval rdf:type owl:Class ;
+           rdfs:subClassOf :Activity ;
+           rdfs:seeAlso <http://purl.org/net/wf-motifs#Retrieval> .
+
+
+###  http://purl.org/datajourneys/Reuse
+:Reuse rdf:type owl:Class ;
+       rdfs:subClassOf :Activity ;
+       rdfs:comment "as in python module import" .
+
+
+###  http://purl.org/datajourneys/Support
+:Support rdf:type owl:Class ;
+         rdfs:subClassOf :Datanode ;
+         rdfs:comment "Also documentation/comments can be considered support" ,
+                      "To include objects such as libraries, functions, etc..." .
+
+
+###  http://purl.org/datajourneys/Temporary
+:Temporary rdf:type owl:Class ;
+           rdfs:subClassOf :Datanode .
+
+
+###  http://purl.org/datajourneys/Visualisation
+:Visualisation rdf:type owl:Class ;
+               rdfs:subClassOf :Activity ;
+               rdfs:seeAlso <http://purl.org/net/wf-motifs#Visualization> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Analysis
+                :Cleaning
+                :Movement
+                :Preparation
+                :Retrieval
+                :Reuse
+                :Visualisation
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Input
+                :Output
+                :Support
+                :Temporary
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
