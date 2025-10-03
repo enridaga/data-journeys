@@ -1,0 +1,19 @@
+PREFIX fx:  <http://sparql.xyz/facade-x/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+#SELECT *
+SELECT ?arc ?activity (count(*) as ?count)
+WHERE {
+  SERVICE <x-sparql-anything:> {
+	fx:properties fx:location "./MultiClassification.csv" ;
+	  fx:csv.header true ;
+	  fx:media-type "text/csv"
+	  .
+	  ?row rdf:_3 ?arc ; rdf:_4 ?activity 
+	  .
+	  filter ( isLiteral( ?arc ) )
+	  .
+  }
+}
+GROUP BY ?arc ?activity
+ORDER BY ?activity
